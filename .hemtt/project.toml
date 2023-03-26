@@ -1,0 +1,26 @@
+name = "Ghost"
+mainprefix = "z"
+prefix = "ghost"
+author = "YonV"
+
+[files]
+include = [
+    "mod.cpp",
+    "README.md",
+    "LICENSE",
+    "3rdparty",
+    "AUTHORS.txt",
+    "gobp2_256_g.paa",
+    "gobp2_256.paa"
+]
+
+[version]
+path = "addons/core/script_version.hpp"
+
+[lint.sqf]
+enabled = true
+
+[asc]
+enabled = true # Default: false
+exclude = [
+]

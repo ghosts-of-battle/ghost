@@ -1,0 +1,23 @@
+#include "script_component.hpp"
+/*
+ * Author: AACO
+ * Function to set the ghost_zeusHC_addGroupToHC flag on groups.
+ * Should only be called through 3DEN
+ *
+ * Arguments:
+ * 0: Group to add flag to <GROUP>
+ * 1: Value of flag (true/false) <BOOL>
+ *
+ * Example:
+ * [grp1, true] call ghost_zeusHC_fnc_transferSetVar;
+ *
+ * Public: No
+ */
+
+params ["_group", "_value"];
+TRACE_2("transferSetVar",_group,_value);
+
+[{
+    params ["_group","_value"];
+    (_group) setVariable [QGVAR(addGroupToHC), _value, true];
+}, [_group, _value]] call CBA_fnc_execNextFrame;

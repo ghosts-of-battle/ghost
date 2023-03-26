@@ -1,0 +1,1 @@
+#include "\z\ghost\addons\serverMonitor\script_component.hpp"

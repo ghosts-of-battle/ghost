@@ -1,0 +1,1 @@
+#include "\z\ghost\addons\adminMenu\script_component.hpp"
