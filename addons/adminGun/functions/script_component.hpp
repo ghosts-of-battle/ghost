@@ -1,1 +1,0 @@
-#include "\z\ghost\addons\adminGun\script_component.hpp"

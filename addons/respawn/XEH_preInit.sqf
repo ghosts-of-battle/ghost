@@ -1,29 +1,19 @@
 #include "script_component.hpp"
-
 ADDON = false;
 
 PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-GVAR(open) = false;
+#include "initSettings.sqf"
 
-if (isServer) then {
-    GVAR(respawnPointCount) = 1;
-    GVAR(groupCount) = 1;
-    GVAR(activeGroups) = [];
-    GVAR(registeredClients) = [];
-    [] spawn FUNC(readConfigToVariables);
+if (hasInterface) then {
+    // Save current time delay in case it changes (to adjust remaining respawn time)
+    GVAR(oldTime) = GVAR(time);
+    // Support variable in case respawn gets disabled, so when reenabled timer can continue
+    GVAR(timeElapsed) = 0;
+    // Equipment saved for respawn
+    GVAR(savedEquipment) = [];
 };
-
-// register event handler to detect state changes (would normally use publicVariable, but we're already sending this for spectate hooks)
-[QGVAR(respawnStateChanged), {
-    params [["_open", false, [false]]];
-    GVAR(open) = _open;
-
-    if !(isNull ADMIN_RESPAWN) then {
-        [] call FUNC(updateOpenButton);
-    };
-}] call CBA_fnc_addEventHandler;
 
 ADDON = true;

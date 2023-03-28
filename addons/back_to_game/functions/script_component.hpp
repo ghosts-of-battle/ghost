@@ -1,0 +1,1 @@
+#include "\z\ghost\addons\back_to_game\script_component.hpp"

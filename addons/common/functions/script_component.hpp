@@ -1,0 +1,1 @@
+#include "\z\ghost\addons\common\script_component.hpp"

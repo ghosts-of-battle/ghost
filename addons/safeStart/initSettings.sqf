@@ -1,35 +1,11 @@
-[
-    QGVAR(syncFortify),
-    "CHECKBOX",
-    ["Required for Fortify", "Only allow using fortify tool when safe start is enabled"],
-    ["GHOST - Mission Maker", "Safe Start"],
-    true, // default
-    1 // global
-] call cba_settings_fnc_init;
 
-[
-    QGVAR(showTimer),
-    "CHECKBOX",
-    ["Show SafeStart Timer", "False disables the on screen timer, can use to make clean recordings."],
-    ["GHOST - User", "Safe Start"],
-    true,
-    0,
-    {
-        if (missionNamespace getVariable [QGVAR(startTime_PV), -1] != -1) then {
-            if (_this) then {
-                [QGVAR(timerRscTitle)] call CFUNC(createRscTitle);
-            } else {
-                QGVAR(timerRscTitle) cutFadeOut 0;
-            };
-        };
-    }
-] call cba_settings_fnc_init;
-
-[
-    QGVAR(enabled),
-    "CHECKBOX",
-    ["Enable safe start at mission start", "Enables safe start at the start of the mission."],
-    ["GHOST - Mission Maker", "Safe Start"],
-    false,
-    1
-] call cba_settings_fnc_init;
+if (EGVAR(common,aceSafemode)) then {
+    [
+        QGVAR(startLocked),
+        "CHECKBOX",
+        [LSTRING(StartLocked), LSTRING(StartLocked_Description)],
+        LSTRING(DisplayName),
+        true,
+        2
+    ] call CBA_fnc_addSetting;
+};

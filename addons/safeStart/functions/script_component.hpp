@@ -1,1 +1,1 @@
-#include "\z\ghost\addons\safeStart\script_component.hpp"
+#include "\z\ghost\addons\safestart\script_component.hpp"

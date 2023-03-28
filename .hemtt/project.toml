@@ -14,9 +14,6 @@ include = [
     "gobp2_256.paa"
 ]
 
-[version]
-path = "addons/core/script_version.hpp"
-
 [lint.sqf]
 enabled = true
 

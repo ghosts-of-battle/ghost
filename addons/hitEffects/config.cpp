@@ -2,16 +2,18 @@
 
 class CfgPatches {
     class ADDON {
+        name = COMPONENT_NAME;
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ghost_core"};
-        author[] = {"Dani (TCVM)"};
-        authorUrl = "https://github.com/BourbonWarfare/GHOST";
+        requiredAddons[] = {"ghost_main"};
+        author = "";
+        authors[] = {""};
         VERSION_CONFIG;
     };
 };
 
+#include "CfgEventHandlers.hpp"
 #include "CfgCloudlets.hpp"
 #include "impactEffects.hpp"
 #include "CfgAmmo.hpp"
