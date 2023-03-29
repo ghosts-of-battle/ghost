@@ -8,13 +8,11 @@ texHeaders.bin
 *.dll
 Thumbs.db
 
-hemtt.exe
-hemttNew.exe
-hemtt
+*.pbo
 .hemttout
+hemtt
+hemtt.exe
+*.biprivatekey
 releases/*
-keys/*
-.hemtt/local
-sqfvm.exe
-ArmaScriptCompiler.exe
-*.sqfc
+*.zip
+
