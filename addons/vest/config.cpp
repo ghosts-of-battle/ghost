@@ -13,7 +13,8 @@ class CfgPatches {
             "A3_Characters_F_Enoch",
             "A3_Characters_F_Enoch_Vests",
             "LV119",
-            "JPC2"
+            "JPC2",
+            "AVS"
             };
         author = "";
         authors[] = {""};

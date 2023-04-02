@@ -13,7 +13,7 @@ if (hasinterface) then {
     player setVariable ["ace_isEngineer", 0, true];
 
         [
-        {player setVariable["draWhitelisted",TRUE,TRUE];},
+        {player setVariable["draWhitelisted",TRUE,TRUE];player setVariable["draAccessDrones",TRUE,TRUE];player setVariable["draAccessCruise",TRUE,TRUE];player setVariable["draAccessSensors",TRUE,TRUE];},
         [draReady],
         5
     ] call CBA_fnc_waitAndExecute;
@@ -26,3 +26,4 @@ if (hasinterface) then {
 };
 
 hint "Communications"
+

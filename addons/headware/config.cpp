@@ -6,7 +6,14 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ghost_main","A3_Characters_F","ace_hearing","A3_Characters_F_Enoch","A3_Supplies_F_Enoch_Bags"};
+        requiredAddons[] = {
+            "ghost_main",
+            "A3_Characters_F",
+            "ace_hearing",
+            "A3_Characters_F_Enoch",
+            "A3_Supplies_F_Enoch_Bags",
+            "rad_opscore_gear"
+            };
         author = "";
         authors[] = {""};
         VERSION_CONFIG;
@@ -20,7 +27,7 @@ class CfgPatches {
 
 class Headlamps_Presets {
     class Headlamps_Preset_Full {
-        offset[] = {-0.5,0.06,0.13}; // Pretty much middle of the forehead
+        offset[] = {-0.5,0.06,0.13};
         colorCycle[] = {
             "Headlamp_light_white_low",
             "Headlamp_light_red_low",

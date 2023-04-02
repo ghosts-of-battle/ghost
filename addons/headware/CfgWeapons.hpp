@@ -2047,6 +2047,74 @@ class CfgWeapons {
         picture=QPATHTOF(data\ui\icon_H_HelmetB_camo_US_M81_ca.paa);
         MACRO_ITEM_COMMON
     };
+    class opscore_sf_arid_amp: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class opscore_sf_arid_full: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class opscore_sf_black: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class opscore_sf_black_amp: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class opscore_sf_black_full: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class opscore_sf_mc: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class opscore_sf_mc_amp: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class opscore_sf_mc_full: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class opscore_sf_od: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class opscore_sf_od_amp: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class opscore_sf_od_full: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class opscore_sf_rgr: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class opscore_sf_rgr_amp: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class opscore_sf_rgr_full: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class opscore_sf_tan: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class opscore_sf_tan_amp: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class opscore_sf_tan_full: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
     class milgp_h_airframe_01_CB_hexagon: ItemCore {
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
@@ -2852,6 +2920,167 @@ class CfgWeapons {
         ace_hearing_lowerVolume = 0.05;
     };
     class milgp_h_cap_backwards_03_goggles_MC: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+// fox2
+    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_1: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_1_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_2: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_2_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_3: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_3_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_4: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_4_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_5: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_5_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_1: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_1_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_ct_2: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_ct_2_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_ct_3: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_ct_3_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_ct_4: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_ct_4_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_ct_5: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_blk_ct_5_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_1: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_1_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_Amp_2: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_Amp_2_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_Amp_3: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_Amp_3_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_Amp_4: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_Amp_4_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_Amp_5: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_Amp_5_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_1: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_1_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_ct_2: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_ct_2_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_ct_3: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_ct_3_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_ct_4: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_ct_4_us: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_ct_5: ItemCore {
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_OpscoreMar_Snakeskin_Tan_ct_5_us: ItemCore {
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };

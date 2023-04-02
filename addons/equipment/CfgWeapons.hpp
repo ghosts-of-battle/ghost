@@ -13,15 +13,6 @@ class CfgWeapons {
     class ItemCore;
     class UniformItem;
     class U_B_Wetsuit;
-    class glaunch_GLX_camo_lxWS;
-    class glaunch_GLX_lxWS;
-    class glaunch_GLX_snake_lxWS;
-    class glaunch_GLX_tan_lxWS;
-    class Rifle;
-    class Rifle_Base_F: Rifle {
-        class WeaponSlotsInfo;
-        class GunParticles;
-    };
     class optic_lrps;
     class Binocular;
     class Laserdesignator: Binocular {
@@ -440,18 +431,5 @@ class CfgWeapons {
                 };
             };
         };
-
-    };
-    class GVAR(glaunch_GLX_camo_lxWS): glaunch_GLX_camo_lxWS {
-        type= 2;
-    };
-    class GVAR(glaunch_GLX_lxWS): glaunch_GLX_lxWS {
-        type= 2;
-    };
-    class GVAR(glaunch_GLX_snake_lxWS): glaunch_GLX_snake_lxWS {
-        type= 2;
-    };
-    class GVAR(glaunch_GLX_tan_lxWS): glaunch_GLX_tan_lxWS {
-        type= 2;
     };
 };

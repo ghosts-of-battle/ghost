@@ -1033,8 +1033,8 @@ class CfgVehicles {
         author = QAUTHOR;
         // maximumLoad = 80;
         // mass = 160;
-        maximumLoad = 160;
-        mass = 121.2;
+        maximumLoad = 180;
+        mass = 101.2;
         transportMaxBackpacks = 1;
         transportMaxMagazines = 30;
         transportMaxWeapons = 1;

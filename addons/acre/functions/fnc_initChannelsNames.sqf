@@ -48,7 +48,7 @@ private _targetSide = [[_sourceSide], [WEST, EAST, INDEPENDENT, CIVILIAN]] selec
             TRACE_4("Setting %4 label for radio %1 preset %2 channel number %3",_x,DEFAULT_PRESET_NAME,_channelNumber,_channelName);
             {
                 [_x, _presetName, _channelNumber, "label", _channelName] call acre_api_fnc_setPresetChannelField;
-            } forEach (call acre_api_fnc_getAllRadios select 0);
+            } forEach ["ACRE_PRC152","ACRE_PRC117F"];
         };
     };
 

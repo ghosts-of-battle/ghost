@@ -2,20 +2,29 @@
 class CfgWeapons {
     class ItemCore;
     class Vest_NoCamo_Base;
+    class Vest_Camo_Base;
+    class V_PlateCarrierSpec_rgr: Vest_Camo_Base {
+        class ItemInfo;
+    };
+    class V_PlateCarrierGL_rgr: Vest_Camo_Base {
+        class ItemInfo;
+    };
+    class V_PlateCarrier1_blk: Vest_Camo_Base {
+        class ItemInfo;
+    };
     class V_PlateCarrier1_rgr: Vest_NoCamo_Base {
         class ItemInfo;
     };
-    class Vest_Camo_Base;
-    class V_PlateCarrierSpec_rgr: Vest_NoCamo_Base {
+    class V_PlateCarrier2_rgr: V_PlateCarrier1_rgr {
+        class ItemInfo;
+    };    
+    class V_PlateCarrierSpec_blk: V_PlateCarrierSpec_rgr {
         class ItemInfo;
     };
-    class V_PlateCarrierGL_rgr: Vest_NoCamo_Base {
+    class V_PlateCarrierGL_blk: V_PlateCarrierGL_rgr {
         class ItemInfo;
     };
-    class V_PlateCarrier1_blk: Vest_NoCamo_Base {
-        class ItemInfo;
-    };
-    class V_PlateCarrier2_rgr: Vest_NoCamo_Base {
+    class V_PlateCarrier2_blk: V_PlateCarrier2_rgr {
         class ItemInfo;
     };
     class V_BandollierB_blk: Vest_NoCamo_Base {
@@ -33,7 +42,10 @@ class CfgWeapons {
     class V_CarrierRigKBT_01_heavy_Olive_F: V_CarrierRigKBT_01_heavy_base_F {
         class ItemInfo;
     };
-    class V_CarrierRigKBT_01_light_Olive_F {
+    class V_CarrierRigKBT_01_light_base_F: Vest_Camo_Base {
+        class ItemInfo;
+    };
+    class V_CarrierRigKBT_01_light_Olive_F: V_CarrierRigKBT_01_light_base_F {
         class ItemInfo;
     };
     class V_CarrierRigKBT_01_Olive_F: V_CarrierRigKBT_01_base_F {
@@ -56,7 +68,7 @@ class CfgWeapons {
         class ItemInfo;
     };
 
-    class GVAR(PlateCarrierSpec_Multicam): V_PlateCarrierSpec_rgr {
+    class GVAR(PlateCarrierSpec_Multicam): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         displayName="[GHOST] Carrier Special Rig";
         hiddenSelectionsTextures[]= {
@@ -74,7 +86,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierGL_Multicam): V_PlateCarrierGL_rgr {
+    class GVAR(PlateCarrierGL_Multicam): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         displayName="[GHOST] Carrier GL Rig";
         hiddenSelectionsTextures[]= {
@@ -107,7 +119,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrier2_Multicam): V_PlateCarrier2_rgr {
+    class GVAR(PlateCarrier2_Multicam): V_PlateCarrier2_blk {
         author = QAUTHOR;
         displayName="[GHOST] Carrier Rig";
         hiddenSelectionsTextures[]= {
@@ -161,7 +173,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierSpec_Multicam_Snow): V_PlateCarrierSpec_rgr {
+    class GVAR(PlateCarrierSpec_Multicam_Snow): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Multicam Snow) Carrier Special Rig";
         hiddenSelectionsTextures[]= {
@@ -179,7 +191,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierGL_Multicam_Snow): V_PlateCarrierGL_rgr {
+    class GVAR(PlateCarrierGL_Multicam_Snow): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Multicam Snow) Carrier GL Rig";
         hiddenSelectionsTextures[]= {
@@ -215,7 +227,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrier2_Multicam_Snow): V_PlateCarrier2_rgr {
+    class GVAR(PlateCarrier2_Multicam_Snow): V_PlateCarrier2_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Multicam Snow) Carrier Rig";
         hiddenSelectionsTextures[]= {
@@ -269,7 +281,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierSpec_Multicam_Woodland): V_PlateCarrierSpec_rgr {
+    class GVAR(PlateCarrierSpec_Multicam_Woodland): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Multicam Woodland) Carrier Special Rig";
         hiddenSelectionsTextures[]= {
@@ -287,7 +299,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierGL_Multicam_Woodland): V_PlateCarrierGL_rgr {
+    class GVAR(PlateCarrierGL_Multicam_Woodland): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Multicam Woodland) Carrier GL Rig";
         hiddenSelectionsTextures[]= {
@@ -323,7 +335,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrier2_Multicam_Woodland): V_PlateCarrier2_rgr {
+    class GVAR(PlateCarrier2_Multicam_Woodland): V_PlateCarrier2_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Multicam Woodland) Carrier Rig";
         hiddenSelectionsTextures[]= {
@@ -377,7 +389,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierSpec_Solid_Black): V_PlateCarrierSpec_rgr {
+    class GVAR(PlateCarrierSpec_Solid_Black): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Black) Carrier Special Rig";
         hiddenSelectionsTextures[]= {
@@ -395,7 +407,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierGL_Solid_Black): V_PlateCarrierGL_rgr {
+    class GVAR(PlateCarrierGL_Solid_Black): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Black) Carrier GL Rig";
         hiddenSelectionsTextures[]= {
@@ -431,7 +443,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrier2_Solid_Black): V_PlateCarrier2_rgr {
+    class GVAR(PlateCarrier2_Solid_Black): V_PlateCarrier2_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Black) Carrier Rig";
         hiddenSelectionsTextures[]= {
@@ -485,7 +497,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierSpec_Solid_CoyoteBrown): V_PlateCarrierSpec_rgr {
+    class GVAR(PlateCarrierSpec_Solid_CoyoteBrown): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Coyote) Carrier Special Rig";
         hiddenSelectionsTextures[]= {
@@ -503,7 +515,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierGL_Solid_CoyoteBrown): V_PlateCarrierGL_rgr {
+    class GVAR(PlateCarrierGL_Solid_CoyoteBrown): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Coyote) Carrier GL Rig";
         hiddenSelectionsTextures[]= {
@@ -539,7 +551,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrier2_Solid_CoyoteBrown): V_PlateCarrier2_rgr {
+    class GVAR(PlateCarrier2_Solid_CoyoteBrown): V_PlateCarrier2_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Coyote) Carrier Rig";
         hiddenSelectionsTextures[]= {
@@ -593,7 +605,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierSpec_Solid_Ranger_Green): V_PlateCarrierSpec_rgr {
+    class GVAR(PlateCarrierSpec_Solid_Ranger_Green): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Ranger Green) Carrier Special Rig";
         hiddenSelectionsTextures[]= {
@@ -611,7 +623,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierGL_Solid_Ranger_Green): V_PlateCarrierGL_rgr {
+    class GVAR(PlateCarrierGL_Solid_Ranger_Green): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Ranger Green) Carrier GL Rig";
         hiddenSelectionsTextures[]= {
@@ -647,7 +659,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrier2_Solid_Ranger_Green): V_PlateCarrier2_rgr {
+    class GVAR(PlateCarrier2_Solid_Ranger_Green): V_PlateCarrier2_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Ranger Green) Carrier Rig";
         hiddenSelectionsTextures[]= {
@@ -701,7 +713,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierSpec_US_Tigerstripe): V_PlateCarrierSpec_rgr {
+    class GVAR(PlateCarrierSpec_US_Tigerstripe): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Tigerstripe) Carrier Special Rig";
         hiddenSelectionsTextures[]= {
@@ -719,7 +731,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierGL_US_Tigerstripe): V_PlateCarrierGL_rgr {
+    class GVAR(PlateCarrierGL_US_Tigerstripe): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Tigerstripe) Carrier GL Rig";
         hiddenSelectionsTextures[]= {
@@ -755,7 +767,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrier2_US_Tigerstripe): V_PlateCarrier2_rgr {
+    class GVAR(PlateCarrier2_US_Tigerstripe): V_PlateCarrier2_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Tigerstripe) Carrier Rig";
         hiddenSelectionsTextures[]= {
@@ -809,7 +821,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierSpec_Solid_Olive): V_PlateCarrierSpec_rgr {
+    class GVAR(PlateCarrierSpec_Solid_Olive): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Olive) Carrier Special Rig";
         hiddenSelectionsTextures[]= {
@@ -827,7 +839,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierGL_Solid_Olive): V_PlateCarrierGL_rgr {
+    class GVAR(PlateCarrierGL_Solid_Olive): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Olive) Carrier GL Rig";
         hiddenSelectionsTextures[]= {
@@ -863,7 +875,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrier2_Solid_Olive): V_PlateCarrier2_rgr {
+    class GVAR(PlateCarrier2_Solid_Olive): V_PlateCarrier2_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Olive) Carrier Rig";
         hiddenSelectionsTextures[]= {
@@ -917,7 +929,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierSpec_Solid_Tan): V_PlateCarrierSpec_rgr {
+    class GVAR(PlateCarrierSpec_Solid_Tan): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Tan) Carrier Special Rig";
         hiddenSelectionsTextures[]= {
@@ -935,7 +947,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierGL_Solid_Tan): V_PlateCarrierGL_rgr {
+    class GVAR(PlateCarrierGL_Solid_Tan): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Tan) Carrier GL Rig";
         hiddenSelectionsTextures[]= {
@@ -971,7 +983,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrier2_Solid_Tan): V_PlateCarrier2_rgr {
+    class GVAR(PlateCarrier2_Solid_Tan): V_PlateCarrier2_blk {
         author = QAUTHOR;
         displayName="[GHOST] (Tan) Carrier Rig";
         hiddenSelectionsTextures[]= {
@@ -1025,7 +1037,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierSpec_Solid_White): V_PlateCarrierSpec_rgr {
+    class GVAR(PlateCarrierSpec_Solid_White): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         displayName="[GHOST] (White) Carrier Special Rig";
         hiddenSelectionsTextures[]= {
@@ -1043,7 +1055,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierGL_Solid_White): V_PlateCarrierGL_rgr {
+    class GVAR(PlateCarrierGL_Solid_White): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         displayName="[GHOST] (White) Carrier GL Rig";
         hiddenSelectionsTextures[]= {
@@ -1079,7 +1091,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrier2_Solid_White): V_PlateCarrier2_rgr {
+    class GVAR(PlateCarrier2_Solid_White): V_PlateCarrier2_blk {
         author = QAUTHOR;
         displayName="[GHOST] (White) Carrier Rig";
         hiddenSelectionsTextures[]= {
@@ -1133,7 +1145,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierSpec_US_DCU): V_PlateCarrierSpec_rgr {
+    class GVAR(PlateCarrierSpec_US_DCU): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         displayName="[GHOST] (DCU) Carrier Special Rig";
         hiddenSelectionsTextures[]= {
@@ -1151,7 +1163,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierGL_US_DCU): V_PlateCarrierGL_rgr {
+    class GVAR(PlateCarrierGL_US_DCU): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         displayName="[GHOST] (DCU) Carrier GL Rig";
         hiddenSelectionsTextures[]= {
@@ -1187,7 +1199,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrier2_US_DCU): V_PlateCarrier2_rgr {
+    class GVAR(PlateCarrier2_US_DCU): V_PlateCarrier2_blk {
         author = QAUTHOR;
         displayName="[GHOST] (DCU) Carrier Rig";
         hiddenSelectionsTextures[]= {
@@ -1241,7 +1253,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierSpec_US_M81): V_PlateCarrierSpec_rgr {
+    class GVAR(PlateCarrierSpec_US_M81): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         displayName="[GHOST] (M81) Carrier Special Rig";
         hiddenSelectionsTextures[]= {
@@ -1259,7 +1271,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrierGL_US_M81): V_PlateCarrierGL_rgr {
+    class GVAR(PlateCarrierGL_US_M81): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         displayName="[GHOST] (M81) Carrier GL Rig";
         hiddenSelectionsTextures[]= {
@@ -1295,7 +1307,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(PlateCarrier2_US_M81): V_PlateCarrier2_rgr {
+    class GVAR(PlateCarrier2_US_M81): V_PlateCarrier2_blk {
         author = QAUTHOR;
         displayName="[GHOST] (M81) Carrier Rig";
         hiddenSelectionsTextures[]= {

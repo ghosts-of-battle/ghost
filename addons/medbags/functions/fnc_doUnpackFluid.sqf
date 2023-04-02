@@ -49,7 +49,7 @@ if (isNull _unit) exitWith {};
         2,
         [], { ghost_MEDICAL_SUPPLIES_UNPACK_SUCCESS = true; }, { ghost_MEDICAL_SUPPLIES_UNPACK_FAILURE = true; },
         Hint "Unpacking Fluid Kit....",
- {true},
+        {true},
         ["isNotInside", "isNotSitting", "isNotSwimming"]
     ] call ACE_common_fnc_progressBar;
 

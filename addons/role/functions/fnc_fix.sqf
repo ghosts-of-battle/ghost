@@ -33,7 +33,7 @@ private _oetaFIX = [
     "FIX Perms",
     "", {
         player call FUNC(role);
-        player call FUNC(rank);
+        player call EFUNC(rank,rank);
     }, {true}, {},
     [_area]
 ] call ACE_interact_menu_fnc_createAction;

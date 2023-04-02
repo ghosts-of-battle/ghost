@@ -88,7 +88,7 @@ ace_common_settingProgressBarLocation = 0;
 
 // ACE Cook off
 force ace_cookoff_ammoCookoffDuration = 0.5;
-force ace_cookoff_destroyVehicleAfterCookoff = false;
+force ace_cookoff_destroyVehicleAfterCookoff = true;
 force ace_cookoff_enable = 2;
 force ace_cookoff_enableAmmobox = true;
 force ace_cookoff_enableAmmoCookoff = true;
@@ -623,8 +623,6 @@ diwako_dui_nametags_useSideIsFriendly = true;
 diwako_dui_compass_hide_alone_group = false;
 diwako_dui_compass_hide_blip_alone_group = false;
 diwako_dui_compass_opacity = 1;
-diwako_dui_compass_style = ["\z\diwako_dui\addons\radar\UI\compass_styles\standard\compass_limited.paa","\z\diwako_dui\addons\radar\UI\compass_styles\standard\compass.paa"];
-diwako_dui_compassRange = 35;
 diwako_dui_compassRefreshrate = 0;
 diwako_dui_dir_showMildot = false;
 diwako_dui_distanceWarning = 3;

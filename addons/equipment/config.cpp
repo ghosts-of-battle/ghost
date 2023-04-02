@@ -50,10 +50,6 @@ class CfgPatches {
     };
 };
 
-class CfgFunctions {
-    #include "CfgFunctions.hpp"
-};
-
 #include "CfgEventHandlers.hpp"
 #include "Cfg3DEN.hpp"
 #include "CfgVehicles.hpp"
@@ -61,5 +57,5 @@ class CfgFunctions {
 #include "jr_classes.hpp"
 #include "RscInGameUI.hpp"
 #include "XtdGearModels.hpp"
-#include "XtdGearweapon.hpp"
+#include "XtdGearfox.hpp"
 

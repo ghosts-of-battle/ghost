@@ -48,8 +48,8 @@ if (isNull _unit) exitWith {};
     [
         2,
         [], { ghost_MEDICAL_SUPPLIES_UNPACK_SUCCESS = true; }, { ghost_MEDICAL_SUPPLIES_UNPACK_FAILURE = true; },
-        locHintalize "Unpacking Trauma Kit....",
- {true},
+        Hint "Unpacking Trauma Kit....",
+        {true},
         ["isNotInside", "isNotSitting", "isNotSwimming"]
     ] call ACE_common_fnc_progressBar;
 
