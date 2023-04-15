@@ -10,7 +10,7 @@ class CfgPatches {
         requiredAddons[] = {"ghost_common"};
         author = QAUTHOR;
         authors[] = {"PabstMirror"};
-        authorUrl = URL;
+        authorUrl = "https://ghostsofbattle.com";
         VERSION_CONFIG;
     };
 };

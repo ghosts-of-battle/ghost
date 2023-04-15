@@ -12,7 +12,7 @@ class CfgPatches {
             "ace_hearing",
             "A3_Characters_F_Enoch",
             "A3_Supplies_F_Enoch_Bags",
-            "rad_opscore_gear"
+            "rad_opsmain_gear"
             };
         author = "";
         authors[] = {""};

@@ -50,6 +50,10 @@ class CfgPatches {
     };
 };
 
+class CfgFunctions {
+    #include "CfgFunctions.hpp"
+};
+
 #include "CfgEventHandlers.hpp"
 #include "Cfg3DEN.hpp"
 #include "CfgVehicles.hpp"

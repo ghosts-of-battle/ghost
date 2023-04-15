@@ -38,7 +38,7 @@ class XtdGearModels {
                 };
                 class bnn {
                     label = "Brown";
-                    image = "z\aceax\addons\gearinfo\data\camo\gry.paa";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
                 };
                 class grn {
                     label = "Green";

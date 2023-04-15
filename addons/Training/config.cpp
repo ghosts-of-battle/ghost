@@ -4,7 +4,7 @@ class CfgPatches {
     class ADDON {
         author = QAUTHOR;
         name = COMPONENT_NAME;
-        url = URL;
+        authorUrl = "https://ghostsofbattle.com";
         units[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"A3_UI_F","cba_main","cba_xeh"};

@@ -99,7 +99,7 @@ if (_allTargetsNewControllers isEqualTo [] || {!(_allTargetsNewControllers isEqu
 
 
 if (_mode == 5 && {count _targetsNew != count _targetsOld}) then {
-    GVAR(maxScore) = count _targetsNew;
+    GVAR(maxSmain) = count _targetsNew;
 };
 
 true

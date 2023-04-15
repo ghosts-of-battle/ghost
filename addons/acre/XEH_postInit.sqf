@@ -8,7 +8,7 @@
 
         call FUNC(init);
 
-        [{acre_core_init}, {
+        [{acre_main_init}, {
             [FUNC(adjustVoiceVolume), nil, 1] call CBA_fnc_waitAndExecute;
         }] call CBA_fnc_waitUntilAndExecute;
     };

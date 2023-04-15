@@ -5,7 +5,7 @@
 #define AUTHOR Ghost
 #define QAUTHOR QUOTE(AUTHOR)
 #define LOGO_PATH QUOTE(z\ghost\addons\media\images\logo_256.paa)
-#define URL "https://arma.wiki"
+#define URL "https://www.ghostsofbattle.com/"
 
 #define ADMIN_YONV "76561198000002705"
 

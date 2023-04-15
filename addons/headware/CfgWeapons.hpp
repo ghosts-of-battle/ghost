@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 class CfgWeapons {
-    class ItemCore;
+    class ItemMain;
     class headgearItem;
     class H_HelmetB_plain_mcamo;
     class H_HelmetHBK_F;
@@ -11,7 +11,7 @@ class CfgWeapons {
     class H_Booniehat_khk_hs;
     class H_Cap_oli;
     class H_Cap_oli_hs;
-    class H_HelmetB: ItemCore {
+    class H_HelmetB: ItemMain {
         class ItemInfo;
     };
     class H_HelmetB_plain_mcamo;
@@ -2047,1040 +2047,1304 @@ class CfgWeapons {
         picture=QPATHTOF(data\ui\icon_H_HelmetB_camo_US_M81_ca.paa);
         MACRO_ITEM_COMMON
     };
-    class opscore_sf_arid_amp: ItemCore {
+    class opsmain_sf_arid: opsmain_sf_black {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class opscore_sf_arid_full: ItemCore {
+    class opsmain_sf_arid_amp: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class opscore_sf_black: ItemCore {
+    class opsmain_sf_arid_full: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class opscore_sf_black_amp: ItemCore {
+    class opsmain_sf_black: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class opscore_sf_black_full: ItemCore {
+    class opsmain_sf_black_amp: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class opscore_sf_mc: ItemCore {
+    class opsmain_sf_black_full: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class opscore_sf_mc_amp: ItemCore {
+    class opsmain_sf_mc: opsmain_sf_black {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class opscore_sf_mc_full: ItemCore {
+    class opsmain_sf_mc_amp: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class opscore_sf_od: ItemCore {
+    class opsmain_sf_mc_full: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class opscore_sf_od_amp: ItemCore {
+    class opsmain_sf_od: opsmain_sf_black {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class opscore_sf_od_full: ItemCore {
+    class opsmain_sf_od_amp: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class opscore_sf_rgr: ItemCore {
+    class opsmain_sf_od_full: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class opscore_sf_rgr_amp: ItemCore {
+    class opsmain_sf_rgr: opsmain_sf_black {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class opscore_sf_rgr_full: ItemCore {
+    class opsmain_sf_rgr_amp: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class opscore_sf_tan: ItemCore {
+    class opsmain_sf_rgr_full: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class opscore_sf_tan_amp: ItemCore {
+    class opsmain_sf_tan: opsmain_sf_black {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class opscore_sf_tan_full: ItemCore {
+    class opsmain_sf_tan_amp: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_01_CB_hexagon: ItemCore {
+    class opsmain_sf_tan_full: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_01_CB: ItemCore {
+    class milgp_h_airframe_01_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_01_khk: ItemCore {
+    class milgp_h_airframe_01_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_04_khk: ItemCore {
+    class milgp_h_airframe_01_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_01_khk_hexagon: ItemCore {
+    class milgp_h_airframe_04_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_01_MC: ItemCore {
+    class milgp_h_airframe_01_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_01_RGR_hexagon: ItemCore {
+    class milgp_h_airframe_01_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_01_RGR: ItemCore {
+    class milgp_h_airframe_01_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_01_goggles_CB_hexagon: ItemCore {
+    class milgp_h_airframe_01_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_01_goggles_CB: ItemCore {
+    class milgp_h_airframe_01_goggles_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_01_goggles_khk_hexagon: ItemCore {
+    class milgp_h_airframe_01_goggles_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_01_goggles_khk: ItemCore {
+    class milgp_h_airframe_01_goggles_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_01_goggles_MC: ItemCore {
+    class milgp_h_airframe_01_goggles_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_01_goggles_RGR_hexagon: ItemCore {
+    class milgp_h_airframe_01_goggles_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_01_goggles_RGR: ItemCore {
+    class milgp_h_airframe_01_goggles_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_02_CB_hexagon: ItemCore {
+    class milgp_h_airframe_01_goggles_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_02_CB: ItemCore {
+    class milgp_h_airframe_02_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_02_khk_hexagon: ItemCore {
+    class milgp_h_airframe_02_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_02_khk: ItemCore {
+    class milgp_h_airframe_02_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_02_MC: ItemCore {
+    class milgp_h_airframe_02_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_02_RGR_hexagon: ItemCore {
+    class milgp_h_airframe_02_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_02_RGR: ItemCore {
+    class milgp_h_airframe_02_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_02_goggles_CB_hexagon: ItemCore {
+    class milgp_h_airframe_02_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_02_goggles_CB: ItemCore {
+    class milgp_h_airframe_02_goggles_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_02_goggles_khk_hexagon: ItemCore {
+    class milgp_h_airframe_02_goggles_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_02_goggles_khk: ItemCore {
+    class milgp_h_airframe_02_goggles_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_02_goggles_MC: ItemCore {
+    class milgp_h_airframe_02_goggles_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_02_goggles_RGR_hexagon: ItemCore {
+    class milgp_h_airframe_02_goggles_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_02_goggles_RGR: ItemCore {
+    class milgp_h_airframe_02_goggles_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_03_CB_hexagon: ItemCore {
+    class milgp_h_airframe_02_goggles_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_03_CB: ItemCore {
+    class milgp_h_airframe_03_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_03_khk_hexagon: ItemCore {
+    class milgp_h_airframe_03_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_03_khk: ItemCore {
+    class milgp_h_airframe_03_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_03_MC: ItemCore {
+    class milgp_h_airframe_03_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_03_RGR_hexagon: ItemCore {
+    class milgp_h_airframe_03_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_03_RGR: ItemCore {
+    class milgp_h_airframe_03_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_03_goggles_CB_hexagon: ItemCore {
+    class milgp_h_airframe_03_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_03_goggles_CB: ItemCore {
+    class milgp_h_airframe_03_goggles_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_03_goggles_khk_hexagon: ItemCore {
+    class milgp_h_airframe_03_goggles_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_03_goggles_khk: ItemCore {
+    class milgp_h_airframe_03_goggles_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_03_goggles_MC: ItemCore {
+    class milgp_h_airframe_03_goggles_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_03_goggles_RGR_hexagon: ItemCore {
+    class milgp_h_airframe_03_goggles_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_03_goggles_RGR: ItemCore {
+    class milgp_h_airframe_03_goggles_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_03_goggles_CB_hexagon: ItemCore {
+    class milgp_h_airframe_03_goggles_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_04_CB_hexagon: ItemCore {
+    class milgp_h_airframe_03_goggles_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_04_CB: ItemCore {
+    class milgp_h_airframe_04_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_04_khk_hexagon: ItemCore {
+    class milgp_h_airframe_04_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_04_khk_hexagon: ItemCore {
+    class milgp_h_airframe_04_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_04_MC: ItemCore {
+    class milgp_h_airframe_04_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_04_RGR_hexagon: ItemCore {
+    class milgp_h_airframe_04_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_04_RGR: ItemCore {
+    class milgp_h_airframe_04_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_04_goggles_CB_hexagon: ItemCore {
+    class milgp_h_airframe_04_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_04_goggles_CB: ItemCore {
+    class milgp_h_airframe_04_goggles_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_04_goggles_khk_hexagon: ItemCore {
+    class milgp_h_airframe_04_goggles_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_04_goggles_khk: ItemCore {
+    class milgp_h_airframe_04_goggles_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_04_goggles_MC: ItemCore {
+    class milgp_h_airframe_04_goggles_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_04_goggles_RGR_hexagon: ItemCore {
+    class milgp_h_airframe_04_goggles_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_04_goggles_RGR: ItemCore {
+    class milgp_h_airframe_04_goggles_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_05_CB_hexagon: ItemCore {
+    class milgp_h_airframe_04_goggles_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_05_CB: ItemCore {
+    class milgp_h_airframe_05_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_05_khk_hexagon: ItemCore {
+    class milgp_h_airframe_05_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_05_khk: ItemCore {
+    class milgp_h_airframe_05_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_05_MC: ItemCore {
+    class milgp_h_airframe_05_khk: ItemMain {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class milgp_h_airframe_05_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
     class milgp_h_airframe_05_RGR_hexagon {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_05_RGR: ItemCore {
+    class milgp_h_airframe_05_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_05_goggles_CB_hexagon: ItemCore {
+    class milgp_h_airframe_05_goggles_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_05_goggles_CB: ItemCore {
+    class milgp_h_airframe_05_goggles_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_05_goggles_khk_hexagon: ItemCore {
+    class milgp_h_airframe_05_goggles_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_05_goggles_khk: ItemCore {
+    class milgp_h_airframe_05_goggles_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_05_goggles_MC: ItemCore {
+    class milgp_h_airframe_05_goggles_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_05_goggles_RGR_hexagon: ItemCore {
+    class milgp_h_airframe_05_goggles_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_05_goggles_RGR: ItemCore {
+    class milgp_h_airframe_05_goggles_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_06_CB_hexagon: ItemCore {
+    class milgp_h_airframe_06_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_06_CB: ItemCore {
+    class milgp_h_airframe_06_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_06_khk_hexagon: ItemCore {
+    class milgp_h_airframe_06_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_06_khk: ItemCore {
+    class milgp_h_airframe_06_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_06_MC: ItemCore {
+    class milgp_h_airframe_06_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_06_RGR_hexagon: ItemCore {
+    class milgp_h_airframe_06_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_06_RGR: ItemCore {
+    class milgp_h_airframe_06_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_06_goggles_CB_hexagon: ItemCore {
+    class milgp_h_airframe_06_goggles_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_06_goggles_CB: ItemCore {
+    class milgp_h_airframe_06_goggles_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_06_goggles_khk_hexagon: ItemCore {
+    class milgp_h_airframe_06_goggles_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_06_goggles_khk: ItemCore {
+    class milgp_h_airframe_06_goggles_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_06_goggles_MC: ItemCore {
+    class milgp_h_airframe_06_goggles_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_06_goggles_RGR_hexagon: ItemCore {
+    class milgp_h_airframe_06_goggles_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_06_goggles_RGR: ItemCore {
+    class milgp_h_airframe_06_goggles_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_01_khk: ItemCore {
+    class milgp_h_opsmain_01_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_01_goggles_khk: ItemCore {
+    class milgp_h_opsmain_01_goggles_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_02_khk: ItemCore {
+    class milgp_h_opsmain_02_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_02_goggles_khk: ItemCore {
+    class milgp_h_opsmain_02_goggles_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_03_khk: ItemCore {
+    class milgp_h_opsmain_03_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_03_goggles_khk: ItemCore {
+    class milgp_h_opsmain_03_goggles_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_04_khk: ItemCore {
+    class milgp_h_opsmain_04_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_04_goggles_khk: ItemCore {
+    class milgp_h_opsmain_04_goggles_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_05_khk: ItemCore {
+    class milgp_h_opsmain_05_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_05_goggles_khk: ItemCore {
+    class milgp_h_opsmain_05_goggles_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_06_khk: ItemCore {
+    class milgp_h_opsmain_06_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_06_goggles_khk: ItemCore {
+    class milgp_h_opsmain_06_goggles_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_01_khk_hexagon: ItemCore {
+    class milgp_h_opsmain_01_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_01_goggles_khk_hexagon: ItemCore {
+    class milgp_h_opsmain_01_goggles_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_02_khk_hexagon: ItemCore {
+    class milgp_h_opsmain_02_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_02_goggles_khk_hexagon: ItemCore {
+    class milgp_h_opsmain_02_goggles_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_03_khk_hexagon: ItemCore {
+    class milgp_h_opsmain_03_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_03_goggles_khk_hexagon: ItemCore {
+    class milgp_h_opsmain_03_goggles_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_04_khk_hexagon: ItemCore {
+    class milgp_h_opsmain_04_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_04_goggles_khk_hexagon: ItemCore {
+    class milgp_h_opsmain_04_goggles_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_05_khk_hexagon: ItemCore {
+    class milgp_h_opsmain_05_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_05_goggles_khk_hexagon: ItemCore {
+    class milgp_h_opsmain_05_goggles_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_06_khk_hexagon: ItemCore {
+    class milgp_h_opsmain_06_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_06_goggles_khk_hexagon: ItemCore {
+    class milgp_h_opsmain_06_goggles_khk_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_01_CB: ItemCore {
+    class milgp_h_opsmain_01_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_01_goggles_CB: ItemCore {
+    class milgp_h_opsmain_01_goggles_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_02_CB: ItemCore {
+    class milgp_h_opsmain_02_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_02_goggles_CB: ItemCore {
+    class milgp_h_opsmain_02_goggles_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_03_CB: ItemCore {
+    class milgp_h_opsmain_03_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_03_goggles_CB: ItemCore {
+    class milgp_h_opsmain_03_goggles_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_04_CB: ItemCore {
+    class milgp_h_opsmain_04_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_04_goggles_CB: ItemCore {
+    class milgp_h_opsmain_04_goggles_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_05_CB: ItemCore {
+    class milgp_h_opsmain_05_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_05_goggles_CB: ItemCore {
+    class milgp_h_opsmain_05_goggles_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_06_CB: ItemCore {
+    class milgp_h_opsmain_06_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_06_goggles_CB: ItemCore {
+    class milgp_h_opsmain_06_goggles_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_01_CB_hexagon: ItemCore {
+    class milgp_h_opsmain_01_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_01_goggles_CB_hexagon: ItemCore {
+    class milgp_h_opsmain_01_goggles_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_02_CB_hexagon: ItemCore {
+    class milgp_h_opsmain_02_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_02_goggles_CB_hexagon: ItemCore {
+    class milgp_h_opsmain_02_goggles_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_03_CB_hexagon: ItemCore {
+    class milgp_h_opsmain_03_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_03_goggles_CB_hexagon: ItemCore {
+    class milgp_h_opsmain_03_goggles_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_04_CB_hexagon: ItemCore {
+    class milgp_h_opsmain_04_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_04_goggles_CB_hexagon: ItemCore {
+    class milgp_h_opsmain_04_goggles_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_05_CB_hexagon: ItemCore {
+    class milgp_h_opsmain_05_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_05_goggles_CB_hexagon: ItemCore {
+    class milgp_h_opsmain_05_goggles_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_06_CB_hexagon: ItemCore {
+    class milgp_h_opsmain_06_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_06_goggles_CB_hexagon: ItemCore {
+    class milgp_h_opsmain_06_goggles_CB_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_01_RGR: ItemCore {
+    class milgp_h_opsmain_01_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_01_goggles_RGR: ItemCore {
+    class milgp_h_opsmain_01_goggles_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_02_RGR: ItemCore {
+    class milgp_h_opsmain_02_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_02_goggles_RGR: ItemCore {
+    class milgp_h_opsmain_02_goggles_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_03_RGR: ItemCore {
+    class milgp_h_opsmain_03_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_03_goggles_RGR: ItemCore {
+    class milgp_h_opsmain_03_goggles_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_04_RGR: ItemCore {
+    class milgp_h_opsmain_04_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_04_goggles_RGR: ItemCore {
+    class milgp_h_opsmain_04_goggles_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_05_RGR: ItemCore {
+    class milgp_h_opsmain_05_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_05_goggles_RGR: ItemCore {
+    class milgp_h_opsmain_05_goggles_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_06_RGR: ItemCore {
+    class milgp_h_opsmain_06_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_06_goggles_RGR: ItemCore {
+    class milgp_h_opsmain_06_goggles_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_01_RGR_hexagon: ItemCore {
+    class milgp_h_opsmain_01_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_01_goggles_RGR_hexagon: ItemCore {
+    class milgp_h_opsmain_01_goggles_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_02_RGR_hexagon: ItemCore {
+    class milgp_h_opsmain_02_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_02_goggles_RGR_hexagon: ItemCore {
+    class milgp_h_opsmain_02_goggles_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_03_RGR_hexagon: ItemCore {
+    class milgp_h_opsmain_03_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_03_goggles_RGR_hexagon: ItemCore {
+    class milgp_h_opsmain_03_goggles_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_04_RGR_hexagon: ItemCore {
+    class milgp_h_opsmain_04_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_04_goggles_RGR_hexagon: ItemCore {
+    class milgp_h_opsmain_04_goggles_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_05_RGR_hexagon: ItemCore {
+    class milgp_h_opsmain_05_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_05_goggles_RGR_hexagon: ItemCore {
+    class milgp_h_opsmain_05_goggles_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_06_RGR_hexagon: ItemCore {
+    class milgp_h_opsmain_06_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_06_goggles_RGR_hexagon: ItemCore {
+    class milgp_h_opsmain_06_goggles_RGR_hexagon: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_01_MC: ItemCore {
+    class milgp_h_opsmain_01_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_01_goggles_MC: ItemCore {
+    class milgp_h_opsmain_01_goggles_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_02_MC: ItemCore {
+    class milgp_h_opsmain_02_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_02_goggles_MC: ItemCore {
+    class milgp_h_opsmain_02_goggles_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_03_MC: ItemCore {
+    class milgp_h_opsmain_03_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_03_goggles_MC: ItemCore {
+    class milgp_h_opsmain_03_goggles_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_04_MC: ItemCore {
+    class milgp_h_opsmain_04_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_04_goggles_MC: ItemCore {
+    class milgp_h_opsmain_04_goggles_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_05_MC: ItemCore {
+    class milgp_h_opsmain_05_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_05_goggles_MC: ItemCore {
+    class milgp_h_opsmain_05_goggles_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_06_MC: ItemCore {
+    class milgp_h_opsmain_06_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_opscore_06_goggles_MC: ItemCore {
+    class milgp_h_opsmain_06_goggles_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_02_khk: ItemCore {
+    class milgp_h_cap_02_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_02_goggles_khk: ItemCore {
+    class milgp_h_cap_02_goggles_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_03_khk: ItemCore {
+    class milgp_h_cap_03_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_03_goggles_khk: ItemCore {
+    class milgp_h_cap_03_goggles_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_02_RGR: ItemCore {
+    class milgp_h_cap_02_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_02_goggles_RGR: ItemCore {
+    class milgp_h_cap_02_goggles_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_03_RGR: ItemCore {
+    class milgp_h_cap_03_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_03_goggles_RGR: ItemCore {
+    class milgp_h_cap_03_goggles_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_02_CB: ItemCore {
+    class milgp_h_cap_02_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_02_goggles_CB: ItemCore {
+    class milgp_h_cap_02_goggles_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_03_CB: ItemCore {
+    class milgp_h_cap_03_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_03_goggles_CB: ItemCore {
+    class milgp_h_cap_03_goggles_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_02_MC: ItemCore {
+    class milgp_h_cap_02_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_02_goggles_MC: ItemCore {
+    class milgp_h_cap_02_goggles_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_03_MC: ItemCore {
+    class milgp_h_cap_03_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_03_goggles_MC: ItemCore {
+    class milgp_h_cap_03_goggles_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_backwards_02_khk: ItemCore {
+    class milgp_h_cap_backwards_02_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_backwards_02_goggles_khk: ItemCore {
+    class milgp_h_cap_backwards_02_goggles_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_backwards_03_khk: ItemCore {
+    class milgp_h_cap_backwards_03_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_backwards_03_goggles_khk: ItemCore {
+    class milgp_h_cap_backwards_03_goggles_khk: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_backwards_02_RGR: ItemCore {
+    class milgp_h_cap_backwards_02_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_backwards_02_goggles_RGR: ItemCore {
+    class milgp_h_cap_backwards_02_goggles_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_backwards_03_RGR: ItemCore {
+    class milgp_h_cap_backwards_03_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_backwards_03_goggles_RGR: ItemCore {
+    class milgp_h_cap_backwards_03_goggles_RGR: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_backwards_02_CB: ItemCore {
+    class milgp_h_cap_backwards_02_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_backwards_02_goggles_CB: ItemCore {
+    class milgp_h_cap_backwards_02_goggles_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_backwards_03_CB: ItemCore {
+    class milgp_h_cap_backwards_03_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_backwards_03_goggles_CB: ItemCore {
+    class milgp_h_cap_backwards_03_goggles_CB: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_backwards_02_MC: ItemCore {
+    class milgp_h_cap_backwards_02_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_backwards_02_goggles_MC: ItemCore {
+    class milgp_h_cap_backwards_02_goggles_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_backwards_03_MC: ItemCore {
+    class milgp_h_cap_backwards_03_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_cap_backwards_03_goggles_MC: ItemCore {
+    class milgp_h_cap_backwards_03_goggles_MC: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
 // fox2
-    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_1: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_amp_1: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_1_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_amp_1_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_2: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_amp_2: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_2_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_amp_2_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_3: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_amp_3: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_3_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_amp_3_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_4: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_amp_4: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_4_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_amp_4_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_5: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_amp_5: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_amp_5_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_amp_5_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_1: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_1: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_1_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_1_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_ct_2: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_ct_2: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_ct_2_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_ct_2_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_ct_3: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_ct_3: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_ct_3_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_ct_3_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_ct_4: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_ct_4: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_ct_4_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_ct_4_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_ct_5: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_ct_5: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_blk_ct_5_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_blk_ct_5_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_1: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_1: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_1_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_1_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_Amp_2: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_Amp_2: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_Amp_2_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_Amp_2_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_Amp_3: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_Amp_3: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_Amp_3_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_Amp_3_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_Amp_4: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_Amp_4: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_Amp_4_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_Amp_4_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_Amp_5: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_Amp_5: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_Amp_5_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_Amp_5_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_1: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_1: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_1_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_1_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_ct_2: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_ct_2: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_ct_2_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_ct_2_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_ct_3: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_ct_3: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_ct_3_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_ct_3_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_ct_4: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_ct_4: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_ct_4_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_ct_4_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_ct_5: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_ct_5: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class FPGP_2_OpscoreMar_Snakeskin_Tan_ct_5_us: ItemCore {
+    class FPGP_2_OpsmainMar_Snakeskin_Tan_ct_5_us: ItemMain {
+        scope = 2;
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };

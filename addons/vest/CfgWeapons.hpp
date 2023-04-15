@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 class CfgWeapons {
-    class ItemCore;
+    class ItemMain;
     class Vest_NoCamo_Base;
     class Vest_Camo_Base;
     class V_PlateCarrierSpec_rgr: Vest_Camo_Base {
@@ -137,24 +137,24 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(BandollierB_Multicam): V_BandollierB_blk {
-        author = QAUTHOR;
-        displayName="[GHOST] Slash Bandolier";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\vests_multicam_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_V_bandollierB_Multicam_CA.paa);
-        MACRO_ITEM_COMMON
-        hiddenSelections[]= {
-            "camo"
-        };
-        class ItemInfo: ItemInfo {
-            containerClass = "Supply300";
-            hiddenSelections[]= {
-                "camo"
-            };
-        };
-    };
+    // class GVAR(BandollierB_Multicam): V_BandollierB_blk {
+    //     author = QAUTHOR;
+    //     displayName="[GHOST] Slash Bandolier";
+    //     hiddenSelectionsTextures[]= {
+    //         QPATHTOF(data\vests_multicam_co.paa)
+    //     };
+    //     picture=QPATHTOF(data\ui\icon_V_bandollierB_Multicam_CA.paa);
+    //     MACRO_ITEM_COMMON
+    //     hiddenSelections[]= {
+    //         "camo"
+    //     };
+    //     class ItemInfo: ItemInfo {
+    //         containerClass = "Supply300";
+    //         hiddenSelections[]= {
+    //             "camo"
+    //         };
+    //     };
+    // };
     class GVAR(PlateCarrier_Kerry_Multicam): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         displayName="[GHOST] Carrier Lite (No belt)";
@@ -245,24 +245,24 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(BandollierB_Multicam_Snow): V_BandollierB_blk {
-        author = QAUTHOR;
-        displayName="[GHOST] (Multicam Snow) Slash Bandolier";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\vests_Multicam_Snow_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_V_bandollierB_Multicam_Snow_CA.paa);
-        MACRO_ITEM_COMMON
-        hiddenSelections[]= {
-            "camo"
-        };
-        class ItemInfo: ItemInfo {
-            containerClass = "Supply300";
-            hiddenSelections[]= {
-                "camo"
-            };
-        };
-    };
+    // class GVAR(BandollierB_Multicam_Snow): V_BandollierB_blk {
+    //     author = QAUTHOR;
+    //     displayName="[GHOST] (Multicam Snow) Slash Bandolier";
+    //     hiddenSelectionsTextures[]= {
+    //         QPATHTOF(data\vests_Multicam_Snow_co.paa)
+    //     };
+    //     picture=QPATHTOF(data\ui\icon_V_bandollierB_Multicam_Snow_CA.paa);
+    //     MACRO_ITEM_COMMON
+    //     hiddenSelections[]= {
+    //         "camo"
+    //     };
+    //     class ItemInfo: ItemInfo {
+    //         containerClass = "Supply300";
+    //         hiddenSelections[]= {
+    //             "camo"
+    //         };
+    //     };
+    // };
     class GVAR(PlateCarrier_Kerry_Multicam_Snow): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         displayName="[GHOST] (Multicam Snow) Carrier Lite (No belt)";
@@ -353,24 +353,24 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(BandollierB_Multicam_Woodland): V_BandollierB_blk {
-        author = QAUTHOR;
-        displayName="[GHOST] (Multicam Woodland) Slash Bandolier";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\vests_Multicam_Woodland_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_V_bandollierB_Multicam_Woodland_CA.paa);
-        MACRO_ITEM_COMMON
-        hiddenSelections[]= {
-            "camo"
-        };
-        class ItemInfo: ItemInfo {
-            containerClass = "Supply300";
-            hiddenSelections[]= {
-                "camo"
-            };
-        };
-    };
+    // class GVAR(BandollierB_Multicam_Woodland): V_BandollierB_blk {
+    //     author = QAUTHOR;
+    //     displayName="[GHOST] (Multicam Woodland) Slash Bandolier";
+    //     hiddenSelectionsTextures[]= {
+    //         QPATHTOF(data\vests_Multicam_Woodland_co.paa)
+    //     };
+    //     picture=QPATHTOF(data\ui\icon_V_bandollierB_Multicam_Woodland_CA.paa);
+    //     MACRO_ITEM_COMMON
+    //     hiddenSelections[]= {
+    //         "camo"
+    //     };
+    //     class ItemInfo: ItemInfo {
+    //         containerClass = "Supply300";
+    //         hiddenSelections[]= {
+    //             "camo"
+    //         };
+    //     };
+    // };
     class GVAR(PlateCarrier_Kerry_Multicam_Woodland): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         displayName="[GHOST] (Multicam Woodland) Carrier Lite (No belt)";
@@ -461,24 +461,24 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(BandollierB_Solid_Black): V_BandollierB_blk {
-        author = QAUTHOR;
-        displayName="[GHOST] (Black) Slash Bandolier";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\vests_Solid_Black_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_Black_CA.paa);
-        MACRO_ITEM_COMMON
-        hiddenSelections[]= {
-            "camo"
-        };
-        class ItemInfo: ItemInfo {
-            containerClass = "Supply300";
-            hiddenSelections[]= {
-                "camo"
-            };
-        };
-    };
+    // class GVAR(BandollierB_Solid_Black): V_BandollierB_blk {
+    //     author = QAUTHOR;
+    //     displayName="[GHOST] (Black) Slash Bandolier";
+    //     hiddenSelectionsTextures[]= {
+    //         QPATHTOF(data\vests_Solid_Black_co.paa)
+    //     };
+    //     picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_Black_CA.paa);
+    //     MACRO_ITEM_COMMON
+    //     hiddenSelections[]= {
+    //         "camo"
+    //     };
+    //     class ItemInfo: ItemInfo {
+    //         containerClass = "Supply300";
+    //         hiddenSelections[]= {
+    //             "camo"
+    //         };
+    //     };
+    // };
     class GVAR(PlateCarrier_Kerry_Solid_Black): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         displayName="[GHOST] (Black) Carrier Lite (No belt)";
@@ -569,24 +569,24 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(BandollierB_Solid_CoyoteBrown): V_BandollierB_blk {
-        author = QAUTHOR;
-        displayName="[GHOST] (Coyote) Slash Bandolier";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\vests_Solid_CoyoteBrown_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_CoyoteBrown_CA.paa);
-        MACRO_ITEM_COMMON
-        hiddenSelections[]= {
-            "camo"
-        };
-        class ItemInfo: ItemInfo {
-            containerClass = "Supply300";
-            hiddenSelections[]= {
-                "camo"
-            };
-        };
-    };
+    // class GVAR(BandollierB_Solid_CoyoteBrown): V_BandollierB_blk {
+    //     author = QAUTHOR;
+    //     displayName="[GHOST] (Coyote) Slash Bandolier";
+    //     hiddenSelectionsTextures[]= {
+    //         QPATHTOF(data\vests_Solid_CoyoteBrown_co.paa)
+    //     };
+    //     picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_CoyoteBrown_CA.paa);
+    //     MACRO_ITEM_COMMON
+    //     hiddenSelections[]= {
+    //         "camo"
+    //     };
+    //     class ItemInfo: ItemInfo {
+    //         containerClass = "Supply300";
+    //         hiddenSelections[]= {
+    //             "camo"
+    //         };
+    //     };
+    // };
     class GVAR(PlateCarrier_Kerry_Solid_CoyoteBrown): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         displayName="[GHOST] (Coyote) Carrier Lite (No belt)";
@@ -677,24 +677,24 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(BandollierB_Solid_Ranger_Green): V_BandollierB_blk {
-        author = QAUTHOR;
-        displayName="[GHOST] (Ranger Green) Slash Bandolier";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\vests_Solid_Ranger_Green_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_Ranger_Green_CA.paa);
-        MACRO_ITEM_COMMON
-        hiddenSelections[]= {
-            "camo"
-        };
-        class ItemInfo: ItemInfo {
-            containerClass = "Supply300";
-            hiddenSelections[]= {
-                "camo"
-            };
-        };
-    };
+    // class GVAR(BandollierB_Solid_Ranger_Green): V_BandollierB_blk {
+    //     author = QAUTHOR;
+    //     displayName="[GHOST] (Ranger Green) Slash Bandolier";
+    //     hiddenSelectionsTextures[]= {
+    //         QPATHTOF(data\vests_Solid_Ranger_Green_co.paa)
+    //     };
+    //     picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_Ranger_Green_CA.paa);
+    //     MACRO_ITEM_COMMON
+    //     hiddenSelections[]= {
+    //         "camo"
+    //     };
+    //     class ItemInfo: ItemInfo {
+    //         containerClass = "Supply300";
+    //         hiddenSelections[]= {
+    //             "camo"
+    //         };
+    //     };
+    // };
     class GVAR(PlateCarrier_Kerry_Solid_Ranger_Green): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         displayName="[GHOST] (Ranger Green) Carrier Lite (No belt)";
@@ -785,24 +785,24 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(BandollierB_US_Tigerstripe): V_BandollierB_blk {
-        author = QAUTHOR;
-        displayName="[GHOST] (Tigerstripe) Slash Bandolier";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\vests_US_Tigerstripe_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_V_bandollierB_US_Tigerstripe_CA.paa);
-        MACRO_ITEM_COMMON
-        hiddenSelections[]= {
-            "camo"
-        };
-        class ItemInfo: ItemInfo {
-            containerClass = "Supply300";
-            hiddenSelections[]= {
-                "camo"
-            };
-        };
-    };
+    // class GVAR(BandollierB_US_Tigerstripe): V_BandollierB_blk {
+    //     author = QAUTHOR;
+    //     displayName="[GHOST] (Tigerstripe) Slash Bandolier";
+    //     hiddenSelectionsTextures[]= {
+    //         QPATHTOF(data\vests_US_Tigerstripe_co.paa)
+    //     };
+    //     picture=QPATHTOF(data\ui\icon_V_bandollierB_US_Tigerstripe_CA.paa);
+    //     MACRO_ITEM_COMMON
+    //     hiddenSelections[]= {
+    //         "camo"
+    //     };
+    //     class ItemInfo: ItemInfo {
+    //         containerClass = "Supply300";
+    //         hiddenSelections[]= {
+    //             "camo"
+    //         };
+    //     };
+    // };
     class GVAR(PlateCarrier_Kerry_US_Tigerstripe): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         displayName="[GHOST] (Tigerstripe) Carrier Lite (No belt)";
@@ -893,24 +893,24 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(BandollierB_Solid_Olive): V_BandollierB_blk {
-        author = QAUTHOR;
-        displayName="[GHOST] (Olive) Slash Bandolier";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\vests_Solid_Olive_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_Olive_CA.paa);
-        MACRO_ITEM_COMMON
-        hiddenSelections[]= {
-            "camo"
-        };
-        class ItemInfo: ItemInfo {
-            containerClass = "Supply300";
-            hiddenSelections[]= {
-                "camo"
-            };
-        };
-    };
+    // class GVAR(BandollierB_Solid_Olive): V_BandollierB_blk {
+    //     author = QAUTHOR;
+    //     displayName="[GHOST] (Olive) Slash Bandolier";
+    //     hiddenSelectionsTextures[]= {
+    //         QPATHTOF(data\vests_Solid_Olive_co.paa)
+    //     };
+    //     picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_Olive_CA.paa);
+    //     MACRO_ITEM_COMMON
+    //     hiddenSelections[]= {
+    //         "camo"
+    //     };
+    //     class ItemInfo: ItemInfo {
+    //         containerClass = "Supply300";
+    //         hiddenSelections[]= {
+    //             "camo"
+    //         };
+    //     };
+    // };
     class GVAR(PlateCarrier_Kerry_Solid_Olive): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         displayName="[GHOST] (Olive) Carrier Lite (No belt)";
@@ -1001,24 +1001,24 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(BandollierB_Solid_Tan): V_BandollierB_blk {
-        author = QAUTHOR;
-        displayName="[GHOST] (Tan) Slash Bandolier";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\vests_Solid_Tan_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_Tan_CA.paa);
-        MACRO_ITEM_COMMON
-        hiddenSelections[]= {
-            "camo"
-        };
-        class ItemInfo: ItemInfo {
-            containerClass = "Supply300";
-            hiddenSelections[]= {
-                "camo"
-            };
-        };
-    };
+    // class GVAR(BandollierB_Solid_Tan): V_BandollierB_blk {
+    //     author = QAUTHOR;
+    //     displayName="[GHOST] (Tan) Slash Bandolier";
+    //     hiddenSelectionsTextures[]= {
+    //         QPATHTOF(data\vests_Solid_Tan_co.paa)
+    //     };
+    //     picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_Tan_CA.paa);
+    //     MACRO_ITEM_COMMON
+    //     hiddenSelections[]= {
+    //         "camo"
+    //     };
+    //     class ItemInfo: ItemInfo {
+    //         containerClass = "Supply300";
+    //         hiddenSelections[]= {
+    //             "camo"
+    //         };
+    //     };
+    // };
     class GVAR(PlateCarrier_Kerry_Solid_Tan): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         displayName="[GHOST] (Tan) Carrier Lite (No belt)";
@@ -1109,24 +1109,24 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(BandollierB_Solid_White): V_BandollierB_blk {
-        author = QAUTHOR;
-        displayName="[GHOST] (White) Slash Bandolier";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\vests_Solid_White_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_White_CA.paa);
-        MACRO_ITEM_COMMON
-        hiddenSelections[]= {
-            "camo"
-        };
-        class ItemInfo: ItemInfo {
-            containerClass = "Supply300";
-            hiddenSelections[]= {
-                "camo"
-            };
-        };
-    };
+    // class GVAR(BandollierB_Solid_White): V_BandollierB_blk {
+    //     author = QAUTHOR;
+    //     displayName="[GHOST] (White) Slash Bandolier";
+    //     hiddenSelectionsTextures[]= {
+    //         QPATHTOF(data\vests_Solid_White_co.paa)
+    //     };
+    //     picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_White_CA.paa);
+    //     MACRO_ITEM_COMMON
+    //     hiddenSelections[]= {
+    //         "camo"
+    //     };
+    //     class ItemInfo: ItemInfo {
+    //         containerClass = "Supply300";
+    //         hiddenSelections[]= {
+    //             "camo"
+    //         };
+    //     };
+    // };
     class GVAR(PlateCarrier_Kerry_Solid_White): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         displayName="[GHOST] (White) Carrier Lite (No belt)";
@@ -1217,24 +1217,24 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(BandollierB_US_DCU): V_BandollierB_blk {
-        author = QAUTHOR;
-        displayName="[GHOST] (DCU) Slash Bandolier";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\vests_US_DCU_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_V_bandollierB_US_DCU_CA.paa);
-        MACRO_ITEM_COMMON
-        hiddenSelections[]= {
-            "camo"
-        };
-        class ItemInfo: ItemInfo {
-            containerClass = "Supply300";
-            hiddenSelections[]= {
-                "camo"
-            };
-        };
-    };
+    // class GVAR(BandollierB_US_DCU): V_BandollierB_blk {
+    //     author = QAUTHOR;
+    //     displayName="[GHOST] (DCU) Slash Bandolier";
+    //     hiddenSelectionsTextures[]= {
+    //         QPATHTOF(data\vests_US_DCU_co.paa)
+    //     };
+    //     picture=QPATHTOF(data\ui\icon_V_bandollierB_US_DCU_CA.paa);
+    //     MACRO_ITEM_COMMON
+    //     hiddenSelections[]= {
+    //         "camo"
+    //     };
+    //     class ItemInfo: ItemInfo {
+    //         containerClass = "Supply300";
+    //         hiddenSelections[]= {
+    //             "camo"
+    //         };
+    //     };
+    // };
     class GVAR(PlateCarrier_Kerry_US_DCU): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         displayName="[GHOST] (DCU) Carrier Lite (No belt)";
@@ -1325,24 +1325,24 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(BandollierB_US_M81): V_BandollierB_blk {
-        author = QAUTHOR;
-        displayName="[GHOST] (M81) Slash Bandolier";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\vests_US_M81_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_V_bandollierB_US_M81_CA.paa);
-        MACRO_ITEM_COMMON
-        hiddenSelections[]= {
-            "camo"
-        };
-        class ItemInfo: ItemInfo {
-            containerClass = "Supply300";
-            hiddenSelections[]= {
-                "camo"
-            };
-        };
-    };
+    // class GVAR(BandollierB_US_M81): V_BandollierB_blk {
+    //     author = QAUTHOR;
+    //     displayName="[GHOST] (M81) Slash Bandolier";
+    //     hiddenSelectionsTextures[]= {
+    //         QPATHTOF(data\vests_US_M81_co.paa)
+    //     };
+    //     picture=QPATHTOF(data\ui\icon_V_bandollierB_US_M81_CA.paa);
+    //     MACRO_ITEM_COMMON
+    //     hiddenSelections[]= {
+    //         "camo"
+    //     };
+    //     class ItemInfo: ItemInfo {
+    //         containerClass = "Supply300";
+    //         hiddenSelections[]= {
+    //             "camo"
+    //         };
+    //     };
+    // };
     class GVAR(PlateCarrier_Kerry_US_M81): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         displayName="[GHOST] (M81) Carrier Lite (No belt)";

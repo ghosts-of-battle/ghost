@@ -88,14 +88,14 @@ _size = [_size, _size - 0.5] select (_name isEqualTo "");
 
 // Prepare variables
 GVAR(targetNumber) = 0;
-GVAR(currentScore) = 0;
-GVAR(maxScore) = [0, count _targets] select (_mode == 5);
+GVAR(currentSmain) = 0;
+GVAR(maxSmain) = [0, count _targets] select (_mode == 5);
 GVAR(invalidTargetHit) = "False";
 
 if (_mode > 1) then {
     if (_mode < 5) then {
         // Player count bullets fired
-        GVAR(firedEHid) = ACE_player addEventHandler ["Fired", { GVAR(maxScore) = GVAR(maxScore) + 1; }];
+        GVAR(firedEHid) = ACE_player addEventHandler ["Fired", { GVAR(maxSmain) = GVAR(maxSmain) + 1; }];
     };
 
     if (_mode == 4) then {

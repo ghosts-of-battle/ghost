@@ -1,8 +1,8 @@
 class CfgAmmo {
-    class FlareCore;
-    class FlareBase: FlareCore {};
+    class FlareMain;
+    class FlareBase: FlareMain {};
 
-    class Flare_82mm_AMOS_White: FlareCore {
+    class Flare_82mm_AMOS_White: FlareMain {
         intensity = 2500000; // vanilla: 10000
     };
 

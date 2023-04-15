@@ -15,7 +15,7 @@ class CfgPatches {
             "A3_Weapons_F_Exp",
             "cba_jr",
             "ace_xm157",
-            "MCX_Rattler",
+            // "MCX_Rattler",
             "A3_Weapons_F_Rifles_MX_Black",
             "A3_Weapons_F_Rifles_MX",
             "A3_Weapons_F_LongRangeRifles_M320"

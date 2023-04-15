@@ -9,5 +9,5 @@ Adds Shooting Range framework with a module to set it up. Supports different mod
 ### Features
 
 - Event `"ghost_shootingrange_started"` event with parameters `[_controller, _name, _mode, _targets, _targetsInvalid]`
-- Event `"ghost_shootingrange_stopped"` event with parameters `[_controller, _name, _mode, _success, _scorePercentage, _timeElapsed]`
+- Event `"ghost_shootingrange_stopped"` event with parameters `[_controller, _name, _mode, _success, _smainPercentage, _timeElapsed]`
 - Function `ghost_shootingrange_fnc_configure` for run-time range configuration (description in function header)

@@ -9,7 +9,7 @@ class CfgPatches {
         requiredAddons[] = {"ghost_main"};
         author = QAUTHOR;
         authors[] = {"veteran29"};
-        url = URL;
+        authorUrl = "https://ghostsofbattle.com";
         VERSION_CONFIG;
     };
 };

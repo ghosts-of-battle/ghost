@@ -140,7 +140,7 @@ class XtdGearModels {
             };
         };
 
-        class milgp_opscore {
+        class milgp_opsmain {
             class HelmetCamo {
                 values[] = {
                     "blk",

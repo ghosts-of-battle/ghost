@@ -729,13 +729,12 @@ class XtdGearModels {
                 };
             };
         };
-        class opscoreh {
+        class opsmainh {
             options[] = { "opt","camo" };
             label = "Lite Combat Helmet";
             class camo {
                 alwaysSelectable = 1;
                 values[] = { "mc", "blk", "od", "rgr", "tan", "arid" };
-
                 class blk {
                     label = "BLK";
                     image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
@@ -1407,100 +1406,100 @@ class XtdGearInfos {
           camo = "US_M81";
         };
 
-        class opscore_sf_arid {
-          model = "opscoreh";
+        class opsmain_sf_arid {
+          model = "opsmainh";
           camo = "arid";
-          opt ="norm";
+          opt = "norm";
         };
-        class opscore_sf_arid_amp {
-          model = "opscoreh";
+        class opsmain_sf_arid_amp {
+          model = "opsmainh";
           camo = "arid";
-          opt ="amp";
+          opt = "amp";
         };
-        class opscore_sf_arid_full {
-          model = "opscoreh";
+        class opsmain_sf_arid_full {
+          model = "opsmainh";
           camo = "arid";
-          opt ="full";
+          opt = "full";
         };
 
-        class opscore_sf_black {
-          model = "opscoreh";
+        class opsmain_sf_black {
+          model = "opsmainh";
           camo = "blk";
-          opt ="norm";
+          opt = "norm";
         };
-        class opscore_sf_black_amp {
-          model = "opscoreh";
+        class opsmain_sf_black_amp {
+          model = "opsmainh";
           camo = "blk";
-          opt ="amp";
+          opt = "amp";
         };
-        class opscore_sf_black_full {
-          model = "opscoreh";
+        class opsmain_sf_black_full {
+          model = "opsmainh";
           camo = "blk";
-          opt ="full";
+          opt = "full";
         };
 
-        class opscore_sf_mc {
-          model = "opscoreh";
+        class opsmain_sf_mc {
+          model = "opsmainh";
           camo = "mc";
-          opt ="norm";
+          opt = "norm";
         };
-        class opscore_sf_mc_amp {
-          model = "opscoreh";
+        class opsmain_sf_mc_amp {
+          model = "opsmainh";
           camo = "mc";
-          opt ="amp";
+          opt = "amp";
         };
-        class opscore_sf_mc_full {
-          model = "opscoreh";
+        class opsmain_sf_mc_full {
+          model = "opsmainh";
           camo = "mc";
-          opt ="full";
+          opt = "full";
         };
 
-        class opscore_sf_od {
-          model = "opscoreh";
+        class opsmain_sf_od {
+          model = "opsmainh";
           camo = "od";
-          opt ="norm";
+          opt = "norm";
         };
-        class opscore_sf_od_amp {
-          model = "opscoreh";
+        class opsmain_sf_od_amp {
+          model = "opsmainh";
           camo = "od";
-          opt ="amp";
+          opt = "amp";
         };
-        class opscore_sf_od_full {
-          model = "opscoreh";
+        class opsmain_sf_od_full {
+          model = "opsmainh";
           camo = "od";
-          opt ="full";
+          opt = "full";
         };
 
-        class opscore_sf_rgr {
-          model = "opscoreh";
+        class opsmain_sf_rgr {
+          model = "opsmainh";
           camo = "rgr";
-          opt ="norm";
+          opt = "norm";
         };
-        class opscore_sf_rgr_amp {
-          model = "opscoreh";
+        class opsmain_sf_rgr_amp {
+          model = "opsmainh";
           camo = "rgr";
-          opt ="amp";
+          opt = "amp";
         };
-        class opscore_sf_rgr_full {
-          model = "opscoreh";
+        class opsmain_sf_rgr_full {
+          model = "opsmainh";
           camo = "rgr";
-          opt ="full";
+          opt = "full";
         };
 
-        class opscore_sf_tan {
-          model = "opscoreh";
+        class opsmain_sf_tan {
+          model = "opsmainh";
           camo = "tan";
-          opt ="norm";
+          opt = "norm";
         };
-        class opscore_sf_tan_amp {
-          model = "opscoreh";
+        class opsmain_sf_tan_amp {
+          model = "opsmainh";
           camo = "tan";
-          opt ="amp";
+          opt = "amp";
         };
-        class opscore_sf_tan_full {
-          model = "opscoreh";
+        class opsmain_sf_tan_full {
+          model = "opsmainh";
           camo = "tan";
-          opt ="full";
+          opt = "full";
         };
     };
 };
