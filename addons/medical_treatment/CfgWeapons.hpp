@@ -1,7 +1,7 @@
 class CfgWeapons {
-    class ACE_ItemMain;
+    class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
-    class GHOST_apap: ACE_ItemMain {
+    class GHOST_apap: ACE_ItemCore {
         scope = 2;
         scopeCurator = 2;
         author = "ArmaForces";

@@ -10,8 +10,8 @@
  * 3: Targets <ARRAY>
  * 4: Invalid Targets <ARRAY>
  * 5: Success <BOOL> (default: false)
- * 6: Smain <NUMBER> (default: 0)
- * 7: Maximum Smain <NUMBER> (default: 0)
+ * 6: Score <NUMBER> (default: 0)
+ * 7: Maximum Score <NUMBER> (default: 0)
  * 8: Time Elapsed <NUMBER> (default: 0)
  *
  * Return Value:
@@ -23,7 +23,7 @@
  * Public: No
  */
 
-params ["_controller", "_controllers", "_name", "_targets", "_targetsInvalid", ["_success", false], ["_smain", 0], ["_maxSmain", 0], ["_timeElapsed", 0]];
+params ["_controller", "_controllers", "_name", "_targets", "_targetsInvalid", ["_success", false], ["_Score", 0], ["_maxScore", 0], ["_timeElapsed", 0]];
 
 // Set targets to original
 {
@@ -44,17 +44,17 @@ params ["_controller", "_controllers", "_name", "_targets", "_targetsInvalid", [
 private _playerName = [ACE_player, true] call ACEFUNC(common,getName);
 [_controller, "FD_Finish_F"] call FUNC(playSoundSignal);
 
-private _smainPercentage = 0;
+private _ScorePercentage = 0;
 private _mode = _controller getVariable [QGVAR(mode), MODE_DEFAULT];
 
 if (_success) then {
     // Check for zero divisor
-    if (_maxSmain > 0) then {
-        _smainPercentage = round (_smain / _maxSmain * 100);
+    if (_maxScore > 0) then {
+        _ScorePercentage = round (_Score / _maxScore * 100);
     };
 
     private _ratingType = [LSTRING(Accuracy), LSTRING(TargetsHit)] select (_mode == 5);
-    private _texts = [LSTRING(Range), _name, " ", LSTRING(Finished), "<br/><br/>", _ratingType, ": ", str _smainPercentage, "% (", str _smain, "/", str _maxSmain, ")"];
+    private _texts = [LSTRING(Range), _name, " ", LSTRING(Finished), "<br/><br/>", _ratingType, ": ", str _ScorePercentage, "% (", str _Score, "/", str _maxScore, ")"];
     private _size = 4;
 
     if (_timeElapsed > 0) then {
@@ -88,4 +88,4 @@ if (_success) then {
 };
 
 // Public API event
-[QGVAR(stopped), [_controller, _name, _mode, _success, _smainPercentage, _timeElapsed]] call CBA_fnc_localEvent;
+[QGVAR(stopped), [_controller, _name, _mode, _success, _ScorePercentage, _timeElapsed]] call CBA_fnc_localEvent;

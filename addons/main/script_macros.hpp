@@ -24,6 +24,15 @@
 // GHOST macros
 #define IS_MOD_LOADED(modclass)     (isClass (configFile >> "CfgPatches" >> #modclass))
 
+// Expanding on CBA macros
+#define CFUNC(var) EFUNC(common,var)
+#define QCFUNC(var) QUOTE(CFUNC(var))
+
+// Chat macros
+#define IS_CMND_AVAILABLE(var,cmnd) if !([var,cmnd] call EFUNC(chat,commandAvailable)) exitWith {}
+
+
+
 // Extension macros
 #define EXT "ghostsofbattle_mods"
 #define EXT_LOG "ghostsofbattle_mods_log"

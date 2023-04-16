@@ -10,7 +10,7 @@ class CfgWeapons {
     class VestItem;
     class V_RebreatherB;
     class InventoryItem_Base_F;
-    class ItemMain;
+    class ItemCore;
     class UniformItem;
     class U_B_Wetsuit;
     class optic_lrps;
@@ -167,7 +167,7 @@ class CfgWeapons {
         inertia=0.2;
     };
 
-    class GVAR(optic_AMS_base): ItemMain {
+    class GVAR(optic_AMS_base): ItemCore {
         author = QAUTHOR;
         displayName="[GHOST] AMS Base";
         descriptionShort="[GHOST] AMS (NVG)";
@@ -243,7 +243,7 @@ class CfgWeapons {
         inertia=0.2;
     };
 
-    class GVAR(optic_AMSTI_base): ItemMain {
+    class GVAR(optic_AMSTI_base): ItemCore {
         author = QAUTHOR;
         displayName="[GHOST] AMS-TI Base";
         descriptionShort="[GHOST] AMS (NVG/TI)";

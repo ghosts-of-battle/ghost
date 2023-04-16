@@ -26,7 +26,7 @@ class CfgDifficultyPresets {
             visionAid = 0;
             thirdPersonView = 0;
             cameraShake = 1;
-            smainTable = 0;
+            scoreTable = 0;
             deathMessages = 0;
             vonID = 1;
             mapContentFriendly = 0;

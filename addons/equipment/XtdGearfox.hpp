@@ -1,9 +1,9 @@
 #include "script_component.hpp"
 class XtdGearModels {
     class CfgWeapons {
-        class FPGP_2_OpsmainMar {
+        class FPGP_2_OpscoreMar {
             options[] = { "camo", "patch","ver","type" };
-            label = "[FPGP2] Opsmain Maritime";
+            label = "[FPGP2] Opscore Maritime";
             class camo {
                 label = "Camo";
                 alwaysselectable = 1;
@@ -296,1821 +296,1821 @@ class XtdGearModels {
 
 class XtdGearInfos {
     class CfgWeapons {
-        class FPGP_2_OpsmainMar_Snakeskin_blk_amp_1 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_amp_1 {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "none";
             ver = "v1";
             type = "amp";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_1_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_1_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "aus";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_1_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_1_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "can";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_1_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_1_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "fr";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_1_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_1_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ger";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_1_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_1_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "jap";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_1_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_1_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ned";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_1_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_1_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "nor";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_1_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_1_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "pl";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_1_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_1_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "sk";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_1_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_1_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "tw";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_1_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_1_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "uk";
         //     ver = "v1";
         //     type = "amp";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_amp_1_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_amp_1_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "us";
             ver = "v1";
             type = "amp";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_amp_2 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_amp_2 {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "none";
             ver = "v2";
             type = "amp";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_2_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_2_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "aus";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_2_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_2_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "can";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_2_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_2_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "fr";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_2_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_2_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ger";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_2_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_2_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "jap";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_2_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_2_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ned";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_2_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_2_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "nor";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_2_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_2_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "pl";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_2_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_2_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "sk";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_2_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_2_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "tw";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_2_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_2_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "uk";
         //     ver = "v2";
         //     type = "amp";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_amp_2_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_amp_2_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "us";
             ver = "v2";
             type = "amp";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_amp_3 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_amp_3 {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "none";
             ver = "v3";
             type = "amp";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_3_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_3_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "aus";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_3_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_3_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "can";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_3_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_3_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "fr";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_3_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_3_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ger";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_3_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_3_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "jap";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_3_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_3_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ned";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_3_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_3_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "nor";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_3_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_3_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "pl";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_3_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_3_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "sk";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_3_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_3_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "tw";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_3_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_3_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "uk";
         //     ver = "v3";
         //     type = "amp";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_amp_3_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_amp_3_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "us";
             ver = "v3";
             type = "amp";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_amp_4 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_amp_4 {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "none";
             ver = "v4";
             type = "amp";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_4_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_4_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "aus";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_4_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_4_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "can";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_4_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_4_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "fr";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_4_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_4_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ger";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_4_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_4_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "jap";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_4_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_4_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ned";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_4_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_4_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "nor";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_4_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_4_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "pl";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_4_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_4_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "sk";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_4_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_4_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "tw";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_4_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_4_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "uk";
         //     ver = "v4";
         //     type = "amp";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_amp_4_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_amp_4_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "us";
             ver = "v4";
             type = "amp";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_amp_5 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_amp_5 {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "none";
             ver = "v5";
             type = "amp";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_5_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_5_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "aus";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_5_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_5_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "can";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_5_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_5_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "fr";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_5_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_5_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ger";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_5_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_5_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "jap";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_5_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_5_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ned";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_5_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_5_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "nor";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_5_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_5_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "pl";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_5_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_5_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "sk";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_5_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_5_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "tw";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_amp_5_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_amp_5_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "uk";
         //     ver = "v5";
         //     type = "amp";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_amp_5_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_amp_5_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "us";
             ver = "v5";
             type = "amp";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_1 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_1 {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "none";
             ver = "v1";
             type = "Ct";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_1_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_1_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "aus";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_1_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_1_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "can";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_1_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_1_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "fr";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_1_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_1_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ger";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_1_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_1_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "jap";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_1_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_1_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ned";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_1_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_1_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "nor";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_1_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_1_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "pl";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_1_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_1_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "sk";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_1_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_1_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "tw";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_1_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_1_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "uk";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_1_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_1_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "us";
             ver = "v1";
             type = "Ct";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_2 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_2 {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "none";
             ver = "v2";
             type = "Ct";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_2_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_2_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "aus";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_2_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_2_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "can";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_2_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_2_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "fr";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_2_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_2_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ger";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_2_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_2_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "jap";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_2_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_2_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ned";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_2_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_2_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "nor";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_2_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_2_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "pl";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_2_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_2_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "sk";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_2_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_2_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "tw";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_2_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_2_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "uk";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_2_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_2_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "us";
             ver = "v2";
             type = "Ct";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_3 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_3 {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "none";
             ver = "v3";
             type = "Ct";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_3_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_3_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "aus";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_3_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_3_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "can";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_3_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_3_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "fr";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_3_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_3_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ger";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_3_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_3_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "jap";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_3_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_3_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ned";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_3_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_3_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "nor";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_3_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_3_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "pl";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_3_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_3_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "sk";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_3_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_3_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "tw";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_3_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_3_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "uk";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_3_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_3_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "us";
             ver = "v3";
             type = "Ct";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_4 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_4 {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "none";
             ver = "v4";
             type = "Ct";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_4_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_4_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "aus";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_4_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_4_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "can";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_4_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_4_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "fr";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_4_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_4_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ger";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_4_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_4_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "jap";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_4_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_4_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ned";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_4_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_4_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "nor";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_4_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_4_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "pl";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_4_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_4_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "sk";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_4_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_4_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "tw";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_4_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_4_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "uk";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_4_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_4_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "us";
             ver = "v4";
             type = "Ct";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_5 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_5 {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "none";
             ver = "v5";
             type = "Ct";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_5_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_5_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "aus";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_5_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_5_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "can";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_5_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_5_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "fr";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_5_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_5_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ger";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_5_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_5_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "jap";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_5_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_5_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "ned";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_5_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_5_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "nor";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_5_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_5_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "pl";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_5_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_5_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "sk";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_5_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_5_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "tw";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_5_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_5_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "blk";
         //     patch = "uk";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_blk_Ct_5_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_blk_Ct_5_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "blk";
             patch = "us";
             ver = "v5";
             type = "Ct";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_1 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_1 {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "none";
             ver = "v1";
             type = "amp";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_1_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_1_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "aus";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_1_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_1_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "can";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_1_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_1_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "fr";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_1_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_1_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ger";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_1_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_1_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "jap";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_1_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_1_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ned";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_1_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_1_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "nor";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_1_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_1_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "pl";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_1_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_1_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "sk";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_1_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_1_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "tw";
         //     ver = "v1";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_1_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_1_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "uk";
         //     ver = "v1";
         //     type = "amp";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_1_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_1_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "us";
             ver = "v1";
             type = "amp";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_2 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_2 {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "none";
             ver = "v2";
             type = "amp";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_2_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_2_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "aus";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_2_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_2_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "can";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_2_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_2_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "fr";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_2_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_2_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ger";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_2_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_2_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "jap";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_2_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_2_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ned";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_2_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_2_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "nor";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_2_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_2_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "pl";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_2_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_2_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "sk";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_2_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_2_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "tw";
         //     ver = "v2";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_2_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_2_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "uk";
         //     ver = "v2";
         //     type = "amp";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_2_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_2_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "us";
             ver = "v2";
             type = "amp";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_3 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_3 {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "none";
             ver = "v3";
             type = "amp";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_3_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_3_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "aus";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_3_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_3_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "can";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_3_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_3_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "fr";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_3_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_3_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ger";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_3_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_3_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "jap";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_3_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_3_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ned";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_3_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_3_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "nor";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_3_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_3_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "pl";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_3_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_3_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "sk";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_3_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_3_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "tw";
         //     ver = "v3";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_3_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_3_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "uk";
         //     ver = "v3";
         //     type = "amp";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_3_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_3_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "us";
             ver = "v3";
             type = "amp";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_4 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_4 {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "none";
             ver = "v4";
             type = "amp";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_4_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_4_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "aus";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_4_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_4_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "can";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_4_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_4_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "fr";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_4_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_4_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ger";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_4_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_4_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "jap";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_4_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_4_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ned";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_4_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_4_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "nor";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_4_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_4_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "pl";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_4_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_4_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "sk";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_4_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_4_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "tw";
         //     ver = "v4";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_4_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_4_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "uk";
         //     ver = "v4";
         //     type = "amp";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_4_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_4_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "us";
             ver = "v4";
             type = "amp";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_5 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_5 {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "none";
             ver = "v5";
             type = "amp";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_5_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_5_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "aus";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_5_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_5_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "can";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_5_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_5_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "fr";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_5_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_5_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ger";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_5_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_5_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "jap";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_5_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_5_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ned";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_5_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_5_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "nor";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_5_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_5_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "pl";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_5_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_5_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "sk";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_5_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_5_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "tw";
         //     ver = "v5";
         //     type = "amp";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_5_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_5_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "uk";
         //     ver = "v5";
         //     type = "amp";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_amp_5_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_amp_5_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "us";
             ver = "v5";
             type = "amp";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_1 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_1 {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "none";
             ver = "v1";
             type = "Ct";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_1_Aus {
-            model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_1_Aus {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "aus";
             ver = "v1";
             type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_1_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_1_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "can";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_1_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_1_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "fr";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_1_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_1_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ger";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_1_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_1_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "jap";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_1_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_1_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ned";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_1_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_1_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "nor";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_1_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_1_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "pl";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_1_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_1_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "sk";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_1_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_1_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "tw";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_1_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_1_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "uk";
         //     ver = "v1";
         //     type = "Ct";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_1_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_1_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "us";
             ver = "v1";
             type = "Ct";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_2 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_2 {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "none";
             ver = "v2";
             type = "Ct";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_2_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_2_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "aus";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_2_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_2_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "can";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_2_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_2_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "fr";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_2_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_2_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ger";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_2_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_2_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "jap";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_2_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_2_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ned";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_2_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_2_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "nor";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_2_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_2_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "pl";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_2_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_2_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "sk";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_2_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_2_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "tw";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_2_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_2_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "uk";
         //     ver = "v2";
         //     type = "Ct";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_2_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_2_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "us";
             ver = "v2";
             type = "Ct";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_3 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_3 {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "none";
             ver = "v3";
             type = "Ct";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_3_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_3_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "aus";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_3_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_3_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "can";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_3_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_3_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "fr";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_3_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_3_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ger";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_3_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_3_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "jap";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_3_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_3_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ned";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_3_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_3_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "nor";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_3_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_3_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "pl";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_3_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_3_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "sk";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_3_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_3_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "tw";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_3_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_3_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "uk";
         //     ver = "v3";
         //     type = "Ct";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_3_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_3_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "us";
             ver = "v3";
             type = "Ct";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_4 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_4 {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "none";
             ver = "v4";
             type = "Ct";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_4_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_4_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "aus";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_4_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_4_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "can";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_4_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_4_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "fr";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_4_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_4_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ger";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_4_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_4_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "jap";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_4_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_4_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ned";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_4_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_4_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "nor";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_4_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_4_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "pl";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_4_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_4_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "sk";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_4_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_4_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "tw";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_4_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_4_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "uk";
         //     ver = "v4";
         //     type = "Ct";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_4_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_4_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "us";
             ver = "v4";
             type = "Ct";
         };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_5 {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_5 {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "none";
             ver = "v5";
             type = "Ct";
         };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_5_Aus {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_5_Aus {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "aus";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_5_can {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_5_can {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "can";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_5_fr {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_5_fr {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "fr";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_5_ger {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_5_ger {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ger";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_5_jap {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_5_jap {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "jap";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_5_ned {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_5_ned {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "ned";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_5_nor {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_5_nor {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "nor";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_5_pl {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_5_pl {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "pl";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_5_sk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_5_sk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "sk";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_5_tw {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_5_tw {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "tw";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        // class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_5_uk {
-        //     model = "FPGP_2_OpsmainMar";
+        // class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_5_uk {
+        //     model = "FPGP_2_OpscoreMar";
         //     camo = "Tan";
         //     patch = "uk";
         //     ver = "v5";
         //     type = "Ct";
         // };
-        class FPGP_2_OpsmainMar_Snakeskin_Tan_Ct_5_us {
-            model = "FPGP_2_OpsmainMar";
+        class FPGP_2_OpscoreMar_Snakeskin_Tan_Ct_5_us {
+            model = "FPGP_2_OpscoreMar";
             camo = "Tan";
             patch = "us";
             ver = "v5";

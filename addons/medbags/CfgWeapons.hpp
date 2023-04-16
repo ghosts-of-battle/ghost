@@ -3,11 +3,11 @@ class CfgWeapons {
 
     class CBA_MiscItem;
     class CBA_MiscItem_ItemInfo;
-    class ACE_ItemMain: CBA_MiscItem {};
+    class ACE_ItemCore: CBA_MiscItem {};
 
     // MEDICAL SUPPLIES
 
-    class GVAR(FirstAid): ACE_ItemMain {
+    class GVAR(FirstAid): ACE_ItemCore {
         scope = 2;
         author = QAUTHOR;
         displayName = "Boo Boo Bag";
@@ -22,7 +22,7 @@ class CfgWeapons {
         };
     };
 
-    class GVAR(MedicKit): ACE_ItemMain {
+    class GVAR(MedicKit): ACE_ItemCore {
         scope = 2;
         author = QAUTHOR;
         displayName = "Medic Bag";
@@ -37,7 +37,7 @@ class CfgWeapons {
         };
     };
 
-    class GVAR(Trauma): ACE_ItemMain {
+    class GVAR(Trauma): ACE_ItemCore {
         scope = 2;
         author = QAUTHOR;
         displayName = "Trauma Kit";
@@ -52,7 +52,7 @@ class CfgWeapons {
         };
     };
 
-        class GVAR(Fluid): ACE_ItemMain {
+        class GVAR(Fluid): ACE_ItemCore {
         scope = 2;
         author = QAUTHOR;
         displayName = "Fluid Kit";
@@ -67,7 +67,7 @@ class CfgWeapons {
         };
     };
 
-    class GVAR(DrugKit): ACE_ItemMain {
+    class GVAR(DrugKit): ACE_ItemCore {
         scope = 2;
         author = QAUTHOR;
         displayName = "Drug Kit";
@@ -82,7 +82,7 @@ class CfgWeapons {
         };
     };
 
-    class ACE_fieldDressing: ACE_ItemMain {
+    class ACE_fieldDressing: ACE_ItemCore {
         scope=2;
         picture= QPATHTOF(data\icon\IB.paa);
         displayName="Pressure Bandage";
@@ -90,7 +90,7 @@ class CfgWeapons {
         descriptionUse="Quickly stanches haemorrhaging from injuries";
     };
 
-    class ACE_quikclot: ACE_ItemMain {
+    class ACE_quikclot: ACE_ItemCore {
         scope=2;
         displayName="Quikclot Combat Gauze";
         picture= QPATHTOF(data\icon\Quikclot.paa);

@@ -12,8 +12,8 @@
  * 5: Invalid Targets <ARRAY>
  * 6: Mode (1 = Time, 2 = Hit (Time Limited), 3 = Hit (Target Limited), 4 = Trigger) <NUMBER>
  * 7: Success <BOOL>
- * 8: Current Smain <NUMBER> (default: 0)
- * 9: Maximum Smain <NUMBER> (default: 0)
+ * 8: Current Score <NUMBER> (default: 0)
+ * 9: Maximum Score <NUMBER> (default: 0)
  * 10: Time Elapsed <NUMBER> (default: 0)
  * 11: Triggers <ARRAY> (default: [])
  *
@@ -26,18 +26,18 @@
  * Public: No
  */
 
-params ["_idPFH", "_controller", "_controllers", "_name", "_targets", "_targetsInvalid", "_mode", "_success", ["_currentSmain", 0], ["_maxSmain", 0], ["_timeElapsed", 0], ["_triggers", []] ];
+params ["_idPFH", "_controller", "_controllers", "_name", "_targets", "_targetsInvalid", "_mode", "_success", ["_currentScore", 0], ["_maxScore", 0], ["_timeElapsed", 0], ["_triggers", []] ];
 
 // Remove PFH
 [_idPFH] call CBA_fnc_removePerFrameHandler;
 
 // Finish or Stop
-[_controller, _controllers, _name, _targets, _targetsInvalid, _success, _currentSmain, _maxSmain, _timeElapsed] call FUNC(stop);
+[_controller, _controllers, _name, _targets, _targetsInvalid, _success, _currentScore, _maxScore, _timeElapsed] call FUNC(stop);
 
 // Cleanup variables
 GVAR(targetNumber) = nil;
-GVAR(currentSmain) = nil;
-GVAR(maxSmain) = nil;
+GVAR(currentScore) = nil;
+GVAR(maxScore) = nil;
 GVAR(firstRun) = nil;
 GVAR(nextTarget) = nil;
 GVAR(targetUp) = nil;

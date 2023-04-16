@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 class CfgWeapons {
-    class ItemMain;
+    class ItemCore;
     class Vest_NoCamo_Base;
     class Vest_Camo_Base;
     class V_PlateCarrierSpec_rgr: Vest_Camo_Base {

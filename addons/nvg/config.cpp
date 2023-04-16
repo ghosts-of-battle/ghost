@@ -10,7 +10,7 @@ class CfgPatches {
             "ghost_common",
             "cba_main",
             "ace_nightvision",
-            "BettIR_Main"
+            "BettIR_Core"
         };
         author = "Ghost";
         authors[] = {"PDT"};
