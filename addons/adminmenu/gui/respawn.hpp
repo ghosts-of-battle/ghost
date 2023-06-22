@@ -127,17 +127,17 @@ class Controls
         h = QUOTE(2*GHOST_ADMINMENU_STD_HEIGHT);
     };
 
-    class respawnMenuVOIP: GVAR(RscButtonMenu)
-    {
-        idc = IDC_GHOST_ADMINMENU_RESP_SPECTATORVOIP;
-        text = "Toggle Spectator VOIP";
-        x = QUOTE(GHOST_ADMINMENU_RESP_X_COL3);
-        y = "0";
-        w = QUOTE(GHOST_ADMINMENU_RESP_W_COL3);
-        h = QUOTE(GHOST_ADMINMENU_STD_HEIGHT);
-        tooltip = "Toggles the spectator channel for you (ACRE/TFAR), so that you can talk to dead players if alive.";
-        onButtonClick = QUOTE((ctrlParent (param [0])) call FUNC(respawn_toggleSpectatorVOIP));
-    };
+    // class respawnMenuVOIP: GVAR(RscButtonMenu)
+    // {
+    //     idc = IDC_GHOST_ADMINMENU_RESP_SPECTATORVOIP;
+    //     text = "Toggle Spectator VOIP";
+    //     x = QUOTE(GHOST_ADMINMENU_RESP_X_COL3);
+    //     y = "0";
+    //     w = QUOTE(GHOST_ADMINMENU_RESP_W_COL3);
+    //     h = QUOTE(GHOST_ADMINMENU_STD_HEIGHT);
+    //     tooltip = "Toggles the spectator channel for you (ACRE/TFAR), so that you can talk to dead players if alive.";
+    //     onButtonClick = QUOTE((ctrlParent (param [0])) call FUNC(respawn_toggleSpectatorVOIP));
+    // };
     class groupListBox: RscListBox
     {
         idc = IDC_GHOST_ADMINMENU_RESP_GROUPLIST;

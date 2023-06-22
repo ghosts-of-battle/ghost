@@ -183,6 +183,59 @@ class XtdGearModels {
                 };
             };
         };
+
+        class wrp_uniform_g3c {
+            options[] = { "camo" }; // Always computed, do not edit
+            label = "G3C Uniform";
+            class camo {
+                alwaysSelectable = 1;
+                values[] = { "aor1", "aor2", "blk", "khk", "mc", "mca", "mcb", "mct", "rgr", "tgr","tgrd" };
+                class aor1 {
+                    label = "AOR1";
+                    image = "z\aceax\addons\gearinfo\data\camo\aor1.paa";
+                };
+                class aor2 {
+                    label = "AOR2";
+                    image = "z\aceax\addons\gearinfo\data\camo\aor2.paa";
+                };
+                class blk {
+                    label = "BLK";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class mc {
+                    label = "MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class khk {
+                    label = "KHK";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class mca {
+                    label = "MCA";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcd.paa";
+                };
+                class mcb {
+                    label = "MCB";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcb.paa";
+                };
+                class mct {
+                    label = "MCT";
+                    image = "z\aceax\addons\gearinfo\data\camo\mct.paa";
+                };
+                class rgr {
+                    label = "RGR";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class tgrd {
+                    label = "Tiger D";
+                    image = "z\aceax\addons\gearinfo\data\camo\tsd.paa";
+                };
+                class tgr {
+                    label = "Tiger";
+                    image = "z\aceax\addons\gearinfo\data\camo\tsw.paa";
+                };
+            };
+        };
     };
 };
 class XtdGearInfos {
@@ -413,6 +466,51 @@ class XtdGearInfos {
             model = "cwu";
             camo = "tan";
             type = "norm";
+        };
+
+                class wrp_uniform_g3c_aor1 {
+            model = "wrp_uniform_g3c";
+            camo = "aor1";
+        };
+        class wrp_uniform_g3c_aor2 {
+            model = "wrp_uniform_g3c";
+            camo = "aor2";
+        };
+        class wrp_uniform_g3c_blk {
+            model = "wrp_uniform_g3c";
+            camo = "blk";
+        };
+        class wrp_uniform_g3c_khk {
+            model = "wrp_uniform_g3c";
+            camo = "khk";
+        };
+        class wrp_uniform_g3c_mc {
+            model = "wrp_uniform_g3c";
+            camo = "mc";
+        };
+        class wrp_uniform_g3c_mcA {
+            model = "wrp_uniform_g3c";
+            camo = "mca";
+        };
+        class wrp_uniform_g3c_mcB {
+            model = "wrp_uniform_g3c";
+            camo = "mcb";
+        };
+        class wrp_uniform_g3c_mcT {
+            model = "wrp_uniform_g3c";
+            camo = "mct";
+        };
+        class wrp_uniform_g3c_rgr {
+            model = "wrp_uniform_g3c";
+            camo = "rgr";
+        };
+        class wrp_uniform_g3c_tgr {
+            model = "wrp_uniform_g3c";
+            camo = "tgr";
+        };
+        class wrp_uniform_g3c_tgrD {
+            model = "wrp_uniform_g3c";
+            camo = "tgrd";
         };
     };
 };

@@ -71,13 +71,18 @@ _handlerIndex = _box addEventHandler
 
   clearMagazineCargoGlobal _box;
   {_box addMagazineCargoGlobal [_x,10];} forEach _allMagazinesType;
-        _box addItemCargoGlobal ["GHOST_medbags_FirstAid",1];
-        _box addItemCargoGlobal ["GHOST_medbags_MedicKit",1];
-        _box addItemCargoGlobal ["GHOST_mopp",1];
-  _box addItemCargoGlobal ["HandGrenade",8];
-  _box addItemCargoGlobal ["SmokeShell",8];
-  _box addItemCargoGlobal ["ACE_M84",8];
+      _box addItemCargoGlobal ["GHOST_medbags_FirstAid",2];
+      _box addItemCargoGlobal ["GHOST_medbags_MedicKit",4];
+      _box addItemCargoGlobal ["HandGrenade",8];
+      _box addItemCargoGlobal ["SmokeShell",8];
+      _box addItemCargoGlobal ["ACE_M84",8];
+      _box addItemCargoGlobal ["Laserbatteries",2];
+      _box addItemCargoGlobal ["B_IR_Grenade",2];
+      _box addItemCargoGlobal ["rhs_mag_m67",2];
   }
+
+
+
  ];
 _box setVariable ["GHOST_AmmoCrateEHIndex", _handlerIndex, true];
 

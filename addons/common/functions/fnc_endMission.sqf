@@ -23,7 +23,7 @@ private _message = format["[ghostb] Ending mission..."];
 [_message,'tac1_admin_fnc_messageAdmin',true] call BIS_fnc_MP;
 
 GVAR(endMissionWait) = -1;
-GVAR(ending) = "true";
+GVAR(ending) = true;
 
 if (!isNil "ocap_fnc_exportData") then {
     _message = format["[ghostb] OCAP detected exporting (10 second timeout)..."];

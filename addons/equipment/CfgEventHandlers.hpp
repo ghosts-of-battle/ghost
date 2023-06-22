@@ -14,6 +14,9 @@ class Extended_PostInit_EventHandlers {
     };
 };
 
+class Extended_init_Eventhandlers {
+    class GVAR(vs17_base);
+};
 
 class Extended_InitPost_EventHandlers {
     class ReammoBox_F {

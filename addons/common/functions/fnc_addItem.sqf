@@ -1,6 +1,6 @@
 /*
 
- * \ghostb_common\functions\common\fn_addItem.sqf
+ * \oeta_common\functions\common\fn_addItem.sqf
  * by Ojemineh
  *
  * add item to unit/vehicle
@@ -56,29 +56,29 @@ for "_i" from 1 to _amount do {
             case 0: {
                 if ( (_unit canAdd _item) && (!_added) ) then {
                     _unit addItemCargoGlobal [_item, 1];
-                    _addToUnit = "true";
-                    _added = "true";
+                    _addToUnit = true;
+                    _added = true;
                 };
             };
             case 1: {
                 if ( (uniform _unit != "") && (_unit canAddItemToUniform _item) && (!_added) ) then {
                     _unit addItemToUniform _item;
-                    _addToUnit = "true";
-                    _added = "true";
+                    _addToUnit = true;
+                    _added = true;
                 };
             };
             case 2: {
                 if ( (vest _unit != "") && (_unit canAddItemToVest _item) && (!_added) ) then {
                     _unit addItemToVest _item;
-                    _addToUnit = "true";
-                    _added = "true";
+                    _addToUnit = true;
+                    _added = true;
                 };
             };
             case 3: {
                 if ( (backpack _unit != "") && (_unit canAddItemToBackpack _item) && (!_added) ) then {
                     _unit addItemToBackpack _item;
-                    _addToUnit = "true";
-                    _added = "true";
+                    _addToUnit = true;
+                    _added = true;
                 };
             };
             default {};
@@ -119,7 +119,7 @@ for "_i" from 1 to _amount do {
         _gwh addItemCargoGlobal [_item, 1];
         _gwh setVectorUp surfaceNormal (position _gwh);
 
-        _addToGround = "true";
+        _addToGround = true;
 
     };
 

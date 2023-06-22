@@ -25,5 +25,5 @@ if (_visionMode != 1) exitWith {
     _return
 };
 
-_return = "true";
+_return = true;
 _return

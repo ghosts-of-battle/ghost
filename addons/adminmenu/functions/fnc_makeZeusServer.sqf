@@ -31,7 +31,7 @@ if (!_isValidCurator) then {
         GVAR(sideCenter) = createCenter sideLogic;
     };
 
-    private _curator = (createGroup GVAR(sideCenter)) createUnit ["ModuleCurator_F", [0,0,0], [], 0, "NONE"];
+    private _curator = (createGroup GVAR(sideCenter)) createUnit ["ModuleCurator_F", [0,0,5000], [], 0, "NONE"];
     _curator setVariable ["Addons", 3, true];
     _curator setVariable [QGVAR(zeus), true, true];
     _curator setVariable ["showNotification", false, true];

@@ -10,8 +10,7 @@ class CfgVehicles {
     class B_Kitbag_Base;
     class B_RadioBag_01_base_F;
     class GVAR(RadioBag_01_Base);
-
-    // class TFAR_rt1523g;
+    class TFAR_rt1523g;
 
     // External class reference  END
 
@@ -749,7 +748,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 350;
         author = "Bohemia Interactive, GilleeDoo, JoramD";
         displayName="[GHOST] Kitbag Medic";
         picture = QPATHTOF(data\ui\icon_B_C_Kitbag_Solid_White.paa);
@@ -763,7 +762,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 350;
         author = "Bohemia Interactive, GilleeDoo, JoramD";
         displayName="[GHOST] Kitbag Medic";
         picture = QPATHTOF(data\ui\icon_B_C_Kitbag_Solid_Black.paa);
@@ -777,7 +776,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 350;
         author = "Bohemia Interactive, GilleeDoo, JoramD";
         displayName="[GHOST] Kitbag Medic";
         picture = QPATHTOF(data\ui\icon_B_C_Kitbag_Solid_CoyoteBrown.paa);
@@ -791,7 +790,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 350;
         author = "Bohemia Interactive, GilleeDoo, JoramD";
         displayName="[GHOST] Kitbag Medic";
         picture = QPATHTOF(data\ui\icon_B_C_Kitbag_Multicam.paa);
@@ -805,7 +804,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 350;
         author = "Bohemia Interactive, GilleeDoo, JoramD";
         displayName="[GHOST] Kitbag Medic";
         picture = QPATHTOF(data\ui\icon_B_C_Kitbag_Solid_Olive.paa);
@@ -819,7 +818,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 350;
         author = "Bohemia Interactive, GilleeDoo, JoramD";
         displayName="[GHOST] Kitbag Medic";
         picture = QPATHTOF(data\ui\icon_B_C_Kitbag_Solid_Olive.paa);
@@ -833,7 +832,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 350;
         author = "Bohemia Interactive, GilleeDoo, JoramD";
         displayName="[GHOST] Kitbag Medic";
         picture = QPATHTOF(data\ui\icon_B_C_Kitbag_Solid_Ranger_Green.paa);
@@ -847,7 +846,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 350;
         author = "Bohemia Interactive, GilleeDoo, Tyrone";
         displayName="[GHOST] Kitbag Medic";
         picture = QPATHTOF(data\ui\backpack_kitbag_medic_rgr_ca.paa);
@@ -858,82 +857,82 @@ class CfgVehicles {
 
 ///////////////////////////////////////////////////////////
 
-    // class GVAR(TFAR_rt1523g_kitbag): TFAR_rt1523g {
-    //     author = "NemesisRE";
-    //     model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Fast";
-    //     hiddenSelections[]=
-    //     {
-    //         "Camo"
-    //     };
-    //     maximumLoad = 240;
-    //     mass = 130;
-    //     scope = 0;
-    //     scopeCurator = 0;
-    //     scopeArsenal = 0;
-    // };
+    class GVAR(TFAR_rt1523g_kitbag): TFAR_rt1523g {
+        author = "NemesisRE";
+        model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Fast";
+        hiddenSelections[]=
+        {
+            "Camo"
+        };
+        maximumLoad = 240;
+        mass = 130;
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
+    };
 
-    // class GVAR(kitbag_khaki_west): GVAR(TFAR_rt1523g_kitbag) {
-    //     displayName = "[GHOST] RT-1523G Kitbag (Green)";
-    //     hiddenSelections[]=
-    //     {
-    //         "Camo"
-    //     };
-    //     hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_fast_rgr_co.paa"};
-    //     MACRO_ITEM_COMMON
-    // };
+    class GVAR(kitbag_khaki_west): GVAR(TFAR_rt1523g_kitbag) {
+        displayName = "[GHOST] RT-1523G Kitbag (Green)";
+        hiddenSelections[]=
+        {
+            "Camo"
+        };
+        hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_fast_rgr_co.paa"};
+        MACRO_ITEM_COMMON
+    };
 
-    // class GVAR(kitbag_coyote_west): GVAR(TFAR_rt1523g_kitbag) {
-    //     displayName = "[GHOST] RT-1523G Kitbag (Coyote)";
-    //     hiddenSelections[]=
-    //     {
-    //         "Camo"
-    //     };
-    //     hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_fast_cbr_co.paa"};
-    //     MACRO_ITEM_COMMON
-    // };
+    class GVAR(kitbag_coyote_west): GVAR(TFAR_rt1523g_kitbag) {
+        displayName = "[GHOST] RT-1523G Kitbag (Coyote)";
+        hiddenSelections[]=
+        {
+            "Camo"
+        };
+        hiddenSelectionsTextures[] = {"\A3\weapons_f\ammoboxes\bags\data\backpack_fast_cbr_co.paa"};
+        MACRO_ITEM_COMMON
+    };
 
-    // class GVAR(kitbag_winter_west): GVAR(TFAR_rt1523g_kitbag) {
-    //     displayName = "[GHOST] RT-1523G Kitbag (Winter)";
-    //     hiddenSelections[]=
-    //     {
-    //         "Camo"
-    //     };
-    //     hiddenSelectionsTextures[] = {QPATHTOF(data\textures\kitbag_wte.paa)};
-    //     MACRO_ITEM_COMMON
-    // };
+    class GVAR(kitbag_winter_west): GVAR(TFAR_rt1523g_kitbag) {
+        displayName = "[GHOST] RT-1523G Kitbag (Winter)";
+        hiddenSelections[]=
+        {
+            "Camo"
+        };
+        hiddenSelectionsTextures[] = {QPATHTOF(data\textures\kitbag_wte.paa)};
+        MACRO_ITEM_COMMON
+    };
 
-    // class GVAR(kitbag_black_west): GVAR(TFAR_rt1523g_kitbag) {
-    //     displayName = "[GHOST] RT-1523G Kitbag (Black)";
-    //     hiddenSelections[]=
-    //     {
-    //         "Camo"
-    //     };
-    //     hiddenSelectionsTextures[] = {"\a3\weapons_f\ammoboxes\bags\data\backpack_fast_blk_co.paa"};
-    //     MACRO_ITEM_COMMON
-    // };
+    class GVAR(kitbag_black_west): GVAR(TFAR_rt1523g_kitbag) {
+        displayName = "[GHOST] RT-1523G Kitbag (Black)";
+        hiddenSelections[]=
+        {
+            "Camo"
+        };
+        hiddenSelectionsTextures[] = {"\a3\weapons_f\ammoboxes\bags\data\backpack_fast_blk_co.paa"};
+        MACRO_ITEM_COMMON
+    };
 
 
 
 
 
     // For older Missions
-    // class GVAR(talon_kitbag_khaki): GVAR(kitbag_khaki_west) {
-    //     scope = 1;
-    //     scopeCurator = 1;
-    //     scopeArsenal = 1;
-    // };
+    class GVAR(talon_kitbag_khaki): GVAR(kitbag_khaki_west) {
+        scope = 1;
+        scopeCurator = 1;
+        scopeArsenal = 1;
+    };
 
-    // class GVAR(talon_kitbag_coyote): GVAR(kitbag_coyote_west) {
-    //     scope = 1;
-    //     scopeCurator = 1;
-    //     scopeArsenal = 1;
-    // };
+    class GVAR(talon_kitbag_coyote): GVAR(kitbag_coyote_west) {
+        scope = 1;
+        scopeCurator = 1;
+        scopeArsenal = 1;
+    };
 
-    // class GVAR(talon_kitbag_winter): GVAR(kitbag_winter_west) {
-    //     scope = 1;
-    //     scopeCurator = 1;
-    //     scopeArsenal = 1;
-    // };
+    class GVAR(talon_kitbag_winter): GVAR(kitbag_winter_west) {
+        scope = 1;
+        scopeCurator = 1;
+        scopeArsenal = 1;
+    };
 
     // MODIFIED ENOCH RADIOBAGS
     class B_RadioBag_01_base_F;
@@ -960,9 +959,9 @@ class CfgVehicles {
         tf_hasLRradio = 1;
         tf_range = 20000;
         tf_subtype = "digital_lr";
-        class TransportItems {
-            MACRO_ADDITEM(ACRE_PRC117F,1);
-        };
+        // class TransportItems {
+        //     MACRO_ADDITEM(ACRE_PRC117F,1);
+        // };
     };
 
     // RADIOBAG BLACK
@@ -1039,6 +1038,12 @@ class CfgVehicles {
         picture = QPATHTOF(data\UI\icon_B_C_UAV_Multicam_ca.paa);
         hiddenSelections[] = {"Camo1"};
         MACRO_ITEM_COMMON
+        tf_dialog = "rt1523g_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_hasLRradio = 1;
+        tf_range = 20000;
+        tf_subtype = "digital_lr";
     };
     class GVAR(B_RadioBag_01_Multicam_Snow_F): GVAR(RadioBag_01_Base) {
         author = QAUTHOR;
@@ -1047,6 +1052,12 @@ class CfgVehicles {
         picture = QPATHTOF(data\UI\icon_B_C_UAV_Multicam_Snow_ca.paa);
         hiddenSelections[] = {"Camo1"};
         MACRO_ITEM_COMMON
+        tf_dialog = "rt1523g_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_hasLRradio = 1;
+        tf_range = 20000;
+        tf_subtype = "digital_lr";
     };
     class GVAR(B_RadioBag_01_Multicam_Woodland_F): GVAR(RadioBag_01_Base) {
         author = QAUTHOR;
@@ -1055,6 +1066,12 @@ class CfgVehicles {
         picture = QPATHTOF(data\UI\icon_B_C_UAV_Multicam_Woodland_ca.paa);
         hiddenSelections[] = {"Camo1"};
         MACRO_ITEM_COMMON
+        tf_dialog = "rt1523g_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_hasLRradio = 1;
+        tf_range = 20000;
+        tf_subtype = "digital_lr";
     };
     class GVAR(B_RadioBag_01_Solid_Black_F): GVAR(RadioBag_01_Base) {
         author = QAUTHOR;
@@ -1063,6 +1080,12 @@ class CfgVehicles {
         picture = QPATHTOF(data\UI\icon_B_C_UAV_Solid_Black_ca.paa);
         hiddenSelections[] = {"Camo1"};
         MACRO_ITEM_COMMON
+        tf_dialog = "rt1523g_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_hasLRradio = 1;
+        tf_range = 20000;
+        tf_subtype = "digital_lr";
     };
     class GVAR(B_RadioBag_01_Solid_CoyoteBrown_F): GVAR(RadioBag_01_Base) {
         author = QAUTHOR;
@@ -1071,6 +1094,12 @@ class CfgVehicles {
         picture = QPATHTOF(data\UI\icon_B_C_UAV_Solid_CoyoteBrown_ca.paa);
         hiddenSelections[] = {"Camo1"};
         MACRO_ITEM_COMMON
+        tf_dialog = "rt1523g_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_hasLRradio = 1;
+        tf_range = 20000;
+        tf_subtype = "digital_lr";
     };
     class GVAR(B_RadioBag_01_Solid_Olive_F): GVAR(RadioBag_01_Base) {
         author = QAUTHOR;
@@ -1079,6 +1108,12 @@ class CfgVehicles {
         picture = QPATHTOF(data\UI\icon_B_C_UAV_Solid_Olive_ca.paa);
         hiddenSelections[] = {"Camo1"};
         MACRO_ITEM_COMMON
+        tf_dialog = "rt1523g_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_hasLRradio = 1;
+        tf_range = 20000;
+        tf_subtype = "digital_lr";
     };
     class GVAR(B_RadioBag_01_Solid_Ranger_Green_F): GVAR(RadioBag_01_Base) {
         author = QAUTHOR;
@@ -1087,6 +1122,12 @@ class CfgVehicles {
         picture = QPATHTOF(data\UI\icon_B_C_UAV_Solid_Ranger_Green_ca.paa);
         hiddenSelections[] = {"Camo1"};
         MACRO_ITEM_COMMON
+        tf_dialog = "rt1523g_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_hasLRradio = 1;
+        tf_range = 20000;
+        tf_subtype = "digital_lr";
     };
     class GVAR(B_RadioBag_01_Solid_Tan_F): GVAR(RadioBag_01_Base) {
         author = QAUTHOR;
@@ -1095,6 +1136,12 @@ class CfgVehicles {
         picture = QPATHTOF(data\UI\icon_B_C_UAV_Solid_Tan_ca.paa);
         hiddenSelections[] = {"Camo1"};
         MACRO_ITEM_COMMON
+        tf_dialog = "rt1523g_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_hasLRradio = 1;
+        tf_range = 20000;
+        tf_subtype = "digital_lr";
     };
     class GVAR(B_RadioBag_01_Solid_White_F): GVAR(RadioBag_01_Base) {
         author = QAUTHOR;
@@ -1103,6 +1150,12 @@ class CfgVehicles {
         picture = QPATHTOF(data\UI\icon_B_C_UAV_Solid_White_ca.paa);
         hiddenSelections[] = {"Camo1"};
         MACRO_ITEM_COMMON
+        tf_dialog = "rt1523g_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_hasLRradio = 1;
+        tf_range = 20000;
+        tf_subtype = "digital_lr";
     };
     class GVAR(B_RadioBag_01_US_DCU_F): GVAR(RadioBag_01_Base) {
         author = QAUTHOR;
@@ -1111,6 +1164,12 @@ class CfgVehicles {
         picture = QPATHTOF(data\UI\icon_B_C_UAV_US_DCU_ca.paa);
         hiddenSelections[] = {"Camo1"};
         MACRO_ITEM_COMMON
+        tf_dialog = "rt1523g_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_hasLRradio = 1;
+        tf_range = 20000;
+        tf_subtype = "digital_lr";
     };
     class GVAR(B_RadioBag_01_US_Tigerstripe_F): GVAR(RadioBag_01_Base) {
         author = QAUTHOR;
@@ -1127,6 +1186,12 @@ class CfgVehicles {
         picture = QPATHTOF(data\UI\icon_B_C_UAV_US_M81_ca.paa);
         hiddenSelections[] = {"Camo1"};
         MACRO_ITEM_COMMON
+        tf_dialog = "rt1523g_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_hasLRradio = 1;
+        tf_range = 20000;
+        tf_subtype = "digital_lr";
     };
 };
 

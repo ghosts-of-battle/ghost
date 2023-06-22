@@ -1,5 +1,5 @@
 /*
-Function: LR_fnc_FindReplaceString
+Function: GHOST_fncFindReplaceString
 
 Description:
     Finds and replaces a certain substring in a given string with a different
@@ -19,7 +19,7 @@ Examples:
     (begin example)
         [
             "123456123", "123", "abc", 1, true
-        ] call LR_fnc_FindReplaceString; // returns "abc456123"
+        ] call GHOST_fnc_FindReplaceString; // returns "abc456123"
     (end)
 
 Author:

@@ -12,7 +12,7 @@
     }
 ] call CBA_fnc_addSetting;
 
-/* 
+
 // TFAR - Range Multiplyer
 [
     "ghostb_Main_TFARTransmitRange",
@@ -39,7 +39,6 @@
     }
 ] call CBA_fnc_addSetting;
 
- */
 
 // GHOSTB_Main_DynamicSim
 [

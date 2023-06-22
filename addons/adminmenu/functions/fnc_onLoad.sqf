@@ -39,23 +39,23 @@ _ctrlCheckSafestart ctrlAddEventHandler ["CheckedChanged", {
 }];
 
 // Talk to spectators
-private _ctrlCheckSpectatorTalk = _display displayCtrl IDC_GHOST_ADMINMENU_DASH_SPECTATORTALK;
-_ctrlCheckSpectatorTalk cbSetChecked ([player] call acre_api_fnc_isSpectator);
-if (alive player) then {
-    _ctrlCheckSpectatorTalk ctrlAddEventHandler ["CheckedChanged", {
-        params ["", "_state"];
-        [_state isEqualTo 1] call acre_api_fnc_setSpectator;
-        systemChat format ["[Ghosts of Battle Admin Menu] Spectator talk toggled %1", ["off", "on"] select _state];
-        if (_state isEqualTo 1) then {
-            [format ["%1 Started talking to spectators",profileName],false,"Admin Menu"] call FUNC(log);
-        } else {
-            [format ["%1 Stopped talking to spectators",profileName],false,"Admin Menu"] call FUNC(log);
-        };
-    }];
-} else {
-    _ctrlCheckSpectatorTalk ctrlEnable false;
-    _ctrlCheckSpectatorTalk ctrlSetTooltip "Can't toggle when in spectator yourself.";
-};
+// private _ctrlCheckSpectatorTalk = _display displayCtrl IDC_GHOST_ADMINMENU_DASH_SPECTATORTALK;
+// _ctrlCheckSpectatorTalk cbSetChecked ([player] call acre_api_fnc_isSpectator);
+// if (alive player) then {
+//     _ctrlCheckSpectatorTalk ctrlAddEventHandler ["CheckedChanged", {
+//         params ["", "_state"];
+//         [_state isEqualTo 1] call acre_api_fnc_setSpectator;
+//         systemChat format ["[Ghosts of Battle Admin Menu] Spectator talk toggled %1", ["off", "on"] select _state];
+//         if (_state isEqualTo 1) then {
+//             [format ["%1 Started talking to spectators",profileName],false,"Admin Menu"] call FUNC(log);
+//         } else {
+//             [format ["%1 Stopped talking to spectators",profileName],false,"Admin Menu"] call FUNC(log);
+//         };
+//     }];
+// } else {
+//     _ctrlCheckSpectatorTalk ctrlEnable false;
+//     _ctrlCheckSpectatorTalk ctrlSetTooltip "Can't toggle when in spectator yourself.";
+// };
 
 
 // Player Management tab

@@ -775,6 +775,75 @@ class XtdGearModels {
                 };
             };
         };
+        class wrp_headgear_opscore {
+            options[] = { "camo", "mod" }; // Always computed, do not edit
+            label = "Stealth Uniform";
+            class camo {
+                alwaysSelectable = 1;
+                values[] = { "aor1", "aor2", "blk", "khk", "mc", "mca", "mcb", "mct", "rgr", "tgr","tgrd" };
+                class aor1 {
+                    label = "AOR1";
+                    image = "z\aceax\addons\gearinfo\data\camo\aor1.paa";
+                };
+                class aor2 {
+                    label = "AOR2";
+                    image = "z\aceax\addons\gearinfo\data\camo\aor2.paa";
+                };
+                class blk {
+                    label = "BLK";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class mc {
+                    label = "MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class khk {
+                    label = "KHK";
+                    image = "z\aceax\addons\gearinfo\data\camo\tan.paa";
+                };
+                class mca {
+                    label = "MCA";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcd.paa";
+                };
+                class mcb {
+                    label = "MCB";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcb.paa";
+                };
+                class mct {
+                    label = "MCT";
+                    image = "z\aceax\addons\gearinfo\data\camo\mct.paa";
+                };
+                class rgr {
+                    label = "RGR";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class tgrd {
+                    label = "Tiger D";
+                    image = "z\aceax\addons\gearinfo\data\camo\tsd.paa";
+                };
+                class tgr {
+                    label = "Tiger";
+                    image = "z\aceax\addons\gearinfo\data\camo\tsw.paa";
+                };
+            };
+            class mod {
+              alwaysSelectable = 1;
+                values[] = { "base", "peltor", "peltorc", "peltorn" };
+
+                class base {
+                    label = "Base";
+                };
+                class peltor {
+                    label = "peltor";
+                };
+                class peltorc {
+                    label = "Peltor/Camera";
+                };
+                class peltornc {
+                    label = "peltor/NSW";
+                };
+            };
+        };
     };
 };
 
@@ -1500,6 +1569,227 @@ class XtdGearInfos {
           model = "opscoreh";
           camo = "tan";
           opt = "full";
+        };
+        
+        class wrp_headgear_opscore_cover_aor1 {
+          model = "wrp_headgear_opscore";
+          camo = "aor1";
+          mod ="base";
+        };
+        class wrp_headgear_opscore_cover_aor1_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "aor1";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_aor1_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "aor1";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_aor1_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "aor1";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_aor2 {
+          model = "wrp_headgear_opscore";
+          camo = "aor2";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_aor2_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "aor1";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_aor2_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "aor1";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_aor2_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "aor1";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_blk {
+          model = "wrp_headgear_opscore";
+          camo = "blk";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_blk_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "blk";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_blk_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "blk";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_blk_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "blk";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_khk {
+          model = "wrp_headgear_opscore";
+          camo = "khk";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_khk_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "khk";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_khk_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "khk";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_khk_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "khk";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_mc {
+          model = "wrp_headgear_opscore";
+          camo = "mc";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_mc_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "mc";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_mc_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "mc";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_mc_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "mc";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_mcA {
+          model = "wrp_headgear_opscore";
+          camo = "mca";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_mcA_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "mca";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_mcA_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "mca";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_mcA_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "mca";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_mcB {
+          model = "wrp_headgear_opscore";
+          camo = "mcb";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_mcB_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "mcb";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_mcB_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "mcb";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_mcB_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "mcb";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_mcT {
+          model = "wrp_headgear_opscore";
+          camo = "mct";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_mcT_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "mct";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_mcT_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "mct";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_mcT_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "mct";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_rgr {
+          model = "wrp_headgear_opscore";
+          camo = "rgr";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_rgr_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "rgr";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_rgr_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "rgr";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_rgr_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "rgr";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_tgr {
+          model = "wrp_headgear_opscore";
+          camo = "tgr";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_tgr_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "tgr";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_tgr_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "tgr";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_tgr_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "tgr";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_tgrD {
+          model = "wrp_headgear_opscore";
+          camo = "tgrd";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_tgrD_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "tgrd";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_tgrD_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "tgrd";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_tgrD_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "tgrd";
+          mod="peltorn";
         };
     };
 };

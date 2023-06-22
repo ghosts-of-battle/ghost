@@ -10,7 +10,7 @@ if (_type == 28) then {
         hint "No position selected for respawn. Click on a position then hit enter.";
 
     } else {
-        private _position = [0,0,0];
+        private _position = [0,0,5000];
         private _halo = false;
         if (GVAR(respawnMousePos) isEqualType []) then {
             _position = GVAR(respawnMousePos);

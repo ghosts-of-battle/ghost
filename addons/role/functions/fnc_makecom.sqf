@@ -25,5 +25,4 @@ if (hasinterface) then {
     ] call CBA_fnc_waitAndExecute;
 };
 
-hint "Communications"
-
+[ format [hint_ghost_default, "Communications"] ] call ghost_fnc_hint;

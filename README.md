@@ -30,7 +30,7 @@ Its based/inspired on/by the following projects;
 - https://github.com/ArmaForces/Mods of ArmaForces/Mods  -  GNU GENERAL PUBLIC LICENSE
 - https://github.com/AXEmod/AXE - GNU General Public License (GPLv3)
 - https://github.com/Theseus-Aegis/Mods - GNU General Public License (GPLv2).
-- https://github.com/last-resort-gaming/LRG-Fundamentals - MIT License
+- https://github.com/last-resort-gaming/ghost-Fundamentals - MIT License
 - https://github.com/Theseus-Aegis/TheseusServices - Official license: Arma Public License Share-Alike (APL-SA)
 - https://www.ghostsofbattle.com/ - GNU General Public License (GPLv2).
 - https://github.com/quies-in-proelium/qipTPL - Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
@@ -69,20 +69,12 @@ Locky's
 TSF Crye Precision AVS https://steamcommunity.com/sharedfiles/filedetails/?id=2499478882
 TSF JPC 2.0 & LV-119  https://steamcommunity.com/sharedfiles/filedetails/?id=2371800141
 
-### Building
+mjc4wilton's
+BackpackOnChest - Redux https://steamcommunity.com/sharedfiles/filedetails/?id=2372036642
 
-The build process is base on the [ACE3 build process](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html), so you can follow the steps there. Basically the following is needed:
-
-- correctly setup project drive (P: drive)
-- download/clone kat_aceAdvMedical GitHub repo
-- switch to the tools/ folder and execute ```python setup.py```
-- you can build by executing ```python build.py``` from the tools folder
-
-The mod is on the same foundation as the ACE3 mod, using its framework, systems, tools and standards. It is entirely **open-source**
 
 Huge appreciation and thanks to [ACE3 Team](http://ace3mod.com/team.html) for their open-source nature and permission to use their systems.
 
-For building release builds see [ACE3 reference](https://ace3mod.com/wiki/development/setting-up-the-development-environment.html).
 ## License
 This work uses the license Arma Public License Share Alike [Arma Public License Share Alike (APL-SA)](https://www.bohemia.net/community/licenses/arma-public-license-share-alike)
 

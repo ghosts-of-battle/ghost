@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+class CBA_Extended_EventHandlers_base;
 class CfgVehicles {
     // Box
     class NATO_Box_Base;
@@ -152,6 +153,36 @@ class CfgVehicles {
         transportAmmo=30000;
         supplyRadius=10;
     };
+    class GVAR(resupply): NATO_Box_Base {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "[GHOST] Arsenal Resupply";
+        model="A3\Weapons_F\Ammoboxes\AmmoVeh_F";
+        icon="iconCrateVeh";
+        ace_dragging_canDrag = 0;
+        ace_dragging_canCarry = 0;
+        slingLoadCargoMemoryPoints[]= {
+            "SlingLoadCargo1",
+            "SlingLoadCargo2",
+            "SlingLoadCargo3",
+            "SlingLoadCargo4"
+        };
+        editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_AmmoVeh_F.jpg";
+        _generalMacro="Box_NATO_AmmoVeh_F";
+        hiddenSelectionsTextures[]= {
+            "z\ghost\addons\Equipment\data\ammobox_signs_caA.paa",
+            "z\ghost\addons\Equipment\data\resupplyghost.paa"
+        };
+        class TransportMagazines {
+        };
+        class TransportWeapons {
+        };
+        class TransportItems {
+        };
+        transportAmmo=30000;
+        supplyRadius=10;
+    };
 
         // Rebreather
     class Vest_V_RebreatherB;
@@ -167,7 +198,6 @@ class CfgVehicles {
             };
         };
     };
-
     class Item_U_B_Wetsuit;
     class GVAR(Item_Wetsuit): Item_U_B_Wetsuit {
         author = QAUTHOR;
@@ -179,7 +209,6 @@ class CfgVehicles {
             };
         };
     };
-
     class ACE_Item_Vector;
     class GVAR(Item_Vector_Designator): ACE_Item_Vector {
         author = "NemessisRE";
@@ -191,7 +220,6 @@ class CfgVehicles {
             };
         };
     };
-
     class GVAR(Item_Vector_Designator_NVG): GVAR(Item_Vector_Designator) {
         displayName = "[GHOST] ACE Vector Designator (NVG)";
         class TransportItems {
@@ -201,7 +229,6 @@ class CfgVehicles {
             };
         };
     };
-
     class Item_optic_Nightstalker;
     class GVAR(Item_optic_Nightstalker): Item_optic_Nightstalker {
         displayName="[GHOST] Nightstalker";
@@ -214,7 +241,6 @@ class CfgVehicles {
             };
         };
     };
-
     class Item_optic_AMS;
     class GVAR(Item_optic_AMS): Item_optic_AMS {
         displayName="[GHOST] AMS (Black)";
@@ -272,7 +298,6 @@ class CfgVehicles {
             };
         };
     };
-
     class Box_NATO_Support_F;
     class ACE_Box_Misc: Box_NATO_Support_F {
         class TransportItems {

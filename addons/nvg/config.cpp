@@ -9,8 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             "ghost_common",
             "cba_main",
-            "ace_nightvision",
-            "BettIR_Core"
+            "ace_nightvision"
         };
         author = "Ghost";
         authors[] = {"PDT"};
@@ -23,3 +22,4 @@ class CfgPatches {
 #include "CfgEffects.hpp"
 #include "CfgWeapons.hpp"
 #include "XtdGear.hpp"
+#include "BettIR.hpp"

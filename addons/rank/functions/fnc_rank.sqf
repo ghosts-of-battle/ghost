@@ -5,22 +5,22 @@ if (hasinterface) then {
     _playerUID = getplayerUID player;
     
     switch (true) do {
-        case (_playerUID in ranks_corporal) : {
+        case (_playerUID in RANKS_CORPORAL) : {
             player setRank "CORPORAL";
         };
-        case (_playerUID in ranks_sergeant) : {
+        case (_playerUID in RANKS_SERGEANT) : {
             player setRank "SERGEANT";
         };
-        case (_playerUID in ranks_lieutenant) : {
+        case (_playerUID in RANKS_LIEUTENANT) : {
             player setRank "LIEUTENANT";
         };
-        case (_playerUID in ranks_captain) : {
+        case (_playerUID in RANKS_CAPTAIN) : {
             player setRank "CAPTAIN";
         };
-        case (_playerUID in ranks_major) : {
+        case (_playerUID in RANKS_MAJOR) : {
             player setRank "MAJOR";
         };
-        case (_playerUID in ranks_colonel) : {
+        case (_playerUID in RANKS_COLONEL) : {
             player setRank "COLONEL";
         };
         default {

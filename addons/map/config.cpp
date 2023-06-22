@@ -18,3 +18,11 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgMarkerColors.hpp"
 #include "ui\RscDisplayMainMap.hpp"
+
+class CfgMarkerClasses {
+    class xmark_assets {
+        displayName="Ghosts of Battle Markers";
+    };
+};
+
+#include "CfgMarkers.hpp"

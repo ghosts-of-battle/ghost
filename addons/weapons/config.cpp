@@ -32,3 +32,4 @@ class CfgPatches {
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
 #include "XtdGearweapon.hpp"
+#include "XtdGeartier1.hpp"

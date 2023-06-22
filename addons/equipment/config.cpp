@@ -16,7 +16,9 @@ class CfgPatches {
             QGVAR(Item_optic_AMSTI_snd),
             QGVAR(vest_rebreather),
             QGVAR(Item_Wetsuit),
-            QGVAR(diver_base_F)
+            QGVAR(diver_base_F),
+            QGVAR(vs17_item)
+        
         };
         weapons[] = {
             QGVAR(xm157_prototype),
@@ -33,7 +35,8 @@ class CfgPatches {
             QGVAR(optic_AMSTI_snd),
             QGVAR(xm157_ace),
             QGVAR(rebreather),
-            QGVAR(Wetsuit)
+            QGVAR(Wetsuit),
+            QGVAR(vs17)
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
@@ -43,6 +46,8 @@ class CfgPatches {
             "ace_vector",
             "A3_Weapons_F",
             "cba_jr",
+            "task_force_radio_items",
+            "task_force_radio",
             "ace_xm157"
         };
         VERSION_CONFIG;
@@ -62,4 +67,5 @@ class CfgFunctions {
 #include "RscInGameUI.hpp"
 #include "XtdGearModels.hpp"
 #include "XtdGearfox.hpp"
+#include "tfar.sqf"
 

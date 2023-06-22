@@ -2,7 +2,6 @@ class XtdGearModels {
 
     class CfgWeapons {
         class CamoBase;
-        /*
         class milgp_battle_belt {
             class BeltCamo {
                 values[] = {
@@ -225,11 +224,9 @@ class XtdGearModels {
                 };
             };
         };
- */
     };
 
     class CfgVehicles {
-/*
         class milgp_back_panel {
             class BagCamo {
                 values[] = {
@@ -246,7 +243,6 @@ class XtdGearModels {
                 };
             };
         };
-        */
     };
 };
 

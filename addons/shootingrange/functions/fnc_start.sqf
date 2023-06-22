@@ -90,7 +90,7 @@ _size = [_size, _size - 0.5] select (_name isEqualTo "");
 GVAR(targetNumber) = 0;
 GVAR(currentScore) = 0;
 GVAR(maxScore) = [0, count _targets] select (_mode == 5);
-GVAR(invalidTargetHit) = "False";
+GVAR(invalidTargetHit) = false;
 
 if (_mode > 1) then {
     if (_mode < 5) then {

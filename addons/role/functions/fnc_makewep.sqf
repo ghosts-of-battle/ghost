@@ -14,5 +14,4 @@ if (hasinterface) then {
     player setVariable["draWhitelisted", false, true];
     daoWhitelisted=false;
 };
-
-Hint "Weapons"
+[ format [hint_ghost_default, "Weapons"] ] call ghost_fnc_hint;

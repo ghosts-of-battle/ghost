@@ -9,7 +9,7 @@ class GHOST_Equipment {
         class LimitedArsenal {};
         class Loadouts {};
         class MedicalSupplies {};
-        class arsenal {postInit = 1;};
+        class arsenal {};
         class AmmoCrate {};
     };
 };

@@ -4,7 +4,7 @@ disableSerialization;
 
 
 private _mapCtrl = ((findDisplay IDC_GHOST_ADMINMENU_ADME_MAP_DISPLAY) displayCtrl IDC_GHOST_ADMINMENU_ADME_MAP_CONTROL);//_this select 0;//
-private _pos = [0,0,0];
+private _pos = [0,0,5000];
 
 if (alive player && !(player isKindOf "ghost_spectator_unit")) then {
     _pos = getPos player;  

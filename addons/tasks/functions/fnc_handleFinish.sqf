@@ -18,9 +18,9 @@
 params ["_taskNamespace", "_finishType", "_callbackFunction"];
 
 // Load code condition
-private _conditionCodeFinishValue = _taskNamespace getVariable [format ["conditionCode%1", _finishType], "true"];
+private _conditionCodeFinishValue = _taskNamespace getVariable [format ["conditionCode%1", _finishType], true];
 private _conditionCodeFinish = compile _conditionCodeFinishValue;
-private _conditionCodeEmpty = (_conditionCodeFinishValue isEqualTo "true" || {_conditionCodeFinishValue isEqualTo ""});
+private _conditionCodeEmpty = (_conditionCodeFinishValue isEqualTo true || {_conditionCodeFinishValue isEqualTo ""});
 
 // Load event condition
 private _conditionEventsFinish = _taskNamespace getVariable [format ["conditionEvents%1", _finishType], []];

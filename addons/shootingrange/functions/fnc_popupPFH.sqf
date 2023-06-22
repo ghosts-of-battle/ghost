@@ -58,7 +58,7 @@ if (_mode == 1 && {GVAR(lastPauseTime) + _pauseDuration <= _currentTime}) exitWi
     GVAR(lastPauseTime) = _currentTime;
 
     if (GVAR(firstRun)) then {
-        GVAR(firstRun) = "False";
+        GVAR(firstRun) = false;
     } else {
         // Animate old target
         [GVAR(targetUp), 1] call FUNC(animateTarget); // Down
@@ -82,7 +82,7 @@ if (_mode == 1 && {GVAR(lastPauseTime) + _pauseDuration <= _currentTime}) exitWi
 
 // Handle duration and first target only when hit-based mode
 if (_mode in [2, 3] && {GVAR(firstRun)}) exitWith {
-    GVAR(firstRun) = "False";
+    GVAR(firstRun) = false;
 
     // Select random index (save for later removal from array) and new target
     GVAR(targetUp) = selectRandom _targets;

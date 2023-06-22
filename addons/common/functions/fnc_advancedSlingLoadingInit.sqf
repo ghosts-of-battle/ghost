@@ -14,7 +14,7 @@ ASL_Advanced_Sling_Loading_Install = {
 
 // Prevent advanced sling loading from installing twice
 if(!isNil "ASL_ROPE_INIT") exitWith {};
-ASL_ROPE_INIT = "true";
+ASL_ROPE_INIT = true;
 
 diag_log "Advanced Sling Loading Loading...";
 
@@ -135,7 +135,7 @@ ASL_Rope_Adjust_Mass = {
     _ropeLength = ropeLength _x;
     if((_ropeLength - 2) <= _endDistance && ((position _heli) select 2) > 0 ) then {
      [[_obj, ((_lift)*0.8)],"ASL_Rope_Set_Mass",_obj,true] call ASL_RemoteExec;
-     _originalMassSet = "False";
+     _originalMassSet = false;
     };
    } forEach _ropes;
    sleep 0.1;
@@ -612,12 +612,12 @@ ASL_Deploy_Ropes_Action = {
  };
  if([_vehicle] call ASL_Can_Deploy_Ropes) then {
 
-  _canDeployRopes = "true";
+  _canDeployRopes = true;
 
   if!(missionNamespace getVariable ["ASL_LOCKED_VEHICLES_ENABLED",false]) then {
    if( locked _vehicle > 1 ) then {
     ["Cannot deploy cargo ropes from locked vehicle",false] call ASL_Hint;
-    _canDeployRopes = "False";
+    _canDeployRopes = false;
    };
   };
 
@@ -778,12 +778,12 @@ ASL_Attach_Ropes_Action = {
  _vehicle = (player getVariable ["ASL_Ropes_Vehicle", [objNull,0]]) select 0;
  if([_vehicle,_cargo] call ASL_Can_Attach_Ropes) then {
 
-  _canBeAttached = "true";
+  _canBeAttached = true;
 
   if!(missionNamespace getVariable ["ASL_LOCKED_VEHICLES_ENABLED",false]) then {
    if( locked _cargo > 1 ) then {
     ["Cannot attach cargo ropes to locked vehicle",false] call ASL_Hint;
-    _canBeAttached = "False";
+    _canBeAttached = false;
    };
   };
 
@@ -791,7 +791,7 @@ ASL_Attach_Ropes_Action = {
    if(!isNil "ExilePlayerInSafezone") then {
     if( ExilePlayerInSafezone ) then {
      ["Cannot attach cargo ropes in safe zone",false] call ASL_Hint;
-     _canBeAttached = "False";
+     _canBeAttached = false;
     };
    };
   };
@@ -923,11 +923,11 @@ ASL_Pickup_Ropes_Action = {
  if([] call ASL_Can_Pickup_Ropes) then {
   _closestRope = [] call ASL_Get_Closest_Rope;
   if(!isNull (_closestRope select 0)) then {
-   _canPickupRopes = "true";
+   _canPickupRopes = true;
    if!(missionNamespace getVariable ["ASL_LOCKED_VEHICLES_ENABLED",false]) then {
     if( locked (_closestRope select 0) > 1 ) then {
      ["Cannot pick up cargo ropes from locked vehicle",false] call ASL_Hint;
-     _canPickupRopes = "False";
+     _canPickupRopes = false;
     };
    };
    if(_canPickupRopes) then {
@@ -952,11 +952,11 @@ ASL_SUPPORTED_VEHICLES = [
 
 ASL_Is_Supported_Vehicle = {
  params ["_vehicle","_isSupported"];
- _isSupported = "False";
+ _isSupported = false;
  if(not isNull _vehicle) then {
   {
    if(_vehicle isKindOf _x) then {
-    _isSupported = "true";
+    _isSupported = true;
    };
   } forEach (missionNamespace getVariable ["ASL_SUPPORTED_VEHICLES_OVERRIDE",ASL_SUPPORTED_VEHICLES]);
  };
@@ -970,15 +970,15 @@ ASL_SLING_RULES = [
 ASL_Is_Supported_Cargo = {
  params ["_vehicle","_cargo"];
  private ["_canSling"];
- _canSling = "False";
+ _canSling = false;
  if(not isNull _vehicle && not isNull _cargo) then {
   {
    if(_vehicle isKindOf (_x select 0)) then {
     if(_cargo isKindOf (_x select 2)) then {
      if( (toUpper (_x select 1)) == "CAN_SLING" ) then {
-      _canSling = "true";
+      _canSling = true;
      } else {
-      _canSling = "False";
+      _canSling = false;
      };
     };
    };

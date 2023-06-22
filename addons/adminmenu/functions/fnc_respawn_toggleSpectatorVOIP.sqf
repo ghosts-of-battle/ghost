@@ -3,12 +3,12 @@
 disableSerialization;
 params ["_display"];
 
-if (isClass(configFile >> "CfgPatches" >> "acre_core")) then {
-    private _isSpectator = [player] call acre_api_fnc_isSpectator;
-    [!_isSpectator] call acre_api_fnc_setSpectator;
-    if (_isSpectator) then {
-        hint "ACRE: Spectator mode de-activated";  
-    } else {
-        hint "ACRE: Spectator mode activated";  
-    };
-};
+// if (isClass(configFile >> "CfgPatches" >> "acre_core")) then {
+//     private _isSpectator = [player] call acre_api_fnc_isSpectator;
+//     [!_isSpectator] call acre_api_fnc_setSpectator;
+//     if (_isSpectator) then {
+//         hint "ACRE: Spectator mode de-activated";  
+//     } else {
+//         hint "ACRE: Spectator mode activated";  
+//     };
+// };

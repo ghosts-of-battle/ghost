@@ -1,5 +1,5 @@
 /*
-Function: LR_fnc_SafePos
+Function: GHOST_fncSafePos
 
 Description:
     Finds a safe position based on the given parameters, using BIS_fnc_randomPos.

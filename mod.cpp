@@ -8,3 +8,4 @@ tooltipOwned = "Project Template Weee";
 overview = "Ghosts of Battle Custom Mod - Here you will return, you will not die in war";
 author = "YonV";
 overviewPicture = "gobp2_256.paa";
+dir = "@ghost";

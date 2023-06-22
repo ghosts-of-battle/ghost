@@ -2,7 +2,9 @@
 class CfgWeapons {
     class ItemCore;
     class Vest_NoCamo_Base;
-    class Vest_Camo_Base;
+    class Vest_Camo_Base: ItemCore     {
+        class ItemInfo;
+    };
     class V_PlateCarrierSpec_rgr: Vest_Camo_Base {
         class ItemInfo;
     };

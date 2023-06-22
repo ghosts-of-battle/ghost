@@ -60,5 +60,4 @@ PREP(sideToNum);
 PREP(sideToString);
 PREP(sideToTexture);
 PREP(sideType);
-
-// PREP(TFARSettings);
+PREP(TFARSettings);

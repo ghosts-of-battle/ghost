@@ -1,1 +1,0 @@
-#include "\z\ghost\addons\nightvision\script_component.hpp"

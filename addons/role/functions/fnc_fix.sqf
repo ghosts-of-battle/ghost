@@ -28,8 +28,8 @@
 if (isDedicated) exitWith {};
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-private _oetaFIX = [
-    "oetafix",
+private _ghostFIX = [
+    "ghostfix",
     "FIX Perms",
     "", {
         player call FUNC(role);
@@ -38,6 +38,6 @@ private _oetaFIX = [
     [_area]
 ] call ACE_interact_menu_fnc_createAction;
 
-[this, 0, ["ACE_MainActions"], _oetaFIX] call ACE_interact_menu_fnc_addActionToObject;
+[this, 0, ["ACE_MainActions"], _ghostFIX] call ACE_interact_menu_fnc_addActionToObject;
 
 //////

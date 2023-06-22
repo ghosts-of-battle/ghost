@@ -15,4 +15,5 @@ if (hasinterface) then {
     player setVariable["draWhitelisted", false, true];
     daoWhitelisted=false;
 };
-hint  "Engineer"
+
+[ format [hint_ghost_default, "Engineer"] ] call ghost_fnc_hint;

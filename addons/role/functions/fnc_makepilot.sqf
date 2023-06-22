@@ -11,5 +11,4 @@ if (hasinterface) then {
     player setVariable ["ace_isEngineer", 1, true];
     player setVariable ["ace_medical_medicclass", 0, true];
 };
-
-Hint "Pilot"
+[ format [hint_ghost_default, "Pilot"] ] call ghost_fnc_hint;
