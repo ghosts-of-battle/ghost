@@ -28,11 +28,11 @@ force ace_advanced_ballistics_simulationInterval = 0.05;
 force ace_advanced_fatigue_enabled = true;
 force ace_advanced_fatigue_enableStaminaBar = true;
 ace_advanced_fatigue_fadeStaminaBar = true;
-force ace_advanced_fatigue_loadFactor = 1;
+force ace_advanced_fatigue_loadFactor = 0;
 force ace_advanced_fatigue_performanceFactor = 5;
 force ace_advanced_fatigue_recoveryFactor = 5;
-force ace_advanced_fatigue_swayFactor = 1;
-force ace_advanced_fatigue_terrainGradientFactor = 1;
+force ace_advanced_fatigue_swayFactor = 0;
+force ace_advanced_fatigue_terrainGradientFactor = 0;
 
 // ACE Advanced Throwing
 force ace_advanced_throwing_enabled = true;
@@ -233,7 +233,7 @@ ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 force ace_medical_ai_enabledFor = 2;
-force ace_medical_AIDamageThreshold = 0.65;
+force ace_medical_AIDamageThreshold = 0.5;
 force ace_medical_bleedingCoefficient = 0.5;
 force ace_medical_blood_bloodLifetime = 900;
 force ace_medical_blood_enabledFor = 2;
@@ -248,6 +248,7 @@ force ace_medical_fractureChance = 0.45;
 force ace_medical_fractures = 1;
 force ace_medical_gui_maxDistance = 3;
 ace_medical_gui_openAfterTreatment = true;
+
 force ace_medical_gui_showBloodlossEntry = true;
 force ace_medical_ivFlowRate = 1.5;
 force ace_medical_limping = 1;
@@ -536,8 +537,6 @@ cba_optics_usePipOptics = true;
 // cTab
 ctab_compass_enable = true;
 force ctab_core_bft_mode = 1;
-force ctab_core_defMapStyle = "SAT";
-force ctab_core_gridPrecision = 0;
 force ctab_core_helmetcam_mode = 1;
 force ctab_core_sync_time = 60;
 force ctab_core_uav_mode = 1;
@@ -649,22 +648,22 @@ force ghost_back_to_game_teleportToVehicle = true;
 
 // Ghosts of Battle - Channels
 FORCE ghost_Channels_CommandDuration = 0;
-FORCE ghost_Channels_CommandText = true;
+FORCE ghost_Channels_CommandText = false;
 FORCE ghost_Channels_CommandVoice = false;
 FORCE ghost_Channels_DirectDuration = 0;
 FORCE ghost_Channels_DirectText = true;
 FORCE ghost_Channels_DirectVoice = false;
 FORCE ghost_Channels_GlobalDuration = 0;
-FORCE ghost_Channels_GlobalText = true;
+FORCE ghost_Channels_GlobalText = false;
 FORCE ghost_Channels_GlobalVoice = false;
 FORCE ghost_Channels_GroupDuration = 0;
-FORCE ghost_Channels_GroupText = true;
+FORCE ghost_Channels_GroupText = false;
 FORCE ghost_Channels_GroupVoice = false;
 FORCE ghost_Channels_SideDuration = 0;
-FORCE ghost_Channels_SideText = true;
+FORCE ghost_Channels_SideText = false;
 FORCE ghost_Channels_SideVoice = false;
 FORCE ghost_Channels_VehicleDuration = 0;
-FORCE ghost_Channels_VehicleText = true;
+FORCE ghost_Channels_VehicleText = false;
 FORCE ghost_Channels_VehicleVoice = false;
 
 // Ghosts of Battle - Fatigue
@@ -693,21 +692,6 @@ force ghost_respawn_time = 6;
 
 // Ghosts of Battle - Safestart
 ghost_safestart_startLocked = true;
-
-// Ghosts of Battle - Spectator
-force ghost_spectator_allowAI = false;
-force ghost_spectator_allowAIUnconscious = false;
-force ghost_spectator_allowUnconscious = false;
-force ghost_spectator_civilianSide = false;
-force ghost_spectator_civilianSideUnconscious = false;
-force ghost_spectator_enabled = true;
-force ghost_spectator_freeCamera = true;
-force ghost_spectator_freeCameraUnconscious = false;
-force ghost_spectator_sides = 1;
-force ghost_spectator_sidesUnconscious = 1;
-force ghost_spectator_TPPCamera = false;
-force ghost_spectator_TPPCameraUnconscious = false;
-force ghost_spectator_unconsciousDelay = 30;
 
 // Ghosts of Battle - Tagging
 force ghost_tagging_enabled = true;
@@ -819,7 +803,6 @@ force vtx_uh60_flir_setting_syncDelay = 0.015;
 vtx_uh60_hoist_setting_useAttachScript = true;
 vtx_uh60_sfmPlus_showDamageHints = true;
 vtx_uh60_sfmPlusStabilatorEnabled = 1;
-vtx_uh60_ui_showDebugMessages = false;
 
 // Headlamps
 Headlamps_Settings_AllowAll = true;
@@ -967,12 +950,12 @@ force TFAR_voiceCone = true;
 force tsp_cba_breach = true;
 force tsp_cba_breach_ace = true;
 force tsp_cba_breach_ace_locking = true;
-force tsp_cba_breach_ammo = "[""rhs_mag_M781_Practice"",""B_12Gauge_Slug_NoCartridge"", ""rhs_ammo_12g_slug"", ""rhs_ammo_12g_00buckshot""]";
+force tsp_cba_breach_ammo = "[""rhs_mag_M781_Practice"",""B_12Gauge_Slug_NoCartridge"", ""rhs_ammo_12g_slug"", ""rhs_ammo_12g_00buckshot"",""6Rnd_12Gauge_Pellets"",""6Rnd_12Gauge_Slug"",]";
 force tsp_cba_breach_ammoMultiplier = 1;
 force tsp_cba_breach_autoTime = 5;
 force tsp_cba_breach_lockBlacklist = "[]";
 force tsp_cba_breach_lockDoor = 0.20;
-force tsp_cba_breach_lockHouse = 0.20;
+force tsp_cba_breach_lockHouse = 0.35;
 force tsp_cba_breach_military = "[
 	""Land_Budova4_in"",
 	""Land_Budova4"",
@@ -1072,7 +1055,6 @@ force vtx_uh60_flir_setting_syncDelay = 0.015;
 vtx_uh60_hoist_setting_useAttachScript = true;
 vtx_uh60_sfmPlus_showDamageHints = true;
 vtx_uh60_sfmPlusStabilatorEnabled = 1;
-vtx_uh60_ui_showDebugMessages = false;
 vtx_uh60m_enabled_waypts = true;
 vtx_uh60m_simpleCollective = false;
 vtx_uh60m_simpleStartup = false;

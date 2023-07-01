@@ -27,7 +27,7 @@ Public: Yes
 */
 
 [
-    ["TFAR_anprc152","ItemMicroDAGRMisc","Gren_Loc_SAT","Gren_ric_SAT","ItemcTabMisc","ItemAndroidMisc","ALIVE_Tablet","ItemcTab","ItemAndroid","ItemcTabHCam","ItemMicroDAGR","tfw_rf3080Item","tfw_blade","tfw_whip","tfw_dd","Laserbatteries","LOP_LaserMag","Laserbatteries","ACE_ATragMX","ItemAndroid","ItemMicroDAGR","ItemcTabHCam","ItemcTab","ACE_DAGR","ACE_HuntIR_monitor","uh60_jvmf_tablet","ACE_Kestrel4500","ACE_microDAGR","tun_tablet","ACE_UAVBattery"],
+    ["ItemAndroidMisc","ItemcTabMisc","ItemMicroDAGRMisc","uh60_jvmf_tablet","ItemcTabHCam","TFAR_anprc152","ItemMicroDAGRMisc","Gren_Loc_SAT","Gren_ric_SAT","ItemcTabMisc","ItemAndroidMisc","ALIVE_Tablet","ItemcTab","ItemAndroid","ItemcTabHCam","ItemMicroDAGR","tfw_rf3080Item","tfw_blade","tfw_whip","tfw_dd","Laserbatteries","LOP_LaserMag","Laserbatteries","ACE_ATragMX","ItemAndroid","ItemMicroDAGR","ItemcTabHCam","ItemcTab","ACE_DAGR","ACE_HuntIR_monitor","uh60_jvmf_tablet","ACE_Kestrel4500","ACE_microDAGR","tun_tablet","ACE_UAVBattery"],
     "Tech",
     "\a3\ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa"
 ] call ACEFUNC(arsenal,addRightPanelButton);
@@ -51,7 +51,7 @@ Public: Yes
 ] call ACEFUNC(arsenal,addRightPanelButton);
 
 [
-    ["tsp_lockpick","tsp_paperclip","AMP_Door_Wedge","ACE_Sandbag_empty","ACE_DefusalKit","ACE_DeadManSwitch","ACE_wirecutter","ToolKit","MineDetector","ACE_Clacker","ACE_M26_Clacker","ACE_EntrenchingTool","ACE_Fortify"],
+    ["MineDetector","tsp_lockpick","tsp_paperclip","AMP_Door_Wedge","ACE_Sandbag_empty","ACE_DefusalKit","ACE_DeadManSwitch","ACE_wirecutter","ToolKit","MineDetector","ACE_Clacker","ACE_M26_Clacker","ACE_EntrenchingTool","ACE_Fortify"],
     "Engineering",
     "\z\ace\addons\minedetector\ui\icon_mineDetector.paa"
 ] call ACEFUNC(arsenal,addRightPanelButton);

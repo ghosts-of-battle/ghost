@@ -11844,6 +11844,12 @@ _ArsenalType = call {
     };
 };
 _AvailableItems = [
+    "ItemAndroidMisc",
+    "ItemcTabMisc",
+    "ItemMicroDAGRMisc",
+    "uh60_jvmf_tablet",
+    "MineDetector",
+    "ItemcTabHCam",
     "TFAR_anprc152",
     "kat_IV_16",
     "kat_AED",
