@@ -1,5 +1,5 @@
 class CfgFactionClasses {
-    class rhs_faction_msv {
+/*     class rhs_faction_msv {
         displayName = "Russia (MSV)";
         side = 0;
         flag = "\rhsafrf\addons\rhs_main\data\flag_rus_co.paa";
@@ -40,6 +40,6 @@ class CfgFactionClasses {
         flag="z\ghost\addons\media\images\flags\flag_taliban.paa";
         icon="z\ghost\addons\media\images\flags\flag_taliban.paa";
         priority=0;
-    };
+    }; */
 };
 

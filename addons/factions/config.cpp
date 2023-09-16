@@ -20,8 +20,8 @@ class CfgPatches {
 
 
 #include "CfgFactionClasses.sqf"
-#include "rhs_msv.sqf"
-#include "rhs_rfgf.sqf"
-#include "rhs_vdv.sqf"
-#include "rhs_vmf.sqf"
-#include "rhs_tv.sqf"
+// #include "rhs_msv.sqf"
+// #include "rhs_rfgf.sqf"
+// #include "rhs_vdv.sqf"
+// #include "rhs_vmf.sqf"
+// #include "rhs_tv.sqf"

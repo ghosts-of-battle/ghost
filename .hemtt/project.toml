@@ -19,6 +19,7 @@ enabled = true # Default: true
 exclude = [
     "a3/3DEN/UI/macroexecs.inc",
     "macroexecs.inc",
+    "initSettings.sqf",
     "a3/ui_f/hpp/defineResincl.inc",
     "a3/ui_f/hpp/defineDIKCodes.inc",
     "a3/ui_f/hpp/defineCommonGrids.inc",

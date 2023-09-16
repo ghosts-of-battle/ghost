@@ -53,7 +53,6 @@ ace_arsenal_camInverted = false;
 force ace_arsenal_enableIdentityTabs = true;
 force ace_arsenal_enableModIcons = true;
 force ace_arsenal_EnableRPTLog = true;
-ace_arsenal_fontHeight = 4.5;
 ace_arsenal_loadoutsSaveFace = false;
 ace_arsenal_loadoutsSaveInsignia = true;
 ace_arsenal_loadoutsSaveVoice = false;
@@ -542,78 +541,15 @@ force ctab_core_sync_time = 60;
 force ctab_core_uav_mode = 1;
 force ctab_core_useAceMicroDagr = true;
 force ctab_core_useArmaMarker = true;
-ctab_core_useMils = false;
 force force ctab_irl_connect_enabled = true;
 force force ctab_irl_connect_syncMap = true;
 force force ctab_irl_connect_uri = "https://ctab.plan-ops.fr/hub";
 
-// DUI - Squad Radar - Indicators
-force diwako_dui_indicators_crew_range_enabled = false;
-diwako_dui_indicators_fov_scale = false;
-diwako_dui_indicators_icon_buddy = true;
-diwako_dui_indicators_icon_leader = true;
-diwako_dui_indicators_icon_medic = true;
-diwako_dui_indicators_range = 20;
-diwako_dui_indicators_range_crew = 300;
-diwako_dui_indicators_range_scale = false;
-diwako_dui_indicators_show = true;
-diwako_dui_indicators_useACENametagsRange = true;
-
-// DUI - Squad Radar - Nametags
-diwako_dui_nametags_customRankStyle = "[[""PRIVATE"",""CORPORAL"",""SERGEANT"",""LIEUTENANT"",""CAPTAIN"",""MAJOR"",""COLONEL""],[""Pvt."",""Cpl."",""Sgt."",""Lt."",""Capt."",""Maj."",""Col.""]]";
-diwako_dui_nametags_deadRenderDistance = 3.5;
-diwako_dui_nametags_drawRank = true;
-diwako_dui_nametags_enableFOVBoost = true;
-diwako_dui_nametags_enableOcclusion = true;
-diwako_dui_nametags_fadeInTime = 0.05;
-diwako_dui_nametags_fadeOutTime = 0.5;
-diwako_dui_nametags_groupFontShadow = 1;
-diwako_dui_nametags_nameFontShadow = 1;
-diwako_dui_nametags_renderDistance = 40;
-diwako_dui_nametags_showUnconAsDead = true;
-diwako_dui_nametags_useLIS = true;
-diwako_dui_nametags_useSideIsFriendly = true;
-
 // DUI - Squad Radar - Radar
-diwako_dui_compass_hide_alone_group = false;
-diwako_dui_compass_hide_blip_alone_group = false;
-diwako_dui_compass_opacity = 1;
 diwako_dui_compassRefreshrate = 0;
-diwako_dui_dir_showMildot = false;
-diwako_dui_distanceWarning = 3;
-diwako_dui_enable_compass = true;
-diwako_dui_enable_compass_dir = 1;
-diwako_dui_enable_occlusion = false;
-diwako_dui_enable_occlusion_cone = 360;
-diwako_dui_namelist = true;
-diwako_dui_namelist_bg = 0;
-diwako_dui_namelist_only_buddy_icon = false;
-diwako_dui_namelist_text_shadow = 2;
-diwako_dui_namelist_width = 215;
-diwako_dui_radar_ace_finger = true;
-force diwako_dui_radar_ace_medic = true;
-diwako_dui_radar_compassRangeCrew = 500;
-diwako_dui_radar_dir_padding = 25;
-diwako_dui_radar_dir_shadow = 2;
-diwako_dui_radar_group_by_vehicle = false;
-diwako_dui_radar_icon_opacity = 1;
-diwako_dui_radar_icon_opacity_no_player = true;
-force diwako_dui_radar_icon_priority_setting = 1;
-diwako_dui_radar_leadingZeroes = false;
-diwako_dui_radar_namelist_hideWhenLeader = false;
-diwako_dui_radar_namelist_vertical_spacing = 0.5;
-diwako_dui_radar_occlusion_fade_in_time = 1;
-diwako_dui_radar_occlusion_fade_time = 10;
-diwako_dui_radar_pointer_style = "standard";
-diwako_dui_radar_show_cardinal_points = true;
-diwako_dui_radar_showSpeaking = true;
-diwako_dui_radar_showSpeaking_radioOnly = false;
-diwako_dui_radar_showSpeaking_replaceIcon = true;
 force diwako_dui_radar_sortType = "none";
 force diwako_dui_radar_sqlFirst = false;
-force diwako_dui_radar_syncGroup = false;
-force diwako_dui_radar_vehicleCompassEnabled = false;
-diwako_dui_use_layout_editor = false;
+force diwako_dui_radar_syncGroup = true;
 
 // GHOST - common
 force ghost_common_DynamicGroups = true;
@@ -744,21 +680,6 @@ GREN_deletemap = false;
 GREN_deletemap_active = false;
 GREN_deletemap_pilot_map = true;
 
-// GREN EVO - Storm
-GREN_storm_audibility = 0.2;
-GREN_storm_blur = 0.5;
-GREN_storm_camuflage = 0.2;
-GREN_storm_cycle = "[1200,2400]";
-GREN_storm_delay = 0;
-GREN_storm_fog = 0.5;
-GREN_storm_glas = true;
-GREN_storm_global = false;
-GREN_storm_jammer = 0.5;
-GREN_storm_load = 0.3;
-GREN_storm_persist = true;
-GREN_storm_type = 0;
-GREN_storm_view_dist = 0.2;
-
 // GREN EVO - Suppressing - Informations
 GREN_suppress_global = true;
 GREN_suppress_interpreter = "";
@@ -773,22 +694,6 @@ GREN_suppress_voice = 0;
 
 // GREN EVO - Teleport
 GREN_F11 = false;
-
-// GREN EVO - weather-time
-Gren_View_air_check = false;
-GREN_weather_fog = false;
-GREN_weather_global = false;
-GREN_weather_hour_random = false;
-GREN_weather_minutes = 15;
-GREN_weather_month = 3;
-GREN_weather_random = false;
-GREN_weather_speed_time = 1;
-GREN_weather_time = 7;
-GREN_weather_view_distance = "2000";
-GREN_weather_view_distance_air = "5000";
-GREN_weather_view_distance_object = "2000";
-GREN_weather_view_distance_object_air = "4000";
-GREN_weather_year = "2000";
 
 // UH-60M
 force vtx_ace_viv_loadDistance = 15;
