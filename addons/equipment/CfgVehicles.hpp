@@ -1,6 +1,14 @@
 #include "script_component.hpp"
 class CBA_Extended_EventHandlers_base;
 class CfgVehicles {
+    //fpgp
+    class B_AssaultPack_rgr;
+	class FPGP_Hydration1_Tan_1_Backpanel: B_AssaultPack_rgr {
+		maximumLoad = 180;
+	};
+	class FPGP_Hydration2_Tan_1_Backpanel: B_AssaultPack_rgr {
+		maximumLoad = 180;
+	};
     // Box
     class NATO_Box_Base;
     class GVAR(arsenal): NATO_Box_Base {

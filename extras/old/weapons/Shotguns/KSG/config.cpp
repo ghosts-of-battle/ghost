@@ -8,10 +8,7 @@ class CfgPatches {
     };
 };
 
-/* Definitions & Inheritance */
-#include "\z\ghost\addons\main\basicDefines_A3.hpp"
-#include "\z\ghost\addons\weapons\modes.hpp"
-#include "\z\ghost\addons\weapons\slots.hpp"
+
 
 /* Configuration */
 #include "cfgWeapons.hpp"

@@ -1,5 +1,5 @@
 /*
- * Name: ghostb_common_fnc_drawLines
+ * Name: ghost_common_fnc_drawLines
  * Author: Head
  *
  * Arguments:

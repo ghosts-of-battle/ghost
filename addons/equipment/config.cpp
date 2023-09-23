@@ -48,7 +48,8 @@ class CfgPatches {
             "cba_jr",
             "task_force_radio_items",
             "task_force_radio",
-            "ace_xm157"
+            "ace_xm157",
+            "FPGP_2_Vests"
         };
         VERSION_CONFIG;
         authors[] = {"YonV"};
@@ -65,7 +66,9 @@ class CfgFunctions {
 #include "CfgWeapons.hpp"
 #include "jr_classes.hpp"
 #include "RscInGameUI.hpp"
-// #include "XtdGearModels.hpp"
-// #include "XtdGearfox.hpp"
 #include "tfar.sqf"
+#include "XtdFace.hpp"
+#include "XtdHead.hpp"
+#include "Xtduniform.hpp"
+#include "XtdVest.hpp"
 

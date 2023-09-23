@@ -1,6 +1,6 @@
 #include "\z\ghost\addons\common\script_component.hpp"
 /*
- * Name: ghostb_common_fnc_hideMapObjectsInit
+ * Name: ghost_common_fnc_hideMapObjectsInit
  * Author: Nick
  *
  * Arguments:

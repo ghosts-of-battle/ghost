@@ -1,5 +1,5 @@
 /*
- * Name: ghostb_common_fnc_sideToTexture
+ * Name: ghost_common_fnc_sideToTexture
  * Author: Snippers
  *
  * Arguments:

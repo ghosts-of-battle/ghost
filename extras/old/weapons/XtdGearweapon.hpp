@@ -361,6 +361,30 @@ class XtdGearModels {
                 };
             };
         };
+        class aa40 {
+            options[] = { "color"};
+            label = "AA 40";
+            class color {
+                alwaysSelectable = 1;
+                values[] = { "blk", "tan","norm","snake"};
+                class blk {
+                    label = "BLK";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class tan {
+                    label = "Khaki";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class norm {
+                    label = "Default";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+                class snake {
+                    label = "Default";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+            };
+        };
         class lmg200 {
             options[] = { "color"};
             label = "LMG 200";
@@ -787,6 +811,23 @@ class XtdGearInfos {
         class hgun_Pistol_heavy_01_green_F {
             model = "pisth";
             color = "green";
+        };
+
+        class sgun_AA40_F {
+            model = "aa40";
+            color = "norm";
+        };
+        class sgun_aa40_lxWS {
+            model = "aa40";
+            color = "blk";
+        };
+        class sgun_aa40_snake_lxWS {
+            model = "aa40";
+            color = "snake";
+        };
+        class sgun_aa40_tan_lxWS {
+            model = "aa40";
+            color = "tan";
         };
 
         class LMG_Mk200_khk_F {

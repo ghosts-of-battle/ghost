@@ -1,6 +1,6 @@
 /*
  *	ARMA EXTENDED ENVIRONMENT
- *	\ghostb_common\functions\diagnostics\fn_isDebug.sqf
+ *	\ghost_common\functions\diagnostics\fn_isDebug.sqf
  *	by Ojemineh
  *
  *	check if debug is enabled
@@ -12,12 +12,12 @@
  *	<BOOLEAN>
  *
  *	Example:
- *	[] call ghostb_common_fnc_isDebug;
+ *	[] call ghost_common_fnc_isDebug;
  *
  */
 
 // -------------------------------------------------------------------------------------------------
 
-private _return = (missionNamespace getVariable ["ghostb_debug_enabled", false]);
+private _return = (missionNamespace getVariable ["ghost_debug_enabled", false]);
 
 _return;

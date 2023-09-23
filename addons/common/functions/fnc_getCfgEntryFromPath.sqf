@@ -1,6 +1,6 @@
 #include "\z\ghost\addons\common\script_component.hpp"
 /*
- * Name: ghostb_common_fnc_getCfgEntryFromPath
+ * Name: ghost_common_fnc_getCfgEntryFromPath
  * Author: Snippers
  *
  * Arguments:

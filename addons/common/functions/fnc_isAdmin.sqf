@@ -1,5 +1,5 @@
 /*
- * Name: ghostb_common_fnc_isAdmin
+ * Name: ghost_common_fnc_isAdmin
  * Author: Snippers
  *
  * Arguments:

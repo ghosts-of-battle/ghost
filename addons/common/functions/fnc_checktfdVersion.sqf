@@ -1,6 +1,6 @@
 #include "\z\ghost\addons\common\script_component.hpp"
 /*
- * Name: ghostb_common_fnc_checkModVersion
+ * Name: ghost_common_fnc_checkModVersion
  * Author: Snippers
  *
  * Arguments:
@@ -10,14 +10,14 @@
  * Boolean
  *
  * Description:
- * Checks if ghostb Mission version is larger than the input version;
+ * Checks if ghost Mission version is larger than the input version;
  */
 
 params [
     ["_input",[0,0,0]]
 ];
 
-private _ghostbersion = getMissionConfigValue ["ghostb_version",[0,0,0]];
+private _ghostersion = getMissionConfigValue ["ghost_version",[0,0,0]];
 
-([_ghostbersion,_input] call EFUNC(common,checkVersionArray));
+([_ghostersion,_input] call EFUNC(common,checkVersionArray));
 

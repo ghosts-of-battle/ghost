@@ -65,10 +65,6 @@ ACE MOD https://steamcommunity.com/workshop/filedetails/?id=463939057
 Vestarr's
 BettIR (Legacy v0.2.1) https://steamcommunity.com/sharedfiles/filedetails/?id=2260572637
 
-Locky's 
-TSF Crye Precision AVS https://steamcommunity.com/sharedfiles/filedetails/?id=2499478882
-TSF JPC 2.0 & LV-119  https://steamcommunity.com/sharedfiles/filedetails/?id=2371800141
-
 mjc4wilton's
 BackpackOnChest - Redux https://steamcommunity.com/sharedfiles/filedetails/?id=2372036642
 

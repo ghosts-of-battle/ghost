@@ -1,7 +1,7 @@
 
 // Flip Vehicle
 [
-    "ghostb_Main_FlipVehicle",
+    "ghost_Main_FlipVehicle",
     "CHECKBOX",
     ["Flip Vehicle", "Add an action to players to allow them to flip land vehicles."],
     COMPONENT_NAME,
@@ -15,7 +15,7 @@
 
 // TFAR - Range Multiplyer
 [
-    "ghostb_Main_TFARTransmitRange",
+    "ghost_Main_TFARTransmitRange",
     "SLIDER",
     ["TFAR - Range Multiplyer", "Increase or decrease max Transmit Range. 0.1 = poor range, 3.5 = All of Altis"],
     COMPONENT_NAME,
@@ -28,7 +28,7 @@
 
 // TFAR - Terrain Interference
 [
-    "ghostb_Main_TFARTerrainInterference",
+    "ghost_Main_TFARTerrainInterference",
     "SLIDER",
     ["TFAR - Terrain Interference", "How much Terrain interferes with range. 0.1 = little impact, 2.0 = large impact."],
     COMPONENT_NAME,
@@ -40,11 +40,11 @@
 ] call CBA_fnc_addSetting;
 
 
-// GHOSTB_Main_DynamicSim
+// GHOST_Main_DynamicSim
 [
-    "ghostb_Main_DynamicSim",
+    "ghost_Main_DynamicSim",
     "CHECKBOX",
-    ["GHOSTB Dynamic Sim", "Simple check for Dynamic Sim enabled. If not enabled it will enable it to default GHOSTB Values. "],
+    ["GHOST Dynamic Sim", "Simple check for Dynamic Sim enabled. If not enabled it will enable it to default GHOST Values. "],
     COMPONENT_NAME,
     false,
     true,
@@ -55,7 +55,7 @@
 
 // Dynamic Groups
 [
-    "ghostb_Main_DynamicGroups",
+    "ghost_Main_DynamicGroups",
     "CHECKBOX",
     ["BIS Dynamic Groups", "Enable Vanilla Dynamic Groups system (U Menu)"],
     COMPONENT_NAME,

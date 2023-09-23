@@ -36,10 +36,7 @@ class CfgPatches {
 
 #include "CfgEventHandlers.hpp"
 #include "CfgVehicles.hpp"
-#include "modes.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgSounds.hpp"
-#include "cfgSoundShaders.hpp"
-#include "cfgSoundSets.hpp"
 #include "cfgAmmo.hpp"
 #include "CfgUnitInsignia.hpp"

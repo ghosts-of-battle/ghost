@@ -1,4 +1,5 @@
 #include "\x\cba\addons\main\script_macros_common.hpp"
+#include "\z\ace\addons\main\script_macros.hpp"
 #define DFUNC(module) TRIPLES(ADDON,fnc,module)
 #ifdef DISABLE_COMPILE_CACHE
     #undef PREP
@@ -10,16 +11,16 @@
 
 // ACE3 reference macros
 #define ACE_PREFIX ace
-#define ACE_ADDON(module) DOUBLES(ACE_PREFIX,module)
 
-#define ACEGVAR(module,var)         TRIPLES(ACE_PREFIX,module,var)
-#define QACEGVAR(module,var)        QUOTE(ACEGVAR(module,var))
+#define ACEGVAR(module,var) TRIPLES(ACE_PREFIX,module,var)
+#define QACEGVAR(module,var) QUOTE(ACEGVAR(module,var))
 
-#define ACEFUNC(module,function)    TRIPLES(DOUBLES(ACE_PREFIX,module),fnc,function)
-#define QACEFUNC(module,function)   QUOTE(ACEFUNC(module,function))
+#define ACEFUNC(var1,var2) TRIPLES(DOUBLES(ACE_PREFIX,var1),fnc,var2)
+#define DACEFUNC(var1,var2) TRIPLES(DOUBLES(ACE_PREFIX,var1),fnc,var2)
+#define QACEFUNC(var1,var2) QUOTE(DACEFUNC(var1,var2))
 
-#define ACELSTRING(module,string)   QUOTE(TRIPLES(STR,DOUBLES(ACE_PREFIX,module),string))
-#define ACECSTRING(module,string)   QUOTE(TRIPLES($STR,DOUBLES(ACE_PREFIX,module),string))
+#define ACECSTRING(var1,var2) QUOTE(TRIPLES($STR,DOUBLES(ACE_PREFIX,var1),var2))
+#define ACELSTRING(var1,var2) QUOTE(TRIPLES(STR,DOUBLES(ACE_PREFIX,var1),var2))
 
 // GHOST macros
 #define IS_MOD_LOADED(modclass)     (isClass (configFile >> "CfgPatches" >> #modclass))

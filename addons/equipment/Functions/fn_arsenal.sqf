@@ -11,7 +11,7 @@ successful: number of the slot; error: -1 <NUMBER>
 
 Example:
 
-call GHOSTB_fnc_arsenal;
+call GHOST_fnc_arsenal;
 "ItemcTab",
 "ItemAndroid",
 "ItemcTabHCam",
@@ -27,7 +27,7 @@ Public: Yes
 */
 
 [
-    ["ItemAndroidMisc","ItemcTabMisc","ItemMicroDAGRMisc","uh60_jvmf_tablet","ItemcTabHCam","TFAR_anprc152","ItemMicroDAGRMisc","Gren_Loc_SAT","Gren_ric_SAT","ItemcTabMisc","ItemAndroidMisc","ALIVE_Tablet","ItemcTab","ItemAndroid","ItemcTabHCam","ItemMicroDAGR","tfw_rf3080Item","tfw_blade","tfw_whip","tfw_dd","Laserbatteries","LOP_LaserMag","Laserbatteries","ACE_ATragMX","ItemAndroid","ItemMicroDAGR","ItemcTabHCam","ItemcTab","ACE_DAGR","ACE_HuntIR_monitor","uh60_jvmf_tablet","ACE_Kestrel4500","ACE_microDAGR","tun_tablet","ACE_UAVBattery"],
+    ["TFAR_anprc152","ItemMicroDAGRMisc","ALIVE_Tablet","ItemcTab","Laserbatteries","LOP_LaserMag","Laserbatteries","ACE_ATragMX","ACE_DAGR","ACE_HuntIR_monitor","ACE_Kestrel4500","ACE_microDAGR","ACE_UAVBattery"],
     "Tech",
     "\a3\ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa"
 ] call ACEFUNC(arsenal,addRightPanelButton);

@@ -1,5 +1,5 @@
 /*
- * Name: ghostb_common_fnc_numToColor
+ * Name: ghost_common_fnc_numToColor
  * Author: Snippers
  *
  * Arguments:
