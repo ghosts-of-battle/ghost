@@ -9,8 +9,6 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_EQUIPMENT
 #endif
 
-#define DEBUG_MODE_NORMAL
-#define DEBUG_SYNCHRONOUS
 
 #include "\z\ghost\addons\main\script_mod.hpp"
 #include "\z\ghost\addons\main\script_macros.hpp"

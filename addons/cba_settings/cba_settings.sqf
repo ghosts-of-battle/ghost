@@ -582,6 +582,31 @@ force ghost_back_to_game_removeBody = true;
 force ghost_back_to_game_teleportToLeader = true;
 force ghost_back_to_game_teleportToVehicle = true;
 
+// Ghosts of Battle  - BluForce Tracker
+FORCE FORCE ghost_bft_bftEnabled = true;
+FORCE FORCE ghost_bft_friendlySides_CIVILIAN = [0,2];
+FORCE FORCE ghost_bft_friendlySides_EAST = [3];
+FORCE FORCE ghost_bft_friendlySides_RESISTANCE = [1,3];
+FORCE FORCE ghost_bft_friendlySides_WEST = [2];
+FORCE FORCE ghost_bft_friendlySidesDynamic = true;
+FORCE FORCE ghost_bft_groupIconsInteraction = "hover";
+FORCE FORCE ghost_bft_medicalSystem = "ACE";
+FORCE FORCE ghost_bft_requireItemGPS = true;
+FORCE FORCE ghost_bft_showAIGroups = true;
+FORCE FORCE ghost_bft_showAINames = true;
+FORCE FORCE ghost_bft_showCivilians = false;
+FORCE FORCE ghost_bft_showGroupIcons = true;
+FORCE FORCE ghost_bft_showGroupText = true;
+FORCE FORCE ghost_bft_showLifeState = true;
+FORCE FORCE ghost_bft_showOwnFactionOnly = false;
+FORCE FORCE ghost_bft_showOwnGroup = true;
+FORCE FORCE ghost_bft_showOwnGroupUnits = true;
+FORCE FORCE ghost_bft_showPlayerNames = true;
+FORCE FORCE ghost_bft_showUnitNames = true;
+FORCE FORCE ghost_bft_teamColors = "ACE";
+FORCE FORCE ghost_bft_updateInterval = 6
+
+
 // Ghosts of Battle - Channels
 FORCE ghost_Channels_CommandDuration = 0;
 FORCE ghost_Channels_CommandText = false;
@@ -827,10 +852,10 @@ force TFAR_SameLRFrequenciesForSide = true;
 force TFAR_SameSRFrequenciesForSide = true;
 force TFAR_setting_defaultFrequencies_lr_east = "";
 force TFAR_setting_defaultFrequencies_lr_independent = "";
-force TFAR_setting_defaultFrequencies_lr_west = "50,51,52,53,54,55,56,57";
+force TFAR_setting_defaultFrequencies_lr_west = "51,52,53,54,55,56,57,58";
 force TFAR_setting_defaultFrequencies_sr_east = "";
 force TFAR_setting_defaultFrequencies_sr_independent = "";
-force TFAR_setting_defaultFrequencies_sr_west = "50,51,52,53,54,55,56,57";
+force TFAR_setting_defaultFrequencies_sr_west = "51,52,53,54,55,56,57,58";
 force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
 force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
 force TFAR_setting_DefaultRadio_Airborne_West = "TFAR_anarc210";
@@ -1097,7 +1122,7 @@ zen_faction_filter_2_Atlas_IND_UNO_F = true;
 zen_faction_filter_2_Atlas_IND_UNO_wdl_F = true;
 zen_faction_filter_2_DSF_ABUS = true;
 zen_faction_filter_2_DSF_ABUS_groups = true;
-zen_faction_filter_2_DSF_AFMIL = true;
+zen_faction_filter_2_DSF_GHOSTIL = true;
 zen_faction_filter_2_DSF_BOKO = true;
 zen_faction_filter_2_DSF_CART = true;
 zen_faction_filter_2_DSF_CAUC = true;

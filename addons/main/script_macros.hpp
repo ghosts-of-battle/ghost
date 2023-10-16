@@ -1,5 +1,8 @@
-#include "\x\cba\addons\main\script_macros_common.hpp"
+
 #include "\z\ace\addons\main\script_macros.hpp"
+
+
+
 #define DFUNC(module) TRIPLES(ADDON,fnc,module)
 #ifdef DISABLE_COMPILE_CACHE
     #undef PREP
@@ -10,7 +13,7 @@
 #endif
 
 // ACE3 reference macros
-#define ACE_PREFIX ace
+#define ACE_ADDON(module) DOUBLES(ACE_PREFIX,module)
 
 #define ACEGVAR(module,var) TRIPLES(ACE_PREFIX,module,var)
 #define QACEGVAR(module,var) QUOTE(ACEGVAR(module,var))
@@ -47,37 +50,6 @@
         scope = 2; \
         scopeCurator = 2; \
         scopeArsenal=2;
-
-        // Items
-#define ITEMS_2(var) QUOTE(var), QUOTE(var)
-#define ITEMS_3(var) QUOTE(var), QUOTE(var), QUOTE(var)
-#define ITEMS_4(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
-#define ITEMS_5(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
-#define ITEMS_6(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
-#define ITEMS_7(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
-#define ITEMS_8(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
-#define ITEMS_9(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
-#define ITEMS_10(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
-#define ITEMS_11(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
-#define ITEMS_12(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
-
-#define MACRO_ADDWEAPON(WEAPON,COUNT) \
-    class _xx_##WEAPON { \
-        weapon = #WEAPON; \
-        count = COUNT; \
-    }
-
-#define MACRO_ADDITEM(ITEM,COUNT) \
-    class _xx_##ITEM { \
-        name = #ITEM; \
-        count = COUNT; \
-    }
-
-#define MACRO_ADDMAGAZINE(MAGAZINE,COUNT) \
-    class _xx_##MAGAZINE { \
-        magazine = #MAGAZINE; \
-        count = COUNT; \
-    }
 
 #define MACRO_ADDBACKPACK(BACKPACK,COUNT) \
     class _xx_##BACKPACK { \

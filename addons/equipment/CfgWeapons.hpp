@@ -12,6 +12,10 @@ class CfgWeapons {
     class InventoryItem_Base_F;
     class ItemCore;
     class UniformItem;
+    class Uniform_Base;
+    class U_B_CTRG_Soldier_F: Uniform_Base {
+        class ItemInfo;
+    };
     class U_B_Wetsuit;
     class optic_lrps;
     class Binocular;

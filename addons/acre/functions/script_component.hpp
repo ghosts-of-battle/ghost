@@ -1,0 +1,1 @@
+#include "\z\ghost\addons\acre\script_component.hpp"

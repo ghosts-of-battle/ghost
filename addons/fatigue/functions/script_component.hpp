@@ -1,0 +1,1 @@
+#include "\z\ghost\addons\fatigue\script_component.hpp"

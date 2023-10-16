@@ -6,6 +6,8 @@ class CfgWeapons {
     class H_Booniehat_khk_hs;
     class H_Cap_oli;
     class H_Cap_oli_hs;
+
+    
     class ghost_Multicam_H_Booniehat_Multicam: H_Booniehat_khk {
         author = "Seb";
         displayName = "[GHOST] (Multicam) Booniehat ";
@@ -366,7 +368,6 @@ class CfgWeapons {
         picture=QPATHTOF(data\ui\icon_H_Cap_US_Tigerstripe_hs_ca.paa);
         MACRO_ITEM_COMMON
     };
-
     class ghost_H_Booniehat_Solid_Olive: H_Booniehat_khk {
         author = QAUTHOR;
         Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
@@ -626,5 +627,205 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_H_Cap_US_M81_hs_ca.paa);
         MACRO_ITEM_COMMON
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_amp_1: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_amp_1_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_amp_2: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_amp_2_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_amp_3: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_amp_3_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_amp_4: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_amp_4_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_amp_5: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_amp_5_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_Ct_1: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_Ct_1_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_ct_2: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_ct_2_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_ct_3: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_ct_3_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_ct_4: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_ct_4_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_ct_5: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_blk_ct_5_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_amp_1: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_amp_1_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_Amp_2: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_Amp_2_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_Amp_3: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_Amp_3_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_Amp_4: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_Amp_4_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_Amp_5: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_Amp_5_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_Ct_1: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_Ct_1_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_ct_2: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_ct_2_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_ct_3: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_ct_3_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_ct_4: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_ct_4_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_ct_5: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
+    };
+    class FPGP_2_opscoreMar_Snakeskin_Tan_ct_5_us: ItemCore {
+        scope = 2;
+        ace_hearing_protection = 0.7;
+        ace_hearing_lowerVolume = 0.05;
     };
 };

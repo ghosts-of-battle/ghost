@@ -1,5 +1,5 @@
 #include "script_component.hpp"
-#include "\a3\ui_f\hpp\defineResinclDesign.inc"
+
 /*
  * Author: veteran29
  * Initializes loading screen display and adds Ghosts of Battle branding.

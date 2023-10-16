@@ -24,6 +24,8 @@ exclude = [
     "a3/ui_f/hpp/defineDIKCodes.inc",
     "a3/ui_f/hpp/defineCommonGrids.inc",
     "a3/ui_f/hpp/defineCommonColors.inc",
+    "/x/cba/addons/main/script_macros_common.hpp",
+    "/a3/ui_f/hpp/defineResinclDesign.inc",
 ]
 
 [Rapify]

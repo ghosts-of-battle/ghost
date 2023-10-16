@@ -1,4 +1,4 @@
-class DPSO_ModuleServicing: Module_F {
+class ghost_ModuleServicing: Module_F {
     scope = 2;
     displayName = "Role Selection";
     icon = "\a3\modules_f_bootcamp\Data\IconBootcampStage.paa";
