@@ -1,9 +1,9 @@
 class CfgDifficultyPresets {
 
-    defaultPreset = QGVAR(custom);
+    defaultPreset = QUOTE(Difficulty_GHOST);
 
     class Custom;
-    class GVAR(custom): Custom {
+    class Difficulty_GHOST {
         displayName = CSTRING(DifficultyName);
 
         description = CSTRING(DifficultyDescription);
@@ -27,7 +27,7 @@ class CfgDifficultyPresets {
             /* Personal awareness */
             weaponInfo = 2;   // Weapon info (0 = never, 1 = fade out, 2 = always)
             stanceIndicator = 2; // Stance indicator (0 = never, 1 = fade out, 2 = always)
-            staminaBar = 0;   // Stamina bar
+            staminaBar = 1;   // Stamina bar
             weaponCrosshair = 0; // Weapon crosshair
             visionAid = 0;   // Vision aid
 

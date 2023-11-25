@@ -59,31 +59,35 @@ _do= _box addMagazineCargoGlobal [_x, _Ammount];
 ////if unlimited is set to true, the box will be refilled automatically
 
 if (_isUnlimited)then {
-_box setVariable ["GHOST_AmmoMagazines", _allMagazinesType];
+    _box setVariable ["GHOST_AmmoMagazines", _allMagazinesType];
 
-_handlerIndex = _box addEventHandler
- ["ContainerOpened",
-  {
-  _box = _this select 0;
-  _allMagazinesType = _box getVariable "GHOST_AmmoMagazines";
-
-
-
-  clearMagazineCargoGlobal _box;
-  {_box addMagazineCargoGlobal [_x,10];} forEach _allMagazinesType;
-      _box addItemCargoGlobal ["GHOST_medbags_FirstAid",2];
-      _box addItemCargoGlobal ["GHOST_medbags_MedicKit",4];
-      _box addItemCargoGlobal ["HandGrenade",8];
-      _box addItemCargoGlobal ["SmokeShell",8];
-      _box addItemCargoGlobal ["ACE_M84",8];
-      _box addItemCargoGlobal ["Laserbatteries",2];
-      _box addItemCargoGlobal ["B_IR_Grenade",2];
-      _box addItemCargoGlobal ["rhs_mag_m67",2];
-  }
+    _handlerIndex = _box addEventHandler
+    ["ContainerOpened",
+    {
+    _box = _this select 0;
+    _allMagazinesType = _box getVariable "GHOST_AmmoMagazines";
 
 
 
- ];
+    clearMagazineCargoGlobal _box;
+    {_box addMagazineCargoGlobal [_x,10];} forEach _allMagazinesType;
+        _box addItemCargoGlobal ["GHOST_medbags_FirstAid",2];
+        _box addItemCargoGlobal ["GHOST_medbags_MedicKit",4];
+        _box addItemCargoGlobal ["HandGrenade",8];
+        _box addItemCargoGlobal ["SmokeShell",8];
+        _box addItemCargoGlobal ["ACE_M84",8];
+        _box addItemCargoGlobal ["Laserbatteries",2];
+        _box addItemCargoGlobal ["B_IR_Grenade",2];
+        _box addItemCargoGlobal ["rhs_mag_m67",2];
+        _box addItemCargoGlobal ["tsp_frameCharge_mag", 10];
+        _box addItemCargoGlobal ["tsp_popperCharge_auto_mag", 10];
+        _box addItemCargoGlobal ["tsp_popperCharge_mag", 10];
+        _box addItemCargoGlobal ["tsp_stickCharge_auto_mag", 10];
+        _box addItemCargoGlobal ["tsp_stickCharge_mag", 10];
+        _box addItemCargoGlobal ["MS_Strobe_Mag_1", 10];
+        _box addItemCargoGlobal ["MS_Strobe_Mag_2", 10];
+    }
+    ];
 _box setVariable ["GHOST_AmmoCrateEHIndex", _handlerIndex, true];
 
 };

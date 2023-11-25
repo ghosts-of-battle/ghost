@@ -1,4 +1,3 @@
-#include "script_component.hpp"
 class CfgWeapons {
 
     class CBA_MiscItem;
@@ -10,6 +9,7 @@ class CfgWeapons {
     class GVAR(FirstAid): ACE_ItemCore {
         scope = 2;
         author = QAUTHOR;
+        ACE_isMedicalItem = 1;
         displayName = "Boo Boo Bag";
         descriptionShort = "Contains material for first aid";
         editorPreview = QPATHTOF(data\previews\firstaid.jpg);
@@ -25,6 +25,7 @@ class CfgWeapons {
     class GVAR(MedicKit): ACE_ItemCore {
         scope = 2;
         author = QAUTHOR;
+        ACE_isMedicalItem = 1;
         displayName = "Medic Bag";
         descriptionShort = "Contains materials to resupply medics";
         editorPreview = QPATHTOF(data\previews\medickit.jpg);
@@ -40,6 +41,7 @@ class CfgWeapons {
     class GVAR(Trauma): ACE_ItemCore {
         scope = 2;
         author = QAUTHOR;
+        ACE_isMedicalItem = 1;
         displayName = "Trauma Kit";
         descriptionShort = "Contains materials for medics";
         editorPreview = QPATHTOF(data\previews\medickit.jpg);
@@ -55,6 +57,7 @@ class CfgWeapons {
         class GVAR(Fluid): ACE_ItemCore {
         scope = 2;
         author = QAUTHOR;
+        ACE_isMedicalItem = 1;
         displayName = "Fluid Kit";
         descriptionShort = "Box of Water";
         editorPreview = QPATHTOF(data\previews\medickit.jpg);
@@ -71,6 +74,7 @@ class CfgWeapons {
         scope = 2;
         author = QAUTHOR;
         displayName = "Drug Kit";
+        ACE_isMedicalItem = 1;
         descriptionShort = "Contains DURGS!";
         editorPreview = QPATHTOF(data\previews\booboo_ca.paa);
         picture = QPATHTOF(data\previews\booboo_ca.paa);
@@ -81,19 +85,19 @@ class CfgWeapons {
             mass = 12;
         };
     };
-
-    class ACE_fieldDressing: ACE_ItemCore {
-        scope=2;
-        picture= QPATHTOF(data\icon\IB.paa);
-        displayName="Pressure Bandage";
-        descriptionShort="Quickly stanches haemorrhaging from injuries";
-        descriptionUse="Quickly stanches haemorrhaging from injuries";
-    };
-
-    class ACE_quikclot: ACE_ItemCore {
-        scope=2;
-        displayName="Quikclot Combat Gauze";
-        picture= QPATHTOF(data\icon\Quikclot.paa);
-    };
-
+    // class GVAR(mopp): ACE_ItemCore {
+    //     scope = 2;
+    //     author = QAUTHOR;
+    //     displayName = "MOPP Bag";
+    //     ACE_isMedicalItem = 1;
+    //     descriptionShort = "MOPP !!!!!!";
+    //     editorPreview = QPATHTOF(data\previews\booboo_ca.paa);
+    //     picture = QPATHTOF(data\previews\booboo_ca.paa);
+    //     model = "\a3\props_f_orange\humanitarian\camps\firstaidkit_01_closed_f.p3d";
+    //     icon = "iconObject_1x1";
+    //     mapSize = 0.015;
+    //     class ItemInfo: CBA_MiscItem_ItemInfo {
+    //         mass = 18;
+    //     };
+    // };
 };

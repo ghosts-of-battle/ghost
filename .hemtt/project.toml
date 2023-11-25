@@ -25,7 +25,7 @@ exclude = [
     "a3/ui_f/hpp/defineCommonGrids.inc",
     "a3/ui_f/hpp/defineCommonColors.inc",
     "/x/cba/addons/main/script_macros_common.hpp",
-    "/a3/ui_f/hpp/defineResinclDesign.inc",
+    "/a3/ui_f/hpp/defineResinclDesign.inc"
 ]
 
 [Rapify]
@@ -33,7 +33,15 @@ exclude = [
     "macroexecs.inc"
 ]
 
+[version]
+path = "addons/main/script_version.hpp"
+
 [asc]
-enabled = true # Default: false
 exclude = [
+    "initSettings.sqf",
+    "initKeybinds.sqf",
+    "initSettingsChannelNames.sqf",
+    "fnc_isDebugConsoleAllowed.sqf",
+    "cba_settings.sqf",
+    "initCBASettings.sqf",
 ]

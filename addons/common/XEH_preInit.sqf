@@ -20,8 +20,7 @@ GVAR(aceSafemode) = IS_MOD_LOADED(ace_safemode);
 GVAR(aceTagging) = IS_MOD_LOADED(ace_tagging);
 GVAR(aceThrowing) = IS_MOD_LOADED(ace_advanced_throwing);
 GVAR(aceTowing) = IS_MOD_LOADED(ace_towing);
-GVAR(acre) = IS_MOD_LOADED(acre_core);
-GVAR(lingor) = IS_MOD_LOADED(lingor_objects);
+GVAR(acre) = IS_MOD_LOADED(acre_main);
 
 GVAR(playerMarkerIdx) = 0;
 
@@ -41,5 +40,3 @@ GVAR(runAfterSettingsInit) = [];
 }] call CBA_fnc_addEventHandler;
 
 ADDON = true;
-
-#include "initSettings.sqf"

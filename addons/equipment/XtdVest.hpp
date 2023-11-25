@@ -1,4 +1,3 @@
-#include "script_component.hpp"
 class XtdGearModels {
     class CfgWeapons {
         class GFPGP_2_Assulycar {

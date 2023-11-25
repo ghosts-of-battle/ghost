@@ -21,9 +21,9 @@ player allowDamage false;
 [{player allowDamage true}, [], 5] call CBA_fnc_waitAndExecute;
 player playAction "PlayerProne";
 // wait for ACRE init if present
-// [{!EGVAR(common,acre) || {[] call acre_api_fnc_isInitialized}}, {
-//     player setUnitLoadout (GVAR(savegameData) select 0);
-// }] call CBA_fnc_waitUntilAndExecute;
+[{!EGVAR(common,acre) || {[] call acre_api_fnc_isInitialized}}, {
+    player setUnitLoadout (GVAR(savegameData) select 0);
+}] call CBA_fnc_waitUntilAndExecute;
 
 private _oldGroup = GVAR(savegameData) select 1;
 if ((group player isNotEqualTo _oldGroup) && {!isNull _oldGroup}) then {

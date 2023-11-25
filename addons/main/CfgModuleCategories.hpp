@@ -10,3 +10,10 @@ class CfgVehicleClasses {
         displayName = CSTRING(Category);
     };
 };
+
+class CfgVehicleClasses {
+    class PREFIX_Vehicles {
+        displayName = CSTRING(Category);
+    };
+};
+

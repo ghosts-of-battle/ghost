@@ -8,7 +8,7 @@
             _variableName,
             "EDITBOX",
             [_settingName, _settingDescription],
-            [LSTRING(DisplayName), _categoryName],
+            [COMPONENT_NAME, _categoryName],
             _settingName,
             1,
             {},

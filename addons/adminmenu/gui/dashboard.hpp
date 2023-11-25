@@ -180,33 +180,33 @@ class Controls
         y = "15.3 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
     };
 
-    // Mission maker's notes, right
-    class LabelMissionNotes: RscText {
-        text = "Mission Maker's Notes";
-        sizeEx = QUOTE(GHOST_ADMINMENU_STD_SIZEX);
-        x = "22.4 * (((safezoneW / safezoneH) min 1.2) / 40)";
-        y = "0";
-        w = "15.4 * (((safezoneW / safezoneH) min 1.2) / 40)";
-        h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-    };
-    class GroupMissionNotes: RscControlsGroup {
-        idc = IDC_GHOST_ADMINMENU_G_DASH_MISSIONNOTES;
-        x = "22.4 * (((safezoneW / safezoneH) min 1.2) / 40)";
-        y = "1.1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-        w = "15.4 * (((safezoneW / safezoneH) min 1.2) / 40)";
-        h = "19.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-        class Controls
-        {
-            class TextMissionNotes: RscStructuredText
-            {
-                idc = IDC_GHOST_ADMINMENU_DASH_MISSIONNOTES;
-                size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-                sizeEx = QUOTE(GHOST_ADMINMENU_STD_SIZEX);
-                x = "0";
-                y = "0";
-                w = "14.9 * (((safezoneW / safezoneH) min 1.2) / 40)"; // Margin for vertical scrollbar
-                h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-            };
-        };
-    };
+    // // Mission maker's notes, right
+    // class LabelMissionNotes: RscText {
+    //     text = "Mission Maker's Notes";
+    //     sizeEx = QUOTE(GHOST_ADMINMENU_STD_SIZEX);
+    //     x = "22.4 * (((safezoneW / safezoneH) min 1.2) / 40)";
+    //     y = "0";
+    //     w = "15.4 * (((safezoneW / safezoneH) min 1.2) / 40)";
+    //     h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+    // };
+    // class GroupMissionNotes: RscControlsGroup {
+    //     idc = IDC_GHOST_ADMINMENU_G_DASH_MISSIONNOTES;
+    //     x = "22.4 * (((safezoneW / safezoneH) min 1.2) / 40)";
+    //     y = "1.1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+    //     w = "15.4 * (((safezoneW / safezoneH) min 1.2) / 40)";
+    //     h = "19.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+    //     class Controls
+    //     {
+    //         class TextMissionNotes: RscStructuredText
+    //         {
+    //             idc = IDC_GHOST_ADMINMENU_DASH_MISSIONNOTES;
+    //             size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+    //             sizeEx = QUOTE(GHOST_ADMINMENU_STD_SIZEX);
+    //             x = "0";
+    //             y = "0";
+    //             w = "14.9 * (((safezoneW / safezoneH) min 1.2) / 40)"; // Margin for vertical scrollbar
+    //             h = "1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+    //         };
+    //     };
+    // };
 };

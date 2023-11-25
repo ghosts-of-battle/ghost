@@ -27,7 +27,7 @@ This is the custom mod for Ghosts of Battle
 Its based/inspired on/by the following projects;
 
 ##Its based on, and inspired by the following projects
-- https://github.com/ArmaForces/Mods of ArmaForces/Mods  -  GNU GENERAL PUBLIC LICENSE
+- https://github.com/Ghosts of Battle/Mods of Ghosts of Battle/Mods  -  GNU GENERAL PUBLIC LICENSE
 - https://github.com/AXEmod/AXE - GNU General Public License (GPLv3)
 - https://github.com/Theseus-Aegis/Mods - GNU General Public License (GPLv2).
 - https://github.com/last-resort-gaming/ghost-Fundamentals - MIT License
@@ -37,7 +37,10 @@ Its based/inspired on/by the following projects;
 - https://github.com/Katalam/KNB - GNU General Public License (GPLv3)
 - https://github.com/SzwedzikPL/SimpleSuppress/releases - MIT License
 - https://github.com/johnb432/Zeus-Additions - MIT License
--https://steamcommunity.com/sharedfiles/filedetails/?id=2869453820  - Arma Public License Share-Alike (APL-SA)
+- https://github.com/johnb432/Zeus-Additions - GNU GENERAL PUBLIC LICENSE
+- Ample Camo Pack Lite https://steamcommunity.com/sharedfiles/filedetails/?id=2869453820  - Arma Public License Share-Alike (APL-SA)
+
+
 
 All the code in this mod is available in the Github
 you can find the Ghosts of Battle Version at https://github.com/ghosts-of-battle/ghost
@@ -52,6 +55,8 @@ Fat_Lurch's
 - Ammocan https://steamcommunity.com/sharedfiles/filedetails/?id=2162698437
 - Vehicle Inventory System https://steamcommunity.com/sharedfiles/filedetails/?id=2161671937
 
+Simpel's 
+- MILGP Retextures https://steamcommunity.com/sharedfiles/filedetails/?id=2871002081
 
 ACE MOD https://steamcommunity.com/workshop/filedetails/?id=463939057
   Compatibility and optional packages
@@ -61,6 +66,8 @@ ACE MOD https://steamcommunity.com/workshop/filedetails/?id=463939057
   - Particles
   - Realistic Dispersion
   - Tracers (ball)
+
+
 
 Vestarr's
 BettIR (Legacy v0.2.1) https://steamcommunity.com/sharedfiles/filedetails/?id=2260572637

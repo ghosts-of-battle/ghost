@@ -10,7 +10,7 @@ if (hasinterface) then {
     player setVariable ["ACE_isEOD", false, true];
     player setVariable ["ace_isEngineer", 0, true];
 
-    player setVariable ["ace_medical_medicclass", 1, true];
+    player setVariable ["ace_medical_medicclass", 2, true];
 
     player setVariable["draWhitelisted", false, true];
     daoWhitelisted=false;

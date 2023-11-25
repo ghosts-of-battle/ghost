@@ -2,7 +2,7 @@
     QGVAR(highJogCoefEnabled),
     "CHECKBOX",
     [LSTRING(High_Jog_Coef_Enabled), LSTRING(High_Jog_Coef_Enabled_Description)],
-    LSTRING(DisplayName),
+    COMPONENT_NAME,
     false,
     1,
     {[_this] call FUNC(toggleHighJogFactor)}
@@ -12,7 +12,7 @@
     QGVAR(highJogCoef),
     "SLIDER",
     [LSTRING(High_Jog_Coef), LSTRING(High_Jog_Coef_Description)],
-    LSTRING(DisplayName),
+    COMPONENT_NAME,
     [0.8, 1, 0.9, 0, true],
     1
 ] call CBA_fnc_addSetting;

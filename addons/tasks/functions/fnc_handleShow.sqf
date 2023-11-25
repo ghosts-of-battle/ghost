@@ -16,9 +16,9 @@
 params ["_taskNamespace"];
 
 // Load show code condition
-private _conditionCodeShowValue = _taskNamespace getVariable ["conditionCodeShow", true];
+private _conditionCodeShowValue = _taskNamespace getVariable ["conditionCodeShow", "true"];
 private _conditionCodeShow = compile _conditionCodeShowValue;
-private _conditionCodeEmpty = (_conditionCodeShowValue isEqualTo true || {_conditionCodeShowValue isEqualTo ""});
+private _conditionCodeEmpty = (_conditionCodeShowValue isEqualTo "true" || {_conditionCodeShowValue isEqualTo ""});
 
 // Load show event condition
 private _conditionEventsShow = _taskNamespace getVariable ["conditionEventsShow", []];

@@ -11,7 +11,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = CSTRING(Apap_DisplayName);
-        author = "ArmaForces";
+        author = QAUTHOR;
         icon = QPATHTOF(ui\icons\apap.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\PainKillers_F.p3d";
         vehicleClass = "Items";

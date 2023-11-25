@@ -4,7 +4,7 @@ class CfgWeapons {
     class GHOST_apap: ACE_ItemCore {
         scope = 2;
         scopeCurator = 2;
-        author = "ArmaForces";
+        author = QAUTHOR;
         displayName = CSTRING(Apap_DisplayName);
         picture = QPATHTOF(ui\icons\apap.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\PainKillers_F.p3d";

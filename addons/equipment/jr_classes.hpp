@@ -1,4 +1,3 @@
-#include "script_component.hpp"
 class asdg_OpticRail;
 
 class asdg_OpticRail1913: asdg_OpticRail {

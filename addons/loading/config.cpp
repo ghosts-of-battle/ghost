@@ -8,6 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "ghost_common"
+            
         };
         author = QAUTHOR;
         authors[] = {"veteran29"};

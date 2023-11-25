@@ -2,6 +2,9 @@
     class className { \
         author = QUOTE(authorName); \
         path = QPATHTOF(ui\##className##.paa); \
+        class Noise { \
+            text="\A3\Ui_f\data\GUI\Cfg\LoadingScreens\LoadingNoise_ca.paa"; \
+        }; \
     }
 
 class GVAR(CfgLoadingScreen) {

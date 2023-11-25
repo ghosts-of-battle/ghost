@@ -1,4 +1,3 @@
-#include "script_component.hpp"
 class XtdGearmodels {
     class CfgVehicles {
         class RadioBag {

@@ -5723,7 +5723,7 @@ class CfgWeapons
         author="$STR_A3_A_AveryTheKitty";
         htMin=1;
         htMax=600;
-        afMax=0;
+        ghostax=0;
         mfMax=0;
         mFact=1;
         tBody=100;
@@ -6098,7 +6098,7 @@ class CfgWeapons
         author="$STR_A3_A_Grave";
         htMin=1;
         htMax=600;
-        afMax=0;
+        ghostax=0;
         mfMax=0;
         mFact=1;
         tBody=100;

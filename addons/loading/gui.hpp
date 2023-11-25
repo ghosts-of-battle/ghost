@@ -21,7 +21,9 @@ class RscPictureKeepAspect;
                         w = "safezoneW"; \
                         h = "2 * safezoneH"; \
                     }; \
-                    class Noise; \
+                    class Noise: RscPicture { \
+                        text="\A3\Ui_f\data\GUI\Cfg\LoadingScreens\LoadingNoise_ca.paa"; \
+                    }; \
                     class GVAR(lines): Noise {}; \
                     class Logo: RscPictureKeepAspect { \
                         y = "-safeZoneH"; \

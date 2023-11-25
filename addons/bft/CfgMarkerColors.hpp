@@ -7,19 +7,19 @@ class CfgMarkerColors {
     };
     class Color_RED_Default: Color_MAIN_Default {
         name = "Ghost of Battle Red";
-        color[] = {0.901, 0, 0, 1};
+        color[] = {1,0.494,0.494,1};
     };
     class Color_GREEN_Default: Color_MAIN_Default {
         name = "Ghost of Battle Green";
-        color[] = {0, 0.901, 0, 1};
+        color[] =  {0.596,1,0.596,1};
     };
     class Color_BLUE_Default: Color_MAIN_Default {
         name = "Ghost of Battle Blue";
-        color[] = {0, 0.360, 1, 1};
+        color[] = {0.494,0.882,1,1};
     };
     class Color_YELLOW_Default: Color_MAIN_Default {
         name = "Ghost of Battle Yellow";
-        color[] = {0.901, 0.901, 0, 1};
+        color[] = {1,1,0.502,1};
     };
     // ACE Colors
     class Color_MAIN_ACE: Color_MAIN_Default {
@@ -66,10 +66,10 @@ class CfgMarkerColors {
     // Additional Colors
     class Color_INCAPACITATED: Color_MAIN_Default {
         name = "Ghost of Battle Incapacitated";
-        color[] = {0.701, 0.701, 0.701, 1};
+        color[] = {255,152,255,1};
     };
     class Color_INJURED: Color_MAIN_Default {
         name = "Ghost of Battle Injured";
-        color[] = {0.858, 0.584, 0.439, 1};
+        color[] = {255,0,189,1};
     };
 };

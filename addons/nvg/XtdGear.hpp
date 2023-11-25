@@ -1,4 +1,3 @@
-#include "script_component.hpp"
 class XtdGearModels {
     class CfgWeapons {
         class anvg {
@@ -43,6 +42,43 @@ class XtdGearModels {
                 class grn {
                     label = "Green";
                     image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+            };
+            class ti {
+                label = "Thermal";
+                alwaysSelectable = 1;
+                values[] = { "yes", "no"};
+            };
+        };
+        class nivas {
+            options[] = { "camo", "ti"};
+            label = "IVAS";
+            class camo {
+                alwaysSelectable = 1;
+                values[] = { "blk", "gry", "mud", "olive", "tan", "wht"};
+                class blk {
+                    label = "Black";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class gry {
+                    label = "Grey";
+                    image = "z\aceax\addons\gearinfo\data\camo\gry.paa";
+                };
+                class olive {
+                    label = "Olive";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+                class tan {
+                    label = "Tan";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class wht {
+                    label = "Olive";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+                class mud {
+                    label = "Mud";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
                 };
             };
             class ti {
@@ -115,6 +151,67 @@ class XtdGearInfos {
         class GVAR(nvg5TI_grn) {
             model = "nvg5";
             camo = "grn";
+            ti = "yes";
+        };
+
+        class TIOW_IVAS_Black {
+            model = "nivas";
+            camo = "blk";
+            ti = "no";
+        };
+        class TIOW_IVAS_BlackTI {
+            model = "nivas";
+            camo = "blk";
+            ti = "yes";
+        };
+        class TIOW_IVAS_Grey {
+            model = "nivas";
+            camo = "gry";
+            ti = "no";
+        };
+        class TIOW_IVAS_GreyTI {
+            model = "nivas";
+            camo = "gry";
+            ti = "yes";
+        };
+        class TIOW_IVAS_Mud {
+            model = "nivas";
+            camo = "mud";
+            ti = "no";
+        };
+        class TIOW_IVAS_MudTI {
+            model = "nivas";
+            camo = "mud";
+            ti = "yes";
+        };
+        class TIOW_IVAS_Olive {
+            model = "nivas";
+            camo = "olive";
+            ti = "no";
+        };
+        class TIOW_IVAS_OliveTI {
+            model = "nivas";
+            camo = "olive";
+            ti = "yes";
+        };
+        class TIOW_IVAS_Tan {
+            model = "nivas";
+            camo = "tan";
+            ti = "no";
+        };
+        class TIOW_IVAS_TanTI {
+            model = "nivas";
+            camo = "tan";
+            ti = "yes";
+        };
+        class TIOW_IVAS_White {
+            model = "nivas";
+            camo = "wht";
+            ti = "no";
+        };
+        class TIOW_IVAS_WhiteTI {
+            model = "nivas";
+            camo = "wht";
             ti = "yes";
         };
     };

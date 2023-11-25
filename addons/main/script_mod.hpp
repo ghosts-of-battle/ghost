@@ -7,7 +7,6 @@
 #define LOGO_PATH QUOTE(z\ghost\addons\media\images\logo_256.paa)
 #define URL "https://www.ghostsofbattle.com/"
 
-
 #include "script_version.hpp"
 
 #define VERSION     MAJOR.MINOR
@@ -17,7 +16,7 @@
 #define REQUIRED_VERSION 2.00
 
 #ifdef COMPONENT_BEAUTIFIED
-    #define COMPONENT_NAME QUOTE(Ghosts of Battle - COMPONENT_BEAUTIFIED)
+    #define COMPONENT_NAME QUOTE(GHOST - COMPONENT_BEAUTIFIED)
 #else
-    #define COMPONENT_NAME QUOTE(Ghosts of Battle - COMPONENT)
+    #define COMPONENT_NAME QUOTE(GHOST - COMPONENT)
 #endif

@@ -25,4 +25,4 @@ if (hasinterface) then {
     ] call CBA_fnc_waitAndExecute;
 };
 
-[ format [hint_ghost_default, "Communications"] ] call ghost_fnc_hint;
+[ format [hint_ghost_default, "JFIRE"] ] call ghost_fnc_hint;

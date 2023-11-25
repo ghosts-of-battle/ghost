@@ -1,5 +1,6 @@
-#include "script_component.hpp"
 class CfgWeapons {
+    class CBA_MiscItem;
+    class CBA_MiscItem_ItemInfo;
     class ace_xm157_prototype;
     class optic_DMS;
     class optic_Nightstalker;
@@ -23,7 +24,7 @@ class CfgWeapons {
     class Laserdesignator: Binocular {
             visionMode[] = {"Normal","NVG","TI"};
     };
-    class GVAR(xm157_prototype ): ace_xm157_prototype {
+    class GVAR(xm157_prototype): ace_xm157_prototype {
         scope=2;
         scopeCurator=2;
         scopeArsenal=2;
@@ -428,4 +429,12 @@ class CfgWeapons {
             };
         };
     };
+    class tsp_paperclip: CBA_MiscItem {
+        ACE_isTool = 1;
+        scope = 2;
+    };
+    class tsp_lockpick: tsp_paperclip {
+        ACE_isTool = 1;
+    };
+
 };

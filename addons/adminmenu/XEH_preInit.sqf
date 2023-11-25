@@ -1,8 +1,14 @@
 #include "\z\ghost\addons\adminmenu\script_component.hpp"
 
-#include "XEH_PREP.sqf"
+ADDON = false;
+
+PREP_RECOMPILE_START;
+#include "XEH_PREP.hpp"
+PREP_RECOMPILE_END;
 
 #include "initSettings.sqf"
+
+ADDON = true;
 
 GVAR(logEntries) = [];
 

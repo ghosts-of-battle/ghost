@@ -14,8 +14,6 @@ class CfgVehicles {
 
     // External class reference  END
 
-
-/////////////////////////
     class GVAR(AssaultPack_Multicam): B_AssaultPack_rgr {
         author = QAUTHOR;
         
@@ -855,7 +853,6 @@ class CfgVehicles {
         };
     };
 
-///////////////////////////////////////////////////////////
 
     class GVAR(TFAR_rt1523g_kitbag): TFAR_rt1523g {
         author = "NemesisRE";

@@ -24,9 +24,9 @@ private _pos = getPosATL _unit;
 private _handlerData = GVAR(saveHandlers) apply {[_x select 1, _unit call (_x select 0)]};
 
 // filter ACRE2 radios
-// if (EGVAR(common,acre)) then {
-//     _loadout = [_loadout] call acre_api_fnc_filterUnitLoadout;
-// };
+if (EGVAR(common,acre)) then {
+    _loadout = [_loadout] call acre_api_fnc_filterUnitLoadout;
+};
 
 GVAR(disconnectedPlayers) set [_uid, [_loadout, group _unit, vehicle _unit, _pos, _handlerData]];
 

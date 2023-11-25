@@ -1,14 +1,13 @@
-#include "script_component.hpp"
 class CBA_Extended_EventHandlers_base;
 class CfgVehicles {
     //fpgp
     class B_AssaultPack_rgr;
-	class FPGP_Hydration1_Tan_1_Backpanel: B_AssaultPack_rgr {
-		maximumLoad = 180;
-	};
-	class FPGP_Hydration2_Tan_1_Backpanel: B_AssaultPack_rgr {
-		maximumLoad = 180;
-	};
+    class FPGP_Hydration1_Tan_1_Backpanel: B_AssaultPack_rgr {
+        maximumLoad = 180;
+    };
+    class FPGP_Hydration2_Tan_1_Backpanel: B_AssaultPack_rgr {
+        maximumLoad = 180;
+    };
     // Box
     class NATO_Box_Base;
     class GVAR(arsenal): NATO_Box_Base {
@@ -18,6 +17,9 @@ class CfgVehicles {
         displayName = "[GHOST] Arsenal";
         model="A3\Weapons_F\Ammoboxes\AmmoVeh_F";
         icon="iconCrateVeh";
+        ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+        ace_cargo_noRename = 1;  // Blocks renaming object (1-blocked, 0-allowed)
+        ace_cargo_blockUnloadCarry = 1; // Blocks object from being automatically picked up by player on unload
         ace_dragging_canDrag = 0;
         ace_dragging_canCarry = 0;
         slingLoadCargoMemoryPoints[]= {
@@ -48,6 +50,9 @@ class CfgVehicles {
         displayName = "[GHOST] Arsenal Winter";
         model="A3\Weapons_F\Ammoboxes\AmmoVeh_F";
         icon="iconCrateVeh";
+        ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+        ace_cargo_noRename = 1;  // Blocks renaming object (1-blocked, 0-allowed)
+        ace_cargo_blockUnloadCarry = 1; // Blocks object from being automatically picked up by player on unload
         ace_dragging_canDrag = 0;
         ace_dragging_canCarry = 0;
         slingLoadCargoMemoryPoints[]= {
@@ -78,6 +83,9 @@ class CfgVehicles {
         displayName = "[GHOST] Arsenal Desert";
         model="A3\Weapons_F\Ammoboxes\AmmoVeh_F";
         icon="iconCrateVeh";
+        ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+        ace_cargo_noRename = 1;  // Blocks renaming object (1-blocked, 0-allowed)
+        ace_cargo_blockUnloadCarry = 1; // Blocks object from being automatically picked up by player on unload
         ace_dragging_canDrag = 0;
         ace_dragging_canCarry = 0;
         slingLoadCargoMemoryPoints[]= {
@@ -108,6 +116,9 @@ class CfgVehicles {
         displayName = "[GHOST] Arsenal Tropical";
         model="A3\Weapons_F\Ammoboxes\AmmoVeh_F";
         icon="iconCrateVeh";
+        ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+        ace_cargo_noRename = 1;  // Blocks renaming object (1-blocked, 0-allowed)
+        ace_cargo_blockUnloadCarry = 1; // Blocks object from being automatically picked up by player on unload
         ace_dragging_canDrag = 0;
         ace_dragging_canCarry = 0;
         slingLoadCargoMemoryPoints[]= {
@@ -138,6 +149,9 @@ class CfgVehicles {
         displayName = "[GHOST] Arsenal Civllian";
         model="A3\Weapons_F\Ammoboxes\AmmoVeh_F";
         icon="iconCrateVeh";
+        ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+        ace_cargo_noRename = 1;  // Blocks renaming object (1-blocked, 0-allowed)
+        ace_cargo_blockUnloadCarry = 1; // Blocks object from being automatically picked up by player on unload
         ace_dragging_canDrag = 0;
         ace_dragging_canCarry = 0;
         slingLoadCargoMemoryPoints[]= {
@@ -168,6 +182,7 @@ class CfgVehicles {
         displayName = "[GHOST] Arsenal Resupply";
         model="A3\Weapons_F\Ammoboxes\AmmoVeh_F";
         icon="iconCrateVeh";
+        ace_cargo_noRename = 1;  // Blocks renaming object (1-blocked, 0-allowed)
         ace_dragging_canDrag = 0;
         ace_dragging_canCarry = 0;
         slingLoadCargoMemoryPoints[]= {

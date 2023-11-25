@@ -46,9 +46,8 @@ class CfgPatches {
             "ace_vector",
             "A3_Weapons_F",
             "cba_jr",
-            "task_force_radio_items",
-            "task_force_radio",
-            "ace_xm157"
+            "ace_xm157",
+            "tsp_breach"
         };
         VERSION_CONFIG;
         authors[] = {"YonV"};
@@ -65,7 +64,6 @@ class CfgFunctions {
 #include "CfgWeapons.hpp"
 #include "jr_classes.hpp"
 #include "RscInGameUI.hpp"
-#include "tfar.sqf"
-#include "XtdGearModels.hpp"
-
-
+#include "XtdFace.hpp"
+#include "XtdVest.hpp"
+#include "XtdRHS.hpp"

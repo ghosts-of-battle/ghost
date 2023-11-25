@@ -1,4 +1,3 @@
-#include "script_component.hpp"
 class XtdGearModels {
     class CfgGlasses {
         class GFPGP_2_Faceware {

@@ -21,7 +21,7 @@ private _taskOwners = [];
 
 {
     // If "All" keyword is used just return [true]
-    if (_x isEqualTo "All" || {_x isEqualTo true}) exitWith {_taskOwners = [true]};
+    if (_x isEqualTo "All" || {_x isEqualTo "true"}) exitWith {_taskOwners = [true]};
     // Check if side was given
     private _side = call compile _x;
     if (!isNil "_side" && {_side in [WEST, EAST, INDEPENDENT, CIVILIAN]}) then {

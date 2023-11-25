@@ -30,7 +30,7 @@ private _pfhRefresh = [{
         private _index = _listCtrl lbAdd _text;
 
         if (_isWarning) then {
-            _listCtrl lbSetPictureRight [_index, QPATHTOEF(autotest,ui\warning.paa)];
+            _listCtrl lbSetPictureRight [_index, QPATHTOEF(media,images\ui\warning.paa)];
         };
     };
 

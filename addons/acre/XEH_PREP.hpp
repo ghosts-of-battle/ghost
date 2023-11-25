@@ -4,6 +4,7 @@ PREP(copyLeaderRadioChildrenActions);
 PREP(copyLeaderSingleRadioChildrenActions);
 PREP(getAllRadios);
 PREP(getRadioDisplayName);
-PREP(getSideChannelNumberVariableName);
+PREP(getSideChannelNumberVariableNameCommand);
+PREP(getSideChannelNumberVariableNamePrivate);
 PREP(init);
 PREP(initChannelsNames);

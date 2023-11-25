@@ -67,19 +67,13 @@ if (isNull _unit) exitWith {};
         [_unit, "ACE_plasmaIV", 12, _order, _overflow] call EFUNC(common,addItem);
         sleep 0.3;
         [_unit, "ACE_bloodIV", 8, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "kat_IV_16", 30, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "kat_IO_FAST", 16, _order, _overflow] call EFUNC(common,addItem);
-        _unit playActionNow "Stand";
-
     };
 
     if (ghost_MEDICAL_SUPPLIES_UNPACK_FAILURE) exitWith {
 
         [_unit, QGVAR(Medical_MedicKit_Open_1)] call EFUNC(common,stop3dSound);
 
-        _unit playActionNow "Stand";
+
 
     };
 

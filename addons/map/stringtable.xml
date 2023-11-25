@@ -22,7 +22,11 @@
             <Polish>Pomarańczowy (Delta)</Polish>
         </Key>
         <Key ID="STR_GHOST_Map_ColorPink">
-            <English>Pink (Support)</English>
+            <English>Pink</English>
+            <Polish>Różowy</Polish>
+        </Key>
+        <Key ID="STR_GHOST_Map_ColorPink">
+            <English>Yellow (Support)</English>
             <Polish>Różowy (Wsparcie)</Polish>
         </Key>
     </Package>

@@ -39,16 +39,29 @@ private _targetSide = [[_sourceSide], [WEST, EAST, INDEPENDENT, CIVILIAN]] selec
         default {DEFAULT_PRESET_NAME};
     };
 
-    for "_channelNumber" from 1 to 10 step 1 do {
+    for "_pchannelNumber" from 1 to 15 step 1 do {
         // Retrieve channel name from settings
-        private _variableName = [_sourceSide, _channelNumber] call FUNC(getSideChannelNumberVariableName);
-        private _channelName = missionNamespace getVariable [_variableName, ""];
+        private _pvariableName = [_sourceSide, _pchannelNumber] call FUNC(getSideChannelNumberVariableNamePrivate);
+        private _pchannelName = missionNamespace getVariable [_pvariableName, ""];
         // If not empty, set
-        if (_channelName isNotEqualTo "") then {
-            TRACE_4("Setting %4 label for radio %1 preset %2 channel number %3",_x,DEFAULT_PRESET_NAME,_channelNumber,_channelName);
+        if (_pchannelName isNotEqualTo "") then {
+            TRACE_4("Setting %4 label for radio %1 preset %2 channel number %3",_x,DEFAULT_PRESET_NAME,_pchannelNumber,_pchannelName);
             {
-                [_x, _presetName, _channelNumber, "label", _channelName] call acre_api_fnc_setPresetChannelField;
-            } forEach (call acre_api_fnc_getAllRadios select 0);
+                [_x, _presetName, _pchannelNumber, "label", _pchannelName] call acre_api_fnc_setPresetChannelField;
+            } forEach ["ACRE_PRC148"];
+        };
+    };
+
+    for "_cchannelNumber" from 1 to 8 step 1 do {
+        // Retrieve channel name from settings
+        private _cvariableName = [_sourceSide, _cchannelNumber] call FUNC(getSideChannelNumberVariableNameCommand);
+        private _cchannelName = missionNamespace getVariable [_cvariableName, ""];
+        // If not empty, set
+        if (_cchannelName isNotEqualTo "") then {
+            TRACE_4("Setting %4 label for radio %1 preset %2 channel number %3",_x,DEFAULT_PRESET_NAME,_cchannelNumber,_cchannelName);
+            {
+                [_x, _presetName, _cchannelNumber, "label", _cchannelName] call acre_api_fnc_setPresetChannelField;
+            } forEach ["ACRE_PRC152","ACRE_PRC117F"];
         };
     };
 

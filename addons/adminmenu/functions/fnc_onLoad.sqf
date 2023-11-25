@@ -13,30 +13,30 @@ if (!isMultiplayer) then {
     (_display displayCtrl IDC_GHOST_ADMINMENU_DASH_CURRADMIN) ctrlSetText "none (singleplayer)";
 };
 
-// Mission Maker's Notes
-private _ctrlMissionNotes = (_display displayCtrl IDC_GHOST_ADMINMENU_G_DASH_MISSIONNOTES) controlsGroupCtrl IDC_GHOST_ADMINMENU_DASH_MISSIONNOTES;
-if (!isNil QEGVAR(briefing,admin) && {EGVAR(briefing,admin) isEqualType ""}) then {
-    _ctrlMissionNotes ctrlSetStructuredText parseText EGVAR(briefing,admin);
-} else {
-    _ctrlMissionNotes ctrlSetStructuredText parseText "No admin notes provided!";
-};
-private _notesPos = ctrlPosition _ctrlMissionNotes;
-_notesPos set [3, ctrlTextHeight _ctrlMissionNotes];
-_ctrlMissionNotes ctrlSetPosition _notesPos;
-_ctrlMissionNotes ctrlCommit 0;
+// // Mission Maker's Notes
+// private _ctrlMissionNotes = (_display displayCtrl IDC_GHOST_ADMINMENU_G_DASH_MISSIONNOTES) controlsGroupCtrl IDC_GHOST_ADMINMENU_DASH_MISSIONNOTES;
+// if (!isNil QEGVAR(briefing,admin) && {EGVAR(briefing,admin) isEqualType ""}) then {
+//     _ctrlMissionNotes ctrlSetStructuredText parseText EGVAR(briefing,admin);
+// } else {
+//     _ctrlMissionNotes ctrlSetStructuredText parseText "No admin notes provided!";
+// };
+// private _notesPos = ctrlPosition _ctrlMissionNotes;
+// _notesPos set [3, ctrlTextHeight _ctrlMissionNotes];
+// _ctrlMissionNotes ctrlSetPosition _notesPos;
+// _ctrlMissionNotes ctrlCommit 0;
 
-// Safestart
-private _ctrlCheckSafestart = _display displayCtrl IDC_GHOST_ADMINMENU_DASH_SAFESTART;
-_ctrlCheckSafestart cbSetChecked ([] call EFUNC(safestart,isActive));
-_ctrlCheckSafestart ctrlAddEventHandler ["CheckedChanged", {
-    if ((param [1]) isEqualTo 0) then {
-        [true] call EFUNC(safestart,end);
-        [format ["%1 Ended safestart",profileName],false,"Admin Menu"] call FUNC(log);
-    } else {
-        [-1,true] call EFUNC(safestart,set);
-        [format ["%1 Enabled safestart",profileName],false,"Admin Menu"] call FUNC(log);
-    };
-}];
+// // Safestart
+// private _ctrlCheckSafestart = _display displayCtrl IDC_GHOST_ADMINMENU_DASH_SAFESTART;
+// _ctrlCheckSafestart cbSetChecked ([] call EFUNC(safestart,isActive));
+// _ctrlCheckSafestart ctrlAddEventHandler ["CheckedChanged", {
+//     if ((param [1]) isEqualTo 0) then {
+//         [true] call EFUNC(safestart,end);
+//         [format ["%1 Ended safestart",profileName],false,"Admin Menu"] call FUNC(log);
+//     } else {
+//         [-1,true] call EFUNC(safestart,set);
+//         [format ["%1 Enabled safestart",profileName],false,"Admin Menu"] call FUNC(log);
+//     };
+// }];
 
 // Talk to spectators
 // private _ctrlCheckSpectatorTalk = _display displayCtrl IDC_GHOST_ADMINMENU_DASH_SPECTATORTALK;

@@ -1,5 +1,5 @@
 #define COMPONENT vs17
-#define COMPONENT_BEAUTIFIED Vs17
+#define COMPONENT_BEAUTIFIED VS17
 #include "\z\ghost\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

@@ -1,4 +1,3 @@
-#include "script_component.hpp"
 class CBA_Extended_EventHandlers;
 class CfgVehicles {
     // External class reference START
@@ -8,9 +7,10 @@ class CfgVehicles {
     class B_Kitbag_rgr;
     class B_TacticalPack_blk;
     class B_Kitbag_Base;
-    class B_RadioBag_01_base_F;
-    class TFAR_rt1523g;
-
+    class B_TacticalPack_blk;
+    class B_Kitbag_Base;
+    // class B_RadioBag_01_base_F;
+    // class TFAR_rt1523g;
     // External class reference  END
 
     class GVAR(AssaultPack_Multicam): B_AssaultPack_rgr {
@@ -851,8 +851,8 @@ class CfgVehicles {
             QPATHTOF(data\backpack_kitbag_medic_rgr_co.paa)
         };
     };
-
-
+    /* 
+    //Start radios
     class GVAR(TFAR_rt1523g_kitbag): TFAR_rt1523g {
         author = "NemesisRE";
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Fast";
@@ -919,7 +919,6 @@ class CfgVehicles {
         scopeArsenal = 1;
     };
     // MODIFIED ENOCH RADIOBAGS
-    class B_RadioBag_01_base_F;
     // RADIOBAG 01 BASE
     class GVAR(RadioBag_01_Base): B_RadioBag_01_base_F {
         scope = 1;
@@ -1109,6 +1108,8 @@ class CfgVehicles {
         tf_range = 20000;
         tf_subtype = "digital_lr";
     };
+    //End radios 
+    */
 };
 
 

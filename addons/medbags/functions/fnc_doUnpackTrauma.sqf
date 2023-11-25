@@ -86,31 +86,19 @@ if (isNull _unit) exitWith {};
         sleep 0.3;
         [_unit, "ACE_tourniquet", 12, _order, _overflow] call EFUNC(common,addItem);
         sleep 0.3;
-        [_unit, "kat_AED", 01, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "ACE_suture", 24, _order, _overflow] call EFUNC(common,addItem);
         sleep 0.3;
-        [_unit, "kat_clamp", 8, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "ACE_surgicalKit", 01, _order, _overflow] call EFUNC(common,addItem);
         sleep 0.3;
-        [_unit, "kat_plate", 8, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "GHOST_apap", 06, _order, _overflow] call EFUNC(common,addItem);
         sleep 0.3;
-        [_unit, "kat_retractor", 8, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "kat_scalpel", 8, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "kat_vacuum", 01, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "kat_IV_16", 24, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "kat_IO_FAST", 12, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        _unit playActionNow "Stand";
-
     };
 
     if (ghost_MEDICAL_SUPPLIES_UNPACK_FAILURE) exitWith {
 
         [_unit, QGVAR(Medical_MedicKit_Open_1)] call EFUNC(common,stop3dSound);
 
-        _unit playActionNow "Stand";
+
 
     };
 

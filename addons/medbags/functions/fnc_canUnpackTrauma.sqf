@@ -34,6 +34,7 @@ private _return = false;
 _return = (
     ("ghost_medbags_Trauma" in items _unit) &&
     (alive _unit) &&
+    [player] call ace_common_fnc_isMedic &&
     !(_unit getVariable ["ace_captives_isSurrendering", false]) &&
     !(_unit getVariable ["ace_captives_isHandcuffed", false]) &&
     !(_unit getVariable ["ace_isUnconscious", false]) &&

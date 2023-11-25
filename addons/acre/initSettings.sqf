@@ -2,7 +2,7 @@
     QGVAR(enabled),
     "CHECKBOX",
     [ELSTRING(common,Enabled), ELSTRING(common,Enabled_Description)],
-    LSTRING(DisplayName),
+    COMPONENT_NAME,
     false,
     1,
     {},
@@ -13,7 +13,7 @@
     QGVAR(babel),
     "CHECKBOX",
     [LSTRING(Babel), LSTRING(Babel_Description)],
-    LSTRING(DisplayName),
+    COMPONENT_NAME,
     false,
     1,
     {},
@@ -24,7 +24,7 @@
     QGVAR(startBppVolume),
     "LIST",
     [LSTRING(StartBppVolume), LSTRING(StartBppVolume_Description)],
-    LSTRING(DisplayName),
+    COMPONENT_NAME,
     [
         [0, 1, 2, 3, 4],
         [LSTRING(Whisper), LSTRING(Quiet), LSTRING(Normal), LSTRING(Loud), LSTRING(Shout)],
@@ -37,7 +37,7 @@
     QGVAR(startLeaderVolume),
     "LIST",
     [LSTRING(StartLeaderVolume), LSTRING(StartLeaderVolume_Description)],
-    LSTRING(DisplayName),
+    COMPONENT_NAME,
     [
         [0, 1, 2, 3, 4],
         [LSTRING(Whisper), LSTRING(Quiet), LSTRING(Normal), LSTRING(Loud), LSTRING(Shout)],
@@ -50,7 +50,7 @@
     QGVAR(perSideRadios),
     "CHECKBOX",
     [LSTRING(PerSideRadios), LSTRING(PerSideRadios_Description)],
-    LSTRING(DisplayName),
+    COMPONENT_NAME,
     false,
     1,
     {},
@@ -61,19 +61,37 @@
     QGVAR(perSideChannelNames),
     "CHECKBOX",
     [LSTRING(PerSideChannelNames), LSTRING(PerSideChannelNames_Description)],
-    LSTRING(DisplayName),
+    COMPONENT_NAME,
     false,
     1,
     {},
     true
 ] call CBA_fnc_addSetting;
 
+// [
+//     QGVAR(Personal_radio),
+//     "EDITBOX",
+//     ["Personal Radios", "Radios for everyever"],
+//     COMPONENT_NAME,
+//     [],
+//     1
+// ] call CBA_fnc_addSetting;
+
+// [
+//     QGVAR(command_radio), 
+//     "EDITBOX", 
+//     ["Command Radios", "Radios for the silly folks who think they are in charge"], 
+//     COMPONENT_NAME,
+//     [], 
+//     1
+// ] call CBA_fnc_addSetting;
+
 if (EGVAR(common,aceArsenal)) then {
     [
         QGVAR(addArsenalCategory),
         "CHECKBOX",
         LLSTRING(AddArsenalCategory),
-        LSTRING(DisplayName),
+        COMPONENT_NAME,
         true,
         false,
         {},

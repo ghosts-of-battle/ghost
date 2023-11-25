@@ -1,107 +1,5 @@
-#include "script_component.hpp"
 class XtdGearmodels {
     class CfgVehicles {
-        class RadioBag {
-            options[] = {
-                "camo"
-            };
-            label = "Radio Bag";
-            class camo {
-                label = "Camo";
-                alwaysselectable = 1;
-                values[] = {
-                    "Multicam",
-                    "Solid_Tan",
-                    "Multicam_Snow",
-                    "Multicam_Woodland",
-                    "Solid_Black",
-                    "Solid_CoyoteBrown",
-                    "Solid_Olive",
-                    "Solid_Ranger_Green",
-                    "Solid_White",
-                    "US_DCU",
-                    "US_Tigerstripe",
-                    "US_M81"
-                    };
-                class Solid_Black {
-                    label = "BLK";
-                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
-                };
-                class US_M81 {
-                    label = "M81";
-                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
-                };
-                class Multicam {
-                    label = "MC";
-                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
-                };
-                class Multicam_Snow {
-                    label = "MCA";
-                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
-                };
-                class Multicam_Woodland {
-                    label = "MCW";
-                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
-                };
-                class Solid_CoyoteBrown {
-                    label = "BRN";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class Solid_Olive {
-                    label = "Olive";
-                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
-                };
-                class Solid_Ranger_Green {
-                    label = "Ranger";
-                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
-                };
-                class Solid_White {
-                    label = "White";
-                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
-                };
-                class US_DCU {
-                    label = "DCU";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class US_Tigerstripe {
-                    label = "Tiger";
-                    image = "z\aceax\addons\gearinfo\data\camo\tsw.paa";
-                };
-                class Solid_Tan {
-                    label = "Tan";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-            };
-        };
-        class talon {
-            options[] = {
-                "camo"
-            };
-            label = "Talon Radio Bag";
-            class camo {
-                label = "Camo";
-                alwaysselectable = 1;
-                values[] = {
-                    "COY", "ALP", "KHK", "BLK"
-                };
-                class COY {
-                    label = "COY";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class ALP {
-                    label = "ALP";
-                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
-                };
-                class KHK {
-                    label = "KHK";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class BLK {
-                    label = "BLK";
-                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
-                };
-            };
-        };
         class ghostAssaultPack {
             options[] = { "camo" };
             label = "Assult Pack";
@@ -402,115 +300,11 @@ class XtdGearmodels {
                 };
             };
         };
-        class Backpack_patrol {
-            options[] = { "camo" };
-            label = "patrol Bag";
-            class camo {
-                alwaysSelectable = 1;
-                values[] = { "MC", "KHK", "CB", "BLK", "MCAL", "RGR", "MCB", "TAN"};
-                class BLK {
-                    label = "BLK";
-                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
-                };
-                class MC {
-                    label = "MC";
-                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
-                };
-                class KHK {
-                    label = "KHK";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class RGR {
-                    label = "Ranger";
-                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
-                };
-                class MCAL {
-                    label = "MCAL";
-                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
-                };
-                class CB {
-                    label = "CB";
-                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
-                };
-                class MCB {
-                    label = "MCB";
-                    image = "z\aceax\addons\gearinfo\data\camo\mcb.paa";
-                };
-                class TAN {
-                    label = "TAN";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-            };
-        };
     };
 };
 
 class XtdGearinfos {
     class CfgVehicles {
-        class GVAR(B_RadioBag_01_Multicam_F) {
-            model = "RadioBag";
-            camo = "Multicam";
-        };
-        class GVAR(B_RadioBag_01_Multicam_Snow_F) {
-            model = "RadioBag";
-            camo = "Multicam_Snow";
-        };
-        class GVAR(B_RadioBag_01_Multicam_Woodland_F) {
-            model = "RadioBag";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(B_RadioBag_01_Solid_Black_F) {
-            model = "RadioBag";
-            camo = "Solid_Black";
-        };
-        class GVAR(B_RadioBag_01_Solid_CoyoteBrown_F) {
-            model = "RadioBag";
-            camo = "Solid_CoyoteBrown";
-        };
-        class GVAR(B_RadioBag_01_Solid_Olive_F) {
-            model = "RadioBag";
-            camo = "Solid_Olive";
-        };
-        class GVAR(B_RadioBag_01_Solid_Ranger_Green_F) {
-            model = "RadioBag";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(B_RadioBag_01_Solid_White_F) {
-            model = "RadioBag";
-            camo = "Solid_White";
-        };
-        class GVAR(B_RadioBag_01_US_DCU_F) {
-            model = "RadioBag";
-            camo = "US_DCU";
-        };
-        class GVAR(B_RadioBag_01_US_M81_F) {
-            model = "RadioBag";
-            camo = "US_M81";
-        };
-        class GVAR(B_RadioBag_01_US_Tigerstripe_F) {
-            model = "RadioBag";
-            camo = "US_Tigerstripe";
-        };
-        class GVAR(B_RadioBag_01_Solid_Tan_F) {
-            model = "RadioBag";
-            camo = "Solid_Tan";
-        };
-        class GVAR(kitbag_coyote_west) {
-            model = "talon";
-            camo = "COY";
-        };
-        class GVAR(kitbag_winter_west) {
-            model = "talon";
-            camo = "ALP";
-        };
-        class GVAR(kitbag_khaki_west) {
-            model = "talon";
-            camo = "KHK";
-        };
-        class GVAR(kitbag_black_west) {
-            model = "talon";
-            camo = "BLK";
-        };
         class GVAR(AssaultPack_Multicam) {
             model = "ghostAssaultPack";
             camo = "Multicam";
@@ -555,7 +349,6 @@ class XtdGearinfos {
             model = "ghostAssaultPack";
             camo = "US_Tigerstripe";
         };
-
         class GVAR(AssaultPackEnhanced_Multicam) {
             model = "AssaultPackEnhanced";
             camo = "Multicam";
@@ -763,38 +556,6 @@ class XtdGearinfos {
         class GVAR(Backpack_Kitbag_Medic_White) {
             model = "Backpack_Kitbag_Medic";
             camo = "WHT";
-        };
-        class milgp_b_patrol_01_tan {
-            model = "patrol";
-            camo = "TAN";
-        };
-        class milgp_b_patrol_01_mcb {
-            model = "patrol";
-            camo = "MCB";
-        };
-        class milgp_b_patrol_01_mcal {
-            model = "patrol";
-            camo = "MCAL";
-        };
-        class milgp_b_patrol_01_mc {
-            model = "patrol";
-            camo = "MC";
-        };
-        class milgp_b_patrol_01_khk {
-            model = "patrol";
-            camo = "KHK";
-        };
-        class milgp_b_patrol_01_cb {
-            model = "patrol";
-            camo = "CB";
-        };
-        class milgp_b_patrol_01_blk {
-            model = "patrol";
-            camo = "BLK";
-        };
-        class milgp_b_patrol_01_rgr {
-            model = "patrol";
-            camo = "RGR";
         };
     };
 };
