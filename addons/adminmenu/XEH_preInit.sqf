@@ -1,4 +1,4 @@
-#include "\z\ghost\addons\adminmenu\script_component.hpp"
+#include "script_component.hpp"
 
 ADDON = false;
 

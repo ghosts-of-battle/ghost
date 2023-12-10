@@ -1,16 +1,21 @@
 class CfgWeapons {
-    class Uniform_Base;
     class UniformItem;
-    class LOP_U_IRA_Fatigue_GRK_OLV;
-    class FPGP2_Uni_Crye_mcb_1_U : Uniform_Base {class ItemInfo;};
-    class GVAR(mopp): LOP_U_IRA_Fatigue_GRK_OLV {
-        displayName="[Ghost] MOPP Suit";
+    class Uniform_Base;
+    
+    class U_B_CTRG_Soldier_F: Uniform_Base {
+        class ItemInfo;
     };
+    class U_B_CombatUniform_mcam;
+    class FPGP2_Uni_Crye_mcb_1_U : Uniform_Base {
+        class ItemInfo;
+    };
+    
     //mc
     class GVAR(Uni_Crye_1_mc_U): FPGP2_Uni_Crye_mcb_1_U {
         displayName="[Ghost] US Crye Combat Uniform (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mc.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -23,6 +28,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mc_v.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -35,6 +41,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform EOD (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mc_eod.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -47,6 +54,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform EOD VET (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mc_eod_v.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -59,6 +67,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform MED (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mc_med.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -71,6 +80,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform MED VET (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mc_med_v.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -83,6 +93,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform JFIRE (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mc_jfire.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -95,6 +106,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform JFIRE VET (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mc_jfire_v.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -109,6 +121,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_khk.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -121,6 +134,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_khkv.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -133,6 +147,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform EOD (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_khk_eod.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -145,6 +160,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform EOD VET (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_khk_eod_v.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -157,6 +173,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform MED (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_khk_med.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -169,6 +186,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform MED VET (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_khk_med_v.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -181,6 +199,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform JFIRE (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_khk_jfire.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -193,6 +212,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform JFIRE VET (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_khk_jfire_v.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -207,6 +227,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_m81.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -219,6 +240,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_m81v.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -231,6 +253,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform EOD (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_m81_eod.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -243,6 +266,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform EOD VET (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_m81_eod_v.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -255,6 +279,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform MED (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_m81_med.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -267,6 +292,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform MED VET (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_m81_med_v.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -279,6 +305,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform JFIRE (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_m81_jfire.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -291,6 +318,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform JFIRE VET (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_m81_jfire_v.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -305,6 +333,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mca.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -314,11 +343,12 @@ class CfgWeapons {
         };
     };
     class GVAR(Uni_Crye_1_mca_v_U): FPGP2_Uni_Crye_mcb_1_U {
-        displayName="[Ghost] US Crye Combat Uniform (Multicam Arid)";
+        displayName="[Ghost] US Crye Combat Uniform Vet (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
-        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mcav.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
+        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mca_v.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
             uniformClass=QGVAR(Uni_Crye_1_mca_v);
             containerClass="Supply80";
@@ -329,6 +359,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform EOD (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mca_eod.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -341,6 +372,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform EOD VET (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mca_eod_v.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -353,6 +385,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform MED (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mca_med.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -365,6 +398,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform MED VET (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mca_med_v.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -377,6 +411,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform JFIRE (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mca_jfire.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -389,6 +424,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform JFIRE VET (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mca_jfire_v.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -403,6 +439,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mct.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -412,11 +449,12 @@ class CfgWeapons {
         };
     };
     class GVAR(Uni_Crye_1_mct_v_U): FPGP2_Uni_Crye_mcb_1_U {
-        displayName="[Ghost] US Crye Combat Uniform (Multicam Tropical)";
+        displayName="[Ghost] US Crye Combat Uniform Vet (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
-        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mctv.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
+        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mct_v.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
             uniformClass=QGVAR(Uni_Crye_1_mct_v);
             containerClass="Supply80";
@@ -427,6 +465,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform EOD (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mct_eod.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -439,6 +478,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform EOD VET (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mct_eod_v.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -451,6 +491,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform MED (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mct_med.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -463,6 +504,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform MED VET (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mct_med_v.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -475,6 +517,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform JFIRE (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mct_jfire.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -487,6 +530,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform JFIRE VET (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_mct_jfire_v.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -501,6 +545,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_rgr.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -510,11 +555,12 @@ class CfgWeapons {
         };
     };
     class GVAR(Uni_Crye_1_rgr_v_U): FPGP2_Uni_Crye_mcb_1_U {
-        displayName="[Ghost] US Crye Combat Uniform (Ranger)";
+        displayName="[Ghost] US Crye Combat Uniform Vet (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
-        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_rgrv.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
+        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_rgr_v.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
             uniformClass=QGVAR(Uni_Crye_1_rgr_v);
             containerClass="Supply80";
@@ -525,6 +571,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform EOD (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_rgr_eod.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -537,6 +584,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform EOD VET (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_rgr_eod_v.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -549,6 +597,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform MED (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_rgr_med.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -561,6 +610,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform MED VET (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_rgr_med_v.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -573,6 +623,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform JFIRE (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_rgr_jfire.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -585,6 +636,7 @@ class CfgWeapons {
         displayName="[Ghost] US Crye Combat Uniform JFIRE VET (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_rgr_jfire_v.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -599,6 +651,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_mc.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -611,6 +664,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_mc.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -623,6 +677,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform EOD (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_mc_eod.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -635,6 +690,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform EOD VET (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_mc_eod.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -647,6 +703,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform MED (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_mc_med.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -659,6 +716,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform MED VET (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_mc_med.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -671,6 +729,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform JFIRE (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_mc_jfire.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -683,6 +742,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform JFIRE VET (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_mc_jfire.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -697,6 +757,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_khk.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -709,6 +770,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_khk.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -721,6 +783,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform EOD (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_khk_eod.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -733,6 +796,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform EOD VET (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_khk_eod.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -745,6 +809,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform MED (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_khk_med.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -757,6 +822,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform MED VET (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_khk_med.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -769,6 +835,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform JFIRE (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_khk_jfire.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -781,6 +848,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform JFIRE VET (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_khk_jfire.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -795,6 +863,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_m81.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -807,6 +876,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_m81.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -819,6 +889,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform EOD (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_m81_eod.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -831,6 +902,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform EOD VET (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_m81_eod.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -843,6 +915,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform MED (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_m81_med.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -855,6 +928,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform MED VET (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_m81_med.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -867,6 +941,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform JFIRE (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_m81_jfire.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -879,6 +954,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform JFIRE VET (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_m81_jfire.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -893,6 +969,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_mca.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -902,11 +979,12 @@ class CfgWeapons {
         };
     };
     class GVAR(Uni_Crye_1_ca_v_mca_U): FPGP2_Uni_Crye_mcb_1_U {
-        displayName="[Ghost] CA Crye Combat Uniform (Multicam Arid)";
+        displayName="[Ghost] CA Crye Combat Uniform Vet (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
-        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_mcav.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
+        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_mca.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
             uniformClass=QGVAR(Uni_Crye_1_ca_v_mca);
             containerClass="Supply80";
@@ -917,6 +995,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform EOD (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_mca_eod.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -929,6 +1008,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform EOD VET (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_mca_eod.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -941,6 +1021,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform MED (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_mca_med.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -953,6 +1034,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform MED VET (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_mca_med.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -965,6 +1047,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform JFIRE (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_mca_jfire.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -977,6 +1060,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform JFIRE VET (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_mca_jfire.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -991,6 +1075,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_mct.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -1000,11 +1085,12 @@ class CfgWeapons {
         };
     };
     class GVAR(Uni_Crye_1_ca_v_mct_U): FPGP2_Uni_Crye_mcb_1_U {
-        displayName="[Ghost] CA Crye Combat Uniform (Multicam Tropical)";
+        displayName="[Ghost] CA Crye Combat Uniform Vet (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
-        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_mctv.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
+        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_mct.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
             uniformClass=QGVAR(Uni_Crye_1_ca_v_mct);
             containerClass="Supply80";
@@ -1015,6 +1101,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform EOD (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_mct_eod.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -1027,6 +1114,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform EOD VET (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_mct_eod.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -1039,6 +1127,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform MED (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_mct_med.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -1051,6 +1140,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform MED VET (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_mct_med.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -1063,6 +1153,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform JFIRE (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_mct_jfire.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -1075,6 +1166,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform JFIRE VET (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_mct_jfire.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -1089,6 +1181,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_rgr.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -1098,11 +1191,12 @@ class CfgWeapons {
         };
     };
     class GVAR(Uni_Crye_1_ca_v_rgr_U): FPGP2_Uni_Crye_mcb_1_U {
-        displayName="[Ghost] CA Crye Combat Uniform (Ranger)";
+        displayName="[Ghost] CA Crye Combat Uniform Vet (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
-        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_rgrv.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
+        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_rgr.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
             uniformClass=QGVAR(Uni_Crye_1_ca_v_rgr);
             containerClass="Supply80";
@@ -1113,6 +1207,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform EOD (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_rgr_eod.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -1125,6 +1220,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform EOD VET (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_rgr_eod.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -1137,6 +1233,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform MED (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_rgr_med.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -1149,6 +1246,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform MED VET (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_rgr_med.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -1161,6 +1259,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform JFIRE (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_rgr_jfire.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -1173,6 +1272,7 @@ class CfgWeapons {
         displayName="[Ghost] CA Crye Combat Uniform JFIRE VET (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_ca_v_rgr_jfire.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -1187,6 +1287,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_mc.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -1199,6 +1300,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_mc.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -1211,6 +1313,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform EOD (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_mc_eod.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -1223,6 +1326,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform EOD VET (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_mc_eod.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -1235,6 +1339,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform MED (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_mc_med.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -1247,6 +1352,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform MED VET (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_mc_med.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -1259,6 +1365,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform JFIRE (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_mc_jfire.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -1271,6 +1378,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform JFIRE VET (Multicam)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_mc_jfire.paa), "FPGP_2_uni\data\cryepants_co.paa"};
         class ItemInfo : UniformItem {
@@ -1285,6 +1393,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_khk.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -1297,6 +1406,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_khk.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -1309,6 +1419,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform EOD (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_khk_eod.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -1321,6 +1432,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform EOD VET (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_khk_eod.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -1333,6 +1445,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform MED (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_khk_med.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -1345,6 +1458,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform MED VET (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_khk_med.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -1357,6 +1471,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform JFIRE (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_khk_jfire.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -1369,6 +1484,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform JFIRE VET (Khaki)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_khk_jfire.paa), "FPGP_2_uni\data\cryepants_khk_co.paa"};
         class ItemInfo : UniformItem {
@@ -1383,6 +1499,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_m81.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -1395,6 +1512,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_m81.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -1407,6 +1525,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform EOD (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_m81_eod.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -1419,6 +1538,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform EOD VET (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_m81_eod.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -1431,6 +1551,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform MED (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_m81_med.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -1443,6 +1564,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform MED VET (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_m81_med.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -1455,6 +1577,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform JFIRE (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_m81_jfire.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -1467,6 +1590,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform JFIRE VET (M81)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_m81_jfire.paa), "FPGP_2_uni\data\cryepants_m81_co.paa"};
         class ItemInfo : UniformItem {
@@ -1481,6 +1605,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_mca.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -1490,11 +1615,12 @@ class CfgWeapons {
         };
     };
     class GVAR(Uni_Crye_1_uk_v_mca_U): FPGP2_Uni_Crye_mcb_1_U {
-        displayName="[Ghost] UK Crye Combat Uniform (Multicam Arid)";
+        displayName="[Ghost] UK Crye Combat Uniform Vet (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
-        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_mcav.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
+        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_mca.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
             uniformClass=QGVAR(Uni_Crye_1_uk_v_mca);
             containerClass="Supply80";
@@ -1505,6 +1631,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform EOD (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_mca_eod.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -1517,6 +1644,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform EOD VET (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_mca_eod.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -1529,6 +1657,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform MED (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_mca_med.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -1541,6 +1670,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform MED VET (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_mca_med.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -1553,6 +1683,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform JFIRE (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_mca_jfire.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -1565,6 +1696,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform JFIRE VET (Multicam Arid)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_mca_jfire.paa), "FPGP_2_uni\data\cryepants_mcar_co.paa"};
         class ItemInfo : UniformItem {
@@ -1579,6 +1711,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_mct.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -1588,11 +1721,12 @@ class CfgWeapons {
         };
     };
     class GVAR(Uni_Crye_1_uk_v_mct_U): FPGP2_Uni_Crye_mcb_1_U {
-        displayName="[Ghost] UK Crye Combat Uniform (Multicam Tropical)";
+        displayName="[Ghost] UK Crye Combat Uniform Vet (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
-        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_mctv.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
+        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_mct.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
             uniformClass=QGVAR(Uni_Crye_1_uk_v_mct);
             containerClass="Supply80";
@@ -1603,6 +1737,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform EOD (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_mct_eod.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -1615,6 +1750,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform EOD VET (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_mct_eod.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -1627,6 +1763,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform MED (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_mct_med.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -1639,6 +1776,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform MED VET (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_mct_med.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -1651,6 +1789,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform JFIRE (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_mct_jfire.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -1663,6 +1802,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform JFIRE VET (Multicam Tropical)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_mct_jfire.paa), "FPGP_2_uni\data\cryepants_mct_co.paa"};
         class ItemInfo : UniformItem {
@@ -1677,6 +1817,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_rgr.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -1686,11 +1827,12 @@ class CfgWeapons {
         };
     };
     class GVAR(Uni_Crye_1_uk_v_rgr_U): FPGP2_Uni_Crye_mcb_1_U {
-        displayName="[Ghost] UK Crye Combat Uniform (Ranger)";
+        displayName="[Ghost] UK Crye Combat Uniform Vet (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
-        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_rgrv.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
+        hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_rgr.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
             uniformClass=QGVAR(Uni_Crye_1_uk_v_rgr);
             containerClass="Supply80";
@@ -1701,6 +1843,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform EOD (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_rgr_eod.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -1713,6 +1856,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform EOD VET (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_rgr_eod.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -1725,6 +1869,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform MED (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_rgr_med.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -1737,6 +1882,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform MED VET (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_rgr_med.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -1749,6 +1895,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform JFIRE (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_rgr_jfire.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {
@@ -1761,6 +1908,7 @@ class CfgWeapons {
         displayName="[Ghost] UK Crye Combat Uniform JFIRE VET (Ranger)";
         picture=QPATHTOF(data\icon_u_b_ctrg_uniform_multicam_ca.paa);
         hiddenSelections[]={"Camo1", "Camo2"};
+        MACRO_ITEM_COMMON
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelectionsTextures[]={QPATHTOF(data\cryetop_ghost_uk_v_rgr_jfire.paa), "FPGP_2_uni\data\cryepants_rgr_co.paa"};
         class ItemInfo : UniformItem {

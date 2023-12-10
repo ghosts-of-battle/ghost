@@ -6,4 +6,5 @@ PREP(makepilot);
 PREP(pick);
 PREP(role);
 PREP(fix);
+PREP(basicpick);
 // PREP(drongo);

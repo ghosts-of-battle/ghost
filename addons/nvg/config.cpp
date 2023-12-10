@@ -22,4 +22,4 @@ class CfgPatches {
 #include "CfgEffects.hpp"
 #include "CfgWeapons.hpp"
 #include "XtdGear.hpp"
-#include "BettIR.hpp"
+// #include "BettIR.hpp"

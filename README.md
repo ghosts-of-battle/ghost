@@ -34,29 +34,15 @@ Its based/inspired on/by the following projects;
 - https://github.com/Theseus-Aegis/TheseusServices - Official license: Arma Public License Share-Alike (APL-SA)
 - https://www.ghostsofbattle.com/ - GNU General Public License (GPLv2).
 - https://github.com/quies-in-proelium/qipTPL - Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
-- https://github.com/Katalam/KNB - GNU General Public License (GPLv3)
 - https://github.com/SzwedzikPL/SimpleSuppress/releases - MIT License
-- https://github.com/johnb432/Zeus-Additions - MIT License
-- https://github.com/johnb432/Zeus-Additions - GNU GENERAL PUBLIC LICENSE
 - Ample Camo Pack Lite https://steamcommunity.com/sharedfiles/filedetails/?id=2869453820  - Arma Public License Share-Alike (APL-SA)
-
-
 
 All the code in this mod is available in the Github
 you can find the Ghosts of Battle Version at https://github.com/ghosts-of-battle/ghost
 
 (I know I forgot a few, I will work on getting those mentions put in)
-
-# This mod includes : (per expressed permission on each mods steam page)
-
-Fat_Lurch's
-- Turret Enhanced https://steamcommunity.com/sharedfiles/filedetails/?id=1623498241
-- MS_IFF_Strobe https://steamcommunity.com/sharedfiles/filedetails/?id=1543390130
-- Ammocan https://steamcommunity.com/sharedfiles/filedetails/?id=2162698437
-- Vehicle Inventory System https://steamcommunity.com/sharedfiles/filedetails/?id=2161671937
-
-Simpel's 
-- MILGP Retextures https://steamcommunity.com/sharedfiles/filedetails/?id=2871002081
+# This mod includes :
+- Drongo's Dynamic Weather https://steamcommunity.com/sharedfiles/filedetails/?id=2935700533
 
 ACE MOD https://steamcommunity.com/workshop/filedetails/?id=463939057
   Compatibility and optional packages
@@ -67,7 +53,18 @@ ACE MOD https://steamcommunity.com/workshop/filedetails/?id=463939057
   - Realistic Dispersion
   - Tracers (ball)
 
+# This mod includes retextures for: (per expressed permission on each mods steam page)
+exer's
+- Foxtrot Paramilitary Gear Pack v2 https://steamcommunity.com/sharedfiles/filedetails/?id=2955586129
 
+
+# This mod also includes : (per expressed permission on each mods steam page)
+
+Fat_Lurch's
+- Turret Enhanced https://steamcommunity.com/sharedfiles/filedetails/?id=1623498241
+- MS_IFF_Strobe https://steamcommunity.com/sharedfiles/filedetails/?id=1543390130
+- Ammocan https://steamcommunity.com/sharedfiles/filedetails/?id=2162698437
+- Vehicle Inventory System https://steamcommunity.com/sharedfiles/filedetails/?id=2161671937
 
 Vestarr's
 BettIR (Legacy v0.2.1) https://steamcommunity.com/sharedfiles/filedetails/?id=2260572637

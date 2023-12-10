@@ -187,7 +187,6 @@ force ace_map_mapShake = true;
 force ace_map_mapShowCursorCoordinates = true;
 force ace_markers_moveRestriction = 0;
 
-
 // ACE Map Gestures
 ace_map_gestures_allowCurator = true;
 ace_map_gestures_allowSpectator = true;
@@ -200,7 +199,6 @@ force ace_map_gestures_onlyShowFriendlys = false;
 
 // ACE Map Tools
 force ace_maptools_drawStraightLines = true;
-
 
 // ACE Medical
 force ace_medical_ai_enabledFor = 2;
@@ -290,7 +288,6 @@ force ace_nametags_ambientBrightnessAffectViewDist = 1;
 force ace_nametags_playerNamesMaxAlpha = 0.8;
 force ace_nametags_playerNamesViewDistance = 5;
 force ace_nametags_showCursorTagForVehicles = false;
-
 
 // ACE Nightvision
 force ace_nightvision_aimDownSightsBlur = 0;
@@ -667,7 +664,7 @@ force force ghost_bft_friendlySides_CIVILIAN = [0,2];
 force force ghost_bft_friendlySides_EAST = [3];
 force force ghost_bft_friendlySides_RESISTANCE = [1,3];
 force force ghost_bft_friendlySides_WEST = [2];
-force force ghost_bft_friendlySidesDynamic = true;
+force force ghost_bft_friendlySidesDynamic = false;
 force force ghost_bft_groupIconsInteraction = "hover";
 force force ghost_bft_medicalSystem = "ACE";
 force force ghost_bft_requireItemGPS = true;
@@ -677,7 +674,7 @@ force force ghost_bft_showCivilians = false;
 force force ghost_bft_showGroupIcons = true;
 force force ghost_bft_showGroupText = true;
 force force ghost_bft_showLifeState = true;
-force force ghost_bft_showOwnFactionOnly = false;
+force force ghost_bft_showOwnFactionOnly = true;
 force force ghost_bft_showOwnGroup = true;
 force force ghost_bft_showOwnGroupUnits = true;
 force force ghost_bft_showPlayerNames = true;
@@ -685,8 +682,36 @@ force force ghost_bft_showUnitNames = true;
 force force ghost_bft_teamColors = "Default";
 force force ghost_bft_updateInterval = 0;
 
+// Ghost - Core settings
+force MRH_MilsimTools_AdminCasualtiesCap = 100;
+force MRH_MilsimTools_AllowAdminForZeus = false;
+force MRH_MilsimTools_AllowDeadReco = false;
+force MRH_MilsimTools_Core_ApplyMedicPatch = false;
+force MRH_MilsimTools_Delete_disconnected_body = false;
+force MRH_MilsimTools_hideAceMyLoadOuts = false;
+force MRH_MilsimTools_LD_loadoutDisplaySize = 100;
+force MRH_MilsimTools_LD_ShowLoadOutInBrief = false;
+MRH_MilsimTools_PlayIntro_ToPlayer = false;
+force MRH_MilsimTools_ResetHasDiedOnRespawn = false;
+force MRH_MilsimTools_Rmv_map_nolead = false;
+MRH_MilsimTools_ShowAdminDeadHint = false;
+
+// Ghost - Debug Mode
+force MRH_MilsimTools_DebugTools_DoLogDebugMode = false;
+force MRH_MilsimTools_DebugTools_isDebugMode = false;
+
 // GHOST - Defib
 force ghost_defib_Defib_Chance = 90;
+
+// Ghost - Deployable Fobs
+force MRH_MilsimTools_CAMP_composition = "MRH_SmallCamp_default";
+force MRH_MilsimTools_FOB_BIG_composition = "MRH_FieldHQSmall_default";
+force MRH_MilsimTools_MiscItems_CAMP_DeployTime = 10;
+force MRH_MilsimTools_MiscItems_CAMP_GRepackRadius = 10;
+force MRH_MilsimTools_MiscItems_CAMP_GRepackTime = 10;
+force MRH_MilsimTools_MiscItems_FOB_BIGDeployTime = 20;
+force MRH_MilsimTools_MiscItems_FOB_BIGRepackRadius = 50;
+force MRH_MilsimTools_MiscItems_FOB_BIGRepackTime = 20;
 
 // GHOST - fatigue
 force ghost_fatigue_highJogCoef = 0.9;
@@ -698,9 +723,36 @@ force ghost_friendly_fire_loggingEnabled = true;
 // GHOST - grass
 force ghost_grass_enabled = true;
 
+// Ghost - Hacking settings
+force MRH_MilsimTools_RequireHackingTool = true;
+
+// Ghost - Halo Jumps
+force MRH_MilsimTools_HaloGear_AADDefaultOpeningAltitude = "400";
+force MRH_MilsimTools_HaloGear_allowManualAADSetting = true;
+force MRH_MilsimTools_HaloGear_disableMaskHud = false;
+force MRH_MilsimTools_HaloGear_disableMaskHudAltimeter = false;
+force MRH_MilsimTools_HaloGear_disableMaskHudCompass = false;
+force MRH_MilsimTools_HaloGear_disableMaskHudVelocity = false;
+force MRH_MilsimTools_HaloGear_haloMaskBreakingChancePerc = 7;
+force MRH_MilsimTools_HaloGear_hypoxiaAltitude = 4600;
+force MRH_MilsimTools_HaloGear_hypoxiaUse = true;
+force MRH_MilsimTools_HaloGear_missionConfiguredProtectiveGear = "H_PilotHelmetFighter_B,GHOST_HaloMask,GHOST_HaloMaskNoESS,RHS_jetpilot_usaf,rhs_zsh7a,rhs_zsh7a_alt,RHS_TU95MS_vvs_old";
+
+// Ghost - Insertion Handler
+force MRH_MilsimTools_InsertionHandler_allowHALO = true;
+force MRH_MilsimTools_InsertionHandler_allowStatic = true;
+force MRH_MilsimTools_InsertionHandler_allowSub = false;
+force MRH_MilsimTools_InsertionHandler_SupplyPlanesBluFor = "B_VTOL_01_infantry_F,B_Heli_Transport_03_unarmed_F";
+force MRH_MilsimTools_InsertionHandler_SupplyPlanesInde = "I_Heli_Transport_02_F,I_Heli_light_03_unarmed_F,I_C_Plane_Civil_01_F";
+force MRH_MilsimTools_InsertionHandler_SupplyPlanesOpFor = "O_T_VTOL_02_infantry_dynamicLoadout_F,O_Heli_Light_02_unarmed_F,O_Heli_Transport_04_box_F";
+
 // GHOST - insurgents
 force ghost_insurgents_enabled_CUP = false;
 force ghost_insurgents_enabled_Vanilla = true;
+
+// Ghost - Medical Tent
+force MRH_MilsimTools_MiscItems_FieldMedicalTentDeployTime = 20;
+force MRH_MilsimTools_MiscItems_FieldMedicalTentRepackTime = 10;
 
 // Ghost - Notebook
 force GKNB_book_aceAction = true;
@@ -718,6 +770,16 @@ force ghost_remotesensors_enabled = true;
 // GHOST - respawn
 force ghost_respawn_enabled = true;
 force ghost_respawn_time = 6;
+
+// Ghost - Roster settings
+force MRH_MilsimTools_Roster_AllowAllSides = false;
+force MRH_MilsimTools_Roster_ColorBF = [0.259,0.525,0.957,1];
+force MRH_MilsimTools_Roster_ColorCiv = [0.686,0.141,0.588,1];
+force MRH_MilsimTools_Roster_ColorInd = [0.212,0.847,0.286,1];
+force MRH_MilsimTools_Roster_ColorOp = [0.929,0.063,0.063,1];
+force MRH_MilsimTools_Roster_ColorUnknown = [0.929,0.82,0.118,1];
+force MRH_MilsimTools_Roster_ShowAIgroups = false;
+force MRH_MilsimTools_Roster_ShowAiWithinGrps = false;
 
 // GHOST - safestart
 ghost_safestart_startLocked = true;
@@ -745,12 +807,22 @@ force ghost_suppress_overlayTexture = 0;
 force ghost_suppress_projectileMaxDistance = 9;
 force ghost_suppress_shooterMinDistance = 0;
 
+// Ghost - Tablet settings
+force MRH_MilsimTools_AllowMapTablet = true;
+force MRH_MilsimTools_ST_BriefingRemote_overlay = "\mrhmilsimtools\Paa\cnn_news_ca.paa";
+force MRH_MilsimTools_ST_BriefingRemote_videosToPlay = "\a3\missions_f_bootcamp\video\vr_generictransition_1.ogv,\a3\missions_f_epa\video\a_in_intro.ogv";
+
 // GHOST - tagging
 force ghost_tagging_enabled = true;
 
 // GHOST - towing
 force ghost_towing_addToCars = true;
 force ghost_towing_addToHeavyDutyVehicles = true;
+
+// Ghost - Zeus
+force MRH_MilsimTools_Zeus_hideWaterMark = false;
+force MRH_MilsimTools_Zeus_waterMark = "UseVanilla";
+force MRH_MilsimTools_Zeus_waterMarkCustomImg = "\mrhmilsimtools\Paa\zeusicon.paa";
 
 // GKNB
 force GKNB_panel_aceAction = true;

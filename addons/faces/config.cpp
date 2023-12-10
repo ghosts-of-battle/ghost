@@ -15,3 +15,5 @@ class CfgPatches {
 };
 
 #include "CfgFaces.hpp"
+#include "CfgGlasses.hpp"
+#include "XtdGear.hpp"

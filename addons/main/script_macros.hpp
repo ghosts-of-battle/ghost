@@ -1,4 +1,5 @@
 #include "\x\cba\addons\main\script_macros_common.hpp"
+#include "\a3\ui_f\hpp\defineDIKCodes.inc"
 #define DFUNC(module) TRIPLES(ADDON,fnc,module)
 #ifdef DISABLE_COMPILE_CACHE
     #undef PREP

@@ -1,5 +1,4 @@
-#include "\z\ghost\addons\adminmenu\script_component.hpp"
-
+#include "script_component.hpp"
 [ // Emit new log messages to admins
     QGVAR(serverLog),
     {

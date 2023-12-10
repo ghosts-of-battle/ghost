@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 class CfgWeapons {
     class Uniform_Base;
+    class U_B_CTRG_1
     class U_B_CTRG_Soldier_F: Uniform_Base {
         class ItemInfo;
     };

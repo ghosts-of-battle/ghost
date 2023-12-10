@@ -14,5 +14,6 @@ if (hasinterface) then {
 
     player setVariable["draWhitelisted", false, true];
     daoWhitelisted=false;
+};
 
 [ format [hint_ghost_default, "Communications"] ] call ghost_fnc_hint;
