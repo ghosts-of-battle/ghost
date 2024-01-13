@@ -26,11 +26,11 @@ Public: Yes
 ] call ace_arsenal_fnc_addRightPanelButton
 */
 
-[
-    ["sps_black_hornet_01_Static_F","ACRE_VHF30108SPIKE","ACRE_VHF30108","ACRE_VHF30108MAST","ACRE_PRC77","ACRE_PRC117F","ACRE_PRC148","ACRE_PRC152","ACRE_PRC343","ACRE_SEM52SL","ACRE_SEM70","ACRE_BF888S","ItemMicroDAGRMisc","ALIVE_Tablet","ItemcTab","Laserbatteries","LOP_LaserMag","Laserbatteries","ACE_ATragMX","ACE_DAGR","ACE_HuntIR_monitor","ACE_Kestrel4500","ACE_microDAGR","ACE_UAVBattery"],
-    "Tech",
-    "\a3\ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa"
-] call ACEFUNC(arsenal,addRightPanelButton);
+// [
+//     ["sps_black_hornet_01_Static_F","ItemMicroDAGRMisc","ALIVE_Tablet","ItemcTab","Laserbatteries","LOP_LaserMag","Laserbatteries","ACE_ATragMX","ACE_DAGR","ACE_HuntIR_monitor","ACE_Kestrel4500","ACE_microDAGR","ACE_UAVBattery"],
+//     "Tech",
+//     "\a3\ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa"
+// ] call ACEFUNC(arsenal,addRightPanelButton);
 
 // [
 //     ["GHOST_VPN","ghost_defib_AED","GHOST_fentanyl","GHOST_epinephrine","GHOST_ketamine","GHOST_morphine","GHOST_naloxone","GHOST_Apap","GHOST_tetra","ACE_adenosine","ACE_bloodIV_250","ACE_bloodIV_500","ACE_bloodIV","ACE_bodyBag","ACE_elasticBandage","ACE_epinephrine","ACE_fieldDressing","ACE_morphine","ACE_packingBandage","ACE_personalAidKit","ACE_plasmaIV_250","ACE_plasmaIV_500","ACE_plasmaIV","ACE_quikclot","ACE_salineIV_250","ACE_salineIV_500","ACE_salineIV","ACE_splint","ACE_surgicalKit","ACE_tourniquet","FirstAidKit","GHOST_Apap","ghost_defib_AED","GHOST_epinephrine","GHOST_fentanyl","GHOST_ketamine","ghost_medbags_DrugKit","ghost_medbags_FirstAid","ghost_medbags_MedicKit","ghost_medbags_Trauma","ghost_medbags_Fluid"],

@@ -2,7 +2,7 @@
 
 #include "XEH_PREP.sqf"
 
-#include "initSettings.sqf"
+#include "initSettings.inc.sqf"
 
 GVAR(logEntries) = [];
 

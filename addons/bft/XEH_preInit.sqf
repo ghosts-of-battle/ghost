@@ -2,7 +2,7 @@
 
 ADDON = false;
 
-#include "initCBASettings.sqf"
+#include "initCBASettings.inc.sqf"
 #include "XEH_PREP.hpp"
 
 if (hasInterface) then {

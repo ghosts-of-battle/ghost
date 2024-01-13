@@ -53,6 +53,6 @@ _keys sort true;
 SETUVAR(QGVAR(sortedKeys),_keys);
 
 // CBA Settings
-#include "initSettings.sqf"
+#include "initSettings.inc.sqf"
 
 ADDON = true;

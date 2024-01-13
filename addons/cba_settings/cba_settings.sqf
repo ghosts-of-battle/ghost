@@ -24,7 +24,7 @@ force ace_advanced_throwing_enablePickUpAttached = true;
 force ace_advanced_throwing_showMouseControls = true;
 force ace_advanced_throwing_showThrowArc = true;
 
-// ACE Advanced Vehicle Damage
+// ACE Advanced vehicle damage
 force ace_vehicle_damage_enableCarDamage = true;
 force ace_vehicle_damage_enabled = true;
 force ace_vehicle_damage_removeAmmoDuringCookoff = true;
@@ -68,7 +68,7 @@ force ace_cookoff_enableAmmoCookoff = true;
 force ace_cookoff_enableFire = true;
 force ace_cookoff_probabilityCoef = 3;
 
-// ACE Crew Served Weapons
+// ACE crew Served weapons
 force ace_csw_ammoHandling = 2;
 force ace_csw_defaultAssemblyMode = true;
 force ace_csw_dragAfterDeploy = true;
@@ -103,7 +103,7 @@ force acex_field_rations_timeWithoutFood = 2;
 force acex_field_rations_timeWithoutWater = 2;
 force acex_field_rations_waterSourceActions = 2;
 
-// ACE Fire
+// ACE fire
 force ace_fire_dropWeapon = 2;
 force ace_fire_enabled = true;
 force ace_fire_enableFlare = true;
@@ -126,7 +126,7 @@ force ace_frag_spallEnabled = true;
 force ace_gforces_coef = 1;
 force ace_gforces_enabledFor = 2;
 
-// ACE Goggles
+// ACE goggles
 ace_goggles_effects = 2;
 force ace_goggles_showClearGlasses = true;
 force ace_goggles_showInThirdPerson = false;
@@ -283,7 +283,7 @@ force ace_medical_gui_showBloodlossEntry = true;
 force ace_medical_gui_showDamageEntry = false;
 ace_medical_gui_tourniquetWarning = false;
 
-// ACE Name Tags
+// ACE name Tags
 force ace_nametags_ambientBrightnessAffectViewDist = 1;
 force ace_nametags_playerNamesMaxAlpha = 0.8;
 force ace_nametags_playerNamesViewDistance = 5;
@@ -349,7 +349,7 @@ force ace_repair_locationsBoostTraining = false;
 force ace_repair_miscRepairRequiredItems = ["ace_repair_anyToolKit"];
 force ace_repair_miscRepairTime = 15;
 force ace_repair_patchWheelEnabled = 0;
-force ace_repair_patchWheelLocation = ["ground","vehicle"];
+force ace_repair_patchWheelLocation = ["ground", "vehicle"];
 force ace_repair_patchWheelMaximumRepair = 0.3;
 force ace_repair_patchWheelRequiredItems = [];
 force ace_repair_patchWheelTime = 5;
@@ -385,7 +385,7 @@ force ace_spectator_maxFollowDistance = 5;
 force ace_spectator_restrictModes = 0;
 force ace_spectator_restrictVisions = 0;
 
-// ACE Switch Units
+// ACE switch units
 force ace_switchunits_enableSafeZone = true;
 force ace_switchunits_enableSwitchUnits = false;
 force ace_switchunits_safeZoneRadius = 100;
@@ -416,18 +416,18 @@ force ace_parachute_failureChance = 0.2;
 force ace_parachute_hideAltimeter = true;
 ace_tagging_quickTag = 1;
 
-// ACE Vehicle Lock
+// ACE vehicle lock
 force ace_vehiclelock_defaultLockpickStrength = 20;
 force ace_vehiclelock_lockVehicleInventory = true;
 force ace_vehiclelock_vehicleStartingLockState = -1;
 
-// ACE Vehicles
+// ACE vehicles
 force ace_novehicleclanlogo_enabled = false;
 force ace_vehicles_keepEngineRunning = false;
 force ace_vehicles_speedLimiterStep = 5;
 force ace_viewports_enabled = true;
 
-// ACE View Distance Limiter
+// ACE View distance Limiter
 force ace_viewdistance_enabled = false;
 force ace_viewdistance_limitViewDistance = 10000;
 force ace_viewdistance_objectViewDistanceCoeff = 0;
@@ -443,7 +443,7 @@ force acex_viewrestriction_modeSelectiveLand = 0;
 force acex_viewrestriction_modeSelectiveSea = 0;
 force acex_viewrestriction_preserveView = true;
 
-// ACE Weapons
+// ACE weapons
 force ace_common_persistentLaserEnabled = false;
 force ace_reload_displayText = true;
 force ace_reload_showCheckAmmoSelf = true;
@@ -455,7 +455,7 @@ force ace_weather_showCheckAirTemperature = true;
 force ace_weather_updateInterval = 60;
 force ace_weather_windSimulation = true;
 
-// ACE Wind Deflection
+// ACE wind Deflection
 force ace_winddeflection_enabled = true;
 force ace_winddeflection_simulationInterval = 0.05;
 force ace_winddeflection_vehicleEnabled = true;
@@ -487,7 +487,7 @@ acre_sys_zeus_zeusCanSpectate = true;
 acre_sys_zeus_zeusCommunicateViaCamera = true;
 acre_sys_zeus_zeusDefaultVoiceSource = false;
 
-// Backpack On Chest
+// backpack On Chest
 force bocr_main_disabled = false;
 force bocr_main_walk = true;
 
@@ -503,7 +503,7 @@ force cba_network_loadoutValidation = 1;
 force diwako_dui_indicators_crew_range_enabled = false;
 
 // DUI - Squad Radar - Nametags
-diwako_dui_nametags_customRankStyle = "[[""PRIVATE"",""CORPORAL"",""SERGEANT"",""LIEUTENANT"",""CAPTAIN"",""MAJOR"",""COLONEL""],[""Pvt."",""Cpl."",""Sgt."",""Lt."",""Capt."",""Maj."",""Col.""]]";
+diwako_dui_nametags_customRankStyle = "[[""PRIVATE"", ""CORPORAL"", ""SERGEANT"", ""LIEUTENANT"", ""CAPTAIN"", ""MAJOR"", ""COLONEL""], [""Pvt."", ""Cpl."", ""Sgt."", ""Lt."", ""Capt."", ""Maj."", ""Col.""]]";
 
 // DUI - Squad Radar - Radar
 force diwako_dui_radar_ace_medic = true;
@@ -544,7 +544,7 @@ force emr_main_whitelistStr = "";
 force emr_main_yeetCoefficient = 1.4;
 
 // GHOST - acre
-force ghost_acre_addArsenalCategory = false;
+force ghost_acre_addArsenalCategory = true;
 force ghost_acre_babel = true;
 force ghost_acre_CIVChannelNameCommand1 = "Command Channel 1 name";
 force ghost_acre_CIVChannelNameCommand2 = "Command Channel 2 name";
@@ -660,9 +660,9 @@ force ghost_back_to_game_teleportToVehicle = true;
 
 // GHOST - BluForce Tracker
 force force ghost_bft_bftEnabled = true;
-force force ghost_bft_friendlySides_CIVILIAN = [0,2];
+force force ghost_bft_friendlySides_CIVILIAN = [0, 2];
 force force ghost_bft_friendlySides_EAST = [3];
-force force ghost_bft_friendlySides_RESISTANCE = [1,3];
+force force ghost_bft_friendlySides_RESISTANCE = [1, 3];
 force force ghost_bft_friendlySides_WEST = [2];
 force force ghost_bft_friendlySidesDynamic = false;
 force force ghost_bft_groupIconsInteraction = "hover";
@@ -736,15 +736,15 @@ force MRH_MilsimTools_HaloGear_disableMaskHudVelocity = false;
 force MRH_MilsimTools_HaloGear_haloMaskBreakingChancePerc = 7;
 force MRH_MilsimTools_HaloGear_hypoxiaAltitude = 4600;
 force MRH_MilsimTools_HaloGear_hypoxiaUse = true;
-force MRH_MilsimTools_HaloGear_missionConfiguredProtectiveGear = "H_PilotHelmetFighter_B,GHOST_HaloMask,GHOST_HaloMaskNoESS,RHS_jetpilot_usaf,rhs_zsh7a,rhs_zsh7a_alt,RHS_TU95MS_vvs_old";
+force MRH_MilsimTools_HaloGear_missionConfiguredProtectiveGear = "H_PilotHelmetFighter_B, GHOST_HaloMask, GHOST_HaloMaskNoESS, RHS_jetpilot_usaf, rhs_zsh7a, rhs_zsh7a_alt, RHS_TU95MS_vvs_old";
 
 // Ghost - Insertion Handler
 force MRH_MilsimTools_InsertionHandler_allowHALO = true;
 force MRH_MilsimTools_InsertionHandler_allowStatic = true;
 force MRH_MilsimTools_InsertionHandler_allowSub = false;
-force MRH_MilsimTools_InsertionHandler_SupplyPlanesBluFor = "B_VTOL_01_infantry_F,B_Heli_Transport_03_unarmed_F";
-force MRH_MilsimTools_InsertionHandler_SupplyPlanesInde = "I_Heli_Transport_02_F,I_Heli_light_03_unarmed_F,I_C_Plane_Civil_01_F";
-force MRH_MilsimTools_InsertionHandler_SupplyPlanesOpFor = "O_T_VTOL_02_infantry_dynamicLoadout_F,O_Heli_Light_02_unarmed_F,O_Heli_Transport_04_box_F";
+force MRH_MilsimTools_InsertionHandler_SupplyPlanesBluFor = "B_VTOL_01_infantry_F, B_Heli_Transport_03_unarmed_F";
+force MRH_MilsimTools_InsertionHandler_SupplyPlanesInde = "I_Heli_Transport_02_F, I_Heli_light_03_unarmed_F, I_C_Plane_Civil_01_F";
+force MRH_MilsimTools_InsertionHandler_SupplyPlanesOpFor = "O_T_VTOL_02_infantry_dynamicLoadout_F, O_Heli_Light_02_unarmed_F, O_Heli_Transport_04_box_F";
 
 // GHOST - insurgents
 force ghost_insurgents_enabled_CUP = false;
@@ -773,11 +773,11 @@ force ghost_respawn_time = 6;
 
 // Ghost - Roster settings
 force MRH_MilsimTools_Roster_AllowAllSides = false;
-force MRH_MilsimTools_Roster_ColorBF = [0.259,0.525,0.957,1];
-force MRH_MilsimTools_Roster_ColorCiv = [0.686,0.141,0.588,1];
-force MRH_MilsimTools_Roster_ColorInd = [0.212,0.847,0.286,1];
-force MRH_MilsimTools_Roster_ColorOp = [0.929,0.063,0.063,1];
-force MRH_MilsimTools_Roster_ColorUnknown = [0.929,0.82,0.118,1];
+force MRH_MilsimTools_Roster_ColorBF = [0.259, 0.525, 0.957, 1];
+force MRH_MilsimTools_Roster_ColorCiv = [0.686, 0.141, 0.588, 1];
+force MRH_MilsimTools_Roster_ColorInd = [0.212, 0.847, 0.286, 1];
+force MRH_MilsimTools_Roster_ColorOp = [0.929, 0.063, 0.063, 1];
+force MRH_MilsimTools_Roster_ColorUnknown = [0.929, 0.82, 0.118, 1];
 force MRH_MilsimTools_Roster_ShowAIgroups = false;
 force MRH_MilsimTools_Roster_ShowAiWithinGrps = false;
 
@@ -810,7 +810,7 @@ force ghost_suppress_shooterMinDistance = 0;
 // Ghost - Tablet settings
 force MRH_MilsimTools_AllowMapTablet = true;
 force MRH_MilsimTools_ST_BriefingRemote_overlay = "\mrhmilsimtools\Paa\cnn_news_ca.paa";
-force MRH_MilsimTools_ST_BriefingRemote_videosToPlay = "\a3\missions_f_bootcamp\video\vr_generictransition_1.ogv,\a3\missions_f_epa\video\a_in_intro.ogv";
+force MRH_MilsimTools_ST_BriefingRemote_videosToPlay = "\a3\missions_f_bootcamp\video\vr_generictransition_1.ogv, \a3\missions_f_epa\video\a_in_intro.ogv";
 
 // GHOST - tagging
 force ghost_tagging_enabled = true;
@@ -849,80 +849,80 @@ force SSS_setting_slingLoadWhitelist = "";
 force tsp_cba_breach = true;
 force tsp_cba_breach_ace = true;
 force tsp_cba_breach_ace_locking = true;
-force tsp_cba_breach_ammo = "[""B_12Gauge_Slug_NoCartridge"",""6Rnd_12Gauge_Pellets"",""6Rnd_12Gauge_Slug""]";
+force tsp_cba_breach_ammo = "[""B_12Gauge_Slug_NoCartridge"", ""6Rnd_12Gauge_Pellets"", ""6Rnd_12Gauge_Slug""]";
 force tsp_cba_breach_ammoMultiplier = 1;
 force tsp_cba_breach_autoTime = 5;
 force tsp_cba_breach_lockBlacklist = "[]";
 force tsp_cba_breach_lockDoor = 0.2;
 force tsp_cba_breach_lockHouse = 0.35;
-force tsp_cba_breach_military = "[ 
- ""Land_Budova4_in"", 
- ""Land_Budova4"", 
- ""Barrack2"", 
- ""Land_Barrack2"", 
- ""Land_MilOffices_V1_F"", 
- ""Land_Mil_Barracks_L_EP1"", 
- ""Land_Barrack2_EP1"", 
- ""Land_Mil_Barracks_EP1"", 
- ""Land_Mil_Barracks_no_interior_EP1_CUP"", 
- ""Land_Mil_Barracks_i_EP1"", 
- ""Land_Mil_Barracks_L"", 
- ""Land_Mil_Barracks_no_interior_CUP"", 
- ""Land_Mil_Barracks_i"", 
- ""Land_Mil_Barracks"", 
- ""Land_GuardHouse_02_F"", 
- ""Land_Mil_Guardhouse_EP1"", 
- ""Land_Mil_Guardhouse"", 
- ""Land_Mil_Guardhouse_no_interior_CUP"", 
- ""Land_GuardHouse_02_grey_F"", 
- ""Land_Barracks_03_F"", 
- ""Land_Barracks_05_F"", 
- ""Land_Barracks_02_F"", 
- ""Land_Barracks_04_F"", 
- ""Land_ControlTower_02_F"", 
- ""Land_Mil_Guardhouse_no_interior_EP1_CUP"", 
- ""Land_Radar_01_HQ_F"", 
- ""Land_i_Barracks_V2_F"", 
- ""Land_i_Barracks_V1_F"", 
- ""Land_u_Barracks_V2_F"", 
- ""Land_Barracks_06_F"", 
- ""Land_Mil_House_dam_EP1"", 
- ""Land_Barracks_01_grey_F"", 
- ""Land_Barracks_01_dilapidated_F"", 
- ""Land_Mil_House_EP1"", 
- ""Land_Army_hut2_int"", 
- ""Land_Barracks_01_camo_F"", 
- ""Land_Army_hut_int"", 
- ""Land_Army_hut3_long"", 
- ""Land_Army_hut2"", 
- ""Land_Army_hut3_long_int"" 
+force tsp_cba_breach_military = "[
+	""Land_Budova4_in"",
+	""Land_Budova4"",
+	""Barrack2"",
+	""Land_Barrack2"",
+	""Land_MilOffices_V1_F"",
+	""Land_Mil_Barracks_L_EP1"",
+	""Land_Barrack2_EP1"",
+	""Land_Mil_Barracks_EP1"",
+	""Land_Mil_Barracks_no_interior_EP1_CUP"",
+	""Land_Mil_Barracks_i_EP1"",
+	""Land_Mil_Barracks_L"",
+	""Land_Mil_Barracks_no_interior_CUP"",
+	""Land_Mil_Barracks_i"",
+	""Land_Mil_Barracks"",
+	""Land_GuardHouse_02_F"",
+	""Land_Mil_Guardhouse_EP1"",
+	""Land_Mil_Guardhouse"",
+	""Land_Mil_Guardhouse_no_interior_CUP"",
+	""Land_GuardHouse_02_grey_F"",
+	""Land_Barracks_03_F"",
+	""Land_Barracks_05_F"",
+	""Land_Barracks_02_F"",
+	""Land_Barracks_04_F"",
+	""Land_ControlTower_02_F"",
+	""Land_Mil_Guardhouse_no_interior_EP1_CUP"",
+	""Land_Radar_01_HQ_F"",
+	""Land_i_Barracks_V2_F"",
+	""Land_i_Barracks_V1_F"",
+	""Land_u_Barracks_V2_F"",
+	""Land_Barracks_06_F"",
+	""Land_Mil_House_dam_EP1"",
+	""Land_Barracks_01_grey_F"",
+	""Land_Barracks_01_dilapidated_F"",
+	""Land_Mil_House_EP1"",
+	""Land_Army_hut2_int"",
+	""Land_Barracks_01_camo_F"",
+	""Land_Army_hut_int"",
+	""Land_Army_hut3_long"",
+	""Land_Army_hut2"",
+	""Land_Army_hut3_long_int""
 ]";
-force tsp_cba_breach_reinforced = "[ 
-""Land_Ammostore2"", 
-""Land_Garaz_s_tankem"", 
-""Land_Garaz_bez_tanku"", 
-""Land_Cargo_House_V4_F"", 
-""Land_Cargo_Tower_V1_F"", 
-""Land_Cargo_HQ_V4_F"", 
-""Land_Cargo_Tower_V1_No4_F"", 
-""Land_Cargo_Tower_V1_No5_F"", 
-""Land_Cargo_Tower_V1_No7_F"", 
-""Land_Cargo_Tower_V4_F"", 
-""Land_Cargo_Tower_V1_No2_F"", 
-""Land_Cargo_Tower_V2_F"", 
-""Land_Cargo_Tower_V3_F"", 
-""Land_Cargo_Tower_V1_No1_F"", 
-""Land_Cargo_Tower_V1_No3_F"", 
-""Land_Cargo_HQ_V2_F"", 
-""Land_Medevac_HQ_V1_F"", 
-""Land_Cargo_HQ_V1_F"", 
-""Land_Cargo_House_V2_F"", 
-""Land_Medevac_house_V1_F"", 
-""Land_Cargo_Tower_V1_No6_F"", 
-""Land_Cargo_House_V1_F"", 
-""Land_Cargo_HQ_V3_F"", 
-""Land_Cargo_House_V3_F"" 
+force tsp_cba_breach_reinforced = "[
+	""Land_Ammostore2"",
+	""Land_Garaz_s_tankem"",
+	""Land_Garaz_bez_tanku"",
+	""Land_Cargo_House_V4_F"",
+	""Land_Cargo_Tower_V1_F"",
+	""Land_Cargo_HQ_V4_F"",
+	""Land_Cargo_Tower_V1_No4_F"",
+	""Land_Cargo_Tower_V1_No5_F"",
+	""Land_Cargo_Tower_V1_No7_F"",
+	""Land_Cargo_Tower_V4_F"",
+	""Land_Cargo_Tower_V1_No2_F"",
+	""Land_Cargo_Tower_V2_F"",
+	""Land_Cargo_Tower_V3_F"",
+	""Land_Cargo_Tower_V1_No1_F"",
+	""Land_Cargo_Tower_V1_No3_F"",
+	""Land_Cargo_HQ_V2_F"",
+	""Land_Medevac_HQ_V1_F"",
+	""Land_Cargo_HQ_V1_F"",
+	""Land_Cargo_House_V2_F"",
+	""Land_Medevac_house_V1_F"",
+	""Land_Cargo_Tower_V1_No6_F"",
+	""Land_Cargo_House_V1_F"",
+	""Land_Cargo_HQ_V3_F"",
+	""Land_Cargo_House_V3_F""
 ]";
 force tsp_cba_breach_vanilla = false;
 force tsp_cba_breach_wall_physics = true;
-force tsp_cba_breach_wall_velocity = "[0,0,-0.5]";
+force tsp_cba_breach_wall_velocity = "[0, 0, -0.5]";

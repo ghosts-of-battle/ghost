@@ -14,6 +14,6 @@ addMissionEventHandler ["Loaded", {
   0 spawn FUNC(initOverlay);
 }];
 
-#include "initSettings.sqf"
+#include "initSettings.inc.sqf"
 
 ADDON = true;

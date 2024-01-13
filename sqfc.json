@@ -6,14 +6,14 @@
         "P:/"
     ],
     "excludeList": [
-        "initsettings.sqf",
-        "initkeybinds.sqf",
-        "initSettings.sqf",
+        "initSettings.inc.sqf",
+        "initKeybinds.inc.sqf",
+        "initSettings.inc.sqf",
         "xeh_prep.sqf",
         "XEH_PREP.sqf",
         "XEH_PREP.hpp",
-        "\\initSettings.sqf",
-        "\\initkeybinds.sqf",
+        "\\initSettings.inc.sqf",
+        "\\initKeybinds.inc.sqf",
         "\\xeh_prep.sqf"
     ],
     "outputDir": "P:/",

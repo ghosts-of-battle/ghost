@@ -35,4 +35,3 @@
         ] call CBA_fnc_addSetting;
     };
 } forEach [WEST, EAST, INDEPENDENT, CIVILIAN];
-

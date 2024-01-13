@@ -7,7 +7,7 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-#include "initSettings.sqf"
+#include "initSettings.inc.sqf"
 
 // Add arsenal category
 if (EGVAR(common,aceArsenal) && {GVAR(addArsenalCategory)}) then {
@@ -19,7 +19,7 @@ if (EGVAR(common,aceArsenal) && {GVAR(addArsenalCategory)}) then {
         };
 
         GVAR(arsenalButton) = [
-            [] call FUNC(getAllRadios),
+            ([] call FUNC(getAllRadios)) + ["ACRE_VHF30108MAST", "ACRE_VHF30108SPIKE", "ACRE_VHF30108"],
             LLSTRING(ArsenalCategory),
             "\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\radio_ca.paa"
         ] call ACEFUNC(arsenal,addRightPanelButton);

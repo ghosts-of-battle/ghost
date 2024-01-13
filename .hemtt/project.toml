@@ -14,34 +14,13 @@ include = [
     "gobp2_256.paa"
 ]
 
-[lint.sqf]
-enabled = true # Default: true
-exclude = [
-    "a3/3DEN/UI/macroexecs.inc",
-    "macroexecs.inc",
-    "initSettings.sqf",
-    "a3/ui_f/hpp/defineResincl.inc",
-    "a3/ui_f/hpp/defineDIKCodes.inc",
-    "a3/ui_f/hpp/defineCommonGrids.inc",
-    "a3/ui_f/hpp/defineCommonColors.inc",
-    "/x/cba/addons/main/script_macros_common.hpp",
-    "/a3/ui_f/hpp/defineResinclDesign.inc"
-]
-
-[Rapify]
-exclude = [
-    "macroexecs.inc"
-]
+exclude = ["*.psd", "*.png", "*.tga"]
 
 [version]
 path = "addons/main/script_version.hpp"
 
 [asc]
 exclude = [
-    "initSettings.sqf",
-    "initKeybinds.sqf",
-    "initSettingsChannelNames.sqf",
-    "fnc_isDebugConsoleAllowed.sqf",
+    ".inc.sqf",
     "cba_settings.sqf",
-    "initCBASettings.sqf",
 ]
