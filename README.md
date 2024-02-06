@@ -42,7 +42,9 @@ you can find the Ghosts of Battle Version at https://github.com/ghosts-of-battle
 
 (I know I forgot a few, I will work on getting those mentions put in)
 # This mod includes :
-- Drongo's Dynamic Weather https://steamcommunity.com/sharedfiles/filedetails/?id=2935700533
+- Drongo's 
+    - Dynamic Weather https://steamcommunity.com/sharedfiles/filedetails/?id=2935700533
+    - Map Population https://steamcommunity.com/sharedfiles/filedetails/?id=1990653162&searchtext=drongo
 
 ACE MOD https://steamcommunity.com/workshop/filedetails/?id=463939057
   Compatibility and optional packages
@@ -59,6 +61,8 @@ exer's
 
 
 # This mod also includes : (per expressed permission on each mods steam page)
+Kiyo's 
+- 2035 Modern Equipment Replacement - Helmet https://steamcommunity.com/sharedfiles/filedetails/?id=2935677665&searchtext=2035
 
 Fat_Lurch's
 - Turret Enhanced https://steamcommunity.com/sharedfiles/filedetails/?id=1623498241

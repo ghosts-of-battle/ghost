@@ -321,6 +321,113 @@ class XtdGearModels {
                 };
             };
         };
+
+        class Ghost_highcut {
+            options[] = { "squad","place","camo" };
+            label = "OpsCore";
+            class squad {
+                label = "Squad";
+                alwaysSelectable = 1;
+                changeingame = 1; // 1 if value can be changed in game via ACE menu
+                values[] = { "none","g1", "g2", "g3", "g4", "g91", "g92", "plt"};
+                class none {
+                    label = "blank";
+                };
+                class g1 {
+                    label = "1st";
+                };
+                class g2 {
+                    label = "2nd";
+                };
+                class g3 {
+                    label = "3rd";
+                };
+                class g4 {
+                    label = "4th";
+                };
+                class g91 {
+                    label = "Eng";
+                };
+                class g92 {
+                    label = "Scout";
+                };
+                class plt {
+                    label = "PLT";
+                };
+            };
+            class place {
+                changeingame = 1; // 1 if value can be changed in game via ACE menu
+                label = "Team/Role";
+                alwaysSelectable = 1;
+                values[] = { "none","at", "bt", "ct", "dt", "r5", "r6", "r7","r8"};
+                class none {
+                    label = "Nope";
+                };
+                class at {
+                    label = "Alpha";
+                };
+                class bt {
+                    label = "Bravo";
+                };
+                class ct {
+                    label = "Charlie";
+                };
+                class dt {
+                    label = "Delta";
+                };
+                class r5 {
+                    label = "ASL";
+                };
+                class r6 {
+                    label = "SL";
+                };
+                class r7 {
+                    label = "RTO";
+                };
+                class r8 {
+                    label = "Medic";
+                };
+            };
+            class camo {
+                values[] = { "Multicam", "Multicam_Woodland", "Multicam_Trop","Multicam_Arid", "Solid_CoyoteBrown", "Solid_Olive", "Solid_Ranger_Green", "Solid_Tan", "M81" };
+                class Multicam {
+                    label = "MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class Multicam_Woodland {
+                    label = "MCW";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+                class Multicam_Arid {
+                    label = "MCAR";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Multicam_Trop {
+                    label = "MCTP";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class Solid_CoyoteBrown {
+                    label = "BRN";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Solid_Olive {
+                    label = "Olive";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+                class Solid_Ranger_Green {
+                    label = "Ranger";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class Solid_Tan {
+                    label = "Tan";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class M81 {
+                    label = "M81";
+                    image = "z\aceax\addons\gearinfo\data\camo\m81.paa";
+                };
+            };
+        };
     };
 };
 
@@ -3108,6 +3215,2009 @@ class XtdGearInfos {
             type = "comtac";
             style = "s5";
         };
+
+        class GVAR(opscore_highcut_cover_coy_g15) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r5";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g16) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r6";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g17) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r7";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g18) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r8";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g1a) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "at";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g1b) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "bt";
+            camo = "Solid_CoyoteBrown";
+        };
+
+        class GVAR(opscore_highcut_cover_coy_g25) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r5";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g26) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r6";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g27) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r7";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g28) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r8";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g2a) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "at";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g2b) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "bt";
+            camo = "Solid_CoyoteBrown";
+        };
+
+        class GVAR(opscore_highcut_cover_coy_g35) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r5";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g36) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r6";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g37) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r7";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g38) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r8";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g3a) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "at";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g3b) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "bt";
+            camo = "Solid_CoyoteBrown";
+        };
+
+        class GVAR(opscore_highcut_cover_coy_g45) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r5";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g46) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r6";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g47) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r7";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g48) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r8";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g4a) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "at";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g4b) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "bt";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g4c) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "ct";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g4d) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "dt";
+            camo = "Solid_CoyoteBrown";
+        };
+
+        class GVAR(opscore_highcut_cover_coy_g5) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r5";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g6) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r6";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g7) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r7";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g8) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r8";
+            camo = "Solid_CoyoteBrown";
+        };
+
+        class GVAR(opscore_highcut_cover_coy_g91) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "none";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g915) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r5";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g916) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r6";
+            camo = "Solid_CoyoteBrown";
+        };
+
+        class GVAR(opscore_highcut_cover_coy_g92a) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "at";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g92b) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "bt";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_coy_g92c) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "ct";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(opscore_highcut_cover_m81_g15) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r5";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g16) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r6";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g17) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r7";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g18) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r8";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g1a) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "at";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g1b) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "bt";
+            camo = "M81";
+        };
+
+        class GVAR(opscore_highcut_cover_m81_g25) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r5";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g26) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r6";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g27) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r7";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g28) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r8";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g2a) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "at";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g2b) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "bt";
+            camo = "M81";
+        };
+
+        class GVAR(opscore_highcut_cover_m81_g35) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r5";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g36) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r6";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g37) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r7";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g38) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r8";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g3a) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "at";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g3b) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "bt";
+            camo = "M81";
+        };
+
+        class GVAR(opscore_highcut_cover_m81_g45) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r5";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g46) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r6";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g47) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r7";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g48) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r8";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g4a) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "at";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g4b) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "bt";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g4c) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "ct";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g4d) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "dt";
+            camo = "M81";
+        };
+
+        class GVAR(opscore_highcut_cover_m81_g5) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r5";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g6) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r6";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g7) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r7";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g8) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r8";
+            camo = "M81";
+        };
+
+        class GVAR(opscore_highcut_cover_m81_g91) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "none";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g915) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r5";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g916) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r6";
+            camo = "M81";
+        };
+
+        class GVAR(opscore_highcut_cover_m81_g92a) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "at";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g92b) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "bt";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_m81_g92c) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "ct";
+            camo = "M81";
+        };
+        class GVAR(opscore_highcut_cover_mc_g15) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r5";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g16) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r6";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g17) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r7";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g18) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r8";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g1a) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "at";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g1b) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "bt";
+            camo = "Multicam";
+        };
+
+        class GVAR(opscore_highcut_cover_mc_g25) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r5";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g26) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r6";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g27) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r7";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g28) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r8";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g2a) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "at";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g2b) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "bt";
+            camo = "Multicam";
+        };
+
+        class GVAR(opscore_highcut_cover_mc_g35) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r5";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g36) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r6";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g37) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r7";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g38) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r8";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g3a) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "at";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g3b) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "bt";
+            camo = "Multicam";
+        };
+
+        class GVAR(opscore_highcut_cover_mc_g45) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r5";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g46) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r6";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g47) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r7";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g48) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r8";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g4a) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "at";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g4b) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "bt";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g4c) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "ct";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g4d) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "dt";
+            camo = "Multicam";
+        };
+
+        class GVAR(opscore_highcut_cover_mc_g5) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r5";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g6) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r6";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g7) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r7";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g8) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r8";
+            camo = "Multicam";
+        };
+
+        class GVAR(opscore_highcut_cover_mc_g91) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "none";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g915) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r5";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g916) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r6";
+            camo = "Multicam";
+        };
+
+        class GVAR(opscore_highcut_cover_mc_g92a) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "at";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g92b) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "bt";
+            camo = "Multicam";
+        };
+        class GVAR(opscore_highcut_cover_mc_g92c) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "ct";
+            camo = "Multicam";
+        };
+
+        class GVAR(opscore_highcut_cover_mcarid_g15) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r5";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g16) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r6";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g17) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r7";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g18) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r8";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g1a) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "at";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g1b) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "bt";
+            camo = "Multicam_Arid";
+        };
+
+        class GVAR(opscore_highcut_cover_mcarid_g25) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r5";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g26) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r6";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g27) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r7";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g28) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r8";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g2a) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "at";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g2b) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "bt";
+            camo = "Multicam_Arid";
+        };
+
+        class GVAR(opscore_highcut_cover_mcarid_g35) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r5";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g36) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r6";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g37) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r7";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g38) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r8";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g3a) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "at";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g3b) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "bt";
+            camo = "Multicam_Arid";
+        };
+
+        class GVAR(opscore_highcut_cover_mcarid_g45) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r5";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g46) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r6";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g47) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r7";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g48) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r8";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g4a) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "at";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g4b) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "bt";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g4c) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "ct";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g4d) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "dt";
+            camo = "Multicam_Arid";
+        };
+
+        class GVAR(opscore_highcut_cover_mcarid_g5) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r5";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g6) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r6";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g7) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r7";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g8) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r8";
+            camo = "Multicam_Arid";
+        };
+
+        class GVAR(opscore_highcut_cover_mcarid_g91) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "none";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g915) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r5";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g916) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r6";
+            camo = "Multicam_Arid";
+        };
+
+        class GVAR(opscore_highcut_cover_mcarid_g92a) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "at";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g92b) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "bt";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mcarid_g92c) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "ct";
+            camo = "Multicam_Arid";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g15) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r5";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g16) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r6";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g17) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r7";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g18) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r8";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g1a) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "at";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g1b) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "bt";
+            camo = "Multicam_Trop";
+        };
+
+        class GVAR(opscore_highcut_cover_mctp_g25) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r5";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g26) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r6";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g27) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r7";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g28) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r8";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g2a) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "at";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g2b) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "bt";
+            camo = "Multicam_Trop";
+        };
+
+        class GVAR(opscore_highcut_cover_mctp_g35) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r5";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g36) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r6";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g37) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r7";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g38) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r8";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g3a) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "at";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g3b) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "bt";
+            camo = "Multicam_Trop";
+        };
+
+        class GVAR(opscore_highcut_cover_mctp_g45) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r5";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g46) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r6";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g47) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r7";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g48) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r8";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g4a) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "at";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g4b) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "bt";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g4c) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "ct";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g4d) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "dt";
+            camo = "Multicam_Trop";
+        };
+
+        class GVAR(opscore_highcut_cover_mctp_g5) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r5";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g6) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r6";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g7) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r7";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g8) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r8";
+            camo = "Multicam_Trop";
+        };
+
+        class GVAR(opscore_highcut_cover_mctp_g91) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "none";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g915) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r5";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g916) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r6";
+            camo = "Multicam_Trop";
+        };
+
+        class GVAR(opscore_highcut_cover_mctp_g92a) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "at";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g92b) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "bt";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mctp_g92c) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "ct";
+            camo = "Multicam_Trop";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g15) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r5";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g16) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r6";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g17) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r7";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g18) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r8";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g1a) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "at";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g1b) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "bt";
+            camo = "Multicam_Woodland";
+        };
+
+        class GVAR(opscore_highcut_cover_mcwdl_g25) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r5";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g26) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r6";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g27) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r7";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g28) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r8";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g2a) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "at";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g2b) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "bt";
+            camo = "Multicam_Woodland";
+        };
+
+        class GVAR(opscore_highcut_cover_mcwdl_g35) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r5";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g36) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r6";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g37) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r7";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g38) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r8";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g3a) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "at";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g3b) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "bt";
+            camo = "Multicam_Woodland";
+        };
+
+        class GVAR(opscore_highcut_cover_mcwdl_g45) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r5";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g46) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r6";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g47) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r7";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g48) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r8";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g4a) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "at";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g4b) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "bt";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g4c) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "ct";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g4d) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "dt";
+            camo = "Multicam_Woodland";
+        };
+
+        class GVAR(opscore_highcut_cover_mcwdl_g5) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r5";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g6) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r6";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g7) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r7";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g8) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r8";
+            camo = "Multicam_Woodland";
+        };
+
+        class GVAR(opscore_highcut_cover_mcwdl_g91) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "none";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g915) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r5";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g916) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r6";
+            camo = "Multicam_Woodland";
+        };
+
+        class GVAR(opscore_highcut_cover_mcwdl_g92a) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "at";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g92b) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "bt";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_mcwdl_g92c) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "ct";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(opscore_highcut_cover_od_g15) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r5";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g16) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r6";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g17) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r7";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g18) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r8";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g1a) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "at";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g1b) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "bt";
+            camo = "Solid_Olive";
+        };
+
+        class GVAR(opscore_highcut_cover_od_g25) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r5";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g26) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r6";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g27) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r7";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g28) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r8";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g2a) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "at";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g2b) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "bt";
+            camo = "Solid_Olive";
+        };
+
+        class GVAR(opscore_highcut_cover_od_g35) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r5";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g36) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r6";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g37) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r7";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g38) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r8";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g3a) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "at";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g3b) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "bt";
+            camo = "Solid_Olive";
+        };
+
+        class GVAR(opscore_highcut_cover_od_g45) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r5";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g46) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r6";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g47) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r7";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g48) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r8";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g4a) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "at";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g4b) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "bt";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g4c) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "ct";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g4d) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "dt";
+            camo = "Solid_Olive";
+        };
+
+        class GVAR(opscore_highcut_cover_od_g5) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r5";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g6) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r6";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g7) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r7";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g8) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r8";
+            camo = "Solid_Olive";
+        };
+
+        class GVAR(opscore_highcut_cover_od_g91) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "none";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g915) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r5";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g916) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r6";
+            camo = "Solid_Olive";
+        };
+
+        class GVAR(opscore_highcut_cover_od_g92a) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "at";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g92b) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "bt";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_od_g92c) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "ct";
+            camo = "Solid_Olive";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g15) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r5";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g16) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r6";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g17) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r7";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g18) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r8";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g1a) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "at";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g1b) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "bt";
+            camo = "Solid_Ranger_Green";
+        };
+
+        class GVAR(opscore_highcut_cover_rgr_g25) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r5";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g26) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r6";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g27) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r7";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g28) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r8";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g2a) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "at";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g2b) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "bt";
+            camo = "Solid_Ranger_Green";
+        };
+
+        class GVAR(opscore_highcut_cover_rgr_g35) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r5";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g36) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r6";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g37) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r7";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g38) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r8";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g3a) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "at";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g3b) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "bt";
+            camo = "Solid_Ranger_Green";
+        };
+
+        class GVAR(opscore_highcut_cover_rgr_g45) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r5";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g46) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r6";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g47) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r7";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g48) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r8";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g4a) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "at";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g4b) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "bt";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g4c) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "ct";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g4d) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "dt";
+            camo = "Solid_Ranger_Green";
+        };
+
+        class GVAR(opscore_highcut_cover_rgr_g5) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r5";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g6) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r6";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g7) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r7";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g8) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r8";
+            camo = "Solid_Ranger_Green";
+        };
+
+        class GVAR(opscore_highcut_cover_rgr_g91) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "none";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g915) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r5";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g916) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r6";
+            camo = "Solid_Ranger_Green";
+        };
+
+        class GVAR(opscore_highcut_cover_rgr_g92a) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "at";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g92b) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "bt";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_rgr_g92c) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "ct";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(opscore_highcut_cover_tan_g15) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r5";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g16) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r6";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g17) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r7";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g18) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "r8";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g1a) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "at";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g1b) {
+            model = "Ghost_highcut";
+            squad = "g1";
+            place = "bt";
+            camo = "Solid_Tan";
+        };
+
+        class GVAR(opscore_highcut_cover_tan_g25) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r5";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g26) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r6";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g27) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r7";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g28) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "r8";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g2a) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "at";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g2b) {
+            model = "Ghost_highcut";
+            squad = "g2";
+            place = "bt";
+            camo = "Solid_Tan";
+        };
+
+        class GVAR(opscore_highcut_cover_tan_g35) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r5";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g36) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r6";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g37) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r7";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g38) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "r8";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g3a) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "at";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g3b) {
+            model = "Ghost_highcut";
+            squad = "g3";
+            place = "bt";
+            camo = "Solid_Tan";
+        };
+
+        class GVAR(opscore_highcut_cover_tan_g45) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r5";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g46) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r6";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g47) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r7";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g48) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "r8";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g4a) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "at";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g4b) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "bt";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g4c) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "ct";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g4d) {
+            model = "Ghost_highcut";
+            squad = "g4";
+            place = "dt";
+            camo = "Solid_Tan";
+        };
+
+        class GVAR(opscore_highcut_cover_tan_g5) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r5";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g6) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r6";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g7) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r7";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g8) {
+            model = "Ghost_highcut";
+            squad = "plt";
+            place = "r8";
+            camo = "Solid_Tan";
+        };
+
+        class GVAR(opscore_highcut_cover_tan_g91) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "none";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g915) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r5";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g916) {
+            model = "Ghost_highcut";
+            squad = "g91";
+            place = "r6";
+            camo = "Solid_Tan";
+        };
+
+        class GVAR(opscore_highcut_cover_tan_g92a) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "at";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g92b) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "bt";
+            camo = "Solid_Tan";
+        };
+        class GVAR(opscore_highcut_cover_tan_g92c) {
+            model = "Ghost_highcut";
+            squad = "g92";
+            place = "ct";
+            camo = "Solid_Tan";
+        };
+
+
+
     };
 
 

@@ -1,6 +1,6 @@
 /*
 
- * \oeta_common\functions\common\fn_addItem.sqf
+ * \ghost_common\functions\common\fn_addItem.sqf
  * by Ojemineh
  *
  * add item to unit/vehicle

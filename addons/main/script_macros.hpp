@@ -36,7 +36,7 @@
 // GHOST Debug macros
 #include "\z\ghost\addons\main\script_debug.hpp"
 
-        // Items
+// Items
 #define ITEMS_2(var) QUOTE(var), QUOTE(var)
 #define ITEMS_3(var) QUOTE(var), QUOTE(var), QUOTE(var)
 #define ITEMS_4(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
@@ -108,7 +108,7 @@
     class TransportWeapons {};
 
 
-        // LOADOUT DEFINES
+// LOADOUT DEFINES
 
 #define TRANSPORT_MAGAZINE(id,qty) class _xx_##id { magazine = #id; count = qty; };
 #define TRANSPORT_ITEM(id,qty) class _xx_##id { name = #id; count = qty; };

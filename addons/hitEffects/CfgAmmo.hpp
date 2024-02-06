@@ -3,7 +3,7 @@ class CfgAmmo {
     class B_127x99_Ball: BulletBase {
         CraterEffects = QGVAR(noFX);
         explosionEffects = QGVAR(noFX);
-        class HitEffects {
+        class hiteffects {
             vehicle = QGVAR(impactMetal_API);
             object = QGVAR(impactConcrete_API);
             hitGlass = QGVAR(impactGlass_API);
@@ -28,7 +28,7 @@ class CfgAmmo {
     class B_127x99_SLAP: B_127x99_Ball {
         CraterEffects = QGVAR(noFX);
         explosionEffects = QGVAR(noFX);
-        class HitEffects {
+        class hiteffects {
             vehicle = QGVAR(impactMetal_API);
             object = QGVAR(impactConcrete_API);
             hitGlass = QGVAR(impactGlass_API);
@@ -53,7 +53,7 @@ class CfgAmmo {
     class B_127x108_Ball: BulletBase {
         CraterEffects = QGVAR(noFX);
         explosionEffects = QGVAR(noFX);
-        class HitEffects {
+        class hiteffects {
             vehicle = QGVAR(impactMetal_API);
             object = QGVAR(impactConcrete_API);
             hitGlass = QGVAR(impactGlass_API);
@@ -78,7 +78,7 @@ class CfgAmmo {
     class B_127x108_APDS: B_127x108_Ball {
         CraterEffects = QGVAR(noFX);
         explosionEffects = QGVAR(noFX);
-        class HitEffects {
+        class hiteffects {
             vehicle = QGVAR(impactMetal_API);
             object = QGVAR(impactConcrete_API);
             hitGlass = QGVAR(impactGlass_API);
@@ -103,7 +103,7 @@ class CfgAmmo {
     class B_127x54_Ball: BulletBase {
         CraterEffects = QGVAR(noFX);
         explosionEffects = QGVAR(noFX);
-        class HitEffects {
+        class hiteffects {
             vehicle = QGVAR(impactMetal_API);
             object = QGVAR(impactConcrete_API);
             hitGlass = QGVAR(impactGlass_API);
