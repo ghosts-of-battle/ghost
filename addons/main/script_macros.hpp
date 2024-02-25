@@ -71,7 +71,8 @@
         dlc = QUOTE(PREFIX); \
         scope = 2; \
         scopeCurator = 2; \
-        scopeArsenal=2;
+        scopeArsenal=2; \
+        ACE_GForceCoef = 1;     
 
 #define MACRO_ADDBACKPACK(BACKPACK,COUNT) \
     class _xx_##BACKPACK { \

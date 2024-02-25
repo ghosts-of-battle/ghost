@@ -633,8 +633,8 @@ force ghost_acre_WESTChannelNamePersonal10 = "SQ-3-TM-B";
 force ghost_acre_WESTChannelNamePersonal11 = "SQ-4-NET";
 force ghost_acre_WESTChannelNamePersonal12 = "SQ-4-TM-A";
 force ghost_acre_WESTChannelNamePersonal13 = "SQ-4-TM-B";
-force ghost_acre_WESTChannelNamePersonal14 = "AT-2-Net";
-force ghost_acre_WESTChannelNamePersonal15 = "Personal Channel 15 name";
+force ghost_acre_WESTChannelNamePersonal14 = "AT-1-Net";
+force ghost_acre_WESTChannelNamePersonal15 = "AT-2-Net";
 force ghost_acre_WESTChannelNamePersonal2 = "SQ-1-NET";
 force ghost_acre_WESTChannelNamePersonal3 = "SQ-1-TM-A";
 force ghost_acre_WESTChannelNamePersonal4 = "SQ-1-TM-B";
@@ -828,22 +828,58 @@ force MRH_MilsimTools_Zeus_waterMarkCustomImg = "\mrhmilsimtools\Paa\zeusicon.pa
 force GKNB_panel_aceAction = true;
 force GKNB_panel_consume = false;
 
+// KJW's Two Primary Weapons
+KJW_TwoPrimaryWeapons_blacklistedClasses = "[]";
+KJW_TwoPrimaryWeapons_Enabled = true;
+KJW_TwoPrimaryWeapons_whitelistedClasses = "[]";
+
 // Simplex Support Services
-force SSS_setting_adminFullAccess = false;
-SSS_setting_adminLimitSide = true;
-force SSS_setting_cleanupCrew = true;
-force SSS_setting_deleteVehicleOnEntityRemoval = false;
-force SSS_setting_directActionRequirement = false;
-force SSS_setting_GiveUAVTerminal = true;
-force SSS_setting_milsimModeArtillery = true;
-force SSS_setting_milsimModeCAS = true;
-force SSS_setting_milsimModeLogistics = true;
-force SSS_setting_milsimModeTransport = true;
-force SSS_setting_removeSupportOnVehicleDeletion = true;
-force SSS_setting_resetVehicleOnRTB = true;
-force SSS_setting_restoreCrewOnRTB = true;
-force SSS_setting_slingLoadSearchRadius = 100;
-force SSS_setting_slingLoadWhitelist = "";
+sss_artillery_autoTerminals = true;
+sss_artillery_manualInput = false;
+sss_artillery_rangeIndicators = true;
+sss_artillery_relocateCooldown = false;
+sss_artillery_taskMarkers = true;
+sss_artillery_visualAids = true;
+sss_cas_manualInput = false;
+sss_cas_taskMarkers = true;
+sss_cas_visualAids = true;
+sss_cas_visualAidsLive = true;
+sss_logistics_clearAreaRestriction = true;
+sss_logistics_cooldownTrigger = "END";
+sss_logistics_manualInput = false;
+sss_logistics_taskMarkers = true;
+sss_logistics_visualAids = true;
+sss_logistics_visualAidsLive = true;
+sss_optionadminAccess = false;
+sss_optionadminSide = false;
+sss_optionautoParachute = true;
+sss_optioncleanupCrew = true;
+sss_optioncloseOnConfirm = true;
+force sss_optiondebug = false;
+sss_optiondebugPerf = false;
+sss_optiondeleteVehicleOnEntityRemoval = true;
+sss_optionejectInterval = 0.5;
+sss_optionmarkerScope = "ACCESS";
+sss_optionnotificationStyle = 0;
+sss_optionnotifyScope = "ACCESS";
+sss_optionremoveEntityOnVehicleDeletion = true;
+force sss_optionterminalActions = "ACE";
+sss_optionterminalRequireAuth = true;
+sss_optionterminalRequireItems = false;
+sss_transport_autoTerminals = true;
+sss_transport_holdTimeoutStr = "-1";
+sss_transport_manualInput = false;
+sss_transport_maxSearchRadiusStr = "1000";
+sss_transport_RTBReset = true;
+sss_transport_RTBRestoreCrew = true;
+sss_transport_slingloadMassOverride = true;
+sss_transport_taskMarkers = true;
+sss_transport_visualAids = true;
+sss_transport_visualAidsLive = true;
+
+// SPS Black Hornet Settings
+SPS_BlackHornet_EnableACEInteraction = true;
+force SPS_BlackHornet_EnableVanillaScrollWheel = false;
 
 // TSP Breach
 force tsp_cba_breach = true;

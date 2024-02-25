@@ -66,4 +66,5 @@ class CfgFunctions {
 #include "RscInGameUI.hpp"
 #include "XtdFace.hpp"
 #include "XtdVest.hpp"
-// #include "tfar.sqf"
+#include "XtdAegis.hpp"
+#include "CfgMagazines.hpp"

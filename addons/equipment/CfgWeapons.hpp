@@ -105,7 +105,7 @@ class CfgWeapons {
         class ItemInfo: UniformItem {
             uniformModel = "-";
             uniformClass = "B_diver_F";
-            containerClass = "Supply120";
+            containerClass = "Supply80";
             uniformType = "Neopren";
             mass = 40;
         };
