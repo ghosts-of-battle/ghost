@@ -49,7 +49,7 @@ private _playerUID = getplayerUID player;
                 5
             ] call CBA_fnc_waitAndExecute;
 
-            Hint "Communications";
+            Hint "RTO";
         };
         default {
             player setVariable ["canUseSSScas", false, true];
@@ -74,7 +74,7 @@ private _playerUID = getplayerUID player;
                 [daoReady],
                 5
             ] call CBA_fnc_waitAndExecute;
-            Hint "Sr Communications";
+            Hint "JTAC";
         };
     };
 };

@@ -47,7 +47,8 @@ class CfgPatches {
             "A3_Weapons_F",
             "cba_jr",
             "ace_xm157",
-            "tsp_breach"
+            "tsp_breach",
+            // "cTab"
         };
         VERSION_CONFIG;
         authors[] = {"YonV"};

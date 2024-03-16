@@ -12,10 +12,6 @@ successful: number of the slot; error: -1 <NUMBER>
 Example:
 
 call GHOST_fnc_arsenal;
-"ItemcTab",
-"ItemAndroid",
-"ItemcTabHCam",
-"ItemMicroDAGR",
 Public: Yes
 
 [
@@ -27,8 +23,8 @@ Public: Yes
 */
 
 // [
-//     ["sps_black_hornet_01_Static_F","ItemMicroDAGRMisc","ALIVE_Tablet","ItemcTab","Laserbatteries","LOP_LaserMag","Laserbatteries","ACE_ATragMX","ACE_DAGR","ACE_HuntIR_monitor","ACE_Kestrel4500","ACE_microDAGR","ACE_UAVBattery"],
-//     "Tech",
+//     ["ALIVE_Tablet","ItemcTabMisc","MRH_SoldierTab"],
+//     "Tablets",
 //     "\a3\ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa"
 // ] call ACEFUNC(arsenal,addRightPanelButton);
 

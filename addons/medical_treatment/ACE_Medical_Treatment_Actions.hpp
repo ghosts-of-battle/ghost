@@ -1,17 +1,21 @@
 class ACEGVAR(medical_treatment,actions) {
     class BasicBandage {
         treatmentTime = QUOTE(call ACEFUNC(medical_treatment,getBandageTime));
+        medicRequired = 0;
     };
 
     class ApplyTourniquet: BasicBandage {
         treatmentTime = 2.5;
+        medicRequired = 0;
     };
     class RemoveTourniquet: ApplyTourniquet {
         treatmentTime = 1.5;
+        medicRequired = 0;
     };
 
     class Splint: BasicBandage {
         treatmentTime = 5;
+        medicRequired = 0;
     };
 
     class Morphine {
@@ -23,12 +27,14 @@ class ACEGVAR(medical_treatment,actions) {
         displayName = CSTRING(Eat_Apap);
         displayNameProgress = CSTRING(Eating_Apap);
         icon = QPATHTOF(ui\icons\apap.paa);
+        medicRequired = 0;
         items[] = {"GHOST_apap"};
         condition = "(_this select 1) isEqualTo player";
         litter[] = { {"All", "", {"GHOST_MedicalLitter_apap"}} };
     };
     class AdministerApap: EatApap {
         allowSelfTreatment = 0;
+        medicRequired = 0;
         displayName = CSTRING(Administer_Apap);
         displayNameProgress = CSTRING(Administering_Apap);
         condition = "!((_this select 1) getVariable ['ACE_isUnconscious', false])";
@@ -47,9 +53,6 @@ class ACEGVAR(medical_treatment,actions) {
         medicRequired = 1;
     };
     class CheckBloodPressure {
-        medicRequired = 1;
-    };
-    class Splint {
         medicRequired = 1;
     };
 };
