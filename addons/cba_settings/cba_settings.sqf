@@ -487,6 +487,19 @@ force cba_disposable_dropUsedLauncher = 2;
 force cba_disposable_replaceDisposableLauncher = false;
 force cba_network_loadoutValidation = 1;
 
+
+// cTab
+force force ctab_compass_enable = true;
+force force ctab_core_bft_mode = 1;
+force force ctab_core_gridPrecision = 2;
+force force ctab_core_helmetcam_mode = 1;
+force force ctab_core_sync_time = 30;
+force force ctab_core_uav_mode = 1;
+force force ctab_core_useAceMicroDagr = true;
+force force ctab_core_useArmaMarker = true;
+force force ctab_irl_connect_enabled = true;
+force force ctab_irl_connect_syncMap = true;
+
 // GHOST - acre
 force force ghost_acre_addArsenalCategory = true;
 force force ghost_acre_babel = true;
@@ -600,30 +613,6 @@ force force ghost_back_to_game_removeBody = false;
 force force ghost_back_to_game_teleportToLeader = true;
 force force ghost_back_to_game_teleportToVehicle = true;
 
-// GHOST - BluForce Tracker
-force force ghost_bft_bftEnabled = true;
-force force ghost_bft_friendlySides_CIVILIAN = [0,2];
-force force ghost_bft_friendlySides_EAST = [3];
-force force ghost_bft_friendlySides_RESISTANCE = [1,3];
-force force ghost_bft_friendlySides_WEST = [2];
-force force ghost_bft_friendlySidesDynamic = true;
-force force ghost_bft_groupIconsInteraction = "hover";
-force force ghost_bft_medicalSystem = "ACE";
-force force ghost_bft_requireItemGPS = true;
-force force ghost_bft_showAIGroups = true;
-force force ghost_bft_showAINames = true;
-force force ghost_bft_showCivilians = false;
-force force ghost_bft_showGroupIcons = true;
-force force ghost_bft_showGroupText = true;
-force force ghost_bft_showLifeState = true;
-force force ghost_bft_showOwnFactionOnly = true;
-force force ghost_bft_showOwnGroup = true;
-force force ghost_bft_showOwnGroupUnits = true;
-force force ghost_bft_showPlayerNames = true;
-force force ghost_bft_showUnitNames = true;
-force force ghost_bft_teamColors = "ACE";
-force force ghost_bft_updateInterval = 1.5;
-
 // GHOST - Civilians
 force force GHOST_Civilians_enableFollowGestures = true;
 force force GHOST_Civilians_enableGestures = true;
@@ -633,6 +622,26 @@ force force GHOST_Civilians_enableGreetingGestures = true;
 force force GHOST_Civilians_enableStopGestures = true;
 force force GHOST_Civilians_successChance_armed = 0.7;
 force force GHOST_Civilians_successChance_unarmed = 0.5;
+
+// GHOST - Channels
+force ghost_Channels_CommandDuration = 900;
+force ghost_Channels_CommandText = true;
+force ghost_Channels_CommandVoice = false;
+force ghost_Channels_DirectDuration = 0;
+force ghost_Channels_DirectText = true;
+force ghost_Channels_DirectVoice = false;
+force ghost_Channels_GlobalDuration = 300;
+force ghost_Channels_GlobalText = true;
+force ghost_Channels_GlobalVoice = false;
+force ghost_Channels_GroupDuration = 300;
+force ghost_Channels_GroupText = true;
+force ghost_Channels_GroupVoice = false;
+force ghost_Channels_SideDuration = 300;
+force ghost_Channels_SideText = true;
+force ghost_Channels_SideVoice = false;
+force ghost_Channels_VehicleDuration = 300;
+force ghost_Channels_VehicleText = true;
+force ghost_Channels_VehicleVoice = false;
 
 // GHOST - Core settings
 force force MRH_MilsimTools_AdminCasualtiesCap = 100;
@@ -792,6 +801,51 @@ force force HBQSS_spotDistance = 0.4;
 force force HBQSS_spotTime = 0.4;
 force force HBQSS_UseHBQSkills = false;
 
+// LAMBS Danger
+force force lambs_danger_cqbRange = 100;
+force force lambs_danger_disableAIAutonomousManoeuvres = false;
+force force lambs_danger_disableAIDeployStaticWeapons = false;
+force force lambs_danger_disableAIFindStaticWeapons = false;
+force force lambs_danger_disableAIHideFromTanksAndAircraft = false;
+force force lambs_danger_disableAIPlayerGroup = true;
+force force lambs_danger_disableAIPlayerGroupReaction = false;
+force force lambs_danger_disableAutonomousFlares = false;
+force force lambs_danger_disableAutonomousSmokeGrenades = false;
+force force lambs_danger_panicChance = 0.1;
+
+// LAMBS Danger Eventhandlers
+force force lambs_eventhandlers_ExplosionEventHandlerEnabled = true;
+force force lambs_eventhandlers_ExplosionReactionTime = 9;
+
+// LAMBS Danger WP
+force force lambs_wp_autoAddArtillery = true;
+
+// LAMBS Main
+force force lambs_main_combatShareRange = 200;
+force force lambs_main_debug_drawAllUnitsInVehicles = false;
+force force lambs_main_debug_Drawing = false;
+force force lambs_main_debug_FSM = false;
+force force lambs_main_debug_FSM_civ = false;
+force force lambs_main_debug_functions = false;
+force force lambs_main_debug_RenderExpectedDestination = false;
+force force lambs_main_disableAICallouts = false;
+force force lambs_main_disableAIDodge = false;
+force force lambs_main_disableAIFleeing = false;
+force force lambs_main_disableAIGestures = false;
+force force lambs_main_disableAutonomousMunitionSwitching = false;
+force force lambs_main_disablePlayerGroupSuppression = false;
+force force lambs_main_indoorMove = 0.25;
+force force lambs_main_maxRevealValue = 1;
+force force lambs_main_minFriendlySuppressionDistance = 5;
+force force lambs_main_minObstacleProximity = 5;
+force force lambs_main_minSuppressionRange = 50;
+force force lambs_main_radioBackpack = 2000;
+force force lambs_main_radioDisabled = false;
+force force lambs_main_radioEast = 500;
+force force lambs_main_radioGuer = 500;
+force force lambs_main_radioShout = 100;
+force force lambs_main_radioWest = 500;
+ 
 // Simplex Support Services
 force force sss_artillery_autoTerminals = true;
 force force sss_artillery_manualInput = false;

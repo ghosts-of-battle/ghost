@@ -9,7 +9,7 @@ class CfgWeapons {
 		displayName = "[GHOST] Assault Carrier 1 (Tan)";
 		picture=QPATHTOF(data\ui\icon_carrier_spec_rig_Solid_Tan.paa);
 		class ItemInfo: VestItem {
-			containerClass = "Supply220";
+			containerClass = "Supply240";
 			class HitpointsProtectionInfo {
 				class Chest {
 					HitpointName = "HitChest";
@@ -38,7 +38,7 @@ class CfgWeapons {
 		displayName = "[GHOST] Assault Carrier 2 (Tan)";
 		picture=QPATHTOF(data\ui\icon_carrier_spec_rig_Solid_Tan.paa);
 		class ItemInfo: VestItem {
-			containerClass = "Supply220";
+			containerClass = "Supply240";
 			class HitpointsProtectionInfo {
 				class Chest {
 					HitpointName = "HitChest";
@@ -67,7 +67,7 @@ class CfgWeapons {
 		displayName = "[GHOST] Assault Carrier 3 (Tan)";
 		picture=QPATHTOF(data\ui\icon_carrier_spec_rig_Solid_Tan.paa);
 		class ItemInfo: VestItem {
-			containerClass = "Supply220";
+			containerClass = "Supply240";
 			class HitpointsProtectionInfo {
 				class Chest {
 					HitpointName = "HitChest";
@@ -96,7 +96,7 @@ class CfgWeapons {
 		displayName = "[GHOST] Assault Carrier 4 (Tan)";
 		picture=QPATHTOF(data\ui\icon_carrier_spec_rig_Solid_Tan.paa);
 		class ItemInfo: VestItem {
-			containerClass = "Supply220";
+			containerClass = "Supply240";
 			class HitpointsProtectionInfo {
 				class Chest {
 					HitpointName = "HitChest";
@@ -125,7 +125,7 @@ class CfgWeapons {
 		displayName = "[GHOST] Assault Carrier 5 (Tan)";
 		picture=QPATHTOF(data\ui\icon_carrier_spec_rig_Solid_Tan.paa);
 		class ItemInfo: VestItem {
-			containerClass = "Supply220";
+			containerClass = "Supply240";
 			class HitpointsProtectionInfo {
 				class Chest {
 					HitpointName = "HitChest";
@@ -154,7 +154,7 @@ class CfgWeapons {
 		displayName = "[GHOST] Assault Carrier 6 (Tan)";
 		picture=QPATHTOF(data\ui\icon_carrier_spec_rig_Solid_Tan.paa);
 		class ItemInfo: VestItem {
-			containerClass = "Supply220";
+			containerClass = "Supply240";
 			class HitpointsProtectionInfo {
 				class Chest {
 					HitpointName = "HitChest";
@@ -183,7 +183,7 @@ class CfgWeapons {
 		displayName = "[GHOST] Assault Carrier 7 (Tan)";
 		picture=QPATHTOF(data\ui\icon_carrier_spec_rig_Solid_Tan.paa);
 		class ItemInfo: VestItem {
-			containerClass = "Supply220";
+			containerClass = "Supply240";
 			class HitpointsProtectionInfo {
 				class Chest {
 					HitpointName = "HitChest";

@@ -4197,7 +4197,6 @@ _ArsenalType = call {
 };
 
 _AvailableItems = [
-    "ItemGPS",
     "ACE_LAMG_SpareBarrel",
     "ACE_LWAMG_SpareBarrel",
     "ACE_PlottingBoard",
@@ -4220,7 +4219,6 @@ _AvailableItems = [
     "ACRE_PRC152",
     "ACE_RangeTable_82mm",
     "ACE_adenosine",
-    "ACE_artilleryTable",
     "ACE_ATragMX",
     "ACE_fieldDressing",
     "ACE_elasticBandage",
@@ -4256,7 +4254,6 @@ _AvailableItems = [
     "ACE_M26_Clacker",
     "ACE_Clacker",
     "ACE_Flashlight_XL50",
-    "ACE_MapTools",
     "ace_marker_flags_black",
     "ace_marker_flags_blue",
     "ace_marker_flags_green",
@@ -4298,7 +4295,6 @@ _AvailableItems = [
     "ACE_Altimeter",
     "ItemWatch",
     "ItemCompass",
-    "ItemMap",
     "ghost_equipment_Vector_Designator_NVG",
     "ghost_equipment_Vector_Designator",
     "Binocular",
