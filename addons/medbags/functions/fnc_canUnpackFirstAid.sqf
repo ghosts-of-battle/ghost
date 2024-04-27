@@ -2,7 +2,7 @@
 /*
 
  * \ghost_medical\supplies\functions\fn_canUnpackFirstAid.sqf
- * by Ojemineh
+ * by YonV
  *
  * check if medical supplies can be unpacked
  *

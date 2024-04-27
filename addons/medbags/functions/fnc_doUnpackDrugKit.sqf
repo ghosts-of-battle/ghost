@@ -2,7 +2,7 @@
 /*
 
  * \ghost_medical\supplies\functions\fn_doUnpackDrugKit.sqf
- * by Ojemineh
+ * by YonV
  *
  * unpack medical supplies
  *

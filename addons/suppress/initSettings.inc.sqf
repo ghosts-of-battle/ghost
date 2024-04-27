@@ -6,11 +6,11 @@
     [0,1,0.96,2],
     true,
     {
-      private _display = uiNamespace getVariable [QGVAR(overlay), displayNull];
-      if (isNull _display) exitWith {};
-      private _overlayCtrl = _display displayCtrl IDC_OVERLAY;
-      _overlayCtrl ctrlSetTextColor [0, 0, 0, _this];
-      _overlayCtrl ctrlCommit 0;
+        private _display = uiNamespace getVariable [QGVAR(overlay), displayNull];
+        if (isNull _display) exitWith {};
+        private _overlayCtrl = _display displayCtrl IDC_OVERLAY;
+        _overlayCtrl ctrlSetTextColor [0, 0, 0, _this];
+        _overlayCtrl ctrlCommit 0;
     },
     false
 ] call CBA_fnc_addSetting;
@@ -22,11 +22,11 @@
     [[0, 1, 2], [LSTRING(overlayTexture_light), LSTRING(overlayTexture_medium), LSTRING(overlayTexture_dark)], 1],
     true,
     {
-      private _display = uiNamespace getVariable [QGVAR(overlay), displayNull];
-      if (isNull _display) exitWith {};
-      private _overlayCtrl = _display displayCtrl IDC_OVERLAY;
-      _overlayCtrl ctrlSetText (OVERLAYS_LIST select _this);
-      _overlayCtrl ctrlCommit 0;
+        private _display = uiNamespace getVariable [QGVAR(overlay), displayNull];
+        if (isNull _display) exitWith {};
+        private _overlayCtrl = _display displayCtrl IDC_OVERLAY;
+        _overlayCtrl ctrlSetText (OVERLAYS_LIST select _this);
+        _overlayCtrl ctrlCommit 0;
     },
     false
 ] call CBA_fnc_addSetting;

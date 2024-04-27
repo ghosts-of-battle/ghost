@@ -1,7 +1,7 @@
 /*
  *	ARMA EXTENDED ENVIRONMENT
  *	\ghost_common\functions\diagnostics\fn_isDebug.sqf
- *	by Ojemineh
+ *	by YonV
  *
  *	check if debug is enabled
  *

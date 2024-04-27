@@ -2,7 +2,7 @@
 /*
 
  * \ghost_medical\supplies\functions\fn_doUnpackFirstAid.sqf
- * by Ojemineh
+ * by YonV
  *
  * unpack medical supplies
  *
