@@ -2473,187 +2473,187 @@ class CfgWeapons {
         hiddenSelectionsTextures[]={QPATHTOF(data\helmetpatch_co.paa)};
     };
     // Highcut
-	class GVAR(opscore_highcut_cover_base): H_HelmetB {
-		author = "Kiyo";
-		scope = 1;
-		displayName = "[GHOST] Covered HighCut Helmet Base";
-		picture = "\2035mrp\UI\Helmet\ui_opscore_sample.paa";
-		model = "\2035mrp\Model\Helmet\opscore_HighCut_2.p3d";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_blk_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_blk_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_blk_co.paa",
-			QPATHTOF(data\g6.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_blk_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_blk_co.paa"
-		};
-		descriptionShort="Armor Level III";
+    class GVAR(opscore_highcut_cover_base): H_HelmetB {
+        author = "Kiyo";
+        scope = 1;
+        displayName = "[GHOST] Covered HighCut Helmet Base";
+        picture = "\2035mrp\UI\Helmet\ui_opscore_sample.paa";
+        model = "\2035mrp\Model\Helmet\opscore_HighCut_2.p3d";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_blk_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_blk_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_blk_co.paa",
+            QPATHTOF(data\g6.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_blk_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_blk_co.paa"
+        };
+        descriptionShort="Armor Level III";
         ace_hearing_protection = 0.75; 
         ace_hearing_lowerVolume = 0;
-		class ItemInfo: HeadgearItem {
-			uniformModel = "\2035mrp\Model\Helmet\opscore_HighCut_2.p3d";
-			mass = 50;
-			hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-			class HitpointsProtectionInfo {
-				class Head {
-					hitpointName = "HitHead";
-					armor = 8;
-					passThrough = 0.5;
-				};
-			};
-		};
-	};
+        class ItemInfo: HeadgearItem {
+            uniformModel = "\2035mrp\Model\Helmet\opscore_HighCut_2.p3d";
+            mass = 50;
+            hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+            class HitpointsProtectionInfo {
+                class Head {
+                    hitpointName = "HitHead";
+                    armor = 8;
+                    passThrough = 0.5;
+                };
+            };
+        };
+    };
     //not base
-	class GVAR(opscore_highcut_cover_mcarid_g6): GVAR(opscore_highcut_cover_base) {
+    class GVAR(opscore_highcut_cover_mcarid_g6): GVAR(opscore_highcut_cover_base) {
         author = QAUTHOR;
-		scope = 2;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Arid)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_mcarid_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_mcarid_co.paa",
-			QPATHTOF(data\g6.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_mcwdl_g6): GVAR(opscore_highcut_cover_base) {
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Arid)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_mcarid_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_mcarid_co.paa",
+            QPATHTOF(data\g6.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_mcwdl_g6): GVAR(opscore_highcut_cover_base) {
         author = QAUTHOR;
-		scope = 2;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Woodland)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_rgr_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_mcwdl_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_mcwdl_co.paa",
-			QPATHTOF(data\g6.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_rgr_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_mctp_g6): GVAR(opscore_highcut_cover_base) {
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Woodland)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_rgr_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_mcwdl_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_mcwdl_co.paa",
+            QPATHTOF(data\g6.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_rgr_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_mctp_g6): GVAR(opscore_highcut_cover_base) {
         author = QAUTHOR;
-		scope = 2;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Tropic)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_od_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_mctp_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_mctp_co.paa",
-			QPATHTOF(data\g6.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_od_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_mc_g6): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Tropic)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_od_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_mctp_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_mctp_co.paa",
+            QPATHTOF(data\g6.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_od_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_mc_g6): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_mc_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_mc_co.paa",
-			QPATHTOF(data\g6.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_m81_g6): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_mc_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_mc_co.paa",
+            QPATHTOF(data\g6.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_m81_g6): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (M81 Woodland)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_m81_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_m81_co.paa",
-			QPATHTOF(data\g6.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
-		};
-	};
+        displayName = "[GHOST] Covered HighCut Helmet G6 (M81 Woodland)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_m81_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_m81_co.paa",
+            QPATHTOF(data\g6.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
+        };
+    };
     class GVAR(opscore_highcut_cover_coy_g6): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Coyote)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_coy_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_coy_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_coy_co.paa",
-			QPATHTOF(data\g6.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_coy_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_tan_g6): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Coyote)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_coy_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_coy_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_coy_co.paa",
+            QPATHTOF(data\g6.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_coy_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_tan_g6): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Tan)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_tan_co.paa",
-			QPATHTOF(data\g6.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_rgr_g6): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Tan)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_tan_co.paa",
+            QPATHTOF(data\g6.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_rgr_g6): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Ranger Green)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_rgr_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_rgr_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_rgr_co.paa",
-			QPATHTOF(data\g6.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_rgr_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_od_g6): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Ranger Green)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_rgr_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_rgr_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_rgr_co.paa",
+            QPATHTOF(data\g6.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_rgr_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_od_g6): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Olive Drab)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_od_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_od_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_od_co.paa",
-			QPATHTOF(data\g6.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_od_co.paa"
-		};
-	};
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Olive Drab)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_od_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_od_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_od_co.paa",
+            QPATHTOF(data\g6.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_od_co.paa"
+        };
+    };
     class GVAR(opscore_highcut_cover_mcarid_g5): GVAR(opscore_highcut_cover_base) {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G5 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G5 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2669,7 +2669,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G5 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G5 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2685,7 +2685,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G5 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G5 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2701,7 +2701,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G5 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G5 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2717,7 +2717,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G5 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G5 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2733,7 +2733,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G5 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G5 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2749,7 +2749,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G5 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G5 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2765,7 +2765,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G5 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G5 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2781,7 +2781,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G5 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G5 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2797,7 +2797,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G7 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G7 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2813,7 +2813,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G7 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G7 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2829,7 +2829,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G7 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G7 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2845,7 +2845,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G7 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G7 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2861,7 +2861,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G7 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G7 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2877,7 +2877,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G7 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G7 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2893,7 +2893,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G7 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G7 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2909,7 +2909,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G7 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G7 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2925,7 +2925,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G7 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G7 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2941,7 +2941,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G8 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G8 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag8_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2957,7 +2957,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G8 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G8 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag8_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2973,7 +2973,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G8 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G8 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag8_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -2989,7 +2989,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G8 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G8 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag8_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3005,7 +3005,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G8 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G8 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag8_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3021,7 +3021,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G8 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G8 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag8_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3037,7 +3037,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G8 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G8 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag8_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3053,7 +3053,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G8 (Rang8er G8reen)";
+        displayName = "[GHOST] Covered HighCut Helmet G8 (Rang8er G8reen)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag8_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3069,7 +3069,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G8 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G8 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag8_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3085,7 +3085,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1A (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G1A (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3101,7 +3101,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1A (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G1A (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3117,7 +3117,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1A (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G1A (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3133,7 +3133,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1A (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G1A (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3149,7 +3149,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1A (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G1A (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3165,7 +3165,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1A (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G1A (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3181,7 +3181,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1A (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G1A (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3197,7 +3197,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1A (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G1A (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3213,7 +3213,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1A (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G1A (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3229,7 +3229,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1B (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G1B (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3245,7 +3245,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1B (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G1B (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3261,7 +3261,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1B (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G1B (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3277,7 +3277,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1B (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G1B (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3293,7 +3293,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1B (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G1B (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3309,7 +3309,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1B (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G1B (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3325,7 +3325,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1B (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G1B (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3341,7 +3341,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1B (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G1B (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3357,7 +3357,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G1B (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G1B (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3373,7 +3373,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G16 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G16 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3389,7 +3389,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G16 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G16 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3405,7 +3405,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G16 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G16 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3421,7 +3421,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G16 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G16 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3437,7 +3437,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G16 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G16 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3453,7 +3453,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G16 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G16 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3469,7 +3469,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G16 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G16 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3485,7 +3485,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G16 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G16 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3501,7 +3501,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G16 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G16 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3517,7 +3517,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G15 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G15 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3533,7 +3533,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G15 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G15 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3549,7 +3549,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G15 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G15 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3565,7 +3565,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G15 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G15 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3581,7 +3581,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G15 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G15 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3597,7 +3597,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G15 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G15 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3613,7 +3613,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G15 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G15 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3629,7 +3629,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G15 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G15 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3645,7 +3645,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G15 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G15 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3661,7 +3661,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G17 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G17 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3677,7 +3677,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G17 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G17 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3693,7 +3693,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G17 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G17 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3709,7 +3709,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G17 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G17 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3725,7 +3725,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G17 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G17 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3741,7 +3741,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G17 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G17 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3757,7 +3757,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G17 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G17 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3773,7 +3773,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G17 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G17 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3789,7 +3789,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G17 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G17 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3805,7 +3805,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G18 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G18 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3821,7 +3821,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G18 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G18 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3837,7 +3837,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G18 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G18 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3853,7 +3853,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G18 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G18 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3869,7 +3869,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G18 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G18 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3885,7 +3885,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G18 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G18 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3901,7 +3901,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G18 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G18 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3917,7 +3917,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G18 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G18 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3933,7 +3933,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G18 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G18 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3949,7 +3949,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2A (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G2A (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3965,7 +3965,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2A (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G2A (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3981,7 +3981,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2A (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G2A (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -3997,7 +3997,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2A (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G2A (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4013,7 +4013,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2A (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G2A (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4029,7 +4029,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2A (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G2A (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4045,7 +4045,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2A (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G2A (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4061,7 +4061,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2A (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G2A (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4077,7 +4077,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2A (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G2A (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4093,7 +4093,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2B (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G2B (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4109,7 +4109,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2B (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G2B (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4125,7 +4125,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2B (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G2B (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4141,7 +4141,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2B (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G2B (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4157,7 +4157,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2B (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G2B (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4173,7 +4173,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2B (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G2B (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4189,7 +4189,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2B (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G2B (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4205,7 +4205,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2B (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G2B (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4221,7 +4221,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G2B (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G2B (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4237,7 +4237,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G26 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G26 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4253,7 +4253,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G26 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G26 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4269,7 +4269,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G26 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G26 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4285,7 +4285,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G26 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G26 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4301,7 +4301,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G26 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G26 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4317,7 +4317,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G26 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G26 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4333,7 +4333,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G26 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G26 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4349,7 +4349,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G26 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G26 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4365,7 +4365,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G26 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G26 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4381,7 +4381,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G25 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G25 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4397,7 +4397,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G25 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G25 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4413,7 +4413,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G25 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G25 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4429,7 +4429,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G25 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G25 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4445,7 +4445,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G25 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G25 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4461,7 +4461,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G25 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G25 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4477,7 +4477,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G25 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G25 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4493,7 +4493,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G25 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G25 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4509,7 +4509,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G25 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G25 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4525,7 +4525,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G27 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G27 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4541,7 +4541,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G27 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G27 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4557,7 +4557,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G27 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G27 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4573,7 +4573,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G27 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G27 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4589,7 +4589,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G27 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G27 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4605,7 +4605,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G27 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G27 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4621,7 +4621,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G27 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G27 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4637,7 +4637,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G27 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G27 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4653,7 +4653,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G27 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G27 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4669,7 +4669,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G28 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G28 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4685,7 +4685,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G28 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G28 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4701,7 +4701,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G28 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G28 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4717,7 +4717,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G28 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G28 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4733,7 +4733,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G28 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G28 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4749,7 +4749,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G28 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G28 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4765,7 +4765,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G28 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G28 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4781,7 +4781,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G28 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G28 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4797,7 +4797,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G28 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G28 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4813,7 +4813,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3A (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G3A (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4829,7 +4829,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3A (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G3A (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4845,7 +4845,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3A (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G3A (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4861,7 +4861,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3A (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G3A (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4877,7 +4877,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3A (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G3A (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4893,7 +4893,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3A (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G3A (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4909,7 +4909,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3A (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G3A (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4925,7 +4925,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3A (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G3A (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4941,7 +4941,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3A (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G3A (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4957,7 +4957,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3B (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G3B (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4973,7 +4973,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3B (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G3B (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -4989,7 +4989,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3B (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G3B (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5005,7 +5005,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3B (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G3B (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5021,7 +5021,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3B (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G3B (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5037,7 +5037,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3B (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G3B (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5053,7 +5053,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3B (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G3B (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5069,7 +5069,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3B (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G3B (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5085,7 +5085,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G3B (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G3B (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5101,7 +5101,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G36 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G36 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5117,7 +5117,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G36 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G36 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5133,7 +5133,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G36 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G36 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5149,7 +5149,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G36 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G36 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5165,7 +5165,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G36 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G36 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5181,7 +5181,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G36 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G36 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5197,7 +5197,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G36 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G36 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5213,7 +5213,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G36 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G36 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5229,7 +5229,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G36 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G36 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5245,7 +5245,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G35 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G35 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5261,7 +5261,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G35 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G35 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5277,7 +5277,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G35 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G35 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5293,7 +5293,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G35 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G35 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5309,7 +5309,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G35 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G35 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5325,7 +5325,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G35 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G35 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5341,7 +5341,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G35 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G35 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5357,7 +5357,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G35 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G35 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5373,7 +5373,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G35 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G35 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5389,7 +5389,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G37 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G37 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5405,7 +5405,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G37 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G37 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5421,7 +5421,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G37 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G37 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5437,7 +5437,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G37 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G37 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5453,7 +5453,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G37 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G37 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5469,7 +5469,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G37 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G37 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5485,7 +5485,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G37 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G37 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5501,7 +5501,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G37 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G37 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5517,7 +5517,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G37 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G37 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5533,7 +5533,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G38 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G38 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5549,7 +5549,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G38 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G38 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5565,7 +5565,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G38 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G38 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5581,7 +5581,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G38 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G38 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5597,7 +5597,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G38 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G38 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5613,7 +5613,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G38 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G38 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5629,7 +5629,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G38 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G38 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5645,7 +5645,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G38 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G38 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5661,7 +5661,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G38 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G38 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5677,7 +5677,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4A (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G4A (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5693,7 +5693,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4A (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G4A (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5709,7 +5709,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4A (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G4A (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5725,7 +5725,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4A (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G4A (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5741,7 +5741,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4A (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G4A (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5757,7 +5757,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4A (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G4A (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5773,7 +5773,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4A (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G4A (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5789,7 +5789,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4A (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G4A (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5805,7 +5805,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4A (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G4A (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5821,7 +5821,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4B (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G4B (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5837,7 +5837,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4B (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G4B (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5853,7 +5853,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4B (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G4B (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5869,7 +5869,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4B (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G4B (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5885,7 +5885,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4B (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G4B (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5901,7 +5901,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4B (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G4B (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5917,7 +5917,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4B (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G4B (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5933,7 +5933,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4B (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G4B (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5949,7 +5949,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4B (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G4B (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5965,7 +5965,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G46 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G46 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5981,7 +5981,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G46 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G46 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -5997,7 +5997,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G46 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G46 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6013,7 +6013,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G46 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G46 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6029,7 +6029,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G46 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G46 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6045,7 +6045,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G46 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G46 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6061,7 +6061,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G46 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G46 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6077,7 +6077,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G46 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G46 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6093,7 +6093,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G46 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G46 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6109,7 +6109,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G45 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G45 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6125,7 +6125,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G45 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G45 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6141,7 +6141,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G45 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G45 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6157,7 +6157,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G45 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G45 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6173,7 +6173,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G45 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G45 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6189,7 +6189,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G45 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G45 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6205,7 +6205,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G45 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G45 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6221,7 +6221,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G45 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G45 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6237,7 +6237,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G45 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G45 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6253,7 +6253,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G47 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G47 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6269,7 +6269,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G47 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G47 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6285,7 +6285,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G47 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G47 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6301,7 +6301,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G47 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G47 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6317,7 +6317,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G47 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G47 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6333,7 +6333,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G47 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G47 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6349,7 +6349,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G47 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G47 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6365,7 +6365,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G47 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G47 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6381,7 +6381,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G47 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G47 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6397,7 +6397,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G48 (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G48 (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6413,7 +6413,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G48 (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G48 (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6429,7 +6429,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G48 (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G48 (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6445,7 +6445,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G48 (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G48 (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6461,7 +6461,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G48 (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G48 (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6477,7 +6477,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G48 (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G48 (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6493,7 +6493,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G48 (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G48 (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6509,7 +6509,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G48 (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G48 (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6525,7 +6525,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G48 (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G48 (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6541,7 +6541,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4C (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G4C (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6557,7 +6557,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4C (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G4C (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6573,7 +6573,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4C (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G4C (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6589,7 +6589,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4C (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G4C (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6605,7 +6605,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4C (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G4C (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6621,7 +6621,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4C (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G4C (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6637,7 +6637,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4C (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G4C (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6653,7 +6653,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4C (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G4C (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6669,7 +6669,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4C (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G4C (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6685,7 +6685,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4D (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G4D (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6701,7 +6701,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4D (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G4D (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6717,7 +6717,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4D (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G4D (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6733,7 +6733,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4D (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G4D (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6749,7 +6749,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4D (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G4D (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6765,7 +6765,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4D (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G4D (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6781,7 +6781,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4D (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G4D (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6797,7 +6797,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4D (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G4D (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6813,7 +6813,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G4D (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G4D (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6829,7 +6829,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92B (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G92B (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6845,7 +6845,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92B (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G92B (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6861,7 +6861,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92B (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G92B (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6877,7 +6877,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92B (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G92B (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6893,7 +6893,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92B (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G92B (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6909,7 +6909,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92B (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G92B (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6925,7 +6925,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92B (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G92B (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6941,7 +6941,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92B (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G92B (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6957,7 +6957,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92B (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G92B (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6973,7 +6973,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92A (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G92A (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -6989,7 +6989,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92A (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G92A (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -7005,7 +7005,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92A (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G92A (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -7021,7 +7021,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92A (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G92A (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -7037,7 +7037,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92A (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G92A (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -7053,7 +7053,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92A (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G92A (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -7069,7 +7069,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92A (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G92A (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -7085,7 +7085,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92A (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G92A (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -7101,7 +7101,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92A (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G92A (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -7117,7 +7117,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92C (Multicam Arid)";
+        displayName = "[GHOST] Covered HighCut Helmet G92C (Multicam Arid)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -7133,7 +7133,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92C (Multicam Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G92C (Multicam Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -7149,7 +7149,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92C (Multicam Tropic)";
+        displayName = "[GHOST] Covered HighCut Helmet G92C (Multicam Tropic)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -7165,7 +7165,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92C (Multicam)";
+        displayName = "[GHOST] Covered HighCut Helmet G92C (Multicam)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -7181,7 +7181,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92C (M81 Woodland)";
+        displayName = "[GHOST] Covered HighCut Helmet G92C (M81 Woodland)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -7197,7 +7197,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92C (Coyote)";
+        displayName = "[GHOST] Covered HighCut Helmet G92C (Coyote)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -7213,7 +7213,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92C (Tan)";
+        displayName = "[GHOST] Covered HighCut Helmet G92C (Tan)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -7229,7 +7229,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92C (Ranger Green)";
+        displayName = "[GHOST] Covered HighCut Helmet G92C (Ranger Green)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -7245,7 +7245,7 @@ class CfgWeapons {
         author = QAUTHOR;
         scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G92C (Olive Drab)";
+        displayName = "[GHOST] Covered HighCut Helmet G92C (Olive Drab)";
         picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
         hiddenSelectionsTextures[] = {
@@ -7260,435 +7260,435 @@ class CfgWeapons {
 
 class GVAR(opscore_highcut_cover_mcarid_g915): GVAR(opscore_highcut_cover_base) {
         author = QAUTHOR;
-		scope = 2;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Arid)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_mcarid_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_mcarid_co.paa",
-			QPATHTOF(data\g915.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_mcwdl_g915): GVAR(opscore_highcut_cover_base) {
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Arid)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_mcarid_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_mcarid_co.paa",
+            QPATHTOF(data\g915.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_mcwdl_g915): GVAR(opscore_highcut_cover_base) {
         author = QAUTHOR;
-		scope = 2;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Woodland)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_rgr_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_mcwdl_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_mcwdl_co.paa",
-			QPATHTOF(data\g915.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_rgr_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_mctp_g915): GVAR(opscore_highcut_cover_base) {
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Woodland)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_rgr_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_mcwdl_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_mcwdl_co.paa",
+            QPATHTOF(data\g915.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_rgr_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_mctp_g915): GVAR(opscore_highcut_cover_base) {
         author = QAUTHOR;
-		scope = 2;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Tropic)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_od_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_mctp_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_mctp_co.paa",
-			QPATHTOF(data\g915.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_od_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_mc_g915): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Tropic)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_od_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_mctp_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_mctp_co.paa",
+            QPATHTOF(data\g915.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_od_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_mc_g915): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_mc_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_mc_co.paa",
-			QPATHTOF(data\g915.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_m81_g915): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_mc_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_mc_co.paa",
+            QPATHTOF(data\g915.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_m81_g915): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (M81 Woodland)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_m81_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_m81_co.paa",
-			QPATHTOF(data\g915.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
-		};
-	};
+        displayName = "[GHOST] Covered HighCut Helmet G6 (M81 Woodland)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_m81_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_m81_co.paa",
+            QPATHTOF(data\g915.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
+        };
+    };
     class GVAR(opscore_highcut_cover_coy_g915): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Coyote)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_coy_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_coy_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_coy_co.paa",
-			QPATHTOF(data\g915.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_coy_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_tan_g915): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Coyote)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_coy_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_coy_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_coy_co.paa",
+            QPATHTOF(data\g915.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_coy_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_tan_g915): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Tan)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_tan_co.paa",
-			QPATHTOF(data\g915.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_rgr_g915): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Tan)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_tan_co.paa",
+            QPATHTOF(data\g915.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_rgr_g915): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Ranger Green)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_rgr_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_rgr_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_rgr_co.paa",
-			QPATHTOF(data\g915.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_rgr_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_od_g915): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Ranger Green)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_rgr_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_rgr_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_rgr_co.paa",
+            QPATHTOF(data\g915.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_rgr_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_od_g915): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Olive Drab)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_od_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_od_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_od_co.paa",
-			QPATHTOF(data\g915.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_od_co.paa"
-		};
-	};
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Olive Drab)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_od_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_od_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_od_co.paa",
+            QPATHTOF(data\g915.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_od_co.paa"
+        };
+    };
     class GVAR(opscore_highcut_cover_mcarid_g916): GVAR(opscore_highcut_cover_base) {
         author = QAUTHOR;
-		scope = 2;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Arid)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_mcarid_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_mcarid_co.paa",
-			QPATHTOF(data\g916.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_mcwdl_g916): GVAR(opscore_highcut_cover_base) {
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Arid)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_mcarid_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_mcarid_co.paa",
+            QPATHTOF(data\g916.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_mcwdl_g916): GVAR(opscore_highcut_cover_base) {
         author = QAUTHOR;
-		scope = 2;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Woodland)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_rgr_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_mcwdl_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_mcwdl_co.paa",
-			QPATHTOF(data\g916.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_rgr_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_mctp_g916): GVAR(opscore_highcut_cover_base) {
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Woodland)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_rgr_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_mcwdl_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_mcwdl_co.paa",
+            QPATHTOF(data\g916.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_rgr_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_mctp_g916): GVAR(opscore_highcut_cover_base) {
         author = QAUTHOR;
-		scope = 2;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Tropic)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_od_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_mctp_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_mctp_co.paa",
-			QPATHTOF(data\g916.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_od_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_mc_g916): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Tropic)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_od_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_mctp_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_mctp_co.paa",
+            QPATHTOF(data\g916.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_od_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_mc_g916): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_mc_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_mc_co.paa",
-			QPATHTOF(data\g916.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_m81_g916): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_mc_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_mc_co.paa",
+            QPATHTOF(data\g916.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_m81_g916): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (M81 Woodland)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_m81_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_m81_co.paa",
-			QPATHTOF(data\g916.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
-		};
-	};
+        displayName = "[GHOST] Covered HighCut Helmet G6 (M81 Woodland)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_m81_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_m81_co.paa",
+            QPATHTOF(data\g916.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
+        };
+    };
     class GVAR(opscore_highcut_cover_coy_g916): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Coyote)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_coy_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_coy_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_coy_co.paa",
-			QPATHTOF(data\g916.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_coy_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_tan_g916): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Coyote)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_coy_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_coy_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_coy_co.paa",
+            QPATHTOF(data\g916.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_coy_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_tan_g916): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Tan)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_tan_co.paa",
-			QPATHTOF(data\g916.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_rgr_g916): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Tan)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_tan_co.paa",
+            QPATHTOF(data\g916.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_rgr_g916): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Ranger Green)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_rgr_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_rgr_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_rgr_co.paa",
-			QPATHTOF(data\g916.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_rgr_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_od_g916): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Ranger Green)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_rgr_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_rgr_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_rgr_co.paa",
+            QPATHTOF(data\g916.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_rgr_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_od_g916): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Olive Drab)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_od_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_od_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_od_co.paa",
-			QPATHTOF(data\g916.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_od_co.paa"
-		};
-	};
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Olive Drab)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_od_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_od_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_od_co.paa",
+            QPATHTOF(data\g916.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_od_co.paa"
+        };
+    };
 
 class GVAR(opscore_highcut_cover_mcarid_g91): GVAR(opscore_highcut_cover_base) {
         author = QAUTHOR;
-		scope = 2;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Arid)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_mcarid_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_mcarid_co.paa",
-			QPATHTOF(data\g91.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_mcwdl_g91): GVAR(opscore_highcut_cover_base) {
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Arid)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcarid_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_mcarid_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_mcarid_co.paa",
+            QPATHTOF(data\g91.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_mcwdl_g91): GVAR(opscore_highcut_cover_base) {
         author = QAUTHOR;
-		scope = 2;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Woodland)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_rgr_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_mcwdl_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_mcwdl_co.paa",
-			QPATHTOF(data\g91.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_rgr_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_mctp_g91): GVAR(opscore_highcut_cover_base) {
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Woodland)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mcwdl_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_rgr_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_mcwdl_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_mcwdl_co.paa",
+            QPATHTOF(data\g91.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_rgr_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_mctp_g91): GVAR(opscore_highcut_cover_base) {
         author = QAUTHOR;
-		scope = 2;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Tropic)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_od_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_mctp_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_mctp_co.paa",
-			QPATHTOF(data\g91.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_od_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_mc_g91): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam Tropic)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mctp_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_od_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_mctp_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_mctp_co.paa",
+            QPATHTOF(data\g91.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_od_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_mc_g91): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_mc_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_mc_co.paa",
-			QPATHTOF(data\g91.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_m81_g91): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Multicam)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_mc_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_mc_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_mc_co.paa",
+            QPATHTOF(data\g91.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_m81_g91): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (M81 Woodland)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_m81_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_m81_co.paa",
-			QPATHTOF(data\g91.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
-		};
-	};
+        displayName = "[GHOST] Covered HighCut Helmet G6 (M81 Woodland)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_m81_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_m81_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_m81_co.paa",
+            QPATHTOF(data\g91.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
+        };
+    };
     class GVAR(opscore_highcut_cover_coy_g91): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Coyote)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_coy_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_coy_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_coy_co.paa",
-			QPATHTOF(data\g91.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_coy_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_tan_g91): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Coyote)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_coy_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_coy_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_coy_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_coy_co.paa",
+            QPATHTOF(data\g91.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_coy_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_tan_g91): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Tan)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_tan_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_tan_co.paa",
-			QPATHTOF(data\g91.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_rgr_g91): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Tan)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_tan_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_tan_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_tan_co.paa",
+            QPATHTOF(data\g91.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_coy_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_tan_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_rgr_g91): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Ranger Green)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_rgr_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_rgr_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_rgr_co.paa",
-			QPATHTOF(data\g91.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_rgr_co.paa"
-		};
-	};
-	class GVAR(opscore_highcut_cover_od_g91): GVAR(opscore_highcut_cover_base) {
-		author = QAUTHOR;
-		scope = 2;
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Ranger Green)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_rgr_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_rgr_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_rgr_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_rgr_co.paa",
+            QPATHTOF(data\g91.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_rgr_co.paa"
+        };
+    };
+    class GVAR(opscore_highcut_cover_od_g91): GVAR(opscore_highcut_cover_base) {
+        author = QAUTHOR;
+        scope = 2;
         ctab_camera=1;
-		displayName = "[GHOST] Covered HighCut Helmet G6 (Olive Drab)";
-		picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
-		hiddenSelectionsTextures[] = {
-			"\2035mrp\Texture\Helmet\opscore_highcut_od_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\opscore_cover_od_co.paa",
-			"\2035mrp\Texture\Helmet\attachment\BatteryPack_od_co.paa",
-			QPATHTOF(data\g91.paa),
-			"\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
-			"\2035mrp\Texture\Helmet\attachment\princeton_od_co.paa"
-		};
-	};
+        displayName = "[GHOST] Covered HighCut Helmet G6 (Olive Drab)";
+        picture = "\2035mrp\UI\Helmet\opscore_highcut_cover_od_US.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","flag_left","headset","MPLS"};
+        hiddenSelectionsTextures[] = {
+            "\2035mrp\Texture\Helmet\opscore_highcut_od_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\opscore_cover_od_co.paa",
+            "\2035mrp\Texture\Helmet\attachment\BatteryPack_od_co.paa",
+            QPATHTOF(data\g91.paa),
+            "\2035mrp\Texture\Helmet\attachment\c3_velcro_od_CO.paa",
+            "\2035mrp\Texture\Helmet\attachment\princeton_od_co.paa"
+        };
+    };
 };

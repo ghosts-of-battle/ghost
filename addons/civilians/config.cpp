@@ -2,28 +2,28 @@
 
 class CfgPatches
 {
-	class GHOST_Civilians
-	{
-		name = COMPONENT_NAME;
+    class GHOST_Civilians
+    {
+        name = COMPONENT_NAME;
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-		requiredAddons[] = {
-			"A3_UI_F",
-			"A3_UI_F_Curator",
+        requiredAddons[] = {
+            "A3_UI_F",
+            "A3_UI_F_Curator",
             "A3_Functions_F_Curator",
             "A3_Modules_F",
             "A3_Modules_F_Curator",
             "A3_Modules_F_Bootcamp_Misc",
-			"cba_main",
-			"cba_xeh"
-		};
-		authorUrl = "https://www.ghostsofbattle.com/";
+            "cba_main",
+            "cba_xeh"
+        };
+        authorUrl = "https://www.ghostsofbattle.com/";
         author = QAUTHOR;
         VERSION_CONFIG;
-		authors[] = {"MitchJC", "Mokka"};
+        authors[] = {"MitchJC", "Mokka"};
 
-	};
+    };
 };
 
 #include "CfgEventHandlers.hpp"

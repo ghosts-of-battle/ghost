@@ -5,8 +5,8 @@ class CfgVehicles {
     class Helicopter;
     class Helicopter_Base_F : Helicopter {
         class Turrets: Turrets {
-			class MainTurret;
-		};
+            class MainTurret;
+        };
         class AnimationSources;
     };
     class Helicopter_Base_H : Helicopter_Base_F {

@@ -60,7 +60,6 @@ class CfgFunctions {
 };
 
 #include "CfgEventHandlers.hpp"
-#include "Cfg3DEN.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
 #include "jr_classes.hpp"
@@ -69,3 +68,4 @@ class CfgFunctions {
 #include "XtdVest.hpp"
 #include "XtdAegis.hpp"
 #include "CfgMagazines.hpp"
+#include "tfar.hpp"

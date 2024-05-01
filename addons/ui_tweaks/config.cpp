@@ -15,3 +15,4 @@ class CfgPatches {
 };
 
 #include "RscDisplay.hpp"
+

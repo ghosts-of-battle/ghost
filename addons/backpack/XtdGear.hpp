@@ -300,6 +300,62 @@ class XtdGearmodels {
                 };
             };
         };
+        class B_RadioBag_01 {
+            options[] = { "camo" };
+            label = "Radio Bag";
+            class camo {
+                alwaysSelectable = 1;
+                values[] = { "Multicam", "Multicam_Snow", "Multicam_Woodland", "Solid_Black", "Solid_CoyoteBrown", "Solid_Olive", "Solid_Ranger_Green", "Solid_White", "US_DCU", "US_M81", "US_Tigerstripe" };
+                class Solid_Black {
+                    label = "BLK";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class Multicam {
+                    label = "MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class Multicam_Snow {
+                    label = "MCA";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+                class Multicam_Woodland {
+                    label = "MCW";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+                class Solid_CoyoteBrown {
+                    label = "BRN";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Solid_Olive {
+                    label = "Olive";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+                class Solid_Ranger_Green {
+                    label = "Ranger";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class Solid_White {
+                    label = "White";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+                class US_DCU {
+                    label = "DCU";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class US_M81 {
+                    label = "M81";
+                    image = "z\aceax\addons\gearinfo\data\camo\m81.paa";
+                };
+                class US_Tigerstripe {
+                    label = "Tiger";
+                    image = "z\aceax\addons\gearinfo\data\camo\tsw.paa";
+                };
+                class Solid_Tan {
+                    label = "Tan";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+            };
+        };
     };
 };
 
@@ -556,6 +612,54 @@ class XtdGearinfos {
         class GVAR(Backpack_Kitbag_Medic_White) {
             model = "Backpack_Kitbag_Medic";
             camo = "WHT";
+        };
+        class GVAR(B_RadioBag_01_Multicam) {
+            model = "B_RadioBag_01";
+            camo = "Multicam";
+        };
+        class GVAR(B_RadioBag_01_Multicam_Snow) {
+            model = "B_RadioBag_01";
+            camo = "Multicam_Snow";
+        };
+        class GVAR(B_RadioBag_01_Multicam_Woodland) {
+            model = "B_RadioBag_01";
+            camo = "Multicam_Woodland";
+        };
+        class GVAR(B_RadioBag_01_Solid_Black) {
+            model = "B_RadioBag_01";
+            camo = "Solid_Black";
+        };
+        class GVAR(B_RadioBag_01_Solid_CoyoteBrown) {
+            model = "B_RadioBag_01";
+            camo = "Solid_CoyoteBrown";
+        };
+        class GVAR(B_RadioBag_01_Solid_Olive) {
+            model = "B_RadioBag_01";
+            camo = "Solid_Olive";
+        };
+        class GVAR(B_RadioBag_01_Solid_Ranger_Green) {
+            model = "B_RadioBag_01";
+            camo = "Solid_Ranger_Green";
+        };
+        class GVAR(B_RadioBag_01_Solid_White) {
+            model = "B_RadioBag_01";
+            camo = "Solid_White";
+        };
+        class GVAR(B_RadioBag_01_US_DCU) {
+            model = "B_RadioBag_01";
+            camo = "US_DCU";
+        };
+        class GVAR(B_RadioBag_01_US_M81) {
+            model = "B_RadioBag_01";
+            camo = "US_M81";
+        };
+        class GVAR(B_RadioBag_01_US_Tigerstripe) {
+            model = "B_RadioBag_01";
+            camo = "US_Tigerstripe";
+        };
+        class GVAR(B_RadioBag_01_Solid_Tan_F) {
+            model = "B_RadioBag_01";
+            camo = "Tan";
         };
     };
 };

@@ -459,7 +459,7 @@ class ACE_ADDON(medical_treatment) {
 
         // specific details for the ACE_Morphine treatment action
         class Morphine {
-            painReduce = 0.8;
+            painReduce = 1;
             hrIncreaseLow[] = {-10, -20};
             hrIncreaseNormal[] = {-10, -30};
             hrIncreaseHigh[] = {-10, -35};
@@ -490,7 +490,7 @@ class ACE_ADDON(medical_treatment) {
             incompatibleMedication[] = {};
         };
         class PainKillers {
-            painReduce = 0.1;
+            painReduce = 0.35;
             timeInSystem = 600;
             timeTillMaxEffect = 60;
             maxDose = 10;
@@ -498,11 +498,12 @@ class ACE_ADDON(medical_treatment) {
             viscosityChange = 5;
         };
         class Apap: PainKillers {
-            painReduce = 0.6;
-            timeInSystem = 1200;
-            timeTillMaxEffect = 120;
+            painReduce = 0.5;
+            timeInSystem = 420;
+            timeTillMaxEffect = 60;
         };
     };
+
     class IV {
         // volume is in millileters
         volume = 1000;

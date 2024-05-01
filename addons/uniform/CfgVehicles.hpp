@@ -5,11 +5,11 @@ class CfgVehicles {
     class FPGP2_Uni_Crye_mcb_1: B_Soldier_base_F;
 
     class GVAR(UNI_Base): B_Soldier_base_F {
-		scope = 1;
-		displayName = "Crye Combat Uniform";
-		model = "FPGP_2_uni\Crye_uni.p3d";
-		hiddenSelections[] = {"Camo1","Camo2"};
-		hiddenSelectionsTextures[] = {"FPGP_2_uni\data\cryetop_mcb_co.paa","FPGP_2_uni\data\cryepants_mcb_co.paa"};
+        scope = 1;
+        displayName = "Crye Combat Uniform";
+        model = "FPGP_2_uni\Crye_uni.p3d";
+        hiddenSelections[] = {"Camo1","Camo2"};
+        hiddenSelectionsTextures[] = {"FPGP_2_uni\data\cryetop_mcb_co.paa","FPGP_2_uni\data\cryepants_mcb_co.paa"};
     };
     //mc
     class GVAR(Uni_Crye_1_mc): GVAR(UNI_Base) {

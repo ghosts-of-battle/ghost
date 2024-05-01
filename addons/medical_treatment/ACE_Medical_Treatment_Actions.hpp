@@ -17,10 +17,10 @@ class ACEGVAR(medical_treatment,actions) {
         treatmentTime = 5;
         medicRequired = 0;
     };
-
     class Morphine {
         medicRequired = 2;
     };
+
     class EatApap: Morphine {
         allowedSelections[] = {"head"};
         allowSelfTreatment = 1;
@@ -39,6 +39,7 @@ class ACEGVAR(medical_treatment,actions) {
         displayNameProgress = CSTRING(Administering_Apap);
         condition = "!((_this select 1) getVariable ['ACE_isUnconscious', false])";
     };
+
 
     class BloodIV: BasicBandage {
         treatmentTime = 5;

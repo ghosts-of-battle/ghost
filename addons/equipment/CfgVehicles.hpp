@@ -1,5 +1,9 @@
 class CBA_Extended_EventHandlers_base;
 class CfgVehicles {
+    #include "ANPRC117\prc117.hpp"
+    #include "SatComAntenna\satcomAntenna.hpp"
+    #include "117RadioStation\117RadioStation.hpp"
+    
     //fpgp
     class B_AssaultPack_rgr;
     class FPGP_Hydration1_Tan_1_Backpanel: B_AssaultPack_rgr {
@@ -14,6 +18,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
+        editorCategory = QPREFIX;
         displayName = "[GHOST] Arsenal";
         model="A3\Weapons_F\Ammoboxes\AmmoVeh_F";
         icon="iconCrateVeh";
@@ -47,6 +52,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
+        editorCategory = QPREFIX;
         displayName = "[GHOST] Arsenal Winter";
         model="A3\Weapons_F\Ammoboxes\AmmoVeh_F";
         icon="iconCrateVeh";
@@ -80,6 +86,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
+        editorCategory = QPREFIX;
         displayName = "[GHOST] Arsenal Desert";
         model="A3\Weapons_F\Ammoboxes\AmmoVeh_F";
         icon="iconCrateVeh";
@@ -113,6 +120,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
+        editorCategory = QPREFIX;
         displayName = "[GHOST] Arsenal Tropical";
         model="A3\Weapons_F\Ammoboxes\AmmoVeh_F";
         icon="iconCrateVeh";
@@ -146,6 +154,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
+        editorCategory = QPREFIX;
         displayName = "[GHOST] Arsenal Civllian";
         model="A3\Weapons_F\Ammoboxes\AmmoVeh_F";
         icon="iconCrateVeh";
@@ -179,6 +188,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
+        editorCategory = QPREFIX;
         displayName = "[GHOST] Arsenal Resupply";
         model="A3\Weapons_F\Ammoboxes\AmmoVeh_F";
         icon="iconCrateVeh";

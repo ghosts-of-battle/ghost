@@ -1,4 +1,5 @@
 class CfgWeapons {
+    #include "SatComAntenna\antennaInventoryItem.hpp"
     class CBA_MiscItem;
     class CBA_MiscItem_ItemInfo;
     class ace_xm157_prototype;
@@ -443,10 +444,10 @@ class CfgWeapons {
     };
     class ItemAndroidMisc: CBA_MiscItem {
         ACE_isTool = 1;
-	};
-	class ItemMicroDAGRMisc: CBA_MiscItem {
+    };
+    class ItemMicroDAGRMisc: CBA_MiscItem {
         ACE_isTool = 1;
-	};
+    };
     class optic_MRD : ItemCore {
         class ItemInfo;
     };

@@ -9,14 +9,14 @@ class CfgVehicles {
     class B_Kitbag_Base;
     class B_TacticalPack_blk;
     class B_Kitbag_Base;
-    // class B_RadioBag_01_base_F;
-    // class TFAR_rt1523g;
+    class B_RadioBag_01_base_F;
+    class TFAR_rt1523g;
     // External class reference  END
 
     class GVAR(AssaultPack_Multicam): B_AssaultPack_rgr {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_multicam_co.paa)
@@ -27,7 +27,7 @@ class CfgVehicles {
     class GVAR(AssaultPackEnhanced_Multicam): B_AssaultPack_Kerry {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack (Enhanced)";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_multicam_co.paa),
@@ -43,7 +43,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Carryall Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_tortila_Multicam_co.paa)
@@ -57,7 +57,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Kitbag";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_fast_Multicam_co.paa)
@@ -71,7 +71,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Tactical Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_small_Multicam_co.paa)
@@ -82,7 +82,7 @@ class CfgVehicles {
     class GVAR(AssaultPack_Multicam_Snow): B_AssaultPack_rgr {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_multicam_snow_co.paa)
@@ -93,7 +93,7 @@ class CfgVehicles {
     class GVAR(AssaultPackEnhanced_Multicam_Snow): B_AssaultPack_Kerry {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack (Enhanced)";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_multicam_snow_co.paa),
@@ -109,7 +109,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Carryall Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_tortila_Multicam_Snow_co.paa)
@@ -123,7 +123,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Kitbag";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_fast_Multicam_Snow_co.paa)
@@ -137,7 +137,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Tactical Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_small_Multicam_Snow_co.paa)
@@ -148,7 +148,7 @@ class CfgVehicles {
     class GVAR(AssaultPack_Multicam_Woodland): B_AssaultPack_rgr {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_multicam_woodland_co.paa)
@@ -159,7 +159,7 @@ class CfgVehicles {
     class GVAR(AssaultPackEnhanced_Multicam_Woodland): B_AssaultPack_Kerry {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack (Enhanced)";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_multicam_woodland_co.paa),
@@ -175,7 +175,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Carryall Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_tortila_Multicam_Woodland_co.paa)
@@ -189,7 +189,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Kitbag";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_fast_Multicam_Woodland_co.paa)
@@ -203,7 +203,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Tactical Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_small_Multicam_Woodland_co.paa)
@@ -214,7 +214,7 @@ class CfgVehicles {
     class GVAR(AssaultPack_Solid_Black): B_AssaultPack_rgr {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_solid_black_co.paa)
@@ -225,7 +225,7 @@ class CfgVehicles {
     class GVAR(AssaultPackEnhanced_Solid_Black): B_AssaultPack_Kerry {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack (Enhanced)";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_solid_black_co.paa),
@@ -241,7 +241,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Carryall Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_tortila_Solid_Black_co.paa)
@@ -255,7 +255,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Kitbag";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_fast_Solid_Black_co.paa)
@@ -269,7 +269,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Tactical Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_small_Solid_Black_co.paa)
@@ -280,7 +280,7 @@ class CfgVehicles {
     class GVAR(AssaultPack_Solid_CoyoteBrown): B_AssaultPack_rgr {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_solid_coyotebrown_co.paa)
@@ -291,7 +291,7 @@ class CfgVehicles {
     class GVAR(AssaultPackEnhanced_Solid_CoyoteBrown): B_AssaultPack_Kerry {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack (Enhanced)";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_solid_coyotebrown_co.paa),
@@ -307,7 +307,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Carryall Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_tortila_Solid_CoyoteBrown_co.paa)
@@ -321,7 +321,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Kitbag";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_fast_Solid_CoyoteBrown_co.paa)
@@ -335,7 +335,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Tactical Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_small_Solid_CoyoteBrown_co.paa)
@@ -346,7 +346,7 @@ class CfgVehicles {
     class GVAR(AssaultPack_Solid_Ranger_Green): B_AssaultPack_rgr {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_solid_ranger_green_co.paa)
@@ -357,7 +357,7 @@ class CfgVehicles {
     class GVAR(AssaultPackEnhanced_Solid_Ranger_Green): B_AssaultPack_Kerry {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack (Enhanced)";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_solid_ranger_green_co.paa),
@@ -373,7 +373,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Carryall Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_tortila_Solid_Ranger_Green_co.paa)
@@ -387,7 +387,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Kitbag";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_fast_Solid_Ranger_Green_co.paa)
@@ -401,7 +401,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Tactical Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_small_Solid_Ranger_Green_co.paa)
@@ -412,7 +412,7 @@ class CfgVehicles {
     class GVAR(AssaultPack_US_Tigerstripe): B_AssaultPack_rgr {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_us_tigerstripe_co.paa)
@@ -423,7 +423,7 @@ class CfgVehicles {
     class GVAR(AssaultPackEnhanced_US_Tigerstripe): B_AssaultPack_Kerry {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack (Enhanced)";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_us_tigerstripe_co.paa),
@@ -439,7 +439,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Carryall Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_tortila_US_Tigerstripe_co.paa)
@@ -453,7 +453,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Kitbag";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_fast_US_Tigerstripe_co.paa)
@@ -467,7 +467,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Tactical Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_small_US_Tigerstripe_co.paa)
@@ -478,7 +478,7 @@ class CfgVehicles {
     class GVAR(AssaultPack_Solid_Olive): B_AssaultPack_rgr {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_solid_olive_co.paa)
@@ -489,7 +489,7 @@ class CfgVehicles {
     class GVAR(AssaultPackEnhanced_Solid_Olive): B_AssaultPack_Kerry {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack (Enhanced)";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_solid_olive_co.paa),
@@ -505,7 +505,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Carryall Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_tortila_Solid_Olive_co.paa)
@@ -519,7 +519,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Kitbag";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_fast_Solid_Olive_co.paa)
@@ -533,7 +533,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Tactical Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_small_Solid_Olive_co.paa)
@@ -544,7 +544,7 @@ class CfgVehicles {
     class GVAR(AssaultPack_Solid_White): B_AssaultPack_rgr {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_solid_white_co.paa)
@@ -555,7 +555,7 @@ class CfgVehicles {
     class GVAR(AssaultPackEnhanced_Solid_White): B_AssaultPack_Kerry {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack (Enhanced)";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_solid_white_co.paa),
@@ -571,7 +571,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Carryall Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_tortila_Solid_White_co.paa)
@@ -585,7 +585,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Kitbag";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_fast_Solid_White_co.paa)
@@ -599,7 +599,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Tactical Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_small_Solid_White_co.paa)
@@ -610,7 +610,7 @@ class CfgVehicles {
     class GVAR(AssaultPack_US_DCU): B_AssaultPack_rgr {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_us_dcu_co.paa)
@@ -621,7 +621,7 @@ class CfgVehicles {
     class GVAR(AssaultPackEnhanced_US_DCU): B_AssaultPack_Kerry {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack (Enhanced)";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_us_dcu_co.paa),
@@ -637,7 +637,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Carryall Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_tortila_US_DCU_co.paa)
@@ -651,7 +651,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Kitbag";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_fast_US_DCU_co.paa)
@@ -665,7 +665,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Tactical Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_small_US_DCU_co.paa)
@@ -676,7 +676,7 @@ class CfgVehicles {
     class GVAR(AssaultPack_US_M81): B_AssaultPack_rgr {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_us_m81_co.paa)
@@ -687,7 +687,7 @@ class CfgVehicles {
     class GVAR(AssaultPackEnhanced_US_M81): B_AssaultPack_Kerry {
         author = QAUTHOR;
         
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Assault Pack (Enhanced)";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_us_m81_co.paa),
@@ -703,7 +703,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Carryall Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_tortila_US_M81_co.paa)
@@ -717,7 +717,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Kitbag";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_fast_US_M81_co.paa)
@@ -731,7 +731,7 @@ class CfgVehicles {
         {
             "Camo"
         };
-        maximumLoad = 210;
+        maximumLoad = 240;
         displayName="[GHOST] Tactical Backpack";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_small_US_M81_co.paa)
@@ -851,7 +851,7 @@ class CfgVehicles {
             QPATHTOF(data\backpack_kitbag_medic_rgr_co.paa)
         };
     };
-    /* 
+
     //Start radios
     class GVAR(TFAR_rt1523g_kitbag): TFAR_rt1523g {
         author = "NemesisRE";
@@ -1109,7 +1109,6 @@ class CfgVehicles {
         tf_subtype = "digital_lr";
     };
     //End radios 
-    */
 };
 
 

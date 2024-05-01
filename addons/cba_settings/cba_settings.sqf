@@ -1,20 +1,4 @@
-// GHOST - Rank
-force RANKS_CAPTAIN = "";
-force RANKS_COLONEL = "";
-force RANKS_CORPORAL = "";
-force RANKS_LIEUTENANT = "76561198000002705";
-force RANKS_MAJOR = "";
-force RANKS_SERGEANT = "";
 
-// GHOST - Role
-force ROLES_COMM = "76561198000002705";
-force ROLES_ENG = "76561198000002705";
-force ROLES_MEDIC = "76561198000002705";
-force ROLES_SRCOMM = "76561198000002705";
-force ROLES_SRENG = "76561198000002705";
-force ROLES_SRMEDIC = "76561198000002705";
-
-////////////////////////////////////////////////////////////////////////////////
 // ACE Advanced Ballistics
 force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
 force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
@@ -54,7 +38,6 @@ force force ace_arsenal_allowSharedLoadouts = true;
 force force ace_arsenal_enableIdentityTabs = false;
 force force ace_arsenal_enableModIcons = true;
 force force ace_arsenal_EnableRPTLog = true;
-
 
 // ACE Artillery
 force force ace_artillerytables_advancedCorrections = true;
@@ -456,27 +439,6 @@ force force ace_zeus_revealMines = 0;
 force force ace_zeus_zeusAscension = true;
 force force ace_zeus_zeusBird = false;
 
-// ACRE2
-force force acre_sys_core_automaticAntennaDirection = true;
-force force acre_sys_core_fullDuplex = false;
-force force acre_sys_core_ignoreAntennaDirection = false;
-force force acre_sys_core_interference = true;
-force force acre_sys_core_revealToAI = 1;
-force force acre_sys_core_terrainLoss = 1;
-force acre_sys_core_ts3ChannelName = "";
-force force acre_sys_core_ts3ChannelPassword = "1234";
-force force acre_sys_core_ts3ChannelSwitch = true;
-force force acre_sys_core_unmuteClients = true;
-force force acre_sys_radio_defaultRadio = "ACRE_PRC148";
-force force acre_sys_signal_signalModel = 2;
-
-// ACRE2 Gestures
-force force acre_sys_gestures_enabled = true;
-force force acre_sys_gestures_stopADS = false;
-
-// ACRE2 Zeus
-force force acre_sys_zeus_zeusCanSpectate = true;
-
 // Backpack On Chest
 force force bocr_main_disabled = false;
 force force bocr_main_walk = true;
@@ -500,105 +462,6 @@ force force ctab_core_useArmaMarker = true;
 force force ctab_irl_connect_enabled = true;
 force force ctab_irl_connect_syncMap = true;
 
-// GHOST - acre
-force force ghost_acre_addArsenalCategory = true;
-force force ghost_acre_babel = true;
-force ghost_acre_CIVChannelNameCommand1 = "Command Channel 1 name";
-force ghost_acre_CIVChannelNameCommand2 = "Command Channel 2 name";
-force ghost_acre_CIVChannelNameCommand3 = "Command Channel 3 name";
-force ghost_acre_CIVChannelNameCommand4 = "Command Channel 4 name";
-force ghost_acre_CIVChannelNameCommand5 = "Command Channel 5 name";
-force ghost_acre_CIVChannelNameCommand6 = "Command Channel 6 name";
-force ghost_acre_CIVChannelNameCommand7 = "Command Channel 7 name";
-force ghost_acre_CIVChannelNameCommand8 = "Command Channel 8 name";
-force ghost_acre_CIVChannelNamePersonal1 = "Personal Channel 1 name";
-force ghost_acre_CIVChannelNamePersonal10 = "Personal Channel 10 name";
-force ghost_acre_CIVChannelNamePersonal11 = "Personal Channel 11 name";
-force ghost_acre_CIVChannelNamePersonal12 = "Personal Channel 12 name";
-force ghost_acre_CIVChannelNamePersonal13 = "Personal Channel 13 name";
-force ghost_acre_CIVChannelNamePersonal14 = "Personal Channel 14 name";
-force ghost_acre_CIVChannelNamePersonal15 = "Personal Channel 15 name";
-force ghost_acre_CIVChannelNamePersonal2 = "Personal Channel 2 name";
-force ghost_acre_CIVChannelNamePersonal3 = "Personal Channel 3 name";
-force ghost_acre_CIVChannelNamePersonal4 = "Personal Channel 4 name";
-force ghost_acre_CIVChannelNamePersonal5 = "Personal Channel 5 name";
-force ghost_acre_CIVChannelNamePersonal6 = "Personal Channel 6 name";
-force ghost_acre_CIVChannelNamePersonal7 = "Personal Channel 7 name";
-force ghost_acre_CIVChannelNamePersonal8 = "Personal Channel 8 name";
-force ghost_acre_CIVChannelNamePersonal9 = "Personal Channel 9 name";
-force ghost_acre_EASTChannelNameCommand1 = "Command Channel 1 name";
-force ghost_acre_EASTChannelNameCommand2 = "Command Channel 2 name";
-force ghost_acre_EASTChannelNameCommand3 = "Command Channel 3 name";
-force ghost_acre_EASTChannelNameCommand4 = "Command Channel 4 name";
-force ghost_acre_EASTChannelNameCommand5 = "Command Channel 5 name";
-force ghost_acre_EASTChannelNameCommand6 = "Command Channel 6 name";
-force ghost_acre_EASTChannelNameCommand7 = "Command Channel 7 name";
-force ghost_acre_EASTChannelNameCommand8 = "Command Channel 8 name";
-force ghost_acre_EASTChannelNamePersonal1 = "Personal Channel 1 name";
-force ghost_acre_EASTChannelNamePersonal10 = "Personal Channel 10 name";
-force ghost_acre_EASTChannelNamePersonal11 = "Personal Channel 11 name";
-force ghost_acre_EASTChannelNamePersonal12 = "Personal Channel 12 name";
-force ghost_acre_EASTChannelNamePersonal13 = "Personal Channel 13 name";
-force ghost_acre_EASTChannelNamePersonal14 = "Personal Channel 14 name";
-force ghost_acre_EASTChannelNamePersonal15 = "Personal Channel 15 name";
-force ghost_acre_EASTChannelNamePersonal2 = "Personal Channel 2 name";
-force ghost_acre_EASTChannelNamePersonal3 = "Personal Channel 3 name";
-force ghost_acre_EASTChannelNamePersonal4 = "Personal Channel 4 name";
-force ghost_acre_EASTChannelNamePersonal5 = "Personal Channel 5 name";
-force ghost_acre_EASTChannelNamePersonal6 = "Personal Channel 6 name";
-force ghost_acre_EASTChannelNamePersonal7 = "Personal Channel 7 name";
-force ghost_acre_EASTChannelNamePersonal8 = "Personal Channel 8 name";
-force ghost_acre_EASTChannelNamePersonal9 = "Personal Channel 9 name";
-force force ghost_acre_enabled = true;
-force ghost_acre_GUERChannelNameCommand1 = "Command Channel 1 name";
-force ghost_acre_GUERChannelNameCommand2 = "Command Channel 2 name";
-force ghost_acre_GUERChannelNameCommand3 = "Command Channel 3 name";
-force ghost_acre_GUERChannelNameCommand4 = "Command Channel 4 name";
-force ghost_acre_GUERChannelNameCommand5 = "Command Channel 5 name";
-force ghost_acre_GUERChannelNameCommand6 = "Command Channel 6 name";
-force ghost_acre_GUERChannelNameCommand7 = "Command Channel 7 name";
-force ghost_acre_GUERChannelNameCommand8 = "Command Channel 8 name";
-force ghost_acre_GUERChannelNamePersonal1 = "Personal Channel 1 name";
-force ghost_acre_GUERChannelNamePersonal10 = "Personal Channel 10 name";
-force ghost_acre_GUERChannelNamePersonal11 = "Personal Channel 11 name";
-force ghost_acre_GUERChannelNamePersonal12 = "Personal Channel 12 name";
-force ghost_acre_GUERChannelNamePersonal13 = "Personal Channel 13 name";
-force ghost_acre_GUERChannelNamePersonal14 = "Personal Channel 14 name";
-force ghost_acre_GUERChannelNamePersonal15 = "Personal Channel 15 name";
-force ghost_acre_GUERChannelNamePersonal2 = "Personal Channel 2 name";
-force ghost_acre_GUERChannelNamePersonal3 = "Personal Channel 3 name";
-force ghost_acre_GUERChannelNamePersonal4 = "Personal Channel 4 name";
-force ghost_acre_GUERChannelNamePersonal5 = "Personal Channel 5 name";
-force ghost_acre_GUERChannelNamePersonal6 = "Personal Channel 6 name";
-force ghost_acre_GUERChannelNamePersonal7 = "Personal Channel 7 name";
-force ghost_acre_GUERChannelNamePersonal8 = "Personal Channel 8 name";
-force ghost_acre_GUERChannelNamePersonal9 = "Personal Channel 9 name";
-force force ghost_acre_perSideChannelNames = true;
-force force ghost_acre_perSideRadios = true;
-force force ghost_acre_WESTChannelNameCommand1 = "PLTNET";
-force force ghost_acre_WESTChannelNameCommand2 = "A2G";
-force force ghost_acre_WESTChannelNameCommand3 = "JFIRES";
-force force ghost_acre_WESTChannelNameCommand4 = "AIR-01";
-force force ghost_acre_WESTChannelNameCommand5 = "AIR-02";
-force force ghost_acre_WESTChannelNameCommand6 = "AIR-03";
-force force ghost_acre_WESTChannelNameCommand7 = "AIR-04";
-force force ghost_acre_WESTChannelNameCommand8 = "RESCUE";
-force force ghost_acre_WESTChannelNamePersonal1 = "PLT-NET";
-force force ghost_acre_WESTChannelNamePersonal10 = "SQ-3-TM-B";
-force force ghost_acre_WESTChannelNamePersonal11 = "SQ-4-NET";
-force force ghost_acre_WESTChannelNamePersonal12 = "SQ-4-TM-A";
-force force ghost_acre_WESTChannelNamePersonal13 = "SQ-4-TM-B";
-force force ghost_acre_WESTChannelNamePersonal14 = "AT-1-Net";
-force force ghost_acre_WESTChannelNamePersonal15 = "AT-2-Net";
-force force ghost_acre_WESTChannelNamePersonal2 = "SQ-1-NET";
-force force ghost_acre_WESTChannelNamePersonal3 = "SQ-1-TM-A";
-force force ghost_acre_WESTChannelNamePersonal4 = "SQ-1-TM-B";
-force force ghost_acre_WESTChannelNamePersonal5 = "SQ-2-NET";
-force force ghost_acre_WESTChannelNamePersonal6 = "SQ-2-TM-A";
-force force ghost_acre_WESTChannelNamePersonal7 = "SQ-2-TM-B";
-force force ghost_acre_WESTChannelNamePersonal8 = "SQ-3-NET";
-force force ghost_acre_WESTChannelNamePersonal9 = "SQ-3-TM-A";
-
 // GHOST - adminMenu
 force force ghost_adminMenu_endLogToRPT = true;
 force force ghost_adminMenu_printToChat = 1;
@@ -612,6 +475,29 @@ force force ghost_back_to_game_enableAddon = true;
 force force ghost_back_to_game_removeBody = false;
 force force ghost_back_to_game_teleportToLeader = true;
 force force ghost_back_to_game_teleportToVehicle = true;
+
+// GHOST - BluForce Tracker
+force force ghost_bft_friendlySides_CIVILIAN = [0,2];
+force force ghost_bft_friendlySides_EAST = [3];
+force force ghost_bft_friendlySides_RESISTANCE = [1,3];
+force force ghost_bft_friendlySides_WEST = [2];
+force force ghost_bft_friendlySidesDynamic = true;
+force force ghost_bft_groupIconsInteraction = "hover";
+force force ghost_bft_medicalSystem = "ACE";
+force force ghost_bft_requireItemGPS = true;
+force force ghost_bft_showAIGroups = true;
+force force ghost_bft_showAINames = true;
+force force ghost_bft_showCivilians = false;
+force force ghost_bft_showGroupIcons = true;
+force force ghost_bft_showGroupText = true;
+force force ghost_bft_showLifeState = true;
+force force ghost_bft_showOwnFactionOnly = true;
+force force ghost_bft_showOwnGroup = true;
+force force ghost_bft_showOwnGroupUnits = true;
+force force ghost_bft_showPlayerNames = true;
+force force ghost_bft_showUnitNames = true;
+force force ghost_bft_teamColors = "ACE";
+force force ghost_bft_updateInterval = 1.5;
 
 // GHOST - Civilians
 force force GHOST_Civilians_enableFollowGestures = true;
@@ -643,36 +529,8 @@ force ghost_Channels_VehicleDuration = 300;
 force ghost_Channels_VehicleText = true;
 force ghost_Channels_VehicleVoice = false;
 
-// GHOST - Core settings
-force force MRH_MilsimTools_AdminCasualtiesCap = 100;
-force force MRH_MilsimTools_AllowAdminForZeus = true;
-force force MRH_MilsimTools_AllowDeadReco = false;
-force force MRH_MilsimTools_Core_ApplyMedicPatch = false;
-force force MRH_MilsimTools_Delete_disconnected_body = false;
-force force MRH_MilsimTools_hideAceMyLoadOuts = false;
-force force MRH_MilsimTools_LD_loadoutDisplaySize = 100;
-force force MRH_MilsimTools_LD_ShowLoadOutInBrief = false;
-force force MRH_MilsimTools_PlayIntro_ToPlayer = false;
-force force MRH_MilsimTools_ResetHasDiedOnRespawn = true;
-force force MRH_MilsimTools_Rmv_map_nolead = true;
-force force MRH_MilsimTools_ShowAdminDeadHint = false;
-
-// GHOST - Debug Mode
-force MRH_MilsimTools_DebugTools_DoLogDebugMode = false;
-force MRH_MilsimTools_DebugTools_isDebugMode = false;
-
 // GHOST - Defib
 force force ghost_defib_Defib_Chance = 90;
-
-// GHOST - Deployable Fobs
-force force MRH_MilsimTools_CAMP_composition = "MRH_SmallCamp_default";
-force force MRH_MilsimTools_FOB_BIG_composition = "MRH_FieldHQSmall_default";
-force force MRH_MilsimTools_MiscItems_CAMP_DeployTime = 10;
-force force MRH_MilsimTools_MiscItems_CAMP_GRepackRadius = 10;
-force force MRH_MilsimTools_MiscItems_CAMP_GRepackTime = 10;
-force force MRH_MilsimTools_MiscItems_FOB_BIGDeployTime = 20;
-force force MRH_MilsimTools_MiscItems_FOB_BIGRepackRadius = 50;
-force force MRH_MilsimTools_MiscItems_FOB_BIGRepackTime = 20;
 
 // GHOST - fatigue
 force force ghost_fatigue_highJogCoef = 0.8;
@@ -684,36 +542,10 @@ force force ghost_friendly_fire_loggingEnabled = true;
 // GHOST - grass
 force force ghost_grass_enabled = true;
 
-// GHOST - Hacking settings
-force force MRH_MilsimTools_RequireHackingTool = true;
-
-// GHOST - Halo Jumps
-force force MRH_MilsimTools_HaloGear_AADDefaultOpeningAltitude = "300";
-force force MRH_MilsimTools_HaloGear_allowManualAADSetting = true;
-force force MRH_MilsimTools_HaloGear_disableMaskHud = false;
-force force MRH_MilsimTools_HaloGear_disableMaskHudAltimeter = false;
-force force MRH_MilsimTools_HaloGear_disableMaskHudCompass = false;
-force force MRH_MilsimTools_HaloGear_disableMaskHudVelocity = false;
-force force MRH_MilsimTools_HaloGear_haloMaskBreakingChancePerc = 7;
-force force MRH_MilsimTools_HaloGear_hypoxiaAltitude = 4200;
-force force MRH_MilsimTools_HaloGear_hypoxiaUse = true;
-force force MRH_MilsimTools_HaloGear_missionConfiguredProtectiveGear = "H_PilotHelmetFighter_B, GHOST_HaloMask, GHOST_HaloMaskNoESS, RHS_jetpilot_usaf, rhs_zsh7a, rhs_zsh7a_alt, RHS_TU95MS_vvs_old";
-
-// GHOST - Insertion Handler
-force force MRH_MilsimTools_InsertionHandler_allowHALO = true;
-force force MRH_MilsimTools_InsertionHandler_allowStatic = true;
-force force MRH_MilsimTools_InsertionHandler_allowSub = false;
-force force MRH_MilsimTools_InsertionHandler_SupplyPlanesBluFor = "ghost_planes_Plane_Transport_01_infantry_F";
-force force MRH_MilsimTools_InsertionHandler_SupplyPlanesInde = "I_Heli_Transport_02_F, I_Heli_light_03_unarmed_F, I_C_Plane_Civil_01_F";
-force force MRH_MilsimTools_InsertionHandler_SupplyPlanesOpFor = "O_T_VTOL_02_infantry_dynamicLoadout_F, O_Heli_Light_02_unarmed_F, O_Heli_Transport_04_box_F";
-
 // GHOST - insurgents
 force force ghost_insurgents_enabled_CUP = false;
 force force ghost_insurgents_enabled_Vanilla = true;
 
-// GHOST - Medical Tent
-force force MRH_MilsimTools_MiscItems_FieldMedicalTentDeployTime = 20;
-force force MRH_MilsimTools_MiscItems_FieldMedicalTentRepackTime = 10;
 
 // GHOST - nvg
 force force ghost_nvg_Blacklist = "";
@@ -724,11 +556,6 @@ force force ghost_pointing_vehicleEnabled = true;
 // GHOST - respawn
 force force ghost_respawn_enabled = true;
 force force ghost_respawn_time = 6;
-
-// GHOST - Roster settings
-force MRH_MilsimTools_Roster_AllowAllSides = false;
-force MRH_MilsimTools_Roster_ShowAIgroups = false;
-force MRH_MilsimTools_Roster_ShowAiWithinGrps = false;
 
 // GHOST - safestart
 ghost_safestart_startLocked = true;
@@ -756,22 +583,12 @@ force force ghost_suppress_overlayTexture = 0;
 force force ghost_suppress_projectileMaxDistance = 9;
 force force ghost_suppress_shooterMinDistance = 0;
 
-// GHOST - Tablet settings
-force force MRH_MilsimTools_AllowMapTablet = false;
-force force MRH_MilsimTools_ST_BriefingRemote_overlay = "\mrhmilsimtools\Paa\cnn_news_ca.paa";
-force force MRH_MilsimTools_ST_BriefingRemote_videosToPlay = "\a3\missions_f_bootcamp\video\vr_generictransition_1.ogv, \a3\missions_f_epa\video\a_in_intro.ogv";
-
 // GHOST - tagging
 force force ghost_tagging_enabled = true;
 
 // GHOST - towing
 force force ghost_towing_addToCars = true;
 force force ghost_towing_addToHeavyDutyVehicles = true;
-
-// GHOST - Zeus
-force force MRH_MilsimTools_Zeus_hideWaterMark = false;
-force force MRH_MilsimTools_Zeus_waterMark = "UseVanilla";
-force force MRH_MilsimTools_Zeus_waterMarkCustomImg = "\mrhmilsimtools\Paa\zeusicon.paa";
 
 // HBQ General
 force force HBQSS_DefaultPlayerCount = 8;
@@ -887,6 +704,62 @@ force force sss_transport_slingloadMassOverride = true;
 force force sss_transport_taskMarkers = true;
 force force sss_transport_visualAids = true;
 force force sss_transport_visualAidsLive = true;
+
+// Tinter Furniture
+tint_delay = 10;
+tint_houseLimit = 42;
+tint_houses = true;
+tint_range = 300;
+force tint_seed = 69;
+
+// TFAR - Global settings
+force TFAR_AICanHearPlayer = true;
+force TFAR_AICanHearSpeaker = true;
+force TFAR_allowDebugging = true;
+tfar_core_noTSNotConnectedHint = false;
+force TFAR_defaultIntercomSlot = 0;
+force TFAR_disableAutoMute = false;
+force TFAR_enableIntercom = true;
+force TFAR_experimentalVehicleIsolation = true;
+force TFAR_fullDuplex = true;
+force TFAR_giveLongRangeRadioToGroupLeaders = false;
+force TFAR_giveMicroDagrToSoldier = false;
+force TFAR_givePersonalRadioToRegularSoldier = false;
+force TFAR_globalRadioRangeCoef = 1;
+force TFAR_instantiate_instantiateAtBriefing = false;
+force TFAR_objectInterceptionEnabled = true;
+force TFAR_objectInterceptionStrength = 400;
+force tfar_radiocode_east = "_opfor";
+force tfar_radiocode_independent = "_independent";
+force tfar_radiocode_west = "_bluefor";
+force tfar_radioCodesDisabled = false;
+force TFAR_SameLRFrequenciesForSide = true;
+force TFAR_SameSRFrequenciesForSide = true;
+force TFAR_setting_defaultFrequencies_lr_east = "";
+force TFAR_setting_defaultFrequencies_lr_independent = "";
+force TFAR_setting_defaultFrequencies_lr_west = "50,51,52,53,80,81,82,83";
+force TFAR_setting_defaultFrequencies_sr_east = "";
+force TFAR_setting_defaultFrequencies_sr_independent = "";
+force TFAR_setting_defaultFrequencies_sr_west = "500,101,102,201,202,301,302,501";
+force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
+force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
+force TFAR_setting_DefaultRadio_Airborne_West = "TFAR_anarc210";
+force TFAR_setting_DefaultRadio_Backpack_east = "TFAR_mr3000";
+force TFAR_setting_DefaultRadio_Backpack_Independent = "TFAR_anprc155";
+force TFAR_setting_DefaultRadio_Backpack_west = "TFAR_rt1523g";
+force TFAR_setting_DefaultRadio_Personal_east = "TFAR_fadak";
+force TFAR_setting_DefaultRadio_Personal_Independent = "TFAR_anprc148jem";
+force TFAR_setting_DefaultRadio_Personal_West = "TFAR_anprc152";
+force TFAR_setting_DefaultRadio_Rifleman_East = "TFAR_pnr1000a";
+force TFAR_setting_DefaultRadio_Rifleman_Independent = "TFAR_anprc154";
+force TFAR_setting_DefaultRadio_Rifleman_West = "TFAR_anprc152";
+force TFAR_spectatorCanHearEnemyUnits = true;
+force TFAR_spectatorCanHearFriendlies = true;
+force TFAR_takingRadio = 2;
+force TFAR_Teamspeak_Channel_Name = "TaskForceRadio";
+force TFAR_Teamspeak_Channel_Password = "1234";
+force tfar_terrain_interception_coefficient = 7;
+force TFAR_voiceCone = true;
 
 // TSP Breach
 force force tsp_cba_breach = true;
