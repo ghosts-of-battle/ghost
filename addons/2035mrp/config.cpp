@@ -1,4 +1,4 @@
-//配置模组的大致信息
+// Addon metadata
 class CfgPatches
 {
     class 2035_MRP
@@ -10,8 +10,8 @@ class CfgPatches
     };
 };
 
-//除背包外的所有装备均属于Weapons类
-class cfgWeapons
+// All equipment (except backpacks) belongs to CfgWeapons
+class CfgWeapons
 {
     //此处需首先定义列举所拓展装备的基础类
     class UniformItem;
@@ -43,7 +43,7 @@ class cfgWeapons
             "\2035mrp\Texture\Helmet\attachment\pvs31_bat_blk_co.paa"
         };
         //注：上方未列出的贴图均已直接写入p3d (一般为通用项)，需使用blender更改
-        descriptionShort="Armor Level III";
+        descriptionShort = "Armor Level III";
         class ItemInfo: HeadgearItem
         {
             uniformModel = "\2035mrp\Model\Helmet\opscore_HighCut_1.p3d";
@@ -267,7 +267,7 @@ class cfgWeapons
             "\2035mrp\Texture\Helmet\opscore_highcut_blk_co.paa",
             "\2035mrp\Texture\Helmet\attachment\c3_blk_CO.paa"
         };
-        descriptionShort="Armor Level III";
+        descriptionShort = "Armor Level III";
         class ItemInfo: HeadgearItem
         {
             uniformModel = "\2035mrp\Model\Helmet\opscore_HighCut_5.p3d";
@@ -421,7 +421,7 @@ class cfgWeapons
             "\2035mrp\Texture\Helmet\attachment\c3_blk_CO.paa",
             "\2035mrp\Texture\Helmet\attachment\princeton_blk_co.paa"
         };
-        descriptionShort="Armor Level III";
+        descriptionShort = "Armor Level III";
         class ItemInfo: HeadgearItem
         {
             uniformModel = "\2035mrp\Model\Helmet\opscore_HighCut_2.p3d";
@@ -812,7 +812,7 @@ class cfgWeapons
             "\2035mrp\Texture\Helmet\attachment\c3_blk_CO.paa",
             "\2035mrp\Texture\Helmet\attachment\princeton_blk_co.paa"
         };
-        descriptionShort="Armor Level III";
+        descriptionShort = "Armor Level III";
         class ItemInfo: HeadgearItem
         {
             uniformModel = "\2035mrp\Model\Helmet\opscore_HighCut_3.p3d";
@@ -899,7 +899,7 @@ class cfgWeapons
             "\2035mrp\Texture\Helmet\attachment\IR_Flag_US_co.paa",
             "\2035mrp\Texture\Helmet\attachment\surefire_tan_co.paa"
         };
-        descriptionShort="Armor Level III";
+        descriptionShort = "Armor Level III";
         class ItemInfo: HeadgearItem
         {
             uniformModel = "\2035mrp\Model\Helmet\opscore_HighCut_4.p3d";
@@ -933,7 +933,7 @@ class cfgWeapons
             "\2035mrp\Texture\Helmet\attachment\IR_Flag_UK_co.paa",
             "\2035mrp\Texture\Helmet\attachment\surefire_tan_co.paa"
         };
-        descriptionShort="Armor Level III";
+        descriptionShort = "Armor Level III";
         class ItemInfo: HeadgearItem
         {
             uniformModel = "\2035mrp\Model\Helmet\opscore_HighCut_4.p3d";
@@ -967,7 +967,7 @@ class cfgWeapons
             "\2035mrp\Texture\Helmet\attachment\IR_Flag_US_od_co.paa",
             "\2035mrp\Texture\Helmet\attachment\surefire_rgr_co.paa"
         };
-        descriptionShort="Armor Level III";
+        descriptionShort = "Armor Level III";
         class ItemInfo: HeadgearItem
         {
             uniformModel = "\2035mrp\Model\Helmet\opscore_HighCut_4.p3d";
@@ -1001,7 +1001,7 @@ class cfgWeapons
             "\2035mrp\Texture\Helmet\attachment\IR_Flag_UK_od_co.paa",
             "\2035mrp\Texture\Helmet\attachment\surefire_rgr_co.paa"
         };
-        descriptionShort="Armor Level III";
+        descriptionShort = "Armor Level III";
         class ItemInfo: HeadgearItem
         {
             uniformModel = "\2035mrp\Model\Helmet\opscore_HighCut_4.p3d";
@@ -1552,7 +1552,7 @@ class cfgWeapons
             "",
             "\2035mrp\Texture\Helmet\attachment\surefire_tan_co.paa"
         };
-        descriptionShort="Armor Level III";
+        descriptionShort = "Armor Level III";
         class ItemInfo: HeadgearItem
         {
             uniformModel = "\2035mrp\Model\Helmet\opscore_HighCut_4.p3d";
@@ -1586,7 +1586,7 @@ class cfgWeapons
             "",
             "\2035mrp\Texture\Helmet\attachment\surefire_rgr_co.paa"
         };
-        descriptionShort="Armor Level III";
+        descriptionShort = "Armor Level III";
         class ItemInfo: HeadgearItem
         {
             uniformModel = "\2035mrp\Model\Helmet\opscore_HighCut_4.p3d";
