@@ -2,7 +2,7 @@
 #include "\a3\ui_f\hpp\defineResinclDesign.inc"
 /*
  * Author: veteran29
- * Initializes loading screen display and adds Ghosts of Battle branding.
+ * Initializes loading screen display and adds ArmaForces branding.
  *
  * Arguments:
  * 0: Loading display <DISPLAY>
@@ -17,13 +17,13 @@ params ["_display"];
 
 TRACE_1("Loading screen",_display);
 
-private _width = 512 * pixelW;
-private _height = 512 * pixelH;
+private _width = 256 * pixelW;
+private _height = 256 * pixelH;
 
 private _picture = _display ctrlCreate ["RscPicture", -1];
 _picture ctrlSetPosition [
-    safezoneX,
-    safezoneY + safeZoneH - _height,
+    safeZoneX,
+    safeZoneY + safeZoneH - _height,
     _width, _height
 ];
 
@@ -31,21 +31,21 @@ private _month = systemTime select 1;
 private _easterMonth = [] call EFUNC(common,easterDate) select 1;
 switch (_month) do {
     case 10: {
-        _picture ctrlSetText QUOTE(z\ghost\addons\media\images\logo_256.paa);
+        _picture ctrlSetText QPATHTOF(ui\ghost.paa);
     };
     case 12: {
-        _picture ctrlSetText QUOTE(z\ghost\addons\media\images\logo_256.paa);
+        _picture ctrlSetText QPATHTOF(ui\ghost.paa);
     };
     case _easterMonth: {
-        _picture ctrlSetText QUOTE(z\ghost\addons\media\images\logo_256.paa);
+        _picture ctrlSetText QPATHTOF(ui\ghost.paa);
     };
     default {
-        _picture ctrlSetText QUOTE(z\ghost\addons\media\images\logo_256.paa);
+        _picture ctrlSetText QPATHTOF(ui\ghost.paa);
     };
 };
 _picture ctrlCommit 0;
 
-private _ctrlBg = _display displayctrl IDC_LOADINGSTART_CUSTOM_BG;
+private _ctrlBg = _display displayCtrl IDC_LOADINGSTART_CUSTOM_BG;
 private _backgroundCfg = uiNamespace getVariable [QGVAR(backgroundCfg), configNull];
 if (isNull _backgroundCfg) then {
     if (_month == _easterMonth && {selectRandom [true, false]}) then {
@@ -60,7 +60,7 @@ if (isNull _backgroundCfg) then {
 _ctrlBg ctrlSetText getText (_backgroundCfg >> "path");
 _ctrlBg ctrlCommit 0;
 
-private _ctrlGrpLoadingStart = _display displayctrl IDC_LOADINGSTART_LOADINGSTART;
+private _ctrlGrpLoadingStart = _display displayCtrl IDC_LOADINGSTART_LOADINGSTART;
 private _loadingLabel = _display ctrlCreate ["RscStructuredText", -1, _ctrlGrpLoadingStart];
 _loadingLabel ctrlSetPosition [0, 0, 1, 1];
 _loadingLabel ctrlSetStructuredText parseText ([

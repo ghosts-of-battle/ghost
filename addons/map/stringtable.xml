@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="GHOST">
     <Package name="Map">
-        <Key ID="STR_GHOST_Map_DisplayName">
-            <English>Ghosts of Battle - Map</English>
-            <Polish>Ghosts of Battle - Map</Polish>
-        </Key>
-        <Key ID="STR_GHOST_Map_ColorRed">
-            <English>Red (Alpha)</English>
-            <Polish>Czerwony (Alpha)</Polish>
-        </Key>
         <Key ID="STR_GHOST_Map_ColorBlue">
             <English>Blue (Bravo)</English>
             <Polish>Niebieski (Bravo)</Polish>
@@ -25,9 +17,17 @@
             <English>Pink</English>
             <Polish>Różowy</Polish>
         </Key>
-        <Key ID="STR_GHOST_Map_ColorPink">
+        <Key ID="STR_GHOST_Map_ColorRed">
+            <English>Red (Alpha)</English>
+            <Polish>Czerwony (Alpha)</Polish>
+        </Key>
+        <Key ID="STR_GHOST_Map_ColorYellow">
             <English>Yellow (Support)</English>
-            <Polish>Różowy (Wsparcie)</Polish>
+            <Polish>Żółty (Wsparcie)</Polish>
+        </Key>
+        <Key ID="STR_GHOST_Map_DisplayName">
+            <English>Ghosts of Battle - Map</English>
+            <Polish>Ghosts of Battle - Map</Polish>
         </Key>
     </Package>
 </Project>

@@ -9,7 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             "ghost_common"
         };
-        author = QAUTHOR;
+        author = "ArmaForces";
         authors[] = {"Madin", "veteran29"};
         VERSION_CONFIG;
     };

@@ -1,12 +1,9 @@
-class CBA_Extended_EventHandlers;
 class CfgVehicles {
     // External class reference START
     class B_AssaultPack_rgr;
     class B_AssaultPack_Kerry;
     class B_Carryall_cbr;
     class B_Kitbag_rgr;
-    class B_TacticalPack_blk;
-    class B_Kitbag_Base;
     class B_TacticalPack_blk;
     class B_Kitbag_Base;
     class B_RadioBag_01_base_F;

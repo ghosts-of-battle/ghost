@@ -1,18 +1,14 @@
-class CBA_Extended_EventHandlers;
 class CBA_Extended_EventHandlers_base;
+class Turrets;
 class CfgVehicles {
     class B_Heli_Transport_03_unarmed_F;
     class Helicopter;
     class Helicopter_Base_F : Helicopter {
         class Turrets: Turrets {
-            class MainTurret;
         };
-        class AnimationSources;
     };
     class Helicopter_Base_H : Helicopter_Base_F {
         class Turrets : Turrets {
-            class CopilotTurret;
-            class MainTurret;
         };
     };
     class Heli_Transport_01_base_F : Helicopter_Base_H {
@@ -149,9 +145,7 @@ class CfgVehicles {
             };
         };
 
-
-    class B_Heli_Transport_03_F;
-    class B_Heli_Transport_01_F: Helicopter_Base_H ;
+    class B_Heli_Transport_01_F: Helicopter_Base_H{};
     class GVAR(B_Heli_Transport_01_F_medic): B_Heli_Transport_01_F {
         author = QAUTHOR;
         _generalMacro="B_Heli_Transport_01_F";

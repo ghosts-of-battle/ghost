@@ -20,6 +20,7 @@ class CfgMarkerColors {
         color[] = {0.596,1,0.596,1};
     };
     class ColorUNKNOWN: Default {
+        name = CSTRING(ColorYellow);
         color[] = {1,1,0.502,1};
     };
 };

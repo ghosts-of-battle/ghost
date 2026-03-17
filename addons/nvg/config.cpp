@@ -9,11 +9,13 @@ class CfgPatches {
         requiredAddons[] = {
             "ghost_common",
             "cba_main",
-            "ace_nightvision"
+            "ace_nightvision",
+            "tweed_uaf_21_cfg"
         };
-        author = "Ghost";
-        authors[] = {"PDT"};
+        author = "ghost";
+        authors[] = {"YONV"};
         VERSION_CONFIG;
+        skipWhenMissingDependencies = 1;
     };
 };
 
@@ -22,4 +24,3 @@ class CfgPatches {
 #include "CfgEffects.hpp"
 #include "CfgWeapons.hpp"
 #include "XtdGear.hpp"
-// #include "BettIR.hpp"

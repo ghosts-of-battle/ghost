@@ -22,6 +22,7 @@ if (isNull _unit) exitWith {"iconMan"};
 
 if (!isNull objectParent _unit) exitWith {
     _vehicle = vehicle _unit;
+    private _vehicleCfg = configOf _vehicle;
     if (_vehicle isKindOf "Plane") exitWith {
         "iconPlane"
     };
@@ -34,7 +35,7 @@ if (!isNull objectParent _unit) exitWith {
         "iconStaticMortar"
     };
 
-    if (getNumber (configFile >> "CfgVehicles" >> typeOf _vehicle >> "artilleryScanner") == 1) exitWith {
+    if (getNumber (_vehicleCfg >> "artilleryScanner") == 1) exitWith {
         "iconStaticCannon"
     };
 

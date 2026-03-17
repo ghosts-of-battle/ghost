@@ -35,7 +35,7 @@ class XtdGearModels {
                     label = "Black";
                     image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
                 };
-                class bnn {
+                class brn {
                     label = "Brown";
                     image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
                 };
@@ -73,7 +73,7 @@ class XtdGearModels {
                     image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
                 };
                 class wht {
-                    label = "Olive";
+                    label = "White";
                     image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
                 };
                 class mud {

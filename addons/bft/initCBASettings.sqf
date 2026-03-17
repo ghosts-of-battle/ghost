@@ -1,4 +1,7 @@
-#include "script_component.hpp"
+#ifndef COMPONENT
+    #include "script_component.hpp"
+#endif
+
 [
     QGVAR(bftEnabled),
     "CHECKBOX",

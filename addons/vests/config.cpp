@@ -7,8 +7,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "ghost_main",
-            "FPGP_2_Vests"
+            "ghost_main"
         };
         authorUrl = "https://www.ghostsofbattle.com/";
         author = QAUTHOR;

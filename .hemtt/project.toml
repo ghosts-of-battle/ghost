@@ -1,14 +1,12 @@
 name = "Ghost"
 mainprefix = "z"
 prefix = "ghost"
-author = "YonV"
 
 [files]
 include = [
     "mod.cpp",
     "README.md",
     "LICENSE",
-    "3rdparty",
     "AUTHORS.txt",
     "gobp2_256_g.paa",
     "gobp2_256.paa",
@@ -16,13 +14,10 @@ include = [
     "2023-11-18_12-57-37.png"
 ]
 
-exclude = ["*.psd", "*.tga"]
+exclude = ["*.psd", "*.png", "*.tga"]
 
 [version]
 path = "addons/main/script_version.hpp"
 
-[asc]
-exclude = [
-    ".inc.sqf",
-    "cba_settings.sqf",
-]
+[properties]
+author = "Ghosts of Battle"

@@ -4,8 +4,8 @@ class CfgMainMenuSpotlight {
     class GVAR(server1) {
         text = CSTRING(SpotlightJoin);
         textIsQuote = 0;
-        picture = QUOTE(z\ghost\addons\media\images\logo_1024.paa);
-        action = QUOTE(_this call (uiNamespace getVariable QQFUNC(join)));
+        picture = QUOTE(\z\ghost\addons\main\ui\logo_sm_ca.paa);
+        action = QUOTE(call (uiNamespace getVariable QQFUNC(join)));
         actionText = CSTRING(SpotlightHeader);
         condition = QUOTE(true);
     };
@@ -50,7 +50,15 @@ class CfgMainMenuSpotlight {
 
     delete SPE_Arsenal;
     delete SPE_Campagin_OperationCobra_04;
-    delete SPE_Coop_DerZahnarzt;
+    delete SPE_Coop_Der_Zahnarzt;
     delete SPE_Faction_Showcase_GER;
     delete SPE_Faction_Showcase_US;
+    delete SPE_Coop_Attack_on_Mortain;
+    delete SPE_Coop_Battle_of_St_Barthelemy;
+    delete SPE_Coop_Panzerkampfwagen;
+    delete SPE_Coop_Prizefighter;
+
+    delete Scenario_TrainingDay_RF;
+    delete Scenario_FireSeason_RF;
+    delete Scenario_AirControl_RF;
 };

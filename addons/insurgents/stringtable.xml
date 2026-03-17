@@ -2,12 +2,8 @@
 <Project name="GHOST">
     <Package name="Insurgents">
         <Key ID="STR_GHOST_Insurgents_DisplayName">
-            <English>Ghosts of Battle - Insurgents</English>
-            <Polish>Ghosts of Battle - Partyzanci</Polish>
-        </Key>
-        <Key ID="STR_GHOST_Insurgents_Insurgent">
-            <English>Insurgent (randomized)</English>
-            <Polish>Partyzant (losowy)</Polish>
+            <English>ArmaForces - Insurgents</English>
+            <Polish>ArmaForces - Partyzanci</Polish>
         </Key>
         <Key ID="STR_GHOST_Insurgents_Gear">
             <English>Insurgents Gear</English>
@@ -21,17 +17,21 @@
             <English>If disabled gear from this configFile class will be not used. Mission defined gear will be not disabled.</English>
             <Polish>Gdy wyłączone sprzęt z klasy z configFile nie będzie używany. Sprzęt zdefiniowany w misji nie zostanie wyłączony.</Polish>
         </Key>
-        <Key ID="STR_GHOST_Insurgents_Group_Sentry">
-            <English>Insurgent Sentry</English>
-            <Polish>Czujka Partyzantów</Polish>
-        </Key>
         <Key ID="STR_GHOST_Insurgents_Group_FireTeam">
             <English>Insurgent Fire Team</English>
             <Polish>Zespół Ogniowy Partyzantów</Polish>
         </Key>
+        <Key ID="STR_GHOST_Insurgents_Group_Sentry">
+            <English>Insurgent Sentry</English>
+            <Polish>Czujka Partyzantów</Polish>
+        </Key>
         <Key ID="STR_GHOST_Insurgents_Group_Squad">
             <English>Insurgent Squad</English>
             <Polish>Drużyna Partyzantów</Polish>
+        </Key>
+        <Key ID="STR_GHOST_Insurgents_Insurgent">
+            <English>Insurgent (randomized)</English>
+            <Polish>Partyzant (losowy)</Polish>
         </Key>
     </Package>
 </Project>

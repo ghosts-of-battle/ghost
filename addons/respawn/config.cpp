@@ -9,7 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             "ghost_common"
         };
-        author = QAUTHOR;
+        author = "ArmaForces";
         VERSION_CONFIG;
     };
 };
@@ -17,3 +17,4 @@ class CfgPatches {
 
 #include "CfgEventHandlers.hpp"
 #include "CfgRespawnTemplates.hpp"
+#include "CfgVehicles.hpp"

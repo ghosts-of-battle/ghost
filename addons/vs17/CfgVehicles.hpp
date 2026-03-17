@@ -3,7 +3,6 @@ class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base{};
 class CfgVehicles {
     class Man;
     class Helipad_base_F;
-    class Land_HelipadCircle_F;
     class GVAR(vs17_base): Helipad_base_F {
         scope = 0;
         vehicleclass = "ghost";
@@ -39,8 +38,8 @@ class CfgVehicles {
 
                 class GVAR(vs17Remove) {
                     displayName = "Pick up";
-                    condition = QUOTE(_this call FUNC(vs17canremove));
-                    statement = QUOTE(_this call FUNC(vs17pick));
+                    condition = QUOTE(call FUNC(vs17canremove));
+                    statement = QUOTE(call FUNC(vs17pick));
                     showDisabled = 0;
                     icon = "\a3\ui_f\data\IGUI\Cfg\Actions\getincommander_ca.paa";
                 };

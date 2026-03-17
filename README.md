@@ -55,10 +55,6 @@ ACE MOD https://steamcommunity.com/workshop/filedetails/?id=463939057
   - Realistic Dispersion
   - Tracers (ball)
 
-# This mod includes retextures for: (per expressed permission on each mods steam page)
-exer's
-- Foxtrot Paramilitary Gear Pack v2 https://steamcommunity.com/sharedfiles/filedetails/?id=2955586129
-
 
 # This mod also includes : (per expressed permission on each mods steam page)
 Kiyo's 

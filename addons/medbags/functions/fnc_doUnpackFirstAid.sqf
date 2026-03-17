@@ -35,11 +35,10 @@ if (isNull _unit) exitWith {};
 
     _unit playAction "Gear";
 
-    if (vehicle _unit != _unit) then {
+    if (!isNull objectParent _unit) then {
         playSound QGVAR(Medical_FirstAid_Open_1);
     } else {
-        private _pitch = random [0.6, 1, 1.4];
-        playSound3D ["z\ghost\addons\medbags\data\sounds\FirstAid_Open_1.ogg", _unit]
+        playSound3D ["z\ghost\addons\medbags\data\sounds\FirstAid_Open_1.ogg", _unit];
     };
 
     ghost_MEDICAL_SUPPLIES_UNPACK_SUCCESS = false;
@@ -50,7 +49,7 @@ if (isNull _unit) exitWith {};
         [],
         { ghost_MEDICAL_SUPPLIES_UNPACK_SUCCESS = true; },
         { ghost_MEDICAL_SUPPLIES_UNPACK_FAILURE = true; },
-        Hint "Unpacking Boo Boo Bag....",
+        "Unpacking Boo Boo Bag....",
         {true},
         ["isNotInside", "isNotSitting", "isNotSwimming"]
     ] call ACE_common_fnc_progressBar;
@@ -79,7 +78,5 @@ if (isNull _unit) exitWith {};
         [_unit, "GHOST_Apap", 2, _order, _overflow] call EFUNC(common,addItem);
     };
 
-    if (ghost_MEDICAL_SUPPLIES_UNPACK_FAILURE) exitWith {
-        [_unit, QGVAR(Medical_FirstAid_Open_1)] call EFUNC(common,stop3dSound);
-    };
+    if (ghost_MEDICAL_SUPPLIES_UNPACK_FAILURE) exitWith {};
 };

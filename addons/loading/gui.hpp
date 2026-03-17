@@ -1,5 +1,3 @@
-class RscText;
-class RscPicture;
 class RscStandardDisplay;
 class RscControlsGroup;
 class RscPictureKeepAspect;
@@ -17,20 +15,18 @@ class RscPictureKeepAspect;
                     class GVAR(background): RscPictureKeepAspect { \
                         idc = IDC_LOADINGSTART_CUSTOM_BG; \
                         x = 0; \
-                        y = "-(0.5 * safezoneH)"; \
-                        w = "safezoneW"; \
-                        h = "2 * safezoneH"; \
+                        y = "-(0.5 * safeZoneH)"; \
+                        w = "safeZoneW"; \
+                        h = "2 * safeZoneH"; \
                     }; \
-                    class Noise: RscPicture { \
-                        text="\A3\Ui_f\data\GUI\Cfg\LoadingScreens\LoadingNoise_ca.paa"; \
-                    }; \
+                    class Noise; \
                     class GVAR(lines): Noise {}; \
                     class Logo: RscPictureKeepAspect { \
                         y = "-safeZoneH"; \
                     }; \
                     class GVAR(logo): Logo { \
                         idc = -1; \
-                        y = "0 * safezoneH"; \
+                        y = "0 * safeZoneH"; \
                     }; \
                 }; \
             }; \

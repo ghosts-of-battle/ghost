@@ -35,11 +35,10 @@ if (isNull _unit) exitWith {};
 
     _unit playAction "Gear";
 
-    if (vehicle _unit != _unit) then {
+    if (!isNull objectParent _unit) then {
         playSound QGVAR(Medical_MedicKit_Open_1);
     } else {
-        private _pitch = random [0.6, 1, 1.4];
-        playSound3D ["z\ghost\addons\medbags\data\sounds\medickit_open_1.ogg", _unit]
+        playSound3D ["z\ghost\addons\medbags\data\sounds\medickit_open_1.ogg", _unit];
     };
 
     ghost_MEDICAL_SUPPLIES_UNPACK_SUCCESS = false;
@@ -50,7 +49,7 @@ if (isNull _unit) exitWith {};
         [], 
         { ghost_MEDICAL_SUPPLIES_UNPACK_SUCCESS = true; }, 
         { ghost_MEDICAL_SUPPLIES_UNPACK_FAILURE = true; },
-        Hint "Unpack MOPP Bag....",
+        "Unpack MOPP Bag....",
         {true},
         ["isNotInside", "isNotSitting", "isNotSwimming"]
     ] call ACE_common_fnc_progressBar;

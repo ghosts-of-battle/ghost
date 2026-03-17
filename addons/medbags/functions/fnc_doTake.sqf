@@ -21,6 +21,9 @@
 
 params ["_unit", "_target"];
 
+private _order = [1, 2, 3];
+private _overflow = true;
+
 _target removeItem "ghost_medbags_FirstAid";
 
 [_unit, "ghost_medbags_FirstAid", 1, _order, _overflow] call EFUNC(common,addItem);

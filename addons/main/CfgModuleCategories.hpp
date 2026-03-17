@@ -10,20 +10,3 @@ class CfgVehicleClasses {
         displayName = CSTRING(Category);
     };
 };
-
-class CfgVehicleClasses {
-    class PREFIX_Vehicles {
-        displayName = CSTRING(Category);
-    };
-};
-
-class CfgEditorCategories {
-	class PREFIX  {
-		displayName = CSTRING(Category);
-	};
-};
-class CfgEditorSubcategories {
-	class PREFIX  {
-		displayName = CSTRING(Category);
-	};
-};

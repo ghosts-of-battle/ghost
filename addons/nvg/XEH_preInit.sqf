@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 ADDON = false;
 #include "XEH_PREP.hpp"
-ADDON = "true";
+ADDON = true;
 
 // ACE check
 [
@@ -18,11 +18,7 @@ ADDON = "true";
   "LIST",
   [
     "NVG Effect",
-    "
-    Green Phosphor (no effect).\n
-    Modern Warfare (greenish tint WP)\n
-    White Phosphor (White Phosphor)
-    "
+    "Green Phosphor (no effect).\nModern Warfare (greenish tint WP)\nWhite Phosphor (White Phosphor)"
   ],
   COMPONENT_NAME,
   [
@@ -52,7 +48,7 @@ ADDON = "true";
 [
   "ghost_nvg_Blacklist",
   "EDITBOX",
-  ["Blacklisted NVG classnames", "Seperrate classnames by commas \nEg. className1, className2, className3, etc"],
+  ["Blacklisted NVG classnames", "Separate classnames with commas. Example: className1, className2, className3"],
   COMPONENT_NAME,
   ""
 ] call cba_settings_fnc_init;

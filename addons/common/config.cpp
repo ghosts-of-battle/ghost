@@ -9,10 +9,11 @@ class CfgPatches {
         requiredAddons[] = {
             "ghost_main"
         };
-        author = QAUTHOR;
+        author = "ArmaForces";
         VERSION_CONFIG;
     };
 };
 
 #include "CfgEventHandlers.hpp"
+#include "CfgVehicles.hpp"
 #include "ui\RscModal.hpp"

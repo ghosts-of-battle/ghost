@@ -6,7 +6,8 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "a3_props_f_orange"
+            "a3_props_f_orange",
+            "ghost_common"
         };
         units[] = {
             QGVAR(Item_FirstAid),

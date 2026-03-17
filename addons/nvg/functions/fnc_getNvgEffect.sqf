@@ -1,32 +1,43 @@
 #include "..\script_component.hpp"
 
 /*
- *	Author: PDT
- *	gets the player's select NVG effect and checks if ACE is running
+ * Author: PDT
+ * Gets the player's selected NVG effect and checks if ACE is running.
  *
- *	Arguments:
- *  None
+ * Arguments:
+ * None
  *
- *	Return Value:
- *	<ARRAY> - [<NUMBER>] Color correction array
+ * Return Value:
+ * <ARRAY> - Color correction array
  *
- * example:
- * call PDT_EnhancedNVG_fnc_getNvgEffect;
+ * Example:
+ * call Pghost_EnhancedNVG_fnc_getNvgEffect;
  */
 
 private _effectSelection = ghost_nvg_Effect;
-private _nvgBlacklist    = ghost_nvg_Blacklist; // nvg blacklist
+private _rawBlacklist = ghost_nvg_Blacklist; // comma-separated classnames
 private _effect = [];
 
-if !((hmd player) in _nvgBlacklist) then {
-    if !(_effectSelection isEqualTo "") then {
-        _effect = (
-        configFile >> "CfgEffects" >> format [
-            "%1%2", _effectSelection, ["", "Ace"] select ghost_nvg_ACE
-        ]
-        ) call BIS_fnc_returnConfigEntry;    // selected effect
+private _blacklist = [];
+if (_rawBlacklist isEqualType []) then {
+    _blacklist = _rawBlacklist;
+} else {
+    if (_rawBlacklist isNotEqualTo "") then {
+        _blacklist = _rawBlacklist splitString ",";
+        _blacklist = _blacklist apply {[_x] call BIS_fnc_trimString};
     };
 };
 
-_return = _effect;
-_return
+if !((hmd player) in _blacklist) then {
+    if (_effectSelection isNotEqualTo "") then {
+        _effect = (
+            configFile >> "CfgEffects" >> format [
+                "%1%2",
+                _effectSelection,
+                ["", "Ace"] select ghost_nvg_ACE
+            ]
+        ) call BIS_fnc_returnConfigEntry; // selected effect
+    };
+};
+
+_effect

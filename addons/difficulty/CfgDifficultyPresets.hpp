@@ -2,7 +2,6 @@ class CfgDifficultyPresets {
 
     defaultPreset = QUOTE(Difficulty_GHOST);
 
-    class Custom;
     class Difficulty_GHOST {
         displayName = CSTRING(DifficultyName);
 

@@ -5,7 +5,7 @@
         GEAR_SETTING(_class),
         "CHECKBOX",
         [format [LLSTRING(GearEnabled), _class], LSTRING(GearEnabled_Description)],
-        [COMPONENT_NAME, LSTRING(Gear)],
+        [LSTRING(DisplayName), LSTRING(Gear)],
         true,
         1,
         {},

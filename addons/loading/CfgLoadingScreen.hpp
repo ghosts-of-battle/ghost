@@ -1,7 +1,7 @@
 #define LOADING_SCREEN_CLASS(className,authorName) \
     class className { \
         author = QUOTE(authorName); \
-        path = QPATHTOF(ui\##className##.paa); \
+        path = QPATHTOF(ui\loading\##className##.paa); \
         class Noise { \
             text="\A3\Ui_f\data\GUI\Cfg\LoadingScreens\LoadingNoise_ca.paa"; \
         }; \

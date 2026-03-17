@@ -1,4 +1,10 @@
+#ifdef COMPONENT
+    #undef COMPONENT
+#endif
 #define COMPONENT bft
+#ifdef COMPONENT_BEAUTIFIED
+    #undef COMPONENT_BEAUTIFIED
+#endif
 #define COMPONENT_BEAUTIFIED BluForce Tracker
 #include "\z\ghost\addons\main\script_mod.hpp"
 

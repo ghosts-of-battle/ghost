@@ -14,13 +14,8 @@ class CfgPatches
 class CfgWeapons
 {
     // Define base classes for extended equipment
-    class UniformItem;
-    class Uniform_Base;
-    class V_PlateCarrier1_rgr;
-    class VestItem;
     class H_HelmetB;
     class HeadgearItem;
-    class NVGoggles;
 
     // Helmet configuration; unspecified parts follow base defaults
 

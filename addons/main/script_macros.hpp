@@ -1,5 +1,4 @@
 #include "\x\cba\addons\main\script_macros_common.hpp"
-#include "\a3\ui_f\hpp\defineDIKCodes.inc"
 #define DFUNC(module) TRIPLES(ADDON,fnc,module)
 #ifdef DISABLE_COMPILE_CACHE
     #undef PREP
@@ -9,13 +8,8 @@
     #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
 #endif
 
-#define GETPRVAR(var1,var2) (profileNamespace getVariable [ARR_2(var1,var2)])
-#define SETPRVAR(var1,var2) (profileNamespace setVariable [ARR_2(var1,var2)])
-
-
 // ACE3 reference macros
 #define ACE_PREFIX ace
-#define ACE_ADDON(module) DOUBLES(ACE_PREFIX,module)
 
 #define ACEGVAR(module,var)         TRIPLES(ACE_PREFIX,module,var)
 #define QACEGVAR(module,var)        QUOTE(ACEGVAR(module,var))
@@ -30,8 +24,8 @@
 #define IS_MOD_LOADED(modclass)     (isClass (configFile >> "CfgPatches" >> #modclass))
 
 // Extension macros
-#define EXT "Ghosts of Battle_mods"
-#define EXT_LOG "Ghosts of Battle_mods_log"
+#define EXT "armaforces_mods"
+#define EXT_LOG "armaforces_mods_log"
 
 // GHOST Debug macros
 #include "\z\ghost\addons\main\script_debug.hpp"

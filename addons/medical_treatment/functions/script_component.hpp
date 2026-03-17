@@ -1,1 +1,0 @@
-#include "\z\ghost\addons\medical_treatment\script_component.hpp"

@@ -25,7 +25,7 @@ if (!isNull (_markerName call BIS_fnc_groupFromNetId)) then {
     _group = group (_markerName call BIS_fnc_objectFromNetId);
 };
 
-if (!((side _group) isEqualTo playerSide)) exitWith {
+if ((side _group) != playerSide) exitWith {
     hintSilent "This group is not in your faction!";
 };
 
@@ -35,9 +35,11 @@ _unitNameList = "";
 
 {
     private ["_markerColorName", "_color", "_unitMOS", "_unitName", "_leader", "_vehicle"];
+    private _unitCfg = configOf _x;
+    private _vehicleObject = objectParent _x;
     _markerColorName = [_x] call FUNC(getMarkerColor);
     _color = (getArray (configFile >> "CfgMarkerColors" >> _markerColorName >> "color")) call BIS_fnc_colorRGBtoHTML;
-    _unitMOS = "[" + getText (configFile >> "CfgVehicles" >> (typeOf _x) >> "displayName") + "]";
+    _unitMOS = "[" + getText (_unitCfg >> "displayName") + "]";
     _unitName = name _x;
     _leader = "";
     _vehicle = "";
@@ -46,11 +48,11 @@ _unitNameList = "";
         _leader = "[L]";
     };
 
-    if (vehicle _x != _x) then {
-        _vehicle = "[" + getText (configFile >> "CfgVehicles" >> (typeOf (vehicle _x)) >> "displayName") + "]";
+    if (!isNull _vehicleObject) then {
+        _vehicle = "[" + getText (configOf _vehicleObject >> "displayName") + "]";
     };
 
-    if (!isPlayer _x && !(GVAR(showAINames))) then {
+    if (!isPlayer _x && {!GVAR(showAINames)}) then {
         _unitName = "[AI]";
     };
 

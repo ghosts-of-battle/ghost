@@ -2,7 +2,7 @@
     QGVAR(loggingEnabled),
     "CHECKBOX",
     LSTRING(Logging_Enabled),
-    COMPONENT_NAME,
+    LSTRING(DisplayName),
     false,
     1,
     {},

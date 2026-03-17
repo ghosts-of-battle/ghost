@@ -1,4 +1,3 @@
-class CBA_Extended_EventHandlers;
 class CfgVehicles {
     class B_A_Plane_Transport_01_infantry_F;
     class Plane_Transport_01_vehicle_base_F;

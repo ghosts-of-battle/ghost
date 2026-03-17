@@ -3,7 +3,7 @@
     QGVAR(enabled),
     "CHECKBOX",
     [LSTRING(Enabled), LSTRING(Enabled_Description)],
-    COMPONENT_NAME,
+    LSTRING(DisplayName),
     true,
     true,
     {

@@ -9,7 +9,15 @@ class CfgPatches {
         requiredAddons[] = {
             "ghost_main"
         };
-        units[] = {};
+        units[] = {
+            QGVAR(B_Heli_Transport_01_F_grey),
+            QGVAR(B_Heli_Transport_01_F_trop),
+            QGVAR(B_Heli_Transport_01_F_sand),
+            QGVAR(B_Heli_Transport_01_F_medic),
+            QGVAR(B_Heli_Medevac_03dazt_F),
+            QGVAR(B_Heli_Medevac_03daz_F),
+            QGVAR(B_Heli_Medevac_031_F)
+        };
         weapons[] = {};
         authors[] = {
             "YonV"
