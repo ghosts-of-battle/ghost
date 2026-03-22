@@ -2,8 +2,8 @@
 <Project name="GHOST">
     <Package name="Safestart">
         <Key ID="STR_GHOST_Safestart_DisplayName">
-            <English>ArmaForces - Safestart</English>
-            <Polish>ArmaForces - Bezpieczny start</Polish>
+            <English>Ghosts of Battle - Safestart</English>
+            <Polish>Ghosts of Battle - Bezpieczny start</Polish>
         </Key>
         <Key ID="STR_GHOST_Safestart_StartLocked">
             <English>Lock weapon</English>

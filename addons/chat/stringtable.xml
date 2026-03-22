@@ -14,8 +14,8 @@
             <Polish>Czat globalny i strony jest wyłączony, twoja wiadomość jest widoczna tylko dla administratorów i zeusów!</Polish>
         </Key>
         <Key ID="STR_GHOST_Chat_DisplayName">
-            <English>ArmaForces - Chat</English>
-            <Polish>ArmaForces - Czat</Polish>
+            <English>Ghosts of Battle - Chat</English>
+            <Polish>Ghosts of Battle - Czat</Polish>
         </Key>
     </Package>
 </Project>

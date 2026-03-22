@@ -11,12 +11,14 @@ class CfgPatches {
         };
         units[] = {
             QGVAR(Item_FirstAid),
+            QGVAR(Item_Fluid),
             QGVAR(Item_MedicKit),
             QGVAR(Item_DrugKit),
             QGVAR(Item_Trauma)
         };
         weapons[] = {
             QGVAR(FirstAid),
+            QGVAR(Fluid),
             QGVAR(MedicKit),
             QGVAR(DrugKit),
             QGVAR(Trauma)

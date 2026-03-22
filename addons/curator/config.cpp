@@ -10,7 +10,7 @@ class CfgPatches {
             "ghost_main",
             "ghost_debug_console"
         };
-        author = "ArmaForces";
+        author = "Ghosts of Battle";
         VERSION_CONFIG;
     };
 };

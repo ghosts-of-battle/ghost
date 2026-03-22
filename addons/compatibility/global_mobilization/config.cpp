@@ -10,7 +10,7 @@ class CfgPatches {
             "gm_weapons_ammo"
         };
         skipWhenMissingDependencies = 1;
-        author = "ArmaForces";
+        author = "Ghosts of Battle";
         authors[] = {"veteran29"};
         VERSION_CONFIG;
     };

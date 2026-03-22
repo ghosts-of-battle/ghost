@@ -2,8 +2,8 @@
 <Project name="GHOST">
     <Package name="Friendly_Fire">
         <Key ID="STR_GHOST_Friendly_Fire_DisplayName">
-            <English>ArmaForces - Friendly Fire</English>
-            <Polish>ArmaForces - Ogień sojuszniczy</Polish>
+            <English>Ghosts of Battle - Friendly Fire</English>
+            <Polish>Ghosts of Battle - Ogień sojuszniczy</Polish>
         </Key>
         <Key ID="STR_GHOST_Friendly_Fire_Logging_Enabled">
             <English>Friendly fire logging</English>

@@ -224,11 +224,407 @@ class XtdGearModels {
                 };
             };
         };
+        class ghost_H_HelmetB {
+            options[] = { "camo" };
+            label = "Combat Helmet";
+            class camo {
+                alwaysSelectable = 1;
+                values[] = { "Multicam", "Multicam_Snow", "Multicam_Woodland", "Solid_Black", "Solid_CoyoteBrown", "Solid_Olive", "Solid_Ranger_Green", "Solid_Tan", "Solid_White", "US_DCU", "US_M81", "US_Tigerstripe" };
+                class Solid_Black {
+                    label = "BLK";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class Multicam {
+                    label = "MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class Multicam_Snow {
+                    label = "MCA";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+                class Multicam_Woodland {
+                    label = "MCW";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+                class Solid_CoyoteBrown {
+                    label = "BRN";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Solid_Olive {
+                    label = "Olive";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+                class Solid_Ranger_Green {
+                    label = "Ranger";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class Solid_Tan {
+                    label = "Tan";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Solid_White {
+                    label = "White";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+                class US_DCU {
+                    label = "DCU";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class US_M81 {
+                    label = "M81";
+                    image = "z\aceax\addons\gearinfo\data\camo\m81.paa";
+                };
+                class US_Tigerstripe {
+                    label = "Tiger";
+                    image = "z\aceax\addons\gearinfo\data\camo\tsw.paa";
+                };
+            };
+        };
+        class ghost_H_HelmetB_camo {
+            options[] = { "camo" };
+            label = "Combat Helmet (Camo)";
+            class camo {
+                alwaysSelectable = 1;
+                values[] = { "Multicam", "Multicam_Snow", "Multicam_Woodland", "Solid_Black", "Solid_CoyoteBrown", "Solid_Olive", "Solid_Ranger_Green", "Solid_Tan", "Solid_White", "US_DCU", "US_M81", "US_Tigerstripe" };
+                class Solid_Black {
+                    label = "BLK";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class Multicam {
+                    label = "MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class Multicam_Snow {
+                    label = "MCA";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+                class Multicam_Woodland {
+                    label = "MCW";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+                class Solid_CoyoteBrown {
+                    label = "BRN";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Solid_Olive {
+                    label = "Olive";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+                class Solid_Ranger_Green {
+                    label = "Ranger";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class Solid_Tan {
+                    label = "Tan";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Solid_White {
+                    label = "White";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+                class US_DCU {
+                    label = "DCU";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class US_M81 {
+                    label = "M81";
+                    image = "z\aceax\addons\gearinfo\data\camo\m81.paa";
+                };
+                class US_Tigerstripe {
+                    label = "Tiger";
+                    image = "z\aceax\addons\gearinfo\data\camo\tsw.paa";
+                };
+            };
+        };
+        class ghost_H_HelmetSpecB {
+            options[] = { "camo" };
+            label = "Enhanced Combat Helmet";
+            class camo {
+                alwaysSelectable = 1;
+                values[] = { "Multicam", "Multicam_Snow", "Multicam_Woodland", "Solid_Black", "Solid_CoyoteBrown", "Solid_Olive", "Solid_Ranger_Green", "Solid_Tan", "Solid_White", "US_DCU", "US_M81", "US_Tigerstripe" };
+                class Solid_Black {
+                    label = "BLK";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class Multicam {
+                    label = "MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class Multicam_Snow {
+                    label = "MCA";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+                class Multicam_Woodland {
+                    label = "MCW";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+                class Solid_CoyoteBrown {
+                    label = "BRN";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Solid_Olive {
+                    label = "Olive";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+                class Solid_Ranger_Green {
+                    label = "Ranger";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class Solid_Tan {
+                    label = "Tan";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Solid_White {
+                    label = "White";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+                class US_DCU {
+                    label = "DCU";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class US_M81 {
+                    label = "M81";
+                    image = "z\aceax\addons\gearinfo\data\camo\m81.paa";
+                };
+                class US_Tigerstripe {
+                    label = "Tiger";
+                    image = "z\aceax\addons\gearinfo\data\camo\tsw.paa";
+                };
+            };
+        };
+        class ghost_H_HelmetB_light {
+            options[] = { "camo" };
+            label = "Lite Combat Helmet";
+            class camo {
+                alwaysSelectable = 1;
+                values[] = { "Multicam", "US_M81","Solid_Black","Multicam_Snow", "Multicam_Woodland", "Solid_CoyoteBrown", "Solid_Olive", "Solid_Ranger_Green", "Solid_Tan", "Solid_White", "US_DCU","US_Tigerstripe" };
+                class US_M81 {
+                    label = "M81";
+                    image = "z\aceax\addons\gearinfo\data\camo\m81.paa";
+                };
+                class Solid_Black {
+                    label = "BLK";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class Multicam {
+                    label = "MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class Multicam_Snow {
+                    label = "MCA";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+                class Multicam_Woodland {
+                    label = "MCW";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+                class Solid_CoyoteBrown {
+                    label = "BRN";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Solid_Olive {
+                    label = "Olive";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+                class Solid_Ranger_Green {
+                    label = "Ranger";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class Solid_Tan {
+                    label = "Tan";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Solid_White {
+                    label = "White";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+                class US_DCU {
+                    label = "DCU";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class US_Tigerstripe {
+                    label = "Tiger";
+                    image = "z\aceax\addons\gearinfo\data\camo\tsw.paa";
+                };
+            };
+        };
+        class ghost_H_HelmetB_light_basic {
+            options[] = { "camo" };
+            label = "Lite Combat Helmet";
+            class camo {
+                alwaysSelectable = 1;
+                values[] = { "Multicam", "US_M81","Solid_Black","Multicam_Snow", "Multicam_Woodland", "Solid_CoyoteBrown", "Solid_Olive", "Solid_Ranger_Green", "Solid_Tan", "Solid_White", "US_DCU", "US_Tigerstripe" };
+                class US_M81 {
+                    label = "M81";
+                    image = "z\aceax\addons\gearinfo\data\camo\m81.paa";
+                };
+                class Solid_Black {
+                    label = "BLK";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class Multicam {
+                    label = "MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class Multicam_Snow {
+                    label = "MCA";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+                class Multicam_Woodland {
+                    label = "MCW";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+                class Solid_CoyoteBrown {
+                    label = "BRN";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Solid_Olive {
+                    label = "Olive";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+                class Solid_Ranger_Green {
+                    label = "Ranger";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class Solid_Tan {
+                    label = "Tan";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Solid_White {
+                    label = "White";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+                class US_DCU {
+                    label = "DCU";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class US_Tigerstripe {
+                    label = "Tiger";
+                    image = "z\aceax\addons\gearinfo\data\camo\tsw.paa";
+                };
+            };
+        };
+        class opscoreh {
+            options[] = { "opt","camo" };
+            label = "Lite Combat Helmet";
+            class camo {
+                alwaysSelectable = 1;
+                values[] = { "mc", "blk", "od", "rgr", "tan", "arid" };
+                class blk {
+                    label = "BLK";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class mc {
+                    label = "MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class od {
+                    label = "Olive";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+                class tan {
+                    label = "Tan";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class arid {
+                    label = "DCU";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class rgr {
+                    label = "Ranger";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+            };
+            class opt {
+                alwaysSelectable = 1;
+                values[] = { "norm", "amp", "full" };
+
+                class norm {
+                    label = "Basic";
+                };
+                class amp {
+                    label = "AMP";
+                };
+                class full {
+                    label = "Full";
+                };
+            };
+        };
+        class wrp_headgear_opscore {
+            options[] = { "camo", "mod" }; // Always computed, do not edit
+            label = "Stealth Uniform";
+            class camo {
+                alwaysSelectable = 1;
+                values[] = { "aor1", "aor2", "blk", "khk", "mc", "mca", "mcb", "mct", "rgr", "tgr","tgrd" };
+                class aor1 {
+                    label = "AOR1";
+                    image = "z\aceax\addons\gearinfo\data\camo\aor1.paa";
+                };
+                class aor2 {
+                    label = "AOR2";
+                    image = "z\aceax\addons\gearinfo\data\camo\aor2.paa";
+                };
+                class blk {
+                    label = "BLK";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class mc {
+                    label = "MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class khk {
+                    label = "KHK";
+                    image = "z\aceax\addons\gearinfo\data\camo\tan.paa";
+                };
+                class mca {
+                    label = "MCA";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcd.paa";
+                };
+                class mcb {
+                    label = "MCB";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcb.paa";
+                };
+                class mct {
+                    label = "MCT";
+                    image = "z\aceax\addons\gearinfo\data\camo\mct.paa";
+                };
+                class rgr {
+                    label = "RGR";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class tgrd {
+                    label = "Tiger D";
+                    image = "z\aceax\addons\gearinfo\data\camo\tsd.paa";
+                };
+                class tgr {
+                    label = "Tiger";
+                    image = "z\aceax\addons\gearinfo\data\camo\tsw.paa";
+                };
+            };
+            class mod {
+              alwaysSelectable = 1;
+                values[] = { "base", "peltor", "peltorc", "peltorn" };
+
+                class base {
+                    label = "Base";
+                };
+                class peltor {
+                    label = "peltor";
+                };
+                class peltorc {
+                    label = "Peltor/Camera";
+                };
+                class peltornc {
+                    label = "peltor/NSW";
+                };
+            };
+        };
     };
 };
 
 class XtdGearInfos {
     class CfgWeapons {
+
         class ghost_Multicam_H_Booniehat_Multicam {
             model = "ghost_H_Booniehat";
             camo = "Multicam";
@@ -421,2013 +817,562 @@ class XtdGearInfos {
           model = "ghost_H_Cap_hs";
           camo = "US_M81";
         };
-        class GVAR(opscore_highcut_cover_coy_g15) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r5";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_Multicam {
+          model = "ghost_H_HelmetB";
+          camo = "Multicam";
         };
-        class GVAR(opscore_highcut_cover_coy_g16) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r6";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_Multicam_Snow {
+          model = "ghost_H_HelmetB";
+          camo = "Multicam_Snow";
         };
-        class GVAR(opscore_highcut_cover_coy_g17) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r7";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_Multicam_Woodland {
+          model = "ghost_H_HelmetB";
+          camo = "Multicam_Woodland";
         };
-        class GVAR(opscore_highcut_cover_coy_g18) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r8";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_Solid_Black {
+          model = "ghost_H_HelmetB";
+          camo = "Solid_Black";
         };
-        class GVAR(opscore_highcut_cover_coy_g1a) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "at";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_Solid_CoyoteBrown {
+          model = "ghost_H_HelmetB";
+          camo = "Solid_CoyoteBrown";
         };
-        class GVAR(opscore_highcut_cover_coy_g1b) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "bt";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_Solid_Ranger_Green {
+          model = "ghost_H_HelmetB";
+          camo = "Solid_Ranger_Green";
         };
-
-        class GVAR(opscore_highcut_cover_coy_g25) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r5";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_US_Tigerstripe {
+          model = "ghost_H_HelmetB";
+          camo = "US_Tigerstripe";
         };
-        class GVAR(opscore_highcut_cover_coy_g26) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r6";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_Solid_Olive {
+          model = "ghost_H_HelmetB";
+          camo = "Solid_Olive";
         };
-        class GVAR(opscore_highcut_cover_coy_g27) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r7";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_Solid_Tan {
+          model = "ghost_H_HelmetB";
+          camo = "Solid_Tan";
         };
-        class GVAR(opscore_highcut_cover_coy_g28) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r8";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_Solid_White {
+          model = "ghost_H_HelmetB";
+          camo = "Solid_White";
         };
-        class GVAR(opscore_highcut_cover_coy_g2a) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "at";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_US_DCU {
+          model = "ghost_H_HelmetB";
+          camo = "US_DCU";
         };
-        class GVAR(opscore_highcut_cover_coy_g2b) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "bt";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_US_M81 {
+          model = "ghost_H_HelmetB";
+          camo = "US_M81";
         };
-
-        class GVAR(opscore_highcut_cover_coy_g35) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r5";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_camo_Multicam {
+          model = "ghost_H_HelmetB_camo";
+          camo = "Multicam";
         };
-        class GVAR(opscore_highcut_cover_coy_g36) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r6";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_camo_Multicam_Snow {
+          model = "ghost_H_HelmetB_camo";
+          camo = "Multicam_Snow";
         };
-        class GVAR(opscore_highcut_cover_coy_g37) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r7";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_camo_Multicam_Woodland {
+          model = "ghost_H_HelmetB_camo";
+          camo = "Multicam_Woodland";
         };
-        class GVAR(opscore_highcut_cover_coy_g38) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r8";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_camo_Solid_Black {
+          model = "ghost_H_HelmetB_camo";
+          camo = "Solid_Black";
         };
-        class GVAR(opscore_highcut_cover_coy_g3a) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "at";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_camo_Solid_CoyoteBrown {
+          model = "ghost_H_HelmetB_camo";
+          camo = "Solid_CoyoteBrown";
         };
-        class GVAR(opscore_highcut_cover_coy_g3b) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "bt";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_camo_Solid_Ranger_Green {
+          model = "ghost_H_HelmetB_camo";
+          camo = "Solid_Ranger_Green";
         };
-
-        class GVAR(opscore_highcut_cover_coy_g45) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r5";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_camo_US_Tigerstripe {
+          model = "ghost_H_HelmetB_camo";
+          camo = "US_Tigerstripe";
         };
-        class GVAR(opscore_highcut_cover_coy_g46) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r6";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_camo_Solid_Olive {
+          model = "ghost_H_HelmetB_camo";
+          camo = "Solid_Olive";
         };
-        class GVAR(opscore_highcut_cover_coy_g47) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r7";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_camo_Solid_Tan {
+          model = "ghost_H_HelmetB_camo";
+          camo = "Solid_Tan";
         };
-        class GVAR(opscore_highcut_cover_coy_g48) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r8";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_camo_Solid_White {
+          model = "ghost_H_HelmetB_camo";
+          camo = "Solid_White";
         };
-        class GVAR(opscore_highcut_cover_coy_g4a) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "at";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_camo_US_DCU {
+          model = "ghost_H_HelmetB_camo";
+          camo = "US_DCU";
         };
-        class GVAR(opscore_highcut_cover_coy_g4b) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "bt";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetB_camo_US_M81 {
+          model = "ghost_H_HelmetB_camo";
+          camo = "US_M81";
         };
-        class GVAR(opscore_highcut_cover_coy_g4c) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "ct";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetSpecB_Multicam {
+          model = "ghost_H_HelmetSpecB";
+          camo = "Multicam";
         };
-        class GVAR(opscore_highcut_cover_coy_g4d) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "dt";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetSpecB_Multicam_Snow {
+          model = "ghost_H_HelmetSpecB";
+          camo = "Multicam_Snow";
         };
-
-        class GVAR(opscore_highcut_cover_coy_g5) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r5";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetSpecB_Multicam_Woodland {
+          model = "ghost_H_HelmetSpecB";
+          camo = "Multicam_Woodland";
         };
-        class GVAR(opscore_highcut_cover_coy_g6) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r6";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetSpecB_Solid_Black {
+          model = "ghost_H_HelmetSpecB";
+          camo = "Solid_Black";
         };
-        class GVAR(opscore_highcut_cover_coy_g7) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r7";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetSpecB_Solid_CoyoteBrown {
+          model = "ghost_H_HelmetSpecB";
+          camo = "Solid_CoyoteBrown";
         };
-        class GVAR(opscore_highcut_cover_coy_g8) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r8";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetSpecB_Solid_Ranger_Green {
+          model = "ghost_H_HelmetSpecB";
+          camo = "Solid_Ranger_Green";
         };
-
-        class GVAR(opscore_highcut_cover_coy_g91) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "none";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetSpecB_US_Tigerstripe {
+          model = "ghost_H_HelmetSpecB";
+          camo = "US_Tigerstripe";
         };
-        class GVAR(opscore_highcut_cover_coy_g915) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r5";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetSpecB_Solid_Olive {
+          model = "ghost_H_HelmetSpecB";
+          camo = "Solid_Olive";
         };
-        class GVAR(opscore_highcut_cover_coy_g916) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r6";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetSpecB_Solid_Tan {
+          model = "ghost_H_HelmetSpecB";
+          camo = "Solid_Tan";
         };
-
-        class GVAR(opscore_highcut_cover_coy_g92a) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "at";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetSpecB_Solid_White {
+            model = "ghost_H_HelmetSpecB";
+            camo = "Solid_White";
         };
-        class GVAR(opscore_highcut_cover_coy_g92b) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "bt";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetSpecB_US_DCU {
+            model = "ghost_H_HelmetSpecB";
+            camo = "US_DCU";
         };
-        class GVAR(opscore_highcut_cover_coy_g92c) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "ct";
-            camo = "Solid_CoyoteBrown";
+        class ghost_H_HelmetSpecB_US_M81 {
+            model = "ghost_H_HelmetSpecB";
+            camo = "US_M81";
         };
-        class GVAR(opscore_highcut_cover_m81_g15) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r5";
-            camo = "M81";
+        class ghost_H_HelmetB_light_Multicam {
+          model = "ghost_H_HelmetB_light";
+          camo = "Multicam";
         };
-        class GVAR(opscore_highcut_cover_m81_g16) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r6";
-            camo = "M81";
+        class ghost_H_HelmetB_light_Multicam_Snow {
+          model = "ghost_H_HelmetB_light";
+          camo = "Multicam_Snow";
         };
-        class GVAR(opscore_highcut_cover_m81_g17) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r7";
-            camo = "M81";
+        class ghost_H_HelmetB_light_Multicam_Woodland {
+          model = "ghost_H_HelmetB_light";
+          camo = "Multicam_Woodland";
         };
-        class GVAR(opscore_highcut_cover_m81_g18) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r8";
-            camo = "M81";
+        class ghost_H_HelmetB_light_Solid_CoyoteBrown {
+          model = "ghost_H_HelmetB_light";
+          camo = "Solid_CoyoteBrown";
         };
-        class GVAR(opscore_highcut_cover_m81_g1a) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "at";
-            camo = "M81";
+        class ghost_H_HelmetB_light_Solid_Ranger_Green {
+          model = "ghost_H_HelmetB_light";
+          camo = "Solid_Ranger_Green";
         };
-        class GVAR(opscore_highcut_cover_m81_g1b) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "bt";
-            camo = "M81";
+        class ghost_HelmetB_light_US_Tigerstripe {
+          model = "ghost_H_HelmetB_light";
+          camo = "US_Tigerstripe";
+        };
+        class ghost_H_HelmetB_light_Solid_Olive {
+          model = "ghost_H_HelmetB_light";
+          camo = "Solid_Olive";
+        };
+        class ghost_H_HelmetB_light_Solid_Tan {
+          model = "ghost_H_HelmetB_light";
+          camo = "Solid_Tan";
+        };
+        class ghost_H_HelmetB_light_Solid_White {
+          model = "ghost_H_HelmetB_light";
+          camo = "Solid_White";
+        };
+        class ghost_US__H_HelmetB_light_US_DCU {
+          model = "ghost_H_HelmetB_light";
+          camo = "US_DCU";
+        };
+        class ghost_H_HelmetB_light_solid_black {
+          model = "ghost_H_HelmetB_light";
+          camo = "Solid_Black";
+        };
+        class ghost_H_HelmetB_light_US_M81 {
+          model = "ghost_H_HelmetB_light";
+          camo = "US_M81";
+        };
+        class ghost_H_HelmetB_light_basic_Multicam {
+          model = "ghost_H_HelmetB_light_basic";
+          camo = "Multicam";
+        };
+        class ghost_H_HelmetB_light_basic_Multicam_Snow {
+          model = "ghost_H_HelmetB_light_basic";
+          camo = "Multicam_Snow";
+        };
+        class ghost_H_HelmetB_light_basic_Multicam_Woodland {
+          model = "ghost_H_HelmetB_light_basic";
+          camo = "Multicam_Woodland";
+        };
+        class ghost_H_HelmetB_light_basic_Solid_CoyoteBrown {
+          model = "ghost_H_HelmetB_light_basic";
+          camo = "Solid_CoyoteBrown";
+        };
+        class ghost_H_HelmetB_light_basic_Solid_Ranger_Green {
+          model = "ghost_H_HelmetB_light_basic";
+          camo = "Solid_Ranger_Green";
+        };
+        class ghost_HelmetB_light_Tigerstripe {
+          model = "ghost_H_HelmetB_light_basic";
+          camo = "US_Tigerstripe";
+        };
+        class ghost_H_HelmetB_light_basic_Solid_Olive {
+          model = "ghost_H_HelmetB_light_basic";
+          camo = "Solid_Olive";
+        };
+        class ghost_H_HelmetB_light_basic_Solid_Tan {
+          model = "ghost_H_HelmetB_light_basic";
+          camo = "Solid_Tan";
+        };
+        class ghost_HelmetB_light_basic_Solid_White {
+          model = "ghost_H_HelmetB_light_basic";
+          camo = "Solid_White";
+        };
+        class ghost_US_H_HelmetB_light_DCU {
+          model = "ghost_H_HelmetB_light_basic";
+          camo = "US_DCU";
+        };
+        class ghost_H_HelmetB_light_basic_solid_black {
+          model = "ghost_H_HelmetB_light_basic";
+          camo = "Solid_Black";
+        };
+        class ghost_H_HelmetB_light_basic_US_M81 {
+          model = "ghost_H_HelmetB_light_basic";
+          camo = "US_M81";
         };
 
-        class GVAR(opscore_highcut_cover_m81_g25) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r5";
-            camo = "M81";
+        class opscore_sf_arid {
+          model = "opscoreh";
+          camo = "arid";
+          opt = "norm";
         };
-        class GVAR(opscore_highcut_cover_m81_g26) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r6";
-            camo = "M81";
+        class opscore_sf_arid_amp {
+          model = "opscoreh";
+          camo = "arid";
+          opt = "amp";
         };
-        class GVAR(opscore_highcut_cover_m81_g27) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r7";
-            camo = "M81";
-        };
-        class GVAR(opscore_highcut_cover_m81_g28) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r8";
-            camo = "M81";
-        };
-        class GVAR(opscore_highcut_cover_m81_g2a) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "at";
-            camo = "M81";
-        };
-        class GVAR(opscore_highcut_cover_m81_g2b) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "bt";
-            camo = "M81";
+        class opscore_sf_arid_full {
+          model = "opscoreh";
+          camo = "arid";
+          opt = "full";
         };
 
-        class GVAR(opscore_highcut_cover_m81_g35) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r5";
-            camo = "M81";
+        class opscore_sf_black {
+          model = "opscoreh";
+          camo = "blk";
+          opt = "norm";
         };
-        class GVAR(opscore_highcut_cover_m81_g36) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r6";
-            camo = "M81";
+        class opscore_sf_black_amp {
+          model = "opscoreh";
+          camo = "blk";
+          opt = "amp";
         };
-        class GVAR(opscore_highcut_cover_m81_g37) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r7";
-            camo = "M81";
-        };
-        class GVAR(opscore_highcut_cover_m81_g38) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r8";
-            camo = "M81";
-        };
-        class GVAR(opscore_highcut_cover_m81_g3a) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "at";
-            camo = "M81";
-        };
-        class GVAR(opscore_highcut_cover_m81_g3b) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "bt";
-            camo = "M81";
+        class opscore_sf_black_full {
+          model = "opscoreh";
+          camo = "blk";
+          opt = "full";
         };
 
-        class GVAR(opscore_highcut_cover_m81_g45) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r5";
-            camo = "M81";
+        class opscore_sf_mc {
+          model = "opscoreh";
+          camo = "mc";
+          opt = "norm";
         };
-        class GVAR(opscore_highcut_cover_m81_g46) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r6";
-            camo = "M81";
+        class opscore_sf_mc_amp {
+          model = "opscoreh";
+          camo = "mc";
+          opt = "amp";
         };
-        class GVAR(opscore_highcut_cover_m81_g47) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r7";
-            camo = "M81";
-        };
-        class GVAR(opscore_highcut_cover_m81_g48) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r8";
-            camo = "M81";
-        };
-        class GVAR(opscore_highcut_cover_m81_g4a) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "at";
-            camo = "M81";
-        };
-        class GVAR(opscore_highcut_cover_m81_g4b) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "bt";
-            camo = "M81";
-        };
-        class GVAR(opscore_highcut_cover_m81_g4c) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "ct";
-            camo = "M81";
-        };
-        class GVAR(opscore_highcut_cover_m81_g4d) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "dt";
-            camo = "M81";
+        class opscore_sf_mc_full {
+          model = "opscoreh";
+          camo = "mc";
+          opt = "full";
         };
 
-        class GVAR(opscore_highcut_cover_m81_g5) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r5";
-            camo = "M81";
+        class opscore_sf_od {
+          model = "opscoreh";
+          camo = "od";
+          opt = "norm";
         };
-        class GVAR(opscore_highcut_cover_m81_g6) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r6";
-            camo = "M81";
+        class opscore_sf_od_amp {
+          model = "opscoreh";
+          camo = "od";
+          opt = "amp";
         };
-        class GVAR(opscore_highcut_cover_m81_g7) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r7";
-            camo = "M81";
-        };
-        class GVAR(opscore_highcut_cover_m81_g8) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r8";
-            camo = "M81";
+        class opscore_sf_od_full {
+          model = "opscoreh";
+          camo = "od";
+          opt = "full";
         };
 
-        class GVAR(opscore_highcut_cover_m81_g91) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "none";
-            camo = "M81";
+        class opscore_sf_rgr {
+          model = "opscoreh";
+          camo = "rgr";
+          opt = "norm";
         };
-        class GVAR(opscore_highcut_cover_m81_g915) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r5";
-            camo = "M81";
+        class opscore_sf_rgr_amp {
+          model = "opscoreh";
+          camo = "rgr";
+          opt = "amp";
         };
-        class GVAR(opscore_highcut_cover_m81_g916) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r6";
-            camo = "M81";
+        class opscore_sf_rgr_full {
+          model = "opscoreh";
+          camo = "rgr";
+          opt = "full";
         };
 
-        class GVAR(opscore_highcut_cover_m81_g92a) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "at";
-            camo = "M81";
-        };
-        class GVAR(opscore_highcut_cover_m81_g92b) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "bt";
-            camo = "M81";
-        };
-        class GVAR(opscore_highcut_cover_m81_g92c) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "ct";
-            camo = "M81";
-        };
-        class GVAR(opscore_highcut_cover_mc_g15) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r5";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g16) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r6";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g17) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r7";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g18) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r8";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g1a) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "at";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g1b) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "bt";
-            camo = "Multicam";
-        };
-
-        class GVAR(opscore_highcut_cover_mc_g25) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r5";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g26) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r6";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g27) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r7";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g28) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r8";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g2a) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "at";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g2b) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "bt";
-            camo = "Multicam";
-        };
-
-        class GVAR(opscore_highcut_cover_mc_g35) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r5";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g36) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r6";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g37) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r7";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g38) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r8";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g3a) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "at";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g3b) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "bt";
-            camo = "Multicam";
-        };
-
-        class GVAR(opscore_highcut_cover_mc_g45) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r5";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g46) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r6";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g47) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r7";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g48) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r8";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g4a) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "at";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g4b) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "bt";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g4c) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "ct";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g4d) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "dt";
-            camo = "Multicam";
-        };
-
-        class GVAR(opscore_highcut_cover_mc_g5) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r5";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g6) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r6";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g7) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r7";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g8) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r8";
-            camo = "Multicam";
-        };
-
-        class GVAR(opscore_highcut_cover_mc_g91) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "none";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g915) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r5";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g916) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r6";
-            camo = "Multicam";
-        };
-
-        class GVAR(opscore_highcut_cover_mc_g92a) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "at";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g92b) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "bt";
-            camo = "Multicam";
-        };
-        class GVAR(opscore_highcut_cover_mc_g92c) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "ct";
-            camo = "Multicam";
-        };
-
-        class GVAR(opscore_highcut_cover_mcarid_g15) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r5";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g16) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r6";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g17) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r7";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g18) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r8";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g1a) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "at";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g1b) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "bt";
-            camo = "Multicam_Arid";
-        };
-
-        class GVAR(opscore_highcut_cover_mcarid_g25) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r5";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g26) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r6";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g27) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r7";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g28) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r8";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g2a) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "at";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g2b) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "bt";
-            camo = "Multicam_Arid";
-        };
-
-        class GVAR(opscore_highcut_cover_mcarid_g35) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r5";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g36) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r6";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g37) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r7";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g38) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r8";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g3a) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "at";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g3b) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "bt";
-            camo = "Multicam_Arid";
-        };
-
-        class GVAR(opscore_highcut_cover_mcarid_g45) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r5";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g46) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r6";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g47) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r7";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g48) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r8";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g4a) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "at";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g4b) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "bt";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g4c) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "ct";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g4d) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "dt";
-            camo = "Multicam_Arid";
-        };
-
-        class GVAR(opscore_highcut_cover_mcarid_g5) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r5";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g6) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r6";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g7) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r7";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g8) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r8";
-            camo = "Multicam_Arid";
-        };
-
-        class GVAR(opscore_highcut_cover_mcarid_g91) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "none";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g915) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r5";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g916) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r6";
-            camo = "Multicam_Arid";
-        };
-
-        class GVAR(opscore_highcut_cover_mcarid_g92a) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "at";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g92b) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "bt";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mcarid_g92c) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "ct";
-            camo = "Multicam_Arid";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g15) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r5";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g16) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r6";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g17) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r7";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g18) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r8";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g1a) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "at";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g1b) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "bt";
-            camo = "Multicam_Trop";
-        };
-
-        class GVAR(opscore_highcut_cover_mctp_g25) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r5";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g26) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r6";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g27) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r7";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g28) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r8";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g2a) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "at";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g2b) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "bt";
-            camo = "Multicam_Trop";
-        };
-
-        class GVAR(opscore_highcut_cover_mctp_g35) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r5";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g36) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r6";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g37) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r7";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g38) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r8";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g3a) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "at";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g3b) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "bt";
-            camo = "Multicam_Trop";
-        };
-
-        class GVAR(opscore_highcut_cover_mctp_g45) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r5";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g46) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r6";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g47) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r7";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g48) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r8";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g4a) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "at";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g4b) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "bt";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g4c) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "ct";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g4d) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "dt";
-            camo = "Multicam_Trop";
-        };
-
-        class GVAR(opscore_highcut_cover_mctp_g5) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r5";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g6) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r6";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g7) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r7";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g8) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r8";
-            camo = "Multicam_Trop";
-        };
-
-        class GVAR(opscore_highcut_cover_mctp_g91) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "none";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g915) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r5";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g916) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r6";
-            camo = "Multicam_Trop";
-        };
-
-        class GVAR(opscore_highcut_cover_mctp_g92a) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "at";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g92b) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "bt";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mctp_g92c) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "ct";
-            camo = "Multicam_Trop";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g15) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r5";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g16) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r6";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g17) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r7";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g18) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r8";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g1a) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "at";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g1b) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "bt";
-            camo = "Multicam_Woodland";
-        };
-
-        class GVAR(opscore_highcut_cover_mcwdl_g25) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r5";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g26) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r6";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g27) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r7";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g28) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r8";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g2a) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "at";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g2b) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "bt";
-            camo = "Multicam_Woodland";
-        };
-
-        class GVAR(opscore_highcut_cover_mcwdl_g35) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r5";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g36) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r6";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g37) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r7";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g38) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r8";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g3a) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "at";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g3b) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "bt";
-            camo = "Multicam_Woodland";
-        };
-
-        class GVAR(opscore_highcut_cover_mcwdl_g45) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r5";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g46) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r6";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g47) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r7";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g48) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r8";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g4a) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "at";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g4b) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "bt";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g4c) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "ct";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g4d) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "dt";
-            camo = "Multicam_Woodland";
-        };
-
-        class GVAR(opscore_highcut_cover_mcwdl_g5) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r5";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g6) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r6";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g7) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r7";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g8) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r8";
-            camo = "Multicam_Woodland";
-        };
-
-        class GVAR(opscore_highcut_cover_mcwdl_g91) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "none";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g915) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r5";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g916) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r6";
-            camo = "Multicam_Woodland";
-        };
-
-        class GVAR(opscore_highcut_cover_mcwdl_g92a) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "at";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g92b) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "bt";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_mcwdl_g92c) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "ct";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(opscore_highcut_cover_od_g15) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r5";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g16) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r6";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g17) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r7";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g18) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r8";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g1a) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "at";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g1b) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "bt";
-            camo = "Solid_Olive";
-        };
-
-        class GVAR(opscore_highcut_cover_od_g25) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r5";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g26) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r6";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g27) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r7";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g28) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r8";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g2a) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "at";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g2b) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "bt";
-            camo = "Solid_Olive";
-        };
-
-        class GVAR(opscore_highcut_cover_od_g35) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r5";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g36) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r6";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g37) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r7";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g38) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r8";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g3a) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "at";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g3b) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "bt";
-            camo = "Solid_Olive";
-        };
-
-        class GVAR(opscore_highcut_cover_od_g45) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r5";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g46) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r6";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g47) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r7";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g48) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r8";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g4a) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "at";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g4b) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "bt";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g4c) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "ct";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g4d) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "dt";
-            camo = "Solid_Olive";
-        };
-
-        class GVAR(opscore_highcut_cover_od_g5) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r5";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g6) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r6";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g7) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r7";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g8) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r8";
-            camo = "Solid_Olive";
-        };
-
-        class GVAR(opscore_highcut_cover_od_g91) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "none";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g915) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r5";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g916) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r6";
-            camo = "Solid_Olive";
-        };
-
-        class GVAR(opscore_highcut_cover_od_g92a) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "at";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g92b) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "bt";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_od_g92c) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "ct";
-            camo = "Solid_Olive";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g15) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r5";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g16) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r6";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g17) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r7";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g18) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r8";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g1a) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "at";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g1b) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "bt";
-            camo = "Solid_Ranger_Green";
-        };
-
-        class GVAR(opscore_highcut_cover_rgr_g25) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r5";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g26) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r6";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g27) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r7";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g28) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r8";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g2a) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "at";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g2b) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "bt";
-            camo = "Solid_Ranger_Green";
-        };
-
-        class GVAR(opscore_highcut_cover_rgr_g35) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r5";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g36) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r6";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g37) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r7";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g38) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r8";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g3a) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "at";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g3b) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "bt";
-            camo = "Solid_Ranger_Green";
-        };
-
-        class GVAR(opscore_highcut_cover_rgr_g45) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r5";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g46) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r6";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g47) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r7";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g48) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r8";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g4a) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "at";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g4b) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "bt";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g4c) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "ct";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g4d) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "dt";
-            camo = "Solid_Ranger_Green";
-        };
-
-        class GVAR(opscore_highcut_cover_rgr_g5) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r5";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g6) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r6";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g7) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r7";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g8) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r8";
-            camo = "Solid_Ranger_Green";
-        };
-
-        class GVAR(opscore_highcut_cover_rgr_g91) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "none";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g915) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r5";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g916) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r6";
-            camo = "Solid_Ranger_Green";
-        };
-
-        class GVAR(opscore_highcut_cover_rgr_g92a) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "at";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g92b) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "bt";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_rgr_g92c) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "ct";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(opscore_highcut_cover_tan_g15) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r5";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g16) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r6";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g17) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r7";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g18) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "r8";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g1a) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "at";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g1b) {
-            model = "Ghost_highcut";
-            squad = "g1";
-            place = "bt";
-            camo = "Solid_Tan";
-        };
-
-        class GVAR(opscore_highcut_cover_tan_g25) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r5";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g26) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r6";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g27) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r7";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g28) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "r8";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g2a) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "at";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g2b) {
-            model = "Ghost_highcut";
-            squad = "g2";
-            place = "bt";
-            camo = "Solid_Tan";
-        };
-
-        class GVAR(opscore_highcut_cover_tan_g35) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r5";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g36) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r6";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g37) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r7";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g38) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "r8";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g3a) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "at";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g3b) {
-            model = "Ghost_highcut";
-            squad = "g3";
-            place = "bt";
-            camo = "Solid_Tan";
-        };
-
-        class GVAR(opscore_highcut_cover_tan_g45) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r5";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g46) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r6";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g47) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r7";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g48) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "r8";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g4a) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "at";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g4b) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "bt";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g4c) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "ct";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g4d) {
-            model = "Ghost_highcut";
-            squad = "g4";
-            place = "dt";
-            camo = "Solid_Tan";
-        };
-
-        class GVAR(opscore_highcut_cover_tan_g5) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r5";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g6) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r6";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g7) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r7";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g8) {
-            model = "Ghost_highcut";
-            squad = "plt";
-            place = "r8";
-            camo = "Solid_Tan";
-        };
-
-        class GVAR(opscore_highcut_cover_tan_g91) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "none";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g915) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r5";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g916) {
-            model = "Ghost_highcut";
-            squad = "g91";
-            place = "r6";
-            camo = "Solid_Tan";
-        };
-
-        class GVAR(opscore_highcut_cover_tan_g92a) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "at";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g92b) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "bt";
-            camo = "Solid_Tan";
-        };
-        class GVAR(opscore_highcut_cover_tan_g92c) {
-            model = "Ghost_highcut";
-            squad = "g92";
-            place = "ct";
-            camo = "Solid_Tan";
-        };
-
-
-
+        class opscore_sf_tan {
+          model = "opscoreh";
+          camo = "tan";
+          opt = "norm";
+        };
+        class opscore_sf_tan_amp {
+          model = "opscoreh";
+          camo = "tan";
+          opt = "amp";
+        };
+        class opscore_sf_tan_full {
+          model = "opscoreh";
+          camo = "tan";
+          opt = "full";
+        };
+        
+        class wrp_headgear_opscore_cover_aor1 {
+          model = "wrp_headgear_opscore";
+          camo = "aor1";
+          mod ="base";
+        };
+        class wrp_headgear_opscore_cover_aor1_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "aor1";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_aor1_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "aor1";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_aor1_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "aor1";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_aor2 {
+          model = "wrp_headgear_opscore";
+          camo = "aor2";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_aor2_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "aor1";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_aor2_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "aor1";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_aor2_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "aor1";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_blk {
+          model = "wrp_headgear_opscore";
+          camo = "blk";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_blk_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "blk";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_blk_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "blk";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_blk_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "blk";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_khk {
+          model = "wrp_headgear_opscore";
+          camo = "khk";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_khk_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "khk";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_khk_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "khk";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_khk_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "khk";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_mc {
+          model = "wrp_headgear_opscore";
+          camo = "mc";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_mc_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "mc";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_mc_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "mc";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_mc_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "mc";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_mcA {
+          model = "wrp_headgear_opscore";
+          camo = "mca";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_mcA_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "mca";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_mcA_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "mca";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_mcA_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "mca";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_mcB {
+          model = "wrp_headgear_opscore";
+          camo = "mcb";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_mcB_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "mcb";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_mcB_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "mcb";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_mcB_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "mcb";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_mcT {
+          model = "wrp_headgear_opscore";
+          camo = "mct";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_mcT_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "mct";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_mcT_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "mct";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_mcT_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "mct";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_rgr {
+          model = "wrp_headgear_opscore";
+          camo = "rgr";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_rgr_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "rgr";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_rgr_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "rgr";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_rgr_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "rgr";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_tgr {
+          model = "wrp_headgear_opscore";
+          camo = "tgr";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_tgr_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "tgr";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_tgr_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "tgr";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_tgr_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "tgr";
+          mod="peltorn";
+        };
+        class wrp_headgear_opscore_cover_tgrD {
+          model = "wrp_headgear_opscore";
+          camo = "tgrd";
+          mod="base";
+        };
+        class wrp_headgear_opscore_cover_tgrD_peltor {
+          model = "wrp_headgear_opscore";
+          camo = "tgrd";
+          mod="peltor";
+        };
+        class wrp_headgear_opscore_cover_tgrD_peltor_camera {
+          model = "wrp_headgear_opscore";
+          camo = "tgrd";
+          mod="peltorc";
+        };
+        class wrp_headgear_opscore_cover_tgrD_peltor_nsw {
+          model = "wrp_headgear_opscore";
+          camo = "tgrd";
+          mod="peltorn";
+        };
     };
-
-
-
-
-
-
 };

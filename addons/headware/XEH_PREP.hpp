@@ -1,1 +1,2 @@
-
+PREP(toggleHeadlampOnOff);
+PREP(toggleHeadlampColor);

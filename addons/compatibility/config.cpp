@@ -10,7 +10,7 @@ class CfgPatches {
             "ghost_main",
             "A3_Data_F_Decade_Loadorder"
         };
-        author = "ArmaForces";
+        author = "Ghosts of Battle";
         authors[] = {"veteran29"};
         VERSION_CONFIG;
     };

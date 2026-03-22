@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: veteran29
- * Join ArmaForces server from main menu.
+ * Join Ghosts of Battle server from main menu.
  * Based on article from KillZonekid
  *
  * Arguments:
@@ -26,9 +26,9 @@ if (isNil "CBA_fnc_log") then {
 // Disable Enchanced Multiplayer Menu for compatiblity with this script
 uiNamespace setVariable ["EMM_multiplayerMenu_enabled", false];
 
-INFO("Auto joining to ArmaForces server");
+INFO("Auto joining to Ghosts of Battle server");
 
-GVAR(serverAddress) = "server.armaforces.com";
+GVAR(serverAddress) = "server.Ghosts of Battle.com";
 GVAR(serverPort) = "2302";
 GVAR(joinTimeout) = diag_tickTime + 5;
 

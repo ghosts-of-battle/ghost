@@ -10,6 +10,7 @@
 
 // ACE3 reference macros
 #define ACE_PREFIX ace
+#define ACE_ADDON(module) DOUBLES(ACE_PREFIX,module)
 
 #define ACEGVAR(module,var)         TRIPLES(ACE_PREFIX,module,var)
 #define QACEGVAR(module,var)        QUOTE(ACEGVAR(module,var))
@@ -24,8 +25,8 @@
 #define IS_MOD_LOADED(modclass)     (isClass (configFile >> "CfgPatches" >> #modclass))
 
 // Extension macros
-#define EXT "armaforces_mods"
-#define EXT_LOG "armaforces_mods_log"
+#define EXT "Ghosts of Battle_mods"
+#define EXT_LOG "Ghosts of Battle_mods_log"
 
 // GHOST Debug macros
 #include "\z\ghost\addons\main\script_debug.hpp"

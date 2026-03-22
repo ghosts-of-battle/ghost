@@ -2,7 +2,7 @@
 <Project name="GHOST">
     <Package name="RemoteSensors">
         <Key ID="STR_GHOST_RemoteSensors_DisplayName">
-            <English>ArmaForces - Remote Sensors</English>
+            <English>Ghosts of Battle - Remote Sensors</English>
         </Key>
         <Key ID="STR_GHOST_RemoteSensors_Enabled">
             <English>Enable remote sensors on clients</English>

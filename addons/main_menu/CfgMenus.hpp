@@ -4,10 +4,10 @@ class EMM_mainMenu_CfgMenus {
         class menus {
             class MainMenu;
             class MultiplayerVN: MainMenu {
-                items[] = {"ArmaForces", "ServerBrowser", "SOGPrairieFire", "MikeForce", "Exit"};
+                items[] = {"Ghosts of Battle", "ServerBrowser", "SOGPrairieFire", "MikeForce", "Exit"};
 
                 class ServerBrowser;
-                class ArmaForces: ServerBrowser {
+                class Ghosts: ServerBrowser {
                     action = QUOTE(call (uiNamespace getVariable QQFUNC(join)));
                     text = CSTRING(SpotlightHeader);
                 };

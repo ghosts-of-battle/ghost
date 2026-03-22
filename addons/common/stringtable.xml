@@ -2,8 +2,8 @@
 <Project name="GHOST">
     <Package name="Common">
         <Key ID="STR_GHOST_Common_DisplayName">
-            <English>ArmaForces - Common</English>
-            <Polish>ArmaForces - Common</Polish>
+            <English>Ghosts of Battle - Common</English>
+            <Polish>Ghosts of Battle - Common</Polish>
         </Key>
         <Key ID="STR_GHOST_Common_Enabled">
             <English>Enable component</English>

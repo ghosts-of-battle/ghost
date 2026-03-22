@@ -9,7 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             "A3_Ui_F" // minimal required addons so this component loads as early as possible
         };
-        author = "ArmaForces";
+        author = "Ghosts of Battle";
         authors[] = {"veteran29"};
         VERSION_CONFIG;
     };

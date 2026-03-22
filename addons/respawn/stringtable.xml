@@ -2,8 +2,8 @@
 <Project name="GHOST">
     <Package name="Respawn">
         <Key ID="STR_GHOST_Respawn_DisplayName">
-            <English>ArmaForces - Respawn</English>
-            <Polish>ArmaForces - Odrodzenie</Polish>
+            <English>Ghosts of Battle - Respawn</English>
+            <Polish>Ghosts of Battle - Odrodzenie</Polish>
         </Key>
         <Key ID="STR_GHOST_Respawn_Enabled">
             <English>Enable respawn</English>

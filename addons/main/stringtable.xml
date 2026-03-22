@@ -2,14 +2,14 @@
 <Project name="GHOST">
     <Package name="Main">
         <Key ID="STR_GHOST_Main_Attributes">
-            <English>ArmaForces Attributes</English>
-            <Polish>Atrybuty ArmaForces</Polish>
+            <English>Ghosts of Battle Attributes</English>
+            <Polish>Atrybuty Ghosts of Battle</Polish>
         </Key>
         <Key ID="STR_GHOST_Main_Category">
-            <English>ArmaForces</English>
+            <English>Ghosts of Battle</English>
         </Key>
         <Key ID="STR_GHOST_Main_Toolbar">
-            <English>ArmaForces</English>
+            <English>Ghosts of Battle</English>
         </Key>
         <Key ID="STR_GHOST_Main_ToolbarWiki">
             <English>Wiki</English>

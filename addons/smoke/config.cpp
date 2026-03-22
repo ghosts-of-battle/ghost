@@ -9,7 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             "ghost_main"
         };
-        author = "ArmaForces";
+        author = "Ghosts of Battle";
         authors[] = {"veteran29"};
         VERSION_CONFIG;
     };

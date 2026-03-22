@@ -7,9 +7,10 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "cba_main"
+            "cba_main",
+            "diwako_dui_main"
         };
-        author = "ArmaForces";
+        author = "Ghosts of Battle";
         VERSION_CONFIG;
     };
 };

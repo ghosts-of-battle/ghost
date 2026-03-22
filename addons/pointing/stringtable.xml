@@ -2,8 +2,8 @@
 <Project name="GHOST">
     <Package name="Pointing">
         <Key ID="STR_GHOST_Pointing_DisplayName">
-            <English>ArmaForces - Pointing</English>
-            <Polish>ArmaForces - Wskazywanie</Polish>
+            <English>Ghosts of Battle - Pointing</English>
+            <Polish>Ghosts of Battle - Wskazywanie</Polish>
         </Key>
         <Key ID="STR_GHOST_Pointing_Key_PointVehicle">
             <English>Point direction (vehicle)</English>

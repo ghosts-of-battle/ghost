@@ -2,8 +2,8 @@
 <Project name="GHOST">
     <Package name="Insurgents">
         <Key ID="STR_GHOST_Insurgents_DisplayName">
-            <English>ArmaForces - Insurgents</English>
-            <Polish>ArmaForces - Partyzanci</Polish>
+            <English>Ghosts of Battle - Insurgents</English>
+            <Polish>Ghosts of Battle - Partyzanci</Polish>
         </Key>
         <Key ID="STR_GHOST_Insurgents_Gear">
             <English>Insurgents Gear</English>

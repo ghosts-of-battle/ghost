@@ -9,13 +9,11 @@ class CfgPatches {
         requiredAddons[] = {
             "ghost_common",
             "cba_main",
-            "ace_nightvision",
-            "tweed_uaf_21_cfg"
+            "ace_nightvision"
         };
         author = "ghost";
         authors[] = {"YONV"};
         VERSION_CONFIG;
-        skipWhenMissingDependencies = 1;
     };
 };
 

@@ -26,8 +26,8 @@
             <Polish>Pozwala obserwować jednostki strony cywilnej.</Polish>
         </Key>
         <Key ID="STR_GHOST_Spectator_DisplayName">
-            <English>ArmaForces - Spectator</English>
-            <Polish>ArmaForces - Obserwator</Polish>
+            <English>Ghosts of Battle - Spectator</English>
+            <Polish>Ghosts of Battle - Obserwator</Polish>
         </Key>
         <Key ID="STR_GHOST_Spectator_Enabled">
             <English>Enable spectator</English>
