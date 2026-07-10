@@ -806,7 +806,7 @@ force Rev_TFAR_saveScribbles = true;
 force Rev_TFAR_settings_LR_B = "CMD,FIRE,AIR,SUP,SP1,SP2,SP3,SP4";
 force Rev_TFAR_settings_LR_I = "";
 force Rev_TFAR_settings_LR_O = "";
-force Rev_TFAR_settings_SR_Scribbles_W = "TEAM1,TEAM2,TEAM3,TEAM4,ATT,FIRE,CMD,ALL";
+force Rev_TFAR_settings_SR_B = "TEAM1,TEAM2,TEAM3,TEAM4,ATT,FIRE,CMD,ALL";
 force Rev_TFAR_settings_SR_I = "";
 force Rev_TFAR_settings_SR_O = "";
 

@@ -8,8 +8,9 @@ include = [
     "README.md",
     "LICENSE",
     "AUTHORS.txt",
-    "gobp2_256_g.paa",
-    "gobp2_256.paa",
+    "newlogo.png",
+    "logo_256_g.paa",
+    "logo_256.paa",
     "2035_modern_equipment_replacment_helmet.png",
     "2023-11-18_12-57-37.png"
 ]

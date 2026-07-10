@@ -3,8 +3,12 @@
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {};
-        weapons[] = {};
+        units[] = {
+            "GHOST_apapItem"
+        };
+        weapons[] = {
+            "GHOST_apap"
+        };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "ace_medical_treatment",

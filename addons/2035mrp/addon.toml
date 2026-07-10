@@ -1,0 +1,3 @@
+# 2035mrp retains its original standalone `$PBOPREFIX$` (\2035mrp\...) because its
+# configs and rvmats reference ~517 internal `\2035mrp\...` asset paths.
+ignore_pboprefix = true

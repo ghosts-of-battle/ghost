@@ -3,17 +3,113 @@
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {};
-        weapons[] = {};
+        units[] = {
+            QGVAR(Item_H_Helmet_FASTMT_tan_F),
+            QGVAR(Item_H_Helmet_FASTMT_rgr_F),
+            QGVAR(Item_H_Helmet_FASTMT_blk_F),
+            QGVAR(Item_H_Helmet_FASTMT_cbr_F),
+            QGVAR(Item_H_Helmet_FASTMT_Headset_tan_F),
+            QGVAR(Item_H_Helmet_FASTMT_Headset_rgr_F),
+            QGVAR(Item_H_Helmet_FASTMT_Headset_blk_F),
+            QGVAR(Item_H_Helmet_FASTMT_Headset_cbr_F),
+            QGVAR(Item_H_Helmet_FASTMT_Headset_Multicam_F),
+            QGVAR(Item_H_Helmet_FASTMT_Headset_Multicam_Snow_F),
+            QGVAR(Item_H_Helmet_FASTMT_Headset_A3_Multicam_Woodland_F),
+            QGVAR(Item_H_Helmet_FASTMT_Headset_US_OCP_F),
+            QGVAR(Item_H_Helmet_FASTMT_Cover_tan_F),
+            QGVAR(Item_H_Helmet_FASTMT_Cover_rgr_F),
+            QGVAR(Item_H_Helmet_FASTMT_Cover_blk_F),
+            QGVAR(Item_H_Helmet_FASTMT_Cover_mtp_F),
+            QGVAR(Item_H_Helmet_FASTMT_Cover_tna_F),
+            QGVAR(Item_H_Helmet_FASTMT_Cover_wdl_F),
+            QGVAR(Item_H_Helmet_FASTMT_Cover_desert_F),
+            QGVAR(Item_H_Helmet_FASTMT_Multicam_F),
+            QGVAR(Item_H_Helmet_FASTMT_Multicam_Snow_F),
+            QGVAR(Item_H_Helmet_FASTMT_A3_Multicam_Woodland_F),
+            QGVAR(Item_H_Helmet_FASTMT_US_OCP_F),
+            QGVAR(Item_H_Helmet_FASTMT_Cover_Multicam_F),
+            QGVAR(Item_H_Helmet_FASTMT_Cover_Multicam_Snow_F),
+            QGVAR(Item_H_Helmet_FASTMT_Cover_A3_Multicam_Woodland_F),
+            QGVAR(Item_H_Helmet_FASTMT_Cover_US_OCP_F),
+            QGVAR(Item_H_Helmet_FASTMT_Cover_ghost_US_OCP_F),
+            QGVAR(Item_H_Booniehat_Multicam_F),
+            QGVAR(Item_H_Booniehat_Multicam_hs_F),
+            QGVAR(Item_H_Booniehat_Multicam_Snow_F),
+            QGVAR(Item_H_Booniehat_Multicam_Snow_hs_F),
+            QGVAR(Item_H_Booniehat_Multicam_Woodland_F),
+            QGVAR(Item_H_Booniehat_Multicam_Woodland_hs_F),
+            QGVAR(Item_H_Booniehat_Solid_CoyoteBrown_F),
+            QGVAR(Item_H_Booniehat_Solid_CoyoteBrown_hs_F),
+            QGVAR(Item_H_Booniehat_Solid_Ranger_Green_F),
+            QGVAR(Item_H_Booniehat_Solid_Ranger_Green_hs_F),
+            QGVAR(Item_H_Booniehat_Solid_Olive_F),
+            QGVAR(Item_H_Booniehat_Solid_Olive_hs_F),
+            QGVAR(Item_H_Booniehat_Solid_Tan_F),
+            QGVAR(Item_H_Booniehat_Solid_Tan_hs_F),
+            QGVAR(Item_H_Booniehat_Solid_White_F),
+            QGVAR(Item_H_Booniehat_Solid_White_hs_F)
+        };
+        weapons[] = {
+            QGVAR(H_Helmet_FASTMT_tan_F),
+            QGVAR(H_Helmet_FASTMT_rgr_F),
+            QGVAR(H_Helmet_FASTMT_blk_F),
+            QGVAR(H_Helmet_FASTMT_cbr_F),
+            QGVAR(H_Helmet_FASTMT_Headset_tan_F),
+            QGVAR(H_Helmet_FASTMT_Headset_rgr_F),
+            QGVAR(H_Helmet_FASTMT_Headset_blk_F),
+            QGVAR(H_Helmet_FASTMT_Headset_cbr_F),
+            QGVAR(H_Helmet_FASTMT_Headset_Multicam_F),
+            QGVAR(H_Helmet_FASTMT_Headset_Multicam_Snow_F),
+            QGVAR(H_Helmet_FASTMT_Headset_A3_Multicam_Woodland_F),
+            QGVAR(H_Helmet_FASTMT_Headset_US_OCP_F),
+            QGVAR(H_Helmet_FASTMT_Cover_tan_F),
+            QGVAR(H_Helmet_FASTMT_Cover_rgr_F),
+            QGVAR(H_Helmet_FASTMT_Cover_blk_F),
+            QGVAR(H_Helmet_FASTMT_Cover_mtp_F),
+            QGVAR(H_Helmet_FASTMT_Cover_tna_F),
+            QGVAR(H_Helmet_FASTMT_Cover_wdl_F),
+            QGVAR(H_Helmet_FASTMT_Cover_desert_F),
+            QGVAR(H_Helmet_FASTMT_Multicam_F),
+            QGVAR(H_Helmet_FASTMT_Multicam_Snow_F),
+            QGVAR(H_Helmet_FASTMT_A3_Multicam_Woodland_F),
+            QGVAR(H_Helmet_FASTMT_US_OCP_F),
+            QGVAR(H_Helmet_FASTMT_Cover_Multicam_F),
+            QGVAR(H_Helmet_FASTMT_Cover_Multicam_Snow_F),
+            QGVAR(H_Helmet_FASTMT_Cover_A3_Multicam_Woodland_F),
+            QGVAR(H_Helmet_FASTMT_Cover_US_OCP_F),
+            QGVAR(H_Helmet_FASTMT_Cover_ghost_US_OCP_F),
+            QGVAR(H_Booniehat_Multicam_F),
+            QGVAR(H_Booniehat_Multicam_hs_F),
+            QGVAR(H_Booniehat_Multicam_Snow_F),
+            QGVAR(H_Booniehat_Multicam_Snow_hs_F),
+            QGVAR(H_Booniehat_Multicam_Woodland_F),
+            QGVAR(H_Booniehat_Multicam_Woodland_hs_F),
+            QGVAR(H_Booniehat_Solid_CoyoteBrown_F),
+            QGVAR(H_Booniehat_Solid_CoyoteBrown_hs_F),
+            QGVAR(H_Booniehat_Solid_Ranger_Green_F),
+            QGVAR(H_Booniehat_Solid_Ranger_Green_hs_F),
+            QGVAR(H_Booniehat_Solid_Olive_F),
+            QGVAR(H_Booniehat_Solid_Olive_hs_F),
+            QGVAR(H_Booniehat_Solid_Tan_F),
+            QGVAR(H_Booniehat_Solid_Tan_hs_F),
+            QGVAR(H_Booniehat_Solid_White_F),
+            QGVAR(H_Booniehat_Solid_White_hs_F)
+        };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "ghost_main",
-            "A3_Characters_F",
             "ace_hearing"
-            };
-        author = "";
+        };
+        authorUrl = "https://www.ghostsofbattle.com/";
+        author = QAUTHOR;
         authors[] = {""};
         VERSION_CONFIG;
+    };
+};
+
+class CfgEditorSubcategories {
+    class EdSubcat_Headgear {
+        displayName = "Headgear";
     };
 };
 
@@ -21,30 +117,3 @@ class CfgPatches {
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
 #include "XtdGear.hpp"
-
-class Headlamps_Presets {
-    class Headlamps_Preset_Full {
-        offset[] = {-0.5,0.06,0.13};
-        colorCycle[] = {
-            "Headlamp_light_white_low",
-            "Headlamp_light_red_low",
-            "Headlamp_light_blue_low"
-        };
-    };
-
-    class Headlamps_Preset_Helmet_Surefire_HL1_Right: Headlamps_Preset_Full {
-        offset[] = {0.04,0,0.15};
-    };
-
-    class Headlamps_Preset_Helmet_Surefire_HL1_Left: Headlamps_Preset_Helmet_Surefire_HL1_Right {
-        offset[] = {-0.185,-0.08,0.09};
-    };
-
-    class Headlamps_Preset_Helmet_Surefire_HL1_Left_ARC: Headlamps_Preset_Helmet_Surefire_HL1_Left {
-        offset[] = {-0.185,-0.08,0.15};
-    };
-
-    class Headlamps_Preset_Helmet_Surefire_HL1_Right_ARC: Headlamps_Preset_Helmet_Surefire_HL1_Left {
-        offset[] = {0.04,0,0.19};
-    };
-};

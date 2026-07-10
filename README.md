@@ -27,12 +27,6 @@ This is the custom mod for Ghosts of Battle
 Its based/inspired on/by the following projects;
 
 ##Its based on, and inspired by the following projects
-- https://github.com/Ghosts of Battle/Mods of Ghosts of Battle/Mods  -  GNU GENERAL PUBLIC LICENSE
-- https://github.com/AXEmod/AXE - GNU General Public License (GPLv3)
-- https://github.com/Theseus-Aegis/Mods - GNU General Public License (GPLv2).
-- https://github.com/last-resort-gaming/ghost-Fundamentals - MIT License
-- https://github.com/Theseus-Aegis/TheseusServices - Official license: Arma Public License Share-Alike (APL-SA)
-- https://www.ghostsofbattle.com/ - GNU General Public License (GPLv2).
 - https://github.com/quies-in-proelium/qipTPL - Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 - https://github.com/SzwedzikPL/SimpleSuppress/releases - MIT License
 - Ample Camo Pack Lite https://steamcommunity.com/sharedfiles/filedetails/?id=2869453820  - Arma Public License Share-Alike (APL-SA)
@@ -42,9 +36,6 @@ you can find the Ghosts of Battle Version at https://github.com/ghosts-of-battle
 
 (I know I forgot a few, I will work on getting those mentions put in)
 # This mod includes :
-- Drongo's 
-    - Dynamic Weather https://steamcommunity.com/sharedfiles/filedetails/?id=2935700533
-    - Map Population https://steamcommunity.com/sharedfiles/filedetails/?id=1990653162&searchtext=drongo
 
 ACE MOD https://steamcommunity.com/workshop/filedetails/?id=463939057
   Compatibility and optional packages
@@ -63,15 +54,6 @@ Kiyo's
 Fat_Lurch's
 - Turret Enhanced https://steamcommunity.com/sharedfiles/filedetails/?id=1623498241
 - MS_IFF_Strobe https://steamcommunity.com/sharedfiles/filedetails/?id=1543390130
-- Ammocan https://steamcommunity.com/sharedfiles/filedetails/?id=2162698437
-- Vehicle Inventory System https://steamcommunity.com/sharedfiles/filedetails/?id=2161671937
-
-Vestarr's
-BettIR (Legacy v0.2.1) https://steamcommunity.com/sharedfiles/filedetails/?id=2260572637
-
-mjc4wilton's
-BackpackOnChest - Redux https://steamcommunity.com/sharedfiles/filedetails/?id=2372036642
-
 
 Huge appreciation and thanks to [ACE3 Team](http://ace3mod.com/team.html) for their open-source nature and permission to use their systems.
 

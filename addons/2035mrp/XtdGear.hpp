@@ -1,152 +1,263 @@
 class XtdGearModels {
     class CfgWeapons {
-        class opscoreHighCut {
-            label = "HighCut Helmet";
-            options[] = {"variant", "camo", "flag"};
-            class variant {
-                label = "Variant";
-                alwaysSelectable = 1;
-                values[] = {"no_cover", "plain", "covered", "stealth"};
-                class no_cover {
-                    label = "Standard";
-                };
-                class plain {
-                    label = "Plain";
-                };
-                class covered {
-                    label = "Covered";
-                };
-                class stealth {
-                    label = "Stealth";
-                };
-            };
+        class MRP_opscore_bare {
+            label = "MRP HighCut (Bare)";
+            options[] = {"camo", "flag"};
             class camo {
-                label = "Camo";
                 alwaysSelectable = 1;
-                values[] = {"blk", "gry", "mcbk", "rgr", "od", "coy", "tan", "aor1", "aor2", "mc", "mcwdl", "mctp", "mcarid", "ctrgarid", "ctrgtropic", "m81", "mtp", "dpm", "nightdesert", "digital", "geometric", "tan_snake", "coy_snake", "od_snake", "rgr_snake", "alt_mc"};
-                class blk {
+                values[] = {"BLK", "OD", "OD_SNK", "RGR", "RGR_SNK", "COY", "COY_SNK", "TAN", "TAN_SNK", "AOR1", "AOR2", "MC"};
+                class BLK {
                     label = "Black";
                     image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
                 };
-                class gry {
-                    label = "Grey";
-                    image = "z\aceax\addons\gearinfo\data\camo\gry.paa";
-                };
-                class mcbk {
-                    label = "Multicam Black";
-                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
-                };
-                class rgr {
-                    label = "Ranger Green";
-                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
-                };
-                class od {
-                    label = "Olive Drab";
+                class OD {
+                    label = "OD";
                     image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
                 };
-                class coy {
-                    label = "Coyote";
+                class OD_SNK {
+                    label = "OD/Snk";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+                class RGR {
+                    label = "RGR";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class RGR_SNK {
+                    label = "RGR/Snk";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class COY {
+                    label = "COY";
                     image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
                 };
-                class tan {
+                class COY_SNK {
+                    label = "COY/Snk";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class TAN {
                     label = "Tan";
                     image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
                 };
-                class aor1 {
-                    label = "AOR-1";
+                class TAN_SNK {
+                    label = "Tan/Snk";
                     image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
                 };
-                class aor2 {
-                    label = "AOR-2";
-                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                class AOR1 {
+                    label = "AOR1";
+                    image = "z\aceax\addons\gearinfo\data\camo\aor1.paa";
                 };
-                class mc {
-                    label = "Multicam";
-                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                class AOR2 {
+                    label = "AOR2";
+                    image = "z\aceax\addons\gearinfo\data\camo\aor2.paa";
                 };
-                class mcwdl {
-                    label = "Multicam Woodland";
-                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
-                };
-                class mctp {
-                    label = "Multicam Tropic";
-                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
-                };
-                class mcarid {
-                    label = "Multicam Arid";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class ctrgarid {
-                    label = "CTRG Arid";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class ctrgtropic {
-                    label = "CTRG Tropic";
-                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
-                };
-                class m81 {
-                    label = "M81 Woodland";
-                    image = "z\aceax\addons\gearinfo\data\camo\m81.paa";
-                };
-                class mtp {
-                    label = "MTP";
-                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
-                };
-                class dpm {
-                    label = "DPM";
-                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
-                };
-                class nightdesert {
-                    label = "Night Desert";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class digital {
-                    label = "Digital";
-                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
-                };
-                class geometric {
-                    label = "Geometric";
-                    image = "z\aceax\addons\gearinfo\data\camo\gry.paa";
-                };
-                class tan_snake {
-                    label = "Tan SnakeSkin";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class coy_snake {
-                    label = "Coyote SnakeSkin";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class od_snake {
-                    label = "Olive Drab SnakeSkin";
-                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
-                };
-                class rgr_snake {
-                    label = "Ranger Green SnakeSkin";
-                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
-                };
-                class alt_mc {
-                    label = "Black & Multicam";
+                class MC {
+                    label = "MC";
                     image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
                 };
             };
             class flag {
-                label = "Flag";
                 alwaysSelectable = 1;
-                values[] = {"none", "us", "uk", "aaf", "ldf"};
-                class none {
-                    label = "None";
-                };
-                class us {
+                values[] = {"US", "None"};
+                class US {
                     label = "US";
                 };
-                class uk {
+                class None {
+                    label = "None";
+                };
+            };
+        };
+        class MRP_opscore_plain {
+            label = "MRP HighCut (Plain)";
+            options[] = {"camo", "flag"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"BLK", "OD", "OD_SNK", "RGR", "RGR_SNK", "COY", "COY_SNK", "TAN", "TAN_SNK"};
+                class BLK {
+                    label = "Black";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class OD {
+                    label = "OD";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+                class OD_SNK {
+                    label = "OD/Snk";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+                class RGR {
+                    label = "RGR";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class RGR_SNK {
+                    label = "RGR/Snk";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class COY {
+                    label = "COY";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class COY_SNK {
+                    label = "COY/Snk";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class TAN {
+                    label = "Tan";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class TAN_SNK {
+                    label = "Tan/Snk";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+            };
+            class flag {
+                alwaysSelectable = 1;
+                values[] = {"None"};
+                class None {
+                    label = "None";
+                };
+            };
+        };
+        class MRP_opscore_cover {
+            label = "MRP HighCut (Cover)";
+            options[] = {"camo", "flag"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"BLK", "OD", "RGR", "COY", "TAN", "GRY", "AOR1", "AOR2", "MC", "MCBK", "MCWDL", "MCTP", "MCARID", "CTRG_TP", "CTRG_AR", "DPM", "NGTDES", "MTP", "M81", "DIGI", "GEO", "MCB"};
+                class BLK {
+                    label = "Black";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class OD {
+                    label = "OD";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+                class RGR {
+                    label = "RGR";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class COY {
+                    label = "COY";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class TAN {
+                    label = "Tan";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class GRY {
+                    label = "Grey";
+                    image = "z\aceax\addons\gearinfo\data\camo\gry.paa";
+                };
+                class AOR1 {
+                    label = "AOR1";
+                    image = "z\aceax\addons\gearinfo\data\camo\aor1.paa";
+                };
+                class AOR2 {
+                    label = "AOR2";
+                    image = "z\aceax\addons\gearinfo\data\camo\aor2.paa";
+                };
+                class MC {
+                    label = "MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class MCBK {
+                    label = "MC-Blk";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcb.paa";
+                };
+                class MCWDL {
+                    label = "MC-Wdl";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+                class MCTP {
+                    label = "MC-Trp";
+                    image = "z\aceax\addons\gearinfo\data\camo\mct.paa";
+                };
+                class MCARID {
+                    label = "MC-Ard";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcd.paa";
+                };
+                class CTRG_TP {
+                    label = "CTRG-T";
+                    image = "z\aceax\addons\gearinfo\data\camo\ctrg_trop.paa";
+                };
+                class CTRG_AR {
+                    label = "CTRG-A";
+                    image = "z\aceax\addons\gearinfo\data\camo\ctrg_arid.paa";
+                };
+                class DPM {
+                    label = "DPM";
+                    image = "z\aceax\addons\gearinfo\data\camo\dpm.paa";
+                };
+                class NGTDES {
+                    label = "NgtDes";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcd.paa";
+                };
+                class MTP {
+                    label = "MTP";
+                    image = "z\aceax\addons\gearinfo\data\camo\mtp.paa";
+                };
+                class M81 {
+                    label = "M81";
+                    image = "z\aceax\addons\gearinfo\data\camo\m81.paa";
+                };
+                class DIGI {
+                    label = "Digital";
+                    image = "z\aceax\addons\gearinfo\data\camo\aaf.paa";
+                };
+                class GEO {
+                    label = "Geom";
+                    image = "z\aceax\addons\gearinfo\data\camo\flck.paa";
+                };
+                class MCB {
+                    label = "Blk/MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcb.paa";
+                };
+            };
+            class flag {
+                alwaysSelectable = 1;
+                values[] = {"US", "UK", "AAF", "LDF", "None"};
+                class US {
+                    label = "US";
+                };
+                class UK {
                     label = "UK";
                 };
-                class aaf {
+                class AAF {
                     label = "AAF";
                 };
-                class ldf {
+                class LDF {
                     label = "LDF";
+                };
+                class None {
+                    label = "None";
+                };
+            };
+        };
+        class MRP_opscore_stealth {
+            label = "MRP HighCut (Stealth)";
+            options[] = {"camo", "flag"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"CTRG_TP", "CTRG_AR"};
+                class CTRG_TP {
+                    label = "CTRG-T";
+                    image = "z\aceax\addons\gearinfo\data\camo\ctrg_trop.paa";
+                };
+                class CTRG_AR {
+                    label = "CTRG-A";
+                    image = "z\aceax\addons\gearinfo\data\camo\ctrg_arid.paa";
+                };
+            };
+            class flag {
+                alwaysSelectable = 1;
+                values[] = {"US", "UK", "None"};
+                class US {
+                    label = "US";
+                };
+                class UK {
+                    label = "UK";
+                };
+                class None {
+                    label = "None";
                 };
             };
         };
@@ -156,496 +267,414 @@ class XtdGearModels {
 class XtdGearInfos {
     class CfgWeapons {
         class opscore_highcut_blk_US {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "blk";
-            flag = "us";
+            model = "MRP_opscore_bare";
+            camo = "BLK";
+            flag = "US";
         };
         class opscore_highcut_od_US {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "od";
-            flag = "us";
+            model = "MRP_opscore_bare";
+            camo = "OD";
+            flag = "US";
         };
         class opscore_highcut_rgr_US {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "rgr";
-            flag = "us";
+            model = "MRP_opscore_bare";
+            camo = "RGR";
+            flag = "US";
         };
         class opscore_highcut_coy_US {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "coy";
-            flag = "us";
+            model = "MRP_opscore_bare";
+            camo = "COY";
+            flag = "US";
         };
         class opscore_highcut_tan_US {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "tan";
-            flag = "us";
+            model = "MRP_opscore_bare";
+            camo = "TAN";
+            flag = "US";
         };
         class opscore_highcut_tan_snake_US {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "tan_snake";
-            flag = "us";
+            model = "MRP_opscore_bare";
+            camo = "TAN_SNK";
+            flag = "US";
         };
         class opscore_highcut_coy_snake_US {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "coy_snake";
-            flag = "us";
+            model = "MRP_opscore_bare";
+            camo = "COY_SNK";
+            flag = "US";
         };
         class opscore_highcut_od_snake_US {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "od_snake";
-            flag = "us";
+            model = "MRP_opscore_bare";
+            camo = "OD_SNK";
+            flag = "US";
         };
         class opscore_highcut_rgr_snake_US {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "rgr_snake";
-            flag = "us";
+            model = "MRP_opscore_bare";
+            camo = "RGR_SNK";
+            flag = "US";
         };
         class opscore_highcut_aor1_US {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "aor1";
-            flag = "us";
+            model = "MRP_opscore_bare";
+            camo = "AOR1";
+            flag = "US";
         };
         class opscore_highcut_mc_US {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "mc";
-            flag = "us";
+            model = "MRP_opscore_bare";
+            camo = "MC";
+            flag = "US";
         };
         class opscore_highcut_aor2_US {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "aor2";
-            flag = "us";
+            model = "MRP_opscore_bare";
+            camo = "AOR2";
+            flag = "US";
         };
         class opscore_highcut_blk_plain {
-            model = "opscoreHighCut";
-            variant = "plain";
-            camo = "blk";
-            flag = "none";
+            model = "MRP_opscore_plain";
+            camo = "BLK";
+            flag = "None";
         };
         class opscore_highcut_tan_plain {
-            model = "opscoreHighCut";
-            variant = "plain";
-            camo = "tan";
-            flag = "none";
+            model = "MRP_opscore_plain";
+            camo = "TAN";
+            flag = "None";
         };
         class opscore_highcut_tan_snake_plain {
-            model = "opscoreHighCut";
-            variant = "plain";
-            camo = "tan_snake";
-            flag = "none";
+            model = "MRP_opscore_plain";
+            camo = "TAN_SNK";
+            flag = "None";
         };
         class opscore_highcut_coy_plain {
-            model = "opscoreHighCut";
-            variant = "plain";
-            camo = "coy";
-            flag = "none";
+            model = "MRP_opscore_plain";
+            camo = "COY";
+            flag = "None";
         };
         class opscore_highcut_coy_snake_plain {
-            model = "opscoreHighCut";
-            variant = "plain";
-            camo = "coy_snake";
-            flag = "none";
+            model = "MRP_opscore_plain";
+            camo = "COY_SNK";
+            flag = "None";
         };
         class opscore_highcut_rgr_plain {
-            model = "opscoreHighCut";
-            variant = "plain";
-            camo = "rgr";
-            flag = "none";
+            model = "MRP_opscore_plain";
+            camo = "RGR";
+            flag = "None";
         };
         class opscore_highcut_rgr_snake_plain {
-            model = "opscoreHighCut";
-            variant = "plain";
-            camo = "rgr_snake";
-            flag = "none";
+            model = "MRP_opscore_plain";
+            camo = "RGR_SNK";
+            flag = "None";
         };
         class opscore_highcut_od_plain {
-            model = "opscoreHighCut";
-            variant = "plain";
-            camo = "od";
-            flag = "none";
+            model = "MRP_opscore_plain";
+            camo = "OD";
+            flag = "None";
         };
         class opscore_highcut_od_snake_plain {
-            model = "opscoreHighCut";
-            variant = "plain";
-            camo = "od_snake";
-            flag = "none";
+            model = "MRP_opscore_plain";
+            camo = "OD_SNK";
+            flag = "None";
         };
         class opscore_highcut_cover_blk_US {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "blk";
-            flag = "us";
+            model = "MRP_opscore_cover";
+            camo = "BLK";
+            flag = "US";
         };
         class opscore_highcut_cover_gry_US {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "gry";
-            flag = "us";
+            model = "MRP_opscore_cover";
+            camo = "GRY";
+            flag = "US";
         };
         class opscore_highcut_cover_mcbk_US {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "mcbk";
-            flag = "us";
+            model = "MRP_opscore_cover";
+            camo = "MCBK";
+            flag = "US";
         };
         class opscore_highcut_cover_rgr_US {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "rgr";
-            flag = "us";
+            model = "MRP_opscore_cover";
+            camo = "RGR";
+            flag = "US";
         };
         class opscore_highcut_cover_od_US {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "od";
-            flag = "us";
+            model = "MRP_opscore_cover";
+            camo = "OD";
+            flag = "US";
         };
         class opscore_highcut_cover_aor2_US {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "aor2";
-            flag = "us";
+            model = "MRP_opscore_cover";
+            camo = "AOR2";
+            flag = "US";
         };
         class opscore_highcut_cover_CTRGtropic_US {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "ctrgtropic";
-            flag = "us";
+            model = "MRP_opscore_cover";
+            camo = "CTRG_TP";
+            flag = "US";
         };
         class opscore_highcut_cover_CTRGtropic_UK {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "ctrgtropic";
-            flag = "uk";
+            model = "MRP_opscore_cover";
+            camo = "CTRG_TP";
+            flag = "UK";
         };
         class opscore_highcut_cover_mcwdl_US {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "mcwdl";
-            flag = "us";
+            model = "MRP_opscore_cover";
+            camo = "MCWDL";
+            flag = "US";
         };
         class opscore_highcut_cover_mctp_US {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "mctp";
-            flag = "us";
+            model = "MRP_opscore_cover";
+            camo = "MCTP";
+            flag = "US";
         };
         class opscore_highcut_cover_DPM_UK {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "dpm";
-            flag = "uk";
+            model = "MRP_opscore_cover";
+            camo = "DPM";
+            flag = "UK";
         };
         class opscore_highcut_cover_coy_US {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "coy";
-            flag = "us";
+            model = "MRP_opscore_cover";
+            camo = "COY";
+            flag = "US";
         };
         class opscore_highcut_cover_tan_US {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "tan";
-            flag = "us";
+            model = "MRP_opscore_cover";
+            camo = "TAN";
+            flag = "US";
         };
         class opscore_highcut_cover_CTRGarid_US {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "ctrgarid";
-            flag = "us";
+            model = "MRP_opscore_cover";
+            camo = "CTRG_AR";
+            flag = "US";
         };
         class opscore_highcut_cover_CTRGarid_UK {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "ctrgarid";
-            flag = "uk";
+            model = "MRP_opscore_cover";
+            camo = "CTRG_AR";
+            flag = "UK";
         };
         class opscore_highcut_cover_NightDesert_US {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "nightdesert";
-            flag = "us";
+            model = "MRP_opscore_cover";
+            camo = "NGTDES";
+            flag = "US";
         };
         class opscore_highcut_cover_aor1_US {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "aor1";
-            flag = "us";
+            model = "MRP_opscore_cover";
+            camo = "AOR1";
+            flag = "US";
         };
         class opscore_highcut_cover_mcarid_US {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "mcarid";
-            flag = "us";
+            model = "MRP_opscore_cover";
+            camo = "MCARID";
+            flag = "US";
         };
         class opscore_highcut_cover_mtp_UK {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "mtp";
-            flag = "uk";
+            model = "MRP_opscore_cover";
+            camo = "MTP";
+            flag = "UK";
         };
         class opscore_highcut_cover_mc_US {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "mc";
-            flag = "us";
+            model = "MRP_opscore_cover";
+            camo = "MC";
+            flag = "US";
         };
         class opscore_highcut_cover_m81_US {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "m81";
-            flag = "us";
+            model = "MRP_opscore_cover";
+            camo = "M81";
+            flag = "US";
         };
         class opscore_highcut_cover_alt_AAF {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "digital";
-            flag = "aaf";
+            model = "MRP_opscore_cover";
+            camo = "DIGI";
+            flag = "AAF";
         };
         class opscore_highcut_cover_alt_LDF {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "geometric";
-            flag = "ldf";
+            model = "MRP_opscore_cover";
+            camo = "GEO";
+            flag = "LDF";
         };
         class opscore_highcut_cover_alt_mc {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "alt_mc";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "MCB";
+            flag = "None";
         };
         class opscore_highcut_CTRGarid_US_TI {
-            model = "opscoreHighCut";
-            variant = "stealth";
-            camo = "ctrgarid";
-            flag = "us";
+            model = "MRP_opscore_stealth";
+            camo = "CTRG_AR";
+            flag = "US";
         };
         class opscore_highcut_CTRGarid_UK_TI {
-            model = "opscoreHighCut";
-            variant = "stealth";
-            camo = "ctrgarid";
-            flag = "uk";
+            model = "MRP_opscore_stealth";
+            camo = "CTRG_AR";
+            flag = "UK";
         };
         class opscore_highcut_CTRGtropic_US_TI {
-            model = "opscoreHighCut";
-            variant = "stealth";
-            camo = "ctrgtropic";
-            flag = "us";
+            model = "MRP_opscore_stealth";
+            camo = "CTRG_TP";
+            flag = "US";
         };
         class opscore_highcut_CTRGtropic_UK_TI {
-            model = "opscoreHighCut";
-            variant = "stealth";
-            camo = "ctrgtropic";
-            flag = "uk";
+            model = "MRP_opscore_stealth";
+            camo = "CTRG_TP";
+            flag = "UK";
         };
         class opscore_highcut_blk {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "blk";
-            flag = "none";
+            model = "MRP_opscore_bare";
+            camo = "BLK";
+            flag = "None";
         };
         class opscore_highcut_od {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "od";
-            flag = "none";
+            model = "MRP_opscore_bare";
+            camo = "OD";
+            flag = "None";
         };
         class opscore_highcut_rgr {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "rgr";
-            flag = "none";
+            model = "MRP_opscore_bare";
+            camo = "RGR";
+            flag = "None";
         };
         class opscore_highcut_coy {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "coy";
-            flag = "none";
+            model = "MRP_opscore_bare";
+            camo = "COY";
+            flag = "None";
         };
         class opscore_highcut_tan {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "tan";
-            flag = "none";
+            model = "MRP_opscore_bare";
+            camo = "TAN";
+            flag = "None";
         };
         class opscore_highcut_tan_snake {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "tan_snake";
-            flag = "none";
+            model = "MRP_opscore_bare";
+            camo = "TAN_SNK";
+            flag = "None";
         };
         class opscore_highcut_coy_snake {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "coy_snake";
-            flag = "none";
+            model = "MRP_opscore_bare";
+            camo = "COY_SNK";
+            flag = "None";
         };
         class opscore_highcut_od_snake {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "od_snake";
-            flag = "none";
+            model = "MRP_opscore_bare";
+            camo = "OD_SNK";
+            flag = "None";
         };
         class opscore_highcut_rgr_snake {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "rgr_snake";
-            flag = "none";
+            model = "MRP_opscore_bare";
+            camo = "RGR_SNK";
+            flag = "None";
         };
         class opscore_highcut_aor1 {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "aor1";
-            flag = "none";
+            model = "MRP_opscore_bare";
+            camo = "AOR1";
+            flag = "None";
         };
         class opscore_highcut_mc {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "mc";
-            flag = "none";
+            model = "MRP_opscore_bare";
+            camo = "MC";
+            flag = "None";
         };
         class opscore_highcut_aor2 {
-            model = "opscoreHighCut";
-            variant = "no_cover";
-            camo = "aor2";
-            flag = "none";
+            model = "MRP_opscore_bare";
+            camo = "AOR2";
+            flag = "None";
         };
         class opscore_highcut_cover_blk {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "blk";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "BLK";
+            flag = "None";
         };
         class opscore_highcut_cover_gry {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "gry";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "GRY";
+            flag = "None";
         };
         class opscore_highcut_cover_mcbk {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "mcbk";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "MCBK";
+            flag = "None";
         };
         class opscore_highcut_cover_rgr {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "rgr";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "RGR";
+            flag = "None";
         };
         class opscore_highcut_cover_od {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "od";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "OD";
+            flag = "None";
         };
         class opscore_highcut_cover_aor2 {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "aor2";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "AOR2";
+            flag = "None";
         };
         class opscore_highcut_cover_CTRGtropic {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "ctrgtropic";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "CTRG_TP";
+            flag = "None";
         };
         class opscore_highcut_cover_mcwdl {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "mcwdl";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "MCWDL";
+            flag = "None";
         };
         class opscore_highcut_cover_mctp {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "mctp";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "MCTP";
+            flag = "None";
         };
         class opscore_highcut_cover_DPM {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "dpm";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "DPM";
+            flag = "None";
         };
         class opscore_highcut_cover_coy {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "coy";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "COY";
+            flag = "None";
         };
         class opscore_highcut_cover_tan {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "tan";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "TAN";
+            flag = "None";
         };
         class opscore_highcut_cover_CTRGarid {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "ctrgarid";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "CTRG_AR";
+            flag = "None";
         };
         class opscore_highcut_cover_NightDesert {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "nightdesert";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "NGTDES";
+            flag = "None";
         };
         class opscore_highcut_cover_aor1 {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "aor1";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "AOR1";
+            flag = "None";
         };
         class opscore_highcut_cover_mcarid {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "mcarid";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "MCARID";
+            flag = "None";
         };
         class opscore_highcut_cover_mtp {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "mtp";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "MTP";
+            flag = "None";
         };
         class opscore_highcut_cover_mc {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "mc";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "MC";
+            flag = "None";
         };
         class opscore_highcut_cover_m81 {
-            model = "opscoreHighCut";
-            variant = "covered";
-            camo = "m81";
-            flag = "none";
+            model = "MRP_opscore_cover";
+            camo = "M81";
+            flag = "None";
         };
         class opscore_highcut_CTRGarid_TI {
-            model = "opscoreHighCut";
-            variant = "stealth";
-            camo = "ctrgarid";
-            flag = "none";
+            model = "MRP_opscore_stealth";
+            camo = "CTRG_AR";
+            flag = "None";
         };
         class opscore_highcut_CTRGtropic_TI {
-            model = "opscoreHighCut";
-            variant = "stealth";
-            camo = "ctrgtropic";
-            flag = "none";
+            model = "MRP_opscore_stealth";
+            camo = "CTRG_TP";
+            flag = "None";
         };
     };
 };

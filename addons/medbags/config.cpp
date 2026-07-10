@@ -6,7 +6,7 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "a3_props_f_orange",
+            "A3_Props_F_Orange",
             "ghost_common"
         };
         units[] = {

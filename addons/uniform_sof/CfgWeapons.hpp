@@ -1,0 +1,1016 @@
+class CfgWeapons {
+    // base classes
+    class ItemCore;
+    class HeadgearItem;
+    class UniformItem;
+    class Uniform_Base;
+    class VestItem;
+    class V_PlateCarrier1_rgr;
+    class HelmetBase: ItemCore {
+        class ItemInfo: HeadgearItem {};
+    };
+
+    // ===== Headgear =====
+    class GVAR(SOF_H_Opscore_rgr): HelmetBase {
+        author = "OokamiJamie";
+        // ACE electronic hearing protection (headset)
+        ace_hearing_protection = 0.85;
+        ace_hearing_lowerVolume = 0.05;
+        ace_hearing_hasEHP = 1;
+        scope = 2;
+        model = "\SOFGear\sof_characters\Headgear\H_Opscore.p3d";
+        displayName = "Hi-Cut Helmet (Green)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelections[] = {
+            "camo",
+            "camo1"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\h_opscore.rvmat),
+            QPATHTOF(data\h_headset.rvmat)
+        };
+        class ItemInfo: ItemInfo {
+            mass = 30;
+            hiddenSelections[] = {
+                "camo",
+                "camo1"
+            };
+            hiddenSelectionsTextures[] = {
+                QPATHTOF(data\h_opscore_rgr_co.paa),
+                QPATHTOF(data\h_headset_rgr_co.paa)
+            };
+            uniformModel = "\SOFGear\sof_characters\Headgear\H_Opscore.p3d";
+            modelSides[] = {2,3};
+            class HitpointsProtectionInfo {
+                class Head {
+                    hitpointName = "HitHead";
+                    armor = 6;
+                    passThrough = 0.5;
+                };
+            };
+        };
+    };
+    class GVAR(SOF_H_Opscore_snd): GVAR(SOF_H_Opscore_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Hi-Cut Helmet (Sand)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_snd_co.paa),
+            QPATHTOF(data\h_headset_snd_co.paa)
+        };
+    };
+    class GVAR(SOF_H_Opscore_blk): GVAR(SOF_H_Opscore_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Hi-Cut Helmet (Black)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_blk_co.paa),
+            QPATHTOF(data\h_headset_blk_co.paa)
+        };
+    };
+    class GVAR(SOF_H_Opscore_oli): GVAR(SOF_H_Opscore_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Hi-Cut Helmet (Olive)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_oli_co.paa),
+            QPATHTOF(data\h_headset_blk_co.paa)
+        };
+    };
+    class GVAR(SOF_H_OpscoreSpec_rgr): HelmetBase {
+        author = "OokamiJamie";
+        // ACE electronic hearing protection (headset)
+        ace_hearing_protection = 0.85;
+        ace_hearing_lowerVolume = 0.05;
+        ace_hearing_hasEHP = 1;
+        scope = 2;
+        model = "\SOFGear\sof_characters\Headgear\H_Opscore_Spec.p3d";
+        displayName = "Enhanced Hi-Cut Helmet (Green)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelections[] = {
+            "camo",
+            "camo1",
+            "camo3"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            QPATHTOF(data\h_opscore_acc_rgr_co.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\h_opscore.rvmat),
+            QPATHTOF(data\h_headset.rvmat),
+            QPATHTOF(data\h_opscore_acc.rvmat)
+        };
+        class ItemInfo: ItemInfo {
+            mass = 30;
+            hiddenSelections[] = {
+                "camo",
+                "camo1",
+                "camo3"
+            };
+            hiddenSelectionsTextures[] = {
+                QPATHTOF(data\h_opscore_rgr_co.paa),
+                QPATHTOF(data\h_headset_rgr_co.paa),
+                QPATHTOF(data\h_opscore_acc_rgr_co.paa)
+            };
+            uniformModel = "\SOFGear\sof_characters\Headgear\H_Opscore_Spec.p3d";
+            modelSides[] = {2,3};
+            class HitpointsProtectionInfo {
+                class Head {
+                    hitpointName = "HitHead";
+                    armor = 6;
+                    passThrough = 0.5;
+                };
+            };
+        };
+    };
+    class GVAR(SOF_H_OpscoreSpec_snd): GVAR(SOF_H_OpscoreSpec_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Enhanced Hi-Cut Helmet (Sand)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_snd_co.paa),
+            QPATHTOF(data\h_headset_snd_co.paa),
+            QPATHTOF(data\h_opscore_acc_snd_co.paa)
+        };
+    };
+    class GVAR(SOF_H_OpscoreSpec_blk): GVAR(SOF_H_OpscoreSpec_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Enhanced Hi-Cut Helmet (Black)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_blk_co.paa),
+            QPATHTOF(data\h_headset_blk_co.paa),
+            QPATHTOF(data\h_opscore_acc_blk_co.paa)
+        };
+    };
+    class GVAR(SOF_H_OpscoreSpec_oli): GVAR(SOF_H_OpscoreSpec_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Enhanced Hi-Cut Helmet (Olive)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_oli_co.paa),
+            QPATHTOF(data\h_headset_blk_co.paa),
+            QPATHTOF(data\h_opscore_acc_blk_co.paa)
+        };
+    };
+    class GVAR(SOF_H_Opscore_Cover_rgr): HelmetBase {
+        author = "OokamiJamie";
+        // ACE electronic hearing protection (headset)
+        ace_hearing_protection = 0.85;
+        ace_hearing_lowerVolume = 0.05;
+        ace_hearing_hasEHP = 1;
+        scope = 2;
+        model = "\SOFGear\sof_characters\Headgear\H_Opscore_Cover.p3d";
+        displayName = "Hi-Cut Helmet (Cover, Green)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelections[] = {
+            "camo",
+            "camo1",
+            "camo2"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            QPATHTOF(data\h_opscore_cover_rgr_co.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\h_opscore.rvmat),
+            QPATHTOF(data\h_headset.rvmat),
+            QPATHTOF(data\h_opscore_cover.rvmat)
+        };
+        class ItemInfo: ItemInfo {
+            mass = 30;
+            hiddenSelections[] = {
+                "camo",
+                "camo1",
+                "camo2"
+            };
+            hiddenSelectionsTextures[] = {
+                QPATHTOF(data\h_opscore_rgr_co.paa),
+                QPATHTOF(data\h_headset_rgr_co.paa),
+                QPATHTOF(data\h_opscore_cover_rgr_co.paa)
+            };
+            uniformModel = "\SOFGear\sof_characters\Headgear\H_Opscore_Cover.p3d";
+            modelSides[] = {2,3};
+            class HitpointsProtectionInfo {
+                class Head {
+                    hitpointName = "HitHead";
+                    armor = 6;
+                    passThrough = 0.5;
+                };
+            };
+        };
+    };
+    class GVAR(SOF_H_Opscore_CoverSpec_rgr): HelmetBase {
+        author = "OokamiJamie";
+        // ACE electronic hearing protection (headset)
+        ace_hearing_protection = 0.85;
+        ace_hearing_lowerVolume = 0.05;
+        ace_hearing_hasEHP = 1;
+        scope = 2;
+        model = "\SOFGear\sof_characters\Headgear\H_Opscore_Cover_Spec.p3d";
+        displayName = "Enhanced Hi-Cut Helmet (Cover, Green)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelections[] = {
+            "camo",
+            "camo1",
+            "camo2",
+            "camo3"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            QPATHTOF(data\h_opscore_cover_rgr_co.paa),
+            QPATHTOF(data\h_opscore_acc_rgr_co.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\h_opscore.rvmat),
+            QPATHTOF(data\h_headset.rvmat),
+            QPATHTOF(data\h_opscore_cover.rvmat),
+            QPATHTOF(data\h_opscore_acc.rvmat)
+        };
+        class ItemInfo: ItemInfo {
+            mass = 30;
+            hiddenSelections[] = {
+                "camo",
+                "camo1",
+                "camo2",
+                "camo3"
+            };
+            hiddenSelectionsTextures[] = {
+                QPATHTOF(data\h_opscore_rgr_co.paa),
+                QPATHTOF(data\h_headset_rgr_co.paa),
+                QPATHTOF(data\h_opscore_cover_rgr_co.paa),
+                QPATHTOF(data\h_opscore_acc_rgr_co.paa)
+            };
+            uniformModel = "\SOFGear\sof_characters\Headgear\H_Opscore_Cover_Spec.p3d";
+            modelSides[] = {2,3};
+            class HitpointsProtectionInfo {
+                class Head {
+                    hitpointName = "HitHead";
+                    armor = 6;
+                    passThrough = 0.5;
+                };
+            };
+        };
+    };
+    class GVAR(SOF_H_Opscore_CoverCamo_rgr): HelmetBase {
+        author = "OokamiJamie";
+        // ACE electronic hearing protection (headset)
+        ace_hearing_protection = 0.85;
+        ace_hearing_lowerVolume = 0.05;
+        ace_hearing_hasEHP = 1;
+        scope = 2;
+        model = "\SOFGear\sof_characters\Headgear\H_Opscore_Cover_camo.p3d";
+        displayName = "Hi-Cut Helmet (Cover, Green/Camo)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelections[] = {
+            "camo",
+            "camo1",
+            "camo2",
+            "camo3"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            QPATHTOF(data\h_opscore_cover_rgr_co.paa),
+            QPATHTOF(data\ghillie_leaves_rgr_ca.paa)
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\h_opscore.rvmat),
+            QPATHTOF(data\h_headset.rvmat),
+            QPATHTOF(data\h_opscore_cover.rvmat),
+            ""
+        };
+        class ItemInfo: ItemInfo {
+            mass = 30;
+            hiddenSelections[] = {
+                "camo",
+                "camo1",
+                "camo2",
+                "camo3"
+            };
+            hiddenSelectionsTextures[] = {
+                QPATHTOF(data\h_opscore_rgr_co.paa),
+                QPATHTOF(data\h_headset_rgr_co.paa),
+                QPATHTOF(data\h_opscore_cover_rgr_co.paa),
+                QPATHTOF(data\ghillie_leaves_rgr_ca.paa)
+            };
+            uniformModel = "\SOFGear\sof_characters\Headgear\H_Opscore_Cover_camo.p3d";
+            modelSides[] = {2,3};
+            class HitpointsProtectionInfo {
+                class Head {
+                    hitpointName = "HitHead";
+                    armor = 6;
+                    passThrough = 0.5;
+                };
+            };
+        };
+    };
+    class GVAR(SOF_H_Opscore_Cover_mcam): GVAR(SOF_H_Opscore_Cover_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Hi-Cut Helmet (Cover, MTP)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            QPATHTOF(data\h_opscore_cover_mcam_co.paa)
+        };
+    };
+    class GVAR(SOF_H_Opscore_CoverSpec_mcam): GVAR(SOF_H_Opscore_CoverSpec_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Enhanced Hi-Cut Helmet (Cover, MTP)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            QPATHTOF(data\h_opscore_cover_mcam_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_H_Opscore_CoverCamo_mcam): GVAR(SOF_H_Opscore_CoverCamo_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Hi-Cut Helmet (Cover, MTP/Camo)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            QPATHTOF(data\h_opscore_cover_mcam_co.paa),
+            QPATHTOF(data\ghillie_leaves_mcam_ca.paa)
+        };
+    };
+    class GVAR(SOF_H_Opscore_Cover_tna): GVAR(SOF_H_Opscore_Cover_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Hi-Cut Helmet (Cover, Tropic)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            QPATHTOF(data\h_opscore_cover_tna_co.paa)
+        };
+    };
+    class GVAR(SOF_H_Opscore_CoverSpec_tna): GVAR(SOF_H_Opscore_CoverSpec_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Enhanced Hi-Cut Helmet (Cover, Tropic)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            QPATHTOF(data\h_opscore_cover_tna_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_H_Opscore_Cover_wdl): GVAR(SOF_H_Opscore_Cover_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Hi-Cut Helmet (Cover, Woodland)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            QPATHTOF(data\h_opscore_cover_wdl_co.paa)
+        };
+    };
+    class GVAR(SOF_H_Opscore_CoverSpec_wdl): GVAR(SOF_H_Opscore_CoverSpec_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Enhanced Hi-Cut Helmet (Cover, Woodland)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            QPATHTOF(data\h_opscore_cover_wdl_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_H_Opscore_Cover_mrpt_wdl): GVAR(SOF_H_Opscore_Cover_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Hi-Cut Helmet (Cover, USMC Woodland)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_snd_co.paa),
+            QPATHTOF(data\h_headset_snd_co.paa),
+            QPATHTOF(data\h_opscore_cover_mrpt_wdl_co.paa)
+        };
+    };
+    class GVAR(SOF_H_Opscore_CoverSpec_mrpt_wdl): GVAR(SOF_H_Opscore_CoverSpec_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Enhanced Hi-Cut Helmet (Cover, USMC Woodland)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_snd_co.paa),
+            QPATHTOF(data\h_headset_snd_co.paa),
+            QPATHTOF(data\h_opscore_cover_mrpt_wdl_co.paa),
+            QPATHTOF(data\h_opscore_acc_snd_us_des_co.paa)
+        };
+    };
+    class GVAR(SOF_H_Opscore_Cover_mrpt_des): GVAR(SOF_H_Opscore_Cover_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Hi-Cut Helmet (Cover, USMC Desert)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_snd_co.paa),
+            QPATHTOF(data\h_headset_snd_co.paa),
+            QPATHTOF(data\h_opscore_cover_mrpt_des_co.paa)
+        };
+    };
+    class GVAR(SOF_H_Opscore_CoverSpec_mrpt_des): GVAR(SOF_H_Opscore_CoverSpec_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Enhanced Hi-Cut Helmet (Cover, USMC Desert)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_snd_co.paa),
+            QPATHTOF(data\h_headset_snd_co.paa),
+            QPATHTOF(data\h_opscore_cover_mrpt_des_co.paa),
+            QPATHTOF(data\h_opscore_acc_snd_us_des_co.paa)
+        };
+    };
+    class GVAR(SOF_H_Opscore_Cover_nwu): GVAR(SOF_H_Opscore_Cover_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Hi-Cut Helmet (Cover, USN Woodland)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            QPATHTOF(data\h_opscore_cover_nwu_co.paa)
+        };
+    };
+    class GVAR(SOF_H_Opscore_CoverSpec_nwu): GVAR(SOF_H_Opscore_CoverSpec_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Enhanced Hi-Cut Helmet (Cover, USN Woodland)";
+        picture = QPATHTOF(data\h_opscore_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            QPATHTOF(data\h_opscore_cover_nwu_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_H_BaseballCap_rgr): HelmetBase {
+        author = "OokamiJamie";
+        scope = 2;
+        model = "\SOFGear\sof_characters\Headgear\H_BaseballCap.p3d";
+        displayName = "Baseball Cap (Green)";
+        picture = QPATHTOF(data\h_baseballcap_ico_ca.paa);
+        hiddenSelections[] = {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_baseballcap_rgr_co.paa)
+        };
+        class ItemInfo: ItemInfo {
+            mass = 8;
+            hiddenSelections[] = {
+                "camo",
+                "camo2"
+            };
+            hiddenSelectionsTextures[] = {
+                QPATHTOF(data\h_baseballcap_rgr_co.paa)
+            };
+            uniformModel = "\SOFGear\sof_characters\Headgear\H_BaseballCap.p3d";
+            modelSides[] = {2,3};
+            class HitpointsProtectionInfo {
+                class Head {
+                    hitpointName = "HitHead";
+                    armor = 0;
+                    passThrough = 0;
+                };
+            };
+        };
+    };
+    class GVAR(SOF_H_BaseballCapSpec_rgr): HelmetBase {
+        author = "OokamiJamie";
+        // ACE electronic hearing protection (headset)
+        ace_hearing_protection = 0.85;
+        ace_hearing_lowerVolume = 0.05;
+        ace_hearing_hasEHP = 1;
+        scope = 2;
+        model = "\SOFGear\sof_characters\Headgear\H_BaseballCap_Spec.p3d";
+        displayName = "Baseball Cap (Headset, Green)";
+        picture = QPATHTOF(data\h_baseballcap_ico_ca.paa);
+        hiddenSelections[] = {
+            "camo",
+            "camo1",
+            "camo2"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_baseballcap_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            ""
+        };
+        class ItemInfo: ItemInfo {
+            mass = 8;
+            hiddenSelections[] = {
+                "camo",
+                "camo1",
+                "camo2"
+            };
+            hiddenSelectionsTextures[] = {
+                QPATHTOF(data\h_baseballcap_rgr_co.paa),
+                QPATHTOF(data\h_headset_rgr_co.paa),
+                ""
+            };
+            uniformModel = "\SOFGear\sof_characters\Headgear\H_BaseballCap_Spec.p3d";
+            modelSides[] = {2,3};
+            class HitpointsProtectionInfo {
+                class Head {
+                    hitpointName = "HitHead";
+                    armor = 0;
+                    passThrough = 0;
+                };
+            };
+        };
+    };
+    class GVAR(SOF_H_BaseballCap_khk): GVAR(SOF_H_BaseballCap_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Baseball Cap (Khaki)";
+        picture = QPATHTOF(data\h_baseballcap_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_baseballcap_khk_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_H_BaseballCapSpec_khk): GVAR(SOF_H_BaseballCapSpec_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Baseball Cap (Headset, Khaki)";
+        picture = QPATHTOF(data\h_baseballcap_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_baseballcap_khk_co.paa),
+            QPATHTOF(data\h_headset_blk_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_H_BaseballCap_mcam): GVAR(SOF_H_BaseballCap_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Baseball Cap (MTP)";
+        picture = QPATHTOF(data\h_baseballcap_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_baseballcap_mcam_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_H_BaseballCapSpec_mcam): GVAR(SOF_H_BaseballCapSpec_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Baseball Cap (Headset, MTP)";
+        picture = QPATHTOF(data\h_baseballcap_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_baseballcap_mcam_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_H_BaseballCapSpec_tna): GVAR(SOF_H_BaseballCapSpec_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Baseball Cap (Headset, Tropic)";
+        picture = QPATHTOF(data\h_baseballcap_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_baseballcap_tna_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_H_BaseballCapSpec_wdl): GVAR(SOF_H_BaseballCapSpec_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Baseball Cap (Headset, Woodland)";
+        picture = QPATHTOF(data\h_baseballcap_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_baseballcap_wdl_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            ""
+        };
+    };
+
+    // ===== Vests =====
+    class GVAR(SOF_V_AVSCarrier_Lite_rgr): V_PlateCarrier1_rgr {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "Light Carrier Vest (Green)";
+        picture = QPATHTOF(data\v_carrieravs_ico_ca.paa);
+        hiddenSelections[] = {
+            "camo",
+            "camo1"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrieravs_rgr_co.paa),
+            ""
+        };
+        hiddenSelectionsMaterials[] = {
+            QPATHTOF(data\v_carrieravs.rvmat),
+            ""
+        };
+        model = "\SOFGear\sof_characters\Vests\V_CarrierAVS_Lite.p3d";
+        class ItemInfo: VestItem {
+            uniformModel = "\SOFGear\sof_characters\Vests\V_CarrierAVS_Lite.p3d";
+            hiddenSelections[] = {
+                "camo",
+                "camo1"
+            };
+            hiddenSelectionsTextures[] = {
+                QPATHTOF(data\v_carrieravs_rgr_co.paa),
+                ""
+            };
+            containerClass = "Supply110";
+            mass = 60;
+            class HitpointsProtectionInfo {
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 14;
+                    passThrough = 0.1;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    passThrough = 0.1;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 14;
+                    passThrough = 0.1;
+                };
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 14;
+                    passThrough = 0.1;
+                };
+            };
+        };
+    };
+    class GVAR(SOF_V_AVSCarrier_Lite_rgr_noflag): GVAR(SOF_V_AVSCarrier_Lite_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "Light Carrier Vest (Green, No Flag)";
+        picture = QPATHTOF(data\v_carrieravs_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrieravs_rgr_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_V_AVSCarrier_Lite_mcam): GVAR(SOF_V_AVSCarrier_Lite_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "Light Carrier Vest (MTP)";
+        picture = QPATHTOF(data\v_carrieravs_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrieravs_mcam_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_V_AVSCarrier_Lite_tna): GVAR(SOF_V_AVSCarrier_Lite_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "Light Carrier Vest (Tropic)";
+        picture = QPATHTOF(data\v_carrieravs_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrieravs_tna_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_V_AVSCarrier_Lite_wdl): GVAR(SOF_V_AVSCarrier_Lite_rgr) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "Light Carrier Vest (Woodland)";
+        picture = QPATHTOF(data\v_carrieravs_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrieravs_wdl_co.paa),
+            ""
+        };
+    };
+
+    // ===== Uniforms =====
+    class GVAR(SOF_U_B_SFFatigues_rgr): Uniform_Base {        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Special Fatigues (Green)";
+        picture = QPATHTOF(data\u_fatiguessf_ico_ca.paa);
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+        hiddenSelections[] = {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_rgr_co.paa)
+        };
+        class ItemInfo: UniformItem {
+            uniformModel = "-";
+            uniformClass = QGVAR(SOF_B_SFFatigues_rgr);
+            containerClass = "Supply40";
+            mass = 40;
+        };
+    };
+    class GVAR(SOF_U_B_SFFatigues_Shortsleeve_rgr): Uniform_Base {        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Special Fatigues (Green, Rolled-up)";
+        picture = QPATHTOF(data\u_fatiguessf_ico_ca.paa);
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+        hiddenSelections[] = {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_rgr_co.paa)
+        };
+        class ItemInfo: UniformItem {
+            uniformModel = "-";
+            uniformClass = QGVAR(SOF_B_SFFatigues_Shortsleeve_rgr);
+            containerClass = "Supply40";
+            mass = 40;
+        };
+    };
+    class GVAR(SOF_U_B_SFFatigues_mcam): Uniform_Base {        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Special Fatigues (MTP)";
+        picture = QPATHTOF(data\u_fatiguessf_ico_ca.paa);
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+        hiddenSelections[] = {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_rgr_co.paa)
+        };
+        class ItemInfo: UniformItem {
+            uniformModel = "-";
+            uniformClass = QGVAR(SOF_B_SFFatigues_mcam);
+            containerClass = "Supply40";
+            mass = 40;
+        };
+    };
+    class GVAR(SOF_U_B_SFFatigues_Shortsleeve_mcam): Uniform_Base {        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Special Fatigues (MTP, Rolled-up)";
+        picture = QPATHTOF(data\u_fatiguessf_ico_ca.paa);
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+        hiddenSelections[] = {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_rgr_co.paa)
+        };
+        class ItemInfo: UniformItem {
+            uniformModel = "-";
+            uniformClass = QGVAR(SOF_B_SFFatigues_Shortsleeve_mcam);
+            containerClass = "Supply40";
+            mass = 40;
+        };
+    };
+    class GVAR(SOF_U_B_SFFatigues_tna): Uniform_Base {        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Special Fatigues (Tropic)";
+        picture = QPATHTOF(data\u_fatiguessf_ico_ca.paa);
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+        hiddenSelections[] = {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_rgr_co.paa)
+        };
+        class ItemInfo: UniformItem {
+            uniformModel = "-";
+            uniformClass = QGVAR(SOF_B_SFFatigues_tna);
+            containerClass = "Supply40";
+            mass = 40;
+        };
+    };
+    class GVAR(SOF_U_B_SFFatigues_Shortsleeve_tna): Uniform_Base {        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Special Fatigues (Tropic, Rolled-up)";
+        picture = QPATHTOF(data\u_fatiguessf_ico_ca.paa);
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+        hiddenSelections[] = {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_rgr_co.paa)
+        };
+        class ItemInfo: UniformItem {
+            uniformModel = "-";
+            uniformClass = QGVAR(SOF_B_SFFatigues_Shortsleeve_tna);
+            containerClass = "Supply40";
+            mass = 40;
+        };
+    };
+    class GVAR(SOF_U_B_SFFatigues_wdl): Uniform_Base {        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Special Fatigues (Woodland)";
+        picture = QPATHTOF(data\u_fatiguessf_ico_ca.paa);
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+        hiddenSelections[] = {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_rgr_co.paa)
+        };
+        class ItemInfo: UniformItem {
+            uniformModel = "-";
+            uniformClass = QGVAR(SOF_B_SFFatigues_wdl);
+            containerClass = "Supply40";
+            mass = 40;
+        };
+    };
+    class GVAR(SOF_U_B_SFFatigues_Shortsleeve_wdl): Uniform_Base {        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Special Fatigues (Woodland, Rolled-up)";
+        picture = QPATHTOF(data\u_fatiguessf_ico_ca.paa);
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+        hiddenSelections[] = {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_rgr_co.paa)
+        };
+        class ItemInfo: UniformItem {
+            uniformModel = "-";
+            uniformClass = QGVAR(SOF_B_SFFatigues_Shortsleeve_wdl);
+            containerClass = "Supply40";
+            mass = 40;
+        };
+    };
+    class GVAR(SOF_U_B_SFFatigues_mrpt): Uniform_Base {        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Special Fatigues (USMC Woodland)";
+        picture = QPATHTOF(data\u_fatiguessf_ico_ca.paa);
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+        hiddenSelections[] = {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_rgr_co.paa)
+        };
+        class ItemInfo: UniformItem {
+            uniformModel = "-";
+            uniformClass = QGVAR(SOF_B_SFFatigues_mrpt);
+            containerClass = "Supply40";
+            mass = 40;
+        };
+    };
+    class GVAR(SOF_U_B_SFFatigues_Shortsleeve_mrpt): Uniform_Base {        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Special Fatigues (USMC Woodland, Rolled-up)";
+        picture = QPATHTOF(data\u_fatiguessf_ico_ca.paa);
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+        hiddenSelections[] = {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_rgr_co.paa)
+        };
+        class ItemInfo: UniformItem {
+            uniformModel = "-";
+            uniformClass = QGVAR(SOF_B_SFFatigues_Shortsleeve_mrpt);
+            containerClass = "Supply40";
+            mass = 40;
+        };
+    };
+    class GVAR(SOF_U_B_SFFatigues_mrpt_des): Uniform_Base {        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Special Fatigues (USMC Desert)";
+        picture = QPATHTOF(data\u_fatiguessf_ico_ca.paa);
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+        hiddenSelections[] = {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_rgr_co.paa)
+        };
+        class ItemInfo: UniformItem {
+            uniformModel = "-";
+            uniformClass = QGVAR(SOF_B_SFFatigues_mrpt_des);
+            containerClass = "Supply40";
+            mass = 40;
+        };
+    };
+    class GVAR(SOF_U_B_SFFatigues_Shortsleeve_mrpt_des): Uniform_Base {        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Special Fatigues (USMC Desert, Rolled-up)";
+        picture = QPATHTOF(data\u_fatiguessf_ico_ca.paa);
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+        hiddenSelections[] = {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_rgr_co.paa)
+        };
+        class ItemInfo: UniformItem {
+            uniformModel = "-";
+            uniformClass = QGVAR(SOF_B_SFFatigues_Shortsleeve_mrpt_des);
+            containerClass = "Supply40";
+            mass = 40;
+        };
+    };
+    class GVAR(SOF_U_B_SFFatigues_nwu): Uniform_Base {        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Special Fatigues (USN Woodland)";
+        picture = QPATHTOF(data\u_fatiguessf_ico_ca.paa);
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+        hiddenSelections[] = {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_rgr_co.paa)
+        };
+        class ItemInfo: UniformItem {
+            uniformModel = "-";
+            uniformClass = QGVAR(SOF_B_SFFatigues_nwu);
+            containerClass = "Supply40";
+            mass = 40;
+        };
+    };
+    class GVAR(SOF_U_B_SFFatigues_Shortsleeve_nwu): Uniform_Base {        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Special Fatigues (USN Woodland, Rolled-up)";
+        picture = QPATHTOF(data\u_fatiguessf_ico_ca.paa);
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+        hiddenSelections[] = {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_rgr_co.paa)
+        };
+        class ItemInfo: UniformItem {
+            uniformModel = "-";
+            uniformClass = QGVAR(SOF_B_SFFatigues_Shortsleeve_nwu);
+            containerClass = "Supply40";
+            mass = 40;
+        };
+    };
+
+    // ===== OCP retextures =====
+    class GVAR(SOF_H_Opscore_Cover_ocp): GVAR(SOF_H_Opscore_Cover_rgr) {
+        displayName = "Hi-Cut Helmet (Cover, OCP)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            "\ax_aegisocp\2035_ocp_army_replace_aegis\Data\H_Opscore_Cover_ocp_CO.paa"
+        };
+    };
+    class GVAR(SOF_H_Opscore_CoverSpec_ocp): GVAR(SOF_H_Opscore_CoverSpec_rgr) {
+        displayName = "Enhanced Hi-Cut Helmet (Cover, OCP)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            "\ax_aegisocp\2035_ocp_army_replace_aegis\Data\H_Opscore_Cover_ocp_CO.paa",
+            ""
+        };
+    };
+    class GVAR(SOF_H_Opscore_CoverCamo_ocp): GVAR(SOF_H_Opscore_CoverCamo_rgr) {
+        displayName = "Hi-Cut Helmet (Cover, OCP/Camo)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_rgr_co.paa),
+            QPATHTOF(data\h_headset_rgr_co.paa),
+            "\ax_aegisocp\2035_ocp_army_replace_aegis\Data\H_Opscore_Cover_ocp_CO.paa",
+            QPATHTOF(data\ghillie_leaves_mcam_ca.paa)
+        };
+    };
+    class GVAR(SOF_U_B_SFFatigues_ocp): GVAR(SOF_U_B_SFFatigues_rgr) {        displayName = "Special Fatigues (OCP)";
+        hiddenSelectionsTextures[] = {
+            "\ax_aegisocp\2035_ocp_army_replace_aegis\data\U_AssaultUniform_Pants_ocp_CO.paa"
+        };
+        class ItemInfo: ItemInfo {
+            uniformClass = QGVAR(SOF_B_SFFatigues_ocp);
+        };
+    };
+    class GVAR(SOF_U_B_SFFatigues_Shortsleeve_ocp): GVAR(SOF_U_B_SFFatigues_Shortsleeve_rgr) {        displayName = "Special Fatigues (OCP, Rolled-Up)";
+        hiddenSelectionsTextures[] = {
+            "\ax_aegisocp\2035_ocp_army_replace_aegis\data\U_AssaultUniform_Pants_ocp_CO.paa"
+        };
+        class ItemInfo: ItemInfo {
+            uniformClass = QGVAR(SOF_B_SFFatigues_Shortsleeve_ocp);
+        };
+    };
+    class GVAR(SOF_V_AVSCarrier_Lite_ocp): GVAR(SOF_V_AVSCarrier_Lite_rgr) {
+        displayName = "Light Carrier Vest (OCP)";
+        hiddenSelectionsTextures[] = {
+            "\ax_aegisocp\2035_ocp_army_replace_aegis\Data\V_CarrierAVS_ocp_CO.paa",
+            ""
+        };
+    };
+};

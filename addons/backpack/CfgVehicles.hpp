@@ -2,12 +2,14 @@ class CfgVehicles {
     // External class reference START
     class B_AssaultPack_rgr;
     class B_AssaultPack_Kerry;
+    class B_Bergen_mcamo_F;
     class B_Carryall_cbr;
+    class B_FieldPack_oli;
     class B_Kitbag_rgr;
     class B_TacticalPack_blk;
     class B_Kitbag_Base;
-    class B_RadioBag_01_base_F;
-    class TFAR_rt1523g;
+    // class B_RadioBag_01_base_F;
+    // class TFAR_rt1523g;
     // External class reference  END
 
     class GVAR(AssaultPack_Multicam): B_AssaultPack_rgr {
@@ -208,72 +210,6 @@ class CfgVehicles {
         picture=QPATHTOF(data\ui\icon_B_C_Small_Multicam_Woodland.paa);
         MACRO_ITEM_COMMON
     };
-    class GVAR(AssaultPack_Solid_Black): B_AssaultPack_rgr {
-        author = QAUTHOR;
-        
-        maximumLoad = 240;
-        displayName="[Ghost] Assault Pack";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_compact_solid_black_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_AssaultPack_Solid_Black_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(AssaultPackEnhanced_Solid_Black): B_AssaultPack_Kerry {
-        author = QAUTHOR;
-        
-        maximumLoad = 240;
-        displayName="[Ghost] Assault Pack (Enhanced)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_compact_solid_black_co.paa),
-            QPATHTOF(data\vests_Solid_Black_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_AssaultPack_Solid_Black_ca.paa);
-        MACRO_ITEM_COMMON
-        model="\A3\Characters_F_EPA\BLUFOR\backpack_kerry.p3d";
-    };
-    class GVAR(Carryall_Solid_Black): B_Carryall_cbr {
-        author = QAUTHOR;
-        hiddenSelections[]=
-        {
-            "Camo"
-        };
-        maximumLoad = 240;
-        displayName="[Ghost] Carryall Backpack";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_tortila_Solid_Black_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_C_Tortila_Solid_Black.paa);
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(Kitbag_Solid_Black): B_Kitbag_rgr {
-        author = QAUTHOR;
-        hiddenSelections[]=
-        {
-            "Camo"
-        };
-        maximumLoad = 240;
-        displayName="[Ghost] Kitbag";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_fast_Solid_Black_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_C_Kitbag_Solid_Black.paa);
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(TacticalPack_Solid_Black): B_TacticalPack_blk {
-        author = QAUTHOR;
-        hiddenSelections[]=
-        {
-            "Camo"
-        };
-        maximumLoad = 240;
-        displayName="[Ghost] Tactical Backpack";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_small_Solid_Black_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_C_Small_Solid_Black.paa);
-        MACRO_ITEM_COMMON
-    };
     class GVAR(AssaultPack_Solid_CoyoteBrown): B_AssaultPack_rgr {
         author = QAUTHOR;
         
@@ -404,72 +340,6 @@ class CfgVehicles {
             QPATHTOF(data\backpack_small_Solid_Ranger_Green_co.paa)
         };
         picture=QPATHTOF(data\ui\icon_B_C_Small_Solid_Ranger_Green.paa);
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(AssaultPack_US_Tigerstripe): B_AssaultPack_rgr {
-        author = QAUTHOR;
-        
-        maximumLoad = 240;
-        displayName="[Ghost] Assault Pack";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_compact_us_tigerstripe_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_AssaultPack_US_Tigerstripe_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(AssaultPackEnhanced_US_Tigerstripe): B_AssaultPack_Kerry {
-        author = QAUTHOR;
-        
-        maximumLoad = 240;
-        displayName="[Ghost] Assault Pack (Enhanced)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_compact_us_tigerstripe_co.paa),
-            QPATHTOF(data\vests_US_Tigerstripe_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_AssaultPack_US_Tigerstripe_ca.paa);
-        MACRO_ITEM_COMMON
-        model="\A3\Characters_F_EPA\BLUFOR\backpack_kerry.p3d";
-    };
-    class GVAR(Carryall_US_Tigerstripe): B_Carryall_cbr {
-        author = QAUTHOR;
-        hiddenSelections[]=
-        {
-            "Camo"
-        };
-        maximumLoad = 240;
-        displayName="[Ghost] Carryall Backpack";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_tortila_US_Tigerstripe_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_C_Tortila_US_Tigerstripe.paa);
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(Kitbag_US_Tigerstripe): B_Kitbag_rgr {
-        author = QAUTHOR;
-        hiddenSelections[]=
-        {
-            "Camo"
-        };
-        maximumLoad = 240;
-        displayName="[Ghost] Kitbag";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_fast_US_Tigerstripe_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_C_Kitbag_US_Tigerstripe.paa);
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(TacticalPack_US_Tigerstripe): B_TacticalPack_blk {
-        author = QAUTHOR;
-        hiddenSelections[]=
-        {
-            "Camo"
-        };
-        maximumLoad = 240;
-        displayName="[Ghost] Tactical Backpack";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_small_US_Tigerstripe_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_C_Small_US_Tigerstripe.paa);
         MACRO_ITEM_COMMON
     };
     class GVAR(AssaultPack_Solid_Olive): B_AssaultPack_rgr {
@@ -604,138 +474,6 @@ class CfgVehicles {
         picture=QPATHTOF(data\ui\icon_B_C_Small_Solid_White.paa);
         MACRO_ITEM_COMMON
     };
-    class GVAR(AssaultPack_US_DCU): B_AssaultPack_rgr {
-        author = QAUTHOR;
-        
-        maximumLoad = 240;
-        displayName="[Ghost] Assault Pack";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_compact_us_dcu_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_AssaultPack_US_DCU_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(AssaultPackEnhanced_US_DCU): B_AssaultPack_Kerry {
-        author = QAUTHOR;
-        
-        maximumLoad = 240;
-        displayName="[Ghost] Assault Pack (Enhanced)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_compact_us_dcu_co.paa),
-            QPATHTOF(data\vests_US_DCU_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_AssaultPack_US_DCU_ca.paa);
-        MACRO_ITEM_COMMON
-        model="\A3\Characters_F_EPA\BLUFOR\backpack_kerry.p3d";
-    };
-    class GVAR(Carryall_US_DCU): B_Carryall_cbr {
-        author = QAUTHOR;
-        hiddenSelections[]=
-        {
-            "Camo"
-        };
-        maximumLoad = 240;
-        displayName="[Ghost] Carryall Backpack";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_tortila_US_DCU_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_C_Tortila_US_DCU.paa);
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(Kitbag_US_DCU): B_Kitbag_rgr {
-        author = QAUTHOR;
-        hiddenSelections[]=
-        {
-            "Camo"
-        };
-        maximumLoad = 240;
-        displayName="[Ghost] Kitbag";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_fast_US_DCU_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_C_Kitbag_US_DCU.paa);
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(TacticalPack_US_DCU): B_TacticalPack_blk {
-        author = QAUTHOR;
-        hiddenSelections[]=
-        {
-            "Camo"
-        };
-        maximumLoad = 240;
-        displayName="[Ghost] Tactical Backpack";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_small_US_DCU_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_C_Small_US_DCU.paa);
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(AssaultPack_US_M81): B_AssaultPack_rgr {
-        author = QAUTHOR;
-        
-        maximumLoad = 240;
-        displayName="[Ghost] Assault Pack";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_compact_us_m81_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_AssaultPack_US_M81_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(AssaultPackEnhanced_US_M81): B_AssaultPack_Kerry {
-        author = QAUTHOR;
-        
-        maximumLoad = 240;
-        displayName="[Ghost] Assault Pack (Enhanced)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_compact_us_m81_co.paa),
-            QPATHTOF(data\vests_US_M81_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_AssaultPack_US_M81_ca.paa);
-        MACRO_ITEM_COMMON
-        model="\A3\Characters_F_EPA\BLUFOR\backpack_kerry.p3d";
-    };
-    class GVAR(Carryall_US_M81): B_Carryall_cbr {
-        author = QAUTHOR;
-        hiddenSelections[]=
-        {
-            "Camo"
-        };
-        maximumLoad = 240;
-        displayName="[Ghost] Carryall Backpack";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_tortila_US_M81_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_C_Tortila_US_M81.paa);
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(Kitbag_US_M81): B_Kitbag_rgr {
-        author = QAUTHOR;
-        hiddenSelections[]=
-        {
-            "Camo"
-        };
-        maximumLoad = 240;
-        displayName="[Ghost] Kitbag";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_fast_US_M81_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_C_Kitbag_US_M81.paa);
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(TacticalPack_US_M81): B_TacticalPack_blk {
-        author = QAUTHOR;
-        hiddenSelections[]=
-        {
-            "Camo"
-        };
-        maximumLoad = 240;
-        displayName="[Ghost] Tactical Backpack";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\backpack_small_US_M81_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_B_C_Small_US_M81.paa);
-        MACRO_ITEM_COMMON
-    };
     class GVAR(Backpack_Kitbag_Medic_White): B_Kitbag_Base {
         MACRO_ITEM_COMMON
         hiddenSelections[]=
@@ -748,20 +486,6 @@ class CfgVehicles {
         picture = QPATHTOF(data\ui\icon_B_C_Kitbag_Solid_White.paa);
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\backpack_kitbag_medic_white_co.paa)
-        };
-    };
-    class GVAR(Backpack_Kitbag_Medic_Black): B_Kitbag_Base {
-        MACRO_ITEM_COMMON
-        hiddenSelections[]=
-        {
-            "Camo"
-        };
-        maximumLoad = 350;
-        author = "Bohemia Interactive, GilleeDoo, JoramD";
-        displayName="[Ghost] Kitbag Medic";
-        picture = QPATHTOF(data\ui\icon_B_C_Kitbag_Solid_Black.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\backpack_kitbag_medic_black_co.paa)
         };
     };
     class GVAR(Backpack_Kitbag_Medic_Coyote): B_Kitbag_Base {
@@ -850,7 +574,7 @@ class CfgVehicles {
     };
 
     //Start radios
-    class GVAR(TFAR_rt1523g_kitbag): TFAR_rt1523g {
+   /*  class GVAR(TFAR_rt1523g_kitbag): TFAR_rt1523g {
         author = "NemesisRE";
         model = "\A3\weapons_f\Ammoboxes\bags\Backpack_Fast";
         hiddenSelections[]=
@@ -985,20 +709,6 @@ class CfgVehicles {
         tf_range = 20000;
         tf_subtype = "digital_lr";
     };
-    class GVAR(B_RadioBag_01_Solid_Black): GVAR(RadioBag_01_Base) {
-        author = QAUTHOR;
-        displayName = "[Ghost](Black) Radio Pack";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\B_radiobag_Solid_Black_CO.paa)};
-        picture = QPATHTOF(data\UI\icon_B_C_UAV_Solid_Black_ca.paa);
-        hiddenSelections[] = {"Camo1"};
-        MACRO_ITEM_COMMON
-        tf_dialog = "rt1523g_radio_dialog";
-        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-        tf_encryptionCode = "tf_west_radio_code";
-        tf_hasLRradio = 1;
-        tf_range = 20000;
-        tf_subtype = "digital_lr";
-    };
     class GVAR(B_RadioBag_01_Solid_CoyoteBrown): GVAR(RadioBag_01_Base) {
         author = QAUTHOR;
         displayName = "[Ghost](CoyoteBrown) Radio Pack";
@@ -1069,43 +779,97 @@ class CfgVehicles {
         tf_range = 20000;
         tf_subtype = "digital_lr";
     };
-    class GVAR(B_RadioBag_01_US_DCU): GVAR(RadioBag_01_Base) {
-        author = QAUTHOR;
-        displayName = "[Ghost](DCU) Radio Pack";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\B_radiobag_US_DCU_CO.paa)};
-        picture = QPATHTOF(data\UI\icon_B_C_UAV_US_DCU_ca.paa);
-        hiddenSelections[] = {"Camo1"};
-        MACRO_ITEM_COMMON
-        tf_dialog = "rt1523g_radio_dialog";
-        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-        tf_encryptionCode = "tf_west_radio_code";
-        tf_hasLRradio = 1;
-        tf_range = 20000;
-        tf_subtype = "digital_lr";
-    };
-    class GVAR(B_RadioBag_01_US_Tigerstripe): GVAR(RadioBag_01_Base) {
-        author = QAUTHOR;
-        displayName = "[Ghost](Tigerstripe) Radio Pack";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\B_radiobag_US_Tigerstripe_CO.paa)};
-        picture = QPATHTOF(data\UI\icon_B_C_UAV_US_Tigerstripe_ca.paa);
-        hiddenSelections[] = {"Camo1"};
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(B_RadioBag_01_US_M81): GVAR(RadioBag_01_Base) {
-        author = QAUTHOR;
-        displayName = "[Ghost](US_M81) Radio Pack";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\B_radiobag_US_M81_CO.paa)};
-        picture = QPATHTOF(data\UI\icon_B_C_UAV_US_M81_ca.paa);
-        hiddenSelections[] = {"Camo1"};
-        MACRO_ITEM_COMMON
-        tf_dialog = "rt1523g_radio_dialog";
-        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-        tf_encryptionCode = "tf_west_radio_code";
-        tf_hasLRradio = 1;
-        tf_range = 20000;
-        tf_subtype = "digital_lr";
-    };
     //End radios 
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+    class GVAR(FieldPack_Multicam): B_FieldPack_oli {
+        author = QAUTHOR;
+        hiddenSelections[] = {"Camo"};
+        maximumLoad = 240;
+        displayName = "[Ghost] (Multicam) Field Pack";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpack_gorod_Multicam_co.paa)
+        };
+        picture = QPATHTOF(data\ui\icon_B_C_Gorod_Multicam_ca.paa);
+        MACRO_ITEM_COMMON
+    };
+
+    class GVAR(Bergen_Multicam): B_Bergen_mcamo_F {
+        author = QAUTHOR;
+        hiddenSelections[] = {"camo"};
+        maximumLoad = 240;
+        displayName = "[Ghost] (Multicam) Bergen Backpack";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\Bergen_Multicam_co.paa)
+        };
+        picture = QPATHTOF(data\ui\Icon_B_Bergen_Multicam_CA.paa);
+        MACRO_ITEM_COMMON
+    };
+
+    class GVAR(FieldPack_Multicam_Snow): B_FieldPack_oli {
+        author = QAUTHOR;
+        hiddenSelections[] = {"Camo"};
+        maximumLoad = 240;
+        displayName = "[Ghost] (Multicam Snow) Field Pack";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpack_gorod_Multicam_Snow_co.paa)
+        };
+        picture = QPATHTOF(data\ui\icon_B_C_Gorod_Multicam_Snow_ca.paa);
+        MACRO_ITEM_COMMON
+    };
+
+    class GVAR(Bergen_Multicam_Snow): B_Bergen_mcamo_F {
+        author = QAUTHOR;
+        hiddenSelections[] = {"camo"};
+        maximumLoad = 240;
+        displayName = "[Ghost] (Multicam Snow) Bergen Backpack";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\Bergen_Multicam_Snow_co.paa)
+        };
+        picture = QPATHTOF(data\ui\Icon_B_Bergen_Multicam_Snow_CA.paa);
+        MACRO_ITEM_COMMON
+    };
+
+    class GVAR(FieldPack_Multicam_Woodland): B_FieldPack_oli {
+        author = QAUTHOR;
+        hiddenSelections[] = {"Camo"};
+        maximumLoad = 240;
+        displayName = "[Ghost] (Multicam Woodland) Field Pack";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpack_gorod_A3_Multicam_Woodland_co.paa)
+        };
+        picture = QPATHTOF(data\ui\icon_B_C_Gorod_A3_Multicam_Woodland_ca.paa);
+        MACRO_ITEM_COMMON
+    };
+
+    class GVAR(Bergen_Multicam_Woodland): B_Bergen_mcamo_F {
+        author = QAUTHOR;
+        hiddenSelections[] = {"camo"};
+        maximumLoad = 240;
+        displayName = "[Ghost] (Multicam Woodland) Bergen Backpack";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\Bergen_A3_Multicam_Woodland_co.paa)
+        };
+        picture = QPATHTOF(data\ui\Icon_B_Bergen_A3_Multicam_Woodland_CA.paa);
+        MACRO_ITEM_COMMON
+    };
+
+
+
+
+
+
 };
-
-

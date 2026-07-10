@@ -29,9 +29,7 @@ if (isNull _unit) exitWith {false};
 
 // -------------------------------------------------------------------------------------------------
 
-private _return = false;
-
-_return = (
+(
     ("ghost_medbags_MedicKit" in items _unit) &&
     (alive _unit) &&
     [player] call ace_common_fnc_isMedic &&
@@ -40,5 +38,3 @@ _return = (
     !(_unit getVariable ["ace_isUnconscious", false]) &&
     (not visibleMap)
 );
-
-_return;

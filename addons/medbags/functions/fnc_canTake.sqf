@@ -29,12 +29,8 @@ if (isNull _unit) exitWith {false};
 
 // -------------------------------------------------------------------------------------------------
 
-private _return = false;
-
-_return = (
+(
     ("ghost_medbags_FirstAid" in items _unit) &&
     (_unit getVariable ["ace_isUnconscious", false]) &&
     (not visibleMap)
 );
-
-_return;

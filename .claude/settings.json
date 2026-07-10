@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(hemtt utils *)",
+      "PowerShell(Get-ChildItem -Path \"O:\\\\GIT\\\\ghost\\\\old\\\\3\\\\headware\\\\\" -Recurse | Select-Object FullName, @{Name='Type'; Expression={if \\($_.PSIsContainer\\) {'DIR'} else {'FILE'}}} | Format-Table -AutoSize)",
+      "PowerShell(hemtt check)",
+      "Bash(cat \"o:/GIT/ghost/addons/2035mrp/\\\\$PBOPREFIX\\\\$\" 2>/dev/null; echo \"---\"; ls \"o:/GIT/ghost/addons/2035mrp/\")",
+      "Read(//o/GIT/ghost/addons/2035mrp/**)",
+      "PowerShell(hemtt utils fnl)",
+      "PowerShell(\\(gh api -X GET search/code -f q='pboprefix repo:BrettMayson/HEMTT extension:rs' --jq '.items[].path'\\) 2>&1 | Select-Object -First 20)",
+      "WebFetch(domain:api.github.com)"
+    ]
+  }
+}

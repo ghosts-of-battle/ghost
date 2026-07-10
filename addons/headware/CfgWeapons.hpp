@@ -1,2706 +1,613 @@
 class CfgWeapons {
-    class ItemCore;
-    class H_HelmetB_plain_mcamo;
+    class HeadgearItem;
+    class H_HelmetB;
     class H_Booniehat_khk;
     class H_Booniehat_khk_hs;
-    class H_Cap_oli;
-    class H_Cap_oli_hs;
-    class H_HelmetB: ItemCore {};
-    class H_HelmetSpecB: H_HelmetB_plain_mcamo {};
-    class H_HelmetB_camo;
-    class H_HelmetB_light: H_HelmetB {
-        class ItemInfo;
+
+    class GVAR(H_Helmet_FASTMT_base_F): H_HelmetB {
+        scope = 0;
+        displayName = "Operator Helmet";
+        model = QPATHTOF(H_HelmetFASTMT_F);
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\H_HelmetFASTMT.rvmat)};
+        class ItemInfo: HeadgearItem {
+            mass = 24;
+            hiddenSelections[] = {"camo"};
+            uniformModel = QPATHTOF(H_HelmetFASTMT_F.p3d);
+            heatReduction = 1;
+            modelSides[] = {1, 3};
+            class HitpointsProtectionInfo {
+                class Head {
+                    hitpointName = "HitHead";
+                    armor = 9;
+                    passThrough = 0.5;
+                };
+            };
+        };
+    };
+    class GVAR(H_Helmet_FASTMT_Headset_base_F): GVAR(H_Helmet_FASTMT_base_F) {
+        scope = 0;
+        displayName = "Operator Helmet (Headset)";
+        model = QPATHTOF(H_HelmetFASTMT_Headset_F);
+        hiddenSelections[] = {"camo", "camo1"};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\H_HelmetFASTMT.rvmat), QPATHTOF(data\H_HeadsetWest.rvmat)};
+        class ItemInfo: HeadgearItem {
+            mass = 24;
+            hiddenSelections[] = {"camo", "camo1", "camo2"};
+            uniformModel = QPATHTOF(H_HelmetFASTMT_Headset_F.p3d);
+            heatReduction = 1;
+            modelSides[] = {1, 3};
+            class HitpointsProtectionInfo {
+                class Head {
+                    hitpointName = "HitHead";
+                    armor = 9;
+                    passThrough = 0.5;
+                };
+            };
+        };
+    };
+    class GVAR(H_Helmet_FASTMT_Cover_base_F): GVAR(H_Helmet_FASTMT_base_F) {
+        scope = 0;
+        displayName = "Operator Helmet (Cover)";
+        model = QPATHTOF(H_HelmetFASTMT_Cover_F);
+        hiddenSelections[] = {"camo", "camo1", "camo2"};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\H_HelmetFASTMT.rvmat), QPATHTOF(data\H_HelmetFASTMT_Cover.rvmat), QPATHTOF(data\H_HeadsetWest.rvmat)};
+        class ItemInfo: HeadgearItem {
+            mass = 24;
+            hiddenSelections[] = {"camo", "camo1", "camo2"};
+            uniformModel = QPATHTOF(H_HelmetFASTMT_Cover_F.p3d);
+            heatReduction = 1;
+            modelSides[] = {1, 3};
+            class HitpointsProtectionInfo {
+                class Head {
+                    hitpointName = "HitHead";
+                    armor = 9;
+                    passThrough = 0.5;
+                };
+            };
+        };
     };
 
-    class ghost_main_H_HelmetB_light_basic_base: H_HelmetB_light {
-        scope = 0;
-        model = "\A3\Characters_F\Common\headgear_placeholder.p3d";
-        class ItemInfo: ItemInfo {
-            uniformModel = "\A3\Characters_F\Common\headgear_placeholder.p3d";
-        };
-    };
-    class ghost_main_H_HelmetB_light_base: H_HelmetB_light {
-        scope = 0;
-        model = "\A3\Characters_F\BLUFOR\headgear_B_Helmet_light.p3d";
-        class ItemInfo: ItemInfo {
-            uniformModel = "\A3\Characters_F\BLUFOR\headgear_B_Helmet_light.p3d";
-        };
-    };
-    class ghost_H_HelmetB_light_solid_black: ghost_main_H_HelmetB_light_base {
+    /* FAST-MT Helmet */
+    class GVAR(H_Helmet_FASTMT_tan_F): GVAR(H_Helmet_FASTMT_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](black) Light Combat Helmet (Enhanced)";
+        MACRO_ITEM_COMMON
+        displayName = "[Ghost] FAST-MT Helmet (Tan)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_tan_F_ca.paa);
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\equip1_solid_black_co.paa)
+            QPATHTOF(data\H_HelmetFASTMT_tan_CO.paa)
         };
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_light_solid_black_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_HelmetB_light_basic_solid_black: ghost_main_H_HelmetB_light_basic_base {
+    class GVAR(H_Helmet_FASTMT_rgr_F): GVAR(H_Helmet_FASTMT_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](black) Light Combat Helmet";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_solid_black_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_solid_black_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_light_US_M81: ghost_main_H_HelmetB_light_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](M81) Light Combat Helmet (Enhanced)";
+        displayName = "[Ghost] FAST-MT Helmet (Ranger Green)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_rgr_F_ca.paa);
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\equip1_US_M81_co.paa)
+            QPATHTOF(data\H_HelmetFASTMT_rgr_CO.paa)
         };
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_light_US_M81_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_HelmetB_light_basic_US_M81: ghost_main_H_HelmetB_light_basic_base {
+    class GVAR(H_Helmet_FASTMT_blk_F): GVAR(H_Helmet_FASTMT_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](M81) Light Combat Helmet";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_US_M81_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_US_M81_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_light_Multicam: ghost_main_H_HelmetB_light_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](Multicam) Light Combat Helmet (Enhanced)";
+        displayName = "[Ghost] FAST-MT Helmet (Black)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_blk_F_ca.paa);
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\equip1_Multicam_co.paa)
+            QPATHTOF(data\H_HelmetFASTMT_blk_CO.paa)
         };
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_light_Multicam_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_HelmetB_light_basic_Multicam: ghost_main_H_HelmetB_light_basic_base {
+    class GVAR(H_Helmet_FASTMT_cbr_F): GVAR(H_Helmet_FASTMT_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](Multicam) Light Combat Helmet";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_Multicam_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_Multicam_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_light_Multicam_Snow: ghost_main_H_HelmetB_light_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](Multicam Snow) Light Combat Helmet (Enhanced)";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_Multicam_Snow_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_light_Multicam_Snow_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_light_basic_Multicam_Snow: ghost_main_H_HelmetB_light_basic_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](Multicam Snow) Light Combat Helmet";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_Multicam_Snow_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_Multicam_Snow_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_light_Multicam_Woodland: ghost_main_H_HelmetB_light_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](Multicam Woodland) Light Combat Helmet (Enhanced)";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_Multicam_Woodland_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_light_Multicam_Woodland_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_light_basic_Multicam_Woodland: ghost_main_H_HelmetB_light_basic_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](Multicam Woodland) Light Combat Helmet";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_Multicam_Woodland_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_Multicam_Woodland_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_light_Solid_CoyoteBrown: ghost_main_H_HelmetB_light_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](CoyoteBrown) Light Combat Helmet (Enhanced)";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_Solid_CoyoteBrown_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_light_Solid_CoyoteBrown_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_light_basic_Solid_CoyoteBrown: ghost_main_H_HelmetB_light_basic_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](CoyoteBrown) Light Combat Helmet";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_Solid_CoyoteBrown_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_Solid_CoyoteBrown_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_light_Solid_Olive: ghost_main_H_HelmetB_light_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](Olive) Light Combat Helmet (Enhanced)";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_Solid_Olive_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_light_Solid_Olive_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_light_basic_Solid_Olive: ghost_main_H_HelmetB_light_basic_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](Olive) Light Combat Helmet";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_Solid_Olive_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_Solid_Olive_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_light_Solid_Ranger_Green: ghost_main_H_HelmetB_light_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](Ranger Green) Light Combat Helmet (Enhanced)";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_Solid_Ranger_Green_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_light_Solid_Ranger_Green_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_light_basic_Solid_Ranger_Green: ghost_main_H_HelmetB_light_basic_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](Ranger Green) Light Combat Helmet";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_Solid_Ranger_Green_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_Solid_Ranger_Green_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_light_Solid_Tan: ghost_main_H_HelmetB_light_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](Tan) Light Combat Helmet (Enhanced)";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_Solid_Tan_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_light_Solid_Tan_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_light_basic_Solid_Tan: ghost_main_H_HelmetB_light_basic_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](Tan) Light Combat Helmet";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_Solid_Tan_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_Solid_Tan_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_light_Solid_White: ghost_main_H_HelmetB_light_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](White) Light Combat Helmet (Enhanced)";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_Solid_White_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_light_Solid_White_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_HelmetB_light_basic_Solid_White: ghost_main_H_HelmetB_light_basic_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost](White) Light Combat Helmet";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_Solid_White_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_Solid_White_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_US__H_HelmetB_light_US_DCU: ghost_main_H_HelmetB_light_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost][US DCU) Light Combat Helmet (Enhanced)";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_US_DCU_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_light_US_DCU_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_US_H_HelmetB_light_DCU: ghost_main_H_HelmetB_light_basic_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost][US DCU) Light Combat Helmet";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\equip1_US_DCU_co.paa)};
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_US_DCU_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_HelmetB_light_US_Tigerstripe: ghost_main_H_HelmetB_light_base {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost] (Tigerstripe) Light Combat Helmet (Enhanced)";
+        displayName = "[Ghost] FAST-MT Helmet (Coyote Brown)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_tan_F_ca.paa);
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\equip1_US_Tigerstripe_co.paa)
+            QPATHTOF(data\H_HelmetFASTMT_cbr_CO.paa)
         };
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_light_US_Tigerstripe_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_HelmetB_light_Tigerstripe: ghost_main_H_HelmetB_light_basic_base {
+
+    /* FAST-MT Helmet w/ Headset */
+    class GVAR(H_Helmet_FASTMT_Headset_tan_F): GVAR(H_Helmet_FASTMT_Headset_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName = "[Ghost] (Tigerstripe) Light Combat Helmet";
+        MACRO_ITEM_COMMON
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Headset (Tan)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Headset_tan_F_ca.paa);
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\equip1_US_Tigerstripe_co.paa)
+            QPATHTOF(data\H_HelmetFASTMT_tan_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
         };
-        picture = QPATHTOF(data\UI\icon_H_HelmetB_US_Tigerstripe_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_Multicam_H_Booniehat_Multicam: H_Booniehat_khk {
-        author = "Seb";
-        displayName = "[Ghost] (Multicam) Booniehat ";
+    class GVAR(H_Helmet_FASTMT_Headset_rgr_F): GVAR(H_Helmet_FASTMT_Headset_base_F) {
+        author = QAUTHOR;
+        MACRO_ITEM_COMMON
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Headset (Ranger Green)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Headset_rgr_F_ca.paa);
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\booniehat_Multicam_co.paa)
-            };
-        picture = QPATHTOF(data\UI\icon_H_booniehat_Multicam_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_Booniehat_Multicam_hs: H_Booniehat_khk_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Multicam) Booniehat (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_Multicam_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Booniehat_Multicam_hs_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_Cap_Multicam: H_Cap_oli {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Multicam) Cap";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Multicam_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Multicam_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_Cap_Multicam_hs: H_Cap_oli_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Multicam) Cap (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Multicam_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Multicam_hs_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_Multicam: H_HelmetB {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Multicam) Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Multicam_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_Multicam_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetSpecB_Multicam: H_HelmetSpecB {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Multicam) Enhanced Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Multicam_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetSpecB_Multicam_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_Booniehat_Multicam_Snow: H_Booniehat_khk {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Multicam Snow) Booniehat ";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_Multicam_Snow_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_booniehat_Multicam_Snow_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_Booniehat_Multicam_Snow_hs: H_Booniehat_khk_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Multicam Snow) Booniehat (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_Multicam_Snow_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Booniehat_Multicam_Snow_hs_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_Cap_Multicam_Snow: H_Cap_oli {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Multicam Snow) Cap";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Multicam_Snow_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Multicam_Snow_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_Cap_Multicam_Snow_hs: H_Cap_oli_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Multicam Snow) Cap (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Multicam_Snow_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Multicam_Snow_hs_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_Multicam_Snow: H_HelmetB {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Multicam Snow) Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Multicam_Snow_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_Multicam_Snow_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetSpecB_Multicam_Snow: H_HelmetSpecB {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Multicam Snow) Enhanced Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Multicam_Snow_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetSpecB_Multicam_Snow_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_Booniehat_Multicam_Woodland: H_Booniehat_khk {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Multicam Woodland) Booniehat ";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_Multicam_Woodland_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_booniehat_Multicam_Woodland_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_Booniehat_Multicam_Woodland_hs: H_Booniehat_khk_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Multicam Woodland) Booniehat (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_Multicam_Woodland_co.paa)
+            QPATHTOF(data\H_HelmetFASTMT_rgr_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_oli_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_Booniehat_Multicam_Woodland_hs_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_Cap_Multicam_Woodland: H_Cap_oli {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Multicam Woodland) Cap";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Multicam_Woodland_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Multicam_Woodland_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_Cap_Multicam_Woodland_hs: H_Cap_oli_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Multicam Woodland) Cap (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Multicam_Woodland_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Multicam_Woodland_hs_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_Multicam_Woodland: H_HelmetB {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Multicam Woodland) Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Multicam_Woodland_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_Multicam_Woodland_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetSpecB_Multicam_Woodland: H_HelmetSpecB {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Multicam Woodland) Enhanced Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Multicam_Woodland_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetSpecB_Multicam_Woodland_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_Booniehat_Solid_Black: H_Booniehat_khk {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Black) Booniehat ";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_Solid_Black_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_booniehat_Solid_Black_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_Booniehat_Solid_Black_hs: H_Booniehat_khk_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Black) Booniehat (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_Solid_Black_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Booniehat_Solid_Black_hs_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_Cap_Solid_Black: H_Cap_oli {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Black) Cap";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Solid_Black_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Solid_Black_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_Cap_Solid_Black_hs: H_Cap_oli_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Black) Cap (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Solid_Black_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Solid_Black_hs_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_HelmetB_Solid_Black: H_HelmetB {
+    class GVAR(H_Helmet_FASTMT_Headset_blk_F): GVAR(H_Helmet_FASTMT_Headset_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Black) Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_Black_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_Solid_Black_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetSpecB_Solid_Black: H_HelmetSpecB {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Black) Enhanced Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_Black_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Headset (Black)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Headset_blk_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_blk_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_blk_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_HelmetSpecB_Solid_Black_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_Booniehat_Solid_CoyoteBrown: H_Booniehat_khk {
+    class GVAR(H_Helmet_FASTMT_Headset_cbr_F): GVAR(H_Helmet_FASTMT_Headset_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Coyote) Booniehat ";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_Solid_CoyoteBrown_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_booniehat_Solid_CoyoteBrown_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_Booniehat_Solid_CoyoteBrown_hs: H_Booniehat_khk_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Coyote) Booniehat (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_Solid_CoyoteBrown_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Headset (Coyote Brown)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Headset_tan_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_cbr_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_Booniehat_Solid_CoyoteBrown_hs_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_Cap_Solid_CoyoteBrown: H_Cap_oli {
+    class GVAR(H_Helmet_FASTMT_Headset_Multicam_F): GVAR(H_Helmet_FASTMT_Headset_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Coyote) Cap";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Solid_CoyoteBrown_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Solid_CoyoteBrown_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_Cap_Solid_CoyoteBrown_hs: H_Cap_oli_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Coyote) Cap (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Solid_CoyoteBrown_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Headset (Multicam)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Headset_tan_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_Multicam_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Solid_CoyoteBrown_hs_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_HelmetB_Solid_CoyoteBrown: H_HelmetB {
+    class GVAR(H_Helmet_FASTMT_Headset_Multicam_Snow_F): GVAR(H_Helmet_FASTMT_Headset_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Coyote) Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_CoyoteBrown_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_Solid_CoyoteBrown_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetSpecB_Solid_CoyoteBrown: H_HelmetSpecB {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Coyote) Enhanced Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_CoyoteBrown_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Headset (Multicam Alpine)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Headset_tan_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_Multicam_Snow_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_HelmetSpecB_Solid_CoyoteBrown_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_Booniehat_Solid_Ranger_Green: H_Booniehat_khk {
+    class GVAR(H_Helmet_FASTMT_Headset_A3_Multicam_Woodland_F): GVAR(H_Helmet_FASTMT_Headset_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Ranger Green) Booniehat ";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_Solid_Ranger_Green_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_booniehat_Solid_Ranger_Green_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_Booniehat_Solid_Ranger_Green_hs: H_Booniehat_khk_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Ranger Green) Booniehat (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_Solid_Ranger_Green_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Headset (Multicam Woodland)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Headset_rgr_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_A3_Multicam_Woodland_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_oli_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_Booniehat_Solid_Ranger_Green_hs_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_Cap_Solid_Ranger_Green: H_Cap_oli {
+    class GVAR(H_Helmet_FASTMT_Headset_US_OCP_F): GVAR(H_Helmet_FASTMT_Headset_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Ranger Green) Cap";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Solid_Ranger_Green_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Solid_Ranger_Green_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_Cap_Solid_Ranger_Green_hs: H_Cap_oli_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Ranger Green) Cap (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Solid_Ranger_Green_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Headset (US OCP)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Headset_tan_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_US_OCP_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Solid_Ranger_Green_hs_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_HelmetB_Solid_Ranger_Green: H_HelmetB {
+
+    /* FAST-MT Helmet w/ Cover */
+    class GVAR(H_Helmet_FASTMT_Cover_tan_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Ranger Green) Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_Ranger_Green_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_Solid_Ranger_Green_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetSpecB_Solid_Ranger_Green: H_HelmetSpecB {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Ranger Green) Enhanced Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_Ranger_Green_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Cover (Tan)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_tan_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_tan_CO.paa),
+            QPATHTOF(data\H_HelmetFASTMT_Cover_tan_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_HelmetSpecB_Solid_Ranger_Green_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_Booniehat_US_Tigerstripe: H_Booniehat_khk {
+    class GVAR(H_Helmet_FASTMT_Cover_rgr_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Tigerstripe) Booniehat ";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_US_Tigerstripe_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_booniehat_US_Tigerstripe_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_Booniehat_US_Tigerstripe_hs: H_Booniehat_khk_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Tigerstripe) Booniehat (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_US_Tigerstripe_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Cover (Ranger Green)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_rgr_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_rgr_CO.paa),
+            QPATHTOF(data\H_HelmetFASTMT_Cover_rgr_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_oli_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_Booniehat_US_Tigerstripe_hs_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_Cap_US_Tigerstripe: H_Cap_oli {
+    class GVAR(H_Helmet_FASTMT_Cover_blk_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Tigerstripe) Cap";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_US_Tigerstripe_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Cap_US_Tigerstripe_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_Cap_US_Tigerstripe_hs: H_Cap_oli_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Tigerstripe) Cap (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_US_Tigerstripe_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Cover (Black)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_blk_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_blk_CO.paa),
+            QPATHTOF(data\H_HelmetFASTMT_Cover_blk_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_blk_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_Cap_US_Tigerstripe_hs_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_HelmetB_US_Tigerstripe: H_HelmetB {
+    class GVAR(H_Helmet_FASTMT_Cover_mtp_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Tigerstripe) Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_US_Tigerstripe_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_US_Tigerstripe_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetSpecB_US_Tigerstripe: H_HelmetSpecB {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Tigerstripe) Enhanced Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_US_Tigerstripe_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Cover (MTP)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_mtp_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_tan_CO.paa),
+            QPATHTOF(data\H_ghost_HelmetFASTMT_Cover_mtp_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_HelmetSpecB_US_Tigerstripe_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_Booniehat_Solid_Olive: H_Booniehat_khk {
+    class GVAR(H_Helmet_FASTMT_Cover_tna_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Olive) Booniehat ";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_Solid_Olive_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_booniehat_Solid_Olive_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_Booniehat_Solid_Olive_hs: H_Booniehat_khk_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Olive) Booniehat (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_Solid_Olive_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Cover (Tropic)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_tna_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_rgr_CO.paa),
+            QPATHTOF(data\H_ghost_HelmetFASTMT_Cover_tna_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_oli_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_Booniehat_Solid_Olive_hs_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_Cap_Solid_Olive: H_Cap_oli {
+    class GVAR(H_Helmet_FASTMT_Cover_wdl_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Olive) Cap";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Solid_Olive_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Solid_Olive_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_Cap_Solid_Olive_hs: H_Cap_oli_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Olive) Cap (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Solid_Olive_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Cover (Woodland)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_wdl_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_rgr_CO.paa),
+            QPATHTOF(data\H_ghost_HelmetFASTMT_Cover_wdl_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_oli_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Solid_Olive_hs_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_HelmetB_Solid_Olive: H_HelmetB {
+    class GVAR(H_Helmet_FASTMT_Cover_desert_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Olive) Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_Olive_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_Solid_Olive_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetSpecB_Solid_Olive: H_HelmetSpecB {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Olive) Enhanced Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_Olive_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Cover (Desert)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_Desert_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_tan_CO.paa),
+            QPATHTOF(data\H_ghost_HelmetFASTMT_Cover_desert_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_HelmetSpecB_Solid_Olive_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_Booniehat_Solid_Tan: H_Booniehat_khk {
+    /* FAST-MT Helmet - ACP Variants */
+    class GVAR(H_Helmet_FASTMT_Multicam_F): GVAR(H_Helmet_FASTMT_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Tan) Booniehat ";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_Solid_Tan_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_booniehat_Solid_Tan_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_Booniehat_Solid_Tan_hs: H_Booniehat_khk_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Tan) Booniehat (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_Solid_Tan_co.paa)
+        displayName = "[Ghost] FAST-MT Helmet (Multicam)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_tan_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_Multicam_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_Booniehat_Solid_Tan_hs_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_Cap_Solid_Tan: H_Cap_oli {
+    class GVAR(H_Helmet_FASTMT_Multicam_Snow_F): GVAR(H_Helmet_FASTMT_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Tan) Cap";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Solid_Tan_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Solid_Tan_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_Cap_Solid_Tan_hs: H_Cap_oli_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Tan) Cap (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Solid_Tan_co.paa)
+        displayName = "[Ghost] FAST-MT Helmet (Multicam Alpine)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_tan_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_Multicam_Snow_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Solid_Tan_hs_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_HelmetB_Solid_Tan: H_HelmetB {
+    class GVAR(H_Helmet_FASTMT_A3_Multicam_Woodland_F): GVAR(H_Helmet_FASTMT_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Tan) Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_Tan_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_Solid_Tan_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetSpecB_Solid_Tan: H_HelmetSpecB {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (Tan) Enhanced Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_Tan_co.paa)
+        displayName = "[Ghost] FAST-MT Helmet (Multicam Woodland)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_rgr_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_A3_Multicam_Woodland_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_HelmetSpecB_Solid_Tan_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_Booniehat_Solid_White: H_Booniehat_khk {
+    class GVAR(H_Helmet_FASTMT_US_OCP_F): GVAR(H_Helmet_FASTMT_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (White) Booniehat ";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_Solid_White_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_booniehat_Solid_White_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_Booniehat_Solid_White_hs: H_Booniehat_khk_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (White) Booniehat (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_Solid_White_co.paa)
+        displayName = "[Ghost] FAST-MT Helmet (US OCP)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_tan_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_US_OCP_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_Booniehat_Solid_White_hs_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_Cap_Solid_White: H_Cap_oli {
+
+    /* FAST-MT Helmet w/ Cover - ACP Variants */
+    class GVAR(H_Helmet_FASTMT_Cover_Multicam_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (White) Cap";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Solid_White_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Solid_White_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_Cap_Solid_White_hs: H_Cap_oli_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (White) Cap (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_Solid_White_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Cover (Multicam)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_tan_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_Multicam_CO.paa),
+            QPATHTOF(data\H_HelmetFASTMT_Cover_Multicam_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_Cap_Solid_White_hs_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_HelmetB_Solid_White: H_HelmetB {
+    class GVAR(H_Helmet_FASTMT_Cover_Multicam_Snow_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (White) Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_White_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_Solid_White_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetSpecB_Solid_White: H_HelmetSpecB {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (White) Enhanced Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_White_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Cover (Multicam Alpine)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_tan_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_Multicam_Snow_CO.paa),
+            QPATHTOF(data\H_HelmetFASTMT_Cover_Multicam_Snow_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_HelmetSpecB_Solid_White_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_Booniehat_US_DCU: H_Booniehat_khk {
+    class GVAR(H_Helmet_FASTMT_Cover_A3_Multicam_Woodland_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (DCU) Booniehat ";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_US_DCU_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_booniehat_US_DCU_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_Booniehat_US_DCU_hs: H_Booniehat_khk_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (DCU) Booniehat (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_US_DCU_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Cover (Multicam Woodland)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_rgr_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_A3_Multicam_Woodland_CO.paa),
+            QPATHTOF(data\H_HelmetFASTMT_Cover_A3_Multicam_Woodland_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_oli_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_Booniehat_US_DCU_hs_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_Cap_US_DCU: H_Cap_oli {
+    class GVAR(H_Helmet_FASTMT_Cover_US_OCP_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (DCU) Cap";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_US_DCU_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Cap_US_DCU_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_Cap_US_DCU_hs: H_Cap_oli_hs {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (DCU) Cap (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_US_DCU_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Cover (US OCP)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_tan_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_US_OCP_CO.paa),
+            QPATHTOF(data\H_HelmetFASTMT_Cover_US_OCP_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_Cap_US_DCU_hs_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_HelmetB_US_DCU: H_HelmetB {
+    class GVAR(H_Helmet_FASTMT_Cover_ghost_US_OCP_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (DCU) Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_US_DCU_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_US_DCU_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetSpecB_US_DCU: H_HelmetSpecB {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (DCU) Enhanced Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_US_DCU_co.paa)
+        MACRO_ACE_HEARING
+        displayName = "[Ghost] FAST-MT Helmet w/ Cover (Ghost US OCP)";
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_tan_F_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\H_HelmetFASTMT_US_OCP_CO.paa),
+            QPATHTOF(data\H_ghost_HelmetFASTMT_Cover_US_OCP_CO.paa),
+            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_HelmetSpecB_US_DCU_ca.paa);
-        MACRO_ITEM_COMMON
     };
-    class ghost_H_Booniehat_US_M81: H_Booniehat_khk {
+
+    /* Ghost Boonie Hats */
+    class GVAR(H_Booniehat_Multicam_F): H_Booniehat_khk {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (M81) Booniehat ";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_US_M81_co.paa)
+        displayName = "[Ghost] (Multicam) Booniehat";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_multicam_co.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_booniehat_US_M81_ca.paa);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_multicam_ca.paa);
         MACRO_ITEM_COMMON
     };
-    class ghost_H_Booniehat_US_M81_hs: H_Booniehat_khk_hs {
+    class GVAR(H_Booniehat_Multicam_hs_F): H_Booniehat_khk_hs {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
+        displayName = "[Ghost] (Multicam) Booniehat (Headset)";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_multicam_co.paa)
         };
-        displayName="[Ghost] (M81) Booniehat (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\booniehat_US_M81_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Booniehat_US_M81_hs_ca.paa);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_multicam_hs_ca.paa);
         MACRO_ITEM_COMMON
+        MACRO_ACE_HEARING
     };
-    class ghost_H_Cap_US_M81: H_Cap_oli {
+    class GVAR(H_Booniehat_Multicam_Snow_F): H_Booniehat_khk {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (M81) Cap";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_US_M81_co.paa)
+        displayName = "[Ghost] (Multicam Snow) Booniehat";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_multicam_snow_co.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_Cap_US_M81_ca.paa);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_multicam_snow_ca.paa);
         MACRO_ITEM_COMMON
     };
-    class ghost_H_Cap_US_M81_hs: H_Cap_oli_hs {
+    class GVAR(H_Booniehat_Multicam_Snow_hs_F): H_Booniehat_khk_hs {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
+        displayName = "[Ghost] (Multicam Snow) Booniehat (Headset)";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_multicam_snow_co.paa)
         };
-        displayName="[Ghost] (M81) Cap (Headset)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\capb_US_M81_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_Cap_US_M81_hs_ca.paa);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_multicam_snow_hs_ca.paa);
         MACRO_ITEM_COMMON
+        MACRO_ACE_HEARING
     };
-    class ghost_H_HelmetB_US_M81: H_HelmetB {
+    class GVAR(H_Booniehat_Multicam_Woodland_F): H_Booniehat_khk {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
-        };
-        displayName="[Ghost] (M81) Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_US_M81_co.paa)
+        displayName = "[Ghost] (Multicam Woodland) Booniehat";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_multicam_woodland_co.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_US_M81_ca.paa);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_multicam_woodland_ca.paa);
         MACRO_ITEM_COMMON
     };
-    class ghost_H_HelmetSpecB_US_M81: H_HelmetSpecB {
+    class GVAR(H_Booniehat_Multicam_Woodland_hs_F): H_Booniehat_khk_hs {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo"
+        displayName = "[Ghost] (Multicam Woodland) Booniehat (Headset)";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_multicam_woodland_co.paa)
         };
-        displayName="[Ghost] (M81) Enhanced Combat Helmet";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_US_M81_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetSpecB_US_M81_ca.paa);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_multicam_woodland_hs_ca.paa);
         MACRO_ITEM_COMMON
+        MACRO_ACE_HEARING
     };
-    class ghost_H_HelmetB_camo_Multicam: H_HelmetB_camo {
+    class GVAR(H_Booniehat_Solid_CoyoteBrown_F): H_Booniehat_khk {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo",
-            "camo2"
-        };
-        displayName="[Ghost] (Multicam) Combat Helmet (Camo)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Multicam_co.paa),
-            QPATHTOF(data\ghillie_2_Multicam_ca.paa)
+        displayName = "[Ghost] (Coyote) Booniehat";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_solid_coyotebrown_co.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_camo_Multicam_ca.paa);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_solid_coyotebrown_ca.paa);
         MACRO_ITEM_COMMON
     };
-    class ghost_H_HelmetB_camo_Multicam_Snow: H_HelmetB_camo {
+    class GVAR(H_Booniehat_Solid_CoyoteBrown_hs_F): H_Booniehat_khk_hs {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo",
-            "camo2"
+        displayName = "[Ghost] (Coyote) Booniehat (Headset)";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_solid_coyotebrown_co.paa)
         };
-        displayName="[Ghost] (Multicam Snow) Combat Helmet (Camo)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Multicam_Snow_co.paa),
-            QPATHTOF(data\ghillie_2_Multicam_Snow_ca.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_camo_Multicam_Snow_ca.paa);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_solid_coyotebrown_hs_ca.paa);
         MACRO_ITEM_COMMON
+        MACRO_ACE_HEARING
     };
-    class ghost_H_HelmetB_camo_Multicam_Woodland: H_HelmetB_camo {
+    class GVAR(H_Booniehat_Solid_Ranger_Green_F): H_Booniehat_khk {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo",
-            "camo2"
-        };
-        displayName="[Ghost] (Multicam Woodland) Combat Helmet (Camo)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Multicam_Woodland_co.paa),
-            QPATHTOF(data\ghillie_2_Multicam_Woodland_ca.paa)
+        displayName = "[Ghost] (Ranger Green) Booniehat";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_solid_ranger_green_co.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_camo_Multicam_Woodland_ca.paa);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_solid_ranger_green_ca.paa);
         MACRO_ITEM_COMMON
     };
-    class ghost_H_HelmetB_camo_Solid_Black: H_HelmetB_camo {
+    class GVAR(H_Booniehat_Solid_Ranger_Green_hs_F): H_Booniehat_khk_hs {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo",
-            "camo2"
+        displayName = "[Ghost] (Ranger Green) Booniehat (Headset)";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_solid_ranger_green_co.paa)
         };
-        displayName="[Ghost] (Black) Combat Helmet (Camo)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_Black_co.paa),
-            QPATHTOF(data\ghillie_2_Solid_Black_ca.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_camo_Solid_Black_ca.paa);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_solid_ranger_green_hs_ca.paa);
         MACRO_ITEM_COMMON
+        MACRO_ACE_HEARING
     };
-    class ghost_H_HelmetB_camo_Solid_CoyoteBrown: H_HelmetB_camo {
+    class GVAR(H_Booniehat_Solid_Olive_F): H_Booniehat_khk {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo",
-            "camo2"
-        };
-        displayName="[Ghost] (Coyote) Combat Helmet (Camo)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_CoyoteBrown_co.paa),
-            QPATHTOF(data\ghillie_2_Solid_CoyoteBrown_ca.paa)
+        displayName = "[Ghost] (Olive) Booniehat";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_solid_olive_co.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_camo_Solid_CoyoteBrown_ca.paa);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_solid_olive_ca.paa);
         MACRO_ITEM_COMMON
     };
-    class ghost_H_HelmetB_camo_Solid_Ranger_Green: H_HelmetB_camo {
+    class GVAR(H_Booniehat_Solid_Olive_hs_F): H_Booniehat_khk_hs {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo",
-            "camo2"
+        displayName = "[Ghost] (Olive) Booniehat (Headset)";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_solid_olive_co.paa)
         };
-        displayName="[Ghost] (Ranger Green) Combat Helmet (Camo)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_Ranger_Green_co.paa),
-            QPATHTOF(data\ghillie_2_Solid_Ranger_Green_ca.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_camo_Solid_Ranger_Green_ca.paa);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_solid_olive_hs_ca.paa);
         MACRO_ITEM_COMMON
+        MACRO_ACE_HEARING
     };
-    class ghost_H_HelmetB_camo_US_Tigerstripe: H_HelmetB_camo {
+    class GVAR(H_Booniehat_Solid_Tan_F): H_Booniehat_khk {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo",
-            "camo2"
-        };
-        displayName="[Ghost] (Tigerstripe) Combat Helmet (Camo)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_US_Tigerstripe_co.paa),
-            QPATHTOF(data\ghillie_2_US_Tigerstripe_ca.paa)
+        displayName = "[Ghost] (Tan) Booniehat";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_solid_tan_co.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_camo_US_Tigerstripe_ca.paa);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_solid_tan_ca.paa);
         MACRO_ITEM_COMMON
     };
-    class ghost_H_HelmetB_camo_Solid_Olive: H_HelmetB_camo {
+    class GVAR(H_Booniehat_Solid_Tan_hs_F): H_Booniehat_khk_hs {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo",
-            "camo2"
+        displayName = "[Ghost] (Tan) Booniehat (Headset)";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_solid_tan_co.paa)
         };
-        displayName="[Ghost] (Olive) Combat Helmet (Camo)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_Olive_co.paa),
-            QPATHTOF(data\ghillie_2_Solid_Olive_ca.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_camo_Solid_Olive_ca.paa);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_solid_tan_hs_ca.paa);
         MACRO_ITEM_COMMON
+        MACRO_ACE_HEARING
     };
-    class ghost_H_HelmetB_camo_Solid_Tan: H_HelmetB_camo {
+    class GVAR(H_Booniehat_Solid_White_F): H_Booniehat_khk {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo",
-            "camo2"
-        };
-        displayName="[Ghost] (Tan) Combat Helmet (Camo)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_Tan_co.paa),
-            QPATHTOF(data\ghillie_2_Solid_Tan_ca.paa)
+        displayName = "[Ghost] (White) Booniehat";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_solid_white_co.paa)
         };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_camo_Solid_Tan_ca.paa);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_solid_white_ca.paa);
         MACRO_ITEM_COMMON
     };
-    class ghost_H_HelmetB_camo_Solid_White: H_HelmetB_camo {
+    class GVAR(H_Booniehat_Solid_White_hs_F): H_Booniehat_khk_hs {
         author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo",
-            "camo2"
+        displayName = "[Ghost] (White) Booniehat (Headset)";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_solid_white_co.paa)
         };
-        displayName="[Ghost] (White) Combat Helmet (Camo)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_Solid_White_co.paa),
-            QPATHTOF(data\ghillie_2_Solid_White_ca.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_camo_Solid_White_ca.paa);
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_solid_white_hs_ca.paa);
         MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_camo_US_DCU: H_HelmetB_camo {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo",
-            "camo2"
-        };
-        displayName="[Ghost] (DCU) Combat Helmet (Camo)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_US_DCU_co.paa),
-            QPATHTOF(data\ghillie_2_US_DCU_ca.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_camo_US_DCU_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class ghost_H_HelmetB_camo_US_M81: H_HelmetB_camo {
-        author = QAUTHOR;
-        Headlamps_Preset="Headlamps_Preset_Helmet_Surefire_HL1_Left";
-        hiddenSelections[]= {
-            "camo",
-            "camo2"
-        };
-        displayName="[Ghost] (M81) Combat Helmet (Camo)";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\equip1_US_M81_co.paa),
-            QPATHTOF(data\ghillie_2_US_M81_ca.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_H_HelmetB_camo_US_M81_ca.paa);
-        MACRO_ITEM_COMMON
-    };
-    class opscore_sf_black: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class opscore_sf_black_amp: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class opscore_sf_black_full: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class opscore_sf_arid: opscore_sf_black {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class opscore_sf_arid_amp: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class opscore_sf_arid_full: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class opscore_sf_mc: opscore_sf_black {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class opscore_sf_mc_amp: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class opscore_sf_mc_full: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class opscore_sf_od: opscore_sf_black {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class opscore_sf_od_amp: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class opscore_sf_od_full: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class opscore_sf_rgr: opscore_sf_black {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class opscore_sf_rgr_amp: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class opscore_sf_rgr_full: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class opscore_sf_tan: opscore_sf_black {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class opscore_sf_tan_amp: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class opscore_sf_tan_full: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_01_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_01_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_01_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_04_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_01_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_01_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_01_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_01_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_01_goggles_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_01_goggles_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_01_goggles_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_01_goggles_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_01_goggles_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_01_goggles_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_01_goggles_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_02_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_02_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_02_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_02_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_02_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_02_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_02_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_02_goggles_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_02_goggles_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_02_goggles_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_02_goggles_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_02_goggles_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_02_goggles_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_02_goggles_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_03_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_03_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_03_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_03_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_03_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_03_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_03_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_03_goggles_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_03_goggles_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_03_goggles_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_03_goggles_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_03_goggles_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_03_goggles_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_03_goggles_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_04_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_04_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_04_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_04_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_04_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_04_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_04_goggles_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_04_goggles_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_04_goggles_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_04_goggles_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_04_goggles_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_04_goggles_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_04_goggles_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_05_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_05_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_05_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_05_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_05_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_05_RGR_hexagon {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_05_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_05_goggles_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_05_goggles_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_05_goggles_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_05_goggles_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_05_goggles_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_05_goggles_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_05_goggles_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_06_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_06_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_06_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_06_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_06_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_06_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_06_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_06_goggles_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_06_goggles_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_06_goggles_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_06_goggles_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_06_goggles_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_06_goggles_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_06_goggles_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_01_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_01_goggles_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_02_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_02_goggles_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_03_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_03_goggles_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_04_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_04_goggles_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_05_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_05_goggles_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_06_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_06_goggles_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_01_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_01_goggles_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_02_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_02_goggles_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_03_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_03_goggles_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_04_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_04_goggles_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_05_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_05_goggles_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_06_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_06_goggles_khk_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_01_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_01_goggles_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_02_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_02_goggles_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_03_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_03_goggles_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_04_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_04_goggles_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_05_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_05_goggles_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_06_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_06_goggles_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_01_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_01_goggles_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_02_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_02_goggles_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_03_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_03_goggles_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_04_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_04_goggles_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_05_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_05_goggles_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_06_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_06_goggles_CB_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_01_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_01_goggles_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_02_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_02_goggles_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_03_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_03_goggles_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_04_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_04_goggles_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_05_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_05_goggles_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_06_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_06_goggles_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_01_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_01_goggles_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_02_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_02_goggles_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_03_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_03_goggles_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_04_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_04_goggles_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_05_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_05_goggles_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_06_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_06_goggles_RGR_hexagon: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_01_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_01_goggles_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_02_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_02_goggles_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_03_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_03_goggles_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_04_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_04_goggles_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_05_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_05_goggles_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_06_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_opscore_06_goggles_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_02_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_02_goggles_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_03_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_03_goggles_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_02_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_02_goggles_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_03_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_03_goggles_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_02_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_02_goggles_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_03_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_03_goggles_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_02_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_02_goggles_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_03_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_03_goggles_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_backwards_02_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_backwards_02_goggles_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_backwards_03_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_backwards_03_goggles_khk: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_backwards_02_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_backwards_02_goggles_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_backwards_03_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_backwards_03_goggles_RGR: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_backwards_02_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_backwards_02_goggles_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_backwards_03_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_backwards_03_goggles_CB: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_backwards_02_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_backwards_02_goggles_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_backwards_03_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_cap_backwards_03_goggles_MC: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-// fox2
-    class FPGP_2_opscoreMar_Snakeskin_blk_amp_1: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_amp_1_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_amp_2: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_amp_2_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_amp_3: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_amp_3_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_amp_4: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_amp_4_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_amp_5: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_amp_5_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_Ct_1: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_Ct_1_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_ct_2: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_ct_2_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_ct_3: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_ct_3_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_ct_4: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_ct_4_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_ct_5: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_blk_ct_5_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_amp_1: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_amp_1_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_Amp_2: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_Amp_2_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_Amp_3: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_Amp_3_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_Amp_4: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_Amp_4_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_Amp_5: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_Amp_5_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_Ct_1: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_Ct_1_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_ct_2: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_ct_2_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_ct_3: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_ct_3_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_ct_4: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_ct_4_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_ct_5: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class FPGP_2_opscoreMar_Snakeskin_Tan_ct_5_us: ItemCore {
-        scope = 2;
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
+        MACRO_ACE_HEARING
     };
 };

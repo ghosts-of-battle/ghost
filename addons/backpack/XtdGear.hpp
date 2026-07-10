@@ -1,665 +1,675 @@
-class XtdGearmodels {
+class XtdGearModels {
     class CfgVehicles {
-        class ghostAssaultPack {
-            options[] = { "camo" };
-            label = "Assult Pack";
+        class ghost_backpack_standard {
+            label = "Backpack";
+            options[] = {"camo", "type"};
+
             class camo {
                 alwaysSelectable = 1;
-                values[] = { "Multicam", "Multicam_Snow", "Multicam_Woodland", "Solid_Black", "Solid_CoyoteBrown", "Solid_Olive", "Solid_Ranger_Green", "Solid_White", "US_DCU", "US_M81", "US_Tigerstripe" };
-                class Solid_Black {
-                    label = "BLK";
-                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
-                };
-                class Multicam {
-                    label = "MC";
-                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
-                };
-                class Multicam_Snow {
-                    label = "MCA";
-                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
-                };
-                class Multicam_Woodland {
-                    label = "MCW";
-                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
-                };
-                class Solid_CoyoteBrown {
-                    label = "BRN";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class Solid_Olive {
-                    label = "Olive";
-                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
-                };
-                class Solid_Ranger_Green {
-                    label = "Ranger";
-                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
-                };
-                class Solid_White {
-                    label = "White";
-                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
-                };
-                class US_DCU {
-                    label = "DCU";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class US_M81 {
-                    label = "M81";
-                    image = "z\aceax\addons\gearinfo\data\camo\m81.paa";
-                };
-                class US_Tigerstripe {
-                    label = "Tiger";
-                    image = "z\aceax\addons\gearinfo\data\camo\tsw.paa";
-                };
+                values[] = {"Multicam", "Multicam_Snow", "Multicam_Woodland", "Solid_CoyoteBrown", "Solid_Olive", "Solid_Ranger_Green", "Solid_White"};
+
+                class Multicam { label = "MC"; image = "z\aceax\addons\gearinfo\data\camo\mc.paa"; };
+                class Multicam_Snow { label = "MCS"; image = "z\aceax\addons\gearinfo\data\camo\wht.paa"; };
+                class Multicam_Woodland { label = "MCW"; image = "z\aceax\addons\gearinfo\data\camo\mcw.paa"; };
+                class Solid_CoyoteBrown { label = "BRN"; image = "z\aceax\addons\gearinfo\data\camo\khk.paa"; };
+                class Solid_Olive { label = "Olive"; image = "z\aceax\addons\gearinfo\data\camo\sage.paa"; };
+                class Solid_Ranger_Green { label = "Ranger"; image = "z\aceax\addons\gearinfo\data\camo\rgr.paa"; };
+                class Solid_White { label = "White"; image = "z\aceax\addons\gearinfo\data\camo\wht.paa"; };
+            };
+
+            class type {
+                alwaysSelectable = 1;
+                values[] = {"assault", "assault_enhanced", "carryall", "kitbag", "tactical"};
+
+                class assault { label = "Assault"; };
+                class assault_enhanced { label = "Assault +"; };
+                class carryall { label = "Carryall"; };
+                class kitbag { label = "Kitbag"; };
+                class tactical { label = "Tactical"; };
             };
         };
-        class AssaultPackEnhanced {
-            options[] = { "camo" };
-            label = "Enhanceed Assult Pack";
+
+        class ghost_backpack_field {
+            label = "Backpack";
+            options[] = {"camo", "type"};
+
             class camo {
                 alwaysSelectable = 1;
-                values[] = { "Multicam", "Multicam_Snow", "Multicam_Woodland", "Solid_Black", "Solid_CoyoteBrown", "Solid_Olive", "Solid_Ranger_Green", "Solid_White", "US_DCU", "US_M81", "US_Tigerstripe" };
-                class Solid_Black {
-                    label = "BLK";
-                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
-                };
-                class Multicam {
-                    label = "MC";
-                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
-                };
-                class Multicam_Snow {
-                    label = "MCA";
-                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
-                };
-                class Multicam_Woodland {
-                    label = "MCW";
-                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
-                };
-                class Solid_CoyoteBrown {
-                    label = "BRN";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class Solid_Olive {
-                    label = "Olive";
-                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
-                };
-                class Solid_Ranger_Green {
-                    label = "Ranger";
-                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
-                };
-                class Solid_White {
-                    label = "White";
-                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
-                };
-                class US_DCU {
-                    label = "DCU";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class US_M81 {
-                    label = "M81";
-                    image = "z\aceax\addons\gearinfo\data\camo\m81.paa";
-                };
-                class US_Tigerstripe {
-                    label = "Tiger";
-                    image = "z\aceax\addons\gearinfo\data\camo\tsw.paa";
-                };
+                values[] = {"Multicam", "Multicam_Snow", "Multicam_Woodland"};
+
+                class Multicam { label = "MC"; image = "z\aceax\addons\gearinfo\data\camo\mc.paa"; };
+                class Multicam_Snow { label = "MCS"; image = "z\aceax\addons\gearinfo\data\camo\wht.paa"; };
+                class Multicam_Woodland { label = "MCW"; image = "z\aceax\addons\gearinfo\data\camo\mcw.paa"; };
             };
-        };
-        class Carryall {
-            options[] = { "camo" };
-            label = "Carryall";
-            class camo {
+
+            class type {
                 alwaysSelectable = 1;
-                values[] = { "Multicam", "Multicam_Snow", "Multicam_Woodland", "Solid_Black", "Solid_CoyoteBrown", "Solid_Olive", "Solid_Ranger_Green", "Solid_White", "US_DCU", "US_M81", "US_Tigerstripe" };
-                class Solid_Black {
-                    label = "BLK";
-                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
-                };
-                class Multicam {
-                    label = "MC";
-                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
-                };
-                class Multicam_Snow {
-                    label = "MCA";
-                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
-                };
-                class Multicam_Woodland {
-                    label = "MCW";
-                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
-                };
-                class Solid_CoyoteBrown {
-                    label = "BRN";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class Solid_Olive {
-                    label = "Olive";
-                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
-                };
-                class Solid_Ranger_Green {
-                    label = "Ranger";
-                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
-                };
-                class Solid_White {
-                    label = "White";
-                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
-                };
-                class US_DCU {
-                    label = "DCU";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class US_M81 {
-                    label = "M81";
-                    image = "z\aceax\addons\gearinfo\data\camo\m81.paa";
-                };
-                class US_Tigerstripe {
-                    label = "Tiger";
-                    image = "z\aceax\addons\gearinfo\data\camo\tsw.paa";
-                };
+                values[] = {"fieldpack", "bergen"};
+
+                class fieldpack { label = "Field Pack"; };
+                class bergen { label = "Bergen"; };
             };
         };
-        class Kitbag {
-            options[] = { "camo" };
-            label = "Kitbag";
-            class camo {
-                alwaysSelectable = 1;
-                values[] = { "Multicam", "Multicam_Snow", "Multicam_Woodland", "Solid_Black", "Solid_CoyoteBrown", "Solid_Olive", "Solid_Ranger_Green", "Solid_White", "US_DCU", "US_M81", "US_Tigerstripe" };
-                class Solid_Black {
-                    label = "BLK";
-                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
-                };
-                class Multicam {
-                    label = "MC";
-                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
-                };
-                class Multicam_Snow {
-                    label = "MCA";
-                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
-                };
-                class Multicam_Woodland {
-                    label = "MCW";
-                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
-                };
-                class Solid_CoyoteBrown {
-                    label = "BRN";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class Solid_Olive {
-                    label = "Olive";
-                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
-                };
-                class Solid_Ranger_Green {
-                    label = "Ranger";
-                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
-                };
-                class Solid_White {
-                    label = "White";
-                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
-                };
-                class US_DCU {
-                    label = "DCU";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class US_M81 {
-                    label = "M81";
-                    image = "z\aceax\addons\gearinfo\data\camo\m81.paa";
-                };
-                class US_Tigerstripe {
-                    label = "Tiger";
-                    image = "z\aceax\addons\gearinfo\data\camo\tsw.paa";
-                };
-            };
-        };
-        class TacticalPack {
-            options[] = { "camo" };
-            label = "Tactical Pack";
-            class camo {
-                alwaysSelectable = 1;
-                values[] = { "Multicam", "Multicam_Snow", "Multicam_Woodland", "Solid_Black", "Solid_CoyoteBrown", "Solid_Olive", "Solid_Ranger_Green", "Solid_White", "US_DCU", "US_M81", "US_Tigerstripe" };
-                class Solid_Black {
-                    label = "BLK";
-                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
-                };
-                class Multicam {
-                    label = "MC";
-                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
-                };
-                class Multicam_Snow {
-                    label = "MCA";
-                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
-                };
-                class Multicam_Woodland {
-                    label = "MCW";
-                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
-                };
-                class Solid_CoyoteBrown {
-                    label = "BRN";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class Solid_Olive {
-                    label = "Olive";
-                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
-                };
-                class Solid_Ranger_Green {
-                    label = "Ranger";
-                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
-                };
-                class Solid_White {
-                    label = "White";
-                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
-                };
-                class US_DCU {
-                    label = "DCU";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class US_M81 {
-                    label = "M81";
-                    image = "z\aceax\addons\gearinfo\data\camo\m81.paa";
-                };
-                class US_Tigerstripe {
-                    label = "Tiger";
-                    image = "z\aceax\addons\gearinfo\data\camo\tsw.paa";
-                };
-            };
-        };
-        class Backpack_Kitbag_Medic {
-            options[] = { "camo" };
+
+        class ghost_backpack_medic_kitbag {
             label = "Medic Kitbag";
+            options[] = {"camo"};
+
             class camo {
                 alwaysSelectable = 1;
-                values[] = { "MTP", "WHT", "COY", "BLK", "GRN", "RGR", "SAGE", "TAN"};
-                class BLK {
-                    label = "BLK";
+                values[] = {"MTP", "COY", "RGR", "WHT", "GRN", "SAGE", "TAN"};
+
+                class MTP { label = "MTP"; image = "z\aceax\addons\gearinfo\data\camo\mc.paa"; };
+                class COY { label = "COY"; image = "z\aceax\addons\gearinfo\data\camo\khk.paa"; };
+                class RGR { label = "RGR"; image = "z\aceax\addons\gearinfo\data\camo\rgr.paa"; };
+                class WHT { label = "WHT"; image = "z\aceax\addons\gearinfo\data\camo\wht.paa"; };
+                class GRN { label = "GRN"; image = "z\aceax\addons\gearinfo\data\camo\sage.paa"; };
+                class SAGE { label = "SAGE"; image = "z\aceax\addons\gearinfo\data\camo\sage.paa"; };
+                class TAN { label = "TAN"; image = "z\aceax\addons\gearinfo\data\camo\khk.paa"; };
+            };
+        };
+
+        class ghost_backpack_radiobag {
+            label = "Radio Bag";
+            options[] = {"camo"};
+
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"Multicam", "Multicam_Snow", "Multicam_Woodland", "Solid_CoyoteBrown", "Solid_Olive", "Solid_Ranger_Green", "Solid_Tan", "Solid_White"};
+
+                class Multicam { label = "MC"; image = "z\aceax\addons\gearinfo\data\camo\mc.paa"; };
+                class Multicam_Snow { label = "MCS"; image = "z\aceax\addons\gearinfo\data\camo\wht.paa"; };
+                class Multicam_Woodland { label = "MCW"; image = "z\aceax\addons\gearinfo\data\camo\mcw.paa"; };
+                class Solid_CoyoteBrown { label = "BRN"; image = "z\aceax\addons\gearinfo\data\camo\khk.paa"; };
+                class Solid_Olive { label = "Olive"; image = "z\aceax\addons\gearinfo\data\camo\sage.paa"; };
+                class Solid_Ranger_Green { label = "Ranger"; image = "z\aceax\addons\gearinfo\data\camo\rgr.paa"; };
+                class Solid_Tan { label = "Tan"; image = "z\aceax\addons\gearinfo\data\camo\khk.paa"; };
+                class Solid_White { label = "White"; image = "z\aceax\addons\gearinfo\data\camo\wht.paa"; };
+            };
+        };
+            class GVAR(bp_AssaultPack) {
+            label = "AssaultPack";
+            options[] = {"camo"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"MC", "Desert", "Tropic"};
+                class MC {
+                    label = "MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class Desert {
+                    label = "Desert";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcd.paa";
+                };
+                class Tropic {
+                    label = "Tropic";
+                    image = "z\aceax\addons\gearinfo\data\camo\mct.paa";
+                };
+            };
+        };
+        class GVAR(bp_AssaultPackSpec) {
+            label = "AssaultPackSpec";
+            options[] = {"camo"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"MC", "Desert", "Coyote", "Black", "Ranger", "Woodland"};
+                class MC {
+                    label = "MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class Desert {
+                    label = "Desert";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcd.paa";
+                };
+                class Coyote {
+                    label = "Coyote";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Black {
+                    label = "Black";
                     image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
                 };
+                class Ranger {
+                    label = "Ranger";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class Woodland {
+                    label = "Woodland";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+            };
+        };
+        class GVAR(bp_Bergen) {
+            label = "Bergen";
+            options[] = {"camo"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"MC", "Tropic", "Woodland"};
+                class MC {
+                    label = "MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class Tropic {
+                    label = "Tropic";
+                    image = "z\aceax\addons\gearinfo\data\camo\mct.paa";
+                };
+                class Woodland {
+                    label = "Woodland";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+            };
+        };
+        class GVAR(bp_Carryall) {
+            label = "Carryall";
+            options[] = {"camo"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"MC", "Desert", "Tropic", "Woodland", "Olive"};
+                class MC {
+                    label = "MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class Desert {
+                    label = "Desert";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcd.paa";
+                };
+                class Tropic {
+                    label = "Tropic";
+                    image = "z\aceax\addons\gearinfo\data\camo\mct.paa";
+                };
+                class Woodland {
+                    label = "Woodland";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+                class Olive {
+                    label = "Olive";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+            };
+        };
+        class GVAR(bp_Static_GMG_01) {
+            label = "Static GMG 01";
+            options[] = {"type", "color"};
+            class type {
+                alwaysSelectable = 1;
+                values[] = {"Assembly", "Weapon", "High"};
+                class Assembly {
+                    label = "Assembly";
+                };
+                class Weapon {
+                    label = "Weapon";
+                };
+                class High {
+                    label = "High";
+                };
+            };
+            class color {
+                alwaysSelectable = 1;
+                values[] = {"Default", "Green"};
+                class Default {
+                    label = "Default";
+                };
+                class Green {
+                    label = "Green";
+                };
+            };
+        };
+        class GVAR(bp_Static_HMG_01) {
+            label = "Static HMG 01";
+            options[] = {"type", "color"};
+            class type {
+                alwaysSelectable = 1;
+                values[] = {"Assembly", "Weapon", "Support", "SupportHigh", "High"};
+                class Assembly {
+                    label = "Assembly";
+                };
+                class Weapon {
+                    label = "Weapon";
+                };
+                class Support {
+                    label = "Support";
+                };
+                class SupportHigh {
+                    label = "Supp Hi";
+                };
+                class High {
+                    label = "High";
+                };
+            };
+            class color {
+                alwaysSelectable = 1;
+                values[] = {"Default", "Green"};
+                class Default {
+                    label = "Default";
+                };
+                class Green {
+                    label = "Green";
+                };
+            };
+        };
+        class GVAR(bp_Static_HMG_02) {
+            label = "Static HMG 02";
+            options[] = {"type", "color"};
+            class type {
+                alwaysSelectable = 1;
+                values[] = {"Weapon", "High", "Support", "SupportHigh"};
+                class Weapon {
+                    label = "Weapon";
+                };
+                class High {
+                    label = "High";
+                };
+                class Support {
+                    label = "Support";
+                };
+                class SupportHigh {
+                    label = "Supp Hi";
+                };
+            };
+            class color {
+                alwaysSelectable = 1;
+                values[] = {"Default", "Green"};
+                class Default {
+                    label = "Default";
+                };
+                class Green {
+                    label = "Green";
+                };
+            };
+        };
+        class GVAR(bp_DuffleBag) {
+            label = "DuffleBag";
+            options[] = {"camo"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"MTP", "Olive"};
                 class MTP {
                     label = "MTP";
+                    image = "z\aceax\addons\gearinfo\data\camo\mtp.paa";
+                };
+                class Olive {
+                    label = "Olive";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+            };
+        };
+        class GVAR(bp_Static_Mortar_01) {
+            label = "Static Mortar 01";
+            options[] = {"type", "color"};
+            class type {
+                alwaysSelectable = 1;
+                values[] = {"Support", "Weapon"};
+                class Support {
+                    label = "Support";
+                };
+                class Weapon {
+                    label = "Weapon";
+                };
+            };
+            class color {
+                alwaysSelectable = 1;
+                values[] = {"Default", "Green"};
+                class Default {
+                    label = "Default";
+                };
+                class Green {
+                    label = "Green";
+                };
+            };
+        };
+        class GVAR(bp_patrolBackpack) {
+            label = "patrolBackpack";
+            options[] = {"camo"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"MC", "MCU", "Woodland", "Tropic", "Green", "Coyote", "RUArid"};
+                class MC {
+                    label = "MC";
                     image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
                 };
-                class COY {
-                    label = "COY";
+                class MCU {
+                    label = "MCU";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class Woodland {
+                    label = "Woodland";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+                class Tropic {
+                    label = "Tropic";
+                    image = "z\aceax\addons\gearinfo\data\camo\mct.paa";
+                };
+                class Green {
+                    label = "Green";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+                class Coyote {
+                    label = "Coyote";
                     image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
                 };
-                class RGR {
+                class RUArid {
+                    label = "RU Arid";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcd.paa";
+                };
+            };
+        };
+        class GVAR(bp_RadioBag) {
+            label = "RadioBag";
+            options[] = {"camo"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"MTP", "Tropic", "Woodland", "Desert"};
+                class MTP {
+                    label = "MTP";
+                    image = "z\aceax\addons\gearinfo\data\camo\mtp.paa";
+                };
+                class Tropic {
+                    label = "Tropic";
+                    image = "z\aceax\addons\gearinfo\data\camo\mct.paa";
+                };
+                class Woodland {
+                    label = "Woodland";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+                class Desert {
+                    label = "Desert";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcd.paa";
+                };
+            };
+        };
+        class GVAR(bp_RallyPoint) {
+            label = "RallyPoint";
+            options[] = {"camo"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"Default", "Green"};
+                class Default {
+                    label = "Default";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class Green {
+                    label = "Green";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+            };
+        };
+        class GVAR(bp_Static_AA_01) {
+            label = "Static AA 01";
+            options[] = {"type", "color"};
+            class type {
+                alwaysSelectable = 1;
+                values[] = {"Weapon"};
+                class Weapon {
+                    label = "Weapon";
+                };
+            };
+            class color {
+                alwaysSelectable = 1;
+                values[] = {"Default", "Green"};
+                class Default {
+                    label = "Default";
+                };
+                class Green {
+                    label = "Green";
+                };
+            };
+        };
+        class GVAR(bp_Static_AT_01) {
+            label = "Static AT 01";
+            options[] = {"type", "color"};
+            class type {
+                alwaysSelectable = 1;
+                values[] = {"Weapon"};
+                class Weapon {
+                    label = "Weapon";
+                };
+            };
+            class color {
+                alwaysSelectable = 1;
+                values[] = {"Default", "Green"};
+                class Default {
+                    label = "Default";
+                };
+                class Green {
+                    label = "Green";
+                };
+            };
+        };
+        class GVAR(bp_TacticalPack) {
+            label = "TacticalPack";
+            options[] = {"camo"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"MC", "Tropic", "Ranger", "Coyote"};
+                class MC {
+                    label = "MC";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class Tropic {
+                    label = "Tropic";
+                    image = "z\aceax\addons\gearinfo\data\camo\mct.paa";
+                };
+                class Ranger {
                     label = "Ranger";
                     image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
                 };
-                class WHT {
-                    label = "WHT";
-                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
-                };
-                class GRN {
-                    label = "GRN";
-                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
-                };
-                class SAGE {
-                    label = "SAGE";
-                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
-                };
-                class TAN {
-                    label = "TAN";
+                class Coyote {
+                    label = "Coyote";
                     image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
                 };
             };
         };
-        class B_RadioBag_01 {
-            options[] = { "camo" };
-            label = "Radio Bag";
+        class GVAR(bp_Designator_01) {
+            label = "Designator 01";
+            options[] = {"faction"};
+            class faction {
+                alwaysSelectable = 1;
+                values[] = {"NATO", "NATO_T", "NATO_W", "IND", "IND_I", "IND_E"};
+                class NATO {
+                    label = "NATO";
+                };
+                class NATO_T {
+                    label = "NATO-T";
+                };
+                class NATO_W {
+                    label = "NATO-W";
+                };
+                class IND {
+                    label = "AAF";
+                };
+                class IND_I {
+                    label = "AAF-I";
+                };
+                class IND_E {
+                    label = "AAF-E";
+                };
+            };
+        };
+        class GVAR(bp_Kitbag) {
+            label = "Kitbag";
+            options[] = {"camo"};
             class camo {
                 alwaysSelectable = 1;
-                values[] = { "Multicam", "Multicam_Snow", "Multicam_Woodland", "Solid_Black", "Solid_CoyoteBrown", "Solid_Olive", "Solid_Ranger_Green", "Solid_White", "US_DCU", "US_M81", "US_Tigerstripe" };
-                class Solid_Black {
-                    label = "BLK";
-                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
-                };
-                class Multicam {
+                values[] = {"MC", "Desert", "Khaki", "Coyote", "Tropic", "Woodland"};
+                class MC {
                     label = "MC";
                     image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
                 };
-                class Multicam_Snow {
-                    label = "MCA";
-                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                class Desert {
+                    label = "Desert";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcd.paa";
                 };
-                class Multicam_Woodland {
-                    label = "MCW";
+                class Khaki {
+                    label = "Khaki";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Coyote {
+                    label = "Coyote";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Tropic {
+                    label = "Tropic";
+                    image = "z\aceax\addons\gearinfo\data\camo\mct.paa";
+                };
+                class Woodland {
+                    label = "Woodland";
                     image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
                 };
-                class Solid_CoyoteBrown {
-                    label = "BRN";
+            };
+        };
+        class GVAR(bp_Designator_02) {
+            label = "Designator 02";
+            options[] = {"faction"};
+            class faction {
+                alwaysSelectable = 1;
+                values[] = {"CSAT_T", "CSAT", "CSAT_R"};
+                class CSAT_T {
+                    label = "CSAT-T";
+                };
+                class CSAT {
+                    label = "CSAT";
+                };
+                class CSAT_R {
+                    label = "CSAT-R";
+                };
+            };
+        };
+        class GVAR(bp_UAV_06) {
+            label = "UAV 06";
+            options[] = {"type"};
+            class type {
+                alwaysSelectable = 1;
+                values[] = {"Standard", "Medical"};
+                class Standard {
+                    label = "Standard";
+                };
+                class Medical {
+                    label = "Medical";
+                };
+            };
+        };
+        class GVAR(bp_UAV_01) {
+            label = "UAV 01";
+            options[] = {"camo"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"Default", "Coyote"};
+                class Default {
+                    label = "Default";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class Coyote {
+                    label = "Coyote";
                     image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
                 };
-                class Solid_Olive {
-                    label = "Olive";
-                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+            };
+        };
+        class GVAR(bp_UGV_02) {
+            label = "UGV 02";
+            options[] = {"type"};
+            class type {
+                alwaysSelectable = 1;
+                values[] = {"Demining", "Science"};
+                class Demining {
+                    label = "Demining";
                 };
-                class Solid_Ranger_Green {
-                    label = "Ranger";
-                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                class Science {
+                    label = "Science";
                 };
-                class Solid_White {
-                    label = "White";
-                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
-                };
-                class US_DCU {
-                    label = "DCU";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class US_M81 {
-                    label = "M81";
-                    image = "z\aceax\addons\gearinfo\data\camo\m81.paa";
-                };
-                class US_Tigerstripe {
-                    label = "Tiger";
-                    image = "z\aceax\addons\gearinfo\data\camo\tsw.paa";
-                };
-                class Solid_Tan {
+            };
+        };
+        class GVAR(bp_gunbag) {
+            label = "gunbag";
+            options[] = {"camo"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"Tan", "Default"};
+                class Tan {
                     label = "Tan";
                     image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Default {
+                    label = "Default";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+            };
+        };
+        class GVAR(bp_Parachute) {
+            label = "Parachute";
+            options[] = {"type"};
+            class type {
+                alwaysSelectable = 1;
+                values[] = {"NonSteer", "Standard"};
+                class NonSteer {
+                    label = "Non-Steer";
+                };
+                class Standard {
+                    label = "Standard";
                 };
             };
         };
     };
 };
 
-class XtdGearinfos {
+class XtdGearInfos {
     class CfgVehicles {
-        class GVAR(AssaultPack_Multicam) {
-            model = "ghostAssaultPack";
-            camo = "Multicam";
-        };
-        class GVAR(AssaultPack_Multicam_Snow) {
-            model = "ghostAssaultPack";
-            camo = "Multicam_Snow";
-        };
-        class GVAR(AssaultPack_Multicam_Woodland) {
-            model = "ghostAssaultPack";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(AssaultPack_Solid_Black) {
-            model = "ghostAssaultPack";
-            camo = "Solid_Black";
-        };
-        class GVAR(AssaultPack_Solid_CoyoteBrown) {
-            model = "ghostAssaultPack";
-            camo = "Solid_CoyoteBrown";
-        };
-        class GVAR(AssaultPack_Solid_Olive) {
-            model = "ghostAssaultPack";
-            camo = "Solid_Olive";
-        };
-        class GVAR(AssaultPack_Solid_Ranger_Green) {
-            model = "ghostAssaultPack";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(AssaultPack_Solid_White) {
-            model = "ghostAssaultPack";
-            camo = "Solid_White";
-        };
-        class GVAR(AssaultPack_US_DCU) {
-            model = "ghostAssaultPack";
-            camo = "US_DCU";
-        };
-        class GVAR(AssaultPack_US_M81) {
-            model = "ghostAssaultPack";
-            camo = "US_M81";
-        };
-        class GVAR(AssaultPack_US_Tigerstripe) {
-            model = "ghostAssaultPack";
-            camo = "US_Tigerstripe";
-        };
-        class GVAR(AssaultPackEnhanced_Multicam) {
-            model = "AssaultPackEnhanced";
-            camo = "Multicam";
-        };
-        class GVAR(AssaultPackEnhanced_Multicam_Snow) {
-            model = "AssaultPackEnhanced";
-            camo = "Multicam_Snow";
-        };
-        class GVAR(AssaultPackEnhanced_Multicam_Woodland) {
-            model = "AssaultPackEnhanced";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(AssaultPackEnhanced_Solid_Black) {
-            model = "AssaultPackEnhanced";
-            camo = "Solid_Black";
-        };
-        class GVAR(AssaultPackEnhanced_Solid_CoyoteBrown) {
-            model = "AssaultPackEnhanced";
-            camo = "Solid_CoyoteBrown";
-        };
-        class GVAR(AssaultPackEnhanced_Solid_Olive) {
-            model = "AssaultPackEnhanced";
-            camo = "Solid_Olive";
-        };
-        class GVAR(AssaultPackEnhanced_Solid_Ranger_Green) {
-            model = "AssaultPackEnhanced";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(AssaultPackEnhanced_Solid_White) {
-            model = "AssaultPackEnhanced";
-            camo = "Solid_White";
-        };
-        class GVAR(AssaultPackEnhanced_US_DCU) {
-            model = "AssaultPackEnhanced";
-            camo = "US_DCU";
-        };
-        class GVAR(AssaultPackEnhanced_US_M81) {
-            model = "AssaultPackEnhanced";
-            camo = "US_M81";
-        };
-        class GVAR(AssaultPackEnhanced_US_Tigerstripe) {
-            model = "AssaultPackEnhanced";
-            camo = "US_Tigerstripe";
-        };
-        class GVAR(Carryall_Multicam) {
-            model = "Carryall";
-            camo = "Multicam";
-        };
-        class GVAR(Carryall_Multicam_Snow) {
-            model = "Carryall";
-            camo = "Multicam_Snow";
-        };
-        class GVAR(Carryall_Multicam_Woodland) {
-            model = "Carryall";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(Carryall_Solid_Black) {
-            model = "Carryall";
-            camo = "Solid_Black";
-        };
-        class GVAR(Carryall_Solid_CoyoteBrown) {
-            model = "Carryall";
-            camo = "Solid_CoyoteBrown";
-        };
-        class GVAR(Carryall_Solid_Olive) {
-            model = "Carryall";
-            camo = "Solid_Olive";
-        };
-        class GVAR(Carryall_Solid_Ranger_Green) {
-            model = "Carryall";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(Carryall_Solid_White) {
-            model = "Carryall";
-            camo = "Solid_White";
-        };
-        class GVAR(Carryall_US_DCU) {
-            model = "Carryall";
-            camo = "US_DCU";
-        };
-        class GVAR(Carryall_US_M81) {
-            model = "Carryall";
-            camo = "US_M81";
-        };
-        class GVAR(Carryall_US_Tigerstripe) {
-            model = "Carryall";
-            camo = "US_Tigerstripe";
-        };
-        class GVAR(TacticalPack_Multicam) {
-            model = "TacticalPack";
-            camo = "Multicam";
-        };
-        class GVAR(TacticalPack_Multicam_Snow) {
-            model = "TacticalPack";
-            camo = "Multicam_Snow";
-        };
-        class GVAR(TacticalPack_Multicam_Woodland) {
-            model = "TacticalPack";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(TacticalPack_Solid_Black) {
-            model = "TacticalPack";
-            camo = "Solid_Black";
-        };
-        class GVAR(TacticalPack_Solid_CoyoteBrown) {
-            model = "TacticalPack";
-            camo = "Solid_CoyoteBrown";
-        };
-        class GVAR(TacticalPack_Solid_Olive) {
-            model = "TacticalPack";
-            camo = "Solid_Olive";
-        };
-        class GVAR(TacticalPack_Solid_Ranger_Green) {
-            model = "TacticalPack";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(TacticalPack_Solid_White) {
-            model = "TacticalPack";
-            camo = "Solid_White";
-        };
-        class GVAR(TacticalPack_US_DCU) {
-            model = "TacticalPack";
-            camo = "US_DCU";
-        };
-        class GVAR(TacticalPack_US_M81) {
-            model = "TacticalPack";
-            camo = "US_M81";
-        };
-        class GVAR(TacticalPack_US_Tigerstripe) {
-            model = "TacticalPack";
-            camo = "US_Tigerstripe";
-        };
-        class GVAR(Kitbag_Multicam) {
-            model = "Kitbag";
-            camo = "Multicam";
-        };
-        class GVAR(Kitbag_Multicam_Snow) {
-            model = "Kitbag";
-            camo = "Multicam_Snow";
-        };
-        class GVAR(Kitbag_Multicam_Woodland) {
-            model = "Kitbag";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(Kitbag_Solid_Black) {
-            model = "Kitbag";
-            camo = "Solid_Black";
-        };
-        class GVAR(Kitbag_Solid_CoyoteBrown) {
-            model = "Kitbag";
-            camo = "Solid_CoyoteBrown";
-        };
-        class GVAR(Kitbag_Solid_Olive) {
-            model = "Kitbag";
-            camo = "Solid_Olive";
-        };
-        class GVAR(Kitbag_Solid_Ranger_Green) {
-            model = "Kitbag";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(Kitbag_Solid_White) {
-            model = "Kitbag";
-            camo = "Solid_White";
-        };
-        class GVAR(Kitbag_US_DCU) {
-            model = "Kitbag";
-            camo = "US_DCU";
-        };
-        class GVAR(Kitbag_US_M81) {
-            model = "Kitbag";
-            camo = "US_M81";
-        };
-        class GVAR(Kitbag_US_Tigerstripe) {
-            model = "Kitbag";
-            camo = "US_Tigerstripe";
-        };
-        class GVAR(Backpack_Kitbag_Medic_Black) {
-            model = "Backpack_Kitbag_Medic";
-            camo = "BLK";
-        };
-        class GVAR(Backpack_Kitbag_Medic_Coyote) {
-            model = "Backpack_Kitbag_Medic";
-            camo = "COY";
-        };
-        class GVAR(Backpack_Kitbag_Medic_Green) {
-            model = "Backpack_Kitbag_Medic";
-            camo = "GRN";
-        };
-        class GVAR(Backpack_Kitbag_Medic_MTP) {
-            model = "Backpack_Kitbag_Medic";
-            camo = "MTP";
-        };
-        class GVAR(Backpack_Kitbag_Medic_RGR) {
-            model = "Backpack_Kitbag_Medic";
-            camo = "RGR";
-        };
-        class GVAR(Backpack_Kitbag_Medic_Sage) {
-            model = "Backpack_Kitbag_Medic";
-            camo = "SAGE";
-        };
-        class GVAR(Backpack_Kitbag_Medic_Tan) {
-            model = "Backpack_Kitbag_Medic";
-            camo = "TAN";
-        };
-        class GVAR(Backpack_Kitbag_Medic_White) {
-            model = "Backpack_Kitbag_Medic";
-            camo = "WHT";
-        };
-        class GVAR(B_RadioBag_01_Multicam) {
-            model = "B_RadioBag_01";
-            camo = "Multicam";
-        };
-        class GVAR(B_RadioBag_01_Multicam_Snow) {
-            model = "B_RadioBag_01";
-            camo = "Multicam_Snow";
-        };
-        class GVAR(B_RadioBag_01_Multicam_Woodland) {
-            model = "B_RadioBag_01";
-            camo = "Multicam_Woodland";
-        };
-        class GVAR(B_RadioBag_01_Solid_Black) {
-            model = "B_RadioBag_01";
-            camo = "Solid_Black";
-        };
-        class GVAR(B_RadioBag_01_Solid_CoyoteBrown) {
-            model = "B_RadioBag_01";
-            camo = "Solid_CoyoteBrown";
-        };
-        class GVAR(B_RadioBag_01_Solid_Olive) {
-            model = "B_RadioBag_01";
-            camo = "Solid_Olive";
-        };
-        class GVAR(B_RadioBag_01_Solid_Ranger_Green) {
-            model = "B_RadioBag_01";
-            camo = "Solid_Ranger_Green";
-        };
-        class GVAR(B_RadioBag_01_Solid_White) {
-            model = "B_RadioBag_01";
-            camo = "Solid_White";
-        };
-        class GVAR(B_RadioBag_01_US_DCU) {
-            model = "B_RadioBag_01";
-            camo = "US_DCU";
-        };
-        class GVAR(B_RadioBag_01_US_M81) {
-            model = "B_RadioBag_01";
-            camo = "US_M81";
-        };
-        class GVAR(B_RadioBag_01_US_Tigerstripe) {
-            model = "B_RadioBag_01";
-            camo = "US_Tigerstripe";
-        };
-        class GVAR(B_RadioBag_01_Solid_Tan_F) {
-            model = "B_RadioBag_01";
-            camo = "Tan";
-        };
+        #include "XtdGearInfos_Bags.hpp"
+        class GVAR(AssaultPack_Multicam) { model = "ghost_backpack_standard"; camo = "Multicam"; type = "assault"; };
+        class GVAR(AssaultPack_Multicam_Snow) { model = "ghost_backpack_standard"; camo = "Multicam_Snow"; type = "assault"; };
+        class GVAR(AssaultPack_Multicam_Woodland) { model = "ghost_backpack_standard"; camo = "Multicam_Woodland"; type = "assault"; };
+        class GVAR(AssaultPack_Solid_CoyoteBrown) { model = "ghost_backpack_standard"; camo = "Solid_CoyoteBrown"; type = "assault"; };
+        class GVAR(AssaultPack_Solid_Olive) { model = "ghost_backpack_standard"; camo = "Solid_Olive"; type = "assault"; };
+        class GVAR(AssaultPack_Solid_Ranger_Green) { model = "ghost_backpack_standard"; camo = "Solid_Ranger_Green"; type = "assault"; };
+        class GVAR(AssaultPack_Solid_White) { model = "ghost_backpack_standard"; camo = "Solid_White"; type = "assault"; };
+        class GVAR(AssaultPackEnhanced_Multicam) { model = "ghost_backpack_standard"; camo = "Multicam"; type = "assault_enhanced"; };
+        class GVAR(AssaultPackEnhanced_Multicam_Snow) { model = "ghost_backpack_standard"; camo = "Multicam_Snow"; type = "assault_enhanced"; };
+        class GVAR(AssaultPackEnhanced_Multicam_Woodland) { model = "ghost_backpack_standard"; camo = "Multicam_Woodland"; type = "assault_enhanced"; };
+        class GVAR(AssaultPackEnhanced_Solid_CoyoteBrown) { model = "ghost_backpack_standard"; camo = "Solid_CoyoteBrown"; type = "assault_enhanced"; };
+        class GVAR(AssaultPackEnhanced_Solid_Olive) { model = "ghost_backpack_standard"; camo = "Solid_Olive"; type = "assault_enhanced"; };
+        class GVAR(AssaultPackEnhanced_Solid_Ranger_Green) { model = "ghost_backpack_standard"; camo = "Solid_Ranger_Green"; type = "assault_enhanced"; };
+        class GVAR(AssaultPackEnhanced_Solid_White) { model = "ghost_backpack_standard"; camo = "Solid_White"; type = "assault_enhanced"; };
+        class GVAR(Carryall_Multicam) { model = "ghost_backpack_standard"; camo = "Multicam"; type = "carryall"; };
+        class GVAR(Carryall_Multicam_Snow) { model = "ghost_backpack_standard"; camo = "Multicam_Snow"; type = "carryall"; };
+        class GVAR(Carryall_Multicam_Woodland) { model = "ghost_backpack_standard"; camo = "Multicam_Woodland"; type = "carryall"; };
+        class GVAR(Carryall_Solid_CoyoteBrown) { model = "ghost_backpack_standard"; camo = "Solid_CoyoteBrown"; type = "carryall"; };
+        class GVAR(Carryall_Solid_Olive) { model = "ghost_backpack_standard"; camo = "Solid_Olive"; type = "carryall"; };
+        class GVAR(Carryall_Solid_Ranger_Green) { model = "ghost_backpack_standard"; camo = "Solid_Ranger_Green"; type = "carryall"; };
+        class GVAR(Carryall_Solid_White) { model = "ghost_backpack_standard"; camo = "Solid_White"; type = "carryall"; };
+        class GVAR(Kitbag_Multicam) { model = "ghost_backpack_standard"; camo = "Multicam"; type = "kitbag"; };
+        class GVAR(Kitbag_Multicam_Snow) { model = "ghost_backpack_standard"; camo = "Multicam_Snow"; type = "kitbag"; };
+        class GVAR(Kitbag_Multicam_Woodland) { model = "ghost_backpack_standard"; camo = "Multicam_Woodland"; type = "kitbag"; };
+        class GVAR(Kitbag_Solid_CoyoteBrown) { model = "ghost_backpack_standard"; camo = "Solid_CoyoteBrown"; type = "kitbag"; };
+        class GVAR(Kitbag_Solid_Olive) { model = "ghost_backpack_standard"; camo = "Solid_Olive"; type = "kitbag"; };
+        class GVAR(Kitbag_Solid_Ranger_Green) { model = "ghost_backpack_standard"; camo = "Solid_Ranger_Green"; type = "kitbag"; };
+        class GVAR(Kitbag_Solid_White) { model = "ghost_backpack_standard"; camo = "Solid_White"; type = "kitbag"; };
+        class GVAR(TacticalPack_Multicam) { model = "ghost_backpack_standard"; camo = "Multicam"; type = "tactical"; };
+        class GVAR(TacticalPack_Multicam_Snow) { model = "ghost_backpack_standard"; camo = "Multicam_Snow"; type = "tactical"; };
+        class GVAR(TacticalPack_Multicam_Woodland) { model = "ghost_backpack_standard"; camo = "Multicam_Woodland"; type = "tactical"; };
+        class GVAR(TacticalPack_Solid_CoyoteBrown) { model = "ghost_backpack_standard"; camo = "Solid_CoyoteBrown"; type = "tactical"; };
+        class GVAR(TacticalPack_Solid_Olive) { model = "ghost_backpack_standard"; camo = "Solid_Olive"; type = "tactical"; };
+        class GVAR(TacticalPack_Solid_Ranger_Green) { model = "ghost_backpack_standard"; camo = "Solid_Ranger_Green"; type = "tactical"; };
+        class GVAR(TacticalPack_Solid_White) { model = "ghost_backpack_standard"; camo = "Solid_White"; type = "tactical"; };
+        class GVAR(FieldPack_Multicam) { model = "ghost_backpack_field"; camo = "Multicam"; type = "fieldpack"; };
+        class GVAR(Bergen_Multicam) { model = "ghost_backpack_field"; camo = "Multicam"; type = "bergen"; };
+        class GVAR(FieldPack_Multicam_Snow) { model = "ghost_backpack_field"; camo = "Multicam_Snow"; type = "fieldpack"; };
+        class GVAR(Bergen_Multicam_Snow) { model = "ghost_backpack_field"; camo = "Multicam_Snow"; type = "bergen"; };
+        class GVAR(FieldPack_Multicam_Woodland) { model = "ghost_backpack_field"; camo = "Multicam_Woodland"; type = "fieldpack"; };
+        class GVAR(Bergen_Multicam_Woodland) { model = "ghost_backpack_field"; camo = "Multicam_Woodland"; type = "bergen"; };
+        class GVAR(Backpack_Kitbag_Medic_Coyote) { model = "ghost_backpack_medic_kitbag"; camo = "COY"; };
+        class GVAR(Backpack_Kitbag_Medic_Green) { model = "ghost_backpack_medic_kitbag"; camo = "GRN"; };
+        class GVAR(Backpack_Kitbag_Medic_MTP) { model = "ghost_backpack_medic_kitbag"; camo = "MTP"; };
+        class GVAR(Backpack_Kitbag_Medic_RGR) { model = "ghost_backpack_medic_kitbag"; camo = "RGR"; };
+        class GVAR(Backpack_Kitbag_Medic_Sage) { model = "ghost_backpack_medic_kitbag"; camo = "SAGE"; };
+        class GVAR(Backpack_Kitbag_Medic_Tan) { model = "ghost_backpack_medic_kitbag"; camo = "TAN"; };
+        class GVAR(Backpack_Kitbag_Medic_White) { model = "ghost_backpack_medic_kitbag"; camo = "WHT"; };
+
+        class GVAR(B_RadioBag_01_Multicam) { model = "ghost_backpack_radiobag"; camo = "Multicam"; };
+        class GVAR(B_RadioBag_01_Multicam_Snow) { model = "ghost_backpack_radiobag"; camo = "Multicam_Snow"; };
+        class GVAR(B_RadioBag_01_Multicam_Woodland) { model = "ghost_backpack_radiobag"; camo = "Multicam_Woodland"; };
+        class GVAR(B_RadioBag_01_Solid_CoyoteBrown) { model = "ghost_backpack_radiobag"; camo = "Solid_CoyoteBrown"; };
+        class GVAR(B_RadioBag_01_Solid_Olive) { model = "ghost_backpack_radiobag"; camo = "Solid_Olive"; };
+        class GVAR(B_RadioBag_01_Solid_Ranger_Green) { model = "ghost_backpack_radiobag"; camo = "Solid_Ranger_Green"; };
+        class GVAR(B_RadioBag_01_Solid_Tan) { model = "ghost_backpack_radiobag"; camo = "Solid_Tan"; };
+        class GVAR(B_RadioBag_01_Solid_White) { model = "ghost_backpack_radiobag"; camo = "Solid_White"; };
     };
 };

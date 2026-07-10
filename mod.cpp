@@ -1,11 +1,11 @@
 name = "Ghost";
-picture = "gobp2_256.paa";
+picture = "newlogo.png";
 description = "Ghosts of Battle Custom Mod";
-logo = "gobp2_256.paa";
-logoOver = "gobp2_256_g.paa";
+logo = "logo_256.paa";
+logoOver = "logo_256_g.paa";
 tooltip = "Here you will return, you will not die in war";
 tooltipOwned = "Project Template Weee";
 overview = "Ghosts of Battle Custom Mod - Here you will return, you will not die in war";
 author = "YonV";
-overviewPicture = "gobp2_256.paa";
+overviewPicture = "logo_256.paa";
 dir = "@ghost";

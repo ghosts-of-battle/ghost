@@ -8,7 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "ghost_common",
-            "a3_functions_f_exp_a"
+            "A3_Functions_F_Exp_A"
         };
         author = "Ghosts of Battle";
         VERSION_CONFIG;

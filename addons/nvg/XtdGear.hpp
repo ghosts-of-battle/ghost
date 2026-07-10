@@ -55,7 +55,7 @@ class XtdGearModels {
             label = "IVAS";
             class camo {
                 alwaysSelectable = 1;
-                values[] = { "blk", "gry", "mud", "olive", "tan", "wht"};
+                values[] = { "blk", "gry", "mud", "olive", "tan", "wht", "grn"};
                 class blk {
                     label = "Black";
                     image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
@@ -80,11 +80,56 @@ class XtdGearModels {
                     label = "Mud";
                     image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
                 };
+                class grn {
+                    label = "Green";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
             };
             class ti {
                 label = "Thermal";
                 alwaysSelectable = 1;
                 values[] = { "yes", "no"};
+            };
+        };
+        class lpnvg {
+            options[] = { "camo", "ti"};
+            label = "LP NVG";
+            class camo {
+                alwaysSelectable = 1;
+                values[] = { "blk", "tan"};
+                class blk {
+                    label = "Black";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class tan {
+                    label = "Tan";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+            };
+            class ti {
+                label = "Thermal";
+                alwaysSelectable = 1;
+                values[] = { "yes", "no"};
+            };
+        };
+        class tigoggles {
+            options[] = { "camo"};
+            label = "Ti Goggles";
+            class camo {
+                alwaysSelectable = 1;
+                values[] = { "blk", "grn", "tan"};
+                class blk {
+                    label = "Black";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class grn {
+                    label = "Green";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+                class tan {
+                    label = "Tan";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
             };
         };
     };
@@ -213,6 +258,59 @@ class XtdGearInfos {
             model = "nivas";
             camo = "wht";
             ti = "yes";
+        };
+
+        // Aegis IVAS
+        class Aegis_NVG_IVAS_01_blk_F {
+            model = "nivas";
+            camo = "blk";
+            ti = "no";
+        };
+        class Aegis_NVG_IVAS_01_grn_F {
+            model = "nivas";
+            camo = "grn";
+            ti = "no";
+        };
+        class Aegis_NVG_IVAS_01_tan_F {
+            model = "nivas";
+            camo = "tan";
+            ti = "no";
+        };
+
+        // LP NVG (EF)
+        class EF_LPNVG {
+            model = "lpnvg";
+            camo = "blk";
+            ti = "no";
+        };
+        class EF_LPNVG_Tan {
+            model = "lpnvg";
+            camo = "tan";
+            ti = "no";
+        };
+        class EF_LPNVG_T {
+            model = "lpnvg";
+            camo = "blk";
+            ti = "yes";
+        };
+        class EF_LPNVG_T_Tan {
+            model = "lpnvg";
+            camo = "tan";
+            ti = "yes";
+        };
+
+        // Ti Goggles
+        class TiGoggles_RF {
+            model = "tigoggles";
+            camo = "blk";
+        };
+        class TiGoggles_grn_RF {
+            model = "tigoggles";
+            camo = "grn";
+        };
+        class TiGoggles_tan_RF {
+            model = "tigoggles";
+            camo = "tan";
         };
     };
 };

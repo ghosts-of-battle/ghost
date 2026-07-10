@@ -69,6 +69,12 @@
         scopeArsenal=2; \
         ACE_GForceCoef = 1;     
 
+#define MACRO_UNIFORM_COMMON \
+        author = QAUTHOR; \
+        scope = 2; \
+        scopeCurator = 2; \
+        scopeArsenal=2; \
+
 #define MACRO_ADDBACKPACK(BACKPACK,COUNT) \
     class _xx_##BACKPACK { \
         backpack = #BACKPACK; \
@@ -187,3 +193,9 @@
         ace_hearing_protection = 0.75; \
         ace_hearing_lowerVolume = 0; \
     }
+
+#define MACRO_ACE_HEARING \
+        ace_hearing_protection = 0.80; \
+        ace_hearing_lowerVolume = 0.60; \
+        ace_hearing_hasEHP = 1;
+

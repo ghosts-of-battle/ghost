@@ -8,7 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "ghost_main",
-            "ALIVE_splashscreen"
+            "ALiVE_splashscreen"
         };
         authorUrl = "https://www.ghostsofbattle.com/";
         skipWhenMissingDependencies = 1;

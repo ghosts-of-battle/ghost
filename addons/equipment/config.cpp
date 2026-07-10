@@ -16,18 +16,7 @@ class CfgPatches {
             QGVAR(Item_optic_AMSTI_khk),
             QGVAR(Item_optic_AMSTI_snd),
             QGVAR(Item_vest_rebreather),
-            QGVAR(Item_Wetsuit),
-            QGVAR(MOPP),
-            QGVAR(TOW),
-            QGVAR(AA),
-            QGVAR(javelin),
-            QGVAR(50cal),
-            QGVAR(252),
-            QGVAR(eng),
-            QGVAR(outlawHQ),
-            QGVAR(outlaw11),
-            QGVAR(outlaw12),
-            QGVAR(outlawmed)
+            QGVAR(Item_Wetsuit)
         };
         weapons[] = {
             QGVAR(xm157_prototype),
@@ -48,12 +37,11 @@ class CfgPatches {
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "A3_UI_F",
+            "A3_Ui_F",
             "cba_main",
             "cba_xeh",
             "ghost_main",
             "ghost_medbags",
-            "ghost_vs17",
             "ace_vector",
             "ace_fortify",
             "A3_Weapons_F",
@@ -76,4 +64,3 @@ class CfgFunctions {
 #include "RscInGameUI.hpp"
 #include "CfgMagazines.hpp"
 #include "ACEX_Fortify_Presets.hpp"
-
