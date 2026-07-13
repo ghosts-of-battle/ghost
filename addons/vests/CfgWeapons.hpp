@@ -70,162 +70,73 @@
         }; \
     };
 
+// Vanilla-defined plate carriers only. Aegis-defined variants live in
+// ghost_vests_aegis, Western Sahara ones in ghost_vests_ws.
+// Every class MUST restate its original parent: a parentless patch strips
+// the base class ("Updating base class X->") and breaks the vest.
 class CfgWeapons {
-    class ItemInfo;
-    class V_PlateCarrier1_mtp {
+    class ItemInfo; // defined for real in ghost_main (see its CfgWeapons.hpp)
+    class Vest_Camo_Base;
+    class Vest_NoCamo_Base;
+
+    class V_PlateCarrier1_rgr: Vest_NoCamo_Base {
         GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
     };
-    class V_PlateCarrier1_wdl {
+    class V_PlateCarrier1_blk: Vest_Camo_Base {
         GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
     };
-    class V_PlateCarrier1_tna_F {
+    class V_PlateCarrier1_rgr_noflag_F: V_PlateCarrier1_rgr {
         GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
     };
-    class V_lxWS_PlateCarrier1_desert {
+    class V_PlateCarrier1_tna_F: V_PlateCarrier1_blk {
         GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
     };
-    class V_PlateCarrier1_khk {
+    class V_PlateCarrier1_wdl: V_PlateCarrier1_blk {
         GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
     };
-    class V_PlateCarrier1_oli {
+    class V_PlateCarrier2_rgr: V_PlateCarrier1_rgr {
         GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
     };
-    class V_PlateCarrier1_rgr_noflag_F {
+    class V_PlateCarrier2_blk: V_PlateCarrier2_rgr {
         GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
     };
-    class V_PlateCarrier1_rgr {
+    class V_PlateCarrier2_rgr_noflag_F: V_PlateCarrier2_rgr {
         GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
     };
-    class V_PlateCarrier1_cbr {
+    class V_PlateCarrier2_tna_F: V_PlateCarrier2_blk {
         GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
     };
-    class V_PlateCarrier1_blk {
+    class V_PlateCarrier2_wdl: V_PlateCarrier2_blk {
         GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
     };
-    class V_PlateCarrier2_mtp {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class V_PlateCarrier2_wdl {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class V_PlateCarrier2_oli {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class V_PlateCarrier2_tna_F {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class V_lxWS_PlateCarrier2_desert {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class V_PlateCarrier2_khk {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class V_PlateCarrier2_rgr_noflag_F {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class V_PlateCarrier2_rgr {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class V_PlateCarrier2_cbr {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class V_PlateCarrier2_blk {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier2_alt_mtp {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier2_alt_oli {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier2_alt_wdl {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier2_alt_tna {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier2_alt_desert {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier2_alt_khk {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier2_alt_rgr {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier2_alt_cbr {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier2_alt_blk {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier_RF_mtp {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier_RF_wdl {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier_RF_tna {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier_RF_desert {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier_RF_khk {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier_RF_rgr {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier_RF_cbr {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier_RF_blk {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class Aegis_V_PlateCarrier_RF_oli {
-        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
-    };
-    class V_PlateCarrierGL_mtp {
+    class V_PlateCarrierGL_rgr: Vest_NoCamo_Base {
         GHOST_HEAVY_PLATE_CARRIER_ITEMINFO
     };
-    class V_PlateCarrierGL_wdl {
+    class V_PlateCarrierGL_blk: V_PlateCarrierGL_rgr {
         GHOST_HEAVY_PLATE_CARRIER_ITEMINFO
     };
-    class V_PlateCarrierGL_tna_F {
+    class V_PlateCarrierGL_mtp: V_PlateCarrierGL_rgr {
         GHOST_HEAVY_PLATE_CARRIER_ITEMINFO
     };
-    class V_lxWS_PlateCarrierGL_desert {
+    class V_PlateCarrierGL_tna_F: V_PlateCarrierGL_rgr {
         GHOST_HEAVY_PLATE_CARRIER_ITEMINFO
     };
-    class V_PlateCarrierGL_rgr {
+    class V_PlateCarrierGL_wdl: V_PlateCarrierGL_rgr {
         GHOST_HEAVY_PLATE_CARRIER_ITEMINFO
     };
-    class V_PlateCarrierGL_cbr {
+    class V_PlateCarrierSpec_rgr: Vest_NoCamo_Base {
         GHOST_HEAVY_PLATE_CARRIER_ITEMINFO
     };
-    class V_PlateCarrierGL_blk {
+    class V_PlateCarrierSpec_blk: V_PlateCarrierSpec_rgr {
         GHOST_HEAVY_PLATE_CARRIER_ITEMINFO
     };
-    class V_PlateCarrierSpec_mtp {
+    class V_PlateCarrierSpec_mtp: V_PlateCarrierSpec_rgr {
         GHOST_HEAVY_PLATE_CARRIER_ITEMINFO
     };
-    class V_PlateCarrierSpec_wdl {
+    class V_PlateCarrierSpec_tna_F: V_PlateCarrierSpec_rgr {
         GHOST_HEAVY_PLATE_CARRIER_ITEMINFO
     };
-    class V_lxWS_PlateCarrierSpec_desert {
-        GHOST_HEAVY_PLATE_CARRIER_ITEMINFO
-    };
-    class V_PlateCarrierSpec_rgr {
-        GHOST_HEAVY_PLATE_CARRIER_ITEMINFO
-    };
-    class V_PlateCarrierSpec_blk {
-        GHOST_HEAVY_PLATE_CARRIER_ITEMINFO
-    };
-    class V_PlateCarrierSpec_tna_F {
-        GHOST_HEAVY_PLATE_CARRIER_ITEMINFO
-    };
-    class V_PlateCarrierSpec_cbr {
+    class V_PlateCarrierSpec_wdl: V_PlateCarrierSpec_rgr {
         GHOST_HEAVY_PLATE_CARRIER_ITEMINFO
     };
 };

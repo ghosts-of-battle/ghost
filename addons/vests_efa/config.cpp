@@ -156,8 +156,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "ghost_main",
-            "EF_Marines",
-            "A3_EFA_characters_f_vests"
+            "A3_EFA_characters_f_Aegis"
         };
         skipWhenMissingDependencies = 1;
         authorUrl = "https://www.ghostsofbattle.com/";

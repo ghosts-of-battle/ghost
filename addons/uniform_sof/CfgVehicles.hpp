@@ -211,7 +211,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Hi-Cut Helmet (Green)";
+        displayName = "[Ghost] Hi-Cut Helmet (Green)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -227,7 +227,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Hi-Cut Helmet (Sand)";
+        displayName = "[Ghost] Hi-Cut Helmet (Sand)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -243,7 +243,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Hi-Cut Helmet (Black)";
+        displayName = "[Ghost] Hi-Cut Helmet (Black)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -259,7 +259,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Hi-Cut Helmet (Olive)";
+        displayName = "[Ghost] Hi-Cut Helmet (Olive)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -275,7 +275,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Enhanced Hi-Cut Helmet (Green)";
+        displayName = "[Ghost] Enhanced Hi-Cut Helmet (Green)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -291,7 +291,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Enhanced Hi-Cut Helmet (Sand)";
+        displayName = "[Ghost] Enhanced Hi-Cut Helmet (Sand)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -307,7 +307,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Enhanced Hi-Cut Helmet (Black)";
+        displayName = "[Ghost] Enhanced Hi-Cut Helmet (Black)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -323,7 +323,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Enhanced Hi-Cut Helmet (Olive)";
+        displayName = "[Ghost] Enhanced Hi-Cut Helmet (Olive)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -339,7 +339,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Hi-Cut Helmet (Cover, Green)";
+        displayName = "[Ghost] Hi-Cut Helmet (Cover, Green)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -355,7 +355,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Enhanced Hi-Cut Helmet (Cover, Green)";
+        displayName = "[Ghost] Enhanced Hi-Cut Helmet (Cover, Green)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -371,7 +371,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Hi-Cut Helmet (Cover, Green/Camo)";
+        displayName = "[Ghost] Hi-Cut Helmet (Cover, Green/Camo)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -387,7 +387,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Hi-Cut Helmet (Cover, MTP)";
+        displayName = "[Ghost] Hi-Cut Helmet (Cover, MTP)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -403,7 +403,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Enhanced Hi-Cut Helmet (Cover, MTP)";
+        displayName = "[Ghost] Enhanced Hi-Cut Helmet (Cover, MTP)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -419,7 +419,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Hi-Cut Helmet (Cover, MTP/Camo)";
+        displayName = "[Ghost] Hi-Cut Helmet (Cover, MTP/Camo)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -435,7 +435,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Hi-Cut Helmet (Cover, Tropic)";
+        displayName = "[Ghost] Hi-Cut Helmet (Cover, Tropic)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -451,7 +451,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Enhanced Hi-Cut Helmet (Cover, Tropic)";
+        displayName = "[Ghost] Enhanced Hi-Cut Helmet (Cover, Tropic)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -467,7 +467,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Hi-Cut Helmet (Cover, Woodland)";
+        displayName = "[Ghost] Hi-Cut Helmet (Cover, Woodland)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -483,7 +483,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Enhanced Hi-Cut Helmet (Cover, Woodland)";
+        displayName = "[Ghost] Enhanced Hi-Cut Helmet (Cover, Woodland)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -499,7 +499,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Hi-Cut Helmet (Cover, USMC Woodland)";
+        displayName = "[Ghost] Hi-Cut Helmet (Cover, USMC Woodland)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -515,7 +515,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Enhanced Hi-Cut Helmet (Cover, USMC Woodland)";
+        displayName = "[Ghost] Enhanced Hi-Cut Helmet (Cover, USMC Woodland)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -531,7 +531,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Hi-Cut Helmet (Cover, USMC Desert)";
+        displayName = "[Ghost] Hi-Cut Helmet (Cover, USMC Desert)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -547,7 +547,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Enhanced Hi-Cut Helmet (Cover, USMC Desert)";
+        displayName = "[Ghost] Enhanced Hi-Cut Helmet (Cover, USMC Desert)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -563,7 +563,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Hi-Cut Helmet (Cover, USN Woodland)";
+        displayName = "[Ghost] Hi-Cut Helmet (Cover, USN Woodland)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -579,7 +579,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Enhanced Hi-Cut Helmet (Cover, USN Woodland)";
+        displayName = "[Ghost] Enhanced Hi-Cut Helmet (Cover, USN Woodland)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -595,7 +595,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Baseball Cap (Green)";
+        displayName = "[Ghost] Baseball Cap (Green)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -611,7 +611,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Baseball Cap (Headset, Green)";
+        displayName = "[Ghost] Baseball Cap (Headset, Green)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -627,7 +627,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Baseball Cap (Khaki)";
+        displayName = "[Ghost] Baseball Cap (Khaki)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -643,7 +643,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Baseball Cap (Headset, Khaki)";
+        displayName = "[Ghost] Baseball Cap (Headset, Khaki)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -659,7 +659,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Baseball Cap (MTP)";
+        displayName = "[Ghost] Baseball Cap (MTP)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -675,7 +675,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Baseball Cap (Headset, MTP)";
+        displayName = "[Ghost] Baseball Cap (Headset, MTP)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -691,7 +691,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Baseball Cap (Headset, Tropic)";
+        displayName = "[Ghost] Baseball Cap (Headset, Tropic)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -707,7 +707,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Baseball Cap (Headset, Woodland)";
+        displayName = "[Ghost] Baseball Cap (Headset, Woodland)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -723,7 +723,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Hi-Cut Helmet (Cover, OCP)";
+        displayName = "[Ghost] Hi-Cut Helmet (Cover, OCP)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -739,7 +739,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Enhanced Hi-Cut Helmet (Cover, OCP)";
+        displayName = "[Ghost] Enhanced Hi-Cut Helmet (Cover, OCP)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -755,7 +755,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Hi-Cut Helmet (Cover, OCP/Camo)";
+        displayName = "[Ghost] Hi-Cut Helmet (Cover, OCP/Camo)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Headgear";
         vehicleClass = "ItemsHeadgear";
@@ -773,7 +773,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Light Carrier Vest (Green)";
+        displayName = "[Ghost] Light Carrier Vest (Green)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Vests";
         vehicleClass = "ItemsVest";
@@ -789,7 +789,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Light Carrier Vest (Green, No Flag)";
+        displayName = "[Ghost] Light Carrier Vest (Green, No Flag)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Vests";
         vehicleClass = "ItemsVest";
@@ -805,7 +805,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Light Carrier Vest (MTP)";
+        displayName = "[Ghost] Light Carrier Vest (MTP)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Vests";
         vehicleClass = "ItemsVest";
@@ -821,7 +821,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Light Carrier Vest (Tropic)";
+        displayName = "[Ghost] Light Carrier Vest (Tropic)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Vests";
         vehicleClass = "ItemsVest";
@@ -837,7 +837,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Light Carrier Vest (Woodland)";
+        displayName = "[Ghost] Light Carrier Vest (Woodland)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Vests";
         vehicleClass = "ItemsVest";
@@ -853,7 +853,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Light Carrier Vest (OCP)";
+        displayName = "[Ghost] Light Carrier Vest (OCP)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Vests";
         vehicleClass = "ItemsVest";
@@ -871,7 +871,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Special Fatigues (Green)";
+        displayName = "[Ghost] Special Fatigues (Green)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -887,7 +887,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Special Fatigues (Green, Rolled-up)";
+        displayName = "[Ghost] Special Fatigues (Green, Rolled-up)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -903,7 +903,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Special Fatigues (MTP)";
+        displayName = "[Ghost] Special Fatigues (MTP)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -919,7 +919,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Special Fatigues (MTP, Rolled-up)";
+        displayName = "[Ghost] Special Fatigues (MTP, Rolled-up)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -935,7 +935,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Special Fatigues (Tropic)";
+        displayName = "[Ghost] Special Fatigues (Tropic)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -951,7 +951,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Special Fatigues (Tropic, Rolled-up)";
+        displayName = "[Ghost] Special Fatigues (Tropic, Rolled-up)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -967,7 +967,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Special Fatigues (Woodland)";
+        displayName = "[Ghost] Special Fatigues (Woodland)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -983,7 +983,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Special Fatigues (Woodland, Rolled-up)";
+        displayName = "[Ghost] Special Fatigues (Woodland, Rolled-up)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -999,7 +999,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Special Fatigues (USMC Woodland)";
+        displayName = "[Ghost] Special Fatigues (USMC Woodland)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -1015,7 +1015,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Special Fatigues (USMC Woodland, Rolled-up)";
+        displayName = "[Ghost] Special Fatigues (USMC Woodland, Rolled-up)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -1031,7 +1031,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Special Fatigues (USMC Desert)";
+        displayName = "[Ghost] Special Fatigues (USMC Desert)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -1047,7 +1047,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Special Fatigues (USMC Desert, Rolled-up)";
+        displayName = "[Ghost] Special Fatigues (USMC Desert, Rolled-up)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -1063,7 +1063,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Special Fatigues (USN Woodland)";
+        displayName = "[Ghost] Special Fatigues (USN Woodland)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -1079,7 +1079,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Special Fatigues (USN Woodland, Rolled-up)";
+        displayName = "[Ghost] Special Fatigues (USN Woodland, Rolled-up)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -1095,7 +1095,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Special Fatigues (OCP)";
+        displayName = "[Ghost] Special Fatigues (OCP)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -1111,7 +1111,7 @@ class CfgVehicles {
         author = QAUTHOR;
         scope = 2;
         scopeCurator = 2;
-        displayName = "Unit [Ghost] Special Fatigues (OCP, Rolled-Up)";
+        displayName = "[Ghost] Special Fatigues (OCP, Rolled-Up)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_SOF_Uniforms";
         vehicleClass = "ItemsUniform";

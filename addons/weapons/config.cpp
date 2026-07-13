@@ -7,11 +7,13 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "ghost_main"
+            "ghost_main",
+            "a3_weapons_f",
+            "A3_Weapons_F_Mark_Machineguns_M200"
         };
         authorUrl = "https://www.ghostsofbattle.com/";
         author = QAUTHOR;
-        authors[] = {""};
+        authors[] = {QAUTHOR};
         VERSION_CONFIG;
     };
 };

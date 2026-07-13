@@ -8,7 +8,8 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "cba_main",
-            "diwako_dui_main"
+            "diwako_dui_main",
+            "A3_Weapons_F" // defines ItemCore, parent of our root ItemInfo definition
         };
         author = "Ghosts of Battle";
         VERSION_CONFIG;
@@ -16,5 +17,6 @@ class CfgPatches {
 };
 
 #include "CfgEden.hpp"
+#include "CfgWeapons.hpp"
 #include "CfgModuleCategories.hpp"
 #include "DisplayEden.hpp"

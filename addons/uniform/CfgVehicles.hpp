@@ -71,7 +71,7 @@ class CfgVehicles {
     class GVAR(Item_U_B_JSOC_StealthUniform_F): Item_Base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
-        displayName = "Unit [Ghost] JSOC Stealth Uniform";
+        displayName = "[Ghost] JSOC Stealth Uniform";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -86,7 +86,7 @@ class CfgVehicles {
     class GVAR(Item_U_B_JSOC_StealthUniform_RolledUp_F): Item_Base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
-        displayName = "Unit [Ghost] JSOC Stealth Uniform (Rolled Up)";
+        displayName = "[Ghost] JSOC Stealth Uniform (Rolled Up)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -102,7 +102,7 @@ class CfgVehicles {
     class GVAR(Item_U_B_D_JSOC_StealthUniform_F): Item_Base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
-        displayName = "Unit [Ghost] JSOC Stealth Uniform (Desert)";
+        displayName = "[Ghost] JSOC Stealth Uniform (Desert)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -117,7 +117,7 @@ class CfgVehicles {
     class GVAR(Item_U_B_D_JSOC_StealthUniform_RolledUp_F): Item_Base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
-        displayName = "Unit [Ghost] JSOC Stealth Uniform (Desert, Rolled Up)";
+        displayName = "[Ghost] JSOC Stealth Uniform (Desert, Rolled Up)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -133,7 +133,7 @@ class CfgVehicles {
     class GVAR(Item_U_B_T_JSOC_StealthUniform_F): Item_Base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
-        displayName = "Unit [Ghost] JSOC Stealth Uniform (Tropic)";
+        displayName = "[Ghost] JSOC Stealth Uniform (Tropic)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -148,7 +148,7 @@ class CfgVehicles {
     class GVAR(Item_U_B_T_JSOC_StealthUniform_RolledUp_F): Item_Base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
-        displayName = "Unit [Ghost] JSOC Stealth Uniform (Tropic, Rolled Up)";
+        displayName = "[Ghost] JSOC Stealth Uniform (Tropic, Rolled Up)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -164,7 +164,7 @@ class CfgVehicles {
     class GVAR(Item_U_B_W_JSOC_StealthUniform_F): Item_Base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
-        displayName = "Unit [Ghost] JSOC Stealth Uniform (Woodland)";
+        displayName = "[Ghost] JSOC Stealth Uniform (Woodland)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -179,7 +179,7 @@ class CfgVehicles {
     class GVAR(Item_U_B_W_JSOC_StealthUniform_RolledUp_F): Item_Base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
-        displayName = "Unit [Ghost] JSOC Stealth Uniform (Woodland, Rolled Up)";
+        displayName = "[Ghost] JSOC Stealth Uniform (Woodland, Rolled Up)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -195,7 +195,7 @@ class CfgVehicles {
     class GVAR(Item_U_B_OCP_JSOC_StealthUniform_F): Item_Base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
-        displayName = "Unit [Ghost] JSOC Stealth Uniform (OCP)";
+        displayName = "[Ghost] JSOC Stealth Uniform (OCP)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -210,7 +210,7 @@ class CfgVehicles {
     class GVAR(Item_U_B_OCP_JSOC_StealthUniform_RolledUp_F): Item_Base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
-        displayName = "Unit [Ghost] JSOC Stealth Uniform (OCP, Rolled Up)";
+        displayName = "[Ghost] JSOC Stealth Uniform (OCP, Rolled Up)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -226,7 +226,7 @@ class CfgVehicles {
     class GVAR(Item_U_B_Snow_JSOC_StealthUniform_F): Item_Base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
-        displayName = "Unit [Ghost] JSOC Stealth Uniform (Snow)";
+        displayName = "[Ghost] JSOC Stealth Uniform (Snow)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_Uniforms";
         vehicleClass = "ItemsUniform";
@@ -241,7 +241,7 @@ class CfgVehicles {
     class GVAR(Item_U_B_Snow_JSOC_StealthUniform_RolledUp_F): Item_Base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
-        displayName = "Unit [Ghost] JSOC Stealth Uniform (Snow, Rolled Up)";
+        displayName = "[Ghost] JSOC Stealth Uniform (Snow, Rolled Up)";
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_Uniforms";
         vehicleClass = "ItemsUniform";

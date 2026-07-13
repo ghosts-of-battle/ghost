@@ -7,7 +7,10 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "ghost_main"
+            "ghost_main",
+            "A3_Characters_F",
+            "A3_Characters_F_Exp_Vests",
+            "A3_Characters_F_Enoch_Vests"
         };
         authorUrl = "https://www.ghostsofbattle.com/";
         author = QAUTHOR;
