@@ -8,7 +8,7 @@ class CfgPatches {
         requiredAddons[] = {
             "cba_diagnostic"
         };
-        author = "Ghosts of Battle";
+        author = QAUTHOR;
         VERSION_CONFIG;
     };
 };

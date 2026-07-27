@@ -1,7 +1,7 @@
 class CfgMarkerColors {
     class Default;
     class ColorPink: Default {
-        name = CSTRING(ColorPink);
+        name = "Pink";
         scope = 2;
         color[] = {1, 0, 1, 1};
     };
@@ -20,7 +20,7 @@ class CfgMarkerColors {
         color[] = {0.596,1,0.596,1};
     };
     class ColorUNKNOWN: Default {
-        name = CSTRING(ColorYellow);
+        name = "Yellow";
         color[] = {1,1,0.502,1};
     };
 };

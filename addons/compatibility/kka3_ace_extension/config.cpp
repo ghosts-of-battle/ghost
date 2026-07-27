@@ -10,7 +10,7 @@ class CfgPatches {
             "KKA3_ACE_Extension_Anim"
         };
         skipWhenMissingDependencies = 1;
-        author = "Ghosts of Battle";
+        author = QAUTHOR;
         authors[] = {"veteran29"};
         VERSION_CONFIG;
     };

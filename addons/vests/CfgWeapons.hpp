@@ -139,6 +139,262 @@ class CfgWeapons {
     class V_PlateCarrierSpec_wdl: V_PlateCarrierSpec_rgr {
         GHOST_HEAVY_PLATE_CARRIER_ITEMINFO
     };
+
+    // ===== ACP retextures (textures from Ample Camo Pack, author Seb) =====
+    class GVAR(V_PlateCarrier1_ocp): V_PlateCarrier1_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier Rig (OCP)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_1_ocp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_ocp_co.paa)};
+    };
+    class GVAR(V_PlateCarrier1_mtp): V_PlateCarrier1_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier Rig (MTP)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_1_mtp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mtp_co.paa)};
+    };
+    class GVAR(V_PlateCarrier1_mcam): V_PlateCarrier1_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier Rig (Multicam)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_1_mcam.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mcam_co.paa)};
+    };
+    class GVAR(V_PlateCarrier1_mcam_wdl): V_PlateCarrier1_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier Rig (Multicam Woodland)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_1_mcam_wdl.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mcam_wdl_co.paa)};
+    };
+    class GVAR(V_PlateCarrier1_mcam_snow): V_PlateCarrier1_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier Rig (Multicam Snow)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_1_mcam_snow.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mcam_snow_co.paa)};
+    };
+    class GVAR(V_PlateCarrier2_ocp): V_PlateCarrier2_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier Lite (OCP)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_2_ocp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_ocp_co.paa)};
+    };
+    class GVAR(V_PlateCarrier2_mtp): V_PlateCarrier2_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier Lite (MTP)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_2_mtp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mtp_co.paa)};
+    };
+    class GVAR(V_PlateCarrier2_mcam): V_PlateCarrier2_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier Lite (Multicam)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_2_mcam.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mcam_co.paa)};
+    };
+    class GVAR(V_PlateCarrier2_mcam_wdl): V_PlateCarrier2_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier Lite (Multicam Woodland)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_2_mcam_wdl.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mcam_wdl_co.paa)};
+    };
+    class GVAR(V_PlateCarrier2_mcam_snow): V_PlateCarrier2_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier Lite (Multicam Snow)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_2_mcam_snow.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mcam_snow_co.paa)};
+    };
+    class GVAR(V_PlateCarrierGL_ocp): V_PlateCarrierGL_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier GL Rig (OCP)";
+        picture = QPATHTOF(data\ui\icon_carrier_gl_rig_ocp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrier_gl_rig_ocp.paa)};
+    };
+    class GVAR(V_PlateCarrierGL_mtp): V_PlateCarrierGL_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier GL Rig (MTP)";
+        picture = QPATHTOF(data\ui\icon_carrier_gl_rig_mtp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrier_gl_rig_mtp.paa)};
+    };
+    class GVAR(V_PlateCarrierGL_mcam): V_PlateCarrierGL_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier GL Rig (Multicam)";
+        picture = QPATHTOF(data\ui\icon_carrier_gl_rig_mcam.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrier_gl_rig_mcam.paa)};
+    };
+    class GVAR(V_PlateCarrierGL_mcam_wdl): V_PlateCarrierGL_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier GL Rig (Multicam Woodland)";
+        picture = QPATHTOF(data\ui\icon_carrier_gl_rig_mcam_wdl.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrier_gl_rig_mcam_wdl.paa)};
+    };
+    class GVAR(V_PlateCarrierGL_mcam_snow): V_PlateCarrierGL_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier GL Rig (Multicam Snow)";
+        picture = QPATHTOF(data\ui\icon_carrier_gl_rig_mcam_snow.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrier_gl_rig_mcam_snow.paa)};
+    };
+    class GVAR(V_PlateCarrierSpec_ocp): V_PlateCarrierSpec_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier Special Rig (OCP)";
+        picture = QPATHTOF(data\ui\icon_carrier_spec_rig_ocp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrier_gl_rig_ocp.paa)};
+    };
+    class GVAR(V_PlateCarrierSpec_mtp): V_PlateCarrierSpec_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier Special Rig (MTP)";
+        picture = QPATHTOF(data\ui\icon_carrier_spec_rig_mtp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrier_gl_rig_mtp.paa)};
+    };
+    class GVAR(V_PlateCarrierSpec_mcam): V_PlateCarrierSpec_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier Special Rig (Multicam)";
+        picture = QPATHTOF(data\ui\icon_carrier_spec_rig_mcam.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrier_gl_rig_mcam.paa)};
+    };
+    class GVAR(V_PlateCarrierSpec_mcam_wdl): V_PlateCarrierSpec_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier Special Rig (Multicam Woodland)";
+        picture = QPATHTOF(data\ui\icon_carrier_spec_rig_mcam_wdl.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrier_gl_rig_mcam_wdl.paa)};
+    };
+    class GVAR(V_PlateCarrierSpec_mcam_snow): V_PlateCarrierSpec_blk {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Carrier Special Rig (Multicam Snow)";
+        picture = QPATHTOF(data\ui\icon_carrier_spec_rig_mcam_snow.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrier_gl_rig_mcam_snow.paa)};
+    };
+
+    // ===== CTRG plate carriers (share PlateCarrier1/2 UV; ACP vests texture) =====
+    class V_PlateCarrierL_CTRG;
+    class V_PlateCarrierH_CTRG;
+    class GVAR(V_PlateCarrierL_CTRG_ocp): V_PlateCarrierL_CTRG {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] CTRG Plate Carrier Rig (Light, OCP)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_1_ocp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_ocp_co.paa)};
+        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
+    };
+    class GVAR(V_PlateCarrierL_CTRG_mtp): V_PlateCarrierL_CTRG {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] CTRG Plate Carrier Rig (Light, MTP)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_1_mtp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mtp_co.paa)};
+        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
+    };
+    class GVAR(V_PlateCarrierL_CTRG_mcam): V_PlateCarrierL_CTRG {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] CTRG Plate Carrier Rig (Light, Multicam)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_1_mcam.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mcam_co.paa)};
+        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
+    };
+    class GVAR(V_PlateCarrierL_CTRG_mcam_wdl): V_PlateCarrierL_CTRG {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] CTRG Plate Carrier Rig (Light, Multicam Woodland)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_1_mcam_wdl.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mcam_wdl_co.paa)};
+        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
+    };
+    class GVAR(V_PlateCarrierL_CTRG_mcam_snow): V_PlateCarrierL_CTRG {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] CTRG Plate Carrier Rig (Light, Multicam Snow)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_1_mcam_snow.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mcam_snow_co.paa)};
+        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
+    };
+    class GVAR(V_PlateCarrierH_CTRG_ocp): V_PlateCarrierH_CTRG {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] CTRG Plate Carrier Rig (Heavy, OCP)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_2_ocp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_ocp_co.paa)};
+        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
+    };
+    class GVAR(V_PlateCarrierH_CTRG_mtp): V_PlateCarrierH_CTRG {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] CTRG Plate Carrier Rig (Heavy, MTP)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_2_mtp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mtp_co.paa)};
+        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
+    };
+    class GVAR(V_PlateCarrierH_CTRG_mcam): V_PlateCarrierH_CTRG {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] CTRG Plate Carrier Rig (Heavy, Multicam)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_2_mcam.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mcam_co.paa)};
+        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
+    };
+    class GVAR(V_PlateCarrierH_CTRG_mcam_wdl): V_PlateCarrierH_CTRG {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] CTRG Plate Carrier Rig (Heavy, Multicam Woodland)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_2_mcam_wdl.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mcam_wdl_co.paa)};
+        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
+    };
+    class GVAR(V_PlateCarrierH_CTRG_mcam_snow): V_PlateCarrierH_CTRG {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] CTRG Plate Carrier Rig (Heavy, Multicam Snow)";
+        picture = QPATHTOF(data\ui\icon_v_plate_carrier_2_mcam_snow.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mcam_snow_co.paa)};
+        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
+    };
 };
 
 #undef GHOST_STANDARD_PLATE_CARRIER_ITEMINFO

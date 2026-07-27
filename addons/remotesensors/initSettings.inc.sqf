@@ -3,7 +3,7 @@
     QGVAR(enabled),
     "CHECKBOX",
     [LSTRING(Enabled), LSTRING(Enabled_Description)],
-    LSTRING(DisplayName),
+    ["Ghosts of Battle", LSTRING(DisplayName)],
     true,
     true,
     {

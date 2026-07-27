@@ -795,6 +795,58 @@ class CfgWeapons {
         displayName = "[Ghost] Modular Carrier Combat Rig (Olive)";
         GHOST_STANDARD_VEST_ITEMINFO
     };
+
+    // ===== OCP retextures (textures from Ample Camo Pack, author Seb) =====
+    class GVAR(JCA_V_CarrierRigKBT_01_combat_ocp_F): GVAR(JCA_V_CarrierRigKBT_01_combat_black_F) {
+        displayName = "[Ghost] Modular Carrier Combat Rig (OCP)";
+        picture = QPATHTOF(data\ui\icon_carrierrigkbt_01_ocp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrierrigkbt_01_us_ocp_co.paa)};
+    };
+    class GVAR(JCA_V_CarrierRigKBT_01_command_ocp_F): GVAR(JCA_V_CarrierRigKBT_01_command_black_F) {
+        displayName = "[Ghost] Modular Carrier Command Rig (OCP)";
+        picture = QPATHTOF(data\ui\icon_carrierrigkbt_01_ocp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrierrigkbt_01_us_ocp_co.paa)};
+    };
+    class GVAR(JCA_V_CarrierRigKBT_01_compact_ocp_F): GVAR(JCA_V_CarrierRigKBT_01_compact_MTP_alpine_F) {
+        displayName = "[Ghost] Modular Carrier Compact Vest (OCP)";
+        picture = QPATHTOF(data\ui\icon_carrierrigkbt_01_compact_ocp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrierrigkbt_01_us_ocp_co.paa)};
+    };
+    class GVAR(JCA_V_CarrierRigKBT_01_CQB_ocp_F): GVAR(JCA_V_CarrierRigKBT_01_CQB_black_F) {
+        displayName = "[Ghost] Modular Carrier CQB Rig (OCP)";
+        picture = QPATHTOF(data\ui\icon_carrierrigkbt_01_cqb_ocp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrierrigkbt_01_us_ocp_co.paa)};
+    };
+    class GVAR(JCA_V_CarrierRigKBT_01_crew_ocp_F): GVAR(JCA_V_CarrierRigKBT_01_crew_black_F) {
+        displayName = "[Ghost] Modular Carrier Crew Vest (OCP)";
+        picture = QPATHTOF(data\ui\icon_carrierrigkbt_01_crew_ocp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrierrigkbt_01_us_ocp_co.paa)};
+    };
+    class GVAR(JCA_V_CarrierRigKBT_01_heavy_ocp_F): GVAR(JCA_V_CarrierRigKBT_01_heavy_MTP_alpine_F) {
+        displayName = "[Ghost] Modular Carrier GL Rig (OCP)";
+        picture = QPATHTOF(data\ui\icon_carrierrigkbt_01_heavy_ocp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrierrigkbt_01_us_ocp_co.paa)};
+    };
+    class GVAR(JCA_V_CarrierRigKBT_01_holster_ocp_F): GVAR(JCA_V_CarrierRigKBT_01_holster_black_F) {
+        displayName = "[Ghost] Modular Carrier Holster (OCP)";
+        picture = QPATHTOF(data\ui\icon_carrierrigkbt_01_holster_ocp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrierrigkbt_01_us_ocp_co.paa)};
+    };
+    class GVAR(JCA_V_CarrierRigKBT_01_light_ocp_F): GVAR(JCA_V_CarrierRigKBT_01_light_black_F) {
+        displayName = "[Ghost] Modular Carrier Lite (OCP)";
+        picture = QPATHTOF(data\ui\icon_carrierrigkbt_01_light_ocp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrierrigkbt_01_us_ocp_co.paa)};
+    };
+    class GVAR(JCA_V_CarrierRigKBT_01_recon_ocp_F): GVAR(JCA_V_CarrierRigKBT_01_recon_MTP_alpine_F) {
+        displayName = "[Ghost] Modular Carrier Recon Rig (OCP)";
+        picture = QPATHTOF(data\ui\icon_carrierrigkbt_01_recon_ocp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrierrigkbt_01_us_ocp_co.paa)};
+    };
+    class GVAR(JCA_V_CarrierRigKBT_01_tactical_ocp_F): GVAR(JCA_V_CarrierRigKBT_01_tactical_black_F) {
+        displayName = "[Ghost] Modular Carrier Tactical Rig (OCP)";
+        picture = QPATHTOF(data\ui\icon_carrierrigkbt_01_tactical_ocp.paa);
+        hiddenSelectionsTextures[] = {QPATHTOF(data\carrierrigkbt_01_us_ocp_co.paa)};
+    };
 };
 
 #undef GHOST_STANDARD_VEST_ITEMINFO

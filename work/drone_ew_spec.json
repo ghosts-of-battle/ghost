@@ -1,0 +1,123 @@
+{
+  "$schema_note": "Build brief for Claude Code. Both addons for Arma 3. Everything is a 3DEN module variable — nothing hardcoded. Status: fully specced, nothing built yet.",
+  "project": "Drone + EW Suite",
+  "author": "Ghosts of Battle (GhostFA)",
+  "target": "Arma 3 (ALiVE battlefield, self-hosted Pelican dedicated server)",
+  "dependencies": {
+    "companion_mod": "Drongo's Drone Tweaks (DDT)",
+    "ew_requires": "TFAR (Task Force Arrowhead Radio, TeamSpeak plugin)",
+    "engine_helpers": ["BIS_fnc_randomPos", "flyInHeight (AGL)", "SAD waypoints", "createVehicle/createVehicleCrew"]
+  },
+  "layering": {
+    "ddt_layer": "Ground AI carrying drones auto-launch recon/FPV/grenade drones on contact. DDT owns behavior: kamikaze dive-attack, Infoshare datalink, small-drone stealth. NOT built here.",
+    "alive_drones_layer": "Standalone patrol UAVs across the TAOR. Self-sufficient, NO hard DDT dependency. DDT Infoshare is a bonus bridge IF our spawned UAVs get adopted (unverified — check DDT readme/test).",
+    "ew_layer": "OPFOR-side electronic-warfare zones that jam and hunt BLUFOR radio traffic."
+  },
+
+  "addons": [
+    {
+      "name": "alive_drones",
+      "summary": "One controller module. Spawns standalone patrol UAVs across a TAOR area marker.",
+      "modules": ["controller"],
+      "drone_types": [
+        { "id": "anti_air",       "cap_default": 2, "grouping": "single" },
+        { "id": "anti_armor",     "cap_default": 4, "grouping": "group_on_chance" },
+        { "id": "anti_personnel", "cap_default": 4, "grouping": "group_on_chance" },
+        { "id": "loiter_fixed",   "cap_default": 1, "grouping": "single" },
+        { "id": "loiter_rotor",   "cap_default": 1, "grouping": "single" },
+        { "id": "recon",          "cap_default": 3, "grouping": "single" }
+      ],
+      "grouping_rules": "Only anti_armor and anti_personnel ever group. Other four = 1 airframe per group (cap == airframe count).",
+      "module_variables": {
+        "per_type": {
+          "class_list": { "type": "string_csv", "note": "comma-separated classnames; selectRandom one per spawn" },
+          "cap":        { "type": "dropdown", "range": [1, 10], "counts": "GROUPS" }
+        },
+        "anti_armor_and_anti_personnel_only": {
+          "group_size":   { "type": "number", "note": "airframes per group; set per mission" },
+          "group_chance": { "type": "percent", "note": "odds of spawning as a group vs single" }
+        },
+        "global": {
+          "taor_marker":            { "type": "string_csv", "note": "one or several marker names" },
+          "altitude_min":           { "type": "number", "unit": "m AGL (flyInHeight)", "note": "low for rotor" },
+          "altitude_max":           { "type": "number", "unit": "m AGL (flyInHeight)", "note": "high for fixed-wing" },
+          "side":                   { "type": "enum", "values": ["OPFOR", "BLUFOR", "INDEP"] },
+          "global_airframe_ceiling": { "type": "number", "note": "HARD server-safety cap; counts AIRFRAMES across ALL types; SHARED with EW-spawned drones" },
+          "spawn_interval":         { "type": "number", "unit": "seconds", "note": "trickle-spawn cadence" },
+          "drone_lifetime":         { "type": "number", "unit": "minutes", "note": "0 = off" },
+          "debug":                  { "type": "boolean", "default": false }
+        }
+      },
+      "spawning": {
+        "position": "BIS_fnc_randomPos inside the TAOR marker.",
+        "anchor_then_loiter_local": "Roll ONE anchor per drone in the marker, then generate its SAD waypoints within ~300-800m of that anchor. Fleet spreads across the zone; each drone works a local patch. Fixes km-scale markers leaving drones in permanent transit.",
+        "trickle_spawn": "One drone every spawn_interval up to cap; backfill slots on the same interval. No startup spike."
+      },
+      "safety_and_churn": {
+        "caps_count_groups": true,
+        "ceiling_counts_airframes": true,
+        "stuck_drone_watchdog": "Any drone grounded/motionless for X sec -> despawn + replace, so bugged airframes stop holding cap slots.",
+        "lifetime": "FLAT lifetime + finish-the-current-fight grace (NO reset — resets make effective drones immortal and kill churn) + small random jitter (avoid synchronized age-outs). On expiry: break patrol -> fly to nearest map edge -> despawn -> free slot.",
+        "wreck_cleanup": "Handled by existing cleanup path on user's end."
+      },
+      "debug": "Toggle drops a SIDE-COLORED map marker on every spawned drone (confirms spawn + tracks position); cleans up on death via the killed eventhandler. Zero cost when off."
+    },
+
+    {
+      "name": "electronic_war_zones",
+      "summary": "OPFOR-side EW layer. Hunts BLUFOR ONLY. Two zone types spawn randomly against TAOR markers. Detects PLAYER transmissions only (AI don't key TFAR) — a comms-discipline mechanic.",
+      "requires": "TFAR",
+      "hunts": "BLUFOR only (OnSpeak filtered to BLUFOR transmitters)",
+      "zone_types": {
+        "type_1_jammer": {
+          "radius": { "random_range_m": [100, 2000] },
+          "mechanism": "For each BLUFOR player in radius: player setVariable [\"tf_unable_to_use_radio\", true]; restore on leave / emitter death.",
+          "reuse": "Existing RadioJammerTFAR prior art — do not reinvent."
+        },
+        "type_2_detector_response": {
+          "detection": "TFAR OnSpeak event via TFAR_fnc_addEventHandler, filtered to BLUFOR.",
+          "on_detection": "Spawn response package 2000m out, 1000m up; vector to transmitter's grid.",
+          "response_package": {
+            "variable": true,
+            "fields_per_role": ["count", "class_list (csv, random-pick)"],
+            "default": "2x anti_personnel + 1x anti_vehicle"
+          }
+        }
+      },
+      "recon_feed": {
+        "note": "Recon drones (Addon 1) carry the OnSpeak detector -> mobile DF hunters. A recon detection dispatches the response package; coverage moves with recon patrols.",
+        "cooldown": "Per-transmitter cooldown throttles repeat waves AND de-duplicates when a recon bird + a ground zone hear the same key-up."
+      },
+      "radio_exemption": {
+        "module_field": "exempt_radio_classnames (comma-separated)",
+        "default": "tf_rf7800str",
+        "mechanism": "OnSpeak fires on transmitter's own client (radio state local). Read active radio via TFAR_fnc_activeSwRadio / TFAR_fnc_activeLrRadio. If class is in exempt list, RETURN before the client->server remoteExec that spawns the package.",
+        "blufor_radios": [
+          { "name": "RF-7800S-TR (squad)",     "class": "tf_rf7800str", "range_km": 2,  "status": "EXEMPT (safe)" },
+          { "name": "AN/PRC-152 (commander)",  "class": "tf_anprc152",  "range_km": 5,  "status": "hunted" },
+          { "name": "RT-1523G (manpack)",      "class": "tf_rt1523g",   "range_km": 20, "status": "hunted" },
+          { "name": "AN/ARC-210 (airborne)",   "class": "tf_anarc210",  "range_km": 40, "status": "hunted" }
+        ],
+        "model": "Detectability scales with transmit power: quiet squad net, long-range sets light you up."
+      },
+      "tfar_reference": {
+        "jamming_lever": { "var": "tf_unable_to_use_radio", "locality": "Client" },
+        "range_tweaks": ["tf_sendingDistanceMultiplicator", "tf_receivingDistanceMultiplicator"],
+        "detection_event": "OnSpeak (TFAR_fnc_addEventHandler) -> gives unit + volume",
+        "active_radio_read": ["TFAR_fnc_activeSwRadio", "TFAR_fnc_activeLrRadio"]
+      },
+      "integration_safety": {
+        "shares_ceiling": "EW-spawned drones count against Addon 1's global_airframe_ceiling.",
+        "networking": "Detection -> spawn requires a client->server remoteExec."
+      }
+    }
+  ],
+
+  "open_to_verify": [
+    "DDT <-> our UAVs: whether a script-spawned standalone UAV is adopted by DDT's Infoshare. Verify in DDT readme / testing. Bonus only, NOT a dependency.",
+    "Group size / chance % for anti_armor & anti_personnel: left as module fields, set per mission.",
+    "TAOR marker field: one or several — accept either."
+  ],
+
+  "build_order_suggestion": "Build alive_drones first (the EW addon leans on its recon drones and shares its airframe ceiling)."
+}

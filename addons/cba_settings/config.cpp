@@ -7,7 +7,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_settings", "ace_hearing"};
-        author = "Ghost";
+        author = QAUTHOR;
         authors[] = {"commy2"};
         authorUrl = "https://ghostsofbattle.com";
         VERSION_CONFIG;

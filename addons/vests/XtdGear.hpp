@@ -143,7 +143,23 @@ class XtdGearModels {
             options[] = {"camo"};
             class camo {
                 alwaysSelectable = 1;
-                values[] = {"Black", "Coyote", "Khaki", "Olive", "Ranger", "RangerNF", "Desert", "Tropic", "Woodland", "MTP"};
+                values[] = {"Black", "Coyote", "Khaki", "Olive", "Ranger", "RangerNF", "Desert", "Tropic", "Woodland", "MTP", "OCP", "Multicam", "MC_Wdl", "MC_Snow"};
+                class OCP {
+                    label = "OCP";
+                    image = "z\aceax\addons\gearinfo\data\camo\ocp.paa";
+                };
+                class Multicam {
+                    label = "Multicam";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class MC_Wdl {
+                    label = "MC-Wdl";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+                class MC_Snow {
+                    label = "MC-Snow";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
                 class Black {
                     label = "Black";
                     image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
@@ -191,7 +207,23 @@ class XtdGearModels {
             options[] = {"camo", "style"};
             class camo {
                 alwaysSelectable = 1;
-                values[] = {"Black", "Coyote", "Khaki", "Olive", "Ranger", "RangerNF", "Desert", "Tropic", "Woodland", "MTP"};
+                values[] = {"Black", "Coyote", "Khaki", "Olive", "Ranger", "RangerNF", "Desert", "Tropic", "Woodland", "MTP", "OCP", "Multicam", "MC_Wdl", "MC_Snow"};
+                class OCP {
+                    label = "OCP";
+                    image = "z\aceax\addons\gearinfo\data\camo\ocp.paa";
+                };
+                class Multicam {
+                    label = "Multicam";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class MC_Wdl {
+                    label = "MC-Wdl";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+                class MC_Snow {
+                    label = "MC-Snow";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
                 class Black {
                     label = "Black";
                     image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
@@ -249,7 +281,23 @@ class XtdGearModels {
             options[] = {"camo"};
             class camo {
                 alwaysSelectable = 1;
-                values[] = {"Black", "Coyote", "Ranger", "Desert", "Tropic", "Woodland", "MTP"};
+                values[] = {"Black", "Coyote", "Ranger", "Desert", "Tropic", "Woodland", "MTP", "OCP", "Multicam", "MC_Wdl", "MC_Snow"};
+                class OCP {
+                    label = "OCP";
+                    image = "z\aceax\addons\gearinfo\data\camo\ocp.paa";
+                };
+                class Multicam {
+                    label = "Multicam";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class MC_Wdl {
+                    label = "MC-Wdl";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+                class MC_Snow {
+                    label = "MC-Snow";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
                 class Black {
                     label = "Black";
                     image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
@@ -285,7 +333,23 @@ class XtdGearModels {
             options[] = {"camo"};
             class camo {
                 alwaysSelectable = 1;
-                values[] = {"Black", "Coyote", "Ranger", "Desert", "Tropic", "Woodland", "MTP"};
+                values[] = {"Black", "Coyote", "Ranger", "Desert", "Tropic", "Woodland", "MTP", "OCP", "Multicam", "MC_Wdl", "MC_Snow"};
+                class OCP {
+                    label = "OCP";
+                    image = "z\aceax\addons\gearinfo\data\camo\ocp.paa";
+                };
+                class Multicam {
+                    label = "Multicam";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class MC_Wdl {
+                    label = "MC-Wdl";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+                class MC_Snow {
+                    label = "MC-Snow";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
                 class Black {
                     label = "Black";
                     image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
@@ -357,6 +421,44 @@ class XtdGearModels {
                 class MTP {
                     label = "MTP";
                     image = "z\aceax\addons\gearinfo\data\camo\mtp.paa";
+                };
+            };
+        };
+        class GVAR(PlateCarrier_CTRG) {
+            label = "PlateCarrier CTRG";
+            options[] = {"camo", "type"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"OCP", "MTP", "Multicam", "MC_Wdl", "MC_Snow"};
+                class OCP {
+                    label = "OCP";
+                    image = "z\aceax\addons\gearinfo\data\camo\ocp.paa";
+                };
+                class MTP {
+                    label = "MTP";
+                    image = "z\aceax\addons\gearinfo\data\camo\mtp.paa";
+                };
+                class Multicam {
+                    label = "Multicam";
+                    image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
+                };
+                class MC_Wdl {
+                    label = "MC-Wdl";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+                class MC_Snow {
+                    label = "MC-Snow";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+            };
+            class type {
+                alwaysSelectable = 1;
+                values[] = {"Light", "Heavy"};
+                class Light {
+                    label = "Light";
+                };
+                class Heavy {
+                    label = "Heavy";
                 };
             };
         };

@@ -10,7 +10,7 @@ class CfgPatches {
             "ghost_common",
             "A3_Functions_F_Exp_A"
         };
-        author = "Ghosts of Battle";
+        author = QAUTHOR;
         VERSION_CONFIG;
     };
 };

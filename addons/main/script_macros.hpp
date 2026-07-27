@@ -24,6 +24,14 @@
 // GHOST macros
 #define IS_MOD_LOADED(modclass)     (isClass (configFile >> "CfgPatches" >> #modclass))
 
+// Display text for the mod's own 3DEN furniture. Literals rather than a
+// stringtable: these four are English-only and the mod inlines its display
+// strings everywhere else.
+#define GHOST_ATTRIBUTES            "Ghosts of Battle Attributes"
+#define GHOST_CATEGORY              "Ghosts of Battle"
+#define GHOST_TOOLBAR               "Ghosts of Battle"
+#define GHOST_TOOLBAR_WIKI          "Wiki"
+
 // Extension macros
 #define EXT "Ghosts of Battle_mods"
 #define EXT_LOG "Ghosts of Battle_mods_log"

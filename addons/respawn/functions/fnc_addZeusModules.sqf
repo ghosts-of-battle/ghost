@@ -18,7 +18,7 @@ LOG("Adding ZEN modules");
 
 private _iconRespawn = getText (configFile >> "CfgVehicles" >> QGVAR(moduleRespawn) >> "portrait");
 
-[ELSTRING(Main,Category), LSTRING(ModuleRespawn_ZEN_Sides_DisplayName), {
+[GHOST_CATEGORY, LSTRING(ModuleRespawn_ZEN_Sides_DisplayName), {
     [
         LSTRING(ModuleRespawn_ZEN_Sides_DisplayName),
         [
@@ -42,7 +42,7 @@ private _iconRespawn = getText (configFile >> "CfgVehicles" >> QGVAR(moduleRespa
     ] call zen_dialog_fnc_create;
 }, _iconRespawn] call zen_custom_modules_fnc_register;
 
-[ELSTRING(Main,Category), LSTRING(ModuleRespawn_ZEN_Player_DisplayName), {
+[GHOST_CATEGORY, LSTRING(ModuleRespawn_ZEN_Player_DisplayName), {
     private _deadPlayers = allPlayers select {!alive _x};
     private _deadPlayersNames = _deadPlayers apply {format ["%1 (%2)", name _x, side group _x]};
 

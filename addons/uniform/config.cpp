@@ -27,7 +27,9 @@ class CfgPatches {
             QGVAR(Item_U_B_OCP_JSOC_StealthUniform_F),
             QGVAR(Item_U_B_OCP_JSOC_StealthUniform_RolledUp_F),
             QGVAR(Item_U_B_Snow_JSOC_StealthUniform_F),
-            QGVAR(Item_U_B_Snow_JSOC_StealthUniform_RolledUp_F)
+            QGVAR(Item_U_B_Snow_JSOC_StealthUniform_RolledUp_F),
+            QGVAR(B_CombatUniform_ocp_soldier_F),
+            QGVAR(B_CombatUniform_snow_soldier_F)
         };
         weapons[] = {
             QGVAR(U_B_JSOC_StealthUniform_F),
@@ -41,7 +43,9 @@ class CfgPatches {
             QGVAR(U_B_OCP_JSOC_StealthUniform_F),
             QGVAR(U_B_OCP_JSOC_StealthUniform_RolledUp_F),
             QGVAR(U_B_Snow_JSOC_StealthUniform_F),
-            QGVAR(U_B_Snow_JSOC_StealthUniform_RolledUp_F)
+            QGVAR(U_B_Snow_JSOC_StealthUniform_RolledUp_F),
+            QGVAR(U_B_CombatUniform_ocp_F),
+            QGVAR(U_B_CombatUniform_snow_F)
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"ghost_main"};

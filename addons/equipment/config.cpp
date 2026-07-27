@@ -8,30 +8,12 @@ class CfgPatches {
         units[] = {
             QGVAR(Item_Vector_Designator),
             QGVAR(Item_Vector_Designator_NVG),
-            QGVAR(Item_optic_Nightstalker),
-            QGVAR(Item_optic_AMS),
-            QGVAR(Item_optic_AMS_khk),
-            QGVAR(Item_optic_AMS_snd),
-            QGVAR(Item_optic_AMSTI),
-            QGVAR(Item_optic_AMSTI_khk),
-            QGVAR(Item_optic_AMSTI_snd),
             QGVAR(Item_vest_rebreather),
             QGVAR(Item_Wetsuit)
         };
         weapons[] = {
-            QGVAR(xm157_prototype),
-            QGVAR(optic_DMS),
             QGVAR(Vector_Designator),
             QGVAR(Vector_Designator_NVG),
-            QGVAR(optic_Nightstalker),
-            QGVAR(optic_AMS_base),
-            QGVAR(optic_AMS),
-            QGVAR(optic_AMS_khk),
-            QGVAR(optic_AMS_snd),
-            QGVAR(optic_AMSTI_base),
-            QGVAR(optic_AMSTI),
-            QGVAR(optic_AMSTI_khk),
-            QGVAR(optic_AMSTI_snd),
             QGVAR(rebreather),
             QGVAR(Wetsuit)
         };
@@ -60,7 +42,7 @@ class CfgFunctions {
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
 #include "XtdGear.hpp"
-#include "jr_classes.hpp"
 #include "RscInGameUI.hpp"
 #include "CfgMagazines.hpp"
 #include "ACEX_Fortify_Presets.hpp"
+// #include "tfar.hpp"

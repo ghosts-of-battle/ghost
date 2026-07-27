@@ -2,7 +2,7 @@
     QGVAR(loggingEnabled),
     "CHECKBOX",
     LSTRING(Logging_Enabled),
-    LSTRING(DisplayName),
+    ["Ghosts of Battle", LSTRING(DisplayName)],
     false,
     1,
     {},

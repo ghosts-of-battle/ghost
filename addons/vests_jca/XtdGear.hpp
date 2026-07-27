@@ -42,7 +42,7 @@ class XtdGearModels {
             };
             class camo {
                 alwaysSelectable = 1;
-                values[] = {"Black", "Sand", "Olive", "MTP_Arid", "MTP_Desert", "MTP_Tropic", "MTP_Woodland", "MTP_Alpine"};
+                values[] = {"Black", "Sand", "Olive", "MTP_Arid", "MTP_Desert", "MTP_Tropic", "MTP_Woodland", "MTP_Alpine", "OCP"};
                 class Black {
                     label = "Black";
                     image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
@@ -74,6 +74,10 @@ class XtdGearModels {
                 class MTP_Alpine {
                     label = "MTP-Alp";
                     image = "z\aceax\addons\gearinfo\data\camo\gry.paa";
+                };
+                class OCP {
+                    label = "OCP";
+                    image = "z\aceax\addons\gearinfo\data\camo\ocp.paa";
                 };
             };
         };
@@ -521,6 +525,56 @@ class XtdGearInfos {
             model = QGVAR(KBT);
             type = "Tactical";
             camo = "Sand";
+        };
+        class GVAR(JCA_V_CarrierRigKBT_01_combat_ocp_F) {
+            model = QGVAR(KBT);
+            type = "Combat";
+            camo = "OCP";
+        };
+        class GVAR(JCA_V_CarrierRigKBT_01_command_ocp_F) {
+            model = QGVAR(KBT);
+            type = "Command";
+            camo = "OCP";
+        };
+        class GVAR(JCA_V_CarrierRigKBT_01_compact_ocp_F) {
+            model = QGVAR(KBT);
+            type = "Compact";
+            camo = "OCP";
+        };
+        class GVAR(JCA_V_CarrierRigKBT_01_CQB_ocp_F) {
+            model = QGVAR(KBT);
+            type = "CQB";
+            camo = "OCP";
+        };
+        class GVAR(JCA_V_CarrierRigKBT_01_crew_ocp_F) {
+            model = QGVAR(KBT);
+            type = "Crew";
+            camo = "OCP";
+        };
+        class GVAR(JCA_V_CarrierRigKBT_01_heavy_ocp_F) {
+            model = QGVAR(KBT);
+            type = "Heavy";
+            camo = "OCP";
+        };
+        class GVAR(JCA_V_CarrierRigKBT_01_holster_ocp_F) {
+            model = QGVAR(KBT);
+            type = "Holster";
+            camo = "OCP";
+        };
+        class GVAR(JCA_V_CarrierRigKBT_01_light_ocp_F) {
+            model = QGVAR(KBT);
+            type = "Light";
+            camo = "OCP";
+        };
+        class GVAR(JCA_V_CarrierRigKBT_01_recon_ocp_F) {
+            model = QGVAR(KBT);
+            type = "Recon";
+            camo = "OCP";
+        };
+        class GVAR(JCA_V_CarrierRigKBT_01_tactical_ocp_F) {
+            model = QGVAR(KBT);
+            type = "Tactical";
+            camo = "OCP";
         };
     };
 };

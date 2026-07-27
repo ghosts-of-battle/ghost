@@ -5,10 +5,6 @@
             <English>Ghosts of Battle - Insurgents</English>
             <Polish>Ghosts of Battle - Partyzanci</Polish>
         </Key>
-        <Key ID="STR_GHOST_Insurgents_Gear">
-            <English>Insurgents Gear</English>
-            <Polish>Sprzęt Partyzantów</Polish>
-        </Key>
         <Key ID="STR_GHOST_Insurgents_GearEnabled">
             <English>Use gear from "%1"</English>
             <Polish>Używaj sprzętu z "%1"</Polish>

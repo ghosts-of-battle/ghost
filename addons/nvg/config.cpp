@@ -11,7 +11,7 @@ class CfgPatches {
             "cba_main",
             "ace_nightvision"
         };
-        author = "ghost";
+        author = QAUTHOR;
         authors[] = {"YONV"};
         VERSION_CONFIG;
     };

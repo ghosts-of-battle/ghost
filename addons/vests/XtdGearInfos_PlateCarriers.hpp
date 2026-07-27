@@ -225,3 +225,142 @@
             model = QGVAR(PlateCarrierSpec);
             camo = "Coyote";
         };
+
+        // --- ACP retextures ---
+        class GVAR(V_PlateCarrier1_ocp) {
+            model = QGVAR(PlateCarrier1);
+            camo = "OCP";
+        };
+        class GVAR(V_PlateCarrier1_mtp) {
+            model = QGVAR(PlateCarrier1);
+            camo = "MTP";
+        };
+        class GVAR(V_PlateCarrier1_mcam) {
+            model = QGVAR(PlateCarrier1);
+            camo = "Multicam";
+        };
+        class GVAR(V_PlateCarrier1_mcam_wdl) {
+            model = QGVAR(PlateCarrier1);
+            camo = "MC_Wdl";
+        };
+        class GVAR(V_PlateCarrier1_mcam_snow) {
+            model = QGVAR(PlateCarrier1);
+            camo = "MC_Snow";
+        };
+        class GVAR(V_PlateCarrier2_ocp) {
+            model = QGVAR(PlateCarrier2);
+            camo = "OCP";
+            style = "Std";
+        };
+        class GVAR(V_PlateCarrier2_mtp) {
+            model = QGVAR(PlateCarrier2);
+            camo = "MTP";
+            style = "Std";
+        };
+        class GVAR(V_PlateCarrier2_mcam) {
+            model = QGVAR(PlateCarrier2);
+            camo = "Multicam";
+            style = "Std";
+        };
+        class GVAR(V_PlateCarrier2_mcam_wdl) {
+            model = QGVAR(PlateCarrier2);
+            camo = "MC_Wdl";
+            style = "Std";
+        };
+        class GVAR(V_PlateCarrier2_mcam_snow) {
+            model = QGVAR(PlateCarrier2);
+            camo = "MC_Snow";
+            style = "Std";
+        };
+        class GVAR(V_PlateCarrierGL_ocp) {
+            model = QGVAR(PlateCarrierGL);
+            camo = "OCP";
+        };
+        class GVAR(V_PlateCarrierGL_mtp) {
+            model = QGVAR(PlateCarrierGL);
+            camo = "MTP";
+        };
+        class GVAR(V_PlateCarrierGL_mcam) {
+            model = QGVAR(PlateCarrierGL);
+            camo = "Multicam";
+        };
+        class GVAR(V_PlateCarrierGL_mcam_wdl) {
+            model = QGVAR(PlateCarrierGL);
+            camo = "MC_Wdl";
+        };
+        class GVAR(V_PlateCarrierGL_mcam_snow) {
+            model = QGVAR(PlateCarrierGL);
+            camo = "MC_Snow";
+        };
+        class GVAR(V_PlateCarrierSpec_ocp) {
+            model = QGVAR(PlateCarrierSpec);
+            camo = "OCP";
+        };
+        class GVAR(V_PlateCarrierSpec_mtp) {
+            model = QGVAR(PlateCarrierSpec);
+            camo = "MTP";
+        };
+        class GVAR(V_PlateCarrierSpec_mcam) {
+            model = QGVAR(PlateCarrierSpec);
+            camo = "Multicam";
+        };
+        class GVAR(V_PlateCarrierSpec_mcam_wdl) {
+            model = QGVAR(PlateCarrierSpec);
+            camo = "MC_Wdl";
+        };
+        class GVAR(V_PlateCarrierSpec_mcam_snow) {
+            model = QGVAR(PlateCarrierSpec);
+            camo = "MC_Snow";
+        };
+
+        // --- CTRG plate carriers ---
+        class ghost_vests_V_PlateCarrierL_CTRG_ocp {
+            model = QGVAR(PlateCarrier_CTRG);
+            type = "Light";
+            camo = "OCP";
+        };
+        class ghost_vests_V_PlateCarrierL_CTRG_mtp {
+            model = QGVAR(PlateCarrier_CTRG);
+            type = "Light";
+            camo = "MTP";
+        };
+        class ghost_vests_V_PlateCarrierL_CTRG_mcam {
+            model = QGVAR(PlateCarrier_CTRG);
+            type = "Light";
+            camo = "Multicam";
+        };
+        class ghost_vests_V_PlateCarrierL_CTRG_mcam_wdl {
+            model = QGVAR(PlateCarrier_CTRG);
+            type = "Light";
+            camo = "MC_Wdl";
+        };
+        class ghost_vests_V_PlateCarrierL_CTRG_mcam_snow {
+            model = QGVAR(PlateCarrier_CTRG);
+            type = "Light";
+            camo = "MC_Snow";
+        };
+        class ghost_vests_V_PlateCarrierH_CTRG_ocp {
+            model = QGVAR(PlateCarrier_CTRG);
+            type = "Heavy";
+            camo = "OCP";
+        };
+        class ghost_vests_V_PlateCarrierH_CTRG_mtp {
+            model = QGVAR(PlateCarrier_CTRG);
+            type = "Heavy";
+            camo = "MTP";
+        };
+        class ghost_vests_V_PlateCarrierH_CTRG_mcam {
+            model = QGVAR(PlateCarrier_CTRG);
+            type = "Heavy";
+            camo = "Multicam";
+        };
+        class ghost_vests_V_PlateCarrierH_CTRG_mcam_wdl {
+            model = QGVAR(PlateCarrier_CTRG);
+            type = "Heavy";
+            camo = "MC_Wdl";
+        };
+        class ghost_vests_V_PlateCarrierH_CTRG_mcam_snow {
+            model = QGVAR(PlateCarrier_CTRG);
+            type = "Heavy";
+            camo = "MC_Snow";
+        };

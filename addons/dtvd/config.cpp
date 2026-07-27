@@ -10,7 +10,7 @@ class CfgPatches {
             "ghost_common",
             "cba_main"
         };
-        author = "ghost";
+        author = QAUTHOR;
         authors[] = {"DomT602", "YONV"};
         VERSION_CONFIG;
     };

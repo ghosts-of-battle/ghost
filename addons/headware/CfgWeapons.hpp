@@ -1,4 +1,5 @@
 class CfgWeapons {
+#include "acp_full_externs.hpp"
     class HeadgearItem;
     class H_HelmetB;
     class H_Booniehat_khk;
@@ -435,6 +436,31 @@ class CfgWeapons {
         MACRO_ITEM_COMMON
         MACRO_ACE_HEARING
     };
+    class GVAR(H_Booniehat_ocp_F): H_Booniehat_khk {
+        author = QAUTHOR;
+        displayName = "[Ghost] (OCP) Booniehat";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_ocp_co.paa)
+        };
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_ocp_ca.paa);
+        MACRO_ITEM_COMMON
+    };
+    class GVAR(H_Booniehat_ocp_hs_F): H_Booniehat_khk_hs {
+        author = QAUTHOR;
+        displayName = "[Ghost] (OCP) Booniehat (Headset)";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\booniehat_ocp_co.paa)
+        };
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\booniehat.rvmat)};
+        heatReduction = 1;
+        picture = QPATHTOF(data\ui\icon_h_booniehat_ocp_hs_ca.paa);
+        MACRO_ITEM_COMMON
+        MACRO_ACE_HEARING
+    };
     class GVAR(H_Booniehat_Multicam_Snow_F): H_Booniehat_khk {
         author = QAUTHOR;
         displayName = "[Ghost] (Multicam Snow) Booniehat";
@@ -610,4 +636,5 @@ class CfgWeapons {
         MACRO_ITEM_COMMON
         MACRO_ACE_HEARING
     };
+#include "acp_full.hpp"
 };

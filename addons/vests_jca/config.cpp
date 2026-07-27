@@ -92,7 +92,17 @@ class CfgPatches {
             QGVAR(JCA_V_CarrierRigKBT_01_compact_MTP_arid_F),
             QGVAR(JCA_V_CarrierRigKBT_01_compact_black_F),
             QGVAR(JCA_V_CarrierRigKBT_01_command_MTP_tropic_F),
-            QGVAR(JCA_V_CarrierRigKBT_01_combat_olive_F)
+            QGVAR(JCA_V_CarrierRigKBT_01_combat_olive_F),
+            QGVAR(JCA_V_CarrierRigKBT_01_combat_ocp_F),
+            QGVAR(JCA_V_CarrierRigKBT_01_command_ocp_F),
+            QGVAR(JCA_V_CarrierRigKBT_01_compact_ocp_F),
+            QGVAR(JCA_V_CarrierRigKBT_01_CQB_ocp_F),
+            QGVAR(JCA_V_CarrierRigKBT_01_crew_ocp_F),
+            QGVAR(JCA_V_CarrierRigKBT_01_heavy_ocp_F),
+            QGVAR(JCA_V_CarrierRigKBT_01_holster_ocp_F),
+            QGVAR(JCA_V_CarrierRigKBT_01_light_ocp_F),
+            QGVAR(JCA_V_CarrierRigKBT_01_recon_ocp_F),
+            QGVAR(JCA_V_CarrierRigKBT_01_tactical_ocp_F)
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {

@@ -1,0 +1,10 @@
+PREP(moduleController);
+PREP(spawnJammers);
+PREP(pruneJammers);
+PREP(onDetection);
+PREP(hasDetector);
+PREP(dispatchResponse);
+PREP(vectorToTarget);
+PREP(clientInit);
+PREP(jammerLoop);
+PREP(onTangent);

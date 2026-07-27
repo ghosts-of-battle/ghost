@@ -89,10 +89,6 @@
             <English>Allows spectator to use third person camera.</English>
             <Polish>Pozwala obserwatorowi używać kamery trzecioosobowej.</Polish>
         </Key>
-        <Key ID="STR_GHOST_Spectator_Unconscious">
-            <English>Unconscious</English>
-            <Polish>Nieprzytomni</Polish>
-        </Key>
         <Key ID="STR_GHOST_Spectator_UnconsciousDelay">
             <English>Unconscious spectator delay</English>
             <Polish>Opóźnienie obserwatora dla nieprzytomnych</Polish>

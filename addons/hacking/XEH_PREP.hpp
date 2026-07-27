@@ -1,0 +1,9 @@
+PREP(moduleController);
+PREP(markNearestTarget);
+PREP(canHack);
+PREP(nearestTower);
+PREP(nearestDrone);
+PREP(hackTower);
+PREP(downDrone);
+PREP(reveal);
+PREP(watchTargets);

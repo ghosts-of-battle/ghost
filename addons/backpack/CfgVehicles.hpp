@@ -778,22 +778,8 @@ class CfgVehicles {
         tf_hasLRradio = 1;
         tf_range = 20000;
         tf_subtype = "digital_lr";
-    };
+    }; */
     //End radios 
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
 
     class GVAR(FieldPack_Multicam): B_FieldPack_oli {
         author = QAUTHOR;
@@ -872,4 +858,6 @@ class CfgVehicles {
 
 
 
+
+#include "acp_ocp.hpp"
 };

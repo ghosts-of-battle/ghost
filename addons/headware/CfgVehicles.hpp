@@ -489,6 +489,38 @@ class CfgVehicles {
             };
         };
     };
+    class GVAR(Item_H_Booniehat_ocp_F): Item_Base_F {
+        author = QAUTHOR;
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Booniehat (OCP)";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_Headgear";
+        vehicleClass = "ItemsHeadgear";
+        model = "\A3\Weapons_F\dummyweapon.p3d";
+        class TransportItems {
+            class _xx_Ghost_H_Booniehat_ocp_F {
+                name = QGVAR(H_Booniehat_ocp_F);
+                count = 1;
+            };
+        };
+    };
+    class GVAR(Item_H_Booniehat_ocp_hs_F): Item_Base_F {
+        author = QAUTHOR;
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Booniehat (OCP) [Headset]";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_Headgear";
+        vehicleClass = "ItemsHeadgear";
+        model = "\A3\Weapons_F\dummyweapon.p3d";
+        class TransportItems {
+            class _xx_Ghost_H_Booniehat_ocp_hs_F {
+                name = QGVAR(H_Booniehat_ocp_hs_F);
+                count = 1;
+            };
+        };
+    };
     class GVAR(Item_H_Booniehat_Multicam_Snow_F): Item_Base_F {
         author = QAUTHOR;
         scope = 2;

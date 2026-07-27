@@ -52,11 +52,6 @@ class CfgPatches {
             QGVAR(Item_SOF_H_BaseballCapSpec_mcam),
             QGVAR(Item_SOF_H_BaseballCapSpec_tna),
             QGVAR(Item_SOF_H_BaseballCapSpec_wdl),
-            QGVAR(Item_SOF_V_AVSCarrier_Lite_rgr),
-            QGVAR(Item_SOF_V_AVSCarrier_Lite_rgr_noflag),
-            QGVAR(Item_SOF_V_AVSCarrier_Lite_mcam),
-            QGVAR(Item_SOF_V_AVSCarrier_Lite_tna),
-            QGVAR(Item_SOF_V_AVSCarrier_Lite_wdl),
             QGVAR(Item_SOF_U_B_SFFatigues_rgr),
             QGVAR(Item_SOF_U_B_SFFatigues_Shortsleeve_rgr),
             QGVAR(Item_SOF_U_B_SFFatigues_mcam),
@@ -76,7 +71,6 @@ class CfgPatches {
             QGVAR(Item_SOF_H_Opscore_CoverCamo_ocp),
             QGVAR(Item_SOF_U_B_SFFatigues_ocp),
             QGVAR(Item_SOF_U_B_SFFatigues_Shortsleeve_ocp),
-            QGVAR(Item_SOF_V_AVSCarrier_Lite_ocp)
         };
         weapons[] = {
             QGVAR(SOF_H_Opscore_rgr),
@@ -111,11 +105,6 @@ class CfgPatches {
             QGVAR(SOF_H_BaseballCapSpec_mcam),
             QGVAR(SOF_H_BaseballCapSpec_tna),
             QGVAR(SOF_H_BaseballCapSpec_wdl),
-            QGVAR(SOF_V_AVSCarrier_Lite_rgr),
-            QGVAR(SOF_V_AVSCarrier_Lite_rgr_noflag),
-            QGVAR(SOF_V_AVSCarrier_Lite_mcam),
-            QGVAR(SOF_V_AVSCarrier_Lite_tna),
-            QGVAR(SOF_V_AVSCarrier_Lite_wdl),
             QGVAR(SOF_U_B_SFFatigues_rgr),
             QGVAR(SOF_U_B_SFFatigues_Shortsleeve_rgr),
             QGVAR(SOF_U_B_SFFatigues_mcam),
@@ -135,14 +124,12 @@ class CfgPatches {
             QGVAR(SOF_H_Opscore_CoverCamo_ocp),
             QGVAR(SOF_U_B_SFFatigues_ocp),
             QGVAR(SOF_U_B_SFFatigues_Shortsleeve_ocp),
-            QGVAR(SOF_V_AVSCarrier_Lite_ocp)
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "ghost_main",
             "SOF_Characters",
             "A3_Characters_F",
-            "ax_2035_ocp_army_replace_jamsof",
             "ace_hearing"
         };
         skipWhenMissingDependencies = 1;
@@ -156,9 +143,6 @@ class CfgPatches {
 class CfgEditorSubcategories {
     class EdSubcat_SOF_Headgear {
         displayName = "[Ghost] SOF - Headgear";
-    };
-    class EdSubcat_SOF_Vests {
-        displayName = "[Ghost] SOF - Vests";
     };
     class EdSubcat_SOF_Uniforms {
         displayName = "[Ghost] SOF - Uniforms";

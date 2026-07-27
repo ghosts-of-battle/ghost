@@ -5,7 +5,7 @@
         GEAR_SETTING(_class),
         "CHECKBOX",
         [format [LLSTRING(GearEnabled), _class], LSTRING(GearEnabled_Description)],
-        [LSTRING(DisplayName), LSTRING(Gear)],
+        ["Ghosts of Battle", LSTRING(DisplayName)],
         true,
         1,
         {},

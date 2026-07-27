@@ -4,8 +4,6 @@ class CfgWeapons {
     class HeadgearItem;
     class UniformItem;
     class Uniform_Base;
-    class VestItem;
-    class V_PlateCarrier1_rgr;
     class HelmetBase: ItemCore {
         class ItemInfo: HeadgearItem {};
     };
@@ -339,7 +337,7 @@ class CfgWeapons {
             QPATHTOF(data\h_opscore_rgr_co.paa),
             QPATHTOF(data\h_headset_rgr_co.paa),
             QPATHTOF(data\h_opscore_cover_mcam_co.paa),
-            ""
+            QPATHTOF(data\h_opscore_acc_rgr_co.paa)
         };
     };
     class GVAR(SOF_H_Opscore_CoverCamo_mcam): GVAR(SOF_H_Opscore_CoverCamo_rgr) {
@@ -374,7 +372,7 @@ class CfgWeapons {
             QPATHTOF(data\h_opscore_rgr_co.paa),
             QPATHTOF(data\h_headset_rgr_co.paa),
             QPATHTOF(data\h_opscore_cover_tna_co.paa),
-            ""
+            QPATHTOF(data\h_opscore_acc_rgr_co.paa)
         };
     };
     class GVAR(SOF_H_Opscore_Cover_wdl): GVAR(SOF_H_Opscore_Cover_rgr) {
@@ -397,7 +395,7 @@ class CfgWeapons {
             QPATHTOF(data\h_opscore_rgr_co.paa),
             QPATHTOF(data\h_headset_rgr_co.paa),
             QPATHTOF(data\h_opscore_cover_wdl_co.paa),
-            ""
+            QPATHTOF(data\h_opscore_acc_rgr_co.paa)
         };
     };
     class GVAR(SOF_H_Opscore_Cover_mrpt_wdl): GVAR(SOF_H_Opscore_Cover_rgr) {
@@ -420,7 +418,7 @@ class CfgWeapons {
             QPATHTOF(data\h_opscore_snd_co.paa),
             QPATHTOF(data\h_headset_snd_co.paa),
             QPATHTOF(data\h_opscore_cover_mrpt_wdl_co.paa),
-            QPATHTOF(data\h_opscore_acc_snd_us_des_co.paa)
+            QPATHTOF(data\h_opscore_acc_snd_co.paa)
         };
     };
     class GVAR(SOF_H_Opscore_Cover_mrpt_des): GVAR(SOF_H_Opscore_Cover_rgr) {
@@ -443,7 +441,7 @@ class CfgWeapons {
             QPATHTOF(data\h_opscore_snd_co.paa),
             QPATHTOF(data\h_headset_snd_co.paa),
             QPATHTOF(data\h_opscore_cover_mrpt_des_co.paa),
-            QPATHTOF(data\h_opscore_acc_snd_us_des_co.paa)
+            QPATHTOF(data\h_opscore_acc_snd_co.paa)
         };
     };
     class GVAR(SOF_H_Opscore_Cover_nwu): GVAR(SOF_H_Opscore_Cover_rgr) {
@@ -610,104 +608,6 @@ class CfgWeapons {
     };
 
     // ===== Vests =====
-    class GVAR(SOF_V_AVSCarrier_Lite_rgr): V_PlateCarrier1_rgr {
-        author = "OokamiJamie";
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "Light Carrier Vest (Green)";
-        picture = QPATHTOF(data\v_carrieravs_ico_ca.paa);
-        hiddenSelections[] = {
-            "camo",
-            "camo1"
-        };
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\v_carrieravs_rgr_co.paa),
-            ""
-        };
-        hiddenSelectionsMaterials[] = {
-            QPATHTOF(data\v_carrieravs.rvmat),
-            ""
-        };
-        model = "\SOFGear\sof_characters\Vests\V_CarrierAVS_Lite.p3d";
-        class ItemInfo: VestItem {
-            uniformModel = "\SOFGear\sof_characters\Vests\V_CarrierAVS_Lite.p3d";
-            hiddenSelections[] = {
-                "camo",
-                "camo1"
-            };
-            hiddenSelectionsTextures[] = {
-                QPATHTOF(data\v_carrieravs_rgr_co.paa),
-                ""
-            };
-            containerClass = "Supply110";
-            mass = 60;
-            class HitpointsProtectionInfo {
-                class Chest {
-                    hitpointName = "HitChest";
-                    armor = 14;
-                    passThrough = 0.1;
-                };
-                class Body {
-                    hitpointName = "HitBody";
-                    passThrough = 0.1;
-                };
-                class Diaphragm {
-                    hitpointName = "HitDiaphragm";
-                    armor = 14;
-                    passThrough = 0.1;
-                };
-                class Abdomen {
-                    hitpointName = "HitAbdomen";
-                    armor = 14;
-                    passThrough = 0.1;
-                };
-            };
-        };
-    };
-    class GVAR(SOF_V_AVSCarrier_Lite_rgr_noflag): GVAR(SOF_V_AVSCarrier_Lite_rgr) {
-        author = "OokamiJamie";
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "Light Carrier Vest (Green, No Flag)";
-        picture = QPATHTOF(data\v_carrieravs_ico_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\v_carrieravs_rgr_co.paa),
-            ""
-        };
-    };
-    class GVAR(SOF_V_AVSCarrier_Lite_mcam): GVAR(SOF_V_AVSCarrier_Lite_rgr) {
-        author = "OokamiJamie";
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "Light Carrier Vest (MTP)";
-        picture = QPATHTOF(data\v_carrieravs_ico_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\v_carrieravs_mcam_co.paa),
-            ""
-        };
-    };
-    class GVAR(SOF_V_AVSCarrier_Lite_tna): GVAR(SOF_V_AVSCarrier_Lite_rgr) {
-        author = "OokamiJamie";
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "Light Carrier Vest (Tropic)";
-        picture = QPATHTOF(data\v_carrieravs_ico_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\v_carrieravs_tna_co.paa),
-            ""
-        };
-    };
-    class GVAR(SOF_V_AVSCarrier_Lite_wdl): GVAR(SOF_V_AVSCarrier_Lite_rgr) {
-        author = "OokamiJamie";
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "Light Carrier Vest (Woodland)";
-        picture = QPATHTOF(data\v_carrieravs_ico_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\v_carrieravs_wdl_co.paa),
-            ""
-        };
-    };
 
     // ===== Uniforms =====
     class GVAR(SOF_U_B_SFFatigues_rgr): Uniform_Base {        author = "OokamiJamie";
@@ -969,7 +869,7 @@ class CfgWeapons {
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\h_opscore_rgr_co.paa),
             QPATHTOF(data\h_headset_rgr_co.paa),
-            "\ax_aegisocp\2035_ocp_army_replace_aegis\Data\H_Opscore_Cover_ocp_CO.paa"
+            QPATHTOF(data\h_opscore_cover_ocp_co.paa)
         };
     };
     class GVAR(SOF_H_Opscore_CoverSpec_ocp): GVAR(SOF_H_Opscore_CoverSpec_rgr) {
@@ -977,8 +877,8 @@ class CfgWeapons {
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\h_opscore_rgr_co.paa),
             QPATHTOF(data\h_headset_rgr_co.paa),
-            "\ax_aegisocp\2035_ocp_army_replace_aegis\Data\H_Opscore_Cover_ocp_CO.paa",
-            ""
+            QPATHTOF(data\h_opscore_cover_ocp_co.paa),
+            QPATHTOF(data\h_opscore_acc_rgr_co.paa)
         };
     };
     class GVAR(SOF_H_Opscore_CoverCamo_ocp): GVAR(SOF_H_Opscore_CoverCamo_rgr) {
@@ -986,31 +886,26 @@ class CfgWeapons {
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\h_opscore_rgr_co.paa),
             QPATHTOF(data\h_headset_rgr_co.paa),
-            "\ax_aegisocp\2035_ocp_army_replace_aegis\Data\H_Opscore_Cover_ocp_CO.paa",
+            QPATHTOF(data\h_opscore_cover_ocp_co.paa),
             QPATHTOF(data\ghillie_leaves_mcam_ca.paa)
         };
     };
-    class GVAR(SOF_U_B_SFFatigues_ocp): GVAR(SOF_U_B_SFFatigues_rgr) {        displayName = "Special Fatigues (OCP)";
+    class GVAR(SOF_U_B_SFFatigues_ocp): GVAR(SOF_U_B_SFFatigues_rgr) {        
+        displayName = "Special Fatigues (OCP)";
         hiddenSelectionsTextures[] = {
-            "\ax_aegisocp\2035_ocp_army_replace_aegis\data\U_AssaultUniform_Pants_ocp_CO.paa"
+            QPATHTOF(data\u_assaultuniform_pants_ocp_co.paa)
         };
         class ItemInfo: ItemInfo {
             uniformClass = QGVAR(SOF_B_SFFatigues_ocp);
         };
     };
-    class GVAR(SOF_U_B_SFFatigues_Shortsleeve_ocp): GVAR(SOF_U_B_SFFatigues_Shortsleeve_rgr) {        displayName = "Special Fatigues (OCP, Rolled-Up)";
+    class GVAR(SOF_U_B_SFFatigues_Shortsleeve_ocp): GVAR(SOF_U_B_SFFatigues_Shortsleeve_rgr) {        
+        displayName = "Special Fatigues (OCP, Rolled-Up)";
         hiddenSelectionsTextures[] = {
-            "\ax_aegisocp\2035_ocp_army_replace_aegis\data\U_AssaultUniform_Pants_ocp_CO.paa"
+            QPATHTOF(data\u_assaultuniform_pants_ocp_co.paa)
         };
         class ItemInfo: ItemInfo {
             uniformClass = QGVAR(SOF_B_SFFatigues_Shortsleeve_ocp);
-        };
-    };
-    class GVAR(SOF_V_AVSCarrier_Lite_ocp): GVAR(SOF_V_AVSCarrier_Lite_rgr) {
-        displayName = "Light Carrier Vest (OCP)";
-        hiddenSelectionsTextures[] = {
-            "\ax_aegisocp\2035_ocp_army_replace_aegis\Data\V_CarrierAVS_ocp_CO.paa",
-            ""
         };
     };
 };

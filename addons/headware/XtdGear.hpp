@@ -5,7 +5,7 @@ class XtdGearModels {
             options[] = {"camo", "type"};
             class camo {
                 alwaysSelectable = 1;
-                values[] = {"MC", "MCA", "MCW", "COY", "RGR", "OLV", "TAN", "WHT"};
+                values[] = {"MC", "MCA", "MCW", "COY", "RGR", "OLV", "TAN", "WHT", "OCP"};
                 class MC {
                     label = "MC";
                     image = "z\aceax\addons\gearinfo\data\camo\mc.paa";
@@ -37,6 +37,10 @@ class XtdGearModels {
                 class WHT {
                     label = "WHT";
                     image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+                class OCP {
+                    label = "OCP";
+                    image = "z\aceax\addons\gearinfo\data\camo\ocp.paa";
                 };
             };
             class type {
@@ -319,6 +323,16 @@ class XtdGearInfos {
         class ghost_headware_H_Booniehat_Multicam_hs_F {
             model = "ghost_headware_Booniehat";
             camo = "MC";
+            type = "Headset";
+        };
+        class ghost_headware_H_Booniehat_ocp_F {
+            model = "ghost_headware_Booniehat";
+            camo = "OCP";
+            type = "Plain";
+        };
+        class ghost_headware_H_Booniehat_ocp_hs_F {
+            model = "ghost_headware_Booniehat";
+            camo = "OCP";
             type = "Headset";
         };
         class ghost_headware_H_Booniehat_Multicam_Snow_F {

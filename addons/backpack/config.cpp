@@ -67,7 +67,10 @@ class CfgPatches {
             QGVAR(TacticalPack_Solid_CoyoteBrown),
             QGVAR(TacticalPack_Solid_Olive),
             QGVAR(TacticalPack_Solid_Ranger_Green),
-            QGVAR(TacticalPack_Solid_White)
+            QGVAR(TacticalPack_Solid_White),
+            QGVAR(AssaultPack_ocp),
+            QGVAR(Carryall_ocp),
+            QGVAR(Kitbag_ocp)
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;

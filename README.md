@@ -55,6 +55,8 @@ Fat_Lurch's
 - Turret Enhanced https://steamcommunity.com/sharedfiles/filedetails/?id=1623498241
 - MS_IFF_Strobe https://steamcommunity.com/sharedfiles/filedetails/?id=1543390130
 
+- Arma 3 Vanilla & Aegis OCP Retextures (classname prefix `ax_aegisocp`) - OCP camo textures used on the SOF Opscore helmet cover, Special Fatigues, and AVS Light Carrier vest (addons/uniform_sof).
+
 Huge appreciation and thanks to [ACE3 Team](http://ace3mod.com/team.html) for their open-source nature and permission to use their systems.
 
 ## License

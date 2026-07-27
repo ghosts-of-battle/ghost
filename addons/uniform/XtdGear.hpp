@@ -42,6 +42,22 @@ class XtdGearModels {
                 };
             };
         };
+        class ghost_uniform_CombatUniform {
+            label = "Combat Fatigues";
+            options[] = {"camo"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"OCP", "SNW"};
+                class OCP {
+                    label = "OCP";
+                    image = "z\aceax\addons\gearinfo\data\camo\ocp.paa";
+                };
+                class SNW {
+                    label = "SNW";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+            };
+        };
     };
 };
 
@@ -106,6 +122,14 @@ class XtdGearInfos {
             model = "ghost_uniform_JSOC";
             camo = "SNW";
             type = "RolledUp";
+        };
+        class ghost_uniform_U_B_CombatUniform_ocp_F {
+            model = "ghost_uniform_CombatUniform";
+            camo = "OCP";
+        };
+        class ghost_uniform_U_B_CombatUniform_snow_F {
+            model = "ghost_uniform_CombatUniform";
+            camo = "SNW";
         };
     };
 };

@@ -7,3 +7,23 @@ PREP(readConfigToNamespace);
 PREP(easterDate);
 PREP(runAfterSettingsInit);
 PREP(addItem);
+
+// Ported from Mr H.'s MRHMilsimTools (ADPL-SA) -- see addons/halogear/README.md
+PREP(conditionalPFEH);
+PREP(addParachuteToObject);
+PREP(addMultipleParachutesToObject);
+PREP(ensureSafeLanding);
+PREP(listGroupsWithPlayers);
+PREP(sortGroupsBySide);
+PREP(returnDepth);
+PREP(objectFromString);
+PREP(realisticGrid);
+PREP(setCtrlHeightToText);
+PREP(putContainerInVehicle);
+PREP(isOverWater);
+PREP(scatterPosition);
+PREP(listFactionDrones);
+PREP(edenDroneFactionLoad);
+PREP(edenDroneFactionSave);
+PREP(edenDroneChoiceLoad);
+PREP(edenDroneChoiceSave);

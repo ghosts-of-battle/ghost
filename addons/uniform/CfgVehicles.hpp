@@ -1,4 +1,5 @@
 class CfgVehicles {
+#include "acp_full_holder_externs.hpp"
     class B_CTRG_Soldier_F;
     class B_CTRG_Soldier_3_F;
     class Item_Base_F;
@@ -253,4 +254,7 @@ class CfgVehicles {
             };
         };
     };
+
+#include "acp_ocp_vehicles.hpp"
+#include "acp_snow_vehicles.hpp"
 };

@@ -47,7 +47,9 @@ class CfgPatches {
             QGVAR(Item_H_Booniehat_Solid_Tan_F),
             QGVAR(Item_H_Booniehat_Solid_Tan_hs_F),
             QGVAR(Item_H_Booniehat_Solid_White_F),
-            QGVAR(Item_H_Booniehat_Solid_White_hs_F)
+            QGVAR(Item_H_Booniehat_Solid_White_hs_F),
+            QGVAR(Item_H_Booniehat_ocp_F),
+            QGVAR(Item_H_Booniehat_ocp_hs_F)
         };
         weapons[] = {
             QGVAR(H_Helmet_FASTMT_tan_F),
@@ -93,7 +95,14 @@ class CfgPatches {
             QGVAR(H_Booniehat_Solid_Tan_F),
             QGVAR(H_Booniehat_Solid_Tan_hs_F),
             QGVAR(H_Booniehat_Solid_White_F),
-            QGVAR(H_Booniehat_Solid_White_hs_F)
+            QGVAR(H_Booniehat_Solid_White_hs_F),
+            QGVAR(G_Balaclava_US_OCP),
+            QGVAR(G_Balaclava_Multicam_Snow),
+            QGVAR(H_Helmet_FASTMT_base_F),
+            QGVAR(H_Helmet_FASTMT_Headset_base_F),
+            QGVAR(H_Helmet_FASTMT_Cover_base_F),
+            QGVAR(H_Booniehat_ocp_F),
+            QGVAR(H_Booniehat_ocp_hs_F)
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {

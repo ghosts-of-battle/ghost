@@ -11,7 +11,7 @@ class CfgPatches {
             "diwako_dui_main",
             "A3_Weapons_F" // defines ItemCore, parent of our root ItemInfo definition
         };
-        author = "Ghosts of Battle";
+        author = QAUTHOR;
         VERSION_CONFIG;
     };
 };

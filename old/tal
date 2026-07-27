@@ -1,0 +1,3369 @@
+// IND_TURA_lxWS â€” 61 classes / 7 categories
+
+// ===== Armored =====
+"I_Tura_APC_Wheeled_02_hmg_lxWS", // Otokar ARMA (HMG)  [scope 1]
+"Aegis_I_Tura_APC_Wheeled_04_export_F", // BTR-100A Muharib  [scope 2]
+
+// ===== Autonomous =====
+"I_Tura_UAV_02_IED_lxWS", // IED UAV  [scope 2]
+"I_Rev_UAV_IED", // Deployable IED UAV  [scope 2]
+
+// ===== Backpacks =====
+"I_Tura_UAV_02_IED_backpack_lxWS", // UAV Bag (IED) [Tura]  [scope 1]
+"I_G_UAV_02_IED_backpack_lxWS", // UAV Bag (IED) [FIA]  [scope 1]
+
+// ===== Car =====
+"I_Tura_Offroad_armor_lxWS", // Offroad (UP)  [scope 2]
+"I_Tura_Offroad_armor_AT_lxWS", // Offroad (UP, AT)  [scope 2]
+"I_Tura_Offroad_armor_armed_lxWS", // Offroad (UP, HMG)  [scope 2]
+"I_Tura_Offroad_armor_AA_lxWS", // Offroad (UP, Zu-23-2)  [scope 2]
+"I_Tura_Truck_02_aa_lxWS", // KamAZ (Zu-23-2)  [scope 1]
+"I_Tura_Pickup_01_RF", // Ram 1500  [scope 2]
+"I_Tura_Pickup_01_mmg_rf", // Ram 1500 (MMG)  [scope 1]
+"I_Tura_Pickup_01_hmg_rf", // Ram 1500 (HMG)  [scope 2]
+"I_Tura_Pickup_fuel_rf", // Ram 1500 (Fuel)  [scope 2]
+"I_Tura_Pickup_01_Rocket_rf", // Ram 1500 (Rocket)  [scope 2]
+
+// ===== Items =====
+"Item_I_Tura_UavTerminal_lxWS", // UAV Terminal [Tura]  [scope 1]
+
+// ===== Men =====
+"I_SFIA_scout_lxWS", // Scout (Rifle)  [scope 1]
+"I_SFIA_watcher_lxWS", // Watcher (Rifle)  [scope 1]
+"I_SFIA_enforcer_lxWS", // Enforcer (Rifle)  [scope 1]
+"I_SFIA_hireling_lxWS", // Hireling (Launcher)  [scope 1]
+"I_SFIA_medic2_lxWS", // Snatcher (Medikit)  [scope 1]
+"I_SFIA_thug_lxWS", // Thug (Mines)  [scope 1]
+"I_SFIA_deserter_lxWS", // Deserter (Rifle)  [scope 1]
+"I_SFIA_defector_lxWS", // Defector (RGL)  [scope 1]
+"I_Tura_scout_lxWS", // Scout (Rifle)  [scope 2]
+"I_Tura_watcher_lxWS", // Watcher (Rifle)  [scope 2]
+"I_Tura_enforcer_lxWS", // Enforcer (Rifle)  [scope 2]
+"I_Tura_hireling_lxWS", // Hireling (Launcher)  [scope 2]
+"I_Tura_medic2_lxWS", // Snatcher (Medikit)  [scope 2]
+"I_Tura_thug_lxWS", // Thug (Mines)  [scope 2]
+"I_Tura_deserter_lxWS", // Deserter (Rifle)  [scope 2]
+"I_Tura_defector_lxWS", // Defector (RGL)  [scope 2]
+"I_Tura_HMG_gunner_lxWS", // Deserter (Rifle)  [scope 1]
+"I_PMC_Soldier_01_lxWS", // Rifleman  [scope 1]
+"I_PMC_Soldier_02_lxWS", // Rifleman  [scope 1]
+"I_PMC_Soldier_03_lxWS", // Rifleman  [scope 1]
+"I_PMC_Story_Gustavo_lxWS", // Gustavo Dimitrovich  [scope 2]
+"I_SFIA_Said_lxWS", // Arib Said  [scope 2]
+"I_Tura_crew_lxWS", // Crewman  [scope 1]
+"I_Tura_deserter_EXT_R5GL_lxWS", // Deserter (Rifle)  [scope 1]
+"I_SFIA_scout_EXT_Galat_lxWS", // Scout (Rifle)  [scope 1]
+"I_Tura_enforcer_EXT_Zafir_lxWS", // Enforcer (Rifle)  [scope 1]
+"I_Tura_enforcer_EXT_RPK12_lxWS", // Enforcer (Rifle)  [scope 1]
+"I_Tura_deserter_EXT_AK12U_lxWS", // Deserter (Rifle)  [scope 1]
+"I_Tura_scout_EXT_DMR_Hunter_lxWS", // Scout (Rifle)  [scope 1]
+"I_Tura_medic2_EXT_HShotgun_lxWS", // Snatcher (Medikit)  [scope 1]
+"I_Tura_scout_EXT_DMR_camo_lxWS", // Scout (Rifle)  [scope 1]
+"I_Tura_deserter_EXT_AKM_lxWS", // Deserter (Rifle)  [scope 1]
+"I_Tura_hireling_EXT_RPG7_lxWS", // Hireling (Launcher)  [scope 1]
+"I_Tura_watcher_EXT_AKS_lxWS", // Watcher (Rifle)  [scope 1]
+"I_Tura_watcher_EXT_AKM_lxWS", // Watcher (Rifle)  [scope 1]
+"I_Tura_soldier_UAV_lxWS", // UAV Operator (IED)  [scope 2]
+"I_Tura_HeavyGunner_lxWS", // Oppressor (Machine Gun)  [scope 2]
+"Aegis_I_Tura_HeavyGunner_2_lxWS", // Suppressor (GPMG)  [scope 2]
+"Aegis_I_Tura_Soldier_M_lxWS", // Assassin (DMR)  [scope 1]
+
+// ===== Static =====
+"I_Tura_Mortar_lxWS", // Mk6 Mortar  [scope 2]
+"I_Tura_HMG_02_lxWS", // M2 HMG .50  [scope 2]
+"I_Tura_HMG_02_high_lxWS", // M2 HMG .50 (Raised)  [scope 2]
+"I_Tura_ZU23_lxWS", // Zu-23-2  [scope 2]
+"Aegis_I_Tura_CommandoMortar_RF", // RSG60  [scope 2]
+
+// ===== CfgGroups =====
+["Indep","IND_TURA_lxWS","Infantry","I_Tura_InfSquad_lxWS"], // Rifle Squad
+["Indep","IND_TURA_lxWS","Infantry","I_Tura_InfSentry_lxWS"], // Sentry
+["Indep","IND_TURA_lxWS","Infantry","I_Tura_InfTeam_lxWS"], // Fire Team
+["Indep","IND_TURA_lxWS","Motorized","I_Tura_MotInf_Team_lxWS"], // Motorized Team
+["Indep","IND_TURA_lxWS","Motorized","I_Tura_MotInf_AT_lxWS"], // Motorized Anti-armor Team
+["Indep","IND_TURA_lxWS","Motorized","I_Tura_MotInf_Reinforce_lxWS"], // Motorized Reinforcements
+["Indep","IND_TURA_lxWS","Mechanized","Aegis_I_Tura_MechInfSquad"], // Mechanized Rifle Squad
+
+// ===== Gear (122 unique) =====
+"100Rnd_762x51_S77_Green_lxWS",
+"100Rnd_762x51_S77_Green_Tracer_lxWS",
+"10Rnd_Mk14_762x51_Mag",
+"150Rnd_762x54_Box",
+"16Rnd_9x21_Mag",
+"1Rnd_40mm_HE_lxWS",
+"1Rnd_50mm_Smoke_lxWS",
+"1Rnd_58mm_AT_lxWS",
+"1Rnd_HE_Grenade_shell",
+"20Rnd_12Gauge_AA40_Pellets_lxWS",
+"20Rnd_762x51_Mag",
+"20Rnd_762x51_slr_desert_lxWS",
+"20Rnd_762x51_slr_lxWS",
+"2Rnd_12Gauge_Pellets",
+"30Rnd_545x39_Mag_F",
+"30Rnd_762x39_AK12_Mag_F",
+"30Rnd_762x39_Mag_F",
+"30Rnd_762x39_Mag_worn_lxWS",
+"30Rnd_9x21_Mag",
+"35Rnd_556x45_Velko_reload_tracer_yellow_lxWS",
+"50Rnd_570x28_SMG_03",
+"6Rnd_45ACP_Cylinder",
+"75rnd_762x39_AK12_Mag_F",
+"75Rnd_762x39_Mag_F",
+"8Rnd_12Gauge_AA40_Pellets_lxWS",
+"Aegis_10Rnd_762x54_SVD_Yellow_Mag_F",
+"Aegis_200Rnd_762x51_MAG_Green_F",
+"Aegis_B_FieldPack_cbr_Tura_HG2",
+"Aegis_MMG_FNMAG_old_F",
+"Aegis_srifle_SVD_KHS_old_F",
+"Aegis_V_Ammo_Bandolier_F",
+"Aegis_V_ChestRigEast_Tan_F",
+"arifle_AK12U_F",
+"arifle_AKM_F",
+"arifle_AKS_F",
+"arifle_Galat_lxWS",
+"arifle_Galat_worn_lxWS",
+"arifle_RPK12_F",
+"arifle_SLR_D_KHS_old_lxWS",
+"arifle_SLR_GL_lxWS",
+"arifle_VelkoR5_GL_lxWS",
+"arifle_VelkoR5_lxWS",
+"B_FieldPack_khk_Bandit_2_lxWS",
+"B_FieldPack_oli_Medic_1_lxWS",
+"B_Kitbag_cbr_Bandit_2_F",
+"B_Kitbag_cbr_Hireling_1_lxWS",
+"Binocular",
+"Chemlight_green",
+"FakeWeapon",
+"FirstAidKit",
+"G_Aviator",
+"G_Bandanna_Oli",
+"G_Lowprofile",
+"G_Sport_Blackred",
+"H_Booniehat_khk_hs",
+"H_Tank_black_F",
+"HandGrenade",
+"hgun_P07_blk_F",
+"hgun_PDW2000_F",
+"hgun_Pistol_heavy_02_Yorris_F",
+"I_Tura_UAV_02_IED_backpack_lxWS",
+"I_UAVTerminal",
+"ItemCompass",
+"ItemMap",
+"ItemRadio",
+"ItemWatch",
+"launch_RPG32_F",
+"launch_RPG7_F",
+"LMG_S77_Desert_lxWS",
+"LMG_Zafir_F",
+"lxWS_H_ssh40_green",
+"lxWS_H_turban_01_black",
+"lxWS_H_turban_02_black",
+"lxWS_H_turban_02_red",
+"lxWS_H_turban_02_sand",
+"lxWS_H_turban_03_black",
+"lxWS_H_turban_03_green",
+"lxWS_H_turban_03_sand",
+"lxWS_H_turban_04_green",
+"MiniGrenade",
+"PickupHorn_rf",
+"Put",
+"RPG32_F",
+"RPG7_F",
+"sgun_aa40_Holosight_blk_lxWS",
+"sgun_HunterShotgun_01_F",
+"SMG_03_TR_black",
+"SmokeShell",
+"SmokeShellGreen",
+"SmokeShellOrange",
+"SmokeShellPurple",
+"SmokeShellRed",
+"SportCarHorn",
+"srifle_DMR_06_camo_khs_F",
+"srifle_DMR_06_hunter_khs_F",
+"Throw",
+"TruckHorn",
+"TruckHorn3",
+"U_I_L_Uniform_01_tshirt_black_F",
+"U_I_L_Uniform_01_tshirt_skull_F",
+"U_lxWS_Djella_02_Brown",
+"U_lxWS_Djella_02_Grey",
+"U_lxWS_Djella_02_Sand",
+"U_lxWS_Djella_03_Green",
+"U_lxWS_Djella_B_02_Sand",
+"U_lxWS_Djella_O_02_Brown",
+"U_lxWS_Djella_O_02_Grey",
+"U_lxWS_Djella_O_02_Sand",
+"U_lxWS_Djella_O_03_Green",
+"U_lxWS_I_Djella_03",
+"U_lxWS_SFIA_deserter",
+"U_lxWS_SFIA_deserter_O",
+"U_lxWS_SFIA_soldier_1",
+"U_lxWS_SFIA_Tanker",
+"U_SFIA_deserter_lxWS",
+"V_BandollierB_blk",
+"V_Chestrig_khk",
+"V_lxWS_HarnessO_oli",
+"V_lxWS_TacVestIR_oli",
+"V_PlateCarrier1_blk",
+"V_TacVest_blk",
+"V_TacVest_oli",
+
+
+
+
+// ============================================================
+//  IND_TURA_lxWS â€” 61 CfgVehicles classes
+//  scope >= 1 | inherited props: false
+// ============================================================
+
+class Item_I_Tura_UavTerminal_lxWS: Item_B_Tura_UavTerminal_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    faction = "IND_TURA_lxWS";
+    class TransportItems
+    {
+        class _xx_I_Tura_UavTerminal_lxWS
+        {
+            name = "I_Tura_UavTerminal_lxWS";
+            count = 1;
+        };
+    };
+};
+
+class I_Tura_UAV_02_IED_lxWS: UAV_02_IED_Base_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\I_Tura_UAV_02_IED_lxWS.jpg";
+    scope = 2;
+    scopeCurator = 2;
+    side = 2;
+    faction = "IND_TURA_lxWS";
+    crew = "I_UAV_AI";
+    typicalCargo[] = {"I_UAV_AI"};
+    hiddenSelectionsTextures[] = {"lxWS\air_1_f_lxWS\Data\T_Gun_Drone_CO.paa", "lxWS\air_1_f_lxWS\Data\Gun_Drone_Adds_CO.paa"};
+    hiddenSelectionsMaterials[] = {"lxWS\air_1_f_lxWS\Data\drone_T_mat.rvmat", "lxWS\air_1_f_lxWS\Data\gun_drone_adds.rvmat"};
+    textureList[] = {"IND_TURA_lxWS", 1};
+    class SimpleObject
+    {
+    };
+    class assembleInfo
+    {
+        primary = 1;
+        base = "";
+        assembleTo = "";
+        displayName = "";
+        dissasembleTo[] = {"I_Tura_UAV_02_IED_backpack_lxWS"};
+    };
+};
+
+class I_Tura_UAV_02_IED_backpack_lxWS: Weapon_Bag_Base
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    mapSize = 0.6;
+    scope = 1;
+    scopeCurator = 1;
+    displayName = "UAV Bag (IED) [Tura]";
+    model = "\lxWS\air_f_lxWS\Bags\UAV_backpack_lxWS.p3d";
+    editorCategory = "EdCat_Equipment";
+    editorSubcategory = "EdSubcat_Backpacks";
+    faction = "IND_TURA_lxWS";
+    picture = "\lxWS\air_f_lxWS\Data\UI\icon_I_UAV_02_backpack_lxWS_CA.paa";
+    hiddenSelections[] = {"camo", "camo2"};
+    hiddenSelectionsTextures[] = {"\lxWS\air_f_lxWS\Bags\Data\UAV_backpack_NATO_CO.paa", "lxWS\air_1_f_lxWS\Data\T_Gun_Drone_CO.paa"};
+    maximumLoad = 0;
+    mass = 400;
+    class assembleInfo: assembleInfo
+    {
+        base = "";
+        displayName = "IED UAV";
+        assembleTo = "I_Tura_UAV_02_IED_lxWS";
+    };
+};
+
+class I_G_UAV_02_IED_backpack_lxWS: Weapon_Bag_Base
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    mapSize = 0.6;
+    scope = 1;
+    scopeCurator = 1;
+    displayName = "UAV Bag (IED) [FIA]";
+    model = "\lxWS\air_f_lxWS\Bags\UAV_backpack_lxWS.p3d";
+    editorCategory = "EdCat_Equipment";
+    editorSubcategory = "EdSubcat_Backpacks";
+    faction = "IND_TURA_lxWS";
+    picture = "\lxWS\air_f_lxWS\Data\UI\icon_I_UAV_02_backpack_lxWS_CA.paa";
+    hiddenSelections[] = {"camo", "camo2"};
+    hiddenSelectionsTextures[] = {"\lxWS\air_f_lxWS\Bags\Data\UAV_backpack_AAF_CO.paa", "lxWS\air_f_lxWS\Data\I_Gun_Drone_CO.paa"};
+    maximumLoad = 0;
+    mass = 400;
+    class assembleInfo: assembleInfo
+    {
+        base = "";
+        displayName = "IED UAV";
+        assembleTo = "I_G_UAV_02_IED_lxWS";
+    };
+};
+
+class I_SFIA_scout_lxWS: I_C_Soldier_Bandit_5_F
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    side = 2;
+    faction = "IND_TURA_lxWS";
+    modelSides[] = {6};
+    scope = 1;
+    scopeCurator = 1;
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\I_SFIA_scout_lxWS.jpg";
+    genericNames = "lxWS_WSaharaMen";
+    identityTypes[] = {"LanguageFRE_F", "Head_TK", "lxWS_Head_African"};
+    editorSubcategory = "EdSubcat_Personnel";
+    headgearList[] = {"lxWS_H_turban_02_black", 1, "lxWS_H_turban_02_sand", 3, "lxWS_H_turban_02_black_bandit", 2, "lxWS_H_turban_02_sand_bandit", 5};
+    uniformClass = "U_lxWS_Djella_02_Sand";
+    armorStructural = 4;
+    model = "lxws\characters_f_lxws\uniform\djellaba\djellaba_02_lxWS.p3d";
+    hiddenSelections[] = {"camo1", "camo2", "camo"};
+    hiddenSelectionsTextures[] = {"lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_sand_co.paa", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_sand_co.paa", "lxws\characters_f_lxws\data\sfia\ig_sfia_1_2_co.paa"};
+    weapons[] = {"arifle_SLR_D_KHS_old_lxWS", "Throw", "Put"};
+    respawnWeapons[] = {"arifle_SLR_D_KHS_old_lxWS", "Throw", "Put"};
+    magazines[] = {"20Rnd_762x51_slr_desert_lxWS", "20Rnd_762x51_slr_lxWS", "20Rnd_762x51_slr_lxWS", "20Rnd_762x51_slr_lxWS", "20Rnd_762x51_slr_lxWS", "MiniGrenade", "MiniGrenade"};
+    respawnMagazines[] = {"20Rnd_762x51_slr_desert_lxWS", "20Rnd_762x51_slr_lxWS", "20Rnd_762x51_slr_lxWS", "20Rnd_762x51_slr_lxWS", "20Rnd_762x51_slr_lxWS", "MiniGrenade", "MiniGrenade"};
+    linkedItems[] = {"V_Chestrig_khk", "lxWS_H_turban_02_sand", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"V_Chestrig_khk", "lxWS_H_turban_02_sand", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    class EventHandlers: EventHandlers
+    {
+        init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+    };
+    class Wounds
+    {
+        tex[] = {};
+        mat[] = {"a3\characters_f_enoch\uniforms\data\i_e_soldier_01.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_injury.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_injury.rvmat", "a3\characters_f_enoch\uniforms\data\i_e_soldier_01_pants.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_Pants_injury.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_Pants_injury.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter_injury.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_pants.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_shirt.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_shirt_gn.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_gn_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_gn_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxws_djellaba_pants_stealth.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_pants_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_pants_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxws_djellaba_shirt_stealth.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_shirt_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_shirt_stealth_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03_injury.rvmat", "lxws\characters_f_lxws\data\sfia\officer_sfia.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f\civil\data\c_cloth1.rvmat", "a3\characters_f\civil\data\c_cloth1_injury.rvmat", "a3\characters_f\civil\data\c_cloth1_injury.rvmat", "a3\characters_f\civil\data\c_cloth2.rvmat", "a3\characters_f\civil\data\c_cloth2_injury.rvmat", "a3\characters_f\civil\data\c_cloth2_injury.rvmat", "a3\characters_f\civil\data\c_cloth3.rvmat", "a3\characters_f\civil\data\c_cloth3_injury.rvmat", "a3\characters_f\civil\data\c_cloth3_injury.rvmat", "a3\characters_f\civil\data\c_cloth4.rvmat", "a3\characters_f\civil\data\c_cloth4_injury.rvmat", "a3\characters_f\civil\data\c_cloth4_injury.rvmat", "a3\characters_f_epb\blufor\data\clothing1_dirty.rvmat", "a3\Characters_f\blufor\Data\clothing1_injury.rvmat", "a3\Characters_f\blufor\Data\clothing1_injury.rvmat", "a3\characters_f\civil\data\c_poloshirtpants.rvmat", "a3\characters_f\civil\data\c_poloshirtpants_injury.rvmat", "a3\characters_f\civil\data\c_poloshirtpants_injury.rvmat", "a3\characters_f\civil\data\c_poloshirt.rvmat", "a3\characters_f\civil\data\c_poloshirt_injury.rvmat", "a3\characters_f\civil\data\c_poloshirt_injury.rvmat", "a3\characters_f\common\data\coveralls.rvmat", "a3\Characters_F\Common\Data\coveralls_injury.rvmat", "A3\Characters_F\Common\Data\coveralls_injury.rvmat", "a3\characters_f\civil\data\hunter.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing_injury.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing_injury.rvmat", "a3\characters_f_gamma\guerrilla\data\ig_guerrilla2_1.rvmat", "A3\Characters_F_Gamma\Guerrilla\Data\ig_guerrilla2_1_injury.rvmat", "A3\Characters_F_Gamma\Guerrilla\Data\ig_guerrilla2_1_injury.rvmat", "a3\characters_f_gamma\guerrilla\data\ig_guerrilla3_1.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f_epb\guerrilla\data\ig_guerrilla4_1.rvmat", "A3\Characters_F_EPB\Guerrilla\Data\ig_guerrilla4_1_injury.rvmat", "A3\Characters_F_EPB\Guerrilla\Data\ig_guerrilla4_1_injury.rvmat", "a3\characters_f_bootcamp\guerrilla\data\ig_guerrilla_6_1.rvmat", "A3\Characters_F_Bootcamp\Guerrilla\Data\ig_guerrilla_6_1_injury.rvmat", "A3\Characters_F_Bootcamp\Guerrilla\Data\ig_guerrilla_6_1_injury.rvmat", "a3\characters_f_beta\indep\data\officer.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\Characters_F\BLUFOR\Data\clothing1.rvmat", "A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat", "A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat", "a3\Characters_F\Common\Data\basicbody.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f_injury.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f_injury.rvmat", "A3\Characters_F\OPFOR\Data\clothing.rvmat", "A3\Characters_F\OPFOR\Data\clothing_injury.rvmat", "A3\Characters_F\OPFOR\Data\clothing_injury.rvmat", "A3\Characters_F\OPFOR\Data\officer_noInsignia.rvmat", "A3\Characters_F\OPFOR\Data\officer_injury_noinsignia.rvmat", "A3\Characters_F\OPFOR\Data\officer_injury_noinsignia.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag_injury.rvmat", "A3\Characters_F\Common\Data\basicbody.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "a3\characters_f\heads\data\hl_white.rvmat", "a3\characters_f\heads\data\hl_white_injury.rvmat", "a3\characters_f\heads\data\hl_white_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_old.rvmat", "A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat"};
+    };
+};
+
+class I_SFIA_watcher_lxWS: I_C_Soldier_Bandit_4_F
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    side = 2;
+    faction = "IND_TURA_lxWS";
+    modelSides[] = {6};
+    scope = 1;
+    scopeCurator = 1;
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\I_SFIA_watcher_lxWS.jpg";
+    genericNames = "lxWS_WSaharaMen";
+    identityTypes[] = {"LanguageFRE_F", "Head_TK", "lxWS_Head_African"};
+    editorSubcategory = "EdSubcat_Personnel";
+    headgearList[] = {"lxWS_H_turban_03_black", 1, "lxWS_H_turban_03_green", 1, "lxWS_H_turban_02_black_bandit", 5, "lxWS_H_turban_02_green_bandit", 5};
+    uniformClass = "U_lxWS_Djella_03_Green";
+    armorStructural = 4;
+    model = "lxws\characters_f_lxws\uniform\djellaba\djellaba_03_bandit_lxWS.p3d";
+    hiddenSelections[] = {"camo1", "camo2", "camo"};
+    hiddenSelectionsTextures[] = {"lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_green_co.paa", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_grey_co.paa", "lxws\characters_f_lxws\data\sfia\ig_sfia_1_2_co.paa"};
+    linkedItems[] = {"V_lxWS_TacVestIR_oli", "lxWS_H_turban_04_green", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"V_lxWS_TacVestIR_oli", "lxWS_H_turban_04_green", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    weapons[] = {"arifle_Galat_lxWS", "Throw", "Put"};
+    respawnWeapons[] = {"arifle_Galat_lxWS", "Throw", "Put"};
+    magazines[] = {"30Rnd_762x39_Mag_worn_lxWS", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "MiniGrenade", "MiniGrenade"};
+    respawnMagazines[] = {"30Rnd_762x39_Mag_worn_lxWS", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "MiniGrenade", "MiniGrenade"};
+    class EventHandlers: EventHandlers
+    {
+        init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+    };
+    class Wounds
+    {
+        tex[] = {};
+        mat[] = {"a3\characters_f_enoch\uniforms\data\i_e_soldier_01.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_injury.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_injury.rvmat", "a3\characters_f_enoch\uniforms\data\i_e_soldier_01_pants.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_Pants_injury.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_Pants_injury.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter_injury.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_pants.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_shirt.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_shirt_gn.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_gn_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_gn_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxws_djellaba_pants_stealth.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_pants_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_pants_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxws_djellaba_shirt_stealth.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_shirt_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_shirt_stealth_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03_injury.rvmat", "lxws\characters_f_lxws\data\sfia\officer_sfia.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f\civil\data\c_cloth1.rvmat", "a3\characters_f\civil\data\c_cloth1_injury.rvmat", "a3\characters_f\civil\data\c_cloth1_injury.rvmat", "a3\characters_f\civil\data\c_cloth2.rvmat", "a3\characters_f\civil\data\c_cloth2_injury.rvmat", "a3\characters_f\civil\data\c_cloth2_injury.rvmat", "a3\characters_f\civil\data\c_cloth3.rvmat", "a3\characters_f\civil\data\c_cloth3_injury.rvmat", "a3\characters_f\civil\data\c_cloth3_injury.rvmat", "a3\characters_f\civil\data\c_cloth4.rvmat", "a3\characters_f\civil\data\c_cloth4_injury.rvmat", "a3\characters_f\civil\data\c_cloth4_injury.rvmat", "a3\characters_f_epb\blufor\data\clothing1_dirty.rvmat", "a3\Characters_f\blufor\Data\clothing1_injury.rvmat", "a3\Characters_f\blufor\Data\clothing1_injury.rvmat", "a3\characters_f\civil\data\c_poloshirtpants.rvmat", "a3\characters_f\civil\data\c_poloshirtpants_injury.rvmat", "a3\characters_f\civil\data\c_poloshirtpants_injury.rvmat", "a3\characters_f\civil\data\c_poloshirt.rvmat", "a3\characters_f\civil\data\c_poloshirt_injury.rvmat", "a3\characters_f\civil\data\c_poloshirt_injury.rvmat", "a3\characters_f\common\data\coveralls.rvmat", "a3\Characters_F\Common\Data\coveralls_injury.rvmat", "A3\Characters_F\Common\Data\coveralls_injury.rvmat", "a3\characters_f\civil\data\hunter.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing_injury.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing_injury.rvmat", "a3\characters_f_gamma\guerrilla\data\ig_guerrilla2_1.rvmat", "A3\Characters_F_Gamma\Guerrilla\Data\ig_guerrilla2_1_injury.rvmat", "A3\Characters_F_Gamma\Guerrilla\Data\ig_guerrilla2_1_injury.rvmat", "a3\characters_f_gamma\guerrilla\data\ig_guerrilla3_1.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f_epb\guerrilla\data\ig_guerrilla4_1.rvmat", "A3\Characters_F_EPB\Guerrilla\Data\ig_guerrilla4_1_injury.rvmat", "A3\Characters_F_EPB\Guerrilla\Data\ig_guerrilla4_1_injury.rvmat", "a3\characters_f_bootcamp\guerrilla\data\ig_guerrilla_6_1.rvmat", "A3\Characters_F_Bootcamp\Guerrilla\Data\ig_guerrilla_6_1_injury.rvmat", "A3\Characters_F_Bootcamp\Guerrilla\Data\ig_guerrilla_6_1_injury.rvmat", "a3\characters_f_beta\indep\data\officer.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\Characters_F\BLUFOR\Data\clothing1.rvmat", "A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat", "A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat", "a3\Characters_F\Common\Data\basicbody.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f_injury.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f_injury.rvmat", "A3\Characters_F\OPFOR\Data\clothing.rvmat", "A3\Characters_F\OPFOR\Data\clothing_injury.rvmat", "A3\Characters_F\OPFOR\Data\clothing_injury.rvmat", "A3\Characters_F\OPFOR\Data\officer_noInsignia.rvmat", "A3\Characters_F\OPFOR\Data\officer_injury_noinsignia.rvmat", "A3\Characters_F\OPFOR\Data\officer_injury_noinsignia.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag_injury.rvmat", "A3\Characters_F\Common\Data\basicbody.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "a3\characters_f\heads\data\hl_white.rvmat", "a3\characters_f\heads\data\hl_white_injury.rvmat", "a3\characters_f\heads\data\hl_white_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_old.rvmat", "A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat"};
+    };
+};
+
+class I_SFIA_enforcer_lxWS: I_C_Soldier_Para_2_F
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    side = 2;
+    faction = "IND_TURA_lxWS";
+    modelSides[] = {6};
+    scope = 1;
+    scopeCurator = 1;
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\I_SFIA_enforcer_lxWS.jpg";
+    genericNames = "lxWS_WSaharaMen";
+    identityTypes[] = {"LanguageFRE_F", "Head_TK", "lxWS_Head_African"};
+    editorSubcategory = "EdSubcat_Personnel";
+    headgearList[] = {"lxWS_H_turban_03_black", 1, "lxWS_H_turban_03_green", 1, "lxWS_H_turban_03_sand", 1, "lxWS_H_turban_02_black_bandit", 2, "lxWS_H_turban_02_green_bandit", 2, "lxWS_H_turban_02_sand_bandit", 2};
+    uniformClass = "U_lxWS_Djella_02_Grey";
+    armorStructural = 4;
+    model = "lxws\characters_f_lxws\uniform\djellaba\djellaba_02_lxWS.p3d";
+    hiddenSelections[] = {"camo1", "camo2", "camo"};
+    hiddenSelectionsTextures[] = {"lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_grey_co.paa", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_brown_co.paa", "lxws\characters_f_lxws\data\sfia\ig_sfia_1_2_co.paa"};
+    weapons[] = {"arifle_Galat_lxWS", "Throw", "Put"};
+    respawnWeapons[] = {"arifle_Galat_lxWS", "Throw", "Put"};
+    magazines[] = {"75Rnd_762x39_Mag_F", "75Rnd_762x39_Mag_F", "75Rnd_762x39_Mag_F", "75Rnd_762x39_Mag_F", "MiniGrenade", "MiniGrenade"};
+    respawnMagazines[] = {"75Rnd_762x39_Mag_F", "75Rnd_762x39_Mag_F", "75Rnd_762x39_Mag_F", "75Rnd_762x39_Mag_F", "MiniGrenade", "MiniGrenade"};
+    linkedItems[] = {"V_lxWS_HarnessO_oli", "lxWS_H_turban_03_sand", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"V_lxWS_HarnessO_oli", "lxWS_H_turban_03_sand", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    class EventHandlers: EventHandlers
+    {
+        init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+    };
+    class Wounds
+    {
+        tex[] = {};
+        mat[] = {"a3\characters_f_enoch\uniforms\data\i_e_soldier_01.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_injury.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_injury.rvmat", "a3\characters_f_enoch\uniforms\data\i_e_soldier_01_pants.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_Pants_injury.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_Pants_injury.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter_injury.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_pants.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_shirt.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_shirt_gn.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_gn_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_gn_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxws_djellaba_pants_stealth.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_pants_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_pants_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxws_djellaba_shirt_stealth.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_shirt_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_shirt_stealth_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03_injury.rvmat", "lxws\characters_f_lxws\data\sfia\officer_sfia.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f\civil\data\c_cloth1.rvmat", "a3\characters_f\civil\data\c_cloth1_injury.rvmat", "a3\characters_f\civil\data\c_cloth1_injury.rvmat", "a3\characters_f\civil\data\c_cloth2.rvmat", "a3\characters_f\civil\data\c_cloth2_injury.rvmat", "a3\characters_f\civil\data\c_cloth2_injury.rvmat", "a3\characters_f\civil\data\c_cloth3.rvmat", "a3\characters_f\civil\data\c_cloth3_injury.rvmat", "a3\characters_f\civil\data\c_cloth3_injury.rvmat", "a3\characters_f\civil\data\c_cloth4.rvmat", "a3\characters_f\civil\data\c_cloth4_injury.rvmat", "a3\characters_f\civil\data\c_cloth4_injury.rvmat", "a3\characters_f_epb\blufor\data\clothing1_dirty.rvmat", "a3\Characters_f\blufor\Data\clothing1_injury.rvmat", "a3\Characters_f\blufor\Data\clothing1_injury.rvmat", "a3\characters_f\civil\data\c_poloshirtpants.rvmat", "a3\characters_f\civil\data\c_poloshirtpants_injury.rvmat", "a3\characters_f\civil\data\c_poloshirtpants_injury.rvmat", "a3\characters_f\civil\data\c_poloshirt.rvmat", "a3\characters_f\civil\data\c_poloshirt_injury.rvmat", "a3\characters_f\civil\data\c_poloshirt_injury.rvmat", "a3\characters_f\common\data\coveralls.rvmat", "a3\Characters_F\Common\Data\coveralls_injury.rvmat", "A3\Characters_F\Common\Data\coveralls_injury.rvmat", "a3\characters_f\civil\data\hunter.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing_injury.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing_injury.rvmat", "a3\characters_f_gamma\guerrilla\data\ig_guerrilla2_1.rvmat", "A3\Characters_F_Gamma\Guerrilla\Data\ig_guerrilla2_1_injury.rvmat", "A3\Characters_F_Gamma\Guerrilla\Data\ig_guerrilla2_1_injury.rvmat", "a3\characters_f_gamma\guerrilla\data\ig_guerrilla3_1.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f_epb\guerrilla\data\ig_guerrilla4_1.rvmat", "A3\Characters_F_EPB\Guerrilla\Data\ig_guerrilla4_1_injury.rvmat", "A3\Characters_F_EPB\Guerrilla\Data\ig_guerrilla4_1_injury.rvmat", "a3\characters_f_bootcamp\guerrilla\data\ig_guerrilla_6_1.rvmat", "A3\Characters_F_Bootcamp\Guerrilla\Data\ig_guerrilla_6_1_injury.rvmat", "A3\Characters_F_Bootcamp\Guerrilla\Data\ig_guerrilla_6_1_injury.rvmat", "a3\characters_f_beta\indep\data\officer.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\Characters_F\BLUFOR\Data\clothing1.rvmat", "A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat", "A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat", "a3\Characters_F\Common\Data\basicbody.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f_injury.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f_injury.rvmat", "A3\Characters_F\OPFOR\Data\clothing.rvmat", "A3\Characters_F\OPFOR\Data\clothing_injury.rvmat", "A3\Characters_F\OPFOR\Data\clothing_injury.rvmat", "A3\Characters_F\OPFOR\Data\officer_noInsignia.rvmat", "A3\Characters_F\OPFOR\Data\officer_injury_noinsignia.rvmat", "A3\Characters_F\OPFOR\Data\officer_injury_noinsignia.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag_injury.rvmat", "A3\Characters_F\Common\Data\basicbody.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "a3\characters_f\heads\data\hl_white.rvmat", "a3\characters_f\heads\data\hl_white_injury.rvmat", "a3\characters_f\heads\data\hl_white_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_old.rvmat", "A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat"};
+    };
+};
+
+class I_SFIA_hireling_lxWS: I_C_Soldier_Bandit_2_F
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    side = 2;
+    faction = "IND_TURA_lxWS";
+    modelSides[] = {6};
+    scope = 1;
+    scopeCurator = 1;
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\I_SFIA_hireling_lxWS.jpg";
+    genericNames = "lxWS_WSaharaMen";
+    identityTypes[] = {"LanguageFRE_F", "Head_TK", "lxWS_Head_African"};
+    editorSubcategory = "EdSubcat_Personnel";
+    headgearList[] = {"lxWS_H_turban_03_black", 1, "lxWS_H_turban_03_green", 1, "lxWS_H_turban_02_black_bandit", 2, "lxWS_H_turban_02_green_bandit", 2};
+    uniformClass = "U_lxWS_Djella_02_Brown";
+    armorStructural = 4;
+    model = "lxws\characters_f_lxws\uniform\djellaba\djellaba_02_lxWS.p3d";
+    hiddenSelections[] = {"camo1", "camo2", "camo"};
+    hiddenSelectionsTextures[] = {"lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_brown_co.paa", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_black_co.paa", "lxws\characters_f_lxws\data\sfia\ig_sfia_1_2_co.paa"};
+    weapons[] = {"hgun_PDW2000_F", "launch_RPG32_F", "Throw", "Put"};
+    respawnWeapons[] = {"hgun_PDW2000_F", "launch_RPG32_F", "Throw", "Put"};
+    magazines[] = {"30Rnd_9x21_Mag", "30Rnd_9x21_Mag", "RPG32_F"};
+    respawnMagazines[] = {"30Rnd_9x21_Mag", "30Rnd_9x21_Mag", "RPG32_F"};
+    linkedItems[] = {"lxWS_H_turban_03_black", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"lxWS_H_turban_03_black", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    backpack = "B_Kitbag_cbr_Hireling_1_lxWS";
+    class EventHandlers: EventHandlers
+    {
+        init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+    };
+    class Wounds
+    {
+        tex[] = {};
+        mat[] = {"a3\characters_f_enoch\uniforms\data\i_e_soldier_01.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_injury.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_injury.rvmat", "a3\characters_f_enoch\uniforms\data\i_e_soldier_01_pants.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_Pants_injury.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_Pants_injury.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter_injury.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_pants.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_shirt.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_shirt_gn.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_gn_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_gn_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxws_djellaba_pants_stealth.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_pants_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_pants_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxws_djellaba_shirt_stealth.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_shirt_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_shirt_stealth_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03_injury.rvmat", "lxws\characters_f_lxws\data\sfia\officer_sfia.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f\civil\data\c_cloth1.rvmat", "a3\characters_f\civil\data\c_cloth1_injury.rvmat", "a3\characters_f\civil\data\c_cloth1_injury.rvmat", "a3\characters_f\civil\data\c_cloth2.rvmat", "a3\characters_f\civil\data\c_cloth2_injury.rvmat", "a3\characters_f\civil\data\c_cloth2_injury.rvmat", "a3\characters_f\civil\data\c_cloth3.rvmat", "a3\characters_f\civil\data\c_cloth3_injury.rvmat", "a3\characters_f\civil\data\c_cloth3_injury.rvmat", "a3\characters_f\civil\data\c_cloth4.rvmat", "a3\characters_f\civil\data\c_cloth4_injury.rvmat", "a3\characters_f\civil\data\c_cloth4_injury.rvmat", "a3\characters_f_epb\blufor\data\clothing1_dirty.rvmat", "a3\Characters_f\blufor\Data\clothing1_injury.rvmat", "a3\Characters_f\blufor\Data\clothing1_injury.rvmat", "a3\characters_f\civil\data\c_poloshirtpants.rvmat", "a3\characters_f\civil\data\c_poloshirtpants_injury.rvmat", "a3\characters_f\civil\data\c_poloshirtpants_injury.rvmat", "a3\characters_f\civil\data\c_poloshirt.rvmat", "a3\characters_f\civil\data\c_poloshirt_injury.rvmat", "a3\characters_f\civil\data\c_poloshirt_injury.rvmat", "a3\characters_f\common\data\coveralls.rvmat", "a3\Characters_F\Common\Data\coveralls_injury.rvmat", "A3\Characters_F\Common\Data\coveralls_injury.rvmat", "a3\characters_f\civil\data\hunter.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing_injury.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing_injury.rvmat", "a3\characters_f_gamma\guerrilla\data\ig_guerrilla2_1.rvmat", "A3\Characters_F_Gamma\Guerrilla\Data\ig_guerrilla2_1_injury.rvmat", "A3\Characters_F_Gamma\Guerrilla\Data\ig_guerrilla2_1_injury.rvmat", "a3\characters_f_gamma\guerrilla\data\ig_guerrilla3_1.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f_epb\guerrilla\data\ig_guerrilla4_1.rvmat", "A3\Characters_F_EPB\Guerrilla\Data\ig_guerrilla4_1_injury.rvmat", "A3\Characters_F_EPB\Guerrilla\Data\ig_guerrilla4_1_injury.rvmat", "a3\characters_f_bootcamp\guerrilla\data\ig_guerrilla_6_1.rvmat", "A3\Characters_F_Bootcamp\Guerrilla\Data\ig_guerrilla_6_1_injury.rvmat", "A3\Characters_F_Bootcamp\Guerrilla\Data\ig_guerrilla_6_1_injury.rvmat", "a3\characters_f_beta\indep\data\officer.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\Characters_F\BLUFOR\Data\clothing1.rvmat", "A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat", "A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat", "a3\Characters_F\Common\Data\basicbody.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f_injury.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f_injury.rvmat", "A3\Characters_F\OPFOR\Data\clothing.rvmat", "A3\Characters_F\OPFOR\Data\clothing_injury.rvmat", "A3\Characters_F\OPFOR\Data\clothing_injury.rvmat", "A3\Characters_F\OPFOR\Data\officer_noInsignia.rvmat", "A3\Characters_F\OPFOR\Data\officer_injury_noinsignia.rvmat", "A3\Characters_F\OPFOR\Data\officer_injury_noinsignia.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag_injury.rvmat", "A3\Characters_F\Common\Data\basicbody.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "a3\characters_f\heads\data\hl_white.rvmat", "a3\characters_f\heads\data\hl_white_injury.rvmat", "a3\characters_f\heads\data\hl_white_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_old.rvmat", "A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat"};
+    };
+};
+
+class I_SFIA_medic2_lxWS: I_C_Soldier_Bandit_1_F
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    side = 2;
+    faction = "IND_TURA_lxWS";
+    modelSides[] = {6};
+    scope = 1;
+    scopeCurator = 1;
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\I_SFIA_medic2_lxWS.jpg";
+    genericNames = "lxWS_WSaharaMen";
+    identityTypes[] = {"LanguageFRE_F", "Head_TK", "lxWS_Head_African"};
+    editorSubcategory = "EdSubcat_Personnel";
+    headgearList[] = {"lxWS_H_turban_03_black", 1, "lxWS_H_turban_03_green", 1, "lxWS_H_turban_02_black_bandit", 5, "lxWS_H_turban_02_green_bandit", 5};
+    uniformClass = "U_lxWS_Djella_03_Green";
+    armorStructural = 4;
+    model = "lxws\characters_f_lxws\uniform\djellaba\djellaba_03_bandit_lxWS.p3d";
+    hiddenSelections[] = {"camo1", "camo2", "camo"};
+    hiddenSelectionsTextures[] = {"lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_green_co.paa", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_grey_co.paa", "lxws\characters_f_lxws\data\sfia\ig_sfia_1_2_co.paa"};
+    weapons[] = {"arifle_Galat_worn_lxWS", "Throw", "Put"};
+    respawnWeapons[] = {"arifle_Galat_worn_lxWS", "Throw", "Put"};
+    magazines[] = {"30Rnd_762x39_Mag_worn_lxWS", "30Rnd_762x39_Mag_worn_lxWS"};
+    respawnMagazines[] = {"30Rnd_762x39_Mag_worn_lxWS", "30Rnd_762x39_Mag_worn_lxWS"};
+    linkedItems[] = {"lxWS_H_turban_02_black", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"lxWS_H_turban_02_black", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    backpack = "B_FieldPack_oli_Medic_1_lxWS";
+    class EventHandlers: EventHandlers
+    {
+        init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+    };
+    class Wounds
+    {
+        tex[] = {};
+        mat[] = {"a3\characters_f_enoch\uniforms\data\i_e_soldier_01.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_injury.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_injury.rvmat", "a3\characters_f_enoch\uniforms\data\i_e_soldier_01_pants.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_Pants_injury.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_Pants_injury.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter_injury.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_pants.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_shirt.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_shirt_gn.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_gn_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_gn_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxws_djellaba_pants_stealth.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_pants_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_pants_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxws_djellaba_shirt_stealth.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_shirt_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_shirt_stealth_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03_injury.rvmat", "lxws\characters_f_lxws\data\sfia\officer_sfia.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f\civil\data\c_cloth1.rvmat", "a3\characters_f\civil\data\c_cloth1_injury.rvmat", "a3\characters_f\civil\data\c_cloth1_injury.rvmat", "a3\characters_f\civil\data\c_cloth2.rvmat", "a3\characters_f\civil\data\c_cloth2_injury.rvmat", "a3\characters_f\civil\data\c_cloth2_injury.rvmat", "a3\characters_f\civil\data\c_cloth3.rvmat", "a3\characters_f\civil\data\c_cloth3_injury.rvmat", "a3\characters_f\civil\data\c_cloth3_injury.rvmat", "a3\characters_f\civil\data\c_cloth4.rvmat", "a3\characters_f\civil\data\c_cloth4_injury.rvmat", "a3\characters_f\civil\data\c_cloth4_injury.rvmat", "a3\characters_f_epb\blufor\data\clothing1_dirty.rvmat", "a3\Characters_f\blufor\Data\clothing1_injury.rvmat", "a3\Characters_f\blufor\Data\clothing1_injury.rvmat", "a3\characters_f\civil\data\c_poloshirtpants.rvmat", "a3\characters_f\civil\data\c_poloshirtpants_injury.rvmat", "a3\characters_f\civil\data\c_poloshirtpants_injury.rvmat", "a3\characters_f\civil\data\c_poloshirt.rvmat", "a3\characters_f\civil\data\c_poloshirt_injury.rvmat", "a3\characters_f\civil\data\c_poloshirt_injury.rvmat", "a3\characters_f\common\data\coveralls.rvmat", "a3\Characters_F\Common\Data\coveralls_injury.rvmat", "A3\Characters_F\Common\Data\coveralls_injury.rvmat", "a3\characters_f\civil\data\hunter.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing_injury.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing_injury.rvmat", "a3\characters_f_gamma\guerrilla\data\ig_guerrilla2_1.rvmat", "A3\Characters_F_Gamma\Guerrilla\Data\ig_guerrilla2_1_injury.rvmat", "A3\Characters_F_Gamma\Guerrilla\Data\ig_guerrilla2_1_injury.rvmat", "a3\characters_f_gamma\guerrilla\data\ig_guerrilla3_1.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f_epb\guerrilla\data\ig_guerrilla4_1.rvmat", "A3\Characters_F_EPB\Guerrilla\Data\ig_guerrilla4_1_injury.rvmat", "A3\Characters_F_EPB\Guerrilla\Data\ig_guerrilla4_1_injury.rvmat", "a3\characters_f_bootcamp\guerrilla\data\ig_guerrilla_6_1.rvmat", "A3\Characters_F_Bootcamp\Guerrilla\Data\ig_guerrilla_6_1_injury.rvmat", "A3\Characters_F_Bootcamp\Guerrilla\Data\ig_guerrilla_6_1_injury.rvmat", "a3\characters_f_beta\indep\data\officer.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\Characters_F\BLUFOR\Data\clothing1.rvmat", "A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat", "A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat", "a3\Characters_F\Common\Data\basicbody.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f_injury.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f_injury.rvmat", "A3\Characters_F\OPFOR\Data\clothing.rvmat", "A3\Characters_F\OPFOR\Data\clothing_injury.rvmat", "A3\Characters_F\OPFOR\Data\clothing_injury.rvmat", "A3\Characters_F\OPFOR\Data\officer_noInsignia.rvmat", "A3\Characters_F\OPFOR\Data\officer_injury_noinsignia.rvmat", "A3\Characters_F\OPFOR\Data\officer_injury_noinsignia.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag_injury.rvmat", "A3\Characters_F\Common\Data\basicbody.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "a3\characters_f\heads\data\hl_white.rvmat", "a3\characters_f\heads\data\hl_white_injury.rvmat", "a3\characters_f\heads\data\hl_white_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_old.rvmat", "A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat"};
+    };
+};
+
+class I_SFIA_thug_lxWS: I_SFIA_scout_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    side = 2;
+    faction = "IND_TURA_lxWS";
+    modelSides[] = {6};
+    scope = 1;
+    scopeCurator = 1;
+    displayName = "Thug (Mines)";
+    role = "Sapper";
+    picture = "pictureExplosive";
+    icon = "iconManExplosive";
+    camouflage = 2;
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\I_SFIA_thug_lxWS.jpg";
+    genericNames = "lxWS_WSaharaMen";
+    identityTypes[] = {"LanguageFRE_F", "Head_TK", "lxWS_Head_African", "G_GUERIL_default"};
+    editorSubcategory = "EdSubcat_Personnel";
+    headgearList[] = {"lxWS_H_turban_03_black", 1, "lxWS_H_turban_03_green", 1, "lxWS_H_turban_03_sand", 1, "lxWS_H_turban_02_black_bandit", 5, "lxWS_H_turban_02_green_bandit", 5, "lxWS_H_turban_02_sand_bandit", 5};
+    uniformClass = "U_lxWS_Djella_02_Sand";
+    armorStructural = 4;
+    model = "lxws\characters_f_lxws\uniform\djellaba\djellaba_02_lxWS.p3d";
+    hiddenSelections[] = {"camo1", "camo2", "camo"};
+    hiddenSelectionsTextures[] = {"lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_sand_co.paa", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_sand_co.paa", "lxws\characters_f_lxws\data\sfia\ig_sfia_1_2_co.paa"};
+    weapons[] = {"arifle_Galat_worn_lxWS", "Throw", "Put"};
+    respawnWeapons[] = {"arifle_Galat_worn_lxWS", "Throw", "Put"};
+    magazines[] = {"30Rnd_762x39_Mag_worn_lxWS", "30Rnd_762x39_Mag_worn_lxWS"};
+    respawnMagazines[] = {"30Rnd_762x39_Mag_worn_lxWS", "30Rnd_762x39_Mag_worn_lxWS"};
+    linkedItems[] = {"lxWS_H_turban_01_black", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"lxWS_H_turban_01_black", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    backpack = "B_FieldPack_khk_Bandit_2_lxWS";
+    class EventHandlers: EventHandlers
+    {
+        init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+    };
+    class Wounds
+    {
+        tex[] = {};
+        mat[] = {"a3\characters_f_enoch\uniforms\data\i_e_soldier_01.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_injury.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_injury.rvmat", "a3\characters_f_enoch\uniforms\data\i_e_soldier_01_pants.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_Pants_injury.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_Pants_injury.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter_injury.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_pants.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_shirt.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_shirt_gn.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_gn_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_gn_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxws_djellaba_pants_stealth.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_pants_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_pants_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxws_djellaba_shirt_stealth.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_shirt_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_shirt_stealth_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03_injury.rvmat", "lxws\characters_f_lxws\data\sfia\officer_sfia.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f\civil\data\c_cloth1.rvmat", "a3\characters_f\civil\data\c_cloth1_injury.rvmat", "a3\characters_f\civil\data\c_cloth1_injury.rvmat", "a3\characters_f\civil\data\c_cloth2.rvmat", "a3\characters_f\civil\data\c_cloth2_injury.rvmat", "a3\characters_f\civil\data\c_cloth2_injury.rvmat", "a3\characters_f\civil\data\c_cloth3.rvmat", "a3\characters_f\civil\data\c_cloth3_injury.rvmat", "a3\characters_f\civil\data\c_cloth3_injury.rvmat", "a3\characters_f\civil\data\c_cloth4.rvmat", "a3\characters_f\civil\data\c_cloth4_injury.rvmat", "a3\characters_f\civil\data\c_cloth4_injury.rvmat", "a3\characters_f_epb\blufor\data\clothing1_dirty.rvmat", "a3\Characters_f\blufor\Data\clothing1_injury.rvmat", "a3\Characters_f\blufor\Data\clothing1_injury.rvmat", "a3\characters_f\civil\data\c_poloshirtpants.rvmat", "a3\characters_f\civil\data\c_poloshirtpants_injury.rvmat", "a3\characters_f\civil\data\c_poloshirtpants_injury.rvmat", "a3\characters_f\civil\data\c_poloshirt.rvmat", "a3\characters_f\civil\data\c_poloshirt_injury.rvmat", "a3\characters_f\civil\data\c_poloshirt_injury.rvmat", "a3\characters_f\common\data\coveralls.rvmat", "a3\Characters_F\Common\Data\coveralls_injury.rvmat", "A3\Characters_F\Common\Data\coveralls_injury.rvmat", "a3\characters_f\civil\data\hunter.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing_injury.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing_injury.rvmat", "a3\characters_f_gamma\guerrilla\data\ig_guerrilla2_1.rvmat", "A3\Characters_F_Gamma\Guerrilla\Data\ig_guerrilla2_1_injury.rvmat", "A3\Characters_F_Gamma\Guerrilla\Data\ig_guerrilla2_1_injury.rvmat", "a3\characters_f_gamma\guerrilla\data\ig_guerrilla3_1.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f_epb\guerrilla\data\ig_guerrilla4_1.rvmat", "A3\Characters_F_EPB\Guerrilla\Data\ig_guerrilla4_1_injury.rvmat", "A3\Characters_F_EPB\Guerrilla\Data\ig_guerrilla4_1_injury.rvmat", "a3\characters_f_bootcamp\guerrilla\data\ig_guerrilla_6_1.rvmat", "A3\Characters_F_Bootcamp\Guerrilla\Data\ig_guerrilla_6_1_injury.rvmat", "A3\Characters_F_Bootcamp\Guerrilla\Data\ig_guerrilla_6_1_injury.rvmat", "a3\characters_f_beta\indep\data\officer.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\Characters_F\BLUFOR\Data\clothing1.rvmat", "A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat", "A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat", "a3\Characters_F\Common\Data\basicbody.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f_injury.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f_injury.rvmat", "A3\Characters_F\OPFOR\Data\clothing.rvmat", "A3\Characters_F\OPFOR\Data\clothing_injury.rvmat", "A3\Characters_F\OPFOR\Data\clothing_injury.rvmat", "A3\Characters_F\OPFOR\Data\officer_noInsignia.rvmat", "A3\Characters_F\OPFOR\Data\officer_injury_noinsignia.rvmat", "A3\Characters_F\OPFOR\Data\officer_injury_noinsignia.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag_injury.rvmat", "A3\Characters_F\Common\Data\basicbody.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "a3\characters_f\heads\data\hl_white.rvmat", "a3\characters_f\heads\data\hl_white_injury.rvmat", "a3\characters_f\heads\data\hl_white_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_old.rvmat", "A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat"};
+    };
+};
+
+class I_SFIA_deserter_lxWS: I_SFIA_soldier_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    side = 2;
+    faction = "IND_TURA_lxWS";
+    modelSides[] = {6};
+    scope = 1;
+    scopeCurator = 1;
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\I_SFIA_deserter_lxWS.jpg";
+    displayName = "Deserter (Rifle)";
+    identityTypes[] = {"LanguageFRE_F", "Head_TK", "lxWS_Head_African", "G_GUERIL_default"};
+    editorSubcategory = "EdSubcat_Personnel";
+    uniformClass = "U_lxWS_SFIA_deserter";
+    model = "\lxWS\characters_f_lxWS\uniform\ig_guerrilla1_1_lxWS.p3d";
+    hiddenSelections[] = {"camo1", "camo2"};
+    hiddenSelectionsTextures[] = {"lxws\characters_f_lxws\data\SFIA\c_cloth1_deserter_co.paa", "\lxws\characters_f_lxws\data\SFIA\ig_sfia_1_2_co.paa"};
+    weapons[] = {"arifle_Galat_lxWS", "Throw", "Put"};
+    respawnWeapons[] = {"arifle_Galat_lxWS", "Throw", "Put"};
+    magazines[] = {"30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple"};
+    respawnMagazines[] = {"30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple"};
+    linkedItems[] = {"V_lxWS_HarnessO_oli", "lxWS_H_turban_03_green", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"V_lxWS_HarnessO_oli", "lxWS_H_turban_03_green", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    headgearList[] = {"lxWS_H_ssh40_green", 1, "lxWS_H_turban_03_black", 3, "lxWS_H_turban_03_green", 3, "lxWS_H_turban_03_sand", 3, "lxWS_H_turban_02_black_bandit", 7, "lxWS_H_turban_02_green_bandit", 7, "lxWS_H_turban_02_sand_bandit", 7};
+    class EventHandlers: EventHandlers
+    {
+        init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+    };
+};
+
+class I_SFIA_defector_lxWS: I_SFIA_soldier_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    side = 2;
+    faction = "IND_TURA_lxWS";
+    modelSides[] = {6};
+    scope = 1;
+    scopeCurator = 1;
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\I_SFIA_defector_lxWS.jpg";
+    displayName = "Defector (RGL)";
+    identityTypes[] = {"LanguageFRE_F", "Head_TK", "lxWS_Head_African", "G_GUERIL_default"};
+    editorSubcategory = "EdSubcat_Personnel";
+    weapons[] = {"arifle_SLR_GL_lxWS", "Throw", "Put"};
+    respawnWeapons[] = {"arifle_SLR_GL_lxWS", "Throw", "Put"};
+    magazines[] = {"20Rnd_762x51_slr_lxWS", "20Rnd_762x51_slr_lxWS", "20Rnd_762x51_slr_lxWS", "20Rnd_762x51_slr_lxWS", "20Rnd_762x51_slr_lxWS", "SmokeShell", "1Rnd_40mm_HE_lxWS", "1Rnd_40mm_HE_lxWS", "1Rnd_58mm_AT_lxWS", "1Rnd_58mm_AT_lxWS"};
+    respawnMagazines[] = {"20Rnd_762x51_slr_lxWS", "20Rnd_762x51_slr_lxWS", "20Rnd_762x51_slr_lxWS", "20Rnd_762x51_slr_lxWS", "20Rnd_762x51_slr_lxWS", "SmokeShell", "1Rnd_40mm_HE_lxWS", "1Rnd_40mm_HE_lxWS", "1Rnd_58mm_AT_lxWS", "1Rnd_58mm_AT_lxWS"};
+    linkedItems[] = {"V_lxWS_TacVestIR_oli", "lxWS_H_ssh40_green", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "G_Bandanna_Oli"};
+    respawnLinkedItems[] = {"V_lxWS_TacVestIR_oli", "lxWS_H_ssh40_green", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "G_Bandanna_Oli"};
+    headgearList[] = {"lxWS_H_ssh40_green", 3, "lxWS_H_turban_03_green", 1, "lxWS_H_turban_02_green_bandit", 3};
+    class EventHandlers: EventHandlers
+    {
+        init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
+    };
+};
+
+class I_Tura_scout_lxWS: I_SFIA_scout_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    uniformClass = "U_lxWS_Djella_O_02_Sand";
+};
+
+class I_Tura_watcher_lxWS: I_SFIA_watcher_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    uniformClass = "U_lxWS_Djella_O_03_Green";
+};
+
+class I_Tura_enforcer_lxWS: I_SFIA_enforcer_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    uniformClass = "U_lxWS_Djella_O_02_Grey";
+};
+
+class I_Tura_hireling_lxWS: I_SFIA_hireling_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    uniformClass = "U_lxWS_Djella_O_02_Brown";
+};
+
+class I_Tura_medic2_lxWS: I_SFIA_medic2_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    uniformClass = "U_lxWS_Djella_O_03_Green";
+};
+
+class I_Tura_thug_lxWS: I_SFIA_thug_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    uniformClass = "U_lxWS_Djella_O_02_Sand";
+};
+
+class I_Tura_deserter_lxWS: I_SFIA_deserter_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    uniformClass = "U_lxWS_SFIA_deserter_O";
+    modelSides[] = {6};
+};
+
+class I_Tura_defector_lxWS: I_SFIA_defector_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    uniformClass = "U_lxWS_SFIA_deserter_O";
+};
+
+class I_Tura_HMG_gunner_lxWS: I_Tura_deserter_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    linkedItems[] = {"G_Lowprofile", "V_lxWS_HarnessO_oli", "lxWS_H_turban_03_green", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"G_Lowprofile", "V_lxWS_HarnessO_oli", "lxWS_H_turban_03_green", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    headgearList[] = {"lxWS_H_turban_03_black", 3, "lxWS_H_turban_03_green", 3, "lxWS_H_turban_03_sand", 3};
+};
+
+class I_PMC_Soldier_01_lxWS: B_soldier_F
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    faction = "IND_TURA_lxWS";
+    side = 2;
+    identityTypes[] = {"LanguageRUS_F", "Head_Russian", "Head_Euro", "Head_Enoch", "Head_Asian"};
+    Items[] = {"FirstAidKit"};
+    RespawnItems[] = {"FirstAidKit"};
+    linkedItems[] = {"V_TacVest_oli", "H_Booniehat_khk_hs", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"V_TacVest_oli", "H_Booniehat_khk_hs", "ItemCompass", "ItemWatch", "ItemRadio"};
+    weapons[] = {"SMG_03_TR_black", "hgun_P07_blk_F", "Throw", "Put"};
+    respawnWeapons[] = {"SMG_03_TR_black", "hgun_P07_blk_F", "Throw", "Put"};
+    magazines[] = {"50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green", "HandGrenade", "HandGrenade"};
+    respawnMagazines[] = {"50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "50Rnd_570x28_SMG_03", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green", "HandGrenade", "HandGrenade"};
+    uniformClass = "U_I_L_Uniform_01_tshirt_black_F";
+    model = "\a3\Characters_F\Civil\I_L_Looter_01_tshirt_F.p3d";
+    hiddenSelections[] = {"Camo1", "Camo2", "insignia"};
+    hiddenSelectionsTextures[] = {"a3\Characters_F_Enoch\Uniforms\Data\I_L_Uniform_01_tshirt_skull_1_co.paa", "a3\Characters_F_Enoch\Uniforms\Data\I_L_Uniform_01_tshirt_skull_2_co.paa"};
+    class Wounds
+    {
+        tex[] = {};
+        mat[] = {"a3\characters_f\civil\data\c_cloth1.rvmat", "a3\characters_f\civil\data\c_cloth1_injury.rvmat", "a3\characters_f\civil\data\c_cloth1_injury.rvmat", "a3\characters_f_gamma\guerrilla\data\ig_guerrilla3_1.rvmat", "a3\characters_f_gamma\guerrilla\data\ig_guerrilla3_1_injury.rvmat", "a3\characters_f_gamma\guerrilla\data\ig_guerrilla3_1_injury.rvmat", "A3\Characters_F\Common\Data\basicbody.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "a3\characters_f\heads\data\hl_white.rvmat", "a3\characters_f\heads\data\hl_white_injury.rvmat", "a3\characters_f\heads\data\hl_white_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_old.rvmat", "A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat"};
+    };
+};
+
+class I_PMC_Soldier_02_lxWS: I_PMC_Soldier_01_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    linkedItems[] = {"V_PlateCarrier1_blk", "lxWS_H_turban_03_black", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"V_PlateCarrier1_blk", "lxWS_H_turban_03_black", "ItemCompass", "ItemWatch", "ItemRadio"};
+};
+
+class I_PMC_Soldier_03_lxWS: I_PMC_Soldier_01_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    linkedItems[] = {"V_PlateCarrier1_blk", "lxWS_H_turban_03_black", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"V_PlateCarrier1_blk", "lxWS_H_turban_03_black", "ItemCompass", "ItemWatch", "ItemRadio"};
+    uniformClass = "U_I_L_Uniform_01_tshirt_skull_F";
+    hiddenSelectionsTextures[] = {"a3\Characters_F_Enoch\Uniforms\Data\I_L_Uniform_01_tshirt_skull_1_co.paa", "a3\Characters_F_Enoch\Uniforms\Data\I_L_Uniform_01_tshirt_skull_2_co.paa"};
+};
+
+class I_PMC_Story_Gustavo_lxWS: I_PMC_Soldier_01_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\I_PMC_Story_Gustavo_lxWS.jpg";
+    identityTypes[] = {"LanguageRUS_F", "lxWS_Gustavo_Head"};
+    displayName = "Gustavo Dimitrovich";
+    editorSubcategory = "EdSubcat_Personnel_Story";
+    linkedItems[] = {"V_PlateCarrier1_blk", "lxWS_H_turban_02_black", "G_Sport_Blackred", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"V_PlateCarrier1_blk", "lxWS_H_turban_02_black", "G_Sport_Blackred", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    weapons[] = {"sgun_aa40_Holosight_blk_lxWS", "hgun_P07_blk_F", "Throw", "Put"};
+    respawnWeapons[] = {"sgun_aa40_Holosight_blk_lxWS", "hgun_P07_blk_F", "Throw", "Put"};
+    magazines[] = {"20Rnd_12Gauge_AA40_Pellets_lxWS", "8Rnd_12Gauge_AA40_Pellets_lxWS", "8Rnd_12Gauge_AA40_Pellets_lxWS", "8Rnd_12Gauge_AA40_Pellets_lxWS", "8Rnd_12Gauge_AA40_Pellets_lxWS", "8Rnd_12Gauge_AA40_Pellets_lxWS", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green", "HandGrenade", "HandGrenade"};
+    respawnMagazines[] = {"20Rnd_12Gauge_AA40_Pellets_lxWS", "8Rnd_12Gauge_AA40_Pellets_lxWS", "8Rnd_12Gauge_AA40_Pellets_lxWS", "8Rnd_12Gauge_AA40_Pellets_lxWS", "8Rnd_12Gauge_AA40_Pellets_lxWS", "8Rnd_12Gauge_AA40_Pellets_lxWS", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green", "HandGrenade", "HandGrenade"};
+    SLX_XEH_DISABLED = 0;
+    class Wounds
+    {
+        tex[] = {};
+        mat[] = {"a3\characters_f_enoch\uniforms\data\i_e_soldier_01.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_injury.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_injury.rvmat", "a3\characters_f_enoch\uniforms\data\i_e_soldier_01_pants.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_Pants_injury.rvmat", "a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_Pants_injury.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter_injury.rvmat", "lxws\characters_f_lxws\data\sfia\c_cloth1_deserter_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_pants.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_shirt.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxws_djellaba_shirt_gn.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_gn_injury.rvmat", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_gn_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxws_djellaba_pants_stealth.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_pants_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_pants_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxws_djellaba_shirt_stealth.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_shirt_stealth_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\lxWS_djellaba_shirt_stealth_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil01_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil02_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03_injury.rvmat", "lxws\characters_f_lxws\uniform\data\tak_civil03_injury.rvmat", "lxws\characters_f_lxws\data\sfia\officer_sfia.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f\civil\data\c_cloth1.rvmat", "a3\characters_f\civil\data\c_cloth1_injury.rvmat", "a3\characters_f\civil\data\c_cloth1_injury.rvmat", "a3\characters_f\civil\data\c_cloth2.rvmat", "a3\characters_f\civil\data\c_cloth2_injury.rvmat", "a3\characters_f\civil\data\c_cloth2_injury.rvmat", "a3\characters_f\civil\data\c_cloth3.rvmat", "a3\characters_f\civil\data\c_cloth3_injury.rvmat", "a3\characters_f\civil\data\c_cloth3_injury.rvmat", "a3\characters_f\civil\data\c_cloth4.rvmat", "a3\characters_f\civil\data\c_cloth4_injury.rvmat", "a3\characters_f\civil\data\c_cloth4_injury.rvmat", "a3\characters_f_epb\blufor\data\clothing1_dirty.rvmat", "a3\Characters_f\blufor\Data\clothing1_injury.rvmat", "a3\Characters_f\blufor\Data\clothing1_injury.rvmat", "a3\characters_f\civil\data\c_poloshirtpants.rvmat", "a3\characters_f\civil\data\c_poloshirtpants_injury.rvmat", "a3\characters_f\civil\data\c_poloshirtpants_injury.rvmat", "a3\characters_f\civil\data\c_poloshirt.rvmat", "a3\characters_f\civil\data\c_poloshirt_injury.rvmat", "a3\characters_f\civil\data\c_poloshirt_injury.rvmat", "a3\characters_f\common\data\coveralls.rvmat", "a3\Characters_F\Common\Data\coveralls_injury.rvmat", "A3\Characters_F\Common\Data\coveralls_injury.rvmat", "a3\characters_f\civil\data\hunter.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing_injury.rvmat", "a3\characters_f_beta\indep\data\ia_soldier_01_clothing_injury.rvmat", "a3\characters_f_gamma\guerrilla\data\ig_guerrilla2_1.rvmat", "A3\Characters_F_Gamma\Guerrilla\Data\ig_guerrilla2_1_injury.rvmat", "A3\Characters_F_Gamma\Guerrilla\Data\ig_guerrilla2_1_injury.rvmat", "a3\characters_f_gamma\guerrilla\data\ig_guerrilla3_1.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f\civil\data\hunter_injury.rvmat", "a3\characters_f_epb\guerrilla\data\ig_guerrilla4_1.rvmat", "A3\Characters_F_EPB\Guerrilla\Data\ig_guerrilla4_1_injury.rvmat", "A3\Characters_F_EPB\Guerrilla\Data\ig_guerrilla4_1_injury.rvmat", "a3\characters_f_bootcamp\guerrilla\data\ig_guerrilla_6_1.rvmat", "A3\Characters_F_Bootcamp\Guerrilla\Data\ig_guerrilla_6_1_injury.rvmat", "A3\Characters_F_Bootcamp\Guerrilla\Data\ig_guerrilla_6_1_injury.rvmat", "a3\characters_f_beta\indep\data\officer.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\characters_f_beta\indep\data\officer_injury.rvmat", "a3\Characters_F\BLUFOR\Data\clothing1.rvmat", "A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat", "A3\Characters_F\BLUFOR\Data\clothing1_injury.rvmat", "a3\Characters_F\Common\Data\basicbody.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f_injury.rvmat", "a3\characters_f_exp\blufor\data\u_b_ctrg_soldier_f_injury.rvmat", "A3\Characters_F\OPFOR\Data\clothing.rvmat", "A3\Characters_F\OPFOR\Data\clothing_injury.rvmat", "A3\Characters_F\OPFOR\Data\clothing_injury.rvmat", "A3\Characters_F\OPFOR\Data\officer_noInsignia.rvmat", "A3\Characters_F\OPFOR\Data\officer_injury_noinsignia.rvmat", "A3\Characters_F\OPFOR\Data\officer_injury_noinsignia.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag_injury.rvmat", "lxws\characters_1_f_lxws\uniform\data\clothing1_noflag_injury.rvmat", "A3\Characters_F\Common\Data\basicbody.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "A3\Characters_F\Common\Data\basicbody_injury.rvmat", "a3\characters_f\heads\data\hl_white.rvmat", "a3\characters_f\heads\data\hl_white_injury.rvmat", "a3\characters_f\heads\data\hl_white_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_02_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_old.rvmat", "A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat", "A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat", "A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat", "A3\Characters_F_Exp\Heads\Data\hl_asian_02_bald_muscular_injury.rvmat"};
+    };
+    class EventHandlers
+    {
+        init = "(_this select 0) setIdentity 'lxWS_ident_gustavo';";
+        class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base
+        {
+        };
+    };
+};
+
+class I_SFIA_Said_lxWS: I_SFIA_officer_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    faction = "IND_TURA_lxWS";
+    identityTypes[] = {"LanguageFRE_F", "lxWS_Said_Head"};
+    displayName = "Arib Said";
+    editorSubcategory = "EdSubcat_Personnel_Story";
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\I_SFIA_Said_lxWS.jpg";
+    linkedItems[] = {"V_TacVest_blk", "lxWS_H_turban_02_red", "G_Aviator", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"V_TacVest_blk", "lxWS_H_turban_02_red", "G_Aviator", "ItemCompass", "ItemWatch", "ItemRadio"};
+    weapons[] = {"arifle_Galat_lxWS", "Throw", "Put"};
+    respawnWeapons[] = {"arifle_Galat_lxWS", "Throw", "Put"};
+    magazines[] = {"30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "HandGrenade", "HandGrenade"};
+    respawnMagazines[] = {"30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "HandGrenade", "HandGrenade"};
+    uniformClass = "U_lxWS_I_Djella_03";
+    model = "lxws\characters_f_lxws\uniform\djellaba\djellaba_03a_lxWS.p3d";
+    hiddenSelections[] = {"camo1", "camo2"};
+    hiddenSelectionsTextures[] = {"lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_gn_black_co.paa", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_black_co.paa"};
+    SLX_XEH_DISABLED = 0;
+    class EventHandlers
+    {
+        init = "(_this select 0) setIdentity 'lxWS_ident_said';";
+        class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base
+        {
+        };
+    };
+};
+
+class I_Tura_crew_lxWS: I_SFIA_crew_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    faction = "IND_TURA_lxWS";
+    side = 2;
+    linkedItems[] = {"V_BandollierB_blk", "H_Tank_black_F", "G_Lowprofile", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"V_BandollierB_blk", "H_Tank_black_F", "G_Lowprofile", "ItemCompass", "ItemWatch", "ItemRadio"};
+    weapons[] = {"arifle_VelkoR5_lxWS", "Throw", "Put"};
+    respawnWeapons[] = {"arifle_VelkoR5_lxWS", "Throw", "Put"};
+    magazines[] = {"35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "HandGrenade", "HandGrenade"};
+    respawnMagazines[] = {"35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "HandGrenade", "HandGrenade"};
+};
+
+class I_Tura_deserter_EXT_R5GL_lxWS: I_SFIA_deserter_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    weapons[] = {"arifle_VelkoR5_GL_lxWS", "Throw", "Put"};
+    respawnWeapons[] = {"arifle_VelkoR5_GL_lxWS", "Throw", "Put"};
+    magazines[] = {"35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell"};
+    respawnMagazines[] = {"35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell"};
+};
+
+class I_SFIA_scout_EXT_Galat_lxWS: I_SFIA_scout_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    weapons[] = {"arifle_Galat_lxWS", "Throw", "Put"};
+    respawnWeapons[] = {"arifle_Galat_lxWS", "Throw", "Put"};
+    magazines[] = {"30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "MiniGrenade", "MiniGrenade"};
+    respawnMagazines[] = {"30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "MiniGrenade", "MiniGrenade"};
+};
+
+class I_Tura_enforcer_EXT_Zafir_lxWS: I_SFIA_enforcer_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    weapons[] = {"LMG_Zafir_F", "hgun_Pistol_heavy_02_Yorris_F", "Throw", "Put"};
+    respawnWeapons[] = {"LMG_Zafir_F", "hgun_Pistol_heavy_02_Yorris_F", "Throw", "Put"};
+    magazines[] = {"150Rnd_762x54_Box", "150Rnd_762x54_Box", "150Rnd_762x54_Box", "6Rnd_45ACP_Cylinder", "SmokeShell", "SmokeShellRed"};
+    respawnMagazines[] = {"150Rnd_762x54_Box", "150Rnd_762x54_Box", "150Rnd_762x54_Box", "6Rnd_45ACP_Cylinder", "SmokeShell", "SmokeShellRed"};
+};
+
+class I_Tura_enforcer_EXT_RPK12_lxWS: I_SFIA_enforcer_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    weapons[] = {"arifle_RPK12_F", "hgun_Pistol_heavy_02_Yorris_F", "Throw", "Put"};
+    respawnWeapons[] = {"arifle_RPK12_F", "hgun_Pistol_heavy_02_Yorris_F", "Throw", "Put"};
+    magazines[] = {"75rnd_762x39_AK12_Mag_F", "75rnd_762x39_AK12_Mag_F", "75rnd_762x39_AK12_Mag_F", "75rnd_762x39_AK12_Mag_F", "6Rnd_45ACP_Cylinder", "SmokeShell", "SmokeShellRed"};
+    respawnMagazines[] = {"75rnd_762x39_AK12_Mag_F", "75rnd_762x39_AK12_Mag_F", "75rnd_762x39_AK12_Mag_F", "75rnd_762x39_AK12_Mag_F", "6Rnd_45ACP_Cylinder", "SmokeShell", "SmokeShellRed"};
+};
+
+class I_Tura_deserter_EXT_AK12U_lxWS: I_SFIA_deserter_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    weapons[] = {"arifle_AK12U_F", "Throw", "Put"};
+    respawnWeapons[] = {"arifle_AK12U_F", "Throw", "Put"};
+    magazines[] = {"30Rnd_762x39_AK12_Mag_F", "30Rnd_762x39_AK12_Mag_F", "30Rnd_762x39_AK12_Mag_F", "30Rnd_762x39_AK12_Mag_F", "30Rnd_762x39_AK12_Mag_F", "30Rnd_762x39_AK12_Mag_F", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple"};
+    respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F", "30Rnd_762x39_AK12_Mag_F", "30Rnd_762x39_AK12_Mag_F", "30Rnd_762x39_AK12_Mag_F", "30Rnd_762x39_AK12_Mag_F", "30Rnd_762x39_AK12_Mag_F", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple"};
+};
+
+class I_Tura_scout_EXT_DMR_Hunter_lxWS: I_SFIA_scout_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    weapons[] = {"srifle_DMR_06_hunter_khs_F", "Throw", "Put"};
+    respawnWeapons[] = {"srifle_DMR_06_hunter_khs_F", "Throw", "Put"};
+    magazines[] = {"10Rnd_Mk14_762x51_Mag", "10Rnd_Mk14_762x51_Mag", "10Rnd_Mk14_762x51_Mag", "10Rnd_Mk14_762x51_Mag", "10Rnd_Mk14_762x51_Mag", "MiniGrenade", "MiniGrenade"};
+    respawnMagazines[] = {"10Rnd_Mk14_762x51_Mag", "10Rnd_Mk14_762x51_Mag", "10Rnd_Mk14_762x51_Mag", "10Rnd_Mk14_762x51_Mag", "10Rnd_Mk14_762x51_Mag", "MiniGrenade", "MiniGrenade"};
+};
+
+class I_Tura_medic2_EXT_HShotgun_lxWS: I_SFIA_medic2_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    weapons[] = {"sgun_HunterShotgun_01_F", "Throw", "Put"};
+    respawnWeapons[] = {"sgun_HunterShotgun_01_F", "Throw", "Put"};
+    magazines[] = {"2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets"};
+    respawnMagazines[] = {"2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets"};
+};
+
+class I_Tura_scout_EXT_DMR_camo_lxWS: I_SFIA_scout_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    weapons[] = {"srifle_DMR_06_camo_khs_F", "Throw", "Put"};
+    respawnWeapons[] = {"srifle_DMR_06_camo_khs_F", "Throw", "Put"};
+    magazines[] = {"20Rnd_762x51_Mag", "20Rnd_762x51_Mag", "20Rnd_762x51_Mag", "20Rnd_762x51_Mag", "20Rnd_762x51_Mag", "MiniGrenade", "MiniGrenade"};
+    respawnMagazines[] = {"20Rnd_762x51_Mag", "20Rnd_762x51_Mag", "20Rnd_762x51_Mag", "20Rnd_762x51_Mag", "20Rnd_762x51_Mag", "MiniGrenade", "MiniGrenade"};
+};
+
+class I_Tura_deserter_EXT_AKM_lxWS: I_SFIA_deserter_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    weapons[] = {"arifle_AKM_F", "Throw", "Put"};
+    respawnWeapons[] = {"arifle_AKM_F", "Throw", "Put"};
+    magazines[] = {"30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple"};
+    respawnMagazines[] = {"30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple"};
+};
+
+class I_Tura_hireling_EXT_RPG7_lxWS: I_SFIA_hireling_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    weapons[] = {"arifle_AKS_F", "launch_RPG7_F", "Throw", "Put"};
+    respawnWeapons[] = {"arifle_AKS_F", "launch_RPG7_F", "Throw", "Put"};
+    magazines[] = {"30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_F", "RPG7_F"};
+    respawnMagazines[] = {"30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_F", "RPG7_F"};
+    backpack = "B_Kitbag_cbr_Bandit_2_F";
+};
+
+class I_Tura_watcher_EXT_AKS_lxWS: I_SFIA_watcher_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    weapons[] = {"arifle_AKS_F", "Throw", "Put"};
+    respawnWeapons[] = {"arifle_AKS_F", "Throw", "Put"};
+    magazines[] = {"30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_F", "MiniGrenade", "MiniGrenade"};
+    respawnMagazines[] = {"30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_F", "MiniGrenade", "MiniGrenade"};
+};
+
+class I_Tura_watcher_EXT_AKM_lxWS: I_SFIA_watcher_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    weapons[] = {"arifle_AKM_F", "Throw", "Put"};
+    respawnWeapons[] = {"arifle_AKM_F", "Throw", "Put"};
+    magazines[] = {"30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "MiniGrenade", "MiniGrenade"};
+    respawnMagazines[] = {"30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "MiniGrenade", "MiniGrenade"};
+};
+
+class I_Tura_APC_Wheeled_02_hmg_lxWS: I_SFIA_APC_Wheeled_02_hmg_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    faction = "IND_TURA_lxWS";
+    side = 2;
+    crew = "I_Tura_crew_lxWS";
+    typicalCargo[] = {"I_SFIA_scout_lxWS"};
+    animationList[] = {"showBags", 0, "showCanisters", 0.5, "showTools", 0.5, "showCamonetHull", 0, "showSLATHull", 0, "mg_hide_armor_front", 0.8, "mg_hide_armor_rear", 0.3, "mg_Hide_Rail", 1};
+    class Turrets: Turrets
+    {
+        class MainTurret: MainTurret
+        {
+        };
+        class mg_station: mg_station
+        {
+            gunnerType = "I_Tura_HMG_gunner_lxWS";
+        };
+    };
+};
+
+class I_Tura_Mortar_lxWS: I_SFIA_Mortar_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    crew = "I_SFIA_defector_lxWS";
+    faction = "IND_TURA_lxWS";
+};
+
+class I_Tura_HMG_02_lxWS: I_SFIA_HMG_02_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    faction = "IND_TURA_lxWS";
+    crew = "I_SFIA_deserter_lxWS";
+};
+
+class I_Tura_HMG_02_high_lxWS: I_SFIA_HMG_02_high_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    faction = "IND_TURA_lxWS";
+    crew = "I_SFIA_deserter_lxWS";
+};
+
+class I_Tura_Offroad_armor_lxWS: Offroad_01_armor_base_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    crew = "I_Tura_watcher_lxWS";
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\I_Tura_Offroad_armor_lxWS.jpg";
+    faction = "IND_TURA_lxWS";
+    side = 2;
+    typicalCargo[] = {"I_Tura_watcher_lxWS"};
+    animationList[] = {"HideSnorkel", 0, "HideBumper1", 0.5, "HideBumper2", 0.5, "HideBumper3", 1, "HideBackpacks", 0, "HideConstruction", 0, "hideRoofLights", 1, "HideDoor3", 0.33, "HatchL_rot", 0.5};
+    hiddenSelectionsTextures[] = {"\lxws\vehicles_f_lxws\data\offroad_01\offroad_01_ext_sfia_co.paa", "\lxws\vehicles_f_lxws\data\offroad_01\offroad_01_ext_sfia_co.paa", "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa", "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_sfia_co.paa"};
+    textureList[] = {"SFIA", 0.5, "Beige", 0.333, "SFIA2", 0.333};
+    class TransportMagazines
+    {
+        class _xx_30Rnd_762x39_Mag_F
+        {
+            magazine = "30Rnd_762x39_Mag_F";
+            count = 3;
+        };
+        class _xx_MiniGrenade
+        {
+            magazine = "MiniGrenade";
+            count = 2;
+        };
+    };
+    class TransportWeapons
+    {
+        class _xx_arifle_Galat_lxWS
+        {
+            weapon = "arifle_Galat_lxWS";
+            count = 1;
+        };
+    };
+};
+
+class I_Tura_Offroad_armor_AT_lxWS: Offroad_01_armor_AT_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    crew = "I_Tura_watcher_lxWS";
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\I_Tura_Offroad_armor_AT_lxWS.jpg";
+    faction = "IND_TURA_lxWS";
+    side = 2;
+    typicalCargo[] = {"I_Tura_watcher_lxWS"};
+    animationList[] = {"HideSnorkel", 0, "HideBumper1", 1, "HideBumper2", 1, "HideBumper3", 0, "hideRoofLights", 0, "HideDoor3", 0.33, "HatchL_rot", 0.5};
+    hiddenSelectionsTextures[] = {"\lxws\vehicles_f_lxws\data\offroad_01\offroad_01_ext_sfia_co.paa", "\lxws\vehicles_f_lxws\data\offroad_01\offroad_01_ext_sfia_co.paa", "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa", "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_sfia_co.paa"};
+    textureList[] = {"SFIA", 0.5, "Beige", 0.333, "SFIA2", 0.333};
+    class TransportMagazines
+    {
+        class _xx_30Rnd_762x39_Mag_F
+        {
+            magazine = "30Rnd_762x39_Mag_F";
+            count = 3;
+        };
+        class _xx_MiniGrenade
+        {
+            magazine = "MiniGrenade";
+            count = 2;
+        };
+    };
+    class TransportWeapons
+    {
+        class _xx_arifle_Galat_lxWS
+        {
+            weapon = "arifle_Galat_lxWS";
+            count = 1;
+        };
+    };
+};
+
+class I_Tura_Offroad_armor_armed_lxWS: Offroad_01_armor_armed_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    crew = "I_Tura_watcher_lxWS";
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\I_Tura_Offroad_armor_armed_lxWS.jpg";
+    faction = "IND_TURA_lxWS";
+    side = 2;
+    typicalCargo[] = {"I_Tura_watcher_lxWS"};
+    animationList[] = {"HideSnorkel", 0, "HideBumper1", 1, "HideBumper2", 1, "HideBumper3", 0.5, "hideRoofLights", 0, "HideDoor3", 0.33, "HatchL_rot", 0.5};
+    hiddenSelectionsTextures[] = {"\lxws\vehicles_f_lxws\data\offroad_01\offroad_01_ext_sfia_co.paa", "\lxws\vehicles_f_lxws\data\offroad_01\offroad_01_ext_sfia_co.paa", "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa", "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_sfia_co.paa"};
+    textureList[] = {"SFIA", 0.5, "Beige", 0.333, "SFIA2", 0.333};
+    class TransportMagazines
+    {
+        class _xx_30Rnd_762x39_Mag_F
+        {
+            magazine = "30Rnd_762x39_Mag_F";
+            count = 3;
+        };
+        class _xx_MiniGrenade
+        {
+            magazine = "MiniGrenade";
+            count = 2;
+        };
+    };
+    class TransportWeapons
+    {
+        class _xx_arifle_Galat_lxWS
+        {
+            weapon = "arifle_Galat_lxWS";
+            count = 1;
+        };
+    };
+};
+
+class I_Tura_Offroad_armor_AA_lxWS: Offroad_01_armor_aa_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    crew = "I_Tura_watcher_lxWS";
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\I_Tura_Offroad_AA_lxWS.jpg";
+    faction = "IND_TURA_lxWS";
+    side = 2;
+    typicalCargo[] = {"I_Tura_watcher_lxWS"};
+    animationList[] = {"HideSnorkel", 0, "HideBumper1", 1, "HideBumper2", 1, "HideBumper3", 0.5, "hideRoofLights", 0, "HideDoor3", 0.1, "shield_hide", 0.5, "HatchL_rot", 0.5};
+    hiddenSelectionsTextures[] = {"\lxws\vehicles_f_lxws\data\offroad_01\offroad_01_ext_sfia_co.paa", "\lxws\vehicles_f_lxws\data\offroad_01\offroad_01_ext_sfia_co.paa", "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa", "lxws\vehicles_f_lxws\zu23\data\zu23_base_sfia_co.paa", "lxws\vehicles_f_lxws\zu23\data\zu23_sfia_co.paa", "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_sfia_co.paa", "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_sfia_co.paa"};
+    textureList[] = {"SFIA", 0.5, "Beige", 0.333, "SFIA2", 0.333};
+    class TransportMagazines
+    {
+        class _xx_30Rnd_762x39_Mag_F
+        {
+            magazine = "30Rnd_762x39_Mag_F";
+            count = 3;
+        };
+        class _xx_MiniGrenade
+        {
+            magazine = "MiniGrenade";
+            count = 2;
+        };
+    };
+    class TransportWeapons
+    {
+        class _xx_arifle_Galat_lxWS
+        {
+            weapon = "arifle_Galat_lxWS";
+            count = 1;
+        };
+    };
+};
+
+class I_Tura_Truck_02_aa_lxWS: O_SFIA_Truck_02_aa_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    crew = "I_Tura_defector_lxWS";
+    typicalCargo[] = {"I_Tura_defector_lxWS"};
+    faction = "IND_Tura_lxWS";
+    side = 2;
+};
+
+class I_Tura_ZU23_lxWS: O_SFIA_ZU23_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    crew = "I_SFIA_watcher_lxWS";
+    typicalCargo[] = {"I_Tura_watcher_lxWS"};
+    faction = "IND_TURA_lxWS";
+    side = 2;
+    textureList[] = {"SFIA", 0.5, "Beige", 0.333, "SFIA2", 0.333};
+};
+
+class I_Tura_soldier_UAV_lxWS: I_Tura_deserter_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\I_Tura_soldier_UAV_lxWS.jpg";
+    displayName = "UAV Operator (IED)";
+    backpack = "I_Tura_UAV_02_IED_backpack_lxWS";
+    role = "SpecialOperative";
+    uavHacker = 1;
+    linkedItems[] = {"V_lxWS_HarnessO_oli", "lxWS_H_turban_03_green", "I_UAVTerminal", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"V_lxWS_HarnessO_oli", "lxWS_H_turban_03_green", "I_UAVTerminal", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    magazines[] = {"30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple", "1Rnd_40mm_HE_lxWS", "1Rnd_40mm_HE_lxWS", "1Rnd_58mm_AT_lxWS", "1Rnd_58mm_AT_lxWS", "1Rnd_50mm_Smoke_lxWS", "1Rnd_50mm_Smoke_lxWS"};
+    respawnMagazines[] = {"30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "30Rnd_762x39_Mag_F", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellPurple", "1Rnd_40mm_HE_lxWS", "1Rnd_40mm_HE_lxWS", "1Rnd_58mm_AT_lxWS", "1Rnd_58mm_AT_lxWS", "1Rnd_50mm_Smoke_lxWS", "1Rnd_50mm_Smoke_lxWS"};
+    uniformClass = "U_SFIA_deserter_lxWS";
+    armorStructural = 4;
+    model = "lxWS\characters_1_f_lxws\uniform\djellaba_05_lxWS.p3d";
+    hiddenSelections[] = {"camo", "camo1", "camo2"};
+    hiddenSelectionsTextures[] = {"lxws\characters_f_lxws\data\sfia\ig_sfia_1_2_co.paa", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_green_co.paa", "lxWS\characters_1_f_lxws\uniform\data\lxWS_djellaba_pants_brown2_co.paa"};
+};
+
+class I_Tura_HeavyGunner_lxWS: I_Tura_deserter_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    textSingular = "machinegunner";
+    textPlural = "machinegunners";
+    nameSound = "veh_infantry_MG_s";
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\I_Tura_HeavyGunner_lxWS.jpg";
+    displayName = "Oppressor (Machine Gun)";
+    icon = "iconManMG";
+    role = "MachineGunner";
+    uniformClass = "U_SFIA_deserter_lxWS";
+    armorStructural = 4;
+    model = "lxWS\characters_1_f_lxws\uniform\djellaba_05_lxWS.p3d";
+    hiddenSelections[] = {"camo", "camo1", "camo2"};
+    hiddenSelectionsTextures[] = {"lxws\characters_f_lxws\data\sfia\ig_sfia_1_2_co.paa", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_green_co.paa", "lxWS\characters_1_f_lxws\uniform\data\lxWS_djellaba_pants_brown2_co.paa"};
+    headgearList[] = {"lxWS_H_turban_03_green", 2, "lxWS_H_turban_03_green_bandit", 5, "lxWS_H_turban_03_red", 0.5, "lxWS_H_turban_03_red_bandit", 1};
+    linkedItems[] = {"V_lxWS_HarnessO_oli", "lxWS_H_turban_03_green", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"V_lxWS_HarnessO_oli", "lxWS_H_turban_03_green", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    weapons[] = {"LMG_S77_Desert_lxWS", "Throw", "Put"};
+    respawnWeapons[] = {"LMG_S77_Desert_lxWS", "Throw", "Put"};
+    magazines[] = {"100Rnd_762x51_S77_Green_lxWS", "100Rnd_762x51_S77_Green_lxWS", "100Rnd_762x51_S77_Green_lxWS", "100Rnd_762x51_S77_Green_lxWS", "100Rnd_762x51_S77_Green_Tracer_lxWS", "HandGrenade", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green"};
+    respawnMagazines[] = {"100Rnd_762x51_S77_Green_lxWS", "100Rnd_762x51_S77_Green_lxWS", "100Rnd_762x51_S77_Green_lxWS", "100Rnd_762x51_S77_Green_lxWS", "100Rnd_762x51_S77_Green_Tracer_lxWS", "HandGrenade", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green"};
+    class SpeechVariants
+    {
+        class Default
+        {
+            speechSingular[] = {"veh_infantry_MG_s"};
+            speechPlural[] = {"veh_infantry_MG_p"};
+        };
+    };
+};
+
+class I_Tura_Pickup_01_RF: Pickup_01_base_rf
+{
+    author = "Rotators Collective";
+    dlc = "rf";
+    scope = 2;
+    scopeCurator = 2;
+    editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\I_Tura_Pickup_01_RF.jpg";
+    side = 2;
+    faction = "IND_TURA_lxWS";
+    crew = "I_SFIA_watcher_lxWS";
+    typicalCargo[] = {"I_SFIA_watcher_lxWS"};
+    hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_08_co.paa", "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_08_co.paa", "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa", "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa", "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa", "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_08_co.paa"};
+    hiddenSelectionsMaterials[] = {"lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"};
+    textureList[] = {"Guerilla_10", 0.5, "Guerilla_08", 0.333};
+    animationList[] = {"hide_bullbar", 0.5, "hide_fuel_tank", 1, "hide_snorkel", 0.25, "hide_antenna", 1, "hide_trunk_cover", 1, "hide_trunk_door", 1, "hide_frame", 0.5, "hide_armor_window_armor_top", 0.25};
+    class TransportMagazines
+    {
+        class _xx_30Rnd_762x39_Mag_F
+        {
+            magazine = "30Rnd_762x39_Mag_F";
+            count = 3;
+        };
+        class _xx_MiniGrenade
+        {
+            magazine = "MiniGrenade";
+            count = 2;
+        };
+    };
+    class TransportWeapons
+    {
+        class _xx_arifle_Galat_lxWS
+        {
+            weapon = "arifle_Galat_lxWS";
+            count = 1;
+        };
+    };
+};
+
+class I_Tura_Pickup_01_mmg_rf: Pickup_01_mmg_base_rf
+{
+    author = "Rotators Collective";
+    dlc = "rf";
+    scope = 1;
+    scopeCurator = 1;
+    editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\I_Tura_Pickup_01_mmg_rf.jpg";
+    side = 2;
+    faction = "IND_TURA_lxWS";
+    crew = "I_SFIA_watcher_lxWS";
+    typicalCargo[] = {"I_SFIA_watcher_lxWS"};
+    hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_08_co.paa", "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_08_co.paa", "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa", "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa", "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa", "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_08_co.paa"};
+    hiddenSelectionsMaterials[] = {"lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"};
+    textureList[] = {"Guerilla_10", 0.5, "Guerilla_08", 0.333};
+    animationList[] = {"hide_bullbar", 0.5, "hide_fuel_tank", 1, "hide_snorkel", 0.25, "hide_antenna", 1, "hide_trunk_cover", 1, "hide_trunk_door", 1, "hide_frame", 0.5, "hide_armor_window_armor_top", 0.25};
+    class TransportMagazines
+    {
+        class _xx_30Rnd_762x39_Mag_F
+        {
+            magazine = "30Rnd_762x39_Mag_F";
+            count = 3;
+        };
+        class _xx_MiniGrenade
+        {
+            magazine = "MiniGrenade";
+            count = 2;
+        };
+    };
+    class TransportWeapons
+    {
+        class _xx_arifle_Galat_lxWS
+        {
+            weapon = "arifle_Galat_lxWS";
+            count = 1;
+        };
+    };
+};
+
+class I_Tura_Pickup_01_hmg_rf: Pickup_01_hmg_base_rf
+{
+    author = "Rotators Collective";
+    dlc = "rf";
+    scope = 2;
+    scopeCurator = 2;
+    editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\I_Tura_Pickup_01_hmg_rf.jpg";
+    side = 2;
+    faction = "IND_TURA_lxWS";
+    crew = "I_SFIA_watcher_lxWS";
+    typicalCargo[] = {"I_SFIA_watcher_lxWS"};
+    hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_08_co.paa", "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_08_co.paa", "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa", "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa", "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa", "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_08_co.paa"};
+    hiddenSelectionsMaterials[] = {"lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"};
+    textureList[] = {"Guerilla_10", 0.5, "Guerilla_08", 0.333};
+    animationList[] = {"hide_bullbar", 0.5, "hide_snorkel", 0.25, "hide_antenna", 1, "hide_trunk_door", 1, "hide_frame", 0.25, "Hide_Shield", 0.5, "hide_armor_window_armor_top", 0.25};
+    class TransportMagazines
+    {
+        class _xx_30Rnd_762x39_Mag_F
+        {
+            magazine = "30Rnd_762x39_Mag_F";
+            count = 3;
+        };
+        class _xx_MiniGrenade
+        {
+            magazine = "MiniGrenade";
+            count = 2;
+        };
+    };
+    class TransportWeapons
+    {
+        class _xx_arifle_Galat_lxWS
+        {
+            weapon = "arifle_Galat_lxWS";
+            count = 1;
+        };
+    };
+};
+
+class I_Tura_Pickup_fuel_rf: Pickup_fuel_base_rf
+{
+    author = "Rotators Collective";
+    dlc = "rf";
+    scope = 2;
+    scopeCurator = 2;
+    editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\I_Tura_Pickup_fuel_rf.jpg";
+    side = 2;
+    faction = "IND_TURA_lxWS";
+    crew = "I_SFIA_watcher_lxWS";
+    typicalCargo[] = {"I_SFIA_watcher_lxWS"};
+    hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_08_co.paa", "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_08_co.paa", "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa", "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa", "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa", "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_08_co.paa"};
+    hiddenSelectionsMaterials[] = {"lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"};
+    textureList[] = {"Guerilla_10", 0.5, "Guerilla_08", 0.333};
+    animationList[] = {"hide_bullbar", 0.5, "hide_fuel_tank", 0, "hide_snorkel", 0.25, "hide_antenna", 1, "hide_trunk_cover", 1, "hide_frame", 0.5, "hide_armor_window_armor_top", 0.25};
+    class TransportMagazines
+    {
+        class _xx_30Rnd_762x39_Mag_F
+        {
+            magazine = "30Rnd_762x39_Mag_F";
+            count = 3;
+        };
+        class _xx_MiniGrenade
+        {
+            magazine = "MiniGrenade";
+            count = 2;
+        };
+    };
+    class TransportWeapons
+    {
+        class _xx_arifle_Galat_lxWS
+        {
+            weapon = "arifle_Galat_lxWS";
+            count = 1;
+        };
+    };
+};
+
+class I_Tura_Pickup_01_Rocket_rf: Pickup_01_Rocket_base_rf
+{
+    author = "Rotators Collective";
+    dlc = "rf";
+    scope = 2;
+    scopeCurator = 2;
+    editorPreview = "\lxrf\editorpreviews_rf\Data\CfgVehicles\I_Tura_Pickup_01_Rocket_rf.jpg";
+    side = 2;
+    faction = "IND_TURA_lxWS";
+    crew = "I_SFIA_watcher_lxWS";
+    typicalCargo[] = {"I_SFIA_watcher_lxWS"};
+    hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_08_co.paa", "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_08_co.paa", "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa", "\lxrf\weapons_rf\dynamicloadout\data\missile_tratnyr_gray_co.paa", "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_08_co.paa"};
+    hiddenSelectionsMaterials[] = {"lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat", "lxrf\weapons_rf\dynamicloadout\data\missile_tratnyr_mat.rvmat", "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"};
+    textureList[] = {"Guerilla_10", 0.5, "Guerilla_08", 0.333};
+    animationList[] = {"hide_armor_window_armor_top", 0.25, "hide_bullbar", 0.5, "hide_snorkel", 0.1, "hide_trunk_door", 0.1, "trunk_door_open", 0, "hide_frame", 0.5, "hide_turret_cover", 1};
+    class TransportMagazines
+    {
+        class _xx_30Rnd_762x39_Mag_F
+        {
+            magazine = "30Rnd_762x39_Mag_F";
+            count = 3;
+        };
+        class _xx_MiniGrenade
+        {
+            magazine = "MiniGrenade";
+            count = 2;
+        };
+    };
+    class TransportWeapons
+    {
+        class _xx_arifle_Galat_lxWS
+        {
+            weapon = "arifle_Galat_lxWS";
+            count = 1;
+        };
+    };
+};
+
+class Aegis_I_Tura_APC_Wheeled_04_export_F: Aegis_B_Tura_APC_Wheeled_04_export_F
+{
+    side = 2;
+    faction = "IND_TURA_lxWS";
+    crew = "I_Tura_deserter_lxWS";
+    typicalCargo[] = {"I_Tura_deserter_lxWS"};
+};
+
+class Aegis_I_Tura_HeavyGunner_2_lxWS: I_Tura_HeavyGunner_lxWS
+{
+    author = "Ravenholme";
+    editorPreview = "\A3_Aegis\Editorpreviews_F_Aegis\Data\CfgVehicles\Aegis_I_Tura_HeavyGunner_2_lxWS.jpg";
+    displayName = "Suppressor (GPMG)";
+    uniformClass = "U_lxWS_Djella_B_02_Sand";
+    model = "lxws\characters_f_lxws\uniform\djellaba\djellaba_02_lxWS.p3d";
+    hiddenSelections[] = {"camo1", "camo2"};
+    hiddenSelectionsTextures[] = {"lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_sand_co.paa", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_sand_co.paa"};
+    backpack = "Aegis_B_FieldPack_cbr_Tura_HG2";
+    headgearList[] = {"lxWS_H_turban_02_sand", 2, "lxWS_H_turban_03_sand", 5, "lxWS_H_turban_03_red", 0.5, "lxWS_H_turban_03_orange", 1};
+    linkedItems[] = {"Aegis_V_Ammo_Bandolier_F", "lxWS_H_turban_02_sand", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"Aegis_V_Ammo_Bandolier_F", "lxWS_H_turban_02_sand", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    weapons[] = {"Aegis_MMG_FNMAG_old_F", "Throw", "Put"};
+    respawnWeapons[] = {"Aegis_MMG_FNMAG_old_F", "Throw", "Put"};
+    magazines[] = {"Aegis_200Rnd_762x51_MAG_Green_F", "Aegis_200Rnd_762x51_MAG_Green_F", "HandGrenade", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green"};
+    respawnMagazines[] = {"Aegis_200Rnd_762x51_MAG_Green_F", "Aegis_200Rnd_762x51_MAG_Green_F", "HandGrenade", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green"};
+};
+
+class Aegis_I_Tura_Soldier_M_lxWS: I_SFIA_scout_lxWS
+{
+    author = "Ravenholme";
+    textSingular = "sniper";
+    textPlural = "snipers";
+    nameSound = "veh_infantry_sniper_s";
+    editorPreview = "\A3_Aegis\Editorpreviews_F_Aegis\Data\CfgVehicles\Aegis_B_Tura_Soldier_M_lxWS.jpg";
+    displayName = "Assassin (DMR)";
+    model = "lxws\characters_f_lxws\uniform\djellaba\djellaba_03_lxWS.p3d";
+    hiddenSelections[] = {"camo1", "camo2"};
+    hiddenSelectionsTextures[] = {"lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_green_co.paa", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_grey_co.paa"};
+    uniformClass = "U_lxWS_Djella_03_Green";
+    headgearList[] = {"lxWS_H_turban_02_green_pattern", 2, "lxWS_H_turban_03_green", 5, "lxWS_H_turban_04_green", 0.5, "lxWS_H_turban_02_green", 1};
+    linkedItems[] = {"Aegis_V_ChestRigEast_Tan_F", "lxWS_H_turban_03_green", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    respawnLinkedItems[] = {"Aegis_V_ChestRigEast_Tan_F", "lxWS_H_turban_03_green", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+    weapons[] = {"Aegis_srifle_SVD_KHS_old_F", "Throw", "Put", "Binocular"};
+    respawnWeapons[] = {"Aegis_srifle_SVD_KHS_old_F", "Throw", "Put", "Binocular"};
+    magazines[] = {"Aegis_10Rnd_762x54_SVD_Yellow_Mag_F", "Aegis_10Rnd_762x54_SVD_Yellow_Mag_F", "Aegis_10Rnd_762x54_SVD_Yellow_Mag_F", "Aegis_10Rnd_762x54_SVD_Yellow_Mag_F", "Aegis_10Rnd_762x54_SVD_Yellow_Mag_F", "Aegis_10Rnd_762x54_SVD_Yellow_Mag_F", "HandGrenade", "SmokeShell"};
+    respawnMagazines[] = {"Aegis_10Rnd_762x54_SVD_Yellow_Mag_F", "Aegis_10Rnd_762x54_SVD_Yellow_Mag_F", "Aegis_10Rnd_762x54_SVD_Yellow_Mag_F", "Aegis_10Rnd_762x54_SVD_Yellow_Mag_F", "Aegis_10Rnd_762x54_SVD_Yellow_Mag_F", "Aegis_10Rnd_762x54_SVD_Yellow_Mag_F", "HandGrenade", "SmokeShell"};
+    class SpeechVariants
+    {
+        class Default
+        {
+            speechSingular[] = {"veh_infantry_sniper_s"};
+            speechPlural[] = {"veh_infantry_sniper_p"};
+        };
+    };
+};
+
+class Aegis_I_Tura_CommandoMortar_RF: B_D_CTRG_CommandoMortar_RF
+{
+    author = "Ravenholme";
+    side = 2;
+    faction = "IND_TURA_lxWS";
+    crew = "I_SFIA_deserter_lxWS";
+};
+
+class I_Rev_UAV_IED: I_Tura_UAV_02_IED_lxWS
+{
+    author = "Reeveli";
+    displayName = "Deployable IED UAV";
+    class assembleInfo
+    {
+        primary = 0;
+        base = "";
+        assembleTo = "";
+        displayName = "";
+        dissasembleTo[] = {};
+    };
+    class UserActions
+    {
+        class pick_up
+        {
+            userActionID = 52;
+            displayName = "Dissassemble UAV";
+            displayNameDefault = "<t align='center'><img image='a3\missions_f_oldman\data\img\holdactions\holdaction_box_ca.paa' size='1.8' /><br/></t><t align='center'>Dissassemble UAV</t>";
+            condition = "alive this && vehicle player == player && ((UAVControl this) select 1 isEqualto '')";
+            statement = "[this,'Item_Rev_UAV_IED'] call Rev_uav_fnc_pick_up";
+            position = "";
+            priority = 5;
+            radius = 1.8;
+            animPeriod = 2;
+            onlyForplayer = 1;
+            showWindow = 1;
+        };
+    };
+};
+
+
+// ============================================================
+//  CfgWeapons referenced by IND_TURA_lxWS â€” 50 classes
+// ============================================================
+
+class Aegis_MMG_FNMAG_old_F: Aegis_MMG_FNMAG_Base
+{
+    author = "POLPOX and Chairborne";
+    scope = 2;
+    baseWeapon = "Aegis_FNMAG_old_F";
+    displayName = "GPMG 7.62 mm (Classic)";
+    picture = "\A3_Aegis\weapons_f_aegis\Machineguns\MAG\Data\UI\icon_Aegis_MMG_FNMAG_old_F_ca.paa";
+    magazines[] = {"Aegis_200Rnd_762x51_MAG_Red_F", "Aegis_200Rnd_762x51_MAG_Red_Tracer_F", "Aegis_200Rnd_762x51_MAG_Yellow_F", "Aegis_200Rnd_762x51_MAG_Yellow_Tracer_F", "Aegis_200Rnd_762x51_MAG_Green_F", "Aegis_200Rnd_762x51_MAG_Green_Tracer_F"};
+    magazineWell[] = {"Aegis_FNMAG"};
+    class WeaponSlotsInfo: WeaponSlotsInfo
+    {
+        mass = 400;
+        class MuzzleSlot
+        {
+        };
+        class CowsSlot
+        {
+        };
+        class PointerSlot
+        {
+        };
+        class UnderBarrelSlot
+        {
+        };
+    };
+    class FullAuto: FullAuto
+    {
+        dispersion = 0.00065;
+    };
+};
+
+class Aegis_srifle_SVD_KHS_old_F: Aegis_srifle_SVD_f
+{
+    class LinkedItems
+    {
+        class LinkedItemsOptic
+        {
+            slot = "CowsSlot";
+            item = "optic_KHS_old";
+        };
+    };
+};
+
+class arifle_AK12U_F: arifle_AK12U_base_F
+{
+    author = "Bohemia Interactive";
+    _generalMacro = "arifle_AK12U_F";
+    scope = 2;
+    picture = "a3\Weapons_F_Enoch\Rifles\AK12\Data\UI\icon_arifle_AK12U_F_CA.paa";
+    hiddenSelectionsTextures[] = {"a3\Weapons_F_Exp\Rifles\AK12\Data\AK12_ak12_1_co.paa", "a3\Weapons_F_Exp\Rifles\AK12\Data\AK12_ak12_2_co.paa", "a3\Weapons_F_Enoch\Rifles\AK12\Data\AKU12_RPK12_parts_CO.paa"};
+    hiddenSelectionsMaterials[] = {"a3\Weapons_F_Exp\Rifles\AK12\Data\AK12_F_1.rvmat", "a3\Weapons_F_Exp\Rifles\AK12\Data\AK12_F_2.rvmat", "a3\Weapons_F_Enoch\Rifles\AK12\Data\AK12_RPK12.rvmat"};
+    baseWeapon = "arifle_AK12U_F";
+    displayName = "AK-15K";
+};
+
+class arifle_AKM_F: arifle_AKM_base_F
+{
+    author = "Bohemia Interactive";
+    _generalMacro = "arifle_AKM_F";
+    baseWeapon = "arifle_AKM_F";
+    scope = 2;
+    picture = "\A3\Weapons_F_Exp\Rifles\AKM\Data\UI\arifle_AKM_F_X_CA.paa";
+    hiddenSelectionsTextures[] = {"A3\Weapons_F_Exp\Rifles\AKM\Data\akm_co.paa", "\A3\Weapons_F_Exp\Rifles\AKM\Data\akm_wood_co.paa", "\A3\Weapons_F_Exp\Rifles\AKM\Data\akm_steel_mag_co.paa"};
+    displayName = "AKM";
+};
+
+class arifle_AKS_F: arifle_AKS_base_F
+{
+    author = "Bohemia Interactive";
+    _generalMacro = "arifle_AKS_F";
+    baseWeapon = "arifle_AKS_F";
+    scope = 2;
+    picture = "\A3\Weapons_F_Exp\Rifles\AKS\Data\UI\arifle_AKS_F_X_CA.paa";
+    hiddenSelectionsTextures[] = {"\A3\Weapons_F_Exp\Rifles\AKS\Data\aks74u_co.paa", "\A3\Weapons_F_Exp\Rifles\AKS\Data\magazine_ak74_co.paa"};
+    displayName = "AKS-74U";
+    class WeaponSlotsInfo: WeaponSlotsInfo
+    {
+        mass = 80;
+        class CowsSlot
+        {
+        };
+        class MuzzleSlot: asdg_MuzzleSlot_545R
+        {
+            iconPosition[] = {0.16, 0.41};
+            iconScale = 0.2;
+        };
+        class UnderBarrelSlot
+        {
+        };
+        class PointerSlot
+        {
+        };
+    };
+};
+
+class arifle_Galat_lxWS: arifle_Galat_base_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    picture = "\lxWS\weapons_f_lxWS\Rifles\Galat\Data\UI\icon_lxWS_arifle_Galat_F_X_CA.paa";
+    descriptionShort = "Assault Rifle<br />Caliber: 7.62x39 mm";
+    baseWeapon = "arifle_Galat_lxWS";
+    modes[] = {"FullAuto", "close", "short", "medium", "far_optic1", "far_optic2"};
+    displayName = "Galil ARM";
+};
+
+class arifle_Galat_worn_lxWS: arifle_Galat_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    picture = "\lxWS\weapons_1_f_lxws\Rifles\Galat\Data\ui\icon_arifle_Galat_worn_lxWS_CA.paa";
+    baseWeapon = "arifle_Galat_worn_lxWS";
+    hiddenSelectionsTextures[] = {"lxWS\weapons_1_f_lxWS\Rifles\Galat\data\Galat_worn_CO.paa"};
+    hiddenSelectionsMaterials[] = {"lxWS\weapons_1_f_lxWS\Rifles\Galat\data\Galat_worn.rvmat"};
+    magazines[] = {"30Rnd_762x39_Mag_worn_lxWS"};
+    displayName = "Galil ARM (Old)";
+    class FullAuto: FullAuto
+    {
+        reloadTime = "60/570";
+    };
+};
+
+class arifle_RPK12_F: arifle_RPK12_base_F
+{
+    author = "Bohemia Interactive";
+    _generalMacro = "arifle_RPK12_F";
+    scope = 2;
+    picture = "a3\Weapons_F_Enoch\Rifles\AK12\Data\UI\icon_arifle_RPK12_F_CA.paa";
+    hiddenSelectionsTextures[] = {"a3\Weapons_F_Exp\Rifles\AK12\Data\AK12_ak12_1_co.paa", "a3\Weapons_F_Exp\Rifles\AK12\Data\AK12_ak12_2_co.paa", "a3\Weapons_F_Enoch\Rifles\AK12\Data\AKU12_RPK12_parts_CO.paa"};
+    hiddenSelectionsMaterials[] = {"a3\Weapons_F_Exp\Rifles\AK12\Data\AK12_F_1.rvmat", "a3\Weapons_F_Exp\Rifles\AK12\Data\AK12_F_2.rvmat", "a3\Weapons_F_Enoch\Rifles\AK12\Data\AK12_RPK12.rvmat"};
+    baseWeapon = "arifle_RPK12_F";
+    displayName = "RPK";
+};
+
+class arifle_SLR_D_KHS_old_lxWS: arifle_SLR_D_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    _generalMacro = "arifle_SLR_D_KHS_old_lxWS";
+    aiDispersionCoefX = 3.5;
+    aiDispersionCoefY = 4.5;
+    class LinkedItems
+    {
+        class LinkedItemsOptic
+        {
+            slot = "CowsSlot";
+            item = "optic_DMS_weathered_F";
+        };
+    };
+};
+
+class arifle_SLR_GL_lxWS: arifle_SLR_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    model = "\lxWS\weapons_f_lxWS\rifles\Slr\lxWS_SLR_GL.p3d";
+    picture = "\lxWS\weapons_f_lxWS\Rifles\Slr\data\ui\icon_lxWS_arifle_SLR_GL_X_CA.paa";
+    baseWeapon = "arifle_SLR_GL_lxWS";
+    hiddenSelections[] = {"camo1", "camo2", "camo3"};
+    hiddenSelectionsTextures[] = {"lxWS\weapons_f_lxWS\rifles\slr\data\fal_co.paa", "lxWS\weapons_f_lxWS\rifles\slr\data\rail_co.paa", "lxWS\weapons_f_lxWS\rifles\slr\data\attachment_co.paa"};
+    hiddenSelectionsMaterials[] = {"lxWS\weapons_f_lxWS\rifles\slr\data\slr_mat.rvmat", "lxWS\weapons_f_lxWS\rifles\slr\data\rail_mat.rvmat", "lxWS\weapons_f_lxWS\rifles\slr\data\attachment_mat.rvmat"};
+    aiDispersionCoefX = 4;
+    aiDispersionCoefY = 6;
+    inertia = 0.8;
+    maxZeroing = 1150;
+    muzzles[] = {"this", "R_GL_lxWS"};
+    displayName = "FN FAL 50.00 GL (Wood)";
+    class R_GL_lxWS: UGL_F
+    {
+        magazineWell[] = {"SLR_Grenades"};
+        magazines[] = {"1Rnd_40mm_HE_lxWS", "1Rnd_58mm_AT_lxWS", "1Rnd_50mm_Smoke_lxWS"};
+        displayName = "Muzzle GL";
+        useModelOptics = 0;
+        useExternalOptic = 0;
+        cameraDir = "op_look";
+        discreteDistance[] = {40, 60, 80};
+        discreteDistanceCameraPoint[] = {"OP_eye_40", "OP_eye_60", "OP_eye_80"};
+        discreteDistanceInitIndex = 0;
+        reloadAction = "lxWS_GestureReload_slr_GL";
+        magazineReloadSwitchPhase = 0.4;
+        reloadMagazineSound[] = {"lxWS\sounds_f_lxws\weapons\SLR\lxws_slr_GL_reload", 1.3, 1, 20};
+        selectionFireAnim = "zasleh2";
+        recoil = "lxWS_recoil_RifleGrenade";
+        class EventHandlers: Eventhandlers
+        {
+            class lxWS
+            {
+                fired = "params ['_unit']; if ((_unit ammo (primaryWeapon _unit)) > 0) then { _unit setAmmo [(primaryWeapon _unit),(_unit ammo (primaryWeapon _unit)) -1 max 0] };";
+            };
+        };
+        class Single: Mode_SemiAuto
+        {
+            sounds[] = {"StandardSound"};
+            reloadTime = 3;
+            aiRateOfFire = 2;
+            aiRateOfFireDistance = 250;
+            dispersion = 0.01245;
+            maxRange = 400;
+            maxRangeProbab = 0.05;
+            midRange = 200;
+            midRangeProbab = 0.75;
+            minRange = 30;
+            minRangeProbab = 0.25;
+            multiplier = 1;
+            class BaseSoundModeType
+            {
+            };
+            class StandardSound: BaseSoundModeType
+            {
+                soundSetShot[] = {"lxWS_FAL_ShotGL_SoundSet", "DMR06_tail_SoundSet", "DMR06_InteriorTail_SoundSet"};
+            };
+        };
+    };
+    class WeaponSlotsInfo: WeaponSlotsInfo
+    {
+        class MuzzleSlot
+        {
+        };
+    };
+    class Single: Mode_SemiAuto
+    {
+        sounds[] = {"StandardSound", "SilencedSound"};
+        reloadTime = 0.085;
+        dispersion = 0.00099;
+        recoil = "recoil_single_dmr";
+        recoilProne = "recoil_single_prone_dmr";
+        minRange = 2;
+        minRangeProbab = 0.3;
+        midRange = 350;
+        midRangeProbab = 0.7;
+        maxRange = 500;
+        maxRangeProbab = 0.05;
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            soundSetShot[] = {"lxWS_FAL_Shot_SoundSet", "DMR06_tail_SoundSet", "DMR06_InteriorTail_SoundSet"};
+        };
+        class SilencedSound: BaseSoundModeType
+        {
+            SoundSetShot[] = {"DMR06_silencerShot_SoundSet", "DMR06_silencerTail_SoundSet", "DMR06_silencerInteriorTail_SoundSet"};
+        };
+    };
+    class FullAuto: Mode_FullAuto
+    {
+        reloadTime = "60/650";
+        sounds[] = {"StandardSound", "SilencedSound"};
+        dispersion = 0.00099;
+        recoil = "recoil_auto_dmr";
+        recoilProne = "recoil_auto_prone_dmr";
+        minRange = 0;
+        minRangeProbab = 0.9;
+        midRange = 15;
+        midRangeProbab = 0.7;
+        maxRange = 30;
+        maxRangeProbab = 0.05;
+        aiRateOfFire = 1e-06;
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            soundSetShot[] = {"lxWS_FAL_Shot_SoundSet", "DMR06_tail_SoundSet", "DMR06_InteriorTail_SoundSet"};
+        };
+        class SilencedSound: BaseSoundModeType
+        {
+            SoundSetShot[] = {"DMR06_silencerShot_SoundSet", "DMR06_silencerTail_SoundSet", "DMR06_silencerInteriorTail_SoundSet"};
+        };
+    };
+    class EventHandlers: Eventhandlers
+    {
+        class lxWS
+        {
+            fired = "_this remoteExec ['lxWS_fnc_rifle_grenades']";
+        };
+    };
+};
+
+class arifle_VelkoR5_GL_lxWS: arifle_VelkoR5_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    aimTransitionSpeed = 1.1;
+    inertia = 0.7;
+    dexterity = 1.3;
+    aiDispersionCoefX = 4;
+    aiDispersionCoefY = 6;
+    hasBipod = 0;
+    picture = "\lxws\weapons_1_f_lxWS\rifles\VelkoR5\Data\UI\icon_arifle_VelkoR5_GL_lxWS_CA.paa";
+    model = "\lxws\weapons_1_f_lxWS\rifles\VelkoR5\VelkoR5_GL_lxWS.p3d";
+    muzzles[] = {"this", "GL203_lxWS"};
+    handAnim[] = {"OFP2_ManSkeleton", "\lxWS\anims_1_f_lxWS\anims\lxws_velko_gl_handanim.rtm"};
+    reloadAction = "lxWS_GestureReload_velko_GL";
+    baseWeapon = "arifle_Velko_R5_GL_lxWS";
+    hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "camo5"};
+    hiddenSelectionsTextures[] = {"lxWS\weapons_1_f_lxWS\Rifles\velkor5\data\galatr5_co.paa", "lxWS\weapons_f_lxWS\Rifles\velko\data\hanguard_co.paa", "lxWS\weapons_1_f_lxWS\Rifles\velkor5\data\m203_co.paa", "a3\weapons_f\data\gl_holo_co.paa", "lxWS\weapons_1_f_lxWS\Rifles\velkor5\data\r5_handguard_co.paa"};
+    displayName = "Vektor R5 Carbine GL";
+    class WeaponSlotsInfo: WeaponSlotsInfo
+    {
+        mass = 112;
+    };
+};
+
+class arifle_VelkoR5_lxWS: arifle_Velko_base_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    descriptionShort = "Assault Rifle<br />Caliber: 5.56x45 mm";
+    initSpeed = 920;
+    aimTransitionSpeed = 1.3;
+    maxZeroing = 600;
+    inertia = 0.5;
+    dexterity = 1.5;
+    hasBipod = 0;
+    picture = "\lxws\weapons_1_f_lxWS\rifles\VelkoR5\Data\UI\icon_arifle_VelkoR5_lxWS_CA.paa";
+    model = "\lxws\weapons_1_f_lxWS\rifles\VelkoR5\VelkoR5_lxWS.p3d";
+    handAnim[] = {"OFP2_ManSkeleton", "\lxWS\anims_1_f_lxWS\anims\lxws_r5_handanim.rtm"};
+    baseWeapon = "arifle_VelkoR5_lxWS";
+    hiddenSelections[] = {"camo", "camo2", "camo3"};
+    hiddenSelectionsTextures[] = {"lxWS\weapons_1_f_lxWS\Rifles\velkor5\data\galatr5_co.paa", "lxWS\weapons_f_lxWS\Rifles\velko\data\hanguard_co.paa", "lxWS\weapons_1_f_lxWS\Rifles\velkor5\data\r5_handguard_co.paa"};
+    ACE_barrelLength = 332;
+    ACE_barrelTwist = 304.8;
+    ACE_twistDirection = 1;
+    displayName = "Vektor R5 Carbine";
+    class WeaponSlotsInfo: WeaponSlotsInfo
+    {
+        mass = 82;
+        class PointerSlot: PointerSlot_Rail
+        {
+            iconPosition[] = {0.15, 0.38};
+            iconScale = 0.2;
+        };
+    };
+    class Single: Single
+    {
+        dispersion = 0.00174;
+        class StandardSound: BaseSoundModeType
+        {
+            soundSetShot[] = {"VelkoR5_Shot_SoundSet", "AK74_Tail_SoundSet", "AK74_InteriorTail_SoundSet"};
+        };
+        class SilencedSound: BaseSoundModeType
+        {
+            SoundSetShot[] = {"VelkoR5_silencerShot_SoundSet", "AK12_silencerTail_SoundSet", "AK12_silencerInteriorTail_SoundSet"};
+        };
+    };
+    class FullAuto: FullAuto
+    {
+        dispersion = 0.00174;
+        class StandardSound: BaseSoundModeType
+        {
+            soundSetShot[] = {"VelkoR5_Shot_SoundSet", "AK74_Tail_SoundSet", "AK74_InteriorTail_SoundSet"};
+        };
+        class SilencedSound: BaseSoundModeType
+        {
+            SoundSetShot[] = {"VelkoR5_silencerShot_SoundSet", "AK12_silencerTail_SoundSet", "AK12_silencerInteriorTail_SoundSet"};
+        };
+    };
+};
+
+class Binocular: Default
+{
+    author = "Bohemia Interactive";
+    _generalMacro = "Binocular";
+    opticsDisablePeripherialVision = 1;
+    weaponPoolAvailable = 1;
+    scope = 2;
+    simulation = "Binocular";
+    model = "\A3\Weapons_f\binocular\binoculars_proxy";
+    opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
+    visionMode[] = {"Normal"};
+    picture = "\A3\Weapons_F\Data\UI\gear_binoculars_CA.paa";
+    value = 5;
+    type = 4096;
+    displayName = "Binoculars";
+    nameSound = "binoculars";
+    descriptionUse = "<t color='#9cf953'>Use: </t>Toggle Binoculars";
+    reloadTime = 0;
+    sound[] = {"", 0, 1};
+    canLock = 0;
+    optics = 1;
+    forceOptics = 0;
+    useAsBinocular = 1;
+    primary = 0;
+    inertia = 0.1;
+    swayCoef = 0.34;
+    magazines[] = {};
+    descriptionShort = "Magnification: 4x-12x";
+    opticsZoomInit = 0.056889;
+    opticsZoomMin = 0.056889;
+    opticsZoomMax = 0.056889;
+    modelOptics = "\z\ace\addons\optics\models\NWD_M22_5x";
+    minRange = 500;
+    minRangeProbab = 0.001;
+    midRange = 1000;
+    midRangeProbab = 0.01;
+    maxRange = 5000;
+    maxRangeProbab = 0.01;
+    class Library
+    {
+        libTextDesc = "Binoculars allow the soldier to survey the battlefield over long distances.";
+    };
+    class WeaponSlotsInfo
+    {
+        mass = 10;
+    };
+};
+
+class FakeWeapon: MGunCore
+{
+    scope = 1;
+    type = 0;
+    cursor = "";
+    cursoraim = "";
+    sound[] = {};
+    magazines[] = {"FakeMagazine"};
+    sounds[] = {"StandardSound"};
+    class StandardSound
+    {
+        weaponSoundEffect = "DefaultRifle";
+        begin1[] = {"", 0.000316228, 1};
+        soundBegin[] = {"begin1", 1};
+        closure1[] = {"", 1, 1, 10};
+        closure2[] = {"", 1, 1, 10};
+        soundClosure[] = {"closure1", 0.5, "closure2", 0.5};
+    };
+};
+
+class FirstAidKit: ItemCore
+{
+    author = "Bohemia Interactive";
+    _generalMacro = "FirstAidKit";
+    scope = 2;
+    displayName = "First Aid Kit";
+    picture = "\A3\Weapons_F\Items\data\UI\gear_FirstAidKit_CA.paa";
+    model = "\a3\Weapons_F\Ammo\mag_FirstAidkit.p3d";
+    descriptionShort = "Use to treat heavy wounds.<br/>Usable on: Self, Others";
+    ACE_isMedicalItem = 1;
+    class ItemInfo: InventoryFirstAidKitItem_Base_F
+    {
+        mass = 4;
+    };
+};
+
+class hgun_P07_blk_F: hgun_P07_F
+{
+    author = "Bohemia Interactive";
+    _generalMacro = "hgun_P07_blk_F";
+    baseWeapon = "hgun_P07_blk_F";
+    hiddenSelectionsTextures[] = {"\A3\Weapons_F_Exp\Pistols\P07\Data\hgun_P07_blk_F.paa"};
+    picture = "\A3\Weapons_F_Exp\Pistols\P07\Data\UI\icon_hgun_P07_blk_F_X_CA.paa";
+    displayName = "P99 (Black)";
+};
+
+class hgun_PDW2000_F: pdw2000_base_F
+{
+    author = "Bohemia Interactive";
+    _generalMacro = "hgun_PDW2000_F";
+    baseWeapon = "hgun_PDW2000_F";
+    scope = 2;
+    model = "\A3\Weapons_F_gamma\Smgs\pdw2000\pdw2000_F.p3d";
+    modelOptics = "-";
+    inertia = 0.2;
+    aimTransitionSpeed = 1.5;
+    dexterity = 1.8;
+    picture = "\A3\Weapons_F_gamma\Smgs\pdw2000\data\UI\gear_pdw2X_X_CA.paa";
+    UiPicture = "\A3\Weapons_F\data\UI\icon_regular_CA.paa";
+    displayName = "CPW";
+    ACE_barrelLength = 177.8;
+    ACE_barrelTwist = 228.6;
+    initSpeed = -0.994186;
+    class WeaponSlotsInfo: WeaponSlotsInfo
+    {
+        mass = 33;
+        class MuzzleSlot: asdg_MuzzleSlot_9MM_SMG
+        {
+            iconPosition[] = {0.1, 0.41};
+            iconScale = 0.2;
+        };
+        class CowsSlot: asdg_OpticRail1913
+        {
+            iconPosition[] = {0.4, 0.32};
+            iconScale = 0.15;
+        };
+    };
+    class ItemInfo
+    {
+        priority = 2;
+    };
+    class Library
+    {
+        libTextDesc = "The PDW2000 is a widespread submachine gun favored for its size and low recoil. The weapon has a conventional submachine gun layout with the magazine housed in the pistol grip and mirrored controls to achieve a truly ambidextrous use. Its low weight and small profile can be compared with some larger pistols. Two rails for mounting sights and tactical accessories underline the weapon's utility.";
+    };
+};
+
+class hgun_Pistol_heavy_02_Yorris_F: hgun_Pistol_heavy_02_F
+{
+    author = "Bohemia Interactive";
+    _generalMacro = "hgun_Pistol_heavy_02_Yorris_F";
+    class LinkedItems
+    {
+        class LinkedItemsOptic
+        {
+            slot = "CowsSlot";
+            item = "optic_Yorris";
+        };
+    };
+};
+
+class launch_RPG32_F: Launcher_Base_F
+{
+    author = "Bohemia Interactive";
+    _generalMacro = "launch_RPG32_F";
+    scope = 2;
+    model = "\A3\weapons_f\launchers\RPG32\rpg32_F.p3d";
+    picture = "\A3\Weapons_F\launchers\RPG32\data\UI\gear_RPG32_X_CA.paa";
+    UiPicture = "\A3\Weapons_F\Data\UI\icon_at_CA.paa";
+    handAnim[] = {"OFP2_ManSkeleton", "\A3\Weapons_F\Launchers\RPG32\data\Anim\RPG32.rtm"};
+    hiddenSelections[] = {"Camo_1", "Camo_2"};
+    hiddenSelectionsTextures[] = {"\a3\weapons_f\launchers\rpg32\data\rpg_32_body_co.paa", "\a3\weapons_f\launchers\rpg32\data\rpg_32_optics_co.paa"};
+    reloadAction = "ReloadRPG";
+    recoil = "recoil_rpg";
+    maxZeroing = 600;
+    modelOptics = "\A3\Weapons_F\acc\reticle_RPG_F";
+    weaponInfoType = "RscWeaponEmpty";
+    opticsZoomMin = 0.1083;
+    opticsZoomMax = 0.1083;
+    opticsZoomInit = 0.1083;
+    cameraDir = "look";
+    magazines[] = {"RPG32_F", "RPG32_HE_F"};
+    magazineWell[] = {"RPG32"};
+    modes[] = {"Single"};
+    drySound[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Dry_RPG32", 0.446684, 1, 20};
+    reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\reload_RPG32", 0.251189, 1, 10};
+    canLock = 0;
+    weaponLockDelay = 3;
+    lockAcquire = 0;
+    inertia = 0.9;
+    aimTransitionSpeed = 0.5;
+    dexterity = 1.1;
+    descriptionShort = "Rocket Launcher";
+    ace_overpressure_priority = 1;
+    ace_overpressure_angle = 60;
+    ace_overpressure_range = 15;
+    ace_overpressure_damage = 0.7;
+    ace_overpressure_offset = 1.2;
+    displayName = "RPG-32";
+    ace_reloadlaunchers_enabled = 1;
+    class GunParticles
+    {
+        class effect1
+        {
+            positionName = "konec hlavne";
+            directionName = "usti hlavne";
+            effectName = "RocketBackEffectsRPGNT";
+        };
+    };
+    class OpticsModes
+    {
+        class optic
+        {
+            opticsID = 1;
+            useModelOptics = 1;
+            opticsZoomMin = 0.1083;
+            opticsZoomMax = 0.1083;
+            opticsZoomInit = 0.1083;
+            distanceZoomMin = 300;
+            distanceZoomMax = 300;
+            memoryPointCamera = "eye";
+            opticsFlare = 1;
+            opticsDisablePeripherialVision = 1;
+            cameraDir = "look";
+            visionMode[] = {"Normal", "NVG"};
+            opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
+        };
+    };
+    class Single: Mode_SemiAuto
+    {
+        sounds[] = {"StandardSound"};
+        recoil = "recoil_single_law";
+        aiRateOfFire = 5;
+        aiRateOfFireDistance = 500;
+        aiRateOfFireDispersion = 2;
+        minRange = 10;
+        minRangeProbab = 0.3;
+        midRange = 40;
+        midRangeProbab = 0.85;
+        maxRange = 600;
+        maxRangeProbab = 0.85;
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            begin1[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\rpg32", 1.99526, 1, 1500};
+            soundBegin[] = {"begin1", 1};
+            soundSetShot[] = {"Launcher_RPG32_Shot_SoundSet", "Launcher_RPG32_Tail_SoundSet"};
+        };
+    };
+    class WeaponSlotsInfo: WeaponSlotsInfo
+    {
+        mass = 66;
+    };
+    class Library
+    {
+        libTextDesc = "The RPG-42 Alamut is a lightweight, reloadable and recoilless anti-tank weapon fired from the shoulder. It's based on modern Russian rocket launchers and produced in the Middle East. The RPG-42 Rocket is best used against light-armored vehicles and defenses, though when used against a tank, it could damage its tracks.";
+    };
+};
+
+class launch_RPG7_F: Launcher_Base_F
+{
+    author = "Bohemia Interactive";
+    _generalMacro = "launch_RPG7_F";
+    scope = 2;
+    displayName = "RPG-7";
+    descriptionShort = "Rocket Launcher";
+    overviewPicture = "\A3\Data_F_Exp\Images\WeaponRPG7_ca.paa";
+    model = "\A3\Weapons_F_Exp\Launchers\RPG7\rpg7_F.p3d";
+    picture = "\A3\Weapons_F_Exp\Launchers\RPG7\Data\UI\icon_launch_RPG7_F_X_CA.paa";
+    UiPicture = "\A3\Weapons_F\Data\UI\icon_at_CA.paa";
+    magazines[] = {"RPG7_F"};
+    magazineWell[] = {"RPG7", "CBA_RPG7"};
+    magazineReloadSwitchPhase = 0.48;
+    hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {"\a3\weapons_f_exp\launchers\rpg7\data\rpg7_co.paa"};
+    handAnim[] = {"OFP2_ManSkeleton", "\A3\Weapons_F_Exp\Launchers\RPG7\Data\Anim\RPG7V.rtm"};
+    reloadAction = "GestureReloadRPG7";
+    recoil = "recoil_rpg";
+    maxZeroing = 500;
+    weaponInfoType = "RscWeaponZeroing";
+    modelOptics = "-";
+    modes[] = {"Single"};
+    drySound[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Dry_RPG32", 0.446684, 1, 20};
+    reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\reload_RPG32", 1, 1, 10};
+    canLock = 0;
+    weaponLockDelay = 3;
+    lockAcquire = 0;
+    inertia = 0.8;
+    aimTransitionSpeed = 0.5;
+    dexterity = 1.2;
+    ace_overpressure_angle = 40;
+    ace_overpressure_offset = 0.9;
+    ace_reloadlaunchers_enabled = 1;
+    class Library
+    {
+        libTextDesc = "The RPG-7 is a portable, reusable, unguided, shoulder-launched, anti-tank, rocket-propelled grenade launcher. The ruggedness, simplicity, low cost and effectiveness of the RPG-7 has made it the most widely used anti-armor weapon in the world. Currently, around 40 countries use the weapon and it is manufactured in several variants by nine countries. It is popular with irregular and guerrilla forces. The RPG has been used in almost all conflicts across all continents since the mid-1960s, from the Vietnam War to the early recent conflicts in the Pacific area.";
+    };
+    class OpticsModes
+    {
+        class irons
+        {
+            opticsID = 1;
+            useModelOptics = 0;
+            opticsPPEffects[] = {};
+            opticsZoomMin = 0.375;
+            opticsZoomMax = 1.25;
+            opticsZoomInit = 0.75;
+            visionMode[] = {};
+            opticsFlare = 0;
+            opticsDisablePeripherialVision = 0;
+            distanceZoomMin = 200;
+            distanceZoomMax = 500;
+            cameraDir = "look";
+            discreteDistance[] = {200, 300, 400, 500};
+            discreteDistanceInitIndex = 0;
+            discreteDistanceCameraPoint[] = {"eye_200", "eye_300", "eye_400", "eye_500"};
+        };
+    };
+    class GunParticles
+    {
+        class effect1
+        {
+            positionName = "konec hlavne";
+            directionName = "usti hlavne";
+            effectName = "RocketBackEffectsRPGNT";
+        };
+    };
+    class Single: Mode_SemiAuto
+    {
+        sounds[] = {"StandardSound"};
+        recoil = "recoil_single_law";
+        aiRateOfFire = 7;
+        aiRateOfFireDistance = 600;
+        minRange = 10;
+        minRangeProbab = 0.3;
+        midRange = 400;
+        midRangeProbab = 0.8;
+        maxRange = 600;
+        maxRangeProbab = 0.1;
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            begin1[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\rpg32", 1.99526, 1, 1500};
+            soundBegin[] = {"begin1", 1};
+            soundSetShot[] = {"Launcher_RPG7_Shot_SoundSet", "Launcher_RPG7_Tail_SoundSet"};
+        };
+    };
+    class WeaponSlotsInfo: WeaponSlotsInfo
+    {
+        mass = 139;
+        class CowsSlot: asdg_OpticSideRail_RPG7
+        {
+            iconPosition[] = {0.45, 0.38};
+            iconScale = 0.2;
+        };
+    };
+};
+
+class LMG_S77_Desert_lxWS: LMG_S77_base_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    baseWeapon = "LMG_S77_Desert_lxWS";
+    picture = "\lxWS\weapons_1_f_lxws\Machineguns\s77\data\ui\icon_LMG_S77_Desert_lxWS_CA.paa";
+    magazines[] = {"100Rnd_762x51_S77_Green_lxWS"};
+    hiddenSelectionsTextures[] = {"\lxws\weapons_1_f_lxWS\machineguns\S77\Data\s77_1_Desert_co.paa", "\lxws\weapons_1_f_lxWS\machineguns\S77\Data\s77_2_Desert_co.paa", "\lxws\weapons_1_f_lxWS\machineguns\S77\Data\s77_3_co.paa", "\lxws\weapons_1_f_lxWS\machineguns\S77\Data\s77_3_co.paa"};
+    hiddenSelectionsMaterials[] = {"\lxws\weapons_1_f_lxWS\machineguns\S77\Data\s77_1_desert.rvmat", "\lxws\weapons_1_f_lxWS\machineguns\S77\Data\s77_2_desert.rvmat", "\lxws\weapons_1_f_lxWS\machineguns\S77\Data\s77_3.rvmat", "\lxws\weapons_1_f_lxWS\machineguns\S77\Data\s77_3_nutsack.rvmat"};
+    displayName = "Vektor SS-77 (Desert)";
+};
+
+class LMG_Zafir_F: Rifle_Long_Base_F
+{
+    author = "Bohemia Interactive";
+    _generalMacro = "LMG_Zafir_F";
+    baseWeapon = "LMG_Zafir_F";
+    scope = 2;
+    magazines[] = {"150Rnd_762x54_Box", "150Rnd_762x54_Box_Tracer"};
+    reloadAction = "GestureReloadM200";
+    recoil = "recoil_zafir";
+    maxZeroing = 1400;
+    handAnim[] = {"OFP2_ManSkeleton", "\A3\Weapons_F_Beta\Machineguns\Zafir\Data\Anim\zafir.rtm"};
+    model = "\A3\Weapons_F_Beta\Machineguns\Zafir\Zafir_F.p3d";
+    nameSound = "Mgun";
+    picture = "\A3\Weapons_F_Beta\Machineguns\Zafir\Data\UI\gear_Zafir_X_CA.paa";
+    UiPicture = "\A3\weapons_f\data\UI\icon_mg_CA.paa";
+    hiddenSelections[] = {"camo1", "camo2"};
+    hiddenSelectionsTextures[] = {"\a3\weapons_f_beta\machineguns\zafir\data\zafir01_co.paa", "\a3\weapons_f_beta\machineguns\zafir\data\zafir02_co.paa"};
+    descriptionShort = "Light Machine Gun<br />Caliber: 7.62x54 mm";
+    cursor = "mg";
+    cursorAim = "EmptyCursor";
+    magazineReloadSwitchPhase = 0.541;
+    inertia = 0.9;
+    aimTransitionSpeed = 0.6;
+    dexterity = 1.2;
+    modes[] = {"FullAuto", "Single", "close", "short", "medium", "far_optic1", "far_optic2", "ACE_Burst_far"};
+    bullet1[] = {"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Metal_01", 0.446684, 1, 15};
+    bullet2[] = {"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Metal_02", 0.446684, 1, 15};
+    bullet3[] = {"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Metal_03", 0.446684, 1, 15};
+    bullet4[] = {"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Metal_04", 0.446684, 1, 15};
+    bullet5[] = {"A3\sounds_f\weapons\shells\7_62\Shellcase_762_Dirt_01", 0.562341, 1, 15};
+    bullet6[] = {"A3\sounds_f\weapons\shells\7_62\Shellcase_762_Dirt_02", 0.562341, 1, 15};
+    bullet7[] = {"A3\sounds_f\weapons\shells\7_62\Shellcase_762_Dirt_03", 0.562341, 1, 15};
+    bullet8[] = {"A3\sounds_f\weapons\shells\7_62\Shellcase_762_Dirt_04", 0.562341, 1, 15};
+    bullet9[] = {"A3\sounds_f\weapons\shells\7_62\Shellcase_762_Grass_01", 0.562341, 1, 15};
+    bullet10[] = {"A3\sounds_f\weapons\shells\7_62\Shellcase_762_Grass_02", 0.562341, 1, 15};
+    bullet11[] = {"A3\sounds_f\weapons\shells\7_62\Shellcase_762_Grass_03", 0.562341, 1, 15};
+    bullet12[] = {"A3\sounds_f\weapons\shells\7_62\Shellcase_762_Grass_04", 0.562341, 1, 15};
+    soundBullet[] = {"bullet1", 0.087, "bullet2", 0.083, "bullet3", 0.083, "bullet4", 0.083, "bullet5", 0.083, "bullet6", 0.083, "bullet7", 0.083, "bullet8", 0.083, "bullet9", 0.083, "bullet10", 0.083, "bullet11", 0.083, "bullet12", 0.083};
+    discreteDistance[] = {300, 400, 500, 600, 700, 800, 900, 1000};
+    drySound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Zafir\dry_Zafir", 0.446684, 1, 10};
+    reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Zafir\reload_zafir", 1, 1, 10};
+    changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Zafir\firemode_Zafir", 0.251189, 1, 5};
+    soundBipodDeploy[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_deploy", 0.707946, 1, 20};
+    soundBipodFold[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_fold", 0.707946, 1, 20};
+    soundBipodDown[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_down", 0.707946, 1, 20};
+    soundBipodUp[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_up", 0.707946, 1, 20};
+    aiDispersionCoefY = 23;
+    aiDispersionCoefX = 19;
+    deployedPivot = "bipod";
+    hasBipod = 1;
+    magazineWell[] = {"CBA_762x54R_LINKS"};
+    ace_overheating_allowSwapBarrel = 1;
+    displayName = "Negev NG7";
+    ACE_RailHeightAboveBore = 1.12161;
+    ACE_IronSightBaseAngle = 0.004584;
+    ACE_barrelLength = 459.74;
+    ACE_barrelTwist = 304.8;
+    initSpeed = -1.00048;
+    class Library
+    {
+        libTextDesc = "The Zafir 7.62 mm is a light machine gun mass-produced by China. It is said to be based on a copied Israeli design, which spawned a lengthy legal conflict that still remains unresolved. The Zafir is a gas-powered automatic firearm, that uses easily replaceable ammo boxes carrying up to 150 rounds. 7.62 mm caliber ammunition gives the Zafir an advantage over BLUFOR MX SW weapons when compared in power and range, but the weapon itself is heavier and less maneuverable.";
+    };
+    class WeaponSlotsInfo: WeaponSlotsInfo
+    {
+        mass = 163;
+        class CowsSlot: asdg_OpticRail1913_short_MG
+        {
+            iconPosition[] = {0.6, 0.35};
+            iconScale = 0.15;
+        };
+        class PointerSlot: asdg_FrontSideRail
+        {
+            iconPosition[] = {0.4, 0.4};
+            iconScale = 0.15;
+        };
+        class MuzzleSlot: asdg_MuzzleSlot_762R_PK
+        {
+            iconPosition[] = {0.05, 0.38};
+            iconScale = 0.2;
+        };
+    };
+    class Single: Mode_SemiAuto
+    {
+        dispersion = 0.00131;
+        recoil = "recoil_auto_mk200";
+        recoilProne = "recoil_auto_prone_mk200";
+        sounds[] = {"StandardSound", "SilencedSound"};
+        autoFire = 0;
+        soundContinuous = 0;
+        soundBurst = 0;
+        minRangeProbab = 0.01;
+        midRange = 200;
+        midRangeProbab = 0.01;
+        maxRange = 400;
+        maxRangeProbab = 0.01;
+        showToPlayer = 1;
+        reloadTime = 0.08;
+        minRange = 120;
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            soundSetShot[] = {"Zafir_Shot_SoundSet", "Zafir_Tail_SoundSet", "Zafir_InteriorTail_SoundSet"};
+        };
+        class SilencedSound: BaseSoundModeType
+        {
+            soundSetShot[] = {"Zafir_silencerShot_SoundSet", "Zafir_silencerTail_SoundSet", "Zafir_silencerInteriorTail_SoundSet"};
+        };
+    };
+    class FullAuto: Mode_FullAuto
+    {
+        dispersion = 0.00131;
+        recoil = "recoil_auto_mk200";
+        recoilProne = "recoil_auto_prone_mk200";
+        sounds[] = {"StandardSound", "SilencedSound"};
+        soundContinuous = 0;
+        soundBurst = 0;
+        minRange = 0;
+        minRangeProbab = 0.9;
+        midRange = 15;
+        midRangeProbab = 0.7;
+        maxRange = 30;
+        maxRangeProbab = 0.1;
+        aiRateOfFire = 1e-06;
+        showToPlayer = 1;
+        reloadTime = 0.07;
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            soundSetShot[] = {"Zafir_Shot_SoundSet", "Zafir_Tail_SoundSet", "Zafir_InteriorTail_SoundSet"};
+        };
+        class SilencedSound: BaseSoundModeType
+        {
+            soundSetShot[] = {"Zafir_silencerShot_SoundSet", "Zafir_silencerTail_SoundSet", "Zafir_silencerInteriorTail_SoundSet"};
+        };
+    };
+    class close: FullAuto
+    {
+        burst = 10;
+        aiRateOfFire = 0.5;
+        aiRateOfFireDistance = 50;
+        minRange = 0;
+        minRangeProbab = 0.05;
+        midRange = 30;
+        midRangeProbab = 0.7;
+        maxRange = 50;
+        maxRangeProbab = 0.04;
+        showToPlayer = 0;
+    };
+    class short: close
+    {
+        burst = 8;
+        aiRateOfFire = 2;
+        aiRateOfFireDistance = 300;
+        minRange = 50;
+        minRangeProbab = 0.05;
+        midRange = 150;
+        midRangeProbab = 0.7;
+        maxRange = 300;
+        maxRangeProbab = 0.04;
+    };
+    class medium: close
+    {
+        burst = 5;
+        aiRateOfFire = 4;
+        aiRateOfFireDistance = 600;
+        minRange = 200;
+        minRangeProbab = 0.05;
+        midRange = 400;
+        midRangeProbab = 0.6;
+        maxRange = 600;
+        maxRangeProbab = 0.1;
+    };
+    class far_optic1: close
+    {
+        requiredOpticType = 1;
+        showToPlayer = 0;
+        burst = 3;
+        aiRateOfFire = 9;
+        aiRateOfFireDistance = 900;
+        minRange = 350;
+        minRangeProbab = 0.04;
+        midRange = 550;
+        midRangeProbab = 0.5;
+        maxRangeProbab = 0.01;
+        maxRange = 800;
+    };
+    class far_optic2: far_optic1
+    {
+        requiredOpticType = 2;
+        autoFire = 0;
+        burst = 1;
+        minRange = 400;
+        minRangeProbab = 0.05;
+        midRange = 800;
+        midRangeProbab = 0.5;
+        maxRangeProbab = 0.01;
+        maxRange = 1200;
+    };
+    class GunParticles: GunParticles
+    {
+        class AmmoBeltEject
+        {
+            effectName = "MachineGunEject2";
+            positionName = "nabojnicestart";
+            directionName = "nabojniceend";
+        };
+    };
+    class ACE_Burst_far: medium
+    {
+        aiRateOfFire = 6;
+        aiRateOfFireDistance = 900;
+        minRange = 500;
+        minRangeProbab = 0.1;
+        midRange = 700;
+        midRangeProbab = 0.2;
+        maxRange = 900;
+        maxRangeProbab = 0.2;
+        burst = "3 + round random 5";
+    };
+};
+
+class PickupHorn_rf: CarHorn
+{
+    drySound[] = {"\lxrf\sounds_rf\vehicles\pickup_01\Horn.ogg", 1.75, 1, 200};
+};
+
+class Put: Default
+{
+    scope = 1;
+    value = 0;
+    type = 0;
+    canDrop = 0;
+    muzzles[] = {"DemoChargeMuzzle", "PipeBombMuzzle", "MineMuzzle", "DirectionalMineRemoteMuzzle", "ClassicMineRangeMuzzle", "BoundingMineRangeMuzzle", "DirectionalMineRangeMuzzle", "ClassicMineWireMuzzle", "EMPAPMineMuzzle", "EMPATMineMuzzle", "EMPSatchelMuzzle", "APERSMineDispenserMuzzle", "TrainingMineMuzzle", "Drone_explosive_muzzle", "Drone_explosive_muzzle_dummy", "ace_explosives_muzzle"};
+    displayName = "Put";
+    class PutMuzzle: Default
+    {
+        sound[] = {"", 0.000316228, 1};
+        reloadSound[] = {"", 0.000316228, 1};
+        enableAttack = 0;
+        optics = 0;
+        showEmpty = 0;
+        canLock = 0;
+        primary = 10;
+        minRange = 0;
+        minRangeProbab = 0.1;
+        midRange = 3;
+        midRangeProbab = 0.9;
+        maxRange = 15;
+        maxRangeProbab = 0.04;
+        moveToInternal = 0;
+        opticsZoomMin = 0.25;
+        opticsZoomMax = 1.25;
+        opticsZoomInit = 0.75;
+    };
+    class TimeBombMuzzle: PutMuzzle
+    {
+        displayName = "Charge";
+        magazines[] = {"SatchelCharge_Remote_Mag"};
+        enableAttack = 1;
+    };
+    class PipeBombMuzzle: PutMuzzle
+    {
+        magazines[] = {"SatchelCharge_Remote_Mag", "IEDUrbanBig_Remote_Mag", "IEDLandBig_Remote_Mag"};
+        autoreload = 0;
+        displayName = "Explosive Satchel";
+        enableAttack = 1;
+        showToPlayer = 0;
+    };
+    class MineMuzzle: PutMuzzle
+    {
+        magazines[] = {"ATMine_Range_Mag"};
+        autoreload = 0;
+        enableAttack = 1;
+        displayName = "AT Mine";
+        picture = "\A3\Weapons_F\Data\clear_empty.paa";
+        showToPlayer = 0;
+    };
+    class ClassicMineRangeMuzzle: PutMuzzle
+    {
+        autoreload = 0;
+        enableAttack = 1;
+        magazines[] = {"APERSMine_Range_Mag"};
+        displayName = "APERS Mine";
+        picture = "\A3\Weapons_F\Data\clear_empty.paa";
+        showToPlayer = 0;
+        class EventHandlers
+        {
+            fired = "['firedMine',_this] call bis_fnc_showLawOfWar;";
+        };
+    };
+    class BoundingMineRangeMuzzle: ClassicMineRangeMuzzle
+    {
+        magazines[] = {"APERSBoundingMine_Range_Mag"};
+        displayName = "APERS Bounding Mine";
+    };
+    class DirectionalMineRangeMuzzle: ClassicMineRangeMuzzle
+    {
+        magazines[] = {"SLAMDirectionalMine_Wire_Mag"};
+        displayName = "M6 SLAM Mine";
+    };
+    class ClassicMineWireMuzzle: ClassicMineRangeMuzzle
+    {
+        magazines[] = {"APERSTripMine_Wire_Mag"};
+        displayName = "APERS Tripwire Mine";
+    };
+    class DirectionalMineRemoteMuzzle: PutMuzzle
+    {
+        autoreload = 0;
+        enableAttack = 1;
+        magazines[] = {"ClaymoreDirectionalMine_Remote_Mag"};
+        displayName = "Claymore Charge";
+        picture = "\A3\Weapons_F\Data\clear_empty.paa";
+        showToPlayer = 0;
+    };
+    class DemoChargeMuzzle: PutMuzzle
+    {
+        autoreload = 0;
+        displayName = "Explosive Charge";
+        magazines[] = {"DemoCharge_Remote_Mag", "IEDUrbanSmall_Remote_Mag", "IEDLandSmall_Remote_Mag"};
+        enableAttack = 1;
+        showToPlayer = 0;
+    };
+    class EMPAPMineMuzzle: PutMuzzle
+    {
+        autoreload = 0;
+        enableAttack = 1;
+        magazines[] = {"WNZ_EMPAPMine_Range_Mag"};
+        displayName = "EMP AP Mine";
+        picture = "\A3\Weapons_F\Data\clear_empty.paa";
+        showToPlayer = 0;
+    };
+    class EMPATMineMuzzle: PutMuzzle
+    {
+        autoreload = 0;
+        enableAttack = 1;
+        magazines[] = {"WNZ_EMPATMine_Range_Mag"};
+        displayName = "EMP AT Mine";
+        picture = "\A3\Weapons_F\Data\clear_empty.paa";
+        showToPlayer = 0;
+    };
+    class EMPSatchelMuzzle: PutMuzzle
+    {
+        autoreload = 0;
+        enableAttack = 1;
+        magazines[] = {"WNZ_EMPSatchelCharge_Remote_Mag"};
+        displayName = "WNZ_EMPSatchel";
+        picture = "\A3\Weapons_F\Data\clear_empty.paa";
+        showToPlayer = 0;
+    };
+    class APERSMineDispenserMuzzle: PutMuzzle
+    {
+        displayName = "APERS Mine Dispenser";
+        magazines[] = {"APERSMineDispenser_Mag"};
+        showToPlayer = 0;
+        enableAttack = 1;
+        autoreload = 0;
+    };
+    class TrainingMineMuzzle: PutMuzzle
+    {
+        displayName = "Training Mine";
+        magazines[] = {"TrainingMine_Mag"};
+        showToPlayer = 0;
+        enableAttack = 1;
+        autoreload = 0;
+    };
+    class Drone_explosive_muzzle: PutMuzzle
+    {
+        autoreload = 0;
+        enableAttack = 1;
+        magazines[] = {"Drone_Range_Mag"};
+        displayName = "Drone Mine Muzzle";
+        picture = "\A3\Weapons_F\Data\clear_empty.paa";
+        showToPlayer = 0;
+    };
+    class Drone_explosive_muzzle_dummy: Drone_explosive_muzzle
+    {
+        magazines[] = {"Drone_Range_Mag_dummy"};
+        displayName = "Drone Mine Muzzle Dummy";
+    };
+    class ace_explosives_muzzle: PutMuzzle
+    {
+        magazines[] = {"ACE_FlareTripMine_Mag", "ACE_FlareTripMine_Mag_Red", "ACE_FlareTripMine_Mag_Green", "ACE_APERSMine_ToePopper_Mag"};
+    };
+};
+
+class sgun_aa40_Holosight_blk_lxWS: sgun_aa40_lxWS
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    class LinkedItems
+    {
+        class LinkedItemsOptic
+        {
+            slot = "CowsSlot";
+            item = "optic_Holosight_blk_F";
+        };
+    };
+};
+
+class sgun_HunterShotgun_01_F: sgun_HunterShotgun_01_base_F
+{
+    author = "Bohemia Interactive";
+    _generalMacro = "sgun_HunterShotgun_01_F";
+    scope = 2;
+    picture = "a3\Weapons_F_Enoch\Shotguns\HunterShotgun_01\Data\UI\gear_HunterShotgun_01_X_CA.paa";
+    displayName = "CZ 581";
+};
+
+class SMG_03_TR_black: SMG_03_TR_BASE
+{
+    author = "Bohemia Interactive";
+    _generalMacro = "SMG_03_TR_black";
+    scope = 2;
+    picture = "\A3\Weapons_F_Mod\SMGs\SMG_03\data\UI\gear_adr97_tr_black_ca.paa";
+    displayName = "PS90 TR (Black)";
+    ACE_RailHeightAboveBore = 7.32531;
+    class WeaponSlotsInfo: WeaponSlotsInfo
+    {
+        class CowsSlot: asdg_OpticRail1913_short
+        {
+            iconPosition[] = {0.4, 0.3};
+            iconScale = 0.2;
+        };
+        class PointerSlot: asdg_FrontSideRail
+        {
+            iconPosition[] = {0.33, 0.37};
+            iconScale = 0.25;
+        };
+    };
+};
+
+class SportCarHorn: CarHorn
+{
+    drySound[] = {"A3\Sounds_F\weapons\horns\car_horn_1", 1, 1, 150};
+};
+
+class srifle_DMR_06_camo_khs_F: srifle_DMR_06_camo_F
+{
+    author = "Bohemia Interactive";
+    _generalMacro = "srifle_DMR_06_camo_khs_F";
+    class LinkedItems
+    {
+        class LinkedItemsOptic
+        {
+            slot = "CowsSlot";
+            item = "optic_KHS_old";
+        };
+    };
+};
+
+class srifle_DMR_06_hunter_khs_F: srifle_DMR_06_hunter_F
+{
+    author = "Bohemia Interactive";
+    _generalMacro = "srifle_DMR_06_hunter_khs_F";
+    class LinkedItems
+    {
+        class LinkedItemsOptic
+        {
+            slot = "CowsSlot";
+            item = "optic_KHS_old";
+        };
+    };
+};
+
+class Throw: GrenadeLauncher
+{
+    scope = 1;
+    autoAimEnabled = 0;
+    cursor = "EmptyCursor";
+    cursorAim = "throw";
+    value = 0;
+    type = 0;
+    displayName = "Throw";
+    canDrop = 0;
+    textureType = "semi";
+    magazineReloadTime = 0;
+    reloadTime = 0;
+    muzzles[] = {"HandGrenade_Stone", "HandGrenadeMuzzle", "MiniGrenadeMuzzle", "SmokeShellMuzzle", "SmokeShellYellowMuzzle", "SmokeShellGreenMuzzle", "SmokeShellRedMuzzle", "SmokeShellPurpleMuzzle", "SmokeShellOrangeMuzzle", "SmokeShellBlueMuzzle", "ChemlightGreenMuzzle", "ChemlightRedMuzzle", "ChemlightYellowMuzzle", "ChemlightBlueMuzzle", "IRGrenade", "MS_IFF_Muzzle_1", "MS_IFF_Muzzle_2", "WNZ_EMPGrenade_Muzzle", "JCA_HandFlare_red_Muzzle", "JCA_HandFlare_green_Muzzle", "JCA_SignalFlare_red_Muzzle", "JCA_SignalFlare_green_Muzzle", "HandGrenade_EastMuzzle", "HandGrenade_GuerMuzzle", "Aegis_HandFlare_red_Muzzle", "Aegis_HandFlare_green_Muzzle", "Aegis_SignalFlare_red_Muzzle", "Aegis_SignalFlare_green_Muzzle", "ACE_HandFlare_WhiteMuzzle", "ACE_HandFlare_RedMuzzle", "ACE_HandFlare_GreenMuzzle", "ACE_HandFlare_YellowMuzzle", "ACE_M84Muzzle", "ACE_M14Muzzle", "ACE_CTS9Muzzle", "ACE_SatchelMuzzle", "ACE_DemoMuzzle", "ACE_Chemlight_OrangeMuzzle", "ACE_Chemlight_WhiteMuzzle", "ACE_Chemlight_HiRedMuzzle", "ACE_Chemlight_HiYellowMuzzle", "ACE_Chemlight_HiWhiteMuzzle", "ACE_Chemlight_HiBlueMuzzle", "ACE_Chemlight_HiGreenMuzzle", "ACE_Chemlight_UltraHiOrangeMuzzle", "ACE_Chemlight_IRMuzzle", "PHAN_WPGrenade_Muzzle"};
+    class ThrowMuzzle: GrenadeLauncher
+    {
+        sound[] = {"", 0.000316228, 1};
+        reloadSound[] = {"", 0.000316228, 1};
+        aidispersioncoefx = 6;
+        aidispersioncoefy = 6;
+        autoreload = 1;
+        cursor = "EmptyCursor";
+        cursoraim = "throw";
+        enableattack = 1;
+        keepininventory = 1;
+        magazinereloadtime = 0;
+        maxrange = 60;
+        maxrangeprobab = 0.03;
+        midrange = 45;
+        midrangeprobab = 0.9;
+        minrange = 10;
+        minrangeprobab = 0.2;
+        modeloptics = "";
+        reloadtime = 0;
+        showempty = 0;
+        soundEnd[] = {"", 1};
+    };
+    class HandGrenadeMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"HandGrenade"};
+        sounds[] = {"StandardSound"};
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            begin1[] = {"\A3\Sounds_F\weapons\Grenades\Grenade_PullPin", "db-1", 1, 10};
+            soundBegin[] = {"begin1", 1};
+        };
+    };
+    class MiniGrenadeMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"MiniGrenade"};
+        sounds[] = {"StandardSound"};
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            begin1[] = {"\A3\Sounds_F\weapons\Grenades\Grenade_PullPin", "db-1", 1, 10};
+            soundBegin[] = {"begin1", 1};
+        };
+    };
+    class HandGrenade_Stone: ThrowMuzzle
+    {
+        magazines[] = {"HandGrenade_Stone"};
+        displayName = "Stone";
+        minRange = 5;
+        minRangeProbab = 0.01;
+        midRange = 45;
+        midRangeProbab = 0.1;
+        maxRange = 80;
+        maxRangeProbab = 0.01;
+    };
+    class SmokeShellMuzzle: ThrowMuzzle
+    {
+        displayName = "Smoke Grenade";
+        magazines[] = {"SmokeShell"};
+        sounds[] = {"StandardSound"};
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            begin1[] = {"\A3\Sounds_F\weapons\Grenades\Grenade_PullPin", "db-1", 1, 10};
+            soundBegin[] = {"begin1", 1};
+        };
+    };
+    class SmokeShellYellowMuzzle: ThrowMuzzle
+    {
+        displayName = "Smoke Grenade";
+        magazines[] = {"SmokeShellYellow"};
+        sounds[] = {"StandardSound"};
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            begin1[] = {"\A3\Sounds_F\weapons\Grenades\Grenade_PullPin", "db-1", 1, 10};
+            soundBegin[] = {"begin1", 1};
+        };
+    };
+    class SmokeShellRedMuzzle: ThrowMuzzle
+    {
+        displayName = "Smoke Grenade";
+        magazines[] = {"SmokeShellRed"};
+        sounds[] = {"StandardSound"};
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            begin1[] = {"\A3\Sounds_F\weapons\Grenades\Grenade_PullPin", "db-1", 1, 10};
+            soundBegin[] = {"begin1", 1};
+        };
+    };
+    class SmokeShellGreenMuzzle: ThrowMuzzle
+    {
+        displayName = "Smoke Grenade";
+        magazines[] = {"SmokeShellGreen"};
+        sounds[] = {"StandardSound"};
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            begin1[] = {"\A3\Sounds_F\weapons\Grenades\Grenade_PullPin", "db-1", 1, 10};
+            soundBegin[] = {"begin1", 1};
+        };
+    };
+    class SmokeShellPurpleMuzzle: ThrowMuzzle
+    {
+        displayName = "Smoke Grenade";
+        magazines[] = {"SmokeShellPurple"};
+        sounds[] = {"StandardSound"};
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            begin1[] = {"\A3\Sounds_F\weapons\Grenades\Grenade_PullPin", "db-1", 1, 10};
+            soundBegin[] = {"begin1", 1};
+        };
+    };
+    class SmokeShellBlueMuzzle: ThrowMuzzle
+    {
+        displayName = "Smoke Grenade";
+        magazines[] = {"SmokeShellBlue"};
+        sounds[] = {"StandardSound"};
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            begin1[] = {"\A3\Sounds_F\weapons\Grenades\Grenade_PullPin", "db-1", 1, 10};
+            soundBegin[] = {"begin1", 1};
+        };
+    };
+    class SmokeShellOrangeMuzzle: ThrowMuzzle
+    {
+        displayName = "Smoke Grenade";
+        magazines[] = {"SmokeShellOrange"};
+        sounds[] = {"StandardSound"};
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            begin1[] = {"\A3\Sounds_F\weapons\Grenades\Grenade_PullPin", "db-1", 1, 10};
+            soundBegin[] = {"begin1", 1};
+        };
+    };
+    class ChemlightGreenMuzzle: ThrowMuzzle
+    {
+        displayName = "Chemlight";
+        magazines[] = {"Chemlight_green"};
+        sounds[] = {"StandardSound"};
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            begin1[] = {"\A3_Aegis\Sounds_F_Aegis\weapons\Chemlights\chemlight_Crack", "db-2", 1, 10};
+            soundBegin[] = {"begin1", 1};
+        };
+    };
+    class ChemlightRedMuzzle: ChemlightGreenMuzzle
+    {
+        magazines[] = {"Chemlight_red"};
+    };
+    class ChemlightYellowMuzzle: ChemlightGreenMuzzle
+    {
+        magazines[] = {"Chemlight_yellow"};
+    };
+    class ChemlightBlueMuzzle: ChemlightGreenMuzzle
+    {
+        magazines[] = {"Chemlight_blue"};
+    };
+    class IRGrenade: ThrowMuzzle
+    {
+        displayName = "IR Grenade";
+        magazines[] = {"B_IR_Grenade", "O_IR_Grenade", "I_IR_Grenade", "O_R_IR_Grenade", "I_E_IR_Grenade"};
+        cursorSize = 1;
+    };
+    class MS_IFF_Muzzle_1: ThrowMuzzle
+    {
+        magazines[] = {"MS_Strobe_Mag_1"};
+    };
+    class MS_IFF_Muzzle_2: ThrowMuzzle
+    {
+        magazines[] = {"MS_Strobe_Mag_2"};
+    };
+    class WNZ_EMPGrenade_Muzzle: ThrowMuzzle
+    {
+        magazines[] = {"WNZ_EMPGrenade", "WNZ_EMPImpactGrenade"};
+    };
+    class JCA_HandFlare_red_Muzzle: ThrowMuzzle
+    {
+        magazines[] = {"JCA_HandFlare_red"};
+    };
+    class JCA_HandFlare_green_Muzzle: ThrowMuzzle
+    {
+        magazines[] = {"JCA_HandFlare_green"};
+    };
+    class JCA_SignalFlare_red_Muzzle: ThrowMuzzle
+    {
+        magazines[] = {"JCA_SignalFlare_red"};
+    };
+    class JCA_SignalFlare_green_Muzzle: ThrowMuzzle
+    {
+        magazines[] = {"JCA_SignalFlare_green"};
+    };
+    class HandGrenade_EastMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"HandGrenade_East"};
+        sounds[] = {"StandardSound"};
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            begin1[] = {"\A3\Sounds_F\weapons\Grenades\Grenade_PullPin", "db-1", 1, 10};
+            soundBegin[] = {"begin1", 1};
+        };
+    };
+    class HandGrenade_GuerMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"HandGrenade_Guer"};
+        sounds[] = {"StandardSound"};
+        class BaseSoundModeType
+        {
+        };
+        class StandardSound: BaseSoundModeType
+        {
+            begin1[] = {"\A3\Sounds_F\weapons\Grenades\Grenade_PullPin", "db-1", 1, 10};
+            soundBegin[] = {"begin1", 1};
+        };
+    };
+    class Aegis_HandFlare_red_Muzzle: ThrowMuzzle
+    {
+        magazines[] = {"Aegis_HandFlare_red"};
+    };
+    class Aegis_HandFlare_green_Muzzle: ThrowMuzzle
+    {
+        magazines[] = {"Aegis_HandFlare_green"};
+    };
+    class Aegis_SignalFlare_red_Muzzle: ThrowMuzzle
+    {
+        magazines[] = {"Aegis_SignalFlare_red"};
+    };
+    class Aegis_SignalFlare_green_Muzzle: ThrowMuzzle
+    {
+        magazines[] = {"Aegis_SignalFlare_green"};
+    };
+    class ACE_HandFlare_WhiteMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_HandFlare_White"};
+    };
+    class ACE_HandFlare_RedMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_HandFlare_Red"};
+    };
+    class ACE_HandFlare_GreenMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_HandFlare_Green"};
+    };
+    class ACE_HandFlare_YellowMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_HandFlare_Yellow"};
+    };
+    class ACE_M84Muzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_M84"};
+    };
+    class ACE_M14Muzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_M14"};
+    };
+    class ACE_CTS9Muzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_CTS9"};
+    };
+    class ACE_SatchelMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_SatchelCharge_Remote_Mag_Throwable"};
+    };
+    class ACE_DemoMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_DemoCharge_Remote_Mag_Throwable"};
+    };
+    class ACE_Chemlight_OrangeMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_Chemlight_Orange"};
+    };
+    class ACE_Chemlight_WhiteMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_Chemlight_White"};
+    };
+    class ACE_Chemlight_HiRedMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_Chemlight_HiRed"};
+    };
+    class ACE_Chemlight_HiYellowMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_Chemlight_HiYellow"};
+    };
+    class ACE_Chemlight_HiWhiteMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_Chemlight_HiWhite"};
+    };
+    class ACE_Chemlight_HiBlueMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_Chemlight_HiBlue"};
+    };
+    class ACE_Chemlight_HiGreenMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_Chemlight_HiGreen"};
+    };
+    class ACE_Chemlight_UltraHiOrangeMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_Chemlight_UltraHiOrange"};
+    };
+    class ACE_Chemlight_IRMuzzle: ThrowMuzzle
+    {
+        magazines[] = {"ACE_Chemlight_IR"};
+    };
+    class PHAN_WPGrenade_Muzzle: ThrowMuzzle
+    {
+        magazines[] = {"PHAN_WPGrenade_Throw_Mag"};
+    };
+};
+
+class TruckHorn: CarHorn
+{
+    drySound[] = {"A3\Sounds_F\weapons\horns\MRAP_02_horn_1", 1, 1, 200};
+};
+
+class TruckHorn3: CarHorn
+{
+    drySound[] = {"A3\Sounds_F\weapons\horns\truck_horn_3", 1, 1, 300};
+};
+
+class U_I_L_Uniform_01_tshirt_black_F: Uniform_Base
+{
+    author = "Bohemia Interactive";
+    scope = 2;
+    displayName = "Looter Clothes (T-Shirt, Black)";
+    picture = "\a3\Characters_F_Enoch\Uniforms\data\ui\icon_U_I_L_Uniform_01_tshirt_black_F_ca.paa";
+    model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+    hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {"\a3\Characters_F_Enoch\Uniforms\Data\I_L_Uniform_01_tshirt_black_1_co.paa"};
+    DLC = "Enoch";
+    class ItemInfo: UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "I_L_Uniform_01_tshirt_black_F";
+        containerClass = "Supply40";
+        mass = 40;
+    };
+};
+
+class U_I_L_Uniform_01_tshirt_skull_F: Uniform_Base
+{
+    author = "Bohemia Interactive";
+    scope = 2;
+    displayName = "Looter Clothes (T-Shirt, Skull)";
+    picture = "\a3\Characters_F_Enoch\Uniforms\data\ui\icon_U_I_L_Uniform_01_tshirt_skull_F_ca.paa";
+    model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+    hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {"\a3\Characters_F_Enoch\Uniforms\Data\I_L_Uniform_01_tshirt_skull_1_co.paa"};
+    DLC = "Enoch";
+    class ItemInfo: UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "I_L_Uniform_01_tshirt_skull_F";
+        containerClass = "Supply40";
+        mass = 40;
+    };
+};
+
+class U_lxWS_Djella_02_Brown: Uniform_Base
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Bandit Rags (Brown)";
+    picture = "\lxWS\characters_f_lxws\data\ui\icon_U_lxWS_Djella_02_Brown_ca.paa";
+    model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
+    hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {"\lxWS\characters_f_lxws\suitpacks\data\suitpack_djella_brown_co.paa"};
+    class ItemInfo: UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "I_SFIA_hireling_lxWS";
+        containerClass = "Supply30";
+        mass = 30;
+    };
+};
+
+class U_lxWS_Djella_02_Grey: Uniform_Base
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Bandit Rags (Gray)";
+    picture = "\lxWS\characters_f_lxws\data\ui\icon_U_lxWS_Djella_02_Grey_ca.paa";
+    model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
+    hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {"\lxWS\characters_f_lxws\suitpacks\data\suitpack_djella_gray_co.paa"};
+    class ItemInfo: UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "I_SFIA_enforcer_lxWS";
+        containerClass = "Supply30";
+        mass = 30;
+    };
+};
+
+class U_lxWS_Djella_02_Sand: Uniform_Base
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Bandit Rags (Sand)";
+    picture = "\lxWS\characters_f_lxws\data\ui\icon_U_lxWS_Djella_02_Sand_ca.paa";
+    model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
+    hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {"\lxWS\characters_f_lxws\suitpacks\data\suitpack_djella_sand_co.paa"};
+    class ItemInfo: UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "I_SFIA_scout_lxWS";
+        containerClass = "Supply30";
+        mass = 30;
+    };
+};
+
+class U_lxWS_Djella_03_Green: Uniform_Base
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    scopeCurator = 2;
+    displayName = "Bandit Rags (Green)";
+    picture = "\lxWS\characters_f_lxws\data\ui\icon_U_lxWS_Djella_03_Green_ca.paa";
+    model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
+    hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {"\lxWS\characters_f_lxws\suitpacks\data\suitpack_djella_green_co.paa"};
+    class ItemInfo: UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "I_SFIA_watcher_lxWS";
+        containerClass = "Supply30";
+        mass = 30;
+    };
+};
+
+class U_lxWS_Djella_B_02_Sand: U_lxWS_Djella_02_Sand
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "B_Tura_scout_lxWS";
+    };
+};
+
+class U_lxWS_Djella_O_02_Brown: U_lxWS_Djella_02_Brown
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "O_Tura_hireling_lxWS";
+    };
+};
+
+class U_lxWS_Djella_O_02_Grey: U_lxWS_Djella_02_Grey
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "O_Tura_enforcer_lxWS";
+    };
+};
+
+class U_lxWS_Djella_O_02_Sand: U_lxWS_Djella_02_Sand
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "O_Tura_scout_lxWS";
+    };
+};
+
+class U_lxWS_Djella_O_03_Green: U_lxWS_Djella_03_Green
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "O_Tura_watcher_lxWS";
+    };
+};
+
+class U_lxWS_I_Djella_03: Uniform_Base
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    displayName = "Commoner Clothes (Djellaba, Black)";
+    picture = "\lxWS\characters_f_lxws\data\ui\icon_U_lxWS_C_Djella_03_ca.paa";
+    model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
+    hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {"\lxWS\characters_f_lxws\suitpacks\data\suitpack_djella_black_co.paa"};
+    class ItemInfo: UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "I_SFIA_Said_lxWS";
+        containerClass = "Supply30";
+        mass = 30;
+    };
+};
+
+class U_lxWS_SFIA_deserter: Uniform_Base
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    displayName = "Deserter Clothes [SFIA]";
+    picture = "\lxws\characters_f_lxws\data\ui\icon_U_lxWS_SFIA_deserter_ca";
+    model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+    hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {"\A3\Characters_F_Bootcamp\Guerrilla\Data\c_cloth1_kabeiroi_co.paa"};
+    class ItemInfo: UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "I_SFIA_deserter_lxWS";
+        containerClass = "Supply30";
+        mass = 30;
+    };
+};
+
+class U_lxWS_SFIA_deserter_O: U_lxWS_SFIA_deserter
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "O_Tura_deserter_lxWS";
+    };
+};
+
+class U_lxWS_SFIA_soldier_1: Uniform_Base
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    displayName = "Combat Fatigues [SFIA] (Rolled-Up)";
+    picture = "\lxWS\characters_f_lxws\data\ui\icon_lxWS_U_SFIA_soldier_1_ca.paa";
+    model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
+    hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {"\lxWS\characters_f_lxws\suitpacks\data\suitpack_soldier_sfia_co.paa"};
+    class ItemInfo: UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "I_SFIA_soldier_lxWS";
+        containerClass = "Supply40";
+        mass = 40;
+    };
+};
+
+class U_lxWS_SFIA_Tanker: Uniform_Base
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 1;
+    scopeCurator = 1;
+    displayName = "Tanker Coveralls [SFIA]";
+    picture = "\lxws\characters_f_lxws\data\ui\icon_lxWS_U_SFIA_Tanker_ca";
+    model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+    hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {"\lxws\characters_f_lxws\data\SFIA\ig_sfia_1_1_co.paa"};
+    class ItemInfo: UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "I_SFIA_crew_lxWS";
+        containerClass = "Supply30";
+        mass = 30;
+    };
+};
+
+class U_SFIA_deserter_lxWS: Uniform_Base
+{
+    author = "Rotators Collective";
+    DLC = "ws";
+    scope = 2;
+    displayName = "Deserter Clothes (Desert)";
+    picture = "\lxWS\characters_1_f_lxws\uniform\data\UI\icon_U_SFIA_deserter_lxWS_ca";
+    model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
+    hiddenSelections[] = {"camo", "camo1", "camo2"};
+    hiddenSelectionsTextures[] = {"lxws\characters_f_lxws\data\sfia\ig_sfia_1_2_co.paa", "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_shirt_green_co.paa", "lxWS\characters_1_f_lxws\uniform\data\lxWS_djellaba_pants_brown2_co.paa"};
+    class ItemInfo: UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "I_Tura_HeavyGunner_lxWS";
+        containerClass = "Supply30";
+        mass = 30;
+    };
+};
+
+// ---- backpacks / vehicle-class gear (6) ----
+//   Aegis_B_FieldPack_cbr_Tura_HG2
+//   B_FieldPack_khk_Bandit_2_lxWS
+//   B_FieldPack_oli_Medic_1_lxWS
+//   B_Kitbag_cbr_Bandit_2_F
+//   B_Kitbag_cbr_Hireling_1_lxWS
+//   I_Tura_UAV_02_IED_backpack_lxWS

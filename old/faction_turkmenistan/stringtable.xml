@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ghost">
+    <Package name="faction_turkmenistan">
+        <Key ID="STR_ghost_faction_turkmenistan_Faction">
+            <Original>Turkmenistan</Original>
+        </Key>
+        <Key ID="STR_ghost_faction_turkmenistan_Group_UAV">
+            <Original>UAV / Drones</Original>
+        </Key>
+    </Package>
+</Project>
