@@ -194,10 +194,10 @@
             <Japanese>選択したホットキーを押したときに変更される総合描画とオブジェクト描画の視程距離を設定します。</Japanese>
         </Key>
         <Key ID="STR_DT_modCategory">
-            <English>Dom's Mods</English>
-            <German>Dom's Mods</German>
-            <Japanese>Dom's Mods</Japanese>
-            <Turkish>Dom's Mods</Turkish>
+            <English>Ghosts View Distance</English>
+            <German>Ghosts View Distance</German>
+            <Japanese>Ghosts View Distance</Japanese>
+            <Turkish>Ghosts View Distance</Turkish>
         </Key>
     </Package>
     <Package name="Terrain">

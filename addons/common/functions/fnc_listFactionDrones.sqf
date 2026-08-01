@@ -3,8 +3,9 @@
 Function: ghost_common_fnc_listFactionDrones
 
 Description:
-    Feeder for the Eden drone-picker (ghost_DroneChoice_*). Returns the UAV /
-    UGV CfgVehicles classes belonging to a faction, as display rows.
+    Feeder for the Eden faction dropdown (ghost_DroneFactionChoice), which lists
+    only the factions that actually own drones. Returns the UAV / UGV
+    CfgVehicles classes belonging to a faction, as display rows.
 
     A "drone" is any scope==2 CfgVehicles class with isUav > 0 (covers both
     unmanned air vehicles and UGVs). Category is "air" for anything kindOf

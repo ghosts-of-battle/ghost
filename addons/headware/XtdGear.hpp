@@ -163,6 +163,69 @@ class XtdGearModels {
                 };
             };
         };
+        class ghost_headware_IHPS {
+            label = "IHPS";
+            options[] = {"camo", "cover", "type"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"SND", "BLK", "OLV", "GRN", "MTP", "TNA", "WDL", "DES"};
+                class SND {
+                    label = "Sand";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class BLK {
+                    label = "Black";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class OLV {
+                    label = "Olive";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+                class GRN {
+                    label = "Green";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class MTP {
+                    label = "MTP";
+                    image = "z\aceax\addons\gearinfo\data\camo\mtp.paa";
+                };
+                class TNA {
+                    label = "Tropic";
+                    image = "z\aceax\addons\gearinfo\data\camo\mct.paa";
+                };
+                class WDL {
+                    label = "Woodland";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
+                };
+                class DES {
+                    label = "Desert";
+                    image = "z\aceax\addons\gearinfo\data\camo\mcd.paa";
+                };
+            };
+            class cover {
+                alwaysSelectable = 1;
+                values[] = {"Bare", "Cover", "Scrim"};
+                class Bare {
+                    label = "Bare";
+                };
+                class Cover {
+                    label = "Cover";
+                };
+                class Scrim {
+                    label = "Scrim";
+                };
+            };
+            class type {
+                alwaysSelectable = 1;
+                values[] = {"Std", "Spec"};
+                class Std {
+                    label = "Std";
+                };
+                class Spec {
+                    label = "Spec";   // the mod's headset-equipped cut
+                };
+            };
+        };
     };
 };
 
@@ -404,6 +467,128 @@ class XtdGearInfos {
             model = "ghost_headware_Booniehat";
             camo = "WHT";
             type = "Headset";
+        };
+        class LKA_H_IHPS {
+            model = "ghost_headware_IHPS";
+            camo = "SND";
+            cover = "Bare";
+            type = "Std";
+        };
+        class LKA_H_IHPS_blk {
+            model = "ghost_headware_IHPS";
+            camo = "BLK";
+            cover = "Bare";
+            type = "Std";
+        };
+        class LKA_H_IHPS_oli {
+            model = "ghost_headware_IHPS";
+            camo = "OLV";
+            cover = "Bare";
+            type = "Std";
+        };
+        class LKA_H_IHPS_grn {
+            model = "ghost_headware_IHPS";
+            camo = "GRN";
+            cover = "Bare";
+            type = "Std";
+        };
+
+        /* Standard, covered */
+        class LKA_H_IHPS_Cover_mtp {
+            model = "ghost_headware_IHPS";
+            camo = "MTP";
+            cover = "Cover";
+            type = "Std";
+        };
+        class LKA_H_IHPS_Cover_tna {
+            model = "ghost_headware_IHPS";
+            camo = "TNA";
+            cover = "Cover";
+            type = "Std";
+        };
+        class LKA_H_IHPS_Cover_wdl {
+            model = "ghost_headware_IHPS";
+            camo = "WDL";
+            cover = "Cover";
+            type = "Std";
+        };
+        class LKA_H_IHPS_Cover_des {
+            model = "ghost_headware_IHPS";
+            camo = "DES";
+            cover = "Cover";
+            type = "Std";
+        };
+
+        /* Standard, scrim (no desert scrim in the mod) */
+        class LKA_H_IHPS_Scrim_mtp {
+            model = "ghost_headware_IHPS";
+            camo = "MTP";
+            cover = "Scrim";
+            type = "Std";
+        };
+        class LKA_H_IHPS_Scrim_tna {
+            model = "ghost_headware_IHPS";
+            camo = "TNA";
+            cover = "Scrim";
+            type = "Std";
+        };
+        class LKA_H_IHPS_Scrim_wdl {
+            model = "ghost_headware_IHPS";
+            camo = "WDL";
+            cover = "Scrim";
+            type = "Std";
+        };
+
+        /* Spec, bare */
+        class LKA_H_IHPSSpec {
+            model = "ghost_headware_IHPS";
+            camo = "SND";
+            cover = "Bare";
+            type = "Spec";
+        };
+        class LKA_H_IHPSSpec_blk {
+            model = "ghost_headware_IHPS";
+            camo = "BLK";
+            cover = "Bare";
+            type = "Spec";
+        };
+        class LKA_H_IHPSSpec_oli {
+            model = "ghost_headware_IHPS";
+            camo = "OLV";
+            cover = "Bare";
+            type = "Spec";
+        };
+        class LKA_H_IHPSSpec_grn {
+            model = "ghost_headware_IHPS";
+            camo = "GRN";
+            cover = "Bare";
+            type = "Spec";
+        };
+
+        /* Spec, covered */
+        class LKA_H_IHPSSpec_Cover_mtp {
+            model = "ghost_headware_IHPS";
+            camo = "MTP";
+            cover = "Cover";
+            type = "Spec";
+        };
+        class LKA_H_IHPSSpec_Cover_tna {
+            model = "ghost_headware_IHPS";
+            camo = "TNA";
+            cover = "Cover";
+            type = "Spec";
+        };
+        class LKA_H_IHPSSpec_Cover_wdl {
+            model = "ghost_headware_IHPS";
+            camo = "WDL";
+            cover = "Cover";
+            type = "Spec";
+        };
+        class LKA_H_IHPSSpec_Cover_des {
+            model = "ghost_headware_IHPS";
+            camo = "DES";
+            cover = "Cover";
+            type = "Spec";
         };
     };
 };

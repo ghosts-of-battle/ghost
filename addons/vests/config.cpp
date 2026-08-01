@@ -30,11 +30,13 @@ class CfgPatches {
             QGVAR(V_PlateCarrierL_CTRG_mcam),
             QGVAR(V_PlateCarrierL_CTRG_mcam_wdl),
             QGVAR(V_PlateCarrierL_CTRG_mcam_snow),
+            QGVAR(V_PlateCarrierL_CTRG_tna),
             QGVAR(V_PlateCarrierH_CTRG_ocp),
             QGVAR(V_PlateCarrierH_CTRG_mtp),
             QGVAR(V_PlateCarrierH_CTRG_mcam),
             QGVAR(V_PlateCarrierH_CTRG_mcam_wdl),
-            QGVAR(V_PlateCarrierH_CTRG_mcam_snow)
+            QGVAR(V_PlateCarrierH_CTRG_mcam_snow),
+            QGVAR(V_PlateCarrierH_CTRG_tna)
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {

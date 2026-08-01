@@ -20,7 +20,7 @@ class CfgWeapons {
     };
     class ACE_fieldDressing : ACE_ItemCore {
         scope=2;
-        picture="\z\ghost\addons\media\images\icon\IB.paa";
+        picture="\z\ghost\addons\media\images\Icons\IB.paa";
         displayName="Trauma Dressing";
         descriptionShort="Quickly stanches haemorrhaging from injuries";
         descriptionUse="Quickly stanches haemorrhaging from injuries";
@@ -28,7 +28,7 @@ class CfgWeapons {
     class ACE_quikclot : ACE_ItemCore {
         scope=2;
         displayName="Quikclot Combat Gauze";
-        picture="\z\ghost\addons\media\images\icon\Quikclot.paa";
+        picture="\z\ghost\addons\media\images\Icons\Quikclot.paa";
     };
     class ACE_morphine : ACE_ItemCore {
         scope=2;

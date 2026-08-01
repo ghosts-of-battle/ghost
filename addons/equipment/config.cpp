@@ -6,14 +6,14 @@ class CfgPatches {
         author = QAUTHOR;
         name = COMPONENT_NAME;
         units[] = {
-            QGVAR(Item_Vector_Designator),
-            QGVAR(Item_Vector_Designator_NVG),
+            // QGVAR(Item_Vector_Designator),
+            // QGVAR(Item_Vector_Designator_NVG),
             QGVAR(Item_vest_rebreather),
             QGVAR(Item_Wetsuit)
         };
         weapons[] = {
-            QGVAR(Vector_Designator),
-            QGVAR(Vector_Designator_NVG),
+            // QGVAR(Vector_Designator),
+            // QGVAR(Vector_Designator_NVG),
             QGVAR(rebreather),
             QGVAR(Wetsuit)
         };

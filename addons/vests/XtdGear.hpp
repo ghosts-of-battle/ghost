@@ -429,7 +429,7 @@ class XtdGearModels {
             options[] = {"camo", "type"};
             class camo {
                 alwaysSelectable = 1;
-                values[] = {"OCP", "MTP", "Multicam", "MC_Wdl", "MC_Snow"};
+                values[] = {"OCP", "MTP", "Multicam", "MC_Wdl", "MC_Snow", "Tropic"};
                 class OCP {
                     label = "OCP";
                     image = "z\aceax\addons\gearinfo\data\camo\ocp.paa";
@@ -449,6 +449,10 @@ class XtdGearModels {
                 class MC_Snow {
                     label = "MC-Snow";
                     image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+                class Tropic {
+                    label = "Tropic";
+                    image = "z\aceax\addons\gearinfo\data\camo\mct.paa";
                 };
             };
             class type {

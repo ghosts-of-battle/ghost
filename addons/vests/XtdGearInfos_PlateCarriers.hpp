@@ -339,6 +339,11 @@
             type = "Light";
             camo = "MC_Snow";
         };
+        class ghost_vests_V_PlateCarrierL_CTRG_tna {
+            model = QGVAR(PlateCarrier_CTRG);
+            type = "Light";
+            camo = "Tropic";
+        };
         class ghost_vests_V_PlateCarrierH_CTRG_ocp {
             model = QGVAR(PlateCarrier_CTRG);
             type = "Heavy";
@@ -363,4 +368,9 @@
             model = QGVAR(PlateCarrier_CTRG);
             type = "Heavy";
             camo = "MC_Snow";
+        };
+        class ghost_vests_V_PlateCarrierH_CTRG_tna {
+            model = QGVAR(PlateCarrier_CTRG);
+            type = "Heavy";
+            camo = "Tropic";
         };

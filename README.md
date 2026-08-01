@@ -23,6 +23,10 @@
 
 # Ghost Custom Mod
 
+**[Documentation](docs/)** - what every addon is, all CBA settings and the
+server-forced values, every Eden module. Generated from the sources by
+`python tools/gen_docs.py`.
+
 This is the custom mod for Ghosts of Battle
 Its based/inspired on/by the following projects;
 

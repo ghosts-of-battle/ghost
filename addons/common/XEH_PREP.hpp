@@ -25,5 +25,3 @@ PREP(scatterPosition);
 PREP(listFactionDrones);
 PREP(edenDroneFactionLoad);
 PREP(edenDroneFactionSave);
-PREP(edenDroneChoiceLoad);
-PREP(edenDroneChoiceSave);

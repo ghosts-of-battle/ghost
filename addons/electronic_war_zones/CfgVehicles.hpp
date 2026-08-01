@@ -88,9 +88,9 @@ class CfgVehicles {
                 };
             };
 
-            APICK(response_personnel_classes,"ghost_DroneChoice_response_personnel_classes","'O_UAV_02_CAS_F'","Response: Anti-Personnel Classes","Pick anti-personnel response drones from the faction's drone list (Override field accepts extra classnames).");
+            AEDIT(response_personnel_classes,"STRING","'O_UAV_02_CAS_F'","Response: Anti-Personnel Classes","Comma-separated anti-personnel response drone classnames; one is picked at random. Blank disables it.");
             AEDIT(response_personnel_count,"NUMBER","2","Response: Anti-Personnel Count","Airframes of the anti-personnel type per response wave.");
-            APICK(response_vehicle_classes,"ghost_DroneChoice_response_vehicle_classes","'O_UAV_02_CAS_F'","Response: Anti-Vehicle Classes","Pick anti-vehicle response drones from the faction's drone list (Override field accepts extra classnames).");
+            AEDIT(response_vehicle_classes,"STRING","'O_UAV_02_CAS_F'","Response: Anti-Vehicle Classes","Comma-separated anti-vehicle response drone classnames; one is picked at random. Blank disables it.");
             AEDIT(response_vehicle_count,"NUMBER","1","Response: Anti-Vehicle Count","Airframes of the anti-vehicle type per response wave.");
             AEDIT(response_distance,"NUMBER","2000","Response Spawn Distance (m)","Horizontal distance from the transmitter the response package spawns in.");
             AEDIT(response_altitude,"NUMBER","1000","Response Spawn Altitude (m)","Altitude the response package spawns at (AGL).");

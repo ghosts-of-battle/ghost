@@ -36,11 +36,10 @@
 
 // Per-type drone picker (`<type>_classes`) + concurrent cap (`<type>_cap`).
 #define TYPE_ARGS(NAME,CLABEL,PLABEL,CAPDEF,CLASSDEF) \
-    class NAME##_classes { \
+    class NAME##_classes: Edit { \
         property = QUOTE(TRIPLES(ghost,COMPONENT,NAME##_classes)); \
         displayName = CLABEL; \
-        tooltip = "Pick the drones for this type from the faction's drone list (Override field accepts extra classnames). One chosen at random per spawn; empty disables this type."; \
-        control = QUOTE(ghost_DroneChoice_##NAME##_classes); \
+        tooltip = "Comma-separated drone classnames; one is picked at random per spawn. Blank disables this type."; \
         typeName = "STRING"; \
         defaultValue = CLASSDEF; \
         expression = QUOTE(_this setVariable [ARR_2('NAME##_classes',_value)]); \

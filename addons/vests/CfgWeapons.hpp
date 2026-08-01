@@ -350,6 +350,17 @@ class CfgWeapons {
         hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mcam_snow_co.paa)};
         GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
     };
+    class GVAR(V_PlateCarrierL_CTRG_tna): V_PlateCarrierL_CTRG {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] CTRG Plate Carrier Rig (Light, Tropic)";
+        // vanilla Apex tropic carrier art -- there is no ghost tropic vest
+        // texture, and the CTRG rigs share the PlateCarrier1 UV
+        picture = "\A3\Characters_F_Exp\Vests\Data\UI\icon_V_PlateCarrier1_tna_F_ca.paa";
+        hiddenSelectionsTextures[] = {"\A3\Characters_F_Exp\Vests\Data\V_PlateCarrier1_tna_F_co.paa"};
+        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
+    };
     class GVAR(V_PlateCarrierH_CTRG_ocp): V_PlateCarrierH_CTRG {
         scope = 2;
         scopeArsenal = 2;
@@ -393,6 +404,17 @@ class CfgWeapons {
         displayName = "[Ghost] CTRG Plate Carrier Rig (Heavy, Multicam Snow)";
         picture = QPATHTOF(data\ui\icon_v_plate_carrier_2_mcam_snow.paa);
         hiddenSelectionsTextures[] = {QPATHTOF(data\vests_mcam_snow_co.paa)};
+        GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
+    };
+    class GVAR(V_PlateCarrierH_CTRG_tna): V_PlateCarrierH_CTRG {
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] CTRG Plate Carrier Rig (Heavy, Tropic)";
+        // vanilla Apex tropic carrier art -- there is no ghost tropic vest
+        // texture, and the CTRG rigs share the PlateCarrier1 UV
+        picture = "\A3\Characters_F_Exp\Vests\Data\UI\icon_V_PlateCarrier1_tna_F_ca.paa";
+        hiddenSelectionsTextures[] = {"\A3\Characters_F_Exp\Vests\Data\V_PlateCarrier1_tna_F_co.paa"};
         GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
     };
 };

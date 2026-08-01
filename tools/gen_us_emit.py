@@ -264,7 +264,7 @@ def gen(fam, camo):
         # and secondary turrets (CodRiverTurret, TopTurret, ...) are left stock.
         tur = {} if is_static(n) else {
             k: v for k, v in res_turrets(n).items()
-            if k == "MainTurret" or k.startswith("MainTurret/")
+            if k == "MainTurret"
         }
         for path, tm in tur.items():
             conv = [fa_of(x, col, TMAP) or x for x in tm]
@@ -339,11 +339,7 @@ def gen(fam, camo):
         if x in emitted or x in guard:
             return
         # deepest path this class overrides: MainTurret -> 2, MainTurret/X -> 4
-        names, depth = [], 0
-        for path in structured.get(x, []):
-            parts = path.split("/")
-            if len(parts) * 2 > depth:
-                depth, names = len(parts) * 2, parts
+        names, depth = ["MainTurret"], 2
         chain = [x]
         c = x
         for _ in range(depth):
