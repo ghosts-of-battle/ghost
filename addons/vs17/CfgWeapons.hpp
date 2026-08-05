@@ -5,10 +5,10 @@ class CfgWeapons {
     class GVAR(vs17): ACE_ItemCore {
         author = QAUTHOR;
         scope=2;
-        displayName = "AI Landing Pad";
-        displayNameShort = "LP-17";
-        model="\ctb_marker_panel\vs17_large.p3d";
-		picture="\ctb_marker_panel\data\ui\icon_rho_ctb_ca.paa";
+        displayName = "VS-17 Marker Panel";
+        displayNameShort = "VS-17";
+        picture = QPATHTOF(data\vs_yellow.paa);
+        model = "\A3\Structures_F\Civ\Camping\Ground_sheet_folded_yellow_F.p3d";
         editorPreview = QPATHTOF(data\vs_yellow.paa);
         icon = "iconObject_1x1";
         mapSize = 0.015;

@@ -19,28 +19,16 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
-        displayName = "AI Landing Pad";
-        displayNameShort = "LP-17";
+        displayName = "vs17 Panel";
+        displayNameShort = "vs17";
         correspondingItem = QGVAR(vs17);
-        model="\ctb_marker_panel\vs17_large.p3d";
+        model = "\A3\Structures_F\Civ\Camping\Ground_sheet_yellow_F.p3d";
         ace_dragging_canCarry = 1;
         ace_dragging_carryPosition[] = {0,1.2,0};
         ace_dragging_carryDirection = 0;
         ace_dragging_canDrag = 1;
         ace_dragging_dragPosition[] = {0,1.2,0};
         ace_dragging_dragDirection = 0;
-        hiddenSelections[]=
-		{
-			"camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\ctb_marker_panel\data\vs17_o_large_co.paa"
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"\ctb_marker_panel\data\vs17_o_large.rvmat"
-		};
         class ACE_Actions {
             class ACE_MainActions {
                 displayName = "$STR_ACE_interaction_MainAction";

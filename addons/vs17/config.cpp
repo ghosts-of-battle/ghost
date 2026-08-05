@@ -11,14 +11,12 @@ class CfgPatches {
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "ghost_main",
-            "ctb_marker_panel"
+            "ghost_main"
         };
         authorUrl = "https://www.ghostsofbattle.com/";
         author = QAUTHOR;
         authors[] = {""};
         VERSION_CONFIG;
-        skipWhenMissingDependencies = 1;
     };
 };
 
