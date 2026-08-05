@@ -61,6 +61,7 @@ _cfg set ["altMin", _altMin];
 _cfg set ["altMax", _altMax];
 _cfg set ["defRange", _logic getVariable ["defense_range", 1500]];
 _cfg set ["stopDist", _logic getVariable ["stop_distance", 300]];
+_cfg set ["activateRange", _logic getVariable ["activate_range", 3000]];
 _cfg set ["lifetime", _logic getVariable ["drone_lifetime", 0]];
 _cfg set ["debug", _logic getVariable ["debug", false]];
 _cfg set ["artyEnable", _logic getVariable ["arty_enable", true]];
@@ -74,8 +75,32 @@ _logic setVariable [QGVAR(cfg), _cfg];
 _logic setVariable [QGVAR(typeCfg), _typeCfg];
 _logic setVariable [QGVAR(artyCd), createHashMap];
 
-// Ensure the shared fleet registry + reaper (owned by ALiVE Drones) is running.
-[_logic getVariable ["global_airframe_ceiling", 10]] call ghost_alive_drones_fnc_ensureReaper;
+// Ensure the shared fleet registry + reaper (owned by Drones) is running.
+[_logic getVariable ["global_airframe_ceiling", 10]] call ghost_drones_fnc_ensureReaper;
+
+if (_logic getVariable ["base_marker", true]) then {
+    [_basePos, _side, _logic getVariable ["marker_text", ""]] call FUNC(baseMarker);
+};
+
+// EW cover over the base. Soft: the function only exists when the Electronic War
+// Zones addon is loaded, and this module does not require it - a base without EW
+// is just a base. Registered once at init rather than maintained, because the
+// zone's lifetime is its emitter's, and EW already prunes dead emitters.
+if (_logic getVariable ["ew_enable", false]) then {
+    if (isNil "ghost_electronic_war_zones_fnc_spawnZoneAt") then {
+        WARNING("Base Defense: EW zone requested but the Electronic War Zones addon is not loaded.");
+    } else {
+        private _ewR = (_logic getVariable ["ew_radius", 900]) max 1;
+        private _ewC = _logic getVariable ["ew_class", ""];
+        ([_basePos, _ewR, _ewC] call ghost_electronic_war_zones_fnc_spawnZoneAt) params ["_ewId", "_ewObj"];
+        if (_ewId isNotEqualTo "") then {
+            // Marked so anything that cares - a hack, an RDF fix - can tell this
+            // emitter belongs to a base rather than to a scattered TAOR.
+            if (!isNull _ewObj) then { _ewObj setVariable [QGVAR(baseEmitter), true, true] };
+            LOG_2("Base Defense: EW zone %1, radius %2m.",_ewId,round _ewR);
+        };
+    };
+};
 
 [FUNC(manager), (_logic getVariable ["spawn_interval", 30]) max 1, _logic] call CBA_fnc_addPerFrameHandler;
 if (_cfg get "artyEnable") then {

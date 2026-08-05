@@ -34,8 +34,21 @@ if (_taor isNotEqualTo []) then {
 // runs the real target search, so this reports what the scheduler would actually find
 private _haveTarget = ([_cfg] call FUNC(pickTarget)) isNotEqualTo [];
 
-private _class = _cfg get "droneClass";
-private _classOk = isClass (configFile >> "CfgVehicles" >> _class);
+// Both classes are reported, because a site that silently never swarms is
+// almost always a swarm class that is blank or misspelled - and the strike it
+// sends instead looks perfectly normal.
+private _report = {
+    params ["_c", "_label"];
+    if (_c isEqualTo "") exitWith { format ["%1 none", _label] };
+    format ["%1 %2%3", _label, _c,
+        ["  <-- NOT A VALID CLASS", ""] select (isClass (configFile >> "CfgVehicles" >> _c))];
+};
+
+private _class = format ["%1 | %2 x%3 @%4%5",
+    [_cfg get "droneClass", "single"] call _report,
+    [_cfg get "swarmClass", "swarm"] call _report,
+    _cfg get "swarmCount", _cfg get "swarmChance", "%"];
+private _classOk = true;
 
 private _msg = format [
     "[Ambient Kamikaze] next %1s | players %2%3 | %4 | %5%6 | ingress %7m at %8m",

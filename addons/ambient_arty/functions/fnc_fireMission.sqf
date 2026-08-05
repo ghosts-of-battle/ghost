@@ -22,17 +22,6 @@ if (_tgt isEqualTo [] || {_shell isEqualTo ""}) exitWith {};
 
 diag_log text format ["[Ghost] Ambient Artillery: firing %1x %2 -> grid %3 (%4)", round _rounds, _shell, mapGridPosition _tgt, _tgt];
 
-for "_i" from 0 to ((round _rounds) - 1) do {
-    [{
-        params ["_tgt", "_spread", "_shell"];
-        private _a = random 360;
-        private _r = sqrt (random 1) * _spread;
-        private _impact = [(_tgt select 0) + _r * sin _a, (_tgt select 1) + _r * cos _a];
-        private _sp = [_impact select 0, _impact select 1, SHELL_ALT];
-        private _round = createVehicle [_shell, _sp, [], 0, "CAN_COLLIDE"];
-        if (isNull _round) exitWith {};
-        _round setPosATL _sp;
-        _round setVectorDirAndUp [[0, 0, -1], [0, 1, 0]];
-        _round setVelocity [0, 0, -SHELL_SPEED];
-    }, [_tgt, _spread, _shell], _i * ROUND_GAP] call CBA_fnc_waitAndExecute;
-};
+// The shells themselves live in ghost_common now, so the objective barrage and
+// this drip cannot drift apart. Window 0 keeps the original fixed round gap.
+[_tgt, _rounds, _spread, _shell, 0] call EFUNC(common,fireBarrage);

@@ -45,6 +45,24 @@ GVAR(responseDist) = _logic getVariable ["response_distance", 2000];
 GVAR(responseAlt) = _logic getVariable ["response_altitude", 1000];
 GVAR(responseLife) = _logic getVariable ["response_lifetime", 15];
 GVAR(debug) = _logic getVariable ["debug", false];
+
+// Part 3 propagation model. Every default reproduces the pre-model behaviour,
+// so an existing mission jams identically until it opts in.
+GVAR(jamLos) = _logic getVariable ["jam_los", false];
+GVAR(jamBurnthrough) = _logic getVariable ["jam_burnthrough", false];
+GVAR(jamBurnRef) = _logic getVariable ["jam_burnthrough_ref", 500];
+GVAR(jamCurve) = toUpper (_logic getVariable ["jam_curve", "LINEAR"]);
+GVAR(jamDuty) = _logic getVariable ["jam_duty_cycle", 100];
+GVAR(jamConeEnable) = _logic getVariable ["jam_cone_enable", false];
+GVAR(jamUavs) = _logic getVariable ["jam_uavs", false];
+GVAR(rdfScanRange) = _logic getVariable ["rdf_scan_range", 3000];
+GVAR(aiChatter) = _logic getVariable ["ai_chatter", false];
+GVAR(aiChatterInterval) = (_logic getVariable ["ai_chatter_interval", 10]) max 1;
+
+// Only start the loop when a mission asks for it - off by default (D18).
+if (GVAR(aiChatter) && isServer) then {
+    [FUNC(aiChatter), GVAR(aiChatterInterval), []] call CBA_fnc_addPerFrameHandler;
+};
 GVAR(ewLogic) = _logic;
 
 // Response package: [ [classes[], count, typeKey], ... ]

@@ -51,4 +51,4 @@ for "_i" from 0 to (_n - 1) do {
 _bases = _bases - [_entry];
 missionNamespace setVariable [QGVAR(bases), _bases, true];
 
-[[], [_name, 1.2, [1, 0.8, 0.3, 1]], [format ["unbuilt - %1 kits recovered.", _n]]] remoteExec ["CBA_fnc_notify", 0];
+[_name, format ["Unbuilt - %1 kits recovered.", _n], [1, 0.8, 0.3, 1]] call EFUNC(notify,broadcast);

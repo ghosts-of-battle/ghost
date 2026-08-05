@@ -32,6 +32,12 @@ GVAR(acrePowerMin) = _acrePowerMin;
 // Client-local jamming: nearest emitter degrades this player's own radio.
 [FUNC(jammerLoop), JAM_CHECK_INTERVAL, []] call CBA_fnc_addPerFrameHandler;
 
+// Direction finding, on its own. Slower than the jam loop because a bearing
+// that updates every quarter second is a live tracker, not a set you sweep with.
+GVAR(rdfReading) = [];
+GVAR(rdfSaidAt) = -1e9;
+[FUNC(rdfTick), RDF_TICK, []] call CBA_fnc_addPerFrameHandler;
+
 // TFAR long-range PTT tracking (event-driven).
 if (GVAR(hasTFAR) && {!isNil "TFAR_fnc_addEventHandler"}) then {
     [QGVAR(track), "OnTangent", FUNC(onTangent), player] call TFAR_fnc_addEventHandler;

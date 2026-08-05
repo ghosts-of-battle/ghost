@@ -1,0 +1,9 @@
+PREP(moduleObjectiveWatch);
+PREP(checkCapture);
+PREP(enemyPresent);
+PREP(onCaptured);
+PREP(barrage);
+PREP(dispersionFor);
+PREP(debugTick);
+PREP(gatherObjectives);
+PREP(aliveBridge);

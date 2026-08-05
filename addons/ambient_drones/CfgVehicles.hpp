@@ -1,5 +1,5 @@
 // MODERN 3DEN attribute system (class Attributes) - required for custom
-// `control` classes (faction dropdown + drone pickers). See the alive_drones
+// `control` classes (faction dropdown + drone pickers). See the drones
 // module for the full rationale. Each attribute wires property/control/
 // expression/defaultValue; expression sets the exact logic variable the
 // module function reads.
@@ -87,7 +87,7 @@ class CfgVehicles {
             AEDIT(altitude_min,"NUMBER","90","Altitude Min (m AGL)","Lower bound of flyInHeight (rotor / low-flyers).");
             AEDIT(altitude_max,"NUMBER","450","Altitude Max (m AGL)","Upper bound of flyInHeight (fixed-wing / high-flyers).");
             AEDIT(drone_lifetime,"NUMBER","15","Drone Lifetime (min)","Non-loiter drones fly off and despawn after this (0 = never). Loiter types despawn when out of ammo.");
-            AEDIT(global_airframe_ceiling,"NUMBER","10","Global Airframe Ceiling","HARD cap on TOTAL live airframes, SHARED with the ALiVE Drones + EW addons. Start low.");
+            AEDIT(global_airframe_ceiling,"NUMBER","10","Global Airframe Ceiling","HARD cap on TOTAL live airframes, SHARED with the Drones + EW addons. Start low.");
             AEDIT(blacklist_marker,"STRING","''","Blacklist Marker(s)","Comma-separated area-marker name(s); drones never spawn inside these (bases, safe zones).");
 
             class debug: Combo {
@@ -114,7 +114,7 @@ class CfgVehicles {
         };
 
         class ModuleDescription: ModuleDescription {
-            description = "Spawns drones within a radius of random enemy players on a random-window timer, choosing the drone type by weighted priority. Shares the ALiVE Drones airframe ceiling + reaper. Requires the ALiVE Drones addon.";
+            description = "Spawns drones within a radius of random enemy players on a random-window timer, choosing the drone type by weighted priority. Shares the Drones airframe ceiling + reaper. Requires the Drones addon.";
         };
     };
 };

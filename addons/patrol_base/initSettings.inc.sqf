@@ -39,9 +39,9 @@
 [
     QGVAR(beaconClass),
     "EDITBOX",
-    ["Base object", "Class spawned at the base on deploy - it marks the location and carries the Unbuild action."],
+    ["Base object", "Class spawned at the base on deploy - it marks the location and carries the Unbuild action. Defaults to ghost's own SatCom mast; if that class is not loaded it falls back to the vanilla SatelliteAntenna_01_Black_F rather than spawning nothing."],
     ["Ghosts of Battle", "Patrol Base"],
-    "ctb_satcom_deployed",
+    "ghost_satcom_deployed",
     1
 ] call CBA_fnc_addSetting;
 

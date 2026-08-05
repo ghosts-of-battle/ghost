@@ -21,7 +21,7 @@ if (isNull _logic) exitWith { [_handle] call CBA_fnc_removePerFrameHandler };
 private _cfg = _logic getVariable [QGVAR(cfg), objNull];
 if (isNil "_cfg") exitWith {};
 if !(_cfg get "artyEnable") exitWith {};
-if (isNil "ghost_alive_drones_fleet") exitWith {};
+if (isNil "ghost_drones_fleet") exitWith {};
 
 private _side = _cfg get "side";
 private _basePos = _cfg get "basePos";
@@ -32,14 +32,14 @@ private _stop = _cfg get "stopDist";
 private _recons = [];
 {
     if (
-        (_x getVariable ["ghost_alive_drones_logic", objNull]) isEqualTo _logic &&
-        {(_x getVariable ["ghost_alive_drones_dtype", ""]) == "recon"}
+        (_x getVariable ["ghost_drones_logic", objNull]) isEqualTo _logic &&
+        {(_x getVariable ["ghost_drones_dtype", ""]) == "recon"}
     ) then {
         {
             if (!isNull _x && {alive _x}) then { _recons pushBack _x };
-        } forEach (_x getVariable ["ghost_alive_drones_vehicles", []]);
+        } forEach (_x getVariable ["ghost_drones_vehicles", []]);
     };
-} forEach ghost_alive_drones_fleet;
+} forEach ghost_drones_fleet;
 if (_recons isEqualTo []) exitWith {};
 
 // Enemy targets in the engagement band (beyond stop distance, inside defense range).

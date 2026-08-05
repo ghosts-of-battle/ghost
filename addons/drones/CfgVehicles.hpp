@@ -82,10 +82,10 @@ class CfgVehicles {
         class ModuleDescription;
     };
 
-    class ghost_moduleAliveDrones: Module_F {
+    class ghost_moduleDrones: Module_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "ALiVE Drones Controller";
+        displayName = "Drones Controller";
         author = QAUTHOR;
         category = "ghost_drone_modules";
         function = QUOTE(DFUNC(moduleController));
@@ -111,7 +111,7 @@ class CfgVehicles {
             AEDIT(drone_lifetime,"NUMBER","15","Drone Lifetime (min)","Minutes a drone loiters AFTER reaching its objective, then flies off-map and despawns (0 = never). Transit time does NOT count. Not reset by combat.");
 
             class debug: Combo {
-                property = "ghost_alive_drones_debug";
+                property = "ghost_drones_debug";
                 displayName = "Debug Markers";
                 tooltip = "Drop a side-colored map marker on every live drone.";
                 typeName = "STRING";
@@ -141,5 +141,15 @@ class CfgVehicles {
         class ModuleDescription: ModuleDescription {
             description = "Spawns and manages standalone patrol UAVs across a TAOR, with a hard airframe ceiling, trickle-spawn, stuck-watchdog and lifetime churn. Place one per battlespace; set the TAOR marker name(s) in the attributes.";
         };
+    };
+
+    // Deprecated alias, permanent. A module placed before the rename is saved
+    // in the .sqm as ghost_moduleAliveDrones; inheriting keeps it working with
+    // every attribute intact. scope = 1 hides it from the 3DEN list so nobody
+    // places a new one.
+    class ghost_moduleAliveDrones: ghost_moduleDrones {
+        scope = 1;
+        scopeCurator = 1;
+        displayName = "Drones Controller (legacy)";
     };
 };

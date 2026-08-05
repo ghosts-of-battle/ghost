@@ -5,17 +5,18 @@ changing an addon; do not hand-edit these files.
 
 | | |
 |---|---|
-| Addons | 79 |
+| Addons | 89 |
 | Optional addons | 8 |
-| CBA settings | 59 |
-| Eden modules | 12 |
-| Functions | 259 |
+| CBA settings | 72 |
+| Eden modules | 21 |
+| Functions | 376 |
 
 ## Contents
 
 - [ADDONS.md](ADDONS.md) - every addon, what it ships, what it needs
 - [SETTINGS.md](SETTINGS.md) - every CBA setting and the server-forced values
 - [MODULES.md](MODULES.md) - every Eden module and its attributes
+- [SETUP_HACKING.md](SETUP_HACKING.md) - mission-maker walkthrough for the hacking system
 - [FA_MAGAZINE_MAP.md](FA_MAGAZINE_MAP.md) - vanilla to futureAmmo magazine map
 - [DRONES_BY_SIDE.md](DRONES_BY_SIDE.md) - drone classes by side (archived factions)
 

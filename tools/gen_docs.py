@@ -27,7 +27,7 @@ GROUPS = {
                     "backpack", "boc", "faces", "flags", "nvg", "vs17"],
     "Gear - carried": ["weapons", "weapons_jca", "optics", "optics_ef", "equipment",
                        "medbags", "flares", "smoke", "tagging"],
-    "Systems": ["hacking", "patrol_base", "evac", "respawn", "spectator", "towing",
+    "Systems": ["hacking", "intel_hunt", "objective_watch", "patrol_base", "evac", "respawn", "spectator", "towing",
                 "killtracker", "insurgents", "tasks", "admin", "curator", "chat",
                 "back_to_game", "safestart", "remotesensors"],
     "ALiVE and ambient": ["alive", "alive_aircraft", "alive_drones", "ambient_drones",
@@ -37,7 +37,7 @@ GROUPS = {
                         "grass", "hiteffects", "medical_treatment", "nobuttstuff",
                         "pointing", "pronelauncher", "safe_grenades", "safeboating",
                         "ai_disembark", "dtvd", "tanks", "spotlight_block"],
-    "Interface": ["ui_tweaks", "loading", "main_menu", "map", "nightvision",
+    "Interface": ["ui_tweaks", "notify", "loading", "main_menu", "map", "nightvision",
                   "debug_console", "2035mrp"],
 }
 GROUP_OF = {a: g for g, lst in GROUPS.items() for a in lst}
@@ -183,7 +183,9 @@ def modules_of(d):
             def get(k):
                 mm = re.search(k + r'\s*=\s*"([^"]*)"', body)
                 return mm.group(1) if mm else ""
-            attrs = re.findall(r"(?:AEDIT|APICK|A\w*)\((\w+),", body)
+            # AEDIT / APICK / ABOOL / AMB_TYPE / DEF_TYPE / TYPE_ARGS ... every
+            # addon rolls its own attribute macro, so match the shape not the name
+            attrs = re.findall(r"^\s*[A-Z][A-Z_0-9]*\((\w+),", body, re.M)
             attrs += re.findall(r"\n            class (\w+):\s*(?:Combo|Edit)", body)
             out.append({"class": cls, "display": get("displayName"),
                         "category": get("category"), "desc": get("description"),
@@ -234,6 +236,7 @@ def main():
            "- [ADDONS.md](ADDONS.md) - every addon, what it ships, what it needs",
            "- [SETTINGS.md](SETTINGS.md) - every CBA setting and the server-forced values",
            "- [MODULES.md](MODULES.md) - every Eden module and its attributes",
+           "- [SETUP_HACKING.md](SETUP_HACKING.md) - mission-maker walkthrough for the hacking system",
            "- [FA_MAGAZINE_MAP.md](FA_MAGAZINE_MAP.md) - vanilla to futureAmmo magazine map",
            "- [DRONES_BY_SIDE.md](DRONES_BY_SIDE.md) - drone classes by side (archived factions)",
            "",

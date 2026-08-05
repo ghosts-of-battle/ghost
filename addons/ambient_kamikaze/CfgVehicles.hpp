@@ -41,14 +41,17 @@ class CfgVehicles {
             AEDIT(interval,"NUMBER","300","Interval (sec)","Seconds between strikes.");
             AEDIT(min_dist,"NUMBER","250","Min Distance (m)","Never strike closer than this to ANY player.");
             AEDIT(max_dist,"NUMBER","2500","Max Distance (m)","Search this far from a player for a target building.");
-            AEDIT(drone_class,"STRING","'O_UAV_02_CAS_F'","Drone Class","CfgVehicles class flown into the target. It carries its own warhead - a one-way dive, no loiter.");
+            AEDIT(drone_class,"STRING","'O_UAV_02_CAS_F'","Single Drone Class","CfgVehicles class flown into the target on a single-drone strike. It carries its own warhead - a one-way dive, no loiter. Blank = never send singles.");
+            AEDIT(swarm_class,"STRING","''","Swarm Drone Class","Class used when the strike is a swarm. Usually something smaller and cheaper than the single - a swarm of the same airframe is just the same strike several times over. Blank = never send swarms.");
+            AEDIT(swarm_count,"NUMBER","4","Swarm Size","How many drones a swarm strike sends.");
+            AEDIT(swarm_chance,"NUMBER","25","Swarm Chance (%)","Chance that any given strike is a swarm rather than a single. 0 = always singles, 100 = always swarms.");
             AEDIT(spawn_dist,"NUMBER","6000","Ingress Distance (m)","How far off-map the drone spawns before running in.");
             AEDIT(altitude,"NUMBER","800","Ingress Altitude (m)","Height it runs in at before diving.");
 
             class debug: Combo {
                 property = "ghost_ambient_kamikaze_debug";
                 displayName = "Debug";
-                tooltip = "Reports scheduler state to system chat every 60 seconds: armed or not, qualifying players, whether a target can be found, drone class validity, and time to the next strike.";
+                tooltip = "Reports scheduler state to system chat every 60 seconds: armed or not, qualifying players, whether a target can be found, BOTH drone classes and their validity, the swarm size and chance, and time to the next strike.";
                 typeName = "STRING";
                 defaultValue = "'false'";
                 expression = "_this setVariable ['debug', _value isEqualTo 'true']";
@@ -60,7 +63,7 @@ class CfgVehicles {
         };
 
         class ModuleDescription: ModuleDescription {
-            description = "Periodically sends a one-way kamikaze drone into a building near the players. Place one per launch site; each runs its own timer and TAOR.";
+            description = "Periodically sends one-way kamikaze drones into a building near the players. Each strike is either a single drone or a swarm, rolled against the Swarm Chance - two classes, so a swarm can be something smaller and cheaper than a single. Swarm drones come in staggered and from different bearings, so they arrive as a stream a defence has to work through rather than all at once. Place one module per launch site; each runs its own timer and TAOR.";
         };
     };
 };

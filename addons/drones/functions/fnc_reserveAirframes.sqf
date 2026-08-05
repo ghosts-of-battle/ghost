@@ -13,7 +13,7 @@
  * Fits under the ceiling <BOOL>
  *
  * Example:
- * if !([_n] call ghost_alive_drones_fnc_reserveAirframes) exitWith {};
+ * if !([_n] call ghost_drones_fnc_reserveAirframes) exitWith {};
  *
  * Public: Yes
  */
@@ -24,9 +24,16 @@ if (isNil QGVAR(fleet)) exitWith { false };
 
 // Count tracked airframes. Recently-dead-but-not-yet-reaped airframes still count:
 // that is intentional (conservative — server safety wins ties).
+//
+// Groups flagged uncapped are skipped. Base defenders are the case: their numbers
+// are already bounded by their own per-type caps, and a base that quietly stops
+// defending itself because a patrol elsewhere filled the shared budget is a
+// failure nobody can see from the module that caused it.
 private _live = 0;
 {
-    _live = _live + count (_x getVariable [QGVAR(vehicles), []]);
+    if !(_x getVariable [QGVAR(uncapped), false]) then {
+        _live = _live + count (_x getVariable [QGVAR(vehicles), []]);
+    };
 } forEach GVAR(fleet);
 
 private _ceiling = GVAR(ceiling);

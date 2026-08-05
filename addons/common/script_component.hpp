@@ -33,3 +33,23 @@
 #define IDC_MODAL_TITLE_R       1001
 #define IDC_MODAL_GROUP_CONTENT 2000
 #define IDC_MODAL_CONTENT_TEXT  2001
+
+// Admin chat-command prefix. Seven characters - fnc_debugCommand slices on it.
+#define DEBUG_PREFIX "#ghost "
+
+// Intel markers fade in this many scheduled steps - never a per-frame handler.
+#define INTEL_FADE_STEPS 5
+
+// Shared HUD reposition dialog
+#define IDD_HUDMOVE          8400
+#define IDC_HUDMOVE_CATCH    8401
+#define IDC_HUDMOVE_BOX      8402
+#define IDC_HUDMOVE_SAVE     8403
+#define IDC_HUDMOVE_RESET    8404
+#define IDC_HUDMOVE_CANCEL   8405
+
+// Shared artillery. Values carried over from ambient_arty so its behaviour is
+// unchanged by the extraction.
+#define BARRAGE_ROUND_GAP    0.7    // sec between rounds when no window is given
+#define BARRAGE_SHELL_ALT    260    // m the shell spawns above the impact point
+#define BARRAGE_SHELL_SPEED  130    // m/s downward

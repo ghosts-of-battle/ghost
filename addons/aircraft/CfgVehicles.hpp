@@ -41,7 +41,7 @@ class CfgVehicles {
 
         class Attributes: AttributesBase {
             class side: Combo {
-                property = "ghost_alive_aircraft_side";
+                property = "ghost_aircraft_side";
                 displayName = "Side";
                 tooltip = "Side the aircraft and glide bombs belong to.";
                 typeName = "STRING";
@@ -76,7 +76,7 @@ class CfgVehicles {
             AEDIT(glidebomb_altitude,"NUMBER","1500","Glide-Bomb Altitude (m)","Height the glide bomb ingresses at before homing down onto the building.");
 
             class debug: Combo {
-                property = "ghost_alive_aircraft_debug";
+                property = "ghost_aircraft_debug";
                 displayName = "Debug Markers";
                 tooltip = "Drop a side-colored map marker on every live airframe.";
                 typeName = "STRING";

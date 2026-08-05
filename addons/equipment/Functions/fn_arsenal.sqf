@@ -41,14 +41,53 @@ if (isNil "_radios") then {
     "\z\ace\addons\arsenal\data\iconCustom.paa"
 ] call ACEFUNC(arsenal,addRightPanelButton);
 
+// Execute asynchronously to prevent freezing the initialization phase
+[] spawn {
+    // Wait until the original mod has completed initializing its arsenal button ID
+    waitUntil { 
+        !(isNil {missionNamespace getVariable "Rev_uav_arsenalCategory"}) && 
+        {(missionNamespace getVariable ["Rev_uav_arsenalCategory", -1]) != -1} 
+    };
+
+    // Safely retrieve the true index assigned by ACE Arsenal
+    private _old = missionNamespace getVariable ["Rev_uav_arsenalCategory", -1];
+
+    private _newDrones = [
+        "SwitchBlade_600_Tube_Woodland","SwitchBlade_300_Tube_Woodland","SwitchBlade_300_Tube_Desert","SwitchBlade_600_Tube_Desert",
+        "GX_DEPLOYABLE_MAGAZINE_UAV_06","GX_DEPLOYABLE_MAGAZINE_UAV_06_MEDICAL","GX_DEPLOYABLE_MAGAZINE_UAV_02_lxWS","GX_DEPLOYABLE_MAGAZINE_UAV_01",
+        "GX_DEPLOYABLE_MAGAZINE_BLACKHORNET_UAV","GX_DEPLOYABLE_MAGAZINE_UAV_06_ANTIMINE","Rev_Pelican","Rev_Bustard","Rev_darter",
+        "Rev_Demine","Rev_Pelter","Rev_Roller","Rev_Designator","Rev_UAV_IED","GX_DEPLOYABLE_MAGAZINE_UGV_02_SCIENCE",
+        "GX_DEPLOYABLE_MAGAZINE_UGV_02_DEMINING","GX_DEPLOYABLE_MAGAZINE_HONEYBADGER_UGV_AT_BLACK","GX_DEPLOYABLE_MAGAZINE_HONEYBADGER_UGV_AT_DESERT",
+        "GX_DEPLOYABLE_MAGAZINE_HONEYBADGER_UGV_AT_GREEN","GX_DEPLOYABLE_MAGAZINE_HONEYBADGER_UGV_AT_HEX",
+        "GX_DEPLOYABLE_MAGAZINE_RQ11B_UAV","GX_UAVBattery","ACE_UAVBattery",
+        "GX_DEPLOYABLE_MAGAZINE_UAV_02_IED_lxWS"
+    ];
+
+    // Explicitly target the index, and add 'false' as the 5th param to stop movement duplication
+    [
+        _newDrones, 
+        "Drones", 
+        "a3\drones_f\air_f_gamma\uav_01\data\ui\uav_01_ca.paa", 
+        _old, 
+        false
+    ] call ACEFUNC(arsenal,addRightPanelButton);
+};
+
+
+// Deployables that are not aircraft: a tripod HMG, a GMG and the static
+// designators were sitting under Drones, where nobody looking for a gun would
+// think to check.
 [
-    ["SwitchBlade_600_Tube_Woodland","SwitchBlade_300_Tube_Woodland","SwitchBlade_300_Tube_Desert","SwitchBlade_600_Tube_Desert","GX_DEPLOYABLE_MAGAZINE_UAV_06","GX_DEPLOYABLE_MAGAZINE_UAV_06_MEDICAL","GX_DEPLOYABLE_MAGAZINE_UAV_02_lxWS","GX_DEPLOYABLE_MAGAZINE_UAV_01","GX_DEPLOYABLE_MAGAZINE_BLACKHORNET_UAV","GX_DEPLOYABLE_MAGAZINE_UAV_06_ANTIMINE","Rev_Pelican","Rev_Bustard","Rev_darter","Rev_Demine","Rev_Pelter","Rev_Roller","Rev_Designator","Rev_UAV_IED","GX_DEPLOYABLE_MAGAZINE_UGV_02_SCIENCE","GX_DEPLOYABLE_MAGAZINE_UGV_02_DEMINING","GX_DEPLOYABLE_MAGAZINE_HONEYBADGER_UGV_AT_BLACK","GX_DEPLOYABLE_MAGAZINE_HONEYBADGER_UGV_AT_DESERT","GX_DEPLOYABLE_MAGAZINE_HONEYBADGER_UGV_AT_GREEN","GX_DEPLOYABLE_MAGAZINE_HONEYBADGER_UGV_AT_HEX","GX_DEPLOYABLE_MAGAZINE_STATIC_DESIGNATOR_DESERT","GX_DEPLOYABLE_MAGAZINE_STATIC_DESIGNATOR_WOODLAND","GX_DEPLOYABLE_MAGAZINE_RQ11B_UAV","GX_UAVBattery","ACE_UAVBattery","GX_DEPLOYABLE_MAGAZINE_HMG_01","GX_DEPLOYABLE_MAGAZINE_GMG_01","GX_DEPLOYABLE_MAGAZINE_UAV_02_IED_lxWS"],
-    "Drones",
-    "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\transport_ca.paa"
+    [
+        "GX_DEPLOYABLE_MAGAZINE_HMG_01","GX_DEPLOYABLE_MAGAZINE_GMG_01",
+        "GX_DEPLOYABLE_MAGAZINE_STATIC_DESIGNATOR_DESERT","GX_DEPLOYABLE_MAGAZINE_STATIC_DESIGNATOR_WOODLAND"
+    ],
+    "Emplacements",
+    "\a3\ui_f\data\igui\cfg\simpletasks\types\defend_ca.paa"
 ] call ACEFUNC(arsenal,addRightPanelButton);
 
 [
-    ["ACE_ATragMX","ALIVE_Tablet","ItemcTabHCam","ACE_HuntIR_monitor","ACE_Kestrel4500","ItemMicroDAGRMisc","ACE_microDAGR","ItemcTabMisc","ItemAndroidMisc"],
+    ["ACE_ATragMX","ALIVE_Tablet","ItemcTabHCam","ACE_HuntIR_monitor","ACE_Kestrel4500","ItemMicroDAGRMisc","ACE_microDAGR","ItemcTabMisc","ItemAndroidMisc","ghost_ctab_s7_s23_blk","ghost_ctab_s7_s23_blk_misc","ghost_ctab_s7_s23_tan","ghost_ctab_s7_s23_tan_misc","ghost_ctab_s7_gft","ghost_ctab_s7_gft_misc","ghost_hacking_tabletItem","ghost_hacking_scannerItem","ghost_satcom_item"],
     "Tech",
     "\a3\ui_f\data\igui\cfg\simpletasks\types\Use_ca.paa"
 ] call ACEFUNC(arsenal,addRightPanelButton);

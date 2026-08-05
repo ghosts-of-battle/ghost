@@ -19,5 +19,5 @@ _viewVar set [1,_newViewDistance];
 
 if (DT_notificationsEnabled) then {
 	private _symbol = ["-", "+"] select (_add);
-	systemChat format [localize "STR_DTVD_incrementedViewHotkey",_newViewDistance,_symbol,_value];
+	["View Distance", format [localize "STR_DTVD_incrementedViewHotkey",_newViewDistance,_symbol,_value], [0.61, 0.67, 0.73, 1]] call ghost_notify_fnc_notify;
 };

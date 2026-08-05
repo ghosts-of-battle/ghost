@@ -54,7 +54,7 @@ private _gbFreq  = _logic getVariable ["glidebomb_frequency", 0];
 private _gbAlt   = _logic getVariable ["glidebomb_altitude", 1500];
 
 // Boot the shared fleet registry + reaper (idempotent across all modules).
-[_ceiling] call EFUNC(alive_drones,ensureReaper);
+[_ceiling] call EFUNC(drones,ensureReaper);
 
 private _cfg = createHashMap;
 _cfg set ["side", _side];

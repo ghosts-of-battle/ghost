@@ -55,7 +55,7 @@ params ["_grp", "_veh", "_cfg"];
 
     // --- Egress off-map ---
     if (alive _veh) then {
-        private _edge = [getPosATL _veh] call EFUNC(alive_drones,edgePos);
+        private _edge = [getPosATL _veh] call EFUNC(drones,edgePos);
         for "_i" from (count (waypoints _grp)) - 1 to 0 step -1 do { deleteWaypoint [_grp, _i] };
         _grp setBehaviour "CARELESS";
         _grp setCombatMode "BLUE";
@@ -76,8 +76,8 @@ params ["_grp", "_veh", "_cfg"];
     { deleteVehicle _x } forEach (crew _veh);
     deleteVehicle _veh;
     { deleteVehicle _x } forEach (units _grp);
-    if (!isNil QEGVAR(alive_drones,fleet)) then {
-        EGVAR(alive_drones,fleet) = EGVAR(alive_drones,fleet) - [_grp];
+    if (!isNil QEGVAR(drones,fleet)) then {
+        EGVAR(drones,fleet) = EGVAR(drones,fleet) - [_grp];
     };
     if ((units _grp) isEqualTo []) then { deleteGroup _grp };
 };

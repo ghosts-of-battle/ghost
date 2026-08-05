@@ -15,7 +15,7 @@ params ["_args", "_handle"];
 _args params ["_logic", "_type"];
 
 if (isNull _logic) exitWith { [_handle] call CBA_fnc_removePerFrameHandler };
-if (isNil QEGVAR(alive_drones,fleet)) exitWith {};
+if (isNil QEGVAR(drones,fleet)) exitWith {};
 
 private _cfg = _logic getVariable [QGVAR(cfg), objNull];
 if (isNil "_cfg") exitWith {};
@@ -25,9 +25,9 @@ if (_classes isEqualTo [] || {_cap <= 0}) exitWith { [_handle] call CBA_fnc_remo
 
 // Already at this type's cap? wait for the next tick.
 private _cur = {
-    (_x getVariable [QEGVAR(alive_drones,logic), objNull]) isEqualTo _logic &&
-    {(_x getVariable [QEGVAR(alive_drones,dtype), ""]) isEqualTo _type}
-} count EGVAR(alive_drones,fleet);
+    (_x getVariable [QEGVAR(drones,logic), objNull]) isEqualTo _logic &&
+    {(_x getVariable [QEGVAR(drones,dtype), ""]) isEqualTo _type}
+} count EGVAR(drones,fleet);
 if (_cur >= _cap) exitWith {};
 
 // 55% a single airframe, 45% a 2-3 airframe formation launched 3s apart.
@@ -37,7 +37,7 @@ for "_i" from 0 to (_n - 1) do {
     [{
         params ["_logic", "_type"];
         if (isNull _logic) exitWith {};
-        if !([1] call EFUNC(alive_drones,reserveAirframes)) exitWith {};
+        if !([1] call EFUNC(drones,reserveAirframes)) exitWith {};
         [_logic, _type] call FUNC(spawnStrike);
     }, [_logic, _type], _i * 3] call CBA_fnc_waitAndExecute;
 };

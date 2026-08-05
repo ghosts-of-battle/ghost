@@ -38,9 +38,9 @@ if (_taor isNotEqualTo []) then {
 };
 
 // live airframes this module owns, per type, against each type's cap
-private _fleet = missionNamespace getVariable ["ghost_alive_drones_fleet", []];
+private _fleet = missionNamespace getVariable ["ghost_drones_fleet", []];
 private _mine = _fleet select {
-    (_x getVariable ["ghost_alive_drones_logic", objNull]) isEqualTo _logic
+    (_x getVariable ["ghost_drones_logic", objNull]) isEqualTo _logic
 };
 
 private _perType = [];
@@ -48,7 +48,7 @@ private _perType = [];
     private _type = _x;   // the inner count below rebinds _x to a fleet member
     (_typeCfg get _type) params ["_classes", "_cap", "_prio", ""];
     if (_classes isEqualTo [] || {_cap <= 0} || {_prio <= 0}) then { continue };
-    private _cur = {(_x getVariable ["ghost_alive_drones_dtype", ""]) isEqualTo _type} count _mine;
+    private _cur = {(_x getVariable ["ghost_drones_dtype", ""]) isEqualTo _type} count _mine;
     _perType pushBack format ["%1 %2/%3", _type, _cur, _cap];
 } forEach keys _typeCfg;
 

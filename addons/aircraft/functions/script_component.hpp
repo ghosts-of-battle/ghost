@@ -1,1 +1,1 @@
-#include "\z\ghost\addons\alive_aircraft\script_component.hpp"
+#include "\z\ghost\addons\aircraft\script_component.hpp"

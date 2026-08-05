@@ -32,11 +32,30 @@ ships with, which a mission or the forced list below can override.
 |---|---|---|---|---|
 | Allow global/side chat | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Chat | `true` | Should players be allowed to chat on global and their side chat. If disabled chat messages from these channels will only be visible to admins and zeus |
 
+## Common (`common`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| ISR unit variable | EDITBOX | Ghosts of Battle > Common | `"isISR"` | Name of the unit variable marking someone as an ISR operator. Gates the hacking tablet and Intel Hunt processing. Set it on a unit with: this setVaria |
+
 ## Difficulty (`difficulty`)
 
 | Setting | Type | Category | Default | What it does |
 |---|---|---|---|---|
 | armorAccuracyFactor_DisplayName | SLIDER | Ghosts of Battle > (built at runtime) | `[0, 2, 0.5, 2]` | armorAccuracyFactor_Description |
+
+## Drones (`drones`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Drone datalink | CHECKBOX | Ghosts of Battle > Drones | `true` | On: every drone this mod spawns joins its side's sensor network - it reports the contacts it sees and receives everyone else's, so recon cues the shoo |
+
+## Electronic War Zones (`electronic_war_zones`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Show jamming meter | CHECKBOX | Ghosts of Battle > Electronic Warfare | `true` | On-screen meter while you are inside a jamming field. Off hides it - the jamming still happens, you just get no warning. |
+| RDF Items (any one) | EDITBOX | Ghosts of Battle > Electronic Warfare | `"ItemcTab,ItemAndroid,ItemAndroidMisc"` | Comma-separated item classnames; carrying ANY ONE means you are sweeping for emitters - it runs by itself and reports when the picture changes, there  |
 
 ## Evac (`evac`)
 
@@ -70,10 +89,12 @@ ships with, which a mission or the forced list below can override.
 | Setting | Type | Category | Default | What it does |
 |---|---|---|---|---|
 | Enable Hacking | CHECKBOX | Ghosts of Battle > Hacking | `true` | Master toggle for the tower/drone hacking self-interaction. |
-| Required Items (any one) | EDITBOX | Ghosts of Battle > Hacking | `"ItemcTab,ItemAndroid,ItemAndroidMisc"` | Comma-separated item classnames; carrying ANY ONE of these in inventory unlocks the Hack menu. No mod dependency - unknown classes are simply never fo |
+| Required Items (any one) | EDITBOX | Ghosts of Battle > Hacking | `"ghost_hacking_tabletItem"` | Comma-separated item classnames; carrying ANY ONE unlocks the hacking tablet. Defaults to the Intrusion Tablet item - add ItemcTab,ItemAndroid etc if  |
 | Hack Condition | EDITBOX | Ghosts of Battle > Hacking | `"true"` | SQF condition that must also return true before anyone can hack. `_this` is the unit. Left as ""true"" it never blocks anything. Example: side group _ |
 | Hackable Tower Classes | EDITBOX | Ghosts of Battle > Hacking | `"Land_TTowerBig_2_F,Land_TTowerBig_1_F,L` | Comma-separated object classnames hackable as 'towers', in addition to Electronic War Zones emitters. |
 | Downable Drone Classes | EDITBOX | Ghosts of Battle > Hacking | `""` | Comma-separated vehicle classnames that 'Down Drone' may target. Blank = any enemy UAV, which is the old behaviour. Listed classes still have to be en |
+| Require ISR operator | CHECKBOX | Ghosts of Battle > Hacking | `true` | On: only a unit flagged as ISR can use the tablet, on top of carrying it. The flag and its variable name are shared with Intel Hunt - see Common. |
+| Scanner Items (any one) | EDITBOX | Ghosts of Battle > Hacking | `"ghost_hacking_scannerItem"` | Comma-separated item classnames that count as a signal scanner. Reading warning lamps needs no ISR flag - only the tablet does. |
 
 ## Insurgents (`insurgents`)
 
@@ -87,6 +108,18 @@ ships with, which a mission or the forced list below can override.
 |---|---|---|---|---|
 | Fatal Injuries Cardiac Arrest Time Coefficient | SLIDER | Ghosts of Battle > Medical Treatment | `[0.01, 1, 0.2, 2]` | Coefficient for controlling the Cardiac Arrest Time on fatal injuries when 'Fatal Injuries' is NOT 'Always'. |
 
+## Notify (`notify`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Enable stacked notifications | CHECKBOX | Ghosts of Battle > Notifications | `true` | Off falls back to the plain hint the caller would otherwise have used. |
+| Corner | LIST | Ghosts of Battle > Notifications | `[[0, 1, 2, 3], ["Top left", "Top right",` | Which corner the stack grows from. |
+| Max on screen | SLIDER | Ghosts of Battle > Notifications | `[1, SLOT_COUNT, 4, 0, true]` | Notifications shown at once; the rest queue until a slot frees. |
+| Duration (sec) | SLIDER | Ghosts of Battle > Notifications | `[2, 30, 8, 0, true]` | How long a notification stays before it fades out. |
+| Width | SLIDER | Ghosts of Battle > Notifications | `[0.1, 0.5, 0.22, 2, true]` | Width of the stack as a fraction of the safe zone. |
+| Text size | SLIDER | Ghosts of Battle > Notifications | `[0.5, 3, 1, 2, true]` | Scales the notification text. The panel grows with it, so a larger size means taller notifications rather than cramped ones. |
+| Font | LIST | Ghosts of Battle > Notifications | `[ ["RobotoCondensed", "RobotoCondensedBo` | Typeface for notifications. The monospace and console faces suit a technical readout; the Purista faces are what Arma's own UI uses. |
+
 ## Patrol Base (`patrol_base`)
 
 | Setting | Type | Category | Default | What it does |
@@ -95,7 +128,7 @@ ships with, which a mission or the forced list below can override.
 | Max patrol bases | SLIDER | Ghosts of Battle > Patrol Base | `[1, 10, 3, 0, true]` | How many patrol bases may exist at once. |
 | Kits required | SLIDER | Ghosts of Battle > Patrol Base | `[1, 10, 4, 0, true]` | How many Patrol Base Kits must be dropped within range to build one base. |
 | Kit gather range (m) | SLIDER | Ghosts of Battle > Patrol Base | `[1, 30, 5, 1, true]` | Radius the dropped kits must lie within to count. |
-| Base object | EDITBOX | Ghosts of Battle > Patrol Base | `"ctb_satcom_deployed"` | Class spawned at the base on deploy - it marks the location and carries the Unbuild action. |
+| Base object | EDITBOX | Ghosts of Battle > Patrol Base | `"ghost_satcom_deployed"` | Class spawned at the base on deploy - it marks the location and carries the Unbuild action. Defaults to ghost's own SatCom mast; if that class is not  |
 | On-deploy init (SQF) | EDITBOX | Ghosts of Battle > Patrol Base | `"params ['_base', '_pos', '_name']; [_ba` | SQF run on the server after a base is built. Passed: [_beacon, _pos, _name, _side, _builder]. Blank = nothing. |
 | On-undeploy init (SQF) | EDITBOX | Ghosts of Battle > Patrol Base | `"params ['_object']; [_object] remoteExe` | SQF run on the server while the base beacon still exists (before it is deleted). Passed: [_beacon, _pos, _name, _side]. Blank = nothing. |
 

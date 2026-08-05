@@ -1,0 +1,8 @@
+[rapify]
+# ui_patches.hpp reopens cTab dialog control classes whose positions are
+# safezone-maths expressions; the engine evaluates them at load, HEMTT cannot.
+enabled = false
+
+# Note: `hemtt check` reports L-S29 "Undefined Function" warnings for this
+# addon. False positives - the lint only recognises PREP'd functions, and these
+# are declared in CfgFunctions.hpp so they compile before cTab's own pass.

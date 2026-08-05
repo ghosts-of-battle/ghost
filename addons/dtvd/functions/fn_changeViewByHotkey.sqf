@@ -21,5 +21,5 @@ _viewVar set [0,_value];
 _viewVar set [1,_value];
 
 if (DT_notificationsEnabled) then {
-	systemChat format [localize "STR_DTVD_presetViewHotkey",_value,_hotkey];
+	["View Distance", format [localize "STR_DTVD_presetViewHotkey",_value,_hotkey], [0.61, 0.67, 0.73, 1]] call ghost_notify_fnc_notify;
 };

@@ -1,0 +1,9 @@
+PREP(moduleIntelHunt);
+PREP(onKilled);
+PREP(addSearchAction);
+PREP(searchBody);
+PREP(canProcess);
+PREP(processIntel);
+PREP(fireHint);
+PREP(targetDown);
+PREP(debugTick);

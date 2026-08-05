@@ -6,6 +6,10 @@ class CfgWeapons {
     class H_Booniehat_khk_hs;
 
     class GVAR(H_Helmet_FASTMT_base_F): H_HelmetB {
+        // Every helmet in this mod carries a camera: cTab auto-detects
+        // ctab_camera on any headgear, which beats the userconfig array -
+        // no server file to edit and nothing for a mission to override.
+        ctab_camera = 1;
         scope = 0;
         displayName = "Operator Helmet";
         model = QPATHTOF(H_HelmetFASTMT_F);

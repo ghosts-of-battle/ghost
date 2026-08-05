@@ -36,7 +36,7 @@ private _iconRespawn = getText (configFile >> "CfgVehicles" >> QGVAR(moduleRespa
 
             private _players = allPlayers select {side group _x in _sides && !alive _x};
 
-            format [LLSTRING(ModuleRespawn_Notification_RespawningMany), count _players] call CBA_fnc_notify;
+            ["Respawn", format [LLSTRING(ModuleRespawn_Notification_RespawningMany), count _players], [1, 0.8, 0.3, 1]] call EFUNC(notify,notify);
             [QGVAR(force), nil, _players] call CBA_fnc_targetEvent;
         }
     ] call zen_dialog_fnc_create;
@@ -70,7 +70,7 @@ private _iconRespawn = getText (configFile >> "CfgVehicles" >> QGVAR(moduleRespa
             _dialogValues params ["_selected"];
             TRACE_1("",_dialogValues);
 
-            format [LLSTRING(ModuleRespawn_Notification_RespawningSingle), name _selected] call CBA_fnc_notify;
+            ["Respawn", format [LLSTRING(ModuleRespawn_Notification_RespawningSingle), name _selected], [1, 0.8, 0.3, 1]] call EFUNC(notify,notify);
 
             [QGVAR(force), nil, _selected] call CBA_fnc_targetEvent;
         },

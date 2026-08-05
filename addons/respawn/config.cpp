@@ -9,7 +9,8 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "ghost_common"
+            "ghost_common",
+            "ghost_notify"
         };
         author = QAUTHOR;
         VERSION_CONFIG;

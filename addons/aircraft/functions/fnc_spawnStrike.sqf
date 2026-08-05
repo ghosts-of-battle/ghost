@@ -46,11 +46,11 @@ private _sp = [
 ];
 
 private _class = selectRandom _classes;
-([_class, _sp, _side, _alt, grpNull, false] call EFUNC(alive_drones,createDrone)) params ["_veh", "_grp"];
+([_class, _sp, _side, _alt, grpNull, false] call EFUNC(drones,createDrone)) params ["_veh", "_grp"];
 if (isNull _veh) exitWith {};
 
 // Register so the airframe counts toward the shared ceiling + reaper watchdog.
 // Lifetime 0 = the reaper won't auto-despawn; runStrike deletes it after egress.
-[_grp, _logic, _type, [_veh], 0, _cfg get "debug", _side] call EFUNC(alive_drones,registerGroup);
+[_grp, _logic, _type, [_veh], 0, _cfg get "debug", _side] call EFUNC(drones,registerGroup);
 
 [_grp, _veh, _cfg] call FUNC(runStrike);

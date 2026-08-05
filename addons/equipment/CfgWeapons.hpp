@@ -1,6 +1,6 @@
 class CfgWeapons {
     class CBA_MiscItem;
-    // class ACE_Vector;
+    class ACE_Vector;
     class Uniform_Base;
     class VestItem;
     class V_RebreatherB;
@@ -8,41 +8,41 @@ class CfgWeapons {
     class UniformItem;
     class U_B_CTRG_Soldier_F: Uniform_Base {};
     class U_B_Wetsuit;
-    // class Binocular;
-    // class Laserdesignator: Binocular {
-    //         visionMode[] = {"Normal","NVG","TI"};
-    // };
-    // class GVAR(Vector_Designator): ACE_Vector {
-    //     author = "NemesisRE";
-    //     displayName = "[Ghost] ACE Vector Designator (NVG/TI)";
-    //     descriptionShort = "Rangefinder/Designator";
-    //     simulation = "weapon";
-    //     magazines[] = {"Laserbatteries"};
-    //     cursor = "laserDesignator";
-    //     cursorAim = "EmptyCursor";
-    //     cursorAimOn = "CursorAimOn";
-    //     showSwitchAction = 1;
-    //     weaponInfoType = "ghost_RscOptics_vector";
-    //     class WeaponSlotsInfo {
-    //         mass = 18;
-    //     };
-    //     Laser = 1;
-    //     visionMode[] = {"Normal","NVG","TI"};
-    //     thermalMode[] = {0};
-    //     opticsZoomMin = 0.0099999998;
-    //     opticsZoomMax = 0.050000001;
-    //     opticsZoomInit = 0.050000001;
-    //     distanceZoomMin = 100;
-    //     distanceZoomMax = 2300;
-    //     minRange = 150;
-    //     midRange = 500;
-    //     maxRange = 5000;
-    // };
-    // class GVAR(Vector_Designator_NVG): GVAR(Vector_Designator) {
-    //     displayName = "[Ghost] ACE Vector Designator (NVG)";
-    //     visionMode[] = {"Normal","NVG"};
-    //     thermalMode[] = {};
-    // };
+    class Binocular;
+    class Laserdesignator: Binocular {
+            visionMode[] = {"Normal","NVG","TI"};
+    };
+    class GVAR(Vector_Designator): ACE_Vector {
+        author = "NemesisRE";
+        displayName = "[Ghost] ACE Vector Designator (NVG/TI)";
+        descriptionShort = "Rangefinder/Designator";
+        simulation = "weapon";
+        magazines[] = {"Laserbatteries"};
+        cursor = "laserDesignator";
+        cursorAim = "EmptyCursor";
+        cursorAimOn = "CursorAimOn";
+        showSwitchAction = 1;
+        weaponInfoType = "ghost_RscOptics_vector";
+        class WeaponSlotsInfo {
+            mass = 18;
+        };
+        Laser = 1;
+        visionMode[] = {"Normal","NVG","TI"};
+        thermalMode[] = {0};
+        opticsZoomMin = 0.0099999998;
+        opticsZoomMax = 0.050000001;
+        opticsZoomInit = 0.050000001;
+        distanceZoomMin = 100;
+        distanceZoomMax = 2300;
+        minRange = 150;
+        midRange = 500;
+        maxRange = 5000;
+    };
+    class GVAR(Vector_Designator_NVG): GVAR(Vector_Designator) {
+        displayName = "[Ghost] ACE Vector Designator (NVG)";
+        visionMode[] = {"Normal","NVG"};
+        thermalMode[] = {};
+    };
     class GVAR(rebreather): V_RebreatherB {
         author = QAUTHOR;
         displayName = "[Ghost] Rebreather";

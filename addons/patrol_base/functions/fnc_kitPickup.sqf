@@ -20,7 +20,7 @@ private _item = getText (configOf _object >> "correspondingItem");
 if (_item isEqualTo "") exitWith {};
 
 if !(_unit canAdd _item) exitWith {
-    [[], ["Patrol Base", 1.1, [1, 0.3, 0.3, 1]], ["No room for the kit."]] call CBA_fnc_notify;
+    ["Patrol Base", "No room for the kit.", [1, 0.3, 0.3, 1]] call EFUNC(notify,notify);
 };
 
 [_object] remoteExec ["deleteVehicle", 2];

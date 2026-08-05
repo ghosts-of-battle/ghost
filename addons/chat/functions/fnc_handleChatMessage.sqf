@@ -22,6 +22,10 @@
 params [["_channel", -1], "", ["_from", ""], ["_text", ""], ["_sender", objNull]];
 if (_text == "") exitWith {false};
 
+// Admin debug commands are swallowed before any chat handling - see
+// ghost_common_fnc_debugCommand. Ordinary chat falls straight through.
+if ([_text, _sender] call EFUNC(common,debugCommand)) exitWith {true};
+
 if (GVAR(allowGlobalChat) || {!(_channel in RESTRICTED_CHANNELS)}) exitWith {false};
 
 if (_sender getVariable [QEGVAR(common,isAdmin), false]) exitWith {
@@ -33,7 +37,7 @@ if (!isNull getAssignedCuratorLogic _sender) exitWith {
 };
 
 if (_sender isEqualTo player) exitWith {
-    systemChat LLSTRING(AllowGlobalChat_Warning);
+    ["Chat", LLSTRING(AllowGlobalChat_Warning), [1, 0.8, 0.3, 1]] call EFUNC(notify,notify);
     playSound "3DEN_notificationWarning";
 
     false // return, player always sees his own message

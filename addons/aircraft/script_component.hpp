@@ -1,5 +1,5 @@
-#define COMPONENT alive_aircraft
-#define COMPONENT_BEAUTIFIED ALiVE Aircraft
+#define COMPONENT aircraft
+#define COMPONENT_BEAUTIFIED Aircraft
 #include "\z\ghost\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

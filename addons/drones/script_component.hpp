@@ -1,5 +1,5 @@
-#define COMPONENT alive_drones
-#define COMPONENT_BEAUTIFIED ALiVE Drones
+#define COMPONENT drones
+#define COMPONENT_BEAUTIFIED Drones
 #include "\z\ghost\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

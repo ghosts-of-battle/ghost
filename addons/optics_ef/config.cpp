@@ -14,7 +14,8 @@ class CfgPatches {
         requiredAddons[] = {
             "ghost_main",
             "ace_xm157",
-            "A3_EFA_characters_f"
+            "A3_EFA_characters_f",
+            "cba_jr"
         };
         skipWhenMissingDependencies = 1;
         authorUrl = "https://www.ghostsofbattle.com/";
@@ -26,3 +27,4 @@ class CfgPatches {
 
 #include "CfgEventHandlers.hpp"
 #include "CfgWeapons.hpp"
+#include "jr_classes.hpp"

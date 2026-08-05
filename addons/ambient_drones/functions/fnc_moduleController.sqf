@@ -69,8 +69,8 @@ _cfg set ["debug", _logic getVariable ["debug", false]];
 _logic setVariable [QGVAR(cfg), _cfg];
 _logic setVariable [QGVAR(typeCfg), _typeCfg];
 
-// Ensure the shared fleet registry + reaper (owned by ALiVE Drones) is running.
-[_logic getVariable ["global_airframe_ceiling", 10]] call ghost_alive_drones_fnc_ensureReaper;
+// Ensure the shared fleet registry + reaper (owned by Drones) is running.
+[_logic getVariable ["global_airframe_ceiling", 10]] call ghost_drones_fnc_ensureReaper;
 
 // First fire soon (so it's visibly alive); the manager uses the [min,max] window
 // for every subsequent spawn.
@@ -80,5 +80,9 @@ _logic setVariable [QGVAR(nextAt), time + 20 + random 20];
 // Debug heartbeat: reports this module's state to every client's system chat
 // while its Debug attribute is ticked.
 [FUNC(debugTick), DEBUG_INTERVAL, _logic] call CBA_fnc_addPerFrameHandler;
+
+// Post-contact QRF: squads that stop moving where they just fought get
+// answered (CBA-gated).
+[FUNC(qrfWatch), 10, _logic] call CBA_fnc_addPerFrameHandler;
 
 diag_log text format ["[ghost_ambient_drones] online: side %1, radius %2m, window %3-%4s, first fire in ~%5s", _side, _cfg get "radius", _iMin, _iMax, round ((_logic getVariable [QGVAR(nextAt), time]) - time)];

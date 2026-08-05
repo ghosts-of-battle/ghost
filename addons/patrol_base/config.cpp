@@ -12,7 +12,10 @@ class CfgPatches {
             QGVAR(kit_olive)
         };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ghost_main"};
+        requiredAddons[] = {
+            "ghost_main",
+            "ghost_notify"
+        };
         skipWhenMissingDependencies = 1;
         author = QAUTHOR;
         authors[] = {QAUTHOR};

@@ -1,1 +1,1 @@
-#include "\z\ghost\addons\alive_drones\script_component.hpp"
+#include "\z\ghost\addons\drones\script_component.hpp"

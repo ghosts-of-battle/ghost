@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Ghost
- * ALiVE Drones controller module function. Reads the 3DEN attributes off the
+ * Drones controller module function. Reads the 3DEN attributes off the
  * logic, stashes a resolved config on it, ensures the shared reaper is running,
  * and starts this controller's trickle-spawn manager PFH.
  *
@@ -44,7 +44,7 @@ private _lifetime = _logic getVariable ["drone_lifetime", 30];
 private _debug = _logic getVariable ["debug", false];
 
 if (_markers isEqualTo []) exitWith {
-    WARNING("ALiVE Drones controller has no TAOR marker set - disabled.");
+    WARNING("Drones controller has no TAOR marker set - disabled.");
 };
 if (_altMax < _altMin) then { _altMax = _altMin };
 
@@ -85,4 +85,4 @@ _logic setVariable [QGVAR(typeCfg), _typeCfg];
 private _handle = [FUNC(manager), _interval max 1, _logic] call CBA_fnc_addPerFrameHandler;
 _logic setVariable [QGVAR(managerHandle), _handle];
 
-LOG_2("ALiVE Drones controller online: %1 marker(s), ceiling %2.",count _markers,_ceiling);
+LOG_2("Drones controller online: %1 marker(s), ceiling %2.",count _markers,_ceiling);

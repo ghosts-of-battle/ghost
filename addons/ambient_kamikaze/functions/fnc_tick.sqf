@@ -26,4 +26,22 @@ _logic setVariable [QGVAR(nextFire), time + (_cfg get "interval")];
 private _tgt = [_cfg] call FUNC(pickTarget);
 if (_tgt isEqualTo []) exitWith {};
 
-[_tgt, _cfg get "droneClass", _cfg get "spawnDist", _cfg get "altitude"] call FUNC(kamikaze);
+// Single or swarm. Either class may be blank, which is how a site is told to
+// only ever send one kind - and if BOTH are blank there is nothing to send, so
+// the roll is settled against what is actually available rather than against the
+// percentage alone.
+private _single = _cfg get "droneClass";
+private _swarm = _cfg get "swarmClass";
+
+private _useSwarm = switch (true) do {
+    case (_swarm isEqualTo ""): { false };
+    case (_single isEqualTo ""): { true };
+    default { random 100 < (_cfg get "swarmChance") };
+};
+
+private _class = [_single, _swarm] select _useSwarm;
+if (_class isEqualTo "") exitWith {};
+
+private _count = [1, _cfg get "swarmCount"] select _useSwarm;
+
+[_tgt, _class, _cfg get "spawnDist", _cfg get "altitude", _count] call FUNC(kamikaze);

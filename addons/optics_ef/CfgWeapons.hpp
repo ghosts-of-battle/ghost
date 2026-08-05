@@ -46,6 +46,51 @@ class CfgWeapons {
                     opticsDisablePeripherialVision = 1;
                     cameraDir = "";
                 };
+                // EF's own secondary and third channels, restored from an
+                // in-game config dump (the CDLC data is encrypted on disk).
+                // Redeclaring ItemInfo severed them along with everything else;
+                // values below are EF's, opticsID renumbered behind the XM157.
+                class MBSCollimator {
+                    opticsID = 2;
+                    useModelOptics = 0;
+                    opticsPPEffects[] = {};
+                    opticsFlare = 0;
+                    opticsDisablePeripherialVision = 0;
+                    opticsZoomMin = 0.25;
+                    opticsZoomMax = 1.25;
+                    opticsZoomInit = 0.75;
+                    memoryPointCamera = "eye";
+                    visionMode[] = {"Normal"};
+                    distanceZoomMin = 200;
+                    distanceZoomMax = 200;
+                };
+                class MBSScope {
+                    opticsID = 3;
+                    // The third mode is the BACKUP IRON SIGHT, not a third
+                    // magnified scope: you flick to it when the glass is
+                    // useless - close, or dead battery - so it is 1x down the
+                    // weapon's own sights with full peripheral vision. It was
+                    // carrying the magnified scope's numbers (0.042 zoom,
+                    // blur, peripheral vision off), which is why it read as
+                    // nothing but a big zoom.
+                    //
+                    // useModelOptics stays 0: with 1 this mode renders through
+                    // the ItemInfo's modelOptics, which here is CBA's
+                    // scripted-optic model - the XM157's screen, not a sight -
+                    // and the mode came up dead.
+                    useModelOptics = 0;
+                    opticsPPEffects[] = {};
+                    opticsFlare = 0;
+                    opticsDisablePeripherialVision = 0;
+                    opticsZoomMin = 0.375;
+                    opticsZoomMax = 1.1;
+                    opticsZoomInit = 0.75;
+                    memoryPointCamera = "eye";
+                    visionMode[] = {"Normal"};
+                    distanceZoomMin = 100;
+                    distanceZoomMax = 100;
+                    cameraDir = "";
+                };
             };
         };
     };
@@ -85,6 +130,51 @@ class CfgWeapons {
                     visionMode[] = {"Normal"};
                     opticsFlare = 1;
                     opticsDisablePeripherialVision = 1;
+                    cameraDir = "";
+                };
+                // EF's own secondary and third channels, restored from an
+                // in-game config dump (the CDLC data is encrypted on disk).
+                // Redeclaring ItemInfo severed them along with everything else;
+                // values below are EF's, opticsID renumbered behind the XM157.
+                class MBSCollimator {
+                    opticsID = 2;
+                    useModelOptics = 0;
+                    opticsPPEffects[] = {};
+                    opticsFlare = 0;
+                    opticsDisablePeripherialVision = 0;
+                    opticsZoomMin = 0.25;
+                    opticsZoomMax = 1.25;
+                    opticsZoomInit = 0.75;
+                    memoryPointCamera = "eye";
+                    visionMode[] = {"Normal"};
+                    distanceZoomMin = 200;
+                    distanceZoomMax = 200;
+                };
+                class MBSScope {
+                    opticsID = 3;
+                    // The third mode is the BACKUP IRON SIGHT, not a third
+                    // magnified scope: you flick to it when the glass is
+                    // useless - close, or dead battery - so it is 1x down the
+                    // weapon's own sights with full peripheral vision. It was
+                    // carrying the magnified scope's numbers (0.042 zoom,
+                    // blur, peripheral vision off), which is why it read as
+                    // nothing but a big zoom.
+                    //
+                    // useModelOptics stays 0: with 1 this mode renders through
+                    // the ItemInfo's modelOptics, which here is CBA's
+                    // scripted-optic model - the XM157's screen, not a sight -
+                    // and the mode came up dead.
+                    useModelOptics = 0;
+                    opticsPPEffects[] = {};
+                    opticsFlare = 0;
+                    opticsDisablePeripherialVision = 0;
+                    opticsZoomMin = 0.375;
+                    opticsZoomMax = 1.1;
+                    opticsZoomInit = 0.75;
+                    memoryPointCamera = "eye";
+                    visionMode[] = {"Normal"};
+                    distanceZoomMin = 100;
+                    distanceZoomMax = 100;
                     cameraDir = "";
                 };
             };
@@ -128,6 +218,51 @@ class CfgWeapons {
                     opticsDisablePeripherialVision = 1;
                     cameraDir = "";
                 };
+                // EF's own secondary and third channels, restored from an
+                // in-game config dump (the CDLC data is encrypted on disk).
+                // Redeclaring ItemInfo severed them along with everything else;
+                // values below are EF's, opticsID renumbered behind the XM157.
+                class MBSCollimator {
+                    opticsID = 2;
+                    useModelOptics = 0;
+                    opticsPPEffects[] = {};
+                    opticsFlare = 0;
+                    opticsDisablePeripherialVision = 0;
+                    opticsZoomMin = 0.25;
+                    opticsZoomMax = 1.25;
+                    opticsZoomInit = 0.75;
+                    memoryPointCamera = "eye";
+                    visionMode[] = {"Normal"};
+                    distanceZoomMin = 200;
+                    distanceZoomMax = 200;
+                };
+                class MBSScope {
+                    opticsID = 3;
+                    // The third mode is the BACKUP IRON SIGHT, not a third
+                    // magnified scope: you flick to it when the glass is
+                    // useless - close, or dead battery - so it is 1x down the
+                    // weapon's own sights with full peripheral vision. It was
+                    // carrying the magnified scope's numbers (0.042 zoom,
+                    // blur, peripheral vision off), which is why it read as
+                    // nothing but a big zoom.
+                    //
+                    // useModelOptics stays 0: with 1 this mode renders through
+                    // the ItemInfo's modelOptics, which here is CBA's
+                    // scripted-optic model - the XM157's screen, not a sight -
+                    // and the mode came up dead.
+                    useModelOptics = 0;
+                    opticsPPEffects[] = {};
+                    opticsFlare = 0;
+                    opticsDisablePeripherialVision = 0;
+                    opticsZoomMin = 0.375;
+                    opticsZoomMax = 1.1;
+                    opticsZoomInit = 0.75;
+                    memoryPointCamera = "eye";
+                    visionMode[] = {"Normal"};
+                    distanceZoomMin = 100;
+                    distanceZoomMax = 100;
+                    cameraDir = "";
+                };
             };
         };
     };
@@ -167,6 +302,51 @@ class CfgWeapons {
                     visionMode[] = {"Normal"};
                     opticsFlare = 1;
                     opticsDisablePeripherialVision = 1;
+                    cameraDir = "";
+                };
+                // EF's own secondary and third channels, restored from an
+                // in-game config dump (the CDLC data is encrypted on disk).
+                // Redeclaring ItemInfo severed them along with everything else;
+                // values below are EF's, opticsID renumbered behind the XM157.
+                class MBSCollimator {
+                    opticsID = 2;
+                    useModelOptics = 0;
+                    opticsPPEffects[] = {};
+                    opticsFlare = 0;
+                    opticsDisablePeripherialVision = 0;
+                    opticsZoomMin = 0.25;
+                    opticsZoomMax = 1.25;
+                    opticsZoomInit = 0.75;
+                    memoryPointCamera = "eye";
+                    visionMode[] = {"Normal"};
+                    distanceZoomMin = 200;
+                    distanceZoomMax = 200;
+                };
+                class MBSScope {
+                    opticsID = 3;
+                    // The third mode is the BACKUP IRON SIGHT, not a third
+                    // magnified scope: you flick to it when the glass is
+                    // useless - close, or dead battery - so it is 1x down the
+                    // weapon's own sights with full peripheral vision. It was
+                    // carrying the magnified scope's numbers (0.042 zoom,
+                    // blur, peripheral vision off), which is why it read as
+                    // nothing but a big zoom.
+                    //
+                    // useModelOptics stays 0: with 1 this mode renders through
+                    // the ItemInfo's modelOptics, which here is CBA's
+                    // scripted-optic model - the XM157's screen, not a sight -
+                    // and the mode came up dead.
+                    useModelOptics = 0;
+                    opticsPPEffects[] = {};
+                    opticsFlare = 0;
+                    opticsDisablePeripherialVision = 0;
+                    opticsZoomMin = 0.375;
+                    opticsZoomMax = 1.1;
+                    opticsZoomInit = 0.75;
+                    memoryPointCamera = "eye";
+                    visionMode[] = {"Normal"};
+                    distanceZoomMin = 100;
+                    distanceZoomMax = 100;
                     cameraDir = "";
                 };
             };

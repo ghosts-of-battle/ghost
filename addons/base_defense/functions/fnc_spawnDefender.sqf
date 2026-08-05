@@ -46,12 +46,12 @@ if (_cfg get "hasMarker") then {
     if (_p isNotEqualTo [0,0,0]) then { _spawnPos = _p };
 };
 
-([selectRandom _classes, _spawnPos, _side, _alt, grpNull, _ground] call ghost_alive_drones_fnc_createDrone) params ["_veh", "_grp"];
+([selectRandom _classes, _spawnPos, _side, _alt, grpNull, _ground] call ghost_drones_fnc_createDrone) params ["_veh", "_grp"];
 if (isNull _veh) exitWith {};
 
 if (_type in ["loiterfixed", "loiterrotor"]) then {
     // CAP over the base (out-of-ammo despawn handled by the reaper).
-    [_grp, _basePos, _type] call ghost_alive_drones_fnc_localPatrol;
+    [_grp, _basePos, _type] call ghost_drones_fnc_localPatrol;
 } else {
     // Defensive SAD ring around the base - intercept intruders. Leave waypoint 0.
     for "_i" from (count (waypoints _grp)) - 1 to 1 step -1 do { deleteWaypoint [_grp, _i] };
@@ -71,4 +71,10 @@ if (_type in ["loiterfixed", "loiterrotor"]) then {
     _cyc setWaypointType "CYCLE";
 };
 
-[_grp, _logic, _type, [_veh], (_cfg get "lifetime"), (_cfg get "debug"), _side] call ghost_alive_drones_fnc_registerGroup;
+[_grp, _logic, _type, [_veh], (_cfg get "lifetime"), (_cfg get "debug"), _side] call ghost_drones_fnc_registerGroup;
+
+// Registered for reaping and per-type counting, but exempt from the SHARED
+// airframe ceiling. A base's garrison is bounded by its own caps; letting a
+// patrol elsewhere on the map exhaust the budget would leave the base silently
+// undefended, and nothing at the base would explain why.
+_grp setVariable ["ghost_drones_uncapped", true];

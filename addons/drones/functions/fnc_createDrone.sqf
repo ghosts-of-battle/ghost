@@ -39,7 +39,7 @@ if (_ground) then {
     _veh = createVehicle [_class, _spawnPos, [], 0, "FLY"];
 };
 if (isNull _veh) exitWith {
-    WARNING_1("ALiVE Drones: failed to create '%1'.",_class);
+    WARNING_1("Drones: failed to create '%1'.",_class);
     [objNull, grpNull]
 };
 
@@ -59,5 +59,13 @@ if (isNull _grp) then {
 
 if (!_ground) then { _veh flyInHeight _alt };
 _veh setVariable [QGVAR(managed), true, true];
+
+// On the side's sensor network. Done HERE rather than in each module because
+// every drone in the mod - patrols, ambient spawns, base defenders, the EW
+// response, strike aircraft - is born through this function, so this is the one
+// place that cannot be forgotten when the next module is written.
+if (GVAR(datalink)) then {
+    [_veh] call EFUNC(common,setDatalink);
+};
 
 [_veh, _grp]

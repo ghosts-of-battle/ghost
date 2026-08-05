@@ -21,6 +21,8 @@ if (!isServer) exitWith {};
 
 params ["_markers", "_count", "_classes", "_rMin", "_rMax"];
 
+if (isNil QGVAR(nextZoneId)) then { GVAR(nextZoneId) = 1 };
+
 if (_classes isEqualTo []) exitWith {
     WARNING("Electronic War Zones: no emitter class set - no emitters spawned.");
 };
@@ -41,8 +43,16 @@ for "_i" from 1 to _count do {
     private _radius = _rMin + random (_rMax - _rMin);
     private _rEff = _radius * JAMMER_EFFECTIVE_FRAC;
 
-    // Entry: [object, effectiveRadius (full jam), falloffRadius (edge of jam)]
-    GVAR(jammers) pushBack [_obj, _rEff, _radius];
+    // Registry entry - see script_component.hpp for the index contract. The
+    // propagation model is stamped per zone at spawn so a later change to the
+    // module attributes never silently rewrites zones already in the field.
+    GVAR(jammers) pushBack [
+        _obj, _rEff, _radius,
+        format [QGVAR(z%1), GVAR(nextZoneId)],
+        "jam", false, getPosASL _obj,
+        [] call FUNC(zoneModel)
+    ];
+    GVAR(nextZoneId) = GVAR(nextZoneId) + 1;
 
     if (GVAR(debug)) then {
         private _mkr = format [QGVAR(jam_%1), count GVAR(jammers)];

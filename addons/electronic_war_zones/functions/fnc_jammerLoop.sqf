@@ -19,44 +19,55 @@
 
 if (isNil QGVAR(jammers)) exitWith {};
 
-private _jammers = GVAR(jammers);
 private _ppos = getPosASL player;
+
+// Everything about WHERE a jammer reaches now lives in FUNC(jamFactor); this
+// loop only decides what to do with the answer. With the model attributes at
+// their defaults the factor is the old inline maths exactly, so TFAR and ACRE
+// see the values they always saw.
+private _radioPower = 0;
+if (GVAR(hasACRE) && GVAR(jamBurnthrough)) then {
+    private _cur = call acre_api_fnc_getCurrentRadio;
+    if (_cur != "") then {
+        private _i = _cur find "_ID_";
+        private _base = if (_i > 0) then { _cur select [0, _i] } else { _cur };
+        private _p = [_base, [_cur] call acre_api_fnc_getPreset, [_cur] call acre_api_fnc_getRadioChannel, "power"] call acre_api_fnc_getPresetChannelField;
+        if (_p isEqualType 0) then { _radioPower = _p };
+    };
+};
+
+private _factor = ([_ppos, _radioPower] call FUNC(jamFactor)) select 0;
 
 private _bestRx = TFAR_RX_FALLOFF_FAR;   // 1 = no jam
 private _bestTx = 1;
 private _bestAcre = ACRE_JAM_FAR;        // 0 = no jam (fraction of ACRE signal removed)
 
-{
-    _x params ["_obj", "_rEff", "_rFall"];
-    if (isNull _obj || {!alive _obj}) then { continue };
-
-    private _d = _ppos distance (getPosASL _obj);
-    if (_d > _rFall) then { continue };
-
-    private _inCore = _d <= _rEff;
-    private _p = if (_inCore) then { 0 } else { (_d - _rEff) / ((_rFall - _rEff) max 1) };
+if (_factor > 0) then {
+    // factor 1 == inside the core; anything less is the falloff band, where
+    // _p is the old 0..1 position across it.
+    private _inCore = _factor >= 1;
+    private _p = 1 - _factor;
 
     if (GVAR(hasTFAR)) then {
-        private _rx = if (_inCore) then {
+        _bestRx = if (_inCore) then {
             TFAR_RX_FULL
         } else {
             [TFAR_RX_FALLOFF_NEAR, TFAR_RX_FALLOFF_FAR, _p] call BIS_fnc_lerp
         };
-        if (_rx > _bestRx) then {
-            _bestRx = _rx;
-            _bestTx = if (_inCore) then { TFAR_TX_FULL } else { 1 / (_rx max 0.0001) };
-        };
+        _bestTx = if (_inCore) then { TFAR_TX_FULL } else { 1 / (_bestRx max 0.0001) };
     };
 
     if (GVAR(hasACRE)) then {
-        private _jf = if (_inCore) then {
+        _bestAcre = if (_inCore) then {
             ACRE_JAM_FULL
         } else {
             [ACRE_JAM_NEAR, ACRE_JAM_FAR, _p] call BIS_fnc_lerp
         };
-        if (_jf > _bestAcre) then { _bestAcre = _jf };
     };
-} forEach _jammers;
+};
+
+// Published for the jamming HUD (Part 3 §3) - no second evaluation there.
+GVAR(localJamFactor) = _factor;
 
 if (GVAR(hasTFAR)) then {
     player setVariable ["tf_receivingDistanceMultiplicator", _bestRx];

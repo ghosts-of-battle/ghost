@@ -29,12 +29,12 @@ private _kitItems = KIT_ITEMS;
 
 private _bases = missionNamespace getVariable [QGVAR(bases), []];
 if (count _bases >= _max) exitWith {
-    [[], ["Patrol Base", 1.2, [1, 0.3, 0.3, 1]], [format ["Patrol base limit reached (%1).", _max]]] remoteExec ["CBA_fnc_notify", _builder];
+    ["Patrol Base", format ["Patrol base limit reached (%1).", _max], [1, 0.3, 0.3, 1]] remoteExec [QEFUNC(notify,notify), _builder];
 };
 
 private _have = [_pos] call FUNC(countKits);
 if (_have < _req) exitWith {
-    [[], ["Patrol Base", 1.2, [1, 0.3, 0.3, 1]], [format ["Not enough kits (found %1, need %2).", _have, _req]]] remoteExec ["CBA_fnc_notify", _builder];
+    ["Patrol Base", format ["Not enough kits (found %1, need %2).", _have, _req], [1, 0.3, 0.3, 1]] remoteExec [QEFUNC(notify,notify), _builder];
 };
 
 // --- Consume: strip kit items from holders, delete kit objects -------------
@@ -50,8 +50,16 @@ if (_have < _req) exitWith {
 { deleteVehicle _x } forEach (nearestObjects [_pos, KIT_OBJECTS, _range]);
 
 // --- Beacon (configurable; marks the location + carries the Unbuild action) -
+// Falls back on a blank setting AND on a class that is not loaded. A missing
+// class would otherwise createVehicle nothing, leaving a base with no beacon and
+// therefore no Unbuild action - a base nobody can take down. The default is
+// ghost's own SatCom mast, which carries a Pack Up action of its own; that action
+// checks the isBase variable set below and refuses, so the mast holding a base
+// together cannot be pocketed out from under it.
 private _beaconClass = missionNamespace getVariable [QGVAR(beaconClass), BASE_BEACON];
-if (_beaconClass isEqualTo "") then { _beaconClass = BASE_BEACON };
+if (_beaconClass isEqualTo "" || {!isClass (configFile >> "CfgVehicles" >> _beaconClass)}) then {
+    _beaconClass = BASE_BEACON;
+};
 private _beacon = createVehicle [_beaconClass, _pos, [], 0, "CAN_COLLIDE"];
 _beacon setDir _dir;
 _beacon setPosATL _pos;
@@ -80,4 +88,4 @@ missionNamespace setVariable [QGVAR(bases), _bases, true];
 // --- On-deploy hook ---------------------------------------------------------
 [missionNamespace getVariable [QGVAR(onDeployCode), ""], [_beacon, _pos, _name, _side, _builder]] call FUNC(runHook);
 
-[[], [_name, 1.2, [0.6, 1, 0.6, 1]], ["patrol base established."]] remoteExec ["CBA_fnc_notify", 0];
+[_name, "Patrol base established.", [0.6, 1, 0.6, 1]] call EFUNC(notify,broadcast);

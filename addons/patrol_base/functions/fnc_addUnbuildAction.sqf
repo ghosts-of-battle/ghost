@@ -22,7 +22,7 @@ _beacon addAction [
     {
         params ["_target"];
         [_target] remoteExec [QFUNC(serverUnbuild), 2];
-        [[], ["Patrol Base", 1.1, [1, 0.8, 0.3, 1]], ["Unbuilding..."]] call CBA_fnc_notify;
+        ["Patrol Base", "Unbuilding...", [1, 0.8, 0.3, 1]] call EFUNC(notify,notify);
     },
     nil,
     6,

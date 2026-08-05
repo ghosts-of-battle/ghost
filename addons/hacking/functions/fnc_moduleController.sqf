@@ -3,9 +3,14 @@
 Function: ghost_hacking_fnc_moduleController
 
 Description:
-    Registers everything synchronised to a Hack Intel Targets module as the intel
-    pool. Each synced object carries its own marker style, so several modules can
-    run pools that look different.
+    Registers a Hack Intel Targets module. Everything synchronised to it becomes
+    the intel pool - objects directly, and Intel Target Spots as candidates for
+    the module's Pick draw. Each target carries its own marker style, so several
+    modules can run pools that look different.
+
+    Only registers; FUNC(resolveTargets) does the work a frame later. Module
+    initialisation order is not guaranteed, so reading synchronizedObjects here
+    could miss spots that have not run yet.
 
     Server only; the registry is what FUNC(markNearestTarget) searches.
 
@@ -28,34 +33,6 @@ params [
 if (!_activated) exitWith {};
 if (isNull _logic) exitWith {};
 
-private _targets = synchronizedObjects _logic;
-if (_targets isEqualTo []) exitWith {
-    diag_log text "[ghost_hacking] intel module placed with nothing synced to it - no targets registered";
-};
+GVAR(pendingPools) = (missionNamespace getVariable [QGVAR(pendingPools), []]) + [_logic];
 
-private _style = [
-    _logic getVariable ["marker_text", "Signal Intercept"],
-    _logic getVariable ["marker_type", "hd_dot"],
-    _logic getVariable ["marker_colour", "ColorRed"],
-    _logic getVariable ["max_range", 0],
-    _logic getVariable ["one_shot", true]
-];
-
-private _pool = missionNamespace getVariable [QGVAR(intelTargets), []];
-{
-    _x setVariable [QGVAR(intelStyle), _style, true];
-    _x setVariable [QGVAR(intelMarked), false, true];
-    _pool pushBackUnique _x;
-} forEach _targets;
-
-missionNamespace setVariable [QGVAR(intelTargets), _pool, true];
-
-// One watcher for the whole pool, however many modules are placed.
-if (isNil QGVAR(watchHandle)) then {
-    GVAR(watchHandle) = [FUNC(watchTargets), TARGET_WATCH_INTERVAL, []] call CBA_fnc_addPerFrameHandler;
-};
-
-diag_log text format [
-    "[ghost_hacking] intel module registered %1 target(s), pool now %2",
-    count _targets, count _pool
-];
+[] call FUNC(scheduleResolve);

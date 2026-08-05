@@ -1,0 +1,10 @@
+PREP(btnSend);
+PREP(fileReport);
+PREP(listFileBoxes);
+PREP(listGroups);
+PREP(onTicAlert);
+PREP(postAliveReport);
+PREP(quickTic);
+PREP(readFileBox);
+PREP(resolveGroupToken);
+PREP(sendTicAlert);

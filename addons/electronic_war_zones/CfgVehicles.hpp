@@ -1,6 +1,6 @@
 // MODERN 3DEN attribute system (class Attributes) - required for custom
 // `control` classes (faction dropdown + response-drone pickers). See
-// alive_drones for the rationale. expression sets the exact logic variable
+// drones for the rationale. expression sets the exact logic variable
 // the module reads.
 
 #define AEDIT(NAME,TYPE,DEF,LBL,DESC) \
@@ -88,6 +88,20 @@ class CfgVehicles {
                 };
             };
 
+            // --- AI ambient emitters ---
+            ABOOL(ai_chatter,"'false'","AI Radio Chatter","On: enemy AI transmit periodically, so direction finding hunts them as well as players. Off (default) = only human key-ups are detectable.");
+            AEDIT(ai_chatter_interval,"NUMBER","10","AI Chatter Interval (sec)","How often a transmission is attempted near players.");
+
+            // --- Part 3 propagation model (all default to legacy behaviour) ---
+            ABOOL(jam_los,"'false'","Jamming: Terrain Blocks","On: a hill between the emitter and the receiver stops the jamming. Off (default) = the pre-model behaviour, jamming ignores terrain.");
+            ABOOL(jam_burnthrough,"'false'","Jamming: Power Burn-Through","On: a stronger radio holds a link deeper into the field. Uses the live ACRE channel power.");
+            AEDIT(jam_burnthrough_ref,"NUMBER","500","Jamming: Burn-Through Reference (mW)","Radio power that fully resists jamming. Lower = burn-through is easier.");
+            AEDIT(jam_curve,"STRING","'LINEAR'","Jamming: Falloff Curve","LINEAR (default, pre-model behaviour) or INVSQ for a sharper edge.");
+            AEDIT(jam_duty_cycle,"NUMBER","100","Jamming: Duty Cycle (%)","Percentage of the time emitters are transmitting. 100 = always on.");
+            ABOOL(jam_cone_enable,"'false'","Jamming: Directional","On: each emitter gets a random bearing and arc rolled once at spawn, and only jams inside it.");
+            ABOOL(jam_uavs,"'false'","Jamming: Affects UAVs","On: these zones also interfere with drones (Part 3 §4).");
+            AEDIT(rdf_scan_range,"NUMBER","3000","RDF Scan Range (m)","How far the handheld scanner can detect emitters.");
+
             AEDIT(response_personnel_classes,"STRING","'O_UAV_02_CAS_F'","Response: Anti-Personnel Classes","Comma-separated anti-personnel response drone classnames; one is picked at random. Blank disables it.");
             AEDIT(response_personnel_count,"NUMBER","2","Response: Anti-Personnel Count","Airframes of the anti-personnel type per response wave.");
             AEDIT(response_vehicle_classes,"STRING","'O_UAV_02_CAS_F'","Response: Anti-Vehicle Classes","Comma-separated anti-vehicle response drone classnames; one is picked at random. Blank disables it.");
@@ -100,7 +114,11 @@ class CfgVehicles {
         };
 
         class ModuleDescription: ModuleDescription {
-            description = "OPFOR electronic-warfare zones: emitters jam nearby radios (TFAR and ACRE2, graduated by range) and, together with recon drones, hunt long-range transmissions - spawning a drone response. Both TFAR and ACRE2 long-range traffic is jammed + tracked; short-range squad nets are safe. Requires the ALiVE Drones addon.";
+            description = "OPFOR electronic-warfare zones: emitters jam nearby radios (TFAR and ACRE2, graduated by range) and, together with recon drones, hunt long-range transmissions - spawning a drone response. Both TFAR and ACRE2 long-range traffic is jammed + tracked; short-range squad nets are safe. Requires the Drones addon.";
         };
     };
+
+    // No self-interaction for direction finding. A set that is switched on is
+    // sweeping, so carrying one IS the interaction - FUNC(rdfTick) runs it and
+    // speaks up when the picture changes.
 };

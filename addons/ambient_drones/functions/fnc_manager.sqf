@@ -17,7 +17,7 @@ params ["_args", "_handle"];
 _args params ["_logic"];
 
 if (isNull _logic) exitWith { [_handle] call CBA_fnc_removePerFrameHandler };
-if (isNil "ghost_alive_drones_fleet") exitWith {};
+if (isNil "ghost_drones_fleet") exitWith {};
 
 private _cfg = _logic getVariable [QGVAR(cfg), objNull];
 private _typeCfg = _logic getVariable [QGVAR(typeCfg), objNull];
@@ -58,9 +58,9 @@ private _weighted = [];
     if (_classes isEqualTo [] || {_cap <= 0} || {_prio <= 0}) then { continue };
 
     private _cur = {
-        (_x getVariable ["ghost_alive_drones_logic", objNull]) isEqualTo _logic &&
-        {(_x getVariable ["ghost_alive_drones_dtype", ""]) isEqualTo _type}
-    } count ghost_alive_drones_fleet;
+        (_x getVariable ["ghost_drones_logic", objNull]) isEqualTo _logic &&
+        {(_x getVariable ["ghost_drones_dtype", ""]) isEqualTo _type}
+    } count ghost_drones_fleet;
     if (_cur >= _cap) then { continue };
 
     _weighted pushBack _type;

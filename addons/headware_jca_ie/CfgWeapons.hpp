@@ -50,6 +50,10 @@ class CfgWeapons {
     class JCA_H_HelmetHBK_ear_olive_F;
 
     class GVAR(JCA_H_HelmetHBK_black_F): JCA_H_HelmetHBK_black_F {
+        // Every helmet in this mod carries a camera: cTab auto-detects
+        // ctab_camera on any headgear, which beats the userconfig array -
+        // no server file to edit and nothing for a mission to override.
+        ctab_camera = 1;
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
@@ -57,6 +61,10 @@ class CfgWeapons {
         GHOST_HELMET_ITEMINFO
     };
     class GVAR(JCA_H_HelmetHBK_chops_black_F): JCA_H_HelmetHBK_chops_black_F {
+        // Every helmet in this mod carries a camera: cTab auto-detects
+        // ctab_camera on any headgear, which beats the userconfig array -
+        // no server file to edit and nothing for a mission to override.
+        ctab_camera = 1;
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
@@ -64,6 +72,10 @@ class CfgWeapons {
         GHOST_HELMET_CHOPS_ITEMINFO
     };
     class GVAR(JCA_H_HelmetHBK_ear_black_F): JCA_H_HelmetHBK_ear_black_F {
+        // Every helmet in this mod carries a camera: cTab auto-detects
+        // ctab_camera on any headgear, which beats the userconfig array -
+        // no server file to edit and nothing for a mission to override.
+        ctab_camera = 1;
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
@@ -71,6 +83,10 @@ class CfgWeapons {
         GHOST_HELMET_ITEMINFO
     };
     class GVAR(JCA_H_HelmetHBK_headset_black_F): JCA_H_HelmetHBK_headset_black_F {
+        // Every helmet in this mod carries a camera: cTab auto-detects
+        // ctab_camera on any headgear, which beats the userconfig array -
+        // no server file to edit and nothing for a mission to override.
+        ctab_camera = 1;
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
@@ -78,6 +94,10 @@ class CfgWeapons {
         GHOST_HELMET_ITEMINFO
     };
     class GVAR(JCA_H_HelmetHBK_olive_F): JCA_H_HelmetHBK_olive_F {
+        // Every helmet in this mod carries a camera: cTab auto-detects
+        // ctab_camera on any headgear, which beats the userconfig array -
+        // no server file to edit and nothing for a mission to override.
+        ctab_camera = 1;
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
@@ -85,6 +105,10 @@ class CfgWeapons {
         GHOST_HELMET_ITEMINFO
     };
     class GVAR(JCA_H_HelmetHBK_chops_olive_F): JCA_H_HelmetHBK_chops_olive_F {
+        // Every helmet in this mod carries a camera: cTab auto-detects
+        // ctab_camera on any headgear, which beats the userconfig array -
+        // no server file to edit and nothing for a mission to override.
+        ctab_camera = 1;
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
@@ -92,6 +116,10 @@ class CfgWeapons {
         GHOST_HELMET_CHOPS_ITEMINFO
     };
     class GVAR(JCA_H_HelmetHBK_headset_olive_F): JCA_H_HelmetHBK_headset_olive_F {
+        // Every helmet in this mod carries a camera: cTab auto-detects
+        // ctab_camera on any headgear, which beats the userconfig array -
+        // no server file to edit and nothing for a mission to override.
+        ctab_camera = 1;
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
@@ -99,6 +127,10 @@ class CfgWeapons {
         GHOST_HELMET_ITEMINFO
     };
     class GVAR(JCA_H_HelmetHBK_sand_F): JCA_H_HelmetHBK_sand_F {
+        // Every helmet in this mod carries a camera: cTab auto-detects
+        // ctab_camera on any headgear, which beats the userconfig array -
+        // no server file to edit and nothing for a mission to override.
+        ctab_camera = 1;
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
@@ -106,6 +138,10 @@ class CfgWeapons {
         GHOST_HELMET_ITEMINFO
     };
     class GVAR(JCA_H_HelmetHBK_chops_sand_F): JCA_H_HelmetHBK_chops_sand_F {
+        // Every helmet in this mod carries a camera: cTab auto-detects
+        // ctab_camera on any headgear, which beats the userconfig array -
+        // no server file to edit and nothing for a mission to override.
+        ctab_camera = 1;
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
@@ -113,6 +149,10 @@ class CfgWeapons {
         GHOST_HELMET_CHOPS_ITEMINFO
     };
     class GVAR(JCA_H_HelmetHBK_ear_sand_F): JCA_H_HelmetHBK_ear_sand_F {
+        // Every helmet in this mod carries a camera: cTab auto-detects
+        // ctab_camera on any headgear, which beats the userconfig array -
+        // no server file to edit and nothing for a mission to override.
+        ctab_camera = 1;
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
@@ -120,6 +160,10 @@ class CfgWeapons {
         GHOST_HELMET_ITEMINFO
     };
     class GVAR(JCA_H_HelmetHBK_headset_sand_F): JCA_H_HelmetHBK_headset_sand_F {
+        // Every helmet in this mod carries a camera: cTab auto-detects
+        // ctab_camera on any headgear, which beats the userconfig array -
+        // no server file to edit and nothing for a mission to override.
+        ctab_camera = 1;
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
@@ -127,6 +171,10 @@ class CfgWeapons {
         GHOST_HELMET_ITEMINFO
     };
     class GVAR(JCA_H_HelmetHBK_ear_olive_F): JCA_H_HelmetHBK_ear_olive_F {
+        // Every helmet in this mod carries a camera: cTab auto-detects
+        // ctab_camera on any headgear, which beats the userconfig array -
+        // no server file to edit and nothing for a mission to override.
+        ctab_camera = 1;
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;

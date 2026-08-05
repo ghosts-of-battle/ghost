@@ -3,7 +3,7 @@
  * Author: Ghost
  * Spawn one drone of a type in the ring [minDist..radius] around a target player,
  * outside any blacklist zone, then send it to hunt the player's area. Registered
- * into the shared ALiVE Drones fleet so the reaper owns its lifetime / ammo-despawn.
+ * into the shared Drones fleet so the reaper owns its lifetime / ammo-despawn.
  *
  * Arguments:
  * 0: Logic <OBJECT>
@@ -17,7 +17,7 @@
 
 if (!isServer) exitWith {};
 
-params ["_logic", "_target", "_type"];
+params ["_logic", "_target", "_type", ["_radiusOverride", -1], ["_minDistOverride", -1]];
 
 private _cfg = _logic getVariable [QGVAR(cfg), objNull];
 private _typeCfg = _logic getVariable [QGVAR(typeCfg), objNull];
@@ -28,8 +28,8 @@ if (isNull _target) exitWith {};
 if (_classes isEqualTo []) exitWith {};
 
 private _side = _cfg get "side";
-private _radius = _cfg get "radius";
-private _minDist = _cfg get "minDist";
+private _radius = [_cfg get "radius", _radiusOverride] select (_radiusOverride > 0);
+private _minDist = [_cfg get "minDist", _minDistOverride] select (_minDistOverride >= 0);
 private _blacklist = _cfg get "blacklist";
 private _altMin = _cfg get "altMin";
 private _altMax = _cfg get "altMax";
@@ -58,11 +58,11 @@ if (_pos isEqualTo []) exitWith {   // stuck inside blacklist, skip this spawn
 };
 
 // Shared airframe-ceiling gate.
-if !([1] call ghost_alive_drones_fnc_reserveAirframes) exitWith {
+if !([1] call ghost_drones_fnc_reserveAirframes) exitWith {
     if (_dbg) then { diag_log text "[ghost_ambient_drones] spawn skipped - global airframe ceiling reached" };
 };
 
-([selectRandom _classes, _pos, _side, _alt, grpNull, _ground] call ghost_alive_drones_fnc_createDrone) params ["_veh", "_grp"];
+([selectRandom _classes, _pos, _side, _alt, grpNull, _ground] call ghost_drones_fnc_createDrone) params ["_veh", "_grp"];
 if (isNull _veh) exitWith {
     if (_dbg) then { diag_log text format ["[ghost_ambient_drones] createVehicle returned null for '%1' - class missing?", _type] };
 };
@@ -70,7 +70,7 @@ if (isNull _veh) exitWith {
 private _anchor = getPosATL _target;
 if (_type in ["loiterfixed", "loiterrotor"]) then {
     // Loiter munitions fly a CAP over the player's area (and despawn when out of ammo).
-    [_grp, _anchor, _type] call ghost_alive_drones_fnc_localPatrol;
+    [_grp, _anchor, _type] call ghost_drones_fnc_localPatrol;
 } else {
     // Everything else runs in and hunts the player's area. (Index 0 waypoint left intact.)
     _grp setBehaviour "AWARE";
@@ -85,4 +85,4 @@ if (_type in ["loiterfixed", "loiterrotor"]) then {
 };
 
 // Reaper now owns lifetime (non-loiter) / out-of-ammo (loiter) despawn + watchdog.
-[_grp, _logic, _type, [_veh], (_cfg get "lifetime"), (_cfg get "debug"), _side] call ghost_alive_drones_fnc_registerGroup;
+[_grp, _logic, _type, [_veh], (_cfg get "lifetime"), (_cfg get "debug"), _side] call ghost_drones_fnc_registerGroup;

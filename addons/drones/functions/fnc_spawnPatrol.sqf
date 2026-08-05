@@ -47,7 +47,7 @@ private _alt = switch (_tier) do {
 private _spawnMarker = selectRandom _markers;
 private _spawnPos = [[_spawnMarker]] call BIS_fnc_randomPos;
 if (_spawnPos isEqualTo [0,0,0]) exitWith {
-    WARNING_1("ALiVE Drones: BIS_fnc_randomPos found nothing in spawn marker '%1'.",_spawnMarker);
+    WARNING_1("Drones: BIS_fnc_randomPos found nothing in spawn marker '%1'.",_spawnMarker);
     grpNull
 };
 
