@@ -1,7 +1,11 @@
-# About
+# UI Tweaks
 
-Increases the scale of the UI Box for Briefings.
+`ghost_ui_tweaks`
 
-### Author
+Interface adjustments across the base-game UI.
 
-- [Drofseh](https://github.com/Drofseh)
+<!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
+
+## Requires
+
+- `A3_Ui_F` _(external)_

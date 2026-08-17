@@ -4,4 +4,6 @@ if (is3DEN) exitWith {};
 
 [QGVAR(enableSafety), player] call CBA_fnc_localEvent;
 
-call FUNC(grenadeBindWarn);
+// The grenade-bind warner is safe_grenades' job now - this addon shipped a
+// byte-identical copy with its OWN don't-ask-again flag, so players got two
+// stacked modals and dismissing one forever still left the other.

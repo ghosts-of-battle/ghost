@@ -1,8 +1,8 @@
 [
     QGVAR(enableAddon),
     "CHECKBOX",
-    [LSTRING(enableAddon), LSTRING(enableAddon_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Enable Back To Game", "Activate teleport and loadout restore after reconnect."],
+    ["Ghosts of Battle", "Ghosts of Battle - Back To Game"],
     true,
     true
 ] call CBA_fnc_addSetting;
@@ -10,8 +10,8 @@
 [
     QGVAR(teleportToLeader),
     "CHECKBOX",
-    [LSTRING(TeleportToLeader), LSTRING(TeleportToLeader_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Teleport to leader", "Allow player teleportation to his group leader."],
+    ["Ghosts of Battle", "Ghosts of Battle - Back To Game"],
     true,
     true
 ] call CBA_fnc_addSetting;
@@ -19,8 +19,8 @@
 [
     QGVAR(teleportToVehicle),
     "CHECKBOX",
-    [LSTRING(TeleportToVehicle), LSTRING(TeleportToVehicle_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Teleport to vehicle", "Allow player teleportation to his last vehicle or group leader vehicle."],
+    ["Ghosts of Battle", "Ghosts of Battle - Back To Game"],
     true,
     true
 ] call CBA_fnc_addSetting;
@@ -28,8 +28,8 @@
 [
     QGVAR(removeBody),
     "CHECKBOX",
-    [LSTRING(RemoveBody), LSTRING(RemoveBody_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Remove body", "Removes bodies of alive people who disconnected."],
+    ["Ghosts of Battle", "Ghosts of Battle - Back To Game"],
     true,
     true
 ] call CBA_fnc_addSetting;

@@ -106,12 +106,6 @@ class CfgWeapons {
     class sps_black_hornet_01_Static_F {
         ACE_isTool = 1;
     };
-    class ItemcTabMisc: CBA_MiscItem{
-        ACE_isTool = 1;
-    };
-    class ItemAndroidMisc: CBA_MiscItem {
-        ACE_isTool = 1;
-    };
     class ItemMicroDAGRMisc: CBA_MiscItem {
         ACE_isTool = 1;
     };

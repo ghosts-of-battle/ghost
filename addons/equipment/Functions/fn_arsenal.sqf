@@ -87,7 +87,7 @@ if (isNil "_radios") then {
 ] call ACEFUNC(arsenal,addRightPanelButton);
 
 [
-    ["ACE_ATragMX","ALIVE_Tablet","ItemcTabHCam","ACE_HuntIR_monitor","ACE_Kestrel4500","ItemMicroDAGRMisc","ACE_microDAGR","ItemcTabMisc","ItemAndroidMisc","ghost_ctab_s7_s23_blk","ghost_ctab_s7_s23_blk_misc","ghost_ctab_s7_s23_tan","ghost_ctab_s7_s23_tan_misc","ghost_ctab_s7_gft","ghost_ctab_s7_gft_misc","ghost_hacking_tabletItem","ghost_hacking_scannerItem","ghost_satcom_item"],
+    ["ACE_ATragMX","ALIVE_Tablet","ACE_HuntIR_monitor","ACE_Kestrel4500","ItemMicroDAGRMisc","ACE_microDAGR","ghost_hacking_terminalItem","ghost_hacking_scannerItem","ghost_satcom_item"],
     "Tech",
     "\a3\ui_f\data\igui\cfg\simpletasks\types\Use_ca.paa"
 ] call ACEFUNC(arsenal,addRightPanelButton);

@@ -1,7 +1,7 @@
 /*
-	File: fn_zoomSliderChanged.sqf
-	Author: Dom
-	Description: Handles an update to the view distance options
+    File: fn_zoomSliderChanged.sqf
+    Author: Dom
+    Description: Handles an update to the view distance options
 */
 params ["_control","_newValue","_type"];
 

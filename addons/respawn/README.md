@@ -1,30 +1,44 @@
-## Respawn
+# Respawn
 
-Respawn template with live customization available through CBA settings.
+`ghost_respawn`
 
-### Enabling in a mission
+Respawn handling, including the force-respawn call a trigger can make:
 
-Following config needs to be added to a mission config to allow this system to work properly:
+    [west] call ghost_respawn_fnc_forceRespawn;
 
-```cpp
-respawn = 3;
-respawnDelay = 1e10;
-respawnOnStart = -1;
-respawnTemplates[] = {"ghost_respawn_default", "Counter"};
-```
+Only the dead are affected, which is why it is safe to fire from a trigger that
+may run more than once.
 
-## Respawn delay change
+<!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
 
-You can change respawn delay at any time during the mission. If someone was already waiting for respawn, his timer will get adjusted to account for already spent time waiting.
+## Requires
 
-## Disabling respawn
+- `ghost_common`
+- `ghost_notify`
 
-Respawn can be freely enabled/disabled. When it gets disabled and there were players waiting, their time spent waiting is saved and in case respawn gets reenabled, timer restarts where it stopped (supports respawn delay change in meantime).
+## Ships
 
-## Forcing respawn
+9 functions.
 
-You can always force respawn using `"ghost_respawn_force"` server/local event (depending on who you want to respawn, all or only some players).
+## CBA settings
 
-### Authors
+| Setting | Type | Name |
+|---|---|---|
+| `ghost_respawn_enabled` | CHECKBOX | Enable respawn |
+| `ghost_respawn_time` | SLIDER | Respawn delay |
 
-- [3Mydlo3](http://github.com/3Mydlo3)
+## Functions
+
+<details><summary>9</summary>
+
+- `ghost_respawn_fnc_addZeusModules`
+- `ghost_respawn_fnc_adjustTime`
+- `ghost_respawn_fnc_adjustTimeLocal`
+- `ghost_respawn_fnc_disable`
+- `ghost_respawn_fnc_enable`
+- `ghost_respawn_fnc_forceRespawn`
+- `ghost_respawn_fnc_onPlayerKilled`
+- `ghost_respawn_fnc_onPlayerRespawn`
+- `ghost_respawn_fnc_toggle`
+
+</details>

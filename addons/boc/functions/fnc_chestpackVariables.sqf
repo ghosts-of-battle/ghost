@@ -17,10 +17,12 @@
 params ["_unit"];
 
 private _var = _unit getVariable [QGVAR(chestpack), nil];
-private _variables = +(_var select 3);
 
-//return objNull
-if (isNil "_var" or isNil "_variables") exitWith {[]};
+// Guard before the select - see fnc_chestpackContainer.
+if (isNil "_var") exitWith {[]};
+
+private _variables = +(_var select 3);
+if (isNil "_variables") exitWith {[]};
 
 //return items
 _variables

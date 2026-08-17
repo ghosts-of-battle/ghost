@@ -4,9 +4,9 @@ if (EGVAR(common,aceFinger)) then {
     private _keybind = [_aceKeybind, [41, [true, false, false]]] select isNil "_aceKeybind";
 
     [
-        LLSTRING(DisplayName),
+        "Ghosts of Battle - Pointing",
         QGVAR(pointVehicle),
-        [LLSTRING(Key_PointVehicle), LLSTRING(Key_PointVehicle_Description)],
+        ["Point direction (vehicle)", "Point direction to the rest of the current vehicle crew."],
         {
             if (!GVAR(vehicleEnabled)) exitWith {false};
 

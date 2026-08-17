@@ -1,6 +1,6 @@
 class ace_arsenal_actions {
     class ADDON {
-        displayName = CSTRING(ModuleOnChest_Displayname);
+        displayName = "Backpack on Chest";
         condition = QUOTE((_this select 0) call FUNC(canMovePack) && {backpack (_this select 0) != '' || {(_this select 0) call FUNC(chestpack) != ''}});
         scopeEditor = 0; // editor modules exist for chestpacks
         tabs[] = {5};
@@ -9,17 +9,17 @@ class ace_arsenal_actions {
             textStatement = QUOTE(getText (configFile >> 'CfgVehicles' >> (_this select 0) call FUNC(chestpack) >> 'displayName'));
         };
         class GVAR(onChest) {
-            label = CSTRING(OnChest);
+            label = "Put backpack on chest";
             condition = QUOTE((_this select 0) call FUNC(canMovePack) && {backpack (_this select 0) != ''} && {(_this select 0) call FUNC(chestpack) == ''});
             statement = QUOTE((_this select 0) call FUNC(actionOnChest));
         };
         class GVAR(onBack) {
-            label = CSTRING(OnBack);
+            label = "Put backpack on back";
             condition = QUOTE((_this select 0) call FUNC(canMovePack) && {backpack (_this select 0) == ''} && {(_this select 0) call FUNC(chestpack) != ''});
             statement = QUOTE((_this select 0) call FUNC(actionOnBack));
         };
         class GVAR(swap) {
-            label = CSTRING(Swap);
+            label = "Swap rucksacks";
             condition = QUOTE((_this select 0) call FUNC(canMovePack) && {backpack (_this select 0) != ''} && {(_this select 0) call FUNC(chestpack) != ''});
             statement = QUOTE((_this select 0) call FUNC(actionSwap));
         };

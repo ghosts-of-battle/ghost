@@ -1,0 +1,13 @@
+PREP(getZones);
+PREP(jamFactor);
+PREP(jamHud);
+PREP(jammerLoop);
+PREP(productLocateJammer);
+PREP(pruneJammers);
+PREP(publishZones);
+PREP(spawnObjectiveJammers);
+PREP(spawnTempZone);
+PREP(spawnZoneAt);
+PREP(zoneModel);
+PREP(moduleController);
+PREP(start);

@@ -1,12 +1,25 @@
-### safeboating
+# Safeboating
 
-Prevents excessive damage when bumping your boat into thingies.
+`ghost_safeboating`
 
-#### Maintainer(s)
+Boats behave predictably instead of launching their occupants.
 
-* Fusselwurm
+<!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
 
-#### Description
+## Requires
 
-In Arma3, You can insta-die when you gently float your rubber boat against a mangrove sapling.
-This module aims to prevent that kind of shit.
+- `ghost_main`
+
+## Ships
+
+3 functions.
+
+## Functions
+
+<details><summary>3</summary>
+
+- `ghost_safeboating_fnc_addHandleDamageBoat`
+- `ghost_safeboating_fnc_handleDamageBoat`
+- `ghost_safeboating_fnc_spec`
+
+</details>

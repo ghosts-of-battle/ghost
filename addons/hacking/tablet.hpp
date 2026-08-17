@@ -96,7 +96,7 @@ class GVAR(tablet) {
             class Attributes { font = "RobotoCondensed"; color = "#9CAABA"; align = "left"; };
         };
         CARD(0); CARD(1); CARD(2); CARD(3); CARD(4); CARD(5);
-        INTELBTN(0); INTELBTN(1); INTELBTN(2); INTELBTN(3); INTELBTN(4);
+        INTELBTN(0); INTELBTN(1); INTELBTN(2); INTELBTN(3); INTELBTN(4); INTELBTN(5); INTELBTN(6); INTELBTN(7); INTELBTN(8);
         class Status: RscStructuredText {
             idc = IDC_TAB_STATUS;
             x = 0; y = 0; w = 0; h = 0;

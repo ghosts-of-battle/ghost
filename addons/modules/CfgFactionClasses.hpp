@@ -1,7 +1,10 @@
 class CfgFactionClasses {
     class NO_CATEGORY;
-    class ADDON: NO_CATEGORY {
-        displayName = "5th Cav Modules";
-        // displayName = CSTRING(Category_DisplayName);
+
+    // One category. With the framework collapsed to four module classes, four
+    // categories held one module each - a folder per file. Everything ghost
+    // places in Eden lives here.
+    class ghost_modules_cat: NO_CATEGORY {
+        displayName = "Ghost";
     };
 };

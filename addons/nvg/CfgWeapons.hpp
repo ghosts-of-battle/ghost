@@ -195,6 +195,73 @@ class CfgWeapons {
         ACE_nightvision_generation = 4;
         ACE_nightVision_radBlur = 0;
     };
+
+    // --- EF LOW PROFILE NVG -------------------------------------------------
+    //
+    // FULL SCREEN, which is the whole reason these exist. The EF sets ship with
+    // a modelled optic and ACE draws a four-tube mask over it, so what a player
+    // gets is a picture of goggles rather than a view through them. Blanking
+    // modelOptics to the empty reticle and clearing every ACE mask value gives
+    // the edge-to-edge image the rest of the ghost NVGs already have.
+    //
+    // The MODEL is still EF's - these inherit the real thing, so a man wearing
+    // one still looks like he is wearing one. Only what he sees changes.
+    //
+    // The T variants keep their thermal channel. Losing it would make the pair
+    // pointless: TI is the only reason to carry the heavier set.
+    class EF_LPNVG;
+    class EF_LPNVG_Tan;
+    class EF_LPNVG_T;
+    class EF_LPNVG_T_Tan;
+
+    class GVAR(lpnvg_blk): EF_LPNVG {
+        displayName = "[Ghost] LP NVG";
+        visionMode[] = {"Normal", "NVG"};
+        modelOptics = "\A3\weapons_f\reticle\optics_empty.p3d";
+        ACE_nightVision_blur = 0;
+        ACE_nightvision_bluRadius = 0;
+        ACE_nightvision_border = "";
+        ACE_nightvision_eyeCups = 0;
+        ACE_nightVision_grain = 0;
+        ACE_nightvision_generation = 4;
+        ACE_nightVision_radBlur = 0;
+    };
+    class GVAR(lpnvg_tan): EF_LPNVG_Tan {
+        displayName = "[Ghost] LP NVG (Tan)";
+        visionMode[] = {"Normal", "NVG"};
+        modelOptics = "\A3\weapons_f\reticle\optics_empty.p3d";
+        ACE_nightVision_blur = 0;
+        ACE_nightvision_bluRadius = 0;
+        ACE_nightvision_border = "";
+        ACE_nightvision_eyeCups = 0;
+        ACE_nightVision_grain = 0;
+        ACE_nightvision_generation = 4;
+        ACE_nightVision_radBlur = 0;
+    };
+    class GVAR(lpnvgTI_blk): EF_LPNVG_T {
+        displayName = "[Ghost] LP NVG TI";
+        visionMode[] = {"Normal", "NVG", "TI"};
+        modelOptics = "\A3\weapons_f\reticle\optics_empty.p3d";
+        ACE_nightVision_blur = 0;
+        ACE_nightvision_bluRadius = 0;
+        ACE_nightvision_border = "";
+        ACE_nightvision_eyeCups = 0;
+        ACE_nightVision_grain = 0;
+        ACE_nightvision_generation = 4;
+        ACE_nightVision_radBlur = 0;
+    };
+    class GVAR(lpnvgTI_tan): EF_LPNVG_T_Tan {
+        displayName = "[Ghost] LP NVG TI (Tan)";
+        visionMode[] = {"Normal", "NVG", "TI"};
+        modelOptics = "\A3\weapons_f\reticle\optics_empty.p3d";
+        ACE_nightVision_blur = 0;
+        ACE_nightvision_bluRadius = 0;
+        ACE_nightvision_border = "";
+        ACE_nightvision_eyeCups = 0;
+        ACE_nightVision_grain = 0;
+        ACE_nightvision_generation = 4;
+        ACE_nightVision_radBlur = 0;
+    };
 };
 
 

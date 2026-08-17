@@ -3,7 +3,7 @@ class CfgRespawnTemplates
     // Class used in respawnTemplates entry
     class GVAR(default)
     {
-        displayName = CSTRING(DisplayName);
+        displayName = "Ghosts of Battle - Respawn";
         onPlayerKilled = QFUNC(onPlayerKilled);
         onPlayerRespawn = QFUNC(onPlayerRespawn);
         respawnDelay = 120;

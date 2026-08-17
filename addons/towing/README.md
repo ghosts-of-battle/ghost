@@ -1,7 +1,18 @@
-## Towing
+# Towing
 
-Adds ACE ropes for towing to inventory of land vehicles.
+`ghost_towing`
 
-### Authors
+Vehicle towing.
 
-- [veteran29](http://github.com/veteran29)
+<!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
+
+## Requires
+
+- `ghost_common`
+
+## CBA settings
+
+| Setting | Type | Name |
+|---|---|---|
+| `ghost_towing_addToHeavyDutyVehicles` | CHECKBOX | Add ropes to heavy duty vehicles |
+| `ghost_towing_addToCars` | CHECKBOX | Add ropes to cars |

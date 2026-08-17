@@ -3,21 +3,12 @@
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {
-            "ghost_moduleHackTargets",
-            "ghost_moduleHackTargetSpot",
-            "ghost_moduleHacking",
-            "ghost_moduleRemoteHack"
-        };
-        weapons[] = {
-            QGVAR(tabletItem),
-            QGVAR(scannerItem)
-        };
+        units[] = {QGVAR(drop)};
+        weapons[] = {QGVAR(terminalItem), QGVAR(scannerItem), QGVAR(intelItem), QGVAR(intelMap), QGVAR(intelGps), QGVAR(dropItem)};
         requiredVersion = REQUIRED_VERSION;
         // ace_interact_menu + ace_common for the self-interaction + progress bar.
-        // ALiVE (ALIVE_fnc_getNearProfiles, to fold despawned garrisons into the
-        // Local Picture) and cTab (ItemcTab etc.) are soft dependencies checked
-        // at runtime, so this loads without them.
+        // The terminal and the scanner are this addon's own items now, so there
+        // is nothing left to check for at runtime.
         requiredAddons[] = {
             "ghost_main",
             "ace_interact_menu",
@@ -37,3 +28,4 @@ class CfgPatches {
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "tablet.hpp"
+#include "CfgUIGrids.hpp"

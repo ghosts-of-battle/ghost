@@ -1,6 +1,6 @@
 class ACEX_Fortify_Presets {
     class GVAR(green) {
-        displayName = "61st Green";
+        displayName = "Ghost Green";
         objects[] = {
             {"Land_BagFence_01_round_green_F", 5, "bigGreen"},
             {"Land_BagFence_01_short_green_F", 5, "bigGreen"},
@@ -32,7 +32,7 @@ class ACEX_Fortify_Presets {
 
     };
     class GVAR(tan) {
-        displayName = "61st Tan";
+        displayName = "Ghost Tan";
         objects[] = {
             {"Land_BagFence_Round_F", 5},
             {"Land_BagFence_Short_F", 5},

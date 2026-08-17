@@ -1,7 +1,17 @@
-## Friendly_fire
+# Friendly Fire
 
-Handles friendly fire incident logging.
+`ghost_friendly_fire`
 
-### Authors
+What happens when somebody shoots their own side.
 
-- [veteran29](http://github.com/veteran29)
+<!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
+
+## Requires
+
+- `ghost_common`
+
+## CBA settings
+
+| Setting | Type | Name |
+|---|---|---|
+| `ghost_friendly_fire_loggingEnabled` | CHECKBOX | Friendly fire logging |

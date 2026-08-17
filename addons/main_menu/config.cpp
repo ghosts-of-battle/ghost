@@ -15,7 +15,13 @@ class CfgPatches {
     };
 };
 
+class CfgCommands {
+    allowedHTMLLoadURIs[] += {
+        URL
+    };
+};
+
+
 #include "CfgEventHandlers.hpp"
-#include "CfgMainMenuSpotlight.hpp"
 #include "CfgMenus.hpp"
 #include "gui.hpp"

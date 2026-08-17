@@ -10,7 +10,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_blackcamo);
+        displayName = "[Ghost] MX (Black Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -23,7 +23,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_blackcamo);
+        displayName = "[Ghost] MX 3GL (Black Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -36,7 +36,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_blackcamo);
+        displayName = "[Ghost] MXM (Black Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -49,7 +49,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_blackcamo);
+        displayName = "[Ghost] MXC (Black Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -62,7 +62,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_blackcamo);
+        displayName = "[Ghost] MX LMG (Black Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -77,7 +77,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_blackfine);
+        displayName = "[Ghost] MX (Black Fine Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -90,7 +90,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_blackfine);
+        displayName = "[Ghost] MX 3GL (Black Fine Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -103,7 +103,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_blackfine);
+        displayName = "[Ghost] MXM (Black Fine Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -116,7 +116,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_blackfine);
+        displayName = "[Ghost] MXC (Black Fine Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -129,7 +129,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_blackfine);
+        displayName = "[Ghost] MX LMG (Black Fine Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -144,7 +144,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_blackhex);
+        displayName = "[Ghost] MX (Black Hex Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -157,7 +157,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_blackhex);
+        displayName = "[Ghost] MX 3GL (Black Hex Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -170,7 +170,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_blackhex);
+        displayName = "[Ghost] MXM (Black Hex Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -183,7 +183,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_blackhex);
+        displayName = "[Ghost] MXC (Black Hex Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -196,7 +196,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_blackhex);
+        displayName = "[Ghost] MX LMG (Black Hex Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -211,7 +211,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_blacksploch);
+        displayName = "[Ghost] MX (Black Sploch Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -224,7 +224,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_blacksploch);
+        displayName = "[Ghost] MX 3GL (Black Sploch Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -237,7 +237,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_blacksploch);
+        displayName = "[Ghost] MXM (Black Sploch Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -250,7 +250,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_blacksploch);
+        displayName = "[Ghost] MXC (Black Sploch Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -263,7 +263,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_blacksploch);
+        displayName = "[Ghost] MX LMG (Black Sploch Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -278,7 +278,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_browndots);
+        displayName = "[Ghost] MX (Brown Dots Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -291,7 +291,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_browndots);
+        displayName = "[Ghost] MX 3GL (Brown Dots Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -304,7 +304,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_browndots);
+        displayName = "[Ghost] MXM (Brown Dots Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -317,7 +317,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_browndots);
+        displayName = "[Ghost] MXC (Brown Dots Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -330,7 +330,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_browndots);
+        displayName = "[Ghost] MX LMG (Brown Dots Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -345,7 +345,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_brownsplash);
+        displayName = "[Ghost] MX (Brown Splash Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -358,7 +358,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_brownsplash);
+        displayName = "[Ghost] MX 3GL (Brown Splash Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -371,7 +371,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_brownsplash);
+        displayName = "[Ghost] MXM (Brown Splash Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -384,7 +384,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_brownsplash);
+        displayName = "[Ghost] MXC (Brown Splash Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -397,7 +397,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_brownsplash);
+        displayName = "[Ghost] MX LMG (Brown Splash Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -412,7 +412,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_brownswirl);
+        displayName = "[Ghost] MX (Brown Swirl Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -425,7 +425,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_brownswirl);
+        displayName = "[Ghost] MX 3GL (Brown Swirl Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -438,7 +438,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_brownswirl);
+        displayName = "[Ghost] MXM (Brown Swirl Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -451,7 +451,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_brownswirl);
+        displayName = "[Ghost] MXC (Brown Swirl Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -464,7 +464,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_brownswirl);
+        displayName = "[Ghost] MX LMG (Brown Swirl Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -479,7 +479,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_dgreenpat);
+        displayName = "[Ghost] MX (Dark Green Pattern Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -492,7 +492,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_dgreenpat);
+        displayName = "[Ghost] MX 3GL (Dark Green Pattern Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -505,7 +505,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_dgreenpat);
+        displayName = "[Ghost] MXM (Dark Green Pattern Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -518,7 +518,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_dgreenpat);
+        displayName = "[Ghost] MXC (Dark Green Pattern Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -531,7 +531,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_dgreenpat);
+        displayName = "[Ghost] MX LMG (Dark Green Pattern Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -546,7 +546,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_greendig);
+        displayName = "[Ghost] MX (Green Digital Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -559,7 +559,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_greendig);
+        displayName = "[Ghost] MX 3GL (Green Digital Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -572,7 +572,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_greendig);
+        displayName = "[Ghost] MXM (Green Digital Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -585,7 +585,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_greendig);
+        displayName = "[Ghost] MXC (Green Digital Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -598,7 +598,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_greendig);
+        displayName = "[Ghost] MX LMG (Green Digital Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -613,7 +613,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_greenhex);
+        displayName = "[Ghost] MX (Green Hex Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -626,7 +626,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_greenhex);
+        displayName = "[Ghost] MX 3GL (Green Hex Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -639,7 +639,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_greenhex);
+        displayName = "[Ghost] MXM (Green Hex Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -652,7 +652,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_greenhex);
+        displayName = "[Ghost] MXC (Green Hex Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -665,7 +665,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_greenhex);
+        displayName = "[Ghost] MX LMG (Green Hex Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -680,7 +680,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_greenspray);
+        displayName = "[Ghost] MX (Green Spray Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -693,7 +693,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_greenspray);
+        displayName = "[Ghost] MX 3GL (Green Spray Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -706,7 +706,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_greenspray);
+        displayName = "[Ghost] MXM (Green Spray Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -719,7 +719,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_greenspray);
+        displayName = "[Ghost] MXC (Green Spray Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -732,7 +732,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_greenspray);
+        displayName = "[Ghost] MX LMG (Green Spray Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -747,7 +747,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_greenstrip);
+        displayName = "[Ghost] MX (Green Pattern Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -760,7 +760,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_greenstrip);
+        displayName = "[Ghost] MX 3GL (Green Pattern Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -773,7 +773,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_greenstrip);
+        displayName = "[Ghost] MXM (Green Pattern Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -786,7 +786,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_greenstrip);
+        displayName = "[Ghost] MXC (Green Pattern Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -799,7 +799,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_greenstrip);
+        displayName = "[Ghost] MX LMG (Green Pattern Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -814,7 +814,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_greenx);
+        displayName = "[Ghost] MX (Green X's Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -827,7 +827,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_greenx);
+        displayName = "[Ghost] MX 3GL (Green X's Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -840,7 +840,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_greenx);
+        displayName = "[Ghost] MXM (Green X's Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -853,7 +853,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_greenx);
+        displayName = "[Ghost] MXC (Green X's Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -866,7 +866,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_greenx);
+        displayName = "[Ghost] MX LMG (Green X's Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -881,7 +881,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_greyhex);
+        displayName = "[Ghost] MX (Grey Hex Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -894,7 +894,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_greyhex);
+        displayName = "[Ghost] MX 3GL (Grey Hex Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -907,7 +907,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_greyhex);
+        displayName = "[Ghost] MXM (Grey Hex Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -920,7 +920,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_greyhex);
+        displayName = "[Ghost] MXC (Grey Hex Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -933,7 +933,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_greyhex);
+        displayName = "[Ghost] MX LMG (Grey Hex Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -948,7 +948,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_snadpat);
+        displayName = "[Ghost] MX (Sand Pattern Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -961,7 +961,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_snadpat);
+        displayName = "[Ghost] MX 3GL (Sand Pattern Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -974,7 +974,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_snadpat);
+        displayName = "[Ghost] MXM (Sand Pattern Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -987,7 +987,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_snadpat);
+        displayName = "[Ghost] MXC (Sand Pattern Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1000,7 +1000,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_snadpat);
+        displayName = "[Ghost] MX LMG (Sand Pattern Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1015,7 +1015,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_DPSO);
+        displayName = "[Ghost] MX (DPSO Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1028,7 +1028,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_DPSO);
+        displayName = "[Ghost] MX 3GL (DPSO Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1041,7 +1041,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_DPSO);
+        displayName = "[Ghost] MXM (DPSO Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1054,7 +1054,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_DPSO);
+        displayName = "[Ghost] MXC (DPSO Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1067,7 +1067,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_DPSO);
+        displayName = "[Ghost] MX LMG (DPSO Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1082,7 +1082,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_brush);
+        displayName = "[Ghost] MX (Brush Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1095,7 +1095,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_brush);
+        displayName = "[Ghost] MX 3GL (Brush Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1108,7 +1108,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_brush);
+        displayName = "[Ghost] MXM (Brush Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1121,7 +1121,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_brush);
+        displayName = "[Ghost] MXC (Brush Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1134,7 +1134,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_brush);
+        displayName = "[Ghost] MX LMG (Brush Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1149,7 +1149,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_trash);
+        displayName = "[Ghost] MX (Trash Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1162,7 +1162,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_trash);
+        displayName = "[Ghost] MX 3GL (Trash Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1175,7 +1175,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_trash);
+        displayName = "[Ghost] MXM (Trash Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1188,7 +1188,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_trash);
+        displayName = "[Ghost] MXC (Trash Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1201,7 +1201,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_trash);
+        displayName = "[Ghost] MX LMG (Trash Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1216,7 +1216,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_yonv2);
+        displayName = "[Ghost] MX (YonV2 Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1229,7 +1229,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_GL_yonv2);
+        displayName = "[Ghost] MX 3GL (YonV2 Camo)";
         picture = QPATHTOF(UI\mx_gl_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1242,7 +1242,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXM_yonv2);
+        displayName = "[Ghost] MXM (YonV2 Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1255,7 +1255,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MXC_yonv2);
+        displayName = "[Ghost] MXC (YonV2 Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1268,7 +1268,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "YonV";
-        displayName = CSTRING(MX_SW_yonv2);
+        displayName = "[Ghost] MX LMG (YonV2 Camo)";
         picture = QPATHTOF(UI\mx_blackcamo_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1285,7 +1285,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "Tyrone";
-        displayName = CSTRING(EBR_Black_F);
+        displayName = "[Ghost] Mk14 Mod 1 EBR (Anodised Black)";
         picture = QPATHTOF(UI\mk14_ebr_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1300,7 +1300,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "Tyrone";
-        displayName = CSTRING(Mk20_Black_F);
+        displayName = "[Ghost] F2000 (Black Camo)";
         picture = QPATHTOF(UI\mk20_blackcamo_ca.paa);
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {
@@ -1314,14 +1314,14 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "JoramD";
-        displayName = CSTRING(Walther_P99);
+        displayName = "[Ghost] Walther P99";
         picture = QPATHTOF(UI\walther_p99_ca.paa);
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\walther_p99_co.paa)};
         baseWeapon = QGVAR(Walther_P99);
     };
     class GVAR(Walther_P99_Tan): GVAR(Walther_P99) {
-        displayName = CSTRING(Walther_P99_Tan);
+        displayName = "[Ghost] Walther P99 (Tan)";
         picture = QPATHTOF(UI\walther_p99_tan_ca.paa);
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\walther_p99_tan_co.paa)};
@@ -1332,7 +1332,7 @@ class CfgWeapons {
         scope = 2;
         author = "nopryl.no";
         baseWeapon = QGVAR(hgun_P07_blk_F);
-        displayName = CSTRING(hgun_P07_blk_F);
+        displayName = "[Ghost] P07 (Black)";
         hiddenSelectionsTextures[] = {QPATHTOF(data\pistol\p07.paa)};
     };
 
@@ -1341,7 +1341,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "Kresky";
-        displayName = CSTRING(MRAWS_Black_F);
+        displayName = "[Ghost] MAAWS Mk4 Mod 1 (Black)";
         picture = QPATHTOF(UI\mraws_black_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1355,7 +1355,7 @@ class CfgWeapons {
         dlc = QUOTE(PREFIX);
         scope = 2;
         author = "Kresky";
-        displayName = CSTRING(MRAWS_Black_Rail_F);
+        displayName = "[Ghost] MAAWS Mk4 Mod 0 (Black)";
         picture = QPATHTOF(UI\mraws_black_rail_ca.paa);
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
@@ -1371,7 +1371,7 @@ class CfgWeapons {
         scope = 2;
         author = "nopryl.no";
         baseWeapon = QGVAR(LMG_03_brn_F);
-        displayName = CSTRING(LMG_03_brn_F);
+        displayName = "[Ghost] FN Minimi SPW (Brown)";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\lmg\minimi_01.paa),
             QPATHTOF(data\lmg\minimi_02.paa),

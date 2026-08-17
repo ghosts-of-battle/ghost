@@ -1,7 +1,11 @@
-## Map
+# Map
 
-Adds team designation description to map colors.
+`ghost_map`
 
-### Authors
+Map appearance and behaviour tweaks.
 
-- [veteran29](https://github.com/veteran29)
+<!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
+
+## Requires
+
+- `ghost_main`

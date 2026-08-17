@@ -1,0 +1,12 @@
+PREP(assignPlayer);
+PREP(canTakeRole);
+PREP(handleDisconnect);
+PREP(initGroupMenu);
+PREP(onGroupMenuTvSelectChange);
+PREP(onRespawn);
+PREP(removeFromGroup);
+PREP(selectPosition);
+PREP(setupPlayer);
+PREP(styleGroupMenu);
+PREP(toggleRoleGrant);
+PREP(updateGroups);

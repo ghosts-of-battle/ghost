@@ -26,6 +26,39 @@ params ["_cfg"];
 private _from = _cfg get "pos";
 private _classes = _cfg get "targets";
 if (_classes isEqualTo []) exitWith { objNull };
+private _range = _cfg get "range";
+
+// WHERE THE PICTURE COMES FROM. With radars synced to the battery it comes from
+// them and from nothing else - the launchers are inland behind terrain and
+// cannot see the sea, which is the point of putting them there. Kill the
+// radars, or wait out their tracks, and the battery is blind.
+//
+// With none synced the battery looks for itself, as it always did, so a mission
+// built before the radar existed still works.
+private _radars = _cfg getOrDefault ["radars", []];
+private _candidates = [];
+
+if (_radars isNotEqualTo []) then {
+    private _now = CBA_missionTime;
+    {
+        private _radar = _x;
+        if (!alive _radar) then { continue };
+        // A hacked set contributes nothing while the intrusion holds. Guarded:
+        // the IADS addon is optional, and without it no radar is ever hacked.
+        {
+            _x params ["_obj", "", "_t"];
+            if (!isNull _obj && { _now - _t < AS_RADAR_TRACK }) then {
+                _candidates pushBackUnique _obj;
+            };
+        } forEach (_radar getVariable [QGVAR(contacts), []]);
+    } forEach _radars;
+} else {
+    // The type filter matters: an empty one makes this "every object on the map
+    // inside 12 km", walked on every tick of every battery, and a coastline is
+    // the most object-dense ground in Arma. The isKindOf pass below still runs -
+    // this only stops the engine handing us the rocks.
+    _candidates = nearestObjects [_from, _classes, _range];
+};
 
 private _best = objNull;
 private _bestD = -1;
@@ -36,8 +69,10 @@ private _bestD = -1;
     if (_classes findIf { _obj isKindOf _x } < 0) then { continue };
 
     private _d = _from distance2D _obj;
+    // a contact a radar can see is not automatically one the battery can reach
+    if (_d > _range) then { continue };
     if (_bestD < 0 || {_d < _bestD}) then { _bestD = _d; _best = _obj };
-} forEach (nearestObjects [_from, [], _cfg get "range"]);
+} forEach _candidates;
 
 if (!isNull _best && {_cfg get "debug"}) then {
     diag_log text format ["[ghost_antiship] target: %1 at %2m, grid %3",

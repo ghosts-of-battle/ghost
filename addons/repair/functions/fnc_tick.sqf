@@ -60,8 +60,12 @@ private _now = CBA_missionTime;
     if (_now < _next) then { continue };
     _x set [7, _now + (_cfg get "interval")];
 
-    if (_cfg get "rearm") then { _obj setVehicleAmmo 1 };
-    if (_cfg get "refuel") then { _obj setFuel 1 };
+    // Both commands take LOCAL arguments and a vehicle somebody is driving
+    // is local to their client, not this server - said at the owner or the
+    // pad silently neither rearmed nor refuelled in MP while the (global)
+    // repair below kept working.
+    if (_cfg get "rearm") then { [_obj, 1] remoteExec ["setVehicleAmmo", _obj] };
+    if (_cfg get "refuel") then { [_obj, 1] remoteExec ["setFuel", _obj] };
 
     private _amount = _cfg get "amount";
     if (_amount > 0 && {damage _obj > 0}) then {

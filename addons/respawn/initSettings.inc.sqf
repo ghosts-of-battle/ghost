@@ -1,8 +1,8 @@
 [
     QGVAR(enabled),
     "CHECKBOX",
-    [LSTRING(Enabled), LSTRING(Enabled_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Enable respawn", "Enables respawn with given delay."],
+    ["Ghosts of Battle", "Ghosts of Battle - Respawn"],
     false,
     1,
     {[_this] call FUNC(toggle)}
@@ -11,8 +11,8 @@
 [
     QGVAR(time),
     "SLIDER",
-    [LSTRING(Time), LSTRING(Time_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Respawn delay", "How much time must pass before player will respawn (if respawn is enabled)."],
+    ["Ghosts of Battle", "Ghosts of Battle - Respawn"],
     [1, 900, getNumber (configFile >> "CfgRespawnTemplates" >> QGVAR(default) >> "respawnDelay"), 0],
     1,
     {[_this] call FUNC(adjustTime)}

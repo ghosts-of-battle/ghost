@@ -2,148 +2,68 @@
 
 Place from the 3DEN entity list under the listed category.
 
-## Aircraft (`aircraft`)
+## Air Defence (`airdefence`)
 
-### Aircraft / Glide-Bomb Strikes
+### Ghost - Air Defence (temporary)
 
-- **Class** `ghost_moduleAircraftStrike`
-- **Category** ghost_drone_modules
-- Spawns strike aircraft off-map that fly in for one attack pass on a random building in a TAOR, then egress. Optionally rains a side-owned glide bomb onto a random building on a frequency timer. Reuses the shared airframe ceiling / reaper.
-- **Attributes** `altitude_max`, `altitude_min`, `ceiling`, `debug`, `fixedwing_cap`, `fixedwing_classes`, `fixedwing_frequency`, `glidebomb_altitude`, `glidebomb_class`, `glidebomb_frequency`, `rotor_cap`, `rotor_classes`, `rotor_frequency`, `side`, `spawn_bearing`, `spawn_distance`, `taor_marker`
+- **Class** `ghost_moduleAirDefence`
+- **Category** ghost_modules
+- Places air defence for every ALiVE commander on the map. TEMPORARY - it stands in until ALiVE 3's own air defence is stable.<br>Conventional commanders (invasion, occupation) get radar-cued missile batteries. Asymmetric commanders get MANPAD teams instead - a guerrilla does not field a battery.<br>Where they go is read from ALiVE: each commander's own TAOR and objectives, never anything set here. Everything placed is profiled, so it costs nothing while nobody is near it.<br>Batteries Per Side - conventional commanders only, asymmetric get none Launchers Per Battery - set back from the radar that cues them Battery Spacing (m) - least distance between two batteries Radar / Launcher / MANPAD classes are set PER SIDE - the three commanders are three different armies. Leave any of them blank to pick from that commander's own faction. Clear Ground (m) - open ground a battery needs; a radar in a wood sees nothing MANPAD Teams Per Side - asymmetric commanders only
+- **Attributes** `launcherEast`, `launcherGuer`, `launcherWest`, `launchers`, `manpadEast`, `manpadGuer`, `manpadManEast`, `manpadManGuer`, `manpadManWest`, `manpadWest`, `openGround`, `profileSites`, `radarEast`, `radarGuer`, `radarWest`, `rearmEvery`, `security`, `sitesPerSide`, `spacing`, `taorEast`, `taorGuer`, `taorWest`, `teamsPerSide`
 
-## Ambient Artillery (`ambient_arty`)
+## Ambience (`ambience`)
 
-### Ambient Artillery
+### Ghost - Ambient Shelling
 
-- **Class** `ghost_moduleAmbientArty`
-- **Category** ghost_ambient_modules
-- Periodically shells a random intact building near the players. Place one per battery; each runs its own timer and TAOR.
-- **Attributes** `debug`, `interval`, `max_dist`, `min_dist`, `rounds`, `shell`, `spread`, `taor_marker`
+- **Class** `ghost_moduleAmbientShelling`
+- **Category** ghost_modules
+- Ambient war: every few minutes a short artillery stonk lands on a building near a player inside the named markers. It never targets the players themselves - the distance band keeps it off their heads - and every impact area is announced on the alert bus first.
+- **Attributes** `bandMax`, `bandMin`, `intervalMax`, `intervalMin`, `markers`, `roundsMax`, `roundsMin`, `shellClasses`
 
-## Ambient Drones (`ambient_drones`)
-
-### Ambient Drones (near players)
-
-- **Class** `ghost_moduleAmbientDrones`
-- **Category** ghost_drone_modules
-- Spawns drones within a radius of random enemy players on a random-window timer, choosing the drone type by weighted priority. Shares the Drones airframe ceiling + reaper. Requires the Drones addon.
-- **Attributes** `altitude_max`, `altitude_min`, `antiair`, `antiarmor`, `antipersonnel`, `blacklist_marker`, `debug`, `drone_lifetime`, `faction`, `global_airframe_ceiling`, `ground`, `interval_max`, `interval_min`, `loiterfixed`, `loiterrotor`, `recon`, `spawn_min_dist`, `spawn_radius`, `taor_marker`
-
-## Ambient Kamikaze Drones (`ambient_kamikaze`)
-
-### Ambient Kamikaze Drones
+### Ghost - Ambient Kamikaze Drones
 
 - **Class** `ghost_moduleAmbientKamikaze`
-- **Category** ghost_ambient_modules
-- Periodically sends one-way kamikaze drones into a building near the players. Each strike is either a single drone or a swarm, rolled against the Swarm Chance - two classes, so a swarm can be something smaller and cheaper than a single. Swarm drones come in staggered and from different bearings, so they arrive as a stream a defence has to work through rather than all at once. Place one module per launch site; each runs its own timer and TAOR.
-- **Attributes** `altitude`, `debug`, `drone_class`, `interval`, `max_dist`, `min_dist`, `spawn_dist`, `swarm_chance`, `swarm_class`, `swarm_count`, `taor_marker`
+- **Category** ghost_modules
+- Ambient war: every few minutes a one-way drone flies in and dives on a building near a player inside the named markers. It is a real aircraft on the map - audible, visible and killable, and shooting it down is the counterplay. It never dives at the players themselves.
+- **Attributes** `bandMax`, `bandMin`, `diveSpeed`, `droneClasses`, `intervalMax`, `intervalMin`, `markers`
 
 ## AntiShip (`antiship`)
 
 ### Anti-Ship Battery (Burevestnik)
 
 - **Class** `ghost_moduleAntiShip`
-- **Category** ghost_ambient_modules
-- A coastal anti-ship battery. Every interval it looks for a hull inside its search range and puts a Burevestnik into it - climb, sea-skimming cruise, terminal dive. The missile flies faster than any interceptor, so it has to be met head-on rather than chased, and it can be shot down: it carries a decoy the defending side's AA and CIWS will engage. Synchronise 3K72 launchers to the module to give it a firing position that can be destroyed; without one it fires from the module.
-- **Attributes** `cruise_alt`, `debug`, `interceptable`, `interval`, `missile_speed`, `search_range`, `target_classes`, `terminal_range`
-
-## Base Defense (`base_defense`)
-
-### Base Defense (drones + recon arty)
-
-- **Class** `ghost_moduleBaseDefense`
-- **Category** ghost_drone_modules
-- Defends a base: trickle-spawns patrol drones around it, halts reinforcement when a player breaches the stop distance, and (if a recon drone spots an enemy in range) rains virtual mortars on that target until it dies or leaves range. Can also sit the base inside a jamming zone, so radios degrade as you close in and the emitter becomes something to hunt. Requires the Drones addon; the jamming zone additionally needs Electronic War Zones.
-- **Attributes** `activate_range`, `altitude_max`, `altitude_min`, `antiair`, `antiarmor`, `antipersonnel`, `arty_ammo`, `arty_cooldown`, `arty_delay`, `arty_enable`, `arty_radius`, `arty_rounds`, `base_marker`, `debug`, `defense_range`, `drone_lifetime`, `ew_class`, `ew_enable`, `ew_radius`, `faction`, `global_airframe_ceiling`, `ground`, `loiterfixed`, `loiterrotor`, `marker_text`, `recon`, `spawn_interval`, `spawn_marker`, `stop_distance`
-
-## CIWS (`ciws`)
-
-### CIWS / C-RAM
-
-- **Class** `ghost_moduleCIWS`
-- **Category** ghost_ambient_modules
-- Point defence against artillery, rockets and missiles. Synchronise the AA guns that should defend the site. Incoming rounds are engaged by the guns themselves - the AI aims and leads, so an intercept has to be earned and a gun that is dead, out of ammo or has no line of sight simply misses. Rounds heading AWAY are ignored, so your own artillery is safe to fire over the site.
-- **Attributes** `ad_range`, `debug`, `defend_side`, `intercept_types`, `interceptor_ammo`, `interceptor_limit`, `interceptor_speed`, `min_range`, `mode`, `pn_gain`, `protect_marker`
-
-## Counter-Battery (`counter_battery`)
-
-### Counter-Battery Radar
-
-- **Class** `ghost_moduleCounterBattery`
-- **Category** ghost_ambient_modules
-- Enemy counter-battery radar. Artillery on the hunted side that keeps firing from one place gets found and shelled - the reply lands where the gun WAS, so a crew that shoots and scoots survives and one that sits still does not. No gun is placed on the map; the reply is virtual. Place two modules for both sides.
-- **Attributes** `accuracy`, `cooldown`, `debug`, `dedupe_radius`, `delay`, `detect_chance`, `displace`, `displace_radius`, `extra_classes`, `hunted_side`, `rounds`, `safe_radius`, `shell`, `shots_to_detect`, `spread`, `warn`, `window`
-
-## Drones (`drones`)
-
-### Drones Controller
-
-- **Class** `ghost_moduleDrones`
-- **Category** ghost_drone_modules
-- Spawns and manages standalone patrol UAVs across a TAOR, with a hard airframe ceiling, trickle-spawn, stuck-watchdog and lifetime churn. Place one per battlespace; set the TAOR marker name(s) in the attributes.
-- **Attributes** `altitude_max`, `altitude_min`, `antiair`, `antiarmor`, `antipersonnel`, `debug`, `drone_lifetime`, `faction`, `global_airframe_ceiling`, `ground`, `loiterfixed`, `loiterrotor`, `objective_marker`, `recon`, `spawn_interval`, `taor_marker`
-
-## Electronic War Zones (`electronic_war_zones`)
-
-### Electronic War Zones
-
-- **Class** `ghost_moduleElectronicWarZones`
-- **Category** ghost_drone_modules
-- OPFOR electronic-warfare zones: emitters jam nearby radios (TFAR and ACRE2, graduated by range) and, together with recon drones, hunt long-range transmissions - spawning a drone response. Both TFAR and ACRE2 long-range traffic is jammed + tracked; short-range squad nets are safe. Requires the Drones addon.
-- **Attributes** `acre_power_threshold`, `ai_chatter`, `ai_chatter_interval`, `cooldown`, `debug`, `detector_range`, `faction`, `huntedSide`, `jam_burnthrough`, `jam_burnthrough_ref`, `jam_cone_enable`, `jam_curve`, `jam_duty_cycle`, `jam_los`, `jam_uavs`, `jammer_class`, `jammer_count`, `jammer_radius_max`, `jammer_radius_min`, `rdf_scan_range`, `response_altitude`, `response_distance`, `response_lifetime`, `response_personnel_classes`, `response_personnel_count`, `response_vehicle_classes`, `response_vehicle_count`, `taor_marker`
-
-## Hacking (`hacking`)
-
-### Intel Target Spot
-
-- **Class** `ghost_moduleHackTargetSpot`
 - **Category** ghost_modules
-- One candidate spot for an intel target. SYNCHRONISE IT to a Hack Intel Targets module to enter it in that module's draw - a spot with no parent module is not drawn for, it simply populates. Set the parent's Pick Per Class to pick a random few each run. Spots are grouped by their Spawn Class, so ten spots of one class and ten of another with a limit of five gives five of each. Either give the spot a Spawn Class or synchronise the objects it should use - with no Spawn Class it is grouped by the first object synced to it. Init runs on whatever it produces.
-- **Attributes** `crew`, `crew_side`, `datalink`, `init_code`, `spawn_class`
+- Coastal anti-ship batteries, one module for every side. Switch a side on and the addon sites a battery on coastal ground inside that side's TAOR markers, with that side's launchers, and places crewed launchers there - kill them all and the battery is silenced. Every interval a battery looks for a hull inside its search range and puts a Burevestnik into it - climb, sea-skimming cruise, terminal dive; it can be met head-on and it carries a decoy the defending side's AA will engage. With every switch off, the module is one battery for its own side, standing where you put it.
+- **Attributes** `cruise_alt`, `debug`, `decoy_classes`, `enableEast`, `enableGuer`, `enableWest`, `interceptable`, `interval`, `launcherEast`, `launcherGuer`, `launcherWest`, `launcher_classes`, `launcher_count`, `missile_classes`, `missile_speed`, `rearm_interval`, `search_range`, `taorEast`, `taorGuer`, `taorWest`, `target_classes`, `terminal_range`
 
-### Hack Intel Targets
+## Boarding (`boarding`)
 
-- **Class** `ghost_moduleHackTargets`
+### Ghost - Boarding Point
+
+- **Class** `ghost_moduleBoarding`
 - **Category** ghost_modules
-- Synchronise objects, units, or Intel Target Spots to this module to make them the intel pool for tower hacking. A successful hack marks the nearest one on everyone's map. Set Pick Per Class to use only a random few of each class, so nobody knows where the intel is until the mission runs. Marked targets are destroy objectives: the marker clears when the target is destroyed, and a message goes out when the last one is down.
-- **Attributes** `class_limits`, `clear_unpicked`, `maintain`, `maintain_crew`, `maintain_interval`, `maintain_repair`, `marker_colour`, `marker_text`, `marker_type`, `max_range`, `one_shot`, `pick_count`
+- A muster point that loads players into transport. Synchronise the OBJECT players press - a sign, a crate, a flagpole - and it carries an ACE action; pressing it moves every player within the module's range into cargo. Synchronise VEHICLES too to say which transport is theirs; with none synced it uses whatever has free cargo near the module. Players already in a vehicle are left alone, and anyone who does not fit is told so rather than being silently left behind.
+- **Attributes** `includePresser`, `range`, `sideOnly`, `title`
 
-### Hacking Settings
+## Jamming (`jamming`)
 
-- **Class** `ghost_moduleHacking`
+### Ghost - Jamming
+
+- **Class** `ghost_moduleJamming`
 - **Category** ghost_modules
-- Tuning for tower and remote hacking. Entirely optional - without one, the defaults apply.
-- **Attributes** `abandon_timeout`, `circle_offset`, `circle_radii`, `combat_interrupts`, `emitter_hack_response_chance`, `hack_cooldown`, `hack_range`, `hack_time`, `intel_alpha`, `intel_fade`, `intel_lifetime`, `local_picture_radius`
+- Placing this module turns on jamming. Without it, the system is off.<br>Hub Radius (m) - Reach of a communications hub, placed at the biggest objectives Terminal Radius (m) - Reach of a terminal, placed at the rest Objectives With Jammers (%) - Share of a commander's objectives that get an emitter Max Jammers Per Side - Hard ceiling per commander whatever the share works out to
+- **Attributes** `largeRadius`, `maxPerSide`, `objectiveShare`, `smallRadius`
 
-### Remote Unit Hack
+## Leaders (`leaders`)
 
-- **Class** `ghost_moduleRemoteHack`
+### Ghost - Leader Chain
+
+- **Class** `ghost_moduleLeaders`
 - **Category** ghost_modules
-- Enables hacking an enemy soldier's comms at range. Success buys one intel product centred on the target; failure can alert the area and jam your own grid. Intel marker styling comes from the Hacking Settings module.
-- **Attributes** `abandon_timeout`, `alert_radius`, `combat_interrupts`, `fail_chance`, `hack_time`, `jam_chance`, `jam_duration`, `jam_radius_max`, `jam_radius_min`, `max_range`
-
-## Intel Hunt (`intel_hunt`)
-
-### Intel Hunt
-
-- **Class** `ghost_moduleIntelHunt`
-- **Category** ghost_modules
-- A hunt for synchronised targets. Enemy bodies sometimes carry intel; gather enough and an ISR operator can process it into a map hint that tightens each time. Killing the current target resets the tier and moves the hunt on to the next.
-- **Attributes** `debug`, `drop_chance`, `hint_radii`, `intel_fade`, `intel_required`, `marker_alpha`, `marker_duration`
+- Placing this module turns on leader chain. Without it, the system is off.<br>Pool Cut Per Leader (%) - How much of the asymmetric commander's force pool dies with each leader Rotate Every (sec) - How often a leader moves to another safe house Trap Chance (%) - Chance a watched safe house is trapped with mortars Internet Pops - How many rugged-server props are placed for players to find and pull leads from
+- **Attributes** `poolCut`, `pops`, `rotateEvery`, `taor`, `trapChance`
 
 ## Modules (`modules`)
-
-### AI Spawner
-
-- **Class** `ghost_moduleAiSpawner`
-- **Category** -
-- Group Side
-
-### AI Hunter
-
-- **Class** `ghost_moduleAiHunter`
-- **Category** -
-- Group Side
 
 ### Safe Start Disabler
 
@@ -157,14 +77,35 @@ Place from the 3DEN entity list under the listed category.
 - **Category** -
 - Heal Players In Area
 
-## Objective Watch (`objective_watch`)
+### AI Spawner
 
-### Objective Watch
+- **Class** `ghost_moduleAiSpawner`
+- **Category** -
+- Group Side
 
-- **Class** `ghost_moduleObjectiveWatch`
+### AI Hunter
+
+- **Class** `ghost_moduleAiHunter`
+- **Category** -
+- Group Side
+
+## QRF (`qrf`)
+
+### Ghost - QRF
+
+- **Class** `ghost_moduleQRF`
 - **Category** ghost_modules
-- Watches objectives for a capture - your side present, no enemies, held for a while - then counts down and drops artillery on the position. Objectives come from map markers (no ALiVE needed), from ALiVE's objective list, or from this module's own position. Independent of the ambient artillery addon.
-- **Attributes** `alive_bridge`, `alive_range`, `barrage_chance`, `barrage_cooldown`, `barrage_delay`, `barrage_dispersion`, `barrage_enable`, `barrage_jitter`, `barrage_rounds`, `barrage_shell`, `barrage_side`, `barrage_window`, `capture_radius`, `capture_side`, `debug`, `hold_time`, `marker`, `min_players`, `objective_markers`, `use_alive_objectives`
+- Placing this module turns on qrf. Without it, the system is off.<br>Hold Time (sec) - How long players must hold an objective, uncontested, before it counts as taken Players Needed - How many players inside before a hold counts at all Squads Min - Fewest squads the third wave sends Squads Max - Most squads Asymmetric Mortar Chance (%) - An asymmetric commander answers with a few mortar rounds or with nothing - never a full barrage Cooldown (sec) - Retaking the same objective inside this window brings no second QRF
+- **Attributes** `asymMortarChance`, `cooldown`, `holdTime`, `minPlayers`, `squadsMax`, `squadsMin`
+
+## Reaction (`reaction`)
+
+### Ghost - Enemy Reaction
+
+- **Class** `ghost_moduleReaction`
+- **Category** ghost_modules
+- Placing this module turns on enemy reaction. Without it, the system is off.<br>Hack Fail Chance (%) - Chance an intrusion fails outright Detection Chance (%) - Chance a failure, a drone sighting or a transmission is noticed Barrage Rounds Min - Fewest shells a major response puts down Barrage Rounds Max - Most shells Radio Watts Watched - Transmit power at or above which a radio can be direction-found
+- **Attributes** `detectChance`, `failChance`, `roundsMax`, `roundsMin`, `watts`
 
 ## Repair (`repair`)
 
@@ -174,3 +115,12 @@ Place from the 3DEN entity list under the listed category.
 - **Category** ghost_modules
 - Keeps everything synchronised to it serviceable: rearmed, refuelled and repaired on a timer, and optionally rebuilt if destroyed. A snapshot of each object is taken at mission start while it is still intact, and that is what a respawn is rebuilt from - so a respawned object comes back where it was placed, not where the blast left it.
 - **Attributes** `debug`, `interval`, `rearm`, `refuel`, `repair_amount`, `replace_crew`, `respawn`, `respawn_delay`
+
+## UAS (`uas`)
+
+### Ghost - Enemy Drones
+
+- **Class** `ghost_moduleUAS`
+- **Category** ghost_modules
+- Placing this module turns on enemy drones. Without it, the system is off.<br>Airframes Per Side - How many drones a commander flies at once while its supply is intact After A Cache Is Lost - The ceiling while a supply cache is down Outage Min (sec) - Shortest time a destroyed cache holds the ceiling down Outage Max (sec) - Longest time Caches Per Side - Supply caches placed in each commander's area for players to find
+- **Attributes** `baseMax`, `cachesPerSide`, `patrolOver`, `reducedMax`, `uavEast`, `uavGuer`, `uavWest`, `windowMax`, `windowMin`

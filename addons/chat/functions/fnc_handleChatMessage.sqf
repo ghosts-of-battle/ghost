@@ -37,7 +37,7 @@ if (!isNull getAssignedCuratorLogic _sender) exitWith {
 };
 
 if (_sender isEqualTo player) exitWith {
-    ["Chat", LLSTRING(AllowGlobalChat_Warning), [1, 0.8, 0.3, 1]] call EFUNC(notify,notify);
+    ["Chat", "Global and side chat is disabled, your message is visible only to administrators and zeuses!", [1, 0.8, 0.3, 1]] call EFUNC(notify,notify);
     playSound "3DEN_notificationWarning";
 
     false // return, player always sees his own message

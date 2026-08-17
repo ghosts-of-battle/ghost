@@ -1,0 +1,12 @@
+PREP(mapClosed);
+PREP(mapOpened);
+PREP(markerColour);
+PREP(markerRGBA);
+PREP(setTool);
+PREP(toolCompass);
+PREP(toolDistance);
+PREP(toolFlat);
+PREP(toolGrid);
+PREP(toolHeight);
+PREP(toolHouses);
+PREP(toolSight);

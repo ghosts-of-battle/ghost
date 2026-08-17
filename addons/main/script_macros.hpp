@@ -29,6 +29,15 @@
 // strings everywhere else.
 #define GHOST_ATTRIBUTES            "Ghosts of Battle Attributes"
 #define GHOST_CATEGORY              "Ghosts of Battle"
+
+// Drawn from when an intel product does not name a colour, so two circles up at
+// the same time can be told apart instead of merging into one red smear. Every
+// entry is a CfgMarkerColors class that reads clearly as an OUTLINE on both the
+// satellite and the topographic map - no black, no white, nothing that vanishes
+// over a town. Lives here rather than in one addon because both the renderer
+// (common) and the ladder that keeps a colour per site (hacking) need it.
+#define INTEL_CIRCLE_COLOURS ["ColorRed", "ColorOrange", "ColorYellow", "ColorGreen", "ColorBlue", "ColorPink", "ColorBrown"]
+
 #define GHOST_TOOLBAR               "Ghosts of Battle"
 #define GHOST_TOOLBAR_WIKI          "Wiki"
 

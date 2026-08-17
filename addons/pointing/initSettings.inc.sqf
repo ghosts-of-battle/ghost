@@ -3,8 +3,8 @@ if (EGVAR(common,aceFinger)) then {
     [
         QGVAR(vehicleEnabled),
         "CHECKBOX",
-        [LSTRING(Vehicle_Enabled), LSTRING(Vehicle_Enabled_Description)],
-        ["Ghosts of Battle", LSTRING(DisplayName)],
+        ["Enable pointing in vehicles", "Allows to point current camera direction in vehicles to rest of the crew."],
+        ["Ghosts of Battle", "Ghosts of Battle - Pointing"],
         true,
         true
     ] call CBA_fnc_addSetting;

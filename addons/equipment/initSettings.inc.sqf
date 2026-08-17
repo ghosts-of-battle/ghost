@@ -47,3 +47,30 @@
     [0, 1800, 0, 0],
     true
 ] call CBA_fnc_addSetting;
+
+// THE PERSONAL WAYPOINT. Its own type and colour rather than the target
+// marker's, because the whole point is telling them apart at a glance: one is
+// something the section was told, the other is a note to yourself.
+[
+    QGVAR(waypointEnabled), "CHECKBOX",
+    ["Enable Vector Personal Waypoint", "Allows dropping a waypoint only you can see on the point aimed at through a [Ghost] Vector Designator. One at a time; aiming at it again clears it."],
+    ["Ghosts of Battle", "Equipment"],
+    true,
+    false
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(waypointType), "EDITBOX",
+    ["Vector Waypoint Type", "Marker type for the personal waypoint. Deliberately smaller than the shared target marker - mil_dot is a good default."],
+    ["Ghosts of Battle", "Equipment"],
+    "mil_dot",
+    false
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(waypointColor), "EDITBOX",
+    ["Vector Waypoint Colour", "Marker colour for the personal waypoint. Something the shared marker is not."],
+    ["Ghosts of Battle", "Equipment"],
+    "ColorYellow",
+    false
+] call CBA_fnc_addSetting;

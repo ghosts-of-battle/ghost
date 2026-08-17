@@ -18,7 +18,11 @@ Author:
 ---------------------------------------------------------------------------- */
 params ["_unit"];
 
-private _required = (GVAR(scannerItems) splitString ", ") select { _x != "" };
-if (_required isEqualTo []) exitWith { false };
-
-((items _unit) + (assignedItems _unit)) arrayIntersect _required isNotEqualTo []
+// NO DEVICE, AND NO REQUIREMENT. Carrying a scanner used to be the gate, and
+// for one build it was a flag that defaulted to false - which is the same
+// requirement wearing different clothes.
+//
+// It DEFAULTS TRUE: everyone sweeps unless a mission says otherwise. The
+// variable is still read, so setting it false on a unit denies them the
+// scanner, which is the only thing a mission is likely to want.
+_unit getVariable [GVAR(scannerVariable), true]

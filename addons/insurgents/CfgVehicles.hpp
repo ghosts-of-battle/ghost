@@ -5,7 +5,7 @@ class CfgVehicles {
     };
 
     class GVAR(soldier_i): I_G_Soldier_F {
-        displayName = CSTRING(Insurgent);
+        displayName = "Insurgent (randomized)";
 
         scope = 2;
         scopeCurator = 2;

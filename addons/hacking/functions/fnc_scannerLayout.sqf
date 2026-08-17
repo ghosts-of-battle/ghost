@@ -27,8 +27,20 @@ params ["_display"];
 private _h = SCN_H * safeZoneH;
 private _w = _h * SCN_ASPECT * (call EFUNC(common,uiSquare));
 
-([SCN_HUD_ID, [SCN_DEF_X, SCN_DEF_Y], [_w / safeZoneW, _h / safeZoneH]] call EFUNC(common,hudPos))
-    params ["_x", "_y"];
+// POSITION IS THE GAME'S JOB. This read ghost's own drag-and-save, which meant
+// the handset was moved by a ghost-specific gesture and knew nothing about where
+// the player had put anything else. It is registered as an IGUI grid now - see
+// CfgUIGrids.hpp - so it is dragged in Options > Game > Layout with the HUD
+// slots and the stamina bar.
+//
+// The class name's case is carried into the variable exactly, which is the trap
+// that cost two attempts on the HUD: grid_ghost_scanner, not GRID_GHOST_SCANNER.
+private _x = profileNamespace getVariable ["IGUI_grid_ghost_scanner_X", safeZoneX + safeZoneW * SCN_DEF_X];
+private _y = profileNamespace getVariable ["IGUI_grid_ghost_scanner_Y", safeZoneY + safeZoneH * SCN_DEF_Y];
+
+// A position saved on a wider screen must not put the handset off this one.
+_x = (safeZoneX) max (_x min (safeZoneX + safeZoneW - _w));
+_y = (safeZoneY) max (_y min (safeZoneY + safeZoneH - _h));
 
 (_display displayCtrl IDC_SCN_BEZEL) ctrlSetPosition [_x, _y, _w, _h];
 

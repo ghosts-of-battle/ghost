@@ -35,10 +35,12 @@ if (!isNull _counterDisplay) then {
 
     private _gameTimeCtrl = _display displayCtrl IDC_GAMETIME;
 
-    (ctrlPosition _counterBgCtrl) params ["_offsetW", "", "_offsetW"];
+    // x + w, not w + w - binding both slots to one name discarded the
+    // counter's x and re-created the exact overlap this code exists to stop.
+    (ctrlPosition _counterBgCtrl) params ["_offsetX", "", "_offsetW"];
     (ctrlPosition _gameTimeCtrl) params ["", "_y", "_w", "_h"];
 
-    _gameTimeCtrl ctrlSetPosition [_offsetW + _offsetW, _y, _w, _h];
+    _gameTimeCtrl ctrlSetPosition [_offsetX + _offsetW, _y, _w, _h];
     _gameTimeCtrl ctrlCommit 0;
 
     // display state monitor loop

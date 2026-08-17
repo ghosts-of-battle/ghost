@@ -19,30 +19,15 @@ if (!GVAR(markerEnabled)) exitWith {false};
 if (isNull ACE_player || {!alive ACE_player}) exitWith {false};
 if !(currentWeapon ACE_player in [QGVAR(Vector_Designator), QGVAR(Vector_Designator_NVG)]) exitWith {false};
 
-private _begin = AGLToASL positionCameraToWorld [0, 0, 0];
-private _end = AGLToASL positionCameraToWorld [0, 0, 5000]; // matches maxRange of the Vector
-
-// Nearest object/building surface on the line of sight
-private _posASL = [];
-private _intersections = lineIntersectsSurfaces [_begin, _end, ACE_player, objNull, true, 1, "VIEW", "GEOM"];
-if (_intersections isNotEqualTo []) then {
-    _posASL = (_intersections select 0) select 0;
-};
-
-// Terrain hit - take it if it is closer than any object hit (or the only hit)
-private _terrain = terrainIntersectAtASL [_begin, _end];
-if (count _terrain == 3) then {
-    if (_posASL isEqualTo [] || {_begin vectorDistance _terrain < _begin vectorDistance _posASL}) then {
-        _posASL = _terrain;
-    };
-};
+// THE RAYCAST IS SHARED with the personal waypoint - see FUNC(vectorTarget).
+// Two copies of a line-of-sight test are two copies that can disagree about what
+// the target is, one taking a building face and the other the ground behind it.
+([] call FUNC(vectorTarget)) params ["_posASL", "_distance"];
 
 if (_posASL isEqualTo []) exitWith {
     hintSilent "Vector: no target";
     true
 };
-
-private _distance = round (_begin vectorDistance _posASL);
 
 GVAR(markerIndex) = GVAR(markerIndex) + 1;
 private _markerName = format [QGVAR(marker_%1_%2), clientOwner, GVAR(markerIndex)];

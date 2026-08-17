@@ -30,7 +30,7 @@ Returns:
 Example:
     ["ew.zones", "list live EW zones", {
         params ["_args", "_caller"];
-        format ["%1 zones", count (call EFUNC(electronic_war_zones,getZones))]
+        format ["%1 zones", count (call EFUNC(jamming,getZones))]
     }] call ghost_common_fnc_addDebugCommand
 
 Author:

@@ -36,6 +36,13 @@ if !([_device, _session] call FUNC(tabletInRange)) exitWith {
 
 private _kind = _session get "kind";
 
+// NO GATE HERE. There was one - it refused to start when the product menu was
+// empty, on the reasoning that a minute spent to be told "Nothing to report" is
+// a minute wasted. It was the wrong trade: a button that refuses looks exactly
+// like a button that is broken, and the bar sitting at 0% is indistinguishable
+// from a hack that never ran. The hack runs; FUNC(serverPick) says honestly that
+// there was nothing on the network.
+
 // Towers hold a cooldown; -1 makes them one-shot.
 if (_kind isEqualTo "tower") then {
     private _cd = [QGVAR(cfg_hack_cooldown)] call FUNC(hackSetting);
@@ -58,6 +65,11 @@ private _time = switch (_kind) do {
 };
 
 _session set ["time", _time max 1];
+
+// A pop is public furniture - being seen starting on one has a price.
+if (_device getVariable ["ghost_leaders_pop", false]) then {
+    [player, _device] call FUNC(popWitness);
+};
 _session set ["last", CBA_missionTime];
 _session set ["running", true];
 

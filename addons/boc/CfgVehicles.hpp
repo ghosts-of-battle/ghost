@@ -8,7 +8,7 @@ class CfgVehicles {
     };
     class GVAR(ModuleAdd): Module_F {
         scope = 2;
-        displayName = CSTRING(ModuleAdd_Displayname);
+        displayName = "Add Chestpack";
         icon = QPATHTOF(data\moduleAdd.paa);
         category = "bocr";
         function = QFUNC(moduleAdd);
@@ -47,7 +47,7 @@ class CfgVehicles {
         };
         class ModuleDescription : ModuleDescription {
             sync[]={"AnyPerson1","AnyPerson2"};
-            description = CSTRING(ModuleAdd_Description);
+            description = "Adds a chestpack (with invenory) to all syncronized Units.";
             class AnyPerson1 {
                 description = "Short description";
                 displayName = "Any BLUFOR unit"; // Custom name
@@ -59,7 +59,7 @@ class CfgVehicles {
     };
     class GVAR(ModuleOnChest): Module_F {
         scope = 2;
-        displayName = CSTRING(ModuleOnChest_Displayname);
+        displayName = "Backpack on Chest";
         icon = QPATHTOF(data\moduleOnChest.paa);
         category = "bocr";
         function = QFUNC(moduleOnChest);
@@ -86,7 +86,7 @@ class CfgVehicles {
         };
         class ModuleDescription : ModuleDescription {
             sync[]={"AnyPerson1","AnyPerson2"};
-            description = CSTRING(ModuleOnChest_Description);
+            description = "Puts current backpack on the chest.";
             class AnyPerson1 {
                 description = "Short description";
                 displayName = "Any BLUFOR unit"; // Custom name
@@ -101,7 +101,7 @@ class CfgVehicles {
         class ACE_SelfActions {
             class ACE_Equipment {
                 class GVAR(onChest) {
-                    displayName = CSTRING(OnChest);
+                    displayName = "Put backpack on chest";
                     condition = QUOTE([_player] call FUNC(canMovePack) && {!(backpack _player isEqualTo '') && (([_player] call FUNC(chestpack)) isEqualTo '')});
                     exceptions[] = {"isNotInside"};
                     statement = QUOTE([_player] call FUNC(actionOnChest));
@@ -110,24 +110,24 @@ class CfgVehicles {
                     icon = QPATHTOF(ui\onchest_ca.paa);
                 };
                 class GVAR(onBack) : GVAR(onChest) {
-                    displayName = CSTRING(OnBack);
+                    displayName = "Put backpack on back";
                     condition = QUOTE([_player] call FUNC(canMovePack) && {(backpack _player isEqualTo '') && !(([_player] call FUNC(chestpack)) isEqualTo '')});
                     statement = QUOTE([_player] call FUNC(actionOnBack));
                     icon = QPATHTOF(ui\onback_ca.paa);
                 };
                 class GVAR(swap) : GVAR(onChest) {
-                    displayName = CSTRING(Swap);
+                    displayName = "Swap rucksacks";
                     condition = QUOTE([_player] call FUNC(canMovePack) && {!(backpack _player isEqualTo '') && !(([_player] call FUNC(chestpack)) isEqualTo '')});
                     statement = QUOTE([_player] call FUNC(actionSwap));
                     icon = QPATHTOF(ui\swap_ca.paa);
                 };
                 class GVAR(lower) : GVAR(onChest) {
-                    displayName = CSTRING(lower);
+                    displayName = "Lower chestpack";
                     condition = QUOTE([_player] call FUNC(canLower));
                     statement = QUOTE([_player] call FUNC(actionLower));
                 };
                 class GVAR(cutLoweringLine) : GVAR(onChest) {
-                    displayName = CSTRING(cutLoweringLine);
+                    displayName = "Cut Lowering Line";
                     condition = QUOTE([_player] call FUNC(canCutLoweringLine));
                     statement = QUOTE([_player] call FUNC(actionCutLoweringLine));
                 };

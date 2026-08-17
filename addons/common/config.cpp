@@ -15,6 +15,6 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
-#include "CfgVehicles.hpp"
+#include "CfgFactionClasses.hpp"
 #include "ui\RscModal.hpp"
 #include "gui.hpp"

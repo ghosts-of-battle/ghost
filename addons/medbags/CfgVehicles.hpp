@@ -82,8 +82,12 @@ class CfgVehicles {
         editorPreview = QPATHTOF(data\previews\firstaid.jpg);
         vehicleClass = "Items";
         class TransportItems {
-            name = QGVAR(FirstAid);
-            count = 1;
+            // One nested class per item - the engine ignores bare
+            // name=/count= here, which left every placed bag empty.
+            class Item01 {
+                name = QGVAR(FirstAid);
+                count = 1;
+            };
         };
     };
 
@@ -96,8 +100,12 @@ class CfgVehicles {
         editorPreview = QPATHTOF(data\previews\medickit.jpg);
         vehicleClass = "Items";
         class TransportItems {
-            name = QGVAR(MedicKit);
-            count = 1;
+            // One nested class per item - the engine ignores bare
+            // name=/count= here, which left every placed bag empty.
+            class Item01 {
+                name = QGVAR(MedicKit);
+                count = 1;
+            };
         };
     };
 
@@ -110,8 +118,12 @@ class CfgVehicles {
         editorPreview = QPATHTOF(data\previews\medickit.jpg);
         vehicleClass = "Items";
         class TransportItems {
-            name = QGVAR(Trauma);
-            count = 1;
+            // One nested class per item - the engine ignores bare
+            // name=/count= here, which left every placed bag empty.
+            class Item01 {
+                name = QGVAR(Trauma);
+                count = 1;
+            };
         };
     };
 
@@ -124,8 +136,12 @@ class CfgVehicles {
         editorPreview = QPATHTOF(data\previews\medickit.jpg);
         vehicleClass = "Items";
         class TransportItems {
-            name = QGVAR(Fluid);
-            count = 1;
+            // One nested class per item - the engine ignores bare
+            // name=/count= here, which left every placed bag empty.
+            class Item01 {
+                name = QGVAR(Fluid);
+                count = 1;
+            };
         };
     };
 
@@ -138,8 +154,12 @@ class CfgVehicles {
         editorPreview = QPATHTOF(data\previews\booboo_ca.paa);
         vehicleClass = "Items";
         class TransportItems {
-            name = QGVAR(DrugKit);
-            count = 1;
+            // One nested class per item - the engine ignores bare
+            // name=/count= here, which left every placed bag empty.
+            class Item01 {
+                name = QGVAR(DrugKit);
+                count = 1;
+            };
         };
     };
     // class GVAR(Item_mopp): Item_Base_F {

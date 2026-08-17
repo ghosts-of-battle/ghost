@@ -1,7 +1,7 @@
 /*
-	File: fn_viewEditChanged.sqf
-	Author: Dom
-	Description: Handles an update to the view distance options
+    File: fn_viewEditChanged.sqf
+    Author: Dom
+    Description: Handles an update to the view distance options
 */
 params ["_control","_text","_type","_updateIndex"];
 

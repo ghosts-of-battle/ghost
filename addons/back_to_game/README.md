@@ -1,24 +1,43 @@
-## Back To Game
+# Back To Game
 
-Arma can crash randomly, internet connections may break, power shortages and other random accidents may happen. This addon, originaly created as mission script by Madin, aims to mitigate the effects of such issues by allowing players teleport back to action after reconnect. No more annoying pings for Zeus, reconnect and jump straight to where you were before disconnected, including restoring your loadout.
+`ghost_back_to_game`
 
+Reconnect handling: a player who drops and returns is offered
+their position, loadout, vehicle and group back rather than starting over.
 
-### Choose where to go
+<!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
 
-Player can choose where he wants to be teleported (soon™) based on server settings or he might don't want teleport at all.
+## Requires
 
-### Restore equipment
+- `ghost_main`
 
-If you choose to teleport, you will have your full loadout restored
+## Ships
 
-### Customization options
+11 functions.
 
-- Disable addon functionality
-- Teleport to group leader
-- Teleportation to previous vehicle
-- Both combined allow teleportation to leader's vehicle
+## CBA settings
 
-## Authors
+| Setting | Type | Name |
+|---|---|---|
+| `ghost_back_to_game_enableAddon` | CHECKBOX | Enable Back To Game |
+| `ghost_back_to_game_teleportToLeader` | CHECKBOX | Teleport to leader |
+| `ghost_back_to_game_teleportToVehicle` | CHECKBOX | Teleport to vehicle |
+| `ghost_back_to_game_removeBody` | CHECKBOX | Remove body |
 
-- [3Mydlo3](https://github.com/3Mydlo3)
-- [Madin5](https://github.com/Madin5)
+## Functions
+
+<details><summary>11</summary>
+
+- `ghost_back_to_game_fnc_addHandler`
+- `ghost_back_to_game_fnc_deletePlayerData`
+- `ghost_back_to_game_fnc_dialogConfirm`
+- `ghost_back_to_game_fnc_dialogReject`
+- `ghost_back_to_game_fnc_getPlayerData`
+- `ghost_back_to_game_fnc_handleConnected`
+- `ghost_back_to_game_fnc_handleDisconnected`
+- `ghost_back_to_game_fnc_handleTeleport`
+- `ghost_back_to_game_fnc_hasDisconnected`
+- `ghost_back_to_game_fnc_savePlayerData`
+- `ghost_back_to_game_fnc_teleportPlayer`
+
+</details>

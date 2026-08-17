@@ -168,6 +168,30 @@ class XtdGearInfos {
             ti = "no";
         };
 
+        // The ghost LP NVGs sort beside EF's own - same model key, so the
+        // arsenal's camo and thermal switches move between the pair rather than
+        // listing them as two unrelated sets.
+        class GVAR(lpnvg_blk) {
+            model = "lpnvg";
+            camo = "blk";
+            ti = "no";
+        };
+        class GVAR(lpnvg_tan) {
+            model = "lpnvg";
+            camo = "tan";
+            ti = "no";
+        };
+        class GVAR(lpnvgTI_blk) {
+            model = "lpnvg";
+            camo = "blk";
+            ti = "yes";
+        };
+        class GVAR(lpnvgTI_tan) {
+            model = "lpnvg";
+            camo = "tan";
+            ti = "yes";
+        };
+
         class GVAR(anvgTI_blk) {
             model = "anvg";
             camo = "blk";

@@ -10,10 +10,6 @@ class CfgWeapons {
 
     // ===== Headgear =====
     class GVAR(SOF_H_Opscore_rgr): HelmetBase {
-        // Every helmet in this mod carries a camera: cTab auto-detects
-        // ctab_camera on any headgear, which beats the userconfig array -
-        // no server file to edit and nothing for a mission to override.
-        ctab_camera = 1;
         author = "OokamiJamie";
         // ACE electronic hearing protection (headset)
         ace_hearing_protection = 0.85;
@@ -87,10 +83,6 @@ class CfgWeapons {
         };
     };
     class GVAR(SOF_H_OpscoreSpec_rgr): HelmetBase {
-        // Every helmet in this mod carries a camera: cTab auto-detects
-        // ctab_camera on any headgear, which beats the userconfig array -
-        // no server file to edit and nothing for a mission to override.
-        ctab_camera = 1;
         author = "OokamiJamie";
         // ACE electronic hearing protection (headset)
         ace_hearing_protection = 0.85;
@@ -172,10 +164,6 @@ class CfgWeapons {
         };
     };
     class GVAR(SOF_H_Opscore_Cover_rgr): HelmetBase {
-        // Every helmet in this mod carries a camera: cTab auto-detects
-        // ctab_camera on any headgear, which beats the userconfig array -
-        // no server file to edit and nothing for a mission to override.
-        ctab_camera = 1;
         author = "OokamiJamie";
         // ACE electronic hearing protection (headset)
         ace_hearing_protection = 0.85;
@@ -224,10 +212,6 @@ class CfgWeapons {
         };
     };
     class GVAR(SOF_H_Opscore_CoverSpec_rgr): HelmetBase {
-        // Every helmet in this mod carries a camera: cTab auto-detects
-        // ctab_camera on any headgear, which beats the userconfig array -
-        // no server file to edit and nothing for a mission to override.
-        ctab_camera = 1;
         author = "OokamiJamie";
         // ACE electronic hearing protection (headset)
         ace_hearing_protection = 0.85;
@@ -281,10 +265,6 @@ class CfgWeapons {
         };
     };
     class GVAR(SOF_H_Opscore_CoverCamo_rgr): HelmetBase {
-        // Every helmet in this mod carries a camera: cTab auto-detects
-        // ctab_camera on any headgear, which beats the userconfig array -
-        // no server file to edit and nothing for a mission to override.
-        ctab_camera = 1;
         author = "OokamiJamie";
         // ACE electronic hearing protection (headset)
         ace_hearing_protection = 0.85;

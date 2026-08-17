@@ -4,12 +4,12 @@ class EMM_mainMenu_CfgMenus {
         class menus {
             class MainMenu;
             class MultiplayerVN: MainMenu {
-                items[] = {"Ghosts of Battle", "ServerBrowser", "SOGPrairieFire", "MikeForce", "Exit"};
+                items[] = {"ghost", "ServerBrowser", "SOGPrairieFire", "MikeForce", "Exit"};
 
                 class ServerBrowser;
-                class Ghosts: ServerBrowser {
+                class ghost: ServerBrowser {
                     action = QUOTE(call (uiNamespace getVariable QQFUNC(join)));
-                    text = CSTRING(SpotlightHeader);
+                    text = "Ghosts of Battle";
                 };
             };
         };

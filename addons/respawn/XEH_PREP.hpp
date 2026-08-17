@@ -7,4 +7,4 @@ PREP(onPlayerRespawn);
 PREP(toggle);
 // modules
 PREP(addZeusModules);
-PREP(moduleRespawn);
+PREP(forceRespawn);

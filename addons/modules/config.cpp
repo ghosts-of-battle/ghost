@@ -3,15 +3,11 @@
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {
-            "ghost_moduleAiSpawner",
-            "ghost_moduleAiHunter",
-            "ghost_moduleSafeStart",
-            "ghost_moduleHealArea"
-        };
+        units[] = {"ghost_moduleSafeStart", "ghost_moduleHealArea", "ghost_moduleAiSpawner", "ghost_moduleAiHunter"};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ghost_main"};
+        // ghost_common: the spawn-scale trim and the groupSpawned bus
+        requiredAddons[] = {"ghost_main", "ghost_common"};
         author = "";
         authors[] = {""};
         VERSION_CONFIG;
@@ -19,5 +15,5 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
-#include "CfgFactionClasses.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgFactionClasses.hpp"

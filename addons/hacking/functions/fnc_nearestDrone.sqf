@@ -6,9 +6,11 @@ Description:
     Nearest hostile UAV/UGV (isUav) within HACK_DRONE_RANGE, not on the player's
     own side and not already hacked. Covers flying drones and ground UGVs.
 
-    If the GVAR(droneClasses) setting lists classnames, only those are downable;
-    blank means any enemy UAV. Matching is by inheritance, so listing a base class
-    covers everything derived from it.
+    EVERY DRONE IS HACKABLE by default - the setting ships blank, and blank means
+    any enemy UAV. GVAR(droneClasses) is there for a mission that wants to
+    protect a specific airframe from being taken, not as the thing that makes
+    drones hackable in the first place. Matching is by inheritance, so listing a
+    base class covers everything derived from it.
 
 Parameters:
     _unit : OBJECT - the player.

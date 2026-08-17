@@ -11,37 +11,16 @@ GVAR(intelAvailable) = [];
 GVAR(lastScan) = -1e9;
 GVAR(tabletPFH) = -1;
 
-// A search circle. Permanent - lifetime 0 - because it is an objective, not a
-// snapshot, and it only goes when the objective does.
-//
-// Deleted before it is drawn: every hack on the same objective reuses the marker
-// name to tighten the circle, and createMarkerLocal refuses a name that already
-// exists, so without this the second hack would silently change nothing.
-[QGVAR(intelMarker), {
-    params ["_name", "_pos", "_radius", "_colour", "_text", "_type", "_side"];
-    if (!hasInterface) exitWith {};
-    if (side group ACE_player isNotEqualTo _side) exitWith {};
-    { deleteMarkerLocal _x } forEach [_name, _name + "_icon"];
-    [_name, _pos, _radius, _colour, INTEL_TARGET_ALPHA, 0, false, _type, _text]
-        call EFUNC(common,renderIntelCircle);
-}] call CBA_fnc_addEventHandler;
-
-// A revealed target has been destroyed: drop its circle and say so. Targets are
-// always destroy objectives, so this is unconditional for the side that had it.
-[QGVAR(intelDestroyed), {
-    params ["_name", "_side"];
-    if (!hasInterface) exitWith {};
-    { deleteMarkerLocal _x } forEach [_name, _name + "_icon"];
-    if (side group ACE_player isEqualTo _side) then {
-        ["Intel", "Target destroyed.", [0.6, 1, 0.6, 1]] call EFUNC(notify,notify);
-    };
-}] call CBA_fnc_addEventHandler;
-
-[QGVAR(intelAllDown), {
-    params ["_side"];
-    if (!hasInterface || {side group ACE_player isNotEqualTo _side}) exitWith {};
-    ["Intel", "All intel targets destroyed.", [0.6, 1, 0.6, 1]] call EFUNC(notify,notify);
-}] call CBA_fnc_addEventHandler;
+// THE SESSION IS THE SUITE'S, NOT THE DIALOG'S. It was created inside
+// FUNC(tabletOpen), so it existed only once this addon's own screen had been
+// opened - and the tacpad's INTRUSION app never opens that screen. Every tick it
+// ran, FUNC(tabletAdvance) found no session and returned on its first line, so
+// the device list was never scanned: the tile said a tower was in range and the
+// app said NOTHING IN RANGE, for as long as the mission lasted.
+GVAR(session) = createHashMapFromArray [
+    ["device", objNull], ["kind", ""], ["intel", "picture"],
+    ["running", false], ["progress", 0], ["time", 60], ["range", 20], ["last", 0]
+];
 
 // Server-authoritative silent removal of a hacked drone (+ its virtual crew).
 if (isServer) then {
@@ -71,6 +50,17 @@ if (isServer) then {
     [QGVAR(pick), { _this call FUNC(serverPick) }] call CBA_fnc_addEventHandler;
     [QGVAR(remoteFail), { _this call FUNC(remoteHackFail) }] call CBA_fnc_addEventHandler;
 
+    // REMOTE HACKING IS A SETTING, NOT A MODULE. The enable and the range used
+    // to be published by an Eden module; every other rh_* value already falls
+    // back to its macro default at the reader, so the switch and the one number
+    // a mission actually tunes are all that needs writing.
+    [{
+        if !(GVAR(remoteEnable)) exitWith {};
+        missionNamespace setVariable [QGVAR(rh_max_range), GVAR(remoteRange) max 50, true];
+        missionNamespace setVariable [QGVAR(remoteHackEnabled), true, true];
+        INFO_1("remote unit hack online - %1 m range",GVAR(remoteRange) max 50);
+    }] call EFUNC(common,runAfterSettingsInit);
+
     // Scanner alarms live here so they fire with the setter gone. Clearing
     // empties the list; each armed alarm's waiter notices its id missing and
     // stands down by itself.
@@ -78,6 +68,31 @@ if (isServer) then {
     [QGVAR(alarmsClear), {
         if (GVAR(alarms) isEqualTo []) exitWith {};
         GVAR(alarms) = [];
+        publicVariable QGVAR(alarms);
+    }] call CBA_fnc_addEventHandler;
+    // A witnessed pop hack: the nearest settlement remembers. Who keeps that
+    // ledger and how is the adapter's business - this says what happened and
+    // where, on the server, because that is where the population system reads
+    // it. Without the adapter answering, nobody is keeping score and the hack
+    // simply goes unremarked.
+    [QGVAR(popSeen), {
+        params [["_pos", [], [[]]], ["_sideStr", "", [""]]];
+        if (_pos isEqualTo [] || {_sideStr isEqualTo ""}) exitWith {};
+        if (isNil QEFUNC(adapter_alive,bumpHostility)) exitWith {};
+
+        private _now = [_pos, _sideStr, POP_HOSTILITY_BUMP] call EFUNC(adapter_alive,bumpHostility);
+        if (_now < 0) exitWith {};
+
+        INFO_2("pop hack witnessed - settlement hostility toward %1 now %2",_sideStr,_now);
+    }] call CBA_fnc_addEventHandler;
+
+    // One alarm, by id. The waiter notices its id gone and stands down, the
+    // same way a clear works - deleting is a clear of one.
+    [QGVAR(alarmDelete), {
+        params [["_id", -1, [0]]];
+        private _i = GVAR(alarms) findIf { (_x select 0) == _id };
+        if (_i == -1) exitWith {};
+        GVAR(alarms) deleteAt _i;
         publicVariable QGVAR(alarms);
     }] call CBA_fnc_addEventHandler;
 };
@@ -88,9 +103,59 @@ if (isServer) then {
 
 // --- Phase 3 admin test commands -------------------------------------------
 
-["hack.product", "render one product now: hack.product picture|sigint|jam|detect|target", {
+["hack.state", "dump the intrusion session AND the screen driving it", {
+    params ["", "_caller"];
+
+    private _s = missionNamespace getVariable [QGVAR(session), createHashMap];
+    private _dev = _s getOrDefault ["device", objNull];
+
+    [format [
+        "session: running %1 | kind %2 | intel '%3' | device %4 | dist %5 m | range %6 | time %7 s | progress %8",
+        _s getOrDefault ["running", "-"],
+        _s getOrDefault ["kind", "-"],
+        _s getOrDefault ["intel", "-"],
+        [typeOf _dev, "NONE"] select (isNull _dev),
+        [round (player distance _dev), -1] select (isNull _dev),
+        _s getOrDefault ["range", "-"],
+        _s getOrDefault ["time", "-"],
+        _s getOrDefault ["progress", "-"]
+    ], _caller] call EFUNC(common,debugReply);
+
+    [format [
+        "clock:   last %1 | now %2 | in range %3",
+        _s getOrDefault ["last", "-"],
+        CBA_missionTime,
+        [_dev, _s] call FUNC(tabletInRange)
+    ], _caller] call EFUNC(common,debugReply);
+
+    // THE OTHER HALF, AND THE HALF THAT HAS BEEN WRONG EVERY TIME. A session can
+    // be running perfectly while nothing on screen advances, because the thing
+    // that calls FUNC(tabletAdvance) is a per-frame handler owned by the tacpad
+    // app - and it has died three separate ways: a variable name that nothing
+    // wrote, a guard that removed it on its first tick, and a redraw hold that
+    // never expired. If the bar is stuck, this line says whether anything is
+    // driving it at all.
+    [format [
+        "screen:  app '%1' | group %2 | hack PFH %3 | devices %4",
+        uiNamespace getVariable [QEGVAR(tacpad,appCurrent), "-"],
+        ["NULL", "up"] select !isNull (uiNamespace getVariable [QEGVAR(tacpad,appGroup), controlNull]),
+        uiNamespace getVariable [QEGVAR(tacpad_apps,hackPFH), "-"],
+        count (missionNamespace getVariable [QGVAR(devices), []])
+    ], _caller] call EFUNC(common,debugReply);
+
+    [format [
+        "gates:   canHack %1 | scanner %2 | remote hack %3",
+        [player] call FUNC(canHack),
+        [player] call FUNC(hasScanner),
+        missionNamespace getVariable [QGVAR(remoteHackEnabled), false]
+    ], _caller] call EFUNC(common,debugReply);
+
+    nil
+}, true] call EFUNC(common,addDebugCommand);
+
+["hack.product", "render one product now: hack.product aa|arty|coastal|radar|jam|leader|installation", {
     params ["_args", "_caller"];
-    private _p = toLower (_args param [0, "picture"]);
+    private _p = toLower (_args param [0, "aa"]);
     [_p, getPosASL _caller, side group _caller, _caller] call FUNC(serverPick);
     format ["ran product '%1'", _p]
 }] call EFUNC(common,addDebugCommand);
@@ -129,8 +194,11 @@ if (isServer) then {
     }) joinString "  |  "
 }, true] call EFUNC(common,addDebugCommand);
 
-// Scanner: a keybind as well as the self-action, because a device you hold is
-// something you flick on and off, not something you dig out of a menu.
+// THE HAND-HELD SCANNER, its stopwatch, and the alarm dial. The device was
+// removed once and asked back: a thing you hold up while walking is not the
+// same as a screen you stop and open. All three gate on GVAR(scannerVariable),
+// which is wider than the terminal on purpose - reading warning lamps is
+// passive, so the terminal counts as a scanner but not the other way round.
 if (hasInterface) then {
     ["Ghosts of Battle", QGVAR(scannerKey), ["Toggle Signal Scanner", "Shows or hides the hand-held scanner."],
     {
@@ -148,8 +216,6 @@ if (hasInterface) then {
         call FUNC(scannerTimer);
         true
     }, {false}, [0x16, [false, true, true]]] call CBA_fnc_addKeybind;   // Ctrl+Shift+U, rebindable
-    // Shares the scanner's key: one device, one letter, the modifier says which
-    // part of it you are reaching for.
 
     // The alarm: press to add 5 minutes, stop pressing to arm, press to shut
     // it up when it rings. Server-wide by design - one person sets it and
@@ -179,7 +245,7 @@ if (hasInterface) then {
     // than remember three chords. Every entry is the same code path as its
     // keybind - the menu is another way in, never another behaviour.
     private _scanner = [QGVAR(scannerMenu), "Signal Scanner", QPATHTOF(data\hackphone_icon.paa),
-        {}, { [_player] call FUNC(hasScanner) }] call ace_interact_menu_fnc_createAction;
+        {[_player] call FUNC(scannerToggle)}, { [_player] call FUNC(hasScanner) }] call ace_interact_menu_fnc_createAction;
     [player, 1, ["ACE_SelfActions", "ACE_Equipment"], _scanner] call ace_interact_menu_fnc_addActionToObject;
 
     private _menuPath = ["ACE_SelfActions", "ACE_Equipment", QGVAR(scannerMenu)];
@@ -211,47 +277,59 @@ if (hasInterface) then {
         [player, 1, _menuPath + [QGVAR(scannerAlarmMenu)], _preset] call ace_interact_menu_fnc_addActionToObject;
     } forEach [5, 10, 15, 30, 60];
 
-    // Reposition, under the scanner's own menu with everything else. Deferred a
-    // frame because a dialog created from inside an ACE interact statement dies
-    // with the closing interact display - the reason the old entry did nothing.
-    private _move = [QGVAR(scannerMoveHud), "Move Scanner Screen", "", {
-        [{
-            private _h = SCN_H * safeZoneH;
-            private _w = _h * SCN_ASPECT * (call EFUNC(common,uiSquare));
-            [SCN_HUD_ID, [_w / safeZoneW, SCN_H], [SCN_DEF_X, SCN_DEF_Y], "SCAN"] call EFUNC(common,hudMove);
-        }, []] call CBA_fnc_execNextFrame;
-    }, {true}] call ace_interact_menu_fnc_createAction;
-    [player, 1, _menuPath, _move] call ace_interact_menu_fnc_addActionToObject;
+    // NO MOVE ACTION HERE ANY MORE. It drove ghost's own drag-and-save, which
+    // meant the handset was moved by a ghost-specific gesture that knew nothing
+    // about where the player had put the rest of their screen. It is registered
+    // as an IGUI grid now - see CfgUIGrids.hpp - so it is dragged in
+    // Options > Game > Layout alongside the HUD slots and the stamina bar.
 
-    // A saved (or reset) position takes effect immediately on an open scanner
-    // rather than waiting for the next toggle
-    [QEGVAR(common,hudMoved), {
-        params ["_id"];
-        if (_id != SCN_HUD_ID) exitWith {};
-        private _display = uiNamespace getVariable [QGVAR(scanner), displayNull];
-        if (!isNull _display) then {
-            [_display] call FUNC(scannerLayout);
-        };
-    }] call CBA_fnc_addEventHandler;
+    // NOTHING LISTENS FOR A MOVE. The Layout editor raises no event, so a
+    // position changed there is picked up the next time the handset is opened -
+    // FUNC(scannerLayout) reads the grid every time it runs. One toggle, not a
+    // guess at an event the engine does not send.
 };
 
 // Worth having precisely because the draw is meant to be opaque to the mission
 // maker: this is the only way to see which candidates won without playing it.
-["hack.targets", "list the resolved intel target pool", {
-    private _pool = missionNamespace getVariable [QGVAR(intelTargets), []];
-    if (_pool isEqualTo []) exitWith { "no intel targets registered" };
-    private _active = missionNamespace getVariable [QGVAR(activeTarget), objNull];
-    format ["%1 target(s), active %2: %3",
-        count _pool,
-        ["none", typeOf _active] select (!isNull _active),
-        (_pool apply {
-            format ["%1%2%3%4",
-                typeOf _x,
-                ["", " ACTIVE"] select (_x isEqualTo _active),
-                ["", format [" hacks=%1", _x getVariable [QGVAR(hackCount), 0]]]
-                    select (_x getVariable [QGVAR(intelMarked), false]),
-                ["", " DOWN"] select (isNull _x || {!alive _x})]
-        }) joinString ", "]
+// THE KEY THAT SHUTS IT UP. An alarm that can only be waited out is an alarm a
+// section turns the volume slider to zero for, and then never hears again.
+// Unbound by default - it is one key in a suite that already asks for several,
+// and the man who wants it will bind it the first time it goes off.
+if (hasInterface) then {
+    ["Ghosts of Battle", QGVAR(silenceKey),
+        ["Silence alarm", "Stops the alarm beeping on your machine. The alarm stays on the section's roster and nobody else is silenced - it has already fired, this only ends the noise afterwards."],
+        {
+            if !([] call FUNC(alarmSilence)) exitWith {false};
+            ["Alarm", "Silenced.", [0.6, 1, 0.6, 1]] call EFUNC(notify,notify);
+            true
+        },
+        {false},
+        [-1, [false, false, false]]
+    ] call CBA_fnc_addKeybind;
+};
+
+["hack.taor", "which commander holds the ground you are on, and what it will offer", {
+    params ["_args", "_caller"];
+
+    if (isNil "ghost_adapter_alive_fnc_commanders") exitWith {"no ALiVE adapter - no commanders, so no products"};
+
+    private _at = getPosATL _caller;
+    private _type = [_at] call FUNC(taorType);
+
+    [format ["at %1: %2", mapGridPosition _at,
+        [format ["'%1' ground", _type], "nobody's ground - the hack offers nothing"] select (_type isEqualTo "")
+    ], _caller] call EFUNC(common,debugReply);
+
+    {
+        _x params ["_side", "_ctype"];
+        ([_side] call ghost_adapter_alive_fnc_taorFor) params [["_taor", []], ["_black", []]];
+        [format ["  %1 %2 - taor [%3] blacklist [%4]", _side, _ctype,
+            [_taor joinString " ", "whole map"] select (_taor isEqualTo []),
+            [_black joinString " ", "none"] select (_black isEqualTo [])
+        ], _caller] call EFUNC(common,debugReply);
+    } forEach (call ghost_adapter_alive_fnc_commanders);
+
+    nil
 }, true] call EFUNC(common,addDebugCommand);
 
 ["hack.alarm", "scanner alarms: hack.alarm <minutes> arms one, ring fires one now, clear wipes them, no args lists", {
@@ -296,3 +374,55 @@ if (hasInterface) then {
     format ["%1 on %2 = %3 (set by the mission, not by ghost)",
         _var, name player, player getVariable [_var, false]]
 }, true] call EFUNC(common,addDebugCommand);
+
+// The hunt products render through the console's own dispatcher, so they obey
+// the same lifetime, alpha and fade settings as every other product.
+[QGVAR(product), {
+    _this call FUNC(renderProduct);
+}] call CBA_fnc_addEventHandler;
+
+// --- the intel tally: deposit -> counter -> hint ---------------------------
+if (isServer) then {
+    GVAR(banked) = 0;
+    GVAR(hintSide) = sideUnknown;
+
+    // WHOSE WAR IS WHOSE, cached once. Which side yields phones and which
+    // yields radios is the commanders' controltype, read through the adapter -
+    // never a faction list kept here. Commanders do not change mid-mission, so
+    // this is built once and read on every death.
+    GVAR(sideControl) = createHashMap;
+    [QEGVAR(adapter_alive,ready), {
+        if (isNil "ghost_adapter_alive_fnc_commanders") exitWith {};
+        {
+            _x params ["_side", "_ctype"];
+            GVAR(sideControl) set [str _side, _ctype];
+        } forEach (call ghost_adapter_alive_fnc_commanders);
+        INFO_1("body intel by side: %1",GVAR(sideControl));
+    }] call CBA_fnc_addEventHandler;
+
+    ["CAManBase", "killed", LINKFUNC(onBodyKilled)] call CBA_fnc_addClassEventHandler;
+
+    [QGVAR(deposited), {
+        params [["_n", 1, [0]], ["_by", objNull, [objNull]]];
+
+        GVAR(banked) = GVAR(banked) + _n;
+        // Whoever is banking is who the hints are drawn for.
+        if (!isNull _by) then { GVAR(hintSide) = side group _by };
+
+        ["Intel Drop", format ["%1 item(s) banked - %2 of %3.",
+            _n, GVAR(banked), GVAR(perHint)]] call EFUNC(notify,broadcast);
+
+        // A batch at a time, so banking twenty at once pays out twice. The
+        // deposit's own position rides along - the hint points at the nearest
+        // piece of the network, so where you bank decides what you learn about.
+        private _at = if (isNull _by) then {[]} else {getPosATL _by};
+        while {GVAR(banked) >= GVAR(perHint)} do {
+            GVAR(banked) = GVAR(banked) - GVAR(perHint);
+            if !([_at] call FUNC(intelHint)) exitWith {
+                // Nothing to point at: keep the deposits rather than burning
+                // them on a hint that never drew.
+                GVAR(banked) = GVAR(banked) + GVAR(perHint);
+            };
+        };
+    }] call CBA_fnc_addEventHandler;
+};

@@ -25,11 +25,20 @@ if (_classes isNotEqualTo []) then {
     _out = nearestObjects [_unit, _classes, _range];
 };
 
+// and anything tagged a pop - see FUNC(nearestTower) for why the tag beats
+// the classname list
+{
+    if (_x getVariable [QEGVAR(leaders,pop), false]) then { _out pushBackUnique _x };
+} forEach (nearestObjects [_unit, [], _range]);
+
+// AND THE EW EMITTERS. The registry moved when electronic_war_zones became
+// jamming, and this read was dropped instead of renamed - which left every
+// emitter standing as furniture nobody could plug into. An abstract zone has
+// no object and nothing to stand next to.
 {
     private _o = _x param [0, objNull];
-    if (!isNull _o && {alive _o} && {(_unit distance _o) <= _range}) then {
-        _out pushBackUnique _o;
-    };
-} forEach (missionNamespace getVariable ["ghost_electronic_war_zones_jammers", []]);
+    if (!isNull _o && {(_unit distance _o) <= _range}) then { _out pushBackUnique _o };
+} forEach (missionNamespace getVariable [QEGVAR(jamming,jammers), []]);
 
-_out select { alive _x }
+// The TAOR gate last: every tower inside the TAOR is hackable, none outside.
+_out select { alive _x && {[_x] call FUNC(towerInTaor)} }

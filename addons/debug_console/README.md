@@ -1,7 +1,25 @@
-## Debug_console
+# Debug Console
 
-Enchancements for debug console. Enables CBA target debugging and adds a framework to add custom functionalities to the console.
+`ghost_debug_console`
 
-### Authors
+The debug console, gated so it is available where it should be
+and absent where it should not.
 
-- [veteran29](http://github.com/veteran29)
+<!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
+
+## Requires
+
+- `cba_diagnostic` _(external)_
+
+## Ships
+
+2 functions.
+
+## Functions
+
+<details><summary>2</summary>
+
+- `ghost_debug_console_fnc_addButton`
+- `ghost_debug_console_fnc_initDebugConsole`
+
+</details>

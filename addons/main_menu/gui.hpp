@@ -1,5 +1,6 @@
 class RscControlsGroupNoScrollbars;
 class RscStructuredText;
+class RscButton;
 class RscButtonMenu;
 class RscText;
 class RscEdit;

@@ -33,13 +33,9 @@ private _cd = [QGVAR(cfg_hack_cooldown)] call FUNC(hackSetting);
     private _t = _x;
     private _last = _t getVariable [QGVAR(lastHack), -1e9];
     private _spent = (_cd < 0 && {_last > -1e8}) || {_cd >= 0 && {(CBA_missionTime - _last) < _cd}};
-    private _emitter = false;
-    if (!isNil "ghost_electronic_war_zones_jammers") then {
-        _emitter = (ghost_electronic_war_zones_jammers findIf { (_x param [0, objNull]) isEqualTo _t }) > -1;
-    };
     _out pushBack [
         _t, "tower",
-        [["COMM TOWER", "EW EMITTER"] select _emitter, "SPENT"] select _spent,
+        ["COMM TOWER", "SPENT"] select _spent,
         _unit distance _t, _towerRange
     ];
 } forEach ([_unit, _towerRange + TAB_SCAN_PAD] call FUNC(towersInRange));
@@ -58,20 +54,67 @@ if (!isNull _wreck) then {
     _out pushBack [_wreck, "wreck", "DOWNED UAV", _unit distance _wreck, HACK_WRECK_RANGE];
 };
 
-// --- enemy soldiers, only while a Remote Hack module exists ----------------
+// --- cell phones, only while remote hacking is on --------------------------
+// Not every soldier: only the percentage who actually carry a phone
+// (FUNC(hasPhone), derived per man). The rest have nothing to hack.
+//
+// WHOSE NETS ARE FAIR GAME IS A SETTING. It was hostile-only, which is the
+// obvious rule and the wrong one for half the missions this gets played on: in
+// an insurgency the phone worth listening to belongs to somebody who is not
+// shooting at you, and on a two-sided exercise the point may be to listen to the
+// other half of your own force. See GVAR(netTargets).
+//
+// YOUR OWN GROUP IS NEVER ON THE LIST, whatever the setting says. Breaking into
+// the net you are already on is not intelligence, and the men standing next to
+// you would otherwise be the nearest handsets on the screen every time.
 if (missionNamespace getVariable [QGVAR(remoteHackEnabled), false]) then {
     private _range = missionNamespace getVariable [QGVAR(rh_max_range), RH_RANGE_DEF];
     private _mySide = side group _unit;
+    private _scope = GVAR(netTargets);
+    private _myGroup = group _unit;
+    // ONE ENTRY PER GROUP, NOT PER MAN. A section standing together filled the
+    // whole list with its own riflemen - rows saying CELL PHONE at 218, 219 and
+    // 222 m - and pushed every other device off the card list. You are breaking
+    // into a net, and a net is a group; the nearest handset on it is the way
+    // in, so that is the one the entry carries.
+    private _byGroup = createHashMap;
     {
+        private _theirSide = side group _x;
+        private _hostile = _theirSide getFriend _mySide < 0.6;
+        private _civ = _theirSide isEqualTo civilian;
+
+        private _inScope = switch (_scope) do {
+            case 1: {_hostile || _civ};
+            case 2: {true};
+            default {_hostile && {!_civ}};
+        };
+
         if (
             alive _x && {isNull objectParent _x}
-            && {(side group _x) getFriend _mySide < 0.6}
-            && {side group _x isNotEqualTo civilian}
+            && {(group _x) isNotEqualTo _myGroup}
+            && _inScope
             && {!(_x getVariable [QGVAR(hacked), false])}
+            && {[_x] call FUNC(hasPhone)}
         ) then {
-            _out pushBack [_x, "unit", "ENEMY COMMS", _unit distance _x, _range];
+            private _grp = group _x;
+            private _d = _unit distance _x;
+            private _best = _byGroup getOrDefault [str _grp, []];
+            if (_best isEqualTo [] || {_d < (_best select 1)}) then {
+                _byGroup set [str _grp, [_x, _d, _grp]];
+            };
         };
     } forEach (_unit nearEntities ["Man", _range]);
+
+    {
+        _y params ["_man", "_d", "_grp"];
+        // A net already broken is not offered a second time.
+        if (_grp getVariable [QGVAR(hacked), false]) then {continue};
+        // A NET THAT IS NOT HOSTILE SAYS SO. Spending a minute and a detection
+        // roll to break into your own side's traffic because the row looked
+        // like every other row is the mistake this label exists to prevent.
+        private _flag = ["", " (FRIENDLY)"] select ((side _grp) getFriend _mySide >= 0.6);
+        _out pushBack [_man, "unit", format ["NET - %1%2", groupId _grp, _flag], _d, _range];
+    } forEach _byGroup;
 };
 
 private _ranked = _out apply { [_x select 3, _x] };

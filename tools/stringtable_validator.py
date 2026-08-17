@@ -135,13 +135,22 @@ def main():
     # Check all stringtable.xml files in the project directory
     bad_count = 0
 
-    for root, _, files in os.walk(root_dir):
-        for file in fnmatch.filter(files, "stringtable.xml"):
-            filepath = os.path.join(root, file)
+    # Only what actually ships. Walking the whole repo also picked up old/,
+    # bad/ and backups/ - archived copies of addons superseded years ago - so
+    # the validator failed on files nobody can fix and its output was ignored.
+    # A check that cannot pass is not a check.
+    for shipped in ("addons", "optionals"):
+        base = os.path.join(root_dir, shipped)
+        if not os.path.isdir(base):
+            continue
 
-            print("\nChecking {}:".format(os.path.relpath(filepath, root_dir)))
+        for root, _, files in os.walk(base):
+            for file in fnmatch.filter(files, "stringtable.xml"):
+                filepath = os.path.join(root, file)
 
-            bad_count += check_stringtable(filepath)
+                print("\nChecking {}:".format(os.path.relpath(filepath, root_dir)))
+
+                bad_count += check_stringtable(filepath)
 
     print()
 

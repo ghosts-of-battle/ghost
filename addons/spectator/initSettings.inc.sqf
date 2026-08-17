@@ -1,8 +1,8 @@
 [
     QGVAR(enabled),
     "CHECKBOX",
-    [LSTRING(Enabled), LSTRING(Enabled_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Enable spectator", "Enables spectator for dead players"],
+    ["Ghosts of Battle", "Ghosts of Battle - Spectator"],
     false,
     1,
     {[_this] call FUNC(toggle)}
@@ -11,8 +11,8 @@
 [
     QGVAR(allowUnconscious),
     "CHECKBOX",
-    [LSTRING(AllowUnconscious), LSTRING(AllowUnconscious_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Allow spectator for unconscious", "Allows spectator also for unconscious players. Requires enabling spectator."],
+    ["Ghosts of Battle", "Ghosts of Battle - Spectator"],
     false,
     1,
     {[_this] call FUNC(restart)}
@@ -21,8 +21,8 @@
 [
     QGVAR(enabledUnconscious),
     "CHECKBOX",
-    [LSTRING(EnabledUnconscious), LSTRING(EnabledUnconscious_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Enable spectator (CLIENT)", "Enables spectator when unconscious if it's allowed by server setting."],
+    ["Ghosts of Battle", "Ghosts of Battle - Spectator"],
     true,
     0,
     {[_this] call FUNC(restart)}
@@ -31,8 +31,8 @@
 [
     QGVAR(unconsciousDelay),
     "SLIDER",
-    [LSTRING(UnconsciousDelay), LSTRING(UnconsciousDelay_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Unconscious spectator delay", "How much time must pass before unconscious players get spectator."],
+    ["Ghosts of Battle", "Ghosts of Battle - Spectator"],
     [1, 300, 30, 0],
     1
 ] call CBA_fnc_addSetting;
@@ -40,9 +40,9 @@
 [
     QGVAR(sides),
     "LIST",
-    [LSTRING(Sides), LSTRING(Sides_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
-    [[0, 1, 3, 4, 2], [LSTRING(Friendly), LSTRING(Own), LSTRING(PlayerGroup), "str_player", "str_all_voices"], 0],
+    ["Sides available for spectating", "Spectator will be able to see and track units from given sides."],
+    ["Ghosts of Battle", "Ghosts of Battle - Spectator"],
+    [[0, 1, 3, 4, 2], ["Friendly", "Player side", "Player group", "str_player", "str_all_voices"], 0],
     1,
     {[_this] call FUNC(restart)}
 ] call CBA_fnc_addSetting;
@@ -50,9 +50,9 @@
 [
     QGVAR(sidesUnconscious),
     "LIST",
-    [LSTRING(Sides), LSTRING(Sides_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
-    [[0, 1, 3, 4, 2], [LSTRING(Friendly), LSTRING(Own), LSTRING(PlayerGroup), "str_player", "str_all_voices"], 0],
+    ["Sides available for spectating", "Spectator will be able to see and track units from given sides."],
+    ["Ghosts of Battle", "Ghosts of Battle - Spectator"],
+    [[0, 1, 3, 4, 2], ["Friendly", "Player side", "Player group", "str_player", "str_all_voices"], 0],
     1,
     {[_this] call FUNC(restart)}
 ] call CBA_fnc_addSetting;
@@ -60,8 +60,8 @@
 [
     QGVAR(civilianSide),
     "CHECKBOX",
-    [LSTRING(CivilianSide), LSTRING(CivilianSide_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Allow civilian spectating", "Allows tracking units from civilian side."],
+    ["Ghosts of Battle", "Ghosts of Battle - Spectator"],
     false,
     1,
     {[_this] call FUNC(restart)}
@@ -70,8 +70,8 @@
 [
     QGVAR(civilianSideUnconscious),
     "CHECKBOX",
-    [LSTRING(CivilianSide), LSTRING(CivilianSide_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Allow civilian spectating", "Allows tracking units from civilian side."],
+    ["Ghosts of Battle", "Ghosts of Battle - Spectator"],
     false,
     1,
     {[_this] call FUNC(restart)}
@@ -80,8 +80,8 @@
 [
     QGVAR(allowAI),
     "CHECKBOX",
-    [LSTRING(AllowAI), LSTRING(AllowAI_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Allow AI spectating", "Allows tracking AI units from whitelisted sides."],
+    ["Ghosts of Battle", "Ghosts of Battle - Spectator"],
     false,
     1,
     {[_this] call FUNC(restart)}
@@ -90,8 +90,8 @@
 [
     QGVAR(allowAIUnconscious),
     "CHECKBOX",
-    [LSTRING(AllowAI), LSTRING(AllowAI_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Allow AI spectating", "Allows tracking AI units from whitelisted sides."],
+    ["Ghosts of Battle", "Ghosts of Battle - Spectator"],
     false,
     1,
     {[_this] call FUNC(restart)}
@@ -100,8 +100,8 @@
 [
     QGVAR(freeCamera),
     "CHECKBOX",
-    [LSTRING(FreeCamera), LSTRING(FreeCamera_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Allow free camera", "Allows spectator to move his camera freely."],
+    ["Ghosts of Battle", "Ghosts of Battle - Spectator"],
     false,
     1,
     {[_this] call FUNC(restart)}
@@ -110,8 +110,8 @@
 [
     QGVAR(freeCameraUnconscious),
     "CHECKBOX",
-    [LSTRING(FreeCamera), LSTRING(FreeCamera_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Allow free camera", "Allows spectator to move his camera freely."],
+    ["Ghosts of Battle", "Ghosts of Battle - Spectator"],
     false,
     1,
     {[_this] call FUNC(restart)}
@@ -120,8 +120,8 @@
 [
     QGVAR(TPPCamera),
     "CHECKBOX",
-    [LSTRING(TPPCamera), LSTRING(TPPCamera_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Allow TPP Camera", "Allows spectator to use third person camera."],
+    ["Ghosts of Battle", "Ghosts of Battle - Spectator"],
     false,
     1,
     {[_this] call FUNC(restart)}
@@ -130,8 +130,8 @@
 [
     QGVAR(TPPCameraUnconscious),
     "CHECKBOX",
-    [LSTRING(TPPCamera), LSTRING(TPPCamera_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Allow TPP Camera", "Allows spectator to use third person camera."],
+    ["Ghosts of Battle", "Ghosts of Battle - Spectator"],
     false,
     1,
     {[_this] call FUNC(restart)}

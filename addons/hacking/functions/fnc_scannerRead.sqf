@@ -12,7 +12,8 @@ Description:
 
 Returns:
     ARRAY - [_droneState, _droneDist, _droneDir, _jamFactor, _chanText, _freqText,
-             _meshCount]. _droneDir is a compass bearing, -1 when nothing is up.
+             _meshCount, _droneTag]. _droneDir is a compass bearing, -1 when
+             nothing is up; _droneTag is "faction / airframe", "" when clear.
             _droneState 0 clear / 1 warn / 2 alert.
             The net reading comes back as two strings rather than one sentence
             because the screen prints them in separate columns.
@@ -20,6 +21,24 @@ Returns:
 Author:
     Ghost
 ---------------------------------------------------------------------------- */
+// CACHED, because this is the most expensive thing the devices do and it was
+// being run more than once a second on every client with a device open.
+//
+// The drone sweep alone is a nearEntities over TWO KILOMETRES, and on an ALiVE
+// map that is a lot of entities to walk. widgetTick calls this once a second
+// for the dashboard lamps, and the drone page's own refresh calls it again -
+// so with that page up the sweep ran twice a second, forever, for a readout
+// that cannot meaningfully change that fast.
+//
+// One sweep per SCN_CACHE_TTL, shared by every caller. uiNamespace rather than
+// missionNamespace: this is a client-local reading about the player standing
+// here, and nothing on the server has any business reading it.
+private _now = diag_tickTime;
+private _cached = uiNamespace getVariable [QGVAR(scanCache), []];
+if (_cached isNotEqualTo [] && {_now < (_cached select 0)}) exitWith {
+    _cached select 1
+};
+
 private _pos = getPosASL player;
 
 // --- 1. drones -------------------------------------------------------------
@@ -51,9 +70,17 @@ if (!isNull _nearestObj) then {
 };
 
 // --- 2. jamming ------------------------------------------------------------
-// Straight off the value the EW jam loop already publishes, so the scanner and
-// the radios can never disagree about whether you are in a field.
-private _jam = missionNamespace getVariable ["ghost_electronic_war_zones_localJamFactor", 0];
+// Straight off the same function the radios are degraded by, so the scanner and
+// the radio can never disagree about whether you are standing in a field.
+//
+// This was hard-wired to 0 with a note saying jamming had been deleted. It has
+// not been deleted for some time - the readout has just been reporting CLEAR
+// inside every jammer on the map since. Soft-linked, because hacking does not
+// depend on jamming and a mission may well run one without the other.
+private _jam = 0;
+if (!isNil "ghost_jamming_fnc_jamFactor") then {
+    _jam = ([_pos, 0] call ghost_jamming_fnc_jamFactor) param [0, 0];
+};
 
 // --- 3. own net ------------------------------------------------------------
 private _chanText = "NO RADIO";
@@ -66,7 +93,12 @@ if (!isNil "acre_api_fnc_getCurrentRadio") then {
         private _preset = [_cur] call acre_api_fnc_getPreset;
         private _ch = [_cur] call acre_api_fnc_getRadioChannel;
         private _f = [_base, _preset, _ch, "frequencyTX"] call acre_api_fnc_getPresetChannelField;
-        _chanText = format ["CH %1", _ch + 1];
+        // ACRE's getRadioChannel ALREADY RETURNS 1-N ("Channel number, 1-N
+        // depending on the radio", api\fnc_getRadioChannel.sqf) - the +1 here
+        // is what had the app and the sensor panel reading CH 2 while the
+        // radio in hand said CH 1. TFAR's is zero-based; they are not the
+        // same, which is exactly why this was easy to get wrong.
+        _chanText = format ["CH %1", _ch];
         _freqText = if (isNil "_f") then { "-- MHz" } else { format ["%1 MHz", _f] };
     };
 } else {
@@ -92,4 +124,12 @@ private _mesh = {
     && {(getPosASL _x) distance _pos <= SCN_MESH_RANGE}
 } count allPlayers;
 
-[_droneState, _nearest, _droneDir, _jam, _chanText, _freqText, _mesh]
+// WHOSE IT IS AND WHAT IT IS. A bearing and a range say to worry and which
+// way to look; they do not say whether that is somebody's recon quad or a
+// gunship, which is the part that decides what you do about it.
+private _tag = [_nearestObj] call FUNC(droneTag);
+
+private _out = [_droneState, _nearest, _droneDir, _jam, _chanText, _freqText, _mesh, _tag];
+uiNamespace setVariable [QGVAR(scanCache), [_now + SCN_CACHE_TTL, _out]];
+
+_out

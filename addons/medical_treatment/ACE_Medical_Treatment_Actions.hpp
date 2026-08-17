@@ -24,8 +24,8 @@ class ACEGVAR(medical_treatment,actions) {
     class EatApap: Morphine {
         allowedSelections[] = {"head"};
         allowSelfTreatment = 1;
-        displayName = "$STR_GHOST_Medical_Treatment_Eat_Apap";
-        displayNameProgress = "$STR_GHOST_Medical_Treatment_Eating_Apap";
+        displayName = "Eat Apap";
+        displayNameProgress = "Eating Apap...";
         icon = QPATHTOF(ui\icons\apap.paa);
         medicRequired = 0;
         items[] = {"GHOST_apap"};
@@ -35,8 +35,8 @@ class ACEGVAR(medical_treatment,actions) {
     class AdministerApap: EatApap {
         allowSelfTreatment = 0;
         medicRequired = 0;
-        displayName = "$STR_GHOST_Medical_Treatment_Administer_Apap";
-        displayNameProgress = "$STR_GHOST_Medical_Treatment_Administering_Apap";
+        displayName = "Administer Apap";
+        displayNameProgress = "Administering Apap...";
         condition = "!((_this select 1) getVariable ['ACE_isUnconscious', false])";
     };
 

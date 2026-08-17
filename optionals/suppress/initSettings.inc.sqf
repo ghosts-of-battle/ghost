@@ -1,7 +1,7 @@
 
 [
     QGVAR(overlayOpacity), "SLIDER",
-    [LSTRING(overlayOpacity_name), LSTRING(overlayOpacity_tooltip)],
+    ["Overlay opacity", "Suppression overlay opacity, the higher the value the more visible will be the supression effect."],
     ["Ghosts of Battle", COMPONENT_NAME],
     [0,1,0.96,2],
     true,
@@ -17,9 +17,9 @@
 
 [
     QGVAR(overlayTexture), "LIST",
-    [LSTRING(overlayTexture_name), LSTRING(overlayTexture_tooltip)],
+    ["Overlay texture type", "Level of darkness of overlay texture. Darker texture means more screen will be covered with overlay when suppressed."],
     ["Ghosts of Battle", COMPONENT_NAME],
-    [[0, 1, 2], [LSTRING(overlayTexture_light), LSTRING(overlayTexture_medium), LSTRING(overlayTexture_dark)], 1],
+    [[0, 1, 2], ["Light", "Medium", "Dark"], 1],
     true,
     {
         private _display = uiNamespace getVariable [QGVAR(overlay), displayNull];
@@ -33,7 +33,7 @@
 
 [
     QGVAR(overlayFadeoutTime), "SLIDER",
-    [LSTRING(overlayFadeoutTime_name), LSTRING(overlayFadeoutTime_tooltip)],
+    ["Overlay fadeout time", "Suppression overlay fadeout time in seconds"],
     ["Ghosts of Battle", COMPONENT_NAME],
     [1,30,10,1],
     true,
@@ -43,7 +43,7 @@
 
 [
     QGVAR(projectileMaxDistance), "SLIDER",
-    [LSTRING(projectileMaxDistance_name), LSTRING(projectileMaxDistance_tooltip)],
+    ["Projectile max distance", "Max distance from passing projectile in meters. Projectiles passing at larger distance won't be taken into account."],
     ["Ghosts of Battle", COMPONENT_NAME],
     [1,10,9,2],
     true,
@@ -53,7 +53,7 @@
 
 [
     QGVAR(shooterMinDistance), "SLIDER",
-    [LSTRING(shooterMinDistance_name), LSTRING(shooterMinDistance_tooltip)],
+    ["Min distance from shooter", "Min distance from shooter in meters. This option can be used to disable effect in CQB situations, 0 to disable min distance."],
     ["Ghosts of Battle", COMPONENT_NAME],
     [0,50,0,2],
     true,
@@ -63,7 +63,7 @@
 
 [
     QGVAR(checkLOS), "CHECKBOX",
-    [LSTRING(checkLOS_name), LSTRING(checkLOS_tooltip)],
+    ["Check line of sight", "When enabled, checks line of sight between player's eyes and passing projectile, ignoring projectiles passing behind cover, walls etc."],
     ["Ghosts of Battle", COMPONENT_NAME],
     false,
     true,

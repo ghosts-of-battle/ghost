@@ -1,8 +1,8 @@
 [
     QGVAR(loggingEnabled),
     "CHECKBOX",
-    LSTRING(Logging_Enabled),
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    "Friendly fire logging",
+    ["Ghosts of Battle", "Ghosts of Battle - Friendly Fire"],
     false,
     1,
     {},

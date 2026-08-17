@@ -44,9 +44,21 @@ if (!hasInterface || {_id isEqualTo ""}) exitWith { [] };
 
 private _made = [];
 
+// A RING, NOT A DISC. A filled ellipse hides the map underneath it, which is
+// the one thing a player needs to read once they know roughly where to look;
+// and several overlapping fills turn the map into soup. "Border" draws the
+// outline only.
+//
+// The colour is drawn per circle rather than fixed, so two products up at once
+// are told apart at a glance instead of merging into one red smear. Passing an
+// explicit colour still wins - the caller knows when a colour means something.
+if (_colour isEqualTo "") then {
+    _colour = selectRandom INTEL_CIRCLE_COLOURS;
+};
+
 private _area = createMarkerLocal [_id, _pos];
 _area setMarkerShapeLocal "ELLIPSE";
-_area setMarkerBrushLocal "SolidFull";
+_area setMarkerBrushLocal "Border";
 _area setMarkerSizeLocal [_radius, _radius];
 _area setMarkerColorLocal _colour;
 _area setMarkerAlphaLocal _alpha;

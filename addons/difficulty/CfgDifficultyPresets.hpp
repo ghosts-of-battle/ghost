@@ -3,10 +3,10 @@ class CfgDifficultyPresets {
     defaultPreset = QUOTE(Difficulty_GHOST);
 
     class Difficulty_GHOST {
-        displayName = CSTRING(DifficultyName);
+        displayName = "Ghosts of Battle";
 
-        description = CSTRING(DifficultyDescription);
-        optionDescription = CSTRING(DifficultyDescription);
+        description = "Custom Ghosts of Battle settings.";
+        optionDescription = "Custom Ghosts of Battle settings.";
 
         levelAI = QGVAR(LevelAI);
 

@@ -7,7 +7,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_blackcamo);
+        displayName = "[Ghost] MX (Black Camo)";
         class TransportItems {
             class GVAR(MX_blackcamo) {
                 name = QGVAR(MX_blackcamo);
@@ -21,7 +21,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_blackcamo);
+        displayName = "[Ghost] MX 3GL (Black Camo)";
         class TransportItems {
             class GVAR(MX_GL_blackcamo) {
                 name = QGVAR(MX_GL_blackcamo);
@@ -35,7 +35,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_blackcamo);
+        displayName = "[Ghost] MXM (Black Camo)";
         class TransportItems {
             class GVAR(MXM_blackcamo) {
                 name = QGVAR(MXM_blackcamo);
@@ -49,7 +49,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_blackcamo);
+        displayName = "[Ghost] MXC (Black Camo)";
         class TransportItems {
             class GVAR(MXC_blackcamo) {
                 name = QGVAR(MXC_blackcamo);
@@ -63,7 +63,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_blackcamo);
+        displayName = "[Ghost] MX LMG (Black Camo)";
         class TransportItems {
             class GVAR(MX_SW_blackcamo) {
                 name = QGVAR(MX_SW_blackcamo);
@@ -79,7 +79,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_blackfine);
+        displayName = "[Ghost] MX (Black Fine Camo)";
         class TransportItems {
             class GVAR(MX_blackfine) {
                 name = QGVAR(MX_blackfine);
@@ -93,7 +93,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_blackfine);
+        displayName = "[Ghost] MX 3GL (Black Fine Camo)";
         class TransportItems {
             class GVAR(MX_GL_blackfine) {
                 name = QGVAR(MX_GL_blackfine);
@@ -107,7 +107,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_blackfine);
+        displayName = "[Ghost] MXM (Black Fine Camo)";
         class TransportItems {
             class GVAR(MXM_blackfine) {
                 name = QGVAR(MXM_blackfine);
@@ -121,7 +121,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_blackfine);
+        displayName = "[Ghost] MXC (Black Fine Camo)";
         class TransportItems {
             class GVAR(MXC_blackfine) {
                 name = QGVAR(MXC_blackfine);
@@ -135,7 +135,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_blackfine);
+        displayName = "[Ghost] MX LMG (Black Fine Camo)";
         class TransportItems {
             class GVAR(MX_SW_blackfine) {
                 name = QGVAR(MX_SW_blackfine);
@@ -151,7 +151,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_blackhex);
+        displayName = "[Ghost] MX (Black Hex Camo)";
         class TransportItems {
             class GVAR(MX_blackhex) {
                 name = QGVAR(MX_blackhex);
@@ -165,7 +165,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_blackhex);
+        displayName = "[Ghost] MX 3GL (Black Hex Camo)";
         class TransportItems {
             class GVAR(MX_GL_blackhex) {
                 name = QGVAR(MX_GL_blackhex);
@@ -179,7 +179,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_blackhex);
+        displayName = "[Ghost] MXM (Black Hex Camo)";
         class TransportItems {
             class GVAR(MXM_blackhex) {
                 name = QGVAR(MXM_blackhex);
@@ -193,7 +193,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_blackhex);
+        displayName = "[Ghost] MXC (Black Hex Camo)";
         class TransportItems {
             class GVAR(MXC_blackhex) {
                 name = QGVAR(MXC_blackhex);
@@ -207,7 +207,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_blackhex);
+        displayName = "[Ghost] MX LMG (Black Hex Camo)";
         class TransportItems {
             class GVAR(MX_SW_blackhex) {
                 name = QGVAR(MX_SW_blackhex);
@@ -223,7 +223,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_blacksploch);
+        displayName = "[Ghost] MX (Black Sploch Camo)";
         class TransportItems {
             class GVAR(MX_blacksploch) {
                 name = QGVAR(MX_blacksploch);
@@ -237,7 +237,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_blacksploch);
+        displayName = "[Ghost] MX 3GL (Black Sploch Camo)";
         class TransportItems {
             class GVAR(MX_GL_blacksploch) {
                 name = QGVAR(MX_GL_blacksploch);
@@ -251,7 +251,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_blacksploch);
+        displayName = "[Ghost] MXM (Black Sploch Camo)";
         class TransportItems {
             class GVAR(MXM_blacksploch) {
                 name = QGVAR(MXM_blacksploch);
@@ -265,7 +265,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_blacksploch);
+        displayName = "[Ghost] MXC (Black Sploch Camo)";
         class TransportItems {
             class GVAR(MXC_blacksploch) {
                 name = QGVAR(MXC_blacksploch);
@@ -279,7 +279,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_blacksploch);
+        displayName = "[Ghost] MX LMG (Black Sploch Camo)";
         class TransportItems {
             class GVAR(MX_SW_blacksploch) {
                 name = QGVAR(MX_SW_blacksploch);
@@ -295,7 +295,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_browndots);
+        displayName = "[Ghost] MX (Brown Dots Camo)";
         class TransportItems {
             class GVAR(MX_browndots) {
                 name = QGVAR(MX_browndots);
@@ -309,7 +309,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_browndots);
+        displayName = "[Ghost] MX 3GL (Brown Dots Camo)";
         class TransportItems {
             class GVAR(MX_GL_browndots) {
                 name = QGVAR(MX_GL_browndots);
@@ -323,7 +323,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_browndots);
+        displayName = "[Ghost] MXM (Brown Dots Camo)";
         class TransportItems {
             class GVAR(MXM_browndots) {
                 name = QGVAR(MXM_browndots);
@@ -337,7 +337,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_browndots);
+        displayName = "[Ghost] MXC (Brown Dots Camo)";
         class TransportItems {
             class GVAR(MXC_browndots) {
                 name = QGVAR(MXC_browndots);
@@ -351,7 +351,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_browndots);
+        displayName = "[Ghost] MX LMG (Brown Dots Camo)";
         class TransportItems {
             class GVAR(MX_SW_browndots) {
                 name = QGVAR(MX_SW_browndots);
@@ -367,7 +367,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_brownsplash);
+        displayName = "[Ghost] MX (Brown Splash Camo)";
         class TransportItems {
             class GVAR(MX_brownsplash) {
                 name = QGVAR(MX_brownsplash);
@@ -381,7 +381,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_brownsplash);
+        displayName = "[Ghost] MX 3GL (Brown Splash Camo)";
         class TransportItems {
             class GVAR(MX_GL_brownsplash) {
                 name = QGVAR(MX_GL_brownsplash);
@@ -395,7 +395,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_brownsplash);
+        displayName = "[Ghost] MXM (Brown Splash Camo)";
         class TransportItems {
             class GVAR(MXM_brownsplash) {
                 name = QGVAR(MXM_brownsplash);
@@ -409,7 +409,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_brownsplash);
+        displayName = "[Ghost] MXC (Brown Splash Camo)";
         class TransportItems {
             class GVAR(MXC_brownsplash) {
                 name = QGVAR(MXC_brownsplash);
@@ -423,7 +423,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_brownsplash);
+        displayName = "[Ghost] MX LMG (Brown Splash Camo)";
         class TransportItems {
             class GVAR(MX_SW_brownsplash) {
                 name = QGVAR(MX_SW_brownsplash);
@@ -439,7 +439,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_brownswirl);
+        displayName = "[Ghost] MX (Brown Swirl Camo)";
         class TransportItems {
             class GVAR(MX_brownswirl) {
                 name = QGVAR(MX_brownswirl);
@@ -453,7 +453,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_brownswirl);
+        displayName = "[Ghost] MX 3GL (Brown Swirl Camo)";
         class TransportItems {
             class GVAR(MX_GL_brownswirl) {
                 name = QGVAR(MX_GL_brownswirl);
@@ -467,7 +467,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_brownswirl);
+        displayName = "[Ghost] MXM (Brown Swirl Camo)";
         class TransportItems {
             class GVAR(MXM_brownswirl) {
                 name = QGVAR(MXM_brownswirl);
@@ -481,7 +481,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_brownswirl);
+        displayName = "[Ghost] MXC (Brown Swirl Camo)";
         class TransportItems {
             class GVAR(MXC_brownswirl) {
                 name = QGVAR(MXC_brownswirl);
@@ -495,7 +495,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_brownswirl);
+        displayName = "[Ghost] MX LMG (Brown Swirl Camo)";
         class TransportItems {
             class GVAR(MX_SW_brownswirl) {
                 name = QGVAR(MX_SW_brownswirl);
@@ -511,7 +511,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_dgreenpat);
+        displayName = "[Ghost] MX (Dark Green Pattern Camo)";
         class TransportItems {
             class GVAR(MX_dgreenpat) {
                 name = QGVAR(MX_dgreenpat);
@@ -525,7 +525,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_dgreenpat);
+        displayName = "[Ghost] MX 3GL (Dark Green Pattern Camo)";
         class TransportItems {
             class GVAR(MX_GL_dgreenpat) {
                 name = QGVAR(MX_GL_dgreenpat);
@@ -539,7 +539,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_dgreenpat);
+        displayName = "[Ghost] MXM (Dark Green Pattern Camo)";
         class TransportItems {
             class GVAR(MXM_dgreenpat) {
                 name = QGVAR(MXM_dgreenpat);
@@ -553,7 +553,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_dgreenpat);
+        displayName = "[Ghost] MXC (Dark Green Pattern Camo)";
         class TransportItems {
             class GVAR(MXC_dgreenpat) {
                 name = QGVAR(MXC_dgreenpat);
@@ -567,7 +567,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_dgreenpat);
+        displayName = "[Ghost] MX LMG (Dark Green Pattern Camo)";
         class TransportItems {
             class GVAR(MX_SW_dgreenpat) {
                 name = QGVAR(MX_SW_dgreenpat);
@@ -583,7 +583,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_greendig);
+        displayName = "[Ghost] MX (Green Digital Camo)";
         class TransportItems {
             class GVAR(MX_greendig) {
                 name = QGVAR(MX_greendig);
@@ -597,7 +597,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_greendig);
+        displayName = "[Ghost] MX 3GL (Green Digital Camo)";
         class TransportItems {
             class GVAR(MX_GL_greendig) {
                 name = QGVAR(MX_GL_greendig);
@@ -611,7 +611,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_greendig);
+        displayName = "[Ghost] MXM (Green Digital Camo)";
         class TransportItems {
             class GVAR(MXM_greendig) {
                 name = QGVAR(MXM_greendig);
@@ -625,7 +625,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_greendig);
+        displayName = "[Ghost] MXC (Green Digital Camo)";
         class TransportItems {
             class GVAR(MXC_greendig) {
                 name = QGVAR(MXC_greendig);
@@ -639,7 +639,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_greendig);
+        displayName = "[Ghost] MX LMG (Green Digital Camo)";
         class TransportItems {
             class GVAR(MX_SW_greendig) {
                 name = QGVAR(MX_SW_greendig);
@@ -655,7 +655,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_greenhex);
+        displayName = "[Ghost] MX (Green Hex Camo)";
         class TransportItems {
             class GVAR(MX_greenhex) {
                 name = QGVAR(MX_greenhex);
@@ -669,7 +669,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_greenhex);
+        displayName = "[Ghost] MX 3GL (Green Hex Camo)";
         class TransportItems {
             class GVAR(MX_GL_greenhex) {
                 name = QGVAR(MX_GL_greenhex);
@@ -683,7 +683,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_greenhex);
+        displayName = "[Ghost] MXM (Green Hex Camo)";
         class TransportItems {
             class GVAR(MXM_greenhex) {
                 name = QGVAR(MXM_greenhex);
@@ -697,7 +697,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_greenhex);
+        displayName = "[Ghost] MXC (Green Hex Camo)";
         class TransportItems {
             class GVAR(MXC_greenhex) {
                 name = QGVAR(MXC_greenhex);
@@ -711,7 +711,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_greenhex);
+        displayName = "[Ghost] MX LMG (Green Hex Camo)";
         class TransportItems {
             class GVAR(MX_SW_greenhex) {
                 name = QGVAR(MX_SW_greenhex);
@@ -727,7 +727,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_greenspray);
+        displayName = "[Ghost] MX (Green Spray Camo)";
         class TransportItems {
             class GVAR(MX_greenspray) {
                 name = QGVAR(MX_greenspray);
@@ -741,7 +741,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_greenspray);
+        displayName = "[Ghost] MX 3GL (Green Spray Camo)";
         class TransportItems {
             class GVAR(MX_GL_greenspray) {
                 name = QGVAR(MX_GL_greenspray);
@@ -755,7 +755,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_greenspray);
+        displayName = "[Ghost] MXM (Green Spray Camo)";
         class TransportItems {
             class GVAR(MXM_greenspray) {
                 name = QGVAR(MXM_greenspray);
@@ -769,7 +769,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_greenspray);
+        displayName = "[Ghost] MXC (Green Spray Camo)";
         class TransportItems {
             class GVAR(MXC_greenspray) {
                 name = QGVAR(MXC_greenspray);
@@ -783,7 +783,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_greenspray);
+        displayName = "[Ghost] MX LMG (Green Spray Camo)";
         class TransportItems {
             class GVAR(MX_SW_greenspray) {
                 name = QGVAR(MX_SW_greenspray);
@@ -799,7 +799,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_greenstrip);
+        displayName = "[Ghost] MX (Green Pattern Camo)";
         class TransportItems {
             class GVAR(MX_greenstrip) {
                 name = QGVAR(MX_greenstrip);
@@ -813,7 +813,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_greenstrip);
+        displayName = "[Ghost] MX 3GL (Green Pattern Camo)";
         class TransportItems {
             class GVAR(MX_GL_greenstrip) {
                 name = QGVAR(MX_GL_greenstrip);
@@ -827,7 +827,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_greenstrip);
+        displayName = "[Ghost] MXM (Green Pattern Camo)";
         class TransportItems {
             class GVAR(MXM_greenstrip) {
                 name = QGVAR(MXM_greenstrip);
@@ -841,7 +841,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_greenstrip);
+        displayName = "[Ghost] MXC (Green Pattern Camo)";
         class TransportItems {
             class GVAR(MXC_greenstrip) {
                 name = QGVAR(MXC_greenstrip);
@@ -855,7 +855,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_greenstrip);
+        displayName = "[Ghost] MX LMG (Green Pattern Camo)";
         class TransportItems {
             class GVAR(MX_SW_greenstrip) {
                 name = QGVAR(MX_SW_greenstrip);
@@ -871,7 +871,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_greenx);
+        displayName = "[Ghost] MX (Green X's Camo)";
         class TransportItems {
             class GVAR(MX_greenx) {
                 name = QGVAR(MX_greenx);
@@ -885,7 +885,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_greenx);
+        displayName = "[Ghost] MX 3GL (Green X's Camo)";
         class TransportItems {
             class GVAR(MX_GL_greenx) {
                 name = QGVAR(MX_GL_greenx);
@@ -899,7 +899,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_greenx);
+        displayName = "[Ghost] MXM (Green X's Camo)";
         class TransportItems {
             class GVAR(MXM_greenx) {
                 name = QGVAR(MXM_greenx);
@@ -913,7 +913,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_greenx);
+        displayName = "[Ghost] MXC (Green X's Camo)";
         class TransportItems {
             class GVAR(MXC_greenx) {
                 name = QGVAR(MXC_greenx);
@@ -927,7 +927,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_greenx);
+        displayName = "[Ghost] MX LMG (Green X's Camo)";
         class TransportItems {
             class GVAR(MX_SW_greenx) {
                 name = QGVAR(MX_SW_greenx);
@@ -943,7 +943,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_greyhex);
+        displayName = "[Ghost] MX (Grey Hex Camo)";
         class TransportItems {
             class GVAR(MX_greyhex) {
                 name = QGVAR(MX_greyhex);
@@ -957,7 +957,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_greyhex);
+        displayName = "[Ghost] MX 3GL (Grey Hex Camo)";
         class TransportItems {
             class GVAR(MX_GL_greyhex) {
                 name = QGVAR(MX_GL_greyhex);
@@ -971,7 +971,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_greyhex);
+        displayName = "[Ghost] MXM (Grey Hex Camo)";
         class TransportItems {
             class GVAR(MXM_greyhex) {
                 name = QGVAR(MXM_greyhex);
@@ -985,7 +985,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_greyhex);
+        displayName = "[Ghost] MXC (Grey Hex Camo)";
         class TransportItems {
             class GVAR(MXC_greyhex) {
                 name = QGVAR(MXC_greyhex);
@@ -999,7 +999,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_greyhex);
+        displayName = "[Ghost] MX LMG (Grey Hex Camo)";
         class TransportItems {
             class GVAR(MX_SW_greyhex) {
                 name = QGVAR(MX_SW_greyhex);
@@ -1015,7 +1015,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_snadpat);
+        displayName = "[Ghost] MX (Sand Pattern Camo)";
         class TransportItems {
             class GVAR(MX_snadpat) {
                 name = QGVAR(MX_snadpat);
@@ -1029,7 +1029,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_snadpat);
+        displayName = "[Ghost] MX 3GL (Sand Pattern Camo)";
         class TransportItems {
             class GVAR(MX_GL_snadpat) {
                 name = QGVAR(MX_GL_snadpat);
@@ -1043,7 +1043,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_snadpat);
+        displayName = "[Ghost] MXM (Sand Pattern Camo)";
         class TransportItems {
             class GVAR(MXM_snadpat) {
                 name = QGVAR(MXM_snadpat);
@@ -1057,7 +1057,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_snadpat);
+        displayName = "[Ghost] MXC (Sand Pattern Camo)";
         class TransportItems {
             class GVAR(MXC_snadpat) {
                 name = QGVAR(MXC_snadpat);
@@ -1071,7 +1071,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_snadpat);
+        displayName = "[Ghost] MX LMG (Sand Pattern Camo)";
         class TransportItems {
             class GVAR(MX_SW_snadpat) {
                 name = QGVAR(MX_SW_snadpat);
@@ -1087,7 +1087,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_DPSO);
+        displayName = "[Ghost] MX (DPSO Camo)";
         class TransportItems {
             class GVAR(MX_DPSO) {
                 name = QGVAR(MX_DPSO);
@@ -1101,7 +1101,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_DPSO);
+        displayName = "[Ghost] MX 3GL (DPSO Camo)";
         class TransportItems {
             class GVAR(MX_GL_DPSO) {
                 name = QGVAR(MX_GL_DPSO);
@@ -1115,7 +1115,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_DPSO);
+        displayName = "[Ghost] MXM (DPSO Camo)";
         class TransportItems {
             class GVAR(MXM_DPSO) {
                 name = QGVAR(MXM_DPSO);
@@ -1129,7 +1129,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_DPSO);
+        displayName = "[Ghost] MXC (DPSO Camo)";
         class TransportItems {
             class GVAR(MXC_DPSO) {
                 name = QGVAR(MXC_DPSO);
@@ -1143,7 +1143,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_DPSO);
+        displayName = "[Ghost] MX LMG (DPSO Camo)";
         class TransportItems {
             class GVAR(MX_SW_DPSO) {
                 name = QGVAR(MX_SW_DPSO);
@@ -1159,7 +1159,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_brush);
+        displayName = "[Ghost] MX (Brush Camo)";
         class TransportItems {
             class GVAR(MX_brush) {
                 name = QGVAR(MX_brush);
@@ -1173,7 +1173,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_brush);
+        displayName = "[Ghost] MX 3GL (Brush Camo)";
         class TransportItems {
             class GVAR(MX_GL_brush) {
                 name = QGVAR(MX_GL_brush);
@@ -1187,7 +1187,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_brush);
+        displayName = "[Ghost] MXM (Brush Camo)";
         class TransportItems {
             class GVAR(MXM_brush) {
                 name = QGVAR(MXM_brush);
@@ -1201,7 +1201,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_brush);
+        displayName = "[Ghost] MXC (Brush Camo)";
         class TransportItems {
             class GVAR(MXC_brush) {
                 name = QGVAR(MXC_brush);
@@ -1215,7 +1215,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_brush);
+        displayName = "[Ghost] MX LMG (Brush Camo)";
         class TransportItems {
             class GVAR(MX_SW_brush) {
                 name = QGVAR(MX_SW_brush);
@@ -1231,7 +1231,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_trash);
+        displayName = "[Ghost] MX (Trash Camo)";
         class TransportItems {
             class GVAR(MX_trash) {
                 name = QGVAR(MX_trash);
@@ -1245,7 +1245,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_trash);
+        displayName = "[Ghost] MX 3GL (Trash Camo)";
         class TransportItems {
             class GVAR(MX_GL_trash) {
                 name = QGVAR(MX_GL_trash);
@@ -1259,7 +1259,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_trash);
+        displayName = "[Ghost] MXM (Trash Camo)";
         class TransportItems {
             class GVAR(MXM_trash) {
                 name = QGVAR(MXM_trash);
@@ -1273,7 +1273,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_trash);
+        displayName = "[Ghost] MXC (Trash Camo)";
         class TransportItems {
             class GVAR(MXC_trash) {
                 name = QGVAR(MXC_trash);
@@ -1287,7 +1287,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_trash);
+        displayName = "[Ghost] MX LMG (Trash Camo)";
         class TransportItems {
             class GVAR(MX_SW_trash) {
                 name = QGVAR(MX_SW_trash);
@@ -1303,7 +1303,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_yonv2);
+        displayName = "[Ghost] MX (YonV2 Camo)";
         class TransportItems {
             class GVAR(MX_yonv2) {
                 name = QGVAR(MX_yonv2);
@@ -1317,7 +1317,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_GL_yonv2);
+        displayName = "[Ghost] MX 3GL (YonV2 Camo)";
         class TransportItems {
             class GVAR(MX_GL_yonv2) {
                 name = QGVAR(MX_GL_yonv2);
@@ -1331,7 +1331,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXM_yonv2);
+        displayName = "[Ghost] MXM (YonV2 Camo)";
         class TransportItems {
             class GVAR(MXM_yonv2) {
                 name = QGVAR(MXM_yonv2);
@@ -1345,7 +1345,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MXC_yonv2);
+        displayName = "[Ghost] MXC (YonV2 Camo)";
         class TransportItems {
             class GVAR(MXC_yonv2) {
                 name = QGVAR(MXC_yonv2);
@@ -1359,7 +1359,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "YonV";
-        displayName = CSTRING(MX_SW_yonv2);
+        displayName = "[Ghost] MX LMG (YonV2 Camo)";
         class TransportItems {
             class GVAR(MX_SW_yonv2) {
                 name = QGVAR(MX_SW_yonv2);
@@ -1375,7 +1375,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "Tyrone";
-        displayName = CSTRING(EBR_Black_F);
+        displayName = "[Ghost] Mk14 Mod 1 EBR (Anodised Black)";
         class TransportItems {
             class GVAR(EBR_Black_F) {
                 name = QGVAR(EBR_Black_F);
@@ -1389,7 +1389,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsPrimary";
         author = "Tyrone";
-        displayName = CSTRING(Mk20_Black_F);
+        displayName = "[Ghost] F2000 (Black Camo)";
         class TransportItems {
             class GVAR(Mk20_Black_F) {
                 name = QGVAR(Mk20_Black_F);
@@ -1404,7 +1404,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsHandguns";
         author = "JoramD";
-        displayName = CSTRING(Walther_P99);
+        displayName = "[Ghost] Walther P99";
         class TransportItems {
             class GVAR(Walther_P99) {
                 name = QGVAR(Walther_P99);
@@ -1413,7 +1413,7 @@ class CfgVehicles {
         };
     };
     class GVAR(Item_Walther_P99_Tan): GVAR(Item_Walther_P99) {
-        displayName = CSTRING(Walther_P99_Tan);
+        displayName = "[Ghost] Walther P99 (Tan)";
         class TransportItems {
             class GVAR(Walther_P99_Tan) {
                 name = QGVAR(Walther_P99_Tan);
@@ -1428,7 +1428,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsSecondary";
         author = "Kresky";
-        displayName = CSTRING(MRAWS_Black_F);
+        displayName = "[Ghost] MAAWS Mk4 Mod 1 (Black)";
         class TransportItems {
             class GVAR(MRAWS_Black_F) {
                 name = QGVAR(MRAWS_Black_F);
@@ -1442,7 +1442,7 @@ class CfgVehicles {
         scopeCurator = 2;
         vehicleClass = "WeaponsSecondary";
         author = "Kresky";
-        displayName = CSTRING(MRAWS_Black_Rail_F);
+        displayName = "[Ghost] MAAWS Mk4 Mod 0 (Black)";
         class TransportItems {
             class GVAR(MRAWS_Black_Rail_F) {
                 name = QGVAR(MRAWS_Black_Rail_F);

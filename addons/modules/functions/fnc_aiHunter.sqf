@@ -7,6 +7,19 @@ private _group = [_spawnPos, _side, _groupType] call BIS_fnc_spawnGroup;
 _group deleteGroupWhenEmpty true;
 
 
+// The adoption offer, exactly as FUNC(aiSpawner) makes it: adopted waves are
+// adopted by an external population system and this wave-watch must
+// stand down - the bridge re-invokes with the next wave's arguments when the
+// profiles die. The hunt trigger is forfeit for an adopted wave.
+private _adopt = [false];
+private _next = if (_waves == -1 || {_waves > 1}) then {
+    [QFUNC(aiHunter), [_side, _groupType, _spawnPos,
+        [_waves - 1, -1] select (_waves == -1), _huntTrigger]]
+} else {[]};
+[QEGVAR(common,groupSpawned), [_group, _next, _adopt]] call CBA_fnc_localEvent;
+if (_adopt select 0) exitWith {};
+
+
 [{
     (_this select 0) params ["_group", "_side","_groupType", "_spawnPos", "_waves", "_huntTrigger"];
 

@@ -146,8 +146,11 @@ def uniform(im, d, name, swatch):
     y0 = ROWS_Y + 18
     if swatch:
         src, crop = swatch
-        if ORIG and os.path.exists(src):
-            sw = Image.open(src).convert("RGB").crop(crop).resize((box_w, box_w), Image.LANCZOS)
+        if src and os.path.exists(src):
+            sw = Image.open(src).convert("RGB")
+            if crop:
+                sw = sw.crop(crop)
+            sw = sw.resize((box_w, box_w), Image.LANCZOS)
             im.paste(sw, (x0, y0))
             d.rectangle([x0 - 3, y0 - 3, x0 + box_w + 2, y0 + box_w + 2], outline=FRAME_PALE, width=3)
     size = 96
@@ -156,6 +159,23 @@ def uniform(im, d, name, swatch):
         size -= 4
     f = font(F_BLACK, size)
     d.text((MARGIN, y0 + (box_w - size) // 2 - 10), name.upper(), font=f, fill=AMBER)
+
+
+def side_figure(im, d, src):
+    """A screenshot standing down the right edge of the body - the panels the
+    board is explaining, at the size a poster would print them. The source
+    lives in addons/media/images, not GHOST_SIGN_ORIG - it is new material,
+    not a crop of an old sign."""
+    if not os.path.exists(src):
+        return
+    fig = Image.open(src).convert("RGB")
+    by0, by1 = DIVIDER_Y + 20, BODY_BOTTOM - 8
+    scale = min((by1 - by0) / fig.height, 420 / fig.width)
+    fig = fig.resize((int(fig.width * scale), int(fig.height * scale)), Image.LANCZOS)
+    x = W - MARGIN - fig.width
+    y = by0 + ((by1 - by0) - fig.height) // 2
+    im.paste(fig, (x, y))
+    d.rectangle([x - 3, y - 3, x + fig.width + 2, y + fig.height + 2], outline=FRAME_PALE, width=3)
 
 
 def sections(im, d, blocks):
@@ -216,11 +236,13 @@ def T(lines, sub=None, foot=None):
 def R(title, items, sub=None, foot=None):
     return {"kind": "rows", "title": title, "items": items, "sub": sub, "foot": foot}
 
-def S(title, blocks, sub=None, foot=None):
-    return {"kind": "sections", "title": title, "blocks": blocks, "sub": sub, "foot": foot}
+def S(title, blocks, sub=None, foot=None, fig=None):
+    return {"kind": "sections", "title": title, "blocks": blocks, "sub": sub, "foot": foot, "fig": fig}
 
-def U(name, src, box, foot=None):
-    return {"kind": "uniform", "name": name, "src": src, "box": box, "foot": foot}
+def U(name, src, box, foot=None, local=False):
+    """local=True reads src from addons/media/images (repo material) rather
+    than the GHOST_SIGN_ORIG folder of old converted signs."""
+    return {"kind": "uniform", "name": name, "src": src, "box": box, "foot": foot, "local": local}
 
 def FIG(title, src, box, sub=None, foot=None):
     return {"kind": "figure", "title": title, "src": src, "box": box, "sub": sub, "foot": foot}
@@ -272,10 +294,15 @@ SIGNS = {
     "gbbanner3":        T(["Ghosts of Battle"]),
 
     # ---- uniform of the day ----------------------------------------------
-    "mcw":  U("Multicam Woodland",     "tsigns/mcw.png",  (1509, 329, 1908, 742)),
-    "mtp":  U("Multicam / MTP",        "ghost/mtp.png",   (1429, 367, 1904, 842)),
+    "mcw":  U("Multicam Woodland",     "tsigns/mcw.png",  (1509, 312, 1937, 741)),
+    # swatch cut from the official pattern art the user supplied - same
+    # 210px source width as every other cut so the pattern scale matches
+    "mtp":  U("Multicam / MTP",        "mtp_swatch.png",  None, local=True),
     "mtpa": U("Multicam Desert / Arid","ghost/mtpa.png",  (1476, 407, 1869, 801)),
-    "mypt": U("Multicam Tropic",       "ghost/mypt.png",  (1422, 368, 1896, 842)),
+    "mypt": U("Multicam Tropic",       "ghost/mypt.png",  (1422, 358, 1896, 842)),
+    # swatch cut from the CTRG OCP uniform texture and kept in the repo -
+    # there was never an old OCP sign to lift one from
+    "ocp":  U("OCP",                   "ocp_swatch.png",  None, local=True),
 
     # ---- information boards ----------------------------------------------
     "patrol_base": S("Staging Zones & Patrol Bases", [
@@ -314,10 +341,13 @@ SIGNS = {
         ["Hypoxia", "above 4000 ft you need a HALO mask"],
         ["Boo Boo Bag", "an IFAK - open it with ACE self-interact"],
         ["VS-17", "portable helipad - AI may or may not land on it"],
-        ["View Distance", "in the ALiVE menu, opened with the App key"],
+        ["View Distance", "the \ key, or CTRL + [ and CTRL + ] to step it"],
         ["NVG Brightness", "ALT + Page Up / Page Down"],
         ["Laser Code", "CTRL + ALT + Q up, CTRL + ALT + E down"],
-    ], sub="Map the App key under Configure - Controls - Addons - ALiVE",
+        ["Vector Marker", "CTRL + SHIFT + M - marks your target for everyone"],
+        ["Vector Waypoint", "CTRL + SHIFT + N - a waypoint only you can see"],
+        ["Timers", "ACE self-interact - Set Timer - 1, 2, 3 or 5 minutes"],
+    ], sub="Timers ring for everyone carrying a scanner - silence yours with the alarm key",
        foot="Always remember to pillage BEFORE you burn"),
 
     "ghostroles": R("Pick Role", [
@@ -369,6 +399,20 @@ SIGNS = {
     ], sub="S7 Android for everyone  -  rugged tablet for leaders",
        foot="Open the tablet or android with H"),
 
+    "tacpad": S("Custom Info & Tacpad", [
+        ("On Your Screen", "", [
+            ["[ ]", "left / right custom info - cycle what each side shows"],
+            ["Shift + [ ]", "show the new UI readouts, left / right"],
+            ["Alt + [ ]", "cycle the tiles - squad, EW, drones, jamming, radio, timer"],
+        ]),
+        ("On The Map", "open the map - the whole UI is drawn on it", [
+            ["Live Tiles", "the top band - press one and its app opens full size"],
+            ["TAC//MSG", "the reader - nets, threads and line-report templates"],
+            ["TAC//SUPPORT", "task ALiVE transport, CAS and artillery - JFO holds it"],
+        ]),
+    ], fig="hud_panels.png",
+       foot="Every key is rebindable - CBA controls, under Ghosts of Battle"),
+
     "viewd": R("View Distance", [
         ["Backslash", "default keybind for the view distance menu"],
         ["ACE", "also available under ACE self-interact"],
@@ -407,10 +451,14 @@ def render(name, spec):
     elif spec["kind"] == "sections":
         header(im, d, spec["title"], spec.get("sub"))
         sections(im, d, spec["blocks"])
+        if spec.get("fig"):
+            side_figure(im, d, os.path.join(IMG, spec["fig"]))
         footer(im, d, spec.get("foot"))
     elif spec["kind"] == "uniform":
         header(im, d, "Uniform of the Day")
-        uniform(im, d, spec["name"], (os.path.join(ORIG, spec["src"]), spec["box"]))
+        uniform(im, d, spec["name"], (
+            os.path.join(IMG if spec.get("local") else ORIG, spec["src"]), spec["box"]
+        ))
         footer(im, d, spec.get("foot"))
     elif spec["kind"] == "rows":
         header(im, d, spec["title"], spec.get("sub"))

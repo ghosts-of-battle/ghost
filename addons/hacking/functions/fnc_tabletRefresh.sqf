@@ -22,7 +22,6 @@ if (isNull _display) exitWith {};
 
 private _session = GVAR(session);
 private _selected = _session get "device";
-private _kind = _session get "kind";
 private _running = _session get "running";
 
 // --- device cards ----------------------------------------------------------
@@ -59,37 +58,11 @@ for "_i" from 0 to (TAB_CARDS - 1) do {
 };
 
 // --- intel buttons ---------------------------------------------------------
-private _avail = [];
-if (_kind isEqualTo "drone") then {
-    // A drone hack does one thing; there is nothing to choose.
-    _avail pushBack ["none", "DOWN THE DRONE"];
-} else {
-    _avail pushBack ["picture", "LOCAL PICTURE"];
-    _avail pushBack ["sigint", "SIGINT HINT"];
-    if (!isNil "ghost_electronic_war_zones_fnc_getZones") then {
-        private _spent = missionNamespace getVariable [QGVAR(spentZones), []];
-        {
-            _x params ["_type", "_label"];
-            private _pool = [_type, _spent, false] call ghost_electronic_war_zones_fnc_getZones;
-            private _all = [_type, [], true] call ghost_electronic_war_zones_fnc_getZones;
-            if (_pool isNotEqualTo [] || {_all isNotEqualTo []}) then {
-                _avail pushBack [_type, [format ["LOCATE %1", _label], format ["%1 OVERVIEW", _label]] select (_pool isEqualTo [])];
-            };
-        } forEach [["jam", "JAMMER"], ["detect", "DETECTOR"]];
-    };
-    if ((missionNamespace getVariable [QGVAR(intelTargets), []]) isNotEqualTo []) then {
-        _avail pushBack ["target", "MARK INTEL TARGET"];
-    };
-};
-if (count _avail > TAB_INTEL) then { _avail = _avail select [0, TAB_INTEL] };
-GVAR(intelAvailable) = _avail;
-
-// Keep the selection valid when the list changes under it.
+// What can be produced, and keeping the selection valid, is FUNC(intelOptions)'s
+// - it is a question about the mission rather than about this display, and the
+// tacpad's intrusion app asks the same one.
+private _avail = call FUNC(intelOptions);
 private _intel = _session get "intel";
-if ((_avail findIf { (_x select 0) isEqualTo _intel }) < 0) then {
-    _intel = (_avail param [0, ["picture", ""]]) select 0;
-    _session set ["intel", _intel];
-};
 
 for "_i" from 0 to (TAB_INTEL - 1) do {
     private _btn = _display displayCtrl IDC_INTEL_BTN(_i);

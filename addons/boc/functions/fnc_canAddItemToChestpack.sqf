@@ -19,6 +19,11 @@
 params ["_unit","_item",["_amount",1]];
 
 private _var = _unit getVariable [QGVAR(chestpack), nil];
+
+// No chestpack, no room - this had no nil guard at all and threw on the
+// select for exactly the unit the answer should be false for.
+if (isNil "_var") exitWith {false};
+
 private _preLoadPercent = _var select 4;
 
 //calculate space left in chestpack

@@ -1,8 +1,8 @@
 [
     QGVAR(enabled),
     "CHECKBOX",
-    [LSTRING(Forced), LSTRING(Forced_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Force Grass", "Forces grass for all players"],
+    ["Ghosts of Battle", "Ghosts of Battle - Grass"],
     false,
     1,
     {[_this] call FUNC(toggle)}

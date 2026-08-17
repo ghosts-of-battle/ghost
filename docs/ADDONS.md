@@ -8,11 +8,11 @@ A dependency in **bold** is an external mod.
 | Addon | Name | units | weapons | fns | Requires |
 |---|---|--:|--:|--:|---|
 | `cba_settings` | CBA Settings |  |  |  | **cba_settings**, **ace_hearing** |
-| `common` | Common |  |  | 37 | - |
+| `common` | Common |  |  | 47 | - |
 | `compatibility` | Compatibility |  |  |  | A3_Data_F_Decade_Loadorder |
 | `main` | Main |  |  |  | **cba_main**, **diwako_dui_main**, A3_Weapons_F |
 | `media` | Media |  |  | 1 | - |
-| `modules` | Modules | 4 |  | 8 | - |
+| `modules` | Modules | 4 |  | 8 | ghost_common |
 
 ## Gear - worn
 
@@ -24,7 +24,7 @@ A dependency in **bold** is an external mod.
 | `flags` | Flags |  |  |  | ghost_common |
 | `headware` | Headware | 46 | 51 | 1 | **ace_hearing** |
 | `headware_jca_ie` | Headware_jca_ie |  | 12 | 1 | **Headwear_F_JCA_IE**, **ace_hearing** |
-| `nvg` | Nvg |  |  | 3 | ghost_common, **cba_main**, **ace_nightvision** |
+| `nvg` | Nvg |  |  | 3 | ghost_common, **cba_main**, **ace_nightvision**, A3_EFA_characters_f |
 | `uniform` | Uniform | 26 | 14 |  | - |
 | `uniform_eu` | Uniform_eu | 6 | 6 | 1 | A3_Characters_F, A3_Data_F_Decade_Loadorder, **data_f_lxWS_Loadorder** |
 | `uniform_sof` | uniform_sof | 67 | 51 | 1 | **SOF_Characters**, A3_Characters_F, **ace_hearing** |
@@ -40,11 +40,11 @@ A dependency in **bold** is an external mod.
 
 | Addon | Name | units | weapons | fns | Requires |
 |---|---|--:|--:|--:|---|
-| `equipment` | Equipment | 2 | 2 |  | A3_Ui_F, **cba_main**, **cba_xeh**, ghost_medbags, **ace_vector**, **ace_fortify** ... |
+| `equipment` | Equipment | 4 | 4 | 4 | A3_Ui_F, **cba_main**, **cba_xeh**, ghost_medbags, **ace_vector**, **ace_fortify** ... |
 | `flares` | Flares |  |  |  | ghost_common |
 | `medbags` | MedBags | 5 | 5 | 14 | A3_Props_F_Orange, ghost_common |
 | `optics` | Optics | 7 | 9 | 1 | A3_Weapons_F, A3_Weapons_F_Mark, **ace_xm157**, **cba_jr** |
-| `optics_ef` | Optics_ef |  | 4 | 1 | **ace_xm157**, A3_EFA_characters_f |
+| `optics_ef` | Optics_ef |  | 4 | 1 | **ace_xm157**, A3_EFA_characters_f, **cba_jr** |
 | `smoke` | Smoke |  |  |  | - |
 | `tagging` | Tagging |  |  |  | ghost_common |
 | `weapons` | Weapons |  |  | 1 | A3_Weapons_F, A3_Weapons_F_Mark_Machineguns_M200 |
@@ -59,29 +59,16 @@ A dependency in **bold** is an external mod.
 | `chat` | Chat |  |  | 1 | ghost_common, ghost_notify |
 | `curator` | Curator |  |  | 3 | ghost_debug_console |
 | `evac` | Evac |  |  | 3 | **ace_interact_menu**, **ace_common**, **ace_medical**, **ace_medical_treatment** |
-| `hacking` | Hacking | 4 | 2 | 42 | **ace_interact_menu**, **ace_common**, ghost_notify, ghost_common, **cba_xeh** |
+| `hacking` | Hacking | 1 | 6 | 58 | **ace_interact_menu**, **ace_common**, ghost_notify, ghost_common, **cba_xeh** |
 | `insurgents` | Insurgents | 3 |  | 2 | ghost_common |
-| `intel_hunt` | Intel Hunt | 1 |  | 9 | ghost_common, ghost_notify, **ace_interact_menu** |
 | `killtracker` | Killtracker |  |  | 1 | - |
-| `objective_watch` | Objective Watch | 1 |  | 9 | ghost_common, ghost_notify |
 | `patrol_base` | Patrol Base | 2 | 2 | 12 | ghost_notify |
 | `remotesensors` | Remotesensors |  |  |  | ghost_common |
-| `respawn` | Respawn | 1 |  | 9 | ghost_common, ghost_notify |
+| `respawn` | Respawn |  |  | 9 | ghost_common, ghost_notify |
 | `safestart` | Safestart |  |  | 4 | ghost_common |
 | `spectator` | Spectator |  |  | 11 | ghost_common, A3_Functions_F_Exp_A |
 | `tasks` | Tasks |  |  | 11 | ghost_common |
 | `towing` | Towing |  |  |  | ghost_common |
-
-## ALiVE and ambient
-
-| Addon | Name | units | weapons | fns | Requires |
-|---|---|--:|--:|--:|---|
-| `alive` | Alive |  |  | 1 | **ALiVE_splashscreen** |
-| `ambient_arty` | Ambient Artillery | 1 |  | 5 | - |
-| `ambient_drones` | Ambient Drones | 1 |  | 4 | ghost_drones |
-| `ambient_kamikaze` | Ambient Kamikaze Drones | 1 |  | 5 | - |
-| `base_defense` | Base Defense | 1 |  | 5 | ghost_drones |
-| `electronic_war_zones` | Electronic War Zones | 1 |  | 22 | ghost_drones |
 
 ## Gameplay tweaks
 
@@ -102,7 +89,6 @@ A dependency in **bold** is an external mod.
 | `safe_grenades` | Safe Grenades |  |  | 3 | - |
 | `safeboating` | Safeboating |  |  | 3 | - |
 | `spotlight_block` | Spotlight Block |  |  |  | A3_Ui_F |
-| `suppress` | Suppress |  |  | 6 | - |
 | `tanks` | Tanks |  |  | 1 | - |
 
 ## Interface
@@ -122,15 +108,25 @@ A dependency in **bold** is an external mod.
 
 | Addon | Name | units | weapons | fns | Requires |
 |---|---|--:|--:|--:|---|
-| `aircraft` | Aircraft | 1 |  | 7 | ghost_drones |
-| `antiship` | AntiShip | 5 |  | 5 | **cba_xeh** |
-| `ciws` | CIWS | 1 |  | 11 | ghost_common, **cba_xeh** |
-| `counter_battery` | Counter-Battery | 1 |  | 7 | ghost_common, ghost_notify, **cba_xeh** |
-| `drones` | Drones | 1 |  | 14 | ghost_common |
-| `kamikaze` | Kamikaze | 1 |  | 3 | **cba_xeh** |
+| `adapter_alive` | ALiVE Adapter |  |  | 23 | ghost_common, **cba_xeh**, **ALiVE_main** |
+| `adminpanel` | Admin Panel |  |  | 18 | ghost_common, ghost_notify, ghost_tacpad, **cba_xeh** |
+| `airdefence` | Air Defence | 1 |  | 11 | ghost_common, **cba_xeh** |
+| `ambience` | Ambience | 2 |  | 4 | ghost_common, **cba_xeh** |
+| `antiship` | AntiShip | 6 |  | 7 | ghost_common, **cba_xeh** |
+| `bft` | BFT |  |  | 21 | ghost_common, **ace_interact_menu**, **ace_common**, **cba_xeh** |
+| `boarding` | Boarding | 1 |  | 4 | ghost_notify, **ace_interact_menu**, **cba_xeh** |
+| `hud` | HUD |  |  | 13 | ghost_common, ghost_tacpad, **cba_xeh** |
+| `jamming` | Jamming | 1 |  | 13 | ghost_common, **cba_xeh** |
+| `leaders` | Leaders | 1 |  | 16 | ghost_common, ghost_notify, **cba_xeh** |
+| `messaging` | Messaging |  |  | 41 | ghost_common, ghost_notify, **cba_xeh** |
 | `naval` | Naval | 1 |  | 1 | ghost_common, **cba_xeh** |
-| `repair` | Repair | 1 |  | 3 | **cba_xeh** |
+| `qrf` | QRF | 1 |  | 9 | ghost_common, ghost_notify, **cba_xeh** |
+| `reaction` | Reaction | 1 |  | 6 | ghost_common, ghost_notify, **cba_xeh** |
+| `repair` | Repair | 1 |  | 3 | ghost_common, **cba_xeh** |
 | `satcom` | SatCom | 1 | 1 | 5 | **ace_interact_menu**, **cba_xeh** |
+| `tacpad` | Tacpad |  |  | 43 | ghost_common, **cba_xeh** |
+| `tacpad_apps` | Tacpad Apps |  |  | 31 | ghost_common, ghost_tacpad, **cba_xeh** |
+| `uas` | UAS | 1 |  | 11 | ghost_common, **cba_xeh** |
 
 ## Optionals
 
@@ -138,12 +134,7 @@ Not loaded by default - copy out of `optionals/` to use.
 
 | Addon | Name | units | weapons | fns |
 |---|---|--:|--:|--:|
-| `faction_i_afghanistan` | Afghanistan | 45 |  |  |
-| `faction_i_taliban` | Taliban | 40 |  |  |
-| `faction_o_turkmenistan` | Turkmenistan | 62 |  |  |
-| `fiberscope` | Fiberscope |  | 1 | 3 |
-| `halogear` | HALO Gear | 2 | 1 | 23 |
-| `insertion` | Insertion Handler |  |  | 52 |
+| `suppress` | Suppress |  |  | 6 |
 | `weapons_ghost` | Weapons (Ghost) | 101 | 103 | 1 |
 | `weapons_spsv2` | Weapons_spsv2 |  |  | 1 |
 
@@ -152,4 +143,4 @@ Not loaded by default - copy out of `optionals/` to use.
 These declare `skipWhenMissingDependencies`, so they drop out quietly when an
 external mod is absent instead of breaking the load:
 
-`aircraft`, `alive`, `ambient_arty`, `ambient_kamikaze`, `antiship`, `ciws`, `counter_battery`, `headware_jca_ie`, `kamikaze`, `naval`, `optics`, `optics_ef`, `patrol_base`, `repair`, `satcom`, `uniform_eu`, `uniform_sof`, `vests_aegis`, `vests_efa`, `vests_jca`, `vests_sof`, `vests_ws`, `vs17`, `weapons_jca`, `faction_i_afghanistan`, `faction_i_taliban`, `faction_o_turkmenistan`, `fiberscope`, `halogear`, `insertion`, `weapons_spsv2`
+`adapter_alive`, `airdefence`, `ambience`, `antiship`, `boarding`, `headware_jca_ie`, `jamming`, `leaders`, `naval`, `nvg`, `optics`, `optics_ef`, `patrol_base`, `qrf`, `reaction`, `repair`, `satcom`, `uas`, `uniform_eu`, `uniform_sof`, `vests_aegis`, `vests_efa`, `vests_jca`, `vests_sof`, `vests_ws`, `vs17`, `weapons_jca`, `weapons_spsv2`

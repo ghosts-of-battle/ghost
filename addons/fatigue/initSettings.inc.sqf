@@ -1,8 +1,8 @@
 [
     QGVAR(highJogCoefEnabled),
     "CHECKBOX",
-    [LSTRING(High_Jog_Coef_Enabled), LSTRING(High_Jog_Coef_Enabled_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Enable custom high jog coefficient", "Enables custom high jog coefficient when moving with weapon ready. Requires ACE Advanced Fatigue working."],
+    ["Ghosts of Battle", "Ghosts of Battle - Fatigue"],
     false,
     1,
     {[_this] call FUNC(toggleHighJogFactor)}
@@ -11,8 +11,8 @@
 [
     QGVAR(highJogCoef),
     "SLIDER",
-    [LSTRING(High_Jog_Coef), LSTRING(High_Jog_Coef_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Custom high jog coefficient", "Additional stamina used coefficient when moving with weapon ready. 100% is default ACE, 80% it's like you had low weapon ready."],
+    ["Ghosts of Battle", "Ghosts of Battle - Fatigue"],
     [0.8, 1, 0.9, 0, true],
     1
 ] call CBA_fnc_addSetting;

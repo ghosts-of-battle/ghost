@@ -19,10 +19,13 @@ params ["_unit"];
 
 if (isNil "_unit") exitWith {["No proper argument(s) given."] call BIS_fnc_error};
 private _var = _unit getVariable [QGVAR(chestpack), nil];
-private _chestpack = (_var select 0) select 1;
 
-//return objNull
-if (isNil "_var" or isNil "_chestpack") exitWith {objNull};
+// The guard has to run BEFORE the select - dereferencing nil threw first
+// and the no-chestpack default this guard exists for was never returned.
+if (isNil "_var") exitWith {objNull};
+
+private _chestpack = (_var select 0) select 1;
+if (isNil "_chestpack") exitWith {objNull};
 
 //return object
 _chestpack

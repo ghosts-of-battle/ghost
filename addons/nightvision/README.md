@@ -1,7 +1,11 @@
-## Nightvision
+# Nightvision
 
-Adds broken/disabled night vision goggles.
+`ghost_nightvision`
 
-### Authors
+Night-vision behaviour and appearance.
 
-- [3Mydlo3](https://github.com/3Mydlo3)
+<!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
+
+## Requires
+
+- `ghost_common`

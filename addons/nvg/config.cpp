@@ -9,8 +9,13 @@ class CfgPatches {
         requiredAddons[] = {
             "ghost_common",
             "cba_main",
-            "ace_nightvision"
+            "ace_nightvision",
+            // The four LP NVGs inherit EF's own sets - see CfgWeapons.hpp. With
+            // that mod absent this addon skips rather than erroring, which is
+            // what skipWhenMissingDependencies is for and why it must stay.
+            "A3_EFA_characters_f"
         };
+        skipWhenMissingDependencies = 1;
         author = QAUTHOR;
         authors[] = {"YONV"};
         VERSION_CONFIG;

@@ -1,4 +1,4 @@
-// cTab message templates - aligned to the 61st smart cards deck (plus SITREP
+// cTab message templates - aligned to the Ghost smart cards deck (plus SITREP
 // and CALL FOR FIRE which are not in the deck). Registering any custom template
 // disables cTab's builtin templates, so one template with messageType 1
 // (MEDEVAC type - here the 6-line CASEVAC) must always be present: the tablet's
@@ -11,9 +11,8 @@
 // Contracts with ghost_ctab_groups:
 //  - uid "ghost#tic" is special-cased: broadcast to all side players + scanner
 //    alert + map marker
-//  - uids "ghost#contactrep"/"ghost#sitrep" post into ALiVE when sent to a
-//    [GROUP] box; the field mapping is keyed by the LINE TITLES - keep them
-//    in sync with ghost_ctab_groups_fnc_postAliveReport when renaming
+//  - uids "ghost#contactrep"/"ghost#sitrep": the field mapping is keyed by
+//    the LINE TITLES - keep them stable when renaming
 
 // 6-LINE CASEVAC (deck) - the MEDEVAC-type template
 [
@@ -100,7 +99,7 @@
 ] call ctab_fnc_registerMessageTemplate;
 
 // SALUTE / CONTACTREP (deck, 7 lines incl. Remarks) - line titles S/A/L/U/T/E/R
-// are read by ghost_ctab_groups_fnc_postAliveReport
+// are the report's field keys
 [
     "ghost#contactrep",
     0,
@@ -133,8 +132,7 @@
     ]
 ] call ctab_fnc_registerMessageTemplate;
 
-// SITREP (not in deck; kept for the ALiVE bridge) - line titles are read by
-// ghost_ctab_groups_fnc_postAliveReport
+// SITREP (not in deck) - line titles are the report's field keys
 [
     "ghost#sitrep",
     0,

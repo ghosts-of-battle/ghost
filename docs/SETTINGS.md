@@ -3,6 +3,13 @@
 Everything under **Options > Addon Options**. `Default` is the value the addon
 ships with, which a mission or the forced list below can override.
 
+## Admin Panel (`adminpanel`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Enable admin console | CHECKBOX | Ghosts of Battle > Admin Console | `true` | Registers the admin console keybinds and the #ghost admin commands. Off leaves the addon loaded and inert - it does not grant or revoke anybody's admi |
+| Ghost admins may open it | CHECKBOX | Ghosts of Battle > Admin Console | `true` | Lets anyone carrying ghost's own admin flag open the console, as well as the uids in the mission's list. Off means the mission's list is the only way  |
+
 ## Ai Disembark (`ai_disembark`)
 
 | Setting | Type | Category | Default | What it does |
@@ -18,6 +25,28 @@ ships with, which a mission or the forced list below can override.
 | Teleport to leader | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Back To Game | `true` | Allow player teleportation to his group leader. |
 | Teleport to vehicle | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Back To Game | `true` | Allow player teleportation to his last vehicle or group leader vehicle. |
 | Remove body | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Back To Game | `true` | Removes bodies of alive people who disconnected. |
+
+## BFT (`bft`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Enable group markers | CHECKBOX | Ghosts of Battle > BFT | `true` | Blue Force Tracking: every group that has its tracker on is drawn on the map for everyone who shares one of its networks. |
+| Auto enable for | LIST | Ghosts of Battle > BFT | `[[0, 1, 2], ["None", "Player", "All"], 2` | None: nothing is tracked until switched on by hand. Player or All: groups nobody has configured are tracked automatically. |
+| Member markers | LIST | Ghosts of Battle > BFT | `[[0, 1, 2], ["Off", "Own squad", "All tr` | Individual marks for the men inside tracked groups, coloured by fire team. Own squad: your group's members. All tracked: every same-side tracked group |
+| Update delay | SLIDER | Ghosts of Battle > BFT | `[1, 60, 5, 0]` | Delay between group marker updates. |
+| Marker shape | LIST | Ghosts of Battle > BFT | `[["a", "b", "o", "n"], ["Automatic", "Bl` | Warning! Taking this off automatic will also affect enemy groups. |
+| Position: tracking mode | LIST | Ghosts of Battle > BFT | `[["leader", "weightedAverage"], ["Leader` | The way a group's position is calculated. |
+| Position: trailing mode | LIST | Ghosts of Battle > BFT | `[["none", "weightedAverage", "delayed"],` | Lets a group's position trail behind its actual position. |
+| Position: trailing count | SLIDER | Ghosts of Battle > BFT | `[1, 25, 5, 0]` | Amount of recent positions considered. |
+| Position: trailing weight | SLIDER | Ghosts of Battle > BFT | `[0, 1, 0.75, 2]` | Factor with which the weight decreases with per position. |
+| Map settings menu | CHECKBOX | Ghosts of Battle > BFT | `true` | Allows group leaders to change their own marker with ACE self interaction while the map is open. |
+| Group name options | EDITBOX | Ghosts of Battle > BFT | `["Zulu,Lima,Uniform,Echo,Whiskey,Tango"]` | Names available in the ACE BFT settings, separated by comma. |
+| Preferred icons | EDITBOX | Ghosts of Battle > BFT | `["inf, motor_inf, mech_inf, air, armor, ` | Icons offered first, before the Other icons submenu. |
+| Icons blacklist | EDITBOX | Ghosts of Battle > BFT | `["unknown, uav"]` | Icons a group leader may never pick. |
+| Preferred colors | EDITBOX | Ghosts of Battle > BFT | `["ColorBLUFOR, ColorOPFOR, ColorIndepend` | Colors offered first, before the Other colors submenu. |
+| Colors blacklist | EDITBOX | Ghosts of Battle > BFT | `["Default, ColorWEST, ColorEAST, ColorGU` | Colors a group leader may never pick. |
+| Obfuscate other sides | CHECKBOX | Ghosts of Battle > BFT | `true` | Groups of another side show as an unknown icon with their side's name and colour, rather than their own. |
+| Admin sees everything | CHECKBOX | Ghosts of Battle > BFT | `true` | A logged-in admin draws every group: networks, tracker state and side obfuscation are all ignored for them. Admins can still switch it off for themsel |
 
 ## Backpack On Chest (`boc`)
 
@@ -37,25 +66,20 @@ ships with, which a mission or the forced list below can override.
 | Setting | Type | Category | Default | What it does |
 |---|---|---|---|---|
 | ISR unit variable | EDITBOX | Ghosts of Battle > Common | `"isISR"` | Name of the unit variable marking someone as an ISR operator. Gates the hacking tablet and Intel Hunt processing. Set it on a unit with: this setVaria |
+| Threat Board Debug | CHECKBOX | Ghosts of Battle > Common | `false` | Log every contact ghost's sensors file on a side's threat board - what that side knows, where, how wrong it might be, and which sensor said so. |
 
-## Difficulty (`difficulty`)
-
-| Setting | Type | Category | Default | What it does |
-|---|---|---|---|---|
-| armorAccuracyFactor_DisplayName | SLIDER | Ghosts of Battle > (built at runtime) | `[0, 2, 0.5, 2]` | armorAccuracyFactor_Description |
-
-## Drones (`drones`)
+## Equipment (`equipment`)
 
 | Setting | Type | Category | Default | What it does |
 |---|---|---|---|---|
-| Drone datalink | CHECKBOX | Ghosts of Battle > Drones | `true` | On: every drone this mod spawns joins its side's sensor network - it reports the contacts it sees and receives everyone else's, so recon cues the shoo |
-
-## Electronic War Zones (`electronic_war_zones`)
-
-| Setting | Type | Category | Default | What it does |
-|---|---|---|---|---|
-| Show jamming meter | CHECKBOX | Ghosts of Battle > Electronic Warfare | `true` | On-screen meter while you are inside a jamming field. Off hides it - the jamming still happens, you just get no warning. |
-| RDF Items (any one) | EDITBOX | Ghosts of Battle > Electronic Warfare | `"ItemcTab,ItemAndroid,ItemAndroidMisc"` | Comma-separated item classnames; carrying ANY ONE means you are sweeping for emitters - it runs by itself and reports when the picture changes, there  |
+| Enable Vector Target Marker | CHECKBOX | Ghosts of Battle > Equipment | `true` | Allows placing a map marker on the point aimed at through a [Ghost] Vector Designator. |
+| Vector Marker Type | LIST | Ghosts of Battle > Equipment | `[ ["hd_dot", "hd_objective", "hd_destroy` | Marker placed on the target position. |
+| Vector Marker Color | LIST | Ghosts of Battle > Equipment | `[ ["Default", "ColorBlack", "ColorGrey",` | Color of the marker placed on the target position. |
+| Vector 3D Marker Duration (s) | SLIDER | Ghosts of Battle > Equipment | `[0, 600, 120, 0]` | Shows the marker name in-world (3D) at the target position for this many seconds. 0 = disabled. |
+| Vector Marker Lifetime (s) | SLIDER | Ghosts of Battle > Equipment | `[0, 1800, 0, 0]` | Marker is deleted after this many seconds. 0 = permanent. |
+| Enable Vector Personal Waypoint | CHECKBOX | Ghosts of Battle > Equipment | `true` | Allows dropping a waypoint only you can see on the point aimed at through a [Ghost] Vector Designator. One at a time; aiming at it again clears it. |
+| Vector Waypoint Type | EDITBOX | Ghosts of Battle > Equipment | `"mil_dot"` | Marker type for the personal waypoint. Deliberately smaller than the shared target marker - mil_dot is a good default. |
+| Vector Waypoint Colour | EDITBOX | Ghosts of Battle > Equipment | `"ColorYellow"` | Marker colour for the personal waypoint. Something the shared marker is not. |
 
 ## Evac (`evac`)
 
@@ -89,12 +113,29 @@ ships with, which a mission or the forced list below can override.
 | Setting | Type | Category | Default | What it does |
 |---|---|---|---|---|
 | Enable Hacking | CHECKBOX | Ghosts of Battle > Hacking | `true` | Master toggle for the tower/drone hacking self-interaction. |
-| Required Items (any one) | EDITBOX | Ghosts of Battle > Hacking | `"ghost_hacking_tabletItem"` | Comma-separated item classnames; carrying ANY ONE unlocks the hacking tablet. Defaults to the Intrusion Tablet item - add ItemcTab,ItemAndroid etc if  |
 | Hack Condition | EDITBOX | Ghosts of Battle > Hacking | `"true"` | SQF condition that must also return true before anyone can hack. `_this` is the unit. Left as ""true"" it never blocks anything. Example: side group _ |
 | Hackable Tower Classes | EDITBOX | Ghosts of Battle > Hacking | `"Land_TTowerBig_2_F,Land_TTowerBig_1_F,L` | Comma-separated object classnames hackable as 'towers', in addition to Electronic War Zones emitters. |
 | Downable Drone Classes | EDITBOX | Ghosts of Battle > Hacking | `""` | Comma-separated vehicle classnames that 'Down Drone' may target. Blank = any enemy UAV, which is the old behaviour. Listed classes still have to be en |
-| Require ISR operator | CHECKBOX | Ghosts of Battle > Hacking | `true` | On: only a unit flagged as ISR can use the tablet, on top of carrying it. The flag and its variable name are shared with Intel Hunt - see Common. |
-| Scanner Items (any one) | EDITBOX | Ghosts of Battle > Hacking | `"ghost_hacking_scannerItem"` | Comma-separated item classnames that count as a signal scanner. Reading warning lamps needs no ISR flag - only the tablet does. |
+| Require ISR operator | CHECKBOX | Ghosts of Battle > Hacking | `true` | On: only a unit flagged as ISR can use the intrusion suite. This is the ONLY gate on hacking - no device is checked. The flag and its variable name ar |
+| Scanner Variable | EDITBOX | Ghosts of Battle > Hacking | `"ghost_isScanner"` | Unit variable that controls who sweeps for emitters. Everyone does by default - no device and no flag needed. Set this variable FALSE on a unit to den |
+| Scanner Alarm Volume | SLIDER | Ghosts of Battle > Hacking | `[0, 2, 1, 1]` | How loud YOUR scanner's alarm beeps. 0 silences the beep entirely - the screen still blinks and the notification still shows. |
+| Remote Unit Hack | CHECKBOX | Ghosts of Battle > Hacking | `false` | Players can hack an enemy soldier's comms at range. Success buys one intel product centred on the target; failure can alert the area and jam your own  |
+| Remote Hack Range (m) | SLIDER | Ghosts of Battle > Hacking | `[50, 3000, 800, 0]` | How far a target handset can be to start a remote hack, and how far before the signal drops. Everything else about the failure package keeps its shipp |
+| Tower TAOR Marker(s) | EDITBOX | Ghosts of Battle > Hacking | `""` | Comma-separated area marker names. Towers are hackable only inside them. Blank = anywhere on the map. |
+| Enemy Cell Phone Carriers (%) | SLIDER | Ghosts of Battle > Hacking | `[0, 100, 30, 0]` | Percentage of enemy soldiers carrying a hackable cell phone. The rest have nothing to hack. Requires Remote Unit Hack on. |
+| Deposits per Hint | SLIDER | Ghosts of Battle > Hacking | `[1, 50, 10, 0]` | Intel items that must be DEPOSITED at a drop before ISR processes a batch and one hint circle fires. Items carried in a pocket count for nothing. |
+| Documents on Bodies (%) | SLIDER | Ghosts of Battle > Hacking | `[0, 100, 30, 0]` | Chance a body with no phone still carries searchable documents. Insurgents always carry a phone, so this only governs everyone else. |
+| Extra detection per net | SLIDER | Ghosts of Battle > Hacking | `[0, 40, 10, 0, false]` | How much each net broken recently adds to the chance of being detected on the NEXT one, in percentage points. 0 restores a flat chance. |
+| Detection memory | SLIDER | Ghosts of Battle > Hacking | `[60, 3600, 600, 0, false]` | How long, in seconds, a broken net keeps counting against you. One step is shed for every window that passes quietly, so a patient section is forgiven |
+| Hackable nets | LIST | Ghosts of Battle > Hacking | `[[0, 1, 2], ["Hostile only", "Hostile an` | Whose cell nets the remote hack will offer. Your own group is never on the list. A net that is not hostile is labelled FRIENDLY on the card, so nobody |
+
+## HUD (`hud`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Enable HUD | CHECKBOX | Ghosts of Battle > HUD | `true` | Draws the two readout slots on the game screen. Off leaves the screen exactly as it was; the map suite is unaffected either way. |
+| Hide with the map | CHECKBOX | Ghosts of Battle > HUD | `true` | Takes the HUD off screen while the map is open, where the tacpad shows the same readings in more detail. Off leaves it up, over the map. |
+| HUD opacity | SLIDER | Ghosts of Battle > HUD | `[0, 1, 0.55, 2, true]` | How solid the slot backgrounds are over the world. The text stays fully opaque at any setting. |
 
 ## Insurgents (`insurgents`)
 
@@ -107,6 +148,24 @@ ships with, which a mission or the forced list below can override.
 | Setting | Type | Category | Default | What it does |
 |---|---|---|---|---|
 | Fatal Injuries Cardiac Arrest Time Coefficient | SLIDER | Ghosts of Battle > Medical Treatment | `[0.01, 1, 0.2, 2]` | Coefficient for controlling the Cardiac Arrest Time on fatal injuries when 'Fatal Injuries' is NOT 'Always'. |
+
+## Messaging (`messaging`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Enable messaging | CHECKBOX | Ghosts of Battle > Messaging | `true` | Off refuses every submission and leaves the store empty. Nothing else in the mod depends on it being on. |
+| Shared mailboxes | EDITBOX | Ghosts of Battle > Messaging | `"C2, C2.reports, FIRES, FIRES.cas, FIRES` | Comma-separated names of mailboxes anybody can address. A thread sent to one is filed there rather than mailed to a person. Empty means personal and g |
+| Command group | EDITBOX | Ghosts of Battle > Messaging | `""` | Group name, as shown on its roster row, that a report reaches when its ROUTING line is ticked. Empty disables the tick. |
+| Idle close (min) | SLIDER | Ghosts of Battle > Messaging | `[0, 240, 60, 0, true]` | A thread nobody has touched for this long closes itself. 0 never closes one. |
+| EW link state | CHECKBOX | Ghosts of Battle > Messaging | `true` | Jamming affects the data link: inside a jammer's falloff a send transmits late, inside its core it is refused outright. Receiving is never blocked. Th |
+| TIC alerts the side | CHECKBOX | Ghosts of Battle > Messaging | `true` | A CONTACT REPORT (TIC) reaches every player on the sender's side and raises the shared alert bus, on top of whoever it was addressed to. |
+| TIC drops a map marker | CHECKBOX | Ghosts of Battle > Messaging | `true` | Marks the contact grid for the sender's side. |
+| TIC marker type | EDITBOX | Ghosts of Battle > Messaging | `"loc_Attack"` | CfgMarkers class for the marker a TIC drops. loc_Attack is the crossed-swords task icon - a contact is an event, not a unit symbol, and o_inf put a re |
+| TIC marker colour | EDITBOX | Ghosts of Battle > Messaging | `"ColorRed"` | CfgMarkerColors class for the marker a TIC drops. |
+| Post reports to ALiVE | CHECKBOX | Ghosts of Battle > Messaging | `true` | A template marked reportable - CONTACTREP and SITREP - is also filed with ALiVE's C2ISTAR as a spotrep or sitrep, with a companion map marker. Silentl |
+| ALiVE report locality | LIST | Ghosts of Battle > Messaging | `[["GLOBAL", "SIDE", "GROUP"], ["Everyone` | Who an ALiVE-posted report and its marker are visible to. |
+| SITREP marker type | EDITBOX | Ghosts of Battle > Messaging | `"b_inf"` | CfgMarkers class for the marker that accompanies an ALiVE-posted SITREP. |
+| Seed test traffic | CHECKBOX | Ghosts of Battle > Messaging | `false` | Posts three sample threads - a FLASH CASEVAC, a SITREP and a CONTACTREP - shortly after you join, so the reader has something in it. For testing the U |
 
 ## Notify (`notify`)
 
@@ -165,8 +224,8 @@ ships with, which a mission or the forced list below can override.
 | Allow spectator for unconscious | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Spectator | `false` | Allows spectator also for unconscious players. Requires enabling spectator. |
 | Enable spectator (CLIENT) | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Spectator | `true` | Enables spectator when unconscious if it's allowed by server setting. |
 | Unconscious spectator delay | SLIDER | Ghosts of Battle > Ghosts of Battle - Spectator | `[1, 300, 30, 0]` | How much time must pass before unconscious players get spectator. |
-| Sides available for spectating | LIST | Ghosts of Battle > Ghosts of Battle - Spectator | `[[0, 1, 3, 4, 2], [LSTRING(Friendly), LS` | Spectator will be able to see and track units from given sides. |
-| Sides available for spectating | LIST | Ghosts of Battle > Ghosts of Battle - Spectator | `[[0, 1, 3, 4, 2], [LSTRING(Friendly), LS` | Spectator will be able to see and track units from given sides. |
+| Sides available for spectating | LIST | Ghosts of Battle > Ghosts of Battle - Spectator | `[[0, 1, 3, 4, 2], ["Friendly", "Player s` | Spectator will be able to see and track units from given sides. |
+| Sides available for spectating | LIST | Ghosts of Battle > Ghosts of Battle - Spectator | `[[0, 1, 3, 4, 2], ["Friendly", "Player s` | Spectator will be able to see and track units from given sides. |
 | Allow civilian spectating | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Spectator | `false` | Allows tracking units from civilian side. |
 | Allow civilian spectating | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Spectator | `false` | Allows tracking units from civilian side. |
 | Allow AI spectating | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Spectator | `false` | Allows tracking AI units from whitelisted sides. |
@@ -176,16 +235,33 @@ ships with, which a mission or the forced list below can override.
 | Allow TPP Camera | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Spectator | `false` | Allows spectator to use third person camera. |
 | Allow TPP Camera | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Spectator | `false` | Allows spectator to use third person camera. |
 
-## Suppress (`suppress`)
+## Tacpad (`tacpad`)
 
 | Setting | Type | Category | Default | What it does |
 |---|---|---|---|---|
-| Overlay opacity | SLIDER | Ghosts of Battle > Suppress | `[0,1,0.96,2]` | Suppression overlay opacity, the higher the value the more visible will be the supression effect. |
-| Overlay texture type | LIST | Ghosts of Battle > Suppress | `[[0, 1, 2], [LSTRING(overlayTexture_ligh` | Level of darkness of overlay texture. Darker texture means more screen will be covered with overlay when suppressed. |
-| Overlay fadeout time | SLIDER | Ghosts of Battle > Suppress | `[1,30,10,1]` | Suppression overlay fadeout time in seconds |
-| Projectile max distance | SLIDER | Ghosts of Battle > Suppress | `[1,10,9,2]` | Max distance from passing projectile in meters. Projectiles passing at larger distance won't be taken into account. |
-| Min distance from shooter | SLIDER | Ghosts of Battle > Suppress | `[0,50,0,2]` | Min distance from shooter in meters. This option can be used to disable effect in CQB situations, 0 to disable min distance. |
-| Check line of sight | CHECKBOX | Ghosts of Battle > Suppress | `false` | When enabled, checks line of sight between player's eyes and passing projectile, ignoring projectiles passing behind cover, walls etc. |
+| Enable tacpad | CHECKBOX | Ghosts of Battle > Tacpad | `true` | Draws the tacpad panels on the map screen. Off leaves the vanilla map exactly as it was. |
+| Colour scheme | LIST | Ghosts of Battle > Tacpad | `[ ["light", "olive", "sand", "dark", "ni` | Three day grounds and three night ones, in matching pairs: FIELD GREY with NIGHT / RED, OLIVE with NIGHT OLIVE, SAND with NIGHT SAND. A night scheme i |
+| Panel opacity | SLIDER | Ghosts of Battle > Tacpad | `[0.3, 1, 0.92, 2, true]` | How solid a panel's ground is over the map. The text stays fully opaque at any setting - a translucent panel you cannot read is not a panel. |
+| Keep clear of reserved areas | CHECKBOX | Ghosts of Battle > Tacpad | `true` | Slides a panel out of the game menu, the chat overlay and the map's scale and contour legend when you drop it on one. Off lets you put a panel anywher |
+| Custom: ground | EDITBOX | Ghosts of Battle > Tacpad | `""` | Panel background as r,g,b from 0 to 1, e.g. 0.05,0.06,0.05. Used only by the Custom scheme. |
+| Custom: text | EDITBOX | Ghosts of Battle > Tacpad | `""` | Text and divider colour as r,g,b from 0 to 1. Used only by the Custom scheme. |
+| Custom: accent | EDITBOX | Ghosts of Battle > Tacpad | `""` | Selection, alerts and FLASH traffic as r,g,b from 0 to 1. Used only by the Custom scheme. |
+| Quick replies | EDITBOX | Ghosts of Battle > Tacpad | `["roger, wilco, WAIT ONE, SMOKE OUT, LZ ` | The buttons under an open thread, separated by commas. A template id (roger, wilco, inprogress, cantco, close) sends that reply; anything else is sent |
+| UI size | SLIDER | Ghosts of Battle > Tacpad | `[0.5, 2, 1, 2, true]` | Scales the whole tacpad - panels, rows and type together. The in-game settings screen steps it by 1, 5 or 10 percent; this is the same number. |
+| Text size | SLIDER | Ghosts of Battle > Tacpad | `[0.6, 2.5, 1.2, 2, true]` | Scales all tacpad text. Rows and headers grow with it, so a larger setting means fewer rows visible rather than text spilling out of them. |
+
+## Tacpad Apps (`tacpad_apps`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Show live tiles | CHECKBOX | Ghosts of Battle > Tacpad | `true` | The band across the top: drones, jamming, weather and radio. Clicking a tile opens that app. |
+| Live tile rows | LIST | Ghosts of Battle > Tacpad | `[["1", "2"], ["One row", "Two rows"], 0]` | How many rows the tile band stands in. One is the design's band across the top; two stacks the same tiles in half the width. |
+| Show squad list | CHECKBOX | Ghosts of Battle > Tacpad | `true` | The left rail: one row per man with a health swatch. |
+| Show message reader | CHECKBOX | Ghosts of Battle > Tacpad | `true` | The docked message reader. Needs the messaging addon - without it the panel says so. |
+| Show troops in contact button | CHECKBOX | Ghosts of Battle > Tacpad | `true` | The big one under the rail. One press marks the map, alerts the side and files a contact report on the command net. A mission that would rather a cont |
+| Show map tools | CHECKBOX | Ghosts of Battle > Tacpad | `true` | The tool strip along the bottom. A front end for PLP Map Tools Remastered - without that mod the buttons are greyed. |
+| Reader: high density | CHECKBOX | Ghosts of Battle > Tacpad | `false` | Off is standard density - subject on one line, state under it. On puts one thread per row so a screenful can be scanned at once, which is what a TOC w |
+| Show settings gear | CHECKBOX | Ghosts of Battle > Tacpad | `true` | The gear under the message reader that opens the settings screen. Off leaves Addon Options as the only way to change the suite. |
 
 ## Tagging (`tagging`)
 
@@ -202,7 +278,7 @@ ships with, which a mission or the forced list below can override.
 
 ## Forced by `cba_settings`
 
-`addons/cba_settings/cba_settings.sqf` force-sets 639 values at mission start.
+`addons/cba_settings/cba_settings.sqf` force-sets 658 values at mission start.
 A forced setting cannot be changed in-game, and overrides the defaults above.
 
 | Variable | Value |
@@ -614,21 +690,8 @@ A forced setting cannot be changed in-game, and overrides the defaults above.
 | `cba_disposable_dropUsedLauncher` | `2` |
 | `cba_disposable_replaceDisposableLauncher` | `false` |
 | `cba_network_loadoutValidation` | `1` |
-| `ctab_core_drawMainMap` | `true` |
-| `ctab_core_microDagrGroupBFT` | `true` |
 | `DT_terrainGridMax` | `50` |
 | `DT_viewDistanceMax` | `12000` |
-| `diwako_dui_indicators_crew_range_enabled` | `false` |
-| `diwako_dui_indicators_rangeLimit` | `100` |
-| `diwako_dui_linecompass_AllowNumericDrawBearing` | `true` |
-| `diwako_dui_linecompass_compassRangeLimit` | `50` |
-| `diwako_dui_radar_ace_medic` | `true` |
-| `diwako_dui_radar_compassRangeLimit` | `50` |
-| `diwako_dui_radar_icon_priority_setting` | `1` |
-| `diwako_dui_radar_sortType` | `"none"` |
-| `diwako_dui_radar_sqlFirst` | `false` |
-| `diwako_dui_radar_syncGroup` | `false` |
-| `diwako_dui_radar_vehicleCompassEnabled` | `false` |
 | `emr_main_allowClimbOnStandingUnits` | `false` |
 | `emr_main_allowMidairClimbing` | `true` |
 | `emr_main_animSpeedCoef` | `1` |
@@ -667,6 +730,22 @@ A forced setting cannot be changed in-game, and overrides the defaults above.
 | `ghost_back_to_game_teleportToLeader` | `true` |
 | `ghost_back_to_game_teleportToVehicle` | `true` |
 | `ghost_boc_disabled` | `false` |
+| `ghost_bft_adminGodView` | `false` |
+| `ghost_bft_autoEnable` | `2` |
+| `ghost_bft_colorsBlacklist` | `"Default, ColorWEST, ColorEAST, ColorGUER, ColorCIV, Color1_` |
+| `ghost_bft_enabled` | `true` |
+| `ghost_bft_fuzzOtherSides` | `false` |
+| `ghost_bft_iconsBlacklist` | `"unknown, uav"` |
+| `ghost_bft_mapSettings` | `true` |
+| `ghost_bft_markerShape` | `"a"` |
+| `ghost_bft_nameOptions` | `"Zulu,Lima,Uniform,Echo,Whiskey,Tango"` |
+| `ghost_bft_preferredColors` | `"ColorBLUFOR, ColorOPFOR, ColorIndependent, ColorCivilian, C` |
+| `ghost_bft_preferredIcons` | `"inf, motor_inf, mech_inf, air, armor, recon"` |
+| `ghost_bft_trackingMode` | `"weightedAverage"` |
+| `ghost_bft_trailingCount` | `5` |
+| `ghost_bft_trailingMode` | `"weightedAverage"` |
+| `ghost_bft_trailingWeight` | `0.75` |
+| `ghost_bft_updateDelay` | `5` |
 | `ghost_boc_walk` | `true` |
 | `ghost_chat_allowGlobalChat` | `true` |
 | `ghost_evac_enabled` | `true` |
@@ -677,7 +756,7 @@ A forced setting cannot be changed in-game, and overrides the defaults above.
 | `ghost_friendly_fire_loggingEnabled` | `true` |
 | `ghost_grass_enabled` | `true` |
 | `ghost_hacking_enabled` | `true` |
-| `ghost_hacking_requiredItems` | `"ItemcTab,ItemAndroid,ItemAndroidMisc"` |
+| `ghost_hacking_requireISR` | `true` |
 | `ghost_hacking_towerClasses` | `"Land_TTowerBig_2_F,Land_TTowerBig_1_F,Land_Communication_F,` |
 | `ghost_insurgents_enabled_CUP` | `false` |
 | `ghost_insurgents_enabled_Vanilla` | `true` |
@@ -846,3 +925,19 @@ A forced setting cannot be changed in-game, and overrides the defaults above.
 | `zen_common_autoAddObjects` | `false` |
 | `zen_common_disableGearAnim` | `false` |
 | `zen_compat_ace_hideModules` | `true` |
+| `lambs_danger_cqbRange` | `100.128` |
+| `lambs_danger_panicChance` | `0` |
+| `lambs_eventhandlers_ExplosionEventHandlerEnabled` | `true` |
+| `lambs_eventhandlers_ExplosionReactionTime` | `16` |
+| `lambs_wp_autoAddArtillery` | `true` |
+| `lambs_main_combatShareRange` | `750.692` |
+| `lambs_main_maxRevealValue` | `1` |
+| `lambs_main_minFriendlySuppressionDistance` | `0` |
+| `lambs_main_minObstacleProximity` | `5` |
+| `lambs_main_minSuppressionRange` | `50` |
+| `lambs_main_radioBackpack` | `3600` |
+| `lambs_main_radioDisabled` | `false` |
+| `lambs_main_radioEast` | `1200` |
+| `lambs_main_radioGuer` | `1200` |
+| `lambs_main_radioShout` | `100` |
+| `lambs_main_radioWest` | `1200` |

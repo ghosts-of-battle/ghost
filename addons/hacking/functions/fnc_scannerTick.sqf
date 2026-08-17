@@ -22,11 +22,60 @@ Author:
 ---------------------------------------------------------------------------- */
 params ["_args", "_handle"];
 
+// NO PLAYER, NO HANDSET - AND THIS IS THE ONE HOOK THAT ACTUALLY RUNS.
+// The menu-side display handlers fire when the main menu is CREATED, which
+// is once, at game launch: coming back from a mission reuses that display,
+// raises no event, and every teardown hung there never ran. This tick is
+// still going when the mission ends, so it is where the scanner comes
+// down.
+if (isNull player) exitWith {
+    [] call FUNC(scannerClose);
+    GVAR(scannerPFH) = -1;
+    [_handle] call CBA_fnc_removePerFrameHandler;
+};
+
 private _display = uiNamespace getVariable [QGVAR(scanner), displayNull];
 if (isNull _display) exitWith {
     GVAR(scannerPFH) = -1;
     [_handle] call CBA_fnc_removePerFrameHandler;
 };
+
+// A DIALOG OWNS THE SCREEN, SO THE HANDSET GETS OUT OF THE WAY.
+//
+// This does not trust render order, because render order has been wrong twice.
+// The handset was an RscTitles layer, which draws OVER dialogs; moving it onto
+// the mission display was supposed to put it under them and DID NOT - build 759
+// still showed it across the TAC//ADMIN player list. Rather than keep guessing
+// at how the engine stacks two displays, the tick simply hides it whenever a
+// dialog is up and shows it again when the dialog closes.
+//
+// `dialog` is true for a real dialog only - the tacpad and the map are not
+// dialogs, so the handset stays visible over those, which is where a man
+// actually wants to read it.
+//
+// STATE-CHANGE ONLY. Eighteen ctrlShow calls every tick for a thing that
+// changes when a menu opens would be eighteen calls a second for nothing.
+private _hidden = uiNamespace getVariable [QGVAR(scannerHidden), false];
+
+if (dialog isNotEqualTo _hidden) then {
+    uiNamespace setVariable [QGVAR(scannerHidden), dialog];
+    private _show = !dialog;
+    {
+        private _ctrl = _display displayCtrl _x;
+        if (!isNull _ctrl) then {_ctrl ctrlShow _show};
+    } forEach [
+        IDC_SCN_BEZEL, IDC_SCN_TITLE,
+        IDC_SCN_ICO_DRONE, IDC_SCN_DRONE_L, IDC_SCN_DRONE_V,
+        IDC_SCN_ICO_JAM, IDC_SCN_JAM_L, IDC_SCN_JAM_V,
+        IDC_SCN_ICO_MESH, IDC_SCN_MESH_L, IDC_SCN_MESH_V,
+        IDC_SCN_NETHEAD, IDC_SCN_ICO_NET, IDC_SCN_NET_L, IDC_SCN_NET_V,
+        IDC_SCN_ALARM, IDC_SCN_TIMER, IDC_SCN_STATUS
+    ];
+};
+
+// Nothing to paint while it is hidden.
+if (dialog) exitWith {};
+
 
 // Putting the item away puts the device away.
 if !([player] call FUNC(hasScanner)) exitWith { [] call FUNC(scannerClose) };

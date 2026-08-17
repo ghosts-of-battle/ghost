@@ -4,8 +4,8 @@
     [
         GEAR_SETTING(_class),
         "CHECKBOX",
-        [format [LLSTRING(GearEnabled), _class], LSTRING(GearEnabled_Description)],
-        ["Ghosts of Battle", LSTRING(DisplayName)],
+        [format ["Use gear from ""%1""", _class], "If disabled gear from this configFile class will be not used. Mission defined gear will be not disabled."],
+        ["Ghosts of Battle", "Ghosts of Battle - Insurgents"],
         true,
         1,
         {},

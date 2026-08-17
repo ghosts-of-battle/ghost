@@ -34,6 +34,8 @@ Its based/inspired on/by the following projects;
 - https://github.com/quies-in-proelium/qipTPL - Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 - https://github.com/SzwedzikPL/SimpleSuppress/releases - MIT License
 - Ample Camo Pack Lite https://steamcommunity.com/sharedfiles/filedetails/?id=2869453820  - Arma Public License Share-Alike (APL-SA)
+- Team Collaboration Aides (TCA) by Jacco Douma & Hightower https://github.com/Jaccodouma/TCA-A3 - the whole of `addons/bft` (Blue Force Tracking) is Jacco Douma's `TCA_bft`, ported and re-prefixed. No licence file is declared upstream; included with attribution.
+- GOB Admin Panel by JohnnyShootos, edited by TheTimidShade - the whole of `addons/adminpanel` (TAC//ADMIN). **GNU General Public License v3**, not APL-SA; see the exception below.
 
 All the code in this mod is available in the Github
 you can find the Ghosts of Battle Version at https://github.com/ghosts-of-battle/ghost
@@ -65,5 +67,17 @@ Huge appreciation and thanks to [ACE3 Team](http://ace3mod.com/team.html) for th
 
 ## License
 This work uses the license Arma Public License Share Alike [Arma Public License Share Alike (APL-SA)](https://www.bohemia.net/community/licenses/arma-public-license-share-alike)
+
+### One addon is not APL-SA
+
+`addons/adminpanel` is **GPL-3**. It is JohnnyShootos' admin panel, edited by
+TheTimidShade, and that licence travels with the code - it cannot be relicensed.
+So it ships as its own separately-licensed PBO **alongside** ghost rather than
+dissolved into it, with [its own LICENSE](addons/adminpanel/LICENSE) and
+[README](addons/adminpanel/README.md) in the folder.
+
+Practically: do not copy files out of `addons/adminpanel` into any other ghost
+addon, and do not copy APL-SA ghost code into it. Everything else in this
+repository is APL-SA as stated above.
 
 You can freely modify, copy, "cannibalize", to use in your projects.

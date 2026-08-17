@@ -6,9 +6,17 @@
     INFO("Friendly fire logging enabled");
 
     if (hasInterface) then {
-        [{!isNull player}, {
+        // On the CBA unit event, not a one-shot waitUntil: the Hit handler
+        // rides the player OBJECT, and the object changes on respawn - bound
+        // once, FF logging silently stopped after the first death.
+        ["unit", {
+            params ["_new", "_old"];
+            if (!isNull _old && {!isNil QGVAR(ehId)}) then {
+                _old removeEventHandler ["Hit", GVAR(ehId)];
+            };
+            if (isNull _new) exitWith {};
             INFO("Adding friendly fire EH");
-            GVAR(ehId) = player addEventHandler ["Hit", {
+            GVAR(ehId) = _new addEventHandler ["Hit", {
                 params ["_target", "_shooter"];
 
                 if (
@@ -19,7 +27,7 @@
 
                 [QGVAR(friendlyFire), [_target, _shooter, vehicle _shooter]] call CBA_fnc_globalEvent;
             }];
-        }] call CBA_fnc_waitUntilAndExecute;
+        }, true] call CBA_fnc_addPlayerEventHandler;
     };
 
     [QGVAR(friendlyFire), {
@@ -33,7 +41,9 @@
                 "Victim-Origin distance: ", _victim distance _origin
             ] joinString ""
         } else {
-            private _displayName = getText (configOf _origin >> "displayName");
+            // The VEHICLE's name - configOf _origin named the man's class in
+            // the line meant to name the offending vehicle.
+            private _displayName = getText (configOf _originVehicle >> "displayName");
             [
                 _nl,
                 _displayName, " shot at ", name _victim, _nl,

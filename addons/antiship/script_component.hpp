@@ -19,6 +19,24 @@
 // sea-skimmer.
 #define AS_SPEED_DEF        900
 
+// --- the surface search radar ---------------------------------------------
+// The battery sits inland with no sight of the sea, so something else has to
+// see for it. Everything here is per-radar overridable from the object's init
+// field, e.g. this setVariable ["ghost_antiship_range", 40000];
+#define AS_RADAR_TICK       5       // s between sweeps
+#define AS_RADAR_RANGE      30000   // m instrumented range
+#define AS_RADAR_ON         20      // s radiating
+#define AS_RADAR_OFF        40      // s silent - EMCON, so it cannot just be waited for
+#define AS_RADAR_DAMAGE     0.5     // damaged past this and the set is off the air
+#define AS_RADAR_TRACK      90      // s a contact stays usable after it was last seen
+// 4.12 * (sqrt(antenna m) + sqrt(mast m)) = km to the radar horizon. In metres
+// here so the maths stays in the units everything else uses.
+#define AS_RADAR_HORIZON    4120
+// What a surface set sees. Not the battery's target list - a radar paints every
+// hull and choosing which one is worth a missile is the battery's job. The two
+// static hulls are buildings rather than Ships, so they need naming.
+#define AS_RADAR_TYPES      ["Ship","Land_Carrier_01_base_F","Land_Destroyer_01_base_F"]
+
 #define AS_CRUISE_ALT_DEF   45      // m above sea on the run in
 #define AS_TERMINAL_DEF     1200    // m from the hull where it stops cruising and dives
 #define AS_PN_GAIN          4

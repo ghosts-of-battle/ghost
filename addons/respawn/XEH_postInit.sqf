@@ -5,6 +5,14 @@ if (isServer) then {
     [QGVAR(force), {
         [QGVAR(force)] call CBA_fnc_remoteEvent;
     }] call CBA_fnc_addEventHandler;
+
+    // The client half of the public forceRespawn API - fnc_forceRespawn
+    // raises this when called anywhere that is not the server (a trigger,
+    // a Zeus machine). It was raised into a void: no registration existed,
+    // so the documented API silently no-opped off-server.
+    [QGVAR(forceRespawnRequest), {
+        _this call FUNC(forceRespawn);
+    }] call CBA_fnc_addEventHandler;
 };
 
 if (hasInterface) then {

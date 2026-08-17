@@ -31,16 +31,16 @@ private _month = systemTime select 1;
 private _easterMonth = [] call EFUNC(common,easterDate) select 1;
 switch (_month) do {
     case 10: {
-        _picture ctrlSetText QPATHTOF(ui\ghost.paa);
+        _picture ctrlSetText QPATHTOEF(media,images\logo_2048.paa);
     };
     case 12: {
-        _picture ctrlSetText QPATHTOF(ui\ghost.paa);
+        _picture ctrlSetText QPATHTOEF(media,images\logo_2048.paa);
     };
     case _easterMonth: {
-        _picture ctrlSetText QPATHTOF(ui\ghost.paa);
+        _picture ctrlSetText QPATHTOEF(media,images\logo_2048.paa);
     };
     default {
-        _picture ctrlSetText QPATHTOF(ui\ghost.paa);
+        _picture ctrlSetText QPATHTOEF(media,images\logo_2048.paa);
     };
 };
 _picture ctrlCommit 0;
@@ -65,7 +65,7 @@ private _loadingLabel = _display ctrlCreate ["RscStructuredText", -1, _ctrlGrpLo
 _loadingLabel ctrlSetPosition [0, 0, 1, 1];
 _loadingLabel ctrlSetStructuredText parseText ([
     '<t size="1.17" shadow="2">',
-    format [LLSTRING(Author), getText (_backgroundCfg >> "author")],
+    format ["Author: %1", getText (_backgroundCfg >> "author")],
     '</t>'
 ] joinString "");
 _loadingLabel ctrlCommit 0;

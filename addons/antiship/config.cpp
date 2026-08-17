@@ -4,17 +4,19 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         units[] = {
-            "ghost_moduleAntiShip",
             QGVAR(launcher),
+            QGVAR(radar),
             QGVAR(decoy_west),
             QGVAR(decoy_east),
-            QGVAR(decoy_guer)
+            QGVAR(decoy_guer),
+            "ghost_moduleAntiShip"
         };
         weapons[] = {};
         ammo[] = {QGVAR(missile)};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "ghost_main",
+            "ghost_common",
             "cba_xeh"
         };
         skipWhenMissingDependencies = 1;

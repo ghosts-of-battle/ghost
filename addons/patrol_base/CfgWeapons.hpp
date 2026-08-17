@@ -13,7 +13,10 @@ class CfgWeapons {
         displayName = "Patrol Base Kit (Sand)";
         descriptionShort = "Small equipment case. Drop the required number within range to establish a patrol base.";
         model = "\A3\Structures_F\Civ\Camping\Sleeping_bag_brown_folded_F.p3d";
-        picture = "\A3\Weapons_F\data\UI\gear_item_radio_ca.paa";
+        // A tent, not the radio icon this used to wear - which reads as a phone
+        // in the arsenal and says nothing about what you are carrying.
+        // See data/gen_icon.py.
+        picture = QPATHTOF(data\icon_kit_ca.paa);
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = KIT_MASS;
         };

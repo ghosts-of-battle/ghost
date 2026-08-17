@@ -12,7 +12,11 @@ if sys.version_info.major == 2:
     open = codecs.open
 
 def validKeyWordAfterCode(content, index):
-    keyWords = ["for", "do", "count", "each", "forEach", "else", "and", "not", "isEqualTo", "in", "call", "spawn", "execVM", "catch", "param", "select", "apply"];
+    # joinString belongs here for the same reason select and apply do: it is a
+    # binary command whose left side is routinely a code block's result, so
+    # `select {_x != ""} joinString endl` is correct SQF and not a dropped
+    # semicolon. Three real call sites were being reported as errors.
+    keyWords = ["for", "do", "count", "each", "forEach", "else", "and", "not", "isEqualTo", "in", "call", "spawn", "execVM", "catch", "param", "select", "apply", "joinString"];
     for word in keyWords:
         try:
             subWord = content.index(word, index, index+len(word))
@@ -125,7 +129,16 @@ def check_sqf_syntax(filepath):
                         if (checkForSemiColon):
                             if (c not in [' ', '\t', '\n', '/']): # keep reading until no white space or comments
                                 checkForSemiColon = False
-                                if (c not in [']', ')', '}', ';', ',', '&', '!', '|', '='] and not validKeyWordAfterCode(content, indexOfCharacter)): # , 'f', 'd', 'c', 'e', 'a', 'n', 'i']):
+                                # A closing brace can legitimately be followed by any binary operator -
+                                # `findIf {...} < 0` and `count {...} > -1` are the
+                                # common ones, and every finding this check produced
+                                # in this repo was one of them. Without the operators
+                                # here it reports ten false positives and nobody reads
+                                # its output at all, which costs more than the check is
+                                # worth.
+                                if (c not in [']', ')', '}', ';', ',', '&', '!', '|', '=',
+                                              '<', '>', '+', '-', '*', '/', '%', '^', '#']
+                                        and not validKeyWordAfterCode(content, indexOfCharacter)):
                                     print("ERROR: Possible missing semicolon ';' detected at {0} Line number: {1}".format(filepath,lineNumber))
                                     bad_count_file += 1
 

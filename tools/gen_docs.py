@@ -27,13 +27,10 @@ GROUPS = {
                     "backpack", "boc", "faces", "flags", "nvg", "vs17"],
     "Gear - carried": ["weapons", "weapons_jca", "optics", "optics_ef", "equipment",
                        "medbags", "flares", "smoke", "tagging"],
-    "Systems": ["hacking", "intel_hunt", "objective_watch", "patrol_base", "evac", "respawn", "spectator", "towing",
+    "Systems": ["hacking", "patrol_base", "evac", "respawn", "spectator", "towing",
                 "killtracker", "insurgents", "tasks", "admin", "curator", "chat",
                 "back_to_game", "safestart", "remotesensors"],
-    "ALiVE and ambient": ["alive", "alive_aircraft", "alive_drones", "ambient_drones",
-                          "ambient_arty", "ambient_kamikaze", "base_defense",
-                          "electronic_war_zones"],
-    "Gameplay tweaks": ["ballistics", "suppress", "fatigue", "difficulty", "friendly_fire",
+        "Gameplay tweaks": ["ballistics", "suppress", "fatigue", "difficulty", "friendly_fire",
                         "grass", "hiteffects", "medical_treatment", "nobuttstuff",
                         "pointing", "pronelauncher", "safe_grenades", "safeboating",
                         "ai_disembark", "dtvd", "tanks", "spotlight_block"],
@@ -182,7 +179,30 @@ def modules_of(d):
             cls, body = m.group(1), m.group(2)
             def get(k):
                 mm = re.search(k + r'\s*=\s*"([^"]*)"', body)
-                return mm.group(1) if mm else ""
+                if mm:
+                    return mm.group(1)
+                # BIS's array-of-lines form: description[] = {"a", "", "b"};
+                # An empty element is a paragraph break, so it joins to a blank
+                # line rather than a stray double space.
+                mm = re.search(k + r'\[\]\s*=\s*\{(.*?)\};', body, re.S)
+                if not mm:
+                    return ""
+                parts = re.findall(r'"([^"]*)"', mm.group(1))
+                out, cur = [], []
+                for s in parts:
+                    # A blank element ends a paragraph; an INDENTED one is a list
+                    # item and keeps its own line, or every dropdown option runs
+                    # together into one unreadable sentence.
+                    if s.strip() == "" or s.startswith(" "):
+                        if cur:
+                            out.append(" ".join(cur)); cur = []
+                    if s.strip():
+                        cur.append(s.strip())
+                        if s.startswith(" ") and not s.rstrip().endswith(","):
+                            out.append(" ".join(cur)); cur = []
+                if cur:
+                    out.append(" ".join(cur))
+                return "<br>".join(out)
             # AEDIT / APICK / ABOOL / AMB_TYPE / DEF_TYPE / TYPE_ARGS ... every
             # addon rolls its own attribute macro, so match the shape not the name
             attrs = re.findall(r"^\s*[A-Z][A-Z_0-9]*\((\w+),", body, re.M)
@@ -236,6 +256,10 @@ def main():
            "- [ADDONS.md](ADDONS.md) - every addon, what it ships, what it needs",
            "- [SETTINGS.md](SETTINGS.md) - every CBA setting and the server-forced values",
            "- [MODULES.md](MODULES.md) - every Eden module and its attributes",
+           "- [SETUP.md](SETUP.md) - **start here**: setting up a ghost mission",
+           "- [SMOKE_TEST.md](SMOKE_TEST.md) - the acceptance walk-through; run this before planning anything else",
+           "- [DESIGN_INTEL_SYSTEM_PART4.md](DESIGN_INTEL_SYSTEM_PART4.md) - the current design. Parts 1-3 are superseded",
+           "- [HANDOFF_PART4.md](HANDOFF_PART4.md) - what the Part 4 build delivered, deviated on, and left open",
            "- [SETUP_HACKING.md](SETUP_HACKING.md) - mission-maker walkthrough for the hacking system",
            "- [FA_MAGAZINE_MAP.md](FA_MAGAZINE_MAP.md) - vanilla to futureAmmo magazine map",
            "- [DRONES_BY_SIDE.md](DRONES_BY_SIDE.md) - drone classes by side (archived factions)",

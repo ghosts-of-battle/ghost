@@ -40,6 +40,7 @@
 // Intel markers fade in this many scheduled steps - never a per-frame handler.
 #define INTEL_FADE_STEPS 5
 
+
 // Shared HUD reposition dialog
 #define IDD_HUDMOVE          8400
 #define IDC_HUDMOVE_CATCH    8401
@@ -48,8 +49,22 @@
 #define IDC_HUDMOVE_RESET    8404
 #define IDC_HUDMOVE_CANCEL   8405
 
-// Shared artillery. Values carried over from ambient_arty so its behaviour is
+// Shared artillery. Values carried over from the old ambient system so behaviour is
 // unchanged by the extraction.
 #define BARRAGE_ROUND_GAP    0.7    // sec between rounds when no window is given
 #define BARRAGE_SHELL_ALT    260    // m the shell spawns above the impact point
 #define BARRAGE_SHELL_SPEED  130    // m/s downward
+
+// How many alerts a device keeps. Enough to answer "what was that?"
+// after a busy few minutes, not a mission log.
+#define ALERT_KEEP 12
+
+// --- the threat board -------------------------------------------------------
+// How long a contact is worth anything. Confidence decays from 1 at the moment
+// it was seen to 0 here, and it is dropped on the next read - a sighting ten
+// minutes old is a place somebody USED to be.
+#define CONTACT_LIFETIME 600
+// Two reports closer than this are the same fight however tight their errors
+// claim to be - no sensor is truly metre-perfect and stacking near-duplicates
+// is how a board turns into noise.
+#define CONTACT_MERGE_MIN 75

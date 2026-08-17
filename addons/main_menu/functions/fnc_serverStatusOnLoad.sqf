@@ -43,14 +43,14 @@ _ctrlMissionsButton ctrlEnable IS_ADMIN;
                 _dots = "";
             };
 
-            _ctrlTitle ctrlSetText ([LLSTRING(ServerStatus_Joining), _dots] joinString "");
+            _ctrlTitle ctrlSetText (["Joining", _dots] joinString "");
             _dots = [_dots, "."] joinString "";
 
-            _ctrlDesc ctrlSetText LLSTRING(ServerStatus_Joining_Desc);
+            _ctrlDesc ctrlSetText "Trying to establish connection with the server, please wait.";
         } else {
-            _ctrlTitle ctrlSetText LLSTRING(ServerStatus_Connected);
+            _ctrlTitle ctrlSetText "Connected to server";
 
-            private _desc = [LLSTRING(ServerStatus_Connected_Desc), LLSTRING(ServerStatus_ConnectedAdmin_Desc)] select IS_ADMIN;
+            private _desc = ["You're connected to the server. Please wait for the admin to select mission.<br />(You can use #login command to log in as admin)", "You're connected to the server as admin.<br />(You can use #missions command to show missions list)"] select IS_ADMIN;
             _ctrlDesc ctrlSetStructuredText parseText _desc;
         };
 

@@ -41,14 +41,19 @@ private _alerted = 0;
     _alerted = _alerted + 1;
 } forEach allGroups;
 
+INFO_2("Hacking: remote hack failed by %1 - %2 groups alerted",name _hacker,_alerted);
+
+// Roll 2, exactly as the header always promised and the hack.fail debug
+// command tells testers to check for - the roll itself was never written.
+// A temporary zone on the HACKER through the jamming public API, so it
+// jams, scans and expires like a module zone. Silently skipped without
+// the jamming addon.
 private _jamChance = missionNamespace getVariable [QGVAR(rh_jam_chance), RH_JAM_CHANCE_DEF];
-private _jammed = "";
-if (random 100 < _jamChance && {!isNil "ghost_electronic_war_zones_fnc_spawnTempZone"}) then {
-    private _rMin = missionNamespace getVariable [QGVAR(rh_jam_radius_min), RH_JAM_MIN_DEF];
-    private _rMax = (missionNamespace getVariable [QGVAR(rh_jam_radius_max), RH_JAM_MAX_DEF]) min RH_JAM_MAX_CAP;
-    private _radius = random [_rMin, (_rMin + _rMax) / 2, _rMax];
-    private _duration = missionNamespace getVariable [QGVAR(rh_jam_duration), RH_JAM_DURATION_DEF];
-    _jammed = [_pos, _radius, _duration] call ghost_electronic_war_zones_fnc_spawnTempZone;
+if (!isNil "ghost_jamming_fnc_spawnTempZone" && {random 100 < _jamChance}) then {
+    private _r = (RH_JAM_MIN_DEF + random (RH_JAM_MAX_DEF - RH_JAM_MIN_DEF)) min RH_JAM_MAX_CAP;
+    private _zone = [_pos, _r, RH_JAM_DURATION_DEF] call ghost_jamming_fnc_spawnTempZone;
+    INFO_2("Hacking: failure jam zone '%1', %2 m",_zone,round _r);
 };
 
-INFO_3("Hacking: remote hack failed by %1 - %2 groups alerted, temp zone '%3'",name _hacker,_alerted,_jammed);
+// The one reaction path hears it too (new.md section 2).
+[QEGVAR(reaction,event), [_hacker, "hack"]] call CBA_fnc_serverEvent;

@@ -31,8 +31,8 @@ private _fnc_secondWarning = {
     // Ask again
     [{
         [
-            LLSTRING(ThrowBind_Title),
-            LLSTRING(ThrowBind_Warn2),
+            "Dangerous bind detected!",
+            "Are you completly sure!? By confirming this you take full responsblity for all possible accidents.",
             false,
             {},
             {
@@ -56,8 +56,8 @@ private _fnc_secondWarning = {
     params ["_fnc_onClose"];
 
     [
-        LLSTRING(ThrowBind_Title),
-        LLSTRING(ThrowBind_Warn),
+        "Dangerous bind detected!",
+        "Hey!<br />You have bound 'Throw' (Grenade) key to G which is easy to press and is considered a 'Dangerous' bind.<br />It's recommended to unbind the key as you can use ACE Throwing (Shift+G) or bind it to 2xG.<br />Do you want to rebind the action?",
         false,
         {},
         _this

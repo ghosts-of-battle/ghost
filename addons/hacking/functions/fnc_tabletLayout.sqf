@@ -71,15 +71,19 @@ for "_i" from 0 to (TAB_CARDS - 1) do {
     (_display displayCtrl IDC_CARD_BTN(_i)) ctrlSetPosition [_sx + _pad, _cy, _colW, _cardH];
 };
 
-private _ibH = _sh * 0.1;
+// Bottom strip: status, bar, percent, then the two buttons.
+private _footY = _sy + _sh - _pad * 0.6 - _rowH * 2.2;
+
+// The intel column FITS ITSELF to the room between the cards and the footer
+// rather than standing each button at a fixed height. At five buttons a fixed
+// 0.1 fitted; a sixth ran into the status line. Sized from the gap, the column
+// takes another product without anybody having to notice.
 private _ibGap = _sh * 0.018;
+private _ibH = (((_footY - _pad) - _cardTop - _ibGap * (TAB_INTEL - 1)) / TAB_INTEL) min (_sh * 0.1);
 for "_i" from 0 to (TAB_INTEL - 1) do {
     (_display displayCtrl IDC_INTEL_BTN(_i)) ctrlSetPosition
         [_colX2, _cardTop + _i * (_ibH + _ibGap), _colW2, _ibH];
 };
-
-// Bottom strip: status, bar, percent, then the two buttons.
-private _footY = _sy + _sh - _pad * 0.6 - _rowH * 2.2;
 (_display displayCtrl IDC_TAB_STATUS) ctrlSetPosition
     [_sx + _pad, _footY, _sw - _pad * 2, _rowH * 0.9];
 (_display displayCtrl IDC_TAB_BAR) ctrlSetPosition

@@ -58,8 +58,14 @@ _box ctrlAddEventHandler ["MouseButtonDown", {
     _d setVariable [QGVAR(grab), [(_this select 2) - (_p select 0), (_this select 3) - (_p select 1)]];
 }];
 
-private _catch = _display displayCtrl IDC_HUDMOVE_CATCH;
-_catch ctrlAddEventHandler ["MouseMoving", {
+// THE DRAG RIDES MouseHolding, NOT MouseMoving. A control raises MouseMoving
+// only while no button is down; with a button held - which is what a drag IS -
+// the engine raises MouseHolding instead. Hung on MouseMoving alone, the box
+// armed on the press and then never followed the cursor: the dialog said drag
+// and nothing dragged. Both events carry the same arguments, so one handler
+// serves both - and it is on the box as well as the catcher, because the
+// cursor spends the whole drag over the box it is towing.
+private _fnc_track = {
     params ["_ctrl", "_mx", "_my"];
     private _d = ctrlParent _ctrl;
     if !(_d getVariable [QGVAR(dragging), false]) exitWith {};
@@ -68,10 +74,17 @@ _catch ctrlAddEventHandler ["MouseMoving", {
     private _p = ctrlPosition _b;
     _b ctrlSetPosition [_mx - _gx, _my - _gy, _p select 2, _p select 3];
     _b ctrlCommit 0;
-}];
-_catch ctrlAddEventHandler ["MouseButtonUp", {
+};
+private _fnc_drop = {
     (ctrlParent (_this select 0)) setVariable [QGVAR(dragging), false];
-}];
+};
+
+private _catch = _display displayCtrl IDC_HUDMOVE_CATCH;
+{
+    _x ctrlAddEventHandler ["MouseMoving", _fnc_track];
+    _x ctrlAddEventHandler ["MouseHolding", _fnc_track];
+    _x ctrlAddEventHandler ["MouseButtonUp", _fnc_drop];
+} forEach [_catch, _box];
 
 (_display displayCtrl IDC_HUDMOVE_SAVE) ctrlAddEventHandler ["ButtonClick", {
     private _d = ctrlParent (_this select 0);

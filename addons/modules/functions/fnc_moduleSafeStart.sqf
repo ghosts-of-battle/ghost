@@ -21,9 +21,13 @@ if (_activated) then {
 
     if (_spDisable and !(isMultiplayer))then{
     }else{
-        private _trg = createTrigger ["EmptyDetector", (getPos _logic)];
-        _trg setTriggerArea _area;
-        _trg setTriggerActivation ["ANYPLAYER", "PRESENT", false];
+        // UNFINISHED, AND NOW IT SAYS SO. The trigger was created with an
+        // area and an activation but NO statements, and nothing anywhere
+        // read it - a placed module did exactly nothing, silently, in SP
+        // and MP alike. Until the zone behaviour is specified, the honest
+        // thing this module can do is warn the mission maker in the RPT
+        // instead of pretending.
+        WARNING("the Safe Start module is unfinished - it currently does nothing; the ghost_safestart addon's mission-start safety is separate and unaffected");
     };
 
 };

@@ -3,9 +3,7 @@
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {
-            QGVAR(moduleRespawn)
-        };
+        units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
@@ -20,4 +18,4 @@ class CfgPatches {
 
 #include "CfgEventHandlers.hpp"
 #include "CfgRespawnTemplates.hpp"
-#include "CfgVehicles.hpp"
+#include "CfgFactionClasses.hpp"

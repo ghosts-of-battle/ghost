@@ -33,17 +33,42 @@ _ctrls params ["_panel", "_bar", "_txt"];
 
 _bar ctrlSetBackgroundColor _colour;
 
-private _hex = format ["#%1%2%3",
-    [255 * (_colour select 0), 2] call CBA_fnc_formatNumber,
-    [255 * (_colour select 1), 2] call CBA_fnc_formatNumber,
-    [255 * (_colour select 2), 2] call CBA_fnc_formatNumber];
+// HEX, NOT DECIMAL. This was three CBA_fnc_formatNumber calls pasted together,
+// which spells a colour in base ten: [0.871, 0.361, 0.188] came out as
+// "#2229248" - seven characters, no valid reading - and the engine logged
+// "Wrong color format size" for every notification the mod has ever raised
+// while quietly falling back to white.
+private _hex = _colour call BIS_fnc_colorRGBAtoHTML;
+
+// A title or a body is somebody else's text - a thread subject, a call sign -
+// and structured text is markup: one bare < in it and the rest of the line is
+// swallowed as a tag. Escaped here because this is where it becomes markup.
+private _fnc_safe = {
+    params [["_s", "", [""]]];
+    _s = _s regexReplace ["&", "&amp;"];
+    _s = _s regexReplace ["<", "&lt;"];
+    _s regexReplace [">", "&gt;"]
+};
+
+// The face, guarded: the setting is a list of font names, but a profile written
+// by an older version can hold anything, and a bad font name is drawn as no
+// text at all.
+private _font = GVAR(font);
+if (isNil "_font" || {!(_font isEqualType "")} || {_font isEqualTo ""}) then {
+    _font = "RobotoCondensed";
+};
 
 // Structured text takes its face from the markup, not from ctrlSetFont, so the
 // font setting is baked in here. Sizes stay as multipliers of the control's own
 // height, which FUNC(place) has already set from the setting.
 _txt ctrlSetStructuredText parseText format [
     "<t font='%1' size='1.0' color='%2'>%3</t>%4<t font='%1' size='0.9'>%5</t>",
-    GVAR(font), _hex, _title, ["<br/>", ""] select (_text isEqualTo ""), _text];
+    _font,
+    _hex,
+    [_title] call _fnc_safe,
+    ["<br/>", ""] select (_text isEqualTo ""),
+    [_text] call _fnc_safe
+];
 
 {
     _x ctrlSetFade 1;

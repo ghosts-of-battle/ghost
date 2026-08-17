@@ -2,8 +2,8 @@
 [
     QGVAR(enabled),
     "CHECKBOX",
-    [LSTRING(Enabled), LSTRING(Enabled_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Force reload on disembarking AI", "Forces AI to play reload animation after disembarking from vehicle. Prevents instant shooting after disembark."],
+    ["Ghosts of Battle", "Ghosts of Battle - AI Disembark"],
     false,
     1
 ] call CBA_fnc_addSetting;
@@ -11,8 +11,8 @@
 [
     QGVAR(stayInImmobileChance),
     "SLIDER",
-    [LSTRING(StayInImmobileChance), LSTRING(StayInImmobileChance_Description)],
-    ["Ghosts of Battle", LSTRING(DisplayName)],
+    ["Stay in immobile vehicle chance", "Chance that AI will be told to stay in immobilized vehicles, applied on vehicle init."],
+    ["Ghosts of Battle", "Ghosts of Battle - AI Disembark"],
     [0, 1, 0, 0, true],
     1
 ] call CBA_fnc_addSetting;

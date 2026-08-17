@@ -5,17 +5,21 @@ changing an addon; do not hand-edit these files.
 
 | | |
 |---|---|
-| Addons | 89 |
-| Optional addons | 8 |
-| CBA settings | 72 |
-| Eden modules | 21 |
-| Functions | 376 |
+| Addons | 90 |
+| Optional addons | 3 |
+| CBA settings | 133 |
+| Eden modules | 15 |
+| Functions | 564 |
 
 ## Contents
 
 - [ADDONS.md](ADDONS.md) - every addon, what it ships, what it needs
 - [SETTINGS.md](SETTINGS.md) - every CBA setting and the server-forced values
 - [MODULES.md](MODULES.md) - every Eden module and its attributes
+- [SETUP.md](SETUP.md) - **start here**: setting up a ghost mission
+- [SMOKE_TEST.md](SMOKE_TEST.md) - the acceptance walk-through; run this before planning anything else
+- [DESIGN_INTEL_SYSTEM_PART4.md](DESIGN_INTEL_SYSTEM_PART4.md) - the current design. Parts 1-3 are superseded
+- [HANDOFF_PART4.md](HANDOFF_PART4.md) - what the Part 4 build delivered, deviated on, and left open
 - [SETUP_HACKING.md](SETUP_HACKING.md) - mission-maker walkthrough for the hacking system
 - [FA_MAGAZINE_MAP.md](FA_MAGAZINE_MAP.md) - vanilla to futureAmmo magazine map
 - [DRONES_BY_SIDE.md](DRONES_BY_SIDE.md) - drone classes by side (archived factions)

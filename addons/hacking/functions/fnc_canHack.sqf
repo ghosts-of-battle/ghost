@@ -3,32 +3,27 @@
 Function: ghost_hacking_fnc_canHack
 
 Description:
-    Full gate for hacking. Three things, in cheapest-first order:
+    Full gate for hacking. Two things, in cheapest-first order:
 
       1. the feature is enabled;
-      2. the unit CARRIES one of the required items - the Intrusion Tablet by
-         default, so hacking is a piece of kit somebody has to bring;
-      3. the unit IS flagged ISR - the same flag Intel Hunt processing uses, so
+      2. the unit IS flagged ISR - the same flag Intel Hunt processing uses, so
          a mission marks its operators once.
 
-    The self-interaction entry is gated on FUNC(hasTablet), which is step 1 and 2
-    only. This function is the one that decides whether the tablet will actually
-    do anything, and FUNC(tabletOpen) calls it to produce the refusal message.
+    THERE IS NO LONGER A CARRIED-KIT CHECK. Hacking used to also demand the
+    Intrusion Tablet in your pockets, which made it two gates saying nearly the
+    same thing: a mission that marks a man as its ISR operator has already
+    decided he is equipped for it, and the second check only ever caught the
+    case where somebody forgot to pack an item the loadout should have given
+    them. Training is the gate; the tablet is kit.
 
-    Kit and training are separate on purpose: picking the tablet off a body does
-    not make you an operator, and being an operator with no tablet gets you
-    nothing.
+    FUNC(tabletOpen) calls this to produce its refusal message, so there is one
+    answer to "can this man hack" rather than one per caller.
 
-    Pure inventory and variable checks, so no items mod is a dependency: an
-    unknown classname is simply never found.
+    Pure variable checks plus the mission condition, so nothing here depends on
+    an items mod being loaded.
 
 Parameters:
     _unit : OBJECT - the player.
-    _skipKit : BOOL - skip the carried-kit check (optional, default false). The
-        cTab rugged tablet runs the intrusion suite as one of its own apps, and
-        a player on that page is already holding a tablet - demanding a second
-        one reads as the device asking for a different device. Training and the
-        mission condition still apply.
 
 Returns:
     BOOL
@@ -36,11 +31,9 @@ Returns:
 Author:
     Ghost
 ---------------------------------------------------------------------------- */
-params ["_unit", ["_skipKit", false, [false]]];
+params ["_unit"];
 
 if !(GVAR(enabled)) exitWith { false };
-
-if (!_skipKit && {!([_unit] call FUNC(hasTablet))}) exitWith { false };
 
 if (GVAR(requireISR) && {!([_unit] call EFUNC(common,isISR))}) exitWith { false };
 

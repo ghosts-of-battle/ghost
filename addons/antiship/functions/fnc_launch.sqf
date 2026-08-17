@@ -49,7 +49,10 @@ private _from = if (_live isEqualTo []) then {
     (getPosATL (selectRandom _live)) vectorAdd [0, 0, 4]
 };
 
-private _missile = createVehicle [QGVAR(missile), _from, [], 0, "CAN_COLLIDE"];
+private _missile = createVehicle [
+    selectRandom (_cfg getOrDefault ["missiles", [QGVAR(missile)]]),
+    _from, [], 0, "CAN_COLLIDE"
+];
 if (isNull _missile) exitWith {
     diag_log text "[ghost_antiship] missile failed to create";
     false
@@ -62,14 +65,24 @@ _missile setVelocity [0, 0, (_cfg get "speed") * 0.4];
 // --- the decoy -------------------------------------------------------------
 private _decoy = objNull;
 if (_cfg get "interceptable") then {
-    // Hostile to whoever owns the ship, or its escorts will not shoot at it.
-    private _tside = side _tgt;
-    private _class = switch (_tside) do {
-        case west: { QGVAR(decoy_east) };
-        case east: { QGVAR(decoy_west) };
-        default {
-            [QGVAR(decoy_west), QGVAR(decoy_east)] select ([_tside, east] call BIS_fnc_sideIsEnemy)
-        };
+    // The module's own decoy classes when the field is set - the addon's
+    // stock decoys are Darter reskins, which read as WEST airframes over
+    // every battery whatever side their config says. The mission maker
+    // owns the hostility question then: the tooltip says to pick a class
+    // hostile to the ships it will attack.
+    private _custom = _cfg getOrDefault ["decoys", []];
+    private _class = if (_custom isNotEqualTo []) then {
+        selectRandom _custom
+    } else {
+        // Hostile to whoever owns the ship, or its escorts will not shoot at it.
+        private _tside = side _tgt;
+        switch (_tside) do {
+            case west: { QGVAR(decoy_east) };
+            case east: { QGVAR(decoy_west) };
+            default {
+                [QGVAR(decoy_west), QGVAR(decoy_east)] select ([_tside, east] call BIS_fnc_sideIsEnemy)
+            };
+        }
     };
 
     _decoy = createVehicle [_class, [0, 0, 0], [], 0, "NONE"];

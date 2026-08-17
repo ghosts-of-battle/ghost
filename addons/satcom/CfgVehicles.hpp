@@ -13,7 +13,9 @@ class CfgVehicles {
         model = "\A3\Props_F_Enoch\Military\Camps\SatelliteAntenna_01_F.p3d";
         icon = "iconObject_5x4";
         editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Land_SatelliteAntenna_01_F.jpg";
-        vehicleClass = "ghost";
+        // The CfgVehicleClasses entry main defines - NOT "ghost", which is the
+        // faction class and left the engine with no displayName to read.
+        vehicleClass = QUOTE(DOUBLES(PREFIX,Vehicles));
         mapSize = 3;
 
         class EventHandlers {

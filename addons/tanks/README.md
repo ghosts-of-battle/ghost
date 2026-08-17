@@ -1,7 +1,23 @@
-## Tanks
+# Tanks
 
-Heats tanks when they shot if manned by AI. Engine warming is not reliable enough.
+`ghost_tanks`
 
-### Authors
+Tank handling adjustments.
 
-- [veteran29](https://github.com/veteran29)
+<!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
+
+## Requires
+
+- `ghost_main`
+
+## Ships
+
+1 function.
+
+## Functions
+
+<details><summary>1</summary>
+
+- `ghost_tanks_fnc_canHeat`
+
+</details>

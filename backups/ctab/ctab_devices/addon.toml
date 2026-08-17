@@ -1,0 +1,25 @@
+[rapify]
+# ENABLED since 2026-08-06. It was off for months on the stated grounds that the
+# dialog's safezone maths "cannot be rapified", and that was simply wrong: the
+# maths rapifies fine. The blocker was 169 macro calls of the shape
+#
+#     action = QUOTE(['app','map'] call FUNC(click););
+#
+# where the comma inside the array makes the preprocessor read TWO macro
+# arguments and fail with "function call with incorrect number of arguments".
+# The fix is CBA's own ARR_N: QUOTE([ARR_2('app','map')] call FUNC(click););
+#
+# This matters more than a tidy build. Unrapified, `hemtt check` never opened
+# these configs at all, so "Member already defined" and "Undefined base class"
+# - both of which have killed the game at launch from this addon - were only
+# ever found by launching. They are now caught before the build.
+#
+# tools/check_ctab_configs.py still earns its place: it checks things hemtt does
+# not, notably that every texture path exists and that the deviceLayout hook is
+# the last control in its block.
+enabled = true
+
+# Note: `hemtt check` reports 7 L-S29 "Undefined Function" warnings for this
+# addon. They are false positives - the lint only recognises PREP'd functions,
+# and these are declared in CfgFunctions.hpp so they compile before cTab's own
+# pass. There is no lint option to silence them per addon.

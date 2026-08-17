@@ -23,19 +23,13 @@
 #define POS_W(N) ((N) * GUI_GRID_W)
 #define POS_H(N) ((N) * GUI_GRID_H)
 
-#define COLOR_BCG { \
-    "(profileNamespace getVariable ['GUI_BCG_RGB_R',0.13])", \
-    "(profileNamespace getVariable ['GUI_BCG_RGB_G',0.54])", \
-    "(profileNamespace getVariable ['GUI_BCG_RGB_B',0.21])", \
-    "(profileNamespace getVariable ['GUI_BCG_RGB_A',0.8])" \
-}
+// GHOST RED, #CC4331 - 204/67/49. These read the PLAYER'S OWN interface
+// colour before, out of their profile, so the mod's panels and buttons on
+// the menu came out a different colour on every machine. This is ours and
+// it is the same everywhere.
+#define COLOR_BCG {0.8, 0.263, 0.192, 0.8}
 
-#define COLOR_BCG_TRANS { \
-    "(profileNamespace getVariable ['GUI_BCG_RGB_R',0.13])", \
-    "(profileNamespace getVariable ['GUI_BCG_RGB_G',0.54])", \
-    "(profileNamespace getVariable ['GUI_BCG_RGB_B',0.21])", \
-    0.3 \
-}
+#define COLOR_BCG_TRANS {0.8, 0.263, 0.192, 0.3}
 
 #define IDC_SERVERSTATUS_TITLE 1000
 #define IDC_SERVERSTATUS_DESCRIPTION 1001

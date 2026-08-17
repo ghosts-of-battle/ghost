@@ -5,6 +5,90 @@ class CfgVehicles {
         class ModuleDescription;
     };
 
+    class ghost_moduleSafeStart: Module_F {
+        scope = 2;
+        displayName = "Safe Start Disabler";
+        author = "Brecon";
+        vehicleClass = "Modules";
+        category = QPREFIX;
+        function =  QUOTE(DFUNC(moduleSafeStart));
+        functionPriority = 1;
+        isGlobal = 1;
+        isTriggerActivated = 0;
+        isDisposable = 1;
+        is3DEN = 0;
+        canSetArea = 1;
+
+        class AttributeValues {
+            size3[] = {25,50,-1};
+            IsRectangle = 1;
+        };
+
+        class Arguments: ArgumentsBaseUnits {
+            class spDisable {
+                displayName = "SP Disable";
+                description = "Disable in single player";
+                typeName = "BOOL";
+                class values {
+                    class valueEnabled {
+                        name = "Enable";
+                        value = "true";
+                        default = "true";
+                    };
+                    class valueDisabled {
+                        name = "Disable";
+                        value = "false";
+                    };
+                };
+            };
+        };
+
+        class ModuleDescription: ModuleDescription {
+            description = "Disable Safe Start";
+            sync[] = {"LocationArea_F"};
+
+            class LocationArea_F {
+                position = 1;
+                optional = 1;
+                duplicate = 0;
+                synced[] = {"Anything"};
+            };
+        };
+    };
+
+    class ghost_moduleHealArea: Module_F {
+        scope = 2;
+        displayName = "Heal Area";
+        author = "Brecon";
+        vehicleClass = "Modules";
+        category = QPREFIX;
+        function =  QUOTE(DFUNC(moduleHealArea));
+        icon = "\z\ghost\addons\media\images\Icons\MedicalArea.paa";
+        functionPriority = 1;
+        isGlobal = 0;
+        isTriggerActivated = 0;
+        isDisposable = 1;
+        is3DEN = 0;
+        canSetArea = 1;
+
+        class AttributeValues {
+            size3[] = {25,25,-1};
+            IsRectangle = 1;
+        };
+
+        class ModuleDescription: ModuleDescription {
+            description = "Heal Players In Area";
+            sync[] = {"LocationArea_F"};
+
+            class LocationArea_F {
+                position = 1;
+                optional = 1;
+                duplicate = 0;
+                synced[] = {"Anything"};
+            };
+        };
+    };
+
     class ghost_moduleAiSpawner: Module_F {
         scope = 2;
         displayName = "AI Spawner";
@@ -91,6 +175,16 @@ class CfgVehicles {
                 typeName = "STRING";
                 defaultValue = "sadTrigger0";
             };
+
+            // The controller always read this attribute - "the same spawn,
+            // straight after the players" - but no module ever declared it,
+            // so the path was unreachable from Eden.
+            class startHunting {
+                displayName = "Hunt Immediately";
+                description = "Skip the route: the group goes straight after the players from the first wave.";
+                typeName = "BOOL";
+                defaultValue = 0;
+            };
         };
 
         class ModuleDescription: ModuleDescription {
@@ -175,91 +269,6 @@ class CfgVehicles {
                 position = 0;
                 optional = 0;
                 duplicate = 1;
-                synced[] = {"Anything"};
-            };
-        };
-    };
-
-    class ghost_moduleSafeStart: Module_F {
-        scope = 2;
-        displayName = "Safe Start Disabler";
-        author = "Brecon";
-        vehicleClass = "Modules";
-        category = QPREFIX;
-        function =  QUOTE(DFUNC(moduleSafeStart));
-        functionPriority = 1;
-        isGlobal = 1;
-        isTriggerActivated = 0;
-        isDisposable = 1;
-        is3DEN = 0;
-        canSetArea = 1;
-
-        class AttributeValues {
-            size3[] = {25,50,-1};
-            IsRectangle = 1;
-        };
-
-        class Arguments: ArgumentsBaseUnits {
-            class spDisable {
-                displayName = "SP Disable";
-                description = "Disable in single player";
-                typeName = "BOOL";
-                class values {
-                    class valueEnabled {
-                        name = "Enable";
-                        value = "true";
-                        default = "true";
-                    };
-                    class valueDisabled {
-                        name = "Disable";
-                        value = "false";
-                    };
-                };
-            };
-        };
-
-        class ModuleDescription: ModuleDescription {
-            description = "Disable Safe Start";
-            sync[] = {"LocationArea_F"};
-
-            class LocationArea_F {
-                position = 1;
-                optional = 1;
-                duplicate = 0;
-                synced[] = {"Anything"};
-            };
-        };
-    };
-
-
-    class ghost_moduleHealArea: Module_F {
-        scope = 2;
-        displayName = "Heal Area";
-        author = "Brecon";
-        vehicleClass = "Modules";
-        category = QPREFIX;
-        function =  QUOTE(DFUNC(moduleHealArea));
-        icon = "\z\ghost\addons\media\images\Icons\MedicalArea.paa";
-        functionPriority = 1;
-        isGlobal = 0;
-        isTriggerActivated = 0;
-        isDisposable = 1;
-        is3DEN = 0;
-        canSetArea = 1;
-
-        class AttributeValues {
-            size3[] = {25,25,-1};
-            IsRectangle = 1;
-        };
-
-        class ModuleDescription: ModuleDescription {
-            description = "Heal Players In Area";
-            sync[] = {"LocationArea_F"};
-
-            class LocationArea_F {
-                position = 1;
-                optional = 1;
-                duplicate = 0;
                 synced[] = {"Anything"};
             };
         };

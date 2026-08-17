@@ -1,26 +1,38 @@
+#include "script_component.hpp"
+/*
+ * Author: Ghost
+ * Keeps a hunter group walking onto whichever player is inside the hunt
+ * trigger, re-tasking every 15 s until the group is dead.
+ *
+ * Arguments:
+ * 0: Group <GROUP>
+ * 1: Hunt trigger <OBJECT>
+ *
+ * Return Value: None
+ *
+ * Public: No
+ */
+
 params ["_group", "_huntTrigger"];
 
 [{
-    (_this select 0) params ["_group", "_huntTrigger"];
-    private _errorCode = -1;
+    params ["_args", "_handle"];
+    _args params ["_group", "_huntTrigger"];
 
-    if (({alive _x} count units _group) == 0) then{
+    // Wiped out: clean up the group AND this handler. The removal is the point -
+    // without it every hunter wave that ever died leaves a permanent 15 s
+    // allPlayers-inAreaArray running for the rest of the mission.
+    if (({alive _x} count units _group) == 0) exitWith {
         deleteGroup _group;
-    }else {
-        private _huntTargets = allPlayers inAreaArray _huntTrigger;
-        if (_huntTargets isNotEqualTo []) then {
-            while {(count (waypoints _group)) > 0} do
-            {
-                deleteWaypoint ((waypoints _group) select 0);
-            };
-            private _wp1 = _group addWaypoint [getPos (_huntTargets select 0), 0];
-            _wp1 setWaypointType "SAD";
-        };
+        [_handle] call CBA_fnc_removePerFrameHandler;
     };
 
-    if (_errorCode != -1) then {
-        //Error or Success, close dialog and remove PFEH
-        [_this select 1] call CBA_fnc_removePerFrameHandler;
-    };
+    private _huntTargets = allPlayers inAreaArray _huntTrigger;
+    if (_huntTargets isEqualTo []) exitWith {};
 
-},15 , [_group, _huntTrigger]] call CBA_fnc_addPerFrameHandler;
+    while {(count (waypoints _group)) > 0} do {
+        deleteWaypoint ((waypoints _group) select 0);
+    };
+    private _wp1 = _group addWaypoint [getPos (_huntTargets select 0), 0];
+    _wp1 setWaypointType "SAD";
+}, 15, [_group, _huntTrigger]] call CBA_fnc_addPerFrameHandler;

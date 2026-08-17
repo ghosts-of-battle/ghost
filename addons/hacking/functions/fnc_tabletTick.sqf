@@ -23,42 +23,9 @@ if (isNull _display) exitWith {
     [_handle] call CBA_fnc_removePerFrameHandler;
 };
 
-private _session = GVAR(session);
-private _now = CBA_missionTime;
-
-// --- advance a running hack ------------------------------------------------
-if (_session get "running") then {
-    private _device = _session get "device";
-    private _dt = _now - (_session get "last");
-    _session set ["last", _now];
-
-    if ([_device, _session] call FUNC(tabletInRange)) then {
-        private _p = ((_session get "progress") + (_dt / (_session get "time"))) min 1;
-        _session set ["progress", _p];
-        if (!isNull _device) then { _device setVariable [QGVAR(progress), _p, true] };
-
-        if (_p >= 1) then {
-            _session set ["running", false];
-            _session set ["progress", 0];
-            if (!isNull _device) then { _device setVariable [QGVAR(progress), 0, true] };
-            [_device, _session get "kind", _session get "intel"] call FUNC(hackComplete);
-        };
-    };
-};
-
-// --- refresh the device list on a slower cadence ---------------------------
-if ((_now - (GVAR(lastScan))) >= TAB_REFRESH) then {
-    GVAR(lastScan) = _now;
-    GVAR(devices) = [player] call FUNC(scanDevices);
-
-    // Selection survives a refresh as long as the device is still listed.
-    private _sel = _session get "device";
-    if (!isNull _sel && {(GVAR(devices) findIf { (_x select 0) isEqualTo _sel }) < 0}) then {
-        if !(_session get "running") then {
-            _session set ["device", objNull];
-            _session set ["kind", ""];
-        };
-    };
-};
+// The work is FUNC(tabletAdvance)'s, so the tacpad's intrusion app runs the
+// same hack on the same clock rather than a second copy of it. This is the
+// drawing half.
+call FUNC(tabletAdvance);
 
 [_display] call FUNC(tabletRefresh);

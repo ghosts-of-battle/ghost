@@ -1,8 +1,30 @@
-## AI_Disembark
+# Ai Disembark
 
-Prevents AI from shooting instantly after vehicle disembark by playing reload action.
+`ghost_ai_disembark`
 
-### Authors
+AI actually get out of vehicles when they should.
 
-- [Madin](https://github.com/Madin5)
-- [veteran29](https://github.com/veteran29)
+<!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
+
+## Requires
+
+- `ghost_common`
+
+## Ships
+
+1 function.
+
+## CBA settings
+
+| Setting | Type | Name |
+|---|---|---|
+| `ghost_ai_disembark_enabled` | CHECKBOX | Force reload on disembarking AI |
+| `ghost_ai_disembark_stayInImmobileChance` | SLIDER | Stay in immobile vehicle chance |
+
+## Functions
+
+<details><summary>1</summary>
+
+- `ghost_ai_disembark_fnc_onDisembark`
+
+</details>

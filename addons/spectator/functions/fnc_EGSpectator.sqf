@@ -24,8 +24,8 @@
     Multiple values / none
 
     Examples:
-    ["Initialize", [player]] call BIS_fnc_EGSpectator; 	// Initializes spectator for given player
-    ["Terminate"] call BIS_fnc_EGSpectator; 			// Terminates spectator for given player
+    ["Initialize", [player]] call BIS_fnc_EGSpectator;  // Initializes spectator for given player
+    ["Terminate"] call BIS_fnc_EGSpectator;             // Terminates spectator for given player
 */
 
 // Do not execute from within 3DEN

@@ -3,9 +3,9 @@
 Function: ghost_common_fnc_fireBarrage
 
 Description:
-    Rains shells on a point. Extracted from ambient_arty so more than one feature
-    can call for artillery without either of them owning the other: ambient arty
-    uses it for its slow atmospheric drip, objective_watch for a heavy shoot on a
+    Rains shells on a point. Shared so more than one feature
+    can call for artillery without either of them owning the other: counter-battery
+    uses it for its slow atmospheric drip, counter-battery for a heavy shoot on a
     captured objective. Neither addon requires the other.
 
     Rounds spawn high above scattered impact points and fall - a virtual battery,
@@ -17,7 +17,7 @@ Parameters:
     _spread : NUMBER - scatter radius in metres. Optional, default 50.
     _shell  : STRING - CfgAmmo class. Optional, default 155mm HE.
     _window : NUMBER - seconds to spread the rounds across. Optional; 0 uses the
-                       legacy fixed gap, which is what ambient arty wants.
+                       legacy fixed gap.
 
 Returns:
     BOOL - true if the mission was scheduled.

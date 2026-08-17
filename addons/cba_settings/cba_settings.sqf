@@ -649,17 +649,6 @@ cba_quicktime_qteShorten = false;
 cba_ui_notifyLifetime = 4;
 cba_ui_StorePasswords = 1;
 
-// cTab
-ctab_compass_enable = true;
-ctab_core_bft_mode = 1;
-force ctab_core_drawMainMap = true;
-ctab_core_gridPrecision = 0;
-ctab_core_helmetcam_mode = 1;
-force ctab_core_microDagrGroupBFT = true;
-ctab_core_sync_time = 30;
-ctab_core_uav_mode = 1;
-ctab_core_useAceMicroDagr = true;
-ctab_core_useArmaMarker = true;
 
 // Dom's Mods
 DT_automaticObjectSync = true;
@@ -674,116 +663,8 @@ DT_viewDistanceHotkey2 = 6000;
 DT_viewDistanceHotkey3 = 9000;
 force DT_viewDistanceMax = 12000;
 
-// DUI - Squad Radar - Indicators
-force diwako_dui_indicators_crew_range_enabled = false;
-diwako_dui_indicators_fov_scale = false;
-diwako_dui_indicators_icon_buddy = true;
-diwako_dui_indicators_icon_leader = true;
-diwako_dui_indicators_icon_medic = true;
-diwako_dui_indicators_range = 20;
-diwako_dui_indicators_range_crew = 300;
-diwako_dui_indicators_range_scale = false;
-force diwako_dui_indicators_rangeLimit = 100;
-diwako_dui_indicators_show = true;
-diwako_dui_indicators_size = 1;
-diwako_dui_indicators_style = "standard";
-diwako_dui_indicators_useACENametagsRange = true;
-
-// DUI - Squad Radar - Line Compass
-diwako_dui_linecompass_ACEFingeringColor = [1,0.66,0,1];
-force diwako_dui_linecompass_AllowNumericDrawBearing = true;
-diwako_dui_linecompass_CompassAvailableShown = true;
-diwako_dui_linecompass_compassRange = 35;
-force diwako_dui_linecompass_compassRangeLimit = 50;
-diwako_dui_linecompass_CustomWaypointColor = [0,0,0.87,1];
-diwako_dui_linecompass_DefaultIconColor = [0.5,0.87,0.5,1];
-diwako_dui_linecompass_DrawBearing = 2;
-diwako_dui_linecompass_Enabled = true;
-diwako_dui_linecompass_enableOcclusion = false;
-diwako_dui_linecompass_enableShowCustomWP = true;
-diwako_dui_linecompass_IconOutline = 0;
-diwako_dui_linecompass_occlusionFadeSpeed = 3.5;
-diwako_dui_linecompass_showSpeaking = true;
-diwako_dui_linecompass_SwapOrder = false;
-diwako_dui_linecompass_WaypointColor = [0,0,0.87,1];
-
-// DUI - Squad Radar - Main
-diwako_dui_ace_hide_interaction = true;
-diwako_dui_colors = "standard";
-diwako_dui_font = "RobotoCondensed";
-diwako_dui_icon_style = "standard";
-diwako_dui_main_hide_dialog = true;
-diwako_dui_main_hide_ui_by_default = false;
-diwako_dui_reset_ui_pos = false;
-
 // DUI - Squad Radar - Nametags
-diwako_dui_nametags_customInfoColor = [1,1,1,1];
-diwako_dui_nametags_customInfoShadow = 1;
 diwako_dui_nametags_customRankStyle = "[[""PRIVATE"",""CORPORAL"",""SERGEANT"",""LIEUTENANT"",""CAPTAIN"",""MAJOR"",""COLONEL""],[""Pvt."",""Cpl."",""Sgt."",""Lt."",""Capt."",""Maj."",""Col.""]]";
-diwako_dui_nametags_deadColor = [0.2,0.2,0.2,1];
-diwako_dui_nametags_deadRenderDistance = 3.5;
-diwako_dui_nametags_drawRank = true;
-diwako_dui_nametags_enabled = true;
-diwako_dui_nametags_enableFOVBoost = true;
-diwako_dui_nametags_enableOcclusion = true;
-diwako_dui_nametags_rankNameStyle = "default";
-diwako_dui_nametags_renderDistance = 40;
-diwako_dui_nametags_showUnconAsDead = true;
-diwako_dui_nametags_useLIS = true;
-diwako_dui_nametags_useSideIsFriendly = true;
-
-// DUI - Squad Radar - Radar
-diwako_dui_compass_hide_alone_group = false;
-diwako_dui_compass_hide_blip_alone_group = false;
-diwako_dui_compass_icon_scale = 1;
-diwako_dui_compass_opacity = 1;
-diwako_dui_compass_style = ["\z\diwako_dui\addons\radar\UI\compass_styles\standard\compass_limited.paa","\z\diwako_dui\addons\radar\UI\compass_styles\standard\compass.paa"];
-diwako_dui_compassRange = 35;
-diwako_dui_compassRefreshrate = 0;
-diwako_dui_dir_showMildot = false;
-diwako_dui_dir_size = 1.25;
-diwako_dui_distanceWarning = 3;
-diwako_dui_enable_compass = true;
-diwako_dui_enable_compass_dir = 1;
-diwako_dui_enable_occlusion = false;
-diwako_dui_enable_occlusion_cone = 360;
-diwako_dui_hudScaling = 2;
-diwako_dui_namelist = true;
-diwako_dui_namelist_bg = 0;
-diwako_dui_namelist_only_buddy_icon = false;
-diwako_dui_namelist_size = 2.82843;
-diwako_dui_namelist_text_shadow = 2;
-diwako_dui_namelist_width = 215;
-diwako_dui_radar_ace_finger = true;
-force diwako_dui_radar_ace_medic = true;
-diwako_dui_radar_always_show_player_number = true;
-diwako_dui_radar_always_show_unit_numbers = false;
-diwako_dui_radar_compassRangeCrew = 500;
-force diwako_dui_radar_compassRangeLimit = 50;
-diwako_dui_radar_dir_padding = 25;
-diwako_dui_radar_dir_shadow = 2;
-diwako_dui_radar_enable_seat_icons = 2;
-diwako_dui_radar_group_by_vehicle = false;
-diwako_dui_radar_icon_opacity = 1;
-diwako_dui_radar_icon_opacity_no_player = true;
-force diwako_dui_radar_icon_priority_setting = 1;
-diwako_dui_radar_icon_scale_crew = 6;
-diwako_dui_radar_leadingZeroes = false;
-diwako_dui_radar_namelist_hideWhenLeader = false;
-diwako_dui_radar_namelist_vertical_spacing = 0.5;
-diwako_dui_radar_occlusion_fade_in_time = 1;
-diwako_dui_radar_occlusion_fade_time = 10;
-diwako_dui_radar_pointer_color = [1,0.5,0,1];
-diwako_dui_radar_pointer_style = "standard";
-diwako_dui_radar_show_cardinal_points = true;
-diwako_dui_radar_showSpeaking = true;
-diwako_dui_radar_showSpeaking_radioOnly = false;
-diwako_dui_radar_showSpeaking_replaceIcon = true;
-force diwako_dui_radar_sortType = "none";
-force diwako_dui_radar_sqlFirst = false;
-force diwako_dui_radar_syncGroup = false;
-force diwako_dui_radar_vehicleCompassEnabled = false;
-diwako_dui_use_layout_editor = false;
 
 // Enhanced Movement Rework
 force emr_main_allowClimbOnStandingUnits = false;
@@ -838,6 +719,25 @@ force force ghost_back_to_game_removeBody = true;
 force force ghost_back_to_game_teleportToLeader = true;
 force force ghost_back_to_game_teleportToVehicle = true;
 force ghost_boc_disabled = false;
+force ghost_bft_adminGodView = false;
+// 2 = All: every friendly group tracks, AI squads and split-off teams
+// included. 1 (Player) was the old pin that kept anything without a
+// player in it off the map.
+force force ghost_bft_autoEnable = 2;
+force force ghost_bft_colorsBlacklist = "Default, ColorWEST, ColorEAST, ColorGUER, ColorCIV, Color1_FD_F, Color2_FD_F, Color3_FD_F, Color4_FD_F, Color5_FD_F, Color6_FD_F";
+force force ghost_bft_enabled = true;
+force force ghost_bft_fuzzOtherSides = false;
+force force ghost_bft_iconsBlacklist = "unknown, uav";
+force force ghost_bft_mapSettings = true;
+force force ghost_bft_markerShape = "a";
+force force ghost_bft_nameOptions = "Zulu,Lima,Uniform,Echo,Whiskey,Tango";
+force force ghost_bft_preferredColors = "ColorBLUFOR, ColorOPFOR, ColorIndependent, ColorCivilian, ColorUNKNOWN";
+force force ghost_bft_preferredIcons = "inf, motor_inf, mech_inf, air, armor, recon";
+force force ghost_bft_trackingMode = "weightedAverage";
+force force ghost_bft_trailingCount = 5;
+force force ghost_bft_trailingMode = "weightedAverage";
+force force ghost_bft_trailingWeight = 0.75;
+force force ghost_bft_updateDelay = 5;
 force force ghost_boc_walk = true;
 force force ghost_chat_allowGlobalChat = true;
 force force ghost_evac_enabled = true;
@@ -848,7 +748,9 @@ force force ghost_fatigue_highJogCoefEnabled = true;
 force force ghost_friendly_fire_loggingEnabled = true;
 force force ghost_grass_enabled = true;
 force ghost_hacking_enabled = true;
-force ghost_hacking_requiredItems = "ItemcTab,ItemAndroid,ItemAndroidMisc";
+// The GFT-1 rugged tablet only - the S23 handset reads the net, it does
+// not break into it. ISR flag is required on top (see requireISR).
+force ghost_hacking_requireISR = true;
 force ghost_hacking_towerClasses = "Land_TTowerBig_2_F,Land_TTowerBig_1_F,Land_Communication_F,Land_Antenna_01_F,Land_Antenna_02_F";
 force force ghost_insurgents_enabled_CUP = false;
 force force ghost_insurgents_enabled_Vanilla = true;

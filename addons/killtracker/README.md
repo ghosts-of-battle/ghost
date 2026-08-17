@@ -1,7 +1,23 @@
-## Killtracker
+# Killtracker
 
-Dumps ACEX Killtracker stats to RPT upon game end.
+`ghost_killtracker`
 
-### Authors
+Records who killed whom, for the after-action.
 
-- [veteran29](http://github.com/veteran29)
+<!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
+
+## Requires
+
+- `ghost_main`
+
+## Ships
+
+1 function.
+
+## Functions
+
+<details><summary>1</summary>
+
+- `ghost_killtracker_fnc_dumpStats`
+
+</details>

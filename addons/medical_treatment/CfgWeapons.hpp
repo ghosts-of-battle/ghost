@@ -5,9 +5,9 @@ class CfgWeapons {
         scope = 2;
         scopeCurator = 2;
         author = "ArmaForces";
-        displayName = "$STR_GHOST_Medical_Treatment_Apap_DisplayName";
-        descriptionShort = "$STR_GHOST_Medical_Treatment_Apap_Desc_Short";
-        descriptionUse = "$STR_GHOST_Medical_Treatment_Apap_Desc_Use";
+        displayName = "Apap pastille";
+        descriptionShort = "Used to combat light pain experiences. No side effects.";
+        descriptionUse = "Take orally to combat light pain. No side effects.";
         picture = QPATHTOF(ui\icons\apap.paa);
 
         model = "\A3\Structures_F_EPA\Items\Medical\PainKillers_F.p3d";

@@ -1,13 +1,17 @@
 class CfgVehicles {
-    class Land_Sleeping_bag_folded_F;
-    class Land_Sleeping_bag_brown_folded_F;
+    // The folded solar tents. NOT vanilla - they are not in Contact, Enoch,
+    // Orange or the base structures PBOs - so whichever mod supplies them has to
+    // be loaded or these two classes inherit from nothing and the props lose
+    // their model. Named in requiredAddons once we know which mod it is.
+    class Land_TentSolar_01_folded_olive_F;
+    class Land_TentSolar_01_folded_sand_F;
 
     // Deployed patrol-base kit objects (drop these to build). Plain ThingX props
-    // (the vanilla folded sleeping bags), NOT weapon holders - the engine deletes
+    // (a folded solar tent), NOT weapon holders - the engine deletes
     // ground weapon holders whose cargo is empty, which made these vanish a second
     // after Zeus dropped them. They are counted by class, and ACE-carryable /
     // pick-up-able back into the matching CfgWeapons kit item.
-    class GVAR(kit_sand_object): Land_Sleeping_bag_brown_folded_F {
+    class GVAR(kit_sand_object): Land_TentSolar_01_folded_sand_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -39,7 +43,7 @@ class CfgVehicles {
         };
     };
 
-    class GVAR(kit_olive_object): Land_Sleeping_bag_folded_F {
+    class GVAR(kit_olive_object): Land_TentSolar_01_folded_olive_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;

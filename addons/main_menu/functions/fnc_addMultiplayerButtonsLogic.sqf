@@ -22,14 +22,14 @@ params [
     ["_displayName", ""]
 ];
 
-_passwordInput ctrlSetText LLSTRING(PasswordPlaceholder);
+_passwordInput ctrlSetText "Password";
 _passwordInput ctrlEnable !IS_ADMIN;
 _passwordInput ctrlCommit 0;
 
-_passwordButton ctrlSetText ([LLSTRING(AdminLogin), LLSTRING(AdminLogout)] select IS_ADMIN);
+_passwordButton ctrlSetText (["Admin Login", "Admin Logout"] select IS_ADMIN);
 _passwordButton ctrlCommit 0;
 
-_missionsButton ctrlSetText LLSTRING(Missions);
+_missionsButton ctrlSetText "Missions";
 _missionsButton ctrlEnable ((_displayName != 'RscDisplayRemoteMissions') && {IS_ADMIN});
 _missionsButton ctrlCommit 0;
 
@@ -71,7 +71,7 @@ _passwordButton ctrlAddEventHandler ["ButtonClick", {
                     INFO("Logged out from admin");
 
                     _missionsButton ctrlEnable false;
-                    _passwordButton ctrlSetText LLSTRING(AdminLogin);
+                    _passwordButton ctrlSetText "Admin Login";
                     _passwordButton ctrlEnable true;
                     _passwordInput ctrlEnable true;
                 };
@@ -85,7 +85,7 @@ _passwordButton ctrlAddEventHandler ["ButtonClick", {
         INFO("Logging in as admin");
 
         serverCommand format ["#login %1", ctrlText _passwordInput];
-        _passwordInput ctrlSetText LLSTRING(PasswordPlaceholder);
+        _passwordInput ctrlSetText "Password";
 
         // wait until logged in or restore state on timeout
         [_passwordInput, _passwordButton, _missionsButton] spawn {
@@ -99,7 +99,7 @@ _passwordButton ctrlAddEventHandler ["ButtonClick", {
                     INFO("Logged in as admin");
 
                     _missionsButton ctrlEnable true;
-                    _passwordButton ctrlSetText LLSTRING(AdminLogout);
+                    _passwordButton ctrlSetText "Admin Logout";
                     _passwordButton ctrlEnable true;
                 };
 
@@ -115,7 +115,7 @@ _passwordButton ctrlAddEventHandler ["ButtonClick", {
 _passwordInput ctrlAddEventHandler ["SetFocus", {
     params ["_input"];
 
-    if (ctrlText _input == LLSTRING(PasswordPlaceholder)) then {
+    if (ctrlText _input == "Password") then {
         _input ctrlSetText "";
     };
 }];
@@ -124,7 +124,7 @@ _passwordInput ctrlAddEventHandler ["KillFocus", {
     params ["_input"];
 
     if (ctrlText _input == "") then {
-        _input ctrlSetText LLSTRING(PasswordPlaceholder);
+        _input ctrlSetText "Password";
     };
 }];
 

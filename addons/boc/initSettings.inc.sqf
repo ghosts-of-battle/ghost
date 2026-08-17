@@ -2,7 +2,7 @@
 
 [
     QGVAR(disabled), "CHECKBOX",
-    [LSTRING(Disable), LSTRING(Disable_Description)],
+    ["Disable BackpackOnChest", "Prohibit BackpackOnChest features"],
     ["Ghosts of Battle", "Backpack On Chest"],
     false, // default value
     true // isGlobal
@@ -10,7 +10,7 @@
 
 [
     QGVAR(walk), "CHECKBOX",
-    [LSTRING(Walk), LSTRING(Walk_Description)],
+    ["Force Walking", "Player is forced to walk when backpack is on chest"],
     ["Ghosts of Battle", "Backpack On Chest"],
     true, // default value
     true // isGlobal

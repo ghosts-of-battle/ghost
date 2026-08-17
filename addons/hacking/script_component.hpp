@@ -14,8 +14,10 @@
 
 #include "\z\ghost\addons\main\script_macros.hpp"
 
-// The required-items list (carry any ONE to unlock the Hack menu) is a CBA
-// setting, GVAR(requiredItems) - a pure inventory check, no items-mod dependency.
+// Hacking is gated on TRAINING, not on kit: the ISR flag and the mission
+// condition, both in FUNC(canHack). The carried-tablet check is gone - a
+// mission that marks a man as its ISR operator has already decided he is
+// equipped, and the second gate only ever caught a loadout that forgot an item.
 
 // --- tuning ---
 #define HACK_TOWER_RANGE   50      // metres: how close to a tower to hack it
@@ -40,10 +42,15 @@
 
 // Target search circles. Each hack on the same objective steps to the next
 // radius in the list and holds at the last one.
-#define INTEL_RADII_DEF     "4000,3000,2000,1000"
+#define INTEL_RADII_DEF     "3000,2000,1000"
 #define INTEL_OFFSET_DEF    75      // % of the radius the circle is displaced by
 #define INTEL_OFFSET_CAP    0.95    // any more and the objective falls outside it
 #define INTEL_RADIUS_FALLBACK 1000  // if the radius list is unusable
+
+// An air defence site's drawn footprint. Exact, not fuzzed - the site does not
+// move and a pilot routing around a wrong centre is worse off than one with no
+// circle at all. See FUNC(productLocateAA).
+#define AA_SITE_RADIUS  400
 #define INTEL_TARGET_ALPHA  0.35
 #define PRODUCT_WINDOW      60      // sec the post-hack choice stays offered
 
@@ -54,7 +61,7 @@
 #define SIGINT_MIN_R    300     // m minimum circle radius
 
 // Remote unit hack (Part 1 section 6) - defaults mirror the module attributes.
-// The feature only exists when a ghost_moduleRemoteHack is placed.
+// The feature only exists while the remoteEnable CBA setting is on.
 #define RH_RANGE_DEF        800
 #define RH_TIME_DEF         60
 #define RH_FAIL_DEF         15
@@ -66,19 +73,7 @@
 #define RH_JAM_DURATION_DEF 600
 
 // --- hacking tablet ---------------------------------------------------------
-// One dialog replaces every hacking ACE action. Device cards on the left, intel
-// choice on the right, progress along the bottom. Closing it pauses the hack.
-#define IDD_TABLET          8700
-#define IDC_TAB_BEZEL       8701
-#define IDC_TAB_SCREEN      8702
-#define IDC_TAB_TITLE       8703
-#define IDC_TAB_STATUS      8704
-#define IDC_TAB_BAR         8705
-#define IDC_TAB_PCT         8706
-#define IDC_TAB_ACTION      8707
-#define IDC_TAB_CLOSE       8708
-#define IDC_TAB_DEVHEAD     8709
-#define IDC_TAB_INTELHEAD   8710
+#include "\z\ghost\addons\hacking\tablet.inc.hpp"
 
 // Fixed card slots rather than ctrlCreate - same technique as the notify stack.
 #define TAB_CARDS           6
@@ -87,7 +82,11 @@
 #define IDC_CARD_INFO(n)    (8722 + (n) * 5)
 #define IDC_CARD_BTN(n)     (8723 + (n) * 5)
 
-#define TAB_INTEL           5
+// Six because six products can be live at once: picture, sigint, jam, detect,
+// target, network trace. The refresh TRUNCATES past this, silently, so the cap
+// and the button count in tablet.hpp must move together or the last product
+// becomes unreachable with no error anywhere.
+#define TAB_INTEL           9
 #define IDC_INTEL_BTN(n)    (8780 + (n))
 
 #define TAB_REFRESH         1       // sec between device-list refreshes
@@ -97,6 +96,7 @@
 // A held device, not a dialog: it stays on screen while you walk, and every
 // reading changes as you move. Behaviour referenced from ACE's MicroDAGR - ACE
 // is GPL, so nothing is copied, only the idea of a device you carry.
+// The readings themselves (FUNC(scannerRead)) are the whole readout.
 #define IDD_SCANNER         8800
 #define IDC_SCN_BEZEL       8801
 // 8802 was the screen panel. The text draws straight onto the art now, so there
@@ -120,8 +120,20 @@
 #define IDC_SCN_ALARM       8819
 
 #define SCN_TICK            0.25    // sec between readings
+
+// How long the handset's title layer lives before the engine drops it, and
+// how often the tick renews it. Short on purpose: the gap is the slack, and
+// a mission that has stopped renews nothing - which is what keeps the
+// scanner off the main menu.
+#define SCN_LAYER_LIFE      5
+#define SCN_LAYER_RENEW     2
 #define SCN_DRONE_WARN      2000    // m: amber
 #define SCN_DRONE_ALERT     1000    // m: red
+// How long one scanner sweep is reused for. The readout is a lamp and a
+// bearing - nothing a player can act on faster than this - and the sweep
+// behind it is a two-kilometre nearEntities.
+#define SCN_CACHE_TTL       2
+
 #define SCN_MESH_RANGE      200     // m: a friendly close enough to stand in for a mesh link
 #define SCN_HUD_ID          "hackScanner"
 
@@ -153,6 +165,17 @@
 #define SCN_T_RUNNING       1
 #define SCN_T_STOPPED       2
 
+// WHAT COMES OFF A BODY. One list, so the search, the deposit and the "have
+// you got any" check can never disagree about what counts as intel - three
+// classes in three places is how a new kind ends up lootable and then
+// undepositable. Phones lead: a man carrying one is the common case.
+#define INTEL_ITEMS [QGVAR(intelItem), QGVAR(intelMap), QGVAR(intelGps)]
+
+// A witnessed pop hack: how far a civilian's eyes reach, and how much the
+// settlement's hostility toward the hacker's side rises per sighting.
+#define POP_WITNESS_RANGE   60
+#define POP_HOSTILITY_BUMP  10
+
 // Alarm. Dialled in like a kitchen timer - each press adds a step, and it arms
 // itself once the presses stop - because a handset has one spare key, not a
 // number pad. The armed list lives on the server so an alarm outlives its
@@ -163,3 +186,6 @@
 
 #define SCN_DEF_X           0.845
 #define SCN_DEF_Y           0.42
+
+// How often the agent sweep looks for someone new to hand a handset to.
+#define PHONE_SWEEP 30

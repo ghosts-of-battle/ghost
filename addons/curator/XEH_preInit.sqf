@@ -51,14 +51,18 @@ if (isServer) then {
         private _curatorModule = [_unit] call FUNC(getFreeCuratorModule);
         unassignCurator getAssignedCuratorLogic _unit;
 
-        // Curator unassign can take a moment, add delay
-        [{}, {}, [_unit, _curatorModule] , 5, {
+        // Curator unassign can take a moment, add delay. A plain delayed
+        // call - the old waitUntilAndExecute form used {} as the condition,
+        // which returns Nothing and threw a type error every frame for the
+        // whole five seconds; the assignment only ever happened because the
+        // timeout branch fired.
+        [{
             params ["_unit", "_curatorModule"];
 
             _unit assignCurator _curatorModule;
 
             [QGVAR(zeusAssigned), _curatorModule, _unit] call CBA_fnc_targetEvent;
-        }] call CBA_fnc_waitUntilAndExecute;
+        }, [_unit, _curatorModule], 5] call CBA_fnc_waitAndExecute;
 
     }] call CBA_fnc_addEventHandler;
 

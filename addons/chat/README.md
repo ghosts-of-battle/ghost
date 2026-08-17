@@ -1,11 +1,31 @@
-## Chat
+# Chat
 
-Game chat related features.
+`ghost_chat`
 
-### Chat lock
+Chat handling: channel behaviour and the message filtering ghost applies
+on top of the engine's.
 
-This components adds an option to block global (system and side) chats, making them visible only to sender and logged in admins and zeuses.
+<!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
 
-## Authors
+## Requires
 
-- [veteran29](https://github.com/veteran29)
+- `ghost_common`
+- `ghost_notify`
+
+## Ships
+
+1 function.
+
+## CBA settings
+
+| Setting | Type | Name |
+|---|---|---|
+| `ghost_chat_allowGlobalChat` | CHECKBOX | Allow global/side chat |
+
+## Functions
+
+<details><summary>1</summary>
+
+- `ghost_chat_fnc_handleChatMessage`
+
+</details>

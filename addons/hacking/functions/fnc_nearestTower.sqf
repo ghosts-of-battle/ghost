@@ -3,9 +3,10 @@
 Function: ghost_hacking_fnc_nearestTower
 
 Description:
-    Nearest hackable "tower" within HACK_TOWER_RANGE: any Electronic War Zones
-    emitter (from ghost_electronic_war_zones_jammers) plus any object whose class
-    is in the GVAR(towerClasses) setting. Skips already-hacked and dead objects.
+    Nearest hackable "tower" within HACK_TOWER_RANGE: any object whose class
+    is in the GVAR(towerClasses) setting, anything tagged an internet pop, and
+    any live EW emitter out of the jamming registry. Skips already-hacked and
+    dead objects.
 
 Parameters:
     _unit : OBJECT - the player.
@@ -25,16 +26,30 @@ if (_classes isNotEqualTo []) then {
     _cands = nearestObjects [_unit, _classes, HACK_TOWER_RANGE];
 };
 
-// Electronic War Zones emitters (each entry is [obj, rEff, rFall]); optional addon.
+// AND ANYTHING TAGGED A POP. The internet pops are hackable because they are
+// pops, not because of what they are made of - the mission picks that prop,
+// and a classname list is a second place to remember it. They were placed
+// for months as furniture nobody could plug into because their class was
+// never in the list above.
+{
+    if (_x getVariable [QEGVAR(leaders,pop), false]) then { _cands pushBackUnique _x };
+} forEach (nearestObjects [_unit, [], HACK_TOWER_RANGE]);
+
+// EW emitters, from the jamming registry - see FUNC(towersInRange).
 {
     private _o = _x param [0, objNull];
-    if (!isNull _o) then { _cands pushBackUnique _o };
-} forEach (missionNamespace getVariable ["ghost_electronic_war_zones_jammers", []]);
+    if (!isNull _o && {(_unit distance _o) <= HACK_TOWER_RANGE}) then { _cands pushBackUnique _o };
+} forEach (missionNamespace getVariable [QEGVAR(jamming,jammers), []]);
 
 private _best = objNull;
 private _bestDist = HACK_TOWER_RANGE + 1;
 {
-    if (!isNull _x && {alive _x} && {!(_x getVariable [QGVAR(hacked), false])}) then {
+    if (
+        !isNull _x && {alive _x}
+        && {!(_x getVariable [QGVAR(hacked), false])}
+        // every tower inside the TAOR is hackable, none outside
+        && {[_x] call FUNC(towerInTaor)}
+    ) then {
         private _d = _unit distance _x;
         if (_d < _bestDist) then { _bestDist = _d; _best = _x };
     };

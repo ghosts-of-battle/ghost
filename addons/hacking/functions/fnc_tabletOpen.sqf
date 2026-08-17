@@ -23,13 +23,11 @@ params ["_unit"];
 
 if (!hasInterface) exitWith { false };
 
-// The self-action only needs the tablet in your kit, so this is where somebody
-// who has one but is not cleared to use it finds out. Say which half is missing:
-// a menu entry that silently does nothing is worse than no menu entry at all.
+// Say which gate stopped them. A way in that silently does nothing is worse
+// than no way in at all.
 if !([_unit] call FUNC(canHack)) exitWith {
     private _why = switch (true) do {
         case (!GVAR(enabled)): { "Hacking is disabled." };
-        case (!([_unit] call FUNC(hasTablet))): { "No intrusion tablet." };
         case (GVAR(requireISR) && {!([_unit] call EFUNC(common,isISR))}): { "You are not an ISR operator." };
         default { "You cannot use the tablet here." };
     };
@@ -42,6 +40,11 @@ private _display = uiNamespace getVariable [QGVAR(tablet), displayNull];
 if (isNull _display) exitWith { false };
 
 [_display] call FUNC(tabletLayout);
+
+// Announced rather than styled here. The suite has to keep working on a mission
+// with no tacpad loaded, so it cannot reach for a theme it might not have - it
+// says it is open and whoever cares about how things look answers.
+[QGVAR(tabletOpened), [_display]] call CBA_fnc_localEvent;
 
 if (isNil QGVAR(session)) then {
     GVAR(session) = createHashMapFromArray [

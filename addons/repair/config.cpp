@@ -8,6 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "ghost_main",
+            "ghost_common",
             "cba_xeh"
         };
         skipWhenMissingDependencies = 1;

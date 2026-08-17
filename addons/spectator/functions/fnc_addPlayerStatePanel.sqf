@@ -16,7 +16,7 @@
 #define PLAYER_STATE_TARGET_POS [_offsetX + _w, _y, _w + _h, _h]
 
 #define STATE_ICON (["\a3\ui_f\data\igui\cfg\mptable\killed_ca.paa", "\a3\missions_f_oldman\data\img\hints\sleeping_ca.paa"] select alive player)
-#define STATE_TEXT ([LLSTRING(State_Dead), LLSTRING(State_Alive)] select alive player)
+#define STATE_TEXT (["You're dead.", "You're not dead (yet)."] select alive player)
 
 params ["_display"];
 

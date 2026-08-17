@@ -2,7 +2,9 @@
 
 ADDON = false;
 
-if (isNil QEGVAR(main,ghost_enabled) || !(EGVAR(main,ghost_enabled))) exitWith {};
+// The old EGVAR(main,ghost_enabled) master gate stood here. Nothing in the
+// repo, the settings or the mission ever WROTE that variable, so the isNil
+// arm always fired and everything below this line was dead. Removed.
 
 PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"

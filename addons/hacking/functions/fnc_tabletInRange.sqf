@@ -20,4 +20,14 @@ Author:
 params ["_device", "_session"];
 
 if (isNull _device || {!alive _device}) exitWith { false };
-(player distance _device) <= (_session get "range")
+
+// A SESSION WITHOUT A RANGE IS NOT OUT OF RANGE. `get` answered nil for a
+// session that had never had a device picked on it, and `distance <= nil` is
+// false - so the hack ran with the progress permanently refused and nothing on
+// screen said why. The tower range is the honest default.
+private _range = _session getOrDefault ["range", 0];
+if (!(_range isEqualType 0) || {_range <= 0}) then {
+    _range = [QGVAR(cfg_hack_range)] call FUNC(hackSetting);
+};
+
+(player distance _device) <= _range

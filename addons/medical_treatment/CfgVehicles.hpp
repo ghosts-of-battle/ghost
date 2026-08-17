@@ -10,7 +10,7 @@ class CfgVehicles {
     class GHOST_apapItem: Item_Base_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "$STR_GHOST_Medical_Treatment_Apap_DisplayName";
+        displayName = "Apap pastille";
         author = "ArmaForces";
         icon = QPATHTOF(ui\icons\apap.paa);
         model = "\A3\Structures_F_EPA\Items\Medical\PainKillers_F.p3d";

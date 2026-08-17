@@ -1,0 +1,4 @@
+[rapify]
+# The main-map tool picker is positioned with safezone maths the engine
+# evaluates at load and HEMTT's rapifier cannot - same reason as ctab_devices.
+enabled = false

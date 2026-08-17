@@ -19,17 +19,27 @@ if (_activated) then {
     [{
         (_this select 0) params ["_area"];
         {
-            /* [_x] call ace_medical_treatment_fnc_fullHealLocal; */
-            [_x] call ACM_core_fnc_resetVariables;
-            [_x] call ACM_airway_fnc_resetVariables;
-            [_x] call ACM_breathing_fnc_resetVariables;
-            [_x] call ACM_circulation_fnc_resetVariables;
-            [_x] call ACM_damage_fnc_resetVariables;
-            [_x] call ACM_disability_fnc_resetVariables;
-            [_x] call ace_medical_treatment_fnc_fullHealLocal;
-            _x setDamage 0;
+            // AT THE PLAYER, not here - fullHealLocal and the ACM resets are
+            // locality-bound (the adminpanel's own fullHeal remoteExecs the
+            // same call), so running them on the server healed nobody but
+            // the host. ACM guarded: without that mod the calls are absent.
+            private _p = _x;
+            {
+                if (!isNil _x) then {
+                    [_p] remoteExec [_x, _p];
+                };
+            } forEach [
+                "ACM_core_fnc_resetVariables",
+                "ACM_airway_fnc_resetVariables",
+                "ACM_breathing_fnc_resetVariables",
+                "ACM_circulation_fnc_resetVariables",
+                "ACM_damage_fnc_resetVariables",
+                "ACM_disability_fnc_resetVariables"
+            ];
+            [_p] remoteExec ["ace_medical_treatment_fnc_fullHealLocal", _p];
+            _p setDamage 0;
             [
-                "<t color='#FFA500'>You are being treated at the 361st Medical Zone</t>",
+                "<t color='#FFA500'>You are being treated at the 3Ghost Medical Zone</t>",
                 -1,
                 0.8,
                 0.5,

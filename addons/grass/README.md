@@ -1,8 +1,31 @@
-## Grass Force
+# Grass
 
-Adds ability to force grass on all clients with one CBA Setting.
+`ghost_grass`
 
-### Authors
+Grass and clutter distance, which is a fairness issue as much as a
+performance one - a prone man is invisible to one player and not to another.
 
-- [3Mydlo3](https://github.com/veteran29)
-- Krystol
+<!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
+
+## Requires
+
+- `ghost_common`
+
+## Ships
+
+2 functions.
+
+## CBA settings
+
+| Setting | Type | Name |
+|---|---|---|
+| `ghost_grass_enabled` | CHECKBOX | Force Grass |
+
+## Functions
+
+<details><summary>2</summary>
+
+- `ghost_grass_fnc_loop`
+- `ghost_grass_fnc_toggle`
+
+</details>
