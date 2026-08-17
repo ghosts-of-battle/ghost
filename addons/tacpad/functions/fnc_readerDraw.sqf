@@ -131,10 +131,39 @@ _nets pushBack "ALL";
         [_root, [_railW * 0.78, _ny, _railW * 0.22 - _pad, _rowH], str _unread, ([_accent, _ground] select _on), 0.75, true, "right"] call FUNC(drawText);
     };
 
+    // THE RAIL IS THE ADDRESSEE SELECTOR WHILE A MESSAGE IS OPEN. It is already
+    // the list of nets with the current one lit, so the compose pane does not
+    // carry a chip grid of its own any more - see FUNC(composePane).
+    //
+    // HARVEST FIRST. The redraw below throws the whole content group away, edits
+    // and all, and losing a half-written report to a change of net is not a trade
+    // anybody agreed to.
+    //
+    // A REPLY DOES NOT RETARGET. Addressees belong to the thread the moment one
+    // exists - FUNC(composeSend) discards them outright on a reply - so a press
+    // here must not pretend otherwise, and it leaves the replied-to thread
+    // selected in the list rather than deselecting the conversation being
+    // answered.
     private _hit = [_root, [0, _ny, _railW, _rowH], {
         params ["_ctrl"];
-        GVAR(readerNet) = _ctrl getVariable [QGVAR(net), "ALL"];
-        GVAR(readerThread) = "";
+        private _pressed = _ctrl getVariable [QGVAR(net), "ALL"];
+
+        if (GVAR(composeOn)) then {
+            [] call FUNC(composeHarvest);
+            if (GVAR(composeThread) isEqualTo "") then {
+                GVAR(composeTo) = [_pressed, true] call FUNC(netBox);
+
+                // AND IT CLOSES THE PICKER, because the picker behind CHANGE asks
+                // this exact question. Left up, the redraw put the player straight
+                // back onto a list they had just answered off the rail, with the
+                // TO line changing behind it.
+                GVAR(composeToPick) = false;
+            };
+        } else {
+            GVAR(readerThread) = "";
+        };
+
+        GVAR(readerNet) = _pressed;
         {[] call FUNC(readerDraw)} call CBA_fnc_execNextFrame;
     }] call FUNC(drawHit);
     _hit setVariable [QGVAR(net), _net];
@@ -412,17 +441,10 @@ if (GVAR(readerThread) == "") exitWith {
         _input ctrlCommit 0;
     };
 
-    private _boxId = switch (GVAR(readerNet)) do {
-        case "ALL": {""};
-        case "SQUAD": {_squadBox};
-        default {
-            // A squad's net is a G: box; everything else named is a B:.
-            [format ["B:%1", GVAR(readerNet)], format ["G:%1", GVAR(readerNet)]] select (
-                GVAR(readerNet) isEqualTo groupId (group player)
-                || {GVAR(readerNet) in ([] call EFUNC(messaging,squadNets))}
-            )
-        };
-    };
+    // ALL is a VIEW - every box at once - so it asks for "" and gets the whole
+    // stream. The name-to-box rule lives in FUNC(netBox) because three copies of
+    // it had already drifted apart.
+    private _boxId = [GVAR(readerNet)] call FUNC(netBox);
     ([_boxId] call EFUNC(messaging,netStream)) params ["_stream", "_pending"];
 
     [_stream, _pending, [_detailX, _detailW]] call FUNC(readerNetView);

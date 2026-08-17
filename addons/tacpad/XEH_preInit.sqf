@@ -47,6 +47,11 @@ GVAR(composeThread) = "";
 GVAR(composeTemplate) = "";
 GVAR(composePick) = false;
 
+// Whether the addressee picker is up. Its own flag rather than a mode of
+// `composePick`, which means the TEMPLATE deck: they ask different questions and
+// both own the pane below the header while they are showing.
+GVAR(composeToPick) = false;
+
 // What the pressed controls have answered, and what has been typed: a redraw
 // deletes every edit on the pane, so anything typed is harvested into here
 // first - see FUNC(composeHarvest).
@@ -64,6 +69,12 @@ GVAR(composeMarker) = "";
 // The addressees of a new message, kept out of the edit so a redraw cannot lose
 // them.
 GVAR(composeTo) = "";
+
+// Who else is copied in, AS THE PLAYER TYPED IT - "@HQ, @REAPER, @SGT DOE". Held
+// as names rather than as mailbox ids so the line the player reads back is the
+// line they wrote; FUNC(composeCcIds) turns it into addressees at the send. They
+// really are addressees, not tags: a CC files the thread in their box.
+GVAR(composeCc) = "";
 
 // Who is being called out by name on it. Not addressees: a tagged squad does
 // not get a copy of the thread, they get woken up about the one it is already

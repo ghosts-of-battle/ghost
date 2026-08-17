@@ -59,10 +59,12 @@ GVAR(composeOn) = true;
 GVAR(composeThread) = _threadId;
 GVAR(composeTemplate) = _templateId;
 GVAR(composePick) = _pick;
+GVAR(composeToPick) = false;
 GVAR(composeValues) = createHashMap;
 GVAR(composeGridText) = createHashMap;
 GVAR(composeMarker) = "";
 GVAR(composeTo) = _to;
+GVAR(composeCc) = "";
 GVAR(composeTags) = "";
 GVAR(composeError) = "";
 

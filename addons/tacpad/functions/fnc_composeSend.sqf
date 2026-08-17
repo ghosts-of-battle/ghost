@@ -52,6 +52,15 @@ private _threadId = GVAR(composeThread);
 private _addressees = [];
 if (_threadId isEqualTo "") then {
     _addressees = (GVAR(composeTo) splitString ",") apply {trim _x} select {_x isNotEqualTo ""};
+
+    // THE CC LINE IS ADDRESSEES TOO, which is the difference between a CC and a
+    // tag: a tag wakes somebody up about a thread they can already read, a CC
+    // files the thread in their box as well. It is names on screen and ids here -
+    // see FUNC(composeCcIds) - and it only exists on a root, because the lines
+    // above have already thrown the addressees away on a reply.
+    {
+        _addressees pushBackUnique _x;
+    } forEach ([GVAR(composeCc)] call FUNC(composeCcIds));
 };
 
 // Tags travel on a reply as well as on a root - see the TAG row in
@@ -82,15 +91,20 @@ GVAR(composeError) = "";
 // put the card back with everything still in it rather than costing the player a
 // nine-line they will now have to type twice. See the reject handler in
 // XEH_postInit.
-GVAR(composePending) = [_threadId, GVAR(composeTemplate), +GVAR(composeValues), +GVAR(composeGridText), GVAR(composeTo)];
+// THE CC IS IN THE TUPLE. It is an addressee like any other and a refusal that
+// put the card back without it would send the second attempt to fewer people
+// than the first - silently.
+GVAR(composePending) = [_threadId, GVAR(composeTemplate), +GVAR(composeValues), +GVAR(composeGridText), GVAR(composeTo), GVAR(composeCc)];
 
 GVAR(composeOn) = false;
 GVAR(composePick) = false;
+GVAR(composeToPick) = false;
 GVAR(composeMarker) = "";
 GVAR(composeValues) = createHashMap;
 GVAR(composeGridText) = createHashMap;
 GVAR(composeTemplate) = "";
 GVAR(composeTags) = "";
+GVAR(composeCc) = "";
 
 // A reply drops back onto the thread it answered; a new message has no thread to
 // drop back onto until the server has filed it, so it drops back to the list.

@@ -50,14 +50,26 @@ PREP(readerThreadView);
 PREP(readerNetView);
 PREP(readerComposer);
 
+// Addressing. One rule for what a net name on the rail means and one list of
+// everything a message can be sent to - both were written out by hand in four
+// places, and the copies had already drifted.
+PREP(netBox);
+PREP(netLabel);
+PREP(composeTargets);
+
 // Composing, drawn into the reader's right pane rather than into a window of
 // its own: the message body, the template picker, the picked template's card.
 PREP(composeOpen);
 PREP(composePane);
 PREP(composePicker);
+PREP(composeToPicker);
 PREP(composeCard);
 PREP(composeHarvest);
 PREP(composeSend);
+
+// The CC line: the @ completions it drops, and the mailbox ids it resolves to.
+PREP(composeCcDrop);
+PREP(composeCcIds);
 
 // Where a grid comes from when the player does not type it.
 PREP(markerGrids);

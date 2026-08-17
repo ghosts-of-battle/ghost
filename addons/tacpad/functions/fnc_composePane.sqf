@@ -57,16 +57,22 @@ private _template = if (_templateId isEqualTo "") then {
     [_templateId] call EFUNC(messaging,template)
 };
 
-// The net this is going out on, and the box it is addressed to by default. ALL
-// is a view, not a net, so it falls back to the first mailbox the mission named.
-private _net = GVAR(readerNet);
-if (_net isEqualTo "ALL") then {
-    private _boxes = ((EGVAR(messaging,namedBoxes) splitString ",") apply {trim _x}) select {_x isNotEqualTo ""};
-    _net = _boxes param [0, "HQ"];
-};
+// Where it is going, by default the net the reader is on. ALL is a view rather
+// than a net and cannot be addressed, so FUNC(netBox) falls it back to the first
+// mailbox the mission named.
 if (GVAR(composeTo) isEqualTo "") then {
-    GVAR(composeTo) = format ["B:%1", _net];
+    GVAR(composeTo) = [GVAR(readerNet), true] call FUNC(netBox);
 };
+
+// SAID OFF THE ADDRESS, NOT OFF THE RAIL. This line used to read GVAR(readerNet)
+// while the addressee stayed on whatever box the pane opened on - so pressing a
+// net in the rail retitled the pane and sent the message somewhere else. It now
+// says what is actually in the TO line, and a press in the rail moves both.
+private _toLabel = [GVAR(composeTo)] call FUNC(netLabel);
+
+// A person is not a net, and "SEND ON SGT DOE NET" is not a sentence.
+private _addressed = ((GVAR(composeTo) splitString ",") apply {trim _x}) select {_x isNotEqualTo ""};
+private _onNet = (_addressed findIf {(_x select [0, 2]) isEqualTo "P:"}) < 0;
 
 // ---------------------------------------------------------------- header ---
 private _y = _padY * 2;
@@ -85,6 +91,7 @@ private _cancelX = _dx + _dw - _cancelW - _pad;
 [_root, [_cancelX, _y, _cancelW, _btnH], {
     GVAR(composeOn) = false;
     GVAR(composePick) = false;
+    GVAR(composeToPick) = false;
     GVAR(composeMarker) = "";
     GVAR(composeValues) = createHashMap;
     GVAR(composeGridText) = createHashMap;
@@ -93,10 +100,15 @@ private _cancelX = _dx + _dw - _cancelW - _pad;
 
 _y = _y + _rowH * 1.25;
 
+private _sendLine = if (_reply) then {
+    format ["IN THREAD %1", _threadId]
+} else {
+    [format ["SEND TO %1", _toLabel], format ["SEND ON %1 NET", _toLabel]] select _onNet
+};
+
 [
     _root, [_dx + _pad, _y, _dw - 2 * _pad, _rowH * 0.8],
-    [format ["SEND ON %1 NET", toUpper _net], format ["IN THREAD %1", _threadId]] select _reply,
-    _mute, 0.6, true, "left", true
+    _sendLine, _mute, 0.6, true, "left", true
 ] call FUNC(drawText);
 
 _y = _y + _rowH;
@@ -108,79 +120,47 @@ if (GVAR(composePick)) exitWith {
     [[_dx, _dw, _y]] call FUNC(composePicker);
 };
 
+// Two pickers, two flags, one at a time: the template deck and the addressee
+// list ask different questions and both own the pane below the header while they
+// are up.
+if (GVAR(composeToPick)) exitWith {
+    [[_dx, _dw, _y]] call FUNC(composeToPicker);
+};
+
 // -------------------------------------------------------------- addressing --
+// ONE COLUMN FOR THE ADDRESS ROWS. TO, CC and TAG all hang off the same label
+// width rather than each row picking its own indent.
+private _labW = _dw * 0.08;
+private _fieldX = _dx + _pad + _dw * 0.09;
+private _fieldW = _dw - _dw * 0.09 - _cancelW - 4 * _pad;
+
 if (!_reply) then {
-    // TO IS A NET, PICKED, NOT TYPED - the screenshot's rule. The boxes ARE
-    // where threads live: HQ, Fires, Intel and every declared squad, so the
-    // address line is one row of them, pressed, and there is no editable
-    // field - typing "B:HQ" was a quiz nobody asked for. A direct message
-    // (MESSAGE <name> on a roster) arrives preset and shows as its own chip.
-    [_root, [_dx + _pad, _y, _dw * 0.6, _rowH * 0.7], "TO - PICK A NET", _mute, 0.62, true, "left", true] call FUNC(drawText);
-    _y = _y + _rowH * 0.7;
+    // ONE LINE, NOT A GRID OF CHIPS. Every net, every squad and every player on
+    // side was a pressable chip across the top of the pane - fourteen of them and
+    // counting, two rows deep - and they ate the space the message is written in.
+    //
+    // THE RAIL ON THE LEFT IS THE SELECTOR. It is already the list of nets with
+    // the current one lit, so a press there retargets an open message - see the
+    // rail handler in FUNC(readerDraw) - and this line reads back what that press
+    // did. CHANGE is for the addressees the rail cannot offer: a person, or a net
+    // this player is not currently reading.
+    private _changeW = _dw * 0.15;
+    private _changeX = _dx + _dw - _changeW - _pad;
 
-    private _chips = [];
-    {
-        _chips pushBack [format ["B:%1", _x], toUpper _x];
-    } forEach (((EGVAR(messaging,namedBoxes) splitString ",") apply {trim _x}) select {_x isNotEqualTo ""});
+    [_root, [_dx + _pad, _y, _labW, _btnH], "TO", _mute, 0.62, true, "left", true] call FUNC(drawText);
+    [
+        _root, [_fieldX, _y, _changeX - _fieldX - _pad, _btnH],
+        _toLabel, _accent, 0.75, true
+    ] call FUNC(drawText);
 
-    private _own = groupId (group player);
-    private _squads = [];
-    if (!isNil QEFUNC(messaging,squadNets)) then {
-        _squads = [] call EFUNC(messaging,squadNets);
-    };
-    {
-        _chips pushBack [format ["G:%1", _x], toUpper _x];
-    } forEach ([_own] + (_squads select {_x isNotEqualTo _own}));
-
-    // EVERY PLAYER IS ADDRESSABLE - a person is a net of one, and removing
-    // the typed TO field must not remove the people. One chip per player on
-    // side, by name.
-    {
-        if (_x isEqualTo player) then {continue};
-        _chips pushBack [format ["P:%1", getPlayerUID _x], toUpper (name _x)];
-    } forEach (allPlayers select {side group _x isEqualTo side group player});
-
-    // A preset target not on the list any more - left, or another side's
-    // curator - still shows, so the press that opened this pane is honoured.
-    if ((GVAR(composeTo) select [0, 2]) isEqualTo "P:"
-        && {(_chips findIf {(_x # 0) isEqualTo GVAR(composeTo)}) < 0}) then {
-        _chips pushBack [GVAR(composeTo), "DIRECT"];
-    };
-
-    // A default so SEND is never addressless: the first net, until a press
-    // says otherwise.
-    if (GVAR(composeTo) isEqualTo "" && {_chips isNotEqualTo []}) then {
-        GVAR(composeTo) = (_chips # 0) # 0;
-    };
-
-    // Eight across - four rows of wide chips ate the pane, said so in
-    // yellow; the full set fits two rows of eight.
-    private _perRow = 8;
-    private _chipH = _btnH * 0.85;
-    private _chipW = (_dw - 2 * _pad) / _perRow - _pad;
-    {
-        _x params ["_box", "_label"];
-        private _on = GVAR(composeTo) isEqualTo _box;
-        private _sx = _dx + _pad + (_forEachIndex % _perRow) * (_chipW + _pad);
-        private _sy = _y + floor (_forEachIndex / _perRow) * (_chipH + _padY * 0.5);
-
-        if (_on) then {
-            [_root, [_sx, _sy, _chipW, _chipH], _accent] call FUNC(drawFill);
-        } else {
-            [_root, [_sx, _sy, _chipW, _chipH], _line, RULE_THIN] call FUNC(drawFrame);
-        };
-        [_root, [_sx + _pad * 0.5, _sy, _chipW - _pad, _chipH], _label, ([_mute, _ground] select _on), 0.62, true, "center"] call FUNC(drawText);
-
-        private _hit = [_root, [_sx, _sy, _chipW, _chipH], {
-            params ["_ctrl"];
-            [] call FUNC(composeHarvest);
-            GVAR(composeTo) = _ctrl getVariable [QGVAR(toBox), ""];
-            {[] call FUNC(readerDraw)} call CBA_fnc_execNextFrame;
-        }] call FUNC(drawHit);
-        _hit setVariable [QGVAR(toBox), _box];
-    } forEach _chips;
-
-    _y = _y + (ceil ((count _chips) / _perRow)) * (_chipH + _padY * 0.5) - _btnH + _padY * 0.5;
+    [_root, [_changeX, _y, _changeW, _btnH], _line, RULE_THIN] call FUNC(drawFrame);
+    [_root, [_changeX + _pad, _y, _changeW - 2 * _pad, _btnH], "CHANGE", _mute, 0.68, true, "center"] call FUNC(drawText);
+    [_root, [_changeX, _y, _changeW, _btnH], {
+        [] call FUNC(composeHarvest);
+        GVAR(composeToPick) = true;
+        GVAR(composeMarker) = "";
+        {[] call FUNC(readerDraw)} call CBA_fnc_execNextFrame;
+    }] call FUNC(drawHit);
 } else {
     [
         _root, [_dx + _pad, _y, _dw - 2 * _pad, _btnH],
@@ -190,20 +170,58 @@ if (!_reply) then {
 
 _y = _y + _btnH + _padY;
 
+// -------------------------------------------------------------------- cc ----
+// A CC ONLY EXISTS ON A ROOT. FUNC(composeSend) discards addressees outright on a
+// reply - the thread already decides who can read it - so a CC line drawn there
+// would look like it worked and send nowhere. It is not drawn there.
+//
+// @ OFFERS BOTH KINDS. A net and a man are the same sort of thing to address, and
+// nobody should have to remember which list a call sign is on. The completions
+// are built off this box's own KeyUp - see FUNC(composeCcDrop) - and never through
+// a redraw, which would delete the box being typed into.
+if (!_reply) then {
+    [_root, [_dx + _pad, _y, _labW, _btnH], "CC", _mute, 0.62, true, "left", true] call FUNC(drawText);
+    [_root, [_fieldX, _y, _fieldW, _btnH], _line, RULE_THIN] call FUNC(drawFrame);
+
+    private _cc = _display ctrlCreate ["RscEdit", -1, _root];
+    _cc ctrlSetPosition [_fieldX + _pad, _y + _padY * 0.5, _fieldW - 2 * _pad, _btnH - _padY];
+    _cc ctrlSetBackgroundColor [0, 0, 0, 0];
+    _cc ctrlSetTextColor _ink;
+    _cc ctrlSetFontHeight _fontH;
+    _cc ctrlSetText GVAR(composeCc);
+    _cc ctrlSetTooltip "Type @ for a list of nets, squads and players. Everybody named here is addressed on the thread as well - separate them with commas.";
+    _cc setVariable [QGVAR(ccField), true];
+
+    // Where the completions drop, in this group's own coordinates, and how tall
+    // one of them is. The drop is built on a keystroke, long after this geometry
+    // has gone out of scope, so it travels on the control.
+    _cc setVariable [QGVAR(ccDrop), [_fieldX, _y + _btnH, _fieldW, _rowH * 0.95]];
+    _cc ctrlAddEventHandler ["KeyUp", {
+        params ["_ctrl"];
+        [_ctrl] call FUNC(composeCcDrop);
+        false
+    }];
+    _cc ctrlCommit 0;
+
+    [
+        _root, [_dx + _dw - _cancelW - _pad, _y, _cancelW, _btnH],
+        "@ TO ADD", _dim, 0.6, true, "right", true
+    ] call FUNC(drawText);
+
+    _y = _y + _btnH + _padY * 0.5;
+};
+
 // ------------------------------------------------------------------ tags ---
 // ON A REPLY TOO, which is the difference between this row and TO. Addressees
 // are fixed the moment a thread exists - a reply cannot narrow or widen who can
 // read a conversation - but calling somebody into one halfway down is exactly
 // what a net does out loud, and a man who has just been asked for by name on a
 // thread he was not on can answer it.
-private _tagX = _dx + _pad + _dw * 0.09;
-private _tagW = _dw - _dw * 0.09 - _cancelW - 4 * _pad;
-
-[_root, [_dx + _pad, _y, _dw * 0.08, _btnH], "TAG", _mute, 0.62, true, "left", true] call FUNC(drawText);
-[_root, [_tagX, _y, _tagW, _btnH], _line, RULE_THIN] call FUNC(drawFrame);
+[_root, [_dx + _pad, _y, _labW, _btnH], "TAG", _mute, 0.62, true, "left", true] call FUNC(drawText);
+[_root, [_fieldX, _y, _fieldW, _btnH], _line, RULE_THIN] call FUNC(drawFrame);
 
 private _tags = _display ctrlCreate ["RscEdit", -1, _root];
-_tags ctrlSetPosition [_tagX + _pad, _y + _padY * 0.5, _tagW - 2 * _pad, _btnH - _padY];
+_tags ctrlSetPosition [_fieldX + _pad, _y + _padY * 0.5, _fieldW - 2 * _pad, _btnH - _padY];
 _tags ctrlSetBackgroundColor [0, 0, 0, 0];
 _tags ctrlSetTextColor _accent;
 _tags ctrlSetFontHeight _fontH;
@@ -222,7 +240,7 @@ _y = _y + _btnH;
 // the row read as an unlabelled box nobody could name the purpose of - the
 // screenshot said exactly that, in yellow.
 [
-    _root, [_tagX, _y, _tagW, _btnH * 0.55],
+    _root, [_fieldX, _y, _fieldW, _btnH * 0.55],
     "WAKES WHOEVER IT NAMES. TRAFFIC STAYS ON THIS NET. PRESS TO TAG:",
     _dim, 0.5, false
 ] call FUNC(drawText);

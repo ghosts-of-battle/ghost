@@ -69,12 +69,15 @@ GVAR(readerMarkers) = false;
 // back on after this returns, which is why the order matters.
 GVAR(composeOn) = false;
 GVAR(composePick) = false;
+GVAR(composeToPick) = false;
 GVAR(composeMarker) = "";
 GVAR(composeValues) = createHashMap;
 GVAR(composeGridText) = createHashMap;
 GVAR(composeTemplate) = "";
 GVAR(composeThread) = "";
 GVAR(composeTo) = "";
+GVAR(composeCc) = "";
+GVAR(composeTags) = "";
 GVAR(composeError) = "";
 
 [] call FUNC(readerDraw);

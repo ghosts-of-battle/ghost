@@ -43,13 +43,13 @@ private _mute = [_ink # 0, _ink # 1, _ink # 2, 0.62];
 private _dim = [_ink # 0, _ink # 1, _ink # 2, 0.42];
 
 // WHICH BOX THIS TALKS TO. ALL is a view rather than a net, so it falls back to
-// the first mailbox the mission named - the same rule the compose pane uses, so
-// a message sent from either lands in the same place.
-private _net = GVAR(readerNet);
-if (_net isEqualTo "ALL") then {
-    private _boxes = ((EGVAR(messaging,namedBoxes) splitString ",") apply {trim _x}) select {_x isNotEqualTo ""};
-    _net = _boxes param [0, "HQ"];
-};
+// the first mailbox the mission named - FUNC(netBox) is that rule, shared with the
+// compose pane and the reader's own stream lookup, so a message sent from any of
+// them lands in the same place. A SQUAD'S NET IS A G: BOX: this said B:<name> for
+// every net on the rail, so + MESSAGE under a squad conversation addressed a
+// shared mailbox that does not exist.
+private _box = [GVAR(readerNet), true] call FUNC(netBox);
+private _net = _box select [2];
 
 [_root, [_dx + _pad, _cy - _padY, _dw - 2 * _pad, RULE_THICK * pixelH], _ink] call FUNC(drawFill);
 
@@ -88,7 +88,7 @@ if (_quick isEqualTo []) then {
             ["freetext", [[_key, _text]], [_ctrl getVariable [QGVAR(quickBox), ""]], ""] call EFUNC(messaging,submit);
         }] call FUNC(drawHit);
         _hit setVariable [QGVAR(quickText), _x];
-        _hit setVariable [QGVAR(quickBox), format ["B:%1", _net]];
+        _hit setVariable [QGVAR(quickBox), _box];
     } forEach _quick;
 };
 
@@ -105,7 +105,7 @@ private _tmpl = [_root, [_dx + _pad, _cy, _actW, _btnH], {
     GVAR(composeTo) = _ctrl getVariable [QGVAR(quickBox), ""];
     ["", "", true] call FUNC(composeOpen);
 }] call FUNC(drawHit);
-_tmpl setVariable [QGVAR(quickBox), format ["B:%1", _net]];
+_tmpl setVariable [QGVAR(quickBox), _box];
 
 // And the plain message, which is what most traffic on a net actually is.
 private _msgX = _dx + _pad * 2 + _actW;
@@ -117,4 +117,4 @@ private _new = [_root, [_msgX, _cy, _actW, _btnH], {
     GVAR(composeTo) = _ctrl getVariable [QGVAR(quickBox), ""];
     ["", "", false] call FUNC(composeOpen);
 }] call FUNC(drawHit);
-_new setVariable [QGVAR(quickBox), format ["B:%1", _net]];
+_new setVariable [QGVAR(quickBox), _box];
