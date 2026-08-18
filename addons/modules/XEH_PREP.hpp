@@ -4,5 +4,5 @@ PREP(aiSpawner);
 PREP(empty);
 PREP(moduleAiHunter);
 PREP(moduleAiSpawner);
-PREP(moduleSafeStart);
+PREP(modulesafestart);
 PREP(moduleHealArea);

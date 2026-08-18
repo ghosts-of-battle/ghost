@@ -5,13 +5,13 @@ class CfgVehicles {
         class ModuleDescription;
     };
 
-    class ghost_moduleSafeStart: Module_F {
+    class ghost_modulesafestart: Module_F {
         scope = 2;
         displayName = "Safe Start Disabler";
         author = "Brecon";
         vehicleClass = "Modules";
         category = QPREFIX;
-        function =  QUOTE(DFUNC(moduleSafeStart));
+        function =  QUOTE(DFUNC(modulesafestart));
         functionPriority = 1;
         isGlobal = 1;
         isTriggerActivated = 0;

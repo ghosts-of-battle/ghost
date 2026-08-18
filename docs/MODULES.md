@@ -67,7 +67,7 @@ Place from the 3DEN entity list under the listed category.
 
 ### Safe Start Disabler
 
-- **Class** `ghost_moduleSafeStart`
+- **Class** `ghost_modulesafestart`
 - **Category** -
 - Disable in single player
 

@@ -65,7 +65,7 @@ A dependency in **bold** is an external mod.
 | `patrol_base` | Patrol Base | 2 | 2 | 12 | ghost_notify |
 | `remotesensors` | Remotesensors |  |  |  | ghost_common |
 | `respawn` | Respawn |  |  | 9 | ghost_common, ghost_notify |
-| `safestart` | Safestart |  |  | 4 | ghost_common |
+| `safestart` | safestart |  |  | 4 | ghost_common |
 | `spectator` | Spectator |  |  | 11 | ghost_common, A3_Functions_F_Exp_A |
 | `tasks` | Tasks |  |  | 11 | ghost_common |
 | `towing` | Towing |  |  |  | ghost_common |

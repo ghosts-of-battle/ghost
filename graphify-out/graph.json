@@ -40646,7 +40646,7 @@
       "norm_label": "ghost - force (spawner placement path)"
     },
     {
-      "label": "ghost_moduleSafeStart (Safe Start Disabler)",
+      "label": "ghost_modulesafestart (Safe Start Disabler)",
       "file_type": "concept",
       "source_file": "modules/README.md",
       "source_location": null,

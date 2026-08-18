@@ -210,11 +210,11 @@ ships with, which a mission or the forced list below can override.
 | Enable respawn | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Respawn | `false` | Enables respawn with given delay. |
 | Respawn delay | SLIDER | Ghosts of Battle > Ghosts of Battle - Respawn | `[1, 900, getNumber (configFile >> "CfgRe` | How much time must pass before player will respawn (if respawn is enabled). |
 
-## Safestart (`safestart`)
+## safestart (`safestart`)
 
 | Setting | Type | Category | Default | What it does |
 |---|---|---|---|---|
-| Lock weapon | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Safestart | `true` | Locks your weapon safety on game start |
+| Lock weapon | CHECKBOX | Ghosts of Battle > Ghosts of Battle - safestart | `true` | Locks your weapon safety on game start |
 
 ## Spectator (`spectator`)
 

@@ -23,7 +23,7 @@ modules are placed directly, as they always were.
 
 ### Safe Start Disabler
 
-`ghost_moduleSafeStart`
+`ghost_modulesafestart`
 
 Disable in single player
 
@@ -56,6 +56,6 @@ Group Side
 - `ghost_modules_fnc_moduleAiHunter`
 - `ghost_modules_fnc_moduleAiSpawner`
 - `ghost_modules_fnc_moduleHealArea`
-- `ghost_modules_fnc_moduleSafeStart`
+- `ghost_modules_fnc_modulesafestart`
 
 </details>
