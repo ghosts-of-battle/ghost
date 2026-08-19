@@ -39,6 +39,26 @@
 // How far from a drone a player is even considered for detection.
 #define UAS_SPOT_RANGE      800
 
+// HOW CLOSE A PLAYER HAS TO BE FOR A PATROL TO EXIST AT ALL.
+//
+// A drone orbiting a base nobody is near is a drone nobody will ever see, and
+// this mission flies twenty of them: twenty airframes, twenty crews and twenty
+// AI pilots being simulated across an island for an audience of nobody. The
+// point of a patrol is to be met, so one is put up when somebody is close
+// enough to meet it and stood down when everybody has left.
+//
+// Measured to the ORBIT CENTRE, not to the airframe - a patrol wanders 800 m
+// around its objective, and measuring the aircraft would have a drone standing
+// itself down and back up as it flew the far side of its own circle.
+#define UAS_PLAYER_RANGE    4000
+
+// AND HOW CLOSE COUNTS AS BEING WATCHED. A patrol on the near side of a circle
+// whose centre has just gone out of range is still a real aircraft in somebody's
+// sky; FUNC(standDown) leaves that one for a later tick rather than deleting it
+// in front of them. Under the range at which an airframe at 250-600 m is
+// anything more than a speck.
+#define UAS_SEEN_RANGE      2000
+
 // Patrol altitude band.
 #define UAS_ALT_MIN         250
 #define UAS_ALT_MAX         600

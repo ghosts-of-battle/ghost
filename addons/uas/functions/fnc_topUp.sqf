@@ -25,6 +25,13 @@
 params [["_side", sideUnknown, [sideUnknown]], ["_faction", "", [""]], ["_pos", [], [[]]]];
 
 if (_side isEqualTo sideUnknown || {_pos isEqualTo []}) exitWith {false};
+
+// NOBODY NEAR, NOTHING FLIES - the hard end of the proximity rule, here
+// rather than only in the planner because the reaction ladder and the QRF
+// reach this function too. A patrol nobody can meet is simulation spent on an
+// empty island; FUNC(standDown) takes back the ones that outlive their
+// audience. See UAS_PLAYER_RANGE.
+if !([_pos] call FUNC(playerNear)) exitWith {false};
 // No adapter check. This used to refuse to spawn without ALiVE's profiler,
 // from when a patrol was meant to become a profile; nothing here profiles
 // anything now, and a drone flies the same with ALiVE absent.
@@ -169,14 +176,11 @@ createVehicleCrew _veh;
     // bounded by the ceiling - which is what the code did with the empty
     // answer anyway, minus the deletion.
     //
-    // ALIVE_profileIgnore is ALiVE's own opt-out, honoured by the same
-    // function: set on the airframe and its crew so any OTHER ALiVE pass
-    // over the map leaves them alone too.
-    _veh setVariable ["ALIVE_profileIgnore", true, true];
-    {_x setVariable ["ALIVE_profileIgnore", true, true]} forEach (crew _veh);
-    if (!isNull _flyGrp) then {
-        _flyGrp setVariable ["ALIVE_profileIgnore", true, true];
-    };
+    // ALiVE's own opt-out, asked for through the adapter - the variable is
+    // ALiVE's name and this addon is not allowed to know it. The airframe, its
+    // crew and the crew's group all get marked, so any OTHER ALiVE pass over
+    // the map leaves the patrol alone too.
+    [_veh] call EFUNC(adapter_alive,profileIgnore);
 
     private _list = GVAR(patrols) getOrDefault [str _side, []];
 
@@ -187,6 +191,11 @@ createVehicleCrew _veh;
             INFO_1("%1 drones are flown live and never offered to ALiVE's profiler - it deletes what it profiles.",_side);
         };
 
+        // THE GROUND THIS PATROL IS FOR. FUNC(standDown) measures the
+        // proximity rule against this and not against the aircraft, which
+        // spends its life 800 m from it in whichever direction it is
+        // currently pointing.
+        _veh setVariable [QGVAR(orbit), _pos];
         _veh setVariable [QGVAR(patrolSide), _side, true];
         _list pushBack _veh;
         GVAR(patrols) set [str _side, _list];
@@ -203,7 +212,23 @@ createVehicleCrew _veh;
         }];
         _veh addEventHandler ["Deleted", {
             params ["_u"];
-            WARNING_1("patrol drone DELETED (not killed) at %1 - a script or GC removed it",mapGridPosition _u);
+
+            // A WRECK BEING TIDIED UP IS NOT A MYSTERY, AND THIS USED TO
+            // REPORT IT AS ONE. ALiVE starts a garbage collector at mission
+            // start and sweeps destroyed airframes minutes after the fact, in
+            // batches - so this fired a second time for drones the Killed
+            // handler had already accounted for. Last session: 30 kills, 35
+            // deletions, arriving in clumps of three to seven, which read as
+            // something quietly eating live patrols when it was only the bin
+            // men. The coroner is only interested in a drone that was still
+            // flying when it vanished.
+            if (!alive _u) exitWith {};
+
+            // Nor is a husk this module retired on purpose - the stall test
+            // below deletes what cannot self-fly and says so in its own words.
+            if (_u getVariable [QGVAR(retired), false]) exitWith {};
+
+            WARNING_1("patrol drone DELETED WHILE STILL FLYING at %1 - a script or GC removed it",mapGridPosition _u);
         }];
         // LAMBS' infantry reflexes do not belong on an aircraft - see
         // EFUNC(common,lambsOff).
@@ -222,6 +247,9 @@ createVehicleCrew _veh;
             if (isNull _veh || {!alive _veh}) exitWith {};
             if ((getPosATL _veh select 2) < 3 && {speed _veh < 5}) then {
                 WARNING_1("'%1' cannot self-fly - it stalled onto the deck; remove it from the module's drone-class field",typeOf _veh);
+                // Flagged before the delete so the Deleted handler knows this
+                // removal was ours and stays quiet - it has just been said.
+                _veh setVariable [QGVAR(retired), true];
                 {deleteVehicle _x} forEach (crew _veh);
                 deleteVehicle _veh;
             };

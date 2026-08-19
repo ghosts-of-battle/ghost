@@ -134,7 +134,7 @@ a minute is how a HUD starts flickering. Switchable off in settings.
 
 ## Ships
 
-13 functions.
+15 functions.
 
 ## CBA settings
 
@@ -146,12 +146,14 @@ a minute is how a HUD starts flickering. Switchable off in settings.
 
 ## Functions
 
-<details><summary>13</summary>
+<details><summary>15</summary>
 
 - `ghost_hud_fnc_close`
 - `ghost_hud_fnc_cycle`
 - `ghost_hud_fnc_draw`
+- `ghost_hud_fnc_hidden`
 - `ghost_hud_fnc_open`
+- `ghost_hud_fnc_setShown`
 - `ghost_hud_fnc_slotState`
 - `ghost_hud_fnc_sweep`
 - `ghost_hud_fnc_toggle`

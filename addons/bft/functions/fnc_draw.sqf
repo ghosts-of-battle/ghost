@@ -128,8 +128,24 @@ if (GVAR(memberMarkers) > 0) then {
     {
         GVAR(memberUnits) append (units _x select {alive _x});
     } forEach _mGroups;
-    // You are the one mark the map already shows.
-    GVAR(memberUnits) = GVAR(memberUnits) - [ACE_player];
+    // YOU ARE NOT ALWAYS THE MARK THE MAP ALREADY SHOWS, AND THIS ASSUMED
+    // YOU WERE. The line was `- [ACE_player]`, unconditionally, on the
+    // reasoning that the engine draws your own icon so a second one would be
+    // a duplicate. That is true on a preset with extended map content ON.
+    // Ghost ships its own preset with it OFF - see
+    // addons/difficulty/CfgDifficultyPresets.hpp, `mapContent = 0` - which is
+    // the whole point of a milsim difficulty: you navigate by compass and GPS,
+    // not by watching yourself move. With that set the engine draws nothing,
+    // BFT then removed the only other source, and the man looking at the map
+    // could see his squad, his group marker and every tracked group on the
+    // island EXCEPT HIMSELF.
+    //
+    // So it is asked rather than assumed. The no-duplicate intent is intact on
+    // any preset that does draw you, and a mission that turns map content back
+    // on needs no setting changed here.
+    if (difficultyOption "mapContent" > 0) then {
+        GVAR(memberUnits) = GVAR(memberUnits) - [ACE_player];
+    };
 };
 
 // Fewer marks than the last pass leaves orphans under the higher index

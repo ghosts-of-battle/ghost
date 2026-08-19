@@ -79,3 +79,16 @@
 #define ROSTER_MAX 16
 #define TRAFFIC_MAX 12
 
+// THE THREE POINTS A SUPPORT REQUEST CAN CARRY, and the variables each lives
+// in. Written once, as a macro, because four separate places fill them - the
+// form's rows, the map click, the marker list and the confirm - and three
+// copies of "which variable is the ingress point" is three chances to write
+// the target into the egress slot.
+//
+// Slot 0 is the target and keeps the ORIGINAL variable names: artillery and
+// ALiVE's own CAS have always read supportPoint, and renaming it to suit a new
+// asset type would have been a rename across a screen that already works.
+#define SUP_SLOT_TARGET  0
+#define SUP_SLOT_INGRESS 1
+#define SUP_SLOT_EGRESS  2
+#define SUP_SLOT_VARS [    [QGVAR(supportPoint), QGVAR(supportPointName)],    [QGVAR(supportIngress), QGVAR(supportIngressName)],    [QGVAR(supportEgress), QGVAR(supportEgressName)]]

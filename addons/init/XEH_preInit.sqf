@@ -31,7 +31,9 @@ EGVAR(patches,usesACEX)         = isClass (configFile >> "CfgPatches" >> "acex_m
 EGVAR(patches,usesKat)          = isClass (configFile >> "CfgPatches" >> "kat_main");
 EGVAR(patches,usesACRE)         = isClass (configFile >> "CfgPatches" >> "acre_sys_core");
 EGVAR(patches,usesTFAR)         = isClass (configFile >> "CfgPatches" >> "task_force_radio");
-EGVAR(patches,usesAlive)        = isClass (configFile >> "CfgPatches" >> "ALiVE_main");
+// usesAlive is set by ghost_adapter_alive's own preInit - naming an ALiVE
+// symbol here is the one thing the adapter seam does not allow, and a data read
+// about ALiVE belongs to the adapter. Same variable name, different file.
 EGVAR(patches,usesZen)          = isClass (configFile >> "CfgPatches" >> "zen_main");
 EGVAR(patches,usesACEAX)        = isClass (configFile >> "CfgPatches" >> "aceax_main");
 

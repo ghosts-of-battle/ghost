@@ -194,6 +194,25 @@ private _fnc_group = {
     _y + _rowH * 0.8
 };
 
+// WHAT A PICK DOES, IN ONE PLACE. The rows and the asset tabs above them are
+// the same choice made in two shapes - slot, value, and clear whatever depended
+// on it - so they press the same block rather than two copies that can drift.
+private _fnc_pick = {
+    params ["_ctrl"];
+    private _sel = missionNamespace getVariable [QGVAR(supportSel), ["cas", "", ""]];
+    (_ctrl getVariable [QGVAR(pick), []]) params ["_slot", "_value"];
+    INFO_2("appSupport: row pressed - slot %1 value '%2'",_slot,_value);
+
+    // The dependent chain: a new asset clears unit and task, a new unit
+    // clears the task.
+    _sel set [_slot, _value];
+    if (_slot < 1) then {_sel set [1, ""]};
+    if (_slot < 2) then {_sel set [2, ""]};
+    missionNamespace setVariable [QGVAR(supportSel), _sel];
+
+    {["support"] call EFUNC(tacpad,openApp)} call CBA_fnc_execNextFrame;
+};
+
 private _fnc_row = {
     params ["_y", "_label", "_meta", "_on", "_data"];
 
@@ -206,21 +225,7 @@ private _fnc_row = {
     [_body, [_fw * 0.6, _y, _fw * 0.4 - _pad, _rowH], _meta, ([_mute, _ground] select _on), 0.62, true, "right", true] call EFUNC(tacpad,drawText);
     [_body, [0, _y + _rowH - RULE_THIN * pixelH, _fw, RULE_THIN * pixelH], _line] call EFUNC(tacpad,drawFill);
 
-    private _hit = [_body, [0, _y, _fw, _rowH], {
-        params ["_ctrl"];
-        private _sel = missionNamespace getVariable [QGVAR(supportSel), ["cas", "", ""]];
-        (_ctrl getVariable [QGVAR(pick), []]) params ["_slot", "_value"];
-        INFO_2("appSupport: row pressed - slot %1 value '%2'",_slot,_value);
-
-        // The dependent chain: a new asset clears unit and task, a new unit
-        // clears the task.
-        _sel set [_slot, _value];
-        if (_slot < 1) then {_sel set [1, ""]};
-        if (_slot < 2) then {_sel set [2, ""]};
-        missionNamespace setVariable [QGVAR(supportSel), _sel];
-
-        {["support"] call EFUNC(tacpad,openApp)} call CBA_fnc_execNextFrame;
-    }] call EFUNC(tacpad,drawHit);
+    private _hit = [_body, [0, _y, _fw, _rowH], _fnc_pick] call EFUNC(tacpad,drawHit);
     _hit setVariable [QGVAR(pick), _data];
 
     _y + _rowH
@@ -275,8 +280,11 @@ if (missionNamespace getVariable [QGVAR(supportPickMarker), false]) exitWith {
             params ["_ctrl"];
             (_ctrl getVariable [QGVAR(pickMkr), []]) params [["_mkr", ""], ["_label", ""]];
             (markerPos _mkr) params ["_px", "_py"];
-            missionNamespace setVariable [QGVAR(supportPoint), [_px, _py, 0]];
-            missionNamespace setVariable [QGVAR(supportPointName), _label];
+            // Into whichever row was armed when MKR was pressed - the marker
+            // list is one screen serving three points now.
+            (SUP_SLOT_VARS select (missionNamespace getVariable [QGVAR(supportSlot), SUP_SLOT_TARGET])) params ["_pv", "_nv"];
+            missionNamespace setVariable [_pv, [_px, _py, 0]];
+            missionNamespace setVariable [_nv, _label];
             missionNamespace setVariable [QGVAR(supportPickMarker), false];
             {["support"] call EFUNC(tacpad,openApp)} call CBA_fnc_execNextFrame;
         }] call EFUNC(tacpad,drawHit);
@@ -302,20 +310,90 @@ if (missionNamespace getVariable [QGVAR(supportPickMarker), false]) exitWith {
 // screen. Notifies draw on layers under this dialog, so they were invisible
 // too. A CONFIRM that answers where you cannot see it reads as a dead
 // button - and it did, for a day.
+//
+// AND IT IS A SLAB, NOT A LINE OF SMALL GREY TYPE. It was drawn at 0.6, in the
+// ink colour on acceptance, at the top of a form with four lists under it -
+// which is to say it was invisible in exactly the case that matters. The log
+// of the last test reads: task accepted at 9:33:51, CONFIRM pressed again at
+// 9:33:57 and again at 9:33:59, both refused as "already on a task". The
+// aircraft was tasked and the man who tasked it could not tell.
+//
+// So it fills the row edge to edge and says which way it went in the two
+// colours this suite has: the accent for a task the asset TOOK, ink for one it
+// would not. Both in the ground colour, both unmissable.
 private _y = _padY;
 (missionNamespace getVariable [QGVAR(supportFlash), []]) params [["_flashText", ""], ["_flashOk", true], ["_flashAt", -99]];
 if (_flashText isNotEqualTo "" && {CBA_missionTime - _flashAt < 12}) then {
-    [_body, [_pad, _y, _fw - 2 * _pad, _rowH], toUpper _flashText, ([_accent, _ink] select _flashOk), 0.6, true, "left", true] call EFUNC(tacpad,drawText);
+    [_body, [0, _y, _fw, _rowH], ([_ink, _accent] select _flashOk)] call EFUNC(tacpad,drawFill);
+    [
+        _body, [_pad, _y, _fw - 2 * _pad, _rowH],
+        toUpper _flashText, _ground, 0.66, true, "center", true
+    ] call EFUNC(tacpad,drawText);
 };
 _y = _y + _rowH;
 
 // ------------------------------------------------------------------ asset ---
-_y = [_y, "ASSET", format ["%1 ASSETS ANSWERING", count _assets]] call _fnc_group;
+// TABS, NOT A FOURTH LIST. This was a section headed ASSET with TRANSPORT, CAS
+// and ARTILLERY as rows under it, which said "asset" twice - once as the
+// heading and once as the thing you press - and made the kind of support look
+// like one more thing to scroll past on a page that is already three lists
+// deep. It is not: it is the choice that decides what every list BELOW it says,
+// which is exactly what a tab strip is for. Across the top, no heading, and the
+// page under them changes.
+//
+// The counts stay on the tabs, because "which of these has anything answering"
+// is the first thing anybody wants off this row - and they are counted, not
+// spelled: 1 AIRFRAME, 2 AIRFRAMES, 1 BATTERY.
+private _tabs = [
+    ["transport", "TRANSPORT", "AIRFRAME", "AIRFRAMES"],
+    ["cas", "CAS", "AIRFRAME", "AIRFRAMES"],
+    ["arty", "ARTILLERY", "BATTERY", "BATTERIES"]
+];
+
+private _tabW = _fw / (count _tabs);
+private _tabH = _rowH * 1.5;
+
 {
-    _x params ["_type", "_label", "_noun"];
+    _x params ["_type", "_label", "_one", "_many"];
+    private _on = _selType isEqualTo _type;
+    private _tx = _forEachIndex * _tabW;
     private _n = {(_x param [1, ""]) isEqualTo _type} count _assets;
-    _y = [_y, _label, format ["%1 %2", _n, _noun], _selType isEqualTo _type, [0, _type]] call _fnc_row;
-} forEach [["transport", "TRANSPORT", "AIRFRAMES"], ["cas", "CAS", "AIRFRAMES"], ["arty", "ARTILLERY", "BATTERIES"]];
+
+    // Selected is the accent slab the rows already use for a selection, so a
+    // tab and a picked row mean the same thing in the same colour. The rest
+    // are plain ground with a divider between them - an unpicked tab is not a
+    // button to be advertised, it is the page you are not on.
+    if (_on) then {
+        [_body, [_tx, _y, _tabW, _tabH], _accent] call EFUNC(tacpad,drawFill);
+    } else {
+        if (_forEachIndex > 0) then {
+            [_body, [_tx, _y + _padY * 0.5, RULE_THIN * pixelW, _tabH - _padY], _line] call EFUNC(tacpad,drawFill);
+        };
+    };
+
+    [
+        _body, [_tx, _y + _padY * 0.4, _tabW, _rowH * 0.72],
+        _label, ([_ink, _ground] select _on), 0.72, true, "center", true
+    ] call EFUNC(tacpad,drawText);
+
+    [
+        _body, [_tx, _y + _rowH * 0.82, _tabW, _rowH * 0.6],
+        format ["%1 %2", _n, [_many, _one] select (_n == 1)],
+        ([_mute, [_ground # 0, _ground # 1, _ground # 2, 0.72]] select _on),
+        0.55, false, "center"
+    ] call EFUNC(tacpad,drawText);
+
+    private _hit = [_body, [_tx, _y, _tabW, _tabH], _fnc_pick] call EFUNC(tacpad,drawHit);
+    _hit setVariable [QGVAR(pick), [0, _type]];
+} forEach _tabs;
+
+_y = _y + _tabH;
+
+// The strip is seated on a 2px rule - the same weight the dialog's own border
+// carries. It is a region boundary, not a row one: everything under it is
+// about the tab that is lit.
+[_body, [0, _y, _fw, RULE_THICK * pixelH], _ink] call EFUNC(tacpad,drawFill);
+_y = _y + RULE_THICK * pixelH;
 
 // ------------------------------------------------------------------- unit ---
 private _unitRow = _units param [_units findIf {(_x param [0, ""]) isEqualTo _selUnit}, []];
@@ -413,11 +491,66 @@ private _fnc_stepRow = {
     _y + _rowH + _padY * 0.4
 };
 
+// A GHOST-NATIVE CAS ASSET FLIES THE RUN THE PLAYER DRAWS. ALiVE's own CAS is
+// told a point and left to work out its own approach; a ghost CAS module is
+// given the run itself - where it comes in from and where it leaves to. The
+// id's prefix is what says which kind this is; the provider registry hands
+// those out and nothing else uses that prefix.
+private _isGhostCas = ((_unitRow param [0, ""]) splitString ":" param [0, ""]) isEqualTo "ghostcas";
+
+// THE RUN IS DRAWN, NOT DIALLED. Ingress and egress were a pair of degree
+// steppers, and a heading is a thing the player has to work out from the map
+// he is already looking at - the ridge he wants the run behind is a PLACE. So
+// both are picked exactly the way the target is, off the same two inputs this
+// screen has always had: click the map, or take a placed marker off the MKR
+// list. The steppers are gone; the rows are below the parameters.
+//
+// Only the target slot can be armed when the selected asset is not one of
+// ours, or a stale arming would send the next map click into an ingress slot
+// on a screen showing no ingress row.
+if (!_isGhostCas) then {
+    missionNamespace setVariable [QGVAR(supportSlot), SUP_SLOT_TARGET];
+};
+
 switch (_selType) do {
     case "cas": {
-        _y = [_y, "RADIUS", format ["%1 M", _radius], 0, 100, 100, 1000] call _fnc_stepRow;
-        _y = [_y, "ALTITUDE", format ["%1 M", _alt], 1, 50, 50, 500] call _fnc_stepRow;
-        _y = [_y, "ROE", ["FREE - FIRE AT WILL", "HOLD FIRE"] select _roeIdx, 2, 1, 0, 1] call _fnc_stepRow;
+        if (!_isGhostCas) then {
+            _y = [_y, "RADIUS", format ["%1 M", _radius], 0, 100, 100, 1000] call _fnc_stepRow;
+            _y = [_y, "ALTITUDE", format ["%1 M", _alt], 1, 50, 50, 500] call _fnc_stepRow;
+            _y = [_y, "ROE", ["FREE - FIRE AT WILL", "HOLD FIRE"] select _roeIdx, 2, 1, 0, 1] call _fnc_stepRow;
+        } else {
+            // WHAT THE RUN COMES IN WITH. A ghost CAS asset shoots the heaviest
+            // air-to-ground thing it is carrying unless it is told otherwise,
+            // and "otherwise" was not askable anywhere - a section that wanted
+            // the gun over a treeline twenty metres from its own position got
+            // a bomb, because a bomb outranks a cannon on weight.
+            //
+            // The list is the ASSET'S, not this screen's: the row carries it in
+            // the same column a battery carries its shell types - and what it
+            // carries now is the airframe's actual stores, by name and with the
+            // rounds on them, behind a leading AUTO. What an entry means is the
+            // provider's business; this sends back an index and never learns
+            // what it selected.
+            //
+            // A LOITER HAS NO ORDNANCE QUESTION. Nothing is released on the
+            // player's behalf - the aircraft holds its orbit and the gunner's
+            // seat goes to the drone controller, who picks his own weapon in
+            // the turret. Offering a stepper there would be asking for an
+            // answer nothing reads.
+            if (_selTask isEqualTo "LOITER") then {
+                [_body, [_pad, _y, _fw - 2 * _pad, _rowH], "GUNNER - ISR TAKES THE SEAT ON STATION", _dim, 0.7, true, "left", true] call EFUNC(tacpad,drawText);
+                _y = _y + _rowH + _padY * 0.4;
+            } else {
+                private _ordList = _unitRow param [5, []];
+                if (_ordList isNotEqualTo []) then {
+                    // SLOT 10, past the two points at 8 and 9 - the confirm
+                    // below writes those two every press and would eat anything
+                    // parked in them.
+                    private _ordIdx = (_prm param [10, 0]) max 0 min (count _ordList - 1);
+                    _y = [_y, "ORDNANCE", toUpper (_ordList param [_ordIdx, "AUTO"]), 10, 1, 0, count _ordList - 1] call _fnc_stepRow;
+                };
+            };
+        };
     };
     case "arty": {
         // Ordnance steps through what THIS battery carries - the adapter row
@@ -468,32 +601,91 @@ switch (_selType) do {
 // assumed, so an unset point reads as the requirement it is. A point picked
 // off a marker keeps the marker's name, because "MKR OBJ BRAVO" reads back
 // better than a bare grid.
-private _pt = missionNamespace getVariable [QGVAR(supportPoint), []];
-private _ptName = missionNamespace getVariable [QGVAR(supportPointName), ""];
-private _ptText = if (_pt isEqualTo []) then {
-    ["YOUR POSITION - CLICK THE MAP", "REQUIRED - CLICK THE MAP"] select (_selType isEqualTo "arty")
-} else {
-    if (_ptName isEqualTo "") then {format ["GRID %1", mapGridPosition _pt]} else {format ["MKR %1", toUpper _ptName]}
+// ONE ROW PER POINT THE REQUEST CARRIES, and one of them is ARMED - the
+// armed row is where the next map click or marker pick lands. Everything a
+// point can be set from was already on this screen; all that was missing was
+// somewhere for the other two to go.
+//
+// The armed row is framed in the accent and its label lights, because a screen
+// with three identical rows and no indication of which one is listening is a
+// screen that puts the target grid in the egress slot.
+private _armed = missionNamespace getVariable [QGVAR(supportSlot), SUP_SLOT_TARGET];
+
+private _fnc_pointRow = {
+    params ["_y", "_slot", "_label", "_hint", "_required"];
+
+    (SUP_SLOT_VARS select _slot) params ["_pv", "_nv"];
+    private _p = missionNamespace getVariable [_pv, []];
+    private _n = missionNamespace getVariable [_nv, ""];
+    private _isArmed = _armed isEqualTo _slot;
+
+    // A point taken off a marker keeps the marker's name, because
+    // "MKR OBJ BRAVO" reads back better than a bare grid.
+    private _text = if (_p isEqualTo []) then {_hint} else {
+        if (_n isEqualTo "") then {format ["GRID %1", mapGridPosition _p]} else {format ["MKR %1", toUpper _n]}
+    };
+
+    [_body, [_pad, _y, _fw * 0.26, _rowH], _label, ([_mute, _accent] select _isArmed), 0.62, true, "left", true] call EFUNC(tacpad,drawText);
+
+    if (_isArmed) then {
+        [_body, [_fw * 0.26, _y, _fw * 0.4, _rowH], _accent, RULE_THIN] call EFUNC(tacpad,drawFrame);
+    };
+    [_body, [_fw * 0.26, _y, _fw * 0.4, _rowH], _text, ([_ink, _accent] select (_p isEqualTo [] && _required)), 0.72, true, "center", true] call EFUNC(tacpad,drawText);
+
+    // Pressing the value arms this row. The slot travels on the hit control
+    // rather than being captured, because these blocks run long after the
+    // draw that made them.
+    private _armHit = [_body, [_fw * 0.26, _y, _fw * 0.4, _rowH], {
+        params ["_ctrl"];
+        missionNamespace setVariable [QGVAR(supportSlot), _ctrl getVariable [QGVAR(slotIdx), SUP_SLOT_TARGET]];
+        {["support"] call EFUNC(tacpad,openApp)} call CBA_fnc_execNextFrame;
+    }] call EFUNC(tacpad,drawHit);
+    _armHit setVariable [QGVAR(slotIdx), _slot];
+
+    // MKR arms the row AND swaps the form for the marker list, so picking a
+    // marker for the egress point is one press rather than two.
+    [_body, [_fw * 0.68, _y, _fw * 0.14, _rowH], _ink, RULE_THIN] call EFUNC(tacpad,drawFrame);
+    [_body, [_fw * 0.68, _y, _fw * 0.14, _rowH], "MKR", _ink, 0.72, true, "center"] call EFUNC(tacpad,drawText);
+    private _mkrHit = [_body, [_fw * 0.68, _y, _fw * 0.14, _rowH], {
+        params ["_ctrl"];
+        missionNamespace setVariable [QGVAR(supportSlot), _ctrl getVariable [QGVAR(slotIdx), SUP_SLOT_TARGET]];
+        missionNamespace setVariable [QGVAR(supportPickMarker), true];
+        {["support"] call EFUNC(tacpad,openApp)} call CBA_fnc_execNextFrame;
+    }] call EFUNC(tacpad,drawHit);
+    _mkrHit setVariable [QGVAR(slotIdx), _slot];
+
+    // CLR gives that one point back - an ingress cleared is an ingress flown
+    // automatically, not a request that can no longer be sent.
+    [_body, [_fw * 0.84, _y, _fw * 0.13, _rowH], _ink, RULE_THIN] call EFUNC(tacpad,drawFrame);
+    [_body, [_fw * 0.84, _y, _fw * 0.13, _rowH], "CLR", _ink, 0.72, true, "center"] call EFUNC(tacpad,drawText);
+    private _clrHit = [_body, [_fw * 0.84, _y, _fw * 0.13, _rowH], {
+        params ["_ctrl"];
+        (SUP_SLOT_VARS select (_ctrl getVariable [QGVAR(slotIdx), SUP_SLOT_TARGET])) params ["_pv", "_nv"];
+        missionNamespace setVariable [_pv, []];
+        missionNamespace setVariable [_nv, ""];
+        {["support"] call EFUNC(tacpad,openApp)} call CBA_fnc_execNextFrame;
+    }] call EFUNC(tacpad,drawHit);
+    _clrHit setVariable [QGVAR(slotIdx), _slot];
+
+    _y + _rowH + _padY * 0.4
 };
 
-[_body, [_pad, _y, _fw * 0.3, _rowH], "TASK POINT", _mute, 0.62, true, "left", true] call EFUNC(tacpad,drawText);
-[_body, [_fw * 0.3, _y, _fw * 0.36, _rowH], _ptText, ([_ink, _accent] select (_pt isEqualTo [] && {_selType isEqualTo "arty"})), 0.72, true, "center", true] call EFUNC(tacpad,drawText);
+private _pt = missionNamespace getVariable [QGVAR(supportPoint), []];
+private _needsPoint = _selType isEqualTo "arty" || _isGhostCas;
 
-// MKR swaps the form for the marker list; CLR gives the point back.
-[_body, [_fw * 0.68, _y, _fw * 0.14, _rowH], _ink, RULE_THIN] call EFUNC(tacpad,drawFrame);
-[_body, [_fw * 0.68, _y, _fw * 0.14, _rowH], "MKR", _ink, 0.72, true, "center"] call EFUNC(tacpad,drawText);
-[_body, [_fw * 0.68, _y, _fw * 0.14, _rowH], {
-    missionNamespace setVariable [QGVAR(supportPickMarker), true];
-    {["support"] call EFUNC(tacpad,openApp)} call CBA_fnc_execNextFrame;
-}] call EFUNC(tacpad,drawHit);
+_y = [
+    _y, SUP_SLOT_TARGET, "TARGET",
+    ["YOUR POSITION - CLICK THE MAP", "REQUIRED - CLICK THE MAP"] select _needsPoint,
+    _needsPoint
+] call _fnc_pointRow;
 
-[_body, [_fw * 0.84, _y, _fw * 0.13, _rowH], _ink, RULE_THIN] call EFUNC(tacpad,drawFrame);
-[_body, [_fw * 0.84, _y, _fw * 0.13, _rowH], "CLR", _ink, 0.72, true, "center"] call EFUNC(tacpad,drawText);
-[_body, [_fw * 0.84, _y, _fw * 0.13, _rowH], {
-    missionNamespace setVariable [QGVAR(supportPoint), []];
-    missionNamespace setVariable [QGVAR(supportPointName), ""];
-    {["support"] call EFUNC(tacpad,openApp)} call CBA_fnc_execNextFrame;
-}] call EFUNC(tacpad,drawHit);
+// AUTO IS A REAL ANSWER, NOT AN UNSET FIELD, and the hint says which one it
+// is: nothing picked means the run comes in from the caller's side and carries
+// straight on out, which is what a section in contact would have asked for.
+if (_isGhostCas) then {
+    _y = [_y, SUP_SLOT_INGRESS, "INGRESS", "AUTO - FROM YOUR SIDE", false] call _fnc_pointRow;
+    _y = [_y, SUP_SLOT_EGRESS, "EGRESS", "AUTO - STRAIGHT THROUGH", false] call _fnc_pointRow;
+};
 
 // ----------------------------------------------------------- action stack ---
 // The slab under the map - the handoff's spot, in its own group now so the
@@ -503,8 +695,12 @@ private _ax = _pad;
 private _abw = _aw - 2 * _pad;
 private _ay = _padY;
 
+// A GRID IS REQUIRED FOR BOTH KINDS THAT AIM AT ONE. Artillery never defaults
+// a fire mission onto the caller's own position, and a ghost CAS run cannot -
+// its whole geometry is built around a target point, so "overhead me" is not a
+// thing it can fly.
 private _ready = _selUnit isNotEqualTo "" && {_selTask isNotEqualTo ""}
-    && {_selType isNotEqualTo "arty" || {_pt isNotEqualTo []}};
+    && {(_selType isNotEqualTo "arty" && {!_isGhostCas}) || {_pt isNotEqualTo []}};
 
 // THE BUTTON SAYS WHAT IT IS WAITING FOR. A dim "CONFIRM TASKING" with no
 // unit and no task picked looks like a broken button, and it was pressed as
@@ -534,14 +730,44 @@ private _confirmLabel = if (_ready) then {"CONFIRM TASKING"} else {
 // directly. Rects are display-space: slab position plus child offset.
 private _fnc_confirm = if (_ready) then {{
     private _sel = missionNamespace getVariable [QGVAR(supportSel), ["cas", "", ""]];
+    // INGRESS AND EGRESS RIDE IN THE PARAMETER ARRAY, past everything ALiVE's
+    // own tasking reads - air takes the first four entries, artillery four
+    // through seven - so one array serves both kinds of asset and this screen
+    // does not have to know which it is filling in. Copied before it is
+    // extended: the stored array is the steppers' and must not grow two
+    // entries every time CONFIRM is pressed.
+    private _prm = +(missionNamespace getVariable [QGVAR(supportParams), [500, 150, 0, 1, 0, 1, 100, 0]]);
+    while {count _prm < 11} do {_prm pushBack []};
+    _prm set [8, missionNamespace getVariable [QGVAR(supportIngress), []]];
+    _prm set [9, missionNamespace getVariable [QGVAR(supportEgress), []]];
+
     (
         [
             _sel # 1, _sel # 2,
             missionNamespace getVariable [QGVAR(supportPoint), []],
-            missionNamespace getVariable [QGVAR(supportParams), [500, 150, 0, 1, 0, 1, 100, 0]]
+            _prm
         ] call ghost_adapter_alive_fnc_supportTask
     ) params ["_ok", "_why"];
-    private _said = [_why, "Tasking sent - awaiting acknowledgement."] select _ok;
+
+    // WHAT WAS ACCEPTED, IN THE WORDS OF THE THING THAT ACCEPTED IT. "Tasking
+    // sent - awaiting acknowledgement" is a sentence about the radio, not about
+    // the aircraft, and it reads the same whether anything is flying or not.
+    // The callsign is read back off the asset list rather than carried here,
+    // because the list is the only place that knows what a row is called.
+    private _said = if (_ok) then {
+        private _assets = call ghost_adapter_alive_fnc_supportAssets;
+        private _row = _assets param [_assets findIf {(_x param [0, ""]) isEqualTo (_sel # 1)}, []];
+        private _cs = _row param [2, "UNIT"];
+        private _at = missionNamespace getVariable [QGVAR(supportPoint), []];
+
+        if (_at isEqualTo []) then {
+            format ["%1 ACCEPTED - %2", _cs, _sel # 2]
+        } else {
+            format ["%1 ACCEPTED - %2 ON %3", _cs, _sel # 2, mapGridPosition _at]
+        }
+    } else {
+        _why
+    };
     missionNamespace setVariable [QGVAR(supportFlash), [_said, _ok, CBA_missionTime]];
     ["SUPPORT", _said, ["high", "normal"] select _ok] call EFUNC(messaging,notify);
     {["support"] call EFUNC(tacpad,openApp)} call CBA_fnc_execNextFrame;
@@ -642,9 +868,11 @@ if (!isNull _map && {!(_map getVariable [QGVAR(wired), false])}) then {
         // A map click is a choice too - it names no marker and it answers
         // any marker list that was open.
         private _world = _map ctrlMapScreenToWorld [_mx, _my];
-        INFO_1("appSupport: map click -> task point %1",_world);
-        missionNamespace setVariable [QGVAR(supportPoint), [_world # 0, _world # 1, 0]];
-        missionNamespace setVariable [QGVAR(supportPointName), ""];
+        private _slot = missionNamespace getVariable [QGVAR(supportSlot), SUP_SLOT_TARGET];
+        INFO_2("appSupport: map click -> slot %1 at %2",_slot,_world);
+        (SUP_SLOT_VARS select _slot) params ["_pv", "_nv"];
+        missionNamespace setVariable [_pv, [_world # 0, _world # 1, 0]];
+        missionNamespace setVariable [_nv, ""];
         missionNamespace setVariable [QGVAR(supportPickMarker), false];
         {["support"] call EFUNC(tacpad,openApp)} call CBA_fnc_execNextFrame;
         false
@@ -653,9 +881,30 @@ if (!isNull _map && {!(_map getVariable [QGVAR(wired), false])}) then {
     _map ctrlAddEventHandler ["Draw", {
         params ["_map"];
         private _pt = missionNamespace getVariable [QGVAR(supportPoint), []];
+
+        // THE RUN, DRAWN. Two grids in a form are two numbers; the same two
+        // with a line through the target are a run-in the player can see
+        // clears the ridge. Ingress leg then egress leg, target in the middle,
+        // so the geometry gets checked on the map rather than in the head.
+        private _in = missionNamespace getVariable [QGVAR(supportIngress), []];
+        private _out = missionNamespace getVariable [QGVAR(supportEgress), []];
+        private _accent = [0.925, 0.19, 0.075, 1];
+        private _leg = [0.925, 0.19, 0.075, 0.7];
+
+        if (_in isNotEqualTo []) then {
+            _map drawIcon ["\a3\ui_f\data\map\markers\military\arrow_CA.paa", _accent, _in, 20, 20, [0, _in getDir _pt] select (_pt isNotEqualTo []), "IN", 1, 0.04, "RobotoCondensed"];
+            if (_pt isNotEqualTo []) then {_map drawLine [_in, _pt, _leg]};
+        };
+        if (_out isNotEqualTo []) then {
+            _map drawIcon ["\a3\ui_f\data\map\markers\military\arrow_CA.paa", _accent, _out, 20, 20, [0, _pt getDir _out] select (_pt isNotEqualTo []), "OUT", 1, 0.04, "RobotoCondensed"];
+            if (_pt isNotEqualTo []) then {_map drawLine [_pt, _out, _leg]};
+        };
+
+        // The legs are worth drawing before a target is picked - they are the
+        // only feedback that a press landed in the row the player meant.
         if (_pt isEqualTo []) exitWith {};
 
-        _map drawIcon ["\a3\ui_f\data\map\markers\military\box_CA.paa", [0.925, 0.19, 0.075, 1], _pt, 22, 22, 0, "", 1];
+        _map drawIcon ["\a3\ui_f\data\map\markers\military\box_CA.paa", _accent, _pt, 22, 22, 0, "", 1];
 
         private _sel = missionNamespace getVariable [QGVAR(supportSel), ["cas", "", ""]];
         if ((_sel # 0) isEqualTo "cas") then {

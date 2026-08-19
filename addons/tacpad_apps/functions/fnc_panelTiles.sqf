@@ -43,8 +43,26 @@ private _bodyW = (ctrlPosition _body) # 2;
 // reader's own placed left edge is computed the same way place() computes
 // it, and no tile draws past it; the +N count says what was cut.
 private _readerLeft = safeZoneX + (((DEFAULT_READER # 0) min (1 - (DEFAULT_READER # 2) * EGVAR(tacpad,uiScale))) * safeZoneW) - PAD * safeZoneW;
-private _groupX = (ctrlPosition (ctrlParentControlsGroup _body)) # 0;
-_bodyW = _bodyW min (_readerLeft - _groupX);
+private _group = ctrlParentControlsGroup _body;
+private _gp = ctrlPosition _group;
+private _groupX = _gp # 0;
+
+// THE FRAME, NOT ONLY THE TILES. Clamping what is DRAWN left the band's own
+// panel - ground, outline and the LIVE TILES bar - at the width placement gave
+// it, so at a ui scale past about 1.19 the frame still ran under the reader's
+// left edge with the tiles stopping short of it. That is the sliver of overlap
+// left after the tile clamp: the last tile cleared the reader and the box
+// around it did not.
+//
+// Set before FUNC(fit), which re-lays the ground, the four outline edges and
+// the body from the group's own width at the end of this function.
+private _maxW = _readerLeft - _groupX;
+if ((_gp # 2) > _maxW) then {
+    _group ctrlSetPosition [_groupX, _gp # 1, _maxW, _gp # 3];
+    _group ctrlCommit 0;
+};
+
+_bodyW = _bodyW min (_maxW - 2 * RULE_THICK * pixelW);
 
 // SHRINK TO FIT - AND BUDGET BOTH EDGES, WHICH IS THE WHOLE BUG.
 //

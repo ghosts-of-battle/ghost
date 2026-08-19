@@ -93,8 +93,7 @@ _grp setCombatMode "YELLOW";
     // NOT PROFILED - see the note in FUNC(buildBattery). ALiVE's runtime
     // profiler deletes what it is handed, so a MANPAD team offered to it was
     // a team that stopped existing.
-    _grp setVariable ["ALIVE_profileIgnore", true, true];
-    {_x setVariable ["ALIVE_profileIgnore", true, true]} forEach (units _grp);
+    [_grp] call EFUNC(adapter_alive,profileIgnore);
 
     INFO_2("MANPAD team up for %1 at %2",_side,mapGridPosition _pos);
 }, [_grp, _side, _pos]] call CBA_fnc_execNextFrame;

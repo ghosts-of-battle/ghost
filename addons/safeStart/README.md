@@ -1,4 +1,4 @@
-# safestart
+# Safestart
 
 `ghost_safestart`
 

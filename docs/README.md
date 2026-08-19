@@ -5,11 +5,11 @@ changing an addon; do not hand-edit these files.
 
 | | |
 |---|---|
-| Addons | 90 |
+| Addons | 103 |
 | Optional addons | 3 |
-| CBA settings | 133 |
-| Eden modules | 15 |
-| Functions | 564 |
+| CBA settings | 153 |
+| Eden modules | 16 |
+| Functions | 746 |
 
 ## Contents
 

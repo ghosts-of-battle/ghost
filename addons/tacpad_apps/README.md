@@ -91,6 +91,21 @@ opacity, which panels are shown, reader density and a reset for panel positions.
 It writes the same CBA settings Addon Options writes, so there is one set of
 values rather than two that can disagree.
 
+The scheme section's **MISSION PRESETS** row is the mission's own, not the mod's.
+A unit writes a row of ready-made palettes into its
+`config\config_tacpad.hpp` — a `Ghost_TacpadSchemes` class, one entry per
+preset, each a `name` and the three tokens `ground`, `ink` and `accent` in hex —
+and everyone in that mission gets the same cards, drawn exactly like the shipped
+six. It is read once per mission by `ghost_tacpad_apps_fnc_missionSchemes`; a
+mission with nothing to say about colour draws no row at all.
+
+**A mission preset *is* the custom scheme.** Pressing one writes the three custom
+tokens and switches the scheme to `custom`, so nothing downstream learns a
+seventh scheme name that would mean nothing in the next mission — which is also
+why the card says ACTIVE on the tokens matching rather than on a name. Without
+it the only way to a unit palette was twenty people reassembling the same three
+colours by hand off the swatch strips.
+
 A sixth, **PANELS**, is HIDE ALL and the SHOW ALL that undoes it. It is its own
 panel because of what it survives: it was a second cell inside the settings
 strip, and the strip had to be pinned against the master switch for it — so
@@ -233,7 +248,7 @@ full-screen things fighting for the same close key is not a UI.
 
 ## Ships
 
-32 functions.
+34 functions.
 
 ## CBA settings
 
@@ -250,7 +265,7 @@ full-screen things fighting for the same close key is not a UI.
 
 ## Functions
 
-<details><summary>32</summary>
+<details><summary>34</summary>
 
 - `ghost_tacpad_apps_fnc_alarmAtDelay`
 - `ghost_tacpad_apps_fnc_ammoState`
@@ -265,6 +280,7 @@ full-screen things fighting for the same close key is not a UI.
 - `ghost_tacpad_apps_fnc_appSupport`
 - `ghost_tacpad_apps_fnc_appTimer`
 - `ghost_tacpad_apps_fnc_appWeather`
+- `ghost_tacpad_apps_fnc_missionSchemes`
 - `ghost_tacpad_apps_fnc_panelHide`
 - `ghost_tacpad_apps_fnc_panelReader`
 - `ghost_tacpad_apps_fnc_panelSettings`
@@ -272,10 +288,12 @@ full-screen things fighting for the same close key is not a UI.
 - `ghost_tacpad_apps_fnc_panelTic`
 - `ghost_tacpad_apps_fnc_panelTiles`
 - `ghost_tacpad_apps_fnc_panelTools`
+- `ghost_tacpad_apps_fnc_panelToolsBtn`
 - `ghost_tacpad_apps_fnc_radioPublish`
 - `ghost_tacpad_apps_fnc_radioState`
 - `ghost_tacpad_apps_fnc_radioTune`
 - `ghost_tacpad_apps_fnc_readerRow`
+- `ghost_tacpad_apps_fnc_roleTiles`
 - `ghost_tacpad_apps_fnc_row`
 - `ghost_tacpad_apps_fnc_setSetting`
 - `ghost_tacpad_apps_fnc_themeTablet`

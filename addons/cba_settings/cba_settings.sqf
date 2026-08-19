@@ -188,7 +188,7 @@ force force acex_fortify_settingHint = 1;
 
 // ACE Fragmentation Simulation
 force force ace_frag_enabled = true;
-force force ace_frag_reflectionsEnabled = true;
+force force ace_frag_reflectionsEnabled = false;
 force force ace_frag_spallEnabled = true;
 force ace_frag_spallIntensity = 1;
 

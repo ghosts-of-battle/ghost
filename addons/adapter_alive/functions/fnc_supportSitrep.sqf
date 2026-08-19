@@ -25,6 +25,15 @@
 
 params [["_assetId", "", [""]]];
 
+// A registered provider answers for its own assets - see the note in
+// FUNC(supportAssets). Before the NEO check, so a ghost asset still reports in
+// a mission with no ALiVE combat support at all.
+private _prefix = (_assetId splitString ":") param [0, ""];
+private _provider = (missionNamespace getVariable [QGVAR(providers), createHashMap]) getOrDefault [_prefix, []];
+if (_provider isNotEqualTo []) exitWith {
+    [_assetId] call (_provider param [2, {[false, "no report"]}])
+};
+
 if (isNil "NEO_radioLogic") exitWith {[false, "ALiVE combat support is not running"]};
 
 (_assetId splitString ":") params [["_type", ""], ["_idxText", "-1"]];

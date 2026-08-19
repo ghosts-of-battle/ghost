@@ -137,6 +137,29 @@ ships with, which a mission or the forced list below can override.
 | Hide with the map | CHECKBOX | Ghosts of Battle > HUD | `true` | Takes the HUD off screen while the map is open, where the tacpad shows the same readings in more detail. Off leaves it up, over the map. |
 | HUD opacity | SLIDER | Ghosts of Battle > HUD | `[0, 1, 0.55, 2, true]` | How solid the slot backgrounds are over the world. The text stays fully opaque at any setting. |
 
+## Init (`init`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Mission Type | LIST | _YMFsettings > Mission | `[[0,1,2,3], ["Custom", "Operation", "Tra` | This will deside on what kind of startup hint you get on mission start. |
+| AI Setting | LIST | _YMFsettings > Mission | `[[0,1,2], ["Arma Default", "Adjusted", "` | This adjustes the ai and make them less godlike and more arcade to play against. |
+| Enable | CHECKBOX | _YMFsettings > Radios | `true` | Allow mission to set up and handle radio distributution |
+| Squad Radio Channels (ACRE) | CHECKBOX | _YMFsettings > Radios | `true` | Allow radio channels to be changed based on player squadname. |
+| Documents | CHECKBOX | _YMFsettings > Player | `true` | Allow the mission to write diary help documents. |
+| Rank | CHECKBOX | _YMFsettings > Player | `true` | Allow mission to apply arma rank based on name rank prefixes. |
+| Insignia | CHECKBOX | _YMFsettings > Player | `true` | Automaticly apply insignias based on squad name. |
+| Apply Earplugs | CHECKBOX | _YMFsettings > Player | `true` | Automaticly apply earplugs to players on spawn and respawn. |
+| Enable | CHECKBOX | _YMFsettings > Staging | `true` | Enables the staging system. |
+| Enable | CHECKBOX | _YMFsettings > Vehicle | `true` | Enables scripted settings and functions to apply to vehicles. |
+| Pylon | CHECKBOX | _YMFsettings > Vehicle | `true` | Enables scripted loadouts or pylon to be applied to vehicles based on faction |
+| Inventory | CHECKBOX | _YMFsettings > Vehicle | `true` | Enables scripted inventory to be applied to vehicles based on faction |
+| Radio | CHECKBOX | _YMFsettings > Vehicle | `false` | Enables vehicles radio to be enabled and set on vehicles |
+| Factions | EDITBOX | _YMFsettings > Vehicle | `'["BLU_CTRG_F","BLU_W_F","BLU_T_F","BLU_` | Array of factions allowing system loadout and pylon changes |
+| Simulation Type | LIST | _YMFsettings > Combat Jump Simulation | `[[0,1,2], ["None", "Basic", "Advanced"],` | Combat jump simulation is a system that checks for lose equiped gear in the form of;\nnight vision googles, hats or glasses and make you lose the on a |
+| Include Night Vision Googles | CHECKBOX | _YMFsettings > Combat Jump Simulation | `true` | Include equiped Night Vison Googles in the simulation. |
+| Include Non-combat Googles | CHECKBOX | _YMFsettings > Combat Jump Simulation | `true` | Include Non-combat Googles in the simulation. This refere to sunshades and simular non-safety googles. |
+| Include Non-combat Headgear | CHECKBOX | _YMFsettings > Combat Jump Simulation | `true` | Include Non-combat Headgear in the simulation. This refere to hats bandanas and baretes. |
+
 ## Insurgents (`insurgents`)
 
 | Setting | Type | Category | Default | What it does |
@@ -210,7 +233,7 @@ ships with, which a mission or the forced list below can override.
 | Enable respawn | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Respawn | `false` | Enables respawn with given delay. |
 | Respawn delay | SLIDER | Ghosts of Battle > Ghosts of Battle - Respawn | `[1, 900, getNumber (configFile >> "CfgRe` | How much time must pass before player will respawn (if respawn is enabled). |
 
-## safestart (`safestart`)
+## Safestart (`safestart`)
 
 | Setting | Type | Category | Default | What it does |
 |---|---|---|---|---|
@@ -268,6 +291,13 @@ ships with, which a mission or the forced list below can override.
 | Setting | Type | Category | Default | What it does |
 |---|---|---|---|---|
 | Enable ACE Tagging markers | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Tagging | `false` | Automatically create markers on buildings sprayed with ACE Spray. |
+
+## Teleport (`teleport`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Action visibility radius | SLIDER | Ghosts of Battle > Teleport | `[5, 30, 5, 0]` | How close to a teleport object the action shows, in metres. |
+| Teleportation time | SLIDER | Ghosts of Battle > Teleport | `[1, 120, 6, 0]` | How long the move and its screen fade last, in seconds. |
 
 ## Towing (`towing`)
 
@@ -381,7 +411,7 @@ A forced setting cannot be changed in-game, and overrides the defaults above.
 | `ace_fortify_timeMin` | `1.5` |
 | `acex_fortify_settingHint` | `1` |
 | `ace_frag_enabled` | `true` |
-| `ace_frag_reflectionsEnabled` | `true` |
+| `ace_frag_reflectionsEnabled` | `false` |
 | `ace_frag_spallEnabled` | `true` |
 | `ace_frag_spallIntensity` | `1` |
 | `ace_gforces_coef` | `1` |

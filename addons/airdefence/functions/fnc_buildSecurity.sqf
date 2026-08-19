@@ -94,10 +94,7 @@ if (_groups isEqualTo []) exitWith {0};
     // ALiVE's runtime profiler are deleted by it, and a site whose guards
     // vanished is the same empty site the user photographed. They stay live
     // and say so to ALiVE rather than only to the log.
-    {
-        _x setVariable ["ALIVE_profileIgnore", true, true];
-        {_x setVariable ["ALIVE_profileIgnore", true, true]} forEach (units _x);
-    } forEach _live;
+    {[_x] call EFUNC(adapter_alive,profileIgnore)} forEach _live;
 
     INFO_2("%1 security group(s) on the battery at %2",count _live,mapGridPosition _pos);
 }, [_groups, _side, _pos]] call CBA_fnc_execNextFrame;

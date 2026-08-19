@@ -56,20 +56,27 @@ private _mine = call EFUNC(common,playerSides);
 
     ([_side] call _fnc_ground) params ["_taor", "_black"];
 
-    // OTHER SIDES' GROUND IS OFF LIMITS. A side with no TAOR of its own reads
-    // as "the whole map", which is how one side's hardware ends up standing
-    // inside another's area. EVERY side is asked, not just the ones with
-    // commanders: the players' side usually has no commander module, and its
-    // TAOR being invisible here is exactly how east hardware turned up on
-    // west ground.
-    private _foreign = [];
-    {
-        if (_x isEqualTo _side) then {continue};
-        _foreign append (([_x] call _fnc_ground) select 0);
-    } forEach [west, east, independent];
-    {
-        if !(_x in _taor) then { _black pushBackUnique _x };
-    } forEach _foreign;
+    // OTHER SIDES' GROUND IS OFF LIMITS - TO A SIDE THAT DECLARED NONE OF ITS
+    // OWN. A side with no TAOR reads as "the whole map", which is how one
+    // side's hardware ends up standing inside another's area. EVERY side is
+    // asked, not just the ones with commanders: the players' side usually has
+    // no commander module, and its TAOR being invisible here is exactly how
+    // east hardware turned up on west ground.
+    //
+    // A side that DID declare one keeps it whole - TAORs may overlap and on an
+    // insurgency they are meant to, so subtracting the players' ground from
+    // the insurgents' left them nowhere to put a battery. Same rule, same
+    // words, as EFUNC(common,taorGate).
+    if (_taor isEqualTo []) then {
+        private _foreign = [];
+        {
+            if (_x isEqualTo _side) then {continue};
+            _foreign append (([_x] call _fnc_ground) select 0);
+        } forEach [west, east, independent];
+        {
+            if !(_x in _taor) then { _black pushBackUnique _x };
+        } forEach _foreign;
+    };
 
     private _objs = [_side] call ghost_adapter_alive_fnc_objectivesFor;
     if (_objs isEqualTo []) then {

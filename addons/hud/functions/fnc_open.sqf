@@ -67,6 +67,13 @@ _display ctrlCreate [QGVAR(slotRight), IDC_HUD_RIGHT];
 GVAR(raisedAt) = CBA_missionTime;
 uiNamespace setVariable [QGVAR(display), _display];
 
+// A CONTROL IS BORN VISIBLE, so the show/hide cache is told that rather than
+// carrying an answer about the slots of a previous mission. FUNC(setShown) only
+// acts when its answer turns over; left stale across a rebuild it would decide
+// there was nothing to do and leave a fresh HUD sitting over whatever screen
+// was open at the time.
+uiNamespace setVariable [QGVAR(shown), true];
+
 // NOTHING IS DRAWN HERE. Every caller draws straight after, and FUNC(draw)
 // calls back into this to raise the HUD when it finds no display - so a
 // draw from here would be a loop.

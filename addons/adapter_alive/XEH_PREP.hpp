@@ -21,3 +21,6 @@ PREP(profileObjects);
 PREP(getData);
 PREP(setData);
 PREP(postReport);
+
+// ALiVE's own opt-out, so no other addon has to name it - see the function.
+PREP(profileIgnore);

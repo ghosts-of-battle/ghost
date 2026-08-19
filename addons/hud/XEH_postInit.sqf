@@ -25,26 +25,27 @@ if (!hasInterface) exitWith {};
     [_x, {[] call FUNC(draw)}] call CBA_fnc_addEventHandler;
 } forEach [QEGVAR(tacpad,scheme_changed), QEGVAR(tacpad,uiScale_changed)];
 
-// WITH THE MAP OPEN THE TACPAD SAYS ALL OF THIS IN MORE DETAIL, so the HUD gets
-// out of the way. The controls are hidden rather than deleted and rebuilt:
-// tearing the slots down twice a minute is how a HUD starts flickering.
-//
 // Tidiness, not a safety net. The mission display takes the slots with it when
 // it goes, so this only keeps the stored handle honest.
 addMissionEventHandler ["Ended", {[] call FUNC(close)}];
 
-addMissionEventHandler ["Map", {
-    params ["_opened"];
-    if (!GVAR(hideOnMap)) exitWith {};
-
-    private _display = uiNamespace getVariable [QGVAR(display), displayNull];
-    if (isNull _display) exitWith {};
-
-    {
-        private _ctrl = _display displayCtrl _x;
-        if (!isNull _ctrl) then {_ctrl ctrlShow !_opened};
-    } forEach [IDC_HUD_LEFT, IDC_HUD_RIGHT];
-}];
+// GETTING OUT OF THE WAY, EVERY FRAME, FOR ANYTHING.
+//
+// This was a "Map" mission event handler and nothing else, which covered the
+// map and left every dialog in the mod uncovered - the admin console had the
+// SCANNER slot printed across its UTILITIES and ADMIN ACTIONS rows. A mission
+// event handler can only answer for the one event it is named after, and there
+// is no "a dialog opened" event to name; the engine will only answer the
+// question when asked. So it is asked, once a frame, by FUNC(hidden).
+//
+// AFFORDABLE BECAUSE IT DOES NOTHING. FUNC(setShown) compares one boolean
+// against the last one and returns - the controls are touched only on the frame
+// the answer turns over, which is twice per screen the player opens.
+//
+// The map rule moved into FUNC(hidden) with it rather than staying here as a
+// second copy: the tick below asks the same question, and two copies of a rule
+// are how a HUD ends up hidden and still redrawing.
+[{[] call FUNC(setShown)}, 0, []] call CBA_fnc_addPerFrameHandler;
 
 // ONE LOOP FOR BOTH SLOTS. A scanner sweep and a countdown do not need the same
 // cadence, but two handlers redrawing the same layer would be two chances to
@@ -59,7 +60,7 @@ addMissionEventHandler ["Map", {
             [] call FUNC(close);
         };
     };
-    if (GVAR(hideOnMap) && {visibleMap}) exitWith {};
+    if ([] call FUNC(hidden)) exitWith {};
 
     // NO "IS IT UP?" GUARD. FUNC(draw) raises the HUD when it finds no
     // display, and this tick is what makes that a recovery rather than a

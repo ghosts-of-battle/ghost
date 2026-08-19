@@ -29,6 +29,13 @@
  * 2: Caller tag for the log <STRING> (optional)
  * 3: TAOR marker names <ARRAY> (optional - the adapter's when absent)
  * 4: Blacklist marker names <ARRAY> (optional)
+ * 5: Do not warn on a refusal <BOOL> (optional, default false)
+ *
+ * QUIET IS FOR BULK. The warning is written for one refused spawn, where it is
+ * the only record that a system held its fire. A caller filtering a whole list
+ * through the gate - every objective a commander holds, every QRF origin -
+ * would turn that into sixty lines a minute saying the same thing, so it says
+ * how many it dropped instead. Single-spawn callers stay loud.
  *
  * Return Value:
  * The spawn may go ahead <BOOL>
@@ -44,7 +51,8 @@ params [
     ["_pos", [], [[]]],
     ["_tag", "", [""]],
     ["_taor", [], [[]]],
-    ["_black", [], [[]]]
+    ["_black", [], [[]]],
+    ["_quiet", false, [false]]
 ];
 
 if (_pos isEqualTo []) exitWith {true};
@@ -67,7 +75,23 @@ if (_taor isEqualTo [] && {_side isNotEqualTo sideUnknown} && _haveAdapter) then
 // commander's synchronised objects - so the answer is cached. TAOR markers do
 // not move during a mission; the refresh only exists so a commander that
 // initialises late is picked up.
-if (_side isNotEqualTo sideUnknown && _haveAdapter) then {
+//
+// ONLY FOR A SIDE THAT DECLARED NOTHING. This ran for every side, and that is
+// a second rule quietly overriding the mission maker's first one: TAORs are
+// allowed to OVERLAP, and on an insurgency they are meant to - this
+// collection's Tanoa mission draws the insurgents' green over most of the
+// players' blue, because inside the players' half is where insurgents live.
+// Subtracting foreign ground from a side that HAS its own left that side with
+// the slivers of its TAOR nobody else claimed, which for the insurgents was a
+// kilometre of coastline and no drones, batteries or safe houses anywhere they
+// were placed to operate.
+//
+// A declared TAOR is a statement of where that side operates, overlaps
+// included, and it wins. The foreign list exists for the side that declared
+// NOTHING - which reads as the whole map, and is the hole this gate was
+// written to close: that side is still bounded by everybody else's
+// declarations.
+if (_taor isEqualTo [] && {_side isNotEqualTo sideUnknown} && _haveAdapter) then {
     private _cache = missionNamespace getVariable [QGVAR(foreignTaorCache), createHashMap];
     (_cache getOrDefault [str _side, [-1e9, []]]) params ["_stamp", "_foreign"];
 
@@ -91,7 +115,9 @@ if (_side isNotEqualTo sideUnknown && _haveAdapter) then {
     };
 
     // A marker this side has claimed as its own is not foreign, whatever
-    // another commander also lists - the caller's own declaration wins.
+    // another commander also lists - the caller's own declaration wins. Kept
+    // for the caller that passes a TAOR in argument 3 while the adapter reads
+    // none for it.
     {
         if !(_x in _taor) then { _black pushBackUnique _x };
     } forEach _foreign;
@@ -104,7 +130,7 @@ if (_taor isEqualTo [] && {_black isEqualTo []}) exitWith {true};
 private _ok = (_taor isEqualTo [] || {(_taor findIf {_pos inArea _x}) > -1})
     && {(_black findIf {_pos inArea _x}) == -1};
 
-if (!_ok) then {
+if (!_ok && {!_quiet}) then {
     WARNING_3("taorGate: refused %1 at %2 (%3) - outside the side's ground",_side,mapGridPosition _pos,_tag);
 };
 

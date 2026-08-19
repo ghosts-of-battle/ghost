@@ -143,19 +143,13 @@ private _grp = createGroup [_side, true];
     // virtualisation is. Static air defence has nowhere to walk to and no
     // reason to be a record, so it is never handed over.
     //
-    // ALIVE_profileIgnore is ALiVE's own opt-out, honoured by that same
-    // function. Set on the hardware, its crews and their groups so any OTHER
-    // ALiVE pass over the map leaves the site alone too - without it, "it
-    // stays live" was a claim nothing had told ALiVE about.
-    {
-        _x setVariable ["ALIVE_profileIgnore", true, true];
-        {_x setVariable ["ALIVE_profileIgnore", true, true]} forEach (crew _x);
-        private _g = group (gunner _x);
-        if (!isNull _g) then {_g setVariable ["ALIVE_profileIgnore", true, true]};
-    } forEach _live;
-    if (!isNull _grp) then {
-        _grp setVariable ["ALIVE_profileIgnore", true, true];
-    };
+    // ALiVE's own opt-out, asked for through the adapter - the variable is
+    // ALiVE's name and this addon is not allowed to know it. Hardware, crews
+    // and their groups, so any OTHER ALiVE pass over the map leaves the site
+    // alone too; without it, "it stays live" was a claim nothing had actually
+    // told ALiVE about.
+    {[_x] call EFUNC(adapter_alive,profileIgnore)} forEach _live;
+    [_grp] call EFUNC(adapter_alive,profileIgnore);
 
     INFO_2("battery up for %1 at %2",_side,mapGridPosition _pos);
 }, [_made, _grp, _side, _pos, _kinds]] call CBA_fnc_execNextFrame;

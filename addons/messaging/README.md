@@ -181,7 +181,7 @@ EW link-state degradation, and FRAGO sub-threads.
 
 ## Ships
 
-41 functions.
+42 functions.
 
 ## CBA settings
 
@@ -203,7 +203,7 @@ EW link-state degradation, and FRAGO sub-threads.
 
 ## Functions
 
-<details><summary>41</summary>
+<details><summary>42</summary>
 
 - `ghost_messaging_fnc_cltIndex`
 - `ghost_messaging_fnc_cltMarker`
@@ -212,6 +212,7 @@ EW link-state degradation, and FRAGO sub-threads.
 - `ghost_messaging_fnc_fieldKeys`
 - `ghost_messaging_fnc_follow`
 - `ghost_messaging_fnc_linkState`
+- `ghost_messaging_fnc_loadTemplates`
 - `ghost_messaging_fnc_netLevel`
 - `ghost_messaging_fnc_netStream`
 - `ghost_messaging_fnc_notify`

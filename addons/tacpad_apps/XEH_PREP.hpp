@@ -37,5 +37,6 @@ PREP(appWeather);
 PREP(appRadio);
 PREP(roleTiles);
 PREP(setSetting);
+PREP(missionSchemes);
 PREP(toggleNet);
 PREP(themeTablet);

@@ -91,52 +91,131 @@ private _pw = _w - _px - _pad * 2;
 // -------------------------------------------------------------- the scheme --
 if (_section == "scheme") exitWith {
     private _y = _padY;
-    [_body, [_px, _y, _pw, _rowH], "PRESETS", _mute, 0.7, true, "left", true] call EFUNC(tacpad,drawText);
-    _y = _y + _rowH;
 
     // Each card is its own three tokens shown as three bands over a name plate,
     // which is the only honest way to offer a scheme: the swatch IS the scheme.
     //
-    // THREE UP, TWO ROWS - the day grounds above their own night ones, so the
-    // pair a unit actually switches between sits in one column.
-    private _perRow = 3;
-    private _cardW = (_pw - (_perRow - 1) * _pad) / _perRow;
-    private _cardH = _rowH * 2;
-    private _plateH = _rowH * 0.9;
+    // THREE UP - the shipped presets run day grounds above their own night ones,
+    // so the pair a unit actually switches between sits in one column.
+    //
+    // ONE DRAWER FOR BOTH LISTS. The mission's presets are drawn with this too,
+    // because a unit palette that looked like a lesser control than FIELD GREY
+    // would read as a second-class way to set the same three tokens - which it
+    // is not. Each card is [label, ground, ink, accent, active, press, vars].
+    private _fnc_cards = {
+        params ["_cards", "_y"];
 
-    {
-        _x params ["_key", "_label", "_g", "_i", "_a"];
-        private _on = _key == EGVAR(tacpad,scheme);
-        private _cx = _px + (_forEachIndex % _perRow) * (_cardW + _pad);
-        private _cy = _y + floor (_forEachIndex / _perRow) * (_cardH + _pad);
-
+        private _perRow = 3;
+        private _cardW = (_pw - (_perRow - 1) * _pad) / _perRow;
+        private _cardH = _rowH * 2;
+        private _plateH = _rowH * 0.9;
         private _bandH = _cardH - _plateH;
-        [_body, [_cx, _cy, _cardW * 0.5, _bandH], _g] call EFUNC(tacpad,drawFill);
-        [_body, [_cx + _cardW * 0.5, _cy, _cardW * 0.25, _bandH], _i] call EFUNC(tacpad,drawFill);
-        [_body, [_cx + _cardW * 0.75, _cy, _cardW * 0.25, _bandH], _a] call EFUNC(tacpad,drawFill);
 
-        [_body, [_cx, _cy, _cardW, _cardH], ([_ink, _accent] select _on), RULE_THICK] call EFUNC(tacpad,drawFrame);
-        [_body, [_cx + _pad, _cy + _bandH, _cardW * 0.62, _plateH], _label, _ink, 0.66, true, "left", true] call EFUNC(tacpad,drawText);
+        {
+            _x params ["_label", "_g", "_i", "_a", "_on", "_press", "_vars"];
+            private _cx = _px + (_forEachIndex % _perRow) * (_cardW + _pad);
+            private _cy = _y + floor (_forEachIndex / _perRow) * (_cardH + _pad);
 
-        if (_on) then {
-            [_body, [_cx + _cardW * 0.62, _cy + _bandH, _cardW * 0.38 - _pad, _plateH], "ACTIVE", _accent, 0.6, true, "right", true] call EFUNC(tacpad,drawText);
+            [_body, [_cx, _cy, _cardW * 0.5, _bandH], _g] call EFUNC(tacpad,drawFill);
+            [_body, [_cx + _cardW * 0.5, _cy, _cardW * 0.25, _bandH], _i] call EFUNC(tacpad,drawFill);
+            [_body, [_cx + _cardW * 0.75, _cy, _cardW * 0.25, _bandH], _a] call EFUNC(tacpad,drawFill);
+
+            [_body, [_cx, _cy, _cardW, _cardH], ([_ink, _accent] select _on), RULE_THICK] call EFUNC(tacpad,drawFrame);
+            [_body, [_cx + _pad, _cy + _bandH, _cardW * 0.62, _plateH], _label, _ink, 0.66, true, "left", true] call EFUNC(tacpad,drawText);
+
+            if (_on) then {
+                [_body, [_cx + _cardW * 0.62, _cy + _bandH, _cardW * 0.38 - _pad, _plateH], "ACTIVE", _accent, 0.6, true, "right", true] call EFUNC(tacpad,drawText);
+            };
+
+            // The card's own data travels on the hit control, because the block
+            // runs long after the draw that made it.
+            private _hit = [_body, [_cx, _cy, _cardW, _cardH], _press] call EFUNC(tacpad,drawHit);
+            {
+                _hit setVariable [_x # 0, _x # 1];
+            } forEach _vars;
+        } forEach _cards;
+
+        _y + ceil ((count _cards) / _perRow) * (_cardH + _pad)
+    };
+
+    [_body, [_px, _y, _pw, _rowH], "PRESETS", _mute, 0.7, true, "left", true] call EFUNC(tacpad,drawText);
+    _y = _y + _rowH;
+
+    _y = [
+        [
+            ["light", "FIELD GREY", [0.953, 0.949, 0.949, 1], [0.125, 0.118, 0.114, 1], [0.925, 0.188, 0.075, 1]],
+            ["olive", "OLIVE", [0.910, 0.906, 0.886, 1], [0.086, 0.157, 0.114, 1], [0.710, 0.800, 0.290, 1]],
+            ["sand", "SAND", [0.937, 0.925, 0.894, 1], [0.169, 0.129, 0.098, 1], [0.851, 0.580, 0.153, 1]],
+            ["dark", "NIGHT / RED", [0.078, 0.082, 0.078, 1], [0.902, 0.898, 0.886, 1], [1, 0.337, 0.235, 1]],
+            ["nightOlive", "NIGHT OLIVE", [0.063, 0.078, 0.067, 1], [0.851, 0.878, 0.831, 1], [0.612, 0.706, 0.235, 1]],
+            ["nightSand", "NIGHT SAND", [0.086, 0.075, 0.063, 1], [0.898, 0.878, 0.839, 1], [0.780, 0.510, 0.129, 1]]
+        ] apply {
+            _x params ["_key", "_label", "_g", "_i", "_a"];
+            [
+                _label, _g, _i, _a, _key == EGVAR(tacpad,scheme),
+                {
+                    params ["_ctrl"];
+                    [QEGVAR(tacpad,scheme), _ctrl getVariable [QGVAR(preset), "light"]] call FUNC(setSetting);
+                },
+                [[QGVAR(preset), _key]]
+            ]
+        },
+        _y
+    ] call _fnc_cards;
+
+    // --------------------------------------------------- the mission's own --
+    // A UNIT PALETTE IS MISSION DATA. These come out of the mission's
+    // config\config_tacpad.hpp, so a unit sets its colours once for everyone
+    // playing rather than asking twenty people to reassemble the same three
+    // tokens off the swatch strips below. A mission with nothing to say about
+    // colour draws no row at all.
+    //
+    // Each one IS the custom scheme: pressing it writes the three tokens and
+    // switches to custom, which is why the active test is the tokens matching
+    // and not a scheme name - nothing downstream learns a seventh scheme.
+    private _mission = call FUNC(missionSchemes);
+
+    if (_mission isNotEqualTo []) then {
+        _y = _y + _padY;
+        [_body, [_px, _y, _pw, _rowH], "MISSION PRESETS", _mute, 0.7, true, "left", true] call EFUNC(tacpad,drawText);
+        _y = _y + _rowH;
+
+        private _fnc_bare = {toUpper (_this splitString " #" joinString "")};
+        private _now = [QEGVAR(tacpad,customGround), QEGVAR(tacpad,customInk), QEGVAR(tacpad,customAccent)] apply {
+            (missionNamespace getVariable [_x, ""]) call _fnc_bare
         };
+        private _isCustom = EGVAR(tacpad,scheme) == "custom";
 
-        private _hit = [_body, [_cx, _cy, _cardW, _cardH], {
-            params ["_ctrl"];
-            [QEGVAR(tacpad,scheme), _ctrl getVariable [QGVAR(preset), "light"]] call FUNC(setSetting);
-        }] call EFUNC(tacpad,drawHit);
-        _hit setVariable [QGVAR(preset), _key];
-    } forEach [
-        ["light", "FIELD GREY", [0.953, 0.949, 0.949, 1], [0.125, 0.118, 0.114, 1], [0.925, 0.188, 0.075, 1]],
-        ["olive", "OLIVE", [0.910, 0.906, 0.886, 1], [0.086, 0.157, 0.114, 1], [0.710, 0.800, 0.290, 1]],
-        ["sand", "SAND", [0.937, 0.925, 0.894, 1], [0.169, 0.129, 0.098, 1], [0.851, 0.580, 0.153, 1]],
-        ["dark", "NIGHT / RED", [0.078, 0.082, 0.078, 1], [0.902, 0.898, 0.886, 1], [1, 0.337, 0.235, 1]],
-        ["nightOlive", "NIGHT OLIVE", [0.063, 0.078, 0.067, 1], [0.851, 0.878, 0.831, 1], [0.612, 0.706, 0.235, 1]],
-        ["nightSand", "NIGHT SAND", [0.086, 0.075, 0.063, 1], [0.898, 0.878, 0.839, 1], [0.780, 0.510, 0.129, 1]]
-    ];
+        _y = [
+            _mission apply {
+                _x params ["_label", "_g", "_i", "_a"];
+                [
+                    _label,
+                    [_g] call EFUNC(tacpad,rgbOf),
+                    [_i] call EFUNC(tacpad,rgbOf),
+                    [_a] call EFUNC(tacpad,rgbOf),
+                    _isCustom && {_now isEqualTo ([_g, _i, _a] apply {_x call _fnc_bare})},
+                    {
+                        params ["_ctrl"];
+                        // The three tokens are written quietly and the scheme
+                        // switch applies them, so the suite rebuilds once.
+                        {
+                            [_x # 0, _x # 1, false] call FUNC(setSetting);
+                        } forEach (_ctrl getVariable [QGVAR(tokens), []]);
+                        [QEGVAR(tacpad,scheme), "custom"] call FUNC(setSetting);
+                    },
+                    [[QGVAR(tokens), [
+                        [QEGVAR(tacpad,customGround), _g],
+                        [QEGVAR(tacpad,customInk), _i],
+                        [QEGVAR(tacpad,customAccent), _a]
+                    ]]]
+                ]
+            },
+            _y
+        ] call _fnc_cards;
+    };
 
-    _y = _y + 2 * (_cardH + _pad) + _padY;
+    _y = _y + _padY;
     [_body, [_px, _y, _pw, RULE_THIN * pixelH], _line] call EFUNC(tacpad,drawFill);
     _y = _y + _padY * 2;
 

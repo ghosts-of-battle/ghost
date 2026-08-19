@@ -28,10 +28,32 @@
 private _test = missionNamespace getVariable [QGVAR(supportAssetsTest), []];
 if (_test isNotEqualTo []) exitWith {_test};
 
-if (isNil "NEO_radioLogic") exitWith {[]};
+// PROVIDERS OTHER THAN ALiVE, MERGED IN HERE.
+//
+// The support page has one way in and it is this function, so a ghost-native
+// asset - a CAS drone module, anything later - has to arrive through it or it
+// does not exist as far as the page is concerned. Naming those systems in this
+// file would put ghost addons inside the adapter seam that check_invariants.py
+// exists to keep clean, and the dependency would point the wrong way besides.
+//
+// So the seam grew a registry instead: a provider publishes three pieces of
+// code under a prefix and this merges what they list. This file learns no
+// addon's name, those addons learn no ALiVE name, and the page carries on
+// calling one function.
+//
+// It runs BEFORE the NEO check on purpose. A mission with a CAS module and no
+// ALiVE combat support still has assets, and returning [] there would have
+// hidden them behind somebody else's absence.
+private _extra = [];
+{
+    private _rows = [] call (_y param [0, {[]}]);
+    if (_rows isEqualType []) then {_extra append _rows};
+} forEach (missionNamespace getVariable [QGVAR(providers), createHashMap]);
+
+if (isNil "NEO_radioLogic") exitWith {_extra};
 
 private _side = side group player;
-private _out = [];
+private _out = +_extra;
 
 {
     _x params ["_arrName", "_type", "_statusVar"];

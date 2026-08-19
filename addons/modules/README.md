@@ -56,6 +56,6 @@ Group Side
 - `ghost_modules_fnc_moduleAiHunter`
 - `ghost_modules_fnc_moduleAiSpawner`
 - `ghost_modules_fnc_moduleHealArea`
-- `ghost_modules_fnc_modulesafestart`
+- `ghost_modules_fnc_moduleSafeStart`
 
 </details>

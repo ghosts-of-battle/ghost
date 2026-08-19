@@ -8,7 +8,7 @@ A dependency in **bold** is an external mod.
 | Addon | Name | units | weapons | fns | Requires |
 |---|---|--:|--:|--:|---|
 | `cba_settings` | CBA Settings |  |  |  | **cba_settings**, **ace_hearing** |
-| `common` | Common |  |  | 47 | - |
+| `common` | Common |  |  | 49 | - |
 | `compatibility` | Compatibility |  |  |  | A3_Data_F_Decade_Loadorder |
 | `main` | Main |  |  |  | **cba_main**, **diwako_dui_main**, A3_Weapons_F |
 | `media` | Media |  |  | 1 | - |
@@ -65,7 +65,7 @@ A dependency in **bold** is an external mod.
 | `patrol_base` | Patrol Base | 2 | 2 | 12 | ghost_notify |
 | `remotesensors` | Remotesensors |  |  |  | ghost_common |
 | `respawn` | Respawn |  |  | 9 | ghost_common, ghost_notify |
-| `safestart` | safestart |  |  | 4 | ghost_common |
+| `safestart` | Safestart |  |  | 4 | ghost_common |
 | `spectator` | Spectator |  |  | 11 | ghost_common, A3_Functions_F_Exp_A |
 | `tasks` | Tasks |  |  | 11 | ghost_common |
 | `towing` | Towing |  |  |  | ghost_common |
@@ -98,7 +98,7 @@ A dependency in **bold** is an external mod.
 | `2035mrp` | 2035Mrp |  |  |  | **ace_hearing** |
 | `debug_console` | Debug Console |  |  | 2 | **cba_diagnostic** |
 | `loading` | Loading |  |  |  | ghost_common |
-| `main_menu` | Main Menu |  |  | 3 | - |
+| `main_menu` | Main Menu |  |  | 2 | - |
 | `map` | Map |  |  |  | - |
 | `nightvision` | Nightvision |  |  |  | ghost_common |
 | `notify` | Notify |  |  | 6 | - |
@@ -108,25 +108,38 @@ A dependency in **bold** is an external mod.
 
 | Addon | Name | units | weapons | fns | Requires |
 |---|---|--:|--:|--:|---|
-| `adapter_alive` | ALiVE Adapter |  |  | 23 | ghost_common, **cba_xeh**, **ALiVE_main** |
+| `adapter_alive` | ALiVE Adapter |  |  | 24 | ghost_common, **cba_xeh**, **ALiVE_main** |
 | `adminpanel` | Admin Panel |  |  | 18 | ghost_common, ghost_notify, ghost_tacpad, **cba_xeh** |
 | `airdefence` | Air Defence | 1 |  | 11 | ghost_common, **cba_xeh** |
 | `ambience` | Ambience | 2 |  | 4 | ghost_common, **cba_xeh** |
 | `antiship` | AntiShip | 6 |  | 7 | ghost_common, **cba_xeh** |
 | `bft` | BFT |  |  | 21 | ghost_common, **ace_interact_menu**, **ace_common**, **cba_xeh** |
 | `boarding` | Boarding | 1 |  | 4 | ghost_notify, **ace_interact_menu**, **cba_xeh** |
-| `hud` | HUD |  |  | 13 | ghost_common, ghost_tacpad, **cba_xeh** |
+| `cas` | CAS | 1 |  | 12 | ghost_common |
+| `diag` | Diag |  |  | 4 | **cba_xeh** |
+| `documents` | Documents |  |  | 2 | ghost_diag, **cba_xeh** |
+| `gear` | Gear |  |  | 9 | ghost_diag, **cba_xeh** |
+| `groups` | Groups |  |  | 12 | ghost_diag, **cba_xeh** |
+| `hud` | HUD |  |  | 15 | ghost_common, ghost_tacpad, **cba_xeh** |
+| `init` | Init |  |  | 13 | ghost_diag, **cba_xeh** |
 | `jamming` | Jamming | 1 |  | 13 | ghost_common, **cba_xeh** |
 | `leaders` | Leaders | 1 |  | 16 | ghost_common, ghost_notify, **cba_xeh** |
-| `messaging` | Messaging |  |  | 41 | ghost_common, ghost_notify, **cba_xeh** |
+| `logistics` | Logistics |  |  | 11 | ghost_diag, **cba_xeh** |
+| `messaging` | Messaging |  |  | 42 | ghost_common, ghost_notify, **cba_xeh** |
+| `mission` | Mission |  |  | 10 | ghost_diag, **cba_xeh** |
 | `naval` | Naval | 1 |  | 1 | ghost_common, **cba_xeh** |
+| `players` | Players |  |  | 13 | ghost_diag, **cba_xeh** |
 | `qrf` | QRF | 1 |  | 9 | ghost_common, ghost_notify, **cba_xeh** |
 | `reaction` | Reaction | 1 |  | 6 | ghost_common, ghost_notify, **cba_xeh** |
 | `repair` | Repair | 1 |  | 3 | ghost_common, **cba_xeh** |
 | `satcom` | SatCom | 1 | 1 | 5 | **ace_interact_menu**, **cba_xeh** |
-| `tacpad` | Tacpad |  |  | 43 | ghost_common, **cba_xeh** |
-| `tacpad_apps` | Tacpad Apps |  |  | 31 | ghost_common, ghost_tacpad, **cba_xeh** |
-| `uas` | UAS | 1 |  | 11 | ghost_common, **cba_xeh** |
+| `systems` | Systems |  |  | 26 | ghost_diag, **cba_xeh** |
+| `tacpad` | Tacpad |  |  | 49 | ghost_common, **cba_xeh** |
+| `tacpad_apps` | Tacpad Apps |  |  | 34 | ghost_common, ghost_tacpad, **cba_xeh** |
+| `teleport` | Teleport |  |  | 11 | ghost_notify, **cba_settings**, **cba_xeh** |
+| `uas` | UAS | 1 |  | 13 | ghost_common, **cba_xeh** |
+| `vehicle` | Vehicle |  |  | 31 | ghost_diag, **cba_xeh** |
+| `zenmodules` | Zenmodules |  |  | 12 | ghost_diag, **cba_xeh** |
 
 ## Optionals
 
@@ -143,4 +156,4 @@ Not loaded by default - copy out of `optionals/` to use.
 These declare `skipWhenMissingDependencies`, so they drop out quietly when an
 external mod is absent instead of breaking the load:
 
-`adapter_alive`, `airdefence`, `ambience`, `antiship`, `boarding`, `headware_jca_ie`, `jamming`, `leaders`, `naval`, `nvg`, `optics`, `optics_ef`, `patrol_base`, `qrf`, `reaction`, `repair`, `satcom`, `uas`, `uniform_eu`, `uniform_sof`, `vests_aegis`, `vests_efa`, `vests_jca`, `vests_sof`, `vests_ws`, `vs17`, `weapons_jca`, `weapons_spsv2`
+`adapter_alive`, `airdefence`, `ambience`, `antiship`, `boarding`, `diag`, `documents`, `gear`, `groups`, `headware_jca_ie`, `init`, `jamming`, `leaders`, `logistics`, `mission`, `naval`, `nvg`, `optics`, `optics_ef`, `patrol_base`, `players`, `qrf`, `reaction`, `repair`, `satcom`, `systems`, `teleport`, `uas`, `uniform_eu`, `uniform_sof`, `vehicle`, `vests_aegis`, `vests_efa`, `vests_jca`, `vests_sof`, `vests_ws`, `vs17`, `weapons_jca`, `zenmodules`, `weapons_spsv2`

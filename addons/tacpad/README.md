@@ -182,6 +182,14 @@ night ground, and it is named that.
 All six are switchable in game from the settings app, which shows them as the
 three tokens they are made of rather than as six words.
 
+**A mission can add its own row.** `Ghost_TacpadSchemes` in the mission's
+`config\config_tacpad.hpp` — one class per preset, `name` plus `ground`, `ink`
+and `accent` — is drawn under the shipped six as MISSION PRESETS. Each one is
+the `custom` scheme with its three tokens filled in, so a unit palette costs the
+mission one file and this addon nothing: there is no seventh scheme name here,
+and there is nothing for a mission that does not define any to fall over.
+See `ghost_tacpad_apps_fnc_missionSchemes`.
+
 Reading the player's Arma interface colours was tried and **dropped**. It made
 the tacpad a different mod on every machine, and the near-white ink most people
 run turned every divider and tile border into a white cage over the map. The
@@ -269,7 +277,7 @@ it, and every `PREP` in it would then look for its functions in this folder.
 
 ## Ships
 
-43 functions.
+49 functions.
 
 ## CBA settings
 
@@ -288,7 +296,7 @@ it, and every `PREP` in it would then look for its functions in this folder.
 
 ## Functions
 
-<details><summary>43</summary>
+<details><summary>49</summary>
 
 - `ghost_tacpad_fnc_appAlive`
 - `ghost_tacpad_fnc_appClose`
@@ -298,11 +306,15 @@ it, and every `PREP` in it would then look for its functions in this folder.
 - `ghost_tacpad_fnc_clock`
 - `ghost_tacpad_fnc_close`
 - `ghost_tacpad_fnc_composeCard`
+- `ghost_tacpad_fnc_composeCcDrop`
+- `ghost_tacpad_fnc_composeCcIds`
 - `ghost_tacpad_fnc_composeHarvest`
 - `ghost_tacpad_fnc_composeOpen`
 - `ghost_tacpad_fnc_composePane`
 - `ghost_tacpad_fnc_composePicker`
 - `ghost_tacpad_fnc_composeSend`
+- `ghost_tacpad_fnc_composeTargets`
+- `ghost_tacpad_fnc_composeToPicker`
 - `ghost_tacpad_fnc_diaryWatch`
 - `ghost_tacpad_fnc_drawFill`
 - `ghost_tacpad_fnc_drawFrame`
@@ -314,6 +326,8 @@ it, and every `PREP` in it would then look for its functions in this folder.
 - `ghost_tacpad_fnc_hexOf`
 - `ghost_tacpad_fnc_hotspot`
 - `ghost_tacpad_fnc_markerGrids`
+- `ghost_tacpad_fnc_netBox`
+- `ghost_tacpad_fnc_netLabel`
 - `ghost_tacpad_fnc_open`
 - `ghost_tacpad_fnc_openApp`
 - `ghost_tacpad_fnc_openReader`

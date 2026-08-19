@@ -58,12 +58,22 @@ private _cellW = _w - _cellX - _pad;
 [_body, [_cellX, _cellY, _cellW, _cellH], _ink, RULE_THICK] call EFUNC(tacpad,drawFrame);
 
 // A gear alone is recognisable; a gear with the word beside it is unmissable.
+//
+// TIGHT TO THE GEAR, AND THE FULL CELL AFTER IT. The word had three paddings
+// spent on it - one before the icon, one after it and one at the right edge -
+// and on a strip a quarter of the reader wide that is about a letter's worth
+// of room. Structured text wraps rather than clips, so SETTINGS came out as
+// SETTING with a lone S on a second line under it. The gear sits on the
+// cell's own margin now and the label starts half a padding after it, which
+// buys the letter back.
 private _iconH = _cellH * 0.62;
 private _iconW = _iconH * pixelW / pixelH;
-[_body, [_cellX + _pad, _cellY + (_cellH - _iconH) * 0.5, _iconH], "\A3\ui_f\data\gui\rsc\rscdisplaymain\menu_options_ca.paa", _ink] call EFUNC(tacpad,drawIcon);
+private _iconX = _cellX + _pad * 0.5;
+[_body, [_iconX, _cellY + (_cellH - _iconH) * 0.5, _iconH], "\A3\ui_f\data\gui\rsc\rscdisplaymain\menu_options_ca.paa", _ink] call EFUNC(tacpad,drawIcon);
 
+private _labelX = _iconX + _iconW + _pad * 0.5;
 [
-    _body, [_cellX + _pad * 2 + _iconW, _cellY, _cellW - _iconW - _pad * 3, _cellH],
+    _body, [_labelX, _cellY, _cellX + _cellW - _labelX - _pad * 0.5, _cellH],
     "SETTINGS", _ink, _labelSize, true
 ] call EFUNC(tacpad,drawText);
 

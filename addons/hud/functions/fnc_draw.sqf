@@ -31,6 +31,14 @@ if (isNull _display) then {
 };
 if (isNull _display) exitWith {};
 
+// NOTHING IS REBUILT BEHIND A SCREEN, AND THAT IS THE HALF OF THE ADMIN-CONSOLE
+// FIX THAT MATTERS. The loop below deletes and recreates the contents of both
+// slots; run while a dialog is open, every pass put fresh controls back on top
+// of it - which is why the SCANNER tile printed over the console's own rows
+// however the slots were hidden. FUNC(setShown) redraws on the way back, so a
+// skipped pass here costs nothing but the work.
+if ([] call FUNC(hidden)) exitWith {};
+
 ([] call EFUNC(tacpad,theme)) params ["_ground", "_ink", "_accent", "_line"];
 
 {

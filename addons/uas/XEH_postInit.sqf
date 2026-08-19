@@ -9,6 +9,11 @@ GVAR(patrols) = createHashMap;
 // Sides whose drones ALiVE declined to profile, so the reason is logged once
 // rather than once per airframe. See FUNC(topUp).
 GVAR(unprofilable) = [];
+// side text -> how many patrols FUNC(standDown) took back on the last tick.
+// FUNC(planPatrols) spends it as extra launches and clears it: ground that
+// emptied because everybody drove away refills at the speed it emptied, while
+// ATTRITION still comes back as the one-a-tick drip it was made to be.
+GVAR(standDownCredit) = createHashMap;
 // Sides skipped for being on the players' team, said once each rather than
 // every planning tick. See FUNC(planPatrols).
 GVAR(friendlySaid) = [];

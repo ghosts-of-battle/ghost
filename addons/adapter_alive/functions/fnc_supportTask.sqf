@@ -57,6 +57,16 @@ _prm params [["_radius", 500], ["_alt", 150], ["_roeIdx", 0]];
 
 INFO_4("supportTask: asset '%1' task '%2' pos %3 prm %4",_assetId,_task,_pos,_prm);
 
+// A REGISTERED PROVIDER OWNS ITS OWN IDS - see the note in FUNC(supportAssets).
+// Checked before anything ALiVE, because the dispatch below defaults an
+// unrecognised type to transport and would otherwise hand a ghost asset's
+// order to ALiVE's transport array.
+private _prefix = (_assetId splitString ":") param [0, ""];
+private _provider = (missionNamespace getVariable [QGVAR(providers), createHashMap]) getOrDefault [_prefix, []];
+if (_provider isNotEqualTo []) exitWith {
+    [_assetId, _task, _pos, _prm] call (_provider param [1, {[false, "that provider cannot be tasked"]}])
+};
+
 if (isNil "NEO_radioLogic") exitWith {
     WARNING("supportTask: refused - NEO_radioLogic is nil, combat support is not running");
     [false, "ALiVE combat support is not running"]

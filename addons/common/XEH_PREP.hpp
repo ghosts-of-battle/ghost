@@ -42,6 +42,7 @@ PREP(playerSides);
 PREP(lambsOff);
 PREP(sideToText);
 PREP(sideFromText);
+PREP(sideOfFaction);
 PREP(contactReport);
 PREP(contactGet);
 PREP(contactBest);

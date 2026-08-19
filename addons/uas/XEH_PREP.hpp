@@ -9,3 +9,5 @@ PREP(respondTo);
 PREP(moduleController);
 PREP(start);
 PREP(livePatrols);
+PREP(playerNear);
+PREP(standDown);

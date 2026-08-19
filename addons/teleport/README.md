@@ -1,43 +1,45 @@
-# ghost_teleport
+# Teleport
 
-Teleport points: an object anyone on the right side can walk up to and be moved
-from, with a map-and-list menu for choosing where.
+`ghost_teleport`
 
-**Reeveli wrote this system.** It came into ghost from the Roomba mission's
-`scripts\Rev_teleport`, function for function. The names are ghost's now; the
-design and the code are his.
+The menu. IDCs are ghost's own block rather than the 7000s the mission version used - 7000 is inside the range other people's dialogs sit in.
 
-## Using it
+<!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
 
-A point is any object:
+## Requires
 
-```sqf
-[this, "Staging area", west] call ghost_teleport_fnc_addPoint;
-```
+- `ghost_main`
+- `ghost_notify`
+- `cba_settings` _(external)_
+- `cba_xeh` _(external)_
 
-in an Eden init field, or from Zeus with **Ghosts of Battle > Add teleport
-point** if ZEN is loaded. The point carries a "Teleport" action, shown only to
-the side it was made for, and taken off the list if the object is destroyed.
+Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking the load order when something above is absent.
 
-Open the menu from anywhere with:
+## Ships
 
-```sqf
-[] call ghost_teleport_fnc_open;
-```
+11 functions.
 
-## Settings
+## CBA settings
 
-CBA, under **Ghosts of Battle > Teleport**:
+| Setting | Type | Name |
+|---|---|---|
+| `ghost_teleport_actionRadius` | SLIDER | Action visibility radius |
+| `ghost_teleport_actionTime` | SLIDER | Teleportation time |
 
-- **Action visibility radius** - how close you must be for the action to show
-- **Teleportation time** - how long the move and its fade last
+## Functions
 
-## Notes
+<details><summary>11</summary>
 
-- ZEN is optional. Without it the Zeus modules are not registered and
-  everything else works unchanged.
-- The point list is published, so it survives JIP without a handshake.
-- The old `Rev_tp_fnc_*` names are **not** aliased. They were, while the Roomba
-  mission.sqm was binarised; it is text now and calls the ghost names. Nine
-  other missions still ship Reeveli's originals and define those names
-  themselves, so a mod-side alias would overwrite a mission's own copy.
+- `ghost_teleport_fnc_addAction`
+- `ghost_teleport_fnc_addPoint`
+- `ghost_teleport_fnc_deletePoint`
+- `ghost_teleport_fnc_listCheck`
+- `ghost_teleport_fnc_onButtonClick`
+- `ghost_teleport_fnc_onLBSelChanged`
+- `ghost_teleport_fnc_onLoad`
+- `ghost_teleport_fnc_open`
+- `ghost_teleport_fnc_teleport`
+- `ghost_teleport_fnc_zenDialog`
+- `ghost_teleport_fnc_zenModules`
+
+</details>

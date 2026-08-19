@@ -30,6 +30,34 @@ dev box the flag was never set, so every `#ghost` command was silently swallowed
 Because the surface is deliberately silent to non-admins, that looks exactly like
 a broken mod rather than a permission you have not got.
 
+## The pre-spawn gate
+
+`taorGate` answers one question — *may this side put something at this
+position?* — for every system that spawns at a computed position, because
+wrong-side sightings kept coming back one addon at a time and the answer belongs
+in one place.
+
+The rule has two halves, and which half applies depends on whether the side
+declared any ground of its own:
+
+| | |
+|---|---|
+| **has a TAOR** | inside it, minus its own blacklist markers. Overlaps with
+ other sides' TAORs are *kept* — an insurgency draws the insurgents' ground over
+ the players' on purpose, and subtracting it leaves them nowhere to operate |
+| **has none** | the whole map, minus everybody else's hostile ground. This is
+ the hole the gate was written to close: an undeclared side — usually the
+ players' — used to be waved through anywhere, red TAOR included |
+
+A refusal names the caller in the RPT, so the log says which system held its
+fire and where. Bulk callers filtering a whole list pass `_quiet` and report a
+count instead.
+
+`sideOfFaction` is the other half of `sideFromText`: a faction CLASS
+(`OPF_T_F`) turned back into a side, read from `CfgFactionClasses`. ALiVE's
+modules hold factions where this mod's modules hold side names, and telling
+whose ground is whose starts there.
+
 <!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
 
 ## Requires
@@ -38,7 +66,7 @@ a broken mod rather than a permission you have not got.
 
 ## Ships
 
-47 functions.
+49 functions.
 
 ## CBA settings
 
@@ -49,7 +77,7 @@ a broken mod rather than a permission you have not got.
 
 ## Functions
 
-<details><summary>47</summary>
+<details><summary>49</summary>
 
 - `ghost_common_fnc_addDebugCommand`
 - `ghost_common_fnc_addItem`
@@ -83,6 +111,7 @@ a broken mod rather than a permission you have not got.
 - `ghost_common_fnc_onAlert`
 - `ghost_common_fnc_onModalClose`
 - `ghost_common_fnc_onModalOpen`
+- `ghost_common_fnc_playerSides`
 - `ghost_common_fnc_putContainerInVehicle`
 - `ghost_common_fnc_readConfigToNamespace`
 - `ghost_common_fnc_realisticGrid`
@@ -94,6 +123,7 @@ a broken mod rather than a permission you have not got.
 - `ghost_common_fnc_setCtrlHeightToText`
 - `ghost_common_fnc_setDatalink`
 - `ghost_common_fnc_sideFromText`
+- `ghost_common_fnc_sideOfFaction`
 - `ghost_common_fnc_sideToText`
 - `ghost_common_fnc_sortGroupsBySide`
 - `ghost_common_fnc_taorGate`

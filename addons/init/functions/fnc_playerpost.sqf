@@ -21,12 +21,34 @@ call EFUNC(init,vehicle);
 // staging
 call EFUNC(init,staging);
 
-// messages
-call EFUNC(init,message);
+// messages and diary records
+//
+// THE WAIT LIVES HERE, NOT IN THE TWO FUNCTIONS. Both need a real `player`,
+// and this runs from XEH postInit - an UNSCHEDULED context, where waitUntil
+// does not wait, it throws. Each function used to open with its own
+// waitUntil; each threw "Suspending not allowed in this context", each had
+// its wait abandoned, and each then ran anyway against a null player. The
+// proof was in every RPT, one line below the error:
+//
+//     [ghost] (initDiary) INFO: Applying Diary Records to <NULL-object>
+//
+// CBA's waitUntilAndExecute does the same wait from a per-frame handler,
+// which needs no suspension - the pattern this file already uses for ACRE
+// and TFAR below. `profileName` is folded in because FUNC(diary) wanted it
+// too. A dedicated server never has a player, so hasInterface skips both
+// outright rather than parking a handler that can never fire.
+if (hasInterface) then {
+    [
+        {!isNull player && {player == player} && {profileName != ""}},
+        {
+            call EFUNC(init,message);
 
-// diary records
-if (EGVAR(Settings,showDiaryRecords)) then {
-    call EFUNC(init,diary);
+            if (EGVAR(Settings,showDiaryRecords)) then {
+                call EFUNC(init,diary);
+            };
+        },
+        []
+    ] call CBA_fnc_waitUntilAndExecute;
 };
 
 onPlayerConnected { 
