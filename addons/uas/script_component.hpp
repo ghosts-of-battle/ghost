@@ -50,7 +50,7 @@
 // Measured to the ORBIT CENTRE, not to the airframe - a patrol wanders 800 m
 // around its objective, and measuring the aircraft would have a drone standing
 // itself down and back up as it flew the far side of its own circle.
-#define UAS_PLAYER_RANGE    4000
+#define UAS_PLAYER_RANGE    3200
 
 // AND HOW CLOSE COUNTS AS BEING WATCHED. A patrol on the near side of a circle
 // whose centre has just gone out of range is still a real aircraft in somebody's

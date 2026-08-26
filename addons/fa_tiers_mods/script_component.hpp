@@ -1,0 +1,7 @@
+#define COMPONENT fa_tiers_mods
+#define COMPONENT_BEAUTIFIED Future Ammunition - Tiers (mods)
+#include "\z\ghost\addons\main\script_mod.hpp"
+
+// #define DEBUG_MODE_FULL
+
+#include "\z\ghost\addons\main\script_macros.hpp"

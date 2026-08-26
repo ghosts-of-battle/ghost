@@ -32,13 +32,29 @@ CHECKS = [
     # make and are cheap to break by accident - see the file's header.
     ("invariants", [sys.executable, "tools/check_invariants.py"]),
     ("plumbing", [sys.executable, "tools/check_plumbing.py"]),
+    # Inheritance across addon boundaries. A parent that is not declared in the
+    # same config builds a class with NO parent, silently.
+    ("externals", [sys.executable, "tools/check_externals.py"]),
+    # CfgPatches units[]/weapons[] against the classes that exist. The same
+    # drift has shipped three times; HEMTT calls it L-C15.
+    ("cfgpatches", [sys.executable, "tools/check_patches.py"]),
 ]
 
 
 def main():
     failed = []
+    skipped = []
     for name, cmd in CHECKS:
-        result = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True)
+        try:
+            result = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True)
+        except FileNotFoundError:
+            # A MISSING TOOL MUST NOT TAKE THE SUITE WITH IT. hemtt is not on
+            # every machine that touches this repo, and letting the exception
+            # escape meant one absent binary silently skipped all nine of the
+            # checks that were going to run after it.
+            skipped.append(name)
+            print("%-16s SKIPPED - %s is not on PATH" % (name, cmd[0]))
+            continue
         out = (result.stdout or "") + (result.stderr or "")
 
         # hemtt exits 0 on warnings, so its own exit code is not the whole story
@@ -52,10 +68,12 @@ def main():
             print("%-16s ok" % name)
 
     print()
+    if skipped:
+        print("SKIPPED: %s - not run, so not proven" % ", ".join(skipped))
     if failed:
         print("FAILED: %s" % ", ".join(failed))
         return 1
-    print("all checks passed")
+    print("all checks that could run passed" if skipped else "all checks passed")
     return 0
 
 

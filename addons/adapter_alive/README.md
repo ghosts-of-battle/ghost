@@ -57,11 +57,11 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-24 functions.
+25 functions.
 
 ## Functions
 
-<details><summary>24</summary>
+<details><summary>25</summary>
 
 - `ghost_adapter_alive_fnc_aaTargets`
 - `ghost_adapter_alive_fnc_artyTargets`
@@ -75,6 +75,7 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 - `ghost_adapter_alive_fnc_postReport`
 - `ghost_adapter_alive_fnc_probe`
 - `ghost_adapter_alive_fnc_profileAlive`
+- `ghost_adapter_alive_fnc_profileFlags`
 - `ghost_adapter_alive_fnc_profileGroup`
 - `ghost_adapter_alive_fnc_profileIdOf`
 - `ghost_adapter_alive_fnc_profileIgnore`

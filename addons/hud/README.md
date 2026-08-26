@@ -13,6 +13,14 @@ grids, so they appear in the game's own Layout editor as boxes you can move
 and only you know which one you are looking at. The size persists in your profile
 like every other element on that screen.
 
+**Out of the box each slot is the base game's own Custom Info panel** - ten grid
+cells by ten, at the left and right edges, which is exactly what
+`IGUI_GRID_CUSTOMINFO_WDef` / `_HDef` and the two `CUSTOMINFO*_XDef` / `_YDef`
+say in the game's `defineCommonGrids.inc`. Nothing inside a slot stretches to
+fill it: rows are the suite's own row height and shrink only when a slot is made
+too short to hold them, so a box left at its default size reads as a block of
+data rather than three lines spread down a panel.
+
 The registry is **`CfgUIGrids >> IGUI`**, in two halves:
 
 ```cpp

@@ -232,6 +232,13 @@ class GVAR(console) {
 
         // ARSENAL had no handler in the mission at all - the button was there
         // and did nothing. admp_fnc_arsenal was written and never wired.
+        //
+        // THE ARGUMENT IS NOT OPTIONAL. fn_arsenal.sqf opens on
+        // `if (_shift)` with no default, so a bare [] left _shift nil and the
+        // click died on that line every time - the button LOOKED wired and
+        // still did nothing. False = the ACE arsenal, which is the one this
+        // mission runs; the BI path behind `true` stays for a caller that
+        // wants it.
         class UTILITIES_ARSENAL: RscADMPButton {
             idc = IDC_ADMINPANEL_UTILITIES_ARSENAL;
             text = "ARSENAL";
@@ -239,7 +246,7 @@ class GVAR(console) {
             y = "0.522 * safezoneH + safezoneY";
             w = "0.082 * safezoneW";
             h = "0.032 * safezoneH";
-            onButtonClick = "[] call admp_fnc_arsenal;";
+            onButtonClick = "[false] call admp_fnc_arsenal;";
         };
 
         // ---------------------------------------------------- admin actions --

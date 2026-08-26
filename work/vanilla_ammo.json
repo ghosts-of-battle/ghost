@@ -1,0 +1,3717 @@
+{
+"AT_Mine_155mm_AMOS_range": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "Mo_ATMineRange"
+},
+"B_127x108_APDS": {
+"airFriction": -0.00036000001,
+"caliber": 3.5999999,
+"deflecting": 15.0,
+"hit": 60.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1060.0
+},
+"B_127x108_Ball": {
+"airFriction": -0.00085999997,
+"caliber": 2.8,
+"deflecting": 15.0,
+"hit": 35.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 820.0
+},
+"B_127x33_Ball": {
+"airFriction": -0.0020000001,
+"caliber": 1.0,
+"deflecting": 25.0,
+"hit": 7.5,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 420.0
+},
+"B_127x54_Ball": {
+"airFriction": -0.0014,
+"caliber": 4.5999999,
+"deflecting": 15.0,
+"hit": 20.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 270.0
+},
+"B_127x99_Ball": {
+"airFriction": -0.00085999997,
+"caliber": 2.5999999,
+"deflecting": 15.0,
+"hit": 30.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 880.0
+},
+"B_127x99_Ball_Tracer_Green": {
+"airFriction": -0.00085999997,
+"caliber": 2.5999999,
+"deflecting": 15.0,
+"hit": 30.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 880.0
+},
+"B_127x99_Ball_Tracer_Red": {
+"airFriction": -0.00085999997,
+"caliber": 2.5999999,
+"deflecting": 15.0,
+"hit": 30.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 880.0
+},
+"B_127x99_Ball_Tracer_Yellow": {
+"airFriction": -0.00085999997,
+"caliber": 2.5999999,
+"deflecting": 15.0,
+"hit": 30.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 880.0
+},
+"B_127x99_HEIAP": {
+"airFriction": -0.00060000003,
+"caliber": 3.2,
+"deflecting": 15.0,
+"explosive": 0.40000001,
+"hit": 55.0,
+"indirectHit": 3.0,
+"indirectHitRange": 2.0,
+"typicalSpeed": 900.0,
+"warheadName": "HE"
+},
+"B_127x99_HEIAP_Tracer_Red": {
+"airFriction": -0.00060000003,
+"caliber": 3.2,
+"deflecting": 15.0,
+"explosive": 0.40000001,
+"hit": 55.0,
+"indirectHit": 3.0,
+"indirectHitRange": 2.0,
+"typicalSpeed": 900.0,
+"warheadName": "HE"
+},
+"B_127x99_SLAP": {
+"airFriction": -0.00036000001,
+"caliber": 3.4000001,
+"deflecting": 15.0,
+"hit": 50.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1215.0
+},
+"B_127x99_SLAP_Tracer_Green": {
+"airFriction": -0.00036000001,
+"caliber": 3.4000001,
+"deflecting": 15.0,
+"hit": 50.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1215.0
+},
+"B_127x99_SLAP_Tracer_Red": {
+"airFriction": -0.00036000001,
+"caliber": 3.4000001,
+"deflecting": 15.0,
+"hit": 50.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1215.0
+},
+"B_127x99_SLAP_Tracer_Yellow": {
+"airFriction": -0.00036000001,
+"caliber": 3.4000001,
+"deflecting": 15.0,
+"hit": 50.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1215.0
+},
+"B_12Gauge_HD_Pellets_Submunition": {
+"caliber": 1.0,
+"deflecting": 15.0,
+"hit": 20.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"submunitionAmmo": "B_12Gauge_Pellets_Submunition_Deploy"
+},
+"B_12Gauge_Pellets": {
+"airFriction": -0.0080000004,
+"caliber": 1.0,
+"deflecting": 30.0,
+"hit": 2.0,
+"indirectHit": 2.0,
+"indirectHitRange": 0.40000001,
+"typicalSpeed": 400.0
+},
+"B_12Gauge_Pellets_Submunition": {
+"caliber": 1.0,
+"deflecting": 15.0,
+"hit": 20.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"submunitionAmmo": "B_12Gauge_Pellets_Submunition_Deploy"
+},
+"B_12Gauge_Pellets_Submunition_Deploy": {
+"airFriction": -0.0066999998,
+"caliber": 1.0,
+"deflecting": 35.0,
+"hit": 6.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 360.0
+},
+"B_12Gauge_Slug": {
+"airFriction": -0.0080000004,
+"caliber": 3.0,
+"deflecting": 30.0,
+"hit": 42.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 600.0
+},
+"B_12Gauge_Slug_NoCartridge": {
+"airFriction": -0.0080000004,
+"caliber": 3.0,
+"deflecting": 30.0,
+"hit": 42.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 600.0
+},
+"B_19mm_HE": {
+"airFriction": -0.00060000003,
+"caliber": 2.0,
+"deflecting": 5.0,
+"explosive": 0.80000001,
+"hit": 20.0,
+"indirectHit": 6.0,
+"indirectHitRange": 2.0,
+"typicalSpeed": 400.0,
+"warheadName": "HE"
+},
+"B_20mm": {
+"airFriction": -0.00078,
+"caliber": 3.4000001,
+"deflecting": 15.0,
+"explosive": 0.40000001,
+"hit": 60.0,
+"indirectHit": 6.0,
+"indirectHitRange": 1.6,
+"typicalSpeed": 1030.0,
+"warheadName": "HE"
+},
+"B_20mm_AP": {
+"airFriction": -0.00042,
+"caliber": 3.4000001,
+"deflecting": 15.0,
+"hit": 60.0,
+"indirectHit": 8.0,
+"indirectHitRange": 0.2,
+"typicalSpeed": 1120.0,
+"warheadName": "AP"
+},
+"B_20mm_Tracer_Red": {
+"airFriction": -0.00078,
+"caliber": 3.4000001,
+"deflecting": 15.0,
+"explosive": 0.40000001,
+"hit": 60.0,
+"indirectHit": 6.0,
+"indirectHitRange": 1.6,
+"typicalSpeed": 1030.0,
+"warheadName": "HE"
+},
+"B_25mm": {
+"airFriction": -0.00076000002,
+"caliber": 3.8,
+"deflecting": 15.0,
+"explosive": 0.40000001,
+"hit": 70.0,
+"indirectHit": 6.0,
+"indirectHitRange": 0.40000001,
+"typicalSpeed": 1030.0,
+"warheadName": "AP"
+},
+"B_30mm_AP": {
+"airFriction": -0.00042,
+"caliber": 4.1999998,
+"deflecting": 15.0,
+"hit": 80.0,
+"indirectHit": 8.0,
+"indirectHitRange": 0.2,
+"typicalSpeed": 1120.0,
+"warheadName": "AP"
+},
+"B_30mm_APFSDS": {
+"airFriction": -0.00042,
+"caliber": 6.0,
+"deflecting": 15.0,
+"hit": 120.0,
+"indirectHit": 8.0,
+"indirectHitRange": 0.2,
+"typicalSpeed": 1320.0,
+"warheadName": "AP"
+},
+"B_30mm_APFSDS_Tracer_Green": {
+"airFriction": -0.00042,
+"caliber": 6.0,
+"deflecting": 15.0,
+"hit": 120.0,
+"indirectHit": 8.0,
+"indirectHitRange": 0.2,
+"typicalSpeed": 1320.0,
+"warheadName": "AP"
+},
+"B_30mm_APFSDS_Tracer_Red": {
+"airFriction": -0.00042,
+"caliber": 6.0,
+"deflecting": 15.0,
+"hit": 120.0,
+"indirectHit": 8.0,
+"indirectHitRange": 0.2,
+"typicalSpeed": 1320.0,
+"warheadName": "AP"
+},
+"B_30mm_APFSDS_Tracer_Yellow": {
+"airFriction": -0.00042,
+"caliber": 6.0,
+"deflecting": 15.0,
+"hit": 120.0,
+"indirectHit": 8.0,
+"indirectHitRange": 0.2,
+"typicalSpeed": 1320.0,
+"warheadName": "AP"
+},
+"B_30mm_AP_Tracer_Green": {
+"airFriction": -0.00042,
+"caliber": 4.1999998,
+"deflecting": 15.0,
+"hit": 80.0,
+"indirectHit": 8.0,
+"indirectHitRange": 0.2,
+"typicalSpeed": 1120.0,
+"warheadName": "AP"
+},
+"B_30mm_AP_Tracer_Red": {
+"airFriction": -0.00042,
+"caliber": 4.1999998,
+"deflecting": 15.0,
+"hit": 80.0,
+"indirectHit": 8.0,
+"indirectHitRange": 0.2,
+"typicalSpeed": 1120.0,
+"warheadName": "AP"
+},
+"B_30mm_AP_Tracer_Yellow": {
+"airFriction": -0.00042,
+"caliber": 4.1999998,
+"deflecting": 15.0,
+"hit": 80.0,
+"indirectHit": 8.0,
+"indirectHitRange": 0.2,
+"typicalSpeed": 1120.0,
+"warheadName": "AP"
+},
+"B_30mm_HE": {
+"airFriction": -0.00036000001,
+"caliber": 1.4,
+"deflecting": 5.0,
+"explosive": 0.80000001,
+"hit": 30.0,
+"indirectHit": 8.0,
+"indirectHitRange": 3.0,
+"typicalSpeed": 960.0,
+"warheadName": "HE"
+},
+"B_30mm_HE_Tracer_Green": {
+"airFriction": -0.00036000001,
+"caliber": 1.4,
+"deflecting": 5.0,
+"explosive": 0.80000001,
+"hit": 30.0,
+"indirectHit": 8.0,
+"indirectHitRange": 3.0,
+"typicalSpeed": 960.0,
+"warheadName": "HE"
+},
+"B_30mm_HE_Tracer_Red": {
+"airFriction": -0.00036000001,
+"caliber": 1.4,
+"deflecting": 5.0,
+"explosive": 0.80000001,
+"hit": 30.0,
+"indirectHit": 8.0,
+"indirectHitRange": 3.0,
+"typicalSpeed": 960.0,
+"warheadName": "HE"
+},
+"B_30mm_HE_Tracer_Yellow": {
+"airFriction": -0.00036000001,
+"caliber": 1.4,
+"deflecting": 5.0,
+"explosive": 0.80000001,
+"hit": 30.0,
+"indirectHit": 8.0,
+"indirectHitRange": 3.0,
+"typicalSpeed": 960.0,
+"warheadName": "HE"
+},
+"B_30mm_MP": {
+"airFriction": -0.00036000001,
+"caliber": 4.4000001,
+"deflecting": 10.0,
+"explosive": 0.60000002,
+"hit": 90.0,
+"indirectHit": 4.0,
+"indirectHitRange": 2.0,
+"typicalSpeed": 1070.0,
+"warheadName": "HEAT"
+},
+"B_30mm_MP_Tracer_Green": {
+"airFriction": -0.00036000001,
+"caliber": 4.4000001,
+"deflecting": 10.0,
+"explosive": 0.60000002,
+"hit": 90.0,
+"indirectHit": 4.0,
+"indirectHitRange": 2.0,
+"typicalSpeed": 1070.0,
+"warheadName": "HEAT"
+},
+"B_30mm_MP_Tracer_Red": {
+"airFriction": -0.00036000001,
+"caliber": 4.4000001,
+"deflecting": 10.0,
+"explosive": 0.60000002,
+"hit": 90.0,
+"indirectHit": 4.0,
+"indirectHitRange": 2.0,
+"typicalSpeed": 1070.0,
+"warheadName": "HEAT"
+},
+"B_30mm_MP_Tracer_Yellow": {
+"airFriction": -0.00036000001,
+"caliber": 4.4000001,
+"deflecting": 10.0,
+"explosive": 0.60000002,
+"hit": 90.0,
+"indirectHit": 4.0,
+"indirectHitRange": 2.0,
+"typicalSpeed": 1070.0,
+"warheadName": "HEAT"
+},
+"B_338_Ball": {
+"airFriction": -0.00060999999,
+"caliber": 2.0,
+"deflecting": 15.0,
+"hit": 16.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 890.0
+},
+"B_338_NM_Ball": {
+"airFriction": -0.00060999999,
+"caliber": 1.8,
+"deflecting": 15.0,
+"hit": 14.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 760.0
+},
+"B_35mm_AA": {
+"airFriction": -0.00050000002,
+"caliber": 2.8,
+"deflecting": 0.0,
+"explosive": 0.60000002,
+"hit": 60.0,
+"indirectHit": 25.0,
+"indirectHitRange": 2.4000001,
+"typicalSpeed": 960.0,
+"warheadName": "HE"
+},
+"B_35mm_AA_Tracer_Green": {
+"airFriction": -0.00050000002,
+"caliber": 2.8,
+"deflecting": 0.0,
+"explosive": 0.60000002,
+"hit": 60.0,
+"indirectHit": 25.0,
+"indirectHitRange": 2.4000001,
+"typicalSpeed": 960.0,
+"warheadName": "HE"
+},
+"B_35mm_AA_Tracer_Red": {
+"airFriction": -0.00050000002,
+"caliber": 2.8,
+"deflecting": 0.0,
+"explosive": 0.60000002,
+"hit": 60.0,
+"indirectHit": 25.0,
+"indirectHitRange": 2.4000001,
+"typicalSpeed": 960.0,
+"warheadName": "HE"
+},
+"B_35mm_AA_Tracer_Yellow": {
+"airFriction": -0.00050000002,
+"caliber": 2.8,
+"deflecting": 0.0,
+"explosive": 0.60000002,
+"hit": 60.0,
+"indirectHit": 25.0,
+"indirectHitRange": 2.4000001,
+"typicalSpeed": 960.0,
+"warheadName": "HE"
+},
+"B_408_Ball": {
+"airFriction": -0.00047999999,
+"caliber": 2.4000001,
+"deflecting": 15.0,
+"hit": 24.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 910.0
+},
+"B_40mm_APFSDS": {
+"airFriction": -0.00012,
+"caliber": 8.0,
+"deflecting": 15.0,
+"hit": 150.0,
+"indirectHit": 8.0,
+"indirectHitRange": 0.2,
+"typicalSpeed": 1140.0,
+"warheadName": "AP"
+},
+"B_40mm_APFSDS_Tracer_Green": {
+"airFriction": -0.00012,
+"caliber": 8.0,
+"deflecting": 15.0,
+"hit": 150.0,
+"indirectHit": 8.0,
+"indirectHitRange": 0.2,
+"typicalSpeed": 1140.0,
+"warheadName": "AP"
+},
+"B_40mm_APFSDS_Tracer_Red": {
+"airFriction": -0.00012,
+"caliber": 8.0,
+"deflecting": 15.0,
+"hit": 150.0,
+"indirectHit": 8.0,
+"indirectHitRange": 0.2,
+"typicalSpeed": 1140.0,
+"warheadName": "AP"
+},
+"B_40mm_APFSDS_Tracer_Yellow": {
+"airFriction": -0.00012,
+"caliber": 8.0,
+"deflecting": 15.0,
+"hit": 150.0,
+"indirectHit": 8.0,
+"indirectHitRange": 0.2,
+"typicalSpeed": 1140.0,
+"warheadName": "AP"
+},
+"B_40mm_GPR": {
+"airFriction": -0.00060000003,
+"caliber": 4.5999999,
+"deflecting": 10.0,
+"explosive": 0.80000001,
+"hit": 70.0,
+"indirectHit": 8.0,
+"indirectHitRange": 4.0,
+"typicalSpeed": 960.0,
+"warheadName": "AP"
+},
+"B_40mm_GPR_Tracer_Green": {
+"airFriction": -0.00060000003,
+"caliber": 4.5999999,
+"deflecting": 10.0,
+"explosive": 0.80000001,
+"hit": 70.0,
+"indirectHit": 8.0,
+"indirectHitRange": 4.0,
+"typicalSpeed": 960.0,
+"warheadName": "AP"
+},
+"B_40mm_GPR_Tracer_Red": {
+"airFriction": -0.00060000003,
+"caliber": 4.5999999,
+"deflecting": 10.0,
+"explosive": 0.80000001,
+"hit": 70.0,
+"indirectHit": 8.0,
+"indirectHitRange": 4.0,
+"typicalSpeed": 960.0,
+"warheadName": "AP"
+},
+"B_40mm_GPR_Tracer_Yellow": {
+"airFriction": -0.00060000003,
+"caliber": 4.5999999,
+"deflecting": 10.0,
+"explosive": 0.80000001,
+"hit": 70.0,
+"indirectHit": 8.0,
+"indirectHitRange": 4.0,
+"typicalSpeed": 960.0,
+"warheadName": "AP"
+},
+"B_45ACP_Ball": {
+"airFriction": -0.0018,
+"caliber": 1.4,
+"deflecting": 25.0,
+"hit": 5.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 280.0
+},
+"B_45ACP_Ball_Green": {
+"airFriction": -0.0018,
+"caliber": 1.4,
+"deflecting": 25.0,
+"hit": 5.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 280.0
+},
+"B_45ACP_Ball_Yellow": {
+"airFriction": -0.0018,
+"caliber": 1.4,
+"deflecting": 25.0,
+"hit": 5.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 280.0
+},
+"B_50BW_Ball_F": {
+"airFriction": -0.0020000001,
+"caliber": 4.1999998,
+"deflecting": 15.0,
+"hit": 22.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 550.0
+},
+"B_545x39_Ball_F": {
+"airFriction": -0.0013,
+"caliber": 0.60000002,
+"deflecting": 20.0,
+"hit": 8.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 880.0
+},
+"B_545x39_Ball_Green_F": {
+"airFriction": -0.0013,
+"caliber": 0.60000002,
+"deflecting": 20.0,
+"hit": 8.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 880.0
+},
+"B_556x45_Ball": {
+"airFriction": -0.0012000001,
+"caliber": 0.86956501,
+"deflecting": 15.0,
+"hit": 9.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 920.0
+},
+"B_556x45_Ball_Tracer_Green": {
+"airFriction": -0.0012000001,
+"caliber": 0.86956501,
+"deflecting": 15.0,
+"hit": 9.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 920.0
+},
+"B_556x45_Ball_Tracer_Red": {
+"airFriction": -0.0012000001,
+"caliber": 0.86956501,
+"deflecting": 15.0,
+"hit": 9.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 920.0
+},
+"B_556x45_Ball_Tracer_Yellow": {
+"airFriction": -0.0012000001,
+"caliber": 0.86956501,
+"deflecting": 15.0,
+"hit": 9.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 920.0
+},
+"B_556x45_dual": {
+"airFriction": -0.02,
+"caliber": 0.86956501,
+"deflecting": 15.0,
+"hit": 9.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 270.0
+},
+"B_56x15_dual": {
+"airFriction": -0.0018,
+"caliber": 2.0,
+"deflecting": 25.0,
+"hit": 8.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0
+},
+"B_570x28_Ball": {
+"airFriction": -0.001412,
+"caliber": 0.55944097,
+"deflecting": 20.0,
+"hit": 8.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 715.0
+},
+"B_580x42_Ball_F": {
+"airFriction": -0.0011,
+"caliber": 0.89999998,
+"deflecting": 20.0,
+"hit": 9.3999996,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 870.0
+},
+"B_65x39_Case": {
+"airFriction": -0.00089999998,
+"caliber": 1.0,
+"deflecting": 15.0,
+"hit": 10.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 820.0
+},
+"B_65x39_Case_green": {
+"airFriction": -0.00089999998,
+"caliber": 1.0,
+"deflecting": 15.0,
+"hit": 10.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 820.0
+},
+"B_65x39_Case_yellow": {
+"airFriction": -0.00089999998,
+"caliber": 1.0,
+"deflecting": 15.0,
+"hit": 10.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 820.0
+},
+"B_65x39_Caseless": {
+"airFriction": -0.00089999998,
+"caliber": 1.0,
+"deflecting": 15.0,
+"hit": 10.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 820.0
+},
+"B_65x39_Caseless_green": {
+"airFriction": -0.00089999998,
+"caliber": 1.0,
+"deflecting": 15.0,
+"hit": 10.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 820.0
+},
+"B_65x39_Caseless_yellow": {
+"airFriction": -0.00089999998,
+"caliber": 1.0,
+"deflecting": 15.0,
+"hit": 10.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 820.0
+},
+"B_65x39_Minigun_Caseless": {
+"airFriction": -0.00089999998,
+"caliber": 3.2,
+"deflecting": 25.0,
+"explosive": 0.0,
+"hit": 10.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"submunitionAmmo": "B_65x39_Minigun_Caseless_Red_splash",
+"typicalSpeed": 820.0
+},
+"B_65x39_Minigun_Caseless_Green_splash": {
+"airFriction": -0.00089999998,
+"caliber": 3.2,
+"deflecting": 25.0,
+"hit": 10.0,
+"indirectHit": 1.0,
+"indirectHitRange": 2.0,
+"typicalSpeed": 820.0
+},
+"B_65x39_Minigun_Caseless_Red_splash": {
+"airFriction": -0.00089999998,
+"caliber": 3.2,
+"deflecting": 25.0,
+"hit": 10.0,
+"indirectHit": 1.0,
+"indirectHitRange": 2.0,
+"typicalSpeed": 820.0
+},
+"B_65x39_Minigun_Caseless_Yellow_splash": {
+"airFriction": -0.00089999998,
+"caliber": 3.2,
+"deflecting": 25.0,
+"hit": 10.0,
+"indirectHit": 1.0,
+"indirectHitRange": 2.0,
+"typicalSpeed": 820.0
+},
+"B_762x39_Ball_F": {
+"airFriction": -0.0016,
+"caliber": 1.2,
+"deflecting": 15.0,
+"hit": 11.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 730.0
+},
+"B_762x39_Ball_Green_F": {
+"airFriction": -0.0016,
+"caliber": 1.2,
+"deflecting": 15.0,
+"hit": 11.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 730.0
+},
+"B_762x51_Ball": {
+"airFriction": -0.001,
+"caliber": 1.6,
+"deflecting": 15.0,
+"hit": 11.6,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 800.0
+},
+"B_762x51_Minigun_Tracer_Red": {
+"airFriction": -0.001,
+"caliber": 3.5999999,
+"deflecting": 25.0,
+"explosive": 0.0,
+"hit": 11.6,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"submunitionAmmo": "B_762x51_Minigun_Tracer_Red_splash",
+"typicalSpeed": 800.0
+},
+"B_762x51_Minigun_Tracer_Red_splash": {
+"airFriction": -0.001,
+"caliber": 3.5999999,
+"deflecting": 25.0,
+"hit": 11.6,
+"indirectHit": 1.2,
+"indirectHitRange": 2.0,
+"typicalSpeed": 800.0
+},
+"B_762x51_Minigun_Tracer_Yellow": {
+"airFriction": -0.001,
+"caliber": 3.5999999,
+"deflecting": 25.0,
+"explosive": 0.0,
+"hit": 11.6,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"submunitionAmmo": "B_762x51_Minigun_Tracer_Yellow_splash",
+"typicalSpeed": 800.0
+},
+"B_762x51_Minigun_Tracer_Yellow_splash": {
+"airFriction": -0.001,
+"caliber": 3.5999999,
+"deflecting": 25.0,
+"hit": 11.6,
+"indirectHit": 1.2,
+"indirectHitRange": 2.0,
+"typicalSpeed": 800.0
+},
+"B_762x51_Tracer_Green": {
+"airFriction": -0.001,
+"caliber": 1.6,
+"deflecting": 15.0,
+"hit": 11.6,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 800.0
+},
+"B_762x51_Tracer_Red": {
+"airFriction": -0.001,
+"caliber": 1.6,
+"deflecting": 15.0,
+"hit": 11.6,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 800.0
+},
+"B_762x51_Tracer_Yellow": {
+"airFriction": -0.001,
+"caliber": 1.6,
+"deflecting": 15.0,
+"hit": 11.6,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 800.0
+},
+"B_762x54_Ball": {
+"airFriction": -0.0012000001,
+"caliber": 1.8,
+"deflecting": 15.0,
+"hit": 11.6,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 800.0
+},
+"B_762x54_Tracer_Green": {
+"airFriction": -0.0012000001,
+"caliber": 1.8,
+"deflecting": 15.0,
+"hit": 11.6,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 800.0
+},
+"B_762x54_Tracer_Red": {
+"airFriction": -0.0012000001,
+"caliber": 1.8,
+"deflecting": 15.0,
+"hit": 11.6,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 800.0
+},
+"B_762x54_Tracer_Yellow": {
+"airFriction": -0.0012000001,
+"caliber": 1.8,
+"deflecting": 15.0,
+"hit": 11.6,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 800.0
+},
+"B_93x64_Ball": {
+"airFriction": -0.00075000001,
+"caliber": 2.2,
+"deflecting": 15.0,
+"hit": 18.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 785.0
+},
+"B_9x21_Ball": {
+"airFriction": -0.0016,
+"caliber": 1.2,
+"deflecting": 25.0,
+"hit": 5.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 380.0
+},
+"B_9x21_Ball_Tracer_Green": {
+"airFriction": -0.0016,
+"caliber": 1.2,
+"deflecting": 25.0,
+"hit": 5.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 380.0
+},
+"B_9x21_Ball_Tracer_Red": {
+"airFriction": -0.0016,
+"caliber": 1.2,
+"deflecting": 25.0,
+"hit": 5.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 380.0
+},
+"B_9x21_Ball_Tracer_Yellow": {
+"airFriction": -0.0016,
+"caliber": 1.2,
+"deflecting": 25.0,
+"hit": 5.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 380.0
+},
+"B_IRStrobe": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 5.0,
+"indirectHit": 2.0,
+"indirectHitRange": 0.2
+},
+"B_coil_20g_spike": {
+"caliber": 10.0,
+"deflecting": 0.0,
+"hit": 120.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 6000.0
+},
+"B_coil_5g_spike": {
+"caliber": 10.0,
+"deflecting": 0.0,
+"hit": 30.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 3000.0
+},
+"Bo_Air_LGB": {
+"airFriction": 0.103,
+"deflecting": 0.0,
+"hit": 150.0,
+"indirectHit": 50.0,
+"indirectHitRange": 4.0,
+"maxControlRange": 6000.0,
+"maxSpeed": 450.0,
+"missileLockMaxDistance": 6000.0,
+"submunitionAmmo": "ammo_Penetrator_Scalpel",
+"warheadName": "TandemHEAT"
+},
+"Bo_Air_LGB_hidden": {
+"airFriction": 0.103,
+"deflecting": 0.0,
+"hit": 150.0,
+"indirectHit": 50.0,
+"indirectHitRange": 4.0,
+"maxControlRange": 6000.0,
+"maxSpeed": 450.0,
+"missileLockMaxDistance": 6000.0,
+"submunitionAmmo": "ammo_Penetrator_Scalpel",
+"warheadName": "TandemHEAT"
+},
+"Bo_FuelTank": {
+"airFriction": 0.079999998,
+"hit": 500.0,
+"indirectHit": 1100.0,
+"indirectHitRange": 12.0,
+"maxSpeed": 100.0
+},
+"Bo_GBU12_LGB": {
+"airFriction": 0.059999999,
+"hit": 5000.0,
+"indirectHit": 1100.0,
+"indirectHitRange": 12.0,
+"missileLockMaxDistance": 5000.0
+},
+"Bo_GBU12_LGB_MI10": {
+"airFriction": 0.059999999,
+"hit": 5000.0,
+"indirectHit": 1100.0,
+"indirectHitRange": 12.0,
+"missileLockMaxDistance": 5000.0
+},
+"Bo_Leaflets": {
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0
+},
+"Bo_Mk82": {
+"airFriction": 0.079999998,
+"hit": 5000.0,
+"indirectHit": 1100.0,
+"indirectHitRange": 12.0,
+"maxSpeed": 100.0
+},
+"Bo_Mk82_MI08": {
+"airFriction": 0.079999998,
+"hit": 5000.0,
+"indirectHit": 1100.0,
+"indirectHitRange": 12.0,
+"maxSpeed": 100.0
+},
+"BombCluster_01_Ammo_F": {
+"airFriction": 0.059999999,
+"hit": 5000.0,
+"indirectHit": 1100.0,
+"indirectHitRange": 12.0,
+"missileLockMaxDistance": 5000.0
+},
+"BombCluster_01_UXO1_deployMine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "BombCluster_01_UXO1_Ammo_F"
+},
+"BombCluster_01_UXO2_deployMine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "BombCluster_01_UXO2_Ammo_F"
+},
+"BombCluster_01_UXO3_deployMine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "BombCluster_01_UXO3_Ammo_F"
+},
+"BombCluster_01_UXO4_deployMine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "BombCluster_01_UXO4_Ammo_F"
+},
+"BombCluster_01_UXO_deploy": {
+"hit": 35.0,
+"indirectHit": 25.0,
+"indirectHitRange": 8.0
+},
+"BombCluster_02_Ammo_F": {
+"airFriction": 0.059999999,
+"hit": 5000.0,
+"indirectHit": 1100.0,
+"indirectHitRange": 12.0,
+"missileLockMaxDistance": 5000.0
+},
+"BombCluster_02_Cap_Ammo_F": {
+"airFriction": 0.059999999,
+"hit": 5000.0,
+"indirectHit": 1100.0,
+"indirectHitRange": 12.0,
+"missileLockMaxDistance": 5000.0
+},
+"BombCluster_02_UXO1_deployMine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "BombCluster_02_UXO1_Ammo_F"
+},
+"BombCluster_02_UXO2_deployMine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "BombCluster_02_UXO2_Ammo_F"
+},
+"BombCluster_02_UXO3_deployMine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "BombCluster_02_UXO3_Ammo_F"
+},
+"BombCluster_02_UXO4_deployMine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "BombCluster_02_UXO4_Ammo_F"
+},
+"BombCluster_02_UXO_deploy": {
+"hit": 35.0,
+"indirectHit": 25.0,
+"indirectHitRange": 8.0
+},
+"BombCluster_03_Ammo_F": {
+"airFriction": 0.059999999,
+"hit": 5000.0,
+"indirectHit": 1100.0,
+"indirectHitRange": 12.0,
+"missileLockMaxDistance": 5000.0
+},
+"BombCluster_03_UXO1_deployMine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "BombCluster_03_UXO1_Ammo_F"
+},
+"BombCluster_03_UXO2_deployMine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "BombCluster_03_UXO2_Ammo_F"
+},
+"BombCluster_03_UXO3_deployMine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "BombCluster_03_UXO3_Ammo_F"
+},
+"BombCluster_03_UXO4_deployMine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "BombCluster_03_UXO4_Ammo_F"
+},
+"BombCluster_03_UXO_deploy": {
+"hit": 35.0,
+"indirectHit": 25.0,
+"indirectHitRange": 8.0
+},
+"BombDemine_01_Ammo_F": {
+"hit": 1.0,
+"indirectHit": 35.0,
+"indirectHitRange": 11.0,
+"submunitionAmmo": "BombDemine_01_SubAmmo_F"
+},
+"BombDemine_01_DummyAmmo_F": {
+"hit": 1.0,
+"indirectHit": 1.0,
+"indirectHitRange": 1.0,
+"submunitionAmmo": "BombDemine_01_DummySubAmmo_F"
+},
+"BombDemine_01_DummySubAmmo_F": {
+"caliber": 34.0,
+"deflecting": 10.0,
+"hit": 1.0,
+"indirectHit": 1.0,
+"indirectHitRange": 1.0,
+"typicalSpeed": 1.0
+},
+"BombDemine_01_SubAmmo_F": {
+"caliber": 34.0,
+"deflecting": 10.0,
+"hit": 1.0,
+"indirectHit": 35.0,
+"indirectHitRange": 11.0,
+"typicalSpeed": 1.0
+},
+"Bomb_03_F": {
+"airFriction": 0.059999999,
+"hit": 6400.0,
+"indirectHit": 1400.0,
+"indirectHitRange": 16.0,
+"missileLockMaxDistance": 5000.0
+},
+"Bomb_04_F": {
+"airFriction": 0.059999999,
+"hit": 5000.0,
+"indirectHit": 1100.0,
+"indirectHitRange": 12.0,
+"missileLockMaxDistance": 5000.0
+},
+"BulletBase": {
+"caliber": 1.0,
+"deflecting": 15.0,
+"hit": 8.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0
+},
+"CMFlare_ECMPod": {
+"airFriction": -0.0099999998,
+"caliber": 1.0,
+"deflecting": 15.0,
+"hit": 1.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"maxControlRange": -1.0
+},
+"CMflareAmmo": {
+"airFriction": -0.0099999998,
+"caliber": 1.0,
+"deflecting": 15.0,
+"hit": 1.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"maxControlRange": -1.0
+},
+"CMflare_Chaff_Ammo": {
+"airFriction": -0.0099999998,
+"caliber": 1.0,
+"deflecting": 15.0,
+"hit": 1.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"maxControlRange": -1.0
+},
+"Cannon_30mm_HE_Plane_CAS_02_F": {
+"airFriction": -0.00036000001,
+"caliber": 3.0,
+"deflecting": 5.0,
+"explosive": 0.60000002,
+"hit": 150.0,
+"indirectHit": 4.0,
+"indirectHitRange": 4.0,
+"missileLockMaxDistance": 1000.0,
+"typicalSpeed": 960.0,
+"warheadName": "AP"
+},
+"Chemlight_base": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"Chemlight_blue": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"Chemlight_blue_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"Chemlight_green": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"Chemlight_green_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"Chemlight_red": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"Chemlight_red_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"Chemlight_yellow": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"Chemlight_yellow_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"Cluster_155mm_AMOS": {
+"airFriction": 0.0,
+"hit": 300.0
+},
+"DummyPylonAmmo": {
+"airFriction": 0.2,
+"deflecting": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 500.0
+},
+"F_20mm_Green": {
+"deflecting": 30.0
+},
+"F_20mm_Green_Illumination": {
+"deflecting": 30.0
+},
+"F_20mm_Green_Illumination_Infinite": {
+"deflecting": 30.0
+},
+"F_20mm_Green_Infinite": {
+"deflecting": 30.0
+},
+"F_20mm_Red": {
+"deflecting": 30.0
+},
+"F_20mm_Red_Illumination": {
+"deflecting": 30.0
+},
+"F_20mm_Red_Illumination_Infinite": {
+"deflecting": 30.0
+},
+"F_20mm_Red_Infinite": {
+"deflecting": 30.0
+},
+"F_20mm_White": {
+"deflecting": 30.0
+},
+"F_20mm_White_Illumination": {
+"deflecting": 30.0
+},
+"F_20mm_White_Illumination_Infinite": {
+"deflecting": 30.0
+},
+"F_20mm_White_Infinite": {
+"deflecting": 30.0
+},
+"F_20mm_Yellow": {
+"deflecting": 30.0
+},
+"F_20mm_Yellow_Illumination": {
+"deflecting": 30.0
+},
+"F_20mm_Yellow_Illumination_Infinite": {
+"deflecting": 30.0
+},
+"F_20mm_Yellow_Infinite": {
+"deflecting": 30.0
+},
+"F_40mm_Cir": {
+"deflecting": 30.0
+},
+"F_40mm_Cir_Infinite": {
+"deflecting": 30.0
+},
+"F_40mm_Green": {
+"deflecting": 30.0
+},
+"F_40mm_Green_Illumination": {
+"deflecting": 30.0
+},
+"F_40mm_Green_Illumination_Infinite": {
+"deflecting": 30.0
+},
+"F_40mm_Green_Infinite": {
+"deflecting": 30.0
+},
+"F_40mm_Red": {
+"deflecting": 30.0
+},
+"F_40mm_Red_Illumination": {
+"deflecting": 30.0
+},
+"F_40mm_Red_Illumination_Infinite": {
+"deflecting": 30.0
+},
+"F_40mm_Red_Infinite": {
+"deflecting": 30.0
+},
+"F_40mm_White": {
+"deflecting": 30.0
+},
+"F_40mm_White_Illumination": {
+"deflecting": 30.0
+},
+"F_40mm_White_Illumination_Infinite": {
+"deflecting": 30.0
+},
+"F_40mm_White_Infinite": {
+"deflecting": 30.0
+},
+"F_40mm_Yellow": {
+"deflecting": 30.0
+},
+"F_40mm_Yellow_Illumination": {
+"deflecting": 30.0
+},
+"F_40mm_Yellow_Illumination_Infinite": {
+"deflecting": 30.0
+},
+"F_40mm_Yellow_Infinite": {
+"deflecting": 30.0
+},
+"F_Signal_Green": {
+"deflecting": 30.0,
+"hit": 0.0
+},
+"F_Signal_Red": {
+"deflecting": 30.0,
+"hit": 0.0
+},
+"Fire_82mm_AMOS": {
+"hit": 165.0,
+"submunitionAmmo": "IncinerateShell"
+},
+"FlareCountermeasure": {
+"airFriction": -0.050000001,
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"FlareLauncherAmmo": {
+"airFriction": -0.1,
+"caliber": 1.0,
+"deflecting": 15.0,
+"hit": 1.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"maxControlRange": 50.0
+},
+"FuelCapacitorExplosion": {
+"hit": 100.0,
+"indirectHit": 100.0,
+"indirectHitRange": 2.5
+},
+"FuelExplosion": {
+"hit": 100.0,
+"indirectHit": 100.0,
+"indirectHitRange": 2.5
+},
+"FuelExplosionBig": {
+"hit": 100.0,
+"indirectHit": 100.0,
+"indirectHitRange": 2.5
+},
+"G_20mm_HE": {
+"airFriction": -0.001,
+"caliber": 1.0,
+"deflecting": 5.0,
+"explosive": 1.0,
+"hit": 40.0,
+"indirectHit": 6.0,
+"indirectHitRange": 4.0,
+"typicalSpeed": 185.0,
+"warheadName": "HE"
+},
+"G_40mm_HE": {
+"airFriction": -0.001,
+"caliber": 2.0,
+"deflecting": 5.0,
+"explosive": 1.0,
+"hit": 80.0,
+"indirectHit": 8.0,
+"indirectHitRange": 6.0,
+"typicalSpeed": 185.0,
+"warheadName": "HE"
+},
+"G_40mm_HEDP": {
+"airFriction": -0.001,
+"caliber": 3.0,
+"deflecting": 5.0,
+"explosive": 1.0,
+"hit": 100.0,
+"indirectHit": 6.0,
+"indirectHitRange": 4.0,
+"typicalSpeed": 185.0,
+"warheadName": "HEAT"
+},
+"G_40mm_HEDP_Bullet": {
+"airFriction": -0.001,
+"caliber": 3.0,
+"deflecting": 5.0,
+"explosive": 1.0,
+"hit": 100.0,
+"indirectHit": 6.0,
+"indirectHitRange": 4.0,
+"typicalSpeed": 185.0,
+"warheadName": "HEAT"
+},
+"G_40mm_Smoke": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"G_40mm_SmokeBlue": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"G_40mm_SmokeBlue_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"G_40mm_SmokeGreen": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"G_40mm_SmokeGreen_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"G_40mm_SmokeOrange": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"G_40mm_SmokeOrange_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"G_40mm_SmokePurple": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"G_40mm_SmokePurple_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"G_40mm_SmokeRed": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"G_40mm_SmokeRed_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"G_40mm_SmokeYellow": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"G_40mm_SmokeYellow_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"G_40mm_Smoke_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"Gatling_30mm_HE_Plane_CAS_01_F": {
+"airFriction": -0.00036000001,
+"caliber": 5.0,
+"deflecting": 5.0,
+"explosive": 0.40000001,
+"hit": 180.0,
+"indirectHit": 4.0,
+"indirectHitRange": 3.0,
+"typicalSpeed": 960.0,
+"warheadName": "AP"
+},
+"Grenade": {
+"deflecting": 15.0,
+"explosive": 1.0,
+"hit": 10.0,
+"indirectHit": 8.0,
+"indirectHitRange": 6.0
+},
+"GrenadeBase": {
+"deflecting": 30.0
+},
+"GrenadeCore": {
+"deflecting": 30.0
+},
+"GrenadeHand": {
+"deflecting": 15.0,
+"explosive": 1.0,
+"hit": 8.0,
+"indirectHit": 8.0,
+"indirectHitRange": 6.0
+},
+"GrenadeHand_stone": {
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 0.5,
+"indirectHit": 0.2,
+"indirectHitRange": 1.0
+},
+"HelicopterExploBig": {
+"airFriction": 0.0,
+"caliber": 34.0,
+"deflecting": 10.0,
+"explosive": 1.0,
+"hit": 10000.0,
+"indirectHit": 200.0,
+"indirectHitRange": 7.5,
+"typicalSpeed": 100.0
+},
+"HelicopterExploSmall": {
+"airFriction": 0.0,
+"caliber": 34.0,
+"deflecting": 10.0,
+"explosive": 1.0,
+"hit": 2500.0,
+"indirectHit": 500.0,
+"indirectHitRange": 5.0,
+"typicalSpeed": 100.0
+},
+"IRStrobeBase": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 5.0,
+"indirectHit": 2.0,
+"indirectHitRange": 0.2
+},
+"I_IRStrobe": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 5.0,
+"indirectHit": 2.0,
+"indirectHitRange": 0.2
+},
+"IncinerateShell": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"Laserbeam": {
+"hit": 500.0,
+"indirectHit": 150.0,
+"indirectHitRange": 2.5,
+"maxControlRange": 0.0,
+"maxSpeed": 350.0
+},
+"M_120mm_cannon_ATGM": {
+"airFriction": 0.050000001,
+"deflecting": 0.0,
+"explosive": 0.40000001,
+"hit": 150.0,
+"indirectHit": 15.0,
+"indirectHitRange": 4.5,
+"maxControlRange": 5000.0,
+"maxSpeed": 280.0,
+"submunitionAmmo": "ammo_Penetrator_120mm_missile",
+"warheadName": "TandemHEAT"
+},
+"M_120mm_cannon_ATGM_LG": {
+"airFriction": 0.050000001,
+"deflecting": 0.0,
+"explosive": 0.40000001,
+"hit": 150.0,
+"indirectHit": 15.0,
+"indirectHitRange": 4.5,
+"maxControlRange": 5000.0,
+"maxSpeed": 280.0,
+"missileLockMaxDistance": 8000.0,
+"submunitionAmmo": "ammo_Penetrator_120mm_missile",
+"warheadName": "TandemHEAT"
+},
+"M_125mm_cannon_ATGM": {
+"airFriction": 0.050000001,
+"deflecting": 0.0,
+"explosive": 0.40000001,
+"hit": 150.0,
+"indirectHit": 20.0,
+"indirectHitRange": 4.5,
+"maxControlRange": 5000.0,
+"maxSpeed": 350.0,
+"submunitionAmmo": "ammo_Penetrator_125mm_missile",
+"warheadName": "TandemHEAT"
+},
+"M_127mm_Firefist_AT": {
+"airFriction": 0.050000001,
+"deflecting": 0.0,
+"explosive": 0.80000001,
+"hit": 150.0,
+"indirectHit": 25.0,
+"indirectHitRange": 4.0,
+"maxControlRange": 4500.0,
+"maxSpeed": 200.0,
+"missileLockMaxDistance": 4500.0,
+"submunitionAmmo": "ammo_Penetrator_Firefist",
+"typicalSpeed": 170.0,
+"warheadName": "TandemHEAT"
+},
+"M_70mm_SAAMI": {
+"airFriction": 0.145,
+"deflecting": 0.0,
+"hit": 80.0,
+"indirectHit": 60.0,
+"indirectHitRange": 6.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 850.0,
+"missileLockMaxDistance": 8000.0,
+"warheadName": "HE"
+},
+"M_AT": {
+"airFriction": 0.1,
+"deflecting": 0.0,
+"hit": 300.0,
+"indirectHit": 50.0,
+"indirectHitRange": 8.0,
+"maxControlRange": 0.0,
+"maxSpeed": 720.0,
+"missileLockMaxDistance": 5000.0,
+"submunitionAmmo": "",
+"warheadName": "HE"
+},
+"M_Air_AA": {
+"airFriction": 0.14,
+"deflecting": 0.0,
+"hit": 200.0,
+"indirectHit": 100.0,
+"indirectHitRange": 7.0,
+"maxControlRange": 6000.0,
+"maxSpeed": 1020.0,
+"missileLockMaxDistance": 6000.0,
+"warheadName": "HE"
+},
+"M_Air_AA_MI02": {
+"airFriction": 0.14,
+"deflecting": 0.0,
+"hit": 200.0,
+"indirectHit": 100.0,
+"indirectHitRange": 7.0,
+"maxControlRange": 6000.0,
+"maxSpeed": 1020.0,
+"missileLockMaxDistance": 6000.0,
+"warheadName": "HE"
+},
+"M_Air_AA_MI06": {
+"airFriction": 0.14,
+"deflecting": 0.0,
+"hit": 200.0,
+"indirectHit": 100.0,
+"indirectHitRange": 7.0,
+"maxControlRange": 6000.0,
+"maxSpeed": 1020.0,
+"missileLockMaxDistance": 6000.0,
+"warheadName": "HE"
+},
+"M_Air_AT": {
+"airFriction": 0.085000001,
+"deflecting": 0.0,
+"explosive": 1.0,
+"hit": 95.0,
+"indirectHit": 20.0,
+"indirectHitRange": 3.3,
+"maxControlRange": 2000.0,
+"maxSpeed": 180.0,
+"missileLockMaxDistance": 2000.0,
+"submunitionAmmo": "ammo_Penetrator_Titan_AT",
+"typicalSpeed": 160.0,
+"warheadName": "HE"
+},
+"M_Jian_AT": {
+"airFriction": 0.050000001,
+"deflecting": 0.0,
+"hit": 150.0,
+"indirectHit": 70.0,
+"indirectHitRange": 5.0,
+"maxControlRange": 8000.0,
+"maxSpeed": 320.0,
+"missileLockMaxDistance": 8000.0,
+"submunitionAmmo": "ammo_Penetrator_Jian",
+"typicalSpeed": 270.0,
+"warheadName": "TandemHEAT"
+},
+"M_Mo_120mm_AT": {
+"airFriction": 0.0099999998,
+"deflecting": 0.0,
+"hit": 800.0,
+"indirectHit": 50.0,
+"indirectHitRange": 3.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 500.0
+},
+"M_Mo_120mm_AT_LG": {
+"airFriction": 0.0099999998,
+"deflecting": 0.0,
+"hit": 800.0,
+"indirectHit": 50.0,
+"indirectHitRange": 3.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 500.0
+},
+"M_Mo_155mm_AT": {
+"airFriction": 0.0099999998,
+"deflecting": 0.0,
+"hit": 1200.0,
+"indirectHit": 200.0,
+"indirectHitRange": 4.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 500.0
+},
+"M_Mo_155mm_AT_LG": {
+"airFriction": 0.0099999998,
+"deflecting": 0.0,
+"hit": 1200.0,
+"indirectHit": 200.0,
+"indirectHitRange": 4.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 500.0
+},
+"M_Mo_230mm_AT": {
+"airFriction": 0.0,
+"deflecting": 0.0,
+"hit": 1200.0,
+"indirectHit": 800.0,
+"indirectHitRange": 30.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 500.0
+},
+"M_Mo_230mm_AT_LG": {
+"airFriction": 0.0,
+"deflecting": 0.0,
+"hit": 1200.0,
+"indirectHit": 800.0,
+"indirectHitRange": 30.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 500.0
+},
+"M_Mo_230mm_guided": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "M_Mo_230mm_AT"
+},
+"M_Mo_82mm_AT": {
+"airFriction": 0.0099999998,
+"deflecting": 0.0,
+"hit": 160.0,
+"indirectHit": 50.0,
+"indirectHitRange": 8.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 500.0
+},
+"M_Mo_82mm_AT_LG": {
+"airFriction": 0.0099999998,
+"deflecting": 0.0,
+"hit": 240.0,
+"indirectHit": 50.0,
+"indirectHitRange": 8.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 500.0
+},
+"M_NLAW_AT_F": {
+"airFriction": 0.090000004,
+"deflecting": 0.0,
+"explosive": 0.5,
+"hit": 110.0,
+"indirectHit": 25.0,
+"indirectHitRange": 2.4000001,
+"maxControlRange": 11.0,
+"maxSpeed": 180.0,
+"missileLockMaxDistance": 800.0,
+"submunitionAmmo": "ammo_Penetrator_NLAW"
+},
+"M_PGM_AT": {
+"airFriction": 0.1,
+"deflecting": 0.0,
+"hit": 95.0,
+"indirectHit": 40.0,
+"indirectHitRange": 3.2,
+"maxControlRange": 5000.0,
+"maxSpeed": 720.0,
+"missileLockMaxDistance": 5000.0,
+"submunitionAmmo": "ammo_Penetrator_PG_AT",
+"warheadName": "HE"
+},
+"M_PG_AT": {
+"airFriction": 0.1,
+"deflecting": 0.0,
+"hit": 95.0,
+"indirectHit": 40.0,
+"indirectHitRange": 3.2,
+"maxControlRange": 5000.0,
+"maxSpeed": 720.0,
+"missileLockMaxDistance": 5000.0,
+"submunitionAmmo": "ammo_Penetrator_PG_AT",
+"warheadName": "HE"
+},
+"M_SPG9_HE": {
+"airFriction": 0.1,
+"explosive": 0.80000001,
+"hit": 100.0,
+"indirectHit": 100.0,
+"indirectHitRange": 3.5,
+"maxSpeed": 700.0,
+"submunitionAmmo": "",
+"warheadName": "HE"
+},
+"M_SPG9_HEAT": {
+"airFriction": 0.1,
+"explosive": 0.80000001,
+"hit": 95.0,
+"indirectHit": 16.0,
+"indirectHitRange": 3.5,
+"maxSpeed": 700.0,
+"submunitionAmmo": "ammo_Penetrator_SPG9",
+"warheadName": "HE"
+},
+"M_Scalpel_AT": {
+"airFriction": 0.103,
+"deflecting": 0.0,
+"hit": 150.0,
+"indirectHit": 50.0,
+"indirectHitRange": 4.0,
+"maxControlRange": 6000.0,
+"maxSpeed": 450.0,
+"missileLockMaxDistance": 6000.0,
+"submunitionAmmo": "ammo_Penetrator_Scalpel",
+"warheadName": "TandemHEAT"
+},
+"M_Scalpel_AT_hidden": {
+"airFriction": 0.103,
+"deflecting": 0.0,
+"hit": 150.0,
+"indirectHit": 50.0,
+"indirectHitRange": 4.0,
+"maxControlRange": 6000.0,
+"maxSpeed": 450.0,
+"missileLockMaxDistance": 6000.0,
+"submunitionAmmo": "ammo_Penetrator_Scalpel",
+"warheadName": "TandemHEAT"
+},
+"M_Titan_AA": {
+"airFriction": 0.145,
+"deflecting": 0.0,
+"hit": 80.0,
+"indirectHit": 60.0,
+"indirectHitRange": 6.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 850.0,
+"missileLockMaxDistance": 3500.0,
+"warheadName": "HE"
+},
+"M_Titan_AA_long": {
+"airFriction": 0.145,
+"deflecting": 0.0,
+"hit": 80.0,
+"indirectHit": 60.0,
+"indirectHitRange": 6.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 850.0,
+"missileLockMaxDistance": 4500.0,
+"warheadName": "HE"
+},
+"M_Titan_AA_static": {
+"airFriction": 0.145,
+"deflecting": 0.0,
+"hit": 80.0,
+"indirectHit": 60.0,
+"indirectHitRange": 6.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 850.0,
+"missileLockMaxDistance": 3500.0,
+"warheadName": "HE"
+},
+"M_Titan_AP": {
+"airFriction": 0.085000001,
+"deflecting": 0.0,
+"explosive": 1.0,
+"hit": 100.0,
+"indirectHit": 25.0,
+"indirectHitRange": 10.0,
+"maxControlRange": 2000.0,
+"maxSpeed": 180.0,
+"missileLockMaxDistance": 2000.0,
+"submunitionAmmo": "",
+"typicalSpeed": 160.0,
+"warheadName": "HE"
+},
+"M_Titan_AT": {
+"airFriction": 0.085000001,
+"deflecting": 0.0,
+"explosive": 1.0,
+"hit": 95.0,
+"indirectHit": 20.0,
+"indirectHitRange": 3.3,
+"maxControlRange": 2000.0,
+"maxSpeed": 180.0,
+"missileLockMaxDistance": 2000.0,
+"submunitionAmmo": "ammo_Penetrator_Titan_AT",
+"typicalSpeed": 160.0,
+"warheadName": "HE"
+},
+"M_Titan_AT_long": {
+"airFriction": 0.085000001,
+"deflecting": 0.0,
+"explosive": 1.0,
+"hit": 150.0,
+"indirectHit": 40.0,
+"indirectHitRange": 4.0,
+"maxControlRange": 5000.0,
+"maxSpeed": 180.0,
+"missileLockMaxDistance": 5000.0,
+"submunitionAmmo": "ammo_Penetrator_Titan_AT_long",
+"typicalSpeed": 1660.0,
+"warheadName": "TandemHEAT"
+},
+"M_Titan_AT_static": {
+"airFriction": 0.085000001,
+"deflecting": 0.0,
+"explosive": 1.0,
+"hit": 95.0,
+"indirectHit": 20.0,
+"indirectHitRange": 3.3,
+"maxControlRange": 2000.0,
+"maxSpeed": 180.0,
+"missileLockMaxDistance": 2000.0,
+"submunitionAmmo": "ammo_Penetrator_Titan_AT",
+"typicalSpeed": 160.0,
+"warheadName": "HE"
+},
+"M_Vorona_HE": {
+"airFriction": 0.059999999,
+"deflecting": 0.0,
+"explosive": 0.80000001,
+"hit": 220.0,
+"indirectHit": 45.0,
+"indirectHitRange": 8.0,
+"maxControlRange": 2000.0,
+"maxSpeed": 200.0,
+"submunitionAmmo": "",
+"warheadName": "HE"
+},
+"M_Vorona_HEAT": {
+"airFriction": 0.059999999,
+"deflecting": 0.0,
+"explosive": 0.80000001,
+"hit": 150.0,
+"indirectHit": 25.0,
+"indirectHitRange": 3.5,
+"maxControlRange": 2000.0,
+"maxSpeed": 200.0,
+"submunitionAmmo": "ammo_Penetrator_Vorona",
+"warheadName": "TandemHEAT"
+},
+"M_Zephyr": {
+"airFriction": 0.078000002,
+"deflecting": 0.0,
+"hit": 170.0,
+"indirectHit": 115.0,
+"indirectHitRange": 12.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 850.0,
+"missileLockMaxDistance": 10000.0,
+"warheadName": "HE"
+},
+"M_Zephyr_Mi06": {
+"airFriction": 0.078000002,
+"deflecting": 0.0,
+"hit": 170.0,
+"indirectHit": 115.0,
+"indirectHitRange": 12.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 850.0,
+"missileLockMaxDistance": 10000.0,
+"warheadName": "HE"
+},
+"M_Zephyr_air": {
+"airFriction": 0.078000002,
+"deflecting": 0.0,
+"hit": 170.0,
+"indirectHit": 115.0,
+"indirectHitRange": 12.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 850.0,
+"missileLockMaxDistance": 10000.0,
+"warheadName": "HE"
+},
+"Mine_155mm_AMOS_range": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "Mo_ClassicMineRange"
+},
+"MissileBase": {
+"airFriction": 0.2,
+"deflecting": 0.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 500.0
+},
+"Missile_AA_03_F": {
+"airFriction": 0.13,
+"deflecting": 0.0,
+"hit": 140.0,
+"indirectHit": 90.0,
+"indirectHitRange": 8.0,
+"maxControlRange": 4500.0,
+"maxSpeed": 850.0,
+"missileLockMaxDistance": 6000.0,
+"warheadName": "HE"
+},
+"Missile_AA_04_F": {
+"airFriction": 0.14,
+"deflecting": 0.0,
+"hit": 100.0,
+"indirectHit": 75.0,
+"indirectHitRange": 9.0,
+"maxControlRange": 4500.0,
+"maxSpeed": 920.0,
+"missileLockMaxDistance": 4500.0,
+"warheadName": "HE"
+},
+"Missile_AGM_01_F": {
+"airFriction": 0.050000001,
+"deflecting": 0.0,
+"hit": 1200.0,
+"indirectHit": 90.0,
+"indirectHitRange": 8.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 320.0,
+"missileLockMaxDistance": 6000.0,
+"submunitionAmmo": "ammo_Penetrator_AGM_01",
+"typicalSpeed": 270.0,
+"warheadName": "HE"
+},
+"Missile_AGM_02_F": {
+"airFriction": 0.050000001,
+"deflecting": 0.0,
+"hit": 1100.0,
+"indirectHit": 85.0,
+"indirectHitRange": 8.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 320.0,
+"missileLockMaxDistance": 6000.0,
+"submunitionAmmo": "ammo_Penetrator_AGM_02",
+"typicalSpeed": 270.0,
+"warheadName": "HE"
+},
+"Mo_ATMineRange": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "ATMine_Range_Ammo"
+},
+"Mo_ClassicMineRange": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "APERSMine_Range_Ammo"
+},
+"Mo_UnderwaterMineRange": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "UnderwaterMine_Range_Ammo"
+},
+"Mo_cluster_AP": {
+"caliber": 34.0,
+"deflecting": 10.0,
+"hit": 35.0,
+"indirectHit": 25.0,
+"indirectHitRange": 8.0
+},
+"Mo_cluster_AP_UXO1_deployMine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "Mo_cluster_AP_UXO1_Ammo_F"
+},
+"Mo_cluster_AP_UXO2_deployMine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "Mo_cluster_AP_UXO2_Ammo_F"
+},
+"Mo_cluster_AP_UXO3_deployMine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "Mo_cluster_AP_UXO3_Ammo_F"
+},
+"Mo_cluster_AP_UXO4_deployMine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "Mo_cluster_AP_UXO4_Ammo_F"
+},
+"Mo_cluster_AP_UXO_deploy": {
+"hit": 35.0,
+"indirectHit": 25.0,
+"indirectHitRange": 8.0
+},
+"Mo_cluster_Bomb_01_F": {
+"caliber": 34.0,
+"deflecting": 10.0,
+"hit": 70.0,
+"indirectHit": 15.0,
+"indirectHitRange": 6.0
+},
+"Mo_cluster_Bomb_02_F": {
+"caliber": 34.0,
+"deflecting": 10.0,
+"hit": 30.0,
+"indirectHit": 25.0,
+"indirectHitRange": 9.0
+},
+"Mo_cluster_Bomb_03_F": {
+"caliber": 34.0,
+"deflecting": 10.0,
+"hit": 70.0,
+"indirectHit": 12.0,
+"indirectHitRange": 6.0
+},
+"ModuleOrdnanceHowitzer_F_ammo": {
+"airFriction": 0.0,
+"caliber": 10.0,
+"deflecting": 0.0,
+"explosive": 0.80000001,
+"hit": 500.0,
+"indirectHit": 300.0,
+"indirectHitRange": 30.0,
+"typicalSpeed": 800.0,
+"warheadName": "HE"
+},
+"ModuleOrdnanceMortar_F_ammo": {
+"airFriction": 0.0,
+"caliber": 10.0,
+"deflecting": 0.0,
+"explosive": 0.80000001,
+"hit": 165.0,
+"indirectHit": 52.0,
+"indirectHitRange": 18.0,
+"typicalSpeed": 800.0,
+"warheadName": "HE"
+},
+"ModuleOrdnanceRocket_F_ammo": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "R_230mm_fly"
+},
+"ModuleOrdnanceRocket_F_subammo": {
+"airFriction": 0.0,
+"caliber": 34.0,
+"deflecting": 0.0,
+"hit": 1200.0,
+"indirectHit": 600.0,
+"indirectHitRange": 27.0,
+"warheadName": "HE"
+},
+"O_IRStrobe": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 5.0,
+"indirectHit": 2.0,
+"indirectHitRange": 0.2
+},
+"ProbingBeam_01_F": {
+"caliber": 0.0,
+"deflecting": 15.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0
+},
+"ProbingBeam_02_F": {
+"caliber": 0.0,
+"deflecting": 15.0,
+"hit": 4.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0
+},
+"R_230mm_Cluster": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "R_230mm_fly"
+},
+"R_230mm_HE": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "R_230mm_fly"
+},
+"R_230mm_LG": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "M_Mo_230mm_AT_LG"
+},
+"R_230mm_fly": {
+"airFriction": 0.0,
+"caliber": 34.0,
+"deflecting": 0.0,
+"hit": 1200.0,
+"indirectHit": 800.0,
+"indirectHitRange": 30.0,
+"warheadName": "HE"
+},
+"R_60mm_HE": {
+"airFriction": 0.2,
+"hit": 200.0,
+"indirectHit": 40.0,
+"indirectHitRange": 10.0,
+"maxSpeed": 490.0,
+"warheadName": "HE"
+},
+"R_80mm_HE": {
+"airFriction": 0.090000004,
+"hit": 400.0,
+"indirectHit": 60.0,
+"indirectHitRange": 15.0,
+"maxSpeed": 590.0,
+"warheadName": "HE"
+},
+"R_MRAAWS_HEAT55_F": {
+"airFriction": 0.050000001,
+"explosive": 0.80000001,
+"hit": 95.0,
+"indirectHit": 14.0,
+"indirectHitRange": 3.0,
+"maxSpeed": 350.0,
+"submunitionAmmo": "ammo_Penetrator_MRAAWS_HEAT55",
+"warheadName": "HEAT"
+},
+"R_MRAAWS_HEAT_F": {
+"airFriction": 0.050000001,
+"explosive": 0.80000001,
+"hit": 150.0,
+"indirectHit": 14.0,
+"indirectHitRange": 3.0,
+"maxSpeed": 350.0,
+"submunitionAmmo": "ammo_Penetrator_MRAAWS",
+"warheadName": "TandemHEAT"
+},
+"R_MRAAWS_HE_F": {
+"airFriction": 0.050000001,
+"explosive": 1.0,
+"hit": 200.0,
+"indirectHit": 50.0,
+"indirectHitRange": 6.0,
+"maxSpeed": 350.0,
+"submunitionAmmo": "",
+"warheadName": "HE"
+},
+"R_PG32V_F": {
+"airFriction": 0.075000003,
+"explosive": 1.0,
+"hit": 150.0,
+"indirectHit": 28.0,
+"indirectHitRange": 3.0,
+"maxSpeed": 140.0,
+"submunitionAmmo": "ammo_Penetrator_RPG32V",
+"warheadName": "TandemHEAT"
+},
+"R_PG7_F": {
+"airFriction": 0.64999998,
+"explosive": 0.80000001,
+"hit": 95.0,
+"indirectHit": 13.0,
+"indirectHitRange": 3.5999999,
+"maxSpeed": 300.0,
+"submunitionAmmo": "ammo_Penetrator_PG7",
+"warheadName": "HE"
+},
+"R_TBG32V_F": {
+"airFriction": 0.075000003,
+"explosive": 1.0,
+"hit": 200.0,
+"indirectHit": 50.0,
+"indirectHitRange": 6.0,
+"maxSpeed": 140.0,
+"submunitionAmmo": "",
+"warheadName": "HE"
+},
+"RocketBase": {
+"airFriction": 0.1,
+"hit": 500.0,
+"indirectHit": 150.0,
+"indirectHitRange": 2.0,
+"maxSpeed": 1.0
+},
+"Rocket_03_AP_F": {
+"airFriction": 0.090000004,
+"deflecting": 0.0,
+"hit": 95.0,
+"indirectHit": 25.0,
+"indirectHitRange": 3.0,
+"maxControlRange": 0.0,
+"maxSpeed": 590.0,
+"missileLockMaxDistance": 3000.0,
+"submunitionAmmo": "ammo_Penetrator_Rocket_03_AP",
+"warheadName": "HE"
+},
+"Rocket_03_HE_F": {
+"airFriction": 0.090000004,
+"deflecting": 0.0,
+"hit": 210.0,
+"indirectHit": 55.0,
+"indirectHitRange": 15.0,
+"maxControlRange": 0.0,
+"maxSpeed": 590.0,
+"missileLockMaxDistance": 3000.0,
+"warheadName": "HE"
+},
+"Rocket_04_AP_F": {
+"airFriction": 0.090000004,
+"deflecting": 0.0,
+"hit": 95.0,
+"indirectHit": 25.0,
+"indirectHitRange": 2.5,
+"maxControlRange": 0.0,
+"maxSpeed": 590.0,
+"missileLockMaxDistance": 3000.0,
+"submunitionAmmo": "ammo_Penetrator_Rocket_04_AP",
+"warheadName": "HE"
+},
+"Rocket_04_HE_F": {
+"airFriction": 0.090000004,
+"deflecting": 0.0,
+"hit": 210.0,
+"indirectHit": 55.0,
+"indirectHitRange": 15.0,
+"maxControlRange": 0.0,
+"maxSpeed": 590.0,
+"missileLockMaxDistance": 3000.0,
+"warheadName": "HE"
+},
+"Sh_105mm_APFSDS": {
+"caliber": 28.5714,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 450.0,
+"indirectHit": 10.0,
+"indirectHitRange": 0.5,
+"typicalSpeed": 1550.0,
+"warheadName": "AP"
+},
+"Sh_105mm_APFSDS_T_Green": {
+"caliber": 28.5714,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 450.0,
+"indirectHit": 10.0,
+"indirectHitRange": 0.5,
+"typicalSpeed": 1550.0,
+"warheadName": "AP"
+},
+"Sh_105mm_APFSDS_T_Red": {
+"caliber": 28.5714,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 450.0,
+"indirectHit": 10.0,
+"indirectHitRange": 0.5,
+"typicalSpeed": 1550.0,
+"warheadName": "AP"
+},
+"Sh_105mm_APFSDS_T_Yellow": {
+"caliber": 28.5714,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 450.0,
+"indirectHit": 10.0,
+"indirectHitRange": 0.5,
+"typicalSpeed": 1550.0,
+"warheadName": "AP"
+},
+"Sh_105mm_HEAT_MP": {
+"airFriction": -0.00030799999,
+"caliber": 10.0,
+"deflecting": 4.0,
+"explosive": 0.80000001,
+"hit": 95.0,
+"indirectHit": 26.0,
+"indirectHitRange": 4.1999998,
+"submunitionAmmo": "ammo_Penetrator_105mm",
+"typicalSpeed": 900.0,
+"warheadName": "TandemHEAT"
+},
+"Sh_105mm_HEAT_MP_T_Green": {
+"airFriction": -0.00030799999,
+"caliber": 10.0,
+"deflecting": 4.0,
+"explosive": 0.80000001,
+"hit": 95.0,
+"indirectHit": 26.0,
+"indirectHitRange": 4.1999998,
+"submunitionAmmo": "ammo_Penetrator_105mm",
+"typicalSpeed": 900.0,
+"warheadName": "TandemHEAT"
+},
+"Sh_105mm_HEAT_MP_T_Red": {
+"airFriction": -0.00030799999,
+"caliber": 10.0,
+"deflecting": 4.0,
+"explosive": 0.80000001,
+"hit": 95.0,
+"indirectHit": 26.0,
+"indirectHitRange": 4.1999998,
+"submunitionAmmo": "ammo_Penetrator_105mm",
+"typicalSpeed": 900.0,
+"warheadName": "TandemHEAT"
+},
+"Sh_105mm_HEAT_MP_T_Yellow": {
+"airFriction": -0.00030799999,
+"caliber": 10.0,
+"deflecting": 4.0,
+"explosive": 0.80000001,
+"hit": 95.0,
+"indirectHit": 26.0,
+"indirectHitRange": 4.1999998,
+"submunitionAmmo": "ammo_Penetrator_105mm",
+"typicalSpeed": 900.0,
+"warheadName": "TandemHEAT"
+},
+"Sh_120mm_APFSDS": {
+"caliber": 35.268799,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 500.0,
+"indirectHit": 15.0,
+"indirectHitRange": 0.5,
+"typicalSpeed": 1550.0,
+"warheadName": "AP"
+},
+"Sh_120mm_APFSDS_Tracer_Green": {
+"caliber": 35.268799,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 500.0,
+"indirectHit": 15.0,
+"indirectHitRange": 0.5,
+"typicalSpeed": 1550.0,
+"warheadName": "AP"
+},
+"Sh_120mm_APFSDS_Tracer_Red": {
+"caliber": 35.268799,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 500.0,
+"indirectHit": 15.0,
+"indirectHitRange": 0.5,
+"typicalSpeed": 1550.0,
+"warheadName": "AP"
+},
+"Sh_120mm_APFSDS_Tracer_Yellow": {
+"caliber": 35.268799,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 500.0,
+"indirectHit": 15.0,
+"indirectHitRange": 0.5,
+"typicalSpeed": 1550.0,
+"warheadName": "AP"
+},
+"Sh_120mm_HE": {
+"airFriction": -0.000275,
+"caliber": 10.0,
+"deflecting": 4.0,
+"explosive": 0.80000001,
+"hit": 250.0,
+"indirectHit": 60.0,
+"indirectHitRange": 6.0,
+"typicalSpeed": 1400.0,
+"warheadName": "HE"
+},
+"Sh_120mm_HEAT_MP": {
+"airFriction": -0.000275,
+"caliber": 34.0,
+"deflecting": 8.0,
+"explosive": 1.0,
+"hit": 95.0,
+"indirectHit": 30.0,
+"indirectHitRange": 3.5,
+"submunitionAmmo": "ammo_Penetrator_120mm",
+"typicalSpeed": 1400.0,
+"warheadName": "HE"
+},
+"Sh_120mm_HEAT_MP_T_Green": {
+"airFriction": -0.000275,
+"caliber": 34.0,
+"deflecting": 8.0,
+"explosive": 1.0,
+"hit": 95.0,
+"indirectHit": 30.0,
+"indirectHitRange": 3.5,
+"submunitionAmmo": "ammo_Penetrator_120mm",
+"typicalSpeed": 1400.0,
+"warheadName": "HE"
+},
+"Sh_120mm_HEAT_MP_T_Red": {
+"airFriction": -0.000275,
+"caliber": 34.0,
+"deflecting": 8.0,
+"explosive": 1.0,
+"hit": 95.0,
+"indirectHit": 30.0,
+"indirectHitRange": 3.5,
+"submunitionAmmo": "ammo_Penetrator_120mm",
+"typicalSpeed": 1400.0,
+"warheadName": "HE"
+},
+"Sh_120mm_HEAT_MP_T_Yellow": {
+"airFriction": -0.000275,
+"caliber": 34.0,
+"deflecting": 8.0,
+"explosive": 1.0,
+"hit": 95.0,
+"indirectHit": 30.0,
+"indirectHitRange": 3.5,
+"submunitionAmmo": "ammo_Penetrator_120mm",
+"typicalSpeed": 1400.0,
+"warheadName": "HE"
+},
+"Sh_120mm_HE_Tracer_Green": {
+"airFriction": -0.000275,
+"caliber": 10.0,
+"deflecting": 4.0,
+"explosive": 0.80000001,
+"hit": 250.0,
+"indirectHit": 60.0,
+"indirectHitRange": 6.0,
+"typicalSpeed": 1400.0,
+"warheadName": "HE"
+},
+"Sh_120mm_HE_Tracer_Red": {
+"airFriction": -0.000275,
+"caliber": 10.0,
+"deflecting": 4.0,
+"explosive": 0.80000001,
+"hit": 250.0,
+"indirectHit": 60.0,
+"indirectHitRange": 6.0,
+"typicalSpeed": 1400.0,
+"warheadName": "HE"
+},
+"Sh_120mm_HE_Tracer_Yellow": {
+"airFriction": -0.000275,
+"caliber": 10.0,
+"deflecting": 4.0,
+"explosive": 0.80000001,
+"hit": 250.0,
+"indirectHit": 60.0,
+"indirectHitRange": 6.0,
+"typicalSpeed": 1400.0,
+"warheadName": "HE"
+},
+"Sh_125mm_APFSDS": {
+"caliber": 34.838699,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 550.0,
+"indirectHit": 20.0,
+"indirectHitRange": 0.5,
+"typicalSpeed": 1550.0,
+"warheadName": "AP"
+},
+"Sh_125mm_APFSDS_T_Green": {
+"caliber": 34.838699,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 550.0,
+"indirectHit": 20.0,
+"indirectHitRange": 0.5,
+"typicalSpeed": 1550.0,
+"warheadName": "AP"
+},
+"Sh_125mm_APFSDS_T_Red": {
+"caliber": 34.838699,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 550.0,
+"indirectHit": 20.0,
+"indirectHitRange": 0.5,
+"typicalSpeed": 1550.0,
+"warheadName": "AP"
+},
+"Sh_125mm_APFSDS_T_Yellow": {
+"caliber": 34.838699,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 550.0,
+"indirectHit": 20.0,
+"indirectHitRange": 0.5,
+"typicalSpeed": 1550.0,
+"warheadName": "AP"
+},
+"Sh_125mm_HE": {
+"airFriction": -0.000275,
+"caliber": 10.0,
+"deflecting": 4.0,
+"explosive": 0.80000001,
+"hit": 300.0,
+"indirectHit": 80.0,
+"indirectHitRange": 6.0,
+"typicalSpeed": 1400.0,
+"warheadName": "HE"
+},
+"Sh_125mm_HEAT": {
+"airFriction": -0.000275,
+"caliber": 10.0,
+"deflecting": 4.0,
+"explosive": 0.80000001,
+"hit": 150.0,
+"indirectHit": 31.0,
+"indirectHitRange": 3.75,
+"submunitionAmmo": "ammo_Penetrator_125mm",
+"typicalSpeed": 900.0,
+"warheadName": "TandemHEAT"
+},
+"Sh_125mm_HEAT_T_Green": {
+"airFriction": -0.000275,
+"caliber": 10.0,
+"deflecting": 4.0,
+"explosive": 0.80000001,
+"hit": 150.0,
+"indirectHit": 31.0,
+"indirectHitRange": 3.75,
+"submunitionAmmo": "ammo_Penetrator_125mm",
+"typicalSpeed": 900.0,
+"warheadName": "TandemHEAT"
+},
+"Sh_125mm_HEAT_T_Red": {
+"airFriction": -0.000275,
+"caliber": 10.0,
+"deflecting": 4.0,
+"explosive": 0.80000001,
+"hit": 150.0,
+"indirectHit": 31.0,
+"indirectHitRange": 3.75,
+"submunitionAmmo": "ammo_Penetrator_125mm",
+"typicalSpeed": 900.0,
+"warheadName": "TandemHEAT"
+},
+"Sh_125mm_HEAT_T_Yellow": {
+"airFriction": -0.000275,
+"caliber": 10.0,
+"deflecting": 4.0,
+"explosive": 0.80000001,
+"hit": 150.0,
+"indirectHit": 31.0,
+"indirectHitRange": 3.75,
+"submunitionAmmo": "ammo_Penetrator_125mm",
+"typicalSpeed": 900.0,
+"warheadName": "TandemHEAT"
+},
+"Sh_125mm_HE_T_Green": {
+"airFriction": -0.000275,
+"caliber": 10.0,
+"deflecting": 4.0,
+"explosive": 0.80000001,
+"hit": 300.0,
+"indirectHit": 80.0,
+"indirectHitRange": 6.0,
+"typicalSpeed": 1400.0,
+"warheadName": "HE"
+},
+"Sh_125mm_HE_T_Red": {
+"airFriction": -0.000275,
+"caliber": 10.0,
+"deflecting": 4.0,
+"explosive": 0.80000001,
+"hit": 300.0,
+"indirectHit": 80.0,
+"indirectHitRange": 6.0,
+"typicalSpeed": 1400.0,
+"warheadName": "HE"
+},
+"Sh_125mm_HE_T_Yellow": {
+"airFriction": -0.000275,
+"caliber": 10.0,
+"deflecting": 4.0,
+"explosive": 0.80000001,
+"hit": 300.0,
+"indirectHit": 80.0,
+"indirectHitRange": 6.0,
+"typicalSpeed": 1400.0,
+"warheadName": "HE"
+},
+"Sh_155mm_AMOS": {
+"airFriction": 0.0,
+"caliber": 10.0,
+"deflecting": 0.0,
+"explosive": 0.80000001,
+"hit": 340.0,
+"indirectHit": 125.0,
+"indirectHitRange": 30.0,
+"typicalSpeed": 800.0,
+"warheadName": "HE"
+},
+"Sh_155mm_AMOS_LG": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "M_Mo_155mm_AT_LG"
+},
+"Sh_155mm_AMOS_guided": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "M_Mo_155mm_AT"
+},
+"Sh_75mm_Railgun_APFSDS": {
+"caliber": 33.333302,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 800.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 3000.0,
+"warheadName": "AP"
+},
+"Sh_75mm_Railgun_APFSDS_fake": {
+"caliber": 33.333302,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 2800.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"submunitionAmmo": "Sh_75mm_Railgun_APFSDS_sub_fake",
+"typicalSpeed": 3000.0,
+"warheadName": "AP"
+},
+"Sh_75mm_Railgun_APFSDS_sub_fake": {
+"caliber": 0.0,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 1.0,
+"indirectHit": 1.0,
+"indirectHitRange": 1.0
+},
+"Sh_82mm_AMOS": {
+"airFriction": 0.0,
+"caliber": 10.0,
+"deflecting": 0.0,
+"explosive": 0.80000001,
+"hit": 165.0,
+"indirectHit": 52.0,
+"indirectHitRange": 18.0,
+"typicalSpeed": 800.0,
+"warheadName": "HE"
+},
+"Sh_82mm_AMOS_LG": {
+"airFriction": 0.0,
+"hit": 165.0,
+"submunitionAmmo": "M_Mo_82mm_AT_LG"
+},
+"Sh_82mm_AMOS_guided": {
+"airFriction": 0.0,
+"hit": 165.0,
+"submunitionAmmo": "M_Mo_82mm_AT"
+},
+"ShellBase": {
+"caliber": 34.0,
+"deflecting": 10.0
+},
+"SmallSecondary": {
+"airFriction": 0.0,
+"caliber": 34.0,
+"deflecting": 10.0,
+"explosive": 1.0,
+"hit": 5.0,
+"indirectHit": 2.0,
+"indirectHitRange": 5.0,
+"typicalSpeed": 100.0
+},
+"SmokeLauncherAmmo": {
+"airFriction": -0.1,
+"caliber": 1.0,
+"deflecting": 15.0,
+"hit": 1.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"maxControlRange": 50.0
+},
+"SmokeLauncherAmmo_boat": {
+"airFriction": -0.1,
+"caliber": 1.0,
+"deflecting": 15.0,
+"hit": 1.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"maxControlRange": 50.0
+},
+"SmokeShell": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"SmokeShellArty": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"SmokeShellBlue": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"SmokeShellBlue_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"SmokeShellGreen": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"SmokeShellGreen_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"SmokeShellOrange": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"SmokeShellOrange_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"SmokeShellPurple": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"SmokeShellPurple_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"SmokeShellRed": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"SmokeShellRed_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"SmokeShellVehicle": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"SmokeShellVehicle_boat": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"SmokeShellYellow": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"SmokeShellYellow_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"SmokeShell_Infinite": {
+"deflecting": 30.0,
+"explosive": 0.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.2
+},
+"Smoke_120mm_AMOS_White": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "SmokeShellArty"
+},
+"Smoke_82mm_AMOS_White": {
+"submunitionAmmo": "SmokeShellArty"
+},
+"Sub_F_Signal_Green": {
+"airFriction": -0.021600001,
+"caliber": 1.2,
+"deflecting": 25.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"submunitionAmmo": "F_Signal_Green",
+"typicalSpeed": 380.0
+},
+"Sub_F_Signal_Red": {
+"airFriction": -0.021600001,
+"caliber": 1.2,
+"deflecting": 25.0,
+"hit": 0.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"submunitionAmmo": "F_Signal_Red",
+"typicalSpeed": 380.0
+},
+"SubmunitionBullet": {
+"explosive": 0.0,
+"submunitionAmmo": "BulletBase"
+},
+"UWMine_155mm_AMOS_range": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "Mo_UnderwaterMineRange"
+},
+"UXO_deployMine_base_F": {
+"airFriction": 0.0,
+"hit": 300.0
+},
+"UXO_deploy_BombCluster_base_F": {
+"hit": 35.0,
+"indirectHit": 25.0,
+"indirectHitRange": 8.0
+},
+"UXO_deploy_base_f": {
+"hit": 35.0,
+"indirectHit": 25.0,
+"indirectHitRange": 8.0
+},
+"ammo_AAA_Gun35mm_AA": {
+"airFriction": -0.00034999999,
+"caliber": 4.5,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 72.0,
+"indirectHit": 6.0,
+"indirectHitRange": 1.0,
+"typicalSpeed": 950.0,
+"warheadName": "AP"
+},
+"ammo_Bomb_LaserGuidedBase": {
+"airFriction": 0.059999999,
+"hit": 5000.0,
+"indirectHit": 1100.0,
+"indirectHitRange": 12.0,
+"missileLockMaxDistance": 5000.0
+},
+"ammo_Bomb_SDB": {
+"airFriction": 0.059999999,
+"hit": 1800.0,
+"indirectHit": 85.0,
+"indirectHitRange": 3.0,
+"missileLockMaxDistance": 5000.0
+},
+"ammo_Bomb_SmallDiameterBase": {
+"airFriction": 0.059999999,
+"hit": 1800.0,
+"indirectHit": 85.0,
+"indirectHitRange": 3.0,
+"missileLockMaxDistance": 5000.0
+},
+"ammo_Fighter01_Gun20mm_AA": {
+"airFriction": -0.00078,
+"caliber": 3.4000001,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 60.0,
+"indirectHit": 6.0,
+"indirectHitRange": 0.40000001,
+"typicalSpeed": 1030.0,
+"warheadName": "AP"
+},
+"ammo_Fighter02_Gun30mm_AA": {
+"airFriction": -0.00050000002,
+"caliber": 4.5,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 70.0,
+"indirectHit": 6.0,
+"indirectHitRange": 1.0,
+"typicalSpeed": 980.0,
+"warheadName": "AP"
+},
+"ammo_Fighter04_Gun20mm_AA": {
+"airFriction": -0.00078,
+"caliber": 3.4000001,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 60.0,
+"indirectHit": 6.0,
+"indirectHitRange": 0.40000001,
+"typicalSpeed": 1030.0,
+"warheadName": "AP"
+},
+"ammo_Gun20mmAABase": {
+"airFriction": -0.00078,
+"caliber": 3.4000001,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 60.0,
+"indirectHit": 6.0,
+"indirectHitRange": 0.40000001,
+"typicalSpeed": 1030.0,
+"warheadName": "AP"
+},
+"ammo_Gun30mmAABase": {
+"airFriction": -0.00050000002,
+"caliber": 4.5,
+"deflecting": 15.0,
+"explosive": 0.0,
+"hit": 70.0,
+"indirectHit": 6.0,
+"indirectHitRange": 1.0,
+"typicalSpeed": 980.0,
+"warheadName": "AP"
+},
+"ammo_Gun35mmAABase": {
+"airFriction": -0.00034999999,
+"caliber": 4.5,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 72.0,
+"indirectHit": 6.0,
+"indirectHitRange": 1.0,
+"typicalSpeed": 950.0,
+"warheadName": "AP"
+},
+"ammo_Missile_AA_R73": {
+"airFriction": 0.16,
+"deflecting": 0.0,
+"hit": 140.0,
+"indirectHit": 95.0,
+"indirectHitRange": 10.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 700.0,
+"missileLockMaxDistance": 6000.0,
+"warheadName": "HE"
+},
+"ammo_Missile_AA_R77": {
+"airFriction": 0.079999998,
+"deflecting": 0.0,
+"hit": 200.0,
+"indirectHit": 125.0,
+"indirectHitRange": 13.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 900.0,
+"missileLockMaxDistance": 12000.0,
+"warheadName": "HE"
+},
+"ammo_Missile_AMRAAM_C": {
+"airFriction": 0.07,
+"deflecting": 0.0,
+"hit": 200.0,
+"indirectHit": 125.0,
+"indirectHitRange": 13.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 900.0,
+"missileLockMaxDistance": 12000.0,
+"warheadName": "HE"
+},
+"ammo_Missile_AMRAAM_D": {
+"airFriction": 0.064999998,
+"deflecting": 0.0,
+"hit": 200.0,
+"indirectHit": 125.0,
+"indirectHitRange": 13.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 900.0,
+"missileLockMaxDistance": 13000.0,
+"warheadName": "HE"
+},
+"ammo_Missile_AntiRadiationBase": {
+"airFriction": 0.050000001,
+"deflecting": 0.0,
+"hit": 2100.0,
+"indirectHit": 85.0,
+"indirectHitRange": 8.0,
+"maxControlRange": 16000.0,
+"maxSpeed": 828.0,
+"missileLockMaxDistance": 16000.0,
+"warheadName": "HE"
+},
+"ammo_Missile_BIM9X": {
+"airFriction": 0.14,
+"deflecting": 0.0,
+"hit": 130.0,
+"indirectHit": 85.0,
+"indirectHitRange": 10.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 700.0,
+"missileLockMaxDistance": 5000.0,
+"warheadName": "HE"
+},
+"ammo_Missile_CannonLaunchedBase": {
+"airFriction": 0.050000001,
+"deflecting": 0.0,
+"explosive": 0.40000001,
+"hit": 750.0,
+"indirectHit": 15.0,
+"indirectHitRange": 4.5,
+"maxControlRange": 5000.0,
+"maxSpeed": 280.0,
+"warheadName": "HE"
+},
+"ammo_Missile_CruiseBase": {
+"airFriction": 0.44999999,
+"deflecting": 0.0,
+"explosive": 0.80000001,
+"hit": 6000.0,
+"indirectHit": 2000.0,
+"indirectHitRange": 30.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 194.444,
+"missileLockMaxDistance": 32000.0,
+"warheadName": "HE"
+},
+"ammo_Missile_Cruise_01": {
+"airFriction": 0.44999999,
+"deflecting": 0.0,
+"explosive": 0.80000001,
+"hit": 6000.0,
+"indirectHit": 2000.0,
+"indirectHitRange": 30.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 194.444,
+"missileLockMaxDistance": 32000.0,
+"warheadName": "HE"
+},
+"ammo_Missile_Cruise_01_Cluster": {
+"airFriction": 0.44999999,
+"deflecting": 0.0,
+"explosive": 0.80000001,
+"hit": 6000.0,
+"indirectHit": 2000.0,
+"indirectHitRange": 30.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 194.444,
+"missileLockMaxDistance": 32000.0,
+"warheadName": "HE"
+},
+"ammo_Missile_HARM": {
+"airFriction": 0.050000001,
+"deflecting": 0.0,
+"hit": 2100.0,
+"indirectHit": 85.0,
+"indirectHitRange": 8.0,
+"maxControlRange": 16000.0,
+"maxSpeed": 828.0,
+"missileLockMaxDistance": 16000.0,
+"warheadName": "HE"
+},
+"ammo_Missile_KH58": {
+"airFriction": 0.050000001,
+"deflecting": 0.0,
+"hit": 2100.0,
+"indirectHit": 85.0,
+"indirectHitRange": 8.0,
+"maxControlRange": 16000.0,
+"maxSpeed": 828.0,
+"missileLockMaxDistance": 16000.0,
+"warheadName": "HE"
+},
+"ammo_Missile_LongRangeAABase": {
+"airFriction": 0.090000004,
+"deflecting": 0.0,
+"hit": 400.0,
+"indirectHit": 90.0,
+"indirectHitRange": 30.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 850.0,
+"missileLockMaxDistance": 16000.0,
+"warheadName": "HE"
+},
+"ammo_Missile_MediumRangeAABase": {
+"airFriction": 0.07,
+"deflecting": 0.0,
+"hit": 200.0,
+"indirectHit": 125.0,
+"indirectHitRange": 13.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 900.0,
+"missileLockMaxDistance": 12000.0,
+"warheadName": "HE"
+},
+"ammo_Missile_ShortRangeAABase": {
+"airFriction": 0.14,
+"deflecting": 0.0,
+"hit": 130.0,
+"indirectHit": 85.0,
+"indirectHitRange": 10.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 700.0,
+"missileLockMaxDistance": 5000.0,
+"warheadName": "HE"
+},
+"ammo_Missile_mim145": {
+"airFriction": 0.090000004,
+"deflecting": 0.0,
+"hit": 400.0,
+"indirectHit": 90.0,
+"indirectHitRange": 30.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 850.0,
+"missileLockMaxDistance": 16000.0,
+"warheadName": "HE"
+},
+"ammo_Missile_rim116": {
+"airFriction": 0.16,
+"deflecting": 0.0,
+"hit": 130.0,
+"indirectHit": 85.0,
+"indirectHitRange": 10.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 800.0,
+"missileLockMaxDistance": 4000.0,
+"warheadName": "HE"
+},
+"ammo_Missile_rim162": {
+"airFriction": 0.090000004,
+"deflecting": 0.0,
+"hit": 200.0,
+"indirectHit": 200.0,
+"indirectHitRange": 13.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 900.0,
+"missileLockMaxDistance": 12000.0,
+"warheadName": "HE"
+},
+"ammo_Missile_s750": {
+"airFriction": 0.090000004,
+"deflecting": 0.0,
+"hit": 400.0,
+"indirectHit": 90.0,
+"indirectHitRange": 30.0,
+"maxControlRange": 4000.0,
+"maxSpeed": 850.0,
+"missileLockMaxDistance": 16000.0,
+"warheadName": "HE"
+},
+"ammo_Penetrator_105mm": {
+"airFriction": -0.28,
+"caliber": 28.6667,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 450.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "HEAT"
+},
+"ammo_Penetrator_120mm": {
+"airFriction": -0.28,
+"caliber": 40.0,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 510.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "HEAT"
+},
+"ammo_Penetrator_120mm_missile": {
+"airFriction": -0.28,
+"caliber": 53.333302,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 630.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "TandemHEAT"
+},
+"ammo_Penetrator_125mm": {
+"airFriction": -0.28,
+"caliber": 43.333302,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 532.5,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "TandemHEAT"
+},
+"ammo_Penetrator_125mm_missile": {
+"airFriction": -0.28,
+"caliber": 56.666698,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 600.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "TandemHEAT"
+},
+"ammo_Penetrator_30mm": {
+"airFriction": -0.28,
+"caliber": 2.0,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 75.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "HEAT"
+},
+"ammo_Penetrator_AGM_01": {
+"airFriction": -0.28,
+"caliber": 66.666702,
+"deflecting": 0.0,
+"explosive": 0.64999998,
+"hit": 1650.0,
+"indirectHit": 90.0,
+"indirectHitRange": 10.0,
+"typicalSpeed": 1000.0,
+"warheadName": "HE"
+},
+"ammo_Penetrator_AGM_02": {
+"airFriction": -0.28,
+"caliber": 66.666702,
+"deflecting": 0.0,
+"explosive": 0.64999998,
+"hit": 1500.0,
+"indirectHit": 85.0,
+"indirectHitRange": 8.0,
+"typicalSpeed": 1000.0,
+"warheadName": "HE"
+},
+"ammo_Penetrator_Base": {
+"airFriction": -0.28,
+"caliber": 40.0,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 300.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "HEAT"
+},
+"ammo_Penetrator_Firefist": {
+"airFriction": -0.28,
+"caliber": 60.0,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 750.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "TandemHEAT"
+},
+"ammo_Penetrator_Jian": {
+"airFriction": -0.28,
+"caliber": 66.666702,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 999.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "TandemHEAT"
+},
+"ammo_Penetrator_MRAAWS": {
+"airFriction": -0.28,
+"caliber": 33.333302,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 495.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "TandemHEAT"
+},
+"ammo_Penetrator_MRAAWS_HEAT55": {
+"airFriction": -0.28,
+"caliber": 26.6667,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 450.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "HEAT"
+},
+"ammo_Penetrator_NLAW": {
+"airFriction": -0.28,
+"caliber": 26.6667,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 525.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "AP"
+},
+"ammo_Penetrator_PG7": {
+"airFriction": -0.28,
+"caliber": 20.0,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 390.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "HEAT"
+},
+"ammo_Penetrator_PG_AT": {
+"airFriction": -0.28,
+"caliber": 20.0,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 450.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "HEAT"
+},
+"ammo_Penetrator_RPG32V": {
+"airFriction": -0.28,
+"caliber": 43.333302,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 480.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "TandemHEAT"
+},
+"ammo_Penetrator_Rocket_03_AP": {
+"airFriction": -0.28,
+"caliber": 26.6667,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 420.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "HEAT"
+},
+"ammo_Penetrator_Rocket_04_AP": {
+"airFriction": -0.28,
+"caliber": 20.0,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 435.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "HEAT"
+},
+"ammo_Penetrator_SPG9": {
+"airFriction": -0.28,
+"caliber": 26.6667,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 450.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "HEAT"
+},
+"ammo_Penetrator_Scalpel": {
+"airFriction": -0.28,
+"caliber": 56.666698,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 900.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "TandemHEAT"
+},
+"ammo_Penetrator_Titan_AT": {
+"airFriction": -0.28,
+"caliber": 60.0,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 585.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "HEAT"
+},
+"ammo_Penetrator_Titan_AT_long": {
+"airFriction": -0.28,
+"caliber": 60.0,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 780.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "TandemHEAT"
+},
+"ammo_Penetrator_Vorona": {
+"airFriction": -0.28,
+"caliber": 60.0,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 720.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "TandemHEAT"
+},
+"ammo_Penetrator_grenade_40mm": {
+"airFriction": -0.28,
+"caliber": 3.3333299,
+"deflecting": 0.0,
+"explosive": 0.0,
+"hit": 84.0,
+"indirectHit": 0.0,
+"indirectHitRange": 0.0,
+"typicalSpeed": 1000.0,
+"warheadName": "HEAT"
+},
+"ammo_ShipCannon_120mm_AT_mine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "Mo_ATMineRange"
+},
+"ammo_ShipCannon_120mm_HE": {
+"airFriction": 0.0,
+"caliber": 10.0,
+"deflecting": 0.0,
+"explosive": 0.80000001,
+"hit": 340.0,
+"indirectHit": 125.0,
+"indirectHitRange": 30.0,
+"typicalSpeed": 800.0,
+"warheadName": "HE"
+},
+"ammo_ShipCannon_120mm_HE_LG": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "M_Mo_155mm_AT_LG"
+},
+"ammo_ShipCannon_120mm_HE_cluster": {
+"airFriction": 0.0,
+"hit": 300.0
+},
+"ammo_ShipCannon_120mm_HE_guided": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "M_Mo_155mm_AT"
+},
+"ammo_ShipCannon_120mm_mine": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "Mo_ClassicMineRange"
+},
+"ammo_ShipCannon_120mm_smoke": {
+"airFriction": 0.0,
+"hit": 300.0,
+"submunitionAmmo": "SmokeShellArty"
+},
+"mini_Grenade": {
+"deflecting": 30.0,
+"explosive": 1.0,
+"hit": 6.0,
+"indirectHit": 6.0,
+"indirectHitRange": 4.0
+}
+}

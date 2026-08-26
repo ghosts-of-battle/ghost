@@ -16,11 +16,11 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-26 functions.
+25 functions.
 
 ## Functions
 
-<details><summary>26</summary>
+<details><summary>25</summary>
 
 - `ghost_systems_fnc_addHeal`
 - `ghost_systems_fnc_addHealall`
@@ -31,7 +31,6 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 - `ghost_systems_fnc_createVehicleLable`
 - `ghost_systems_fnc_deleteDroppedObjects`
 - `ghost_systems_fnc_doGetOutHeloSide`
-- `ghost_systems_fnc_dumpClassnames`
 - `ghost_systems_fnc_dynamicMarkers`
 - `ghost_systems_fnc_filterUnitLoadout`
 - `ghost_systems_fnc_getAttendance`

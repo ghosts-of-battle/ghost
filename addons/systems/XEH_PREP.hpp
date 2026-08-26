@@ -7,7 +7,6 @@ PREP(createActionCategory);
 PREP(createVehicleLable);
 PREP(deleteDroppedObjects);
 PREP(doGetOutHeloSide);
-PREP(dumpClassnames);
 PREP(dynamicMarkers);
 PREP(filterUnitLoadout);
 PREP(getAttendance);

@@ -58,19 +58,18 @@ private _pad = PAD * safeZoneW;
 // slot is three lines with holes between them rather than a screen.
 private _rows = 3;
 private _base = ROW_H * EGVAR(tacpad,textScale) * EGVAR(tacpad,uiScale) * safeZoneH;
-// FILL THE SLOT. Rows spread over whatever box the slot has in the game's
-// own Layout editor and the type scales with them - content huddled in the
-// top corner of a tall box was the old behaviour.
-private _rowH = (_h - _y - (PAD * safeZoneW)) / _rows;
+// SHRINK ONLY, EXACTLY AS THE RULE ABOVE SAYS. This divided the whole box for
+// a while, which is how three lines came to be spread down a default-sized
+// slot at twice the type size of everything else in the suite.
+private _rowH = _base min ((_h - _y - (PAD * safeZoneW)) / _rows);
 
 // THE HANDSET'S OWN GLYPHS, in the handset's own gutter - signal, jam (broken
 // when smothered), mesh. The tile claimed to be the device's look and carried
 // none of its iconography; a man reads the glyph before the word.
-// CLAMPED BY BOTH AXES. Height alone sized these, and rows spread over a
-// TALL box - which is what filling the slot means in a tall box - made the
-// glyphs wider than the box itself: the screenshot's scanner icons
-// spilling out of their frame. An icon is a gutter ornament; it never
-// gets more than a fifth of the width, whatever the rows do.
+// CLAMPED BY BOTH AXES. Height alone sized these, and a row that grew with a
+// tall box made the glyphs wider than the box itself: the screenshot's
+// scanner icons spilling out of their frame. An icon is a gutter ornament; it
+// never gets more than a fifth of the width, whatever the rows do.
 private _icoH = (_rowH * 0.62) min ((_w * 0.2) * pixelH / pixelW);
 private _gutter = _icoH * pixelW / pixelH + _pad * 2;
 
@@ -84,7 +83,7 @@ private _cellW = ((safeZoneW / safeZoneH) min 1.2) / 40;
 // stops guessing at the edge and undershoots instead. Floor low enough to
 // always fit before it clips.
 private _kw = (0.85 * (_w * 0.58 - _gutter - _pad * 2) / (5 * _cellW - _gutter - _pad * 2)) max 0.8;
-private _k = (((_rowH / _base) min _kw) max 0.8) min 2.2;
+private _k = ((_rowH / _base) min _kw) max 0.8;
 private _size = 0.72 * _k;
 
 private _fnc_line = {

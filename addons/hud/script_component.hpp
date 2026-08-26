@@ -34,9 +34,10 @@
 #define HUD_SLOT_LEFT 0
 #define HUD_SLOT_RIGHT 1
 
-// How wide a slot is, in grid cells - the same unit the Layout editor uses.
-#define HUD_CELLS_W 13
-#define HUD_CELLS_H 9
+// How big a slot is, in grid cells, lives with the grid itself - gui.hpp, where
+// it is the vanilla Custom Info panel's own ten by ten. Two defines here said
+// thirteen by nine, were read by nothing, and were the third number in the mod
+// claiming to be the panel's size.
 
 // How long the title layer lives before the engine drops it, and how often
 // the mission renews it. The gap between them is the slack: the renewal

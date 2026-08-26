@@ -29,14 +29,33 @@
 // resized, because a squad list wants to be tall and a jamming bar wants to be
 // short, and only the player knows which they are looking at.
 //
-// TEN CELLS BY TWENTY, which is the vanilla Custom Info panel's ACTUAL size -
-// measured off DefaultVehicleSystemsDisplayManagerLeft in ui_f: 10 cells wide,
-// y at bottom minus 21 with a one-cell margin, so the box itself is 20 tall.
-// This said "ten by ten ... the panel's own size" for six rounds of "resize it
-// to match the custom info", and ten by ten is a squat letterbox half the
-// vanilla panel's height - the exact shape in every red-box screenshot. The
-// left slot now takes the vanilla panel's own width and height and parks one
-// cell above the vanilla box, which sits at bottom-left holding the GPS.
+// TEN CELLS BY TEN, WHICH IS THE VANILLA CUSTOM INFO PANEL, EXACTLY. Read it
+// off the game's own header - include/a3/ui_f/hpp/defineCommonGrids.inc, which
+// is in this repo:
+//
+//   IGUI_GRID_CUSTOMINFO_WDef       (10 * GUI_GRID_W)
+//   IGUI_GRID_CUSTOMINFO_HDef       (10 * GUI_GRID_H)
+//   IGUI_GRID_CUSTOMINFOLEFT_XDef   (safeZoneX + 0.5 * GUI_GRID_W)
+//   IGUI_GRID_CUSTOMINFOLEFT_YDef   (safeZoneY + safeZoneH - 21 * GUI_GRID_H)
+//   IGUI_GRID_CUSTOMINFORIGHT_XDef  ((safeZoneX + safeZoneW) - (10.5 * GUI_GRID_W))
+//   IGUI_GRID_CUSTOMINFORIGHT_YDef  (safeZoneY + safeZoneH - 21 * GUI_GRID_H)
+//
+// and HUD_CELL_W / HUD_CELL_H below ARE GUI_GRID_W and GUI_GRID_H, spelled out.
+//
+// THE HEIGHT WAS TWENTY, WHICH IS TWICE THE PANEL. The 21 in the vanilla Y is
+// where the panel's TOP EDGE sits - 21 cells up from the bottom of a grid that
+// is 25 cells tall - and not its height; the height is its own define and it
+// is ten. Read as a height it made a box covering four fifths of the screen,
+// and it dragged the left slot's Y out to 42 cells to clear a vanilla box it
+// had put at the bottom of the screen: 42 cells up a 25-cell grid is off the
+// top of it, which is where the left slot's default has been.
+//
+// BOTH SLOTS NOW SIT WHERE THE GAME PUTS ITS OWN INFO PANELS, AT THEIR SIZE -
+// left and right, mid-height against the screen edge. That is also the one
+// place on the screen the base game has already reserved for a readout of
+// exactly this kind. A player who runs a vanilla panel in the same slot - a
+// GPS minimap on the left, vehicle sensors on the right - moves one of the two
+// in Options > Game > Layout, which is what that screen is for.
 //
 // The defaults below are macros ONLY where they are array elements. The control
 // positions underneath are written out in full: a config value cannot be built
@@ -46,11 +65,11 @@
 class RscControlsGroupNoScrollbars;
 
 #define HUD_DEF_LEFT_X "(safeZoneX + 0.5 * (((safeZoneW / safeZoneH) min 1.2) / 40))"
-#define HUD_DEF_LEFT_Y "(safeZoneY + safeZoneH - 42 * ((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 25))"
-#define HUD_DEF_RIGHT_X "((safeZoneX + safeZoneW) - 11 * (((safeZoneW / safeZoneH) min 1.2) / 40))"
-#define HUD_DEF_RIGHT_Y "(safeZoneY + 6 * ((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 25))"
+#define HUD_DEF_LEFT_Y "(safeZoneY + safeZoneH - 21 * ((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 25))"
+#define HUD_DEF_RIGHT_X "((safeZoneX + safeZoneW) - 10.5 * (((safeZoneW / safeZoneH) min 1.2) / 40))"
+#define HUD_DEF_RIGHT_Y "(safeZoneY + safeZoneH - 21 * ((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 25))"
 #define HUD_DEF_W "(10 * (((safeZoneW / safeZoneH) min 1.2) / 40))"
-#define HUD_DEF_H "(20 * ((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 25))"
+#define HUD_DEF_H "(10 * ((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 25))"
 #define HUD_CELL_W "(((safeZoneW / safeZoneH) min 1.2) / 40)"
 #define HUD_CELL_H "((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 25)"
 
@@ -128,15 +147,15 @@ class CfgUIGrids {
 class GVAR(slotLeft): RscControlsGroupNoScrollbars {
     idc = IDC_HUD_LEFT;
     x = "(profilenamespace getVariable ['IGUI_grid_ghost_hudLeft_X', (safeZoneX + 0.5 * (((safeZoneW / safeZoneH) min 1.2) / 40))])";
-    y = "(profilenamespace getVariable ['IGUI_grid_ghost_hudLeft_Y', (safeZoneY + safeZoneH - 42 * ((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 25))])";
+    y = "(profilenamespace getVariable ['IGUI_grid_ghost_hudLeft_Y', (safeZoneY + safeZoneH - 21 * ((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 25))])";
     w = "(profilenamespace getVariable ['IGUI_grid_ghost_hudLeft_W', (10 * (((safeZoneW / safeZoneH) min 1.2) / 40))])";
-    h = "(profilenamespace getVariable ['IGUI_grid_ghost_hudLeft_H', (20 * ((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 25))])";
+    h = "(profilenamespace getVariable ['IGUI_grid_ghost_hudLeft_H', (10 * ((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 25))])";
 };
 
 class GVAR(slotRight): RscControlsGroupNoScrollbars {
     idc = IDC_HUD_RIGHT;
-    x = "(profilenamespace getVariable ['IGUI_grid_ghost_hudRight_X', ((safeZoneX + safeZoneW) - 11 * (((safeZoneW / safeZoneH) min 1.2) / 40))])";
-    y = "(profilenamespace getVariable ['IGUI_grid_ghost_hudRight_Y', (safeZoneY + 6 * ((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 25))])";
+    x = "(profilenamespace getVariable ['IGUI_grid_ghost_hudRight_X', ((safeZoneX + safeZoneW) - 10.5 * (((safeZoneW / safeZoneH) min 1.2) / 40))])";
+    y = "(profilenamespace getVariable ['IGUI_grid_ghost_hudRight_Y', (safeZoneY + safeZoneH - 21 * ((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 25))])";
     w = "(profilenamespace getVariable ['IGUI_grid_ghost_hudRight_W', (10 * (((safeZoneW / safeZoneH) min 1.2) / 40))])";
-    h = "(profilenamespace getVariable ['IGUI_grid_ghost_hudRight_H', (20 * ((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 25))])";
+    h = "(profilenamespace getVariable ['IGUI_grid_ghost_hudRight_H', (10 * ((((safeZoneW / safeZoneH) min 1.2) / 1.2) / 25))])";
 };

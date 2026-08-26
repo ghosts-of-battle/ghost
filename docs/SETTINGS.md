@@ -89,6 +89,31 @@ ships with, which a mission or the forced list below can override.
 | Medics Only | CHECKBOX | Ghosts of Battle > Evac | `true` | If checked, only ACE medics can evacuate a downed player. Uncheck to let anyone do it. |
 | Evac Time (s) | SLIDER | Ghosts of Battle > Evac | `[0, 60, EVAC_DEFAULT_TIME, 0]` | How long the medic's evacuate progress bar takes, in seconds. |
 
+## Future Ammunition (`fa_ammo`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Enable Mk353 BRC Breaching Script | CHECKBOX | Fa Ammo | `true` | When enabled, firing the Mk353 BRC round near a door will attempt to force it open. Disable if a dedicated breaching mod handles this. |
+| Debug Mk353 BRC Breaching | CHECKBOX | Fa Ammo | `false` | Prints each step of the breach detection/open logic to chat when firing the Mk353 BRC round, to help diagnose why a door isn't opening. |
+
+## Future Ammunition - Anti-Drone (`fa_antidrone`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Anti-Drone Trigger Radius Multiplier | SLIDER | Fa Antidrone | `[0.25, 2, 1, 2]` | Scales the proximity trigger radius of all PAB rounds. 1 = default. |
+| Anti-Drone Lethal Radius Multiplier | SLIDER | Fa Antidrone | `[0.25, 2, 1, 2]` | Scales the lethal (blast) radius of all PAB rounds. 1 = default. |
+| Anti-Drone Damage Multiplier | SLIDER | Fa Antidrone | `[0.25, 2, 1, 2]` | Scales the proximity-airburst damage applied to UAVs by all PAB rounds. 1 = default. |
+
+## Future Ammunition - Medium Caliber (`fa_mediumcaliber`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Enable Faction Scaling | CHECKBOX | [Ghost] Medium Caliber 2040 | `true` | Master toggle for the West/Green/Red performance gradient. Off = flat parity, everyone performs at West's 100%. |
+| Green (Independent) Faction Fraction | SLIDER | [Ghost] Medium Caliber 2040 | `[0.50, 1.00, 0.85, 2]` | Fraction of West's performance ceiling realized by Independent/Green forces. 1.00 = parity with West. |
+| Red (OPFOR) Faction Fraction | SLIDER | [Ghost] Medium Caliber 2040 | `[0.50, 1.00, 0.75, 2]` | Fraction of West's performance ceiling realized by OPFOR/Red forces. 1.00 = parity with West. |
+| Counter-UAS Effectiveness Ceiling | SLIDER | [Ghost] Medium Caliber 2040 | `[0.75, 1.50, 1.40, 2]` | Scales the airburst/proximity radii and lethality of every programmable round in this module, on top of the faction fraction. |
+| Enable Scripted Airburst | CHECKBOX | [Ghost] Medium Caliber 2040 | `true` | Master switch for the programmable-fuze subsystem (ABM, PROX, AHEAD, AMP, HE-AB). Off = these rounds behave as plain point-detonate/kinetic rounds. |
+
 ## Fatigue (`fatigue`)
 
 | Setting | Type | Category | Default | What it does |

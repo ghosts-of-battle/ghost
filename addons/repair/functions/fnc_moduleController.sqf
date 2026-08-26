@@ -52,7 +52,12 @@ private _records = _objects apply {
         getPosATL _x,
         getDir _x,
         vectorUp _x,
-        (crew _x) isNotEqualTo [],
+        // An autonomous vehicle counts as crewed whether or not its UAV AI is
+        // seated yet: module init runs before the mission has finished crewing
+        // things, and a snapshot that catches an AA piece in that gap records
+        // it as never-crewed - so its respawn came back a permanently empty
+        // hull. The config knows what the moment cannot.
+        (crew _x) isNotEqualTo [] || {getNumber (configOf _x >> "isUav") > 0},
         -1,
         CBA_missionTime + (_cfg get "interval")
     ]

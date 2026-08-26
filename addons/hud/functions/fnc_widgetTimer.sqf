@@ -26,13 +26,17 @@ if (isNull _ctrl) exitWith {};
 ([] call EFUNC(tacpad,theme)) params ["_ground", "_ink", "_accent", "_line"];
 
 private _base = ROW_H * EGVAR(tacpad,textScale) * EGVAR(tacpad,uiScale) * safeZoneH;
-// FILL THE SLOT. Rows spread over whatever box the slot has in the game's
-// own Layout editor and the type scales with them - content huddled in the
-// top corner of a tall box was the old behaviour.
-private _rowH = (_h - _y - (PAD * safeZoneW)) / 3;
+// A ROW IS THE SUITE'S OWN ROW, AND IT ONLY EVER SHRINKS. Rows used to be the
+// slot's whole box divided by however many of them there were, so a slot at its
+// default size - the vanilla Custom Info panel's size - spread three lines down
+// the whole panel with holes between them, at type twice the size the rest of
+// the suite sets. The design's row height is the row height here too: a slot the
+// player has made too SHORT for its rows squeezes them, and one made taller
+// simply has air under the readout.
+private _rowH = _base min ((_h - _y - (PAD * safeZoneW)) / 3);
 // Width caps the scale too - see the note in FUNC(widgetEw).
 private _kw = (_w / (10 * (((safeZoneW / safeZoneH) min 1.2) / 40))) max 0.8;
-private _k = (((_rowH / _base) min _kw) max 0.8) min 2.2;
+private _k = ((_rowH / _base) min _kw) max 0.8;
 private _pad = PAD * safeZoneW;
 private _mute = [_ink # 0, _ink # 1, _ink # 2, 0.62];
 

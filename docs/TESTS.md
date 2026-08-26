@@ -215,6 +215,41 @@ first press queued is still in flight when the close lands.
 
 ---
 
+## 11. IADS / EMCON — the net blinks, and Phase 0
+
+**Run the probe before anything else in this section.** The addon was written
+against a design whose four engine questions were never verified, and the probe
+is those questions asked of a running game. Everything below is meaningless if
+`setVehicleRadar` turns out to be missing or inverted.
+
+Setup: a **Ghost - IADS / EMCON** module, and two or three enemy search radars
+standing somewhere you can watch them (ALiVE placement, a `ghost_airdefence`
+battery, or hand-placed in Eden). Turn **Debug Markers** on for this test only.
+
+    #ghost iads.probe
+    #ghost iads
+
+| Check | Pass | Fail means |
+|---|---|---|
+| `setVehicleRadar: present`, `listRemoteTargets: present` | ☐ | P0-1 fails: the addon cannot switch anything and refuses to arm - the RPT says so |
+| The probe names a radar and drives it, and forced ON and forced OFF look **different** on the dish or the RWR | ☐ | P0-1 is inverted: swap `IADS_RADAR_ON` and `IADS_RADAR_OFF` in `script_component.hpp` and nothing else |
+| RPT: `listRemoteTargets element is a ...` once a hostile aircraft is up | ☐ | P0-2 unanswered - the datalink is empty, so nothing is being shared to read |
+| While a set is forced OFF, does it still detect an aircraft close by? | ☐ | this IS P0-4, and either answer is a pass - write down which one you saw |
+| `#ghost iads` lists radars per side with some lit and some dark | ☐ | the scan found nothing: sides are wrong, or nothing hostile carries a radar |
+| Watch the markers for two minutes - sets flip at different moments, not together | ☐ | the jitter is not being re-rolled; every set is on one metronome |
+| With Minimum Emitters 1, at least one marker is green at all times | ☐ | the duty-cycle floor is not holding - the whole side can go dark |
+| Set Minimum Emitters to 0 and watch: the side does go fully dark sometimes | ☐ | the floor is being applied when it was switched off |
+| An always-on class named in **Always-On Classes** never goes dark | ☐ | the pinned list is not matching - check the classname, case does not matter |
+| Kill a radar: its marker disappears and `#ghost iads` counts one fewer | ☐ | the prune is not running, and dead hardware still counts towards the floor |
+| With **Threat Board Debug** on (CBA, Common), fly a hostile aircraft past a lit radar: the RPT files a `contact ... (radar)` for the radar's side | ☐ | the reveal bridge is not filing, and the rest of the mod cannot see the air picture |
+
+**P0-3 is not on this list because no script can answer it.** Park a radarless
+launcher and a search radar on one side, fly a target in, and watch whether the
+launcher *fires* on the shared track or only draws it. Only turn **Ambush Mode**
+on after you have seen it fire.
+
+---
+
 ## What "pass" means
 
 Not "the feature is good" — only **"the code ran and did roughly what it

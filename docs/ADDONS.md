@@ -118,9 +118,53 @@ A dependency in **bold** is an external mod.
 | `cas` | CAS | 1 |  | 12 | ghost_common |
 | `diag` | Diag |  |  | 4 | **cba_xeh** |
 | `documents` | Documents |  |  | 2 | ghost_diag, **cba_xeh** |
+| `fa_aegis` | Future Ammunition - Aegis |  |  |  | **cba_main**, **ace_ballistics**, ghost_fa_ammo, A3_Aegis_Weapons_F_Aegis, A3_Aegis_Weapons_F_Aegis_Rifles_SCAR |
+| `fa_ammo` | Future Ammunition |  |  | 2 | ghost_fa_main, **cba_main**, **ace_ballistics** |
+| `fa_antidrone` | Future Ammunition - Anti-Drone |  |  | 6 | ghost_fa_main, **cba_main**, **ace_ballistics** |
+| `fa_antidrone_ef` | Future Ammunition - Anti-Drone EF |  |  |  | **cba_main**, **ace_ballistics**, ghost_fa_ammo, **EF_Weapons** |
+| `fa_antidrone_jca` | Future Ammunition - Anti-Drone JCA |  |  |  | **cba_main**, **ace_ballistics**, ghost_fa_antidrone, **Weapons_F_JCA_IA_Rifles_M4A1**, **Weapons_F_JCA_IA_Rifles_HK437**, **Weapons_F_JCA_IA_Rifles_HK433** ... |
+| `fa_antidrone_rhs` | Future Ammunition - Anti-Drone RHS |  |  |  | **cba_main**, **ace_ballistics**, ghost_fa_antidrone, **rhsusf_c_weapons** |
+| `fa_atlas` | Future Ammunition - Atlas |  |  |  | **cba_main**, **ace_ballistics**, ghost_fa_ammo, A3_Atlas_Weapons_F_Atlas |
+| `fa_csat62` | Future Ammunition - 6.2x40 Caseless |  |  |  | ghost_fa_main, **cba_main**, **ace_ballistics**, A3_Weapons_F, ghost_fa_antidrone |
+| `fa_e22raf` | Future Ammunition - E22 Russian Armed Forces |  |  |  | **cba_main**, **ace_ballistics**, ghost_fa_ammo, **Weapons_F_RAF** |
+| `fa_ef` | Future Ammunition - Expeditionary Forces |  |  |  | **cba_main**, **ace_ballistics**, ghost_fa_ammo, **EF_Weapons** |
+| `fa_extracal` | Future Ammunition - Extra Calibers |  |  |  | **ace_ballistics**, ghost_fa_main, **cba_main**, A3_Weapons_F, ghost_fa_antidrone |
+| `fa_grenade_40mm` | Future Ammunition - 40mm Support |  |  | 12 | **ace_ballistics**, ghost_fa_main, **cba_main**, A3_Weapons_F |
+| `fa_jca` | Future Ammunition - JCA |  |  |  | **cba_main**, **ace_ballistics**, ghost_fa_ammo, **Weapons_F_JCA_IA_Rifles_M4A1**, **Weapons_F_JCA_IA_Rifles_HK437**, **Weapons_F_JCA_IA_Rifles_HK433** ... |
+| `fa_jca_mk153` | Future Ammunition - JCA Mk153 SMAW |  |  |  | **ace_ballistics**, ghost_fa_main, **cba_main**, ghost_fa_antidrone, **Weapons_F_JCA_IA_Launchers_Mk153** |
+| `fa_lot` | Future Ammunition - lot 12G |  |  |  | **ace_ballistics**, ghost_fa_main, ghost_fa_ammo, **lot_aaf_m1014**, **cba_main** |
+| `fa_maaws` | Future Ammunition - MAAWS |  |  |  | **ace_ballistics**, ghost_fa_main, **cba_main**, ghost_fa_antidrone, A3_Weapons_F_Tank_Launchers_MRAWS |
+| `fa_main` | Fa Main |  |  | 1 | **ace_ballistics**, **cba_main**, **cba_xeh** |
+| `fa_maincaliber` | Future Ammunition - Main Caliber |  |  |  | **ace_ballistics**, ghost_fa_main, **cba_main**, ghost_fa_mediumcaliber |
+| `fa_mediumcaliber` | Future Ammunition - Medium Caliber |  |  | 3 | **ace_ballistics**, ghost_fa_main, **cba_main** |
+| `fa_missiles` | Future Ammunition - Vehicle Missiles |  |  | 1 | **ace_ballistics**, ghost_fa_main, **cba_main**, ghost_fa_mediumcaliber |
+| `fa_qav_abramsx` | Future Ammunition - QAV AbramsX |  |  |  | **ace_ballistics**, ghost_fa_main, ghost_fa_ammo, ghost_fa_mediumcaliber, ghost_fa_maincaliber, **QAV_AbramsX** ... |
+| `fa_qav_ef_abramsx` | Future Ammunition - QAV EF AbramsX |  |  |  | **ace_ballistics**, ghost_fa_main, ghost_fa_mediumcaliber, **QAV_EF_AbramsX_Compat**, **cba_main** |
+| `fa_qav_ripsaw` | Future Ammunition - QAV Ripsaw |  |  |  | **ace_ballistics**, ghost_fa_main, ghost_fa_ammo, ghost_fa_mediumcaliber, **QAV_Ripsaw**, **cba_main** |
+| `fa_rf` | Future Ammunition - Reaction Forces |  |  |  | **RF_Data_Loadorder**, **ace_ballistics**, ghost_fa_main, **cba_main**, A3_Weapons_F, A3_Weapons_F_Destroyer ... |
+| `fa_rhs` | Future Ammunition - RHS |  |  |  | **cba_main**, **ace_ballistics**, ghost_fa_ammo, **rhsusf_c_weapons** |
+| `fa_rpg` | Future Ammunition - RPG-32 / RPG-7 |  |  |  | **ace_ballistics**, ghost_fa_main, **cba_main**, ghost_fa_antidrone, A3_Weapons_F_Launchers_RPG32, A3_Weapons_F_Exp_Launchers_RPG7 |
+| `fa_sps` | Future Ammunition - SPS |  |  |  | **cba_main**, **ace_ballistics**, ghost_fa_ammo, **SPS_weapons_hk416**, **SPS_weapons_ai_axmc** |
+| `fa_tiers` | Future Ammunition - Tiers |  |  | 1 | **cba_xeh**, ghost_fa_ammo, ghost_fa_antidrone, ghost_fa_csat62, ghost_fa_extracal, ghost_fa_main |
+| `fa_tiers_mods` | Future Ammunition - Tiers (mods) |  |  |  | **cba_xeh**, ghost_fa_aegis, ghost_fa_antidrone_ef, ghost_fa_antidrone_jca, ghost_fa_antidrone_rhs, ghost_fa_e22raf ... |
+| `fa_vehicles` | Future Ammunition - Vehicle Weapons |  |  |  | **ace_ballistics**, ghost_fa_main, ghost_fa_ammo, A3_Weapons_F, A3_Armor_F_Gamma, **ace_missile_clgp** ... |
+| `fa_vorona` | Future Ammunition - Vorona |  |  |  | **ace_ballistics**, ghost_fa_main, **cba_main**, ghost_fa_antidrone, A3_Weapons_F_Tank_Launchers_Vorona |
+| `fa_vve` | Future Ammunition - VVE Vehicles |  |  |  | **ace_ballistics**, ghost_fa_main, ghost_fa_ammo, ghost_fa_mediumcaliber, ghost_fa_maincaliber, ghost_fa_missiles ... |
+| `faction_csat` | CSAT | 284 |  |  | - |
+| `faction_himf` | HIMF | 73 |  |  | - |
+| `faction_insurgents` | Insurgents | 36 |  |  | - |
+| `faction_marine_des` | Marine (Desert) | 99 |  |  | - |
+| `faction_marine_wdl` | Marine (Wdl) | 99 |  |  | - |
+| `faction_mfrc` | MFRC | 4 |  |  | ghost_uniform_sof, ghost_headware |
+| `faction_syndikat` | Syndikat | 47 |  |  | - |
+| `faction_us` | US | 309 |  |  | - |
+| `faction_us_des` | US (Desert) | 150 |  |  | - |
+| `faction_us_tna` | US (Pacific) | 174 |  |  | - |
+| `faction_us_wdl` | US (Woodland) | 162 |  |  | - |
 | `gear` | Gear |  |  | 9 | ghost_diag, **cba_xeh** |
 | `groups` | Groups |  |  | 12 | ghost_diag, **cba_xeh** |
 | `hud` | HUD |  |  | 15 | ghost_common, ghost_tacpad, **cba_xeh** |
+| `iads` | IADS | 1 |  | 17 | ghost_common, **cba_xeh** |
 | `init` | Init |  |  | 13 | ghost_diag, **cba_xeh** |
 | `jamming` | Jamming | 1 |  | 13 | ghost_common, **cba_xeh** |
 | `leaders` | Leaders | 1 |  | 16 | ghost_common, ghost_notify, **cba_xeh** |
@@ -133,7 +177,7 @@ A dependency in **bold** is an external mod.
 | `reaction` | Reaction | 1 |  | 6 | ghost_common, ghost_notify, **cba_xeh** |
 | `repair` | Repair | 1 |  | 3 | ghost_common, **cba_xeh** |
 | `satcom` | SatCom | 1 | 1 | 5 | **ace_interact_menu**, **cba_xeh** |
-| `systems` | Systems |  |  | 26 | ghost_diag, **cba_xeh** |
+| `systems` | Systems |  |  | 25 | ghost_diag, **cba_xeh** |
 | `tacpad` | Tacpad |  |  | 49 | ghost_common, **cba_xeh** |
 | `tacpad_apps` | Tacpad Apps |  |  | 34 | ghost_common, ghost_tacpad, **cba_xeh** |
 | `teleport` | Teleport |  |  | 11 | ghost_notify, **cba_settings**, **cba_xeh** |
@@ -156,4 +200,4 @@ Not loaded by default - copy out of `optionals/` to use.
 These declare `skipWhenMissingDependencies`, so they drop out quietly when an
 external mod is absent instead of breaking the load:
 
-`adapter_alive`, `airdefence`, `ambience`, `antiship`, `boarding`, `diag`, `documents`, `gear`, `groups`, `headware_jca_ie`, `init`, `jamming`, `leaders`, `logistics`, `mission`, `naval`, `nvg`, `optics`, `optics_ef`, `patrol_base`, `players`, `qrf`, `reaction`, `repair`, `satcom`, `systems`, `teleport`, `uas`, `uniform_eu`, `uniform_sof`, `vehicle`, `vests_aegis`, `vests_efa`, `vests_jca`, `vests_sof`, `vests_ws`, `vs17`, `weapons_jca`, `zenmodules`, `weapons_spsv2`
+`adapter_alive`, `airdefence`, `ambience`, `antiship`, `boarding`, `diag`, `documents`, `fa_aegis`, `fa_antidrone_ef`, `fa_antidrone_jca`, `fa_antidrone_rhs`, `fa_atlas`, `fa_e22raf`, `fa_ef`, `fa_jca`, `fa_jca_mk153`, `fa_lot`, `fa_qav_abramsx`, `fa_qav_ef_abramsx`, `fa_qav_ripsaw`, `fa_rf`, `fa_rhs`, `fa_sps`, `fa_tiers_mods`, `fa_vehicles`, `fa_vve`, `faction_csat`, `faction_himf`, `faction_insurgents`, `faction_marine_des`, `faction_marine_wdl`, `faction_mfrc`, `faction_syndikat`, `faction_us`, `faction_us_des`, `faction_us_tna`, `faction_us_wdl`, `gear`, `groups`, `headware_jca_ie`, `iads`, `init`, `jamming`, `leaders`, `logistics`, `mission`, `naval`, `nvg`, `optics`, `optics_ef`, `patrol_base`, `players`, `qrf`, `reaction`, `repair`, `satcom`, `systems`, `teleport`, `uas`, `uniform_eu`, `uniform_sof`, `vehicle`, `vests_aegis`, `vests_efa`, `vests_jca`, `vests_sof`, `vests_ws`, `vs17`, `weapons_jca`, `zenmodules`, `weapons_spsv2`

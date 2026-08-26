@@ -11,6 +11,21 @@ GVAR(curators) = [];
     params ["_curator"];
     _curator addEventHandler ["CuratorObjectPlaced", {
         params ["", "_object"];
+        // AN AUTONOMOUS VEHICLE KEEPS ITS AI. ALiVE profiles what Zeus places
+        // (the mission's zeusSpawn option), deletes the original, and hands
+        // back a bare hull - its profiler blacklists UAV-AI crew, so the seat
+        // comes back empty. The adapter's profileIgnore is the opt-out, the
+        // same one airdefence sets on its batteries; without ALiVE it is an
+        // inert variable. isUav covers every autonomous turret and drone - it
+        // is what makes them UAV-terminal connectable - never a crewed truck.
+        if (getNumber (configOf _object >> "isUav") > 0) then {
+            [_object] call EFUNC(adapter_alive,profileIgnore);
+            // The crew's GROUP, not the men one by one: the adapter's group
+            // path marks the group, its members and their vehicle in one go,
+            // which is what protects a modded drone whose crew class is not
+            // on ALiVE's own UAV-crew blacklist.
+            [group ((crew _object) param [0, objNull])] call EFUNC(adapter_alive,profileIgnore);
+        };
         [QGVAR(objectAdd), _object] call CBA_fnc_serverEvent;
     }];
     _curator addEventHandler ["CuratorGroupPlaced", {

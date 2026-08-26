@@ -32,10 +32,17 @@ private _bestDist = HACK_DRONE_RANGE + 1;
 {
     // named, so the class-list findIf below does not shadow it with its own _x
     private _veh = _x;
+    // Side off the crew, worked out once. A UAV carries its AI whether or not a
+    // player is connected; `side` on a vehicle with an empty commander seat
+    // returns sideEmpty, which is friendly to nothing and made our own drones
+    // targets.
+    private _c = crew _veh;
+    private _theirSide = if (_c isEqualTo []) then {side _veh} else {side (_c select 0)};
     if (
         alive _veh
         && {getNumber (configOf _veh >> "isUav") > 0}
-        && {side group _veh != _mySide}
+        && {_theirSide in [east, west, resistance]}
+        && {_theirSide getFriend _mySide < 0.6}
         && {!(_veh getVariable [QGVAR(hacked), false])}
         && {_allowed isEqualTo [] || {_allowed findIf {_veh isKindOf _x} > -1}}
     ) then {

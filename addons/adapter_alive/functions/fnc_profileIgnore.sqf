@@ -48,6 +48,18 @@ if (isNil "_what") exitWith {};
 private _fnc_mark = {
     if (isNull _this) exitWith {};
     _this setVariable ["ALIVE_profileIgnore", true, true];
+    // BOTH FLAGS, BECAUSE ALiVE READS A DIFFERENT ONE PER PASS. The runtime
+    // profiler honours ALIVE_profileIgnore; the INITIAL editor sweep
+    // (sys_profile fnc_createProfilesFromUnits) never reads it - the only
+    // per-object variable that sweep checks before profiling a vehicle is
+    // ALIVE_CombatSupport, ALiVE's own marker for hardware the profiler must
+    // not take. Without it, every UAV-crewed static the sweep finds is
+    // processed as an EMPTY vehicle - its B_UAV_AI crew group is skipped by
+    // ALiVE's unit blacklist - and the profile round-trip hands back the
+    // hull with the seat empty: the AA-with-no-AI bug. Groups also get the
+    // variable; nothing reads it on a group, and one marker is simpler than
+    // two shapes of marker.
+    _this setVariable ["ALIVE_CombatSupport", true, true];
 };
 
 // A GROUP: itself, its men, and anything they are riding in - a security

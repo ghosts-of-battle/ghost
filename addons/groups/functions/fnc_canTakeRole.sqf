@@ -1,15 +1,15 @@
 #include "script_component.hpp"
 /*
-	File: fn_canTakeRole.sqf
-	Author: Dom -- Tinkered with by YonV
-	Description: Rank gate for roles. A role listed in Role_Access (config_ranks.hpp)
-		requires its minRank (from Dynamic_Ranks); an optional uids[] whitelist allows
-		those players regardless of rank. Unlisted roles are open to everyone.
-		Admin role-access grants (YMF_roleGrants) bypass the check.
+    File: fn_canTakeRole.sqf
+    Author: Dom -- Tinkered with by YonV
+    Description: Rank gate for roles. A role listed in Role_Access (config_ranks.hpp)
+        requires its minRank (from Dynamic_Ranks); an optional uids[] whitelist allows
+        those players regardless of rank. Unlisted roles are open to everyone.
+        Admin role-access grants (YMF_roleGrants) bypass the check.
 */
 params [
-	["_unit",objNull,[objNull]],
-	["_roleClass","",[""]]
+    ["_unit",objNull,[objNull]],
+    ["_roleClass","",[""]]
 ];
 
 private _uid = getPlayerUID _unit;

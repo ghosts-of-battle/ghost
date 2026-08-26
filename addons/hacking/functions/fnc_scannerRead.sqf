@@ -50,8 +50,14 @@ private _nearestObj = objNull;
 {
     if (!alive _x) then { continue };
     if !(unitIsUAV _x) then { continue };
-    private _crew = effectiveCommander _x;
-    if (!isNull _crew && {(side group _crew) getFriend _mySide >= 0.6}) then { continue };
+    // WARN ONLY ON A DRONE POSITIVELY IDENTIFIED AS HOSTILE. The side comes off
+    // the CREW - a UAV carries its AI whether or not a player is connected, and
+    // effectiveCommander returns objNull the moment nobody is flying it, which
+    // is what made our own drones alarm.
+    private _crew = crew _x;
+    private _theirSide = if (_crew isEqualTo []) then {side _x} else {side (_crew select 0)};
+    if !(_theirSide in [east, west, resistance]) then { continue };
+    if (_theirSide getFriend _mySide >= 0.6) then { continue };
     private _d = _pos distance (getPosASL _x);
     if (_nearest < 0 || {_d < _nearest}) then { _nearest = _d; _nearestObj = _x };
 } forEach (player nearEntities [["Air", "LandVehicle", "Ship"], SCN_DRONE_WARN]);

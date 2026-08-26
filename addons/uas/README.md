@@ -26,7 +26,7 @@ A patrol exists to be **met**. One orbiting a base four kilometres from the
 nearest player is an airframe, a crew and an AI pilot being simulated for an
 audience of nobody — twenty of them on a full map, all mission.
 
-So a patrol is put up only when somebody is within `UAS_PLAYER_RANGE` (4 km) of
+So a patrol is put up only when somebody is within `UAS_PLAYER_RANGE` (3.2 km) of
 the ground it would orbit, and stood down again when everybody has left. The
 planner filters its objective list on it and says how many it skipped;
 `topUp` refuses a launch outright, so the reaction ladder and the QRF cannot
@@ -44,11 +44,11 @@ knows the removal was ours — *DELETED WHILE STILL FLYING* stays a real alarm.
 
 One beat, every `UAS_PATROL_TICK` (60 s), in this order:
 
-1. **Stand down** — patrols whose orbit centre no longer has a player inside 4 km
+1. **Stand down** — patrols whose orbit centre no longer has a player inside 3.2 km
    are deleted, crew included. Each side is handed a *credit* for exactly how
    many it gave back.
 2. **Plan** — objectives are filtered to this side's own ground, then to the
-   ones with somebody within 4 km, ranked biggest-first, and topped up to the
+   ones with somebody within 3.2 km, ranked biggest-first, and topped up to the
    ceiling.
 
 **The credit is what makes the second half work.** Replacement is normally a
@@ -63,7 +63,7 @@ whose centre has just gone out of range is still a real aircraft in somebody's
 sky, so a drone with a player within `UAS_SEEN_RANGE` (2 km) of the *airframe*
 is kept regardless, and goes on a later tick once it has flown on or they have.
 
-At 4 km with a 60-second beat, a vehicle doing 60 km/h has about four minutes of
+At 3.2 km with a 60-second beat, a vehicle doing 60 km/h has about three minutes of
 ring to cross before it reaches anything, so the air is always up before the
 ground is in sight.
 
