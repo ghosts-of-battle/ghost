@@ -11,23 +11,18 @@ class CfgVehicles {
     class Aegis_I_C_Soldier_TechSpec_F;
     class Aegis_I_C_Soldier_UAV_lxWS;
     class Aegis_I_C_UAV_02_IED_lxWS;
-    class Aegis_I_C_UGV_01_F;
-    class Aegis_I_C_UGV_01_rcws_F;
-    class Aegis_I_C_ZU23_lxWS_F;
     class I_C_Boat_Transport_01_F;
     class I_C_Boat_Transport_02_F;
     class I_C_HMG_02_F;
     class I_C_HMG_02_high_F;
-    class I_C_Heli_Light_01_civil_F;
-    class I_C_Helipilot_F;
     class I_C_Offroad_01_AT_F;
     class I_C_Offroad_01_F;
     class I_C_Offroad_01_armed_F;
     class I_C_Offroad_02_AT_F;
     class I_C_Offroad_02_LMG_F;
     class I_C_Offroad_02_unarmed_F;
-    class I_C_Pilot_F;
-    class I_C_Plane_Civil_01_F;
+    class I_C_Pickup_hmg_rf;
+    class I_C_Pickup_rf;
     class I_C_Quadbike_01_F;
     class I_C_Sharpshooter_F;
     class I_C_Soldier_Bandit_1_F;
@@ -51,6 +46,12 @@ class CfgVehicles {
     class I_C_Van_01_transport_F;
     class I_C_Van_02_transport_F;
     class I_C_Van_02_vehicle_F;
+    class I_G_Mortar_01_F;
+    class I_G_UAV_02_IED_lxWS;
+    class I_SwitchBlade_300_LaunchTube_Woodland;
+    class I_SwitchBlade_600_LaunchTube_Woodland;
+    class I_UAV_02_lxWS;
+    class ace_dragon_staticAssembled;
 
     class ghost_Syndikat_Aegis_I_C_HeavyGunner_Para_F: Aegis_I_C_HeavyGunner_Para_F {
         scope = 2;
@@ -59,6 +60,8 @@ class CfgVehicles {
         displayName = "Suppressor (GPMG)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_Aegis_I_C_Soldier_M_Para_F: Aegis_I_C_Soldier_M_Para_F {
         scope = 2;
@@ -67,6 +70,8 @@ class CfgVehicles {
         displayName = "Assassin (DMR)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_Aegis_I_C_Soldier_TechSpec_F: Aegis_I_C_Soldier_TechSpec_F {
         scope = 2;
@@ -75,6 +80,8 @@ class CfgVehicles {
         displayName = "Technical Specialist";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_Aegis_I_C_Soldier_UAV_lxWS: Aegis_I_C_Soldier_UAV_lxWS {
         scope = 2;
@@ -83,39 +90,14 @@ class CfgVehicles {
         displayName = "UAV Operator (IED)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_Aegis_I_C_UAV_02_IED_lxWS: Aegis_I_C_UAV_02_IED_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "IED UAV";
-        side = 2;
-        faction = "ghost_Syndikat";
-        crew = "I_UAV_AI";
-    };
-    class ghost_Syndikat_Aegis_I_C_UGV_01_F: Aegis_I_C_UGV_01_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "UGV Saif";
-        side = 2;
-        faction = "ghost_Syndikat";
-        crew = "I_UAV_AI_F";
-    };
-    class ghost_Syndikat_Aegis_I_C_UGV_01_rcws_F: Aegis_I_C_UGV_01_rcws_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "UGV Saif RCWS";
-        side = 2;
-        faction = "ghost_Syndikat";
-        crew = "I_UAV_AI_F";
-    };
-    class ghost_Syndikat_Aegis_I_C_ZU23_lxWS_F: Aegis_I_C_ZU23_lxWS_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Zu-23-2";
         side = 2;
         faction = "ghost_Syndikat";
         crew = "ghost_Syndikat_I_C_Soldier_Bandit_7_F";
@@ -155,23 +137,6 @@ class CfgVehicles {
         side = 2;
         faction = "ghost_Syndikat";
         crew = "ghost_Syndikat_I_C_Soldier_Para_3_F";
-    };
-    class ghost_Syndikat_I_C_Heli_Light_01_civil_F: I_C_Heli_Light_01_civil_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "MD 500";
-        side = 2;
-        faction = "ghost_Syndikat";
-        crew = "ghost_Syndikat_I_C_Helipilot_F";
-    };
-    class ghost_Syndikat_I_C_Helipilot_F: I_C_Helipilot_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Helicopter Pilot";
-        side = 2;
-        faction = "ghost_Syndikat";
     };
     class ghost_Syndikat_I_C_Offroad_01_AT_F: I_C_Offroad_01_AT_F {
         scope = 2;
@@ -227,22 +192,23 @@ class CfgVehicles {
         faction = "ghost_Syndikat";
         crew = "ghost_Syndikat_I_C_Soldier_Para_1_F";
     };
-    class ghost_Syndikat_I_C_Pilot_F: I_C_Pilot_F {
+    class ghost_Syndikat_I_C_Pickup_hmg_rf: I_C_Pickup_hmg_rf {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
-        displayName = "Pilot";
+        displayName = "Ram 1500 (HMG)";
         side = 2;
         faction = "ghost_Syndikat";
+        crew = "ghost_Syndikat_I_C_Soldier_Para_1_F";
     };
-    class ghost_Syndikat_I_C_Plane_Civil_01_F: I_C_Plane_Civil_01_F {
+    class ghost_Syndikat_I_C_Pickup_rf: I_C_Pickup_rf {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
-        displayName = "Cessna TTx";
+        displayName = "Ram 1500";
         side = 2;
         faction = "ghost_Syndikat";
-        crew = "ghost_Syndikat_I_C_Pilot_F";
+        crew = "ghost_Syndikat_I_C_Soldier_Para_1_F";
     };
     class ghost_Syndikat_I_C_Quadbike_01_F: I_C_Quadbike_01_F {
         scope = 2;
@@ -260,6 +226,8 @@ class CfgVehicles {
         displayName = "Sharpshooter";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Soldier_Bandit_1_F: I_C_Soldier_Bandit_1_F {
         scope = 2;
@@ -268,6 +236,8 @@ class CfgVehicles {
         displayName = "Snatcher (Medikit)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Soldier_Bandit_2_F: I_C_Soldier_Bandit_2_F {
         scope = 2;
@@ -276,6 +246,8 @@ class CfgVehicles {
         displayName = "Hireling (Launcher)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Soldier_Bandit_3_F: I_C_Soldier_Bandit_3_F {
         scope = 2;
@@ -284,6 +256,8 @@ class CfgVehicles {
         displayName = "Guard (Machine Gun)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Soldier_Bandit_4_F: I_C_Soldier_Bandit_4_F {
         scope = 2;
@@ -292,6 +266,8 @@ class CfgVehicles {
         displayName = "Watcher (Rifle)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Soldier_Bandit_5_F: I_C_Soldier_Bandit_5_F {
         scope = 2;
@@ -300,6 +276,8 @@ class CfgVehicles {
         displayName = "Scout (Rifle)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Soldier_Bandit_6_F: I_C_Soldier_Bandit_6_F {
         scope = 2;
@@ -308,6 +286,8 @@ class CfgVehicles {
         displayName = "Smuggler (UGL)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Soldier_Bandit_7_F: I_C_Soldier_Bandit_7_F {
         scope = 2;
@@ -316,6 +296,8 @@ class CfgVehicles {
         displayName = "Dealer (Rifle)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Soldier_Bandit_8_F: I_C_Soldier_Bandit_8_F {
         scope = 2;
@@ -324,6 +306,8 @@ class CfgVehicles {
         displayName = "Thug (Mines)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Soldier_Camo_F: I_C_Soldier_Camo_F {
         scope = 2;
@@ -340,6 +324,8 @@ class CfgVehicles {
         displayName = "Soldier (Rifle)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Soldier_Para_2_F: I_C_Soldier_Para_2_F {
         scope = 2;
@@ -348,6 +334,8 @@ class CfgVehicles {
         displayName = "Enforcer (Rifle)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Soldier_Para_3_F: I_C_Soldier_Para_3_F {
         scope = 2;
@@ -356,6 +344,8 @@ class CfgVehicles {
         displayName = "Militiaman (Medikit)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Soldier_Para_4_F: I_C_Soldier_Para_4_F {
         scope = 2;
@@ -364,6 +354,8 @@ class CfgVehicles {
         displayName = "Oppressor (Machine Gun)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Soldier_Para_5_F: I_C_Soldier_Para_5_F {
         scope = 2;
@@ -372,6 +364,8 @@ class CfgVehicles {
         displayName = "Specialist (Launcher)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Soldier_Para_6_F: I_C_Soldier_Para_6_F {
         scope = 2;
@@ -380,6 +374,8 @@ class CfgVehicles {
         displayName = "Raider (UGL)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Soldier_Para_7_F: I_C_Soldier_Para_7_F {
         scope = 2;
@@ -388,6 +384,8 @@ class CfgVehicles {
         displayName = "Deserter (Rifle)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Soldier_Para_8_F: I_C_Soldier_Para_8_F {
         scope = 2;
@@ -396,6 +394,8 @@ class CfgVehicles {
         displayName = "Saboteur (Explosives)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Soldier_base_unarmed_F: I_C_Soldier_base_unarmed_F {
         scope = 2;
@@ -404,6 +404,8 @@ class CfgVehicles {
         displayName = "Rifleman (Unarmed)";
         side = 2;
         faction = "ghost_Syndikat";
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
     class ghost_Syndikat_I_C_Van_01_transport_F: I_C_Van_01_transport_F {
         scope = 2;
@@ -432,28 +434,126 @@ class CfgVehicles {
         faction = "ghost_Syndikat";
         crew = "ghost_Syndikat_I_C_Soldier_Bandit_7_F";
     };
+    class ghost_Syndikat_I_G_Mortar_01_F: I_G_Mortar_01_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "Mk6 Mortar";
+        side = 2;
+        faction = "ghost_Syndikat";
+        crew = "ghost_Syndikat_I_C_Soldier_Bandit_7_F";
+    };
+    class ghost_Syndikat_I_G_UAV_02_IED_lxWS: I_G_UAV_02_IED_lxWS {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "IED UAV";
+        side = 2;
+        faction = "ghost_Syndikat";
+        crew = "ghost_Syndikat_I_C_Soldier_Bandit_7_F";
+    };
+    class ghost_Syndikat_I_SwitchBlade_300_LaunchTube_Woodland: I_SwitchBlade_300_LaunchTube_Woodland {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "SwitchBlade 300 Launch Tube (Woodland)";
+        side = 2;
+        faction = "ghost_Syndikat";
+        crew = "ghost_Syndikat_I_C_Soldier_Bandit_7_F";
+    };
+    class ghost_Syndikat_I_SwitchBlade_600_LaunchTube_Woodland: I_SwitchBlade_600_LaunchTube_Woodland {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "SwitchBlade 600 Launch Tube (Woodland)";
+        side = 2;
+        faction = "ghost_Syndikat";
+        crew = "ghost_Syndikat_I_C_Soldier_Bandit_7_F";
+    };
+    class ghost_Syndikat_I_UAV_02_lxWS: I_UAV_02_lxWS {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "AP-5 Bustard";
+        side = 2;
+        faction = "ghost_Syndikat";
+        crew = "ghost_Syndikat_I_C_Soldier_Bandit_7_F";
+    };
+    class ghost_Syndikat_ace_dragon_staticAssembled: ace_dragon_staticAssembled {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "M47 Super-Dragon";
+        side = 2;
+        faction = "ghost_Syndikat";
+        crew = "ghost_Syndikat_I_C_Soldier_Bandit_7_F";
+    };
+    // ---- the squads' drone bags, assembling this faction's own drones - see SQUAD_DRONES ----
+    class I_UAV_02_backpack_lxWS;
+    class ghost_Syndikat_I_UAV_02_backpack_lxWS: I_UAV_02_backpack_lxWS {
+        scope = 1;
+        scopeCurator = 0;
+        author = QAUTHOR;
+        class assembleInfo {
+            primary = 1;
+            base = "";
+            assembleTo = "ghost_Syndikat_I_UAV_02_lxWS";
+            displayName = "";
+            dissasembleTo[] = {};
+        };
+    };   // assembles this faction's own drone
+    class I_G_UAV_02_IED_backpack_lxWS;
+    class ghost_Syndikat_I_G_UAV_02_IED_backpack_lxWS: I_G_UAV_02_IED_backpack_lxWS {
+        scope = 1;
+        scopeCurator = 0;
+        author = QAUTHOR;
+        class assembleInfo {
+            primary = 1;
+            base = "";
+            assembleTo = "ghost_Syndikat_I_G_UAV_02_IED_lxWS";
+            displayName = "";
+            dissasembleTo[] = {};
+        };
+    };   // assembles this faction's own drone
+
     // ---- fielded by this faction, not by its source ----
     // NEW CLASSES, NOT A SCRIPT. A man either is a drone
     // operator or is not; picking men out of a spawning group
     // and handing them a bag is a group composition decision,
     // and group composition is CfgGroups' job.
 
-    class I_Crocus_AP;
-    class ghost_Syndikat_I_Crocus_AP: I_Crocus_AP {
+    class ghost_uas_UAV_06_IED_I;
+    class ghost_Syndikat_UAV_06_IED: ghost_uas_UAV_06_IED_I {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
-        displayName = "Crocus AP";
+        displayName = "AL-6 Pelican (IED)";
         side = 2;
         faction = "ghost_Syndikat";
-    };   // the one FPV - bought, not issued
-    class ghost_Syndikat_Crocus_AP_Operator: ghost_Syndikat_I_C_Soldier_Bandit_7_F {
+    };   // a cargo quad with a charge where the crate was
+    class ghost_Syndikat_UAV_06_IED_Operator: ghost_Syndikat_I_C_Soldier_Bandit_7_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
-        displayName = "Crocus AP Operator [SYN]";
+        displayName = "Pelican IED Operator [SYN]";
         faction = "ghost_Syndikat";
-        backpack = "I_Crocus_AP_Bag";
+        backpack = "ghost_uas_UAV_06_IED_backpack_I";
     };
+    class ghost_Syndikat_Drone_Operator: ghost_Syndikat_I_C_Soldier_Bandit_7_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "Drone Operator [Syndikat]";
+        faction = "ghost_Syndikat";
+        backpack = "ghost_Syndikat_I_UAV_02_backpack_lxWS";
+    };   // the squad's drones - see SQUAD_DRONES
+    class ghost_Syndikat_IED_Quad_Operator: ghost_Syndikat_I_C_Soldier_Bandit_7_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "IED Quad Operator [Syndikat]";
+        faction = "ghost_Syndikat";
+        backpack = "ghost_Syndikat_I_G_UAV_02_IED_backpack_lxWS";
+    };   // the squad's second drone, where there is no grenadier to carry it
 
 };

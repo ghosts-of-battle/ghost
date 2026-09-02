@@ -31,7 +31,7 @@ if (!(_vehicle call EFUNC(systems,isValidFaction))) exitWith {};
 // If ACRE wait for init
 if (EGVAR(patches,usesACRE)) then { waitUntil {EGVAR(gear,Radio) && [] call acre_api_fnc_isInitialized}; };
 
-INFO_2("VehicleRadio","Applying vehicle radios to %1 (%2)",_vehicle,typeOf _vehicle);
+TRACE_INFO_2("VehicleRadio","Applying vehicle radios to %1 (%2)",_vehicle,typeOf _vehicle);
 
 if (_vehicle isKindOf "MRAP_01_base_F") then {
     [_vehicle, [1]] call EFUNC(vehicle,setRadio);

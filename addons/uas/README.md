@@ -15,6 +15,11 @@ airframe ceiling drops to the reduced number for a random window: the sky
 visibly thins, then comes back. Outages extend rather than stack, so supply
 raids are raids and not a win button.
 
+**The ceiling is per side.** Airframes Per Side is the shared number; West /
+East / Independent Airframes on the module give one side its own (-1 uses the
+shared number, 0 grounds that side). A cache outage drops a side to After A
+Cache Is Lost, never above its own ceiling. `fnc_ceilingFor` is the one reader.
+
 A drone that actually sees a player - `knowsAbout`, not proximity - reports it
 down the same path a failed hack takes.
 
@@ -79,7 +84,7 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-1 unit class, 13 functions.
+3 unit classes, 14 functions.
 
 ## Eden modules
 
@@ -87,12 +92,15 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 `ghost_moduleUAS`, category ghost_modules
 
-Placing this module turns on enemy drones. Without it, the system is off.<br>Airframes Per Side - How many drones a commander flies at once while its supply is intact After A Cache Is Lost - The ceiling while a supply cache is down Outage Min (sec) - Shortest time a destroyed cache holds the ceiling down Outage Max (sec) - Longest time Caches Per Side - Supply caches placed in each commander's area for players to find
+Placing this module turns on enemy drones. Without it, the system is off.<br>Airframes Per Side - How many drones a commander flies at once while its supply is intact West / East / Independent Airframes - That side's own ceiling; -1 uses Airframes Per Side, 0 grounds it After A Cache Is Lost - The ceiling while a supply cache is down Outage Min (sec) - Shortest time a destroyed cache holds the ceiling down Outage Max (sec) - Longest time Caches Per Side - Supply caches placed in each commander's area for players to find
 
-<details><summary>9 attributes</summary>
+<details><summary>12 attributes</summary>
 
 - `baseMax`
 - `cachesPerSide`
+- `maxEast`
+- `maxGuer`
+- `maxWest`
 - `patrolOver`
 - `reducedMax`
 - `uavEast`
@@ -105,11 +113,12 @@ Placing this module turns on enemy drones. Without it, the system is off.<br>Air
 
 ## Functions
 
-<details><summary>13</summary>
+<details><summary>14</summary>
 
 - `ghost_uas_fnc_cacheDown`
 - `ghost_uas_fnc_ceilingFor`
 - `ghost_uas_fnc_factionUav`
+- `ghost_uas_fnc_iedDrone`
 - `ghost_uas_fnc_livePatrols`
 - `ghost_uas_fnc_moduleController`
 - `ghost_uas_fnc_placeCaches`

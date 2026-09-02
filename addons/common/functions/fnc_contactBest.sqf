@@ -31,7 +31,7 @@ params [
     ["_maxError", 0, [0]]
 ];
 
-if (_from isEqualTo [] || {_reach <= 0}) exitWith {[]};
+if (_from isEqualTo [] || _reach <= 0) exitWith {[]};
 
 private _best = [];
 private _bestScore = -1;

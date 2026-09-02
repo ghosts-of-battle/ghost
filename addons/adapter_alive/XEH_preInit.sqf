@@ -18,6 +18,7 @@ ADDON = false;
 EGVAR(patches,usesAlive) = isClass (configFile >> "CfgPatches" >> "ALiVE_main");
 
 GVAR(ready) = false;
+GVAR(aaRegistered) = false;
 GVAR(fireSeq) = 0;
 // one-shot latch: FUNC(profileObjects) reports an odd profile shape once
 GVAR(shapeLogged) = false;

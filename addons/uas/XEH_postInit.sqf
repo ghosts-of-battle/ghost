@@ -48,3 +48,14 @@ GVAR(friendlySaid) = [];
     diag_log text format ["[ghost_uas] %1", _txt];
     [format ["UAS: %1", _txt]] remoteExec ["systemChat", 0];
 }] call CBA_fnc_addEventHandler;
+
+// THE IED PELICAN IS DDT'S TO FLY. Drongo's Drone Tweaks gives the AI drones
+// from its own class lists; ours is not on them, so it goes on once DDT has
+// built them (ddtReady). ddtClassesFPV is "fly it into something soft";
+// its InArray is case-insensitive, so the spelling here is only for reading.
+// No DDT in the load order: nothing waits, nothing breaks - the timeout is
+// there so the wait does not sit forever in a mission without it.
+[{missionNamespace getVariable ["ddtReady", false]}, {
+    ddtClassesFPV pushBackUnique QGVAR(UAV_06_IED_I);
+    diag_log text "[ghost_uas] IED Pelican registered with Drongo's Drone Tweaks as an FPV";
+}, [], 600] call CBA_fnc_waitUntilAndExecute;

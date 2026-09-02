@@ -53,6 +53,9 @@ if (hasInterface) then {
 if (!isServer) exitWith {};
 
 [] call FUNC(ready);
+// ALiVE's AA fallback lists stock A3 factions only - ours would spawn no air
+// defence at all with an empty picker. See the function.
+[] call FUNC(registerFactionAA);
 
 [QGVAR(run), {
     params [["_which", "", [""]], ["_caller", objNull, [objNull]]];
@@ -65,17 +68,31 @@ if (!isServer) exitWith {};
 // cannot read the enemy's positions out of a variable.
 [QGVAR(ready), {
     [{
+        // ONE HEAVY WALK PER TICK, NOT ALL OF THEM. aaTargets, artyTargets,
+        // camps and radars each walk the whole profile system with config
+        // lookups; doing the four on the same beat was a hitch every POOL_TICK
+        // - the periodic lag spike. They change slowly (a count for a button),
+        // so they take turns: one per tick, each refreshed every four ticks.
+        // The cheap publishes below still run every tick.
+        private _phase = missionNamespace getVariable [QGVAR(poolPhase), 0];
+        missionNamespace setVariable [QGVAR(poolPhase), (_phase + 1) mod 4];
+        switch (_phase) do {
+            case 0: { missionNamespace setVariable [QGVAR(aaCount), count (call FUNC(aaTargets)), true] };
+            case 1: { missionNamespace setVariable [QGVAR(artyCount), count ([sideUnknown] call FUNC(artyTargets)), true] };
+            case 2: { missionNamespace setVariable [QGVAR(campCount), count ((call FUNC(camps)) select {(_x select 3) isNotEqualTo sideUnknown}), true] };
+            case 3: { missionNamespace setVariable [QGVAR(radarCount), count (call FUNC(radars)), true] };
+        };
+
+        // The ATO presence flag is all the support app needs from ALiVE now -
+        // the battery registry is deliberately NOT published: listing every
+        // AI-commander gun made the app a directory of assets the player
+        // cannot actually task (ARTY_REQUEST picks its own battery, and only
+        // where a friendly artillery module exists at all).
+        missionNamespace setVariable [QGVAR(atoPub),
+            (allMissionObjects ATO_CLASS) apply {toUpper (_x getVariable ["side", ""])}, true];
+        // hubCount reads the supply-network hash, which is small - every tick.
         missionNamespace setVariable
-            // Ghost's own air-defence sites count towards the button gate too,
-            // or a mission whose only AA came from that module would never see
-            // LOCATE AA offered. Read here rather than folded into
-            // FUNC(aaTargets): that function is the ALiVE read and stays that.
-            [QGVAR(aaCount),
-                (count (call FUNC(aaTargets)))
-                + (count (missionNamespace getVariable [QEGVAR(airdefence,sites), []])),
-                true];
-        missionNamespace setVariable
-            [QGVAR(artyCount), count ([sideUnknown] call FUNC(artyTargets)), true];
+            [QGVAR(hubCount), count (call FUNC(logisticsHubs)), true];
 
         // THE CLIENT-SAFE SUMMARY. FUNC(commanders) and FUNC(taorFor) read
         // ALiVE's server-side hashes, so on a dedicated client both came
@@ -93,6 +110,34 @@ if (!isServer) exitWith {};
                 [_x] + ([_x] call FUNC(taorFor))
             }, true];
     }, POOL_TICK, []] call CBA_fnc_addPerFrameHandler;
+
+    // ALiVE'S EVENTS BECOME GHOST'S. See FUNC(eventBridge).
+    [] call FUNC(eventBridge);
+
+    // ONE CORPSE, ONE KIND OF INTEL. ALiVE drops "Read intel" files on the
+    // dead with its own chance (mil_opcom fnc_OPCOMdropIntel.sqf:37, per-side
+    // ALiVE_MIL_OPCOM_INTELCHANCE_<side>); ghost's bodies already carry the
+    // phones, radios and documents the intel economy runs on. Two systems
+    // handing out intel for the same corpse doubles the take and splits the
+    // picture, so ALiVE's chance is set to zero for every commander and the
+    // find goes through ghost - which now reports it back to ALiVE's G2
+    // (FUNC(reportIntel)). ALiVE's file is not deleted from ALiVE; it is
+    // simply never rolled.
+    {
+        _x params ["_cside"];
+        missionNamespace setVariable [format ["ALiVE_MIL_OPCOM_INTELCHANCE_%1", _cside], 0, true];
+    } forEach (call FUNC(commanders));
+
+    // THE COP DRAWS INSTALLATIONS ONLY WHEN ASKED. Every one of ALiVE's
+    // asymmetric infrastructure layers defaults off (mil_c2istar cop
+    // fnc_COPConfig.sqf:200-206) and the server skips collecting them when
+    // all are off (fnc_COPAsym.sqf:119-125). Ghost's whole asymmetric hunt is
+    // those installations; a tablet that cannot show them is missing the
+    // point, so the four ghost hunts are switched on where the mission left
+    // them unset.
+    {
+        if (isNil _x) then { missionNamespace setVariable [_x, true] };
+    } forEach ["ALIVE_COP_ASYM_SHOW_HQ", "ALIVE_COP_ASYM_SHOW_FACTORY", "ALIVE_COP_ASYM_SHOW_DEPOT", "ALIVE_COP_ASYM_SHOW_ROADBLOCK", "ALIVE_militaryIntelRevealInstallations"];
 
     // LAMBS OFF FOR EVERY COMBAT-SUPPORT AIRFRAME. ALiVE tags each asset it
     // stands up with ALIVE_CombatSupport, so that tag is the whole list -
@@ -114,3 +159,41 @@ if (!isServer) exitWith {};
         });
     }, POOL_TICK, []] call CBA_fnc_addPerFrameHandler;
 }] call CBA_fnc_addEventHandler;
+
+// ---------------------------------------------------------------------------
+// THE ATO IN THE TACPAD. The support app lists whatever providers have
+// published themselves under a prefix (see the cas addon for the shape); this
+// puts one row for ALiVE's ATO on that list beside the mission-placed assets.
+// The AI commander's artillery is deliberately absent - see the note at the
+// publish loop above. A task is a server event, because the request has to be
+// raised on the machine that holds ALiVE's event log.
+private _providers = missionNamespace getVariable [QGVAR(providers), createHashMap];
+_providers set ["alivecas", [
+    {
+        private _side = toUpper str (side group player);
+        if !(_side in (missionNamespace getVariable [QGVAR(atoPub), []])) exitWith {[]};
+        [["alivecas:ato", "cas", "ALiVE ATO", "CAS (experimental)", "idle", [], 0]]
+    },
+    {
+        params ["_assetId", "_task", "_pos"];
+        if (_pos isEqualTo []) exitWith {[false, "no target"]};
+        [QGVAR(supportRequest), ["cas", side group player, _pos, name player]] call CBA_fnc_serverEvent;
+        [true, "CAS requested from the ATO."]
+    },
+    {
+        [true, "The ATO answers requests as its airframes come free."]
+    }
+]];
+missionNamespace setVariable [QGVAR(providers), _providers];
+
+if (isServer) then {
+    [QGVAR(supportRequest), {
+        params ["_kind", "_side", "_pos", "_who"];
+        private _ok = switch (_kind) do {
+            case "cas":  { [_side, _pos] call FUNC(requestCAS) };
+            default { false };
+        };
+        INFO_4("support request %1 by %2 for %3 -> %4",_kind,_who,_side,_ok);
+    }] call CBA_fnc_addEventHandler;
+};
+

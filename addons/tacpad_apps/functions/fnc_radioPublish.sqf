@@ -36,7 +36,8 @@ if (!isNil "acre_api_fnc_getCurrentRadio") then {
 } else {
     if (!isNil "TFAR_fnc_activeSwRadio") then {
         private _r = call TFAR_fnc_activeSwRadio;
-        if (!isNil "_r" && {_r isNotEqualTo ""}) then {_raw = ["tfar", [_r] call TFAR_fnc_getSwChannel]};
+        if (isNil "_r") then {_r = ""};
+        if (_r isNotEqualTo "") then {_raw = ["tfar", [_r] call TFAR_fnc_getSwChannel]};
     };
 };
 player setVariable [QGVAR(radioRaw), _raw, true];

@@ -52,7 +52,7 @@ if (!_ok) exitWith {
     [false, _why]
 };
 
-if (_addressees isEqualTo [] && {_threadId == ""}) exitWith {
+if (_addressees isEqualTo [] && _threadId == "") exitWith {
     private _reason = "no addressee";
     [_templateId, _reason, "high"] call FUNC(notify);
     [false, _reason]

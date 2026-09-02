@@ -12,7 +12,15 @@ Description:
 
 Returns:
     ARRAY - [_droneState, _droneDist, _droneDir, _jamFactor, _chanText, _freqText,
-             _meshCount, _droneTag]. _droneDir is a compass bearing, -1 when
+             _meshCount, _droneTag, _jamRadio, _jamData, _jamGps].
+
+            THE THREE DOMAINS ARE APPENDED, NOT SUBSTITUTED. Index 3 is still
+            the worst of them - "is the spectrum dirty" - because the drone
+            page, the dashboard lamps and every other reader wants one number
+            and reads it positionally. 8, 9 and 10 are radio, data and GPS for
+            the readouts that show which service is down.
+
+            _droneDir is a compass bearing, -1 when
              nothing is up; _droneTag is "faction / airframe", "" when clear.
             _droneState 0 clear / 1 warn / 2 alert.
             The net reading comes back as two strings rather than one sentence
@@ -59,7 +67,7 @@ private _nearestObj = objNull;
     if !(_theirSide in [east, west, resistance]) then { continue };
     if (_theirSide getFriend _mySide >= 0.6) then { continue };
     private _d = _pos distance (getPosASL _x);
-    if (_nearest < 0 || {_d < _nearest}) then { _nearest = _d; _nearestObj = _x };
+    if (_nearest < 0 || _d < _nearest) then { _nearest = _d; _nearestObj = _x };
 } forEach (player nearEntities [["Air", "LandVehicle", "Ship"], SCN_DRONE_WARN]);
 
 private _droneState = switch (true) do {
@@ -85,7 +93,10 @@ if (!isNull _nearestObj) then {
 // depend on jamming and a mission may well run one without the other.
 private _jam = 0;
 if (!isNil "ghost_jamming_fnc_jamFactor") then {
-    _jam = ([_pos, 0] call ghost_jamming_fnc_jamFactor) param [0, 0];
+    // "any": a spectrum scanner reads the spectrum. It reports that the air
+    // is dirty here, and leaves working out WHICH service is down to the
+    // player finding out their radio still works but TAC//MSG does not.
+    _jam = ([_pos, 0, "any"] call ghost_jamming_fnc_jamFactor) param [0, 0];
 };
 
 // --- 3. own net ------------------------------------------------------------
@@ -93,7 +104,7 @@ private _chanText = "NO RADIO";
 private _freqText = "";
 if (!isNil "acre_api_fnc_getCurrentRadio") then {
     private _cur = call acre_api_fnc_getCurrentRadio;
-    if (_cur isEqualType "" && {_cur isNotEqualTo ""}) then {
+    if (_cur isEqualType "" && _cur isNotEqualTo "") then {
         private _i = _cur find "_ID_";
         private _base = if (_i > 0) then { _cur select [0, _i] } else { _cur };
         private _preset = [_cur] call acre_api_fnc_getPreset;
@@ -110,7 +121,7 @@ if (!isNil "acre_api_fnc_getCurrentRadio") then {
 } else {
     if (!isNil "TFAR_fnc_activeSwRadio") then {
         private _sw = call TFAR_fnc_activeSwRadio;
-        if (_sw isEqualType "" && {_sw isNotEqualTo ""}) then {
+        if (_sw isEqualType "" && _sw isNotEqualTo "") then {
             private _ch = [_sw] call TFAR_fnc_getSwChannel;
             private _fr = ([_sw] call TFAR_fnc_getSwSettings) param [0, []];
             private _f = if (_fr isEqualType [] && {count _fr > _ch}) then { _fr select _ch } else { "--" };
@@ -135,7 +146,22 @@ private _mesh = {
 // gunship, which is the part that decides what you do about it.
 private _tag = [_nearestObj] call FUNC(droneTag);
 
-private _out = [_droneState, _nearest, _droneDir, _jam, _chanText, _freqText, _mesh, _tag];
+// PER DOMAIN, for the readouts that name the service. Four reads of one
+// calculator rather than four calculators - and they cost nothing on top of the
+// one above, because this whole function is cached for SCN_CACHE_TTL and the
+// registry walk is the same walk with a different gate. The literals are
+// jamming's DOM_* - see its script_component.hpp; this addon does not include it.
+private _jamRadio = 0;
+private _jamData = 0;
+private _jamGps = 0;
+if (!isNil "ghost_jamming_fnc_jamFactor") then {
+    _jamRadio = ([_pos, 0, "radio"] call ghost_jamming_fnc_jamFactor) param [0, 0];
+    _jamData = ([_pos, 0, "data"] call ghost_jamming_fnc_jamFactor) param [0, 0];
+    _jamGps = ([_pos, 0, "gps"] call ghost_jamming_fnc_jamFactor) param [0, 0];
+};
+
+private _out = [_droneState, _nearest, _droneDir, _jam, _chanText, _freqText, _mesh, _tag,
+                _jamRadio, _jamData, _jamGps];
 uiNamespace setVariable [QGVAR(scanCache), [_now + SCN_CACHE_TTL, _out]];
 
 _out

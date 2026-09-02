@@ -49,7 +49,7 @@ private _until = CBA_missionTime + AS_TIMEOUT;
     if (isNull _missile) exitWith { call _stop };
 
     // Target gone, or it has been in the air far too long.
-    if (isNull _tgt || {CBA_missionTime > _until}) exitWith {
+    if (isNull _tgt || CBA_missionTime > _until) exitWith {
         deleteVehicle _missile;
         call _stop;
     };

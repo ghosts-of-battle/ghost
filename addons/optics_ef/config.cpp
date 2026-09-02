@@ -8,7 +8,11 @@ class CfgPatches {
             QGVAR(optic_mbs_remote_157),
             QGVAR(optic_mbs_remote_157_coy),
             QGVAR(optic_mbs_remote_157_khk),
-            QGVAR(optic_mbs_remote_157_sand)
+            QGVAR(optic_mbs_remote_157_sand),
+            QGVAR(optic_mbs_157),
+            QGVAR(optic_mbs_157_coy),
+            QGVAR(optic_mbs_157_khk),
+            QGVAR(optic_mbs_157_sand)
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {

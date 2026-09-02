@@ -22,7 +22,11 @@ params [["_side", sideUnknown, [sideUnknown]]];
 
 if (_side isEqualTo sideUnknown) exitWith {0};
 
-private _until = GVAR(outages) getOrDefault [str _side, -1];
-if (CBA_missionTime < _until) exitWith { round GVAR(reducedMax) };
+// The side's own number where the module gave one, the shared one otherwise.
+// A reduced ceiling never exceeds it - a side grounded at 0 stays grounded.
+private _base = round (GVAR(sideMax) getOrDefault [str _side, GVAR(baseMax)]);
 
-round GVAR(baseMax)
+private _until = GVAR(outages) getOrDefault [str _side, -1];
+if (CBA_missionTime < _until) exitWith { (round GVAR(reducedMax)) min _base };
+
+_base

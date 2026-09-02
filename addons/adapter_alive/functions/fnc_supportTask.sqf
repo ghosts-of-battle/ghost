@@ -88,7 +88,7 @@ if (isNull _veh || {!alive _veh}) exitWith {
     [false, "that unit is gone"]
 };
 
-if (_task isEqualTo "" || {_pos isEqualTo [] && {_task isNotEqualTo "rtb"} && {isNull player}}) exitWith {
+if (_task isEqualTo "" || {_pos isEqualTo [] && _task isNotEqualTo "rtb" && {isNull player}}) exitWith {
     WARNING("supportTask: refused - no task");
     [false, "no task"]
 };
@@ -174,8 +174,35 @@ if (_type isEqualTo "arty") exitWith {
         [false, "the battery has no rounds left"]
     };
 
-    private _ordIdx = (_prm param [4, 0]) min (count _ordTypes - 1);
-    private _ordnanceType = (_ordTypes param [_ordIdx, []]) param [0, ""];
+    // BY NAME FIRST, INDEX ONLY AS A FALLBACK. The app and this function each
+    // build the ordnance list from NEO_radioArtyBatteryRounds and each filter it
+    // to types with rounds left - but at DIFFERENT MOMENTS. Fire a mission that
+    // empties a type and every index after it shifts, so the number the app
+    // stored now points at a different shell than the one it drew. That is a
+    // wrong-ordnance bug that only shows up after the first mission, which is
+    // exactly when nobody is looking for it.
+    //
+    // The app writes the name it displayed at index 11 - NOT 10, which is the
+    // CAS ordnance index in the same shared parameter set. The index at 4 stays
+    // for a
+    // stored parameter set written before this, and for the case where the named
+    // type has genuinely run dry.
+    private _ordIdx = ((_prm param [4, 0]) max 0) min (count _ordTypes - 1);
+    private _ordName = _prm param [11, ""];
+    if !(_ordName isEqualType "") then { _ordName = "" };
+
+    private _ordnanceType = "";
+    if (_ordName isNotEqualTo "") then {
+        private _i = _ordTypes findIf { (_x param [0, ""]) isEqualTo _ordName };
+        if (_i > -1) then {
+            _ordnanceType = _ordName;
+        } else {
+            WARNING_1("supportTask: '%1' has no rounds left - falling back to the stepper's index",_ordName);
+        };
+    };
+    if (_ordnanceType isEqualTo "") then {
+        _ordnanceType = (_ordTypes param [_ordIdx, []]) param [0, ""];
+    };
     private _ord = [_veh, _ordnanceType] call ALIVE_fnc_getArtyMagazineType;
     private _count = [1, 3, 6, 12, 24] param [_prm param [5, 1], 3];
     private _dispersion = _prm param [6, 100];
@@ -202,7 +229,7 @@ if (_type isEqualTo "arty") exitWith {
     // that cannot move never packs.
     private _gunsAll = {alive _x} count (_entry param [3, []]);
     private _guns = _prm param [7, 0];
-    if (_guns < 1 || {_guns > _gunsAll}) then {_guns = _gunsAll};
+    if (_guns < 1 || _guns > _gunsAll) then {_guns = _gunsAll};
     if (_guns > 0) then {
         _grp setVariable ["supportWeaponCount", _guns, true];
         INFO_2("supportTask: %1 of %2 guns will answer",_guns,_gunsAll);
@@ -212,8 +239,68 @@ if (_type isEqualTo "arty") exitWith {
     // IMMEDIATE in ALiVE's own UI and rate 0 is RAPID.
     _veh setVariable ["NEO_radioArtyNewTask", ["IMMEDIATE", _ordnanceType, 0, _count, _dispersion, _pos, _grp, _ord, _me, player], true];
     _veh setVariable ["NEO_radioArtyUnitStatus", "MISSION", true];
+    // THE RESOLVED MAGAZINE IS LOGGED, not just the ordnance name. The name is
+    // what the player picked; _ord is what the guns actually put in the tube,
+    // and ALIVE_fnc_getArtyMagazineType picks the FIRST magazine on the vehicle
+    // whose config ancestry matches the name - over a list collected across
+    // every turret. When a battery reports firing the wrong shell, the only way
+    // to tell a bad pick from a bad name is to have both in the log.
+    //
+    // The split is logged too, because ALiVE divides the count round-robin
+    // across supportWeaponCount guns (fn_ExecuteMission.sqf:53-80) - the total
+    // is what was asked for, but "12 rounds" arriving as 4+4+4 from three tubes
+    // is what the player sees, and it has been read as the wrong count before.
     INFO_4("supportTask: sent - fire mission to %1: %2x %3 at %4",_callsign,_count,_ordnanceType,_pos);
+    private _perGun = ceil (_count / (_guns max 1));
+    INFO_3("supportTask: %1 resolves to magazine '%2', %3 round(s) per gun",_ordnanceType,_ord,_perGun);
     [format ["%1, %2, fire mission, %3 rounds %4, grid %5, %6 m dispersion. Over.", _callsign, _me, _count, _ordnanceType, mapGridPosition _pos, round _dispersion]] call _fnc_radio;
+    // WHAT ACTUALLY LEAVES THE TUBES. Reading the source settles what we SEND
+    // and what ALiVE PLANS - the FSM passes the count through uncapped and
+    // ExecuteMission splits it round-robin - but not what the guns do with a
+    // doArtilleryFire, which is engine and AI behaviour. A mission of 12 across
+    // three guns put three rounds on the ground once, and nothing in any log
+    // could say whether nine were never fired or never arrived.
+    //
+    // So the guns are watched. One Fired handler per tube, counting only this
+    // magazine, removed on a timer whether or not the battery ever fires - it
+    // costs a handler for the length of a fire mission and it turns "only three
+    // landed" from a report into a number.
+    private _fired = [0];
+    private _tubes = (units _grp) select {alive _x && {!isNull objectParent _x}} apply {objectParent _x};
+    _tubes = _tubes arrayIntersect _tubes;
+    {
+        // The counter and the magazine ride on the gun, not in the handler's
+        // args: extra-args event handlers expose _thisArgs, which the SQF lint
+        // does not accept here, and a getVariable off the firing unit is the
+        // same information with nothing exotic in it.
+        _x setVariable [QGVAR(artyWatch), [_fired, _ord]];
+        private _ehId = _x addEventHandler ["Fired", {
+            params ["_unit", "", "", "", "", "_mag"];
+            (_unit getVariable [QGVAR(artyWatch), []]) params [["_box", []], ["_want", ""]];
+            if (_box isNotEqualTo [] && _mag isEqualTo _want) then {
+                _box set [0, (_box select 0) + 1];
+            };
+        }];
+        _x setVariable [QGVAR(artyWatchEh), _ehId];
+    } forEach _tubes;
+
+    [{
+        params ["_tubes", "_fired", "_count", "_callsign", "_ordnanceType"];
+        {
+            private _id = _x getVariable [QGVAR(artyWatchEh), -1];
+            if (_id > -1) then { _x removeEventHandler ["Fired", _id] };
+            _x setVariable [QGVAR(artyWatchEh), nil];
+            _x setVariable [QGVAR(artyWatch), nil];
+        } forEach _tubes;
+
+        private _out = _fired select 0;
+        if (_out isEqualTo _count) then {
+            INFO_3("supportTask: %1 fired all %2 %3 round(s)",_callsign,_out,_ordnanceType);
+        } else {
+            WARNING_4("supportTask: %1 was asked for %2 %3 round(s) and fired %4 - the shortfall is in doArtilleryFire, not in what was sent",_callsign,_count,_ordnanceType,_out);
+        };
+    }, [_tubes, _fired, _count, _callsign, _ordnanceType], ARTY_WATCH_WINDOW] call CBA_fnc_waitAndExecute;
+
     [_veh, "NEO_radioArtyNewTask", _assetId, format ["%1 acknowledged - rounds inbound shortly", _callsign]] call _fnc_watchAck;
     [true, ""]
 };

@@ -38,13 +38,14 @@ if (!isNil "acre_api_fnc_getCurrentRadio") exitWith {
         _name = [_radio, _channel] call acre_api_fnc_getRadioChannelName;
     };
 
-    if (_name isEqualType "" && {_name != ""}) exitWith {format ["CH %1 - %2", _channel, _name]};
+    if (_name isEqualType "" && _name isNotEqualTo "") exitWith {format ["CH %1 - %2", _channel, _name]};
     format ["CH %1", _channel]
 };
 
 if (!isNil "TFAR_fnc_activeSwRadio") exitWith {
     private _radio = call TFAR_fnc_activeSwRadio;
-    if (isNil "_radio" || {_radio isEqualTo ""}) exitWith {""};
+    if (isNil "_radio") then {_radio = ""};
+    if (_radio isEqualTo "") exitWith {""};
 
     private _channel = [_radio] call TFAR_fnc_getSwChannel;
     private _freq = "";

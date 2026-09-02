@@ -33,7 +33,7 @@ private _callsign = _logic getVariable [QGVAR(callsign), "CAS"];
 
 _logic setVariable [QGVAR(lost), _lost, true];
 
-if (_max > 0 && {_lost >= _max}) then {
+if (_max > 0 && _lost >= _max) then {
     _logic setVariable [QGVAR(status), "expended", true];
     WARNING_2("%1 lost its last airframe to '%2' - asset expended",_callsign,typeOf _killer);
 } else {

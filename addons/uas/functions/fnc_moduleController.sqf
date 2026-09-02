@@ -35,6 +35,15 @@ GVAR(moduleUp) = true;
 GVAR(patrolOver) = _logic getVariable ["patrolOver", 1];
 GVAR(baseMax) = _logic getVariable ["baseMax", 8];
 GVAR(reducedMax) = _logic getVariable ["reducedMax", 3];
+
+// A side's own ceiling, where the module names one; -1 is the shared number.
+// FUNC(ceilingFor) is the only reader.
+GVAR(sideMax) = createHashMap;
+{
+    _x params ["_side", "_attr"];
+    private _n = _logic getVariable [_attr, -1];
+    if (_n isEqualType 0 && _n >= 0) then { GVAR(sideMax) set [str _side, round _n] };
+} forEach [[west, "maxWest"], [east, "maxEast"], [independent, "maxGuer"]];
 GVAR(windowMin) = _logic getVariable ["windowMin", 600];
 GVAR(windowMax) = _logic getVariable ["windowMax", 1800];
 GVAR(cachesPerSide) = _logic getVariable ["cachesPerSide", 3];

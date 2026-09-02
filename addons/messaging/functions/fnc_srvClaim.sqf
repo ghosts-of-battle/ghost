@@ -31,7 +31,7 @@ private _visible = [_unit] call FUNC(srvBoxesFor);
 if !(_uid in (_thread get "participants") || {(_thread get "boxes") findIf {_x in _visible} >= 0}) exitWith {};
 
 private _held = _thread get "claimedBy";
-if (_held != "" && {_held != _uid}) exitWith {
+if (_held != "" && _held != _uid) exitWith {
     [QGVAR(reject), ["CLAIM", "somebody already has that one"], _unit] call CBA_fnc_targetEvent;
 };
 

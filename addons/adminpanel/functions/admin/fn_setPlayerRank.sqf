@@ -3,7 +3,7 @@
 
     Description:
         Applies the RANK combo selection to the selected player. Sends the change to the
-        server (YMF_fnc_player_setRankOverride) which updates the live rank map - this
+        server (ghost_players_fnc_setRankOverride) which updates the live rank map - this
         drives role access via fn_canTakeRole - and dumps the promoted Steam IDs to the
         RPT. Bound to the rank combo's onLBSelChanged; ignores programmatic reselection
         via the admp_rank_suppressApply guard.
@@ -41,10 +41,10 @@ if (_rank isEqualTo "") exitWith {};
 // goes to the server's override map, which is what drives role access; without
 // it there is nothing persistent to write to and the engine's own rank is set
 // instead, so the combo still does what it says on any mission.
-if (isNil "YMF_fnc_player_setRankOverride") then {
+if (isNil "ghost_players_fnc_setRankOverride") then {
     [_player, _rank] remoteExecCall ["setRank", _player];
 } else {
-    [getPlayerUID _player, _rank, _player, name player] remoteExecCall ["YMF_fnc_player_setRankOverride", 2];
+    [getPlayerUID _player, _rank, _player, name player] remoteExecCall ["ghost_players_fnc_setRankOverride", 2];
 };
 
 ["Admin Panel", format ["Set %1's rank to %2.", name _player, _rank], [0.4, 0.702, 0.4, 1]] call EFUNC(notify,notify);

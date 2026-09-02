@@ -4,21 +4,10 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         units[] = {
-            QGVAR(Item_H_Helmet_FASTMT_tan_F),
-            QGVAR(Item_H_Helmet_FASTMT_rgr_F),
-            QGVAR(Item_H_Helmet_FASTMT_blk_F),
-            QGVAR(Item_H_Helmet_FASTMT_cbr_F),
-            QGVAR(Item_H_Helmet_FASTMT_Headset_tan_F),
-            QGVAR(Item_H_Helmet_FASTMT_Headset_rgr_F),
-            QGVAR(Item_H_Helmet_FASTMT_Headset_blk_F),
-            QGVAR(Item_H_Helmet_FASTMT_Headset_cbr_F),
             QGVAR(Item_H_Helmet_FASTMT_Headset_Multicam_F),
             QGVAR(Item_H_Helmet_FASTMT_Headset_Multicam_Snow_F),
             QGVAR(Item_H_Helmet_FASTMT_Headset_A3_Multicam_Woodland_F),
             QGVAR(Item_H_Helmet_FASTMT_Headset_US_OCP_F),
-            QGVAR(Item_H_Helmet_FASTMT_Cover_tan_F),
-            QGVAR(Item_H_Helmet_FASTMT_Cover_rgr_F),
-            QGVAR(Item_H_Helmet_FASTMT_Cover_blk_F),
             QGVAR(Item_H_Helmet_FASTMT_Cover_mtp_F),
             QGVAR(Item_H_Helmet_FASTMT_Cover_tna_F),
             QGVAR(Item_H_Helmet_FASTMT_Cover_wdl_F),
@@ -52,21 +41,10 @@ class CfgPatches {
             QGVAR(Item_H_Booniehat_ocp_hs_F)
         };
         weapons[] = {
-            QGVAR(H_Helmet_FASTMT_tan_F),
-            QGVAR(H_Helmet_FASTMT_rgr_F),
-            QGVAR(H_Helmet_FASTMT_blk_F),
-            QGVAR(H_Helmet_FASTMT_cbr_F),
-            QGVAR(H_Helmet_FASTMT_Headset_tan_F),
-            QGVAR(H_Helmet_FASTMT_Headset_rgr_F),
-            QGVAR(H_Helmet_FASTMT_Headset_blk_F),
-            QGVAR(H_Helmet_FASTMT_Headset_cbr_F),
             QGVAR(H_Helmet_FASTMT_Headset_Multicam_F),
             QGVAR(H_Helmet_FASTMT_Headset_Multicam_Snow_F),
             QGVAR(H_Helmet_FASTMT_Headset_A3_Multicam_Woodland_F),
             QGVAR(H_Helmet_FASTMT_Headset_US_OCP_F),
-            QGVAR(H_Helmet_FASTMT_Cover_tan_F),
-            QGVAR(H_Helmet_FASTMT_Cover_rgr_F),
-            QGVAR(H_Helmet_FASTMT_Cover_blk_F),
             QGVAR(H_Helmet_FASTMT_Cover_mtp_F),
             QGVAR(H_Helmet_FASTMT_Cover_tna_F),
             QGVAR(H_Helmet_FASTMT_Cover_wdl_F),
@@ -96,19 +74,16 @@ class CfgPatches {
             QGVAR(H_Booniehat_Solid_Tan_hs_F),
             QGVAR(H_Booniehat_Solid_White_F),
             QGVAR(H_Booniehat_Solid_White_hs_F),
-            QGVAR(G_Balaclava_US_OCP),
-            QGVAR(G_Balaclava_Multicam_Snow),
-            QGVAR(H_Helmet_FASTMT_base_F),
-            QGVAR(H_Helmet_FASTMT_Headset_base_F),
-            QGVAR(H_Helmet_FASTMT_Cover_base_F),
             QGVAR(H_Booniehat_ocp_F),
             QGVAR(H_Booniehat_ocp_hs_F)
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "ghost_main",
-            "ace_hearing"
+            "ace_hearing",
+            "A3_Aegis_Characters_F_Aegis_Headgear"   // the FAST-MT is Aegis's, linked (2026-08-29)
         };
+        skipWhenMissingDependencies = 1;
         authorUrl = "https://www.ghostsofbattle.com/";
         author = QAUTHOR;
         authors[] = {""};
@@ -125,4 +100,5 @@ class CfgEditorSubcategories {
 #include "CfgEventHandlers.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
+#include "CfgGlasses.hpp"
 #include "XtdGear.hpp"

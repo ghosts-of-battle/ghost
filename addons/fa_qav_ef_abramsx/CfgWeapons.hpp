@@ -26,11 +26,27 @@
     "FA_250Rnd_30mm_PROX_T_White", "FA_250Rnd_30mm_PROX_T_Blue", "FA_250Rnd_30mm_PROX_T_Orange", "FA_250Rnd_30mm_PROX_T_IR"
 
 class CfgWeapons {
-    class autocannon_30mm_CTWS;
+    // THE PARENT NAMED, AND HighROF DECLARED. A bare `class HighROF { ... }`
+    // inside M914 is a definition, not a reach-in: it rebinds the fire mode to
+    // no parent and the RPT says so - "Updating base class 'HE'->'', by
+    // fa_qav_ef_abramsx, on autocannon_30mm_M914/HighROF.
+    // Declaring it on the parent (a DECLARATION, no body - that is what keeps
+    // it safe) lets the children inherit it by name instead. Vanilla parent
+    // read off addons/fa_mediumcaliber, which reopens the same weapon.
+    class autocannon_Base_F;
+    class autocannon_30mm_CTWS: autocannon_Base_F {
+        class HighROF;
+    };
     class autocannon_30mm_M914: autocannon_30mm_CTWS {
-        class HighROF { magazines[] += { FA_MAGS_30MM }; };
+        // : HighROF, NOT a bare reopen. The parent's HighROF is a child of
+        // HE, and a parentless nested class drops that - the RPT says so:
+        // "Updating base class 'HE'->'', by ... autocannon_30mm_M914/HighROF".
+        class HighROF: HighROF { magazines[] += { FA_MAGS_30MM }; };
     };
     class autocannon_30mm_M914_twin: autocannon_30mm_CTWS {
-        class HighROF { magazines[] += { FA_MAGS_30MM }; };
+        // : HighROF, NOT a bare reopen. The parent's HighROF is a child of
+        // HE, and a parentless nested class drops that - the RPT says so:
+        // "Updating base class 'HE'->'', by ... autocannon_30mm_M914/HighROF".
+        class HighROF: HighROF { magazines[] += { FA_MAGS_30MM }; };
     };
 };

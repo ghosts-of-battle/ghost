@@ -17,12 +17,4 @@ A content pack: 51 unit classes. No scripted behaviour.
 
 ## Ships
 
-51 unit classes, 1 function.
-
-## Functions
-
-<details><summary>1</summary>
-
-- `ghost_backpack_fnc_empty`
-
-</details>
+51 unit classes.

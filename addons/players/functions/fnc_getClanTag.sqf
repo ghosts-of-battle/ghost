@@ -30,6 +30,13 @@ params [["_unit", player, [objNull]]];
 
 if (isNull _unit) exitWith {""};
 
+// OFF UNLESS ASKED FOR - see initSettings.inc.sqf. squadParams is not a free
+// read: it makes the engine resolve the unit's squad, logo included, and a logo
+// that is not on disk is then retried on every rendered frame. The switch is
+// checked here rather than at the call sites so there is exactly one place that
+// can reach the squad system at all.
+if !(missionNamespace getVariable [QGVAR(enableClanTag), false]) exitWith {""};
+
 private _params = squadParams _unit;
 if (!(_params isEqualType []) || {_params isEqualTo []}) exitWith {""};
 

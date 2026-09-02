@@ -29,6 +29,14 @@ private _until = (CBA_missionTime + _window) max (GVAR(outages) getOrDefault [st
 
 GVAR(outages) set [str _side, _until];
 
-INFO_3("cache killed: %1 ceiling %2 for %3s",_side,round GVAR(reducedMax),round _window);
+INFO_3("cache killed: %1 ceiling %2 for %3s",_side,[_side] call FUNC(ceilingFor),round _window);
 ["SUPPLY", format ["%1 drone supply hit - their air thins out for a while.", _side]]
     call EFUNC(notify,broadcast);
+
+// THE ENEMY REBUILDS. A hit cache is a place the commander now knows is
+// reachable; LOGCOM sends a section to hold the ground, by convoy - one the
+// players can interdict, and can find, since LOCATE LOGISTICS points at
+// where it starts. Soft-linked like every adapter call.
+if (!isNil "ghost_adapter_alive_fnc_requestSupply") then {
+    [_side, getPosATL _cache, [1, 0, 0, 0, 0, 0]] call ghost_adapter_alive_fnc_requestSupply;
+};

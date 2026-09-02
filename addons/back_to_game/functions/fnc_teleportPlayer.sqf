@@ -25,7 +25,7 @@ switch (true) do {
     // Teleportation to leader is enabled. Teleport to leader or leader's vehicle.
     case (GVAR(teleportToLeader) && {_leader != player}): {
         private _leaderVehicle = vehicle _leader;
-        if (GVAR(teleportToVehicle) && {_leaderVehicle != _leader}) then {
+        if (GVAR(teleportToVehicle) && _leaderVehicle != _leader) then {
             private _success = player moveInAny _leaderVehicle;
             if !(_success) then {
                 // No point in teleporting to leader as player probably would be instantly killed by vehicle

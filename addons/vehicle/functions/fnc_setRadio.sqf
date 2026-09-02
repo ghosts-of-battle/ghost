@@ -42,7 +42,8 @@ if (EGVAR(patches,usesACRE)) exitWith {
     if (count _racks == 0) exitWith {INFO_2("VehicleRadio","No Vehicle Racks discoverd for %1 (%2).",_vehicle,typeOf _vehicle);};
 
     // Add extra channels
-    _radioChannel = _radioChannel + [1,1,1,1,1];
+    _radioChannel = +_radioChannel;        // our own copy - append must not touch the caller's
+    _radioChannel append [1,1,1,1,1];
 
     {
         private _radio = [_x] call acre_api_fnc_getMountedRackRadio;

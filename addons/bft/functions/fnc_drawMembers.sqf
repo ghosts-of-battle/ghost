@@ -22,7 +22,7 @@
 
 params [["_map", controlNull, [controlNull]]];
 
-if (!GVAR(enabled) || {GVAR(memberMarkers) isEqualTo 0}) exitWith {};
+if (!GVAR(enabled) || GVAR(memberMarkers) isEqualTo 0) exitWith {};
 
 private _members = GVAR(memberUnits);
 if (isNil "_members" || {_members isEqualTo []}) exitWith {};

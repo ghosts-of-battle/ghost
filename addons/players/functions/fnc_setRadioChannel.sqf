@@ -60,7 +60,7 @@ if (EGVAR(patches,usesTFAR)) exitWith {
 
     // SW handheld
     private _sw = call TFAR_fnc_activeSwRadio;
-    if (!isNil "_sw" && {_sw isEqualType "" && {_sw != ""}}) then {
+    if (!isNil "_sw" && {_sw isEqualType "" && _sw isNotEqualTo ""}) then {
         { [_sw, _forEachIndex + 1, _x] call TFAR_fnc_setChannelFrequency; } forEach ghost_radio_tfarSrFreqs;
         [_sw, _swIdx] call TFAR_fnc_setSwChannel;
         INFO_3("Radio","%1 SW radio (%2) tuned to net index %3",_player,_sw,_swIdx);
@@ -69,7 +69,7 @@ if (EGVAR(patches,usesTFAR)) exitWith {
     // LR backpack (only if carried)
     if (call TFAR_fnc_haveLRRadio) then {
         private _lr = call TFAR_fnc_activeLrRadio;
-        if (!isNil "_lr" && {_lr isEqualType "" && {_lr != ""}}) then {
+        if (!isNil "_lr" && {_lr isEqualType "" && _lr isNotEqualTo ""}) then {
             { [_lr, _forEachIndex + 1, _x] call TFAR_fnc_setChannelFrequency; } forEach ghost_radio_tfarLrFreqs;
             [_lr, _lrIdx] call TFAR_fnc_setLrChannel;
             INFO_3("Radio","%1 LR radio (%2) tuned to net index %3",_player,_lr,_lrIdx);

@@ -253,3 +253,50 @@ ALiVE. Chat: `#ghostreads/squad/fire/capture`, `#ghostcoastal`, `#ghostjam`,
 `#ghostuas`, `#ghostreact`, `#ghostqrf`, `#ghostleaders`.
 
 NOTHING IN STEPS 1-6 HAS RUN IN GAME. Only slice zero has.
+
+### Intel integration with ALiVE (2026-08-26)
+
+Intel now points at everything ALiVE runs, not only what ghost spawns. Three
+new adapter reads, all server-side with published counts for the client
+buttons: `camps` (mil_placement's random camps, off the `campSafePos` key on
+the cluster hash, side = who garrisons it now), `logisticsHubs` (LOGCOM's
+`ALIVE_ML_supplyNetwork` nodes, HQ plus every delivery point still feeding
+something alive), `radars` (vehicle profiles by class - SAM search sets,
+Clam Shells). `aaTargets` widened from placement's registry to every
+anti-air-capable vehicle profile (ALiVE's SEAD rule). Products: LOCATE CAMP,
+LOCATE LOGISTICS; LOCATE RADAR now covers ALiVE's radars beside the coastal
+ones; LOCATE AA and LOCATE ARTILLERY point at current profile positions.
+Deposit hints draw from the same pools. Installations were already read.
+Anti-ship batteries stay ghost's own. NOT RUN IN GAME.
+
+### ALiVE integration, the rest (2026-08-26)
+
+- Event bridge: the adapter listens to ALiVE's whole event log and re-raises
+  plain summaries as `ghost_adapter_alive_event` / `_capture`; `qrf`
+  announces hostile captures the moment OPCOM logs them.
+- One intel: ALiVE's corpse-file chance is zeroed per commander; ghost's
+  circles and hints are filed into the friendly G2 as spot reports
+  (`reportIntel`), so tablet, COP and ghost's map agree. The hint tally
+  (banked, tier, hinted ids) persists through ALiVE's data layer.
+- The commander's stake: coastal batteries and drone caches register as
+  OPCOM objectives (`registerSite`); a hit cache asks LOGCOM for a section
+  (`requestSupply`) - a convoy players can find and interdict.
+- Friendly C2: the support app lists ALiVE's own batteries (`alivearty`)
+  and ATO (`alivecas`, experimental) as providers; BFT draws virtual
+  friendlies from the COP; `reaction` scales detection by settlement
+  hostility and warns a group when the enemy commander has its position.
+- Respawn: ghost defers to ALiVE multispawn's gear restore when it is on,
+  and falls back to the role loadout instead of an empty one otherwise.
+- The `airdefence` stopgap references are gone. NOT RUN IN GAME.
+
+### Class picker (2026-08-26)
+
+Every module field that takes class names (antiship launchers per side and
+shared, missiles, decoys; ambience shells and drones; cas airframe; uas
+drones per side) opens a selection window instead of an edit box:
+`ghost_ClassPick_*` in main/CfgEdenDrone.hpp on ALiVE's inline-controls-group
+substrate, with SIDE and FACTION cycle filters (Type/Source for ammo), a
+multi-select list, "(unrecognised)" rows for stored names the list does not
+know, and a typed override. Per-side fields have the side fixed. Handlers
+are ghost_common's (listClasses, edenClassPickLoad/Save). The wire format is
+unchanged - a comma-separated string - so no read site moved. NOT RUN IN EDEN.

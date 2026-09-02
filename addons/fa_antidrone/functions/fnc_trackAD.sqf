@@ -55,7 +55,7 @@ private _origin = getPosASL _proj;
     // Programmed airburst: detonate at the dialled slant range, drone or not.
     // Interpolate the exact point on this frame's segment so a fast round can't
     // overshoot the dialled range by a frame's worth of travel.
-    if (_burst > 0 && {_travelled >= _burst}) exitWith {
+    if (_burst > 0 && _travelled >= _burst) exitWith {
         private _burstPos = _curPos;
         private _prev = _origin distance _lastPos;
         private _span = _travelled - _prev;
@@ -94,7 +94,7 @@ private _origin = getPosASL _proj;
         };
         private _closest = _lastPos vectorAdd (_seg vectorMultiply _t);
         private _d = _closest distance _p;
-        if (_d <= _prox && {_best < 0 || {_d < _best}}) then {
+        if (_d <= _prox && {_best < 0 || _d < _best}) then {
             _best = _d;
             _burstPos = _closest;
         };

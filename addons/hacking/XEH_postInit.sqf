@@ -77,7 +77,7 @@ if (isServer) then {
     // simply goes unremarked.
     [QGVAR(popSeen), {
         params [["_pos", [], [[]]], ["_sideStr", "", [""]]];
-        if (_pos isEqualTo [] || {_sideStr isEqualTo ""}) exitWith {};
+        if (_pos isEqualTo [] || _sideStr isEqualTo "") exitWith {};
         if (isNil QEFUNC(adapter_alive,bumpHostility)) exitWith {};
 
         private _now = [_pos, _sideStr, POP_HOSTILITY_BUMP] call EFUNC(adapter_alive,bumpHostility);
@@ -398,6 +398,23 @@ if (isServer) then {
             GVAR(sideControl) set [str _side, _ctype];
         } forEach (call ghost_adapter_alive_fnc_commanders);
         INFO_1("body intel by side: %1",GVAR(sideControl));
+
+        // THE TALLY IS WAR STATE. Banked items, the hint tier and the ids
+        // already hinted ride in ALiVE's persistence beside the profiles and
+        // objectives they point at, so a campaign that reloads its war does
+        // not reload it with the intel economy reset to zero. Loaded once
+        // here; written wherever they change.
+        if (!isNil "ghost_adapter_alive_fnc_getData") then {
+            private _banked = [QGVAR(banked)] call ghost_adapter_alive_fnc_getData;
+            if (!isNil "_banked") then { if (_banked isEqualType 0) then { GVAR(banked) = _banked } };
+            private _tier = [QGVAR(hintTier)] call ghost_adapter_alive_fnc_getData;
+            if (!isNil "_tier") then { if (_tier isEqualType 0) then { missionNamespace setVariable [QGVAR(hintTier), _tier] } };
+            private _hinted = [QGVAR(hintedIds)] call ghost_adapter_alive_fnc_getData;
+            if (!isNil "_hinted") then { if (_hinted isEqualType []) then { missionNamespace setVariable [QGVAR(hintedIds), _hinted] } };
+            private _t = missionNamespace getVariable [QGVAR(hintTier), 0];
+            private _n = count (missionNamespace getVariable [QGVAR(hintedIds), []]);
+            INFO_3("intel tally restored: banked %1, tier %2, %3 hinted",GVAR(banked),_t,_n);
+        };
     }] call CBA_fnc_addEventHandler;
 
     ["CAManBase", "killed", LINKFUNC(onBodyKilled)] call CBA_fnc_addClassEventHandler;
@@ -423,6 +440,9 @@ if (isServer) then {
                 // them on a hint that never drew.
                 GVAR(banked) = GVAR(banked) + GVAR(perHint);
             };
+        };
+        if (!isNil "ghost_adapter_alive_fnc_setData") then {
+            [QGVAR(banked), GVAR(banked)] call ghost_adapter_alive_fnc_setData;
         };
     }] call CBA_fnc_addEventHandler;
 };

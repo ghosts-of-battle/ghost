@@ -92,6 +92,12 @@ private _centre = _at vectorAdd [sin _bearing * _throw, cos _bearing * _throw, 0
 
 _store set [_sk, [_id, _tier, _bearing, _colour]];
 
+// THE G2 LEARNS WHAT THE PLAYER LEARNED - the circle's centre, not the
+// target. Filed as a spot report so the commander's tablet and COP carry it.
+if (!isNil "ghost_adapter_alive_fnc_reportIntel") then {
+    [_side, (_pool select _i) param [2, sideUnknown], _id, _centre, toLower _label] call ghost_adapter_alive_fnc_reportIntel;
+};
+
 // One marker per product per side, so a new circle REPLACES the last rather
 // than leaving a trail of stale ones the player can triangulate from.
 [QGVAR(product), ["circle",

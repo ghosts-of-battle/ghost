@@ -18,6 +18,12 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 13 functions.
 
+## CBA settings
+
+| Setting | Type | Name |
+|---|---|---|
+| `ghost_players_enableClanTag` | CHECKBOX | Use squad tags in names |
+
 ## Functions
 
 <details><summary>13</summary>

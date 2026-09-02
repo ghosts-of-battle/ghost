@@ -33,6 +33,21 @@ GVAR(jamDuty) = 100;
 GVAR(jamConeEnable) = false;
 GVAR(jamUavs) = false;
 GVAR(detectorRange) = 1000;
-GVAR(jamHudEnabled) = true;
+// THE FIELD METER IS OFF BY DEFAULT. The JAM live tile and the tacpad JAM app
+// already say how jammed the sky is; the bottom-screen DEGRADED/SMOTHERED bar
+// was a third copy that sat over the map. Left as a variable a mission or a
+// script can flip back on, not a permanent fixture.
+GVAR(jamHudEnabled) = false;
+
+// The uplink's own field. Small on purpose: it is the last hundred metres
+// of the assault on it, not a second sphere.
+GVAR(gpsUplinkRadius) = 400;
+
+// Off until the module says otherwise, like every other operation value:
+// FUNC(spawnObjectiveJammers) reads it on the server before the module has
+// necessarily run, and an undefined read there killed the whole spawner once
+// already - see the jam-model knobs above.
+GVAR(gpsEnable) = false;
+GVAR(siteObjectives) = false;
 
 ADDON = true;

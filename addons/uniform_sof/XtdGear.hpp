@@ -5,7 +5,7 @@ class XtdGearModels {
             options[] = {"camo", "type"};
             class camo {
                 alwaysSelectable = 1;
-                values[] = {"RGR", "SND", "BLK", "OLV", "MTP", "TNA", "WDL", "MRPT_W", "MRPT_D", "NWU", "OCP"};
+                values[] = {"RGR", "SND", "BLK", "OLV", "MTP", "TNA", "WDL", "ALP", "MRPT_W", "MRPT_D", "MRPT_WIN", "NWU", "OCP"};
                 class RGR {
                     label = "RGR";
                     image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
@@ -34,6 +34,10 @@ class XtdGearModels {
                     label = "WDL";
                     image = "z\aceax\addons\gearinfo\data\camo\mcw.paa";
                 };
+                class ALP {
+                    label = "ALP";
+                    image = "z\aceax\addons\gearinfo\data\camo\alp.paa";
+                };
                 class MRPT_W {
                     label = "MRP-W";
                     image = "z\aceax\addons\gearinfo\data\camo\mrpt_wd.paa";
@@ -41,6 +45,11 @@ class XtdGearModels {
                 class MRPT_D {
                     label = "MRP-D";
                     image = "z\aceax\addons\gearinfo\data\camo\mrpt_d.paa";
+                };
+                // aceax gearinfo has no winter MARPAT swatch - white stands in.
+                class MRPT_WIN {
+                    label = "MRP-Win";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
                 };
                 class NWU {
                     label = "NWU";
@@ -114,10 +123,15 @@ class XtdGearModels {
             options[] = {"camo", "type"};
             class camo {
                 alwaysSelectable = 1;
-                values[] = {"RGR", "MTP", "TNA", "WDL", "MRPT_W", "MRPT_D", "NWU", "OCP"};
+                values[] = {"RGR", "DES", "MTP", "TNA", "WDL", "MRPT_W", "MRPT_D", "NWU", "OCP"};
                 class RGR {
                     label = "RGR";
                     image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                // Solid tan, the way RGR is solid green - not a pattern.
+                class DES {
+                    label = "DES";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
                 };
                 class MTP {
                     label = "MTP";
@@ -156,6 +170,51 @@ class XtdGearModels {
                 };
                 class RolledUp {
                     label = "Rolled";
+                };
+            };
+        };
+        // JAM SOF's cold-weather set, added by the mod on 31 August. It is
+        // a PAIRING, not a camo: SOF_B_SFColdFatigues_mcam_gry wears
+        // U_ColdWeatherJacket_gry over U_FatiguesSF_Pants_mcam, so jacket
+        // and trousers are separate axes. Six of the twelve combinations
+        // exist; the rest grey out, as they already do on the Hi-Cut above.
+        class GVAR(SFColdFatigues) {
+            label = "SOF Cold Fatigues";
+            options[] = {"jacket", "trousers"};
+            class jacket {
+                alwaysSelectable = 1;
+                values[] = {"GRY", "ALP", "MRPT_WIN"};
+                class GRY {
+                    label = "GRY";
+                    image = "z\aceax\addons\gearinfo\data\camo\gry.paa";
+                };
+                class ALP {
+                    label = "ALP";
+                    image = "z\aceax\addons\gearinfo\data\camo\alp.paa";
+                };
+                class MRPT_WIN {
+                    label = "MRP-Win";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
+                };
+            };
+            class trousers {
+                alwaysSelectable = 1;
+                values[] = {"MTP", "ALP", "MRPT_W", "MRPT_WIN"};
+                class MTP {
+                    label = "MTP";
+                    image = "z\aceax\addons\gearinfo\data\camo\mtp.paa";
+                };
+                class ALP {
+                    label = "ALP";
+                    image = "z\aceax\addons\gearinfo\data\camo\alp.paa";
+                };
+                class MRPT_W {
+                    label = "MRP-W";
+                    image = "z\aceax\addons\gearinfo\data\camo\mrpt_wd.paa";
+                };
+                class MRPT_WIN {
+                    label = "MRP-Win";
+                    image = "z\aceax\addons\gearinfo\data\camo\wht.paa";
                 };
             };
         };
@@ -422,6 +481,76 @@ class XtdGearInfos {
             model = QGVAR(SFFatigues);
             camo = "OCP";
             type = "RolledUp";
+        };
+        /* ---- JAM SOF's own, added by the mod on 31 August ----
+           Everything above is one of our retextures; everything below is
+           the mod's, filed on the same models so the arsenal shows one
+           entry per garment rather than two. Only coordinates our copies
+           do not already hold are used - a shared one shadows the other. */
+        /* Hi-Cut - two new cover camos. OURS: the covers are remade in
+           CfgWeapons on the _rgr base, for the hearing protection JAM SOF
+           does not ship, so these are GVAR like the rest of the family. */
+        class GVAR(SOF_H_Opscore_Cover_alp) {
+            model = QGVAR(Opscore);
+            camo = "ALP";
+            type = "Cover";
+        };
+        class GVAR(SOF_H_Opscore_Cover_mrpt_win) {
+            model = QGVAR(Opscore);
+            camo = "MRPT_WIN";
+            type = "Cover";
+        };
+        class GVAR(SOF_H_Opscore_CoverSpec_alp) {
+            model = QGVAR(Opscore);
+            camo = "ALP";
+            type = "CoverEnh";
+        };
+        class GVAR(SOF_H_Opscore_CoverSpec_mrpt_win) {
+            model = QGVAR(Opscore);
+            camo = "MRPT_WIN";
+            type = "CoverEnh";
+        };
+        /* SF Fatigues - the desert pair */
+        class GVAR(SOF_U_B_SFFatigues_desert) {
+            model = QGVAR(SFFatigues);
+            camo = "DES";
+            type = "Full";
+        };
+        class GVAR(SOF_U_B_SFFatigues_Shortsleeve_desert) {
+            model = QGVAR(SFFatigues);
+            camo = "DES";
+            type = "RolledUp";
+        };
+        /* Cold Fatigues - jacket over trousers, read off the mod's textures */
+        class GVAR(SOF_U_B_SFColdFatigues_alp) {
+            model = QGVAR(SFColdFatigues);
+            jacket = "ALP";
+            trousers = "ALP";
+        };
+        class GVAR(SOF_U_B_SFColdFatigues_alp_gry) {
+            model = QGVAR(SFColdFatigues);
+            jacket = "GRY";
+            trousers = "ALP";
+        };
+        class GVAR(SOF_U_B_SFColdFatigues_mcam_alp) {
+            model = QGVAR(SFColdFatigues);
+            jacket = "ALP";
+            trousers = "MTP";
+        };
+        class GVAR(SOF_U_B_SFColdFatigues_mcam_gry) {
+            model = QGVAR(SFColdFatigues);
+            jacket = "GRY";
+            trousers = "MTP";
+        };
+        class GVAR(SOF_U_B_SFColdFatigues_mrpt_win) {
+            model = QGVAR(SFColdFatigues);
+            jacket = "MRPT_WIN";
+            trousers = "MRPT_WIN";
+        };
+        class GVAR(SOF_U_B_SFColdFatigues_mrpt_win_wdl) {
+            model = QGVAR(SFColdFatigues);
+            jacket = "MRPT_WIN";
+            trousers = "MRPT_W";
         };
     };
 };

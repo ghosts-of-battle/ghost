@@ -31,6 +31,6 @@ GVAR(templateIds) select {
     private _tKind = _t get "kind";
     private _allowed = _t get "allowedFrom";
 
-    (_kind == "" || {_tKind == _kind} || {_tKind == "both"})
+    (_kind == "" || _tKind == _kind || _tKind == "both")
     && {_status == "" || {_allowed isEqualTo [] || {_status in _allowed}}}
 }

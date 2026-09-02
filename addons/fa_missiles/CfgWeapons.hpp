@@ -28,7 +28,7 @@ class CfgWeapons {
     // Static Titan launcher (1-tube). Overrides magazines[] with the 1Rnd bodies,
     // so a parentless merge feeds it our count=1 FA variants (same per-tube
     // granularity as the VVE Titan rack).
-    class missiles_titan_static {
+    class missiles_titan_static: missiles_titan {
         magazines[] += {
             "FA_1Rnd_BGM185_Broadsword",
             "FA_1Rnd_XM1200_Copperhead",

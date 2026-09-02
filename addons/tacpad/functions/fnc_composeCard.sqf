@@ -111,7 +111,7 @@ private _fnc_edit = {
     if (_field getOrDefault ["required", false]) then {_tokens pushBack "REQ"};
     private _min = _field getOrDefault ["min", -1e10];
     private _max = _field getOrDefault ["max", 1e10];
-    if ((_field getOrDefault ["type", "text"]) isEqualTo "number" && {_min > -1e9} && {_max < 1e9}) then {
+    if ((_field getOrDefault ["type", "text"]) isEqualTo "number" && {_min > -1e9} && _max < 1e9) then {
         _tokens pushBack format ["%1-%2", _min, _max];
     };
     if ((_field getOrDefault ["autoFill", "none"]) isNotEqualTo "none") then {_tokens pushBack "AUTO"};

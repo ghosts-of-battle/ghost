@@ -169,6 +169,13 @@ private _fnc_standUp = {
     _reg pushBack [format ["as_%1", mapGridPosition _at], +_at, _bSide];
     missionNamespace setVariable [QGVAR(batteries), _reg, true];
 
+    // THE COMMANDER OWNS IT NOW. A battery ALiVE's OPCOM does not know about
+    // is one it never garrisons or defends; registered as an objective it
+    // gets a section, TACOM orders and a place in the commander's picture.
+    if (!isNil "ghost_adapter_alive_fnc_registerSite") then {
+        [_bSide, format ["as_%1", mapGridPosition _at], +_at, 150] call ghost_adapter_alive_fnc_registerSite;
+    };
+
     [FUNC(tick), AS_TICK, _carrier] call CBA_fnc_addPerFrameHandler;
 
     diag_log text format [

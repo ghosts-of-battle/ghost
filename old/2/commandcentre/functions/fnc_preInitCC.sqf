@@ -1,1 +1,0 @@
-GHOST_CC_vehicleCamList = [];

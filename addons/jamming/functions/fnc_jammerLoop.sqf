@@ -36,7 +36,9 @@ if (GVAR(hasACRE) && GVAR(jamBurnthrough)) then {
     };
 };
 
-private _factor = ([_ppos, _radioPower] call FUNC(jamFactor)) select 0;
+// DOM_RADIO, explicitly. This loop drives TFAR and ACRE and nothing else;
+// the hub that denies TAC//MSG must not quieten anybody's voice net.
+private _factor = ([_ppos, _radioPower, DOM_RADIO] call FUNC(jamFactor)) select 0;
 
 private _bestRx = TFAR_RX_FALLOFF_FAR;   // 1 = no jam
 private _bestTx = 1;
@@ -66,8 +68,25 @@ if (_factor > 0) then {
     };
 };
 
-// Published for the jamming HUD (Part 3 Â§3) - no second evaluation there.
+// Published for the jamming meter - no second evaluation there. FOUR
+// NUMBERS SINCE THE SPLIT: one per domain, so the meter can show which
+// service is down rather than one bar that could mean any of them, plus
+// DOM_ANY for "is the spectrum dirty at all". Without the last one a
+// player under a data-only hub would read a clean meter while TAC//MSG
+// was dead.
+//
+// All four come off the one calculator, in the one place, on the one
+// cadence - the meter, the radios, the handset and the map cannot
+// disagree about the sky because they are reading the same four numbers.
 GVAR(localJamFactor) = _factor;
+GVAR(localJamData) = ([_ppos, 0, DOM_DATA] call FUNC(jamFactor)) select 0;
+GVAR(localJamGps) = ([_ppos, 0, DOM_GPS] call FUNC(jamFactor)) select 0;
+GVAR(localJamAny) = _factor max GVAR(localJamData) max GVAR(localJamGps);
+
+// The GPS denial is the only one that has to TAKE something off the
+// player rather than scale a number, so it is applied here, on the same
+// tick that measured it.
+[GVAR(localJamGps)] call FUNC(gpsApply);
 
 if (GVAR(hasTFAR)) then {
     player setVariable ["tf_receivingDistanceMultiplicator", _bestRx];

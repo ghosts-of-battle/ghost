@@ -46,7 +46,7 @@ params [
     ["_life", 120, [0]]
 ];
 
-if (_source == "" || {_text == ""}) exitWith {};
+if (_source == "" || _text == "") exitWith {};
 
 private _who = allPlayers select {alive _x};
 if (_radius > 0 && {_pos isNotEqualTo []}) then {

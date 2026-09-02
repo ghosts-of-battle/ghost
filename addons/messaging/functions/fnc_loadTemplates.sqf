@@ -37,12 +37,12 @@
  * Public: No
  */
 
-private _root = missionConfigFile >> "Ghost_Templates";
+private _root = missionConfigFile >> "GHOST_Templates";
 
 if !(isClass _root) exitWith {
     // LOUD, because a mission with no deck has no reports at all. Every other
     // mission in this collection still needs its own copy of the file.
-    WARNING("no Ghost_Templates class in the mission config - this mission has no report deck");
+    WARNING("no GHOST_Templates class in the mission config - this mission has no report deck");
     0
 };
 

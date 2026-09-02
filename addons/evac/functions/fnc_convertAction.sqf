@@ -29,14 +29,14 @@ if (isNull objectParent _medic) then {
     {
         (_this select 0) params ["_medic", "_casualty"];
         if !([_medic, _casualty] call FUNC(canConvert)) exitWith {
-            ["Evac failed.", 1.5, _medic] call ace_common_fnc_displayTextStructured;
+            ["Evac", "Failed.", [0.831, 0.267, 0.267, 1]] call EFUNC(notify,notify);
         };
         [_medic, _casualty] call FUNC(convert);
-        ["Casualty evacuated - reinforcement inbound.", 2, _medic] call ace_common_fnc_displayTextStructured;
+        ["Evac", "Casualty evacuated - reinforcement inbound.", [0.4, 0.702, 0.4, 1]] call EFUNC(notify,notify);
     },
     {
         (_this select 0) params ["_medic"];
-        ["Evac cancelled.", 1.5, _medic] call ace_common_fnc_displayTextStructured;
+        ["Evac", "Cancelled.", [0.871, 0.361, 0.188, 1]] call EFUNC(notify,notify);
     },
     "Evacuating casualty...",
     {true},

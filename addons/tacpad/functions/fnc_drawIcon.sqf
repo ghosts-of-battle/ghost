@@ -28,7 +28,7 @@
 
 params [["_parent", controlNull, [controlNull]], ["_pos", [0, 0, 0], [[]], 3], ["_texture", "", [""]], ["_tint", [], [[]]]];
 
-if (isNull _parent || {_texture == ""}) exitWith {controlNull};
+if (isNull _parent || _texture == "") exitWith {controlNull};
 
 _pos params ["_x", "_y", "_h"];
 

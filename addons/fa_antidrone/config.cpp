@@ -8,6 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "ghost_fa_main",
+            "ghost_notify",
             "cba_main",
             "ace_ballistics"
         };

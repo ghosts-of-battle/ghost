@@ -560,6 +560,14 @@ class CfgMagazines {
     class FA_o_150Rnd_762x54_Box_T_Red;
     class FA_o_150Rnd_762x54_Box_T_White;
     class FA_o_150Rnd_762x54_Box_T_Yellow;
+    class FA_o_150Rnd_93x64_Type40;
+    class FA_o_150Rnd_93x64_Type40_T_Blue;
+    class FA_o_150Rnd_93x64_Type40_T_Green;
+    class FA_o_150Rnd_93x64_Type40_T_IR;
+    class FA_o_150Rnd_93x64_Type40_T_Orange;
+    class FA_o_150Rnd_93x64_Type40_T_Red;
+    class FA_o_150Rnd_93x64_Type40_T_White;
+    class FA_o_150Rnd_93x64_Type40_T_Yellow;
     class FA_o_20Rnd_9x39_7U15;
     class FA_o_20Rnd_9x39_7U16;
     class FA_o_30Rnd_580x42_Ball_HV;
@@ -4298,6 +4306,78 @@ class CfgMagazines {
         ammo = "FA_o_93x64_Type40_T_IR_t3";
     };
     class FA_o_10Rnd_93x64_Type40_T_IR_t2: FA_o_10Rnd_93x64_Type40_T_IR {
+        ammo = "FA_o_93x64_Type40_T_IR_t2";
+    };
+    class FA_o_150Rnd_93x64_Type40_t4: FA_o_150Rnd_93x64_Type40 {
+        ammo = "FA_o_93x64_Type40_t4";
+    };
+    class FA_o_150Rnd_93x64_Type40_t3: FA_o_150Rnd_93x64_Type40 {
+        ammo = "FA_o_93x64_Type40_t3";
+    };
+    class FA_o_150Rnd_93x64_Type40_t2: FA_o_150Rnd_93x64_Type40 {
+        ammo = "FA_o_93x64_Type40_t2";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_Red_t4: FA_o_150Rnd_93x64_Type40_T_Red {
+        ammo = "FA_o_93x64_Type40_T_Red_t4";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_Red_t3: FA_o_150Rnd_93x64_Type40_T_Red {
+        ammo = "FA_o_93x64_Type40_T_Red_t3";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_Red_t2: FA_o_150Rnd_93x64_Type40_T_Red {
+        ammo = "FA_o_93x64_Type40_T_Red_t2";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_Yellow_t4: FA_o_150Rnd_93x64_Type40_T_Yellow {
+        ammo = "FA_o_93x64_Type40_T_Yellow_t4";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_Yellow_t3: FA_o_150Rnd_93x64_Type40_T_Yellow {
+        ammo = "FA_o_93x64_Type40_T_Yellow_t3";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_Yellow_t2: FA_o_150Rnd_93x64_Type40_T_Yellow {
+        ammo = "FA_o_93x64_Type40_T_Yellow_t2";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_Green_t4: FA_o_150Rnd_93x64_Type40_T_Green {
+        ammo = "FA_o_93x64_Type40_T_Green_t4";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_Green_t3: FA_o_150Rnd_93x64_Type40_T_Green {
+        ammo = "FA_o_93x64_Type40_T_Green_t3";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_Green_t2: FA_o_150Rnd_93x64_Type40_T_Green {
+        ammo = "FA_o_93x64_Type40_T_Green_t2";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_White_t4: FA_o_150Rnd_93x64_Type40_T_White {
+        ammo = "FA_o_93x64_Type40_T_White_t4";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_White_t3: FA_o_150Rnd_93x64_Type40_T_White {
+        ammo = "FA_o_93x64_Type40_T_White_t3";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_White_t2: FA_o_150Rnd_93x64_Type40_T_White {
+        ammo = "FA_o_93x64_Type40_T_White_t2";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_Blue_t4: FA_o_150Rnd_93x64_Type40_T_Blue {
+        ammo = "FA_o_93x64_Type40_T_Blue_t4";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_Blue_t3: FA_o_150Rnd_93x64_Type40_T_Blue {
+        ammo = "FA_o_93x64_Type40_T_Blue_t3";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_Blue_t2: FA_o_150Rnd_93x64_Type40_T_Blue {
+        ammo = "FA_o_93x64_Type40_T_Blue_t2";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_Orange_t4: FA_o_150Rnd_93x64_Type40_T_Orange {
+        ammo = "FA_o_93x64_Type40_T_Orange_t4";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_Orange_t3: FA_o_150Rnd_93x64_Type40_T_Orange {
+        ammo = "FA_o_93x64_Type40_T_Orange_t3";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_Orange_t2: FA_o_150Rnd_93x64_Type40_T_Orange {
+        ammo = "FA_o_93x64_Type40_T_Orange_t2";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_IR_t4: FA_o_150Rnd_93x64_Type40_T_IR {
+        ammo = "FA_o_93x64_Type40_T_IR_t4";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_IR_t3: FA_o_150Rnd_93x64_Type40_T_IR {
+        ammo = "FA_o_93x64_Type40_T_IR_t3";
+    };
+    class FA_o_150Rnd_93x64_Type40_T_IR_t2: FA_o_150Rnd_93x64_Type40_T_IR {
         ammo = "FA_o_93x64_Type40_T_IR_t2";
     };
     class FA_b_10Rnd_408_Mk240_t4: FA_b_10Rnd_408_Mk240 {

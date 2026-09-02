@@ -11,12 +11,22 @@ private _YMFsettings = "Ghosts of Battle";
     {},
     true
 ] call CBA_fnc_addSetting;
+// AI SKILL ADJUSTMENT, OFF BY DEFAULT (user, 2026-09-01).
+//
+// "Arma Default" means config\config_skill.hpp does nothing at all - no
+// setSkill call is made and every AI keeps the skill its own config and the
+// difficulty profile give it. The other two run the mission's skill block on
+// every AI the mission ever creates, which on an ALiVE mission is a four-figure
+// number of units per session.
+//
+// This is the only switch: nothing else in the mod or the mission writes AI
+// skill, so index 0 here is the whole off state.
 [ // Ai setting
     QEGVAR(Settings,setAiSystemDifficulty),
     "LIST",
-    ["AI Setting", "This adjustes the ai and make them less godlike and more arcade to play against."],
+    ["AI Setting", "Adjusts AI skill so they are less godlike. Arma Default leaves every AI's skill exactly as its own config sets it and runs no skill script at all."],
     [_YMFsettings, "Mission"],
-    [[0,1,2], ["Arma Default", "Adjusted", "Faction Based"], 2],
+    [[0,1,2], ["Arma Default", "Adjusted", "Faction Based"], 0],
     true,
     {},
     true
@@ -164,7 +174,7 @@ private _YMFsettings = "Ghosts of Battle";
     "EDITBOX",
     ["Factions","Array of factions allowing system loadout and pylon changes"],
     [_YMFsettings, "Vehicle"],
-    '["BLU_CTRG_F","BLU_W_F","BLU_T_F","BLU_NATO_lxWS","BLU_F","USAF","tweed_UA_21","ghost"]',
+    '["BLU_CTRG_F","BLU_W_F","BLU_T_F","BLU_NATO_lxWS","BLU_F","USAF","tweed_UA_21","ghost_EUDF","ghost_EUDF_arc","ghost_EUDF_des","ghost_EUDF_tna","ghost_EUDF_wdl","ghost_GEN","ghost_HIMF","ghost_Marine_des","ghost_Marine_wdl","ghost_MFRC_mtp","ghost_MFRC_ocp","ghost_MFRC_tna","ghost_MFRC_wdl","ghost_US_JTF_des","ghost_US_JTF_ocp","ghost_US_JTF_tna","ghost_US_JTF_wdl"]',
     true,
     {},
     true

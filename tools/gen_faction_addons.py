@@ -49,7 +49,7 @@ STUB_MAX = 4
 
 # WHAT A MODIFIED FACTION IS CALLED IN 3DEN AND ZEUS. A space, not an
 # underscore: this is a name a person reads off a list, not an identifier.
-GHOST_PREFIX = "ghost "
+GHOST_PREFIX = "2040 "
 
 # Factions left exactly as their mod ships them whatever their size, with the
 # reason. Stubs are added to this automatically; these are the deliberate ones.

@@ -24,6 +24,10 @@ PREP(isOverWater);
 PREP(scatterPosition);
 PREP(listFactionDrones);
 PREP(edenDroneFactionLoad);
+// The class picker every module's class field opens - see main/CfgEdenDrone.hpp.
+PREP(listClasses);
+PREP(edenClassPickLoad);
+PREP(edenClassPickSave);
 PREP(edenDroneFactionSave);
 PREP(addDebugCommand);
 PREP(debugCommand);
@@ -49,3 +53,4 @@ PREP(contactBest);
 PREP(isISR);
 PREP(alert);
 PREP(onAlert);
+PREP(bloodType);

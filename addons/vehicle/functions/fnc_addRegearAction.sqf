@@ -19,7 +19,7 @@ params [["_vehicle", objNull, [objNull]]];
 
 if (isNull _vehicle) exitWith {};
 
-private _icon = "data\icon\logo_256.paa" call EFUNC(systems,getIcon);
+private _icon = "z\ghost\addons\media\images\logo_256.paa" call EFUNC(systems,getIcon);
 
 private _condition = { call EFUNC(systems,checkStagingZone) };
 private _stagingCat = [QEGVAR(Actions_Vehicle,Repair), "Regear", _icon, {

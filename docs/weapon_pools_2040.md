@@ -713,7 +713,7 @@ UAV02 quad:
          Aegis_I_Raven_UAV_02_backpack_lxWS, ION_UAV_02_backpack_lxWS]
 UAV02 IED (irregular suicide layer, t0-1):
   [B_Tura_UAV_02_IED_backpack_lxWS, B_G_UAV_02_IED_backpack_lxWS]
-KVN FPV:
+KVN FPV (MOD REMOVED 2026-08-27 - out of every faction; Crocus is the FPV line now):
   WEST: [B_KVN_AP_Bag, B_KVN_AT_Bag, B_KVN_AP_TI_Bag, B_KVN_AT_TI_Bag]
   EAST: [O_KVN_AP_Bag, O_KVN_AT_Bag, O_KVN_AP_TI_Bag, O_KVN_AT_TI_Bag]
   GUER: [I_KVN_AP_Bag, I_KVN_AT_Bag, I_KVN_AP_TI_Bag, I_KVN_AT_TI_Bag]

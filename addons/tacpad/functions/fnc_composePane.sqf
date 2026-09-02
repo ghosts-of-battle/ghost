@@ -395,7 +395,7 @@ private _sendW = _dw * 0.22;
 private _hint = "";
 ([] call EFUNC(messaging,linkState)) params ["_link"];
 if (_link > 0) then {
-    _hint = ["LINK DEGRADED - SENDS TRANSMIT LATE", "LINK DENIED - POSITION JAMMED"] select (_link > 1);
+    _hint = ["LINK DEGRADED - SENDS TRANSMIT LATE", "LINK NONET - POSITION JAMMED"] select (_link > 1);
 };
 if (GVAR(composeError) isNotEqualTo "") then {
     _hint = toUpper GVAR(composeError);
@@ -404,6 +404,6 @@ if (GVAR(composeError) isNotEqualTo "") then {
 [
     _root, [_dx + _sendW + _pad * 3, _sendY, _dw - _sendW - _pad * 4, _btnH],
     _hint,
-    ([_mute, _accent] select (GVAR(composeError) isNotEqualTo "" || {_link > 0})),
+    ([_mute, _accent] select (GVAR(composeError) isNotEqualTo "" || _link > 0)),
     0.62, true, "right", true
 ] call FUNC(drawText);

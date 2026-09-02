@@ -561,8 +561,19 @@ switch (_selType) do {
             [_body, [_pad, _y, _fw - 2 * _pad, _rowH], "ORDNANCE - PICK A BATTERY", _dim, 0.7, true, "left", true] call EFUNC(tacpad,drawText);
             _y = _y + _rowH + _padY * 0.4;
         } else {
-            private _ordIdx = (_prm param [4, 0]) min (count _ordTypes - 1);
+            private _ordIdx = ((_prm param [4, 0]) max 0) min (count _ordTypes - 1);
             (_ordTypes param [_ordIdx, []]) params [["_oName", "?"], ["_oRds", 0]];
+
+            // THE NAME TRAVELS, NOT JUST THE INDEX. supportTask rebuilds this
+            // list when the order is sent, and a type that ran dry in between
+            // shifts every index after it - so the index alone can send a
+            // different shell than the one on this row. Stored at 10, which the
+            // arty path does not otherwise use. NOT 10 - that is the CAS
+            // ordnance index, and _prm is one shared set across both paths.
+            if ((_prm param [11, ""]) isNotEqualTo _oName) then {
+                _prm set [11, _oName];
+                missionNamespace setVariable [QGVAR(supportParams), _prm];
+            };
             _y = [_y, "ORDNANCE", format ["%1 - %2 RDS", _oName, _oRds], 4, 1, 0, count _ordTypes - 1] call _fnc_stepRow;
         };
         _y = [_y, "ROUNDS", str ([1, 3, 6, 12, 24] param [_prm param [5, 1], 3]), 5, 1, 0, 4] call _fnc_stepRow;
@@ -576,7 +587,7 @@ switch (_selType) do {
         private _gunsMax = _unitRow param [6, 0];
         if (_gunsMax > 0) then {
             private _gunsCur = _prm param [7, 0];
-            if (_gunsCur < 1 || {_gunsCur > _gunsMax}) then {
+            if (_gunsCur < 1 || _gunsCur > _gunsMax) then {
                 _prm set [7, _gunsMax];
                 missionNamespace setVariable [QGVAR(supportParams), _prm];
             };
@@ -699,7 +710,7 @@ private _ay = _padY;
 // a fire mission onto the caller's own position, and a ghost CAS run cannot -
 // its whole geometry is built around a target point, so "overhead me" is not a
 // thing it can fly.
-private _ready = _selUnit isNotEqualTo "" && {_selTask isNotEqualTo ""}
+private _ready = _selUnit isNotEqualTo "" && _selTask isNotEqualTo ""
     && {(_selType isNotEqualTo "arty" && {!_isGhostCas}) || {_pt isNotEqualTo []}};
 
 // THE BUTTON SAYS WHAT IT IS WAITING FOR. A dim "CONFIRM TASKING" with no
@@ -737,7 +748,9 @@ private _fnc_confirm = if (_ready) then {{
     // extended: the stored array is the steppers' and must not grow two
     // entries every time CONFIRM is pressed.
     private _prm = +(missionNamespace getVariable [QGVAR(supportParams), [500, 150, 0, 1, 0, 1, 100, 0]]);
-    while {count _prm < 11} do {_prm pushBack []};
+    // 12 now: 11 is the arty ordnance NAME, beside the index at 4 - see the
+    // note on that row for why the name has to travel with it.
+    while {count _prm < 12} do {_prm pushBack []};
     _prm set [8, missionNamespace getVariable [QGVAR(supportIngress), []]];
     _prm set [9, missionNamespace getVariable [QGVAR(supportEgress), []]];
 
@@ -832,7 +845,7 @@ if (!(_display getVariable [QGVAR(pressWired), false])) then {
         private _spots = uiNamespace getVariable [QGVAR(supportHotspots), []];
         private _idx = _spots findIf {
             _x params ["_hx", "_hy", "_hw", "_hh"];
-            _mx >= _hx && {_mx <= _hx + _hw} && {_my >= _hy} && {_my <= _hy + _hh}
+            _mx >= _hx && {_mx <= _hx + _hw} && _my >= _hy && {_my <= _hy + _hh}
         };
         private _at = format ["%1 %2", round (_mx * 1000) / 1000, round (_my * 1000) / 1000];
         if (_idx > -1) then {

@@ -190,7 +190,7 @@ switch (true) do {
             private _left = _at - CBA_missionTime;
             if (_left > 0) then {
                 _armed = _armed + 1;
-                if (_next < 0 || {_left < _next}) then { _next = _left };
+                if (_next < 0 || _left < _next) then { _next = _left };
             };
         } forEach GVAR(alarms);
         if (_armed > 0) then {
@@ -207,7 +207,7 @@ switch (true) do {
 
 // --- footer ----------------------------------------------------------------
 private _status = _display displayCtrl IDC_SCN_STATUS;
-if ((_droneState == 2) || {_jamState == 2} || {time < GVAR(alarmRingUntil)}) then {
+if ((_droneState == 2) || _jamState == 2 || {time < GVAR(alarmRingUntil)}) then {
     // Half a second on, half off. Slow enough to read as a warning rather than
     // as a strobe you end up tuning out.
     _status ctrlSetText (["", "== ALERT =="] select ((floor (diag_tickTime * 2)) % 2 == 0));

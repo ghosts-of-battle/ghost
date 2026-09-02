@@ -10,15 +10,28 @@ Description:
     Cone bearing is rolled here, once, per zone - a directional jammer that
     re-rolled its arc every tick would be unplayable.
 
+Parameters:
+    _domains : ARRAY - which of DOM_RADIO / DOM_DATA / DOM_GPS this zone denies.
+                       Optional, default DOM_DEFAULT (radio and data), which is
+                       what a single emitter denied before the domains existed.
+
 Returns:
-    HASHMAP - los, burnthrough, burnRef, curve, duty, coneFrom, coneArc, jamUavs
+    HASHMAP - domains, los, burnthrough, burnRef, curve, duty, coneFrom,
+              coneArc, jamUavs
 
 Author:
     Ghost
 ---------------------------------------------------------------------------- */
+params [["_domains", DOM_DEFAULT, [[]]]];
+
+// An empty list would be a zone that denies nothing - a silent no-op that looks
+// like a working emitter on the map. Read it as "the caller did not say".
+if (_domains isEqualTo []) then { _domains = DOM_DEFAULT };
+
 private _cone = GVAR(jamConeEnable);
 
 createHashMapFromArray [
+    ["domains",     _domains],
     ["los",         GVAR(jamLos)],
     ["burnthrough", GVAR(jamBurnthrough)],
     ["burnRef",     GVAR(jamBurnRef)],

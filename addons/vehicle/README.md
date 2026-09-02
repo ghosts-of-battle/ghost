@@ -10,6 +10,7 @@ The two-argument INFO/WARNING/ERROR/LOG the Roomba scripts were written against,
 
 - `ghost_main`
 - `ghost_diag`
+- `ghost_notify`
 - `cba_xeh` _(external)_
 
 Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking the load order when something above is absent.

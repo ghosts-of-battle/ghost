@@ -38,7 +38,7 @@ if !(GVAR(enabled)) exitWith { false };
 if (GVAR(requireISR) && {!([_unit] call EFUNC(common,isISR))}) exitWith { false };
 
 private _src = GVAR(condition);
-if (_src isEqualTo "" || {_src isEqualTo "true"}) exitWith { true };
+if (_src isEqualTo "" || _src isEqualTo "true") exitWith { true };
 
 if (_src isNotEqualTo (missionNamespace getVariable [QGVAR(conditionSource), ""])) then {
     GVAR(conditionSource) = _src;

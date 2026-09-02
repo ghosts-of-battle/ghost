@@ -27,6 +27,20 @@ editor - but it is readable from a running mission, where both configs exist
 side by side. `#ghost fa.tiers` walks every generated t2 round, finds its
 vanilla ancestor and reports any that came out weaker. That is the check; this
 script cannot do it.
+
+MAGAZINE WELLS. A tier magazine is a NEW CLASS, and a weapon knows its
+magazines by name: magazines[] and CfgMagazineWells are matched on the class
+name, and inheriting from FA_o_150Rnd_762x54_Box does not put _t4 in front of
+the Zafir. So every generated magazine is written back into every well its base
+magazine sits in (CfgMagazineWells.hpp, both halves) - without that a tier 4
+rifleman spawns with eight magazines he cannot chamber, which is exactly what a
+CSAT autorifleman did.
+
+    python tools/gen_fa_tiers.py --wells-only
+
+writes ONLY the wells files. The ammo and magazine files need the vanilla floor
+(work/vanilla_ammo.json) to come out the same; the wells do not, so they can be
+rebuilt on a machine without it.
 """
 import io
 import json
@@ -38,6 +52,23 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ADDONS = os.path.join(ROOT, "addons")
 OUT = os.path.join(ADDONS, "fa_tiers")
 VANILLA = os.path.join(ROOT, "work", "vanilla_ammo.json")
+
+# FA ADDONS WHOSE MOD LEFT THE LOAD ORDER (2026-08-27: Aegis, Atlas, RHS, SPS).
+# Not read, not tiered, not required. This matters more than it looks: every
+# tier variant in fa_tiers_mods inherits from a round in one of these, and
+# the PBO carried them ALL in requiredAddons with skipWhenMissingDependencies
+# - so one absent mod dropped the whole of fa_tiers_mods, E22's and JCA's
+# rounds with it, and every faction on a mod's rifle spawned with magazines
+# that did not exist. The addons themselves still sit under addons/ as dead
+# weight (their own requiredAddons keep them from loading); delete them when
+# the reduction is done.
+# AEGIS AND ATLAS CAME BACK on 2026-08-29 and their rounds are tiered again
+# (user, 2026-08-30: "make sure all factions have future ammo"). Leaving
+# them on this list is what left 2040 Russia carrying base-game 5.45: the
+# only future build of the AK-12 magazine is fa_aegis's, and an untiered
+# round is invisible to the faction generator, which only ever issues _t2
+# / _t3 / _t4 classes.
+DEAD = {"fa_rhs", "fa_sps", "fa_antidrone_rhs"}
 
 # THE TIER 2 FLOOR, AND WHY IT IS ONLY ON PENETRATION.
 #
@@ -208,6 +239,9 @@ def can_skip(addon_dir):
     return False
 
 
+WELLS_ONLY = "--wells-only" in sys.argv[1:]
+
+
 def main():
     # Two halves. "core" is everything whose source addon always loads; "mods"
     # is everything whose source can vanish with its third-party mod.
@@ -215,6 +249,7 @@ def main():
     mag_out = {"core": [], "mods": []}
     ammo_ext = {"core": [], "mods": []}
     mag_ext = {"core": [], "mods": []}
+    mag_names = {"core": [], "mods": []}
     need = {"core": set(), "mods": set()}
     OPTIONAL = set()
     n_ammo = n_mag = 0
@@ -236,7 +271,7 @@ def main():
     # round it inherits from gets no parent at all.
     home = {}
     for d in sorted(os.listdir(ADDONS)):
-        if not d.startswith("fa_") or d.startswith("fa_tiers"):
+        if not d.startswith("fa_") or d.startswith("fa_tiers") or d in DEAD:
             continue
         if can_skip(d):
             OPTIONAL.add("ghost_" + d)
@@ -322,7 +357,7 @@ def main():
         tiered.add(name)
 
     for d in sorted(os.listdir(ADDONS)):
-        if not d.startswith("fa_") or d == "fa_tiers":
+        if not d.startswith("fa_") or d == "fa_tiers" or d in DEAD:
             continue
         # Same again: the magazines are spread over several files.
         for f in sorted(os.listdir(os.path.join(ADDONS, d))):
@@ -344,6 +379,42 @@ def main():
                     mag_out[mhalf].append('        ammo = "%s_%s";' % (hit.group(1), suffix))
                     mag_out[mhalf].append("    };")
                     n_mag += 1
+                mag_names[mhalf].append(name)
+
+    # WELLS. Every fa_* addon's CfgMagazinewells.hpp says which wells its
+    # magazines sit in; a tier variant goes wherever its base magazine went.
+    # Matched by name, which is what the engine does - see the docstring.
+    well_of = {}
+    for d in sorted(os.listdir(ADDONS)):
+        if not d.startswith("fa_") or d.startswith("fa_tiers") or d in DEAD:
+            continue
+        for f in sorted(os.listdir(os.path.join(ADDONS, d))):
+            if f.lower() != "cfgmagazinewells.hpp":
+                continue
+            text = io.open(os.path.join(ADDONS, d, f), encoding="utf-8", errors="replace").read()
+            text = re.sub(r"//[^\n]*", "", text)
+            text = re.sub(r"/\*.*?\*/", "", text, flags=re.S)
+            for m in re.finditer(r"class\s+(\w+)\s*\{", text):
+                well = m.group(1)
+                if well.lower() == "cfgmagazinewells":
+                    continue
+                i = m.end(); depth = 1
+                while i < len(text) and depth:
+                    depth += (text[i] == "{") - (text[i] == "}")
+                    i += 1
+                for mag in re.findall(r'"([A-Za-z0-9_]+)"', text[m.end():i]):
+                    well_of.setdefault(mag, [])
+                    if well not in well_of[mag]:
+                        well_of[mag].append(well)
+    wells_out = {"core": {}, "mods": {}}
+    n_well_mags = 0
+    for half in ("core", "mods"):
+        for name in mag_names[half]:
+            for well in well_of.get(name, []):
+                lst = wells_out[half].setdefault(well, [])
+                for suffix, _ in TIERS:
+                    lst.append("%s_%s" % (name, suffix))
+                    n_well_mags += 1
 
     B = chr(92)
 
@@ -356,6 +427,37 @@ def main():
         def w(fn, lines):
             io.open(os.path.join(out, fn), "w", encoding="utf-8",
                     newline="\r\n").write("\n".join(lines) + "\n")
+
+        wl = [
+            "// Generated by tools/gen_fa_tiers.py - re-run rather than hand-edit.",
+            "//",
+            "// A TIER MAGAZINE IS A NEW CLASS, AND A WEAPON KNOWS ITS MAGAZINES BY",
+            "// NAME. Inheriting from FA_o_150Rnd_762x54_Box makes _t4 look like the",
+            "// belt and hit like the belt; it does not make the Zafir load it -",
+            "// magazines[] and CfgMagazineWells are matched on the class name, and",
+            "// neither had heard of a _t4. Every tier variant goes back into the",
+            "// wells its base magazine sits in, so a tier 4 rifleman is not carrying",
+            "// eight magazines he cannot chamber.",
+            "class CfgMagazineWells {",
+        ]
+        for well in sorted(wells_out[half]):
+            wl += ["    class %s {" % well, "        ADDON[] += {"]
+            mags = wells_out[half][well]
+            wl += ['            "%s"%s' % (m, "," if i < len(mags) - 1 else "") for i, m in enumerate(mags)]
+            wl += ["        };", "    };"]
+        wl.append("};")
+        w("CfgMagazineWells.hpp", wl)
+
+        if WELLS_ONLY:
+            # The ammo and magazine files stay as they were built, floor and
+            # all; only the include is guaranteed, in case config.cpp predates
+            # the wells file.
+            cp = os.path.join(out, "config.cpp")
+            ct = io.open(cp, encoding="utf-8", newline="").read()
+            if "CfgMagazineWells.hpp" not in ct:
+                ct = ct.replace('#include "CfgMagazines.hpp"', '#include "CfgMagazines.hpp"\r\n#include "CfgMagazineWells.hpp"')
+                io.open(cp, "w", encoding="utf-8", newline="").write(ct)
+            return len(need[half])
 
         base = set(["ghost_main", "ghost_fa_main", "cba_xeh"])
         if optional:
@@ -425,6 +527,7 @@ def main():
         head += [
             '#include "CfgAmmo.hpp"',
             '#include "CfgMagazines.hpp"',
+            '#include "CfgMagazineWells.hpp"',
         ]
         w("config.cpp", head)
 
@@ -452,6 +555,9 @@ def main():
         for k, v in sorted(skipped_nature.items(), key=lambda x: -x[1]):
             print("    %-34s %4d" % (k, v))
     print("%d ammo class(es) tiered" % len(tiered))
+    print("%d tier magazine(s) registered in %d well(s)%s"
+          % (n_well_mags, len(wells_out["core"]) + len(wells_out["mods"]),
+             " - wells only, ammo and magazines untouched" if WELLS_ONLY else ""))
     print("  fa_tiers       %5d ammo  %5d magazine  %2d requiredAddons"
           % (len(ammo_out["core"]), len(mag_out["core"]) // 3, n_core))
     print("  fa_tiers_mods  %5d ammo  %5d magazine  %2d requiredAddons"

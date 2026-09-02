@@ -29,7 +29,7 @@
 
 params [["_app", "", [""]], ["_args", []], ["_fresh", false, [false]]];
 
-if (!hasInterface || {_app == ""}) exitWith {false};
+if (!hasInterface || _app == "") exitWith {false};
 
 private _handler = GVAR(appHandlers) getOrDefault [_app, {}];
 if (_handler isEqualTo {}) exitWith {

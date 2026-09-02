@@ -18,8 +18,8 @@ params [["_range", 0, [0]]];
 ACE_player setVariable [QGVAR(burstRange), _range];
 
 private _msg = if (_range <= 0) then {
-    "Mk364 airburst: OFF (proximity + HE on impact)"
+    "OFF - proximity fuze, HE on impact"
 } else {
-    format ["Mk364 airburst range: %1 m", _range]
+    format ["Range: %1 m", _range]
 };
-[_msg] call ace_common_fnc_displayTextStructured;
+["Mk364 Airburst", _msg, [0.871, 0.361, 0.188, 1]] call EFUNC(notify,notify);

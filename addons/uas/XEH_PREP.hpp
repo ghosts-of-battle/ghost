@@ -11,3 +11,4 @@ PREP(start);
 PREP(livePatrols);
 PREP(playerNear);
 PREP(standDown);
+PREP(iedDrone);

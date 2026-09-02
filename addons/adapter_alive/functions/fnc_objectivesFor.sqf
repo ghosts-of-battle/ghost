@@ -38,6 +38,22 @@ private _out = [];
         // being removed, so it has to be filtered here or the world grows.
         if (([_obj, "deleted", false] call ALiVE_fnc_hashGet)) then {continue};
 
+        // ALiVE STORES "center" AS [x,y]. Every consumer of this list treats
+        // it as a position - placeCaches, planPatrols, the QRF gather and the
+        // jammer sites all hand it to commands that want three numbers, and
+        // spawnZoneAt's setPosATL threw "2 elements provided, 3 expected" on
+        // the GPS uplink for exactly this reason (2026-09-01). Padded once,
+        // here, rather than at four call sites.
+        //
+        // A COPY, NOT A pushBack. hashGet hands back ALiVE's own array; adding
+        // to it in place would write a third element into the commander's
+        // objective hash.
+        // `+_pos` FIRST, THEN pushBack - the copy is the point, not a style
+        // choice. hashGet hands back ALiVE's own array and extending it in
+        // place would write a third element into the commander's objective
+        // hash, where every later reader would see it.
+        if (count _pos == 2) then { _pos = +_pos; _pos pushBack 0 };
+
         if (_id isNotEqualTo "" && {_pos isNotEqualTo []}) then {
             _out pushBack [_id, _pos, _size, _type];
         };

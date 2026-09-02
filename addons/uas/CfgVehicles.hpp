@@ -59,11 +59,40 @@ class CfgVehicles {
             // side's vanilla airframe, and the fallbacks all LOOK alike
             // enough that "west drones over the east battery" was an east
             // patrol in a borrowed airframe.
+            // PER SIDE (user, 2026-08-29: "make the drones per side a per side
+            // option"). -1 is "use Airframes Per Side"; 0 grounds that side.
+            // Same shape as the per-side drone classes below: a number for
+            // each of the three sides, never a field asking WHICH side.
+            class maxWest: Edit {
+                property = QGVAR(maxWest);
+                displayName = "West Airframes";
+                tooltip = "How many drones WEST flies at once while its supply is intact. -1: use Airframes Per Side. 0: none.";
+                typeName = "NUMBER";
+                defaultValue = -1;
+                expression = QUOTE(_this setVariable [ARR_2('maxWest',_value)]);
+            };
+            class maxEast: Edit {
+                property = QGVAR(maxEast);
+                displayName = "East Airframes";
+                tooltip = "How many drones EAST flies at once while its supply is intact. -1: use Airframes Per Side. 0: none.";
+                typeName = "NUMBER";
+                defaultValue = -1;
+                expression = QUOTE(_this setVariable [ARR_2('maxEast',_value)]);
+            };
+            class maxGuer: Edit {
+                property = QGVAR(maxGuer);
+                displayName = "Independent Airframes";
+                tooltip = "How many drones INDEPENDENT flies at once while its supply is intact. -1: use Airframes Per Side. 0: none.";
+                typeName = "NUMBER";
+                defaultValue = -1;
+                expression = QUOTE(_this setVariable [ARR_2('maxGuer',_value)]);
+            };
             class uavWest: Edit {
                 property = QGVAR(uavWest);
                 displayName = "West Drone Classes";
                 tooltip = "Comma-separated UAV classes WEST patrols fly; each launch draws one. BLANK: the faction's own UAV, vanilla fallback.";
                 typeName = "STRING";
+                control = "ghost_ClassPick_Uav_West";
                 defaultValue = "''";
                 expression = QUOTE(_this setVariable [ARR_2('uavWest',_value)]);
             };
@@ -72,6 +101,7 @@ class CfgVehicles {
                 displayName = "East Drone Classes";
                 tooltip = "Comma-separated UAV classes EAST patrols fly; each launch draws one. BLANK: the faction's own UAV, vanilla fallback.";
                 typeName = "STRING";
+                control = "ghost_ClassPick_Uav_East";
                 defaultValue = "''";
                 expression = QUOTE(_this setVariable [ARR_2('uavEast',_value)]);
             };
@@ -80,6 +110,7 @@ class CfgVehicles {
                 displayName = "Independent Drone Classes";
                 tooltip = "Comma-separated UAV classes INDEPENDENT patrols fly; each launch draws one. BLANK: the faction's own UAV, vanilla fallback.";
                 typeName = "STRING";
+                control = "ghost_ClassPick_Uav_Guer";
                 defaultValue = "''";
                 expression = QUOTE(_this setVariable [ARR_2('uavGuer',_value)]);
             };
@@ -122,6 +153,7 @@ class CfgVehicles {
                 "Placing this module turns on enemy drones. Without it, the system is off.",
                 "",
                 "Airframes Per Side - How many drones a commander flies at once while its supply is intact",
+                "West / East / Independent Airframes - That side's own ceiling; -1 uses Airframes Per Side, 0 grounds it",
                 "After A Cache Is Lost - The ceiling while a supply cache is down",
                 "Outage Min (sec) - Shortest time a destroyed cache holds the ceiling down",
                 "Outage Max (sec) - Longest time",
@@ -129,4 +161,43 @@ class CfgVehicles {
             };
         };
     };
+
+    // ---- THE IED PELICAN - a cargo quad with a charge where the crate was ----
+    //
+    // THE BASE GAME'S AL-6 PELICAN, INDEPENDENT, WITH NOTHING ADDED IN CONFIG:
+    // the charge is FUNC(iedDrone), armed by the Extended_Init handler in
+    // CfgEventHandlers.hpp, and Drongo's Drone Tweaks flies it because
+    // XEH_postInit registers it as an FPV. It is IND and low tier - the
+    // insurgents' and the Syndikat's answer to everything - and the factions
+    // that field it wrap it with their own class (gen_us_factions EXTRA_UNITS),
+    // which is why it declares no faction of its own.
+    //
+    // THE BAG IS WHAT MAKES IT AN AI WEAPON. DDT hands a drone to a man by
+    // reading the backpack's assembleInfo, so the operator carries this and
+    // not the base game's Pelican bag - assembling that would give him a
+    // cargo quad.
+    class I_UAV_06_F;
+    class I_UAV_06_backpack_F;
+
+    class GVAR(UAV_06_IED_I): I_UAV_06_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "AL-6 Pelican (IED)";
+        side = 2;
+    };
+    class GVAR(UAV_06_IED_backpack_I): I_UAV_06_backpack_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "AL-6 Pelican (IED) Bag";
+        class assembleInfo {
+            displayName = "";
+            primary = 1;
+            base = "";
+            assembleTo = QGVAR(UAV_06_IED_I);
+            dissasembleTo[] = {};
+        };
+    };
+
 };

@@ -93,7 +93,7 @@ values rather than two that can disagree.
 
 The scheme section's **MISSION PRESETS** row is the mission's own, not the mod's.
 A unit writes a row of ready-made palettes into its
-`config\config_tacpad.hpp` — a `Ghost_TacpadSchemes` class, one entry per
+`config\config_tacpad.hpp` — a `GHOST_TacpadSchemes` class, one entry per
 preset, each a `name` and the three tokens `ground`, `ink` and `accent` in hex —
 and everyone in that mission gets the same cards, drawn exactly like the shipped
 six. It is read once per mission by `ghost_tacpad_apps_fnc_missionSchemes`; a
@@ -248,7 +248,7 @@ full-screen things fighting for the same close key is not a UI.
 
 ## Ships
 
-34 functions.
+35 functions.
 
 ## CBA settings
 
@@ -265,7 +265,7 @@ full-screen things fighting for the same close key is not a UI.
 
 ## Functions
 
-<details><summary>34</summary>
+<details><summary>35</summary>
 
 - `ghost_tacpad_apps_fnc_alarmAtDelay`
 - `ghost_tacpad_apps_fnc_ammoState`
@@ -297,6 +297,7 @@ full-screen things fighting for the same close key is not a UI.
 - `ghost_tacpad_apps_fnc_row`
 - `ghost_tacpad_apps_fnc_setSetting`
 - `ghost_tacpad_apps_fnc_themeTablet`
+- `ghost_tacpad_apps_fnc_ticSend`
 - `ghost_tacpad_apps_fnc_tileData`
 - `ghost_tacpad_apps_fnc_timerSet`
 - `ghost_tacpad_apps_fnc_timerState`

@@ -1,10 +1,13 @@
 PREP(assignPlayer);
 PREP(canTakeRole);
+PREP(fillRoleTree);
 PREP(handleDisconnect);
 PREP(initGroupMenu);
 PREP(onGroupMenuTvSelectChange);
 PREP(onRespawn);
+PREP(platoons);
 PREP(removeFromGroup);
+PREP(selectPlatoon);
 PREP(selectPosition);
 PREP(setupPlayer);
 PREP(styleGroupMenu);

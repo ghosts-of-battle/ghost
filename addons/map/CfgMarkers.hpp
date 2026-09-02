@@ -209,10 +209,15 @@ class CfgMarkers {
         markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
     }; 
-    class hd_dot {
-        scope=01;
+    // THE TWO WE ONLY RE-SCOPE. Both are children of Flag in the base game
+    // and a bare reopen wipes that - the RPT: "Updating base class
+    // 'Flag'->'', by z\ghost\addons\map ... /hd_dot/". Naming the parent
+    // keeps the icon, the size and the colour that come with it.
+    class Flag;
+    class hd_dot: Flag {
+        scope = 1;
     };
-    class mil_objective {
-        scope=2;
+    class mil_objective: Flag {
+        scope = 2;
     };
 };

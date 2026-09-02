@@ -10,6 +10,7 @@ class CfgPatches {
         // ace_medical for setUnconscious, ace_medical_treatment for isMedic + fullHeal.
         requiredAddons[] = {
             "ghost_main",
+            "ghost_notify",
             "ace_interact_menu",
             "ace_common",
             "ace_medical",

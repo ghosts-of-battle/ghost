@@ -9,6 +9,8 @@ class CfgPatches {
         requiredAddons[] = {
             "ghost_main",
             "ghost_common",
+            "ghost_notify",
+            "ghost_adapter_alive",
             "cba_xeh"
         };
         skipWhenMissingDependencies = 1;

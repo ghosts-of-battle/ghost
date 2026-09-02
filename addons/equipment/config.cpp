@@ -24,6 +24,7 @@ class CfgPatches {
             "cba_xeh",
             "ghost_main",
             "ghost_medbags",
+            "ghost_notify",
             "ace_vector",
             "ace_fortify",
             "A3_Weapons_F",

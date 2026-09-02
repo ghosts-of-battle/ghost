@@ -1,7 +1,12 @@
 #include "script_component.hpp"
 /*
  * Author: Ghost
- * LOCATE RADAR: the coastal network's eyes, on the shrinking circle ladder.
+ * LOCATE RADAR: every network's eyes, on the shrinking circle ladder.
+ *
+ * TWO SOURCES, ONE HUNT. The coastal radars are ghost's own objects
+ * (ghost_antiship_radars); the rest - the SAM site's search set, a Clam Shell
+ * on a hill - are ALiVE vehicle profiles the adapter picks out by class.
+ * The player is hunting eyes, whoever owns them.
  *
  * A RADAR IS A SEPARATE TARGET FROM THE BATTERY IT FEEDS. The anti-ship design
  * splits them deliberately - kill the radar and the launchers are firing blind,
@@ -40,6 +45,16 @@ private _pool = [];
     _pool pushBack [format ["radar_%1", mapGridPosition _x], getPosASL _x, side _x];
 } forEach (missionNamespace getVariable [QEGVAR(antiship,radars), []]);
 
+// ALiVE's radars are profiles: a profileID is already the stable id the
+// ladder wants, and a dead set leaves the profile system on its own.
+if (!isNil "ghost_adapter_alive_fnc_radars") then {
+    {
+        _x params ["_id", "_at", "_rside"];
+        if (_rside getFriend _side >= 0.6) then {continue};
+        _pool pushBack [_id, _at, _rside];
+    } forEach (call ghost_adapter_alive_fnc_radars);
+};
+
 if (isNil QGVAR(radarLock)) then { GVAR(radarLock) = createHashMap };
 
-[_pool, _pos, _side, GVAR(radarLock), "radar", "COASTAL RADAR"] call FUNC(ladderCircle)
+[_pool, _pos, _side, GVAR(radarLock), "radar", "RADAR"] call FUNC(ladderCircle)

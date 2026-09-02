@@ -31,7 +31,12 @@ if (!hasInterface
     || {!GVAR(ewLink)}
     || {isNil QEFUNC(jamming,jamFactor)}) exitWith {[0, 0]};
 
-private _factor = ([getPosASL player] call EFUNC(jamming,jamFactor)) select 0;
+// "data", not the default "radio" (user, 2026-08-31). Since jamming split
+// into domains the terminal that kills the voice net leaves this link
+// alone and the hub that kills this link leaves the net alone; asking for
+// the default would have read the wrong emitter. The literal is jamming's
+// DOM_DATA - see its script_component.hpp; this addon does not include it.
+private _factor = ([getPosASL player, 0, "data"] call EFUNC(jamming,jamFactor)) select 0;
 
 switch (true) do {
     case (_factor <= 0): {[0, 0]};

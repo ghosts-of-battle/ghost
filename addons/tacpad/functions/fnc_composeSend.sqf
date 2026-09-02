@@ -35,13 +35,13 @@ private _fields = _template getOrDefault ["fields", createHashMap];
 private _payload = [];
 {
     private _value = GVAR(composeValues) getOrDefault [_x, ""];
-    if (_value isEqualTo "" || {_value isEqualTo false}) then {continue};
+    if (_value isEqualTo "" || _value isEqualTo false) then {continue};
 
     // A number typed into a box is still a string until somebody says otherwise.
     // Grids are left as they are: a position from CURRENT LOC or a marker, a
     // string from the keyboard, and the engine renders both.
     if ((_fields getOrDefault [_x, createHashMap]) getOrDefault ["type", "text"] isEqualTo "number"
-        && {_value isEqualType ""}) then {
+        && _value isEqualType "") then {
         _value = parseNumber _value;
     };
 

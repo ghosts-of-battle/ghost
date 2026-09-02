@@ -21,7 +21,7 @@ params [["_vehicle", objNull, [objNull]]];
 if (!isNil{_vehicle getVariable QEGVAR(VehicleFunc,Cosmetics)}) exitWith {SHOW_WARNING_2("VehicleCosmetics","Vehicle cosmetics already applied for %1 [%2].",_vehicle,typeOf _vehicle);};
 if (!(_vehicle call EFUNC(systems,isValidFaction))) exitWith {};
 
-INFO_2("VehicleCosmetics","Applying vehicle cosmetics to %1 [%2].",_vehicle,typeOf _vehicle);
+TRACE_INFO_2("VehicleCosmetics","Applying vehicle cosmetics to %1 [%2].",_vehicle,typeOf _vehicle);
 
 if (_vehicle isKindOf "NDS_M224_mortar_base") then {
 };

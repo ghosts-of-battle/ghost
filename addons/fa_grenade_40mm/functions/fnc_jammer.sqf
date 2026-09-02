@@ -49,4 +49,4 @@ _j setVariable ["ghost_fa_grenade_40mm_jammer", true, true];
     if (GVAR(hasTFAR) || GVAR(hasACRE)) then {};
 }, 1, [_j, _side, _radius, time + _life]] call CBA_fnc_addPerFrameHandler;
 
-[_unit, format ["<t color='#ff8888'>Area jammer active</t><br/>%1 m bubble", _radius]] call FUNC(notify);
+[_unit, "Area Jammer", format ["Active - %1 m bubble", _radius], [1, 0.776, 0.102, 1]] call FUNC(notify);

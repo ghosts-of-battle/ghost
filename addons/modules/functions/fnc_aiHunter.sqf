@@ -12,7 +12,7 @@ _group deleteGroupWhenEmpty true;
 // stand down - the bridge re-invokes with the next wave's arguments when the
 // profiles die. The hunt trigger is forfeit for an adopted wave.
 private _adopt = [false];
-private _next = if (_waves == -1 || {_waves > 1}) then {
+private _next = if (_waves == -1 || _waves > 1) then {
     [QFUNC(aiHunter), [_side, _groupType, _spawnPos,
         [_waves - 1, -1] select (_waves == -1), _huntTrigger]]
 } else {[]};

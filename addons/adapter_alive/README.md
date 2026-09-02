@@ -57,36 +57,49 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-25 functions.
+38 functions.
 
 ## Functions
 
-<details><summary>25</summary>
+<details><summary>38</summary>
 
 - `ghost_adapter_alive_fnc_aaTargets`
 - `ghost_adapter_alive_fnc_artyTargets`
 - `ghost_adapter_alive_fnc_bumpHostility`
+- `ghost_adapter_alive_fnc_camps`
 - `ghost_adapter_alive_fnc_clusterCandidates`
 - `ghost_adapter_alive_fnc_commanders`
+- `ghost_adapter_alive_fnc_enemyKnowledge`
+- `ghost_adapter_alive_fnc_eventBridge`
+- `ghost_adapter_alive_fnc_eventListener`
 - `ghost_adapter_alive_fnc_getData`
+- `ghost_adapter_alive_fnc_hostilityAt`
 - `ghost_adapter_alive_fnc_installations`
+- `ghost_adapter_alive_fnc_logisticsHubs`
 - `ghost_adapter_alive_fnc_nearProfiles`
 - `ghost_adapter_alive_fnc_objectivesFor`
 - `ghost_adapter_alive_fnc_postReport`
 - `ghost_adapter_alive_fnc_probe`
 - `ghost_adapter_alive_fnc_profileAlive`
-- `ghost_adapter_alive_fnc_profileFlags`
 - `ghost_adapter_alive_fnc_profileGroup`
 - `ghost_adapter_alive_fnc_profileIdOf`
 - `ghost_adapter_alive_fnc_profileIgnore`
 - `ghost_adapter_alive_fnc_profileObjects`
 - `ghost_adapter_alive_fnc_profileWaypoint`
+- `ghost_adapter_alive_fnc_radars`
 - `ghost_adapter_alive_fnc_ready`
+- `ghost_adapter_alive_fnc_registerFactionAA`
+- `ghost_adapter_alive_fnc_registerSite`
+- `ghost_adapter_alive_fnc_reportIntel`
+- `ghost_adapter_alive_fnc_requestCAS`
 - `ghost_adapter_alive_fnc_requestFire`
+- `ghost_adapter_alive_fnc_requestSupply`
+- `ghost_adapter_alive_fnc_respawnGearManaged`
 - `ghost_adapter_alive_fnc_setData`
 - `ghost_adapter_alive_fnc_supportAssets`
 - `ghost_adapter_alive_fnc_supportSitrep`
 - `ghost_adapter_alive_fnc_supportTask`
 - `ghost_adapter_alive_fnc_taorFor`
+- `ghost_adapter_alive_fnc_virtualFriendlies`
 
 </details>

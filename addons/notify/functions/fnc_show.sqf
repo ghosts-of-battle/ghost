@@ -53,8 +53,8 @@ private _fnc_safe = {
 // The face, guarded: the setting is a list of font names, but a profile written
 // by an older version can hold anything, and a bad font name is drawn as no
 // text at all.
-private _font = GVAR(font);
-if (isNil "_font" || {!(_font isEqualType "")} || {_font isEqualTo ""}) then {
+private _font = missionNamespace getVariable [QGVAR(font), ""];
+if (!(_font isEqualType "") || _font isEqualTo "") then {
     _font = "RobotoCondensed";
 };
 

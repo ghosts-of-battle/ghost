@@ -39,7 +39,7 @@ private _made = [];
     _made pushBack _m;
 } forEach _rows;
 
-if (_fade && {_lifetime > 0}) then {
+if (_fade && _lifetime > 0) then {
     private _steps = INTEL_FADE_STEPS;
     for "_i" from 1 to _steps do {
         [{

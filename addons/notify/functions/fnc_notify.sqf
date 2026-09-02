@@ -24,9 +24,14 @@ Example:
 Author:
     Ghost
 ---------------------------------------------------------------------------- */
-params [["_title", "", [""]], ["_text", "", [""]], ["_colour", [0.871, 0.361, 0.188, 1], [[]], 4]];
+params [["_title", "", [""]], ["_text", "", [""]], ["_colour", [0.871, 0.361, 0.188, 1], [[]], 4], ["_pos", [], [[]]]];
 
 if (!hasInterface) exitWith { false };
+
+// Kept for the reader's LOG view whether the popup is enabled or not - the log
+// is the record of what was said, and a hint fallback is still something said.
+GVAR(history) pushBack [_title, _text, _colour, time, _pos];
+if (count GVAR(history) > HISTORY_MAX) then { GVAR(history) deleteAt 0 };
 
 if (!GVAR(enabled)) exitWith {
     hint format ["%1%2%3", _title, [": ", ""] select (_text isEqualTo ""), _text];

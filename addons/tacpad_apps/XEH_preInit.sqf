@@ -11,6 +11,7 @@ PREP_RECOMPILE_END;
 // Which thread the docked reader is showing, "" for the list. Client state,
 // not the engine's - the reader is a view onto the index, not a second store.
 GVAR(readerThread) = "";
+GVAR(readerLog) = false;
 
 // Which PLP map tool is running, if any. One at a time: the suite always stops
 // the current one before starting another, so its Draw handler id - see

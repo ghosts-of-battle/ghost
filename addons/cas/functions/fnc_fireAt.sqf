@@ -71,7 +71,7 @@ private _fnc_bestOf = {
             private _fits = getArray (configFile >> "CfgWeapons" >> _weapon >> "magazines");
             {
                 if !(_x in _fits) then {continue};
-                if (_want isNotEqualTo "" && {_x isNotEqualTo _want}) then {continue};
+                if (_want isNotEqualTo "" && _x isNotEqualTo _want) then {continue};
                 private _ammo = getText (configFile >> "CfgMagazines" >> _x >> "ammo");
                 if (_ammo isEqualTo "") then {continue};
                 private _sim = toLower getText (configFile >> "CfgAmmo" >> _ammo >> "simulation");
@@ -79,7 +79,7 @@ private _fnc_bestOf = {
                 if (_r < 0) then {continue};
                 // The rank list is heaviest-first, so a LOWER index is the
                 // better weapon and the first entry found at that index wins.
-                if (_bestRank < 0 || {_r < _bestRank}) then {
+                if (_bestRank < 0 || _r < _bestRank) then {
                     _bestRank = _r;
                     _best = [_weapon, _x, _turret];
                 };
@@ -97,7 +97,7 @@ private _best = [_want] call _fnc_bestOf;
 // cannot honour it still has something to shoot. Said in the log so a module
 // pointed at an airframe that never carries what the page keeps offering is
 // visible rather than mysterious.
-if (_best isEqualTo [] && {_want isNotEqualTo ""}) then {
+if (_best isEqualTo [] && _want isNotEqualTo "") then {
     WARNING_2("'%1' has no '%2' left aboard - falling back to the heaviest thing it still has",typeOf _veh,_want);
     _best = [""] call _fnc_bestOf;
 };

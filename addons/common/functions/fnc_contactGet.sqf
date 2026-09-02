@@ -54,7 +54,7 @@ private _out = [];
 
     private _conf = 1 - (_age / CONTACT_LIFETIME);
     if (_conf < _minConf) then {continue};
-    if (_maxError > 0 && {_error > _maxError}) then {continue};
+    if (_maxError > 0 && _error > _maxError) then {continue};
     if (_sources isNotEqualTo [] && {(_srcs arrayIntersect _sources) isEqualTo []}) then {continue};
 
     _out pushBack [_id, _target, +_pos, _error, _conf, _age, +_srcs, _object];

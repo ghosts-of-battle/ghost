@@ -42,7 +42,7 @@ private _outCls = [["Land_Cargo20_EMP_F",
                     "Land_RuggedTerminal_01_communications_F",
                     "RuggedTerminal_01_communications_F"]] call _fnc_firstClass;
 
-if (_inCls isEqualTo "" && {_outCls isEqualTo ""}) exitWith {
+if (_inCls isEqualTo "" && _outCls isEqualTo "") exitWith {
     INFO("no pop prop in this mod set - no internet pops");
 };
 
@@ -87,7 +87,7 @@ private _at = [];
     };
 
     // nothing enterable here - the kerb version, on open ground
-    if (_pos isEqualTo [] && {_outCls isNotEqualTo ""}) then {
+    if (_pos isEqualTo [] && _outCls isNotEqualTo "") then {
         private _spots = [[], 1, createHashMapFromArray [
             ["centre", _cpos],
             ["maxRange", _csize max 120],

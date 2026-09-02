@@ -20,12 +20,11 @@ if (!hasInterface) exitWith {};
 
     private _weaponName = getText (configFile >> "CfgWeapons" >> _weapon >> "DisplayName");
     private _message = format ["[GOB ADMIN] Player %1 fired weapon '%2'", name player, _weaponName];
-    // The mission's server log when it has one; the RPT when it does not, which
-    // is where an admin looks anyway.
-    if (isNil "YMF_fnc_logToServer") then {
-        diag_log _message;
-    } else {
-        [_message] remoteExec ["YMF_fnc_logToServer", 2, false];
-    };
+    // THE LOCAL RPT AND THE SERVER'S. ghost_diag_fnc_info's fourth argument
+    // raises the line to the server as well, which ghost_init already listens
+    // for - so there is no separate logToServer to guard against. The name this
+    // guarded on, YMF_fnc_logToServer, stopped existing when the prefix became
+    // ghost, so the isNil branch it chose was always the local-only one.
+    [_message, "AdminShots", false, true] call ghost_diag_fnc_info;
 
 }] call CBA_fnc_addEventHandler;

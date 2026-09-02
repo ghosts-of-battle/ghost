@@ -51,8 +51,8 @@ private _conditionHoldAction = format ["((_target getCargoIndex player) != -1) &
 private _actionID = [
     _vehicle,
     "<t color='#800080'>Jump</t>",
-    "data\Icon\icon_02.paa",
-    "data\Icon\icon_02.paa",
+    "z\ghost\addons\media\images\Icons\icon_02.paa",
+    "z\ghost\addons\media\images\Icons\icon_02.paa",
     _conditionHoldAction,
     "true",
     {},

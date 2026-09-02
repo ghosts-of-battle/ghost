@@ -2,6 +2,10 @@
 
 if (!hasInterface) exitWith {};
 
+// The keys. postInit, not preInit, because CBA_fnc_addKeybind wants the
+// keybinding system up - and every key here is a player action anyway.
+#include "initKeybinds.inc.sqf"
+
 // Full-size apps a tile or a reader hand-off opens. Anything not registered is
 // a no-op rather than an error, so a tile for an app that does not exist yet
 // sits there inert instead of throwing.

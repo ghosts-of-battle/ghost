@@ -141,7 +141,7 @@ if (_priority == "high") then {
 
 // A root template's transition is the thread's opening state and was applied
 // when the thread was made; a reply's transition moves it.
-if (!_isRoot && {_transition != ""}) then {
+if (!_isRoot && _transition != "") then {
     _thread set ["status", _transition];
     if (_transition in ["CLOSED", "ABORTED"]) then {
         _thread set ["closed", true];

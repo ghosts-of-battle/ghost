@@ -28,6 +28,10 @@ Parameters:
     _radius : NUMBER - outer radius. The full-strength core is the usual fraction.
     _class  : STRING - emitter object class. "" = abstract zone, no object.
     _type   : STRING - "jam" or "detect". Optional, default "jam".
+    _domains: ARRAY  - which of DOM_RADIO / DOM_DATA / DOM_GPS this zone denies.
+                       Optional, default DOM_DEFAULT - radio and data, which is
+                       what one emitter denied before the domains existed, so a
+                       caller written before the split places the zone it meant.
 
 Returns:
     ARRAY - [_id, _object]. _object is objNull for an abstract zone; _id is ""
@@ -42,9 +46,22 @@ Author:
 if (!isServer) exitWith { ["", objNull] };
 
 params [["_pos", [0,0,0], [[]]], ["_radius", 800, [0]], ["_class", "", [""]],
-        ["_type", "jam", [""]]];
+        ["_type", "jam", [""]], ["_domains", DOM_DEFAULT, [[]]]];
 
 if (_radius <= 0) exitWith { ["", objNull] };
+
+// A 2D CENTRE IS A VALID THING TO BE HANDED and not a valid thing to pass on.
+// createVehicle takes [x,y]; setPosATL and AGLToASL below do not, and an
+// objective centre out of ALiVE is [x,y] - which is what threw "2 elements
+// provided, 3 expected" here on the GPS uplink (2026-09-01). Fixed at the
+// source too, in ghost_adapter_alive_fnc_objectivesFor; this keeps the
+// header's promise for any other caller.
+// Copied before it is extended: params hands back the caller's own array.
+if (count _pos == 2) then { _pos = +_pos; _pos pushBack 0 };
+if (count _pos < 3) exitWith {
+    WARNING_1("Jamming: '%1' is not a position - no zone registered.",_pos);
+    ["", objNull]
+};
 
 if (isNil QGVAR(jammers)) then { GVAR(jammers) = [] };
 if (isNil QGVAR(nextZoneId)) then { GVAR(nextZoneId) = 1 };
@@ -77,7 +94,7 @@ private _zpos = if (isNull _obj) then { AGLToASL _pos } else { getPosASL _obj };
 GVAR(jammers) pushBack [
     _obj, _radius * JAMMER_EFFECTIVE_FRAC, _radius,
     _id, _type, isNull _obj, _zpos,
-    [] call FUNC(zoneModel)
+    [_domains] call FUNC(zoneModel)
 ];
 // NOT PUBLISHED HERE. This used to broadcast the whole registry on every
 // single zone, so placing n zones sent 1+2+...+n entries - 156 zones in one

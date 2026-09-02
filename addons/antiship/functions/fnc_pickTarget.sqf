@@ -71,7 +71,7 @@ private _bestD = -1;
     private _d = _from distance2D _obj;
     // a contact a radar can see is not automatically one the battery can reach
     if (_d > _range) then { continue };
-    if (_bestD < 0 || {_d < _bestD}) then { _bestD = _d; _best = _obj };
+    if (_bestD < 0 || _d < _bestD) then { _bestD = _d; _best = _obj };
 } forEach _candidates;
 
 if (!isNull _best && {_cfg get "debug"}) then {

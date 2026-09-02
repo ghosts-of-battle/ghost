@@ -27,4 +27,4 @@ for "_i" from 0 to 4 do {
                   (_pos # 1) + (random _spread) - (_spread * 0.5), 0];
     createVehicle ["SmokeShell", _o, [], 0, "CAN_COLLIDE"];
 };
-[_unit, "<t color='#cccccc'>Multispectral screen up</t>"] call FUNC(notify);
+[_unit, "Multispectral Screen", "Up."] call FUNC(notify);

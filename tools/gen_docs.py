@@ -253,6 +253,7 @@ def main():
            "| Eden modules | %d |" % n_mod,
            "| Functions | %d |" % n_fn, "",
            "## Contents", "",
+           "- [CHANGELOG.md](CHANGELOG.md) - change notes by day, from the fix records and the dated requests in the code",
            "- [ADDONS.md](ADDONS.md) - every addon, what it ships, what it needs",
            "- [SETTINGS.md](SETTINGS.md) - every CBA setting and the server-forced values",
            "- [MODULES.md](MODULES.md) - every Eden module and its attributes",

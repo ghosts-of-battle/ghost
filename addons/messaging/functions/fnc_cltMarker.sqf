@@ -22,7 +22,7 @@
 
 params [["_name", "", [""]], ["_pos", [], [[]]], ["_text", "", [""]]];
 
-if (!hasInterface || {_name == ""}) exitWith {};
+if (!hasInterface || _name == "") exitWith {};
 
 if (_pos isEqualTo []) exitWith {
     deleteMarkerLocal _name;

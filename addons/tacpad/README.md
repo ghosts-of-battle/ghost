@@ -182,7 +182,7 @@ night ground, and it is named that.
 All six are switchable in game from the settings app, which shows them as the
 three tokens they are made of rather than as six words.
 
-**A mission can add its own row.** `Ghost_TacpadSchemes` in the mission's
+**A mission can add its own row.** `GHOST_TacpadSchemes` in the mission's
 `config\config_tacpad.hpp` — one class per preset, `name` plus `ground`, `ink`
 and `accent` — is drawn under the shipped six as MISSION PRESETS. Each one is
 the `custom` scheme with its three tokens filled in, so a unit palette costs the

@@ -22,7 +22,7 @@
                 if (
                     !isPlayer _shooter
                     || {side group _target != side group _shooter
-                    || {_target isEqualTo _shooter}}
+                    || _target isEqualTo _shooter}
                 ) exitWith {};
 
                 [QGVAR(friendlyFire), [_target, _shooter, vehicle _shooter]] call CBA_fnc_globalEvent;

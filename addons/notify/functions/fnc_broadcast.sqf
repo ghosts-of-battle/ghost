@@ -20,6 +20,6 @@ Example:
 Author:
     Ghost
 ---------------------------------------------------------------------------- */
-params [["_title", "", [""]], ["_text", "", [""]], ["_colour", [0.871, 0.361, 0.188, 1], [[]], 4], ["_side", sideUnknown, [sideUnknown]]];
+params [["_title", "", [""]], ["_text", "", [""]], ["_colour", [0.871, 0.361, 0.188, 1], [[]], 4], ["_side", sideUnknown, [sideUnknown]], ["_pos", [], [[]]]];
 
-[QGVAR(post), [_title, _text, _colour, _side]] call CBA_fnc_globalEvent;
+[QGVAR(post), [_title, _text, _colour, _side, _pos]] call CBA_fnc_globalEvent;

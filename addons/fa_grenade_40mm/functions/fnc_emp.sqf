@@ -38,7 +38,7 @@ params [
         "dynamicBlur" ppEffectEnable true;
         "dynamicBlur" ppEffectAdjust [6]; "dynamicBlur" ppEffectCommit 0.1;
         [{ "dynamicBlur" ppEffectAdjust [0]; "dynamicBlur" ppEffectCommit 1.5 }, [], _dur] call CBA_fnc_waitAndExecute;
-        hint parseText "<t color='#ffcc00'>** EMP — systems disrupted **</t>";
+        ["EMP", "Systems disrupted.", [1, 0.776, 0.102, 1]] call EFUNC(notify,notify);
     };
     // HOOK: Drongo EW jam call on _x here
     if (GVAR(hasDEW)) then {};

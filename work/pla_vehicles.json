@@ -1,0 +1,1676 @@
+{
+ "CSK181": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_soldier_F",
+  "displayName": "CSK182",
+  "editorSubcategory": "EdSubcat_Cars",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "Camo1",
+   "Camo2",
+   "Camo3"
+  ],
+  "hiddenSelectionsTextures": [
+   "CSK181\\tex\\H_co.paa",
+   "CSK181\\tex\\O_co.paa"
+  ],
+  "parent": "CSK181_base_F",
+  "scope": "2",
+  "side": "0",
+  "textureSources": {
+   "Olive": [
+    "CSK181\\tex\\H_O_co.paa",
+    "CSK181\\tex\\O_O_co.paa",
+    "CSK181\\tex\\Adds_co.paa"
+   ],
+   "Woodland": [
+    "CSK181\\tex\\H_co.paa",
+    "CSK181\\tex\\O_co.paa",
+    "CSK181\\tex\\Adds_co.paa"
+   ],
+   "Woodland2": [
+    "CSK181\\tex\\H_W2_co.paa",
+    "CSK181\\tex\\O_W2_co.paa",
+    "CSK181\\tex\\Adds_co.paa"
+   ],
+   "desert": [
+    "CSK181\\tex\\H_D_co.paa",
+    "CSK181\\tex\\O_D_co.paa",
+    "CSK181\\tex\\Adds_K_co.paa"
+   ],
+   "khaki": [
+    "CSK181\\tex\\H_K_co.paa",
+    "CSK181\\tex\\O_K_co.paa",
+    "CSK181\\tex\\Adds_K_co.paa"
+   ]
+  },
+  "vehicleClass": "Car"
+ },
+ "HQ6A": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_soldier_F",
+  "displayName": "HQ6A(LD2000)",
+  "editorSubcategory": "EdSubcat_Cars",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "Camo1",
+   "Camo2",
+   "Camo3",
+   "Camo4",
+   "Camo5",
+   "Camo6"
+  ],
+  "hiddenSelectionsTextures": [
+   "HQ6A\\tex\\Head_O_co.paa",
+   "HQ6A\\tex\\Cargo_O_co.paa",
+   "HQ6A\\tex\\Gun_O_co.paa",
+   "HQ6A\\tex\\Eng_O_co.paa",
+   "HQ6A\\tex\\Girder_O_co.paa",
+   "HQ6A\\tex\\Wheels_co.paa"
+  ],
+  "parent": "HQ6A_base",
+  "scope": "2",
+  "side": "0",
+  "textureSources": {
+   "Olive": [
+    "HQ6A\\tex\\Head_O_co.paa",
+    "HQ6A\\tex\\Cargo_O_co.paa",
+    "HQ6A\\tex\\Gun_O_co.paa",
+    "HQ6A\\tex\\Eng_O_co.paa",
+    "HQ6A\\tex\\Girder_O_co.paa",
+    "HQ6A\\tex\\Wheels_co.paa"
+   ],
+   "Woodland": [
+    "HQ6A\\tex\\Head_co.paa",
+    "HQ6A\\tex\\Cargo_co.paa",
+    "HQ6A\\tex\\Gun_co.paa",
+    "HQ6A\\tex\\Eng_co.paa",
+    "HQ6A\\tex\\Girder_co.paa",
+    "HQ6A\\tex\\Wheels_co.paa"
+   ],
+   "Woodland2": [
+    "HQ6A\\tex\\Head_w2_co.paa",
+    "HQ6A\\tex\\Cargo_w2_co.paa",
+    "HQ6A\\tex\\Gun_w2_co.paa",
+    "HQ6A\\tex\\Eng_o_co.paa",
+    "HQ6A\\tex\\Girder_o_co.paa",
+    "HQ6A\\tex\\Wheels_co.paa"
+   ],
+   "desert": [
+    "HQ6A\\tex\\Head_D_co.paa",
+    "HQ6A\\tex\\Cargo_D_co.paa",
+    "HQ6A\\tex\\Gun_D_co.paa",
+    "HQ6A\\tex\\Eng_D_co.paa",
+    "HQ6A\\tex\\Girder_D_co.paa",
+    "HQ6A\\tex\\Wheels_D_co.paa"
+   ],
+   "khaki": [
+    "HQ6A\\tex\\Head_K_co.paa",
+    "HQ6A\\tex\\Cargo_K_co.paa",
+    "HQ6A\\tex\\Gun_K_co.paa",
+    "HQ6A\\tex\\Eng_D_co.paa",
+    "HQ6A\\tex\\Girder_D_co.paa",
+    "HQ6A\\tex\\Wheels_D_co.paa"
+   ]
+  },
+  "vehicleClass": "Car"
+ },
+ "O_PGZ09_AA": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Crew_F",
+  "displayName": "PGZ09",
+  "editorSubcategory": "EdSubcat_AAs",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5",
+   "camo6"
+  ],
+  "hiddenSelectionsTextures": [
+   "PGZ09\\tex\\H_co.paa",
+   "PGZ09\\tex\\T_co.paa",
+   "PGZ09\\tex\\G_co.paa",
+   "PGZ09\\tex\\TO_co.paa",
+   "PGZ09\\tex\\AAL_co.paa",
+   "PLZ05\\tex\\W_co.paa"
+  ],
+  "parent": "PGZ09_AA_base",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "0",
+  "textureList": [
+   "Woodcamo2",
+   "Desertcamo"
+  ],
+  "textureSources": {
+   "Desertcamo": [
+    "PGZ09\\tex\\H_D_co.paa",
+    "PGZ09\\tex\\T_D_co.paa",
+    "PGZ09\\tex\\G_D_co.paa",
+    "PGZ09\\tex\\TO_D_co.paa",
+    "PGZ09\\tex\\AAL_D_co.paa",
+    "PLZ05\\tex\\W_D_co.paa"
+   ],
+   "Khaki": [
+    "PGZ09\\tex\\H_K_co.paa",
+    "PGZ09\\tex\\T_K_co.paa",
+    "PGZ09\\tex\\G_K_co.paa",
+    "PGZ09\\tex\\TO_K_co.paa",
+    "PGZ09\\tex\\AAL_K_co.paa",
+    "PLZ05\\tex\\W_K_co.paa"
+   ],
+   "Olive": [
+    "PGZ09\\tex\\H_O_co.paa",
+    "PGZ09\\tex\\T_O_co.paa",
+    "PGZ09\\tex\\G_O_co.paa",
+    "PGZ09\\tex\\TO_O_co.paa",
+    "PGZ09\\tex\\AAL_O_co.paa",
+    "PLZ05\\tex\\W_O_co.paa"
+   ],
+   "Woodcamo": [
+    "PGZ09\\tex\\H_co.paa",
+    "PGZ09\\tex\\T_co.paa",
+    "PGZ09\\tex\\G_co.paa",
+    "PGZ09\\tex\\TO_co.paa",
+    "PGZ09\\tex\\AAL_co.paa",
+    "PLZ05\\tex\\W_co.paa"
+   ],
+   "Woodcamo2": [
+    "PGZ09\\tex\\H_W2_co.paa",
+    "PGZ09\\tex\\T_W2_co.paa",
+    "PGZ09\\tex\\G_W2_co.paa",
+    "PGZ09\\tex\\TO_W2_co.paa",
+    "PGZ09\\tex\\AAL_W2_co.paa",
+    "PLZ05\\tex\\W_W2_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored",
+  "vehicleClass_guessed": true
+ },
+ "O_PGZ09_TY90": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Crew_F",
+  "displayName": "PGZ09-TY90",
+  "editorSubcategory": "EdSubcat_AAs",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5",
+   "camo6"
+  ],
+  "hiddenSelectionsTextures": [
+   "PGZ09\\tex\\H_co.paa",
+   "PGZ09\\tex\\T_co.paa",
+   "PGZ09\\tex\\G_co.paa",
+   "PGZ09\\tex\\TO_co.paa",
+   "PGZ09\\tex\\AAL_co.paa",
+   "PLZ05\\tex\\W_co.paa"
+  ],
+  "parent": "PGZ09_AA_TY90",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "0",
+  "textureList": [
+   "Woodcamo2",
+   "Desertcamo"
+  ],
+  "textureSources": {
+   "Desertcamo": [
+    "PGZ09\\tex\\H_D_co.paa",
+    "PGZ09\\tex\\T_D_co.paa",
+    "PGZ09\\tex\\G_D_co.paa",
+    "PGZ09\\tex\\TO_D_co.paa",
+    "PGZ09\\tex\\AAL_D_co.paa",
+    "PLZ05\\tex\\W_D_co.paa"
+   ],
+   "Khaki": [
+    "PGZ09\\tex\\H_K_co.paa",
+    "PGZ09\\tex\\T_K_co.paa",
+    "PGZ09\\tex\\G_K_co.paa",
+    "PGZ09\\tex\\TO_K_co.paa",
+    "PGZ09\\tex\\AAL_K_co.paa",
+    "PLZ05\\tex\\W_K_co.paa"
+   ],
+   "Olive": [
+    "PGZ09\\tex\\H_O_co.paa",
+    "PGZ09\\tex\\T_O_co.paa",
+    "PGZ09\\tex\\G_O_co.paa",
+    "PGZ09\\tex\\TO_O_co.paa",
+    "PGZ09\\tex\\AAL_O_co.paa",
+    "PLZ05\\tex\\W_O_co.paa"
+   ],
+   "Woodcamo": [
+    "PGZ09\\tex\\H_co.paa",
+    "PGZ09\\tex\\T_co.paa",
+    "PGZ09\\tex\\G_co.paa",
+    "PGZ09\\tex\\TO_co.paa",
+    "PGZ09\\tex\\AAL_co.paa",
+    "PLZ05\\tex\\W_co.paa"
+   ],
+   "Woodcamo2": [
+    "PGZ09\\tex\\H_W2_co.paa",
+    "PGZ09\\tex\\T_W2_co.paa",
+    "PGZ09\\tex\\G_W2_co.paa",
+    "PGZ09\\tex\\TO_W2_co.paa",
+    "PGZ09\\tex\\AAL_W2_co.paa",
+    "PLZ05\\tex\\W_W2_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored",
+  "vehicleClass_guessed": true
+ },
+ "O_PLL09": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Crew_F",
+  "displayName": "PLL09",
+  "editorSubcategory": "EdSubcat_Artillery",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3"
+  ],
+  "hiddenSelectionsTextures": [
+   "PLL09\\tex\\h_co.paa",
+   "PLL09\\tex\\t_co.paa",
+   "ZTL11\\tex\\w_co.paa"
+  ],
+  "parent": "O_PLL09_base",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "0",
+  "textureList": [
+   "Woodcamo2",
+   "Desertcamo"
+  ],
+  "textureSources": {
+   "Desertcamo": [
+    "PLL09\\tex\\h_d_co.paa",
+    "PLL09\\tex\\t_d_co.paa",
+    "ZTL11\\tex\\w_d_co.paa"
+   ],
+   "Khaki": [
+    "PLL09\\tex\\h_k_co.paa",
+    "PLL09\\tex\\t_k_co.paa",
+    "ZTL11\\tex\\w_k_co.paa"
+   ],
+   "Olive": [
+    "PLL09\\tex\\h_o_co.paa",
+    "PLL09\\tex\\t_o_co.paa",
+    "ZTL11\\tex\\w_o_co.paa"
+   ],
+   "Woodcamo": [
+    "PLL09\\tex\\h_co.paa",
+    "PLL09\\tex\\t_co.paa",
+    "ZTL11\\tex\\w_co.paa"
+   ],
+   "Woodcamo2": [
+    "PLL09\\tex\\h_w2_co.paa",
+    "PLL09\\tex\\t_w2_co.paa",
+    "ZTL11\\tex\\w_o_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored",
+  "vehicleClass_guessed": true
+ },
+ "O_PLZ05": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Crew_F",
+  "displayName": "PLZ05",
+  "editorSubcategory": "EdSubcat_Artillery",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5"
+  ],
+  "hiddenSelectionsTextures": [
+   "PLZ05\\tex\\H_co.paa",
+   "PLZ05\\tex\\T_co.paa",
+   "PLZ05\\tex\\C_co.paa",
+   "PLZ05\\tex\\W_co.paa",
+   "PLZ05\\tex\\TO_co.paa"
+  ],
+  "parent": "PLZ05_base",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "0",
+  "textureList": [
+   "Woodcamo2",
+   "Desertcamo"
+  ],
+  "textureSources": {
+   "Desertcamo": [
+    "PLZ05\\tex\\H_D_co.paa",
+    "PLZ05\\tex\\T_D_co.paa",
+    "PLZ05\\tex\\C_D_co.paa",
+    "PLZ05\\tex\\W_D_co.paa",
+    "PLZ05\\tex\\TO_D_co.paa"
+   ],
+   "Khaki": [
+    "PLZ05\\tex\\H_K_co.paa",
+    "PLZ05\\tex\\T_K_co.paa",
+    "PLZ05\\tex\\C_K_co.paa",
+    "PLZ05\\tex\\W_K_co.paa",
+    "PLZ05\\tex\\TO_K_co.paa"
+   ],
+   "Olive": [
+    "PLZ05\\tex\\H_O_co.paa",
+    "PLZ05\\tex\\T_O_co.paa",
+    "PLZ05\\tex\\C_O_co.paa",
+    "PLZ05\\tex\\W_O_co.paa",
+    "PLZ05\\tex\\TO_O_co.paa"
+   ],
+   "Woodcamo": [
+    "PLZ05\\tex\\H_co.paa",
+    "PLZ05\\tex\\T_co.paa",
+    "PLZ05\\tex\\C_co.paa",
+    "PLZ05\\tex\\W_co.paa",
+    "PLZ05\\tex\\TO_co.paa"
+   ],
+   "Woodcamo2": [
+    "PLZ05\\tex\\H_W2_co.paa",
+    "PLZ05\\tex\\T_W2_co.paa",
+    "PLZ05\\tex\\C_W2_co.paa",
+    "PLZ05\\tex\\W_W2_co.paa",
+    "PLZ05\\tex\\TO_W2_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored",
+  "vehicleClass_guessed": true
+ },
+ "O_ZBD04A": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Crew_F",
+  "displayName": "ZBD04A",
+  "editorSubcategory": "EdSubcat_APCs",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4"
+  ],
+  "hiddenSelectionsTextures": [
+   "ZBD04\\tex\\H_co.paa",
+   "ZBD04\\tex\\T_co.paa",
+   "ZBD04\\tex\\TO_co.paa",
+   "ZBD04\\tex\\W_co.paa"
+  ],
+  "parent": "O_ZBD04A_base",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "0",
+  "textureList": [
+   "Woodcamo2",
+   "Desertcamo"
+  ],
+  "textureSources": {
+   "Desertcamo": [
+    "ZBD04\\tex\\H_D_co.paa",
+    "ZBD04\\tex\\T_D_co.paa",
+    "ZBD04\\tex\\TO_D_co.paa",
+    "ZBD04\\tex\\W_D_co.paa"
+   ],
+   "Khaki": [
+    "ZBD04\\tex\\H_K_co.paa",
+    "ZBD04\\tex\\T_K_co.paa",
+    "ZBD04\\tex\\TO_K_co.paa",
+    "ZBD04\\tex\\W_K_co.paa"
+   ],
+   "Olive": [
+    "ZBD04\\tex\\H_O_co.paa",
+    "ZBD04\\tex\\T_O_co.paa",
+    "ZBD04\\tex\\TO_O_co.paa",
+    "ZBD04\\tex\\W_O_co.paa"
+   ],
+   "Woodcamo": [
+    "ZBD04\\tex\\H_co.paa",
+    "ZBD04\\tex\\T_co.paa",
+    "ZBD04\\tex\\TO_co.paa",
+    "ZBD04\\tex\\W_co.paa"
+   ],
+   "Woodcamo2": [
+    "ZBD04\\tex\\H_W2_co.paa",
+    "ZBD04\\tex\\T_W2_co.paa",
+    "ZBD04\\tex\\TO_W2_co.paa",
+    "ZBD04\\tex\\W_W2_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored",
+  "vehicleClass_guessed": true
+ },
+ "O_ZBD05": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Crew_F",
+  "displayName": "ZBD05",
+  "editorSubcategory": "EdSubcat_APCs",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5"
+  ],
+  "hiddenSelectionsTextures": [
+   "ZBD05\\tex\\B_N_co.paa",
+   "ZBL09\\tex\\T_N_co.paa",
+   "ZBD05\\tex\\S_N_co.paa",
+   "ZBD05\\tex\\W_N_co.paa",
+   "ZBL09\\tex\\TO_N_co.paa"
+  ],
+  "parent": "ZBD05_base",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "0",
+  "textureList": [
+   "PLANAVY camo",
+   "woolcamo2"
+  ],
+  "textureSources": {
+   "Desertcamo": [
+    "ZBD05\\tex\\B_D_co.paa",
+    "ZBL09\\tex\\T_D_co.paa",
+    "ZBD05\\tex\\S_D_co.paa",
+    "ZBD05\\tex\\W_D_co.paa",
+    "ZBL09\\tex\\TO_D_co.paa"
+   ],
+   "PLANAVYcamo": [
+    "ZBD05\\tex\\B_N_co.paa",
+    "ZBL09\\tex\\T_N_co.paa",
+    "ZBD05\\tex\\S_N_co.paa",
+    "ZBD05\\tex\\W_N_co.paa",
+    "ZBL09\\tex\\TO_N_co.paa"
+   ],
+   "khaki": [
+    "ZBD05\\tex\\B_K_co.paa",
+    "ZBL09\\tex\\T_K_co.paa",
+    "ZBD05\\tex\\S_K_co.paa",
+    "ZBD05\\tex\\W_K_co.paa",
+    "ZBL09\\tex\\TO_K_co.paa"
+   ],
+   "olive": [
+    "ZBD05\\tex\\B_O_co.paa",
+    "ZBL09\\tex\\T_O_co.paa",
+    "ZBD05\\tex\\S_O_co.paa",
+    "ZBD05\\tex\\W_O_co.paa",
+    "ZBL09\\tex\\TO_O_co.paa"
+   ],
+   "woodcamo": [
+    "ZBD05\\tex\\B_co.paa",
+    "ZBL09\\tex\\T_co.paa",
+    "ZBD05\\tex\\S_co.paa",
+    "ZBD05\\tex\\W_co.paa",
+    "ZBL09\\tex\\TO_co.paa"
+   ],
+   "woodcamo2": [
+    "ZBD05\\tex\\B_W2_co.paa",
+    "ZBL09\\tex\\T_W2_co.paa",
+    "ZBD05\\tex\\S_W2_co.paa",
+    "ZBD05\\tex\\W_W2_co.paa",
+    "ZBL09\\tex\\TO_W2_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored",
+  "vehicleClass_guessed": true
+ },
+ "O_ZBL09": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Crew_F",
+  "displayName": "ZBL09",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4"
+  ],
+  "hiddenSelectionsTextures": [
+   "ZBL09\\tex\\H_co.paa",
+   "ZBL09\\tex\\T_co.paa",
+   "ZBL09\\tex\\TO_co.paa",
+   "ZTL11\\tex\\W_co.paa"
+  ],
+  "parent": "O_ZBL09_base",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "0",
+  "textureList": [
+   "Woodcamo",
+   "Desertcamo"
+  ],
+  "textureSources": {
+   "Desertcamo": [
+    "ZBL09\\tex\\H_D_co.paa",
+    "ZBL09\\tex\\T_D_co.paa",
+    "ZBL09\\tex\\TO_D_co.paa",
+    "ZTL11\\tex\\W_D_co.paa"
+   ],
+   "Khaki": [
+    "ZBL09\\tex\\H_K_co.paa",
+    "ZBL09\\tex\\T_K_co.paa",
+    "ZBL09\\tex\\TO_K_co.paa",
+    "ZTL11\\tex\\W_K_co.paa"
+   ],
+   "Olive": [
+    "ZBL09\\tex\\H_O_co.paa",
+    "ZBL09\\tex\\T_O_co.paa",
+    "ZBL09\\tex\\TO_O_co.paa",
+    "ZTL11\\tex\\W_O_co.paa"
+   ],
+   "Woodcamo": [
+    "ZBL09\\tex\\H_co.paa",
+    "ZBL09\\tex\\T_co.paa",
+    "ZBL09\\tex\\TO_co.paa",
+    "ZTL11\\tex\\W_co.paa"
+   ],
+   "Woodcamo2": [
+    "ZBL09\\tex\\H_W2_co.paa",
+    "ZBL09\\tex\\T_W2_co.paa",
+    "ZBL09\\tex\\TO_W2_co.paa",
+    "ZTL11\\tex\\W_W2_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "O_ZTD05": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Crew_F",
+  "displayName": "ZTD05",
+  "editorSubcategory": "EdSubcat_Tanks",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5"
+  ],
+  "hiddenSelectionsTextures": [
+   "ZTD05\\tex\\B_N_co.paa",
+   "ZTL11\\tex\\T_N_co.paa",
+   "ZBD05\\tex\\S_N_co.paa",
+   "ZBD05\\tex\\W_N_co.paa",
+   "ZTL11\\tex\\TO_N_co.paa"
+  ],
+  "parent": "ZTD05_base",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "0",
+  "textureList": [
+   "PLANAVY camo",
+   "woolcamo2"
+  ],
+  "textureSources": {
+   "Desertcamo": [
+    "ZTD05\\tex\\B_D_co.paa",
+    "ZTL11\\tex\\T_D_co.paa",
+    "ZBD05\\tex\\S_D_co.paa",
+    "ZBD05\\tex\\W_D_co.paa",
+    "ZTL11\\tex\\TO_D_co.paa"
+   ],
+   "PLANAVYcamo": [
+    "ZTD05\\tex\\B_N_co.paa",
+    "ZTL11\\tex\\T_N_co.paa",
+    "ZBD05\\tex\\S_N_co.paa",
+    "ZBD05\\tex\\W_N_co.paa",
+    "ZTL11\\tex\\TO_N_co.paa"
+   ],
+   "khaki": [
+    "ZTD05\\tex\\B_K_co.paa",
+    "ZTL11\\tex\\T_K_co.paa",
+    "ZBD05\\tex\\S_K_co.paa",
+    "ZBD05\\tex\\W_K_co.paa",
+    "ZTL11\\tex\\TO_K_co.paa"
+   ],
+   "olive": [
+    "ZTD05\\tex\\B_O_co.paa",
+    "ZTL11\\tex\\T_O_co.paa",
+    "ZBD05\\tex\\S_O_co.paa",
+    "ZBD05\\tex\\W_O_co.paa",
+    "ZTL11\\tex\\TO_O_co.paa"
+   ],
+   "woodcamo": [
+    "ZTD05\\tex\\B_co.paa",
+    "ZTL11\\tex\\T_co.paa",
+    "ZBD05\\tex\\S_co.paa",
+    "ZBD05\\tex\\W_co.paa",
+    "ZTL11\\tex\\TO_co.paa"
+   ],
+   "woodcamo2": [
+    "ZTD05\\tex\\B_W2_co.paa",
+    "ZTL11\\tex\\T_W2_co.paa",
+    "ZBD05\\tex\\S_W2_co.paa",
+    "ZBD05\\tex\\W_W2_co.paa",
+    "ZTL11\\tex\\TO_W2_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored",
+  "vehicleClass_guessed": true
+ },
+ "O_ZTL11": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Crew_F",
+  "displayName": "ZTL11",
+  "editorSubcategory": "EdSubcat_APCs",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4"
+  ],
+  "hiddenSelectionsTextures": [
+   "ztl11\\tex\\h_co.paa",
+   "ztl11\\tex\\t_co.paa",
+   "ztl11\\tex\\to_co.paa",
+   "ztl11\\tex\\w_co.paa"
+  ],
+  "parent": "ZTL11_base",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "0",
+  "textureList": [
+   "Woodcamo",
+   "Desertcamo"
+  ],
+  "textureSources": {
+   "Desertcamo": [
+    "ztl11\\tex\\h_d_co.paa",
+    "ztl11\\tex\\t_d_co.paa",
+    "ztl11\\tex\\to_d_co.paa",
+    "ztl11\\tex\\w_d_co.paa"
+   ],
+   "Khaki": [
+    "ztl11\\tex\\h_k_co.paa",
+    "ztl11\\tex\\t_k_co.paa",
+    "ztl11\\tex\\to_k_co.paa",
+    "ztl11\\tex\\w_k_co.paa"
+   ],
+   "Olive": [
+    "ztl11\\tex\\h_o_co.paa",
+    "ztl11\\tex\\t_o_co.paa",
+    "ztl11\\tex\\to_o_co.paa",
+    "ztl11\\tex\\w_o_co.paa"
+   ],
+   "Woodcamo": [
+    "ztl11\\tex\\h_co.paa",
+    "ztl11\\tex\\t_co.paa",
+    "ztl11\\tex\\to_co.paa",
+    "ztl11\\tex\\w_co.paa"
+   ],
+   "Woodcamo2": [
+    "ztl11\\tex\\h_w2_co.paa",
+    "ztl11\\tex\\t_w2_co.paa",
+    "ztl11\\tex\\to_w2_co.paa",
+    "ztl11\\tex\\w_w2_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored",
+  "vehicleClass_guessed": true
+ },
+ "O_ZTQ15": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Crew_F",
+  "displayName": "ZTQ15",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "Camo5",
+   "Camo6",
+   "Camo7"
+  ],
+  "hiddenSelectionsTextures": [
+   "ZTQ15\\tex\\H_co.paa",
+   "ZTQ15\\tex\\T_co.paa",
+   "ZTQ15\\tex\\TO_co.paa",
+   "ZTQ15\\tex\\C_co.paa",
+   "ZTQ15\\tex\\W_co.paa",
+   "ZTQ15\\tex\\ERA_co.paa",
+   "ZTQ15\\tex\\RWS_co.paa"
+  ],
+  "parent": "ZTQ15_base",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "0",
+  "textureSources": {
+   "Desertcamo": [
+    "ZTQ15\\tex\\H_D_co.paa",
+    "ZTQ15\\tex\\T_D_co.paa",
+    "ZTQ15\\tex\\TO_D_co.paa",
+    "ZTQ15\\tex\\C_D_co.paa",
+    "ZTQ15\\tex\\W_D_co.paa",
+    "ZTQ15\\tex\\ERA_D_co.paa",
+    "ZTQ15\\tex\\RWS_D_co.paa"
+   ],
+   "Khaki": [
+    "ZTQ15\\tex\\H_K_co.paa",
+    "ZTQ15\\tex\\T_K_co.paa",
+    "ZTQ15\\tex\\TO_K_co.paa",
+    "ZTQ15\\tex\\C_K_co.paa",
+    "ZTQ15\\tex\\W_K_co.paa",
+    "ZTQ15\\tex\\ERA_K_co.paa",
+    "ZTQ15\\tex\\RWS_K_co.paa"
+   ],
+   "Olive": [
+    "ZTQ15\\tex\\H_O_co.paa",
+    "ZTQ15\\tex\\T_O_co.paa",
+    "ZTQ15\\tex\\TO_O_co.paa",
+    "ZTQ15\\tex\\C_O_co.paa",
+    "ZTQ15\\tex\\W_O_co.paa",
+    "ZTQ15\\tex\\ERA_O_co.paa",
+    "ZTQ15\\tex\\RWS_O_co.paa"
+   ],
+   "Woodcamo": [
+    "ZTQ15\\tex\\H_co.paa",
+    "ZTQ15\\tex\\T_co.paa",
+    "ZTQ15\\tex\\TO_co.paa",
+    "ZTQ15\\tex\\C_co.paa",
+    "ZTQ15\\tex\\W_co.paa",
+    "ZTQ15\\tex\\ERA_co.paa",
+    "ZTQ15\\tex\\RWS_co.paa"
+   ],
+   "Woodcamo2": [
+    "ZTQ15\\tex\\H_W2_co.paa",
+    "ZTQ15\\tex\\T_W2_co.paa",
+    "ZTQ15\\tex\\TO_W2_co.paa",
+    "ZTQ15\\tex\\C_W2_co.paa",
+    "ZTQ15\\tex\\W_W2_co.paa",
+    "ZTQ15\\tex\\ERA_W2_co.paa",
+    "ZTQ15\\tex\\RWS_W2_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "O_ZTQ15B": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Crew_F",
+  "displayName": "ZTQ15 HEAVY",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "Camo5",
+   "Camo6",
+   "Camo7"
+  ],
+  "hiddenSelectionsTextures": [
+   "ZTQ15\\tex\\H_co.paa",
+   "ZTQ15\\tex\\T_co.paa",
+   "ZTQ15\\tex\\TO_co.paa",
+   "ZTQ15\\tex\\C_co.paa",
+   "ZTQ15\\tex\\W_co.paa",
+   "ZTQ15\\tex\\ERA_co.paa",
+   "ZTQ15\\tex\\RWS_co.paa"
+  ],
+  "parent": "O_ZTQ15",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "0",
+  "textureSources": {
+   "Desertcamo": [
+    "ZTQ15\\tex\\H_D_co.paa",
+    "ZTQ15\\tex\\T_D_co.paa",
+    "ZTQ15\\tex\\TO_D_co.paa",
+    "ZTQ15\\tex\\C_D_co.paa",
+    "ZTQ15\\tex\\W_D_co.paa",
+    "ZTQ15\\tex\\ERA_D_co.paa",
+    "ZTQ15\\tex\\RWS_D_co.paa"
+   ],
+   "Khaki": [
+    "ZTQ15\\tex\\H_K_co.paa",
+    "ZTQ15\\tex\\T_K_co.paa",
+    "ZTQ15\\tex\\TO_K_co.paa",
+    "ZTQ15\\tex\\C_K_co.paa",
+    "ZTQ15\\tex\\W_K_co.paa",
+    "ZTQ15\\tex\\ERA_K_co.paa",
+    "ZTQ15\\tex\\RWS_K_co.paa"
+   ],
+   "Olive": [
+    "ZTQ15\\tex\\H_O_co.paa",
+    "ZTQ15\\tex\\T_O_co.paa",
+    "ZTQ15\\tex\\TO_O_co.paa",
+    "ZTQ15\\tex\\C_O_co.paa",
+    "ZTQ15\\tex\\W_O_co.paa",
+    "ZTQ15\\tex\\ERA_O_co.paa",
+    "ZTQ15\\tex\\RWS_O_co.paa"
+   ],
+   "Woodcamo": [
+    "ZTQ15\\tex\\H_co.paa",
+    "ZTQ15\\tex\\T_co.paa",
+    "ZTQ15\\tex\\TO_co.paa",
+    "ZTQ15\\tex\\C_co.paa",
+    "ZTQ15\\tex\\W_co.paa",
+    "ZTQ15\\tex\\ERA_co.paa",
+    "ZTQ15\\tex\\RWS_co.paa"
+   ],
+   "Woodcamo2": [
+    "ZTQ15\\tex\\H_W2_co.paa",
+    "ZTQ15\\tex\\T_W2_co.paa",
+    "ZTQ15\\tex\\TO_W2_co.paa",
+    "ZTQ15\\tex\\C_W2_co.paa",
+    "ZTQ15\\tex\\W_W2_co.paa",
+    "ZTQ15\\tex\\ERA_W2_co.paa",
+    "ZTQ15\\tex\\RWS_W2_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "O_ZTZ96A": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Crew_F",
+  "displayName": "ZTZ96A",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "Camo5"
+  ],
+  "hiddenSelectionsTextures": [
+   "ZTZ96A\\tex\\96a_hull_co.paa",
+   "ZTZ96A\\tex\\96a_turret_co.paa",
+   "ZTZ96A\\tex\\96a_Tobjects_co.paa",
+   "ZTZ96A\\tex\\96A_cannon_co.paa",
+   "ZTZ96A\\tex\\96a_wheels_co.paa"
+  ],
+  "parent": "ZTZ96A_base",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "0",
+  "textureList": [
+   "Woodcamo2",
+   "Desertcamo"
+  ],
+  "textureSources": {
+   "Desertcamo": [
+    "ZTZ96A\\tex\\96a_hull_D_co.paa",
+    "ZTZ96A\\tex\\96a_turret_D_co.paa",
+    "ZTZ96A\\tex\\96a_Tobjects_D_co.paa",
+    "ZTZ96A\\tex\\96A_cannon_D_co.paa",
+    "ZTZ96A\\tex\\96a_wheels_D_co.paa"
+   ],
+   "Khaki": [
+    "ZTZ96A\\tex\\96a_hull_K_co.paa",
+    "ZTZ96A\\tex\\96a_turret_K_co.paa",
+    "ZTZ96A\\tex\\96a_Tobjects_K_co.paa",
+    "ZTZ96A\\tex\\96A_cannon_K_co.paa",
+    "ZTZ96A\\tex\\96a_wheels_K_co.paa"
+   ],
+   "Olive": [
+    "ZTZ96A\\tex\\96a_hull_O_co.paa",
+    "ZTZ96A\\tex\\96a_turret_O_co.paa",
+    "ZTZ96A\\tex\\96a_Tobjects_O_co.paa",
+    "ZTZ96A\\tex\\96A_cannon_O_co.paa",
+    "ZTZ96A\\tex\\96a_wheels_O_co.paa"
+   ],
+   "Woodcamo": [
+    "ZTZ96A\\tex\\96a_hull_co.paa",
+    "ZTZ96A\\tex\\96a_turret_co.paa",
+    "ZTZ96A\\tex\\96a_Tobjects_co.paa",
+    "ZTZ96A\\tex\\96A_cannon_co.paa",
+    "ZTZ96A\\tex\\96a_wheels_co.paa"
+   ],
+   "Woodcamo2": [
+    "ZTZ96A\\tex\\96a_hull_W2_co.paa",
+    "ZTZ96A\\tex\\96a_turret_W2_co.paa",
+    "ZTZ96A\\tex\\96a_Tobjects_W2_co.paa",
+    "ZTZ96A\\tex\\96A_cannon_W2_co.paa",
+    "ZTZ96A\\tex\\96a_wheels_W2_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "O_ZTZ96B": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Crew_F",
+  "displayName": "ZTZ96B",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "Camo5"
+  ],
+  "hiddenSelectionsTextures": [
+   "ZTZ96B\\tex\\96b_hull_co.paa",
+   "ZTZ96B\\tex\\96b_turret_co.paa",
+   "ZTZ96B\\tex\\96b_Tobjects_co.paa",
+   "ZTZ96A\\tex\\96a_cannon_co.paa",
+   "ZTZ96B\\tex\\96b_wheels_co.paa"
+  ],
+  "parent": "ZTZ96B_base",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "0",
+  "textureList": [
+   "Woodcamo2",
+   "Desertcamo"
+  ],
+  "textureSources": {
+   "Desertcamo": [
+    "ZTZ96B\\tex\\96b_hull_D_co.paa",
+    "ZTZ96B\\tex\\96b_turret_D_co.paa",
+    "ZTZ96B\\tex\\96b_Tobjects_D_co.paa",
+    "ZTZ96A\\tex\\96A_cannon_D_co.paa",
+    "ZTZ96B\\tex\\96b_wheels_D_co.paa"
+   ],
+   "Khaki": [
+    "ZTZ96B\\tex\\96b_hull_K_co.paa",
+    "ZTZ96B\\tex\\96b_turret_K_co.paa",
+    "ZTZ96B\\tex\\96b_Tobjects_K_co.paa",
+    "ZTZ96A\\tex\\96A_cannon_K_co.paa",
+    "ZTZ96B\\tex\\96b_wheels_K_co.paa"
+   ],
+   "Olive": [
+    "ZTZ96B\\tex\\96b_hull_O_co.paa",
+    "ZTZ96B\\tex\\96b_turret_O_co.paa",
+    "ZTZ96B\\tex\\96b_Tobjects_O_co.paa",
+    "ZTZ96A\\tex\\96A_cannon_O_co.paa",
+    "ZTZ96B\\tex\\96b_wheels_O_co.paa"
+   ],
+   "Woodcamo": [
+    "ZTZ96B\\tex\\96b_hull_co.paa",
+    "ZTZ96B\\tex\\96b_turret_co.paa",
+    "ZTZ96B\\tex\\96b_Tobjects_co.paa",
+    "ZTZ96A\\tex\\96A_cannon_co.paa",
+    "ZTZ96B\\tex\\96b_wheels_co.paa"
+   ],
+   "Woodcamo2": [
+    "ZTZ96B\\tex\\96b_hull_W2_co.paa",
+    "ZTZ96B\\tex\\96b_turret_W2_co.paa",
+    "ZTZ96B\\tex\\96b_Tobjects_W2_co.paa",
+    "ZTZ96A\\tex\\96A_cannon_W2_co.paa",
+    "ZTZ96B\\tex\\96b_wheels_W2_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "O_ZTZ99": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Crew_F",
+  "displayName": "ZTZ99",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "Camo5",
+   "Camo6"
+  ],
+  "hiddenSelectionsTextures": [
+   "ZTZ99\\tex\\H_co.paa",
+   "ZTZ99A\\tex\\C_co.paa",
+   "ZTZ99\\tex\\ERAS_co.paa",
+   "ZTZ99\\tex\\T_co.paa",
+   "ZTZ99\\tex\\TO_co.paa",
+   "ztz99a\\tex\\W_co.paa"
+  ],
+  "parent": "ZTZ99_base",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "0",
+  "textureList": [
+   "Woodcamo2",
+   "Desertcamo"
+  ],
+  "textureSources": {
+   "Desertcamo": [
+    "ZTZ99\\tex\\H_D_co.paa",
+    "ZTZ99A\\tex\\C_D_co.paa",
+    "ZTZ99\\tex\\ERAS_D_co.paa",
+    "ZTZ99\\tex\\T_D_co.paa",
+    "ZTZ99\\tex\\TO_D_co.paa",
+    "ZTZ99a\\tex\\W_K_co.paa"
+   ],
+   "Khaki": [
+    "ZTZ99\\tex\\H_K_co.paa",
+    "ZTZ99A\\tex\\C_K_co.paa",
+    "ZTZ99\\tex\\ERAS_K_co.paa",
+    "ZTZ99\\tex\\T_K_co.paa",
+    "ZTZ99\\tex\\TO_K_co.paa",
+    "ZTZ99a\\tex\\W_K_co.paa"
+   ],
+   "Olive": [
+    "ZTZ99\\tex\\H_O_co.paa",
+    "ZTZ99A\\tex\\C_O_co.paa",
+    "ZTZ99\\tex\\ERAS_O_co.paa",
+    "ZTZ99\\tex\\T_O_co.paa",
+    "ZTZ99\\tex\\TO_O_co.paa",
+    "ZTZ99a\\tex\\W_O_co.paa"
+   ],
+   "Woodcamo": [
+    "ZTZ99\\tex\\H_co.paa",
+    "ZTZ99A\\tex\\C_co.paa",
+    "ZTZ99\\tex\\ERAS_co.paa",
+    "ZTZ99\\tex\\T_co.paa",
+    "ZTZ99\\tex\\TO_co.paa",
+    "ztz99a\\tex\\W_co.paa"
+   ],
+   "Woodcamo2": [
+    "ZTZ99\\tex\\H_W2_co.paa",
+    "ZTZ99A\\tex\\C_W2_co.paa",
+    "ZTZ99\\tex\\ERAS_W2_co.paa",
+    "ZTZ99\\tex\\T_W2_co.paa",
+    "ZTZ99\\tex\\TO_W2_co.paa",
+    "ZTZ99a\\tex\\W_w2_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "O_ZTZ99A": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Crew_F",
+  "displayName": "ZTZ99A",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5",
+   "camo6",
+   "camo7"
+  ],
+  "hiddenSelectionsTextures": [
+   "ztz99a\\tex\\h_co.paa",
+   "ztz99a\\tex\\t_co.paa",
+   "ztz99a\\tex\\c_co.paa",
+   "ztz99a\\tex\\to_co.paa",
+   "ztz99a\\tex\\era_co.paa",
+   "ztz99a\\tex\\w_co.paa",
+   "ztz99a\\tex\\rws_co.paa"
+  ],
+  "parent": "ZTZ99A_base",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "0",
+  "textureList": [
+   "Woodcamo2",
+   "Woodcamo",
+   "Desertcamo"
+  ],
+  "textureSources": {
+   "Desertcamo": [
+    "ztz99a\\tex\\h_d_co.paa",
+    "ztz99a\\tex\\t_d_co.paa",
+    "ztz99a\\tex\\c_d_co.paa",
+    "ztz99a\\tex\\to_d_co.paa",
+    "ztz99a\\tex\\era_d_co.paa",
+    "ztz99a\\tex\\w_d_co.paa",
+    "ztz99a\\tex\\rws_d_co.paa"
+   ],
+   "Olive": [
+    "ztz99a\\tex\\h_o_co.paa",
+    "ztz99a\\tex\\t_o_co.paa",
+    "ztz99a\\tex\\c_o_co.paa",
+    "ztz99a\\tex\\to_o_co.paa",
+    "ztz99a\\tex\\era_o_co.paa",
+    "ztz99a\\tex\\w_o_co.paa",
+    "ztz99a\\tex\\rws_o_co.paa"
+   ],
+   "Woodcamo": [
+    "ztz99a\\tex\\h_co.paa",
+    "ztz99a\\tex\\t_co.paa",
+    "ztz99a\\tex\\c_co.paa",
+    "ztz99a\\tex\\to_co.paa",
+    "ztz99a\\tex\\era_co.paa",
+    "ztz99a\\tex\\w_co.paa",
+    "ztz99a\\tex\\rws_co.paa"
+   ],
+   "Woodcamo2": [
+    "ztz99a\\tex\\h_w2_co.paa",
+    "ztz99a\\tex\\t_w2_co.paa",
+    "ztz99a\\tex\\c_w2_co.paa",
+    "ztz99a\\tex\\to_w2_co.paa",
+    "ztz99a\\tex\\era_w2_co.paa",
+    "ztz99a\\tex\\w_w2_co.paa",
+    "ztz99a\\tex\\rws_w2_co.paa"
+   ],
+   "khaki": [
+    "ztz99a\\tex\\h_k_co.paa",
+    "ztz99a\\tex\\t_k_co.paa",
+    "ztz99a\\tex\\c_k_co.paa",
+    "ztz99a\\tex\\to_d_co.paa",
+    "ztz99a\\tex\\era_k_co.paa",
+    "ztz99a\\tex\\w_k_co.paa",
+    "ztz99a\\tex\\rws_k_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "PLAAF_Fighter_J10": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Pilot_F",
+  "displayName": "J10C",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "Camo1"
+  ],
+  "hiddenSelectionsTextures": [
+   "J10\\tex\\j10_ext_co.paa"
+  ],
+  "parent": "PLAAF_Fighter_J10_base",
+  "scope": "2",
+  "side": "0",
+  "textureList": [],
+  "textureSources": {
+   "PLAAF_Bule": [
+    "J10\\tex\\j10_ext_co.paa"
+   ]
+  },
+  "vehicleClass": "Air"
+ },
+ "PLAAF_Fighter_J11": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Pilot_F",
+  "displayName": "Shenyang J11D",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "Camo1"
+  ],
+  "hiddenSelectionsTextures": [
+   "J11\\tex\\J11D_co.paa"
+  ],
+  "parent": "PLAAF_Fighter_J11_base",
+  "scope": "2",
+  "side": "0",
+  "textureList": [],
+  "textureSources": {
+   "PLAAF_Bule": [
+    "J11\\tex\\J11D_co.paa"
+   ]
+  },
+  "vehicleClass": "Air"
+ },
+ "PLAAF_Fighter_J15": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Pilot_F",
+  "displayName": "Shenyang J15 (Obr.2023)",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "Camo1"
+  ],
+  "hiddenSelectionsTextures": [
+   "J15\\tex\\J15_ext_co.paa"
+  ],
+  "parent": "PLAAF_Fighter_J15_base",
+  "scope": "2",
+  "side": "0",
+  "textureList": [],
+  "textureSources": {
+   "PLAAF_Bule": [
+    "J15\\tex\\J15_ext_co.paa"
+   ]
+  },
+  "vehicleClass": "Air"
+ },
+ "PLAAF_Fighter_J16": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Pilot_F",
+  "displayName": "Shenyang J16",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "Camo1"
+  ],
+  "hiddenSelectionsTextures": [
+   "J16\\tex\\J16_Ext_co.paa"
+  ],
+  "parent": "PLAAF_Fighter_J16_base",
+  "scope": "2",
+  "side": "0",
+  "textureList": [],
+  "textureSources": {
+   "PLAAF_Grey": [
+    "J16\\tex\\J16_Ext_co.paa"
+   ]
+  },
+  "vehicleClass": "Air"
+ },
+ "PLAAF_Fighter_J20": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Pilot_F",
+  "displayName": "J20A",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "Camo1",
+   "BFT_screen"
+  ],
+  "hiddenSelectionsTextures": [
+   "J20\\tex\\J20A_ext_Camo1_co.paa"
+  ],
+  "parent": "PLAAF_Fighter_J20_base",
+  "scope": "2",
+  "side": "0",
+  "textureList": [],
+  "textureSources": {
+   "J20_mat_PRTV": [
+    "J20\\tex\\J20A_ext_Yellow_co.paa"
+   ],
+   "J20_mat_black": [
+    "J20\\tex\\J20A_ext_black_co.paa"
+   ],
+   "J20_mat_camo1": [
+    "J20\\tex\\J20A_ext_Camo1_co.paa"
+   ],
+   "J20_mat_camo2": [
+    "J20\\tex\\J20A_ext_Camo2_co.paa"
+   ],
+   "J20_mat_grey": [
+    "J20\\tex\\J20A_ext_grey_co.paa"
+   ]
+  },
+  "vehicleClass": "Air"
+ },
+ "SX2220": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_soldier_F",
+  "displayName": "SX2220(passenger transport)",
+  "editorSubcategory": "EdSubcat_Cars",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "Camo1",
+   "Camo2",
+   "Camo3"
+  ],
+  "hiddenSelectionsTextures": [
+   "HMV3\\tex\\Head_O_co.paa",
+   "HMV3\\tex\\Cargo_O_co.paa",
+   "HMV3\\tex\\cover_O_co.paa"
+  ],
+  "parent": "SX2220_Base",
+  "scope": "2",
+  "side": "0",
+  "textureSources": {
+   "Desert": [
+    "HMV3\\tex\\Head_D_co.paa",
+    "HMV3\\tex\\Cargo_D_co.paa",
+    "HMV3\\tex\\cover_D_co.paa"
+   ],
+   "Olive": [
+    "HMV3\\tex\\Head_O_co.paa",
+    "HMV3\\tex\\Cargo_O_co.paa",
+    "HMV3\\tex\\cover_O_co.paa"
+   ],
+   "Woodland": [
+    "HMV3\\tex\\Head_co.paa",
+    "HMV3\\tex\\Cargo_co.paa",
+    "HMV3\\tex\\cover_co.paa"
+   ],
+   "Woodland_2": [
+    "HMV3\\tex\\Head_w2_co.paa",
+    "HMV3\\tex\\Cargo_w2_co.paa",
+    "HMV3\\tex\\cover_w2_co.paa"
+   ],
+   "khaki": [
+    "HMV3\\tex\\Head_K_co.paa",
+    "HMV3\\tex\\Cargo_K_co.paa",
+    "HMV3\\tex\\cover_K_co.paa"
+   ]
+  },
+  "vehicleClass": "Car"
+ },
+ "SX2220_Flat": {
+  "author": "[CN]lurker1011",
+  "crew": "O_soldier_F",
+  "displayName": "SX2220(FLAT)",
+  "editorSubcategory": "EdSubcat_Cars",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "Camo1",
+   "Camo2",
+   "Camo3"
+  ],
+  "hiddenSelectionsTextures": [
+   "HMV3\\tex\\Head_O_co.paa",
+   "HMV3\\tex\\Cargo_O_co.paa",
+   "HMV3\\tex\\cover_O_co.paa"
+  ],
+  "parent": "SX2220",
+  "scope": "2",
+  "side": "0",
+  "textureSources": {
+   "Desert": [
+    "HMV3\\tex\\Head_D_co.paa",
+    "HMV3\\tex\\Cargo_D_co.paa",
+    "HMV3\\tex\\cover_D_co.paa"
+   ],
+   "Olive": [
+    "HMV3\\tex\\Head_O_co.paa",
+    "HMV3\\tex\\Cargo_O_co.paa",
+    "HMV3\\tex\\cover_O_co.paa"
+   ],
+   "Woodland": [
+    "HMV3\\tex\\Head_co.paa",
+    "HMV3\\tex\\Cargo_co.paa",
+    "HMV3\\tex\\cover_co.paa"
+   ],
+   "Woodland_2": [
+    "HMV3\\tex\\Head_w2_co.paa",
+    "HMV3\\tex\\Cargo_w2_co.paa",
+    "HMV3\\tex\\cover_w2_co.paa"
+   ],
+   "khaki": [
+    "HMV3\\tex\\Head_K_co.paa",
+    "HMV3\\tex\\Cargo_K_co.paa",
+    "HMV3\\tex\\cover_K_co.paa"
+   ]
+  },
+  "vehicleClass": "Car"
+ },
+ "SX2316": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_soldier_F",
+  "displayName": "SX2316(passenger transport)",
+  "editorSubcategory": "EdSubcat_Cars",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "Camo1",
+   "Camo2",
+   "Camo3"
+  ],
+  "hiddenSelectionsTextures": [
+   "HMV3\\tex\\Head_O_co.paa",
+   "HMV3\\tex\\Cargo_O_co.paa",
+   "HMV3\\tex\\cover_O_co.paa"
+  ],
+  "parent": "SX2316_base",
+  "scope": "2",
+  "side": "0",
+  "textureSources": {
+   "Desert": [
+    "HMV3\\tex\\Head_D_co.paa",
+    "HMV3\\tex\\Cargo_D_co.paa",
+    "HMV3\\tex\\cover_D_co.paa"
+   ],
+   "Olive": [
+    "HMV3\\tex\\Head_O_co.paa",
+    "HMV3\\tex\\Cargo_O_co.paa",
+    "HMV3\\tex\\cover_O_co.paa"
+   ],
+   "Woodland": [
+    "HMV3\\tex\\Head_co.paa",
+    "HMV3\\tex\\Cargo_co.paa",
+    "HMV3\\tex\\cover_co.paa"
+   ],
+   "Woodland_2": [
+    "HMV3\\tex\\Head_w2_co.paa",
+    "HMV3\\tex\\Cargo_w2_co.paa",
+    "HMV3\\tex\\cover_w2_co.paa"
+   ],
+   "khaki": [
+    "HMV3\\tex\\Head_K_co.paa",
+    "HMV3\\tex\\Cargo_K_co.paa",
+    "HMV3\\tex\\cover_K_co.paa"
+   ]
+  },
+  "vehicleClass": "Car"
+ },
+ "SX2316_Flat": {
+  "author": "[CN]lurker1011",
+  "crew": "O_soldier_F",
+  "displayName": "SX2316(FLAT)",
+  "editorSubcategory": "EdSubcat_Cars",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "Camo1",
+   "Camo2",
+   "Camo3"
+  ],
+  "hiddenSelectionsTextures": [
+   "HMV3\\tex\\Head_O_co.paa",
+   "HMV3\\tex\\Cargo_O_co.paa",
+   "HMV3\\tex\\cover_O_co.paa"
+  ],
+  "parent": "SX2316",
+  "scope": "2",
+  "side": "0",
+  "textureSources": {
+   "Desert": [
+    "HMV3\\tex\\Head_D_co.paa",
+    "HMV3\\tex\\Cargo_D_co.paa",
+    "HMV3\\tex\\cover_D_co.paa"
+   ],
+   "Olive": [
+    "HMV3\\tex\\Head_O_co.paa",
+    "HMV3\\tex\\Cargo_O_co.paa",
+    "HMV3\\tex\\cover_O_co.paa"
+   ],
+   "Woodland": [
+    "HMV3\\tex\\Head_co.paa",
+    "HMV3\\tex\\Cargo_co.paa",
+    "HMV3\\tex\\cover_co.paa"
+   ],
+   "Woodland_2": [
+    "HMV3\\tex\\Head_w2_co.paa",
+    "HMV3\\tex\\Cargo_w2_co.paa",
+    "HMV3\\tex\\cover_w2_co.paa"
+   ],
+   "khaki": [
+    "HMV3\\tex\\Head_K_co.paa",
+    "HMV3\\tex\\Cargo_K_co.paa",
+    "HMV3\\tex\\cover_K_co.paa"
+   ]
+  },
+  "vehicleClass": "Car"
+ },
+ "Z10": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Helipilot_F",
+  "displayName": "Z10",
+  "editorSubcategory": "EdSubcat_Helicopters",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4"
+  ],
+  "hiddenSelectionsTextures": [
+   "Z10\\tex\\H_co.paa",
+   "Z10\\tex\\A_co.paa",
+   "Z10\\tex\\O_co.paa",
+   "Z10\\tex\\R_co.paa"
+  ],
+  "parent": "Z10_dynamicLoadout",
+  "scope": "2",
+  "side": "0",
+  "textureSources": {
+   "Black": [
+    "Z10\\tex\\H_co.paa",
+    "Z10\\tex\\A_co.paa",
+    "Z10\\tex\\O_co.paa",
+    "Z10\\tex\\R_co.paa"
+   ]
+  },
+  "vehicleClass": "Air",
+  "vehicleClass_guessed": true
+ },
+ "Z11WA": {
+  "author": "CN_Lurker1011",
+  "crew": "O_T_Helipilot_F",
+  "editorSubcategory": "EdSubcat_Helicopters",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4"
+  ],
+  "hiddenSelectionsTextures": [
+   "\\Z11\\tex\\H_co.paa",
+   "\\Z11\\tex\\I_co.paa",
+   "\\Z11\\tex\\A_co.paa",
+   "\\Z11\\tex\\R_co.paa"
+  ],
+  "parent": "Z11_dynamicLoadout_base",
+  "scope": "2",
+  "side": "0",
+  "textureList": [],
+  "textureSources": {
+   "Camo": [
+    "\\Z11\\tex\\H_co.paa",
+    "\\Z11\\tex\\I_co.paa",
+    "\\Z11\\tex\\A_co.paa",
+    "\\Z11\\tex\\R_co.paa"
+   ]
+  },
+  "vehicleClass": "Air",
+  "vehicleClass_guessed": true
+ },
+ "Z11WA_2": {
+  "author": "CN_Lurker1011",
+  "crew": "O_T_Helipilot_F",
+  "editorSubcategory": "EdSubcat_Helicopters",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4"
+  ],
+  "hiddenSelectionsTextures": [
+   "\\Z11\\tex\\H_co.paa",
+   "\\Z11\\tex\\I_co.paa",
+   "\\Z11\\tex\\A_co.paa",
+   "\\Z11\\tex\\R_co.paa"
+  ],
+  "parent": "Z11WA",
+  "scope": "2",
+  "side": "0",
+  "textureList": [],
+  "textureSources": {
+   "Camo": [
+    "\\Z11\\tex\\H_co.paa",
+    "\\Z11\\tex\\I_co.paa",
+    "\\Z11\\tex\\A_co.paa",
+    "\\Z11\\tex\\R_co.paa"
+   ]
+  },
+  "vehicleClass": "Air",
+  "vehicleClass_guessed": true
+ },
+ "Z19": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Helipilot_F",
+  "displayName": "Z19",
+  "editorSubcategory": "EdSubcat_Helicopters",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3"
+  ],
+  "hiddenSelectionsTextures": [
+   "Z19\\tex\\H_co.paa",
+   "Z19\\tex\\R_co.paa",
+   "Z19\\tex\\Eye_co.paa"
+  ],
+  "parent": "Z19_dynamicLoadout",
+  "scope": "2",
+  "side": "0",
+  "textureSources": {
+   "Black": [
+    "Z19\\tex\\H_co.paa",
+    "Z19\\tex\\R_co.paa",
+    "Z19\\tex\\Eye_co.paa"
+   ]
+  },
+  "vehicleClass": "Air",
+  "vehicleClass_guessed": true
+ },
+ "Z20": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Helipilot_F",
+  "displayName": "Z20",
+  "editorSubcategory": "EdSubcat_Helicopters",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5",
+   "camo6"
+  ],
+  "hiddenSelectionsTextures": [
+   "Z20\\tex\\H_co.paa",
+   "Z20\\tex\\H2_co.paa",
+   "Z20\\tex\\H3_co.paa",
+   "Z20\\tex\\I_co.paa",
+   "Z20\\tex\\R_co.paa",
+   "Z20\\tex\\O_co.paa"
+  ],
+  "parent": "Z20_base",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "0",
+  "textureSources": {
+   "Black": [
+    "Z20\\tex\\H_co.paa",
+    "Z20\\tex\\H2_co.paa",
+    "Z20\\tex\\H3_co.paa",
+    "Z20\\tex\\I_co.paa",
+    "Z20\\tex\\R_co.paa",
+    "Z20\\tex\\O_co.paa"
+   ]
+  },
+  "vehicleClass": "Air",
+  "vehicleClass_guessed": true
+ },
+ "Z8L": {
+  "author": "[CN]Lurker1011",
+  "crew": "O_T_Helipilot_F",
+  "displayName": "Z8L",
+  "editorSubcategory": "EdSubcat_Helicopters",
+  "faction": "PLA_Armored_Force",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5"
+  ],
+  "hiddenSelectionsTextures": [
+   "Z8L\\tex\\H_co.paa",
+   "Z8L\\tex\\D_co.paa",
+   "Z8L\\tex\\R_co.paa",
+   "Z8L\\tex\\R2_co.paa",
+   "Z8L\\tex\\I_co.paa"
+  ],
+  "parent": "Z8L_base_F",
+  "scope": "2",
+  "side": "0",
+  "textureList": [
+   "Black"
+  ],
+  "textureSources": {
+   "Black": [
+    "Z8L\\tex\\H_co.paa",
+    "Z8L\\tex\\D_co.paa",
+    "Z8L\\tex\\R_co.paa",
+    "Z8L\\tex\\R2_co.paa",
+    "Z8L\\tex\\I_co.paa"
+   ]
+  },
+  "vehicleClass": "Air",
+  "vehicleClass_guessed": true
+ }
+}

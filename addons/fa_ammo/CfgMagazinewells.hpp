@@ -590,6 +590,23 @@ class CfgMagazinewells {
             "FA_30Rnd_65_EPR_Black_T_Orange",
             "FA_b_30Rnd_65_EPR_Black_T_IR",
             "FA_30Rnd_65_EPR_Black_T_IR",
+            // 6.5 EPR khaki (NATO Pacific MX) - an MX magazine, it was only ever listed under the Katiba
+            "FA_b_30Rnd_65_EPR_Khaki",
+            "FA_30Rnd_65_EPR_Khaki",
+            "FA_b_30Rnd_65_EPR_Khaki_T_Red",
+            "FA_30Rnd_65_EPR_Khaki_T_Red",
+            "FA_b_30Rnd_65_EPR_Khaki_T_Yellow",
+            "FA_30Rnd_65_EPR_Khaki_T_Yellow",
+            "FA_b_30Rnd_65_EPR_Khaki_T_Green",
+            "FA_30Rnd_65_EPR_Khaki_T_Green",
+            "FA_b_30Rnd_65_EPR_Khaki_T_White",
+            "FA_30Rnd_65_EPR_Khaki_T_White",
+            "FA_b_30Rnd_65_EPR_Khaki_T_Blue",
+            "FA_30Rnd_65_EPR_Khaki_T_Blue",
+            "FA_b_30Rnd_65_EPR_Khaki_T_Orange",
+            "FA_30Rnd_65_EPR_Khaki_T_Orange",
+            "FA_b_30Rnd_65_EPR_Khaki_T_IR",
+            "FA_30Rnd_65_EPR_Khaki_T_IR",
             // vanilla 100Rnd caseless mag tracers (MX SW)
             "FA_b_100Rnd_65x39_caseless_mag",
             "FA_100Rnd_65x39_caseless_mag",
@@ -1161,6 +1178,23 @@ class CfgMagazinewells {
             "FA_30Rnd_65_EPR_Black_T_Orange",
             "FA_b_30Rnd_65_EPR_Black_T_IR",
             "FA_30Rnd_65_EPR_Black_T_IR",
+            // 6.5 EPR khaki (NATO Pacific MX) - an MX magazine, it was only ever listed under the Katiba
+            "FA_b_30Rnd_65_EPR_Khaki",
+            "FA_30Rnd_65_EPR_Khaki",
+            "FA_b_30Rnd_65_EPR_Khaki_T_Red",
+            "FA_30Rnd_65_EPR_Khaki_T_Red",
+            "FA_b_30Rnd_65_EPR_Khaki_T_Yellow",
+            "FA_30Rnd_65_EPR_Khaki_T_Yellow",
+            "FA_b_30Rnd_65_EPR_Khaki_T_Green",
+            "FA_30Rnd_65_EPR_Khaki_T_Green",
+            "FA_b_30Rnd_65_EPR_Khaki_T_White",
+            "FA_30Rnd_65_EPR_Khaki_T_White",
+            "FA_b_30Rnd_65_EPR_Khaki_T_Blue",
+            "FA_30Rnd_65_EPR_Khaki_T_Blue",
+            "FA_b_30Rnd_65_EPR_Khaki_T_Orange",
+            "FA_30Rnd_65_EPR_Khaki_T_Orange",
+            "FA_b_30Rnd_65_EPR_Khaki_T_IR",
+            "FA_30Rnd_65_EPR_Khaki_T_IR",
             // vanilla 100Rnd caseless mag tracers (MX SW)
             "FA_b_100Rnd_65x39_caseless_mag",
             "FA_100Rnd_65x39_caseless_mag",
@@ -2754,6 +2788,23 @@ class CfgMagazinewells {
     // CBA 7.62x51 HK417 well
     class CBA_762x51_HK417 {
         ADDON[] += {
+            // 7.62 M80A2 20Rnd - the SPAR-17 (HK417 well) takes the same magazine the Mk14/SLR wells already list
+            "FA_b_20Rnd_762_M80A2_HV",
+            "FA_20Rnd_762_M80A2_HV",
+            "FA_b_20Rnd_762_M80A2_HV_T_Red",
+            "FA_20Rnd_762_M80A2_HV_T_Red",
+            "FA_b_20Rnd_762_M80A2_HV_T_Yellow",
+            "FA_20Rnd_762_M80A2_HV_T_Yellow",
+            "FA_b_20Rnd_762_M80A2_HV_T_Green",
+            "FA_20Rnd_762_M80A2_HV_T_Green",
+            "FA_b_20Rnd_762_M80A2_HV_T_White",
+            "FA_20Rnd_762_M80A2_HV_T_White",
+            "FA_b_20Rnd_762_M80A2_HV_T_Blue",
+            "FA_20Rnd_762_M80A2_HV_T_Blue",
+            "FA_b_20Rnd_762_M80A2_HV_T_Orange",
+            "FA_20Rnd_762_M80A2_HV_T_Orange",
+            "FA_b_20Rnd_762_M80A2_HV_T_IR",
+            "FA_20Rnd_762_M80A2_HV_T_IR",
             "FA_b_ACE_20Rnd_762x51_M993_AP",
             "FA_ACE_20Rnd_762x51_M993_AP",
             "FA_b_ACE_20Rnd_762x51_M993_AP_XM751_CTEP",
@@ -2950,6 +3001,29 @@ class CfgMagazinewells {
             "FA_11Rnd_45ACP_Mk421_T_IR"
         };
     };
+    // THE 4-FIVE'S WELL IS PistolHeavy_01_45ACP. hgun_Pistol_heavy_01_F declares that one and
+    // nothing else (CBA patches it with no CBA_ well), so a FourFive_45ACP entry alone
+    // leaves the pistol unable to load the Mk421 - every faction sidearm that carried it was dead.
+    class PistolHeavy_01_45ACP {
+        ADDON[] += {
+            "FA_b_11Rnd_45ACP_Mk421",
+            "FA_11Rnd_45ACP_Mk421",
+            "FA_b_11Rnd_45ACP_Mk421_T_Red",
+            "FA_11Rnd_45ACP_Mk421_T_Red",
+            "FA_b_11Rnd_45ACP_Mk421_T_Yellow",
+            "FA_11Rnd_45ACP_Mk421_T_Yellow",
+            "FA_b_11Rnd_45ACP_Mk421_T_Green",
+            "FA_11Rnd_45ACP_Mk421_T_Green",
+            "FA_b_11Rnd_45ACP_Mk421_T_White",
+            "FA_11Rnd_45ACP_Mk421_T_White",
+            "FA_b_11Rnd_45ACP_Mk421_T_Blue",
+            "FA_11Rnd_45ACP_Mk421_T_Blue",
+            "FA_b_11Rnd_45ACP_Mk421_T_Orange",
+            "FA_11Rnd_45ACP_Mk421_T_Orange",
+            "FA_b_11Rnd_45ACP_Mk421_T_IR",
+            "FA_11Rnd_45ACP_Mk421_T_IR"
+        };
+    };
     // 9.3x64 Cyrus well — CSAT precision rifle
     class Cyrus_93x64 {
         ADDON[] += {
@@ -2969,6 +3043,30 @@ class CfgMagazinewells {
             "FA_10Rnd_93x64_Type40_T_Orange",
             "FA_o_10Rnd_93x64_Type40_T_IR",
             "FA_10Rnd_93x64_Type40_T_IR"
+        };
+    };
+    // 9.3x64 Navid well - THE BASE GAME GIVES THE NAVID NO WELL, only a
+    // magazines[] of one belt, so nothing FA could chamber in it. This well
+    // is ours (CfgWeapons.hpp puts it on the Navid) and gen_fa_tiers fills
+    // it with the tier belts like any other.
+    class FA_Navid_93x64 {
+        ADDON[] += {
+            "FA_o_150Rnd_93x64_Type40",
+            "FA_150Rnd_93x64_Type40",
+            "FA_o_150Rnd_93x64_Type40_T_Red",
+            "FA_150Rnd_93x64_Type40_T_Red",
+            "FA_o_150Rnd_93x64_Type40_T_Yellow",
+            "FA_150Rnd_93x64_Type40_T_Yellow",
+            "FA_o_150Rnd_93x64_Type40_T_Green",
+            "FA_150Rnd_93x64_Type40_T_Green",
+            "FA_o_150Rnd_93x64_Type40_T_White",
+            "FA_150Rnd_93x64_Type40_T_White",
+            "FA_o_150Rnd_93x64_Type40_T_Blue",
+            "FA_150Rnd_93x64_Type40_T_Blue",
+            "FA_o_150Rnd_93x64_Type40_T_Orange",
+            "FA_150Rnd_93x64_Type40_T_Orange",
+            "FA_o_150Rnd_93x64_Type40_T_IR",
+            "FA_150Rnd_93x64_Type40_T_IR"
         };
     };
     // 12.7x108 GM6 Lynx well — .50 anti-materiel

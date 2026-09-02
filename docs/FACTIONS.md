@@ -8,6 +8,74 @@ renamed **ghost_<name>** in 3DEN and Zeus, so a modified faction is one
 glance apart from one we left alone. Factions we are not modifying get no
 addon and no config at all - they stay exactly as their own mod ships them.
 
+**Aegis and Atlas left the load order on 2026-08-27.** The built factions
+(`addons/faction_*`) no longer inherit from, crew with, or paint with anything
+from either mod - `tools/gen_us_factions.py` (`DROP_MODS`) filters them at
+build time and `tools/strip_faction_mods.py` applied the same rule to what was
+already generated. `ghost_HIMF`, built from `Atlas_BLU_H_F`, had no men left
+and was rebuilt on base-game parents by `tools/gen_himf.py` (NATO Pacific
+bodies, Tanoan identities, vehicles matched by job, the same twenty groups;
+kit table pending the HIMF gear). The Atlas-sourced rows still in the plan
+below (Bundeswehr, ADF, Legionnaires, Karzeghistan, Marar) were never built
+and cannot be now.
+
+**What is actually built as of 2026-08-27** - `tools/gen_us_factions.py` from
+the 2026-08-27 ORBAT dump (`tools/dump_orbat.sqf`), plus `tools/gen_himf.py`:
+
+**Drones on the squads (2026-08-28, `SQUAD_DRONES`)** - every infantry, motorised
+and mechanised squad of every faction carries a *Drone Operator* (the faction's
+rifleman with the tier's recon bag; east and independents also carry SwitchBlade
+tube items for Drongo's Drone Tweaks) and the squad's grenadier carries the second
+drone. Every bag is a child of the source's that assembles the faction's OWN
+drone class. East t3-4: Darter + AL-6 medical + a SwitchBlade Operator (300/600
+tubes) in every squad; west t3: Darter +
+IDAP demining Pelican; independents t2: Darter + AL-6 + tubes; irregulars t1:
+UAV_02 quad + IED quad (+ a 300 tube for the Insurgents); Syndikat t0: UAV_02 quad on
+the operator, an IED Quad Operator and the IED Pelican Operator in every squad. No
+T-shirts or tank tops on anyone. HIMF (t2 west): Darter operator in every rifle squad, Pelican on the
+grenadier. Table: `docs/weapon_pools_2040.md`, *Drone backpacks*.
+
+**Editor categories (2026-08-28).** Every generated man files under one of
+three 3DEN subcategories: **Men**, **Men (Special Forces)**, **Men (Story)**.
+A man a source keeps in any other subcategory is a *duplicate* when a man in
+plain Men has the same display name (CSAT's urban-camo and African copies,
+RF's QRF men) - he is dropped and the twin takes his group slots; otherwise he
+is unique and moves to Men (E22's Marines and Navy, the Syndikat's bandits and
+paramilitaries...). The mods' recon sets (E22 Recon/Spetsnaz/Marines Recon,
+EF Recon) and the Vipers go to Men (Special Forces); the VR entities go.
+`SUBCAT_KEEP / SUBCAT_SF / SUBCAT_OUT` in the generator.
+
+**Suppressors (2026-08-28, "peer factions get silencers").** Per the attachments
+rule in `docs/weapon_pools_2040.md`, a faction at tier 3 or 4 gets a suppressed
+preset of every primary its men carry that links no muzzle item, and at tier 4
+the sidearms too (`SUPPRESS_TIER`, `SUPPRESS_PISTOL_TIER`). The can comes from
+the weapon's own MuzzleSlot as the ORBAT dump logs it (CBA Joint Rails decides
+what fits), colour-matched per faction (`SUPPRESS_PREFER`), thermal-insulated
+first at t4; the presets are children of the weapon with the can as a
+LinkedItem, written to the addon's `CfgWeapons.hpp` - no script. **This needs a
+dump made with the 2026-08-28 `tools/dump_orbat.sqf`** (it logs `WEAPON` lines
+now); an older dump builds without suppressors and says so.
+
+**Removed 2026-08-29 (late), backed up under `backup/factions_removed_2026-08-29/`:**
+CSAT Iran (both), Insurgents, AAF, LDF, FIA (both), PLA (both) - the Gendarmerie
+went too and was restored from the backup on 2026-08-30 -
+the user's call: only the US (Army JTF, Marines, MFRC), HIMF, Syndikat and the
+Gendarmerie stay. Their `TARGETS` lines in `tools/gen_us_factions.py` are commented out,
+not deleted. The Roomba mission's ALiVE OPFOR moved from `ghost_PLA_wdl` to
+the base game's `OPF_F`.
+
+| 3DEN / Zeus name | Faction class | From | Units | Tier | Note |
+|---|---|---|---:|:---:|---|
+| **2040 US Army JTF (Woodland)** | `ghost_US_JTF_wdl` | `BLU_W_F` (+ Aegis in the load order) | 155 | 3 | the base game's woodland NATO roster since 2026-08-29 (E22 left the preset); JCA rounds; armour = QAV M3A1-A3 Knights + QAV Marshalls only (no M3E1); NATO aircraft (Little Birds, Ghost Hawks, Hurons, A-10D, Black Wasp) in place of E22's air arm; NATO artillery (Sholef, Seara, RF RSG60 + AMOS); tropic AMV-7 Marshall + WS ATGM Marshall (named Marshall, not Badger); V-44 X Blackfish x3; the five NATO transports (Ghost Hawk, Stub Wings, Unarmed; Huron, Unarmed) painted for the theatre; Polaris DAGOR (Prowler) armed/unarmed/AT in place of E22's Mantis; EF M-ATV LAAD/AT/FSV (NATO tropic or WS desert scheme); E22's Hunters named M-ATV; **no Striders** (E22's M-ATVs take their group slots); NATO XM312/XM307 (+ high, autonomous), Mk6, Patriot + AN/MPQ-105, E22 JC NASAMS/Skynex/Sentinel (green or tan), JK 76n6 Clam Shell; GX vehicle drones, Ripsaw, IDAP Pelican; boats crewed by JTF Naval Infantry; no Blackfoot (EU's) |
+| **2040 US Army JTF (Desert)** | `ghost_US_JTF_des` | `BLU_NATO_lxWS` | 155 | 3 | as above |
+| **2040 US Army JTF (Tropical)** | `ghost_US_JTF_tna` | `BLU_T_F` | 150 | 3 | the woodland roster in the base game's NATO Pacific kit (tropic fatigues, tna plate carriers and helmets); GREEN vehicles: NATO Pacific Scorcher/Sandstorm, QAV Pacific Knight + olive Marshalls, tropic-painted Ghost Hawks, green Hurons, olive Pacific Prowlers, green Honeybadger (Little Birds, A-10, Black Wasp have no green scheme) |
+| **2040 US Army JTF (OCP)** | `ghost_US_JTF_ocp` | `BLU_NATO_lxWS` | 155 | 3 | the desert roster in the repo's OCP retextures (`ghost_uniform` fatigues, `ghost_vests` plate carriers, `ghost_headware` FAST-MT / booniehat) |
+| ~~2040 US / US (Pacific) / US (Woodland) / US (Desert) / US Army JTF (Naval)~~ | `faction_us*`, `faction_us_jtf_nav` | base game, `E22_BLU_JTF_N_F` | - | - | **deleted 2026-08-27** - the base-game US rows were replaced by the JTF; E22's Naval JTF has no groups (its Alpine JTF has no units) |
+| **2040 Marine (Desert)** | `ghost_Marine_des` | `EF_B_MJTF_Des` | 99 | 3 | JK 76n6 Clam Shell |
+| **2040 Marine (Woodland)** | `ghost_Marine_wdl` | `EF_B_MJTF_Wdl` | 99 | 3 | JK 76n6 Clam Shell |
+| **2040 HIMF** | `ghost_HIMF` | Atlas's own HIMF (`Atlas_B_H_*`, linked) + RF Ram 1500s | 72 | 2 | every man inherits Atlas's HIMF (uniform, vest, helmet, M16A4 / XMS commandos, packs) since 2026-08-29, with the FA t2 round; no APC beyond EF's two Gyras (Atlas's Otokar ARMAs removed 2026-08-30); AR/heavy gunner/marksman still on the MX family; all 11 RF Ram 1500 variants in RF's Jungle paint, armour kit hidden - and they ARE the transport: no HEMTTs, no M-ATV (2026-08-28), the motorised groups ride covered Ram 1500s; Speedboat Minigun; **the only planes are the EMB 312 mod's AT-27M35 Tucano (grey) and Atlas's HIMF Caesar BTT** (`Plane_Civil_01_HIMF_F`) - no Black Wasp, no Blackfish, and the EUDF Gripen went with EUDF35; **helicopters are only** the MH-9 / AH-9, RF's WY-55 Hellcat and Atlas's own HIMF EC-04 / EC-03 (the EUDF Wildcats went with EUDF35) - no Ghost Hawk, Huron or Blackfoot (2026-08-29); the old HIMF's olive vests (ranger-green carriers, olive rigs, EOD) and olive PASGT / HBK helmets on base-game classes |
+| **2040 Syndikat** | `ghost_Syndikat` | `IND_C_F` | 38 | 0 | UAV_02 quad + IED quad + IED Pelican, all three in every squad; no aircraft and no artillery (the MRL pickup is out) at tier 0; 7 motorised groups of its own (Jeep LMG/SPG-9, HMG technicals, truck/van combat groups - `EXTRA_GROUPS`) beside IND_C_F's six foot groups |
+
 ## WEST - modified (28)
 
 | 3DEN / Zeus name | Faction class | Units | Tier | Str | Shape | Flavor | Note |
@@ -30,7 +98,6 @@ addon and no config at all - they stay exactly as their own mod ships them.
 | **ghost_ADF (Arid)** | `Atlas_BLU_A_ard_F` | 84 | 2 | 3 | balanced | west | ADF arid |
 | **ghost_ADF (Pacific)** | `Atlas_BLU_A_trp_F` | 84 | 2 | 3 | balanced | west | ADF pacific |
 | **ghost_Legionnaires** | `Atlas_BLU_L_F` | 75 | 2 | 2 | elite | west | Legionnaires - small and professional |
-| **ghost_HIMF** | `Atlas_BLU_H_F` | 61 | 2 | 3 | balanced | west | HIMF - near-peer |
 | **ghost_ION Services** | `BLU_ION_lxWS` | 51 | 2 | 2 | elite | west | ION - PMC, bought kit, small |
 | **ghost_QAV** | `QAV_vehicles` | 6 | 2 | 1 | balanced | west | QAV - a vehicle pack, not a force; kit lives on whoever crews it |
 | **ghost_Karzeghistan** | `Atlas_BLU_K_F` | 60 | 1 | 3 | balanced | west | Karzeghistan - funded, last-gen service rifles |

@@ -66,7 +66,10 @@ INFO_3("ambient kamikaze up for %1: every %2-%3s",_side,_intMin,_intMax);
 
     if (isNull _logic) exitWith { [_handle] call CBA_fnc_removePerFrameHandler };
     if (CBA_missionTime < (_cfg get "nextAt")) exitWith {};
-    _cfg set ["nextAt", CBA_missionTime + (_cfg get "intMin") + random ((_cfg get "intMax") - (_cfg get "intMin"))];
+    // THE RETRY, NOT THE INTERVAL, WHEN THERE IS NOTHING TO HIT - see
+    // AMB_RETRY. Rolling the next fire time here and then finding no target
+    // burnt the whole wait on a tick that did nothing.
+    _cfg set ["nextAt", CBA_missionTime + AMB_RETRY];
 
     // WHOSE DRONES, decided on the first run rather than at module time -
     // neither ALiVE nor common's postInit exists when a module function
@@ -96,6 +99,9 @@ INFO_3("ambient kamikaze up for %1: every %2-%3s",_side,_intMin,_intMax);
 
     private _at = [_cfg get "markers", _cfg get "bandMin", _cfg get "bandMax", "ambient kamikaze"] call FUNC(pickBuilding);
     if (_at isEqualTo []) exitWith {};
+
+    // A target was found, so the real interval starts now.
+    _cfg set ["nextAt", CBA_missionTime + (_cfg get "intMin") + random ((_cfg get "intMax") - (_cfg get "intMin"))];
 
     [_at, selectRandom (_cfg get "drones"), _cfg get "speed", _cfg get "markers"] call FUNC(kamikazeRun);
 }, AMB_TICK, [_logic, _cfg]] call CBA_fnc_addPerFrameHandler;

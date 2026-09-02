@@ -82,7 +82,7 @@ if (GVAR(respectZones)) then {
         // Only a zone this panel is over, and only one it is above: a panel
         // already sitting inside a zone is the player's business - see
         // FUNC(place) - and shrinking it to nothing would not get it out.
-        if (_left >= _zRight || {_right <= _zLeft} || {_zTop <= _y}) then {continue};
+        if (_left >= _zRight || _right <= _zLeft || _zTop <= _y) then {continue};
 
         _bottom = _bottom min _zTop;
     } forEach [ZONE_CHAT, ZONE_LEGEND];

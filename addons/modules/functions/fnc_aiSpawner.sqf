@@ -18,7 +18,7 @@ _wp1 setWaypointType "MOVE";
 // the bridge runs it when the profiles actually die. Hunt/SAD behaviour is
 // forfeit for an adopted wave - it is OPCOM's to command, which is the point.
 private _adopt = [false];
-private _next = if (_waves == -1 || {_waves > 1}) then {
+private _next = if (_waves == -1 || _waves > 1) then {
     [QFUNC(aiSpawner), [_side, _groupConfig, _spawnPos, _moveMarker,
         [_waves - 1, -1] select (_waves == -1), _con, _huntTrigger, _sadTrigger]]
 } else {[]};

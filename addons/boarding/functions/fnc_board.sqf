@@ -49,7 +49,7 @@ private _who = (allPlayers - entities "HeadlessClient_F") select {
     alive _x
     && {isNull objectParent _x}
     && {(_at distance2D _x) <= _range}
-    && {!(_skipPresser && {_x isEqualTo _presser})}
+    && {!(_skipPresser && _x isEqualTo _presser)}
     && {!_sideOnly || {isNull _presser} || {side group _x isEqualTo side group _presser}}
 };
 

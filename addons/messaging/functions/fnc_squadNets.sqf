@@ -29,7 +29,7 @@ if (!isNil QGVAR(squadNetsCache)) exitWith {+GVAR(squadNetsCache)};
 private _cfg = missionConfigFile >> "Dynamic_Groups" >> "group_setup";
 
 private _names = if (isArray _cfg) then {
-    (getArray _cfg) apply {_x param [0, ""]} select {_x isEqualType "" && {_x isNotEqualTo ""}}
+    (getArray _cfg) apply {_x param [0, ""]} select {_x isEqualType "" && _x isNotEqualTo ""}
 } else {
     []
 };

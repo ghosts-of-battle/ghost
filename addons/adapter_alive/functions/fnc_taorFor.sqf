@@ -100,7 +100,7 @@ private _byFaction = createHashMap;
     if (_inst isEqualTo []) then {continue};
 
     {
-        if (_x isEqualType "" && {_x isNotEqualTo ""}) then {_byFaction set [toLower _x, _cside]};
+        if (_x isEqualType "" && _x isNotEqualTo "") then {_byFaction set [toLower _x, _cside]};
     } forEach ([_inst, "factions", []] call ALiVE_fnc_hashGet);
 } forEach _cmds;
 

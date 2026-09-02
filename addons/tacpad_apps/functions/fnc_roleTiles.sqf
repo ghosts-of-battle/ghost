@@ -72,7 +72,7 @@ private _out = [];
 
 {
     _x params [["_name", ""], ["_flag", "true"]];
-    if (!(_name isEqualType "") || {_name isEqualTo ""}) then {continue};
+    if (!(_name isEqualType "") || _name isEqualTo "") then {continue};
 
     // The flag is a string in the role configs ("true"), because that is how
     // traits, customVariables and nets[] are written there; a real boolean is
@@ -80,7 +80,7 @@ private _out = [];
     private _on = if (_flag isEqualType "") then {
         (toLower trim _flag) in ["true", "1", "yes"]
     } else {
-        _flag isEqualTo true || {_flag isEqualTo 1}
+        _flag isEqualTo true || _flag isEqualTo 1
     };
 
     if (_on) then {_out pushBackUnique (toLower _name)};

@@ -277,3 +277,40 @@ server in VS Code, not by anything on this side.
 ---
 
 (Add new findings below.)
+
+---
+
+## FIXED 2026-08-27 - the mod opened five icons out of the MISSION
+
+    addons/init/fnc_staging.sqf, mission/fnc_addHaloJump.sqf,
+    mission/fnc_addLineJump.sqf, vehicle/fnc_addRegearAction.sqf,
+    vehicle/fnc_addStagingActions.sqf, logistics/fnc_doFieldHospital.sqf
+
+Six call sites named `data\icon\...` - a path relative to whatever mission
+happens to be running. Every mission therefore had to carry ghosticon,
+icon_arsenal_ca, Teleport_Pos_64x64, icon_02 and its own copy of logo_256 in
+data\icon, and nothing checked: a mission without them got blank ACE menu
+icons and a "Cannot load texture" per icon per player. The four icons now live
+in addons/media/images/Icons and the logo is the media addon's own
+(media/images/logo_256.paa was already byte-identical to the mission copy).
+The Roomba mission's copies are deleted.
+
+---
+
+## FIXED 2026-08-27 - 23 forced settings under a prefix that no longer exists
+
+    addons/cba_settings/cba_settings.sqf lines 788-810
+
+`force YMF_Settings_addEarplugs = true;` and 22 more. Since the rename the
+settings are declared as EGVAR(Settings,...) = ghost_Settings_* and
+patrol_base's as ghost_patrol_base_*, so every one of these lines forced a
+variable nothing reads and the addon defaults applied instead. Renamed to the
+live names; YMF_Settings_patrolBaseZoneSize dropped (no such setting exists).
+
+Two of the dead values disagreed with their addon defaults -
+enableVehicleRadios (file true, default false) and patrol_base kitRange (file
+3, default 5). Reviving a line that never worked must not change a server's
+behaviour on its own, so both are written at the DEFAULT with a comment
+saying what the old line wanted. Flip them on purpose if that is still the
+intent.
+

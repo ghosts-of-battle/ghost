@@ -20,7 +20,7 @@ if (!isServer) exitWith {};
 if (!isNil{_vehicle getVariable QEGVAR(VehicleFunc,DefaultPylon)}) exitWith {SHOW_WARNING_2("VehicleDefaultLoadout","Vehicle loadouts already applied for %1. [%2].",_vehicle,typeOf _vehicle);};
 if (!(_vehicle call EFUNC(systems,isValidFaction))) exitWith {};
 
-INFO_2("VehicleDefaultLoadout","Applying vehicle loadout to %1 [%2].",_vehicle,typeOf _vehicle);
+TRACE_INFO_2("VehicleDefaultLoadout","Applying vehicle loadout to %1 [%2].",_vehicle,typeOf _vehicle);
 
 // Default pylon applied
 private _pylon = [];
@@ -28,7 +28,7 @@ private _pylon = [];
 {
     if (_vehicle isKindOf _x) exitWith {
         _pylon = [_x, "default"] call EFUNC(vehicle,getPylonLoadout);
-        INFO_3("VehicleDefaultLoadout","Vehicle %1 [%2] applied have loadout %3.",_vehicle,typeOf _vehicle,_pylon);
+        TRACE_INFO_3("VehicleDefaultLoadout","Vehicle %1 [%2] applied have loadout %3.",_vehicle,typeOf _vehicle,_pylon);
         [_vehicle, "default", _pylon] call EFUNC(vehicle,applyLoadout);
     };
 } forEach (keys EGVAR(init,PYLONS));

@@ -57,7 +57,7 @@ ADDONS = os.path.join(ROOT, "addons")
 # whole point of the sweep.
 VANILLA_VEHICLE_CLASSES = {
     "Items", "ItemsHeadgear", "ItemsUniform", "ItemsVest", "Modules", "Static",
-    "WeaponAccessories", "Autonomous", "Air", "Car", "Men", "Ship", "Support",
+    "WeaponAccessories", "Autonomous", "Air", "Car", "Men", "MenRecon", "Ship", "Support",
 }
 
 # name -> why it legitimately has no ghost reader

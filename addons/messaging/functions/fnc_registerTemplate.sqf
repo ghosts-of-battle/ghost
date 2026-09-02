@@ -39,7 +39,7 @@ params [
     ["_options", [], [[]]]
 ];
 
-if (_id == "" || {_title == ""}) exitWith {
+if (_id == "" || _title == "") exitWith {
     ERROR_1("template rejected - id and title are both required (id '%1')",_id);
     ""
 };

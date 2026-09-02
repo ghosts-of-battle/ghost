@@ -11,5 +11,6 @@ ADDON = false;
 // read it before it existed, and postInit then set it back to false AFTER the
 // module had armed the system.
 GVAR(moduleUp) = false;
+GVAR(sideMax) = createHashMap;
 
 ADDON = true;

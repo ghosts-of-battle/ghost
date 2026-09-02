@@ -38,7 +38,8 @@ if (_session getOrDefault ["running", false]) then {
     // zero for ever while everything else on the screen looks correct.
     private _dt = _now - (_session getOrDefault ["last", _now]);
     private _duration = _session getOrDefault ["time", 60];
-    if (!(_duration isEqualType 0) || {_duration <= 0}) then {_duration = 60};
+    if (!(_duration isEqualType 0)) then {_duration = 0};
+    if (_duration <= 0) then {_duration = 60};
 
     _session set ["last", _now];
 

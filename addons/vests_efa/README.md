@@ -15,12 +15,4 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-147 weapon/item classes, 1 function.
-
-## Functions
-
-<details><summary>1</summary>
-
-- `ghost_vests_efa_fnc_empty`
-
-</details>
+147 weapon/item classes.

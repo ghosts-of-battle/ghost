@@ -35,7 +35,7 @@
 
 params [["_pos", [], [[]]], ["_sideStr", "", [""]], ["_by", 0, [0]]];
 
-if (_pos isEqualTo [] || {_sideStr isEqualTo ""} || {_by <= 0}) exitWith {-1};
+if (_pos isEqualTo [] || _sideStr isEqualTo "" || _by <= 0) exitWith {-1};
 if (isNil "ALiVE_fnc_hashGet" || {isNil "ALiVE_fnc_hashSet"}) exitWith {-1};
 
 private _hash = missionNamespace getVariable "ALIVE_clustersCivSettlement";

@@ -9,6 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             "ghost_main",
             "A3_Weapons_F",
+            "A3_Weapons_F_Machineguns_M200",
             "A3_Weapons_F_Mark_Machineguns_M200"
         };
         authorUrl = "https://www.ghostsofbattle.com/";

@@ -1197,6 +1197,16 @@ class GVAR(console) {
             w = "0.135 * safezoneW";
             h = "0.028 * safezoneH";
         };
+        // BLOOD TYPE (user, 2026-08-28) - dealt once per player by
+        // ghost_common_fnc_bloodType, or whatever the mission set on the unit.
+        class PLAYER_MEDICAL_BLOOD: RscADMPStructuredText {
+            idc = IDC_ADMINPANEL_PLAYER_MEDICAL_BLOOD;
+            text = "BLOOD TYPE";
+            x = "0.853 * safezoneW + safezoneX";
+            y = "0.832 * safezoneH + safezoneY";
+            w = "0.135 * safezoneW";
+            h = "0.028 * safezoneH";
+        };
 
         class PLAYER_MEDICAL_WAKEUP: RscADMPButton {
             idc = IDC_ADMINPANEL_PLAYER_MEDICAL_WAKEUP;

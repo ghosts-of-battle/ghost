@@ -85,6 +85,10 @@ class CfgWeapons {
             mass = 12;
         };
     };
+    // MOPP IS OUT (2026-08-31): the crate left the mission's logistics table
+    // and the Zeus supply-crate module, and fnc_canUnpackmopp /
+    // fnc_doUnpackmopp went with it. Putting this back needs both of them
+    // again - build 0.1.0.933's PBO is the last copy that carries them.
     // class GVAR(mopp): ACE_ItemCore {
     //     scope = 2;
     //     author = QAUTHOR;

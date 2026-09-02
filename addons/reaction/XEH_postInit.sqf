@@ -36,3 +36,38 @@ GVAR(majors) = createHashMap;
     diag_log text format ["[ghost_reaction] %1", _txt];
     [format ["REACTION: %1", _txt]] remoteExec ["systemChat", 0];
 }] call CBA_fnc_addEventHandler;
+
+// "THE ENEMY HAS YOUR POSITION." The enemy commander files spot reports on
+// the players like on anyone else, and the adapter reads them back off the
+// COP (ghost_adapter_alive_fnc_enemyKnowledge). When a report lands within
+// REACT_SPOTTED_RANGE of a player, that player's group is told once, then
+// left alone for REACT_SPOTTED_COOLDOWN - the point is the warning, not a
+// ticker. Server-side, so one read serves everyone.
+if (isServer) then {
+    GVAR(spottedUntil) = createHashMap;
+    [{
+        if (isNil "ghost_adapter_alive_fnc_enemyKnowledge") exitWith {};
+        private _bySide = createHashMap;
+        {
+            private _grp = group _x;
+            if (isNull _grp || {!alive _x}) then {continue};
+            private _side = side _grp;
+            if (isNil {_bySide get (str _side)}) then {
+                _bySide set [str _side, [_side] call ghost_adapter_alive_fnc_enemyKnowledge];
+            };
+            private _known = _bySide get (str _side);
+            if (_known isEqualTo []) then {continue};
+            private _gid = str _grp;
+            if (CBA_missionTime < (GVAR(spottedUntil) getOrDefault [_gid, -1])) then {continue};
+            private _at = getPosATL _x;
+            private _hit = _known findIf {(_x select 0) distance2D _at <= REACT_SPOTTED_RANGE};
+            if (_hit < 0) then {continue};
+            GVAR(spottedUntil) set [_gid, CBA_missionTime + REACT_SPOTTED_COOLDOWN];
+            (_known select _hit) params ["", "", "", "", "_by"];
+            {
+                [QEGVAR(notify,post), ["SPOTTED", format ["%1 has your position.", _by], NOTE_BAD, sideUnknown, getPosATL _x], _x] call CBA_fnc_targetEvent;
+            } forEach (units _grp select {isPlayer _x});
+        } forEach allPlayers;
+    }, REACT_SPOTTED_TICK, []] call CBA_fnc_addPerFrameHandler;
+};
+

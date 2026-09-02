@@ -69,7 +69,7 @@ private _row = _y + _rowH * 1.5;
 // whole mission is a row spent on nothing.
 if (!isNil QEFUNC(tacpad_apps,timerState)) then {
     ([] call EFUNC(tacpad_apps,timerState)) params ["_secs", "_running", "_down", "_expired"];
-    if (_running || {_secs > 0}) then {
+    if (_running || _secs > 0) then {
         [_ctrl, [_pad, _row, _w * 0.42, _rowH], ["STOPWATCH", "COUNTDOWN"] select _down, _mute, (0.62 * _k), true, "left", true] call EFUNC(tacpad,drawText);
         [
             _ctrl, [_w * 0.42, _row, _w * 0.58 - _pad, _rowH],

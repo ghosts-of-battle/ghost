@@ -16,8 +16,11 @@
 
 if (!isServer) exitWith {};
 
+// QUEUED, not placed - the spawner drains a few sites a frame now, and it
+// logs its own final count when the queue empties. Saying "up" here would
+// have been a lie the moment the placing went asynchronous.
 private _n = [] call FUNC(spawnObjectiveJammers);
-INFO_1("%1 objective jammer(s) up",_n);
+INFO_1("%1 objective jammer site(s) queued",_n);
 
 // A zone dies with its emitter - destroyed OR hacked, either one.
 [{

@@ -82,6 +82,38 @@ if (!isNil "ghost_adapter_alive_fnc_artyTargets") then {
     } forEach ([sideUnknown] call ghost_adapter_alive_fnc_artyTargets);
 };
 
+// ALiVE's radars, beside the coastal ones above: the eyes of every network.
+if (!isNil "ghost_adapter_alive_fnc_radars") then {
+    {
+        _x params ["_id", "_at", "_rSide"];
+        if (_rSide getFriend _side < 0.6) then {
+            _pool pushBack [_id, _at, "radar", "conv"];
+        };
+    } forEach (call ghost_adapter_alive_fnc_radars);
+};
+
+// THE REAR. A camp is hostile by who garrisons it now; an empty one has no
+// side and is not pointed at. A hub is hostile by the faction LOGCOM runs it
+// for. Both are the conventional war's - the asymmetric chain has its own
+// rear, the installations and safe houses below.
+if (!isNil "ghost_adapter_alive_fnc_camps") then {
+    {
+        _x params ["_id", "_at", "", "_cSide"];
+        if (_cSide isNotEqualTo sideUnknown && {_cSide getFriend _side < 0.6}) then {
+            _pool pushBack [_id, _at, "camp", "conv"];
+        };
+    } forEach (call ghost_adapter_alive_fnc_camps);
+};
+
+if (!isNil "ghost_adapter_alive_fnc_logisticsHubs") then {
+    {
+        _x params ["_id", "_at", "_hSide"];
+        if (_hSide getFriend _side < 0.6) then {
+            _pool pushBack [_id, _at, "logistics hub", "conv"];
+        };
+    } forEach (call ghost_adapter_alive_fnc_logisticsHubs);
+};
+
 {
     if (!isNull _x && {alive _x}
         && {(_x getVariable [QEGVAR(uas,cacheSide), sideUnknown]) getFriend _side < 0.6}) then {
@@ -164,6 +196,16 @@ private _centre = _at vectorAdd [sin _bearing * _throw, cos _bearing * _throw, 0
 _hinted pushBack _id;
 missionNamespace setVariable [QGVAR(hintedIds), _hinted];
 missionNamespace setVariable [QGVAR(hintTier), _tier + 1];
+// The walk survives a restart with ALiVE's war state - see XEH_postInit.
+if (!isNil "ghost_adapter_alive_fnc_setData") then {
+    [QGVAR(hintedIds), _hinted] call ghost_adapter_alive_fnc_setData;
+    [QGVAR(hintTier), _tier + 1] call ghost_adapter_alive_fnc_setData;
+};
+// Into the friendly G2 as well - see FUNC(ladderCircle). The hint pool
+// carries no side; the adapter files it against the hostile commander.
+if (!isNil "ghost_adapter_alive_fnc_reportIntel") then {
+    [_side, sideUnknown, _id, _centre, _type] call ghost_adapter_alive_fnc_reportIntel;
+};
 
 [QGVAR(product), ["circle",
     format [QGVAR(hint_%1), _id],

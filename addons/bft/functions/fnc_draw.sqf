@@ -38,6 +38,27 @@ private _godView = GVAR(adminGodView) && GVAR(adminView) && {[ACE_player] call F
 private _myCodes = (_playerGroup getVariable [QGVAR(decryptCodes), []]) +
     (_playerGroup getVariable [QGVAR(encryptCodes), [str _playerSide]]);
 
+// DATA DENIAL TAKES THE OTHER GROUPS OFF THE MAP (user, 2026-08-31). A tracker
+// is a data product: it arrives over the same link TAC//MSG uses, so a hub that
+// denies that link has to take the picture with it, or jamming reads as "the
+// messages stopped" and nothing else.
+//
+// ONE DEFINITION OF DENIED, not a second copy of the band. The state comes from
+// EFUNC(messaging,linkState), which already answers "what is the data link doing
+// where I am standing" off the jamming registry's own field strength - so the
+// handset saying DENIED and the map going empty are the same fact, and neither
+// can drift from the other. No messaging addon, or no jamming: the link is up.
+//
+// YOUR OWN GROUP IS NOT DENIED. Self location is local - your men know where
+// they are without asking anyone - so the member marks below survive, and the
+// only thing that goes is everybody you were reading over the net. That is the
+// whole point of the effect: you can still see yourself, you have just lost
+// everyone else. An admin in god view keeps the full picture.
+private _dataDenied = false;
+if (!_godView && {!isNil "ghost_messaging_fnc_linkState"}) then {
+    _dataDenied = (([] call ghost_messaging_fnc_linkState) param [0, 0]) >= 2;
+};
+
 private _index = 0;
 private _memberGroups = [];
 
@@ -54,11 +75,24 @@ private _memberGroups = [];
     // unset now keeps it whatever an old profile still carries.
     if (!_godView && {!(_group getVariable [QGVAR(visible), GVAR(autoEnable) > 0])}) then {continue};
 
-    if (!_godView && {_group isNotEqualTo _playerGroup}) then {
+    if (!_godView && _group isNotEqualTo _playerGroup) then {
+        // The link is down: nothing arrives from off your own group. Checked
+        // before the code test because a denied link does not care whose net
+        // it was - see _dataDenied above.
+        if (_dataDenied) then {continue};
+
         // Not our own group: we need a code in common with what they transmit.
         private _theirCodes = _group getVariable [QGVAR(encryptCodes), [str side _group]];
         if ((_myCodes arrayIntersect _theirCodes) isEqualTo []) then {continue};
     };
+
+    // YOUR OWN GROUP'S MARKER IS NOISE ON YOUR OWN MAP. It sits on top of you,
+    // big enough to hide the ground you are actually reading, and it tells you
+    // nothing you do not already know. This is the VIEWER'S draw, not the
+    // group's transmit: everyone else on the net still gets your marker, and
+    // your own men still get their member marks further down. An admin in god
+    // view keeps it - that picture is meant to be complete.
+    if (!_godView && GVAR(hideOwnGroup) && _group isEqualTo _playerGroup) then {continue};
 
     private _markerPos = [_group] call FUNC(getGroupPosition);
     private _markerShape = [_group] call FUNC(getGroupMarkerShape);
@@ -157,3 +191,41 @@ for "_i" from _index to (_prev - 1) do {
     deleteMarkerLocal format ["%1_%2", QGVAR(marker), _i];
 };
 missionNamespace setVariable [QGVAR(lastMarkerCount), _index];
+
+// ---------------------------------------------------------- virtual -----
+// THE FRIENDLIES THAT ARE NOT GROUPS. ALiVE simulates most of a side's
+// forces without spawning them; those are no group this pass can walk, but
+// the commander's COP knows where they are and says so to their own side.
+// Drawn faded, unnamed, from that picture - a tracker that showed only the
+// spawned quarter of the army was lying by omission.
+private _vIndex = 0;
+if (GVAR(showVirtual) && {!isNil "ghost_adapter_alive_fnc_virtualFriendlies"}) then {
+    private _prefix = switch (_playerSide) do {
+        case west: {"b"};
+        case east: {"o"};
+        case independent: {"n"};
+        default {"n"};
+    };
+    private _types = createHashMapFromArray [
+        ["infantry", "inf"], ["motor", "motor_inf"], ["mech", "mech_inf"],
+        ["armor", "armor"], ["art", "art"], ["aa", "air"], ["at", "inf"], ["air", "plane"]
+    ];
+    {
+        _x params ["_at", "_type", "_count"];
+        private _name = format ["%1_%2", QGVAR(vmarker), _vIndex];
+        _vIndex = _vIndex + 1;
+        deleteMarkerLocal _name;
+        private _m = createMarkerLocal [_name, _at];
+        if (_m isEqualTo "") then {continue};
+        _m setMarkerShapeLocal "ICON";
+        _m setMarkerTypeLocal format ["%1_%2", _prefix, _types getOrDefault [_type, "unknown"]];
+        _m setMarkerColorLocal ([_playerSide, true] call BIS_fnc_sideColor);
+        _m setMarkerAlphaLocal 0.4;
+        _m setMarkerTextLocal "";
+    } forEach ([_playerSide] call ghost_adapter_alive_fnc_virtualFriendlies);
+};
+private _vPrev = missionNamespace getVariable [QGVAR(lastVirtualCount), 0];
+for "_i" from _vIndex to (_vPrev - 1) do {
+    deleteMarkerLocal format ["%1_%2", QGVAR(vmarker), _i];
+};
+missionNamespace setVariable [QGVAR(lastVirtualCount), _vIndex];

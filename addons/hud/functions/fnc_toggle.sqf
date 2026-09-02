@@ -32,7 +32,7 @@ private _next = if (_i isEqualTo _offIndex) then {
     // Back on. Whatever it was showing before, or this slot's own default when
     // it has never been on - a slot that came back empty would look broken.
     private _was = profileNamespace getVariable [_key, [4, 3] select (_slot isEqualTo HUD_SLOT_RIGHT)];
-    if (!(_was isEqualType 0) || {_was isEqualTo _offIndex}) then {_was = 0};
+    if (!(_was isEqualType 0) || _was isEqualTo _offIndex) then {_was = 0};
     _was
 } else {
     profileNamespace setVariable [_key, _i];

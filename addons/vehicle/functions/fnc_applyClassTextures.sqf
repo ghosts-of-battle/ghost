@@ -26,7 +26,7 @@ params [
     ["_donorClass", "", [""]]
 ];
 
-if (isNull _vehicle || {_donorClass isEqualTo ""}) exitWith {false};
+if (isNull _vehicle || _donorClass isEqualTo "") exitWith {false};
 
 if ("%1" in _donorClass) then {
     private _type = toLower typeOf _vehicle;

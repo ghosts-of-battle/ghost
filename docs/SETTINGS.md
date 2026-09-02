@@ -17,6 +17,32 @@ ships with, which a mission or the forced list below can override.
 | Force reload on disembarking AI | CHECKBOX | Ghosts of Battle > Ghosts of Battle - AI Disembark | `false` | Forces AI to play reload animation after disembarking from vehicle. Prevents instant shooting after disembark. |
 | Stay in immobile vehicle chance | SLIDER | Ghosts of Battle > Ghosts of Battle - AI Disembark | `[0, 1, 0, 0, true]` | Chance that AI will be told to stay in immobilized vehicles, applied on vehicle init. |
 
+## APS (`aps`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Active protection | CHECKBOX | Ghosts of Battle > APS | `true` | Master switch. On, vehicles get the protection their faction's tier allows and the HUD's APS tile is live. Off, nothing is registered and every vehicl |
+| Max engagement angle | SLIDER | Ghosts of Battle > APS | `[10, 90, 45, 0]` | Steepest approach the launchers can engage, degrees above the horizon. A top-attack missile diving steeper than this gets through - the counter to har |
+| Max round size (hit) | SLIDER | Ghosts of Battle > APS | `[200, 5000, 2000, 0]` | Rounds whose CfgAmmo hit value is above this are too big to stop - the launchers let them through. |
+| Rearm range (m) | SLIDER | Ghosts of Battle > APS | `[10, 200, 50, 0]` | A vehicle within this of an ammo truck or crate reloads its charges. Reloading the vehicle's own guns reloads them too. |
+| Rearm check (s) | SLIDER | Ghosts of Battle > APS | `[1, 60, 5, 0]` | How often a fitted vehicle looks for a rearm. |
+| Default tier | LIST | Ghosts of Battle > APS | `[[0, 1, 2, 3, 4], ["0 - irregular", "1 -` | The tier of a faction the mod does not know - a third-party mod's, usually. 0-1 nothing, 2 near-peer (basic hard kill on tanks and cannon IFVs), 3 pee |
+| APS panel scope | LIST | Ghosts of Battle > APS | `[[0, 1, 2], ["Own vehicle", "Group's veh` | Which fitted vehicles the map panel lists and lets you switch: only the one you are in, every vehicle your group is crewing, or every crewed vehicle o |
+| Show APS panel | CHECKBOX | Ghosts of Battle > Tacpad | `true` | The APS panel on the map screen: every fitted vehicle you are entitled to see, its charges and its emitter, and the HK HOLD / RF HOLD / BURST switches |
+| Tier overrides | EDITBOX | Ghosts of Battle > APS | `""` | faction:tier pairs, comma separated - 'ghost_AAF:3, OPF_F:4'. The module's own field adds to these. |
+| RF engagement radius (m) | SLIDER | Ghosts of Battle > APS | `[50, 500, 150, 0]` | The burst is a sphere this big. Guided munitions and drones inside it are hit. |
+| RF close floor (m) | SLIDER | Ghosts of Battle > APS | `[10, 200, 60, 0]` | Anything susceptible inside this fires the burst whatever it seems to be doing. Outside it, only a contact closing on the vehicle does - transit traff |
+| RF closing speed (m/s) | SLIDER | Ghosts of Battle > APS | `[0, 100, 15, 0]` | A contact counts as closing when its speed toward the vehicle is above this. |
+| RF cooldown (s) | SLIDER | Ghosts of Battle > APS | `[5, 300, 45, 0]` | The only resource the emitter has. A second attacker inside this window gets a free shot - the counter to the burst is to stagger, not mass. |
+| RF jam radius (m) | SLIDER | Ghosts of Battle > APS | `[10, 300, 75, 0]` | Every radio inside this is jammed by the burst, friend and foe. Kept smaller than the engagement radius - it is the near-field leakage off the emitter |
+| RF jam - dismounts (s) | SLIDER | Ghosts of Battle > APS | `[0, 30, 5, 1]` | How long a player on foot inside the jam radius loses the radio. |
+| RF jam - own crew (s) | SLIDER | Ghosts of Battle > APS | `[0, 30, 2, 1]` | The emitting vehicle's own crew are shielded by the hull: a shorter blackout, never none - it is their cue that the burst fired. |
+| RF emitter damage limit | SLIDER | Ghosts of Battle > APS | `[0.1, 1, 0.3, 2]` | Vehicle damage above this kills the emitter; so does a dead engine or the engine off. |
+| RF: quadcopter / FPV | SLIDER | Ghosts of Battle > APS | `[0, 1, 1, 2]` | Chance the burst drops a small drone in range. |
+| RF: loitering munition | SLIDER | Ghosts of Battle > APS | `[0, 1, 0.9, 2]` | Chance the burst drops a loitering munition - hardened, so a little less. |
+| RF: guided missile | SLIDER | Ghosts of Battle > APS | `[0, 1, 0.6, 2]` | Chance the burst strips guidance from a missile with a modern seeker - hardened seekers resist. |
+| RF: IR / laser guided | SLIDER | Ghosts of Battle > APS | `[0, 1, 0.8, 2]` | Chance the burst upsets an IR or laser seeker. This is the dazzler's job, done properly - the seeker loses the track rather than merely veering. |
+
 ## Back To Game (`back_to_game`)
 
 | Setting | Type | Category | Default | What it does |
@@ -33,6 +59,8 @@ ships with, which a mission or the forced list below can override.
 | Enable group markers | CHECKBOX | Ghosts of Battle > BFT | `true` | Blue Force Tracking: every group that has its tracker on is drawn on the map for everyone who shares one of its networks. |
 | Auto enable for | LIST | Ghosts of Battle > BFT | `[[0, 1, 2], ["None", "Player", "All"], 2` | None: nothing is tracked until switched on by hand. Player or All: groups nobody has configured are tracked automatically. |
 | Member markers | LIST | Ghosts of Battle > BFT | `[[0, 1, 2], ["Off", "Own squad", "All tr` | Individual marks for the men inside tracked groups, coloured by fire team. Own squad: your group's members. All tracked: every same-side tracked group |
+| Hide own group marker | CHECKBOX | Ghosts of Battle > BFT | `true` | Your own group's marker is not drawn on your map - it sits on top of you and hides the ground. Everyone else on the net still sees it, and your own me |
+| Show virtual friendlies | CHECKBOX | Ghosts of Battle > BFT | `true` | Friendly groups ALiVE is simulating off-map are drawn faded, from the commander's own picture. Nothing about them is secret to their side. |
 | Update delay | SLIDER | Ghosts of Battle > BFT | `[1, 60, 5, 0]` | Delay between group marker updates. |
 | Marker shape | LIST | Ghosts of Battle > BFT | `[["a", "b", "o", "n"], ["Automatic", "Bl` | Warning! Taking this off automatic will also affect enemy groups. |
 | Position: tracking mode | LIST | Ghosts of Battle > BFT | `[["leader", "weightedAverage"], ["Leader` | The way a group's position is calculated. |
@@ -245,6 +273,17 @@ ships with, which a mission or the forced list below can override.
 |---|---|---|---|---|
 | Enable pointing in vehicles | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Pointing | `true` | Allows to point current camera direction in vehicles to rest of the crew. |
 
+## Radio Mesh (`radio_mesh`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Enable mesh relaying | CHECKBOX | Ghosts of Battle > Radio Mesh | `true` | Friendly radios on the same frequency relay transmissions that cannot reach a receiver directly. Off returns ACRE's stock point-to-point signal (still |
+| Relay radios | EDITBOX | Ghosts of Battle > Radio Mesh | `"ACRE_PRC148,ACRE_PRC152,ACRE_PRC117F"` | Comma-separated ACRE base radio classes that act as relay nodes when carried or racked. Anything can still be an end point. |
+| Loss per weak hop | SLIDER | Ghosts of Battle > Radio Mesh | `[0, 0.5, 0.1, 2]` | Fraction of signal quality lost for every relay hop made by a radio transmitting below the power threshold. 0 = lossless. |
+| Weak-hop threshold (mW) | SLIDER | Ghosts of Battle > Radio Mesh | `[0, 10000, 1000, 0]` | Relays transmitting below this power pay the loss per hop; at or above it they repeat cleanly. 1000 = 1 W. |
+| Relay table refresh (s) | SLIDER | Ghosts of Battle > Radio Mesh | `[1, 30, 5, 0]` | Seconds between rebuilds of the list of relay-capable radios on this client. |
+| Relays considered per transmission | SLIDER | Ghosts of Battle > Radio Mesh | `[2, 64, 16, 0]` | Upper bound on relay radios examined for one transmission - the nearest to the transmitter/receiver line. Keeps the path search bounded on busy nets. |
+
 ## Remotesensors (`remotesensors`)
 
 | Setting | Type | Category | Default | What it does |
@@ -333,7 +372,7 @@ ships with, which a mission or the forced list below can override.
 
 ## Forced by `cba_settings`
 
-`addons/cba_settings/cba_settings.sqf` force-sets 658 values at mission start.
+`addons/cba_settings/cba_settings.sqf` force-sets 657 values at mission start.
 A forced setting cannot be changed in-game, and overrides the defaults above.
 
 | Variable | Value |
@@ -844,29 +883,28 @@ A forced setting cannot be changed in-game, and overrides the defaults above.
 | `ghost_towing_addToHeavyDutyVehicles` | `true` |
 | `Rev_tp_action_radius` | `5` |
 | `Rev_tp_action_time` | `6` |
-| `YMF_Settings_addEarplugs` | `true` |
-| `YMF_Settings_allowInsigniaApplication` | `true` |
-| `YMF_Settings_enableRadios` | `true` |
-| `YMF_Settings_enableStagingSystem` | `true` |
-| `YMF_Settings_enableVehicleInventory` | `true` |
-| `YMF_Settings_enableVehiclePylon` | `true` |
-| `YMF_Settings_enableVehicleRadios` | `true` |
-| `YMF_Settings_enableVehicleSystem` | `true` |
-| `YMF_Settings_jumpSimulation` | `2` |
-| `YMF_Settings_jumpSimulationGlasses` | `true` |
-| `YMF_Settings_jumpSimulationHat` | `true` |
-| `YMF_Settings_jumpSimulationNVG` | `true` |
-| `YMF_Settings_patrolBaseEnabled` | `true` |
-| `YMF_Settings_patrolBaseKitCount` | `4` |
-| `YMF_Settings_patrolBaseKitRange` | `3` |
-| `YMF_Settings_patrolBaseMaxCount` | `3` |
-| `YMF_Settings_patrolBaseZoneSize` | `15` |
-| `YMF_Settings_setAiSystemDifficulty` | `2` |
-| `YMF_Settings_setMissionType` | `1` |
-| `YMF_Settings_setPlayerRank` | `true` |
-| `YMF_Settings_setRadio` | `true` |
-| `YMF_Settings_showDiaryRecords` | `true` |
-| `YMF_Settings_vehicleFactions` | `"[""BLU_W_F"",""BLU_T_F"",""BLU_NATO_lxWS"",""BLU_F"",""USAF` |
+| `ghost_Settings_addEarplugs` | `true` |
+| `ghost_Settings_allowInsigniaApplication` | `true` |
+| `ghost_Settings_enableRadios` | `true` |
+| `ghost_Settings_enableStagingSystem` | `true` |
+| `ghost_Settings_enableVehicleInventory` | `true` |
+| `ghost_Settings_enableVehiclePylon` | `true` |
+| `ghost_Settings_enableVehicleRadios` | `false` |
+| `ghost_Settings_enableVehicleSystem` | `true` |
+| `ghost_Settings_jumpSimulation` | `2` |
+| `ghost_Settings_jumpSimulationGlasses` | `true` |
+| `ghost_Settings_jumpSimulationHat` | `true` |
+| `ghost_Settings_jumpSimulationNVG` | `true` |
+| `ghost_patrol_base_enabled` | `true` |
+| `ghost_patrol_base_kitCount` | `4` |
+| `ghost_patrol_base_kitRange` | `5` |
+| `ghost_patrol_base_maxCount` | `3` |
+| `ghost_Settings_setAiSystemDifficulty` | `2` |
+| `ghost_Settings_setMissionType` | `1` |
+| `ghost_Settings_setPlayerRank` | `true` |
+| `ghost_Settings_setRadio` | `true` |
+| `ghost_Settings_showDiaryRecords` | `true` |
+| `ghost_Settings_vehicleFactions` | `"[""BLU_W_F"",""BLU_T_F"",""BLU_NATO_lxWS"",""BLU_F"",""USAF` |
 | `ghostfa_ammo_debugBreaching` | `false` |
 | `ghostfa_ammo_enableBreaching` | `true` |
 | `ghostfa_antidrone_damageMultiplier` | `1` |

@@ -14,6 +14,7 @@ and the odds and ends that did not deserve an addon each.
 - `cba_xeh` _(external)_
 - `ghost_main`
 - `ghost_medbags`
+- `ghost_notify`
 - `ace_vector` _(external)_
 - `ace_fortify` _(external)_
 - `A3_Weapons_F` _(external)_

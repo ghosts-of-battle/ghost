@@ -25,12 +25,14 @@
 class CBA_Extended_EventHandlers;
 
 class CfgVehicles {
-    // FORWARD DECLARATION, NOT A DEPENDENCY. B_CTRG_Soldier_v2_F belongs to
-    // somebody else's mod. Declaring it means a load order without that mod
-    // gets an inert class rather than a config that refuses to build.
-    class B_CTRG_Soldier_v2_F;
+    // FORWARD DECLARATION, NOT A DEPENDENCY. B_CTRG_Soldier_F is the base
+    // game's (Apex), defined in an addon that is not this one; declaring it
+    // is what lets this config inherit from it. It replaced Aegis's
+    // B_CTRG_Soldier_v2_F when Aegis left the load order - the vest went the
+    // same way, from Aegis's holster rig to Contact's light KBT-01 in olive.
+    class B_CTRG_Soldier_F;
 
-    class ghost_MFRC_tna_ReconScout: B_CTRG_Soldier_v2_F {
+    class ghost_MFRC_tna_ReconScout: B_CTRG_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -48,10 +50,10 @@ class CfgVehicles {
         respawnWeapons[] = {"hgun_Glock19_auto_khk_RF","Throw","Put"};
         magazines[] = {"17Rnd_9x19_Mag_RF","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell"};
         respawnMagazines[] = {"17Rnd_9x19_Mag_RF","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell"};
-        linkedItems[] = {"Aegis_V_CarrierRigKBT_01_holster_olive_F","H_Booniehat_tna_F","ItemMap","ItemGPS","ItemCompass"};
-        respawnLinkedItems[] = {"Aegis_V_CarrierRigKBT_01_holster_olive_F","H_Booniehat_tna_F","ItemMap","ItemGPS","ItemCompass"};
+        linkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","H_Booniehat_tna_F","ItemMap","ItemGPS","ItemCompass"};
+        respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","H_Booniehat_tna_F","ItemMap","ItemGPS","ItemCompass"};
 
-        ALiVE_orbatCreator_loadout[] = {{},{},{"hgun_Glock19_auto_khk_RF","","","",{"17Rnd_9x19_Mag_RF",17},{},""},{"ghost_uniform_sof_SOF_U_B_SFFatigues_Shortsleeve_tna",{{"FirstAidKit",1},{"optic_NVS",1}}},{"Aegis_V_CarrierRigKBT_01_holster_olive_F",{{"MiniGrenade",2,1},{"SmokeShell",2,1}}},{},"H_Booniehat_tna_F","",{},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{},{"hgun_Glock19_auto_khk_RF","","","",{"17Rnd_9x19_Mag_RF",17},{},""},{"ghost_uniform_sof_SOF_U_B_SFFatigues_Shortsleeve_tna",{{"FirstAidKit",1},{"optic_NVS",1}}},{"V_CarrierRigKBT_01_light_Olive_F",{{"MiniGrenade",2,1},{"SmokeShell",2,1}}},{},"H_Booniehat_tna_F","",{},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
 
         class EventHandlers {
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
@@ -61,7 +63,7 @@ class CfgVehicles {
         };
     };
 
-    class ghost_MFRC_ocp_ReconScout: B_CTRG_Soldier_v2_F {
+    class ghost_MFRC_ocp_ReconScout: B_CTRG_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -79,10 +81,10 @@ class CfgVehicles {
         respawnWeapons[] = {"hgun_Glock19_auto_khk_RF","Throw","Put"};
         magazines[] = {"17Rnd_9x19_Mag_RF","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell"};
         respawnMagazines[] = {"17Rnd_9x19_Mag_RF","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell"};
-        linkedItems[] = {"Aegis_V_CarrierRigKBT_01_holster_olive_F","ghost_headware_H_Booniehat_ocp_F","ItemMap","ItemGPS","ItemCompass"};
-        respawnLinkedItems[] = {"Aegis_V_CarrierRigKBT_01_holster_olive_F","ghost_headware_H_Booniehat_ocp_F","ItemMap","ItemGPS","ItemCompass"};
+        linkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","ghost_headware_H_Booniehat_ocp_F","ItemMap","ItemGPS","ItemCompass"};
+        respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","ghost_headware_H_Booniehat_ocp_F","ItemMap","ItemGPS","ItemCompass"};
 
-        ALiVE_orbatCreator_loadout[] = {{},{},{"hgun_Glock19_auto_khk_RF","","","",{"17Rnd_9x19_Mag_RF",17},{},""},{"ghost_uniform_sof_SOF_U_B_SFFatigues_Shortsleeve_ocp",{{"FirstAidKit",1},{"optic_NVS",1}}},{"Aegis_V_CarrierRigKBT_01_holster_olive_F",{{"MiniGrenade",2,1},{"SmokeShell",2,1}}},{},"ghost_headware_H_Booniehat_ocp_F","",{},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{},{"hgun_Glock19_auto_khk_RF","","","",{"17Rnd_9x19_Mag_RF",17},{},""},{"ghost_uniform_sof_SOF_U_B_SFFatigues_Shortsleeve_ocp",{{"FirstAidKit",1},{"optic_NVS",1}}},{"V_CarrierRigKBT_01_light_Olive_F",{{"MiniGrenade",2,1},{"SmokeShell",2,1}}},{},"ghost_headware_H_Booniehat_ocp_F","",{},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
 
         class EventHandlers {
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
@@ -92,7 +94,7 @@ class CfgVehicles {
         };
     };
 
-    class ghost_MFRC_wdl_ReconScout: B_CTRG_Soldier_v2_F {
+    class ghost_MFRC_wdl_ReconScout: B_CTRG_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -110,10 +112,10 @@ class CfgVehicles {
         respawnWeapons[] = {"hgun_Glock19_auto_khk_RF","Throw","Put"};
         magazines[] = {"17Rnd_9x19_Mag_RF","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell"};
         respawnMagazines[] = {"17Rnd_9x19_Mag_RF","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell"};
-        linkedItems[] = {"Aegis_V_CarrierRigKBT_01_holster_olive_F","ghost_headware_H_Booniehat_Multicam_Woodland_F","ItemMap","ItemGPS","ItemCompass"};
-        respawnLinkedItems[] = {"Aegis_V_CarrierRigKBT_01_holster_olive_F","ghost_headware_H_Booniehat_Multicam_Woodland_F","ItemMap","ItemGPS","ItemCompass"};
+        linkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","ghost_headware_H_Booniehat_Multicam_Woodland_F","ItemMap","ItemGPS","ItemCompass"};
+        respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","ghost_headware_H_Booniehat_Multicam_Woodland_F","ItemMap","ItemGPS","ItemCompass"};
 
-        ALiVE_orbatCreator_loadout[] = {{},{},{"hgun_Glock19_auto_khk_RF","","","",{"17Rnd_9x19_Mag_RF",17},{},""},{"ghost_uniform_sof_SOF_U_B_SFFatigues_Shortsleeve_wdl",{{"FirstAidKit",1},{"optic_NVS",1}}},{"Aegis_V_CarrierRigKBT_01_holster_olive_F",{{"MiniGrenade",2,1},{"SmokeShell",2,1}}},{},"ghost_headware_H_Booniehat_Multicam_Woodland_F","",{},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{},{"hgun_Glock19_auto_khk_RF","","","",{"17Rnd_9x19_Mag_RF",17},{},""},{"ghost_uniform_sof_SOF_U_B_SFFatigues_Shortsleeve_wdl",{{"FirstAidKit",1},{"optic_NVS",1}}},{"V_CarrierRigKBT_01_light_Olive_F",{{"MiniGrenade",2,1},{"SmokeShell",2,1}}},{},"ghost_headware_H_Booniehat_Multicam_Woodland_F","",{},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
 
         class EventHandlers {
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
@@ -123,7 +125,7 @@ class CfgVehicles {
         };
     };
 
-    class ghost_MFRC_mtp_ReconScout: B_CTRG_Soldier_v2_F {
+    class ghost_MFRC_mtp_ReconScout: B_CTRG_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -141,10 +143,10 @@ class CfgVehicles {
         respawnWeapons[] = {"hgun_Glock19_auto_khk_RF","Throw","Put"};
         magazines[] = {"17Rnd_9x19_Mag_RF","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell"};
         respawnMagazines[] = {"17Rnd_9x19_Mag_RF","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell"};
-        linkedItems[] = {"Aegis_V_CarrierRigKBT_01_holster_olive_F","ghost_headware_H_Booniehat_Multicam_F","ItemMap","ItemGPS","ItemCompass"};
-        respawnLinkedItems[] = {"Aegis_V_CarrierRigKBT_01_holster_olive_F","ghost_headware_H_Booniehat_Multicam_F","ItemMap","ItemGPS","ItemCompass"};
+        linkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","ghost_headware_H_Booniehat_Multicam_F","ItemMap","ItemGPS","ItemCompass"};
+        respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","ghost_headware_H_Booniehat_Multicam_F","ItemMap","ItemGPS","ItemCompass"};
 
-        ALiVE_orbatCreator_loadout[] = {{},{},{"hgun_Glock19_auto_khk_RF","","","",{"17Rnd_9x19_Mag_RF",17},{},""},{"ghost_uniform_sof_SOF_U_B_SFFatigues_Shortsleeve_mcam",{{"FirstAidKit",1},{"optic_NVS",1}}},{"Aegis_V_CarrierRigKBT_01_holster_olive_F",{{"MiniGrenade",2,1},{"SmokeShell",2,1}}},{},"ghost_headware_H_Booniehat_Multicam_F","",{},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{},{"hgun_Glock19_auto_khk_RF","","","",{"17Rnd_9x19_Mag_RF",17},{},""},{"ghost_uniform_sof_SOF_U_B_SFFatigues_Shortsleeve_mcam",{{"FirstAidKit",1},{"optic_NVS",1}}},{"V_CarrierRigKBT_01_light_Olive_F",{{"MiniGrenade",2,1},{"SmokeShell",2,1}}},{},"ghost_headware_H_Booniehat_Multicam_F","",{},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
 
         class EventHandlers {
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};

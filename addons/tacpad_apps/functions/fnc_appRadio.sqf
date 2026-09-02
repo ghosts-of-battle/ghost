@@ -107,7 +107,7 @@ private _matched = 0;
     private _self = _unit isEqualTo player;
 
     private _ch = _unit getVariable [QGVAR(radio), ""];
-    private _same = _ch != "" && {_ch == _mine};
+    private _same = _ch != "" && _ch == _mine;
     if (_same && {!_self}) then {_matched = _matched + 1};
 
     [
@@ -144,6 +144,6 @@ _y = _y + _padY;
         case (_none): {"NO RADIO IN HAND"};
         default {format ["%1 OF %2 WITH YOU ON THIS CHANNEL", _matched, (count _units) - 1]};
     },
-    ([_mute, _accent] select (_none && {_source != "NO RADIO MOD"})),
+    ([_mute, _accent] select (_none && _source != "NO RADIO MOD")),
     0.7, true, "left", true
 ] call EFUNC(tacpad,drawText);

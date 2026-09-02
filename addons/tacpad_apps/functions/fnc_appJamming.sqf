@@ -40,33 +40,60 @@ if !([player] call EFUNC(hacking,hasScanner)) exitWith {
     [_body, [_pad, _padY, _w - 2 * _pad, _rowH], "NO RECEIVER", _accent, 1.2, true] call EFUNC(tacpad,drawText);
 };
 
-([] call EFUNC(hacking,scannerRead)) params ["", "", "", ["_jam", 0]];
+([] call EFUNC(hacking,scannerRead)) params ["", "", "", ["_jam", 0], "", "", "", "",
+    ["_jamRadio", 0], ["_jamData", 0], ["_jamGps", 0]];
 
+// Older scannerRead builds had no per-domain figures; fall back to the
+// aggregate on RADIO, which is what the single bar always meant.
+if (_jamRadio + _jamData + _jamGps <= 0 && _jam > 0) then { _jamRadio = _jam };
+
+// THE HEADLINE IS STILL ONE NUMBER, and it is the WORST of the three - the
+// page has to answer "how bad is it here" before it answers "at what". It is
+// NAMED, because "0%" standing beside a status word read as "0% usable", which
+// is backwards: the number is how much of the spectrum is being JAMMED, and
+// zero jammed is a good day.
 private _pct = round (_jam * 100);
 private _state = 0;
 if (_pct > 0) then {_state = 1};
 if (_pct >= 75) then {_state = 2};
 private _colour = [_ink, _amber, _accent] select _state;
 
-// The percentage is the page - and it is NAMED, because "0%" standing beside
-// a status word read as "0% usable", which is backwards. The number is how
-// much of the spectrum is being JAMMED; zero jammed is a good day.
 [
     _body, [_pad, _padY, _w - 2 * _pad, _rowH * 1.8],
     format ["%1%2 JAMMED", _pct, "%"], _colour, 2.2, true
 ] call EFUNC(tacpad,drawText);
 
-private _barY = _padY + _rowH * 2.1;
-[_body, [_pad, _barY, _w - 2 * _pad, _rowH * 0.5], _line] call EFUNC(tacpad,drawFill);
-if (_pct > 0) then {
-    [_body, [_pad, _barY, (_w - 2 * _pad) * (_pct / 100), _rowH * 0.5], _colour] call EFUNC(tacpad,drawFill);
-};
+// THEN WHICH SERVICE, one row each (user, 2026-08-31). The headline says how
+// dirty the air is; these say what you have actually lost, which is the part
+// that decides whether you key up, send a report, or trust the map.
+private _rowY = _padY + _rowH * 2.1;
+{
+    _x params ["_name", "_f"];
 
-[
-    _body, [_pad, _barY + _rowH * 0.7, _w - 2 * _pad, _rowH],
-    ["SPECTRUM CLEAR", "SPECTRUM DEGRADED", "SPECTRUM SMOTHERED"] select _state,
-    _colour, 0.8, true, "left", true
-] call EFUNC(tacpad,drawText);
+    private _p = round (_f * 100);
+    private _s = switch (true) do {
+        case (_p >= 75): {2};
+        case (_p > 0): {1};
+        default {0};
+    };
+    private _c = [_ink, _amber, _accent] select _s;
+    private _top = _rowY + _rowH * 1.15 * _forEachIndex;
+
+    [
+        _body, [_pad, _top, (_w - 2 * _pad) * 0.42, _rowH],
+        format ["%1 %2", _name, ["OK", "DEGRADED", "NONET"] select _s],
+        _c, 0.85, true, "left", true
+    ] call EFUNC(tacpad,drawText);
+
+    private _barX = _pad + (_w - 2 * _pad) * 0.46;
+    private _barW = (_w - _pad - _barX) max 0;
+    [_body, [_barX, _top + _rowH * 0.3, _barW, _rowH * 0.4], _line] call EFUNC(tacpad,drawFill);
+    if (_p > 0) then {
+        [_body, [_barX, _top + _rowH * 0.3, _barW * (_p / 100), _rowH * 0.4], _c] call EFUNC(tacpad,drawFill);
+    };
+} forEach [["RADIO", _jamRadio], ["DATA", _jamData], ["GPS", _jamGps]];
+
+private _barY = _rowY + _rowH * 1.15 * 3;
 
 // WHAT HAS BEEN DONE TO US LATELY - carried over from the cTab jam page,
 // which the new page had dropped and the user missed: every ghost system
@@ -80,8 +107,12 @@ _y = _y + _rowH;
 
 private _alerts = (missionNamespace getVariable [QEGVAR(common,alerts), []]) select {(_x param [4, 0]) > CBA_missionTime};
 
-// What this draw is OF - see the drone page's loop note.
-uiNamespace setVariable [QGVAR(jamSeen), str [_pct, _alerts]];
+// What this draw is OF - see the drone page's loop note. ALL FOUR figures,
+// in the same shape the refresh gate below builds: storing only the headline
+// while the gate compared four would never match, and the page would have
+// redrawn itself every two seconds for the rest of the mission.
+uiNamespace setVariable [QGVAR(jamSeen),
+    str [([_jam, _jamRadio, _jamData, _jamGps] apply { round (_x * 100) }), _alerts]];
 
 if (_alerts isEqualTo []) then {
     private _dim = [_ink # 0, _ink # 1, _ink # 2, 0.42];
@@ -118,9 +149,14 @@ uiNamespace setVariable [QGVAR(jamPFH), [{
     if !([] call EFUNC(tacpad,appIdle)) exitWith {};
 
     // Redraw ONLY when the picture changed - the drone page's rule.
-    private _jam = ([] call EFUNC(hacking,scannerRead)) param [3, 0];
+    // The WHOLE picture, not just the aggregate: a hub coming up denies data
+    // without moving index 3 if a radio field already covers this spot, and
+    // the page would have sat there showing the old rows.
+    ([] call EFUNC(hacking,scannerRead)) params ["", "", "", ["_jam", 0], "", "", "", "",
+        ["_jr", 0], ["_jd", 0], ["_jg", 0]];
+    private _jam = [_jam, _jr, _jd, _jg] apply { round (_x * 100) };
     private _alerts = (missionNamespace getVariable [QEGVAR(common,alerts), []]) select {(_x param [4, 0]) > CBA_missionTime};
-    if ((str [round (_jam * 100), _alerts]) isEqualTo (uiNamespace getVariable [QGVAR(jamSeen), ""])) exitWith {};
+    if ((str [_jam, _alerts]) isEqualTo (uiNamespace getVariable [QGVAR(jamSeen), ""])) exitWith {};
 
     ["jam"] call EFUNC(tacpad,openApp);
 }, 2, []] call CBA_fnc_addPerFrameHandler];

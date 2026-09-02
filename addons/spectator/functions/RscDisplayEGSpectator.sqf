@@ -36,9 +36,7 @@ disableSerialization;
 scriptName "RscDisplayEGSpectator";
 
 // Params
-private ["_mode", "_params"];
-_mode   = _this param [0, "", [""]];
-_params = _this param [1, [], [[]]];
+private _mode = _this param [0, "", [""]];
 
 if (_mode != "Update_PlayerList") exitWith {
     private _return = _this call BIS_fnc_RscDisplayEGSpectatorCore;
@@ -66,11 +64,10 @@ switch _mode do
         private _groups     = [] + (["GetTargetGroups"] call SPEC);
         private _validUnits = [] + (["GetTargetEntities"] call SPEC); // Added
 
-        private ["_west", "_east", "_indep", "_civ"];
-        _west       = [];
-        _east       = [];
-        _indep      = [];
-        _civ        = [];
+        private _west  = [];
+        private _east  = [];
+        private _indep = [];
+        private _civ   = [];
 
         // Go through groups and get the valid ones only, also cache group units information
         {
@@ -251,12 +248,7 @@ switch _mode do
                     };
 
                     {
-                        private ["_unit", "_isAlive", "_isIncapacitated", "_name", "_groupId"];
-                        _unit               = _x select 0;
-                        _isAlive            = _x select 1;
-                        _isIncapacitated    = _x select 2;
-                        _name               = _x select 3;
-                        _groupId            = _x select 4;
+                        _x params ["_unit", "_isAlive", "_isIncapacitated", "_name", "_groupId"];
 
                         private _text = if (isPlayer _unit) then { _name } else { format ["%1: %2", localize "str_player_ai", _name] };
                         private _tooltip = if (isPlayer _unit) then { format ["%1 - %2", _name, _groupId] } else { format ["%1: %2 - %3", localize "str_player_ai", _name, _groupId] };

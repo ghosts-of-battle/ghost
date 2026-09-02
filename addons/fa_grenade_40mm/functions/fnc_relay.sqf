@@ -30,5 +30,5 @@ if (GVAR(hasTFAR)) then {};
 // HOOK: spawn ACRE2 relay (acre_api_fnc_*) here
 if (GVAR(hasACRE)) then {};
 
-[_unit, format ["<t color='#88ccff'>NR-P relay online</t><br/>%1 m link radius", _radius]] call FUNC(notify);
+[_unit, "NR-P Relay", format ["Online - %1 m link radius", _radius], [0.4, 0.702, 0.4, 1]] call FUNC(notify);
 [{ params ["_o"]; if (!isNull _o) then { deleteVehicle _o } }, [_obj], _life] call CBA_fnc_waitAndExecute;

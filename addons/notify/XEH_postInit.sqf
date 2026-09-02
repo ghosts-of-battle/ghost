@@ -9,7 +9,7 @@ GVAR(pfh) = -1;
 // Raised by FUNC(broadcast) on the receiving clients. Side filtering happens
 // here rather than at the sender so one event serves everyone.
 [QGVAR(post), {
-    params ["_title", "_text", "_colour", ["_side", sideUnknown]];
+    params ["_title", "_text", "_colour", ["_side", sideUnknown], ["_pos", []]];
     if (_side != sideUnknown && {side group ACE_player != _side}) exitWith {};
-    [_title, _text, _colour] call FUNC(notify);
+    [_title, _text, _colour, _pos] call FUNC(notify);
 }] call CBA_fnc_addEventHandler;

@@ -40,9 +40,9 @@ private _existing = markerShape _marker isNotEqualTo "";
 if (_posASL isEqualTo []) exitWith {
     if (_existing) then {
         deleteMarkerLocal _marker;
-        hintSilent "Waypoint cleared";
+        ["Vector", "Waypoint cleared.", [0.871, 0.361, 0.188, 1]] call EFUNC(notify,notify);
     } else {
-        hintSilent "Vector: no target";
+        ["Vector", "No target.", [0.831, 0.267, 0.267, 1]] call EFUNC(notify,notify);
     };
     true
 };
@@ -52,7 +52,7 @@ private _at = ASLToAGL _posASL;
 // The same place again is the toggle - see the note above.
 if (_existing && {(getMarkerPos _marker) distance2D _at < 15}) exitWith {
     deleteMarkerLocal _marker;
-    hintSilent "Waypoint cleared";
+    ["Vector", "Waypoint cleared.", [0.871, 0.361, 0.188, 1]] call EFUNC(notify,notify);
     true
 };
 
@@ -70,6 +70,6 @@ _marker setMarkerColorLocal GVAR(waypointColor);
 private _bearing = round (ACE_player getDir _at);
 _marker setMarkerTextLocal format ["WP %1m / %2", _range, [_bearing, 3] call CBA_fnc_formatNumber];
 
-hintSilent format ["Waypoint: %1m, bearing %2", _range, [_bearing, 3] call CBA_fnc_formatNumber];
+["Vector", format ["Waypoint: %1 m, bearing %2", _range, [_bearing, 3] call CBA_fnc_formatNumber], [0.4, 0.702, 0.4, 1]] call EFUNC(notify,notify);
 
 true

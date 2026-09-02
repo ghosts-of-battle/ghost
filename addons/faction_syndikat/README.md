@@ -2,7 +2,7 @@
 
 `ghost_faction_syndikat`
 
-A content pack: 47 unit classes. No scripted behaviour.
+A content pack: 36 unit classes. No scripted behaviour.
 
 <!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
 
@@ -14,4 +14,4 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-47 unit classes.
+52 unit classes.

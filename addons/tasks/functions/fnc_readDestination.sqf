@@ -15,7 +15,7 @@
 
 params ["_taskPosition", "_taskObject", "_taskMarker"];
 
-if (_taskPosition isEqualTo [] && {_taskObject isEqualTo "" && {_taskMarker isEqualTo ""}}) exitWith {objNull};
+if (_taskPosition isEqualTo [] && {_taskObject isEqualTo "" && _taskMarker isEqualTo ""}) exitWith {objNull};
 
 private _destination = objNull;
 
@@ -26,7 +26,7 @@ if (_taskMarker isNotEqualTo "") then {
 };
 
 // destination can contain an array, isNull can't be used
-if (_destination isEqualTo objNull && {_taskObject isNotEqualTo ""}) then {
+if (_destination isEqualTo objNull && _taskObject isNotEqualTo "") then {
     private _object = missionNamespace getVariable [_taskObject, objNull];
     if (!isNull _object) exitWith {_destination = _object};
     WARNING_1("Object %1 does not exist!",_taskObject);

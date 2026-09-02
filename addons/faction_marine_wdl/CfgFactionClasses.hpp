@@ -9,7 +9,7 @@ class CfgFactionClasses {
     class NO_CATEGORY;
 
     class ghost_Marine_wdl: NO_CATEGORY {
-        displayName = "Ghost Marine (Woodland)";
+        displayName = "2040 Marine (Woodland)";
         author = QAUTHOR;
         side = 1;
         priority = 1;

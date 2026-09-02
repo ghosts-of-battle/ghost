@@ -26,7 +26,8 @@ if (isNull _device || {!alive _device}) exitWith { false };
 // false - so the hack ran with the progress permanently refused and nothing on
 // screen said why. The tower range is the honest default.
 private _range = _session getOrDefault ["range", 0];
-if (!(_range isEqualType 0) || {_range <= 0}) then {
+if (!(_range isEqualType 0)) then {_range = 0};
+if (_range <= 0) then {
     _range = [QGVAR(cfg_hack_range)] call FUNC(hackSetting);
 };
 

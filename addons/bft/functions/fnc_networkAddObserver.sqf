@@ -20,7 +20,7 @@
 
 params [["_group", grpNull, [grpNull]], ["_netName", "", [""]]];
 
-if (isNull _group || {_netName isEqualTo ""}) exitWith {[]};
+if (isNull _group || _netName isEqualTo "") exitWith {[]};
 
 private _codes = _group getVariable [QGVAR(decryptCodes), []];
 _codes pushBackUnique _netName;

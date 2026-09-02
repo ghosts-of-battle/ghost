@@ -28,21 +28,9 @@ private _pool = (call ghost_adapter_alive_fnc_aaTargets) select {
     (_x select 2) getFriend _side < 0.6
 };
 
-// GHOST'S OWN AIR DEFENCE JOINS THE POOL. The adapter reads ALiVE's AA
-// registry, and ALiVE only knows about the AA ALiVE placed - so the batteries
-// the air-defence module puts out would have been invisible to the one product
-// whose whole job is finding them.
-//
-// Soft-linked: hacking does not depend on that addon, and it is a stopgap that
-// is expected to be deleted once ALiVE 3's own air defence is stable.
-private _own = missionNamespace getVariable [QEGVAR(airdefence,sites), []];
-{
-    _x params ["_at", "_aside"];
-    if (_aside getFriend _side >= 0.6) then {continue};
-    // Keyed by grid: a site is a PLACE here too, and the ladder needs a stable
-    // id to lock on to across hacks.
-    _pool pushBack [format ["ad_%1", mapGridPosition _at], _at, _aside];
-} forEach _own;
+// The air-defence stopgap that used to join the pool here had no producer
+// in the repo, and the adapter now reads every anti-air-capable profile
+// ALiVE runs, placement-registered or not - the pool above is the lot.
 
 // EXACT ICONS FOR THE WHOLE POOL was what this did, which handed over every
 // air-defence system on the map for one hack and left nothing to work for.

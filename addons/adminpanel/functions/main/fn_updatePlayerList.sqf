@@ -53,10 +53,10 @@ private _shown = 0;
     // ships to every mission - and a nil call here emptied the whole list. With
     // no rank framework loaded the engine's own rank is used instead, which is
     // the same three letters for the same men in most missions.
-    private _rank = if (isNil "YMF_fnc_player_getRank") then {
+    private _rank = if (isNil "ghost_players_fnc_getRank") then {
         [rank _x] call EFUNC(tacpad,rankShort)
     } else {
-        [_x, "USA"] call YMF_fnc_player_getRank
+        [_x, "USA"] call ghost_players_fnc_getRank
     };
     if (_rank isNotEqualTo "") then {
         _displayName = format ["%1 [%2]", _displayName, _rank];

@@ -72,6 +72,7 @@ class CfgVehicles {
                 displayName = "Shell Classes";
                 tooltip = "Comma-separated CfgAmmo classes; each stonk draws one. BLANK mixes 155 mm and 82 mm HE.";
                 typeName = "STRING";
+                control = "ghost_ClassPick_Ammo";
                 defaultValue = "''";
                 expression = QUOTE(_this setVariable [ARR_2('shellClasses',_value)]);
             };
@@ -147,6 +148,7 @@ class CfgVehicles {
                 displayName = "Drone Classes";
                 tooltip = "Comma-separated UAV classes; each run draws one. BLANK flies the side's vanilla quadcopter.";
                 typeName = "STRING";
+                control = "ghost_ClassPick_Uav";
                 defaultValue = "''";
                 expression = QUOTE(_this setVariable [ARR_2('droneClasses',_value)]);
             };

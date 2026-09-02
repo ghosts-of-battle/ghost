@@ -39,11 +39,11 @@ private _out = [];
 
     private _sideText = toUpper ([_p, "side", ""] call ALiVE_fnc_hashGet);
     private _pside = [_sideText, sideUnknown] call EFUNC(common,sideFromText);
-    if (_side isNotEqualTo sideUnknown && {_pside isNotEqualTo _side}) then {continue};
+    if (_side isNotEqualTo sideUnknown && _pside isNotEqualTo _side) then {continue};
 
     private _pos = [_p, "position", []] call ALiVE_fnc_hashGet;
     private _id = [_p, "profileID", ""] call ALiVE_fnc_hashGet;
-    if (_pos isNotEqualTo [] && {_id isNotEqualTo ""}) then {
+    if (_pos isNotEqualTo [] && _id isNotEqualTo "") then {
         _out pushBack [_id, _pos, _pside];
     };
 } forEach (_handler select HASH_VALUES);

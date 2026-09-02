@@ -62,6 +62,10 @@ if (isNil QGVAR(caches)) then { GVAR(caches) = [] };
             [_cache] call FUNC(cacheDown);
         }];
         GVAR(caches) pushBack _cache;
+        // The commander's cache, not a prop - see antiship for the reason.
+        if (!isNil "ghost_adapter_alive_fnc_registerSite") then {
+            [_side, format ["cache_%1", mapGridPosition _x], _x, 100, 70] call ghost_adapter_alive_fnc_registerSite;
+        };
     } forEach _spots;
 
     INFO_2("side %1: %2 cache(s)",_side,count _spots);

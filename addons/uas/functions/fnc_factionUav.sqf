@@ -30,10 +30,15 @@ private _found = "";
 if (_faction isNotEqualTo "") then {
     {
         private _cls = configName _x;
+        // NOT A MUNITION. A SwitchBlade, an FPV and the IED Pelican are UAVs
+        // by class and one-way trips by design; a "patrol" flown on one
+        // orbits until it finds somebody and then is not a patrol any more.
+        private _lc = toLower _cls;
         if (getNumber (_x >> "scope") == 2
             && {getText (_x >> "faction") == _faction}
             && {_cls isKindOf "UAV"}
-            && {getNumber (_x >> "isUav") == 1 || {_cls isKindOf "UAV_01_base_F"}}) exitWith {
+            && {getNumber (_x >> "isUav") == 1 || {_cls isKindOf "UAV_01_base_F"}}
+            && {(["switchblade", "crocus", "kvn", "_ied", "fpv"] findIf {(_lc find _x) > -1}) == -1}) exitWith {
             _found = _cls;
         };
     } forEach ("true" configClasses (configFile >> "CfgVehicles"));

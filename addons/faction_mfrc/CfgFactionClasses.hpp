@@ -13,7 +13,7 @@ class CfgFactionClasses {
     class NO_CATEGORY;
 
     class ghost_MFRC_tna: NO_CATEGORY {
-        displayName = "Ghost MFRC (Tropical)";
+        displayName = "2040 MFRC (Tropical)";
         author = QAUTHOR;
         side = 1;
         priority = 1;
@@ -22,7 +22,7 @@ class CfgFactionClasses {
     };
 
     class ghost_MFRC_ocp: NO_CATEGORY {
-        displayName = "Ghost MFRC (Arid)";
+        displayName = "2040 MFRC (Arid)";
         author = QAUTHOR;
         side = 1;
         priority = 1;
@@ -31,7 +31,7 @@ class CfgFactionClasses {
     };
 
     class ghost_MFRC_wdl: NO_CATEGORY {
-        displayName = "Ghost MFRC (Woodland)";
+        displayName = "2040 MFRC (Woodland)";
         author = QAUTHOR;
         side = 1;
         priority = 1;
@@ -40,7 +40,7 @@ class CfgFactionClasses {
     };
 
     class ghost_MFRC_mtp: NO_CATEGORY {
-        displayName = "Ghost MFRC (Desert)";
+        displayName = "2040 MFRC (Desert)";
         author = QAUTHOR;
         side = 1;
         priority = 1;

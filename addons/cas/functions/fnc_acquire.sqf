@@ -39,7 +39,7 @@
 
 params [["_grid", [], [[]]], ["_radius", 0, [0]], ["_side", west, [west]]];
 
-if (_grid isEqualTo [] || {_radius <= 0}) exitWith {[_grid, "grid", objNull]};
+if (_grid isEqualTo [] || _radius <= 0) exitWith {[_grid, "grid", objNull]};
 
 // The engine spawns one of these per designator, per side, and they are the
 // same objects a Darter's laser or a soldier's designator produce - so this

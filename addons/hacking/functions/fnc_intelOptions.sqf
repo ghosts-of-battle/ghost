@@ -63,17 +63,18 @@ switch ([_at] call FUNC(taorType)) do {
     // --- the integrated defence network ------------------------------------
     case "invasion";
     case "occupation": {
-        if ((missionNamespace getVariable ["ghost_adapter_alive_aaCount", 0]) > 0
-            || {(missionNamespace getVariable [QEGVAR(airdefence,sites), []]) isNotEqualTo []}) then {
+        if ((missionNamespace getVariable ["ghost_adapter_alive_aaCount", 0]) > 0) then {
             _avail pushBack ["aa", "LOCATE AA"];
         };
         if ((missionNamespace getVariable [QEGVAR(antiship,batteries), []]) isNotEqualTo []) then {
             _avail pushBack ["coastal", "LOCATE ANTI-SHIP"];
         };
-        // ghost_antiship_radars, the live radar objects - the product reads the
-        // same list. This was gated on a "radarSites" variable nothing ever
-        // wrote, so the button could never appear even with radars up.
-        if ((missionNamespace getVariable [QEGVAR(antiship,radars), []]) isNotEqualTo []) then {
+        // ghost_antiship_radars, the live radar objects, OR the adapter's count
+        // of ALiVE's radar profiles - the product reads both lists. This was
+        // gated on a "radarSites" variable nothing ever wrote, so the button
+        // could never appear even with radars up.
+        if ((missionNamespace getVariable [QEGVAR(antiship,radars), []]) isNotEqualTo []
+            || {(missionNamespace getVariable ["ghost_adapter_alive_radarCount", 0]) > 0}) then {
             _avail pushBack ["radar", "LOCATE RADAR"];
         };
         if ((missionNamespace getVariable ["ghost_adapter_alive_artyCount", 0]) > 0) then {
@@ -81,6 +82,14 @@ switch ([_at] call FUNC(taorType)) do {
         };
         if ((missionNamespace getVariable ["ghost_jamming_zoneCount", 0]) > 0) then {
             _avail pushBack ["jam", "LOCATE JAMMER"];
+        };
+        // The rear. Published counts, like the others: the adapter's data
+        // functions answer only on the server, and this runs on a client.
+        if ((missionNamespace getVariable ["ghost_adapter_alive_campCount", 0]) > 0) then {
+            _avail pushBack ["camp", "LOCATE CAMP"];
+        };
+        if ((missionNamespace getVariable ["ghost_adapter_alive_hubCount", 0]) > 0) then {
+            _avail pushBack ["hub", "LOCATE LOGISTICS"];
         };
     };
 

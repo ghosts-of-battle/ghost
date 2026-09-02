@@ -92,7 +92,7 @@ private _fnc_resolve = {
     };
 
     if (local _unit && {hasInterface}) then {
-        hint parseText "<t color='#ffcc55'>Breach — door forced</t>";
+        ["Breach", "Door forced.", [0.871, 0.361, 0.188, 1]] call EFUNC(notify,notify);
     };
 };
 

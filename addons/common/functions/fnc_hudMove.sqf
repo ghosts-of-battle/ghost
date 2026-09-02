@@ -28,7 +28,7 @@ Author:
 ---------------------------------------------------------------------------- */
 params [["_id", "", [""]], ["_size", [0.2, 0.06], [[]]], ["_default", [0.4, 0.9], [[]]], ["_label", "", [""]]];
 
-if (!hasInterface || {_id isEqualTo ""}) exitWith { false };
+if (!hasInterface || _id isEqualTo "") exitWith { false };
 
 if !(createDialog QGVAR(hudMove)) exitWith { false };
 

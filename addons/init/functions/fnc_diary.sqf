@@ -29,18 +29,23 @@ if (!isNil{player getVariable QEGVAR(player,documents)}) exitWith {SHOW_WARNING_
 
 INFO_1("initDiary","Applying Diary Records to %1...",player);
 
-// Add New Topic (Checklists)
-// if !(player diarySubjectExists "trainobj") then {
-//     player createDiarySubject ["trainobj","Objectives"];
-//     // Load diary records (NOTE! The load order is reversed. So the top will be at the bottom after load.)
-//     call EFUNC(documents,Doc_mission_Info);
-// };
+// THE DIARY (user, 2026-08-29: "in game on the map the diary menu is missing").
+// It was missing because this whole body was commented out - the function was
+// still called from FUNC(playerpost), still logged "Applying Diary Records",
+// and still set the "already applied" flag, so it looked like it had run. What
+// it never did was create a single record.
+//
+// The commented-out version also created its own "trainobj" subject before
+// calling Doc_mission_Info. That was wrong twice over: the subject was named
+// for a training mission this is not, and Doc_mission_Info creates its OWN
+// subject ("gobinfo", GOB Info) as its first act. Creating one here as well
+// left an empty tab beside the real one.
+call EFUNC(documents,Doc_mission_Info);
 
-// if !(player diarySubjectExists "trainmap") then {
-//     player createDiarySubject ["trainmap","Training Map"];
-//     // Load diary records (NOTE! The load order is reversed. So the top will be at the bottom after load.)
-//     call EFUNC(documents,Doc_mission_map);
-// };
+// NOT Doc_mission_map. That function still exists, but every line of its body
+// is commented out too, so calling it would create the "gobmap" subject's tab
+// and nothing to put in it. Uncomment it there first if the map notes come
+// back.
 
 
 player setVariable [QEGVAR(player,documents), true];

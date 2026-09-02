@@ -69,7 +69,24 @@ private _band = [_ink # 0, _ink # 1, _ink # 2, 0.1];
 // the six named ones is always offered, and a category switched off
 // vanishes with the existing empty-category rule.
 private _allow = _controller getVariable ["YMF_motorpool_allow", [true, true, true, true, true, true, true]];
-private _allowNames = ["Cars", "Armor", "Mech", "Heli", "Plane", "Boat", "Static"];
+// CATEGORY CLASS NAME -> WHICH OF THE SEVEN SWITCHES IT ANSWERS TO. The first
+// seven are the switches themselves, in the order the init line passes them.
+//
+// THE THREE DRONE TABS RIDE THEIR DOMAIN'S SWITCH (user, 2026-09-01), and that
+// is what this hash exists for - a plain findIf over the seven names could only
+// ever match a category called exactly Cars, Heli or Boat. DRONES (GND) follows
+// Cars, DRONES (AIR) follows Heli and DRONES (SEA) follows Boat, so a ground pad
+// offers ground drones, the air pad offers air drones and the dock offers the
+// Magura. Before this they were outside the switch system entirely, which is
+// what put an unmanned surface vessel on a motor yard.
+//
+// A category named here but absent from a pad's switches is still offered - the
+// rule below only ever refuses, never adds - so a squad config inventing its own
+// tab is unaffected.
+private _catSwitch = createHashMapFromArray [
+    ["Cars", 0], ["Armor", 1], ["Mech", 2], ["Heli", 3], ["Plane", 4], ["Boat", 5], ["Static", 6],
+    ["DronesGround", 0], ["DronesAir", 3], ["DronesSea", 5]
+];
 
 // --------------------------------------------------------- the categories --
 // Common first, then the squad's own list appended into the same category
@@ -84,7 +101,7 @@ private _cats = [];
     {
         private _cat = _x;
         private _catName = configName _cat;
-        private _switch = _allowNames findIf {_x == _catName};
+        private _switch = _catSwitch getOrDefault [_catName, -1];
         if (_switch > -1 && {!(_allow param [_switch, true])}) then {continue};
 
         private _label = toUpper _catName;

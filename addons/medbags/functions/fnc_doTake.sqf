@@ -1,29 +1,56 @@
 #include "..\script_component.hpp"
 /*
-
- * \ghost_medical\supplies\functions\fn_doUnpackFirstAid.sqf
- * by YonV
+ * Author: YonV
+ * Moves every medical bag the casualty is carrying onto the player.
  *
- * unpack medical supplies
+ * ALL OF THEM, IN ONE PULL. A man working on a casualty under fire should not
+ * be reopening an interaction menu five times, and a casualty is not going to
+ * use the kit himself while he is out. One activation clears whatever he has.
+ *
+ * REMOVED FIRST, THEN GIVEN. FUNC(addItem) falls back to the ground when the
+ * player has no room for a bag, so a bag can never be destroyed by taking it -
+ * worst case it lands at the player's feet. The removal still happens first, so
+ * a full player cannot duplicate the bag by taking it twice.
+ *
+ * THE CASUALTY IS NOT NECESSARILY LOCAL. removeItem on a remote unit does
+ * nothing at all, so the strip runs where the casualty is and the handover
+ * comes back to the player - who is, by definition, local to himself.
  *
  * Arguments:
- * 0: unit - <OBJECT>
+ * 0: Player <OBJECT>
+ * 1: Casualty <OBJECT>
  *
- * Return:
- * nothing
+ * Return Value:
+ * The bags taken <ARRAY of STRING>
  *
  * Example:
- * [player] call ghost_medical_supplies_fnc_doUnpackFirstAid;
+ * [player, cursorObject] call ghost_medbags_fnc_doTake;
  *
+ * Public: No
  */
 
-// -------------------------------------------------------------------------------------------------
+params [["_player", objNull, [objNull]], ["_target", objNull, [objNull]]];
 
-params ["_unit", "_target"];
+if (isNull _player || {isNull _target}) exitWith {[]};
 
-private _order = [1, 2, 3];
-private _overflow = true;
+private _carried = items _target;
+private _taken = MEDBAG_ITEMS select {_x in _carried};
 
-_target removeItem "ghost_medbags_FirstAid";
+if (_taken isEqualTo []) exitWith {
+    INFO_1("%1 carries no medical bag",_target);
+    []
+};
 
-[_unit, "ghost_medbags_FirstAid", 1, _order, _overflow] call EFUNC(common,addItem);
+// One count per class, because a casualty can be carrying two of the same bag
+// and the action should hand over both.
+{
+    private _item = _x;
+    private _n = {_x isEqualTo _item} count _carried;
+
+    [_target, _item, _n] remoteExec [QFUNC(stripBag), _target];
+    [_player, _item, _n, [1, 2, 3], true] call EFUNC(common,addItem);
+} forEach _taken;
+
+INFO_3("%1 took %2 from %3",_player,_taken,_target);
+
+_taken

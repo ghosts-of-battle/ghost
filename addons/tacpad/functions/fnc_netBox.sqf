@@ -34,7 +34,7 @@ params [["_net", "", [""]], ["_addressable", false, [false]]];
 // your own group.
 if (_net isEqualTo "SQUAD") exitWith {format ["G:%1", groupId (group player)]};
 
-if (_net isEqualTo "" || {_net isEqualTo "ALL"}) exitWith {
+if (_net isEqualTo "" || _net isEqualTo "ALL") exitWith {
     if (_addressable) then {
         private _boxes = ((EGVAR(messaging,namedBoxes) splitString ",") apply {trim _x}) select {_x isNotEqualTo ""};
         format ["B:%1", _boxes param [0, "HQ"]]

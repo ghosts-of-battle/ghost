@@ -25,7 +25,7 @@ if (isClass (configFile >> "CfgPatches" >> "task_force_radio")
         // TFAR: [unit, radioClass, radioType, additionalChannel, buttonDown]
         // radioType 1 is long range; 0 is the squad set and never reported.
         params [["_unit", objNull], "_radio", ["_type", -1], "", ["_down", false]];
-        if (_down && {_type == 1}) then {
+        if (_down && _type == 1) then {
             [_radio] call FUNC(onTransmit);
         };
     }, player] call TFAR_fnc_addEventHandler;

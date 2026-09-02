@@ -44,4 +44,4 @@ _s setObjectScale 0.4;
     _s setVariable ["mk", _mk];
 }, 12, [_s, _side, _radius, time + _life]] call CBA_fnc_addPerFrameHandler;
 
-[_unit, "<t color='#ffcc55'>UGS picket active</t>"] call FUNC(notify);
+[_unit, "UGS Picket", "Active."] call FUNC(notify);

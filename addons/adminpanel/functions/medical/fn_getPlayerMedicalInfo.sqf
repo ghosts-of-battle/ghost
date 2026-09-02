@@ -9,7 +9,7 @@
         0: OBJECT - Unit to retrieve stats from
         
     Returns:
-        ARRAY - ["conscious", "bpm", "bldpres", "bldvol", "pain", "o2"]
+        ARRAY - ["conscious", "bpm", "bldpres", "bldvol", "pain", "o2", "bloodType"]
 */
 
 #include "\z\ghost\addons\adminpanel\script_component.hpp"
@@ -39,6 +39,10 @@ private _pain = (_pain toFixed 2);
 
 private _o2 = str round (_unit getVariable ["ACE_medical_spo2", 0]);
 
-private _medInfo = [_conscious, _bpm, _bldpres, _bldvol, _pain, _o2];
+// the blood type is not ACE's - see ghost_common_fnc_bloodType
+private _blood = [_unit] call ghost_common_fnc_bloodType;
+if (_blood isEqualTo "") then { _blood = "N/A" };
+
+private _medInfo = [_conscious, _bpm, _bldpres, _bldvol, _pain, _o2, _blood];
 
 _medInfo

@@ -270,7 +270,7 @@ INFO_4("%1 tasked to %2 (%3), ingress %4",_callsign,mapGridPosition _pos,_mode,_
         };
 
         // Recalled, or the run has outlasted its patience.
-        if ((_logic getVariable [QGVAR(abort), false]) || {CBA_missionTime > _until}) exitWith {
+        if ((_logic getVariable [QGVAR(abort), false]) || CBA_missionTime > _until) exitWith {
             call _done;
             if (!isNull _logic) then {_logic setVariable [QGVAR(abort), false, true]};
             INFO_1("%1 off task - clearing the area",_callsign);

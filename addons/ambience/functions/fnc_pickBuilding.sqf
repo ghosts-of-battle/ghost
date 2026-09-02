@@ -35,7 +35,26 @@ if (_markers isNotEqualTo []) then {
     };
 };
 
-if (_cands isEqualTo []) exitWith {[]};
+// SAID ONCE PER TAG, NOT PER TICK. Silence here was the whole problem: the
+// modules logged that they were up and then nothing, ever, whether they were
+// waiting on the clock or failing to find a target every single time.
+//
+// A PLAIN STRING, NOT QGVAR - the key carries the caller's tag, and a macro
+// cannot paste a format specifier into a variable name.
+private _fnc_saidOnce = {
+    params ["_key"];
+    private _v = format [QUOTE(GVAR(said)) + "_%1", _key];
+    if (missionNamespace getVariable [_v, false]) exitWith {false};
+    missionNamespace setVariable [_v, true];
+    true
+};
+
+if (_cands isEqualTo []) exitWith {
+    if ([_tag + "_players"] call _fnc_saidOnce) then {
+        INFO_1("%1: no living conscious player inside the markers - waiting",_tag);
+    };
+    []
+};
 
 private _who = selectRandom _cands;
 private _houses = (nearestObjects [_who, ["House"], _bandMax]) select {
@@ -44,6 +63,11 @@ private _houses = (nearestObjects [_who, ["House"], _bandMax]) select {
     && {[sideUnknown, getPosATL _h, _tag, _markers] call EFUNC(common,taorGate)}
 };
 
-if (_houses isEqualTo []) exitWith {[]};
+if (_houses isEqualTo []) exitWith {
+    if ([_tag + "_houses"] call _fnc_saidOnce) then {
+        INFO_3("%1: no building %2-%3m from the chosen player - waiting",_tag,_bandMin,_bandMax);
+    };
+    []
+};
 
 getPosATL (selectRandom _houses)

@@ -66,7 +66,7 @@ whose ground is whose starts there.
 
 ## Ships
 
-49 functions.
+53 functions.
 
 ## CBA settings
 
@@ -77,13 +77,14 @@ whose ground is whose starts there.
 
 ## Functions
 
-<details><summary>49</summary>
+<details><summary>53</summary>
 
 - `ghost_common_fnc_addDebugCommand`
 - `ghost_common_fnc_addItem`
 - `ghost_common_fnc_addMultipleParachutesToObject`
 - `ghost_common_fnc_addParachuteToObject`
 - `ghost_common_fnc_alert`
+- `ghost_common_fnc_bloodType`
 - `ghost_common_fnc_conditionalPFEH`
 - `ghost_common_fnc_contactBest`
 - `ghost_common_fnc_contactGet`
@@ -92,6 +93,8 @@ whose ground is whose starts there.
 - `ghost_common_fnc_debugCommand`
 - `ghost_common_fnc_debugReply`
 - `ghost_common_fnc_easterDate`
+- `ghost_common_fnc_edenClassPickLoad`
+- `ghost_common_fnc_edenClassPickSave`
 - `ghost_common_fnc_edenDroneFactionLoad`
 - `ghost_common_fnc_edenDroneFactionSave`
 - `ghost_common_fnc_ensureSafeLanding`
@@ -104,6 +107,7 @@ whose ground is whose starts there.
 - `ghost_common_fnc_isOverWater`
 - `ghost_common_fnc_isUnconscious`
 - `ghost_common_fnc_lambsOff`
+- `ghost_common_fnc_listClasses`
 - `ghost_common_fnc_listFactionDrones`
 - `ghost_common_fnc_listGroupsWithPlayers`
 - `ghost_common_fnc_modal`

@@ -16,4 +16,6 @@ ADDON = false;
 // these were the exception because they were written from scratch in one go.
 #include "XEH_PREP.hpp"
 
+#include "initSettings.inc.sqf"
+
 ADDON = true;

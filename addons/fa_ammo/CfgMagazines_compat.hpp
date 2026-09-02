@@ -382,6 +382,14 @@
     class FA_10Rnd_93x64_Type40_T_Blue: FA_o_10Rnd_93x64_Type40_T_Blue {};
     class FA_10Rnd_93x64_Type40_T_Orange: FA_o_10Rnd_93x64_Type40_T_Orange {};
     class FA_10Rnd_93x64_Type40_T_IR: FA_o_10Rnd_93x64_Type40_T_IR {};
+    class FA_150Rnd_93x64_Type40: FA_o_150Rnd_93x64_Type40 {};
+    class FA_150Rnd_93x64_Type40_T_Red: FA_o_150Rnd_93x64_Type40_T_Red {};
+    class FA_150Rnd_93x64_Type40_T_Yellow: FA_o_150Rnd_93x64_Type40_T_Yellow {};
+    class FA_150Rnd_93x64_Type40_T_Green: FA_o_150Rnd_93x64_Type40_T_Green {};
+    class FA_150Rnd_93x64_Type40_T_White: FA_o_150Rnd_93x64_Type40_T_White {};
+    class FA_150Rnd_93x64_Type40_T_Blue: FA_o_150Rnd_93x64_Type40_T_Blue {};
+    class FA_150Rnd_93x64_Type40_T_Orange: FA_o_150Rnd_93x64_Type40_T_Orange {};
+    class FA_150Rnd_93x64_Type40_T_IR: FA_o_150Rnd_93x64_Type40_T_IR {};
     class FA_10Rnd_408_Mk240: FA_b_10Rnd_408_Mk240 {};
     class FA_10Rnd_408_Mk240_T_Red: FA_b_10Rnd_408_Mk240_T_Red {};
     class FA_10Rnd_408_Mk240_T_Yellow: FA_b_10Rnd_408_Mk240_T_Yellow {};

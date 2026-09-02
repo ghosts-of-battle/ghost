@@ -17,12 +17,4 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-4 weapon/item classes, 1 function.
-
-## Functions
-
-<details><summary>1</summary>
-
-- `ghost_optics_ef_fnc_empty`
-
-</details>
+8 weapon/item classes.

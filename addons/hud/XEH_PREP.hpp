@@ -23,3 +23,4 @@ PREP(widgetRadio);
 PREP(widgetEw);
 PREP(widgetSquad);
 PREP(widgetTimer);
+PREP(widgetAps);

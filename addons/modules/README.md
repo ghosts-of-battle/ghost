@@ -17,7 +17,7 @@ modules are placed directly, as they always were.
 
 ## Ships
 
-4 unit classes, 8 functions.
+4 unit classes, 7 functions.
 
 ## Eden modules
 
@@ -47,12 +47,11 @@ Group Side
 
 ## Functions
 
-<details><summary>8</summary>
+<details><summary>7</summary>
 
 - `ghost_modules_fnc_aiFollower`
 - `ghost_modules_fnc_aiHunter`
 - `ghost_modules_fnc_aiSpawner`
-- `ghost_modules_fnc_empty`
 - `ghost_modules_fnc_moduleAiHunter`
 - `ghost_modules_fnc_moduleAiSpawner`
 - `ghost_modules_fnc_moduleHealArea`

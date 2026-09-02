@@ -10,6 +10,7 @@ HuntIR-style delivery. Pops a parachute at the round's apex and lets the payload
 
 - `ace_ballistics` _(external)_
 - `ghost_fa_main`
+- `ghost_notify`
 - `cba_main` _(external)_
 - `A3_Weapons_F` _(external)_
 

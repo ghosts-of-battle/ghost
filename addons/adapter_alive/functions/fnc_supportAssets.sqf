@@ -80,7 +80,7 @@ private _out = +_extra;
         };
 
         private _raw = toUpper (_veh getVariable [_statusName, ""]);
-        private _status = ["idle", toLower _raw] select (_raw isNotEqualTo "" && {_raw isNotEqualTo "NONE"});
+        private _status = ["idle", toLower _raw] select (_raw isNotEqualTo "" && _raw isNotEqualTo "NONE");
 
         _out pushBack [
             format ["%1:%2", _typeName, _forEachIndex],

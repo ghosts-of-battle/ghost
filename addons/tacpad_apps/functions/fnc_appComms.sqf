@@ -101,7 +101,7 @@ if (_cached isEqualTo []) then {
                 params ["", "_ctrl"];
                 private _t = _ctrl getVariable [QGVAR(replyTemplate), ""];
                 private _th = _ctrl getVariable [QGVAR(replyThread), ""];
-                if (_t == "" || {_th == ""}) exitWith {};
+                if (_t == "" || _th == "") exitWith {};
 
                 // A reply with fields of its own is a card to fill in, and the
                 // card is the reader's right pane.

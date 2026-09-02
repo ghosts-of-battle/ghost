@@ -36,6 +36,24 @@
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(hideOwnGroup),
+    "CHECKBOX",
+    ["Hide own group marker", "Your own group's marker is not drawn on your map - it sits on top of you and hides the ground. Everyone else on the net still sees it, and your own men keep their member marks."],
+    ["Ghosts of Battle", "BFT"],
+    true,
+    0
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(showVirtual),
+    "CHECKBOX",
+    ["Show virtual friendlies", "Friendly groups ALiVE is simulating off-map are drawn faded, from the commander's own picture. Nothing about them is secret to their side."],
+    ["Ghosts of Battle", "BFT"],
+    true,
+    0
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(updateDelay),
     "SLIDER",
     ["Update delay", "Delay between group marker updates."],

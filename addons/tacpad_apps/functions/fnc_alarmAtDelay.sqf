@@ -43,6 +43,7 @@ if (_delta <= 0) then {_delta = _delta + 86400};
 // Treating that as "immediately" would be worse than treating it as "at the
 // same wall-clock offset", which is what falling back to 1x does.
 private _mult = timeMultiplier;
-if (!(_mult isEqualType 0) || {_mult <= 0}) then {_mult = 1};
+if (!(_mult isEqualType 0)) then {_mult = 0};
+if (_mult <= 0) then {_mult = 1};
 
 _delta / _mult

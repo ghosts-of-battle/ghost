@@ -204,6 +204,7 @@ class CfgVehicles {
                 displayName = "BLUFOR Launcher Classes";
                 tooltip = "Comma-separated launcher classes for the BLUFOR battery. BLANK uses the shared Launcher Classes below.";
                 typeName = "STRING";
+                control = "ghost_ClassPick_Static_West";
                 defaultValue = "''";
                 expression = QUOTE(_this setVariable [ARR_2('launcherWest',_value)]);
             };
@@ -232,6 +233,7 @@ class CfgVehicles {
                 displayName = "OPFOR Launcher Classes";
                 tooltip = "Comma-separated launcher classes for the OPFOR battery. BLANK uses the shared Launcher Classes below.";
                 typeName = "STRING";
+                control = "ghost_ClassPick_Static_East";
                 defaultValue = "''";
                 expression = QUOTE(_this setVariable [ARR_2('launcherEast',_value)]);
             };
@@ -260,6 +262,7 @@ class CfgVehicles {
                 displayName = "Independent Launcher Classes";
                 tooltip = "Comma-separated launcher classes for the Independent battery. BLANK uses the shared Launcher Classes below.";
                 typeName = "STRING";
+                control = "ghost_ClassPick_Static_Guer";
                 defaultValue = "''";
                 expression = QUOTE(_this setVariable [ARR_2('launcherGuer',_value)]);
             };
@@ -268,6 +271,7 @@ class CfgVehicles {
                 displayName = "Launcher Classes";
                 tooltip = "Comma-separated static classes the battery stands up around the module. BLANK places the addon's own 3K72 Burevestnik. One is drawn per launcher.";
                 typeName = "STRING";
+                control = "ghost_ClassPick_Static";
                 defaultValue = "''";
                 expression = QUOTE(_this setVariable [ARR_2('launcher_classes',_value)]);
             };
@@ -284,6 +288,7 @@ class CfgVehicles {
                 displayName = "Missile Classes";
                 tooltip = "Comma-separated missile classes; each launch draws one. BLANK fires the addon's own Burevestnik round.";
                 typeName = "STRING";
+                control = "ghost_ClassPick_Vehicle";
                 defaultValue = "''";
                 expression = QUOTE(_this setVariable [ARR_2('missile_classes',_value)]);
             };
@@ -292,6 +297,7 @@ class CfgVehicles {
                 displayName = "Decoy Drone Classes";
                 tooltip = "Comma-separated vehicle classes for the decoy that rides the missile; each launch draws one. BLANK uses the addon's own drone, side-matched hostile to the target ship. Pick a class whose SIDE is hostile to the ships it will attack, or their escorts will not engage it.";
                 typeName = "STRING";
+                control = "ghost_ClassPick_Uav";
                 defaultValue = "''";
                 expression = QUOTE(_this setVariable [ARR_2('decoy_classes',_value)]);
             };

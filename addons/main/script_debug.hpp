@@ -7,14 +7,8 @@
 
 #ifdef DISABLE_COMPILE_CACHE
     #define LINKFUNC(x) {_this call FUNC(x)}
-    #define PREP_RECOMPILE_ADD_BUTTON \
-        if (isNil 'PREFIX##_PREP_RECOMPILE_BUTTON') then {\
-            [] spawn {\
-                INFO('Adding Recompilation button');\
-                [['Recomp. PREFIX', 'Recompile functions of PREFIX'], {call PREFIX##_PREP_RECOMPILE}] call EFUNC(debug_console,addButton);\
-            };\
-            PREFIX##_PREP_RECOMPILE_BUTTON = true;\
-        }
+    // No recompile button: ghost ships no debug console addon.
+    #define PREP_RECOMPILE_ADD_BUTTON ;
     #define PREP_RECOMPILE_START    if (isNil 'PREFIX##_PREP_RECOMPILE') then {PREFIX##_RECOMPILES = []; PREFIX##_PREP_RECOMPILE = {{call _x} forEach PREFIX##_RECOMPILES; diag_frameNo}}; private _recomp = {INFO('Compiling');
     #define PREP_RECOMPILE_END      }; call _recomp; PREFIX##_RECOMPILES pushBack _recomp; PREP_RECOMPILE_ADD_BUTTON;
 #else

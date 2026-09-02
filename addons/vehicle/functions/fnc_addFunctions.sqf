@@ -20,7 +20,7 @@ params [["_vehicle", objNull, [objNull]]];
 
 if (!isNil{_vehicle getVariable QEGVAR(VehicleFunc,Functions)}) exitWith {SHOW_WARNING_2("VehicleFunctions","Vehicle functions already applied for %1 [%2].",_vehicle,typeOf _vehicle);};
 
-INFO_2("VehicleFunctions","Applying vehicle functions to %1 (%2)",_vehicle,typeOf _vehicle);
+TRACE_INFO_2("VehicleFunctions","Applying vehicle functions to %1 (%2)",_vehicle,typeOf _vehicle);
 
 
 _vehicle setVariable [QEGVAR(VehicleFunc,Functions), true];

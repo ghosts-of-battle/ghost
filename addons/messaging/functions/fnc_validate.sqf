@@ -79,7 +79,7 @@ private _seenExclusive = createHashMap;
             };
         };
         case "grid": {
-            if !(_value isEqualType [] || {_value isEqualType ""}) exitWith {
+            if !(_value isEqualType [] || _value isEqualType "") exitWith {
                 _why = format ["%1 must be a position or a grid", _label];
             };
         };

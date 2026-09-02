@@ -11,6 +11,7 @@ same loadout and injuries.
 ## Requires
 
 - `ghost_main`
+- `ghost_notify`
 - `ace_interact_menu` _(external)_
 - `ace_common` _(external)_
 - `ace_medical` _(external)_

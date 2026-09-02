@@ -9,7 +9,7 @@ class CfgGroups {
     class West {
 
         class ghost_Marine_des {
-            name = "Ghost Marine (Desert)";
+            name = "2040 Marine (Desert)";
 
             class Armored {
                 name = "Armored";
@@ -99,28 +99,28 @@ class CfgGroups {
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MBT_01_cannon_MJTF_Des";
+                        vehicle = "ghost_Marine_des_B_qav_abramsx";
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MBT_01_cannon_MJTF_Des";
+                        vehicle = "ghost_Marine_des_B_qav_abramsx";
                         rank = "SERGEANT";
                         position[] = {10,-10,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MBT_01_cannon_MJTF_Des";
+                        vehicle = "ghost_Marine_des_B_qav_abramsx";
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MBT_01_cannon_MJTF_Des";
+                        vehicle = "ghost_Marine_des_B_qav_abramsx";
                         rank = "CORPORAL";
                         position[] = {20,-20,0};
                     };
@@ -134,7 +134,7 @@ class CfgGroups {
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MBT_01_cannon_MJTF_Des";
+                        vehicle = "ghost_Marine_des_B_qav_abramsx";
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
@@ -148,7 +148,7 @@ class CfgGroups {
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MBT_01_cannon_MJTF_Des";
+                        vehicle = "ghost_Marine_des_B_qav_abramsx";
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
@@ -169,14 +169,14 @@ class CfgGroups {
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MBT_01_cannon_MJTF_Des";
+                        vehicle = "ghost_Marine_des_B_qav_abramsx";
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MBT_01_cannon_MJTF_Des";
+                        vehicle = "ghost_Marine_des_B_qav_abramsx";
                         rank = "SERGEANT";
                         position[] = {10,-10,0};
                     };
@@ -219,6 +219,13 @@ class CfgGroups {
                         vehicle = "ghost_Marine_des_EF_B_Marine_R_Des";
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 1;
+                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
                     };
                 };
 
@@ -500,6 +507,13 @@ class CfgGroups {
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
+
+                    class Unit4 {
+                        side = 1;
+                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
+                    };
                 };
 
                 class ghost_Marine_des_EF_B_MJTF_Des_InfTeam_AA {
@@ -534,6 +548,13 @@ class CfgGroups {
                         vehicle = "ghost_Marine_des_EF_B_Marine_AAA_Des";
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 1;
+                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
                     };
                 };
 
@@ -570,6 +591,13 @@ class CfgGroups {
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
+
+                    class Unit4 {
+                        side = 1;
+                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
+                    };
                 };
 
                 class ghost_Marine_des_EF_B_MJTF_Des_ReconPatrol {
@@ -604,6 +632,13 @@ class CfgGroups {
                         vehicle = "ghost_Marine_des_EF_B_Marine_Recon_Des";
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 1;
+                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
                     };
                 };
 
@@ -674,6 +709,13 @@ class CfgGroups {
                         vehicle = "ghost_Marine_des_EF_B_Marine_Recon_Exp_Des";
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
+                    };
+
+                    class Unit6 {
+                        side = 1;
+                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        rank = "PRIVATE";
+                        position[] = {-15,-15,0};
                     };
                 };
 
@@ -855,6 +897,13 @@ class CfgGroups {
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
+
+                    class Unit9 {
+                        side = 1;
+                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        rank = "PRIVATE";
+                        position[] = {25,-25,0};
+                    };
                 };
 
                 class ghost_Marine_des_EF_B_MJTF_Des_MechInf_AT {
@@ -924,6 +973,13 @@ class CfgGroups {
                         vehicle = "ghost_Marine_des_EF_B_Marine_AAT_Des";
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
+                    };
+
+                    class Unit9 {
+                        side = 1;
+                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        rank = "PRIVATE";
+                        position[] = {25,-25,0};
                     };
                 };
 
@@ -995,6 +1051,13 @@ class CfgGroups {
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
+
+                    class Unit9 {
+                        side = 1;
+                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        rank = "PRIVATE";
+                        position[] = {25,-25,0};
+                    };
                 };
 
             };
@@ -1035,6 +1098,13 @@ class CfgGroups {
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
+
+                    class Unit4 {
+                        side = 1;
+                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
+                    };
                 };
 
                 class ghost_Marine_des_EF_B_MJTF_Des_MotInf_AT {
@@ -1069,6 +1139,13 @@ class CfgGroups {
                         vehicle = "ghost_Marine_des_EF_B_Marine_AAT_Des";
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 1;
+                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
                     };
                 };
 
@@ -1105,6 +1182,13 @@ class CfgGroups {
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
+
+                    class Unit4 {
+                        side = 1;
+                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
+                    };
                 };
 
                 class ghost_Marine_des_EF_B_MJTF_Des_MotInf_MGTeam {
@@ -1140,6 +1224,13 @@ class CfgGroups {
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
+
+                    class Unit4 {
+                        side = 1;
+                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
+                    };
                 };
 
                 class ghost_Marine_des_EF_B_MJTF_Des_MotInf_MortTeam {
@@ -1174,6 +1265,13 @@ class CfgGroups {
                         vehicle = "ghost_Marine_des_EF_B_Marine_AMort_Des";
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 1;
+                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
                     };
                 };
 
@@ -1300,6 +1398,13 @@ class CfgGroups {
                         vehicle = "ghost_Marine_des_EF_B_Marine_Medic_Des";
                         rank = "PRIVATE";
                         position[] = {-5,-14,0};
+                    };
+
+                    class Unit17 {
+                        side = 1;
+                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        rank = "PRIVATE";
+                        position[] = {45,-45,0};
                     };
                 };
 

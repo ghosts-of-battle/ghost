@@ -11,7 +11,7 @@ class CfgVehicles {
         author = "Brecon";
         vehicleClass = "Modules";
         category = QPREFIX;
-        function =  QUOTE(DFUNC(modulesafestart));
+        function =  QUOTE(DFUNC(moduleSafeStart));
         functionPriority = 1;
         isGlobal = 1;
         isTriggerActivated = 0;

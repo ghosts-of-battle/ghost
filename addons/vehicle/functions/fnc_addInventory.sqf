@@ -21,7 +21,7 @@ if (!EGVAR(Settings,enableVehicleInventory)) exitWith {};
 if (!isNil{_vehicle getVariable QEGVAR(VehicleFunc,Inventory)}) exitWith {SHOW_WARNING_2("VehicleInventory","Vehicle inventory already applied for %1 [%2].",_vehicle,typeOf _vehicle);};
 if (!(_vehicle call EFUNC(systems,isValidFaction))) exitWith {};
 
-INFO_2("VehicleInventory","Applying vehicle inventory to %1 (%2)",_vehicle,typeOf _vehicle);
+TRACE_INFO_2("VehicleInventory","Applying vehicle inventory to %1 (%2)",_vehicle,typeOf _vehicle);
 
 private _vehicleType = _vehicle getVariable [QEGVAR(Vehicle,type), typeOf _vehicle];
 
@@ -292,6 +292,33 @@ if (_vehicle isKindOf "VTOL_01_unarmed_base_F") then {
 
     [_vehicle, 
         GET_CONTAINER("vehicle_planeTransport")
+    ] call EFUNC(logistics,setCargo);
+};
+
+
+// QAV MV-35 PHANTOM - a helicopter load in a fixed-wing class tree. Its own
+// base is VTOL_03_unarmed_base_QAV : VTOL_Base_F : Plane_Base_F, so neither
+// the Helicopter_Base_H block above nor the VTOL_01 one just above ever
+// matched, so the aircraft flew on QAV's own stock load - on the MJTF Woodland
+// that is two EF MXCs, four coyote mags, two red smokes, four FirstAidKits, a
+// Toolkit, a Medikit and twenty-four parachutes, none of them ours. It is a
+// rear-ramp troop lift, so it draws the TRANSPORT HELICOPTER container (user,
+// 2026-09-01). setCargo clears first, so the parachutes go with the rest -
+// the same as the Blackfish above.
+//
+// vehicle_heliTransport and vehicle_planeTransport are the same ten lines
+// today - the choice is the NAME, and the name is what any future edit to
+// either list will follow.
+//
+// The base class covers every variant: base/T/W/D from QAV_MV35 and
+// QAV_MV35_WS, and MJTF Woodland, MJTF Desert and Navy from QAV_MV35_EF.
+//
+// ACE cargo SPACE is left at the default, unlike the Blackfish above at 45 -
+// this sets what is IN the aircraft, which is what a transport helicopter
+// load means. Say so and it gets a ramp aircraft's space as well.
+if (_vehicle isKindOf "VTOL_03_unarmed_base_QAV") then {
+    [_vehicle, 
+        GET_CONTAINER("vehicle_heliTransport")
     ] call EFUNC(logistics,setCargo);
 };
 

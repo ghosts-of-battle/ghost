@@ -16,3 +16,7 @@
 // the game's own headers.
 #include "\a3\ui_f\hpp\defineCommonGrids.inc"
 #include "\a3\ui_f\hpp\defineResincl.inc"
+
+// The platoon tab row - four consecutive controls in gui.hpp, read back by
+// index in fn_initGroupMenu and fn_selectPlatoon. Named once so the two agree.
+#define IDC_PLT_TAB 9720

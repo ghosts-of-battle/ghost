@@ -17,12 +17,4 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-3 weapon/item classes, 1 function.
-
-## Functions
-
-<details><summary>1</summary>
-
-- `ghost_vests_aegis_fnc_empty`
-
-</details>
+3 weapon/item classes.

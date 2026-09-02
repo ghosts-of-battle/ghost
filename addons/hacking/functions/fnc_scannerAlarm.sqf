@@ -30,7 +30,7 @@ GVAR(alarmPressAt) = time;
 // the latest actually arms, so the timer effectively restarts with each press.
 [{
     params ["_stamp"];
-    if (GVAR(alarmPressAt) != _stamp || {GVAR(alarmPending) <= 0}) exitWith {};
+    if (GVAR(alarmPressAt) != _stamp || GVAR(alarmPending) <= 0) exitWith {};
     [QGVAR(alarmAdd), [GVAR(alarmPending), name player]] call CBA_fnc_serverEvent;
     ["Alarm", format ["Alarm armed: %1 min, all scanners.", GVAR(alarmPending) / 60],
         [0.914, 0.651, 0.235, 1]] call EFUNC(notify,notify);

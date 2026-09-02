@@ -20,5 +20,5 @@ private _item = getText (configOf _object >> "correspondingItem");
 !isNull _object
 && {alive _unit}
 && {isNull objectParent _unit}
-&& {_item != ""}
+&& _item != ""
 && {_unit canAdd _item}

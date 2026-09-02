@@ -425,11 +425,96 @@ class XtdGearModels {
                 };
             };
         };
+        // THE ADDGIS G433 (user, 2026-08-30). GHOST's rifle - the JCA HK433 is
+        // the same platform and folds on its own; this is AddGis's family:
+        // three configurations (plain, foregrip, underbarrel GL) in three
+        // colours. Laid out like GVAR(MX) above - the launcher variant sits
+        // on the type axis, not in a model of its own, so the arsenal shows
+        // one G433 with two rows of buttons instead of nine rifles.
+        class GVAR(G433) {
+            label = "G433";
+            options[] = {"camo", "type"};
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"Black", "Khaki", "Sand"};
+                class Black {
+                    label = "Black";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class Khaki {
+                    label = "Khaki";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class Sand {
+                    label = "Sand";
+                    image = "z\aceax\addons\gearinfo\data\camo\sage.paa";
+                };
+            };
+            class type {
+                alwaysSelectable = 1;
+                values[] = {"G433", "G433_FG", "G433_GL"};
+                class G433 {
+                    label = "G433";
+                };
+                class G433_FG {
+                    label = "G433 Grip";
+                };
+                class G433_GL {
+                    label = "G433 GL";
+                };
+            };
+        };
     };
 };
 
 class XtdGearInfos {
     class CfgWeapons {
+        // AddGis G433 - see GVAR(G433)
+        class AddGis_arifle_G433_F {
+            model = QGVAR(G433);
+            camo = "Black";
+            type = "G433";
+        };
+        class AddGis_arifle_G433_khk_F {
+            model = QGVAR(G433);
+            camo = "Khaki";
+            type = "G433";
+        };
+        class AddGis_arifle_G433_snd_F {
+            model = QGVAR(G433);
+            camo = "Sand";
+            type = "G433";
+        };
+        class AddGis_arifle_G433_FG_F {
+            model = QGVAR(G433);
+            camo = "Black";
+            type = "G433_FG";
+        };
+        class AddGis_arifle_G433_FG_khk_F {
+            model = QGVAR(G433);
+            camo = "Khaki";
+            type = "G433_FG";
+        };
+        class AddGis_arifle_G433_FG_snd_F {
+            model = QGVAR(G433);
+            camo = "Sand";
+            type = "G433_FG";
+        };
+        class AddGis_arifle_G433_GL_F {
+            model = QGVAR(G433);
+            camo = "Black";
+            type = "G433_GL";
+        };
+        class AddGis_arifle_G433_GL_khk_F {
+            model = QGVAR(G433);
+            camo = "Khaki";
+            type = "G433_GL";
+        };
+        class AddGis_arifle_G433_GL_snd_F {
+            model = QGVAR(G433);
+            camo = "Sand";
+            type = "G433_GL";
+        };
         // MX
         class arifle_MX_F {
             model = QGVAR(MX);

@@ -1,7 +1,17 @@
 #include "script_component.hpp"
 /*
  * Author: Ghost
- * JAMMING: how much of the spectrum is being sat on, and which band.
+ * JAMMING: which of the three services is down, and how hard.
+ *
+ * ONE ROW PER DOMAIN - RADIO, DATA, GPS (user, 2026-08-31). This was one big
+ * percentage and one bar, which stopped meaning anything the moment a terminal
+ * could take the voice net without touching TAC//MSG: the player read 60% and
+ * could not tell what they had lost. All three are always drawn, so "what still
+ * works" is one glance rather than three experiments.
+ *
+ * The numbers come off FUNC(sweep) - one read for the whole HUD - at the
+ * indices EFUNC(hacking,scannerRead) appends them to, so this cannot disagree
+ * with the tacpad JAM app or with what the radios are actually doing.
  *
  * Arguments:
  * 0: The slot control <CONTROL>
@@ -43,37 +53,45 @@ if (_sweep isEqualTo []) exitWith {
     [_ctrl, [_pad, _y, _w - 2 * _pad, _rowH], "NO SET", _dim, (0.9 * _k), true] call EFUNC(tacpad,drawText);
 };
 
-_sweep params ["", "", "", ["_jam", 0]];
-private _pct = round (_jam * 100);
+_sweep params ["", "", "", ["_jam", 0], "", "", "", "",
+    ["_jamRadio", 0], ["_jamData", 0], ["_jamGps", 0]];
 
-private _colour = switch (true) do {
-    case (_pct >= 50): {_accent};
-    case (_pct > 0): {_amber};
-    default {_ink};
-};
+// Older scannerRead builds had no per-domain figures. Rather than draw three
+// empty rows, fall back to the aggregate on the RADIO row - it is what the
+// single bar always meant.
+if (_jamRadio + _jamData + _jamGps <= 0 && _jam > 0) then { _jamRadio = _jam };
 
-[_ctrl, [_pad, _y, _w - 2 * _pad, _rowH * 1.5], format ["%1%2", _pct, "%"], _colour, (1.8 * _k), true] call EFUNC(tacpad,drawText);
+private _rows = [["RADIO", _jamRadio], ["DATA", _jamData], ["GPS", _jamGps]];
 
-// A BAR, because a percentage is a number and a bar is a glance. The one thing
-// this readout is for is knowing whether to bother transmitting.
-private _barY = _y + _rowH * 1.7;
-private _barW = _w - 2 * _pad;
-[_ctrl, [_pad, _barY, _barW, _rowH * 0.4], _line] call EFUNC(tacpad,drawFill);
-if (_pct > 0) then {
-    [_ctrl, [_pad, _barY, _barW * (_pct / 100), _rowH * 0.4], _colour] call EFUNC(tacpad,drawFill);
-};
+{
+    _x params ["_name", "_f"];
 
-// JAM ONLY. Your channel and frequency lived on this tile too, which made it
-// half a radio readout - that is the RADIO tile's job, and the user said so.
-// The word under the bar is the same band the scanner's NET STATE speaks.
-private _state = 0;
-if (_pct > 0) then {_state = 1};
-if (_pct >= 75) then {_state = 2};
+    private _pct = round (_f * 100);
+    private _state = switch (true) do {
+        case (_pct >= 75): {2};
+        case (_pct > 0): {1};
+        default {0};
+    };
+    private _colour = [_mute, _amber, _accent] select _state;
 
-private _row = _barY + _rowH * 0.8;
-[
-    _ctrl, [_pad, _row, _w - 2 * _pad, _rowH],
-    ["CLEAR", "DEGRADED", "SMOTHERED"] select _state,
-    ([_mute, _amber, _accent] select _state),
-    (0.68 * _k), true, "left", true
-] call EFUNC(tacpad,drawText);
+    private _top = _y + _rowH * _forEachIndex;
+
+    // Name and figure on the left in a fixed column, so the three bars line up
+    // under each other and the block reads as one instrument.
+    [
+        _ctrl, [_pad, _top, _w * 0.46, _rowH],
+        format ["%1 %2%3", _name, _pct, "%"],
+        _colour, (0.78 * _k), true, "left", true
+    ] call EFUNC(tacpad,drawText);
+
+    // A BAR, because a percentage is a number and a bar is a glance. The one
+    // thing this readout is for is knowing whether to bother transmitting.
+    private _barX = _pad + _w * 0.5;
+    private _barW = (_w - _barX - _pad) max 0;
+    private _barY = _top + _rowH * 0.34;
+    private _barH = _rowH * 0.32;
+    [_ctrl, [_barX, _barY, _barW, _barH], _line] call EFUNC(tacpad,drawFill);
+    if (_pct > 0) then {
+        [_ctrl, [_barX, _barY, _barW * (_pct / 100), _barH], _colour] call EFUNC(tacpad,drawFill);
+    };
+} forEach _rows;

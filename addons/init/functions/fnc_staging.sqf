@@ -50,7 +50,7 @@ private _condition3 = { isNull objectParent player && {player getVariable ["ace_
 private _stagingCat = [
     QEGVAR(Actions,StagingCategory), 
     "Staging Zone", 
-    "data\icon\ghosticon.paa", 
+    "z\ghost\addons\media\images\Icons\ghosticon.paa", 
     {true}, 
     _condition1
     ] call ace_interact_menu_fnc_createAction;
@@ -60,7 +60,7 @@ private _category = ["ACE_SelfActions", QEGVAR(Actions,StagingCategory)];
 
 // addAction notice
 player addAction [
-    "<img image='data\icon\ghosticon.paa' /> <t color='#ffc61a'>GOB Staging Zone</t> <img image='data\icon\ghosticon.paa' />",
+    "<img image='z\ghost\addons\media\images\Icons\ghosticon.paa' /> <t color='#ffc61a'>GOB Staging Zone</t> <img image='z\ghost\addons\media\images\Icons\ghosticon.paa' />",
     {
         params ["_target", "_caller", "_actionId", "_arguments"];
         [
@@ -110,7 +110,7 @@ if EGVAR(patches,usesACE) then {
     private _arsenalCategory = [
         "arsenalCategory",
         "Arsenal",
-        "data\Icon\icon_arsenal_ca.paa",
+        "z\ghost\addons\media\images\Icons\icon_arsenal_ca.paa",
         {[player,player,false] call ace_arsenal_fnc_openBox},
         _condition3
     ] call ace_interact_menu_fnc_createAction;
@@ -121,7 +121,7 @@ if EGVAR(patches,usesACE) then {
     private _tpCategory = [
         "TPCategory",
         "TP",
-        "data\Icon\Teleport_Pos_64x64.paa",
+        "z\ghost\addons\media\images\Icons\Teleport_Pos_64x64.paa",
         {[] call ghost_teleport_fnc_open},
         _condition3
     ] call ace_interact_menu_fnc_createAction;

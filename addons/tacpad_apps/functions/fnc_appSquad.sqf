@@ -134,7 +134,7 @@ private _units = [];
         };
 
         private _health = round ((1 - damage _unit) * 100);
-        private _hurt = alive _unit && {!_out} && {_health < 90};
+        private _hurt = alive _unit && {!_out} && _health < 90;
 
         switch (true) do {
             case (!alive _unit): {_kia = _kia + 1; _gKia = _gKia + 1};
@@ -583,7 +583,7 @@ private _segH = ([0.62] call EFUNC(tacpad,textH)) + 1.2 * _padY;
         // KIA on the casualties line is not yours to press. You are alive - you
         // are holding the tablet - and the table takes that state off the engine
         // for everyone, so offering it here would only let you lie about it.
-        private _locked = _aceLine == 1 && {_forEachIndex == 3};
+        private _locked = _aceLine == 1 && _forEachIndex == 3;
         if (_locked) then {
             [_body, [_sx, _ry, _segW - _pad * 0.5, _segH], _dim, RULE_THIN] call EFUNC(tacpad,drawFrame);
             [

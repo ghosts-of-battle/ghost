@@ -29,9 +29,9 @@ if (isNull _player) exitWith {["Admin Panel", "No target found!", [0.831, 0.267,
 // ROLE GATING IS THE MISSION'S. Who may take a medic slot is a mission rule, so
 // there is nothing here to toggle when no mission defines one - and saying so is
 // better than a silent no-op that looks like a broken button.
-if (isNil "YMF_fnc_toggleRoleGrant") exitWith {
+if (isNil "ghost_groups_fnc_toggleRoleGrant") exitWith {
     ["Admin Panel", "This mission has no role gating to grant.", [1, 0.776, 0.102, 1]] call EFUNC(notify,notify);
 };
 
-[_player,_persistent,player] remoteExecCall ["YMF_fnc_toggleRoleGrant",2];
+[_player,_persistent,player] remoteExecCall ["ghost_groups_fnc_toggleRoleGrant",2];
 playSound "3DEN_notificationDefault";

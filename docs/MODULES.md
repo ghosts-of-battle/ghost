@@ -2,15 +2,6 @@
 
 Place from the 3DEN entity list under the listed category.
 
-## Air Defence (`airdefence`)
-
-### Ghost - Air Defence (temporary)
-
-- **Class** `ghost_moduleAirDefence`
-- **Category** ghost_modules
-- Places air defence for every ALiVE commander on the map. TEMPORARY - it stands in until ALiVE 3's own air defence is stable.<br>Conventional commanders (invasion, occupation) get radar-cued missile batteries. Asymmetric commanders get MANPAD teams instead - a guerrilla does not field a battery.<br>Where they go is read from ALiVE: each commander's own TAOR and objectives, never anything set here. Everything placed is profiled, so it costs nothing while nobody is near it.<br>Batteries Per Side - conventional commanders only, asymmetric get none Launchers Per Battery - set back from the radar that cues them Battery Spacing (m) - least distance between two batteries Radar / Launcher / MANPAD classes are set PER SIDE - the three commanders are three different armies. Leave any of them blank to pick from that commander's own faction. Clear Ground (m) - open ground a battery needs; a radar in a wood sees nothing MANPAD Teams Per Side - asymmetric commanders only
-- **Attributes** `launcherEast`, `launcherGuer`, `launcherWest`, `launchers`, `manpadEast`, `manpadGuer`, `manpadManEast`, `manpadManGuer`, `manpadManWest`, `manpadWest`, `openGround`, `radarEast`, `radarGuer`, `radarWest`, `rearmEvery`, `security`, `sitesPerSide`, `spacing`, `taorEast`, `taorGuer`, `taorWest`, `teamsPerSide`
-
 ## Ambience (`ambience`)
 
 ### Ghost - Ambient Shelling
@@ -36,6 +27,15 @@ Place from the 3DEN entity list under the listed category.
 - Coastal anti-ship batteries, one module for every side. Switch a side on and the addon sites a battery on coastal ground inside that side's TAOR markers, with that side's launchers, and places crewed launchers there - kill them all and the battery is silenced. Every interval a battery looks for a hull inside its search range and puts a Burevestnik into it - climb, sea-skimming cruise, terminal dive; it can be met head-on and it carries a decoy the defending side's AA will engage. With every switch off, the module is one battery for its own side, standing where you put it.
 - **Attributes** `cruise_alt`, `debug`, `decoy_classes`, `enableEast`, `enableGuer`, `enableWest`, `interceptable`, `interval`, `launcherEast`, `launcherGuer`, `launcherWest`, `launcher_classes`, `launcher_count`, `missile_classes`, `missile_speed`, `rearm_interval`, `search_range`, `taorEast`, `taorGuer`, `taorWest`, `target_classes`, `terminal_range`
 
+## APS (`aps`)
+
+### Ghost - APS
+
+- **Class** `ghost_moduleAPS`
+- **Category** ghost_modules
+- Placing this module turns on the APS, the active protection. Without it, the system is off.<br>Hard Kill - Launcher-and-charge systems that destroy incoming rockets and missiles short of the hull RF Burst - The microwave emitter: guided munitions lose guidance, drones drop, every radio nearby is jammed for a moment RF Burst On Helicopters - Peer+ helicopters carry the emitter as their DIRCM Tier Overrides - faction:tier pairs that bend the fit table for a mission Fit Overrides - class:fit pairs that name a vehicle's fit outright Debug - Log fits and intercepts, draw burst radii
+- **Attributes** `debug`, `fitOverrides`, `hardKill`, `rfAir`, `rfBurst`, `tierOverrides`
+
 ## Boarding (`boarding`)
 
 ### Ghost - Boarding Point
@@ -53,15 +53,6 @@ Place from the 3DEN entity list under the listed category.
 - **Category** ghost_modules
 - One taskable CAS drone on the support page. Place one module per airframe - many are allowed, and each is its own asset with its own losses.<br>The player sets the TARGET GRID, the INGRESS bearing and the EGRESS bearing on the support page. The drone appears at the ingress distance on that bearing, runs the target, and leaves on the egress bearing.<br>ORDNANCE on the support page lists what THIS airframe is carrying, by name - the run uses the heaviest thing aboard unless one is picked.<br>LOITER holds the drone over the point instead of striking it, and hands the gunner's seat to the ISR operator who asked for it - he needs a UAV terminal and the isISR variable. RTB ends it.<br>Airframe Class - Classname of the fixed-wing drone; blank for the side's vanilla UCAV Callsign - What the support page and the radio call it Airframes Available - How many times it may be shot down before the asset is expended; 0 for unlimited Ingress Distance (m) - How far out it appears, and how far it runs before despawning Attack Altitude (m) - Height above the terrain (ATL) the run is flown at Run Speed (km/h) - Capped at the airframe's own maximum Response Delay (sec) - Time from accepted request to the aircraft appearing Cooldown (sec) - Time after a run before this asset can be tasked again Terminal Search (m) - How far from the grid a laser spot or smoke is accepted as the real target; 0 for none
 - **Attributes** `airframes`, `altitude`, `callsign`, `cooldown`, `droneClass`, `searchRadius`, `spawnDelay`, `spawnDistance`, `speed`
-
-## IADS (`iads`)
-
-### Ghost - IADS / EMCON
-
-- **Class** `ghost_moduleIADS`
-- **Category** ghost_modules
-- Emission control for the air defence net. Every radar the enemy has blinks on and off on its own jittered timer, a minimum number stay lit so the side is never blind, and everything on the net shares one picture.<br>WHY IT MATTERS: a radar that never stops radiating is a beacon that can be waited out. One that blinks cannot - a strike has to accept that something will see it, and the pilot's problem becomes timing rather than patience.<br>It manages every side the players are not on. Nothing is placed and nothing is spawned: it manages the radars already standing, whoever put them there.<br>Blink Min / Max - the range each set re-rolls its own timer in Minimum Emitters - how many stay lit per side, whatever the blink says Rescan - how often it looks for radars that were not there before Link Whole Side - share the picture beyond the air-defence net Reveal Interval - how often the picture reaches the mod's threat board Ambush Mode - UNVERIFIED, see the tooltip and run `#ghost iads.probe` first
-- **Attributes** `ambush`, `blinkMax`, `blinkMin`, `debugMarkers`, `envelope`, `exempt`, `extraReceivers`, `linkAll`, `manageAir`, `minEmitters`, `rescan`, `revealEvery`
 
 ## Jamming (`jamming`)
 
@@ -140,5 +131,5 @@ Place from the 3DEN entity list under the listed category.
 
 - **Class** `ghost_moduleUAS`
 - **Category** ghost_modules
-- Placing this module turns on enemy drones. Without it, the system is off.<br>Airframes Per Side - How many drones a commander flies at once while its supply is intact After A Cache Is Lost - The ceiling while a supply cache is down Outage Min (sec) - Shortest time a destroyed cache holds the ceiling down Outage Max (sec) - Longest time Caches Per Side - Supply caches placed in each commander's area for players to find
-- **Attributes** `baseMax`, `cachesPerSide`, `patrolOver`, `reducedMax`, `uavEast`, `uavGuer`, `uavWest`, `windowMax`, `windowMin`
+- Placing this module turns on enemy drones. Without it, the system is off.<br>Airframes Per Side - How many drones a commander flies at once while its supply is intact West / East / Independent Airframes - That side's own ceiling; -1 uses Airframes Per Side, 0 grounds it After A Cache Is Lost - The ceiling while a supply cache is down Outage Min (sec) - Shortest time a destroyed cache holds the ceiling down Outage Max (sec) - Longest time Caches Per Side - Supply caches placed in each commander's area for players to find
+- **Attributes** `baseMax`, `cachesPerSide`, `maxEast`, `maxGuer`, `maxWest`, `patrolOver`, `reducedMax`, `uavEast`, `uavGuer`, `uavWest`, `windowMax`, `windowMin`

@@ -15,13 +15,12 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-5 functions.
+4 functions.
 
 ## Functions
 
-<details><summary>5</summary>
+<details><summary>4</summary>
 
-- `ghost_diag_fnc_aaWatch`
 - `ghost_diag_fnc_error`
 - `ghost_diag_fnc_info`
 - `ghost_diag_fnc_log`

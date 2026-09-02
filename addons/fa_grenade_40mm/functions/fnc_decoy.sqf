@@ -45,4 +45,4 @@ _ir attachTo [_d, [0,0,1.5]];
     );
 }, 1, [_d, _side, _radius, time + _life]] call CBA_fnc_addPerFrameHandler;
 
-[_unit, "<t color='#ffaa55'>Decoy emitting</t>"] call FUNC(notify);
+[_unit, "Decoy", "Emitting."] call FUNC(notify);

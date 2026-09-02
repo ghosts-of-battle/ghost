@@ -33,12 +33,12 @@ private _max = _logic getVariable [QGVAR(airframes), 3];
 private _lost = _logic getVariable [QGVAR(lost), 0];
 
 // 0 is unlimited - written that way on the module tooltip, honoured here.
-if (_max > 0 && {_lost >= _max}) exitWith {
+if (_max > 0 && _lost >= _max) exitWith {
     [false, "expended", format ["%1 has no airframes left", _logic getVariable [QGVAR(callsign), "CAS"]]]
 };
 
 private _status = _logic getVariable [QGVAR(status), "idle"];
-if (_status isNotEqualTo "idle" && {_status isNotEqualTo "cooldown"}) exitWith {
+if (_status isNotEqualTo "idle" && _status isNotEqualTo "cooldown") exitWith {
     [false, _status, "that aircraft is already on a task"]
 };
 

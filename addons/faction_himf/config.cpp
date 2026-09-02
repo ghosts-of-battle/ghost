@@ -4,95 +4,97 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         units[] = {
-            "ghost_HIMF_Atlas_B_H_APC_Wheeled_02_hmg_lxWS",
-            "ghost_HIMF_Atlas_B_H_APC_Wheeled_02_unarmed_lxWS",
-            "ghost_HIMF_Atlas_B_H_Boat_Transport_02_F",
-            "ghost_HIMF_Atlas_B_H_CommandoMortar_RF",
-            "ghost_HIMF_Atlas_B_H_Engineer_F",
-            "ghost_HIMF_Atlas_B_H_HMG_02_F",
-            "ghost_HIMF_Atlas_B_H_HMG_02_high_F",
-            "ghost_HIMF_Atlas_B_H_HeavyGunner_F",
-            "ghost_HIMF_Atlas_B_H_Heli_EC_03_RF",
-            "ghost_HIMF_Atlas_B_H_Heli_EC_04_military_RF",
-            "ghost_HIMF_Atlas_B_H_Heli_Light_01_F",
-            "ghost_HIMF_Atlas_B_H_Heli_Light_01_dynamicLoadout_F",
-            "ghost_HIMF_Atlas_B_H_Helicrew_F",
-            "ghost_HIMF_Atlas_B_H_Helipilot_F",
-            "ghost_HIMF_Atlas_B_H_Medic_F",
-            "ghost_HIMF_Atlas_B_H_Officer_F",
-            "ghost_HIMF_Atlas_B_H_Offroad_02_AT_F",
-            "ghost_HIMF_Atlas_B_H_Offroad_02_LMG_F",
-            "ghost_HIMF_Atlas_B_H_Offroad_02_unarmed_F",
-            "ghost_HIMF_Atlas_B_H_Pickup_AT_F",
-            "ghost_HIMF_Atlas_B_H_Plane_Transport_01_infantry_F",
-            "ghost_HIMF_Atlas_B_H_Plane_Transport_01_vehicle_F",
-            "ghost_HIMF_Atlas_B_H_Quadbike_01_F",
-            "ghost_HIMF_Atlas_B_H_RadioOperator_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_AR_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_A_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_Exp_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_GL_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_LAT_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_SL_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_TL_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_commando_AR_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_commando_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_commando_LAT_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_commando_M_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_commando_TL_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_commando_exp_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_commando_gl_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_commando_jtac_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_commando_medic_F",
-            "ghost_HIMF_Atlas_B_H_Soldier_unarmed_F",
-            "ghost_HIMF_Atlas_B_H_Truck_02_Ammo_F",
-            "ghost_HIMF_Atlas_B_H_Truck_02_F",
-            "ghost_HIMF_Atlas_B_H_Truck_02_box_F",
-            "ghost_HIMF_Atlas_B_H_Truck_02_cargo_F",
-            "ghost_HIMF_Atlas_B_H_Truck_02_flatbed_F",
-            "ghost_HIMF_Atlas_B_H_Truck_02_fuel_F",
-            "ghost_HIMF_Atlas_B_H_Truck_02_medical_F",
-            "ghost_HIMF_Atlas_B_H_Truck_02_transport_F",
-            "ghost_HIMF_Atlas_B_H_soldier_M_F",
-            "ghost_HIMF_Atlas_B_H_support_CMort_RF",
-            "ghost_HIMF_Plane_Civil_01_HIMF_F",
-            "ghost_HIMF_Aegis_B_A_Heli_Attack_03_F",
-            "ghost_HIMF_Aegis_B_E_Plane_Fighter_04_F",
-            "ghost_HIMF_B_UAV_01_F",
-            "ghost_HIMF_GX_B_RQ11B_UAV",
-            "ghost_HIMF_GX_B_BLACKHORNET_UAV",
-            "ghost_HIMF_B_Crocus_AP",
-            "ghost_HIMF_B_Crocus_AT",
-            "ghost_HIMF_B_KVN_AP",
-            "ghost_HIMF_B_KVN_AT",
-            "ghost_HIMF_B_SwitchBlade_300",
-            "ghost_HIMF_B_UGV_01_F",
-            "ghost_HIMF_B_UGV_01_rcws_F",
-            "ghost_HIMF_B_UGV_02_Demining_F",
-            "ghost_HIMF_B_UAV_06_F",
+            "ghost_HIMF_Rifleman",
+            "ghost_HIMF_Rifleman_Unarmed",
+            "ghost_HIMF_SquadLeader",
+            "ghost_HIMF_TeamLeader",
+            "ghost_HIMF_Autorifleman",
+            "ghost_HIMF_AmmoBearer",
+            "ghost_HIMF_Grenadier",
+            "ghost_HIMF_Rifleman_AT",
+            "ghost_HIMF_Rifleman_AA",
+            "ghost_HIMF_Rifleman_AAA",
+            "ghost_HIMF_Marksman",
+            "ghost_HIMF_HeavyGunner",
+            "ghost_HIMF_Medic",
+            "ghost_HIMF_Engineer",
+            "ghost_HIMF_ExplosiveSpecialist",
+            "ghost_HIMF_Officer",
+            "ghost_HIMF_RadioOperator",
+            "ghost_HIMF_MortarGunner",
+            "ghost_HIMF_MortarAssistant",
+            "ghost_HIMF_Crew",
+            "ghost_HIMF_Helipilot",
+            "ghost_HIMF_Helicrew",
+            "ghost_HIMF_Pilot",
+            "ghost_HIMF_Recon",
+            "ghost_HIMF_Recon_TL",
+            "ghost_HIMF_Recon_AR",
+            "ghost_HIMF_Recon_GL",
+            "ghost_HIMF_Recon_AT",
+            "ghost_HIMF_Recon_M",
+            "ghost_HIMF_Recon_Medic",
+            "ghost_HIMF_Recon_JTAC",
+            "ghost_HIMF_Recon_Demo",
+            "ghost_HIMF_UAV_01_Bag",
+            "ghost_HIMF_UAV_06_Bag",
             "ghost_HIMF_UAVOperator",
-            "ghost_HIMF_Crocus_AP_Operator",
-            "ghost_HIMF_Crocus_AT_Operator",
-            "ghost_HIMF_KVN_AP_Operator",
-            "ghost_HIMF_KVN_AT_Operator",
-            "ghost_HIMF_Mk153_Gunner"
+            "ghost_HIMF_PelicanOperator",
+            "ghost_HIMF_APC",
+            "ghost_HIMF_APC_HMG",
+            "ghost_HIMF_Boat",
+            "ghost_HIMF_Boat_Armed",
+            "ghost_HIMF_Mortar",
+            "ghost_HIMF_HMG",
+            "ghost_HIMF_HMG_High",
+            "ghost_HIMF_Mortar_Commando",
+            "ghost_HIMF_Mortar_Mk6",
+            "ghost_HIMF_AT_Dragon",
+            "ghost_HIMF_LM_Tube_300",
+            "ghost_HIMF_LM_Tube_600",
+            "ghost_HIMF_UAV_Hunter_SP",
+            "ghost_HIMF_Heli_Transport",
+            "ghost_HIMF_Heli_Transport_Unarmed",
+            "ghost_HIMF_Heli_Light",
+            "ghost_HIMF_Heli_Light_Armed",
+            "ghost_HIMF_Heli_Light_Hellcat",
+            "ghost_HIMF_Offroad",
+            "ghost_HIMF_Offroad_LMG",
+            "ghost_HIMF_Offroad_AT",
+            "ghost_HIMF_Plane_Tucano",
+            "ghost_HIMF_Plane_Civil",
+            "ghost_HIMF_Quadbike",
+            "ghost_HIMF_UAV_Darter",
+            "ghost_HIMF_UAV_Falcon",
+            "ghost_HIMF_UAV_Pelican",
+            "ghost_HIMF_UGV_Stomper",
+            "ghost_HIMF_UGV_Stomper_RCWS",
+            "ghost_HIMF_UGV_Pelter",
+            "ghost_HIMF_UAV_Shadow",
+            "ghost_HIMF_UAV_Aeroshark",
+            "ghost_HIMF_USV_Magura",
+            "ghost_HIMF_UAV_Raven",
+            "ghost_HIMF_Pickup",
+            "ghost_HIMF_Pickup_Comms",
+            "ghost_HIMF_Pickup_Covered",
+            "ghost_HIMF_Pickup_HMG",
+            "ghost_HIMF_Pickup_MMG",
+            "ghost_HIMF_Pickup_RCWS",
+            "ghost_HIMF_Pickup_AA",
+            "ghost_HIMF_Pickup_MRL",
+            "ghost_HIMF_Pickup_Rocket",
+            "ghost_HIMF_Pickup_Fuel",
+            "ghost_HIMF_Pickup_Repair"
         };
-        weapons[] = {};
+        weapons[] = {
+        };
         requiredVersion = REQUIRED_VERSION;
-        // ghost_fa_tiers IS NOT REQUIRED, DELIBERATELY. The tier
-        // magazines are named as STRINGS in magazines[]; nothing here
-        // inherits from them, so there is no load order to enforce.
-        // Requiring it was fatal: fa_tiers requires fa_rhs, fa_sps,
-        // fa_e22raf and fa_jca, which require RHS, SPS, E22 and JCA -
-        // and with skipWhenMissingDependencies any one of those absent
-        // dropped this whole faction out of 3DEN and Zeus in silence.
-        //
-        // NOTHING FROM THE SOURCE FACTION'S MOD IS REQUIRED EITHER.
-        // Every parent class is forward-declared in CfgVehicles.hpp, so a
-        // load order without that mod gets inert classes instead of a
-        // broken config. skipWhenMissingDependencies does the rest.
-        requiredAddons[] = {"ghost_main"};
+        // ATLAS IS A REAL DEPENDENCY (2026-08-29): every man inherits
+        // from Atlas's own HIMF, so without Atlas there is no faction -
+        // and skipWhenMissingDependencies says so rather than loading
+        // thirty men with no parent. The tier magazines are still named
+        // as STRINGS, so ghost_fa_tiers is not required.
+        requiredAddons[] = {"ghost_main", "A3_Atlas_Characters_F_Atlas"};
         skipWhenMissingDependencies = 1;
         author = QAUTHOR;
         VERSION_CONFIG;
@@ -100,5 +102,6 @@ class CfgPatches {
 };
 
 #include "CfgFactionClasses.hpp"
+#include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgGroups.hpp"

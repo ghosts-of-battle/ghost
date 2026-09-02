@@ -32,7 +32,7 @@ params [["_pos", [], [[]]], ["_rounds", 3, [0]], ["_spread", 50, [0]],
         ["_shell", "Sh_155mm_AMOS", [""]], ["_window", 0, [0]]];
 
 if (!isServer) exitWith { false };
-if (_pos isEqualTo [] || {_shell isEqualTo ""} || {_rounds < 1}) exitWith { false };
+if (_pos isEqualTo [] || _shell isEqualTo "" || _rounds < 1) exitWith { false };
 
 private _gap = if (_window > 0) then { _window / _rounds } else { BARRAGE_ROUND_GAP };
 

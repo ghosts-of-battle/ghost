@@ -10,6 +10,7 @@
 // Fixed slots rather than ctrlCreate: simpler, and the stack is never deeper
 // than a player can read anyway. Overflow queues instead of growing the HUD.
 #define SLOT_COUNT      6
+#define HISTORY_MAX     60
 #define IDC_SLOT(n)     (8300 + (n) * 10)
 #define IDC_BAR(n)      (8301 + (n) * 10)
 #define IDC_TEXT(n)     (8302 + (n) * 10)

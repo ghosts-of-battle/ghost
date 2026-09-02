@@ -30,19 +30,25 @@ if ((_data select [0, 2]) isEqualTo "s:") exitWith {
     _entry params [["_veh", objNull]];
     if (isNull _veh) exitWith {[] call ghost_vehicle_fnc_motorpool_fill};
 
+    // A DRONE'S CREW IS ITS AUTOPILOT, not a person. Take it out first, or
+    // every UGV on the pad is "still occupied" forever. A player flying the
+    // drone is never aboard it - UAV control is remote - so nobody is lost.
+    if (getNumber (configOf _veh >> "isUav") > 0) then {
+        {if (!isPlayer _x) then {deleteVehicle _x}} forEach crew _veh;
+    };
     if (((fullCrew _veh) select {alive (_x select 0)}) isEqualTo []) then {
         _spawned = _spawned select {(_x select 0) isNotEqualTo _veh};
         _controller setVariable ["YMF_spawnedVehicles", _spawned, true];
         deleteVehicle _veh;
     } else {
-        ["Could not delete vehicle, there are still people in the vehicle"] call CBA_fnc_notify;
+        ["Motorpool", "Could not delete vehicle, there are still people in the vehicle.", NOTE_BAD] call EFUNC(notify,notify);
     };
     [] call ghost_vehicle_fnc_motorpool_fill;
 };
 
 // ----------------------------------------------------------------- spawn --
 if (count (_pad nearEntities 5) != 0) exitWith {
-    ["Could not spawn vehicle, there is already a vehicle on the spawn position"] call CBA_fnc_notify;
+    ["Motorpool", "Could not spawn vehicle, there is already a vehicle on the spawn position.", NOTE_BAD] call EFUNC(notify,notify);
 };
 
 private _veh = createVehicle [_data, getPosATL _pad, [], 0, "CAN_COLLIDE"];
@@ -53,6 +59,16 @@ private _veh = createVehicle [_data, getPosATL _pad, [], 0, "CAN_COLLIDE"];
 private _dir = _controller getVariable ["YMF_motorpool_dir", -1];
 if (_dir < 0) then {_dir = getDir _pad};
 _veh setDir _dir;
+
+// A DRONE COMES WITH ITS OPERATOR. createVehicle hands a UAV over empty, and
+// an empty UAV is a prop - nothing for a terminal to connect to, nothing to
+// drive it. The AI crew its config names (B_UAV_AI, or the mod's own) is what
+// makes it a drone, and createVehicleCrew reads that from the config. The
+// vehicle was created here, so it is local here, which is what the command
+// needs.
+if (getNumber (configFile >> "CfgVehicles" >> _data >> "isUav") > 0) then {
+    createVehicleCrew _veh;
+};
 
 clearItemCargoGlobal _veh;
 clearBackpackCargoGlobal _veh;
@@ -81,4 +97,11 @@ if (_paintIdx > 0) then {
     if (_on) then {call _code};
 } forEach (uiNamespace getVariable ["YMF_motorpool_fits", []]);
 
-[format ["%1 is on the pad.", getText (configFile >> "CfgVehicles" >> _data >> "displayName")]] call CBA_fnc_notify;
+["Motorpool", format ["%1 is on the pad.", getText (configFile >> "CfgVehicles" >> _data >> "displayName")], NOTE_GOOD] call EFUNC(notify,notify);
+
+// THE SPAWN CLOSES THE SCREEN (user, 2026-08-29: "set the interface to close
+// when vehicle spawns"). The vehicle is on the pad and the next thing the
+// player does is walk to it, not read a list; the notify above is the
+// receipt. REMOVE, above, stays open - it is a list operation and the list is
+// what changed.
+closeDialog 0;

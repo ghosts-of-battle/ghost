@@ -9,6 +9,20 @@ class CfgPatches {
             "ghost_Marine_wdl_Aegis_B_MJTF_W_APC_Wheeled_01_command_lxWS",
             "ghost_Marine_wdl_Aegis_B_MJTF_W_APC_Wheeled_01_medical_F",
             "ghost_Marine_wdl_Aegis_B_MJTF_W_APC_Wheeled_01_mortar_lxWS",
+            "ghost_Marine_wdl_B_Pilot_F",
+            "ghost_Marine_wdl_B_Plane_CAS_01_Cluster_F",
+            "ghost_Marine_wdl_B_Plane_CAS_01_dynamicLoadout_F",
+            "ghost_Marine_wdl_B_Plane_Fighter_01_Cluster_F",
+            "ghost_Marine_wdl_B_Plane_Fighter_01_F",
+            "ghost_Marine_wdl_B_Plane_Fighter_01_Stealth_F",
+            "ghost_Marine_wdl_B_W_LSV_01_AT_F",
+            "ghost_Marine_wdl_B_W_LSV_01_armed_F",
+            "ghost_Marine_wdl_B_W_LSV_01_light_F",
+            "ghost_Marine_wdl_B_W_LSV_01_unarmed_F",
+            "ghost_Marine_wdl_B_qav_abramsx",
+            "ghost_Marine_wdl_E22_B_JC_W_AAA_System_01_F",
+            "ghost_Marine_wdl_E22_B_JC_W_Radar_system_01_F",
+            "ghost_Marine_wdl_E22_B_JC_W_SAM_system_01_F",
             "ghost_Marine_wdl_EF_B_AAV9_50mm_MJTF_Wdl",
             "ghost_Marine_wdl_EF_B_AAV9_MJTF_Wdl",
             "ghost_Marine_wdl_EF_B_AH99J_MJTF_Wdl",
@@ -30,8 +44,6 @@ class CfgPatches {
             "ghost_Marine_wdl_EF_B_LCC_MJTF_Wdl",
             "ghost_Marine_wdl_EF_B_LCC_SideLoad_MJTF_Wdl",
             "ghost_Marine_wdl_EF_B_Lifeboat_MJTF_Wdl",
-            "ghost_Marine_wdl_EF_B_MBT_01_TUSK_MJTF_Wdl",
-            "ghost_Marine_wdl_EF_B_MBT_01_cannon_MJTF_Wdl",
             "ghost_Marine_wdl_EF_B_MBT_01_mlrs_MJTF_Wdl",
             "ghost_Marine_wdl_EF_B_MRAP_01_AT_MJTF_Wdl",
             "ghost_Marine_wdl_EF_B_MRAP_01_FSV_MJTF_Wdl",
@@ -100,11 +112,18 @@ class CfgPatches {
             "ghost_Marine_wdl_EF_B_UAV_02_dynamicLoadout_MJTF_Wdl",
             "ghost_Marine_wdl_EF_B_UGV_01_MJTF_Wdl",
             "ghost_Marine_wdl_EF_B_UGV_01_rcws_MJTF_Wdl",
+            "ghost_Marine_wdl_EF_B_VTOL_03_unarmed_MJTF_Wdl_QAV",
             "ghost_Marine_wdl_EF_LPD_Turret_1_MJTF_Wdl",
             "ghost_Marine_wdl_EF_QAV80_MJTF_Wdl",
-            "ghost_Marine_wdl_EF_QAV80_Stealth_MJTF_Wdl"
+            "ghost_Marine_wdl_EF_QAV80_Stealth_MJTF_Wdl",
+            "ghost_Marine_wdl_JK_B_CDF_76n6_ClamShell_F",
+            "ghost_Marine_wdl_JK_B_CDF_76n6_ClamShell_Lower_F",
+            "ghost_Marine_wdl_C_IDAP_UAV_06_antimine_backpack_F",
+            "ghost_Marine_wdl_C_IDAP_UAV_06_antimine_F",
+            "ghost_Marine_wdl_B_Heli_Transport_01_medevac_F",
+            "ghost_Marine_wdl_Drone_Operator"
         };
-        weapons[] = {};
+        weapons[] = {"ghost_Marine_wdl_SMG_01_black_Holo_F_snds","ghost_Marine_wdl_ef_arifle_mxar_coy_Hamr_pointer_snds","ghost_Marine_wdl_ef_arifle_mxar_coy_Holo_snds","ghost_Marine_wdl_ef_arifle_mxar_coy_Holo_pointer_snds","ghost_Marine_wdl_ef_arifle_mxar_gl_coy_Hamr_pointer_snds","ghost_Marine_wdl_ef_arifle_mxc_coy_Holo_snds","ghost_Marine_wdl_ef_arifle_mxm_MBS_LP_BI_snds"};
         requiredVersion = REQUIRED_VERSION;
         // ghost_fa_tiers IS NOT REQUIRED, DELIBERATELY. The tier
         // magazines are named as STRINGS in magazines[]; nothing here
@@ -126,5 +145,6 @@ class CfgPatches {
 };
 
 #include "CfgFactionClasses.hpp"
+#include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgGroups.hpp"

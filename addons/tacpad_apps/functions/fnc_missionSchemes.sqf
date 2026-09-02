@@ -64,7 +64,7 @@ private _out = [];
     // preset against the three custom tokens to know which card is active, and
     // "#7de08a" against "7DE08A" is the same colour and a different string.
     _out pushBack ([toUpper _label] + (_tokens apply {[_x] call EFUNC(tacpad,hexOf)}));
-} forEach ("true" configClasses (missionConfigFile >> "Ghost_TacpadSchemes"));
+} forEach ("true" configClasses (missionConfigFile >> "GHOST_TacpadSchemes"));
 
 GVAR(missionSchemes) = _out;
 

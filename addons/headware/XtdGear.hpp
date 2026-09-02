@@ -59,23 +59,7 @@ class XtdGearModels {
             options[] = {"camo", "type"};
             class camo {
                 alwaysSelectable = 1;
-                values[] = {"TAN", "RGR", "BLK", "CBR", "MTP", "MTP_T", "WDL", "DES", "OCP", "OCP_G", "MCA", "MC", "MCW"};
-                class TAN {
-                    label = "Tan";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
-                class RGR {
-                    label = "RGR";
-                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
-                };
-                class BLK {
-                    label = "BLK";
-                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
-                };
-                class CBR {
-                    label = "CBR";
-                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
-                };
+                values[] = {"MTP", "MTP_T", "WDL", "DES", "OCP", "OCP_G", "MCA", "MC", "MCW"};
                 class MTP {
                     label = "MTP";
                     image = "z\aceax\addons\gearinfo\data\camo\mtp.paa";
@@ -232,26 +216,6 @@ class XtdGearModels {
 class XtdGearInfos {
     class CfgWeapons {
         /* Plain */
-        class ghost_headware_H_Helmet_FASTMT_tan_F {
-            model = "ghost_headware_FASTMT";
-            camo = "TAN";
-            type = "Plain";
-        };
-        class ghost_headware_H_Helmet_FASTMT_rgr_F {
-            model = "ghost_headware_FASTMT";
-            camo = "RGR";
-            type = "Plain";
-        };
-        class ghost_headware_H_Helmet_FASTMT_blk_F {
-            model = "ghost_headware_FASTMT";
-            camo = "BLK";
-            type = "Plain";
-        };
-        class ghost_headware_H_Helmet_FASTMT_cbr_F {
-            model = "ghost_headware_FASTMT";
-            camo = "CBR";
-            type = "Plain";
-        };
         class ghost_headware_H_Helmet_FASTMT_Multicam_F {
             model = "ghost_headware_FASTMT";
             camo = "MC";
@@ -274,26 +238,6 @@ class XtdGearInfos {
         };
 
         /* Headset */
-        class ghost_headware_H_Helmet_FASTMT_Headset_tan_F {
-            model = "ghost_headware_FASTMT";
-            camo = "TAN";
-            type = "Headset";
-        };
-        class ghost_headware_H_Helmet_FASTMT_Headset_rgr_F {
-            model = "ghost_headware_FASTMT";
-            camo = "RGR";
-            type = "Headset";
-        };
-        class ghost_headware_H_Helmet_FASTMT_Headset_blk_F {
-            model = "ghost_headware_FASTMT";
-            camo = "BLK";
-            type = "Headset";
-        };
-        class ghost_headware_H_Helmet_FASTMT_Headset_cbr_F {
-            model = "ghost_headware_FASTMT";
-            camo = "CBR";
-            type = "Headset";
-        };
         class ghost_headware_H_Helmet_FASTMT_Headset_Multicam_F {
             model = "ghost_headware_FASTMT";
             camo = "MC";
@@ -316,21 +260,6 @@ class XtdGearInfos {
         };
 
         /* Cover */
-        class ghost_headware_H_Helmet_FASTMT_Cover_tan_F {
-            model = "ghost_headware_FASTMT";
-            camo = "TAN";
-            type = "Cover";
-        };
-        class ghost_headware_H_Helmet_FASTMT_Cover_rgr_F {
-            model = "ghost_headware_FASTMT";
-            camo = "RGR";
-            type = "Cover";
-        };
-        class ghost_headware_H_Helmet_FASTMT_Cover_blk_F {
-            model = "ghost_headware_FASTMT";
-            camo = "BLK";
-            type = "Cover";
-        };
         class ghost_headware_H_Helmet_FASTMT_Cover_mtp_F {
             model = "ghost_headware_FASTMT";
             camo = "MTP";

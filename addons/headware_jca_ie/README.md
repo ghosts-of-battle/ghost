@@ -16,12 +16,4 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-12 weapon/item classes, 1 function.
-
-## Functions
-
-<details><summary>1</summary>
-
-- `ghost_headware_jca_ie_fnc_empty`
-
-</details>
+12 weapon/item classes.

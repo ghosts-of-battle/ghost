@@ -27,7 +27,7 @@ params [["_unit", objNull, [objNull]]];
 if (isNull _unit) exitWith {false};
 
 (_unit getVariable [QGVAR(radioRaw), []]) params [["_sys", "", [""]], ["_ch", -1, [0]]];
-if (_sys isEqualTo "" || {_ch < 0}) exitWith {false};
+if (_sys isEqualTo "" || _ch < 0) exitWith {false};
 
 if (_sys isEqualTo "acre" && {!isNil "acre_api_fnc_getCurrentRadio"}) exitWith {
     private _radio = [] call acre_api_fnc_getCurrentRadio;
@@ -38,7 +38,8 @@ if (_sys isEqualTo "acre" && {!isNil "acre_api_fnc_getCurrentRadio"}) exitWith {
 
 if (_sys isEqualTo "tfar" && {!isNil "TFAR_fnc_activeSwRadio"}) exitWith {
     private _radio = call TFAR_fnc_activeSwRadio;
-    if (isNil "_radio" || {_radio isEqualTo ""}) exitWith {false};
+    if (isNil "_radio") then {_radio = ""};
+    if (_radio isEqualTo "") exitWith {false};
     if (isNil "TFAR_fnc_setSwChannel") exitWith {false};
     [_radio, _ch] call TFAR_fnc_setSwChannel;
     true

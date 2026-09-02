@@ -9,7 +9,7 @@ Description:
 
 Parameters:
     _product : STRING - "aa" | "arty" | "coastal" | "radar" | "jam" |
-                        "leader" | "installation".
+                        "camp" | "hub" | "leader" | "installation".
     _pos     : ARRAY  - where the hack happened.
     _side    : SIDE   - who earned it.
     _caller  : OBJECT - the hacker.
@@ -31,6 +31,10 @@ private _ok = switch (_product) do {
     // them - killing one does not kill the other, so they are two hunts.
     case "coastal": { [_pos, _side] call FUNC(productLocateCoastal) };
     case "radar":   { [_pos, _side] call FUNC(productLocateRadar) };
+    // The rear: where the men not on the line sleep, and where what feeds
+    // the line comes from. Both read off ALiVE through the adapter.
+    case "camp":    { [_pos, _side] call FUNC(productLocateCamp) };
+    case "hub":     { [_pos, _side] call FUNC(productLocateHub) };
     // The other half of the asymmetric hunt: the things the chain needs to keep
     // working, beside the men who run it.
     case "installation": { [_pos, _side] call FUNC(productInstallation) };

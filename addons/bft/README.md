@@ -113,6 +113,8 @@ Ghost's part is the port and the plumbing around it:
 | `ghost_bft_enabled` | CHECKBOX | Enable group markers |
 | `ghost_bft_autoEnable` | LIST | Auto enable for |
 | `ghost_bft_memberMarkers` | LIST | Member markers |
+| `ghost_bft_hideOwnGroup` | CHECKBOX | Hide own group marker |
+| `ghost_bft_showVirtual` | CHECKBOX | Show virtual friendlies |
 | `ghost_bft_updateDelay` | SLIDER | Update delay |
 | `ghost_bft_markerShape` | LIST | Marker shape |
 | `ghost_bft_trackingMode` | LIST | Position: tracking mode |

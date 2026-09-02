@@ -7,7 +7,7 @@
  * config.cpp. Anyone running FA without that mod keeps full CBA control; as
  * soon as the mod is loaded its values win:
  *
- *     class GhostFA_SettingOverrides {
+ *     class GHOSTFA_SettingOverrides {
  *         class MyFactionPack {
  *             priority = 10;                              // optional, highest wins on a clash
  *             lock = 1;                                   // optional, 1 (default) = re-apply if changed
@@ -38,7 +38,7 @@ params [["_lockedOnly", false, [false]]];
 // Config can't change at runtime, so the table is built exactly once.
 if (isNil QGVAR(settingOverrides)) then {
     private _table = createHashMap;
-    private _blocks = configProperties [configFile >> "GhostFA_SettingOverrides", "isClass _x", false];
+    private _blocks = configProperties [configFile >> "GHOSTFA_SettingOverrides", "isClass _x", false];
 
     // Sort ascending on priority so the highest-priority block is applied last and wins.
     private _order = [];
@@ -101,7 +101,7 @@ if (count GVAR(settingOverrides) == 0) exitWith {};
                     default {_current};
                 };
             };
-            if (_current isEqualType 0 && {_value isEqualType ""}) then {
+            if (_current isEqualType 0 && _value isEqualType "") then {
                 _new = parseNumber _value;
             };
 

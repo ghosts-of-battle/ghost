@@ -71,7 +71,7 @@ if (EGVAR(patches,usesACRE) && GVAR(isPlayer)) then {
 
 //same login default under TFAR - wait until the SW handheld exists, then tune to the pre-join nets
 if (EGVAR(patches,usesTFAR) && GVAR(isPlayer)) then {
-    [{ private _r = call TFAR_fnc_activeSwRadio; !isNil "_r" && {_r isEqualType "" && {_r != ""}} }, {
+    [{ private _r = call TFAR_fnc_activeSwRadio; !isNil "_r" && {_r isEqualType "" && _r isNotEqualTo ""} }, {
         [player] call EFUNC(players,setRadioChannel);
         [ghost_radio_tfarActiveRadio] call EFUNC(players,setActiveRadio);
     }, []] call CBA_fnc_waitUntilAndExecute;

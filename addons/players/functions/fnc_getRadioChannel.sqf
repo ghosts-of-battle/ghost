@@ -32,8 +32,8 @@ _radio = toUpper(_radio);
 //the MR plan so it tunes like the 152), LR = PRC-117F
 //tiers keyed off the radio-class lists in config_radio.hpp; anything else (incl. ghost_radio_lrRadios) -> LR
 private _radioType = switch (true) do {
-    case (_radio in ghost_radio_srRadios || {_radio isEqualTo "SR"}): {"SR"};
-    case (_radio in ghost_radio_mrRadios || {_radio isEqualTo "MR"}): {"MR"};
+    case (_radio in ghost_radio_srRadios || _radio isEqualTo "SR"): {"SR"};
+    case (_radio in ghost_radio_mrRadios || _radio isEqualTo "MR"): {"MR"};
     default {"LR"};
 };
 

@@ -20,8 +20,17 @@ Parameters:
     _pos     : ARRAY  - position to evaluate, ASL.
     _powerMw : NUMBER - transmitter power in mW, for burn-through. 0 = ignore.
                         Optional, default 0.
-    _mode    : STRING - "radio" (default) or "uav"; "uav" only counts zones
-                        flagged jamUavs.
+    _domain  : STRING - which denial is being asked about (user, 2026-08-31):
+                        DOM_RADIO (default) the voice net, DOM_DATA messaging
+                        and BFT, DOM_GPS the GPS item and the map self-icon,
+                        DOM_UAV drones, DOM_ANY "is anything jamming here".
+
+                        A zone answers for a domain only if it carries it, so
+                        the terminal that kills the net leaves TAC//MSG alone
+                        and the hub that kills TAC//MSG leaves the net alone.
+                        DOM_UAV is the odd one out and still reads the jamUavs
+                        flag rather than the domain list: it is a property of
+                        the emitter's power, not of what it was pointed at.
 
 Returns:
     ARRAY - [_factor, _zone] where _zone is the strongest contributing registry
@@ -34,7 +43,7 @@ Example:
 Author:
     Ghost
 ---------------------------------------------------------------------------- */
-params [["_pos", [0,0,0], [[]]], ["_powerMw", 0, [0]], ["_mode", "radio", [""]]];
+params [["_pos", [0,0,0], [[]]], ["_powerMw", 0, [0]], ["_domain", DOM_RADIO, [""]]];
 
 private _reg = missionNamespace getVariable [QGVAR(jammers), []];
 if (_reg isEqualTo []) exitWith { [0, []] };
@@ -54,7 +63,15 @@ private _bestZone = [];
     private _rFall = _x param [ZONE_RFALL, 0];
     private _model = _x param [ZONE_MODEL, createHashMap];
 
-    if (_mode isEqualTo "uav" && {!(_model getOrDefault ["jamUavs", false])}) then { continue };
+    // --- does this zone answer for the domain being asked about? ------------
+    // DOM_ANY skips the gate: the HUD tile and the EW scanner report that the
+    // spectrum is dirty, not which service is down.
+    if (_domain isEqualTo DOM_UAV) then {
+        if (!(_model getOrDefault ["jamUavs", false])) then { continue };
+    } else {
+        if (_domain isNotEqualTo DOM_ANY
+            && {!(_domain in (_model getOrDefault ["domains", DOM_DEFAULT]))}) then { continue };
+    };
 
     private _d = _pos distance _zpos;
     if (_d > _rFall) then { continue };
@@ -82,7 +99,7 @@ private _bestZone = [];
 
     // --- directional cone ---------------------------------------------------
     private _from = _model getOrDefault ["coneFrom", -1];
-    if (_f > 0 && {_from >= 0}) then {
+    if (_f > 0 && _from >= 0) then {
         private _arc = _model getOrDefault ["coneArc", 360];
         private _bearing = [_zpos, _pos] call BIS_fnc_dirTo;
         private _delta = abs (((_bearing - _from + 180) % 360) - 180);
@@ -95,7 +112,7 @@ private _bestZone = [];
     };
 
     // --- burn-through: a stronger set punches deeper into the field ---------
-    if (_f > 0 && {_powerMw > 0} && {_model getOrDefault ["burnthrough", false]}) then {
+    if (_f > 0 && _powerMw > 0 && {_model getOrDefault ["burnthrough", false]}) then {
         private _ref = (_model getOrDefault ["burnRef", 500]) max 1;
         _f = _f * ((_ref / (_powerMw max 1)) min 1);
     };

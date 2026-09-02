@@ -25,7 +25,7 @@ if !(currentWeapon ACE_player in [QGVAR(Vector_Designator), QGVAR(Vector_Designa
 ([] call FUNC(vectorTarget)) params ["_posASL", "_distance"];
 
 if (_posASL isEqualTo []) exitWith {
-    hintSilent "Vector: no target";
+    ["Vector", "No target.", [0.831, 0.267, 0.267, 1]] call EFUNC(notify,notify);
     true
 };
 
@@ -46,6 +46,6 @@ if (GVAR(marker3DDuration) > 0) then {
     [QGVAR(marker3D), [_posASL, format ["%1 (%2m)", name ACE_player, _distance], GVAR(markerColor)]] call CBA_fnc_globalEvent;
 };
 
-hintSilent format ["Marker placed: %1m", _distance];
+["Vector", format ["Marker placed: %1 m", _distance], [0.4, 0.702, 0.4, 1]] call EFUNC(notify,notify);
 
 true

@@ -55,7 +55,7 @@ private _entry = createHashMapFromArray _entryArray;
 // guard stays as the seatbelt: a malformed row is dropped with its contents
 // logged, rather than throwing on every delivery for the rest of the mission.
 private _threadId = _entry getOrDefault ["threadId", ""];
-if (!(_threadId isEqualType "") || {_threadId isEqualTo ""}) exitWith {
+if (!(_threadId isEqualType "") || _threadId isEqualTo "") exitWith {
     diag_log text format ["[ghost_messaging] malformed index row, no threadId: %1", _entryArray];
 };
 
@@ -153,6 +153,6 @@ if ((getPlayerUID player) in (_message getOrDefault ["readBy", []])) exitWith {}
 // unread count have already moved above - and only FLASH traffic and being
 // called out by name break through, which is the handoff's mute rule.
 if (([_entry getOrDefault ["boxId", ""], _threadId] call FUNC(netLevel)) > 0
-    && {_priority != "high"}) exitWith {};
+    && _priority != "high") exitWith {};
 
 [_title, _entry get "subject", _priority] call FUNC(notify);

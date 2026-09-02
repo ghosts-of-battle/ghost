@@ -1,412 +1,205 @@
 class CfgWeapons {
 #include "acp_full_externs.hpp"
-    class HeadgearItem;
-    class H_HelmetB;
     class H_Booniehat_khk;
     class H_Booniehat_khk_hs;
 
-    class GVAR(H_Helmet_FASTMT_base_F): H_HelmetB {
-        scope = 0;
-        displayName = "Operator Helmet";
-        model = QPATHTOF(H_HelmetFASTMT_F);
-        hiddenSelections[] = {"Camo"};
-        hiddenSelectionsMaterials[] = {QPATHTOF(data\H_HelmetFASTMT.rvmat)};
-        class ItemInfo: HeadgearItem {
-            mass = 24;
-            hiddenSelections[] = {"camo"};
-            uniformModel = QPATHTOF(H_HelmetFASTMT_F.p3d);
-            heatReduction = 1;
-            modelSides[] = {1, 3};
-            class HitpointsProtectionInfo {
-                class Head {
-                    hitpointName = "HitHead";
-                    armor = 9;
-                    passThrough = 0.5;
-                };
-            };
-        };
+    // AEGIS'S FAST-MT, LINKED NOT COPIED (user, 2026-08-29: "things copied
+    // from Aegis or Atlas need to be removed and the dependencies moved back to
+    // linking to Aegis/Atlas"). The three FAST-MT models, their materials and
+    // maps, and the tan / ranger-green / black / coyote paints this addon
+    // shipped were Aegis's own; they are gone, and Aegis_H_Helmet_FASTMT_* are
+    // the classes to reach for. What is left below is OURS - the Multicam,
+    // Multicam Alpine, Multicam Woodland and US OCP paints and the cover
+    // paints - each inheriting Aegis's base class and putting its own texture
+    // on Aegis's model. The headset and the base helmet under a painted cover
+    // are Aegis's textures by path.
+    class Aegis_H_Helmet_FASTMT_base_F;
+    class Aegis_H_Helmet_FASTMT_Headset_base_F;
+    class Aegis_H_Helmet_FASTMT_Cover_base_F;
+
+    /* FAST-MT Helmet - our paints on Aegis's helmet */
+    class GVAR(H_Helmet_FASTMT_Multicam_F): Aegis_H_Helmet_FASTMT_base_F {
+        author = QAUTHOR;
+        MACRO_ITEM_COMMON
+        displayName = "[Ghost] FAST-MT Helmet (Multicam)";
+        picture = "\A3_Aegis\Characters_F_Aegis\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_tan_F_ca.paa";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\H_HelmetFASTMT_Multicam_CO.paa)};
     };
-    class GVAR(H_Helmet_FASTMT_Headset_base_F): GVAR(H_Helmet_FASTMT_base_F) {
-        scope = 0;
-        displayName = "Operator Helmet (Headset)";
-        model = QPATHTOF(H_HelmetFASTMT_Headset_F);
-        hiddenSelections[] = {"camo", "camo1"};
-        hiddenSelectionsMaterials[] = {QPATHTOF(data\H_HelmetFASTMT.rvmat), QPATHTOF(data\H_HeadsetWest.rvmat)};
-        class ItemInfo: HeadgearItem {
-            mass = 24;
-            hiddenSelections[] = {"camo", "camo1", "camo2"};
-            uniformModel = QPATHTOF(H_HelmetFASTMT_Headset_F.p3d);
-            heatReduction = 1;
-            modelSides[] = {1, 3};
-            class HitpointsProtectionInfo {
-                class Head {
-                    hitpointName = "HitHead";
-                    armor = 9;
-                    passThrough = 0.5;
-                };
-            };
-        };
+    class GVAR(H_Helmet_FASTMT_Multicam_Snow_F): Aegis_H_Helmet_FASTMT_base_F {
+        author = QAUTHOR;
+        MACRO_ITEM_COMMON
+        displayName = "[Ghost] FAST-MT Helmet (Multicam Alpine)";
+        picture = "\A3_Aegis\Characters_F_Aegis\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_tan_F_ca.paa";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\H_HelmetFASTMT_Multicam_Snow_CO.paa)};
     };
-    class GVAR(H_Helmet_FASTMT_Cover_base_F): GVAR(H_Helmet_FASTMT_base_F) {
-        scope = 0;
-        displayName = "Operator Helmet (Cover)";
-        model = QPATHTOF(H_HelmetFASTMT_Cover_F);
-        hiddenSelections[] = {"camo", "camo1", "camo2"};
-        hiddenSelectionsMaterials[] = {QPATHTOF(data\H_HelmetFASTMT.rvmat), QPATHTOF(data\H_HelmetFASTMT_Cover.rvmat), QPATHTOF(data\H_HeadsetWest.rvmat)};
-        class ItemInfo: HeadgearItem {
-            mass = 24;
-            hiddenSelections[] = {"camo", "camo1", "camo2"};
-            uniformModel = QPATHTOF(H_HelmetFASTMT_Cover_F.p3d);
-            heatReduction = 1;
-            modelSides[] = {1, 3};
-            class HitpointsProtectionInfo {
-                class Head {
-                    hitpointName = "HitHead";
-                    armor = 9;
-                    passThrough = 0.5;
-                };
-            };
-        };
+    class GVAR(H_Helmet_FASTMT_A3_Multicam_Woodland_F): Aegis_H_Helmet_FASTMT_base_F {
+        author = QAUTHOR;
+        MACRO_ITEM_COMMON
+        displayName = "[Ghost] FAST-MT Helmet (Multicam Woodland)";
+        picture = "\A3_Aegis\Characters_F_Aegis\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_rgr_F_ca.paa";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\H_HelmetFASTMT_A3_Multicam_Woodland_CO.paa)};
+    };
+    class GVAR(H_Helmet_FASTMT_US_OCP_F): Aegis_H_Helmet_FASTMT_base_F {
+        author = QAUTHOR;
+        MACRO_ITEM_COMMON
+        displayName = "[Ghost] FAST-MT Helmet (US OCP)";
+        picture = "\A3_Aegis\Characters_F_Aegis\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_tan_F_ca.paa";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\H_HelmetFASTMT_US_OCP_CO.paa)};
     };
 
-    /* FAST-MT Helmet */
-    class GVAR(H_Helmet_FASTMT_tan_F): GVAR(H_Helmet_FASTMT_base_F) {
-        author = QAUTHOR;
-        MACRO_ITEM_COMMON
-        displayName = "[Ghost] FAST-MT Helmet (Tan)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_tan_F_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_tan_CO.paa)
-        };
-    };
-    class GVAR(H_Helmet_FASTMT_rgr_F): GVAR(H_Helmet_FASTMT_base_F) {
-        author = QAUTHOR;
-        MACRO_ITEM_COMMON
-        displayName = "[Ghost] FAST-MT Helmet (Ranger Green)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_rgr_F_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_rgr_CO.paa)
-        };
-    };
-    class GVAR(H_Helmet_FASTMT_blk_F): GVAR(H_Helmet_FASTMT_base_F) {
-        author = QAUTHOR;
-        MACRO_ITEM_COMMON
-        displayName = "[Ghost] FAST-MT Helmet (Black)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_blk_F_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_blk_CO.paa)
-        };
-    };
-    class GVAR(H_Helmet_FASTMT_cbr_F): GVAR(H_Helmet_FASTMT_base_F) {
-        author = QAUTHOR;
-        MACRO_ITEM_COMMON
-        displayName = "[Ghost] FAST-MT Helmet (Coyote Brown)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_tan_F_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_cbr_CO.paa)
-        };
-    };
-
-    /* FAST-MT Helmet w/ Headset */
-    class GVAR(H_Helmet_FASTMT_Headset_tan_F): GVAR(H_Helmet_FASTMT_Headset_base_F) {
-        author = QAUTHOR;
-        MACRO_ITEM_COMMON
-        MACRO_ACE_HEARING
-        displayName = "[Ghost] FAST-MT Helmet w/ Headset (Tan)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Headset_tan_F_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_tan_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
-        };
-    };
-    class GVAR(H_Helmet_FASTMT_Headset_rgr_F): GVAR(H_Helmet_FASTMT_Headset_base_F) {
-        author = QAUTHOR;
-        MACRO_ITEM_COMMON
-        MACRO_ACE_HEARING
-        displayName = "[Ghost] FAST-MT Helmet w/ Headset (Ranger Green)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Headset_rgr_F_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_rgr_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_oli_CO.paa)
-        };
-    };
-    class GVAR(H_Helmet_FASTMT_Headset_blk_F): GVAR(H_Helmet_FASTMT_Headset_base_F) {
-        author = QAUTHOR;
-        MACRO_ITEM_COMMON
-        MACRO_ACE_HEARING
-        displayName = "[Ghost] FAST-MT Helmet w/ Headset (Black)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Headset_blk_F_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_blk_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_blk_CO.paa)
-        };
-    };
-    class GVAR(H_Helmet_FASTMT_Headset_cbr_F): GVAR(H_Helmet_FASTMT_Headset_base_F) {
-        author = QAUTHOR;
-        MACRO_ITEM_COMMON
-        MACRO_ACE_HEARING
-        displayName = "[Ghost] FAST-MT Helmet w/ Headset (Coyote Brown)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Headset_tan_F_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_cbr_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
-        };
-    };
-    class GVAR(H_Helmet_FASTMT_Headset_Multicam_F): GVAR(H_Helmet_FASTMT_Headset_base_F) {
+    /* FAST-MT Helmet w/ Headset - our paints, Aegis's headset */
+    class GVAR(H_Helmet_FASTMT_Headset_Multicam_F): Aegis_H_Helmet_FASTMT_Headset_base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
         MACRO_ACE_HEARING
         displayName = "[Ghost] FAST-MT Helmet w/ Headset (Multicam)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Headset_tan_F_ca.paa);
+        picture = "\A3_Aegis\Characters_F_Aegis\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_Headset_tan_F_ca.paa";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\H_HelmetFASTMT_Multicam_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
+            "\A3_Aegis\Characters_F_Aegis\Headgear\Data\H_HeadsetWest_tan_CO.paa"
         };
     };
-    class GVAR(H_Helmet_FASTMT_Headset_Multicam_Snow_F): GVAR(H_Helmet_FASTMT_Headset_base_F) {
+    class GVAR(H_Helmet_FASTMT_Headset_Multicam_Snow_F): Aegis_H_Helmet_FASTMT_Headset_base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
         MACRO_ACE_HEARING
         displayName = "[Ghost] FAST-MT Helmet w/ Headset (Multicam Alpine)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Headset_tan_F_ca.paa);
+        picture = "\A3_Aegis\Characters_F_Aegis\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_Headset_tan_F_ca.paa";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\H_HelmetFASTMT_Multicam_Snow_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
+            "\A3_Aegis\Characters_F_Aegis\Headgear\Data\H_HeadsetWest_tan_CO.paa"
         };
     };
-    class GVAR(H_Helmet_FASTMT_Headset_A3_Multicam_Woodland_F): GVAR(H_Helmet_FASTMT_Headset_base_F) {
+    class GVAR(H_Helmet_FASTMT_Headset_A3_Multicam_Woodland_F): Aegis_H_Helmet_FASTMT_Headset_base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
         MACRO_ACE_HEARING
         displayName = "[Ghost] FAST-MT Helmet w/ Headset (Multicam Woodland)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Headset_rgr_F_ca.paa);
+        picture = "\A3_Aegis\Characters_F_Aegis\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_Headset_rgr_F_ca.paa";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\H_HelmetFASTMT_A3_Multicam_Woodland_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_oli_CO.paa)
+            "\A3_Aegis\Characters_F_Aegis\Headgear\Data\H_HeadsetWest_oli_CO.paa"
         };
     };
-    class GVAR(H_Helmet_FASTMT_Headset_US_OCP_F): GVAR(H_Helmet_FASTMT_Headset_base_F) {
+    class GVAR(H_Helmet_FASTMT_Headset_US_OCP_F): Aegis_H_Helmet_FASTMT_Headset_base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
         MACRO_ACE_HEARING
         displayName = "[Ghost] FAST-MT Helmet w/ Headset (US OCP)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Headset_tan_F_ca.paa);
+        picture = "\A3_Aegis\Characters_F_Aegis\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_Headset_tan_F_ca.paa";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\H_HelmetFASTMT_US_OCP_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
+            "\A3_Aegis\Characters_F_Aegis\Headgear\Data\H_HeadsetWest_tan_CO.paa"
         };
     };
 
-    /* FAST-MT Helmet w/ Cover */
-    class GVAR(H_Helmet_FASTMT_Cover_tan_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
-        author = QAUTHOR;
-        MACRO_ITEM_COMMON
-        MACRO_ACE_HEARING
-        displayName = "[Ghost] FAST-MT Helmet w/ Cover (Tan)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_tan_F_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_tan_CO.paa),
-            QPATHTOF(data\H_HelmetFASTMT_Cover_tan_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
-        };
-    };
-    class GVAR(H_Helmet_FASTMT_Cover_rgr_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
-        author = QAUTHOR;
-        MACRO_ITEM_COMMON
-        MACRO_ACE_HEARING
-        displayName = "[Ghost] FAST-MT Helmet w/ Cover (Ranger Green)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_rgr_F_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_rgr_CO.paa),
-            QPATHTOF(data\H_HelmetFASTMT_Cover_rgr_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_oli_CO.paa)
-        };
-    };
-    class GVAR(H_Helmet_FASTMT_Cover_blk_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
-        author = QAUTHOR;
-        MACRO_ITEM_COMMON
-        MACRO_ACE_HEARING
-        displayName = "[Ghost] FAST-MT Helmet w/ Cover (Black)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_blk_F_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_blk_CO.paa),
-            QPATHTOF(data\H_HelmetFASTMT_Cover_blk_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_blk_CO.paa)
-        };
-    };
-    class GVAR(H_Helmet_FASTMT_Cover_mtp_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
+    /* FAST-MT Helmet w/ Cover - our cover paints on Aegis's helmet and headset */
+    class GVAR(H_Helmet_FASTMT_Cover_mtp_F): Aegis_H_Helmet_FASTMT_Cover_base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
         MACRO_ACE_HEARING
         displayName = "[Ghost] FAST-MT Helmet w/ Cover (MTP)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_mtp_F_ca.paa);
+        picture = "\A3_Aegis\Characters_F_Aegis\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_Cover_mtp_F_ca.paa";
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_tan_CO.paa),
+            "\A3_Aegis\Characters_F_Aegis\Headgear\Data\H_HelmetFASTMT_tan_CO.paa",
             QPATHTOF(data\H_ghost_HelmetFASTMT_Cover_mtp_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
+            "\A3_Aegis\Characters_F_Aegis\Headgear\Data\H_HeadsetWest_tan_CO.paa"
         };
     };
-    class GVAR(H_Helmet_FASTMT_Cover_tna_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
+    class GVAR(H_Helmet_FASTMT_Cover_tna_F): Aegis_H_Helmet_FASTMT_Cover_base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
         MACRO_ACE_HEARING
         displayName = "[Ghost] FAST-MT Helmet w/ Cover (Tropic)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_tna_F_ca.paa);
+        picture = "\A3_Aegis\Characters_F_Aegis\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_Cover_tna_F_ca.paa";
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_rgr_CO.paa),
+            "\A3_Aegis\Characters_F_Aegis\Headgear\Data\H_HelmetFASTMT_rgr_CO.paa",
             QPATHTOF(data\H_ghost_HelmetFASTMT_Cover_tna_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_oli_CO.paa)
+            "\A3_Aegis\Characters_F_Aegis\Headgear\Data\H_HeadsetWest_oli_CO.paa"
         };
     };
-    class GVAR(H_Helmet_FASTMT_Cover_wdl_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
+    class GVAR(H_Helmet_FASTMT_Cover_wdl_F): Aegis_H_Helmet_FASTMT_Cover_base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
         MACRO_ACE_HEARING
         displayName = "[Ghost] FAST-MT Helmet w/ Cover (Woodland)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_wdl_F_ca.paa);
+        picture = "\A3_Aegis\Characters_F_Aegis\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_Cover_wdl_F_ca.paa";
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_rgr_CO.paa),
+            "\A3_Aegis\Characters_F_Aegis\Headgear\Data\H_HelmetFASTMT_rgr_CO.paa",
             QPATHTOF(data\H_ghost_HelmetFASTMT_Cover_wdl_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_oli_CO.paa)
+            "\A3_Aegis\Characters_F_Aegis\Headgear\Data\H_HeadsetWest_oli_CO.paa"
         };
     };
-    class GVAR(H_Helmet_FASTMT_Cover_desert_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
+    class GVAR(H_Helmet_FASTMT_Cover_desert_F): Aegis_H_Helmet_FASTMT_Cover_base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
         MACRO_ACE_HEARING
         displayName = "[Ghost] FAST-MT Helmet w/ Cover (Desert)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_Desert_F_ca.paa);
+        picture = "\A3_Aegis\Characters_F_Aegis\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_Cover_Desert_F_ca.paa";
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_tan_CO.paa),
+            "\A3_Aegis\Characters_F_Aegis\Headgear\Data\H_HelmetFASTMT_tan_CO.paa",
             QPATHTOF(data\H_ghost_HelmetFASTMT_Cover_desert_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
+            "\A3_Aegis\Characters_F_Aegis\Headgear\Data\H_HeadsetWest_tan_CO.paa"
         };
     };
-    /* FAST-MT Helmet - ACP Variants */
-    class GVAR(H_Helmet_FASTMT_Multicam_F): GVAR(H_Helmet_FASTMT_base_F) {
-        author = QAUTHOR;
-        MACRO_ITEM_COMMON
-        displayName = "[Ghost] FAST-MT Helmet (Multicam)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_tan_F_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_Multicam_CO.paa)
-        };
-    };
-    class GVAR(H_Helmet_FASTMT_Multicam_Snow_F): GVAR(H_Helmet_FASTMT_base_F) {
-        author = QAUTHOR;
-        MACRO_ITEM_COMMON
-        displayName = "[Ghost] FAST-MT Helmet (Multicam Alpine)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_tan_F_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_Multicam_Snow_CO.paa)
-        };
-    };
-    class GVAR(H_Helmet_FASTMT_A3_Multicam_Woodland_F): GVAR(H_Helmet_FASTMT_base_F) {
-        author = QAUTHOR;
-        MACRO_ITEM_COMMON
-        displayName = "[Ghost] FAST-MT Helmet (Multicam Woodland)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_rgr_F_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_A3_Multicam_Woodland_CO.paa)
-        };
-    };
-    class GVAR(H_Helmet_FASTMT_US_OCP_F): GVAR(H_Helmet_FASTMT_base_F) {
-        author = QAUTHOR;
-        MACRO_ITEM_COMMON
-        displayName = "[Ghost] FAST-MT Helmet (US OCP)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_tan_F_ca.paa);
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\H_HelmetFASTMT_US_OCP_CO.paa)
-        };
-    };
-
-    /* FAST-MT Helmet w/ Cover - ACP Variants */
-    class GVAR(H_Helmet_FASTMT_Cover_Multicam_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
+    class GVAR(H_Helmet_FASTMT_Cover_Multicam_F): Aegis_H_Helmet_FASTMT_Cover_base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
         MACRO_ACE_HEARING
         displayName = "[Ghost] FAST-MT Helmet w/ Cover (Multicam)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_tan_F_ca.paa);
+        picture = "\A3_Aegis\Characters_F_Aegis\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_Cover_tan_F_ca.paa";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\H_HelmetFASTMT_Multicam_CO.paa),
             QPATHTOF(data\H_HelmetFASTMT_Cover_Multicam_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
+            "\A3_Aegis\Characters_F_Aegis\Headgear\Data\H_HeadsetWest_tan_CO.paa"
         };
     };
-    class GVAR(H_Helmet_FASTMT_Cover_Multicam_Snow_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
+    class GVAR(H_Helmet_FASTMT_Cover_Multicam_Snow_F): Aegis_H_Helmet_FASTMT_Cover_base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
         MACRO_ACE_HEARING
         displayName = "[Ghost] FAST-MT Helmet w/ Cover (Multicam Alpine)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_tan_F_ca.paa);
+        picture = "\A3_Aegis\Characters_F_Aegis\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_Cover_tan_F_ca.paa";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\H_HelmetFASTMT_Multicam_Snow_CO.paa),
             QPATHTOF(data\H_HelmetFASTMT_Cover_Multicam_Snow_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
+            "\A3_Aegis\Characters_F_Aegis\Headgear\Data\H_HeadsetWest_tan_CO.paa"
         };
     };
-    class GVAR(H_Helmet_FASTMT_Cover_A3_Multicam_Woodland_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
+    class GVAR(H_Helmet_FASTMT_Cover_A3_Multicam_Woodland_F): Aegis_H_Helmet_FASTMT_Cover_base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
         MACRO_ACE_HEARING
         displayName = "[Ghost] FAST-MT Helmet w/ Cover (Multicam Woodland)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_rgr_F_ca.paa);
+        picture = "\A3_Aegis\Characters_F_Aegis\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_Cover_rgr_F_ca.paa";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\H_HelmetFASTMT_A3_Multicam_Woodland_CO.paa),
             QPATHTOF(data\H_HelmetFASTMT_Cover_A3_Multicam_Woodland_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_oli_CO.paa)
+            "\A3_Aegis\Characters_F_Aegis\Headgear\Data\H_HeadsetWest_oli_CO.paa"
         };
     };
-    class GVAR(H_Helmet_FASTMT_Cover_US_OCP_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
+    class GVAR(H_Helmet_FASTMT_Cover_US_OCP_F): Aegis_H_Helmet_FASTMT_Cover_base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
         MACRO_ACE_HEARING
         displayName = "[Ghost] FAST-MT Helmet w/ Cover (US OCP)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_tan_F_ca.paa);
+        picture = "\A3_Aegis\Characters_F_Aegis\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_Cover_tan_F_ca.paa";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\H_HelmetFASTMT_US_OCP_CO.paa),
             QPATHTOF(data\H_HelmetFASTMT_Cover_US_OCP_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
+            "\A3_Aegis\Characters_F_Aegis\Headgear\Data\H_HeadsetWest_tan_CO.paa"
         };
     };
-    class GVAR(H_Helmet_FASTMT_Cover_ghost_US_OCP_F): GVAR(H_Helmet_FASTMT_Cover_base_F) {
+    class GVAR(H_Helmet_FASTMT_Cover_ghost_US_OCP_F): Aegis_H_Helmet_FASTMT_Cover_base_F {
         author = QAUTHOR;
         MACRO_ITEM_COMMON
         MACRO_ACE_HEARING
         displayName = "[Ghost] FAST-MT Helmet w/ Cover (Ghost US OCP)";
-        heatReduction = 1;
-        picture = QPATHTOF(data\ui\Aegis_H_Helmet_FASTMT_Cover_tan_F_ca.paa);
+        picture = "\A3_Aegis\Characters_F_Aegis\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_Cover_tan_F_ca.paa";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\H_HelmetFASTMT_US_OCP_CO.paa),
             QPATHTOF(data\H_ghost_HelmetFASTMT_Cover_US_OCP_CO.paa),
-            QPATHTOF(data\H_HeadsetWest_tan_CO.paa)
+            "\A3_Aegis\Characters_F_Aegis\Headgear\Data\H_HeadsetWest_tan_CO.paa"
         };
     };
 

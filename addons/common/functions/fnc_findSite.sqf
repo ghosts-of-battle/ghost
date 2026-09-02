@@ -74,7 +74,7 @@ if (_count < 1) exitWith {[]};
 private _centre = _profile getOrDefault ["centre", []];
 private _minRange = _profile getOrDefault ["minRange", 0];
 private _maxRange = _profile getOrDefault ["maxRange", 0];
-private _ring = _markers isEqualTo [] && {_centre isNotEqualTo []} && {_maxRange > 0};
+private _ring = _markers isEqualTo [] && {_centre isNotEqualTo []} && _maxRange > 0;
 if (_markers isEqualTo [] && {!_ring}) exitWith {[]};
 
 private _foot = _profile getOrDefault ["footprint", 6];
@@ -239,7 +239,7 @@ for "_site" from 1 to _count do {
 
     // A site found on a relaxed pass is worth saying: it is standing on
     // ground the profile asked this function to avoid.
-    if (_best isNotEqualTo [] && {_usedPass > 0}) then {
+    if (_best isNotEqualTo [] && _usedPass > 0) then {
         diag_log text format [
             "[ghost_common] findSite: site %1 needed relaxation pass %2 - the strict profile had no ground here",
             count _found + 1, _usedPass

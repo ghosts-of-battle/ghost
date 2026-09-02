@@ -52,6 +52,10 @@ if (isNil "_radios") then {
     // Safely retrieve the true index assigned by ACE Arsenal
     private _old = missionNamespace getVariable ["Rev_uav_arsenalCategory", -1];
 
+    // THIS IS A TAB, NOT A WHITELIST. It only says which ACE arsenal panel a
+    // drone item is sorted into when the MISSION's arsenal config has
+    // whitelisted it - what the players actually get is decided there
+    // (config/arsenal/), never here.
     private _newDrones = [
         "SwitchBlade_600_Tube_Woodland","SwitchBlade_300_Tube_Woodland","SwitchBlade_300_Tube_Desert","SwitchBlade_600_Tube_Desert",
         "GX_DEPLOYABLE_MAGAZINE_UAV_06","GX_DEPLOYABLE_MAGAZINE_UAV_06_MEDICAL","GX_DEPLOYABLE_MAGAZINE_UAV_02_lxWS","GX_DEPLOYABLE_MAGAZINE_UAV_01",

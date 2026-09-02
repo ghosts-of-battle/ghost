@@ -39,6 +39,12 @@ private _ring = [
     ["ew", "SCANNER", FUNC(widgetEw)],
     ["squad", "SQUAD", FUNC(widgetSquad)],
     ["timer", "TIMER", FUNC(widgetTimer)],
+    // the vehicle's active protection - charges, the RF emitter, the last
+    // intercept. ONLY IN A VEHICLE (user, 2026-08-29: "aps tile should be
+    // hidden when not in a vehicle"): the fourth entry is the condition the
+    // draw asks before it lays the tile out at all, so on foot the slot is
+    // simply empty rather than a box saying NO APS.
+    ["aps", "APS", FUNC(widgetAps), { !isNull objectParent player }],
     ["off", "", {}]
 ];
 

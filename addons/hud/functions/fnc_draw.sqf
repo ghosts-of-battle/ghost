@@ -51,9 +51,16 @@ if ([] call FUNC(hidden)) exitWith {};
     {ctrlDelete _x} forEach (allControls _display select {(ctrlParentControlsGroup _x) isEqualTo _ctrl});
 
     ([_slot] call FUNC(slotState)) params ["_ring", "_i"];
-    (_ring select _i) params ["_id", "_label", "_drawer"];
+    (_ring select _i) params ["_id", "_label", "_drawer", ["_when", {true}]];
 
-    if (_id isEqualTo "off") then {continue};
+    // OFF, or a readout that has nothing to say right now - the APS tile on
+    // foot. The slot control itself is hidden as well as emptied, so nothing
+    // of it - not its outline, not its hit area - is on the screen. Shown
+    // again here, because FUNC(setShown) shows both slots and then calls
+    // this, so this is the last word on each slot.
+    private _vacant = _id isEqualTo "off" || {!(call _when)};
+    _ctrl ctrlShow !_vacant;
+    if (_vacant) then {continue};
 
     // THE LAYOUT EDITOR'S BOX, READ EVERY DRAW. The control was placed by its
     // grid expression when the layer was created; moving or resizing it in
@@ -65,8 +72,8 @@ if ([] call FUNC(hidden)) exitWith {};
     private _grid = ["grid_ghost_hudLeft", "grid_ghost_hudRight"] select _slot;
     private _pos = ctrlPosition _ctrl;
     {
-        private _v = profileNamespace getVariable [format ["IGUI_%1_%2", _grid, _x], nil];
-        if (!isNil "_v" && {_v isEqualType 0}) then {_pos set [_forEachIndex, _v]};
+        private _v = profileNamespace getVariable [format ["IGUI_%1_%2", _grid, _x], ""];
+        if (_v isEqualType 0) then {_pos set [_forEachIndex, _v]};
     } forEach ["X", "Y", "W", "H"];
     _ctrl ctrlSetPosition _pos;
     _ctrl ctrlCommit 0;

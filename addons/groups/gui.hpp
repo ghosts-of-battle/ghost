@@ -210,12 +210,53 @@ class YMF_groupMenu {
             h = "0.026 * safezoneH";
         };
 
+        // THE PLATOON TABS. Four controls, always - the mission decides how many
+        // carry a platoon and fn_initGroupMenu hides the rest. Fixed width
+        // rather than four shares of the rail, so two tabs sit at the left with
+        // air to their right instead of stretching to half the screen each.
+        //
+        // 0.0635 x 4 plus three 0.002 gaps is the rail's own 0.260 exactly.
+        //
+        // WHY CONFIG AND NOT SQF. fn_styleGroupMenu scales every control on the
+        // display about the screen centre for the player's UI scale; a control
+        // positioned afterwards in script would be the one thing on the screen
+        // that ignored the setting.
+        class PltTab1: RscGhostButton {
+            idc = 9720;
+            text = "";
+            x = "0.0200 * safezoneW + safezoneX";
+            y = "0.110 * safezoneH + safezoneY";
+            w = "0.0635 * safezoneW";
+            h = "0.030 * safezoneH";
+            sizeEx = "0.62 * (0.025 * safezoneH)";
+            colorBackground[] = {0, 0, 0, 0};
+            onButtonClick = "[0] call ghost_groups_fnc_selectPlatoon;";
+        };
+        class PltTab2: PltTab1 {
+            idc = 9721;
+            x = "0.0855 * safezoneW + safezoneX";
+            onButtonClick = "[1] call ghost_groups_fnc_selectPlatoon;";
+        };
+        class PltTab3: PltTab1 {
+            idc = 9722;
+            x = "0.1510 * safezoneW + safezoneX";
+            onButtonClick = "[2] call ghost_groups_fnc_selectPlatoon;";
+        };
+        class PltTab4: PltTab1 {
+            idc = 9723;
+            x = "0.2165 * safezoneW + safezoneX";
+            onButtonClick = "[3] call ghost_groups_fnc_selectPlatoon;";
+        };
+
+        // The tree starts under the tab row and still ends where it always did,
+        // so a screen with no tabs loses nothing - fn_initGroupMenu puts the top
+        // edge back to 0.110 when the mission declares no platoons.
         class RoleList: RscGhostTree {
             idc = 1500;
             x = "0.020 * safezoneW + safezoneX";
-            y = "0.110 * safezoneH + safezoneY";
+            y = "0.146 * safezoneH + safezoneY";
             w = "0.260 * safezoneW";
-            h = "0.760 * safezoneH";
+            h = "0.724 * safezoneH";
             onTreeSelChanged = "call ghost_groups_fnc_onGroupMenuTvSelectChange;";
             onTreeDblClick = "[] call ghost_groups_fnc_selectPosition;";
         };

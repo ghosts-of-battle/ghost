@@ -84,6 +84,33 @@
 #define INFO_4(C,M,A1,A2,A3,A4) INFO(C,FORMAT_4(M,A1,A2,A3,A4))
 #define INFO_5(C,M,A1,A2,A3,A4,A5) INFO(C,FORMAT_5(M,A1,A2,A3,A4,A5))
 
+// PER-ENTITY TRACE, DISARMED UNLESS THE ADDON ASKS FOR IT.
+//
+// An INFO on a path that runs once per unit or once per vehicle is not a log
+// line, it is a cost paid on the frames a spawn is already expensive: the
+// format runs, and diag_log writes a line to disk, for every entity the
+// mission ever creates. The 2026-08-31 session put 2,236 of these in the RPT
+// from the vehicle init path alone - seven lines per vehicle, four of them
+// saying the same thing twice - so the ones on those paths say TRACE_INFO_N
+// and compile to nothing.
+//
+// Uncomment DEBUG_MODE_FULL in an addon's script_component.hpp to get that
+// addon's trace back. Anything that has to be readable in a normal RPT - a
+// module coming up, a warning, a decision worth explaining - stays INFO.
+#ifdef DEBUG_MODE_FULL
+    #define TRACE_INFO_1(C,M,A1) INFO_1(C,M,A1)
+    #define TRACE_INFO_2(C,M,A1,A2) INFO_2(C,M,A1,A2)
+    #define TRACE_INFO_3(C,M,A1,A2,A3) INFO_3(C,M,A1,A2,A3)
+    #define TRACE_INFO_4(C,M,A1,A2,A3,A4) INFO_4(C,M,A1,A2,A3,A4)
+    #define TRACE_INFO_5(C,M,A1,A2,A3,A4,A5) INFO_5(C,M,A1,A2,A3,A4,A5)
+#else
+    #define TRACE_INFO_1(C,M,A1)
+    #define TRACE_INFO_2(C,M,A1,A2)
+    #define TRACE_INFO_3(C,M,A1,A2,A3)
+    #define TRACE_INFO_4(C,M,A1,A2,A3,A4)
+    #define TRACE_INFO_5(C,M,A1,A2,A3,A4,A5)
+#endif
+
 #define WARNING_1(C,M,A1) WARNING(C,FORMAT_1(M,A1))
 #define WARNING_2(C,M,A1,A2) WARNING(C,FORMAT_2(M,A1,A2))
 #define WARNING_3(C,M,A1,A2,A3) WARNING(C,FORMAT_3(M,A1,A2,A3))

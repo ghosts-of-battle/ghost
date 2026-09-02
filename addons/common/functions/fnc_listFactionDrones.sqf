@@ -30,17 +30,18 @@ Author:
 
 params [["_faction", "", [""]]];
 private _facLower = toLower _faction;
-private _all = (_facLower == "" || {_facLower == "all"});
+private _all = (_facLower == "" || _facLower == "all");
 
 // Engine-filtered pass: scope 2 + isUav. Cheap; keeps the SQF loop small.
-private _cands = "getNumber (_x >> 'scope') == 2 && {getNumber (_x >> 'isUav') > 0}" configClasses (configFile >> "CfgVehicles");
+// not the autonomous turrets, SAM sites and radars - they carry isUav too
+private _cands = "getNumber (_x >> 'scope') == 2 && {getNumber (_x >> 'isUav') > 0} && {!((configName _x) isKindOf 'StaticWeapon')}" configClasses (configFile >> "CfgVehicles");
 
 private _rows = [];
 {
     private _cfg = _x;
     private _cn  = configName _cfg;
     private _fac = toLower getText (_cfg >> "faction");
-    if (_all || {_fac == _facLower}) then {
+    if (_all || _fac == _facLower) then {
         private _dn = getText (_cfg >> "displayName");
         if (_dn == "") then { _dn = _cn };
         private _side = if (isNumber (_cfg >> "side")) then { getNumber (_cfg >> "side") } else { -1 };

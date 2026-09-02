@@ -43,7 +43,7 @@ private _ids = [];
 // 1. THE MISSION'S CONFIG - the recommended place, and the one that shares its
 //    array with enableDebugConsole and cba_settings_whitelist.
 {
-    if (_x isEqualType "" && {_x isNotEqualTo ""}) then {_ids pushBackUnique _x};
+    if (_x isEqualType "" && _x isNotEqualTo "") then {_ids pushBackUnique _x};
 } forEach (getArray (missionConfigFile >> "CfgGhostAdmins" >> "admins"));
 
 // 2. A LIST THE MISSION HANDS OVER. The panel's original config\config_adminlist.hpp
@@ -57,7 +57,7 @@ private _ids = [];
 //        ghost_missionConfig_admins = call compile preprocessFileLineNumbers "config\config_adminlist.hpp";
 //    Missions that use CfgGhostAdmins above need nothing at all.
 {
-    if (_x isEqualType "" && {_x isNotEqualTo ""}) then {_ids pushBackUnique _x};
+    if (_x isEqualType "" && _x isNotEqualTo "") then {_ids pushBackUnique _x};
 } forEach (missionNamespace getVariable ["ghost_missionConfig_admins", []]);
 
 // 3. Ghost's own list - the uids ghost_admin already trusts with the debug
@@ -65,7 +65,7 @@ private _ids = [];
 //    set up for, which is what stops a fresh mission locking everybody out of
 //    the panel that would fix it.
 {
-    if (_x isEqualType "" && {_x isNotEqualTo ""}) then {_ids pushBackUnique _x};
+    if (_x isEqualType "" && _x isNotEqualTo "") then {_ids pushBackUnique _x};
 } forEach (getArray (configFile >> "enableDebugConsole"));
 
 _ids

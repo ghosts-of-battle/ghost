@@ -211,7 +211,7 @@ if (_lines isNotEqualTo []) then {
         {
             private _key = _x getOrDefault ["key", ""];
             private _v = _payload getOrDefault [_key, ""];
-            if (_v isEqualTo "" || {_v isEqualTo false}) then {continue};
+            if (_v isEqualTo "" || _v isEqualTo false) then {continue};
 
             private _prefix = _x getOrDefault ["prefix", ""];
             if (_v isEqualTo true) then {

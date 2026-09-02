@@ -172,7 +172,7 @@ private _colW = _w - 2 * _pad;
 private _footY = _y + _perCol * _rowH + _padY;
 [_body, [_pad, _footY - _padY, _w - 2 * _pad, RULE_THICK * pixelH], _ink] call EFUNC(tacpad,drawFill);
 
-private _airRisk = overcast > 0.75 || {fog > 0.4} || {_windSpeed > 12};
+private _airRisk = overcast > 0.75 || {fog > 0.4} || _windSpeed > 12;
 private _thermal = rain > 0.1 || {fog > 0.3};
 
 [

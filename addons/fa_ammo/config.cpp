@@ -8,8 +8,10 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "ghost_fa_main",
+            "ghost_notify",
             "cba_main",
-            "ace_ballistics"
+            "ace_ballistics",
+            "A3_Weapons_F_Mark"    // the Navid, patched in CfgWeapons.hpp
         };
         author = QAUTHOR;
         VERSION_CONFIG;
@@ -1587,6 +1589,15 @@ class CfgPatches {
             "FA_o_10Rnd_93x64_Type40_T_Blue",
             "FA_o_10Rnd_93x64_Type40_T_Orange",
             "FA_o_10Rnd_93x64_Type40_T_IR",
+            // 9.3x64 Type 40 belt (Navid)
+            "FA_o_150Rnd_93x64_Type40",
+            "FA_o_150Rnd_93x64_Type40_T_Red",
+            "FA_o_150Rnd_93x64_Type40_T_Yellow",
+            "FA_o_150Rnd_93x64_Type40_T_Green",
+            "FA_o_150Rnd_93x64_Type40_T_White",
+            "FA_o_150Rnd_93x64_Type40_T_Blue",
+            "FA_o_150Rnd_93x64_Type40_T_Orange",
+            "FA_o_150Rnd_93x64_Type40_T_IR",
             // .408 Mk240 LRP (7Rnd, 10Rnd_338_Mag body)
             "FA_b_10Rnd_408_Mk240",
             "FA_b_10Rnd_408_Mk240_T_Red",
@@ -1644,3 +1655,4 @@ class CfgPatches {
 #include "ATragMX_Presets.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgMagazinewells.hpp"
+#include "CfgWeapons.hpp"

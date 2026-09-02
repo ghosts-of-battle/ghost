@@ -84,7 +84,7 @@ private _origin = getPosASL _proj;
         };
         private _closest = _lastPos vectorAdd (_seg vectorMultiply _t);
         private _d = _closest distance _p;
-        if (_d <= _prox && {_best < 0 || {_d < _best}}) then {
+        if (_d <= _prox && {_best < 0 || _d < _best}) then {
             _best = _d;
             _burstPos = _closest;
         };

@@ -30,7 +30,7 @@ private _messages = _messageArrays apply {createHashMapFromArray _x};
 // FUNC(cltReceive) carried. A thread that arrives without one is not cacheable
 // and saying so beats an error per fetch.
 private _threadId = _thread getOrDefault ["id", ""];
-if (!(_threadId isEqualType "") || {_threadId isEqualTo ""}) exitWith {
+if (!(_threadId isEqualType "") || _threadId isEqualTo "") exitWith {
     diag_log text format ["[ghost_messaging] malformed thread, no id: %1", _threadArray];
 };
 

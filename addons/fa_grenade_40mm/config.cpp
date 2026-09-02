@@ -9,6 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             "ace_ballistics",
             "ghost_fa_main",
+            "ghost_notify",
             "cba_main",
             "A3_Weapons_F"
         };

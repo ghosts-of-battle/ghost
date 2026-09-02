@@ -58,9 +58,6 @@ switch (_crateType) do {
     case "crate_mo": {
         _crateModel = "ghost_equipment_252";
     };
-    case "crate_mopp": {
-        _crateModel = "ghost_equipment_MOPP";
-    };
     case "crate_tow": {
         _crateModel = "ghost_equipment_TOW";
     };

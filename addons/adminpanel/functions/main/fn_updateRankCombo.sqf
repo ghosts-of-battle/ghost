@@ -46,10 +46,10 @@ if (isNull _player) then {
     // Proper-case name, e.g. "Sergeant". The mission's rank map when there is
     // one - see fn_updatePlayerList for why it cannot be assumed - and the
     // engine's own rank when there is not.
-    private _rank = if (isNil "YMF_fnc_player_getRank") then {
+    private _rank = if (isNil "ghost_players_fnc_getRank") then {
         rank _player
     } else {
-        [_player] call YMF_fnc_player_getRank
+        [_player] call ghost_players_fnc_getRank
     };
     private _idx = _ranks findIf {toUpper _x isEqualTo toUpper _rank};
     if (_idx < 0) then {_idx = 0};

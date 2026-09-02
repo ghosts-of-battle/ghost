@@ -9,8 +9,10 @@ Adds the "Future Ammunition" briefing subject to a unit's map Notes tab, with on
 ## Requires
 
 - `ghost_fa_main`
+- `ghost_notify`
 - `cba_main` _(external)_
 - `ace_ballistics` _(external)_
+- `A3_Weapons_F_Mark` _(external)_
 
 ## Ships
 

@@ -43,6 +43,7 @@ class CfgVehicles {
                 displayName = "Airframe Class";
                 tooltip = "Classname of the fixed-wing drone this asset flies. One class per module; place another module for a second airframe. BLANK: the side's vanilla UCAV.";
                 typeName = "STRING";
+                control = "ghost_ClassPick_Uav_Single";
                 defaultValue = "''";
                 expression = QUOTE(_this setVariable [ARR_2('droneClass',_value)]);
             };

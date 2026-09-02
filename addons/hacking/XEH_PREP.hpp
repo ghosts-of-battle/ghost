@@ -42,6 +42,10 @@ PREP(productLocateArty);
 PREP(productLocateCoastal);
 PREP(productLocateRadar);
 PREP(productInstallation);
+// The rest of the network ALiVE runs, read through the adapter - camps and the
+// supply hubs behind the objectives. See docs/new.md section 7.
+PREP(productLocateCamp);
+PREP(productLocateHub);
 
 // Which kind of war is being fought where the hack is - what scopes the product
 // menu. See FUNC(intelOptions).

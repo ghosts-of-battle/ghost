@@ -1,0 +1,55 @@
+#include "script_component.hpp"
+
+class CfgPatches {
+    class ADDON {
+        name = COMPONENT_NAME;
+        units[] = {
+            "ghost_GEN_B_Captain_Dwarden_F",
+            "ghost_GEN_B_GEN_APC_Wheeled_02_hmg_lxWS",
+            "ghost_GEN_B_GEN_Boat_Transport_02_F",
+            "ghost_GEN_B_GEN_Commander_F",
+            "ghost_GEN_B_GEN_Heli_EC_01_RF",
+            "ghost_GEN_B_GEN_Helipilot_RF",
+            "ghost_GEN_B_GEN_Offroad_01_comms_F",
+            "ghost_GEN_B_GEN_Offroad_01_covered_F",
+            "ghost_GEN_B_GEN_Offroad_01_gen_F",
+            "ghost_GEN_B_GEN_Pickup_covered_rf",
+            "ghost_GEN_B_GEN_Quadbike_01_F",
+            "ghost_GEN_B_GEN_Soldier_AR_F",
+            "ghost_GEN_B_GEN_Soldier_F",
+            "ghost_GEN_B_GEN_Soldier_LAT_F",
+            "ghost_GEN_B_GEN_Soldier_RF",
+            "ghost_GEN_B_GEN_Soldier_Rifle_F",
+            "ghost_GEN_B_GEN_Soldier_SG_F",
+            "ghost_GEN_B_GEN_Van_02_transport_F",
+            "ghost_GEN_B_GEN_Van_02_vehicle_F",
+            "ghost_GEN_B_GEN_crew_lxWS",
+            "ghost_GEN_EF_B_CombatBoat_Unarmed_GEN",
+            "ghost_GEN_EF_B_Gyra_GEN",
+            "ghost_GEN_EF_B_Gyra_HMG_GEN"
+        };
+        weapons[] = {"ghost_GEN_smg_UMP_snds"};
+        requiredVersion = REQUIRED_VERSION;
+        // ghost_fa_tiers IS NOT REQUIRED, DELIBERATELY. The tier
+        // magazines are named as STRINGS in magazines[]; nothing here
+        // inherits from them, so there is no load order to enforce.
+        // Requiring it was fatal: fa_tiers requires fa_rhs, fa_sps,
+        // fa_e22raf and fa_jca, which require RHS, SPS, E22 and JCA -
+        // and with skipWhenMissingDependencies any one of those absent
+        // dropped this whole faction out of 3DEN and Zeus in silence.
+        //
+        // NOTHING FROM THE SOURCE FACTION'S MOD IS REQUIRED EITHER.
+        // Every parent class is forward-declared in CfgVehicles.hpp, so a
+        // load order without that mod gets inert classes instead of a
+        // broken config. skipWhenMissingDependencies does the rest.
+        requiredAddons[] = {"ghost_main"};
+        skipWhenMissingDependencies = 1;
+        author = QAUTHOR;
+        VERSION_CONFIG;
+    };
+};
+
+#include "CfgFactionClasses.hpp"
+#include "CfgWeapons.hpp"
+#include "CfgVehicles.hpp"
+#include "CfgGroups.hpp"

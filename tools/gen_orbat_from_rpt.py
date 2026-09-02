@@ -43,11 +43,15 @@ RE_PROP = re.compile(r"^([FUG])PROP;([^;]+);(own|inh);(num|txt|arr);([^;]*);([^;
 RE_GROUP = re.compile(r"^GROUP;(\d+);([^;]+);([^;]*);([^;]*);([^;]+?)(?:;(.*))?$")
 RE_GMAN = re.compile(r"^GMAN;(\d+);(\d+);([^;]*);([^;]*?)(?:;(\[.*\]))?$")
 
-WANT = (0, 1, 2)
+# East, West, Independent, Civilian - every side that has factions
+# (2026-08-30; civilians were excluded until then and never reached the
+# per-faction files, though docs/FACTIONS_CIV.md is written from them).
+WANT = (0, 1, 2, 3)
 
 # CfgGroups also carries an "Empty" side holding building compositions - Altis
 # Terminal and the like. That is not an order of battle.
-GROUP_SIDES = ("west", "east", "indep", "guer", "guerrilla", "independent")
+GROUP_SIDES = ("west", "east", "indep", "guer", "guerrilla", "independent",
+               "civ", "civilian")
 
 # NOT UNITS. A dismantled static weapon is a backpack; a minefield is a mine.
 SKIP_VCLASS = ("Backpacks", "Mines", "Structures_Military", "Structures_Walls",
@@ -109,6 +113,24 @@ def gmen_values(gmen, gid):
     """A group's men in slot order: (vehicle, rank, position)."""
     men = gmen.get(gid, {})
     return [men[i] for i in sorted(men, key=int)]
+
+
+RE_WEAPON = re.compile(r"^WEAPON;([^;]+);([^;]*);(\d+);([^;]*);([^;]*);(.*)$")
+
+
+def read_weapons(rpt):
+    """class -> {parent, type, name, linked (muzzle item or ""), compat [...]}
+    from the dump's WEAPON lines - {} for a dump made before the dump script
+    logged weapons (tools/dump_orbat.sqf, 2026-08-28)."""
+    out = {}
+    with io.open(rpt, encoding="utf-8", errors="replace") as fh:
+        for raw in fh:
+            m = RE_WEAPON.match(STAMP.sub("", raw.rstrip("\r\n")))
+            if m:
+                cls, parent, typ, name, linked, compat = m.groups()
+                out[cls] = {"parent": parent, "type": int(typ), "name": name, "linked": linked,
+                            "compat": re.findall(r'"([^"]+)"', compat)}
+    return out
 
 
 def read(rpt):
@@ -205,7 +227,7 @@ def main():
         os.makedirs(args.out)
 
     print("read   %s" % rpt)
-    print("       %d unit record(s), %d group(s), %d faction(s) on East/West/Ind"
+    print("       %d unit record(s), %d group(s), %d faction(s) on East/West/Ind/Civ"
           % (len(units), len(groups), len(fs)))
 
     nfile = nunit = ngrp = 0

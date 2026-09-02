@@ -105,7 +105,7 @@ private _cellH = ([_labelSize] call EFUNC(tacpad,textH)) + 2 * _padY;
 
     private _off = _label == "OFF";
     private _available = _own || _off || {!isNil _fnc};
-    private _running = !_off && {!_own} && {_fnc == GVAR(activeTool)};
+    private _running = !_off && {!_own} && _fnc == GVAR(activeTool);
 
     private _cx = _pad + (_forEachIndex mod _cols) * _cellW;
     private _cy = _padY + floor (_forEachIndex / _cols) * (_cellH + _padY);
@@ -191,7 +191,7 @@ private _cellH = ([_labelSize] call EFUNC(tacpad,textH)) + 2 * _padY;
         // is not started again - that is the toggle. OFF names no tool and stops
         // there. Anything else starts, on the map the player is already looking
         // at rather than after closing it.
-        if (_name != "" && {_name != _running} && {!isNil _name}) then {
+        if (_name != "" && _name != _running && {!isNil _name}) then {
             [] call (missionNamespace getVariable _name);
             uiNamespace setVariable [QGVAR(toolEH), uiNamespace getVariable ["PLP_SMT_EH", -1]];
             GVAR(activeTool) = _name;

@@ -13,11 +13,11 @@ Medical bags and the items in them.
 
 ## Ships
 
-5 unit classes, 5 weapon/item classes, 14 functions.
+5 unit classes, 5 weapon/item classes, 13 functions.
 
 ## Functions
 
-<details><summary>14</summary>
+<details><summary>13</summary>
 
 - `ghost_medbags_fnc_canTake`
 - `ghost_medbags_fnc_canUnpackDrugKit`
@@ -25,13 +25,12 @@ Medical bags and the items in them.
 - `ghost_medbags_fnc_canUnpackFluid`
 - `ghost_medbags_fnc_canUnpackMedicKit`
 - `ghost_medbags_fnc_canUnpackTrauma`
-- `ghost_medbags_fnc_canUnpackmopp`
 - `ghost_medbags_fnc_doTake`
 - `ghost_medbags_fnc_doUnpackDrugKit`
 - `ghost_medbags_fnc_doUnpackFirstAid`
 - `ghost_medbags_fnc_doUnpackFluid`
 - `ghost_medbags_fnc_doUnpackMedicKit`
 - `ghost_medbags_fnc_doUnpackTrauma`
-- `ghost_medbags_fnc_doUnpackmopp`
+- `ghost_medbags_fnc_stripBag`
 
 </details>

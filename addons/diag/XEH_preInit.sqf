@@ -17,7 +17,3 @@ ADDON = false;
 #include "XEH_PREP.hpp"
 
 ADDON = true;
-
-// The AA truth instrument, armed at preInit ON PURPOSE - the kill it hunts
-// happens during object init, before postInit ever runs. See the function.
-call FUNC(aaWatch);

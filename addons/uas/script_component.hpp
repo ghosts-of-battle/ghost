@@ -39,6 +39,13 @@
 // How far from a drone a player is even considered for detection.
 #define UAS_SPOT_RANGE      800
 
+// THE IED PELICAN'S FUZE - see FUNC(iedDrone). How close a hostile has to be
+// to set it off, how often it looks, and how long after spawning it starts
+// looking (so it does not take its own operator at deployment).
+#define UAS_IED_RADIUS      7
+#define UAS_IED_TICK        0.5
+#define UAS_IED_ARM_DELAY   12
+
 // HOW CLOSE A PLAYER HAS TO BE FOR A PATROL TO EXIST AT ALL.
 //
 // A drone orbiting a base nobody is near is a drone nobody will ever see, and

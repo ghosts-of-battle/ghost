@@ -149,7 +149,7 @@ createVehicleCrew _veh;
 
     private _flyGrp = group (driver _veh);
     if (isNull _flyGrp) then { _flyGrp = _grp };
-    if (!isNull _grp && {_grp isNotEqualTo _flyGrp} && {(units _grp) isEqualTo []}) then {
+    if (!isNull _grp && _grp isNotEqualTo _flyGrp && {(units _grp) isEqualTo []}) then {
         deleteGroup _grp;
     };
 

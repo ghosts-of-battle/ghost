@@ -91,30 +91,17 @@ private _fill = [_accent, _line] select (!_ready || {!_live});
 ] call EFUNC(tacpad,drawText);
 
 if (_ready && _live) then {
+    // THE SEND LIVES IN FUNC(ticSend), not here. It is also on a keybind now -
+    // unbound by default, see initKeybinds.inc.sqf - and a contact report that
+    // could be filed two ways by two copies of the same code is a contact
+    // report that will eventually be filed two DIFFERENT ways. The cooldown
+    // stamp both paths read is the reason that matters.
+    //
+    // QUIET FROM HERE: the cell above has already drawn every refusal this can
+    // return, so a notification saying it again would be the second time the
+    // player has been told.
     [_body, [_cellX, 0, _w - _cellX, _cellH + 3 * _padY], {
-        // The deck's own report, with the two required lines answered from what
-        // the game knows. ENEMY is what a man would say into a radio before he
-        // has looked properly, and it is the line the follow-up card exists to
-        // replace.
-        private _to = ((EGVAR(messaging,namedBoxes) splitString ",") apply {trim _x}) select {_x isNotEqualTo ""};
-
-        ([
-            "tic",
-            [
-                ["Location.A", getPosATL player],
-                ["Enemy.A", "CONTACT - DETAILS TO FOLLOW"],
-                ["Intentions.A", "Returning fire"]
-            ],
-            [format ["B:%1", _to # 0]]
-        ] call EFUNC(messaging,submit)) params ["_ok", "_why"];
-
-        if (!_ok) exitWith {
-            ["TIC", _why, "high"] call EFUNC(messaging,notify);
-            systemChat format ["[TIC] %1", _why];
-        };
-
-        missionNamespace setVariable [QGVAR(ticLast), CBA_missionTime];
-        {["tic"] call EFUNC(tacpad,rebuild)} call CBA_fnc_execNextFrame;
+        [false] call FUNC(ticSend);
     }] call EFUNC(tacpad,drawHit);
 };
 

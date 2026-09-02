@@ -133,7 +133,8 @@ private _mute = [_ink # 0, _ink # 1, _ink # 2, 0.62];
     IDC_ADMINPANEL_PLAYER_MEDICAL_BLDPRES,
     IDC_ADMINPANEL_PLAYER_MEDICAL_BLDVOL,
     IDC_ADMINPANEL_PLAYER_MEDICAL_PAIN,
-    IDC_ADMINPANEL_PLAYER_MEDICAL_SP02
+    IDC_ADMINPANEL_PLAYER_MEDICAL_SP02,
+    IDC_ADMINPANEL_PLAYER_MEDICAL_BLOOD
 ];
 
 // The grid is the one readout in the accent, because it is the one an admin

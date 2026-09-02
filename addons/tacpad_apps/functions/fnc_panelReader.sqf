@@ -138,6 +138,51 @@ private _nets = ((EGVAR(messaging,namedBoxes) splitString ",") apply {trim _x}) 
 
 // EVERY DECLARED SQUAD IS A NET, on this rail too - the platoon's traffic,
 // not private mail. Own group leads even when the mission declares nothing.
+// THE LOG VIEW. A page back through every notification that scrolled past -
+// the request was a button to see past notifications, and this is where the
+// traffic already lives. An entry filed with a position (a capture, a spot
+// report) is clickable and centres the map on it; the rest just read.
+if (GVAR(readerLog)) exitWith {
+    private _row = _padY / _rowH;
+    [_id, "LOG"] call EFUNC(tacpad,headerMeta);
+    [_body, _row, "< BACK", "", [], true, {
+        GVAR(readerLog) = false;
+        {["reader"] call EFUNC(tacpad,rebuild)} call CBA_fnc_execNextFrame;
+    }] call FUNC(row);
+    _row = _row + 1;
+    private _hist = missionNamespace getVariable [QEGVAR(notify,history), []];
+    if (_hist isEqualTo []) then {
+        [_body, _row, "NOTHING LOGGED", "", [], false] call FUNC(row);
+    } else {
+        private _n = count _hist;
+        for "_k" from (_n - 1) to ((_n - TRAFFIC_MAX) max 0) step -1 do {
+            (_hist select _k) params ["_ht", "_hx", "_hc", ["_htime", 0], ["_hpos", []]];
+            private _ago = round ((time - _htime) / 60);
+            private _val = if (_hpos isEqualTo []) then {
+                format ["%1m", _ago]
+            } else {
+                format ["%1 >", mapGridPosition _hpos]
+            };
+            private _rc = [_body, _row, toUpper _ht, _val, [], (_hpos isNotEqualTo []), {
+                params ["", "_ctrl"];
+                private _p = _ctrl getVariable [QGVAR(logPos), []];
+                if (_p isEqualTo []) exitWith {};
+                private _map = (ctrlParent _ctrl) displayCtrl 51;
+                if (isNull _map) exitWith {};
+                ctrlMapAnimClear _map;
+                _map ctrlMapAnimAdd [0.3, ctrlMapScale _map, _p];
+                ctrlMapAnimCommit _map;
+            }] call FUNC(row);
+            _rc setVariable [QGVAR(logPos), _hpos];
+            _row = _row + 1;
+            if (_hx isNotEqualTo "") then {
+                [_body, _row, _hx, "", [], false] call FUNC(row);
+                _row = _row + 1;
+            };
+        };
+    };
+};
+
 private _squadBox = format ["G:%1", groupId (group player)];
 private _ownNet = groupId (group player);
 {
@@ -161,8 +206,8 @@ private _busy = [];
 
 _nets = _nets select {
     _x isEqualTo "ALL"
-    || {_x isEqualTo _ownNet}
-    || {_x isEqualTo GVAR(readerNet)}
+    || _x isEqualTo _ownNet
+    || _x isEqualTo GVAR(readerNet)
     || {_x in _busy}
 };
 
@@ -177,64 +222,53 @@ if !(_active in _nets) then {_active = "ALL"; GVAR(readerNet) = "ALL"};
 // same place he reads how busy it is when it has not.
 ([] call EFUNC(messaging,linkState)) params ["_link"];
 if (_link > 0) then {
-    [_id, ["LINK DEGRADED", "LINK DENIED"] select (_link > 1), true] call EFUNC(tacpad,headerMeta);
+    [_id, ["LINK DEGRADED", "LINK NONET"] select (_link > 1), true] call EFUNC(tacpad,headerMeta);
 } else {
     [_id, [format ["%1 NETS", count _nets - 1], format ["%1 THREADS", count _index]] select (count _nets < 2)] call EFUNC(tacpad,headerMeta);
 };
 
-private _tabW = _w / (count _nets);
+// DROPDOWN, NOT A ROW OF TABS. Five squads plus ALL made a strip too narrow to
+// read; the net selector is one chip now - the active net and its unread count,
+// a caret, and a click that drops the full list over the traffic (drawn last,
+// at the end of this function, so it sits on top). The open state is UI-scoped:
+// it closes on its own when the panel is rebuilt for any other reason.
 private _tabH = _rowH * 0.95;
 private _tabY = _padY;
-{
-    private _net = _x;
-    private _on = _net == _active;
 
-    // The tab's own unread count, off the same index the list below is drawn
-    // from, so a tab can never advertise traffic the list does not show.
-    private _count = 0;
+private _netCount = {
+    params ["_net"];
+    private _c = 0;
     {
         if (_net == "ALL"
             || {(_x get "boxId") in [format ["B:%1", _net], format ["G:%1", _net]]}
             || {_net == "SQUAD" && {(_x get "boxId") == _squadBox}}) then {
-            _count = _count + (_x get "unread");
+            _c = _c + (_x get "unread");
         };
     } forEach _index;
+    _c
+};
 
-    private _tx = _forEachIndex * _tabW;
+private _activeLabel = _active;
+private _adot = _activeLabel find ".";
+if (_adot > -1) then {_activeLabel = _activeLabel select [_adot + 1]};
+private _activeCount = [_active] call _netCount;
 
-    [_body, [_tx, _tabY, _tabW, _tabH], ([_line, _accent] select _on)] call EFUNC(tacpad,drawFill);
+[_body, [0, _tabY, _w, _tabH], _accent] call EFUNC(tacpad,drawFill);
+[
+    _body, [_pad, _tabY, _w * 0.12, _tabH],
+    ([">", "v"] select (uiNamespace getVariable [QGVAR(readerNetOpen), false])),
+    _ground, 0.9, true, "center"
+] call EFUNC(tacpad,drawText);
+[
+    _body, [_w * 0.12, _tabY, _w * 0.88 - _pad, _tabH],
+    toUpper (format ["%1%2", _activeLabel, [format [" (%1)", _activeCount], ""] select (_activeCount == 0)]),
+    _ground, 0.9, true, "left"
+] call EFUNC(tacpad,drawText);
+[_body, [0, _tabY, _w, _tabH], {
+    uiNamespace setVariable [QGVAR(readerNetOpen), !(uiNamespace getVariable [QGVAR(readerNetOpen), false])];
+    {["reader"] call EFUNC(tacpad,rebuild)} call CBA_fnc_execNextFrame;
+}] call EFUNC(tacpad,drawHit);
 
-    // A hairline between tabs, cut out of the strip rather than drawn on it, so
-    // the accent tab keeps a clean edge on both sides.
-    if (_forEachIndex > 0) then {
-        [_body, [_tx, _tabY, RULE_THIN * pixelW, _tabH], _ground] call EFUNC(tacpad,drawFill);
-    };
-
-    // The tab wears the short name - a dotted channel goes by its sub-name
-    // (FIRES.cas is CAS), everything else by its first four letters. The
-    // full name lives on the FULL reader's list.
-    private _label = _net;
-    private _dot = _label find ".";
-    if (_dot > -1) then {_label = _label select [_dot + 1]};
-    _label = toUpper (_label select [0, 4]);
-
-    [
-        _body, [_tx, _tabY, _tabW, _tabH],
-        [_label, format ["%1 %2", _label, _count]] select (_count > 0),
-        ([_ink, _ground] select _on),
-        0.85, true, "center"
-    ] call EFUNC(tacpad,drawText);
-
-    private _hit = [_body, [_tx, _tabY, _tabW, _tabH], {
-        params ["_ctrl"];
-        GVAR(readerNet) = _ctrl getVariable [QGVAR(net), "ALL"];
-        {["reader"] call EFUNC(tacpad,rebuild)} call CBA_fnc_execNextFrame;
-    }] call EFUNC(tacpad,drawHit);
-    _hit setVariable [QGVAR(net), _net];
-} forEach _nets;
-
-// The strip is its own region, so it closes with a 2px rule rather than the 1px
-// the rows below it use between each other.
 [_body, [0, _tabY + _tabH, _w, RULE_THICK * pixelH], _ink] call EFUNC(tacpad,drawFill);
 
 private _top = _tabY + _tabH + RULE_THICK * pixelH;
@@ -325,17 +359,56 @@ private _newX = _btnX + _btnW + _pad * 2;
 [_body, [_newX + _pad, _footY, _btnW - 2 * _pad, _btnH], "NEW", _ink, 0.85, true] call EFUNC(tacpad,drawText);
 [_body, [_newX, _footY, _btnW, _btnH], {["", "", false] call EFUNC(tacpad,composeOpen)}] call EFUNC(tacpad,drawHit);
 
+// LOG opens the page-back over past notifications; the unread/flash tally
+// rides just above it, small, so the button still says what is waiting.
+private _logX = _newX + _btnW + _pad * 2;
+private _logW = _w - _logX - _pad * 2;
+[_body, [_logX, _footY, _logW, _btnH], _ink, RULE_THICK] call EFUNC(tacpad,drawFrame);
+[_body, [_logX, _footY, _logW, _btnH], "LOG", _ink, 0.85, true] call EFUNC(tacpad,drawText);
+[_body, [_logX, _footY, _logW, _btnH], {
+    GVAR(readerLog) = true;
+    uiNamespace setVariable [QGVAR(readerNetOpen), false];
+    {["reader"] call EFUNC(tacpad,rebuild)} call CBA_fnc_execNextFrame;
+}] call EFUNC(tacpad,drawHit);
+
 private _tally = [];
 if (_unread > 0) then {_tally pushBack format ["%1 UNREAD", _unread]};
 if (_flash > 0) then {_tally pushBack format ["%1 FLASH", _flash]};
-
 [
-    _body,
-    [_newX + _btnW, _footY, _w - _newX - _btnW - _pad, _btnH],
+    _body, [_logX, _footY - _btnH * 0.9, _logW, _btnH * 0.8],
     _tally joinString " - ",
     ([_mute, _accent] select (_flash > 0)),
-    0.7, true, "right", true
+    0.6, true, "center", true
 ] call EFUNC(tacpad,drawText);
+
+// THE OPEN DROPDOWN, DRAWN LAST so it overlays the traffic beneath it. One row
+// per net, the active one accented; a click picks it and closes the list.
+if (uiNamespace getVariable [QGVAR(readerNetOpen), false]) then {
+    private _optH = _rowH * 0.95;
+    {
+        private _net = _x;
+        private _oy = _tabY + _tabH + RULE_THICK * pixelH + _forEachIndex * _optH;
+        private _on = _net == _active;
+        [_body, [0, _oy, _w, _optH], ([_ground, _accent] select _on)] call EFUNC(tacpad,drawFill);
+        [_body, [0, _oy, _w, RULE_THIN * pixelH], _line] call EFUNC(tacpad,drawFill);
+        private _lab = _net;
+        private _d = _lab find ".";
+        if (_d > -1) then {_lab = _lab select [_d + 1]};
+        private _c = [_net] call _netCount;
+        [
+            _body, [_pad * 2, _oy, _w - _pad * 3, _optH],
+            toUpper (format ["%1%2", _lab, [format ["  (%1)", _c], ""] select (_c == 0)]),
+            ([_ink, _ground] select _on), 0.85, true, "left"
+        ] call EFUNC(tacpad,drawText);
+        private _hit = [_body, [0, _oy, _w, _optH], {
+            params ["_ctrl"];
+            GVAR(readerNet) = _ctrl getVariable [QGVAR(net), "ALL"];
+            uiNamespace setVariable [QGVAR(readerNetOpen), false];
+            {["reader"] call EFUNC(tacpad,rebuild)} call CBA_fnc_execNextFrame;
+        }] call EFUNC(tacpad,drawHit);
+        _hit setVariable [QGVAR(net), _net];
+    } forEach _nets;
+};
 
 // NO fit. The reader keeps the height it was placed at - it is the docked rail
 // down the right of the design, and a rail that shrinks to its contents is a

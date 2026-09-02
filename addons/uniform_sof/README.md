@@ -17,12 +17,4 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-67 unit classes, 51 weapon/item classes, 1 function.
-
-## Functions
-
-<details><summary>1</summary>
-
-- `ghost_uniform_sof_fnc_empty`
-
-</details>
+87 unit classes, 63 weapon/item classes.

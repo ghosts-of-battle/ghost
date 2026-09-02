@@ -8,8 +8,18 @@ private _roleConfig = missionConfigFile >> "Dynamic_Roles" >> _desiredRole;
 private _defaultLoadout = getArray(_roleConfig >> "defaultLoadout");
 
 if (_isRespawn) then {
-        private _loadout = [player] call EFUNC(gear,loadLoadout);
-        [player, _loadout] call EFUNC(gear,applyLoadout);
+        // ONE SYSTEM DRESSES THE RESPAWN. If ALiVE's multispawn is restoring
+        // gear, this leaves the man alone - two dressers strip each other and
+        // the player arrives naked. Otherwise the saved loadout, and where
+        // nothing was ever saved (a fresh unit has no saved loadout on it),
+        // the ROLE's loadout - never the empty one loadLoadout answers with.
+        if (!(call EFUNC(adapter_alive,respawnGearManaged))) then {
+            if (player call EFUNC(gear,hasSavedLoadout)) then {
+                [player, [player] call EFUNC(gear,loadLoadout)] call EFUNC(gear,applyLoadout);
+            } else {
+                player setUnitLoadout _defaultLoadout;
+            };
+        };
         if (player call ghost_players_fnc_isCurator) then {
             if (!isNil "ghost_curator_fnc_assignZeus") then {[player,true] call ghost_curator_fnc_assignZeus};
             if (!isNil "acre_api_fnc_godModeConfigureAccess") then {[true,true] call acre_api_fnc_godModeConfigureAccess};
@@ -138,7 +148,7 @@ if (EGVAR(patches,usesTFAR)) then {
     [{
         params ["_squadNames","_deadline"];
         private _r = call TFAR_fnc_activeSwRadio;
-        (!isNil "_r" && {_r isEqualType "" && {_r != ""}}) && {
+        (!isNil "_r" && {_r isEqualType "" && _r isNotEqualTo ""}) && {
             ((toUpper (groupId (group player))) in _squadNames) || {diag_tickTime > _deadline}
         }
     }, {

@@ -1,4 +1,8 @@
 PREP(getZones);
+PREP(gpsApply);
+PREP(gpsDrift);
+PREP(spawnGpsUplink);
+PREP(spawnJammerSite);
 PREP(jamFactor);
 PREP(jamHud);
 PREP(jammerLoop);

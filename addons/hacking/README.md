@@ -28,7 +28,7 @@ leaving cross-tier overlap working as intended.
 
 ## Ships
 
-1 unit class, 6 weapon/item classes, 58 functions.
+1 unit class, 6 weapon/item classes, 60 functions.
 
 ## CBA settings
 
@@ -53,7 +53,7 @@ leaving cross-tier overlap working as intended.
 
 ## Functions
 
-<details><summary>58</summary>
+<details><summary>60</summary>
 
 - `ghost_hacking_fnc_alarmAdd`
 - `ghost_hacking_fnc_alarmArm`
@@ -86,7 +86,9 @@ leaving cross-tier overlap working as intended.
 - `ghost_hacking_fnc_productInstallation`
 - `ghost_hacking_fnc_productLocateAA`
 - `ghost_hacking_fnc_productLocateArty`
+- `ghost_hacking_fnc_productLocateCamp`
 - `ghost_hacking_fnc_productLocateCoastal`
+- `ghost_hacking_fnc_productLocateHub`
 - `ghost_hacking_fnc_productLocateRadar`
 - `ghost_hacking_fnc_remoteHackFail`
 - `ghost_hacking_fnc_renderProduct`

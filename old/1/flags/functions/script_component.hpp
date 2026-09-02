@@ -1,1 +1,0 @@
-#include "\z\ghost\addons\flags\script_component.hpp"

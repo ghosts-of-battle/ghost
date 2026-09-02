@@ -55,7 +55,7 @@ if (_format == "") exitWith {
     private _first = "";
     {
         private _text = [_values getOrDefault [_x, ""]] call _fnc_text;
-        if (_text != "" && {_text != "yes"}) exitWith {_first = _text};
+        if (_text != "" && _text != "yes") exitWith {_first = _text};
     } forEach (_template get "order");
 
     if (_first == "") then {_short} else {format ["%1 - %2", _short, _first]}

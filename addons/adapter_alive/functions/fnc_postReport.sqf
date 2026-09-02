@@ -87,64 +87,70 @@ private _markerText = if (_isSpotrep) then {
     format ["%1_%2", groupId (group _unit), _dtg]
 };
 
+// KEY SPELLING IS LOAD-BEARING. ALiVE reads these hashes with QGVAR()/QMOD()
+// keys built from PREFIX "ALiVE" - "ALiVE_SYS_marker_shape", not
+// "ALIVE_SYS_marker_shape" - and ALiVE_fnc_hashGet matches with a
+// case-sensitive find. The upper-case spelling silently returns nil for every
+// field and createMarker fails. Verified against sys_marker/fnc_marker.sqf
+// (createMarker) and main/script_mod.hpp (PREFIX).
 private _markerHash = [] call ALiVE_fnc_hashCreate;
 {
     [_markerHash, _x # 0, _x # 1] call ALiVE_fnc_hashSet;
 } forEach [
-    ["ALIVE_SYS_marker_shape", "ICON"],
-    ["ALIVE_SYS_marker_type", _markerType],
-    ["ALIVE_SYS_marker_color", _markerColor],
-    ["ALIVE_SYS_marker_size", [1, 1]],
-    ["ALIVE_SYS_marker_pos", _pos],
-    ["ALIVE_SYS_marker_dir", 0],
-    ["ALIVE_SYS_marker_text", _markerText],
-    ["ALIVE_SYS_marker_locality", _locality],
-    ["ALIVE_SYS_marker_localityValue", _localityValue],
-    ["ALIVE_SYS_marker_player", _uid],
-    ["ALIVE_SYS_marker_hasspotrep", _isSpotrep],
-    ["ALIVE_SYS_marker_spotrep", ["", "SP" + _suffix] select _isSpotrep]
+    ["ALiVE_SYS_marker_shape", "ICON"],
+    ["ALiVE_SYS_marker_type", _markerType],
+    ["ALiVE_SYS_marker_color", _markerColor],
+    ["ALiVE_SYS_marker_size", [1, 1]],
+    ["ALiVE_SYS_marker_pos", _pos],
+    ["ALiVE_SYS_marker_dir", 0],
+    ["ALiVE_SYS_marker_text", _markerText],
+    ["ALiVE_SYS_marker_locality", _locality],
+    ["ALiVE_SYS_marker_localityValue", _localityValue],
+    ["ALiVE_SYS_marker_player", _uid],
+    ["ALiVE_SYS_marker_hasspotrep", _isSpotrep],
+    ["ALiVE_SYS_marker_spotrep", ["", "SP" + _suffix] select _isSpotrep]
 ];
 
 private _reportHash = [] call ALiVE_fnc_hashCreate;
 private _pairs = if (_isSpotrep) then {
     [
-        ["ALIVE_SYS_spotrep_callsign", format ["%1:%2", groupId (group _unit), name _unit]],
-        ["ALIVE_SYS_spotrep_DTG", _dtg],
-        ["ALIVE_SYS_spotrep_dateTime", _f getOrDefault ["dateTime", "NOW"]],
-        ["ALIVE_SYS_spotrep_loc", _f getOrDefault ["loc", _grid]],
-        ["ALIVE_SYS_spotrep_faction", "UNKNOWN"],
-        ["ALIVE_SYS_spotrep_size", _f getOrDefault ["size", "Unknown"]],
-        ["ALIVE_SYS_spotrep_type", _f getOrDefault ["type", "Unknown"]],
-        ["ALIVE_SYS_spotrep_activity", toUpper (_f getOrDefault ["activity", "STATIC"])],
-        ["ALIVE_SYS_spotrep_factivity", "OBSERVING"],
-        ["ALIVE_SYS_spotrep_remarks", _f getOrDefault ["remarks", ""]],
-        ["ALIVE_SYS_spotrep_markername", _markerName],
-        ["ALIVE_SYS_spotrep_locality", _locality],
-        ["ALIVE_SYS_spotrep_localityValue", _localityValue],
-        ["ALIVE_SYS_spotrep_player", _uid]
+        ["ALiVE_SYS_spotrep_callsign", format ["%1:%2", groupId (group _unit), name _unit]],
+        ["ALiVE_SYS_spotrep_DTG", _dtg],
+        ["ALiVE_SYS_spotrep_dateTime", _f getOrDefault ["dateTime", "NOW"]],
+        ["ALiVE_SYS_spotrep_loc", _f getOrDefault ["loc", _grid]],
+        ["ALiVE_SYS_spotrep_faction", "UNKNOWN"],
+        ["ALiVE_SYS_spotrep_size", _f getOrDefault ["size", "Unknown"]],
+        ["ALiVE_SYS_spotrep_type", _f getOrDefault ["type", "Unknown"]],
+        ["ALiVE_SYS_spotrep_activity", toUpper (_f getOrDefault ["activity", "STATIC"])],
+        ["ALiVE_SYS_spotrep_factivity", "OBSERVING"],
+        ["ALiVE_SYS_spotrep_remarks", _f getOrDefault ["remarks", ""]],
+        ["ALiVE_SYS_spotrep_markername", _markerName],
+        ["ALiVE_SYS_spotrep_locality", _locality],
+        ["ALiVE_SYS_spotrep_localityValue", _localityValue],
+        ["ALiVE_SYS_spotrep_player", _uid]
     ]
 } else {
     [
-        ["ALIVE_SYS_sitrep_player", _uid],
-        ["ALIVE_SYS_sitrep_callsign", _f getOrDefault ["callsign", format ["%1:%2", groupId (group _unit), name _unit]]],
-        ["ALIVE_SYS_sitrep_DTG", _dtg],
-        ["ALIVE_SYS_sitrep_dateTime", "NOW"],
-        ["ALIVE_SYS_sitrep_loc", _f getOrDefault ["loc", _grid]],
-        ["ALIVE_SYS_sitrep_en", _f getOrDefault ["en", "NONE"]],
-        ["ALIVE_SYS_sitrep_ekia", _f getOrDefault ["ekia", "0"]],
-        ["ALIVE_SYS_sitrep_ff", _f getOrDefault ["ff", ""]],
-        ["ALIVE_SYS_sitrep_fkia", _f getOrDefault ["fkia", "0"]],
-        ["ALIVE_SYS_sitrep_fwia", _f getOrDefault ["fwia", "0"]],
-        ["ALIVE_SYS_sitrep_civ", _f getOrDefault ["civ", "NONE"]],
-        ["ALIVE_SYS_sitrep_ammo", _f getOrDefault ["ammo", "GREEN"]],
-        ["ALIVE_SYS_sitrep_cas", _f getOrDefault ["cas", "GREEN"]],
-        ["ALIVE_SYS_sitrep_veh", _f getOrDefault ["veh", "GREEN"]],
-        ["ALIVE_SYS_sitrep_cs", _f getOrDefault ["cs", "GREEN"]],
-        ["ALIVE_SYS_sitrep_remarks", _f getOrDefault ["remarks", ""]],
-        ["ALIVE_SYS_sitrep_group", str (group _unit)],
-        ["ALIVE_SYS_sitrep_pos", _pos],
-        ["ALIVE_SYS_sitrep_locality", _locality],
-        ["ALIVE_SYS_sitrep_localityValue", _localityValue]
+        ["ALiVE_SYS_sitrep_player", _uid],
+        ["ALiVE_SYS_sitrep_callsign", _f getOrDefault ["callsign", format ["%1:%2", groupId (group _unit), name _unit]]],
+        ["ALiVE_SYS_sitrep_DTG", _dtg],
+        ["ALiVE_SYS_sitrep_dateTime", "NOW"],
+        ["ALiVE_SYS_sitrep_loc", _f getOrDefault ["loc", _grid]],
+        ["ALiVE_SYS_sitrep_en", _f getOrDefault ["en", "NONE"]],
+        ["ALiVE_SYS_sitrep_ekia", _f getOrDefault ["ekia", "0"]],
+        ["ALiVE_SYS_sitrep_ff", _f getOrDefault ["ff", ""]],
+        ["ALiVE_SYS_sitrep_fkia", _f getOrDefault ["fkia", "0"]],
+        ["ALiVE_SYS_sitrep_fwia", _f getOrDefault ["fwia", "0"]],
+        ["ALiVE_SYS_sitrep_civ", _f getOrDefault ["civ", "NONE"]],
+        ["ALiVE_SYS_sitrep_ammo", _f getOrDefault ["ammo", "GREEN"]],
+        ["ALiVE_SYS_sitrep_cas", _f getOrDefault ["cas", "GREEN"]],
+        ["ALiVE_SYS_sitrep_veh", _f getOrDefault ["veh", "GREEN"]],
+        ["ALiVE_SYS_sitrep_cs", _f getOrDefault ["cs", "GREEN"]],
+        ["ALiVE_SYS_sitrep_remarks", _f getOrDefault ["remarks", ""]],
+        ["ALiVE_SYS_sitrep_group", str (group _unit)],
+        ["ALiVE_SYS_sitrep_pos", _pos],
+        ["ALiVE_SYS_sitrep_locality", _locality],
+        ["ALiVE_SYS_sitrep_localityValue", _localityValue]
     ]
 };
 

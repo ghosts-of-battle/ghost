@@ -30,10 +30,42 @@ if (GVAR(moduleUp)) exitWith {
 };
 GVAR(moduleUp) = true;
 
-GVAR(largeRadius) = _logic getVariable ["largeRadius", 900];
-GVAR(smallRadius) = _logic getVariable ["smallRadius", 300];
+GVAR(largeRadius) = _logic getVariable ["largeRadius", 3000];
+GVAR(smallRadius) = _logic getVariable ["smallRadius", 1000];
 GVAR(objectiveShare) = _logic getVariable ["objectiveShare", 30];
 GVAR(maxPerSide) = _logic getVariable ["maxPerSide", 8];
+
+// EDEN CHECKBOXES ARRIVE AS 0 AND 1, NOT false AND true. Read straight into a
+// GVAR and handed to `&&`, that is "Error &&: Type Number, expected Bool" -
+// which is exactly what the 14:48 RPT showed 51 times from FUNC(jammerLoop)
+// line 29 and once a tick from FUNC(spawnObjectiveJammers) line 105, with the
+// GPS spawner dying on the spot every pass. Coerced here, once, so nothing
+// downstream has to know an attribute from a variable.
+private _bool = {
+    params ["_v"];
+    if (_v isEqualType 0) then { _v > 0 } else { _v isEqualTo true }
+};
+
+// The GPS domain. Default ON, unlike the model knobs in preInit: placing this
+// module is already the deliberate act, and a jamming module that denies the
+// net and the data link but silently leaves GPS alone would be the surprising
+// answer, not the safe one.
+GVAR(gpsEnable) = [_logic getVariable ["gpsEnable", true]] call _bool;
+GVAR(gpsUplinkRadius) = _logic getVariable ["gpsUplinkRadius", 400];
+GVAR(siteObjectives) = [_logic getVariable ["siteObjectives", false]] call _bool;
+
+// Burn-through. These overwrite the preInit defaults, which are the values
+// FUNC(jamFactor) falls back to on a machine the module has not reached.
+//
+// BROADCAST, because this file exits on !isServer and FUNC(jammerLoop) reads
+// jamBurnthrough on every CLIENT to decide whether to ask ACRE for the set's
+// power. Server-local, a dedicated server's players would never burn through
+// anything however big their radio - the same trap ghost_reaction documents on
+// its watts threshold. burnRef needs no broadcast: it is stamped into each
+// zone's model at spawn and travels with the registry.
+GVAR(jamBurnRef) = _logic getVariable ["burnRef", 500];
+missionNamespace setVariable [
+    QGVAR(jamBurnthrough), [_logic getVariable ["burnThrough", true]] call _bool, true];
 
 // Nothing starts until the adapter says ALiVE is up, because every WHERE this
 // system uses is read from it. Both paths are covered: a module is normally

@@ -62,10 +62,23 @@
 #define IDC_JAM_PANEL   8600
 #define IDC_JAM_LABEL   8601
 #define IDC_JAM_BAR     8602
+// ONE ROW PER DOMAIN (user, 2026-08-31). The meter used to be a single
+// label and bar, which stopped meaning anything the moment one emitter
+// could deny the net without touching TAC//MSG. Labels are BASE+i and
+// bars BASE+i for i in JAM_ROWS order; the classes in gui.hpp carry the
+// old idc as a default and ctrlCreate overrides it per row.
+#define IDC_JAM_LABEL0  8610
+#define IDC_JAM_BAR0    8620
+
+// The row colours, the house palette the hacking tablet and the HUD use:
+// bone for a service that still works, amber for degraded, red for gone.
+#define JAM_COL_OK      [0.933, 0.910, 0.863, 0.55]
+#define JAM_COL_DEG     [0.914, 0.651, 0.235, 1]
+#define JAM_COL_OUT     [0.85, 0.28, 0.20, 1]
 
 #define JAM_HUD_ID      "jamMeter"
 #define JAM_HUD_W       0.16
-#define JAM_HUD_H       0.035
+#define JAM_HUD_H       0.09    // three rows now, not one
 #define JAM_HUD_DEF_X   0.42
 #define JAM_HUD_DEF_Y   0.80
 #define JAM_HUD_INTERVAL 0.5
@@ -81,13 +94,72 @@
 #define AI_CHATTER_MIN      3       // sec a transmission lasts, lower bound
 #define AI_CHATTER_MAX      6       // upper bound
 
-// The two props the design names for objective jammers (new.md section 1.3).
-// Resolved at runtime against what is actually loaded - the doc spells them
-// without the Land_ prefix, the engine convention is with it.
-#define JAM_PROP_HUB_A      "Land_RuggedTerminal_01_communications_hub_F"
-#define JAM_PROP_HUB_B      "RuggedTerminal_01_communications_hub_F"
-#define JAM_PROP_TERM_A     "Land_RuggedTerminal_01_communications_F"
-#define JAM_PROP_TERM_B     "RuggedTerminal_01_communications_F"
+// THE THREE DOMAINS (user, 2026-08-31). A zone denies one or more of them, and
+// every consumer asks about the one it cares about rather than about "jamming".
+//   radio - the voice net: TFAR and ACRE degradation
+//   data  - TAC//MSG traffic and other groups' BFT markers
+//   gps   - the GPS item and the map self-icon
+// DOM_ANY is not a domain a zone can carry; it is the question the HUD and the
+// EW scanner ask, meaning "is anything jamming here, whatever it denies".
+//
+// A zone with no domains set carries RADIO and DATA, which is what one emitter
+// did before the split, so an untouched mission behaves exactly as it did.
+#define DOM_RADIO   "radio"
+#define DOM_DATA    "data"
+#define DOM_GPS     "gps"
+#define DOM_UAV     "uav"
+#define DOM_ANY     "any"
+#define DOM_DEFAULT [DOM_RADIO, DOM_DATA]
+
+// WHERE A SERVICE IS CALLED GONE RATHER THAN SICK. messaging's linkState
+// turns DEGRADED into DENIED here, the meter turns amber into red here, and
+// the GPS strip fires here - one number, so the handset, the map and the
+// meter cannot describe the same field three different ways.
+#define JAM_DENIED_BAND 0.75
+
+// A JAMMER SITE IS THREE PROPS, NOT ONE (user, 2026-08-31). The terminal says
+// what the site DENIES and is the emitter - it holds the zone, and hacking or
+// destroying it is what kills the zone. The antenna and the dish are the
+// installation around it: they make a site read as a site from three hundred
+// metres out instead of as a lone box, and they are the reason the whole thing
+// is registered with ALiVE as an objective rather than left as scenery.
+//
+// The terminal picks the domain, one class each:
+#define JAM_PROP_GPS        "RuggedTerminal_01_communications_hub_F"
+#define JAM_PROP_DATA       "RuggedTerminal_01_F"
+#define JAM_PROP_RADIO      "RuggedTerminal_01_communications_F"
+
+// One of each of these joins it, rolled per site so no two look identical.
+#define JAM_PROP_OMNI       ["OmniDirectionalAntenna_01_sand_F", "OmniDirectionalAntenna_01_black_F", "OmniDirectionalAntenna_01_olive_F"]
+#define JAM_PROP_DISH       ["SatelliteAntenna_01_Sand_F", "SatelliteAntenna_01_Olive_F", "SatelliteAntenna_01_Black_F"]
+
+// How far the two dressing props stand from the terminal, and how big the ALiVE
+// objective the site is registered as ends up being.
+#define JAM_SITE_SPREAD     14
+#define JAM_SITE_OBJ_SIZE   60
 
 // How often dead or hacked emitters are pruned from the registry.
 #define JAM_PRUNE_TICK      10
+
+// Sites placed per frame while the spawn queue drains. Two is deliberately
+// slow: the whole point is that a thirty-one commander order of battle
+// costs a longer wait rather than a frozen server, and nobody is looking at
+// a mast in the first minute of a mission anyway.
+#define JAM_SPAWN_PER_TICK  2
+
+// GPS DENIAL IS SPACE-BASED (user, 2026-08-31), so it has no mast at the
+// spot it is denying. A wandering sphere with nothing in it to kill does
+// the denying, and ONE ground station - the uplink that steers it - is
+// what ends it. Kill or hack the station and the sphere goes with it, for
+// good: this is the only jamming in the system a player cannot walk out of.
+#define GPS_SPHERE_R_A      1000    // the two radii the sphere is rolled from
+#define GPS_SPHERE_R_B      2000
+#define GPS_DRIFT_TICK      20      // sec between sphere moves
+#define GPS_DRIFT_SPEED     22      // m/sec of drift, so ~440 m a tick
+#define GPS_TURN_CHANCE     25      // % chance a tick re-rolls the heading
+#define GPS_EDGE_MARGIN     500     // m from the world edge the sphere turns back
+
+// ONE GPS JAMMER PER MAP (user, 2026-08-31), not one per commander. A comms
+// net is many masts and a constellation is steered from one place - so the
+// first commander with an objective gets the uplink and nobody else does.
+#define GPS_ONE_PER_MAP     1

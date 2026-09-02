@@ -40,7 +40,7 @@ params [["_id", "", [""]], ["_pos", [0,0,0], [[]]], ["_radius", 300, [0]],
         ["_colour", "ColorRed", [""]], ["_alpha", 0.5, [0]], ["_lifetime", 300, [0]],
         ["_fade", false, [false]], ["_iconType", "", [""]], ["_iconText", "", [""]]];
 
-if (!hasInterface || {_id isEqualTo ""}) exitWith { [] };
+if (!hasInterface || _id isEqualTo "") exitWith { [] };
 
 private _made = [];
 
@@ -74,7 +74,7 @@ if (_iconType isNotEqualTo "") then {
 };
 
 // Fade is a handful of scheduled steps, never a per-frame handler.
-if (_fade && {_lifetime > 0}) then {
+if (_fade && _lifetime > 0) then {
     private _steps = INTEL_FADE_STEPS;
     for "_i" from 1 to _steps do {
         [{

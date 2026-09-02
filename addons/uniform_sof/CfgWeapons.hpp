@@ -908,4 +908,133 @@ class CfgWeapons {
             uniformClass = QGVAR(SOF_B_SFFatigues_Shortsleeve_ocp);
         };
     };
+
+    // ===== Alpine and USMC Winter covers (JAM SOF, 31 August) =====
+    // The mod added four cover paints and, like every other helmet it ships,
+    // gave them no hearing protection at all - the whole sof_characters config
+    // carries not one ace_ property, while 81 lines of it put a headset texture
+    // on the model. Built here the way the rest of this family is: inheriting
+    // the _rgr base, which is where the 0.85 / 0.05 / EHP lines live.
+    //
+    // The mod pairs both new covers with the SAND helmet and headset, not the
+    // green - h_opscore_snd_co and h_headset_snd_co, both already vendored. Only
+    // the two cover paints were new to data\.
+    class GVAR(SOF_H_Opscore_Cover_alp): GVAR(SOF_H_Opscore_Cover_rgr) {
+        displayName = "Hi-Cut Helmet (Cover, Alpine)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_snd_co.paa),
+            QPATHTOF(data\h_headset_snd_co.paa),
+            QPATHTOF(data\h_opscore_cover_alp_co.paa)
+        };
+    };
+    class GVAR(SOF_H_Opscore_Cover_mrpt_win): GVAR(SOF_H_Opscore_Cover_rgr) {
+        displayName = "Hi-Cut Helmet (Cover, USMC Winter)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_snd_co.paa),
+            QPATHTOF(data\h_headset_snd_co.paa),
+            QPATHTOF(data\h_opscore_cover_mrpt_win_co.paa)
+        };
+    };
+    class GVAR(SOF_H_Opscore_CoverSpec_alp): GVAR(SOF_H_Opscore_CoverSpec_rgr) {
+        displayName = "Enhanced Hi-Cut Helmet (Cover, Alpine)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_snd_co.paa),
+            QPATHTOF(data\h_headset_snd_co.paa),
+            QPATHTOF(data\h_opscore_cover_alp_co.paa),
+            QPATHTOF(data\h_opscore_acc_snd_us_co.paa)
+        };
+    };
+    class GVAR(SOF_H_Opscore_CoverSpec_mrpt_win): GVAR(SOF_H_Opscore_CoverSpec_rgr) {
+        displayName = "Enhanced Hi-Cut Helmet (Cover, USMC Winter)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\h_opscore_snd_co.paa),
+            QPATHTOF(data\h_headset_snd_co.paa),
+            QPATHTOF(data\h_opscore_cover_mrpt_win_co.paa),
+            QPATHTOF(data\h_opscore_acc_snd_us_des_co.paa)
+        };
+    };
+
+    // ===== Cold Fatigues and the desert pair (JAM SOF, 31 August) =====
+    class GVAR(SOF_U_B_SFColdFatigues_mcam_gry): Uniform_Base {
+        author = "OokamiJamie";
+        scope = 2;
+        displayName = "Special Cold Fatigues (MTP/Grey)";
+        picture = QPATHTOF(data\u_uniformspeccold_ico_ca.paa);
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+        hiddenSelections[] = {
+            "camo"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_coldweatherjacket_gry_co.paa)
+        };
+        class ItemInfo: UniformItem {
+            uniformModel = "-";
+            uniformClass = QGVAR(SOF_B_SFColdFatigues_mcam_gry);
+            containerClass = "Supply40";
+            mass = 40;
+        };
+    };
+    class GVAR(SOF_U_B_SFColdFatigues_mcam_alp): GVAR(SOF_U_B_SFColdFatigues_mcam_gry) {
+        displayName = "Special Cold Fatigues (MTP/Alpine)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_coldweatherjacket_alp_co.paa)
+        };
+        class ItemInfo: ItemInfo {
+            uniformClass = QGVAR(SOF_B_SFColdFatigues_mcam_alp);
+        };
+    };
+    class GVAR(SOF_U_B_SFColdFatigues_alp): GVAR(SOF_U_B_SFColdFatigues_mcam_gry) {
+        displayName = "Special Cold Fatigues (Alpine)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_coldweatherjacket_alp_co.paa)
+        };
+        class ItemInfo: ItemInfo {
+            uniformClass = QGVAR(SOF_B_SFColdFatigues_alp);
+        };
+    };
+    class GVAR(SOF_U_B_SFColdFatigues_alp_gry): GVAR(SOF_U_B_SFColdFatigues_mcam_gry) {
+        displayName = "Special Cold Fatigues (Alpine/Grey)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_coldweatherjacket_gry_co.paa)
+        };
+        class ItemInfo: ItemInfo {
+            uniformClass = QGVAR(SOF_B_SFColdFatigues_alp_gry);
+        };
+    };
+    class GVAR(SOF_U_B_SFColdFatigues_mrpt_win): GVAR(SOF_U_B_SFColdFatigues_mcam_gry) {
+        displayName = "Special Cold Fatigues (USMC Winter)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_coldweatherjacket_mrpt_win_co.paa)
+        };
+        class ItemInfo: ItemInfo {
+            uniformClass = QGVAR(SOF_B_SFColdFatigues_mrpt_win);
+        };
+    };
+    class GVAR(SOF_U_B_SFColdFatigues_mrpt_win_wdl): GVAR(SOF_U_B_SFColdFatigues_mcam_gry) {
+        displayName = "Special Cold Fatigues (USMC Winter/Woodland)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_coldweatherjacket_mrpt_win_co.paa)
+        };
+        class ItemInfo: ItemInfo {
+            uniformClass = QGVAR(SOF_B_SFColdFatigues_mrpt_win_wdl);
+        };
+    };
+    class GVAR(SOF_U_B_SFFatigues_desert): GVAR(SOF_U_B_SFFatigues_rgr) {
+        displayName = "Special Fatigues (Desert)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_desert_co.paa)
+        };
+        class ItemInfo: ItemInfo {
+            uniformClass = QGVAR(SOF_B_SFFatigues_desert);
+        };
+    };
+    class GVAR(SOF_U_B_SFFatigues_Shortsleeve_desert): GVAR(SOF_U_B_SFFatigues_Shortsleeve_rgr) {
+        displayName = "Special Fatigues (Desert, Rolled-up)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_desert_co.paa)
+        };
+        class ItemInfo: ItemInfo {
+            uniformClass = QGVAR(SOF_B_SFFatigues_Shortsleeve_desert);
+        };
+    };
 };

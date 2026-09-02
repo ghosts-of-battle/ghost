@@ -19,6 +19,7 @@ PREP(panelToolsBtn);
 PREP(panelSettings);
 PREP(panelHide);
 PREP(panelTic);
+PREP(ticSend);
 
 // Tile contents, in one place so the band has one source
 PREP(tileData);

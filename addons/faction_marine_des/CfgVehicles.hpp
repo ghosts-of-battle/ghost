@@ -6,11 +6,25 @@
 // refuses to build - see requiredAddons in config.cpp.
 
 class CfgVehicles {
+    class Aegis_B_D_LSV_01_AT_F;
+    class Aegis_B_D_LSV_01_armed_F;
+    class Aegis_B_D_LSV_01_light_F;
+    class Aegis_B_D_LSV_01_unarmed_F;
     class Aegis_B_MJTF_D_APC_Wheeled_01_atgm_v2;
     class Aegis_B_MJTF_D_APC_Wheeled_01_cannon_v2_F;
     class Aegis_B_MJTF_D_APC_Wheeled_01_command_lxWS;
     class Aegis_B_MJTF_D_APC_Wheeled_01_medical_F;
     class Aegis_B_MJTF_D_APC_Wheeled_01_mortar_lxWS;
+    class B_Pilot_F;
+    class B_Plane_CAS_01_Cluster_F;
+    class B_Plane_CAS_01_dynamicLoadout_F;
+    class B_Plane_Fighter_01_Cluster_F;
+    class B_Plane_Fighter_01_F;
+    class B_Plane_Fighter_01_Stealth_F;
+    class B_qav_abramsx;
+    class E22_B_JC_D_AAA_System_01_F;
+    class E22_B_JC_D_Radar_system_01_F;
+    class E22_B_JC_D_SAM_system_01_F;
     class EF_B_AAV9_50mm_MJTF_Des;
     class EF_B_AAV9_MJTF_Des;
     class EF_B_AH99J_MJTF_Des;
@@ -32,8 +46,6 @@ class CfgVehicles {
     class EF_B_LCC_MJTF_Des;
     class EF_B_LCC_SideLoad_MJTF_Des;
     class EF_B_Lifeboat_MJTF_Des;
-    class EF_B_MBT_01_TUSK_MJTF_Des;
-    class EF_B_MBT_01_cannon_MJTF_Des;
     class EF_B_MBT_01_mlrs_MJTF_Des;
     class EF_B_MRAP_01_AT_MJTF_Des;
     class EF_B_MRAP_01_FSV_MJTF_Des;
@@ -102,10 +114,49 @@ class CfgVehicles {
     class EF_B_UAV_02_dynamicLoadout_MJTF_Des;
     class EF_B_UGV_01_MJTF_Des;
     class EF_B_UGV_01_rcws_MJTF_Des;
+    class EF_B_VTOL_03_unarmed_MJTF_Des_QAV;
     class EF_LPD_Turret_1_MJTF_Des;
     class EF_QAV80_MJTF_Des;
     class EF_QAV80_Stealth_MJTF_Des;
+    class JK_B_CDF_76n6_ClamShell_F;
+    class JK_B_CDF_76n6_ClamShell_Lower_F;
 
+    class ghost_Marine_des_Aegis_B_D_LSV_01_AT_F: Aegis_B_D_LSV_01_AT_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "Polaris DAGOR (Mini-Spike AT)";
+        side = 1;
+        faction = "ghost_Marine_des";
+        crew = "ghost_Marine_des_EF_B_Marine_Crew_Des";
+    };
+    class ghost_Marine_des_Aegis_B_D_LSV_01_armed_F: Aegis_B_D_LSV_01_armed_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "Polaris DAGOR (XM312)";
+        side = 1;
+        faction = "ghost_Marine_des";
+        crew = "ghost_Marine_des_EF_B_Marine_Crew_Des";
+    };
+    class ghost_Marine_des_Aegis_B_D_LSV_01_light_F: Aegis_B_D_LSV_01_light_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "Polaris DAGOR (light)";
+        side = 1;
+        faction = "ghost_Marine_des";
+        crew = "ghost_Marine_des_EF_B_Marine_Crew_Des";
+    };
+    class ghost_Marine_des_Aegis_B_D_LSV_01_unarmed_F: Aegis_B_D_LSV_01_unarmed_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "Polaris DAGOR";
+        side = 1;
+        faction = "ghost_Marine_des";
+        crew = "ghost_Marine_des_EF_B_Marine_Crew_Des";
+    };
     class ghost_Marine_des_Aegis_B_MJTF_D_APC_Wheeled_01_atgm_v2: Aegis_B_MJTF_D_APC_Wheeled_01_atgm_v2 {
         scope = 2;
         scopeCurator = 2;
@@ -119,7 +170,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
-        displayName = "Badger IFV";
+        displayName = "AMV-7 Marshall";
         side = 1;
         faction = "ghost_Marine_des";
         crew = "ghost_Marine_des_EF_B_Marine_Crew_Des";
@@ -128,7 +179,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
-        displayName = "Badger IFV (Command)";
+        displayName = "AMV-7 Marshall (Command)";
         side = 1;
         faction = "ghost_Marine_des";
         crew = "ghost_Marine_des_EF_B_Marine_Crew_Des";
@@ -137,7 +188,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
-        displayName = "Badger IFV (Medical)";
+        displayName = "AMV-7 Marshall (Medical)";
         side = 1;
         faction = "ghost_Marine_des";
         crew = "ghost_Marine_des_EF_B_Marine_Crew_Des";
@@ -146,10 +197,103 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
-        displayName = "Badger IFV (Mortar)";
+        displayName = "AMV-7 Marshall (Mortar)";
         side = 1;
         faction = "ghost_Marine_des";
         crew = "ghost_Marine_des_EF_B_Marine_Crew_Des";
+    };
+    class ghost_Marine_des_B_Pilot_F: B_Pilot_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "Pilot";
+        side = 1;
+        faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_SMG_01_black_Holo_F_snds","Throw","Put"};
+        respawnWeapons[] = {"ghost_Marine_des_SMG_01_black_Holo_F_snds","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+        respawnMagazines[] = {"FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+    };
+    class ghost_Marine_des_B_Plane_CAS_01_Cluster_F: B_Plane_CAS_01_Cluster_F {
+        scope = 1;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "A-164 Wipeout (Cluster)";
+        side = 1;
+        faction = "ghost_Marine_des";
+        crew = "ghost_Marine_des_B_Pilot_F";
+    };
+    class ghost_Marine_des_B_Plane_CAS_01_dynamicLoadout_F: B_Plane_CAS_01_dynamicLoadout_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "A-10D Thunderbolt II";
+        side = 1;
+        faction = "ghost_Marine_des";
+        crew = "ghost_Marine_des_B_Pilot_F";
+    };
+    class ghost_Marine_des_B_Plane_Fighter_01_Cluster_F: B_Plane_Fighter_01_Cluster_F {
+        scope = 1;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "F/A-181 Black Wasp II (Cluster)";
+        side = 1;
+        faction = "ghost_Marine_des";
+        crew = "ghost_Marine_des_B_Pilot_F";
+    };
+    class ghost_Marine_des_B_Plane_Fighter_01_F: B_Plane_Fighter_01_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "F/A-181 Black Wasp II";
+        side = 1;
+        faction = "ghost_Marine_des";
+        crew = "ghost_Marine_des_B_Pilot_F";
+    };
+    class ghost_Marine_des_B_Plane_Fighter_01_Stealth_F: B_Plane_Fighter_01_Stealth_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "F/A-181 Black Wasp II (Stealth)";
+        side = 1;
+        faction = "ghost_Marine_des";
+        crew = "ghost_Marine_des_B_Pilot_F";
+    };
+    class ghost_Marine_des_B_qav_abramsx: B_qav_abramsx {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "M3A1 Knight";
+        side = 1;
+        faction = "ghost_Marine_des";
+        crew = "ghost_Marine_des_EF_B_Marine_Crew_Des";
+    };
+    class ghost_Marine_des_E22_B_JC_D_AAA_System_01_F: E22_B_JC_D_AAA_System_01_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "ADS-2 Skynex (Anti-Air)";
+        side = 1;
+        faction = "ghost_Marine_des";
+        crew = "ghost_Marine_des_EF_B_Marine_R_Des";
+    };
+    class ghost_Marine_des_E22_B_JC_D_Radar_system_01_F: E22_B_JC_D_Radar_system_01_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "AN/MPQ-64 Sentinel";
+        side = 1;
+        faction = "ghost_Marine_des";
+        crew = "ghost_Marine_des_EF_B_Marine_R_Des";
+    };
+    class ghost_Marine_des_E22_B_JC_D_SAM_system_01_F: E22_B_JC_D_SAM_system_01_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "ADS-1 NASAMS";
+        side = 1;
+        faction = "ghost_Marine_des";
+        crew = "ghost_Marine_des_EF_B_Marine_R_Des";
     };
     class ghost_Marine_des_EF_B_AAV9_50mm_MJTF_Des: EF_B_AAV9_50mm_MJTF_Des {
         scope = 2;
@@ -176,7 +320,7 @@ class CfgVehicles {
         displayName = "RAH-66J Comanche";
         side = 1;
         faction = "ghost_Marine_des";
-        crew = "B_Helipilot_F";
+        crew = "ghost_Marine_des_B_Pilot_F";
     };
     class ghost_Marine_des_EF_B_Boat_Armed_01_minigun_MJTF_Des: EF_B_Boat_Armed_01_minigun_MJTF_Des {
         scope = 2;
@@ -239,7 +383,7 @@ class CfgVehicles {
         displayName = "XM307A";
         side = 1;
         faction = "ghost_Marine_des";
-        crew = "B_UAV_AI";
+        crew = "ghost_Marine_des_EF_B_Marine_R_Des";
     };
     class ghost_Marine_des_EF_B_GMG_01_MJTF_Des: EF_B_GMG_01_MJTF_Des {
         scope = 2;
@@ -266,7 +410,7 @@ class CfgVehicles {
         displayName = "XM312A";
         side = 1;
         faction = "ghost_Marine_des";
-        crew = "B_UAV_AI";
+        crew = "ghost_Marine_des_EF_B_Marine_R_Des";
     };
     class ghost_Marine_des_EF_B_HMG_01_MJTF_Des: EF_B_HMG_01_MJTF_Des {
         scope = 2;
@@ -293,7 +437,7 @@ class CfgVehicles {
         displayName = "RAH-66 Comanche";
         side = 1;
         faction = "ghost_Marine_des";
-        crew = "B_Helipilot_F";
+        crew = "ghost_Marine_des_B_Pilot_F";
     };
     class ghost_Marine_des_EF_B_Heli_Transport_01_MJTF_Des: EF_B_Heli_Transport_01_MJTF_Des {
         scope = 2;
@@ -302,7 +446,7 @@ class CfgVehicles {
         displayName = "UH-80 Ghost Hawk";
         side = 1;
         faction = "ghost_Marine_des";
-        crew = "B_Helipilot_F";
+        crew = "ghost_Marine_des_B_Pilot_F";
     };
     class ghost_Marine_des_EF_B_Heli_Transport_01_pylons_MJTF_Des: EF_B_Heli_Transport_01_pylons_MJTF_Des {
         scope = 2;
@@ -311,7 +455,7 @@ class CfgVehicles {
         displayName = "UH-80 Ghost Hawk (Stub Wings)";
         side = 1;
         faction = "ghost_Marine_des";
-        crew = "B_Helipilot_F";
+        crew = "ghost_Marine_des_B_Pilot_F";
     };
     class ghost_Marine_des_EF_B_LCC_MJTF_Des: EF_B_LCC_MJTF_Des {
         scope = 2;
@@ -339,24 +483,6 @@ class CfgVehicles {
         side = 1;
         faction = "ghost_Marine_des";
         crew = "ghost_Marine_des_EF_B_Marine_R_Des";
-    };
-    class ghost_Marine_des_EF_B_MBT_01_TUSK_MJTF_Des: EF_B_MBT_01_TUSK_MJTF_Des {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Merkava Mk IV LIC";
-        side = 1;
-        faction = "ghost_Marine_des";
-        crew = "ghost_Marine_des_EF_B_Marine_Crew_Des";
-    };
-    class ghost_Marine_des_EF_B_MBT_01_cannon_MJTF_Des: EF_B_MBT_01_cannon_MJTF_Des {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Merkava Mk IV M";
-        side = 1;
-        faction = "ghost_Marine_des";
-        crew = "ghost_Marine_des_EF_B_Marine_Crew_Des";
     };
     class ghost_Marine_des_EF_B_MBT_01_mlrs_MJTF_Des: EF_B_MBT_01_mlrs_MJTF_Des {
         scope = 2;
@@ -389,7 +515,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
-        displayName = "M-ATV LAAD";
+        displayName = "M-ATV LAAD (Anti-Air)";
         side = 1;
         faction = "ghost_Marine_des";
         crew = "ghost_Marine_des_EF_B_Marine_Crew_Des";
@@ -428,6 +554,10 @@ class CfgVehicles {
         displayName = "Asst. Missile Specialist (AA)";
         side = 1;
         faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put","Rangefinder"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_AAT_Des: EF_B_Marine_AAT_Des {
         scope = 2;
@@ -436,6 +566,10 @@ class CfgVehicles {
         displayName = "Asst. Missile Specialist (AT)";
         side = 1;
         faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put","Rangefinder"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_AA_Des: EF_B_Marine_AA_Des {
         scope = 2;
@@ -444,6 +578,10 @@ class CfgVehicles {
         displayName = "Missile Specialist (AA)";
         side = 1;
         faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","EF_launch_B_Titan_Coy","ef_hgun_P07_coy","Throw","Put"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","EF_launch_B_Titan_Coy","ef_hgun_P07_coy","Throw","Put"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","Titan_AA","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","Titan_AA","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_AB_Des: EF_B_Marine_AB_Des {
         scope = 2;
@@ -452,6 +590,8 @@ class CfgVehicles {
         displayName = "Ammo Bearer";
         side = 1;
         faction = "ghost_Marine_des";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_AMG_Des: EF_B_Marine_AMG_Des {
         scope = 2;
@@ -460,6 +600,10 @@ class CfgVehicles {
         displayName = "Asst. Gunner (HMG/GMG)";
         side = 1;
         faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_AMort_Des: EF_B_Marine_AMort_Des {
         scope = 2;
@@ -468,6 +612,10 @@ class CfgVehicles {
         displayName = "Asst. Gunner (Mk6)";
         side = 1;
         faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_AR_Des: EF_B_Marine_AR_Des {
         scope = 2;
@@ -476,6 +624,8 @@ class CfgVehicles {
         displayName = "Autorifleman";
         side = 1;
         faction = "ghost_Marine_des";
+        magazines[] = {"FA_EF_100Rnd_65x39_caseless_coy_mag_t3","FA_EF_100Rnd_65x39_caseless_coy_mag_t3","FA_EF_100Rnd_65x39_caseless_coy_mag_t3","FA_EF_100Rnd_65x39_caseless_coy_mag_t3","FA_EF_100Rnd_65x39_caseless_coy_mag_t3","FA_EF_100Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_100Rnd_65x39_caseless_coy_mag_t3","FA_EF_100Rnd_65x39_caseless_coy_mag_t3","FA_EF_100Rnd_65x39_caseless_coy_mag_t3","FA_EF_100Rnd_65x39_caseless_coy_mag_t3","FA_EF_100Rnd_65x39_caseless_coy_mag_t3","FA_EF_100Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_AT_Des: EF_B_Marine_AT_Des {
         scope = 2;
@@ -484,6 +634,10 @@ class CfgVehicles {
         displayName = "Missile Specialist (AT)";
         side = 1;
         faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Hamr_pointer_snds","launch_O_Titan_short_F","ef_hgun_P07_coy","Throw","Put"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Hamr_pointer_snds","launch_O_Titan_short_F","ef_hgun_P07_coy","Throw","Put"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","Titan_AT","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","Titan_AT","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_BoatCrew_Des: EF_B_Marine_BoatCrew_Des {
         scope = 2;
@@ -492,6 +646,10 @@ class CfgVehicles {
         displayName = "Boat Crewman";
         side = 1;
         faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxc_coy_Holo_snds","ef_hgun_P07_coy","Throw","Put"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxc_coy_Holo_snds","ef_hgun_P07_coy","Throw","Put"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_CMort_Des: EF_B_Marine_CMort_Des {
         scope = 2;
@@ -500,6 +658,8 @@ class CfgVehicles {
         displayName = "Gunner (Light Mortar)";
         side = 1;
         faction = "ghost_Marine_des";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade"};
     };
     class ghost_Marine_des_EF_B_Marine_Crew_Des: EF_B_Marine_Crew_Des {
         scope = 2;
@@ -508,6 +668,10 @@ class CfgVehicles {
         displayName = "Crewman";
         side = 1;
         faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxc_coy_Holo_snds","ef_hgun_P07_coy","Throw","Put"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxc_coy_Holo_snds","ef_hgun_P07_coy","Throw","Put"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_Diver_Des: EF_B_Marine_Diver_Des {
         scope = 2;
@@ -516,6 +680,8 @@ class CfgVehicles {
         displayName = "Assault Diver";
         side = 1;
         faction = "ghost_Marine_des";
+        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
+        vehicleClass = "MenRecon";
         magazines[] = {"30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","SmokeShellBlue","SmokeShellBlue","Chemlight_blue","Chemlight_blue","Chemlight_blue","Chemlight_blue"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","SmokeShellBlue","SmokeShellBlue","Chemlight_blue","Chemlight_blue","Chemlight_blue","Chemlight_blue"};
     };
@@ -526,8 +692,10 @@ class CfgVehicles {
         displayName = "Combat Diver Engineer";
         side = 1;
         faction = "ghost_Marine_des";
-        magazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellGreen","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
+        vehicleClass = "MenRecon";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_Diver_Pointman_Des: EF_B_Marine_Diver_Pointman_Des {
         scope = 2;
@@ -536,6 +704,8 @@ class CfgVehicles {
         displayName = "Combat Diver Pointman";
         side = 1;
         faction = "ghost_Marine_des";
+        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
+        vehicleClass = "MenRecon";
         magazines[] = {"FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellGreen","Chemlight_green","Chemlight_green"};
         respawnMagazines[] = {"FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
@@ -546,8 +716,10 @@ class CfgVehicles {
         displayName = "Combat Diver Scout";
         side = 1;
         faction = "ghost_Marine_des";
-        magazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
+        vehicleClass = "MenRecon";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_Diver_TL_Des: EF_B_Marine_Diver_TL_Des {
         scope = 2;
@@ -556,8 +728,10 @@ class CfgVehicles {
         displayName = "Combat Diver Team Leader";
         side = 1;
         faction = "ghost_Marine_des";
-        magazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellGreen","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
+        vehicleClass = "MenRecon";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_Eng_Des: EF_B_Marine_Eng_Des {
         scope = 2;
@@ -566,6 +740,10 @@ class CfgVehicles {
         displayName = "Engineer";
         side = 1;
         faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_Exp_Des: EF_B_Marine_Exp_Des {
         scope = 2;
@@ -574,6 +752,10 @@ class CfgVehicles {
         displayName = "Explosive Specialist";
         side = 1;
         faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_GL_Des: EF_B_Marine_GL_Des {
         scope = 2;
@@ -582,6 +764,11 @@ class CfgVehicles {
         displayName = "Grenadier";
         side = 1;
         faction = "ghost_Marine_des";
+        backpack = "ghost_Marine_des_C_IDAP_UAV_06_antimine_backpack_F";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxar_gl_coy_Hamr_pointer_snds","ef_hgun_P07_coy","Throw","Put","Binocular"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxar_gl_coy_Hamr_pointer_snds","ef_hgun_P07_coy","Throw","Put","Binocular"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","EF_30Rnd_65x39_caseless_coy_mag_Tracer","EF_30Rnd_65x39_caseless_coy_mag_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","EF_30Rnd_65x39_caseless_coy_mag_Tracer","EF_30Rnd_65x39_caseless_coy_mag_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
     };
     class ghost_Marine_des_EF_B_Marine_GMG_Des: EF_B_Marine_GMG_Des {
         scope = 2;
@@ -590,6 +777,10 @@ class CfgVehicles {
         displayName = "Gunner (GMG)";
         side = 1;
         faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_HMG_Des: EF_B_Marine_HMG_Des {
         scope = 2;
@@ -598,6 +789,10 @@ class CfgVehicles {
         displayName = "Gunner (HMG)";
         side = 1;
         faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_JTAC_Des: EF_B_Marine_JTAC_Des {
         scope = 2;
@@ -606,6 +801,8 @@ class CfgVehicles {
         displayName = "JTAC";
         side = 1;
         faction = "ghost_Marine_des";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","EF_30Rnd_65x39_caseless_coy_mag_Tracer","EF_30Rnd_65x39_caseless_coy_mag_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green","Laserbatteries"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","EF_30Rnd_65x39_caseless_coy_mag_Tracer","EF_30Rnd_65x39_caseless_coy_mag_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green","Laserbatteries"};
     };
     class ghost_Marine_des_EF_B_Marine_LAT2_Des: EF_B_Marine_LAT2_Des {
         scope = 2;
@@ -614,6 +811,8 @@ class CfgVehicles {
         displayName = "Rifleman (Light AT)";
         side = 1;
         faction = "ghost_Marine_des";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MRAWS_HEAT_F","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MRAWS_HEAT_F","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_LAT_Des: EF_B_Marine_LAT_Des {
         scope = 2;
@@ -622,6 +821,8 @@ class CfgVehicles {
         displayName = "Rifleman (AT)";
         side = 1;
         faction = "ghost_Marine_des";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","NLAW_F","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","NLAW_F","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_Light_Des: EF_B_Marine_Light_Des {
         scope = 2;
@@ -630,6 +831,10 @@ class CfgVehicles {
         displayName = "Rifleman (Light)";
         side = 1;
         faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_snds","ef_hgun_P07_coy","Throw","Put"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_snds","ef_hgun_P07_coy","Throw","Put"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_Mark_Des: EF_B_Marine_Mark_Des {
         scope = 2;
@@ -638,6 +843,10 @@ class CfgVehicles {
         displayName = "Marksman";
         side = 1;
         faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxm_MBS_LP_BI_snds","ef_hgun_P07_coy","Throw","Put"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxm_MBS_LP_BI_snds","ef_hgun_P07_coy","Throw","Put"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_Medic_Des: EF_B_Marine_Medic_Des {
         scope = 2;
@@ -646,6 +855,10 @@ class CfgVehicles {
         displayName = "Combat Life Saver";
         side = 1;
         faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_Mort_Des: EF_B_Marine_Mort_Des {
         scope = 2;
@@ -654,6 +867,10 @@ class CfgVehicles {
         displayName = "Gunner (Mk6)";
         side = 1;
         faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_Officer_Des: EF_B_Marine_Officer_Des {
         scope = 2;
@@ -662,8 +879,10 @@ class CfgVehicles {
         displayName = "Officer";
         side = 1;
         faction = "ghost_Marine_des";
-        magazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_Pistol_heavy_01_coy_rds","Throw","Put"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_Pistol_heavy_01_coy_rds","Throw","Put"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_R_Des: EF_B_Marine_R_Des {
         scope = 2;
@@ -672,6 +891,8 @@ class CfgVehicles {
         displayName = "Rifleman";
         side = 1;
         faction = "ghost_Marine_des";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade"};
     };
     class ghost_Marine_des_EF_B_Marine_Recon_Des: EF_B_Marine_Recon_Des {
         scope = 2;
@@ -680,8 +901,10 @@ class CfgVehicles {
         displayName = "Recon Scout";
         side = 1;
         faction = "ghost_Marine_des";
-        magazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
+        vehicleClass = "MenRecon";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_Recon_Exp_Des: EF_B_Marine_Recon_Exp_Des {
         scope = 2;
@@ -690,8 +913,10 @@ class CfgVehicles {
         displayName = "Recon Demo Specialist";
         side = 1;
         faction = "ghost_Marine_des";
-        magazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
+        vehicleClass = "MenRecon";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_Recon_JTAC_Des: EF_B_Marine_Recon_JTAC_Des {
         scope = 2;
@@ -700,8 +925,10 @@ class CfgVehicles {
         displayName = "Recon JTAC";
         side = 1;
         faction = "ghost_Marine_des";
-        magazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Laserbatteries","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
-        respawnMagazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Laserbatteries","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
+        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
+        vehicleClass = "MenRecon";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Laserbatteries","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Laserbatteries","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
     };
     class ghost_Marine_des_EF_B_Marine_Recon_LAT_Des: EF_B_Marine_Recon_LAT_Des {
         scope = 2;
@@ -710,8 +937,10 @@ class CfgVehicles {
         displayName = "Recon Scout (AT)";
         side = 1;
         faction = "ghost_Marine_des";
-        magazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","NLAW_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","NLAW_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
+        vehicleClass = "MenRecon";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","NLAW_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","NLAW_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_Recon_M_Des: EF_B_Marine_Recon_M_Des {
         scope = 2;
@@ -720,8 +949,10 @@ class CfgVehicles {
         displayName = "Recon Marksman";
         side = 1;
         faction = "ghost_Marine_des";
-        magazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
+        vehicleClass = "MenRecon";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_Recon_Medic_Des: EF_B_Marine_Recon_Medic_Des {
         scope = 2;
@@ -730,8 +961,10 @@ class CfgVehicles {
         displayName = "Recon Paramedic";
         side = 1;
         faction = "ghost_Marine_des";
-        magazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
+        vehicleClass = "MenRecon";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_Recon_TL_Des: EF_B_Marine_Recon_TL_Des {
         scope = 2;
@@ -740,8 +973,10 @@ class CfgVehicles {
         displayName = "Recon Team Leader";
         side = 1;
         faction = "ghost_Marine_des";
-        magazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag_Tracer","EF_30Rnd_65x39_caseless_coy_mag_Tracer","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag","EF_30Rnd_65x39_caseless_coy_mag_Tracer","EF_30Rnd_65x39_caseless_coy_mag_Tracer","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
+        vehicleClass = "MenRecon";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","EF_30Rnd_65x39_caseless_coy_mag_Tracer","EF_30Rnd_65x39_caseless_coy_mag_Tracer","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","EF_30Rnd_65x39_caseless_coy_mag_Tracer","EF_30Rnd_65x39_caseless_coy_mag_Tracer","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_Repair_Des: EF_B_Marine_Repair_Des {
         scope = 2;
@@ -750,6 +985,10 @@ class CfgVehicles {
         displayName = "Repair Specialist";
         side = 1;
         faction = "ghost_Marine_des";
+        weapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        respawnWeapons[] = {"ghost_Marine_des_ef_arifle_mxar_coy_Holo_pointer_snds","ef_hgun_P07_coy","Throw","Put"};
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_SL_Des: EF_B_Marine_SL_Des {
         scope = 2;
@@ -758,6 +997,8 @@ class CfgVehicles {
         displayName = "Squad Leader";
         side = 1;
         faction = "ghost_Marine_des";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","EF_30Rnd_65x39_caseless_coy_mag_Tracer","EF_30Rnd_65x39_caseless_coy_mag_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","EF_30Rnd_65x39_caseless_coy_mag_Tracer","EF_30Rnd_65x39_caseless_coy_mag_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
     };
     class ghost_Marine_des_EF_B_Marine_TL_Des: EF_B_Marine_TL_Des {
         scope = 2;
@@ -766,6 +1007,8 @@ class CfgVehicles {
         displayName = "Team Leader";
         side = 1;
         faction = "ghost_Marine_des";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","EF_30Rnd_65x39_caseless_coy_mag_Tracer","EF_30Rnd_65x39_caseless_coy_mag_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","EF_30Rnd_65x39_caseless_coy_mag_Tracer","EF_30Rnd_65x39_caseless_coy_mag_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
     };
     class ghost_Marine_des_EF_B_Marine_UAV_Des: EF_B_Marine_UAV_Des {
         scope = 2;
@@ -774,6 +1017,8 @@ class CfgVehicles {
         displayName = "UAV Operator";
         side = 1;
         faction = "ghost_Marine_des";
+        magazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade"};
+        respawnMagazines[] = {"FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","FA_EF_30Rnd_65x39_caseless_coy_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShellGreen","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade"};
     };
     class ghost_Marine_des_EF_B_Marine_Unarmed_Des: EF_B_Marine_Unarmed_Des {
         scope = 2;
@@ -787,7 +1032,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
-        displayName = "EF_B_Mortar_01_MJTF_Des";
+        displayName = "Mk6 Mortar";
         side = 1;
         faction = "ghost_Marine_des";
         crew = "ghost_Marine_des_EF_B_Marine_R_Des";
@@ -907,7 +1152,7 @@ class CfgVehicles {
         displayName = "AR-2 Darter";
         side = 1;
         faction = "ghost_Marine_des";
-        crew = "B_UAV_AI";
+        crew = "ghost_Marine_des_EF_B_Marine_R_Des";
     };
     class ghost_Marine_des_EF_B_UAV_02_CAS_MJTF_Des: EF_B_UAV_02_CAS_MJTF_Des {
         scope = 1;
@@ -916,7 +1161,7 @@ class CfgVehicles {
         displayName = "YABHON-R3 (CAS)";
         side = 1;
         faction = "ghost_Marine_des";
-        crew = "B_UAV_AI";
+        crew = "ghost_Marine_des_EF_B_Marine_R_Des";
     };
     class ghost_Marine_des_EF_B_UAV_02_MJTF_Des: EF_B_UAV_02_MJTF_Des {
         scope = 1;
@@ -925,7 +1170,7 @@ class CfgVehicles {
         displayName = "YABHON-R3";
         side = 1;
         faction = "ghost_Marine_des";
-        crew = "B_UAV_AI";
+        crew = "ghost_Marine_des_EF_B_Marine_R_Des";
     };
     class ghost_Marine_des_EF_B_UAV_02_dynamicLoadout_MJTF_Des: EF_B_UAV_02_dynamicLoadout_MJTF_Des {
         scope = 2;
@@ -934,7 +1179,7 @@ class CfgVehicles {
         displayName = "YABHON-R3";
         side = 1;
         faction = "ghost_Marine_des";
-        crew = "B_UAV_AI";
+        crew = "ghost_Marine_des_EF_B_Marine_R_Des";
     };
     class ghost_Marine_des_EF_B_UGV_01_MJTF_Des: EF_B_UGV_01_MJTF_Des {
         scope = 2;
@@ -943,7 +1188,7 @@ class CfgVehicles {
         displayName = "UGV Stomper";
         side = 1;
         faction = "ghost_Marine_des";
-        crew = "B_UAV_AI";
+        crew = "ghost_Marine_des_EF_B_Marine_R_Des";
     };
     class ghost_Marine_des_EF_B_UGV_01_rcws_MJTF_Des: EF_B_UGV_01_rcws_MJTF_Des {
         scope = 2;
@@ -952,7 +1197,16 @@ class CfgVehicles {
         displayName = "UGV Stomper RCWS";
         side = 1;
         faction = "ghost_Marine_des";
-        crew = "B_UAV_AI";
+        crew = "ghost_Marine_des_EF_B_Marine_R_Des";
+    };
+    class ghost_Marine_des_EF_B_VTOL_03_unarmed_MJTF_Des_QAV: EF_B_VTOL_03_unarmed_MJTF_Des_QAV {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "MV-35 Phantom";
+        side = 1;
+        faction = "ghost_Marine_des";
+        crew = "ghost_Marine_des_B_Pilot_F";
     };
     class ghost_Marine_des_EF_LPD_Turret_1_MJTF_Des: EF_LPD_Turret_1_MJTF_Des {
         scope = 2;
@@ -961,7 +1215,7 @@ class CfgVehicles {
         displayName = "Mk66 50 mm Cannon";
         side = 1;
         faction = "ghost_Marine_des";
-        crew = "B_UAV_AI";
+        crew = "ghost_Marine_des_EF_B_Marine_R_Des";
     };
     class ghost_Marine_des_EF_QAV80_MJTF_Des: EF_QAV80_MJTF_Des {
         scope = 2;
@@ -970,7 +1224,7 @@ class CfgVehicles {
         displayName = "QAV-80 Harpy";
         side = 1;
         faction = "ghost_Marine_des";
-        crew = "B_UAV_AI";
+        crew = "ghost_Marine_des_EF_B_Marine_R_Des";
     };
     class ghost_Marine_des_EF_QAV80_Stealth_MJTF_Des: EF_QAV80_Stealth_MJTF_Des {
         scope = 2;
@@ -979,6 +1233,79 @@ class CfgVehicles {
         displayName = "QAV-80 Harpy (Stealth)";
         side = 1;
         faction = "ghost_Marine_des";
-        crew = "B_UAV_AI";
+        crew = "ghost_Marine_des_EF_B_Marine_R_Des";
     };
+    class ghost_Marine_des_JK_B_CDF_76n6_ClamShell_F: JK_B_CDF_76n6_ClamShell_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "76n6 Clam Shell";
+        side = 1;
+        faction = "ghost_Marine_des";
+        crew = "ghost_Marine_des_EF_B_Marine_R_Des";
+    };
+    class ghost_Marine_des_JK_B_CDF_76n6_ClamShell_Lower_F: JK_B_CDF_76n6_ClamShell_Lower_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "76n6 Clam Shell (Artillery Radar)";
+        side = 1;
+        faction = "ghost_Marine_des";
+        crew = "ghost_Marine_des_EF_B_Marine_R_Des";
+    };
+    // ---- the squads' drone bags, assembling this faction's own drones - see SQUAD_DRONES ----
+    class C_IDAP_UAV_06_antimine_backpack_F;
+    class ghost_Marine_des_C_IDAP_UAV_06_antimine_backpack_F: C_IDAP_UAV_06_antimine_backpack_F {
+        scope = 1;
+        scopeCurator = 0;
+        author = QAUTHOR;
+        class assembleInfo {
+            primary = 1;
+            base = "";
+            assembleTo = "ghost_Marine_des_C_IDAP_UAV_06_antimine_F";
+            displayName = "";
+            dissasembleTo[] = {};
+        };
+    };   // assembles this faction's own drone
+
+    // ---- fielded by this faction, not by its source ----
+    // NEW CLASSES, NOT A SCRIPT. A man either is a drone
+    // operator or is not; picking men out of a spawning group
+    // and handing them a bag is a group composition decision,
+    // and group composition is CfgGroups' job.
+
+    class C_IDAP_UAV_06_antimine_F;
+    class ghost_Marine_des_C_IDAP_UAV_06_antimine_F: C_IDAP_UAV_06_antimine_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "AL-6 Pelican (Demining)";
+        side = 1;
+        faction = "ghost_Marine_des";
+        crew = "B_UAV_AI";
+    };   // the demining drone - IDAP's airframe, US kit
+    class B_Heli_Transport_01_unarmed_F;
+    class ghost_Marine_des_B_Heli_Transport_01_medevac_F: B_Heli_Transport_01_unarmed_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "UH-80 Ghost Hawk (Medevac)";
+        side = 1;
+        faction = "ghost_Marine_des";
+        hiddenSelectionsTextures[] = {
+            "\A3\Air_F_Exp\Heli_Transport_01\Data\Heli_Transport_01_ext01_sand_CO.paa",
+            "\A3\Air_F_Exp\Heli_Transport_01\Data\Heli_Transport_01_ext02_sand_CO.paa",
+            "\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_ext01_add_sand_CO.paa",
+            "\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_DAP_sand_CO.paa"
+        };
+    };   // the medevac, on the unarmed transport and in the theatre's paint
+    class ghost_Marine_des_Drone_Operator: ghost_Marine_des_EF_B_Marine_R_Des {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "Drone Operator [Marine (Desert)]";
+        faction = "ghost_Marine_des";
+        backpack = "EF_B_UAV_01_backpack_coy";
+    };   // the squad's drones - see SQUAD_DRONES
+
 };

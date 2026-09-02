@@ -15,12 +15,26 @@ if (hasInterface) then {
     // localJamFactor, so it rides the same cadence.
     [LINKFUNC(jamHud), JAM_CHECK_INTERVAL, []] call CBA_fnc_addPerFrameHandler;
 
+    // The GPS denial is a UI switch, not a loadout change, so a respawn has
+    // nothing to restore - but the switch itself is global and survives the
+    // body, so a man who died inside a field would come back with the display
+    // still dark until the next tick corrected it. Cleared on both events.
+    ["ace_playerChanged", { GVAR(gpsDenied) = false; showGPS true }] call CBA_fnc_addEventHandler;
+    ["unit", { GVAR(gpsDenied) = false; showGPS true }] call CBA_fnc_addPlayerEventHandler;
+
     // ACRE2: keep the vanilla signal result but scale received strength by
     // this player's live jam level. jam == 0 is identical to vanilla.
-    if (GVAR(hasACRE) && {!isNil "acre_api_fnc_setCustomSignalFunc"}) then {
+    //
+    // ACRE ALLOWS ONE CUSTOM SIGNAL FUNCTION. When ghost_radio_mesh is loaded
+    // it owns it - it routes through relays and then applies GVAR(acreJam)
+    // itself (see radio_mesh/fnc_signal), so this one stands down.
+    if (GVAR(hasACRE) && {!isNil "acre_api_fnc_setCustomSignalFunc"}
+        && {!isClass (configFile >> "CfgPatches" >> "ghost_radio_mesh")}) then {
         [{
             private _core = _this call acre_sys_signal_fnc_getSignalCore;
             private _jam = missionNamespace getVariable [QGVAR(acreJam), 0];
+            // and the RF burst's registry (ghost_aps) - the same lever, another source
+            _jam = _jam max (missionNamespace getVariable ["ghost_aps_acreJam", 0]);
             if (_jam <= 0) exitWith { _core };
             _core params ["_pct", "_dbm"];
             [_pct * (1 - _jam), _dbm]

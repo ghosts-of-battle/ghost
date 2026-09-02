@@ -1,6 +1,6 @@
 {
   "project": "GFA IADS / EMCON",
-  "family": "GhostFA Modern Warfare Expansion",
+  "family": "GHOSTFA Modern Warfare Expansion",
   "summary": "Discover all air-search radars on a side, blink them on/off (EMCON) with a duty-cycle floor, enforce datalink sharing, and expose the sensor picture to other addons (alive-drones, ew-zones, ATAK suite, ALiVE rewrite).",
   "status": "planning",
   "phases": [

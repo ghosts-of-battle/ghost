@@ -119,7 +119,7 @@ class ACE_ADDON(medical_treatment) {
             };
         };
 
-        class PackingBandage {
+        class PackingBandage: FieldDressing {
             class Abrasion {
                 STANDARD_EFF;
             };
@@ -224,7 +224,7 @@ class ACE_ADDON(medical_treatment) {
             };
         };
 
-        class ElasticBandage {
+        class ElasticBandage: FieldDressing {
             class Abrasion {
                 STANDARD_EFF;
             };
@@ -332,7 +332,7 @@ class ACE_ADDON(medical_treatment) {
             };
         };
 
-        class QuikClot {
+        class QuikClot: FieldDressing {
             class Abrasion {
                 STANDARD_EFF;
             };

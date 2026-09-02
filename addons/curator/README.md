@@ -9,7 +9,6 @@ Zeus tooling and the ghost additions to the curator interface.
 ## Requires
 
 - `ghost_main`
-- `ghost_debug_console`
 
 ## Ships
 

@@ -1,0 +1,2697 @@
+{
+ "APC_Wheeled_01_apc_qav": {
+  "author": "Quiggs",
+  "crew": "B_crew_F",
+  "displayName": "AMV-7 Marshall (APC)",
+  "faction": "BLU_F",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5",
+   "camo6",
+   "camoeos",
+   "camonet",
+   "camotitan"
+  ],
+  "hiddenSelectionsTextures": [
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_apc_co.paa",
+   "QAV_Marshall\\data\\textures\\eos_r400_co.paa",
+   "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa",
+   "a3\\weapons_f_beta\\launchers\\titan\\data\\tubem_co.paa"
+  ],
+  "parent": "APC_Wheeled_01_mgs_QAV",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "Sand"
+  ],
+  "textureSources": {
+   "Olive": [
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_olive_CO.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_olive_co.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_olive_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_apc_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\eos_r400_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Green_CO.paa",
+    "a3\\weapons_f_exp\\Launchers\\Titan\\Data\\launch_B_Titan_short_tna_F_02_co.paa"
+   ],
+   "Sand": [
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_apc_co.paa",
+    "QAV_Marshall\\data\\textures\\eos_r400_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa",
+    "a3\\weapons_f_beta\\launchers\\titan\\data\\tubem_co.paa"
+   ]
+  }
+ },
+ "APC_Wheeled_01_mgs_QAV": {
+  "author": "Quiggs",
+  "crew": "B_crew_F",
+  "displayName": "AMV-7 Marshall (MGS)",
+  "faction": "BLU_F",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5",
+   "camonet"
+  ],
+  "hiddenSelectionsTextures": [
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+   "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+  ],
+  "parent": "APC_Wheeled_01_base_QAV",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "Sand"
+  ],
+  "textureSources": {
+   "Olive": [
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_olive_CO.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_olive_co.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_olive_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_adds_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Green_CO.paa"
+   ],
+   "Sand": [
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ]
+  }
+ },
+ "APC_Wheeled_01_mgs_up_QAV": {
+  "author": "Quiggs",
+  "crew": "B_crew_F",
+  "displayName": "AMV-7 Marshall (MGS-UP)",
+  "faction": "BLU_F",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5",
+   "camoeos",
+   "camonet"
+  ],
+  "hiddenSelectionsTextures": [
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+   "QAV_Marshall\\data\\textures\\eos_r400_co.paa",
+   "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+  ],
+  "parent": "APC_Wheeled_01_mgs_QAV",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "Sand"
+  ],
+  "textureSources": {
+   "Olive": [
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_olive_CO.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_olive_co.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_olive_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\eos_r400_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Green_CO.paa"
+   ],
+   "Sand": [
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\eos_r400_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ]
+  }
+ },
+ "APC_Wheeled_01_shorad_QAV": {
+  "author": "Quiggs & Grave",
+  "crew": "B_crew_F",
+  "displayName": "AMV-7A Guardian",
+  "editorSubcategory": "EdSubcat_AAs",
+  "faction": "BLU_F",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5",
+   "camo6",
+   "camonet",
+   "camoskynex"
+  ],
+  "hiddenSelectionsTextures": [
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_apc_co.paa",
+   "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa",
+   "VVE_Core\\data\\AAA_system_01\\apc_wheeled_01_shorad_co.paa"
+  ],
+  "parent": "APC_Wheeled_01_mgs_QAV",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "Sand"
+  ],
+  "textureSources": {
+   "Olive": [
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_olive_CO.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_olive_co.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_olive_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_apc_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Green_CO.paa",
+    "VVE_Core\\data\\AAA_system_01\\apc_wheeled_01_shorad_olive_co.paa"
+   ],
+   "Sand": [
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_apc_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa",
+    "VVE_Core\\data\\AAA_system_01\\apc_wheeled_01_shorad_co.paa"
+   ]
+  }
+ },
+ "B_D_VTOL_03_unarmed_QAV": {
+  "author": "Quiggs",
+  "crew": "B_D_Pilot_lxWS",
+  "displayName": "MV-35 Phantom",
+  "faction": "BLU_NATO_lxWS",
+  "hiddenSelections": [
+   "mv35hull1",
+   "mv35hull2",
+   "mv35hull3"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_MV35\\data\\textures\\Sand\\MV35hull1_co.paa",
+   "QAV_MV35\\data\\textures\\Sand\\MV35hull2_co.paa",
+   "QAV_MV35\\data\\textures\\Sand\\MV35hull3_co.paa"
+  ],
+  "parent": "B_VTOL_03_unarmed_QAV",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "1",
+  "textureList": [
+   "Sand"
+  ],
+  "textureSources": {
+   "Black": [
+    "QAV_MV35\\data\\textures\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\MV35hull3_co.paa"
+   ],
+   "Blue": [
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull3_co.paa"
+   ],
+   "Olive": [
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull3_co.paa"
+   ],
+   "Sand": [
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull3_co.paa"
+   ],
+   "mjtf_camo": [
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull3_co.paa"
+   ],
+   "mjtf_grey": [
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ],
+   "mjtf_grey_LV": [
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull1_lv_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull2_lv_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ],
+   "navy_grey": [
+    "QAV_MV35\\data\\textures\\navy_grey\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\navy_grey\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ]
+  },
+  "vehicleClass": "Air"
+ },
+ "B_T_APC_Wheeled_01_apc_QAV": {
+  "author": "Quiggs",
+  "crew": "B_T_Crew_F",
+  "displayName": "AMV-7 Marshall (APC)",
+  "faction": "BLU_T_F",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5",
+   "camo6",
+   "camoeos",
+   "camonet",
+   "camotitan"
+  ],
+  "hiddenSelectionsTextures": [
+   "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_olive_CO.paa",
+   "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_olive_co.paa",
+   "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_olive_co.paa",
+   "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_co.paa",
+   "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_adds_co.paa",
+   "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_apc_co.paa",
+   "QAV_Marshall\\data\\textures\\olive\\eos_r400_co.paa",
+   "a3\\Armor_F\\Data\\camonet_NATO_Green_CO.paa",
+   "a3\\weapons_f_exp\\Launchers\\Titan\\Data\\launch_B_Titan_short_tna_F_02_co.paa"
+  ],
+  "parent": "APC_Wheeled_01_apc_qav",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "1",
+  "textureList": [
+   "Olive"
+  ],
+  "textureSources": {
+   "Olive": [
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_olive_CO.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_olive_co.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_olive_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_apc_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\eos_r400_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Green_CO.paa",
+    "a3\\weapons_f_exp\\Launchers\\Titan\\Data\\launch_B_Titan_short_tna_F_02_co.paa"
+   ],
+   "Sand": [
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_apc_co.paa",
+    "QAV_Marshall\\data\\textures\\eos_r400_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa",
+    "a3\\weapons_f_beta\\launchers\\titan\\data\\tubem_co.paa"
+   ]
+  }
+ },
+ "B_T_APC_Wheeled_01_mgs_QAV": {
+  "author": "Quiggs",
+  "crew": "B_T_Crew_F",
+  "displayName": "AMV-7 Marshall (MGS)",
+  "faction": "BLU_T_F",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5",
+   "camonet"
+  ],
+  "hiddenSelectionsTextures": [
+   "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_olive_CO.paa",
+   "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_olive_co.paa",
+   "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_olive_co.paa",
+   "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_co.paa",
+   "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_adds_co.paa",
+   "a3\\Armor_F\\Data\\camonet_NATO_Green_CO.paa"
+  ],
+  "parent": "APC_Wheeled_01_mgs_QAV",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "1",
+  "textureList": [
+   "Olive"
+  ],
+  "textureSources": {
+   "Olive": [
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_olive_CO.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_olive_co.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_olive_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_adds_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Green_CO.paa"
+   ],
+   "Sand": [
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ]
+  }
+ },
+ "B_T_APC_Wheeled_01_mgs_up_QAV": {
+  "author": "Quiggs",
+  "crew": "B_T_Crew_F",
+  "displayName": "AMV-7 Marshall (MGS-UP)",
+  "faction": "BLU_T_F",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5",
+   "camoeos",
+   "camonet"
+  ],
+  "hiddenSelectionsTextures": [
+   "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_olive_CO.paa",
+   "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_olive_co.paa",
+   "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_olive_co.paa",
+   "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_co.paa",
+   "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_adds_co.paa",
+   "QAV_Marshall\\data\\textures\\olive\\eos_r400_co.paa",
+   "a3\\Armor_F\\Data\\camonet_NATO_Green_CO.paa"
+  ],
+  "parent": "APC_Wheeled_01_mgs_up_QAV",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "1",
+  "textureList": [
+   "Olive"
+  ],
+  "textureSources": {
+   "Olive": [
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_olive_CO.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_olive_co.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_olive_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\eos_r400_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Green_CO.paa"
+   ],
+   "Sand": [
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\eos_r400_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ]
+  }
+ },
+ "B_T_APC_Wheeled_01_shorad_QAV": {
+  "author": "Quiggs",
+  "crew": "B_T_Crew_F",
+  "displayName": "AMV-7A Guardian",
+  "editorSubcategory": "EdSubcat_AAs",
+  "faction": "BLU_T_F",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5",
+   "camo6",
+   "camonet",
+   "camoskynex"
+  ],
+  "hiddenSelectionsTextures": [
+   "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_olive_CO.paa",
+   "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_olive_co.paa",
+   "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_olive_co.paa",
+   "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_co.paa",
+   "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_adds_co.paa",
+   "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_apc_co.paa",
+   "a3\\Armor_F\\Data\\camonet_NATO_Green_CO.paa",
+   "VVE_Core\\data\\AAA_system_01\\apc_wheeled_01_shorad_olive_co.paa"
+  ],
+  "parent": "APC_Wheeled_01_shorad_QAV",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "1",
+  "textureList": [
+   "Olive"
+  ],
+  "textureSources": {
+   "Olive": [
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_olive_CO.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_olive_co.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_olive_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_apc_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Green_CO.paa",
+    "VVE_Core\\data\\AAA_system_01\\apc_wheeled_01_shorad_olive_co.paa"
+   ],
+   "Sand": [
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_apc_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa",
+    "VVE_Core\\data\\AAA_system_01\\apc_wheeled_01_shorad_co.paa"
+   ]
+  }
+ },
+ "B_T_VTOL_03_unarmed_QAV": {
+  "author": "Quiggs",
+  "crew": "B_T_Pilot_F",
+  "displayName": "MV-35 Phantom",
+  "faction": "BLU_T_F",
+  "hiddenSelections": [
+   "mv35hull1",
+   "mv35hull2",
+   "mv35hull3"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_MV35\\data\\textures\\Olive\\MV35hull1_co.paa",
+   "QAV_MV35\\data\\textures\\Olive\\MV35hull2_co.paa",
+   "QAV_MV35\\data\\textures\\Olive\\MV35hull3_co.paa"
+  ],
+  "parent": "B_VTOL_03_unarmed_QAV",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "1",
+  "textureList": [
+   "Olive"
+  ],
+  "textureSources": {
+   "Black": [
+    "QAV_MV35\\data\\textures\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\MV35hull3_co.paa"
+   ],
+   "Blue": [
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull3_co.paa"
+   ],
+   "Olive": [
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull3_co.paa"
+   ],
+   "Sand": [
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull3_co.paa"
+   ],
+   "mjtf_camo": [
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull3_co.paa"
+   ],
+   "mjtf_grey": [
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ],
+   "mjtf_grey_LV": [
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull1_lv_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull2_lv_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ],
+   "navy_grey": [
+    "QAV_MV35\\data\\textures\\navy_grey\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\navy_grey\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ]
+  },
+  "vehicleClass": "Air"
+ },
+ "B_T_qav_abramsx": {
+  "author": "Quiggs",
+  "crew": "B_T_crew_F",
+  "displayName": "AbramsX",
+  "faction": "BLU_T_F",
+  "hiddenSelections": [
+   "AbramsX_Hull",
+   "CamoNet"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_AbramsX\\data\\textures\\AbramsX\\Pacific\\AbramsX_Hull_co.paa"
+  ],
+  "parent": "qav_abramsx_base",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "Pacific"
+  ],
+  "textureSources": {
+   "3tone": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\3tone\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "Pacific": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Pacific\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "arid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "black": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\black\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "ctrgarid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\ctrgarid\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "ctrgblack": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\ctrgstealth\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "desert": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\desert\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "grey": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Grey\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_desert_co.paa"
+   ],
+   "merdc_snow": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_snow\\AbramsX_Hull_co.paa",
+    "QAV_Core\\Textures\\Camonet\\camonet_winter_co.paa"
+   ],
+   "merdc_sum": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_sum\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_temp": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_temp\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_trop": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_trop\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_win": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_win\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "snow": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\snow\\AbramsX_Hull_co.paa",
+    "QAV_Core\\Textures\\Camonet\\camonet_winter_co.paa"
+   ],
+   "urbandigi": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\urbandigi\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "urbansplit": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\urbansplit\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "woodland": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Woodland\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "B_VTOL_03_unarmed_QAV": {
+  "author": "Quiggs",
+  "crew": "B_Pilot_F",
+  "displayName": "MV-35 Phantom",
+  "faction": "BLU_F",
+  "hiddenSelections": [
+   "mv35hull1",
+   "mv35hull2",
+   "mv35hull3"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_MV35\\data\\textures\\MV35hull1_co.paa",
+   "QAV_MV35\\data\\textures\\MV35hull2_co.paa",
+   "QAV_MV35\\data\\textures\\MV35hull3_co.paa"
+  ],
+  "parent": "VTOL_03_unarmed_base_QAV",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "1",
+  "textureList": [
+   "Black"
+  ],
+  "textureSources": {
+   "Black": [
+    "QAV_MV35\\data\\textures\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\MV35hull3_co.paa"
+   ],
+   "Blue": [
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull3_co.paa"
+   ],
+   "Olive": [
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull3_co.paa"
+   ],
+   "Sand": [
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull3_co.paa"
+   ],
+   "mjtf_camo": [
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull3_co.paa"
+   ],
+   "mjtf_grey": [
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ],
+   "mjtf_grey_LV": [
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull1_lv_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull2_lv_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ],
+   "navy_grey": [
+    "QAV_MV35\\data\\textures\\navy_grey\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\navy_grey\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ]
+  },
+  "vehicleClass": "Air"
+ },
+ "B_W_VTOL_03_unarmed_QAV": {
+  "author": "Quiggs",
+  "crew": "B_W_Pilot_F",
+  "displayName": "MV-35 Phantom",
+  "faction": "BLU_W_F",
+  "hiddenSelections": [
+   "mv35hull1",
+   "mv35hull2",
+   "mv35hull3"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_MV35\\data\\textures\\Olive\\MV35hull1_co.paa",
+   "QAV_MV35\\data\\textures\\Olive\\MV35hull2_co.paa",
+   "QAV_MV35\\data\\textures\\Olive\\MV35hull3_co.paa"
+  ],
+  "parent": "B_T_VTOL_03_unarmed_QAV",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "1",
+  "textureList": [
+   "Olive"
+  ],
+  "textureSources": {
+   "Black": [
+    "QAV_MV35\\data\\textures\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\MV35hull3_co.paa"
+   ],
+   "Blue": [
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull3_co.paa"
+   ],
+   "Olive": [
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull3_co.paa"
+   ],
+   "Sand": [
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull3_co.paa"
+   ],
+   "mjtf_camo": [
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull3_co.paa"
+   ],
+   "mjtf_grey": [
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ],
+   "mjtf_grey_LV": [
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull1_lv_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull2_lv_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ],
+   "navy_grey": [
+    "QAV_MV35\\data\\textures\\navy_grey\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\navy_grey\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ]
+  },
+  "vehicleClass": "Air"
+ },
+ "B_W_qav_abramsx": {
+  "author": "Quiggs",
+  "crew": "B_W_crew_F",
+  "displayName": "AbramsX",
+  "faction": "BLU_W_F",
+  "hiddenSelections": [
+   "AbramsX_Hull",
+   "CamoNet"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_AbramsX\\data\\textures\\AbramsX\\woodland\\AbramsX_Hull_co.paa"
+  ],
+  "parent": "qav_abramsx_base",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "woodland"
+  ],
+  "textureSources": {
+   "3tone": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\3tone\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "Pacific": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Pacific\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "arid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "black": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\black\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "ctrgarid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\ctrgarid\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "ctrgblack": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\ctrgstealth\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "desert": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\desert\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "grey": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Grey\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_desert_co.paa"
+   ],
+   "merdc_snow": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_snow\\AbramsX_Hull_co.paa",
+    "QAV_Core\\Textures\\Camonet\\camonet_winter_co.paa"
+   ],
+   "merdc_sum": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_sum\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_temp": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_temp\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_trop": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_trop\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_win": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_win\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "snow": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\snow\\AbramsX_Hull_co.paa",
+    "QAV_Core\\Textures\\Camonet\\camonet_winter_co.paa"
+   ],
+   "urbandigi": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\urbandigi\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "urbansplit": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\urbansplit\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "woodland": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Woodland\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "B_qav_abramsx": {
+  "author": "Quiggs",
+  "crew": "B_crew_F",
+  "displayName": "M3A1 Knight",
+  "faction": "BLU_F",
+  "hiddenSelections": [
+   "AbramsX_Hull",
+   "CamoNet"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa"
+  ],
+  "parent": "qav_abramsx",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "nato"
+  ],
+  "textureSources": {
+   "3tone": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\3tone\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "Pacific": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Pacific\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "arid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "black": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\black\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "ctrgarid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\ctrgarid\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "ctrgblack": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\ctrgstealth\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "desert": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\desert\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "grey": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Grey\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_desert_co.paa"
+   ],
+   "merdc_snow": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_snow\\AbramsX_Hull_co.paa",
+    "QAV_Core\\Textures\\Camonet\\camonet_winter_co.paa"
+   ],
+   "merdc_sum": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_sum\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_temp": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_temp\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_trop": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_trop\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_win": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_win\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "snow": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\snow\\AbramsX_Hull_co.paa",
+    "QAV_Core\\Textures\\Camonet\\camonet_winter_co.paa"
+   ],
+   "urbandigi": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\urbandigi\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "urbansplit": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\urbansplit\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "woodland": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Woodland\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "B_qav_abramsx_templar": {
+  "author": "Quiggs",
+  "crew": "B_crew_F",
+  "displayName": "M3A2 Knight",
+  "faction": "BLU_F",
+  "hiddenSelections": [
+   "AbramsX_Hull",
+   "CamoNet"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa"
+  ],
+  "parent": "qav_abramsx_templar",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "nato"
+  ],
+  "textureSources": {
+   "arid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "B_qav_abramsx_tusk": {
+  "author": "Quiggs",
+  "crew": "B_crew_F",
+  "displayName": "M3A3 Knight UP",
+  "faction": "BLU_F",
+  "hiddenSelections": [
+   "AbramsX_Hull",
+   "CamoNet"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa",
+   "QAV_AbramsX\\data\\textures\\AbramsX\\abramsxtusk_co.paa"
+  ],
+  "parent": "qav_abramsx_tusk",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "nato"
+  ],
+  "textureSources": {
+   "arid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa",
+    "QAV_AbramsX\\data\\textures\\AbramsX\\abramsxtusk_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "B_qav_abramsx_zeus": {
+  "author": "Quiggs",
+  "crew": "B_crew_F",
+  "displayName": "M3E1 Knight",
+  "faction": "BLU_F",
+  "hiddenSelections": [
+   "AbramsX_Hull",
+   "CamoNet"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa"
+  ],
+  "parent": "qav_abramsx_zeus",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "nato"
+  ],
+  "textureSources": {
+   "arid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "CTRG_D_qav_abramsx": {
+  "author": "Quiggs",
+  "crew": "B_CTRG_Soldier_F",
+  "displayName": "AbramsX",
+  "faction": "BLU_CTRG_F",
+  "hiddenSelections": [
+   "AbramsX_Hull",
+   "CamoNet"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_AbramsX\\data\\textures\\AbramsX\\ctrgstealth\\AbramsX_Hull_co.paa"
+  ],
+  "parent": "qav_abramsx_base",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "ctrgblack"
+  ],
+  "textureSources": {
+   "3tone": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\3tone\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "Pacific": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Pacific\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "arid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "black": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\black\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "ctrgarid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\ctrgarid\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "ctrgblack": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\ctrgstealth\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "desert": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\desert\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "grey": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Grey\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_desert_co.paa"
+   ],
+   "merdc_snow": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_snow\\AbramsX_Hull_co.paa",
+    "QAV_Core\\Textures\\Camonet\\camonet_winter_co.paa"
+   ],
+   "merdc_sum": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_sum\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_temp": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_temp\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_trop": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_trop\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_win": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_win\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "snow": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\snow\\AbramsX_Hull_co.paa",
+    "QAV_Core\\Textures\\Camonet\\camonet_winter_co.paa"
+   ],
+   "urbandigi": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\urbandigi\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "urbansplit": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\urbansplit\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "woodland": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Woodland\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "CTRG_qav_abramsx": {
+  "author": "Quiggs",
+  "crew": "B_CTRG_Soldier_arid_F",
+  "displayName": "AbramsX",
+  "faction": "BLU_CTRG_F",
+  "hiddenSelections": [
+   "AbramsX_Hull",
+   "CamoNet"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_AbramsX\\data\\textures\\AbramsX\\ctrgarid\\AbramsX_Hull_co.paa"
+  ],
+  "parent": "qav_abramsx_base",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "ctrgarid"
+  ],
+  "textureSources": {
+   "3tone": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\3tone\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "Pacific": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Pacific\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "arid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "black": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\black\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "ctrgarid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\ctrgarid\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "ctrgblack": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\ctrgstealth\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "desert": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\desert\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "grey": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Grey\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_desert_co.paa"
+   ],
+   "merdc_snow": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_snow\\AbramsX_Hull_co.paa",
+    "QAV_Core\\Textures\\Camonet\\camonet_winter_co.paa"
+   ],
+   "merdc_sum": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_sum\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_temp": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_temp\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_trop": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_trop\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_win": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_win\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "snow": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\snow\\AbramsX_Hull_co.paa",
+    "QAV_Core\\Textures\\Camonet\\camonet_winter_co.paa"
+   ],
+   "urbandigi": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\urbandigi\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "urbansplit": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\urbansplit\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "woodland": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Woodland\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "EF_B_VTOL_03_unarmed_MJTF_Des_QAV": {
+  "author": "Quiggs",
+  "crew": "B_Pilot_F",
+  "displayName": "MV-35 Phantom",
+  "faction": "EF_B_MJTF_Des",
+  "hiddenSelections": [
+   "mv35hull1",
+   "mv35hull2",
+   "mv35hull3"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull1_lv_co.paa",
+   "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull2_lv_co.paa",
+   "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+  ],
+  "parent": "EF_B_VTOL_03_unarmed_MJTF_Wdl_QAV",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "1",
+  "textureList": [
+   "mjtf_grey_LV"
+  ],
+  "textureSources": {
+   "Black": [
+    "QAV_MV35\\data\\textures\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\MV35hull3_co.paa"
+   ],
+   "Blue": [
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull3_co.paa"
+   ],
+   "Olive": [
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull3_co.paa"
+   ],
+   "Sand": [
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull3_co.paa"
+   ],
+   "mjtf_camo": [
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull3_co.paa"
+   ],
+   "mjtf_grey": [
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ],
+   "mjtf_grey_LV": [
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull1_lv_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull2_lv_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ],
+   "navy_grey": [
+    "QAV_MV35\\data\\textures\\navy_grey\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\navy_grey\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ]
+  },
+  "vehicleClass": "Air"
+ },
+ "EF_B_VTOL_03_unarmed_MJTF_Wdl_QAV": {
+  "author": "Quiggs",
+  "crew": "B_Pilot_F",
+  "displayName": "MV-35 Phantom",
+  "faction": "EF_B_MJTF_Wdl",
+  "hiddenSelections": [
+   "mv35hull1",
+   "mv35hull2",
+   "mv35hull3"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull1_co.paa",
+   "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull2_co.paa",
+   "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull3_co.paa"
+  ],
+  "parent": "B_VTOL_03_unarmed_QAV",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "1",
+  "textureList": [
+   "mjtf_camo"
+  ],
+  "textureSources": {
+   "Black": [
+    "QAV_MV35\\data\\textures\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\MV35hull3_co.paa"
+   ],
+   "Blue": [
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull3_co.paa"
+   ],
+   "Olive": [
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull3_co.paa"
+   ],
+   "Sand": [
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull3_co.paa"
+   ],
+   "mjtf_camo": [
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull3_co.paa"
+   ],
+   "mjtf_grey": [
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ],
+   "mjtf_grey_LV": [
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull1_lv_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull2_lv_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ],
+   "navy_grey": [
+    "QAV_MV35\\data\\textures\\navy_grey\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\navy_grey\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ]
+  },
+  "vehicleClass": "Air"
+ },
+ "EF_B_VTOL_03_unarmed_Navy_QAV": {
+  "author": "Quiggs",
+  "crew": "B_Pilot_F",
+  "displayName": "MV-35 Phantom",
+  "faction": "EF_B_MJTF_Navy",
+  "hiddenSelections": [
+   "mv35hull1",
+   "mv35hull2",
+   "mv35hull3"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_MV35\\data\\textures\\navy_grey\\MV35hull1_co.paa",
+   "QAV_MV35\\data\\textures\\navy_grey\\MV35hull2_co.paa",
+   "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+  ],
+  "parent": "EF_B_VTOL_03_unarmed_MJTF_Wdl_QAV",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "1",
+  "textureList": [
+   "navy_grey"
+  ],
+  "textureSources": {
+   "Black": [
+    "QAV_MV35\\data\\textures\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\MV35hull3_co.paa"
+   ],
+   "Blue": [
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull3_co.paa"
+   ],
+   "Olive": [
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull3_co.paa"
+   ],
+   "Sand": [
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull3_co.paa"
+   ],
+   "mjtf_camo": [
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull3_co.paa"
+   ],
+   "mjtf_grey": [
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ],
+   "mjtf_grey_LV": [
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull1_lv_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull2_lv_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ],
+   "navy_grey": [
+    "QAV_MV35\\data\\textures\\navy_grey\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\navy_grey\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ]
+  },
+  "vehicleClass": "Air"
+ },
+ "VVE_APC_Wheeled_01_apc_QAV": {
+  "author": "Quiggs",
+  "crew": "B_crew_F",
+  "displayName": "AMV-7 Marshall (APC)",
+  "faction": "vve_vehicles",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5",
+   "camo6",
+   "camoeos",
+   "camonet",
+   "camotitan"
+  ],
+  "hiddenSelectionsTextures": [
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_apc_co.paa",
+   "QAV_Marshall\\data\\textures\\eos_r400_co.paa",
+   "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa",
+   "a3\\weapons_f_beta\\launchers\\titan\\data\\tubem_co.paa"
+  ],
+  "parent": "APC_Wheeled_01_apc_qav",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "1",
+  "textureList": [
+   "Sand"
+  ],
+  "textureSources": {
+   "Olive": [
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_olive_CO.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_olive_co.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_olive_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_apc_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\eos_r400_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Green_CO.paa",
+    "a3\\weapons_f_exp\\Launchers\\Titan\\Data\\launch_B_Titan_short_tna_F_02_co.paa"
+   ],
+   "Sand": [
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_apc_co.paa",
+    "QAV_Marshall\\data\\textures\\eos_r400_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa",
+    "a3\\weapons_f_beta\\launchers\\titan\\data\\tubem_co.paa"
+   ]
+  }
+ },
+ "VVE_APC_Wheeled_01_mgs_QAV": {
+  "author": "Quiggs",
+  "crew": "B_crew_F",
+  "displayName": "AMV-7 Marshall (MGS)",
+  "faction": "vve_vehicles",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5",
+   "camonet"
+  ],
+  "hiddenSelectionsTextures": [
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+   "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+  ],
+  "parent": "APC_Wheeled_01_mgs_QAV",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "1",
+  "textureList": [
+   "Sand"
+  ],
+  "textureSources": {
+   "Olive": [
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_olive_CO.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_olive_co.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_olive_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_adds_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Green_CO.paa"
+   ],
+   "Sand": [
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ]
+  }
+ },
+ "VVE_APC_Wheeled_01_mgs_up_QAV": {
+  "author": "Quiggs",
+  "crew": "B_crew_F",
+  "displayName": "AMV-7 Marshall (MGS-UP)",
+  "faction": "vve_vehicles",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5",
+   "camoeos",
+   "camonet"
+  ],
+  "hiddenSelectionsTextures": [
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+   "QAV_Marshall\\data\\textures\\eos_r400_co.paa",
+   "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+  ],
+  "parent": "APC_Wheeled_01_mgs_up_QAV",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "1",
+  "textureList": [
+   "Sand"
+  ],
+  "textureSources": {
+   "Olive": [
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_olive_CO.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_olive_co.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_olive_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\eos_r400_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Green_CO.paa"
+   ],
+   "Sand": [
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\eos_r400_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ]
+  }
+ },
+ "VVE_APC_Wheeled_01_shorad_QAV": {
+  "author": "Quiggs",
+  "crew": "B_crew_F",
+  "displayName": "AMV-7A Guardian",
+  "editorSubcategory": "EdSubcat_AAs",
+  "faction": "vve_vehicles",
+  "hiddenSelections": [
+   "camo1",
+   "camo2",
+   "camo3",
+   "camo4",
+   "camo5",
+   "camo6",
+   "camonet",
+   "camoskynex"
+  ],
+  "hiddenSelectionsTextures": [
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+   "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+   "QAV_Marshall\\data\\textures\\apc_wheeled_01_apc_co.paa",
+   "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa",
+   "VVE_Core\\data\\AAA_system_01\\apc_wheeled_01_shorad_co.paa"
+  ],
+  "parent": "APC_Wheeled_01_shorad_QAV",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "1",
+  "textureList": [
+   "Sand"
+  ],
+  "textureSources": {
+   "Olive": [
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_olive_CO.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_olive_co.paa",
+    "A3\\Armor_F_Exp\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_olive_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\olive\\apc_wheeled_01_apc_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Green_CO.paa",
+    "VVE_Core\\data\\AAA_system_01\\apc_wheeled_01_shorad_olive_co.paa"
+   ],
+   "Sand": [
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_base_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_adds_co.paa",
+    "a3\\armor_f_beta\\APC_Wheeled_01\\data\\APC_Wheeled_01_tows_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_mgs_adds_co.paa",
+    "QAV_Marshall\\data\\textures\\apc_wheeled_01_apc_co.paa",
+    "a3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa",
+    "VVE_Core\\data\\AAA_system_01\\apc_wheeled_01_shorad_co.paa"
+   ]
+  }
+ },
+ "VVE_VTOL_03_unarmed_QAV": {
+  "author": "Quiggs",
+  "crew": "B_Pilot_F",
+  "displayName": "MV-35 Phantom",
+  "faction": "vve_vehicles",
+  "hiddenSelections": [
+   "mv35hull1",
+   "mv35hull2",
+   "mv35hull3"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_MV35\\data\\textures\\MV35hull1_co.paa",
+   "QAV_MV35\\data\\textures\\MV35hull2_co.paa",
+   "QAV_MV35\\data\\textures\\MV35hull3_co.paa"
+  ],
+  "parent": "VTOL_03_unarmed_base_QAV",
+  "scope": "2",
+  "scopeCurator": "2",
+  "side": "1",
+  "textureList": [
+   "Black"
+  ],
+  "textureSources": {
+   "Black": [
+    "QAV_MV35\\data\\textures\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\MV35hull3_co.paa"
+   ],
+   "Blue": [
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Blue\\MV35hull3_co.paa"
+   ],
+   "Olive": [
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Olive\\MV35hull3_co.paa"
+   ],
+   "Sand": [
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\Sand\\MV35hull3_co.paa"
+   ],
+   "mjtf_camo": [
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_camo\\MV35hull3_co.paa"
+   ],
+   "mjtf_grey": [
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ],
+   "mjtf_grey_LV": [
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull1_lv_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull2_lv_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ],
+   "navy_grey": [
+    "QAV_MV35\\data\\textures\\navy_grey\\MV35hull1_co.paa",
+    "QAV_MV35\\data\\textures\\navy_grey\\MV35hull2_co.paa",
+    "QAV_MV35\\data\\textures\\mjtf_grey\\MV35hull3_co.paa"
+   ]
+  },
+  "vehicleClass": "Air"
+ },
+ "qav_abramsx": {
+  "author": "Quiggs",
+  "crew": "B_crew_F",
+  "displayName": "AbramsX",
+  "faction": "QAV_vehicles",
+  "hiddenSelections": [
+   "AbramsX_Hull",
+   "CamoNet"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_AbramsX\\data\\textures\\AbramsX\\Grey\\AbramsX_Hull_co.paa"
+  ],
+  "parent": "qav_abramsx_base",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "grey"
+  ],
+  "textureSources": {
+   "3tone": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\3tone\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "Pacific": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Pacific\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "arid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "black": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\black\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "ctrgarid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\ctrgarid\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "ctrgblack": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\ctrgstealth\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "desert": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\desert\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ],
+   "grey": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Grey\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_desert_co.paa"
+   ],
+   "merdc_snow": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_snow\\AbramsX_Hull_co.paa",
+    "QAV_Core\\Textures\\Camonet\\camonet_winter_co.paa"
+   ],
+   "merdc_sum": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_sum\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_temp": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_temp\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_trop": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_trop\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "merdc_win": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\merdc_win\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ],
+   "snow": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\snow\\AbramsX_Hull_co.paa",
+    "QAV_Core\\Textures\\Camonet\\camonet_winter_co.paa"
+   ],
+   "urbandigi": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\urbandigi\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "urbansplit": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\urbansplit\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_aaf_stripe_green_co.paa"
+   ],
+   "woodland": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\Woodland\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_nato_green_co.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "qav_abramsx_templar": {
+  "author": "Quiggs",
+  "crew": "B_crew_F",
+  "displayName": "AbramsX - Templar",
+  "faction": "QAV_vehicles",
+  "hiddenSelections": [
+   "AbramsX_Hull",
+   "CamoNet"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa"
+  ],
+  "parent": "qav_abramsx",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "nato"
+  ],
+  "textureSources": {
+   "arid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "qav_abramsx_tusk": {
+  "author": "Quiggs",
+  "crew": "B_crew_F",
+  "displayName": "AbramsX - Basilisk",
+  "faction": "QAV_vehicles",
+  "hiddenSelections": [
+   "AbramsX_Hull",
+   "CamoNet"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa",
+   "QAV_AbramsX\\data\\textures\\AbramsX\\abramsxtusk_co.paa"
+  ],
+  "parent": "qav_abramsx",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "nato"
+  ],
+  "textureSources": {
+   "arid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa",
+    "QAV_AbramsX\\data\\textures\\AbramsX\\abramsxtusk_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "qav_abramsx_zeus": {
+  "author": "Quiggs",
+  "crew": "B_crew_F",
+  "displayName": "AbramsX - Zeus",
+  "faction": "QAV_vehicles",
+  "hiddenSelections": [
+   "AbramsX_Hull",
+   "CamoNet"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa"
+  ],
+  "parent": "qav_abramsx",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "nato"
+  ],
+  "textureSources": {
+   "arid": [
+    "QAV_AbramsX\\data\\textures\\AbramsX\\AbramsX_Hull_co.paa",
+    "A3\\Armor_F\\Data\\camonet_NATO_Desert_CO.paa"
+   ]
+  },
+  "vehicleClass": "Armored"
+ },
+ "qav_b_ctrg_ripsaw_Mk44": {
+  "author": "Quiggs",
+  "crew": "B_UAV_AI",
+  "displayName": "M6A Ripsaw (Mk44)",
+  "editorSubcategory": "EdSubcat_Drones",
+  "faction": "BLU_CTRG_F",
+  "hiddenSelections": [
+   "rshull",
+   "rshull2",
+   "rssusp",
+   "rsturret",
+   "rsturret2",
+   "rsacc1",
+   "rsacc2"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_Ripsaw\\data\\textures\\ctrg\\rshull_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ctrg\\rshull2_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ctrg\\rssusp_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ctrg\\rsturret_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ctrg\\rsturret2_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ctrg\\rsacc1_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ctrg\\rsacc2_co.paa"
+  ],
+  "parent": "qav_ripsaw_Mk44",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "ctrg",
+   "black"
+  ],
+  "textureSources": {
+   "aaf": [
+    "QAV_Ripsaw\\data\\textures\\aaf\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsacc2_co.paa"
+   ],
+   "black": [
+    "QAV_Ripsaw\\data\\textures\\black\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsacc2_co.paa"
+   ],
+   "ctrg": [
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsacc2_co.paa"
+   ],
+   "ion": [
+    "QAV_Ripsaw\\data\\textures\\ion\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsacc2_co.paa"
+   ],
+   "ldf": [
+    "QAV_Ripsaw\\data\\textures\\ldf\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsacc2_co.paa"
+   ],
+   "nato": [
+    "QAV_Ripsaw\\data\\textures\\nato\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsacc2_co.paa"
+   ],
+   "texgreen": [
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc2_co.paa"
+   ],
+   "un": [
+    "QAV_Ripsaw\\data\\textures\\una\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\un\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\un\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc2_co.paa"
+   ],
+   "una": [
+    "QAV_Ripsaw\\data\\textures\\una\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc2_co.paa"
+   ]
+  },
+  "vehicleClass": "Autonomous"
+ },
+ "qav_b_ion_ripsaw_Mk44": {
+  "author": "Quiggs",
+  "crew": "B_UAV_AI",
+  "displayName": "M6A Ripsaw (Mk44)",
+  "editorSubcategory": "EdSubcat_Drones",
+  "faction": "BLU_ION_lxWS",
+  "hiddenSelections": [
+   "rshull",
+   "rshull2",
+   "rssusp",
+   "rsturret",
+   "rsturret2",
+   "rsacc1",
+   "rsacc2"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_Ripsaw\\data\\textures\\ion\\rshull_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ion\\rshull2_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ion\\rssusp_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ion\\rsturret_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ion\\rsturret2_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ion\\rsacc1_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ion\\rsacc2_co.paa"
+  ],
+  "parent": "qav_ripsaw_Mk44",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "ion",
+   "black"
+  ],
+  "textureSources": {
+   "aaf": [
+    "QAV_Ripsaw\\data\\textures\\aaf\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsacc2_co.paa"
+   ],
+   "black": [
+    "QAV_Ripsaw\\data\\textures\\black\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsacc2_co.paa"
+   ],
+   "ctrg": [
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsacc2_co.paa"
+   ],
+   "ion": [
+    "QAV_Ripsaw\\data\\textures\\ion\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsacc2_co.paa"
+   ],
+   "ldf": [
+    "QAV_Ripsaw\\data\\textures\\ldf\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsacc2_co.paa"
+   ],
+   "nato": [
+    "QAV_Ripsaw\\data\\textures\\nato\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsacc2_co.paa"
+   ],
+   "texgreen": [
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc2_co.paa"
+   ],
+   "un": [
+    "QAV_Ripsaw\\data\\textures\\una\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\un\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\un\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc2_co.paa"
+   ],
+   "una": [
+    "QAV_Ripsaw\\data\\textures\\una\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc2_co.paa"
+   ]
+  },
+  "vehicleClass": "Autonomous"
+ },
+ "qav_b_ripsaw_Mk44": {
+  "author": "Quiggs",
+  "crew": "B_UAV_AI",
+  "displayName": "MS4 Ripsaw",
+  "editorSubcategory": "EdSubcat_Drones",
+  "faction": "BLU_F",
+  "hiddenSelections": [
+   "rshull",
+   "rshull2",
+   "rssusp",
+   "rsturret",
+   "rsturret2",
+   "rsacc1",
+   "rsacc2"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_Ripsaw\\data\\textures\\nato\\rshull_co.paa",
+   "QAV_Ripsaw\\data\\textures\\nato\\rshull2_co.paa",
+   "QAV_Ripsaw\\data\\textures\\nato\\rssusp_co.paa",
+   "QAV_Ripsaw\\data\\textures\\nato\\rsturret_co.paa",
+   "QAV_Ripsaw\\data\\textures\\nato\\rsturret2_co.paa",
+   "QAV_Ripsaw\\data\\textures\\nato\\rsacc1_co.paa",
+   "QAV_Ripsaw\\data\\textures\\nato\\rsacc2_co.paa"
+  ],
+  "parent": "qav_ripsaw_Mk44",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "nato",
+   "texgreen",
+   "ctrg",
+   "black"
+  ],
+  "textureSources": {
+   "aaf": [
+    "QAV_Ripsaw\\data\\textures\\aaf\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsacc2_co.paa"
+   ],
+   "black": [
+    "QAV_Ripsaw\\data\\textures\\black\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsacc2_co.paa"
+   ],
+   "ctrg": [
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsacc2_co.paa"
+   ],
+   "ion": [
+    "QAV_Ripsaw\\data\\textures\\ion\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsacc2_co.paa"
+   ],
+   "ldf": [
+    "QAV_Ripsaw\\data\\textures\\ldf\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsacc2_co.paa"
+   ],
+   "nato": [
+    "QAV_Ripsaw\\data\\textures\\nato\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsacc2_co.paa"
+   ],
+   "texgreen": [
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc2_co.paa"
+   ],
+   "un": [
+    "QAV_Ripsaw\\data\\textures\\una\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\un\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\un\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc2_co.paa"
+   ],
+   "una": [
+    "QAV_Ripsaw\\data\\textures\\una\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc2_co.paa"
+   ]
+  },
+  "vehicleClass": "Autonomous"
+ },
+ "qav_i_e_ripsaw_Mk44": {
+  "author": "Quiggs",
+  "crew": "I_UAV_AI",
+  "displayName": "M6A Ripsaw (Mk44)",
+  "editorSubcategory": "EdSubcat_Drones",
+  "faction": "IND_E_F",
+  "hiddenSelections": [
+   "rshull",
+   "rshull2",
+   "rssusp",
+   "rsturret",
+   "rsturret2",
+   "rsacc1",
+   "rsacc2"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_Ripsaw\\data\\textures\\ldf\\rshull_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ldf\\rshull2_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ldf\\rssusp_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ldf\\rsturret_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ldf\\rsturret2_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ldf\\rsacc1_co.paa",
+   "QAV_Ripsaw\\data\\textures\\ldf\\rsacc2_co.paa"
+  ],
+  "parent": "qav_ripsaw_Mk44",
+  "scope": "2",
+  "side": "2",
+  "textureList": [
+   "ldf"
+  ],
+  "textureSources": {
+   "aaf": [
+    "QAV_Ripsaw\\data\\textures\\aaf\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsacc2_co.paa"
+   ],
+   "black": [
+    "QAV_Ripsaw\\data\\textures\\black\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsacc2_co.paa"
+   ],
+   "ctrg": [
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsacc2_co.paa"
+   ],
+   "ion": [
+    "QAV_Ripsaw\\data\\textures\\ion\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsacc2_co.paa"
+   ],
+   "ldf": [
+    "QAV_Ripsaw\\data\\textures\\ldf\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsacc2_co.paa"
+   ],
+   "nato": [
+    "QAV_Ripsaw\\data\\textures\\nato\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsacc2_co.paa"
+   ],
+   "texgreen": [
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc2_co.paa"
+   ],
+   "un": [
+    "QAV_Ripsaw\\data\\textures\\una\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\un\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\un\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc2_co.paa"
+   ],
+   "una": [
+    "QAV_Ripsaw\\data\\textures\\una\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc2_co.paa"
+   ]
+  },
+  "vehicleClass": "Autonomous"
+ },
+ "qav_i_f_ripsaw_Mk44": {
+  "author": "Quiggs",
+  "crew": "I_UAV_AI",
+  "displayName": "M6A Ripsaw (Mk44)",
+  "editorSubcategory": "EdSubcat_Drones",
+  "faction": "IND_F",
+  "hiddenSelections": [
+   "rshull",
+   "rshull2",
+   "rssusp",
+   "rsturret",
+   "rsturret2",
+   "rsacc1",
+   "rsacc2"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_Ripsaw\\data\\textures\\aaf\\rshull_co.paa",
+   "QAV_Ripsaw\\data\\textures\\aaf\\rshull2_co.paa",
+   "QAV_Ripsaw\\data\\textures\\aaf\\rssusp_co.paa",
+   "QAV_Ripsaw\\data\\textures\\aaf\\rsturret_co.paa",
+   "QAV_Ripsaw\\data\\textures\\aaf\\rsturret2_co.paa",
+   "QAV_Ripsaw\\data\\textures\\aaf\\rsacc1_co.paa",
+   "QAV_Ripsaw\\data\\textures\\aaf\\rsacc2_co.paa"
+  ],
+  "parent": "qav_ripsaw_Mk44",
+  "scope": "2",
+  "side": "2",
+  "textureList": [
+   "aaf"
+  ],
+  "textureSources": {
+   "aaf": [
+    "QAV_Ripsaw\\data\\textures\\aaf\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsacc2_co.paa"
+   ],
+   "black": [
+    "QAV_Ripsaw\\data\\textures\\black\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsacc2_co.paa"
+   ],
+   "ctrg": [
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsacc2_co.paa"
+   ],
+   "ion": [
+    "QAV_Ripsaw\\data\\textures\\ion\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsacc2_co.paa"
+   ],
+   "ldf": [
+    "QAV_Ripsaw\\data\\textures\\ldf\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsacc2_co.paa"
+   ],
+   "nato": [
+    "QAV_Ripsaw\\data\\textures\\nato\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsacc2_co.paa"
+   ],
+   "texgreen": [
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc2_co.paa"
+   ],
+   "un": [
+    "QAV_Ripsaw\\data\\textures\\una\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\un\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\un\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc2_co.paa"
+   ],
+   "una": [
+    "QAV_Ripsaw\\data\\textures\\una\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc2_co.paa"
+   ]
+  },
+  "vehicleClass": "Autonomous"
+ },
+ "qav_ripsaw_Mk44": {
+  "author": "Quiggs",
+  "crew": "B_UAV_AI",
+  "displayName": "M6A Ripsaw (Mk44)",
+  "editorSubcategory": "EdSubcat_Drones",
+  "faction": "qav_vehicles",
+  "hiddenSelections": [
+   "rshull",
+   "rshull2",
+   "rssusp",
+   "rsturret",
+   "rsturret2",
+   "rsacc1",
+   "rsacc2"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_Ripsaw\\data\\textures\\texgreen\\rshull_co.paa",
+   "QAV_Ripsaw\\data\\textures\\texgreen\\rshull2_co.paa",
+   "QAV_Ripsaw\\data\\textures\\texgreen\\rssusp_co.paa",
+   "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret_co.paa",
+   "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret2_co.paa",
+   "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc1_co.paa",
+   "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc2_co.paa"
+  ],
+  "parent": "qav_ripsaw_base",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "texgreen"
+  ],
+  "textureSources": {
+   "aaf": [
+    "QAV_Ripsaw\\data\\textures\\aaf\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsacc2_co.paa"
+   ],
+   "black": [
+    "QAV_Ripsaw\\data\\textures\\black\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsacc2_co.paa"
+   ],
+   "ctrg": [
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsacc2_co.paa"
+   ],
+   "ion": [
+    "QAV_Ripsaw\\data\\textures\\ion\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsacc2_co.paa"
+   ],
+   "ldf": [
+    "QAV_Ripsaw\\data\\textures\\ldf\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsacc2_co.paa"
+   ],
+   "nato": [
+    "QAV_Ripsaw\\data\\textures\\nato\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsacc2_co.paa"
+   ],
+   "texgreen": [
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc2_co.paa"
+   ],
+   "un": [
+    "QAV_Ripsaw\\data\\textures\\una\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\un\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\un\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc2_co.paa"
+   ],
+   "una": [
+    "QAV_Ripsaw\\data\\textures\\una\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc2_co.paa"
+   ]
+  },
+  "vehicleClass": "Autonomous"
+ },
+ "qav_ripsaw_c": {
+  "author": "Quiggs",
+  "crew": "B_UAV_AI",
+  "displayName": "M6C Bullfrog (Cargo)",
+  "editorSubcategory": "EdSubcat_Drones",
+  "faction": "qav_vehicles",
+  "hiddenSelections": [
+   "rshull",
+   "rshull2",
+   "rshull3",
+   "rssusp",
+   "rsturret",
+   "rsturret2",
+   "kongsberg",
+   "rsacc1",
+   "rsacc2"
+  ],
+  "hiddenSelectionsTextures": [
+   "QAV_Ripsaw\\data\\textures\\texgreen\\rshull_co.paa",
+   "QAV_Ripsaw\\data\\textures\\texgreen\\rshull2_co.paa",
+   "QAV_Ripsaw\\data\\textures\\texgreen\\rshull3_co.paa",
+   "QAV_Ripsaw\\data\\textures\\texgreen\\rssusp_co.paa",
+   "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret_co.paa",
+   "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret2_co.paa",
+   "QAV_Ripsaw\\data\\textures\\texgreen\\kongsberg_co.paa",
+   "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc1_co.paa",
+   "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc2_co.paa"
+  ],
+  "parent": "qav_ripsaw_base",
+  "scope": "2",
+  "side": "1",
+  "textureList": [
+   "texgreen"
+  ],
+  "textureSources": {
+   "aaf": [
+    "QAV_Ripsaw\\data\\textures\\aaf\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rshull3_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\kongsberg_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\aaf\\rsacc2_co.paa"
+   ],
+   "black": [
+    "QAV_Ripsaw\\data\\textures\\black\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rshull3_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\kongsberg_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\black\\rsacc2_co.paa"
+   ],
+   "ctrg": [
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rshull3_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\kongsberg_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ctrg\\rsacc2_co.paa"
+   ],
+   "ion": [
+    "QAV_Ripsaw\\data\\textures\\ion\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rshull3_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\kongsberg_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ion\\rsacc2_co.paa"
+   ],
+   "ldf": [
+    "QAV_Ripsaw\\data\\textures\\ldf\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rshull3_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\kongsberg_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\ldf\\rsacc2_co.paa"
+   ],
+   "nato": [
+    "QAV_Ripsaw\\data\\textures\\nato\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rshull3_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\kongsberg_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\nato\\rsacc2_co.paa"
+   ],
+   "texgreen": [
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rshull3_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\kongsberg_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\texgreen\\rsacc2_co.paa"
+   ],
+   "un": [
+    "QAV_Ripsaw\\data\\textures\\una\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\un\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\un\\rshull3_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\un\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\un\\kongsberg_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc2_co.paa"
+   ],
+   "una": [
+    "QAV_Ripsaw\\data\\textures\\una\\rshull_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rshull2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rshull3_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rssusp_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsturret2_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\kongsberg_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc1_co.paa",
+    "QAV_Ripsaw\\data\\textures\\una\\rsacc2_co.paa"
+   ]
+  },
+  "vehicleClass": "Autonomous"
+ }
+}

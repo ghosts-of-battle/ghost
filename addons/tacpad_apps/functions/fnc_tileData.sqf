@@ -67,7 +67,7 @@ if (_scan isEqualTo []) then {
         if (_state > 0) then {
             format ["BRG %1 - %2 KM", round _droneDir, (round (_nearest / 100)) / 10]
         } else {
-            "SPECTRUM CLEAR"
+            "AIR CLEAR"
         },
         ["rest", "alert"] select (_state > 0)
     ];
@@ -129,7 +129,7 @@ if (isNil QEFUNC(hacking,canHack)) then {
         ["LOCKED", "READY"] select _ready,
         [str _targets, "-"] select (!_ready),
         _detail,
-        ["rest", "warn"] select (_ready && {_targets > 0})
+        ["rest", "warn"] select (_ready && _targets > 0)
     ];
 };
 
@@ -182,7 +182,7 @@ private _alarmList = missionNamespace getVariable [QEGVAR(hacking,alarms), []];
 private _soonest = -1;
 {
     private _left = (_x select 1) - CBA_missionTime;
-    if (_soonest < 0 || {_left < _soonest}) then {_soonest = _left};
+    if (_soonest < 0 || _left < _soonest) then {_soonest = _left};
 } forEach _alarmList;
 
 ([] call FUNC(timerState)) params ["_tSecs", "_tRunning", "_tDown", "_tExpired"];
@@ -215,7 +215,7 @@ _out pushBack [
     },
     switch (true) do {
         case (_tExpired): {"alert"};
-        case (_tDown && _tRunning && {_tSecs <= 60}): {"warn"};
+        case (_tDown && _tRunning && _tSecs <= 60): {"warn"};
         case (_tRunning): {"warn"};
         default {"rest"};
     }

@@ -55,10 +55,16 @@ INFO_2("ambient shelling up: every %1-%2s",_intMin,_intMax);
 
     if (isNull _logic) exitWith { [_handle] call CBA_fnc_removePerFrameHandler };
     if (CBA_missionTime < (_cfg get "nextAt")) exitWith {};
-    _cfg set ["nextAt", CBA_missionTime + (_cfg get "intMin") + random ((_cfg get "intMax") - (_cfg get "intMin"))];
+    // THE RETRY, NOT THE INTERVAL, WHEN THERE IS NOTHING TO HIT - see
+    // AMB_RETRY. Rolling the next fire time here and then finding no target
+    // burnt the whole wait on a tick that did nothing.
+    _cfg set ["nextAt", CBA_missionTime + AMB_RETRY];
 
     private _at = [_cfg get "markers", _cfg get "bandMin", _cfg get "bandMax", "ambient shelling"] call FUNC(pickBuilding);
     if (_at isEqualTo []) exitWith {};
+
+    // A target was found, so the real interval starts now.
+    _cfg set ["nextAt", CBA_missionTime + (_cfg get "intMin") + random ((_cfg get "intMax") - (_cfg get "intMin"))];
 
     private _rounds = round ((_cfg get "roundsMin") + random ((_cfg get "roundsMax") - (_cfg get "roundsMin")));
     private _shell = selectRandom (_cfg get "shells");

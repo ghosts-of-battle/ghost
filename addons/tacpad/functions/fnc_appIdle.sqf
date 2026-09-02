@@ -54,10 +54,10 @@ getMousePosition params [["_mx", -1], ["_my", -1]];
 // the press is "the window will not close" - reported on three apps, all of
 // them the ones with refresh loops.
 private _headerH = (HEADER_H * GVAR(textScale) * GVAR(uiScale) * safeZoneH) max ([0.9] call FUNC(textH));
-if (_mx >= _x && {_mx <= _x + _w} && {_my >= _y} && {_my <= _y + _headerH + RULE_THICK * pixelH * 2}) exitWith {false};
+if (_mx >= _x && {_mx <= _x + _w} && _my >= _y && {_my <= _y + _headerH + RULE_THICK * pixelH * 2}) exitWith {false};
 
 // Held too long already - see above. FUNC(openApp) stamps this every time it
 // actually draws.
 if ((diag_tickTime - (uiNamespace getVariable [QGVAR(appDrawn), 0])) > 3) exitWith {true};
 
-!(_mx >= _x && {_mx <= _x + _w} && {_my >= _y} && {_my <= _y + _h})
+!(_mx >= _x && {_mx <= _x + _w} && _my >= _y && {_my <= _y + _h})

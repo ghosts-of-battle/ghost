@@ -65,7 +65,7 @@ private _hurt = [];
         case (_unconscious): {_hurt pushBack [_x, "UNCONSCIOUS", 3]};
         case (_bleeding): {_hurt pushBack [_x, "BLEEDING", 2]};
         case (_pain > 0.35): {_hurt pushBack [_x, "IN PAIN", 1]};
-        case (!_aceMedical && {_dmg > 0.25}): {_hurt pushBack [_x, format ["%1%2 HURT", round (_dmg * 100), "%"], 1]};
+        case (!_aceMedical && _dmg > 0.25): {_hurt pushBack [_x, format ["%1%2 HURT", round (_dmg * 100), "%"], 1]};
         default {};
     };
 } forEach (units group player);

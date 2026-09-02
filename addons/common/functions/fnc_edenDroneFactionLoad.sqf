@@ -37,13 +37,13 @@ lbClear _ctrl;
 // --- resolve stored value: logic var > SQM value > default -----------------
 private _selectedLogic = get3DENSelected "logic";
 private _logicObj = if (count _selectedLogic > 0) then { _selectedLogic select 0 } else { objNull };
-private _storedFromLogic = if (!isNull _logicObj) then { _logicObj getVariable ["faction", nil] } else { nil };
-private _edenValue = _display getVariable "value";
+private _storedFromLogic = if (!isNull _logicObj) then { _logicObj getVariable ["faction", ""] } else { "" };
+private _edenValue = _display getVariable ["value", ""];
 
 private _value = "";
-if (!isNil "_edenValue" && {_edenValue isEqualType ""} && {_edenValue != ""}) then { _value = _edenValue };
+if (_edenValue isEqualType "" && _edenValue isNotEqualTo "") then { _value = _edenValue };
 if (_sqmValue != "") then { _value = _sqmValue };
-if (!isNil "_storedFromLogic" && {_storedFromLogic isEqualType ""} && {_storedFromLogic != ""}) then { _value = _storedFromLogic };
+if (_storedFromLogic isEqualType "" && _storedFromLogic isNotEqualTo "") then { _value = _storedFromLogic };
 
 // --- collect distinct drone-owning factions --------------------------------
 private _drones = [""] call FUNC(listFactionDrones);
@@ -68,7 +68,7 @@ private _facSeen = createHashMap;
 private _valueLower = toLower _value;
 private _hasMatch = (_entries findIf { (toLower (_x select 0)) == _valueLower }) >= 0;
 private _foundIdx = -1;
-if (!_hasMatch && {_value != ""}) then {
+if (!_hasMatch && _value != "") then {
     private _idx = _ctrl lbAdd format ["(unrecognised) %1", _value];
     _ctrl lbSetData [_idx, _value];
     _foundIdx = _idx;

@@ -60,7 +60,7 @@ private _wanted = [];
 
 // ROUTING: a ticked box on the report means "and the command group too".
 private _routingKey = _template getOrDefault ["routing", ""];
-if (_routingKey != "" && {GVAR(commandGroup) != ""}) then {
+if (_routingKey != "" && GVAR(commandGroup) != "") then {
     private _ticked = (createHashMapFromArray (_message get "payload")) getOrDefault [_routingKey, false];
     if (_ticked isEqualType false && _ticked) then {
         _wanted pushBack (format ["G:%1", GVAR(commandGroup)]);

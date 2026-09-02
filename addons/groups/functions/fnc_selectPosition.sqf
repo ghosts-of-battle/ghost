@@ -4,7 +4,12 @@ private _display = findDisplay 9702;
 private _tree = _display displayCtrl 1500;
 private _selectionPath = tvCurSel _tree;
 
-_selectionPath params ["_groupIndex","_unitIndex"];
+_selectionPath params ["_treeGroup","_unitIndex"];
+
+// THE SERVER IS TOLD WHICH SQUAD, NOT WHICH ROW. With platoon tabs the tree
+// holds only the squads on the open tab, so row 0 is whatever that tab starts
+// with - see FUNC(fillRoleTree), which stamps the real index on the squad row.
+private _groupIndex = _tree tvValue [_treeGroup];
 
 (parseSimpleArray (_tree tvData _selectionPath)) params ["_unitNetID","_desiredRole"];
 private _unit = objectFromNetId _unitNetID;
@@ -19,5 +24,5 @@ if !([player,_desiredRole] call FUNC(canTakeRole)) exitWith {
     playSound "addItemFailed";
 };
 
-[player,_selectionPath,_desiredRole] remoteExecCall ["ghost_groups_fnc_assignPlayer",2];
+[player,[_groupIndex,_unitIndex],_desiredRole] remoteExecCall ["ghost_groups_fnc_assignPlayer",2];
 closeDialog 0;

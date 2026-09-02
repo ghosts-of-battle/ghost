@@ -87,7 +87,7 @@ private _spawnAction = [
                         _spawned pushBack [_veh, name player, _course];
                         _controller setVariable ["YMF_spawnedVehicles", _spawned, true];
                     } else {
-                        ["Could not spawn vehicle, there is already a vehicle on the spawn position"] call CBA_fnc_notify;
+                        ["Vehicle Spawner", "Could not spawn vehicle, there is already a vehicle on the spawn position.", NOTE_BAD] call EFUNC(notify,notify);
                     };
                 },
                 {true},
@@ -145,7 +145,7 @@ private _removeAction = [
                         _controller setVariable ["YMF_spawnedVehicles", _spawned, true];
                         deleteVehicle _vehicle;
                     } else {
-                        ["Could not delete vehicle, there are still people in the vehicle"] call CBA_fnc_notify;
+                        ["Vehicle Spawner", "Could not delete vehicle, there are still people in the vehicle.", NOTE_BAD] call EFUNC(notify,notify);
                     };
                 },
                 {true},

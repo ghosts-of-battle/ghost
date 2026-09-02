@@ -28,6 +28,7 @@ private _bldpres_display = _admp_display displayCtrl IDC_ADMINPANEL_PLAYER_MEDIC
 private _bldvol_display = _admp_display displayCtrl IDC_ADMINPANEL_PLAYER_MEDICAL_BLDVOL;
 private _pain_display = _admp_display displayCtrl IDC_ADMINPANEL_PLAYER_MEDICAL_PAIN;
 private _sp02_display = _admp_display displayCtrl IDC_ADMINPANEL_PLAYER_MEDICAL_SP02;
+private _blood_display = _admp_display displayCtrl IDC_ADMINPANEL_PLAYER_MEDICAL_BLOOD;
 
 // update status on controls
 //
@@ -39,3 +40,4 @@ _status_display ctrlSetStructuredText parseText ("<t font='RobotoCondensedBold' 
 [_bldvol_display, "BLOOD VOL", format ["%1 L", _dataArray # 3]] call FUNC(infoRow);
 [_pain_display, "PAIN", _dataArray # 4] call FUNC(infoRow);
 [_sp02_display, "SPO2", _dataArray # 5] call FUNC(infoRow);
+[_blood_display, "BLOOD TYPE", _dataArray param [6, "N/A"]] call FUNC(infoRow);

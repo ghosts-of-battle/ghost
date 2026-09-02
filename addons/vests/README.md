@@ -15,12 +15,4 @@ A content pack: 32 weapon and item classes. No scripted behaviour.
 
 ## Ships
 
-32 weapon/item classes, 1 function.
-
-## Functions
-
-<details><summary>1</summary>
-
-- `ghost_vests_fnc_empty`
-
-</details>
+32 weapon/item classes.

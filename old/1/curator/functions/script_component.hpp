@@ -1,1 +1,0 @@
-#include "\z\ghost\addons\curator\script_component.hpp"

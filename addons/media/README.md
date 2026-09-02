@@ -10,15 +10,3 @@ from.
 ## Requires
 
 - `ghost_main`
-
-## Ships
-
-1 function.
-
-## Functions
-
-<details><summary>1</summary>
-
-- `ghost_media_fnc_empty`
-
-</details>

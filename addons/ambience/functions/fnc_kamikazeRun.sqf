@@ -30,7 +30,7 @@
 
 params [["_tgt", [], [[]]], ["_cls", "", [""]], ["_speed", 40, [0]], ["_markers", [], [[]]]];
 
-if (_tgt isEqualTo [] || {_cls isEqualTo ""}) exitWith {false};
+if (_tgt isEqualTo [] || _cls isEqualTo "") exitWith {false};
 
 // A few hundred metres out on a random bearing, high enough to be seen.
 // Re-rolled against the gate; no compliant bearing, no run.

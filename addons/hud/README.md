@@ -75,6 +75,7 @@ slot by pressing past the end, the way the vanilla panels work.
 | **EW** | Drones, jamming and radio on one tile, small. |
 | **SQUAD** | `ALL OK` and a headcount, or the casualty list the moment somebody is hit. |
 | **TIMER** | World clock, the stopwatch or countdown when one is running, and the next armed alarm. |
+| **APS** | The active protection on the vehicle you are in (`ghost_aps`): the system's name, charges left and right as bars, the RF emitter ready or counting its cooldown, and the last intercept with its clock bearing. `NO APS` on foot or in a vehicle that carries nothing. |
 | *(off)* | Nothing drawn. |
 
 The single tiles are drawn big enough to read while moving. **EW** is the same
@@ -142,7 +143,7 @@ a minute is how a HUD starts flickering. Switchable off in settings.
 
 ## Ships
 
-15 functions.
+16 functions.
 
 ## CBA settings
 
@@ -154,7 +155,7 @@ a minute is how a HUD starts flickering. Switchable off in settings.
 
 ## Functions
 
-<details><summary>15</summary>
+<details><summary>16</summary>
 
 - `ghost_hud_fnc_close`
 - `ghost_hud_fnc_cycle`
@@ -165,6 +166,7 @@ a minute is how a HUD starts flickering. Switchable off in settings.
 - `ghost_hud_fnc_slotState`
 - `ghost_hud_fnc_sweep`
 - `ghost_hud_fnc_toggle`
+- `ghost_hud_fnc_widgetAps`
 - `ghost_hud_fnc_widgetDrones`
 - `ghost_hud_fnc_widgetEw`
 - `ghost_hud_fnc_widgetJamming`

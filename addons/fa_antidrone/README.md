@@ -9,6 +9,7 @@ Cycles the local player's Mk364 airburst range through the presets. Bound to a C
 ## Requires
 
 - `ghost_fa_main`
+- `ghost_notify`
 - `cba_main` _(external)_
 - `ace_ballistics` _(external)_
 

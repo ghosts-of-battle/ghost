@@ -24,13 +24,11 @@
 
 // -------------------------------------------------------------------------------------------------
 
-private ["_unit", "_item", "_amount", "_priority", "_overflow"];
-
-_unit  = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
-_item  = [_this, 1, "", [""]] call BIS_fnc_param;
-_amount  = [_this, 2, 1, [0]] call BIS_fnc_param;
-_priority = [_this, 3, [0], [[]]] call BIS_fnc_param;
-_overflow = [_this, 4, false, [true]] call BIS_fnc_param;
+private _unit     = param [0, objNull, [objNull]];
+private _item     = param [1, "", [""]];
+private _amount   = param [2, 1, [0]];
+private _priority = param [3, [0], [[]]];
+private _overflow = param [4, false, [true]];
 
 // -------------------------------------------------------------------------------------------------
 

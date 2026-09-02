@@ -28,7 +28,7 @@ Author:
 ---------------------------------------------------------------------------- */
 params [["_delay", 0, [0]], ["_who", "", [""]]];
 
-if (!hasInterface || {_delay <= 0}) exitWith {false};
+if (!hasInterface || _delay <= 0) exitWith {false};
 if (_who isEqualTo "") then {_who = name player};
 
 [QGVAR(alarmAdd), [_delay, _who]] call CBA_fnc_serverEvent;

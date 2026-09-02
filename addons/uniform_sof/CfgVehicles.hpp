@@ -1027,4 +1027,292 @@ class CfgVehicles {
             };
         };
     };
+
+    // ===== Alpine and USMC Winter covers (JAM SOF, 31 August) =====
+    class GVAR(Item_SOF_H_Opscore_Cover_alp): Item_Base_F {
+        author = QAUTHOR;
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Hi-Cut Helmet (Cover, Alpine)";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_SOF_Headgear";
+        vehicleClass = "ItemsHeadgear";
+        model = "\A3\Weapons_F\dummyweapon.p3d";
+        class TransportItems {
+            class GVAR(SOF_H_Opscore_Cover_alp) {
+                name = QGVAR(SOF_H_Opscore_Cover_alp);
+                count = 1;
+            };
+        };
+    };
+    class GVAR(Item_SOF_H_Opscore_Cover_mrpt_win): Item_Base_F {
+        author = QAUTHOR;
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Hi-Cut Helmet (Cover, USMC Winter)";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_SOF_Headgear";
+        vehicleClass = "ItemsHeadgear";
+        model = "\A3\Weapons_F\dummyweapon.p3d";
+        class TransportItems {
+            class GVAR(SOF_H_Opscore_Cover_mrpt_win) {
+                name = QGVAR(SOF_H_Opscore_Cover_mrpt_win);
+                count = 1;
+            };
+        };
+    };
+    class GVAR(Item_SOF_H_Opscore_CoverSpec_alp): Item_Base_F {
+        author = QAUTHOR;
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Enhanced Hi-Cut Helmet (Cover, Alpine)";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_SOF_Headgear";
+        vehicleClass = "ItemsHeadgear";
+        model = "\A3\Weapons_F\dummyweapon.p3d";
+        class TransportItems {
+            class GVAR(SOF_H_Opscore_CoverSpec_alp) {
+                name = QGVAR(SOF_H_Opscore_CoverSpec_alp);
+                count = 1;
+            };
+        };
+    };
+    class GVAR(Item_SOF_H_Opscore_CoverSpec_mrpt_win): Item_Base_F {
+        author = QAUTHOR;
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Enhanced Hi-Cut Helmet (Cover, USMC Winter)";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_SOF_Headgear";
+        vehicleClass = "ItemsHeadgear";
+        model = "\A3\Weapons_F\dummyweapon.p3d";
+        class TransportItems {
+            class GVAR(SOF_H_Opscore_CoverSpec_mrpt_win) {
+                name = QGVAR(SOF_H_Opscore_CoverSpec_mrpt_win);
+                count = 1;
+            };
+        };
+    };
+
+    // ===== Cold Fatigues and the desert pair (JAM SOF, 31 August) =====
+    // Remade here like the rest of the family. The cold set is a NEW
+    // GARMENT on U_UniformSpecCold.p3d - a jacket paint over a trouser
+    // paint, which is why its class names pair two camos - so mcam_gry is
+    // the base and the other five inherit it, the way the mod builds them.
+    //
+    // No hiddenSelectionsMaterials, deliberately: the mod sets none on any
+    // of these, so the p3d's own materials apply and the cold jacket's
+    // rvmat and its three maps do not have to be vendored to match.
+    class GVAR(SOF_B_SFColdFatigues_mcam_gry): B_soldier_F {
+        scope = 1;
+        scopeCurator = 0;
+        uniformClass = QGVAR(SOF_U_B_SFColdFatigues_mcam_gry);
+        model = "\SOFGear\sof_characters\Uniforms\U_UniformSpecCold.p3d";
+        hiddenSelections[] = {
+            "camo",
+            "camo1",
+            "camo2",
+            "camo3",
+            "insignia"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_coldweatherjacket_gry_co.paa),
+            QPATHTOF(data\u_fatiguessf_pants_mcam_co.paa),
+            QPATHTOF(data\gloves_sf_snd_co.paa),
+            QPATHTOF(data\u_tacboots_snd_co.paa)
+        };
+        modelSides[] = {0,1,2,3};
+    };
+    class GVAR(SOF_B_SFColdFatigues_mcam_alp): GVAR(SOF_B_SFColdFatigues_mcam_gry) {
+        uniformClass = QGVAR(SOF_U_B_SFColdFatigues_mcam_alp);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_coldweatherjacket_alp_co.paa),
+            QPATHTOF(data\u_fatiguessf_pants_mcam_co.paa),
+            QPATHTOF(data\gloves_sf_snd_co.paa),
+            QPATHTOF(data\u_tacboots_snd_co.paa)
+        };
+    };
+    class GVAR(SOF_B_SFColdFatigues_alp): GVAR(SOF_B_SFColdFatigues_mcam_gry) {
+        uniformClass = QGVAR(SOF_U_B_SFColdFatigues_alp);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_coldweatherjacket_alp_co.paa),
+            QPATHTOF(data\u_fatiguessf_pants_alp_co.paa),
+            QPATHTOF(data\gloves_sf_snd_co.paa),
+            QPATHTOF(data\u_tacboots_snd_co.paa)
+        };
+    };
+    class GVAR(SOF_B_SFColdFatigues_alp_gry): GVAR(SOF_B_SFColdFatigues_mcam_gry) {
+        uniformClass = QGVAR(SOF_U_B_SFColdFatigues_alp_gry);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_coldweatherjacket_gry_co.paa),
+            QPATHTOF(data\u_fatiguessf_pants_alp_co.paa),
+            QPATHTOF(data\gloves_sf_snd_co.paa),
+            QPATHTOF(data\u_tacboots_snd_co.paa)
+        };
+    };
+    class GVAR(SOF_B_SFColdFatigues_mrpt_win): GVAR(SOF_B_SFColdFatigues_mcam_gry) {
+        uniformClass = QGVAR(SOF_U_B_SFColdFatigues_mrpt_win);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_coldweatherjacket_mrpt_win_co.paa),
+            QPATHTOF(data\u_fatiguessf_pants_mrpt_win_co.paa),
+            QPATHTOF(data\gloves_sf_snd_co.paa),
+            QPATHTOF(data\u_tacboots_snd_co.paa)
+        };
+    };
+    class GVAR(SOF_B_SFColdFatigues_mrpt_win_wdl): GVAR(SOF_B_SFColdFatigues_mcam_gry) {
+        uniformClass = QGVAR(SOF_U_B_SFColdFatigues_mrpt_win_wdl);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_coldweatherjacket_mrpt_win_co.paa),
+            QPATHTOF(data\u_fatiguessf_pants_mrpt_co.paa),
+            QPATHTOF(data\gloves_sf_snd_co.paa),
+            QPATHTOF(data\u_tacboots_snd_co.paa)
+        };
+    };
+    class GVAR(SOF_B_SFFatigues_desert): GVAR(SOF_B_SFFatigues_rgr) {
+        uniformClass = QGVAR(SOF_U_B_SFFatigues_desert);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_desert_co.paa),
+            QPATHTOF(data\u_fatiguessf_pants_desert_co.paa),
+            QPATHTOF(data\gloves_sf_snd_co.paa),
+            QPATHTOF(data\u_tacboots_snd_co.paa)
+        };
+    };
+    class GVAR(SOF_B_SFFatigues_Shortsleeve_desert): GVAR(SOF_B_SFFatigues_Shortsleeve_rgr) {
+        uniformClass = QGVAR(SOF_U_B_SFFatigues_Shortsleeve_desert);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\u_fatiguessf_desert_co.paa),
+            QPATHTOF(data\u_fatiguessf_pants_desert_co.paa),
+            QPATHTOF(data\gloves_sf_snd_co.paa),
+            QPATHTOF(data\u_tacboots_snd_co.paa)
+        };
+    };
+
+    class GVAR(Item_SOF_U_B_SFColdFatigues_mcam_gry): Item_Base_F {
+        author = QAUTHOR;
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Special Cold Fatigues (MTP/Grey)";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_SOF_Uniforms";
+        vehicleClass = "ItemsUniform";
+        model = "\A3\Weapons_F\dummyweapon.p3d";
+        class TransportItems {
+            class GVAR(SOF_U_B_SFColdFatigues_mcam_gry) {
+                name = QGVAR(SOF_U_B_SFColdFatigues_mcam_gry);
+                count = 1;
+            };
+        };
+    };
+    class GVAR(Item_SOF_U_B_SFColdFatigues_mcam_alp): Item_Base_F {
+        author = QAUTHOR;
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Special Cold Fatigues (MTP/Alpine)";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_SOF_Uniforms";
+        vehicleClass = "ItemsUniform";
+        model = "\A3\Weapons_F\dummyweapon.p3d";
+        class TransportItems {
+            class GVAR(SOF_U_B_SFColdFatigues_mcam_alp) {
+                name = QGVAR(SOF_U_B_SFColdFatigues_mcam_alp);
+                count = 1;
+            };
+        };
+    };
+    class GVAR(Item_SOF_U_B_SFColdFatigues_alp): Item_Base_F {
+        author = QAUTHOR;
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Special Cold Fatigues (Alpine)";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_SOF_Uniforms";
+        vehicleClass = "ItemsUniform";
+        model = "\A3\Weapons_F\dummyweapon.p3d";
+        class TransportItems {
+            class GVAR(SOF_U_B_SFColdFatigues_alp) {
+                name = QGVAR(SOF_U_B_SFColdFatigues_alp);
+                count = 1;
+            };
+        };
+    };
+    class GVAR(Item_SOF_U_B_SFColdFatigues_alp_gry): Item_Base_F {
+        author = QAUTHOR;
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Special Cold Fatigues (Alpine/Grey)";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_SOF_Uniforms";
+        vehicleClass = "ItemsUniform";
+        model = "\A3\Weapons_F\dummyweapon.p3d";
+        class TransportItems {
+            class GVAR(SOF_U_B_SFColdFatigues_alp_gry) {
+                name = QGVAR(SOF_U_B_SFColdFatigues_alp_gry);
+                count = 1;
+            };
+        };
+    };
+    class GVAR(Item_SOF_U_B_SFColdFatigues_mrpt_win): Item_Base_F {
+        author = QAUTHOR;
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Special Cold Fatigues (USMC Winter)";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_SOF_Uniforms";
+        vehicleClass = "ItemsUniform";
+        model = "\A3\Weapons_F\dummyweapon.p3d";
+        class TransportItems {
+            class GVAR(SOF_U_B_SFColdFatigues_mrpt_win) {
+                name = QGVAR(SOF_U_B_SFColdFatigues_mrpt_win);
+                count = 1;
+            };
+        };
+    };
+    class GVAR(Item_SOF_U_B_SFColdFatigues_mrpt_win_wdl): Item_Base_F {
+        author = QAUTHOR;
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Special Cold Fatigues (USMC Winter/Woodland)";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_SOF_Uniforms";
+        vehicleClass = "ItemsUniform";
+        model = "\A3\Weapons_F\dummyweapon.p3d";
+        class TransportItems {
+            class GVAR(SOF_U_B_SFColdFatigues_mrpt_win_wdl) {
+                name = QGVAR(SOF_U_B_SFColdFatigues_mrpt_win_wdl);
+                count = 1;
+            };
+        };
+    };
+    class GVAR(Item_SOF_U_B_SFFatigues_desert): Item_Base_F {
+        author = QAUTHOR;
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Special Fatigues (Desert)";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_SOF_Uniforms";
+        vehicleClass = "ItemsUniform";
+        model = "\A3\Weapons_F\dummyweapon.p3d";
+        class TransportItems {
+            class GVAR(SOF_U_B_SFFatigues_desert) {
+                name = QGVAR(SOF_U_B_SFFatigues_desert);
+                count = 1;
+            };
+        };
+    };
+    class GVAR(Item_SOF_U_B_SFFatigues_Shortsleeve_desert): Item_Base_F {
+        author = QAUTHOR;
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[Ghost] Special Fatigues (Desert, Rolled-up)";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_SOF_Uniforms";
+        vehicleClass = "ItemsUniform";
+        model = "\A3\Weapons_F\dummyweapon.p3d";
+        class TransportItems {
+            class GVAR(SOF_U_B_SFFatigues_Shortsleeve_desert) {
+                name = QGVAR(SOF_U_B_SFFatigues_Shortsleeve_desert);
+                count = 1;
+            };
+        };
+    };
 };

@@ -38,7 +38,7 @@ if (_radio isNotEqualTo "" && {!isNil "acre_api_fnc_getRadioChannelData"}) then 
         // ACRE's channel data carries power in mW; shapes differ by version,
         // so a number is looked for rather than an index assumed.
         private _mw = 0;
-        { if (_x isEqualType 0 && {_x > _mw}) then {_mw = _x} } forEach _data;
+        { if (_x isEqualType 0) then {_mw = _mw max _x} } forEach _data;
         if (_mw > 0) then { _watts = _mw / REACT_MW_PER_WATT };
     };
 };
@@ -50,4 +50,24 @@ if (_radio isNotEqualTo "" && {!isNil "acre_api_fnc_getRadioChannelData"}) then 
 // publicVariables it now; the default covers a client that keys up first.
 if (_watts < (missionNamespace getVariable [QGVAR(watts), 1])) exitWith {};
 
-[QGVAR(event), [player, "radio"]] call CBA_fnc_serverEvent;
+// BURN-THROUGH IS NOT AN ORDINARY KEY-UP (user, 2026-08-31). A set powerful
+// enough to punch a hole in a jamming field is, by definition, radiating harder
+// than everything around it from inside ground somebody is deliberately
+// smothering - so it is not rolled for, it is answered. See FUNC(roll).
+//
+// TWO READS, NOT ONE. The bare field strength says "you are inside a jammer";
+// the strength WITH this set's power says what your set did to it. Burn-through
+// is the difference between them, so a low-powered set inside the same field
+// raises an ordinary "radio" and only the man who reached for the big antenna
+// pays for it. With the zone's burnthrough model off the two reads are equal
+// and this never fires, which is the right answer for a mission that has not
+// asked for the mechanic.
+private _source = "radio";
+if (!isNil "ghost_jamming_fnc_jamFactor") then {
+    private _pos = getPosASL player;
+    private _raw = ([_pos, 0, "radio"] call ghost_jamming_fnc_jamFactor) select 0;
+    private _eff = ([_pos, _watts * REACT_MW_PER_WATT, "radio"] call ghost_jamming_fnc_jamFactor) select 0;
+    if (_raw >= REACT_BURN_BAND && _eff < _raw) then { _source = "burnthrough" };
+};
+
+[QGVAR(event), [player, _source]] call CBA_fnc_serverEvent;

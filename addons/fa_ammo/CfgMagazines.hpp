@@ -49,6 +49,7 @@ class CfgMagazines {
     class 10Rnd_338_Mag;
     // Precision large-calibre base mags
     class 10Rnd_93x64_Mag;
+    class 150Rnd_93x64_Mag;
     class 5Rnd_127x108_Mag;
     // .45 ACP base mags
     class 30Rnd_45ACP_Mag_SMG_01;
@@ -893,6 +894,17 @@ class CfgMagazines {
     class FA_o_10Rnd_93x64_Type40_T_Blue   : 10Rnd_93x64_Mag { author = QAUTHOR; displayName = "[Ghost] 10Rnd Type40 Blue Tracer";   descriptionShort = "Type40";   ammo = "FA_o_93x64_Type40_T_Blue";   initSpeed = 882; tracersEvery = 4; };
     class FA_o_10Rnd_93x64_Type40_T_Orange : 10Rnd_93x64_Mag { author = QAUTHOR; displayName = "[Ghost] 10Rnd Type40 Orange Tracer"; descriptionShort = "Type40"; ammo = "FA_o_93x64_Type40_T_Orange"; initSpeed = 882; tracersEvery = 4; };
     class FA_o_10Rnd_93x64_Type40_T_IR     : 10Rnd_93x64_Mag { author = QAUTHOR; displayName = "[Ghost] 10Rnd Type40 IR Tracer";     descriptionShort = "Type40";     ammo = "FA_o_93x64_Type40_T_IR";     initSpeed = 882; tracersEvery = 4; };
+
+    // 9.3x64 Type 40 belt - 150Rnd_93x64_Mag (Navid). Same round as the Cyrus's,
+    // belted; the Navid's own muzzle velocity. CSAT Iran's machine gun (2026-08-28).
+    class FA_o_150Rnd_93x64_Type40: 150Rnd_93x64_Mag { author = QAUTHOR; displayName = "[Ghost] 150Rnd Type40"; descriptionShort = "Type40"; ammo = "FA_o_93x64_Type40"; initSpeed = 785; };
+    class FA_o_150Rnd_93x64_Type40_T_Red    : 150Rnd_93x64_Mag { author = QAUTHOR; displayName = "[Ghost] 150Rnd Type40 Red Tracer"; descriptionShort = "Type40"; ammo = "FA_o_93x64_Type40_T_Red"; initSpeed = 785; tracersEvery = 3; };
+    class FA_o_150Rnd_93x64_Type40_T_Yellow : 150Rnd_93x64_Mag { author = QAUTHOR; displayName = "[Ghost] 150Rnd Type40 Yellow Tracer"; descriptionShort = "Type40"; ammo = "FA_o_93x64_Type40_T_Yellow"; initSpeed = 785; tracersEvery = 3; };
+    class FA_o_150Rnd_93x64_Type40_T_Green  : 150Rnd_93x64_Mag { author = QAUTHOR; displayName = "[Ghost] 150Rnd Type40 Green Tracer"; descriptionShort = "Type40"; ammo = "FA_o_93x64_Type40_T_Green"; initSpeed = 785; tracersEvery = 3; };
+    class FA_o_150Rnd_93x64_Type40_T_White  : 150Rnd_93x64_Mag { author = QAUTHOR; displayName = "[Ghost] 150Rnd Type40 White Tracer"; descriptionShort = "Type40"; ammo = "FA_o_93x64_Type40_T_White"; initSpeed = 785; tracersEvery = 3; };
+    class FA_o_150Rnd_93x64_Type40_T_Blue   : 150Rnd_93x64_Mag { author = QAUTHOR; displayName = "[Ghost] 150Rnd Type40 Blue Tracer"; descriptionShort = "Type40"; ammo = "FA_o_93x64_Type40_T_Blue"; initSpeed = 785; tracersEvery = 3; };
+    class FA_o_150Rnd_93x64_Type40_T_Orange : 150Rnd_93x64_Mag { author = QAUTHOR; displayName = "[Ghost] 150Rnd Type40 Orange Tracer"; descriptionShort = "Type40"; ammo = "FA_o_93x64_Type40_T_Orange"; initSpeed = 785; tracersEvery = 3; };
+    class FA_o_150Rnd_93x64_Type40_T_IR     : 150Rnd_93x64_Mag { author = QAUTHOR; displayName = "[Ghost] 150Rnd Type40 IR Tracer"; descriptionShort = "Type40"; ammo = "FA_o_93x64_Type40_T_IR"; initSpeed = 785; tracersEvery = 3; };
 
     // =========================================================
     // .408 Mk240 LRP — 10Rnd_338_Mag body (MAR-10 housing, .408 chambering)

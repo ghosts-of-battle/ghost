@@ -9,7 +9,7 @@ class CfgFactionClasses {
     class NO_CATEGORY;
 
     class ghost_Syndikat: NO_CATEGORY {
-        displayName = "Ghost Syndikat";
+        displayName = "2040 Syndikat";
         author = QAUTHOR;
         side = 2;
         priority = 3;

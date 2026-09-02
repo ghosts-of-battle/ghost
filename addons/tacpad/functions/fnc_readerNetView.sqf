@@ -139,7 +139,7 @@ private _myUid = getPlayerUID player;
 
     private _priority = toUpper (_msg getOrDefault ["priority", ""]);
     private _urgent = _priority in ["FLASH", "IMMEDIATE", "HIGH"];
-    if (_priority isNotEqualTo "" && {_priority isNotEqualTo "ROUTINE"} && {_priority isNotEqualTo "NORMAL"}) then {
+    if (_priority isNotEqualTo "" && _priority isNotEqualTo "ROUTINE" && _priority isNotEqualTo "NORMAL") then {
         _tags pushBack _priority;
     };
 
@@ -159,7 +159,7 @@ private _myUid = getPlayerUID player;
 
     // A report that is still open says so here rather than behind a click.
     private _status = toUpper (_thread getOrDefault ["status", ""]);
-    if (_status isNotEqualTo "" && {_status isNotEqualTo "OPEN"}) then {_tags pushBack _status};
+    if (_status isNotEqualTo "" && _status isNotEqualTo "OPEN") then {_tags pushBack _status};
 
     [
         _root, [_tx, _y, _tw, _rowH * 0.8],
