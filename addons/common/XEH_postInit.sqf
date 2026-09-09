@@ -95,7 +95,7 @@ if (isServer) then {
     private _out = [];
     {
         private _cls = typeOf _x;
-        if (_cls select [0, 12] isEqualTo "ghost_module") then {
+        if (_cls select [0, 13] isEqualTo "ghost_module") then {
             _out pushBack format ["%1 @ %2", _cls, mapGridPosition _x];
         };
     } forEach (entities "Logic");

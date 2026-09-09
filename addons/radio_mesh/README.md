@@ -9,9 +9,11 @@ antennas, power), so a manpack on a ridge or a vehicle rack in the valley
 extends the net the way a real repeater would. Direct is preferred whenever it
 is the stronger link, and with no relay in reach the result is exactly ACRE's.
 
-* **Relays** are the manpacks and vehicle racks - PRC-148, PRC-152, PRC-117F by
-  default - carried by players or racked in vehicles. The squad handheld is an
-  end point, never a relay. Same side only.
+* **Off by default.** The *Enable mesh relaying* server setting turns it on;
+  off, the result is ACRE's own point-to-point signal, still scaled by jamming.
+* **Relays** are the manpacks and vehicle racks - PRC-152 and PRC-117F by
+  default - carried by players or racked in vehicles. The PRC-148 squad
+  handheld is an end point, never a relay. Same side only.
 * **Hops** are unbounded; the route taken is the one whose weakest leg is
   strongest (a widest-path search over the relays in reach).
 * **Loss**: a relay transmitting under the power threshold (1 W by default)
@@ -21,7 +23,7 @@ is the stronger link, and with no relay in reach the result is exactly ACRE's.
   signal function ACRE allows from `ghost_jamming` and applies its jam level
   itself.
 
-Settings under *Ghosts of Battle > Radio Mesh*: enable, relay radio classes,
+Settings under *Ghosts of Battle > Radio Mesh*: enable (off by default), relay radio classes,
 loss per weak hop, the power threshold, the relay-table refresh, and the cap
 on relays examined per transmission.
 

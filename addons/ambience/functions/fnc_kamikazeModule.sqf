@@ -26,16 +26,23 @@ if (!isServer) exitWith {};
 private _markers = ((_logic getVariable ["markers", ""]) splitString " ,")
     select { _x isNotEqualTo "" && {markerShape _x isNotEqualTo ""} };
 
+// THE MODULE'S OWN AREA COUNTS AS ONE OF THEM. Resize it in Eden or Zeus and
+// the ambience runs inside that rectangle - see FUNC(areaMarker), which makes
+// it into a marker so the gate downstream needs no second way of describing an
+// area. Named markers still work and still add to it: the module is the easy
+// answer, a marker somebody already drew is the precise one.
+private _own = [_logic, "kam"] call FUNC(areaMarker);
+if (_own isNotEqualTo "") then { _markers pushBack _own };
+
 // D59: whose drones is never asked - the side is whoever the players are at
-// war with, read off the adapter's commanders the way fnc_major does. No
-// commander answering, the default east keeps the vanilla OPFOR quadcopter.
+// war with, asked of the engine on the first tick. Nothing answering hostile,
+// the default east keeps the vanilla OPFOR quadcopter.
 //
 // ASKED HERE, ANSWERED LATER. A module function runs BETWEEN preInit and
 // postInit: EGVAR(common,playerSide) is declared in common's postInit and
 // did not exist yet, so this threw "undefined variable" and took the whole
-// module down with it. ALiVE is not up at module time either, so the
-// commanders would have been empty even if it had not. The side is
-// resolved on the first tick instead - see the scheduler below.
+// module down with it. The side is resolved on the first tick instead -
+// see the scheduler below.
 private _side = east;
 
 // Named classes are honoured as given; an empty field takes the side's
@@ -72,19 +79,22 @@ INFO_3("ambient kamikaze up for %1: every %2-%3s",_side,_intMin,_intMax);
     _cfg set ["nextAt", CBA_missionTime + AMB_RETRY];
 
     // WHOSE DRONES, decided on the first run rather than at module time -
-    // neither ALiVE nor common's postInit exists when a module function
-    // runs. A side hostile to the players, their vanilla quadcopter if the
-    // field named no class of its own, and both settle once.
+    // common's postInit has not run when a module function does. A side
+    // hostile to the players, their vanilla quadcopter if the field named no
+    // class of its own, and both settle once.
+    //
+    // THE FIRST HOSTILE SIDE, ASKED OF THE ENGINE. This used to walk the ALiVE
+    // adapter's commanders and take the side of the first one at war with the
+    // players. There are no commanders now, and the question was never really
+    // about them: it is "who is fighting these players", which getFriend
+    // answers directly. The module's own Side field overrides it either way.
     if (!(_cfg getOrDefault ["sideKnown", false])) then {
         _cfg set ["sideKnown", true];
 
         private _pside = missionNamespace getVariable [QEGVAR(common,playerSide), west];
-        if (!isNil "ghost_adapter_alive_fnc_commanders") then {
-            {
-                _x params ["_cside"];
-                if (_cside getFriend _pside < 0.6) exitWith { _cfg set ["side", _cside] };
-            } forEach (call ghost_adapter_alive_fnc_commanders);
-        };
+        {
+            if (_x getFriend _pside < 0.6) exitWith { _cfg set ["side", _x] };
+        } forEach [east, independent, west];
 
         if ((_cfg get "drones") isEqualTo []) then {
             _cfg set ["drones", [switch (_cfg get "side") do {

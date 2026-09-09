@@ -72,7 +72,7 @@ private _navH = _rowH * 1.4;
         ] call CBA_fnc_execNextFrame;
     }] call EFUNC(tacpad,drawHit);
     _hit setVariable [QGVAR(section), _key];
-} forEach [
+} forEach ([
     ["scheme", "COLOUR SCHEME"],
     ["panels", "PANELS"],
     ["tiles", "LIVE TILES"],
@@ -80,7 +80,12 @@ private _navH = _rowH * 1.4;
     ["tools", "MAP TOOLS"],
     ["size", "UI SIZE"],
     ["text", "TEXT SIZE"]
-];
+] select {
+    // NO PLP, NO SECTION. Its one row toggles a panel that cannot exist without
+    // PLP Map Tools Remastered - see the tools registration in XEH_preInit. A
+    // settings page whose switch does nothing is worse than one without it.
+    (_x # 0) isNotEqualTo "tools" || {!isNil "PLP_fnc_SMT_Main"}
+});
 
 // A 2px rule between the rail and the pane - a region boundary, not a row one.
 [_body, [_railW, 0, RULE_THICK * pixelW, _h], _ink] call EFUNC(tacpad,drawFill);

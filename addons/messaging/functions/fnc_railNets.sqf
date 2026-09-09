@@ -15,7 +15,7 @@
  *   1. Every declared squad's net was appended, for everybody. That was once
  *      the ask and is not any more: a man sees HIS OWN squad and no other.
  *   2. The named nets came off GVAR(namedBoxes) - the ADDON SETTING - so the
- *      mission's own GHOST_Nets was ignored on the client and the role gate
+ *      mission's own GHOSTFR_Nets was ignored on the client and the role gate
  *      was never applied. That is how a rail could show MEDICAL.mist to a role
  *      that does not carry it, and miss the four arm nets that role does.
  *
@@ -42,16 +42,9 @@
 
 params [["_unit", player, [objNull]]];
 
-// THE MISSION'S OWN LIST WINS, exactly as the server reads it at startup - see
-// XEH_postInit. The setting is the fallback for a mission that declares none.
-private _cfg = missionConfigFile >> "GHOST_Nets" >> "nets";
-private _out = if (isArray _cfg) then {
-    (getArray _cfg) apply {
-        if (_x isEqualType []) then {_x param [0, ""]} else {_x}
-    } select {_x isEqualType "" && _x isNotEqualTo ""}
-} else {
-    (GVAR(namedBoxes) splitString ",") apply {trim _x} select {_x isNotEqualTo ""}
-};
+// THE SAME LIST THE SERVER OPENS MAILBOXES FOR - TAC//PAC's nets, the
+// mission's GHOSTFR_Nets, or the setting, in that order - see FUNC(netNames).
+private _out = [] call FUNC(netNames);
 
 // HIS ROLE DECIDES WHICH OF THEM ARE HIS. Ungated missions - nobody declares
 // nets[] on a role - keep the whole list, so a mission that never asked for

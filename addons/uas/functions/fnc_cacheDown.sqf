@@ -29,14 +29,19 @@ private _until = (CBA_missionTime + _window) max (GVAR(outages) getOrDefault [st
 
 GVAR(outages) set [str _side, _until];
 
-INFO_3("cache killed: %1 ceiling %2 for %3s",_side,[_side] call FUNC(ceilingFor),round _window);
+INFO_2("cache killed: %1 patrols thinned for %2s",_side,round _window);
 ["SUPPLY", format ["%1 drone supply hit - their air thins out for a while.", _side]]
     call EFUNC(notify,broadcast);
 
-// THE ENEMY REBUILDS. A hit cache is a place the commander now knows is
-// reachable; LOGCOM sends a section to hold the ground, by convoy - one the
-// players can interdict, and can find, since LOCATE LOGISTICS points at
-// where it starts. Soft-linked like every adapter call.
-if (!isNil "ghost_adapter_alive_fnc_requestSupply") then {
-    [_side, getPosATL _cache, [1, 0, 0, 0, 0, 0]] call ghost_adapter_alive_fnc_requestSupply;
+// THE ENEMY REBUILDS, IF THERE IS A COMMANDER TO SEND ANYONE. A hit cache is a
+// place the commander now knows is reachable; LOGCOM sends a section to hold the
+// ground, by convoy - one the players can interdict, and can find, since LOCATE
+// LOGISTICS points at where it starts. Soft-linked like every adapter call.
+//
+// Without ALiVE there is no logistics model and nothing is coming: the ceiling
+// drops for the outage window and comes back when the window closes rather than
+// when a convoy arrives. Both endings are correct; which one you get is whether
+// a commander exists to be told.
+if (!isNil QEFUNC(adapter_alive,requestSupply)) then {
+    [_side, getPosATL _cache, [1, 0, 0, 0, 0, 0]] call EFUNC(adapter_alive,requestSupply);
 };

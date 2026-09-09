@@ -125,6 +125,11 @@ class GVAR(cell): RscStructuredText {
 // The handler is the part that was missing. These were created and left bare
 // while the clicks were meant to be read by a dispatcher on the map control -
 // which the button consumed the event before ever reaching. See FUNC(hotspot).
+// HOVER IS HERE AND NOWHERE ELSE. A button shows colorBackgroundActive while
+// the mouse is on it and no script command changes that, so the one hover the
+// whole suite has is this mid-grey wash - lighter on a dark scheme, darker on
+// a light one, never another scheme's accent. Focus stays clear so the last
+// thing pressed does not sit lit.
 class GVAR(hit): RscButton {
     idc = -1;
     text = "";
@@ -134,7 +139,7 @@ class GVAR(hit): RscButton {
     offsetPressedX = 0;
     offsetPressedY = 0;
     colorBackground[] = {0, 0, 0, 0};
-    colorBackgroundActive[] = {0, 0, 0, 0};
+    colorBackgroundActive[] = {0.5, 0.5, 0.5, 0.22};
     colorBackgroundDisabled[] = {0, 0, 0, 0};
     colorText[] = {0, 0, 0, 0};
     colorActive[] = {0, 0, 0, 0};

@@ -75,7 +75,9 @@ if (_flash) then {
 // is the only one that changes what anybody else sees.
 private _btnH = ([0.8] call FUNC(textH)) + 2 * _padY;
 private _btnW = _dw * 0.15;
-private _ackX = _dx + _dw - _btnW - _pad;
+// The last slot on the header row is CLOSE, drawn by FUNC(readerDraw) for
+// every view; ACK, PIN and NOTIFY sit to its left (user, 2026-09-05).
+private _ackX = _dx + _dw - 2 * _btnW - 2 * _pad;
 private _pinX = _ackX - _btnW - _pad;
 
 private _folX = _pinX - _btnW - _pad;
@@ -181,9 +183,8 @@ if (_lines isNotEqualTo []) then {
     // plain: line reports read top to bottom, one line per row, never
     // wrapped into columns.
     private _cardW = _dw - 2 * _pad;
-    private _cardH = _rowH * (1 + count _lines) + _padY * 2;
+    private _cardTop = _y;
 
-    [_root, [_dx + _pad, _y, _cardW, _cardH], _ink, RULE_THICK] call FUNC(drawFrame);
     [_root, [_dx + _pad, _y, _cardW, _rowH], _ink] call FUNC(drawFill);
     [
         _root, [_dx + _pad * 2, _y, _dw * 0.6, _rowH],
@@ -196,22 +197,36 @@ if (_lines isNotEqualTo []) then {
         _ground, 0.6, true, "right", true
     ] call FUNC(drawText);
 
+    // A LINE IS AS TALL AS ITS ANSWER. A CASEVAC line is a word; an OPORD
+    // section is paragraphs, and at one row per line the paragraphs ran over
+    // the rows below them into an unreadable stack. The answer is drawn, its
+    // wrapped height measured, and the row grown to fit before the next line
+    // is placed. The frame goes on last, once the height is known.
+    private _cy = _y + _rowH;
     {
-        _x params ["", "_lineTitle", "_lineLabel", "_fields", "_lineIndex"];
+        _x params ["", "", "_lineLabel", "_fields", "_lineIndex"];
 
         private _cx = _dx + _pad;
-        private _cy = _y + _rowH + _forEachIndex * _rowH;
 
-        [_root, [_cx + _pad, _cy, _cardW * 0.06, _rowH], toUpper _lineTitle, _mute, 0.6, true, "left"] call FUNC(drawText);
-        [_root, [_cx + _cardW * 0.08, _cy, _cardW * 0.3, _rowH], _lineLabel, _mute, 0.6, true, "left", true] call FUNC(drawText);
+        // ONE LABEL COLUMN. The short key (HEADER, SITUATION) and the full
+        // title (1. SITUATION) said the same thing twice, and the answer only
+        // started at 40% of the card (user, 2026-09-05: "do not need both, use
+        // only the opord column; expand left to the line"). The title alone,
+        // and the answer from a quarter of the way in.
+        [_root, [_cx + _pad, _cy, _cardW * 0.23, _rowH], _lineLabel, _mute, 0.6, true, "left", true] call FUNC(drawText);
 
         // Every field on the line, joined - a line with three boxes ticked reads
-        // as one answer, which is what it is.
+        // as one answer, which is what it is. A grid field holds a position
+        // when it came off the map; it is shown as the grid, not the array.
         private _parts = [];
         {
             private _key = _x getOrDefault ["key", ""];
             private _v = _payload getOrDefault [_key, ""];
             if (_v isEqualTo "" || _v isEqualTo false) then {continue};
+
+            if ((_x getOrDefault ["type", ""]) isEqualTo "grid" && {_v isEqualType []} && {count _v >= 2}) then {
+                _v = mapGridPosition _v;
+            };
 
             private _prefix = _x getOrDefault ["prefix", ""];
             if (_v isEqualTo true) then {
@@ -221,16 +236,26 @@ if (_lines isNotEqualTo []) then {
             };
         } forEach _fields;
 
-        [
-            _root, [_cx + _cardW * 0.4, _cy, _cardW * 0.58 - _pad, _rowH],
+        private _valueX = _cx + _cardW * 0.25;
+        private _valueW = _cardW * 0.73 - _pad;
+        private _value = [
+            _root, [_valueX, _cy, _valueW, _rowH],
             [_parts joinString " - ", "-"] select (_parts isEqualTo []),
             ([_ink, _dim] select (_parts isEqualTo [])), 0.8
         ] call FUNC(drawText);
 
-        [_root, [_cx, _cy + _rowH - RULE_THIN * pixelH, _cardW, RULE_THIN * pixelH], _line] call FUNC(drawFill);
+        private _lineH = _rowH max ((ctrlTextHeight _value) + _rowH * 0.25);
+        _value ctrlSetPosition [_valueX, _cy, _valueW, _lineH];
+        _value ctrlCommit 0;
+
+        [_root, [_cx, _cy + _lineH - RULE_THIN * pixelH, _cardW, RULE_THIN * pixelH], _line] call FUNC(drawFill);
+        _cy = _cy + _lineH;
     } forEach _lines;
 
-    _y = _y + _cardH + _padY * 2;
+    private _cardH = (_cy - _cardTop) + _padY;
+    [_root, [_dx + _pad, _cardTop, _cardW, _cardH], _ink, RULE_THICK] call FUNC(drawFrame);
+
+    _y = _cardTop + _cardH + _padY * 2;
 };
 
 // --------------------------------------------------------- quick replies ---
@@ -325,11 +350,18 @@ private _myUid = getPlayerUID player;
     private _ly = _y + _rowH * 0.85;
     {
         private _isHead = (_forEachIndex mod 2) isEqualTo 0;
-        [
+        private _rowStep = _rowH * ([0.8, 0.7] select _isHead);
+        private _line = [
             _root, [_tx, _ly, _tw, _rowH * 0.8],
             _x, ([_ink, _mute] select _isHead), ([0.8, 0.6] select _isHead), _isHead, _align
         ] call FUNC(drawText);
-        _ly = _ly + _rowH * ([0.8, 0.7] select _isHead);
+        // A reply's answer can be a paragraph too - same rule as the card:
+        // measure the wrapped text and grow the row to hold it.
+        private _lineH = _rowStep max ((ctrlTextHeight _line) + _rowH * 0.1);
+        (ctrlPosition _line) params ["_lx", "_lyy", "_lw"];
+        _line ctrlSetPosition [_lx, _lyy, _lw, _lineH];
+        _line ctrlCommit 0;
+        _ly = _ly + _lineH;
     } forEach _bodyLines;
 
     _y = _ly + _rowH * 0.5;

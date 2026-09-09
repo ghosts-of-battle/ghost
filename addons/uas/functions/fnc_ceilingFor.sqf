@@ -1,32 +1,37 @@
 #include "script_component.hpp"
 /*
  * Author: Ghost
- * How many drones a side may have up RIGHT NOW.
+ * How many airframes one patrol may have up RIGHT NOW.
  *
- * The whole point of the caches: while a killed one's outage runs, this drops
- * to the reduced number and the sky visibly thins. Everything that puts a
- * drone up asks here first, so there is one answer rather than a rule each
- * system remembers differently.
+ * IT USED TO BE A SIDE'S CEILING, and it is a patrol's cap now. One module is
+ * one patrol and carries its own count, so "how many does this side own" stopped
+ * being a question anybody asks - what is left is the one thing that IS still
+ * map-wide: a side whose supply cache has been killed flies fewer of everything.
+ *
+ * The whole point of the caches: while a killed one's outage runs, every patrol
+ * that side has thins to UAS_OUTAGE_MAX, and the sky visibly empties. Then the
+ * window closes and it fills again. Outages extend rather than stack, so supply
+ * raids are raids and not a win button.
+ *
+ * A PATROL NEVER GROWS PAST ITS OWN NUMBER. The cap only ever reduces - a
+ * module asking for one airframe flies one whatever the supply state.
  *
  * Arguments:
  * 0: Side <SIDE>
+ * 1: What the patrol asked for <NUMBER>
  *
  * Return Value:
- * Ceiling <NUMBER>
+ * What it may actually have up <NUMBER>
  *
  * Example:
- * [east] call ghost_uas_fnc_ceilingFor
+ * [east, 3] call ghost_uas_fnc_ceilingFor
  */
 
-params [["_side", sideUnknown, [sideUnknown]]];
+params [["_side", sideUnknown, [sideUnknown]], ["_want", 0, [0]]];
 
 if (_side isEqualTo sideUnknown) exitWith {0};
 
-// The side's own number where the module gave one, the shared one otherwise.
-// A reduced ceiling never exceeds it - a side grounded at 0 stays grounded.
-private _base = round (GVAR(sideMax) getOrDefault [str _side, GVAR(baseMax)]);
-
 private _until = GVAR(outages) getOrDefault [str _side, -1];
-if (CBA_missionTime < _until) exitWith { (round GVAR(reducedMax)) min _base };
+if (CBA_missionTime < _until) exitWith { UAS_OUTAGE_MAX min _want };
 
-_base
+_want

@@ -119,6 +119,10 @@ private _satisfied = switch (_mustBe) do {
     // every reply until somebody claims deadlocks a task nobody can claim.
     case "assignee": {(_thread get "claimedBy") in ["", _uid]};
     case "boxMember": {_addressed};
+    // The mission's own flag - the one a lead's role sets (isLeader) and the
+    // one every tag rule already reads. METT-TC is the only template that
+    // asks for it: an estimate is a leader's to give.
+    case "leader": {(_unit getVariable ["isLeader", false]) isEqualTo true};
     default {true};
 };
 if (!_satisfied) exitWith {

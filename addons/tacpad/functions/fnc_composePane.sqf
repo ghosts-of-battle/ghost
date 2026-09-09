@@ -78,10 +78,12 @@ private _onNet = (_addressed findIf {(_x select [0, 2]) isEqualTo "P:"}) < 0;
 private _y = _padY * 2;
 
 private _cancelW = _dw * 0.15;
-private _cancelX = _dx + _dw - _cancelW - _pad;
+// One slot in from the pane's edge: the corner is CLOSE, drawn by
+// FUNC(readerDraw) for every view (user, 2026-09-05).
+private _cancelX = _dx + _dw - 2 * _cancelW - 2 * _pad;
 
 [
-    _root, [_dx + _pad, _y, _dw - _cancelW - 3 * _pad, _rowH * 1.2],
+    _root, [_dx + _pad, _y, _dw - 2 * _cancelW - 4 * _pad, _rowH * 1.2],
     ["NEW MESSAGE", "REPLY"] select _reply,
     _ink, 1.25, true
 ] call FUNC(drawText);

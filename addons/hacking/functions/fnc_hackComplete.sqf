@@ -52,7 +52,7 @@ switch (_kind) do {
     // there is nothing to come back for. One card, one pull.
     case "wreck": {
         _device setVariable [QGVAR(stripped), true, true];
-        [QGVAR(pick), [_intel, getPosASL _device, side group player, player]] call CBA_fnc_serverEvent;
+        [QGVAR(pick), [_intel, getPosASL _device, side group player, player, _device]] call CBA_fnc_serverEvent;
     };
 
     // --- remote unit: fail roll, then the chosen intel --------------------
@@ -80,13 +80,13 @@ switch (_kind) do {
             [QGVAR(remoteFail), [player, getPosASL player]] call CBA_fnc_serverEvent;
         };
 
-        [QGVAR(pick), [_intel, _pos, side group player, player]] call CBA_fnc_serverEvent;
+        [QGVAR(pick), [_intel, _pos, side group player, player, _device]] call CBA_fnc_serverEvent;
     };
 
     // --- tower: cooldown, then the chosen intel ---------------------------
     default {
         _device setVariable [QGVAR(hacked), true, true];
         _device setVariable [QGVAR(lastHack), CBA_missionTime, true];
-        [QGVAR(pick), [_intel, getPosASL _device, side group player, player]] call CBA_fnc_serverEvent;
+        [QGVAR(pick), [_intel, getPosASL _device, side group player, player, _device]] call CBA_fnc_serverEvent;
     };
 };

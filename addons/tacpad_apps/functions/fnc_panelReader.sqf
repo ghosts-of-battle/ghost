@@ -90,9 +90,13 @@ if (GVAR(readerThread) != "") exitWith {
         {
             if (_x != "") then {
                 [_body, _row, _x, "", [], false] call FUNC(row);
-                _row = _row + 1;
+                // AIR BETWEEN THE LINES. A report read as one dense slab was
+                // "hard to read" (user, 2026-09-05); a third of a row between
+                // lines keeps the sections apart without doubling the height.
+                _row = _row + 1.35;
             };
         } forEach ([_message get "templateId", _message get "payload", false] call EFUNC(messaging,render) splitString endl);
+        _row = _row + 0.5;      // and half a row between messages
     } forEach _messages;
 
     // A long thread runs past the foot of the rail and scrolls, which is what
@@ -118,7 +122,7 @@ private _index = EGVAR(messaging,index);
 // mission showed one tab called ALL and the strip looked broken - and a player
 // could not select the net they were about to send on.
 //
-// FILTERED TO THIS MAN (user, 2026-09-03) - the mission's GHOST_Nets narrowed
+// FILTERED TO THIS MAN (user, 2026-09-03) - the mission's GHOSTFR_Nets narrowed
 // by his role, plus his own squad. It used to be the addon setting, unfiltered,
 // with every squad in the task force appended. See EFUNC(messaging,railNets).
 private _nets = +([player] call EFUNC(messaging,railNets));

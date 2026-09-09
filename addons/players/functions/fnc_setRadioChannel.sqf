@@ -51,17 +51,34 @@ if (EGVAR(patches,usesACRE)) exitWith {
 // per channel (1-based); the active channel is selected 0-based (matches TFAR_fnc_set*Channel).
 if (EGVAR(patches,usesTFAR)) exitWith {
     private _squad = toUpper ([_player] call EFUNC(players,unit_getSquadName));
-    private _swIdx = ghost_radio_tfarSwFallback;
-    private _lrIdx = ghost_radio_tfarLrFallback;
+    private _swIdx = ghostFR_radio_tfarSwFallback;
+    private _lrIdx = ghostFR_radio_tfarLrFallback;
+    private _hadRow = false;
     {
         _x params ["_name","_sw","_lr"];
-        if (toUpper _name isEqualTo _squad) exitWith { _swIdx = _sw; _lrIdx = _lr; };
-    } forEach ghost_radio_tfarNets;
+        if (toUpper _name isEqualTo _squad) exitWith { _swIdx = _sw; _lrIdx = _lr; _hadRow = true; };
+    } forEach ghostFR_radio_tfarNets;
+
+    // HIS PLATOON'S LONG RANGE, when the squad has no row of its own
+    // (2026-09-09). Same table as ACRE - lrPlatoonChannel, keyed by platoon id -
+    // so the two radio systems are told the same thing once. A squad that names
+    // its own LR keeps it; nothing changes for a plan that sets them per squad.
+    if (!_hadRow) then {
+        private _plt = [_squad] call FUNC(platoonOf);
+        if (_plt isNotEqualTo "") then {
+            {
+                if (!(_x isEqualType [])) then {continue};
+                if (toUpper (_x param [0, ""]) isEqualTo toUpper _plt) exitWith {
+                    _lrIdx = _x param [1, _lrIdx];
+                };
+            } forEach (missionNamespace getVariable ["ghostFR_radio_lrPlatoonChannel", []]);
+        };
+    };
 
     // SW handheld
     private _sw = call TFAR_fnc_activeSwRadio;
     if (!isNil "_sw" && {_sw isEqualType "" && _sw isNotEqualTo ""}) then {
-        { [_sw, _forEachIndex + 1, _x] call TFAR_fnc_setChannelFrequency; } forEach ghost_radio_tfarSrFreqs;
+        { [_sw, _forEachIndex + 1, _x] call TFAR_fnc_setChannelFrequency; } forEach ghostFR_radio_tfarSrFreqs;
         [_sw, _swIdx] call TFAR_fnc_setSwChannel;
         INFO_3("Radio","%1 SW radio (%2) tuned to net index %3",_player,_sw,_swIdx);
     };
@@ -70,7 +87,7 @@ if (EGVAR(patches,usesTFAR)) exitWith {
     if (call TFAR_fnc_haveLRRadio) then {
         private _lr = call TFAR_fnc_activeLrRadio;
         if (!isNil "_lr" && {_lr isEqualType "" && _lr isNotEqualTo ""}) then {
-            { [_lr, _forEachIndex + 1, _x] call TFAR_fnc_setChannelFrequency; } forEach ghost_radio_tfarLrFreqs;
+            { [_lr, _forEachIndex + 1, _x] call TFAR_fnc_setChannelFrequency; } forEach ghostFR_radio_tfarLrFreqs;
             [_lr, _lrIdx] call TFAR_fnc_setLrChannel;
             INFO_3("Radio","%1 LR radio (%2) tuned to net index %3",_player,_lr,_lrIdx);
         };

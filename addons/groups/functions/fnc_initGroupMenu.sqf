@@ -44,10 +44,21 @@
 
 disableSerialization;
 
+// THE UNIT'S ROLES MAY STILL BE ON THEIR WAY. On a mission whose roles live
+// in TAC//PAC's database this machine has none until the server's structure
+// arrives, and a tree drawn now would be squads full of nameless slots. Wait
+// for the boot gate once - then draw whatever there is, so a unit with no
+// roles at all is not locked out of the screen.
+if (!isNil "ghost_pac_fnc_whenReady" && {!(missionNamespace getVariable ["ghost_pac_ready", false])} && {count ([] call FUNC(roles)) isEqualTo 0} && {isNil QGVAR(waitedForPac)}) exitWith {
+    GVAR(waitedForPac) = true;
+    hintSilent "TAC//PAC - waiting for the unit's roles from the server ...";
+    [{[] call ghost_groups_fnc_initGroupMenu}, 60] call ghost_pac_fnc_whenReady;
+};
+
 private _display = createDialog ["YMF_groupMenu",true];
 private _tree = _display displayCtrl 1500;
 
-private _factionName = getText(missionConfigFile >> "Dynamic_Groups" >> "faction_name");
+private _factionName = ([] call FUNC(orbat)) # 3;
 (_display displayCtrl 1000) ctrlSetText toUpper format ["%1  ROLE SELECTION",_factionName];
 
 // Set by the style pass in the display's onLoad, which has already run by here.

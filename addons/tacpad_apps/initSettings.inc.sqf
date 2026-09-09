@@ -1,21 +1,5 @@
 // CBA Settings [ADDON: ghost_tacpad_apps]
 
-// WHO MAY TASK COMBAT SUPPORT - a messaging tag, resolved by the same
-// tagMatch rule that decides who a tag wakes: a squad name, HQ, AVIATION, a
-// callsign. Empty lets everyone task. Tags, not a role tree - the user's
-// design for TAC//SUPPORT.
-// EMPTY BY DEFAULT - everyone may task. The shipped "JFO" default gated the
-// whole app on a flag this mission never sets: isJFO appears nowhere in the
-// sqm, no slot description says JFO, so the app refused to open for anybody
-// and a day of "support is not working" was this one string. A mission that
-// wants the gate sets the tag; the addon does not presume one.
-[
-    QGVAR(supportTag), "EDITBOX",
-    ["Support tasking tag", "Audience tag that may use TAC//SUPPORT - JFO, HQ, AVIATION, a squad, a callsign. JFO matches the mission's isJFO customVariable. Empty: everyone."],
-    ["Ghosts of Battle", "Tacpad"],
-    "",
-    true
-] call CBA_fnc_addSetting;
 // One switch per element, which is the point: a player who wants the squad rail
 // and nothing else gets exactly that. All per-client - what is on somebody's
 // own map screen is theirs.
@@ -94,4 +78,12 @@
     ["Ghosts of Battle", "Tacpad"],
     true,
     false
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(supportTag), "EDITBOX",
+    ["Support tasking tag", "Audience tag that may use TAC//SUPPORT - JFO, HQ, AVIATION, a squad, a callsign. JFO matches the mission's isJFO customVariable. Empty: everyone."],
+    ["Ghosts of Battle", "Tacpad"],
+    "",
+    true
 ] call CBA_fnc_addSetting;

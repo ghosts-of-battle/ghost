@@ -9,7 +9,7 @@
  * is: the globals exist, at least one commander, and every commander
  * reporting startupComplete.
  *
- * Raises "ghost_adapter_ready" once.
+ * Raises "ghost_adapter_alive_ready" once.
  *
  * Arguments: None
  *

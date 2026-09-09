@@ -62,10 +62,10 @@ class RscADMPButton: RscButton {
     colorText[] = {0.90, 0.90, 0.88, 1};
     colorActive[] = {1, 1, 1, 1};
     colorBackground[] = {0.10, 0.10, 0.10, 1};
-    colorBackgroundActive[] = {0.85, 0.28, 0.20, 1};
+    colorBackgroundActive[] = {0.5, 0.5, 0.5, 0.30};
     colorBackgroundDisabled[] = {0.10, 0.10, 0.10, 1};
     colorDisabled[] = {0.55, 0.55, 0.53, 1};
-    colorFocused[] = {0.14, 0.14, 0.14, 1};
+    colorFocused[] = {0.5, 0.5, 0.5, 0.16};
     colorShadow[] = {0, 0, 0, 0};
     colorBorder[] = {0, 0, 0, 0};
     soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick", 0.06, 1};
@@ -104,7 +104,7 @@ class RscADMPCombo: RscCombo {
     colorText[] = {0.90, 0.90, 0.88, 1};
     colorBackground[] = {0.07, 0.07, 0.07, 1};
     colorSelect[] = {0, 0, 0, 1};
-    colorSelectBackground[] = {0.85, 0.28, 0.20, 1};
+    colorSelectBackground[] = {0.5, 0.5, 0.5, 0.35};
     colorScrollbar[] = {0.85, 0.28, 0.20, 1};
     colorDisabled[] = {0.55, 0.55, 0.53, 1};
     arrowEmpty = "\A3\ui_f\data\gui\rscCommon\rscCombo\arrow_combo_ca.paa";
@@ -130,8 +130,8 @@ class RscADMPListbox: RscListBox {
     colorBackground[] = {0.07, 0.07, 0.07, 1};
     colorSelect[] = {0.05, 0.05, 0.05, 1};
     colorSelect2[] = {0.05, 0.05, 0.05, 1};
-    colorSelectBackground[] = {0.85, 0.28, 0.20, 1};
-    colorSelectBackground2[] = {0.85, 0.28, 0.20, 1};
+    colorSelectBackground[] = {0.5, 0.5, 0.5, 0.35};
+    colorSelectBackground2[] = {0.5, 0.5, 0.5, 0.35};
     colorDisabled[] = {0.55, 0.55, 0.53, 1};
     period = 0;
     shadow = 0;
@@ -142,7 +142,7 @@ class RscADMPListbox: RscListBox {
 
     class ScrollBar {
         color[] = {0.55, 0.55, 0.53, 1};
-        colorActive[] = {0.85, 0.28, 0.20, 1};
+        colorActive[] = {1, 1, 1, 1};
         colorDisabled[] = {0.30, 0.30, 0.30, 1};
         thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
         arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
@@ -184,7 +184,7 @@ class RscADMPMapControl: RscMapControl {
 class RscADMPCheckbox: RscCheckBox {
     idc = -1;
     colorBackground[] = {0.07, 0.07, 0.07, 1};
-    colorFocused[] = {0.85, 0.28, 0.20, 1};
+    colorFocused[] = {0.5, 0.5, 0.5, 0.16};
     x = 0;
     y = 0;
     w = 0;

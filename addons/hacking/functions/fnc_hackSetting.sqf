@@ -26,6 +26,7 @@ private _defaults = createHashMapFromArray [
     [QGVAR(cfg_abandon_timeout), HACK_ABANDON_DEF],
     [QGVAR(cfg_local_picture_radius), HACK_PICTURE_DEF],
     [QGVAR(cfg_emitter_hack_response_chance), HACK_RESPONSE_DEF],
+    [QGVAR(cfg_package_share), HACK_PACKAGE_SHARE_DEF],
     [QGVAR(cfg_intel_lifetime), INTEL_LIFETIME_DEF],
     [QGVAR(cfg_intel_alpha), INTEL_ALPHA_DEF],
     [QGVAR(cfg_intel_fade), false],

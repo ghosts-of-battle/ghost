@@ -28,12 +28,15 @@ Parameters:
     _pos    : ARRAY  - where the uplink stands, AGL.
 
 Returns:
-    ARRAY - [_uplinkId, _sphereId], both "" on failure.
+    ARRAY - [_uplinkId, _sphereId, _uplinkObject]. The two ids are "" and the
+            object objNull on failure. The object is returned because a placed
+            Jammer Site module hangs its artillery reply on the emitter, and the
+            uplink is an emitter like any other.
 
 Author:
     Ghost
 ---------------------------------------------------------------------------- */
-if (!isServer) exitWith { ["", ""] };
+if (!isServer) exitWith { [ARR_3("","",objNull)] };
 
 params [["_side", sideUnknown, [sideUnknown]], ["_pos", [0,0,0], [[]]]];
 
@@ -48,7 +51,7 @@ params [["_side", sideUnknown, [sideUnknown]], ["_pos", [0,0,0], [[]]]];
 // last four hundred metres with no GPS and no self-icon, which is the fight the
 // whole system exists to create.
 ([_side, _pos, DOM_GPS, GVAR(gpsUplinkRadius)] call FUNC(spawnJammerSite)) params ["_upId", "_upObj"];
-if (_upId isEqualTo "") exitWith { ["", ""] };
+if (_upId isEqualTo "") exitWith { [ARR_3("","",objNull)] };
 
 // --- the sphere -------------------------------------------------------------
 // Rolled between the two radii rather than averaged: a 1 km field and a 2 km
@@ -89,4 +92,4 @@ INFO_3("GPS denial up: uplink %1 at %2, sphere r=%3",_upId,mapGridPosition _pos,
 // The drift is what moves it and what notices the uplink dying.
 [_sphereId] call FUNC(gpsDrift);
 
-[_upId, _sphereId]
+[_upId, _sphereId, _upObj]

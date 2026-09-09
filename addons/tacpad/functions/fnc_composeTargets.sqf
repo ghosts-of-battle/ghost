@@ -33,7 +33,7 @@ private _targets = [];
 // THE SAME NETS THE RAIL DRAWS, and for the same reason (user, 2026-09-03):
 // a man should not be offered a net he cannot read. This listed every named
 // box in the addon setting and then every squad in the task force; it asks
-// EFUNC(messaging,railNets) now, which is the mission's GHOST_Nets narrowed by
+// EFUNC(messaging,railNets) now, which is the mission's GHOSTFR_Nets narrowed by
 // his role, with his own squad on the end.
 //
 // A NET NAME IS NOT A BOX ID. His own squad is a G: box, everything the mission

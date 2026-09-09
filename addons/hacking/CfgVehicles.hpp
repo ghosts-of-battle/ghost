@@ -144,4 +144,74 @@ class CfgVehicles {
             };
         };
     };
+
+    class Logic;
+    class Module_F: Logic {
+        class AttributesBase {
+            class Edit;
+        };
+        class ModuleDescription;
+    };
+
+    // THE MISSION WRITES THE INTELLIGENCE. Six products used to ask ALiVE where
+    // its air defence, artillery, camps, logistics, radars and installations
+    // were and draw a shrinking circle round the answer - so what a hack told
+    // you was decided by whatever the simulation happened to contain, and a
+    // mission maker could not write a document, hand over a photograph, or
+    // decide that breaking into THIS terminal tells you about THAT dockyard.
+    //
+    // Now they can. The content is a class in the mission's own config under
+    // Ghost_IntelPackages; this module says which package sits on which device,
+    // and a hack yields a share of it - the share is a CBA setting, so the same
+    // package is three visits on one server and one on another.
+    //
+    // SYNCHRONISE IT TO SOMETHING, OR IT MAKES ITS OWN TERMINAL. Attached, that
+    // object carries the package and becomes hackable whatever it is - a laptop,
+    // a crate, a body. Attached to nothing, a data terminal appears where the
+    // module stands, which is the common case in Zeus.
+    class ghost_moduleIntelPackage: Module_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Ghost - Intel Package";
+        author = QAUTHOR;
+        category = "ghost_modules";
+        function = QUOTE(DFUNC(moduleIntelPackage));
+        functionPriority = 1;
+        isGlobal = 0;
+        isTriggerActivated = 0;
+        isDisposable = 0;
+        is3DEN = 0;
+        icon = "\a3\ui_f\data\map\markers\nato\b_installation.paa";
+
+        class Attributes: AttributesBase {
+            class package: Edit {
+                property = QGVAR(package);
+                displayName = "Package";
+                tooltip = "Class name of a package under Ghost_IntelPackages in the mission config. Checked when this is placed, so a typo is reported here rather than discovered by the player who hacks the terminal.";
+                typeName = "STRING";
+                defaultValue = "";
+                expression = QUOTE(_this setVariable [ARR_2('package',_value)]);
+            };
+            class terminal: Edit {
+                property = QGVAR(terminal);
+                displayName = "Terminal Class";
+                tooltip = "What to create when this module is synchronised to nothing. Ignored when it is attached to something. A class that does not exist falls back to the data terminal.";
+                typeName = "STRING";
+                defaultValue = "Land_DataTerminal_01_F";
+                expression = QUOTE(_this setVariable [ARR_2('terminal',_value)]);
+            };
+        };
+
+        class ModuleDescription: ModuleDescription {
+            description[] = {
+                "Puts an intel package on a device. Hacking that device hands over a share of it.",
+                "",
+                "Package - a class under Ghost_IntelPackages in the mission config",
+                "Terminal Class - what to build if this is synchronised to nothing",
+                "",
+                "How big a share one hack yields is a CBA setting - Ghosts of Battle, Hacking.",
+                "The package's own contents are mission config, not module attributes: see the wiki.",
+            };
+        };
+    };
 };

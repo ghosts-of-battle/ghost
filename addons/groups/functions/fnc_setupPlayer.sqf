@@ -4,16 +4,28 @@ params [
     ["_isRespawn",false,[true]]
 ];
 
-private _roleConfig = missionConfigFile >> "Dynamic_Roles" >> _desiredRole;
-private _defaultLoadout = getArray(_roleConfig >> "defaultLoadout");
+// THE ROLE, from wherever the unit keeps it - the database, the profile or
+// the mission's Dynamic_Roles - see FUNC(role). Arrays are COPIED before
+// anything appends to them: the record is shared with every reader.
+private _roleConfig = [_desiredRole] call FUNC(role);
+private _defaultLoadout = +(_roleConfig getOrDefault ["defaultLoadout", []]);
 
 if (_isRespawn) then {
-        // ONE SYSTEM DRESSES THE RESPAWN. If ALiVE's multispawn is restoring
-        // gear, this leaves the man alone - two dressers strip each other and
-        // the player arrives naked. Otherwise the saved loadout, and where
-        // nothing was ever saved (a fresh unit has no saved loadout on it),
+        // ONE SYSTEM DRESSES THE RESPAWN. If the respawn addon's own template
+        // is restoring gear, this leaves the man alone - two dressers strip each
+        // other and the player arrives naked. Otherwise the saved loadout, and
+        // where nothing was ever saved (a fresh unit has no saved loadout on it),
         // the ROLE's loadout - never the empty one loadLoadout answers with.
-        if (!(call EFUNC(adapter_alive,respawnGearManaged))) then {
+        //
+        // It used to ask the ALiVE adapter the same question. The question
+        // outlived ALiVE; the addon that does the restoring is the one that
+        // knows the answer now.
+        // Guarded the way the curator and ACRE calls below are: respawn is not
+        // in this addon's requiredAddons, and a build without it dresses the
+        // man here rather than not at all.
+        private _managed = !isNil QEFUNC(respawn,gearManaged) && {call EFUNC(respawn,gearManaged)};
+
+        if (!_managed) then {
             if (player call EFUNC(gear,hasSavedLoadout)) then {
                 [player, [player] call EFUNC(gear,loadLoadout)] call EFUNC(gear,applyLoadout);
             } else {
@@ -31,15 +43,15 @@ if (_isRespawn) then {
 } else {
     player setUnitLoadout _defaultLoadout;
     
-    private _weapons = getArray(_roleConfig >> "arsenalWeapons");
-    private _magazines = getArray(_roleConfig >> "arsenalMagazines");
-    private _items = getArray(_roleConfig >> "arsenalItems");
-    private _backpacks = getArray(_roleConfig >> "arsenalBackpacks");
+    private _weapons = +(_roleConfig getOrDefault ["arsenalWeapons", []]);
+    private _magazines = +(_roleConfig getOrDefault ["arsenalMagazines", []]);
+    private _items = +(_roleConfig getOrDefault ["arsenalItems", []]);
+    private _backpacks = +(_roleConfig getOrDefault ["arsenalBackpacks", []]);
 
     //merge the shared Common_Arsenal (config\arsenal) plus the role's group arsenal
     //(groupArsenal property, e.g. "Arsenal_Reaper") - any array named items* counts as items
     private _arsenalSources = [missionConfigFile >> "Common_Arsenal"];
-    private _groupArsenal = getText(_roleConfig >> "groupArsenal");
+    private _groupArsenal = _roleConfig getOrDefault ["groupArsenal", ""];
     if (_groupArsenal isNotEqualTo "" && {isClass (missionConfigFile >> _groupArsenal)}) then {
         _arsenalSources pushBack (missionConfigFile >> _groupArsenal);
     };
@@ -55,14 +67,92 @@ if (_isRespawn) then {
         } forEach configProperties [_x, "isArray _x", false];
     } forEach _arsenalSources;
 
+    // THE DATABASE ADDS TO THE MISSION'S ARSENAL, it does not replace it - so a
+    // mission that ships config\arsenal keeps working and one that ships none
+    // gets everything from <unit>.arsenal. The common lists first, then the
+    // variant the role's groupArsenal names.
+    if (!isNil "ghost_pac_fnc_cfgLists") then {
+        private _fromDb = ["arsenal"] call ghost_pac_fnc_cfgLists;
+        private _variants = ((missionNamespace getVariable ["ghost_pac_structure", createHashMap])
+            getOrDefault ["arsenal", createHashMap]) getOrDefault ["variants", createHashMap];
+        // FOUR LAYERS, NARROWEST LAST: common, the platoon's, the squad's,
+        // then the role's own variant. The platoon and squad documents are
+        // found by DERIVING their name from the ids - plt_<platoon> and
+        // sqd_<squad>, upper case with anything else an underscore - so
+        // adding one is creating a document and nothing else. The web manager
+        // computes the same name with the same rule.
+        private _fnc_slug = {
+            params ["_s"];
+            // Built as an array and joined once: concatenating in the loop
+            // reallocates the string on every character.
+            private _chars = [];
+            {
+                // 0-9, A-Z survive; everything else becomes an underscore.
+                private _ok = (_x >= 48 && _x <= 57) || (_x >= 65 && _x <= 90);
+                _chars pushBack ([95, _x] select _ok);
+            } forEach (toArray toUpper _s);
+            private _out = toString _chars;
+            // No leading or trailing underscores - "1-1 SQD " must not become
+            // a name that differs from the one the website wrote.
+            while {_out select [0, 1] isEqualTo "_"} do {_out = _out select [1]};
+            while {count _out > 0 && {_out select [count _out - 1, 1] isEqualTo "_"}} do {
+                _out = _out select [0, count _out - 1];
+            };
+            _out
+        };
+
+        private _pick = [_fromDb];
+
+        // The squad is the player's group name; the platoon is whichever one
+        // lists that squad. Both may be absent - a man outside the ORBAT just
+        // gets the common arsenal.
+        private _squad = toUpper groupId (group player);
+        if (_squad isNotEqualTo "") then {
+            private _sv = _variants getOrDefault ["sqd_" + ([_squad] call _fnc_slug), createHashMap];
+
+            private _pltId = "";
+            {
+                _x params ["_pid", "", "", "", ["_squads", []]];
+                if (_squads findIf {toUpper _x isEqualTo _squad} > -1) exitWith {_pltId = _pid};
+            } forEach ((missionNamespace getVariable ["ghost_pac_structure", createHashMap])
+                getOrDefault ["orbat", createHashMap] getOrDefault ["platoons", []]);
+
+            if (_pltId isNotEqualTo "") then {
+                private _pv = _variants getOrDefault ["plt_" + ([_pltId] call _fnc_slug), createHashMap];
+                if (count _pv > 0) then {_pick pushBack _pv};
+            };
+            if (count _sv > 0) then {_pick pushBack _sv};
+        };
+
+        if (_groupArsenal isNotEqualTo "" && {_variants isEqualType createHashMap}) then {
+            private _v = _variants getOrDefault [_groupArsenal, createHashMap];
+            if (count _v > 0) then {_pick pushBack _v};
+        };
+        {
+            private _lists = _x;
+            {
+                private _name = toLower _x;
+                private _vals = _lists get _x;
+                if (_vals isEqualType []) then {
+                    switch (true) do {
+                        case (_name isEqualTo "weapons"): {_weapons append _vals};
+                        case (_name isEqualTo "magazines"): {_magazines append _vals};
+                        case (_name isEqualTo "backpacks"): {_backpacks append _vals};
+                        case (_name select [0,5] isEqualTo "items"): {_items append _vals};
+                    };
+                };
+            } forEach (keys _lists);
+        } forEach _pick;
+    };
+
     [player,true,false] call ace_arsenal_fnc_removeVirtualItems;
     {
         [player,_x,false] call ace_arsenal_fnc_addVirtualItems;
     } forEach [_weapons,_magazines,_items,_backpacks];
-    private _roleName = getText(_roleConfig >> "name");
+    private _roleName = _roleConfig getOrDefault ["name", _desiredRole];
     [_roleName,_defaultLoadout] call ace_arsenal_fnc_addDefaultLoadout;
 
-    private _roleTraits = getArray(_roleConfig >> "traits");
+    private _roleTraits = _roleConfig getOrDefault ["traits", []];
     {
         _x params ["_trait","_value"];
 
@@ -83,13 +173,23 @@ if (_isRespawn) then {
         };
     } forEach (getAllUnitTraits player);
 
+    // PAC OWNS THE SKILLS. Every trait or variable a PAC skill can set is
+    // skipped here - medic, engineer, EOD, isLeader, isJFO, whatever the
+    // unit's skills declare - and PAC puts them on after this (the hook at
+    // the end). Everything else the role carries - tile access, nets, DRA
+    // flags - is not a skill and stays the role's. Without the pac addon
+    // the role applies the lot, as before.
+    private _pacOwned = if (!isNil "ghost_pac_fnc_managedNames") then {[] call ghost_pac_fnc_managedNames} else {[]};
+
     {
         _x params ["_trait","_value",["_custom","false"]];
+        if ((toLower _trait) in _pacOwned) then {continue};
         if (_value in ["true","false"]) then {_value = call compile _value};
         player setUnitTrait [_trait,_value,call compile _custom];
     } forEach _roleTraits;
 
-    private _customVariables = getArray(_roleConfig >> "customVariables");
+    private _customVariables = _roleConfig getOrDefault ["customVariables", []];
+    _customVariables = _customVariables select {!((toLower (_x # 0)) in _pacOwned)};
     {
         player setVariable [_x,nil,true];
     } forEach (missionNamespace getVariable ["YMF_myCustomVariables",[]]);
@@ -115,6 +215,12 @@ if (_isRespawn) then {
     /* rank stuff ------------------------------------------------------------------------------------------------------ */
     [player, 'BIS'] call EFUNC(players,setRank);
 
+    // PAC goes on after the role, not under it: the role's traits and rank are
+    // the defaults, and a PAC assignment (skills and rank) is what the unit actually carries. Guarded, because the
+    // pac addon is optional.
+    if (!isNil "ghost_pac_fnc_applyOnClient") then {[] call ghost_pac_fnc_applyOnClient};
+    if (!isNil "ghost_pac_fnc_leaderNotice") then {[_isRespawn] call ghost_pac_fnc_leaderNotice};
+
     /* Name Stuff ------------------------------------------------------------------------------------------------------- */
     call (missionNamespace getVariable ["ghost_w28fixes_fnc_player_set_name", {}]);
 
@@ -128,7 +234,7 @@ if (_isRespawn) then {
 //looking at its previous group when the tuning runs - worst case for the first player into an empty
 //squad, whose group is built from scratch. Wait for the new name to replicate before reading it,
 //with a wall-clock deadline so anyone outside the configured squads still falls back to the defaults.
-private _squadNames = (getArray (missionConfigFile >> "Dynamic_Groups" >> "group_setup")) apply {toUpper (_x select 0)};
+private _squadNames = (([] call FUNC(orbat)) # 0) apply {toUpper (_x select 0)};
 private _deadline = diag_tickTime + 10;
 
 if (EGVAR(patches,usesACRE)) then {
@@ -140,7 +246,7 @@ if (EGVAR(patches,usesACRE)) then {
     }, {
         INFO_1("GearRadio","Setting up ACRE radio channels for %1...",player);
         [player] call EFUNC(players,setRadioChannel);
-        [ghost_radio_acreActiveRadio] call EFUNC(players,setActiveRadio);
+        [ghostFR_radio_acreActiveRadio] call EFUNC(players,setActiveRadio);
     }, [_squadNames,_deadline]] call CBA_fnc_waitUntilAndExecute;
 };
 
@@ -154,6 +260,6 @@ if (EGVAR(patches,usesTFAR)) then {
     }, {
         INFO_1("GearRadio","Setting up TFAR radio channels for %1...",player);
         [player] call EFUNC(players,setRadioChannel);
-        [ghost_radio_tfarActiveRadio] call EFUNC(players,setActiveRadio);
+        [ghostFR_radio_tfarActiveRadio] call EFUNC(players,setActiveRadio);
     }, [_squadNames,_deadline]] call CBA_fnc_waitUntilAndExecute;
 };

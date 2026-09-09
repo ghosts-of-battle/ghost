@@ -5,12 +5,16 @@
 // it takes - each leg judged by ACRE's own propagation model, so terrain and
 // antennas still count. Direct is always preferred when it is the stronger
 // link; with no relay in reach the result is exactly ACRE's.
+//
+// OFF BY DEFAULT (user, 2026-09-05): a unit switches it on knowing what it
+// changes. Off, the signal function still runs - ACRE's own point-to-point
+// result, scaled by the jam level - so jamming is unaffected either way.
 
 [
     QGVAR(enabled), "CHECKBOX",
-    ["Enable mesh relaying", "Friendly radios on the same frequency relay transmissions that cannot reach a receiver directly. Off returns ACRE's stock point-to-point signal (still scaled by jamming)."],
+    ["Enable mesh relaying", "OFF by default. On: friendly manpacks and vehicle racks on the same frequency relay transmissions that cannot reach a receiver directly. Off: ACRE's stock point-to-point signal, still scaled by jamming."],
     ["Ghosts of Battle", "Radio Mesh"],
-    true,
+    false,
     true
 ] call CBA_fnc_addSetting;
 

@@ -42,6 +42,21 @@ private _uavSkill = cbChecked _uav_checkbox;
 private _leadSkill = cbChecked _lead_checkbox;
 
 
+// SESSION ONLY. With TAC//PAC loaded these go on as temporary effects that
+// PAC applies over the player's permanent skills until they respawn or
+// rejoin; only what is set in the PAC page is permanent. Without PAC the
+// variables below are all there is, as before.
+private _temp = [format ["medic:%1", _medicSkill], format ["engineer:%1", _engineerSkill], format ["eod:%1", [0, 1] select _eodSkill]];
+if (_draSkill) then {_temp pushBack "var:draWhitelisted=true"};
+if (_isrSkill) then {_temp pushBack "trait:isISR"};
+if (_jfoSkill) then {_temp pushBack "trait:isJFO"};
+if (_uavSkill) then {_temp pushBack "trait:UAVHacker"};
+if (_leadSkill) then {_temp pushBack "trait:isLeader"};
+_player setVariable ["ghost_pac_tempEffects", _temp, true];
+if (!isNil "ghost_pac_fnc_applySkills") then {
+    [_player, "temp"] remoteExecCall ["ghost_pac_fnc_applyTemp", _player];
+};
+
 _player setVariable ["ace_medical_medicClass", _medicSkill, true];
 _player setVariable ["ACE_IsEngineer", _engineerSkill, true];
 _player setVariable ["ACE_isEOD", _eodSkill, true];
@@ -59,5 +74,5 @@ _player setVariable ["isLeader", _leadSkill, true];
 [_player, ["UAVHacker", _uavSkill]] remoteExecCall ["setUnitTrait", _player];
 
 
-["Admin Panel", format ["Applied skills to %1!", name _player], [0.4, 0.702, 0.4, 1]] call EFUNC(notify,notify);
+["Admin Panel", format ["Applied skills to %1%2", name _player, [" (session only - permanent skills are set in TAC//PAC)", "!"] select (isNil "ghost_pac_fnc_applySkills")], [0.4, 0.702, 0.4, 1]] call EFUNC(notify,notify);
 playSound "3DEN_notificationDefault";

@@ -75,11 +75,12 @@ private _gone = 0;
     GVAR(patrols) set [_key, _kept];
     _gone = _gone + _took;
 
-    // WHAT THIS SIDE JUST GAVE BACK, for the planner to spend this tick. Set
-    // rather than added: a credit is worth one tick, and one that piled up
-    // across a quiet hour would empty the whole ceiling into the first
-    // objective somebody walked past.
-    GVAR(standDownCredit) set [_key, _took];
+    // NO CREDIT TO HAND BACK ANY MORE. Replacement used to be a drip against a
+    // shared per-side ceiling, and a stand-down had to return what it retired or
+    // ground emptied by a section moving on would refill at one airframe a
+    // minute. A patrol is filled to its own module's number every tick now, so
+    // ground that empties refills as soon as somebody is near it again and
+    // there is nothing to keep score of.
 } forEach (keys GVAR(patrols));
 
 _gone

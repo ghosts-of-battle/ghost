@@ -4,9 +4,16 @@
  * Reads the module and arms jamming. PLACING THE MODULE IS THE ENABLE - with no
  * module this system does nothing at all.
  *
- * The attributes are operation values only: how many, how often, how likely.
- * WHERE and WHO are never asked for; they come from ALiVE's commanders, their
- * TAORs and their objectives.
+ * THIS MODULE IS THE GLOBAL TUNING. It sets what is true of every jamming field
+ * on the map - burn-through, the rolled radius bounds, the GPS domain.
+ *
+ * WHERE a jammer stands has TWO answers here, and they add up rather than
+ * replace each other. A Ghost - Jammer Site module is one emitter placed on the
+ * spot by a mission maker or a Zeus, and it works whether or not ALiVE is
+ * running. On top of that, when the adapter is loaded and its commanders are
+ * up, FUNC(spawnObjectiveJammers) spreads emitters over a share of each
+ * commander's objectives - the three attributes below are that half's tuning
+ * and do nothing without ALiVE.
  *
  * Arguments:
  * 0: The module logic <OBJECT>
@@ -32,6 +39,9 @@ GVAR(moduleUp) = true;
 
 GVAR(largeRadius) = _logic getVariable ["largeRadius", 3000];
 GVAR(smallRadius) = _logic getVariable ["smallRadius", 1000];
+// ALiVE-only tuning: what share of a commander's objectives get an emitter, and
+// the ceiling per side. Read unconditionally so the values exist for
+// FUNC(spawnObjectiveJammers) to find; without ALiVE nothing reads them.
 GVAR(objectiveShare) = _logic getVariable ["objectiveShare", 30];
 GVAR(maxPerSide) = _logic getVariable ["maxPerSide", 8];
 
@@ -67,12 +77,25 @@ GVAR(jamBurnRef) = _logic getVariable ["burnRef", 500];
 missionNamespace setVariable [
     QGVAR(jamBurnthrough), [_logic getVariable ["burnThrough", true]] call _bool, true];
 
-// Nothing starts until the adapter says ALiVE is up, because every WHERE this
-// system uses is read from it. Both paths are covered: a module is normally
-// placed long before ALiVE finishes initialising, but one armed afterwards
-// would otherwise wait forever on an event that has already fired.
-if (EGVAR(adapter_alive,ready)) exitWith {
-    [] call FUNC(start);
-};
+// THE PRUNE STARTS AT ONCE, and does not wait for anything. Hand-placed Jammer
+// Site modules arm themselves the moment they are placed, so the retire-a-dead-
+// emitter pass has to be running whether or not ALiVE ever turns up. ghost held
+// this behind the adapter's ready event, which here would mean a mission with no
+// ALiVE never pruning anything.
+[] call FUNC(start);
 
-[QEGVAR(adapter_alive,ready), { [] call FUNC(start) }] call CBA_fnc_addEventHandler;
+// THE ALiVE HALF, IF THERE IS ONE. Objective emitters need commanders and their
+// objectives, so they wait for the adapter. Both paths are covered: a module is
+// normally placed long before ALiVE finishes initialising, but one armed
+// afterwards would otherwise wait forever on an event that has already fired.
+if (!isNil QEFUNC(adapter_alive,objectivesFor)) then {
+    if (EGVAR(adapter_alive,ready)) then {
+        private _n = [] call FUNC(spawnObjectiveJammers);
+        INFO_1("%1 objective jammer site(s) queued",_n);
+    } else {
+        [QEGVAR(adapter_alive,ready), {
+            private _n = [] call FUNC(spawnObjectiveJammers);
+            INFO_1("%1 objective jammer site(s) queued",_n);
+        }] call CBA_fnc_addEventHandler;
+    };
+};

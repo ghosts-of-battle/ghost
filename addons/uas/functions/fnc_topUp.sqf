@@ -22,7 +22,8 @@
  * Public: No
  */
 
-params [["_side", sideUnknown, [sideUnknown]], ["_faction", "", [""]], ["_pos", [], [[]]]];
+params [["_side", sideUnknown, [sideUnknown]], ["_faction", "", [""]], ["_pos", [], [[]]],
+        ["_class", "", [""]], ["_zone", -1, [0]]];
 
 if (_side isEqualTo sideUnknown || {_pos isEqualTo []}) exitWith {false};
 
@@ -36,13 +37,13 @@ if !([_pos] call FUNC(playerNear)) exitWith {false};
 // from when a patrol was meant to become a profile; nothing here profiles
 // anything now, and a drone flies the same with ALiVE absent.
 
-// The module's per-side airframe list beats the faction scan - set when
-// the borrowed-airframe fallback reads as the wrong side in the field.
-private _override = (missionNamespace getVariable [QGVAR(uavOverride), createHashMap]) getOrDefault [str _side, []];
-private _cls = if (_override isNotEqualTo []) then {
-    selectRandom _override
-} else {
-    [_faction, _side] call FUNC(factionUav)
+// THE ZONE'S OWN AIRFRAME FIRST. One module is one patrol and the class is one
+// of its options, so a mission maker who wants a Darter over this valley and a
+// Sentinel over the next says so on each module. Empty falls back to the
+// faction scan, which is the ordinary case.
+private _cls = _class;
+if (_cls isEqualTo "" || {!isClass (configFile >> "CfgVehicles" >> _cls)}) then {
+    _cls = [_faction, _side] call FUNC(factionUav);
 };
 if (_cls isEqualTo "") exitWith {false};
 
@@ -55,30 +56,41 @@ _at set [2, _alt];
 // airframe up to 1.5 km PAST a boundary objective - which is where the
 // "west drones over the east TAOR" sightings kept coming from. Re-rolled
 // until it lands inside; the objective itself is the known-inside fallback.
-if (GVAR(patrolOver) == 1) then {
-    ([_side] call ghost_adapter_alive_fnc_taorFor) params [["_taor", []]];
-    if (_taor isNotEqualTo []) then {
-        private _try = 0;
-        while {_try < 8 && {(_taor findIf {_at inArea _x}) == -1}} do {
-            _at = _pos getPos [500 + random 1000, random 360];
-            _at set [2, _alt];
-            _try = _try + 1;
-        };
-        if ((_taor findIf {_at inArea _x}) == -1) then {
-            _at = +_pos;
-            _at set [2, _alt];
-        };
+// THE SPAWN STAYS INSIDE THE ZONE. The stand-off position is rolled up to
+// 1.5 km from the orbit centre, which on a small zone puts the airframe outside
+// the ground it was drawn for - the same overshoot that used to put west drones
+// over the east TAOR. Re-rolled until it lands inside; the centre itself is the
+// known-inside fallback.
+private _zones = [_side] call FUNC(zonesFor);
+private _home = _zones select {(_pos distance2D (_x # 1)) <= (_x # 2)};
+
+if (_home isNotEqualTo []) then {
+    (_home # 0) params ["", "_centre", "_radius"];
+    private _try = 0;
+    while {_try < 8 && {(_at distance2D _centre) > _radius}} do {
+        _at = _pos getPos [200 + random (_radius max 200), random 360];
+        _at set [2, _alt];
+        _try = _try + 1;
     };
+    if ((_at distance2D _centre) > _radius) then { _at = +_pos; _at set [2, _alt] };
 };
 
-// The common pre-spawn gate, hard: in overwatch mode nothing of this
-// side's takes off outside its own ground, whatever the clamp above
-// produced. Enemy-ground mode crosses the line by design and is not
-// gated.
-if (GVAR(patrolOver) == 1 && {!([_side, _at, "uas patrol"] call EFUNC(common,taorGate))}) exitWith {false};
+// THE ZONE IS THE GATE, and it is the clamp above. This asked
+// EFUNC(common,taorGate) whether the spawn was on the side's own ground, in
+// "overwatch mode" - GVAR(patrolOver), a module attribute that no longer
+// exists, so the test would have compared nil to 1 and thrown on every launch.
+// A patrol only exists because somebody drew a zone for it, and the clamp keeps
+// the airframe inside that zone; there is no second ground to check against.
 
 private _veh = createVehicle [_cls, _at, [], 0, "FLY"];
 if (isNull _veh) exitWith {false};
+
+// WHICH ZONE PUT IT UP. The ledger is per side and stays per side, but a patrol
+// belongs to one module - FUNC(planPatrols) counts what a zone already has by
+// this tag, and FUNC(spotSweep) reads the zone's artillery option back through
+// it. Stamped here rather than beside the ledger write, which is inside a
+// nested scope the argument does not reach.
+_veh setVariable [QGVAR(zone), _zone, true];
 _veh flyInHeight _alt;
 
 private _grp = createGroup [_side, true];
@@ -153,34 +165,18 @@ createVehicleCrew _veh;
         deleteGroup _grp;
     };
 
-    // THE PROFILER IS WHAT WAS EATING THEM. THE RAINING-DRONES ROOT CAUSE.
+    // A PATROL IS NEVER OFFERED TO ALiVE'S PROFILER. A drone is flown live and
+    // tracked by object, bounded by the ceiling. ALiVE's own opt-out is asked
+    // for through the adapter - the variable is ALiVE's name and this addon is
+    // not allowed to know it. The airframe, its crew and the crew's group all
+    // get marked, so any OTHER ALiVE pass over the map leaves the patrol alone.
     //
-    // This used to hand every fresh airframe to ALiVE's runtime profiler and
-    // treat an empty answer as "cannot be profiled, fly it live". Reading
-    // what that function actually does
-    // (sys_profile\fnc_createProfilesFromUnitsRuntime.sqf:293-307): unless
-    // EVERY unit in the group is blacklisted, it does
-    //
-    //     deleteVehicle (vehicle _x); deleteVehicle _x; DeleteGroupRemote
-    //
-    // to the things it was handed. That is how virtualisation works - the
-    // profile replaces the object. The old comment here was half right:
-    // vanilla UAV crew (B_/O_/I_UAV_AI) IS blacklisted, so vanilla patrols
-    // survived. A MODDED airframe's crew class is not on that list, so the
-    // whole group failed the blacklist test and ALiVE deleted the drone
-    // seconds after it spawned - which is why the ledger filled with
-    // <NULL-object>, why nothing logged a kill, and why the fleet came back
-    // every tick to be deleted again.
-    //
-    // So it is never offered. A drone is flown live and tracked by object,
-    // bounded by the ceiling - which is what the code did with the empty
-    // answer anyway, minus the deletion.
-    //
-    // ALiVE's own opt-out, asked for through the adapter - the variable is
-    // ALiVE's name and this addon is not allowed to know it. The airframe, its
-    // crew and the crew's group all get marked, so any OTHER ALiVE pass over
-    // the map leaves the patrol alone too.
-    [_veh] call EFUNC(adapter_alive,profileIgnore);
+    // Guarded, unlike ghost's copy: uas does not require the adapter, so with
+    // ALiVE absent this is simply not asked and nothing else changes.
+    if (!isNil QEFUNC(adapter_alive,profileIgnore)) then {
+        [_veh] call EFUNC(adapter_alive,profileIgnore);
+    };
+
 
     private _list = GVAR(patrols) getOrDefault [str _side, []];
 

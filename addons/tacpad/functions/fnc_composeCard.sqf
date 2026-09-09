@@ -90,7 +90,15 @@ private _fnc_shown = {
             date params ["", "", "", "_hh", "_mm"];
             format ["%1%2", [_hh, 2] call CBA_fnc_formatNumber, [_mm, 2] call CBA_fnc_formatNumber]
         };
-        default {""};
+        default {
+            // "pac:section.field" - a line of the current OPORD, when the pac
+            // addon is loaded. METT-TC pre-fills its M, E and C from it.
+            private _auto = _field getOrDefault ["autoFill", "none"];
+            if ((_auto select [0, 4]) isEqualTo "pac:" && {!isNil "ghost_pac_fnc_opordField"}) exitWith {
+                [_auto select [4]] call ghost_pac_fnc_opordField
+            };
+            ""
+        };
     }
 };
 

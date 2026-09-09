@@ -28,4 +28,3 @@ PREP(motorpool_tab);
 PREP(reset);
 PREP(setRadio);
 PREP(setupPylonCategories);
-PREP(vehicleSpawner);

@@ -75,10 +75,10 @@ class RscGhostButton: RscButton {
     colorText[] = {0.90, 0.90, 0.88, 1};
     colorActive[] = {1, 1, 1, 1};
     colorBackground[] = {0.10, 0.10, 0.10, 1};
-    colorBackgroundActive[] = {0.85, 0.28, 0.20, 1};
+    colorBackgroundActive[] = {0.5, 0.5, 0.5, 0.30};
     colorBackgroundDisabled[] = {0.10, 0.10, 0.10, 1};
     colorDisabled[] = {0.42, 0.42, 0.41, 1};
-    colorFocused[] = {0.14, 0.14, 0.14, 1};
+    colorFocused[] = {0.5, 0.5, 0.5, 0.16};
     colorShadow[] = {0, 0, 0, 0};
     colorBorder[] = {0, 0, 0, 0};
     soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick", 0.06, 1};
@@ -91,32 +91,48 @@ class RscGhostButton: RscButton {
     h = 0;
 };
 
-// SELECTION IS THE TEXT, NOT A BLOCK. The selected row is written in the accent
-// on the same ground as every other row - no fill behind it.
+// SELECTION CARRIES NO HUE, and that is the fix rather than a compromise.
 //
-// It was a solid accent bar with the ground colour written on it, which is how
-// the suite marks a selected row in a dense table. On this screen it is wrong:
-// the rows carry a picture and two colours of their own - dim for taken, accent
-// for yours - and a block of solid colour under one of them buries all of that
-// under the one row you are actually looking at.
+// It was the light scheme's red - as accent-coloured text on no fill, which is
+// how the suite marks a selected row. The trouble is that these six colours are
+// config-only: Arma has no runtime setter for a tree's selection colours, so
+// unlike everything else on this screen they cannot follow a scheme change. A
+// player on Olive got a red selection, one on Sand got a red selection, and one
+// on a custom blue accent got red in the middle of a blue screen. A colour that
+// cannot follow the theme must not claim to be part of it.
 //
-// THESE FOUR ARE CONFIG-ONLY. Arma has no runtime setter for a tree's selection
-// colours, so unlike everything else on this screen they do not follow a scheme
-// change - a player on Olive or Sand gets the red selection. It is one row of
-// one control, and the alternative is repainting the whole tree by hand on every
-// selection change.
+// So selection is a lift of the tree's own ink: the row brightens, the text
+// stays the colour it already was, and nothing contradicts the accent. It is a
+// quieter cue than a coloured row and that is the trade - quiet on every scheme
+// beats loud and wrong on most of them. It also leaves the row's own two
+// colours alone, which was the original objection to a solid block: the rows
+// carry a picture and a state of their own, dim for taken and accent for yours,
+// and a filled bar buries all of that under whichever row you happen to be on.
+//
+// PUTTING THE ACCENT BACK would mean tinting the selected row's icon at runtime,
+// the one part of a row a script can still colour. It needs the row's base icon
+// colour to restore afterwards - ink, dimmed ink, or accent for your own slot,
+// all decided in FUNC(fillRoleTree) - and reading that back off the row is not
+// something the SQF checker will parse. It wants fillRoleTree to record what it
+// painted rather than this to guess.
+//
+// THE TREE'S GROUND IS DARK ON EVERY SCHEME (colorBackground below), so an ink
+// lift is the right direction on all six of them and on a custom one.
 class RscGhostTree: RscTree {
     idc = -1;
     font = "RobotoCondensed";
     sizeEx = "0.85 * (0.025 * safezoneH)";
     colorText[] = {0.90, 0.90, 0.88, 1};
     colorBackground[] = {0.07, 0.07, 0.07, 1};
-    colorSelect[] = {0.85, 0.28, 0.20, 1};
-    colorSelectBackground[] = {0, 0, 0, 0};
-    colorMarked[] = {0.85, 0.28, 0.20, 1};
-    colorMarkedSelected[] = {0.85, 0.28, 0.20, 1};
-    colorMarkedBackground[] = {0, 0, 0, 0};
-    colorMarkedSelectedBackground[] = {0, 0, 0, 0};
+    // focused: the row's own ink, on a lift of it
+    colorSelect[] = {0.90, 0.90, 0.88, 1};
+    colorSelectBackground[] = {0.5, 0.5, 0.5, 0.35};
+    // not focused: the same, quieter, so the tree does not shout while the
+    // card beside it has the keyboard
+    colorMarked[] = {0.90, 0.90, 0.88, 1};
+    colorMarkedSelected[] = {0.90, 0.90, 0.88, 1};
+    colorMarkedBackground[] = {0.90, 0.90, 0.88, 0.07};
+    colorMarkedSelectedBackground[] = {0.90, 0.90, 0.88, 0.07};
     colorBorder[] = {0, 0, 0, 0};
     shadow = 0;
     multiselectEnabled = 0;

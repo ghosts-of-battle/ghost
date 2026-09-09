@@ -15,7 +15,9 @@
  * Public: No
  */
 
-if (isNil "ghost_adapter_alive_fnc_commanders") exitWith {};
+// NO ZONES, NO CACHES. A cache is supply for the drones flying over a zone;
+// with nowhere being patrolled there is nothing for it to supply.
+if ((missionNamespace getVariable [QGVAR(zones), []]) isEqualTo []) exitWith {};
 
 private _want = round GVAR(cachesPerSide);
 if (_want <= 0) exitWith {};
@@ -31,42 +33,62 @@ private _class = ["Land_PaperBox_01_small_stacked_F", "Box_Syndicate_Ammo_F"] se
 // readers filter dead ones themselves.
 if (isNil QGVAR(caches)) then { GVAR(caches) = [] };
 
+// EVERY SIDE THAT HAS ZONES, once each. The commander list this walked is gone
+// and a side with three zones is still one side with one cache allowance.
+private _sides = [];
+{ _sides pushBackUnique (_x # 0) } forEach (missionNamespace getVariable [QGVAR(zones), []]);
+
 {
-    _x params ["_side"];
+    private _side = _x;
 
-    ([_side] call ghost_adapter_alive_fnc_taorFor) params ["_taor", "_black"];
-    if (_taor isEqualTo []) then {
-        INFO_1("side %1: no TAOR - caches would land anywhere, so none placed",_side);
-        continue;
-    };
+    // INSIDE THE GROUND BEING PATROLLED, spread across it. Caches used to be
+    // scattered over a side's whole ALiVE TAOR and kept clear of its objectives
+    // - unmarked, unhinted, and the intel economy's job to find. A zone is that
+    // ground now, and FUNC(findSite) already takes a ring rather than markers,
+    // so the zone's own centre and radius are the search area.
+    private _zones = ([_side] call FUNC(zonesFor));
+    if (_zones isEqualTo []) then {continue};
 
-    // Somewhere on its own ground, but not on top of its own objectives.
-    private _objs = ([_side] call ghost_adapter_alive_fnc_objectivesFor) apply {_x select 1};
-
-    private _spots = [_taor, _want, createHashMapFromArray [
-        ["footprint", 3],
-        ["clearRadius", 4],
-        ["separation", 600],
-        ["avoid", _objs],
-        ["avoidRadius", 250],
-        ["blacklist", _black],
-        ["nearRoad", 300]
-    ]] call EFUNC(common,findSite);
+    // The side's allowance split over its zones, at least one each until it runs
+    // out - three caches and four zones is three zones with a cache, not four
+    // zones with none.
+    private _left = _want;
+    private _per = (ceil (_want / count _zones)) max 1;
+    private _placed = 0;
 
     {
-        private _cache = createVehicle [_class, _x, [], 0, "CAN_COLLIDE"];
-        _cache setDir random 360;
-        _cache setVariable [QGVAR(cacheSide), _side, true];
-        _cache addEventHandler ["Killed", {
-            params ["_cache"];
-            [_cache] call FUNC(cacheDown);
-        }];
-        GVAR(caches) pushBack _cache;
-        // The commander's cache, not a prop - see antiship for the reason.
-        if (!isNil "ghost_adapter_alive_fnc_registerSite") then {
-            [_side, format ["cache_%1", mapGridPosition _x], _x, 100, 70] call ghost_adapter_alive_fnc_registerSite;
-        };
-    } forEach _spots;
+        if (_left <= 0) exitWith {};
+        _x params ["", "_centre", "_radius"];
 
-    INFO_2("side %1: %2 cache(s)",_side,count _spots);
-} forEach (call ghost_adapter_alive_fnc_commanders);
+        private _spots = [[], _per min _left, createHashMapFromArray [
+            ["centre", _centre],
+            ["maxRange", _radius],
+            ["footprint", 3],
+            ["clearRadius", 4],
+            ["separation", 600],
+            ["nearRoad", 300]
+        ]] call EFUNC(common,findSite);
+
+        {
+            private _cache = createVehicle [_class, _x, [], 0, "CAN_COLLIDE"];
+            _cache setDir random 360;
+            _cache setVariable [QGVAR(cacheSide), _side, true];
+            _cache addEventHandler ["Killed", {
+                params ["_cache"];
+                [_cache] call FUNC(cacheDown);
+            }];
+            GVAR(caches) pushBack _cache;
+            // THE COMMANDER'S CACHE, NOT A PROP. Registered as an objective it
+            // gets garrisoned and retaken - see antiship for the same reasoning.
+            // Guarded; without ALiVE it is just a cache.
+            if (!isNil QEFUNC(adapter_alive,registerSite)) then {
+                [_side, format ["cache_%1", mapGridPosition _x], _x, 100, 70] call EFUNC(adapter_alive,registerSite);
+            };
+        } forEach _spots;
+
+        _left = _left - count _spots;
+        _placed = _placed + count _spots;
+    } forEach _zones;
+
+    INFO_2("side %1: %2 cache(s)",_side,_placed);
+} forEach _sides;

@@ -30,18 +30,12 @@ if (isServer) then {
     // exist, how long a thread may idle - so it waits for CBA to finish settling
     // settings rather than reading nil.
     [{
-        // THE MISSION'S OWN LIST WINS. class GHOST_Nets { nets[] = {{name,
-        // description}, ...} } in the mission config is where a mission that
-        // cares keeps its nets, beside the roles that read them; the setting
-        // is the fallback for one that does not.
-        private _cfg = missionConfigFile >> "GHOST_Nets" >> "nets";
-        private _names = if (isArray _cfg) then {
-            (getArray _cfg) apply {
-                if (_x isEqualType []) then {_x param [0, ""]} else {_x}
-            } select {_x isEqualType "" && _x isNotEqualTo ""}
-        } else {
-            (GVAR(namedBoxes) splitString ",") apply {trim _x} select {_x != ""}
-        };
+        // THE UNIT'S OWN LIST WINS - TAC//PAC's nets section when the unit
+        // keeps its nets in the database, else the mission's GHOSTFR_Nets
+        // { nets[] = {{name, description}, ...} }, else the setting - see
+        // FUNC(netNames). Nets that only arrive with PAC's boot are opened
+        // then, by FUNC(netsApply).
+        private _names = [] call FUNC(netNames);
 
         {
             [_x, "named", _x] call FUNC(srvBox);

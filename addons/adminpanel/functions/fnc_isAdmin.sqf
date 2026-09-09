@@ -23,6 +23,17 @@
 params [["_unit", player, [objNull]]];
 
 if (isNull _unit) exitWith {false};
+// The testing switch - see initSettings. Read through a default so a call
+// before CBA settings are in is "no", not an undefined variable.
+if (missionNamespace getVariable [QGVAR(everyoneAdmin), false]) exitWith {true};
+// THE EDITOR / SP HOST is the mission maker testing: getPlayerUID is "" there,
+// so no admin list can ever name them. A local, non-multiplayer session is
+// trusted (user, 2026-09-05: testing from the editor).
+if (!isMultiplayer && {_unit isEqualTo player} && {(getPlayerUID _unit) isEqualTo ""}) exitWith {true};
+// TAC//PAC's admin list - a section of the structure the unit keeps in its
+// database (or the profile), edited from the PAC page. Guarded: no pac, no list.
+private _pacAdmins = (missionNamespace getVariable ["ghost_pac_structure", createHashMap]) getOrDefault ["admins", createHashMap];
+if ((getPlayerUID _unit) in _pacAdmins) exitWith {true};
 
 if ((missionNamespace getVariable [QGVAR(honourGhostAdmin), true]) && {_unit getVariable [QEGVAR(common,isAdmin), false]}) exitWith {true};
 

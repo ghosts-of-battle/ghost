@@ -8,7 +8,6 @@ PREP(radioPublish);
 PREP(radioTune);
 PREP(appDrones);
 PREP(appJamming);
-PREP(appSupport);
 
 // Panels
 PREP(panelTiles);
@@ -27,6 +26,7 @@ PREP(tileData);
 // Full-size apps
 PREP(appComms);
 PREP(appHack);
+PREP(appIntel);
 PREP(appScanner);
 PREP(appTimer);
 PREP(timerState);
@@ -34,10 +34,11 @@ PREP(timerSet);
 PREP(alarmAtDelay);
 PREP(appSettings);
 PREP(appSquad);
+PREP(appSupport);
+PREP(simplexProvider);
 PREP(appWeather);
 PREP(appRadio);
 PREP(roleTiles);
 PREP(setSetting);
 PREP(missionSchemes);
 PREP(toggleNet);
-PREP(themeTablet);

@@ -24,13 +24,14 @@ class CfgVehicles {
         isTriggerActivated = 0;
         isDisposable = 0;
         is3DEN = 0;
+        canSetArea = 1;
         icon = "\A3\UI_F\Data\Map\Markers\NATO\o_art.paa";
 
         class Attributes: AttributesBase {
             class markers: Edit {
                 property = QGVAR(shellMarkers);
-                displayName = "Area Markers";
-                tooltip = "Comma-separated area-marker names the ambience runs inside - shells only fall near players standing in them. BLANK runs it near players anywhere.";
+                displayName = "Extra Area Markers";
+                tooltip = "Extra area markers, comma separated, ADDED to the module's own drawn area. Resize the module itself for the ordinary case. With neither, shells fall near players anywhere.";
                 typeName = "STRING";
                 defaultValue = "''";
                 expression = QUOTE(_this setVariable [ARR_2('markers',_value)]);
@@ -116,13 +117,14 @@ class CfgVehicles {
         isTriggerActivated = 0;
         isDisposable = 0;
         is3DEN = 0;
+        canSetArea = 1;
         icon = "\A3\UI_F\Data\Map\Markers\NATO\o_air.paa";
 
         class Attributes: AttributesBase {
             class markers: Edit {
                 property = QGVAR(kamMarkers);
-                displayName = "Area Markers";
-                tooltip = "Comma-separated area-marker names the ambience runs inside - drones only come for buildings near players standing in them. BLANK runs it near players anywhere.";
+                displayName = "Extra Area Markers";
+                tooltip = "Extra area markers, comma separated, ADDED to the module's own drawn area. Resize the module itself for the ordinary case. With neither, drones come for buildings near players anywhere.";
                 typeName = "STRING";
                 defaultValue = "''";
                 expression = QUOTE(_this setVariable [ARR_2('markers',_value)]);

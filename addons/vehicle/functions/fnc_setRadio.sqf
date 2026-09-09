@@ -104,9 +104,9 @@ if (EGVAR(patches,usesACRE)) exitWith {
             private _channel = if (([_radio] call acre_api_fnc_getBaseRadio) isEqualTo LR_RADIO) then {
                 _lrSeen = _lrSeen + 1;
                 if (_lrSeen <= 1) then {
-                    missionNamespace getVariable ["ghost_radio_lrSatChannel", missionNamespace getVariable ["ghost_radio_lrDefault", 1]]
+                    missionNamespace getVariable ["ghostFR_radio_lrSatChannel", missionNamespace getVariable ["ghostFR_radio_lrDefault", 1]]
                 } else {
-                    missionNamespace getVariable ["ghost_radio_lrLocalChannel", missionNamespace getVariable ["ghost_radio_lrDefault", 1]]
+                    missionNamespace getVariable ["ghostFR_radio_lrLocalChannel", missionNamespace getVariable ["ghostFR_radio_lrDefault", 1]]
                 };
             } else {
                 _radioChannel select _forEachIndex

@@ -26,30 +26,30 @@ if (EGVAR(patches,usesACRE)) exitWith {
 
     SHOW_INFO("GearRadio","Setting up ACRE preset...");
 
-    private _noProgram = ghost_radio_acreNoProgram; // config: radios that work differently and don't need programming
-    // NB: a radio with no label field gets frequencies only - see ghost_radio_acreLabelField
+    private _noProgram = ghostFR_radio_acreNoProgram; // config: radios that work differently and don't need programming
+    // NB: a radio with no label field gets frequencies only - see ghostFR_radio_acreLabelField
 
     // remove non-programmable radios from the programming list
     private _srradios = []; private _mrradios = []; private _lrradios = [];
     {
         if (!(_x in _noProgram)) then {_srradios pushBackUnique _x};
-    } forEach ghost_radio_srRadios;
+    } forEach ghostFR_radio_srRadios;
     {
         if (!(_x in _noProgram)) then {_mrradios pushBackUnique _x};
-    } forEach ghost_radio_mrRadios;
+    } forEach ghostFR_radio_mrRadios;
     {
         if (!(_x in _noProgram)) then {_lrradios pushBackUnique _x};
-    } forEach ghost_radio_lrRadios;
+    } forEach ghostFR_radio_lrRadios;
 
     // define unused channels
     private _usedSRchannels = []; private _usedMRchannels = []; private _usedLRchannels = [];
-    {_usedSRchannels pushBackUnique (_x#0);} forEach ghost_radio_srChannels;
-    {_usedMRchannels pushBackUnique (_x#0);} forEach ghost_radio_mrChannels;
-    {_usedLRchannels pushBackUnique (_x#0);} forEach ghost_radio_lrChannels;
+    {_usedSRchannels pushBackUnique (_x#0);} forEach ghostFR_radio_srChannels;
+    {_usedMRchannels pushBackUnique (_x#0);} forEach ghostFR_radio_mrChannels;
+    {_usedLRchannels pushBackUnique (_x#0);} forEach ghostFR_radio_lrChannels;
 
     // SETUP CONFIG ///////////////////////////////////////////////////////////////////////////////////
 
-    private _labelField = ghost_radio_acreLabelField; // config: which preset field holds the channel label, per radio
+    private _labelField = ghostFR_radio_acreLabelField; // config: which preset field holds the channel label, per radio
 
     {
         private _radioClass = _x;
@@ -57,19 +57,19 @@ if (EGVAR(patches,usesACRE)) exitWith {
         private _usedList = [];
         private _power = -1;
         if (_radioClass in _srradios) then {
-            _chanList = ghost_radio_srChannels;
+            _chanList = ghostFR_radio_srChannels;
             _usedList = _usedSRchannels;
-            _power = ghost_radio_srPower;
+            _power = ghostFR_radio_srPower;
         };
         if (_radioClass in _mrradios) then {
-            _chanList = ghost_radio_mrChannels;
+            _chanList = ghostFR_radio_mrChannels;
             _usedList = _usedMRchannels;
-            _power = ghost_radio_mrPower;
+            _power = ghostFR_radio_mrPower;
         };
         if (_radioClass in _lrradios) then {
-            _chanList = ghost_radio_lrChannels;
+            _chanList = ghostFR_radio_lrChannels;
             _usedList = _usedLRchannels;
-            _power = ghost_radio_lrPower;
+            _power = ghostFR_radio_lrPower;
         };
         // get the field property relevant to the radio
         private _field = "";
@@ -130,7 +130,7 @@ if (EGVAR(patches,usesACRE)) exitWith {
 
         // how many channels this radio has - both sweeps below need it
         private _numChannels = 100;
-        { if (_radioClass == _x#0) exitWith {_numChannels = _x#1}; } forEach ghost_radio_acreChannelCount;
+        { if (_radioClass == _x#0) exitWith {_numChannels = _x#1}; } forEach ghostFR_radio_acreChannelCount;
 
         // TRANSMIT POWER IS SWEPT ACROSS EVERY CHANNEL (2026-09-01), not only
         // the ones the plan names. Power is a per-channel preset field, and
@@ -138,7 +138,7 @@ if (EGVAR(patches,usesACRE)) exitWith {
         // any channel the plan did not list transmitted at ACRE stock, and a
         // radio with NO plan at all never had it written once. The second hole
         // is the 343 - its block scheme is DERIVED from group_setup rather than
-        // listed here (see fn_getRadioChannel), so ghost_radio_srPower was
+        // listed here (see fn_getRadioChannel), so ghostFR_radio_srPower was
         // simply inert. -1 still means "leave ACRE stock".
         // A CHANNEL MAY NAME ITS OWN POWER (2026-09-02), as a fourth element in
         // the plan row: [channel, freq, name, mW]. That is how one radio class
@@ -167,7 +167,7 @@ if (EGVAR(patches,usesACRE)) exitWith {
         // list; every other radio keeps ACRE's groups. Indices go over the wire
         // 0-BASED - the plan is written 1-based like every other channel number
         // in this file, and converted here rather than in the mission.
-        if (_radioClass in _srradios && {!isNil "ghost_radio_srGroups"} && {ghost_radio_srGroups isNotEqualTo []}) then {
+        if (_radioClass in _srradios && {!isNil "ghostFR_radio_srGroups"} && {ghostFR_radio_srGroups isNotEqualTo []}) then {
             private _preset = [_radioClass, "default"] call acre_api_fnc_getPresetData;
             if (isNil "_preset") then {
                 SHOW_WARNING_1("GearRadio","%1 has no default preset - channel groups not written",_radioClass);
@@ -176,7 +176,7 @@ if (EGVAR(patches,usesACRE)) exitWith {
                 {
                     _x params ["_label", "_chans"];
                     _groups pushBack [_label, _chans apply {_x - 1}];
-                } forEach ghost_radio_srGroups;
+                } forEach ghostFR_radio_srGroups;
 
                 // ACRE's preset data is a NAMESPACE and getPresetData hands
                 // back the live one, so this writes straight into it. That is
@@ -209,8 +209,8 @@ if (EGVAR(patches,usesACRE)) exitWith {
 // TFAR - push the SW/LR channel plans as the side defaults so issued radios inherit them.
 // (Per-radio tuning to the player's own net happens in fn_setRadioChannel.)
 if (EGVAR(patches,usesTFAR)) exitWith {
-    ["west", "sr", ghost_radio_tfarSrFreqs] call TFAR_fnc_setSideRadioSettings;
-    ["west", "lr", ghost_radio_tfarLrFreqs] call TFAR_fnc_setSideRadioSettings;
+    ["west", "sr", ghostFR_radio_tfarSrFreqs] call TFAR_fnc_setSideRadioSettings;
+    ["west", "lr", ghostFR_radio_tfarLrFreqs] call TFAR_fnc_setSideRadioSettings;
     SHOW_INFO("GearRadio","TFAR side radio frequencies set.");
 };
 

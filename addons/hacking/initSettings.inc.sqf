@@ -157,3 +157,25 @@
     [[0, 1, 2], ["Hostile only", "Hostile and civilian", "Anyone"], 2],
     true
 ] call CBA_fnc_addSetting;
+
+// HOW MUCH OF A PACKAGE ONE BREAK-IN YIELDS. A terminal carries an intel package
+// the mission maker or Zeus put on it; this is the share of it a single
+// successful hack hands over, from the top, never repeating what that side has
+// already taken off that device.
+//
+// It is a percentage of the package's own length, so a two-entry package and a
+// twenty-entry one both take about three visits to empty - the mission maker
+// writes as much as the story needs and does not have to think about this
+// number at all.
+//
+// 100 is one hack, everything, which is the old "a hack produces a product"
+// shape if that is what a mission wants. A share that rounds to nothing still
+// hands over one entry: a hack that succeeded and delivered silence reads as a
+// bug to the man who did it.
+[
+    QGVAR(cfg_package_share), "SLIDER",
+    ["Intel package share per hack (%)", "How much of a terminal's intel package one successful break-in yields. Lower means more return visits. 100 hands the whole package over at once."],
+    ["Ghosts of Battle", "Hacking"],
+    [5, 100, HACK_PACKAGE_SHARE_DEF, 0],
+    true
+] call CBA_fnc_addSetting;

@@ -1,10 +1,10 @@
 #include "script_component.hpp"
 /*
  * Author: Ghost
- * Places the objective emitters and starts the prune that retires them.
+ * Starts the prune that retires a jammer site once its emitter is dead.
  *
- * Called by FUNC(moduleController) once ALiVE is up - never on its own. The
- * module is the enable, so a mission with no module never reaches here.
+ * Called by FUNC(moduleController) - never on its own. The Jamming module is
+ * the enable, so a mission with no module never reaches here.
  *
  * Arguments: None
  *
@@ -16,11 +16,10 @@
 
 if (!isServer) exitWith {};
 
-// QUEUED, not placed - the spawner drains a few sites a frame now, and it
-// logs its own final count when the queue empties. Saying "up" here would
-// have been a lie the moment the placing went asynchronous.
-private _n = [] call FUNC(spawnObjectiveJammers);
-INFO_1("%1 objective jammer site(s) queued",_n);
+// NOTHING IS PLACED HERE. Sites used to be spread over a commander's ALiVE
+// objectives from this function; they are placed by hand now, one Ghost -
+// Jammer Site module each, and a module places itself the moment it is armed.
+// What is left is the prune.
 
 // A zone dies with its emitter - destroyed OR hacked, either one.
 [{

@@ -28,6 +28,8 @@ PREP(netStream);
 PREP(roleTag);
 PREP(roleNets);
 PREP(railNets);
+PREP(netNames);
+PREP(netsApply);
 PREP(platoonTags);
 PREP(tagSet);
 PREP(tagCallout);

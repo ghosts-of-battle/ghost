@@ -26,6 +26,11 @@
 // minute, which read as raining drones. Attrition now regenerates as a
 // drip: the fleet still comes back, one airframe at a time.
 #define UAS_REGEN_PER_TICK  1
+
+// What one patrol thins to while its side's supply cache is down. One, so the
+// sky visibly empties without going quiet - a patrol that vanished entirely
+// would make a cache raid an off switch rather than a cost.
+#define UAS_OUTAGE_MAX      1
 #define UAS_SPOT_TICK       8
 
 // A drone that has reported a player says nothing again for this long, so one
@@ -69,3 +74,38 @@
 // Patrol altitude band.
 #define UAS_ALT_MIN         250
 #define UAS_ALT_MAX         600
+
+// A patrol wanders this far around its orbit centre, so it is also the smallest
+// zone worth drawing - a module never resized is one orbit.
+#define UAS_ORBIT_RADIUS    800
+
+// --- the swarm module -------------------------------------------------------
+// Two is the smallest thing worth calling a swarm; twelve is where a dozen
+// airframes, crews and steering loops stop being a swarm and start being a
+// frame time.
+#define UAS_SWARM_MIN       2
+#define UAS_SWARM_MAX       12
+#define UAS_SWARM_STAGGER   0.5     // s between launches - a swarm arriving, not a stutter
+
+// WHERE A SWARM COMES FROM. Far enough that it is seen and heard coming and can
+// be engaged on the way in - at UAS_SWARM_SPEED, 1500 m is about thirty seconds
+// of somebody deciding what to do about it. Spawning on top of the target is a
+// swarm that cannot be fought, which is not a swarm, it is damage.
+// The hard floor on the module's Spawn Min. Below this a swarm is on top of its
+// target before anybody can react to it, which is not a difficulty setting.
+#define UAS_SWARM_SPAWN_FLOOR 500
+
+#define UAS_SWARM_SPAWN_MIN 1500
+#define UAS_SWARM_SPAWN_MAX 2500
+
+// IMPACT
+#define UAS_SWARM_SPEED     45      // m/s on the run in
+#define UAS_SWARM_STEP      0.1     // s between steering writes
+#define UAS_SWARM_FUSE      6       // m
+#define UAS_SWARM_TIMEOUT   120     // s before a lost airframe deletes itself
+#define UAS_SWARM_WARHEAD   "Sh_122mm_AMOS"
+
+// CIRCLE
+#define UAS_SWARM_RADIUS    400     // m orbit when the module was never resized
+#define UAS_SWARM_ALT       120     // m the lowest shelf
+#define UAS_SWARM_ALT_STEP  40      // m between shelves, so a stack does not collide

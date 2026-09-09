@@ -14,4 +14,12 @@ class Extended_Init_EventHandlers {
             init = QUOTE(call FUNC(radarInit));
         };
     };
+    // The launcher does the same, and for the same reason - there is no module
+    // to hand it a config any more, so it builds its own from the settings and
+    // starts its own clock.
+    class GVAR(launcher) {
+        class ADDON {
+            init = QUOTE(call FUNC(launcherInit));
+        };
+    };
 };

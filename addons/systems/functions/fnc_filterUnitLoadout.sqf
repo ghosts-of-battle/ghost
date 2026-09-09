@@ -27,11 +27,12 @@ if (_loadout isEqualTo []) exitWith {
     _loadout;
 };
 
-private _baseLoadout = _loadout;
-if (EGVAR(Patches,usesACEAX)) then {
-    _baseLoadout = _loadout#0;
-};
-
+// CBA_fnc_getLoadout hands back [loadout, extendedInfo] whatever mods are on;
+// a plain getUnitLoadout is the ten-element loadout itself. Tell them apart by
+// SHAPE. This used the ACEAX flag, and on a modset without it the wrapper went
+// through unopened - "2 elements provided, 10 expected" at every role setup.
+private _wrapped = count _loadout == 2 && {(_loadout#0) isEqualType []} && {count (_loadout#0) == 10};
+private _baseLoadout = [_loadout, _loadout#0] select _wrapped;
 // Remove "ItemRadioAcreFlagged"
 if (_baseLoadout#9#2 == "ItemRadioAcreFlagged") then {
     _baseLoadout#9 set [2, ""];
@@ -67,7 +68,7 @@ if ((_baseLoadout#5) isNotEqualTo []) then {
     {_x call _replaceRadio} forEach (_baseLoadout#5#1); // Backpack items
 };
 
-if (EGVAR(Patches,usesACEAX)) then {
+if (_wrapped) then {
     _loadout set [0,_baseLoadout];
 };
 

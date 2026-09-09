@@ -4,9 +4,8 @@
     Author: YonV/Ghost
     Description: Hangs the MOTORPOOL screen on a controller object. One ACE
         action opens the UI; spawning, customization and removal all live
-        inside it. This replaces the old nested Spawn/Remove menus of
-        fn_vehicleSpawner on pads that migrate - both can coexist while the
-        engineer-course pads still use the old function.
+        inside it. The motorpool is the only vehicle-issuing screen; the old
+        pad spawner it replaced is gone.
 
     Arguments:
     0: Controller <OBJECT> - the object carrying the ACE action + ledger

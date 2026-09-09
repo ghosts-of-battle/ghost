@@ -15,12 +15,9 @@ private _groupIndex = _tree tvValue [_treeGroup];
 private _unit = objectFromNetId _unitNetID;
 if !(isNull _unit) exitWith {_tree tvSetCurSel _selectionPath}; //role selected already
 
-if !([player,_desiredRole] call FUNC(canTakeRole)) exitWith {
-    [
-        "Role Access",
-        format ["Role %1 is restricted - ask an admin for a role access grant.",_desiredRole],
-        NOTE_BAD
-    ] call GHOSTFUNC(notify,notify);
+([player,_desiredRole] call FUNC(roleGate)) params ["_ok","_why"];
+if (!_ok) exitWith {
+    ["Role Access", _why + " Ask an admin for a role access grant.", NOTE_BAD] call GHOSTFUNC(notify,notify);
     playSound "addItemFailed";
 };
 

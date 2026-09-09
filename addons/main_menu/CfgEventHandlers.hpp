@@ -15,6 +15,9 @@ class Extended_PostInit_EventHandlers {
 };
 
 class Extended_DisplayLoad_EventHandlers {
+    class RscDisplayMain {
+        ADDON = QUOTE(with uiNamespace do {(_this select 0) call COMPILE_SCRIPT(XEH_mainDisplay)});
+    };
     class RscDisplayRemoteMissions {
         ADDON = QUOTE(with uiNamespace do {\
             ARR_2([_this select 0,'RscDisplayRemoteMissions']) call COMPILE_SCRIPT(XEH_multiplayerDisplay);\

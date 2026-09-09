@@ -31,7 +31,7 @@ if (isNil QEFUNC(hacking,ladderCircle)) exitWith {false};
 //
 // ladderCircle draws a circle that tightens with each hack, holds its lock on
 // one site until that site is dead, and files the intel through
-// EFUNC(adapter_alive,reportIntel) off the label below.
+// its own registry off the label below.
 private _pool = [];
 {
     private _obj = _x param [ZONE_OBJ, objNull];

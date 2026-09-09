@@ -141,15 +141,27 @@ if (!isNil "ghost_leaders_houses") then {
 // The TAOR decides whether you are looking for leaders or for AA and arty
 // sites: a candidate counts only where its kind matches the war being fought
 // on ITS ground. FUNC(taorType) is the one answer to whose ground this is.
+//
+// NO COMMANDER MEANS NO OPINION, NOT NO INTEL. ghost's version dropped any
+// candidate whose ground answered "" - which was right there, where every
+// source in the pool was ALiVE's and ground nobody held really did have no
+// network. Here the pool is half hand-placed: anti-ship batteries, jammer
+// sites, drone caches and safe houses that exist because somebody put them
+// somewhere, very possibly outside every TAOR - and with no ALiVE loaded
+// FUNC(taorType) answers "" for the whole map. Kept as ghost wrote it this
+// would empty the pool and the hint system would silently never fire.
 _pool = _pool select {
     _x params ["", "_at", "", "_kind"];
     private _ground = [_at] call FUNC(taorType);
-    switch (_kind) do {
-        case "conv": {_ground in ["invasion", "occupation"]};
-        case "asym": {_ground isEqualTo "asymmetric"};
-        // Caches supply whichever war is fought around them - any ground a
-        // commander actually holds.
-        default {_ground isNotEqualTo ""};
+    if (_ground isEqualTo "") then {
+        true
+    } else {
+        switch (_kind) do {
+            case "conv": {_ground in ["invasion", "occupation"]};
+            case "asym": {_ground isEqualTo "asymmetric"};
+            // Caches supply whichever war is fought around them.
+            default {true};
+        }
     };
 };
 

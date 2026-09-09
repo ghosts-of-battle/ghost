@@ -71,6 +71,13 @@ private _cardH = _rowH * 2.7;
 // asked in red: "is not the default a plain text message window" - so the
 // picker offers only the forms. The way back to plain is the REMOVE button,
 // which is already there whenever a template is on.
+// A TEMPLATE ONLY A LEADER MAY SEND IS NOT OFFERED TO ANYONE ELSE. The server
+// refuses it anyway (senderMustBe, FUNC(srvThreadFor)); hiding it here is so a
+// rifleman does not fill in a METT-TC and learn at SEND that it was not his.
+private _isLeader = (player getVariable ["isLeader", false]) isEqualTo true;
+_ids = _ids select {
+    ((([_x] call EFUNC(messaging,template)) getOrDefault ["senderMustBe", "any"]) isNotEqualTo "leader") || _isLeader
+};
 private _cards = (_ids select {_x isNotEqualTo "freetext"}) apply {[_x, [_x] call EFUNC(messaging,template)]};
 
 {

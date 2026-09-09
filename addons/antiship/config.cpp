@@ -8,8 +8,7 @@ class CfgPatches {
             QGVAR(radar),
             QGVAR(decoy_west),
             QGVAR(decoy_east),
-            QGVAR(decoy_guer),
-            "ghost_moduleAntiShip"
+            QGVAR(decoy_guer)
         };
         weapons[] = {};
         ammo[] = {QGVAR(missile)};
@@ -27,6 +26,5 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
-#include "CfgFactionClasses.hpp"
 #include "CfgAmmo.hpp"
 #include "CfgVehicles.hpp"

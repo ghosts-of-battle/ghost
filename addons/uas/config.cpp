@@ -3,7 +3,7 @@
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {"ghost_moduleUAS", QGVAR(UAV_06_IED_I), QGVAR(UAV_06_IED_backpack_I)};
+        units[] = {"ghost_moduleDronePatrol", "ghost_moduleDroneSwarm", QGVAR(UAV_06_IED_I), QGVAR(UAV_06_IED_backpack_I)};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {

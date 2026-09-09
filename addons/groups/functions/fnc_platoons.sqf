@@ -43,21 +43,21 @@
                 [] for no tabs
 */
 
-private _root = missionConfigFile >> "Dynamic_Groups" >> "Platoons";
-if (!isClass _root) exitWith {[]};
+// The ORBAT - the database's when TAC//PAC holds one, else the mission's.
+([] call FUNC(orbat)) params ["", "_platoonRows"];
+if (_platoonRows isEqualTo []) exitWith {[]};
 
 private _out = [];
 private _over = [];
 
 {
-    private _label = getText (_x >> "name");
-    private _callsign = getText (_x >> "callsign");
-    private _squads = (getArray (_x >> "squads")) apply {toUpper _x};
+    _x params ["_id", "_label", "_callsign", "", "_squadsRaw"];
+    private _squads = _squadsRaw apply {toUpper _x};
 
     // A tab with no name or no squads is a typo, and it says so - an empty tab
     // is indistinguishable from a squad that failed to load.
     if (_label isEqualTo "" || {_squads isEqualTo []}) then {
-        WARNING_1("Platoons","tab '%1' has no name or no squads - skipped",configName _x);
+        WARNING_1("Platoons","tab '%1' has no name or no squads - skipped",_id);
         continue;
     };
 
@@ -67,7 +67,7 @@ private _over = [];
     };
 
     _out pushBack [toUpper _label, _squads, toUpper _callsign];
-} forEach (configProperties [_root, "isClass _x", true]);
+} forEach _platoonRows;
 
 if (_over isNotEqualTo []) then {
     WARNING_2("Platoons","%1 tab(s) past the tenth were dropped: %2",count _over,_over joinString ", ");
