@@ -216,3 +216,9 @@
         ace_hearing_lowerVolume = 0.60; \
         ace_hearing_hasEHP = 1;
 
+
+// THE SEVEN ARMA RANKS, IN ORDER, ONCE. Every gate, rank set and rank compare
+// in the mod used to carry its own copy of this list; a copy that disagreed
+// would have let a rank through or held one back with nobody the wiser.
+#define ARMA_RANKS ["PRIVATE","CORPORAL","SERGEANT","LIEUTENANT","CAPTAIN","MAJOR","COLONEL"]
+#define ARMA_RANK_INDEX(r) (ARMA_RANKS find toUpper (r))

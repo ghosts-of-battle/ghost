@@ -13,7 +13,7 @@
  * nothing
  *
  * Example:
- * [player] call ghost_medical_supplies_fnc_doUnpackMedicKit;
+ * [player] call ghost_medbags_fnc_doUnpackMedicKit;
  *
  */
 
@@ -56,14 +56,7 @@ if (isNull _unit) exitWith {};
 
         _unit removeItem "ghost_medbags_Fluid";
 
-        private _order = [3,2,1];
-        private _overflow = true;
-
-        [_unit, "ACE_salineIV", 24, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "ACE_plasmaIV", 12, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "ACE_bloodIV", 8, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, GVAR(contentsFluid)] call FUNC(issueContents);
     };
 
     if (ghost_MEDICAL_SUPPLIES_UNPACK_FAILURE) exitWith {};

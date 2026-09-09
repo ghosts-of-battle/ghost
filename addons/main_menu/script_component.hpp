@@ -31,6 +31,16 @@
 
 #define COLOR_BCG_TRANS {0.8, 0.263, 0.192, 0.3}
 
+// OUR CONTROLS ON BI'S MAIN MENU. High and out of the way on purpose -
+// RscDisplayMain is Arma's own display and its controls own the low numbers.
+//
+// NAMED BY POSITION, because what a button says is a CBA setting now and the
+// side of the screen it is on is not. Left, centre, right - matching servers
+// 1, 2 and 3 in Addon Options.
+#define IDC_QUICKCONNECT_LEFT 657010
+#define IDC_QUICKCONNECT_CENTRE 657011
+#define IDC_QUICKCONNECT_RIGHT 657012
+
 #define IDC_SERVERSTATUS_TITLE 1000
 #define IDC_SERVERSTATUS_DESCRIPTION 1001
 #define IDC_SERVERSTATUS_PASSWORD 1002

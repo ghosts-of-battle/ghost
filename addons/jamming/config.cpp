@@ -3,14 +3,16 @@
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {"ghost_moduleJamming"};
+        // NOT QGVAR - these two carry no component in their names. QGVAR(moduleJamming)
+        // is "ghost_jamming_moduleJamming", which is not the class in
+        // CfgVehicles and left both of them unlisted.
+        units[] = {"ghost_moduleJamming", "ghost_moduleJammerSite"};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "ghost_main",
             "ghost_common",
             "ghost_notify",
-            "ghost_adapter_alive",
             "cba_xeh"
         };
         skipWhenMissingDependencies = 1;

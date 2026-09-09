@@ -1,13 +1,22 @@
 class RscText;
 class RscTitle;
 class RscButtonMenuOK;
-class RscControlsGroupNoScrollbars;
+class RscControlsGroup;
 class RscStructuredText;
 
 #define MODAL_W                 28
 #define MODAL_WIDE_W            38
 #define MODAL_MAIN_BTN_W        6.25
 #define MODAL_CONTENT_BORDER    0.2
+
+// Panel height in grid rows (user, 2026-09-01: "two lines taller"). The grid is
+// 25 rows and the panel used to be 20 with a row of air above it and most of two
+// below, so the two rows come out of those margins rather than off the bottom of
+// the screen - at MODAL_TITLE_Y 1 the OK button would have landed past row 25.
+#define MODAL_H                 22
+#define MODAL_TITLE_Y           0.4
+#define MODAL_BODY_Y            (MODAL_TITLE_Y + 1.1)
+#define MODAL_BTN_Y             (MODAL_BODY_Y + MODAL_H + 0.1)
 
 // Modal - standard
 class GVAR(Modal) {
@@ -31,7 +40,7 @@ class GVAR(Modal) {
             };
 
             x = QUOTE(POS_X(7));
-            y = QUOTE(POS_Y(1));
+            y = QUOTE(POS_Y(MODAL_TITLE_Y));
             w = QUOTE(POS_W(MODAL_W));
             h = QUOTE(POS_H(1));
         };
@@ -44,9 +53,9 @@ class GVAR(Modal) {
             colorBackground[] = {0,0,0,0.95};
 
             x = QUOTE(POS_X(7));
-            y = QUOTE(POS_Y(2.1));
+            y = QUOTE(POS_Y(MODAL_BODY_Y));
             w = QUOTE(POS_W(MODAL_W));
-            h = QUOTE(POS_H(20));
+            h = QUOTE(POS_H(MODAL_H));
         };
     };
 
@@ -58,7 +67,7 @@ class GVAR(Modal) {
             text = "$STR_DISP_OPTIONS_GAME_OPTIONS";
 
             x = QUOTE(POS_X(7));
-            y = QUOTE(POS_Y(1));
+            y = QUOTE(POS_Y(MODAL_TITLE_Y));
             w = QUOTE(POS_W(MODAL_W/2));
             h = QUOTE(POS_H(1));
         };
@@ -73,14 +82,26 @@ class GVAR(Modal) {
             w = QUOTE(POS_W(MODAL_W/2));
         };
 
-        // Content container
-        class Content: RscControlsGroupNoScrollbars {
+        // Content container. SCROLLS (user, 2026-09-01: "include a scroll bar if
+        // the text is longer") - a mission writes its own briefing into this and
+        // a long one used to be cut off at the panel's edge with no way to read
+        // the rest. fnc_modal grows the text control to its own text so the
+        // group has something to scroll; text that fits shows no bar.
+        class Content: RscControlsGroup {
             idc = IDC_MODAL_GROUP_CONTENT;
 
+            // VScrollbar is left at the engine's own width - the text
+            // control below is what keeps MODAL_SCROLLBAR_W clear for it.
+            // HScrollbar is not: the text wraps to the panel, so a horizontal
+            // bar could only ever be a dead strip across the bottom.
+            class HScrollbar {
+                width = 0;
+            };
+
             x = QUOTE(POS_X(7 + MODAL_CONTENT_BORDER));
-            y = QUOTE(POS_Y(2.1 + MODAL_CONTENT_BORDER));
+            y = QUOTE(POS_Y(MODAL_BODY_Y + MODAL_CONTENT_BORDER));
             w = QUOTE(POS_W(MODAL_W - MODAL_CONTENT_BORDER*2));
-            h = QUOTE(POS_H(20 - MODAL_CONTENT_BORDER*2));
+            h = QUOTE(POS_H(MODAL_H - MODAL_CONTENT_BORDER*2));
 
             class Controls {
                 class Text: RscStructuredText {
@@ -89,9 +110,14 @@ class GVAR(Modal) {
                     // relative to ctrl group
                     x = 0;
                     y = 0;
-                    // relative to display
-                    w = QUOTE(POS_W(MODAL_W - MODAL_CONTENT_BORDER*2));
-                    h = QUOTE(POS_H(20 - MODAL_CONTENT_BORDER*2));
+                    // relative to display. A scrollbar's width short of the
+                    // group, always - the bar is drawn inside the group and over
+                    // the end of every line, and a margin that thin costs a
+                    // briefing nothing next to text with a bar through it.
+                    // Set here rather than in script so fnc_modal measures the
+                    // wrap once, at the width the text will keep.
+                    w = QUOTE(POS_W(MODAL_W - MODAL_CONTENT_BORDER*2 - MODAL_SCROLLBAR_W));
+                    h = QUOTE(POS_H(MODAL_H - MODAL_CONTENT_BORDER*2));
                 };
             };
         };
@@ -105,7 +131,7 @@ class GVAR(Modal) {
             idc = IDC_OK;
 
             x = QUOTE(POS_X(7 + MODAL_W - MODAL_MAIN_BTN_W));
-            y = QUOTE(POS_Y(22.2));
+            y = QUOTE(POS_Y(MODAL_BTN_Y));
             w = QUOTE(POS_W(MODAL_MAIN_BTN_W));
             h = QUOTE(POS_H(1));
         };
@@ -142,7 +168,7 @@ class GVAR(ModalWide): GVAR(Modal) {
             class Controls: Controls {
                 class Text: Text {
                     // relative to display
-                    w = QUOTE(POS_W(MODAL_WIDE_W - MODAL_CONTENT_BORDER*2));
+                    w = QUOTE(POS_W(MODAL_WIDE_W - MODAL_CONTENT_BORDER*2 - MODAL_SCROLLBAR_W));
                 };
             };
         };

@@ -28,7 +28,6 @@ tvClear _tree;
 
 (missionNamespace getVariable ["YMF_groupMenu_theme", [[0.05,0.05,0.05,1],[0.90,0.90,0.88,1],[0.85,0.28,0.20,1],[0.35,0.35,0.34,1]]]) params ["","_ink","_accent"];
 
-private _rolesArray = missionConfigFile >> "Dynamic_Roles";
 private _myPath = [0,0];
 
 {
@@ -63,10 +62,13 @@ private _myPath = [0,0];
     _tree tvSetValue [[_treeIndex],_realIndex];
 
     if (call compile _conditions) then {
+        // one gate answer per role class per redraw, not per slot
+        private _gates = createHashMap;
         {
-            private _roleInfo = _rolesArray >> _x;
-            private _roleName = getText(_roleInfo >> "name");
-            private _roleIcon = getText(_roleInfo >> "icon");
+            // the role, from wherever the unit keeps it - see FUNC(role)
+            private _roleInfo = [_x] call FUNC(role);
+            private _roleName = _roleInfo getOrDefault ["name", _x];
+            private _roleIcon = _roleInfo getOrDefault ["icon", ""];
 
             private _playerInRole = _units select _forEachIndex;
             private _taken = !isNull _playerInRole;
@@ -75,16 +77,22 @@ private _myPath = [0,0];
             // a colon and the player's name run together at 40% alpha; the name
             // is what you are scanning for, so it goes after a separator and the
             // row is dimmed rather than half-erased.
-            private _name = if (_taken) then {
-                format ["%1  -  %2",_roleName,name _playerInRole]
-            } else {
-                _roleName
+            // A LOCKED SLOT SAYS SO. It drew like a free one, and a corporal
+            // learned it was a sergeant's slot at the press. The requirement
+            // goes on the row - [SGT+], [PLT], [LOCKED] - and the row dims.
+            private _gate = if (_taken) then {[true, "", ""]} else {_gates getOrDefaultCall [_x, {[player, _x] call FUNC(roleGate)}, true]};
+            private _locked = !(_gate # 0);
+
+            private _name = switch (true) do {
+                case (_taken): {format ["%1  -  %2",_roleName,name _playerInRole]};
+                case (_locked): {format ["%1  [%2]",_roleName,_gate # 2]};
+                default {_roleName};
             };
 
-            private _colour = if (_taken) then {
-                [_ink#0, _ink#1, _ink#2, 0.4]
-            } else {
-                _ink
+            private _colour = switch (true) do {
+                case (_taken): {[_ink#0, _ink#1, _ink#2, 0.4]};
+                case (_locked): {[_ink#0, _ink#1, _ink#2, 0.55]};
+                default {_ink};
             };
 
             private _unitIndex = _tree tvAdd [[_treeIndex],_name];

@@ -34,6 +34,13 @@
 #define IDC_MODAL_GROUP_CONTENT 2000
 #define IDC_MODAL_CONTENT_TEXT  2001
 
+// Grid columns fnc_modal keeps clear on the right of the content when a briefing
+// runs past the panel, so the group's scrollbar sits beside the words instead of
+// over the last character of every line. 0.7 columns is a shade over the engine
+// scrollbar's own width at every grid size, which is the point - it is a margin,
+// not a measurement.
+#define MODAL_SCROLLBAR_W       0.7
+
 // Admin chat-command prefix. Seven characters - fnc_debugCommand slices on it.
 #define DEBUG_PREFIX "#ghost "
 

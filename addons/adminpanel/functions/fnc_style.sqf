@@ -99,7 +99,8 @@ private _mute = [_ink # 0, _ink # 1, _ink # 2, 0.62];
     _ctrl ctrlSetTextColor _ground;
 } forEach [
     IDC_ADMINPANEL_PLAYER_SKILLS_APPLY_BUTTON,
-    IDC_ADMINPANEL_PLAYER_MEDICAL_FULLHEAL
+    IDC_ADMINPANEL_PLAYER_MEDICAL_FULLHEAL,
+    IDC_ADMINPANEL_REMOTEEXEC_EXECBUTTON
 ];
 
 // Everything that takes typing or a selection: the list, the filter, the code
@@ -161,6 +162,7 @@ private _mute = [_ink # 0, _ink # 1, _ink # 2, 0.62];
     IDC_ADMINPANEL_ADMIN_ZEUS,
     IDC_ADMINPANEL_ADMIN_KICK,
     IDC_ADMINPANEL_ADMIN_SERVERLOCK,
+    IDC_ADMINPANEL_ADMIN_PAC,
     IDC_ADMINPANEL_ADMIN_ROLEACCESS,
     IDC_ADMINPANEL_ADMIN_SERVERHEALALL,
     IDC_ADMINPANEL_ADMIN_MESSAGE,

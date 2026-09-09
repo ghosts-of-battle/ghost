@@ -23,7 +23,6 @@ addMissionEventHandler ["MarkerCreated", {
 
     if (!_local) exitWith {};                        // only police markers created on this machine
     if !("_USER_DEFINED" in _marker) exitWith {};    // ignore script/Zeus markers
-    if ("/tacmap" in _marker) exitWith {};           // placed through the cTab tactical map
     if (_channelNumber == CHANNEL_DIRECT) exitWith {}; // direct channel - personal marking allowed
 
     if (call BIS_fnc_admin > 0) exitWith {};         // logged-in/voted server admin
@@ -32,7 +31,7 @@ addMissionEventHandler ["MarkerCreated", {
     deleteMarker _marker;
     [
         "Map Marking",
-        "Limited to the DIRECT channel. Use a cTab to share markers with your side or group.",
+        "Limited to the DIRECT channel. Use TAC//PAD to share markers with your side or group.",
         NOTE_BAD
     ] call GHOSTFUNC(notify,notify);
 }];

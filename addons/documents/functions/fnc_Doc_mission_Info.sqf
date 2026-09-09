@@ -30,7 +30,7 @@ player createDiaryRecord["gobinfo",
 
 player createDiaryRecord["gobinfo",
     ["Radio Plan",
-        "<font size='16'>PRC-343 (personal, active radio on spawn)</font><br/>
+        "<font size='16'>PRC-148 (personal, active radio on spawn)</font><br/>
         REAPER - Block 1 / NOMAD - Block 2 / TALON - Block 3 / GHOST - Block 4 / WRAITH - Block 5<br/>
         <br/>
         <font size='16'>PRC-152 (medium) - each element defaults to its own net</font><br/>

@@ -6,7 +6,7 @@ class RscEdit;
 class RscListBox;
 class RscListNBox;
 
-// MOTORPOOL - the vehicle spawner as a screen, laid out to
+// MOTORPOOL - the vehicle pool as a screen, laid out to
 // docs\Arma 3 Messaging UI Mockups\motorpool-vehicle-spawner.png:
 // category tabs + searchable list on the left, spec sheet + customize +
 // the accent SPAWN button on the right.
@@ -146,8 +146,8 @@ class YMF_MotorPool {
             w = "0.0609 * safezoneW";
             h = "0.034 * safezoneH";
             colorBackground[] = {0.953, 0.949, 0.949, 1};
-            colorBackgroundActive[] = {0.87, 0.865, 0.86, 1};
-            colorFocused[] = {0.953, 0.949, 0.949, 1};
+            colorBackgroundActive[] = {0.5, 0.5, 0.5, 0.30};
+            colorFocused[] = {0.5, 0.5, 0.5, 0.16};
             colorText[] = {0.125, 0.118, 0.114, 1};
             sizeEx = "0.024 * safezoneH";
             onButtonClick = "[0] call ghost_vehicle_fnc_motorpool_tab";
@@ -251,8 +251,8 @@ class YMF_MotorPool {
             colorText[] = {0.125, 0.118, 0.114, 1};
             colorSelect[] = {0.953, 0.949, 0.949, 1};
             colorSelect2[] = {0.953, 0.949, 0.949, 1};
-            colorSelectBackground[] = {0.125, 0.118, 0.114, 1};
-            colorSelectBackground2[] = {0.125, 0.118, 0.114, 1};
+            colorSelectBackground[] = {0.5, 0.5, 0.5, 0.35};
+            colorSelectBackground2[] = {0.5, 0.5, 0.5, 0.35};
             onLBSelChanged = "[] call ghost_vehicle_fnc_motorpool_select";
         };
 
@@ -315,8 +315,8 @@ class YMF_MotorPool {
             colorText[] = {0.125, 0.118, 0.114, 1};
             colorSelect[] = {0.953, 0.949, 0.949, 1};
             colorSelect2[] = {0.953, 0.949, 0.949, 1};
-            colorSelectBackground[] = {0.125, 0.118, 0.114, 1};
-            colorSelectBackground2[] = {0.125, 0.118, 0.114, 1};
+            colorSelectBackground[] = {0.5, 0.5, 0.5, 0.35};
+            colorSelectBackground2[] = {0.5, 0.5, 0.5, 0.35};
         };
 
         class MP_FitLabel: RscText {
@@ -340,8 +340,8 @@ class YMF_MotorPool {
             colorText[] = {0.125, 0.118, 0.114, 1};
             colorSelect[] = {0.125, 0.118, 0.114, 1};
             colorSelect2[] = {0.125, 0.118, 0.114, 1};
-            colorSelectBackground[] = {0.91, 0.905, 0.9, 1};
-            colorSelectBackground2[] = {0.91, 0.905, 0.9, 1};
+            colorSelectBackground[] = {0.5, 0.5, 0.5, 0.35};
+            colorSelectBackground2[] = {0.5, 0.5, 0.5, 0.35};
             onLBSelChanged = "[] call ghost_vehicle_fnc_motorpool_fitToggle";
         };
 
@@ -354,8 +354,8 @@ class YMF_MotorPool {
             w = "0.494 * safezoneW";
             h = "0.05 * safezoneH";
             colorBackground[] = {0.925, 0.188, 0.075, 1};
-            colorBackgroundActive[] = {0.925, 0.188, 0.075, 1};
-            colorFocused[] = {0.925, 0.188, 0.075, 1};
+            colorBackgroundActive[] = {0.5, 0.5, 0.5, 0.30};
+            colorFocused[] = {0.5, 0.5, 0.5, 0.16};
             colorText[] = {0.953, 0.949, 0.949, 1};
             font = "RobotoCondensedBold";
             sizeEx = "0.03 * safezoneH";
@@ -369,8 +369,8 @@ class YMF_MotorPool {
             w = "0.494 * safezoneW";
             h = "0.04 * safezoneH";
             colorBackground[] = {0.953, 0.949, 0.949, 1};
-            colorBackgroundActive[] = {0.87, 0.865, 0.86, 1};
-            colorFocused[] = {0.953, 0.949, 0.949, 1};
+            colorBackgroundActive[] = {0.5, 0.5, 0.5, 0.30};
+            colorFocused[] = {0.5, 0.5, 0.5, 0.16};
             colorText[] = {0.125, 0.118, 0.114, 1};
             sizeEx = "0.026 * safezoneH";
             onButtonClick = "closeDialog 0";

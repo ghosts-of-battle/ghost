@@ -10,6 +10,27 @@ worth attacking: kill it, or wait out its tracks, and the battery is blind. The
 missile flies faster than any interceptor so it has to be met head-on rather
 than chased, and it carries a decoy the defending side's AA and CIWS can engage.
 
+**There is no module.** In ghost this addon was driven by `ghost_moduleAntiShip`,
+which sited batteries automatically on coastal ground inside a side's ALiVE TAOR
+markers. DIVINER has no TAORs and no commanders to own them, so the siting had
+nothing to read from. Place the launcher and the radar where you want them, in
+Eden or in Zeus, and both bring themselves on line - the launcher registers as a
+battery and starts its own clock, the radar starts sweeping.
+
+**One launcher is one battery.** The module grouped several under one interval;
+a hand-placed launcher owns its own, so three on a headland are three tubes on
+three cycles rather than one battery firing three times as fast.
+
+**How they behave is CBA settings**, under *Ghosts of Battle > Anti-Ship*:
+interval, search range, target classes, missile speed, cruise altitude, terminal
+range, whether the missile is interceptable, and debug. The module's other
+fourteen attributes described where to SITE a battery and died with it.
+
+**LOCATE ANTI-SHIP and LOCATE RADAR read this addon.** `ghost_antiship_batteries`
+and `ghost_antiship_radars` are what the intrusion suite's products and its
+Intel Hunt pool hunt through - without this addon loaded neither product is ever
+offered.
+
 <!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
 
 ## Requires
@@ -22,42 +43,7 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-6 unit classes, 7 functions.
-
-## Eden modules
-
-### Anti-Ship Battery (Burevestnik)
-
-`ghost_moduleAntiShip`, category ghost_modules
-
-Coastal anti-ship batteries, one module for every side. Switch a side on and the addon sites a battery on coastal ground inside that side's TAOR markers, with that side's launchers, and places crewed launchers there - kill them all and the battery is silenced. Every interval a battery looks for a hull inside its search range and puts a Burevestnik into it - climb, sea-skimming cruise, terminal dive; it can be met head-on and it carries a decoy the defending side's AA will engage. With every switch off, the module is one battery for its own side, standing where you put it.
-
-<details><summary>22 attributes</summary>
-
-- `cruise_alt`
-- `debug`
-- `decoy_classes`
-- `enableEast`
-- `enableGuer`
-- `enableWest`
-- `interceptable`
-- `interval`
-- `launcherEast`
-- `launcherGuer`
-- `launcherWest`
-- `launcher_classes`
-- `launcher_count`
-- `missile_classes`
-- `missile_speed`
-- `rearm_interval`
-- `search_range`
-- `taorEast`
-- `taorGuer`
-- `taorWest`
-- `target_classes`
-- `terminal_range`
-
-</details>
+5 unit classes, 7 functions. No modules.
 
 ## Functions
 
@@ -65,7 +51,7 @@ Coastal anti-ship batteries, one module for every side. Switch a side on and the
 
 - `ghost_antiship_fnc_fly`
 - `ghost_antiship_fnc_launch`
-- `ghost_antiship_fnc_moduleController`
+- `ghost_antiship_fnc_launcherInit`
 - `ghost_antiship_fnc_pickTarget`
 - `ghost_antiship_fnc_radarInit`
 - `ghost_antiship_fnc_radarSweep`

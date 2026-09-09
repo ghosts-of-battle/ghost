@@ -23,5 +23,3 @@ if (_slot >= count _avail) exitWith {};
 
 GVAR(session) set ["intel", (_avail select _slot) select 0];
 
-private _display = uiNamespace getVariable [QGVAR(tablet), displayNull];
-if !(isNull _display) then { [_display] call FUNC(tabletRefresh) };

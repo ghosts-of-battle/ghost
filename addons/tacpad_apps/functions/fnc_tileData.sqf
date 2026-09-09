@@ -87,24 +87,6 @@ if (_scan isEqualTo []) then {
     ];
 };
 
-// --- SUPPORT, off the ALiVE adapter ------------------------------------------
-// TAC//SUPPORT's tile. The assets are ALiVE combat support's, read through the
-// adapter and nobody else; a mission without the link says NO LINK rather than
-// pretending an air wing.
-private _support = [];
-if (!isNil "ghost_adapter_alive_fnc_supportAssets") then {
-    _support = call ghost_adapter_alive_fnc_supportAssets;
-};
-private _idle = {(_x param [4, ""]) isEqualTo "idle"} count _support;
-_out pushBack [
-    "support",
-    "SUPPORT",
-    ["NO LINK", "AIR"] select (_support isNotEqualTo []),
-    str count _support,
-    ["CS LINK NOT WIRED", format ["%1 IDLE - PRESS TO TASK", _idle]] select (_support isNotEqualTo []),
-    ["stale", "rest"] select (_support isNotEqualTo [])
-];
-
 // --- HACK, off the intrusion suite -------------------------------------------
 // The tile is the ONLY way into the suite - the ACE entry lived on the cTab
 // device and went with it. So it says whether it can be opened at all before it
@@ -166,7 +148,7 @@ private _icon = switch (true) do {
 _out pushBack [
     "weather",
     "WEATHER",
-    format ["%1%2", [_hour, 2] call CBA_fnc_formatNumber, [_minute, 2] call CBA_fnc_formatNumber],
+    ["DRY", "RAIN"] select (rain > 0.1),
     _cover,
     format ["%1 AT %2 M/S - VIS %3 KM", round windDir, round (vectorMagnitude wind), (round (viewDistance / 100)) / 10],
     ["rest", "warn"] select (rain > 0.5),
@@ -255,7 +237,73 @@ if (_gated) then {
 // A tile not named here sorts to the end rather than to the front, so adding one
 // and forgetting this list puts it in the wrong place instead of at the head of
 // the band where it would push everything else along.
-private _order = ["drones", "jam", "weather", "timer", "radio", "support", "hack"];
+// --- INTEL, the files a hack has recovered ----------------------------------
+// The side's own count, off the store EFUNC(hacking,productPackage) broadcasts.
+// It reads NO FILES rather than 0 because a zero on a tile looks like a thing
+// that failed, and nothing has failed - nobody has hacked anything yet.
+private _intel = (missionNamespace getVariable [QEGVAR(hacking,packageIntel), createHashMap])
+    getOrDefault [str (side group ACE_player), []];
+private _folders = [];
+{ _folders pushBackUnique (_x # 0) } forEach _intel;
+
+_out pushBack [
+    "intel",
+    "INTEL",
+    ["NO FILES", "FILES"] select (_intel isNotEqualTo []),
+    str count _intel,
+    [
+        "NOTHING RECOVERED",
+        format ["%1 FOLDER%2 - PRESS TO READ", count _folders, ["", "S"] select (count _folders > 1)]
+    ] select (_intel isNotEqualTo []),
+    ["stale", "rest"] select (_intel isNotEqualTo [])
+];
+
+// --- SUPPORT, over the adapter ----------------------------------------------
+// NO ADAPTER, NO TILE. The app is not registered without it either - a live
+// tile reading NO LINK for a system that is not installed is a permanent
+// apology, and the band is only six wide.
+//
+// ONE COUNT, THREE BACK ENDS. EFUNC(adapter_alive,supportAssets) merges ALiVE's
+// own ATO and NEO assets with every registered provider's rows - ghost's CAS
+// module and Simplex - so this does not care which of them is present.
+if (!isNil QEFUNC(adapter_alive,supportAssets)) then {
+    private _support = call EFUNC(adapter_alive,supportAssets);
+    private _idle = {(_x param [4, ""]) isEqualTo "idle"} count _support;
+    _out pushBack [
+        "support",
+        "SUPPORT",
+        ["NO LINK", "AIR"] select (_support isNotEqualTo []),
+        str count _support,
+        ["CS LINK NOT WIRED", format ["%1 IDLE - PRESS TO TASK", _idle]] select (_support isNotEqualTo []),
+        ["stale", "rest"] select (_support isNotEqualTo [])
+    ];
+};
+
+// --- PAC, the unit ------------------------------------------------------------
+// Structure hash, current OPORD, players on, op window - the handoff's own list
+// for the tile. Read off the summary the server publishes rather than the
+// roster, so the band never walks a player list. Guarded on the addon: a mod
+// built without ghost_pac has no tile, the same rule as Simplex and PLP.
+if (!isNil "ghost_pac_summary") then {
+    private _pac = ghost_pac_summary;
+    private _opord = _pac getOrDefault ["opord", ""];
+    // window is the id of the op window that is on ("" for none) since the
+    // attendance work; it was a bool before. Read it as "is one on".
+    private _window = _pac getOrDefault ["window", ""];
+    private _open = _window isEqualType "" && _window isNotEqualTo "";
+    private _hash = _pac getOrDefault ["hash", 0];
+
+    _out pushBack [
+        "pac",
+        "PAC",
+        ["NO OP", "OP OPEN"] select _open,
+        str (_pac getOrDefault ["players", 0]),
+        format ["%1 - %2", ["NO OPORD", toUpper _opord] select (_opord isNotEqualTo ""), _hash],
+        ["rest", "warn"] select _open
+    ];
+};
+
+private _order = ["drones", "jam", "weather", "timer", "radio", "hack", "intel", "support", "pac"];
 
 private _ranked = _out apply {
     private _i = _order find (_x # 0);

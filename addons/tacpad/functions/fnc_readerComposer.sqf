@@ -5,15 +5,25 @@
  * full card.
  *
  * DELIBERATELY NOT THE THREAD COMPOSER. That one answers a thread - its quick
- * replies are the ones the thread's own template says are legal, and its buttons
- * carry the thread id. This one addresses a NET, so there is no thread to be
- * legal within and every phrase is free text. Sharing one function would have
- * meant a parameter deciding which half of it applied, which is two composers
- * wearing one name.
+ * replies are the ones the thread's own template says are legal. This one
+ * addresses a NET, so every phrase is free text rather than a template the
+ * thread's state has to allow.
+ *
+ * A QUICK REPLY ANSWERS WHAT IS ON THE SCREEN (user, 2026-09-03: "quick replies
+ * start new messages"). A net view is a conversation - the whole net in the
+ * order it was said - so pressing ROGER under it means ROGER TO THAT, the way it
+ * means it on a radio. It opened a new thread instead, which put a bare "ROGER"
+ * on the net attached to nothing and left the message it was answering
+ * unanswered.
+ *
+ * So the newest thread on the net comes in and the phrases reply into it. With
+ * NOTHING on the net there is nothing to answer and a new thread is right - that
+ * is the empty-stream call in FUNC(readerNetView), which passes "".
  *
  * Arguments:
  * 0: Pane geometry [x, w] <ARRAY>
  * 1: Y the composer starts at <NUMBER>
+ * 2: Thread the quick phrases answer, "" to open a new one <STRING> (optional, default "")
  *
  * Return Value:
  * None
@@ -21,7 +31,7 @@
  * Public: No
  */
 
-params [["_geom", [0, 0], [[]], 2], ["_cy", 0, [0]]];
+params [["_geom", [0, 0], [[]], 2], ["_cy", 0, [0]], ["_replyTo", "", [""]]];
 
 _geom params ["_dx", "_dw"];
 
@@ -53,9 +63,13 @@ private _net = _box select [2];
 
 [_root, [_dx + _pad, _cy - _padY, _dw - 2 * _pad, RULE_THICK * pixelH], _ink] call FUNC(drawFill);
 
+// SAY WHICH IT IS. A phrase that answers the conversation and a phrase that
+// starts one are the same button, so the header is the only thing that can tell
+// the player which he is about to do.
 [
     _root, [_dx + _pad, _cy, _dw - 2 * _pad, _rowH],
-    format ["SEND TO %1", toUpper _net], _mute, 0.62, true, "left", true
+    format [["SEND TO %1", "REPLY ON %1"] select (_replyTo isNotEqualTo ""), toUpper _net],
+    _mute, 0.62, true, "left", true
 ] call FUNC(drawText);
 _cy = _cy + _rowH;
 
@@ -85,10 +99,19 @@ if (_quick isEqualTo []) then {
             if (_text isEqualTo "") exitWith {};
 
             private _key = ((["freetext"] call EFUNC(messaging,template)) getOrDefault ["order", []]) param [0, "Text.A"];
-            ["freetext", [[_key, _text]], [_ctrl getVariable [QGVAR(quickBox), ""]], ""] call EFUNC(messaging,submit);
+
+            // INTO THE CONVERSATION, when there is one. An addressee opens a
+            // thread and a thread id continues one; passing both is how a reply
+            // would be filed twice, so the addressee goes empty the moment
+            // there is something to answer.
+            private _into = _ctrl getVariable [QGVAR(quickThread), ""];
+            private _to = [[_ctrl getVariable [QGVAR(quickBox), ""]], []] select (_into isNotEqualTo "");
+
+            ["freetext", [[_key, _text]], _to, _into] call EFUNC(messaging,submit);
         }] call FUNC(drawHit);
         _hit setVariable [QGVAR(quickText), _x];
         _hit setVariable [QGVAR(quickBox), _box];
+        _hit setVariable [QGVAR(quickThread), _replyTo];
     } forEach _quick;
 };
 

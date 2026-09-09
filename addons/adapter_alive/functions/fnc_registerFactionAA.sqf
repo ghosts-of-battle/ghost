@@ -53,12 +53,19 @@ if (GVAR(aaRegistered)) exitWith {};
     [_handle] call CBA_fnc_removePerFrameHandler;
     GVAR(aaRegistered) = true;
 
-    // OUR factions, by prefix - the ones this mod authors. A faction from
-    // another mod is that mod's business.
+    // The ghost content mod's factions, by prefix. A faction from another mod
+    // is that mod's business. The prefix stays "ghost_" and is NOT ghost_:
+    // this repo ships no factions of its own, and the classes being matched
+    // are ghost's, which a server may load alongside this mod.
+    //
+    // THE SLICE LENGTH IS 6, NOT 5. It was 5 in ghost, compared against a
+    // six-character string, so the test could never be true, _ours was always
+    // empty and the function exited one line later without registering a
+    // single AA class. ALIVE_factionDefaultAA was never written to.
     private _ours = [];
     {
         private _f = configName _x;
-        if ((_f select [0, 5]) isEqualTo "ghost_") then { _ours pushBack _f };
+        if ((_f select [0, 6]) isEqualTo "ghost_") then { _ours pushBack _f };
     } forEach ("true" configClasses (configFile >> "CfgFactionClasses"));
     if (_ours isEqualTo []) exitWith {};
 

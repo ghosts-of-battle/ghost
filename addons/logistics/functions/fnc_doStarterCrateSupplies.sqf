@@ -11,8 +11,8 @@
  * Nothing
  *
  * Example:
- * [this] call ghost_mission_fnc_doStarterCrateSupplies;
- * [this,"reaper"] call ghost_mission_fnc_doStarterCrateSupplies;
+ * [this] call ghost_logistics_fnc_doStarterCrateSupplies;
+ * [this,"reaper"] call ghost_logistics_fnc_doStarterCrateSupplies;
  *
  */
 

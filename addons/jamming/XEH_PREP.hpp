@@ -14,4 +14,6 @@ PREP(spawnTempZone);
 PREP(spawnZoneAt);
 PREP(zoneModel);
 PREP(moduleController);
+PREP(moduleJammerSite);
+PREP(artyReply);
 PREP(start);

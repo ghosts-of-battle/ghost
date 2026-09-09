@@ -147,6 +147,8 @@ class CfgPatches {
             "ghost_US_JTF_tna_B_T_soldier_UAV_02_LxWS_F",
             "ghost_US_JTF_tna_B_T_soldier_UGV_02_Demining_F",
             "ghost_US_JTF_tna_B_T_soldier_mine_F",
+            "ghost_US_JTF_tna_B_qav_abramsx_templar",
+            "ghost_US_JTF_tna_B_qav_abramsx_tusk",
             "ghost_US_JTF_tna_E22_B_JC_W_AAA_System_01_F",
             "ghost_US_JTF_tna_E22_B_JC_W_Radar_system_01_F",
             "ghost_US_JTF_tna_E22_B_JC_W_SAM_system_01_F",

@@ -26,13 +26,9 @@
 
 if (!isNil QGVAR(squadNetsCache)) exitWith {+GVAR(squadNetsCache)};
 
-private _cfg = missionConfigFile >> "Dynamic_Groups" >> "group_setup";
-
-private _names = if (isArray _cfg) then {
-    (getArray _cfg) apply {_x param [0, ""]} select {_x isEqualType "" && _x isNotEqualTo ""}
-} else {
-    []
-};
+// The ORBAT from one place - the database's when TAC//PAC holds one.
+private _rows = if (!isNil "ghost_groups_fnc_orbat") then {([] call ghost_groups_fnc_orbat) # 0} else {getArray (missionConfigFile >> "Dynamic_Groups" >> "group_setup")};
+private _names = (_rows apply {_x param [0, ""]}) select {_x isEqualType "" && _x isNotEqualTo ""};
 
 GVAR(squadNetsCache) = _names;
 +_names

@@ -75,10 +75,10 @@ class RscGhostButton: RscButton {
     colorText[] = {0.90, 0.90, 0.88, 1};
     colorActive[] = {1, 1, 1, 1};
     colorBackground[] = {0.10, 0.10, 0.10, 1};
-    colorBackgroundActive[] = {0.85, 0.28, 0.20, 1};
+    colorBackgroundActive[] = {0.5, 0.5, 0.5, 0.30};
     colorBackgroundDisabled[] = {0.10, 0.10, 0.10, 1};
     colorDisabled[] = {0.42, 0.42, 0.41, 1};
-    colorFocused[] = {0.14, 0.14, 0.14, 1};
+    colorFocused[] = {0.5, 0.5, 0.5, 0.16};
     colorShadow[] = {0, 0, 0, 0};
     colorBorder[] = {0, 0, 0, 0};
     soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick", 0.06, 1};
@@ -91,32 +91,48 @@ class RscGhostButton: RscButton {
     h = 0;
 };
 
-// SELECTION IS THE TEXT, NOT A BLOCK. The selected row is written in the accent
-// on the same ground as every other row - no fill behind it.
+// SELECTION CARRIES NO HUE, and that is the fix rather than a compromise.
 //
-// It was a solid accent bar with the ground colour written on it, which is how
-// the suite marks a selected row in a dense table. On this screen it is wrong:
-// the rows carry a picture and two colours of their own - dim for taken, accent
-// for yours - and a block of solid colour under one of them buries all of that
-// under the one row you are actually looking at.
+// It was the light scheme's red - as accent-coloured text on no fill, which is
+// how the suite marks a selected row. The trouble is that these six colours are
+// config-only: Arma has no runtime setter for a tree's selection colours, so
+// unlike everything else on this screen they cannot follow a scheme change. A
+// player on Olive got a red selection, one on Sand got a red selection, and one
+// on a custom blue accent got red in the middle of a blue screen. A colour that
+// cannot follow the theme must not claim to be part of it.
 //
-// THESE FOUR ARE CONFIG-ONLY. Arma has no runtime setter for a tree's selection
-// colours, so unlike everything else on this screen they do not follow a scheme
-// change - a player on Olive or Sand gets the red selection. It is one row of
-// one control, and the alternative is repainting the whole tree by hand on every
-// selection change.
+// So selection is a lift of the tree's own ink: the row brightens, the text
+// stays the colour it already was, and nothing contradicts the accent. It is a
+// quieter cue than a coloured row and that is the trade - quiet on every scheme
+// beats loud and wrong on most of them. It also leaves the row's own two
+// colours alone, which was the original objection to a solid block: the rows
+// carry a picture and a state of their own, dim for taken and accent for yours,
+// and a filled bar buries all of that under whichever row you happen to be on.
+//
+// PUTTING THE ACCENT BACK would mean tinting the selected row's icon at runtime,
+// the one part of a row a script can still colour. It needs the row's base icon
+// colour to restore afterwards - ink, dimmed ink, or accent for your own slot,
+// all decided in FUNC(fillRoleTree) - and reading that back off the row is not
+// something the SQF checker will parse. It wants fillRoleTree to record what it
+// painted rather than this to guess.
+//
+// THE TREE'S GROUND IS DARK ON EVERY SCHEME (colorBackground below), so an ink
+// lift is the right direction on all six of them and on a custom one.
 class RscGhostTree: RscTree {
     idc = -1;
     font = "RobotoCondensed";
     sizeEx = "0.85 * (0.025 * safezoneH)";
     colorText[] = {0.90, 0.90, 0.88, 1};
     colorBackground[] = {0.07, 0.07, 0.07, 1};
-    colorSelect[] = {0.85, 0.28, 0.20, 1};
-    colorSelectBackground[] = {0, 0, 0, 0};
-    colorMarked[] = {0.85, 0.28, 0.20, 1};
-    colorMarkedSelected[] = {0.85, 0.28, 0.20, 1};
-    colorMarkedBackground[] = {0, 0, 0, 0};
-    colorMarkedSelectedBackground[] = {0, 0, 0, 0};
+    // focused: the row's own ink, on a lift of it
+    colorSelect[] = {0.90, 0.90, 0.88, 1};
+    colorSelectBackground[] = {0.5, 0.5, 0.5, 0.35};
+    // not focused: the same, quieter, so the tree does not shout while the
+    // card beside it has the keyboard
+    colorMarked[] = {0.90, 0.90, 0.88, 1};
+    colorMarkedSelected[] = {0.90, 0.90, 0.88, 1};
+    colorMarkedBackground[] = {0.90, 0.90, 0.88, 0.07};
+    colorMarkedSelectedBackground[] = {0.90, 0.90, 0.88, 0.07};
     colorBorder[] = {0, 0, 0, 0};
     shadow = 0;
     multiselectEnabled = 0;
@@ -201,62 +217,177 @@ class YMF_groupMenu {
         };
 
         // ------------------------------------------------------------- the rail --
+        // THE RAIL RUNS TO THE LINE (user, 2026-09-03). It was 0.260 wide, and
+        // widening it to 0.280 was not what was asked - the line is at 0.410.
+        // 0.020 + 0.390 = 0.410, and the ROLE column starts at 0.430, so the
+        // squad list gets the left two fifths of the screen instead of a
+        // quarter and five tabs fit across the top of it.
         class RailKicker: RscGhostStructuredText {
             idc = 9714;
             text = "";
             x = "0.020 * safezoneW + safezoneX";
             y = "0.080 * safezoneH + safezoneY";
-            w = "0.260 * safezoneW";
+            w = "0.390 * safezoneW";
             h = "0.026 * safezoneH";
         };
 
-        // THE PLATOON TABS. Four controls, always - the mission decides how many
-        // carry a platoon and fn_initGroupMenu hides the rest. Fixed width
-        // rather than four shares of the rail, so two tabs sit at the left with
-        // air to their right instead of stretching to half the screen each.
+        // THE PLATOON TABS. Ten of them, FIVE to a row (user, 2026-09-03),
+        // always present - the mission decides how many carry a platoon and
+        // fn_initGroupMenu hides the rest.
         //
-        // 0.0635 x 4 plus three 0.002 gaps is the rail's own 0.260 exactly.
+        // 0.0760 x 5 plus four 0.0025 gaps is the rail's own 0.390 exactly.
+        //
+        // SHORTER THAN THEY WERE. The double-height tab was 0.052 and read as a
+        // slab; 0.042 holds the same two lines with the air taken out.
+        //
+        // EACH TAB IS TWO CONTROLS, A LABEL WITH A BUTTON ON TOP OF IT. The
+        // label is structured text because a tab carries two lines - the type
+        // over the callsign - and an Arma button draws exactly one, with no
+        // ST_MULTI and no newline in text. The button has no text and no fill
+        // in any state; it catches the click and reports the pointer, and the
+        // lift under it is painted onto the LABEL by fn_selectPlatoon and
+        // fn_hoverTab. See script_component.hpp.
         //
         // WHY CONFIG AND NOT SQF. fn_styleGroupMenu scales every control on the
         // display about the screen centre for the player's UI scale; a control
         // positioned afterwards in script would be the one thing on the screen
         // that ignored the setting.
-        class PltTab1: RscGhostButton {
+        class PltTabLabel1: RscGhostStructuredText {
             idc = 9720;
             text = "";
             x = "0.0200 * safezoneW + safezoneX";
-            y = "0.110 * safezoneH + safezoneY";
-            w = "0.0635 * safezoneW";
-            h = "0.030 * safezoneH";
-            sizeEx = "0.62 * (0.025 * safezoneH)";
-            colorBackground[] = {0, 0, 0, 0};
-            onButtonClick = "[0] call ghost_groups_fnc_selectPlatoon;";
+            y = "0.112 * safezoneH + safezoneY";
+            w = "0.0760 * safezoneW";
+            h = "0.036 * safezoneH";
         };
-        class PltTab2: PltTab1 {
+        class PltTabLabel2: PltTabLabel1 {
             idc = 9721;
-            x = "0.0855 * safezoneW + safezoneX";
-            onButtonClick = "[1] call ghost_groups_fnc_selectPlatoon;";
+            x = "0.0985 * safezoneW + safezoneX";
         };
-        class PltTab3: PltTab1 {
+        class PltTabLabel3: PltTabLabel1 {
             idc = 9722;
-            x = "0.1510 * safezoneW + safezoneX";
-            onButtonClick = "[2] call ghost_groups_fnc_selectPlatoon;";
+            x = "0.1770 * safezoneW + safezoneX";
         };
-        class PltTab4: PltTab1 {
+        class PltTabLabel4: PltTabLabel1 {
             idc = 9723;
-            x = "0.2165 * safezoneW + safezoneX";
-            onButtonClick = "[3] call ghost_groups_fnc_selectPlatoon;";
+            x = "0.2555 * safezoneW + safezoneX";
+        };
+        class PltTabLabel5: PltTabLabel1 {
+            idc = 9724;
+            x = "0.3340 * safezoneW + safezoneX";
+        };
+        class PltTabLabel6: PltTabLabel1 {
+            idc = 9725;
+            y = "0.157 * safezoneH + safezoneY";
+        };
+        class PltTabLabel7: PltTabLabel6 {
+            idc = 9726;
+            x = "0.0985 * safezoneW + safezoneX";
+        };
+        class PltTabLabel8: PltTabLabel6 {
+            idc = 9727;
+            x = "0.1770 * safezoneW + safezoneX";
+        };
+        class PltTabLabel9: PltTabLabel6 {
+            idc = 9728;
+            x = "0.2555 * safezoneW + safezoneX";
+        };
+        class PltTabLabel10: PltTabLabel6 {
+            idc = 9729;
+            x = "0.3340 * safezoneW + safezoneX";
         };
 
-        // The tree starts under the tab row and still ends where it always did,
-        // so a screen with no tabs loses nothing - fn_initGroupMenu puts the top
-        // edge back to 0.110 when the mission declares no platoons.
+        // The catchers. Declared after the labels so they draw on top of them.
+        class PltTab1: RscGhostButton {
+            idc = 9730;
+            text = "";
+            x = "0.0200 * safezoneW + safezoneX";
+            y = "0.108 * safezoneH + safezoneY";
+            w = "0.0760 * safezoneW";
+            h = "0.042 * safezoneH";
+            colorBackground[] = {0, 0, 0, 0};
+            colorBackgroundActive[] = {0, 0, 0, 0};
+            colorBackgroundDisabled[] = {0, 0, 0, 0};
+            colorFocused[] = {0, 0, 0, 0};
+            onButtonClick = "[0] call ghost_groups_fnc_selectPlatoon;";
+            onMouseEnter = "[0, true] call ghost_groups_fnc_hoverTab;";
+            onMouseExit = "[0, false] call ghost_groups_fnc_hoverTab;";
+        };
+        class PltTab2: PltTab1 {
+            idc = 9731;
+            x = "0.0985 * safezoneW + safezoneX";
+            onButtonClick = "[1] call ghost_groups_fnc_selectPlatoon;";
+            onMouseEnter = "[1, true] call ghost_groups_fnc_hoverTab;";
+            onMouseExit = "[1, false] call ghost_groups_fnc_hoverTab;";
+        };
+        class PltTab3: PltTab1 {
+            idc = 9732;
+            x = "0.1770 * safezoneW + safezoneX";
+            onButtonClick = "[2] call ghost_groups_fnc_selectPlatoon;";
+            onMouseEnter = "[2, true] call ghost_groups_fnc_hoverTab;";
+            onMouseExit = "[2, false] call ghost_groups_fnc_hoverTab;";
+        };
+        class PltTab4: PltTab1 {
+            idc = 9733;
+            x = "0.2555 * safezoneW + safezoneX";
+            onButtonClick = "[3] call ghost_groups_fnc_selectPlatoon;";
+            onMouseEnter = "[3, true] call ghost_groups_fnc_hoverTab;";
+            onMouseExit = "[3, false] call ghost_groups_fnc_hoverTab;";
+        };
+        class PltTab5: PltTab1 {
+            idc = 9734;
+            x = "0.3340 * safezoneW + safezoneX";
+            onButtonClick = "[4] call ghost_groups_fnc_selectPlatoon;";
+            onMouseEnter = "[4, true] call ghost_groups_fnc_hoverTab;";
+            onMouseExit = "[4, false] call ghost_groups_fnc_hoverTab;";
+        };
+        class PltTab6: PltTab1 {
+            idc = 9735;
+            y = "0.153 * safezoneH + safezoneY";
+            onButtonClick = "[5] call ghost_groups_fnc_selectPlatoon;";
+            onMouseEnter = "[5, true] call ghost_groups_fnc_hoverTab;";
+            onMouseExit = "[5, false] call ghost_groups_fnc_hoverTab;";
+        };
+        class PltTab7: PltTab6 {
+            idc = 9736;
+            x = "0.0985 * safezoneW + safezoneX";
+            onButtonClick = "[6] call ghost_groups_fnc_selectPlatoon;";
+            onMouseEnter = "[6, true] call ghost_groups_fnc_hoverTab;";
+            onMouseExit = "[6, false] call ghost_groups_fnc_hoverTab;";
+        };
+        class PltTab8: PltTab6 {
+            idc = 9737;
+            x = "0.1770 * safezoneW + safezoneX";
+            onButtonClick = "[7] call ghost_groups_fnc_selectPlatoon;";
+            onMouseEnter = "[7, true] call ghost_groups_fnc_hoverTab;";
+            onMouseExit = "[7, false] call ghost_groups_fnc_hoverTab;";
+        };
+        class PltTab9: PltTab6 {
+            idc = 9738;
+            x = "0.2555 * safezoneW + safezoneX";
+            onButtonClick = "[8] call ghost_groups_fnc_selectPlatoon;";
+            onMouseEnter = "[8, true] call ghost_groups_fnc_hoverTab;";
+            onMouseExit = "[8, false] call ghost_groups_fnc_hoverTab;";
+        };
+        class PltTab10: PltTab6 {
+            idc = 9739;
+            x = "0.3340 * safezoneW + safezoneX";
+            onButtonClick = "[9] call ghost_groups_fnc_selectPlatoon;";
+            onMouseEnter = "[9, true] call ghost_groups_fnc_hoverTab;";
+            onMouseExit = "[9, false] call ghost_groups_fnc_hoverTab;";
+        };
+
+        // THE TREE IS WRITTEN FOR ONE ROW OF TABS and ends at 0.878, ten
+        // thousandths above the footer rule. fn_initGroupMenu pushes the top
+        // down by exactly one tab row when the mission declares more than five
+        // platoons, and puts it back up to the tab row's own y when it declares
+        // none, so a screen with no tabs loses nothing.
         class RoleList: RscGhostTree {
             idc = 1500;
             x = "0.020 * safezoneW + safezoneX";
-            y = "0.146 * safezoneH + safezoneY";
-            w = "0.260 * safezoneW";
-            h = "0.724 * safezoneH";
+            y = "0.158 * safezoneH + safezoneY";
+            w = "0.390 * safezoneW";
+            h = "0.720 * safezoneH";
             onTreeSelChanged = "call ghost_groups_fnc_onGroupMenuTvSelectChange;";
             onTreeDblClick = "[] call ghost_groups_fnc_selectPosition;";
         };
@@ -265,9 +396,9 @@ class YMF_groupMenu {
         class CardKicker: RscGhostStructuredText {
             idc = 9715;
             text = "";
-            x = "0.300 * safezoneW + safezoneX";
+            x = "0.430 * safezoneW + safezoneX";
             y = "0.080 * safezoneH + safezoneY";
-            w = "0.680 * safezoneW";
+            w = "0.550 * safezoneW";
             h = "0.026 * safezoneH";
         };
 
@@ -275,9 +406,9 @@ class YMF_groupMenu {
             delete HScrollBar;
 
             idc = 1205;
-            x = "0.300 * safezoneW + safezoneX";
+            x = "0.430 * safezoneW + safezoneX";
             y = "0.110 * safezoneH + safezoneY";
-            w = "0.680 * safezoneW";
+            w = "0.550 * safezoneW";
             h = "0.760 * safezoneH";
 
             class Controls {
@@ -286,7 +417,7 @@ class YMF_groupMenu {
                     text = "";
                     x = 0;
                     y = 0;
-                    w = "0.660 * safezoneW";
+                    w = "0.530 * safezoneW";
                     h = "0.760 * safezoneH";
                 };
             };

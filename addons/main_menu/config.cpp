@@ -7,7 +7,12 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "ghost_main"
+            "ghost_main",
+            // XEH_preInit seeds the profile through
+            // EFUNC(common,runAfterSettingsInit) - a nil EFUNC target resolves
+            // to nothing rather than erroring, so without this the quick
+            // connect settings would silently never reach the main menu
+            "ghost_common"
         };
         author = QAUTHOR;
         authors[] = {"veteran29"};

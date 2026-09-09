@@ -63,7 +63,9 @@ private _net = GVAR(readerNet);
 private _title = [_net, "ALL NETS"] select (_net isEqualTo "ALL");
 
 private _y = _padY;
-[_root, [_dx + _pad, _y, _dw - 2 * _pad, _rowH * 1.2], toUpper _title, _ink, 1.2, true] call FUNC(drawText);
+// The title stops short of the CLOSE button FUNC(readerDraw) puts in the
+// pane's top-right corner (user, 2026-09-05).
+[_root, [_dx + _pad, _y, _dw - _dw * 0.15 - 3 * _pad, _rowH * 1.2], toUpper _title, _ink, 1.2, true] call FUNC(drawText);
 _y = _y + _rowH * 1.3;
 
 [
@@ -92,8 +94,21 @@ if (_stream isEqualTo []) exitWith {
         ["NOTHING ON THIS NET", "FETCHING..."] select (_pending > 0),
         _dim, 1, true, "center"
     ] call FUNC(drawText);
+
+    // NOTHING TO ANSWER, so a quick phrase opens a thread - which is the only
+    // time it should. See FUNC(readerComposer).
     [[_dx, _dw], _floor] call FUNC(readerComposer);
 };
+
+// WHAT A QUICK PHRASE ANSWERS: the newest thread on the net, which is the one at
+// the bottom of the pane the player is looking at. The stream is already sorted
+// oldest first - see EFUNC(messaging,netStream) - so it is the last row.
+private _replyTo = "";
+{
+    _x params ["", ["_t", createHashMap]];
+    private _id = _t getOrDefault ["id", ""];
+    if (_id isEqualType "" && _id isNotEqualTo "") then {_replyTo = _id};
+} forEach _stream;
 
 // NEWEST LAST, AND THE NEWEST IS WHAT FITS. A conversation is read at its
 // bottom; when there is more than the pane holds it is the OLD end that goes,
@@ -173,16 +188,21 @@ private _myUid = getPlayerUID player;
         _dim, 0.58, false, ["left", "right"] select _mine
     ] call FUNC(drawText);
 
-    // --- the words ---------------------------------------------------------
-    private _body = [_msg getOrDefault ["templateId", ""], _msg getOrDefault ["payload", []], false] call EFUNC(messaging,render);
-    _body = (_body splitString endl) select {_x != ""} joinString " - ";
+    // --- the subject, not the words ---------------------------------------
+    // The whole report flattened into one line was a preview nobody could
+    // read (user, 2026-09-05: "again remove this preview"). Under the tags
+    // goes the thread's subject; the words are one click away in the thread.
+    private _subject = _thread getOrDefault ["subject", ""];
+    if !(_subject isEqualType "" && _subject isNotEqualTo "") then {
+        _subject = ([_msg getOrDefault ["templateId", ""]] call EFUNC(messaging,template)) getOrDefault ["title", "MESSAGE"];
+    };
 
     [
         _root, [_tx, _y + _rowH * 0.8, _tw, _rowH],
-        _body, ([_ink, _accent] select _urgent), 0.8, false, _align
+        _subject, ([_ink, _accent] select _urgent), 0.85, true, _align
     ] call FUNC(drawText);
 
     _y = _y + _lineH;
 } forEach _shown;
 
-[[_dx, _dw], _floor] call FUNC(readerComposer);
+[[_dx, _dw], _floor, _replyTo] call FUNC(readerComposer);

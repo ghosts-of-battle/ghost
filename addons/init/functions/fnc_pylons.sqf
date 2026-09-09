@@ -15,7 +15,7 @@
 INFO("VehiclePylon","Creating pylons database");
 
 // Handed over by the mission - see FUNC(logistics).
-private _raw = missionNamespace getVariable ["ghost_missionConfig_pylons", []];
+private _raw = missionNamespace getVariable ["ghostFR_missionConfig_pylons", []];
 
 if (_raw isEqualTo []) exitWith {
     INFO("VehiclePylon","This mission handed over no pylon catalogue - empty database.");

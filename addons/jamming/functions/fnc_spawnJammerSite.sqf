@@ -116,7 +116,10 @@ if (_domain isEqualTo DOM_GPS) then {
 // that jams perfectly well and simply is not garrisoned, and registerSite
 // refuses an asymmetric commander by design, so a guerrilla war gets its
 // jamming without an OPCOM trying to build an installation on it.
-if (_domain isEqualTo DOM_GPS || GVAR(siteObjectives)) then {
+// Guarded, unlike ghost's copy: jamming no longer hard-requires the adapter
+// (see config.cpp), so with ALiVE absent this function must still finish.
+if ((_domain isEqualTo DOM_GPS || GVAR(siteObjectives))
+    && {!isNil QEFUNC(adapter_alive,registerSite)}) then {
     private _objId = format ["ghost_jam_%1", _id];
     if ([_side, _objId, _pos, JAM_SITE_OBJ_SIZE] call EFUNC(adapter_alive,registerSite)) then {
         _obj setVariable [QGVAR(aliveObjective), _objId];

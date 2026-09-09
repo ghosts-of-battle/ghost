@@ -73,12 +73,15 @@ if (isServer) then {
     // A witnessed pop hack: the nearest settlement remembers. Who keeps that
     // ledger and how is the adapter's business - this says what happened and
     // where, on the server, because that is where the population system reads
-    // it. Without the adapter answering, nobody is keeping score and the hack
-    // simply goes unremarked.
+    // it. Without the adapter answering nobody is keeping score, so the hack is
+    // logged as witnessed and goes otherwise unremarked - which is what a
+    // mission with no civilian model can honestly do with it.
     [QGVAR(popSeen), {
         params [["_pos", [], [[]]], ["_sideStr", "", [""]]];
         if (_pos isEqualTo [] || _sideStr isEqualTo "") exitWith {};
-        if (isNil QEFUNC(adapter_alive,bumpHostility)) exitWith {};
+        if (isNil QEFUNC(adapter_alive,bumpHostility)) exitWith {
+            INFO_2("pop hack witnessed at %1 by a civilian hostile to %2",mapGridPosition _pos,_sideStr);
+        };
 
         private _now = [_pos, _sideStr, POP_HOSTILITY_BUMP] call EFUNC(adapter_alive,bumpHostility);
         if (_now < 0) exitWith {};
@@ -177,12 +180,6 @@ if (isServer) then {
     [_caller, getPosASL _caller] call FUNC(remoteHackFail);
     "failure package fired - check behaviour of nearby enemy groups / ew.zones for a temp zone"
 }] call EFUNC(common,addDebugCommand);
-
-["hack.tablet", "open the hacking tablet", {
-    params ["_args", "_caller"];
-    [_caller] call FUNC(tabletOpen);
-    "tablet opened"
-}, true] call EFUNC(common,addDebugCommand);
 
 ["hack.devices", "list what the tablet can currently see", {
     params ["_args", "_caller"];
@@ -416,6 +413,7 @@ if (isServer) then {
             INFO_3("intel tally restored: banked %1, tier %2, %3 hinted",GVAR(banked),_t,_n);
         };
     }] call CBA_fnc_addEventHandler;
+
 
     ["CAManBase", "killed", LINKFUNC(onBodyKilled)] call CBA_fnc_addClassEventHandler;
 

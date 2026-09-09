@@ -14,9 +14,17 @@
         gets the flat list it has always had, tab row hidden, nothing moved.
         That is what every mission other than this one does.
 
-        FOUR IS THE CAP (user: "up to 4 tabs please"), and it is a real limit
-        rather than a suggestion: the tab row is four controls wide in
-        gui.hpp. A fifth is dropped with a line in the RPT.
+        A TAB HAS TWO LINES NOW (user, 2026-09-03: "make the buttons double
+        height to add second row to call signs"). "name" is the top line and
+        says what kind of element it is - "1ST PLT INF", "C2" - and "callsign"
+        is the word under it in bold, which is what anyone actually says on the
+        radio. A tab with no callsign draws one line and looks like it always
+        did, so a mission that never heard of the property is unaffected.
+
+        TEN IS THE CAP, and it is a real limit rather than a suggestion: the
+        tab row is ten controls in gui.hpp, FIVE to a row. Five across puts the
+        whole task force on one row. An eleventh is dropped with a line in the
+        RPT.
 
         A SQUAD IN NO TAB STILL APPEARS. If it did not, a role nobody can see
         is a role nobody can take, and the screen would lie about how many
@@ -31,36 +39,38 @@
         NONE
 
     Returns:
-        ARRAY - [[tab label, [SQUAD NAMES, upper-cased]], ...], [] for no tabs
+        ARRAY - [[tab label, [SQUAD NAMES, upper-cased], callsign], ...],
+                [] for no tabs
 */
 
-private _root = missionConfigFile >> "Dynamic_Groups" >> "Platoons";
-if (!isClass _root) exitWith {[]};
+// The ORBAT - the database's when TAC//PAC holds one, else the mission's.
+([] call FUNC(orbat)) params ["", "_platoonRows"];
+if (_platoonRows isEqualTo []) exitWith {[]};
 
 private _out = [];
 private _over = [];
 
 {
-    private _label = getText (_x >> "name");
-    private _squads = (getArray (_x >> "squads")) apply {toUpper _x};
+    _x params ["_id", "_label", "_callsign", "", "_squadsRaw"];
+    private _squads = _squadsRaw apply {toUpper _x};
 
     // A tab with no name or no squads is a typo, and it says so - an empty tab
     // is indistinguishable from a squad that failed to load.
     if (_label isEqualTo "" || {_squads isEqualTo []}) then {
-        WARNING_1("Platoons","tab '%1' has no name or no squads - skipped",configName _x);
+        WARNING_1("Platoons","tab '%1' has no name or no squads - skipped",_id);
         continue;
     };
 
-    if (count _out >= 4) then {
+    if (count _out >= MAX_PLT_TABS) then {
         _over pushBack _label;
         continue;
     };
 
-    _out pushBack [toUpper _label, _squads];
-} forEach (configProperties [_root, "isClass _x", true]);
+    _out pushBack [toUpper _label, _squads, toUpper _callsign];
+} forEach _platoonRows;
 
 if (_over isNotEqualTo []) then {
-    WARNING_2("Platoons","%1 tab(s) past the fourth were dropped: %2",count _over,_over joinString ", ");
+    WARNING_2("Platoons","%1 tab(s) past the tenth were dropped: %2",count _over,_over joinString ", ");
 };
 
 if (_out isEqualTo []) exitWith {[]};
@@ -72,13 +82,13 @@ private _named = [];
 private _loose = (YMF_dynamicGroups apply {toUpper (_x select 0)}) select {!(_x in _named)};
 
 if (_loose isNotEqualTo []) then {
-    if (count _out < 4) then {
-        _out pushBack ["UNASSIGNED", _loose];
+    if (count _out < MAX_PLT_TABS) then {
+        _out pushBack ["UNASSIGNED", _loose, ""];
         INFO_1("Platoons","%1 in no tab - shown under UNASSIGNED",_loose joinString ", ");
     } else {
-        private _last = _out select 3;
+        private _last = _out select (MAX_PLT_TABS - 1);
         _last set [1, (_last select 1) + _loose];
-        INFO_2("Platoons","%1 in no tab and all four tabs are taken - shown under %2",_loose joinString ", ",_last select 0);
+        INFO_2("Platoons","%1 in no tab and all tabs are taken - shown under %2",_loose joinString ", ",_last select 0);
     };
 };
 

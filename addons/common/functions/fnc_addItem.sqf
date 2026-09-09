@@ -9,7 +9,7 @@
  * 0: unit   - <OBJECT>
  * 1: item   - <STRING>
  * 2: amount  - <NUMBER>
- * 3: priority  - <ARRAY> [0 = Uniform, 1 = Vest, 2 = Backpack]
+ * 3: priority  - <ARRAY> [0 = Cargo, 1 = Uniform, 2 = Vest, 3 = Backpack]
  * 4: overflow  - <BOOLEAN> [Default = true]
  *
  * Return:

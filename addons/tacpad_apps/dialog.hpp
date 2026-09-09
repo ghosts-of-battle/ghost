@@ -8,6 +8,12 @@
 // draws to the same numbers - a config value cannot be built from macros
 // with commas, and this addon has been caught by that before.
 
+// RscText IS FORWARD-DECLARED, and ghost's copy of this file does not do it.
+// `class Backdrop: RscText` fails L-C04 "class's parent is not present"
+// otherwise - it happens to resolve in ghost's include order and does not here.
+// Worth carrying back to ghost either way: an inherited class you do not
+// declare is a build that depends on somebody else's include order.
+class RscText;
 class RscMapControl;
 
 class GVAR(supportDlg) {

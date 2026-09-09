@@ -66,7 +66,6 @@ Off by default until the module's **Radio Burn-Through** is ticked.
 - `ghost_main`
 - `ghost_common`
 - `ghost_notify`
-- `ghost_adapter_alive`
 - `cba_xeh` _(external)_
 
 Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking the load order when something above is absent.

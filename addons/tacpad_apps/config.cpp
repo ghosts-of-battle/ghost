@@ -23,7 +23,6 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
-
-class RscText;
 #include "dialog.hpp"
+
 

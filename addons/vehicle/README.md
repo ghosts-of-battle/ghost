@@ -53,6 +53,5 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 - `ghost_vehicle_fnc_reset`
 - `ghost_vehicle_fnc_setRadio`
 - `ghost_vehicle_fnc_setupPylonCategories`
-- `ghost_vehicle_fnc_vehicleSpawner`
 
 </details>

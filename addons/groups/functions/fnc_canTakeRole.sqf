@@ -2,29 +2,17 @@
 /*
     File: fn_canTakeRole.sqf
     Author: Dom -- Tinkered with by YonV
-    Description: Rank gate for roles. A role listed in Role_Access (config_ranks.hpp)
-        requires its minRank (from Dynamic_Ranks); an optional uids[] whitelist allows
-        those players regardless of rank. Unlisted roles are open to everyone.
-        Admin role-access grants (YMF_roleGrants) bypass the check.
+    Description: Whether a player may take a role - the yes/no face of
+        FUNC(roleGate), which is where the rules live (admin grants, then
+        TAC//PAC's gates when the role carries any, else the mission's
+        Role_Access). Kept for the callers that only want a BOOL.
+
+    Parameters:
+        0: OBJECT - the unit
+        1: STRING - the role class
+
+    Returns:
+        BOOL
 */
-params [
-    ["_unit",objNull,[objNull]],
-    ["_roleClass","",[""]]
-];
 
-private _uid = getPlayerUID _unit;
-if (_uid in (missionNamespace getVariable ["YMF_roleGrants",[]])) exitWith {true};
-
-private _accessConfig = missionConfigFile >> "Role_Access" >> _roleClass;
-if (!isClass _accessConfig) exitWith {true}; //role is unrestricted
-
-if (_uid in getArray (_accessConfig >> "uids")) exitWith {true};
-
-private _minRank = getText (_accessConfig >> "minRank");
-if (_minRank isEqualTo "") exitWith {false}; //uids-only restriction and not whitelisted
-
-private _rankOrder = ["PRIVATE","CORPORAL","SERGEANT","LIEUTENANT","CAPTAIN","MAJOR","COLONEL"];
-private _required = _rankOrder find toUpper _minRank;
-if (_required isEqualTo -1) exitWith {true}; //bad minRank in config - don't lock the role
-
-(_rankOrder find toUpper ([_unit] call EFUNC(players,getRank))) >= _required
+(_this call FUNC(roleGate)) # 0

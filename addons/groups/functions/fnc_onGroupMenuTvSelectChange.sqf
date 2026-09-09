@@ -70,15 +70,19 @@ private _unit = objectFromNetId _unitNetID;
 
 _button ctrlEnable (isNull _unit);
 
-private _roleData = missionConfigFile >> "Dynamic_Roles" >> _selectedRole;
-private _roleName = getText(_roleData >> "name");
-private _roleDesc = getText(_roleData >> "description");
+// THE ROLE, from wherever the unit keeps it - the database, the profile or
+// the mission's Dynamic_Roles - see FUNC(role).
+private _roleData = [_selectedRole] call FUNC(role);
+private _roleName = _roleData getOrDefault ["name", _selectedRole];
+private _roleDesc = _roleData getOrDefault ["description", ""];
 
-private _defaultLoadout = getArray(_roleData >> "defaultLoadout");
+private _defaultLoadout = _roleData getOrDefault ["defaultLoadout", []];
+if !(_defaultLoadout isEqualType []) then {_defaultLoadout = []};
 private _defaultLoadoutText = [];
 
 for "_i" from 0 to 5 do {
-    private _array = _defaultLoadout select _i;
+    private _array = _defaultLoadout param [_i, []];
+    if !(_array isEqualType []) then {_array = []};
     _array params [["_className",""]];
     if (_className isEqualTo "") then {
         _defaultLoadoutText pushBack "-";
@@ -91,7 +95,8 @@ for "_i" from 0 to 5 do {
     };
 };
 
-private _helmetClass = _defaultLoadout select 6;
+private _helmetClass = _defaultLoadout param [6, ""];
+if !(_helmetClass isEqualType "") then {_helmetClass = ""};
 if (_helmetClass isEqualTo "") then {
     _defaultLoadoutText pushBack "-";
 } else {

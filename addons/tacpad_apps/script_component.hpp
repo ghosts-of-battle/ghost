@@ -12,11 +12,6 @@
 // addon at the shell's function folder.
 #include "\z\ghost\addons\tacpad\shared.inc.hpp"
 
-// The intrusion suite's control ids, so its dialog can be repainted in the
-// tacpad's colours. Only the ids - hacking is a soft dependency and the suite
-// keeps working with none of this loaded.
-#include "\z\ghost\addons\hacking\tablet.inc.hpp"
-
 // The tile module from the design: 176x98 at 1600x900, carried over as
 // fractions of the safe zone so it holds its proportions at any resolution.
 // 0.086, not the design's 0.092. Six tiles, five gaps and two margins have to

@@ -138,6 +138,11 @@
 #define JAM_SITE_SPREAD     14
 #define JAM_SITE_OBJ_SIZE   60
 
+// How often a site with Artillery Reply armed looks at its own field. Five
+// seconds, because the thing being measured is a dwell time in the tens of
+// seconds and nearEntities over a 3 km radius is not free.
+#define JAM_ARTY_TICK       5
+
 // How often dead or hacked emitters are pruned from the registry.
 #define JAM_PRUNE_TICK      10
 

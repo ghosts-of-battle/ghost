@@ -14,11 +14,15 @@ GVAR(curators) = [];
         // AN AUTONOMOUS VEHICLE KEEPS ITS AI. ALiVE profiles what Zeus places
         // (the mission's zeusSpawn option), deletes the original, and hands
         // back a bare hull - its profiler blacklists UAV-AI crew, so the seat
-        // comes back empty. The adapter's profileIgnore is the opt-out, the
-        // same one airdefence sets on its batteries; without ALiVE it is an
-        // inert variable. isUav covers every autonomous turret and drone - it
-        // is what makes them UAV-terminal connectable - never a crewed truck.
-        if (getNumber (configOf _object >> "isUav") > 0) then {
+        // comes back empty. The adapter's profileIgnore is the opt-out.
+        // isUav covers every autonomous turret and drone - it is what makes
+        // them UAV-terminal connectable - never a crewed truck.
+        //
+        // GUARDED, unlike ghost's copy. curator does not list the adapter in
+        // requiredAddons, so with ALiVE absent its PBO is skipped and these
+        // would be calls on a nil variable.
+        if (getNumber (configOf _object >> "isUav") > 0
+            && {!isNil QEFUNC(adapter_alive,profileIgnore)}) then {
             [_object] call EFUNC(adapter_alive,profileIgnore);
             // The crew's GROUP, not the men one by one: the adapter's group
             // path marks the group, its members and their vehicle in one go,

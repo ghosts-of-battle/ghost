@@ -5,23 +5,32 @@
 // it takes - each leg judged by ACRE's own propagation model, so terrain and
 // antennas still count. Direct is always preferred when it is the stronger
 // link; with no relay in reach the result is exactly ACRE's.
+//
+// OFF BY DEFAULT (user, 2026-09-05): a unit switches it on knowing what it
+// changes. Off, the signal function still runs - ACRE's own point-to-point
+// result, scaled by the jam level - so jamming is unaffected either way.
 
 [
     QGVAR(enabled), "CHECKBOX",
-    ["Enable mesh relaying", "Friendly radios on the same frequency relay transmissions that cannot reach a receiver directly. Off returns ACRE's stock point-to-point signal (still scaled by jamming)."],
+    ["Enable mesh relaying", "OFF by default. On: friendly manpacks and vehicle racks on the same frequency relay transmissions that cannot reach a receiver directly. Off: ACRE's stock point-to-point signal, still scaled by jamming."],
     ["Ghosts of Battle", "Radio Mesh"],
-    true,
+    false,
     true
 ] call CBA_fnc_addSetting;
 
 // WHICH RADIOS RELAY. Manpacks and vehicle racks (user, 2026-08-28) - the
 // squad handheld is an end point, never a relay. Base class names, comma
 // separated; a radio's base type is matched (ACRE_PRC152_ID_3 is a PRC152).
+//
+// THE 148 IS OFF THIS LIST because it is the team handset every man carries.
+// Ninety-two riflemen acting as relays would mean team traffic hopping out of
+// the team through the very men its low power is there to contain. Put it back
+// only if it stops being the team radio.
 [
     QGVAR(nodeRadios), "EDITBOX",
     ["Relay radios", "Comma-separated ACRE base radio classes that act as relay nodes when carried or racked. Anything can still be an end point."],
     ["Ghosts of Battle", "Radio Mesh"],
-    "ACRE_PRC148,ACRE_PRC152,ACRE_PRC117F",
+    "ACRE_PRC152,ACRE_PRC117F",
     true
 ] call CBA_fnc_addSetting;
 

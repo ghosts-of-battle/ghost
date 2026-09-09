@@ -27,10 +27,6 @@ if (!hasInterface) exitWith {};
 ["drones", FUNC(appDrones)] call EFUNC(tacpad,registerApp);
 ["jam", FUNC(appJamming)] call EFUNC(tacpad,registerApp);
 
-// TAC//SUPPORT - ALiVE combat support fronted through the adapter, gated by
-// a messaging tag rather than a role tree.
-["support", FUNC(appSupport)] call EFUNC(tacpad,registerApp);
-
 // The player's own clock, off the band.
 ["timer", FUNC(appTimer)] call EFUNC(tacpad,registerApp);
 ["radio", FUNC(appRadio)] call EFUNC(tacpad,registerApp);
@@ -65,19 +61,40 @@ addMissionEventHandler ["Map", {
         // And nothing is the open app, so no refresh loop comes back with the
         // map next time - see EFUNC(tacpad,openApp).
         uiNamespace setVariable [QEGVAR(tacpad,appCurrent), ""];
-
-        // The map control goes with the display and takes any tool's Draw
-        // handler with it, so the strip must not come back still claiming one
-        // is running - the id it held is meaningless against a new control.
-        GVAR(activeTool) = "";
-        uiNamespace setVariable [QGVAR(toolEH), nil];
     };
 }];
 
+// The intrusion suite, reached from its own tile. It is the interface now -
+// hacking's own dialog is gone, and with it fnc_themeTablet, which existed only
+// to repaint that dialog in the suite's colours after hacking announced it.
+["hack", FUNC(appHack)] call EFUNC(tacpad,registerApp);
+
+// TAC//INTEL - the files a hack recovered, filed against the side that
+// recovered them. See EFUNC(hacking,productPackage).
+["intel", FUNC(appIntel)] call EFUNC(tacpad,registerApp);
+
+// TAC//SUPPORT - combat support fronted through the adapter, gated by a
+// messaging tag rather than a role tree. One board, three back ends: ALiVE's
+// ATO and NEO combat support, ghost's own CAS module, and Simplex Support
+// Services - the last two arrive as rows through
+// EGVAR(adapter_alive,providers), which is what that registry is for.
+//
+// NOT REGISTERED WITHOUT THE ADAPTER. EFUNC(adapter_alive,supportAssets) is the
+// board's only way in, so with the adapter's PBO skipped for want of ALiVE the
+// app would be a door onto an empty room. The tile goes with it, in
+// FUNC(tileData). This is a real narrowing against DIVINER, where a Simplex-only
+// server got the board: here Simplex reaches the board THROUGH the registry, so
+// the adapter has to be there to hold it.
+if (!isNil QEFUNC(adapter_alive,supportAssets)) then {
+    ["support", FUNC(appSupport)] call EFUNC(tacpad,registerApp);
+    // Simplex, as a provider row rather than as the whole board.
+    if (EGVAR(patches,usesSimplex)) then { [] call FUNC(simplexProvider) };
+};
+
 // THE DELIVERY RECEIPT from the adapter: the combat-support FSM consumed the
-// order (or never did, after 20s). Lands in the support screen's verdict row
-// and the notify rail, and forces a redraw so it shows the moment it arrives
-// rather than on the next poll tick.
+// order, or never did, after 20s. Lands in the support screen's verdict row and
+// the notify rail, and forces a redraw so it shows the moment it arrives rather
+// than on the next poll tick.
 [QEGVAR(adapter_alive,supportAck), {
     params [["_assetId", ""], ["_ok", true], ["_said", ""]];
     missionNamespace setVariable [QGVAR(supportFlash), [_said, _ok, CBA_missionTime]];
@@ -86,14 +103,7 @@ addMissionEventHandler ["Map", {
         {["support"] call EFUNC(tacpad,openApp)} call CBA_fnc_execNextFrame;
     };
 }] call CBA_fnc_addEventHandler;
-
-// The intrusion suite reached from its own tile, and repainted to match
-// everything around it. hacking announces its dialog rather than styling it, so
-// the suite still works with no tacpad loaded - see fnc_themeTablet.
-["hack", FUNC(appHack)] call EFUNC(tacpad,registerApp);
 ["settings", FUNC(appSettings)] call EFUNC(tacpad,registerApp);
-
-[QEGVAR(hacking,tabletOpened), LINKFUNC(themeTablet)] call CBA_fnc_addEventHandler;
 
 // Each client publishes its own radio channel, because neither ACRE nor TFAR
 // will answer for anybody but the caller - see FUNC(radioState). Five seconds is

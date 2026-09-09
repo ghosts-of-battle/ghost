@@ -21,7 +21,7 @@ if (!isServer) exitWith {};
 //
 // A mission that hands over nothing leaves AI skill alone, which is the right
 // answer for a mission that never asked for adjustment.
-GVAR(skillBlock) = missionNamespace getVariable ["ghost_missionConfig_skillBlock", {}];
+GVAR(skillBlock) = missionNamespace getVariable ["ghostFR_missionConfig_skillBlock", {}];
 
 if (GVAR(skillBlock) isEqualTo {}) exitWith {
     INFO("init","This mission handed over no skill block - AI skill left alone.");

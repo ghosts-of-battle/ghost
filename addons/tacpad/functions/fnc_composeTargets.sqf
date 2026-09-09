@@ -30,20 +30,17 @@
 
 private _targets = [];
 
+// THE SAME NETS THE RAIL DRAWS, and for the same reason (user, 2026-09-03):
+// a man should not be offered a net he cannot read. This listed every named
+// box in the addon setting and then every squad in the task force; it asks
+// EFUNC(messaging,railNets) now, which is the mission's GHOSTFR_Nets narrowed by
+// his role, with his own squad on the end.
+//
+// A NET NAME IS NOT A BOX ID. His own squad is a G: box, everything the mission
+// named is a B: - the rule FUNC(netBox) owns, applied here rather than repeated.
 {
-    _targets pushBack [format ["B:%1", _x], toUpper _x];
-} forEach (((EGVAR(messaging,namedBoxes) splitString ",") apply {trim _x}) select {_x isNotEqualTo ""});
-
-// Your own group leads even when the mission declares no squads at all.
-private _own = groupId (group player);
-private _squads = [];
-if (!isNil QEFUNC(messaging,squadNets)) then {
-    _squads = [] call EFUNC(messaging,squadNets);
-};
-
-{
-    _targets pushBack [format ["G:%1", _x], toUpper _x];
-} forEach ([_own] + (_squads select {_x isNotEqualTo _own}));
+    _targets pushBack [[_x, true] call FUNC(netBox), toUpper _x];
+} forEach ([] call EFUNC(messaging,railNets));
 
 {
     if (_x isEqualTo player) then {continue};

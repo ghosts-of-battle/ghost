@@ -9,7 +9,7 @@
  * THE CATALOGUE IS CONFIG NOW, AND IT LIVES IN THE MISSION. This used to be a
  * hand-built array in scripts\vehicle\fn_vehicle_cosmeticEntries.sqf - eighty
  * entries of SQF, three of the families built by forEach loops. It is
- * missionConfigFile >> "GHOST_Cosmetics" instead, so adding a scheme is an edit
+ * missionConfigFile >> "GHOSTFR_Cosmetics" instead, so adding a scheme is an edit
  * to config\config_cosmetics.hpp and nothing else: no mod rebuild, no code.
  *
  * THE RETURN SHAPE IS UNCHANGED - ["baseClass", "Display Name", ["icon", code]]
@@ -40,12 +40,12 @@
 private _cached = missionNamespace getVariable [QGVAR(cosmeticCache), []];
 if (_cached isNotEqualTo []) exitWith {_cached};
 
-private _root = missionConfigFile >> "GHOST_Cosmetics";
+private _root = missionConfigFile >> "GHOSTFR_Cosmetics";
 
 if !(isClass _root) exitWith {
     // Not an error. A mission that defines no catalogue simply offers no paint
     // schemes, and both readers handle an empty list.
-    INFO("VehicleCosmetics","No GHOST_Cosmetics class in the mission config - no cosmetic entries.");
+    INFO("VehicleCosmetics","No GHOSTFR_Cosmetics class in the mission config - no cosmetic entries.");
     []
 };
 

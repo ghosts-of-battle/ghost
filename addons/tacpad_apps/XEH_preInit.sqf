@@ -72,8 +72,13 @@ GVAR(timerToken) = 0;
 // map to give up, so the TOOLS button in the strip under the reader turns the
 // bar off without touching the rest of the suite - see FUNC(panelToolsBtn).
 // Shown by default, so a mission that never presses it is unchanged.
+// NO PLP, NO STRIP. The tools are PLP Map Tools Remastered's and this is a front
+// end for them; with the mod absent every button on it is dead except CENTRE and
+// OFF, which is three rows of map given up for two working cells. It drew dimmed
+// with PLP NOT LOADED in the header, which is an explanation where a missing
+// panel is an answer.
 ["tools", "MAP TOOLS", DEFAULT_TOOLS, FUNC(panelTools), {}, 2, true, {
-    missionNamespace getVariable [QGVAR(toolsShown), true]
+    !isNil "PLP_fnc_SMT_Main" && {missionNamespace getVariable [QGVAR(toolsShown), true]}
 }] call EFUNC(tacpad,register);
 // THE TWO STRIPS ARE BUTTONS, NOT PANELS - registered chromeless, so no title
 // bar, no rule and no title. A header reading SETTINGS over a cell reading
@@ -94,5 +99,10 @@ GVAR(timerToken) = 0;
 // only pinned panel. The settings strip used to be pinned for it, which meant
 // hiding the suite left a gear on the map with nothing to configure.
 EGVAR(tacpad,pinned) pushBackUnique "hide";
+
+// TAC//INTEL's open folder and open file, per client. Which drawer somebody has
+// pulled out is theirs and nobody else's - the files themselves are the unit's.
+GVAR(intelFolder) = "";
+GVAR(intelEntry) = "";
 
 ADDON = true;

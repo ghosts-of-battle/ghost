@@ -676,7 +676,18 @@ _MARINE_ARMOUR = ["B_qav_abramsx"]
 # exists), the camo Ghost Hawk, the green Hurons and the green Honeybadger take
 # the place of the tan, grey and black ones. Little Birds, the A-10 and the
 # Black Wasp have no green scheme and stay as they are.
-_QAV_ARMOUR_TNA = ["B_T_qav_abramsx", "B_T_APC_Wheeled_01_apc_QAV", "B_T_APC_Wheeled_01_mgs_QAV",
+# THE TEMPLAR AND THE TUSK JOIN THE TROPICAL ROSTER ANYWAY (user, 2026-09-01:
+# "make sure plt 2 has access to all abramsx"). QAV paints neither of them
+# green - there is no B_T_ twin, only the plain scheme - so this is knowingly
+# two tanks in the wrong camo for Tanoa, taken because 2nd PLT is a tank platoon
+# and a tank platoon that can only draw one turret is not one.
+#
+# ROSTER ONLY. The GROUPS still fold both onto the tropical Knight (_TNA_QAV
+# below), so no order of battle spawns a plain-scheme tank into the tropics;
+# these two are here to be DRAWN - from the motorpool, by a crew that asked for
+# them - and nothing else pulls them.
+_QAV_ARMOUR_TNA = ["B_T_qav_abramsx", "B_qav_abramsx_templar", "B_qav_abramsx_tusk",
+                   "B_T_APC_Wheeled_01_apc_QAV", "B_T_APC_Wheeled_01_mgs_QAV",
                    "B_T_APC_Wheeled_01_mgs_up_QAV", "B_T_APC_Wheeled_01_shorad_QAV"]
 _NATO_ARTY_TNA = []   # BLU_T_F ships all four - see _NATO_ARTY
 _NOT_GREEN = ("B_Heli_Transport_01_F", "B_Heli_Transport_01_unarmed_F", "B_Heli_Transport_01_pylons_F",

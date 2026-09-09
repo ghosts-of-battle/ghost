@@ -1,14 +1,13 @@
 #include "script_component.hpp"
 /*
  * Author: Ghost
- * Which live tiles a man's ROLE lets him see, read from the mission's own role
- * config. The same shape and the same rules as the net gate in
- * EFUNC(messaging,roleNets) - the mission is where roles live, so the mission is
- * where their access lives too.
+ * Which live tiles a man's ROLE lets him see, read off the role itself - the
+ * unit's database copy when TAC//PAC holds the roles there, the mission's
+ * own class otherwise (ghost_groups_fnc_role). The same shape and the same
+ * rules as the net gate in EFUNC(messaging,roleNets).
  *
  *   class jfoNomad {
  *       tiles[] = {
- *           {"support", "true"},
  *           {"weather", "true"},
  *           {"timer", "true"}
  *       };
@@ -46,27 +45,32 @@
 
 params [["_unit", objNull, [objNull]]];
 
-// Is anybody using this? Answered once - the band redraws every couple of
-// seconds and a config walk per redraw would be a config walk per redraw.
-if (isNil QGVAR(roleTilesGated)) then {
-    private _gated = false;
-    {
-        if (isArray (_x >> "tiles")) exitWith {_gated = true};
-    } forEach ("true" configClasses (missionConfigFile >> "Dynamic_Roles"));
+// Is anybody using this? The roles come off ghost_groups_fnc_roles - the
+// database's when the unit keeps them there, the mission's otherwise - and
+// they can change under a running client (a new structure from the server),
+// so it is answered per call: two dozen hashmap reads per redraw, not a
+// config walk. Gated means some role lists a tile; a role that lists none
+// sees none.
+private _roles = if (!isNil "ghost_groups_fnc_roles") then {[] call ghost_groups_fnc_roles} else {createHashMap};
+private _gated = false;
+{
+    if (_y isEqualType createHashMap && {(_y getOrDefault ["tiles", []]) isNotEqualTo []}) exitWith {_gated = true};
+} forEach _roles;
+if ((missionNamespace getVariable [QGVAR(roleTilesGated), !_gated]) isNotEqualTo _gated) then {
     GVAR(roleTilesGated) = _gated;
     // Hoisted: a comma inside a macro argument reads as an argument separator.
     private _said = ["off - no role declares tiles", "ON - roles without tiles get none"] select _gated;
     INFO_1("role tile gating is %1",_said);
 };
 
-if (!GVAR(roleTilesGated)) exitWith {[false, []]};
+if (!_gated) exitWith {[false, []]};
 if (isNull _unit) exitWith {[true, []]};
 
 private _role = _unit getVariable ["YMF_role", ""];
 if (_role isEqualTo "") exitWith {[true, []]};
 
-private _cfg = missionConfigFile >> "Dynamic_Roles" >> _role >> "tiles";
-if (!isArray _cfg) exitWith {[true, []]};
+private _cfg = (_roles getOrDefault [_role, createHashMap]) getOrDefault ["tiles", []];
+if !(_cfg isEqualType []) exitWith {[true, []]};
 
 private _out = [];
 
@@ -84,6 +88,6 @@ private _out = [];
     };
 
     if (_on) then {_out pushBackUnique (toLower _name)};
-} forEach (getArray _cfg);
+} forEach _cfg;
 
 [true, _out]

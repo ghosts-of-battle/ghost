@@ -12,24 +12,20 @@ Description:
     offer the same choices had to work them out again and could disagree. It is
     a question about the mission, not about a display.
 
-    SCOPED BY THE GROUND IT IS STANDING ON. FUNC(taorType) asks ALiVE which
-    commander holds this spot and what kind of war it is fighting:
+    WHAT THIS DEVICE CAN BE MADE TO PRODUCE. A package if somebody put one on
+    it, plus whatever hunts the mission currently has anything to hunt.
 
-      invasion / occupation - the integrated defence network. Air defence,
-                              coastal batteries, their radars, artillery, and
-                              the jammers holding the quiet up. The player's
-                              job is to un-integrate it (new.md section 1).
-      asymmetric            - the leader chain and the installations that feed
-                              it (new.md section 5).
+    IT WAS SCOPED BY TAOR, AND IS NOT ANY MORE. FUNC(taorType) asked ALiVE which
+    commander held the spot and what kind of war it was fighting - invasion and
+    occupation offered the integrated defence network, asymmetric offered the
+    leader chain. That question died with ALiVE, and it was the wrong question:
+    what a terminal can tell you is a fact about the terminal, which is now
+    exactly what a mission maker writes on it.
 
-    STRICTLY. An asymmetric TAOR does not offer LOCATE AA even when the map has
-    air defence somewhere else on it: the point of the split is that breaking
-    into a phone net in a town tells you about the town.
-
-    NO COMMANDER, NO PRODUCTS. Ground nobody is fighting over has no
-    intelligence network to break into, so the list is empty and the tablet says
-    so. A button that can only ever say "nothing" teaches players to stop
-    reading the list.
+    AN EMPTY LIST IS STILL POSSIBLE and still says so. A device nobody put a
+    package on, on a map with no anti-ship, no jammers and no leaders, has
+    nothing to offer - and a button that can only ever say "nothing" teaches
+    players to stop reading the list.
 
 Parameters:
     _session : HASHMAP - the tablet session. Optional, default the live one.
@@ -52,56 +48,83 @@ if ((_session get "kind") isEqualTo "drone") exitWith {
     _avail
 };
 
-// Where the hack is, not where the player was when the tablet opened. A device
-// selected across a TAOR boundary is answered by the ground the DEVICE is on -
-// it is that network being broken into, not the operator's.
+// THE DEVICE DECIDES FIRST, and the ground scopes what is left. ghost switched
+// the whole menu on FUNC(taorType) - which commander holds this spot and what
+// kind of war it is fighting - and a device with nothing to do with any of that
+// offered nothing. DIVINER threw the scoping out and made the list flat, so a
+// terminal could carry a package wherever it stood.
+//
+// Both, here. The package is always offered if the device has one, because that
+// is a fact about the device. The ALiVE-fed hunts are scoped the way ghost
+// scoped them, because that split is the point of them: breaking into a phone
+// net in a town should tell you about the town.
+//
+// WITH NO ALiVE, taorType returns "" and NOTHING IS SCOPED OUT - the list is
+// flat again and behaves exactly as DIVINER's did. That is why the tests below
+// are written as "not the wrong kind of ground" rather than "the right kind".
 private _device = _session getOrDefault ["device", objNull];
 private _at = if (isNull _device) then {getPosATL player} else {getPosATL _device};
+private _war = [_at] call FUNC(taorType);
+private _conventional = _war isNotEqualTo "asymmetric";
+private _asymmetric   = !(_war in ["invasion", "occupation"]);
 
-switch ([_at] call FUNC(taorType)) do {
+// The mission's own intel, if somebody put a package on this device with a
+// Ghost - Intel Package module. First in the list because it is the reason to
+// hack a terminal rather than a thing you might also get, and never scoped.
+if (!isNull _device && {(_device getVariable [QGVAR(package), ""]) isNotEqualTo ""}) then {
+    _avail pushBack ["package", "DOWNLOAD FILES"];
+};
 
-    // --- the integrated defence network ------------------------------------
-    case "invasion";
-    case "occupation": {
-        if ((missionNamespace getVariable ["ghost_adapter_alive_aaCount", 0]) > 0) then {
-            _avail pushBack ["aa", "LOCATE AA"];
-        };
-        if ((missionNamespace getVariable [QEGVAR(antiship,batteries), []]) isNotEqualTo []) then {
-            _avail pushBack ["coastal", "LOCATE ANTI-SHIP"];
-        };
-        // ghost_antiship_radars, the live radar objects, OR the adapter's count
-        // of ALiVE's radar profiles - the product reads both lists. This was
-        // gated on a "radarSites" variable nothing ever wrote, so the button
-        // could never appear even with radars up.
-        if ((missionNamespace getVariable [QEGVAR(antiship,radars), []]) isNotEqualTo []
-            || {(missionNamespace getVariable ["ghost_adapter_alive_radarCount", 0]) > 0}) then {
-            _avail pushBack ["radar", "LOCATE RADAR"];
-        };
-        if ((missionNamespace getVariable ["ghost_adapter_alive_artyCount", 0]) > 0) then {
-            _avail pushBack ["arty", "LOCATE ARTILLERY"];
-        };
-        if ((missionNamespace getVariable ["ghost_jamming_zoneCount", 0]) > 0) then {
-            _avail pushBack ["jam", "LOCATE JAMMER"];
-        };
-        // The rear. Published counts, like the others: the adapter's data
-        // functions answer only on the server, and this runs on a client.
-        if ((missionNamespace getVariable ["ghost_adapter_alive_campCount", 0]) > 0) then {
-            _avail pushBack ["camp", "LOCATE CAMP"];
-        };
-        if ((missionNamespace getVariable ["ghost_adapter_alive_hubCount", 0]) > 0) then {
-            _avail pushBack ["hub", "LOCATE LOGISTICS"];
-        };
+// --- the integrated defence network -----------------------------------------
+// The counts are read as PUBLISHED VARIABLES BY LITERAL NAME, not through the
+// adapter's data functions: those answer only on the server and this runs on a
+// client. The adapter republishes them on a 30s beat.
+if (_conventional) then {
+    if ((missionNamespace getVariable ["ghost_adapter_alive_aaCount", 0]) > 0) then {
+        _avail pushBack ["aa", "LOCATE AA"];
     };
+    // The anti-ship network, split into the launchers and the eyes that feed
+    // them - killing one does not kill the other, so they are two hunts. Both
+    // read ghost's own objects, which is why they outlived the six that read
+    // ALiVE's.
+    if ((missionNamespace getVariable [QEGVAR(antiship,batteries), []]) isNotEqualTo []) then {
+        _avail pushBack ["coastal", "LOCATE ANTI-SHIP"];
+    };
+    // Our live radar objects OR the adapter's count of ALiVE's radar profiles -
+    // FUNC(productLocateRadar) merges both pools, so either one is enough to
+    // put the button up.
+    if ((missionNamespace getVariable [QEGVAR(antiship,radars), []]) isNotEqualTo []
+        || {(missionNamespace getVariable ["ghost_adapter_alive_radarCount", 0]) > 0}) then {
+        _avail pushBack ["radar", "LOCATE RADAR"];
+    };
+    if ((missionNamespace getVariable ["ghost_adapter_alive_artyCount", 0]) > 0) then {
+        _avail pushBack ["arty", "LOCATE ARTILLERY"];
+    };
+    // The rear: where the men not on the line sleep, and where what feeds the
+    // line comes from.
+    if ((missionNamespace getVariable ["ghost_adapter_alive_campCount", 0]) > 0) then {
+        _avail pushBack ["camp", "LOCATE CAMP"];
+    };
+    if ((missionNamespace getVariable ["ghost_adapter_alive_hubCount", 0]) > 0) then {
+        _avail pushBack ["hub", "LOCATE LOGISTICS"];
+    };
+};
 
-    // --- the leader chain --------------------------------------------------
-    case "asymmetric": {
-        if ((missionNamespace getVariable ["ghost_leaders_upCount", 0]) > 0) then {
-            _avail pushBack ["leader", "TRACE NETWORK"];
-        };
-        if (!isNil "ghost_adapter_alive_fnc_installations"
-            && {(call ghost_adapter_alive_fnc_installations) isNotEqualTo []}) then {
-            _avail pushBack ["installation", "LOCATE INSTALLATION"];
-        };
+// The jammers holding the quiet up. Never scoped - a jammer is a jammer
+// whichever kind of war is being fought around it, and a hand-placed Jammer
+// Site owes nothing to a commander.
+if ((missionNamespace getVariable ["ghost_jamming_zoneCount", 0]) > 0) then {
+    _avail pushBack ["jam", "LOCATE JAMMER"];
+};
+
+// --- the leader chain -------------------------------------------------------
+if (_asymmetric) then {
+    if ((missionNamespace getVariable ["ghost_leaders_upCount", 0]) > 0) then {
+        _avail pushBack ["leader", "TRACE NETWORK"];
+    };
+    if (!isNil "ghost_adapter_alive_fnc_installations"
+        && {(call ghost_adapter_alive_fnc_installations) isNotEqualTo []}) then {
+        _avail pushBack ["installation", "LOCATE INSTALLATION"];
     };
 };
 

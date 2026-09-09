@@ -149,6 +149,8 @@ class CfgVehicles {
     class B_T_soldier_UAV_02_LxWS_F;
     class B_T_soldier_UGV_02_Demining_F;
     class B_T_soldier_mine_F;
+    class B_qav_abramsx_templar;
+    class B_qav_abramsx_tusk;
     class E22_B_JC_W_AAA_System_01_F;
     class E22_B_JC_W_Radar_system_01_F;
     class E22_B_JC_W_SAM_system_01_F;
@@ -1634,6 +1636,24 @@ class CfgVehicles {
         respawnWeapons[] = {"ghost_US_JTF_tna_arifle_MXC_khk_Holo_Pointer_F_snds","hgun_P07_khk_F","Throw","Put"};
         magazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
         respawnMagazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+    };
+    class ghost_US_JTF_tna_B_qav_abramsx_templar: B_qav_abramsx_templar {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "M3A2 Knight";
+        side = 1;
+        faction = "ghost_US_JTF_tna";
+        crew = "ghost_US_JTF_tna_B_T_Crew_F";
+    };
+    class ghost_US_JTF_tna_B_qav_abramsx_tusk: B_qav_abramsx_tusk {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "M3A3 Knight UP";
+        side = 1;
+        faction = "ghost_US_JTF_tna";
+        crew = "ghost_US_JTF_tna_B_T_Crew_F";
     };
     class ghost_US_JTF_tna_E22_B_JC_W_AAA_System_01_F: E22_B_JC_W_AAA_System_01_F {
         scope = 2;

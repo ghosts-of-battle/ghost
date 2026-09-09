@@ -27,5 +27,3 @@ GVAR(session) set ["kind", _kind];
 GVAR(session) set ["range", _range];
 GVAR(session) set ["progress", _obj getVariable [QGVAR(progress), 0]];
 
-private _display = uiNamespace getVariable [QGVAR(tablet), displayNull];
-if !(isNull _display) then { [_display] call FUNC(tabletRefresh) };

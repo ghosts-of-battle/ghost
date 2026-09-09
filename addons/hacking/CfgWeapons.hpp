@@ -9,50 +9,24 @@ class CfgWeapons {
     class ACE_ItemCore;
     class CBA_MiscItem_ItemInfo;
 
-    // THE TERMINAL. Hacking used to be gated on carrying a cTab, which made an
-    // intrusion suite a feature of somebody else's mod. It is our own item now,
-    // on the model this addon has shipped all along and never used - data\'s
-    // README still calls it "Model for the Intrusion Tablet item".
+    // NO DEVICE. THERE IS NO INTRUSION ITEM AND NO SCANNER ITEM.
     //
-    // Deliberately a screen you stop and open, not a thing you glance at: the
-    // scanner below is the glance.
-    class GVAR(terminalItem): ACE_ItemCore {
-        scope = 2;
-        scopeArsenal = 2;
-        scopeCurator = 2;
-        displayName = "Intrusion Tablet";
-        author = QAUTHOR;
-        descriptionShort = "Rugged tablet running the intrusion suite. Needed to break into a tower or take a drone down.";
-        picture = QPATHTOF(data\tablet_icon.paa);
-        model = QPATHTOF(data\soldiertab.p3d);
-        editorCategory = "EdCat_Equipment";
-        editorSubcategory = "EdSubcat_InventoryItems";
-
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 20;
-        };
-    };
-
-    // THE HAND-HELD SENSOR, REBUILT. It was removed earlier and asked back: a
-    // device you hold up while walking is a different thing from a screen you
-    // stop and open. Separate kit from the terminal - the tablet is what you
-    // hack WITH, this is what tells you whether hacking here is a good idea.
-    class GVAR(scannerItem): ACE_ItemCore {
-        scope = 2;
-        scopeArsenal = 2;
-        scopeCurator = 2;
-        displayName = "Signal Scanner";
-        author = QAUTHOR;
-        descriptionShort = "Hand-held spectrum scanner. Warns of drones, jamming and the state of your own net.";
-        picture = QPATHTOF(data\hackphone_icon.paa);
-        model = QPATHTOF(data\hackphone.p3d);
-        editorCategory = "EdCat_Equipment";
-        editorSubcategory = "EdSubcat_InventoryItems";
-
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 8;
-        };
-    };
+    // There were two - an "Intrusion Tablet" and a "Signal Scanner" - and they
+    // were kit for a gate that does not exist. Nothing in this addon ever asked
+    // whether a man carried either: FUNC(canHack) reads the ISR trait through
+    // EFUNC(common,isISR), and FUNC(hasScanner) reads a unit variable that
+    // defaults true. Both classes appeared in exactly one place in the whole
+    // mod - the weapons[] line of this addon's CfgPatches - which is to say
+    // they were arsenal furniture suggesting a requirement the code had already
+    // stopped enforcing.
+    //
+    // TRAINING IS THE GATE. Whether a man can break into a tower is a fact
+    // about the man, not about his pockets. An item cannot express that and
+    // should not pretend to.
+    //
+    // The three intel classes below are NOT devices - they are what a hack
+    // produces, carried to a drop - and the drop item after them is a thing you
+    // physically place. Those stay.
 
     // CARRIED INTEL. A searched body yields one of these; it is worth NOTHING
     // until it is physically deposited at an intel drop (new.md section 5).
@@ -79,7 +53,6 @@ class CfgWeapons {
         displayName = "Captured Phone";
         descriptionShort = "A dead man's handset. Worthless until deposited at an intel drop.";
         picture = QPATHTOF(data\hackphone_icon.paa);
-        model = QPATHTOF(data\hackphone.p3d);
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_InventoryItems";
 

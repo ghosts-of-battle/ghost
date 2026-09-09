@@ -54,7 +54,7 @@ if (_radius <= 0) exitWith { ["", objNull] };
 // createVehicle takes [x,y]; setPosATL and AGLToASL below do not, and an
 // objective centre out of ALiVE is [x,y] - which is what threw "2 elements
 // provided, 3 expected" here on the GPS uplink (2026-09-01). Fixed at the
-// source too, in ghost_adapter_alive_fnc_objectivesFor; this keeps the
+// source too, before sites were placed by hand; this keeps the
 // header's promise for any other caller.
 // Copied before it is extended: params hands back the caller's own array.
 if (count _pos == 2) then { _pos = +_pos; _pos pushBack 0 };

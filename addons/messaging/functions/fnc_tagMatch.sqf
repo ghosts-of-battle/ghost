@@ -11,10 +11,14 @@
  * they cannot.
  *
  * WHAT A TAG MAY BE, in the order it is tried:
- *   a squad     NOMAD reaches everybody in the group called Nomad
  *   a job       MED reaches every medic, LDR every section commander - the same
  *               short tags FUNC(roleTag) stamps on traffic, so the tag you can
  *               see on a message is the tag you can address
+ *   a squad     NOMAD 2-3 reaches everybody in that group
+ *   a platoon   NOMAD reaches every squad the mission files under it - see
+ *               FUNC(platoonTags). Without this a platoon was unaddressable:
+ *               the groups are NOMAD 2-1 to 2-4 and nothing is called NOMAD, so
+ *               waking a platoon on the platoon's own net took four tags
  *   a man       his call sign as the roster shows it, or his UID
  *
  * CASE AND SPACES ARE NOISE. A tag is typed in a hurry on a net; "nomad",
@@ -48,34 +52,70 @@ if (_wanted isEqualTo "") exitWith {false};
 
 private _fnc_tight = {toUpper ((_this splitString " ") joinString "")};
 
-// THE BACKEND DEFINES the composer's job chips lean on - asked for in
-// yellow: all medics, the aviation crews, the HQ group. MEDICS catches the
-// ACE medic class as well as the slot word; AVIATION catches a slot that
-// says pilot or the isPilot flag; HQ is the command-group setting.
+// THE BACKEND DEFINES the composer's job chips lean on (user, 2026-09-03:
+// "leaders medics, demo, isr, pilots, jfo"). Six trades, and a tag has to
+// reach every man doing one of them wherever he stands - a CASEVAC calling
+// MEDICS does not know whose medic.
+//
+// THREE SOURCES, ASKED IN THIS ORDER, because no single one is reliable across
+// missions:
+//
+//   1. THE MISSION'S OWN FLAG, where it keeps one. isLeader, isJFO and isISR
+//      are customVariables the role configs already set, and they are the same
+//      flags the role screen and TAC//SUPPORT gate on.
+//   2. AN ENGINE TRAIT, where the game carries one. medic and
+//      explosiveSpecialist are set by every mission one way or another, so
+//      these work on a mission that has never heard of ghost.
+//   3. THE ROLE CLASS NAME. FUNC(setupPlayer) writes the chosen class to
+//      YMF_role publicly, so pilotTalon answers PILOTS and demoBanshee answers
+//      DEMO with no flag at all. This is what PILOTS runs on: nothing in the
+//      framework sets isPilot, and roleDescription is not used here, so the
+//      old check reached nobody.
+//
+// OLD NAMES STILL ANSWER. HQ was the leader tag and AVIATION the pilot one;
+// traffic sent before the chips were renamed still resolves.
+private _role = toUpper (_unit getVariable ["YMF_role", ""]);
+private _fnc_roleHas = {_role find _this > -1};
+
 private _defined = switch (_wanted) do {
-    case "MEDIC";
-    case "MEDICS": {
-        (_unit getVariable ["ace_medical_medicClass", 0] > 0)
-        || {(toUpper (roleDescription _unit)) find "MEDIC" > -1}
-    };
-    case "AVIATION";
-    case "PILOTS": {
-        (_unit getVariable ["isPilot", false])
-        || {(toUpper (roleDescription _unit)) find "PILOT" > -1}
-    };
-    case "JFO": {
-        // The mission's isJFO customVariable - the flag TAC//SUPPORT gates
-        // tasking on - with the slot word as fallback.
-        ((_unit getVariable ["isJFO", false]) isEqualTo true)
-        || {(toUpper (roleDescription _unit)) find "JFO" > -1}
-    };
+    case "LEADER";
+    case "LEADERS";
+    case "LDR";
     case "HQ": {
-        // The mission flags its leadership with the isLeader customVariable -
-        // the same one the platoon view gates on - so HQ reaches the leaders
-        // wherever they stand. The command-group setting still counts too.
         ((_unit getVariable ["isLeader", false]) isEqualTo true)
+        || {"TEAMLEAD" call _fnc_roleHas}
         || {GVAR(commandGroup) isNotEqualTo ""
             && {((groupId (group _unit)) call _fnc_tight) isEqualTo (GVAR(commandGroup) call _fnc_tight)}}
+    };
+    case "MEDIC";
+    case "MEDICS";
+    case "MED": {
+        (_unit getVariable ["ace_medical_medicClass", 0] > 0)
+        || {_unit getUnitTrait "medic"}
+        || {"MEDICAL" call _fnc_roleHas}
+    };
+    case "DEMO";
+    case "EOD": {
+        ((_unit getVariable ["ace_isEOD", false]) isEqualTo true)
+        || {_unit getUnitTrait "explosiveSpecialist"}
+        || {"DEMO" call _fnc_roleHas}
+    };
+    case "ISR": {
+        ((_unit getVariable ["isISR", false]) isEqualTo true)
+        || {"ISR" call _fnc_roleHas}
+    };
+    case "PILOT";
+    case "PILOTS";
+    case "AVIATION": {
+        (_unit getVariable ["isPilot", false])
+        || {"PILOT" call _fnc_roleHas}
+        || {"COPILOT" call _fnc_roleHas}
+    };
+    case "JFO";
+    case "JTAC": {
+        ((_unit getVariable ["isJFO", false]) isEqualTo true)
+        || {"JFO" call _fnc_roleHas}
+        || {"JTAC" call _fnc_roleHas}
     };
     default {false};
 };
@@ -83,7 +123,16 @@ if (_defined) exitWith {true};
 
 private _group = groupId (group _unit);
 if (toUpper _group isEqualTo _wanted) exitWith {true};
-if (_group call _fnc_tight isEqualTo (_wanted call _fnc_tight)) exitWith {true};
+
+private _tightGroup = _group call _fnc_tight;
+private _tightWanted = _wanted call _fnc_tight;
+if (_tightGroup isEqualTo _tightWanted) exitWith {true};
+
+// A PLATOON NAMES ITS SQUADS. Asked after the squad itself, so a mission that
+// calls a group and a platoon the same word still reaches the group first.
+if ((([] call FUNC(platoonTags)) findIf {
+    ((_x select 0) isEqualTo _tightWanted) && {_tightGroup in (_x select 1)}
+}) > -1) exitWith {true};
 
 if (([_unit] call FUNC(roleTag)) isEqualTo _wanted) exitWith {true};
 

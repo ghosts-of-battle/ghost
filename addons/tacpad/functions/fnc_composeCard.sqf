@@ -90,7 +90,15 @@ private _fnc_shown = {
             date params ["", "", "", "_hh", "_mm"];
             format ["%1%2", [_hh, 2] call CBA_fnc_formatNumber, [_mm, 2] call CBA_fnc_formatNumber]
         };
-        default {""};
+        default {
+            // "pac:section.field" - a line of the current OPORD, when the pac
+            // addon is loaded. METT-TC pre-fills its M, E and C from it.
+            private _auto = _field getOrDefault ["autoFill", "none"];
+            if ((_auto select [0, 4]) isEqualTo "pac:" && {!isNil "ghost_pac_fnc_opordField"}) exitWith {
+                [_auto select [4]] call ghost_pac_fnc_opordField
+            };
+            ""
+        };
     }
 };
 
@@ -136,6 +144,15 @@ private _fnc_edit = {
     _edit ctrlSetTooltip (_field getOrDefault ["hint", ""]);
     _edit ctrlSetText ([_key, _field] call _fnc_shown);
     _edit setVariable [QGVAR(fieldKey), _key];
+
+    // THE FLAG THAT SAYS "I HOLD TEXT". FUNC(composeHarvest) reads ctrlText off
+    // every control carrying a fieldKey, and an empty one means the player
+    // cleared the field - so it deletes the answer. Hit areas carry a fieldKey
+    // too (a bool tick, a choice segment, CURRENT LOC, MAP MARKER) and ctrlText
+    // on one is always "", so harvest was deleting the value of every button on
+    // the card each time anything was pressed. This is the one control on a
+    // field that actually holds typing.
+    _edit setVariable [QGVAR(fieldEdit), true];
     _edit ctrlCommit 0;
 
     // Every keystroke feeds the preview - harvest, render, rewrite the one
@@ -411,7 +428,19 @@ private _half = count _lines;
                 if (_prefix isEqualTo "") then {
                     [_body, [_sx, _cy, _cellW - _pad, _capH], _x getOrDefault ["hint", ""], _mute, 0.5, true] call FUNC(drawText);
                 } else {
-                    _capW = (_cellW - _pad) * 0.34;
+                    // SIZED TO THE WORD, not to a flat third of the cell (user,
+                    // 2026-09-03). URGENT / PRIORITY / ROUTINE over three cells
+                    // of a third-width column had 34% each, and PRIORITY wrapped
+                    // onto a second line - so the caption for a 0-99 box was
+                    // twice the height of the box beside it.
+                    //
+                    // A NUMBER BOX HOLDS TWO DIGITS. It does not need the two
+                    // thirds it was taking, so the label may have what it needs
+                    // and the box keeps the rest - never less than 30%, which is
+                    // still wider than "99" plus its range meta.
+                    private _fh = ([0.62] call FUNC(textH)) / 1.25;
+                    private _need = (count _prefix) * _fh * 0.55 * pixelW / pixelH + _pad;
+                    _capW = _need min ((_cellW - _pad) * 0.70);
                     [_body, [_sx, _cy + _capH, _capW - _pad * 0.5, _btnH], toUpper _prefix, _ink, 0.62, true] call FUNC(drawText);
                 };
             };

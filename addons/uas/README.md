@@ -4,73 +4,44 @@
 
 Patrol drones and the supply that limits them.
 
-Patrols sit over each commander's own objectives as **profiles** - records
-that walk the map and become real aircraft only when players are near, so an
-empty map costs nothing and the drone a section meets was always there. The
-airframe is the commander's own faction's, read from ALiVE.
+**One module is one patrol.** Place a *Ghost - Drone Patrol* module in Eden or in
+Zeus, resize it, and it says everything about that patrol: whose drones, how
+many, which airframe, and whether a drone that sees somebody calls artillery on
+them. Several patrols, several modules. In ghost this addon flew drones over each
+ALiVE commander's own objectives with one shared per-side ceiling; a number on
+the module you placed is a better answer than a ceiling shared across the map,
+so the module is the unit of work here.
 
-**Supply caches** are real crates in each side's TAOR, unmarked and unhinted -
-finding them is what the intel economy is for. Kill one and that side's
-airframe ceiling drops to the reduced number for a random window: the sky
-visibly thins, then comes back. Outages extend rather than stack, so supply
-raids are raids and not a win button.
+**ALiVE objectives can become zones too, and it is off by default.** Turn on
+*Patrol ALiVE objectives* under Ghosts of Battle / Drones and
+`FUNC(zonesFromAlive)` takes a share of each commander's objectives - capped -
+and appends them to `GVAR(zones)` as ordinary entries, once, when the campaign
+comes up. Every function here treats them exactly like a drawn module, because
+they are the same shape. They ADD to the modules you placed rather than
+replacing them, and they never call for artillery: that is a decision about one
+piece of ground, so it lives on a module.
 
-**The ceiling is per side.** Airframes Per Side is the shared number; West /
-East / Independent Airframes on the module give one side its own (-1 uses the
-shared number, 0 grounds that side). A cache outage drops a side to After A
-Cache Is Lost, never above its own ceiling. `fnc_ceilingFor` is the one reader.
+**Supply caches** are real crates inside those zones, unmarked and unhinted -
+finding them is what the intel economy is for. Kill one and that side's airframe
+ceiling drops for a random window: the sky visibly thins, then comes back.
+Outages extend rather than stack, so supply raids are raids and not a win button.
+
+**Nobody near, nothing flying.** A patrol exists to be met. One orbiting ground
+four kilometres from the nearest player is an airframe, a crew and an AI pilot
+simulated for an audience of nobody, so a zone with nobody inside 3.2 km is not
+patrolled and the patrols whose audience has left are retired. An empty map costs
+nothing.
+
+**A patrol never grows past its own number**, and the supply outage only ever
+reduces it: while a side's cache is down every one of its patrols thins to one
+airframe, then fills again when the window closes. Outage windows and the cache
+count are CBA settings under *Ghosts of Battle > Drones*; everything else about a
+patrol is on its own module.
 
 A drone that actually sees a player - `knowsAbout`, not proximity - reports it
 down the same path a failed hack takes.
 
     #ghostuas    ceilings, patrol counts, live outages
-
-## Nobody near, nothing flying
-
-A patrol exists to be **met**. One orbiting a base four kilometres from the
-nearest player is an airframe, a crew and an AI pilot being simulated for an
-audience of nobody — twenty of them on a full map, all mission.
-
-So a patrol is put up only when somebody is within `UAS_PLAYER_RANGE` (3.2 km) of
-the ground it would orbit, and stood down again when everybody has left. The
-planner filters its objective list on it and says how many it skipped;
-`topUp` refuses a launch outright, so the reaction ladder and the QRF cannot
-route around it; `standDown` runs first on every planning tick and takes back
-the ones that outlived their audience.
-
-**Measured to the orbit centre, not to the aircraft.** A patrol wanders 800 m
-around its objective, and measuring the airframe would have a drone standing
-itself down and back up as it flew the far side of its own circle.
-
-A stood-down drone is flagged before it is deleted, so the coroner in `topUp`
-knows the removal was ours — *DELETED WHILE STILL FLYING* stays a real alarm.
-
-### The cycle, as a section moves
-
-One beat, every `UAS_PATROL_TICK` (60 s), in this order:
-
-1. **Stand down** — patrols whose orbit centre no longer has a player inside 3.2 km
-   are deleted, crew included. Each side is handed a *credit* for exactly how
-   many it gave back.
-2. **Plan** — objectives are filtered to this side's own ground, then to the
-   ones with somebody within 3.2 km, ranked biggest-first, and topped up to the
-   ceiling.
-
-**The credit is what makes the second half work.** Replacement is normally a
-drip — one airframe per side per tick — so that a fleet lost to a jammer bubble
-does not rain back into it. A stand-down is not a loss, and under the drip alone
-a section driving from one valley to the next would arrive in empty sky and wait
-ten minutes for the first drone. Ground now refills at the speed it emptied,
-while attrition still drips.
-
-**Nothing vanishes in front of anybody.** A patrol on the near side of a circle
-whose centre has just gone out of range is still a real aircraft in somebody's
-sky, so a drone with a player within `UAS_SEEN_RANGE` (2 km) of the *airframe*
-is kept regardless, and goes on a later tick once it has flown on or they have.
-
-At 3.2 km with a 60-second beat, a vehicle doing 60 km/h has about three minutes of
-ring to cross before it reaches anything, so the air is always up before the
-ground is in sight.
 
 <!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
 

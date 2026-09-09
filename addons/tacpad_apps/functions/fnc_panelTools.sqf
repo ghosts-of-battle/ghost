@@ -73,7 +73,7 @@ if (!isNull _group) then {
     private _offX = _gw - _offW - _pad - RULE_THICK * pixelW;
 
     [_group, [_offX, RULE_THICK * pixelH + _padY * 0.3, _offW, _headerH - _padY * 0.6], _accent, RULE_THICK] call EFUNC(tacpad,drawFrame);
-    [_group, [_offX, RULE_THICK * pixelH + _padY * 0.3, _offW, _headerH - _padY * 0.6], "OFF", _accent, 0.7, true, "center"] call EFUNC(tacpad,drawText);
+    [_group, [_offX, RULE_THICK * pixelH + _padY * 0.3, _offW, _headerH - _padY * 0.6], "CANCEL", _accent, 0.7, true, "center"] call EFUNC(tacpad,drawText);
     [_group, [_offX, RULE_THICK * pixelH + _padY * 0.3, _offW, _headerH - _padY * 0.6], {
         params ["_ctrl"];
         private _map = (ctrlParent _ctrl) displayCtrl 51;
@@ -103,7 +103,7 @@ private _cellH = ([_labelSize] call EFUNC(tacpad,textH)) + 2 * _padY;
 {
     _x params ["_label", "_fnc", ["_own", false]];
 
-    private _off = _label == "OFF";
+    private _off = _label in ["OFF", "CANCEL"];
     private _available = _own || _off || {!isNil _fnc};
     private _running = !_off && {!_own} && _fnc == GVAR(activeTool);
 

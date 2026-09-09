@@ -14,7 +14,6 @@ Author:
     Ghost
 ---------------------------------------------------------------------------- */
 private _session = GVAR(session);
-private _display = uiNamespace getVariable [QGVAR(tablet), displayNull];
 
 if (_session get "running") exitWith {
     private _device = _session get "device";
@@ -22,7 +21,6 @@ if (_session get "running") exitWith {
     _session set ["progress", 0];
     if (!isNull _device) then { _device setVariable [QGVAR(progress), 0, true] };
     ["Hack", "Intrusion aborted.", [1, 0.3, 0.3, 1]] call EFUNC(notify,notify);
-    if !(isNull _display) then { [_display] call FUNC(tabletRefresh) };
 };
 
 private _device = _session get "device";
@@ -73,4 +71,3 @@ if (_device getVariable ["ghost_leaders_pop", false]) then {
 _session set ["last", CBA_missionTime];
 _session set ["running", true];
 
-if !(isNull _display) then { [_display] call FUNC(tabletRefresh) };

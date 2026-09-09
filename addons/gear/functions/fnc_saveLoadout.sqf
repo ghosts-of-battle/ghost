@@ -22,6 +22,9 @@ _loadout = [_loadout] call EFUNC(systems,filterUnitLoadout);
 _unit setVariable [QEGVAR(Gear,Loadout), _loadout];
 _unit setVariable [QEGVAR(Gear,SavedLoadout), true];
 
+// PAC keeps it too, per role, when that addon is loaded - one "save" for the player.
+if (!isNil "ghost_pac_fnc_loadoutSave") then {[_unit] call ghost_pac_fnc_loadoutSave};
+
 ["Gear", "Loadout has been saved.", NOTE_GOOD] call GHOSTFUNC(notify,notify);
 
 _unit getVariable [QEGVAR(Gear,SavedLoadout), false];

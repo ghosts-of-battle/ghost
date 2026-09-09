@@ -30,7 +30,7 @@ if (EGVAR(patches,usesACRE)) exitWith {
 
     [{
         [player] call EFUNC(players,setRadioChannel);
-        [ghost_radio_acreActiveRadio] call EFUNC(players,setActiveRadio);
+        [ghostFR_radio_acreActiveRadio] call EFUNC(players,setActiveRadio);
     }] call CBA_fnc_execNextFrame;
 
     ["Radios", "Your radios have been reset.", NOTE_GOOD] call GHOSTFUNC(notify,notify);
@@ -42,7 +42,7 @@ if (EGVAR(patches,usesACRE)) exitWith {
 if (EGVAR(patches,usesTFAR)) exitWith {
     [{
         [player] call EFUNC(players,setRadioChannel);
-        [ghost_radio_tfarActiveRadio] call EFUNC(players,setActiveRadio);
+        [ghostFR_radio_tfarActiveRadio] call EFUNC(players,setActiveRadio);
     }] call CBA_fnc_execNextFrame;
 
     ["Radios", "Your radios have been reset.", NOTE_GOOD] call GHOSTFUNC(notify,notify);

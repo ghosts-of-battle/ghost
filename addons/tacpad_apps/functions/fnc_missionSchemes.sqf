@@ -39,17 +39,31 @@ if (!isNil QGVAR(missionSchemes)) exitWith {GVAR(missionSchemes)};
 
 private _out = [];
 
-// No class is not an error. Most missions have nothing to say about colour and
-// get the six shipped schemes, which is the right default.
-{
-    private _cfg = _x;
-    private _id = configName _cfg;
+// THE UNIT'S SCHEMES, FROM ONE PLACE: TAC//PAC's structure when it carries a
+// "schemes" section (the database's, or the mission's read through PAC), else
+// the mission's GHOSTFR_TacpadSchemes as before. No class is not an error -
+// most missions have nothing to say about colour and get the shipped six.
+private _pac = (missionNamespace getVariable ["ghost_pac_structure", createHashMap]) getOrDefault ["schemes", createHashMap];
+private _entries = [];
+if (_pac isEqualType createHashMap && {count _pac > 0}) then {
+    {
+        _entries pushBack [_x, _y getOrDefault ["name", ""], _y getOrDefault ["ground", ""], _y getOrDefault ["ink", ""], _y getOrDefault ["accent", ""]];
+    } forEach _pac;
+} else {
+    {
+        _entries pushBack [configName _x, getText (_x >> "name"), getText (_x >> "ground"), getText (_x >> "ink"), getText (_x >> "accent")];
+    } forEach ("true" configClasses (missionConfigFile >> "GHOSTFR_TacpadSchemes"));
+};
+_entries sort true;
 
-    // HEX OR r,g,b, whichever the mission wrote - FUNC(rgbOf) reads both, and
-    // an empty fallback is how a missing or unreadable token is spotted here
+{
+    _x params ["_id", "_label", "_ground", "_ink", "_accent"];
+
+    // HEX OR r,g,b, whichever was written - FUNC(rgbOf) reads both, and an
+    // empty fallback is how a missing or unreadable token is spotted here
     // rather than painted as black on the card.
-    private _tokens = ["ground", "ink", "accent"] apply {
-        [getText (_cfg >> _x), []] call EFUNC(tacpad,rgbOf)
+    private _tokens = [_ground, _ink, _accent] apply {
+        [_x, []] call EFUNC(tacpad,rgbOf)
     };
 
     if (_tokens findIf {_x isEqualTo []} > -1) then {
@@ -57,14 +71,13 @@ private _out = [];
         continue;
     };
 
-    private _label = getText (_cfg >> "name");
     if (_label == "") then {_label = _id};
 
     // Canonical hex, not what was typed. The settings screen compares the
     // preset against the three custom tokens to know which card is active, and
     // "#7de08a" against "7DE08A" is the same colour and a different string.
     _out pushBack ([toUpper _label] + (_tokens apply {[_x] call EFUNC(tacpad,hexOf)}));
-} forEach ("true" configClasses (missionConfigFile >> "GHOST_TacpadSchemes"));
+} forEach _entries;
 
 GVAR(missionSchemes) = _out;
 

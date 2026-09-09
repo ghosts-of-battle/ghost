@@ -37,12 +37,18 @@
  * Public: No
  */
 
-private _root = missionConfigFile >> "GHOST_Templates";
+private _root = missionConfigFile >> "GHOSTFR_Templates";
 
 if !(isClass _root) exitWith {
     // LOUD, because a mission with no deck has no reports at all. Every other
     // mission in this collection still needs its own copy of the file.
-    WARNING("no GHOST_Templates class in the mission config - this mission has no report deck");
+    // With TAC//PAC loaded the deck usually arrives with its structure (the
+    // database's), after this - not a warning then, a note.
+    if (isClass (configFile >> "CfgPatches" >> "ghost_pac")) then {
+        INFO("no GHOSTFR_Templates class in the mission config - the report deck comes with TAC//PAC's structure, if the unit keeps one");
+    } else {
+        WARNING("no GHOSTFR_Templates class in the mission config - this mission has no report deck");
+    };
     0
 };
 

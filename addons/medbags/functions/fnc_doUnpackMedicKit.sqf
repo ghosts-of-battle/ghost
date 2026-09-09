@@ -13,7 +13,7 @@
  * nothing
  *
  * Example:
- * [player] call ghost_medical_supplies_fnc_doUnpackMedicKit;
+ * [player] call ghost_medbags_fnc_doUnpackMedicKit;
  *
  */
 
@@ -56,37 +56,7 @@ if (isNull _unit) exitWith {};
 
         _unit removeItem "ghost_medbags_MedicKit";
 
-        private _order = [3,2,1];
-        private _overflow = true;
-
-        [_unit, "ACE_fieldDressing", 18, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "ACE_elasticBandage", 14, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "ACE_packingBandage", 14, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "ACE_quikClot", 14, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "ACE_salineIV_500", 8, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "ACE_tourniquet", 08, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "ACE_splint", 08, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "ACE_fieldDressing", 06, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "ACE_tourniquet", 04, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "ACE_EarPlugs", 02, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "ACE_plasmaIV_500", 4, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "ACE_tourniquet", 04, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "GHOST_Apap", 04, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
-        [_unit, "ACE_suture", 12, _order, _overflow] call EFUNC(common,addItem);
-        sleep 0.3;
+        [_unit, GVAR(contentsMedicKit)] call FUNC(issueContents);
     };
     if (ghost_MEDICAL_SUPPLIES_UNPACK_FAILURE) exitWith {};
 };

@@ -31,10 +31,15 @@ EGVAR(patches,usesACEX)         = isClass (configFile >> "CfgPatches" >> "acex_m
 EGVAR(patches,usesKat)          = isClass (configFile >> "CfgPatches" >> "kat_main");
 EGVAR(patches,usesACRE)         = isClass (configFile >> "CfgPatches" >> "acre_sys_core");
 EGVAR(patches,usesTFAR)         = isClass (configFile >> "CfgPatches" >> "task_force_radio");
-// usesAlive is set by ghost_adapter_alive's own preInit - naming an ALiVE
-// symbol here is the one thing the adapter seam does not allow, and a data read
-// about ALiVE belongs to the adapter. Same variable name, different file.
 EGVAR(patches,usesZen)          = isClass (configFile >> "CfgPatches" >> "zen_main");
+// Simplex Support Services. TAC//SUPPORT is a front end for it and nothing else,
+// so without it there is no app and no tile - see EFUNC(tacpad_apps,appSupport).
+EGVAR(patches,usesSimplex)      = isClass (configFile >> "CfgPatches" >> "sss_main");
+// ALiVE IS DELIBERATELY NOT IN THIS LIST. EGVAR(patches,usesAlive) is set by
+// EFUNC(adapter_alive,XEH_preInit) instead, because that addon is the only one
+// allowed to know ALiVE exists - see CLAUDE.md, "The ALiVE seam". A mission
+// reading ghost_patches_usesAlive gets nil, not false, when the adapter's PBO
+// was skipped for want of ALiVE_main.
 EGVAR(patches,usesACEAX)        = isClass (configFile >> "CfgPatches" >> "aceax_main");
 
 EGVAR(Staging,ZoneStatus) = false;
@@ -65,7 +70,8 @@ EGVAR(gear,Radio) = false;
 call FUNC(missionConfigsReady);
 
 call FUNC(chatCommands);
-call FUNC(zenModuels);
+// THE ZEN MODULES USED TO REGISTER HERE. They are in XEH_postInit.sqf now, and
+// the file says why - preInit is too early for zen_custom_modules_fnc_register.
 
 call FUNC(eventHandlers);
 

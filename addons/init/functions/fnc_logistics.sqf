@@ -18,7 +18,7 @@ INFO("Logistics","Creating logistical database");
 // HANDED OVER BY THE MISSION, NOT READ OUT OF IT. config\loadConfigs.sqf runs
 // in the mission at preInit and leaves the raw catalogue here. A PBO resolving
 // paths inside a mission was wrong three different ways - see that file.
-private _dataArray = missionNamespace getVariable ["ghost_missionConfig_logistics", []];
+private _dataArray = missionNamespace getVariable ["ghostFR_missionConfig_logistics", []];
 
 if (_dataArray isEqualTo []) exitWith {
     INFO("Logistics","This mission handed over no logistics catalogue - empty database.");

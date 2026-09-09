@@ -65,7 +65,7 @@ if (!isServer) then { call EFUNC(gear,setupRadios); };
 if (EGVAR(patches,usesACRE) && GVAR(isPlayer)) then {
     [{[] call acre_api_fnc_isInitialized}, {
         [player] call EFUNC(players,setRadioChannel);
-        [ghost_radio_acreActiveRadio] call EFUNC(players,setActiveRadio);
+        [ghostFR_radio_acreActiveRadio] call EFUNC(players,setActiveRadio);
     }, []] call CBA_fnc_waitUntilAndExecute;
 };
 
@@ -73,6 +73,6 @@ if (EGVAR(patches,usesACRE) && GVAR(isPlayer)) then {
 if (EGVAR(patches,usesTFAR) && GVAR(isPlayer)) then {
     [{ private _r = call TFAR_fnc_activeSwRadio; !isNil "_r" && {_r isEqualType "" && _r isNotEqualTo ""} }, {
         [player] call EFUNC(players,setRadioChannel);
-        [ghost_radio_tfarActiveRadio] call EFUNC(players,setActiveRadio);
+        [ghostFR_radio_tfarActiveRadio] call EFUNC(players,setActiveRadio);
     }, []] call CBA_fnc_waitUntilAndExecute;
 };

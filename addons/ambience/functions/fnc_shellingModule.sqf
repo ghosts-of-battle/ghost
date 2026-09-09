@@ -28,6 +28,14 @@ if (!isServer) exitWith {};
 private _markers = ((_logic getVariable ["markers", ""]) splitString " ,")
     select { _x isNotEqualTo "" && {markerShape _x isNotEqualTo ""} };
 
+// THE MODULE'S OWN AREA COUNTS AS ONE OF THEM. Resize it in Eden or Zeus and
+// the ambience runs inside that rectangle - see FUNC(areaMarker), which makes
+// it into a marker so the gate downstream needs no second way of describing an
+// area. Named markers still work and still add to it: the module is the easy
+// answer, a marker somebody already drew is the precise one.
+private _own = [_logic, "shell"] call FUNC(areaMarker);
+if (_own isNotEqualTo "") then { _markers pushBack _own };
+
 private _shells = ((_logic getVariable ["shellClasses", ""]) splitString " ,")
     select { _x isNotEqualTo "" && {isClass (configFile >> "CfgAmmo" >> _x)} };
 if (_shells isEqualTo []) then { _shells = ["Sh_155mm_AMOS", "Sh_82mm_AMOS"] };

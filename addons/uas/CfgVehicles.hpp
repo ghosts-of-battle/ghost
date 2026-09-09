@@ -1,163 +1,119 @@
 class CfgVehicles {
+    // The airframe picker is ghost_ClassPick_Uav_Single in ghost_main's
+    // CfgEdenDrone.hpp, a Cfg3DEN control. An attribute NAMES it with
+    // `control = ...` (see swarmClass below) - it must never be declared or
+    // inherited in here. A forward declaration of it inside CfgVehicles is an
+    // empty vehicle class of that name, and the 3DEN item preload then asks it
+    // for scope, side, model and two hundred other things it does not have.
     class Logic;
     class Module_F: Logic {
         class AttributesBase {
             class Edit;
+            class Checkbox;
             class Combo;
-        };
+            };
         class ModuleDescription;
     };
 
-    // PLACING THIS MODULE IS THE ENABLE. No module, no enemy drones - there is no
-    // separate on switch to forget, and no system quietly running because a
-    // setting defaulted to on in a mission that never asked for one.
+    // ONE MODULE, ONE PATROL ZONE, AND IT IS AN AREA. In ghost this was a single
+    // switch: place it and every ALiVE commander flew drones over its own
+    // objectives. There are no commanders and no objective lists, so the WHERE
+    // had nothing to read - and the replacement is to draw it.
     //
-    // Every attribute here is an OPERATION value: how many, how often, how
-    // likely. WHERE and WHO are never asked for - those come from ALiVE's own
-    // commanders, their TAORs and their objectives, so this cannot be pointed
-    // at ground its commander does not operate on.
-    class ghost_moduleUAS: Module_F {
+    // Resize it in Eden or Zeus and the area is the ground patrolled. Place
+    // several for several places, one per side for a side that needs one. The
+    // first one armed starts the system.
+    //
+    // NOBODY NEAR, NOTHING FLYING is unchanged, and is why this is worth having:
+    // a zone with no player within 3.2 km is not patrolled, and patrols whose
+    // audience has left are retired. An empty map costs nothing.
+    class ghost_moduleDronePatrol: Module_F {
         scope = 2;
         scopeCurator = 2;
-        displayName = "Ghost - Enemy Drones";
+        displayName = "Ghost - Drone Patrol";
         author = QAUTHOR;
         category = "ghost_modules";
-        function = QUOTE(DFUNC(moduleController));
+        function = QUOTE(DFUNC(moduleDronePatrol));
         functionPriority = 1;
         isGlobal = 0;
         isTriggerActivated = 0;
         isDisposable = 0;
         is3DEN = 0;
-        icon = "\a3\ui_f\data\map\markers\nato\o_uav.paa";
+        canSetArea = 1;
+        icon = "\a3\ui_f\data\map\markers\nato\o_air.paa";
 
         class Attributes: AttributesBase {
-            // OWN GROUND IS THE DEFAULT - the user's call, twice: "blue
-            // drones still in red taor". A side's patrols orbit its own
-            // objectives; sending them over the enemy is the opt-in.
-            class patrolOver: Combo {
-                property = QGVAR(patrolOver);
-                displayName = "Patrol Over";
-                tooltip = "OWN GROUND: a side's drones orbit its own objectives as overwatch - blue drones stay over blue ground. ENEMY GROUND: they orbit the objectives of the sides they are hostile to instead - reconnaissance over the enemy.";
+            class patrolSide: Edit {
+                property = QGVAR(patrolSide);
+                displayName = "Side";
+                tooltip = "Whose drones patrol here: east, west, guer or civ. A side friendly to the players is skipped - this places ENEMY drones.";
+                typeName = "STRING";
+                defaultValue = "east";
+                expression = QUOTE(_this setVariable [ARR_2('patrolSide',_value)]);
+            };
+            class droneCount: Edit {
+                property = QGVAR(droneCount);
+                displayName = "Drones";
+                tooltip = "How many airframes this patrol keeps up. They are replaced as they are lost. 0 is a module placed and switched off rather than deleted.";
                 typeName = "NUMBER";
                 defaultValue = "1";
-                expression = QUOTE(_this setVariable [ARR_2('patrolOver',_value)]);
-                class Values {
-                    class own { name = "Own ground"; value = 1; default = 1; };
-                    class enemy { name = "Enemy ground"; value = 0; };
-                };
+                expression = QUOTE(_this setVariable [ARR_2('droneCount',_value)]);
             };
-            class baseMax: Edit {
-                property = QGVAR(baseMax);
-                displayName = "Airframes Per Side";
-                tooltip = "How many drones a commander flies at once while its supply is intact.";
-                typeName = "NUMBER";
-                defaultValue = "8";
-                expression = QUOTE(_this setVariable [ARR_2('baseMax',_value)]);
-            };
-            // WHAT AIRFRAME EACH SIDE FLIES, when the faction scan is not
-            // wanted. A faction with no UAV of its own falls back to its
-            // side's vanilla airframe, and the fallbacks all LOOK alike
-            // enough that "west drones over the east battery" was an east
-            // patrol in a borrowed airframe.
-            // PER SIDE (user, 2026-08-29: "make the drones per side a per side
-            // option"). -1 is "use Airframes Per Side"; 0 grounds that side.
-            // Same shape as the per-side drone classes below: a number for
-            // each of the three sides, never a field asking WHICH side.
-            class maxWest: Edit {
-                property = QGVAR(maxWest);
-                displayName = "West Airframes";
-                tooltip = "How many drones WEST flies at once while its supply is intact. -1: use Airframes Per Side. 0: none.";
-                typeName = "NUMBER";
-                defaultValue = -1;
-                expression = QUOTE(_this setVariable [ARR_2('maxWest',_value)]);
-            };
-            class maxEast: Edit {
-                property = QGVAR(maxEast);
-                displayName = "East Airframes";
-                tooltip = "How many drones EAST flies at once while its supply is intact. -1: use Airframes Per Side. 0: none.";
-                typeName = "NUMBER";
-                defaultValue = -1;
-                expression = QUOTE(_this setVariable [ARR_2('maxEast',_value)]);
-            };
-            class maxGuer: Edit {
-                property = QGVAR(maxGuer);
-                displayName = "Independent Airframes";
-                tooltip = "How many drones INDEPENDENT flies at once while its supply is intact. -1: use Airframes Per Side. 0: none.";
-                typeName = "NUMBER";
-                defaultValue = -1;
-                expression = QUOTE(_this setVariable [ARR_2('maxGuer',_value)]);
-            };
-            class uavWest: Edit {
-                property = QGVAR(uavWest);
-                displayName = "West Drone Classes";
-                tooltip = "Comma-separated UAV classes WEST patrols fly; each launch draws one. BLANK: the faction's own UAV, vanilla fallback.";
+            class droneClass: Edit {
+                property = QGVAR(droneClass);
+                displayName = "Drone Class";
+                tooltip = "The airframe, e.g. O_UAV_01_F. Empty flies a UAV belonging to the side, which is the ordinary case. A class that does not exist falls back the same way and says so in the RPT.";
                 typeName = "STRING";
-                control = "ghost_ClassPick_Uav_West";
-                defaultValue = "''";
-                expression = QUOTE(_this setVariable [ARR_2('uavWest',_value)]);
+                defaultValue = "";
+                expression = QUOTE(_this setVariable [ARR_2('droneClass',_value)]);
             };
-            class uavEast: Edit {
-                property = QGVAR(uavEast);
-                displayName = "East Drone Classes";
-                tooltip = "Comma-separated UAV classes EAST patrols fly; each launch draws one. BLANK: the faction's own UAV, vanilla fallback.";
-                typeName = "STRING";
-                control = "ghost_ClassPick_Uav_East";
-                defaultValue = "''";
-                expression = QUOTE(_this setVariable [ARR_2('uavEast',_value)]);
+
+            // ---- artillery on detection --------------------------------------
+            class artyOnDetect: Checkbox {
+                property = QGVAR(artyOnDetect);
+                displayName = "Artillery On Detect";
+                tooltip = "A drone from this patrol that actually SEES somebody calls artillery on where it saw them. Off: it reports down the reaction path and nothing else, which is the default because this turns overflight from a thing you hide from into a thing that kills you.";
+                defaultValue = 0;
+                expression = QUOTE(_this setVariable [ARR_2('artyOnDetect',_value)]);
             };
-            class uavGuer: Edit {
-                property = QGVAR(uavGuer);
-                displayName = "Independent Drone Classes";
-                tooltip = "Comma-separated UAV classes INDEPENDENT patrols fly; each launch draws one. BLANK: the faction's own UAV, vanilla fallback.";
-                typeName = "STRING";
-                control = "ghost_ClassPick_Uav_Guer";
-                defaultValue = "''";
-                expression = QUOTE(_this setVariable [ARR_2('uavGuer',_value)]);
-            };
-            class reducedMax: Edit {
-                property = QGVAR(reducedMax);
-                displayName = "After A Cache Is Lost";
-                tooltip = "The ceiling while a supply cache is down. Destroying caches is how players thin the sky.";
+            class artyRounds: Edit {
+                property = QGVAR(artyRounds);
+                displayName = "Rounds";
+                tooltip = "Shells per mission.";
                 typeName = "NUMBER";
-                defaultValue = "3";
-                expression = QUOTE(_this setVariable [ARR_2('reducedMax',_value)]);
+                defaultValue = "6";
+                expression = QUOTE(_this setVariable [ARR_2('artyRounds',_value)]);
             };
-            class windowMin: Edit {
-                property = QGVAR(windowMin);
-                displayName = "Outage Min (sec)";
-                tooltip = "Shortest time a destroyed cache holds the ceiling down.";
+            class artyScatter: Edit {
+                property = QGVAR(artyScatter);
+                displayName = "Scatter (m)";
+                tooltip = "How wide the fall of shot is around where the contact WAS seen, not where it is when the shells land. Moving is the counter.";
                 typeName = "NUMBER";
-                defaultValue = "600";
-                expression = QUOTE(_this setVariable [ARR_2('windowMin',_value)]);
+                defaultValue = "100";
+                expression = QUOTE(_this setVariable [ARR_2('artyScatter',_value)]);
             };
-            class windowMax: Edit {
-                property = QGVAR(windowMax);
-                displayName = "Outage Max (sec)";
-                tooltip = "Longest time. The real window is rolled between the two.";
+            class artyCooldown: Edit {
+                property = QGVAR(artyCooldown);
+                displayName = "Cooldown (s)";
+                tooltip = "Minimum gap between two missions from THIS patrol. Without it a module flying four airframes over one section is four fire missions.";
                 typeName = "NUMBER";
-                defaultValue = "1800";
-                expression = QUOTE(_this setVariable [ARR_2('windowMax',_value)]);
-            };
-            class cachesPerSide: Edit {
-                property = QGVAR(cachesPerSide);
-                displayName = "Caches Per Side";
-                tooltip = "Supply caches placed in each commander's area for players to find.";
-                typeName = "NUMBER";
-                defaultValue = "3";
-                expression = QUOTE(_this setVariable [ARR_2('cachesPerSide',_value)]);
+                defaultValue = "300";
+                expression = QUOTE(_this setVariable [ARR_2('artyCooldown',_value)]);
             };
         };
 
         class ModuleDescription: ModuleDescription {
             description[] = {
-                "Placing this module turns on enemy drones. Without it, the system is off.",
+                "One patrol. Resize it - the area is the ground the drones fly over.",
                 "",
-                "Airframes Per Side - How many drones a commander flies at once while its supply is intact",
-                "West / East / Independent Airframes - That side's own ceiling; -1 uses Airframes Per Side, 0 grounds it",
-                "After A Cache Is Lost - The ceiling while a supply cache is down",
-                "Outage Min (sec) - Shortest time a destroyed cache holds the ceiling down",
-                "Outage Max (sec) - Longest time",
-                "Caches Per Side - Supply caches placed in each commander's area for players to find",
+                "Side - whose drones. A side friendly to the players is skipped",
+                "Drones - how many airframes this patrol keeps up",
+                "Drone Class - empty flies the side's own",
+                "",
+                "Artillery On Detect - a drone that sees somebody shells where it saw them",
+                "Rounds / Scatter (m) / Cooldown (s) - the size of that mission and its gap",
+                "",
+                "A module never resized is one 800 m orbit. Nobody within 3.2 km, nothing flies.",
             };
         };
     };
@@ -200,4 +156,112 @@ class CfgVehicles {
         };
     };
 
+
+    // A SWARM IS AN EVENT, NOT A PRESENCE, which is the whole reason this is a
+    // second module rather than a checkbox on the patrol one. Ghost - Drone
+    // Patrol keeps a standing watch over ground, replaces losses and stands
+    // down when nobody is near. This launches once, launches everything, and
+    // what is gone is gone - which is what dropping a swarm on somebody means.
+    //
+    // TWO ACTIONS, AND THEY WANT DIFFERENT AIRFRAMES. Impact is a one-way
+    // weapon and any airframe will do because the airframe IS the warhead;
+    // circling is only worth doing with something armed, and those are left to
+    // their own AI once they are on station.
+    //
+    // THE PICKER OFFERS WHAT THE SETTING ALLOWS. Which airframes a mission may
+    // field is Ghosts of Battle > Drones > Swarm airframes; this is how you
+    // choose from it. A class off that list is refused when the module is
+    // placed, not when it launches - the person who chose it is standing there.
+    class ghost_moduleDroneSwarm: Module_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Ghost - Drone Swarm";
+        author = QAUTHOR;
+        category = "ghost_modules";
+        function = QUOTE(DFUNC(moduleDroneSwarm));
+        functionPriority = 1;
+        isGlobal = 0;
+        isTriggerActivated = 1;
+        isDisposable = 0;
+        is3DEN = 0;
+        canSetArea = 1;
+        icon = "\a3\ui_f\data\map\markers\nato\o_air.paa";
+
+        class Attributes: AttributesBase {
+            class swarmClass: Edit {
+                property = QGVAR(swarmClass);
+                displayName = "Airframe";
+                tooltip = "Which drone the swarm is made of. The list is every UAV the game has; what a mission may actually field is the Swarm Airframes setting, and a class outside it is refused when this module is placed.";
+                typeName = "STRING";
+                control = "ghost_ClassPick_Uav_Single";
+                defaultValue = "''";
+                expression = QUOTE(_this setVariable [ARR_2('swarmClass',_value)]);
+            };
+            class swarmCount: Edit {
+                property = QGVAR(swarmCount);
+                displayName = "Drones";
+                tooltip = "How many. Two is the smallest thing worth calling a swarm; twelve is where a dozen airframes and their steering loops stop being a swarm and start being a frame time. Anything outside that is clamped.";
+                typeName = "NUMBER";
+                defaultValue = "4";
+                expression = QUOTE(_this setVariable [ARR_2('swarmCount',_value)]);
+            };
+            class swarmAction: Combo {
+                property = QGVAR(swarmAction);
+                displayName = "Action";
+                tooltip = "IMPACT: every drone dives on this module and detonates - shooting them down on the way in is the counterplay, and each one hit is one that does not arrive. CIRCLE: every drone orbits this module at height with its crew and its weapons, and is then left to its own AI. Circle wants an armed airframe.";
+                typeName = "STRING";
+                defaultValue = "impact";
+                class values {
+                    class valueImpact {
+                        name = "Impact";
+                        value = "impact";
+                        default = 1;
+                    };
+                    class valueCircle {
+                        name = "Circle";
+                        value = "circle";
+                    };
+                };
+                expression = QUOTE(_this setVariable [ARR_2('swarmAction',_value)]);
+            };
+            class spawnMin: Edit {
+                property = QGVAR(spawnMin);
+                displayName = "Spawn Min (m)";
+                tooltip = "Nearest a drone may appear. Each rolls its own distance between this and the maximum, on its own bearing. Held at 500 m minimum: a swarm on top of its target is not a harder swarm, it is one nobody got to fight.";
+                typeName = "NUMBER";
+                defaultValue = "1500";
+                expression = QUOTE(_this setVariable [ARR_2('spawnMin',_value)]);
+            };
+            class spawnMax: Edit {
+                property = QGVAR(spawnMax);
+                displayName = "Spawn Max (m)";
+                tooltip = "Furthest a drone may appear. The transit from here is the window in which the swarm can be engaged - at the impact speed, 1500 m is about thirty seconds of it being someone's problem.";
+                typeName = "NUMBER";
+                defaultValue = "2500";
+                expression = QUOTE(_this setVariable [ARR_2('spawnMax',_value)]);
+            };
+            class swarmSide: Edit {
+                property = QGVAR(swarmSide);
+                displayName = "Side";
+                tooltip = "east, west, guer or civ. The airframe's own config decides the side of a drone that crews itself - this is the fallback crew's side for an airframe that comes out empty, so it wants to agree with the one you picked.";
+                typeName = "STRING";
+                defaultValue = "east";
+                expression = QUOTE(_this setVariable [ARR_2('swarmSide',_value)]);
+            };
+        };
+
+        class ModuleDescription: ModuleDescription {
+            description[] = {
+                "A swarm, launched where you place it. Trigger it to launch on cue.",
+                "",
+                "Airframe - which drone. Limited by the Swarm Airframes setting",
+                "Drones - 2 to 12",
+                "Action - Impact dives on this module; Circle orbits it",
+                "Spawn Min / Max (m) - how far out they appear and fly in from",
+                "Side - the fallback crew's side",
+                "",
+                "Resize the module to set the orbit radius. Impact ignores the area.",
+            };
+        };
+    };
 };

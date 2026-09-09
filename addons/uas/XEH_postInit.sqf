@@ -9,19 +9,32 @@ GVAR(patrols) = createHashMap;
 // Sides whose drones ALiVE declined to profile, so the reason is logged once
 // rather than once per airframe. See FUNC(topUp).
 GVAR(unprofilable) = [];
-// side text -> how many patrols FUNC(standDown) took back on the last tick.
-// FUNC(planPatrols) spends it as extra launches and clears it: ground that
-// emptied because everybody drove away refills at the speed it emptied, while
-// ATTRITION still comes back as the one-a-tick drip it was made to be.
-GVAR(standDownCredit) = createHashMap;
 // Sides skipped for being on the players' team, said once each rather than
 // every planning tick. See FUNC(planPatrols).
 GVAR(friendlySaid) = [];
 
-// THE MODULE IS THE ENABLE. This file only sets up state and the report
-// command; FUNC(moduleController) is what arms the system, so a mission with
-// no module placed gets nothing from this addon. GVAR(moduleUp) is declared in
-// XEH_preInit, NOT here - see there for why.
+// A ZONE IS THE ENABLE. This file only sets up state and the report command;
+// the first Ghost - Drone Patrol Zone module to arm is what starts the system,
+// so a mission that draws no zone gets nothing from this addon.
+// GVAR(moduleUp) is declared in XEH_preInit, NOT here - see there for why.
+
+// ...AND AN ALiVE OBJECTIVE IS A ZONE, if the mission asked for that. Off by
+// default; QGVAR(aliveZones) is the opt-in that stands where ghost's deleted
+// Ghost - UAS module stood. Both paths are covered because a commander can
+// come up either side of this file running: if the adapter is already ready the
+// zones are taken now, otherwise on its ready event, which fires once.
+//
+// Objective ids already turned into zones. FUNC(zonesFromAlive) reads it so a
+// late commander adds only what is new.
+GVAR(aliveZoneIds) = [];
+
+if (!isNil QEFUNC(adapter_alive,commanders)) then {
+    if (EGVAR(adapter_alive,ready)) then {
+        [] call FUNC(zonesFromAlive);
+    } else {
+        [QEGVAR(adapter_alive,ready), { [] call FUNC(zonesFromAlive) }] call CBA_fnc_addEventHandler;
+    };
+};
 
 ["ghostuas", {
     [QGVAR(report), []] call CBA_fnc_serverEvent;
@@ -34,8 +47,13 @@ GVAR(friendlySaid) = [];
     // like it did nothing.
     private _fleet = [];
     {
-        _fleet pushBack format ["%1=%2/%3", _x, [_x] call FUNC(livePatrols),
-            [_x] call FUNC(ceilingFor)];
+        private _side = _x;
+        private _want = 0;
+        {
+            _want = _want + ([_side, _x # 5] call FUNC(ceilingFor));
+        } forEach ([_side] call FUNC(zonesFor));
+
+        _fleet pushBack format ["%1=%2/%3", _side, [_side] call FUNC(livePatrols), _want];
     } forEach [west, east, independent];
 
     private _out = [];

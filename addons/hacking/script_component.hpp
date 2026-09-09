@@ -37,6 +37,11 @@
 #define HACK_ABANDON_DEF    60
 #define HACK_PICTURE_DEF    1500
 #define HACK_RESPONSE_DEF   25
+// A THIRD OF A PACKAGE PER BREAK-IN. Three visits to empty a terminal, which
+// is the number that makes a device worth coming back to without making it a
+// chore. The CBA setting of the same name overrides it - see hackSetting.
+#define HACK_PACKAGE_SHARE_DEF 34
+
 #define INTEL_LIFETIME_DEF  300
 #define INTEL_ALPHA_DEF     0.5
 
@@ -72,22 +77,18 @@
 #define RH_JAM_MAX_CAP      2000    // hard cap on the rolled radius
 #define RH_JAM_DURATION_DEF 600
 
-// --- hacking tablet ---------------------------------------------------------
-#include "\z\ghost\addons\hacking\tablet.inc.hpp"
-
-// Fixed card slots rather than ctrlCreate - same technique as the notify stack.
+// --- intrusion --------------------------------------------------------------
+// THE SUITE HAS NO DIALOG OF ITS OWN. It had one - tablet.hpp, an Intrusion
+// Tablet with device cards down the left and product buttons down the right -
+// and it was the one screen in the mission that looked like a different mod.
+// EFUNC(tacpad_apps,appHack) is the interface now, and the only one; what is
+// left in this addon is the logic behind it, which the app calls.
+//
+// These two caps outlived the dialog because they limit what a hack can offer,
+// not what a control can hold: FUNC(scanDevices) truncates its device list to
+// the first, FUNC(intelOptions) its product list to the second.
 #define TAB_CARDS           6
-#define IDC_CARD_BG(n)      (8720 + (n) * 5)
-#define IDC_CARD_NAME(n)    (8721 + (n) * 5)
-#define IDC_CARD_INFO(n)    (8722 + (n) * 5)
-#define IDC_CARD_BTN(n)     (8723 + (n) * 5)
-
-// Six because six products can be live at once: picture, sigint, jam, detect,
-// target, network trace. The refresh TRUNCATES past this, silently, so the cap
-// and the button count in tablet.hpp must move together or the last product
-// becomes unreachable with no error anywhere.
 #define TAB_INTEL           9
-#define IDC_INTEL_BTN(n)    (8780 + (n))
 
 #define TAB_REFRESH         1       // sec between device-list refreshes
 #define TAB_SCAN_PAD        50      // m added to the biggest hack range when scanning
