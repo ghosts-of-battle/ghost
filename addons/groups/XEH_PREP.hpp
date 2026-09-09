@@ -2,6 +2,7 @@ PREP(assignPlayer);
 PREP(canTakeRole);
 PREP(fillRoleTree);
 PREP(handleDisconnect);
+PREP(hoverTab);
 PREP(initGroupMenu);
 PREP(onGroupMenuTvSelectChange);
 PREP(onRespawn);

@@ -27,6 +27,10 @@ PREP(cltThread);
 PREP(netStream);
 PREP(roleTag);
 PREP(roleNets);
+PREP(railNets);
+PREP(platoonTags);
+PREP(tagSet);
+PREP(tagCallout);
 PREP(cltMarker);
 
 // Server

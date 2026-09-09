@@ -16,16 +16,17 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-15 functions.
+16 functions.
 
 ## Functions
 
-<details><summary>15</summary>
+<details><summary>16</summary>
 
 - `ghost_groups_fnc_assignPlayer`
 - `ghost_groups_fnc_canTakeRole`
 - `ghost_groups_fnc_fillRoleTree`
 - `ghost_groups_fnc_handleDisconnect`
+- `ghost_groups_fnc_hoverTab`
 - `ghost_groups_fnc_initGroupMenu`
 - `ghost_groups_fnc_onGroupMenuTvSelectChange`
 - `ghost_groups_fnc_onRespawn`

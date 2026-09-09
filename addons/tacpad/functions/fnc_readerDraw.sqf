@@ -78,7 +78,18 @@ _y = _y + _rowH;
 // Kept for the legacy SQUAD key, which older state may still hold.
 private _squadBox = format ["G:%1", groupId (group player)];
 
-private _nets = ((EGVAR(messaging,namedBoxes) splitString ",") apply {trim _x}) select {_x != ""};
+// WHAT THIS MAN MAY SEE, AND NOTHING ELSE (user, 2026-09-03). The rail used to
+// append every declared squad's net for everybody - fifteen rows of other
+// people's traffic he cannot open - and read the named nets off the ADDON
+// SETTING rather than the mission's GHOST_Nets, so the role gate never reached
+// it. Both are FUNC(railNets)'s job now, and the panel reader and the compose
+// target list ask the same function the same question.
+private _nets = +([player] call EFUNC(messaging,railNets));
+
+// A box the index knows about that nothing declared still gets a row, so a
+// mission that files somewhere unusual is not hidden. This cannot leak another
+// squad's net back in: the server only indexes what it would deliver, and it
+// gates that with FUNC(srvBoxesFor).
 {
     if !(_x isEqualType createHashMap) then {continue};
     private _box = _x getOrDefault ["boxId", ""];
@@ -87,14 +98,6 @@ private _nets = ((EGVAR(messaging,namedBoxes) splitString ",") apply {trim _x}) 
     };
 } forEach _index;
 
-// EVERY DECLARED SQUAD IS A NET, listed for everyone - REAPER, NOMAD, TALON
-// and the rest are the platoon's traffic, not private mail, and one reserved
-// SQUAD tab showing only your own was not the ask. Your own group leads even
-// when the mission declares nothing.
-private _ownNet = groupId (group player);
-{
-    _nets pushBackUnique _x;
-} forEach ([_ownNet] + (([] call EFUNC(messaging,squadNets)) select {_x isNotEqualTo _ownNet}));
 _nets pushBack "ALL";
 
 {

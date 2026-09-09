@@ -17,11 +17,16 @@
 // WHICH RADIOS RELAY. Manpacks and vehicle racks (user, 2026-08-28) - the
 // squad handheld is an end point, never a relay. Base class names, comma
 // separated; a radio's base type is matched (ACRE_PRC152_ID_3 is a PRC152).
+//
+// THE 148 IS OFF THIS LIST because it is the team handset every man carries.
+// Ninety-two riflemen acting as relays would mean team traffic hopping out of
+// the team through the very men its low power is there to contain. Put it back
+// only if it stops being the team radio.
 [
     QGVAR(nodeRadios), "EDITBOX",
     ["Relay radios", "Comma-separated ACRE base radio classes that act as relay nodes when carried or racked. Anything can still be an end point."],
     ["Ghosts of Battle", "Radio Mesh"],
-    "ACRE_PRC148,ACRE_PRC152,ACRE_PRC117F",
+    "ACRE_PRC152,ACRE_PRC117F",
     true
 ] call CBA_fnc_addSetting;
 

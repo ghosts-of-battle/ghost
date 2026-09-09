@@ -19,6 +19,22 @@
  * text they were shown as is kept beside it - if the edit still reads as it was
  * shown, the position stands; if it has been typed over, the typing wins.
  *
+ * ONLY CONTROLS THAT HOLD TEXT ARE READ, and this is load-bearing. A field's
+ * fieldKey is on its EDIT and on every HIT AREA that answers it - a bool tick,
+ * a choice segment, CURRENT LOC, MAP MARKER - because the press handlers need
+ * to know which key they are setting. ctrlText on a hit area is always "", and
+ * an empty read here means "the player cleared it", so this walked the card
+ * deleting the answer behind every button on it. Three symptoms, one cause
+ * (user, 2026-09-03):
+ *
+ *   - setting CASEVAC line 4 cleared line 5, and setting 5 cleared 4
+ *   - SEND cleared the location and then refused the report for not having one
+ *   - any tick or choice was wiped by the next press anywhere on the card
+ *
+ * FUNC(composeCard) marks the one control per field that actually holds typing.
+ * A hit area is skipped here and keeps its fieldKey for the handler that needs
+ * it.
+ *
  * Arguments:
  * None
  *
@@ -50,6 +66,10 @@ if (isNull _display) exitWith {};
         GVAR(composeCc) = ctrlText _ctrl;
         continue;
     };
+
+    // Not an edit - a tick, a segment, CURRENT LOC, MAP MARKER. It carries a
+    // fieldKey for its own press handler and holds no text to read.
+    if !(_ctrl getVariable [QGVAR(fieldEdit), false]) then {continue};
 
     private _key = _ctrl getVariable [QGVAR(fieldKey), ""];
     if (_key isEqualTo "") then {continue};

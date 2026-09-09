@@ -138,8 +138,17 @@ if (_tags isEqualType []) then {
     _mine = _tags select {_x isEqualType "" && {[player, _x] call FUNC(tagMatch)}};
 };
 
+// ONE TAG ON THE BANNER, not every tag that happened to name him (user,
+// 2026-09-03: "do not double notify"). A lead carries isLeader, isISR and
+// isJFO, so three of the six job chips name the same man and the title read
+// like three notifications stacked. FUNC(tagCallout) picks the most specific -
+// his name, then his squad, then his platoon, then a job - because that is the
+// one telling him something he did not already know.
+//
+// The other tags are untouched: they still reached everyone they name and are
+// still on the message. This is the banner only.
 if (_mine isNotEqualTo []) then {
-    _title = format ["%1 - %2", _mine joinString " ", _title];
+    _title = format ["%1 - %2", [player, _mine] call FUNC(tagCallout), _title];
     _priority = "high";
 };
 

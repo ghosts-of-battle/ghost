@@ -124,4 +124,23 @@ _composition deleteAt 0;
 
 _textCtrl ctrlSetStructuredText composeText _composition;
 
+// LET A LONG BRIEFING SCROLL (user, 2026-09-01: "include a scroll bar if the
+// text is longer"). A controls group scrolls what its controls cover, not what
+// their text says, so a text control left at the panel's height simply clipped
+// everything past the last visible line. Grown to the height of its own text,
+// the group has something to scroll and draws its bar; a briefing that fits
+// leaves the control the size config gave it and no bar appears.
+//
+// The width is not touched here - config already keeps the bar's column clear
+// (see RscModal.hpp), so this height is measured at the width the text keeps
+// and needs no second pass to correct for a rewrap.
+private _needed = ctrlTextHeight _textCtrl;
+private _panelH = (ctrlPosition _contentGroupCtrl) select 3;
+
+if (_needed > _panelH) then {
+    (ctrlPosition _textCtrl) params ["_textX", "_textY", "_textW"];
+    _textCtrl ctrlSetPosition [_textX, _textY, _textW, _needed];
+    _textCtrl ctrlCommit 0;
+};
+
 nil

@@ -117,7 +117,11 @@ private _index = EGVAR(messaging,index);
 // Reading the nets off the index meant a quiet net had no tab, so a fresh
 // mission showed one tab called ALL and the strip looked broken - and a player
 // could not select the net they were about to send on.
-private _nets = ((EGVAR(messaging,namedBoxes) splitString ",") apply {trim _x}) select {_x != ""};
+//
+// FILTERED TO THIS MAN (user, 2026-09-03) - the mission's GHOST_Nets narrowed
+// by his role, plus his own squad. It used to be the addon setting, unfiltered,
+// with every squad in the task force appended. See EFUNC(messaging,railNets).
+private _nets = +([player] call EFUNC(messaging,railNets));
 
 // Anything the index knows about that is not configured still gets a tab, so a
 // mission that files somewhere unusual is not hidden.
@@ -183,11 +187,10 @@ if (GVAR(readerLog)) exitWith {
     };
 };
 
-private _squadBox = format ["G:%1", groupId (group player)];
+// His own squad's net, which the strip below always keeps a tab for, and the
+// same name as a box id for the legacy SQUAD key older saved state may hold.
 private _ownNet = groupId (group player);
-{
-    _nets pushBackUnique _x;
-} forEach ([_ownNet] + (([] call EFUNC(messaging,squadNets)) select {_x isNotEqualTo _ownNet}));
+private _squadBox = format ["G:%1", _ownNet];
 _nets pushBack "ALL";
 
 // THE RAIL SHOWS THE NETS THAT MATTER RIGHT NOW. Fourteen tabs of two

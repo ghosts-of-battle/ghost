@@ -92,8 +92,21 @@ if (_stream isEqualTo []) exitWith {
         ["NOTHING ON THIS NET", "FETCHING..."] select (_pending > 0),
         _dim, 1, true, "center"
     ] call FUNC(drawText);
+
+    // NOTHING TO ANSWER, so a quick phrase opens a thread - which is the only
+    // time it should. See FUNC(readerComposer).
     [[_dx, _dw], _floor] call FUNC(readerComposer);
 };
+
+// WHAT A QUICK PHRASE ANSWERS: the newest thread on the net, which is the one at
+// the bottom of the pane the player is looking at. The stream is already sorted
+// oldest first - see EFUNC(messaging,netStream) - so it is the last row.
+private _replyTo = "";
+{
+    _x params ["", ["_t", createHashMap]];
+    private _id = _t getOrDefault ["id", ""];
+    if (_id isEqualType "" && _id isNotEqualTo "") then {_replyTo = _id};
+} forEach _stream;
 
 // NEWEST LAST, AND THE NEWEST IS WHAT FITS. A conversation is read at its
 // bottom; when there is more than the pane holds it is the OLD end that goes,
@@ -185,4 +198,4 @@ private _myUid = getPlayerUID player;
     _y = _y + _lineH;
 } forEach _shown;
 
-[[_dx, _dw], _floor] call FUNC(readerComposer);
+[[_dx, _dw], _floor, _replyTo] call FUNC(readerComposer);

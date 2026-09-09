@@ -247,13 +247,18 @@ _y = _y + _btnH;
 _y = _y + _btnH * 0.55;
 
 // PRE-BUILT, pressed on and off - the design's tags are a set you pick from,
-// not a spelling test. The declared squads are the set the engine provably
-// matches (a tag matches a group id - see EFUNC(messaging,tagMatch)); the box
-// above still takes a callsign or a job by hand.
+// not a spelling test.
+//
+// IT WAS EVERY SQUAD IN THE TASK FORCE (user, 2026-09-03: "you cleaned up the
+// nets but not the tags"), which is fifteen chips plus four jobs sharing one
+// row - each about a finger wide and none of them readable. It is his own
+// squad, the platoons whose net he is on, and the jobs now:
+// EFUNC(messaging,tagSet).
+//
+// THE BOX ABOVE STILL TAKES ANYTHING by hand - a callsign, a job, a man, a UID.
+// The chips are the set worth one press, not the set that is legal.
 private _tagSet = [];
-if (!isNil QEFUNC(messaging,squadNets)) then {_tagSet = ([] call EFUNC(messaging,squadNets)) apply {toUpper _x}};
-// The job defines the backend answers for - see EFUNC(messaging,tagMatch).
-_tagSet append ["MEDICS", "AVIATION", "HQ", "JFO"];
+if (!isNil QEFUNC(messaging,tagSet)) then {_tagSet = [player] call EFUNC(messaging,tagSet)};
 if (_tagSet isNotEqualTo []) then {
     private _picked = ((GVAR(composeTags) splitString ",") apply {toUpper (trim _x)}) select {_x isNotEqualTo ""};
     private _chipH = _btnH * 0.75;

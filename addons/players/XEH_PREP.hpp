@@ -4,6 +4,7 @@ PREP(hasClanTag);
 PREP(getRadioChannel);
 PREP(getRank);
 PREP(isCurator);
+PREP(platoonNet);
 PREP(setActiveRadio);
 PREP(setRadioChannel);
 PREP(setRank);
