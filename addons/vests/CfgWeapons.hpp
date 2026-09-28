@@ -75,9 +75,8 @@
 // Every class MUST restate its original parent: a parentless patch strips
 // the base class ("Updating base class X->") and breaks the vest.
 class CfgWeapons {
+#include "imported_CfgWeapons_decl.hpp"
     class ItemInfo; // defined for real in ghost_main (see its CfgWeapons.hpp)
-    class Vest_Camo_Base;
-    class Vest_NoCamo_Base;
 
     class V_PlateCarrier1_rgr: Vest_NoCamo_Base {
         GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
@@ -417,6 +416,7 @@ class CfgWeapons {
         hiddenSelectionsTextures[] = {"\A3\Characters_F_Exp\Vests\Data\V_PlateCarrier1_tna_F_co.paa"};
         GHOST_STANDARD_PLATE_CARRIER_ITEMINFO
     };
+#include "imported_CfgWeapons.hpp"
 };
 
 #undef GHOST_STANDARD_PLATE_CARRIER_ITEMINFO

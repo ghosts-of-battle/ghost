@@ -22,12 +22,12 @@ game's boonie and the balaclavas on the base game's; none of that is Aegis's.
 
 ## Requires
 
+- `A3_Data_F_Decade_Loadorder` _(external)_
 - `ghost_main`
 - `ace_hearing` _(external)_
-- `A3_Aegis_Characters_F_Aegis_Headgear` _(external)_
 
 Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking the load order when something above is absent.
 
 ## Ships
 
-35 unit classes, 35 weapon/item classes.
+35 unit classes, 423 weapon/item classes.

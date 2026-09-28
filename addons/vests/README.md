@@ -8,6 +8,7 @@ A content pack: 32 weapon and item classes. No scripted behaviour.
 
 ## Requires
 
+- `A3_Data_F_Decade_Loadorder` _(external)_
 - `ghost_main`
 - `A3_Characters_F` _(external)_
 - `A3_Characters_F_Exp_Vests` _(external)_
@@ -15,4 +16,4 @@ A content pack: 32 weapon and item classes. No scripted behaviour.
 
 ## Ships
 
-32 weapon/item classes.
+225 weapon/item classes.
