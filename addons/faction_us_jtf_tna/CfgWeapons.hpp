@@ -4,28 +4,25 @@
 // baseWeapon keep the arsenal showing the plain weapon, as the base
 // game's own presets do. No script: the man's weapons[] names the preset.
 class CfgWeapons {
-    class LMG_Mk200_khk_Hamr_Pointer_Bipod_F;
-    class MMG_02_khaki_RCO_LP_F;
-    class SMG_01_khk_Holo_F;
-    class arifle_MXC_khk_ACO_Pointer_F;
+    class LMG_Mk200_F;
+    class MMG_02_black_F;
+    class SMG_01_F;
     class arifle_MXC_khk_F;
-    class arifle_MXC_khk_Holo_F;
-    class arifle_MXC_khk_Holo_Flash_F;
     class arifle_MXC_khk_Holo_Pointer_F;
     class arifle_MXM_khk_MOS_Pointer_Bipod_F;
-    class arifle_MX_GL_khk_ACO_Pointer_F;
+    class arifle_MX_GL_khk_F;
     class arifle_MX_GL_khk_Hamr_Pointer_F;
-    class arifle_MX_SW_khk_Hamr_Pointer_F;
+    class arifle_MX_SW_khk_F;
     class arifle_MX_khk_ACO_Pointer_F;
     class arifle_MX_khk_Hamr_Pointer_F;
     class arifle_MX_khk_Holo_Pointer_F;
-    class srifle_DMR_03_khaki_AMS_LP_BI_F;
+    class srifle_DMR_03_khaki_F;
     class srifle_LRR_tna_LRPS_F;
 
-    class ghost_US_JTF_tna_LMG_Mk200_khk_Hamr_Pointer_Bipod_F_snds: LMG_Mk200_khk_Hamr_Pointer_Bipod_F {
+    class GVAR(LMG_Mk200_khk_Hamr_Pointer_Bipod_F_snds): LMG_Mk200_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "LMG_Mk200_khk_Hamr_Pointer_Bipod_F";
+        baseWeapon = "LMG_Mk200_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -33,10 +30,10 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_US_JTF_tna_MMG_02_khaki_RCO_LP_F_snds: MMG_02_khaki_RCO_LP_F {
+    class GVAR(MMG_02_khaki_RCO_LP_F_snds): MMG_02_black_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "MMG_02_khaki_RCO_LP_F";
+        baseWeapon = "MMG_02_black_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -44,10 +41,10 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_US_JTF_tna_SMG_01_khk_Holo_F_snds: SMG_01_khk_Holo_F {
+    class GVAR(SMG_01_khk_Holo_F_snds): SMG_01_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "SMG_01_khk_Holo_F";
+        baseWeapon = "SMG_01_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -55,10 +52,10 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_US_JTF_tna_arifle_MXC_khk_ACO_Pointer_F_snds: arifle_MXC_khk_ACO_Pointer_F {
+    class GVAR(arifle_MXC_khk_ACO_Pointer_F_snds): arifle_MXC_khk_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "arifle_MXC_khk_ACO_Pointer_F";
+        baseWeapon = "arifle_MXC_khk_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -66,7 +63,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_US_JTF_tna_arifle_MXC_khk_F_snds: arifle_MXC_khk_F {
+    class GVAR(arifle_MXC_khk_F_snds): arifle_MXC_khk_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "arifle_MXC_khk_F";
@@ -77,10 +74,10 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_US_JTF_tna_arifle_MXC_khk_Holo_F_snds: arifle_MXC_khk_Holo_F {
+    class GVAR(arifle_MXC_khk_Holo_F_snds): arifle_MXC_khk_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "arifle_MXC_khk_Holo_F";
+        baseWeapon = "arifle_MXC_khk_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -88,10 +85,10 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_US_JTF_tna_arifle_MXC_khk_Holo_Flash_F_snds: arifle_MXC_khk_Holo_Flash_F {
+    class GVAR(arifle_MXC_khk_Holo_Flash_F_snds): arifle_MXC_khk_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "arifle_MXC_khk_Holo_Flash_F";
+        baseWeapon = "arifle_MXC_khk_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -99,7 +96,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_US_JTF_tna_arifle_MXC_khk_Holo_Pointer_F_snds: arifle_MXC_khk_Holo_Pointer_F {
+    class GVAR(arifle_MXC_khk_Holo_Pointer_F_snds): arifle_MXC_khk_Holo_Pointer_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "arifle_MXC_khk_Holo_Pointer_F";
@@ -110,7 +107,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_US_JTF_tna_arifle_MXM_khk_MOS_Pointer_Bipod_F_snds: arifle_MXM_khk_MOS_Pointer_Bipod_F {
+    class GVAR(arifle_MXM_khk_MOS_Pointer_Bipod_F_snds): arifle_MXM_khk_MOS_Pointer_Bipod_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "arifle_MXM_khk_MOS_Pointer_Bipod_F";
@@ -121,10 +118,10 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_US_JTF_tna_arifle_MX_GL_khk_ACO_Pointer_F_snds: arifle_MX_GL_khk_ACO_Pointer_F {
+    class GVAR(arifle_MX_GL_khk_ACO_Pointer_F_snds): arifle_MX_GL_khk_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "arifle_MX_GL_khk_ACO_Pointer_F";
+        baseWeapon = "arifle_MX_GL_khk_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -132,7 +129,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_US_JTF_tna_arifle_MX_GL_khk_Hamr_Pointer_F_snds: arifle_MX_GL_khk_Hamr_Pointer_F {
+    class GVAR(arifle_MX_GL_khk_Hamr_Pointer_F_snds): arifle_MX_GL_khk_Hamr_Pointer_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "arifle_MX_GL_khk_Hamr_Pointer_F";
@@ -143,10 +140,10 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_US_JTF_tna_arifle_MX_SW_khk_Hamr_Pointer_F_snds: arifle_MX_SW_khk_Hamr_Pointer_F {
+    class GVAR(arifle_MX_SW_khk_Hamr_Pointer_F_snds): arifle_MX_SW_khk_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "arifle_MX_SW_khk_Hamr_Pointer_F";
+        baseWeapon = "arifle_MX_SW_khk_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -154,7 +151,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_US_JTF_tna_arifle_MX_khk_ACO_Pointer_F_snds: arifle_MX_khk_ACO_Pointer_F {
+    class GVAR(arifle_MX_khk_ACO_Pointer_F_snds): arifle_MX_khk_ACO_Pointer_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "arifle_MX_khk_ACO_Pointer_F";
@@ -165,7 +162,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_US_JTF_tna_arifle_MX_khk_Hamr_Pointer_F_snds: arifle_MX_khk_Hamr_Pointer_F {
+    class GVAR(arifle_MX_khk_Hamr_Pointer_F_snds): arifle_MX_khk_Hamr_Pointer_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "arifle_MX_khk_Hamr_Pointer_F";
@@ -176,7 +173,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_US_JTF_tna_arifle_MX_khk_Holo_Pointer_F_snds: arifle_MX_khk_Holo_Pointer_F {
+    class GVAR(arifle_MX_khk_Holo_Pointer_F_snds): arifle_MX_khk_Holo_Pointer_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "arifle_MX_khk_Holo_Pointer_F";
@@ -187,10 +184,10 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_US_JTF_tna_srifle_DMR_03_khaki_AMS_LP_BI_F_snds: srifle_DMR_03_khaki_AMS_LP_BI_F {
+    class GVAR(srifle_DMR_03_khaki_AMS_LP_BI_F_snds): srifle_DMR_03_khaki_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "srifle_DMR_03_khaki_AMS_LP_BI_F";
+        baseWeapon = "srifle_DMR_03_khaki_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -198,14 +195,14 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_US_JTF_tna_srifle_LRR_tna_LRPS_F_snds: srifle_LRR_tna_LRPS_F {
+    class GVAR(srifle_LRR_tna_LRPS_F_snds): srifle_LRR_tna_LRPS_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "srifle_LRR_tna_LRPS_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
-                item = "muzzle_snds_408_black";
+                item = "muzzle_snds_338_black";
             };
         };
     };

@@ -2322,6 +2322,13 @@ class CfgMagazineWells {
             "FA_o_150Rnd_762x54_Box_T_IR_t2"
         };
     };
+    class CBA_9x19_ScorpionEvo3 {
+        ADDON[] += {
+            "FA_b_30Rnd_9x21_SMG_02_Mk424_AP_t4",
+            "FA_b_30Rnd_9x21_SMG_02_Mk424_AP_t3",
+            "FA_b_30Rnd_9x21_SMG_02_Mk424_AP_t2"
+        };
+    };
     class CBA_9x39_VSS {
         ADDON[] += {
             "FA_o_20Rnd_9x39_7U15_t4",
@@ -2332,7 +2339,14 @@ class CfgMagazineWells {
             "FA_o_20Rnd_9x39_7U16_t2"
         };
     };
-    class Cyrus_93x64 {
+    class Cylinder_45ACP {
+        ADDON[] += {
+            "FA_b_6Rnd_45ACP_Mk421_t4",
+            "FA_b_6Rnd_45ACP_Mk421_t3",
+            "FA_b_6Rnd_45ACP_Mk421_t2"
+        };
+    };
+    class Cyrus_93 {
         ADDON[] += {
             "FA_o_10Rnd_93x64_Type40_t4",
             "FA_o_10Rnd_93x64_Type40_t3",
@@ -2611,6 +2625,13 @@ class CfgMagazineWells {
             "FA_b_20Rnd_762_Mk362_PAB_T_Orange_t4",
             "FA_b_20Rnd_762_Mk362_PAB_T_Orange_t3",
             "FA_b_20Rnd_762_Mk362_PAB_T_Orange_t2"
+        };
+    };
+    class M320_408 {
+        ADDON[] += {
+            "FA_b_7Rnd_408_Mk240_t4",
+            "FA_b_7Rnd_408_Mk240_t3",
+            "FA_b_7Rnd_408_Mk240_t2"
         };
     };
     class MAR10_338 {
@@ -3125,6 +3146,27 @@ class CfgMagazineWells {
             "FA_b_11Rnd_45ACP_Mk421_T_IR_t2"
         };
     };
+    class Pistol_9x21 {
+        ADDON[] += {
+            "FA_b_16Rnd_9x21_Mk424_AP_t4",
+            "FA_b_16Rnd_9x21_Mk424_AP_t3",
+            "FA_b_16Rnd_9x21_Mk424_AP_t2"
+        };
+    };
+    class Rahim_762x54 {
+        ADDON[] += {
+            "FA_o_10Rnd_762x54_Ball_HV_t4",
+            "FA_o_10Rnd_762x54_Ball_HV_t3",
+            "FA_o_10Rnd_762x54_Ball_HV_t2"
+        };
+    };
+    class Rook40_9x21 {
+        ADDON[] += {
+            "FA_b_16Rnd_9x21_Mk424_AP_t4",
+            "FA_b_16Rnd_9x21_Mk424_AP_t3",
+            "FA_b_16Rnd_9x21_Mk424_AP_t2"
+        };
+    };
     class SLR_762x51 {
         ADDON[] += {
             "FA_b_20Rnd_762_M80A2_HV_t4",
@@ -3565,6 +3607,20 @@ class CfgMagazineWells {
             "FA_b_30Rnd_45ACP_Mk421_T_IR_t4",
             "FA_b_30Rnd_45ACP_Mk421_T_IR_t3",
             "FA_b_30Rnd_45ACP_Mk421_T_IR_t2"
+        };
+    };
+    class ghost_weapons_G17_9x21 {
+        ADDON[] += {
+            "FA_b_17Rnd_9x21_Mk424_AP_t4",
+            "FA_b_17Rnd_9x21_Mk424_AP_t3",
+            "FA_b_17Rnd_9x21_Mk424_AP_t2"
+        };
+    };
+    class ghost_weapons_SMG_Gepard_9x21 {
+        ADDON[] += {
+            "FA_b_40Rnd_9x21_Gepard_Mk424_AP_t4",
+            "FA_b_40Rnd_9x21_Gepard_Mk424_AP_t3",
+            "FA_b_40Rnd_9x21_Gepard_Mk424_AP_t2"
         };
     };
 };

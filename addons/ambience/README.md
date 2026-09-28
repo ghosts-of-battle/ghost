@@ -16,7 +16,7 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-2 unit classes, 4 functions.
+2 unit classes, 5 functions.
 
 ## Eden modules
 
@@ -59,8 +59,9 @@ Ambient war: every few minutes a one-way drone flies in and dives on a building 
 
 ## Functions
 
-<details><summary>4</summary>
+<details><summary>5</summary>
 
+- `ghost_ambience_fnc_areaMarker`
 - `ghost_ambience_fnc_kamikazeModule`
 - `ghost_ambience_fnc_kamikazeRun`
 - `ghost_ambience_fnc_pickBuilding`

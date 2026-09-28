@@ -15,74 +15,64 @@ class CfgGlasses {
     class G_Bandanna_shades;
     class G_Bandanna_sport;
     class G_Combat;
-    class ghost_HIMF_G_Balaclava: G_Balaclava_blk {
+    class GVAR(G_Balaclava): G_Balaclava_blk {
         scope = 2;
         scopeArsenal = 2;
         author = QAUTHOR;
         displayName = "HIMF Balaclava";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\faction_himf\data\headgear_balaclava_FR_CE_co.paa"};
     };
-    class ghost_HIMF_G_Balaclava_combat: G_Balaclava_combat {
+    class GVAR(G_Balaclava_combat): G_Balaclava_combat {
         scope = 2;
         scopeArsenal = 2;
         author = QAUTHOR;
         displayName = "HIMF Balaclava (Combat Goggles)";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\faction_himf\data\headgear_balaclava_FR_CE_co.paa"};
     };
-    class ghost_HIMF_G_Balaclava_lowprofile: G_Balaclava_lowprofile {
+    class GVAR(G_Balaclava_lowprofile): G_Balaclava_lowprofile {
         scope = 2;
         scopeArsenal = 2;
         author = QAUTHOR;
         displayName = "HIMF Balaclava (Low Profile Goggles)";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\faction_himf\data\headgear_balaclava_FR_CE_co.paa"};
     };
-    class ghost_HIMF_G_Bandanna_aviator: G_Bandanna_aviator {
+    class GVAR(G_Bandanna_aviator): G_Bandanna_aviator {
         scope = 2;
         scopeArsenal = 2;
         author = QAUTHOR;
         displayName = "HIMF Bandana (Aviators)";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\faction_himf\data\headgear_bandMask_FR_CE_co.paa"};
     };
-    class ghost_HIMF_G_Bandanna_sport: G_Bandanna_sport {
+    class GVAR(G_Bandanna_sport): G_Bandanna_sport {
         scope = 2;
         scopeArsenal = 2;
         author = QAUTHOR;
         displayName = "HIMF Bandana (Sport)";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\faction_himf\data\headgear_bandMask_FR_CE_co.paa"};
     };
-    class ghost_HIMF_G_Bandanna_shades: G_Bandanna_shades {
+    class GVAR(G_Bandanna_shades): G_Bandanna_shades {
         scope = 2;
         scopeArsenal = 2;
         author = QAUTHOR;
         displayName = "HIMF Bandana (Shades)";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\faction_himf\data\headgear_bandMask_FR_CE_co.paa"};
     };
-    class ghost_HIMF_G_Bandanna: G_Bandanna_blk {
+    class GVAR(G_Bandanna): G_Bandanna_blk {
         scope = 2;
         scopeArsenal = 2;
         author = QAUTHOR;
         displayName = "HIMF Bandana";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\faction_himf\data\headgear_bandMask_FR_CE_co.paa"};
     };
-    class ghost_HIMF_G_Combat: G_Combat {
+    class GVAR(G_Combat): G_Combat {
         scope = 2;
         scopeArsenal = 2;
         author = QAUTHOR;
         displayName = "HIMF Combat Goggles";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\faction_himf\data\g_combat_FR_CE_ca.paa"};
     };
-    class ghost_HIMF_G_Balaclava_TI_G: G_Balaclava_TI_G_blk_F {
+    class GVAR(G_Balaclava_TI_G): G_Balaclava_TI_G_blk_F {
         scope = 2;
         scopeArsenal = 2;
         author = QAUTHOR;
         displayName = "HIMF Stealth Balaclava (Goggles)";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\faction_himf\data\G_Balaclava_TI_FR_CE_F_co.paa"};
     };
-    class ghost_HIMF_G_Balaclava_TI: G_Balaclava_TI_blk_F {
+    class GVAR(G_Balaclava_TI): G_Balaclava_TI_blk_F {
         scope = 2;
         scopeArsenal = 2;
         author = QAUTHOR;
         displayName = "HIMF Stealth Balaclava";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\faction_himf\data\G_Balaclava_TI_FR_CE_F_co.paa"};
     };
 };

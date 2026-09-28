@@ -198,4 +198,25 @@ class CfgMagazinewells {
             "FA_Aegis_30Rnd_545x39_7U5_T_IR"
         };
     };
+    // Ghost's WF50 (addons/weapons) names its well ghost_weapons_WF50_127x99 (2026-09-27)
+    class ghost_weapons_WF50_127x99 {
+        ADDON[] += {
+            "FA_Aegis_5Rnd_127x99_Mk258",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Red",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Yellow",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Green",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_White",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Blue",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Orange",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_IR",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Red",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Yellow",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Green",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_White",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Blue",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Orange",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_IR"
+        };
+    };
 };

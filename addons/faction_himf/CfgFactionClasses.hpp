@@ -7,7 +7,7 @@
 class CfgFactionClasses {
     class NO_CATEGORY;
 
-    class ghost_HIMF: NO_CATEGORY {
+    class ADDON: NO_CATEGORY {
         displayName = "2040 HIMF";
         author = QAUTHOR;
         side = 1;

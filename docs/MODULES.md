@@ -18,15 +18,6 @@ Place from the 3DEN entity list under the listed category.
 - Ambient war: every few minutes a one-way drone flies in and dives on a building near a player inside the named markers. It is a real aircraft on the map - audible, visible and killable, and shooting it down is the counterplay. It never dives at the players themselves.
 - **Attributes** `bandMax`, `bandMin`, `diveSpeed`, `droneClasses`, `intervalMax`, `intervalMin`, `markers`
 
-## AntiShip (`antiship`)
-
-### Anti-Ship Battery (Burevestnik)
-
-- **Class** `ghost_moduleAntiShip`
-- **Category** ghost_modules
-- Coastal anti-ship batteries, one module for every side. Switch a side on and the addon sites a battery on coastal ground inside that side's TAOR markers, with that side's launchers, and places crewed launchers there - kill them all and the battery is silenced. Every interval a battery looks for a hull inside its search range and puts a Burevestnik into it - climb, sea-skimming cruise, terminal dive; it can be met head-on and it carries a decoy the defending side's AA will engage. With every switch off, the module is one battery for its own side, standing where you put it.
-- **Attributes** `cruise_alt`, `debug`, `decoy_classes`, `enableEast`, `enableGuer`, `enableWest`, `interceptable`, `interval`, `launcherEast`, `launcherGuer`, `launcherWest`, `launcher_classes`, `launcher_count`, `missile_classes`, `missile_speed`, `rearm_interval`, `search_range`, `taorEast`, `taorGuer`, `taorWest`, `target_classes`, `terminal_range`
-
 ## APS (`aps`)
 
 ### Ghost - APS
@@ -54,14 +45,30 @@ Place from the 3DEN entity list under the listed category.
 - One taskable CAS drone on the support page. Place one module per airframe - many are allowed, and each is its own asset with its own losses.<br>The player sets the TARGET GRID, the INGRESS bearing and the EGRESS bearing on the support page. The drone appears at the ingress distance on that bearing, runs the target, and leaves on the egress bearing.<br>ORDNANCE on the support page lists what THIS airframe is carrying, by name - the run uses the heaviest thing aboard unless one is picked.<br>LOITER holds the drone over the point instead of striking it, and hands the gunner's seat to the ISR operator who asked for it - he needs a UAV terminal and the isISR variable. RTB ends it.<br>Airframe Class - Classname of the fixed-wing drone; blank for the side's vanilla UCAV Callsign - What the support page and the radio call it Airframes Available - How many times it may be shot down before the asset is expended; 0 for unlimited Ingress Distance (m) - How far out it appears, and how far it runs before despawning Attack Altitude (m) - Height above the terrain (ATL) the run is flown at Run Speed (km/h) - Capped at the airframe's own maximum Response Delay (sec) - Time from accepted request to the aircraft appearing Cooldown (sec) - Time after a run before this asset can be tasked again Terminal Search (m) - How far from the grid a laser spot or smoke is accepted as the real target; 0 for none
 - **Attributes** `airframes`, `altitude`, `callsign`, `cooldown`, `droneClass`, `searchRadius`, `spawnDelay`, `spawnDistance`, `speed`
 
+## Hacking (`hacking`)
+
+### Ghost - Intel Package
+
+- **Class** `ghost_moduleIntelPackage`
+- **Category** ghost_modules
+- Puts an intel package on a device. Hacking that device hands over a share of it.<br>Package - a class under Ghost_IntelPackages in the mission config Terminal Class - what to build if this is synchronised to nothing<br>How big a share one hack yields is a CBA setting - Ghosts of Battle, Hacking. The package's own contents are mission config, not module attributes: see the wiki.
+- **Attributes** `package`, `terminal`
+
 ## Jamming (`jamming`)
 
 ### Ghost - Jamming
 
 - **Class** `ghost_moduleJamming`
 - **Category** ghost_modules
-- Placing this module turns on jamming. Without it, the system is off.<br>Hub Radius (m) - Reach of a communications hub, placed at the biggest objectives Terminal Radius (m) - Reach of a terminal, placed at the rest Objectives With Jammers (%) - Share of a commander's objectives that get an emitter Max Jammers Per Side - Hard ceiling per commander whatever the share works out to
-- **Attributes** `largeRadius`, `maxPerSide`, `objectiveShare`, `smallRadius`
+- Placing this module turns on jamming. Without it, the system is off. It places no jammers - a Ghost - Jammer Site module does that, one per emitter.<br>Site Radius Min / Max (m) - every site rolls its own reach between the two GPS Denial - one uplink per commander steering a wandering 1-2 km GPS sphere Uplink Radius (m) - the uplink's own GPS field Radio Burn-Through - a strong set beats a jammer, and is answered with a QRF Burn-Through Reference (mW) - the set power the field is calibrated against
+- **Attributes** `burnRef`, `gpsUplinkRadius`, `largeRadius`, `maxPerSide`, `objectiveShare`, `smallRadius`
+
+### Ghost - Jammer Site
+
+- **Class** `ghost_moduleJammerSite`
+- **Category** ghost_modules
+- One jammer site, where you place it. Needs the Ghost - Jamming module on the map to arm.<br>Spectrum - radio, data or gps. One per site Radius (m) - 0 rolls one from the Jamming module's bounds Side - who owns the emitter<br>Artillery Reply - the site shells whoever loiters in its field Reply Delay (s) - how long a hostile must stay inside before it fires Reply Rounds / Scatter (m) - the size of the mission and how wide it falls Reply Cooldown (s) - minimum gap between two missions from this site
+- **Attributes** `artyCooldown`, `artyDelay`, `artyRounds`, `artyScatter`, `domain`, `jamSide`, `radius`
 
 ## Leaders (`leaders`)
 
@@ -127,9 +134,16 @@ Place from the 3DEN entity list under the listed category.
 
 ## UAS (`uas`)
 
-### Ghost - Enemy Drones
+### Ghost - Drone Patrol
 
-- **Class** `ghost_moduleUAS`
+- **Class** `ghost_moduleDronePatrol`
 - **Category** ghost_modules
-- Placing this module turns on enemy drones. Without it, the system is off.<br>Airframes Per Side - How many drones a commander flies at once while its supply is intact West / East / Independent Airframes - That side's own ceiling; -1 uses Airframes Per Side, 0 grounds it After A Cache Is Lost - The ceiling while a supply cache is down Outage Min (sec) - Shortest time a destroyed cache holds the ceiling down Outage Max (sec) - Longest time Caches Per Side - Supply caches placed in each commander's area for players to find
-- **Attributes** `baseMax`, `cachesPerSide`, `maxEast`, `maxGuer`, `maxWest`, `patrolOver`, `reducedMax`, `uavEast`, `uavGuer`, `uavWest`, `windowMax`, `windowMin`
+- One patrol. Resize it - the area is the ground the drones fly over.<br>Side - whose drones. A side friendly to the players is skipped Drones - how many airframes this patrol keeps up Drone Class - empty flies the side's own<br>Artillery On Detect - a drone that sees somebody shells where it saw them Rounds / Scatter (m) / Cooldown (s) - the size of that mission and its gap<br>A module never resized is one 800 m orbit. Nobody within 3.2 km, nothing flies.
+- **Attributes** `artyCooldown`, `artyRounds`, `artyScatter`, `droneClass`, `droneCount`, `patrolSide`
+
+### Ghost - Drone Swarm
+
+- **Class** `ghost_moduleDroneSwarm`
+- **Category** ghost_modules
+- A swarm, launched where you place it. Trigger it to launch on cue.<br>Airframe - which drone. Limited by the Swarm Airframes setting Drones - 2 to 12 Action - Impact dives on this module; Circle orbits it Spawn Min / Max (m) - how far out they appear and fly in from Side - the fallback crew's side<br>Resize the module to set the orbit radius. Impact ignores the area.
+- **Attributes** `spawnMax`, `spawnMin`, `swarmAction`, `swarmClass`, `swarmCount`, `swarmSide`

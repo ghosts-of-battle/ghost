@@ -8,7 +8,7 @@
 class CfgFactionClasses {
     class NO_CATEGORY;
 
-    class ghost_Marine_des: NO_CATEGORY {
+    class ADDON: NO_CATEGORY {
         displayName = "2040 Marine (Desert)";
         author = QAUTHOR;
         side = 1;

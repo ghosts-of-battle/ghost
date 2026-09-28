@@ -11,7 +11,8 @@ class CfgPatches {
             "ghost_notify",
             "cba_main",
             "ace_ballistics",
-            "A3_Weapons_F_Mark"    // the Navid, patched in CfgWeapons.hpp
+            "A3_Weapons_F_Mark",   // the Navid, patched in CfgWeapons.hpp
+            "ghost_weapons"        // the G17 / Gepard magazines and the SCAR-H - CfgMagazines, CfgWeapons
         };
         author = QAUTHOR;
         VERSION_CONFIG;

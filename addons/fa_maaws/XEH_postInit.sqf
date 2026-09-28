@@ -8,14 +8,14 @@
  * Public: No
  */
 
-if (isNil QEGVAR(antidrone,AD_params)) exitWith {};
+if (isNil QEGVAR(fa_antidrone,AD_params)) exitWith {};
 
 // [trigger radius (m), lethal radius (m), max damage, effective range (m)]
 // ADM 484 PROX — single-drone proximity frag.
-EGVAR(antidrone,AD_params) set ["FA_R_MRAWS_ADM484", [14, 12, 0.85, 600]];
+EGVAR(fa_antidrone,AD_params) set ["FA_R_MRAWS_ADM484", [14, 12, 0.85, 600]];
 
 // HE 448 AB — programmable airburst only: trigger radius 0 disables the drone
 // proximity check while the dialled burst range (shared Mk364 keybind /
 // ACE self-menu) still detonates the round in flight.
-EGVAR(antidrone,AD_params) set ["FA_R_MRAWS_HE448_AB", [0, 10, 0.8, 1500]];
-EGVAR(antidrone,programmableAB) pushBackUnique "FA_R_MRAWS_HE448_AB";
+EGVAR(fa_antidrone,AD_params) set ["FA_R_MRAWS_HE448_AB", [0, 10, 0.8, 1500]];
+EGVAR(fa_antidrone,programmableAB) pushBackUnique "FA_R_MRAWS_HE448_AB";

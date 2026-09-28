@@ -17,6 +17,19 @@ ships with, which a mission or the forced list below can override.
 | Force reload on disembarking AI | CHECKBOX | Ghosts of Battle > Ghosts of Battle - AI Disembark | `false` | Forces AI to play reload animation after disembarking from vehicle. Prevents instant shooting after disembark. |
 | Stay in immobile vehicle chance | SLIDER | Ghosts of Battle > Ghosts of Battle - AI Disembark | `[0, 1, 0, 0, true]` | Chance that AI will be told to stay in immobilized vehicles, applied on vehicle init. |
 
+## AntiShip (`antiship`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Seconds between launches | SLIDER | Ghosts of Battle > Anti-Ship | `[60, 3600, AS_INTERVAL_DEF, 0]` | How long a battery waits between shots. The clock resets whether or not it found a hull, so a battery does not fire the instant a ship appears - that  |
+| Search range (m) | SLIDER | Ghosts of Battle > Anti-Ship | `[1000, 30000, AS_SEARCH_DEF, 0]` | How far a battery looks for a hull. With a radar on the net it sees what the radar sees; with none it looks for itself, which is what this bounds. |
+| Target classes | EDITBOX | Ghosts of Battle > Anti-Ship | `AS_TARGETS_DEF` | Comma-separated. What counts as a hull worth a missile. |
+| Missile speed (m/s) | SLIDER | Ghosts of Battle > Anti-Ship | `[200, 1500, AS_SPEED_DEF, 0]` | Cruise speed on the run in. Fast enough that it has to be met head-on rather than chased, which is the whole shape of defending against one. |
+| Cruise altitude (m) | SLIDER | Ghosts of Battle > Anti-Ship | `[5, 500, AS_CRUISE_ALT_DEF, 0]` | Height above the sea on the run in. Low is what makes it hard to see coming and hard to engage. |
+| Terminal range (m) | SLIDER | Ghosts of Battle > Anti-Ship | `[100, 5000, AS_TERMINAL_DEF, 0]` | Distance from the hull where it stops cruising and dives. |
+| Interceptable | CHECKBOX | Ghosts of Battle > Anti-Ship | `true` | The missile carries a decoy the defending side's AA and CIWS can engage. Off: nothing can lock it and it always arrives. |
+| Debug | CHECKBOX | Ghosts of Battle > Anti-Ship | `false` | Log every cycle to the RPT: what a battery looked for, what it found, what it fired and where the missile went. |
+
 ## APS (`aps`)
 
 | Setting | Type | Category | Default | What it does |
@@ -181,6 +194,7 @@ ships with, which a mission or the forced list below can override.
 | Extra detection per net | SLIDER | Ghosts of Battle > Hacking | `[0, 40, 10, 0, false]` | How much each net broken recently adds to the chance of being detected on the NEXT one, in percentage points. 0 restores a flat chance. |
 | Detection memory | SLIDER | Ghosts of Battle > Hacking | `[60, 3600, 600, 0, false]` | How long, in seconds, a broken net keeps counting against you. One step is shed for every window that passes quietly, so a patient section is forgiven |
 | Hackable nets | LIST | Ghosts of Battle > Hacking | `[[0, 1, 2], ["Hostile only", "Hostile an` | Whose cell nets the remote hack will offer. Your own group is never on the list. A net that is not hostile is labelled FRIENDLY on the card, so nobody |
+| Intel package share per hack (%) | SLIDER | Ghosts of Battle > Hacking | `[5, 100, HACK_PACKAGE_SHARE_DEF, 0]` | How much of a terminal's intel package one successful break-in yields. Lower means more return visits. 100 hands the whole package over at once. |
 
 ## HUD (`hud`)
 
@@ -195,7 +209,7 @@ ships with, which a mission or the forced list below can override.
 | Setting | Type | Category | Default | What it does |
 |---|---|---|---|---|
 | Mission Type | LIST | _YMFsettings > Mission | `[[0,1,2,3], ["Custom", "Operation", "Tra` | This will deside on what kind of startup hint you get on mission start. |
-| AI Setting | LIST | _YMFsettings > Mission | `[[0,1,2], ["Arma Default", "Adjusted", "` | This adjustes the ai and make them less godlike and more arcade to play against. |
+| AI Setting | LIST | _YMFsettings > Mission | `[[0,1,2], ["Arma Default", "Adjusted", "` | Adjusts AI skill so they are less godlike. Arma Default leaves every AI's skill exactly as its own config sets it and runs no skill script at all. |
 | Enable | CHECKBOX | _YMFsettings > Radios | `true` | Allow mission to set up and handle radio distributution |
 | Squad Radio Channels (ACRE) | CHECKBOX | _YMFsettings > Radios | `true` | Allow radio channels to be changed based on player squadname. |
 | Documents | CHECKBOX | _YMFsettings > Player | `true` | Allow the mission to write diary help documents. |
@@ -212,12 +226,46 @@ ships with, which a mission or the forced list below can override.
 | Include Night Vision Googles | CHECKBOX | _YMFsettings > Combat Jump Simulation | `true` | Include equiped Night Vison Googles in the simulation. |
 | Include Non-combat Googles | CHECKBOX | _YMFsettings > Combat Jump Simulation | `true` | Include Non-combat Googles in the simulation. This refere to sunshades and simular non-safety googles. |
 | Include Non-combat Headgear | CHECKBOX | _YMFsettings > Combat Jump Simulation | `true` | Include Non-combat Headgear in the simulation. This refere to hats bandanas and baretes. |
+| Radar network | CHECKBOX | _YMFsettings > Radar | `true` | Put the vehicle classes below on their side's sensor network at mission start. Off means no vehicle is touched, whatever is listed. |
+| Vehicle classes | EDITBOX | _YMFsettings > Radar | `""` | Classnames, separated by commas or new lines. Each one joins its side's datalink the moment it exists, including vehicles spawned an hour in. A class  |
 
 ## Insurgents (`insurgents`)
 
 | Setting | Type | Category | Default | What it does |
 |---|---|---|---|---|
 | (built at runtime) | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Insurgents | `true` | If disabled gear from this configFile class will be not used. Mission defined gear will be not disabled. |
+
+## Main Menu (`main_menu`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| 1 - Left button name | EDITBOX | Ghosts of Battle > Main Menu | `"Ghosts Training Server"` | What the left button says. Empty leaves whatever the config called it. |
+| 1 - Left button address | EDITBOX | Ghosts of Battle > Main Menu | `"104.243.43.232"` | Host or IP the left button connects to. Empty removes the button. |
+| 1 - Left button port | EDITBOX | Ghosts of Battle > Main Menu | `"2402"` | Port for the left button. 0 or empty removes the button. |
+| 1 - Left button password | EDITBOX | Ghosts of Battle > Main Menu | `"Gh0sts"` | Sent with the connection. Empty for an open server. Stored in your profile in plain text. |
+| 1 - Left button colour | COLOR | Ghosts of Battle > Main Menu | `[0.8, 0.263, 0.192, 1]` | Background of the left button. Ghost red by default. |
+| 2 - Centre button name | EDITBOX | Ghosts of Battle > Main Menu | `"Ghosts Operations Server"` | What the centre button says. Empty leaves whatever the config called it. |
+| 2 - Centre button address | EDITBOX | Ghosts of Battle > Main Menu | `"104.243.43.232"` | Host or IP the centre button connects to. Empty removes the button. |
+| 2 - Centre button port | EDITBOX | Ghosts of Battle > Main Menu | `"2302"` | Port for the centre button. 0 or empty removes the button. |
+| 2 - Centre button password | EDITBOX | Ghosts of Battle > Main Menu | `"Gh0sts"` | Sent with the connection. Empty for an open server. Stored in your profile in plain text. |
+| 2 - Centre button colour | COLOR | Ghosts of Battle > Main Menu | `[0.8, 0.263, 0.192, 1]` | Background of the centre button. Ghost red by default. |
+| 3 - Right button name | EDITBOX | Ghosts of Battle > Main Menu | `"Ghosts Development Server"` | What the right button says. Empty leaves whatever the config called it. |
+| 3 - Right button address | EDITBOX | Ghosts of Battle > Main Menu | `"104.243.43.232"` | Host or IP the right button connects to. Empty removes the button. |
+| 3 - Right button port | EDITBOX | Ghosts of Battle > Main Menu | `"2502"` | Port for the right button. 0 or empty removes the button. |
+| 3 - Right button password | EDITBOX | Ghosts of Battle > Main Menu | `"Gh0sts"` | Sent with the connection. Empty for an open server. Stored in your profile in plain text. |
+| 3 - Right button colour | COLOR | Ghosts of Battle > Main Menu | `[0.8, 0.263, 0.192, 1]` | Background of the right button. Ghost red by default. |
+
+## MedBags (`medbags`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Boo Boo Bag contents | EDITBOX | Ghosts of Battle > MedBags | `"ACE_fieldDressing:6, ACE_quikClot:6, AC` | class:count, comma separated. Issued in order, top first, so the front of the list is what a man with no room left keeps. |
+| Medic Bag contents | EDITBOX | Ghosts of Battle > MedBags | `"ACE_fieldDressing:18, ACE_elasticBandag` | class:count, comma separated. Issued in order, top first, so the front of the list is what a man with no room left keeps. |
+| Trauma Kit contents | EDITBOX | Ghosts of Battle > MedBags | `"ACE_fieldDressing:28, ACE_elasticBandag` | class:count, comma separated. Issued in order, top first, so the front of the list is what a man with no room left keeps. |
+| Fluid Kit contents | EDITBOX | Ghosts of Battle > MedBags | `"ACE_salineIV:24, ACE_plasmaIV:12, ACE_b` | class:count, comma separated. Issued in order, top first, so the front of the list is what a man with no room left keeps. |
+| Drug Kit contents | EDITBOX | Ghosts of Battle > MedBags | `"ACE_morphine:16, ACE_adenosine:8, ACE_e` | class:count, comma separated. Issued in order, top first, so the front of the list is what a man with no room left keeps. |
+| Fill order | LIST | Ghosts of Battle > MedBags | `[ ["3,2,1", "1,2,3", "2,3,1", "2,1,3"], ` | Which container an unpacked item goes in first. The rest are tried in turn as each fills up. Applies to every bag, and to bags taken off a casualty. |
+| Overflow to the ground | CHECKBOX | Ghosts of Battle > MedBags | `true` | What will not fit is dropped at the unit's feet. Off: the surplus is not issued at all. Never drops anything in a vehicle or in deep water. |
 
 ## Medical Treatment (`medical_treatment`)
 
@@ -255,6 +303,13 @@ ships with, which a mission or the forced list below can override.
 | Text size | SLIDER | Ghosts of Battle > Notifications | `[0.5, 3, 1, 2, true]` | Scales the notification text. The panel grows with it, so a larger size means taller notifications rather than cramped ones. |
 | Font | LIST | Ghosts of Battle > Notifications | `[ ["RobotoCondensed", "RobotoCondensedBo` | Typeface for notifications. The monospace and console faces suit a technical readout; the Purista faces are what Arma's own UI uses. |
 
+## TAC//PAC (`pac`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Test as Steam id (editor only) | EDITBOX | Ghosts of Battle PAC > Service | `""` | Editor and singleplayer have no Steam id. Put yours here (17 digits) to test as your real operator - the database record for you loads. Empty = a thro |
+| Log this server's public IP at boot | CHECKBOX | Ghosts of Battle PAC > Service | `false` | Off by default. At mission start the server asks an outside service (api.ipify.org) what address it calls out from, and writes it to the .rpt with a v |
+
 ## Patrol Base (`patrol_base`)
 
 | Setting | Type | Category | Default | What it does |
@@ -267,6 +322,12 @@ ships with, which a mission or the forced list below can override.
 | On-deploy init (SQF) | EDITBOX | Ghosts of Battle > Patrol Base | `"params ['_base', '_pos', '_name']; [_ba` | SQF run on the server after a base is built. Passed: [_beacon, _pos, _name, _side, _builder]. Blank = nothing. |
 | On-undeploy init (SQF) | EDITBOX | Ghosts of Battle > Patrol Base | `"params ['_object']; [_object] remoteExe` | SQF run on the server while the base beacon still exists (before it is deleted). Passed: [_beacon, _pos, _name, _side]. Blank = nothing. |
 
+## Players (`players`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Use squad tags in names | CHECKBOX | Ghosts of Battle > Players | `false` | Reads each player's squad.xml tag and puts it in front of their name. Off (the default) leaves the profile name untouched and never asks the engine fo |
+
 ## Pointing (`pointing`)
 
 | Setting | Type | Category | Default | What it does |
@@ -277,8 +338,8 @@ ships with, which a mission or the forced list below can override.
 
 | Setting | Type | Category | Default | What it does |
 |---|---|---|---|---|
-| Enable mesh relaying | CHECKBOX | Ghosts of Battle > Radio Mesh | `true` | Friendly radios on the same frequency relay transmissions that cannot reach a receiver directly. Off returns ACRE's stock point-to-point signal (still |
-| Relay radios | EDITBOX | Ghosts of Battle > Radio Mesh | `"ACRE_PRC148,ACRE_PRC152,ACRE_PRC117F"` | Comma-separated ACRE base radio classes that act as relay nodes when carried or racked. Anything can still be an end point. |
+| Enable mesh relaying | CHECKBOX | Ghosts of Battle > Radio Mesh | `false` | OFF by default. On: friendly manpacks and vehicle racks on the same frequency relay transmissions that cannot reach a receiver directly. Off: ACRE's s |
+| Relay radios | EDITBOX | Ghosts of Battle > Radio Mesh | `"ACRE_PRC152,ACRE_PRC117F"` | Comma-separated ACRE base radio classes that act as relay nodes when carried or racked. Anything can still be an end point. |
 | Loss per weak hop | SLIDER | Ghosts of Battle > Radio Mesh | `[0, 0.5, 0.1, 2]` | Fraction of signal quality lost for every relay hop made by a radio transmitting below the power threshold. 0 = lossless. |
 | Weak-hop threshold (mW) | SLIDER | Ghosts of Battle > Radio Mesh | `[0, 10000, 1000, 0]` | Relays transmitting below this power pay the loss per hop; at or above it they repeat cleanly. 1000 = 1 W. |
 | Relay table refresh (s) | SLIDER | Ghosts of Battle > Radio Mesh | `[1, 30, 5, 0]` | Seconds between rebuilds of the list of relay-capable radios on this client. |
@@ -369,6 +430,20 @@ ships with, which a mission or the forced list below can override.
 |---|---|---|---|---|
 | Add ropes to heavy duty vehicles | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Towing | `true` | Enables adding ropes to inventories of heavy duty vehicles such as MRAPs, IFVs, APCs and Tanks. |
 | Add ropes to cars | CHECKBOX | Ghosts of Battle > Ghosts of Battle - Towing | `false` | Enables adding ropes to inventories of cars. |
+
+## UAS (`uas`)
+
+| Setting | Type | Category | Default | What it does |
+|---|---|---|---|---|
+| Outage minimum (s) | SLIDER | Ghosts of Battle > Drones | `[60, 3600, 600, 0]` | Shortest time a destroyed cache holds the ceiling down. Outages extend rather than stack, so supply raids are raids and not a win button. |
+| Outage maximum (s) | SLIDER | Ghosts of Battle > Drones | `[60, 7200, 1800, 0]` | Longest time a destroyed cache holds the ceiling down. |
+| Supply caches per side | SLIDER | Ghosts of Battle > Drones | `[0, 12, 3, 0]` | Unmarked crates placed inside that side's patrol zones, split across them. Finding them is what the intel economy is for; killing one drops the ceilin |
+| Swarm airframes | EDITBOX | Ghosts of Battle > Drones | `"O_UAV_01_F,B_UAV_01_F,I_UAV_01_F"` | Comma-separated UAV classes a Drone Swarm module may field. Empty allows any. A module naming a class outside this list refuses to launch and says so  |
+| Patrol ALiVE objectives | CHECKBOX | Ghosts of Battle > Drones | `false` | Turn a share of each commander's ALiVE objectives into patrol zones, once, when the campaign comes up. Hand-placed Drone Patrol modules are unaffected |
+| ALiVE objectives patrolled (%) | SLIDER | Ghosts of Battle > Drones | `[0, 100, 30, 0]` | Share of one commander's objectives that get a patrol zone. This shapes a small map; the cap below is what bounds a big one. |
+| Max ALiVE zones per side | SLIDER | Ghosts of Battle > Drones | `[0, 30, 6, 0]` | Hard ceiling per commander whatever the share works out to. A percentage has no ceiling - 30% of 173 objectives is 52 zones, and the planner would try |
+| ALiVE zone radius (m) | SLIDER | Ghosts of Battle > Drones | `[0, 3000, 0, 0]` | Orbit radius for a zone taken from an objective. 0 uses the objective's own size, which is what ALiVE thinks that place is worth. |
+| Airframes per ALiVE zone | SLIDER | Ghosts of Battle > Drones | `[1, 6, 1, 0]` | How many drones each objective-derived zone tries to hold up. The airframe itself is always the commander's own faction UAV. |
 
 ## Forced by `cba_settings`
 
@@ -899,7 +974,7 @@ A forced setting cannot be changed in-game, and overrides the defaults above.
 | `ghost_patrol_base_kitCount` | `4` |
 | `ghost_patrol_base_kitRange` | `5` |
 | `ghost_patrol_base_maxCount` | `3` |
-| `ghost_Settings_setAiSystemDifficulty` | `2` |
+| `ghost_Settings_setAiSystemDifficulty` | `0` |
 | `ghost_Settings_setMissionType` | `1` |
 | `ghost_Settings_setPlayerRank` | `true` |
 | `ghost_Settings_setRadio` | `true` |

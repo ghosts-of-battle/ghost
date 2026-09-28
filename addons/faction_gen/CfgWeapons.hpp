@@ -6,7 +6,7 @@
 class CfgWeapons {
     class JCA_smg_UMP_black_F;
 
-    class ghost_GEN_smg_UMP_snds: JCA_smg_UMP_black_F {
+    class GVAR(smg_UMP_snds): JCA_smg_UMP_black_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "JCA_smg_UMP_black_F";

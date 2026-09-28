@@ -54,6 +54,9 @@ def check_sqf_syntax(filepath):
         # Used to store the starting type of a string, so we can match that to the end of a string
         inStringType = '';
 
+        # A preprocessor directive continued with a trailing backslash runs on to the next line.
+        inPreprocessor = False
+        prevChar = ''
         lastIsCurlyBrace = False
         checkForSemiColon = False
         onlyWhitespace = True
@@ -88,13 +91,18 @@ def check_sqf_syntax(filepath):
                 if (isInCommentBlock == False):
                     if (ignoreTillEndOfLine): # we are in a line comment, just continue going through the characters until we find an end of line
                         if (c == '\n'):
-                            ignoreTillEndOfLine = False
+                            if (inPreprocessor and prevChar == '\\'):
+                                pass          # the directive continues on the next line
+                            else:
+                                ignoreTillEndOfLine = False
+                                inPreprocessor = False
                     else: # validate brackets
                         if (c == '"' or c == "'"):
                             isInString = True
                             inStringType = c
                         elif (c == '#' and onlyWhitespace):
                             ignoreTillEndOfLine = True
+                            inPreprocessor = True
                         elif (c == '/'):
                             checkIfInComment = True
                         elif (c == '('):
@@ -150,6 +158,8 @@ def check_sqf_syntax(filepath):
                         isInCommentBlock = False
                     elif (c != '*'):
                         checkIfNextIsClosingBlock = False
+            if (c not in (' ', '\t', '\r')):
+                prevChar = c
             indexOfCharacter += 1
 
         if brackets_list.count('[') != brackets_list.count(']'):

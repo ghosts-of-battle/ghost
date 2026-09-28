@@ -68,14 +68,22 @@
 
 // ---- appends -----------------------------------------------------------
 class CfgWeapons {
-    // 30mm XM914 — main gun (HighROF muzzle) + inherited single-barrel coax
-    class autocannon_30mm_CTWS;
+    // 30mm XM914 — main gun (HighROF muzzle) + inherited single-barrel coax.
+    // QAV writes `class HighROF: HE`, so the append reopens it WITH that
+    // parent. A bare `class HighROF {` rebinds the fire mode to no parent and
+    // drops everything it inherits from HE - the RPT says so: "Updating base
+    // class 'HighROF'->'', by ghost_fa_qav_abramsx". HE is CTWS's own fire
+    // mode, declared here with no body so the children can name it.
+    class autocannon_Base_F;
+    class autocannon_30mm_CTWS: autocannon_Base_F {
+        class HE;
+    };
     class autocannon_30mm_M914: autocannon_30mm_CTWS {
-        class HighROF { magazines[] += { FA_MAGS_30MM }; };
+        class HighROF: HE { magazines[] += { FA_MAGS_30MM }; };
     };
     // 30mm XM914 twin — redefines its own HighROF, needs its own append
     class autocannon_30mm_M914_twin: autocannon_30mm_CTWS {
-        class HighROF { magazines[] += { FA_MAGS_30MM }; };
+        class HighROF: HE { magazines[] += { FA_MAGS_30MM }; };
     };
 
     // 120mm M360 main gun

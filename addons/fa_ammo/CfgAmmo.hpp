@@ -6,10 +6,11 @@ class CfgAmmo {
     class B_127x108_Ball;
     class B_127x99_Ball;
     class B_45ACP_Ball;
+    class B_9x21_Ball;
     class BulletBase;
     class B_338_Mag: BulletBase {};
     class B_338_LM_Ball: B_338_Mag {};
-    class B_338_NM_Ball: B_338_Mag {};
+    class B_338_NM_Ball: BulletBase {}; // the game's parent (weapons_f_mark) - B_338_Mag rebinds it, RPT "Updating base class"
     class B_65x39_Caseless;
     class B_12Gauge_Pellets_Submunition;
     class B_12Gauge_Pellets_Submunition_Cartridge: B_12Gauge_Pellets_Submunition {};
@@ -1775,6 +1776,17 @@ class CfgAmmo {
         tracer = 1;
         nvgOnly = 1;
         tracerColor[] = {0.2, 1.0, 0.2, 1.0};
+    };
+
+    // 9x21 Mk424 AP - the P07 / Rook 40's round (user, 2026-09-27: "make mags for 16Rnd_9x21_Mag"). The figures
+    // are the Rearma DBP-43 AP's, the only FA 9x21 design, but on the base game's ball round so it loads without
+    // Rearma and fa_tiers builds its _t2/_t3/_t4.
+    class FA_b_9x21_Mk424_AP: B_9x21_Ball {
+        displayName = "9x21 Mk424 AP";
+        caliber = 2.0; hit = 9; typicalSpeed = 560; airFriction = -0.0017; deflecting = 20;
+        ACE_caliber = 9.02; ACE_bulletLength = 15.5; ACE_bulletMass = 5.2;
+        ACE_dragModel = 1; ACE_ballisticCoefficients[] = {0.135};
+        ACE_muzzleVelocities[] = {470, 580}; ACE_barrelLengths[] = {115, 230};
     };
 
     #include "CfgAmmo_compat.hpp"

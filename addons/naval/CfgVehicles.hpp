@@ -8,9 +8,15 @@ class CfgVehicles {
     // nested classes deeper than you need hides the ones you did not declare -
     // that is how an earlier turret edit in this mod silently removed a
     // commander's optics from every vehicle in the game that shared the parent.
-    class StaticWeapon;
+    // That includes Turrets itself: StaticMGWeapon's is `Turrets: Turrets` in
+    // the game (parent declared on StaticWeapon), and a bare `class Turrets {`
+    // rebinds it - RPT "Updating base class 'Turrets'->''".
+    class LandVehicle;
+    class StaticWeapon: LandVehicle {
+        class Turrets;
+    };
     class StaticMGWeapon: StaticWeapon {
-        class Turrets {
+        class Turrets: Turrets {
             class MainTurret;
         };
     };

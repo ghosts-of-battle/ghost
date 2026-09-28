@@ -8,12 +8,12 @@
 class CfgFactionClasses {
     class NO_CATEGORY;
 
-    class ghost_EUDF_des: NO_CATEGORY {
-        displayName = "2040 EUDF (Desert)";
+    class ADDON: NO_CATEGORY {
+        displayName = "2040 EUDF (Arid)";
         author = QAUTHOR;
         side = 1;
         priority = 3;
-        icon = "\A3_Aegis\Data_F_Aegis\FactionIcons\CfgFactionClasses_BLU_CA.paa";
+        icon = "\A3\Data_F\cfgFactionClasses_BLU_ca.paa";
         flag = "\A3\Data_F\Flags\flag_US_CO.paa";
     };
 };

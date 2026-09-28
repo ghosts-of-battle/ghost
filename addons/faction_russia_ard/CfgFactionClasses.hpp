@@ -8,12 +8,12 @@
 class CfgFactionClasses {
     class NO_CATEGORY;
 
-    class ghost_Russia_ard: NO_CATEGORY {
+    class ADDON: NO_CATEGORY {
         displayName = "2040 Russia (Arid)";
         author = QAUTHOR;
         side = 0;
         priority = 3;
         icon = "\A3\Data_F_Enoch\FactionIcons\icon_RUS_CA.paa";
-        flag = "\A3_Aegis\Data_F_Aegis\Flags\flag_RUS_CO.paa";
+        flag = "\A3\Data_F\Flags\flag_CSAT_CO.paa";
     };
 };

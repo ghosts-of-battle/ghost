@@ -1715,4 +1715,66 @@ class CfgMagazineWells {
             "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_IR_t2"
         };
     };
+    class ghost_fa_Glock19_RF {
+        ADDON[] += {
+            "FA_rf_17Rnd_9x19_Mk422_AP_t4",
+            "FA_rf_17Rnd_9x19_Mk422_AP_t3",
+            "FA_rf_17Rnd_9x19_Mk422_AP_t2",
+            "FA_rf_33Rnd_9x19_Mk422_AP_t4",
+            "FA_rf_33Rnd_9x19_Mk422_AP_t3",
+            "FA_rf_33Rnd_9x19_Mk422_AP_t2"
+        };
+    };
+    class ghost_weapons_WF50_127x99 {
+        ADDON[] += {
+            "FA_Aegis_5Rnd_127x99_Mk258_t4",
+            "FA_Aegis_5Rnd_127x99_Mk258_t3",
+            "FA_Aegis_5Rnd_127x99_Mk258_t2",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Red_t4",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Red_t3",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Red_t2",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Yellow_t4",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Yellow_t3",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Yellow_t2",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Green_t4",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Green_t3",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Green_t2",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_White_t4",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_White_t3",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_White_t2",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Blue_t4",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Blue_t3",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Blue_t2",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Orange_t4",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Orange_t3",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_Orange_t2",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_IR_t4",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_IR_t3",
+            "FA_Aegis_5Rnd_127x99_Mk258_T_IR_t2",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_t4",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_t3",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_t2",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Red_t4",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Red_t3",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Red_t2",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Yellow_t4",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Yellow_t3",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Yellow_t2",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Green_t4",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Green_t3",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Green_t2",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_White_t4",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_White_t3",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_White_t2",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Blue_t4",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Blue_t3",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Blue_t2",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Orange_t4",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Orange_t3",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Orange_t2",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_IR_t4",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_IR_t3",
+            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_IR_t2"
+        };
+    };
 };

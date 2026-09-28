@@ -13,10 +13,18 @@
 class CfgAmmo {
     // ---- EXTERNAL. Defined by the fa_* addons named in requiredAddons,
     // ---- declared here so the tier variants below have a parent.
+    class FA_rf_9x19_Mk422_AP;
     class FA_rf_ammo_127x55_7N52;
     class FA_rf_ammo_127x55_7U13;
     class FA_rf_ammo_127x55_7U14;
 
+    class FA_rf_9x19_Mk422_AP_t4: FA_rf_9x19_Mk422_AP {
+        caliber = 1.908;
+    };
+    class FA_rf_9x19_Mk422_AP_t3: FA_rf_9x19_Mk422_AP {};
+    class FA_rf_9x19_Mk422_AP_t2: FA_rf_9x19_Mk422_AP {
+        caliber = 1.584;
+    };
     class FA_rf_ammo_127x55_7N52_t4: FA_rf_ammo_127x55_7N52 {
         caliber = 3.71;
     };

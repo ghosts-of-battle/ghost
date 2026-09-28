@@ -26,27 +26,23 @@
     "FA_250Rnd_30mm_PROX_T_White", "FA_250Rnd_30mm_PROX_T_Blue", "FA_250Rnd_30mm_PROX_T_Orange", "FA_250Rnd_30mm_PROX_T_IR"
 
 class CfgWeapons {
-    // THE PARENT NAMED, AND HighROF DECLARED. A bare `class HighROF { ... }`
-    // inside M914 is a definition, not a reach-in: it rebinds the fire mode to
-    // no parent and the RPT says so - "Updating base class 'HE'->'', by
-    // fa_qav_ef_abramsx, on autocannon_30mm_M914/HighROF.
-    // Declaring it on the parent (a DECLARATION, no body - that is what keeps
-    // it safe) lets the children inherit it by name instead. Vanilla parent
-    // read off addons/fa_mediumcaliber, which reopens the same weapon.
+    // THE PARENT IS HE. QAV and its EF compat both write `class HighROF: HE`
+    // on the two guns, so the append reopens it with exactly that parent.
+    // A bare `class HighROF {` rebinds the fire mode to no parent ("Updating
+    // base class 'HE'->''"). The `: HighROF` that replaced it named a HighROF
+    // declared on autocannon_30mm_CTWS - which has no HighROF, only HE and AP -
+    // and the RPT answered "Updating base class 'HE'->'HighROF'". Both cut the
+    // fire mode off from HE. HE is declared on CTWS with no body so the
+    // children can name it; the vanilla parent is read off
+    // addons/fa_mediumcaliber, which reopens the same weapon.
     class autocannon_Base_F;
     class autocannon_30mm_CTWS: autocannon_Base_F {
-        class HighROF;
+        class HE;
     };
     class autocannon_30mm_M914: autocannon_30mm_CTWS {
-        // : HighROF, NOT a bare reopen. The parent's HighROF is a child of
-        // HE, and a parentless nested class drops that - the RPT says so:
-        // "Updating base class 'HE'->'', by ... autocannon_30mm_M914/HighROF".
-        class HighROF: HighROF { magazines[] += { FA_MAGS_30MM }; };
+        class HighROF: HE { magazines[] += { FA_MAGS_30MM }; };
     };
     class autocannon_30mm_M914_twin: autocannon_30mm_CTWS {
-        // : HighROF, NOT a bare reopen. The parent's HighROF is a child of
-        // HE, and a parentless nested class drops that - the RPT says so:
-        // "Updating base class 'HE'->'', by ... autocannon_30mm_M914/HighROF".
-        class HighROF: HighROF { magazines[] += { FA_MAGS_30MM }; };
+        class HighROF: HE { magazines[] += { FA_MAGS_30MM }; };
     };
 };

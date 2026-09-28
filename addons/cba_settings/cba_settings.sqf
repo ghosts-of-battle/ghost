@@ -375,10 +375,12 @@ force force ace_medical_treatment_treatmentTimeGrave = 30;
 force force ace_medical_treatment_treatmentTimeIV = 9;
 force force ace_medical_treatment_treatmentTimeSplint = 7;
 force force ace_medical_treatment_treatmentTimeTourniquet = 3.75;
-force ace_medical_treatment_treatmentTimeTrainedAutoinjector = 5;
-force ace_medical_treatment_treatmentTimeTrainedIV = 12;
+// Trained times match the shortened times above, as ACE's defaults match theirs. Left at ACE's 5 / 12 /
+// 7 they made a medic slower than anyone else, and ACE warned at every start.
+force ace_medical_treatment_treatmentTimeTrainedAutoinjector = 2.005;
+force ace_medical_treatment_treatmentTimeTrainedIV = 9;
 force ace_medical_treatment_treatmentTimeTrainedSplint = 7;
-force ace_medical_treatment_treatmentTimeTrainedTourniquet = 7;
+force ace_medical_treatment_treatmentTimeTrainedTourniquet = 3.75;
 force force ace_medical_treatment_woundReopenChance = 0.8;
 force force ace_medical_treatment_woundStitchTime = 5;
 

@@ -8,231 +8,231 @@
 class CfgGroups {
     class East {
 
-        class ghost_Russia {
+        class ADDON {
             name = "2040 Russia";
 
             class Armored {
                 name = "Armored";
 
-                class ghost_Russia_O_R_SPGPlatoon_Scorcher {
+                class GVAR(O_R_SPGPlatoon_Scorcher) {
                     name = "Artillery SPG Platoon";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_art.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_02_arty_F";
+                        vehicle = QGVAR(O_R_MBT_02_arty_F);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_02_arty_F";
+                        vehicle = QGVAR(O_R_MBT_02_arty_F);
                         rank = "SERGEANT";
                         position[] = {10,-10,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_02_arty_F";
+                        vehicle = QGVAR(O_R_MBT_02_arty_F);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_02_arty_F";
+                        vehicle = QGVAR(O_R_MBT_02_arty_F);
                         rank = "CORPORAL";
                         position[] = {20,-20,0};
                     };
                 };
 
-                class ghost_Russia_O_R_SPGSection_Scorcher {
+                class GVAR(O_R_SPGSection_Scorcher) {
                     name = "Artillery SPG Section";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_art.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_02_arty_F";
+                        vehicle = QGVAR(O_R_MBT_02_arty_F);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_02_arty_F";
+                        vehicle = QGVAR(O_R_MBT_02_arty_F);
                         rank = "SERGEANT";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Russia_O_R_TankDestrSection_Nosorog {
+                class GVAR(O_R_TankDestrSection_Nosorog) {
                     name = "Tank Destroyer Section";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_armor.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_APC_Wheeled_04_cannon_v2_F";
+                        vehicle = QGVAR(O_R_APC_Wheeled_04_cannon_v2_F);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_APC_Wheeled_04_cannon_v2_F";
+                        vehicle = QGVAR(O_R_APC_Wheeled_04_cannon_v2_F);
                         rank = "SERGEANT";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Russia_O_R_TankPlatoon {
+                class GVAR(O_R_TankPlatoon) {
                     name = "Tank Platoon";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_armor.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_02_cannon_F";
+                        vehicle = QGVAR(O_R_MBT_02_cannon_F);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_02_cannon_F";
+                        vehicle = QGVAR(O_R_MBT_02_cannon_F);
                         rank = "SERGEANT";
                         position[] = {10,-10,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_02_cannon_F";
+                        vehicle = QGVAR(O_R_MBT_02_cannon_F);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_02_cannon_F";
+                        vehicle = QGVAR(O_R_MBT_02_cannon_F);
                         rank = "CORPORAL";
                         position[] = {20,-20,0};
                     };
                 };
 
-                class ghost_Russia_O_R_TankPlatoon_AA {
+                class GVAR(O_R_TankPlatoon_AA) {
                     name = "Tank Platoon (Combined)";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_armor.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_02_cannon_F";
+                        vehicle = QGVAR(O_R_MBT_02_cannon_F);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_APC_Tracked_02_AA_F";
+                        vehicle = QGVAR(O_R_APC_Tracked_02_AA_F);
                         rank = "SERGEANT";
                         position[] = {10,-10,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_02_cannon_F";
+                        vehicle = QGVAR(O_R_MBT_02_cannon_F);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_APC_Tracked_02_AA_F";
+                        vehicle = QGVAR(O_R_APC_Tracked_02_AA_F);
                         rank = "CORPORAL";
                         position[] = {20,-20,0};
                     };
                 };
 
-                class ghost_Russia_O_R_TankPlatoon_Heavy {
+                class GVAR(O_R_TankPlatoon_Heavy) {
                     name = "Tank Platoon (Heavy)";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_armor.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_04_command_F";
+                        vehicle = QGVAR(O_R_MBT_04_command_F);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_04_cannon_F";
+                        vehicle = QGVAR(O_R_MBT_04_cannon_F);
                         rank = "SERGEANT";
                         position[] = {10,-10,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_04_cannon_F";
+                        vehicle = QGVAR(O_R_MBT_04_cannon_F);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_04_cannon_F";
+                        vehicle = QGVAR(O_R_MBT_04_cannon_F);
                         rank = "CORPORAL";
                         position[] = {20,-20,0};
                     };
                 };
 
-                class ghost_Russia_O_R_TankSection {
+                class GVAR(O_R_TankSection) {
                     name = "Tank Section";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_armor.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_02_cannon_F";
+                        vehicle = QGVAR(O_R_MBT_02_cannon_F);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_02_cannon_F";
+                        vehicle = QGVAR(O_R_MBT_02_cannon_F);
                         rank = "SERGEANT";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Russia_O_R_TankSection_Heavy {
+                class GVAR(O_R_TankSection_Heavy) {
                     name = "Tank Section (Heavy)";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_armor.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_04_command_F";
+                        vehicle = QGVAR(O_R_MBT_04_command_F);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MBT_04_cannon_F";
+                        vehicle = QGVAR(O_R_MBT_04_cannon_F);
                         rank = "SERGEANT";
                         position[] = {10,-10,0};
                     };
@@ -243,869 +243,869 @@ class CfgGroups {
             class Infantry {
                 name = "Infantry";
 
-                class ghost_Russia_AddGis_O_R_VDV_InfSentry {
+                class GVAR(AddGis_O_R_VDV_InfSentry) {
                     name = "VDV Sentry";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_GL_F";
+                        vehicle = QGVAR(O_R_Soldier_GL_F);
                         rank = "CORPORAL";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_F";
+                        vehicle = QGVAR(O_R_Soldier_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
                 };
 
-                class ghost_Russia_AddGis_O_R_VDV_InfSquad {
+                class GVAR(AddGis_O_R_VDV_InfSquad) {
                     name = "VDV Rifle Squad";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_SL_F";
+                        vehicle = QGVAR(O_R_Soldier_SL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_RadioOperator_F";
+                        vehicle = QGVAR(O_R_RadioOperator_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_LAT_F";
+                        vehicle = QGVAR(O_R_Soldier_LAT_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_M_F";
+                        vehicle = QGVAR(O_R_soldier_M_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "CORPORAL";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_A_F";
+                        vehicle = QGVAR(O_R_Soldier_A_F);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_medic_F";
+                        vehicle = QGVAR(O_R_medic_F);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
                 };
 
-                class ghost_Russia_AddGis_O_R_VDV_InfSquad_Weapons {
+                class GVAR(AddGis_O_R_VDV_InfSquad_Weapons) {
                     name = "VDV Weapons Squad";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_SL_F";
+                        vehicle = QGVAR(O_R_Soldier_SL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_GL_F";
+                        vehicle = QGVAR(O_R_Soldier_GL_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_M_F";
+                        vehicle = QGVAR(O_R_soldier_M_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AT_F";
+                        vehicle = QGVAR(O_R_soldier_AT_F);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AAT_F";
+                        vehicle = QGVAR(O_R_Soldier_AAT_F);
                         rank = "CORPORAL";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_A_F";
+                        vehicle = QGVAR(O_R_Soldier_A_F);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_medic_F";
+                        vehicle = QGVAR(O_R_medic_F);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
                 };
 
-                class ghost_Russia_AddGis_O_R_VDV_InfTeam {
+                class GVAR(AddGis_O_R_VDV_InfTeam) {
                     name = "VDV Fire Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_GL_F";
+                        vehicle = QGVAR(O_R_Soldier_GL_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_RadioOperator_F";
+                        vehicle = QGVAR(O_R_RadioOperator_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
                 };
 
-                class ghost_Russia_AddGis_O_R_VDV_InfTeam_AA {
+                class GVAR(AddGis_O_R_VDV_InfTeam_AA) {
                     name = "VDV AA Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AA_F";
+                        vehicle = QGVAR(O_R_soldier_AA_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AA_F";
+                        vehicle = QGVAR(O_R_soldier_AA_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AAA_F";
+                        vehicle = QGVAR(O_R_Soldier_AAA_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
                 };
 
-                class ghost_Russia_AddGis_O_R_VDV_InfTeam_AT {
+                class GVAR(AddGis_O_R_VDV_InfTeam_AT) {
                     name = "VDV AT Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AT_F";
+                        vehicle = QGVAR(O_R_soldier_AT_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AT_F";
+                        vehicle = QGVAR(O_R_soldier_AT_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AAT_F";
+                        vehicle = QGVAR(O_R_Soldier_AAT_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
                 };
 
-                class ghost_Russia_AddGis_O_R_VDV_InfTeam_AT_Heavy {
+                class GVAR(AddGis_O_R_VDV_InfTeam_AT_Heavy) {
                     name = "VDV Heavy AT Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_HAT_F";
+                        vehicle = QGVAR(O_R_Soldier_HAT_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_HAT_F";
+                        vehicle = QGVAR(O_R_Soldier_HAT_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AHAT_F";
+                        vehicle = QGVAR(O_R_Soldier_AHAT_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
                 };
 
-                class ghost_Russia_O_R_ConscriptSquad {
+                class GVAR(O_R_ConscriptSquad) {
                     name = "Conscript Squad";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_SL_F";
+                        vehicle = QGVAR(O_R_Soldier_SL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_GL_F";
+                        vehicle = QGVAR(O_R_Soldier_GL_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_LAT_F";
+                        vehicle = QGVAR(O_R_Soldier_LAT_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_M_F";
+                        vehicle = QGVAR(O_R_soldier_M_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "CORPORAL";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_F";
+                        vehicle = QGVAR(O_R_Soldier_F);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_medic_F";
+                        vehicle = QGVAR(O_R_medic_F);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
                 };
 
-                class ghost_Russia_O_R_ConscriptTeam {
+                class GVAR(O_R_ConscriptTeam) {
                     name = "Conscript Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_GL_F";
+                        vehicle = QGVAR(O_R_Soldier_GL_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_M_F";
+                        vehicle = QGVAR(O_R_soldier_M_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
                 };
 
-                class ghost_Russia_O_R_InfSentry {
+                class GVAR(O_R_InfSentry) {
                     name = "Sentry";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_GL_F";
+                        vehicle = QGVAR(O_R_Soldier_GL_F);
                         rank = "CORPORAL";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_F";
+                        vehicle = QGVAR(O_R_Soldier_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
                 };
 
-                class ghost_Russia_O_R_InfSquad {
+                class GVAR(O_R_InfSquad) {
                     name = "Rifle Squad";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_SL_F";
+                        vehicle = QGVAR(O_R_Soldier_SL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_RadioOperator_F";
+                        vehicle = QGVAR(O_R_RadioOperator_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_LAT_F";
+                        vehicle = QGVAR(O_R_Soldier_LAT_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_M_F";
+                        vehicle = QGVAR(O_R_soldier_M_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "CORPORAL";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_A_F";
+                        vehicle = QGVAR(O_R_Soldier_A_F);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_medic_F";
+                        vehicle = QGVAR(O_R_medic_F);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
                 };
 
-                class ghost_Russia_O_R_InfSquad_Weapons {
+                class GVAR(O_R_InfSquad_Weapons) {
                     name = "Weapons Squad";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_SL_F";
+                        vehicle = QGVAR(O_R_Soldier_SL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_GL_F";
+                        vehicle = QGVAR(O_R_Soldier_GL_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_M_F";
+                        vehicle = QGVAR(O_R_soldier_M_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AT_F";
+                        vehicle = QGVAR(O_R_soldier_AT_F);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AAT_F";
+                        vehicle = QGVAR(O_R_Soldier_AAT_F);
                         rank = "CORPORAL";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_A_F";
+                        vehicle = QGVAR(O_R_Soldier_A_F);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_medic_F";
+                        vehicle = QGVAR(O_R_medic_F);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
                 };
 
-                class ghost_Russia_O_R_InfTeam {
+                class GVAR(O_R_InfTeam) {
                     name = "Fire Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_GL_F";
+                        vehicle = QGVAR(O_R_Soldier_GL_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_RadioOperator_F";
+                        vehicle = QGVAR(O_R_RadioOperator_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
                 };
 
-                class ghost_Russia_O_R_InfTeam_AA {
+                class GVAR(O_R_InfTeam_AA) {
                     name = "Air-defense Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AA_F";
+                        vehicle = QGVAR(O_R_soldier_AA_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AA_F";
+                        vehicle = QGVAR(O_R_soldier_AA_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AAA_F";
+                        vehicle = QGVAR(O_R_Soldier_AAA_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
                 };
 
-                class ghost_Russia_O_R_InfTeam_AT {
+                class GVAR(O_R_InfTeam_AT) {
                     name = "Anti-armor Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AT_F";
+                        vehicle = QGVAR(O_R_soldier_AT_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AT_F";
+                        vehicle = QGVAR(O_R_soldier_AT_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AAT_F";
+                        vehicle = QGVAR(O_R_Soldier_AAT_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
                 };
 
-                class ghost_Russia_O_R_InfTeam_AT_Heavy {
+                class GVAR(O_R_InfTeam_AT_Heavy) {
                     name = "Anti-Armor Team (Heavy)";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_HAT_F";
+                        vehicle = QGVAR(O_R_Soldier_HAT_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_HAT_F";
+                        vehicle = QGVAR(O_R_Soldier_HAT_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AHAT_F";
+                        vehicle = QGVAR(O_R_Soldier_AHAT_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
@@ -1116,379 +1116,379 @@ class CfgGroups {
             class Mechanized {
                 name = "Mechanized";
 
-                class ghost_Russia_O_R_MechConSquad {
+                class GVAR(O_R_MechConSquad) {
                     name = "Mechanized Conscript Squad";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_mech_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_Aegis_O_R_APC_Tracked_02_30mm_lxWS";
+                        vehicle = QGVAR(Aegis_O_R_APC_Tracked_02_30mm_lxWS);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_SL_F";
+                        vehicle = QGVAR(O_R_Soldier_SL_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_LAT_F";
+                        vehicle = QGVAR(O_R_Soldier_LAT_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_M_F";
+                        vehicle = QGVAR(O_R_soldier_M_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "CORPORAL";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_medic_F";
+                        vehicle = QGVAR(O_R_medic_F);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
                 };
 
-                class ghost_Russia_O_R_MechInfSquad {
+                class GVAR(O_R_MechInfSquad) {
                     name = "Mechanized Rifle Squad";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_mech_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_APC_Wheeled_04_cannon_F";
+                        vehicle = QGVAR(O_R_APC_Wheeled_04_cannon_F);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_SL_F";
+                        vehicle = QGVAR(O_R_Soldier_SL_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_LAT_F";
+                        vehicle = QGVAR(O_R_Soldier_LAT_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_M_F";
+                        vehicle = QGVAR(O_R_soldier_M_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "CORPORAL";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_medic_F";
+                        vehicle = QGVAR(O_R_medic_F);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
                 };
 
-                class ghost_Russia_O_R_MechInf_AA {
+                class GVAR(O_R_MechInf_AA) {
                     name = "Mechanized Air-defense Squad";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_mech_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_Aegis_O_R_APC_Tracked_02_30mm_lxWS";
+                        vehicle = QGVAR(Aegis_O_R_APC_Tracked_02_30mm_lxWS);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_SL_F";
+                        vehicle = QGVAR(O_R_Soldier_SL_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AA_F";
+                        vehicle = QGVAR(O_R_soldier_AA_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AA_F";
+                        vehicle = QGVAR(O_R_soldier_AA_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AA_F";
+                        vehicle = QGVAR(O_R_soldier_AA_F);
                         rank = "SERGEANT";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AAA_F";
+                        vehicle = QGVAR(O_R_Soldier_AAA_F);
                         rank = "CORPORAL";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AAA_F";
+                        vehicle = QGVAR(O_R_Soldier_AAA_F);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AAA_F";
+                        vehicle = QGVAR(O_R_Soldier_AAA_F);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
 
                     class Unit10 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {-25,-25,0};
                     };
                 };
 
-                class ghost_Russia_O_R_MechInf_AT {
+                class GVAR(O_R_MechInf_AT) {
                     name = "Mechanized Anti-armor Squad";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_mech_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_Aegis_O_R_APC_Tracked_02_30mm_lxWS";
+                        vehicle = QGVAR(Aegis_O_R_APC_Tracked_02_30mm_lxWS);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_SL_F";
+                        vehicle = QGVAR(O_R_Soldier_SL_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AT_F";
+                        vehicle = QGVAR(O_R_soldier_AT_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AT_F";
+                        vehicle = QGVAR(O_R_soldier_AT_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AT_F";
+                        vehicle = QGVAR(O_R_soldier_AT_F);
                         rank = "SERGEANT";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AAT_F";
+                        vehicle = QGVAR(O_R_Soldier_AAT_F);
                         rank = "CORPORAL";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AAT_F";
+                        vehicle = QGVAR(O_R_Soldier_AAT_F);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AAT_F";
+                        vehicle = QGVAR(O_R_Soldier_AAT_F);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
 
                     class Unit10 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {-25,-25,0};
                     };
                 };
 
-                class ghost_Russia_O_R_MechInf_Support {
+                class GVAR(O_R_MechInf_Support) {
                     name = "Mechanized Support Squad";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_mech_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_APC_Wheeled_04_cannon_F";
+                        vehicle = QGVAR(O_R_APC_Wheeled_04_cannon_F);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_SL_F";
+                        vehicle = QGVAR(O_R_Soldier_SL_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_repair_F";
+                        vehicle = QGVAR(O_R_soldier_repair_F);
                         rank = "CORPORAL";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_engineer_F";
+                        vehicle = QGVAR(O_R_engineer_F);
                         rank = "CORPORAL";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_medic_F";
+                        vehicle = QGVAR(O_R_medic_F);
                         rank = "PRIVATE";
                         position[] = {15,15,0};
                     };
 
                     class Unit6 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_exp_F";
+                        vehicle = QGVAR(O_R_soldier_exp_F);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
@@ -1499,386 +1499,386 @@ class CfgGroups {
             class Motorized_MTP {
                 name = "Motorized_MTP";
 
-                class ghost_Russia_O_R_MotInf_AA {
+                class GVAR(O_R_MotInf_AA) {
                     name = "Motorized Air-defense Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_motor_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MRAP_02_F";
+                        vehicle = QGVAR(O_R_MRAP_02_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AA_F";
+                        vehicle = QGVAR(O_R_soldier_AA_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AA_F";
+                        vehicle = QGVAR(O_R_soldier_AA_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AAA_F";
+                        vehicle = QGVAR(O_R_Soldier_AAA_F);
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
                 };
 
-                class ghost_Russia_O_R_MotInf_AT {
+                class GVAR(O_R_MotInf_AT) {
                     name = "Motorized Anti-armor Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_motor_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MRAP_02_F";
+                        vehicle = QGVAR(O_R_MRAP_02_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AT_F";
+                        vehicle = QGVAR(O_R_soldier_AT_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AT_F";
+                        vehicle = QGVAR(O_R_soldier_AT_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AAT_F";
+                        vehicle = QGVAR(O_R_Soldier_AAT_F);
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
                 };
 
-                class ghost_Russia_O_R_MotInf_GMGTeam {
+                class GVAR(O_R_MotInf_GMGTeam) {
                     name = "Motorized GMG Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_motor_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MRAP_02_F";
+                        vehicle = QGVAR(O_R_MRAP_02_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_GMG_F";
+                        vehicle = QGVAR(O_R_support_GMG_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_AMG_F";
+                        vehicle = QGVAR(O_R_support_AMG_F);
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
                 };
 
-                class ghost_Russia_O_R_MotInf_MGTeam {
+                class GVAR(O_R_MotInf_MGTeam) {
                     name = "Motorized HMG Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_motor_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MRAP_02_F";
+                        vehicle = QGVAR(O_R_MRAP_02_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_MG_F";
+                        vehicle = QGVAR(O_R_support_MG_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_AMG_F";
+                        vehicle = QGVAR(O_R_support_AMG_F);
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
                 };
 
-                class ghost_Russia_O_R_MotInf_MortTeam {
+                class GVAR(O_R_MotInf_MortTeam) {
                     name = "Motorized Mortar Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_motor_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MRAP_02_F";
+                        vehicle = QGVAR(O_R_MRAP_02_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_Mort_F";
+                        vehicle = QGVAR(O_R_support_Mort_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_AMort_F";
+                        vehicle = QGVAR(O_R_support_AMort_F);
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
                 };
 
-                class ghost_Russia_O_R_MotInf_Reinforcements {
+                class GVAR(O_R_MotInf_Reinforcements) {
                     name = "Motorized Reinforcements";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_motor_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Truck_03_transport_F";
+                        vehicle = QGVAR(O_R_Truck_03_transport_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_SL_F";
+                        vehicle = QGVAR(O_R_Soldier_SL_F);
                         rank = "SERGEANT";
                         position[] = {5,0,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_RadioOperator_F";
+                        vehicle = QGVAR(O_R_RadioOperator_F);
                         rank = "PRIVATE";
                         position[] = {5,-2,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_LAT_F";
+                        vehicle = QGVAR(O_R_Soldier_LAT_F);
                         rank = "CORPORAL";
                         position[] = {5,-4,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_M_F";
+                        vehicle = QGVAR(O_R_soldier_M_F);
                         rank = "PRIVATE";
                         position[] = {5,-6,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {5,-8,0};
                     };
 
                     class Unit6 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "CORPORAL";
                         position[] = {5,-10,0};
                     };
 
                     class Unit7 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_A_F";
+                        vehicle = QGVAR(O_R_Soldier_A_F);
                         rank = "PRIVATE";
                         position[] = {-5,-8,0};
                     };
 
                     class Unit8 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_medic_F";
+                        vehicle = QGVAR(O_R_medic_F);
                         rank = "PRIVATE";
                         position[] = {-5,-10,0};
                     };
 
                     class Unit9 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {-5,0,0};
                     };
 
                     class Unit10 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "CORPORAL";
                         position[] = {-5,-2,0};
                     };
 
                     class Unit11 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_GL_F";
+                        vehicle = QGVAR(O_R_Soldier_GL_F);
                         rank = "PRIVATE";
                         position[] = {-5,-4,0};
                     };
 
                     class Unit12 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_LAT_F";
+                        vehicle = QGVAR(O_R_Soldier_LAT_F);
                         rank = "PRIVATE";
                         position[] = {-5,-6,0};
                     };
 
                     class Unit13 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {35,-35,0};
                     };
 
                     class Unit14 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {-35,-35,0};
                     };
                 };
 
-                class ghost_Russia_O_R_MotInf_Team {
+                class GVAR(O_R_MotInf_Team) {
                     name = "Motorized Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_motor_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_MRAP_02_gmg_F";
+                        vehicle = QGVAR(O_R_MRAP_02_gmg_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_LAT_F";
+                        vehicle = QGVAR(O_R_Soldier_LAT_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
@@ -1889,203 +1889,203 @@ class CfgGroups {
             class SpecOps {
                 name = "SpecOps";
 
-                class ghost_Russia_O_R_diverTeam {
+                class GVAR(O_R_diverTeam) {
                     name = "Diver Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_recon.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_diver_TL_F";
+                        vehicle = QGVAR(O_R_diver_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_diver_exp_F";
+                        vehicle = QGVAR(O_R_diver_exp_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_diver_F";
+                        vehicle = QGVAR(O_R_diver_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_diver_F";
+                        vehicle = QGVAR(O_R_diver_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Russia_O_R_reconPatrol {
+                class GVAR(O_R_reconPatrol) {
                     name = "Recon Patrol";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_recon.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_TL_F";
+                        vehicle = QGVAR(O_R_recon_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_M_F";
+                        vehicle = QGVAR(O_R_recon_M_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_medic_F";
+                        vehicle = QGVAR(O_R_recon_medic_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_F";
+                        vehicle = QGVAR(O_R_recon_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Russia_O_R_reconSentry {
+                class GVAR(O_R_reconSentry) {
                     name = "Recon Sentry";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_M_F";
+                        vehicle = QGVAR(O_R_recon_M_F);
                         rank = "CORPORAL";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_F";
+                        vehicle = QGVAR(O_R_recon_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
                 };
 
-                class ghost_Russia_O_R_reconSquad {
+                class GVAR(O_R_reconSquad) {
                     name = "Recon Squad";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_TL_F";
+                        vehicle = QGVAR(O_R_recon_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_JTAC_F";
+                        vehicle = QGVAR(O_R_recon_JTAC_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_medic_F";
+                        vehicle = QGVAR(O_R_recon_medic_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_exp_F";
+                        vehicle = QGVAR(O_R_recon_exp_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_GL_F";
+                        vehicle = QGVAR(O_R_recon_GL_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_AR_F";
+                        vehicle = QGVAR(O_R_recon_AR_F);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_M_F";
+                        vehicle = QGVAR(O_R_recon_M_F);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_LAT_F";
+                        vehicle = QGVAR(O_R_recon_LAT_F);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
                 };
 
-                class ghost_Russia_O_R_reconTeam {
+                class GVAR(O_R_reconTeam) {
                     name = "Recon Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_TL_F";
+                        vehicle = QGVAR(O_R_recon_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_M_F";
+                        vehicle = QGVAR(O_R_recon_M_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_medic_F";
+                        vehicle = QGVAR(O_R_recon_medic_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_LAT_F";
+                        vehicle = QGVAR(O_R_recon_LAT_F);
                         rank = "CORPORAL";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_JTAC_F";
+                        vehicle = QGVAR(O_R_recon_JTAC_F);
                         position[] = {};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_exp_F";
+                        vehicle = QGVAR(O_R_recon_exp_F);
                         position[] = {};
                     };
                 };
@@ -2095,414 +2095,414 @@ class CfgGroups {
             class Support {
                 name = "Support";
 
-                class ghost_Russia_AddGis_O_R_VDV_Support_CLS {
+                class GVAR(AddGis_O_R_VDV_Support_CLS) {
                     name = "VDV CLS Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_medic_F";
+                        vehicle = QGVAR(O_R_medic_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_medic_F";
+                        vehicle = QGVAR(O_R_medic_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Russia_AddGis_O_R_VDV_Support_ENG {
+                class GVAR(AddGis_O_R_VDV_Support_ENG) {
                     name = "VDV Engineer Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_engineer_F";
+                        vehicle = QGVAR(O_R_engineer_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_engineer_F";
+                        vehicle = QGVAR(O_R_engineer_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_repair_F";
+                        vehicle = QGVAR(O_R_soldier_repair_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Russia_AddGis_O_R_VDV_Support_EOD {
+                class GVAR(AddGis_O_R_VDV_Support_EOD) {
                     name = "VDV EOD Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_engineer_F";
+                        vehicle = QGVAR(O_R_engineer_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_exp_F";
+                        vehicle = QGVAR(O_R_soldier_exp_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_exp_F";
+                        vehicle = QGVAR(O_R_soldier_exp_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Russia_AddGis_O_R_VDV_Support_GMG {
+                class GVAR(AddGis_O_R_VDV_Support_GMG) {
                     name = "VDV GMG Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_GMG_F";
+                        vehicle = QGVAR(O_R_support_GMG_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_AMG_F";
+                        vehicle = QGVAR(O_R_support_AMG_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
                 };
 
-                class ghost_Russia_AddGis_O_R_VDV_Support_MG {
+                class GVAR(AddGis_O_R_VDV_Support_MG) {
                     name = "VDV HMG Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_MG_F";
+                        vehicle = QGVAR(O_R_support_MG_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_AMG_F";
+                        vehicle = QGVAR(O_R_support_AMG_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
                 };
 
-                class ghost_Russia_AddGis_O_R_VDV_Support_Mort {
+                class GVAR(AddGis_O_R_VDV_Support_Mort) {
                     name = "VDV Mortar Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_mortar.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_Mort_F";
+                        vehicle = QGVAR(O_R_support_Mort_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_AMort_F";
+                        vehicle = QGVAR(O_R_support_AMort_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
                 };
 
-                class ghost_Russia_O_R_Recon_EOD {
+                class GVAR(O_R_Recon_EOD) {
                     name = "Recon Support Team (EOD)";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_TL_F";
+                        vehicle = QGVAR(O_R_recon_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_exp_F";
+                        vehicle = QGVAR(O_R_recon_exp_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_exp_F";
+                        vehicle = QGVAR(O_R_recon_exp_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_recon_F";
+                        vehicle = QGVAR(O_R_recon_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Russia_O_R_Support_CLS {
+                class GVAR(O_R_Support_CLS) {
                     name = "Support Team (CLS)";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_medic_F";
+                        vehicle = QGVAR(O_R_medic_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_medic_F";
+                        vehicle = QGVAR(O_R_medic_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Russia_O_R_Support_ENG {
+                class GVAR(O_R_Support_ENG) {
                     name = "Support Team (Engineer)";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_engineer_F";
+                        vehicle = QGVAR(O_R_engineer_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_engineer_F";
+                        vehicle = QGVAR(O_R_engineer_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_repair_F";
+                        vehicle = QGVAR(O_R_soldier_repair_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Russia_O_R_Support_EOD {
+                class GVAR(O_R_Support_EOD) {
                     name = "Support Team (EOD)";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_engineer_F";
+                        vehicle = QGVAR(O_R_engineer_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_exp_F";
+                        vehicle = QGVAR(O_R_soldier_exp_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_exp_F";
+                        vehicle = QGVAR(O_R_soldier_exp_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Russia_O_R_Support_GMG {
+                class GVAR(O_R_Support_GMG) {
                     name = "GMG Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_GMG_F";
+                        vehicle = QGVAR(O_R_support_GMG_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_AMG_F";
+                        vehicle = QGVAR(O_R_support_AMG_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
                 };
 
-                class ghost_Russia_O_R_Support_MG {
+                class GVAR(O_R_Support_MG) {
                     name = "HMG Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_MG_F";
+                        vehicle = QGVAR(O_R_support_MG_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_AMG_F";
+                        vehicle = QGVAR(O_R_support_AMG_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
                 };
 
-                class ghost_Russia_O_R_Support_Mort {
+                class GVAR(O_R_Support_Mort) {
                     name = "Mortar Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_mortar.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_Mort_F";
+                        vehicle = QGVAR(O_R_support_Mort_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_support_AMort_F";
+                        vehicle = QGVAR(O_R_support_AMort_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
@@ -2513,323 +2513,323 @@ class CfgGroups {
             class UInfantry {
                 name = "UInfantry";
 
-                class ghost_Russia_Aegis_O_R_InfSentryU {
+                class GVAR(Aegis_O_R_InfSentryU) {
                     name = "Sentry";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_GL_F";
+                        vehicle = QGVAR(O_R_Soldier_GL_F);
                         rank = "CORPORAL";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_F";
+                        vehicle = QGVAR(O_R_Soldier_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
                 };
 
-                class ghost_Russia_Aegis_O_R_InfSquadU {
+                class GVAR(Aegis_O_R_InfSquadU) {
                     name = "Rifle Squad";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_SL_F";
+                        vehicle = QGVAR(O_R_Soldier_SL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_RadioOperator_F";
+                        vehicle = QGVAR(O_R_RadioOperator_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_LAT_F";
+                        vehicle = QGVAR(O_R_Soldier_LAT_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_M_F";
+                        vehicle = QGVAR(O_R_soldier_M_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "CORPORAL";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_A_F";
+                        vehicle = QGVAR(O_R_Soldier_A_F);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_medic_F";
+                        vehicle = QGVAR(O_R_medic_F);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
                 };
 
-                class ghost_Russia_Aegis_O_R_InfSquadU_Weapons {
+                class GVAR(Aegis_O_R_InfSquadU_Weapons) {
                     name = "Weapons Squad";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_SL_F";
+                        vehicle = QGVAR(O_R_Soldier_SL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_GL_F";
+                        vehicle = QGVAR(O_R_Soldier_GL_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_M_F";
+                        vehicle = QGVAR(O_R_soldier_M_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_HAT_F";
+                        vehicle = QGVAR(O_R_Soldier_HAT_F);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AHAT_F";
+                        vehicle = QGVAR(O_R_Soldier_AHAT_F);
                         rank = "CORPORAL";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_A_F";
+                        vehicle = QGVAR(O_R_Soldier_A_F);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_medic_F";
+                        vehicle = QGVAR(O_R_medic_F);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
                 };
 
-                class ghost_Russia_Aegis_O_R_InfTeamU {
+                class GVAR(Aegis_O_R_InfTeamU) {
                     name = "Fire Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AR_F";
+                        vehicle = QGVAR(O_R_Soldier_AR_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_GL_F";
+                        vehicle = QGVAR(O_R_Soldier_GL_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_RadioOperator_F";
+                        vehicle = QGVAR(O_R_RadioOperator_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
                 };
 
-                class ghost_Russia_Aegis_O_R_InfTeamU_AA {
+                class GVAR(Aegis_O_R_InfTeamU_AA) {
                     name = "Air-defense Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AA_F";
+                        vehicle = QGVAR(O_R_soldier_AA_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_soldier_AA_F";
+                        vehicle = QGVAR(O_R_soldier_AA_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AAA_F";
+                        vehicle = QGVAR(O_R_Soldier_AAA_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
                 };
 
-                class ghost_Russia_Aegis_O_R_InfTeamU_AT {
+                class GVAR(Aegis_O_R_InfTeamU_AT) {
                     name = "Anti-armor Team";
                     side = 0;
-                    faction = "ghost_Russia";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
 
                     class Unit0 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_TL_F";
+                        vehicle = QGVAR(O_R_Soldier_TL_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_HAT_F";
+                        vehicle = QGVAR(O_R_Soldier_HAT_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_HAT_F";
+                        vehicle = QGVAR(O_R_Soldier_HAT_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 0;
-                        vehicle = "ghost_Russia_O_R_Soldier_AHAT_F";
+                        vehicle = QGVAR(O_R_Soldier_AHAT_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 0;
-                        vehicle = "ghost_Russia_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 0;
-                        vehicle = "ghost_Russia_SwitchBlade_Operator";
+                        vehicle = QGVAR(SwitchBlade_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };

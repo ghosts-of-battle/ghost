@@ -8,7 +8,7 @@
 class CfgFactionClasses {
     class NO_CATEGORY;
 
-    class ghost_EUDF_arc: NO_CATEGORY {
+    class ADDON: NO_CATEGORY {
         displayName = "2040 EUDF (Arctic)";
         author = QAUTHOR;
         side = 1;

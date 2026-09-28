@@ -4,31 +4,31 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         units[] = {
-            "ghost_GEN_B_Captain_Dwarden_F",
-            "ghost_GEN_B_GEN_APC_Wheeled_02_hmg_lxWS",
-            "ghost_GEN_B_GEN_Boat_Transport_02_F",
-            "ghost_GEN_B_GEN_Commander_F",
-            "ghost_GEN_B_GEN_Heli_EC_01_RF",
-            "ghost_GEN_B_GEN_Helipilot_RF",
-            "ghost_GEN_B_GEN_Offroad_01_comms_F",
-            "ghost_GEN_B_GEN_Offroad_01_covered_F",
-            "ghost_GEN_B_GEN_Offroad_01_gen_F",
-            "ghost_GEN_B_GEN_Pickup_covered_rf",
-            "ghost_GEN_B_GEN_Quadbike_01_F",
-            "ghost_GEN_B_GEN_Soldier_AR_F",
-            "ghost_GEN_B_GEN_Soldier_F",
-            "ghost_GEN_B_GEN_Soldier_LAT_F",
-            "ghost_GEN_B_GEN_Soldier_RF",
-            "ghost_GEN_B_GEN_Soldier_Rifle_F",
-            "ghost_GEN_B_GEN_Soldier_SG_F",
-            "ghost_GEN_B_GEN_Van_02_transport_F",
-            "ghost_GEN_B_GEN_Van_02_vehicle_F",
-            "ghost_GEN_B_GEN_crew_lxWS",
-            "ghost_GEN_EF_B_CombatBoat_Unarmed_GEN",
-            "ghost_GEN_EF_B_Gyra_GEN",
-            "ghost_GEN_EF_B_Gyra_HMG_GEN"
+            QGVAR(B_Captain_Dwarden_F),
+            QGVAR(B_GEN_APC_Wheeled_02_hmg_lxWS),
+            QGVAR(B_GEN_Boat_Transport_02_F),
+            QGVAR(B_GEN_Commander_F),
+            QGVAR(B_GEN_Heli_EC_01_RF),
+            QGVAR(B_GEN_Helipilot_RF),
+            QGVAR(B_GEN_Offroad_01_comms_F),
+            QGVAR(B_GEN_Offroad_01_covered_F),
+            QGVAR(B_GEN_Offroad_01_gen_F),
+            QGVAR(B_GEN_Pickup_covered_rf),
+            QGVAR(B_GEN_Quadbike_01_F),
+            QGVAR(B_GEN_Soldier_AR_F),
+            QGVAR(B_GEN_Soldier_F),
+            QGVAR(B_GEN_Soldier_LAT_F),
+            QGVAR(B_GEN_Soldier_RF),
+            QGVAR(B_GEN_Soldier_Rifle_F),
+            QGVAR(B_GEN_Soldier_SG_F),
+            QGVAR(B_GEN_Van_02_transport_F),
+            QGVAR(B_GEN_Van_02_vehicle_F),
+            QGVAR(B_GEN_crew_lxWS),
+            QGVAR(EF_B_CombatBoat_Unarmed_GEN),
+            QGVAR(EF_B_Gyra_GEN),
+            QGVAR(EF_B_Gyra_HMG_GEN)
         };
-        weapons[] = {"ghost_GEN_smg_UMP_snds"};
+        weapons[] = {QGVAR(smg_UMP_snds)};
         requiredVersion = REQUIRED_VERSION;
         // ghost_fa_tiers IS NOT REQUIRED, DELIBERATELY. The tier
         // magazines are named as STRINGS in magazines[]; nothing here
@@ -42,7 +42,7 @@ class CfgPatches {
         // Every parent class is forward-declared in CfgVehicles.hpp, so a
         // load order without that mod gets inert classes instead of a
         // broken config. skipWhenMissingDependencies does the rest.
-        requiredAddons[] = {"ghost_main"};
+        requiredAddons[] = {"ghost_main", "ghost_headware", "ghost_weapons"};
         skipWhenMissingDependencies = 1;
         author = QAUTHOR;
         VERSION_CONFIG;

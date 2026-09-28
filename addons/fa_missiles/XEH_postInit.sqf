@@ -11,8 +11,8 @@
  */
 
 // [trigger radius (m), lethal radius (m), max damage, effective range (m)]
-if (!isNil QEGVAR(mediumcaliber,params)) then {
-    EGVAR(mediumcaliber,params) set ["FA_M_AGR40_HydraP", [12, 15, 0.85, 8000]];
+if (!isNil QEGVAR(fa_mediumcaliber,params)) then {
+    EGVAR(fa_mediumcaliber,params) set ["FA_M_AGR40_HydraP", [12, 15, 0.85, 8000]];
 };
 
 // Copperhead fired without an engine lock hands over to the loiter script. The

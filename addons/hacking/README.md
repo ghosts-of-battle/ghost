@@ -28,7 +28,22 @@ leaving cross-tier overlap working as intended.
 
 ## Ships
 
-1 unit class, 6 weapon/item classes, 60 functions.
+2 unit classes, 4 weapon/item classes, 58 functions.
+
+## Eden modules
+
+### Ghost - Intel Package
+
+`ghost_moduleIntelPackage`, category ghost_modules
+
+Puts an intel package on a device. Hacking that device hands over a share of it.<br>Package - a class under Ghost_IntelPackages in the mission config Terminal Class - what to build if this is synchronised to nothing<br>How big a share one hack yields is a CBA setting - Ghosts of Battle, Hacking. The package's own contents are mission config, not module attributes: see the wiki.
+
+<details><summary>2 attributes</summary>
+
+- `package`
+- `terminal`
+
+</details>
 
 ## CBA settings
 
@@ -50,10 +65,11 @@ leaving cross-tier overlap working as intended.
 | `ghost_hacking_netFailStep` | SLIDER | Extra detection per net |
 | `ghost_hacking_netFailWindow` | SLIDER | Detection memory |
 | `ghost_hacking_netTargets` | LIST | Hackable nets |
+| `ghost_hacking_cfg_package_share` | SLIDER | Intel package share per hack (%) |
 
 ## Functions
 
-<details><summary>60</summary>
+<details><summary>58</summary>
 
 - `ghost_hacking_fnc_alarmAdd`
 - `ghost_hacking_fnc_alarmArm`
@@ -74,6 +90,7 @@ leaving cross-tier overlap working as intended.
 - `ghost_hacking_fnc_intelId`
 - `ghost_hacking_fnc_intelOptions`
 - `ghost_hacking_fnc_ladderCircle`
+- `ghost_hacking_fnc_moduleIntelPackage`
 - `ghost_hacking_fnc_nearestDrone`
 - `ghost_hacking_fnc_nearestTower`
 - `ghost_hacking_fnc_nearestWreck`
@@ -81,6 +98,7 @@ leaving cross-tier overlap working as intended.
 - `ghost_hacking_fnc_netFailChance`
 - `ghost_hacking_fnc_onBodyKilled`
 - `ghost_hacking_fnc_packDrop`
+- `ghost_hacking_fnc_packageEntries`
 - `ghost_hacking_fnc_placeDrop`
 - `ghost_hacking_fnc_popWitness`
 - `ghost_hacking_fnc_productInstallation`
@@ -90,6 +108,7 @@ leaving cross-tier overlap working as intended.
 - `ghost_hacking_fnc_productLocateCoastal`
 - `ghost_hacking_fnc_productLocateHub`
 - `ghost_hacking_fnc_productLocateRadar`
+- `ghost_hacking_fnc_productPackage`
 - `ghost_hacking_fnc_remoteHackFail`
 - `ghost_hacking_fnc_renderProduct`
 - `ghost_hacking_fnc_scanDevices`
@@ -104,14 +123,9 @@ leaving cross-tier overlap working as intended.
 - `ghost_hacking_fnc_serverPick`
 - `ghost_hacking_fnc_tabletAction`
 - `ghost_hacking_fnc_tabletAdvance`
-- `ghost_hacking_fnc_tabletClosed`
 - `ghost_hacking_fnc_tabletInRange`
-- `ghost_hacking_fnc_tabletLayout`
-- `ghost_hacking_fnc_tabletOpen`
-- `ghost_hacking_fnc_tabletRefresh`
 - `ghost_hacking_fnc_tabletSelectDevice`
 - `ghost_hacking_fnc_tabletSelectIntel`
-- `ghost_hacking_fnc_tabletTick`
 - `ghost_hacking_fnc_taorType`
 - `ghost_hacking_fnc_towerInTaor`
 - `ghost_hacking_fnc_towersInRange`

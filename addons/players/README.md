@@ -16,7 +16,7 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-14 functions.
+15 functions.
 
 ## CBA settings
 
@@ -26,7 +26,7 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Functions
 
-<details><summary>14</summary>
+<details><summary>15</summary>
 
 - `ghost_players_fnc_exportRanks`
 - `ghost_players_fnc_getClanTag`
@@ -35,6 +35,7 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 - `ghost_players_fnc_hasClanTag`
 - `ghost_players_fnc_isCurator`
 - `ghost_players_fnc_platoonNet`
+- `ghost_players_fnc_platoonOf`
 - `ghost_players_fnc_setActiveRadio`
 - `ghost_players_fnc_setRadioChannel`
 - `ghost_players_fnc_setRank`

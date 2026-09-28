@@ -147,10 +147,11 @@ TARGETS = [
     # BLU_F, CF_BLU_F, BLU_NATO_lxWS, BLU_T_F, BLU_W_F"). One theatre per
     # source. No Marshall and no Badger anywhere in them - see NOT_FIELDED -
     # the armour is the Nyx and the Luchs, and the air arm is European.
-    ("faction_eudf",     "EUDF",             "ghost_EUDF",     "2040 EUDF",             "blu_f"),
-    ("faction_eudf_wdl", "EUDF (Woodland)",  "ghost_EUDF_wdl", "2040 EUDF (Woodland)",  "blu_w_f"),
-    ("faction_eudf_des", "EUDF (Desert)",    "ghost_EUDF_des", "2040 EUDF (Desert)",    "blu_nato_lxws"),
-    ("faction_eudf_tna", "EUDF (Tropical)",  "ghost_EUDF_tna", "2040 EUDF (Tropical)",  "blu_t_f"),
+    # Three EU factions (user, 2026-09-19: "green and arid are all wee are doing", "and artic for russia and the
+    # eu"): the woodland is the fullest roster (blu_f), the arid and the arctic beside it. The blu_w_f and blu_t_f
+    # mirrors were deleted that day.
+    ("faction_eudf",     "EUDF (Woodland)",  "ghost_EUDF",     "2040 EUDF (Woodland)",  "blu_f"),
+    ("faction_eudf_des", "EUDF (Arid)",      "ghost_EUDF_des", "2040 EUDF (Arid)",      "blu_nato_lxws"),
     ("faction_eudf_arc", "EUDF (Arctic)",    "ghost_EUDF_arc", "2040 EUDF (Arctic)",    "cf_blu_f"),
     # 2040 TURKEY (user, 2026-08-31), on Athena's Pacific OPFOR. The source
     # ships 73 units and NO groups at all, so the order of battle is the base
@@ -160,9 +161,13 @@ TARGETS = [
     # same army can be the enemy in one mission and a third party in the next.
     # The side each one takes is in FACTION_SIDE; everything else about the
     # independent twin is copied from the east one by FACTION_TWIN.
-    ("faction_turkey", "Turkey", "ghost_Turkey", "2040 Turkey", "athena_opf_t_f"),
+    # Turkey: both camos on both sides (user, 2026-09-21) - arid and tropical, east and independent
+    ("faction_turkey", "Turkey", "ghost_Turkey", "2040 Turkey (Arid)", "athena_opf_t_f"),
+    ("faction_turkey_tna", "Turkey", "ghost_Turkey_tna", "2040 Turkey (Tropical)", "athena_opf_t_f"),
     ("faction_turkey_ind", "Turkey (Independent)", "ghost_Turkey_ind",
-     "2040 Turkey (Independent)", "athena_opf_t_f"),
+     "2040 Turkey (Tropical)", "athena_opf_t_f"),
+    ("faction_turkey_ind_ard", "Turkey (Independent)", "ghost_Turkey_ind_ard",
+     "2040 Turkey (Arid)", "athena_opf_t_f"),
     ("faction_marine_des", "Marine (Desert)", "ghost_Marine_des", "2040 Marine (Desert)", "ef_b_mjtf_des"),
     ("faction_marine_wdl", "Marine (Wdl)",    "ghost_Marine_wdl", "2040 Marine (Woodland)", "ef_b_mjtf_wdl"),
     # NO EUDF (user, 2026-08-29: "remove faction_eudf's"). EUDF35 left the load
@@ -190,6 +195,8 @@ TARGETS = [
     # OPF_F"). The base game's CSAT, kitted in Aegis Gear Overhaul's Iranian
     # digital set and re-armed on the AK-103 - see KIT_SWAP and RIFLE_SWAP.
     ("faction_iran",       "Iran",              "ghost_Iran",      "2040 Iran",              "opf_f"),
+    # 2040 Iran (Tropical): the same roster in the base game's green hex (user, 2026-09-20)
+    ("faction_iran_tna",   "Iran (Tropical)",   "ghost_Iran_tna",  "2040 Iran (Tropical)",   "opf_f"),
     # 2040 RUSSIA (user, 2026-08-30: "copy those three factions over as is,
     # except give them drones for 2040 and future ammo"). No kit swap and no
     # rifle swap on purpose - as is means as is; what they get is the 2040
@@ -445,6 +452,9 @@ NOT_FIELDED = {
         # NO MARSHALL AND NO BADGER (user, 2026-08-31). The AMV-7 family is
         # the US Army's; the EU drives the Nyx and the Luchs.
         ("no AMV-7 - the EU has the Nyx",  lambda c: "apc_wheeled_01" in c),
+        # NO EF M-ATV SPECIAL VARIANTS (user, 2026-09-25): keep the AT, FSV
+        # and LAAD versions out of every EU theatre.
+        ("no EF M-ATV AT/FSV/LAAD", lambda c: any(role in c for role in ("_mrap_01_at_", "_mrap_01_fsv_", "_mrap_01_laad_"))),
         # NO MV-35 (user, 2026-09-01: "EUDF is not the fucking us no mv 35's").
         # The Phantom was never in a table for the EU - QAV files its four
         # reskins under BLU_F / BLU_T_F / BLU_W_F / BLU_NATO_lxWS, which are
@@ -759,7 +769,8 @@ ROSTER_ADD = {
     "ghost_US_JTF_ocp": _QAV_ARMOUR + _US_DRONES + _US_NAVY + _NATO_ARTY + _NATO_AIR + _JTF_COMMON + _JTF_TAN + _JTF_LSV + _JC_AD_D + _JTF_VTOL_TAN,
     # THE EUDF (user, 2026-08-31). Its own armour and air in every theatre;
     # the desert one takes the arid Nyx.
-    "ghost_EUDF":     _EU_ARMOUR + _EU_HELI + _EU_PLANE,
+    # the JC air defence on the EU as well (user, 2026-09-21: "add to the eu make sure to add the ai crew")
+    "ghost_EUDF":     _EU_ARMOUR + _EU_HELI + _EU_PLANE + _JC_AD_W,
     "ghost_EUDF_wdl": _EU_ARMOUR + _EU_HELI + _EU_PLANE,
     "ghost_EUDF_tna": _EU_ARMOUR + _EU_HELI + _EU_PLANE,
     "ghost_EUDF_arc": _EU_ARMOUR + _EU_HELI + _EU_PLANE,
@@ -2072,6 +2083,31 @@ PICK = {
     # re-run.
     "Titan_AT": "FA_Titan_AT_BGM185_Broadsword",
     "Titan_AA": "FA_Titan_AA_MIM165_Sentry",
+    # 2026-09-27 (user: "make sure all 2040 factions have future ammo"). The faction configs were swapped in
+    # place to these; they are here so a re-run issues the same. Tracer magazines have no FA descendant of their
+    # own, so without an entry they kept base-game rounds; the pistol/SMG/DMR ones are magazines made that day.
+    "30Rnd_762x39_Mag_F": "FA_o_30Rnd_762x39_7N47_CT",
+    "30Rnd_762x39_Mag_Tracer_F": "FA_o_30Rnd_762x39_7N47_CT_T_Yellow",
+    "30Rnd_580x42_Mag_F": "FA_o_30Rnd_580x42_DBP39_CT",
+    "30Rnd_580x42_Mag_Tracer_F": "FA_o_30Rnd_580x42_DBP39_CT_T_Green",
+    "30Rnd_556x45_Stanag_red": "FA_b_30Rnd_556_Mk327_HV_T_Red",
+    "30Rnd_65x39_caseless_mag_Tracer": "FA_b_30Rnd_65_EPR_T_Red",
+    "30Rnd_65x39_caseless_khaki_mag_Tracer": "FA_b_30Rnd_65_EPR_Khaki_T_Red",
+    "30Rnd_65x39_caseless_black_mag_Tracer": "FA_b_30Rnd_65_EPR_Black_T_Red",
+    "EF_30Rnd_65x39_caseless_coy_mag_Tracer": "FA_b_30Rnd_65_EPR_T_Red",
+    "16Rnd_9x21_Mag": "FA_b_16Rnd_9x21_Mk424_AP",
+    "ghost_weapons_17Rnd_9x21_Mag": "FA_b_17Rnd_9x21_Mk424_AP",
+    "30Rnd_9x21_Mag_SMG_02": "FA_b_30Rnd_9x21_SMG_02_Mk424_AP",
+    "30Rnd_9x21_Mag_SMG_02_Tracer_Red": "FA_b_30Rnd_9x21_SMG_02_Mk424_AP",
+    "ghost_weapons_40Rnd_9x21_Gepard_Mag_F": "FA_b_40Rnd_9x21_Gepard_Mk424_AP",
+    "17Rnd_9x19_Mag_RF": "FA_rf_17Rnd_9x19_Mk422_AP",
+    "33Rnd_9x19_Mag_Tan_RF": "FA_rf_33Rnd_9x19_Mk422_AP",
+    "6Rnd_45ACP_Cylinder": "FA_b_6Rnd_45ACP_Mk421",
+    "10Rnd_762x54_Mag": "FA_o_10Rnd_762x54_Ball_HV",
+    "7Rnd_408_Mag": "FA_b_7Rnd_408_Mk240",
+    "RPG32_F": "FA_RPG32_PG32V2",
+    "Vorona_HEAT": "FA_Vorona_9M135M",
+    "MRAWS_HEAT55_F": "FA_MRAWS_HEAT665_CS",
 }
 
 
@@ -4473,6 +4509,16 @@ def main():
         L += ['#include "CfgVehicles.hpp"',
               '#include "CfgGroups.hpp"']
         crlf(os.path.join(path, "config.cpp"), L)
+
+        # The generator writes class names out in full; the mod's rule is that an addon names its own classes
+        # through CBA's macros (docs/CODING_GUIDELINES.md, user 2026-09-22). One pass over what was just written
+        # turns them into GVAR / QGVAR / ADDON, so a regeneration cannot quietly undo the convention.
+        try:
+            import to_gvar
+            _a, _done, _left, _pre = to_gvar.convert(addon)
+            print("       %d name(s) written through GVAR, %d literal(s) left" % (_done, _left))
+        except Exception as exc:
+            print("       WARNING: the GVAR pass did not run (%s) - run tools/to_gvar.py %s by hand" % (exc, addon))
 
         if forced[0]:
             print("       %d man class(es) kitted by hand" % forced[0])

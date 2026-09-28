@@ -12,7 +12,7 @@
 class CfgFactionClasses {
     class NO_CATEGORY;
 
-    class ghost_MFRC_tna: NO_CATEGORY {
+    class GVAR(tna): NO_CATEGORY {
         displayName = "2040 MFRC (Tropical)";
         author = QAUTHOR;
         side = 1;
@@ -21,7 +21,7 @@ class CfgFactionClasses {
         flag = "\A3\Data_F\Flags\flag_NATO_CO.paa";
     };
 
-    class ghost_MFRC_ocp: NO_CATEGORY {
+    class GVAR(ocp): NO_CATEGORY {
         displayName = "2040 MFRC (Arid)";
         author = QAUTHOR;
         side = 1;
@@ -30,7 +30,7 @@ class CfgFactionClasses {
         flag = "\A3\Data_F\Flags\flag_NATO_CO.paa";
     };
 
-    class ghost_MFRC_wdl: NO_CATEGORY {
+    class GVAR(wdl): NO_CATEGORY {
         displayName = "2040 MFRC (Woodland)";
         author = QAUTHOR;
         side = 1;
@@ -39,7 +39,7 @@ class CfgFactionClasses {
         flag = "\A3\Data_F\Flags\flag_NATO_CO.paa";
     };
 
-    class ghost_MFRC_mtp: NO_CATEGORY {
+    class GVAR(mtp): NO_CATEGORY {
         displayName = "2040 MFRC (Desert)";
         author = QAUTHOR;
         side = 1;

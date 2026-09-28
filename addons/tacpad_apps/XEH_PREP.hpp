@@ -42,3 +42,6 @@ PREP(roleTiles);
 PREP(setSetting);
 PREP(missionSchemes);
 PREP(toggleNet);
+PREP(supportRequest);
+PREP(supportRequestDraw);
+PREP(supportRequestSend);

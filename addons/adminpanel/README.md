@@ -158,7 +158,7 @@ See [LICENSE](LICENSE) for the full text.
 
 ## Ships
 
-18 functions.
+19 functions.
 
 ## CBA settings
 
@@ -169,11 +169,12 @@ See [LICENSE](LICENSE) for the full text.
 
 ## Functions
 
-<details><summary>18</summary>
+<details><summary>19</summary>
 
 - `ghost_adminpanel_fnc_adminList`
 - `ghost_adminpanel_fnc_confirmEnd`
 - `ghost_adminpanel_fnc_execClear`
+- `ghost_adminpanel_fnc_execCopy`
 - `ghost_adminpanel_fnc_execLog`
 - `ghost_adminpanel_fnc_execRun`
 - `ghost_adminpanel_fnc_execTabs`

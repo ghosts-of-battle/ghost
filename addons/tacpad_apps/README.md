@@ -248,7 +248,7 @@ full-screen things fighting for the same close key is not a UI.
 
 ## Ships
 
-35 functions.
+39 functions.
 
 ## CBA settings
 
@@ -265,13 +265,14 @@ full-screen things fighting for the same close key is not a UI.
 
 ## Functions
 
-<details><summary>35</summary>
+<details><summary>39</summary>
 
 - `ghost_tacpad_apps_fnc_alarmAtDelay`
 - `ghost_tacpad_apps_fnc_ammoState`
 - `ghost_tacpad_apps_fnc_appComms`
 - `ghost_tacpad_apps_fnc_appDrones`
 - `ghost_tacpad_apps_fnc_appHack`
+- `ghost_tacpad_apps_fnc_appIntel`
 - `ghost_tacpad_apps_fnc_appJamming`
 - `ghost_tacpad_apps_fnc_appRadio`
 - `ghost_tacpad_apps_fnc_appScanner`
@@ -296,7 +297,10 @@ full-screen things fighting for the same close key is not a UI.
 - `ghost_tacpad_apps_fnc_roleTiles`
 - `ghost_tacpad_apps_fnc_row`
 - `ghost_tacpad_apps_fnc_setSetting`
-- `ghost_tacpad_apps_fnc_themeTablet`
+- `ghost_tacpad_apps_fnc_simplexProvider`
+- `ghost_tacpad_apps_fnc_supportRequest`
+- `ghost_tacpad_apps_fnc_supportRequestDraw`
+- `ghost_tacpad_apps_fnc_supportRequestSend`
 - `ghost_tacpad_apps_fnc_ticSend`
 - `ghost_tacpad_apps_fnc_tileData`
 - `ghost_tacpad_apps_fnc_timerSet`

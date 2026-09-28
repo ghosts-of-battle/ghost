@@ -55,43 +55,69 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-3 unit classes, 14 functions.
+4 unit classes, 19 functions.
 
 ## Eden modules
 
-### Ghost - Enemy Drones
+### Ghost - Drone Patrol
 
-`ghost_moduleUAS`, category ghost_modules
+`ghost_moduleDronePatrol`, category ghost_modules
 
-Placing this module turns on enemy drones. Without it, the system is off.<br>Airframes Per Side - How many drones a commander flies at once while its supply is intact West / East / Independent Airframes - That side's own ceiling; -1 uses Airframes Per Side, 0 grounds it After A Cache Is Lost - The ceiling while a supply cache is down Outage Min (sec) - Shortest time a destroyed cache holds the ceiling down Outage Max (sec) - Longest time Caches Per Side - Supply caches placed in each commander's area for players to find
+One patrol. Resize it - the area is the ground the drones fly over.<br>Side - whose drones. A side friendly to the players is skipped Drones - how many airframes this patrol keeps up Drone Class - empty flies the side's own<br>Artillery On Detect - a drone that sees somebody shells where it saw them Rounds / Scatter (m) / Cooldown (s) - the size of that mission and its gap<br>A module never resized is one 800 m orbit. Nobody within 3.2 km, nothing flies.
 
-<details><summary>12 attributes</summary>
+<details><summary>6 attributes</summary>
 
-- `baseMax`
-- `cachesPerSide`
-- `maxEast`
-- `maxGuer`
-- `maxWest`
-- `patrolOver`
-- `reducedMax`
-- `uavEast`
-- `uavGuer`
-- `uavWest`
-- `windowMax`
-- `windowMin`
+- `artyCooldown`
+- `artyRounds`
+- `artyScatter`
+- `droneClass`
+- `droneCount`
+- `patrolSide`
 
 </details>
 
+### Ghost - Drone Swarm
+
+`ghost_moduleDroneSwarm`, category ghost_modules
+
+A swarm, launched where you place it. Trigger it to launch on cue.<br>Airframe - which drone. Limited by the Swarm Airframes setting Drones - 2 to 12 Action - Impact dives on this module; Circle orbits it Spawn Min / Max (m) - how far out they appear and fly in from Side - the fallback crew's side<br>Resize the module to set the orbit radius. Impact ignores the area.
+
+<details><summary>6 attributes</summary>
+
+- `spawnMax`
+- `spawnMin`
+- `swarmAction`
+- `swarmClass`
+- `swarmCount`
+- `swarmSide`
+
+</details>
+
+## CBA settings
+
+| Setting | Type | Name |
+|---|---|---|
+| `ghost_uas_windowMin` | SLIDER | Outage minimum (s) |
+| `ghost_uas_windowMax` | SLIDER | Outage maximum (s) |
+| `ghost_uas_cachesPerSide` | SLIDER | Supply caches per side |
+| `ghost_uas_swarmClasses` | EDITBOX | Swarm airframes |
+| `ghost_uas_aliveZones` | CHECKBOX | Patrol ALiVE objectives |
+| `ghost_uas_aliveZoneShare` | SLIDER | ALiVE objectives patrolled (%) |
+| `ghost_uas_aliveZoneMax` | SLIDER | Max ALiVE zones per side |
+| `ghost_uas_aliveZoneRadius` | SLIDER | ALiVE zone radius (m) |
+| `ghost_uas_aliveZoneDrones` | SLIDER | Airframes per ALiVE zone |
+
 ## Functions
 
-<details><summary>14</summary>
+<details><summary>19</summary>
 
 - `ghost_uas_fnc_cacheDown`
 - `ghost_uas_fnc_ceilingFor`
 - `ghost_uas_fnc_factionUav`
 - `ghost_uas_fnc_iedDrone`
 - `ghost_uas_fnc_livePatrols`
-- `ghost_uas_fnc_moduleController`
+- `ghost_uas_fnc_moduleDronePatrol`
+- `ghost_uas_fnc_moduleDroneSwarm`
 - `ghost_uas_fnc_placeCaches`
 - `ghost_uas_fnc_planPatrols`
 - `ghost_uas_fnc_playerNear`
@@ -99,6 +125,10 @@ Placing this module turns on enemy drones. Without it, the system is off.<br>Air
 - `ghost_uas_fnc_spotSweep`
 - `ghost_uas_fnc_standDown`
 - `ghost_uas_fnc_start`
+- `ghost_uas_fnc_swarmCircle`
+- `ghost_uas_fnc_swarmImpact`
 - `ghost_uas_fnc_topUp`
+- `ghost_uas_fnc_zonesFor`
+- `ghost_uas_fnc_zonesFromAlive`
 
 </details>

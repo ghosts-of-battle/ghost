@@ -8,12 +8,12 @@
 class CfgFactionClasses {
     class NO_CATEGORY;
 
-    class ghost_Iran: NO_CATEGORY {
+    class ADDON: NO_CATEGORY {
         displayName = "2040 Iran";
         author = QAUTHOR;
         side = 0;
         priority = 1;
-        icon = "\A3_Aegis\Data_F_Aegis\FactionIcons\CfgFactionClasses_OPF_CA.paa";
-        flag = "\A3_Aegis\Data_F_Aegis\Flags\flag_IranArmy_CO.paa";
+        icon = "\A3\Data_F\cfgFactionClasses_OPF_ca.paa";
+        flag = "\A3\Data_F\Flags\flag_CSAT_CO.paa";
     };
 };

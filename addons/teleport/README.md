@@ -17,7 +17,7 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-11 functions.
+12 functions.
 
 ## CBA settings
 
@@ -28,10 +28,11 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Functions
 
-<details><summary>11</summary>
+<details><summary>12</summary>
 
 - `ghost_teleport_fnc_addAction`
 - `ghost_teleport_fnc_addPoint`
+- `ghost_teleport_fnc_applyTheme`
 - `ghost_teleport_fnc_deletePoint`
 - `ghost_teleport_fnc_listCheck`
 - `ghost_teleport_fnc_onButtonClick`

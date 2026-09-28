@@ -535,9 +535,11 @@ class CfgMagazines {
     class FA_rf_10Rnd_127x55_7N52;
     class FA_rf_10Rnd_127x55_7U13;
     class FA_rf_10Rnd_127x55_7U14;
+    class FA_rf_17Rnd_9x19_Mk422_AP;
     class FA_rf_20Rnd_127x55_7N52;
     class FA_rf_20Rnd_127x55_7U13;
     class FA_rf_20Rnd_127x55_7U14;
+    class FA_rf_33Rnd_9x19_Mk422_AP;
 
     class FA_Aegis_10Rnd_762x54_SVD_HV_t4: FA_Aegis_10Rnd_762x54_SVD_HV {
         ammo = "FA_o_762x54R_Ball_HV_t4";
@@ -5353,5 +5355,23 @@ class CfgMagazines {
     };
     class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_IR_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_IR {
         ammo = "FA_b_556_XM891_CTEP_T_IR_t2";
+    };
+    class FA_rf_17Rnd_9x19_Mk422_AP_t4: FA_rf_17Rnd_9x19_Mk422_AP {
+        ammo = "FA_rf_9x19_Mk422_AP_t4";
+    };
+    class FA_rf_17Rnd_9x19_Mk422_AP_t3: FA_rf_17Rnd_9x19_Mk422_AP {
+        ammo = "FA_rf_9x19_Mk422_AP_t3";
+    };
+    class FA_rf_17Rnd_9x19_Mk422_AP_t2: FA_rf_17Rnd_9x19_Mk422_AP {
+        ammo = "FA_rf_9x19_Mk422_AP_t2";
+    };
+    class FA_rf_33Rnd_9x19_Mk422_AP_t4: FA_rf_33Rnd_9x19_Mk422_AP {
+        ammo = "FA_rf_9x19_Mk422_AP_t4";
+    };
+    class FA_rf_33Rnd_9x19_Mk422_AP_t3: FA_rf_33Rnd_9x19_Mk422_AP {
+        ammo = "FA_rf_9x19_Mk422_AP_t3";
+    };
+    class FA_rf_33Rnd_9x19_Mk422_AP_t2: FA_rf_33Rnd_9x19_Mk422_AP {
+        ammo = "FA_rf_9x19_Mk422_AP_t2";
     };
 };

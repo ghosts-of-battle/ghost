@@ -2,7 +2,7 @@
 
 `ghost_faction_marine_wdl`
 
-A content pack: 94 unit classes. No scripted behaviour.
+A content pack: 118 unit classes. No scripted behaviour.
 
 <!-- generated below this line by tools/gen_addon_readmes.py - do not edit -->
 

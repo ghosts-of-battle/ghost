@@ -10,6 +10,12 @@
 // A parentless reopen collapses it the same way, so name mortar_155mm_AMOS
 // (defined in A3_Weapons_F, already in requiredAddons).
 class CfgWeapons {
+    // Glock 19X: its parent is Pistol_Base_F (work/orbat_dump_2026-08-30.rpt WEAPON line); the FA 9x19 mags ride
+    // on a well of ours, so RF's own magazines and wells are left exactly as they are
+    class Pistol_Base_F;
+    class hgun_Glock19_RF: Pistol_Base_F {
+        magazineWell[] += {"ghost_fa_Glock19_RF"};
+    };
     class mortar_155mm_AMOS;
     class Twin_Mortar_120mm_RF: mortar_155mm_AMOS {
         magazines[] += {

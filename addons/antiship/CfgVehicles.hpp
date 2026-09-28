@@ -25,9 +25,15 @@ class CfgVehicles {
     // Silencing it means restating BI's whole damage model on our leaf, which
     // is a real behaviour change to remove two cosmetic lines. Not worth it -
     // unlike the CM_ warnings below, which ARE ours to answer and now are.
-    class StaticWeapon;
+    // StaticMGWeapon's Turrets is `Turrets: Turrets` in the game, so it is
+    // restated with that parent (declared on StaticWeapon); a bare
+    // `class Turrets {` rebinds it - RPT "Updating base class 'Turrets'->''".
+    class LandVehicle;
+    class StaticWeapon: LandVehicle {
+        class Turrets;
+    };
     class StaticMGWeapon: StaticWeapon {
-        class Turrets {
+        class Turrets: Turrets {
             class MainTurret;
         };
     };

@@ -8,12 +8,12 @@
 class CfgFactionClasses {
     class NO_CATEGORY;
 
-    class ghost_China: NO_CATEGORY {
+    class ADDON: NO_CATEGORY {
         displayName = "2040 China";
         author = QAUTHOR;
         side = 0;
         priority = 3;
-        icon = "\A3_Aegis\Data_F_Aegis\FactionIcons\CfgFactionClasses_OPF_T_CA.paa";
-        flag = "\A3_Aegis\Data_F_Aegis\Flags\flag_China_CO.paa";
+        icon = "\A3\Data_F\cfgFactionClasses_OPF_ca.paa";
+        flag = "\A3\Data_F\Flags\flag_CSAT_CO.paa";
     };
 };

@@ -6,61 +6,62 @@
 // refuses to build - see requiredAddons in config.cpp.
 
 class CfgVehicles {
-    class Aegis_B_A_Heli_Transport_02_wdl_F;
-    class Aegis_B_D_CommandoMortar_RF;
-    class Aegis_B_D_GMG_01_A_F;
-    class Aegis_B_D_GMG_01_F;
-    class Aegis_B_D_GMG_01_high_F;
-    class Aegis_B_D_HMG_01_A_F;
-    class Aegis_B_D_HMG_01_F;
-    class Aegis_B_D_HMG_01_high_F;
-    class Aegis_B_D_HeavyGunner_F;
-    class Aegis_B_D_Heli_Attack_03_F;
-    class Aegis_B_D_Heli_EC_03_RF;
-    class Aegis_B_D_Heli_EC_04_military_RF;
-    class Aegis_B_D_Heli_Transport_03_F;
-    class Aegis_B_D_Heli_Transport_03_unarmed_F;
-    class Aegis_B_D_Helicrew_F;
-    class Aegis_B_D_LSV_01_AT_F;
-    class Aegis_B_D_LSV_01_armed_F;
-    class Aegis_B_D_LSV_01_light_F;
-    class Aegis_B_D_LSV_01_unarmed_F;
-    class Aegis_B_D_Pickup_AT_RF;
-    class Aegis_B_D_Pickup_Comms_rf;
-    class Aegis_B_D_Pickup_RF;
-    class Aegis_B_D_Pickup_aat_rf;
-    class Aegis_B_D_Pickup_mmg_rf;
-    class Aegis_B_D_RadioOperator_F;
-    class Aegis_B_D_Recon_CQ_F;
-    class Aegis_B_D_Recon_GL_F;
-    class Aegis_B_D_Recon_MG_F;
-    class Aegis_B_D_Recon_Sharpshooter;
-    class Aegis_B_D_Sharpshooter_F;
-    class Aegis_B_D_Soldier_CQ_F;
-    class Aegis_B_D_Soldier_MG_F;
-    class Aegis_B_D_Static_Designator_01_F;
-    class Aegis_B_D_TwinMortar_RF;
-    class Aegis_B_D_UAV_01_F;
-    class Aegis_B_D_UAV_02_lxWS;
-    class Aegis_B_D_UAV_05_F;
-    class Aegis_B_D_UGV_02_Demining_F;
-    class Aegis_B_D_soldier_UGV_02_Demining_F;
-    class Aegis_B_D_support_CMort_RF;
-    class Atlas_B_A_Plane_Fighter_05_ard_F;
-    class Atlas_B_D_JSOC_F;
-    class Atlas_B_D_JSOC_JTAC_F;
-    class Atlas_B_D_JSOC_LAT_F;
-    class Atlas_B_D_JSOC_UAV_F;
-    class Atlas_B_D_JSOC_UAV_lxWS;
-    class Atlas_B_G_LT_01_AA_ard_F;
-    class Atlas_B_G_LT_01_AT_ard_F;
-    class Atlas_B_G_LT_01_cannon_ard_F;
-    class Atlas_B_G_LT_01_scout_ard_F;
-    class Atlas_B_G_MBT_03_cannon_F;
-    class B_A_Plane_Transport_01_infantry_tna_F;
-    class B_A_Plane_Transport_01_vehicle_tna_F;
-    class B_D_AFV_Wheeled_01_cannon_F;
-    class B_D_AFV_Wheeled_01_up_cannon_F;
+    class qav_challenger2;
+    class E22_B_JC_D_SAM_system_01_F;
+    class E22_B_JC_D_AAA_System_01_F;
+    class E22_B_JC_D_Radar_system_01_F;
+    class qav_challenger2_e;
+    class ghost_vehicle_B_A_Heli_Transport_02_wdl_F;
+    class B_Mortar_01_F;
+    class B_GMG_01_A_F;
+    class B_GMG_01_F;
+    class B_GMG_01_high_F;
+    class B_HMG_01_A_F;
+    class B_HMG_01_F;
+    class B_HMG_01_high_F;
+    class B_HeavyGunner_F;
+    class ghost_vehicle_B_Heli_Attack_03_F;
+    class B_Heli_EC_03_RF;
+    class B_Heli_EC_04_military_RF;
+    class B_Heli_Transport_03_F;
+    class B_Heli_Transport_03_unarmed_F;
+    class B_helicrew_F;
+    class B_LSV_01_AT_F;
+    class B_LSV_01_armed_F;
+    class B_CTRG_LSV_01_light_F;
+    class B_LSV_01_unarmed_F;
+    class B_G_Offroad_01_AT_F;
+    class B_Pickup_Comms_rf;
+    class B_Pickup_RF;
+    class B_Pickup_aat_rf;
+    class B_Pickup_mmg_rf;
+    class B_Soldier_F;
+    class B_recon_F;
+    class B_Recon_Sharpshooter_F;
+    class B_Sharpshooter_F;
+    class B_Patrol_Soldier_MG_F;
+    class B_Static_Designator_01_F;
+    class B_TwinMortar_RF;
+    class B_UAV_01_F;
+    class B_UAV_02_dynamicLoadout_F;
+    class B_UAV_05_F;
+    class B_UGV_02_Demining_F;
+    class B_soldier_UGV_02_Demining_F;
+    class B_support_CMort_RF;
+    class ghost_vehicle_B_A_Plane_Fighter_05_ard_F;
+    class ghost_uniform_B_JSOC_StealthUniform_soldier_F;
+    class B_recon_JTAC_F;
+    class B_soldier_LAT_F;
+    class B_soldier_UAV_F;
+    class I_LT_01_AA_F;
+    class I_LT_01_AT_F;
+    class I_LT_01_cannon_F;
+    class I_LT_01_scout_F;
+    class I_MBT_03_cannon_F;
+    class ghost_vehicle_B_A_Plane_Transport_01_infantry_tna_F;
+    class ghost_vehicle_B_A_Plane_Transport_01_vehicle_tna_F;
+    class B_AFV_Wheeled_01_cannon_F;
+    class B_AFV_Wheeled_01_up_cannon_F;
     class B_D_APC_Tracked_01_CRV_lxWS;
     class B_D_APC_Tracked_01_aa_lxWS;
     class B_D_APC_Tracked_01_rcws_lxWS;
@@ -80,8 +81,8 @@ class CfgVehicles {
     class B_D_Mortar_01_lxWS;
     class B_D_Pilot_lxWS;
     class B_D_Plane_CAS_01_dynamicLoadout_lxWS;
-    class B_D_Plane_Fighter_01_F;
-    class B_D_Plane_Fighter_01_Stealth_F;
+    class B_Plane_Fighter_01_F;
+    class B_Plane_Fighter_01_Stealth_F;
     class B_D_Quadbike_01_lxWS;
     class B_D_Soldier_A_lxWS;
     class B_D_Soldier_GL_lxWS;
@@ -101,14 +102,13 @@ class CfgVehicles {
     class B_D_Truck_01_medical_lxWS;
     class B_D_Truck_01_mover_lxWS;
     class B_D_Truck_01_transport_lxWS;
-    class B_D_VTOL_01_armed_F;
-    class B_D_VTOL_01_infantry_F;
-    class B_D_VTOL_01_vehicle_F;
+    class B_T_VTOL_01_armed_F;
+    class B_T_VTOL_01_infantry_F;
+    class B_T_VTOL_01_vehicle_F;
     class B_D_crew_lxWS;
     class B_D_engineer_lxWS;
     class B_D_medic_lxWS;
     class B_D_officer_lxWS;
-    class B_D_recon_AR_lxWS;
     class B_D_recon_JTAC_lxWS;
     class B_D_recon_LAT_lxWS;
     class B_D_recon_M_lxWS;
@@ -136,8 +136,6 @@ class CfgVehicles {
     class B_D_support_AMort_lxWS;
     class B_Heli_Attack_01_dynamicLoadout_F;
     class B_Heli_Attack_01_pylons_dynamicLoadout_F;
-    class B_Heli_EC_03_RF;
-    class B_Heli_EC_04_military_RF;
     class B_Heli_Transport_01_F;
     class B_Heli_Transport_01_pylons_F;
     class B_Heli_Transport_01_unarmed_F;
@@ -158,1563 +156,1869 @@ class CfgVehicles {
     class EF_B_CombatBoat_AT_NATO_Des;
     class EF_B_CombatBoat_HMG_NATO_Des;
     class EF_B_CombatBoat_Unarmed_NATO_Des;
-    class EF_B_MRAP_01_AT_NATO_Des;
-    class EF_B_MRAP_01_FSV_NATO_Des;
-    class EF_B_MRAP_01_LAAD_NATO_Des;
-    class rev_B_Plane_Fighter_04_F;
+    class I_Plane_Fighter_04_F;
 
-    class ghost_EUDF_des_Aegis_B_A_Heli_Transport_02_wdl_F: Aegis_B_A_Heli_Transport_02_wdl_F {
+
+    // E22's Joint Command air defence, on every EU faction at the user's request (2026-09-21)
+    class GVAR(E22_B_JC_D_SAM_system_01_F): E22_B_JC_D_SAM_system_01_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "ADS-1 NASAMS";
+        side = 1;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Turrets";
+        crew = QGVAR(B_D_crew_lxWS);
+    };
+
+    // E22's Joint Command air defence, on every EU faction at the user's request (2026-09-21)
+    class GVAR(E22_B_JC_D_AAA_System_01_F): E22_B_JC_D_AAA_System_01_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "ADS-2 Skynex";
+        side = 1;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Turrets";
+        crew = QGVAR(B_D_crew_lxWS);
+    };
+
+    // E22's Joint Command air defence, on every EU faction at the user's request (2026-09-21)
+    class GVAR(E22_B_JC_D_Radar_system_01_F): E22_B_JC_D_Radar_system_01_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "AN/MPQ-64 Sentinel";
+        side = 1;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Turrets";
+        crew = QGVAR(B_D_crew_lxWS);
+    };
+
+    class GVAR(Aegis_B_A_Heli_Transport_02_wdl_F): ghost_vehicle_B_A_Heli_Transport_02_wdl_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Merlin HC5";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_CommandoMortar_RF: Aegis_B_D_CommandoMortar_RF {
+    class GVAR(Aegis_B_D_CommandoMortar_RF): B_Mortar_01_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "RSG60";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_GMG_01_A_F: Aegis_B_D_GMG_01_A_F {
+    class GVAR(Aegis_B_D_GMG_01_A_F): B_GMG_01_A_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "XM307A";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_GMG_01_F: Aegis_B_D_GMG_01_F {
+    class GVAR(Aegis_B_D_GMG_01_F): B_GMG_01_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "XM307";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_GMG_01_high_F: Aegis_B_D_GMG_01_high_F {
+    class GVAR(Aegis_B_D_GMG_01_high_F): B_GMG_01_high_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "XM307 (High)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_HMG_01_A_F: Aegis_B_D_HMG_01_A_F {
+    class GVAR(Aegis_B_D_HMG_01_A_F): B_HMG_01_A_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "XM312A";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_HMG_01_F: Aegis_B_D_HMG_01_F {
+    class GVAR(Aegis_B_D_HMG_01_F): B_HMG_01_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "XM312";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_HMG_01_high_F: Aegis_B_D_HMG_01_high_F {
+    class GVAR(Aegis_B_D_HMG_01_high_F): B_HMG_01_high_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "XM312 (High)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_HeavyGunner_F: Aegis_B_D_HeavyGunner_F {
+    class GVAR(Aegis_B_D_HeavyGunner_F): B_HeavyGunner_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Heavy Gunner";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_MMG_02_sand_RCO_LP_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_MMG_02_sand_RCO_LP_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_130Rnd_338_Mk372_t3","FA_b_130Rnd_338_Mk372_t3","FA_b_130Rnd_338_Mk372_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_130Rnd_338_Mk372_t3","FA_b_130Rnd_338_Mk372_t3","FA_b_130Rnd_338_Mk372_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(MMG_02_sand_RCO_LP_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(MMG_02_sand_RCO_LP_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_130Rnd_338_Mk372_t3","FA_b_130Rnd_338_Mk372_t3","FA_b_130Rnd_338_Mk372_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_130Rnd_338_Mk372_t3","FA_b_130Rnd_338_Mk372_t3","FA_b_130Rnd_338_Mk372_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_Aegis_B_D_Heli_Attack_03_F: Aegis_B_D_Heli_Attack_03_F {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(Aegis_B_D_Heli_Attack_03_F): ghost_vehicle_B_Heli_Attack_03_F {
+        scope = 1;                      // no AH-64s for the EU (user, 2026-09-19)
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "AH-64E Apache";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_Heli_EC_03_RF: Aegis_B_D_Heli_EC_03_RF {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(Aegis_B_D_Heli_EC_03_RF): B_Heli_EC_03_RF {
+        scope = 1;                      // the same helicopter twice (user, 2026-09-19: "lots of double heloicopters")
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "H225M Super Cougar";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_Heli_EC_04_military_RF: Aegis_B_D_Heli_EC_04_military_RF {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(Aegis_B_D_Heli_EC_04_military_RF): B_Heli_EC_04_military_RF {
+        scope = 1;                      // the same helicopter twice (user, 2026-09-19: "lots of double heloicopters")
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "H225M Super Cougar (Unarmed)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_Heli_Transport_03_F: Aegis_B_D_Heli_Transport_03_F {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(Aegis_B_D_Heli_Transport_03_F): B_Heli_Transport_03_F {
+        scope = 1;                      // not in the EU (user, 2026-09-19: no Rooikats, Chinooks, M3 Knights, Merkavas)
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "CH-47I Chinook";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_Heli_Transport_03_unarmed_F: Aegis_B_D_Heli_Transport_03_unarmed_F {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(Aegis_B_D_Heli_Transport_03_unarmed_F): B_Heli_Transport_03_unarmed_F {
+        scope = 1;                      // not in the EU (user, 2026-09-19: no Rooikats, Chinooks, M3 Knights, Merkavas)
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "CH-47I Chinook (unarmed)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_Helicrew_F: Aegis_B_D_Helicrew_F {
+    class GVAR(Aegis_B_D_Helicrew_F): B_helicrew_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Helicopter Crew";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_Holo_F_snds","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_Holo_F_snds","Throw","Put"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_Holo_F_snds),"Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_Holo_F_snds),"Throw","Put"};
         magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
         respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
     };
-    class ghost_EUDF_des_Aegis_B_D_LSV_01_AT_F: Aegis_B_D_LSV_01_AT_F {
+    class GVAR(Aegis_B_D_LSV_01_AT_F): B_LSV_01_AT_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Polaris DAGOR (Mini-Spike AT)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
+        // camo: EU Desert (its own Sand (Apex), copied)
+        textureList[] = {"Sand", 1};
+        hiddenSelectionsTextures[] = {
+            "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_sand_CO.paa",
+            "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_sand_CO.paa",
+            "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_sand_CO.paa",
+            "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_sand_CO.paa",
+            "\A3\weapons_f_beta\launchers\titan\data\launcher_co.paa",
+            "\A3\weapons_f_beta\launchers\titan\data\tubem_co.paa"
+        };
     };
-    class ghost_EUDF_des_Aegis_B_D_LSV_01_armed_F: Aegis_B_D_LSV_01_armed_F {
+    class GVAR(Aegis_B_D_LSV_01_armed_F): B_LSV_01_armed_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Polaris DAGOR (XM312)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
+        // camo: EU Desert (its own Sand (Apex), copied)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_sand_CO.paa",
+            "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_sand_CO.paa",
+            "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_sand_CO.paa",
+            "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_sand_CO.paa"
+        };
     };
-    class ghost_EUDF_des_Aegis_B_D_LSV_01_light_F: Aegis_B_D_LSV_01_light_F {
+    class GVAR(Aegis_B_D_LSV_01_light_F): B_CTRG_LSV_01_light_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Polaris DAGOR (light)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
+        // camo: EU Desert (its own Sand (Apex), copied)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_sand_CO.paa",
+            "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_sand_CO.paa",
+            "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_sand_CO.paa",
+            "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_sand_CO.paa"
+        };
     };
-    class ghost_EUDF_des_Aegis_B_D_LSV_01_unarmed_F: Aegis_B_D_LSV_01_unarmed_F {
+    class GVAR(Aegis_B_D_LSV_01_unarmed_F): B_LSV_01_unarmed_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Polaris DAGOR";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
+        // camo: EU Desert (its own Sand (Apex), copied)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_sand_CO.paa",
+            "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_sand_CO.paa",
+            "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_sand_CO.paa",
+            "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_sand_CO.paa"
+        };
     };
-    class ghost_EUDF_des_Aegis_B_D_Pickup_AT_RF: Aegis_B_D_Pickup_AT_RF {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(Aegis_B_D_Pickup_AT_RF): B_G_Offroad_01_AT_F {
+        scope = 1;                      // no pickups in the EU (user, 2026-09-19)
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "Pickup (AT)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_Pickup_Comms_rf: Aegis_B_D_Pickup_Comms_rf {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(Aegis_B_D_Pickup_Comms_rf): B_Pickup_Comms_rf {
+        scope = 1;                      // no Rams in the EU (user, 2026-09-19)
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "Ram 1500 (Comms)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_Pickup_RF: Aegis_B_D_Pickup_RF {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(Aegis_B_D_Pickup_RF): B_Pickup_RF {
+        scope = 1;                      // no Rams in the EU (user, 2026-09-19)
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "Ram 1500";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_Pickup_aat_rf: Aegis_B_D_Pickup_aat_rf {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(Aegis_B_D_Pickup_aat_rf): B_Pickup_aat_rf {
+        scope = 1;                      // no Rams in the EU (user, 2026-09-19)
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "Ram 1500 (Anti-Air)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_Pickup_mmg_rf: Aegis_B_D_Pickup_mmg_rf {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(Aegis_B_D_Pickup_mmg_rf): B_Pickup_mmg_rf {
+        scope = 1;                      // no Rams in the EU (user, 2026-09-19)
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "Ram 1500 (MMG)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_RadioOperator_F: Aegis_B_D_RadioOperator_F {
+    class GVAR(Aegis_B_D_RadioOperator_F): B_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Radio Operator";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MX_Holo_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MX_Holo_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MX_Holo_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MX_Holo_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_Aegis_B_D_Recon_CQ_F: Aegis_B_D_Recon_CQ_F {
+    class GVAR(Aegis_B_D_Recon_CQ_F): B_recon_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Scout (Shotgun)";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_Aegis_B_D_Recon_GL_F: Aegis_B_D_Recon_GL_F {
+    class GVAR(Aegis_B_D_Recon_GL_F): B_recon_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Grenadier";
         side = 1;
-        faction = "ghost_EUDF_des";
-        backpack = "ghost_EUDF_des_C_IDAP_UAV_06_antimine_backpack_F";
+        faction = QUOTE(ADDON);
+        backpack = QGVAR(C_IDAP_UAV_06_antimine_backpack_F);
+        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_Aegis_B_D_Recon_MG_F: Aegis_B_D_Recon_MG_F {
+    class GVAR(Aegis_B_D_Recon_MG_F): B_recon_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Gunner";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_Aegis_B_D_Recon_Sharpshooter: Aegis_B_D_Recon_Sharpshooter {
+    class GVAR(Aegis_B_D_Recon_Sharpshooter): B_Recon_Sharpshooter_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Sharpshooter";
         side = 1;
-        faction = "ghost_EUDF_des";
-        magazines[] = {"FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_Aegis_B_D_Sharpshooter_F: Aegis_B_D_Sharpshooter_F {
+    class GVAR(Aegis_B_D_Sharpshooter_F): B_Sharpshooter_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Sharpshooter";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_srifle_DMR_03_tan_AMS_LP_F_snds","hgun_P07_F","Throw","Put","Rangefinder"};
-        respawnWeapons[] = {"ghost_EUDF_des_srifle_DMR_03_tan_AMS_LP_F_snds","hgun_P07_F","Throw","Put","Rangefinder"};
-        magazines[] = {"FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(srifle_DMR_03_tan_AMS_LP_F_snds),"hgun_P07_F","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {QGVAR(srifle_DMR_03_tan_AMS_LP_F_snds),"hgun_P07_F","Throw","Put","Rangefinder"};
+        magazines[] = {"FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_Aegis_B_D_Soldier_CQ_F: Aegis_B_D_Soldier_CQ_F {
+    class GVAR(Aegis_B_D_Soldier_CQ_F): B_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Rifleman (Shotgun)";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_Aegis_B_D_Soldier_MG_F: Aegis_B_D_Soldier_MG_F {
+    class GVAR(Aegis_B_D_Soldier_MG_F): B_Patrol_Soldier_MG_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Machine Gunner";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_LMG_Mk200_plain_RCO_LP_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_LMG_Mk200_plain_RCO_LP_F_snds","hgun_P07_F","Throw","Put"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(LMG_Mk200_plain_RCO_LP_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(LMG_Mk200_plain_RCO_LP_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_200Rnd_65x39_cased_Box_t3","FA_b_200Rnd_65x39_cased_Box_t3","FA_b_200Rnd_65x39_cased_Box_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+        respawnMagazines[] = {"FA_b_200Rnd_65x39_cased_Box_t3","FA_b_200Rnd_65x39_cased_Box_t3","FA_b_200Rnd_65x39_cased_Box_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
     };
-    class ghost_EUDF_des_Aegis_B_D_Static_Designator_01_F: Aegis_B_D_Static_Designator_01_F {
+    class GVAR(Aegis_B_D_Static_Designator_01_F): B_Static_Designator_01_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Remote Designator";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_TwinMortar_RF: Aegis_B_D_TwinMortar_RF {
+    class GVAR(Aegis_B_D_TwinMortar_RF): B_TwinMortar_RF {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "AMOS Container";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_UAV_01_F: Aegis_B_D_UAV_01_F {
+    class GVAR(Aegis_B_D_UAV_01_F): B_UAV_01_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "AR-2 Darter";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_UAV_02_lxWS: Aegis_B_D_UAV_02_lxWS {
+    class GVAR(Aegis_B_D_UAV_02_lxWS): B_UAV_02_dynamicLoadout_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "AP-5 Bustard";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_UAV_05_F: Aegis_B_D_UAV_05_F {
+    class GVAR(Aegis_B_D_UAV_05_F): B_UAV_05_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "XQ-47B";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_UGV_02_Demining_F: Aegis_B_D_UGV_02_Demining_F {
+    class GVAR(Aegis_B_D_UGV_02_Demining_F): B_UGV_02_Demining_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "ED-1D Pelter";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Soldier_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Soldier_lxWS);
     };
-    class ghost_EUDF_des_Aegis_B_D_soldier_UGV_02_Demining_F: Aegis_B_D_soldier_UGV_02_Demining_F {
+    class GVAR(Aegis_B_D_soldier_UGV_02_Demining_F): B_soldier_UGV_02_Demining_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "UGV Operator (ED-1D)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_ACO_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_ACO_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_Aegis_B_D_support_CMort_RF: Aegis_B_D_support_CMort_RF {
+    class GVAR(Aegis_B_D_support_CMort_RF): B_support_CMort_RF {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Gunner (Light Mortar)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_ACO_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_ACO_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_Atlas_B_A_Plane_Fighter_05_ard_F: Atlas_B_A_Plane_Fighter_05_ard_F {
+    class GVAR(Atlas_B_A_Plane_Fighter_05_ard_F): ghost_vehicle_B_A_Plane_Fighter_05_ard_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "F-35F Peregrine";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Pilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Pilot_lxWS);
     };
-    class ghost_EUDF_des_Atlas_B_D_JSOC_F: Atlas_B_D_JSOC_F {
+    class GVAR(Atlas_B_D_JSOC_F): ghost_uniform_B_JSOC_StealthUniform_soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Operator";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
         editorSubcategory = "EdSubcat_Personnel";
         vehicleClass = "Men";
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag_v2","16Rnd_9x21_Mag_v2","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_blue","Chemlight_blue"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag_v2","16Rnd_9x21_Mag_v2","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_blue","Chemlight_blue"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_blue","Chemlight_blue"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_blue","Chemlight_blue"};
     };
-    class ghost_EUDF_des_Atlas_B_D_JSOC_JTAC_F: Atlas_B_D_JSOC_JTAC_F {
+    class GVAR(Atlas_B_D_JSOC_JTAC_F): B_recon_JTAC_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "JTAC";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
         editorSubcategory = "EdSubcat_Personnel";
         vehicleClass = "Men";
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag_v2","16Rnd_9x21_Mag_v2","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_blue","Chemlight_blue"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag_v2","16Rnd_9x21_Mag_v2","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_blue","Chemlight_blue"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_blue","Chemlight_blue"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_blue","Chemlight_blue"};
     };
-    class ghost_EUDF_des_Atlas_B_D_JSOC_LAT_F: Atlas_B_D_JSOC_LAT_F {
+    class GVAR(Atlas_B_D_JSOC_LAT_F): B_soldier_LAT_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Operator (AT)";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
         editorSubcategory = "EdSubcat_Personnel";
         vehicleClass = "Men";
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag_v2","16Rnd_9x21_Mag_v2","MRAWS_HEAT_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_blue","Chemlight_blue"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag_v2","16Rnd_9x21_Mag_v2","MRAWS_HEAT_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_blue","Chemlight_blue"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","CBA_FakeLauncherMagazine","CBA_FakeLauncherMagazine","MRAWS_HEAT_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_blue","Chemlight_blue"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","CBA_FakeLauncherMagazine","CBA_FakeLauncherMagazine","MRAWS_HEAT_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_blue","Chemlight_blue"};
     };
-    class ghost_EUDF_des_Atlas_B_D_JSOC_UAV_F: Atlas_B_D_JSOC_UAV_F {
+    class GVAR(Atlas_B_D_JSOC_UAV_F): B_soldier_UAV_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "UAV Specialist";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
         editorSubcategory = "EdSubcat_Personnel";
         vehicleClass = "Men";
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag_v2","16Rnd_9x21_Mag_v2","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_blue","Chemlight_blue"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag_v2","16Rnd_9x21_Mag_v2","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_blue","Chemlight_blue"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_blue","Chemlight_blue"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_blue","Chemlight_blue"};
     };
-    class ghost_EUDF_des_Atlas_B_D_JSOC_UAV_lxWS: Atlas_B_D_JSOC_UAV_lxWS {
+    class GVAR(Atlas_B_D_JSOC_UAV_lxWS): B_soldier_UAV_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "UAV Specialist (AP-5)";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
         editorSubcategory = "EdSubcat_Personnel";
         vehicleClass = "Men";
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag_v2","16Rnd_9x21_Mag_v2","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_blue","Chemlight_blue"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag_v2","16Rnd_9x21_Mag_v2","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_blue","Chemlight_blue"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_blue","Chemlight_blue"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_blue","Chemlight_blue"};
     };
-    class ghost_EUDF_des_Atlas_B_G_LT_01_AA_ard_F: Atlas_B_G_LT_01_AA_ard_F {
+    class GVAR(Atlas_B_G_LT_01_AA_ard_F): I_LT_01_AA_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "AWC 302 Nyx (AA)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Atlas), copied)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\LT_01\LT_01_Main_Sand_CO.paa),
+            QPATHTOF(data\LT_01\LT_01_AT_Sand_CO.paa),
+            "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
+            "\A3\Armor_F\Data\cage_Sand_CO.paa"
+        };
     };
-    class ghost_EUDF_des_Atlas_B_G_LT_01_AT_ard_F: Atlas_B_G_LT_01_AT_ard_F {
+    class GVAR(Atlas_B_G_LT_01_AT_ard_F): I_LT_01_AT_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "AWC 301 Nyx (AT)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Atlas), copied)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\LT_01\LT_01_Main_Sand_CO.paa),
+            QPATHTOF(data\LT_01\LT_01_AT_Sand_CO.paa),
+            "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
+            "\A3\Armor_F\Data\cage_sand_CO.paa"
+        };
     };
-    class ghost_EUDF_des_Atlas_B_G_LT_01_cannon_ard_F: Atlas_B_G_LT_01_cannon_ard_F {
+    class GVAR(Atlas_B_G_LT_01_cannon_ard_F): I_LT_01_cannon_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "AWC 304 Nyx (Autocannon)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Atlas), copied)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\LT_01\LT_01_Main_Sand_CO.paa),
+            QPATHTOF(data\LT_01\LT_01_Cannon_Sand_CO.paa),
+            "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
+            "\A3\Armor_F\Data\cage_Sand_CO.paa"
+        };
     };
-    class ghost_EUDF_des_Atlas_B_G_LT_01_scout_ard_F: Atlas_B_G_LT_01_scout_ard_F {
+    class GVAR(Atlas_B_G_LT_01_scout_ard_F): I_LT_01_scout_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "AWC 303 Nyx (Recon)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Atlas), copied)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\LT_01\LT_01_Main_Sand_CO.paa),
+            QPATHTOF(data\LT_01\LT_01_Radar_Sand_CO.paa),
+            "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
+            "\A3\Armor_F\Data\cage_sand_CO.paa"
+        };
     };
-    class ghost_EUDF_des_Atlas_B_G_MBT_03_cannon_F: Atlas_B_G_MBT_03_cannon_F {
+    class GVAR(Atlas_B_G_MBT_03_cannon_F): I_MBT_03_cannon_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Luchs 3A5";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Atlas), copied)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\MBT_03\MBT_03_ext01_CO.paa),
+            QPATHTOF(data\MBT_03\MBT_03_ext02_CO.paa),
+            QPATHTOF(data\MBT_03\MBT_03_RCWS_CO.paa),
+            "\A3\Armor_f\Data\camonet_CSAT_Stripe_Desert_CO.paa"
+        };
     };
-    class ghost_EUDF_des_B_A_Plane_Transport_01_infantry_tna_F: B_A_Plane_Transport_01_infantry_tna_F {
+    class GVAR(B_A_Plane_Transport_01_infantry_tna_F): ghost_vehicle_B_A_Plane_Transport_01_infantry_tna_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "C-192 Samson (Infantry Transport)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Pilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Pilot_lxWS);
     };
-    class ghost_EUDF_des_B_A_Plane_Transport_01_vehicle_tna_F: B_A_Plane_Transport_01_vehicle_tna_F {
+    class GVAR(B_A_Plane_Transport_01_vehicle_tna_F): ghost_vehicle_B_A_Plane_Transport_01_vehicle_tna_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "C-192 Samson (Vehicle Transport)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Pilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Pilot_lxWS);
     };
-    class ghost_EUDF_des_B_D_AFV_Wheeled_01_cannon_F: B_D_AFV_Wheeled_01_cannon_F {
+    class GVAR(B_D_AFV_Wheeled_01_cannon_F): B_AFV_Wheeled_01_cannon_F {
         scope = 2;
         scopeCurator = 2;
+        editorSubcategory = "EdSubcat_Tanks";   // a tank destroyer, not an APC (user, 2026-09-20, fourth time)
         author = QAUTHOR;
         displayName = "Rooikat 120";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Tanks), copied)
+        textureList[] = {"Sand", 1};
+        hiddenSelectionsTextures[] = {
+            "\a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_EXT1_CO.paa",
+            "\a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_EXT2_CO.paa",
+            "\a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_CO.paa",
+            "\a3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
+            "\A3\Armor_F_Tank\AFV_Wheeled_01\Data\afv_wheeled_01_EXT3_sand_CO.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_AFV_Wheeled_01_up_cannon_F: B_D_AFV_Wheeled_01_up_cannon_F {
+    class GVAR(B_D_AFV_Wheeled_01_up_cannon_F): B_AFV_Wheeled_01_up_cannon_F {
         scope = 2;
         scopeCurator = 2;
+        editorSubcategory = "EdSubcat_Tanks";   // a tank destroyer, not an APC (user, 2026-09-20, fourth time)
         author = QAUTHOR;
         displayName = "Rooikat 120 UP";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Tanks), copied)
+        textureList[] = {"Sand", 1};
+        hiddenSelectionsTextures[] = {
+            "\a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_EXT1_CO.paa",
+            "\a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_EXT2_CO.paa",
+            "\a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_CO.paa",
+            "\A3\Armor_F_Tank\AFV_Wheeled_01\Data\afv_wheeled_01_EXT3_sand_CO.paa",
+            "\a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_commander_tow_sand_CO.paa",
+            "\a3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
+            "\A3\Armor_F_Tank\AFV_Wheeled_01\Data\afv_wheeled_01_EXT3_sand_CO.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_APC_Tracked_01_CRV_lxWS: B_D_APC_Tracked_01_CRV_lxWS {
+    class GVAR(B_D_APC_Tracked_01_CRV_lxWS): B_D_APC_Tracked_01_CRV_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Nemmera";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Base game), copied)
+        textureList[] = {"Sand", 1};
+        hiddenSelectionsTextures[] = {
+            "\A3\Armor_F_Beta\APC_Tracked_01\Data\apc_tracked_01_body_crv_co.paa",
+            "\A3\Armor_F_Beta\APC_Tracked_01\Data\mbt_01_body_co.paa",
+            "\a3\data_f\vehicles\turret_co.paa",
+            "\A3\Armor_F_Beta\APC_Tracked_01\Data\apc_tracked_01_crv_co.paa",
+            "\a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_APC_Tracked_01_aa_lxWS: B_D_APC_Tracked_01_aa_lxWS {
+    class GVAR(B_D_APC_Tracked_01_aa_lxWS): B_D_APC_Tracked_01_aa_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Bardelas";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Base game), copied)
+        textureList[] = {"Sand", 1};
+        hiddenSelectionsTextures[] = {
+            "\A3\Armor_F_Beta\APC_Tracked_01\Data\apc_tracked_01_aa_body_co.paa",
+            "\A3\Armor_F_Beta\APC_Tracked_01\Data\mbt_01_body_co.paa",
+            "\A3\Armor_F_Beta\APC_Tracked_01\Data\apc_tracked_01_aa_tower_co.paa",
+            "\a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_APC_Tracked_01_rcws_lxWS: B_D_APC_Tracked_01_rcws_lxWS {
+    class GVAR(B_D_APC_Tracked_01_rcws_lxWS): B_D_APC_Tracked_01_rcws_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Namer";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Base game), copied)
+        textureList[] = {"Sand", 1};
+        hiddenSelectionsTextures[] = {
+            "\A3\Armor_F_Beta\APC_Tracked_01\Data\APC_Tracked_01_body_CO.paa",
+            "\A3\Armor_F_Beta\APC_Tracked_01\Data\mbt_01_body_co.paa",
+            "\a3\data_f\vehicles\turret_co.paa",
+            "\a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_Fighter_Pilot_F: B_D_Fighter_Pilot_F {
+    class GVAR(B_D_Fighter_Pilot_F): B_D_Fighter_Pilot_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Fighter Pilot";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+        respawnMagazines[] = {"FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
     };
-    class ghost_EUDF_des_B_D_HeliPilot_lxWS: B_D_HeliPilot_lxWS {
+    class GVAR(B_D_HeliPilot_lxWS): B_D_HeliPilot_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Helicopter Pilot";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_SMG_01_black_Holo_F_snds","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_SMG_01_black_Holo_F_snds","Throw","Put"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(SMG_01_black_Holo_F_snds),"Throw","Put"};
+        respawnWeapons[] = {QGVAR(SMG_01_black_Holo_F_snds),"Throw","Put"};
         magazines[] = {"FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
         respawnMagazines[] = {"FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
     };
-    class ghost_EUDF_des_B_D_Heli_Attack_01_dynamicLoadout_lxWS: B_D_Heli_Attack_01_dynamicLoadout_lxWS {
-        scope = 2;
+    class GVAR(B_D_Heli_Attack_01_dynamicLoadout_lxWS): B_D_Heli_Attack_01_dynamicLoadout_lxWS {
+        scope = 2;                      // the arid's own sand version, shown in place of the grey twin (user, 2026-09-26)
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Tiger HAD";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
     };
-    class ghost_EUDF_des_B_D_Heli_Light_01_dynamicLoadout_lxWS: B_D_Heli_Light_01_dynamicLoadout_lxWS {
+    class GVAR(B_D_Heli_Light_01_dynamicLoadout_lxWS): B_D_Heli_Light_01_dynamicLoadout_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "AH-6 Little Bird";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
     };
-    class ghost_EUDF_des_B_D_Heli_Light_01_lxWS: B_D_Heli_Light_01_lxWS {
+    class GVAR(B_D_Heli_Light_01_lxWS): B_D_Heli_Light_01_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "MH-6 Little Bird";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
     };
-    class ghost_EUDF_des_B_D_Heli_Transport_01_lxWS: B_D_Heli_Transport_01_lxWS {
-        scope = 2;
+    class GVAR(B_D_Heli_Transport_01_lxWS): B_D_Heli_Transport_01_lxWS {
+        scope = 2;                      // the arid's own sand version, shown in place of the grey twin (user, 2026-09-26)
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "NH90 TTH";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
     };
-    class ghost_EUDF_des_B_D_MBT_01_TUSK_lxWS: B_D_MBT_01_TUSK_lxWS {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(B_D_MBT_01_TUSK_lxWS): B_D_MBT_01_TUSK_lxWS {
+        scope = 1;                      // not in the EU (user, 2026-09-19: no Rooikats, Chinooks, M3 Knights, Merkavas)
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "Merkava Mk IV LIC";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
     };
-    class ghost_EUDF_des_B_D_MBT_01_arty_lxWS: B_D_MBT_01_arty_lxWS {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(B_D_MBT_01_arty_lxWS): B_D_MBT_01_arty_lxWS {
+        scope = 1;                      // not in the EU (user, 2026-09-19: no Rooikats, Chinooks, M3 Knights, Merkavas)
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "Sholef";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
     };
-    class ghost_EUDF_des_B_D_MBT_01_cannon_lxWS: B_D_MBT_01_cannon_lxWS {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(B_D_MBT_01_cannon_lxWS): B_D_MBT_01_cannon_lxWS {
+        scope = 1;                      // not in the EU (user, 2026-09-19: no Rooikats, Chinooks, M3 Knights, Merkavas)
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "Merkava Mk IV M";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
     };
-    class ghost_EUDF_des_B_D_MBT_01_mlrs_lxWS: B_D_MBT_01_mlrs_lxWS {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(B_D_MBT_01_mlrs_lxWS): B_D_MBT_01_mlrs_lxWS {
+        scope = 1;                      // not in the EU (user, 2026-09-19: no Rooikats, Chinooks, M3 Knights, Merkavas)
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "Seara";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
     };
-    class ghost_EUDF_des_B_D_MRAP_01_gmg_lxWS: B_D_MRAP_01_gmg_lxWS {
+    class GVAR(B_D_MRAP_01_gmg_lxWS): B_D_MRAP_01_gmg_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "M-ATV (GMG)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Base game), copied)
+        textureList[] = {"Blufor", 1};
+        hiddenSelectionsTextures[] = {
+            "\A3\soft_f\MRAP_01\data\MRAP_01_base_CO.paa",
+            "\a3\soft_f\mrap_01\data\mrap_01_adds_co.paa",
+            "\a3\data_f\vehicles\turret_co.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_MRAP_01_hmg_lxWS: B_D_MRAP_01_hmg_lxWS {
+    class GVAR(B_D_MRAP_01_hmg_lxWS): B_D_MRAP_01_hmg_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "M-ATV (HMG)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Base game), copied)
+        textureList[] = {"Blufor", 1};
+        hiddenSelectionsTextures[] = {
+            "\A3\soft_f\MRAP_01\data\MRAP_01_base_CO.paa",
+            "\a3\soft_f\mrap_01\data\mrap_01_adds_co.paa",
+            "\a3\data_f\vehicles\turret_co.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_MRAP_01_lxWS: B_D_MRAP_01_lxWS {
+    class GVAR(B_D_MRAP_01_lxWS): B_D_MRAP_01_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "M-ATV";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Base game), copied)
+        textureList[] = {"Blufor", 1};
+        hiddenSelectionsTextures[] = {
+            "\A3\soft_f\MRAP_01\data\MRAP_01_base_CO.paa",
+            "\a3\soft_f\mrap_01\data\mrap_01_adds_co.paa",
+            "\a3\data_f\vehicles\turret_co.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_Mortar_01_lxWS: B_D_Mortar_01_lxWS {
+    class GVAR(B_D_Mortar_01_lxWS): B_D_Mortar_01_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mk6 Mortar";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
     };
-    class ghost_EUDF_des_B_D_Pilot_lxWS: B_D_Pilot_lxWS {
+    class GVAR(B_D_Pilot_lxWS): B_D_Pilot_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Pilot";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_SMG_01_black_Holo_F_snds","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_SMG_01_black_Holo_F_snds","Throw","Put"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(SMG_01_black_Holo_F_snds),"Throw","Put"};
+        respawnWeapons[] = {QGVAR(SMG_01_black_Holo_F_snds),"Throw","Put"};
         magazines[] = {"FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
         respawnMagazines[] = {"FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
     };
-    class ghost_EUDF_des_B_D_Plane_CAS_01_dynamicLoadout_lxWS: B_D_Plane_CAS_01_dynamicLoadout_lxWS {
+    class GVAR(B_D_Plane_CAS_01_dynamicLoadout_lxWS): B_D_Plane_CAS_01_dynamicLoadout_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "A-10D Thunderbolt II";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Fighter_Pilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Fighter_Pilot_F);
     };
-    class ghost_EUDF_des_B_D_Plane_Fighter_01_F: B_D_Plane_Fighter_01_F {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(B_D_Plane_Fighter_01_F): B_Plane_Fighter_01_F {
+        scope = 1;                      // no F/A-181 for the EU (user, 2026-09-19)
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "F/A-181 Black Wasp II";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Pilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Pilot_lxWS);
     };
-    class ghost_EUDF_des_B_D_Plane_Fighter_01_Stealth_F: B_D_Plane_Fighter_01_Stealth_F {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(B_D_Plane_Fighter_01_Stealth_F): B_Plane_Fighter_01_Stealth_F {
+        scope = 1;                      // no F/A-181 for the EU (user, 2026-09-19)
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "F/A-181 Black Wasp II (Stealth)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Pilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Pilot_lxWS);
     };
-    class ghost_EUDF_des_B_D_Quadbike_01_lxWS: B_D_Quadbike_01_lxWS {
+    class GVAR(B_D_Quadbike_01_lxWS): B_D_Quadbike_01_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Quad Bike";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Base game), copied)
+        textureList[] = {"Blufor", 1};
+        hiddenSelectionsTextures[] = {
+            "\A3\Soft_F\Quadbike_01\Data\Quadbike_01_co.paa",
+            "\A3\Soft_F\Quadbike_01\Data\Quadbike_01_wheel_co.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_Soldier_A_lxWS: B_D_Soldier_A_lxWS {
+    class GVAR(B_D_Soldier_A_lxWS): B_D_Soldier_A_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Ammo Bearer";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MX_ACO_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MX_ACO_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MX_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MX_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_Soldier_GL_lxWS: B_D_Soldier_GL_lxWS {
+    class GVAR(B_D_Soldier_GL_lxWS): B_D_Soldier_GL_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Grenadier";
         side = 1;
-        faction = "ghost_EUDF_des";
-        backpack = "ghost_EUDF_des_C_IDAP_UAV_06_antimine_backpack_F";
-        weapons[] = {"ghost_EUDF_des_arifle_MX_GL_ACO_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MX_GL_ACO_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","3Rnd_HE_Grenade_shell","3Rnd_HE_Grenade_shell","HandGrenade","HandGrenade","SmokeShell","SmokeShell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","3Rnd_HE_Grenade_shell","3Rnd_HE_Grenade_shell","HandGrenade","HandGrenade","SmokeShell","SmokeShell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+        faction = QUOTE(ADDON);
+        backpack = QGVAR(C_IDAP_UAV_06_antimine_backpack_F);
+        weapons[] = {QGVAR(arifle_MX_GL_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MX_GL_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","3Rnd_HE_Grenade_shell","3Rnd_HE_Grenade_shell","HandGrenade","HandGrenade","SmokeShell","SmokeShell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","3Rnd_HE_Grenade_shell","3Rnd_HE_Grenade_shell","HandGrenade","HandGrenade","SmokeShell","SmokeShell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
     };
-    class ghost_EUDF_des_B_D_Soldier_SL_lxWS: B_D_Soldier_SL_lxWS {
+    class GVAR(B_D_Soldier_SL_lxWS): B_D_Soldier_SL_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Squad Leader";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MX_Hamr_pointer_F_snds","hgun_P07_F","Throw","Put","Binocular"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MX_Hamr_pointer_F_snds","hgun_P07_F","Throw","Put","Binocular"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MX_Hamr_pointer_F_snds),"hgun_P07_F","Throw","Put","Binocular"};
+        respawnWeapons[] = {QGVAR(arifle_MX_Hamr_pointer_F_snds),"hgun_P07_F","Throw","Put","Binocular"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_T_Red_t3","FA_b_30Rnd_65_EPR_T_Red_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_T_Red_t3","FA_b_30Rnd_65_EPR_T_Red_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
     };
-    class ghost_EUDF_des_B_D_Soldier_TL_lxWS: B_D_Soldier_TL_lxWS {
+    class GVAR(B_D_Soldier_TL_lxWS): B_D_Soldier_TL_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Team Leader";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MX_GL_Hamr_pointer_F_snds","hgun_P07_F","Throw","Put","Binocular"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MX_GL_Hamr_pointer_F_snds","hgun_P07_F","Throw","Put","Binocular"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","3Rnd_HE_Grenade_shell","3Rnd_HE_Grenade_shell","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","30Rnd_65x39_caseless_mag_Tracer","30Rnd_65x39_caseless_mag_Tracer","16Rnd_9x21_Mag","16Rnd_9x21_Mag","3Rnd_HE_Grenade_shell","3Rnd_HE_Grenade_shell","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MX_GL_Hamr_pointer_F_snds),"hgun_P07_F","Throw","Put","Binocular"};
+        respawnWeapons[] = {QGVAR(arifle_MX_GL_Hamr_pointer_F_snds),"hgun_P07_F","Throw","Put","Binocular"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_T_Red_t3","FA_b_30Rnd_65_EPR_T_Red_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","3Rnd_HE_Grenade_shell","3Rnd_HE_Grenade_shell","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_T_Red_t3","FA_b_30Rnd_65_EPR_T_Red_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","3Rnd_HE_Grenade_shell","3Rnd_HE_Grenade_shell","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell"};
     };
-    class ghost_EUDF_des_B_D_Soldier_lite_lxWS: B_D_Soldier_lite_lxWS {
+    class GVAR(B_D_Soldier_lite_lxWS): B_D_Soldier_lite_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Rifleman (Light)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_F_snds","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_F_snds","Throw","Put"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_F_snds),"Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_F_snds),"Throw","Put"};
         magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","HandGrenade","SmokeShell"};
         respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","HandGrenade","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_Soldier_lxWS: B_D_Soldier_lxWS {
+    class GVAR(B_D_Soldier_lxWS): B_D_Soldier_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Rifleman";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MX_Hamr_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MX_Hamr_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MX_Hamr_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MX_Hamr_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_Soldier_unarmed_lxWS: B_D_Soldier_unarmed_lxWS {
+    class GVAR(B_D_Soldier_unarmed_lxWS): B_D_Soldier_unarmed_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Rifleman (Unarmed)";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
     };
-    class ghost_EUDF_des_B_D_Survivor_lxWS: B_D_Survivor_lxWS {
+    class GVAR(B_D_Survivor_lxWS): B_D_Survivor_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Survivor";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
     };
-    class ghost_EUDF_des_B_D_Truck_01_Repair_lxWS: B_D_Truck_01_Repair_lxWS {
+    class GVAR(B_D_Truck_01_Repair_lxWS): B_D_Truck_01_Repair_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "HEMTT Repair";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Base game), copied)
+        textureList[] = {"Blufor", 1};
+        hiddenSelectionsTextures[] = {
+            "\a3\soft_f_Beta\truck_01\data\truck_01_ext_01_co.paa",
+            "\a3\soft_f_Beta\truck_01\data\truck_01_ext_02_co.paa",
+            "\a3\soft_f_gamma\truck_01\data\truck_01_ammo_co.paa",
+            "\a3\structures_f\data\metal\containers\containers_02_set_co.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_Truck_01_ammo_lxWS: B_D_Truck_01_ammo_lxWS {
+    class GVAR(B_D_Truck_01_ammo_lxWS): B_D_Truck_01_ammo_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "HEMTT Ammo";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Base game), copied)
+        textureList[] = {"Blufor", 1};
+        hiddenSelectionsTextures[] = {
+            "\a3\soft_f_Beta\truck_01\data\truck_01_ext_01_co.paa",
+            "\a3\soft_f_Beta\truck_01\data\truck_01_ext_02_co.paa",
+            "\a3\soft_f_gamma\truck_01\data\truck_01_ammo_co.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_Truck_01_box_lxWS: B_D_Truck_01_box_lxWS {
+    class GVAR(B_D_Truck_01_box_lxWS): B_D_Truck_01_box_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "HEMTT Container";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Base game), copied)
+        textureList[] = {"Blufor", 1};
+        hiddenSelectionsTextures[] = {
+            "\a3\soft_f_Beta\truck_01\data\truck_01_ext_01_co.paa",
+            "\a3\soft_f_Beta\truck_01\data\truck_01_ext_02_co.paa",
+            "\a3\soft_f_gamma\truck_01\data\truck_01_ammo_co.paa",
+            "\a3\structures_f\data\metal\containers\containers_02_set_co.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_Truck_01_cargo_lxWS: B_D_Truck_01_cargo_lxWS {
+    class GVAR(B_D_Truck_01_cargo_lxWS): B_D_Truck_01_cargo_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "HEMTT Cargo";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Base game), copied)
+        textureList[] = {"Blufor", 1};
+        hiddenSelectionsTextures[] = {
+            "\a3\soft_f_beta\truck_01\data\truck_01_ext_01_co.paa",
+            "\a3\soft_f_beta\truck_01\data\truck_01_ext_02_co.paa",
+            "\a3\Soft_F_Enoch\Truck_01\Data\truck_01_ammo_co.paa",
+            "\a3\Soft_F_Enoch\Truck_01\Data\Truck_01_cargo_CO.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_Truck_01_covered_lxWS: B_D_Truck_01_covered_lxWS {
+    class GVAR(B_D_Truck_01_covered_lxWS): B_D_Truck_01_covered_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "HEMTT Transport (covered)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Base game), copied)
+        textureList[] = {"Blufor", 1};
+        hiddenSelectionsTextures[] = {
+            "\a3\soft_f_Beta\truck_01\data\truck_01_ext_01_co.paa",
+            "\a3\soft_f_Beta\truck_01\data\truck_01_ext_02_co.paa",
+            "\a3\soft_f_Beta\truck_01\data\truck_01_cargo_co.paa",
+            "\a3\soft_f_Beta\truck_01\data\truck_01_cover_co.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_Truck_01_flatbed_lxWS: B_D_Truck_01_flatbed_lxWS {
+    class GVAR(B_D_Truck_01_flatbed_lxWS): B_D_Truck_01_flatbed_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "HEMTT Flatbed";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Base game), copied)
+        textureList[] = {"Blufor", 1};
+        hiddenSelectionsTextures[] = {
+            "\a3\soft_f_beta\truck_01\data\truck_01_ext_01_co.paa",
+            "\a3\soft_f_beta\truck_01\data\truck_01_ext_02_co.paa",
+            "\a3\Soft_F_Enoch\Truck_01\Data\truck_01_ammo_co.paa",
+            "\a3\Soft_F_Enoch\Truck_01\Data\Truck_01_cargo_CO.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_Truck_01_fuel_lxWS: B_D_Truck_01_fuel_lxWS {
+    class GVAR(B_D_Truck_01_fuel_lxWS): B_D_Truck_01_fuel_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "HEMTT Fuel";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Base game), copied)
+        textureList[] = {"Blufor", 1};
+        hiddenSelectionsTextures[] = {
+            "\a3\soft_f_Beta\truck_01\data\truck_01_ext_01_co.paa",
+            "\a3\soft_f_Beta\truck_01\data\truck_01_ext_02_co.paa",
+            "\a3\soft_f_gamma\truck_01\data\truck_01_fuel_co.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_Truck_01_medical_lxWS: B_D_Truck_01_medical_lxWS {
+    class GVAR(B_D_Truck_01_medical_lxWS): B_D_Truck_01_medical_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "HEMTT Medical";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Base game), copied)
+        textureList[] = {"Blufor", 1};
+        hiddenSelectionsTextures[] = {
+            "\a3\soft_f_Beta\truck_01\data\truck_01_ext_01_co.paa",
+            "\a3\soft_f_Beta\truck_01\data\truck_01_ext_02_co.paa",
+            "\a3\soft_f_beta\truck_01\data\truck_01_cargo_co.paa",
+            "\a3\soft_f_beta\truck_01\data\truck_01_cover_co.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_Truck_01_mover_lxWS: B_D_Truck_01_mover_lxWS {
+    class GVAR(B_D_Truck_01_mover_lxWS): B_D_Truck_01_mover_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "HEMTT";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Base game), copied)
+        textureList[] = {"Blufor", 1};
+        hiddenSelectionsTextures[] = {
+            "\a3\soft_f_Beta\truck_01\data\truck_01_ext_01_co.paa",
+            "\a3\soft_f_Beta\truck_01\data\truck_01_ext_02_co.paa",
+            "\A3\Soft_F_Gamma\Truck_01\Data\truck_01_mprimer_CO.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_Truck_01_transport_lxWS: B_D_Truck_01_transport_lxWS {
+    class GVAR(B_D_Truck_01_transport_lxWS): B_D_Truck_01_transport_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "HEMTT Transport";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Sand (Base game), copied)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            "\a3\soft_f_beta\truck_01\data\truck_01_ext_01_co.paa",
+            "\a3\soft_f_beta\truck_01\data\truck_01_ext_02_co.paa",
+            "\a3\soft_f_beta\truck_01\data\truck_01_cargo_co.paa"
+        };
     };
-    class ghost_EUDF_des_B_D_VTOL_01_armed_F: B_D_VTOL_01_armed_F {
+    class GVAR(B_D_VTOL_01_armed_F): B_T_VTOL_01_armed_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "AV-44X Blackfish";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Pilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Pilot_lxWS);
     };
-    class ghost_EUDF_des_B_D_VTOL_01_infantry_F: B_D_VTOL_01_infantry_F {
+    class GVAR(B_D_VTOL_01_infantry_F): B_T_VTOL_01_infantry_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "V-44 X Blackfish (Infantry Transport)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Pilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Pilot_lxWS);
     };
-    class ghost_EUDF_des_B_D_VTOL_01_vehicle_F: B_D_VTOL_01_vehicle_F {
+    class GVAR(B_D_VTOL_01_vehicle_F): B_T_VTOL_01_vehicle_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "V-44 X Blackfish (Vehicle Transport)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Pilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Pilot_lxWS);
     };
-    class ghost_EUDF_des_B_D_crew_lxWS: B_D_crew_lxWS {
+    class GVAR(B_D_crew_lxWS): B_D_crew_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Crewman";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_Holo_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_Holo_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_Holo_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_Holo_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_engineer_lxWS: B_D_engineer_lxWS {
+    class GVAR(B_D_engineer_lxWS): B_D_engineer_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Engineer";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_Holo_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_Holo_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_Holo_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_Holo_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
     };
-    class ghost_EUDF_des_B_D_medic_lxWS: B_D_medic_lxWS {
+    class GVAR(B_D_medic_lxWS): B_D_medic_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Combat Life Saver";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MX_Holo_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MX_Holo_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MX_Holo_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MX_Holo_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange"};
     };
-    class ghost_EUDF_des_B_D_officer_lxWS: B_D_officer_lxWS {
+    class GVAR(B_D_officer_lxWS): B_D_officer_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Officer";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_F_snds","hgun_Pistol_heavy_01_MRD_F","Throw","Put","Binocular"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_F_snds","hgun_Pistol_heavy_01_MRD_F","Throw","Put","Binocular"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_F_snds),"hgun_Pistol_heavy_01_MRD_F","Throw","Put","Binocular"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_F_snds),"hgun_Pistol_heavy_01_MRD_F","Throw","Put","Binocular"};
         magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
         respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_11Rnd_45ACP_Mk421_t3","FA_b_11Rnd_45ACP_Mk421_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
     };
-    class ghost_EUDF_des_B_D_recon_AR_lxWS: B_D_recon_AR_lxWS {
+    class GVAR(B_D_recon_AR_lxWS): B_recon_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Autorifleman";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_B_D_recon_JTAC_lxWS: B_D_recon_JTAC_lxWS {
+    class GVAR(B_D_recon_JTAC_lxWS): B_D_recon_JTAC_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon JTAC";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_B_D_recon_LAT_lxWS: B_D_recon_LAT_lxWS {
+    class GVAR(B_D_recon_LAT_lxWS): B_D_recon_LAT_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Scout (AT)";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","NLAW_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","NLAW_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_B_D_recon_M_lxWS: B_D_recon_M_lxWS {
+    class GVAR(B_D_recon_M_lxWS): B_D_recon_M_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Marksman";
         side = 1;
-        faction = "ghost_EUDF_des";
-        magazines[] = {"FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_B_D_recon_TL_lxWS: B_D_recon_TL_lxWS {
+    class GVAR(B_D_recon_TL_lxWS): B_D_recon_TL_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Team Leader";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_B_D_recon_exp_lxWS: B_D_recon_exp_lxWS {
+    class GVAR(B_D_recon_exp_lxWS): B_D_recon_exp_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Demo Specialist";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_B_D_recon_lxWS: B_D_recon_lxWS {
+    class GVAR(B_D_recon_lxWS): B_D_recon_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Scout";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_B_D_recon_medic_lxWS: B_D_recon_medic_lxWS {
+    class GVAR(B_D_recon_medic_lxWS): B_D_recon_medic_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Paramedic";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_B_D_soldier_AAA_lxWS: B_D_soldier_AAA_lxWS {
+    class GVAR(B_D_soldier_AAA_lxWS): B_D_soldier_AAA_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Asst. Missile Specialist (AA)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MX_ACO_pointer_F_snds","hgun_P07_F","Throw","Put","Rangefinder"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MX_ACO_pointer_F_snds","hgun_P07_F","Throw","Put","Rangefinder"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MX_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {QGVAR(arifle_MX_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put","Rangefinder"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_soldier_AAR_lxWS: B_D_soldier_AAR_lxWS {
+    class GVAR(B_D_soldier_AAR_lxWS): B_D_soldier_AAR_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Asst. Autorifleman";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MX_ACO_pointer_F_snds","hgun_P07_F","Throw","Put","Rangefinder"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MX_ACO_pointer_F_snds","hgun_P07_F","Throw","Put","Rangefinder"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MX_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {QGVAR(arifle_MX_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put","Rangefinder"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_soldier_AAT_lxWS: B_D_soldier_AAT_lxWS {
+    class GVAR(B_D_soldier_AAT_lxWS): B_D_soldier_AAT_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Asst. Missile Specialist (AT)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MX_ACO_pointer_F_snds","hgun_P07_F","Throw","Put","Rangefinder"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MX_ACO_pointer_F_snds","hgun_P07_F","Throw","Put","Rangefinder"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MX_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {QGVAR(arifle_MX_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put","Rangefinder"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_soldier_AA_lxWS: B_D_soldier_AA_lxWS {
+    class GVAR(B_D_soldier_AA_lxWS): B_D_soldier_AA_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Missile Specialist (AA)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_Holo_pointer_F_snds","launch_B_Titan_F","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_Holo_pointer_F_snds","launch_B_Titan_F","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","Titan_AA","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","Titan_AA","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_Holo_pointer_F_snds),"launch_B_Titan_F","hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_Holo_pointer_F_snds),"launch_B_Titan_F","hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_Titan_AA_MIM165_Sentry","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_Titan_AA_MIM165_Sentry","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_soldier_AR_lxWS: B_D_soldier_AR_lxWS {
+    class GVAR(B_D_soldier_AR_lxWS): B_D_soldier_AR_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Autorifleman";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MX_SW_Hamr_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MX_SW_Hamr_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MX_SW_Hamr_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MX_SW_Hamr_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_100Rnd_65x39_caseless_mag_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_soldier_AT_lxWS: B_D_soldier_AT_lxWS {
+    class GVAR(B_D_soldier_AT_lxWS): B_D_soldier_AT_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Missile Specialist (AT)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_Holo_pointer_F_snds","launch_B_Titan_short_F","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_Holo_pointer_F_snds","launch_B_Titan_short_F","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","Titan_AT","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","Titan_AT","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_Holo_pointer_F_snds),"launch_B_Titan_short_F","hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_Holo_pointer_F_snds),"launch_B_Titan_short_F","hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_Titan_AT_BGM185_Broadsword","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_Titan_AT_BGM185_Broadsword","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_soldier_LAT2_lxWS: B_D_soldier_LAT2_lxWS {
+    class GVAR(B_D_soldier_LAT2_lxWS): B_D_soldier_LAT2_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Rifleman (Light AT)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MX_Holo_pointer_F_snds","launch_MRAWS_sand_F","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MX_Holo_pointer_F_snds","launch_MRAWS_sand_F","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MRAWS_HEAT_F","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MRAWS_HEAT_F","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MX_Holo_pointer_F_snds),"launch_MRAWS_sand_F","hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MX_Holo_pointer_F_snds),"launch_MRAWS_sand_F","hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_MRAWS_HEAT758_TT","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_MRAWS_HEAT758_TT","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_soldier_LAT_lxWS: B_D_soldier_LAT_lxWS {
+    class GVAR(B_D_soldier_LAT_lxWS): B_D_soldier_LAT_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Rifleman (AT)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MX_Holo_pointer_F_snds","launch_NLAW_F","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MX_Holo_pointer_F_snds","launch_NLAW_F","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","NLAW_F","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","NLAW_F","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MX_Holo_pointer_F_snds),"launch_NLAW_F","hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MX_Holo_pointer_F_snds),"launch_NLAW_F","hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","NLAW_F","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","NLAW_F","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_soldier_M_lxWS: B_D_soldier_M_lxWS {
+    class GVAR(B_D_soldier_M_lxWS): B_D_soldier_M_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Marksman";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXM_MOS_LP_BI_F_snds","hgun_P07_F","Throw","Put","Rangefinder"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXM_MOS_LP_BI_F_snds","hgun_P07_F","Throw","Put","Rangefinder"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXM_MOS_LP_BI_F_snds),"hgun_P07_F","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {QGVAR(arifle_MXM_MOS_LP_BI_F_snds),"hgun_P07_F","Throw","Put","Rangefinder"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_soldier_PG_lxWS: B_D_soldier_PG_lxWS {
+    class GVAR(B_D_soldier_PG_lxWS): B_D_soldier_PG_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Para Trooper";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_ACO_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_ACO_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_soldier_UAV01_lxWS: B_D_soldier_UAV01_lxWS {
+    class GVAR(B_D_soldier_UAV01_lxWS): B_D_soldier_UAV01_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "UAV Operator";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_ACO_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_ACO_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_soldier_UAV02_lxWS: B_D_soldier_UAV02_lxWS {
+    class GVAR(B_D_soldier_UAV02_lxWS): B_D_soldier_UAV02_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "UAV Operator (AP-5)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_SMG_01_Holo_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_SMG_01_Holo_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(SMG_01_Holo_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(SMG_01_Holo_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_B_D_soldier_exp_lxWS: B_D_soldier_exp_lxWS {
+    class GVAR(B_D_soldier_exp_lxWS): B_D_soldier_exp_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Explosive Specialist";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_Holo_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_Holo_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_Holo_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_Holo_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_soldier_mine_lxWS: B_D_soldier_mine_lxWS {
+    class GVAR(B_D_soldier_mine_lxWS): B_D_soldier_mine_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mine Specialist";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_Holo_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_Holo_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_Holo_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_Holo_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_soldier_repair_lxWS: B_D_soldier_repair_lxWS {
+    class GVAR(B_D_soldier_repair_lxWS): B_D_soldier_repair_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Repair Specialist";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_Holo_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_Holo_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_Holo_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_Holo_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_D_static_AA_lxWS: B_D_static_AA_lxWS {
+    class GVAR(B_D_static_AA_lxWS): B_D_static_AA_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mini-Spike Launcher (AA)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
     };
-    class ghost_EUDF_des_B_D_static_AT_lxWS: B_D_static_AT_lxWS {
+    class GVAR(B_D_static_AT_lxWS): B_D_static_AT_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mini-Spike Launcher (AT)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
     };
-    class ghost_EUDF_des_B_D_support_AMort_lxWS: B_D_support_AMort_lxWS {
+    class GVAR(B_D_support_AMort_lxWS): B_D_support_AMort_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Asst. Gunner (Mk6)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_ACO_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_ACO_pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_ACO_pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_30Rnd_65_EPR_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_Heli_Attack_01_dynamicLoadout_F: B_Heli_Attack_01_dynamicLoadout_F {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(B_Heli_Attack_01_dynamicLoadout_F): B_Heli_Attack_01_dynamicLoadout_F {
+        scope = 1;                      // the grey twin of the Western Sahara sand one shown instead (user, 2026-09-26)
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "Tiger HAD";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
     };
-    class ghost_EUDF_des_B_Heli_Attack_01_pylons_dynamicLoadout_F: B_Heli_Attack_01_pylons_dynamicLoadout_F {
+    class GVAR(B_Heli_Attack_01_pylons_dynamicLoadout_F): B_Heli_Attack_01_pylons_dynamicLoadout_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Tiger HAD (Stub Wings)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
     };
-    class ghost_EUDF_des_B_Heli_EC_03_RF: B_Heli_EC_03_RF {
+    class GVAR(B_Heli_EC_03_RF): B_Heli_EC_03_RF {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "H225M Super Cougar";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
     };
-    class ghost_EUDF_des_B_Heli_EC_04_military_RF: B_Heli_EC_04_military_RF {
+    class GVAR(B_Heli_EC_04_military_RF): B_Heli_EC_04_military_RF {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "H225M Super Cougar (Unarmed)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
     };
-    class ghost_EUDF_des_B_Heli_Transport_01_F: B_Heli_Transport_01_F {
-        scope = 2;
-        scopeCurator = 2;
+    class GVAR(B_Heli_Transport_01_F): B_Heli_Transport_01_F {
+        scope = 1;                      // the grey twin of the Western Sahara sand one shown instead (user, 2026-09-26)
+        scopeCurator = 0;
         author = QAUTHOR;
         displayName = "NH90 TTH";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
-        textureList[] = {};
-        hiddenSelectionsTextures[] = {
-            "\A3\Air_F_Exp\Heli_Transport_01\Data\Heli_Transport_01_ext01_sand_CO.paa",
-            "\A3\Air_F_Exp\Heli_Transport_01\Data\Heli_Transport_01_ext02_sand_CO.paa",
-            "\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_ext01_add_sand_CO.paa",
-            "\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_DAP_sand_CO.paa"
-        };
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
     };
-    class ghost_EUDF_des_B_Heli_Transport_01_pylons_F: B_Heli_Transport_01_pylons_F {
+    class GVAR(B_Heli_Transport_01_pylons_F): B_Heli_Transport_01_pylons_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "NH90 TTH (Stub Wings)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
+        // camo: EU Desert (by selection name, as the named sheets (parent unreadable))
         textureList[] = {};
+        hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
         hiddenSelectionsTextures[] = {
-            "\A3\Air_F_Exp\Heli_Transport_01\Data\Heli_Transport_01_ext01_sand_CO.paa",
-            "\A3\Air_F_Exp\Heli_Transport_01\Data\Heli_Transport_01_ext02_sand_CO.paa",
-            "\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_ext01_add_sand_CO.paa",
-            "\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_DAP_sand_CO.paa"
+            "\lxWS\air_f_lxWS\Data\NATO\lxWS_Heli_Transport_01_ext01_sand_CO.paa",
+            "\lxWS\air_f_lxWS\Data\NATO\lxWS_Heli_Transport_01_ext02_sand_CO.paa",
+            "\lxWS\air_f_lxWS\Data\NATO\heli_transport_01_ext01_add_sand_co.paa",
+            "\lxWS\air_f_lxWS\Data\NATO\Heli_Transport_01_DAP_sand_CO.paa"
         };
     };
-    class ghost_EUDF_des_B_Heli_Transport_01_unarmed_F: B_Heli_Transport_01_unarmed_F {
+    class GVAR(B_Heli_Transport_01_unarmed_F): B_Heli_Transport_01_unarmed_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "NH90 TTH (Unarmed)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
+        // camo: EU Desert (by selection name, as the named sheets (parent unreadable))
         textureList[] = {};
+        hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
         hiddenSelectionsTextures[] = {
-            "\A3\Air_F_Exp\Heli_Transport_01\Data\Heli_Transport_01_ext01_sand_CO.paa",
-            "\A3\Air_F_Exp\Heli_Transport_01\Data\Heli_Transport_01_ext02_sand_CO.paa",
-            "\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_ext01_add_sand_CO.paa",
-            "\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_DAP_sand_CO.paa"
+            "\lxWS\air_f_lxWS\Data\NATO\lxWS_Heli_Transport_01_ext01_sand_CO.paa",
+            "\lxWS\air_f_lxWS\Data\NATO\lxWS_Heli_Transport_01_ext02_sand_CO.paa",
+            "\lxWS\air_f_lxWS\Data\NATO\heli_transport_01_ext01_add_sand_co.paa",
+            "\lxWS\air_f_lxWS\Data\NATO\Heli_Transport_01_DAP_sand_CO.paa"
         };
     };
-    class ghost_EUDF_des_B_SDV_01_F: B_SDV_01_F {
+    class GVAR(B_SDV_01_F): B_SDV_01_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "SDV";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
     };
-    class ghost_EUDF_des_B_T_Boat_Armed_01_minigun_F: B_T_Boat_Armed_01_minigun_F {
+    class GVAR(B_T_Boat_Armed_01_minigun_F): B_T_Boat_Armed_01_minigun_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Speedboat Minigun";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
     };
-    class ghost_EUDF_des_B_T_Boat_Transport_01_F: B_T_Boat_Transport_01_F {
+    class GVAR(B_T_Boat_Transport_01_F): B_T_Boat_Transport_01_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Assault Boat";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
     };
-    class ghost_EUDF_des_B_T_Diver_Exp_F: B_T_Diver_Exp_F {
+    class GVAR(B_T_Diver_Exp_F): B_T_Diver_Exp_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Diver Explosive Specialist";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
+        magazines[] = {"20Rnd_556x45_Stanag_red","20Rnd_556x45_Stanag_red","20Rnd_556x45_Stanag_red","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"20Rnd_556x45_Stanag_red","20Rnd_556x45_Stanag_red","20Rnd_556x45_Stanag_red","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_B_T_Diver_F: B_T_Diver_F {
+    class GVAR(B_T_Diver_F): B_T_Diver_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Assault Diver";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
+        magazines[] = {"20Rnd_556x45_Stanag_red","20Rnd_556x45_Stanag_red","20Rnd_556x45_Stanag_red","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"20Rnd_556x45_Stanag_red","20Rnd_556x45_Stanag_red","20Rnd_556x45_Stanag_red","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_B_T_Diver_TL_F: B_T_Diver_TL_F {
+    class GVAR(B_T_Diver_TL_F): B_T_Diver_TL_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Diver Team Leader";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
+        magazines[] = {"20Rnd_556x45_Stanag_red","20Rnd_556x45_Stanag_red","20Rnd_556x45_Stanag_red","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"20Rnd_556x45_Stanag_red","20Rnd_556x45_Stanag_red","20Rnd_556x45_Stanag_red","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_B_T_Sniper_F: B_T_Sniper_F {
+    class GVAR(B_T_Sniper_F): B_T_Sniper_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Sniper";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_srifle_LRR_tna_LRPS_F_snds","hgun_P07_khk_F","Throw","Put","Rangefinder"};
-        respawnWeapons[] = {"ghost_EUDF_des_srifle_LRR_tna_LRPS_F_snds","hgun_P07_khk_F","Throw","Put","Rangefinder"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(srifle_LRR_tna_LRPS_F_snds),"hgun_P07_khk_F","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {QGVAR(srifle_LRR_tna_LRPS_F_snds),"hgun_P07_khk_F","Throw","Put","Rangefinder"};
+        magazines[] = {"FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","ClaymoreDirectionalMine_Remote_Mag","APERSTripMine_Wire_Mag","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","ClaymoreDirectionalMine_Remote_Mag","APERSTripMine_Wire_Mag","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_B_T_Spotter_F: B_T_Spotter_F {
+    class GVAR(B_T_Spotter_F): B_T_Spotter_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Spotter";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","ClaymoreDirectionalMine_Remote_Mag","APERSTripMine_Wire_Mag","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","ClaymoreDirectionalMine_Remote_Mag","APERSTripMine_Wire_Mag","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class ghost_EUDF_des_B_T_Support_AMG_F: B_T_Support_AMG_F {
+    class GVAR(B_T_Support_AMG_F): B_T_Support_AMG_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Asst. Gunner (HMG/GMG)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_khk_ACO_Pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_khk_ACO_Pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_khk_ACO_Pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_khk_ACO_Pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_T_Support_GMG_F: B_T_Support_GMG_F {
+    class GVAR(B_T_Support_GMG_F): B_T_Support_GMG_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Gunner (GMG)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_khk_ACO_Pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_khk_ACO_Pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_khk_ACO_Pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_khk_ACO_Pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_T_Support_MG_F: B_T_Support_MG_F {
+    class GVAR(B_T_Support_MG_F): B_T_Support_MG_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Gunner (HMG)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_khk_ACO_Pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_khk_ACO_Pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_khk_ACO_Pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_khk_ACO_Pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_B_T_Support_Mort_F: B_T_Support_Mort_F {
+    class GVAR(B_T_Support_Mort_F): B_T_Support_Mort_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Gunner (Mk6)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        weapons[] = {"ghost_EUDF_des_arifle_MXC_khk_ACO_Pointer_F_snds","hgun_P07_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_EUDF_des_arifle_MXC_khk_ACO_Pointer_F_snds","hgun_P07_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_MXC_khk_ACO_Pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_MXC_khk_ACO_Pointer_F_snds),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_EUDF_des_EF_B_AH99J_NATO: EF_B_AH99J_NATO {
+    class GVAR(EF_B_AH99J_NATO): EF_B_AH99J_NATO {
+        scope = 1;                      // the grey twin of EF_B_AH99J_NATO_Des, the arid's own (user, 2026-09-27: "2 of one type")
+        scopeCurator = 0;
+        author = QAUTHOR;
+        displayName = "Tiger HAD (Naval)";
+        side = 1;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
+    };
+    class GVAR(EF_B_AH99J_NATO_Des): EF_B_AH99J_NATO_Des {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Tiger HAD (Naval)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_HeliPilot_lxWS);
     };
-    class ghost_EUDF_des_EF_B_AH99J_NATO_Des: EF_B_AH99J_NATO_Des {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Tiger HAD (Naval)";
-        side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_HeliPilot_lxWS";
-    };
-    class ghost_EUDF_des_EF_B_CombatBoat_AT_NATO_Des: EF_B_CombatBoat_AT_NATO_Des {
+    class GVAR(EF_B_CombatBoat_AT_NATO_Des): EF_B_CombatBoat_AT_NATO_Des {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Combat Boat (AT)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
     };
-    class ghost_EUDF_des_EF_B_CombatBoat_HMG_NATO_Des: EF_B_CombatBoat_HMG_NATO_Des {
+    class GVAR(EF_B_CombatBoat_HMG_NATO_Des): EF_B_CombatBoat_HMG_NATO_Des {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Combat Boat (HMG)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
     };
-    class ghost_EUDF_des_EF_B_CombatBoat_Unarmed_NATO_Des: EF_B_CombatBoat_Unarmed_NATO_Des {
+    class GVAR(EF_B_CombatBoat_Unarmed_NATO_Des): EF_B_CombatBoat_Unarmed_NATO_Des {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Combat Boat (Unarmed)";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
     };
-    class ghost_EUDF_des_EF_B_MRAP_01_AT_NATO_Des: EF_B_MRAP_01_AT_NATO_Des {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "M-ATV AT";
-        side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
-    };
-    class ghost_EUDF_des_EF_B_MRAP_01_FSV_NATO_Des: EF_B_MRAP_01_FSV_NATO_Des {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "M-ATV FSV";
-        side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
-    };
-    class ghost_EUDF_des_EF_B_MRAP_01_LAAD_NATO_Des: EF_B_MRAP_01_LAAD_NATO_Des {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "M-ATV LAAD (Anti-Air)";
-        side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_crew_lxWS";
-    };
-    class ghost_EUDF_des_rev_B_Plane_Fighter_04_F: rev_B_Plane_Fighter_04_F {
+    class GVAR(rev_B_Plane_Fighter_04_F): I_Plane_Fighter_04_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "A-149 Gryphon";
         side = 1;
-        faction = "ghost_EUDF_des";
-        crew = "ghost_EUDF_des_B_D_Pilot_lxWS";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_Pilot_lxWS);
+    };
+    class GVAR(qav_challenger2): qav_challenger2 {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "Challenger 2";
+        side = 1;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Tan (Base game), copied)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\textures\tan\c2hull1_co.paa),
+            QPATHTOF(data\textures\tan\c2hull2_co.paa),
+            QPATHTOF(data\textures\tan\c2turret1_co.paa),
+            QPATHTOF(data\textures\tan\c2turret2_co.paa),
+            QPATHTOF(data\textures\tan\c2wheels1_co.paa),
+            QPATHTOF(data\textures\tan\c2acc1_co.paa),
+            QPATHTOF(data\textures\tan\c2eparts_co.paa),
+            "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+        };
+    };
+    class GVAR(qav_challenger2_e): qav_challenger2_e {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "Challenger 2E";
+        side = 1;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_D_crew_lxWS);
+        // camo: EU Desert (its own Tan (Base game), copied)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\textures\tan\c2hull1_co.paa),
+            QPATHTOF(data\textures\tan\c2hull2_co.paa),
+            QPATHTOF(data\textures\tan\c2turret1_co.paa),
+            QPATHTOF(data\textures\tan\c2turret2_co.paa),
+            QPATHTOF(data\textures\tan\c2wheels1_co.paa),
+            QPATHTOF(data\textures\tan\c2acc1_co.paa),
+            QPATHTOF(data\textures\tan\c2eparts_co.paa),
+            "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+        };
     };
     // ---- the squads' drone bags, assembling this faction's own drones - see SQUAD_DRONES ----
     class C_IDAP_UAV_06_antimine_backpack_F;
-    class ghost_EUDF_des_C_IDAP_UAV_06_antimine_backpack_F: C_IDAP_UAV_06_antimine_backpack_F {
+    class GVAR(C_IDAP_UAV_06_antimine_backpack_F): C_IDAP_UAV_06_antimine_backpack_F {
         scope = 1;
         scopeCurator = 0;
         author = QAUTHOR;
         class assembleInfo {
             primary = 1;
             base = "";
-            assembleTo = "ghost_EUDF_des_C_IDAP_UAV_06_antimine_F";
+            assembleTo = QGVAR(C_IDAP_UAV_06_antimine_F);
             displayName = "";
             dissasembleTo[] = {};
         };
@@ -1727,35 +2031,38 @@ class CfgVehicles {
     // and group composition is CfgGroups' job.
 
     class C_IDAP_UAV_06_antimine_F;
-    class ghost_EUDF_des_C_IDAP_UAV_06_antimine_F: C_IDAP_UAV_06_antimine_F {
+    class GVAR(C_IDAP_UAV_06_antimine_F): C_IDAP_UAV_06_antimine_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "AL-6 Pelican (Demining)";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
         crew = "B_UAV_AI";
     };   // the demining drone - IDAP's airframe, US kit
-    class ghost_EUDF_des_B_Heli_Transport_01_medevac_F: B_Heli_Transport_01_unarmed_F {
+    class GVAR(B_Heli_Transport_01_medevac_F): B_Heli_Transport_01_unarmed_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "NH90 TTH (Medevac)";
         side = 1;
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
+        // camo: EU Desert (by selection name, as the named sheets (parent unreadable))
+        textureList[] = {};
+        hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
         hiddenSelectionsTextures[] = {
-            "\A3\Air_F_Exp\Heli_Transport_01\Data\Heli_Transport_01_ext01_sand_CO.paa",
-            "\A3\Air_F_Exp\Heli_Transport_01\Data\Heli_Transport_01_ext02_sand_CO.paa",
-            "\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_ext01_add_sand_CO.paa",
-            "\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_DAP_sand_CO.paa"
+            "\lxWS\air_f_lxWS\Data\NATO\lxWS_Heli_Transport_01_ext01_sand_CO.paa",
+            "\lxWS\air_f_lxWS\Data\NATO\lxWS_Heli_Transport_01_ext02_sand_CO.paa",
+            "\lxWS\air_f_lxWS\Data\NATO\heli_transport_01_ext01_add_sand_co.paa",
+            "\lxWS\air_f_lxWS\Data\NATO\Heli_Transport_01_DAP_sand_CO.paa"
         };
     };   // the medevac, on the unarmed transport and in the theatre's paint
-    class ghost_EUDF_des_Drone_Operator: ghost_EUDF_des_B_D_Soldier_lxWS {
+    class GVAR(Drone_Operator): GVAR(B_D_Soldier_lxWS) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Drone Operator [EUDF (Desert)]";
-        faction = "ghost_EUDF_des";
+        faction = QUOTE(ADDON);
         backpack = "B_UAV_01_backpack_F";
     };   // the squad's drones - see SQUAD_DRONES
 

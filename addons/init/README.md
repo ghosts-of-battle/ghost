@@ -16,7 +16,7 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-13 functions.
+15 functions.
 
 ## CBA settings
 
@@ -40,11 +40,14 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 | `ghost_init_QEGVAR(Settings,jumpSimulationNVG)` | CHECKBOX | Include Night Vision Googles |
 | `ghost_init_QEGVAR(Settings,jumpSimulationGlasses)` | CHECKBOX | Include Non-combat Googles |
 | `ghost_init_QEGVAR(Settings,jumpSimulationHat)` | CHECKBOX | Include Non-combat Headgear |
+| `ghost_init_QEGVAR(Settings,radarNetwork)` | CHECKBOX | Radar network |
+| `ghost_init_QEGVAR(Settings,radarClasses)` | EDITBOX | Vehicle classes |
 
 ## Functions
 
-<details><summary>13</summary>
+<details><summary>15</summary>
 
+- `ghost_init_fnc_aiSkill`
 - `ghost_init_fnc_chatCommands`
 - `ghost_init_fnc_diary`
 - `ghost_init_fnc_eventHandlers`
@@ -54,6 +57,7 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 - `ghost_init_fnc_missionConfigsReady`
 - `ghost_init_fnc_playerpost`
 - `ghost_init_fnc_pylons`
+- `ghost_init_fnc_radarNetwork`
 - `ghost_init_fnc_skillAdjustment`
 - `ghost_init_fnc_staging`
 - `ghost_init_fnc_vehicle`

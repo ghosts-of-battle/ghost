@@ -8,399 +8,399 @@
 class CfgGroups {
     class Indep {
 
-        class ghost_Syndikat {
+        class ADDON {
             name = "2040 Syndikat";
 
             class Infantry {
                 name = "Infantry";
 
-                class ghost_Syndikat_BanditCombatGroup {
+                class GVAR(BanditCombatGroup) {
                     name = "Bandit Combat Group";
                     side = 2;
-                    faction = "ghost_Syndikat";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
 
                     class Unit0 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_4_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_4_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_3_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_3_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_7_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_7_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_5_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_5_F);
                         rank = "CORPORAL";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_6_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_6_F);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_2_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_2_F);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_8_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_8_F);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_1_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_1_F);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_IED_Quad_Operator";
+                        vehicle = QGVAR(IED_Quad_Operator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
 
                     class Unit10 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_UAV_06_IED_Operator";
+                        vehicle = QGVAR(UAV_06_IED_Operator);
                         rank = "PRIVATE";
                         position[] = {-25,-25,0};
                     };
                 };
 
-                class ghost_Syndikat_BanditFireTeam {
+                class GVAR(BanditFireTeam) {
                     name = "Bandit Fire Team";
                     side = 2;
-                    faction = "ghost_Syndikat";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
 
                     class Unit0 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_4_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_4_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_3_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_3_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_5_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_5_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_1_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_1_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_IED_Quad_Operator";
+                        vehicle = QGVAR(IED_Quad_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_UAV_06_IED_Operator";
+                        vehicle = QGVAR(UAV_06_IED_Operator);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
                 };
 
-                class ghost_Syndikat_BanditShockTeam {
+                class GVAR(BanditShockTeam) {
                     name = "Bandit Shock Team";
                     side = 2;
-                    faction = "ghost_Syndikat";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
 
                     class Unit0 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_6_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_6_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_2_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_2_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_7_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_7_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_8_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_8_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_IED_Quad_Operator";
+                        vehicle = QGVAR(IED_Quad_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_UAV_06_IED_Operator";
+                        vehicle = QGVAR(UAV_06_IED_Operator);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
                 };
 
-                class ghost_Syndikat_ParaCombatGroup {
+                class GVAR(ParaCombatGroup) {
                     name = "Paramilitary Combat Group";
                     side = 2;
-                    faction = "ghost_Syndikat";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
 
                     class Unit0 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_2_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_2_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_4_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_4_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_6_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_6_F);
                         rank = "SERGEANT";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_1_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_1_F);
                         rank = "CORPORAL";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_7_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_7_F);
                         rank = "CORPORAL";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_5_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_5_F);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_8_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_8_F);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_3_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_3_F);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_IED_Quad_Operator";
+                        vehicle = QGVAR(IED_Quad_Operator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
 
                     class Unit10 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_UAV_06_IED_Operator";
+                        vehicle = QGVAR(UAV_06_IED_Operator);
                         rank = "PRIVATE";
                         position[] = {-25,-25,0};
                     };
                 };
 
-                class ghost_Syndikat_ParaFireTeam {
+                class GVAR(ParaFireTeam) {
                     name = "Paramilitary Fire Team";
                     side = 2;
-                    faction = "ghost_Syndikat";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
 
                     class Unit0 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_2_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_2_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_4_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_4_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_1_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_1_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_3_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_3_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_IED_Quad_Operator";
+                        vehicle = QGVAR(IED_Quad_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_UAV_06_IED_Operator";
+                        vehicle = QGVAR(UAV_06_IED_Operator);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
                 };
 
-                class ghost_Syndikat_ParaShockTeam {
+                class GVAR(ParaShockTeam) {
                     name = "Paramilitary Shock Team";
                     side = 2;
-                    faction = "ghost_Syndikat";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
 
                     class Unit0 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_6_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_6_F);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_5_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_5_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_7_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_7_F);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_8_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_8_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_IED_Quad_Operator";
+                        vehicle = QGVAR(IED_Quad_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_UAV_06_IED_Operator";
+                        vehicle = QGVAR(UAV_06_IED_Operator);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
@@ -411,505 +411,505 @@ class CfgGroups {
             class Motorized {
                 name = "Motorized";
 
-                class ghost_Syndikat_BanditMotorized_LMG {
+                class GVAR(BanditMotorized_LMG) {
                     name = "Bandit Motorized Group (LMG)";
                     side = 2;
-                    faction = "ghost_Syndikat";
+                    faction = QUOTE(ADDON);
 
                     class Unit0 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Offroad_02_LMG_F";
+                        vehicle = QGVAR(I_C_Offroad_02_LMG_F);
                         rank = "PRIVATE";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_4_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_4_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_3_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_3_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_7_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_7_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_5_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_5_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_6_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_6_F);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_IED_Quad_Operator";
+                        vehicle = QGVAR(IED_Quad_Operator);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_UAV_06_IED_Operator";
+                        vehicle = QGVAR(UAV_06_IED_Operator);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
                 };
 
-                class ghost_Syndikat_BanditMotorized_AT {
+                class GVAR(BanditMotorized_AT) {
                     name = "Bandit Motorized Group (SPG-9)";
                     side = 2;
-                    faction = "ghost_Syndikat";
+                    faction = QUOTE(ADDON);
 
                     class Unit0 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Offroad_02_AT_F";
+                        vehicle = QGVAR(I_C_Offroad_02_AT_F);
                         rank = "PRIVATE";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_4_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_4_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_3_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_3_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_7_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_7_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_5_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_5_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_IED_Quad_Operator";
+                        vehicle = QGVAR(IED_Quad_Operator);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_UAV_06_IED_Operator";
+                        vehicle = QGVAR(UAV_06_IED_Operator);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
                 };
 
-                class ghost_Syndikat_BanditTechnical_HMG {
+                class GVAR(BanditTechnical_HMG) {
                     name = "Bandit Technical (HMG)";
                     side = 2;
-                    faction = "ghost_Syndikat";
+                    faction = QUOTE(ADDON);
 
                     class Unit0 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Pickup_hmg_rf";
+                        vehicle = QGVAR(I_C_Pickup_hmg_rf);
                         rank = "PRIVATE";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_4_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_4_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_3_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_3_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_7_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_7_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_5_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_5_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_IED_Quad_Operator";
+                        vehicle = QGVAR(IED_Quad_Operator);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_UAV_06_IED_Operator";
+                        vehicle = QGVAR(UAV_06_IED_Operator);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
                 };
 
-                class ghost_Syndikat_BanditMotorized_Truck {
+                class GVAR(BanditMotorized_Truck) {
                     name = "Bandit Motorized Combat Group";
                     side = 2;
-                    faction = "ghost_Syndikat";
+                    faction = QUOTE(ADDON);
 
                     class Unit0 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Van_01_transport_F";
+                        vehicle = QGVAR(I_C_Van_01_transport_F);
                         rank = "PRIVATE";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_4_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_4_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_3_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_3_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_7_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_7_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_5_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_5_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_6_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_6_F);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_2_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_2_F);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_8_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_8_F);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Bandit_1_F";
+                        vehicle = QGVAR(I_C_Soldier_Bandit_1_F);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
 
                     class Unit10 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_IED_Quad_Operator";
+                        vehicle = QGVAR(IED_Quad_Operator);
                         rank = "PRIVATE";
                         position[] = {-25,-25,0};
                     };
 
                     class Unit11 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_UAV_06_IED_Operator";
+                        vehicle = QGVAR(UAV_06_IED_Operator);
                         rank = "PRIVATE";
                         position[] = {30,-30,0};
                     };
                 };
 
-                class ghost_Syndikat_ParaMotorized_LMG {
+                class GVAR(ParaMotorized_LMG) {
                     name = "Paramilitary Motorized Group (LMG)";
                     side = 2;
-                    faction = "ghost_Syndikat";
+                    faction = QUOTE(ADDON);
 
                     class Unit0 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Offroad_02_LMG_F";
+                        vehicle = QGVAR(I_C_Offroad_02_LMG_F);
                         rank = "PRIVATE";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_2_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_2_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_4_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_4_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_6_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_6_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_1_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_1_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_7_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_7_F);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_IED_Quad_Operator";
+                        vehicle = QGVAR(IED_Quad_Operator);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_UAV_06_IED_Operator";
+                        vehicle = QGVAR(UAV_06_IED_Operator);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
                 };
 
-                class ghost_Syndikat_ParaTechnical_HMG {
+                class GVAR(ParaTechnical_HMG) {
                     name = "Paramilitary Technical (HMG)";
                     side = 2;
-                    faction = "ghost_Syndikat";
+                    faction = QUOTE(ADDON);
 
                     class Unit0 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Pickup_hmg_rf";
+                        vehicle = QGVAR(I_C_Pickup_hmg_rf);
                         rank = "PRIVATE";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_2_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_2_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_4_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_4_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_6_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_6_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_1_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_1_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_IED_Quad_Operator";
+                        vehicle = QGVAR(IED_Quad_Operator);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_UAV_06_IED_Operator";
+                        vehicle = QGVAR(UAV_06_IED_Operator);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
                 };
 
-                class ghost_Syndikat_ParaMotorized_Van {
+                class GVAR(ParaMotorized_Van) {
                     name = "Paramilitary Motorized Combat Group";
                     side = 2;
-                    faction = "ghost_Syndikat";
+                    faction = QUOTE(ADDON);
 
                     class Unit0 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Van_02_transport_F";
+                        vehicle = QGVAR(I_C_Van_02_transport_F);
                         rank = "PRIVATE";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_2_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_2_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_4_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_4_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_6_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_6_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_1_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_1_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_7_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_7_F);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_5_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_5_F);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_8_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_8_F);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_I_C_Soldier_Para_3_F";
+                        vehicle = QGVAR(I_C_Soldier_Para_3_F);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
 
                     class Unit10 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_IED_Quad_Operator";
+                        vehicle = QGVAR(IED_Quad_Operator);
                         rank = "PRIVATE";
                         position[] = {-25,-25,0};
                     };
 
                     class Unit11 {
                         side = 2;
-                        vehicle = "ghost_Syndikat_UAV_06_IED_Operator";
+                        vehicle = QGVAR(UAV_06_IED_Operator);
                         rank = "PRIVATE";
                         position[] = {30,-30,0};
                     };

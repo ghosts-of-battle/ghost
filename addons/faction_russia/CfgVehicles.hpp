@@ -6,120 +6,102 @@
 // refuses to build - see requiredAddons in config.cpp.
 
 class CfgVehicles {
-    class AddGis_O_R_Heli_EC_01A_military_F;
-    class AddGis_O_R_Heli_EC_02_F;
-    class Aegis_O_R_APC_Tracked_02_30mm_lxWS;
-    class Aegis_O_R_BoatCrew_EF;
-    class Aegis_O_R_Conscript_Repair_F;
-    class Aegis_O_R_Heli_Attack_04_F;
-    class Aegis_O_R_MBT_02_Railgun_F;
-    class Aegis_O_R_Sharpshooter_F;
-    class Aegis_O_R_Truck_02_aa_F;
-    class Aegis_O_R_UAV_02_lxWS;
-    class CF_O_R_ghillie_spotter_wdl_F;
-    class CF_O_R_ghillie_wdl_F;
+    class O_Heli_Light_02_dynamicLoadout_F;
+    class O_APC_Tracked_02_cannon_F {
+        // declared so the medical variant below can empty the turret (hemtt L-C04)
+        class Turrets {
+            class MainTurret;
+        };
+    };
+    class O_Soldier_F;
+    class ghost_vehicle_O_R_Heli_Attack_04_F;
+    class O_MBT_02_railgun_F;
+    class O_Sharpshooter_F;
+    class O_UAV_02_lxWS;
+    class O_spotter_F;
+    class ghost_uniform_O_R_ghillie_wdl_F;
     class EF_O_CombatBoat_AT_OPF_R;
     class EF_O_CombatBoat_HMG_OPF_R;
     class EF_O_CombatBoat_Unarmed_OPF_R;
-    class O_R_APC_Tracked_02_AA_F;
-    class O_R_APC_Tracked_02_medical_F;
-    class O_R_APC_Wheeled_04_cannon_F;
-    class O_R_APC_Wheeled_04_cannon_v2_F;
-    class O_R_Fighter_Pilot_F;
-    class O_R_GMG_01_A_F;
-    class O_R_GMG_01_F;
-    class O_R_GMG_01_high_F;
-    class O_R_HMG_01_A_F;
-    class O_R_HMG_01_F;
-    class O_R_HMG_01_high_F;
-    class O_R_Heli_Attack_02_dynamicLoadout_F;
-    class O_R_Heli_Light_02_dynamicLoadout_F;
-    class O_R_Heli_Light_02_unarmed_F;
-    class O_R_Heli_Transport_04_F;
-    class O_R_Heli_Transport_04_ammo_F;
-    class O_R_Heli_Transport_04_bench_F;
-    class O_R_Heli_Transport_04_box_F;
-    class O_R_Heli_Transport_04_covered_F;
-    class O_R_Heli_Transport_04_fuel_F;
-    class O_R_Heli_Transport_04_medevac_F;
-    class O_R_Heli_Transport_04_repair_F;
-    class O_R_LSV_02_AT_F;
-    class O_R_LSV_02_armed_F;
-    class O_R_LSV_02_unarmed_F;
-    class O_R_MBT_02_arty_F;
-    class O_R_MBT_02_cannon_F;
-    class O_R_MBT_04_cannon_F;
-    class O_R_MBT_04_command_F;
-    class O_R_MRAP_02_F;
-    class O_R_MRAP_02_gmg_F;
-    class O_R_MRAP_02_hmg_F;
-    class O_R_Mortar_01_F;
-    class O_R_Plane_CAS_02_dynamicLoadout_F;
-    class O_R_Plane_Fighter_02_F;
-    class O_R_Plane_Fighter_02_Stealth_F;
-    class O_R_Quadbike_01_F;
-    class O_R_Radar_System_02_F;
-    class O_R_RadioOperator_F;
-    class O_R_SAM_System_04_F;
-    class O_R_SDV_01_F;
-    class O_R_Soldier_AAA_F;
-    class O_R_Soldier_AAR_F;
-    class O_R_Soldier_AAT_F;
-    class O_R_Soldier_AHAT_F;
+    class O_APC_Tracked_02_AA_F;
+    class ghost_vehicle_O_R_APC_Wheeled_04_cannon_v2_F;
+    class O_Fighter_Pilot_F;
+    class O_GMG_01_A_F;
+    class O_GMG_01_F;
+    class O_GMG_01_high_F;
+    class O_HMG_01_A_F;
+    class O_HMG_01_F;
+    class O_HMG_01_high_F;
+    class O_Heli_Attack_02_dynamicLoadout_F;
+    class O_Heli_Light_02_unarmed_F;
+    class O_Heli_Transport_04_F;
+    class O_Heli_Transport_04_ammo_F;
+    class O_Heli_Transport_04_bench_F;
+    class O_Heli_Transport_04_box_F;
+    class O_Heli_Transport_04_covered_F;
+    class O_Heli_Transport_04_fuel_F;
+    class O_Heli_Transport_04_medevac_F;
+    class O_Heli_Transport_04_repair_F;
+    class O_LSV_02_AT_F;
+    class O_LSV_02_armed_F;
+    class O_LSV_02_unarmed_F;
+    class O_MBT_02_arty_F;
+    class O_MBT_02_cannon_F;
+    class O_MBT_04_cannon_F;
+    class O_MBT_04_command_F;
+    class O_MRAP_02_F;
+    class O_MRAP_02_gmg_F;
+    class O_MRAP_02_hmg_F;
+    class O_Mortar_01_F;
+    class O_Plane_CAS_02_dynamicLoadout_F;
+    class O_Plane_Fighter_02_F;
+    class O_Plane_Fighter_02_Stealth_F;
+    class O_Quadbike_01_F;
+    class O_Radar_System_02_F;
+    class O_SAM_System_04_F;
+    class O_SDV_01_F;
+    class O_Soldier_AAA_F;
+    class O_Soldier_AAR_F;
+    class O_Soldier_AAT_F;
+    class O_Soldier_AHAT_F;
     class O_R_Soldier_AR_F;
-    class O_R_Soldier_A_F;
-    class O_R_Soldier_CBRN_F;
-    class O_R_Soldier_CQ_F;
-    class O_R_Soldier_F;
+    class O_Soldier_A_F;
     class O_R_Soldier_GL_F;
-    class O_R_Soldier_HAT_F;
+    class O_Soldier_HAT_F;
     class O_R_Soldier_LAT_F;
-    class O_R_Soldier_PG_F;
-    class O_R_Soldier_SL_F;
+    class O_soldier_PG_F;
+    class O_Soldier_SL_F;
     class O_R_Soldier_TL_F;
-    class O_R_Soldier_lite_F;
-    class O_R_Soldier_unarmed_F;
-    class O_R_Static_AA_F;
-    class O_R_Static_AT_F;
-    class O_R_Static_Designator_02_F;
-    class O_R_Survivor_F;
-    class O_R_Truck_02_Ammo_F;
-    class O_R_Truck_02_F;
-    class O_R_Truck_02_MRL_F;
-    class O_R_Truck_02_box_F;
-    class O_R_Truck_02_cargo_F;
-    class O_R_Truck_02_flatbed_F;
-    class O_R_Truck_02_fuel_F;
-    class O_R_Truck_02_medical_F;
-    class O_R_Truck_02_transport_F;
-    class O_R_Truck_03_ammo_F;
-    class O_R_Truck_03_covered_F;
-    class O_R_Truck_03_fuel_F;
-    class O_R_Truck_03_medical_F;
-    class O_R_Truck_03_repair_F;
-    class O_R_Truck_03_transport_F;
-    class O_R_UAV_01_F;
-    class O_R_UAV_02_dynamicLoadout_F;
-    class O_R_UAV_06_F;
-    class O_R_UAV_06_medical_F;
-    class O_R_UGV_01_F;
-    class O_R_UGV_01_medical_F;
-    class O_R_UGV_01_rcws_F;
-    class O_R_UGV_02_Demining_F;
-    class O_R_crew_F;
-    class O_R_diver_F;
-    class O_R_diver_TL_F;
-    class O_R_diver_exp_F;
-    class O_R_engineer_F;
-    class O_R_ghillie_spotter_wdl_F;
-    class O_R_ghillie_wdl_F;
-    class O_R_helicrew_F;
-    class O_R_helipilot_F;
+    class O_Soldier_lite_F;
+    class O_Soldier_unarmed_F;
+    class O_static_AA_F;
+    class O_static_AT_F;
+    class O_Static_Designator_02_F;
+    class O_Survivor_F;
+    class O_Truck_03_ammo_F;
+    class O_Truck_03_covered_F;
+    class O_Truck_03_fuel_F;
+    class O_Truck_03_medical_F;
+    class O_Truck_03_repair_F;
+    class O_Truck_03_transport_F;
+    class O_UAV_01_F;
+    class O_UAV_02_dynamicLoadout_F;
+    class O_UAV_06_F;
+    class O_UAV_06_medical_F;
+    class O_UGV_01_F;
+    class O_UGV_01_rcws_F;
+    class O_UGV_02_Demining_F;
+    class O_crew_F;
+    class O_diver_F;
+    class O_diver_TL_F;
+    class O_diver_exp_F;
+    class O_engineer_F;
+    class O_helicrew_F;
+    class O_helipilot_F;
     class O_R_medic_F;
-    class O_R_officer_F;
+    class O_officer_F;
     class O_R_recon_AR_F;
-    class O_R_recon_CQ_F;
-    class O_R_recon_F;
+    class O_recon_F;
     class O_R_recon_GL_F;
     class O_R_recon_JTAC_F;
     class O_R_recon_LAT_F;
@@ -127,1395 +109,1674 @@ class CfgVehicles {
     class O_R_recon_TL_F;
     class O_R_recon_exp_F;
     class O_R_recon_medic_F;
-    class O_R_sniper_F;
-    class O_R_soldier_AA_F;
-    class O_R_soldier_AT_F;
+    class O_sniper_F;
+    class O_Soldier_AA_F;
+    class O_Soldier_AT_F;
     class O_R_soldier_M_F;
-    class O_R_soldier_UAV_02_lxWS_F;
-    class O_R_soldier_UAV_06_F;
-    class O_R_soldier_UAV_06_medical_F;
-    class O_R_soldier_UAV_F;
-    class O_R_soldier_UGV_02_Demining_F;
+    class O_soldier_UAV_06_F;
+    class O_soldier_UAV_06_medical_F;
+    class O_soldier_UAV_F;
     class O_R_soldier_exp_F;
-    class O_R_soldier_mine_F;
-    class O_R_soldier_repair_F;
-    class O_R_spotter_F;
-    class O_R_support_AMG_F;
-    class O_R_support_AMort_F;
-    class O_R_support_GMG_F;
-    class O_R_support_MG_F;
-    class O_R_support_Mort_F;
+    class O_soldier_mine_F;
+    class O_soldier_repair_F;
+    class O_support_AMG_F;
+    class O_support_AMort_F;
+    class O_support_GMG_F;
+    class O_support_MG_F;
+    class O_support_Mort_F;
     class ghost_antiship_launcher;
     class ghost_antiship_radar;
+    class qav_o_t_625e;
 
-    class ghost_Russia_AddGis_O_R_Heli_EC_01A_military_F: AddGis_O_R_Heli_EC_01A_military_F {
+    class GVAR(AddGis_O_R_Heli_EC_01A_military_F): O_Heli_Light_02_dynamicLoadout_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mi-33 Sova (Unarmed)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_helipilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\Heli_Light_02\Heli_Light_02_ext_raven_CO.paa)
+        };
     };
-    class ghost_Russia_AddGis_O_R_Heli_EC_02_F: AddGis_O_R_Heli_EC_02_F {
+    class GVAR(AddGis_O_R_Heli_EC_02_F): O_Heli_Light_02_dynamicLoadout_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mi-33 Sova";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_helipilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\Heli_Light_02\Heli_Light_02_ext_raven_CO.paa)
+        };
     };
-    class ghost_Russia_Aegis_O_R_APC_Tracked_02_30mm_lxWS: Aegis_O_R_APC_Tracked_02_30mm_lxWS {
+    class GVAR(Aegis_O_R_APC_Tracked_02_30mm_lxWS): O_APC_Tracked_02_cannon_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "BTR-T Okhotnik";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_crew_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\APC_Tracked_02\APC_Tracked_02_ext_01_RUkhk_CO.paa),
+            QPATHTOF(data\APC_Tracked_02\APC_Tracked_02_ext_02_RUkhk_CO.paa),
+            QPATHTOF(data\APC_Tracked_02\RCWS30_RUkhk_CO.paa),
+            QPATHTOF(data\camonet_RUS_green_CO.paa),
+            QPATHTOF(data\cage_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_Aegis_O_R_BoatCrew_EF: Aegis_O_R_BoatCrew_EF {
+    class GVAR(Aegis_O_R_BoatCrew_EF): O_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Boat Crewman";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_aco_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_aco_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_aco_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_aco_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell"};
     };
-    class ghost_Russia_Aegis_O_R_Conscript_Repair_F: Aegis_O_R_Conscript_Repair_F {
+    class GVAR(Aegis_O_R_Conscript_Repair_F): O_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Pioneer";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
         editorSubcategory = "EdSubcat_Personnel";
         vehicleClass = "Men";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_F_snds","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_F_snds","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","HandGrenade_East","SmokeShell","SmokeShell"};
+        weapons[] = {QGVAR(arifle_AK12U_545_F_snds),"Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_F_snds),"Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_Aegis_O_R_Heli_Attack_04_F: Aegis_O_R_Heli_Attack_04_F {
+    class GVAR(Aegis_O_R_Heli_Attack_04_F): ghost_vehicle_O_R_Heli_Attack_04_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mi-35 Krokodil";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_helipilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\Heli_Attack_04\Skins\Heli_Attack_04_ext_01_grn_CO.paa),
+            QPATHTOF(data\Heli_Attack_04\Skins\Heli_Attack_04_ext_02_grn_CO.paa),
+            QPATHTOF(data\Heli_Attack_04\Skins\Heli_Attack_04_ext_03_grn_CO.paa)
+        };
     };
-    class ghost_Russia_Aegis_O_R_MBT_02_Railgun_F: Aegis_O_R_MBT_02_Railgun_F {
+    class GVAR(Aegis_O_R_MBT_02_Railgun_F): O_MBT_02_railgun_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "T-100X Futura";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_crew_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\MBT_02\MBT_02_body_RUkhk_CO.paa),
+            QPATHTOF(data\MBT_02\MBT_02_turret_RUkhk_CO.paa),
+            QPATHTOF(data\MBT_02\MBT_02_RUkhk_CO.paa),
+            QPATHTOF(data\camonet_RUS_green_CO.paa)
+        };
     };
-    class ghost_Russia_Aegis_O_R_Sharpshooter_F: Aegis_O_R_Sharpshooter_F {
+    class GVAR(Aegis_O_R_Sharpshooter_F): O_Sharpshooter_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Sharpshooter";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_srifle_DMR_05_DMS_LP_BI_F_snds","hgun_Rook40_F","Throw","Put","Rangefinder"};
-        respawnWeapons[] = {"ghost_Russia_srifle_DMR_05_DMS_LP_BI_F_snds","hgun_Rook40_F","Throw","Put","Rangefinder"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(srifle_DMR_05_DMS_LP_BI_F_snds),"hgun_Rook40_F","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {QGVAR(srifle_DMR_05_DMS_LP_BI_F_snds),"hgun_Rook40_F","Throw","Put","Rangefinder"};
+        magazines[] = {"FA_o_10Rnd_93x64_Type40_t3","FA_o_10Rnd_93x64_Type40_t3","FA_o_10Rnd_93x64_Type40_t3","FA_o_10Rnd_93x64_Type40_t3","FA_o_10Rnd_93x64_Type40_t3","FA_o_10Rnd_93x64_Type40_t3","FA_o_10Rnd_93x64_Type40_t3","FA_o_10Rnd_93x64_Type40_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_10Rnd_93x64_Type40_t3","FA_o_10Rnd_93x64_Type40_t3","FA_o_10Rnd_93x64_Type40_t3","FA_o_10Rnd_93x64_Type40_t3","FA_o_10Rnd_93x64_Type40_t3","FA_o_10Rnd_93x64_Type40_t3","FA_o_10Rnd_93x64_Type40_t3","FA_o_10Rnd_93x64_Type40_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_Aegis_O_R_Truck_02_aa_F: Aegis_O_R_Truck_02_aa_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "KamAZ (Zu-23-2)";
-        side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
-    };
-    class ghost_Russia_Aegis_O_R_UAV_02_lxWS: Aegis_O_R_UAV_02_lxWS {
+    class GVAR(Aegis_O_R_UAV_02_lxWS): O_UAV_02_lxWS {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Drofa AP-5";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };
-    class ghost_Russia_CF_O_R_ghillie_spotter_wdl_F: CF_O_R_ghillie_spotter_wdl_F {
+    class GVAR(CF_O_R_ghillie_spotter_wdl_F): O_spotter_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Spotter (Woodland)";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","ClaymoreDirectionalMine_Remote_Mag","APERSTripMine_Wire_Mag","MiniGrenade","MiniGrenade","O_IR_Grenade","O_IR_Grenade","Laserbatteries","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
+        respawnMagazines[] = {"FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","ClaymoreDirectionalMine_Remote_Mag","APERSTripMine_Wire_Mag","MiniGrenade","MiniGrenade","O_IR_Grenade","O_IR_Grenade","Laserbatteries","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
     };
-    class ghost_Russia_CF_O_R_ghillie_wdl_F: CF_O_R_ghillie_wdl_F {
+    class GVAR(CF_O_R_ghillie_wdl_F): ghost_uniform_O_R_ghillie_wdl_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Sniper (Woodland)";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
     };
-    class ghost_Russia_EF_O_CombatBoat_AT_OPF_R: EF_O_CombatBoat_AT_OPF_R {
+    class GVAR(EF_O_CombatBoat_AT_OPF_R): EF_O_CombatBoat_AT_OPF_R {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Combat Boat (AT)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_Aegis_O_R_BoatCrew_EF";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(Aegis_O_R_BoatCrew_EF);
     };
-    class ghost_Russia_EF_O_CombatBoat_HMG_OPF_R: EF_O_CombatBoat_HMG_OPF_R {
+    class GVAR(EF_O_CombatBoat_HMG_OPF_R): EF_O_CombatBoat_HMG_OPF_R {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Combat Boat (HMG)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_Aegis_O_R_BoatCrew_EF";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(Aegis_O_R_BoatCrew_EF);
     };
-    class ghost_Russia_EF_O_CombatBoat_Unarmed_OPF_R: EF_O_CombatBoat_Unarmed_OPF_R {
+    class GVAR(EF_O_CombatBoat_Unarmed_OPF_R): EF_O_CombatBoat_Unarmed_OPF_R {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Combat Boat (Unarmed)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_Aegis_O_R_BoatCrew_EF";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(Aegis_O_R_BoatCrew_EF);
     };
-    class ghost_Russia_O_R_APC_Tracked_02_AA_F: O_R_APC_Tracked_02_AA_F {
+    class GVAR(O_R_APC_Tracked_02_AA_F): O_APC_Tracked_02_AA_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "ZSU-35 Tigris";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_crew_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\APC_Tracked_02\APC_Tracked_02_ext_01_AA_RUkhk_CO.paa),
+            QPATHTOF(data\APC_Tracked_02\APC_Tracked_02_ext_02_RUkhk_CO.paa),
+            QPATHTOF(data\APC_Tracked_02\APC_Tracked_01_AA_Tower_RUkhk_CO.paa),
+            QPATHTOF(data\camonet_RUS_green_CO.paa),
+            QPATHTOF(data\cage_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_APC_Tracked_02_medical_F: O_R_APC_Tracked_02_medical_F {
+    class GVAR(O_R_APC_Tracked_02_medical_F): O_APC_Tracked_02_cannon_F {
         scope = 2;
+        attendant = 1;                  // a medical vehicle in fact, not in name only (user, 2026-09-19)
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "BM-2T Stalker (Medical)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_crew_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_F);
+        // a medical vehicle carries no gun (user, 2026-09-21): the BM-2T has no unarmed parent in the
+        // game, so its turret is emptied here - the smoke launchers stay
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                weapons[] = {"SmokeLauncher"};
+                magazines[] = {"SmokeLauncherMag"};
+            };
+        };
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\APC_Tracked_02\APC_Tracked_02_ext_01_RUkhk_CO.paa),
+            QPATHTOF(data\APC_Tracked_02\APC_Tracked_02_ext_02_RUkhk_CO.paa),
+            QPATHTOF(data\APC_Tracked_02\RCWS30_RUkhk_CO.paa),
+            QPATHTOF(data\camonet_RUS_green_CO.paa),
+            QPATHTOF(data\cage_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_APC_Wheeled_04_cannon_F: O_R_APC_Wheeled_04_cannon_F {
+    class GVAR(O_R_APC_Wheeled_04_cannon_F): ghost_vehicle_O_R_APC_Wheeled_04_cannon_v2_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "BTR-100 Bogatyr";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_crew_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\APC_Wheeled_04\APC_Wheeled_04_sprut_body_RUkhk_CO.paa),
+            QPATHTOF(data\APC_Wheeled_04\APC_Wheeled_04_body2_RUkhk_CO.paa),
+            QPATHTOF(data\APC_Wheeled_04\apc_wheeled_04_sprut_turret_co.paa),
+            QPATHTOF(data\camonet_RUS_green_CO.paa),
+            QPATHTOF(data\cage_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_APC_Wheeled_04_cannon_v2_F: O_R_APC_Wheeled_04_cannon_v2_F {
+    class GVAR(O_R_APC_Wheeled_04_cannon_v2_F): ghost_vehicle_O_R_APC_Wheeled_04_cannon_v2_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "2S90M Nosorog";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_crew_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\APC_Wheeled_04\APC_Wheeled_04_sprut_body_RUkhk_CO.paa),
+            QPATHTOF(data\APC_Wheeled_04\APC_Wheeled_04_body2_RUkhk_CO.paa),
+            QPATHTOF(data\APC_Wheeled_04\apc_wheeled_04_sprut_turret_co.paa),
+            QPATHTOF(data\camonet_RUS_green_CO.paa),
+            QPATHTOF(data\cage_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_Fighter_Pilot_F: O_R_Fighter_Pilot_F {
+    class GVAR(O_R_Fighter_Pilot_F): O_Fighter_Pilot_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Fighter Pilot";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
+        magazines[] = {"17Rnd_9x21_Mag","17Rnd_9x21_Mag","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
+        respawnMagazines[] = {"17Rnd_9x21_Mag","17Rnd_9x21_Mag","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
     };
-    class ghost_Russia_O_R_GMG_01_A_F: O_R_GMG_01_A_F {
+    class GVAR(O_R_GMG_01_A_F): O_GMG_01_A_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "XM307A";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };
-    class ghost_Russia_O_R_GMG_01_F: O_R_GMG_01_F {
+    class GVAR(O_R_GMG_01_F): O_GMG_01_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "XM307";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };
-    class ghost_Russia_O_R_GMG_01_high_F: O_R_GMG_01_high_F {
+    class GVAR(O_R_GMG_01_high_F): O_GMG_01_high_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "XM307 (High)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };
-    class ghost_Russia_O_R_HMG_01_A_F: O_R_HMG_01_A_F {
+    class GVAR(O_R_HMG_01_A_F): O_HMG_01_A_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "XM312A";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };
-    class ghost_Russia_O_R_HMG_01_F: O_R_HMG_01_F {
+    class GVAR(O_R_HMG_01_F): O_HMG_01_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "XM312";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };
-    class ghost_Russia_O_R_HMG_01_high_F: O_R_HMG_01_high_F {
+    class GVAR(O_R_HMG_01_high_F): O_HMG_01_high_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "XM312 (High)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };
-    class ghost_Russia_O_R_Heli_Attack_02_dynamicLoadout_F: O_R_Heli_Attack_02_dynamicLoadout_F {
+    class GVAR(O_R_Heli_Attack_02_dynamicLoadout_F): O_Heli_Attack_02_dynamicLoadout_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mi-48 Kajman";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_helipilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\Heli_Attack_02\Heli_Attack_02_body1_grn_CO.paa),
+            QPATHTOF(data\Heli_Attack_02\Heli_Attack_02_body2_grn_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_Heli_Light_02_dynamicLoadout_F: O_R_Heli_Light_02_dynamicLoadout_F {
+    class GVAR(O_R_Heli_Light_02_dynamicLoadout_F): O_Heli_Light_02_dynamicLoadout_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Ka-60 Kasatka";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_helipilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\Heli_Light_02\Heli_Light_02_ext_raven_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_Heli_Light_02_unarmed_F: O_R_Heli_Light_02_unarmed_F {
+    class GVAR(O_R_Heli_Light_02_unarmed_F): O_Heli_Light_02_unarmed_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Ka-60 Kasatka (unarmed)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_helipilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\Heli_Light_02\Heli_Light_02_ext_raven_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_Heli_Transport_04_F: O_R_Heli_Transport_04_F {
+    class GVAR(O_R_Heli_Transport_04_F): O_Heli_Transport_04_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mi-290 Tuskar";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_helipilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_F);
+        // camo: Russian Green (made from Black (Helicopters))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_01_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_02_Black_rusgreen_co.paa)
+        };
     };
-    class ghost_Russia_O_R_Heli_Transport_04_ammo_F: O_R_Heli_Transport_04_ammo_F {
+    class GVAR(O_R_Heli_Transport_04_ammo_F): O_Heli_Transport_04_ammo_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mi-290 Tuskar (Ammo)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_helipilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_F);
+        // camo: Russian Green (made from Black (Helicopters))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_01_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_02_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext01_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext02_Black_rusgreen_co.paa)
+        };
     };
-    class ghost_Russia_O_R_Heli_Transport_04_bench_F: O_R_Heli_Transport_04_bench_F {
+    class GVAR(O_R_Heli_Transport_04_bench_F): O_Heli_Transport_04_bench_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mi-290 Tuskar (Bench)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_helipilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_F);
+        // camo: Russian Green (made from Black (Helicopters))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_01_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_02_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_bench_Black_rusgreen_co.paa)
+        };
     };
-    class ghost_Russia_O_R_Heli_Transport_04_box_F: O_R_Heli_Transport_04_box_F {
+    class GVAR(O_R_Heli_Transport_04_box_F): O_Heli_Transport_04_box_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mi-290 Tuskar (Cargo)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_helipilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_F);
+        // camo: Russian Green (made from Black (Helicopters))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_01_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_02_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext01_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext02_Black_rusgreen_co.paa)
+        };
     };
-    class ghost_Russia_O_R_Heli_Transport_04_covered_F: O_R_Heli_Transport_04_covered_F {
+    class GVAR(O_R_Heli_Transport_04_covered_F): O_Heli_Transport_04_covered_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mi-290 Tuskar (Transport)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_helipilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_F);
+        // camo: Russian Green (made from Black (Helicopters))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_01_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_02_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext01_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext02_Black_rusgreen_co.paa)
+        };
     };
-    class ghost_Russia_O_R_Heli_Transport_04_fuel_F: O_R_Heli_Transport_04_fuel_F {
+    class GVAR(O_R_Heli_Transport_04_fuel_F): O_Heli_Transport_04_fuel_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mi-290 Tuskar (Fuel)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_helipilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_F);
+        // camo: Russian Green (made from Black (Helicopters))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_01_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_02_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_fuel_black_rusgreen_co.paa)
+        };
     };
-    class ghost_Russia_O_R_Heli_Transport_04_medevac_F: O_R_Heli_Transport_04_medevac_F {
+    class GVAR(O_R_Heli_Transport_04_medevac_F): O_Heli_Transport_04_medevac_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mi-290 Tuskar (Medical)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_helipilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_F);
+        // camo: Russian Green (made from Black (Helicopters))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_01_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_02_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext01_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext02_Black_rusgreen_co.paa)
+        };
     };
-    class ghost_Russia_O_R_Heli_Transport_04_repair_F: O_R_Heli_Transport_04_repair_F {
+    class GVAR(O_R_Heli_Transport_04_repair_F): O_Heli_Transport_04_repair_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mi-290 Tuskar (Repair)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_helipilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_F);
+        // camo: Russian Green (made from Black (Helicopters))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_01_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_02_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext01_Black_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext02_Black_rusgreen_co.paa)
+        };
     };
-    class ghost_Russia_O_R_LSV_02_AT_F: O_R_LSV_02_AT_F {
+    class GVAR(O_R_LSV_02_AT_F): O_LSV_02_AT_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Takhion (AT)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\LSV_02\CSAT_LSV_01_RUkhk_CO.paa),
+            QPATHTOF(data\LSV_02\CSAT_LSV_02_RUkhk_CO.paa),
+            QPATHTOF(data\LSV_02\CSAT_LSV_03_RUkhk_CO.paa),
+            "\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa",
+            "\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"
+        };
     };
-    class ghost_Russia_O_R_LSV_02_armed_F: O_R_LSV_02_armed_F {
+    class GVAR(O_R_LSV_02_armed_F): O_LSV_02_armed_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Takhion (Minigun)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\LSV_02\CSAT_LSV_01_RUkhk_CO.paa),
+            QPATHTOF(data\LSV_02\CSAT_LSV_02_RUkhk_CO.paa),
+            QPATHTOF(data\LSV_02\CSAT_LSV_03_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_LSV_02_unarmed_F: O_R_LSV_02_unarmed_F {
+    class GVAR(O_R_LSV_02_unarmed_F): O_LSV_02_unarmed_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Takhion (Unarmed)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\LSV_02\CSAT_LSV_01_RUkhk_CO.paa),
+            QPATHTOF(data\LSV_02\CSAT_LSV_02_RUkhk_CO.paa),
+            QPATHTOF(data\LSV_02\CSAT_LSV_03_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_MBT_02_arty_F: O_R_MBT_02_arty_F {
+    class GVAR(O_R_MBT_02_arty_F): O_MBT_02_arty_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "2S9 Sochor";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_crew_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\MBT_02\MBT_02_body_RUkhk_CO.paa),
+            QPATHTOF(data\MBT_02\MBT_02_scorcher_RUkhk_CO.paa),
+            QPATHTOF(data\MBT_02\MBT_02_RUkhk_CO.paa),
+            QPATHTOF(data\UGV_01\Turret_RUkhk_CO.paa),
+            QPATHTOF(data\camonet_RUS_green_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_MBT_02_cannon_F: O_R_MBT_02_cannon_F {
+    class GVAR(O_R_MBT_02_cannon_F): O_MBT_02_cannon_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "T100 Black Eagle";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_crew_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\MBT_02\MBT_02_body_RUkhk_CO.paa),
+            QPATHTOF(data\MBT_02\MBT_02_turret_RUkhk_CO.paa),
+            QPATHTOF(data\MBT_02\MBT_02_RUkhk_CO.paa),
+            QPATHTOF(data\camonet_RUS_green_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_MBT_04_cannon_F: O_R_MBT_04_cannon_F {
+    class GVAR(O_R_MBT_04_cannon_F): O_MBT_04_cannon_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "T-140 Angara";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_crew_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\MBT_04\MBT_04_exterior_RUkhk_1_CO.paa),
+            QPATHTOF(data\MBT_04\MBT_04_exterior_RUkhk_2_CO.paa),
+            QPATHTOF(data\camonet_RUS_green_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_MBT_04_command_F: O_R_MBT_04_command_F {
+    class GVAR(O_R_MBT_04_command_F): O_MBT_04_command_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "T-140K Angara";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_crew_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\MBT_04\MBT_04_exterior_RUkhk_1_CO.paa),
+            QPATHTOF(data\MBT_04\MBT_04_exterior_RUkhk_2_CO.paa),
+            "\A3\Armor_F_Tank\MBT_04\Data\MBT_04_command_CO.paa"
+        };
     };
-    class ghost_Russia_O_R_MRAP_02_F: O_R_MRAP_02_F {
+    class GVAR(O_R_MRAP_02_F): O_MRAP_02_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Galkin";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\MRAP_02\MRAP_02_ext_01_RUkhk_CO.paa),
+            QPATHTOF(data\MRAP_02\MRAP_02_ext_02_RUkhk_CO.paa),
+            QPATHTOF(data\UGV_01\Turret_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_MRAP_02_gmg_F: O_R_MRAP_02_gmg_F {
+    class GVAR(O_R_MRAP_02_gmg_F): O_MRAP_02_gmg_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Galkin GMG";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\MRAP_02\MRAP_02_ext_01_RUkhk_CO.paa),
+            QPATHTOF(data\MRAP_02\MRAP_02_ext_02_RUkhk_CO.paa),
+            QPATHTOF(data\UGV_01\Turret_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_MRAP_02_hmg_F: O_R_MRAP_02_hmg_F {
+    class GVAR(O_R_MRAP_02_hmg_F): O_MRAP_02_hmg_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Galkin HMG";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\MRAP_02\MRAP_02_ext_01_RUkhk_CO.paa),
+            QPATHTOF(data\MRAP_02\MRAP_02_ext_02_RUkhk_CO.paa),
+            QPATHTOF(data\UGV_01\Turret_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_Mortar_01_F: O_R_Mortar_01_F {
+    class GVAR(O_R_Mortar_01_F): O_Mortar_01_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mk6 Mortar";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };
-    class ghost_Russia_O_R_Plane_CAS_02_dynamicLoadout_F: O_R_Plane_CAS_02_dynamicLoadout_F {
+    class GVAR(O_R_Plane_CAS_02_dynamicLoadout_F): O_Plane_CAS_02_dynamicLoadout_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Yak-130";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Fighter_Pilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Fighter_Pilot_F);
     };
-    class ghost_Russia_O_R_Plane_Fighter_02_F: O_R_Plane_Fighter_02_F {
+    class GVAR(O_R_Plane_Fighter_02_F): O_Plane_Fighter_02_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "To-201 Shikra";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Fighter_Pilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Fighter_Pilot_F);
     };
-    class ghost_Russia_O_R_Plane_Fighter_02_Stealth_F: O_R_Plane_Fighter_02_Stealth_F {
+    class GVAR(O_R_Plane_Fighter_02_Stealth_F): O_Plane_Fighter_02_Stealth_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "To-201 Shikra (Stealth)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Fighter_Pilot_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Fighter_Pilot_F);
     };
-    class ghost_Russia_O_R_Quadbike_01_F: O_R_Quadbike_01_F {
+    class GVAR(O_R_Quadbike_01_F): O_Quadbike_01_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Quad Bike";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\Quadbike_01\Quadbike_01_RUkhk_CO.paa),
+            QPATHTOF(data\Quadbike_01\Quadbike_01_wheel_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_Radar_System_02_F: O_R_Radar_System_02_F {
+    class GVAR(O_R_Radar_System_02_F): O_Radar_System_02_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "R-750 Cronus Radar";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };
-    class ghost_Russia_O_R_RadioOperator_F: O_R_RadioOperator_F {
+    class GVAR(O_R_RadioOperator_F): O_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Radio Operator";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12_545_holo_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12_545_holo_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12_545_holo_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12_545_holo_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_SAM_System_04_F: O_R_SAM_System_04_F {
+    class GVAR(O_R_SAM_System_04_F): O_SAM_System_04_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "S-400";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };
-    class ghost_Russia_O_R_SDV_01_F: O_R_SDV_01_F {
+    class GVAR(O_R_SDV_01_F): O_SDV_01_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "SDV";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_diver_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_diver_F);
     };
-    class ghost_Russia_O_R_Soldier_AAA_F: O_R_Soldier_AAA_F {
+    class GVAR(O_R_Soldier_AAA_F): O_Soldier_AAA_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Asst. Missile Specialist (AA)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put","Rangefinder"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put","Rangefinder"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {QGVAR(arifle_AK12_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put","Rangefinder"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_Soldier_AAR_F: O_R_Soldier_AAR_F {
+    class GVAR(O_R_Soldier_AAR_F): O_Soldier_AAR_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Asst. Autorifleman";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put","Rangefinder"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put","Rangefinder"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {QGVAR(arifle_AK12_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put","Rangefinder"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_Soldier_AAT_F: O_R_Soldier_AAT_F {
+    class GVAR(O_R_Soldier_AAT_F): O_Soldier_AAT_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Asst. Missile Specialist (AT)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put","Rangefinder"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put","Rangefinder"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {QGVAR(arifle_AK12_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put","Rangefinder"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_Soldier_AHAT_F: O_R_Soldier_AHAT_F {
+    class GVAR(O_R_Soldier_AHAT_F): O_Soldier_AHAT_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Asst. Heavy AT";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put","Rangefinder"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put","Rangefinder"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {QGVAR(arifle_AK12_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put","Rangefinder"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_Soldier_AR_F: O_R_Soldier_AR_F {
+    class GVAR(O_R_Soldier_AR_F): O_R_Soldier_AR_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Autorifleman";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_Aegis_arifle_RPK12_545_arco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_Aegis_arifle_RPK12_545_arco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(Aegis_arifle_RPK12_545_arco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(Aegis_arifle_RPK12_545_arco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_Soldier_A_F: O_R_Soldier_A_F {
+    class GVAR(O_R_Soldier_A_F): O_Soldier_A_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Ammo Bearer";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_Soldier_CBRN_F: O_R_Soldier_CBRN_F {
+    class GVAR(O_R_Soldier_CBRN_F): O_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "CBRN Specialist";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_aco_flash_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_aco_flash_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_aco_flash_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_aco_flash_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_Soldier_CQ_F: O_R_Soldier_CQ_F {
+    class GVAR(O_R_Soldier_CQ_F): O_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Rifleman (Shotgun)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_sgun_Mp153_black_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_sgun_Mp153_black_F_snds","hgun_Rook40_F","Throw","Put"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(sgun_Mp153_black_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(sgun_Mp153_black_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_Soldier_F: O_R_Soldier_F {
+    class GVAR(O_R_Soldier_F): O_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Rifleman";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12_545_arco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12_545_arco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12_545_arco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12_545_arco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_Soldier_GL_F: O_R_Soldier_GL_F {
+    class GVAR(O_R_Soldier_GL_F): O_R_Soldier_GL_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Grenadier";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
         backpack = "O_UAV_06_backpack_F";
-        weapons[] = {"ghost_Russia_arifle_AK12_GL_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12_GL_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+        weapons[] = {QGVAR(arifle_AK12_GL_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12_GL_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
     };
-    class ghost_Russia_O_R_Soldier_HAT_F: O_R_Soldier_HAT_F {
+    class GVAR(O_R_Soldier_HAT_F): O_Soldier_HAT_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Rifleman (Heavy AT)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12_545_holo_pointer_F_snds","launch_O_Vorona_green_F","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12_545_holo_pointer_F_snds","launch_O_Vorona_green_F","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","Vorona_HEAT","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","Vorona_HEAT","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12_545_holo_pointer_F_snds),"launch_O_Vorona_green_F","hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12_545_holo_pointer_F_snds),"launch_O_Vorona_green_F","hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_Vorona_9M135M","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_Vorona_9M135M","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_Soldier_LAT_F: O_R_Soldier_LAT_F {
+    class GVAR(O_R_Soldier_LAT_F): O_R_Soldier_LAT_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Rifleman (AT)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12_545_holo_pointer_F_snds","launch_RPG32_green_F","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12_545_holo_pointer_F_snds","launch_RPG32_green_F","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","RPG32_F","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","RPG32_F","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12_545_holo_pointer_F_snds),"launch_RPG32_green_F","hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12_545_holo_pointer_F_snds),"launch_RPG32_green_F","hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_RPG32_PG32V2","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_RPG32_PG32V2","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_Soldier_PG_F: O_R_Soldier_PG_F {
+    class GVAR(O_R_Soldier_PG_F): O_soldier_PG_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Para Trooper";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12_545_arco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12_545_arco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12_545_arco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12_545_arco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_Soldier_SL_F: O_R_Soldier_SL_F {
+    class GVAR(O_R_Soldier_SL_F): O_Soldier_SL_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Squad Leader";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12_545_arco_pointer_F_snds","hgun_Rook40_F","Throw","Put","Binocular"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12_545_arco_pointer_F_snds","hgun_Rook40_F","Throw","Put","Binocular"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","30Rnd_545x39_AK12_Mag_Tracer_F","30Rnd_545x39_AK12_Mag_Tracer_F","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","30Rnd_545x39_AK12_Mag_Tracer_F","30Rnd_545x39_AK12_Mag_Tracer_F","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12_545_arco_pointer_F_snds),"hgun_Rook40_F","Throw","Put","Binocular"};
+        respawnWeapons[] = {QGVAR(arifle_AK12_545_arco_pointer_F_snds),"hgun_Rook40_F","Throw","Put","Binocular"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_T_Yellow_t3","FA_o_30Rnd_762x39_7N47_CT_T_Yellow_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_T_Yellow_t3","FA_o_30Rnd_762x39_7N47_CT_T_Yellow_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
     };
-    class ghost_Russia_O_R_Soldier_TL_F: O_R_Soldier_TL_F {
+    class GVAR(O_R_Soldier_TL_F): O_R_Soldier_TL_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Team Leader";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12_GL_545_arco_pointer_F_snds","hgun_Rook40_F","Throw","Put","Binocular"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12_GL_545_arco_pointer_F_snds","hgun_Rook40_F","Throw","Put","Binocular"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","30Rnd_545x39_AK12_Mag_Tracer_F","30Rnd_545x39_AK12_Mag_Tracer_F","17Rnd_9x21_Mag","17Rnd_9x21_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","30Rnd_545x39_AK12_Mag_Tracer_F","30Rnd_545x39_AK12_Mag_Tracer_F","17Rnd_9x21_Mag","17Rnd_9x21_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12_GL_545_arco_pointer_F_snds),"hgun_Rook40_F","Throw","Put","Binocular"};
+        respawnWeapons[] = {QGVAR(arifle_AK12_GL_545_arco_pointer_F_snds),"hgun_Rook40_F","Throw","Put","Binocular"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_T_Yellow_t3","FA_o_30Rnd_762x39_7N47_CT_T_Yellow_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_T_Yellow_t3","FA_o_30Rnd_762x39_7N47_CT_T_Yellow_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell"};
     };
-    class ghost_Russia_O_R_Soldier_lite_F: O_R_Soldier_lite_F {
+    class GVAR(O_R_Soldier_lite_F): O_Soldier_lite_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Rifleman (Light)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_F_snds","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_F_snds","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","HandGrenade_East","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","HandGrenade_East","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_F_snds),"Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_F_snds),"Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell"};
     };
-    class ghost_Russia_O_R_Soldier_unarmed_F: O_R_Soldier_unarmed_F {
+    class GVAR(O_R_Soldier_unarmed_F): O_Soldier_unarmed_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Rifleman (Unarmed)";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
     };
-    class ghost_Russia_O_R_Static_AA_F: O_R_Static_AA_F {
+    class GVAR(O_R_Static_AA_F): O_static_AA_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Static Titan Launcher (AA)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };
-    class ghost_Russia_O_R_Static_AT_F: O_R_Static_AT_F {
+    class GVAR(O_R_Static_AT_F): O_static_AT_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Static Titan Launcher (AT)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };
-    class ghost_Russia_O_R_Static_Designator_02_F: O_R_Static_Designator_02_F {
+    class GVAR(O_R_Static_Designator_02_F): O_Static_Designator_02_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Remote Designator";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };
-    class ghost_Russia_O_R_Survivor_F: O_R_Survivor_F {
+    class GVAR(O_R_Survivor_F): O_Survivor_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Survivor";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
     };
-    class ghost_Russia_O_R_Truck_02_Ammo_F: O_R_Truck_02_Ammo_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "KamAZ Ammo";
-        side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
-    };
-    class ghost_Russia_O_R_Truck_02_F: O_R_Truck_02_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "KamAZ Transport (covered)";
-        side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
-    };
-    class ghost_Russia_O_R_Truck_02_MRL_F: O_R_Truck_02_MRL_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Zamak MRL";
-        side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
-    };
-    class ghost_Russia_O_R_Truck_02_box_F: O_R_Truck_02_box_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "KamAZ Repair";
-        side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
-    };
-    class ghost_Russia_O_R_Truck_02_cargo_F: O_R_Truck_02_cargo_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "KamAZ Cargo";
-        side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
-    };
-    class ghost_Russia_O_R_Truck_02_flatbed_F: O_R_Truck_02_flatbed_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "KamAZ Flatbed";
-        side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
-    };
-    class ghost_Russia_O_R_Truck_02_fuel_F: O_R_Truck_02_fuel_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "KamAZ Fuel";
-        side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
-    };
-    class ghost_Russia_O_R_Truck_02_medical_F: O_R_Truck_02_medical_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "KamAZ Medical";
-        side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
-    };
-    class ghost_Russia_O_R_Truck_02_transport_F: O_R_Truck_02_transport_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "KamAZ Transport";
-        side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
-    };
-    class ghost_Russia_O_R_Truck_03_ammo_F: O_R_Truck_03_ammo_F {
+    class GVAR(O_R_Truck_03_ammo_F): O_Truck_03_ammo_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Typhoon Ammo";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\Truck_03\Truck_03_ext01_RUkhk_CO.paa),
+            QPATHTOF(data\Truck_03\Truck_03_ext02_RUkhk_CO.paa),
+            QPATHTOF(data\Truck_03\Truck_03_cargo_RUkhk_CO.paa),
+            QPATHTOF(data\Truck_03\Containers_02_set_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_Truck_03_covered_F: O_R_Truck_03_covered_F {
+    class GVAR(O_R_Truck_03_covered_F): O_Truck_03_covered_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Typhoon Transport (covered)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\Truck_03\Truck_03_ext01_RUkhk_CO.paa),
+            QPATHTOF(data\Truck_03\Truck_03_ext02_RUkhk_CO.paa),
+            QPATHTOF(data\Truck_03\Truck_03_cargo_RUkhk_CO.paa),
+            QPATHTOF(data\Truck_03\Truck_03_cover_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_Truck_03_fuel_F: O_R_Truck_03_fuel_F {
+    class GVAR(O_R_Truck_03_fuel_F): O_Truck_03_fuel_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Typhoon Fuel";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\Truck_03\Truck_03_ext01_RUkhk_CO.paa),
+            QPATHTOF(data\Truck_03\Truck_03_ext02_RUkhk_CO.paa),
+            QPATHTOF(data\Truck_03\Truck_03_fuel_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_Truck_03_medical_F: O_R_Truck_03_medical_F {
+    class GVAR(O_R_Truck_03_medical_F): O_Truck_03_medical_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Typhoon Medical";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\Truck_03\Truck_03_ext01_RUkhk_CO.paa),
+            QPATHTOF(data\Truck_03\Truck_03_ext02_RUkhk_CO.paa),
+            QPATHTOF(data\Truck_03\Truck_03_cargo_RUkhk_CO.paa),
+            QPATHTOF(data\Truck_03\Truck_03_cover_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_Truck_03_repair_F: O_R_Truck_03_repair_F {
+    class GVAR(O_R_Truck_03_repair_F): O_Truck_03_repair_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Typhoon Repair";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\Truck_03\Truck_03_ext01_RUkhk_CO.paa),
+            QPATHTOF(data\Truck_03\Truck_03_ext02_RUkhk_CO.paa),
+            QPATHTOF(data\Truck_03\Truck_03_ammo_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_Truck_03_transport_F: O_R_Truck_03_transport_F {
+    class GVAR(O_R_Truck_03_transport_F): O_Truck_03_transport_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Typhoon Transport";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\Truck_03\Truck_03_ext01_RUkhk_CO.paa),
+            QPATHTOF(data\Truck_03\Truck_03_ext02_RUkhk_CO.paa),
+            QPATHTOF(data\Truck_03\Truck_03_cargo_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_UAV_01_F: O_R_UAV_01_F {
+    class GVAR(O_R_UAV_01_F): O_UAV_01_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Shukhov AR-2";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (made from Russia (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\uav_01\UAV_01_RUgrey_rusgreen_co.paa)
+        };
     };
-    class ghost_Russia_O_R_UAV_02_dynamicLoadout_F: O_R_UAV_02_dynamicLoadout_F {
+    class GVAR(O_R_UAV_02_dynamicLoadout_F): O_UAV_02_dynamicLoadout_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Sokol 3T";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };
-    class ghost_Russia_O_R_UAV_06_F: O_R_UAV_06_F {
+    class GVAR(O_R_UAV_06_F): O_UAV_06_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Katun AL-6";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (made from Russia (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\uav_06\O_R_UAV_06_medical_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\uav_06\O_R_UAV_06_medical_rusgreen_co.paa)
+        };
     };
-    class ghost_Russia_O_R_UAV_06_medical_F: O_R_UAV_06_medical_F {
+    class GVAR(O_R_UAV_06_medical_F): O_UAV_06_medical_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Katun AL-6 (Medical)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (made from Russia (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\uav_06\O_R_UAV_06_medical_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\uav_06\O_R_UAV_06_medical_rusgreen_co.paa)
+        };
     };
-    class ghost_Russia_O_R_UGV_01_F: O_R_UGV_01_F {
+    class GVAR(O_R_UGV_01_F): O_UGV_01_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "UGV Uran";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\UGV_01\UGV_01_ext_RUkhk_CO.paa),
+            QPATHTOF(data\UGV_01\UGV_01_int_RUkhk_CO.paa),
+            QPATHTOF(data\UGV_01\Turret_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_UGV_01_medical_F: O_R_UGV_01_medical_F {
+    class GVAR(O_R_UGV_01_medical_F): O_UGV_01_F {
         scope = 2;
+        attendant = 1;                  // a medical vehicle in fact, not in name only (user, 2026-09-19)
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "UGV Uran Medical";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\UGV_01\UGV_01_ext_RUkhk_CO.paa),
+            QPATHTOF(data\UGV_01\UGV_01_int_RUkhk_CO.paa),
+            QPATHTOF(data\UGV_01\Turret_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_UGV_01_rcws_F: O_R_UGV_01_rcws_F {
+    class GVAR(O_R_UGV_01_rcws_F): O_UGV_01_rcws_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "UGV Uran RCWS";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (Aegis's own Green)
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\UGV_01\UGV_01_ext_RUkhk_CO.paa),
+            QPATHTOF(data\UGV_01\UGV_01_int_RUkhk_CO.paa),
+            QPATHTOF(data\UGV_01\Turret_RUkhk_CO.paa)
+        };
     };
-    class ghost_Russia_O_R_UGV_02_Demining_F: O_R_UGV_02_Demining_F {
+    class GVAR(O_R_UGV_02_Demining_F): O_UGV_02_Demining_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Gremlin ED-1D";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
+        // camo: Russian Green (made from its own paint (Base game))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\ugv_02\ugv_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\ugv_02\tracks_rusgreen_co.paa),
+            "\a3\soft_f_enoch\ugv_02\data\ugv2_mdf_ca.paa"
+        };
     };
-    class ghost_Russia_O_R_crew_F: O_R_crew_F {
+    class GVAR(O_R_crew_F): O_crew_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Crewman";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_aco_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_aco_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_aco_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_aco_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell"};
     };
-    class ghost_Russia_O_R_diver_F: O_R_diver_F {
+    class GVAR(O_R_diver_F): O_diver_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Assault Diver";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
+        magazines[] = {"20Rnd_556x45_Stanag_green","20Rnd_556x45_Stanag_green","20Rnd_556x45_Stanag_green","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","17Rnd_9x21_Mag","17Rnd_9x21_Mag","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
+        respawnMagazines[] = {"20Rnd_556x45_Stanag_green","20Rnd_556x45_Stanag_green","20Rnd_556x45_Stanag_green","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","17Rnd_9x21_Mag","17Rnd_9x21_Mag","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
     };
-    class ghost_Russia_O_R_diver_TL_F: O_R_diver_TL_F {
+    class GVAR(O_R_diver_TL_F): O_diver_TL_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Diver Team Leader";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
+        magazines[] = {"20Rnd_556x45_Stanag_green","20Rnd_556x45_Stanag_green","20Rnd_556x45_Stanag_green","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","17Rnd_9x21_Mag","17Rnd_9x21_Mag","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow","Chemlight_red","Chemlight_red"};
+        respawnMagazines[] = {"20Rnd_556x45_Stanag_green","20Rnd_556x45_Stanag_green","20Rnd_556x45_Stanag_green","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","17Rnd_9x21_Mag","17Rnd_9x21_Mag","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow","Chemlight_red","Chemlight_red"};
     };
-    class ghost_Russia_O_R_diver_exp_F: O_R_diver_exp_F {
+    class GVAR(O_R_diver_exp_F): O_diver_exp_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Diver Explosive Specialist";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
+        magazines[] = {"20Rnd_556x45_Stanag_green","20Rnd_556x45_Stanag_green","20Rnd_556x45_Stanag_green","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","17Rnd_9x21_Mag","17Rnd_9x21_Mag","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
+        respawnMagazines[] = {"20Rnd_556x45_Stanag_green","20Rnd_556x45_Stanag_green","20Rnd_556x45_Stanag_green","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","17Rnd_9x21_Mag","17Rnd_9x21_Mag","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
     };
-    class ghost_Russia_O_R_engineer_F: O_R_engineer_F {
+    class GVAR(O_R_engineer_F): O_engineer_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Engineer";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_holo_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_holo_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_holo_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_holo_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
     };
-    class ghost_Russia_O_R_ghillie_spotter_wdl_F: O_R_ghillie_spotter_wdl_F {
+    class GVAR(O_R_ghillie_spotter_wdl_F): ghost_uniform_O_R_ghillie_wdl_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Spotter (Woodland)";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
     };
-    class ghost_Russia_O_R_ghillie_wdl_F: O_R_ghillie_wdl_F {
+    class GVAR(O_R_ghillie_wdl_F): ghost_uniform_O_R_ghillie_wdl_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Sniper (Woodland)";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
     };
-    class ghost_Russia_O_R_helicrew_F: O_R_helicrew_F {
+    class GVAR(O_R_helicrew_F): O_helicrew_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Helicopter Crew";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_aco_F_snds","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_aco_F_snds","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_aco_F_snds),"Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_aco_F_snds),"Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
     };
-    class ghost_Russia_O_R_helipilot_F: O_R_helipilot_F {
+    class GVAR(O_R_helipilot_F): O_helipilot_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Helicopter Pilot";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_Aegis_SMG_Gepard_blk_ACO_F_snds","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_Aegis_SMG_Gepard_blk_ACO_F_snds","Throw","Put"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(Aegis_SMG_Gepard_blk_ACO_F_snds),"Throw","Put"};
+        respawnWeapons[] = {QGVAR(Aegis_SMG_Gepard_blk_ACO_F_snds),"Throw","Put"};
+        magazines[] = {"FA_b_40Rnd_9x21_Gepard_Mk424_AP_t3","FA_b_40Rnd_9x21_Gepard_Mk424_AP_t3","FA_b_40Rnd_9x21_Gepard_Mk424_AP_t3","FA_b_40Rnd_9x21_Gepard_Mk424_AP_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
+        respawnMagazines[] = {"FA_b_40Rnd_9x21_Gepard_Mk424_AP_t3","FA_b_40Rnd_9x21_Gepard_Mk424_AP_t3","FA_b_40Rnd_9x21_Gepard_Mk424_AP_t3","FA_b_40Rnd_9x21_Gepard_Mk424_AP_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
     };
-    class ghost_Russia_O_R_medic_F: O_R_medic_F {
+    class GVAR(O_R_medic_F): O_R_medic_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Combat Life Saver";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12_545_holo_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12_545_holo_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12_545_holo_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12_545_holo_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange"};
     };
-    class ghost_Russia_O_R_officer_F: O_R_officer_F {
+    class GVAR(O_R_officer_F): O_officer_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Officer";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_F_snds","hgun_Rook40_F","Throw","Put","Binocular"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_F_snds","hgun_Rook40_F","Throw","Put","Binocular"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_F_snds),"hgun_Rook40_F","Throw","Put","Binocular"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_F_snds),"hgun_Rook40_F","Throw","Put","Binocular"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","SmokeShellRed","SmokeShellOrange","SmokeShellYellow"};
     };
-    class ghost_Russia_O_R_recon_AR_F: O_R_recon_AR_F {
+    class GVAR(O_R_recon_AR_F): O_R_recon_AR_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Autorifleman";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
+        respawnMagazines[] = {"FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","FA_o_75Rnd_762x39_7N43_Lush_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
     };
-    class ghost_Russia_O_R_recon_CQ_F: O_R_recon_CQ_F {
+    class GVAR(O_R_recon_CQ_F): O_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Scout (Shotgun)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_sgun_Mp153_black_F_snds","hgun_Rook40_snds_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_sgun_Mp153_black_F_snds","hgun_Rook40_snds_F","Throw","Put"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(sgun_Mp153_black_F_snds),"hgun_Rook40_snds_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(sgun_Mp153_black_F_snds),"hgun_Rook40_snds_F","Throw","Put"};
+        magazines[] = {"FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","FA_b_2Rnd_12g_No0_Buck","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_recon_F: O_R_recon_F {
+    class GVAR(O_R_recon_F): O_recon_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Scout";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
+        respawnMagazines[] = {"FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
     };
-    class ghost_Russia_O_R_recon_GL_F: O_R_recon_GL_F {
+    class GVAR(O_R_recon_GL_F): O_R_recon_GL_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Grenadier";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
         backpack = "O_UAV_06_backpack_F";
+        magazines[] = {"FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
     };
-    class ghost_Russia_O_R_recon_JTAC_F: O_R_recon_JTAC_F {
+    class GVAR(O_R_recon_JTAC_F): O_R_recon_JTAC_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon JTAC";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","MiniGrenade","MiniGrenade","O_IR_Grenade","O_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow","Chemlight_red","Chemlight_red"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","MiniGrenade","MiniGrenade","O_IR_Grenade","O_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow","Chemlight_red","Chemlight_red"};
     };
-    class ghost_Russia_O_R_recon_LAT_F: O_R_recon_LAT_F {
+    class GVAR(O_R_recon_LAT_F): O_R_recon_LAT_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Scout (AT)";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","FA_RPG32_PG32V2","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","FA_RPG32_PG32V2","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
     };
-    class ghost_Russia_O_R_recon_M_F: O_R_recon_M_F {
+    class GVAR(O_R_recon_M_F): O_R_recon_M_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Marksman";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
+        magazines[] = {"10Rnd_127x54_Mag","10Rnd_127x54_Mag","10Rnd_127x54_Mag","10Rnd_127x54_Mag","10Rnd_127x54_Mag","10Rnd_127x54_Mag","10Rnd_127x54_Mag","10Rnd_127x54_Mag","17Rnd_9x21_Mag","17Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
+        respawnMagazines[] = {"10Rnd_127x54_Mag","10Rnd_127x54_Mag","10Rnd_127x54_Mag","10Rnd_127x54_Mag","10Rnd_127x54_Mag","10Rnd_127x54_Mag","10Rnd_127x54_Mag","10Rnd_127x54_Mag","17Rnd_9x21_Mag","17Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
     };
-    class ghost_Russia_O_R_recon_TL_F: O_R_recon_TL_F {
+    class GVAR(O_R_recon_TL_F): O_R_recon_TL_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Team Leader";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow","Chemlight_red","Chemlight_red"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellRed","SmokeShellOrange","SmokeShellYellow","Chemlight_red","Chemlight_red"};
     };
-    class ghost_Russia_O_R_recon_exp_F: O_R_recon_exp_F {
+    class GVAR(O_R_recon_exp_F): O_R_recon_exp_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Demo Specialist";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
     };
-    class ghost_Russia_O_R_recon_medic_F: O_R_recon_medic_F {
+    class GVAR(O_R_recon_medic_F): O_R_recon_medic_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Paramedic";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange","Chemlight_red","Chemlight_red"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","FA_o_30Rnd_762x39_7N43_Lush_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange","Chemlight_red","Chemlight_red"};
     };
-    class ghost_Russia_O_R_sniper_F: O_R_sniper_F {
+    class GVAR(O_R_sniper_F): O_sniper_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Sniper";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
+        magazines[] = {"5Rnd_127x108_Mag","5Rnd_127x108_Mag","5Rnd_127x108_Mag","5Rnd_127x108_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","17Rnd_9x21_Mag","17Rnd_9x21_Mag","ClaymoreDirectionalMine_Remote_Mag","APERSTripMine_Wire_Mag","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
+        respawnMagazines[] = {"5Rnd_127x108_Mag","5Rnd_127x108_Mag","5Rnd_127x108_Mag","5Rnd_127x108_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","17Rnd_9x21_Mag","17Rnd_9x21_Mag","ClaymoreDirectionalMine_Remote_Mag","APERSTripMine_Wire_Mag","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
     };
-    class ghost_Russia_O_R_soldier_AA_F: O_R_soldier_AA_F {
+    class GVAR(O_R_soldier_AA_F): O_Soldier_AA_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Missile Specialist (AA)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_holo_pointer_F_snds","launch_O_Titan_camo_F","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_holo_pointer_F_snds","launch_O_Titan_camo_F","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","Titan_AA","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","Titan_AA","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_holo_pointer_F_snds),"launch_O_Titan_F","hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_holo_pointer_F_snds),"launch_O_Titan_F","hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_Titan_AA_MIM165_Sentry","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_Titan_AA_MIM165_Sentry","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_soldier_AT_F: O_R_soldier_AT_F {
+    class GVAR(O_R_soldier_AT_F): O_Soldier_AT_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Missile Specialist (AT)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_holo_pointer_F_snds","launch_O_Titan_short_camo_F","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_holo_pointer_F_snds","launch_O_Titan_short_camo_F","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","Titan_AT","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","Titan_AT","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_holo_pointer_F_snds),"launch_O_Titan_short_F","hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_holo_pointer_F_snds),"launch_O_Titan_short_F","hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_Titan_AT_BGM185_Broadsword","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_Titan_AT_BGM185_Broadsword","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_soldier_M_F: O_R_soldier_M_F {
+    class GVAR(O_R_soldier_M_F): O_R_soldier_M_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Marksman";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_srifle_DMR_01_black_DMS_LP_BI_F_snds","hgun_Rook40_F","Throw","Put","Rangefinder"};
-        respawnWeapons[] = {"ghost_Russia_srifle_DMR_01_black_DMS_LP_BI_F_snds","hgun_Rook40_F","Throw","Put","Rangefinder"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(srifle_DMR_01_black_DMS_LP_BI_F_snds),"hgun_Rook40_F","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {QGVAR(srifle_DMR_01_black_DMS_LP_BI_F_snds),"hgun_Rook40_F","Throw","Put","Rangefinder"};
+        magazines[] = {"FA_o_10Rnd_762x54_Ball_HV_t3","FA_o_10Rnd_762x54_Ball_HV_t3","FA_o_10Rnd_762x54_Ball_HV_t3","FA_o_10Rnd_762x54_Ball_HV_t3","FA_o_10Rnd_762x54_Ball_HV_t3","FA_o_10Rnd_762x54_Ball_HV_t3","FA_o_10Rnd_762x54_Ball_HV_t3","FA_o_10Rnd_762x54_Ball_HV_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_10Rnd_762x54_Ball_HV_t3","FA_o_10Rnd_762x54_Ball_HV_t3","FA_o_10Rnd_762x54_Ball_HV_t3","FA_o_10Rnd_762x54_Ball_HV_t3","FA_o_10Rnd_762x54_Ball_HV_t3","FA_o_10Rnd_762x54_Ball_HV_t3","FA_o_10Rnd_762x54_Ball_HV_t3","FA_o_10Rnd_762x54_Ball_HV_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_soldier_UAV_02_lxWS_F: O_R_soldier_UAV_02_lxWS_F {
+    class GVAR(O_R_soldier_UAV_02_lxWS_F): O_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "UAV Operator (AP-5)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_soldier_UAV_06_F: O_R_soldier_UAV_06_F {
+    class GVAR(O_R_soldier_UAV_06_F): O_soldier_UAV_06_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "UAV Operator (AL-6)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_soldier_UAV_06_medical_F: O_R_soldier_UAV_06_medical_F {
+    class GVAR(O_R_soldier_UAV_06_medical_F): O_soldier_UAV_06_medical_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "UAV Operator (AL-6, Medical)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_soldier_UAV_F: O_R_soldier_UAV_F {
+    class GVAR(O_R_soldier_UAV_F): O_soldier_UAV_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "UAV Operator";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_soldier_UGV_02_Demining_F: O_R_soldier_UGV_02_Demining_F {
+    class GVAR(O_R_soldier_UGV_02_Demining_F): O_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "UGV Operator (ED-1D)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_soldier_exp_F: O_R_soldier_exp_F {
+    class GVAR(O_R_soldier_exp_F): O_R_soldier_exp_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Explosive Specialist";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_holo_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_holo_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_holo_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_holo_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_soldier_mine_F: O_R_soldier_mine_F {
+    class GVAR(O_R_soldier_mine_F): O_soldier_mine_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Mine Specialist";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_holo_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_holo_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_holo_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_holo_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_soldier_repair_F: O_R_soldier_repair_F {
+    class GVAR(O_R_soldier_repair_F): O_soldier_repair_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Repair Specialist";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_holo_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_holo_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_holo_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_holo_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_spotter_F: O_R_spotter_F {
+    class GVAR(O_R_spotter_F): O_spotter_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Spotter";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
+        magazines[] = {"FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","ClaymoreDirectionalMine_Remote_Mag","APERSTripMine_Wire_Mag","MiniGrenade","MiniGrenade","O_IR_Grenade","O_IR_Grenade","Laserbatteries","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
+        respawnMagazines[] = {"FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","FA_o_30Rnd_62_DBP25_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","ClaymoreDirectionalMine_Remote_Mag","APERSTripMine_Wire_Mag","MiniGrenade","MiniGrenade","O_IR_Grenade","O_IR_Grenade","Laserbatteries","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
     };
-    class ghost_Russia_O_R_support_AMG_F: O_R_support_AMG_F {
+    class GVAR(O_R_support_AMG_F): O_support_AMG_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Asst. Gunner (HMG/GMG)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_support_AMort_F: O_R_support_AMort_F {
+    class GVAR(O_R_support_AMort_F): O_support_AMort_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Asst. Gunner (Mk6)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_support_GMG_F: O_R_support_GMG_F {
+    class GVAR(O_R_support_GMG_F): O_support_GMG_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Gunner (GMG)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_support_MG_F: O_R_support_MG_F {
+    class GVAR(O_R_support_MG_F): O_support_MG_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Gunner (HMG)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_O_R_support_Mort_F: O_R_support_Mort_F {
+    class GVAR(O_R_support_Mort_F): O_support_Mort_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Gunner (Mk6)";
         side = 0;
-        faction = "ghost_Russia";
-        weapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        respawnWeapons[] = {"ghost_Russia_arifle_AK12U_545_aco_pointer_F_snds","hgun_Rook40_F","Throw","Put"};
-        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","FA_Aegis_30Rnd_545x39_7N44_t3","17Rnd_9x21_Mag","17Rnd_9x21_Mag","HandGrenade_East","HandGrenade_East","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        faction = QUOTE(ADDON);
+        weapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        respawnWeapons[] = {QGVAR(arifle_AK12U_545_aco_pointer_F_snds),"hgun_Rook40_F","Throw","Put"};
+        magazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_o_30Rnd_762x39_7N47_CT_t3","FA_o_30Rnd_762x39_7N47_CT_t3","O_IR_Grenade","O_IR_Grenade","SmokeShell","SmokeShell"};
     };
-    class ghost_Russia_ghost_antiship_launcher: ghost_antiship_launcher {
+    class GVAR(ghost_antiship_launcher): ghost_antiship_launcher {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "3K72 Burevestnik (Anti-Ship)";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };
-    class ghost_Russia_ghost_antiship_radar: ghost_antiship_radar {
+    class GVAR(ghost_antiship_radar): ghost_antiship_radar {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Surface Search Radar";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };
     // ---- fielded by this faction, not by its source ----
     // NEW CLASSES, NOT A SCRIPT. A man either is a drone
@@ -1524,99 +1785,104 @@ class CfgVehicles {
     // and group composition is CfgGroups' job.
 
     class B_T_UAV_03_dynamicLoadout_F;
-    class ghost_Russia_O_UAV_03_dynamicLoadout_F: B_T_UAV_03_dynamicLoadout_F {
+    class GVAR(O_UAV_03_dynamicLoadout_F): B_T_UAV_03_dynamicLoadout_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "MQ-12 Falcon";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
         crew = "O_UAV_AI";
+        // camo: Russian Green (made from its own paint (Base game))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\uav_03\UAV_03_1_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\uav_03\UAV_03_2_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\uav_03\uav_03_mlod_rusgreen_co.paa)
+        };
     };   // the Falcon, in the east
     class B_SwitchBlade_300;
-    class ghost_Russia_O_SwitchBlade_300: B_SwitchBlade_300 {
+    class GVAR(O_SwitchBlade_300): B_SwitchBlade_300 {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "SwitchBlade 300";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
         crew = "O_UAV_AI";
     };   // loitering munition - AI only, east and ind
     class B_SwitchBlade_600;
-    class ghost_Russia_O_SwitchBlade_600: B_SwitchBlade_600 {
+    class GVAR(O_SwitchBlade_600): B_SwitchBlade_600 {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "SwitchBlade 600";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
         crew = "O_UAV_AI";
     };   // the anti-armour one
     class B_SwitchBlade_300_LaunchTube_Woodland;
-    class ghost_Russia_O_SwitchBlade_300_LaunchTube: B_SwitchBlade_300_LaunchTube_Woodland {
+    class GVAR(O_SwitchBlade_300_LaunchTube): B_SwitchBlade_300_LaunchTube_Woodland {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "SwitchBlade 300 Launch Tube";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };   // emplaced
     class B_SwitchBlade_600_LaunchTube_Woodland;
-    class ghost_Russia_O_SwitchBlade_600_LaunchTube: B_SwitchBlade_600_LaunchTube_Woodland {
+    class GVAR(O_SwitchBlade_600_LaunchTube): B_SwitchBlade_600_LaunchTube_Woodland {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "SwitchBlade 600 Launch Tube";
         side = 0;
-        faction = "ghost_Russia";
-        crew = "ghost_Russia_O_R_Soldier_F";
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_F);
     };   // emplaced
-    class ghost_Russia_SwitchBlade_Operator: ghost_Russia_O_R_Soldier_F {
+    class GVAR(qav_o_t_625e): qav_o_t_625e {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "PGL-625E (Anti-Air)";
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_F);
+        // camo: Russian Green (made from Olive (Base game))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\qav_type08\625E_Hull_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\qav_type08\625E_wheels_rusgreen_co.paa),
+            QPATHTOF(data\camo\made\qav_type08\camonet_greenbeige_rusgreen_co.paa)
+        };
+    };
+    class GVAR(SwitchBlade_Operator): GVAR(O_R_Soldier_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "SwitchBlade Operator [RUS]";
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
         items[] += {"SwitchBlade_300_Tube_Woodland","SwitchBlade_600_Tube_Woodland"};
         respawnItems[] += {"SwitchBlade_300_Tube_Woodland","SwitchBlade_600_Tube_Woodland"};
     };   // carries the tubes DDT fires
     class rksla3_aeroshark_opfor;
-    class ghost_Russia_rksla3_aeroshark_opfor: rksla3_aeroshark_opfor {
+    class GVAR(rksla3_aeroshark_opfor): rksla3_aeroshark_opfor {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Aeroshark Mini UAV";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
     };   // RKSL's mini tactical UAV, east
-    class rksla3_uav_gdt_sa_o;
-    class ghost_Russia_rksla3_uav_gdt_sa_o: rksla3_uav_gdt_sa_o {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "UAV Ground Data Terminal";
-        side = 0;
-        faction = "ghost_Russia";
-    };   // RKSL's GDT, east paint
-    class rksla3_uav_wkshelter_sa_o;
-    class ghost_Russia_rksla3_uav_wkshelter_sa_o: rksla3_uav_wkshelter_sa_o {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "UAV Ground Control Station";
-        side = 0;
-        faction = "ghost_Russia";
-    };   // RKSL's GCS shelter, east paint
     class RKSLA3_Static_Rapier_FSC_Launcher;
-    class ghost_Russia_O_Rapier_FSC_Launcher: RKSLA3_Static_Rapier_FSC_Launcher {
+    class GVAR(O_Rapier_FSC_Launcher): RKSLA3_Static_Rapier_FSC_Launcher {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Rapier FSC Launcher";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
         crew = "O_UAV_AI";
         // RKSL files these under its own Ground Based Air Defence heading;
         // put them with the rest of the statics, under Turrets.
@@ -1624,13 +1890,13 @@ class CfgVehicles {
         editorSubcategory = "EdSubcat_Turrets";
     };   // the battery's launcher
     class RKSLA3_Static_Rapier_FSC_Blindfire;
-    class ghost_Russia_O_Rapier_FSC_Blindfire: RKSLA3_Static_Rapier_FSC_Blindfire {
+    class GVAR(O_Rapier_FSC_Blindfire): RKSLA3_Static_Rapier_FSC_Blindfire {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Rapier FSC Blindfire FCR";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
         crew = "O_UAV_AI";
         // RKSL files these under its own Ground Based Air Defence heading;
         // put them with the rest of the statics, under Turrets.
@@ -1638,25 +1904,25 @@ class CfgVehicles {
         editorSubcategory = "EdSubcat_Turrets";
     };   // its fire-control radar
     class RKSLA3_Static_Rapier_FSC_Dagger;
-    class ghost_Russia_O_Rapier_FSC_Dagger: RKSLA3_Static_Rapier_FSC_Dagger {
+    class GVAR(O_Rapier_FSC_Dagger): RKSLA3_Static_Rapier_FSC_Dagger {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Rapier FSC Dagger SR";
         side = 0;
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
         crew = "O_UAV_AI";
         // RKSL files these under its own Ground Based Air Defence heading;
         // put them with the rest of the statics, under Turrets.
         vehicleClass = "Static";
         editorSubcategory = "EdSubcat_Turrets";
     };   // its surveillance radar
-    class ghost_Russia_Drone_Operator: ghost_Russia_O_R_Soldier_F {
+    class GVAR(Drone_Operator): GVAR(O_R_Soldier_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Drone Operator [Russia]";
-        faction = "ghost_Russia";
+        faction = QUOTE(ADDON);
         backpack = "O_UAV_01_backpack_F";
     };   // the squad's drones - see SQUAD_DRONES
 

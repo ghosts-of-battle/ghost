@@ -8,7 +8,7 @@
 class CfgFactionClasses {
     class NO_CATEGORY;
 
-    class ghost_Syndikat: NO_CATEGORY {
+    class ADDON: NO_CATEGORY {
         displayName = "2040 Syndikat";
         author = QAUTHOR;
         side = 2;

@@ -6,231 +6,231 @@
 class CfgGroups {
     class West {
 
-        class ghost_HIMF {
+        class ADDON {
             name = "2040 HIMF";
 
             class Infantry {
                 name = "Infantry";
 
-                class ghost_HIMF_InfSentry {
+                class GVAR(InfSentry) {
                     name = "Sentry";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Grenadier";
+                        vehicle = QGVAR(Grenadier);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Rifleman";
+                        vehicle = QGVAR(Rifleman);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
                 };
 
-                class ghost_HIMF_InfSquad {
+                class GVAR(InfSquad) {
                     name = "Rifle Squad";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_SquadLeader";
+                        vehicle = QGVAR(SquadLeader);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_RadioOperator";
+                        vehicle = QGVAR(RadioOperator);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Rifleman_AT";
+                        vehicle = QGVAR(Rifleman_AT);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Marksman";
+                        vehicle = QGVAR(Marksman);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_HIMF_TeamLeader";
+                        vehicle = QGVAR(TeamLeader);
                         rank = "CORPORAL";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Autorifleman";
+                        vehicle = QGVAR(Autorifleman);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 1;
-                        vehicle = "ghost_HIMF_AmmoBearer";
+                        vehicle = QGVAR(AmmoBearer);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Medic";
+                        vehicle = QGVAR(Medic);
                         rank = "CORPORAL";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 1;
-                        vehicle = "ghost_HIMF_UAVOperator";
+                        vehicle = QGVAR(UAVOperator);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
                 };
 
-                class ghost_HIMF_InfSquad_Weapons {
+                class GVAR(InfSquad_Weapons) {
                     name = "Weapons Squad";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_SquadLeader";
+                        vehicle = QGVAR(SquadLeader);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Autorifleman";
+                        vehicle = QGVAR(Autorifleman);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Grenadier";
+                        vehicle = QGVAR(Grenadier);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Marksman";
+                        vehicle = QGVAR(Marksman);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Rifleman_AT";
+                        vehicle = QGVAR(Rifleman_AT);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_HIMF_HeavyGunner";
+                        vehicle = QGVAR(HeavyGunner);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 1;
-                        vehicle = "ghost_HIMF_AmmoBearer";
+                        vehicle = QGVAR(AmmoBearer);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Medic";
+                        vehicle = QGVAR(Medic);
                         rank = "CORPORAL";
                         position[] = {20,-20,0};
                     };
                 };
 
-                class ghost_HIMF_InfTeam {
+                class GVAR(InfTeam) {
                     name = "Fire Team";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_TeamLeader";
+                        vehicle = QGVAR(TeamLeader);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Autorifleman";
+                        vehicle = QGVAR(Autorifleman);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Grenadier";
+                        vehicle = QGVAR(Grenadier);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Rifleman_AT";
+                        vehicle = QGVAR(Rifleman_AT);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_HIMF_InfTeam_AT {
+                class GVAR(InfTeam_AT) {
                     name = "Anti-armor Team";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_TeamLeader";
+                        vehicle = QGVAR(TeamLeader);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Rifleman_AT";
+                        vehicle = QGVAR(Rifleman_AT);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Rifleman_AT";
+                        vehicle = QGVAR(Rifleman_AT);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_HIMF_AmmoBearer";
+                        vehicle = QGVAR(AmmoBearer);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
@@ -241,141 +241,141 @@ class CfgGroups {
             class Mechanized {
                 name = "Mechanized";
 
-                class ghost_HIMF_MechInfSquad {
+                class GVAR(MechInfSquad) {
                     name = "Mechanized Rifle Squad";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_mech_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_APC_HMG";
+                        vehicle = QGVAR(APC_HMG);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_SquadLeader";
+                        vehicle = QGVAR(SquadLeader);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_HIMF_RadioOperator";
+                        vehicle = QGVAR(RadioOperator);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Rifleman_AT";
+                        vehicle = QGVAR(Rifleman_AT);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Marksman";
+                        vehicle = QGVAR(Marksman);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_HIMF_TeamLeader";
+                        vehicle = QGVAR(TeamLeader);
                         rank = "CORPORAL";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Autorifleman";
+                        vehicle = QGVAR(Autorifleman);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 1;
-                        vehicle = "ghost_HIMF_AmmoBearer";
+                        vehicle = QGVAR(AmmoBearer);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Medic";
+                        vehicle = QGVAR(Medic);
                         rank = "CORPORAL";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 1;
-                        vehicle = "ghost_HIMF_UAVOperator";
+                        vehicle = QGVAR(UAVOperator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
                 };
 
-                class ghost_HIMF_MechInf_Support {
+                class GVAR(MechInf_Support) {
                     name = "Mechanized Support Squad";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_mech_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_APC_HMG";
+                        vehicle = QGVAR(APC_HMG);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_SquadLeader";
+                        vehicle = QGVAR(SquadLeader);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Rifleman";
+                        vehicle = QGVAR(Rifleman);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Engineer";
+                        vehicle = QGVAR(Engineer);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Medic";
+                        vehicle = QGVAR(Medic);
                         rank = "CORPORAL";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Autorifleman";
+                        vehicle = QGVAR(Autorifleman);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 1;
-                        vehicle = "ghost_HIMF_ExplosiveSpecialist";
+                        vehicle = QGVAR(ExplosiveSpecialist);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 1;
-                        vehicle = "ghost_HIMF_AmmoBearer";
+                        vehicle = QGVAR(AmmoBearer);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
@@ -386,337 +386,337 @@ class CfgGroups {
             class Motorized {
                 name = "Motorized";
 
-                class ghost_HIMF_MotInf_AA {
+                class GVAR(MotInf_AA) {
                     name = "Motorized Air-defense Team";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_motor_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Offroad";
+                        vehicle = QGVAR(Offroad);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Rifleman_AA";
+                        vehicle = QGVAR(Rifleman_AA);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Rifleman_AAA";
+                        vehicle = QGVAR(Rifleman_AAA);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
                 };
 
-                class ghost_HIMF_MotInf_AT {
+                class GVAR(MotInf_AT) {
                     name = "Motorized Anti-armor Team";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_motor_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Offroad_AT";
+                        vehicle = QGVAR(Offroad_AT);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Rifleman_AT";
+                        vehicle = QGVAR(Rifleman_AT);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Rifleman";
+                        vehicle = QGVAR(Rifleman);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
                 };
 
-                class ghost_HIMF_MotInf_MortTeam {
+                class GVAR(MotInf_MortTeam) {
                     name = "Motorized Mortar Team";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_motor_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Offroad";
+                        vehicle = QGVAR(Offroad);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_TeamLeader";
+                        vehicle = QGVAR(TeamLeader);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_HIMF_MortarGunner";
+                        vehicle = QGVAR(MortarGunner);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_HIMF_MortarAssistant";
+                        vehicle = QGVAR(MortarAssistant);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_HIMF_MotInf_Reinforcements {
+                class GVAR(MotInf_Reinforcements) {
                     name = "Motorized Reinforcements";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_motor_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Pickup_Covered";
+                        vehicle = QGVAR(Pickup_Covered);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Pickup_Covered";
+                        vehicle = QGVAR(Pickup_Covered);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_HIMF_SquadLeader";
+                        vehicle = QGVAR(SquadLeader);
                         rank = "SERGEANT";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_HIMF_RadioOperator";
+                        vehicle = QGVAR(RadioOperator);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Rifleman_AT";
+                        vehicle = QGVAR(Rifleman_AT);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Marksman";
+                        vehicle = QGVAR(Marksman);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 1;
-                        vehicle = "ghost_HIMF_TeamLeader";
+                        vehicle = QGVAR(TeamLeader);
                         rank = "CORPORAL";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Autorifleman";
+                        vehicle = QGVAR(Autorifleman);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 1;
-                        vehicle = "ghost_HIMF_AmmoBearer";
+                        vehicle = QGVAR(AmmoBearer);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Medic";
+                        vehicle = QGVAR(Medic);
                         rank = "CORPORAL";
                         position[] = {25,-25,0};
                     };
 
                     class Unit10 {
                         side = 1;
-                        vehicle = "ghost_HIMF_UAVOperator";
+                        vehicle = QGVAR(UAVOperator);
                         rank = "PRIVATE";
                         position[] = {-25,-25,0};
                     };
 
                     class Unit11 {
                         side = 1;
-                        vehicle = "ghost_HIMF_SquadLeader";
+                        vehicle = QGVAR(SquadLeader);
                         rank = "SERGEANT";
                         position[] = {30,-30,0};
                     };
 
                     class Unit12 {
                         side = 1;
-                        vehicle = "ghost_HIMF_RadioOperator";
+                        vehicle = QGVAR(RadioOperator);
                         rank = "PRIVATE";
                         position[] = {-30,-30,0};
                     };
 
                     class Unit13 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Rifleman_AT";
+                        vehicle = QGVAR(Rifleman_AT);
                         rank = "PRIVATE";
                         position[] = {35,-35,0};
                     };
 
                     class Unit14 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Marksman";
+                        vehicle = QGVAR(Marksman);
                         rank = "PRIVATE";
                         position[] = {-35,-35,0};
                     };
 
                     class Unit15 {
                         side = 1;
-                        vehicle = "ghost_HIMF_TeamLeader";
+                        vehicle = QGVAR(TeamLeader);
                         rank = "CORPORAL";
                         position[] = {40,-40,0};
                     };
 
                     class Unit16 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Autorifleman";
+                        vehicle = QGVAR(Autorifleman);
                         rank = "PRIVATE";
                         position[] = {-40,-40,0};
                     };
 
                     class Unit17 {
                         side = 1;
-                        vehicle = "ghost_HIMF_AmmoBearer";
+                        vehicle = QGVAR(AmmoBearer);
                         rank = "PRIVATE";
                         position[] = {45,-45,0};
                     };
 
                     class Unit18 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Medic";
+                        vehicle = QGVAR(Medic);
                         rank = "CORPORAL";
                         position[] = {-45,-45,0};
                     };
 
                     class Unit19 {
                         side = 1;
-                        vehicle = "ghost_HIMF_UAVOperator";
+                        vehicle = QGVAR(UAVOperator);
                         rank = "PRIVATE";
                         position[] = {50,-50,0};
                     };
                 };
 
-                class ghost_HIMF_MotInf_Squad {
+                class GVAR(MotInf_Squad) {
                     name = "Motorized Rifle Squad";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_motor_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Pickup_Covered";
+                        vehicle = QGVAR(Pickup_Covered);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_SquadLeader";
+                        vehicle = QGVAR(SquadLeader);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_HIMF_RadioOperator";
+                        vehicle = QGVAR(RadioOperator);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Rifleman_AT";
+                        vehicle = QGVAR(Rifleman_AT);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Marksman";
+                        vehicle = QGVAR(Marksman);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_HIMF_TeamLeader";
+                        vehicle = QGVAR(TeamLeader);
                         rank = "CORPORAL";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Autorifleman";
+                        vehicle = QGVAR(Autorifleman);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 1;
-                        vehicle = "ghost_HIMF_AmmoBearer";
+                        vehicle = QGVAR(AmmoBearer);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Medic";
+                        vehicle = QGVAR(Medic);
                         rank = "CORPORAL";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 1;
-                        vehicle = "ghost_HIMF_UAVOperator";
+                        vehicle = QGVAR(UAVOperator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
                 };
 
-                class ghost_HIMF_MotInf_Team {
+                class GVAR(MotInf_Team) {
                     name = "Motorized Team";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_motor_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Offroad_LMG";
+                        vehicle = QGVAR(Offroad_LMG);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Rifleman_AT";
+                        vehicle = QGVAR(Rifleman_AT);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
@@ -727,106 +727,106 @@ class CfgGroups {
             class SpecOps {
                 name = "SpecOps";
 
-                class ghost_HIMF_ReconPatrol {
+                class GVAR(ReconPatrol) {
                     name = "Recon Patrol";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\n_recon.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Recon_TL";
+                        vehicle = QGVAR(Recon_TL);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Recon_M";
+                        vehicle = QGVAR(Recon_M);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Recon_Medic";
+                        vehicle = QGVAR(Recon_Medic);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Recon";
+                        vehicle = QGVAR(Recon);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_HIMF_ReconSentry {
+                class GVAR(ReconSentry) {
                     name = "Recon Sentry";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\n_recon.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Recon_M";
+                        vehicle = QGVAR(Recon_M);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Recon";
+                        vehicle = QGVAR(Recon);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
                 };
 
-                class ghost_HIMF_ReconTeam {
+                class GVAR(ReconTeam) {
                     name = "Recon Team";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\n_recon.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Recon_TL";
+                        vehicle = QGVAR(Recon_TL);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Recon_M";
+                        vehicle = QGVAR(Recon_M);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Recon_Medic";
+                        vehicle = QGVAR(Recon_Medic);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Recon_AT";
+                        vehicle = QGVAR(Recon_AT);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Recon_JTAC";
+                        vehicle = QGVAR(Recon_JTAC);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Recon_Demo";
+                        vehicle = QGVAR(Recon_Demo);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
@@ -837,134 +837,134 @@ class CfgGroups {
             class Support {
                 name = "Support";
 
-                class ghost_HIMF_Support_CLS {
+                class GVAR(Support_CLS) {
                     name = "Support Team (CLS)";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_TeamLeader";
+                        vehicle = QGVAR(TeamLeader);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Autorifleman";
+                        vehicle = QGVAR(Autorifleman);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Medic";
+                        vehicle = QGVAR(Medic);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Medic";
+                        vehicle = QGVAR(Medic);
                         rank = "CORPORAL";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_HIMF_Support_ENG {
+                class GVAR(Support_ENG) {
                     name = "Support Team (Engineer)";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_TeamLeader";
+                        vehicle = QGVAR(TeamLeader);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Engineer";
+                        vehicle = QGVAR(Engineer);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Engineer";
+                        vehicle = QGVAR(Engineer);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Rifleman";
+                        vehicle = QGVAR(Rifleman);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_HIMF_Support_EOD {
+                class GVAR(Support_EOD) {
                     name = "Support Team (EOD)";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_TeamLeader";
+                        vehicle = QGVAR(TeamLeader);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_Engineer";
+                        vehicle = QGVAR(Engineer);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_HIMF_ExplosiveSpecialist";
+                        vehicle = QGVAR(ExplosiveSpecialist);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_HIMF_ExplosiveSpecialist";
+                        vehicle = QGVAR(ExplosiveSpecialist);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_HIMF_Support_Mort {
+                class GVAR(Support_Mort) {
                     name = "Mortar Team";
                     side = 1;
-                    faction = "ghost_HIMF";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_mortar.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_HIMF_TeamLeader";
+                        vehicle = QGVAR(TeamLeader);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_HIMF_MortarGunner";
+                        vehicle = QGVAR(MortarGunner);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_HIMF_MortarAssistant";
+                        vehicle = QGVAR(MortarAssistant);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };

@@ -18,7 +18,7 @@ may run more than once.
 
 ## Ships
 
-9 functions.
+10 functions.
 
 ## CBA settings
 
@@ -29,7 +29,7 @@ may run more than once.
 
 ## Functions
 
-<details><summary>9</summary>
+<details><summary>10</summary>
 
 - `ghost_respawn_fnc_addZeusModules`
 - `ghost_respawn_fnc_adjustTime`
@@ -37,6 +37,7 @@ may run more than once.
 - `ghost_respawn_fnc_disable`
 - `ghost_respawn_fnc_enable`
 - `ghost_respawn_fnc_forceRespawn`
+- `ghost_respawn_fnc_gearManaged`
 - `ghost_respawn_fnc_onPlayerKilled`
 - `ghost_respawn_fnc_onPlayerRespawn`
 - `ghost_respawn_fnc_toggle`

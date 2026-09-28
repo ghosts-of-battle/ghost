@@ -6,3 +6,4 @@
 // #define DISABLE_COMPILE_CACHE
 
 #include "\z\ghost\addons\main\script_macros.hpp"
+

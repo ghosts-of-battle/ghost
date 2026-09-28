@@ -8,12 +8,12 @@
  * Public: No
  */
 
-if (isNil QEGVAR(antidrone,AD_params)) exitWith {};
+if (isNil QEGVAR(fa_antidrone,AD_params)) exitWith {};
 
 // [trigger radius (m), lethal radius (m), max damage, effective range (m)]
 private _pab = [2, 1.5, 0.25, 1200];   // halved 2026-08 (PAB rebalance)
 {
-    EGVAR(antidrone,AD_params) set [_x, _pab];
+    EGVAR(fa_antidrone,AD_params) set [_x, _pab];
 } forEach [
     "FA_o_ammo_62_DBJ25_PAB",
     "FA_o_ammo_62_DBJ25_PAB_T_Red",

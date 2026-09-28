@@ -4,20 +4,20 @@
 // baseWeapon keep the arsenal showing the plain weapon, as the base
 // game's own presets do. No script: the man's weapons[] names the preset.
 class CfgWeapons {
-    class LMG_03_Arco_Pointer_F;
+    class LMG_03_F;
     class SMG_02_F;
-    class arifle_SCAR_L_F;
-    class arifle_SCAR_L_GL_F;
-    class arifle_SCAR_L_grip_F;
-    class arifle_SCAR_L_short_F;
+    class ghost_weapons_arifle_SCAR_L_F;
+    class ghost_weapons_arifle_SCAR_L_GL_F;
+    class ghost_weapons_arifle_SCAR_L_grip_F;
+    class ghost_weapons_arifle_SCAR_L_short_F;
     class hgun_P07_blk_F;
     class hgun_Rook40_F;
     class srifle_DMR_07_blk_DMS_F;
 
-    class ghost_Turkey_ind_LMG_03_Arco_Pointer_F_snds: LMG_03_Arco_Pointer_F {
+    class GVAR(LMG_03_Arco_Pointer_F_snds): LMG_03_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "LMG_03_Arco_Pointer_F";
+        baseWeapon = "LMG_03_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -25,7 +25,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_Turkey_ind_SMG_02_F_snds: SMG_02_F {
+    class GVAR(SMG_02_F_snds): SMG_02_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "SMG_02_F";
@@ -36,10 +36,10 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_Turkey_ind_arifle_SCAR_L_F_snds: arifle_SCAR_L_F {
+    class GVAR(arifle_SCAR_L_F_snds): ghost_weapons_arifle_SCAR_L_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "arifle_SCAR_L_F";
+        baseWeapon = "ghost_weapons_arifle_SCAR_L_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -47,10 +47,10 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_Turkey_ind_arifle_SCAR_L_GL_F_snds: arifle_SCAR_L_GL_F {
+    class GVAR(arifle_SCAR_L_GL_F_snds): ghost_weapons_arifle_SCAR_L_GL_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "arifle_SCAR_L_GL_F";
+        baseWeapon = "ghost_weapons_arifle_SCAR_L_GL_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -58,10 +58,10 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_Turkey_ind_arifle_SCAR_L_grip_F_snds: arifle_SCAR_L_grip_F {
+    class GVAR(arifle_SCAR_L_grip_F_snds): ghost_weapons_arifle_SCAR_L_grip_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "arifle_SCAR_L_grip_F";
+        baseWeapon = "ghost_weapons_arifle_SCAR_L_grip_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -69,10 +69,10 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_Turkey_ind_arifle_SCAR_L_short_F_snds: arifle_SCAR_L_short_F {
+    class GVAR(arifle_SCAR_L_short_F_snds): ghost_weapons_arifle_SCAR_L_short_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "arifle_SCAR_L_short_F";
+        baseWeapon = "ghost_weapons_arifle_SCAR_L_short_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -80,7 +80,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_Turkey_ind_hgun_P07_blk_F_snds: hgun_P07_blk_F {
+    class GVAR(hgun_P07_blk_F_snds): hgun_P07_blk_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "hgun_P07_blk_F";
@@ -91,7 +91,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_Turkey_ind_hgun_Rook40_F_snds: hgun_Rook40_F {
+    class GVAR(hgun_Rook40_F_snds): hgun_Rook40_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "hgun_Rook40_F";
@@ -102,7 +102,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_Turkey_ind_srifle_DMR_07_blk_DMS_F_snds: srifle_DMR_07_blk_DMS_F {
+    class GVAR(srifle_DMR_07_blk_DMS_F_snds): srifle_DMR_07_blk_DMS_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "srifle_DMR_07_blk_DMS_F";

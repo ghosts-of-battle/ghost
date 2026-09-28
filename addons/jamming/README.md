@@ -72,7 +72,7 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-1 unit class, 17 functions.
+2 unit classes, 19 functions.
 
 ## Eden modules
 
@@ -80,7 +80,7 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 `ghost_moduleJamming`, category ghost_modules
 
-Placing this module turns on jamming. Without it, the system is off.<br>Site Radius Min / Max (m) - every site rolls its own reach between the two Objectives With Jammers (%) - Share of a commander's objectives that get an emitter Max Jammers Per Side - Hard ceiling per commander whatever the share works out to GPS Denial - one uplink per commander steering a wandering 1-2 km GPS sphere Uplink Radius (m) - the uplink's own GPS field Masts Are ALiVE Objectives - off by default; the uplink always is Radio Burn-Through - a strong set beats a jammer, and is answered with a QRF Burn-Through Reference (mW) - the set power the field is calibrated against
+Placing this module turns on jamming. Without it, the system is off. It places no jammers - a Ghost - Jammer Site module does that, one per emitter.<br>Site Radius Min / Max (m) - every site rolls its own reach between the two GPS Denial - one uplink per commander steering a wandering 1-2 km GPS sphere Uplink Radius (m) - the uplink's own GPS field Radio Burn-Through - a strong set beats a jammer, and is answered with a QRF Burn-Through Reference (mW) - the set power the field is calibrated against
 
 <details><summary>6 attributes</summary>
 
@@ -93,10 +93,29 @@ Placing this module turns on jamming. Without it, the system is off.<br>Site Rad
 
 </details>
 
+### Ghost - Jammer Site
+
+`ghost_moduleJammerSite`, category ghost_modules
+
+One jammer site, where you place it. Needs the Ghost - Jamming module on the map to arm.<br>Spectrum - radio, data or gps. One per site Radius (m) - 0 rolls one from the Jamming module's bounds Side - who owns the emitter<br>Artillery Reply - the site shells whoever loiters in its field Reply Delay (s) - how long a hostile must stay inside before it fires Reply Rounds / Scatter (m) - the size of the mission and how wide it falls Reply Cooldown (s) - minimum gap between two missions from this site
+
+<details><summary>7 attributes</summary>
+
+- `artyCooldown`
+- `artyDelay`
+- `artyRounds`
+- `artyScatter`
+- `domain`
+- `jamSide`
+- `radius`
+
+</details>
+
 ## Functions
 
-<details><summary>17</summary>
+<details><summary>19</summary>
 
+- `ghost_jamming_fnc_artyReply`
 - `ghost_jamming_fnc_getZones`
 - `ghost_jamming_fnc_gpsApply`
 - `ghost_jamming_fnc_gpsDrift`
@@ -104,6 +123,7 @@ Placing this module turns on jamming. Without it, the system is off.<br>Site Rad
 - `ghost_jamming_fnc_jamHud`
 - `ghost_jamming_fnc_jammerLoop`
 - `ghost_jamming_fnc_moduleController`
+- `ghost_jamming_fnc_moduleJammerSite`
 - `ghost_jamming_fnc_productLocateJammer`
 - `ghost_jamming_fnc_pruneJammers`
 - `ghost_jamming_fnc_publishZones`

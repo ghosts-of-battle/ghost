@@ -4,10 +4,10 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         units[] = {
-            "ghost_MFRC_mtp_ReconScout",
-            "ghost_MFRC_ocp_ReconScout",
-            "ghost_MFRC_tna_ReconScout",
-            "ghost_MFRC_wdl_ReconScout"
+            QGVAR(mtp_ReconScout),
+            QGVAR(ocp_ReconScout),
+            QGVAR(tna_ReconScout),
+            QGVAR(wdl_ReconScout)
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;

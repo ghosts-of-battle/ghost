@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Port the futureAmmo mod into ghost as fa_* addons.
 
-    python tools/port_futureammo.py [--src D:/Git/futureAmmo] [--force]
+    python tools/port_futureammo.py [--src D:/Git/futureAmmo] [--force] [--only rearma_us ...]
 
 futureAmmo ships as its own mod under the `ghostfa` prefix. This copies it in
 under ghost's prefix so the ammunition travels with the mod that depends on it,
@@ -13,6 +13,9 @@ WHAT CHANGES, AND ONLY THIS:
   #define COMPONENT X           ->  #define COMPONENT fa_X
   the ghostfa main headers      ->  ghost's own main headers
   "ghostfa_Y" in requiredAddons ->  "ghost_fa_Y"
+  EGVAR/EFUNC(Y, ...)           ->  EGVAR/EFUNC(fa_Y, ...)   Y another futureAmmo addon
+  ghostfa_Y[] (a hand-spelled   ->  ghost_fa_Y[]
+    magazine-well array key)
 
 CLASSNAMES ARE NOT TOUCHED. FA_MRAWS_HE448_AB is FA_MRAWS_HE448_AB in both
 mods, and ghost's own configs already reference those names - the MAAWS gunner
@@ -39,6 +42,11 @@ ADDONS = os.path.join(ROOT, "addons")
 B = chr(92)
 
 TEXT_EXT = {".cpp", ".hpp", ".sqf", ".inc", ".xml", ".txt", ".ext", ""}
+
+# EGVAR / QEGVAR / EFUNC / QEFUNC / QQEGVAR ... naming a module, unless it is already fa_.
+CROSS = re.compile(r"\b(Q{0,2}E(?:GVAR|FUNC))\((?!fa_)(\w+),")
+# futureAmmo's addon names, filled from the source tree in main().
+FA_COMPONENTS = {"main"}
 
 
 def is_text(path):
@@ -68,11 +76,20 @@ def port_text(s, name):
     s = s.replace('#include "script_version.hpp"',
                   '#include "' + B + "z" + B + "ghost" + B + "addons" + B + "main" + B +
                   'script_version.hpp"')
-    # futureAmmo's own main, where an addon reaches for it
-    s = s.replace("EFUNC(main,", "EFUNC(fa_main,")
-    s = s.replace("QEFUNC(main,", "QEFUNC(fa_main,")
-    s = s.replace("EGVAR(main,", "EGVAR(fa_main,")
-    s = s.replace("QEGVAR(main,", "QEGVAR(fa_main,")
+    # Another futureAmmo addon, where this one reaches for it - main included.
+    # EGVAR(antidrone,AD_params) is TRIPLES(PREFIX,antidrone,AD_params), which is
+    # ghost_antidrone_AD_params; the ported addon's COMPONENT is fa_antidrone, so it
+    # publishes ghost_fa_antidrone_AD_params. Left alone, every `isNil
+    # QEGVAR(antidrone,...)` guard quietly exits and the round never registers; hemtt
+    # only notices the EFUNC half (L-S29). Only futureAmmo's own addon names are
+    # touched: EFUNC(notify,...) is ghost's.
+    s = CROSS.sub(lambda m: "%s(fa_%s," % (m.group(1), m.group(2))
+                  if m.group(2).lower() in FA_COMPONENTS else m.group(0), s)
+    # A magazine-well array spelled out by hand rather than through ADDON - the rearma
+    # addons share `ghostfa_rearma_ugl[]` on purpose, one key for the same list - is
+    # outside every macro and every quote above. Comments that merely mention an addon
+    # have no `[]` and stay as written, like the rest of the port's comments.
+    s = re.sub(r"\bghostfa_(\w+)\[\]", r"ghost_fa_\1[]", s)
     return s
 
 
@@ -80,6 +97,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", default=r"D:\Git\futureAmmo")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--only", nargs="+", metavar="ADDON",
+                    help="port just these futureAmmo addons (their futureAmmo names, e.g. rearma_us)")
     args = ap.parse_args()
 
     src_addons = os.path.join(args.src, "addons")
@@ -87,10 +106,18 @@ def main():
         print("no %s" % src_addons)
         return 1
 
+    FA_COMPONENTS.update(n.lower() for n in os.listdir(src_addons)
+                         if os.path.isdir(os.path.join(src_addons, n)))
     made = skipped = 0
+    only = {n.lower() for n in args.only} if args.only else None
+    if only:
+        absent = sorted(n for n in only if not os.path.isdir(os.path.join(src_addons, n)))
+        if absent:
+            print("not in %s: %s" % (src_addons, ", ".join(absent)))
+            return 1
     for name in sorted(os.listdir(src_addons)):
         s_dir = os.path.join(src_addons, name)
-        if not os.path.isdir(s_dir):
+        if not os.path.isdir(s_dir) or (only and name.lower() not in only):
             continue
         d_dir = os.path.join(ADDONS, "fa_" + name)
 

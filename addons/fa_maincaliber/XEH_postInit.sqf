@@ -22,9 +22,9 @@ private _p125mm = [15, 10, 0.8, 3000];
 // initEngine does for its own natures).
 {
     _x params ["_base", "_params"];
-    EGVAR(mediumcaliber,params) set [_base, _params];
+    EGVAR(fa_mediumcaliber,params) set [_base, _params];
     {
-        EGVAR(mediumcaliber,params) set [format ["%1_T_%2", _base, _x], _params];
+        EGVAR(fa_mediumcaliber,params) set [format ["%1_T_%2", _base, _x], _params];
     } forEach ["Red", "Yellow", "Green", "White", "Blue", "Orange", "IR"];
 } forEach [
     ["FA_Sh_105mm_HEATMP", _p105mm],

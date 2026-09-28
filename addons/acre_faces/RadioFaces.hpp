@@ -17,12 +17,20 @@
 // the requiredAddons in config.cpp are for, and why they are hard rather than
 // soft. skipWhenMissingDependencies drops the whole PBO on an ACRE-less server
 // rather than breaking the load order.
+//
+// The parent goes with the name. ACRE's plates are `FrontPanel:
+// Prc148_RscPicture` and `Prc152Background: Prc152_RscBackground` (root
+// classes in sys_prc148 / sys_prc152); reopening one without its parent
+// rebinds it to none and drops what it inherits - RPT "Updating base class
+// 'Prc148_RscPicture'->''".
+class Prc148_RscPicture;
+class Prc152_RscBackground;
 
 // PRC-148 - the team radio. Fourteen channels, one per element, written on the
 // battery pack in paint pen the way a man who has to remember them would.
 class PRC148_RadioDialog {
     class controls {
-        class FrontPanel {
+        class FrontPanel: Prc148_RscPicture {
             text = QPATHTOF(data\prc148_ui_backplate.paa);
         };
     };
@@ -32,7 +40,7 @@ class PRC148_RadioDialog {
 // frequencies down the right, because the man reading it is about to turn to
 // one of them.
 class Prc152_RadioDialog {
-    class Prc152Background {
+    class Prc152Background: Prc152_RscBackground {
         text = QPATHTOF(data\prc152c_ui.paa);
     };
 };

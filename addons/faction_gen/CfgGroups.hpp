@@ -8,178 +8,178 @@
 class CfgGroups {
     class West {
 
-        class ghost_GEN {
+        class ADDON {
             name = "2040 Gendarmerie";
 
             class Motorized {
                 name = "Motorized";
 
-                class ghost_GEN_Patrol_Comms {
+                class GVAR(Patrol_Comms) {
                     name = "Gendarmerie Patrol (Comms)";
                     side = 1;
-                    faction = "ghost_GEN";
+                    faction = QUOTE(ADDON);
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Offroad_01_comms_F";
+                        vehicle = QGVAR(B_GEN_Offroad_01_comms_F);
                         rank = "PRIVATE";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Commander_F";
+                        vehicle = QGVAR(B_GEN_Commander_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Soldier_F";
+                        vehicle = QGVAR(B_GEN_Soldier_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Soldier_F";
+                        vehicle = QGVAR(B_GEN_Soldier_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Soldier_F";
+                        vehicle = QGVAR(B_GEN_Soldier_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
                 };
 
-                class ghost_GEN_Patrol {
+                class GVAR(Patrol) {
                     name = "Gendarmerie Patrol";
                     side = 1;
-                    faction = "ghost_GEN";
+                    faction = QUOTE(ADDON);
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Offroad_01_covered_F";
+                        vehicle = QGVAR(B_GEN_Offroad_01_covered_F);
                         rank = "PRIVATE";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Commander_F";
+                        vehicle = QGVAR(B_GEN_Commander_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Soldier_F";
+                        vehicle = QGVAR(B_GEN_Soldier_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Soldier_F";
+                        vehicle = QGVAR(B_GEN_Soldier_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Soldier_F";
+                        vehicle = QGVAR(B_GEN_Soldier_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
                 };
 
-                class ghost_GEN_Patrol_Pickup {
+                class GVAR(Patrol_Pickup) {
                     name = "Gendarmerie Pickup Patrol";
                     side = 1;
-                    faction = "ghost_GEN";
+                    faction = QUOTE(ADDON);
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Pickup_covered_rf";
+                        vehicle = QGVAR(B_GEN_Pickup_covered_rf);
                         rank = "PRIVATE";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Commander_F";
+                        vehicle = QGVAR(B_GEN_Commander_F);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Soldier_F";
+                        vehicle = QGVAR(B_GEN_Soldier_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Soldier_F";
+                        vehicle = QGVAR(B_GEN_Soldier_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Soldier_F";
+                        vehicle = QGVAR(B_GEN_Soldier_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
                 };
 
-                class ghost_GEN_Section {
+                class GVAR(Section) {
                     name = "Gendarmerie Motorized Section";
                     side = 1;
-                    faction = "ghost_GEN";
+                    faction = QUOTE(ADDON);
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Offroad_01_comms_F";
+                        vehicle = QGVAR(B_GEN_Offroad_01_comms_F);
                         rank = "PRIVATE";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Offroad_01_covered_F";
+                        vehicle = QGVAR(B_GEN_Offroad_01_covered_F);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Commander_F";
+                        vehicle = QGVAR(B_GEN_Commander_F);
                         rank = "SERGEANT";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Soldier_F";
+                        vehicle = QGVAR(B_GEN_Soldier_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Soldier_F";
+                        vehicle = QGVAR(B_GEN_Soldier_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_GEN_B_GEN_Soldier_F";
+                        vehicle = QGVAR(B_GEN_Soldier_F);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };

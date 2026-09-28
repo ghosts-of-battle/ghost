@@ -9,9 +9,11 @@ A content pack: 161 unit classes and 18 weapon and item classes. No scripted beh
 ## Requires
 
 - `ghost_main`
+- `ghost_uniform`
+- `ghost_vehicle`
 
 Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking the load order when something above is absent.
 
 ## Ships
 
-160 unit classes, 18 weapon/item classes.
+162 unit classes, 18 weapon/item classes.

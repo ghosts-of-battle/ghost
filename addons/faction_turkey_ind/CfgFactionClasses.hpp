@@ -8,12 +8,12 @@
 class CfgFactionClasses {
     class NO_CATEGORY;
 
-    class ghost_Turkey_ind: NO_CATEGORY {
-        displayName = "2040 Turkey (Independent)";
+    class ADDON: NO_CATEGORY {
+        displayName = "2040 Turkey (Tropical)";
         author = QAUTHOR;
         side = 2;
         priority = 13;
         icon = "\A3\Data_F\cfgFactionClasses_OPF_ca.paa";
-        flag = "\A3_Athena\Data_F_Athena\Flags\flag_TU_CO.paa";
+        flag = "\A3\Data_F\Flags\flag_AAF_CO.paa";
     };
 };

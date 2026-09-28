@@ -4,28 +4,20 @@
 // baseWeapon keep the arsenal showing the plain weapon, as the base
 // game's own presets do. No script: the man's weapons[] names the preset.
 class CfgWeapons {
-    class Aegis_SMG_Gepard_blk_ACO_F;
-    class CF_arifle_AK12U_545_arc_aco_F;
-    class CF_arifle_AK12U_545_arc_aco_flash_F;
-    class CF_arifle_AK12U_545_arc_aco_pointer_F;
-    class CF_arifle_AK12U_545_arc_holo_pointer_F;
-    class CF_arifle_AK12_545_arc_aco_pointer_F;
-    class CF_arifle_AK12_545_arc_arco_pointer_F;
-    class CF_arifle_AK12_545_arc_holo_pointer_F;
-    class CF_arifle_AK12_GL_545_arc_aco_pointer_F;
-    class CF_arifle_AK12_GL_545_arc_arco_pointer_F;
-    class CF_arifle_RPK12_545_arc_arco_pointer_F;
-    class arifle_AK12U_545_aco_F;
-    class arifle_AK12U_545_arctic_F;
-    class arifle_AK12U_545_holo_pointer_F;
-    class sgun_Mp153_black_F;
-    class srifle_DMR_01_black_DMS_LP_BI_F;
-    class srifle_DMR_05_DMS_LP_BI_F;
+    class ghost_weapons_SMG_Gepard_blk_ACO_F;
+    class arifle_AK12U_F;
+    class arifle_AK12U_lush_holo_snds_pointer_F;
+    class arifle_AK12_lush_arco_snds_pointer_F;
+    class arifle_AK12_GL_lush_arco_snds_pointer_F;
+    class arifle_RPK12_lush_arco_snds_pointer_F;
+    class ghost_weapons_sgun_Mp153_black_F;
+    class srifle_DMR_01_F;
+    class srifle_DMR_05_blk_F;
 
-    class ghost_Russia_arc_Aegis_SMG_Gepard_blk_ACO_F_snds: Aegis_SMG_Gepard_blk_ACO_F {
+    class GVAR(Aegis_SMG_Gepard_blk_ACO_F_snds): ghost_weapons_SMG_Gepard_blk_ACO_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "Aegis_SMG_Gepard_blk_ACO_F";
+        baseWeapon = "ghost_weapons_SMG_Gepard_blk_ACO_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -33,164 +25,10 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_Russia_arc_CF_arifle_AK12U_545_arc_aco_F_snds: CF_arifle_AK12U_545_arc_aco_F {
+    class GVAR(CF_arifle_AK12U_545_arc_aco_F_snds): arifle_AK12U_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "CF_arifle_AK12U_545_arc_aco_F";
-        class LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_545";
-            };
-        };
-    };
-    class ghost_Russia_arc_CF_arifle_AK12U_545_arc_aco_flash_F_snds: CF_arifle_AK12U_545_arc_aco_flash_F {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "CF_arifle_AK12U_545_arc_aco_flash_F";
-        class LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_545";
-            };
-        };
-    };
-    class ghost_Russia_arc_CF_arifle_AK12U_545_arc_aco_pointer_F_snds: CF_arifle_AK12U_545_arc_aco_pointer_F {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "CF_arifle_AK12U_545_arc_aco_pointer_F";
-        class LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_545";
-            };
-        };
-    };
-    class ghost_Russia_arc_CF_arifle_AK12U_545_arc_holo_pointer_F_snds: CF_arifle_AK12U_545_arc_holo_pointer_F {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "CF_arifle_AK12U_545_arc_holo_pointer_F";
-        class LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_545";
-            };
-        };
-    };
-    class ghost_Russia_arc_CF_arifle_AK12_545_arc_aco_pointer_F_snds: CF_arifle_AK12_545_arc_aco_pointer_F {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "CF_arifle_AK12_545_arc_aco_pointer_F";
-        class LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_545";
-            };
-        };
-    };
-    class ghost_Russia_arc_CF_arifle_AK12_545_arc_arco_pointer_F_snds: CF_arifle_AK12_545_arc_arco_pointer_F {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "CF_arifle_AK12_545_arc_arco_pointer_F";
-        class LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_545";
-            };
-        };
-    };
-    class ghost_Russia_arc_CF_arifle_AK12_545_arc_holo_pointer_F_snds: CF_arifle_AK12_545_arc_holo_pointer_F {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "CF_arifle_AK12_545_arc_holo_pointer_F";
-        class LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_545";
-            };
-        };
-    };
-    class ghost_Russia_arc_CF_arifle_AK12_GL_545_arc_aco_pointer_F_snds: CF_arifle_AK12_GL_545_arc_aco_pointer_F {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "CF_arifle_AK12_GL_545_arc_aco_pointer_F";
-        class LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_545";
-            };
-        };
-    };
-    class ghost_Russia_arc_CF_arifle_AK12_GL_545_arc_arco_pointer_F_snds: CF_arifle_AK12_GL_545_arc_arco_pointer_F {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "CF_arifle_AK12_GL_545_arc_arco_pointer_F";
-        class LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_545";
-            };
-        };
-    };
-    class ghost_Russia_arc_CF_arifle_RPK12_545_arc_arco_pointer_F_snds: CF_arifle_RPK12_545_arc_arco_pointer_F {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "CF_arifle_RPK12_545_arc_arco_pointer_F";
-        class LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_545";
-            };
-        };
-    };
-    class ghost_Russia_arc_arifle_AK12U_545_aco_F_snds: arifle_AK12U_545_aco_F {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "arifle_AK12U_545_aco_F";
-        class LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_545";
-            };
-        };
-    };
-    class ghost_Russia_arc_arifle_AK12U_545_arctic_F_snds: arifle_AK12U_545_arctic_F {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "arifle_AK12U_545_arctic_F";
-        class LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_545";
-            };
-        };
-    };
-    class ghost_Russia_arc_arifle_AK12U_545_holo_pointer_F_snds: arifle_AK12U_545_holo_pointer_F {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "arifle_AK12U_545_holo_pointer_F";
-        class LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_545";
-            };
-        };
-    };
-    class ghost_Russia_arc_sgun_Mp153_black_F_snds: sgun_Mp153_black_F {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "sgun_Mp153_black_F";
-        class LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_12Gauge_lxWS";
-            };
-        };
-    };
-    class ghost_Russia_arc_srifle_DMR_01_black_DMS_LP_BI_F_snds: srifle_DMR_01_black_DMS_LP_BI_F {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "srifle_DMR_01_black_DMS_LP_BI_F";
+        baseWeapon = "arifle_AK12U_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -198,10 +36,164 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_Russia_arc_srifle_DMR_05_DMS_LP_BI_F_snds: srifle_DMR_05_DMS_LP_BI_F {
+    class GVAR(CF_arifle_AK12U_545_arc_aco_flash_F_snds): arifle_AK12U_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "srifle_DMR_05_DMS_LP_BI_F";
+        baseWeapon = "arifle_AK12U_F";
+        class LinkedItems {
+            class LinkedItemsMuzzle {
+                slot = "MuzzleSlot";
+                item = "muzzle_snds_B";
+            };
+        };
+    };
+    class GVAR(CF_arifle_AK12U_545_arc_aco_pointer_F_snds): arifle_AK12U_lush_holo_snds_pointer_F {
+        scope = 1;
+        author = QAUTHOR;
+        baseWeapon = "arifle_AK12U_lush_holo_snds_pointer_F";
+        class LinkedItems {
+            class LinkedItemsMuzzle {
+                slot = "MuzzleSlot";
+                item = "muzzle_snds_B";
+            };
+        };
+    };
+    class GVAR(CF_arifle_AK12U_545_arc_holo_pointer_F_snds): arifle_AK12U_lush_holo_snds_pointer_F {
+        scope = 1;
+        author = QAUTHOR;
+        baseWeapon = "arifle_AK12U_lush_holo_snds_pointer_F";
+        class LinkedItems {
+            class LinkedItemsMuzzle {
+                slot = "MuzzleSlot";
+                item = "muzzle_snds_B";
+            };
+        };
+    };
+    class GVAR(CF_arifle_AK12_545_arc_aco_pointer_F_snds): arifle_AK12_lush_arco_snds_pointer_F {
+        scope = 1;
+        author = QAUTHOR;
+        baseWeapon = "arifle_AK12_lush_arco_snds_pointer_F";
+        class LinkedItems {
+            class LinkedItemsMuzzle {
+                slot = "MuzzleSlot";
+                item = "muzzle_snds_B";
+            };
+        };
+    };
+    class GVAR(CF_arifle_AK12_545_arc_arco_pointer_F_snds): arifle_AK12_lush_arco_snds_pointer_F {
+        scope = 1;
+        author = QAUTHOR;
+        baseWeapon = "arifle_AK12_lush_arco_snds_pointer_F";
+        class LinkedItems {
+            class LinkedItemsMuzzle {
+                slot = "MuzzleSlot";
+                item = "muzzle_snds_B";
+            };
+        };
+    };
+    class GVAR(CF_arifle_AK12_545_arc_holo_pointer_F_snds): arifle_AK12_lush_arco_snds_pointer_F {
+        scope = 1;
+        author = QAUTHOR;
+        baseWeapon = "arifle_AK12_lush_arco_snds_pointer_F";
+        class LinkedItems {
+            class LinkedItemsMuzzle {
+                slot = "MuzzleSlot";
+                item = "muzzle_snds_B";
+            };
+        };
+    };
+    class GVAR(CF_arifle_AK12_GL_545_arc_aco_pointer_F_snds): arifle_AK12_GL_lush_arco_snds_pointer_F {
+        scope = 1;
+        author = QAUTHOR;
+        baseWeapon = "arifle_AK12_GL_lush_arco_snds_pointer_F";
+        class LinkedItems {
+            class LinkedItemsMuzzle {
+                slot = "MuzzleSlot";
+                item = "muzzle_snds_B";
+            };
+        };
+    };
+    class GVAR(CF_arifle_AK12_GL_545_arc_arco_pointer_F_snds): arifle_AK12_GL_lush_arco_snds_pointer_F {
+        scope = 1;
+        author = QAUTHOR;
+        baseWeapon = "arifle_AK12_GL_lush_arco_snds_pointer_F";
+        class LinkedItems {
+            class LinkedItemsMuzzle {
+                slot = "MuzzleSlot";
+                item = "muzzle_snds_B";
+            };
+        };
+    };
+    class GVAR(CF_arifle_RPK12_545_arc_arco_pointer_F_snds): arifle_RPK12_lush_arco_snds_pointer_F {
+        scope = 1;
+        author = QAUTHOR;
+        baseWeapon = "arifle_RPK12_lush_arco_snds_pointer_F";
+        class LinkedItems {
+            class LinkedItemsMuzzle {
+                slot = "MuzzleSlot";
+                item = "muzzle_snds_B";
+            };
+        };
+    };
+    class GVAR(arifle_AK12U_545_aco_F_snds): arifle_AK12U_F {
+        scope = 1;
+        author = QAUTHOR;
+        baseWeapon = "arifle_AK12U_F";
+        class LinkedItems {
+            class LinkedItemsMuzzle {
+                slot = "MuzzleSlot";
+                item = "muzzle_snds_B";
+            };
+        };
+    };
+    class GVAR(arifle_AK12U_545_arctic_F_snds): arifle_AK12U_F {
+        scope = 1;
+        author = QAUTHOR;
+        baseWeapon = "arifle_AK12U_F";
+        class LinkedItems {
+            class LinkedItemsMuzzle {
+                slot = "MuzzleSlot";
+                item = "muzzle_snds_B";
+            };
+        };
+    };
+    class GVAR(arifle_AK12U_545_holo_pointer_F_snds): arifle_AK12U_lush_holo_snds_pointer_F {
+        scope = 1;
+        author = QAUTHOR;
+        baseWeapon = "arifle_AK12U_lush_holo_snds_pointer_F";
+        class LinkedItems {
+            class LinkedItemsMuzzle {
+                slot = "MuzzleSlot";
+                item = "muzzle_snds_B";
+            };
+        };
+    };
+    class GVAR(sgun_Mp153_black_F_snds): ghost_weapons_sgun_Mp153_black_F {
+        scope = 1;
+        author = QAUTHOR;
+        baseWeapon = "ghost_weapons_sgun_Mp153_black_F";
+        class LinkedItems {
+            class LinkedItemsMuzzle {
+                slot = "MuzzleSlot";
+                item = "muzzle_snds_12Gauge_lxWS";
+            };
+        };
+    };
+    class GVAR(srifle_DMR_01_black_DMS_LP_BI_F_snds): srifle_DMR_01_F {
+        scope = 1;
+        author = QAUTHOR;
+        baseWeapon = "srifle_DMR_01_F";
+        class LinkedItems {
+            class LinkedItemsMuzzle {
+                slot = "MuzzleSlot";
+                item = "muzzle_snds_B";
+            };
+        };
+    };
+    class GVAR(srifle_DMR_05_DMS_LP_BI_F_snds): srifle_DMR_05_blk_F {
+        scope = 1;
+        author = QAUTHOR;
+        baseWeapon = "srifle_DMR_05_blk_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";

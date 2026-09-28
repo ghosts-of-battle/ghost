@@ -43,7 +43,20 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-5 unit classes, 7 functions. No modules.
+5 unit classes, 7 functions.
+
+## CBA settings
+
+| Setting | Type | Name |
+|---|---|---|
+| `ghost_antiship_interval` | SLIDER | Seconds between launches |
+| `ghost_antiship_searchRange` | SLIDER | Search range (m) |
+| `ghost_antiship_targetClasses` | EDITBOX | Target classes |
+| `ghost_antiship_missileSpeed` | SLIDER | Missile speed (m/s) |
+| `ghost_antiship_cruiseAlt` | SLIDER | Cruise altitude (m) |
+| `ghost_antiship_terminalRange` | SLIDER | Terminal range (m) |
+| `ghost_antiship_interceptable` | CHECKBOX | Interceptable |
+| `ghost_antiship_debug` | CHECKBOX | Debug |
 
 ## Functions
 

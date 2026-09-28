@@ -4,20 +4,20 @@
 // baseWeapon keep the arsenal showing the plain weapon, as the base
 // game's own presets do. No script: the man's weapons[] names the preset.
 class CfgWeapons {
-    class Aegis_sgun_AA40_ACO_LP_LxWS;
-    class LMG_03_Arco_Pointer_F;
+    class ghost_weapons_sgun_KSG_black_F;
+    class LMG_03_F;
     class SMG_02_ACO_F;
-    class arifle_CTARS_blk_ARCO_Pointer_F;
+    class arifle_CTARS_blk_F;
     class arifle_CTAR_GL_blk_ARCO_Pointer_F;
     class arifle_CTAR_blk_ARCO_Pointer_F;
     class hgun_Rook40_F;
     class srifle_DMR_05_KHS_LP_F;
     class srifle_DMR_07_blk_DMS_F;
 
-    class ghost_China_Aegis_sgun_AA40_ACO_LP_LxWS_snds: Aegis_sgun_AA40_ACO_LP_LxWS {
+    class GVAR(Aegis_sgun_AA40_ACO_LP_LxWS_snds): ghost_weapons_sgun_KSG_black_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "Aegis_sgun_AA40_ACO_LP_LxWS";
+        baseWeapon = "ghost_weapons_sgun_KSG_black_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -25,10 +25,10 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_China_LMG_03_Arco_Pointer_F_snds: LMG_03_Arco_Pointer_F {
+    class GVAR(LMG_03_Arco_Pointer_F_snds): LMG_03_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "LMG_03_Arco_Pointer_F";
+        baseWeapon = "LMG_03_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -36,7 +36,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_China_SMG_02_ACO_F_snds: SMG_02_ACO_F {
+    class GVAR(SMG_02_ACO_F_snds): SMG_02_ACO_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "SMG_02_ACO_F";
@@ -47,10 +47,10 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_China_arifle_CTARS_blk_ARCO_Pointer_F_snds: arifle_CTARS_blk_ARCO_Pointer_F {
+    class GVAR(arifle_CTARS_blk_ARCO_Pointer_F_snds): arifle_CTARS_blk_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "arifle_CTARS_blk_ARCO_Pointer_F";
+        baseWeapon = "arifle_CTARS_blk_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -58,7 +58,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_China_arifle_CTAR_GL_blk_ARCO_Pointer_F_snds: arifle_CTAR_GL_blk_ARCO_Pointer_F {
+    class GVAR(arifle_CTAR_GL_blk_ARCO_Pointer_F_snds): arifle_CTAR_GL_blk_ARCO_Pointer_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "arifle_CTAR_GL_blk_ARCO_Pointer_F";
@@ -69,7 +69,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_China_arifle_CTAR_blk_ARCO_Pointer_F_snds: arifle_CTAR_blk_ARCO_Pointer_F {
+    class GVAR(arifle_CTAR_blk_ARCO_Pointer_F_snds): arifle_CTAR_blk_ARCO_Pointer_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "arifle_CTAR_blk_ARCO_Pointer_F";
@@ -80,7 +80,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_China_hgun_Rook40_F_snds: hgun_Rook40_F {
+    class GVAR(hgun_Rook40_F_snds): hgun_Rook40_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "hgun_Rook40_F";
@@ -91,7 +91,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_China_srifle_DMR_05_KHS_LP_F_snds: srifle_DMR_05_KHS_LP_F {
+    class GVAR(srifle_DMR_05_KHS_LP_F_snds): srifle_DMR_05_KHS_LP_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "srifle_DMR_05_KHS_LP_F";
@@ -102,7 +102,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_China_srifle_DMR_07_blk_DMS_F_snds: srifle_DMR_07_blk_DMS_F {
+    class GVAR(srifle_DMR_07_blk_DMS_F_snds): srifle_DMR_07_blk_DMS_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "srifle_DMR_07_blk_DMS_F";

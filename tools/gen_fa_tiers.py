@@ -69,6 +69,11 @@ VANILLA = os.path.join(ROOT, "work", "vanilla_ammo.json")
 # round is invisible to the faction generator, which only ever issues _t2
 # / _t3 / _t4 classes.
 DEAD = {"fa_rhs", "fa_sps", "fa_antidrone_rhs"}
+# REARMA IS NOT TIERED (2026-09-27). fa_rearma_cn/rus/us load only with the separate Rearma weapons mod
+# (skipWhenMissingDependencies). Tiering them put all three in fa_tiers_mods' requiredAddons, so a load order
+# without Rearma would drop fa_tiers_mods whole - every E22, JCA, EF, RF and Aegis tier round with it. They were
+# never tiered before; if they are wanted, they need a tier addon of their own.
+UNTIERED = {"fa_rearma_cn", "fa_rearma_rus", "fa_rearma_us"}
 
 # THE TIER 2 FLOOR, AND WHY IT IS ONLY ON PENETRATION.
 #
@@ -271,7 +276,7 @@ def main():
     # round it inherits from gets no parent at all.
     home = {}
     for d in sorted(os.listdir(ADDONS)):
-        if not d.startswith("fa_") or d.startswith("fa_tiers") or d in DEAD:
+        if not d.startswith("fa_") or d.startswith("fa_tiers") or d in DEAD or d in UNTIERED:
             continue
         if can_skip(d):
             OPTIONAL.add("ghost_" + d)
@@ -357,7 +362,7 @@ def main():
         tiered.add(name)
 
     for d in sorted(os.listdir(ADDONS)):
-        if not d.startswith("fa_") or d == "fa_tiers" or d in DEAD:
+        if not d.startswith("fa_") or d == "fa_tiers" or d in DEAD or d in UNTIERED:
             continue
         # Same again: the magazines are spread over several files.
         for f in sorted(os.listdir(os.path.join(ADDONS, d))):
@@ -386,7 +391,7 @@ def main():
     # Matched by name, which is what the engine does - see the docstring.
     well_of = {}
     for d in sorted(os.listdir(ADDONS)):
-        if not d.startswith("fa_") or d.startswith("fa_tiers") or d in DEAD:
+        if not d.startswith("fa_") or d.startswith("fa_tiers") or d in DEAD or d in UNTIERED:
             continue
         for f in sorted(os.listdir(os.path.join(ADDONS, d))):
             if f.lower() != "cfgmagazinewells.hpp":

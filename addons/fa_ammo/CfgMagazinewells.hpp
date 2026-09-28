@@ -3024,8 +3024,9 @@ class CfgMagazinewells {
             "FA_11Rnd_45ACP_Mk421_T_IR"
         };
     };
-    // 9.3x64 Cyrus well — CSAT precision rifle
-    class Cyrus_93x64 {
+    // 9.3x64 Cyrus well — CSAT precision rifle. The game's well is Cyrus_93; Cyrus_93x64 named a well no weapon
+    // uses, so the Cyrus could load none of these (fixed 2026-09-27)
+    class Cyrus_93 {
         ADDON[] += {
             "FA_o_10Rnd_93x64_Type40",
             "FA_10Rnd_93x64_Type40",
@@ -3120,6 +3121,65 @@ class CfgMagazinewells {
         ADDON[] += {
             "FA_b_3Rnd_40mm_Mk389_TBK",
             "FA_3Rnd_40mm_Mk389_TBK"
+        };
+    };
+    // P07 and Rook 40
+    class Pistol_9x21 {
+        ADDON[] += {"FA_b_16Rnd_9x21_Mk424_AP"};
+    };
+    // Rahim DMR-01
+    class Rahim_762x54 {
+        ADDON[] += {"FA_o_10Rnd_762x54_Ball_HV"};
+    };
+    // Rook-40 - Aegis moves it off Pistol_9x21 onto its own well, which takes the base game's 16Rnd mags
+    class Rook40_9x21 {
+        ADDON[] += {"FA_b_16Rnd_9x21_Mk424_AP"};
+    };
+    // Sting - no well of its own in the game; CBA gives it this one
+    class CBA_9x19_ScorpionEvo3 {
+        ADDON[] += {"FA_b_30Rnd_9x21_SMG_02_Mk424_AP"};
+    };
+    // Zubr revolver
+    class Cylinder_45ACP {
+        ADDON[] += {"FA_b_6Rnd_45ACP_Mk421"};
+    };
+    // LRR
+    class M320_408 {
+        ADDON[] += {"FA_b_7Rnd_408_Mk240"};
+    };
+    // Ghost's own weapons (addons/weapons) name their wells ghost_weapons_*, so the FA mags registered in the
+    // original Aegis wells never reached them (2026-09-27)
+    class ghost_weapons_G17_9x21 {
+        ADDON[] += {"FA_b_17Rnd_9x21_Mk424_AP"};
+    };
+    class ghost_weapons_SMG_Gepard_9x21 {
+        ADDON[] += {"FA_b_40Rnd_9x21_Gepard_Mk424_AP"};
+    };
+    class ghost_weapons_Shotgun_12GA {
+        ADDON[] += {
+            "FA_b_6Rnd_12g_No0_Buck",
+            "FA_b_6Rnd_12g_No1_Buck",
+            "FA_b_6Rnd_12g_No2_Buck",
+            "FA_b_6Rnd_12g_No3_Buck",
+            "FA_b_6Rnd_12g_No4_Buck",
+            "FA_b_6Rnd_12g_No4_Bird",
+            "FA_b_2Rnd_12g_No0_Buck",
+            "FA_b_2Rnd_12g_No1_Buck",
+            "FA_b_2Rnd_12g_No2_Buck",
+            "FA_b_2Rnd_12g_No3_Buck",
+            "FA_b_2Rnd_12g_No4_Buck",
+            "FA_b_2Rnd_12g_No4_Bird"
+        };
+    };
+    // the MP153 takes the game's 2Rnd shells, so it takes the FA 2Rnd shells
+    class ghost_weapons_MP153_12GA {
+        ADDON[] += {
+            "FA_b_2Rnd_12g_No0_Buck",
+            "FA_b_2Rnd_12g_No1_Buck",
+            "FA_b_2Rnd_12g_No2_Buck",
+            "FA_b_2Rnd_12g_No3_Buck",
+            "FA_b_2Rnd_12g_No4_Buck",
+            "FA_b_2Rnd_12g_No4_Bird"
         };
     };
 };

@@ -8,175 +8,175 @@
 class CfgGroups {
     class West {
 
-        class ghost_Marine_des {
+        class ADDON {
             name = "2040 Marine (Desert)";
 
             class Armored {
                 name = "Armored";
 
-                class ghost_Marine_des_EF_B_MJTF_Des_ATPlatoon {
+                class GVAR(EF_B_MJTF_Des_ATPlatoon) {
                     name = "Anti-armor Platoon";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_art.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MRAP_01_AT_MJTF_Des";
+                        vehicle = QGVAR(EF_B_MRAP_01_AT_MJTF_Des);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MRAP_01_AT_MJTF_Des";
+                        vehicle = QGVAR(EF_B_MRAP_01_AT_MJTF_Des);
                         rank = "SERGEANT";
                         position[] = {10,-10,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MRAP_01_AT_MJTF_Des";
+                        vehicle = QGVAR(EF_B_MRAP_01_AT_MJTF_Des);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MRAP_01_AT_MJTF_Des";
+                        vehicle = QGVAR(EF_B_MRAP_01_AT_MJTF_Des);
                         rank = "CORPORAL";
                         position[] = {20,-20,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_ATSection {
+                class GVAR(EF_B_MJTF_Des_ATSection) {
                     name = "Anti-armor Section";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_art.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MRAP_01_AT_MJTF_Des";
+                        vehicle = QGVAR(EF_B_MRAP_01_AT_MJTF_Des);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MRAP_01_AT_MJTF_Des";
+                        vehicle = QGVAR(EF_B_MRAP_01_AT_MJTF_Des);
                         rank = "SERGEANT";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_SPGSection_MLRS {
+                class GVAR(EF_B_MJTF_Des_SPGSection_MLRS) {
                     name = "MLRS Section";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_art.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MBT_01_mlrs_MJTF_Des";
+                        vehicle = QGVAR(EF_B_MBT_01_mlrs_MJTF_Des);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MBT_01_mlrs_MJTF_Des";
+                        vehicle = QGVAR(EF_B_MBT_01_mlrs_MJTF_Des);
                         rank = "SERGEANT";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_TankPlatoon {
+                class GVAR(EF_B_MJTF_Des_TankPlatoon) {
                     name = "Tank Platoon";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_B_qav_abramsx";
+                        vehicle = QGVAR(B_qav_abramsx);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_B_qav_abramsx";
+                        vehicle = QGVAR(B_qav_abramsx);
                         rank = "SERGEANT";
                         position[] = {10,-10,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_B_qav_abramsx";
+                        vehicle = QGVAR(B_qav_abramsx);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_B_qav_abramsx";
+                        vehicle = QGVAR(B_qav_abramsx);
                         rank = "CORPORAL";
                         position[] = {20,-20,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_TankPlatoon_AA {
+                class GVAR(EF_B_MJTF_Des_TankPlatoon_AA) {
                     name = "Tank Platoon (Combined)";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_B_qav_abramsx";
+                        vehicle = QGVAR(B_qav_abramsx);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MRAP_01_LAAD_MJTF_Des";
+                        vehicle = QGVAR(EF_B_MRAP_01_LAAD_MJTF_Des);
                         rank = "SERGEANT";
                         position[] = {10,-10,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_B_qav_abramsx";
+                        vehicle = QGVAR(B_qav_abramsx);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MRAP_01_LAAD_MJTF_Des";
+                        vehicle = QGVAR(EF_B_MRAP_01_LAAD_MJTF_Des);
                         rank = "CORPORAL";
                         position[] = {20,-20,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_TankSection {
+                class GVAR(EF_B_MJTF_Des_TankSection) {
                     name = "Tank Section";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_B_qav_abramsx";
+                        vehicle = QGVAR(B_qav_abramsx);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_B_qav_abramsx";
+                        vehicle = QGVAR(B_qav_abramsx);
                         rank = "SERGEANT";
                         position[] = {10,-10,0};
                     };
@@ -187,533 +187,533 @@ class CfgGroups {
             class Infantry {
                 name = "Infantry";
 
-                class ghost_Marine_des_EF_B_MJTF_Des_ComTeam {
+                class GVAR(EF_B_MJTF_Des_ComTeam) {
                     name = "Command Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_SL_Des";
+                        vehicle = QGVAR(EF_B_Marine_SL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Medic_Des";
+                        vehicle = QGVAR(EF_B_Marine_Medic_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_JTAC_Des";
+                        vehicle = QGVAR(EF_B_Marine_JTAC_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_R_Des";
+                        vehicle = QGVAR(EF_B_Marine_R_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_InfSentry {
+                class GVAR(EF_B_MJTF_Des_InfSentry) {
                     name = "Sentry";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_GL_Des";
+                        vehicle = QGVAR(EF_B_Marine_GL_Des);
                         rank = "CORPORAL";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_R_Des";
+                        vehicle = QGVAR(EF_B_Marine_R_Des);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_InfSquad {
+                class GVAR(EF_B_MJTF_Des_InfSquad) {
                     name = "Rifle Squad";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_SL_Des";
+                        vehicle = QGVAR(EF_B_Marine_SL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Medic_Des";
+                        vehicle = QGVAR(EF_B_Marine_Medic_Des);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_UAV_Des";
+                        vehicle = QGVAR(EF_B_Marine_UAV_Des);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_R_Des";
+                        vehicle = QGVAR(EF_B_Marine_R_Des);
                         rank = "CORPORAL";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_LAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_LAT_Des);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "SERGEANT";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_R_Des";
+                        vehicle = QGVAR(EF_B_Marine_R_Des);
                         rank = "CORPORAL";
                         position[] = {25,-25,0};
                     };
 
                     class Unit10 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_LAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_LAT_Des);
                         rank = "PRIVATE";
                         position[] = {-25,-25,0};
                     };
 
                     class Unit11 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "PRIVATE";
                         position[] = {30,-30,0};
                     };
 
                     class Unit12 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "SERGEANT";
                         position[] = {-30,-30,0};
                     };
 
                     class Unit13 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_R_Des";
+                        vehicle = QGVAR(EF_B_Marine_R_Des);
                         rank = "CORPORAL";
                         position[] = {35,-35,0};
                     };
 
                     class Unit14 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_LAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_LAT_Des);
                         rank = "PRIVATE";
                         position[] = {-35,-35,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_InfSquad_Weapons {
+                class GVAR(EF_B_MJTF_Des_InfSquad_Weapons) {
                     name = "Weapons Squad";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_SL_Des";
+                        vehicle = QGVAR(EF_B_Marine_SL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Medic_Des";
+                        vehicle = QGVAR(EF_B_Marine_Medic_Des);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_UAV_Des";
+                        vehicle = QGVAR(EF_B_Marine_UAV_Des);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "SERGEANT";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AT_Des";
+                        vehicle = QGVAR(EF_B_Marine_AT_Des);
                         rank = "CORPORAL";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_AAT_Des);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Mark_Des";
+                        vehicle = QGVAR(EF_B_Marine_Mark_Des);
                         rank = "SERGEANT";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Mark_Des";
+                        vehicle = QGVAR(EF_B_Marine_Mark_Des);
                         rank = "CORPORAL";
                         position[] = {25,-25,0};
                     };
 
                     class Unit10 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_LAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_LAT_Des);
                         rank = "PRIVATE";
                         position[] = {-25,-25,0};
                     };
 
                     class Unit11 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "PRIVATE";
                         position[] = {30,-30,0};
                     };
 
                     class Unit12 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "SERGEANT";
                         position[] = {-30,-30,0};
                     };
 
                     class Unit13 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AT_Des";
+                        vehicle = QGVAR(EF_B_Marine_AT_Des);
                         rank = "CORPORAL";
                         position[] = {35,-35,0};
                     };
 
                     class Unit14 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_AAT_Des);
                         rank = "PRIVATE";
                         position[] = {-35,-35,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_InfTeam {
+                class GVAR(EF_B_MJTF_Des_InfTeam) {
                     name = "Fire Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_GL_Des";
+                        vehicle = QGVAR(EF_B_Marine_GL_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_LAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_LAT_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_InfTeam_AA {
+                class GVAR(EF_B_MJTF_Des_InfTeam_AA) {
                     name = "Air-defense Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AA_Des";
+                        vehicle = QGVAR(EF_B_Marine_AA_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AA_Des";
+                        vehicle = QGVAR(EF_B_Marine_AA_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AAA_Des";
+                        vehicle = QGVAR(EF_B_Marine_AAA_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_InfTeam_AT {
+                class GVAR(EF_B_MJTF_Des_InfTeam_AT) {
                     name = "Anti-armor Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AT_Des";
+                        vehicle = QGVAR(EF_B_Marine_AT_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AT_Des";
+                        vehicle = QGVAR(EF_B_Marine_AT_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_AAT_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_ReconPatrol {
+                class GVAR(EF_B_MJTF_Des_ReconPatrol) {
                     name = "Recon Patrol";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Recon_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_Recon_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Recon_M_Des";
+                        vehicle = QGVAR(EF_B_Marine_Recon_M_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Recon_Medic_Des";
+                        vehicle = QGVAR(EF_B_Marine_Recon_Medic_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Recon_Des";
+                        vehicle = QGVAR(EF_B_Marine_Recon_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_ReconSentry {
+                class GVAR(EF_B_MJTF_Des_ReconSentry) {
                     name = "Recon Sentry";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Recon_M_Des";
+                        vehicle = QGVAR(EF_B_Marine_Recon_M_Des);
                         rank = "CORPORAL";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Recon_Des";
+                        vehicle = QGVAR(EF_B_Marine_Recon_Des);
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_ReconTeam {
+                class GVAR(EF_B_MJTF_Des_ReconTeam) {
                     name = "Recon Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Recon_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_Recon_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Recon_M_Des";
+                        vehicle = QGVAR(EF_B_Marine_Recon_M_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Recon_Medic_Des";
+                        vehicle = QGVAR(EF_B_Marine_Recon_Medic_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Recon_LAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_Recon_LAT_Des);
                         rank = "CORPORAL";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Recon_JTAC_Des";
+                        vehicle = QGVAR(EF_B_Marine_Recon_JTAC_Des);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Recon_Exp_Des";
+                        vehicle = QGVAR(EF_B_Marine_Recon_Exp_Des);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-15,-15,0};
                     };
@@ -724,337 +724,337 @@ class CfgGroups {
             class Mechanized {
                 name = "Mechanized";
 
-                class ghost_Marine_des_EF_B_MJTF_Des_MechInfSquad {
+                class GVAR(EF_B_MJTF_Des_MechInfSquad) {
                     name = "Mechanized Rifle Squad";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_AAV9_50mm_MJTF_Des";
+                        vehicle = QGVAR(EF_B_AAV9_50mm_MJTF_Des);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_SL_Des";
+                        vehicle = QGVAR(EF_B_Marine_SL_Des);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Medic_Des";
+                        vehicle = QGVAR(EF_B_Marine_Medic_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_UAV_Des";
+                        vehicle = QGVAR(EF_B_Marine_UAV_Des);
                         rank = "CORPORAL";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "SERGEANT";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_R_Des";
+                        vehicle = QGVAR(EF_B_Marine_R_Des);
                         rank = "CORPORAL";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_LAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_LAT_Des);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "CORPORAL";
                         position[] = {25,-25,0};
                     };
 
                     class Unit10 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_R_Des";
+                        vehicle = QGVAR(EF_B_Marine_R_Des);
                         rank = "PRIVATE";
                         position[] = {-25,-25,0};
                     };
 
                     class Unit11 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_LAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_LAT_Des);
                         rank = "PRIVATE";
                         position[] = {30,-30,0};
                     };
 
                     class Unit12 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Mark_Des";
+                        vehicle = QGVAR(EF_B_Marine_Mark_Des);
                         rank = "SERGEANT";
                         position[] = {-30,-30,0};
                     };
 
                     class Unit13 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AT_Des";
+                        vehicle = QGVAR(EF_B_Marine_AT_Des);
                         rank = "CORPORAL";
                         position[] = {35,-35,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_MechInf_AA {
+                class GVAR(EF_B_MJTF_Des_MechInf_AA) {
                     name = "Mechanized Air-defense Squad";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_AAV9_50mm_MJTF_Des";
+                        vehicle = QGVAR(EF_B_AAV9_50mm_MJTF_Des);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_SL_Des";
+                        vehicle = QGVAR(EF_B_Marine_SL_Des);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AA_Des";
+                        vehicle = QGVAR(EF_B_Marine_AA_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AA_Des";
+                        vehicle = QGVAR(EF_B_Marine_AA_Des);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AA_Des";
+                        vehicle = QGVAR(EF_B_Marine_AA_Des);
                         rank = "SERGEANT";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AAA_Des";
+                        vehicle = QGVAR(EF_B_Marine_AAA_Des);
                         rank = "CORPORAL";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AAA_Des";
+                        vehicle = QGVAR(EF_B_Marine_AAA_Des);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AAA_Des";
+                        vehicle = QGVAR(EF_B_Marine_AAA_Des);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_MechInf_AT {
+                class GVAR(EF_B_MJTF_Des_MechInf_AT) {
                     name = "Mechanized Anti-armor Squad";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_AAV9_50mm_MJTF_Des";
+                        vehicle = QGVAR(EF_B_AAV9_50mm_MJTF_Des);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_SL_Des";
+                        vehicle = QGVAR(EF_B_Marine_SL_Des);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AT_Des";
+                        vehicle = QGVAR(EF_B_Marine_AT_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AT_Des";
+                        vehicle = QGVAR(EF_B_Marine_AT_Des);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AT_Des";
+                        vehicle = QGVAR(EF_B_Marine_AT_Des);
                         rank = "SERGEANT";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_AAT_Des);
                         rank = "CORPORAL";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_AAT_Des);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_AAT_Des);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_MechInf_Support {
+                class GVAR(EF_B_MJTF_Des_MechInf_Support) {
                     name = "Mechanized Support Squad";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_AAV9_50mm_MJTF_Des";
+                        vehicle = QGVAR(EF_B_AAV9_50mm_MJTF_Des);
                         rank = "LIEUTENANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_SL_Des";
+                        vehicle = QGVAR(EF_B_Marine_SL_Des);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Repair_Des";
+                        vehicle = QGVAR(EF_B_Marine_Repair_Des);
                         rank = "CORPORAL";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Eng_Des";
+                        vehicle = QGVAR(EF_B_Marine_Eng_Des);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Medic_Des";
+                        vehicle = QGVAR(EF_B_Marine_Medic_Des);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };
 
                     class Unit6 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "CORPORAL";
                         position[] = {-15,-15,0};
                     };
 
                     class Unit7 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Exp_Des";
+                        vehicle = QGVAR(EF_B_Marine_Exp_Des);
                         rank = "PRIVATE";
                         position[] = {20,-20,0};
                     };
 
                     class Unit8 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "PRIVATE";
                         position[] = {-20,-20,0};
                     };
 
                     class Unit9 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {25,-25,0};
                     };
@@ -1065,372 +1065,372 @@ class CfgGroups {
             class Motorized {
                 name = "Motorized";
 
-                class ghost_Marine_des_EF_B_MJTF_Des_MotInf_AA {
+                class GVAR(EF_B_MJTF_Des_MotInf_AA) {
                     name = "Motorized Air-defense Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MRAP_01_MJTF_Des";
+                        vehicle = QGVAR(EF_B_MRAP_01_MJTF_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AA_Des";
+                        vehicle = QGVAR(EF_B_Marine_AA_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AA_Des";
+                        vehicle = QGVAR(EF_B_Marine_AA_Des);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AAA_Des";
+                        vehicle = QGVAR(EF_B_Marine_AAA_Des);
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_MotInf_AT {
+                class GVAR(EF_B_MJTF_Des_MotInf_AT) {
                     name = "Motorized Anti-armor Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MRAP_01_MJTF_Des";
+                        vehicle = QGVAR(EF_B_MRAP_01_MJTF_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AT_Des";
+                        vehicle = QGVAR(EF_B_Marine_AT_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AT_Des";
+                        vehicle = QGVAR(EF_B_Marine_AT_Des);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_AAT_Des);
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_MotInf_GMGTeam {
+                class GVAR(EF_B_MJTF_Des_MotInf_GMGTeam) {
                     name = "Motorized GMG Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MRAP_01_MJTF_Des";
+                        vehicle = QGVAR(EF_B_MRAP_01_MJTF_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_GMG_Des";
+                        vehicle = QGVAR(EF_B_Marine_GMG_Des);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AMG_Des";
+                        vehicle = QGVAR(EF_B_Marine_AMG_Des);
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_MotInf_MGTeam {
+                class GVAR(EF_B_MJTF_Des_MotInf_MGTeam) {
                     name = "Motorized HMG Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MRAP_01_MJTF_Des";
+                        vehicle = QGVAR(EF_B_MRAP_01_MJTF_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_HMG_Des";
+                        vehicle = QGVAR(EF_B_Marine_HMG_Des);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AMG_Des";
+                        vehicle = QGVAR(EF_B_Marine_AMG_Des);
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_MotInf_MortTeam {
+                class GVAR(EF_B_MJTF_Des_MotInf_MortTeam) {
                     name = "Motorized Mortar Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MRAP_01_MJTF_Des";
+                        vehicle = QGVAR(EF_B_MRAP_01_MJTF_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Mort_Des";
+                        vehicle = QGVAR(EF_B_Marine_Mort_Des);
                         rank = "CORPORAL";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AMort_Des";
+                        vehicle = QGVAR(EF_B_Marine_AMort_Des);
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_MotInf_Reinforce {
+                class GVAR(EF_B_MJTF_Des_MotInf_Reinforce) {
                     name = "Motorized Reinforcements";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Truck_01_transport_MJTF_Des";
+                        vehicle = QGVAR(EF_B_Truck_01_transport_MJTF_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_SL_Des";
+                        vehicle = QGVAR(EF_B_Marine_SL_Des);
                         rank = "SERGEANT";
                         position[] = {5,0,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_R_Des";
+                        vehicle = QGVAR(EF_B_Marine_R_Des);
                         rank = "PRIVATE";
                         position[] = {5,-2,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_LAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_LAT_Des);
                         rank = "CORPORAL";
                         position[] = {5,-4,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Mark_Des";
+                        vehicle = QGVAR(EF_B_Marine_Mark_Des);
                         rank = "PRIVATE";
                         position[] = {5,-6,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {5,-8,0};
                     };
 
                     class Unit6 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "CORPORAL";
                         position[] = {5,-10,0};
                     };
 
                     class Unit7 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "PRIVATE";
                         position[] = {5,-12,0};
                     };
 
                     class Unit8 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Medic_Des";
+                        vehicle = QGVAR(EF_B_Marine_Medic_Des);
                         rank = "PRIVATE";
                         position[] = {5,-14,0};
                     };
 
                     class Unit9 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_SL_Des";
+                        vehicle = QGVAR(EF_B_Marine_SL_Des);
                         rank = "SERGEANT";
                         position[] = {-5,0,0};
                     };
 
                     class Unit10 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_R_Des";
+                        vehicle = QGVAR(EF_B_Marine_R_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-2,0};
                     };
 
                     class Unit11 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_LAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_LAT_Des);
                         rank = "CORPORAL";
                         position[] = {-5,-4,0};
                     };
 
                     class Unit12 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Mark_Des";
+                        vehicle = QGVAR(EF_B_Marine_Mark_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-6,0};
                     };
 
                     class Unit13 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {-5,-8,0};
                     };
 
                     class Unit14 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "CORPORAL";
                         position[] = {-5,-10,0};
                     };
 
                     class Unit15 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-12,0};
                     };
 
                     class Unit16 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Medic_Des";
+                        vehicle = QGVAR(EF_B_Marine_Medic_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-14,0};
                     };
 
                     class Unit17 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_Drone_Operator";
+                        vehicle = QGVAR(Drone_Operator);
                         rank = "PRIVATE";
                         position[] = {45,-45,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_MotInf_Team {
+                class GVAR(EF_B_MJTF_Des_MotInf_Team) {
                     name = "Motorized Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_MRAP_01_gmg_MJTF_Des";
+                        vehicle = QGVAR(EF_B_MRAP_01_gmg_MJTF_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_LAT_Des";
+                        vehicle = QGVAR(EF_B_Marine_LAT_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
@@ -1441,393 +1441,393 @@ class CfgGroups {
             class SpecOps {
                 name = "SpecOps";
 
-                class ghost_Marine_des_EF_B_MJTF_Des_AttackTeam_UAV {
+                class GVAR(EF_B_MJTF_Des_AttackTeam_UAV) {
                     name = "Attack UAV Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_UAV_Des";
+                        vehicle = QGVAR(EF_B_Marine_UAV_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_UAV_02_CAS_MJTF_Des";
+                        vehicle = QGVAR(EF_B_UAV_02_CAS_MJTF_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_AttackTeam_UGV {
+                class GVAR(EF_B_MJTF_Des_AttackTeam_UGV) {
                     name = "Attack UGV Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_UAV_Des";
+                        vehicle = QGVAR(EF_B_Marine_UAV_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_UGV_01_rcws_MJTF_Des";
+                        vehicle = QGVAR(EF_B_UGV_01_rcws_MJTF_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_CombatDiverTeam {
+                class GVAR(EF_B_MJTF_Des_CombatDiverTeam) {
                     name = "Combat Diver Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Pointman_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Pointman_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Scout_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Scout_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Eng_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Eng_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_CombatDiverTeam_Boat {
+                class GVAR(EF_B_MJTF_Des_CombatDiverTeam_Boat) {
                     name = "Combat Diver Team (Boat)";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Pointman_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Pointman_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Scout_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Scout_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Eng_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Eng_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Boat_Transport_01_MJTF_Des";
+                        vehicle = QGVAR(EF_B_Boat_Transport_01_MJTF_Des);
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_CombatDiverTeam_SDV {
+                class GVAR(EF_B_MJTF_Des_CombatDiverTeam_SDV) {
                     name = "Combat Diver Team (SDV)";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Pointman_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Pointman_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Scout_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Scout_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Eng_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Eng_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_SDV_01_MJTF_Des";
+                        vehicle = QGVAR(EF_B_SDV_01_MJTF_Des);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_SDV_01_MJTF_Des";
+                        vehicle = QGVAR(EF_B_SDV_01_MJTF_Des);
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_DiverTeam {
+                class GVAR(EF_B_MJTF_Des_DiverTeam) {
                     name = "Diver Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_DiverTeam_Boat {
+                class GVAR(EF_B_MJTF_Des_DiverTeam_Boat) {
                     name = "Diver Team (Boat)";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Boat_Transport_01_MJTF_Des";
+                        vehicle = QGVAR(EF_B_Boat_Transport_01_MJTF_Des);
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_DiverTeam_SDV {
+                class GVAR(EF_B_MJTF_Des_DiverTeam_SDV) {
                     name = "Diver Team (SDV)";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Diver_Des";
+                        vehicle = QGVAR(EF_B_Marine_Diver_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_SDV_01_MJTF_Des";
+                        vehicle = QGVAR(EF_B_SDV_01_MJTF_Des);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_SDV_01_MJTF_Des";
+                        vehicle = QGVAR(EF_B_SDV_01_MJTF_Des);
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_ReconTeam_UAV {
+                class GVAR(EF_B_MJTF_Des_ReconTeam_UAV) {
                     name = "Recon UAV Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_UAV_Des";
+                        vehicle = QGVAR(EF_B_Marine_UAV_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_UAV_02_MJTF_Des";
+                        vehicle = QGVAR(EF_B_UAV_02_MJTF_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_ReconTeam_UGV {
+                class GVAR(EF_B_MJTF_Des_ReconTeam_UGV) {
                     name = "Recon UGV Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_UAV_Des";
+                        vehicle = QGVAR(EF_B_Marine_UAV_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_UGV_01_MJTF_Des";
+                        vehicle = QGVAR(EF_B_UGV_01_MJTF_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_SmallTeam_UAV {
+                class GVAR(EF_B_MJTF_Des_SmallTeam_UAV) {
                     name = "Small UAV Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_UAV_Des";
+                        vehicle = QGVAR(EF_B_Marine_UAV_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_UAV_01_MJTF_Des";
+                        vehicle = QGVAR(EF_B_UAV_01_MJTF_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
@@ -1838,225 +1838,225 @@ class CfgGroups {
             class Support {
                 name = "Support";
 
-                class ghost_Marine_des_EF_B_MJTF_Des_Recon_EOD {
+                class GVAR(EF_B_MJTF_Des_Recon_EOD) {
                     name = "Recon Support Team (EOD)";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Recon_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_Recon_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Recon_Exp_Des";
+                        vehicle = QGVAR(EF_B_Marine_Recon_Exp_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Recon_Exp_Des";
+                        vehicle = QGVAR(EF_B_Marine_Recon_Exp_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Recon_Des";
+                        vehicle = QGVAR(EF_B_Marine_Recon_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_Support_CLS {
+                class GVAR(EF_B_MJTF_Des_Support_CLS) {
                     name = "Support Team (CLS)";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AR_Des";
+                        vehicle = QGVAR(EF_B_Marine_AR_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Medic_Des";
+                        vehicle = QGVAR(EF_B_Marine_Medic_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Medic_Des";
+                        vehicle = QGVAR(EF_B_Marine_Medic_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_Support_ENG {
+                class GVAR(EF_B_MJTF_Des_Support_ENG) {
                     name = "Support Team (Engineer)";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Eng_Des";
+                        vehicle = QGVAR(EF_B_Marine_Eng_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Eng_Des";
+                        vehicle = QGVAR(EF_B_Marine_Eng_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Repair_Des";
+                        vehicle = QGVAR(EF_B_Marine_Repair_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_Support_EOD {
+                class GVAR(EF_B_MJTF_Des_Support_EOD) {
                     name = "Support Team (EOD)";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Eng_Des";
+                        vehicle = QGVAR(EF_B_Marine_Eng_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Exp_Des";
+                        vehicle = QGVAR(EF_B_Marine_Exp_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
 
                     class Unit3 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Exp_Des";
+                        vehicle = QGVAR(EF_B_Marine_Exp_Des);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_Support_GMG {
+                class GVAR(EF_B_MJTF_Des_Support_GMG) {
                     name = "GMG Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_GMG_Des";
+                        vehicle = QGVAR(EF_B_Marine_GMG_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AMG_Des";
+                        vehicle = QGVAR(EF_B_Marine_AMG_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_Support_MG {
+                class GVAR(EF_B_MJTF_Des_Support_MG) {
                     name = "HMG Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_HMG_Des";
+                        vehicle = QGVAR(EF_B_Marine_HMG_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AMG_Des";
+                        vehicle = QGVAR(EF_B_Marine_AMG_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
                 };
 
-                class ghost_Marine_des_EF_B_MJTF_Des_Support_Mort {
+                class GVAR(EF_B_MJTF_Des_Support_Mort) {
                     name = "Mortar Team";
                     side = 1;
-                    faction = "ghost_Marine_des";
+                    faction = QUOTE(ADDON);
                     icon = "\A3\ui_f\data\map\markers\nato\b_mortar.paa";
 
                     class Unit0 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_TL_Des";
+                        vehicle = QGVAR(EF_B_Marine_TL_Des);
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
 
                     class Unit1 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_Mort_Des";
+                        vehicle = QGVAR(EF_B_Marine_Mort_Des);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
                     };
 
                     class Unit2 {
                         side = 1;
-                        vehicle = "ghost_Marine_des_EF_B_Marine_AMort_Des";
+                        vehicle = QGVAR(EF_B_Marine_AMort_Des);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };

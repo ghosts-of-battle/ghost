@@ -13,6 +13,14 @@ Windows + PowerShell; Python 3 is required for the `tools/` scripts.
 - `python tools/gen_docs.py` — regenerates `docs/` (README.md, ADDONS.md, SETTINGS.md, MODULES.md). These are generated; never hand-edit. `check_readmes.py` fails if any addon README's generated half is stale — re-run the generator after changing an addon.
 - `python tools/new_component.py <name>` — scaffolds a new addon from `extras/blank` (run from repo root).
 
+## Coding guidelines
+
+This mod follows the ACE3 coding guidelines: <https://ace3.acemod.org/wiki/development/coding-guidelines>.
+They are written out in `docs/CODING_GUIDELINES.md` and are binding for hand-written and generated code alike:
+use the CBA macros (`GVAR`/`QGVAR`, `FUNC`, `QPATHTOF`/`QPATHTOEF`, `CSTRING`, `QUOTE`, `QAUTHOR`) rather than
+writing out prefixes or `\z\ghostddons\...` paths, one function per file with the ACE header, `private`
+and `params`, 4-space indent, no magic numbers.
+
 ## Architecture rules (enforced — treat as load-bearing)
 
 - **Adapter seam**: only `addons/adapter_alive` may name ALiVE symbols (`ALiVE_*`, `ALIVE_*`, `OPCOM_instances`). Everything else routes through its event contract. `check_invariants.py` fails the build on any other reference.

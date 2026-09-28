@@ -287,6 +287,7 @@ class CfgAmmo {
     class FA_b_762x67_Mk248Mod2_T_Red;
     class FA_b_762x67_Mk248Mod2_T_White;
     class FA_b_762x67_Mk248Mod2_T_Yellow;
+    class FA_b_9x21_Mk424_AP;
     class FA_b_ammo_57_Mk430;
     class FA_b_ammo_57_Mk431;
     class FA_i_556_AF556C_CT;
@@ -2836,6 +2837,13 @@ class CfgAmmo {
     class FA_b_762x67_Mk248Mod2_T_Yellow_t2: FA_b_762x67_Mk248Mod2_T_Yellow {
         hit = 11.44;
         caliber = 3.168;
+    };
+    class FA_b_9x21_Mk424_AP_t4: FA_b_9x21_Mk424_AP {
+        caliber = 2.12;
+    };
+    class FA_b_9x21_Mk424_AP_t3: FA_b_9x21_Mk424_AP {};
+    class FA_b_9x21_Mk424_AP_t2: FA_b_9x21_Mk424_AP {
+        caliber = 1.76;
     };
     class FA_b_ammo_57_Mk430_t4: FA_b_ammo_57_Mk430 {
         caliber = 3.18;

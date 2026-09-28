@@ -4,7 +4,7 @@
 // baseWeapon keep the arsenal showing the plain weapon, as the base
 // game's own presets do. No script: the man's weapons[] names the preset.
 class CfgWeapons {
-    class SMG_01_black_Holo_F;
+    class SMG_01_F;
     class ef_arifle_mxar_coy_Hamr_pointer;
     class ef_arifle_mxar_coy_Holo;
     class ef_arifle_mxar_coy_Holo_pointer;
@@ -12,10 +12,10 @@ class CfgWeapons {
     class ef_arifle_mxc_coy_Holo;
     class ef_arifle_mxm_MBS_LP_BI;
 
-    class ghost_Marine_wdl_SMG_01_black_Holo_F_snds: SMG_01_black_Holo_F {
+    class GVAR(SMG_01_black_Holo_F_snds): SMG_01_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "SMG_01_black_Holo_F";
+        baseWeapon = "SMG_01_F";
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -23,7 +23,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_Marine_wdl_ef_arifle_mxar_coy_Hamr_pointer_snds: ef_arifle_mxar_coy_Hamr_pointer {
+    class GVAR(ef_arifle_mxar_coy_Hamr_pointer_snds): ef_arifle_mxar_coy_Hamr_pointer {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "ef_arifle_mxar_coy_Hamr_pointer";
@@ -34,7 +34,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_Marine_wdl_ef_arifle_mxar_coy_Holo_snds: ef_arifle_mxar_coy_Holo {
+    class GVAR(ef_arifle_mxar_coy_Holo_snds): ef_arifle_mxar_coy_Holo {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "ef_arifle_mxar_coy_Holo";
@@ -45,7 +45,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_Marine_wdl_ef_arifle_mxar_coy_Holo_pointer_snds: ef_arifle_mxar_coy_Holo_pointer {
+    class GVAR(ef_arifle_mxar_coy_Holo_pointer_snds): ef_arifle_mxar_coy_Holo_pointer {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "ef_arifle_mxar_coy_Holo_pointer";
@@ -56,7 +56,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_Marine_wdl_ef_arifle_mxar_gl_coy_Hamr_pointer_snds: ef_arifle_mxar_gl_coy_Hamr_pointer {
+    class GVAR(ef_arifle_mxar_gl_coy_Hamr_pointer_snds): ef_arifle_mxar_gl_coy_Hamr_pointer {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "ef_arifle_mxar_gl_coy_Hamr_pointer";
@@ -67,7 +67,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_Marine_wdl_ef_arifle_mxc_coy_Holo_snds: ef_arifle_mxc_coy_Holo {
+    class GVAR(ef_arifle_mxc_coy_Holo_snds): ef_arifle_mxc_coy_Holo {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "ef_arifle_mxc_coy_Holo";
@@ -78,7 +78,7 @@ class CfgWeapons {
             };
         };
     };
-    class ghost_Marine_wdl_ef_arifle_mxm_MBS_LP_BI_snds: ef_arifle_mxm_MBS_LP_BI {
+    class GVAR(ef_arifle_mxm_MBS_LP_BI_snds): ef_arifle_mxm_MBS_LP_BI {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "ef_arifle_mxm_MBS_LP_BI";
