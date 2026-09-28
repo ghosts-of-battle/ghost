@@ -8,6 +8,7 @@ The two-argument INFO/WARNING/ERROR/LOG the Roomba scripts were written against,
 
 ## Requires
 
+- `A3_Data_F_Decade_Loadorder` _(external)_
 - `ghost_main`
 - `ghost_diag`
 - `ghost_notify`
@@ -17,11 +18,11 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-31 functions.
+138 unit classes, 9 weapon/item classes, 30 functions.
 
 ## Functions
 
-<details><summary>31</summary>
+<details><summary>30</summary>
 
 - `ghost_vehicle_fnc_addCosmeticSelection`
 - `ghost_vehicle_fnc_addCosmetics`
