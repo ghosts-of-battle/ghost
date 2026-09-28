@@ -1,7 +1,6 @@
 class CfgVehicles {
 #include "acp_full_holder_externs.hpp"
-    class B_CTRG_Soldier_F;
-    class B_CTRG_Soldier_3_F;
+#include "imported_CfgVehicles_decl.hpp"
     class Item_Base_F;
 
     /* Character classes - full sleeve (B_CTRG_Soldier_F body) */
@@ -257,4 +256,5 @@ class CfgVehicles {
 
 #include "acp_ocp_vehicles.hpp"
 #include "acp_snow_vehicles.hpp"
+#include "imported_CfgVehicles.hpp"
 };

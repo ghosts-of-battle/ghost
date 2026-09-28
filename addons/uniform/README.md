@@ -8,8 +8,9 @@ A content pack: 26 unit classes and 14 weapon and item classes. No scripted beha
 
 ## Requires
 
+- `A3_Data_F_Decade_Loadorder` _(external)_
 - `ghost_main`
 
 ## Ships
 
-26 unit classes, 14 weapon/item classes.
+293 unit classes, 282 weapon/item classes.

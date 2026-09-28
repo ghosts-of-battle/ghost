@@ -1,10 +1,9 @@
 class CfgWeapons {
 #include "acp_full_externs.hpp"
-    class UniformItem;
     // real root ItemInfo lives in ghost_main; extern so nested
     // `class ItemInfo: ItemInfo` resolves (HEMTT L-C04)
+#include "imported_CfgWeapons_decl.hpp"
     class ItemInfo;
-    class Uniform_Base;
 
     /* JSOC Stealth - Plain */
     class GVAR(U_B_JSOC_StealthUniform_F): Uniform_Base {        author = QAUTHOR;
@@ -188,4 +187,5 @@ class CfgWeapons {
 
 #include "acp_ocp_weapons.hpp"
 #include "acp_snow_weapons.hpp"
+#include "imported_CfgWeapons.hpp"
 };
