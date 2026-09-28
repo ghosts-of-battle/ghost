@@ -24,7 +24,13 @@ the load order cannot touch it.
 
 ## Requires
 
+- `cba_jr` _(external)_
+- `A3_Data_F_Decade_Loadorder` _(external)_
 - `ghost_main`
 - `A3_Weapons_F` _(external)_
 - `A3_Weapons_F_Machineguns_M200` _(external)_
 - `A3_Weapons_F_Mark_Machineguns_M200` _(external)_
+
+## Ships
+
+2 unit classes, 274 weapon/item classes.

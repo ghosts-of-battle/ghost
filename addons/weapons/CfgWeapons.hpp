@@ -35,7 +35,7 @@ class CfgWeapons {
     // carried weight is whatever the load order says, as it always was. A
     // server without realistic weights gets 2 x vanilla. Either way the
     // barrel mass is explicit and the load order cannot touch it.
-    class Rifle_Base_F;
+#include "imported_CfgWeapons_decl.hpp"
     class arifle_MX_Base_F: Rifle_Base_F {};
 
     class arifle_MXC_F: arifle_MX_Base_F {
@@ -62,8 +62,8 @@ class CfgWeapons {
     // assumption was right (vanilla mass 220, weapons_f\Machineguns\M200) -
     // brought to the same x2 rule as the MX family, because a belt-fed 6.5
     // that cooks off before the rifle beside it is the wrong way round.
-    class Rifle_Long_Base_F;
     class LMG_Mk200_F: Rifle_Long_Base_F {
         ace_overheating_barrelMass = 11.0;           // vanilla fallback 220/40 = 5.5, x2
     };
+#include "imported_CfgWeapons.hpp"
 };
