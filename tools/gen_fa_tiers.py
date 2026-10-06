@@ -68,12 +68,19 @@ VANILLA = os.path.join(ROOT, "work", "vanilla_ammo.json")
 # only future build of the AK-12 magazine is fa_aegis's, and an untiered
 # round is invisible to the faction generator, which only ever issues _t2
 # / _t3 / _t4 classes.
-DEAD = {"fa_rhs", "fa_sps", "fa_antidrone_rhs"}
+# JCA'S WEAPON PACKS LEFT TOO (2026-10-02 - only JCA Land Systems and the ACEAX compat
+# stay). fa_jca and fa_antidrone_jca skip themselves without them, and while they were
+# required here they dropped fa_tiers_mods with them, and fa_tmt (Turkey's magazines)
+# after it (RPT 2026-10-05).
+DEAD = {"fa_rhs", "fa_sps", "fa_antidrone_rhs", "fa_jca", "fa_antidrone_jca"}
 # REARMA IS NOT TIERED (2026-09-27). fa_rearma_cn/rus/us load only with the separate Rearma weapons mod
 # (skipWhenMissingDependencies). Tiering them put all three in fa_tiers_mods' requiredAddons, so a load order
 # without Rearma would drop fa_tiers_mods whole - every E22, JCA, EF, RF and Aegis tier round with it. They were
 # never tiered before; if they are wanted, they need a tier addon of their own.
-UNTIERED = {"fa_rearma_cn", "fa_rearma_rus", "fa_rearma_us"}
+# fa_tmt and fa_minrf carry their own _t2/_t3/_t4 (tools/gen_mod_factions.py) and REQUIRE
+# fa_tiers_mods, so reading them here would be a dependency loop. fa_mcc and fa_mpp were
+# never tiered, and tiering them would make MCC and MPP requirements of fa_tiers_mods.
+UNTIERED = {"fa_rearma_cn", "fa_rearma_rus", "fa_rearma_us", "fa_tmt", "fa_minrf", "fa_mcc", "fa_mpp"}
 
 # THE TIER 2 FLOOR, AND WHY IT IS ONLY ON PENETRATION.
 #
@@ -110,7 +117,9 @@ TIERS = [("t4", 1.06), ("t3", 1.0), ("t2", 0.88)]
 # [ 	]* rather than \s* for the indent: \s matches newlines, so a greedy
 # leading \s* swallows blank lines between classes and the engine walks past
 # openings it should have matched - which quietly found 165 of 495.
-CLASS_OPEN = re.compile(r"^([ 	]*)class\s+(\w+)\s*:\s*(\w+)\s*\{", re.M)
+# The parent may be a macro - fa_aegis builds on EGVAR(weapons,<mag>) since the
+# Aegis import - and a bare \w+ skipped those magazines without a word.
+CLASS_OPEN = re.compile(r"^([ 	]*)class\s+(\w+)\s*:\s*(\w+(?:\([\w, ]*\))?)\s*\{", re.M)
 PROP = re.compile(r"^\s*(\w+)\s*=\s*([0-9.]+)\s*;", re.M)
 # ammo = "..." ANYWHERE A STATEMENT CAN START, not only at the head of a line.
 # Requiring ^ meant every magazine written on one line was skipped silently -

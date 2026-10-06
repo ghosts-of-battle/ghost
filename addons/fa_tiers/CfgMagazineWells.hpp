@@ -3609,18 +3609,4 @@ class CfgMagazineWells {
             "FA_b_30Rnd_45ACP_Mk421_T_IR_t2"
         };
     };
-    class ghost_weapons_G17_9x21 {
-        ADDON[] += {
-            "FA_b_17Rnd_9x21_Mk424_AP_t4",
-            "FA_b_17Rnd_9x21_Mk424_AP_t3",
-            "FA_b_17Rnd_9x21_Mk424_AP_t2"
-        };
-    };
-    class ghost_weapons_SMG_Gepard_9x21 {
-        ADDON[] += {
-            "FA_b_40Rnd_9x21_Gepard_Mk424_AP_t4",
-            "FA_b_40Rnd_9x21_Gepard_Mk424_AP_t3",
-            "FA_b_40Rnd_9x21_Gepard_Mk424_AP_t2"
-        };
-    };
 };

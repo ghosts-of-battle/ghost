@@ -6,12 +6,11 @@ Description:
     Brings one launcher on line. Placed in Eden, spawned by Zeus or dropped by a
     script - all the same, the same way the radar does it.
 
-    THERE IS NO MODULE, AND THAT IS THE CHANGE. In ghost this addon was driven by
-    ghost_moduleAntiShip: switch a side on and it SITED a battery for you, on
-    coastal ground inside that side's ALiVE TAOR markers. DIVINER has no TAORs
-    and no commanders to own them, so the siting had nowhere to read from - and
-    the honest replacement is not a smaller module, it is putting the launcher
-    where you want it. A mission maker knows which headland the battery is on.
+    THE MODULE ONLY SITES. FUNC(moduleAntiShip) finds coastal ground inside each
+    enemy commander's ALiVE TAOR and spawns the pieces; everything a launcher
+    does from then on starts here, exactly as for one placed by hand. (DIVINER
+    dropped the module for having no TAORs; ghost has them, so it came back,
+    2026-10-03.)
 
     ONE LAUNCHER IS ONE BATTERY. The module grouped several under one clock; a
     hand-placed launcher owns its own, so three launchers on a headland are three
@@ -80,7 +79,7 @@ if (!isNil QEFUNC(adapter_alive,registerSite)) then {
 };
 
 // The tuning is settings now rather than module attributes - one battery cannot
-// have its own interval when there is no module to give it one, and a mission
+// have its own interval when the module that sites it only sites, and a mission
 // that wants two different behaviours has a bigger question than this addon.
 private _cfg = createHashMapFromArray [
     ["pos", getPosASL _launcher],

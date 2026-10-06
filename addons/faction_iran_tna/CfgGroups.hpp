@@ -58,333 +58,6 @@ class CfgGroups {
 
             };
 
-            class ArmInfantry {
-                name = "ArmInfantry";
-
-                class GVAR(Atlas_O_InfSentry_R) {
-                    name = "Sentry";
-                    side = 0;
-                    faction = QUOTE(ADDON);
-                    icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
-
-                    class Unit0 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_GL_F);
-                        rank = "CORPORAL";
-                        position[] = {0,0,0};
-                    };
-
-                    class Unit1 {
-                        side = 0;
-                        vehicle = QGVAR(O_soldier_F);
-                        rank = "PRIVATE";
-                        position[] = {5,-5,0};
-                    };
-                };
-
-                class GVAR(Atlas_O_InfSquad_R) {
-                    name = "Rifle Squad";
-                    side = 0;
-                    faction = QUOTE(ADDON);
-                    icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
-
-                    class Unit0 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_SL_F);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
-
-                    class Unit1 {
-                        side = 0;
-                        vehicle = QGVAR(O_RadioOperator_F);
-                        rank = "PRIVATE";
-                        position[] = {5,-5,0};
-                    };
-
-                    class Unit2 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_LAT_F);
-                        rank = "CORPORAL";
-                        position[] = {-5,-5,0};
-                    };
-
-                    class Unit3 {
-                        side = 0;
-                        vehicle = QGVAR(O_soldier_M_F);
-                        rank = "PRIVATE";
-                        position[] = {10,-10,0};
-                    };
-
-                    class Unit4 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_TL_F);
-                        rank = "SERGEANT";
-                        position[] = {-10,-10,0};
-                    };
-
-                    class Unit5 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AR_F);
-                        rank = "CORPORAL";
-                        position[] = {15,-15,0};
-                    };
-
-                    class Unit6 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_A_F);
-                        rank = "PRIVATE";
-                        position[] = {-15,-15,0};
-                    };
-
-                    class Unit7 {
-                        side = 0;
-                        vehicle = QGVAR(O_medic_F);
-                        rank = "PRIVATE";
-                        position[] = {20,-20,0};
-                    };
-
-                    class Unit8 {
-                        side = 0;
-                        vehicle = QGVAR(Drone_Operator);
-                        rank = "PRIVATE";
-                        position[] = {-20,-20,0};
-                    };
-
-                    class Unit9 {
-                        side = 0;
-                        vehicle = QGVAR(SwitchBlade_Operator);
-                        rank = "PRIVATE";
-                        position[] = {25,-25,0};
-                    };
-                };
-
-                class GVAR(Atlas_O_InfSquad_Weapons_R) {
-                    name = "Weapons Squad";
-                    side = 0;
-                    faction = QUOTE(ADDON);
-                    icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
-
-                    class Unit0 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_SL_F);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
-
-                    class Unit1 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AR_F);
-                        rank = "PRIVATE";
-                        position[] = {5,-5,0};
-                    };
-
-                    class Unit2 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_GL_F);
-                        rank = "CORPORAL";
-                        position[] = {-5,-5,0};
-                    };
-
-                    class Unit3 {
-                        side = 0;
-                        vehicle = QGVAR(O_soldier_M_F);
-                        rank = "PRIVATE";
-                        position[] = {10,-10,0};
-                    };
-
-                    class Unit4 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AT_F);
-                        rank = "PRIVATE";
-                        position[] = {-10,-10,0};
-                    };
-
-                    class Unit5 {
-                        side = 0;
-                        vehicle = QGVAR(O_soldier_F);
-                        rank = "PRIVATE";
-                        position[] = {15,-15,0};
-                    };
-
-                    class Unit6 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_A_F);
-                        rank = "PRIVATE";
-                        position[] = {-15,-15,0};
-                    };
-
-                    class Unit7 {
-                        side = 0;
-                        vehicle = QGVAR(O_medic_F);
-                        rank = "PRIVATE";
-                        position[] = {20,-20,0};
-                    };
-
-                    class Unit8 {
-                        side = 0;
-                        vehicle = QGVAR(Drone_Operator);
-                        rank = "PRIVATE";
-                        position[] = {-20,-20,0};
-                    };
-
-                    class Unit9 {
-                        side = 0;
-                        vehicle = QGVAR(SwitchBlade_Operator);
-                        rank = "PRIVATE";
-                        position[] = {25,-25,0};
-                    };
-                };
-
-                class GVAR(Atlas_O_InfTeam_AA_R) {
-                    name = "Air-defense Team";
-                    side = 0;
-                    faction = QUOTE(ADDON);
-                    icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
-
-                    class Unit0 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_TL_F);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
-
-                    class Unit1 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AA_F);
-                        rank = "CORPORAL";
-                        position[] = {5,-5,0};
-                    };
-
-                    class Unit2 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AA_F);
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-
-                    class Unit3 {
-                        side = 0;
-                        vehicle = QGVAR(O_soldier_F);
-                        rank = "PRIVATE";
-                        position[] = {10,-10,0};
-                    };
-
-                    class Unit4 {
-                        side = 0;
-                        vehicle = QGVAR(Drone_Operator);
-                        rank = "PRIVATE";
-                        position[] = {-10,-10,0};
-                    };
-
-                    class Unit5 {
-                        side = 0;
-                        vehicle = QGVAR(SwitchBlade_Operator);
-                        rank = "PRIVATE";
-                        position[] = {15,-15,0};
-                    };
-                };
-
-                class GVAR(Atlas_O_InfTeam_AT_R) {
-                    name = "Anti-armor Team";
-                    side = 0;
-                    faction = QUOTE(ADDON);
-                    icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
-
-                    class Unit0 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_TL_F);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
-
-                    class Unit1 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AT_F);
-                        rank = "CORPORAL";
-                        position[] = {5,-5,0};
-                    };
-
-                    class Unit2 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AT_F);
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-
-                    class Unit3 {
-                        side = 0;
-                        vehicle = QGVAR(O_soldier_F);
-                        rank = "PRIVATE";
-                        position[] = {10,-10,0};
-                    };
-
-                    class Unit4 {
-                        side = 0;
-                        vehicle = QGVAR(Drone_Operator);
-                        rank = "PRIVATE";
-                        position[] = {-10,-10,0};
-                    };
-
-                    class Unit5 {
-                        side = 0;
-                        vehicle = QGVAR(SwitchBlade_Operator);
-                        rank = "PRIVATE";
-                        position[] = {15,-15,0};
-                    };
-                };
-
-                class GVAR(Atlas_O_InfTeam_R) {
-                    name = "Fire Team";
-                    side = 0;
-                    faction = QUOTE(ADDON);
-                    icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
-
-                    class Unit0 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_TL_F);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
-
-                    class Unit1 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AR_F);
-                        rank = "CORPORAL";
-                        position[] = {5,-5,0};
-                    };
-
-                    class Unit2 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_GL_F);
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-
-                    class Unit3 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_LAT_F);
-                        rank = "PRIVATE";
-                        position[] = {10,-10,0};
-                    };
-
-                    class Unit4 {
-                        side = 0;
-                        vehicle = QGVAR(Drone_Operator);
-                        rank = "PRIVATE";
-                        position[] = {-10,-10,0};
-                    };
-
-                    class Unit5 {
-                        side = 0;
-                        vehicle = QGVAR(SwitchBlade_Operator);
-                        rank = "PRIVATE";
-                        position[] = {15,-15,0};
-                    };
-                };
-
-            };
-
             class Armored {
                 name = "Armored";
 
@@ -614,249 +287,6 @@ class CfgGroups {
                         vehicle = QGVAR(O_MBT_02_arty_F);
                         rank = "CORPORAL";
                         position[] = {15,-15,0};
-                    };
-                };
-
-            };
-
-            class EF_UMotorized {
-                name = "EF_UMotorized";
-
-                class GVAR(EF_OIA_Guard_MotorizedAirdefenseTeam) {
-                    name = "Guard Motorized Air-defense Team";
-                    side = 0;
-                    faction = QUOTE(ADDON);
-                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
-
-                    class Unit0 {
-                        side = 0;
-                        vehicle = QGVAR(O_APC_Tracked_02_AA_F);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
-
-                    class Unit1 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AA_F);
-                        rank = "CORPORAL";
-                        position[] = {5,-5,0};
-                    };
-
-                    class Unit2 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AA_F);
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-
-                    class Unit3 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AAA_F);
-                        rank = "PRIVATE";
-                        position[] = {10,-10,0};
-                    };
-
-                    class Unit4 {
-                        side = 0;
-                        vehicle = QGVAR(Drone_Operator);
-                        rank = "PRIVATE";
-                        position[] = {-10,-10,0};
-                    };
-
-                    class Unit5 {
-                        side = 0;
-                        vehicle = QGVAR(SwitchBlade_Operator);
-                        rank = "PRIVATE";
-                        position[] = {15,-15,0};
-                    };
-                };
-
-                class GVAR(EF_OIA_Guard_MotorizedAntiarmorTeam) {
-                    name = "Guard Motorized Anti-armor Team";
-                    side = 0;
-                    faction = QUOTE(ADDON);
-                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
-
-                    class Unit0 {
-                        side = 0;
-                        vehicle = QGVAR(O_APC_Tracked_02_cannon_F);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
-
-                    class Unit1 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AT_F);
-                        rank = "CORPORAL";
-                        position[] = {5,-5,0};
-                    };
-
-                    class Unit2 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AT_F);
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-
-                    class Unit3 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AAT_F);
-                        rank = "PRIVATE";
-                        position[] = {10,-10,0};
-                    };
-
-                    class Unit4 {
-                        side = 0;
-                        vehicle = QGVAR(Drone_Operator);
-                        rank = "PRIVATE";
-                        position[] = {-10,-10,0};
-                    };
-
-                    class Unit5 {
-                        side = 0;
-                        vehicle = QGVAR(SwitchBlade_Operator);
-                        rank = "PRIVATE";
-                        position[] = {15,-15,0};
-                    };
-                };
-
-                class GVAR(EF_OIA_Guard_MotorizedAssaultTeam) {
-                    name = "Guard Motorized Assault Team";
-                    side = 0;
-                    faction = QUOTE(ADDON);
-                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
-
-                    class Unit0 {
-                        side = 0;
-                        vehicle = QGVAR(O_APC_Tracked_02_cannon_F);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
-
-                    class Unit1 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_TL_F);
-                        rank = "CORPORAL";
-                        position[] = {5,-5,0};
-                    };
-
-                    class Unit2 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AR_F);
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-
-                    class Unit3 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AT_F);
-                        rank = "PRIVATE";
-                        position[] = {10,-10,0};
-                    };
-
-                    class Unit4 {
-                        side = 0;
-                        vehicle = QGVAR(O_soldier_F);
-                        rank = "PRIVATE";
-                        position[] = {-10,-10,0};
-                    };
-
-                    class Unit5 {
-                        side = 0;
-                        vehicle = QGVAR(Drone_Operator);
-                        rank = "PRIVATE";
-                        position[] = {15,-15,0};
-                    };
-
-                    class Unit6 {
-                        side = 0;
-                        vehicle = QGVAR(SwitchBlade_Operator);
-                        rank = "PRIVATE";
-                        position[] = {-15,-15,0};
-                    };
-                };
-
-                class GVAR(EF_OIA_Guard_MotorizedPatrol) {
-                    name = "Guard Motorized Patrol";
-                    side = 0;
-                    faction = QUOTE(ADDON);
-                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
-
-                    class Unit0 {
-                        side = 0;
-                        vehicle = QGVAR(O_APC_Tracked_02_cannon_F);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
-
-                    class Unit1 {
-                        side = 0;
-                        vehicle = QGVAR(O_soldier_F);
-                        rank = "CORPORAL";
-                        position[] = {5,-5,0};
-                    };
-
-                    class Unit2 {
-                        side = 0;
-                        vehicle = QGVAR(O_soldier_M_F);
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-                };
-
-                class GVAR(EF_OIA_Guard_MotorizedTeam) {
-                    name = "Guard Motorized Team";
-                    side = 0;
-                    faction = QUOTE(ADDON);
-                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
-
-                    class Unit0 {
-                        side = 0;
-                        vehicle = QGVAR(O_APC_Tracked_02_cannon_F);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
-
-                    class Unit1 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_TL_F);
-                        rank = "CORPORAL";
-                        position[] = {5,-5,0};
-                    };
-
-                    class Unit2 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AR_F);
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-
-                    class Unit3 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AT_F);
-                        rank = "PRIVATE";
-                        position[] = {10,-10,0};
-                    };
-
-                    class Unit4 {
-                        side = 0;
-                        vehicle = QGVAR(O_soldier_F);
-                        rank = "PRIVATE";
-                        position[] = {-10,-10,0};
-                    };
-
-                    class Unit5 {
-                        side = 0;
-                        vehicle = QGVAR(Drone_Operator);
-                        rank = "PRIVATE";
-                        position[] = {15,-15,0};
-                    };
-
-                    class Unit6 {
-                        side = 0;
-                        vehicle = QGVAR(SwitchBlade_Operator);
-                        rank = "PRIVATE";
-                        position[] = {-15,-15,0};
                     };
                 };
 
@@ -1537,6 +967,477 @@ class CfgGroups {
                     class Unit3 {
                         side = 0;
                         vehicle = QGVAR(O_Soldier_AHAT_F);
+                        rank = "PRIVATE";
+                        position[] = {10,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 0;
+                        vehicle = QGVAR(Drone_Operator);
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
+                    };
+
+                    class Unit5 {
+                        side = 0;
+                        vehicle = QGVAR(SwitchBlade_Operator);
+                        rank = "PRIVATE";
+                        position[] = {15,-15,0};
+                    };
+                };
+
+
+                class GVAR(Atlas_O_InfSentry_R) {
+                    name = "Army Sentry";
+                    side = 0;
+                    faction = QUOTE(ADDON);
+                    icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
+
+                    class Unit0 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_GL_F);
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+
+                    class Unit1 {
+                        side = 0;
+                        vehicle = QGVAR(O_soldier_F);
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+
+                class GVAR(Atlas_O_InfSquad_R) {
+                    name = "Army Rifle Squad";
+                    side = 0;
+                    faction = QUOTE(ADDON);
+                    icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
+
+                    class Unit0 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_SL_F);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+
+                    class Unit1 {
+                        side = 0;
+                        vehicle = QGVAR(O_RadioOperator_F);
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+
+                    class Unit2 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_LAT_F);
+                        rank = "CORPORAL";
+                        position[] = {-5,-5,0};
+                    };
+
+                    class Unit3 {
+                        side = 0;
+                        vehicle = QGVAR(O_soldier_M_F);
+                        rank = "PRIVATE";
+                        position[] = {10,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_TL_F);
+                        rank = "SERGEANT";
+                        position[] = {-10,-10,0};
+                    };
+
+                    class Unit5 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AR_F);
+                        rank = "CORPORAL";
+                        position[] = {15,-15,0};
+                    };
+
+                    class Unit6 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_A_F);
+                        rank = "PRIVATE";
+                        position[] = {-15,-15,0};
+                    };
+
+                    class Unit7 {
+                        side = 0;
+                        vehicle = QGVAR(O_medic_F);
+                        rank = "PRIVATE";
+                        position[] = {20,-20,0};
+                    };
+
+                    class Unit8 {
+                        side = 0;
+                        vehicle = QGVAR(Drone_Operator);
+                        rank = "PRIVATE";
+                        position[] = {-20,-20,0};
+                    };
+
+                    class Unit9 {
+                        side = 0;
+                        vehicle = QGVAR(SwitchBlade_Operator);
+                        rank = "PRIVATE";
+                        position[] = {25,-25,0};
+                    };
+                };
+
+                class GVAR(Atlas_O_InfSquad_Weapons_R) {
+                    name = "Army Weapons Squad";
+                    side = 0;
+                    faction = QUOTE(ADDON);
+                    icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
+
+                    class Unit0 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_SL_F);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+
+                    class Unit1 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AR_F);
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+
+                    class Unit2 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_GL_F);
+                        rank = "CORPORAL";
+                        position[] = {-5,-5,0};
+                    };
+
+                    class Unit3 {
+                        side = 0;
+                        vehicle = QGVAR(O_soldier_M_F);
+                        rank = "PRIVATE";
+                        position[] = {10,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AT_F);
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
+                    };
+
+                    class Unit5 {
+                        side = 0;
+                        vehicle = QGVAR(O_soldier_F);
+                        rank = "PRIVATE";
+                        position[] = {15,-15,0};
+                    };
+
+                    class Unit6 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_A_F);
+                        rank = "PRIVATE";
+                        position[] = {-15,-15,0};
+                    };
+
+                    class Unit7 {
+                        side = 0;
+                        vehicle = QGVAR(O_medic_F);
+                        rank = "PRIVATE";
+                        position[] = {20,-20,0};
+                    };
+
+                    class Unit8 {
+                        side = 0;
+                        vehicle = QGVAR(Drone_Operator);
+                        rank = "PRIVATE";
+                        position[] = {-20,-20,0};
+                    };
+
+                    class Unit9 {
+                        side = 0;
+                        vehicle = QGVAR(SwitchBlade_Operator);
+                        rank = "PRIVATE";
+                        position[] = {25,-25,0};
+                    };
+                };
+
+                class GVAR(Atlas_O_InfTeam_AA_R) {
+                    name = "Army Air-defense Team";
+                    side = 0;
+                    faction = QUOTE(ADDON);
+                    icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
+
+                    class Unit0 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_TL_F);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+
+                    class Unit1 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AA_F);
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+
+                    class Unit2 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AA_F);
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+
+                    class Unit3 {
+                        side = 0;
+                        vehicle = QGVAR(O_soldier_F);
+                        rank = "PRIVATE";
+                        position[] = {10,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 0;
+                        vehicle = QGVAR(Drone_Operator);
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
+                    };
+
+                    class Unit5 {
+                        side = 0;
+                        vehicle = QGVAR(SwitchBlade_Operator);
+                        rank = "PRIVATE";
+                        position[] = {15,-15,0};
+                    };
+                };
+
+                class GVAR(Atlas_O_InfTeam_AT_R) {
+                    name = "Army Anti-armor Team";
+                    side = 0;
+                    faction = QUOTE(ADDON);
+                    icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
+
+                    class Unit0 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_TL_F);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+
+                    class Unit1 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AT_F);
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+
+                    class Unit2 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AT_F);
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+
+                    class Unit3 {
+                        side = 0;
+                        vehicle = QGVAR(O_soldier_F);
+                        rank = "PRIVATE";
+                        position[] = {10,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 0;
+                        vehicle = QGVAR(Drone_Operator);
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
+                    };
+
+                    class Unit5 {
+                        side = 0;
+                        vehicle = QGVAR(SwitchBlade_Operator);
+                        rank = "PRIVATE";
+                        position[] = {15,-15,0};
+                    };
+                };
+
+                class GVAR(Atlas_O_InfTeam_R) {
+                    name = "Army Fire Team";
+                    side = 0;
+                    faction = QUOTE(ADDON);
+                    icon = "\A3\UI_F\Data\Map\Markers\NATO\o_inf.paa";
+
+                    class Unit0 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_TL_F);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+
+                    class Unit1 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AR_F);
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+
+                    class Unit2 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_GL_F);
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+
+                    class Unit3 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_LAT_F);
+                        rank = "PRIVATE";
+                        position[] = {10,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 0;
+                        vehicle = QGVAR(Drone_Operator);
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
+                    };
+
+                    class Unit5 {
+                        side = 0;
+                        vehicle = QGVAR(SwitchBlade_Operator);
+                        rank = "PRIVATE";
+                        position[] = {15,-15,0};
+                    };
+                };
+
+
+                class GVAR(OIA_GuardSentry) {
+                    name = "Guard Sentry";
+                    side = 0;
+                    faction = QUOTE(ADDON);
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+
+                    class Unit0 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_GL_F);
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+
+                    class Unit1 {
+                        side = 0;
+                        vehicle = QGVAR(O_soldier_F);
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+
+                class GVAR(OIA_GuardSquad) {
+                    name = "Guard Squad";
+                    side = 0;
+                    faction = QUOTE(ADDON);
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+
+                    class Unit0 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_SL_F);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+
+                    class Unit1 {
+                        side = 0;
+                        vehicle = QGVAR(O_RadioOperator_F);
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+
+                    class Unit2 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_LAT_F);
+                        rank = "CORPORAL";
+                        position[] = {-5,-5,0};
+                    };
+
+                    class Unit3 {
+                        side = 0;
+                        vehicle = QGVAR(O_soldier_M_F);
+                        rank = "PRIVATE";
+                        position[] = {10,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_TL_F);
+                        rank = "SERGEANT";
+                        position[] = {-10,-10,0};
+                    };
+
+                    class Unit5 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AR_F);
+                        rank = "CORPORAL";
+                        position[] = {15,-15,0};
+                    };
+
+                    class Unit6 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_A_F);
+                        rank = "PRIVATE";
+                        position[] = {-15,-15,0};
+                    };
+
+                    class Unit7 {
+                        side = 0;
+                        vehicle = QGVAR(O_medic_F);
+                        rank = "PRIVATE";
+                        position[] = {20,-20,0};
+                    };
+
+                    class Unit8 {
+                        side = 0;
+                        vehicle = QGVAR(Drone_Operator);
+                        rank = "PRIVATE";
+                        position[] = {-20,-20,0};
+                    };
+
+                    class Unit9 {
+                        side = 0;
+                        vehicle = QGVAR(SwitchBlade_Operator);
+                        rank = "PRIVATE";
+                        position[] = {25,-25,0};
+                    };
+                };
+
+                class GVAR(OIA_GuardTeam) {
+                    name = "Guard Patrol";
+                    side = 0;
+                    faction = QUOTE(ADDON);
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+
+                    class Unit0 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_TL_F);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+
+                    class Unit1 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AR_F);
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+
+                    class Unit2 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_GL_F);
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+
+                    class Unit3 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_LAT_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
@@ -2982,6 +2883,245 @@ class CfgGroups {
                     };
                 };
 
+
+                class GVAR(EF_OIA_Guard_MotorizedAirdefenseTeam) {
+                    name = "Guard Motorized Air-defense Team";
+                    side = 0;
+                    faction = QUOTE(ADDON);
+                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+
+                    class Unit0 {
+                        side = 0;
+                        vehicle = QGVAR(O_APC_Tracked_02_AA_F);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+
+                    class Unit1 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AA_F);
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+
+                    class Unit2 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AA_F);
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+
+                    class Unit3 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AAA_F);
+                        rank = "PRIVATE";
+                        position[] = {10,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 0;
+                        vehicle = QGVAR(Drone_Operator);
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
+                    };
+
+                    class Unit5 {
+                        side = 0;
+                        vehicle = QGVAR(SwitchBlade_Operator);
+                        rank = "PRIVATE";
+                        position[] = {15,-15,0};
+                    };
+                };
+
+                class GVAR(EF_OIA_Guard_MotorizedAntiarmorTeam) {
+                    name = "Guard Motorized Anti-armor Team";
+                    side = 0;
+                    faction = QUOTE(ADDON);
+                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+
+                    class Unit0 {
+                        side = 0;
+                        vehicle = QGVAR(O_APC_Tracked_02_cannon_F);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+
+                    class Unit1 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AT_F);
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+
+                    class Unit2 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AT_F);
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+
+                    class Unit3 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AAT_F);
+                        rank = "PRIVATE";
+                        position[] = {10,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 0;
+                        vehicle = QGVAR(Drone_Operator);
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
+                    };
+
+                    class Unit5 {
+                        side = 0;
+                        vehicle = QGVAR(SwitchBlade_Operator);
+                        rank = "PRIVATE";
+                        position[] = {15,-15,0};
+                    };
+                };
+
+                class GVAR(EF_OIA_Guard_MotorizedAssaultTeam) {
+                    name = "Guard Motorized Assault Team";
+                    side = 0;
+                    faction = QUOTE(ADDON);
+                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+
+                    class Unit0 {
+                        side = 0;
+                        vehicle = QGVAR(O_APC_Tracked_02_cannon_F);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+
+                    class Unit1 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_TL_F);
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+
+                    class Unit2 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AR_F);
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+
+                    class Unit3 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AT_F);
+                        rank = "PRIVATE";
+                        position[] = {10,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 0;
+                        vehicle = QGVAR(O_soldier_F);
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
+                    };
+
+                    class Unit5 {
+                        side = 0;
+                        vehicle = QGVAR(Drone_Operator);
+                        rank = "PRIVATE";
+                        position[] = {15,-15,0};
+                    };
+
+                    class Unit6 {
+                        side = 0;
+                        vehicle = QGVAR(SwitchBlade_Operator);
+                        rank = "PRIVATE";
+                        position[] = {-15,-15,0};
+                    };
+                };
+
+                class GVAR(EF_OIA_Guard_MotorizedPatrol) {
+                    name = "Guard Motorized Patrol";
+                    side = 0;
+                    faction = QUOTE(ADDON);
+                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+
+                    class Unit0 {
+                        side = 0;
+                        vehicle = QGVAR(O_APC_Tracked_02_cannon_F);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+
+                    class Unit1 {
+                        side = 0;
+                        vehicle = QGVAR(O_soldier_F);
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+
+                    class Unit2 {
+                        side = 0;
+                        vehicle = QGVAR(O_soldier_M_F);
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                };
+
+                class GVAR(EF_OIA_Guard_MotorizedTeam) {
+                    name = "Guard Motorized Team";
+                    side = 0;
+                    faction = QUOTE(ADDON);
+                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+
+                    class Unit0 {
+                        side = 0;
+                        vehicle = QGVAR(O_APC_Tracked_02_cannon_F);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+
+                    class Unit1 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_TL_F);
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+
+                    class Unit2 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AR_F);
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+
+                    class Unit3 {
+                        side = 0;
+                        vehicle = QGVAR(O_Soldier_AT_F);
+                        rank = "PRIVATE";
+                        position[] = {10,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 0;
+                        vehicle = QGVAR(O_soldier_F);
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
+                    };
+
+                    class Unit5 {
+                        side = 0;
+                        vehicle = QGVAR(Drone_Operator);
+                        rank = "PRIVATE";
+                        position[] = {15,-15,0};
+                    };
+
+                    class Unit6 {
+                        side = 0;
+                        vehicle = QGVAR(SwitchBlade_Operator);
+                        rank = "PRIVATE";
+                        position[] = {-15,-15,0};
+                    };
+                };
+
             };
 
             class Naval {
@@ -3621,158 +3761,6 @@ class CfgGroups {
                         vehicle = QGVAR(O_support_AMort_F);
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
-                    };
-                };
-
-            };
-
-            class UInfantry {
-                name = "UInfantry";
-
-                class GVAR(OIA_GuardSentry) {
-                    name = "Guard Sentry";
-                    side = 0;
-                    faction = QUOTE(ADDON);
-                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
-
-                    class Unit0 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_GL_F);
-                        rank = "CORPORAL";
-                        position[] = {0,0,0};
-                    };
-
-                    class Unit1 {
-                        side = 0;
-                        vehicle = QGVAR(O_soldier_F);
-                        rank = "PRIVATE";
-                        position[] = {5,-5,0};
-                    };
-                };
-
-                class GVAR(OIA_GuardSquad) {
-                    name = "Guard Squad";
-                    side = 0;
-                    faction = QUOTE(ADDON);
-                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
-
-                    class Unit0 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_SL_F);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
-
-                    class Unit1 {
-                        side = 0;
-                        vehicle = QGVAR(O_RadioOperator_F);
-                        rank = "PRIVATE";
-                        position[] = {5,-5,0};
-                    };
-
-                    class Unit2 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_LAT_F);
-                        rank = "CORPORAL";
-                        position[] = {-5,-5,0};
-                    };
-
-                    class Unit3 {
-                        side = 0;
-                        vehicle = QGVAR(O_soldier_M_F);
-                        rank = "PRIVATE";
-                        position[] = {10,-10,0};
-                    };
-
-                    class Unit4 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_TL_F);
-                        rank = "SERGEANT";
-                        position[] = {-10,-10,0};
-                    };
-
-                    class Unit5 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AR_F);
-                        rank = "CORPORAL";
-                        position[] = {15,-15,0};
-                    };
-
-                    class Unit6 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_A_F);
-                        rank = "PRIVATE";
-                        position[] = {-15,-15,0};
-                    };
-
-                    class Unit7 {
-                        side = 0;
-                        vehicle = QGVAR(O_medic_F);
-                        rank = "PRIVATE";
-                        position[] = {20,-20,0};
-                    };
-
-                    class Unit8 {
-                        side = 0;
-                        vehicle = QGVAR(Drone_Operator);
-                        rank = "PRIVATE";
-                        position[] = {-20,-20,0};
-                    };
-
-                    class Unit9 {
-                        side = 0;
-                        vehicle = QGVAR(SwitchBlade_Operator);
-                        rank = "PRIVATE";
-                        position[] = {25,-25,0};
-                    };
-                };
-
-                class GVAR(OIA_GuardTeam) {
-                    name = "Guard Patrol";
-                    side = 0;
-                    faction = QUOTE(ADDON);
-                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
-
-                    class Unit0 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_TL_F);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
-
-                    class Unit1 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_AR_F);
-                        rank = "CORPORAL";
-                        position[] = {5,-5,0};
-                    };
-
-                    class Unit2 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_GL_F);
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-
-                    class Unit3 {
-                        side = 0;
-                        vehicle = QGVAR(O_Soldier_LAT_F);
-                        rank = "PRIVATE";
-                        position[] = {10,-10,0};
-                    };
-
-                    class Unit4 {
-                        side = 0;
-                        vehicle = QGVAR(Drone_Operator);
-                        rank = "PRIVATE";
-                        position[] = {-10,-10,0};
-                    };
-
-                    class Unit5 {
-                        side = 0;
-                        vehicle = QGVAR(SwitchBlade_Operator);
-                        rank = "PRIVATE";
-                        position[] = {15,-15,0};
                     };
                 };
 

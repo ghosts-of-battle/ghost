@@ -1,4 +1,72 @@
 class CfgVehicles {
+    class Logic;
+    class Module_F: Logic {
+        class AttributesBase {
+            class Edit;
+        };
+        class ModuleDescription;
+    };
+
+    // --- the module ----------------------------------------------------------
+    // BACK, AND UNDER ITS OLD NAME (user, 2026-10-03: "the module was meant to
+    // find clean shore line to place anti ship launcher and radar so the
+    // mission maker does not know where they are"). DIVINER dropped it because
+    // DIVINER has no TAORs; ghost runs ALiVE, which has them. Same class name,
+    // so missions that already carry it load it again.
+    //
+    // NO SIDE ON IT. Every ALiVE commander the players are not on gets its
+    // batteries, inside its own TAOR - who the enemy is comes from the mission,
+    // not from a field (D59). Placing the module is the switch.
+    //
+    // OPERATION VALUES ONLY - how many. Where comes from ALiVE: the radar on the
+    // coast where it sees the sea, the launchers inland where they cannot.
+    class ghost_moduleAntiShip: Module_F {
+        scope = 2;
+        scopeCurator = 0;
+        displayName = "Ghost - Anti-Ship Batteries";
+        author = QAUTHOR;
+        category = "ghost_modules";
+        function = QFUNC(moduleAntiShip);
+        functionPriority = 1;
+        isGlobal = 0;
+        isTriggerActivated = 0;
+        isDisposable = 1;
+        is3DEN = 0;
+        canSetArea = 1;
+        icon = "\a3\ui_f\data\map\markers\nato\o_art.paa";
+
+        class Attributes: AttributesBase {
+            class batteriesPerSide: Edit {
+                property = QGVAR(batteriesPerSide);
+                displayName = "Batteries Per Side";
+                tooltip = "How many coastal batteries each enemy commander gets, each sited on its own stretch of coast inside that commander's TAOR. A side whose TAOR has no coast gets none, and the RPT says so.";
+                typeName = "NUMBER";
+                defaultValue = "1";
+                expression = QUOTE(_this setVariable [ARR_2('batteriesPerSide',_value)]);
+            };
+            class launchersPerBattery: Edit {
+                property = QGVAR(launchersPerBattery);
+                displayName = "Launchers Per Battery";
+                tooltip = "Launchers in each battery, sited inland behind the radar where they cannot see the sea. Each one is its own tube on its own clock.";
+                typeName = "NUMBER";
+                defaultValue = "2";
+                expression = QUOTE(_this setVariable [ARR_2('launchersPerBattery',_value)]);
+            };
+            class radarsPerBattery: Edit {
+                property = QGVAR(radarsPerBattery);
+                displayName = "Radars Per Battery";
+                tooltip = "Surface search radars on the shoreline, seeing for the launchers. Kill them and the battery is blind. 0 leaves the launchers to search for themselves.";
+                typeName = "NUMBER";
+                defaultValue = "1";
+                expression = QUOTE(_this setVariable [ARR_2('radarsPerBattery',_value)]);
+            };
+        };
+
+        class ModuleDescription: ModuleDescription {
+            description = "Sites coastal anti-ship batteries for every ALiVE commander the players are not on, inside its own TAOR: a surface search radar on the shoreline and launchers inland behind it. Nobody placing the mission knows where. Without ALiVE, the module's own area is the ground and the battery belongs to the side opposing the players. How they fire is under CBA settings, Anti-Ship.";
+        };
+    };
+
     // --- the launcher --------------------------------------------------------
     // Ancestry restated so the turret override below has something real to
     // inherit (same pattern as the naval addon). Each link keeps its own

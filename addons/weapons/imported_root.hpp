@@ -12,6 +12,7 @@ class asdg_MuzzleSlot_762R;
 class asdg_MuzzleSlot_9MM;
 class asdg_MuzzleSlot_9MM_SMG;
 class asdg_OpticRail1913;
+class asdg_OpticRail1913_long;
 class asdg_OpticRail1913_short;
 class asdg_PistolOpticRail1913;
 class asdg_PistolUnderRail;
@@ -22,7 +23,7 @@ class Mode_SemiAuto;
 class MuzzleSlot;
 class SlotInfo;
 class CowsSlot: SlotInfo {
-    compatibleItems[] += {QGVAR(optic_ACO_grn_AK_F), QGVAR(optic_ROS), QGVAR(optic_ROS_SMG), QGVAR(optic_LRCO_blk_F), QGVAR(optic_LRCO_snd_F)};
+    compatibleItems[] += {QGVAR(optic_tws_sniper), QGVAR(optic_ACO_grn_AK_F), QGVAR(optic_ROS), QGVAR(optic_ROS_SMG), QGVAR(optic_LRCO_blk_F), QGVAR(optic_LRCO_snd_F)};
 };
 class PointerSlot: SlotInfo {
     compatibleItems[] += {QGVAR(acc_pointer_compact_red), QGVAR(acc_pointer_compact_green), QGVAR(acc_pointer_DM), QGVAR(acc_pointer_DM_Sand), QGVAR(acc_pointer_DM_Khaki), QGVAR(acc_pointer_DM_Arid), QGVAR(acc_pointer_DM_Lush)};
@@ -42,6 +43,7 @@ class MuzzleSlot_9mm: MuzzleSlot {
 };
 class CowsSlot_Rail: CowsSlot {
     class compatibleItems {
+        GVAR(optic_tws_sniper) = 1;
         GVAR(optic_ACO_grn_AK_F) = 1;
         GVAR(optic_ROS) = 1;
         GVAR(optic_ROS_SMG) = 1;

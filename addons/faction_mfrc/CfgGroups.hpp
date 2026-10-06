@@ -20,7 +20,7 @@ class CfgGroups {
     class West {
 
         class GVAR(tna) {
-            name = "ghost MFRC (Tropical)";
+            name = "2040 MFRC (Tropical)";
 
             class Infantry {
                 name = "Infantry";
@@ -421,7 +421,7 @@ class CfgGroups {
         };
 
         class GVAR(ocp) {
-            name = "ghost MFRC (Arid)";
+            name = "2040 MFRC (Arid)";
 
             class Infantry {
                 name = "Infantry";
@@ -822,7 +822,7 @@ class CfgGroups {
         };
 
         class GVAR(wdl) {
-            name = "ghost MFRC (Woodland)";
+            name = "2040 MFRC (Woodland)";
 
             class Infantry {
                 name = "Infantry";
@@ -1223,7 +1223,7 @@ class CfgGroups {
         };
 
         class GVAR(mtp) {
-            name = "ghost MFRC (Desert)";
+            name = "2040 MFRC (Desert)";
 
             class Infantry {
                 name = "Infantry";

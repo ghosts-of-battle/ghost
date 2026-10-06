@@ -93,7 +93,7 @@ class CfgMagazinewells {
         };
     };
     // ---- .50 BMG (12.7x99) — WF50 (Aegis) ----
-    class WF50_127x99 {
+    class EGVAR(weapons,WF50_127x99) {
         ADDON[] += {
             "FA_Aegis_5Rnd_127x99_Mk258",
             "FA_Aegis_5Rnd_127x99_Mk258_T_Red",
@@ -114,7 +114,7 @@ class CfgMagazinewells {
         };
     };
     // ---- 12 gauge — KSG / M4 SSAS / MP153 (Aegis) ----
-    class Shotgun_12GA {
+    class EGVAR(weapons,Shotgun_12GA) {
         ADDON[] += {
             "FA_b_6Rnd_12g_No0_Buck",
             "FA_6Rnd_12g_No0_Buck",
@@ -198,25 +198,8 @@ class CfgMagazinewells {
             "FA_Aegis_30Rnd_545x39_7U5_T_IR"
         };
     };
-    // Ghost's WF50 (addons/weapons) names its well ghost_weapons_WF50_127x99 (2026-09-27)
-    class ghost_weapons_WF50_127x99 {
-        ADDON[] += {
-            "FA_Aegis_5Rnd_127x99_Mk258",
-            "FA_Aegis_5Rnd_127x99_Mk258_T_Red",
-            "FA_Aegis_5Rnd_127x99_Mk258_T_Yellow",
-            "FA_Aegis_5Rnd_127x99_Mk258_T_Green",
-            "FA_Aegis_5Rnd_127x99_Mk258_T_White",
-            "FA_Aegis_5Rnd_127x99_Mk258_T_Blue",
-            "FA_Aegis_5Rnd_127x99_Mk258_T_Orange",
-            "FA_Aegis_5Rnd_127x99_Mk258_T_IR",
-            "FA_Aegis_5Rnd_127x99_Mk211Mod0",
-            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Red",
-            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Yellow",
-            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Green",
-            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_White",
-            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Blue",
-            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Orange",
-            "FA_Aegis_5Rnd_127x99_Mk211Mod0_T_IR"
-        };
+    // ---- 9x21 - Gepard SMG (Aegis) ----
+    class EGVAR(weapons,SMG_Gepard_9x21) {
+        ADDON[] += {"FA_b_40Rnd_9x21_Gepard_Mk424_AP"};
     };
 };

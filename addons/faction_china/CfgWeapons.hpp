@@ -4,32 +4,56 @@
 // baseWeapon keep the arsenal showing the plain weapon, as the base
 // game's own presets do. No script: the man's weapons[] names the preset.
 class CfgWeapons {
-    class ghost_weapons_sgun_KSG_black_F;
-    class LMG_03_F;
-    class SMG_02_ACO_F;
-    class arifle_CTARS_blk_F;
-    class arifle_CTAR_GL_blk_ARCO_Pointer_F;
-    class arifle_CTAR_blk_ARCO_Pointer_F;
     class hgun_Rook40_F;
-    class srifle_DMR_05_KHS_LP_F;
-    class srifle_DMR_07_blk_DMS_F;
+    class sgun_AA40_lxWS;
+    class LMG_03_F;
+    class SMG_02_F;
+    class arifle_CTARS_blk_F;
+    class arifle_CTAR_GL_blk_F;
+    class arifle_CTAR_blk_F;
+    class srifle_DMR_05_blk_F;
+    class srifle_DMR_07_blk_F;
+    class Aegis_sgun_AA40_ACO_LP_LxWS: sgun_AA40_lxWS {
+        class LinkedItems;
+    };
+    class LMG_03_Arco_Pointer_F: LMG_03_F {
+        class LinkedItems;
+    };
+    class SMG_02_ACO_F: SMG_02_F {
+        class LinkedItems;
+    };
+    class arifle_CTARS_blk_ARCO_Pointer_F: arifle_CTARS_blk_F {
+        class LinkedItems;
+    };
+    class arifle_CTAR_GL_blk_ARCO_Pointer_F: arifle_CTAR_GL_blk_F {
+        class LinkedItems;
+    };
+    class arifle_CTAR_blk_ARCO_Pointer_F: arifle_CTAR_blk_F {
+        class LinkedItems;
+    };
+    class srifle_DMR_05_KHS_LP_F: srifle_DMR_05_blk_F {
+        class LinkedItems;
+    };
+    class srifle_DMR_07_blk_DMS_F: srifle_DMR_07_blk_F {
+        class LinkedItems;
+    };
 
-    class GVAR(Aegis_sgun_AA40_ACO_LP_LxWS_snds): ghost_weapons_sgun_KSG_black_F {
+    class GVAR(Aegis_sgun_AA40_ACO_LP_LxWS_snds): Aegis_sgun_AA40_ACO_LP_LxWS {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = "ghost_weapons_sgun_KSG_black_F";
-        class LinkedItems {
+        baseWeapon = "Aegis_sgun_AA40_ACO_LP_LxWS";
+        class LinkedItems: LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
                 item = "muzzle_snds_12Gauge_lxWS";
             };
         };
     };
-    class GVAR(LMG_03_Arco_Pointer_F_snds): LMG_03_F {
+    class GVAR(LMG_03_Arco_Pointer_F_snds): LMG_03_Arco_Pointer_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "LMG_03_F";
-        class LinkedItems {
+        class LinkedItems: LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
                 item = "muzzle_snds_M";
@@ -40,18 +64,18 @@ class CfgWeapons {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "SMG_02_ACO_F";
-        class LinkedItems {
+        class LinkedItems: LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
                 item = "muzzle_snds_L";
             };
         };
     };
-    class GVAR(arifle_CTARS_blk_ARCO_Pointer_F_snds): arifle_CTARS_blk_F {
+    class GVAR(arifle_CTARS_blk_ARCO_Pointer_F_snds): arifle_CTARS_blk_ARCO_Pointer_F {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "arifle_CTARS_blk_F";
-        class LinkedItems {
+        class LinkedItems: LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
                 item = "muzzle_snds_58_blk_F";
@@ -62,7 +86,7 @@ class CfgWeapons {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "arifle_CTAR_GL_blk_ARCO_Pointer_F";
-        class LinkedItems {
+        class LinkedItems: LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
                 item = "muzzle_snds_58_blk_F";
@@ -73,7 +97,7 @@ class CfgWeapons {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "arifle_CTAR_blk_ARCO_Pointer_F";
-        class LinkedItems {
+        class LinkedItems: LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
                 item = "muzzle_snds_58_blk_F";
@@ -95,7 +119,7 @@ class CfgWeapons {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "srifle_DMR_05_KHS_LP_F";
-        class LinkedItems {
+        class LinkedItems: LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
                 item = "muzzle_snds_93mmg";
@@ -106,7 +130,7 @@ class CfgWeapons {
         scope = 1;
         author = QAUTHOR;
         baseWeapon = "srifle_DMR_07_blk_DMS_F";
-        class LinkedItems {
+        class LinkedItems: LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
                 item = "muzzle_snds_65_TI_blk_F";

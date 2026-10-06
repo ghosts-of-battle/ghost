@@ -11,6 +11,8 @@ A content pack: 200 unit classes and 6 weapon and item classes. No scripted beha
 - `ghost_main`
 - `ghost_vests`
 - `ghost_weapons`
+- `ghost_uniform`
+- `ghost_vehicle`
 
 Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking the load order when something above is absent.
 

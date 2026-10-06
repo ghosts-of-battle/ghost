@@ -5,35 +5,35 @@
 // it is what lets this config inherit from it.
 
 class CfgVehicles {
-    class Atlas_B_H_Crew_F;
-    class Atlas_B_H_Engineer_F;
-    class Atlas_B_H_HeavyGunner_F;
-    class Atlas_B_H_Heli_EC_03_RF;
-    class Atlas_B_H_Heli_EC_04_military_RF;
-    class Atlas_B_H_Helicrew_F;
-    class Atlas_B_H_Helipilot_F;
-    class Atlas_B_H_Medic_F;
-    class Atlas_B_H_Officer_F;
-    class Atlas_B_H_RadioOperator_F;
-    class Atlas_B_H_Soldier_AR_F;
-    class Atlas_B_H_Soldier_A_F;
-    class Atlas_B_H_Soldier_Exp_F;
-    class Atlas_B_H_Soldier_F;
-    class Atlas_B_H_Soldier_GL_F;
-    class Atlas_B_H_Soldier_LAT_F;
-    class Atlas_B_H_Soldier_SL_F;
-    class Atlas_B_H_Soldier_TL_F;
-    class Atlas_B_H_Soldier_commando_AR_F;
-    class Atlas_B_H_Soldier_commando_F;
-    class Atlas_B_H_Soldier_commando_LAT_F;
-    class Atlas_B_H_Soldier_commando_M_F;
-    class Atlas_B_H_Soldier_commando_TL_F;
-    class Atlas_B_H_Soldier_commando_exp_F;
-    class Atlas_B_H_Soldier_commando_gl_F;
-    class Atlas_B_H_Soldier_commando_jtac_F;
-    class Atlas_B_H_Soldier_commando_medic_F;
-    class Atlas_B_H_Soldier_unarmed_F;
-    class Atlas_B_H_soldier_M_F;
+    class EGVAR(uniform,B_H_Crew_F);
+    class EGVAR(uniform,B_H_Engineer_F);
+    class EGVAR(uniform,B_H_HeavyGunner_F);
+    class B_Heli_EC_03_RF;
+    class B_Heli_EC_04_military_RF;
+    class EGVAR(uniform,B_H_Helicrew_F);
+    class EGVAR(uniform,B_H_Helipilot_F);
+    class EGVAR(uniform,B_H_Medic_F);
+    class EGVAR(uniform,B_H_Officer_F);
+    class EGVAR(uniform,B_H_RadioOperator_F);
+    class EGVAR(uniform,B_H_Soldier_AR_F);
+    class EGVAR(uniform,B_H_Soldier_A_F);
+    class EGVAR(uniform,B_H_Soldier_Exp_F);
+    class EGVAR(uniform,B_H_Soldier_F);
+    class EGVAR(uniform,B_H_Soldier_GL_F);
+    class EGVAR(uniform,B_H_Soldier_LAT_F);
+    class EGVAR(uniform,B_H_Soldier_SL_F);
+    class EGVAR(uniform,B_H_Soldier_TL_F);
+    class EGVAR(uniform,B_H_Soldier_commando_AR_F);
+    class EGVAR(uniform,B_H_Soldier_commando_F);
+    class EGVAR(uniform,B_H_Soldier_commando_LAT_F);
+    class EGVAR(uniform,B_H_Soldier_commando_M_F);
+    class EGVAR(uniform,B_H_Soldier_commando_TL_F);
+    class EGVAR(uniform,B_H_Soldier_commando_exp_F);
+    class EGVAR(uniform,B_H_Soldier_commando_gl_F);
+    class EGVAR(uniform,B_H_Soldier_commando_jtac_F);
+    class EGVAR(uniform,B_H_Soldier_commando_medic_F);
+    class EGVAR(uniform,B_H_Soldier_unarmed_F);
+    class EGVAR(uniform,B_H_soldier_M_F);
     class B_Boat_Armed_01_minigun_F;
     class B_CommandoMortar_RF;
     class B_G_Offroad_01_AT_F;
@@ -73,7 +73,7 @@ class CfgVehicles {
     class Pickup_covered_base_rf;
     class Pickup_fuel_base_rf;
     class Pickup_repair_ig_base_rf;
-    class Plane_Civil_01_HIMF_F;
+    class EGVAR(vehicle,Plane_Civil_01_HIMF_F);
     class ace_dragon_staticAssembled;
     class rksla3_aeroshark_blufor;
     class rksla3_uav_rq7shadow_01_blufor;
@@ -81,18 +81,20 @@ class CfgVehicles {
     // ---- the uniform bodies - Atlas's HIMF paint on base-game models, see CfgWeapons.hpp ----
 
     // ---- the men ----
-    class GVAR(Rifleman): Atlas_B_H_Soldier_F {
+    class GVAR(Rifleman): EGVAR(uniform,B_H_Soldier_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Rifleman";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put"};
+        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","HandGrenade","SmokeShell"};
+        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"HandGrenade","SmokeShell"};
+        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"HandGrenade","SmokeShell"};
     };
-    class GVAR(Rifleman_Unarmed): Atlas_B_H_Soldier_unarmed_F {
+    class GVAR(Rifleman_Unarmed): EGVAR(uniform,B_H_Soldier_unarmed_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -101,29 +103,33 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
     };
-    class GVAR(SquadLeader): Atlas_B_H_Soldier_SL_F {
+    class GVAR(SquadLeader): EGVAR(uniform,B_H_Soldier_SL_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Squad Leader";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,Arifle_famasG2_F),QEGVAR(weapons,hgun_ACPC2_black_F),"Throw","Put","Binocular"};
+        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_F),QEGVAR(weapons,hgun_ACPC2_black_F),"Throw","Put","Binocular"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","9Rnd_45ACP_Mag","9Rnd_45ACP_Mag","HandGrenade","SmokeShell","SmokeShellYellow"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","9Rnd_45ACP_Mag","9Rnd_45ACP_Mag","HandGrenade","SmokeShell","SmokeShellYellow"};
+        magazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","9Rnd_45ACP_Mag","9Rnd_45ACP_Mag","HandGrenade","SmokeShell","SmokeShellYellow"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","9Rnd_45ACP_Mag","9Rnd_45ACP_Mag","HandGrenade","SmokeShell","SmokeShellYellow"};
     };
-    class GVAR(TeamLeader): Atlas_B_H_Soldier_TL_F {
+    class GVAR(TeamLeader): EGVAR(uniform,B_H_Soldier_TL_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Team Leader";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,Arifle_famasG2_GL_F),QEGVAR(weapons,hgun_ACPC2_black_F),"Throw","Put","Binocular"};
+        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_GL_F),QEGVAR(weapons,hgun_ACPC2_black_F),"Throw","Put","Binocular"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","9Rnd_45ACP_Mag","9Rnd_45ACP_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShell","SmokeShellYellow","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","9Rnd_45ACP_Mag","9Rnd_45ACP_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShell","SmokeShellYellow","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell"};
+        magazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","9Rnd_45ACP_Mag","9Rnd_45ACP_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShell","SmokeShellYellow","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","9Rnd_45ACP_Mag","9Rnd_45ACP_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShell","SmokeShellYellow","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell"};
     };
-    class GVAR(Autorifleman): Atlas_B_H_Soldier_AR_F {
+    class GVAR(Autorifleman): EGVAR(uniform,B_H_Soldier_AR_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -131,44 +137,50 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_200Rnd_556x45_Box_F_T_Red_t2","FA_b_200Rnd_556x45_Box_F_T_Red_t2","FA_b_200Rnd_556x45_Box_F_T_Red_t2","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"FA_b_200Rnd_556x45_Box_F_T_Red_t2","FA_b_200Rnd_556x45_Box_F_T_Red_t2","FA_b_200Rnd_556x45_Box_F_T_Red_t2","HandGrenade","SmokeShell"};
+        magazines[] = {"200Rnd_556x45_Box_Tracer_Red_F","200Rnd_556x45_Box_Tracer_Red_F","200Rnd_556x45_Box_Tracer_Red_F","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {"200Rnd_556x45_Box_Tracer_Red_F","200Rnd_556x45_Box_Tracer_Red_F","200Rnd_556x45_Box_Tracer_Red_F","HandGrenade","SmokeShell"};
     };
-    class GVAR(AmmoBearer): Atlas_B_H_Soldier_A_F {
+    class GVAR(AmmoBearer): EGVAR(uniform,B_H_Soldier_A_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Ammo Bearer";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put"};
+        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","HandGrenade","SmokeShell"};
+        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"HandGrenade","SmokeShell"};
+        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"HandGrenade","SmokeShell"};
     };
-    class GVAR(Grenadier): Atlas_B_H_Soldier_GL_F {
+    class GVAR(Grenadier): EGVAR(uniform,B_H_Soldier_GL_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Grenadier";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,arifle_famasF1_GL_F),"Throw","Put"};
+        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_GL_F),"Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShell","1Rnd_Smoke_Grenade_shell"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShell","1Rnd_Smoke_Grenade_shell"};
+        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShell","1Rnd_Smoke_Grenade_shell"};
+        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShell","1Rnd_Smoke_Grenade_shell"};
         backpack = QGVAR(UAV_06_Bag);
     };
-    class GVAR(Rifleman_AT): Atlas_B_H_Soldier_LAT_F {
+    class GVAR(Rifleman_AT): EGVAR(uniform,B_H_Soldier_LAT_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Rifleman (AT)";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,arifle_famasF1_Grip_F),"launch_MRAWS_olive_rail_F","Throw","Put"};
+        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_Grip_F),"launch_MRAWS_olive_rail_F","Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_MRAWS_HEAT665_CS","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_MRAWS_HEAT665_CS","HandGrenade","SmokeShell"};
+        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"MRAWS_HEAT55_F","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"MRAWS_HEAT55_F","HandGrenade","SmokeShell"};
     };
-    class GVAR(Rifleman_AA): Atlas_B_H_Soldier_F {
+    class GVAR(Rifleman_AA): EGVAR(uniform,B_H_Soldier_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -176,12 +188,12 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        weapons[] = {"Atlas_arifle_M16A4_FG_ROS_FL_F","launch_B_Titan_F","Throw","Put"};
-        respawnWeapons[] = {"Atlas_arifle_M16A4_FG_ROS_FL_F","launch_B_Titan_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_Titan_AA_MIM165_Sentry","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_Titan_AA_MIM165_Sentry","HandGrenade","SmokeShell"};
+        weapons[] = {QEGVAR(weapons,arifle_famasF1_F),"launch_B_Titan_F","Throw","Put"};
+        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_F),"launch_B_Titan_F","Throw","Put"};
+        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"Titan_AA","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"Titan_AA","HandGrenade","SmokeShell"};
     };
-    class GVAR(Rifleman_AAA): Atlas_B_H_Soldier_F {
+    class GVAR(Rifleman_AAA): EGVAR(uniform,B_H_Soldier_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -189,13 +201,13 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        weapons[] = {"Atlas_arifle_M16A4_FG_ROS_FL_F","Throw","Put","Rangefinder"};
-        respawnWeapons[] = {"Atlas_arifle_M16A4_FG_ROS_FL_F","Throw","Put","Rangefinder"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","Titan_AA","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","Titan_AA","HandGrenade","SmokeShell"};
+        weapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put","Rangefinder"};
+        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put","Rangefinder"};
+        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"Titan_AA","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"Titan_AA","HandGrenade","SmokeShell"};
         backpack = "B_Carryall_oli";
     };
-    class GVAR(Marksman): Atlas_B_H_soldier_M_F {
+    class GVAR(Marksman): EGVAR(uniform,B_H_soldier_M_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -203,10 +215,10 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","HandGrenade","SmokeShell"};
+        magazines[] = {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","HandGrenade","SmokeShell"};
     };
-    class GVAR(HeavyGunner): Atlas_B_H_HeavyGunner_F {
+    class GVAR(HeavyGunner): EGVAR(uniform,B_H_HeavyGunner_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -214,43 +226,49 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"Aegis_200Rnd_762x51_MAG_Red_F","Aegis_200Rnd_762x51_MAG_Red_F","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"Aegis_200Rnd_762x51_MAG_Red_F","Aegis_200Rnd_762x51_MAG_Red_F","HandGrenade","SmokeShell"};
+        magazines[] = {QEGVAR(weapons,200Rnd_762x51_MAG_Red_F),QEGVAR(weapons,200Rnd_762x51_MAG_Red_F),"HandGrenade","SmokeShell"};
+        respawnMagazines[] = {QEGVAR(weapons,200Rnd_762x51_MAG_Red_F),QEGVAR(weapons,200Rnd_762x51_MAG_Red_F),"HandGrenade","SmokeShell"};
     };
-    class GVAR(Medic): Atlas_B_H_Medic_F {
+    class GVAR(Medic): EGVAR(uniform,B_H_Medic_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Combat Life Saver";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,arifle_famasF1_Grip_F),"Throw","Put"};
+        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_Grip_F),"Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","HandGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","HandGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange"};
+        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),"HandGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange"};
+        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),"HandGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange"};
     };
-    class GVAR(Engineer): Atlas_B_H_Engineer_F {
+    class GVAR(Engineer): EGVAR(uniform,B_H_Engineer_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Engineer";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,arifle_famasF1_RIS_F),"Throw","Put"};
+        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_RIS_F),"Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","SmokeShell","SmokeShellYellow"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","SmokeShell","SmokeShellYellow"};
+        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"SmokeShell","SmokeShellYellow"};
+        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"SmokeShell","SmokeShellYellow"};
     };
-    class GVAR(ExplosiveSpecialist): Atlas_B_H_Soldier_Exp_F {
+    class GVAR(ExplosiveSpecialist): EGVAR(uniform,B_H_Soldier_Exp_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Explosive Specialist";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,arifle_famasF1_RIS_F),"Throw","Put"};
+        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_RIS_F),"Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","SmokeShell","SmokeShellYellow"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","SmokeShell","SmokeShellYellow"};
+        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","SmokeShell","SmokeShellYellow"};
+        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","SmokeShell","SmokeShellYellow"};
     };
-    class GVAR(Officer): Atlas_B_H_Officer_F {
+    class GVAR(Officer): EGVAR(uniform,B_H_Officer_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -261,42 +279,48 @@ class CfgVehicles {
         magazines[] = {"30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","9Rnd_45ACP_Mag","9Rnd_45ACP_Mag","SmokeShellYellow"};
         respawnMagazines[] = {"30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","9Rnd_45ACP_Mag","9Rnd_45ACP_Mag","SmokeShellYellow"};
     };
-    class GVAR(RadioOperator): Atlas_B_H_RadioOperator_F {
+    class GVAR(RadioOperator): EGVAR(uniform,B_H_RadioOperator_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Radio Operator";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,Arifle_famasG2_F),"Throw","Put"};
+        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_F),"Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","HandGrenade","SmokeShell"};
+        magazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","HandGrenade","SmokeShell"};
     };
-    class GVAR(MortarGunner): Atlas_B_H_Soldier_F {
+    class GVAR(MortarGunner): EGVAR(uniform,B_H_Soldier_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Gunner (Mortar)";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put"};
+        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","HandGrenade","SmokeShell"};
+        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"HandGrenade","SmokeShell"};
+        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"HandGrenade","SmokeShell"};
         backpack = "B_Mortar_01_weapon_F";
     };
-    class GVAR(MortarAssistant): Atlas_B_H_Soldier_A_F {
+    class GVAR(MortarAssistant): EGVAR(uniform,B_H_Soldier_A_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Assistant Gunner (Mortar)";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put"};
+        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","FA_b_30Rnd_556_Mk327_HV_T_Red_t2","HandGrenade","SmokeShell"};
+        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"HandGrenade","SmokeShell"};
+        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"HandGrenade","SmokeShell"};
         backpack = "B_Mortar_01_support_F";
     };
-    class GVAR(Crew): Atlas_B_H_Crew_F {
+    class GVAR(Crew): EGVAR(uniform,B_H_Crew_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -307,7 +331,7 @@ class CfgVehicles {
         magazines[] = {"30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","HandGrenade","SmokeShell"};
         respawnMagazines[] = {"30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","HandGrenade","SmokeShell"};
     };
-    class GVAR(Helipilot): Atlas_B_H_Helipilot_F {
+    class GVAR(Helipilot): EGVAR(uniform,B_H_Helipilot_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -318,7 +342,7 @@ class CfgVehicles {
         magazines[] = {"30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","SmokeShellYellow"};
         respawnMagazines[] = {"30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","SmokeShellYellow"};
     };
-    class GVAR(Helicrew): Atlas_B_H_Helicrew_F {
+    class GVAR(Helicrew): EGVAR(uniform,B_H_Helicrew_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -329,7 +353,7 @@ class CfgVehicles {
         magazines[] = {"30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","SmokeShellYellow"};
         respawnMagazines[] = {"30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","SmokeShellYellow"};
     };
-    class GVAR(Pilot): Atlas_B_H_Helipilot_F {
+    class GVAR(Pilot): EGVAR(uniform,B_H_Helipilot_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -340,29 +364,33 @@ class CfgVehicles {
         magazines[] = {"30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","SmokeShellYellow"};
         respawnMagazines[] = {"30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","SmokeShellYellow"};
     };
-    class GVAR(Recon): Atlas_B_H_Soldier_commando_F {
+    class GVAR(Recon): EGVAR(uniform,B_H_Soldier_commando_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Scout";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,Arifle_famasG2_Grip_F),"hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
+        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_Grip_F),"hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class GVAR(Recon_TL): Atlas_B_H_Soldier_commando_TL_F {
+    class GVAR(Recon_TL): EGVAR(uniform,B_H_Soldier_commando_TL_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Team Leader";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,Arifle_famasG2_Grip_F),"hgun_P07_blk_Snds_F","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_Grip_F),"hgun_P07_blk_Snds_F","Throw","Put","Rangefinder"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
     };
-    class GVAR(Recon_AR): Atlas_B_H_Soldier_commando_AR_F {
+    class GVAR(Recon_AR): EGVAR(uniform,B_H_Soldier_commando_AR_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -370,32 +398,36 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_200Rnd_65x39_cased_Box_T_Red_t2","FA_b_200Rnd_65x39_cased_Box_T_Red_t2","FA_b_200Rnd_65x39_cased_Box_T_Red_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
-        respawnMagazines[] = {"FA_b_200Rnd_65x39_cased_Box_T_Red_t2","FA_b_200Rnd_65x39_cased_Box_T_Red_t2","FA_b_200Rnd_65x39_cased_Box_T_Red_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
+        magazines[] = {"200Rnd_65x39_cased_Box_Tracer_Red","200Rnd_65x39_cased_Box_Tracer_Red","200Rnd_65x39_cased_Box_Tracer_Red","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
+        respawnMagazines[] = {"200Rnd_65x39_cased_Box_Tracer_Red","200Rnd_65x39_cased_Box_Tracer_Red","200Rnd_65x39_cased_Box_Tracer_Red","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
     };
-    class GVAR(Recon_GL): Atlas_B_H_Soldier_commando_gl_F {
+    class GVAR(Recon_GL): EGVAR(uniform,B_H_Soldier_commando_gl_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Grenadier";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,Arifle_famasG2_GL_F),"hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
+        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_GL_F),"hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","MiniGrenade","MiniGrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","MiniGrenade","MiniGrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
     };
-    class GVAR(Recon_AT): Atlas_B_H_Soldier_commando_LAT_F {
+    class GVAR(Recon_AT): EGVAR(uniform,B_H_Soldier_commando_LAT_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Scout (AT)";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,Arifle_famasG2_Grip_F),"launch_NLAW_F","hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
+        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_Grip_F),"launch_NLAW_F","hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","NLAW_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","NLAW_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","NLAW_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","NLAW_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class GVAR(Recon_M): Atlas_B_H_Soldier_commando_M_F {
+    class GVAR(Recon_M): EGVAR(uniform,B_H_Soldier_commando_M_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -403,41 +435,47 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_20Rnd_762_M80A2_HV_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        magazines[] = {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class GVAR(Recon_Medic): Atlas_B_H_Soldier_commando_medic_F {
+    class GVAR(Recon_Medic): EGVAR(uniform,B_H_Soldier_commando_medic_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Paramedic";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,Arifle_famasG2_Grip_F),"hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
+        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_Grip_F),"hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
     };
-    class GVAR(Recon_JTAC): Atlas_B_H_Soldier_commando_jtac_F {
+    class GVAR(Recon_JTAC): EGVAR(uniform,B_H_Soldier_commando_jtac_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon JTAC";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,Arifle_famasG2_F),"hgun_P07_blk_Snds_F","Throw","Put","Laserdesignator_01_khk_F"};
+        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_F),"hgun_P07_blk_Snds_F","Throw","Put","Laserdesignator_01_khk_F"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
     };
-    class GVAR(Recon_Demo): Atlas_B_H_Soldier_commando_exp_F {
+    class GVAR(Recon_Demo): EGVAR(uniform,B_H_Soldier_commando_exp_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Recon Demo Specialist";
         side = 1;
         faction = QUOTE(ADDON);
+        weapons[] = {QEGVAR(weapons,Arifle_famasG2_F),"hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
+        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_F),"hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_30Rnd_556_Mk327_HV_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
 
     // ---- the drone bags - the base game's, assembling HIMF's own drones - see BAGS ----
@@ -646,7 +684,7 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         crew = QGVAR(Rifleman);
     };
-    class GVAR(Heli_Transport): Atlas_B_H_Heli_EC_03_RF {
+    class GVAR(Heli_Transport): B_Heli_EC_03_RF {                    // Atlas left the load order (2026-10-05): its EC helicopters were built on these
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -655,7 +693,7 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         crew = QGVAR(Helipilot);
     };
-    class GVAR(Heli_Transport_Unarmed): Atlas_B_H_Heli_EC_04_military_RF {
+    class GVAR(Heli_Transport_Unarmed): B_Heli_EC_04_military_RF {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -749,7 +787,7 @@ class CfgVehicles {
             };
         };
     };
-    class GVAR(Plane_Civil): Plane_Civil_01_HIMF_F {
+    class GVAR(Plane_Civil): EGVAR(vehicle,Plane_Civil_01_HIMF_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;

@@ -1,5 +1,46 @@
 # aegis_port
 
+**Seed mode, 2026-10-04 (the one in use).** The full import below was taken out on 2026-10-01
+("make sure all aegis imported is removed"). When the Aegis family then left the load order
+(user, 2026-10-04: "fix what you can"), the port came back in seed mode: only the classes ghost's
+own faction addons name are imported, with what they need, and the factions are pointed at them.
+
+Since 2026-10-05 ("also add back all the vehicles and weapons from opensource aegis/atlas") the run adds
+`--full vehicle,weapon,accessory`: beside the seeds, every vehicle and weapon the full import brings (own
+model only, the 2026-09-13 rule), public under ghost_blue/red/green and folded one vehicle per type
+(2026-09-14). The seeds stay hidden; `seed_map.py` passes the same `--full`.
+
+```sh
+python tools/aegis_port/port.py --seeds tools/aegis_port/seeds.txt --full vehicle,weapon,accessory --plan
+python tools/aegis_port/port.py --seeds tools/aegis_port/seeds.txt --full vehicle,weapon,accessory
+python tools/aegis_port/seed_map.py            # work/aegis_seed_map.json: source name -> ghost addon and name
+python tools/aegis_port/repoint_factions.py    # factions (and fa_aegis) name the imported classes
+```
+
+`seeds.txt` is the Aegis/Atlas list of `work/aegis_removal.md`. Seed mode differs from the full import:
+
+- **Soldiers come in** (into `uniform`), and with them their kit - uniforms, vests, headgear, weapons,
+  backpacks, NVGs, facewear, magazines - since the factions' men are built on them.
+- **Vehicles and weapons on base-game models come in** (a seed is there because a faction uses it), and
+  so does the FAMAS family (the factions carry it, user 2026-10-01). Its GL models name Aegis's
+  withdrawn M203 textures and animation include: the launcher gets a plain dark finish
+  (`emit.WITHDRAWN`) and no leaf-sight animation.
+- **No collapsing, and every imported vehicle and soldier is hidden** (scope 1): the faction classes on
+  top are the units. Gear keeps its scope, so it shows in the arsenal.
+- **Western Sahara stays named.** A class filed under one of its factions comes in when its parents and
+  model are the base game's; its desert uniforms, backpacks and texture paths (`lxWS\...`) are kept as
+  written, since ghost's factions already build on that DLC. Classes built on its encrypted classes,
+  and Aegis's EF/RF compatibility classes (not in the public sources), stay out - `--plan` lists them.
+- **A soldier's magazines go into `weapons`**, or `uniform` and `weapons` would require each other.
+- `fa_aegis` now builds its FA magazines on the imported magazines and wells and requires
+  `ghost_weapons` instead of Aegis (it was skipped without Aegis, and `fa_tiers_mods` with it).
+- **Pruning** (`prune_seeds.py`, after Turkey, Russia and China moved onto other mods the same day) keeps
+  only what ghost still names - from other addons and from the five addons' own files. Run
+  `seed_map.py` on the full list first, so the map knows every class.
+- **The takeover is one-way.** A bare declaration the import restates is deleted from the addon's own
+  file; when a later, smaller import stops restating it, the class is left undeclared (L-C04). Before a
+  run that imports less, put back the declarations c47d7484 had (`git show c47d7484:addons/<a>/...`).
+
 Imports the Aegis, Atlas and OpF vehicles, weapons, vests, uniforms and headgear into ghost's
 own addons, with every model, texture, material, sound and animation they use. Nothing
 requires Aegis, Atlas or OpF afterwards, and no class is named after them. Sources: the public

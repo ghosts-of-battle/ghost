@@ -193,7 +193,7 @@ class CfgPatches {
         // Every parent class is forward-declared in CfgVehicles.hpp, so a
         // load order without that mod gets inert classes instead of a
         // broken config. skipWhenMissingDependencies does the rest.
-        requiredAddons[] = {"ghost_main", "ghost_headware", "ghost_uniform"};
+        requiredAddons[] = {"ghost_main", "ghost_headware", "ghost_uniform", "ghost_weapons"};
         skipWhenMissingDependencies = 1;
         author = QAUTHOR;
         VERSION_CONFIG;

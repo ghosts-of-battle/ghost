@@ -11,6 +11,7 @@ A content pack: 174 unit classes. No scripted behaviour.
 - `ghost_main`
 - `ghost_headware`
 - `ghost_uniform`
+- `ghost_weapons`
 
 Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking the load order when something above is absent.
 

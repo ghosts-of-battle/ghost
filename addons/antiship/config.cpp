@@ -4,6 +4,7 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         units[] = {
+            "ghost_moduleAntiShip",
             QGVAR(launcher),
             QGVAR(radar),
             QGVAR(decoy_west),

@@ -1,0 +1,6667 @@
+{
+"1200Rnd_Gatling_30mm_Heli_Attack_03_F": {
+"addon": "vehicle",
+"name": "1200Rnd_Gatling_30mm_Heli_Attack_03_F",
+"ns": "cfgmagazines"
+},
+"1200Rnd_Gatling_30mm_Heli_Attack_03_Yellow_F": {
+"addon": "vehicle",
+"name": "1200Rnd_Gatling_30mm_Heli_Attack_03_Yellow_F",
+"ns": "cfgmagazines"
+},
+"12Rnd_Vikhr_missiles": {
+"addon": "vehicle",
+"name": "12Rnd_Vikhr_missiles",
+"ns": "cfgmagazines"
+},
+"160Rnd_30mm_APFSDS_shells": {
+"addon": "vehicle",
+"name": "160Rnd_30mm_APFSDS_shells",
+"ns": "cfgmagazines"
+},
+"160Rnd_30mm_APFSDS_shells_Tracer_Green": {
+"addon": "vehicle",
+"name": "160Rnd_30mm_APFSDS_shells_Tracer_Green",
+"ns": "cfgmagazines"
+},
+"160Rnd_30mm_APFSDS_shells_Tracer_Red": {
+"addon": "vehicle",
+"name": "160Rnd_30mm_APFSDS_shells_Tracer_Red",
+"ns": "cfgmagazines"
+},
+"160Rnd_30mm_APFSDS_shells_Tracer_Yellow": {
+"addon": "vehicle",
+"name": "160Rnd_30mm_APFSDS_shells_Tracer_Yellow",
+"ns": "cfgmagazines"
+},
+"16Rnd_9x21_Mag_v2": {
+"addon": "weapons",
+"name": "16Rnd_9x21_Mag_v2",
+"ns": "cfgmagazines"
+},
+"17Rnd_9x21_Mag": {
+"addon": "weapons",
+"name": "17Rnd_9x21_Mag",
+"ns": "cfgmagazines"
+},
+"1Rnd_HEDP_Grenade_shell": {
+"addon": "weapons",
+"name": "1Rnd_HEDP_Grenade_shell",
+"ns": "cfgmagazines"
+},
+"20Rnd_460x30_Mag_F": {
+"addon": "weapons",
+"name": "20Rnd_460x30_Mag_F",
+"ns": "cfgmagazines"
+},
+"20Rnd_556x45_Stanag": {
+"addon": "weapons",
+"name": "20Rnd_556x45_Stanag",
+"ns": "cfgmagazines"
+},
+"20Rnd_556x45_Stanag_green": {
+"addon": "weapons",
+"name": "20Rnd_556x45_Stanag_green",
+"ns": "cfgmagazines"
+},
+"220Rnd_25mm_shells": {
+"addon": "vehicle",
+"name": "220Rnd_25mm_shells",
+"ns": "cfgmagazines"
+},
+"220Rnd_25mm_shells_yellow": {
+"addon": "vehicle",
+"name": "220Rnd_25mm_shells_yellow",
+"ns": "cfgmagazines"
+},
+"250Rnd_20mm_shells": {
+"addon": "vehicle",
+"name": "250Rnd_20mm_shells",
+"ns": "cfgmagazines"
+},
+"250Rnd_762x51_Belt": {
+"addon": "vehicle",
+"name": "250Rnd_762x51_Belt",
+"ns": "cfgmagazines"
+},
+"250Rnd_762x51_Belt_Red": {
+"addon": "vehicle",
+"name": "250Rnd_762x51_Belt_Red",
+"ns": "cfgmagazines"
+},
+"30Rnd_545x39_AK12_Mag_F": {
+"addon": "weapons",
+"name": "30Rnd_545x39_AK12_Mag_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_545x39_AK12_Mag_Tracer_F": {
+"addon": "weapons",
+"name": "30Rnd_545x39_AK12_Mag_Tracer_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_545x39_Black_Mag_F": {
+"addon": "weapons",
+"name": "30Rnd_545x39_Black_Mag_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_545x39_Black_Mag_Tracer_F": {
+"addon": "weapons",
+"name": "30Rnd_545x39_Black_Mag_Tracer_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_545x39_Black_Mag_Tracer_Yellow_F": {
+"addon": "weapons",
+"name": "30Rnd_545x39_Black_Mag_Tracer_Yellow_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_545x39_Black_Mag_Yellow_F": {
+"addon": "weapons",
+"name": "30Rnd_545x39_Black_Mag_Yellow_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_545x39_Mag_Olive_F": {
+"addon": "weapons",
+"name": "30Rnd_545x39_Mag_Olive_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_545x39_Mag_Sand_F": {
+"addon": "weapons",
+"name": "30Rnd_545x39_Mag_Sand_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_545x39_Mag_Sand_Green_F": {
+"addon": "weapons",
+"name": "30Rnd_545x39_Mag_Sand_Green_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_545x39_Mag_Tracer_Olive_F": {
+"addon": "weapons",
+"name": "30Rnd_545x39_Mag_Tracer_Olive_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_545x39_Mag_Tracer_Sand_F": {
+"addon": "weapons",
+"name": "30Rnd_545x39_Mag_Tracer_Sand_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_545x39_Mag_Tracer_Sand_Green_F": {
+"addon": "weapons",
+"name": "30Rnd_545x39_Mag_Tracer_Sand_Green_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_545x39_Steel_Gold_Mag_F": {
+"addon": "weapons",
+"name": "30Rnd_545x39_Steel_Gold_Mag_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_545x39_Steel_Gold_Tracer_Mag_F": {
+"addon": "weapons",
+"name": "30Rnd_545x39_Steel_Gold_Tracer_Mag_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_545x39_Steel_Mag_F": {
+"addon": "weapons",
+"name": "30Rnd_545x39_Steel_Mag_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_545x39_Steel_Tracer_Mag_F": {
+"addon": "weapons",
+"name": "30Rnd_545x39_Steel_Tracer_Mag_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_762x39_polymer_Black_Mag_F": {
+"addon": "weapons",
+"name": "30Rnd_762x39_polymer_Black_Mag_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_762x39_polymer_Black_Mag_Green_F": {
+"addon": "weapons",
+"name": "30Rnd_762x39_polymer_Black_Mag_Green_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_762x39_polymer_Black_Mag_Tracer_F": {
+"addon": "weapons",
+"name": "30Rnd_762x39_polymer_Black_Mag_Tracer_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_762x39_polymer_Black_Mag_Tracer_Green_F": {
+"addon": "weapons",
+"name": "30Rnd_762x39_polymer_Black_Mag_Tracer_Green_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_762x39_polymer_Plum_Mag_F": {
+"addon": "weapons",
+"name": "30Rnd_762x39_polymer_Plum_Mag_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_762x39_polymer_Plum_Mag_Green_F": {
+"addon": "weapons",
+"name": "30Rnd_762x39_polymer_Plum_Mag_Green_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_762x39_polymer_Plum_Mag_Tracer_F": {
+"addon": "weapons",
+"name": "30Rnd_762x39_polymer_Plum_Mag_Tracer_F",
+"ns": "cfgmagazines"
+},
+"30Rnd_762x39_polymer_Plum_Mag_Tracer_Green_F": {
+"addon": "weapons",
+"name": "30Rnd_762x39_polymer_Plum_Mag_Tracer_Green_F",
+"ns": "cfgmagazines"
+},
+"340Rnd_30mm_HE_shells": {
+"addon": "vehicle",
+"name": "340Rnd_30mm_HE_shells",
+"ns": "cfgmagazines"
+},
+"340Rnd_30mm_HE_shells_Tracer_Green": {
+"addon": "vehicle",
+"name": "340Rnd_30mm_HE_shells_Tracer_Green",
+"ns": "cfgmagazines"
+},
+"340Rnd_30mm_HE_shells_Tracer_Red": {
+"addon": "vehicle",
+"name": "340Rnd_30mm_HE_shells_Tracer_Red",
+"ns": "cfgmagazines"
+},
+"340Rnd_30mm_HE_shells_Tracer_Yellow": {
+"addon": "vehicle",
+"name": "340Rnd_30mm_HE_shells_Tracer_Yellow",
+"ns": "cfgmagazines"
+},
+"40Rnd_460x30_Mag_F": {
+"addon": "weapons",
+"name": "40Rnd_460x30_Mag_F",
+"ns": "cfgmagazines"
+},
+"4Rnd_12Gauge_Pellets": {
+"addon": "weapons",
+"name": "4Rnd_12Gauge_Pellets",
+"ns": "cfgmagazines"
+},
+"4Rnd_12Gauge_Slug": {
+"addon": "weapons",
+"name": "4Rnd_12Gauge_Slug",
+"ns": "cfgmagazines"
+},
+"4rnd_Vorona_HE": {
+"addon": "vehicle",
+"name": "4rnd_Vorona_HE",
+"ns": "cfgmagazines"
+},
+"4rnd_Vorona_HEAT": {
+"addon": "vehicle",
+"name": "4rnd_Vorona_HEAT",
+"ns": "cfgmagazines"
+},
+"5Rnd_127x99_Mag": {
+"addon": "weapons",
+"name": "5Rnd_127x99_Mag",
+"ns": "cfgmagazines"
+},
+"5Rnd_25x40mm_HE": {
+"addon": "weapons",
+"name": "5Rnd_25x40mm_HE",
+"ns": "cfgmagazines"
+},
+"5Rnd_25x40mm_airburst": {
+"addon": "weapons",
+"name": "5Rnd_25x40mm_airburst",
+"ns": "cfgmagazines"
+},
+"6Rnd_APERSMine_Grenade_shell": {
+"addon": "weapons",
+"name": "6Rnd_APERSMine_Grenade_shell",
+"ns": "cfgmagazines"
+},
+"6Rnd_HEDP_Grenade_shell": {
+"addon": "weapons",
+"name": "6Rnd_HEDP_Grenade_shell",
+"ns": "cfgmagazines"
+},
+"6Rnd_HE_Grenade_shell": {
+"addon": "weapons",
+"name": "6Rnd_HE_Grenade_shell",
+"ns": "cfgmagazines"
+},
+"6Rnd_SmokeBlue_Grenade_shell": {
+"addon": "weapons",
+"name": "6Rnd_SmokeBlue_Grenade_shell",
+"ns": "cfgmagazines"
+},
+"6Rnd_SmokeGreen_Grenade_shell": {
+"addon": "weapons",
+"name": "6Rnd_SmokeGreen_Grenade_shell",
+"ns": "cfgmagazines"
+},
+"6Rnd_SmokeOrange_Grenade_shell": {
+"addon": "weapons",
+"name": "6Rnd_SmokeOrange_Grenade_shell",
+"ns": "cfgmagazines"
+},
+"6Rnd_SmokePurple_Grenade_shell": {
+"addon": "weapons",
+"name": "6Rnd_SmokePurple_Grenade_shell",
+"ns": "cfgmagazines"
+},
+"6Rnd_SmokeRed_Grenade_shell": {
+"addon": "weapons",
+"name": "6Rnd_SmokeRed_Grenade_shell",
+"ns": "cfgmagazines"
+},
+"6Rnd_SmokeYellow_Grenade_shell": {
+"addon": "weapons",
+"name": "6Rnd_SmokeYellow_Grenade_shell",
+"ns": "cfgmagazines"
+},
+"6Rnd_Smoke_Grenade_shell": {
+"addon": "weapons",
+"name": "6Rnd_Smoke_Grenade_shell",
+"ns": "cfgmagazines"
+},
+"6Rnd_UGL_FlareCIR_F": {
+"addon": "weapons",
+"name": "6Rnd_UGL_FlareCIR_F",
+"ns": "cfgmagazines"
+},
+"6Rnd_UGL_FlareGreen_F": {
+"addon": "weapons",
+"name": "6Rnd_UGL_FlareGreen_F",
+"ns": "cfgmagazines"
+},
+"6Rnd_UGL_FlareRed_F": {
+"addon": "weapons",
+"name": "6Rnd_UGL_FlareRed_F",
+"ns": "cfgmagazines"
+},
+"6Rnd_UGL_FlareWhite_F": {
+"addon": "weapons",
+"name": "6Rnd_UGL_FlareWhite_F",
+"ns": "cfgmagazines"
+},
+"6Rnd_UGL_FlareYellow_F": {
+"addon": "weapons",
+"name": "6Rnd_UGL_FlareYellow_F",
+"ns": "cfgmagazines"
+},
+"7Rnd_127x33_Mag": {
+"addon": "weapons",
+"name": "7Rnd_127x33_Mag",
+"ns": "cfgmagazines"
+},
+"8Rnd_12Gauge_Pellets": {
+"addon": "weapons",
+"name": "8Rnd_12Gauge_Pellets",
+"ns": "cfgmagazines"
+},
+"8Rnd_12Gauge_Slug": {
+"addon": "weapons",
+"name": "8Rnd_12Gauge_Slug",
+"ns": "cfgmagazines"
+},
+"APC_Tracked_02_medical_base_F": {
+"addon": "vehicle",
+"name": "APC_Tracked_02_medical_base_F",
+"ns": "cfgvehicles"
+},
+"APC_Wheeled_04_base_F": {
+"addon": "vehicle",
+"name": "APC_Wheeled_04_base_F",
+"ns": "cfgvehicles"
+},
+"APC_Wheeled_04_base_v2_F": {
+"addon": "vehicle",
+"name": "APC_Wheeled_04_base_v2_F",
+"ns": "cfgvehicles"
+},
+"APC_Wheeled_04_export_base_F": {
+"addon": "vehicle",
+"name": "APC_Wheeled_04_export_base_F",
+"ns": "cfgvehicles"
+},
+"Aegis_10Rnd_762x54_SVD_Red_Mag_F": {
+"addon": "weapons",
+"name": "10Rnd_762x54_SVD_Red_Mag_F",
+"ns": "cfgmagazines"
+},
+"Aegis_150Rnd_Autocannon_Heli_Attack_04_AP_F": {
+"addon": "vehicle",
+"name": "150Rnd_Autocannon_Heli_Attack_04_AP_F",
+"ns": "cfgmagazines"
+},
+"Aegis_150Rnd_Autocannon_Heli_Attack_04_AP_Green_F": {
+"addon": "vehicle",
+"name": "150Rnd_Autocannon_Heli_Attack_04_AP_Green_F",
+"ns": "cfgmagazines"
+},
+"Aegis_150Rnd_Autocannon_Heli_Attack_04_AP_Red_F": {
+"addon": "vehicle",
+"name": "150Rnd_Autocannon_Heli_Attack_04_AP_Red_F",
+"ns": "cfgmagazines"
+},
+"Aegis_150Rnd_Autocannon_Heli_Attack_04_AP_White_F": {
+"addon": "vehicle",
+"name": "150Rnd_Autocannon_Heli_Attack_04_AP_White_F",
+"ns": "cfgmagazines"
+},
+"Aegis_150Rnd_Autocannon_Heli_Attack_04_AP_Yellow_F": {
+"addon": "vehicle",
+"name": "150Rnd_Autocannon_Heli_Attack_04_AP_Yellow_F",
+"ns": "cfgmagazines"
+},
+"Aegis_150Rnd_Autocannon_Heli_Attack_04_HE_F": {
+"addon": "vehicle",
+"name": "150Rnd_Autocannon_Heli_Attack_04_HE_F",
+"ns": "cfgmagazines"
+},
+"Aegis_150Rnd_Autocannon_Heli_Attack_04_HE_Green_F": {
+"addon": "vehicle",
+"name": "150Rnd_Autocannon_Heli_Attack_04_HE_Green_F",
+"ns": "cfgmagazines"
+},
+"Aegis_150Rnd_Autocannon_Heli_Attack_04_HE_Red_F": {
+"addon": "vehicle",
+"name": "150Rnd_Autocannon_Heli_Attack_04_HE_Red_F",
+"ns": "cfgmagazines"
+},
+"Aegis_150Rnd_Autocannon_Heli_Attack_04_HE_White_F": {
+"addon": "vehicle",
+"name": "150Rnd_Autocannon_Heli_Attack_04_HE_White_F",
+"ns": "cfgmagazines"
+},
+"Aegis_150Rnd_Autocannon_Heli_Attack_04_HE_Yellow_F": {
+"addon": "vehicle",
+"name": "150Rnd_Autocannon_Heli_Attack_04_HE_Yellow_F",
+"ns": "cfgmagazines"
+},
+"Aegis_200Rnd_762x51_MAG_Red_F": {
+"addon": "weapons",
+"name": "200Rnd_762x51_MAG_Red_F",
+"ns": "cfgmagazines"
+},
+"Aegis_200Rnd_762x51_MAG_Red_Tracer_F": {
+"addon": "weapons",
+"name": "200Rnd_762x51_MAG_Red_Tracer_F",
+"ns": "cfgmagazines"
+},
+"Aegis_20Rnd_762x51_Red_SMAG": {
+"addon": "weapons",
+"name": "20Rnd_762x51_Red_SMAG",
+"ns": "cfgmagazines"
+},
+"Aegis_20Rnd_762x51_SMAG": {
+"addon": "weapons",
+"name": "20Rnd_762x51_SMAG",
+"ns": "cfgmagazines"
+},
+"Aegis_20Rnd_9x21_Gepard_Mag_F": {
+"addon": "weapons",
+"name": "20Rnd_9x21_Gepard_Mag_F",
+"ns": "cfgmagazines"
+},
+"Aegis_40Rnd_9x21_Gepard_Green_Mag_F": {
+"addon": "weapons",
+"name": "40Rnd_9x21_Gepard_Green_Mag_F",
+"ns": "cfgmagazines"
+},
+"Aegis_40Rnd_9x21_Gepard_Mag_F": {
+"addon": "weapons",
+"name": "40Rnd_9x21_Gepard_Mag_F",
+"ns": "cfgmagazines"
+},
+"Aegis_40Rnd_9x21_Gepard_Yellow_Mag_F": {
+"addon": "weapons",
+"name": "40Rnd_9x21_Gepard_Yellow_Mag_F",
+"ns": "cfgmagazines"
+},
+"Aegis_45Rnd_545x39_Mag_F": {
+"addon": "weapons",
+"name": "45Rnd_545x39_Mag_F",
+"ns": "cfgmagazines"
+},
+"Aegis_45Rnd_545x39_Mag_Green_F": {
+"addon": "weapons",
+"name": "45Rnd_545x39_Mag_Green_F",
+"ns": "cfgmagazines"
+},
+"Aegis_45Rnd_545x39_Mag_Tracer_F": {
+"addon": "weapons",
+"name": "45Rnd_545x39_Mag_Tracer_F",
+"ns": "cfgmagazines"
+},
+"Aegis_45Rnd_545x39_Mag_Tracer_Green_F": {
+"addon": "weapons",
+"name": "45Rnd_545x39_Mag_Tracer_Green_F",
+"ns": "cfgmagazines"
+},
+"Aegis_60Rnd_545x39_Mag_F": {
+"addon": "weapons",
+"name": "60Rnd_545x39_Mag_F",
+"ns": "cfgmagazines"
+},
+"Aegis_60Rnd_545x39_Mag_Green_F": {
+"addon": "weapons",
+"name": "60Rnd_545x39_Mag_Green_F",
+"ns": "cfgmagazines"
+},
+"Aegis_60Rnd_545x39_Mag_Tracer_F": {
+"addon": "weapons",
+"name": "60Rnd_545x39_Mag_Tracer_F",
+"ns": "cfgmagazines"
+},
+"Aegis_60Rnd_545x39_Mag_Tracer_Green_F": {
+"addon": "weapons",
+"name": "60Rnd_545x39_Mag_Tracer_Green_F",
+"ns": "cfgmagazines"
+},
+"Aegis_Autocannon_AP_Heli_Attack_04_F": {
+"addon": "vehicle",
+"name": "Autocannon_AP_Heli_Attack_04_F",
+"ns": "cfgammo"
+},
+"Aegis_Autocannon_AP_Heli_Attack_04_Green_F": {
+"addon": "vehicle",
+"name": "Autocannon_AP_Heli_Attack_04_Green_F",
+"ns": "cfgammo"
+},
+"Aegis_Autocannon_AP_Heli_Attack_04_Red_F": {
+"addon": "vehicle",
+"name": "Autocannon_AP_Heli_Attack_04_Red_F",
+"ns": "cfgammo"
+},
+"Aegis_Autocannon_AP_Heli_Attack_04_White_F": {
+"addon": "vehicle",
+"name": "Autocannon_AP_Heli_Attack_04_White_F",
+"ns": "cfgammo"
+},
+"Aegis_Autocannon_AP_Heli_Attack_04_Yellow_F": {
+"addon": "vehicle",
+"name": "Autocannon_AP_Heli_Attack_04_Yellow_F",
+"ns": "cfgammo"
+},
+"Aegis_Autocannon_HE_Heli_Attack_04_F": {
+"addon": "vehicle",
+"name": "Autocannon_HE_Heli_Attack_04_F",
+"ns": "cfgammo"
+},
+"Aegis_Autocannon_HE_Heli_Attack_04_Green_F": {
+"addon": "vehicle",
+"name": "Autocannon_HE_Heli_Attack_04_Green_F",
+"ns": "cfgammo"
+},
+"Aegis_Autocannon_HE_Heli_Attack_04_Red_F": {
+"addon": "vehicle",
+"name": "Autocannon_HE_Heli_Attack_04_Red_F",
+"ns": "cfgammo"
+},
+"Aegis_Autocannon_HE_Heli_Attack_04_White_F": {
+"addon": "vehicle",
+"name": "Autocannon_HE_Heli_Attack_04_White_F",
+"ns": "cfgammo"
+},
+"Aegis_Autocannon_HE_Heli_Attack_04_Yellow_F": {
+"addon": "vehicle",
+"name": "Autocannon_HE_Heli_Attack_04_Yellow_F",
+"ns": "cfgammo"
+},
+"Aegis_Autocannon_Heli_Attack_04_AP_F": {
+"addon": "vehicle",
+"name": "Autocannon_Heli_Attack_04_AP_F",
+"ns": "cfgweapons"
+},
+"Aegis_Autocannon_Heli_Attack_04_HE_F": {
+"addon": "vehicle",
+"name": "Autocannon_Heli_Attack_04_HE_F",
+"ns": "cfgweapons"
+},
+"Aegis_BTR100_30mm_Cartridge": {
+"addon": "vehicle",
+"name": "BTR100_30mm_Cartridge",
+"ns": "cfgcloudlets"
+},
+"Aegis_B_44RM_Ball": {
+"addon": "weapons",
+"name": "B_44RM_Ball",
+"ns": "cfgammo"
+},
+"Aegis_B_A_Heli_Attack_03_F": {
+"addon": "vehicle",
+"name": "B_A_Heli_Attack_03_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_A_Heli_Attack_03_tna_F": {
+"addon": "vehicle",
+"name": "B_A_Heli_Attack_03_tna_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_A_Heli_Transport_02_F": {
+"addon": "vehicle",
+"name": "B_A_Heli_Transport_02_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_A_Heli_Transport_02_tna_F": {
+"addon": "vehicle",
+"name": "B_A_Heli_Transport_02_tna_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_A_Heli_Transport_02_wdl_F": {
+"addon": "vehicle",
+"name": "B_A_Heli_Transport_02_wdl_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_A_UAV_07_F": {
+"addon": "vehicle",
+"name": "B_A_UAV_07_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_A_UAV_07_tna_F": {
+"addon": "vehicle",
+"name": "B_A_UAV_07_tna_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_A_UAV_07_wdl_F": {
+"addon": "vehicle",
+"name": "B_A_UAV_07_wdl_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_AssaultPackSpec_des_lxWS": {
+"addon": "uniform",
+"name": "B_AssaultPackSpec_des_lxWS",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_GMG_01_A_F": {
+"addon": "vehicle",
+"name": "B_D_GMG_01_A_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_GMG_01_F": {
+"addon": "vehicle",
+"name": "B_D_GMG_01_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_GMG_01_high_F": {
+"addon": "vehicle",
+"name": "B_D_GMG_01_high_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_HMG_01_A_F": {
+"addon": "vehicle",
+"name": "B_D_HMG_01_A_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_HMG_01_F": {
+"addon": "vehicle",
+"name": "B_D_HMG_01_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_HMG_01_high_F": {
+"addon": "vehicle",
+"name": "B_D_HMG_01_high_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_HeavyGunner_F": {
+"addon": "uniform",
+"name": "B_D_HeavyGunner_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_Heli_Attack_03_F": {
+"addon": "vehicle",
+"name": "B_D_Heli_Attack_03_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_Heli_Transport_03_F": {
+"addon": "vehicle",
+"name": "B_D_Heli_Transport_03_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_Heli_Transport_03_unarmed_F": {
+"addon": "vehicle",
+"name": "B_D_Heli_Transport_03_unarmed_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_Helicrew_F": {
+"addon": "uniform",
+"name": "B_D_Helicrew_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_LSV_01_AT_F": {
+"addon": "vehicle",
+"name": "B_D_LSV_01_AT_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_LSV_01_armed_F": {
+"addon": "vehicle",
+"name": "B_D_LSV_01_armed_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_LSV_01_light_F": {
+"addon": "vehicle",
+"name": "B_D_LSV_01_light_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_LSV_01_unarmed_F": {
+"addon": "vehicle",
+"name": "B_D_LSV_01_unarmed_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_RadioOperator_F": {
+"addon": "uniform",
+"name": "B_D_RadioOperator_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_Recon_CQ_F": {
+"addon": "uniform",
+"name": "B_D_Recon_CQ_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_Recon_GL_F": {
+"addon": "uniform",
+"name": "B_D_Recon_GL_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_Recon_MG_F": {
+"addon": "uniform",
+"name": "B_D_Recon_MG_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_Recon_Sharpshooter": {
+"addon": "uniform",
+"name": "B_D_Recon_Sharpshooter",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_Sharpshooter_F": {
+"addon": "uniform",
+"name": "B_D_Sharpshooter_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_Soldier_CQ_F": {
+"addon": "uniform",
+"name": "B_D_Soldier_CQ_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_Soldier_MG_F": {
+"addon": "uniform",
+"name": "B_D_Soldier_MG_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_Static_Designator_01_F": {
+"addon": "vehicle",
+"name": "B_D_Static_Designator_01_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_UAV_01_F": {
+"addon": "vehicle",
+"name": "B_D_UAV_01_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_UAV_05_F": {
+"addon": "vehicle",
+"name": "B_D_UAV_05_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_D_UGV_02_Demining_F": {
+"addon": "vehicle",
+"name": "B_D_UGV_02_Demining_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_EAF_Heli_Attack_04_F": {
+"addon": "vehicle",
+"name": "B_EAF_Heli_Attack_04_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_EAF_Heli_Attack_04_ard_F": {
+"addon": "vehicle",
+"name": "B_EAF_Heli_Attack_04_ard_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_E_Plane_Transport_01_infantry_F": {
+"addon": "vehicle",
+"name": "B_E_Plane_Transport_01_infantry_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_E_Plane_Transport_01_vehicle_F": {
+"addon": "vehicle",
+"name": "B_E_Plane_Transport_01_vehicle_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_E_UAV_07_F": {
+"addon": "vehicle",
+"name": "B_E_UAV_07_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_E_UAV_07_ard_F": {
+"addon": "vehicle",
+"name": "B_E_UAV_07_ard_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_G_APC_Wheeled_04_export_F": {
+"addon": "vehicle",
+"name": "B_G_APC_Wheeled_04_export_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_Heli_Attack_03_F": {
+"addon": "vehicle",
+"name": "B_Heli_Attack_03_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_ION_Heli_Attack_04_F": {
+"addon": "vehicle",
+"name": "B_ION_Heli_Attack_04_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_ION_Heli_Transport_02_VIP_F": {
+"addon": "vehicle",
+"name": "B_ION_Heli_Transport_02_VIP_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_RadioBag_01_des_lxWS": {
+"addon": "uniform",
+"name": "B_RadioBag_01_des_lxWS",
+"ns": "cfgvehicles"
+},
+"Aegis_B_T_Heli_Attack_03_F": {
+"addon": "vehicle",
+"name": "B_T_Heli_Attack_03_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_Tura_APC_Wheeled_04_export_F": {
+"addon": "vehicle",
+"name": "B_Tura_APC_Wheeled_04_export_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_UN_lxWS_Heli_Transport_02_Heavy_F": {
+"addon": "vehicle",
+"name": "B_UN_lxWS_Heli_Transport_02_Heavy_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_UN_lxWS_Heli_Transport_02_VIP_F": {
+"addon": "vehicle",
+"name": "B_UN_lxWS_Heli_Transport_02_VIP_F",
+"ns": "cfgvehicles"
+},
+"Aegis_B_W_Heli_Attack_03_F": {
+"addon": "vehicle",
+"name": "B_W_Heli_Attack_03_F",
+"ns": "cfgvehicles"
+},
+"Aegis_C_Boat_Civil_02_F_Malden": {
+"addon": "vehicle",
+"name": "C_Boat_Civil_02_F_Malden",
+"ns": "cfgvehicles"
+},
+"Aegis_C_Boat_Civil_02_F_Tanoa": {
+"addon": "vehicle",
+"name": "C_Boat_Civil_02_F_Tanoa",
+"ns": "cfgvehicles"
+},
+"Aegis_C_Heli_Transport_02_VIP_F": {
+"addon": "vehicle",
+"name": "C_Heli_Transport_02_VIP_F",
+"ns": "cfgvehicles"
+},
+"Aegis_C_Heli_Transport_02_VIP_F_LXWS": {
+"addon": "vehicle",
+"name": "C_Heli_Transport_02_VIP_F_LXWS",
+"ns": "cfgvehicles"
+},
+"Aegis_C_Heli_Transport_02_VIP_F_Malden": {
+"addon": "vehicle",
+"name": "C_Heli_Transport_02_VIP_F_Malden",
+"ns": "cfgvehicles"
+},
+"Aegis_C_Heli_Transport_02_VIP_F_Tanoa": {
+"addon": "vehicle",
+"name": "C_Heli_Transport_02_VIP_F_Tanoa",
+"ns": "cfgvehicles"
+},
+"Aegis_C_IDAP_Plane_Transport_01_civil_F": {
+"addon": "vehicle",
+"name": "C_IDAP_Plane_Transport_01_civil_F",
+"ns": "cfgvehicles"
+},
+"Aegis_C_Plane_Transport_01_civil_F": {
+"addon": "vehicle",
+"name": "C_Plane_Transport_01_civil_F",
+"ns": "cfgvehicles"
+},
+"Aegis_C_Plane_Transport_01_civil_F_Enoch": {
+"addon": "vehicle",
+"name": "C_Plane_Transport_01_civil_F_Enoch",
+"ns": "cfgvehicles"
+},
+"Aegis_C_Plane_Transport_01_civil_F_LXWS": {
+"addon": "vehicle",
+"name": "C_Plane_Transport_01_civil_F_LXWS",
+"ns": "cfgvehicles"
+},
+"Aegis_C_Plane_Transport_01_civil_F_Malden": {
+"addon": "vehicle",
+"name": "C_Plane_Transport_01_civil_F_Malden",
+"ns": "cfgvehicles"
+},
+"Aegis_C_Plane_Transport_01_civil_F_Tanoa": {
+"addon": "vehicle",
+"name": "C_Plane_Transport_01_civil_F_Tanoa",
+"ns": "cfgvehicles"
+},
+"Aegis_G_scrimNet_olive_F": {
+"addon": "uniform",
+"name": "G_scrimNet_olive_F",
+"ns": "cfgglasses"
+},
+"Aegis_G_scrimNet_under_olive_F": {
+"addon": "uniform",
+"name": "G_scrimNet_under_olive_F",
+"ns": "cfgglasses"
+},
+"Aegis_H_Helmet_FASTMT_Cover_Desert_F": {
+"addon": "headware",
+"name": "H_Helmet_FASTMT_Cover_desert_F",
+"ns": "cfgweapons"
+},
+"Aegis_H_Helmet_FASTMT_Cover_base_F": {
+"addon": "headware",
+"name": "H_Helmet_FASTMT_Cover_base_F",
+"ns": "cfgweapons"
+},
+"Aegis_H_Helmet_FASTMT_Cover_mtp_F": {
+"addon": "headware",
+"name": "H_Helmet_FASTMT_Cover_mtp_F",
+"ns": "cfgweapons"
+},
+"Aegis_H_Helmet_FASTMT_Cover_tna_F": {
+"addon": "headware",
+"name": "H_Helmet_FASTMT_Cover_tna_F",
+"ns": "cfgweapons"
+},
+"Aegis_H_Helmet_FASTMT_Headset_base_F": {
+"addon": "headware",
+"name": "H_Helmet_FASTMT_Headset_base_F",
+"ns": "cfgweapons"
+},
+"Aegis_H_Helmet_FASTMT_base_F": {
+"addon": "headware",
+"name": "H_Helmet_FASTMT_base_F",
+"ns": "cfgweapons"
+},
+"Aegis_H_Milcap_tachs_base_F": {
+"addon": "headware",
+"name": "H_Milcap_tachs_base_F",
+"ns": "cfgweapons"
+},
+"Aegis_Heli_Attack_03_v2_base_F": {
+"addon": "vehicle",
+"name": "Heli_Attack_03_v2_base_F",
+"ns": "cfgvehicles"
+},
+"Aegis_Heli_Attack_04_base_F": {
+"addon": "vehicle",
+"name": "Heli_Attack_04_base_F",
+"ns": "cfgvehicles"
+},
+"Aegis_Heli_Transport_02_Heavy_base_F": {
+"addon": "vehicle",
+"name": "Heli_Transport_02_Heavy_base_F",
+"ns": "cfgvehicles"
+},
+"Aegis_Heli_Transport_02_VIP_base_F": {
+"addon": "vehicle",
+"name": "Heli_Transport_02_VIP_base_F",
+"ns": "cfgvehicles"
+},
+"Aegis_I_APC_Wheeled_04_cannon_v2_F": {
+"addon": "vehicle",
+"name": "I_APC_Wheeled_04_cannon_v2_F",
+"ns": "cfgvehicles"
+},
+"Aegis_I_APC_Wheeled_04_export_F": {
+"addon": "vehicle",
+"name": "I_APC_Wheeled_04_export_F",
+"ns": "cfgvehicles"
+},
+"Aegis_I_EAF_Heli_Attack_04_F": {
+"addon": "vehicle",
+"name": "I_EAF_Heli_Attack_04_F",
+"ns": "cfgvehicles"
+},
+"Aegis_I_EAF_Heli_Attack_04_ard_F": {
+"addon": "vehicle",
+"name": "I_EAF_Heli_Attack_04_ard_F",
+"ns": "cfgvehicles"
+},
+"Aegis_I_E_Plane_Transport_01_infantry_F": {
+"addon": "vehicle",
+"name": "I_E_Plane_Transport_01_infantry_F",
+"ns": "cfgvehicles"
+},
+"Aegis_I_E_Plane_Transport_01_vehicle_F": {
+"addon": "vehicle",
+"name": "I_E_Plane_Transport_01_vehicle_F",
+"ns": "cfgvehicles"
+},
+"Aegis_I_E_UAV_07_F": {
+"addon": "vehicle",
+"name": "I_E_UAV_07_F",
+"ns": "cfgvehicles"
+},
+"Aegis_I_E_UAV_07_ard_F": {
+"addon": "vehicle",
+"name": "I_E_UAV_07_ard_F",
+"ns": "cfgvehicles"
+},
+"Aegis_I_G_APC_Wheeled_04_export_F": {
+"addon": "vehicle",
+"name": "I_G_APC_Wheeled_04_export_F",
+"ns": "cfgvehicles"
+},
+"Aegis_I_Heli_Transport_02_Heavy_F": {
+"addon": "vehicle",
+"name": "I_Heli_Transport_02_Heavy_F",
+"ns": "cfgvehicles"
+},
+"Aegis_I_Raven_APC_Wheeled_04_export_F": {
+"addon": "vehicle",
+"name": "I_Raven_APC_Wheeled_04_export_F",
+"ns": "cfgvehicles"
+},
+"Aegis_I_Raven_Heli_Attack_04_F": {
+"addon": "vehicle",
+"name": "I_Raven_Heli_Attack_04_F",
+"ns": "cfgvehicles"
+},
+"Aegis_I_Tura_APC_Wheeled_04_export_F": {
+"addon": "vehicle",
+"name": "I_Tura_APC_Wheeled_04_export_F",
+"ns": "cfgvehicles"
+},
+"Aegis_I_UAV_07_F": {
+"addon": "vehicle",
+"name": "I_UAV_07_F",
+"ns": "cfgvehicles"
+},
+"Aegis_MMG_01_tan_ARCO_LP_F": {
+"addon": "weapons",
+"name": "MMG_01_tan_ARCO_LP_F",
+"ns": "cfgweapons"
+},
+"Aegis_O_A_APC_Wheeled_04_export_F": {
+"addon": "vehicle",
+"name": "O_A_APC_Wheeled_04_export_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_A_Heli_Attack_04_F": {
+"addon": "vehicle",
+"name": "O_A_Heli_Attack_04_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Crew_F": {
+"addon": "uniform",
+"name": "O_C_D_Crew_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Engineer_F": {
+"addon": "uniform",
+"name": "O_C_D_Engineer_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Fighter_Pilot_F": {
+"addon": "uniform",
+"name": "O_C_D_Fighter_Pilot_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_HeavyGunner_F": {
+"addon": "uniform",
+"name": "O_C_D_HeavyGunner_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Helicrew_F": {
+"addon": "uniform",
+"name": "O_C_D_Helicrew_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Helipilot_F": {
+"addon": "uniform",
+"name": "O_C_D_Helipilot_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Medic_F": {
+"addon": "uniform",
+"name": "O_C_D_Medic_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Officer_F": {
+"addon": "uniform",
+"name": "O_C_D_Officer_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Pathfinder_F": {
+"addon": "uniform",
+"name": "O_C_D_Pathfinder_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Pilot_F": {
+"addon": "uniform",
+"name": "O_C_D_Pilot_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_RadioOperator_F": {
+"addon": "uniform",
+"name": "O_C_D_RadioOperator_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Recon_AR_F": {
+"addon": "uniform",
+"name": "O_C_D_Recon_AR_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Recon_CQ_F": {
+"addon": "uniform",
+"name": "O_C_D_Recon_CQ_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Recon_Exp_F": {
+"addon": "uniform",
+"name": "O_C_D_Recon_Exp_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Recon_F": {
+"addon": "uniform",
+"name": "O_C_D_Recon_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Recon_GL_F": {
+"addon": "uniform",
+"name": "O_C_D_Recon_GL_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Recon_JTAC_F": {
+"addon": "uniform",
+"name": "O_C_D_Recon_JTAC_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Recon_LAT_F": {
+"addon": "uniform",
+"name": "O_C_D_Recon_LAT_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Recon_M_F": {
+"addon": "uniform",
+"name": "O_C_D_Recon_M_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Recon_Medic_F": {
+"addon": "uniform",
+"name": "O_C_D_Recon_Medic_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Recon_TL_F": {
+"addon": "uniform",
+"name": "O_C_D_Recon_TL_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Sharpshooter_F": {
+"addon": "uniform",
+"name": "O_C_D_Sharpshooter_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Sniper_F": {
+"addon": "uniform",
+"name": "O_C_D_Sniper_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_AAA_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_AAA_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_AAR_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_AAR_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_AAT_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_AAT_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_AA_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_AA_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_AHAT_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_AHAT_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_AR_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_AR_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_AT_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_AT_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_A_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_A_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_CBRN_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_CBRN_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_CQ_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_CQ_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_Exp_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_Exp_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_GL_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_GL_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_HAT_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_HAT_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_LAT_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_LAT_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_Lite_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_Lite_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_M_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_M_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_PG_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_PG_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_Repair_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_Repair_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_SL_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_SL_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_TL_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_TL_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_UAV_06_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_UAV_06_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_UAV_06_medical_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_UAV_06_medical_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_UAV_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_UAV_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_UGV_02_Demining_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_UGV_02_Demining_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Soldier_unarmed_F": {
+"addon": "uniform",
+"name": "O_C_D_Soldier_unarmed_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Spotter_F": {
+"addon": "uniform",
+"name": "O_C_D_Spotter_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Support_AMG_F": {
+"addon": "uniform",
+"name": "O_C_D_Support_AMG_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Support_AMort_F": {
+"addon": "uniform",
+"name": "O_C_D_Support_AMort_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Support_GMG_F": {
+"addon": "uniform",
+"name": "O_C_D_Support_GMG_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Support_MG_F": {
+"addon": "uniform",
+"name": "O_C_D_Support_MG_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_C_D_Support_Mort_F": {
+"addon": "uniform",
+"name": "O_C_D_Support_Mort_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_G_APC_Wheeled_04_export_F": {
+"addon": "vehicle",
+"name": "O_G_APC_Wheeled_04_export_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_R_Heli_Attack_04_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Attack_04_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_R_Heli_Attack_04_ard_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Attack_04_ard_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_Raven_APC_Wheeled_04_export_F": {
+"addon": "vehicle",
+"name": "O_Raven_APC_Wheeled_04_export_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_Raven_Heli_Attack_04_F": {
+"addon": "vehicle",
+"name": "O_Raven_Heli_Attack_04_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_SFIA_APC_Wheeled_04_cannon_v2_F": {
+"addon": "vehicle",
+"name": "O_SFIA_APC_Wheeled_04_cannon_v2_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_SFIA_APC_Wheeled_04_export_F": {
+"addon": "vehicle",
+"name": "O_SFIA_APC_Wheeled_04_export_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_SFIA_Heli_Attack_04_F": {
+"addon": "vehicle",
+"name": "O_SFIA_Heli_Attack_04_F",
+"ns": "cfgvehicles"
+},
+"Aegis_O_Tura_APC_Wheeled_04_export_F": {
+"addon": "vehicle",
+"name": "O_Tura_APC_Wheeled_04_export_F",
+"ns": "cfgvehicles"
+},
+"Aegis_Plane_Transport_01_civil_base_F": {
+"addon": "vehicle",
+"name": "Plane_Transport_01_civil_base_F",
+"ns": "cfgvehicles"
+},
+"Aegis_Recoil_Gepard": {
+"addon": "weapons",
+"name": "Recoil_Gepard",
+"ns": "cfgrecoils"
+},
+"Aegis_SMG_Gepard_9x21": {
+"addon": "weapons",
+"name": "SMG_Gepard_9x21",
+"ns": "cfgmagazinewells"
+},
+"Aegis_SMG_Gepard_Base_F": {
+"addon": "weapons",
+"name": "SMG_Gepard_Base_F",
+"ns": "cfgweapons"
+},
+"Aegis_SMG_Gepard_blk_ACO_F": {
+"addon": "weapons",
+"name": "SMG_Gepard_blk_ACO_F",
+"ns": "cfgweapons"
+},
+"Aegis_SMG_Gepard_blk_ACO_FL_F": {
+"addon": "weapons",
+"name": "SMG_Gepard_blk_ACO_FL_F",
+"ns": "cfgweapons"
+},
+"Aegis_SMG_Gepard_blk_ACO_LP_F": {
+"addon": "weapons",
+"name": "SMG_Gepard_blk_ACO_LP_F",
+"ns": "cfgweapons"
+},
+"Aegis_SMG_Gepard_blk_ACO_LP_Snds_F": {
+"addon": "weapons",
+"name": "SMG_Gepard_blk_ACO_LP_Snds_F",
+"ns": "cfgweapons"
+},
+"Aegis_SMG_Gepard_blk_F": {
+"addon": "weapons",
+"name": "SMG_Gepard_blk_F",
+"ns": "cfgweapons"
+},
+"Aegis_UAV_07_base_F": {
+"addon": "vehicle",
+"name": "UAV_07_base_F",
+"ns": "cfgvehicles"
+},
+"Aegis_acc_pointer_DM": {
+"addon": "weapons",
+"name": "acc_pointer_DM",
+"ns": "cfgweapons"
+},
+"Aegis_acc_pointer_DM_Arid": {
+"addon": "weapons",
+"name": "acc_pointer_DM_Arid",
+"ns": "cfgweapons"
+},
+"Aegis_acc_pointer_DM_Arid_visible_Red": {
+"addon": "weapons",
+"name": "acc_pointer_DM_Arid_visible_Red",
+"ns": "cfgweapons"
+},
+"Aegis_acc_pointer_DM_Khaki": {
+"addon": "weapons",
+"name": "acc_pointer_DM_Khaki",
+"ns": "cfgweapons"
+},
+"Aegis_acc_pointer_DM_Khaki_visible_Red": {
+"addon": "weapons",
+"name": "acc_pointer_DM_Khaki_visible_Red",
+"ns": "cfgweapons"
+},
+"Aegis_acc_pointer_DM_Lush": {
+"addon": "weapons",
+"name": "acc_pointer_DM_Lush",
+"ns": "cfgweapons"
+},
+"Aegis_acc_pointer_DM_Lush_visible_Red": {
+"addon": "weapons",
+"name": "acc_pointer_DM_Lush_visible_Red",
+"ns": "cfgweapons"
+},
+"Aegis_acc_pointer_DM_Sand": {
+"addon": "weapons",
+"name": "acc_pointer_DM_Sand",
+"ns": "cfgweapons"
+},
+"Aegis_acc_pointer_DM_Sand_visible_Red": {
+"addon": "weapons",
+"name": "acc_pointer_DM_Sand_visible_Red",
+"ns": "cfgweapons"
+},
+"Aegis_acc_pointer_DM_visible_Red": {
+"addon": "weapons",
+"name": "acc_pointer_DM_visible_Red",
+"ns": "cfgweapons"
+},
+"Aegis_acc_pointer_compact_green": {
+"addon": "weapons",
+"name": "acc_pointer_compact_green",
+"ns": "cfgweapons"
+},
+"Aegis_acc_pointer_compact_pistol_green": {
+"addon": "weapons",
+"name": "acc_pointer_compact_pistol_green",
+"ns": "cfgweapons"
+},
+"Aegis_acc_pointer_compact_pistol_red": {
+"addon": "weapons",
+"name": "acc_pointer_compact_pistol_red",
+"ns": "cfgweapons"
+},
+"Aegis_acc_pointer_compact_red": {
+"addon": "weapons",
+"name": "acc_pointer_compact_red",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AK103_F": {
+"addon": "weapons",
+"name": "arifle_AK103_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AK103_GL_F": {
+"addon": "weapons",
+"name": "arifle_AK103_GL_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AK103_GL_plum_F": {
+"addon": "weapons",
+"name": "arifle_AK103_GL_plum_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AK103_plum_F": {
+"addon": "weapons",
+"name": "arifle_AK103_plum_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AK74_F": {
+"addon": "weapons",
+"name": "arifle_AK74_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AK74_GL_F": {
+"addon": "weapons",
+"name": "arifle_AK74_GL_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AK74_GL_oak_F": {
+"addon": "weapons",
+"name": "arifle_AK74_GL_oak_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AK74_gold_F": {
+"addon": "weapons",
+"name": "arifle_AK74_gold_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AK74_oak_F": {
+"addon": "weapons",
+"name": "arifle_AK74_oak_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AKM74_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AKM74_GL_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_GL_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AKM74_GL_MRCO_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_GL_MRCO_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AKM74_GL_ROS_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_GL_ROS_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AKM74_GL_plum_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_GL_plum_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AKM74_MRCO_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_MRCO_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AKM74_ROS_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_ROS_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AKM74_olive_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_olive_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AKM74_olive_GL_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_olive_GL_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AKM74_plum_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_plum_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AKM74_sand_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_sand_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AKM74_sand_GL_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_sand_GL_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AKS74_F": {
+"addon": "weapons",
+"name": "arifle_AKS74_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AKS74_gold_F": {
+"addon": "weapons",
+"name": "arifle_AKS74_gold_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_AKS74_oak_F": {
+"addon": "weapons",
+"name": "arifle_AKS74_oak_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_CTARS_tan_ARCO_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_CTARS_tan_ARCO_Pointer_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_CTARS_tan_ARCO_Pointer_Snds_F": {
+"addon": "weapons",
+"name": "arifle_CTARS_tan_ARCO_Pointer_Snds_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_CTARS_tan_f": {
+"addon": "weapons",
+"name": "arifle_CTARS_tan_f",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_CTAR_GL_tan_ACO_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_CTAR_GL_tan_ACO_Pointer_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_CTAR_GL_tan_ARCO_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_CTAR_GL_tan_ARCO_Pointer_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_CTAR_GL_tan_ARCO_Pointer_Snds_F": {
+"addon": "weapons",
+"name": "arifle_CTAR_GL_tan_ARCO_Pointer_Snds_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_CTAR_GL_tan_f": {
+"addon": "weapons",
+"name": "arifle_CTAR_GL_tan_f",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_CTAR_tan_ACO_F": {
+"addon": "weapons",
+"name": "arifle_CTAR_tan_ACO_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_CTAR_tan_ACO_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_CTAR_tan_ACO_Pointer_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_CTAR_tan_ACO_Pointer_Snds_F": {
+"addon": "weapons",
+"name": "arifle_CTAR_tan_ACO_Pointer_Snds_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_CTAR_tan_ARCO_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_CTAR_tan_ARCO_Pointer_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_CTAR_tan_ARCO_Pointer_Snds_F": {
+"addon": "weapons",
+"name": "arifle_CTAR_tan_ARCO_Pointer_Snds_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_CTAR_tan_f": {
+"addon": "weapons",
+"name": "arifle_CTAR_tan_f",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_RPK12_545_F": {
+"addon": "weapons",
+"name": "arifle_RPK12_545_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_RPK12_545_base_F": {
+"addon": "weapons",
+"name": "arifle_RPK12_545_base_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_RPK74M_BVO_F": {
+"addon": "weapons",
+"name": "arifle_RPK74M_BVO_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_RPK74M_F": {
+"addon": "weapons",
+"name": "arifle_RPK74M_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_RPK74_base_F": {
+"addon": "weapons",
+"name": "arifle_RPK74_base_F",
+"ns": "cfgweapons"
+},
+"Aegis_arifle_SCAR_khaki_Holo_BI_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_khaki_Holo_BI_F",
+"ns": "cfgweapons"
+},
+"Aegis_muzzle_snds_460_khaki": {
+"addon": "weapons",
+"name": "muzzle_snds_460_khaki",
+"ns": "cfgweapons"
+},
+"Aegis_muzzle_snds_460_sand": {
+"addon": "weapons",
+"name": "muzzle_snds_460_sand",
+"ns": "cfgweapons"
+},
+"Aegis_muzzle_snds_9MM_enhanced_black": {
+"addon": "weapons",
+"name": "muzzle_snds_9MM_enhanced_black",
+"ns": "cfgweapons"
+},
+"Aegis_muzzle_snds_9MM_enhanced_khaki": {
+"addon": "weapons",
+"name": "muzzle_snds_9MM_enhanced_khaki",
+"ns": "cfgweapons"
+},
+"Aegis_muzzle_snds_9MM_enhanced_sand": {
+"addon": "weapons",
+"name": "muzzle_snds_9MM_enhanced_sand",
+"ns": "cfgweapons"
+},
+"Aegis_muzzle_snds_enhanced_base": {
+"addon": "weapons",
+"name": "muzzle_snds_enhanced_base",
+"ns": "cfgweapons"
+},
+"Aegis_optic_ROS": {
+"addon": "weapons",
+"name": "optic_ROS",
+"ns": "cfgweapons"
+},
+"Aegis_optic_ROS_SMG": {
+"addon": "weapons",
+"name": "optic_ROS_SMG",
+"ns": "cfgweapons"
+},
+"Aegis_sgun_KSG_black_F": {
+"addon": "weapons",
+"name": "sgun_KSG_black_F",
+"ns": "cfgweapons"
+},
+"Atlas_25Rnd_556x45_Famas": {
+"addon": "weapons",
+"name": "25Rnd_556x45_Famas",
+"ns": "cfgmagazines"
+},
+"Atlas_25Rnd_556x45_Famas_Tracer_Green": {
+"addon": "weapons",
+"name": "25Rnd_556x45_Famas_Tracer_Green",
+"ns": "cfgmagazines"
+},
+"Atlas_25Rnd_556x45_Famas_Tracer_Red": {
+"addon": "weapons",
+"name": "25Rnd_556x45_Famas_Tracer_Red",
+"ns": "cfgmagazines"
+},
+"Atlas_25Rnd_556x45_Famas_Tracer_Yellow": {
+"addon": "weapons",
+"name": "25Rnd_556x45_Famas_Tracer_Yellow",
+"ns": "cfgmagazines"
+},
+"Atlas_25Rnd_556x45_Famas_green": {
+"addon": "weapons",
+"name": "25Rnd_556x45_Famas_green",
+"ns": "cfgmagazines"
+},
+"Atlas_25Rnd_556x45_Famas_red": {
+"addon": "weapons",
+"name": "25Rnd_556x45_Famas_red",
+"ns": "cfgmagazines"
+},
+"Atlas_25Rnd_556x45_Famas_yellow": {
+"addon": "weapons",
+"name": "25Rnd_556x45_Famas_yellow",
+"ns": "cfgmagazines"
+},
+"Atlas_Arifle_FamasG4_GL_Holo_LP_F": {
+"addon": "weapons",
+"name": "Arifle_FamasG4_GL_Holo_LP_F",
+"ns": "cfgweapons"
+},
+"Atlas_Arifle_FamasG4_GL_RCO_LP_F": {
+"addon": "weapons",
+"name": "Arifle_FamasG4_GL_RCO_LP_F",
+"ns": "cfgweapons"
+},
+"Atlas_Arifle_FamasG4_Grip_Holo_F": {
+"addon": "weapons",
+"name": "Arifle_FamasG4_Grip_Holo_F",
+"ns": "cfgweapons"
+},
+"Atlas_Arifle_FamasG4_Grip_Holo_LP_F": {
+"addon": "weapons",
+"name": "Arifle_FamasG4_Grip_Holo_LP_F",
+"ns": "cfgweapons"
+},
+"Atlas_Arifle_FamasG4_Grip_RCO_LP_F": {
+"addon": "weapons",
+"name": "Arifle_FamasG4_Grip_RCO_LP_F",
+"ns": "cfgweapons"
+},
+"Atlas_Arifle_Famas_Base": {
+"addon": "weapons",
+"name": "Arifle_Famas_Base",
+"ns": "cfgweapons"
+},
+"Atlas_Arifle_Famas_M203_base": {
+"addon": "weapons",
+"name": "Arifle_Famas_M203_base",
+"ns": "cfgweapons"
+},
+"Atlas_Arifle_famasG2_F": {
+"addon": "weapons",
+"name": "Arifle_famasG2_F",
+"ns": "cfgweapons"
+},
+"Atlas_Arifle_famasG2_GL_F": {
+"addon": "weapons",
+"name": "Arifle_famasG2_GL_F",
+"ns": "cfgweapons"
+},
+"Atlas_Arifle_famasG2_Grip_F": {
+"addon": "weapons",
+"name": "Arifle_famasG2_Grip_F",
+"ns": "cfgweapons"
+},
+"Atlas_Arifle_famasG4_GL_F": {
+"addon": "weapons",
+"name": "Arifle_famasG4_GL_F",
+"ns": "cfgweapons"
+},
+"Atlas_B_A_Ejection_Seat_Plane_Fighter_05_F": {
+"addon": "vehicle",
+"name": "B_A_Ejection_Seat_Plane_Fighter_05_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_A_Heli_Attack_03_F": {
+"addon": "vehicle",
+"name": "B_A_Heli_Attack_03_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_A_Heli_Attack_03_ard_F": {
+"addon": "vehicle",
+"name": "B_A_Heli_Attack_03_ard_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_A_Heli_Attack_03_trp_F": {
+"addon": "vehicle",
+"name": "B_A_Heli_Attack_03_trp_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_A_Plane_Fighter_05_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Fighter_05_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_A_Plane_Fighter_05_Stealth_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Fighter_05_Stealth_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_A_Plane_Fighter_05_Stealth_ard_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Fighter_05_Stealth_ard_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_A_Plane_Fighter_05_Stealth_trp_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Fighter_05_Stealth_trp_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_A_Plane_Fighter_05_ard_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Fighter_05_ard_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_A_Plane_Fighter_05_trp_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Fighter_05_trp_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_A_Plane_Transport_01_infantry_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Transport_01_infantry_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_A_Plane_Transport_01_vehicle_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Transport_01_vehicle_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_AssaultPack_JSOC_LAT_F": {
+"addon": "uniform",
+"name": "B_AssaultPack_JSOC_LAT_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_D_AssaultPack_JSOC_LAT_F": {
+"addon": "uniform",
+"name": "B_D_AssaultPack_JSOC_LAT_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_D_JSOC_JTAC_F": {
+"addon": "uniform",
+"name": "B_D_JSOC_JTAC_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_D_JSOC_LAT_F": {
+"addon": "uniform",
+"name": "B_D_JSOC_LAT_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_D_JSOC_StealthUniform_F": {
+"addon": "uniform",
+"name": "B_D_JSOC_StealthUniform_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_D_JSOC_StealthUniform_RolledUp_F": {
+"addon": "uniform",
+"name": "B_D_JSOC_StealthUniform_RolledUp_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_D_JSOC_UAV_F": {
+"addon": "uniform",
+"name": "B_D_JSOC_UAV_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_D_JSOC_UAV_lxWS": {
+"addon": "uniform",
+"name": "B_D_JSOC_UAV_lxWS",
+"ns": "cfgvehicles"
+},
+"Atlas_B_D_Soldier_JSOC_base": {
+"addon": "uniform",
+"name": "B_D_Soldier_JSOC_base",
+"ns": "cfgvehicles"
+},
+"Atlas_B_G_LT_01_AA_F": {
+"addon": "vehicle",
+"name": "B_G_LT_01_AA_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_G_LT_01_AA_ard_F": {
+"addon": "vehicle",
+"name": "B_G_LT_01_AA_ard_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_G_LT_01_AT_F": {
+"addon": "vehicle",
+"name": "B_G_LT_01_AT_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_G_LT_01_AT_ard_F": {
+"addon": "vehicle",
+"name": "B_G_LT_01_AT_ard_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_G_LT_01_cannon_F": {
+"addon": "vehicle",
+"name": "B_G_LT_01_cannon_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_G_LT_01_cannon_ard_F": {
+"addon": "vehicle",
+"name": "B_G_LT_01_cannon_ard_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_G_LT_01_scout_F": {
+"addon": "vehicle",
+"name": "B_G_LT_01_scout_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_G_LT_01_scout_ard_F": {
+"addon": "vehicle",
+"name": "B_G_LT_01_scout_ard_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_G_MBT_03_base_F": {
+"addon": "vehicle",
+"name": "B_G_MBT_03_base_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_G_MBT_03_cannon_F": {
+"addon": "vehicle",
+"name": "B_G_MBT_03_cannon_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_G_UAV_07_F": {
+"addon": "vehicle",
+"name": "B_G_UAV_07_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_G_UAV_07_ard_F": {
+"addon": "vehicle",
+"name": "B_G_UAV_07_ard_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_CombatFatigues_01_Commando_F": {
+"addon": "uniform",
+"name": "B_H_CombatFatigues_01_Commando_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Crew_F": {
+"addon": "uniform",
+"name": "B_H_Crew_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Engineer_F": {
+"addon": "uniform",
+"name": "B_H_Engineer_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_HeavyGunner_F": {
+"addon": "uniform",
+"name": "B_H_HeavyGunner_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Helicrew_F": {
+"addon": "uniform",
+"name": "B_H_Helicrew_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Helipilot_F": {
+"addon": "uniform",
+"name": "B_H_Helipilot_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Man_Base_F": {
+"addon": "uniform",
+"name": "B_H_Man_Base_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Medic_F": {
+"addon": "uniform",
+"name": "B_H_Medic_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_OfficerFatigues_01_jungle_F": {
+"addon": "uniform",
+"name": "B_H_OfficerFatigues_01_jungle_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Officer_F": {
+"addon": "uniform",
+"name": "B_H_Officer_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Plane_Transport_01_infantry_F": {
+"addon": "vehicle",
+"name": "B_H_Plane_Transport_01_infantry_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Plane_Transport_01_vehicle_F": {
+"addon": "vehicle",
+"name": "B_H_Plane_Transport_01_vehicle_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_RadioOperator_F": {
+"addon": "uniform",
+"name": "B_H_RadioOperator_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_AR_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_AR_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_A_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_A_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_Base_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_Base_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_Commando_Base": {
+"addon": "uniform",
+"name": "B_H_Soldier_Commando_Base",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_Exp_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_Exp_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_GL_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_GL_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_LAT_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_LAT_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_SL_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_SL_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_TL_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_TL_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_commando_AR_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_commando_AR_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_commando_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_commando_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_commando_LAT_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_commando_LAT_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_commando_M_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_commando_M_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_commando_TL_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_commando_TL_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_commando_exp_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_commando_exp_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_commando_gl_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_commando_gl_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_commando_jtac_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_commando_jtac_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_commando_medic_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_commando_medic_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_Soldier_unarmed_F": {
+"addon": "uniform",
+"name": "B_H_Soldier_unarmed_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_H_soldier_M_F": {
+"addon": "uniform",
+"name": "B_H_soldier_M_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_JSOC_JTAC_F": {
+"addon": "uniform",
+"name": "B_JSOC_JTAC_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_JSOC_LAT_F": {
+"addon": "uniform",
+"name": "B_JSOC_LAT_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_JSOC_StealthUniform_F": {
+"addon": "uniform",
+"name": "B_JSOC_StealthUniform_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_JSOC_StealthUniform_RolledUp_F": {
+"addon": "uniform",
+"name": "B_JSOC_StealthUniform_RolledUp_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_JSOC_UAV_F": {
+"addon": "uniform",
+"name": "B_JSOC_UAV_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_JSOC_UAV_lxWS": {
+"addon": "uniform",
+"name": "B_JSOC_UAV_lxWS",
+"ns": "cfgvehicles"
+},
+"Atlas_B_L_UAV_07_F": {
+"addon": "vehicle",
+"name": "B_L_UAV_07_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_M_Heli_Attack_03_F": {
+"addon": "vehicle",
+"name": "B_M_Heli_Attack_03_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_Soldier_JSOC_base": {
+"addon": "uniform",
+"name": "B_Soldier_JSOC_base",
+"ns": "cfgvehicles"
+},
+"Atlas_B_T_AssaultPack_JSOC_LAT_F": {
+"addon": "uniform",
+"name": "B_T_AssaultPack_JSOC_LAT_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_T_JSOC_JTAC_F": {
+"addon": "uniform",
+"name": "B_T_JSOC_JTAC_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_T_JSOC_LAT_F": {
+"addon": "uniform",
+"name": "B_T_JSOC_LAT_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_T_JSOC_StealthUniform_F": {
+"addon": "uniform",
+"name": "B_T_JSOC_StealthUniform_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_T_JSOC_StealthUniform_RolledUp_F": {
+"addon": "uniform",
+"name": "B_T_JSOC_StealthUniform_RolledUp_F",
+"ns": "cfgvehicles"
+},
+"Atlas_B_T_Soldier_JSOC_base": {
+"addon": "uniform",
+"name": "B_T_Soldier_JSOC_base",
+"ns": "cfgvehicles"
+},
+"Atlas_B_TacticalPack_oli_BHHG_F": {
+"addon": "uniform",
+"name": "B_TacticalPack_oli_BHHG_F",
+"ns": "cfgvehicles"
+},
+"Atlas_DM12_HEAT_F": {
+"addon": "weapons",
+"name": "DM12_HEAT_F",
+"ns": "cfgmagazines"
+},
+"Atlas_DM22_HEAT_F": {
+"addon": "weapons",
+"name": "DM22_HEAT_F",
+"ns": "cfgmagazines"
+},
+"Atlas_DM32_HEAT_MP_F": {
+"addon": "weapons",
+"name": "DM32_HEAT_MP_F",
+"ns": "cfgmagazines"
+},
+"Atlas_FAMAS_556x54": {
+"addon": "weapons",
+"name": "FAMAS_556x54",
+"ns": "cfgmagazinewells"
+},
+"Atlas_H_MilCap_tachs_Jungle": {
+"addon": "headware",
+"name": "H_MilCap_tachs_Jungle",
+"ns": "cfgweapons"
+},
+"Atlas_H_PASGT_Cover_HIMF_F": {
+"addon": "headware",
+"name": "H_PASGT_Cover_HIMF_F",
+"ns": "cfgweapons"
+},
+"Atlas_H_PASGT_Cover_base_F": {
+"addon": "headware",
+"name": "H_PASGT_Cover_base_F",
+"ns": "cfgweapons"
+},
+"Atlas_I_AR_APC_Wheeled_04_cannon_v2_F": {
+"addon": "vehicle",
+"name": "I_AR_APC_Wheeled_04_cannon_v2_F",
+"ns": "cfgvehicles"
+},
+"Atlas_I_AR_Heli_Attack_04_F": {
+"addon": "vehicle",
+"name": "I_AR_Heli_Attack_04_F",
+"ns": "cfgvehicles"
+},
+"Atlas_I_AR_Wheeled_04_export_F": {
+"addon": "vehicle",
+"name": "I_AR_Wheeled_04_export_F",
+"ns": "cfgvehicles"
+},
+"Atlas_I_I_Ejection_Seat_Plane_Fighter_05_F": {
+"addon": "vehicle",
+"name": "I_I_Ejection_Seat_Plane_Fighter_05_F",
+"ns": "cfgvehicles"
+},
+"Atlas_I_I_HMG_01_support_F": {
+"addon": "vehicle",
+"name": "I_I_HMG_01_support_F",
+"ns": "cfgvehicles"
+},
+"Atlas_I_I_Plane_Fighter_05_F": {
+"addon": "vehicle",
+"name": "I_I_Plane_Fighter_05_F",
+"ns": "cfgvehicles"
+},
+"Atlas_I_I_Plane_Fighter_05_Stealth_F": {
+"addon": "vehicle",
+"name": "I_I_Plane_Fighter_05_Stealth_F",
+"ns": "cfgvehicles"
+},
+"Atlas_I_UNO_Heli_Attack_04_F": {
+"addon": "vehicle",
+"name": "I_UNO_Heli_Attack_04_F",
+"ns": "cfgvehicles"
+},
+"Atlas_I_UNO_Heli_Transport_02_Heavy_F": {
+"addon": "vehicle",
+"name": "I_UNO_Heli_Transport_02_Heavy_F",
+"ns": "cfgvehicles"
+},
+"Atlas_I_UNO_Heli_Transport_02_VIP_F": {
+"addon": "vehicle",
+"name": "I_UNO_Heli_Transport_02_VIP_F",
+"ns": "cfgvehicles"
+},
+"Atlas_Launch_PzF3_base_F": {
+"addon": "weapons",
+"name": "Launch_PzF3_base_F",
+"ns": "cfgweapons"
+},
+"Atlas_Launch_Pzf3_F": {
+"addon": "weapons",
+"name": "Launch_Pzf3_F",
+"ns": "cfgweapons"
+},
+"Atlas_O_T_Heli_Attack_04_F": {
+"addon": "vehicle",
+"name": "O_T_Heli_Attack_04_F",
+"ns": "cfgvehicles"
+},
+"Atlas_O_W_Heli_Attack_04_F": {
+"addon": "vehicle",
+"name": "O_W_Heli_Attack_04_F",
+"ns": "cfgvehicles"
+},
+"Atlas_R_DM12_HEAT": {
+"addon": "weapons",
+"name": "R_DM12_HEAT",
+"ns": "cfgammo"
+},
+"Atlas_R_DM22_HEAT": {
+"addon": "weapons",
+"name": "R_DM22_HEAT",
+"ns": "cfgammo"
+},
+"Atlas_R_DM32_HEAT_MP": {
+"addon": "weapons",
+"name": "R_DM32_HEAT_MP",
+"ns": "cfgammo"
+},
+"Atlas_U_B_D_JSOC_StealthUniform_F": {
+"addon": "uniform",
+"name": "U_B_D_JSOC_StealthUniform_F",
+"ns": "cfgweapons"
+},
+"Atlas_U_B_D_JSOC_StealthUniform_RolledUp_F": {
+"addon": "uniform",
+"name": "U_B_D_JSOC_StealthUniform_RolledUp_F",
+"ns": "cfgweapons"
+},
+"Atlas_U_B_H_Officer_F": {
+"addon": "uniform",
+"name": "U_B_H_Officer_F",
+"ns": "cfgweapons"
+},
+"Atlas_U_B_H_Soldier_commando_F": {
+"addon": "uniform",
+"name": "U_B_H_Soldier_commando_F",
+"ns": "cfgweapons"
+},
+"Atlas_U_B_JSOC_StealthUniform_F": {
+"addon": "uniform",
+"name": "U_B_JSOC_StealthUniform_F",
+"ns": "cfgweapons"
+},
+"Atlas_U_B_JSOC_StealthUniform_RolledUp_F": {
+"addon": "uniform",
+"name": "U_B_JSOC_StealthUniform_RolledUp_F",
+"ns": "cfgweapons"
+},
+"Atlas_U_B_T_JSOC_StealthUniform_F": {
+"addon": "uniform",
+"name": "U_B_T_JSOC_StealthUniform_F",
+"ns": "cfgweapons"
+},
+"Atlas_U_B_T_JSOC_StealthUniform_RolledUp_F": {
+"addon": "uniform",
+"name": "U_B_T_JSOC_StealthUniform_RolledUp_F",
+"ns": "cfgweapons"
+},
+"Atlas_U_UniformBDU_01_HI_F": {
+"addon": "uniform",
+"name": "U_UniformBDU_01_HI_F",
+"ns": "cfgweapons"
+},
+"Atlas_U_UniformBDU_01_oli_F": {
+"addon": "uniform",
+"name": "U_UniformBDU_01_oli_F",
+"ns": "cfgweapons"
+},
+"Atlas_U_UniformBDU_02_HI_F": {
+"addon": "uniform",
+"name": "U_UniformBDU_02_HI_F",
+"ns": "cfgweapons"
+},
+"Atlas_U_UniformBDU_02_oli_F": {
+"addon": "uniform",
+"name": "U_UniformBDU_02_oli_F",
+"ns": "cfgweapons"
+},
+"Atlas_UniformBDU_01_HI_F": {
+"addon": "uniform",
+"name": "UniformBDU_01_HI_F",
+"ns": "cfgvehicles"
+},
+"Atlas_UniformBDU_01_oli_F": {
+"addon": "uniform",
+"name": "UniformBDU_01_oli_F",
+"ns": "cfgvehicles"
+},
+"Atlas_UniformBDU_02_HI_F": {
+"addon": "uniform",
+"name": "UniformBDU_02_HI_F",
+"ns": "cfgvehicles"
+},
+"Atlas_UniformBDU_02_oli_F": {
+"addon": "uniform",
+"name": "UniformBDU_02_oli_F",
+"ns": "cfgvehicles"
+},
+"Atlas_ammo_DM12_HEAT_penetrator": {
+"addon": "weapons",
+"name": "ammo_DM12_HEAT_penetrator",
+"ns": "cfgammo"
+},
+"Atlas_ammo_DM22_HEAT_penetrator": {
+"addon": "weapons",
+"name": "ammo_DM22_HEAT_penetrator",
+"ns": "cfgammo"
+},
+"Atlas_arifle_AKM74_GL_plum_ACO_FL_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_GL_plum_ACO_FL_F",
+"ns": "cfgweapons"
+},
+"Atlas_arifle_AKM74_GL_plum_FL_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_GL_plum_FL_F",
+"ns": "cfgweapons"
+},
+"Atlas_arifle_AKM74_GL_plum_MRCO_FL_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_GL_plum_MRCO_FL_F",
+"ns": "cfgweapons"
+},
+"Atlas_arifle_AKM74_plum_ACO_FL_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_plum_ACO_FL_F",
+"ns": "cfgweapons"
+},
+"Atlas_arifle_AKM74_plum_FL_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_plum_FL_F",
+"ns": "cfgweapons"
+},
+"Atlas_arifle_AKM74_plum_MRCO_FL_F": {
+"addon": "weapons",
+"name": "arifle_AKM74_plum_MRCO_FL_F",
+"ns": "cfgweapons"
+},
+"Atlas_arifle_MXC_Holo_IR_Snds_F": {
+"addon": "weapons",
+"name": "arifle_MXC_Holo_IR_Snds_F",
+"ns": "cfgweapons"
+},
+"Atlas_arifle_MXC_khk_Holo_IR_Snds_F": {
+"addon": "weapons",
+"name": "arifle_MXC_khk_Holo_IR_Snds_F",
+"ns": "cfgweapons"
+},
+"Atlas_arifle_MX_HAMR_IR_Snds_F": {
+"addon": "weapons",
+"name": "arifle_MX_HAMR_IR_Snds_F",
+"ns": "cfgweapons"
+},
+"Atlas_arifle_MX_khk_HAMR_IR_Snds_F": {
+"addon": "weapons",
+"name": "arifle_MX_khk_HAMR_IR_Snds_F",
+"ns": "cfgweapons"
+},
+"Atlas_arifle_famasF1_GL_F": {
+"addon": "weapons",
+"name": "arifle_famasF1_GL_F",
+"ns": "cfgweapons"
+},
+"Atlas_hgun_G17_black_Snds_F": {
+"addon": "weapons",
+"name": "hgun_G17_black_snds_F",
+"ns": "cfgweapons"
+},
+"Atlas_recoil_PzF3": {
+"addon": "weapons",
+"name": "recoil_PzF3",
+"ns": "cfgrecoils"
+},
+"Atlas_sgun_M4_Holo_FL_F": {
+"addon": "weapons",
+"name": "sgun_M4_Holo_FL_F",
+"ns": "cfgweapons"
+},
+"Atlas_srifle_DMR_06_black_khs_bipod_F": {
+"addon": "weapons",
+"name": "srifle_DMR_06_black_khs_bipod_F",
+"ns": "cfgweapons"
+},
+"B_12Gauge_Pellets_Submunition_Cartridge": {
+"addon": "weapons",
+"name": "B_12Gauge_Pellets_Submunition_Cartridge",
+"ns": "cfgammo"
+},
+"B_25mm_Tracer_Yellow": {
+"addon": "vehicle",
+"name": "B_25mm_Tracer_Yellow",
+"ns": "cfgammo"
+},
+"B_25x40mm_HE": {
+"addon": "weapons",
+"name": "B_25x40mm_HE",
+"ns": "cfgammo"
+},
+"B_25x40mm_airburst": {
+"addon": "weapons",
+"name": "B_25x40mm_airburst",
+"ns": "cfgammo"
+},
+"B_25x40mm_base": {
+"addon": "weapons",
+"name": "B_25x40mm_base",
+"ns": "cfgammo"
+},
+"B_460x30_Ball": {
+"addon": "weapons",
+"name": "B_460x30_Ball",
+"ns": "cfgammo"
+},
+"B_A_Ejection_Seat_Plane_Fighter_05_F": {
+"addon": "vehicle",
+"name": "B_A_Ejection_Seat_Plane_Fighter_05_F",
+"ns": "cfgvehicles"
+},
+"B_A_Ejection_Seat_Plane_Fighter_05_tna_F": {
+"addon": "vehicle",
+"name": "B_A_Ejection_Seat_Plane_Fighter_05_tna_F",
+"ns": "cfgvehicles"
+},
+"B_A_Ejection_Seat_Plane_Fighter_05_wdl_F": {
+"addon": "vehicle",
+"name": "B_A_Ejection_Seat_Plane_Fighter_05_wdl_F",
+"ns": "cfgvehicles"
+},
+"B_A_Fighter_Pilot_F": {
+"addon": "uniform",
+"name": "B_A_Fighter_Pilot_F",
+"ns": "cfgvehicles"
+},
+"B_A_Heli_Attack_03_wdl_F": {
+"addon": "vehicle",
+"name": "B_A_Heli_Attack_03_wdl_F",
+"ns": "cfgvehicles"
+},
+"B_A_Heli_Transport_02_wdl_F": {
+"addon": "vehicle",
+"name": "B_A_Heli_Transport_02_wdl_F",
+"ns": "cfgvehicles"
+},
+"B_A_Pilot_F": {
+"addon": "uniform",
+"name": "B_A_Pilot_F",
+"ns": "cfgvehicles"
+},
+"B_A_Plane_Fighter_05_Cluster_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Fighter_05_Cluster_F",
+"ns": "cfgvehicles"
+},
+"B_A_Plane_Fighter_05_Cluster_tna_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Fighter_05_Cluster_tna_F",
+"ns": "cfgvehicles"
+},
+"B_A_Plane_Fighter_05_Cluster_wdl_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Fighter_05_Cluster_wdl_F",
+"ns": "cfgvehicles"
+},
+"B_A_Plane_Fighter_05_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Fighter_05_F",
+"ns": "cfgvehicles"
+},
+"B_A_Plane_Fighter_05_Stealth_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Fighter_05_Stealth_F",
+"ns": "cfgvehicles"
+},
+"B_A_Plane_Fighter_05_Stealth_tna_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Fighter_05_Stealth_tna_F",
+"ns": "cfgvehicles"
+},
+"B_A_Plane_Fighter_05_Stealth_wdl_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Fighter_05_Stealth_wdl_F",
+"ns": "cfgvehicles"
+},
+"B_A_Plane_Fighter_05_tna_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Fighter_05_tna_F",
+"ns": "cfgvehicles"
+},
+"B_A_Plane_Fighter_05_wdl_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Fighter_05_wdl_F",
+"ns": "cfgvehicles"
+},
+"B_A_Plane_Transport_01_infantry_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Transport_01_infantry_F",
+"ns": "cfgvehicles"
+},
+"B_A_Plane_Transport_01_infantry_tna_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Transport_01_infantry_tna_F",
+"ns": "cfgvehicles"
+},
+"B_A_Plane_Transport_01_infantry_wdl_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Transport_01_infantry_wdl_F",
+"ns": "cfgvehicles"
+},
+"B_A_Plane_Transport_01_vehicle_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Transport_01_vehicle_F",
+"ns": "cfgvehicles"
+},
+"B_A_Plane_Transport_01_vehicle_tna_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Transport_01_vehicle_tna_F",
+"ns": "cfgvehicles"
+},
+"B_A_Plane_Transport_01_vehicle_wdl_F": {
+"addon": "vehicle",
+"name": "B_A_Plane_Transport_01_vehicle_wdl_F",
+"ns": "cfgvehicles"
+},
+"B_AssaultPackSpec_Base": {
+"addon": "uniform",
+"name": "B_AssaultPackSpec_Base",
+"ns": "cfgvehicles"
+},
+"B_AssaultPackSpec_mcamo": {
+"addon": "uniform",
+"name": "B_AssaultPackSpec_mcamo",
+"ns": "cfgvehicles"
+},
+"B_AssaultPack_Enh_tna_F": {
+"addon": "uniform",
+"name": "B_AssaultPack_Enh_tna_F",
+"ns": "cfgvehicles"
+},
+"B_Carryall_jungle": {
+"addon": "uniform",
+"name": "B_Carryall_jungle",
+"ns": "cfgvehicles"
+},
+"B_Carryall_jungle_BHAmmo_F": {
+"addon": "uniform",
+"name": "B_Carryall_jungle_BHAmmo_F",
+"ns": "cfgvehicles"
+},
+"B_Carryall_jungle_BHEng_F": {
+"addon": "uniform",
+"name": "B_Carryall_jungle_BHEng_F",
+"ns": "cfgvehicles"
+},
+"B_Carryall_jungle_BHExp_F": {
+"addon": "uniform",
+"name": "B_Carryall_jungle_BHExp_F",
+"ns": "cfgvehicles"
+},
+"B_Carryall_oicamo_OCDAAA_F": {
+"addon": "uniform",
+"name": "B_Carryall_oicamo_OCDAAA_F",
+"ns": "cfgvehicles"
+},
+"B_Carryall_oicamo_OCDAAR_F": {
+"addon": "uniform",
+"name": "B_Carryall_oicamo_OCDAAR_F",
+"ns": "cfgvehicles"
+},
+"B_Carryall_oicamo_OCDAAT_F": {
+"addon": "uniform",
+"name": "B_Carryall_oicamo_OCDAAT_F",
+"ns": "cfgvehicles"
+},
+"B_Carryall_oicamo_OCDAHAT_F": {
+"addon": "uniform",
+"name": "B_Carryall_oicamo_OCDAHAT_F",
+"ns": "cfgvehicles"
+},
+"B_Carryall_oicamo_OCDAmmo_F": {
+"addon": "uniform",
+"name": "B_Carryall_oicamo_OCDAmmo_F",
+"ns": "cfgvehicles"
+},
+"B_D_AFV_Wheeled_01_cannon_F": {
+"addon": "vehicle",
+"name": "B_D_AFV_Wheeled_01_cannon_F",
+"ns": "cfgvehicles"
+},
+"B_D_AFV_Wheeled_01_up_cannon_F": {
+"addon": "vehicle",
+"name": "B_D_AFV_Wheeled_01_up_cannon_F",
+"ns": "cfgvehicles"
+},
+"B_D_Ejection_Seat_Plane_Fighter_01_F": {
+"addon": "vehicle",
+"name": "B_D_Ejection_Seat_Plane_Fighter_01_F",
+"ns": "cfgvehicles"
+},
+"B_D_Ejection_Seat_Plane_Fighter_05_F": {
+"addon": "vehicle",
+"name": "B_D_Ejection_Seat_Plane_Fighter_05_F",
+"ns": "cfgvehicles"
+},
+"B_D_MBT_01_TUSK_lxWS": {
+"addon": "vehicle",
+"name": "B_D_MBT_01_TUSK_lxWS",
+"ns": "cfgvehicles"
+},
+"B_D_MBT_01_arty_lxWS": {
+"addon": "vehicle",
+"name": "B_D_MBT_01_arty_lxWS",
+"ns": "cfgvehicles"
+},
+"B_D_MBT_01_cannon_lxWS": {
+"addon": "vehicle",
+"name": "B_D_MBT_01_cannon_lxWS",
+"ns": "cfgvehicles"
+},
+"B_D_MBT_01_mlrs_lxWS": {
+"addon": "vehicle",
+"name": "B_D_MBT_01_mlrs_lxWS",
+"ns": "cfgvehicles"
+},
+"B_D_Pilot_lxWS": {
+"addon": "uniform",
+"name": "B_D_Pilot_lxWS",
+"ns": "cfgvehicles"
+},
+"B_D_Plane_Fighter_01_F": {
+"addon": "vehicle",
+"name": "B_D_Plane_Fighter_01_F",
+"ns": "cfgvehicles"
+},
+"B_D_Plane_Fighter_01_Stealth_F": {
+"addon": "vehicle",
+"name": "B_D_Plane_Fighter_01_Stealth_F",
+"ns": "cfgvehicles"
+},
+"B_D_Plane_Fighter_05_F": {
+"addon": "vehicle",
+"name": "B_D_Plane_Fighter_05_F",
+"ns": "cfgvehicles"
+},
+"B_D_Plane_Fighter_05_Stealth_F": {
+"addon": "vehicle",
+"name": "B_D_Plane_Fighter_05_Stealth_F",
+"ns": "cfgvehicles"
+},
+"B_D_VTOL_01_armed_F": {
+"addon": "vehicle",
+"name": "B_D_VTOL_01_armed_F",
+"ns": "cfgvehicles"
+},
+"B_D_VTOL_01_infantry_F": {
+"addon": "vehicle",
+"name": "B_D_VTOL_01_infantry_F",
+"ns": "cfgvehicles"
+},
+"B_D_VTOL_01_vehicle_F": {
+"addon": "vehicle",
+"name": "B_D_VTOL_01_vehicle_F",
+"ns": "cfgvehicles"
+},
+"B_D_recon_AR_lxWS": {
+"addon": "uniform",
+"name": "B_D_recon_AR_lxWS",
+"ns": "cfgvehicles"
+},
+"B_D_recon_JTAC_lxWS": {
+"addon": "uniform",
+"name": "B_D_recon_JTAC_lxWS",
+"ns": "cfgvehicles"
+},
+"B_D_recon_LAT_lxWS": {
+"addon": "uniform",
+"name": "B_D_recon_LAT_lxWS",
+"ns": "cfgvehicles"
+},
+"B_D_recon_M_lxWS": {
+"addon": "uniform",
+"name": "B_D_recon_M_lxWS",
+"ns": "cfgvehicles"
+},
+"B_D_recon_TL_lxWS": {
+"addon": "uniform",
+"name": "B_D_recon_TL_lxWS",
+"ns": "cfgvehicles"
+},
+"B_D_recon_exp_lxWS": {
+"addon": "uniform",
+"name": "B_D_recon_exp_lxWS",
+"ns": "cfgvehicles"
+},
+"B_D_recon_lxWS": {
+"addon": "uniform",
+"name": "B_D_recon_lxWS",
+"ns": "cfgvehicles"
+},
+"B_D_recon_medic_lxWS": {
+"addon": "uniform",
+"name": "B_D_recon_medic_lxWS",
+"ns": "cfgvehicles"
+},
+"B_Ejection_Seat_Plane_Fighter_05_F": {
+"addon": "vehicle",
+"name": "B_Ejection_Seat_Plane_Fighter_05_F",
+"ns": "cfgvehicles"
+},
+"B_FieldPack_oicamo": {
+"addon": "uniform",
+"name": "B_FieldPack_oicamo",
+"ns": "cfgvehicles"
+},
+"B_FieldPack_oicamo_AA_F": {
+"addon": "uniform",
+"name": "B_FieldPack_oicamo_AA_F",
+"ns": "cfgvehicles"
+},
+"B_FieldPack_oicamo_AT_F": {
+"addon": "uniform",
+"name": "B_FieldPack_oicamo_AT_F",
+"ns": "cfgvehicles"
+},
+"B_FieldPack_oicamo_HAT_F": {
+"addon": "uniform",
+"name": "B_FieldPack_oicamo_HAT_F",
+"ns": "cfgvehicles"
+},
+"B_FieldPack_oicamo_LAT_F": {
+"addon": "uniform",
+"name": "B_FieldPack_oicamo_LAT_F",
+"ns": "cfgvehicles"
+},
+"B_FieldPack_oicamo_Medic_F": {
+"addon": "uniform",
+"name": "B_FieldPack_oicamo_Medic_F",
+"ns": "cfgvehicles"
+},
+"B_FieldPack_oicamo_RepSpec_F": {
+"addon": "uniform",
+"name": "B_FieldPack_oicamo_RepSpec_F",
+"ns": "cfgvehicles"
+},
+"B_Heli_Transport_01_medevac_F": {
+"addon": "vehicle",
+"name": "B_Heli_Transport_01_medevac_F",
+"ns": "cfgvehicles"
+},
+"B_LSV_01_light_F": {
+"addon": "vehicle",
+"name": "B_LSV_01_light_F",
+"ns": "cfgvehicles"
+},
+"B_Plane_Fighter_05_Cluster_F": {
+"addon": "vehicle",
+"name": "B_Plane_Fighter_05_Cluster_F",
+"ns": "cfgvehicles"
+},
+"B_Plane_Fighter_05_F": {
+"addon": "vehicle",
+"name": "B_Plane_Fighter_05_F",
+"ns": "cfgvehicles"
+},
+"B_Plane_Fighter_05_Stealth_F": {
+"addon": "vehicle",
+"name": "B_Plane_Fighter_05_Stealth_F",
+"ns": "cfgvehicles"
+},
+"B_Plane_Transport_01_infantry_F": {
+"addon": "vehicle",
+"name": "B_Plane_Transport_01_infantry_F",
+"ns": "cfgvehicles"
+},
+"B_Plane_Transport_01_vehicle_F": {
+"addon": "vehicle",
+"name": "B_Plane_Transport_01_vehicle_F",
+"ns": "cfgvehicles"
+},
+"B_RadioBag_01_commando_F": {
+"addon": "uniform",
+"name": "B_RadioBag_01_commando_F",
+"ns": "cfgvehicles"
+},
+"B_RadioBag_01_coyote_F": {
+"addon": "uniform",
+"name": "B_RadioBag_01_coyote_F",
+"ns": "cfgvehicles"
+},
+"B_RadioBag_01_jungle_F": {
+"addon": "uniform",
+"name": "B_RadioBag_01_jungle_F",
+"ns": "cfgvehicles"
+},
+"B_RadioBag_01_oicamo_F": {
+"addon": "uniform",
+"name": "B_RadioBag_01_oicamo_F",
+"ns": "cfgvehicles"
+},
+"B_RadioOperator_F": {
+"addon": "uniform",
+"name": "B_RadioOperator_F",
+"ns": "cfgvehicles"
+},
+"B_Soldier_CBRN_F": {
+"addon": "uniform",
+"name": "B_Soldier_CBRN_F",
+"ns": "cfgvehicles"
+},
+"B_Soldier_CQ_F": {
+"addon": "uniform",
+"name": "B_Soldier_CQ_F",
+"ns": "cfgvehicles"
+},
+"B_Soldier_MG_F": {
+"addon": "uniform",
+"name": "B_Soldier_MG_F",
+"ns": "cfgvehicles"
+},
+"B_T_Ejection_Seat_Plane_Fighter_05_F": {
+"addon": "vehicle",
+"name": "B_T_Ejection_Seat_Plane_Fighter_05_F",
+"ns": "cfgvehicles"
+},
+"B_T_Plane_Fighter_05_Cluster_F": {
+"addon": "vehicle",
+"name": "B_T_Plane_Fighter_05_Cluster_F",
+"ns": "cfgvehicles"
+},
+"B_T_Plane_Fighter_05_F": {
+"addon": "vehicle",
+"name": "B_T_Plane_Fighter_05_F",
+"ns": "cfgvehicles"
+},
+"B_T_Plane_Fighter_05_Stealth_F": {
+"addon": "vehicle",
+"name": "B_T_Plane_Fighter_05_Stealth_F",
+"ns": "cfgvehicles"
+},
+"B_T_Plane_Transport_01_infantry_F": {
+"addon": "vehicle",
+"name": "B_T_Plane_Transport_01_infantry_F",
+"ns": "cfgvehicles"
+},
+"B_T_Plane_Transport_01_vehicle_F": {
+"addon": "vehicle",
+"name": "B_T_Plane_Transport_01_vehicle_F",
+"ns": "cfgvehicles"
+},
+"B_TacticalPack_oli_BHLAT_F": {
+"addon": "uniform",
+"name": "B_TacticalPack_oli_BHLAT_F",
+"ns": "cfgvehicles"
+},
+"B_TacticalPack_oli_BHMedic_F": {
+"addon": "uniform",
+"name": "B_TacticalPack_oli_BHMedic_F",
+"ns": "cfgvehicles"
+},
+"B_TacticalPack_rgr_BALAT_F": {
+"addon": "uniform",
+"name": "B_TacticalPack_rgr_BALAT_F",
+"ns": "cfgvehicles"
+},
+"B_TacticalPack_rgr_BAReconMedic_F": {
+"addon": "uniform",
+"name": "B_TacticalPack_rgr_BAReconMedic_F",
+"ns": "cfgvehicles"
+},
+"B_VTOL_01_armed_F": {
+"addon": "vehicle",
+"name": "B_VTOL_01_armed_F",
+"ns": "cfgvehicles"
+},
+"B_VTOL_01_infantry_F": {
+"addon": "vehicle",
+"name": "B_VTOL_01_infantry_F",
+"ns": "cfgvehicles"
+},
+"B_VTOL_01_vehicle_F": {
+"addon": "vehicle",
+"name": "B_VTOL_01_vehicle_F",
+"ns": "cfgvehicles"
+},
+"B_W_Ejection_Seat_Plane_Fighter_05_F": {
+"addon": "vehicle",
+"name": "B_W_Ejection_Seat_Plane_Fighter_05_F",
+"ns": "cfgvehicles"
+},
+"B_W_Plane_Fighter_05_Cluster_F": {
+"addon": "vehicle",
+"name": "B_W_Plane_Fighter_05_Cluster_F",
+"ns": "cfgvehicles"
+},
+"B_W_Plane_Fighter_05_F": {
+"addon": "vehicle",
+"name": "B_W_Plane_Fighter_05_F",
+"ns": "cfgvehicles"
+},
+"B_W_Plane_Fighter_05_Stealth_F": {
+"addon": "vehicle",
+"name": "B_W_Plane_Fighter_05_Stealth_F",
+"ns": "cfgvehicles"
+},
+"B_W_Plane_Transport_01_infantry_F": {
+"addon": "vehicle",
+"name": "B_W_Plane_Transport_01_infantry_F",
+"ns": "cfgvehicles"
+},
+"B_W_Plane_Transport_01_vehicle_F": {
+"addon": "vehicle",
+"name": "B_W_Plane_Transport_01_vehicle_F",
+"ns": "cfgvehicles"
+},
+"B_W_UAV_05_F": {
+"addon": "vehicle",
+"name": "B_W_UAV_05_F",
+"ns": "cfgvehicles"
+},
+"B_carryall_oicamo": {
+"addon": "uniform",
+"name": "B_carryall_oicamo",
+"ns": "cfgvehicles"
+},
+"B_carryall_oicamo_Eng_F": {
+"addon": "uniform",
+"name": "B_carryall_oicamo_Eng_F",
+"ns": "cfgvehicles"
+},
+"B_carryall_oicamo_Exp_F": {
+"addon": "uniform",
+"name": "B_carryall_oicamo_Exp_F",
+"ns": "cfgvehicles"
+},
+"B_ghillie_spotter_ard_F": {
+"addon": "uniform",
+"name": "B_ghillie_spotter_ard_F",
+"ns": "cfgvehicles"
+},
+"B_ghillie_spotter_lsh_F": {
+"addon": "uniform",
+"name": "B_ghillie_spotter_lsh_F",
+"ns": "cfgvehicles"
+},
+"B_ghillie_spotter_sard_F": {
+"addon": "uniform",
+"name": "B_ghillie_spotter_sard_F",
+"ns": "cfgvehicles"
+},
+"B_recon_AR_F": {
+"addon": "uniform",
+"name": "B_recon_AR_F",
+"ns": "cfgvehicles"
+},
+"B_recon_CQ_F": {
+"addon": "uniform",
+"name": "B_recon_CQ_F",
+"ns": "cfgvehicles"
+},
+"B_recon_GL_F": {
+"addon": "uniform",
+"name": "B_recon_GL_F",
+"ns": "cfgvehicles"
+},
+"B_recon_MG_F": {
+"addon": "uniform",
+"name": "B_recon_MG_F",
+"ns": "cfgvehicles"
+},
+"Boat_Civil_02_base_F": {
+"addon": "vehicle",
+"name": "Boat_Civil_02_base_F",
+"ns": "cfgvehicles"
+},
+"CMFlareLauncher_Quadruples": {
+"addon": "vehicle",
+"name": "CMFlareLauncher_Quadruples",
+"ns": "cfgweapons"
+},
+"C_Boat_Civil_02_F": {
+"addon": "vehicle",
+"name": "C_Boat_Civil_02_F",
+"ns": "cfgvehicles"
+},
+"Driver_APC_Wheeled_04_in": {
+"addon": "vehicle",
+"name": "Driver_APC_Wheeled_04_in",
+"ns": "cfgmovesmalesdr"
+},
+"Driver_APC_Wheeled_04_out": {
+"addon": "vehicle",
+"name": "Driver_APC_Wheeled_04_out",
+"ns": "cfgmovesmalesdr"
+},
+"Driver_Boat_Civil_02": {
+"addon": "vehicle",
+"name": "Driver_Boat_Civil_02",
+"ns": "cfgmovesmalesdr"
+},
+"EdSubcat_Personnel_JSOC": {
+"addon": "vehicle",
+"name": "EdSubcat_Personnel_JSOC",
+"ns": "cfgeditorsubcategories"
+},
+"EdSubcat_TankDestroyers": {
+"addon": "vehicle",
+"name": "EdSubcat_TankDestroyers",
+"ns": "cfgeditorsubcategories"
+},
+"Ejection_Seat_Plane_Fighter_05_base_F": {
+"addon": "vehicle",
+"name": "Ejection_Seat_Plane_Fighter_05_base_F",
+"ns": "cfgvehicles"
+},
+"FxCartridge_25x40": {
+"addon": "weapons",
+"name": "FxCartridge_25x40",
+"ns": "cfgvehicles"
+},
+"FxCartridge_pellets": {
+"addon": "weapons",
+"name": "FxCartridge_pellets",
+"ns": "cfgvehicles"
+},
+"G17_9x21": {
+"addon": "weapons",
+"name": "G17_9x21",
+"ns": "cfgmagazinewells"
+},
+"G17_Closure_SoundShader": {
+"addon": "weapons",
+"name": "G17_Closure_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G17_InteriorTail_SoundSet": {
+"addon": "weapons",
+"name": "G17_InteriorTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"G17_Shot_SoundSet": {
+"addon": "weapons",
+"name": "G17_Shot_SoundSet",
+"ns": "cfgsoundsets"
+},
+"G17_Tail_SoundSet": {
+"addon": "weapons",
+"name": "G17_Tail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"G17_closeShot_SoundShader": {
+"addon": "weapons",
+"name": "G17_closeShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G17_distShot_SoundShader": {
+"addon": "weapons",
+"name": "G17_distShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G17_midShot_SoundShader": {
+"addon": "weapons",
+"name": "G17_midShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G17_silencerInteriorTail_SoundSet": {
+"addon": "weapons",
+"name": "G17_silencerInteriorTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"G17_silencerShot_SoundSet": {
+"addon": "weapons",
+"name": "G17_silencerShot_SoundSet",
+"ns": "cfgsoundsets"
+},
+"G17_silencerShot_SoundShader": {
+"addon": "weapons",
+"name": "G17_silencerShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G17_silencerTailForest_SoundShader": {
+"addon": "weapons",
+"name": "G17_silencerTailForest_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G17_silencerTailHouses_SoundShader": {
+"addon": "weapons",
+"name": "G17_silencerTailHouses_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G17_silencerTailInterior_SoundShader": {
+"addon": "weapons",
+"name": "G17_silencerTailInterior_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G17_silencerTailMeadows_SoundShader": {
+"addon": "weapons",
+"name": "G17_silencerTailMeadows_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G17_silencerTailTrees_SoundShader": {
+"addon": "weapons",
+"name": "G17_silencerTailTrees_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G17_silencerTail_SoundSet": {
+"addon": "weapons",
+"name": "G17_silencerTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"G17_tailDistant_SoundShader": {
+"addon": "weapons",
+"name": "G17_tailDistant_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G17_tailForest_SoundShader": {
+"addon": "weapons",
+"name": "G17_tailForest_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G17_tailHouses_SoundShader": {
+"addon": "weapons",
+"name": "G17_tailHouses_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G17_tailInterior_SoundShader": {
+"addon": "weapons",
+"name": "G17_tailInterior_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G17_tailMeadows_SoundShader": {
+"addon": "weapons",
+"name": "G17_tailMeadows_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G17_tailTrees_SoundShader": {
+"addon": "weapons",
+"name": "G17_tailTrees_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G36_Closure_SoundShader": {
+"addon": "weapons",
+"name": "G36_Closure_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G36_InteriorTail_SoundSet": {
+"addon": "weapons",
+"name": "G36_InteriorTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"G36_Shot_SoundSet": {
+"addon": "weapons",
+"name": "G36_Shot_SoundSet",
+"ns": "cfgsoundsets"
+},
+"G36_Tail_SoundSet": {
+"addon": "weapons",
+"name": "G36_Tail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"G36_closeShot_SoundShader": {
+"addon": "weapons",
+"name": "G36_closeShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G36_distShot_SoundShader": {
+"addon": "weapons",
+"name": "G36_distShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G36_midShot_SoundShader": {
+"addon": "weapons",
+"name": "G36_midShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G36_silencerInteriorTail_SoundSet": {
+"addon": "weapons",
+"name": "G36_silencerInteriorTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"G36_silencerShot_SoundSet": {
+"addon": "weapons",
+"name": "G36_silencerShot_SoundSet",
+"ns": "cfgsoundsets"
+},
+"G36_silencerShot_SoundShader": {
+"addon": "weapons",
+"name": "G36_silencerShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G36_silencerTailForest_SoundShader": {
+"addon": "weapons",
+"name": "G36_silencerTailForest_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G36_silencerTailHouses_SoundShader": {
+"addon": "weapons",
+"name": "G36_silencerTailHouses_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G36_silencerTailInterior_SoundShader": {
+"addon": "weapons",
+"name": "G36_silencerTailInterior_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G36_silencerTailMeadows_SoundShader": {
+"addon": "weapons",
+"name": "G36_silencerTailMeadows_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G36_silencerTailTrees_SoundShader": {
+"addon": "weapons",
+"name": "G36_silencerTailTrees_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G36_silencerTail_SoundSet": {
+"addon": "weapons",
+"name": "G36_silencerTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"G36_tailForest_SoundShader": {
+"addon": "weapons",
+"name": "G36_tailForest_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G36_tailHouses_SoundShader": {
+"addon": "weapons",
+"name": "G36_tailHouses_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G36_tailInterior_SoundShader": {
+"addon": "weapons",
+"name": "G36_tailInterior_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G36_tailMeadows_SoundShader": {
+"addon": "weapons",
+"name": "G36_tailMeadows_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"G36_tailTrees_SoundShader": {
+"addon": "weapons",
+"name": "G36_tailTrees_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"GL_M32_F": {
+"addon": "weapons",
+"name": "GL_M32_F",
+"ns": "cfgweapons"
+},
+"GL_XM25_F": {
+"addon": "weapons",
+"name": "GL_XM25_F",
+"ns": "cfgweapons"
+},
+"G_40mm_APERSMine": {
+"addon": "weapons",
+"name": "G_40mm_APERSMine",
+"ns": "cfgammo"
+},
+"G_40mm_HEDP_Submunition": {
+"addon": "weapons",
+"name": "G_40mm_HEDP_Submunition",
+"ns": "cfgammo"
+},
+"G_Balaclava_light_MTP_F": {
+"addon": "uniform",
+"name": "G_Balaclava_light_MTP_F",
+"ns": "cfgglasses"
+},
+"G_Balaclava_light_blk_F": {
+"addon": "uniform",
+"name": "G_Balaclava_light_blk_F",
+"ns": "cfgglasses"
+},
+"G_Balaclava_light_tropic_F": {
+"addon": "uniform",
+"name": "G_Balaclava_light_tropic_F",
+"ns": "cfgglasses"
+},
+"G_O_R_Diving": {
+"addon": "uniform",
+"name": "G_O_R_Diving",
+"ns": "cfgglasses"
+},
+"Gatling_30mm_HE_Plane_CAS_01_Yellow_F": {
+"addon": "vehicle",
+"name": "Gatling_30mm_HE_Plane_CAS_01_Yellow_F",
+"ns": "cfgammo"
+},
+"Gatling_30mm_Heli_Attack_03_F": {
+"addon": "vehicle",
+"name": "Gatling_30mm_Heli_Attack_03_F",
+"ns": "cfgweapons"
+},
+"GestureReloadAKM74": {
+"addon": "weapons",
+"name": "GestureReloadAKM74",
+"ns": "cfggesturesmale"
+},
+"GestureReloadAKM74Context": {
+"addon": "weapons",
+"name": "GestureReloadAKM74Context",
+"ns": "cfggesturesmale"
+},
+"GestureReloadAKM74Prone": {
+"addon": "weapons",
+"name": "GestureReloadAKM74Prone",
+"ns": "cfggesturesmale"
+},
+"GestureReloadFAMAS": {
+"addon": "weapons",
+"name": "GestureReloadFAMAS",
+"ns": "cfggesturesmale"
+},
+"GestureReloadFAMASContext": {
+"addon": "weapons",
+"name": "GestureReloadFAMASContext",
+"ns": "cfggesturesmale"
+},
+"GestureReloadFAMASProne": {
+"addon": "weapons",
+"name": "GestureReloadFAMASProne",
+"ns": "cfggesturesmale"
+},
+"GestureReloadFAMASUGL": {
+"addon": "weapons",
+"name": "GestureReloadFAMASUGL",
+"ns": "cfggesturesmale"
+},
+"GestureReloadFAMASUGLContext": {
+"addon": "weapons",
+"name": "GestureReloadFAMASUGLContext",
+"ns": "cfggesturesmale"
+},
+"GestureReloadFAMASUGLProne": {
+"addon": "weapons",
+"name": "GestureReloadFAMASUGLProne",
+"ns": "cfggesturesmale"
+},
+"GestureReloadG36": {
+"addon": "weapons",
+"name": "GestureReloadG36",
+"ns": "cfggesturesmale"
+},
+"GestureReloadG36Context": {
+"addon": "weapons",
+"name": "GestureReloadG36Context",
+"ns": "cfggesturesmale"
+},
+"GestureReloadG36Prone": {
+"addon": "weapons",
+"name": "GestureReloadG36Prone",
+"ns": "cfggesturesmale"
+},
+"GestureReloadGepard": {
+"addon": "weapons",
+"name": "GestureReloadGepard",
+"ns": "cfggesturesmale"
+},
+"GestureReloadGepardContext": {
+"addon": "weapons",
+"name": "GestureReloadGepardContext",
+"ns": "cfggesturesmale"
+},
+"GestureReloadGepardProne": {
+"addon": "weapons",
+"name": "GestureReloadGepardProne",
+"ns": "cfggesturesmale"
+},
+"GestureReloadSA80": {
+"addon": "weapons",
+"name": "GestureReloadSA80",
+"ns": "cfggesturesmale"
+},
+"GestureReloadSA80Context": {
+"addon": "weapons",
+"name": "GestureReloadSA80Context",
+"ns": "cfggesturesmale"
+},
+"GestureReloadSA80Prone": {
+"addon": "weapons",
+"name": "GestureReloadSA80Prone",
+"ns": "cfggesturesmale"
+},
+"GrenadeHandEast": {
+"addon": "weapons",
+"name": "GrenadeHandEast",
+"ns": "cfgammo"
+},
+"GrenadeHandGuer": {
+"addon": "vehicle",
+"name": "GrenadeHandGuer",
+"ns": "cfgammo"
+},
+"Gunner_APC_Wheeled_04_in": {
+"addon": "vehicle",
+"name": "Gunner_APC_Wheeled_04_in",
+"ns": "cfgmovesmalesdr"
+},
+"Gunner_APC_Wheeled_04_out": {
+"addon": "vehicle",
+"name": "Gunner_APC_Wheeled_04_out",
+"ns": "cfgmovesmalesdr"
+},
+"H_Booniehat_jungle": {
+"addon": "headware",
+"name": "H_Booniehat_jungle",
+"ns": "cfgweapons"
+},
+"H_Booniehat_mcamo_hs": {
+"addon": "headware",
+"name": "H_Booniehat_mcamo_hs",
+"ns": "cfgweapons"
+},
+"H_HelmetHBK_commando_F": {
+"addon": "headware",
+"name": "H_HelmetHBK_commando_F",
+"ns": "cfgweapons"
+},
+"H_HelmetHBK_commando_headset_F": {
+"addon": "headware",
+"name": "H_HelmetHBK_commando_headset_F",
+"ns": "cfgweapons"
+},
+"H_HelmetLeaderO_oicamo": {
+"addon": "headware",
+"name": "H_HelmetLeaderO_oicamo",
+"ns": "cfgweapons"
+},
+"H_HelmetO_oicamo": {
+"addon": "headware",
+"name": "H_HelmetO_oicamo",
+"ns": "cfgweapons"
+},
+"H_HelmetSpecB_light": {
+"addon": "headware",
+"name": "H_HelmetSpecB_light",
+"ns": "cfgweapons"
+},
+"H_HelmetSpecB_light_sand": {
+"addon": "headware",
+"name": "H_HelmetSpecB_light_sand",
+"ns": "cfgweapons"
+},
+"H_HelmetSpecB_light_snakeskin": {
+"addon": "headware",
+"name": "H_HelmetSpecB_light_snakeskin",
+"ns": "cfgweapons"
+},
+"H_HelmetSpecO_oicamo": {
+"addon": "headware",
+"name": "H_HelmetSpecO_oicamo",
+"ns": "cfgweapons"
+},
+"H_I_Helmet_canvas_Green": {
+"addon": "headware",
+"name": "H_I_Helmet_canvas_Green",
+"ns": "cfgweapons"
+},
+"H_MilCap_jungle": {
+"addon": "headware",
+"name": "H_MilCap_jungle",
+"ns": "cfgweapons"
+},
+"H_MilCap_oicamo": {
+"addon": "headware",
+"name": "H_MilCap_oicamo",
+"ns": "cfgweapons"
+},
+"H_Watchcap_camo_hs": {
+"addon": "headware",
+"name": "H_Watchcap_camo_hs",
+"ns": "cfgweapons"
+},
+"HandGrenade_East": {
+"addon": "weapons",
+"name": "HandGrenade_East",
+"ns": "cfgmagazines"
+},
+"HandGrenade_Guer": {
+"addon": "vehicle",
+"name": "HandGrenade_Guer",
+"ns": "cfgmagazines"
+},
+"Heli_Attack_03_Gunner": {
+"addon": "vehicle",
+"name": "Heli_Attack_03_Gunner",
+"ns": "cfgmovesmalesdr"
+},
+"Heli_Attack_03_base_F": {
+"addon": "vehicle",
+"name": "Heli_Attack_03_base_F",
+"ns": "cfgvehicles"
+},
+"Heli_Attack_03_pilot": {
+"addon": "vehicle",
+"name": "Heli_Attack_03_pilot",
+"ns": "cfgmovesmalesdr"
+},
+"Heli_Attack_04_Gunner": {
+"addon": "vehicle",
+"name": "Heli_Attack_04_Gunner",
+"ns": "cfgmovesmalesdr"
+},
+"Heli_Attack_04_pilot": {
+"addon": "vehicle",
+"name": "Heli_Attack_04_pilot",
+"ns": "cfgmovesmalesdr"
+},
+"Heli_Transport_01_medevac_base_F": {
+"addon": "vehicle",
+"name": "Heli_Transport_01_medevac_base_F",
+"ns": "cfgvehicles"
+},
+"I_Heli_Attack_03_F": {
+"addon": "vehicle",
+"name": "I_Heli_Attack_03_F",
+"ns": "cfgvehicles"
+},
+"I_I_Ejection_Seat_Plane_Fighter_05_F": {
+"addon": "vehicle",
+"name": "I_I_Ejection_Seat_Plane_Fighter_05_F",
+"ns": "cfgvehicles"
+},
+"I_I_Plane_Fighter_05_F": {
+"addon": "vehicle",
+"name": "I_I_Plane_Fighter_05_F",
+"ns": "cfgvehicles"
+},
+"I_I_Plane_Fighter_05_Stealth_F": {
+"addon": "vehicle",
+"name": "I_I_Plane_Fighter_05_Stealth_F",
+"ns": "cfgvehicles"
+},
+"I_Plane_Transport_01_infantry_F": {
+"addon": "vehicle",
+"name": "I_Plane_Transport_01_infantry_F",
+"ns": "cfgvehicles"
+},
+"I_Plane_Transport_01_vehicle_F": {
+"addon": "vehicle",
+"name": "I_Plane_Transport_01_vehicle_F",
+"ns": "cfgvehicles"
+},
+"KIA_Driver_APC_Wheeled_04": {
+"addon": "vehicle",
+"name": "KIA_Driver_APC_Wheeled_04",
+"ns": "cfgmovesmalesdr"
+},
+"KIA_Driver_Boat_Civil_02": {
+"addon": "vehicle",
+"name": "KIA_Driver_Boat_Civil_02",
+"ns": "cfgmovesmalesdr"
+},
+"KIA_Gunner_APC_Wheeled_04": {
+"addon": "vehicle",
+"name": "KIA_Gunner_APC_Wheeled_04",
+"ns": "cfgmovesmalesdr"
+},
+"KIA_Heli_Attack_03_gunner": {
+"addon": "vehicle",
+"name": "KIA_Heli_Attack_03_gunner",
+"ns": "cfgmovesmalesdr"
+},
+"KIA_Heli_Attack_03_pilot": {
+"addon": "vehicle",
+"name": "KIA_Heli_Attack_03_pilot",
+"ns": "cfgmovesmalesdr"
+},
+"KIA_Heli_Attack_04_gunner": {
+"addon": "vehicle",
+"name": "KIA_Heli_Attack_04_gunner",
+"ns": "cfgmovesmalesdr"
+},
+"KIA_Heli_Attack_04_pilot": {
+"addon": "vehicle",
+"name": "KIA_Heli_Attack_04_pilot",
+"ns": "cfgmovesmalesdr"
+},
+"KIA_Passenger_Heli_Attack_04": {
+"addon": "vehicle",
+"name": "KIA_Passenger_Heli_Attack_04",
+"ns": "cfgmovesmalesdr"
+},
+"KIA_Passenger_Plane_Transport_01": {
+"addon": "vehicle",
+"name": "KIA_Passenger_Plane_Transport_01",
+"ns": "cfgmovesmalesdr"
+},
+"KIA_Pilot_Plane_Transport_01": {
+"addon": "vehicle",
+"name": "KIA_Pilot_Plane_Transport_01",
+"ns": "cfgmovesmalesdr"
+},
+"KSG_Closure_SoundShader": {
+"addon": "weapons",
+"name": "KSG_Closure_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"KSG_Pump_SoundShader": {
+"addon": "weapons",
+"name": "KSG_Pump_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"KSG_Shot_SoundSet": {
+"addon": "weapons",
+"name": "KSG_Shot_SoundSet",
+"ns": "cfgsoundsets"
+},
+"KSG_Tail_SoundSet": {
+"addon": "weapons",
+"name": "KSG_Tail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"KSG_closeShot_SoundShader": {
+"addon": "weapons",
+"name": "KSG_closeShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"KSG_distShot_SoundShader": {
+"addon": "weapons",
+"name": "KSG_distShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"KSG_interiorTail_SoundSet": {
+"addon": "weapons",
+"name": "KSG_interiorTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"KSG_midShot_SoundShader": {
+"addon": "weapons",
+"name": "KSG_midShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"KSG_tailForest_SoundShader": {
+"addon": "weapons",
+"name": "KSG_tailForest_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"KSG_tailHouses_SoundShader": {
+"addon": "weapons",
+"name": "KSG_tailHouses_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"KSG_tailInterior_SoundShader": {
+"addon": "weapons",
+"name": "KSG_tailInterior_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"KSG_tailMeadows_SoundShader": {
+"addon": "weapons",
+"name": "KSG_tailMeadows_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"KSG_tailTrees_SoundShader": {
+"addon": "weapons",
+"name": "KSG_tailTrees_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"L85A3_InteriorTail_SoundSet": {
+"addon": "weapons",
+"name": "L85A3_InteriorTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"L85A3_Shot_SoundSet": {
+"addon": "weapons",
+"name": "L85A3_Shot_SoundSet",
+"ns": "cfgsoundsets"
+},
+"L85A3_Tail_SoundSet": {
+"addon": "weapons",
+"name": "L85A3_Tail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"L85A3_closeShot_SoundShader": {
+"addon": "weapons",
+"name": "L85A3_closeShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"L85A3_closure_SoundShader": {
+"addon": "weapons",
+"name": "L85A3_closure_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"L85A3_distShot_SoundShader": {
+"addon": "weapons",
+"name": "L85A3_distShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"L85A3_midShot_SoundShader": {
+"addon": "weapons",
+"name": "L85A3_midShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"L85A3_silencerInteriorTail_SoundSet": {
+"addon": "weapons",
+"name": "L85A3_silencerInteriorTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"L85A3_silencerShot_SoundSet": {
+"addon": "weapons",
+"name": "L85A3_silencerShot_SoundSet",
+"ns": "cfgsoundsets"
+},
+"L85A3_silencerShot_SoundShader": {
+"addon": "weapons",
+"name": "L85A3_silencerShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"L85A3_silencerTailForest_SoundShader": {
+"addon": "weapons",
+"name": "L85A3_silencerTailForest_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"L85A3_silencerTailHouses_SoundShader": {
+"addon": "weapons",
+"name": "L85A3_silencerTailHouses_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"L85A3_silencerTailInterior_SoundShader": {
+"addon": "weapons",
+"name": "L85A3_silencerTailInterior_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"L85A3_silencerTailMeadows_SoundShader": {
+"addon": "weapons",
+"name": "L85A3_silencerTailMeadows_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"L85A3_silencerTailTrees_SoundShader": {
+"addon": "weapons",
+"name": "L85A3_silencerTailTrees_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"L85A3_silencerTail_SoundSet": {
+"addon": "weapons",
+"name": "L85A3_silencerTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"L85A3_tailDistant_SoundShader": {
+"addon": "weapons",
+"name": "L85A3_tailDistant_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"L85A3_tailForest_SoundShader": {
+"addon": "weapons",
+"name": "L85A3_tailForest_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"L85A3_tailHouses_SoundShader": {
+"addon": "weapons",
+"name": "L85A3_tailHouses_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"L85A3_tailInterior_SoundShader": {
+"addon": "weapons",
+"name": "L85A3_tailInterior_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"L85A3_tailMeadows_SoundShader": {
+"addon": "weapons",
+"name": "L85A3_tailMeadows_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"L85A3_tailTrees_SoundShader": {
+"addon": "weapons",
+"name": "L85A3_tailTrees_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"LMG_03_Flash_F": {
+"addon": "weapons",
+"name": "LMG_03_Flash_F",
+"ns": "cfgweapons"
+},
+"LMG_Mk200_khk_ACOG_Snds_IR_F": {
+"addon": "weapons",
+"name": "LMG_Mk200_khk_ACOG_Snds_IR_F",
+"ns": "cfgweapons"
+},
+"LMG_Mk200_khk_F": {
+"addon": "weapons",
+"name": "LMG_Mk200_khk_F",
+"ns": "cfgweapons"
+},
+"LMG_Mk200_plain_F": {
+"addon": "weapons",
+"name": "LMG_Mk200_plain_F",
+"ns": "cfgweapons"
+},
+"LMG_Mk200_plain_RCO_LP_F": {
+"addon": "weapons",
+"name": "LMG_Mk200_plain_RCO_LP_F",
+"ns": "cfgweapons"
+},
+"LMG_Mk200_plain_RCO_LP_S_F": {
+"addon": "weapons",
+"name": "LMG_Mk200_plain_RCO_LP_S_F",
+"ns": "cfgweapons"
+},
+"LMG_Zafir_ARCO_pointer_snds_F": {
+"addon": "weapons",
+"name": "LMG_Zafir_ARCO_pointer_snds_F",
+"ns": "cfgweapons"
+},
+"M32_40x36": {
+"addon": "weapons",
+"name": "M32_40x36",
+"ns": "cfgmagazinewells"
+},
+"M4_SSAS_Closure_SoundShader": {
+"addon": "weapons",
+"name": "M4_SSAS_Closure_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"M4_SSAS_Shot_SoundSet": {
+"addon": "weapons",
+"name": "M4_SSAS_Shot_SoundSet",
+"ns": "cfgsoundsets"
+},
+"M4_SSAS_Tail_SoundSet": {
+"addon": "weapons",
+"name": "M4_SSAS_Tail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"M4_SSAS_closeShot_SoundShader": {
+"addon": "weapons",
+"name": "M4_SSAS_closeShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"M4_SSAS_distShot_SoundShader": {
+"addon": "weapons",
+"name": "M4_SSAS_distShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"M4_SSAS_interiorTail_SoundSet": {
+"addon": "weapons",
+"name": "M4_SSAS_interiorTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"M4_SSAS_midShot_SoundShader": {
+"addon": "weapons",
+"name": "M4_SSAS_midShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"M4_SSAS_tailForest_SoundShader": {
+"addon": "weapons",
+"name": "M4_SSAS_tailForest_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"M4_SSAS_tailHouses_SoundShader": {
+"addon": "weapons",
+"name": "M4_SSAS_tailHouses_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"M4_SSAS_tailInterior_SoundShader": {
+"addon": "weapons",
+"name": "M4_SSAS_tailInterior_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"M4_SSAS_tailMeadows_SoundShader": {
+"addon": "weapons",
+"name": "M4_SSAS_tailMeadows_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"M4_SSAS_tailTrees_SoundShader": {
+"addon": "weapons",
+"name": "M4_SSAS_tailTrees_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"MMG_01_ghex_ARCO_LP_F": {
+"addon": "weapons",
+"name": "MMG_01_ghex_ARCO_LP_F",
+"ns": "cfgweapons"
+},
+"MMG_01_ghex_F": {
+"addon": "weapons",
+"name": "MMG_01_ghex_F",
+"ns": "cfgweapons"
+},
+"MP153_12GA": {
+"addon": "weapons",
+"name": "MP153_12GA",
+"ns": "cfgmagazinewells"
+},
+"MP153_Closure_SoundShader": {
+"addon": "weapons",
+"name": "MP153_Closure_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"MP153_Shot_SoundSet": {
+"addon": "weapons",
+"name": "MP153_Shot_SoundSet",
+"ns": "cfgsoundsets"
+},
+"MP153_Tail_SoundSet": {
+"addon": "weapons",
+"name": "MP153_Tail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"MP153_closeShot_SoundShader": {
+"addon": "weapons",
+"name": "MP153_closeShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"MP153_distShot_SoundShader": {
+"addon": "weapons",
+"name": "MP153_distShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"MP153_interiorTail_SoundSet": {
+"addon": "weapons",
+"name": "MP153_interiorTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"MP153_midShot_SoundShader": {
+"addon": "weapons",
+"name": "MP153_midShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"MP153_tailForest_SoundShader": {
+"addon": "weapons",
+"name": "MP153_tailForest_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"MP153_tailHouses_SoundShader": {
+"addon": "weapons",
+"name": "MP153_tailHouses_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"MP153_tailInterior_SoundShader": {
+"addon": "weapons",
+"name": "MP153_tailInterior_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"MP153_tailMeadows_SoundShader": {
+"addon": "weapons",
+"name": "MP153_tailMeadows_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"MP153_tailTrees_SoundShader": {
+"addon": "weapons",
+"name": "MP153_tailTrees_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"M_Vikhr_AT": {
+"addon": "vehicle",
+"name": "M_Vikhr_AT",
+"ns": "cfgammo"
+},
+"Mk26_127x33": {
+"addon": "weapons",
+"name": "Mk26_127x33",
+"ns": "cfgmagazinewells"
+},
+"Mk26_Closure_SoundShader": {
+"addon": "weapons",
+"name": "Mk26_Closure_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Mk26_InteriorTail_SoundSet": {
+"addon": "weapons",
+"name": "Mk26_InteriorTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Mk26_Shot_SoundSet": {
+"addon": "weapons",
+"name": "Mk26_Shot_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Mk26_Tail_SoundSet": {
+"addon": "weapons",
+"name": "Mk26_Tail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Mk26_closeShot_SoundShader": {
+"addon": "weapons",
+"name": "Mk26_closeShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Mk26_distShot_SoundShader": {
+"addon": "weapons",
+"name": "Mk26_distShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Mk26_midShot_SoundShader": {
+"addon": "weapons",
+"name": "Mk26_midShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Mk26_tailForest_SoundShader": {
+"addon": "weapons",
+"name": "Mk26_tailForest_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Mk26_tailHouses_SoundShader": {
+"addon": "weapons",
+"name": "Mk26_tailHouses_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Mk26_tailInterior_SoundShader": {
+"addon": "weapons",
+"name": "Mk26_tailInterior_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Mk26_tailMeadows_SoundShader": {
+"addon": "weapons",
+"name": "Mk26_tailMeadows_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Mk26_tailTrees_SoundShader": {
+"addon": "weapons",
+"name": "Mk26_tailTrees_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"O_C_D_Sniper_oicamo_F": {
+"addon": "uniform",
+"name": "O_C_D_Sniper_oicamo_F",
+"ns": "cfgvehicles"
+},
+"O_Fatigues_01_oicamo_F": {
+"addon": "uniform",
+"name": "O_Fatigues_01_oicamo_F",
+"ns": "cfgvehicles"
+},
+"O_NVGoggles_blk_F": {
+"addon": "uniform",
+"name": "O_NVGoggles_blk_F",
+"ns": "cfgweapons"
+},
+"O_OfficerFatigues_01_oicamo_F": {
+"addon": "uniform",
+"name": "O_OfficerFatigues_01_oicamo_F",
+"ns": "cfgvehicles"
+},
+"O_Plane_Transport_01_infantry_F": {
+"addon": "vehicle",
+"name": "O_Plane_Transport_01_infantry_F",
+"ns": "cfgvehicles"
+},
+"O_Plane_Transport_01_vehicle_F": {
+"addon": "vehicle",
+"name": "O_Plane_Transport_01_vehicle_F",
+"ns": "cfgvehicles"
+},
+"O_R_AA_01_weapon_F": {
+"addon": "vehicle",
+"name": "O_R_AA_01_weapon_F",
+"ns": "cfgvehicles"
+},
+"O_R_APC_Tracked_02_medical_F": {
+"addon": "vehicle",
+"name": "O_R_APC_Tracked_02_medical_F",
+"ns": "cfgvehicles"
+},
+"O_R_APC_Tracked_02_medical_ard_F": {
+"addon": "vehicle",
+"name": "O_R_APC_Tracked_02_medical_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_APC_Wheeled_04_cannon_v2_F": {
+"addon": "vehicle",
+"name": "O_R_APC_Wheeled_04_cannon_v2_F",
+"ns": "cfgvehicles"
+},
+"O_R_APC_Wheeled_04_cannon_v2_ard_F": {
+"addon": "vehicle",
+"name": "O_R_APC_Wheeled_04_cannon_v2_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_Ejection_Seat_Plane_Fighter_02_F": {
+"addon": "vehicle",
+"name": "O_R_Ejection_Seat_Plane_Fighter_02_F",
+"ns": "cfgvehicles"
+},
+"O_R_Ejection_Seat_Plane_Fighter_02_ard_F": {
+"addon": "vehicle",
+"name": "O_R_Ejection_Seat_Plane_Fighter_02_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_HMG_01_support_F": {
+"addon": "vehicle",
+"name": "O_R_HMG_01_support_F",
+"ns": "cfgvehicles"
+},
+"O_R_Heli_Transport_04_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Transport_04_F",
+"ns": "cfgvehicles"
+},
+"O_R_Heli_Transport_04_ammo_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Transport_04_ammo_F",
+"ns": "cfgvehicles"
+},
+"O_R_Heli_Transport_04_ammo_ard_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Transport_04_ammo_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_Heli_Transport_04_ard_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Transport_04_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_Heli_Transport_04_bench_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Transport_04_bench_F",
+"ns": "cfgvehicles"
+},
+"O_R_Heli_Transport_04_bench_ard_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Transport_04_bench_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_Heli_Transport_04_box_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Transport_04_box_F",
+"ns": "cfgvehicles"
+},
+"O_R_Heli_Transport_04_box_ard_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Transport_04_box_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_Heli_Transport_04_covered_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Transport_04_covered_F",
+"ns": "cfgvehicles"
+},
+"O_R_Heli_Transport_04_covered_ard_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Transport_04_covered_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_Heli_Transport_04_fuel_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Transport_04_fuel_F",
+"ns": "cfgvehicles"
+},
+"O_R_Heli_Transport_04_fuel_ard_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Transport_04_fuel_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_Heli_Transport_04_medevac_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Transport_04_medevac_F",
+"ns": "cfgvehicles"
+},
+"O_R_Heli_Transport_04_medevac_ard_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Transport_04_medevac_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_Heli_Transport_04_repair_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Transport_04_repair_F",
+"ns": "cfgvehicles"
+},
+"O_R_Heli_Transport_04_repair_ard_F": {
+"addon": "vehicle",
+"name": "O_R_Heli_Transport_04_repair_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_MBT_02_arty_F": {
+"addon": "vehicle",
+"name": "O_R_MBT_02_arty_F",
+"ns": "cfgvehicles"
+},
+"O_R_MBT_02_arty_ard_F": {
+"addon": "vehicle",
+"name": "O_R_MBT_02_arty_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_Plane_Fighter_02_F": {
+"addon": "vehicle",
+"name": "O_R_Plane_Fighter_02_F",
+"ns": "cfgvehicles"
+},
+"O_R_Plane_Fighter_02_Stealth_F": {
+"addon": "vehicle",
+"name": "O_R_Plane_Fighter_02_Stealth_F",
+"ns": "cfgvehicles"
+},
+"O_R_Plane_Fighter_02_Stealth_ard_F": {
+"addon": "vehicle",
+"name": "O_R_Plane_Fighter_02_Stealth_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_Plane_Fighter_02_ard_F": {
+"addon": "vehicle",
+"name": "O_R_Plane_Fighter_02_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_Radar_System_02_F": {
+"addon": "vehicle",
+"name": "O_R_Radar_System_02_F",
+"ns": "cfgvehicles"
+},
+"O_R_Radar_System_02_ard_F": {
+"addon": "vehicle",
+"name": "O_R_Radar_System_02_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_SAM_System_04_F": {
+"addon": "vehicle",
+"name": "O_R_SAM_System_04_F",
+"ns": "cfgvehicles"
+},
+"O_R_SAM_System_04_ard_F": {
+"addon": "vehicle",
+"name": "O_R_SAM_System_04_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_SDV_01_F": {
+"addon": "vehicle",
+"name": "O_R_SDV_01_F",
+"ns": "cfgvehicles"
+},
+"O_R_SDV_01_ard_F": {
+"addon": "vehicle",
+"name": "O_R_SDV_01_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_Soldier_diver_base": {
+"addon": "uniform",
+"name": "O_R_Soldier_diver_base",
+"ns": "cfgvehicles"
+},
+"O_R_Static_AA_F": {
+"addon": "vehicle",
+"name": "O_R_Static_AA_F",
+"ns": "cfgvehicles"
+},
+"O_R_Static_AA_ard_F": {
+"addon": "vehicle",
+"name": "O_R_Static_AA_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_UAV_01_F": {
+"addon": "vehicle",
+"name": "O_R_UAV_01_F",
+"ns": "cfgvehicles"
+},
+"O_R_UAV_01_backpack_F": {
+"addon": "vehicle",
+"name": "O_R_UAV_01_backpack_F",
+"ns": "cfgvehicles"
+},
+"O_R_UAV_02_dynamicLoadout_F": {
+"addon": "vehicle",
+"name": "O_R_UAV_02_dynamicLoadout_F",
+"ns": "cfgvehicles"
+},
+"O_R_UAV_02_dynamicLoadout_ard_F": {
+"addon": "vehicle",
+"name": "O_R_UAV_02_dynamicLoadout_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_UGV_01_F": {
+"addon": "vehicle",
+"name": "O_R_UGV_01_F",
+"ns": "cfgvehicles"
+},
+"O_R_UGV_01_ard_F": {
+"addon": "vehicle",
+"name": "O_R_UGV_01_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_UGV_01_medical_F": {
+"addon": "vehicle",
+"name": "O_R_UGV_01_medical_F",
+"ns": "cfgvehicles"
+},
+"O_R_UGV_01_medical_ard_F": {
+"addon": "vehicle",
+"name": "O_R_UGV_01_medical_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_UGV_01_rcws_F": {
+"addon": "vehicle",
+"name": "O_R_UGV_01_rcws_F",
+"ns": "cfgvehicles"
+},
+"O_R_UGV_01_rcws_ard_F": {
+"addon": "vehicle",
+"name": "O_R_UGV_01_rcws_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_Wetsuit_01_F": {
+"addon": "uniform",
+"name": "O_R_Wetsuit_01_F",
+"ns": "cfgvehicles"
+},
+"O_R_diver_F": {
+"addon": "uniform",
+"name": "O_R_diver_F",
+"ns": "cfgvehicles"
+},
+"O_R_diver_TL_F": {
+"addon": "uniform",
+"name": "O_R_diver_TL_F",
+"ns": "cfgvehicles"
+},
+"O_R_diver_TL_ard_F": {
+"addon": "uniform",
+"name": "O_R_diver_TL_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_diver_ard_F": {
+"addon": "uniform",
+"name": "O_R_diver_ard_F",
+"ns": "cfgvehicles"
+},
+"O_R_diver_exp_F": {
+"addon": "uniform",
+"name": "O_R_diver_exp_F",
+"ns": "cfgvehicles"
+},
+"O_R_diver_exp_ard_F": {
+"addon": "uniform",
+"name": "O_R_diver_exp_ard_F",
+"ns": "cfgvehicles"
+},
+"O_RadioOperator_F": {
+"addon": "uniform",
+"name": "O_RadioOperator_F",
+"ns": "cfgvehicles"
+},
+"O_Soldier_CBRN_F": {
+"addon": "uniform",
+"name": "O_Soldier_CBRN_F",
+"ns": "cfgvehicles"
+},
+"O_Soldier_CQ_F": {
+"addon": "uniform",
+"name": "O_Soldier_CQ_F",
+"ns": "cfgvehicles"
+},
+"O_T_Fighter_Pilot_F": {
+"addon": "uniform",
+"name": "O_T_Fighter_Pilot_F",
+"ns": "cfgvehicles"
+},
+"O_T_HeavyGunner_F": {
+"addon": "uniform",
+"name": "O_T_HeavyGunner_F",
+"ns": "cfgvehicles"
+},
+"O_T_Pathfinder_F": {
+"addon": "uniform",
+"name": "O_T_Pathfinder_F",
+"ns": "cfgvehicles"
+},
+"O_T_Plane_Transport_01_infantry_ghex_F": {
+"addon": "vehicle",
+"name": "O_T_Plane_Transport_01_infantry_ghex_F",
+"ns": "cfgvehicles"
+},
+"O_T_Plane_Transport_01_vehicle_ghex_F": {
+"addon": "vehicle",
+"name": "O_T_Plane_Transport_01_vehicle_ghex_F",
+"ns": "cfgvehicles"
+},
+"O_T_RadioOperator_F": {
+"addon": "uniform",
+"name": "O_T_RadioOperator_F",
+"ns": "cfgvehicles"
+},
+"O_T_Recon_AR_F": {
+"addon": "uniform",
+"name": "O_T_Recon_AR_F",
+"ns": "cfgvehicles"
+},
+"O_T_Recon_CQ_F": {
+"addon": "uniform",
+"name": "O_T_Recon_CQ_F",
+"ns": "cfgvehicles"
+},
+"O_T_Recon_GL_F": {
+"addon": "uniform",
+"name": "O_T_Recon_GL_F",
+"ns": "cfgvehicles"
+},
+"O_T_Sharpshooter_F": {
+"addon": "uniform",
+"name": "O_T_Sharpshooter_F",
+"ns": "cfgvehicles"
+},
+"O_T_Soldier_CBRN_F": {
+"addon": "uniform",
+"name": "O_T_Soldier_CBRN_F",
+"ns": "cfgvehicles"
+},
+"O_T_Soldier_CQ_F": {
+"addon": "uniform",
+"name": "O_T_Soldier_CQ_F",
+"ns": "cfgvehicles"
+},
+"O_T_Soldier_Lite_F": {
+"addon": "uniform",
+"name": "O_T_Soldier_Lite_F",
+"ns": "cfgvehicles"
+},
+"O_T_Soldier_UAV_02_lxWS_F": {
+"addon": "uniform",
+"name": "O_T_Soldier_UAV_02_lxWS_F",
+"ns": "cfgvehicles"
+},
+"O_T_Survivor_F": {
+"addon": "uniform",
+"name": "O_T_Survivor_F",
+"ns": "cfgvehicles"
+},
+"O_T_ghillie_spotter_tna_F": {
+"addon": "uniform",
+"name": "O_T_ghillie_spotter_tna_F",
+"ns": "cfgvehicles"
+},
+"O_T_soldier_UGV_02_Demining_F": {
+"addon": "uniform",
+"name": "O_T_soldier_UGV_02_Demining_F",
+"ns": "cfgvehicles"
+},
+"O_VTOL_02_infantry_dynamicLoadout_F": {
+"addon": "vehicle",
+"name": "O_VTOL_02_infantry_dynamicLoadout_F",
+"ns": "cfgvehicles"
+},
+"O_VTOL_02_vehicle_dynamicLoadout_F": {
+"addon": "vehicle",
+"name": "O_VTOL_02_vehicle_dynamicLoadout_F",
+"ns": "cfgvehicles"
+},
+"O_ghillie_spotter_ard_F": {
+"addon": "uniform",
+"name": "O_ghillie_spotter_ard_F",
+"ns": "cfgvehicles"
+},
+"O_ghillie_spotter_lsh_F": {
+"addon": "uniform",
+"name": "O_ghillie_spotter_lsh_F",
+"ns": "cfgvehicles"
+},
+"O_ghillie_spotter_sard_F": {
+"addon": "uniform",
+"name": "O_ghillie_spotter_sard_F",
+"ns": "cfgvehicles"
+},
+"O_recon_AR_F": {
+"addon": "uniform",
+"name": "O_recon_AR_F",
+"ns": "cfgvehicles"
+},
+"O_recon_CQ_F": {
+"addon": "uniform",
+"name": "O_recon_CQ_F",
+"ns": "cfgvehicles"
+},
+"O_recon_GL_F": {
+"addon": "uniform",
+"name": "O_recon_GL_F",
+"ns": "cfgvehicles"
+},
+"O_soldier_UGV_02_Demining_F": {
+"addon": "uniform",
+"name": "O_soldier_UGV_02_Demining_F",
+"ns": "cfgvehicles"
+},
+"Opf_O_P_APC_Wheeled_04_export_F": {
+"addon": "vehicle",
+"name": "O_P_APC_Wheeled_04_export_F",
+"ns": "cfgvehicles"
+},
+"Opf_O_S_APC_Wheeled_04_export_F": {
+"addon": "vehicle",
+"name": "O_S_APC_Wheeled_04_export_F",
+"ns": "cfgvehicles"
+},
+"Opf_O_S_Heli_Attack_04_F": {
+"addon": "vehicle",
+"name": "O_S_Heli_Attack_04_F",
+"ns": "cfgvehicles"
+},
+"Passenger_Heli_Attack_04": {
+"addon": "vehicle",
+"name": "Passenger_Heli_Attack_04",
+"ns": "cfgmovesmalesdr"
+},
+"Passenger_Plane_Transport_01": {
+"addon": "vehicle",
+"name": "Passenger_Plane_Transport_01",
+"ns": "cfgmovesmalesdr"
+},
+"Pilot_Plane_Fighter_05": {
+"addon": "vehicle",
+"name": "Pilot_Plane_Fighter_05",
+"ns": "cfgmovesmalesdr"
+},
+"Pilot_Plane_Transport_01": {
+"addon": "vehicle",
+"name": "Pilot_Plane_Transport_01",
+"ns": "cfgmovesmalesdr"
+},
+"Plane_Civil_01_HIMF_F": {
+"addon": "vehicle",
+"name": "Plane_Civil_01_HIMF_F",
+"ns": "cfgvehicles"
+},
+"Plane_Fighter_05_Base_F": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_Base_F",
+"ns": "cfgvehicles"
+},
+"Plane_Fighter_05_Canopy_F": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_Canopy_F",
+"ns": "cfgvehicles"
+},
+"Plane_Fighter_05_EngineExt_Dist_Front_SoundSet": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_EngineExt_Dist_Front_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Plane_Fighter_05_EngineExt_Dist_Front_SoundShader": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_EngineExt_Dist_Front_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Plane_Fighter_05_EngineExt_Dist_Rear_SoundSet": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_EngineExt_Dist_Rear_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Plane_Fighter_05_EngineExt_Dist_Rear_SoundShader": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_EngineExt_Dist_Rear_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Plane_Fighter_05_EngineExt_Middle_SoundSet": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_EngineExt_Middle_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Plane_Fighter_05_EngineExt_Middle_SoundShader": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_EngineExt_Middle_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Plane_Fighter_05_EngineHighExt_SoundSet": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_EngineHighExt_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Plane_Fighter_05_EngineHighExt_SoundShader": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_EngineHighExt_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Plane_Fighter_05_EngineHighInt_SoundSet": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_EngineHighInt_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Plane_Fighter_05_EngineHighInt_SoundShader": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_EngineHighInt_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Plane_Fighter_05_EngineLowExt_SoundSet": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_EngineLowExt_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Plane_Fighter_05_EngineLowExt_SoundShader": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_EngineLowExt_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Plane_Fighter_05_EngineLowInt_SoundSet": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_EngineLowInt_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Plane_Fighter_05_EngineLowInt_SoundShader": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_EngineLowInt_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Plane_Fighter_05_ForsageExt_SoundSet": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_ForsageExt_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Plane_Fighter_05_ForsageExt_SoundShader": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_ForsageExt_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Plane_Fighter_05_ForsageInt_SoundSet": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_ForsageInt_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Plane_Fighter_05_ForsageInt_SoundShader": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_ForsageInt_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Plane_Fighter_05_VelocityInt_SoundSet": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_VelocityInt_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Plane_Fighter_05_VelocityInt_SoundShader": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_VelocityInt_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Plane_Fighter_05_WindNoiseExt_SoundSet": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_WindNoiseExt_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Plane_Fighter_05_WindNoiseExt_SoundShader": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_WindNoiseExt_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Plane_Fighter_05_WindNoiseInt_SoundSet": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_WindNoiseInt_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Plane_Fighter_05_WindNoiseInt_SoundShader": {
+"addon": "vehicle",
+"name": "Plane_Fighter_05_WindNoiseInt_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Plane_Fighter_GStress_SoundSet": {
+"addon": "vehicle",
+"name": "Plane_Fighter_GStress_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Plane_Fighter_GStress_SoundShader": {
+"addon": "vehicle",
+"name": "Plane_Fighter_GStress_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Plane_Fighter_RainExt_SoundSet": {
+"addon": "vehicle",
+"name": "Plane_Fighter_RainExt_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Plane_Fighter_RainExt_SoundShader": {
+"addon": "vehicle",
+"name": "Plane_Fighter_RainExt_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Plane_Fighter_RainInt_SoundSet": {
+"addon": "vehicle",
+"name": "Plane_Fighter_RainInt_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Plane_Fighter_RainInt_SoundShader": {
+"addon": "vehicle",
+"name": "Plane_Fighter_RainInt_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Plane_Fighter_SpeedStress_SoundSet": {
+"addon": "vehicle",
+"name": "Plane_Fighter_SpeedStress_SoundSet",
+"ns": "cfgsoundsets"
+},
+"Plane_Fighter_SpeedStress_SoundShader": {
+"addon": "vehicle",
+"name": "Plane_Fighter_SpeedStress_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"Plane_Transport_01_base_F": {
+"addon": "vehicle",
+"name": "Plane_Transport_01_base_F",
+"ns": "cfgvehicles"
+},
+"Plane_Transport_01_infantry_base_F": {
+"addon": "vehicle",
+"name": "Plane_Transport_01_infantry_base_F",
+"ns": "cfgvehicles"
+},
+"Plane_Transport_01_vehicle_base_F": {
+"addon": "vehicle",
+"name": "Plane_Transport_01_vehicle_base_F",
+"ns": "cfgvehicles"
+},
+"PylonMissile_Bomb_AGM_154_x1": {
+"addon": "vehicle",
+"name": "PylonMissile_Bomb_AGM_154_x1",
+"ns": "cfgmagazines"
+},
+"PylonRack_20Rnd_Rocket_80mm": {
+"addon": "vehicle",
+"name": "PylonRack_20Rnd_Rocket_80mm",
+"ns": "cfgmagazines"
+},
+"PylonRack_6Rnd_Vikhr_missiles": {
+"addon": "vehicle",
+"name": "PylonRack_6Rnd_Vikhr_missiles",
+"ns": "cfgmagazines"
+},
+"PylonWeapon_220Rnd_25mm_shells": {
+"addon": "vehicle",
+"name": "PylonWeapon_220Rnd_25mm_shells",
+"ns": "cfgmagazines"
+},
+"PylonWeapon_220Rnd_25mm_shells_yellow": {
+"addon": "vehicle",
+"name": "PylonWeapon_220Rnd_25mm_shells_yellow",
+"ns": "cfgmagazines"
+},
+"PylonWeapon_250Rnd_20mm_shells": {
+"addon": "vehicle",
+"name": "PylonWeapon_250Rnd_20mm_shells",
+"ns": "cfgmagazines"
+},
+"SCAR_InteriorTail_SoundSet": {
+"addon": "weapons",
+"name": "SCAR_InteriorTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"SCAR_Shot_SoundSet": {
+"addon": "weapons",
+"name": "SCAR_Shot_SoundSet",
+"ns": "cfgsoundsets"
+},
+"SCAR_Tail_SoundSet": {
+"addon": "weapons",
+"name": "SCAR_Tail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"SCAR_closeShot_SoundShader": {
+"addon": "weapons",
+"name": "SCAR_closeShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SCAR_closure_SoundShader": {
+"addon": "weapons",
+"name": "SCAR_closure_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SCAR_distShot_SoundShader": {
+"addon": "weapons",
+"name": "SCAR_distShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SCAR_midShot_SoundShader": {
+"addon": "weapons",
+"name": "SCAR_midShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SCAR_silencerInteriorTail_SoundSet": {
+"addon": "weapons",
+"name": "SCAR_silencerInteriorTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"SCAR_silencerShot_SoundSet": {
+"addon": "weapons",
+"name": "SCAR_silencerShot_SoundSet",
+"ns": "cfgsoundsets"
+},
+"SCAR_silencerShot_SoundShader": {
+"addon": "weapons",
+"name": "SCAR_silencerShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SCAR_silencerTailForest_SoundShader": {
+"addon": "weapons",
+"name": "SCAR_silencerTailForest_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SCAR_silencerTailHouses_SoundShader": {
+"addon": "weapons",
+"name": "SCAR_silencerTailHouses_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SCAR_silencerTailInterior_SoundShader": {
+"addon": "weapons",
+"name": "SCAR_silencerTailInterior_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SCAR_silencerTailMeadows_SoundShader": {
+"addon": "weapons",
+"name": "SCAR_silencerTailMeadows_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SCAR_silencerTailTrees_SoundShader": {
+"addon": "weapons",
+"name": "SCAR_silencerTailTrees_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SCAR_silencerTail_SoundSet": {
+"addon": "weapons",
+"name": "SCAR_silencerTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"SCAR_tailDistant_SoundShader": {
+"addon": "weapons",
+"name": "SCAR_tailDistant_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SCAR_tailForest_SoundShader": {
+"addon": "weapons",
+"name": "SCAR_tailForest_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SCAR_tailHouses_SoundShader": {
+"addon": "weapons",
+"name": "SCAR_tailHouses_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SCAR_tailInterior_SoundShader": {
+"addon": "weapons",
+"name": "SCAR_tailInterior_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SCAR_tailMeadows_SoundShader": {
+"addon": "weapons",
+"name": "SCAR_tailMeadows_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SCAR_tailTrees_SoundShader": {
+"addon": "weapons",
+"name": "SCAR_tailTrees_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SMG04_InteriorTail_SoundSet": {
+"addon": "weapons",
+"name": "SMG04_InteriorTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"SMG04_Shot_SoundSet": {
+"addon": "weapons",
+"name": "SMG04_Shot_SoundSet",
+"ns": "cfgsoundsets"
+},
+"SMG04_Tail_SoundSet": {
+"addon": "weapons",
+"name": "SMG04_Tail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"SMG04_closeShot_SoundShader": {
+"addon": "weapons",
+"name": "SMG04_closeShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SMG04_closure_SoundShader": {
+"addon": "weapons",
+"name": "SMG04_closure_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SMG04_distShot_SoundShader": {
+"addon": "weapons",
+"name": "SMG04_distShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SMG04_midShot_SoundShader": {
+"addon": "weapons",
+"name": "SMG04_midShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SMG04_silencerInteriorTail_SoundSet": {
+"addon": "weapons",
+"name": "SMG04_silencerInteriorTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"SMG04_silencerShot_SoundSet": {
+"addon": "weapons",
+"name": "SMG04_silencerShot_SoundSet",
+"ns": "cfgsoundsets"
+},
+"SMG04_silencerShot_SoundShader": {
+"addon": "weapons",
+"name": "SMG04_silencerShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SMG04_silencerTailForest_SoundShader": {
+"addon": "weapons",
+"name": "SMG04_silencerTailForest_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SMG04_silencerTailHouses_SoundShader": {
+"addon": "weapons",
+"name": "SMG04_silencerTailHouses_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SMG04_silencerTailInterior_SoundShader": {
+"addon": "weapons",
+"name": "SMG04_silencerTailInterior_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SMG04_silencerTailMeadows_SoundShader": {
+"addon": "weapons",
+"name": "SMG04_silencerTailMeadows_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SMG04_silencerTailTrees_SoundShader": {
+"addon": "weapons",
+"name": "SMG04_silencerTailTrees_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SMG04_silencerTail_SoundSet": {
+"addon": "weapons",
+"name": "SMG04_silencerTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"SMG04_tailDistant_SoundShader": {
+"addon": "weapons",
+"name": "SMG04_tailDistant_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SMG04_tailForest_SoundShader": {
+"addon": "weapons",
+"name": "SMG04_tailForest_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SMG04_tailHouses_SoundShader": {
+"addon": "weapons",
+"name": "SMG04_tailHouses_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SMG04_tailInterior_SoundShader": {
+"addon": "weapons",
+"name": "SMG04_tailInterior_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SMG04_tailMeadows_SoundShader": {
+"addon": "weapons",
+"name": "SMG04_tailMeadows_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SMG04_tailTrees_SoundShader": {
+"addon": "weapons",
+"name": "SMG04_tailTrees_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"SMG_01_black_F": {
+"addon": "weapons",
+"name": "SMG_01_black_F",
+"ns": "cfgweapons"
+},
+"SMG_01_black_Holo_F": {
+"addon": "weapons",
+"name": "SMG_01_black_Holo_F",
+"ns": "cfgweapons"
+},
+"SMG_01_khk_F": {
+"addon": "weapons",
+"name": "SMG_01_khk_F",
+"ns": "cfgweapons"
+},
+"SMG_04_460x30": {
+"addon": "weapons",
+"name": "SMG_04_460x30",
+"ns": "cfgmagazinewells"
+},
+"SMG_04_base_F": {
+"addon": "weapons",
+"name": "SMG_04_base_F",
+"ns": "cfgweapons"
+},
+"SMG_04_blk_F": {
+"addon": "weapons",
+"name": "SMG_04_blk_F",
+"ns": "cfgweapons"
+},
+"SMG_04_blk_Holo_F": {
+"addon": "weapons",
+"name": "SMG_04_blk_Holo_F",
+"ns": "cfgweapons"
+},
+"SMG_04_khk_F": {
+"addon": "weapons",
+"name": "SMG_04_khk_F",
+"ns": "cfgweapons"
+},
+"SMG_04_khk_Holo_F": {
+"addon": "weapons",
+"name": "SMG_04_khk_Holo_F",
+"ns": "cfgweapons"
+},
+"SMG_04_snd_F": {
+"addon": "weapons",
+"name": "SMG_04_snd_F",
+"ns": "cfgweapons"
+},
+"SMG_04_snd_Holo_F": {
+"addon": "weapons",
+"name": "SMG_04_snd_Holo_F",
+"ns": "cfgweapons"
+},
+"Shotgun_12GA": {
+"addon": "weapons",
+"name": "Shotgun_12GA",
+"ns": "cfgmagazinewells"
+},
+"UGV_01_medical_base_F": {
+"addon": "vehicle",
+"name": "UGV_01_medical_base_F",
+"ns": "cfgvehicles"
+},
+"U_O_C_D_Sniper_oicamo_F": {
+"addon": "uniform",
+"name": "U_O_C_D_Sniper_oicamo_F",
+"ns": "cfgweapons"
+},
+"U_O_CombatUniform_oicamo": {
+"addon": "uniform",
+"name": "U_O_CombatUniform_oicamo",
+"ns": "cfgweapons"
+},
+"U_O_OfficerUniform_oicamo": {
+"addon": "uniform",
+"name": "U_O_OfficerUniform_oicamo",
+"ns": "cfgweapons"
+},
+"U_O_R_Wetsuit": {
+"addon": "uniform",
+"name": "U_O_R_Wetsuit",
+"ns": "cfgweapons"
+},
+"U_O_T_Pilot_F": {
+"addon": "uniform",
+"name": "U_O_T_Pilot_F",
+"ns": "cfgweapons"
+},
+"V_HarnessOGL_oicamo": {
+"addon": "vests",
+"name": "V_HarnessOGL_oicamo",
+"ns": "cfgweapons"
+},
+"V_HarnessOSpec_ghex_F": {
+"addon": "vests",
+"name": "V_HarnessOSpec_ghex_F",
+"ns": "cfgweapons"
+},
+"V_HarnessOSpec_oicamo": {
+"addon": "vests",
+"name": "V_HarnessOSpec_oicamo",
+"ns": "cfgweapons"
+},
+"V_HarnessO_oicamo": {
+"addon": "vests",
+"name": "V_HarnessO_oicamo",
+"ns": "cfgweapons"
+},
+"V_PlateCarrier1_mtp": {
+"addon": "vests",
+"name": "V_PlateCarrier1_mtp",
+"ns": "cfgweapons"
+},
+"V_PlateCarrier2_mtp": {
+"addon": "vests",
+"name": "V_PlateCarrier2_mtp",
+"ns": "cfgweapons"
+},
+"V_PlateCarrier2_oli": {
+"addon": "vests",
+"name": "V_PlateCarrier2_oli",
+"ns": "cfgweapons"
+},
+"V_PlateCarrierIA1_oli": {
+"addon": "vests",
+"name": "V_PlateCarrierIA1_oli",
+"ns": "cfgweapons"
+},
+"V_PlateCarrierIA2_oli": {
+"addon": "vests",
+"name": "V_PlateCarrierIA2_oli",
+"ns": "cfgweapons"
+},
+"V_Rangemaster_belt_cbr": {
+"addon": "vests",
+"name": "V_Rangemaster_belt_cbr",
+"ns": "cfgweapons"
+},
+"V_RebreatherRU": {
+"addon": "vests",
+"name": "V_RebreatherRU",
+"ns": "cfgweapons"
+},
+"WF50_127x99": {
+"addon": "weapons",
+"name": "WF50_127x99",
+"ns": "cfgmagazinewells"
+},
+"WF50_Bolt_SoundShader": {
+"addon": "weapons",
+"name": "WF50_Bolt_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"WF50_Closure_SoundShader": {
+"addon": "weapons",
+"name": "WF50_Closure_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"WF50_InteriorTail_SoundSet": {
+"addon": "weapons",
+"name": "WF50_InteriorTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"WF50_Shot_SoundSet": {
+"addon": "weapons",
+"name": "WF50_Shot_SoundSet",
+"ns": "cfgsoundsets"
+},
+"WF50_Tail_SoundSet": {
+"addon": "weapons",
+"name": "WF50_Tail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"WF50_base_F": {
+"addon": "weapons",
+"name": "WF50_base_F",
+"ns": "cfgweapons"
+},
+"WF50_closeShot_SoundShader": {
+"addon": "weapons",
+"name": "WF50_closeShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"WF50_distShot_SoundShader": {
+"addon": "weapons",
+"name": "WF50_distShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"WF50_midShot_SoundShader": {
+"addon": "weapons",
+"name": "WF50_midShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"WF50_tailDistant_SoundShader": {
+"addon": "weapons",
+"name": "WF50_tailDistant_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"WF50_tailForest_SoundShader": {
+"addon": "weapons",
+"name": "WF50_tailForest_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"WF50_tailHouses_SoundShader": {
+"addon": "weapons",
+"name": "WF50_tailHouses_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"WF50_tailInterior_SoundShader": {
+"addon": "weapons",
+"name": "WF50_tailInterior_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"WF50_tailMeadows_SoundShader": {
+"addon": "weapons",
+"name": "WF50_tailMeadows_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"WF50_tailTrees_SoundShader": {
+"addon": "weapons",
+"name": "WF50_tailTrees_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"XM25_25x40": {
+"addon": "weapons",
+"name": "XM25_25x40",
+"ns": "cfgmagazinewells"
+},
+"XM25_Closure_SoundShader": {
+"addon": "weapons",
+"name": "XM25_Closure_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"XM25_InteriorTail_SoundSet": {
+"addon": "weapons",
+"name": "XM25_InteriorTail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"XM25_Shot_SoundSet": {
+"addon": "weapons",
+"name": "XM25_Shot_SoundSet",
+"ns": "cfgsoundsets"
+},
+"XM25_Tail_SoundSet": {
+"addon": "weapons",
+"name": "XM25_Tail_SoundSet",
+"ns": "cfgsoundsets"
+},
+"XM25_closeShot_SoundShader": {
+"addon": "weapons",
+"name": "XM25_closeShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"XM25_distShot_SoundShader": {
+"addon": "weapons",
+"name": "XM25_distShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"XM25_midShot_SoundShader": {
+"addon": "weapons",
+"name": "XM25_midShot_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"XM25_tailForest_SoundShader": {
+"addon": "weapons",
+"name": "XM25_tailForest_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"XM25_tailHouses_SoundShader": {
+"addon": "weapons",
+"name": "XM25_tailHouses_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"XM25_tailInterior_SoundShader": {
+"addon": "weapons",
+"name": "XM25_tailInterior_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"XM25_tailMeadows_SoundShader": {
+"addon": "weapons",
+"name": "XM25_tailMeadows_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"XM25_tailTrees_SoundShader": {
+"addon": "weapons",
+"name": "XM25_tailTrees_SoundShader",
+"ns": "cfgsoundshaders"
+},
+"acc_o_FMS": {
+"addon": "weapons",
+"name": "acc_o_FMS",
+"ns": "cfgweapons"
+},
+"aegis_muzzle_snds_pbs_545_arid": {
+"addon": "weapons",
+"name": "muzzle_snds_pbs_545_arid",
+"ns": "cfgweapons"
+},
+"aegis_muzzle_snds_pbs_545_blk": {
+"addon": "weapons",
+"name": "muzzle_snds_pbs_545_blk",
+"ns": "cfgweapons"
+},
+"aegis_muzzle_snds_pbs_545_lush": {
+"addon": "weapons",
+"name": "muzzle_snds_pbs_545_lush",
+"ns": "cfgweapons"
+},
+"aegis_muzzle_snds_pbs_762_arid": {
+"addon": "weapons",
+"name": "muzzle_snds_pbs_762_arid",
+"ns": "cfgweapons"
+},
+"aegis_muzzle_snds_pbs_762_blk": {
+"addon": "weapons",
+"name": "muzzle_snds_pbs_762_blk",
+"ns": "cfgweapons"
+},
+"aegis_muzzle_snds_pbs_762_lush": {
+"addon": "weapons",
+"name": "muzzle_snds_pbs_762_lush",
+"ns": "cfgweapons"
+},
+"ammo_Bomb_AGM_154": {
+"addon": "vehicle",
+"name": "ammo_Bomb_AGM_154",
+"ns": "cfgammo"
+},
+"ammo_Bomb_GlideBase": {
+"addon": "vehicle",
+"name": "ammo_Bomb_GlideBase",
+"ns": "cfgammo"
+},
+"ammo_Penetrator_Vikhr": {
+"addon": "vehicle",
+"name": "ammo_Penetrator_Vikhr",
+"ns": "cfgammo"
+},
+"arifle_AK12U_545_F": {
+"addon": "weapons",
+"name": "arifle_AK12U_545_F",
+"ns": "cfgweapons"
+},
+"arifle_AK12U_545_base_F": {
+"addon": "weapons",
+"name": "arifle_AK12U_545_base_F",
+"ns": "cfgweapons"
+},
+"arifle_AK12_545_F": {
+"addon": "weapons",
+"name": "arifle_AK12_545_F",
+"ns": "cfgweapons"
+},
+"arifle_AK12_545_base_F": {
+"addon": "weapons",
+"name": "arifle_AK12_545_base_F",
+"ns": "cfgweapons"
+},
+"arifle_AK12_GL_545_F": {
+"addon": "weapons",
+"name": "arifle_AK12_GL_545_F",
+"ns": "cfgweapons"
+},
+"arifle_AK12_GL_545_base_F": {
+"addon": "weapons",
+"name": "arifle_AK12_GL_545_base_F",
+"ns": "cfgweapons"
+},
+"arifle_CTARS_blk_ARCO_Pointer_Snds_F": {
+"addon": "weapons",
+"name": "arifle_CTARS_blk_ARCO_Pointer_Snds_F",
+"ns": "cfgweapons"
+},
+"arifle_CTAR_GL_blk_ARCO_Pointer_Snds_F": {
+"addon": "weapons",
+"name": "arifle_CTAR_GL_blk_ARCO_Pointer_Snds_F",
+"ns": "cfgweapons"
+},
+"arifle_G36C_ACO_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_G36C_ACO_Pointer_F",
+"ns": "cfgweapons"
+},
+"arifle_G36C_F": {
+"addon": "weapons",
+"name": "arifle_G36C_F",
+"ns": "cfgweapons"
+},
+"arifle_G36C_FL_F": {
+"addon": "weapons",
+"name": "arifle_G36C_FL_F",
+"ns": "cfgweapons"
+},
+"arifle_G36C_Holo_F": {
+"addon": "weapons",
+"name": "arifle_G36C_Holo_F",
+"ns": "cfgweapons"
+},
+"arifle_G36C_Holo_FL_F": {
+"addon": "weapons",
+"name": "arifle_G36C_Holo_FL_F",
+"ns": "cfgweapons"
+},
+"arifle_G36C_Holo_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_G36C_Holo_Pointer_F",
+"ns": "cfgweapons"
+},
+"arifle_G36C_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_G36C_Pointer_F",
+"ns": "cfgweapons"
+},
+"arifle_G36C_Sand_F": {
+"addon": "weapons",
+"name": "arifle_G36C_Sand_F",
+"ns": "cfgweapons"
+},
+"arifle_G36C_Sand_Holo_FL_F": {
+"addon": "weapons",
+"name": "arifle_G36C_Sand_Holo_FL_F",
+"ns": "cfgweapons"
+},
+"arifle_G36C_Sand_Holo_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_G36C_Sand_Holo_Pointer_F",
+"ns": "cfgweapons"
+},
+"arifle_G36C_Sand_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_G36C_Sand_Pointer_F",
+"ns": "cfgweapons"
+},
+"arifle_G36C_base_F": {
+"addon": "weapons",
+"name": "arifle_G36C_base_F",
+"ns": "cfgweapons"
+},
+"arifle_G36C_mrco_snds_F": {
+"addon": "weapons",
+"name": "arifle_G36C_mrco_snds_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_ACOG_FL_F": {
+"addon": "weapons",
+"name": "arifle_G36_ACOG_FL_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_ACO_FL_F": {
+"addon": "weapons",
+"name": "arifle_G36_ACO_FL_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_ACO_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_G36_ACO_Pointer_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_F": {
+"addon": "weapons",
+"name": "arifle_G36_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_FL_F": {
+"addon": "weapons",
+"name": "arifle_G36_FL_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_GL_ACOG_FL_F": {
+"addon": "weapons",
+"name": "arifle_G36_GL_ACOG_FL_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_GL_ACO_F": {
+"addon": "weapons",
+"name": "arifle_G36_GL_ACO_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_GL_ACO_FL_F": {
+"addon": "weapons",
+"name": "arifle_G36_GL_ACO_FL_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_GL_ACO_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_G36_GL_ACO_Pointer_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_GL_F": {
+"addon": "weapons",
+"name": "arifle_G36_GL_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_GL_Holo_F": {
+"addon": "weapons",
+"name": "arifle_G36_GL_Holo_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_GL_LRCO_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_G36_GL_LRCO_Pointer_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_GL_MRCO_F": {
+"addon": "weapons",
+"name": "arifle_G36_GL_MRCO_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_GL_MRCO_FL_F": {
+"addon": "weapons",
+"name": "arifle_G36_GL_MRCO_FL_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_GL_ROS_FL_F": {
+"addon": "weapons",
+"name": "arifle_G36_GL_ROS_FL_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_GL_Sand_ACO_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_G36_GL_Sand_ACO_Pointer_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_GL_Sand_F": {
+"addon": "weapons",
+"name": "arifle_G36_GL_Sand_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_GL_Sand_LRCO_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_G36_GL_Sand_LRCO_Pointer_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_GL_base_F": {
+"addon": "weapons",
+"name": "arifle_G36_GL_base_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_GL_mrco_snds_F": {
+"addon": "weapons",
+"name": "arifle_G36_GL_mrco_snds_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_Holo_F": {
+"addon": "weapons",
+"name": "arifle_G36_Holo_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_Holo_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_G36_Holo_Pointer_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_LRCO_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_G36_LRCO_Pointer_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_MRCO_F": {
+"addon": "weapons",
+"name": "arifle_G36_MRCO_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_MRCO_FL_F": {
+"addon": "weapons",
+"name": "arifle_G36_MRCO_FL_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_G36_Pointer_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_ROS_FL_F": {
+"addon": "weapons",
+"name": "arifle_G36_ROS_FL_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_Sand_ACO_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_G36_Sand_ACO_Pointer_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_Sand_F": {
+"addon": "weapons",
+"name": "arifle_G36_Sand_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_Sand_Holo_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_G36_Sand_Holo_Pointer_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_Sand_LRCO_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_G36_Sand_LRCO_Pointer_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_Sand_Pointer_F": {
+"addon": "weapons",
+"name": "arifle_G36_Sand_Pointer_F",
+"ns": "cfgweapons"
+},
+"arifle_G36_base_F": {
+"addon": "weapons",
+"name": "arifle_G36_base_F",
+"ns": "cfgweapons"
+},
+"arifle_Katiba_C_ACO_flash_F": {
+"addon": "weapons",
+"name": "arifle_Katiba_C_ACO_flash_F",
+"ns": "cfgweapons"
+},
+"arifle_Katiba_GL_ARCO_pointer_snds_F": {
+"addon": "weapons",
+"name": "arifle_Katiba_GL_ARCO_pointer_snds_F",
+"ns": "cfgweapons"
+},
+"arifle_MXC_Holo_flash_F": {
+"addon": "weapons",
+"name": "arifle_MXC_Holo_flash_F",
+"ns": "cfgweapons"
+},
+"arifle_RPK_F": {
+"addon": "weapons",
+"name": "arifle_RPK_F",
+"ns": "cfgweapons"
+},
+"arifle_RPK_base_F": {
+"addon": "weapons",
+"name": "arifle_RPK_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SA80_C_base_F": {
+"addon": "weapons",
+"name": "arifle_SA80_C_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SA80_C_blk_F": {
+"addon": "weapons",
+"name": "arifle_SA80_C_blk_F",
+"ns": "cfgweapons"
+},
+"arifle_SA80_C_blk_aco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_C_blk_aco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_C_blk_holo_FL_f": {
+"addon": "weapons",
+"name": "arifle_SA80_C_blk_holo_FL_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_C_blk_holo_f": {
+"addon": "weapons",
+"name": "arifle_SA80_C_blk_holo_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_C_blk_holo_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_C_blk_holo_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_C_khk_F": {
+"addon": "weapons",
+"name": "arifle_SA80_C_khk_F",
+"ns": "cfgweapons"
+},
+"arifle_SA80_C_khk_aco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_C_khk_aco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_C_khk_holo_FL_f": {
+"addon": "weapons",
+"name": "arifle_SA80_C_khk_holo_FL_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_C_khk_holo_f": {
+"addon": "weapons",
+"name": "arifle_SA80_C_khk_holo_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_C_khk_holo_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_C_khk_holo_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_C_snd_F": {
+"addon": "weapons",
+"name": "arifle_SA80_C_snd_F",
+"ns": "cfgweapons"
+},
+"arifle_SA80_C_snd_aco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_C_snd_aco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_C_snd_holo_FL_f": {
+"addon": "weapons",
+"name": "arifle_SA80_C_snd_holo_FL_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_C_snd_holo_f": {
+"addon": "weapons",
+"name": "arifle_SA80_C_snd_holo_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_C_snd_holo_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_C_snd_holo_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_GL_base_F": {
+"addon": "weapons",
+"name": "arifle_SA80_GL_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SA80_GL_blk_F": {
+"addon": "weapons",
+"name": "arifle_SA80_GL_blk_F",
+"ns": "cfgweapons"
+},
+"arifle_SA80_GL_blk_aco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_GL_blk_aco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_GL_blk_arco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_GL_blk_arco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_GL_khk_F": {
+"addon": "weapons",
+"name": "arifle_SA80_GL_khk_F",
+"ns": "cfgweapons"
+},
+"arifle_SA80_GL_khk_aco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_GL_khk_aco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_GL_khk_arco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_GL_khk_arco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_GL_snd_F": {
+"addon": "weapons",
+"name": "arifle_SA80_GL_snd_F",
+"ns": "cfgweapons"
+},
+"arifle_SA80_GL_snd_aco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_GL_snd_aco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_GL_snd_arco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_GL_snd_arco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_base_F": {
+"addon": "weapons",
+"name": "arifle_SA80_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SA80_blk_F": {
+"addon": "weapons",
+"name": "arifle_SA80_blk_F",
+"ns": "cfgweapons"
+},
+"arifle_SA80_blk_aco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_blk_aco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_blk_arco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_blk_arco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_blk_holo_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_blk_holo_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_khk_F": {
+"addon": "weapons",
+"name": "arifle_SA80_khk_F",
+"ns": "cfgweapons"
+},
+"arifle_SA80_khk_aco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_khk_aco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_khk_arco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_khk_arco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_khk_holo_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_khk_holo_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_snd_F": {
+"addon": "weapons",
+"name": "arifle_SA80_snd_F",
+"ns": "cfgweapons"
+},
+"arifle_SA80_snd_aco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_snd_aco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_snd_arco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_snd_arco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SA80_snd_holo_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SA80_snd_holo_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_DMS_LP_BI_S_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_DMS_LP_BI_S_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_GL_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_GL_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_GL_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_GL_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_GL_black_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_GL_black_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_GL_black_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_GL_black_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_GL_black_snds_mrco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_GL_black_snds_mrco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_GL_khaki_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_GL_khaki_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_GL_khaki_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_GL_khaki_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_GL_snds_mrco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_GL_snds_mrco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_DMS_LP_BI_S_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_DMS_LP_BI_S_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_GL_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_GL_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_GL_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_GL_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_GL_black_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_GL_black_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_GL_black_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_GL_black_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_GL_black_snds_Holosight_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_GL_black_snds_Holosight_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_GL_khaki_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_GL_khaki_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_GL_khaki_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_GL_khaki_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_GL_snds_Holosight_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_GL_snds_Holosight_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_black_DMS_LP_BI_S_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_black_DMS_LP_BI_S_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_black_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_black_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_black_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_black_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_black_snds_Holosight_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_black_snds_Holosight_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_grip_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_grip_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_grip_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_grip_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_grip_black_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_grip_black_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_grip_black_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_grip_black_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_grip_black_snds_Holosight_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_grip_black_snds_Holosight_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_grip_khaki_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_grip_khaki_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_grip_khaki_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_grip_khaki_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_grip_snds_Holosight_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_grip_snds_Holosight_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_khaki_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_khaki_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_khaki_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_khaki_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_short_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_short_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_short_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_short_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_short_black_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_short_black_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_short_black_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_short_black_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_short_black_snds_Holosight_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_short_black_snds_Holosight_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_short_black_snds_holo_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_short_black_snds_holo_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_short_khaki_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_short_khaki_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_short_khaki_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_short_khaki_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_short_snds_Holosight_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_short_snds_Holosight_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_L_short_snds_holo_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_short_snds_holo_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_black_DMS_LP_BI_S_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_black_DMS_LP_BI_S_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_black_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_black_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_black_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_black_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_black_snds_mrco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_black_snds_mrco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_grip_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_grip_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_grip_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_grip_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_grip_black_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_grip_black_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_grip_black_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_grip_black_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_grip_black_snds_mrco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_grip_black_snds_mrco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_grip_khaki_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_grip_khaki_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_grip_khaki_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_grip_khaki_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_grip_snds_mrco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_grip_snds_mrco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_khaki_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_khaki_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_khaki_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_khaki_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_short_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_short_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_short_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_short_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_short_black_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_short_black_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_short_black_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_short_black_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_short_black_snds_holo_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_short_black_snds_holo_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_short_black_snds_mrco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_short_black_snds_mrco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_short_khaki_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_short_khaki_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_short_khaki_base_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_short_khaki_base_F",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_short_snds_holo_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_short_snds_holo_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SCAR_short_snds_mrco_pointer_f": {
+"addon": "weapons",
+"name": "arifle_SCAR_short_snds_mrco_pointer_f",
+"ns": "cfgweapons"
+},
+"arifle_SPAR_01_GL_snd_RCO_Pointer_Snds_F": {
+"addon": "weapons",
+"name": "arifle_SPAR_01_GL_snd_RCO_Pointer_Snds_F",
+"ns": "cfgweapons"
+},
+"arifle_SPAR_01_snd_Holo_Pointer_Snds_F": {
+"addon": "weapons",
+"name": "arifle_SPAR_01_snd_Holo_Pointer_Snds_F",
+"ns": "cfgweapons"
+},
+"arifle_SPAR_01_snd_RCO_Pointer_Snds_F": {
+"addon": "weapons",
+"name": "arifle_SPAR_01_snd_RCO_Pointer_Snds_F",
+"ns": "cfgweapons"
+},
+"arifle_SPAR_02_snd_RCO_Pointer_Snds_Bipod_F": {
+"addon": "weapons",
+"name": "arifle_SPAR_02_snd_RCO_Pointer_Snds_Bipod_F",
+"ns": "cfgweapons"
+},
+"arifle_SPAR_03_snd_MOS_Pointer_Snds_Bipod_F": {
+"addon": "weapons",
+"name": "arifle_SPAR_03_snd_MOS_Pointer_Snds_Bipod_F",
+"ns": "cfgweapons"
+},
+"arifle_scar_SV_F": {
+"addon": "weapons",
+"name": "arifle_scar_SV_F",
+"ns": "cfgweapons"
+},
+"atlas_arifle_FamasF1_Base": {
+"addon": "weapons",
+"name": "arifle_FamasF1_Base",
+"ns": "cfgweapons"
+},
+"atlas_arifle_FamasG4_Base": {
+"addon": "weapons",
+"name": "arifle_FamasG4_Base",
+"ns": "cfgweapons"
+},
+"atlas_arifle_SCAR_ARCO_BI_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_ARCO_BI_F",
+"ns": "cfgweapons"
+},
+"atlas_arifle_SCAR_L_ARCO_FL_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_ARCO_FL_F",
+"ns": "cfgweapons"
+},
+"atlas_arifle_SCAR_L_FL_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_FL_F",
+"ns": "cfgweapons"
+},
+"atlas_arifle_SCAR_L_GL_ARCO_FL_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_GL_ARCO_FL_F",
+"ns": "cfgweapons"
+},
+"atlas_arifle_SCAR_L_GL_Holo_FL_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_GL_Holo_FL_F",
+"ns": "cfgweapons"
+},
+"atlas_arifle_SCAR_L_GL_ICO_FL_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_GL_ICO_FL_F",
+"ns": "cfgweapons"
+},
+"atlas_arifle_SCAR_L_Holo_FL_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_Holo_FL_F",
+"ns": "cfgweapons"
+},
+"atlas_arifle_SCAR_L_ICO_FL_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_ICO_FL_F",
+"ns": "cfgweapons"
+},
+"atlas_arifle_SCAR_L_Short_FL_F": {
+"addon": "weapons",
+"name": "arifle_SCAR_L_Short_FL_F",
+"ns": "cfgweapons"
+},
+"atlas_arifle_famasF1_F": {
+"addon": "weapons",
+"name": "arifle_famasF1_F",
+"ns": "cfgweapons"
+},
+"atlas_arifle_famasF1_Grip_F": {
+"addon": "weapons",
+"name": "arifle_famasF1_Grip_F",
+"ns": "cfgweapons"
+},
+"atlas_arifle_famasF1_RIS_F": {
+"addon": "weapons",
+"name": "arifle_famasF1_RIS_F",
+"ns": "cfgweapons"
+},
+"atlas_arifle_famasG4_Grip_F": {
+"addon": "weapons",
+"name": "arifle_famasG4_Grip_F",
+"ns": "cfgweapons"
+},
+"autocannon_30mm_APC_Wheeled_04": {
+"addon": "vehicle",
+"name": "autocannon_30mm_APC_Wheeled_04",
+"ns": "cfgweapons"
+},
+"autocannon_30mm_lxWS": {
+"addon": "vehicle",
+"name": "autocannon_30mm_lxWS",
+"ns": "cfgweapons"
+},
+"cannon_20mm_Heli_Light_03": {
+"addon": "vehicle",
+"name": "cannon_20mm_Heli_Light_03",
+"ns": "cfgweapons"
+},
+"hgun_ACPC2_black_F": {
+"addon": "weapons",
+"name": "hgun_ACPC2_black_F",
+"ns": "cfgweapons"
+},
+"hgun_G17_F": {
+"addon": "weapons",
+"name": "hgun_G17_F",
+"ns": "cfgweapons"
+},
+"hgun_G17_black_F": {
+"addon": "weapons",
+"name": "hgun_G17_black_F",
+"ns": "cfgweapons"
+},
+"hgun_G17_black_snds_F": {
+"addon": "weapons",
+"name": "hgun_G17_black_snds_F",
+"ns": "cfgweapons"
+},
+"hgun_G17_khaki_F": {
+"addon": "weapons",
+"name": "hgun_G17_khaki_F",
+"ns": "cfgweapons"
+},
+"hgun_G17_khaki_snds_F": {
+"addon": "weapons",
+"name": "hgun_G17_khaki_snds_F",
+"ns": "cfgweapons"
+},
+"hgun_G17_snds_F": {
+"addon": "weapons",
+"name": "hgun_G17_snds_F",
+"ns": "cfgweapons"
+},
+"hgun_Mk26_F": {
+"addon": "weapons",
+"name": "hgun_Mk26_F",
+"ns": "cfgweapons"
+},
+"hgun_Pistol_heavy_01_black_F": {
+"addon": "weapons",
+"name": "hgun_Pistol_heavy_01_black_F",
+"ns": "cfgweapons"
+},
+"hgun_Pistol_heavy_01_black_MRD_F": {
+"addon": "weapons",
+"name": "hgun_Pistol_heavy_01_black_MRD_F",
+"ns": "cfgweapons"
+},
+"magazine_Bomb_AGM_154_x1": {
+"addon": "vehicle",
+"name": "magazine_Bomb_AGM_154_x1",
+"ns": "cfgmagazines"
+},
+"mgl": {
+"addon": "weapons",
+"name": "mgl",
+"ns": "cfgweaponcursors"
+},
+"missiles_Vikhr": {
+"addon": "vehicle",
+"name": "missiles_Vikhr",
+"ns": "cfgweapons"
+},
+"missiles_Vorona_vehicle": {
+"addon": "vehicle",
+"name": "missiles_Vorona_vehicle",
+"ns": "cfgweapons"
+},
+"muzzle_snds_408_black": {
+"addon": "weapons",
+"name": "muzzle_snds_408_black",
+"ns": "cfgweapons"
+},
+"muzzle_snds_408_sand": {
+"addon": "weapons",
+"name": "muzzle_snds_408_sand",
+"ns": "cfgweapons"
+},
+"muzzle_snds_460": {
+"addon": "weapons",
+"name": "muzzle_snds_460",
+"ns": "cfgweapons"
+},
+"muzzle_snds_545": {
+"addon": "weapons",
+"name": "muzzle_snds_545",
+"ns": "cfgweapons"
+},
+"optic_ACO_grn_AK_F": {
+"addon": "weapons",
+"name": "optic_ACO_grn_AK_F",
+"ns": "cfgweapons"
+},
+"optic_LRCO_blk_F": {
+"addon": "weapons",
+"name": "optic_LRCO_blk_F",
+"ns": "cfgweapons"
+},
+"optic_LRCO_snd_F": {
+"addon": "weapons",
+"name": "optic_LRCO_snd_F",
+"ns": "cfgweapons"
+},
+"optic_tws_sniper": {
+"addon": "weapons",
+"name": "optic_tws_sniper",
+"ns": "cfgweapons"
+},
+"recoil_G36": {
+"addon": "weapons",
+"name": "recoil_G36",
+"ns": "cfgrecoils"
+},
+"recoil_ak12_545": {
+"addon": "weapons",
+"name": "recoil_ak12_545",
+"ns": "cfgrecoils"
+},
+"recoil_ak12u_545": {
+"addon": "weapons",
+"name": "recoil_ak12u_545",
+"ns": "cfgrecoils"
+},
+"recoil_ksg": {
+"addon": "weapons",
+"name": "recoil_ksg",
+"ns": "cfgrecoils"
+},
+"recoil_m4": {
+"addon": "weapons",
+"name": "recoil_m4",
+"ns": "cfgrecoils"
+},
+"recoil_mp153": {
+"addon": "weapons",
+"name": "recoil_mp153",
+"ns": "cfgrecoils"
+},
+"recoil_pistol_g17": {
+"addon": "weapons",
+"name": "recoil_pistol_g17",
+"ns": "cfgrecoils"
+},
+"recoil_pistol_mk26": {
+"addon": "weapons",
+"name": "recoil_pistol_mk26",
+"ns": "cfgrecoils"
+},
+"recoil_rpk": {
+"addon": "weapons",
+"name": "recoil_rpk",
+"ns": "cfgrecoils"
+},
+"recoil_rpk12_545": {
+"addon": "weapons",
+"name": "recoil_rpk12_545",
+"ns": "cfgrecoils"
+},
+"recoil_rpk74": {
+"addon": "weapons",
+"name": "recoil_rpk74",
+"ns": "cfgrecoils"
+},
+"recoil_sa80": {
+"addon": "weapons",
+"name": "recoil_sa80",
+"ns": "cfgrecoils"
+},
+"recoil_scar": {
+"addon": "weapons",
+"name": "recoil_scar",
+"ns": "cfgrecoils"
+},
+"recoil_smg_04": {
+"addon": "weapons",
+"name": "recoil_smg_04",
+"ns": "cfgrecoils"
+},
+"recoil_wf50": {
+"addon": "weapons",
+"name": "recoil_wf50",
+"ns": "cfgrecoils"
+},
+"sgun_KSG_ACO_F": {
+"addon": "weapons",
+"name": "sgun_KSG_ACO_F",
+"ns": "cfgweapons"
+},
+"sgun_KSG_F": {
+"addon": "weapons",
+"name": "sgun_KSG_F",
+"ns": "cfgweapons"
+},
+"sgun_M4_ACO_F": {
+"addon": "weapons",
+"name": "sgun_M4_ACO_F",
+"ns": "cfgweapons"
+},
+"sgun_M4_F": {
+"addon": "weapons",
+"name": "sgun_M4_F",
+"ns": "cfgweapons"
+},
+"sgun_Mp153_black_F": {
+"addon": "weapons",
+"name": "sgun_Mp153_black_F",
+"ns": "cfgweapons"
+},
+"sgun_Mp153_classic_F": {
+"addon": "weapons",
+"name": "sgun_Mp153_classic_F",
+"ns": "cfgweapons"
+},
+"srifle_DMR_01_black_F": {
+"addon": "weapons",
+"name": "srifle_DMR_01_black_F",
+"ns": "cfgweapons"
+},
+"srifle_DMR_06_black_F": {
+"addon": "weapons",
+"name": "srifle_DMR_06_black_F",
+"ns": "cfgweapons"
+},
+"srifle_WF50_F": {
+"addon": "weapons",
+"name": "srifle_WF50_F",
+"ns": "cfgweapons"
+},
+"srifle_WF50_LRPS_F": {
+"addon": "weapons",
+"name": "srifle_WF50_LRPS_F",
+"ns": "cfgweapons"
+},
+"srifle_WF50_camo_F": {
+"addon": "weapons",
+"name": "srifle_WF50_camo_F",
+"ns": "cfgweapons"
+},
+"srifle_WF50_camo_LRPS_F": {
+"addon": "weapons",
+"name": "srifle_WF50_camo_LRPS_F",
+"ns": "cfgweapons"
+},
+"srifle_WF50_tna_F": {
+"addon": "weapons",
+"name": "srifle_WF50_tna_F",
+"ns": "cfgweapons"
+},
+"srifle_WF50_tna_LRPS_F": {
+"addon": "weapons",
+"name": "srifle_WF50_tna_LRPS_F",
+"ns": "cfgweapons"
+},
+"weapon_AGM_154Launcher": {
+"addon": "vehicle",
+"name": "weapon_AGM_154Launcher",
+"ns": "cfgweapons"
+}
+}

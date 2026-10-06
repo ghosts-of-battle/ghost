@@ -117,7 +117,6 @@ class CfgMagazines {
     class FA_b_130Rnd_338_Mk372_T_White;
     class FA_b_130Rnd_338_Mk372_T_Yellow;
     class FA_b_16Rnd_9x21_Mk424_AP;
-    class FA_b_17Rnd_9x21_Mk424_AP;
     class FA_b_2000Rnd_65x39_Belt_T_Blue;
     class FA_b_2000Rnd_65x39_Belt_T_Green;
     class FA_b_2000Rnd_65x39_Belt_T_Orange;
@@ -413,7 +412,6 @@ class CfgMagazines {
     class FA_b_30Rnd_65_Mk367_PAB_T_White;
     class FA_b_30Rnd_65_Mk367_PAB_T_Yellow;
     class FA_b_30Rnd_9x21_SMG_02_Mk424_AP;
-    class FA_b_40Rnd_9x21_Gepard_Mk424_AP;
     class FA_b_500Rnd_65x39_Belt_T_Blue;
     class FA_b_500Rnd_65x39_Belt_T_Green;
     class FA_b_500Rnd_65x39_Belt_T_Orange;
@@ -7499,24 +7497,6 @@ class CfgMagazines {
         ammo = "FA_b_9x21_Mk424_AP_t3";
     };
     class FA_b_30Rnd_9x21_SMG_02_Mk424_AP_t2: FA_b_30Rnd_9x21_SMG_02_Mk424_AP {
-        ammo = "FA_b_9x21_Mk424_AP_t2";
-    };
-    class FA_b_17Rnd_9x21_Mk424_AP_t4: FA_b_17Rnd_9x21_Mk424_AP {
-        ammo = "FA_b_9x21_Mk424_AP_t4";
-    };
-    class FA_b_17Rnd_9x21_Mk424_AP_t3: FA_b_17Rnd_9x21_Mk424_AP {
-        ammo = "FA_b_9x21_Mk424_AP_t3";
-    };
-    class FA_b_17Rnd_9x21_Mk424_AP_t2: FA_b_17Rnd_9x21_Mk424_AP {
-        ammo = "FA_b_9x21_Mk424_AP_t2";
-    };
-    class FA_b_40Rnd_9x21_Gepard_Mk424_AP_t4: FA_b_40Rnd_9x21_Gepard_Mk424_AP {
-        ammo = "FA_b_9x21_Mk424_AP_t4";
-    };
-    class FA_b_40Rnd_9x21_Gepard_Mk424_AP_t3: FA_b_40Rnd_9x21_Gepard_Mk424_AP {
-        ammo = "FA_b_9x21_Mk424_AP_t3";
-    };
-    class FA_b_40Rnd_9x21_Gepard_Mk424_AP_t2: FA_b_40Rnd_9x21_Gepard_Mk424_AP {
         ammo = "FA_b_9x21_Mk424_AP_t2";
     };
     class FA_b_6Rnd_45ACP_Mk421_t4: FA_b_6Rnd_45ACP_Mk421 {

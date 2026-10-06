@@ -321,6 +321,19 @@ ORDER = ["weapons", "vests", "headware", "uniform", "vehicle"]
 # name - see Plan.dedupe.
 STRIP = re.compile("(?i)^(?:aegis|atlas|opf)_")
 MOD_ORDER = {"aegis": 0, "atlas": 1, "opf": 2}
+# --seeds FILE (user, 2026-10-04: the Aegis family leaves the load order, "fix what you can"): import only
+# the classes ghost's faction addons name, one per line, and what they need - soldiers, gear on
+# base-game models and the FAMAS included, since the factions are built on them. Empty: the full import.
+SEEDS = []
+if "--seeds" in sys.argv:
+    with open(sys.argv[sys.argv.index("--seeds") + 1], encoding="utf-8") as _fh:
+        SEEDS = [l.strip() for l in _fh if l.strip() and not l.startswith("#")]
+# --full vehicle,weapon,accessory (user, 2026-10-05: "also add back all the vehicles and weapons from
+# opensource aegis/atlas"): beside the seeds, every class of those kinds the full import would bring -
+# public, filed under ghost_blue/red/green and folded one per type, as the 2026-09-13/14 decisions say.
+FULL_KINDS = set()
+if "--full" in sys.argv:
+    FULL_KINDS = set(sys.argv[sys.argv.index("--full") + 1].split(","))
 
 
 class Plan:
@@ -387,12 +400,15 @@ class Plan:
             return self.blocked[key]
         anc, ok = w.ancestry(ns, name)
         why = None
-        if self.famas(ns, name):
+        if self.famas(ns, name) and not SEEDS:
             # User, 2026-09-13: "you can remove the FAMAS". Its M203 versions dress the launcher in
             # Aegis's M4A1 M203 textures, which Aegis took out of the public repository in January
             # 2025 (74aca1a9), so those models named files nothing ships.
             why = "the FAMAS, left out by request"
-        elif "lxws" in name.lower() or (ns == ("cfgvehicles",) and "lxws" in text(w.value(ns, name, "faction")).lower()):
+        elif not SEEDS and ("lxws" in name.lower() or (ns == ("cfgvehicles",) and "lxws" in text(w.value(ns, name, "faction")).lower())):
+            # --seeds: a class filed under one of Western Sahara's factions, or named for it, can
+            # still stand on the base game alone - the faction is replaced by side anyway, and a
+            # parent or model of that DLC's is caught below
             # Aegis's Western Sahara variants: their parents are the base game's, but their extra
             # turrets, sounds and textures are that creator DLC's - and a vehicle in one of its
             # factions (NATO desert, SFIA, ION, Tura) is filed under a faction ghost cannot load
@@ -420,7 +436,42 @@ class Plan:
             return True
         return any(self.FAMAS_DIR.search(text(self.w.value(ns, name, k))) for k in ("model", "modelspecial"))
 
+    def seed_roots(self):
+        """The --seeds classes, wherever they live, each into the addon its kind goes to; a soldier into
+        uniform, beside the soldiers its uniforms need."""
+        w = self.w
+        out = []
+        for name in SEEDS:
+            cands = self.index.get(name.lower())
+            if not cands:
+                self.log["seed left out: not in the public sources"].append(name)
+                continue
+            ns = cands[0]
+            why = self.portable(ns, name)
+            if why:
+                self.log["seed left out: " + why.split(" (")[0]].append(name)
+                continue
+            kd = w.kind(ns, name)
+            addon = KIND_ADDON.get(kd) or ("uniform" if kd == "man" else "vehicle" if ns == ("cfgvehicles",) else "weapons")
+            out.append((ns, w.snode(ns, name).name, addon, kd if kd in KIND_ADDON or kd == "man" else "dep"))
+        out.sort(key=lambda r: ORDER.index(r[2]))
+        return out
+
     def roots(self):
+        if not SEEDS:
+            return self.full_roots(None)
+        out = self.seed_roots()
+        self.full_root_names = set()
+        if FULL_KINDS:
+            have = {r[1].lower() for r in out}
+            for r in self.full_roots(FULL_KINDS):
+                self.full_root_names.add(r[1].lower())
+                if r[1].lower() not in have:
+                    out.append(r)
+            out.sort(key=lambda r: ORDER.index(r[2]))
+        return out
+
+    def full_roots(self, only):
         w = self.w
         out = []
         for root, kinds in (("cfgweapons", None), ("cfgvehicles", {"vehicle"})):
@@ -451,6 +502,8 @@ class Plan:
                     # A vehicle or weapon comes in only on a model the import brings in; a new paint
                     # on a base-game model stays out. Vests, uniforms and headgear keep those.
                     self.log["left out: a %s on a base-game model" % ("vehicle" if kd == "vehicle" else "weapon")].append(node.name)
+                    continue
+                if only is not None and kd not in only:
                     continue
                 out.append((ns, node.name, KIND_ADDON[kd], kd))
         out.sort(key=lambda r: ORDER.index(r[2]))
@@ -486,6 +539,13 @@ class Plan:
     def decide(self, ctx, key, tns, tname):
         """pull, crew, gear or drop - what a reference from a ctx class does to its target."""
         w = self.w
+        if SEEDS and ctx == "man" and tns != ("cfgfactionclasses",):
+            # a faction's soldier stands on this one: its kit comes too, or the man is left bare
+            if tns == ("cfgvehicles",) and w.kind(tns, tname) == "man" and key in CREW_KEYS:
+                return "crew"
+            if tns == ("cfgweapons",) and w.kind(tns, tname) in GEAR:
+                return "gear"
+            return "pull"
         if tns == ("cfgvehicles",):
             tk = w.kind(tns, tname)
             if tk == "man":
@@ -722,7 +782,15 @@ class Plan:
                 target = w.snode(tns, lo).name
             act = self.decide(ctx, key, tns, target)
             if act == "pull" and not self.portable(tns, target):
-                self.add(tns, target, addon, "%s of %s" % (key, name))
+                to = addon
+                if SEEDS and (ctx == "man" or addon == "uniform") and tns in (("cfgmagazines",), ("cfgammo",)):
+                    # a soldier's magazines go beside the weapons, or uniform and weapons each
+                    # build on the other's magazines and require each other
+                    to = "weapons"
+                self.add(tns, target, to, "%s of %s" % (key, name))
+            elif act == "gear" and SEEDS and ctx == "man" and not self.portable(tns, target):
+                tk = w.kind(tns, target)
+                self.add(tns, target, KIND_ADDON[tk], "root:" + tk)
             elif act == "crew":
                 self.crew[tok.strip()] += 1
         # a move or gesture comes with the action arrays that play it
@@ -776,6 +844,8 @@ def main():
         plan_summary(p)
         return
     import emit
+    emit.SEEDS = SEEDS
+    emit.FULL = getattr(p, "full_root_names", set())
     # --configs-only rewrites the configs and leaves models/ as the last run copied it: for
     # iterating on the generated text without copying the assets again
     emit.run(w, p, dry="--dry" in sys.argv, configs_only="--configs-only" in sys.argv)

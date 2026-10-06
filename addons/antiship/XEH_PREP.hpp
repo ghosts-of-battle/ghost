@@ -5,3 +5,4 @@ PREP(radarInit);
 PREP(radarSweep);
 PREP(launch);
 PREP(fly);
+PREP(moduleAntiShip);

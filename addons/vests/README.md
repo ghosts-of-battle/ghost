@@ -16,4 +16,4 @@ A content pack: 32 weapon and item classes. No scripted behaviour.
 
 ## Ships
 
-225 weapon/item classes.
+41 weapon/item classes.

@@ -207,7 +207,7 @@ class Rap:
                 # and what each CfgMagazineWells well holds (BI_mags[], CBA_Magazines[] ...) - what a
                 # replacement weapon fires, so a soldier's magazines can follow it
                 lo = name.lower()
-                if depth <= 3 and (lo in ("hiddenselections", "typicalcargo", "weapons", "magazinewell")
+                if depth <= 3 and (lo in ("hiddenselections", "hiddenselectionstextures", "typicalcargo", "weapons", "magazinewell")
                                    or lo.endswith(("magazines", "mags"))):
                     node.v[lo] = v
             elif t == 3:

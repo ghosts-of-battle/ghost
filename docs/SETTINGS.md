@@ -700,10 +700,10 @@ A forced setting cannot be changed in-game, and overrides the defaults above.
 | `ace_medical_treatment_treatmentTimeIV` | `9` |
 | `ace_medical_treatment_treatmentTimeSplint` | `7` |
 | `ace_medical_treatment_treatmentTimeTourniquet` | `3.75` |
-| `ace_medical_treatment_treatmentTimeTrainedAutoinjector` | `5` |
-| `ace_medical_treatment_treatmentTimeTrainedIV` | `12` |
+| `ace_medical_treatment_treatmentTimeTrainedAutoinjector` | `2.005` |
+| `ace_medical_treatment_treatmentTimeTrainedIV` | `9` |
 | `ace_medical_treatment_treatmentTimeTrainedSplint` | `7` |
-| `ace_medical_treatment_treatmentTimeTrainedTourniquet` | `7` |
+| `ace_medical_treatment_treatmentTimeTrainedTourniquet` | `3.75` |
 | `ace_medical_treatment_woundReopenChance` | `0.8` |
 | `ace_medical_treatment_woundStitchTime` | `5` |
 | `ace_nametags_ambientBrightnessAffectViewDist` | `1` |

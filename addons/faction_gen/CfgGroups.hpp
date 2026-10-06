@@ -42,14 +42,14 @@ class CfgGroups {
 
                     class Unit3 {
                         side = 1;
-                        vehicle = QGVAR(B_GEN_Soldier_F);
+                        vehicle = QGVAR(B_GEN_Soldier_SG_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = QGVAR(B_GEN_Soldier_F);
+                        vehicle = QGVAR(B_GEN_Soldier_Rifle_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
@@ -83,14 +83,14 @@ class CfgGroups {
 
                     class Unit3 {
                         side = 1;
-                        vehicle = QGVAR(B_GEN_Soldier_F);
+                        vehicle = QGVAR(B_GEN_Soldier_SG_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = QGVAR(B_GEN_Soldier_F);
+                        vehicle = QGVAR(B_GEN_Soldier_Rifle_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
@@ -124,14 +124,14 @@ class CfgGroups {
 
                     class Unit3 {
                         side = 1;
-                        vehicle = QGVAR(B_GEN_Soldier_F);
+                        vehicle = QGVAR(B_GEN_Soldier_SG_F);
                         rank = "PRIVATE";
                         position[] = {10,-10,0};
                     };
 
                     class Unit4 {
                         side = 1;
-                        vehicle = QGVAR(B_GEN_Soldier_F);
+                        vehicle = QGVAR(B_GEN_Soldier_Rifle_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
@@ -172,14 +172,14 @@ class CfgGroups {
 
                     class Unit4 {
                         side = 1;
-                        vehicle = QGVAR(B_GEN_Soldier_F);
+                        vehicle = QGVAR(B_GEN_Soldier_SG_F);
                         rank = "PRIVATE";
                         position[] = {-10,-10,0};
                     };
 
                     class Unit5 {
                         side = 1;
-                        vehicle = QGVAR(B_GEN_Soldier_F);
+                        vehicle = QGVAR(B_GEN_Soldier_Rifle_F);
                         rank = "PRIVATE";
                         position[] = {15,-15,0};
                     };

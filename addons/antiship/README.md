@@ -10,17 +10,21 @@ worth attacking: kill it, or wait out its tracks, and the battery is blind. The
 missile flies faster than any interceptor so it has to be met head-on rather
 than chased, and it carries a decoy the defending side's AA and CIWS can engage.
 
-**There is no module.** In ghost this addon was driven by `ghost_moduleAntiShip`,
-which sited batteries automatically on coastal ground inside a side's ALiVE TAOR
-markers. DIVINER has no TAORs and no commanders to own them, so the siting had
-nothing to read from. Place the launcher and the radar where you want them, in
-Eden or in Zeus, and both bring themselves on line - the launcher registers as a
-battery and starts its own clock, the radar starts sweeping.
+**Ghost - Anti-Ship Batteries sites them for you.** Place the module and every
+ALiVE commander the players are not on gets its batteries inside its own TAOR: a
+surface search radar on the shoreline, where it can see the sea, and launchers
+inland behind it, where they cannot. Nobody building the mission knows where they
+ended up. The module asks only how many - batteries per side, launchers per
+battery, radars per battery. With no ALiVE commanders its own area is the ground,
+for the side the players oppose. (DIVINER dropped this module because it has no
+TAORs; ghost runs ALiVE, so it is back under its old class name.)
 
-**One launcher is one battery.** The module grouped several under one interval;
-a hand-placed launcher owns its own, so three on a headland are three tubes on
-three cycles rather than one battery firing three times as fast.
+**Or place them by hand.** A launcher or a radar placed in Eden or Zeus brings
+itself on line the same way - the launcher registers as a battery and starts its
+own clock, the radar starts sweeping.
 
+**One launcher is one tube on its own clock**, sited or hand-placed, so three on
+a headland are three cycles rather than one battery firing three times as fast.
 **How they behave is CBA settings**, under *Ghosts of Battle > Anti-Ship*:
 interval, search range, target classes, missile speed, cruise altitude, terminal
 range, whether the missile is interceptable, and debug. The module's other
@@ -43,7 +47,23 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-5 unit classes, 7 functions.
+6 unit classes, 8 functions.
+
+## Eden modules
+
+### Ghost - Anti-Ship Batteries
+
+`ghost_moduleAntiShip`, category ghost_modules
+
+Sites coastal anti-ship batteries for every ALiVE commander the players are not on, inside its own TAOR: a surface search radar on the shoreline and launchers inland behind it. Nobody placing the mission knows where. Without ALiVE, the module's own area is the ground and the battery belongs to the side opposing the players. How they fire is under CBA settings, Anti-Ship.
+
+<details><summary>3 attributes</summary>
+
+- `batteriesPerSide`
+- `launchersPerBattery`
+- `radarsPerBattery`
+
+</details>
 
 ## CBA settings
 
@@ -60,11 +80,12 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Functions
 
-<details><summary>7</summary>
+<details><summary>8</summary>
 
 - `ghost_antiship_fnc_fly`
 - `ghost_antiship_fnc_launch`
 - `ghost_antiship_fnc_launcherInit`
+- `ghost_antiship_fnc_moduleAntiShip`
 - `ghost_antiship_fnc_pickTarget`
 - `ghost_antiship_fnc_radarInit`
 - `ghost_antiship_fnc_radarSweep`

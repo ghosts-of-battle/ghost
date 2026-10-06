@@ -44,15 +44,15 @@ class CfgVehicles {
     class B_AAA_System_01_F;
     class B_D_APC_Wheeled_01_command_lxWS;
     class B_D_APC_Wheeled_01_mortar_lxWS;
-    class B_D_Fighter_Pilot_F;
+    class B_Fighter_Pilot_F;
     class B_D_HeliPilot_lxWS;
-    class B_D_MBT_01_arty_lxWS;
-    class B_D_MBT_01_mlrs_lxWS;
+    class EGVAR(vehicle,B_D_MBT_01_arty_lxWS);
+    class EGVAR(vehicle,B_D_MBT_01_mlrs_lxWS);
     class B_D_MRAP_01_gmg_lxWS;
     class B_D_MRAP_01_hmg_lxWS;
     class B_D_MRAP_01_lxWS;
     class B_D_Mortar_01_lxWS;
-    class B_D_Pilot_lxWS;
+    class EGVAR(uniform,B_D_Pilot_lxWS);
     class B_D_Quadbike_01_lxWS;
     class B_D_Soldier_A_lxWS;
     class B_D_Soldier_GL_lxWS;
@@ -77,13 +77,13 @@ class CfgVehicles {
     class B_D_engineer_lxWS;
     class B_D_medic_lxWS;
     class B_D_officer_lxWS;
-    class B_D_recon_JTAC_lxWS;
-    class B_D_recon_LAT_lxWS;
-    class B_D_recon_M_lxWS;
-    class B_D_recon_TL_lxWS;
-    class B_D_recon_exp_lxWS;
-    class B_D_recon_lxWS;
-    class B_D_recon_medic_lxWS;
+    class EGVAR(uniform,B_D_recon_JTAC_lxWS);
+    class EGVAR(uniform,B_D_recon_LAT_lxWS);
+    class EGVAR(uniform,B_D_recon_M_lxWS);
+    class EGVAR(uniform,B_D_recon_TL_lxWS);
+    class EGVAR(uniform,B_D_recon_exp_lxWS);
+    class EGVAR(uniform,B_D_recon_lxWS);
+    class EGVAR(uniform,B_D_recon_medic_lxWS);
     class B_D_soldier_AAA_lxWS;
     class B_D_soldier_AAR_lxWS;
     class B_D_soldier_AAT_lxWS;
@@ -613,7 +613,7 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         crew = QGVAR(B_D_crew_lxWS);
     };
-    class GVAR(B_D_Fighter_Pilot_F): B_D_Fighter_Pilot_F {
+    class GVAR(B_D_Fighter_Pilot_F): B_Fighter_Pilot_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -635,7 +635,7 @@ class CfgVehicles {
         magazines[] = {"FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
         respawnMagazines[] = {"FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","FA_b_30Rnd_45ACP_Mk421_t3","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange"};
     };
-    class GVAR(B_D_MBT_01_arty_lxWS): B_D_MBT_01_arty_lxWS {
+    class GVAR(B_D_MBT_01_arty_lxWS): EGVAR(vehicle,B_D_MBT_01_arty_lxWS) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -644,7 +644,7 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         crew = QGVAR(B_D_crew_lxWS);
     };
-    class GVAR(B_D_MBT_01_mlrs_lxWS): B_D_MBT_01_mlrs_lxWS {
+    class GVAR(B_D_MBT_01_mlrs_lxWS): EGVAR(vehicle,B_D_MBT_01_mlrs_lxWS) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -689,7 +689,7 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         crew = QGVAR(B_D_crew_lxWS);
     };
-    class GVAR(B_D_Pilot_lxWS): B_D_Pilot_lxWS {
+    class GVAR(B_D_Pilot_lxWS): EGVAR(uniform,B_D_Pilot_lxWS) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -956,7 +956,7 @@ class CfgVehicles {
         magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
         respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class GVAR(B_D_recon_JTAC_lxWS): B_D_recon_JTAC_lxWS {
+    class GVAR(B_D_recon_JTAC_lxWS): EGVAR(uniform,B_D_recon_JTAC_lxWS) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -966,7 +966,7 @@ class CfgVehicles {
         magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
         respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
     };
-    class GVAR(B_D_recon_LAT_lxWS): B_D_recon_LAT_lxWS {
+    class GVAR(B_D_recon_LAT_lxWS): EGVAR(uniform,B_D_recon_LAT_lxWS) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -976,7 +976,7 @@ class CfgVehicles {
         magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","NLAW_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
         respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","NLAW_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class GVAR(B_D_recon_M_lxWS): B_D_recon_M_lxWS {
+    class GVAR(B_D_recon_M_lxWS): EGVAR(uniform,B_D_recon_M_lxWS) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -986,7 +986,7 @@ class CfgVehicles {
         magazines[] = {"FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
         respawnMagazines[] = {"FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_20Rnd_762_M80A2_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class GVAR(B_D_recon_TL_lxWS): B_D_recon_TL_lxWS {
+    class GVAR(B_D_recon_TL_lxWS): EGVAR(uniform,B_D_recon_TL_lxWS) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -996,7 +996,7 @@ class CfgVehicles {
         magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
         respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
     };
-    class GVAR(B_D_recon_exp_lxWS): B_D_recon_exp_lxWS {
+    class GVAR(B_D_recon_exp_lxWS): EGVAR(uniform,B_D_recon_exp_lxWS) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -1006,7 +1006,7 @@ class CfgVehicles {
         magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
         respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class GVAR(B_D_recon_lxWS): B_D_recon_lxWS {
+    class GVAR(B_D_recon_lxWS): EGVAR(uniform,B_D_recon_lxWS) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -1016,7 +1016,7 @@ class CfgVehicles {
         magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
         respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_30Rnd_556_Mk327_HV_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
     };
-    class GVAR(B_D_recon_medic_lxWS): B_D_recon_medic_lxWS {
+    class GVAR(B_D_recon_medic_lxWS): EGVAR(uniform,B_D_recon_medic_lxWS) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -1568,8 +1568,8 @@ class CfgVehicles {
         displayName = "Asst. Gunner (HMG/GMG)";
         side = 1;
         faction = QUOTE(ADDON);
-        linkedItems[] = {"ghost_vests_V_ChestrigF_rgr","H_HelmetB_tna_F","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-        respawnLinkedItems[] = {"ghost_vests_V_ChestrigF_rgr","H_HelmetB_tna_F","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        linkedItems[] = {"V_Chestrig_rgr","H_HelmetB_tna_F","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        respawnLinkedItems[] = {"V_Chestrig_rgr","H_HelmetB_tna_F","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
         weapons[] = {QGVAR(arifle_MXC_khk_ACO_Pointer_F_snds),"hgun_P07_F","Throw","Put"};
         respawnWeapons[] = {QGVAR(arifle_MXC_khk_ACO_Pointer_F_snds),"hgun_P07_F","Throw","Put"};
         magazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
@@ -1582,8 +1582,8 @@ class CfgVehicles {
         displayName = "Gunner (GMG)";
         side = 1;
         faction = QUOTE(ADDON);
-        linkedItems[] = {"ghost_vests_V_ChestrigF_rgr","H_HelmetB_tna_F","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-        respawnLinkedItems[] = {"ghost_vests_V_ChestrigF_rgr","H_HelmetB_tna_F","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        linkedItems[] = {"V_Chestrig_rgr","H_HelmetB_tna_F","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        respawnLinkedItems[] = {"V_Chestrig_rgr","H_HelmetB_tna_F","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
         weapons[] = {QGVAR(arifle_MXC_khk_ACO_Pointer_F_snds),"hgun_P07_F","Throw","Put"};
         respawnWeapons[] = {QGVAR(arifle_MXC_khk_ACO_Pointer_F_snds),"hgun_P07_F","Throw","Put"};
         magazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
@@ -1596,8 +1596,8 @@ class CfgVehicles {
         displayName = "Gunner (HMG)";
         side = 1;
         faction = QUOTE(ADDON);
-        linkedItems[] = {"ghost_vests_V_ChestrigF_rgr","H_HelmetB_tna_F","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-        respawnLinkedItems[] = {"ghost_vests_V_ChestrigF_rgr","H_HelmetB_tna_F","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        linkedItems[] = {"V_Chestrig_rgr","H_HelmetB_tna_F","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        respawnLinkedItems[] = {"V_Chestrig_rgr","H_HelmetB_tna_F","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
         weapons[] = {QGVAR(arifle_MXC_khk_ACO_Pointer_F_snds),"hgun_P07_F","Throw","Put"};
         respawnWeapons[] = {QGVAR(arifle_MXC_khk_ACO_Pointer_F_snds),"hgun_P07_F","Throw","Put"};
         magazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
@@ -1610,8 +1610,8 @@ class CfgVehicles {
         displayName = "Gunner (Mk6)";
         side = 1;
         faction = QUOTE(ADDON);
-        linkedItems[] = {"ghost_vests_V_ChestrigF_rgr","H_HelmetB_tna_F","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-        respawnLinkedItems[] = {"ghost_vests_V_ChestrigF_rgr","H_HelmetB_tna_F","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        linkedItems[] = {"V_Chestrig_rgr","H_HelmetB_tna_F","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        respawnLinkedItems[] = {"V_Chestrig_rgr","H_HelmetB_tna_F","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
         weapons[] = {QGVAR(arifle_MXC_khk_ACO_Pointer_F_snds),"hgun_P07_F","Throw","Put"};
         respawnWeapons[] = {QGVAR(arifle_MXC_khk_ACO_Pointer_F_snds),"hgun_P07_F","Throw","Put"};
         magazines[] = {"FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_30Rnd_65_EPR_Khaki_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};

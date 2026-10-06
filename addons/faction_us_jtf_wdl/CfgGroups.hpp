@@ -560,130 +560,6 @@ class CfgGroups {
 
             };
 
-            class JSOCInfantry {
-                name = "JSOCInfantry";
-
-                class GVAR(Atlas_B_T_JSOCFAC) {
-                    name = "JSOC FAC Team";
-                    side = 1;
-                    faction = QUOTE(ADDON);
-                    icon = "\A3\UI_F\Data\Map\Markers\NATO\b_recon.paa";
-
-                    class Unit0 {
-                        side = 1;
-                        vehicle = QGVAR(Atlas_B_W_JSOC_JTAC_F);
-                        rank = "CORPORAL";
-                        position[] = {0,0,0};
-                    };
-
-                    class Unit1 {
-                        side = 1;
-                        vehicle = QGVAR(B_W_Sharpshooter_F);
-                        rank = "PRIVATE";
-                        position[] = {5,-5,0};
-                    };
-                };
-
-                class GVAR(Atlas_B_T_JSOCPatrol) {
-                    name = "JSOC Patrol";
-                    side = 1;
-                    faction = QUOTE(ADDON);
-                    icon = "\A3\UI_F\Data\Map\Markers\NATO\b_recon.paa";
-
-                    class Unit0 {
-                        side = 1;
-                        vehicle = QGVAR(B_W_Soldier_TL_F);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
-
-                    class Unit1 {
-                        side = 1;
-                        vehicle = QGVAR(B_W_soldier_M_F);
-                        rank = "CORPORAL";
-                        position[] = {5,-5,0};
-                    };
-
-                    class Unit2 {
-                        side = 1;
-                        vehicle = QGVAR(B_W_Medic_F);
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-
-                    class Unit3 {
-                        side = 1;
-                        vehicle = QGVAR(Atlas_B_W_JSOC_F);
-                        rank = "PRIVATE";
-                        position[] = {10,-10,0};
-                    };
-
-                    class Unit4 {
-                        side = 1;
-                        vehicle = QGVAR(Drone_Operator);
-                        rank = "PRIVATE";
-                        position[] = {-10,-10,0};
-                    };
-                };
-
-                class GVAR(Atlas_B_T_JSOCTeam) {
-                    name = "JSOC Team";
-                    side = 1;
-                    faction = QUOTE(ADDON);
-                    icon = "\A3\UI_F\Data\Map\Markers\NATO\b_recon.paa";
-
-                    class Unit0 {
-                        side = 1;
-                        vehicle = QGVAR(B_W_Soldier_SL_F);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
-
-                    class Unit1 {
-                        side = 1;
-                        vehicle = QGVAR(B_W_soldier_M_F);
-                        rank = "CORPORAL";
-                        position[] = {5,-5,0};
-                    };
-
-                    class Unit2 {
-                        side = 1;
-                        vehicle = QGVAR(B_W_Medic_F);
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-
-                    class Unit3 {
-                        side = 1;
-                        vehicle = QGVAR(Atlas_B_W_JSOC_LAT_F);
-                        rank = "CORPORAL";
-                        position[] = {10,-10,0};
-                    };
-
-                    class Unit4 {
-                        side = 1;
-                        vehicle = QGVAR(Atlas_B_W_JSOC_JTAC_F);
-                        rank = "PRIVATE";
-                        position[] = {-10,-10,0};
-                    };
-
-                    class Unit5 {
-                        side = 1;
-                        vehicle = QGVAR(B_W_Soldier_Exp_F);
-                        rank = "PRIVATE";
-                        position[] = {15,-15,0};
-                    };
-
-                    class Unit6 {
-                        side = 1;
-                        vehicle = QGVAR(Drone_Operator);
-                        rank = "PRIVATE";
-                        position[] = {-15,-15,0};
-                    };
-                };
-
-            };
-
             class Mechanized {
                 name = "Mechanized";
 
@@ -1595,6 +1471,126 @@ class CfgGroups {
                         vehicle = QGVAR(B_W_Sniper_F);
                         rank = "CORPORAL";
                         position[] = {5,-5,0};
+                    };
+                };
+
+
+                class GVAR(Atlas_B_T_JSOCFAC) {
+                    name = "JSOC FAC Team";
+                    side = 1;
+                    faction = QUOTE(ADDON);
+                    icon = "\A3\UI_F\Data\Map\Markers\NATO\b_recon.paa";
+
+                    class Unit0 {
+                        side = 1;
+                        vehicle = QGVAR(Atlas_B_W_JSOC_JTAC_F);
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+
+                    class Unit1 {
+                        side = 1;
+                        vehicle = QGVAR(B_W_Sharpshooter_F);
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+
+                class GVAR(Atlas_B_T_JSOCPatrol) {
+                    name = "JSOC Patrol";
+                    side = 1;
+                    faction = QUOTE(ADDON);
+                    icon = "\A3\UI_F\Data\Map\Markers\NATO\b_recon.paa";
+
+                    class Unit0 {
+                        side = 1;
+                        vehicle = QGVAR(B_W_Soldier_TL_F);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+
+                    class Unit1 {
+                        side = 1;
+                        vehicle = QGVAR(B_W_soldier_M_F);
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+
+                    class Unit2 {
+                        side = 1;
+                        vehicle = QGVAR(B_W_Medic_F);
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+
+                    class Unit3 {
+                        side = 1;
+                        vehicle = QGVAR(Atlas_B_W_JSOC_F);
+                        rank = "PRIVATE";
+                        position[] = {10,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 1;
+                        vehicle = QGVAR(Drone_Operator);
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
+                    };
+                };
+
+                class GVAR(Atlas_B_T_JSOCTeam) {
+                    name = "JSOC Team";
+                    side = 1;
+                    faction = QUOTE(ADDON);
+                    icon = "\A3\UI_F\Data\Map\Markers\NATO\b_recon.paa";
+
+                    class Unit0 {
+                        side = 1;
+                        vehicle = QGVAR(B_W_Soldier_SL_F);
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+
+                    class Unit1 {
+                        side = 1;
+                        vehicle = QGVAR(B_W_soldier_M_F);
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+
+                    class Unit2 {
+                        side = 1;
+                        vehicle = QGVAR(B_W_Medic_F);
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+
+                    class Unit3 {
+                        side = 1;
+                        vehicle = QGVAR(Atlas_B_W_JSOC_LAT_F);
+                        rank = "CORPORAL";
+                        position[] = {10,-10,0};
+                    };
+
+                    class Unit4 {
+                        side = 1;
+                        vehicle = QGVAR(Atlas_B_W_JSOC_JTAC_F);
+                        rank = "PRIVATE";
+                        position[] = {-10,-10,0};
+                    };
+
+                    class Unit5 {
+                        side = 1;
+                        vehicle = QGVAR(B_W_Soldier_Exp_F);
+                        rank = "PRIVATE";
+                        position[] = {15,-15,0};
+                    };
+
+                    class Unit6 {
+                        side = 1;
+                        vehicle = QGVAR(Drone_Operator);
+                        rank = "PRIVATE";
+                        position[] = {-15,-15,0};
                     };
                 };
 

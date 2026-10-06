@@ -54,6 +54,16 @@ M = ("cfgmovesmalesdr", "states")
 A = ("cfgmovesbasic", "actions")
 W = ("cfgweapons",)
 DROP = object()
+SEEDS = []          # port.py --seeds: set by port.main
+FULL = set()        # port.py --full: the full import's roots (lower names) - public, folded one per type
+# Files a model names that the public sources no longer ship, and what the model is pointed at instead.
+# Aegis withdrew its M4A1 M203 textures in January 2025 (74aca1a9) - not restored from git history -
+# and Atlas's FAMAS GL models dress their launcher in them; the FAMAS family is in the factions'
+# hands (user, 2026-10-01), so the launcher gets a plain dark finish rather than a missing texture.
+WITHDRAWN = {
+    rb"a3_aegis\weapons_f_aegis\rifles\m4a1\data\m203_co.paa": rb"#(argb,8,8,3)color(0.1,0.1,0.09,1,co)",
+    rb"a3_aegis\weapons_f_aegis\rifles\m4a1\data\m203.rvmat": rb"a3\data_f\default.rvmat",
+}
 CREWS = {
     1: {"uav": "B_UAV_AI", "fighter": "B_Fighter_Pilot_F", "heli": "B_Helipilot_F", "pilot": "B_Pilot_F",
         "crew": "B_crew_F", "diver": "B_diver_F", "soldier": "B_Soldier_F"},
@@ -694,6 +704,10 @@ class Emitter:
             # Not a class the sources define - but a name with the mods' prefix is still theirs: a
             # sight overlay (Aegis_RscOptics_Punisher), a base weapon or uniform that was never
             # written. Without the mods it points at nothing, so it goes.
+            if SEEDS and LXWS_NAME.search(tok) and not MOD_NAME.match(tok):
+                # --seeds: Western Sahara's own classes (its desert uniforms, backpacks, pointers) stay
+                # named - ghost's factions already build on that DLC being loaded
+                return None
             if (MOD_NAME.match(tok) or LXWS_NAME.search(tok)) and key not in NOT_REF_KEYS and self.w.vnode(("cfgweapons",), tok) is None                     and self.w.vnode(("cfgvehicles",), tok) is None:
                 self.log["removed: names a mod class or interface that did not come in"].append("%s %s = %s" % (ctx.name, key, tok))
                 return DROP
@@ -746,7 +760,7 @@ class Emitter:
                 # the model itself loads fine by the same path without it.
                 return new
             return "\\" + new
-        if CDLC_PATH.match(st):
+        if CDLC_PATH.match(st) and not (SEEDS and st.lstrip("\\").lower().startswith("lxws\\")):
             self.log["emptied: a path into a creator DLC"].append("%s %s = %s" % (ctx.name, key, st))
             return ""
         if "a3_" not in s.lower():
@@ -870,6 +884,8 @@ class Emitter:
                     cur = os.path.dirname(cur)
 
     def rewrite_bytes(self, data, owner):
+        for gone, stand_in in WITHDRAWN.items():
+            data = re.sub(re.escape(gone), lambda _m, s=stand_in: s, data, flags=re.I)
         def sub(m):
             s = m.group(0).decode("latin1")
             r2 = self.w.resolve_src(s, ())
@@ -894,6 +910,14 @@ class Emitter:
                 return s
             new = self.target(r2, owner)
             return ("\\" if s.startswith("\\") else "") + os.path.splitext(new)[0] + os.path.splitext(s)[1]
+
+        def gone_include(m):
+            # Atlas's FAMAS GL model.cfg includes Aegis's M4A1 m203anim.inc, withdrawn with the M203
+            # textures (see WITHDRAWN): the launcher keeps its model and loses only those animations
+            if self.w.resolve_src(m.group(2), ()) is not None:
+                return m.group(0)
+            return "%s// withdrawn from the public sources: %s" % (m.group(1), m.group(2))
+        t = re.sub(r'(?im)^([ \t]*)#include\s+"(\\?a3_(?:aegis|atlas|opf)\\[^"]+)"', gone_include, t)
         return TPATH_EXT.sub(sub, t)
 
     # ------------------------------------------------------------ ancestry
@@ -1170,6 +1194,8 @@ class Emitter:
             ns, name = it["ns"], it["name"]
             if ns != V or w.kind(ns, name) != "vehicle" or num(w.value(ns, name, "scope")) != 2:
                 continue
+            if SEEDS and name.lower() not in FULL:
+                continue                     # a faction's hidden base, not one of the import's units
             faction = GHOST_FACTIONS.get(num(w.value(ns, name, "side")))
             if faction not in ("ghost_red", "ghost_blue", "ghost_green"):
                 continue
@@ -1279,7 +1305,8 @@ class Emitter:
         node = w.snode(ns, name)
         kind = self.p.ctx_of(it)
         side = num(w.value(ns, name, "side")) if ns == ("cfgvehicles",) else None
-        hide = (kind == "man" and num(w.value(ns, name, "scope")) == 2) or (ns, name.lower()) in self.collapsed
+        hide = (kind == "man" and num(w.value(ns, name, "scope")) == 2) or (ns, name.lower()) in self.collapsed or             (bool(SEEDS) and ns == ("cfgvehicles",) and w.kind(ns, name) == "vehicle" and num(w.value(ns, name, "scope")) == 2
+             and name.lower() not in FULL)   # a faction's base, not a unit
         ctx = Ctx(addon, ns, name, kind, side, hide)
         header = self.ref(ns, name, addon, False)
         par, pkey = "", None
@@ -1287,7 +1314,13 @@ class Emitter:
             pns = w.parent_ns(ns, node.parent)
             if pns is not None and (pns, node.parent.lower()) in self.names:
                 par = self.ref(pns, node.parent, addon, False)
-                pkey = par.lower() if self.names[(pns, node.parent.lower())][0] == addon else None
+                owner = self.names[(pns, node.parent.lower())][0]
+                pkey = par.lower() if owner == addon else None
+                if owner not in (None, addon):
+                    # a parent another import addon carries (a vehicle's cargo grenade on the weapons
+                    # addon's): HEMTT sees one addon at a time, so it is declared here
+                    self.needs[(addon, ns)].setdefault(par.lower(), par)
+                    self.cross[addon].add(owner)
             else:
                 par = self.vname(pns, node.parent) if pns is not None else node.parent
                 pkey = par.lower()
@@ -1810,7 +1843,8 @@ class Emitter:
 
 def run(w, p, dry=False, configs_only=False):
     e = Emitter(w, p)
-    e.collapse_vehicles()                               # before requirements: it adds TextureSources entries
+    if not SEEDS or FULL:
+        e.collapse_vehicles()                               # before requirements: it adds TextureSources entries
     e.own_asset_refs()
     e.trace()
     for it in p.items.values():                         # what each class needs declared, first:
@@ -1903,6 +1937,11 @@ def write(e, rendered, configs_only=False):
                         v = '"' + v + '"'
                     return m.group(1) + v + ";"
                 t = re.sub(r"(?m)^(\s*[A-Za-z_]\w*\s*=\s*)([^;\n]+);", q, t)
+                # the same for a bare word in an array (renderFlags[] = {AlphaTest16}, L-C01)
+                t = re.sub(r"(?m)^(\s*[A-Za-z_]\w*\[\]\s*=\s*\{)([^}\n]*)(\};)",
+                           lambda m: m.group(1) + ",".join(
+                               ('"%s"' % x.strip()) if re.match(r"^[A-Za-z_]\w*$", x.strip()) else x
+                               for x in m.group(2).split(",")) + m.group(3), t)
                 wr(dst, RVMAT_TEX.sub(r"\1.paa\2", t).rstrip("\n") + "\n")
             else:
                 shutil.copy2(real, dst)

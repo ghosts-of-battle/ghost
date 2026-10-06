@@ -13,7 +13,7 @@ class CfgFactionClasses {
         author = QAUTHOR;
         side = 0;
         priority = 1;
-        icon = "\A3\Data_F\cfgFactionClasses_OPF_ca.paa";
-        flag = "\A3\Data_F\Flags\flag_CSAT_CO.paa";
+        icon = QPATHTOEF(faction_iran,data\aegis\CfgFactionClasses_OPF_CA.paa);
+        flag = QPATHTOEF(faction_iran,data\aegis\flag_IranArmy_CO.paa);
     };
 };

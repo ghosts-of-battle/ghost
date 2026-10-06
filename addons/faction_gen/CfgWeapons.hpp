@@ -4,21 +4,4 @@
 // baseWeapon keep the arsenal showing the plain weapon, as the base
 // game's own presets do. No script: the man's weapons[] names the preset.
 class CfgWeapons {
-    class JCA_smg_UMP_black_F;
-
-    class GVAR(smg_UMP_snds): JCA_smg_UMP_black_F {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "JCA_smg_UMP_black_F";
-        class LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_acp";
-            };
-            class LinkedItemsCows {
-                slot = "CowsSlot";
-                item = "JCA_optic_ARS_black";
-            };
-        };
-    };
 };

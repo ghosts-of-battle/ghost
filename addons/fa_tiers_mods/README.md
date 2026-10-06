@@ -11,9 +11,7 @@ _No description yet - add one above the generated marker._
 - `cba_xeh` _(external)_
 - `ghost_fa_aegis`
 - `ghost_fa_antidrone_ef`
-- `ghost_fa_antidrone_jca`
 - `ghost_fa_ef`
-- `ghost_fa_jca`
 - `ghost_fa_main`
 - `ghost_fa_rf`
 - `ghost_fa_tiers`

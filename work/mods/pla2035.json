@@ -1,0 +1,4711 @@
+{
+ "units": [
+  {
+   "displayname": "$STR_DN_VEHICLE",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconVehicle",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "model": "bmp",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Car",
+   "ancestry": [
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "CSK181_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "$STR_DN_VEHICLE",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconVehicle",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "model": "bmp",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Car_F",
+   "ancestry": [
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTL11",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "$STR_A3_CfgVehicles_MRAP_01_Base0",
+   "editorsubcategory": "EdSubcat_Cars",
+   "vehicleclass": "Car",
+   "model": "\\CSK181\\CSK181.p3d",
+   "simulation": "carx",
+   "weapons": [
+    "TruckHorn2"
+   ],
+   "magazines": [],
+   "hiddenselectionstextures": [
+    "CSK181\\tex\\H_co.paa",
+    "CSK181\\tex\\O_co.paa",
+    "CSK181\\tex\\Adds_co.paa"
+   ],
+   "transportsoldier": "7",
+   "icon": "CSK181_c\\UI\\CSK181_map_ca.paa",
+   "cost": "500000",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "CSK181_base_F",
+   "ancestry": [
+    "CSK181_base_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "CSK181_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "CSK182",
+   "crew": "O_soldier_F",
+   "hiddenselectionstextures": [
+    "CSK181\\tex\\H_co.paa",
+    "CSK181\\tex\\O_co.paa"
+   ],
+   "transportsoldier": "6",
+   "editorsubcategory": "EdSubcat_Cars",
+   "vehicleclass": "Car",
+   "model": "\\CSK181\\CSK181.p3d",
+   "simulation": "carx",
+   "weapons": [
+    "TruckHorn2"
+   ],
+   "magazines": [],
+   "icon": "CSK181_c\\UI\\CSK181_map_ca.paa",
+   "cost": "500000",
+   "class": "CSK181",
+   "ancestry": [
+    "CSK181",
+    "CSK181_base_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "CSK181_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "$STR_DN_VEHICLE",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconVehicle",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "model": "bmp",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Truck_F",
+   "ancestry": [
+    "Truck_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "HQ6A_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "editorsubcategory": "EdSubcat_Cars",
+   "vehicleclass": "Car",
+   "simulation": "carx",
+   "weapons": [
+    "TruckHorn2"
+   ],
+   "hiddenselectionstextures": [
+    "HMV3\\tex\\Head_O_co.paa",
+    "HMV3\\tex\\Cargo_O_co.paa",
+    "HMV3\\tex\\cover_O_co.paa"
+   ],
+   "transportsoldier": "1",
+   "cost": "50000",
+   "displayname": "$STR_DN_VEHICLE",
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconVehicle",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "model": "bmp",
+   "crew": "Civilian",
+   "class": "SX2316_base",
+   "ancestry": [
+    "SX2316_base",
+    "Truck_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "HMV3_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "$STR_LK_SX2316_TRAN0",
+   "model": "\\HMV3\\SX2316.p3d",
+   "crew": "O_soldier_F",
+   "hiddenselectionstextures": [
+    "HMV3\\tex\\Head_O_co.paa",
+    "HMV3\\tex\\Cargo_O_co.paa",
+    "HMV3\\tex\\cover_O_co.paa"
+   ],
+   "transportsoldier": "17",
+   "icon": "\\HMV3_c\\UI\\SX2316_map_ca.paa",
+   "editorsubcategory": "EdSubcat_Cars",
+   "vehicleclass": "Car",
+   "simulation": "carx",
+   "weapons": [
+    "TruckHorn2"
+   ],
+   "cost": "50000",
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "class": "SX2316",
+   "ancestry": [
+    "SX2316",
+    "SX2316_base",
+    "Truck_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "HMV3_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "$STR_LK_SX2316_FLAT0",
+   "model": "\\HMV3\\SX2316.p3d",
+   "crew": "O_soldier_F",
+   "transportsoldier": "1",
+   "icon": "\\HMV3_c\\UI\\SX2316_map_ca.paa",
+   "hiddenselectionstextures": [
+    "HMV3\\tex\\Head_O_co.paa",
+    "HMV3\\tex\\Cargo_O_co.paa",
+    "HMV3\\tex\\cover_O_co.paa"
+   ],
+   "editorsubcategory": "EdSubcat_Cars",
+   "vehicleclass": "Car",
+   "simulation": "carx",
+   "weapons": [
+    "TruckHorn2"
+   ],
+   "cost": "50000",
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "class": "SX2316_Flat",
+   "ancestry": [
+    "SX2316_Flat",
+    "SX2316",
+    "SX2316_base",
+    "Truck_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "HMV3_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "simulation": "carx",
+   "editorsubcategory": "EdSubcat_Cars",
+   "vehicleclass": "Car",
+   "weapons": [
+    "TruckHorn2"
+   ],
+   "hiddenselectionstextures": [
+    "HMV3\\tex\\Head_O_co.paa",
+    "HMV3\\tex\\Cargo_O_co.paa",
+    "HMV3\\tex\\cover_O_co.paa"
+   ],
+   "transportsoldier": "1",
+   "cost": "50000",
+   "displayname": "$STR_DN_VEHICLE",
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconVehicle",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "model": "bmp",
+   "crew": "Civilian",
+   "class": "SX2220_Base",
+   "ancestry": [
+    "SX2220_Base",
+    "SX2316_base",
+    "Truck_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "HMV3_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "$STR_LK_SX2220_TRAN0",
+   "model": "\\HMV3\\SX2220.p3d",
+   "crew": "O_soldier_F",
+   "hiddenselectionstextures": [
+    "HMV3\\tex\\Head_O_co.paa",
+    "HMV3\\tex\\Cargo_O_co.paa",
+    "HMV3\\tex\\cover_O_co.paa"
+   ],
+   "transportsoldier": "11",
+   "icon": "\\HMV3_c\\UI\\SX2220_map_ca.paa",
+   "simulation": "carx",
+   "editorsubcategory": "EdSubcat_Cars",
+   "vehicleclass": "Car",
+   "weapons": [
+    "TruckHorn2"
+   ],
+   "cost": "50000",
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "class": "SX2220",
+   "ancestry": [
+    "SX2220",
+    "SX2220_Base",
+    "SX2316_base",
+    "Truck_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "HMV3_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "$STR_LK_SX2220_FLAT0",
+   "model": "\\HMV3\\SX2220.p3d",
+   "crew": "O_soldier_F",
+   "transportsoldier": "1",
+   "icon": "\\HMV3_c\\UI\\SX2220_map_ca.paa",
+   "hiddenselectionstextures": [
+    "HMV3\\tex\\Head_O_co.paa",
+    "HMV3\\tex\\Cargo_O_co.paa",
+    "HMV3\\tex\\cover_O_co.paa"
+   ],
+   "simulation": "carx",
+   "editorsubcategory": "EdSubcat_Cars",
+   "vehicleclass": "Car",
+   "weapons": [
+    "TruckHorn2"
+   ],
+   "cost": "50000",
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "class": "SX2220_Flat",
+   "ancestry": [
+    "SX2220_Flat",
+    "SX2220",
+    "SX2220_Base",
+    "SX2316_base",
+    "Truck_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "HMV3_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "editorsubcategory": "EdSubcat_Cars",
+   "vehicleclass": "Car",
+   "simulation": "carx",
+   "weapons": [
+    "TruckHorn2"
+   ],
+   "hiddenselectionstextures": [
+    "HQ6A\\tex\\Head_O_co.paa",
+    "HQ6A\\tex\\Cargo_O_co.paa",
+    "HQ6A\\tex\\Gun_O_co.paa",
+    "HQ6A\\tex\\Eng_O_co.paa",
+    "HQ6A\\tex\\Girder_O_co.paa",
+    "HQ6A\\tex\\Wheels_co.paa"
+   ],
+   "transportsoldier": "1",
+   "cost": "50000",
+   "displayname": "$STR_DN_VEHICLE",
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconVehicle",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "model": "bmp",
+   "crew": "Civilian",
+   "class": "HQ6A_base",
+   "ancestry": [
+    "HQ6A_base",
+    "Truck_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "HQ6A_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "HQ6A(LD2000)",
+   "model": "\\HQ6A\\HQ6A.p3d",
+   "crew": "O_soldier_F",
+   "hiddenselectionstextures": [
+    "HQ6A\\tex\\Head_O_co.paa",
+    "HQ6A\\tex\\Cargo_O_co.paa",
+    "HQ6A\\tex\\Gun_O_co.paa",
+    "HQ6A\\tex\\Eng_O_co.paa",
+    "HQ6A\\tex\\Girder_O_co.paa",
+    "HQ6A\\tex\\Wheels_co.paa"
+   ],
+   "transportsoldier": "3",
+   "icon": "HQ6A_c\\UI\\LD2000_map_ca.paa",
+   "editorsubcategory": "EdSubcat_Cars",
+   "vehicleclass": "Car",
+   "simulation": "carx",
+   "weapons": [
+    "TruckHorn2"
+   ],
+   "cost": "50000",
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "class": "HQ6A",
+   "ancestry": [
+    "HQ6A",
+    "HQ6A_base",
+    "Truck_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "HQ6A_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "$STR_DN_HELICOPTER",
+   "editorsubcategory": "EdSubcat_Planes",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconAir",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "model": "bmp",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Plane",
+   "ancestry": [
+    "Plane",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Jets_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "$STR_DN_HELICOPTER",
+   "editorsubcategory": "EdSubcat_Planes",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconAir",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "model": "bmp",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Plane_Base_F",
+   "ancestry": [
+    "Plane_Base_F",
+    "Plane",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Jets_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "0",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "$STR_LK_J10C_name",
+   "vehicleclass": "Air",
+   "model": "\\J10\\Fighter_J10.p3d",
+   "simulation": "airplaneX",
+   "crew": "O_T_Pilot_F",
+   "weapons": [
+    "Fighter_Gun_23mm_lk",
+    "Laserdesignator_pilotCamera",
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "300Rnd_Fighter_Gun23mm_AA_LK",
+    "Laserbatteries",
+    "240Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "hiddenselectionstextures": [
+    "J10\\tex\\j10_ext_co.paa"
+   ],
+   "icon": "\\Jets_c\\UI\\J10C_map_ca.paa",
+   "texturelist": [],
+   "editorsubcategory": "EdSubcat_Planes",
+   "class": "PLAAF_Fighter_J10_base",
+   "ancestry": [
+    "PLAAF_Fighter_J10_base",
+    "Plane_Base_F",
+    "Plane",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Jets_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "displayname": "$STR_LK_J10C_name",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "vehicleclass": "Air",
+   "model": "\\J10\\Fighter_J10.p3d",
+   "simulation": "airplaneX",
+   "crew": "O_T_Pilot_F",
+   "weapons": [
+    "Fighter_Gun_23mm_lk",
+    "Laserdesignator_pilotCamera",
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "300Rnd_Fighter_Gun23mm_AA_LK",
+    "Laserbatteries",
+    "240Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "hiddenselectionstextures": [
+    "J10\\tex\\j10_ext_co.paa"
+   ],
+   "icon": "\\Jets_c\\UI\\J10C_map_ca.paa",
+   "texturelist": [],
+   "editorsubcategory": "EdSubcat_Planes",
+   "class": "PLAAF_Fighter_J10",
+   "ancestry": [
+    "PLAAF_Fighter_J10",
+    "PLAAF_Fighter_J10_base",
+    "Plane_Base_F",
+    "Plane",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Jets_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "0",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "$STR_LK_J11D_name",
+   "vehicleclass": "Air",
+   "model": "\\J11\\Fighter_J11D.p3d",
+   "simulation": "airplaneX",
+   "crew": "O_T_Pilot_F",
+   "weapons": [
+    "weapon_Fighter_Gun_30mm",
+    "Laserdesignator_pilotCamera",
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "magazine_Fighter02_Gun30mm_AA_x180",
+    "Laserbatteries",
+    "240Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "hiddenselectionstextures": [
+    "J11\\tex\\J11D_co.paa"
+   ],
+   "icon": "\\Jets_c\\UI\\J11D_map_ca.paa",
+   "texturelist": [],
+   "editorsubcategory": "EdSubcat_Planes",
+   "class": "PLAAF_Fighter_J11_base",
+   "ancestry": [
+    "PLAAF_Fighter_J11_base",
+    "Plane_Base_F",
+    "Plane",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Jets_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "displayname": "$STR_LK_J11D_name",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "vehicleclass": "Air",
+   "model": "\\J11\\Fighter_J11D.p3d",
+   "simulation": "airplaneX",
+   "crew": "O_T_Pilot_F",
+   "weapons": [
+    "weapon_Fighter_Gun_30mm",
+    "Laserdesignator_pilotCamera",
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "magazine_Fighter02_Gun30mm_AA_x180",
+    "Laserbatteries",
+    "240Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "hiddenselectionstextures": [
+    "J11\\tex\\J11D_co.paa"
+   ],
+   "icon": "\\Jets_c\\UI\\J11D_map_ca.paa",
+   "texturelist": [],
+   "editorsubcategory": "EdSubcat_Planes",
+   "class": "PLAAF_Fighter_J11",
+   "ancestry": [
+    "PLAAF_Fighter_J11",
+    "PLAAF_Fighter_J11_base",
+    "Plane_Base_F",
+    "Plane",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Jets_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "0",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "J15",
+   "vehicleclass": "Air",
+   "model": "\\J15\\Fighter_J15.p3d",
+   "simulation": "airplaneX",
+   "crew": "O_T_Pilot_F",
+   "weapons": [
+    "weapon_Fighter_Gun_30mm",
+    "Laserdesignator_pilotCamera",
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "magazine_Fighter02_Gun30mm_AA_x180",
+    "Laserbatteries",
+    "240Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "hiddenselectionstextures": [
+    "J15\\tex\\J15_ext_co.paa"
+   ],
+   "icon": "\\Jets_c\\UI\\J15_map_ca.paa",
+   "texturelist": [],
+   "editorsubcategory": "EdSubcat_Planes",
+   "class": "PLAAF_Fighter_J15_base",
+   "ancestry": [
+    "PLAAF_Fighter_J15_base",
+    "Plane_Base_F",
+    "Plane",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Jets_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "displayname": "$STR_LK_J15T_name",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "vehicleclass": "Air",
+   "model": "\\J15\\Fighter_J15.p3d",
+   "simulation": "airplaneX",
+   "crew": "O_T_Pilot_F",
+   "weapons": [
+    "weapon_Fighter_Gun_30mm",
+    "Laserdesignator_pilotCamera",
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "magazine_Fighter02_Gun30mm_AA_x180",
+    "Laserbatteries",
+    "240Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "hiddenselectionstextures": [
+    "J15\\tex\\J15_ext_co.paa"
+   ],
+   "icon": "\\Jets_c\\UI\\J15_map_ca.paa",
+   "texturelist": [],
+   "editorsubcategory": "EdSubcat_Planes",
+   "class": "PLAAF_Fighter_J15",
+   "ancestry": [
+    "PLAAF_Fighter_J15",
+    "PLAAF_Fighter_J15_base",
+    "Plane_Base_F",
+    "Plane",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Jets_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "0",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "J16",
+   "vehicleclass": "Air",
+   "model": "\\J16\\Fighter_J16.p3d",
+   "simulation": "airplaneX",
+   "crew": "O_T_Pilot_F",
+   "weapons": [
+    "weapon_Fighter_Gun_30mm",
+    "CMFlareLauncher",
+    "Laserdesignator_pilotCamera"
+   ],
+   "magazines": [
+    "magazine_Fighter02_Gun30mm_AA_x180",
+    "240Rnd_CMFlare_Chaff_Magazine",
+    "Laserbatteries"
+   ],
+   "hiddenselectionstextures": [
+    "J16\\tex\\J16_Ext_co.paa"
+   ],
+   "icon": "\\Jets_c\\UI\\J11D_map_ca.paa",
+   "texturelist": [],
+   "editorsubcategory": "EdSubcat_Planes",
+   "class": "PLAAF_Fighter_J16_base",
+   "ancestry": [
+    "PLAAF_Fighter_J16_base",
+    "Plane_Base_F",
+    "Plane",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Jets_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "displayname": "$STR_LK_J16_name",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "vehicleclass": "Air",
+   "model": "\\J16\\Fighter_J16.p3d",
+   "simulation": "airplaneX",
+   "crew": "O_T_Pilot_F",
+   "weapons": [
+    "weapon_Fighter_Gun_30mm",
+    "CMFlareLauncher",
+    "Laserdesignator_pilotCamera"
+   ],
+   "magazines": [
+    "magazine_Fighter02_Gun30mm_AA_x180",
+    "240Rnd_CMFlare_Chaff_Magazine",
+    "Laserbatteries"
+   ],
+   "hiddenselectionstextures": [
+    "J16\\tex\\J16_Ext_co.paa"
+   ],
+   "icon": "\\Jets_c\\UI\\J11D_map_ca.paa",
+   "texturelist": [],
+   "editorsubcategory": "EdSubcat_Planes",
+   "class": "PLAAF_Fighter_J16",
+   "ancestry": [
+    "PLAAF_Fighter_J16",
+    "PLAAF_Fighter_J16_base",
+    "Plane_Base_F",
+    "Plane",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Jets_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "0",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "$STR_LK_J20_name",
+   "vehicleclass": "Air",
+   "model": "\\J20\\Fighter_J20A.p3d",
+   "simulation": "airplaneX",
+   "crew": "O_T_Pilot_F",
+   "weapons": [
+    "Laserdesignator_pilotCamera",
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "Laserbatteries",
+    "240Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "hiddenselectionstextures": [
+    "J20\\tex\\J20A_ext_Camo1_co.paa"
+   ],
+   "icon": "\\Jets_c\\UI\\J20_map_ca.paa",
+   "texturelist": [],
+   "editorsubcategory": "EdSubcat_Planes",
+   "class": "PLAAF_Fighter_J20_base",
+   "ancestry": [
+    "PLAAF_Fighter_J20_base",
+    "Plane_Base_F",
+    "Plane",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Jets_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "displayname": "$STR_LK_J20_name",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "vehicleclass": "Air",
+   "model": "\\J20\\Fighter_J20A.p3d",
+   "simulation": "airplaneX",
+   "crew": "O_T_Pilot_F",
+   "weapons": [
+    "Laserdesignator_pilotCamera",
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "Laserbatteries",
+    "240Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "hiddenselectionstextures": [
+    "J20\\tex\\J20A_ext_Camo1_co.paa"
+   ],
+   "icon": "\\Jets_c\\UI\\J20_map_ca.paa",
+   "texturelist": [],
+   "editorsubcategory": "EdSubcat_Planes",
+   "class": "PLAAF_Fighter_J20",
+   "ancestry": [
+    "PLAAF_Fighter_J20",
+    "PLAAF_Fighter_J20_base",
+    "Plane_Base_F",
+    "Plane",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Jets_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "$STR_DN_VEHICLE",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconVehicle",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "model": "bmp",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Tank",
+   "ancestry": [
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTZ96_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "$STR_DN_VEHICLE",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconVehicle",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "model": "bmp",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Tank_F",
+   "ancestry": [
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTZ96_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "PGZ09",
+   "editorsubcategory": "EdSubcat_AAs",
+   "model": "\\PGZ09\\PGZ09",
+   "simulation": "tankX",
+   "transportsoldier": "0",
+   "icon": "\\PGZ09\\tex\\UI\\PGZ09_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "crew": "Civilian",
+   "class": "PGZ09_AA_base",
+   "ancestry": [
+    "PGZ09_AA_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "PGZ09",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "PGZ09",
+   "editorsubcategory": "EdSubcat_AAs",
+   "model": "\\PGZ09\\PGZ09",
+   "simulation": "tankX",
+   "transportsoldier": "0",
+   "icon": "\\PGZ09\\tex\\UI\\PGZ09_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "crew": "Civilian",
+   "class": "PGZ09_AA_TY90",
+   "ancestry": [
+    "PGZ09_AA_TY90",
+    "PGZ09_AA_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "PGZ09",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "PGZ09",
+   "crew": "O_T_Crew_F",
+   "hiddenselectionstextures": [
+    "PGZ09\\tex\\H_co.paa",
+    "PGZ09\\tex\\T_co.paa",
+    "PGZ09\\tex\\G_co.paa",
+    "PGZ09\\tex\\TO_co.paa",
+    "PGZ09\\tex\\AAL_co.paa",
+    "PLZ05\\tex\\W_co.paa"
+   ],
+   "texturelist": [
+    "Woodcamo2",
+    "0.5",
+    "Desertcamo",
+    "0.5"
+   ],
+   "editorsubcategory": "EdSubcat_AAs",
+   "model": "\\PGZ09\\PGZ09",
+   "simulation": "tankX",
+   "transportsoldier": "0",
+   "icon": "\\PGZ09\\tex\\UI\\PGZ09_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "O_PGZ09_AA",
+   "ancestry": [
+    "O_PGZ09_AA",
+    "PGZ09_AA_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "PGZ09",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "PGZ09-TY90",
+   "crew": "O_T_Crew_F",
+   "hiddenselectionstextures": [
+    "PGZ09\\tex\\H_co.paa",
+    "PGZ09\\tex\\T_co.paa",
+    "PGZ09\\tex\\G_co.paa",
+    "PGZ09\\tex\\TO_co.paa",
+    "PGZ09\\tex\\AAL_co.paa",
+    "PLZ05\\tex\\W_co.paa"
+   ],
+   "texturelist": [
+    "Woodcamo2",
+    "0.5",
+    "Desertcamo",
+    "0.5"
+   ],
+   "editorsubcategory": "EdSubcat_AAs",
+   "model": "\\PGZ09\\PGZ09",
+   "simulation": "tankX",
+   "transportsoldier": "0",
+   "icon": "\\PGZ09\\tex\\UI\\PGZ09_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "O_PGZ09_TY90",
+   "ancestry": [
+    "O_PGZ09_TY90",
+    "PGZ09_AA_TY90",
+    "PGZ09_AA_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "PGZ09",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "$STR_DN_VEHICLE",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconVehicle",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "model": "bmp",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Wheeled_APC_F",
+   "ancestry": [
+    "Wheeled_APC_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTL11",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "PLL09",
+   "editorsubcategory": "EdSubcat_Artillery",
+   "model": "\\PLL09\\PLL09",
+   "simulation": "CarX",
+   "transportsoldier": "0",
+   "icon": "\\PLL09\\tex\\UI\\PLL09_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "crew": "Civilian",
+   "class": "PLL09_base",
+   "ancestry": [
+    "PLL09_base",
+    "Wheeled_APC_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "PLL09",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "crew": "O_T_Crew_F",
+   "displayname": "PLL09",
+   "editorsubcategory": "EdSubcat_Artillery",
+   "model": "\\PLL09\\PLL09",
+   "simulation": "CarX",
+   "transportsoldier": "0",
+   "icon": "\\PLL09\\tex\\UI\\PLL09_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "vehicleclass": "",
+   "class": "O_PLL09_base",
+   "ancestry": [
+    "O_PLL09_base",
+    "PLL09_base",
+    "Wheeled_APC_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "PLL09",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "displayname": "PLL09",
+   "hiddenselectionstextures": [
+    "PLL09\\tex\\h_co.paa",
+    "PLL09\\tex\\t_co.paa",
+    "ZTL11\\tex\\w_co.paa"
+   ],
+   "texturelist": [
+    "Woodcamo2",
+    "0.5",
+    "Desertcamo",
+    "0.5"
+   ],
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "crew": "O_T_Crew_F",
+   "editorsubcategory": "EdSubcat_Artillery",
+   "model": "\\PLL09\\PLL09",
+   "simulation": "CarX",
+   "transportsoldier": "0",
+   "icon": "\\PLL09\\tex\\UI\\PLL09_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "O_PLL09",
+   "ancestry": [
+    "O_PLL09",
+    "O_PLL09_base",
+    "PLL09_base",
+    "Wheeled_APC_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "PLL09",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "$STR_DN_HELICOPTER",
+   "editorsubcategory": "EdSubcat_Planes",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconAir",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "model": "bmp",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Helicopter",
+   "ancestry": [
+    "Helicopter",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Z8L",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "$STR_DN_HELICOPTER",
+   "editorsubcategory": "EdSubcat_Planes",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconAir",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "model": "bmp",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Helicopter_Base_F",
+   "ancestry": [
+    "Helicopter_Base_F",
+    "Helicopter",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Z8L",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "0",
+   "displayname": "Z10",
+   "editorsubcategory": "EdSubcat_Helicopters",
+   "model": "Z10\\Z10.p3d",
+   "weapons": [
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "240Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "icon": "Z10\\tex\\UI\\Z10_map_CA.paa",
+   "cost": "3000000",
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Z10_base",
+   "ancestry": [
+    "Z10_base",
+    "Helicopter_Base_F",
+    "Helicopter",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Z10",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "0",
+   "displayname": "Z10",
+   "editorsubcategory": "EdSubcat_Helicopters",
+   "model": "Z10\\Z10.p3d",
+   "weapons": [
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "240Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "icon": "Z10\\tex\\UI\\Z10_map_CA.paa",
+   "cost": "3000000",
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Z10_dynamicLoadout",
+   "ancestry": [
+    "Z10_dynamicLoadout",
+    "Z10_base",
+    "Helicopter_Base_F",
+    "Helicopter",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Z10",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "Z10",
+   "crew": "O_T_Helipilot_F",
+   "hiddenselectionstextures": [
+    "Z10\\tex\\H_co.paa",
+    "Z10\\tex\\A_co.paa",
+    "Z10\\tex\\O_co.paa",
+    "Z10\\tex\\R_co.paa"
+   ],
+   "editorsubcategory": "EdSubcat_Helicopters",
+   "model": "Z10\\Z10.p3d",
+   "weapons": [
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "240Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "icon": "Z10\\tex\\UI\\Z10_map_CA.paa",
+   "cost": "3000000",
+   "vehicleclass": "",
+   "simulation": "",
+   "class": "Z10",
+   "ancestry": [
+    "Z10",
+    "Z10_dynamicLoadout",
+    "Z10_base",
+    "Helicopter_Base_F",
+    "Helicopter",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Z10",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "0",
+   "displayname": "Z11WA",
+   "editorsubcategory": "EdSubcat_Helicopters",
+   "model": "\\Z11\\Z11W.p3d",
+   "weapons": [
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "168Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "transportsoldier": "3",
+   "icon": "\\Z11\\tex\\UI\\Z11W_map_CA.paa",
+   "cost": "700000",
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Z11_base",
+   "ancestry": [
+    "Z11_base",
+    "Helicopter_Base_F",
+    "Helicopter",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Z11",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "weapons": [
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "168Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "transportsoldier": "3",
+   "cost": "3000000",
+   "scope": "0",
+   "displayname": "Z11WA",
+   "editorsubcategory": "EdSubcat_Helicopters",
+   "model": "\\Z11\\Z11W.p3d",
+   "icon": "\\Z11\\tex\\UI\\Z11W_map_CA.paa",
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Z11_dynamicLoadout_base",
+   "ancestry": [
+    "Z11_dynamicLoadout_base",
+    "Z11_base",
+    "Helicopter_Base_F",
+    "Helicopter",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Z11",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "crew": "O_T_Helipilot_F",
+   "hiddenselectionstextures": [
+    "\\Z11\\tex\\H_co.paa",
+    "\\Z11\\tex\\I_co.paa",
+    "\\Z11\\tex\\A_co.paa",
+    "\\Z11\\tex\\R_co.paa"
+   ],
+   "texturelist": [],
+   "weapons": [
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "168Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "transportsoldier": "3",
+   "cost": "3000000",
+   "displayname": "Z11WA",
+   "editorsubcategory": "EdSubcat_Helicopters",
+   "model": "\\Z11\\Z11W.p3d",
+   "icon": "\\Z11\\tex\\UI\\Z11W_map_CA.paa",
+   "vehicleclass": "",
+   "simulation": "",
+   "class": "Z11WA",
+   "ancestry": [
+    "Z11WA",
+    "Z11_dynamicLoadout_base",
+    "Z11_base",
+    "Helicopter_Base_F",
+    "Helicopter",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Z11",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Z11WA(FFV)",
+   "model": "\\Z11\\Z11W_2.p3d",
+   "icon": "\\Z11\\tex\\UI\\Z11W_map_CA.paa",
+   "scope": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "crew": "O_T_Helipilot_F",
+   "hiddenselectionstextures": [
+    "\\Z11\\tex\\H_co.paa",
+    "\\Z11\\tex\\I_co.paa",
+    "\\Z11\\tex\\A_co.paa",
+    "\\Z11\\tex\\R_co.paa"
+   ],
+   "texturelist": [],
+   "weapons": [
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "168Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "transportsoldier": "3",
+   "cost": "3000000",
+   "editorsubcategory": "EdSubcat_Helicopters",
+   "vehicleclass": "",
+   "simulation": "",
+   "class": "Z11WA_2",
+   "ancestry": [
+    "Z11WA_2",
+    "Z11WA",
+    "Z11_dynamicLoadout_base",
+    "Z11_base",
+    "Helicopter_Base_F",
+    "Helicopter",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Z11",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "0",
+   "displayname": "Z19",
+   "editorsubcategory": "EdSubcat_Helicopters",
+   "model": "Z19\\Z19.p3d",
+   "weapons": [
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "240Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "icon": "Z19\\tex\\uv\\WZ19_map_CA.paa",
+   "cost": "3000000",
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Z19_base",
+   "ancestry": [
+    "Z19_base",
+    "Helicopter_Base_F",
+    "Helicopter",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Z19",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "0",
+   "displayname": "Z19",
+   "editorsubcategory": "EdSubcat_Helicopters",
+   "model": "Z19\\Z19.p3d",
+   "weapons": [
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "240Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "icon": "Z19\\tex\\uv\\WZ19_map_CA.paa",
+   "cost": "3000000",
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Z19_dynamicLoadout",
+   "ancestry": [
+    "Z19_dynamicLoadout",
+    "Z19_base",
+    "Helicopter_Base_F",
+    "Helicopter",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Z19",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "Z19",
+   "crew": "O_T_Helipilot_F",
+   "hiddenselectionstextures": [
+    "Z19\\tex\\H_co.paa",
+    "Z19\\tex\\R_co.paa",
+    "Z19\\tex\\Eye_co.paa"
+   ],
+   "editorsubcategory": "EdSubcat_Helicopters",
+   "model": "Z19\\Z19.p3d",
+   "weapons": [
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "240Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "icon": "Z19\\tex\\uv\\WZ19_map_CA.paa",
+   "cost": "3000000",
+   "vehicleclass": "",
+   "simulation": "",
+   "class": "Z19",
+   "ancestry": [
+    "Z19",
+    "Z19_dynamicLoadout",
+    "Z19_base",
+    "Helicopter_Base_F",
+    "Helicopter",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Z19",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "$STR_DN_HELICOPTER",
+   "editorsubcategory": "EdSubcat_Planes",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconAir",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "model": "bmp",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Helicopter_Base_H",
+   "ancestry": [
+    "Helicopter_Base_H",
+    "Helicopter_Base_F",
+    "Helicopter",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Z8L",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "0",
+   "displayname": "Z20",
+   "editorsubcategory": "EdSubcat_Helicopters",
+   "model": "\\Z20\\Z20.p3d",
+   "weapons": [
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "168Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "transportsoldier": "9",
+   "icon": "Z20\\tex\\UI\\Z20_map_CA.paa",
+   "cost": "1000000",
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Z20_base",
+   "ancestry": [
+    "Z20_base",
+    "Helicopter_Base_H",
+    "Helicopter_Base_F",
+    "Helicopter",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Z20",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "Z20",
+   "crew": "O_T_Helipilot_F",
+   "hiddenselectionstextures": [
+    "Z20\\tex\\H_co.paa",
+    "Z20\\tex\\H2_co.paa",
+    "Z20\\tex\\H3_co.paa",
+    "Z20\\tex\\I_co.paa",
+    "Z20\\tex\\R_co.paa",
+    "Z20\\tex\\O_co.paa"
+   ],
+   "editorsubcategory": "EdSubcat_Helicopters",
+   "model": "\\Z20\\Z20.p3d",
+   "weapons": [
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "168Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "transportsoldier": "9",
+   "icon": "Z20\\tex\\UI\\Z20_map_CA.paa",
+   "cost": "1000000",
+   "vehicleclass": "",
+   "simulation": "",
+   "class": "Z20",
+   "ancestry": [
+    "Z20",
+    "Z20_base",
+    "Helicopter_Base_H",
+    "Helicopter_Base_F",
+    "Helicopter",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Z20",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "0",
+   "displayname": "Z8L",
+   "editorsubcategory": "EdSubcat_Helicopters",
+   "model": "\\Z8L\\Z8L.p3d",
+   "weapons": [
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "168Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "hiddenselectionstextures": [
+    "Z8L\\tex\\H_co.paa",
+    "Z8L\\tex\\D_co.paa",
+    "Z8L\\tex\\R_co.paa",
+    "Z8L\\tex\\R2_co.paa",
+    "Z8L\\tex\\I_co.paa"
+   ],
+   "transportsoldier": "14",
+   "icon": "Z8L\\tex\\UI\\Z8L_map_CA.paa",
+   "cost": "700000",
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Z8L_base_F",
+   "ancestry": [
+    "Z8L_base_F",
+    "Helicopter_Base_H",
+    "Helicopter_Base_F",
+    "Helicopter",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Z8L",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "crew": "O_T_Helipilot_F",
+   "hiddenselectionstextures": [
+    "Z8L\\tex\\H_co.paa",
+    "Z8L\\tex\\D_co.paa",
+    "Z8L\\tex\\R_co.paa",
+    "Z8L\\tex\\R2_co.paa",
+    "Z8L\\tex\\I_co.paa"
+   ],
+   "texturelist": [
+    "Black",
+    "1"
+   ],
+   "displayname": "Z8L",
+   "editorsubcategory": "EdSubcat_Helicopters",
+   "model": "\\Z8L\\Z8L.p3d",
+   "weapons": [
+    "CMFlareLauncher"
+   ],
+   "magazines": [
+    "168Rnd_CMFlare_Chaff_Magazine"
+   ],
+   "transportsoldier": "14",
+   "icon": "Z8L\\tex\\UI\\Z8L_map_CA.paa",
+   "cost": "700000",
+   "vehicleclass": "",
+   "simulation": "",
+   "class": "Z8L",
+   "ancestry": [
+    "Z8L",
+    "Z8L_base_F",
+    "Helicopter_Base_H",
+    "Helicopter_Base_F",
+    "Helicopter",
+    "Air",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "Z8L",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "ZBD04A",
+   "editorsubcategory": "EdSubcat_APCs",
+   "model": "\\ZBD04\\ZBD04A",
+   "simulation": "tankX",
+   "transportsoldier": "7",
+   "icon": "\\ZBD04\\tex\\UI\\ZBD04_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "crew": "Civilian",
+   "class": "ZBD04A_base",
+   "ancestry": [
+    "ZBD04A_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZBD04",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "crew": "O_T_Crew_F",
+   "displayname": "ZBD04A",
+   "editorsubcategory": "EdSubcat_APCs",
+   "model": "\\ZBD04\\ZBD04A",
+   "simulation": "tankX",
+   "transportsoldier": "7",
+   "icon": "\\ZBD04\\tex\\UI\\ZBD04_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "vehicleclass": "",
+   "class": "O_ZBD04A_base",
+   "ancestry": [
+    "O_ZBD04A_base",
+    "ZBD04A_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZBD04",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "ZBD04A",
+   "crew": "O_T_Crew_F",
+   "hiddenselectionstextures": [
+    "ZBD04\\tex\\H_co.paa",
+    "ZBD04\\tex\\T_co.paa",
+    "ZBD04\\tex\\TO_co.paa",
+    "ZBD04\\tex\\W_co.paa"
+   ],
+   "texturelist": [
+    "Woodcamo2",
+    "0.5",
+    "Desertcamo",
+    "0.5"
+   ],
+   "editorsubcategory": "EdSubcat_APCs",
+   "model": "\\ZBD04\\ZBD04A",
+   "simulation": "tankX",
+   "transportsoldier": "7",
+   "icon": "\\ZBD04\\tex\\UI\\ZBD04_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "O_ZBD04A",
+   "ancestry": [
+    "O_ZBD04A",
+    "O_ZBD04A_base",
+    "ZBD04A_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZBD04",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "ZBD05",
+   "editorsubcategory": "EdSubcat_APCs",
+   "model": "\\ZBD05\\ZBD05",
+   "simulation": "tankX",
+   "transportsoldier": "8",
+   "icon": "\\ZBD05\\tex\\UI\\ZBD05_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "crew": "Civilian",
+   "class": "ZBD05_base",
+   "ancestry": [
+    "ZBD05_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZBD05",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "ZBD05",
+   "crew": "O_T_Crew_F",
+   "hiddenselectionstextures": [
+    "ZBD05\\tex\\B_N_co.paa",
+    "ZBL09\\tex\\T_N_co.paa",
+    "ZBD05\\tex\\S_N_co.paa",
+    "ZBD05\\tex\\W_N_co.paa",
+    "ZBL09\\tex\\TO_N_co.paa"
+   ],
+   "texturelist": [
+    "PLANAVY camo",
+    "0.5",
+    "woolcamo2",
+    "0.5"
+   ],
+   "editorsubcategory": "EdSubcat_APCs",
+   "model": "\\ZBD05\\ZBD05",
+   "simulation": "tankX",
+   "transportsoldier": "8",
+   "icon": "\\ZBD05\\tex\\UI\\ZBD05_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "O_ZBD05",
+   "ancestry": [
+    "O_ZBD05",
+    "ZBD05_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZBD05",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "ZBL09",
+   "vehicleclass": "Armored",
+   "model": "\\ZBL09\\ZBL09",
+   "simulation": "CarX",
+   "transportsoldier": "7",
+   "icon": "\\ZBL09\\tex\\UI\\ZBL09_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "ZBL09_base",
+   "ancestry": [
+    "ZBL09_base",
+    "Wheeled_APC_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZBL09",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "crew": "O_T_Crew_F",
+   "displayname": "ZBL09",
+   "vehicleclass": "Armored",
+   "model": "\\ZBL09\\ZBL09",
+   "simulation": "CarX",
+   "transportsoldier": "7",
+   "icon": "\\ZBL09\\tex\\UI\\ZBL09_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "class": "O_ZBL09_base",
+   "ancestry": [
+    "O_ZBL09_base",
+    "ZBL09_base",
+    "Wheeled_APC_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZBL09",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "displayname": "ZBL09",
+   "hiddenselectionstextures": [
+    "ZBL09\\tex\\H_co.paa",
+    "ZBL09\\tex\\T_co.paa",
+    "ZBL09\\tex\\TO_co.paa",
+    "ZTL11\\tex\\W_co.paa"
+   ],
+   "texturelist": [
+    "Woodcamo",
+    "0.5",
+    "Desertcamo",
+    "0.5"
+   ],
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "crew": "O_T_Crew_F",
+   "vehicleclass": "Armored",
+   "model": "\\ZBL09\\ZBL09",
+   "simulation": "CarX",
+   "transportsoldier": "7",
+   "icon": "\\ZBL09\\tex\\UI\\ZBL09_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "class": "O_ZBL09",
+   "ancestry": [
+    "O_ZBL09",
+    "O_ZBL09_base",
+    "ZBL09_base",
+    "Wheeled_APC_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZBL09",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "ZTD05",
+   "editorsubcategory": "EdSubcat_Tanks",
+   "model": "\\ZTD05\\ZTD05",
+   "simulation": "tankX",
+   "transportsoldier": "0",
+   "icon": "\\ZTD05\\tex\\UI\\ZTD05_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "crew": "Civilian",
+   "class": "ZTD05_base",
+   "ancestry": [
+    "ZTD05_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTD05",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "ZTD05",
+   "crew": "O_T_Crew_F",
+   "hiddenselectionstextures": [
+    "ZTD05\\tex\\B_N_co.paa",
+    "ZTL11\\tex\\T_N_co.paa",
+    "ZBD05\\tex\\S_N_co.paa",
+    "ZBD05\\tex\\W_N_co.paa",
+    "ZTL11\\tex\\TO_N_co.paa"
+   ],
+   "texturelist": [
+    "PLANAVY camo",
+    "0.5",
+    "woolcamo2",
+    "0.5"
+   ],
+   "editorsubcategory": "EdSubcat_Tanks",
+   "model": "\\ZTD05\\ZTD05",
+   "simulation": "tankX",
+   "transportsoldier": "0",
+   "icon": "\\ZTD05\\tex\\UI\\ZTD05_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "O_ZTD05",
+   "ancestry": [
+    "O_ZTD05",
+    "ZTD05_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTD05",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "ZTL11",
+   "editorsubcategory": "EdSubcat_APCs",
+   "model": "\\ZTL11\\ZTL11",
+   "simulation": "CarX",
+   "hiddenselectionstextures": [
+    "ztl11\\tex\\h_co.paa",
+    "ztl11\\tex\\t_co.paa",
+    "ztl11\\tex\\to_co.paa",
+    "ztl11\\tex\\w_co.paa"
+   ],
+   "transportsoldier": "0",
+   "icon": "\\ZTL11\\tex\\UI\\ZTL11_map_ca.paa",
+   "texturelist": [
+    "Woodcamo",
+    "0.5",
+    "Desertcamo",
+    "0.5"
+   ],
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "crew": "Civilian",
+   "class": "ZTL11_base",
+   "ancestry": [
+    "ZTL11_base",
+    "Wheeled_APC_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTL11",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "ZTL11",
+   "crew": "O_T_Crew_F",
+   "editorsubcategory": "EdSubcat_APCs",
+   "model": "\\ZTL11\\ZTL11",
+   "simulation": "CarX",
+   "hiddenselectionstextures": [
+    "ztl11\\tex\\h_co.paa",
+    "ztl11\\tex\\t_co.paa",
+    "ztl11\\tex\\to_co.paa",
+    "ztl11\\tex\\w_co.paa"
+   ],
+   "transportsoldier": "0",
+   "icon": "\\ZTL11\\tex\\UI\\ZTL11_map_ca.paa",
+   "texturelist": [
+    "Woodcamo",
+    "0.5",
+    "Desertcamo",
+    "0.5"
+   ],
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "O_ZTL11",
+   "ancestry": [
+    "O_ZTL11",
+    "ZTL11_base",
+    "Wheeled_APC_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTL11",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "ZTQ15",
+   "vehicleclass": "Armored",
+   "model": "\\ZTQ15\\ZTQ15",
+   "simulation": "tankX",
+   "icon": "\\ZTQ15\\tex\\UI\\ZTQ15_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "ZTQ15_base",
+   "ancestry": [
+    "ZTQ15_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTQ15",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "ZTQ15",
+   "crew": "O_T_Crew_F",
+   "hiddenselectionstextures": [
+    "ZTQ15\\tex\\H_co.paa",
+    "ZTQ15\\tex\\T_co.paa",
+    "ZTQ15\\tex\\TO_co.paa",
+    "ZTQ15\\tex\\C_co.paa",
+    "ZTQ15\\tex\\W_co.paa",
+    "ZTQ15\\tex\\ERA_co.paa",
+    "ZTQ15\\tex\\RWS_co.paa"
+   ],
+   "vehicleclass": "Armored",
+   "model": "\\ZTQ15\\ZTQ15",
+   "simulation": "tankX",
+   "icon": "\\ZTQ15\\tex\\UI\\ZTQ15_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "class": "O_ZTQ15",
+   "ancestry": [
+    "O_ZTQ15",
+    "ZTQ15_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTQ15",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "ZTQ15 HEAVY",
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "crew": "O_T_Crew_F",
+   "hiddenselectionstextures": [
+    "ZTQ15\\tex\\H_co.paa",
+    "ZTQ15\\tex\\T_co.paa",
+    "ZTQ15\\tex\\TO_co.paa",
+    "ZTQ15\\tex\\C_co.paa",
+    "ZTQ15\\tex\\W_co.paa",
+    "ZTQ15\\tex\\ERA_co.paa",
+    "ZTQ15\\tex\\RWS_co.paa"
+   ],
+   "vehicleclass": "Armored",
+   "model": "\\ZTQ15\\ZTQ15",
+   "simulation": "tankX",
+   "icon": "\\ZTQ15\\tex\\UI\\ZTQ15_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "class": "O_ZTQ15B",
+   "ancestry": [
+    "O_ZTQ15B",
+    "O_ZTQ15",
+    "ZTQ15_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTQ15",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "ZTZ99",
+   "vehicleclass": "Armored",
+   "model": "\\ZTZ99\\ZTZ99",
+   "simulation": "tankX",
+   "icon": "ZTZ96B\\tex\\UI\\ZTZ96B_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "ZTZ99_base",
+   "ancestry": [
+    "ZTZ99_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTZ99",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "ZTZ99",
+   "crew": "O_T_Crew_F",
+   "hiddenselectionstextures": [
+    "ZTZ99\\tex\\H_co.paa",
+    "ZTZ99A\\tex\\C_co.paa",
+    "ZTZ99\\tex\\ERAS_co.paa",
+    "ZTZ99\\tex\\T_co.paa",
+    "ZTZ99\\tex\\TO_co.paa",
+    "ztz99a\\tex\\W_co.paa"
+   ],
+   "texturelist": [
+    "Woodcamo2",
+    "0.5",
+    "Desertcamo",
+    "0.5"
+   ],
+   "vehicleclass": "Armored",
+   "model": "\\ZTZ99\\ZTZ99",
+   "simulation": "tankX",
+   "icon": "ZTZ96B\\tex\\UI\\ZTZ96B_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "class": "O_ZTZ99",
+   "ancestry": [
+    "O_ZTZ99",
+    "ZTZ99_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTZ99",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "ZTZ99A",
+   "vehicleclass": "Armored",
+   "model": "\\ZTZ99A\\ZTZ99A",
+   "simulation": "tankX",
+   "hiddenselectionstextures": [
+    "ztz99a\\tex\\h_co.paa",
+    "ztz99a\\tex\\t_co.paa",
+    "ztz99a\\tex\\c_co.paa",
+    "ztz99a\\tex\\to_co.paa",
+    "ztz99a\\tex\\era_co.paa",
+    "ztz99a\\tex\\w_co.paa",
+    "ztz99a\\tex\\rws_co.paa"
+   ],
+   "icon": "\\ZTZ99A\\tex\\UI\\ztz99a_map_ca.paa",
+   "texturelist": [
+    "Woodcamo2",
+    "0.5",
+    "Woodcamo",
+    "0.2",
+    "Desertcamo",
+    "0.30000001"
+   ],
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "ZTZ99A_base",
+   "ancestry": [
+    "ZTZ99A_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTZ99A",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "ZTZ99A",
+   "crew": "O_T_Crew_F",
+   "vehicleclass": "Armored",
+   "model": "\\ZTZ99A\\ZTZ99A",
+   "simulation": "tankX",
+   "hiddenselectionstextures": [
+    "ztz99a\\tex\\h_co.paa",
+    "ztz99a\\tex\\t_co.paa",
+    "ztz99a\\tex\\c_co.paa",
+    "ztz99a\\tex\\to_co.paa",
+    "ztz99a\\tex\\era_co.paa",
+    "ztz99a\\tex\\w_co.paa",
+    "ztz99a\\tex\\rws_co.paa"
+   ],
+   "icon": "\\ZTZ99A\\tex\\UI\\ztz99a_map_ca.paa",
+   "texturelist": [
+    "Woodcamo2",
+    "0.5",
+    "Woodcamo",
+    "0.2",
+    "Desertcamo",
+    "0.30000001"
+   ],
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "class": "O_ZTZ99A",
+   "ancestry": [
+    "O_ZTZ99A",
+    "ZTZ99A_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTZ99A",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "PLZ05",
+   "editorsubcategory": "EdSubcat_Artillery",
+   "model": "\\PLZ05\\PLZ05",
+   "simulation": "tankX",
+   "hiddenselectionstextures": [
+    "PLZ05\\tex\\H_co.paa",
+    "PLZ05\\tex\\T_co.paa",
+    "PLZ05\\tex\\C_co.paa",
+    "PLZ05\\tex\\W_co.paa",
+    "PLZ05\\tex\\TO_co.paa"
+   ],
+   "transportsoldier": "0",
+   "icon": "\\PLZ05\\tex\\UI\\PLZ05_map_ca.paa",
+   "texturelist": [
+    "Woodcamo2",
+    "0.5",
+    "Desertcamo",
+    "0.5"
+   ],
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "crew": "Civilian",
+   "class": "PLZ05_base",
+   "ancestry": [
+    "PLZ05_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "PLZ05",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "PLZ05",
+   "crew": "O_T_Crew_F",
+   "editorsubcategory": "EdSubcat_Artillery",
+   "model": "\\PLZ05\\PLZ05",
+   "simulation": "tankX",
+   "hiddenselectionstextures": [
+    "PLZ05\\tex\\H_co.paa",
+    "PLZ05\\tex\\T_co.paa",
+    "PLZ05\\tex\\C_co.paa",
+    "PLZ05\\tex\\W_co.paa",
+    "PLZ05\\tex\\TO_co.paa"
+   ],
+   "transportsoldier": "0",
+   "icon": "\\PLZ05\\tex\\UI\\PLZ05_map_ca.paa",
+   "texturelist": [
+    "Woodcamo2",
+    "0.5",
+    "Desertcamo",
+    "0.5"
+   ],
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "O_PLZ05",
+   "ancestry": [
+    "O_PLZ05",
+    "PLZ05_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "PLZ05",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "ZTZ96A",
+   "vehicleclass": "Armored",
+   "model": "ZTZ96A\\ZTZ96A.p3d",
+   "simulation": "tankX",
+   "hiddenselectionstextures": [
+    "ZTZ96A\\tex\\96a_hull_co.paa",
+    "ZTZ96A\\tex\\96a_turret_co.paa",
+    "ZTZ96A\\tex\\96a_Tobjects_co.paa",
+    "ZTZ96A\\tex\\96A_cannon_co.paa",
+    "ZTZ96A\\tex\\96a_wheels_co.paa"
+   ],
+   "icon": "ZTZ96B\\tex\\UI\\ZTZ96B_map_ca.paa",
+   "texturelist": [
+    "Woodcamo2",
+    "0.5",
+    "Desertcamo",
+    "0.5"
+   ],
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "ZTZ96A_base",
+   "ancestry": [
+    "ZTZ96A_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTZ96_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "ZTZ96A",
+   "crew": "O_T_Crew_F",
+   "texturelist": [
+    "Woodcamo2",
+    "0.5",
+    "Desertcamo",
+    "0.5"
+   ],
+   "vehicleclass": "Armored",
+   "model": "ZTZ96A\\ZTZ96A.p3d",
+   "simulation": "tankX",
+   "hiddenselectionstextures": [
+    "ZTZ96A\\tex\\96a_hull_co.paa",
+    "ZTZ96A\\tex\\96a_turret_co.paa",
+    "ZTZ96A\\tex\\96a_Tobjects_co.paa",
+    "ZTZ96A\\tex\\96A_cannon_co.paa",
+    "ZTZ96A\\tex\\96a_wheels_co.paa"
+   ],
+   "icon": "ZTZ96B\\tex\\UI\\ZTZ96B_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "class": "O_ZTZ96A",
+   "ancestry": [
+    "O_ZTZ96A",
+    "ZTZ96A_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTZ96_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "ZTZ96B",
+   "vehicleclass": "Armored",
+   "model": "ZTZ96B\\ZTZ96B.p3d",
+   "simulation": "tankX",
+   "hiddenselectionstextures": [
+    "ZTZ96B\\tex\\96b_hull_co.paa",
+    "ZTZ96B\\tex\\96b_turret_co.paa",
+    "ZTZ96B\\tex\\96b_Tobjects_co.paa",
+    "ZTZ96A\\tex\\96a_cannon_co.paa",
+    "ZTZ96B\\tex\\96b_wheels_co.paa"
+   ],
+   "icon": "ZTZ96B\\tex\\UI\\ZTZ96B_map_ca.paa",
+   "texturelist": [
+    "Woodcamo2",
+    "0.5",
+    "Desertcamo",
+    "0.5"
+   ],
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "ZTZ96B_base",
+   "ancestry": [
+    "ZTZ96B_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTZ96_c",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "0",
+   "faction": "PLA_Armored_Force",
+   "displayname": "ZTZ96B",
+   "crew": "O_T_Crew_F",
+   "texturelist": [
+    "Woodcamo2",
+    "0.5",
+    "Desertcamo",
+    "0.5"
+   ],
+   "vehicleclass": "Armored",
+   "model": "ZTZ96B\\ZTZ96B.p3d",
+   "simulation": "tankX",
+   "hiddenselectionstextures": [
+    "ZTZ96B\\tex\\96b_hull_co.paa",
+    "ZTZ96B\\tex\\96b_turret_co.paa",
+    "ZTZ96B\\tex\\96b_Tobjects_co.paa",
+    "ZTZ96A\\tex\\96a_cannon_co.paa",
+    "ZTZ96B\\tex\\96b_wheels_co.paa"
+   ],
+   "icon": "ZTZ96B\\tex\\UI\\ZTZ96B_map_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "class": "O_ZTZ96B",
+   "ancestry": [
+    "O_ZTZ96B",
+    "ZTZ96B_base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ZTZ96_c",
+   "is_man": false,
+   "unresolved_parent": null
+  }
+ ],
+ "weapons": {
+  "missiles_TY90_AA_LK": {
+   "displayname": "$STR_LK_TY90_AAM0",
+   "magazines": [
+    "LK_TY90X4_AA",
+    "LK_TY90X1_AA"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "MissileLauncher",
+   "own": [
+    "cmimmunity",
+    "displayname",
+    "holdsteranimvalue",
+    "lockedtargetsound",
+    "lockingtargetsound",
+    "magazinereloadtime",
+    "magazines",
+    "maxrange",
+    "maxrangeprobab",
+    "midrange",
+    "midrangeprobab",
+    "minrange",
+    "minrangeprobab",
+    "reloadtime",
+    "showaimcursorinternal",
+    "sounds",
+    "texturetype",
+    "weaponlockdelay",
+    "weaponlocksystem"
+   ],
+   "linked": false
+  },
+  "missiles_AKD9_AG_LK": {
+   "displayname": "$STR_LK_AKD9_AGM0",
+   "magazines": [
+    "LK_AKD9X4_AG"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "missiles_SCALPEL",
+   "own": [
+    "canlock",
+    "displayname",
+    "magazinereloadtime",
+    "magazines",
+    "modes",
+    "reloadtime",
+    "sounds",
+    "weaponlocksystem"
+   ],
+   "linked": false
+  },
+  "missiles_AKD10_AG_LK": {
+   "displayname": "$STR_LK_AKD10_AGM0",
+   "magazines": [
+    "LK_AKD10X4_AG"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "missiles_SCALPEL",
+   "own": [
+    "canlock",
+    "displayname",
+    "magazinereloadtime",
+    "magazines",
+    "modes",
+    "reloadtime",
+    "sounds",
+    "weaponlocksystem"
+   ],
+   "linked": false
+  },
+  "missiles_TL2_AG_LK": {
+   "displayname": "$STR_LK_TL2_AGM0",
+   "magazines": [
+    "LK_TL2X4_AG",
+    "LK_TL2X1_AG"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "missiles_SCALPEL",
+   "own": [
+    "displayname",
+    "magazines"
+   ],
+   "linked": false
+  },
+  "Rocket_57mm_HE_LK": {
+   "displayname": "$STR_LK_57MM_ROCKETS0",
+   "magazines": [
+    "LK_57mmRocketX19_HE",
+    "LK_57mmRocketX20_HE",
+    "LK_57mmRocketX40_HE"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "Rocket_04_HE_Plane_CAS_01_F",
+   "own": [
+    "displayname",
+    "holdsteranimvalue",
+    "magazines",
+    "modes"
+   ],
+   "linked": false
+  },
+  "Rocket_90mm_HE_LK": {
+   "displayname": "$STR_LK_90MM_ROCKETS0",
+   "magazines": [
+    "LK_90mmRocketX7_HE",
+    "LK_90mmRocketX7_HE_2",
+    "LK_90mmRocketX14_HE_2"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "Rocket_04_HE_Plane_CAS_01_F",
+   "own": [
+    "displayname",
+    "holdsteranimvalue",
+    "magazines",
+    "modes"
+   ],
+   "linked": false
+  },
+  "Rocket_130mm_HE_LK": {
+   "displayname": "$STR_LK_130MM_ROCKETS0",
+   "magazines": [
+    "LK_130mmRocketX4_HE",
+    "LK_130mmRocketX8_HE"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "Rocket_04_HE_Plane_CAS_01_F",
+   "own": [
+    "displayname",
+    "holdsteranimvalue",
+    "magazines",
+    "modes"
+   ],
+   "linked": false
+  },
+  "LK_weapon_PL10Launcher": {
+   "displayname": "$STR_LK_PL10_name",
+   "magazines": [
+    "LK_PL10_AAM_X1",
+    "PylonMissile_LK_PL10_AAM_X1",
+    "PylonMissile_LK_PL10_AAM_X2"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "MissileLauncher",
+   "own": [
+    "autofire",
+    "cmimmunity",
+    "cursor",
+    "cursoraim",
+    "cursorsize",
+    "displayname",
+    "holdsteranimvalue",
+    "lockedtargetsound",
+    "lockingtargetsound",
+    "magazinereloadtime",
+    "magazines",
+    "maxrange",
+    "maxrangeprobab",
+    "midrange",
+    "midrangeprobab",
+    "minrange",
+    "minrangeprobab",
+    "reloadtime",
+    "showaimcursorinternal",
+    "soundfly",
+    "sounds",
+    "texturetype",
+    "weaponlockdelay",
+    "weaponlocksystem"
+   ],
+   "linked": false
+  },
+  "LK_weapon_PL15Launcher": {
+   "displayname": "$STR_LK_PL15_name",
+   "magazines": [
+    "LK_PL15_AAM_X1",
+    "PylonMissile_LK_PL15_AAM_X1",
+    "PylonMissile_LK_PL15_AAM_X2"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "MissileLauncher",
+   "own": [
+    "airateoffire",
+    "airateoffiredispersion",
+    "airateoffiredistance",
+    "autofire",
+    "cmimmunity",
+    "cursor",
+    "cursoraim",
+    "cursorsize",
+    "displayname",
+    "lockedtargetsound",
+    "lockingtargetsound",
+    "magazinereloadtime",
+    "magazines",
+    "maxrange",
+    "maxrangeprobab",
+    "midrange",
+    "midrangeprobab",
+    "minrange",
+    "minrangeprobab",
+    "modes",
+    "reloadtime",
+    "showaimcursorinternal",
+    "soundfly",
+    "sounds",
+    "texturetype",
+    "weaponlockdelay",
+    "weaponlocksystem"
+   ],
+   "linked": false
+  },
+  "LK_weapon_LS6_100KG": {
+   "displayname": "$STR_LK_LS6_100X6_name",
+   "magazines": [
+    "PylonMissile_LK_LS6_100KG_X6",
+    "PylonMissile_LK_LS6_100KG_X3",
+    "PylonMissile_LK_LS6_100KG_X6_wing"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "weapon_LGBLauncherBase",
+   "own": [
+    "displayname",
+    "magazinereloadtime",
+    "magazines",
+    "reloadtime"
+   ],
+   "linked": false
+  },
+  "LK_weapon_LS6_250KG": {
+   "displayname": "$STR_LK_LS6_250_name",
+   "magazines": [
+    "PylonMissile_LK_LS6_250KG_X1"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "weapon_LGBLauncherBase",
+   "own": [
+    "displayname",
+    "magazinereloadtime",
+    "magazines",
+    "reloadtime"
+   ],
+   "linked": false
+  },
+  "LK_weapon_LS6_500KG": {
+   "displayname": "$STR_LK_LS6_500_name",
+   "magazines": [
+    "PylonMissile_LK_LS6_500KG_X1"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "weapon_LGBLauncherBase",
+   "own": [
+    "displayname",
+    "magazinereloadtime",
+    "magazines",
+    "reloadtime"
+   ],
+   "linked": false
+  },
+  "LK_weapon_YJ91Launcher": {
+   "displayname": "$STR_LK_YJ91_name",
+   "magazines": [
+    "PylonMissile_LK_YJ91_AGM_X1"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "MissileLauncher",
+   "own": [
+    "airateoffire",
+    "airateoffiredistance",
+    "autofire",
+    "cmimmunity",
+    "cursor",
+    "cursoraim",
+    "displayname",
+    "lockedtargetsound",
+    "lockingtargetsound",
+    "magazinereloadtime",
+    "magazines",
+    "maxrange",
+    "maxrangeprobab",
+    "midrange",
+    "midrangeprobab",
+    "minrange",
+    "minrangeprobab",
+    "namesound",
+    "reloadtime",
+    "showaimcursorinternal",
+    "soundfly",
+    "sounds",
+    "weaponlockdelay",
+    "weaponlocksystem"
+   ],
+   "linked": false
+  },
+  "LK_weapon_YJ9ELauncher": {
+   "displayname": "$STR_LK_YJ9E_name",
+   "magazines": [
+    "PylonMissile_LK_YJ9E_AGM_X1",
+    "PylonMissile_LK_YJ9E_AGM_X2"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "MissileLauncher",
+   "own": [
+    "airateoffire",
+    "airateoffiredistance",
+    "autofire",
+    "cmimmunity",
+    "cursor",
+    "cursoraim",
+    "displayname",
+    "lockedtargetsound",
+    "lockingtargetsound",
+    "magazinereloadtime",
+    "magazines",
+    "maxrange",
+    "maxrangeprobab",
+    "midrange",
+    "midrangeprobab",
+    "minrange",
+    "minrangeprobab",
+    "namesound",
+    "reloadtime",
+    "showaimcursorinternal",
+    "soundfly",
+    "sounds",
+    "weaponlockdelay",
+    "weaponlocksystem"
+   ],
+   "linked": false
+  },
+  "fakeweapon_fueltank_lk": {
+   "displayname": "Fuel tank",
+   "magazines": [
+    "PylonMissile_LK_1400L_fueltank",
+    "PylonMissile_LK_740L_fueltank"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "FakeHorn",
+   "own": [
+    "displayname",
+    "magazines"
+   ],
+   "linked": false
+  },
+  "cannon_125mm_LK": {
+   "displayname": "$STR_LK_ZPT98_CANNON0",
+   "magazines": [
+    "16Rnd_125mm_APFSDS_LK",
+    "16Rnd_125mm_APFSDS_LK_Red",
+    "16Rnd_125mm_APFSDS_LK_Green",
+    "16Rnd_125mm_APFSDS_LK_Yellow",
+    "16Rnd_125mm_APFSDS_LK_2",
+    "16Rnd_125mm_APFSDS_LK2_Red",
+    "16Rnd_125mm_APFSDS_LK2_Green",
+    "16Rnd_125mm_APFSDS_LK2_Yellow",
+    "12Rnd_125mm_HEAT_LK",
+    "12Rnd_125mm_HEAT_LK_Red",
+    "12Rnd_125mm_HEAT_LK_Green",
+    "12Rnd_125mm_HEAT_LK_Yellow",
+    "8Rnd_125mm_HE_LK",
+    "8Rnd_125mm_HE_LK_Red",
+    "8Rnd_125mm_HE_LK_Green",
+    "8Rnd_125mm_HE_LK_Yellow",
+    "5Rnd_125mm_cannon_missiles_lk"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "cannon_125mm",
+   "own": [
+    "displayname",
+    "magazines"
+   ],
+   "linked": false
+  },
+  "cannon_125mm_LK_2": {
+   "displayname": "$STR_LK_88C_CANNON0",
+   "magazines": [
+    "16Rnd_125mm_APFSDS_LK",
+    "16Rnd_125mm_APFSDS_LK_Red",
+    "16Rnd_125mm_APFSDS_LK_Green",
+    "16Rnd_125mm_APFSDS_LK_Yellow",
+    "16Rnd_125mm_APFSDS_LK_2",
+    "16Rnd_125mm_APFSDS_LK2_Red",
+    "16Rnd_125mm_APFSDS_LK2_Green",
+    "16Rnd_125mm_APFSDS_LK2_Yellow",
+    "12Rnd_125mm_HEAT_LK",
+    "12Rnd_125mm_HEAT_LK_Red",
+    "12Rnd_125mm_HEAT_LK_Green",
+    "12Rnd_125mm_HEAT_LK_Yellow",
+    "8Rnd_125mm_HE_LK",
+    "8Rnd_125mm_HE_LK_Red",
+    "8Rnd_125mm_HE_LK_Green",
+    "8Rnd_125mm_HE_LK_Yellow",
+    "5Rnd_125mm_cannon_missiles_lk"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "cannon_125mm",
+   "own": [
+    "displayname",
+    "magazines"
+   ],
+   "linked": false
+  },
+  "cannon_125mm_LK_3": {
+   "displayname": "$STR_LK_ZPT99A_CANNON0",
+   "magazines": [
+    "16Rnd_125mm_APFSDS_LK",
+    "16Rnd_125mm_APFSDS_LK_Red",
+    "16Rnd_125mm_APFSDS_LK_Green",
+    "16Rnd_125mm_APFSDS_LK_Yellow",
+    "16Rnd_125mm_APFSDS_LK_2",
+    "16Rnd_125mm_APFSDS_LK2_Red",
+    "16Rnd_125mm_APFSDS_LK2_Green",
+    "16Rnd_125mm_APFSDS_LK2_Yellow",
+    "12Rnd_125mm_HEAT_LK",
+    "12Rnd_125mm_HEAT_LK_Red",
+    "12Rnd_125mm_HEAT_LK_Green",
+    "12Rnd_125mm_HEAT_LK_Yellow",
+    "8Rnd_125mm_HE_LK",
+    "8Rnd_125mm_HE_LK_Red",
+    "8Rnd_125mm_HE_LK_Green",
+    "8Rnd_125mm_HE_LK_Yellow",
+    "5Rnd_125mm_cannon_missiles_lk"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "cannon_125mm_LK",
+   "own": [
+    "displayname"
+   ],
+   "linked": false
+  },
+  "cannon_105mm_LK": {
+   "displayname": "$STR_LK_ZPL-151_CANNON0",
+   "magazines": [
+    "40Rnd_105mm_APFSDS",
+    "40Rnd_105mm_APFSDS_T_Red",
+    "40Rnd_105mm_APFSDS_T_Green",
+    "40Rnd_105mm_APFSDS_T_Yellow",
+    "20Rnd_105mm_HEAT_MP",
+    "20Rnd_105mm_HEAT_MP_T_Red",
+    "20Rnd_105mm_HEAT_MP_T_Green",
+    "20Rnd_105mm_HEAT_MP_T_Yellow",
+    "20Rnd_105mm_APFSDS",
+    "20Rnd_105mm_APFSDS_T_Red",
+    "20Rnd_105mm_APFSDS_T_Green",
+    "20Rnd_105mm_APFSDS_T_Yellow",
+    "16Rnd_105mm_HEAT_MP",
+    "16Rnd_105mm_HEAT_MP_T_Green",
+    "16Rnd_105mm_HEAT_MP_T_Red",
+    "16Rnd_105mm_HEAT_MP_T_Yellow",
+    "12Rnd_105mm_HEAT_MP",
+    "12Rnd_105mm_HEAT_MP_T_Green",
+    "12Rnd_105mm_HEAT_MP_T_Red",
+    "12Rnd_105mm_HEAT_MP_T_Yellow",
+    "6Rnd_105mm_HE",
+    "6Rnd_105mm_HE_T_Green",
+    "6Rnd_105mm_HE_T_Red",
+    "6Rnd_105mm_HE_T_Yellow",
+    "4Rnd_105mm_cannon_missiles_lk"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "cannon_105mm",
+   "own": [
+    "displayname",
+    "magazinereloadtime",
+    "magazines",
+    "reloadtime"
+   ],
+   "linked": false
+  },
+  "cannon_105mm_LK_2": {
+   "displayname": "$STR_LK_ZPL98A_CANNON0",
+   "magazines": [
+    "40Rnd_105mm_APFSDS",
+    "40Rnd_105mm_APFSDS_T_Red",
+    "40Rnd_105mm_APFSDS_T_Green",
+    "40Rnd_105mm_APFSDS_T_Yellow",
+    "20Rnd_105mm_HEAT_MP",
+    "20Rnd_105mm_HEAT_MP_T_Red",
+    "20Rnd_105mm_HEAT_MP_T_Green",
+    "20Rnd_105mm_HEAT_MP_T_Yellow",
+    "20Rnd_105mm_APFSDS",
+    "20Rnd_105mm_APFSDS_T_Red",
+    "20Rnd_105mm_APFSDS_T_Green",
+    "20Rnd_105mm_APFSDS_T_Yellow",
+    "16Rnd_105mm_HEAT_MP",
+    "16Rnd_105mm_HEAT_MP_T_Green",
+    "16Rnd_105mm_HEAT_MP_T_Red",
+    "16Rnd_105mm_HEAT_MP_T_Yellow",
+    "12Rnd_105mm_HEAT_MP",
+    "12Rnd_105mm_HEAT_MP_T_Green",
+    "12Rnd_105mm_HEAT_MP_T_Red",
+    "12Rnd_105mm_HEAT_MP_T_Yellow",
+    "6Rnd_105mm_HE",
+    "6Rnd_105mm_HE_T_Green",
+    "6Rnd_105mm_HE_T_Red",
+    "6Rnd_105mm_HE_T_Yellow",
+    "4Rnd_105mm_cannon_missiles_lk"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "cannon_105mm",
+   "own": [
+    "displayname",
+    "magazinereloadtime",
+    "magazines",
+    "reloadtime"
+   ],
+   "linked": false
+  },
+  "cannon_100mm_LK": {
+   "displayname": "$STR_LK_2A70_CANNON0",
+   "magazines": [
+    "20Rnd_100mm_HEAT_MP",
+    "20Rnd_100mm_HEAT_MP_T_Green",
+    "20Rnd_100mm_HEAT_MP_T_Red",
+    "20Rnd_100mm_HEAT_MP_T_Yellow",
+    "30Rnd_100mm_HE_T_Red",
+    "30Rnd_100mm_HE_T_Green",
+    "30Rnd_100mm_HE_T_Yellow",
+    "30Rnd_100mm_HE",
+    "8Rnd_100mm_cannon_missiles_lk"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "cannon_105mm",
+   "own": [
+    "displayname",
+    "magazinereloadtime",
+    "magazines",
+    "reloadtime"
+   ],
+   "linked": false
+  },
+  "autocannon_30mm_LK": {
+   "displayname": "$STR_LK_ZPT99_CANNON0",
+   "scope": 1,
+   "type": 65536,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "autocannon_30mm_CTWS",
+   "own": [
+    "displayname",
+    "muzzles"
+   ],
+   "linked": false
+  },
+  "HMG_QJC88": {
+   "displayname": "$STR_LK_QJC88_HMG0",
+   "magazines": [
+    "450Rnd_127x108_Ball",
+    "150Rnd_127x108_Ball",
+    "50Rnd_127x108_Ball"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "HMG_NSVT",
+   "own": [
+    "displayname",
+    "magazinereloadtime",
+    "magazines",
+    "showaimcursorinternal"
+   ],
+   "linked": false
+  },
+  "coax_type86": {
+   "displayname": "$STR_LK_Type86_LMG0",
+   "magazines": [
+    "250Rnd_762x54_LK",
+    "250Rnd_762x54_LK_T_Red",
+    "250Rnd_762x54_LK_T_Green",
+    "250Rnd_762x54_LK_T_Yellow",
+    "250Rnd_762x54_LK_Red",
+    "250Rnd_762x54_LK_Green",
+    "250Rnd_762x54_LK_Yellow"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "LMG_coax",
+   "own": [
+    "ballisticscomputer",
+    "displayname",
+    "fcsmaxleadspeed",
+    "fcszeroingdelay",
+    "magazinereloadtime",
+    "magazines",
+    "maxzeroing",
+    "showaimcursorinternal"
+   ],
+   "linked": false
+  },
+  "mortar_122mm_LK": {
+   "displayname": "$STR_LK_D30_MO0",
+   "magazines": [
+    "32Rnd_122mm_Mo_shells",
+    "8Rnd_122mm_Smoke"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "mortar_155mm_AMOS",
+   "own": [
+    "displayname",
+    "magazines",
+    "modes"
+   ],
+   "linked": false
+  },
+  "missiles_HJ9_LK": {
+   "displayname": "$STR_LK_HJ9_ATGM0",
+   "magazines": [
+    "2Rnd_HJ9_HEAT_LK"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "missiles_Vorona",
+   "own": [
+    "airateoffire",
+    "airateoffiredispersion",
+    "airateoffiredistance",
+    "canlock",
+    "displayname",
+    "holdsteranimvalue",
+    "lockedtargetsound",
+    "lockingtargetsound",
+    "magazinereloadtime",
+    "magazines",
+    "maxrange",
+    "maxrangeprobab",
+    "midrange",
+    "midrangeprobab",
+    "minrange",
+    "minrangeprobab",
+    "reloadmagazinesound",
+    "reloadtime",
+    "soundfly",
+    "texturetype",
+    "weaponlocksystem"
+   ],
+   "linked": false
+  },
+  "missile_TY90_LK": {
+   "displayname": "$STR_LK_TY90_AA0",
+   "magazines": [
+    "4Rnd_TY90_Missiles_LK"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "missiles_titan",
+   "own": [
+    "cmimmunity",
+    "displayname",
+    "holdsteranimvalue",
+    "magazinereloadtime",
+    "magazines"
+   ],
+   "linked": false
+  },
+  "autocannon_35mm_LK": {
+   "displayname": "$STR_LK_PG99_CANNON0",
+   "magazines": [
+    "680Rnd_35mm_AA_shells",
+    "680Rnd_35mm_AA_shells_Tracer_Red",
+    "680Rnd_35mm_AA_shells_Tracer_Green",
+    "680Rnd_35mm_AA_shells_Tracer_Yellow",
+    "200Rnd_DKG01A_LK",
+    "200Rnd_DKG01A_LK_Green",
+    "200Rnd_DKG01A_LK_Red",
+    "200Rnd_DKG01A_LK_Yellow",
+    "100Rnd_DM23_LK",
+    "100Rnd_DM23_LK_Green",
+    "100Rnd_DM23_LK_Red",
+    "100Rnd_DM23_LK_Yellow"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "autocannon_35mm",
+   "own": [
+    "ballisticscomputer",
+    "displayname",
+    "magazinereloadtime",
+    "magazines"
+   ],
+   "linked": false
+  },
+  "autocannon_23mm_LK_base": {
+   "scope": "1",
+   "displayname": "$STR_LK_23MM_CANNON0",
+   "magazines": [
+    "300Rnd_23mm_shells_LK",
+    "1000Rnd_23mm_shells_LK"
+   ],
+   "type": 65536,
+   "muzzles": [],
+   "parent": "gatling_20mm",
+   "own": [
+    "canlock",
+    "cursor",
+    "cursoraim",
+    "displayname",
+    "magazines",
+    "namesound",
+    "scope"
+   ],
+   "linked": false
+  },
+  "Fighter_Gun_23mm_lk": {
+   "scope": "2",
+   "displayname": "$STR_LK_type23-3_name",
+   "magazines": [
+    "300Rnd_Fighter_Gun23mm_AA_LK"
+   ],
+   "type": 65536,
+   "muzzles": [],
+   "parent": "gatling_20mm",
+   "own": [
+    "canlock",
+    "cursor",
+    "cursoraim",
+    "displayname",
+    "magazines",
+    "namesound",
+    "scope"
+   ],
+   "linked": false
+  },
+  "autocannon_23mm_LK": {
+   "scope": "1",
+   "displayname": "$STR_LK_23MM_CANNON0",
+   "magazines": [
+    "300Rnd_23mm_shells_LK",
+    "1000Rnd_23mm_shells_LK"
+   ],
+   "type": 65536,
+   "muzzles": [],
+   "parent": "autocannon_23mm_LK_base",
+   "own": [
+    "muzzles",
+    "scope"
+   ],
+   "linked": false
+  },
+  "LD2000_30mm": {
+   "displayname": "$STR_Type730 30mm_30MM_F0",
+   "magazines": [
+    "1000Rnd_30mm_AA_Red_LK",
+    "1000Rnd_30mm_AA_Green_LK",
+    "1000Rnd_30mm_AA_Yellow_LK",
+    "1000Rnd_30mm_AA_Shells_LK",
+    "1000Rnd_Gatling_30mm_Plane_CAS_01_F"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "Gatling_30mm_Plane_CAS_01_F",
+   "own": [
+    "ballisticscomputer",
+    "canlock",
+    "displayname",
+    "holdsteranimvalue",
+    "magazinereloadtime",
+    "magazines",
+    "modes"
+   ],
+   "linked": false
+  }
+ },
+ "magazines": {
+  "LK_TY90X4_AA": {
+   "ammo": "LK_TY90_AA",
+   "count": "4",
+   "displayname": "TY-90 AAM",
+   "scope": 2,
+   "parent": "PylonRack_1Rnd_LG_scalpel"
+  },
+  "LK_AKD9X4_AG": {
+   "ammo": "LK_AKD9_AT",
+   "count": "4",
+   "displayname": "AKD-9",
+   "scope": 2,
+   "parent": "LK_TY90X4_AA"
+  },
+  "LK_AKD10X4_AG": {
+   "ammo": "LK_AKD10_AT",
+   "count": "4",
+   "displayname": "AKD-10",
+   "scope": 2,
+   "parent": "LK_TY90X4_AA"
+  },
+  "LK_TL2X4_AG": {
+   "ammo": "LK_TL2_AG",
+   "count": "4",
+   "displayname": "TL-2 AGM",
+   "scope": 2,
+   "parent": "LK_TY90X4_AA"
+  },
+  "LK_57mmRocketX19_HE": {
+   "ammo": "LK_57mmRocket_HE",
+   "count": "19",
+   "displayname": "57mm Rockets",
+   "scope": 2,
+   "parent": "7Rnd_Rocket_04_HE_F"
+  },
+  "LK_57mmRocketX20_HE": {
+   "ammo": "LK_57mmRocket_HE",
+   "count": "20",
+   "displayname": "B8M-1",
+   "scope": 2,
+   "parent": "7Rnd_Rocket_04_HE_F"
+  },
+  "LK_57mmRocketX40_HE": {
+   "count": "40",
+   "displayname": "B8M-1(double)",
+   "ammo": "LK_57mmRocket_HE",
+   "scope": 2,
+   "parent": "LK_57mmRocketX20_HE"
+  },
+  "LK_90mmRocketX7_HE": {
+   "ammo": "LK_90mmRocket_HE",
+   "count": "7",
+   "displayname": "90mm Rockets",
+   "scope": 2,
+   "parent": "7Rnd_Rocket_04_HE_F"
+  },
+  "LK_90mmRocketX7_HE_2": {
+   "ammo": "LK_90mmRocket_HE",
+   "count": "7",
+   "displayname": "HF-7",
+   "scope": 2,
+   "parent": "7Rnd_Rocket_04_HE_F"
+  },
+  "LK_90mmRocketX14_HE_2": {
+   "count": "14",
+   "displayname": "HF-7(double)",
+   "ammo": "LK_90mmRocket_HE",
+   "scope": 2,
+   "parent": "LK_90mmRocketX7_HE_2"
+  },
+  "LK_130mmRocketX4_HE": {
+   "ammo": "LK_130mmRocket_HE",
+   "count": "4",
+   "displayname": "HF-14",
+   "scope": 2,
+   "parent": "7Rnd_Rocket_04_HE_F"
+  },
+  "LK_130mmRocketX8_HE": {
+   "count": "8",
+   "displayname": "HF-14(double)",
+   "ammo": "LK_130mmRocket_HE",
+   "scope": 2,
+   "parent": "LK_130mmRocketX4_HE"
+  },
+  "LK_TY90X1_AA": {
+   "ammo": "LK_TY90_AA",
+   "count": "1",
+   "displayname": "TY90 x1",
+   "scope": 2,
+   "parent": "LK_TY90X4_AA"
+  },
+  "LK_TL2X1_AG": {
+   "ammo": "LK_TL2_AG",
+   "count": "1",
+   "displayname": "TL2 x1",
+   "scope": 2,
+   "parent": "LK_TY90X4_AA"
+  },
+  "LK_PL10_AAM_X1": {
+   "scope": "2",
+   "ammo": "LK_Missile_AA_PL10",
+   "count": "1",
+   "displayname": "$STR_LK_PL10_name",
+   "parent": "VehicleMagazine"
+  },
+  "PylonMissile_LK_PL10_AAM_X1": {
+   "count": "1",
+   "scope": "2",
+   "ammo": "LK_Missile_AA_PL10",
+   "displayname": "$STR_LK_PL10_name",
+   "parent": "LK_PL10_AAM_X1"
+  },
+  "PylonMissile_LK_PL10_AAM_X2": {
+   "count": "2",
+   "displayname": "$STR_LK_PL10X2_name",
+   "scope": "2",
+   "ammo": "LK_Missile_AA_PL10",
+   "parent": "LK_PL10_AAM_X1"
+  },
+  "LK_PL15_AAM_X1": {
+   "scope": "2",
+   "ammo": "LK_Missile_AA_PL15",
+   "count": "1",
+   "displayname": "$STR_LK_PL15_name",
+   "parent": "VehicleMagazine"
+  },
+  "PylonMissile_LK_PL15_AAM_X1": {
+   "count": "1",
+   "scope": "2",
+   "ammo": "LK_Missile_AA_PL15",
+   "displayname": "$STR_LK_PL15_name",
+   "parent": "LK_PL15_AAM_X1"
+  },
+  "PylonMissile_LK_PL15_AAM_X2": {
+   "count": "2",
+   "displayname": "$STR_LK_PL15X2_name",
+   "scope": "2",
+   "ammo": "LK_Missile_AA_PL15",
+   "parent": "LK_PL15_AAM_X1"
+  },
+  "PylonMissile_LK_LS6_100KG_X6": {
+   "ammo": "LK_LS6_100KG_GBU",
+   "count": "6",
+   "displayname": "$STR_LK_LS6_100X6_magname",
+   "scope": 1,
+   "parent": "VehicleMagazine"
+  },
+  "PylonMissile_LK_LS6_100KG_X3": {
+   "count": "3",
+   "displayname": "$STR_LK_LS6_100X3_magname",
+   "ammo": "LK_LS6_100KG_GBU",
+   "scope": 1,
+   "parent": "PylonMissile_LK_LS6_100KG_X6"
+  },
+  "PylonMissile_LK_LS6_100KG_X6_wing": {
+   "ammo": "LK_LS6_100KG_GBU",
+   "count": "6",
+   "displayname": "$STR_LK_LS6_100X6_magname",
+   "scope": 1,
+   "parent": "PylonMissile_LK_LS6_100KG_X6"
+  },
+  "PylonMissile_LK_LS6_250KG_X1": {
+   "ammo": "LK_LS6_250KG_GBU",
+   "count": "1",
+   "displayname": "$STR_LK_LS6_250_name",
+   "scope": 1,
+   "parent": "VehicleMagazine"
+  },
+  "PylonMissile_LK_LS6_500KG_X1": {
+   "ammo": "LK_LS6_500KG_GBU",
+   "count": "1",
+   "displayname": "$STR_LK_LS6_500_name",
+   "scope": 1,
+   "parent": "VehicleMagazine"
+  },
+  "PylonMissile_LK_YJ91_AGM_X1": {
+   "ammo": "LK_YJ91_AGM",
+   "count": "1",
+   "displayname": "$STR_LK_YJ91_name",
+   "scope": 1,
+   "parent": "VehicleMagazine"
+  },
+  "PylonMissile_LK_YJ9E_AGM_X1": {
+   "ammo": "LK_YJ9E_AGM",
+   "count": "1",
+   "displayname": "$STR_LK_YJ9E_name",
+   "scope": 1,
+   "parent": "VehicleMagazine"
+  },
+  "PylonMissile_LK_YJ9E_AGM_X2": {
+   "ammo": "LK_YJ9E_AGM",
+   "count": "2",
+   "displayname": "$STR_LK_YJ9EX2_name",
+   "scope": 1,
+   "parent": "VehicleMagazine"
+  },
+  "PylonMissile_LK_1400L_fueltank": {
+   "ammo": "LK_fakebomb_1400",
+   "count": "1",
+   "displayname": "1400L fuel tank",
+   "scope": 1,
+   "parent": "VehicleMagazine"
+  },
+  "PylonMissile_LK_740L_fueltank": {
+   "ammo": "LK_fakebomb_740",
+   "displayname": "740L fuel tank",
+   "count": "1",
+   "scope": 1,
+   "parent": "PylonMissile_LK_1400L_fueltank"
+  },
+  "16Rnd_125mm_APFSDS_LK": {
+   "ammo": "Sh_125mm_APFSDS_LK",
+   "count": "16",
+   "displayname": "16Rounds DTC10-125  APFSDS ",
+   "scope": 1,
+   "parent": "24Rnd_125mm_APFSDS"
+  },
+  "16Rnd_125mm_APFSDS_LK_Red": {
+   "ammo": "Sh_125mm_APFSDS_LK_Red",
+   "displayname": "16Rounds DTC10-125 APFSDS Red",
+   "count": "16",
+   "scope": 1,
+   "parent": "16Rnd_125mm_APFSDS_LK"
+  },
+  "16Rnd_125mm_APFSDS_LK_Green": {
+   "ammo": "Sh_125mm_APFSDS_LK_Green",
+   "displayname": "16Rounds DTC10-125 APFSDS Green",
+   "count": "16",
+   "scope": 1,
+   "parent": "16Rnd_125mm_APFSDS_LK"
+  },
+  "16Rnd_125mm_APFSDS_LK_Yellow": {
+   "ammo": "Sh_125mm_APFSDS_LK_Yellow",
+   "displayname": "16Rounds DTC10-125 APFSDS Yellow",
+   "count": "16",
+   "scope": 1,
+   "parent": "16Rnd_125mm_APFSDS_LK"
+  },
+  "16Rnd_125mm_APFSDS_LK_2": {
+   "ammo": "Sh_125mm_APFSDS_LK_2",
+   "count": "16",
+   "displayname": "16Rounds 125-I APFSDS ",
+   "scope": 1,
+   "parent": "24Rnd_125mm_APFSDS"
+  },
+  "16Rnd_125mm_APFSDS_LK2_Red": {
+   "ammo": "Sh_125mm_APFSDS_LK2_Red",
+   "displayname": "16Rounds 125-I APFSDS Red",
+   "count": "16",
+   "scope": 1,
+   "parent": "16Rnd_125mm_APFSDS_LK_2"
+  },
+  "16Rnd_125mm_APFSDS_LK2_Green": {
+   "ammo": "Sh_125mm_APFSDS_LK2_Green",
+   "displayname": "16Rounds 125-I APFSDS Green",
+   "count": "16",
+   "scope": 1,
+   "parent": "16Rnd_125mm_APFSDS_LK_2"
+  },
+  "16Rnd_125mm_APFSDS_LK2_Yellow": {
+   "ammo": "Sh_125mm_APFSDS_LK2_Yellow",
+   "displayname": "16Rounds 125-I APFSDS Yellow",
+   "count": "16",
+   "scope": 1,
+   "parent": "16Rnd_125mm_APFSDS_LK_2"
+  },
+  "12Rnd_125mm_HEAT_LK": {
+   "ammo": "Sh_125mm_HEAT",
+   "displayname": "12Rounds DTP125 HEAT",
+   "scope": 2,
+   "parent": "12Rnd_125mm_HEAT"
+  },
+  "12Rnd_125mm_HEAT_LK_Red": {
+   "ammo": "Sh_125mm_HEAT_T_Red",
+   "displayname": "12Rounds DTP125 HEAT Red",
+   "scope": 2,
+   "parent": "12Rnd_125mm_HEAT"
+  },
+  "12Rnd_125mm_HEAT_LK_Green": {
+   "ammo": "Sh_125mm_HEAT_T_Green",
+   "displayname": "12Rounds DTP125 HEAT Green",
+   "scope": 2,
+   "parent": "12Rnd_125mm_HEAT"
+  },
+  "12Rnd_125mm_HEAT_LK_Yellow": {
+   "ammo": "Sh_125mm_HEAT_T_Yellow",
+   "displayname": "12Rounds DTP125 HEAT Yellow",
+   "scope": 2,
+   "parent": "12Rnd_125mm_HEAT"
+  },
+  "8Rnd_125mm_HE_LK": {
+   "ammo": "Sh_125mm_HE",
+   "count": "8",
+   "displayname": "$STR_A3_CfgMagazines_12Rnd_125mm_HE0",
+   "scope": 2,
+   "parent": "12Rnd_125mm_HE"
+  },
+  "8Rnd_125mm_HE_LK_Red": {
+   "ammo": "Sh_125mm_HE_T_Red",
+   "count": "8",
+   "displayname": "$STR_A3_CfgMagazines_12Rnd_125mm_HE0",
+   "scope": 2,
+   "parent": "12Rnd_125mm_HE"
+  },
+  "8Rnd_125mm_HE_LK_Green": {
+   "ammo": "Sh_125mm_HE_T_Green",
+   "count": "8",
+   "displayname": "$STR_A3_CfgMagazines_12Rnd_125mm_HE0",
+   "scope": 2,
+   "parent": "12Rnd_125mm_HE"
+  },
+  "8Rnd_125mm_HE_LK_Yellow": {
+   "ammo": "Sh_125mm_HE_T_Yellow",
+   "count": "8",
+   "displayname": "$STR_A3_CfgMagazines_12Rnd_125mm_HE0",
+   "scope": 2,
+   "parent": "12Rnd_125mm_HE"
+  },
+  "20Rnd_105mm_APFSDS": {
+   "ammo": "Sh_105mm_APFSDS",
+   "count": "20",
+   "displayname": "20Rounds DTW105 APFSDS",
+   "scope": 1,
+   "parent": "24Rnd_125mm_APFSDS"
+  },
+  "20Rnd_105mm_APFSDS_T_Red": {
+   "ammo": "Sh_105mm_APFSDS_T_Red",
+   "displayname": "20Rounds DTW105 APFSDS",
+   "count": "20",
+   "scope": 1,
+   "parent": "20Rnd_105mm_APFSDS"
+  },
+  "20Rnd_105mm_APFSDS_T_Green": {
+   "ammo": "Sh_105mm_APFSDS_T_Green",
+   "displayname": "20Rounds DTW105 APFSDS",
+   "count": "20",
+   "scope": 1,
+   "parent": "20Rnd_105mm_APFSDS"
+  },
+  "20Rnd_105mm_APFSDS_T_Yellow": {
+   "ammo": "Sh_105mm_APFSDS_T_Yellow",
+   "displayname": "20Rounds DTW105 APFSDS",
+   "count": "20",
+   "scope": 1,
+   "parent": "20Rnd_105mm_APFSDS"
+  },
+  "16Rnd_105mm_HEAT_MP": {
+   "ammo": "Sh_105mm_HEAT_MP",
+   "count": "16",
+   "displayname": "16 Rounds DPT105 HEAT",
+   "scope": 2,
+   "parent": "12Rnd_125mm_HEAT"
+  },
+  "16Rnd_105mm_HEAT_MP_T_Red": {
+   "ammo": "Sh_105mm_HEAT_MP_T_Red",
+   "displayname": "16 Rounds DPT105 HEAT Red",
+   "count": "16",
+   "scope": 2,
+   "parent": "16Rnd_105mm_HEAT_MP"
+  },
+  "16Rnd_105mm_HEAT_MP_T_Green": {
+   "ammo": "Sh_105mm_HEAT_MP_T_Green",
+   "displayname": "16 Rounds DPT105 HEAT Green",
+   "count": "16",
+   "scope": 2,
+   "parent": "16Rnd_105mm_HEAT_MP"
+  },
+  "16Rnd_105mm_HEAT_MP_T_Yellow": {
+   "ammo": "Sh_105mm_HEAT_MP_T_Yellow",
+   "displayname": "16 Rounds DPT105 HEAT Yellow",
+   "count": "16",
+   "scope": 2,
+   "parent": "16Rnd_105mm_HEAT_MP"
+  },
+  "12Rnd_105mm_HEAT_MP": {
+   "ammo": "Sh_105mm_HEAT_MP",
+   "count": "12",
+   "displayname": "12 Rounds DPT105 HEAT",
+   "scope": 2,
+   "parent": "16Rnd_105mm_HEAT_MP"
+  },
+  "12Rnd_105mm_HEAT_MP_T_Red": {
+   "ammo": "Sh_105mm_HEAT_MP_T_Red",
+   "displayname": "12 Rounds DPT1A HEAT Red",
+   "count": "16",
+   "scope": 2,
+   "parent": "16Rnd_105mm_HEAT_MP"
+  },
+  "12Rnd_105mm_HEAT_MP_T_Green": {
+   "ammo": "Sh_105mm_HEAT_MP_T_Green",
+   "displayname": "12 Rounds DPT105 HEAT Green",
+   "count": "16",
+   "scope": 2,
+   "parent": "16Rnd_105mm_HEAT_MP"
+  },
+  "12Rnd_105mm_HEAT_MP_T_Yellow": {
+   "ammo": "Sh_105mm_HEAT_MP_T_Yellow",
+   "displayname": "12 Rounds DPT105 HEAT Yellow",
+   "count": "16",
+   "scope": 2,
+   "parent": "16Rnd_105mm_HEAT_MP"
+  },
+  "6Rnd_105mm_HE": {
+   "ammo": "Sh_105mm_HE",
+   "count": "6",
+   "displayname": "6 Rounds DTB105 HE",
+   "scope": 2,
+   "parent": "30Rnd_120mm_HE_shells"
+  },
+  "6Rnd_105mm_HE_T_Red": {
+   "ammo": "Sh_105mm_HE_T_Red",
+   "displayname": "12 Rounds DTB105 HE Red",
+   "count": "6",
+   "scope": 2,
+   "parent": "6Rnd_105mm_HE"
+  },
+  "6Rnd_105mm_HE_T_Green": {
+   "ammo": "Sh_105mm_HE_T_Green",
+   "displayname": "12 Rounds DTB105 HE Green",
+   "count": "6",
+   "scope": 2,
+   "parent": "6Rnd_105mm_HE"
+  },
+  "6Rnd_105mm_HE_T_Yellow": {
+   "ammo": "Sh_105mm_HE_T_Yellow",
+   "displayname": "12 Rounds DTB105 HE Yellow",
+   "count": "6",
+   "scope": 2,
+   "parent": "6Rnd_105mm_HE"
+  },
+  "8Rnd_100mm_cannon_missiles_lk": {
+   "scope": "2",
+   "ammo": "LK_100mm_cannon_ATGM",
+   "count": "8",
+   "displayname": "8 Rounds GP100 ATGM",
+   "parent": "VehicleMagazine"
+  },
+  "4Rnd_105mm_cannon_missiles_lk": {
+   "scope": "2",
+   "ammo": "LK_105mm_cannon_ATGM",
+   "count": "4",
+   "displayname": "4 Rounds GP105 ATGM",
+   "parent": "VehicleMagazine"
+  },
+  "5Rnd_125mm_cannon_missiles_lk": {
+   "scope": "2",
+   "ammo": "LK_125mm_cannon_ATGM",
+   "count": "5",
+   "displayname": "5 Rounds GP125 ATGM",
+   "parent": "VehicleMagazine"
+  },
+  "20Rnd_100mm_HEAT_MP": {
+   "ammo": "sh_100mm_HEAT_MP",
+   "count": "20",
+   "displayname": "20 Rounds 100mm HEAT",
+   "scope": 2,
+   "parent": "12Rnd_125mm_HEAT"
+  },
+  "20Rnd_100mm_HEAT_MP_T_Red": {
+   "ammo": "sh_100mm_HEAT_MP_T_red",
+   "displayname": "20 Rounds 100mm HEAT Red",
+   "count": "20",
+   "scope": 2,
+   "parent": "20Rnd_100mm_HEAT_MP"
+  },
+  "20Rnd_100mm_HEAT_MP_T_Yellow": {
+   "ammo": "sh_100mm_HEAT_MP_T_Yellow",
+   "displayname": "20 Rounds 100mm HEAT Yellow",
+   "count": "20",
+   "scope": 2,
+   "parent": "20Rnd_100mm_HEAT_MP"
+  },
+  "20Rnd_100mm_HEAT_MP_T_Green": {
+   "ammo": "sh_100mm_HEAT_MP_T_Green",
+   "displayname": "20 Rounds 100mm HEAT Green",
+   "count": "20",
+   "scope": 2,
+   "parent": "20Rnd_100mm_HEAT_MP"
+  },
+  "30Rnd_100mm_HE": {
+   "ammo": "sh_100mm_HE",
+   "count": "30",
+   "displayname": "30 Rounds 100mm HE",
+   "scope": 2,
+   "parent": "30Rnd_120mm_HE_shells"
+  },
+  "30Rnd_100mm_HE_T_Red": {
+   "ammo": "sh_100mm_HE_T_Red",
+   "displayname": "30 Rounds 100mm HE Red",
+   "count": "30",
+   "scope": 2,
+   "parent": "30Rnd_100mm_HE"
+  },
+  "30Rnd_100mm_HE_T_Yellow": {
+   "ammo": "sh_100mm_HE_T_Yellow",
+   "displayname": "30 Rounds 100mm HE Yellow",
+   "count": "30",
+   "scope": 2,
+   "parent": "30Rnd_100mm_HE"
+  },
+  "30Rnd_100mm_HE_T_Green": {
+   "ammo": "sh_100mm_HE_T_Green",
+   "displayname": "30 Rounds 100mm HE Green",
+   "count": "30",
+   "scope": 2,
+   "parent": "30Rnd_100mm_HE"
+  },
+  "125Rnd_30mm_HE": {
+   "scope": "2",
+   "ammo": "B_30mm_HE",
+   "count": "125",
+   "displayname": "125 Rounds 30mm HE",
+   "parent": "VehicleMagazine"
+  },
+  "300Rnd_30mm_HE": {
+   "scope": "2",
+   "ammo": "B_30mm_HE",
+   "count": "300",
+   "displayname": "300 Rounds 30mm HE",
+   "parent": "VehicleMagazine"
+  },
+  "125Rnd_30mm_APFSDS": {
+   "ammo": "B_30mm_APFSDS",
+   "count": "125",
+   "displayname": "125 Rounds 30mm APFSDS",
+   "scope": "2",
+   "parent": "125Rnd_30mm_HE"
+  },
+  "200Rnd_30mm_APFSDS": {
+   "ammo": "B_30mm_APFSDS",
+   "count": "200",
+   "displayname": "200 Rounds 30mm APFSDS",
+   "scope": "2",
+   "parent": "125Rnd_30mm_HE"
+  },
+  "125Rnd_30mm_HE_T_Red": {
+   "ammo": "B_30mm_HE_Tracer_Red",
+   "scope": "2",
+   "count": "125",
+   "displayname": "125 Rounds 30mm HE",
+   "parent": "125Rnd_30mm_HE"
+  },
+  "125Rnd_30mm_HE_T_Green": {
+   "ammo": "B_30mm_HE_Tracer_Green",
+   "scope": "2",
+   "count": "125",
+   "displayname": "125 Rounds 30mm HE",
+   "parent": "125Rnd_30mm_HE"
+  },
+  "125Rnd_30mm_HE_T_Yellow": {
+   "ammo": "B_30mm_HE_Tracer_Yellow",
+   "scope": "2",
+   "count": "125",
+   "displayname": "125 Rounds 30mm HE",
+   "parent": "125Rnd_30mm_HE"
+  },
+  "300Rnd_30mm_HE_T_Red": {
+   "ammo": "B_30mm_HE_Tracer_Red",
+   "count": "300",
+   "scope": "2",
+   "displayname": "125 Rounds 30mm HE",
+   "parent": "125Rnd_30mm_HE"
+  },
+  "300Rnd_30mm_HE_T_Green": {
+   "ammo": "B_30mm_HE_Tracer_Green",
+   "count": "300",
+   "scope": "2",
+   "displayname": "125 Rounds 30mm HE",
+   "parent": "125Rnd_30mm_HE"
+  },
+  "300Rnd_30mm_HE_T_Yellow": {
+   "ammo": "B_30mm_HE_Tracer_Yellow",
+   "count": "300",
+   "scope": "2",
+   "displayname": "125 Rounds 30mm HE",
+   "parent": "125Rnd_30mm_HE"
+  },
+  "125Rnd_30mm_APFSDS_T_Red": {
+   "ammo": "B_30mm_APFSDS_Tracer_Red",
+   "count": "125",
+   "displayname": "125 Rounds 30mm APFSDS",
+   "scope": "2",
+   "parent": "125Rnd_30mm_APFSDS"
+  },
+  "125Rnd_30mm_APFSDS_T_Green": {
+   "ammo": "B_30mm_APFSDS_Tracer_Green",
+   "count": "125",
+   "displayname": "125 Rounds 30mm APFSDS",
+   "scope": "2",
+   "parent": "125Rnd_30mm_APFSDS"
+  },
+  "125Rnd_30mm_APFSDS_T_Yellow": {
+   "ammo": "B_30mm_APFSDS_Tracer_Yellow",
+   "count": "125",
+   "displayname": "125 Rounds 30mm APFSDS",
+   "scope": "2",
+   "parent": "125Rnd_30mm_APFSDS"
+  },
+  "200Rnd_30mm_APFSDS_T_Red": {
+   "ammo": "B_30mm_APFSDS_Tracer_Red",
+   "count": "200",
+   "displayname": "125 Rounds 30mm APFSDS",
+   "scope": "2",
+   "parent": "125Rnd_30mm_APFSDS"
+  },
+  "200Rnd_30mm_APFSDS_T_Green": {
+   "ammo": "B_30mm_APFSDS_Tracer_Green",
+   "count": "200",
+   "displayname": "125 Rounds 30mm APFSDS",
+   "scope": "2",
+   "parent": "125Rnd_30mm_APFSDS"
+  },
+  "200Rnd_30mm_APFSDS_T_Yellow": {
+   "ammo": "B_30mm_APFSDS_Tracer_Yellow",
+   "count": "200",
+   "displayname": "125 Rounds 30mm APFSDS",
+   "scope": "2",
+   "parent": "125Rnd_30mm_APFSDS"
+  },
+  "32Rnd_122mm_Mo_shells": {
+   "scope": "2",
+   "ammo": "Sh_122mm_LK",
+   "count": "32",
+   "displayname": "122mm Howitzer Shells",
+   "parent": "VehicleMagazine"
+  },
+  "8Rnd_122mm_Smoke": {
+   "ammo": "Smoke_120mm_AMOS_White",
+   "count": "8",
+   "displayname": "122mm Smoke Shells",
+   "scope": "2",
+   "parent": "32Rnd_122mm_Mo_shells"
+  },
+  "250Rnd_762x54_LK": {
+   "scope": "2",
+   "ammo": "B_762x54_Ball",
+   "count": "250",
+   "displayname": "250 Rounds 7.62X54 Belt",
+   "parent": "VehicleMagazine"
+  },
+  "250Rnd_762x54_LK_Red": {
+   "ammo": "B_762x54_Tracer_Red",
+   "scope": "2",
+   "count": "250",
+   "displayname": "250 Rounds 7.62X54 Belt",
+   "parent": "250Rnd_762x54_LK"
+  },
+  "250Rnd_762x54_LK_T_Red": {
+   "ammo": "B_762x54_Tracer_Red",
+   "scope": "2",
+   "count": "250",
+   "displayname": "250 Rounds 7.62X54 Belt",
+   "parent": "250Rnd_762x54_LK_Red"
+  },
+  "250Rnd_762x54_LK_Green": {
+   "ammo": "B_762x54_Tracer_Green",
+   "scope": "2",
+   "count": "250",
+   "displayname": "250 Rounds 7.62X54 Belt",
+   "parent": "250Rnd_762x54_LK"
+  },
+  "250Rnd_762x54_LK_T_Green": {
+   "ammo": "B_762x54_Tracer_Green",
+   "scope": "2",
+   "count": "250",
+   "displayname": "250 Rounds 7.62X54 Belt",
+   "parent": "250Rnd_762x54_LK_Green"
+  },
+  "250Rnd_762x54_LK_Yellow": {
+   "ammo": "B_762x54_Tracer_Yellow",
+   "scope": "2",
+   "count": "250",
+   "displayname": "250 Rounds 7.62X54 Belt",
+   "parent": "250Rnd_762x54_LK"
+  },
+  "250Rnd_762x54_LK_T_Yellow": {
+   "ammo": "B_762x54_Tracer_Yellow",
+   "scope": "2",
+   "count": "250",
+   "displayname": "250 Rounds 7.62X54 Belt",
+   "parent": "250Rnd_762x54_LK_Yellow"
+  },
+  "2Rnd_HJ9_HEAT_LK": {
+   "scope": "2",
+   "ammo": "M_HJ9_LK",
+   "count": "2",
+   "displayname": "HJ9 Missiles",
+   "parent": "CA_LauncherMagazine"
+  },
+  "200Rnd_DKG01A_LK": {
+   "scope": "2",
+   "ammo": "LK_35mm_DKG01A",
+   "count": "200",
+   "displayname": "DKG01A",
+   "parent": "VehicleMagazine"
+  },
+  "200Rnd_DKG01A_LK_Red": {
+   "ammo": "LK_35mm_DKG01A_T_Red",
+   "displayname": "DKG01A Red tracer",
+   "scope": "2",
+   "count": "200",
+   "parent": "200Rnd_DKG01A_LK"
+  },
+  "200Rnd_DKG01A_LK_Green": {
+   "ammo": "LK_35mm_DKG01A_T_green",
+   "displayname": "DKG01A Green tracer",
+   "scope": "2",
+   "count": "200",
+   "parent": "200Rnd_DKG01A_LK"
+  },
+  "200Rnd_DKG01A_LK_Yellow": {
+   "ammo": "LK_35mm_DKG01A_T_yellow",
+   "displayname": "DKG01A Yellow tracer",
+   "scope": "2",
+   "count": "200",
+   "parent": "200Rnd_DKG01A_LK"
+  },
+  "100Rnd_DM23_LK": {
+   "scope": "2",
+   "ammo": "LK_35mm_DM23",
+   "count": "100",
+   "displayname": "DM23",
+   "parent": "VehicleMagazine"
+  },
+  "100Rnd_DM23_LK_Red": {
+   "ammo": "LK_35mm_DM23_T_Red",
+   "displayname": "DM23 Red tracer",
+   "scope": "2",
+   "count": "100",
+   "parent": "100Rnd_DM23_LK"
+  },
+  "100Rnd_DM23_LK_Green": {
+   "ammo": "LK_35mm_DM23_T_green",
+   "displayname": "DM23 Green tracer",
+   "scope": "2",
+   "count": "100",
+   "parent": "100Rnd_DM23_LK"
+  },
+  "100Rnd_DM23_LK_Yellow": {
+   "ammo": "LK_35mm_DM23_T_yellow",
+   "displayname": "DM23 Yellow tracer",
+   "scope": "2",
+   "count": "100",
+   "parent": "100Rnd_DM23_LK"
+  },
+  "300Rnd_23mm_shells_LK": {
+   "scope": "2",
+   "ammo": "LK_23mm_shells",
+   "count": "300",
+   "displayname": "23mm shells",
+   "parent": "VehicleMagazine"
+  },
+  "1000Rnd_23mm_shells_LK_red": {
+   "scope": "2",
+   "ammo": "LK_23mm_shells_Red",
+   "count": "1000",
+   "displayname": "23mm shells",
+   "parent": "VehicleMagazine"
+  },
+  "1000Rnd_23mm_shells_LK": {
+   "count": "1000",
+   "scope": "2",
+   "ammo": "LK_23mm_shells",
+   "displayname": "23mm shells",
+   "parent": "300Rnd_23mm_shells_LK"
+  },
+  "1000Rnd_23mm_shells_LK_Green": {
+   "ammo": "LK_23mm_shells_Green",
+   "scope": "2",
+   "count": "1000",
+   "displayname": "23mm shells",
+   "parent": "1000Rnd_23mm_shells_LK_red"
+  },
+  "1000Rnd_23mm_shells_LK_Yellow": {
+   "ammo": "LK_23mm_shells_Yellow",
+   "scope": "2",
+   "count": "1000",
+   "displayname": "23mm shells",
+   "parent": "1000Rnd_23mm_shells_LK_red"
+  },
+  "4Rnd_TY90_Missiles_LK": {
+   "scope": "2",
+   "ammo": "LK_TY90_Missile",
+   "count": "4",
+   "displayname": "TY90",
+   "parent": "CA_LauncherMagazine"
+  },
+  "1000Rnd_30mm_AA_Shells_LK": {
+   "scope": "2",
+   "ammo": "LK_30mm_AA",
+   "count": "1000",
+   "displayname": "1000 Rounds 30mm AA shells",
+   "parent": "VehicleMagazine"
+  },
+  "1000Rnd_30mm_AA_Red_LK": {
+   "ammo": "LK_30mm_AA_Red",
+   "displayname": "1000 Rounds 30mm AA shells Red",
+   "scope": "2",
+   "count": "1000",
+   "parent": "1000Rnd_30mm_AA_Shells_LK"
+  },
+  "1000Rnd_30mm_AA_Green_LK": {
+   "ammo": "LK_30mm_AA_Green",
+   "displayname": "1000 Rounds 30mm AA shells Green",
+   "scope": "2",
+   "count": "1000",
+   "parent": "1000Rnd_30mm_AA_Shells_LK"
+  },
+  "1000Rnd_30mm_AA_Yellow_LK": {
+   "ammo": "LK_30mm_AA_Yellow",
+   "displayname": "1000 Rounds 30mm AA shells Yellow",
+   "scope": "2",
+   "count": "1000",
+   "parent": "1000Rnd_30mm_AA_Shells_LK"
+  },
+  "300Rnd_Fighter_Gun23mm_AA_LK": {
+   "scope": "2",
+   "ammo": "LK_Fighter_Gun23mm_AA",
+   "count": "300",
+   "displayname": "300 Rounds 23mm shells",
+   "parent": "VehicleMagazine"
+  }
+ },
+ "wells": {},
+ "classes": {
+  "CfgFactionClasses": {
+   "PLA_Armored_Force": {
+    "displayname": "PLA Armored Force",
+    "priority": "2",
+    "icon": "\\Main\\Data\\PRC_flag.paa",
+    "side": "0"
+   }
+  },
+  "CfgEditorSubcategories": {}
+ },
+ "patches": {
+  "anim_lk": [
+   "anim_lk"
+  ],
+  "CSK181": [
+   "csk181"
+  ],
+  "CSK181_c": [
+   "csk181_c"
+  ],
+  "dynamicLoadout_LK": [
+   "dynamicloadout_lk"
+  ],
+  "Faction_lk": [
+   "faction_lk"
+  ],
+  "HMV3": [
+   "hmv3"
+  ],
+  "HMV3_c": [
+   "hmv3_c"
+  ],
+  "HQ6A": [
+   "hq6a"
+  ],
+  "HQ6A_c": [
+   "hq6a_c"
+  ],
+  "J10": [
+   "j10_lk"
+  ],
+  "J11": [
+   "j11_lk"
+  ],
+  "J15": [
+   "j15_lk"
+  ],
+  "J16": [
+   "j16_lk"
+  ],
+  "J20": [
+   "j20_lk"
+  ],
+  "Jets_c": [
+   "lk_jets_c"
+  ],
+  "language_lk": [
+   "language_lk"
+  ],
+  "LK_FNCS": [
+   "lk_fncs"
+  ],
+  "Main": [],
+  "PGZ09": [
+   "pgz09_lk"
+  ],
+  "PLL09": [
+   "pll09_lk"
+  ],
+  "weapon_lk": [
+   "a3_weapons_lk"
+  ],
+  "Z10": [
+   "z10_lk"
+  ],
+  "Z11": [
+   "z11wa_lk"
+  ],
+  "Z19": [
+   "z19_lk"
+  ],
+  "Z20": [
+   "z20_lk"
+  ],
+  "Z8L": [
+   "z8l_lk"
+  ],
+  "ZBD04": [
+   "zbd04_lk"
+  ],
+  "ZBD05": [
+   "zbd05_lk"
+  ],
+  "ZBL09": [
+   "zbl09_lk"
+  ],
+  "ZTD05": [
+   "ztd05_lk"
+  ],
+  "ZTL11": [
+   "ztl11_lk"
+  ],
+  "ZTQ15": [
+   "ztq15_lk"
+  ],
+  "ZTZ96A": [
+   "ztz96a_lk"
+  ],
+  "ZTZ96B": [
+   "ztz96b_lk"
+  ],
+  "ZTZ99": [
+   "ztz99_lk"
+  ],
+  "ZTZ99A": [
+   "ztz99a_lk"
+  ],
+  "PLZ05": [
+   "plz05_lk"
+  ],
+  "ZTZ96_c": [
+   "ztz96_c_lk"
+  ]
+ },
+ "cdlc": [],
+ "errors": {},
+ "unknown_requires": {}
+}

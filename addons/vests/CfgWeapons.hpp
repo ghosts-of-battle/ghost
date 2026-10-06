@@ -76,6 +76,7 @@
 // the base class ("Updating base class X->") and breaks the vest.
 class CfgWeapons {
 #include "imported_CfgWeapons_decl.hpp"
+    class Vest_Camo_Base;
     class ItemInfo; // defined for real in ghost_main (see its CfgWeapons.hpp)
 
     class V_PlateCarrier1_rgr: Vest_NoCamo_Base {

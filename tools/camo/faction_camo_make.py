@@ -677,6 +677,9 @@ UNIFORM = {"cnwdl", "cnarid", "rusgreen", "russand", "rusarctic", "trarid", "trg
 SHADE = {}
 DIGITAL_KEY = [None]        # the sheet being made, for SHADE and the pink report
 LEVEL_KEEP = {"cnarid": 1.15}   # the level a QAV Type 08 sheet keeps when its camo's base is lowered (digital())
+# user, 2026-10-01: "the pla qav_625e's are darker than the rest of the camo's" - the woodland QAVs had no lift, so
+# their own rvmats sat them darker than the faction's BI-model vehicles; they take the arid set's 15% (1.0 -> 1.15).
+LEVEL_KEEP["cnwdl"] = 1.15
 
 
 def wheel_paint(a, tag):

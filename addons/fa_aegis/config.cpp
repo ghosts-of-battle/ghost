@@ -10,13 +10,17 @@ class CfgPatches {
             "cba_main",
             "ace_ballistics",
             "ghost_fa_ammo",
-            "A3_Aegis_Weapons_F_Aegis",
-            "A3_Aegis_Weapons_F_Aegis_Rifles_SCAR"
+            // the imported Aegis weapons and magazines (tools/aegis_port --seeds), not the Aegis mod
+            // (user, 2026-10-04: the Aegis family leaves the load order). The SR25, SLR, WF50 and
+            // SCAR entries below only take effect if a mod defining those classes loads.
+            "ghost_weapons"
         };
         skipWhenMissingDependencies = 1;
         author = QAUTHOR;
         VERSION_CONFIG;
         magazines[] = {
+            // 9x21 Gepard - Mk424 AP
+            "FA_b_40Rnd_9x21_Gepard_Mk424_AP",
             // 7.62x54R SVD — Ball HV
             "FA_Aegis_10Rnd_762x54_SVD_HV",
             "FA_Aegis_10Rnd_762x54_SVD_HV_T_Red",

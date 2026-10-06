@@ -24,14 +24,146 @@ class CfgAmmo {
     class ammo_Penetrator_Base;
     class B_25mm;
     class BulletBase;
+    class EGVAR(weapons,GrenadeHandEast);
     class Gatling_30mm_HE_Plane_CAS_01_F;
-    class GrenadeHand;
     class MissileCore;
     class MissileBase: MissileCore {
         class Components;
     };
     class GVAR(Gatling_30mm_HE_Plane_CAS_01_Yellow_F): Gatling_30mm_HE_Plane_CAS_01_F {
         model = "\A3\Weapons_F\Data\bullettracer\tracer_yellow.p3d";
+    };
+    class GVAR(GrenadeHandGuer): EGVAR(weapons,GrenadeHandEast) {
+        hit = 7;
+        indirectHit = 7;
+        indirectHitRange = 5;
+        dangerRadiusHit = 55;
+        suppressionRadiusHit = 21;
+        typicalspeed = 24;
+        model = "\z\ghost\addons\weapons\models\weapons\Ammo\Handgrenade_guer_throw.p3d";
+        deflecting = 15;
+        fuseDistance = 0;
+    };
+    class GVAR(M_Vikhr_AT): MissileBase {
+        hit = 200;
+        indirectHit = 40;
+        indirectHitRange = 4;
+        proximityExplosionDistance = 10;
+        warheadName = "TandemHEAT";
+        submunitionAmmo = QGVAR(ammo_Penetrator_Vikhr);
+        submunitionDirectionType = "SubmunitionModelDirection";
+        submunitionInitSpeed = 1000;
+        submunitionParentSpeedCoef = 0;
+        submunitionInitialOffset[] = {0, 0, -0.2};
+        triggerOnImpact = 1;
+        deleteParentWhenTriggered = 0;
+        model = "\A3\Weapons_F\Ammo\Missile_AT_02_fly_F.p3d";
+        proxyShape = "\A3\Weapons_F\Ammo\Missile_AT_02_F.p3d";
+        CraterEffects = "ATRocketCrater";
+        explosionEffects = "ATRocketExplosion";
+        whistleDist = 4;
+        maneuvrability = 12;
+        simulationStep = 0.002;
+        aiAmmoUsageFlags = 896;
+        irLock = 1;
+        nvLock = 1;
+        laserLock = 1;
+        cost = 700;
+        maxSpeed = 600;
+        timeToLive = 23;
+        airFriction = 0.103;
+        sideAirFriction = 0.2;
+        trackLead = 1;
+        trackOversteer = 1;
+        initTime = 0;
+        thrustTime = 3.5;
+        thrust = 200;
+        fuseDistance = 50;
+        muzzleEffect = "BIS_fnc_effectFiredHeliRocket";
+        cameraViewAvailable = 1;
+        airLock = 1;
+        activeSensorAlwaysOn = 0;
+        missileLockCone = 30;
+        missileKeepLockedCone = 60;
+        missileLockMaxDistance = 8000;
+        missileLockMinDistance = 250;
+        missileLockMaxSpeed = 800;
+        weaponLockSystem = 30;
+        cmImmunity = 0.65;
+        manualControl = 1;
+        maxControlRange = 8000;
+        missileManualControlCone = 120;
+        soundFly[] = {"\A3\Sounds_F\weapons\Rockets\rocket_fly_1", "db-5", 1.5, 700};
+        flightProfiles[] = {"Direct", "TopDown"};
+        SoundSetExplosion[] = {"RocketsMedium_Exp_SoundSet", "RocketsMedium_Tail_SoundSet", "Explosion_Debris_SoundSet"};
+        class Hiteffects {
+            hitWater = "ImpactEffectsSmall";
+        };
+        class Direct {
+        };
+        class TopDown {
+            ascendHeight = 400.0;
+            descendDistance = 800.0;
+            minDistance = 250.0;
+            ascendAngle = 25.0;
+        };
+        class Components: Components {
+            class SensorsManagerComponent {
+                class Components {
+                    class RadarSensorComponent: SensorTemplateActiveRadar {
+                        maxTrackableSpeed = 600;
+                        angleRangeHorizontal = 60;
+                        angleRangeVertical = 60;
+                        class AirTarget {
+                            minRange = 8000;
+                            maxRange = 8000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = -1;
+                        };
+                        class GroundTarget {
+                            minRange = 8000;
+                            maxRange = 8000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = -1;
+                        };
+                    };
+                    class IRSensorComponent: SensorTemplateIR {
+                        maxTrackableSpeed = 600;
+                        angleRangeHorizontal = 45;
+                        angleRangeVertical = 35;
+                        class AirTarget {
+                            minRange = 500;
+                            maxRange = 8000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = 1;
+                        };
+                        class GroundTarget {
+                            minRange = 500;
+                            maxRange = 8000;
+                            objectDistanceLimitCoef = 1;
+                            viewDistanceLimitCoef = 1;
+                        };
+                    };
+                    class LaserSensorComponent: SensorTemplateLaser {
+                        maxTrackableSpeed = 600;
+                        angleRangeHorizontal = 70;
+                        angleRangeVertical = 50;
+                        class AirTarget {
+                            minRange = 8000;
+                            maxRange = 8000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = -1;
+                        };
+                        class GroundTarget {
+                            minRange = 8000;
+                            maxRange = 8000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = -1;
+                        };
+                    };
+                };
+            };
+        };
     };
     class GVAR(Autocannon_HE_Heli_Attack_04_F): BulletBase {
         cost = 30;
@@ -183,142 +315,13 @@ class CfgAmmo {
     class GVAR(Autocannon_AP_Heli_Attack_04_White_F): GVAR(Autocannon_AP_Heli_Attack_04_F) {
         model = "\A3\Weapons_f\Data\bullettracer\tracer_green";
     };
-    class GVAR(M_Vikhr_AT): MissileBase {
-        hit = 200;
-        indirectHit = 40;
-        indirectHitRange = 4;
-        proximityExplosionDistance = 10;
-        warheadName = "TandemHEAT";
-        submunitionAmmo = QGVAR(ammo_Penetrator_Vikhr);
-        submunitionDirectionType = "SubmunitionModelDirection";
-        submunitionInitSpeed = 1000;
-        submunitionParentSpeedCoef = 0;
-        submunitionInitialOffset[] = {0, 0, -0.2};
-        triggerOnImpact = 1;
-        deleteParentWhenTriggered = 0;
-        model = "\A3\Weapons_F\Ammo\Missile_AT_02_fly_F.p3d";
-        proxyShape = "\A3\Weapons_F\Ammo\Missile_AT_02_F.p3d";
-        CraterEffects = "ATRocketCrater";
-        explosionEffects = "ATRocketExplosion";
-        whistleDist = 4;
-        maneuvrability = 12;
-        simulationStep = 0.002;
-        aiAmmoUsageFlags = 896;
-        irLock = 1;
-        nvLock = 1;
-        laserLock = 1;
-        cost = 700;
-        maxSpeed = 600;
-        timeToLive = 23;
-        airFriction = 0.103;
-        sideAirFriction = 0.2;
-        trackLead = 1;
-        trackOversteer = 1;
-        initTime = 0;
-        thrustTime = 3.5;
-        thrust = 200;
-        fuseDistance = 50;
-        muzzleEffect = "BIS_fnc_effectFiredHeliRocket";
-        cameraViewAvailable = 1;
-        airLock = 1;
-        activeSensorAlwaysOn = 0;
-        missileLockCone = 30;
-        missileKeepLockedCone = 60;
-        missileLockMaxDistance = 8000;
-        missileLockMinDistance = 250;
-        missileLockMaxSpeed = 800;
-        weaponLockSystem = 30;
-        cmImmunity = 0.65;
-        manualControl = 1;
-        maxControlRange = 8000;
-        missileManualControlCone = 120;
-        soundFly[] = {"\A3\Sounds_F\weapons\Rockets\rocket_fly_1", "db-5", 1.5, 700};
-        flightProfiles[] = {"Direct", "TopDown"};
-        SoundSetExplosion[] = {"RocketsMedium_Exp_SoundSet", "RocketsMedium_Tail_SoundSet", "Explosion_Debris_SoundSet"};
-        class Hiteffects {
-            hitWater = "ImpactEffectsSmall";
-        };
-        class Direct {
-        };
-        class TopDown {
-            ascendHeight = 400.0;
-            descendDistance = 800.0;
-            minDistance = 250.0;
-            ascendAngle = 25.0;
-        };
-        class Components: Components {
-            class SensorsManagerComponent {
-                class Components {
-                    class RadarSensorComponent: SensorTemplateActiveRadar {
-                        maxTrackableSpeed = 600;
-                        angleRangeHorizontal = 60;
-                        angleRangeVertical = 60;
-                        class AirTarget {
-                            minRange = 8000;
-                            maxRange = 8000;
-                            objectDistanceLimitCoef = -1;
-                            viewDistanceLimitCoef = -1;
-                        };
-                        class GroundTarget {
-                            minRange = 8000;
-                            maxRange = 8000;
-                            objectDistanceLimitCoef = -1;
-                            viewDistanceLimitCoef = -1;
-                        };
-                    };
-                    class IRSensorComponent: SensorTemplateIR {
-                        maxTrackableSpeed = 600;
-                        angleRangeHorizontal = 45;
-                        angleRangeVertical = 35;
-                        class AirTarget {
-                            minRange = 500;
-                            maxRange = 8000;
-                            objectDistanceLimitCoef = -1;
-                            viewDistanceLimitCoef = 1;
-                        };
-                        class GroundTarget {
-                            minRange = 500;
-                            maxRange = 8000;
-                            objectDistanceLimitCoef = 1;
-                            viewDistanceLimitCoef = 1;
-                        };
-                    };
-                    class LaserSensorComponent: SensorTemplateLaser {
-                        maxTrackableSpeed = 600;
-                        angleRangeHorizontal = 70;
-                        angleRangeVertical = 50;
-                        class AirTarget {
-                            minRange = 8000;
-                            maxRange = 8000;
-                            objectDistanceLimitCoef = -1;
-                            viewDistanceLimitCoef = -1;
-                        };
-                        class GroundTarget {
-                            minRange = 8000;
-                            maxRange = 8000;
-                            objectDistanceLimitCoef = -1;
-                            viewDistanceLimitCoef = -1;
-                        };
-                    };
-                };
-            };
-        };
-    };
-    class GVAR(GrenadeHandEast): GrenadeHand {
-        hit = 8;
-        indirectHit = 8;
-        indirectHitRange = 7;
-        dangerRadiusHit = 65;
-        suppressionRadiusHit = 27;
-        typicalspeed = 20;
-        model = "\z\ghost\addons\weapons\models\weapons\Ammo\Handgrenade_east_throw.p3d";
-        deflecting = 7;
-        fuseDistance = 0;
-        explosionTime = -1;
-        timeToLive = 18;
-    };
     class GVAR(B_25mm_Tracer_Yellow): B_25mm {
         model = "\A3\Weapons_F\Data\bullettracer\tracer_yellow.p3d";
+    };
+    class GVAR(ammo_Penetrator_Vikhr): ammo_Penetrator_Base {
+        caliber = 56.6667;
+        warheadName = "TandemHEAT";
+        hit = 800;
     };
     class GVAR(ammo_Bomb_GlideBase): ammo_Bomb_LaserGuidedBase {
         model = "\A3\Weapons_F\empty.p3d";
@@ -433,11 +436,6 @@ class CfgAmmo {
             distance = 1;
         };
     };
-    class GVAR(ammo_Penetrator_Vikhr): ammo_Penetrator_Base {
-        caliber = 56.6667;
-        warheadName = "TandemHEAT";
-        hit = 800;
-    };
     class GVAR(Autocannon_HE_Heli_Attack_04_Green_F): GVAR(Autocannon_HE_Heli_Attack_04_F) {
         model = "\A3\Weapons_f\Data\bullettracer\tracer_green";
     };
@@ -449,17 +447,6 @@ class CfgAmmo {
     };
     class GVAR(Autocannon_AP_Heli_Attack_04_Red_F): GVAR(Autocannon_AP_Heli_Attack_04_F) {
         model = "\A3\Weapons_f\Data\bullettracer\tracer_green";
-    };
-    class GVAR(GrenadeHandGuer): GVAR(GrenadeHandEast) {
-        hit = 7;
-        indirectHit = 7;
-        indirectHitRange = 5;
-        dangerRadiusHit = 55;
-        suppressionRadiusHit = 21;
-        typicalspeed = 24;
-        model = "\z\ghost\addons\weapons\models\weapons\Ammo\Handgrenade_guer_throw.p3d";
-        deflecting = 15;
-        fuseDistance = 0;
     };
     class GVAR(Autocannon_HE_Heli_Attack_04_Yellow_F): GVAR(Autocannon_HE_Heli_Attack_04_F) {
         model = "\A3\Weapons_f\Data\bullettracer\tracer_yellow";
@@ -485,8 +472,8 @@ class CfgEditorSubcategories {
     class GVAR(EdSubcat_TankDestroyers) {
         displayName = "Tank Destroyers";
     };
-    class GVAR(EdSubcat_Personnel_Militants) {
-        displayName = "Men (Militants)";
+    class GVAR(EdSubcat_Personnel_JSOC) {
+        displayName = "Men (JSOC)";
     };
 };
 class CfgFactionClasses {
@@ -517,13 +504,12 @@ class CfgMagazines {
     class 250Rnd_30mm_HE_shells;
     class 300Rnd_20mm_shells;
     class 300Rnd_25mm_shells;
-    class 30Rnd_545x39_Mag_Green_F;
     class 38Rnd_80mm_rockets;
     class 60Rnd_30mm_APFSDS_shells;
     class 60Rnd_30mm_APFSDS_shells_Tracer_Green;
     class 60Rnd_30mm_APFSDS_shells_Tracer_Red;
     class 60Rnd_30mm_APFSDS_shells_Tracer_Yellow;
-    class HandGrenade;
+    class EGVAR(weapons,HandGrenade_East);
     class VehicleMagazine;
     class Vorona_HE;
     class Vorona_HEAT;
@@ -534,12 +520,11 @@ class CfgMagazines {
         count = 1200;
         muzzleImpulseFactor[] = {0.25, 0.25};
     };
-    class GVAR(30Rnd_545x39_AK12_Mag_F): 30Rnd_545x39_Mag_Green_F {
+    class GVAR(1200Rnd_Gatling_30mm_Heli_Attack_03_Yellow_F): GVAR(1200Rnd_Gatling_30mm_Heli_Attack_03_F) {
         author = "Avery Kaiserin";
-        displayName = "5.45 mm 30Rnd AK-12 Reload Tracer (Green) Mag";
-        picture = "\z\ghost\addons\weapons\models\weapons\Data\UI\icon_30Rnd_545x39_Black_Mag_F_ca.paa";
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\MagazineProxies\Data\magazine_AK74_black_CO.paa"};
+        scope = 2;
+        displayName = "30 mm HE Tracer (Yellow) Shells";
+        ammo = QGVAR(Gatling_30mm_HE_Plane_CAS_01_Yellow_F);
     };
     class GVAR(PylonRack_20Rnd_Rocket_80mm): 38Rnd_80mm_rockets {
         displayName = "Skyfire 20x";
@@ -674,23 +659,47 @@ class CfgMagazines {
             };
         };
     };
-    class GVAR(60Rnd_545x39_Mag_Green_F): 30Rnd_545x39_Mag_Green_F {
-        displayName = "5.45 mm 60Rnd AK-12 Reload Tracer (Green) Mag";
-        descriptionShort = "Caliber: 5.45x39 mm<br />Rounds: 60<br />Used in: AKS-74U, AK-74/M, AK-12/GL/U, RPK-12";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_60rnd_545_mag_F_ca.paa";
-        modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\mag_545_60rnd.p3d";
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_545_60rnd_co.paa"};
-        count = 60;
-        mass = 22;
-    };
     class GVAR(160Rnd_30mm_APFSDS_shells_Tracer_Green): 60Rnd_30mm_APFSDS_shells_Tracer_Green {
         author = "Avery Kaiserin";
         count = 160;
     };
+    class GVAR(HandGrenade_Guer): EGVAR(weapons,HandGrenade_East) {
+        author = "Avery Kaiserin";
+        mass = 8;
+        displayName = "RGD Grenade";
+        model = "\z\ghost\addons\weapons\models\weapons\Ammo\Handgrenade_guer.p3d";
+        ammo = QGVAR(GrenadeHandGuer);
+        displayNameShort = "RGD Grenade";
+    };
     class GVAR(160Rnd_30mm_APFSDS_shells_Tracer_Yellow): 60Rnd_30mm_APFSDS_shells_Tracer_Yellow {
         author = "Avery Kaiserin";
         count = 160;
+    };
+    class GVAR(250Rnd_762x51_Belt): VehicleMagazine {
+        author = "Avery Kaiserin";
+        scope = 2;
+        count = 250;
+        ammo = "B_762x51_Ball";
+        initSpeed = 860;
+        maxLeadSpeed = 36.111099;
+        tracersEvery = 5;
+        lastRoundsTracer = 4;
+        nameSound = "mgun";
+        displayName = "7.62 mm Minigun Belt";
+        descriptionShort = "Caliber: 7.62x51 mm<br />Rounds: 2000<br />Used in: AH-9";
+        displayNameMFDFormat = "COAX";
+    };
+    class GVAR(12Rnd_Vikhr_missiles): VehicleMagazine {
+        author = "Avery Kaiserin";
+        scope = 2;
+        displayName = "Vektor";
+        displayNameShort = "MP";
+        descriptionShort = "Short-range, laser/infrared-guided, multi-purpose missile with tandem high explosive anti-tank warhead";
+        ammo = QGVAR(M_Vikhr_AT);
+        initSpeed = 0;
+        count = 12;
+        nameSound = "missiles";
+        weight = 600;
     };
     class GVAR(220Rnd_25mm_shells): 300Rnd_25mm_shells {
         author = "Avery Kaiserin";
@@ -755,18 +764,6 @@ class CfgMagazines {
         count = 250;
         ammo = "B_20mm";
     };
-    class GVAR(12Rnd_Vikhr_missiles): VehicleMagazine {
-        author = "Avery Kaiserin";
-        scope = 2;
-        displayName = "Vektor";
-        displayNameShort = "MP";
-        descriptionShort = "Short-range, laser/infrared-guided, multi-purpose missile with tandem high explosive anti-tank warhead";
-        ammo = QGVAR(M_Vikhr_AT);
-        initSpeed = 0;
-        count = 12;
-        nameSound = "missiles";
-        weight = 600;
-    };
     class GVAR(340Rnd_30mm_HE_shells): 250Rnd_30mm_HE_shells {
         author = "Avery Kaiserin";
         displayName = "30 mm HE Shells";
@@ -799,75 +796,13 @@ class CfgMagazines {
         count = 4;
         displayNameMFDFormat = "О РАКЕТА";
     };
-    class GVAR(HandGrenade_East): HandGrenade {
-        author = "Avery Kaiserin";
-        mass = 12;
-        displayName = "RGO Grenade";
-        picture = "\z\ghost\addons\weapons\models\weapons\Data\UI\gear_RGO_CA.paa";
-        model = "\z\ghost\addons\weapons\models\weapons\Ammo\Handgrenade_east.p3d";
-        ammo = QGVAR(GrenadeHandEast);
-        displayNameShort = "RGO Grenade";
-    };
     class GVAR(220Rnd_25mm_shells_yellow): GVAR(220Rnd_25mm_shells) {
         author = "Avery Kaiserin";
         ammo = QGVAR(B_25mm_Tracer_Yellow);
     };
-    class GVAR(PylonWeapon_220Rnd_25mm_shells): GVAR(220Rnd_25mm_shells) {
-        displayName = "GAU-12 Cannon 25 mm";
-        model = "\z\ghost\addons\weapons\models\weapons\DynamicLoadout\PylonPod_GAU12_Cannon_25mm.p3d";
-        muzzlePos = "muzzlePos";
-        muzzleEnd = "muzzleEnd";
-        hardpoints[] = {"B_F38_CENTER_PYLON"};
-        pylonWeapon = "gatling_25mm";
-        mass = 800;
-    };
-    class GVAR(PylonMissile_Bomb_AGM_154_x1): GVAR(magazine_Bomb_AGM_154_x1) {
-        count = 1;
-        displayName = "AGM-154C JSOW x1";
-        model = "\z\ghost\addons\weapons\models\weapons\DynamicLoadout\PylonPod_Bomb_06_x1_F.p3d";
-        hardpoints[] = {"B_AGM_154"};
-        pylonWeapon = QGVAR(weapon_AGM_154Launcher);
-        class mfdElements {
-        };
-    };
-    class GVAR(1200Rnd_Gatling_30mm_Heli_Attack_03_Yellow_F): GVAR(1200Rnd_Gatling_30mm_Heli_Attack_03_F) {
+    class GVAR(250Rnd_762x51_Belt_Red): GVAR(250Rnd_762x51_Belt) {
         author = "Avery Kaiserin";
-        scope = 2;
-        displayName = "30 mm HE Tracer (Yellow) Shells";
-        ammo = QGVAR(Gatling_30mm_HE_Plane_CAS_01_Yellow_F);
-    };
-    class GVAR(150Rnd_Autocannon_Heli_Attack_04_HE_Green_F): GVAR(150Rnd_Autocannon_Heli_Attack_04_HE_F) {
-        author = "Grave";
-        scope = 2;
-        displayName = "20 mm HE Tracer (Green) Shells";
-        ammo = QGVAR(Autocannon_HE_Heli_Attack_04_Green_F);
-    };
-    class GVAR(150Rnd_Autocannon_Heli_Attack_04_AP_Green_F): GVAR(150Rnd_Autocannon_Heli_Attack_04_AP_F) {
-        author = "Grave";
-        scope = 2;
-        displayName = "20 mm AP Tracer (Green) Shells";
-        ammo = QGVAR(Autocannon_AP_Heli_Attack_04_Green_F);
-    };
-    class GVAR(150Rnd_Autocannon_Heli_Attack_04_HE_Red_F): GVAR(150Rnd_Autocannon_Heli_Attack_04_HE_F) {
-        author = "Grave";
-        scope = 2;
-        displayName = "20 mm HE Tracer (Red) Shells";
-        ammo = QGVAR(Autocannon_HE_Heli_Attack_04_Red_F);
-    };
-    class GVAR(150Rnd_Autocannon_Heli_Attack_04_AP_Red_F): GVAR(150Rnd_Autocannon_Heli_Attack_04_AP_F) {
-        author = "Grave";
-        scope = 2;
-        displayName = "20 mm AP Tracer (Red) Shells";
-        ammo = QGVAR(Autocannon_AP_Heli_Attack_04_Red_F);
-    };
-    class GVAR(PylonWeapon_250Rnd_20mm_shells): GVAR(250Rnd_20mm_shells) {
-        displayName = "Cannon 20mm";
-        model = "\z\ghost\addons\weapons\models\weapons\DynamicLoadout\PylonPod_Cannon_20mm.p3d";
-        muzzlePos = "muzzlePos";
-        muzzleEnd = "muzzleEnd";
-        hardpoints[] = {"20MM_CANNON"};
-        pylonWeapon = QGVAR(cannon_20mm_Heli_Light_03);
-        mass = 170;
+        ammo = "B_762x51_Tracer_Red";
     };
     class GVAR(PylonRack_6Rnd_Vikhr_missiles): GVAR(12Rnd_Vikhr_missiles) {
         displayName = "Vektor 6x";
@@ -1002,20 +937,63 @@ class CfgMagazines {
             };
         };
     };
+    class GVAR(PylonWeapon_220Rnd_25mm_shells): GVAR(220Rnd_25mm_shells) {
+        displayName = "GAU-12 Cannon 25 mm";
+        model = "\z\ghost\addons\weapons\models\weapons\DynamicLoadout\PylonPod_GAU12_Cannon_25mm.p3d";
+        muzzlePos = "muzzlePos";
+        muzzleEnd = "muzzleEnd";
+        hardpoints[] = {"B_F38_CENTER_PYLON"};
+        pylonWeapon = "gatling_25mm";
+        mass = 800;
+    };
+    class GVAR(PylonMissile_Bomb_AGM_154_x1): GVAR(magazine_Bomb_AGM_154_x1) {
+        count = 1;
+        displayName = "AGM-154C JSOW x1";
+        model = "\z\ghost\addons\weapons\models\weapons\DynamicLoadout\PylonPod_Bomb_06_x1_F.p3d";
+        hardpoints[] = {"B_AGM_154"};
+        pylonWeapon = QGVAR(weapon_AGM_154Launcher);
+        class mfdElements {
+        };
+    };
+    class GVAR(150Rnd_Autocannon_Heli_Attack_04_HE_Green_F): GVAR(150Rnd_Autocannon_Heli_Attack_04_HE_F) {
+        author = "Grave";
+        scope = 2;
+        displayName = "20 mm HE Tracer (Green) Shells";
+        ammo = QGVAR(Autocannon_HE_Heli_Attack_04_Green_F);
+    };
+    class GVAR(150Rnd_Autocannon_Heli_Attack_04_AP_Green_F): GVAR(150Rnd_Autocannon_Heli_Attack_04_AP_F) {
+        author = "Grave";
+        scope = 2;
+        displayName = "20 mm AP Tracer (Green) Shells";
+        ammo = QGVAR(Autocannon_AP_Heli_Attack_04_Green_F);
+    };
+    class GVAR(150Rnd_Autocannon_Heli_Attack_04_HE_Red_F): GVAR(150Rnd_Autocannon_Heli_Attack_04_HE_F) {
+        author = "Grave";
+        scope = 2;
+        displayName = "20 mm HE Tracer (Red) Shells";
+        ammo = QGVAR(Autocannon_HE_Heli_Attack_04_Red_F);
+    };
+    class GVAR(150Rnd_Autocannon_Heli_Attack_04_AP_Red_F): GVAR(150Rnd_Autocannon_Heli_Attack_04_AP_F) {
+        author = "Grave";
+        scope = 2;
+        displayName = "20 mm AP Tracer (Red) Shells";
+        ammo = QGVAR(Autocannon_AP_Heli_Attack_04_Red_F);
+    };
+    class GVAR(PylonWeapon_250Rnd_20mm_shells): GVAR(250Rnd_20mm_shells) {
+        displayName = "Cannon 20mm";
+        model = "\z\ghost\addons\weapons\models\weapons\DynamicLoadout\PylonPod_Cannon_20mm.p3d";
+        muzzlePos = "muzzlePos";
+        muzzleEnd = "muzzleEnd";
+        hardpoints[] = {"20MM_CANNON"};
+        pylonWeapon = QGVAR(cannon_20mm_Heli_Light_03);
+        mass = 170;
+    };
     class GVAR(340Rnd_30mm_HE_shells_Tracer_Green): GVAR(340Rnd_30mm_HE_shells) {
         author = "Avery Kaiserin";
         displayName = "30 mm HE Tracer (Green) Shells";
         ammo = "B_30mm_HE_Tracer_Green";
         tracersEvery = 1;
         displayNameMFDFormat = "О";
-    };
-    class GVAR(HandGrenade_Guer): GVAR(HandGrenade_East) {
-        author = "Avery Kaiserin";
-        mass = 8;
-        displayName = "RGD Grenade";
-        model = "\z\ghost\addons\weapons\models\weapons\Ammo\Handgrenade_guer.p3d";
-        ammo = QGVAR(GrenadeHandGuer);
-        displayNameShort = "RGD Grenade";
     };
     class GVAR(340Rnd_30mm_HE_shells_Tracer_Yellow): GVAR(340Rnd_30mm_HE_shells) {
         author = "Avery Kaiserin";
@@ -1043,11 +1021,6 @@ class CfgMagazines {
         hardpoints[] = {"I_I_F38_CENTER_PYLON"};
         pylonWeapon = "gatling_25mm";
         mass = 800;
-    };
-};
-class CfgMagazineWells {
-    class AK_545x39 {
-        GVAR(magazines)[] = {QGVAR(30Rnd_545x39_AK12_Mag_F), QGVAR(60Rnd_545x39_Mag_Green_F)};
     };
 };
 class CfgMovesMaleSdr: CfgMovesBasic {
@@ -1455,12 +1428,78 @@ class CfgSoundShaders {
 };
 class CfgVehicles {
     class Air;
+    class B_AFV_Wheeled_01_cannon_F;
+    class B_AFV_Wheeled_01_up_cannon_F;
+    class B_GMG_01_A_F;
+    class B_GMG_01_F;
+    class B_GMG_01_high_F;
+    class B_HMG_01_A_F;
+    class B_HMG_01_F;
+    class B_HMG_01_high_F;
+    class B_HMG_01_support_F;
+    class B_LSV_01_armed_F;
+    class B_LSV_01_AT_F;
+    class B_LSV_01_unarmed_F;
+    class B_MBT_01_arty_F;
+    class B_MBT_01_cannon_F;
+    class B_MBT_01_mlrs_F;
+    class B_MBT_01_TUSK_F;
+    class B_Static_Designator_01_F;
+    class B_UAV_01_F;
+    class B_UAV_05_F;
+    class Bag_Base;
     class Car;
     class Ejection_Seat_Base_F;
+    class Ejection_Seat_Plane_Fighter_01_base_F;
+    class Ejection_Seat_Plane_Fighter_02_base_F;
+    class Heli_Transport_01_base_F;
+    class I_HMG_01_support_F;
+    class LSV_01_light_base_F;
+    class LT_01_scout_base_F;
+    class O_MBT_02_arty_F;
+    class O_static_AA_F;
     class Plane_Canopy_Base_F;
+    class Plane_Civil_01_base_F;
+    class Plane_Fighter_01_Base_F;
+    class Plane_Fighter_02_Base_F;
+    class Radar_System_02_base_F;
+    class SAM_System_04_base_F;
+    class SDV_01_base_F;
     class Ship_F;
+    class Tank;
+    class UAV_01_base_F;
+    class UGV_02_Demining_Base_F;
+    class VTOL_01_armed_base_F;
+    class VTOL_01_infantry_base_F;
+    class VTOL_01_vehicle_base_F;
+    class VTOL_02_infantry_dynamicLoadout_base_F;
+    class VTOL_02_vehicle_dynamicLoadout_base_F;
+    class B_Plane_Fighter_01_F: Plane_Fighter_01_Base_F {
+        class EjectionSystem;
+    };
+    class B_Plane_Fighter_01_Stealth_F: Plane_Fighter_01_Base_F {
+        class EjectionSystem;
+    };
+    class O_Plane_Fighter_02_F: Plane_Fighter_02_Base_F {
+        class EjectionSystem;
+    };
+    class O_Plane_Fighter_02_Stealth_F: Plane_Fighter_02_Base_F {
+        class EjectionSystem;
+    };
     class Boat_F: Ship_F {
         class EventHandlers;
+    };
+    class Weapon_Bag_Base: Bag_Base {
+        class assembleInfo;
+    };
+    class Tank_F: Tank {
+        class AnimationSources;
+        class NewTurret;
+        class Turrets {
+            class MainTurret: NewTurret {
+                class Turrets;
+            };
+        };
     };
     class Plane: Air {
         class HitPoints;
@@ -1471,6 +1510,957 @@ class CfgVehicles {
     };
     class Car_F: Car {
         class HitPoints;
+    };
+    class GVAR(B_D_GMG_01_A_F): B_GMG_01_A_F {
+        author = "Ravenholme";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_W_GMG_01_A_F.jpg";
+        forceInGarage = 0;
+        faction = "ghost_blue";
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"mainturret", 0}, {"maingun", 0}, {"mainturret_destructx", 0}, {"mainturret_destructy", 0}, {"mainturret_destructz", 0}, {"maingun_destructx", 0}, {"maingun_destructy", 0}, {"maingun_destructz", 0}, {"magazine_destruct", 0}, {"ammo_belt_destruct", 0}, {"bolt_destruct", 0}, {"charging_handle_destruct", 0}, {"damagehidevez_destruct", 0}, {"damagehidehlaven_destruct", 0}, {"damagehiderecoil_destruct", 0}, {"ammo_belt_rotation", 0}, {"barrel_recoil", 0}, {"bolt_recoil", 0}, {"turret_shake", 0}, {"turret_shake_backside", 0}, {"turret_shake_aside", 0}, {"bolt_reload_begin", 0}, {"bolt_reload_end", 0}, {"magazine_hide", 0}, {"ammo_belt_hide", 0}, {"muzzleflash", 0}, {"zaslehrot", 332}, {"addautonomous_unhide", 0}, {"bullet001_reload_hide", 1}, {"bullet002_reload_hide", 1}, {"bullet003_reload_hide", 1}, {"bullet004_reload_hide", 1}, {"bullet005_reload_hide", 1}, {"bullet006_reload_hide", 1}, {"bullet007_reload_hide", 1}, {"bullet008_reload_hide", 1}};
+            hide[] = {"light_back", "brzdove svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 1.187;
+            verticalOffsetWorld = 0.099;
+            init = "''";
+        };
+    };
+    class GVAR(B_D_GMG_01_F): B_GMG_01_F {
+        author = "Ravenholme";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_W_GMG_01_F.jpg";
+        faction = "ghost_blue";
+        crew = "B_Soldier_F";
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"mainturret", 0}, {"maingun", 0}, {"mainturret_destructx", 0}, {"mainturret_destructy", 0}, {"mainturret_destructz", 0}, {"maingun_destructx", 0}, {"maingun_destructy", 0}, {"maingun_destructz", 0}, {"magazine_destruct", 0}, {"ammo_belt_destruct", 0}, {"bolt_destruct", 0}, {"charging_handle_destruct", 0}, {"damagehidevez_destruct", 0}, {"damagehidehlaven_destruct", 0}, {"damagehiderecoil_destruct", 0}, {"ammo_belt_rotation", 0}, {"barrel_recoil", 0}, {"bolt_recoil", 0}, {"turret_shake", 0}, {"turret_shake_backside", 0}, {"turret_shake_aside", 0}, {"bolt_reload_begin", 0}, {"bolt_reload_end", 0}, {"magazine_hide", 0}, {"ammo_belt_hide", 0}, {"muzzleflash", 0}, {"zaslehrot", 0}, {"addautonomous_unhide", 0}, {"bullet001_reload_hide", 1}, {"bullet002_reload_hide", 1}, {"bullet003_reload_hide", 1}, {"bullet004_reload_hide", 1}, {"bullet005_reload_hide", 1}, {"bullet006_reload_hide", 1}, {"bullet007_reload_hide", 1}, {"bullet008_reload_hide", 1}};
+            hide[] = {"light_back", "brzdove svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 1.191;
+            verticalOffsetWorld = 0.103;
+            init = "''";
+        };
+    };
+    class GVAR(B_D_GMG_01_high_F): B_GMG_01_high_F {
+        author = "Ravenholme";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_W_GMG_01_high_F.jpg";
+        faction = "ghost_blue";
+        crew = "B_Soldier_F";
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"mainturret", 0}, {"maingun", 0}, {"mainturret_destructx", 0}, {"mainturret_destructy", 0}, {"mainturret_destructz", 0}, {"maingun_destructx", 0}, {"maingun_destructy", 0}, {"maingun_destructz", 0}, {"magazine_destruct", 0}, {"ammo_belt_destruct", 0}, {"bolt_destruct", 0}, {"charging_handle_destruct", 0}, {"damagehidevez_destruct", 0}, {"damagehidehlaven_destruct", 0}, {"damagehiderecoil_destruct", 0}, {"ammo_belt_rotation", 0}, {"barrel_recoil", 0}, {"bolt_recoil", 0}, {"turret_shake", 0}, {"turret_shake_backside", 0}, {"turret_shake_aside", 0}, {"bolt_reload_begin", 0}, {"bolt_reload_end", 0}, {"magazine_hide", 0}, {"ammo_belt_hide", 0}, {"muzzleflash", 0}, {"zaslehrot", 332}, {"addautonomous_unhide", 0}, {"bullet001_reload_hide", 1}, {"bullet002_reload_hide", 1}, {"bullet003_reload_hide", 1}, {"bullet004_reload_hide", 1}, {"bullet005_reload_hide", 1}, {"bullet006_reload_hide", 1}, {"bullet007_reload_hide", 1}, {"bullet008_reload_hide", 1}};
+            hide[] = {"light_back", "brzdove svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 1.649;
+            verticalOffsetWorld = -0.011;
+            init = "''";
+        };
+    };
+    class GVAR(B_D_HMG_01_A_F): B_HMG_01_A_F {
+        author = "Ravenholme";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_W_HMG_01_A_F.jpg";
+        forceInGarage = 0;
+        faction = "ghost_blue";
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"mainturret", 0}, {"maingun", 0}, {"mainturret_destructx", 0}, {"mainturret_destructy", 0}, {"mainturret_destructz", 0}, {"maingun_destructx", 0}, {"maingun_destructy", 0}, {"maingun_destructz", 0}, {"magazine_destruct", 0}, {"ammo_belt_destruct", 0}, {"bolt_destruct", 0}, {"charging_handle_destruct", 0}, {"damagehidevez_destruct", 0}, {"damagehidehlaven_destruct", 0}, {"damagehiderecoil_destruct", 0}, {"ammo_belt_rotation", 0}, {"barrel_recoil", 0}, {"bolt_recoil", 0}, {"turret_shake", 0}, {"turret_shake_backside", 0}, {"turret_shake_aside", 0}, {"bolt_reload_begin", 0}, {"bolt_reload_end", 0}, {"magazine_hide", 0}, {"ammo_belt_hide", 0}, {"muzzleflash", 0}, {"zaslehrot", 332}, {"addautonomous_unhide", 0}, {"bullet001_reload_hide", 1}, {"bullet002_reload_hide", 1}, {"bullet003_reload_hide", 1}, {"bullet004_reload_hide", 1}, {"bullet005_reload_hide", 1}, {"bullet006_reload_hide", 1}, {"bullet007_reload_hide", 1}, {"bullet008_reload_hide", 1}};
+            hide[] = {"light_back", "brzdove svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 1.187;
+            verticalOffsetWorld = 0.099;
+            init = "''";
+        };
+    };
+    class GVAR(B_D_HMG_01_F): B_HMG_01_F {
+        author = "Ravenholme";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_W_HMG_01_F.jpg";
+        faction = "ghost_blue";
+        crew = "B_Soldier_F";
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"mainturret", 0}, {"maingun", 0}, {"mainturret_destructx", 0}, {"mainturret_destructy", 0}, {"mainturret_destructz", 0}, {"maingun_destructx", 0}, {"maingun_destructy", 0}, {"maingun_destructz", 0}, {"magazine_destruct", 0}, {"ammo_belt_destruct", 0}, {"bolt_destruct", 0}, {"charging_handle_destruct", 0}, {"damagehidevez_destruct", 0}, {"damagehidehlaven_destruct", 0}, {"damagehiderecoil_destruct", 0}, {"ammo_belt_rotation", 0}, {"barrel_recoil", 0}, {"bolt_recoil", 0}, {"turret_shake", 0}, {"turret_shake_backside", 0}, {"turret_shake_aside", 0}, {"bolt_reload_begin", 0}, {"bolt_reload_end", 0}, {"magazine_hide", 0}, {"ammo_belt_hide", 0}, {"muzzleflash", 0}, {"zaslehrot", 0}, {"addautonomous_unhide", 0}, {"bullet001_reload_hide", 1}, {"bullet002_reload_hide", 1}, {"bullet003_reload_hide", 1}, {"bullet004_reload_hide", 1}, {"bullet005_reload_hide", 1}, {"bullet006_reload_hide", 1}, {"bullet007_reload_hide", 1}, {"bullet008_reload_hide", 1}};
+            hide[] = {"light_back", "brzdove svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 1.191;
+            verticalOffsetWorld = 0.103;
+            init = "''";
+        };
+    };
+    class GVAR(B_D_HMG_01_high_F): B_HMG_01_high_F {
+        author = "Ravenholme";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_W_HMG_01_high_F.jpg";
+        faction = "ghost_blue";
+        crew = "B_Soldier_F";
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"mainturret", 0}, {"maingun", 0}, {"mainturret_destructx", 0}, {"mainturret_destructy", 0}, {"mainturret_destructz", 0}, {"maingun_destructx", 0}, {"maingun_destructy", 0}, {"maingun_destructz", 0}, {"magazine_destruct", 0}, {"ammo_belt_destruct", 0}, {"bolt_destruct", 0}, {"charging_handle_destruct", 0}, {"damagehidevez_destruct", 0}, {"damagehidehlaven_destruct", 0}, {"damagehiderecoil_destruct", 0}, {"ammo_belt_rotation", 0}, {"barrel_recoil", 0}, {"bolt_recoil", 0}, {"turret_shake", 0}, {"turret_shake_backside", 0}, {"turret_shake_aside", 0}, {"bolt_reload_begin", 0}, {"bolt_reload_end", 0}, {"magazine_hide", 0}, {"ammo_belt_hide", 0}, {"muzzleflash", 0}, {"zaslehrot", 332}, {"addautonomous_unhide", 0}, {"bullet001_reload_hide", 1}, {"bullet002_reload_hide", 1}, {"bullet003_reload_hide", 1}, {"bullet004_reload_hide", 1}, {"bullet005_reload_hide", 1}, {"bullet006_reload_hide", 1}, {"bullet007_reload_hide", 1}, {"bullet008_reload_hide", 1}};
+            hide[] = {"light_back", "brzdove svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 1.649;
+            verticalOffsetWorld = -0.011;
+            init = "''";
+        };
+    };
+    class GVAR(B_D_LSV_01_AT_F): B_LSV_01_AT_F {
+        author = "Ravenholme";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Soldier_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(B_D_LSV_01_armed_F): B_LSV_01_armed_F {
+        author = "Ravenholme";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Soldier_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(B_D_LSV_01_unarmed_F): B_LSV_01_unarmed_F {
+        author = "Ravenholme";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Soldier_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(B_D_Static_Designator_01_F): B_Static_Designator_01_F {
+        author = "Ravenholme";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_A_Static_Designator_01_F.jpg";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_UAV_AI";
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"mainturret", 0}, {"maingun", 0}, {"mainelevation_01", 0}, {"mainelevation_02", 0}, {"mainelevation_03", 0}, {"mainelevation_04", 0}, {"initturret", 0}, {"initgun", 0}, {"initelevation_01", 0}, {"initelevation_02", 0}, {"initelevation_03", 0}, {"initelevation_04", 0}};
+            hide[] = {"light_back", "brzdove svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 0.509;
+            verticalOffsetWorld = 0.001;
+            init = "''";
+        };
+        class assembleInfo {
+            displayName = "";
+            assembleTo = "";
+            base = "";
+            primary = 0;
+            dissasembleTo[] = {"B_Static_Designator_01_weapon_F"};
+        };
+    };
+    class GVAR(B_D_UAV_01_F): B_UAV_01_F {
+        author = "Ravenholme";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_W_UAV_01_F.jpg";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_UAV_AI_F";
+        typicalCargo[] = {"B_UAV_AI_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"damagehide", 0}, {"rotorimpacthide", 0}, {"tailrotorimpacthide", 0}, {"propeller1_rotation", 0}, {"propeller1_blur_rotation", 0}, {"propeller2_rotation", 0}, {"propeller2_blur_rotation", 0}, {"propeller3_rotation", 0}, {"propeller3_blur_rotation", 0}, {"propeller4_rotation", 0}, {"propeller4_blur_rotation", 0}, {"propeller1_hide", 0}, {"propeller1_blur_hide", 0}, {"propeller2_hide", 0}, {"propeller2_blur_hide", 0}, {"propeller3_hide", 0}, {"propeller3_blur_hide", 0}, {"propeller4_hide", 0}, {"propeller4_blur_hide", 0}, {"mainturret", 0}, {"maingun", -0.05}};
+            hide[] = {"zasleh", "tail rotor blur", "main rotor blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 0.15;
+            verticalOffsetWorld = -0.001;
+            init = "''";
+        };
+        class assembleInfo {
+            primary = 1;
+            base = "";
+            assembleTo = "";
+            displayName = "";
+            dissasembleTo[] = {"B_UAV_01_backpack_F"};
+        };
+    };
+    class GVAR(B_D_UGV_02_Demining_F): UGV_02_Demining_Base_F {
+        author = "Ravenholme";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_W_UGV_02_Demining_F.jpg";
+        displayName = "ED-1D Pelter";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_UAV_AI";
+        scope = 1;
+        scopeCurator = 0;
+        class assembleInfo {
+            primary = 1;
+            base = "";
+            assembleTo = "";
+            displayName = "";
+            dissasembleTo[] = {"B_UGV_02_Demining_backpack_F"};
+        };
+    };
+    class GVAR(B_G_LT_01_scout_F): LT_01_scout_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Atlas_B_G_LT_01_scout_F.jpg";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_crew_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        displayName = "AWC 303 Nyx (Recon)";
+        textureList[] = {"Indep_Olive", 1};
+        hiddenSelectionsTextures[] = {"\A3\Armor_F_Tank\LT_01\Data\LT_01_Main_olive_CO.paa", "\A3\Armor_F_Tank\LT_01\Data\LT_01_Radar_olive_CO.paa", "\A3\Armor_F\Data\camonet_NATO_Green_CO.paa", "\A3\Armor_F\Data\cage_olive_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellBlue {
+                magazine = "SmokeShellBlue";
+                count = 2;
+            };
+            class _xx_30Rnd_65x39_caseless_msbs_mag {
+                magazine = "30Rnd_65x39_caseless_msbs_mag";
+                count = 4;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_G36C_F {
+                weapon = QEGVAR(weapons,arifle_G36C_F);
+                count = 2;
+            };
+        };
+        class TransportItems {
+            class _xx_FirstAidKit {
+                name = "FirstAidKit";
+                count = 10;
+            };
+            class _xx_Toolkit {
+                name = "Toolkit";
+                count = 1;
+            };
+            class _xx_Medikit {
+                name = "Medikit";
+                count = 1;
+            };
+        };
+        class TransportBackpacks {
+        };
+        class Damage {
+            tex[] = {};
+            mat[] = {"A3\Armor_F_Tank\LT_01\Data\LT_01_Radar.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_Radar_damage.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_Radar_destruct.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_Main.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_Main_damage.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_Main_destruct.rvmat"};
+        };
+    };
+    class GVAR(B_G_LT_01_scout_ard_F): GVAR(B_G_LT_01_scout_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Atlas_B_G_LT_01_scout_ard_F.jpg";
+        faction = "ghost_blue";
+        crew = "B_crew_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        textureList[] = {"Sand", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\armor\LT_01\Data\LT_01_Main_Sand_CO.paa", "\z\ghost\addons\vehicle\models\armor\LT_01\Data\LT_01_Radar_Sand_CO.paa", "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa", "\A3\Armor_F\Data\cage_sand_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellBlue {
+                magazine = "SmokeShellBlue";
+                count = 2;
+            };
+            class _xx_30Rnd_65x39_caseless_msbs_mag {
+                magazine = "30Rnd_65x39_caseless_msbs_mag";
+                count = 4;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_G36C_Sand_F {
+                weapon = QEGVAR(weapons,arifle_G36C_Sand_F);
+                count = 2;
+            };
+        };
+        class TransportItems {
+            class _xx_FirstAidKit {
+                name = "FirstAidKit";
+                count = 10;
+            };
+            class _xx_Toolkit {
+                name = "Toolkit";
+                count = 1;
+            };
+            class _xx_Medikit {
+                name = "Medikit";
+                count = 1;
+            };
+        };
+        class TransportBackpacks {
+        };
+    };
+    class GVAR(B_D_AFV_Wheeled_01_cannon_F): B_AFV_Wheeled_01_cannon_F {
+        faction = "ghost_blue";
+        crew = "B_crew_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellBlue {
+                magazine = "SmokeShellBlue";
+                count = 2;
+            };
+            class _xx_30Rnd_65x39_caseless_black_mag {
+                magazine = "30Rnd_65x39_caseless_black_mag";
+                count = 4;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_MXC_Black_F {
+                weapon = "arifle_MXC_Black_F";
+                count = 2;
+            };
+        };
+        class TransportItems {
+            class _xx_FirstAidKit {
+                name = "FirstAidKit";
+                count = 10;
+            };
+            class _xx_Toolkit {
+                name = "Toolkit";
+                count = 1;
+            };
+            class _xx_Medikit {
+                name = "Medikit";
+                count = 1;
+            };
+        };
+        class TransportBackpacks {
+        };
+    };
+    class GVAR(B_D_AFV_Wheeled_01_up_cannon_F): B_AFV_Wheeled_01_up_cannon_F {
+        faction = "ghost_blue";
+        crew = "B_crew_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellBlue {
+                magazine = "SmokeShellBlue";
+                count = 2;
+            };
+            class _xx_30Rnd_65x39_caseless_black_mag {
+                magazine = "30Rnd_65x39_caseless_black_mag";
+                count = 4;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_MXC_Black_F {
+                weapon = "arifle_MXC_Black_F";
+                count = 2;
+            };
+        };
+        class TransportItems {
+            class _xx_FirstAidKit {
+                name = "FirstAidKit";
+                count = 10;
+            };
+            class _xx_Toolkit {
+                name = "Toolkit";
+                count = 1;
+            };
+            class _xx_Medikit {
+                name = "Medikit";
+                count = 1;
+            };
+        };
+        class TransportBackpacks {
+        };
+    };
+    class GVAR(B_D_MBT_01_TUSK_lxWS): B_MBT_01_TUSK_F {
+        faction = "ghost_blue";
+        scope = 1;
+        scopeCurator = 0;
+        class TransportBackpacks {
+            class _xx_B_AssaultPack_desert_lxWS {
+                backpack = "B_AssaultPack_desert_lxWS";
+                count = 2;
+            };
+        };
+    };
+    class GVAR(B_D_MBT_01_arty_lxWS): B_MBT_01_arty_F {
+        faction = "ghost_blue";
+        scope = 1;
+        scopeCurator = 0;
+        class TransportBackpacks {
+            class _xx_B_AssaultPack_desert_lxWS {
+                backpack = "B_AssaultPack_desert_lxWS";
+                count = 2;
+            };
+        };
+    };
+    class GVAR(B_D_MBT_01_cannon_lxWS): B_MBT_01_cannon_F {
+        faction = "ghost_blue";
+        scope = 1;
+        scopeCurator = 0;
+        class TransportBackpacks {
+            class _xx_B_AssaultPack_desert_lxWS {
+                backpack = "B_AssaultPack_desert_lxWS";
+                count = 2;
+            };
+        };
+    };
+    class GVAR(B_D_MBT_01_mlrs_lxWS): B_MBT_01_mlrs_F {
+        faction = "ghost_blue";
+        scope = 1;
+        scopeCurator = 0;
+        class TransportBackpacks {
+            class _xx_B_AssaultPack_desert_lxWS {
+                backpack = "B_AssaultPack_desert_lxWS";
+                count = 2;
+            };
+        };
+    };
+    class GVAR(B_D_Plane_Fighter_01_F): B_Plane_Fighter_01_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_W_Plane_Fighter_01_F.jpg";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Fighter_Pilot_F";
+        typicalCargo[] = {"B_Fighter_Pilot_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"mfd_off", 0}, {"mfd_on", 0}, {"mfd_radar_on", 0}, {"mfd_radar_hide", 0}, {"mfd_mball_off", 0}, {"mfd_mball_down_hide", 0}, {"mfd_mball_ok_hide_1", 0}, {"mfd_mball_ok_hide_2", 0}, {"mfd_mball_up_hide", 0}, {"mfd_mastercaution_hide", 0}, {"mfd_apufire_hide", 0}, {"mfd_engine_l_fire_hide", 0}, {"mfd_engine_r_fire_hide", 0}, {"mfd_damage_hide", 0}, {"mfd_gun_ammo_indicator", 1}, {"mfd_flaps_indicator", 0}, {"mfd_gear_up", 0}, {"mfd_gear_down", 0}, {"mfd_horizon_ball_rotate", 0}, {"mfd_horizon_ball_horizondive_0", -0.02}, {"mfd_horizon_ball_horizondive_1", -0.02}, {"mfd_horizon_ball_horizondive_2", -0.02}, {"mfd_compass_rotate", 0}, {"mfd_fuel_indicator", 0.09}, {"mfd_eng_throttle_indicator_hide", 0}, {"mfd_eng_throttle_indicator_1", 0}, {"mfd_eng_throttle_indicator_2", 0}, {"mfd_eng_throttle_indicator_3", 0}, {"mfd_eng_throttle_indicator_4", 0}, {"mfd_eng_throttle_indicator_5", 0}, {"mfd_eng_throttle_indicator_6", 0}, {"mfd_eng_throttle_indicator_7", 0}, {"mfd_eng_throttle_indicator_8", 0}, {"mfd_eng_throttle_indicator_9", 0}, {"mfd_eng_throttle_indicator_10", 0}, {"mfd_eng_throttle_indicator_11", 0}, {"mfd_eng_throttle_indicator_12", 0}, {"mfd_eng_throttle_indicator_13", 0}, {"mfd_eng_throttle_indicator_14", 0}, {"mfd_eng_throttle_indicator_15", 0}, {"mfd_eng_throttle_indicator_16", 0}, {"mfd_eng_throttle_indicator_17", 0}, {"mfd_eng_throttle_indicator_18", 0}, {"mfd_eng_throttle_indicator_19", 0}, {"mfd_eng_throttle_indicator_20", 0}, {"muzzleflashrot", 660}, {"pylon_damagehide", 0}, {"stick_pilot_bank", 0}, {"stick_pilot_dive", 0}, {"canopy_open", 0}, {"canopy_hydraulic_1", 0}, {"canopy_hydraulic_2", 0}, {"canopy_hydraulic_3_1", 0}, {"canopy_hydraulic_3_2", 0}, {"ladder_door", 0}, {"ladder_fold", 0}, {"ladder_fold_1", 0}, {"ladder_fold_2", 0}, {"ladder_colapse_1", 0}, {"ladder_colapse_2", 0}, {"ladder_colapse_3", 0}, {"slat_l1_aoa", 0}, {"slat_l2_aoa", 0}, {"slat_r1_aoa", 0}, {"slat_r2_aoa", 0}, {"slat_l1_flap", 0}, {"slat_l2_flap", 0}, {"slat_r1_flap", 0}, {"slat_r2_flap", 0}, {"aileron_l", 0}, {"aileron_l_flap", 0}, {"aileron_r", 0}, {"aileron_r_flap", 0}, {"aileron_l_cover_a", 0}, {"aileron_r_cover_a", 0}, {"flap_l", 0}, {"flap_r", 0}, {"flap_l_cover", 0}, {"flap_r_cover", 0}, {"aileron_l_cover", 0}, {"aileron_r_cover", 0}, {"rudder_l", 0}, {"rudder_l_brake", 0}, {"rudder_r", 0}, {"rudder_r_brake", 0}, {"elevator_l_1", 0}, {"elevator_l_2", 0}, {"elevator_r_1", 0}, {"elevator_r_2", 0}, {"gear_door_f_1", 0}, {"gear_door_f_2", 0}, {"gear_door_f_3", 0}, {"gear_door_f_4", 0}, {"gear_door_f_5", 0}, {"gear_door_l_1", 0}, {"gear_door_l_2", 0}, {"gear_door_r_1", 0}, {"gear_door_r_2", 0}, {"gear_f", 0}, {"gear_f_hook", 0}, {"gear_f_hydraulic_1", 0}, {"gear_f_hydraulic_2", 0}, {"suspension_f", 0}, {"gear_f_suspension_spring_1", 0}, {"gear_f_suspension_spring_2", 0}, {"suspension_f_lock", 0}, {"gear_f_suspension_spring_1_lock", 0}, {"gear_f_suspension_spring_2_lock", 0}, {"gear_f_stearing", 0}, {"gear_rear_l", 0}, {"gear_rear_hydraulic_l_1", 0}, {"gear_rear_hydraulic_l_2_stage1", 0}, {"gear_rear_hydraulic_l_2_stage2", 0}, {"gear_rear_hydraulic_l_2_fold", 0}, {"suspension_l", 0}, {"gear_rear_suspension_spring_l_1", 0}, {"gear_rear_suspension_spring_l_2", 0}, {"suspension_l_lock", 0}, {"gear_rear_suspension_spring_l_1_lock", 0}, {"gear_rear_suspension_spring_l_2_lock", 0}, {"gear_rear_r", 0}, {"gear_rear_hydraulic_r_1", 0}, {"gear_rear_hydraulic_r_2_stage1", 0}, {"gear_rear_hydraulic_r_2_stage2", 0}, {"gear_rear_hydraulic_r_2_fold", 0}, {"suspension_r", 0}, {"gear_rear_suspension_spring_r_1", 0}, {"gear_rear_suspension_spring_r_2", 0}, {"suspension_r_lock", 0}, {"gear_rear_suspension_spring_r_1_lock", 0}, {"gear_rear_suspension_spring_r_2_lock", 0}, {"wheels_f", 0}, {"wheel_l", 0}, {"wheel_r", 0}, {"engine_fan_l", 0}, {"engine_fan_r", 0}, {"engine_nozzle_l1", 0}, {"engine_nozzle_l1_aileron", 0}, {"engine_nozzle_l1_cover", 0}, {"engine_nozzle_l1_cover_aileron", 0}, {"engine_nozzle_r1", 0}, {"engine_nozzle_r1_aileron", 0}, {"engine_nozzle_r1_cover", 0}, {"engine_nozzle_r1_cover_aileron", 0}, {"engine_nozzle_l2", 0}, {"engine_nozzle_l2_aileron", 0}, {"engine_nozzle_l2_cover", 0}, {"engine_nozzle_l2_cover_aileron", 0}, {"engine_nozzle_r2", 0}, {"engine_nozzle_r2_aileron", 0}, {"engine_nozzle_r2_cover", 0}, {"engine_nozzle_r2_cover_aileron", 0}, {"engine_fire_l", 0}, {"engine_fire_right", 0}, {"engine_fire_l_damage_hide", 0}, {"engine_fire_r_damage_hide", 0}, {"weapons_bay_l_1", 0}, {"weapons_bay_l_2", 0}, {"weapons_bay_r_1", 0}, {"weapons_bay_r_2", 0}, {"weapons_rail_l_1", 0}, {"weapons_rail_l_1_retract", 0}, {"weapons_rail_l_1_colapse", 0}, {"weapons_rail_r_1", 0}, {"weapons_rail_r_1_retract", 0}, {"weapons_rail_r_1_colapse", 0}, {"weapons_bay_c_1", 0}, {"weapons_bay_c_2", 0}, {"weapons_bay_c_3", 0}, {"weapons_bay_c_4", 0}, {"collision_lights_green", 0}, {"collision_lights_green_wing", 0}, {"collision_lights_red", 0}, {"collision_lights_red_wing", 0}, {"collision_lights_white_blinking", 0}, {"mainturret", 0}, {"maingun", 0.44}};
+            hide[] = {"clan", "zasleh", "gear_f_lights", "zadni svetlo", "autobacklit", "poskozeni"};
+            verticalOffset = 2.445;
+            verticalOffsetWorld = -0.051;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+        class EjectionSystem: EjectionSystem {
+            EjectionSeatClass = QGVAR(B_D_Ejection_Seat_Plane_Fighter_01_F);
+        };
+    };
+    class GVAR(B_D_Plane_Fighter_01_Stealth_F): B_Plane_Fighter_01_Stealth_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_W_Plane_Fighter_01_Stealth_F.jpg";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Fighter_Pilot_F";
+        typicalCargo[] = {"B_Fighter_Pilot_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"mfd_off", 0}, {"mfd_on", 0}, {"mfd_radar_on", 0}, {"mfd_radar_hide", 0}, {"mfd_mball_off", 0}, {"mfd_mball_down_hide", 0}, {"mfd_mball_ok_hide_1", 0}, {"mfd_mball_ok_hide_2", 0}, {"mfd_mball_up_hide", 0}, {"mfd_mastercaution_hide", 0}, {"mfd_apufire_hide", 0}, {"mfd_engine_l_fire_hide", 0}, {"mfd_engine_r_fire_hide", 0}, {"mfd_damage_hide", 0}, {"mfd_gun_ammo_indicator", 1}, {"mfd_flaps_indicator", 0}, {"mfd_gear_up", 0}, {"mfd_gear_down", 0}, {"mfd_horizon_ball_rotate", 0}, {"mfd_horizon_ball_horizondive_0", -0.02}, {"mfd_horizon_ball_horizondive_1", -0.02}, {"mfd_horizon_ball_horizondive_2", -0.02}, {"mfd_compass_rotate", 0}, {"mfd_fuel_indicator", 0.09}, {"mfd_eng_throttle_indicator_hide", 0}, {"mfd_eng_throttle_indicator_1", 0}, {"mfd_eng_throttle_indicator_2", 0}, {"mfd_eng_throttle_indicator_3", 0}, {"mfd_eng_throttle_indicator_4", 0}, {"mfd_eng_throttle_indicator_5", 0}, {"mfd_eng_throttle_indicator_6", 0}, {"mfd_eng_throttle_indicator_7", 0}, {"mfd_eng_throttle_indicator_8", 0}, {"mfd_eng_throttle_indicator_9", 0}, {"mfd_eng_throttle_indicator_10", 0}, {"mfd_eng_throttle_indicator_11", 0}, {"mfd_eng_throttle_indicator_12", 0}, {"mfd_eng_throttle_indicator_13", 0}, {"mfd_eng_throttle_indicator_14", 0}, {"mfd_eng_throttle_indicator_15", 0}, {"mfd_eng_throttle_indicator_16", 0}, {"mfd_eng_throttle_indicator_17", 0}, {"mfd_eng_throttle_indicator_18", 0}, {"mfd_eng_throttle_indicator_19", 0}, {"mfd_eng_throttle_indicator_20", 0}, {"muzzleflashrot", 660}, {"pylon_damagehide", 0}, {"stick_pilot_bank", 0}, {"stick_pilot_dive", 0}, {"canopy_open", 0}, {"canopy_hydraulic_1", 0}, {"canopy_hydraulic_2", 0}, {"canopy_hydraulic_3_1", 0}, {"canopy_hydraulic_3_2", 0}, {"ladder_door", 0}, {"ladder_fold", 0}, {"ladder_fold_1", 0}, {"ladder_fold_2", 0}, {"ladder_colapse_1", 0}, {"ladder_colapse_2", 0}, {"ladder_colapse_3", 0}, {"slat_l1_aoa", 0}, {"slat_l2_aoa", 0}, {"slat_r1_aoa", 0}, {"slat_r2_aoa", 0}, {"slat_l1_flap", 0}, {"slat_l2_flap", 0}, {"slat_r1_flap", 0}, {"slat_r2_flap", 0}, {"aileron_l", 0}, {"aileron_l_flap", 0}, {"aileron_r", 0}, {"aileron_r_flap", 0}, {"aileron_l_cover_a", 0}, {"aileron_r_cover_a", 0}, {"flap_l", 0}, {"flap_r", 0}, {"flap_l_cover", 0}, {"flap_r_cover", 0}, {"aileron_l_cover", 0}, {"aileron_r_cover", 0}, {"rudder_l", 0}, {"rudder_l_brake", 0}, {"rudder_r", 0}, {"rudder_r_brake", 0}, {"elevator_l_1", 0}, {"elevator_l_2", 0}, {"elevator_r_1", 0}, {"elevator_r_2", 0}, {"gear_door_f_1", 0}, {"gear_door_f_2", 0}, {"gear_door_f_3", 0}, {"gear_door_f_4", 0}, {"gear_door_f_5", 0}, {"gear_door_l_1", 0}, {"gear_door_l_2", 0}, {"gear_door_r_1", 0}, {"gear_door_r_2", 0}, {"gear_f", 0}, {"gear_f_hook", 0}, {"gear_f_hydraulic_1", 0}, {"gear_f_hydraulic_2", 0}, {"suspension_f", 0}, {"gear_f_suspension_spring_1", 0}, {"gear_f_suspension_spring_2", 0}, {"suspension_f_lock", 0}, {"gear_f_suspension_spring_1_lock", 0}, {"gear_f_suspension_spring_2_lock", 0}, {"gear_f_stearing", 0}, {"gear_rear_l", 0}, {"gear_rear_hydraulic_l_1", 0}, {"gear_rear_hydraulic_l_2_stage1", 0}, {"gear_rear_hydraulic_l_2_stage2", 0}, {"gear_rear_hydraulic_l_2_fold", 0}, {"suspension_l", 0}, {"gear_rear_suspension_spring_l_1", 0}, {"gear_rear_suspension_spring_l_2", 0}, {"suspension_l_lock", 0}, {"gear_rear_suspension_spring_l_1_lock", 0}, {"gear_rear_suspension_spring_l_2_lock", 0}, {"gear_rear_r", 0}, {"gear_rear_hydraulic_r_1", 0}, {"gear_rear_hydraulic_r_2_stage1", 0}, {"gear_rear_hydraulic_r_2_stage2", 0}, {"gear_rear_hydraulic_r_2_fold", 0}, {"suspension_r", 0}, {"gear_rear_suspension_spring_r_1", 0}, {"gear_rear_suspension_spring_r_2", 0}, {"suspension_r_lock", 0}, {"gear_rear_suspension_spring_r_1_lock", 0}, {"gear_rear_suspension_spring_r_2_lock", 0}, {"wheels_f", 0}, {"wheel_l", 0}, {"wheel_r", 0}, {"engine_fan_l", 0}, {"engine_fan_r", 0}, {"engine_nozzle_l1", 0}, {"engine_nozzle_l1_aileron", 0}, {"engine_nozzle_l1_cover", 0}, {"engine_nozzle_l1_cover_aileron", 0}, {"engine_nozzle_r1", 0}, {"engine_nozzle_r1_aileron", 0}, {"engine_nozzle_r1_cover", 0}, {"engine_nozzle_r1_cover_aileron", 0}, {"engine_nozzle_l2", 0}, {"engine_nozzle_l2_aileron", 0}, {"engine_nozzle_l2_cover", 0}, {"engine_nozzle_l2_cover_aileron", 0}, {"engine_nozzle_r2", 0}, {"engine_nozzle_r2_aileron", 0}, {"engine_nozzle_r2_cover", 0}, {"engine_nozzle_r2_cover_aileron", 0}, {"engine_fire_l", 0}, {"engine_fire_right", 0}, {"engine_fire_l_damage_hide", 0}, {"engine_fire_r_damage_hide", 0}, {"weapons_bay_l_1", 0}, {"weapons_bay_l_2", 0}, {"weapons_bay_r_1", 0}, {"weapons_bay_r_2", 0}, {"weapons_rail_l_1", 0}, {"weapons_rail_l_1_retract", 0}, {"weapons_rail_l_1_colapse", 0}, {"weapons_rail_r_1", 0}, {"weapons_rail_r_1_retract", 0}, {"weapons_rail_r_1_colapse", 0}, {"weapons_bay_c_1", 0}, {"weapons_bay_c_2", 0}, {"weapons_bay_c_3", 0}, {"weapons_bay_c_4", 0}, {"collision_lights_green", 0}, {"collision_lights_green_wing", 0}, {"collision_lights_red", 0}, {"collision_lights_red_wing", 0}, {"collision_lights_white_blinking", 0}, {"mainturret", 0}, {"maingun", 0.44}};
+            hide[] = {"clan", "zasleh", "gear_f_lights", "zadni svetlo", "autobacklit", "poskozeni"};
+            verticalOffset = 2.445;
+            verticalOffsetWorld = -0.051;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+        class EjectionSystem: EjectionSystem {
+            EjectionSeatClass = QGVAR(B_D_Ejection_Seat_Plane_Fighter_01_F);
+        };
+    };
+    class GVAR(B_D_VTOL_01_armed_F): VTOL_01_armed_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_D_VTOL_01_armed_F.jpg";
+        displayName = "AV-44X Blackfish";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Pilot_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        textureList[] = {"Sand", 1, "Olive", 0, "Blue", 0};
+        hiddenSelectionsTextures[] = {"\lxWS\air_f_lxWS\Data\NATO\VTOL_01_EXT01_sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT02_Sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT03_Sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT04_Sand_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"engine_1_rot", 0.8}, {"engine_2_rot", 0.8}, {"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rudder_1_rot", 0}, {"rudder_2_rot", 0}, {"flap_1_1_move", 0}, {"flap_1_2_move", 0}, {"flap_2_1_move", 0}, {"flap_2_2_move", 0}, {"flap_1_1_rot", 0}, {"flap_1_2_rot", 0}, {"flap_2_1_rot", 0}, {"flap_2_2_rot", 0}, {"gear_1_move", 0}, {"gear_2_move", 0}, {"gear_3_move", 0}, {"gear_1_hatch_1_rot", 0}, {"gear_1_hatch_2_rot", 0}, {"gear_1_hatch_3_rot", 0}, {"gear_2_hatch_1_rot", 0}, {"gear_2_hatch_2_rot", 0}, {"gear_3_hatch_1_rot", 0}, {"gear_3_hatch_2_rot", 0}, {"wheel_1_1_rot", 0}, {"wheel_1_2_rot", 0}, {"wheel_2_1_rot", 0}, {"wheel_2_2_rot", 0}, {"wheel_2_3_rot", 0}, {"wheel_3_1_rot", 0}, {"wheel_3_2_rot", 0}, {"wheel_3_3_rot", 0}, {"gear_1_1_damper_move", 1}, {"gear_1_2_damper_move", 1}, {"gear_2_1_damper_move", 1}, {"gear_2_2_damper_move", 1}, {"gear_2_3_damper_move", 1}, {"gear_3_1_damper_move", 1}, {"gear_3_2_damper_move", 1}, {"gear_3_3_damper_move", 1}, {"door_1a_rot", 0}, {"door_1b_rot", 0}, {"positionlights_hide", 0}, {"positionlight_white_1_hide", 0}, {"positionlight_white_2_hide", 0}, {"collisionlight_red_hide", 0}, {"damage_hide", 0}, {"rotor_1_blur_hide", 0}, {"rotor_1_static_hide", 0}, {"rotor_2_blur_hide", 0}, {"rotor_2_static_hide", 0}, {"copilot_flir_h_rot", 0}, {"copilot_flir_v_rot", 0}, {"display_off_hide", 0}, {"avionics_damage", 0}, {"display_climb_move", 0}, {"display_climb_moveb", 0}, {"display_altitude_small_rot", 11.74}, {"display_altitude_large_rot", 11.74}, {"display_altitude_small_rotb", 11.74}, {"display_altitude_small_rotm", 11.74}, {"display_altitudeb_large_rot", 11.74}, {"display_altitudem_large_rot", 11.74}, {"display_compass_rot", 0}, {"display_compassb_rot", 0}, {"display_compassm_rot", 0}, {"display_flaps_1_rot", 0}, {"display_flaps_2_rot", 0}, {"display_flaps_1b_rot", 0}, {"display_flaps_2b_rot", 0}, {"display_gear_down_move", 0}, {"display_gear_downb_move", 0}, {"display_gear_up_move", 0}, {"display_gear_upb_move", 0}, {"display_speed_1_rot", 0}, {"display_speed_1b_rot", 0}, {"display_horizon_1_rot_1", 0}, {"display_horizon_1b_rot_1", 0}, {"display_horizon_1m_rot_1", 0}, {"horizon_rot_1", 0}, {"display_horizon_1_rot_2", 0}, {"display_horizon_1b_rot_2", 0}, {"display_horizon_1m_rot_2", 0}, {"horizon_rot_2", 0}, {"display_speed_2_rot_1", 0}, {"display_speed_2b_rot_1", 0}, {"display_speed_2_rot_2", 0}, {"display_speed_2b_rot_2", 0}, {"display_engine_1_rot", 0}, {"display_engine_1b_rot", 0}, {"display_engine_2_rot", 0}, {"display_engine_2b_rot", 0}, {"display_fuel_1_rot", 1}, {"display_fuel_1b_rot", 1}, {"display_fuel_2_rot", 1}, {"display_fuel_2b_rot", 1}, {"display_radar_off", 0}, {"display_radar_source_off", 0}, {"display_radar", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"gunner01_flir_h_rot", 1.57}, {"gunner01_flir_v_rot", 0}, {"gatling_turret_rot", 1.57}, {"gatling_rot", 0}, {"gatling_muzzleflash_hide", 0}, {"gatling_barrels_rot", 1}, {"howitzer_turret_rot", 1.57}, {"howitzer_rot", 0}, {"howitzer_muzzleflash_hide", 0}, {"gunner02_flir_h_rot", 1.57}, {"gunner02_flir_v_rot", 0}, {"cannon_turret_rot", 1.57}, {"cannon_rot", 0}, {"cannon_muzzleflash_hide", 0}, {"cannon_barrel_move", 1}, {"cannon_barrel_hide", 0}, {"gatling_barrels_hide", 0}, {"howitzer_barrel_hide", 0}};
+            hide[] = {"clan", "zasleh", "light_1_hide", "light_2_hide", "zadni svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 6.739;
+            verticalOffsetWorld = 0.049;
+            init = "''";
+        };
+    };
+    class GVAR(B_D_VTOL_01_infantry_F): VTOL_01_infantry_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_D_VTOL_01_infantry_F.jpg";
+        displayName = "V-44 X Blackfish (Infantry Transport)";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Pilot_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        textureList[] = {"Sand", 1, "Olive", 0, "Blue", 0};
+        hiddenSelectionsTextures[] = {"\lxWS\air_f_lxWS\Data\NATO\VTOL_01_EXT01_sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT02_Sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT03_Sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT04_Sand_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"engine_1_rot", 0.8}, {"engine_2_rot", 0.8}, {"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rudder_1_rot", 0}, {"rudder_2_rot", 0}, {"flap_1_1_move", 0}, {"flap_1_2_move", 0}, {"flap_2_1_move", 0}, {"flap_2_2_move", 0}, {"flap_1_1_rot", 0}, {"flap_1_2_rot", 0}, {"flap_2_1_rot", 0}, {"flap_2_2_rot", 0}, {"gear_1_move", 0}, {"gear_2_move", 0}, {"gear_3_move", 0}, {"gear_1_hatch_1_rot", 0}, {"gear_1_hatch_2_rot", 0}, {"gear_1_hatch_3_rot", 0}, {"gear_2_hatch_1_rot", 0}, {"gear_2_hatch_2_rot", 0}, {"gear_3_hatch_1_rot", 0}, {"gear_3_hatch_2_rot", 0}, {"wheel_1_1_rot", 0.01}, {"wheel_1_2_rot", 0.01}, {"wheel_2_1_rot", 0.01}, {"wheel_2_2_rot", 0.01}, {"wheel_2_3_rot", 0.01}, {"wheel_3_1_rot", 0.01}, {"wheel_3_2_rot", 0.01}, {"wheel_3_3_rot", 0.01}, {"gear_1_1_damper_move", 1}, {"gear_1_2_damper_move", 1}, {"gear_2_1_damper_move", 1}, {"gear_2_2_damper_move", 1}, {"gear_2_3_damper_move", 1}, {"gear_3_1_damper_move", 1}, {"gear_3_2_damper_move", 1}, {"gear_3_3_damper_move", 1}, {"door_1a_rot", 0}, {"door_1b_rot", 0}, {"positionlights_hide", 0}, {"positionlight_white_1_hide", 0}, {"positionlight_white_2_hide", 0}, {"collisionlight_red_hide", 0}, {"damage_hide", 0}, {"rotor_1_blur_hide", 0}, {"rotor_1_static_hide", 0}, {"rotor_2_blur_hide", 0}, {"rotor_2_static_hide", 0}, {"copilot_flir_h_rot", 0}, {"copilot_flir_v_rot", 0}, {"display_off_hide", 0}, {"avionics_damage", 0}, {"display_climb_move", 0}, {"display_climb_moveb", 0}, {"display_altitude_small_rot", 11.74}, {"display_altitude_large_rot", 11.74}, {"display_altitude_small_rotb", 11.74}, {"display_altitude_small_rotm", 11.74}, {"display_altitudeb_large_rot", 11.74}, {"display_altitudem_large_rot", 11.74}, {"display_compass_rot", 0}, {"display_compassb_rot", 0}, {"display_compassm_rot", 0}, {"display_flaps_1_rot", 0}, {"display_flaps_2_rot", 0}, {"display_flaps_1b_rot", 0}, {"display_flaps_2b_rot", 0}, {"display_gear_down_move", 0}, {"display_gear_downb_move", 0}, {"display_gear_up_move", 0}, {"display_gear_upb_move", 0}, {"display_speed_1_rot", 0}, {"display_speed_1b_rot", 0}, {"display_horizon_1_rot_1", 0}, {"display_horizon_1b_rot_1", 0}, {"display_horizon_1m_rot_1", 0}, {"horizon_rot_1", 0}, {"display_horizon_1_rot_2", 0}, {"display_horizon_1b_rot_2", 0}, {"display_horizon_1m_rot_2", 0}, {"horizon_rot_2", 0}, {"display_speed_2_rot_1", 0}, {"display_speed_2b_rot_1", 0}, {"display_speed_2_rot_2", 0}, {"display_speed_2b_rot_2", 0}, {"display_engine_1_rot", 0}, {"display_engine_1b_rot", 0}, {"display_engine_2_rot", 0}, {"display_engine_2b_rot", 0}, {"display_fuel_1_rot", 1}, {"display_fuel_1b_rot", 1}, {"display_fuel_2_rot", 1}, {"display_fuel_2b_rot", 1}, {"display_radar_off", 0}, {"display_radar_source_off", 0}, {"display_radar", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"cargoseats_hide", 0}};
+            hide[] = {"clan", "zasleh", "light_1_hide", "light_2_hide", "zadni svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 6.739;
+            verticalOffsetWorld = 0.049;
+            init = "''";
+        };
+    };
+    class GVAR(B_D_VTOL_01_vehicle_F): VTOL_01_vehicle_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_D_VTOL_01_vehicle_F.jpg";
+        displayName = "V-44 X Blackfish (Vehicle Transport)";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Pilot_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        textureList[] = {"Sand", 1, "Olive", 0, "Blue", 0};
+        hiddenSelectionsTextures[] = {"\lxWS\air_f_lxWS\Data\NATO\VTOL_01_EXT01_sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT02_Sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT03_Sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT04_Sand_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"engine_1_rot", 0.8}, {"engine_2_rot", 0.8}, {"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rudder_1_rot", 0}, {"rudder_2_rot", 0}, {"flap_1_1_move", 0}, {"flap_1_2_move", 0}, {"flap_2_1_move", 0}, {"flap_2_2_move", 0}, {"flap_1_1_rot", 0}, {"flap_1_2_rot", 0}, {"flap_2_1_rot", 0}, {"flap_2_2_rot", 0}, {"gear_1_move", 0}, {"gear_2_move", 0}, {"gear_3_move", 0}, {"gear_1_hatch_1_rot", 0}, {"gear_1_hatch_2_rot", 0}, {"gear_1_hatch_3_rot", 0}, {"gear_2_hatch_1_rot", 0}, {"gear_2_hatch_2_rot", 0}, {"gear_3_hatch_1_rot", 0}, {"gear_3_hatch_2_rot", 0}, {"wheel_1_1_rot", -0.01}, {"wheel_1_2_rot", -0.01}, {"wheel_2_1_rot", -0.01}, {"wheel_2_2_rot", -0.01}, {"wheel_2_3_rot", -0.01}, {"wheel_3_1_rot", -0.01}, {"wheel_3_2_rot", -0.01}, {"wheel_3_3_rot", -0.01}, {"gear_1_1_damper_move", 1}, {"gear_1_2_damper_move", 1}, {"gear_2_1_damper_move", 1}, {"gear_2_2_damper_move", 1}, {"gear_2_3_damper_move", 1}, {"gear_3_1_damper_move", 1}, {"gear_3_2_damper_move", 1}, {"gear_3_3_damper_move", 1}, {"door_1a_rot", 0}, {"door_1b_rot", 0}, {"positionlights_hide", 0}, {"positionlight_white_1_hide", 0}, {"positionlight_white_2_hide", 0}, {"collisionlight_red_hide", 0}, {"damage_hide", 0}, {"rotor_1_blur_hide", 0}, {"rotor_1_static_hide", 0}, {"rotor_2_blur_hide", 0}, {"rotor_2_static_hide", 0}, {"copilot_flir_h_rot", 0}, {"copilot_flir_v_rot", 0}, {"display_off_hide", 0}, {"avionics_damage", 0}, {"display_climb_move", 0}, {"display_climb_moveb", 0}, {"display_altitude_small_rot", 11.74}, {"display_altitude_large_rot", 11.74}, {"display_altitude_small_rotb", 11.74}, {"display_altitude_small_rotm", 11.74}, {"display_altitudeb_large_rot", 11.74}, {"display_altitudem_large_rot", 11.74}, {"display_compass_rot", 0}, {"display_compassb_rot", 0}, {"display_compassm_rot", 0}, {"display_flaps_1_rot", 0}, {"display_flaps_2_rot", 0}, {"display_flaps_1b_rot", 0}, {"display_flaps_2b_rot", 0}, {"display_gear_down_move", 0}, {"display_gear_downb_move", 0}, {"display_gear_up_move", 0}, {"display_gear_upb_move", 0}, {"display_speed_1_rot", 0}, {"display_speed_1b_rot", 0}, {"display_horizon_1_rot_1", 0}, {"display_horizon_1b_rot_1", 0}, {"display_horizon_1m_rot_1", 0}, {"horizon_rot_1", 0}, {"display_horizon_1_rot_2", 0}, {"display_horizon_1b_rot_2", 0}, {"display_horizon_1m_rot_2", 0}, {"horizon_rot_2", 0}, {"display_speed_2_rot_1", 0}, {"display_speed_2b_rot_1", 0}, {"display_speed_2_rot_2", 0}, {"display_speed_2b_rot_2", 0}, {"display_engine_1_rot", 0}, {"display_engine_1b_rot", 0}, {"display_engine_2_rot", 0}, {"display_engine_2b_rot", 0}, {"display_fuel_1_rot", 1}, {"display_fuel_1b_rot", 1}, {"display_fuel_2_rot", 1}, {"display_fuel_2b_rot", 1}, {"display_radar_off", 0}, {"display_radar_source_off", 0}, {"display_radar", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"cargoseats_hide", 1}};
+            hide[] = {"clan", "zasleh", "light_1_hide", "light_2_hide", "zadni svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 6.739;
+            verticalOffsetWorld = 0.049;
+            init = "''";
+        };
+    };
+    class GVAR(B_LSV_01_light_F): LSV_01_light_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_LSV_01_light_F.jpg";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Soldier_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        textureList[] = {"Black", 0, "Olive", 0, "Sand", 1};
+        hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_sand_CO.paa", "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_sand_CO.paa", "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_sand_CO.paa", "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_sand_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(B_VTOL_01_armed_F): VTOL_01_armed_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_VTOL_01_armed_F.jpg";
+        displayName = "AV-44X Blackfish";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Pilot_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        textureList[] = {"Blue", 0, "Olive", 1};
+        hiddenSelectionsTextures[] = {"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT01_olive_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT02_olive_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT03_olive_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT04_olive_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"engine_1_rot", 0.8}, {"engine_2_rot", 0.8}, {"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rudder_1_rot", 0}, {"rudder_2_rot", 0}, {"flap_1_1_move", 0}, {"flap_1_2_move", 0}, {"flap_2_1_move", 0}, {"flap_2_2_move", 0}, {"flap_1_1_rot", 0}, {"flap_1_2_rot", 0}, {"flap_2_1_rot", 0}, {"flap_2_2_rot", 0}, {"gear_1_move", 0}, {"gear_2_move", 0}, {"gear_3_move", 0}, {"gear_1_hatch_1_rot", 0}, {"gear_1_hatch_2_rot", 0}, {"gear_1_hatch_3_rot", 0}, {"gear_2_hatch_1_rot", 0}, {"gear_2_hatch_2_rot", 0}, {"gear_3_hatch_1_rot", 0}, {"gear_3_hatch_2_rot", 0}, {"wheel_1_1_rot", 0}, {"wheel_1_2_rot", 0}, {"wheel_2_1_rot", 0}, {"wheel_2_2_rot", 0}, {"wheel_2_3_rot", 0}, {"wheel_3_1_rot", 0}, {"wheel_3_2_rot", 0}, {"wheel_3_3_rot", 0}, {"gear_1_1_damper_move", 1}, {"gear_1_2_damper_move", 1}, {"gear_2_1_damper_move", 1}, {"gear_2_2_damper_move", 1}, {"gear_2_3_damper_move", 1}, {"gear_3_1_damper_move", 1}, {"gear_3_2_damper_move", 1}, {"gear_3_3_damper_move", 1}, {"door_1a_rot", 0}, {"door_1b_rot", 0}, {"positionlights_hide", 0}, {"positionlight_white_1_hide", 0}, {"positionlight_white_2_hide", 0}, {"collisionlight_red_hide", 0}, {"damage_hide", 0}, {"rotor_1_blur_hide", 0}, {"rotor_1_static_hide", 0}, {"rotor_2_blur_hide", 0}, {"rotor_2_static_hide", 0}, {"copilot_flir_h_rot", 0}, {"copilot_flir_v_rot", 0}, {"display_off_hide", 0}, {"avionics_damage", 0}, {"display_climb_move", 0}, {"display_climb_moveb", 0}, {"display_altitude_small_rot", 11.74}, {"display_altitude_large_rot", 11.74}, {"display_altitude_small_rotb", 11.74}, {"display_altitude_small_rotm", 11.74}, {"display_altitudeb_large_rot", 11.74}, {"display_altitudem_large_rot", 11.74}, {"display_compass_rot", 0}, {"display_compassb_rot", 0}, {"display_compassm_rot", 0}, {"display_flaps_1_rot", 0}, {"display_flaps_2_rot", 0}, {"display_flaps_1b_rot", 0}, {"display_flaps_2b_rot", 0}, {"display_gear_down_move", 0}, {"display_gear_downb_move", 0}, {"display_gear_up_move", 0}, {"display_gear_upb_move", 0}, {"display_speed_1_rot", 0}, {"display_speed_1b_rot", 0}, {"display_horizon_1_rot_1", 0}, {"display_horizon_1b_rot_1", 0}, {"display_horizon_1m_rot_1", 0}, {"horizon_rot_1", 0}, {"display_horizon_1_rot_2", 0}, {"display_horizon_1b_rot_2", 0}, {"display_horizon_1m_rot_2", 0}, {"horizon_rot_2", 0}, {"display_speed_2_rot_1", 0}, {"display_speed_2b_rot_1", 0}, {"display_speed_2_rot_2", 0}, {"display_speed_2b_rot_2", 0}, {"display_engine_1_rot", 0}, {"display_engine_1b_rot", 0}, {"display_engine_2_rot", 0}, {"display_engine_2b_rot", 0}, {"display_fuel_1_rot", 1}, {"display_fuel_1b_rot", 1}, {"display_fuel_2_rot", 1}, {"display_fuel_2b_rot", 1}, {"display_radar_off", 0}, {"display_radar_source_off", 0}, {"display_radar", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"gunner01_flir_h_rot", 1.57}, {"gunner01_flir_v_rot", 0}, {"gatling_turret_rot", 1.57}, {"gatling_rot", 0}, {"gatling_muzzleflash_hide", 0}, {"gatling_barrels_rot", 1}, {"howitzer_turret_rot", 1.57}, {"howitzer_rot", 0}, {"howitzer_muzzleflash_hide", 0}, {"gunner02_flir_h_rot", 1.57}, {"gunner02_flir_v_rot", 0}, {"cannon_turret_rot", 1.57}, {"cannon_rot", 0}, {"cannon_muzzleflash_hide", 0}, {"cannon_barrel_move", 1}, {"cannon_barrel_hide", 0}, {"gatling_barrels_hide", 0}, {"howitzer_barrel_hide", 0}};
+            hide[] = {"clan", "zasleh", "light_1_hide", "light_2_hide", "zadni svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 6.739;
+            verticalOffsetWorld = 0.049;
+            init = "''";
+        };
+    };
+    class GVAR(B_VTOL_01_infantry_F): VTOL_01_infantry_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_VTOL_01_infantry_F.jpg";
+        displayName = "V-44 X Blackfish (Infantry Transport)";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Pilot_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        textureList[] = {"Blue", 0, "Olive", 1};
+        hiddenSelectionsTextures[] = {"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT01_olive_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT02_olive_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT03_olive_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT04_olive_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"engine_1_rot", 0.8}, {"engine_2_rot", 0.8}, {"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rudder_1_rot", 0}, {"rudder_2_rot", 0}, {"flap_1_1_move", 0}, {"flap_1_2_move", 0}, {"flap_2_1_move", 0}, {"flap_2_2_move", 0}, {"flap_1_1_rot", 0}, {"flap_1_2_rot", 0}, {"flap_2_1_rot", 0}, {"flap_2_2_rot", 0}, {"gear_1_move", 0}, {"gear_2_move", 0}, {"gear_3_move", 0}, {"gear_1_hatch_1_rot", 0}, {"gear_1_hatch_2_rot", 0}, {"gear_1_hatch_3_rot", 0}, {"gear_2_hatch_1_rot", 0}, {"gear_2_hatch_2_rot", 0}, {"gear_3_hatch_1_rot", 0}, {"gear_3_hatch_2_rot", 0}, {"wheel_1_1_rot", 0.01}, {"wheel_1_2_rot", 0.01}, {"wheel_2_1_rot", 0.01}, {"wheel_2_2_rot", 0.01}, {"wheel_2_3_rot", 0.01}, {"wheel_3_1_rot", 0.01}, {"wheel_3_2_rot", 0.01}, {"wheel_3_3_rot", 0.01}, {"gear_1_1_damper_move", 1}, {"gear_1_2_damper_move", 1}, {"gear_2_1_damper_move", 1}, {"gear_2_2_damper_move", 1}, {"gear_2_3_damper_move", 1}, {"gear_3_1_damper_move", 1}, {"gear_3_2_damper_move", 1}, {"gear_3_3_damper_move", 1}, {"door_1a_rot", 0}, {"door_1b_rot", 0}, {"positionlights_hide", 0}, {"positionlight_white_1_hide", 0}, {"positionlight_white_2_hide", 0}, {"collisionlight_red_hide", 0}, {"damage_hide", 0}, {"rotor_1_blur_hide", 0}, {"rotor_1_static_hide", 0}, {"rotor_2_blur_hide", 0}, {"rotor_2_static_hide", 0}, {"copilot_flir_h_rot", 0}, {"copilot_flir_v_rot", 0}, {"display_off_hide", 0}, {"avionics_damage", 0}, {"display_climb_move", 0}, {"display_climb_moveb", 0}, {"display_altitude_small_rot", 11.74}, {"display_altitude_large_rot", 11.74}, {"display_altitude_small_rotb", 11.74}, {"display_altitude_small_rotm", 11.74}, {"display_altitudeb_large_rot", 11.74}, {"display_altitudem_large_rot", 11.74}, {"display_compass_rot", 0}, {"display_compassb_rot", 0}, {"display_compassm_rot", 0}, {"display_flaps_1_rot", 0}, {"display_flaps_2_rot", 0}, {"display_flaps_1b_rot", 0}, {"display_flaps_2b_rot", 0}, {"display_gear_down_move", 0}, {"display_gear_downb_move", 0}, {"display_gear_up_move", 0}, {"display_gear_upb_move", 0}, {"display_speed_1_rot", 0}, {"display_speed_1b_rot", 0}, {"display_horizon_1_rot_1", 0}, {"display_horizon_1b_rot_1", 0}, {"display_horizon_1m_rot_1", 0}, {"horizon_rot_1", 0}, {"display_horizon_1_rot_2", 0}, {"display_horizon_1b_rot_2", 0}, {"display_horizon_1m_rot_2", 0}, {"horizon_rot_2", 0}, {"display_speed_2_rot_1", 0}, {"display_speed_2b_rot_1", 0}, {"display_speed_2_rot_2", 0}, {"display_speed_2b_rot_2", 0}, {"display_engine_1_rot", 0}, {"display_engine_1b_rot", 0}, {"display_engine_2_rot", 0}, {"display_engine_2b_rot", 0}, {"display_fuel_1_rot", 1}, {"display_fuel_1b_rot", 1}, {"display_fuel_2_rot", 1}, {"display_fuel_2b_rot", 1}, {"display_radar_off", 0}, {"display_radar_source_off", 0}, {"display_radar", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"cargoseats_hide", 0}};
+            hide[] = {"clan", "zasleh", "light_1_hide", "light_2_hide", "zadni svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 6.739;
+            verticalOffsetWorld = 0.049;
+            init = "''";
+        };
+    };
+    class GVAR(B_VTOL_01_vehicle_F): VTOL_01_vehicle_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_VTOL_01_vehicle_F.jpg";
+        displayName = "V-44 X Blackfish (Vehicle Transport)";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Pilot_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        textureList[] = {"Blue", 0, "Olive", 1};
+        hiddenSelectionsTextures[] = {"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT01_olive_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT02_olive_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT03_olive_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT04_olive_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"engine_1_rot", 0.8}, {"engine_2_rot", 0.8}, {"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rudder_1_rot", 0}, {"rudder_2_rot", 0}, {"flap_1_1_move", 0}, {"flap_1_2_move", 0}, {"flap_2_1_move", 0}, {"flap_2_2_move", 0}, {"flap_1_1_rot", 0}, {"flap_1_2_rot", 0}, {"flap_2_1_rot", 0}, {"flap_2_2_rot", 0}, {"gear_1_move", 0}, {"gear_2_move", 0}, {"gear_3_move", 0}, {"gear_1_hatch_1_rot", 0}, {"gear_1_hatch_2_rot", 0}, {"gear_1_hatch_3_rot", 0}, {"gear_2_hatch_1_rot", 0}, {"gear_2_hatch_2_rot", 0}, {"gear_3_hatch_1_rot", 0}, {"gear_3_hatch_2_rot", 0}, {"wheel_1_1_rot", -0.01}, {"wheel_1_2_rot", -0.01}, {"wheel_2_1_rot", -0.01}, {"wheel_2_2_rot", -0.01}, {"wheel_2_3_rot", -0.01}, {"wheel_3_1_rot", -0.01}, {"wheel_3_2_rot", -0.01}, {"wheel_3_3_rot", -0.01}, {"gear_1_1_damper_move", 1}, {"gear_1_2_damper_move", 1}, {"gear_2_1_damper_move", 1}, {"gear_2_2_damper_move", 1}, {"gear_2_3_damper_move", 1}, {"gear_3_1_damper_move", 1}, {"gear_3_2_damper_move", 1}, {"gear_3_3_damper_move", 1}, {"door_1a_rot", 0}, {"door_1b_rot", 0}, {"positionlights_hide", 0}, {"positionlight_white_1_hide", 0}, {"positionlight_white_2_hide", 0}, {"collisionlight_red_hide", 0}, {"damage_hide", 0}, {"rotor_1_blur_hide", 0}, {"rotor_1_static_hide", 0}, {"rotor_2_blur_hide", 0}, {"rotor_2_static_hide", 0}, {"copilot_flir_h_rot", 0}, {"copilot_flir_v_rot", 0}, {"display_off_hide", 0}, {"avionics_damage", 0}, {"display_climb_move", 0}, {"display_climb_moveb", 0}, {"display_altitude_small_rot", 11.74}, {"display_altitude_large_rot", 11.74}, {"display_altitude_small_rotb", 11.74}, {"display_altitude_small_rotm", 11.74}, {"display_altitudeb_large_rot", 11.74}, {"display_altitudem_large_rot", 11.74}, {"display_compass_rot", 0}, {"display_compassb_rot", 0}, {"display_compassm_rot", 0}, {"display_flaps_1_rot", 0}, {"display_flaps_2_rot", 0}, {"display_flaps_1b_rot", 0}, {"display_flaps_2b_rot", 0}, {"display_gear_down_move", 0}, {"display_gear_downb_move", 0}, {"display_gear_up_move", 0}, {"display_gear_upb_move", 0}, {"display_speed_1_rot", 0}, {"display_speed_1b_rot", 0}, {"display_horizon_1_rot_1", 0}, {"display_horizon_1b_rot_1", 0}, {"display_horizon_1m_rot_1", 0}, {"horizon_rot_1", 0}, {"display_horizon_1_rot_2", 0}, {"display_horizon_1b_rot_2", 0}, {"display_horizon_1m_rot_2", 0}, {"horizon_rot_2", 0}, {"display_speed_2_rot_1", 0}, {"display_speed_2b_rot_1", 0}, {"display_speed_2_rot_2", 0}, {"display_speed_2b_rot_2", 0}, {"display_engine_1_rot", 0}, {"display_engine_1b_rot", 0}, {"display_engine_2_rot", 0}, {"display_engine_2b_rot", 0}, {"display_fuel_1_rot", 1}, {"display_fuel_1b_rot", 1}, {"display_fuel_2_rot", 1}, {"display_fuel_2b_rot", 1}, {"display_radar_off", 0}, {"display_radar_source_off", 0}, {"display_radar", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"cargoseats_hide", 1}};
+            hide[] = {"clan", "zasleh", "light_1_hide", "light_2_hide", "zadni svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 6.739;
+            verticalOffsetWorld = 0.049;
+            init = "''";
+        };
+    };
+    class GVAR(O_R_MBT_02_arty_F): O_MBT_02_arty_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_MBT_02_arty_F.jpg";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_crew_F";
+        typicalCargo[] = {"O_Soldier_F", "O_Soldier_F", "O_Soldier_F"};
+        textureList[] = {"Green", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\armor\MBT_02\Data\MBT_02_body_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\armor\MBT_02\Data\MBT_02_scorcher_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\armor\MBT_02\Data\MBT_02_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\soft\UGV_01\Data\Turret_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\armor\Data\camonet_RUS_green_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"damagehide", 0}, {"wheel_koll1", 0.01}, {"wheel_kolol1", 0.01}, {"wheel_podkolol1", 0.54}, {"wheel_kolp1", 0.01}, {"wheel_kolop1", 0.01}, {"wheel_podkolop1", 0.55}, {"wheel_koll2", 0.01}, {"wheel_kolp2", 0.01}, {"wheel_kolol2", 0.01}, {"wheel_kolol3", 0.01}, {"wheel_kolol4", 0.01}, {"wheel_kolol5", 0.01}, {"wheel_kolol6", 0.01}, {"wheel_kolol7", 0.01}, {"wheel_kolop2", 0.01}, {"wheel_kolop3", 0.01}, {"wheel_kolop4", 0.01}, {"wheel_kolop5", 0.01}, {"wheel_kolop6", 0.01}, {"wheel_kolop7", 0.01}, {"wheel_podkolol2", 0.54}, {"wheel_podkolol3", 0.53}, {"wheel_podkolol4", 0.53}, {"wheel_podkolol5", 0.52}, {"wheel_podkolol6", 0.51}, {"wheel_podkolop2", 0.54}, {"wheel_podkolop3", 0.55}, {"wheel_podkolop4", 0.55}, {"wheel_podkolop5", 0.53}, {"wheel_podkolop6", 0.52}, {"podkolol1_hide_damage", 0}, {"podkolol2_hide_damage", 0}, {"podkolol3_hide_damage", 0}, {"podkolol4_hide_damage", 0}, {"podkolol5_hide_damage", 0}, {"podkolol6_hide_damage", 0}, {"podkolol7_hide_damage", 0}, {"podkolol8_hide_damage", 0}, {"podkolop1_hide_damage", 0}, {"podkolop2_hide_damage", 0}, {"podkolop3_hide_damage", 0}, {"podkolop4_hide_damage", 0}, {"podkolop5_hide_damage", 0}, {"podkolop6_hide_damage", 0}, {"podkolop7_hide_damage", 0}, {"podkolop8_hide_damage", 0}, {"damagevez", 0}, {"mainturret", 0}, {"maingun", 0.17}, {"hatchcommander", 0}, {"recoil", 0}, {"obsturret", 0}, {"obsgun", 0}, {"wheel_podkolop7", 0.51}, {"wheel_podkolol7", 0.51}, {"hatchdriver", 0}, {"damagevezvelitele", 0}, {"poklop_commander_damage", 0}, {"poklop_gunner_damage", 0}, {"poklop_driver_damage", 0}, {"zaslehrot_hmg", 729}, {"recoil_2", 0}, {"lights_driver", 0}, {"lights_driver_off", 0}, {"lights_turret", 0}, {"drivingstickl", 0}, {"drivingstickr", 0}, {"gear_stick_reverse", 0}, {"gear_stick_forward", 0}, {"pedal_thrust", 0}, {"pedal_brake", 1}, {"hatch_can_open_indicator_right", 0}, {"hatch_can_open_indicator_left", 0}, {"driver_fan", 4335.18}, {"indicatorspeed", 0}, {"indicatorspeed_mfd_driver", 0}, {"indicatorrpm", 0}, {"indicatorrpm_mfd_driver", 0}, {"indicatorvoltammeter", 0}, {"indicatortempoil", 0}, {"indicatortempwater", 0}, {"mainturret_indicator", 0}, {"comturret_indicator", 0}, {"indicatortempwater_mfd_driver", 0}, {"indicatorfuel_mfd_driver", 1}, {"indicator_hull_direction_mfd_driver", 0}, {"indicator_main_turret_mfd_driver", 0}, {"indicator_com_turret_mfd_driver", 0}, {"indicator_com_turret_counter_mfd_driver", 0}, {"indicator_hull_direction_mfd_com", 0}, {"indicator_main_turret_mfd_com", 0}, {"indicator_com_turret_mfd_com", 0}, {"indicator_com_turret_counter_mfd_com", 0}, {"indicator_hull_direction_mfd_gunner", 0}, {"indicator_main_turret_mfd_gunner", 0}, {"indicator_com_turret_mfd_gunner", 0}, {"indicator_com_turret_counter_mfd_gunner", 0}, {"indicator_com_smoke_1", 1}, {"indicator_com_smoke_2", 1}, {"indicator_damage_engine", 0}, {"indicator_damage_fuel", 0}, {"indicator_damage_trackl", 0}, {"indicator_damage_trackr", 0}, {"indicator_turret_damage_hull", 0}, {"indicator_turret_damage_engine", 0}, {"indicator_turret_damage_fuel", 0}, {"indicator_turret_damage_main_gun", 0}, {"indicator_turret_damage_trackl", 0}, {"indicator_turret_damage_trackr", 0}, {"indicator_turret_damage_turret", 0}, {"indicator_turret_damage_comturret", 0}, {"hide_mfd_and_pip_screen_driver", 1}, {"hide_mfd_and_pip_screen_gunner", 1}, {"hide_mfd_elements", 1}, {"engine_damage_fire_indicator", 0}, {"turret_control_x", 0}, {"turret_control_y", 0}, {"damage_era_front_hide", 0}, {"damage_camonet_front_hide", 0}, {"damage_era_left_1_hide", 0}, {"damage_camonet_left_1_hide", 0}, {"damage_era_left_2_hide", 0}, {"damage_camonet_left_2_hide", 0}, {"damage_era_right_1_hide", 0}, {"damage_camonet_right_1_hide", 0}, {"damage_era_right_2_hide", 0}, {"damage_camonet_right_2_hide", 0}, {"maingunoptics", 0.17}, {"artillery_muzzle_flash", 0}, {"gmg_muzzle_flash", 0}, {"zaslehrot_gmg", 684}, {"cannon_ready_light", 0}, {"com_turret_control_x", 0}, {"com_turret_control_y", 0}};
+            hide[] = {"clan", "zasleh2", "light_l", "light_r", "zadni svetlo", "brzdove svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.722;
+            verticalOffsetWorld = -0.194;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+        class TransportWeapons {
+            class _xx_arifle_AK12U_545_F {
+                weapon = QEGVAR(weapons,arifle_AK12U_545_F);
+                count = 2;
+            };
+        };
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellRed {
+                magazine = "SmokeShellRed";
+                count = 2;
+            };
+            class _xx_30Rnd_545x39_AK12_Mag_F {
+                magazine = QEGVAR(weapons,30Rnd_545x39_AK12_Mag_F);
+                count = 4;
+            };
+        };
+        class TransportBackpacks {
+            class _xx_B_FieldPack_taiga_F {
+                backpack = "B_FieldPack_taiga_F";
+                count = 2;
+            };
+        };
+    };
+    class GVAR(O_R_MBT_02_arty_ard_F): GVAR(O_R_MBT_02_arty_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_MBT_02_arty_ard_F.jpg";
+        faction = "ghost_red";
+        crew = "O_crew_F";
+        typicalCargo[] = {"O_Soldier_F", "O_Soldier_F", "O_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"damagehide", 0}, {"wheel_koll1", 0.01}, {"wheel_kolol1", 0.01}, {"wheel_podkolol1", 0.54}, {"wheel_kolp1", 0.01}, {"wheel_kolop1", 0.01}, {"wheel_podkolop1", 0.55}, {"wheel_koll2", 0.01}, {"wheel_kolp2", 0.01}, {"wheel_kolol2", 0.01}, {"wheel_kolol3", 0.01}, {"wheel_kolol4", 0.01}, {"wheel_kolol5", 0.01}, {"wheel_kolol6", 0.01}, {"wheel_kolol7", 0.01}, {"wheel_kolop2", 0.01}, {"wheel_kolop3", 0.01}, {"wheel_kolop4", 0.01}, {"wheel_kolop5", 0.01}, {"wheel_kolop6", 0.01}, {"wheel_kolop7", 0.01}, {"wheel_podkolol2", 0.54}, {"wheel_podkolol3", 0.53}, {"wheel_podkolol4", 0.53}, {"wheel_podkolol5", 0.52}, {"wheel_podkolol6", 0.51}, {"wheel_podkolop2", 0.54}, {"wheel_podkolop3", 0.55}, {"wheel_podkolop4", 0.55}, {"wheel_podkolop5", 0.53}, {"wheel_podkolop6", 0.52}, {"podkolol1_hide_damage", 0}, {"podkolol2_hide_damage", 0}, {"podkolol3_hide_damage", 0}, {"podkolol4_hide_damage", 0}, {"podkolol5_hide_damage", 0}, {"podkolol6_hide_damage", 0}, {"podkolol7_hide_damage", 0}, {"podkolol8_hide_damage", 0}, {"podkolop1_hide_damage", 0}, {"podkolop2_hide_damage", 0}, {"podkolop3_hide_damage", 0}, {"podkolop4_hide_damage", 0}, {"podkolop5_hide_damage", 0}, {"podkolop6_hide_damage", 0}, {"podkolop7_hide_damage", 0}, {"podkolop8_hide_damage", 0}, {"damagevez", 0}, {"mainturret", 0}, {"maingun", 0.17}, {"hatchcommander", 0}, {"recoil", 0}, {"obsturret", 0}, {"obsgun", 0}, {"wheel_podkolop7", 0.51}, {"wheel_podkolol7", 0.51}, {"hatchdriver", 0}, {"damagevezvelitele", 0}, {"poklop_commander_damage", 0}, {"poklop_gunner_damage", 0}, {"poklop_driver_damage", 0}, {"zaslehrot_hmg", 729}, {"recoil_2", 0}, {"lights_driver", 0}, {"lights_driver_off", 0}, {"lights_turret", 0}, {"drivingstickl", 0}, {"drivingstickr", 0}, {"gear_stick_reverse", 0}, {"gear_stick_forward", 0}, {"pedal_thrust", 0}, {"pedal_brake", 1}, {"hatch_can_open_indicator_right", 0}, {"hatch_can_open_indicator_left", 0}, {"driver_fan", 4335.18}, {"indicatorspeed", 0}, {"indicatorspeed_mfd_driver", 0}, {"indicatorrpm", 0}, {"indicatorrpm_mfd_driver", 0}, {"indicatorvoltammeter", 0}, {"indicatortempoil", 0}, {"indicatortempwater", 0}, {"mainturret_indicator", 0}, {"comturret_indicator", 0}, {"indicatortempwater_mfd_driver", 0}, {"indicatorfuel_mfd_driver", 1}, {"indicator_hull_direction_mfd_driver", 0}, {"indicator_main_turret_mfd_driver", 0}, {"indicator_com_turret_mfd_driver", 0}, {"indicator_com_turret_counter_mfd_driver", 0}, {"indicator_hull_direction_mfd_com", 0}, {"indicator_main_turret_mfd_com", 0}, {"indicator_com_turret_mfd_com", 0}, {"indicator_com_turret_counter_mfd_com", 0}, {"indicator_hull_direction_mfd_gunner", 0}, {"indicator_main_turret_mfd_gunner", 0}, {"indicator_com_turret_mfd_gunner", 0}, {"indicator_com_turret_counter_mfd_gunner", 0}, {"indicator_com_smoke_1", 1}, {"indicator_com_smoke_2", 1}, {"indicator_damage_engine", 0}, {"indicator_damage_fuel", 0}, {"indicator_damage_trackl", 0}, {"indicator_damage_trackr", 0}, {"indicator_turret_damage_hull", 0}, {"indicator_turret_damage_engine", 0}, {"indicator_turret_damage_fuel", 0}, {"indicator_turret_damage_main_gun", 0}, {"indicator_turret_damage_trackl", 0}, {"indicator_turret_damage_trackr", 0}, {"indicator_turret_damage_turret", 0}, {"indicator_turret_damage_comturret", 0}, {"hide_mfd_and_pip_screen_driver", 1}, {"hide_mfd_and_pip_screen_gunner", 1}, {"hide_mfd_elements", 1}, {"engine_damage_fire_indicator", 0}, {"turret_control_x", 0}, {"turret_control_y", 0}, {"damage_era_front_hide", 0}, {"damage_camonet_front_hide", 0}, {"damage_era_left_1_hide", 0}, {"damage_camonet_left_1_hide", 0}, {"damage_era_left_2_hide", 0}, {"damage_camonet_left_2_hide", 0}, {"damage_era_right_1_hide", 0}, {"damage_camonet_right_1_hide", 0}, {"damage_era_right_2_hide", 0}, {"damage_camonet_right_2_hide", 0}, {"maingunoptics", 0.17}, {"artillery_muzzle_flash", 0}, {"gmg_muzzle_flash", 0}, {"zaslehrot_gmg", 684}, {"cannon_ready_light", 0}, {"com_turret_control_x", 0}, {"com_turret_control_y", 0}};
+            hide[] = {"clan", "zasleh2", "light_l", "light_r", "zadni svetlo", "brzdove svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.722;
+            verticalOffsetWorld = -0.194;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+        class TransportBackpacks {
+            class _xx_B_FieldPack_green_F {
+                backpack = "B_FieldPack_green_F";
+                count = 2;
+            };
+        };
+    };
+    class GVAR(O_R_Plane_Fighter_02_F): O_Plane_Fighter_02_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Plane_Fighter_02_F.jpg";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_Fighter_Pilot_F";
+        typicalCargo[] = {"O_Fighter_Pilot_F"};
+        textureList[] = {"RUBlue", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Plane_Fighter_02\Data\Fighter_02_fuselage_01_rublue_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Fighter_02\Data\Fighter_02_fuselage_02_rublue_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Fighter_02\Data\Fighter_02_fuselage_01_rublue_CO.paa", "\A3\Air_F_Jets\Plane_Fighter_02\Data\Numbers\Fighter_02_number_02_CO.paa", "\A3\Air_F_Jets\Plane_Fighter_02\Data\Numbers\Fighter_02_number_00_CO.paa", "\A3\Air_F_Jets\Plane_Fighter_02\Data\Numbers\Fighter_02_number_01_CO.paa", "\A3\Data_F\clear_empty.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"muzzleflashrot", 144}, {"left_rotor_rot", 0}, {"right_rotor_rot", 0}, {"mfd_dam_hull", 0}, {"mfd_dam_caution", 0}, {"mfd_dam_avionics", 0}, {"mfd_dam_fuel_l", 0}, {"mfd_dam_fuel_r", 0}, {"mfd_dam_gear", 0}, {"mfd_dam_engine", 0}, {"mfd_dam_engine2", 0}, {"mfd_dam_laileron", 0}, {"mfd_dam_raileron", 0}, {"mfd_dam_lcrudder", 0}, {"mfd_dam_rrudder", 0}, {"mfd_dam_lcelevator", 0}, {"mfd_dam_relevator", 0}, {"engine_damage", 0}, {"engine2_damage", 0}, {"mfd_on", 0}, {"mfd_masterarm", 0}, {"mfd_brake_lever", 0}, {"mfd_gear_lever", 0}, {"mfd_systems_gear", 0}, {"mfd_systems_brake", 0}, {"mfd_flaps_up_1", 0}, {"mfd_systems_flaps_1", 0}, {"mfd_systems_flaps_2", 0}, {"mfd_compass_rotate", 0}, {"mfd_fuel_level", 0.08}, {"mfd_fuel_low", 0.08}, {"mfd_horizon_ball_rotate_1", 0}, {"mfd_horizon_ball_horizondive_0_1", 0}, {"mfd_horizon_ball_horizondive_1", 0}, {"mfd_horizon_ball_horizondive_2_1", 0}, {"mfd_vert_speed", 0}, {"mfd_throttle_1", 0}, {"mfd_throttle_2", 0}, {"mfd_rudder", 0}, {"mfd_speed", 0}, {"mfd_engine_rpm_1", 0}, {"mfd_engine_rpm_2", 0}, {"left_engine_on", 0}, {"right_engine_on", 0}, {"light_wingtip_red", 0}, {"light_wingtip_green", 0}, {"collision_lights_white_blinking", 0}, {"pilotcamerarotx", 0.26}, {"pilotcameraroty", 0}, {"canopy_stage_1", 0}, {"canopy_stage_2", 0}, {"canopy_strut_stage_1_left", 0}, {"canopy_strut_stage_1_right", 0}, {"crew_ladder", 0}, {"weapons_bay_door_c_left", 0}, {"weapons_bay_door_c_right", 0}, {"weapons_bay_door_left_1", 0}, {"weapons_bay_door_left_2", 0}, {"weapons_bay_door_right_1", 0}, {"weapons_bay_door_right_2", 0}, {"front_wheel", 0}, {"left_wheel", 0}, {"right_wheel", 0}, {"front_gear_suspension", 0}, {"front_gear_suspension_rot", 0}, {"front_gear", 0}, {"front_gear_piston", 0}, {"front_hydraulic_bar_1_1", 0}, {"front_stearing", 0}, {"left_gear_suspension", 0}, {"left_gear", 0}, {"left_gear_hydraulics", 0}, {"left_hydraulic_bar_1", 0}, {"left_hydraulic_bar_2", 0}, {"gear_rear_left_piston", 0}, {"gear_rear_left_piston_1", 0}, {"right_gear_suspension", 0}, {"right_gear", 0}, {"right_gear_hydraulics", 0}, {"right_hydraulic_bar_1", 0}, {"right_hydraulic_bar_2", 0}, {"gear_rear_right_piston", 0}, {"gear_rear_right_piston_1", 0}, {"front_door_1", 0}, {"front_door_2", 0}, {"front_door_3", 0}, {"front_door_4", 0}, {"front_door_piston_1", 0}, {"front_door_piston_2", 0}, {"left_gear_door_1", 0}, {"left_gear_door_2", 0}, {"right_gear_door_1", 0}, {"right_gear_door_2", 0}, {"left_flap", 0}, {"right_flap", 0}, {"left_rudder", 0}, {"left_rudder_brake", 0}, {"right_rudder", 0}, {"right_rudder_brake", 0}, {"engine_left_rudder", 0}, {"engine_right_rudder", 0}, {"aileron_left", 0}, {"aileron_right", 0}, {"left_elevon", 0}, {"right_elevon", 0}, {"left_elevator", 0}, {"right_elevator", 0}, {"engine_left_elevator", 0}, {"engine_left_elevon", 0}, {"engine_right_elevator", 0}, {"engine_right_elevon", 0}, {"stick_pilot_bank", 0}, {"stick_pilot_dive", 0}, {"throttle", 0}, {"left_engine_nozzle_1", 0}, {"left_engine_nozzle_2", 0}, {"left_engine_nozzle_3", 0}, {"left_engine_nozzle_4", 0}, {"left_engine_nozzle_5", 0}, {"left_engine_nozzle_6", 0}, {"left_engine_nozzle_7", 0}, {"left_engine_nozzle_8", 0}, {"left_engine_nozzle_9", 0}, {"left_engine_nozzle_10", 0}, {"left_engine_nozzle_11", 0}, {"right_engine_nozzle_1", 0}, {"right_engine_nozzle_2", 0}, {"right_engine_nozzle_3", 0}, {"right_engine_nozzle_4", 0}, {"right_engine_nozzle_5", 0}, {"right_engine_nozzle_6", 0}, {"right_engine_nozzle_7", 0}, {"right_engine_nozzle_8", 0}, {"right_engine_nozzle_9", 0}, {"right_engine_nozzle_10", 0}, {"right_engine_nozzle_11", 0}};
+            hide[] = {"clan", "zasleh", "light_1", "zadni svetlo", "backlighting", "poskozeni"};
+            verticalOffset = 2.346;
+            verticalOffsetWorld = -0.127;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+        class EjectionSystem: EjectionSystem {
+            EjectionSeatClass = QGVAR(O_R_Ejection_Seat_Plane_Fighter_02_F);
+        };
+    };
+    class GVAR(O_R_Plane_Fighter_02_Stealth_F): O_Plane_Fighter_02_Stealth_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Plane_Fighter_02_Stealth_F.jpg";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_Fighter_Pilot_F";
+        typicalCargo[] = {"O_Fighter_Pilot_F"};
+        textureList[] = {"RUBlue", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Plane_Fighter_02\Data\Fighter_02_fuselage_01_rublue_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Fighter_02\Data\Fighter_02_fuselage_02_rublue_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Fighter_02\Data\Fighter_02_fuselage_01_rublue_CO.paa", "\A3\Air_F_Jets\Plane_Fighter_02\Data\Numbers\Fighter_02_number_02_CO.paa", "\A3\Air_F_Jets\Plane_Fighter_02\Data\Numbers\Fighter_02_number_00_CO.paa", "\A3\Air_F_Jets\Plane_Fighter_02\Data\Numbers\Fighter_02_number_01_CO.paa", "\A3\Data_F\clear_empty.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"muzzleflashrot", 144}, {"left_rotor_rot", 0}, {"right_rotor_rot", 0}, {"mfd_dam_hull", 0}, {"mfd_dam_caution", 0}, {"mfd_dam_avionics", 0}, {"mfd_dam_fuel_l", 0}, {"mfd_dam_fuel_r", 0}, {"mfd_dam_gear", 0}, {"mfd_dam_engine", 0}, {"mfd_dam_engine2", 0}, {"mfd_dam_laileron", 0}, {"mfd_dam_raileron", 0}, {"mfd_dam_lcrudder", 0}, {"mfd_dam_rrudder", 0}, {"mfd_dam_lcelevator", 0}, {"mfd_dam_relevator", 0}, {"engine_damage", 0}, {"engine2_damage", 0}, {"mfd_on", 0}, {"mfd_masterarm", 0}, {"mfd_brake_lever", 0}, {"mfd_gear_lever", 0}, {"mfd_systems_gear", 0}, {"mfd_systems_brake", 0}, {"mfd_flaps_up_1", 0}, {"mfd_systems_flaps_1", 0}, {"mfd_systems_flaps_2", 0}, {"mfd_compass_rotate", 0}, {"mfd_fuel_level", 0.08}, {"mfd_fuel_low", 0.08}, {"mfd_horizon_ball_rotate_1", 0}, {"mfd_horizon_ball_horizondive_0_1", 0}, {"mfd_horizon_ball_horizondive_1", 0}, {"mfd_horizon_ball_horizondive_2_1", 0}, {"mfd_vert_speed", 0}, {"mfd_throttle_1", 0}, {"mfd_throttle_2", 0}, {"mfd_rudder", 0}, {"mfd_speed", 0}, {"mfd_engine_rpm_1", 0}, {"mfd_engine_rpm_2", 0}, {"left_engine_on", 0}, {"right_engine_on", 0}, {"light_wingtip_red", 0}, {"light_wingtip_green", 0}, {"collision_lights_white_blinking", 0}, {"pilotcamerarotx", 0.26}, {"pilotcameraroty", 0}, {"canopy_stage_1", 0}, {"canopy_stage_2", 0}, {"canopy_strut_stage_1_left", 0}, {"canopy_strut_stage_1_right", 0}, {"crew_ladder", 0}, {"weapons_bay_door_c_left", 0}, {"weapons_bay_door_c_right", 0}, {"weapons_bay_door_left_1", 0}, {"weapons_bay_door_left_2", 0}, {"weapons_bay_door_right_1", 0}, {"weapons_bay_door_right_2", 0}, {"front_wheel", 0}, {"left_wheel", 0}, {"right_wheel", 0}, {"front_gear_suspension", 0}, {"front_gear_suspension_rot", 0}, {"front_gear", 0}, {"front_gear_piston", 0}, {"front_hydraulic_bar_1_1", 0}, {"front_stearing", 0}, {"left_gear_suspension", 0}, {"left_gear", 0}, {"left_gear_hydraulics", 0}, {"left_hydraulic_bar_1", 0}, {"left_hydraulic_bar_2", 0}, {"gear_rear_left_piston", 0}, {"gear_rear_left_piston_1", 0}, {"right_gear_suspension", 0}, {"right_gear", 0}, {"right_gear_hydraulics", 0}, {"right_hydraulic_bar_1", 0}, {"right_hydraulic_bar_2", 0}, {"gear_rear_right_piston", 0}, {"gear_rear_right_piston_1", 0}, {"front_door_1", 0}, {"front_door_2", 0}, {"front_door_3", 0}, {"front_door_4", 0}, {"front_door_piston_1", 0}, {"front_door_piston_2", 0}, {"left_gear_door_1", 0}, {"left_gear_door_2", 0}, {"right_gear_door_1", 0}, {"right_gear_door_2", 0}, {"left_flap", 0}, {"right_flap", 0}, {"left_rudder", 0}, {"left_rudder_brake", 0}, {"right_rudder", 0}, {"right_rudder_brake", 0}, {"engine_left_rudder", 0}, {"engine_right_rudder", 0}, {"aileron_left", 0}, {"aileron_right", 0}, {"left_elevon", 0}, {"right_elevon", 0}, {"left_elevator", 0}, {"right_elevator", 0}, {"engine_left_elevator", 0}, {"engine_left_elevon", 0}, {"engine_right_elevator", 0}, {"engine_right_elevon", 0}, {"stick_pilot_bank", 0}, {"stick_pilot_dive", 0}, {"throttle", 0}, {"left_engine_nozzle_1", 0}, {"left_engine_nozzle_2", 0}, {"left_engine_nozzle_3", 0}, {"left_engine_nozzle_4", 0}, {"left_engine_nozzle_5", 0}, {"left_engine_nozzle_6", 0}, {"left_engine_nozzle_7", 0}, {"left_engine_nozzle_8", 0}, {"left_engine_nozzle_9", 0}, {"left_engine_nozzle_10", 0}, {"left_engine_nozzle_11", 0}, {"right_engine_nozzle_1", 0}, {"right_engine_nozzle_2", 0}, {"right_engine_nozzle_3", 0}, {"right_engine_nozzle_4", 0}, {"right_engine_nozzle_5", 0}, {"right_engine_nozzle_6", 0}, {"right_engine_nozzle_7", 0}, {"right_engine_nozzle_8", 0}, {"right_engine_nozzle_9", 0}, {"right_engine_nozzle_10", 0}, {"right_engine_nozzle_11", 0}};
+            hide[] = {"clan", "zasleh", "light_1", "zadni svetlo", "backlighting", "poskozeni"};
+            verticalOffset = 2.346;
+            verticalOffsetWorld = -0.127;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+        class EjectionSystem: EjectionSystem {
+            EjectionSeatClass = QGVAR(O_R_Ejection_Seat_Plane_Fighter_02_F);
+        };
+    };
+    class GVAR(O_R_Plane_Fighter_02_Stealth_ard_F): GVAR(O_R_Plane_Fighter_02_Stealth_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Plane_Fighter_02_Stealth_ard_F.jpg";
+        faction = "ghost_red";
+        crew = "O_Fighter_Pilot_F";
+        typicalCargo[] = {"O_Fighter_Pilot_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"muzzleflashrot", 144}, {"left_rotor_rot", 0}, {"right_rotor_rot", 0}, {"mfd_dam_hull", 0}, {"mfd_dam_caution", 0}, {"mfd_dam_avionics", 0}, {"mfd_dam_fuel_l", 0}, {"mfd_dam_fuel_r", 0}, {"mfd_dam_gear", 0}, {"mfd_dam_engine", 0}, {"mfd_dam_engine2", 0}, {"mfd_dam_laileron", 0}, {"mfd_dam_raileron", 0}, {"mfd_dam_lcrudder", 0}, {"mfd_dam_rrudder", 0}, {"mfd_dam_lcelevator", 0}, {"mfd_dam_relevator", 0}, {"engine_damage", 0}, {"engine2_damage", 0}, {"mfd_on", 0}, {"mfd_masterarm", 0}, {"mfd_brake_lever", 0}, {"mfd_gear_lever", 0}, {"mfd_systems_gear", 0}, {"mfd_systems_brake", 0}, {"mfd_flaps_up_1", 0}, {"mfd_systems_flaps_1", 0}, {"mfd_systems_flaps_2", 0}, {"mfd_compass_rotate", 0}, {"mfd_fuel_level", 0.08}, {"mfd_fuel_low", 0.08}, {"mfd_horizon_ball_rotate_1", 0}, {"mfd_horizon_ball_horizondive_0_1", 0}, {"mfd_horizon_ball_horizondive_1", 0}, {"mfd_horizon_ball_horizondive_2_1", 0}, {"mfd_vert_speed", 0}, {"mfd_throttle_1", 0}, {"mfd_throttle_2", 0}, {"mfd_rudder", 0}, {"mfd_speed", 0}, {"mfd_engine_rpm_1", 0}, {"mfd_engine_rpm_2", 0}, {"left_engine_on", 0}, {"right_engine_on", 0}, {"light_wingtip_red", 0}, {"light_wingtip_green", 0}, {"collision_lights_white_blinking", 0}, {"pilotcamerarotx", 0.26}, {"pilotcameraroty", 0}, {"canopy_stage_1", 0}, {"canopy_stage_2", 0}, {"canopy_strut_stage_1_left", 0}, {"canopy_strut_stage_1_right", 0}, {"crew_ladder", 0}, {"weapons_bay_door_c_left", 0}, {"weapons_bay_door_c_right", 0}, {"weapons_bay_door_left_1", 0}, {"weapons_bay_door_left_2", 0}, {"weapons_bay_door_right_1", 0}, {"weapons_bay_door_right_2", 0}, {"front_wheel", 0}, {"left_wheel", 0}, {"right_wheel", 0}, {"front_gear_suspension", 0}, {"front_gear_suspension_rot", 0}, {"front_gear", 0}, {"front_gear_piston", 0}, {"front_hydraulic_bar_1_1", 0}, {"front_stearing", 0}, {"left_gear_suspension", 0}, {"left_gear", 0}, {"left_gear_hydraulics", 0}, {"left_hydraulic_bar_1", 0}, {"left_hydraulic_bar_2", 0}, {"gear_rear_left_piston", 0}, {"gear_rear_left_piston_1", 0}, {"right_gear_suspension", 0}, {"right_gear", 0}, {"right_gear_hydraulics", 0}, {"right_hydraulic_bar_1", 0}, {"right_hydraulic_bar_2", 0}, {"gear_rear_right_piston", 0}, {"gear_rear_right_piston_1", 0}, {"front_door_1", 0}, {"front_door_2", 0}, {"front_door_3", 0}, {"front_door_4", 0}, {"front_door_piston_1", 0}, {"front_door_piston_2", 0}, {"left_gear_door_1", 0}, {"left_gear_door_2", 0}, {"right_gear_door_1", 0}, {"right_gear_door_2", 0}, {"left_flap", 0}, {"right_flap", 0}, {"left_rudder", 0}, {"left_rudder_brake", 0}, {"right_rudder", 0}, {"right_rudder_brake", 0}, {"engine_left_rudder", 0}, {"engine_right_rudder", 0}, {"aileron_left", 0}, {"aileron_right", 0}, {"left_elevon", 0}, {"right_elevon", 0}, {"left_elevator", 0}, {"right_elevator", 0}, {"engine_left_elevator", 0}, {"engine_left_elevon", 0}, {"engine_right_elevator", 0}, {"engine_right_elevon", 0}, {"stick_pilot_bank", 0}, {"stick_pilot_dive", 0}, {"throttle", 0}, {"left_engine_nozzle_1", 0}, {"left_engine_nozzle_2", 0}, {"left_engine_nozzle_3", 0}, {"left_engine_nozzle_4", 0}, {"left_engine_nozzle_5", 0}, {"left_engine_nozzle_6", 0}, {"left_engine_nozzle_7", 0}, {"left_engine_nozzle_8", 0}, {"left_engine_nozzle_9", 0}, {"left_engine_nozzle_10", 0}, {"left_engine_nozzle_11", 0}, {"right_engine_nozzle_1", 0}, {"right_engine_nozzle_2", 0}, {"right_engine_nozzle_3", 0}, {"right_engine_nozzle_4", 0}, {"right_engine_nozzle_5", 0}, {"right_engine_nozzle_6", 0}, {"right_engine_nozzle_7", 0}, {"right_engine_nozzle_8", 0}, {"right_engine_nozzle_9", 0}, {"right_engine_nozzle_10", 0}, {"right_engine_nozzle_11", 0}};
+            hide[] = {"clan", "zasleh", "light_1", "zadni svetlo", "backlighting", "poskozeni"};
+            verticalOffset = 2.346;
+            verticalOffsetWorld = -0.127;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+        class EjectionSystem: EjectionSystem {
+            EjectionSeatClass = QGVAR(O_R_Ejection_Seat_Plane_Fighter_02_ard_F);
+        };
+    };
+    class GVAR(O_R_Plane_Fighter_02_ard_F): GVAR(O_R_Plane_Fighter_02_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Plane_Fighter_02_ard_F.jpg";
+        faction = "ghost_red";
+        crew = "O_Fighter_Pilot_F";
+        typicalCargo[] = {"O_Fighter_Pilot_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"muzzleflashrot", 144}, {"left_rotor_rot", 0}, {"right_rotor_rot", 0}, {"mfd_dam_hull", 0}, {"mfd_dam_caution", 0}, {"mfd_dam_avionics", 0}, {"mfd_dam_fuel_l", 0}, {"mfd_dam_fuel_r", 0}, {"mfd_dam_gear", 0}, {"mfd_dam_engine", 0}, {"mfd_dam_engine2", 0}, {"mfd_dam_laileron", 0}, {"mfd_dam_raileron", 0}, {"mfd_dam_lcrudder", 0}, {"mfd_dam_rrudder", 0}, {"mfd_dam_lcelevator", 0}, {"mfd_dam_relevator", 0}, {"engine_damage", 0}, {"engine2_damage", 0}, {"mfd_on", 0}, {"mfd_masterarm", 0}, {"mfd_brake_lever", 0}, {"mfd_gear_lever", 0}, {"mfd_systems_gear", 0}, {"mfd_systems_brake", 0}, {"mfd_flaps_up_1", 0}, {"mfd_systems_flaps_1", 0}, {"mfd_systems_flaps_2", 0}, {"mfd_compass_rotate", 0}, {"mfd_fuel_level", 0.08}, {"mfd_fuel_low", 0.08}, {"mfd_horizon_ball_rotate_1", 0}, {"mfd_horizon_ball_horizondive_0_1", 0}, {"mfd_horizon_ball_horizondive_1", 0}, {"mfd_horizon_ball_horizondive_2_1", 0}, {"mfd_vert_speed", 0}, {"mfd_throttle_1", 0}, {"mfd_throttle_2", 0}, {"mfd_rudder", 0}, {"mfd_speed", 0}, {"mfd_engine_rpm_1", 0}, {"mfd_engine_rpm_2", 0}, {"left_engine_on", 0}, {"right_engine_on", 0}, {"light_wingtip_red", 0}, {"light_wingtip_green", 0}, {"collision_lights_white_blinking", 0}, {"pilotcamerarotx", 0.26}, {"pilotcameraroty", 0}, {"canopy_stage_1", 0}, {"canopy_stage_2", 0}, {"canopy_strut_stage_1_left", 0}, {"canopy_strut_stage_1_right", 0}, {"crew_ladder", 0}, {"weapons_bay_door_c_left", 0}, {"weapons_bay_door_c_right", 0}, {"weapons_bay_door_left_1", 0}, {"weapons_bay_door_left_2", 0}, {"weapons_bay_door_right_1", 0}, {"weapons_bay_door_right_2", 0}, {"front_wheel", 0}, {"left_wheel", 0}, {"right_wheel", 0}, {"front_gear_suspension", 0}, {"front_gear_suspension_rot", 0}, {"front_gear", 0}, {"front_gear_piston", 0}, {"front_hydraulic_bar_1_1", 0}, {"front_stearing", 0}, {"left_gear_suspension", 0}, {"left_gear", 0}, {"left_gear_hydraulics", 0}, {"left_hydraulic_bar_1", 0}, {"left_hydraulic_bar_2", 0}, {"gear_rear_left_piston", 0}, {"gear_rear_left_piston_1", 0}, {"right_gear_suspension", 0}, {"right_gear", 0}, {"right_gear_hydraulics", 0}, {"right_hydraulic_bar_1", 0}, {"right_hydraulic_bar_2", 0}, {"gear_rear_right_piston", 0}, {"gear_rear_right_piston_1", 0}, {"front_door_1", 0}, {"front_door_2", 0}, {"front_door_3", 0}, {"front_door_4", 0}, {"front_door_piston_1", 0}, {"front_door_piston_2", 0}, {"left_gear_door_1", 0}, {"left_gear_door_2", 0}, {"right_gear_door_1", 0}, {"right_gear_door_2", 0}, {"left_flap", 0}, {"right_flap", 0}, {"left_rudder", 0}, {"left_rudder_brake", 0}, {"right_rudder", 0}, {"right_rudder_brake", 0}, {"engine_left_rudder", 0}, {"engine_right_rudder", 0}, {"aileron_left", 0}, {"aileron_right", 0}, {"left_elevon", 0}, {"right_elevon", 0}, {"left_elevator", 0}, {"right_elevator", 0}, {"engine_left_elevator", 0}, {"engine_left_elevon", 0}, {"engine_right_elevator", 0}, {"engine_right_elevon", 0}, {"stick_pilot_bank", 0}, {"stick_pilot_dive", 0}, {"throttle", 0}, {"left_engine_nozzle_1", 0}, {"left_engine_nozzle_2", 0}, {"left_engine_nozzle_3", 0}, {"left_engine_nozzle_4", 0}, {"left_engine_nozzle_5", 0}, {"left_engine_nozzle_6", 0}, {"left_engine_nozzle_7", 0}, {"left_engine_nozzle_8", 0}, {"left_engine_nozzle_9", 0}, {"left_engine_nozzle_10", 0}, {"left_engine_nozzle_11", 0}, {"right_engine_nozzle_1", 0}, {"right_engine_nozzle_2", 0}, {"right_engine_nozzle_3", 0}, {"right_engine_nozzle_4", 0}, {"right_engine_nozzle_5", 0}, {"right_engine_nozzle_6", 0}, {"right_engine_nozzle_7", 0}, {"right_engine_nozzle_8", 0}, {"right_engine_nozzle_9", 0}, {"right_engine_nozzle_10", 0}, {"right_engine_nozzle_11", 0}};
+            hide[] = {"clan", "zasleh", "light_1", "zadni svetlo", "backlighting", "poskozeni"};
+            verticalOffset = 2.346;
+            verticalOffsetWorld = -0.127;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+        class EjectionSystem: EjectionSystem {
+            EjectionSeatClass = QGVAR(O_R_Ejection_Seat_Plane_Fighter_02_ard_F);
+        };
+    };
+    class GVAR(O_R_Radar_System_02_F): Radar_System_02_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Radar_System_02_F.jpg";
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\static\Radar_System_02\Data\Radar_system_02_mat_01_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\static\Radar_System_02\Data\Radar_system_02_mat_02_RUkhk_CO.paa"};
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_UAV_AI";
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(O_R_Radar_System_02_ard_F): GVAR(O_R_Radar_System_02_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Radar_System_02_ard_F.jpg";
+        faction = "ghost_red";
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(O_R_SAM_System_04_F): SAM_System_04_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_SAM_System_04_F.jpg";
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\static\SAM_System_04\Data\Sam_system_04_mat_01_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\static\SAM_System_04\Data\Sam_system_04_mat_02_RUkhk_CO.paa"};
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_UAV_AI";
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(O_R_SAM_System_04_ard_F): GVAR(O_R_SAM_System_04_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_SAM_System_04_ard_F.jpg";
+        faction = "ghost_red";
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(O_R_SDV_01_F): SDV_01_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_SDV_01_F.jpg";
+        crew = "O_diver_F";
+        faction = "ghost_red";
+        side = 0;
+        typicalCargo[] = {"O_Soldier_F", "O_Soldier_F"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\boat\SDV_01\Data\SDV_ext_RUgrey_CO.paa"};
+        textureList[] = {"Rus", 1};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"drivingwheel", 0}, {"hidescope", 0}, {"damagehide", 0}, {"vrtule", 0}, {"steering", 0}, {"hidedrivingwheel", 0}, {"damagehidedrivingwheel", 0}, {"elevating", 0}, {"drivingwheel_elev", 0}, {"hidedrivingwheel_elev", 0}, {"damagehidedrivingwheel_elev", 0}, {"elevatingflapfl", 0}, {"elevatingflapfr", 0}, {"obsturret", 0}, {"hideobsturret", 0}, {"obsgun", 0}, {"antenna", 0}, {"damagehideantenna", 0}, {"door_1_1", 1}, {"hidedoor_1_1", 0}, {"damagehidedoor_1_1", 0}, {"door_1_2", 1}, {"hidedoor_1_2", 0}, {"damagehidedoor_1_2", 0}, {"door_2_1", 1}, {"hidedoor_2_1", 0}, {"damagehidedoor_2_1", 0}, {"door_2_2", 1}, {"hidedoor_2_2", 0}, {"damagehidedoor_2_2", 0}, {"gauges", 0}, {"indicatorcompass_1", 0}, {"indicatorcompass_2", 0}, {"fuel", 1}, {"indicatorvertspeed", 0}, {"display_on", 0}, {"display_on_r", 0}, {"ind_alt_1_10m", -0.8}, {"ind_alt_1_100m", -0.8}, {"ind_alt_2_10m", -0.8}, {"ind_alt_2_100m", -0.8}, {"ind_horizondive_1", 0}, {"horizondive_1", 0}, {"ind_horizondive_2", 0}, {"ind_horizonbank_1", -0.01}, {"ind_horizonbank_2", -0.01}, {"ind_rpm", 0}};
+            hide[] = {"zasleh", "l svetlo", "p svetlo", "zadni svetlo", "brzdove svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 1.874;
+            verticalOffsetWorld = -0.806;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+    };
+    class GVAR(O_R_SDV_01_ard_F): GVAR(O_R_SDV_01_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_SDV_01_ard_F.jpg";
+        crew = "O_diver_F";
+        faction = "ghost_red";
+        typicalCargo[] = {"O_Soldier_F", "O_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"drivingwheel", 0}, {"hidescope", 0}, {"damagehide", 0}, {"vrtule", 0}, {"steering", 0}, {"hidedrivingwheel", 0}, {"damagehidedrivingwheel", 0}, {"elevating", 0}, {"drivingwheel_elev", 0}, {"hidedrivingwheel_elev", 0}, {"damagehidedrivingwheel_elev", 0}, {"elevatingflapfl", 0}, {"elevatingflapfr", 0}, {"obsturret", 0}, {"hideobsturret", 0}, {"obsgun", 0}, {"antenna", 0}, {"damagehideantenna", 0}, {"door_1_1", 1}, {"hidedoor_1_1", 0}, {"damagehidedoor_1_1", 0}, {"door_1_2", 1}, {"hidedoor_1_2", 0}, {"damagehidedoor_1_2", 0}, {"door_2_1", 1}, {"hidedoor_2_1", 0}, {"damagehidedoor_2_1", 0}, {"door_2_2", 1}, {"hidedoor_2_2", 0}, {"damagehidedoor_2_2", 0}, {"gauges", 0}, {"indicatorcompass_1", 0}, {"indicatorcompass_2", 0}, {"fuel", 1}, {"indicatorvertspeed", 0}, {"display_on", 0}, {"display_on_r", 0}, {"ind_alt_1_10m", -0.8}, {"ind_alt_1_100m", -0.8}, {"ind_alt_2_10m", -0.8}, {"ind_alt_2_100m", -0.8}, {"ind_horizondive_1", 0}, {"horizondive_1", 0}, {"ind_horizondive_2", 0}, {"ind_horizonbank_1", -0.01}, {"ind_horizonbank_2", -0.01}, {"ind_rpm", 0}};
+            hide[] = {"zasleh", "l svetlo", "p svetlo", "zadni svetlo", "brzdove svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 1.874;
+            verticalOffsetWorld = -0.806;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+    };
+    class GVAR(O_R_Static_AA_F): O_static_AA_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Static_AA_F.jpg";
+        displayName = "Static Titan Launcher (AA)";
+        faction = "ghost_red";
+        crew = "O_Soldier_F";
+        hiddenSelections[] = {"camo_launcher", "camo_tube"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Launchers\Titan\Data\launcher_RUcamo_CO.paa", "\z\ghost\addons\weapons\models\weapons\Launchers\Titan\Data\tubeL_RUcamo_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"mainturret", 0}, {"maingun", 0}, {"mainturret_destructx", 0}, {"mainturret_destructy", 0}, {"mainturret_destructz", 0}, {"maingun_destructx", 0}, {"maingun_destructy", 0}, {"maingun_destructz", 0}, {"magazine_destruct", 0}, {"ammo_belt_destruct", 0}, {"bolt_destruct", 0}, {"charging_handle_destruct", 0}, {"damagehidevez_destruct", 0}, {"damagehidehlaven_destruct", 0}, {"damagehiderecoil_destruct", 0}, {"turret_shake", 0}, {"turret_shake_aside", 0}, {"magazine_hide", 0}, {"ammo_belt_hide", 0}, {"muzzleflash", 0}, {"addautonomous_unhide", 0}, {"bullet001_reload_hide", 0}, {"bullet002_reload_hide", 0}, {"bullet003_reload_hide", 0}, {"bullet004_reload_hide", 0}, {"bullet005_reload_hide", 0}, {"bullet006_reload_hide", 0}, {"bullet007_reload_hide", 0}, {"bullet008_reload_hide", 0}};
+            hide[] = {"light_back", "brzdove svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 0.988;
+            verticalOffsetWorld = 0.005;
+            init = "''";
+        };
+        class assembleInfo {
+            displayName = "";
+            assembleTo = "";
+            base = "";
+            primary = 0;
+            dissasembleTo[] = {QGVAR(O_R_AA_01_weapon_F), QGVAR(O_R_HMG_01_support_F)};
+        };
+    };
+    class GVAR(O_R_Static_AA_ard_F): GVAR(O_R_Static_AA_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Static_AA_ard_F.jpg";
+        faction = "ghost_red";
+        crew = "O_Soldier_F";
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"mainturret", 0}, {"maingun", 0}, {"mainturret_destructx", 0}, {"mainturret_destructy", 0}, {"mainturret_destructz", 0}, {"maingun_destructx", 0}, {"maingun_destructy", 0}, {"maingun_destructz", 0}, {"magazine_destruct", 0}, {"ammo_belt_destruct", 0}, {"bolt_destruct", 0}, {"charging_handle_destruct", 0}, {"damagehidevez_destruct", 0}, {"damagehidehlaven_destruct", 0}, {"damagehiderecoil_destruct", 0}, {"turret_shake", 0}, {"turret_shake_aside", 0}, {"magazine_hide", 0}, {"ammo_belt_hide", 0}, {"muzzleflash", 0}, {"addautonomous_unhide", 0}, {"bullet001_reload_hide", 0}, {"bullet002_reload_hide", 0}, {"bullet003_reload_hide", 0}, {"bullet004_reload_hide", 0}, {"bullet005_reload_hide", 0}, {"bullet006_reload_hide", 0}, {"bullet007_reload_hide", 0}, {"bullet008_reload_hide", 0}};
+            hide[] = {"light_back", "brzdove svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 0.988;
+            verticalOffsetWorld = 0.005;
+            init = "''";
+        };
+    };
+    class GVAR(O_R_UAV_01_F): UAV_01_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_UAV_01_F.jpg";
+        displayName = "Shukhov AR-2";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_UAV_AI";
+        typicalCargo[] = {"O_Soldier_F"};
+        accuracy = 0.5;
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\UAV_01\Data\UAV_01_RUgrey_CO.paa"};
+        textureList[] = {"Rus", 1};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"damagehide", 0}, {"rotorimpacthide", 0}, {"tailrotorimpacthide", 0}, {"propeller1_rotation", 0}, {"propeller1_blur_rotation", 0}, {"propeller2_rotation", 0}, {"propeller2_blur_rotation", 0}, {"propeller3_rotation", 0}, {"propeller3_blur_rotation", 0}, {"propeller4_rotation", 0}, {"propeller4_blur_rotation", 0}, {"propeller1_hide", 0}, {"propeller1_blur_hide", 0}, {"propeller2_hide", 0}, {"propeller2_blur_hide", 0}, {"propeller3_hide", 0}, {"propeller3_blur_hide", 0}, {"propeller4_hide", 0}, {"propeller4_blur_hide", 0}, {"mainturret", 0}, {"maingun", -0.05}};
+            hide[] = {"zasleh", "tail rotor blur", "main rotor blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 0.15;
+            verticalOffsetWorld = -0.001;
+            init = "''";
+        };
+        class assembleInfo {
+            primary = 1;
+            base = "";
+            assembleTo = "";
+            displayName = "";
+            dissasembleTo[] = {QGVAR(O_R_UAV_01_backpack_F)};
+        };
+    };
+    class GVAR(O_VTOL_02_infantry_dynamicLoadout_F): VTOL_02_infantry_dynamicLoadout_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_VTOL_02_infantry_dynamicLoadout_F.jpg";
+        displayName = "Y-32 Xi'an (Infantry Transport)";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_pilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        textureList[] = {"Hex", 1, "Grey", 0};
+        hiddenSelectionsTextures[] = {"\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT01_CO.paa", "\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT02_CO.paa", "\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT03_L_CO.paa", "\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT03_R_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"damage_hide", 0}, {"glass_1", 0}, {"glass_2", 0}, {"glass_3", 0}, {"glass_4", 0}, {"glass_5", 0}, {"glass_6", 0}, {"glass_7", 0}, {"glass_8", 0}, {"glass_9", 0}, {"glass_10", 0}, {"glass_11", 0}, {"glass_12", 0}, {"glass_13", 0}, {"glass_14", 0}, {"glass_15", 0}, {"glass_16", 0}, {"glass_17", 0}, {"glass_18", 0}, {"glass_19", 0}, {"glass_20", 0}, {"cannon_barrel_hide", 0}, {"rotor_1_blur_hide", 0}, {"rotor_1_static_hide", 0}, {"rotor_2_blur_hide", 0}, {"rotor_2_static_hide", 0}, {"engine_1_1_rot", 1}, {"engine_1_2_rot", 1}, {"engine_2_1_rot", 1}, {"engine_2_2_rot", 1}, {"stator_1_rudder_rot", 0}, {"stator_1_elevator_rot", 0}, {"rotor_1_rot", 0}, {"stator_2_rudder_rot", 0}, {"stator_2_elevator_rot", 0}, {"rotor_2_rot", 0}, {"gear_1_rot", 0}, {"gear_2_move", 0}, {"gear_3_move", 0}, {"gear_1_hatch_1_rot", 0}, {"gear_1_hatch_2_rot", 0}, {"gear_1_hatch_3_rot", 0}, {"gear_2_hatch_1_rot", 0}, {"gear_2_hatch_2_rot", 0}, {"gear_3_hatch_1_rot", 0}, {"gear_3_hatch_2_rot", 0}, {"wheel_1_rot", 0}, {"wheel_2_rot", 0}, {"wheel_3_rot", 0}, {"gear_1_damper_move", 0.54}, {"gear_1_damper_rotate", 0.54}, {"gear_1_link_1_rotate", 0.54}, {"gear_1_link_2_rotate", 0.54}, {"gear_2_damper_move", 1}, {"gear_3_damper_move", 0.99}, {"door_1_rot", 0}, {"cargoseats_hide", 0}, {"display_off_hide", 0}, {"positionlights_hide", 0}, {"cannon_turret_rot", 0}, {"cannon_rot", 0.09}, {"cannon_muzzleflash_hide", 0}, {"cannon_barrel_move", 1}, {"rotor_1_hide", 0}, {"rotor_1_unhide", 0}, {"rotor_2_hide", 0}, {"rotor_2_unhide", 0}, {"avionics_damage", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"pedals_1_left_1_move", 0}, {"pedals_1_right_1_move", 0}, {"pedals_1_left_2_rot", 0}, {"pedals_1_right_2_rot", 0}, {"pedals_2_left_1_move", 0}, {"pedals_2_right_1_move", 0}, {"pedals_2_left_2_rot", 0}, {"pedals_2_right_2_rot", 0}, {"display_1_alt_ladder_rot", 8.16}, {"display_1_alt_1_rot", 8.16}, {"display_1_alt_10_rot", 8.16}, {"display_1_alt_100_rot", 8.16}, {"display_1_alt_1000_rot", 8.16}, {"display_1_compass_rot", 0}, {"display_1_fuel_move", 1}, {"display_1_gear_down_move", 0}, {"display_1_gear_up_move", 0}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_move", 0}, {"display_1_hydraulics_1_rot", 0}, {"display_1_hydraulics_2_rot", 0}, {"display_1_oil_1_rot", 1}, {"display_1_oil_2_rot", 1}, {"display_1_oil_3_rot", 1}, {"display_1_oil_4_rot", 1}, {"display_1_oil_5_rot", 1}, {"display_1_oil_6_rot", 1}, {"display_1_pitch_rot", 0}, {"display_1_roll_rot", 0}, {"display_1_yaw_rot", 0}, {"display_1_rpm_1_rot", 0}, {"display_1_rpm_2_rot", 0}, {"display_1_speed_ladder_rot", 0}, {"display_1_speed_1_rot", 0}, {"display_1_speed_10_rot", 0}, {"display_1_speed_100_rot", 0}, {"display_1_vert_speed_rot", 0}, {"display_1_voltage_1_rot", 0}, {"display_1_voltage_2_rot", 0}, {"display_1_vtol_1_rot", 1}, {"display_1_vtol_2_rot", 1}, {"display_2_alt_ladder_rot", 8.16}, {"display_2_alt_1_rot", 8.16}, {"display_2_alt_10_rot", 8.16}, {"display_2_alt_100_rot", 8.16}, {"display_2_alt_1000_rot", 8.16}, {"display_2_compass_rot", 0}, {"display_2_fuel_move", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_move", 0}, {"display_2_oil_1_rot", 1}, {"display_2_oil_2_rot", 1}, {"display_2_speed_ladder_rot", 0}, {"display_2_speed_1_rot", 0}, {"display_2_speed_10_rot", 0}, {"display_2_speed_100_rot", 0}, {"display_2_vert_speed_rot", 0}, {"display_2_vtol_1_rot", 1}, {"display_2_vtol_2_rot", 1}, {"display_at_1_hide", 1}, {"display_at_2_hide", 1}, {"display_at_3_hide", 1}, {"display_at_4_hide", 1}, {"display_at_5_hide", 1}, {"display_at_6_hide", 1}, {"display_at_7_hide", 1}, {"display_at_8_hide", 1}, {"display_mg_ammo_1_hide", 1}, {"display_mg_ammo_2_hide", 1}, {"display_mg_ammo_3_hide", 1}, {"display_mg_ammo_4_hide", 1}, {"display_mg_ammo_5_hide", 1}, {"display_mg_ammo_6_hide", 1}, {"display_mg_ammo_7_hide", 1}, {"display_mg_ammo_8_hide", 1}, {"display_mg_ammo_9_hide", 1}, {"display_mg_ammo_10_hide", 1}, {"display_rocketspod_1_empty_hide", 1}, {"display_rocketspod_2_empty_hide", 1}, {"rocketb19_hide", 1}, {"rocketa19_hide", 1}, {"rocketb18_hide", 1}, {"rocketa18_hide", 1}, {"rocketb17_hide", 1}, {"rocketa17_hide", 1}, {"rocketb16_hide", 1}, {"rocketa16_hide", 1}, {"rocketb15_hide", 1}, {"rocketa15_hide", 1}, {"rocketb14_hide", 1}, {"rocketa14_hide", 1}, {"rocketb13_hide", 1}, {"rocketa13_hide", 1}, {"rocketb12_hide", 1}, {"rocketa12_hide", 1}, {"rocketb11_hide", 1}, {"rocketa11_hide", 1}, {"rocketb10_hide", 1}, {"rocketa10_hide", 1}, {"rocketb9_hide", 1}, {"rocketa9_hide", 1}, {"rocketb8_hide", 1}, {"rocketa8_hide", 1}, {"rocketb6_hide", 1}, {"rocketa6_hide", 1}, {"rocketb5_hide", 1}, {"rocketa5_hide", 1}, {"rocketb4_hide", 1}, {"rocketa4_hide", 1}, {"rocketb3_hide", 1}, {"rocketa3_hide", 1}, {"rocketb2_hide", 1}, {"rocketa2_hide", 1}, {"rocketb7_hide", 1}, {"rocketa7_hide", 1}, {"rocketb1_hide", 1}, {"rocketa1_hide", 1}};
+            hide[] = {"clan", "zasleh", "cannon_muzzleflash", "light_1_hide", "light_2_hide", "light_3_hide", "zadni svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 3.16;
+            verticalOffsetWorld = -0.035;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+    };
+    class GVAR(O_VTOL_02_vehicle_dynamicLoadout_F): VTOL_02_vehicle_dynamicLoadout_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_VTOL_02_vehicle_dynamicLoadout_F.jpg";
+        displayName = "Y-32 Xi'an (Vehicle Transport)";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_pilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        textureList[] = {"Hex", 1, "Grey", 0};
+        hiddenSelectionsTextures[] = {"\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT01_CO.paa", "\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT02_CO.paa", "\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT03_L_CO.paa", "\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT03_R_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"damage_hide", 0}, {"glass_1", 0}, {"glass_2", 0}, {"glass_3", 0}, {"glass_4", 0}, {"glass_5", 0}, {"glass_6", 0}, {"glass_7", 0}, {"glass_8", 0}, {"glass_9", 0}, {"glass_10", 0}, {"glass_11", 0}, {"glass_12", 0}, {"glass_13", 0}, {"glass_14", 0}, {"glass_15", 0}, {"glass_16", 0}, {"glass_17", 0}, {"glass_18", 0}, {"glass_19", 0}, {"glass_20", 0}, {"cannon_barrel_hide", 0}, {"rotor_1_blur_hide", 0}, {"rotor_1_static_hide", 0}, {"rotor_2_blur_hide", 0}, {"rotor_2_static_hide", 0}, {"engine_1_1_rot", 1}, {"engine_1_2_rot", 1}, {"engine_2_1_rot", 1}, {"engine_2_2_rot", 1}, {"stator_1_rudder_rot", 0}, {"stator_1_elevator_rot", 0}, {"rotor_1_rot", 0}, {"stator_2_rudder_rot", 0}, {"stator_2_elevator_rot", 0}, {"rotor_2_rot", 0}, {"gear_1_rot", 0}, {"gear_2_move", 0}, {"gear_3_move", 0}, {"gear_1_hatch_1_rot", 0}, {"gear_1_hatch_2_rot", 0}, {"gear_1_hatch_3_rot", 0}, {"gear_2_hatch_1_rot", 0}, {"gear_2_hatch_2_rot", 0}, {"gear_3_hatch_1_rot", 0}, {"gear_3_hatch_2_rot", 0}, {"wheel_1_rot", 0}, {"wheel_2_rot", 0}, {"wheel_3_rot", 0}, {"gear_1_damper_move", 0.54}, {"gear_1_damper_rotate", 0.54}, {"gear_1_link_1_rotate", 0.54}, {"gear_1_link_2_rotate", 0.54}, {"gear_2_damper_move", 1}, {"gear_3_damper_move", 0.98}, {"door_1_rot", 0}, {"cargoseats_hide", 1}, {"display_off_hide", 0}, {"positionlights_hide", 0}, {"cannon_turret_rot", 0}, {"cannon_rot", 0.09}, {"cannon_muzzleflash_hide", 0}, {"cannon_barrel_move", 1}, {"rotor_1_hide", 0}, {"rotor_1_unhide", 0}, {"rotor_2_hide", 0}, {"rotor_2_unhide", 0}, {"avionics_damage", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"pedals_1_left_1_move", 0}, {"pedals_1_right_1_move", 0}, {"pedals_1_left_2_rot", 0}, {"pedals_1_right_2_rot", 0}, {"pedals_2_left_1_move", 0}, {"pedals_2_right_1_move", 0}, {"pedals_2_left_2_rot", 0}, {"pedals_2_right_2_rot", 0}, {"display_1_alt_ladder_rot", 8.16}, {"display_1_alt_1_rot", 8.16}, {"display_1_alt_10_rot", 8.16}, {"display_1_alt_100_rot", 8.16}, {"display_1_alt_1000_rot", 8.16}, {"display_1_compass_rot", 0}, {"display_1_fuel_move", 1}, {"display_1_gear_down_move", 0}, {"display_1_gear_up_move", 0}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_move", 0}, {"display_1_hydraulics_1_rot", 0}, {"display_1_hydraulics_2_rot", 0}, {"display_1_oil_1_rot", 1}, {"display_1_oil_2_rot", 1}, {"display_1_oil_3_rot", 1}, {"display_1_oil_4_rot", 1}, {"display_1_oil_5_rot", 1}, {"display_1_oil_6_rot", 1}, {"display_1_pitch_rot", 0}, {"display_1_roll_rot", 0}, {"display_1_yaw_rot", 0}, {"display_1_rpm_1_rot", 0}, {"display_1_rpm_2_rot", 0}, {"display_1_speed_ladder_rot", 0}, {"display_1_speed_1_rot", 0}, {"display_1_speed_10_rot", 0}, {"display_1_speed_100_rot", 0}, {"display_1_vert_speed_rot", 0}, {"display_1_voltage_1_rot", 0}, {"display_1_voltage_2_rot", 0}, {"display_1_vtol_1_rot", 1}, {"display_1_vtol_2_rot", 1}, {"display_2_alt_ladder_rot", 8.16}, {"display_2_alt_1_rot", 8.16}, {"display_2_alt_10_rot", 8.16}, {"display_2_alt_100_rot", 8.16}, {"display_2_alt_1000_rot", 8.16}, {"display_2_compass_rot", 0}, {"display_2_fuel_move", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_move", 0}, {"display_2_oil_1_rot", 1}, {"display_2_oil_2_rot", 1}, {"display_2_speed_ladder_rot", 0}, {"display_2_speed_1_rot", 0}, {"display_2_speed_10_rot", 0}, {"display_2_speed_100_rot", 0}, {"display_2_vert_speed_rot", 0}, {"display_2_vtol_1_rot", 1}, {"display_2_vtol_2_rot", 1}, {"display_at_1_hide", 1}, {"display_at_2_hide", 1}, {"display_at_3_hide", 1}, {"display_at_4_hide", 1}, {"display_at_5_hide", 1}, {"display_at_6_hide", 1}, {"display_at_7_hide", 1}, {"display_at_8_hide", 1}, {"display_mg_ammo_1_hide", 1}, {"display_mg_ammo_2_hide", 1}, {"display_mg_ammo_3_hide", 1}, {"display_mg_ammo_4_hide", 1}, {"display_mg_ammo_5_hide", 1}, {"display_mg_ammo_6_hide", 1}, {"display_mg_ammo_7_hide", 1}, {"display_mg_ammo_8_hide", 1}, {"display_mg_ammo_9_hide", 1}, {"display_mg_ammo_10_hide", 1}, {"display_rocketspod_1_empty_hide", 1}, {"display_rocketspod_2_empty_hide", 1}, {"rocketb19_hide", 1}, {"rocketa19_hide", 1}, {"rocketb18_hide", 1}, {"rocketa18_hide", 1}, {"rocketb17_hide", 1}, {"rocketa17_hide", 1}, {"rocketb16_hide", 1}, {"rocketa16_hide", 1}, {"rocketb15_hide", 1}, {"rocketa15_hide", 1}, {"rocketb14_hide", 1}, {"rocketa14_hide", 1}, {"rocketb13_hide", 1}, {"rocketa13_hide", 1}, {"rocketb12_hide", 1}, {"rocketa12_hide", 1}, {"rocketb11_hide", 1}, {"rocketa11_hide", 1}, {"rocketb10_hide", 1}, {"rocketa10_hide", 1}, {"rocketb9_hide", 1}, {"rocketa9_hide", 1}, {"rocketb8_hide", 1}, {"rocketa8_hide", 1}, {"rocketb6_hide", 1}, {"rocketa6_hide", 1}, {"rocketb5_hide", 1}, {"rocketa5_hide", 1}, {"rocketb4_hide", 1}, {"rocketa4_hide", 1}, {"rocketb3_hide", 1}, {"rocketa3_hide", 1}, {"rocketb2_hide", 1}, {"rocketa2_hide", 1}, {"rocketb7_hide", 1}, {"rocketa7_hide", 1}, {"rocketb1_hide", 1}, {"rocketa1_hide", 1}};
+            hide[] = {"clan", "zasleh", "cannon_muzzleflash", "light_1_hide", "light_2_hide", "light_3_hide", "zadni svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 3.159;
+            verticalOffsetWorld = -0.035;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+    };
+    class GVAR(Plane_Civil_01_HIMF_F): Plane_Civil_01_base_F {
+        author = "Bran Flakes";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Plane_Civil_01_HIMF_F.jpg";
+        radarTargetSize = 1.8;
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Helipilot_F";
+        typicalCargo[] = {"B_Helipilot_F"};
+        textureList[] = {"HIMF", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Plane_Civil_01\Data\btt_ext_01_HIMF_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Civil_01\Data\btt_ext_02_HIMF_CO.paa", "A3\Air_F_Exp\Plane_Civil_01\Data\btt_int_01_co.paa", "A3\Air_F_Exp\Plane_Civil_01\Data\btt_int_02_co.paa"};
+        scope = 1;
+        scopeCurator = 0;
     };
     class GVAR(Ejection_Seat_Plane_Fighter_05_base_F): Ejection_Seat_Base_F {
         author = "Avery Kaiserin";
@@ -1557,6 +2547,21 @@ class CfgVehicles {
     };
     class GVAR(B_A_Ejection_Seat_Plane_Fighter_05_wdl_F): GVAR(B_A_Ejection_Seat_Plane_Fighter_05_F) {
         author = "Avery Kaiserin";
+        faction = "ghost_blue";
+        crew = "B_Fighter_Pilot_F";
+        class SimpleObject {
+            eden = 0;
+            animate[] = {};
+            hide[] = {"zasleh", "zadni svetlo", "brzdove svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 0.002;
+            verticalOffsetWorld = 0;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+    };
+    class GVAR(B_D_Ejection_Seat_Plane_Fighter_05_F): GVAR(Ejection_Seat_Plane_Fighter_05_base_F) {
+        author = "Avery Kaiserin";
+        scope = 1;
+        side = 1;
         faction = "ghost_blue";
         crew = "B_Fighter_Pilot_F";
         class SimpleObject {
@@ -1841,6 +2846,118 @@ class CfgVehicles {
             init = "[this, '', []] call bis_fnc_initVehicle";
         };
     };
+    class GVAR(B_W_UAV_05_F): B_UAV_05_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_W_UAV_05_F.jpg";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_UAV_AI";
+        typicalCargo[] = {"B_UAV_AI"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"damagehide", 0}, {"engine_fire_l", 0}, {"engine_fire_right", 0}, {"weapons_bay_l_1", 0}, {"weapons_bay_l_2", 0}, {"weapons_bay_r_1", 0}, {"weapons_bay_r_2", 0}, {"weapons_rack_l_1", 0}, {"weapons_rack_l_2", 0}, {"weapons_rack_l_3", 0}, {"weapons_rack_r_1", 0}, {"weapons_rack_r_2", 0}, {"weapons_rack_r_3", 0}, {"gear_door_f_1", 0}, {"gear_door_f_2", 0}, {"gear_door_l_1", 0}, {"gear_door_l_2", 0}, {"gear_door_r_1", 0}, {"gear_door_r_2", 0}, {"gear_front_hydraulic_4", 0}, {"gear_front", 0}, {"gear_front_hydraulic_1", 0}, {"gear_front_hook", 0}, {"gear_front_hydraulic_2", 0}, {"gear_front_hydraulic_3", 0}, {"gear_front_stearing", 0}, {"gear_front_suspension", 0}, {"gear_front_suspension_1", 0}, {"gear_front_suspension_2", 0}, {"gear_rear_l", 0}, {"gear_rear_hydraulic_l_1", 0}, {"gear_rear_hydraulic_l_2", 0}, {"gear_rear_rotate_l", 0}, {"gear_rear_suspension_l", 0}, {"gear_rear_suspension_l_1", 0}, {"gear_rear_suspension_l_2", 0}, {"gear_rear_r", 0}, {"gear_rear_hydraulic_r_1", 0}, {"gear_rear_hydraulic_r_2", 0}, {"gear_rear_rotate_r", 0}, {"gear_rear_suspension_r", 0}, {"gear_rear_suspension_r_1", 0}, {"gear_rear_suspension_r_2", 0}, {"wheels_f", 0}, {"wheel_l", 0}, {"wheel_r", 0}, {"aileron_l", 0}, {"aileron_r", 0}, {"airbrake_l", 0}, {"airbrake_r", 0}, {"rudder_l", 0}, {"rudder_r", 0}, {"elevator_l_1", 0}, {"elevator_l_2", 0}, {"elevator_r_1", 0}, {"elevator_r_2", 0}, {"flap_l", 0}, {"flap_r", 0}, {"mainturret", 0}, {"maingun", -0.79}, {"collision_lights_l", 0}, {"collision_lights_r", 0}, {"collision_lights_c1_blinking", 0}};
+            hide[] = {"clan", "zasleh", "gear_front_light", "zadni svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 1.791;
+            verticalOffsetWorld = -0.064;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+    };
+    class GVAR(B_D_Ejection_Seat_Plane_Fighter_01_F): Ejection_Seat_Plane_Fighter_01_base_F {
+        author = "Heliotrope";
+        scope = 1;
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Fighter_Pilot_F";
+        class SimpleObject {
+            eden = 0;
+            animate[] = {};
+            hide[] = {"zasleh", "zadni svetlo", "brzdove svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 0.002;
+            verticalOffsetWorld = 0;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+    };
+    class GVAR(Heli_Transport_01_medevac_base_F): Heli_Transport_01_base_F {
+        author = "Avery Kaiserin";
+        displayName = "UH-80 MEV";
+        supplyRadius = 5;
+        attendant = 1;
+        threat[] = {0.0, 0.0, 0.0};
+        availableForSupportTypes[] = {"Transport"};
+    };
+    class GVAR(O_R_Ejection_Seat_Plane_Fighter_02_F): Ejection_Seat_Plane_Fighter_02_base_F {
+        author = "Avery Kaiserin";
+        scope = 1;
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_Fighter_Pilot_F";
+        class SimpleObject {
+            eden = 0;
+            animate[] = {};
+            hide[] = {"zasleh", "zadni svetlo", "brzdove svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 0.002;
+            verticalOffsetWorld = 0;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+    };
+    class GVAR(O_R_Ejection_Seat_Plane_Fighter_02_ard_F): GVAR(O_R_Ejection_Seat_Plane_Fighter_02_F) {
+        author = "Avery Kaiserin";
+        faction = "ghost_red";
+        crew = "O_Fighter_Pilot_F";
+        class SimpleObject {
+            eden = 0;
+            animate[] = {};
+            hide[] = {"zasleh", "zadni svetlo", "brzdove svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 0.002;
+            verticalOffsetWorld = 0;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+    };
+    class GVAR(O_R_AA_01_weapon_F): Weapon_Bag_Base {
+        author = "Avery Kaiserin";
+        scope = 2;
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_DismantledWeapons";
+        faction = "CIV_F";
+        displayName = "Static Titan Launcher (AA) [Russia]";
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\supplies\Bags\Data\backpack_small_rgr_CO.paa"};
+        picture = "\z\ghost\addons\vehicle\models\supplies\Bags\Data\UI\icon_B_TacticalPack_rgr_ca.paa";
+        mass = 380;
+        class assembleInfo: assembleInfo {
+            displayName = "Static AA Launcher";
+            assembleTo = QGVAR(O_R_Static_AA_F);
+            base[] = {"B_HMG_01_support_F", "O_HMG_01_support_F", "I_HMG_01_support_F", "B_HMG_01_support_grn_F", "I_E_HMG_01_support_F", QGVAR(O_R_HMG_01_support_F), QGVAR(I_I_HMG_01_support_F)};
+        };
+    };
+    class GVAR(O_R_HMG_01_support_F): B_HMG_01_support_F {
+        author = "Avery Kaiserin";
+        displayName = "Folded Tripod [Russia]";
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\supplies\Bags\Data\backpack_small_rgr_CO.paa"};
+        picture = "\z\ghost\addons\vehicle\models\supplies\Bags\Data\UI\icon_B_TacticalPack_rgr_ca.paa";
+        faction = "CIV_F";
+    };
+    class GVAR(O_R_UAV_01_backpack_F): Weapon_Bag_Base {
+        author = "Avery Kaiserin";
+        mapSize = 0.6;
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "UAV Bag (AR-2) [RU]";
+        model = "\A3\Drones_F\Weapons_F_Gamma\Ammoboxes\Bags\UAV_backpack_F.p3d";
+        editorCategory = "EdCat_Equipment";
+        editorSubcategory = "EdSubcat_Backpacks";
+        faction = "CIV_F";
+        picture = "\z\ghost\addons\vehicle\models\supplies\Bags\Data\UI\icon_O_R_UAV_01_backpack_F_ca.paa";
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\supplies\Bags\Data\UAV_backpack_RUkhk_CO.paa"};
+        maximumLoad = 0;
+        mass = 300;
+        class assembleInfo: assembleInfo {
+            base = "";
+            displayName = "Shukhov AR-2";
+            assembleTo = QGVAR(O_R_UAV_01_F);
+        };
+    };
     class GVAR(Plane_Fighter_05_Canopy_F): Plane_Canopy_Base_F {
         author = "Avery Kaiserin and Olli Koskelainen";
         scope = 1;
@@ -1853,6 +2970,22 @@ class CfgVehicles {
             verticalOffset = 0.284;
             verticalOffsetWorld = 0;
             init = "''";
+        };
+    };
+    class GVAR(I_I_HMG_01_support_F): I_HMG_01_support_F {
+        author = "Avery Kaiserin";
+        displayName = "Folded Tripod [IDF]";
+        hiddenSelectionsTextures[] = {"\A3\Weapons_F\Ammoboxes\Bags\Data\backpack_small_rgr_CO.paa"};
+        picture = "\A3\Weapons_F\Ammoboxes\Bags\Data\UI\icon_B_C_Small_rgr.paa";
+        faction = "CIV_F";
+    };
+    class MBT_03_base_F: Tank_F {
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                class Turrets: Turrets {
+                    class CommanderOptics;
+                };
+            };
         };
     };
     class Plane_Base_F: Plane {
@@ -1959,6 +3092,98 @@ class CfgVehicles {
                 };
             };
         };
+    };
+    class APC_Tracked_02_base_F: Tank_F {
+        class AnimationSources: AnimationSources {
+            class HideTurret;
+        };
+    };
+    class UGV_01_base_F: Car_F {
+        class Turrets;
+        class TextureSources {
+            class Indep;
+            class Opfor;
+            class Blufor;
+            class GreenHex;
+            class Olive;
+            class EAF;
+        };
+    };
+    class Heli_Transport_03_base_F: Helicopter_Base_H {
+        class Turrets;
+    };
+    class Heli_Transport_03_unarmed_base_F: Heli_Transport_03_base_F {
+        class Turrets;
+    };
+    class LT_01_base_F: Tank_F {
+        class Turrets;
+    };
+    class Heli_Transport_04_base_F: Helicopter_Base_H {
+        class Turrets;
+        class AnimationSources;
+    };
+    class UAV_02_base_F: UAV {
+        class Components;
+    };
+    class GVAR(B_D_LSV_01_light_F): GVAR(B_LSV_01_light_F) {
+        author = "Ravenholme";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Soldier_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(B_D_UAV_05_F): GVAR(B_W_UAV_05_F) {
+        author = "Ravenholme";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_W_UAV_05_F.jpg";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_UAV_AI";
+        typicalCargo[] = {"B_UAV_AI"};
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(B_Heli_Transport_01_medevac_F): GVAR(Heli_Transport_01_medevac_base_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_Heli_Transport_01_medevac_F.jpg";
+        forceInGarage = 1;
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Helipilot_F";
+        typicalCargo[] = {"B_Helipilot_F"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_01\Data\Heli_Transport_01_ext01_medevac_CO.paa", "\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_ext02_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"rotor_destructx", 0}, {"rotor_destructy", 0}, {"mala_vrtule_destructy", 0}, {"mala_vrtule_destructz", 0}, {"damagehide", 0}, {"hrotor", 0}, {"vrotor", 0}, {"lever_pilot", 0}, {"lever_copilot", 0}, {"rotorimpacthide", 0}, {"tailrotorimpacthide", 0}, {"i_compass_pilot", 0}, {"i_compass_copilot", 0}, {"i_compass_middle", 0}, {"display_on", 0}, {"radar_on", 0}, {"radar2_on", 0}, {"i_altitude_100f", 7.14}, {"i_speed", 0}, {"i_speed_02", 0}, {"i_speed_03", 0}, {"i_speed02", 0}, {"i_speed02_02", 0}, {"i_speed02_03", 0}, {"i_vspeed", 0}, {"i_vspeed_02", 0}, {"i_vspeed_03", 0}, {"i_vspeed02", 0}, {"i_vspeed02_02", 0}, {"i_vspeed02_03", 0}, {"i_altitude02_100f", 7.14}, {"dg_pitch", 0}, {"dg_bank", 0}, {"dg_pitch2", 0}, {"dg_bank2", 0}, {"dg_vertspeed", 0}, {"dg_vertspeed2", 0}, {"i_rpm", 0}, {"i_rpm02", 0}, {"i_rpm03", 0}, {"i_rpm04", 0}, {"i_torque01", 0}, {"i_torque02", 0}, {"i_torque03", 0}, {"i_torque04", 0}, {"i_torque01_base", 0}, {"i_torque02_base", 0}, {"i_torque03_base", 0}, {"i_torque04_base", 0}, {"i_fuel", 1}, {"i_fuel_02", 1}, {"i_fuel_03", 1}, {"i_fuel_04", 1}, {"radar", 614.06}, {"radar2", 614.06}, {"positionlights", 0}, {"collisionlight_red_blinking", 0}, {"collisionlight_white_blinking", 0}, {"wheel_rear_damper", 0}, {"wheel_left_damper", 0}, {"wheel_right_damper", 0}, {"reargear", 0}, {"rearrightcover", 0}, {"rearleftcover", 0}, {"rightgear", 0}, {"leftgear", 0}, {"rightgear_hide", 0}, {"leftgear_hide", 0}, {"wheel_1_1", 0}, {"wheel_1_2", 0}, {"wheel_2_1", 0}, {"door_l", 0}, {"door_back_l_lock", 0}, {"door_r", 0}, {"door_back_r_lock", 0}, {"holdster", 1}, {"stick_pilot_dive_01", 0}, {"stick_pilot_dive_02", 0}, {"stick_pilot_dive_03", 0}, {"stick_pilot_dive_04", 0}, {"stick_pilot_dive_05", 0}, {"stick_pilot_bank_01", 0}, {"stick_pilot_bank_02", 0}, {"stick_pilot_bank_03", 0}, {"stick_pilot_bank_04", 0}, {"stick_pilot_bank_05", 0}, {"stick_copilot_dive01", 0}, {"stick_copilot_dive02", 0}, {"stick_copilot_dive03", 0}, {"stick_copilot_dive04", 0}, {"stick_copilot_dive05", 0}, {"stick_copilot_bank01", 0}, {"stick_copilot_bank02", 0}, {"stick_copilot_bank03", 0}, {"stick_copilot_bank04", 0}, {"stick_copilot_bank05", 0}, {"mainturret", 1.57}, {"maingun", -0.26}, {"mainturret2", -1.57}, {"maingun2", -0.26}, {"minigun", 0.33}, {"minigun2", 0.33}};
+            hide[] = {"clan", "zasleh", "zasleh_1", "light_l", "light_r", "tail rotor blur", "main rotor blur", "zadni svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.192;
+            verticalOffsetWorld = 0.053;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+    };
+    class GVAR(O_R_UGV_01_F): UGV_01_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_UGV_01_F.jpg";
+        displayName = "UGV Uran";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_UAV_AI";
+        typicalCargo[] = {"O_Soldier_F"};
+        textureList[] = {"Green", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_ext_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_int_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\soft\UGV_01\Data\Turret_RUkhk_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(O_R_UGV_01_ard_F): GVAR(O_R_UGV_01_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_UGV_01_ard_F.jpg";
+        faction = "ghost_red";
+        typicalCargo[] = {"O_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
     };
     class GVAR(Plane_Fighter_05_Base_F): Plane_Base_F {
         author = "Avery Kaiserin and Olli Koskelainen";
@@ -8545,98 +9770,6 @@ class CfgVehicles {
             };
         };
     };
-    class GVAR(B_Heli_Attack_03_F): GVAR(Heli_Attack_03_base_F) {
-        author = "Avery Kaiserin";
-        displayName = "AH-64E Apache";
-        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_B_Heli_Attack_03_F.jpg";
-        scope = 2;
-        scopeCurator = 2;
-        side = 1;
-        faction = "ghost_blue";
-        crew = "B_Helipilot_F";
-        typicalCargo[] = {"B_Helipilot_F"};
-        textureList[] = {"Green", 1};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Attack_03\Data\Heli_Attack_03_body_green_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_03\Data\Heli_Attack_03_details_green_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_03\Data\Heli_Attack_03_adds_green_CO.paa"};
-        class Turrets: Turrets {
-            class MainTurret: MainTurret {
-                magazines[] = {QGVAR(1200Rnd_Gatling_30mm_Heli_Attack_03_F), "Laserbatteries"};
-            };
-        };
-        class TransportMagazines {
-            class _xx_SmokeShell {
-                magazine = "SmokeShell";
-                count = 2;
-            };
-            class _xx_SmokeShellBlue {
-                magazine = "SmokeShellBlue";
-                count = 2;
-            };
-            class _xx_30Rnd_65x39_caseless_mag {
-                magazine = "30Rnd_65x39_caseless_mag";
-                count = 4;
-            };
-        };
-        class TransportWeapons {
-            class _xx_arifle_MXC_F {
-                weapon = "arifle_MXC_F";
-                count = 2;
-            };
-        };
-    };
-    class GVAR(B_T_Heli_Attack_03_F): GVAR(B_Heli_Attack_03_F) {
-        faction = "ghost_blue";
-        crew = "B_T_Helipilot_F";
-        typicalCargo[] = {"B_T_Helipilot_F"};
-        scope = 1;
-        scopeCurator = 0;
-        class TransportMagazines {
-            class _xx_SmokeShell {
-                magazine = "SmokeShell";
-                count = 2;
-            };
-            class _xx_SmokeShellBlue {
-                magazine = "SmokeShellBlue";
-                count = 2;
-            };
-            class _xx_30Rnd_65x39_caseless_khaki_mag {
-                magazine = "30Rnd_65x39_caseless_khaki_mag";
-                count = 4;
-            };
-        };
-        class TransportWeapons {
-            class _xx_arifle_MXC_khk_F {
-                weapon = "arifle_MXC_khk_F";
-                count = 2;
-            };
-        };
-    };
-    class GVAR(B_W_Heli_Attack_03_F): GVAR(B_Heli_Attack_03_F) {
-        faction = "ghost_blue";
-        crew = "B_W_Helipilot_F";
-        typicalCargo[] = {"B_W_Helipilot_F"};
-        scope = 1;
-        scopeCurator = 0;
-        class TransportMagazines {
-            class _xx_SmokeShell {
-                magazine = "SmokeShell";
-                count = 2;
-            };
-            class _xx_SmokeShellBlue {
-                magazine = "SmokeShellBlue";
-                count = 2;
-            };
-            class _xx_30Rnd_65x39_caseless_black_mag {
-                magazine = "30Rnd_65x39_caseless_black_mag";
-                count = 4;
-            };
-        };
-        class TransportWeapons {
-            class _xx_arifle_MXC_Black_F {
-                weapon = "arifle_MXC_Black_F";
-                count = 2;
-            };
-        };
-    };
     class GVAR(B_A_Heli_Attack_03_F): GVAR(Heli_Attack_03_base_F) {
         author = "Avery Kaiserin";
         displayName = "Navajo AH1";
@@ -10443,6 +11576,78 @@ class CfgVehicles {
             };
         };
     };
+    class GVAR(B_ION_Heli_Attack_04_F): GVAR(Heli_Attack_04_base_F) {
+        author = "Grave";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_B_ION_Heli_Attack_04_F.jpg";
+        displayName = "Mi-35 Superhind";
+        forceInGarage = 0;
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Helipilot_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        textureList[] = {"ION_lxWS", 1, "Black", 0};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_ION_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Heli_Attack_04_ext_02_black_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Heli_Attack_04_ext_03_black_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                magazines[] = {QGVAR(150Rnd_Autocannon_Heli_Attack_04_HE_Red_F), QGVAR(150Rnd_Autocannon_Heli_Attack_04_AP_Red_F), "Laserbatteries"};
+            };
+        };
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellRed {
+                magazine = "SmokeShellRed";
+                count = 2;
+            };
+            class _xx_30Rnd_556x45_Stanag {
+                magazine = "30Rnd_556x45_Stanag";
+                count = 4;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_XMS_Base_lxWS {
+                weapon = "arifle_XMS_Base_lxWS";
+                count = 2;
+            };
+        };
+        class Components: Components {
+            class TransportPylonsComponent: TransportPylonsComponent {
+                class Pylons: Pylons {
+                    class PylonLeft1: PylonLeft1 {
+                        attachment = "PylonRack_12Rnd_PG_missiles";
+                    };
+                    class PylonLeft2: PylonLeft2 {
+                        attachment = "PylonRack_12Rnd_PG_missiles";
+                    };
+                    class PylonLeft3: PylonLeft3 {
+                        attachment = "PylonWeapon_300Rnd_20mm_shells";
+                        turret[] = {};
+                    };
+                    class PylonRight1: PylonRight1 {
+                        attachment = "PylonRack_12Rnd_PG_missiles";
+                    };
+                    class PylonRight2: PylonRight2 {
+                        attachment = "PylonRack_12Rnd_PG_missiles";
+                    };
+                    class PylonRight3: PylonRight3 {
+                        attachment = "PylonWeapon_300Rnd_20mm_shells";
+                        turret[] = {};
+                    };
+                };
+                class Presets: Presets {
+                    class Empty: Empty {
+                    };
+                    class Default: Default {
+                        attachment[] = {"PylonRack_12Rnd_PG_missiles", "PylonRack_12Rnd_PG_missiles", "PylonWeapon_300Rnd_20mm_shells", "PylonRack_12Rnd_PG_missiles", "PylonRack_12Rnd_PG_missiles", "PylonWeapon_300Rnd_20mm_shells"};
+                    };
+                };
+            };
+        };
+    };
     class GVAR(I_Raven_Heli_Attack_04_F): GVAR(Heli_Attack_04_base_F) {
         author = "Grave";
         editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_I_Raven_Heli_Attack_04_F.jpg";
@@ -10471,11 +11676,15 @@ class CfgVehicles {
                 count = 2;
             };
             class _xx_30Rnd_545x39_AK12_Mag_F {
-                magazine = QGVAR(30Rnd_545x39_AK12_Mag_F);
+                magazine = QEGVAR(weapons,30Rnd_545x39_AK12_Mag_F);
                 count = 4;
             };
         };
         class TransportWeapons {
+            class _xx_arifle_AK12U_545_F {
+                weapon = QEGVAR(weapons,arifle_AK12U_545_F);
+                count = 2;
+            };
         };
         class Components: Components {
             class TransportPylonsComponent: TransportPylonsComponent {
@@ -10554,11 +11763,15 @@ class CfgVehicles {
                 count = 2;
             };
             class _xx_30Rnd_545x39_AK12_Mag_F {
-                magazine = QGVAR(30Rnd_545x39_AK12_Mag_F);
+                magazine = QEGVAR(weapons,30Rnd_545x39_AK12_Mag_F);
                 count = 4;
             };
         };
         class TransportWeapons {
+            class _xx_arifle_AK12U_545_F {
+                weapon = QEGVAR(weapons,arifle_AK12U_545_F);
+                count = 2;
+            };
         };
         class Components: Components {
             class TransportPylonsComponent: TransportPylonsComponent {
@@ -10611,6 +11824,82 @@ class CfgVehicles {
         animationList[] = {"exhaust_hide", 0};
         scope = 1;
         scopeCurator = 0;
+    };
+    class GVAR(O_SFIA_Heli_Attack_04_F): GVAR(Heli_Attack_04_base_F) {
+        author = "Grave";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_O_SFIA_Heli_Attack_04_F.jpg";
+        displayName = "Mi-35 Krokodil";
+        forceInGarage = 0;
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_Pilot_F";
+        typicalCargo[] = {"O_Pilot_F"};
+        textureList[] = {"SFIA", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_SFIA_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_02_SFIA_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_03_SFIA_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                magazines[] = {QGVAR(150Rnd_Autocannon_Heli_Attack_04_HE_Green_F), QGVAR(150Rnd_Autocannon_Heli_Attack_04_AP_Green_F), "Laserbatteries"};
+            };
+        };
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellRed {
+                magazine = "SmokeShellRed";
+                count = 2;
+            };
+            class _xx_30Rnd_762x39_Mag_F {
+                magazine = "30Rnd_762x39_Mag_F";
+                count = 4;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_Galat_lxWS {
+                weapon = "arifle_Galat_lxWS";
+                count = 2;
+            };
+        };
+        class Components: Components {
+            class TransportPylonsComponent: TransportPylonsComponent {
+                class Pylons: Pylons {
+                    class PylonLeft1: PylonLeft1 {
+                        attachment = "PylonRack_19Rnd_Rocket_Skyfire";
+                    };
+                    class PylonLeft2: PylonLeft2 {
+                        attachment = "PylonRack_19Rnd_Rocket_Skyfire";
+                    };
+                    class PylonLeft3: PylonLeft3 {
+                        attachment = "PylonRack_3Rnd_LG_scalpel";
+                    };
+                    class PylonRight1: PylonRight1 {
+                        attachment = "PylonRack_19Rnd_Rocket_Skyfire";
+                    };
+                    class PylonRight2: PylonRight2 {
+                        attachment = "PylonRack_19Rnd_Rocket_Skyfire";
+                    };
+                    class PylonRight3: PylonRight3 {
+                        attachment = "PylonRack_3Rnd_LG_scalpel";
+                    };
+                };
+                class Presets: Presets {
+                    class Empty: Empty {
+                    };
+                    class Default: Default {
+                        attachment[] = {"PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_3Rnd_LG_scalpel", "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_3Rnd_LG_scalpel"};
+                    };
+                    class AT: AT {
+                        attachment[] = {"PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_3Rnd_LG_scalpel", "PylonRack_3Rnd_LG_scalpel", "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_3Rnd_LG_scalpel", "PylonRack_3Rnd_LG_scalpel"};
+                    };
+                    class CAS: CAS {
+                        attachment[] = {"PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_19Rnd_Rocket_Skyfire", QGVAR(PylonWeapon_250Rnd_20mm_shells), "PylonRack_19Rnd_Rocket_Skyfire", "PylonRack_19Rnd_Rocket_Skyfire", QGVAR(PylonWeapon_250Rnd_20mm_shells)};
+                    };
+                };
+            };
+        };
     };
     class GVAR(Heli_Transport_02_Heavy_base_F): Helicopter_Base_H {
         features = "Randomization: No						<br />Camo selections: 3 - main body, tail various attachments, engine						<br />Script door sources: CargoRamp_Open, Door_Back_L, Door_Back_R						<br />Script animations: None						<br />Executed scripts: None						<br />Firing from vehicles: No						<br />Slingload: Slingloads up to 4000 kg						<br />Cargo proxy indexes: 1 to 16";
@@ -12831,7 +14120,7 @@ class CfgVehicles {
             };
             class UNA {
                 displayName = "UN";
-                textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_01_UNA_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_UNA_CO.paa", "", ""};
+                textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_01_UNA_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_UNA_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_2_UN_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
                 factions[] = {};
             };
             class GenGrey {
@@ -12861,7 +14150,7 @@ class CfgVehicles {
             class UNO {
                 displayName = "UNO";
                 author = "Ravenholme";
-                textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_01_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", ""};
+                textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_01_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
                 factions[] = {};
             };
         };
@@ -13328,7 +14617,7 @@ class CfgVehicles {
             };
             class UNA {
                 displayName = "UN";
-                textures[] = {"", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_UNA_CO.paa", "", ""};
+                textures[] = {"lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_1_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_UNA_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_2_UN_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
                 factions[] = {};
             };
             class Black {
@@ -13370,7 +14659,7 @@ class CfgVehicles {
             class UNO_VIP {
                 displayName = "UNO";
                 author = "Ravenholme";
-                textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_01_UN_VIP_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO", ""};
+                textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_01_UN_VIP_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
                 factions[] = {};
             };
         };
@@ -13444,41 +14733,6 @@ class CfgVehicles {
             };
         };
     };
-    class GVAR(B_A_Heli_Transport_02_wdl_F): GVAR(Heli_Transport_02_Heavy_base_F) {
-        author = "Ravenholme";
-        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_B_A_Heli_Transport_02_F.jpg";
-        displayName = "Merlin HC5";
-        side = 1;
-        faction = "ghost_blue";
-        crew = "B_Helipilot_F";
-        typicalCargo[] = {"B_crew_F"};
-        textureList[] = {"BAF", 1, "Grey", 0};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_01_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"};
-        availableForSupportTypes[] = {"Drop", "Transport"};
-        cost = 800000;
-        scope = 1;
-        scopeCurator = 0;
-        class TransportMagazines {
-            class _xx_SmokeShell {
-                magazine = "SmokeShell";
-                count = 2;
-            };
-            class _xx_SmokeShellBlue {
-                magazine = "SmokeShellBlue";
-                count = 2;
-            };
-            class _xx_30Rnd_65x39_caseless_black_mag {
-                magazine = "30Rnd_65x39_caseless_black_mag";
-                count = 4;
-            };
-        };
-        class TransportWeapons {
-            class _xx_arifle_SA80_C_blk_F {
-                weapon = QEGVAR(weapons,arifle_SA80_C_blk_F);
-                count = 2;
-            };
-        };
-    };
     class GVAR(C_Heli_Transport_02_VIP_F): GVAR(Heli_Transport_02_VIP_base_F) {
         author = "Grave";
         editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_C_Heli_Transport_02_VIP_F.jpg";
@@ -13511,6 +14765,14 @@ class CfgVehicles {
         typicalCargo[] = {"C_man_pilot_F"};
         hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_01_BluePearl_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_BluePearl_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_BluePearl_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_int_02_GenCiv_CO.paa"};
         textureList[] = {"Grey", 1, "Vrana", 1, "Blue", 1, "White", 1, "BluePearl", 1, "Black", 0, "ION", 0, "Daltgreen", 1};
+    };
+    class GVAR(C_Heli_Transport_02_VIP_F_LXWS): GVAR(C_Heli_Transport_02_VIP_F) {
+        faction = "CIV_F";
+        side = 3;
+        crew = "C_man_pilot_F";
+        typicalCargo[] = {"C_man_pilot_F"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_01_daltgreen_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_daltgreen_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_daltgreen_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_int_02_GenCiv_CO.paa"};
+        textureList[] = {"Grey", 0, "Vrana", 0, "Blue", 0, "White", 0, "BluePearl", 0, "Black", 0, "ION", 0, "Daltgreen", 1};
     };
     class GVAR(I_Heli_Transport_02_Heavy_F): GVAR(Heli_Transport_02_Heavy_base_F) {
         author = "Grave";
@@ -13565,6 +14827,101 @@ class CfgVehicles {
         class TransportWeapons {
             class _xx_arifle_Mk20C_F {
                 weapon = "arifle_Mk20C_F";
+                count = 2;
+            };
+        };
+    };
+    class GVAR(B_ION_Heli_Transport_02_VIP_F): GVAR(Heli_Transport_02_VIP_base_F) {
+        author = "Grave";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_B_ION_Heli_Transport_02_VIP_F.jpg";
+        scope = 2;
+        displayName = "EH-302 (Executive Transport)";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Helipilot_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_01_ION_lxWS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_ION_lxWS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_ION_lxWS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_int_02_GenCiv_CO.paa"};
+        textureList[] = {"ION_lxWS", 1, "ION", 0};
+        class TransportItems {
+            class _xx_FirstAidKit {
+                name = "FirstAidKit";
+                count = 10;
+            };
+        };
+    };
+    class GVAR(B_UN_lxWS_Heli_Transport_02_VIP_F): GVAR(Heli_Transport_02_VIP_base_F) {
+        author = "Grave";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_B_UN_lxWS_Heli_Transport_02_VIP_F.jpg";
+        displayName = "EH-302 (Executive Transport)";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Helipilot_F";
+        typicalCargo[] = {"B_Helipilot_F"};
+        hiddenSelectionsTextures[] = {"lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_1_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_UNA_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_2_UN_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
+        textureList[] = {"UNA", 1};
+        scope = 1;
+        scopeCurator = 0;
+        class TransportItems {
+            class _xx_FirstAidKit {
+                name = "FirstAidKit";
+                count = 10;
+            };
+        };
+    };
+    class GVAR(B_UN_lxWS_Heli_Transport_02_Heavy_F): GVAR(Heli_Transport_02_Heavy_base_F) {
+        author = "Grave";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_B_UN_lxWS_Heli_Transport_02_Heavy_F.jpg";
+        displayName = "CH-49E Mohawk";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Helipilot_F";
+        typicalCargo[] = {"B_Helipilot_F"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_01_UNA_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_UNA_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_2_UN_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
+        textureList[] = {"UNA", 1};
+        availableForSupportTypes[] = {"Drop", "Transport"};
+        scope = 1;
+        scopeCurator = 0;
+        class TransportBackpacks {
+            class _xx_B_Parachute {
+                backpack = "B_Parachute";
+                count = 16;
+            };
+        };
+        class TransportItems {
+            class _xx_FirstAidKit {
+                name = "FirstAidKit";
+                count = 16;
+            };
+            class _xx_Toolkit {
+                name = "Toolkit";
+                count = 1;
+            };
+            class _xx_Medikit {
+                name = "Medikit";
+                count = 1;
+            };
+            class _xx_ItemGPS {
+                name = "ItemGPS";
+                count = 1;
+            };
+        };
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellGreen {
+                magazine = "SmokeShellGreen";
+                count = 2;
+            };
+            class _xx_35Rnd_556x45_Velko_lxWS {
+                magazine = "35Rnd_556x45_Velko_lxWS";
+                count = 4;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_Velko_lxWS {
+                weapon = "arifle_Velko_lxWS";
                 count = 2;
             };
         };
@@ -13813,6 +15170,142 @@ class CfgVehicles {
         scopeCurator = 0;
         class EjectionSystem: EjectionSystem {
             EjectionSeatClass = QGVAR(B_A_Ejection_Seat_Plane_Fighter_05_wdl_F);
+        };
+    };
+    class GVAR(B_D_Plane_Fighter_05_F): GVAR(Plane_Fighter_05_Base_F) {
+        author = "Avery Kaiserin and Olli Koskelainen";
+        faction = "ghost_blue";
+        displayName = "F-35F Lightning II";
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"canopy_rot", 0}};
+            hide[] = {"clan", "zasleh", "light", "zadni svetlo", "autobacklit", "poskozeni"};
+            verticalOffset = 2.445;
+            verticalOffsetWorld = -0.051;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+        class EjectionSystem: EjectionSystem {
+            EjectionSeatClass = QGVAR(B_D_Ejection_Seat_Plane_Fighter_05_F);
+        };
+    };
+    class GVAR(B_D_Plane_Fighter_05_Stealth_F): GVAR(Plane_Fighter_05_Base_F) {
+        author = "Avery Kaiserin and Olli Koskelainen";
+        faction = "ghost_blue";
+        displayName = "F-35F Lightning II (Stealth)";
+        radarTargetSize = 0.4;
+        scope = 1;
+        scopeCurator = 0;
+        class EjectionSystem: EjectionSystem {
+            EjectionSeatClass = QGVAR(B_D_Ejection_Seat_Plane_Fighter_05_F);
+        };
+        class AnimationSources: AnimationSources {
+            class pylon_1_hide: pylon_1_hide {
+                initPhase = 1;
+            };
+            class pylon_2_hide: pylon_2_hide {
+                initPhase = 1;
+            };
+            class pylon_3_hide: pylon_3_hide {
+                initPhase = 1;
+            };
+            class pylon_4_hide: pylon_4_hide {
+                initPhase = 1;
+            };
+            class pylon_5_hide: pylon_5_hide {
+                initPhase = 1;
+            };
+            class pylon_6_hide: pylon_6_hide {
+                initPhase = 1;
+            };
+        };
+        class Components: Components {
+            class TransportPylonsComponent {
+                UIPicture = "\z\ghost\addons\vehicle\models\air\Plane_Fighter_05\Data\UI\Plane_Fighter_05_3DEN_CA.paa";
+                class pylons {
+                    class pylonDummy1 {
+                        attachment = "";
+                        UIposition[] = {10, 10};
+                    };
+                    class pylonDummy2: pylonDummy1 {
+                    };
+                    class pylonDummy3: pylonDummy1 {
+                    };
+                    class pylonDummy4: pylonDummy1 {
+                    };
+                    class pylonDummy5: pylonDummy1 {
+                    };
+                    class pylonDummy6: pylonDummy1 {
+                    };
+                    class pylonBayRight1 {
+                        hardpoints[] = {"B_AMRAAM_D_INT", "B_GBU12"};
+                        priority = 4;
+                        maxweight = 2500;
+                        attachment = "PylonMissile_Missile_AMRAAM_D_INT_x1";
+                        UIposition[] = {0.33, 0.35};
+                        bay = 2;
+                    };
+                    class pylonBayLeft1: pylonBayRight1 {
+                        UIposition[] = {0.33, 0.15};
+                        mirroredMissilePos = 7;
+                        bay = 1;
+                    };
+                    class pylonBayRight2: pylonBayRight1 {
+                        hardpoints[] = {"B_AMRAAM_D_INT", "B_SDB_QUAD_RAIL", "B_AGM_154", "B_GBU12"};
+                        priority = 2;
+                        attachment = "PylonRack_Bomb_SDB_x4";
+                        UIposition[] = {0.33, 0.3};
+                    };
+                    class pylonBayLeft2: pylonBayLeft1 {
+                        hardpoints[] = {"B_AMRAAM_D_INT", "B_SDB_QUAD_RAIL", "B_AGM_154", "B_GBU12"};
+                        attachment = "PylonRack_Bomb_SDB_x4";
+                        UIposition[] = {0.33, 0.2};
+                        mirroredMissilePos = 9;
+                    };
+                    class pylonCenter1 {
+                        hardpoints[] = {"B_F38_CENTER_PYLON"};
+                        attachment = QGVAR(PylonWeapon_220Rnd_25mm_shells);
+                        priority = 11;
+                        maxweight = 1000;
+                        UIposition[] = {0.33, 0.25};
+                    };
+                };
+                class presets {
+                    class empty {
+                        displayName = "STR_empty";
+                        attachment[] = {};
+                    };
+                    class default {
+                        displayName = "STR_vehicle_default";
+                        attachment[] = {"", "", "", "", "", "", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonRack_Bomb_SDB_x4", "PylonRack_Bomb_SDB_x4", QGVAR(PylonWeapon_220Rnd_25mm_shells)};
+                    };
+                    class AA {
+                        displayName = "AA";
+                        attachment[] = {"", "", "", "", "", "", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonMissile_Missile_AMRAAM_D_INT_x1", QGVAR(PylonWeapon_220Rnd_25mm_shells)};
+                    };
+                    class CAS {
+                        displayName = "CAS";
+                        attachment[] = {"", "", "", "", "", "", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonMissile_Bomb_GBU12_x1", "PylonMissile_Bomb_GBU12_x1", QGVAR(PylonWeapon_220Rnd_25mm_shells)};
+                    };
+                    class Cluster {
+                        displayName = "Cluster";
+                        attachment[] = {"", "", "", "", "", "", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonMissile_1Rnd_BombCluster_01_F", "PylonMissile_1Rnd_BombCluster_01_F", QGVAR(PylonWeapon_220Rnd_25mm_shells)};
+                    };
+                };
+                class Bays {
+                    class BayLeft1 {
+                        bayOpenTime = 0.5;
+                        openBayWhenWeaponSelected = 0;
+                        autoCloseWhenEmptyDelay = 2;
+                    };
+                    class BayRight1 {
+                        bayOpenTime = 0.5;
+                        openBayWhenWeaponSelected = 0;
+                        autoCloseWhenEmptyDelay = 2;
+                    };
+                };
+            };
         };
     };
     class GVAR(Plane_Transport_01_base_F): Plane_Base_F {
@@ -15038,28 +16531,6 @@ class CfgVehicles {
         textureList[] = {"BAF", 1};
         hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_body_baf_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_wings_baf_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_interior_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_decals_baf_ca.paa"};
     };
-    class GVAR(B_A_Plane_Transport_01_infantry_tna_F): GVAR(B_A_Plane_Transport_01_infantry_F) {
-        author = "Avery Kaiserin";
-        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_A_Plane_Transport_01_infantry_tna_F.jpg";
-        faction = "ghost_blue";
-        crew = "B_Pilot_F";
-        typicalCargo[] = {"B_Pilot_F"};
-        textureList[] = {"BAF_Grey", 1};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_body_grey_baf_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_wings_grey_baf_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_interior_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_decals_baf_ca.paa"};
-        scope = 1;
-        scopeCurator = 0;
-    };
-    class GVAR(B_A_Plane_Transport_01_vehicle_tna_F): GVAR(B_A_Plane_Transport_01_vehicle_F) {
-        author = "Avery Kaiserin";
-        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_A_Plane_Transport_01_infantry_tna_F.jpg";
-        faction = "ghost_blue";
-        crew = "B_Pilot_F";
-        typicalCargo[] = {"B_Pilot_F"};
-        textureList[] = {"BAF_Grey", 1};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_body_grey_baf_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_wings_grey_baf_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_interior_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_decals_baf_ca.paa"};
-        scope = 1;
-        scopeCurator = 0;
-    };
     class GVAR(B_A_Plane_Transport_01_infantry_wdl_F): GVAR(B_A_Plane_Transport_01_infantry_F) {
         author = "Avery Kaiserin";
         faction = "ghost_blue";
@@ -15215,6 +16686,14 @@ class CfgVehicles {
         typicalCargo[] = {"C_man_pilot_F"};
         textureList[] = {"WhiteTwoTone", 1, "AirFreight", 1, "White", 0, "AltAir", 0};
         hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_body_white_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_wings_twotone_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_interior_CO.paa"};
+    };
+    class GVAR(C_Plane_Transport_01_civil_F_LXWS): GVAR(C_Plane_Transport_01_civil_F) {
+        faction = "CIV_F";
+        side = 3;
+        scopeArsenal = 0;
+        forceInGarage = 0;
+        crew = "C_man_pilot_F";
+        typicalCargo[] = {"C_man_pilot_F"};
     };
     class GVAR(C_Plane_Transport_01_civil_F_Enoch): GVAR(C_Plane_Transport_01_civil_F) {
         faction = "CIV_F";
@@ -16542,8 +18021,8 @@ class CfgVehicles {
                 showCrewAim = 2;
                 startEngine = 0;
                 turretInfoType = "RscOptics_MBT_02_gunner";
-                weapons[] = {"LMG_coax_ext"};
-                magazines[] = {"2000Rnd_762x51_Belt_Green"};
+                weapons[] = {QGVAR(autocannon_30mm_lxWS), "LMG_coax_ext", "missiles_Vorona_vehicle_lxWS"};
+                magazines[] = {"340Rnd_30mm_HE_shells_Tracer_Green_lxWS", "160Rnd_30mm_APFSDS_shells_Tracer_Green_lxWS", "2000Rnd_762x51_Belt_Green", "4rnd_Vorona_HEAT_lxWS"};
                 selectionFireAnim = "zasleh2";
                 memoryPointGun[] = {"usti hlavne3"};
                 minElev = -7;
@@ -16788,13 +18267,13 @@ class CfgVehicles {
             class Hex {
                 displayName = "Hex";
                 author = "Bran Flakes";
-                textures[] = {"\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body_Hex_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body2_Hex_CO.paa", "", "\z\ghost\addons\vehicle\models\armor\Data\camonet_RUS_green_CO.paa", "\z\ghost\addons\vehicle\models\armor\Data\cage_RUkhk_CO.paa"};
+                textures[] = {"\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body_Hex_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body2_Hex_CO.paa", "lxws\vehicles_1_f_lxws\apc_tracked_02\Data\apc_tracked_02_30mm_hex_co.paa", "\z\ghost\addons\vehicle\models\armor\Data\camonet_RUS_green_CO.paa", "\z\ghost\addons\vehicle\models\armor\Data\cage_RUkhk_CO.paa"};
                 factions[] = {};
             };
             class GreenHex {
                 displayName = "Green Hex";
                 author = "Bran Flakes";
-                textures[] = {"\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body_Ghex_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body2_Ghex_CO.paa", "", "\z\ghost\addons\vehicle\models\armor\Data\camonet_RUS_green_CO.paa", "\z\ghost\addons\vehicle\models\armor\Data\cage_RUkhk_CO.paa"};
+                textures[] = {"\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body_Ghex_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body2_Ghex_CO.paa", "lxws\vehicles_1_f_lxws\apc_tracked_02\Data\apc_tracked_02_30mm_ghex_co.paa", "\z\ghost\addons\vehicle\models\armor\Data\camonet_RUS_green_CO.paa", "\z\ghost\addons\vehicle\models\armor\Data\cage_RUkhk_CO.paa"};
                 factions[] = {};
             };
             class UNO {
@@ -16908,14 +18387,18 @@ class CfgVehicles {
             };
         };
         class TransportWeapons {
+            class _xx_arifle_AK12_545_F {
+                weapon = QEGVAR(weapons,arifle_AK12_545_F);
+                count = 2;
+            };
         };
         class TransportMagazines {
             class _xx_30Rnd_545x39_AK12_Mag_F {
-                magazine = QGVAR(30Rnd_545x39_AK12_Mag_F);
+                magazine = QEGVAR(weapons,30Rnd_545x39_AK12_Mag_F);
                 count = 12;
             };
             class _xx_60Rnd_545x39_Mag_Green_F {
-                magazine = QGVAR(60Rnd_545x39_Mag_Green_F);
+                magazine = QEGVAR(weapons,60Rnd_545x39_Mag_Green_F);
                 count = 8;
             };
             class _xx_HandGrenade {
@@ -17016,15 +18499,18 @@ class CfgVehicles {
             };
             class reload_cannon {
                 source = "reload";
+                weapon = QGVAR(autocannon_30mm_lxWS);
             };
             class Missiles_revolving {
                 source = "revolving";
+                weapon = "missiles_Vorona_vehicle_lxWS";
             };
             class Missiles_reloadMagazine: Missiles_revolving {
                 source = "reloadMagazine";
             };
             class muzzle_hide {
                 source = "reload";
+                weapon = QGVAR(autocannon_30mm_lxWS);
             };
             class HitEngine_src {
                 source = "Hit";
@@ -17210,11 +18696,15 @@ class CfgVehicles {
                 count = 2;
             };
             class _xx_30Rnd_545x39_AK12_Mag_F {
-                magazine = QGVAR(30Rnd_545x39_AK12_Mag_F);
+                magazine = QEGVAR(weapons,30Rnd_545x39_AK12_Mag_F);
                 count = 4;
             };
         };
         class TransportWeapons {
+            class _xx_arifle_AK12U_545_F {
+                weapon = QEGVAR(weapons,arifle_AK12U_545_F);
+                count = 2;
+            };
         };
         class TransportItems {
             class _xx_FirstAidKit {
@@ -17951,10 +19441,14 @@ class CfgVehicles {
             };
         };
         class TransportWeapons {
+            class _xx_arifle_AK12_545_F {
+                weapon = QEGVAR(weapons,arifle_AK12_545_F);
+                count = 2;
+            };
         };
         class TransportMagazines {
             class _xx_30Rnd_545x39_AK12_Mag_F {
-                magazine = QGVAR(30Rnd_545x39_AK12_Mag_F);
+                magazine = QEGVAR(weapons,30Rnd_545x39_AK12_Mag_F);
                 count = 12;
             };
             class _xx_75Rnd_762x39_AK12_Mag_F {
@@ -18135,41 +19629,6 @@ class CfgVehicles {
                 parachuteHeightLimit = 5;
                 canBeTransported = 1;
                 dimensions[] = {"BBox_1_1_pos", "BBox_1_2_pos"};
-            };
-        };
-    };
-    class GVAR(O_R_APC_Wheeled_04_cannon_v2_F): GVAR(APC_Wheeled_04_base_v2_F) {
-        author = "Avery Kaiserin and Lakarak";
-        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_APC_Wheeled_04_cannon_v2_F.jpg";
-        scope = 2;
-        scopeCurator = 2;
-        side = 0;
-        faction = "ghost_red";
-        crew = "O_crew_F";
-        typicalCargo[] = {"O_crew_F"};
-        textureList[] = {"Green", 1};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_sprut_body_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body2_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\apc_wheeled_04_sprut_turret_co.paa", "\z\ghost\addons\vehicle\models\armor\Data\camonet_RUS_green_CO.paa", "\z\ghost\addons\vehicle\models\armor\Data\cage_RUkhk_CO.paa"};
-        class SimpleObject {
-            eden = 1;
-            animate[] = {{"damagehide", 0}, {"damagehidevez", 0}, {"damagehidehlaven", 0}, {"wheel_1_1_destruct", 0}, {"wheel_1_2_destruct", 0}, {"wheel_1_3_destruct", 0}, {"wheel_1_4_destruct", 0}, {"wheel_2_1_destruct", 0}, {"wheel_2_2_destruct", 0}, {"wheel_2_3_destruct", 0}, {"wheel_2_4_destruct", 0}, {"wheel_1_1_destruct_unhide", 0}, {"wheel_1_2_destruct_unhide", 0}, {"wheel_1_3_destruct_unhide", 0}, {"wheel_1_4_destruct_unhide", 0}, {"wheel_2_1_destruct_unhide", 0}, {"wheel_2_2_destruct_unhide", 0}, {"wheel_2_3_destruct_unhide", 0}, {"wheel_2_4_destruct_unhide", 0}, {"wheel_1_1", 0}, {"wheel_2_1", 0}, {"wheel_1_2", 0}, {"wheel_1_3", 0}, {"wheel_2_2", 0}, {"wheel_2_3", 0}, {"wheel_1_4", 0}, {"wheel_2_4", 0}, {"daylights", 0}, {"wheel_1_1_damage", 0}, {"wheel_1_2_damage", 0}, {"wheel_1_3_damage", 0}, {"wheel_1_4_damage", 0}, {"wheel_2_1_damage", 0}, {"wheel_2_2_damage", 0}, {"wheel_2_3_damage", 0}, {"wheel_2_4_damage", 0}, {"wheel_1_1_damper_damage_backanim", 0}, {"wheel_1_2_damper_damage_backanim", 0}, {"wheel_1_3_damper_damage_backanim", 0}, {"wheel_1_4_damper_damage_backanim", 0}, {"wheel_2_1_damper_damage_backanim", 0}, {"wheel_2_2_damper_damage_backanim", 0}, {"wheel_2_3_damper_damage_backanim", 0}, {"wheel_2_4_damper_damage_backanim", 0}, {"wheel_1_1_damper", 0.48}, {"wheel_2_1_damper", 0.48}, {"wheel_1_2_damper", 0.5}, {"wheel_1_3_damper", 0.52}, {"wheel_2_2_damper", 0.49}, {"wheel_2_3_damper", 0.52}, {"wheel_1_4_damper", 0.53}, {"wheel_2_4_damper", 0.53}, {"steering_1_1", 0}, {"steering_2_1", 0}, {"steering_1_2", 0}, {"steering_2_2", 0}, {"hatchdriver", 0}, {"mainturret", 0}, {"turretbase", 0}, {"maingun", 0}, {"obsturret", 0}, {"obsgun", 0}, {"damagehlaven", 0}, {"damagecamonet", 0}, {"vrtulea", 0}, {"vrtuleb", 0}, {"poklop_gunner", 0}, {"poklop_commander", 0}, {"zasleh_rot", 307}, {"zasleh2_rot", 589.52}, {"zasleh_hide", 0}, {"reverse_light", 0}, {"drivingwheel", 0}, {"indicatortempoil", 0}, {"indicatortempwater", 0}, {"indicatorammeter", 0}, {"indicatorammeter_turret", 0}, {"indicatorspeed_mfd_driver", 0}, {"indicatorrpm", 0}, {"indicatorrpm_mfd_driver", 0}, {"lights_driver", 0}, {"lights_driver_off", 0}, {"lights_turret", 0}, {"lights_turret_off", 0}, {"cannon_ready_light", 1}, {"engine_damage_indicator", 0}, {"main_gun_damage_indicator", 0}, {"pedal_thrust", 0}, {"pedal_brake", 1}, {"turret_control_x", 0}, {"turret_control_y", 0}, {"com_turret_control_x", 0}, {"com_turret_control_y", 0}, {"driver_reverse_cam", 0}, {"driver_reverse_cam_nopip", 0}, {"driver_hide_mfd", 0}, {"indicatortempwater_mfd_driver", 0}, {"indicatorfuel_mfd_driver", 1}, {"indicator_hull_direction_mfd_driver", 0}, {"indicator_main_turret_mfd_driver", 0}, {"indicator_com_turret_mfd_driver", 0}, {"indicator_com_turret_counter_mfd_driver", 0}, {"indicator_main_turret_mfd_com", 0}, {"indicator_main_turret_onscreen_com", 0}, {"indicator_com_turret_mfd_com", 0}, {"indicator_com_turret_onscreen_com", 0}, {"indicator_com_turret_counter_mfd_com", 0}, {"indicator_hull_direction_mfd_gunner", 0}, {"indicator_main_turret_mfd_gunner", 0}, {"indicator_com_turret_mfd_gunner", 0}, {"indicator_com_turret_counter_mfd_gunner", 0}, {"indicator_damage_engine", 0}, {"indicator_damage_fuel", 0}, {"indicator_damage_wheels", 0}, {"indicator_turret_damage_hull", 0}, {"indicator_turret_damage_engine", 0}, {"indicator_turret_damage_fuel", 0}, {"indicator_turret_damage_main_gun", 0}, {"indicator_turret_damage_wheels", 0}, {"indicator_turret_damage_turret", 0}, {"hide_mfd_and_pip_screen_driver", 1}, {"hide_mfd_and_pip_screen_gunner", 1}, {"hide_mfd_elements", 1}, {"showbags_damage", 0}, {"slat_front_normal_hide", 0}, {"slat_front_damage_unhide", 0}, {"slat_front_damage_hide", 0}, {"slat_front_destroyed_unhide", 0}, {"slat_front_firegeo_hide", 0}, {"slat_back_normal_hide", 0}, {"slat_back_damage_unhide", 0}, {"slat_back_damage_hide", 0}, {"slat_back_destroyed_unhide", 0}, {"slat_back_firegeo_hide", 0}, {"slat_left_1_normal_hide", 0}, {"slat_left_1_damage_unhide", 0}, {"slat_left_1_damage_hide", 0}, {"slat_left_1_destroyed_unhide", 0}, {"slat_left_1_firegeo_hide", 0}, {"slat_left_2_normal_hide", 0}, {"slat_left_2_damage_unhide", 0}, {"slat_left_2_damage_hide", 0}, {"slat_left_2_destroyed_unhide", 0}, {"slat_left_2_firegeo_hide", 0}, {"slat_left_3_normal_hide", 0}, {"slat_left_3_damage_unhide", 0}, {"slat_left_3_damage_hide", 0}, {"slat_left_3_destroyed_unhide", 0}, {"slat_left_3_firegeo_hide", 0}, {"slat_right_1_normal_hide", 0}, {"slat_right_1_damage_unhide", 0}, {"slat_right_1_damage_hide", 0}, {"slat_right_1_destroyed_unhide", 0}, {"slat_right_1_firegeo_hide", 0}, {"slat_right_2_normal_hide", 0}, {"slat_right_2_damage_unhide", 0}, {"slat_right_2_damage_hide", 0}, {"slat_right_2_destroyed_unhide", 0}, {"slat_right_2_firegeo_hide", 0}, {"slat_right_3_normal_hide", 0}, {"slat_right_3_damage_unhide", 0}, {"slat_right_3_damage_hide", 0}, {"slat_right_3_destroyed_unhide", 0}, {"slat_right_3_firegeo_hide", 0}, {"slat_top_back_normal_hide", 0}, {"slat_top_back_damage_unhide", 0}, {"slat_top_back_damage_hide", 0}, {"slat_top_back_destroyed_unhide", 0}, {"slat_top_back_firegeo_hide", 0}, {"slat_top_right_normal_hide", 0}, {"slat_top_right_damage_unhide", 0}, {"slat_top_right_damage_hide", 0}, {"slat_top_right_destroyed_unhide", 0}, {"slat_top_right_firegeo_hide", 0}, {"slat_top_left_normal_hide", 0}, {"slat_top_left_damage_unhide", 0}, {"slat_top_left_damage_hide", 0}, {"slat_top_left_destroyed_unhide", 0}, {"slat_top_left_firegeo_hide", 0}, {"hideMissile_1", 0}, {"hideMissile_2", 0}, {"hideMissile_3", 0}, {"hideMissile_4", 0}};
-            hide[] = {"clan", "zasleh2", "zasleh", "light_l", "light_r", "zadni svetlo", "brzdove svetlo", "podsvit pristroju", "poskozeni"};
-            verticalOffset = 2.448;
-            verticalOffsetWorld = -0.091;
-            init = "[this, '', []] call bis_fnc_initVehicle";
-        };
-    };
-    class GVAR(O_R_APC_Wheeled_04_cannon_v2_ard_F): GVAR(O_R_APC_Wheeled_04_cannon_v2_F) {
-        author = "Avery Kaiserin and Lakarak";
-        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_APC_Wheeled_04_cannon_v2_F.jpg";
-        faction = "ghost_red";
-        crew = "O_crew_F";
-        typicalCargo[] = {"O_crew_F"};
-        scope = 1;
-        scopeCurator = 0;
-        class TransportBackpacks {
-            class _xx_B_FieldPack_green_F {
-                backpack = "B_FieldPack_green_F";
-                count = 2;
             };
         };
     };
@@ -18515,6 +19974,163 @@ class CfgVehicles {
             init = "[this, '', []] call bis_fnc_initVehicle";
         };
     };
+    class GVAR(O_SFIA_APC_Wheeled_04_export_F): GVAR(APC_Wheeled_04_export_base_F) {
+        author = "Avery, Lukinator, and Lakarak";
+        displayName = "BTR-100A Muharib";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_O_SFIA_APC_Wheeled_04_export_F.jpg";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_crew_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        textureList[] = {"SFIA", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_SFIA_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body2_SFIA_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\btr100a_turret_SFIA_co.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class TransportWeapons {
+            class _xx_arifle_Galat_lxWS {
+                weapon = "arifle_Galat_lxWS";
+                count = 2;
+            };
+            class _xx_arifle_SLR_lxWS {
+                weapon = "arifle_SLR_lxWS";
+                count = 1;
+            };
+            class _xx_launch_RPG32_F {
+                weapon = "launch_RPG32_F";
+                count = 1;
+            };
+        };
+        class TransportMagazines {
+            class _xx_30Rnd_762x39_Mag_F {
+                magazine = "30Rnd_762x39_Mag_F";
+                count = 12;
+            };
+            class _xx_20Rnd_762x51_slr_lxWS {
+                magazine = "20Rnd_762x51_slr_lxWS";
+                count = 8;
+            };
+            class _xx_HandGrenade_Guer {
+                magazine = QGVAR(HandGrenade_Guer);
+                count = 6;
+            };
+            class _xx_MiniGrenade {
+                magazine = "MiniGrenade";
+                count = 6;
+            };
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 8;
+            };
+            class _xx_SmokeShellRed {
+                magazine = "SmokeShellRed";
+                count = 8;
+            };
+            class _xx_SmokeShellYellow {
+                magazine = "SmokeShellYellow";
+                count = 8;
+            };
+            class _xx_SmokeShellOrange {
+                magazine = "SmokeShellOrange";
+                count = 8;
+            };
+            class _xx_1Rnd_HE_Grenade_shell {
+                magazine = "1Rnd_HE_Grenade_shell";
+                count = 6;
+            };
+            class _xx_1Rnd_Smoke_Grenade_shell {
+                magazine = "1Rnd_Smoke_Grenade_shell";
+                count = 3;
+            };
+            class _xx_1Rnd_SmokeYellow_Grenade_shell {
+                magazine = "1Rnd_SmokeYellow_Grenade_shell";
+                count = 3;
+            };
+            class _xx_1Rnd_SmokeOrange_Grenade_shell {
+                magazine = "1Rnd_SmokeOrange_Grenade_shell";
+                count = 3;
+            };
+            class _xx_1Rnd_SmokeRed_Grenade_shell {
+                magazine = "1Rnd_SmokeRed_Grenade_shell";
+                count = 3;
+            };
+            class _xx_RPG32_F {
+                magazine = "RPG32_F";
+                count = 5;
+            };
+            class _xx_RPG32_HE_F {
+                magazine = "RPG32_HE_F";
+                count = 2;
+            };
+            class _xx_Titan_AT {
+                magazine = "Titan_AT";
+                count = 2;
+            };
+            class _xx_Titan_AA {
+                magazine = "Titan_AA";
+                count = 2;
+            };
+        };
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"damagehide", 0}, {"damagehidevez", 0}, {"damagehidehlaven", 0}, {"wheel_1_1_destruct", 0}, {"wheel_1_2_destruct", 0}, {"wheel_1_3_destruct", 0}, {"wheel_1_4_destruct", 0}, {"wheel_2_1_destruct", 0}, {"wheel_2_2_destruct", 0}, {"wheel_2_3_destruct", 0}, {"wheel_2_4_destruct", 0}, {"wheel_1_1_destruct_unhide", 0}, {"wheel_1_2_destruct_unhide", 0}, {"wheel_1_3_destruct_unhide", 0}, {"wheel_1_4_destruct_unhide", 0}, {"wheel_2_1_destruct_unhide", 0}, {"wheel_2_2_destruct_unhide", 0}, {"wheel_2_3_destruct_unhide", 0}, {"wheel_2_4_destruct_unhide", 0}, {"wheel_1_1", 0}, {"wheel_2_1", 0}, {"wheel_1_2", 0}, {"wheel_1_3", 0}, {"wheel_2_2", 0}, {"wheel_2_3", 0}, {"wheel_1_4", 0}, {"wheel_2_4", 0}, {"daylights", 0}, {"wheel_1_1_damage", 0}, {"wheel_1_2_damage", 0}, {"wheel_1_3_damage", 0}, {"wheel_1_4_damage", 0}, {"wheel_2_1_damage", 0}, {"wheel_2_2_damage", 0}, {"wheel_2_3_damage", 0}, {"wheel_2_4_damage", 0}, {"wheel_1_1_damper_damage_backanim", 0}, {"wheel_1_2_damper_damage_backanim", 0}, {"wheel_1_3_damper_damage_backanim", 0}, {"wheel_1_4_damper_damage_backanim", 0}, {"wheel_2_1_damper_damage_backanim", 0}, {"wheel_2_2_damper_damage_backanim", 0}, {"wheel_2_3_damper_damage_backanim", 0}, {"wheel_2_4_damper_damage_backanim", 0}, {"wheel_1_1_damper", 0.48}, {"wheel_2_1_damper", 0.48}, {"wheel_1_2_damper", 0.5}, {"wheel_1_3_damper", 0.52}, {"wheel_2_2_damper", 0.49}, {"wheel_2_3_damper", 0.52}, {"wheel_1_4_damper", 0.53}, {"wheel_2_4_damper", 0.53}, {"steering_1_1", 0}, {"steering_2_1", 0}, {"steering_1_2", 0}, {"steering_2_2", 0}, {"hatchdriver", 0}, {"mainturret", 0}, {"turretbase", 0}, {"maingun", 0}, {"obsturret", 0}, {"obsgun", 0}, {"damagehlaven", 0}, {"damagecamonet", 0}, {"vrtulea", 0}, {"vrtuleb", 0}, {"poklop_gunner", 0}, {"poklop_commander", 0}, {"zasleh_rot", 307}, {"zasleh2_rot", 589.52}, {"zasleh_hide", 0}, {"reverse_light", 0}, {"drivingwheel", 0}, {"indicatortempoil", 0}, {"indicatortempwater", 0}, {"indicatorammeter", 0}, {"indicatorammeter_turret", 0}, {"indicatorspeed_mfd_driver", 0}, {"indicatorrpm", 0}, {"indicatorrpm_mfd_driver", 0}, {"lights_driver", 0}, {"lights_driver_off", 0}, {"lights_turret", 0}, {"lights_turret_off", 0}, {"cannon_ready_light", 1}, {"engine_damage_indicator", 0}, {"main_gun_damage_indicator", 0}, {"pedal_thrust", 0}, {"pedal_brake", 1}, {"turret_control_x", 0}, {"turret_control_y", 0}, {"com_turret_control_x", 0}, {"com_turret_control_y", 0}, {"driver_reverse_cam", 0}, {"driver_reverse_cam_nopip", 0}, {"driver_hide_mfd", 0}, {"indicatortempwater_mfd_driver", 0}, {"indicatorfuel_mfd_driver", 1}, {"indicator_hull_direction_mfd_driver", 0}, {"indicator_main_turret_mfd_driver", 0}, {"indicator_com_turret_mfd_driver", 0}, {"indicator_com_turret_counter_mfd_driver", 0}, {"indicator_main_turret_mfd_com", 0}, {"indicator_main_turret_onscreen_com", 0}, {"indicator_com_turret_mfd_com", 0}, {"indicator_com_turret_onscreen_com", 0}, {"indicator_com_turret_counter_mfd_com", 0}, {"indicator_hull_direction_mfd_gunner", 0}, {"indicator_main_turret_mfd_gunner", 0}, {"indicator_com_turret_mfd_gunner", 0}, {"indicator_com_turret_counter_mfd_gunner", 0}, {"indicator_damage_engine", 0}, {"indicator_damage_fuel", 0}, {"indicator_damage_wheels", 0}, {"indicator_turret_damage_hull", 0}, {"indicator_turret_damage_engine", 0}, {"indicator_turret_damage_fuel", 0}, {"indicator_turret_damage_main_gun", 0}, {"indicator_turret_damage_wheels", 0}, {"indicator_turret_damage_turret", 0}, {"hide_mfd_and_pip_screen_driver", 1}, {"hide_mfd_and_pip_screen_gunner", 1}, {"hide_mfd_elements", 1}, {"showbags_damage", 0}, {"slat_front_normal_hide", 0}, {"slat_front_damage_unhide", 0}, {"slat_front_damage_hide", 0}, {"slat_front_destroyed_unhide", 0}, {"slat_front_firegeo_hide", 0}, {"slat_back_normal_hide", 0}, {"slat_back_damage_unhide", 0}, {"slat_back_damage_hide", 0}, {"slat_back_destroyed_unhide", 0}, {"slat_back_firegeo_hide", 0}, {"slat_left_1_normal_hide", 0}, {"slat_left_1_damage_unhide", 0}, {"slat_left_1_damage_hide", 0}, {"slat_left_1_destroyed_unhide", 0}, {"slat_left_1_firegeo_hide", 0}, {"slat_left_2_normal_hide", 0}, {"slat_left_2_damage_unhide", 0}, {"slat_left_2_damage_hide", 0}, {"slat_left_2_destroyed_unhide", 0}, {"slat_left_2_firegeo_hide", 0}, {"slat_left_3_normal_hide", 0}, {"slat_left_3_damage_unhide", 0}, {"slat_left_3_damage_hide", 0}, {"slat_left_3_destroyed_unhide", 0}, {"slat_left_3_firegeo_hide", 0}, {"slat_right_1_normal_hide", 0}, {"slat_right_1_damage_unhide", 0}, {"slat_right_1_damage_hide", 0}, {"slat_right_1_destroyed_unhide", 0}, {"slat_right_1_firegeo_hide", 0}, {"slat_right_2_normal_hide", 0}, {"slat_right_2_damage_unhide", 0}, {"slat_right_2_damage_hide", 0}, {"slat_right_2_destroyed_unhide", 0}, {"slat_right_2_firegeo_hide", 0}, {"slat_right_3_normal_hide", 0}, {"slat_right_3_damage_unhide", 0}, {"slat_right_3_damage_hide", 0}, {"slat_right_3_destroyed_unhide", 0}, {"slat_right_3_firegeo_hide", 0}, {"slat_top_back_normal_hide", 0}, {"slat_top_back_damage_unhide", 0}, {"slat_top_back_damage_hide", 0}, {"slat_top_back_destroyed_unhide", 0}, {"slat_top_back_firegeo_hide", 0}, {"slat_top_right_normal_hide", 0}, {"slat_top_right_damage_unhide", 0}, {"slat_top_right_damage_hide", 0}, {"slat_top_right_destroyed_unhide", 0}, {"slat_top_right_firegeo_hide", 0}, {"slat_top_left_normal_hide", 0}, {"slat_top_left_damage_unhide", 0}, {"slat_top_left_damage_hide", 0}, {"slat_top_left_destroyed_unhide", 0}, {"slat_top_left_firegeo_hide", 0}, {"hideMissile_1", 0}, {"hideMissile_2", 0}, {"hideMissile_3", 0}, {"hideMissile_4", 0}};
+            hide[] = {"clan", "zasleh2", "zasleh", "light_l", "light_r", "zadni svetlo", "brzdove svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.448;
+            verticalOffsetWorld = -0.091;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+    };
+    class GVAR(O_SFIA_APC_Wheeled_04_cannon_v2_F): GVAR(APC_Wheeled_04_base_v2_F) {
+        author = "Avery Kaiserin and Lakarak";
+        displayName = "2S90M Almiraj";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_O_SFIA_APC_Wheeled_04_cannon_v2_F.jpg";
+        scope = 2;
+        scopeCurator = 2;
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_crew_F";
+        typicalCargo[] = {"O_crew_F"};
+        textureList[] = {"SFIA", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body_SFIA_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body2_SFIA_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\apc_wheeled_04_sprut_turret_SFIA_co.paa"};
+        class TransportWeapons {
+            class _xx_arifle_Galat_lxWS {
+                weapon = "arifle_Galat_lxWS";
+                count = 2;
+            };
+        };
+        class TransportMagazines {
+            class _xx_30Rnd_762x39_Mag_F {
+                magazine = "30Rnd_762x39_Mag_F";
+                count = 2;
+            };
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellRed {
+                magazine = "SmokeShellRed";
+                count = 2;
+            };
+        };
+        class TransportBackpacks {
+            class _xx_B_TacticalPack_blk {
+                backpack = "B_TacticalPack_blk";
+                count = 2;
+            };
+        };
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                magazines[] = {"16Rnd_125mm_APFSDS_T_Green", "8Rnd_125mm_HE_T_Green", "12Rnd_125mm_HEAT_T_Green", "2000Rnd_762x51_Belt_Green"};
+            };
+        };
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"damagehide", 0}, {"damagehidevez", 0}, {"damagehidehlaven", 0}, {"wheel_1_1_destruct", 0}, {"wheel_1_2_destruct", 0}, {"wheel_1_3_destruct", 0}, {"wheel_1_4_destruct", 0}, {"wheel_2_1_destruct", 0}, {"wheel_2_2_destruct", 0}, {"wheel_2_3_destruct", 0}, {"wheel_2_4_destruct", 0}, {"wheel_1_1_destruct_unhide", 0}, {"wheel_1_2_destruct_unhide", 0}, {"wheel_1_3_destruct_unhide", 0}, {"wheel_1_4_destruct_unhide", 0}, {"wheel_2_1_destruct_unhide", 0}, {"wheel_2_2_destruct_unhide", 0}, {"wheel_2_3_destruct_unhide", 0}, {"wheel_2_4_destruct_unhide", 0}, {"wheel_1_1", 0}, {"wheel_2_1", 0}, {"wheel_1_2", 0}, {"wheel_1_3", 0}, {"wheel_2_2", 0}, {"wheel_2_3", 0}, {"wheel_1_4", 0}, {"wheel_2_4", 0}, {"daylights", 0}, {"wheel_1_1_damage", 0}, {"wheel_1_2_damage", 0}, {"wheel_1_3_damage", 0}, {"wheel_1_4_damage", 0}, {"wheel_2_1_damage", 0}, {"wheel_2_2_damage", 0}, {"wheel_2_3_damage", 0}, {"wheel_2_4_damage", 0}, {"wheel_1_1_damper_damage_backanim", 0}, {"wheel_1_2_damper_damage_backanim", 0}, {"wheel_1_3_damper_damage_backanim", 0}, {"wheel_1_4_damper_damage_backanim", 0}, {"wheel_2_1_damper_damage_backanim", 0}, {"wheel_2_2_damper_damage_backanim", 0}, {"wheel_2_3_damper_damage_backanim", 0}, {"wheel_2_4_damper_damage_backanim", 0}, {"wheel_1_1_damper", 0.48}, {"wheel_2_1_damper", 0.48}, {"wheel_1_2_damper", 0.5}, {"wheel_1_3_damper", 0.52}, {"wheel_2_2_damper", 0.49}, {"wheel_2_3_damper", 0.52}, {"wheel_1_4_damper", 0.53}, {"wheel_2_4_damper", 0.53}, {"steering_1_1", 0}, {"steering_2_1", 0}, {"steering_1_2", 0}, {"steering_2_2", 0}, {"hatchdriver", 0}, {"mainturret", 0}, {"turretbase", 0}, {"maingun", 0}, {"obsturret", 0}, {"obsgun", 0}, {"damagehlaven", 0}, {"damagecamonet", 0}, {"vrtulea", 0}, {"vrtuleb", 0}, {"poklop_gunner", 0}, {"poklop_commander", 0}, {"zasleh_rot", 307}, {"zasleh2_rot", 589.52}, {"zasleh_hide", 0}, {"reverse_light", 0}, {"drivingwheel", 0}, {"indicatortempoil", 0}, {"indicatortempwater", 0}, {"indicatorammeter", 0}, {"indicatorammeter_turret", 0}, {"indicatorspeed_mfd_driver", 0}, {"indicatorrpm", 0}, {"indicatorrpm_mfd_driver", 0}, {"lights_driver", 0}, {"lights_driver_off", 0}, {"lights_turret", 0}, {"lights_turret_off", 0}, {"cannon_ready_light", 1}, {"engine_damage_indicator", 0}, {"main_gun_damage_indicator", 0}, {"pedal_thrust", 0}, {"pedal_brake", 1}, {"turret_control_x", 0}, {"turret_control_y", 0}, {"com_turret_control_x", 0}, {"com_turret_control_y", 0}, {"driver_reverse_cam", 0}, {"driver_reverse_cam_nopip", 0}, {"driver_hide_mfd", 0}, {"indicatortempwater_mfd_driver", 0}, {"indicatorfuel_mfd_driver", 1}, {"indicator_hull_direction_mfd_driver", 0}, {"indicator_main_turret_mfd_driver", 0}, {"indicator_com_turret_mfd_driver", 0}, {"indicator_com_turret_counter_mfd_driver", 0}, {"indicator_main_turret_mfd_com", 0}, {"indicator_main_turret_onscreen_com", 0}, {"indicator_com_turret_mfd_com", 0}, {"indicator_com_turret_onscreen_com", 0}, {"indicator_com_turret_counter_mfd_com", 0}, {"indicator_hull_direction_mfd_gunner", 0}, {"indicator_main_turret_mfd_gunner", 0}, {"indicator_com_turret_mfd_gunner", 0}, {"indicator_com_turret_counter_mfd_gunner", 0}, {"indicator_damage_engine", 0}, {"indicator_damage_fuel", 0}, {"indicator_damage_wheels", 0}, {"indicator_turret_damage_hull", 0}, {"indicator_turret_damage_engine", 0}, {"indicator_turret_damage_fuel", 0}, {"indicator_turret_damage_main_gun", 0}, {"indicator_turret_damage_wheels", 0}, {"indicator_turret_damage_turret", 0}, {"hide_mfd_and_pip_screen_driver", 1}, {"hide_mfd_and_pip_screen_gunner", 1}, {"hide_mfd_elements", 1}, {"showbags_damage", 0}, {"slat_front_normal_hide", 0}, {"slat_front_damage_unhide", 0}, {"slat_front_damage_hide", 0}, {"slat_front_destroyed_unhide", 0}, {"slat_front_firegeo_hide", 0}, {"slat_back_normal_hide", 0}, {"slat_back_damage_unhide", 0}, {"slat_back_damage_hide", 0}, {"slat_back_destroyed_unhide", 0}, {"slat_back_firegeo_hide", 0}, {"slat_left_1_normal_hide", 0}, {"slat_left_1_damage_unhide", 0}, {"slat_left_1_damage_hide", 0}, {"slat_left_1_destroyed_unhide", 0}, {"slat_left_1_firegeo_hide", 0}, {"slat_left_2_normal_hide", 0}, {"slat_left_2_damage_unhide", 0}, {"slat_left_2_damage_hide", 0}, {"slat_left_2_destroyed_unhide", 0}, {"slat_left_2_firegeo_hide", 0}, {"slat_left_3_normal_hide", 0}, {"slat_left_3_damage_unhide", 0}, {"slat_left_3_damage_hide", 0}, {"slat_left_3_destroyed_unhide", 0}, {"slat_left_3_firegeo_hide", 0}, {"slat_right_1_normal_hide", 0}, {"slat_right_1_damage_unhide", 0}, {"slat_right_1_damage_hide", 0}, {"slat_right_1_destroyed_unhide", 0}, {"slat_right_1_firegeo_hide", 0}, {"slat_right_2_normal_hide", 0}, {"slat_right_2_damage_unhide", 0}, {"slat_right_2_damage_hide", 0}, {"slat_right_2_destroyed_unhide", 0}, {"slat_right_2_firegeo_hide", 0}, {"slat_right_3_normal_hide", 0}, {"slat_right_3_damage_unhide", 0}, {"slat_right_3_damage_hide", 0}, {"slat_right_3_destroyed_unhide", 0}, {"slat_right_3_firegeo_hide", 0}, {"slat_top_back_normal_hide", 0}, {"slat_top_back_damage_unhide", 0}, {"slat_top_back_damage_hide", 0}, {"slat_top_back_destroyed_unhide", 0}, {"slat_top_back_firegeo_hide", 0}, {"slat_top_right_normal_hide", 0}, {"slat_top_right_damage_unhide", 0}, {"slat_top_right_damage_hide", 0}, {"slat_top_right_destroyed_unhide", 0}, {"slat_top_right_firegeo_hide", 0}, {"slat_top_left_normal_hide", 0}, {"slat_top_left_damage_unhide", 0}, {"slat_top_left_damage_hide", 0}, {"slat_top_left_destroyed_unhide", 0}, {"slat_top_left_firegeo_hide", 0}, {"hideMissile_1", 0}, {"hideMissile_2", 0}, {"hideMissile_3", 0}, {"hideMissile_4", 0}};
+            hide[] = {"clan", "zasleh2", "zasleh", "light_l", "light_r", "zadni svetlo", "brzdove svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.448;
+            verticalOffsetWorld = -0.091;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+    };
     class GVAR(I_G_APC_Wheeled_04_export_F): GVAR(I_APC_Wheeled_04_export_F) {
         author = "Avery, Lukinator, and Lakarak";
         displayName = "BTR-100A Lokhos";
@@ -18646,6 +20262,115 @@ class CfgVehicles {
         crew = "O_crew_F";
         typicalCargo[] = {"O_crew_F"};
     };
+    class GVAR(B_Tura_APC_Wheeled_04_export_F): GVAR(O_SFIA_APC_Wheeled_04_export_F) {
+        author = "Avery, Lukinator, and Lakarak";
+        displayName = "BTR-100A Muharib";
+        features = "Randomization: Yes, 4 skins, disabled by: this setVariable [""BIS_enableRandomization"",false];						<br />Specific skin may be set by: this setVariable [""color"",X]; (the number ranges from 0 to 3)";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_B_Tura_APC_Wheeled_04_export_F.jpg";
+        scope = 2;
+        scopeCurator = 2;
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Soldier_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        textureList[] = {"Guerrilla_04", 1, "Guerrilla_05", 1, "Sand", 1, "SFIA", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_tura_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body2_tura_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\btr100a_turret_tura_co.paa"};
+        class TransportWeapons {
+            class _xx_arifle_Galat_lxWS {
+                weapon = "arifle_Galat_lxWS";
+                count = 2;
+            };
+            class _xx_arifle_SLR_lxWS {
+                weapon = "arifle_SLR_lxWS";
+                count = 1;
+            };
+            class _xx_launch_RPG32_F {
+                weapon = "launch_RPG32_F";
+                count = 1;
+            };
+        };
+        class TransportMagazines {
+            class _xx_30Rnd_762x39_Mag_F {
+                magazine = "30Rnd_762x39_Mag_F";
+                count = 12;
+            };
+            class _xx_20Rnd_762x51_slr_lxWS {
+                magazine = "20Rnd_762x51_slr_lxWS";
+                count = 8;
+            };
+            class _xx_HandGrenade_Guer {
+                magazine = QGVAR(HandGrenade_Guer);
+                count = 6;
+            };
+            class _xx_MiniGrenade {
+                magazine = "MiniGrenade";
+                count = 6;
+            };
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 8;
+            };
+            class _xx_SmokeShellRed {
+                magazine = "SmokeShellRed";
+                count = 8;
+            };
+            class _xx_SmokeShellYellow {
+                magazine = "SmokeShellYellow";
+                count = 8;
+            };
+            class _xx_SmokeShellOrange {
+                magazine = "SmokeShellOrange";
+                count = 8;
+            };
+            class _xx_1Rnd_HE_Grenade_shell {
+                magazine = "1Rnd_HE_Grenade_shell";
+                count = 6;
+            };
+            class _xx_1Rnd_Smoke_Grenade_shell {
+                magazine = "1Rnd_Smoke_Grenade_shell";
+                count = 3;
+            };
+            class _xx_1Rnd_SmokeYellow_Grenade_shell {
+                magazine = "1Rnd_SmokeYellow_Grenade_shell";
+                count = 3;
+            };
+            class _xx_1Rnd_SmokeOrange_Grenade_shell {
+                magazine = "1Rnd_SmokeOrange_Grenade_shell";
+                count = 3;
+            };
+            class _xx_1Rnd_SmokeRed_Grenade_shell {
+                magazine = "1Rnd_SmokeRed_Grenade_shell";
+                count = 3;
+            };
+            class _xx_RPG32_F {
+                magazine = "RPG32_F";
+                count = 5;
+            };
+            class _xx_RPG32_HE_F {
+                magazine = "RPG32_HE_F";
+                count = 2;
+            };
+        };
+        class EventHandlers: EventHandlers {
+            postinit = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;};";
+        };
+    };
+    class GVAR(I_Tura_APC_Wheeled_04_export_F): GVAR(B_Tura_APC_Wheeled_04_export_F) {
+        side = 2;
+        faction = "ghost_green";
+        crew = "I_soldier_F";
+        typicalCargo[] = {"I_soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(O_Tura_APC_Wheeled_04_export_F): GVAR(B_Tura_APC_Wheeled_04_export_F) {
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_Soldier_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+    };
     class GVAR(B_M_Heli_Attack_03_F): GVAR(Heli_Attack_03_base_F) {
         author = "Avery Kaiserin";
         editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Atlas_B_M_Heli_Attack_03_F.jpg";
@@ -18721,11 +20446,15 @@ class CfgVehicles {
                 count = 2;
             };
             class _xx_30Rnd_545x39_AK12_Mag_F {
-                magazine = QGVAR(30Rnd_545x39_AK12_Mag_F);
+                magazine = QEGVAR(weapons,30Rnd_545x39_AK12_Mag_F);
                 count = 4;
             };
         };
         class TransportWeapons {
+            class _xx_arifle_AK12U_545_F {
+                weapon = QEGVAR(weapons,arifle_AK12U_545_F);
+                count = 2;
+            };
         };
         class Components: Components {
             class TransportPylonsComponent: TransportPylonsComponent {
@@ -18973,7 +20702,7 @@ class CfgVehicles {
         faction = "ghost_green";
         crew = "I_helipilot_F";
         typicalCargo[] = {"I_helipilot_F"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_01_UN_VIP_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", ""};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_01_UN_VIP_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
         textureList[] = {"UNO_VIP", 1};
         class TransportItems {
             class _xx_FirstAidKit {
@@ -18985,7 +20714,7 @@ class CfgVehicles {
             class ghost_I_UNO_Heli_Transport_02_VIP_F {
                 displayName = "UN";
                 author = "Grave";
-                textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_01_UN_VIP_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", ""};
+                textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_01_UN_VIP_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
                 factions[] = {};
             };
         };
@@ -18998,7 +20727,7 @@ class CfgVehicles {
         faction = "ghost_green";
         crew = "I_helipilot_F";
         typicalCargo[] = {"I_helipilot_F"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_01_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", ""};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_01_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
         textureList[] = {"UNO", 1};
         scope = 1;
         scopeCurator = 0;
@@ -19024,11 +20753,6 @@ class CfgVehicles {
         };
         class TransportWeapons {
         };
-    };
-    class GVAR(B_A_Plane_Fighter_05_ard_F): GVAR(B_A_Plane_Fighter_05_F) {
-        faction = "ghost_blue";
-        scope = 1;
-        scopeCurator = 0;
     };
     class GVAR(B_A_Plane_Fighter_05_Stealth_ard_F): GVAR(B_A_Plane_Fighter_05_Stealth_F) {
         faction = "ghost_blue";
@@ -19712,10 +21436,1699 @@ class CfgVehicles {
             };
         };
     };
+    class GVAR(B_G_MBT_03_base_F): MBT_03_base_F {
+        author = "Avery Kaiserin";
+        crew = "B_crew_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        side = 1;
+        faction = "ghost_blue";
+        animationList[] = {"HideTurret", 1, "HideHull", 1, "showCamonetHull", 0, "showCamonetTurret", 0, "showCamonetCannon", 0, "showCamonetCannon1", 0};
+    };
+    class GVAR(APC_Tracked_02_medical_base_F): APC_Tracked_02_base_F {
+        author = "Avery Kaiserin";
+        textSingular = "armor";
+        textPlural = "alpha victors";
+        nameSound = "veh_vehicle_armor_s";
+        displayName = "BTR-K Medical";
+        model = "\A3\Armor_F_Beta\APC_Tracked_02\APC_Tracked_02_cannon_F.p3d";
+        picture = "\z\ghost\addons\vehicle\models\armor\APC_Tracked_02\Data\UI\APC_Tracked_02_medical_CA.paa";
+        Icon = "\z\ghost\addons\vehicle\models\armor\APC_Tracked_02\Data\UI\Map_APC_Tracked_02_medical_CA.paa";
+        supplyRadius = 5;
+        attendant = 1;
+        threat[] = {0.0, 0.0, 0.0};
+        transportSoldier = 8;
+        selectionFireAnim = "";
+        animationList[] = {"showTracks", 0.5, "showBags", 0.67};
+        class SpeechVariants {
+            class Default {
+                speechSingular[] = {"veh_vehicle_armor_s"};
+                speechPlural[] = {"veh_vehicle_armor_p"};
+            };
+        };
+        class Turrets {
+        };
+        class AnimationSources: AnimationSources {
+            class HideTurret: HideTurret {
+                initPhase = 1;
+            };
+            class showTracks {
+                displayName = "Show Tracks";
+                author = "Avery Kaiserin";
+                source = "user";
+                animPeriod = 0.001;
+                initPhase = 0;
+                mass = -50;
+            };
+            class showBags {
+                displayName = "Show Bags (Hull)";
+                author = "Avery Kaiserin";
+                source = "user";
+                animPeriod = 0.001;
+                initPhase = 0;
+                mass = -50;
+            };
+        };
+        class TextureSources {
+            class Green {
+                displayName = "Green";
+                author = "Avery Kaiserin";
+                textures[] = {"\z\ghost\addons\vehicle\models\armor\APC_Tracked_02\Data\APC_Tracked_02_ext_01_medevac_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Tracked_02\Data\APC_Tracked_02_ext_02_RUkhk_CO.paa", "", "", ""};
+                factions[] = {};
+            };
+            class WoodlandHex {
+                displayName = "Woodland Hex";
+                author = "Lowaltitude";
+                textures[] = {"\z\ghost\addons\vehicle\models\armor\APC_Tracked_02\Data\APC_Tracked_02_ext_01_medical_whex_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Tracked_02\Data\APC_Tracked_02_ext_02_whex_CO.paa", "", "", ""};
+                factions[] = {};
+            };
+        };
+        class TransportMagazines {
+        };
+        class TransportWeapons {
+        };
+        class TransportItems {
+            class _xx_FirstAidKit {
+                name = "FirstAidKit";
+                count = 15;
+            };
+            class _xx_Toolkit {
+                name = "Toolkit";
+                count = 1;
+            };
+            class _xx_Medikit {
+                name = "Medikit";
+                count = 2;
+            };
+        };
+        class TransportBackpacks {
+            class _xx_B_FieldPack_ocamo {
+                backpack = "B_FieldPack_ocamo";
+                count = 2;
+            };
+        };
+    };
+    class GVAR(UGV_01_medical_base_F): UGV_01_base_F {
+        displayName = "UGV Stomper Medical";
+        picture = "\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UI\UGV_01_medical_CA.paa";
+        icon = "\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UI\map_UGV_01_medical_CA.paa";
+        attendant = 1;
+        class TransportItems {
+            class _xx_MediKit {
+                name = "MediKit";
+                count = 2;
+            };
+            class _xx_FirstAidKit {
+                name = "FirstAidKit";
+                count = 10;
+            };
+        };
+        class TextureSources: TextureSources {
+            class Indep: Indep {
+                textures[] = {"\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_ext_medevac_INDP_CO.paa", "\A3\Drones_F\Soft_F_Gamma\UGV_01\Data\UGV_01_int_INDP_CO.paa", "\A3\Soft_F_Orange\UGV_01\Data\Turret_IDAP_CO.paa"};
+            };
+            class Opfor: Opfor {
+                textures[] = {"\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_ext_medevac_OPFOR_CO.paa", "\A3\Drones_F\Soft_F_Gamma\UGV_01\Data\UGV_01_int_OPFOR_CO.paa", "\A3\Soft_F_Orange\UGV_01\Data\Turret_IDAP_CO.paa"};
+            };
+            class Blufor: Blufor {
+                textures[] = {"\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_ext_medevac_CO.paa", "\A3\Drones_F\Soft_F_Gamma\UGV_01\Data\UGV_01_int_CO.paa", "\A3\Soft_F_Orange\UGV_01\Data\Turret_IDAP_CO.paa"};
+            };
+            class GreenHex: GreenHex {
+                textures[] = {"\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_ext_medevac_ghex_CO.paa", "\A3\Soft_F_Exp\UGV_01\Data\UGV_01_int_ghex_CO.paa", "\A3\Soft_F_Orange\UGV_01\Data\Turret_IDAP_CO.paa"};
+            };
+            class Olive: Olive {
+                textures[] = {"\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_ext_medevac_olive_CO.paa", "\A3\Soft_F_Exp\UGV_01\Data\UGV_01_int_olive_CO.paa", "\A3\Soft_F_Orange\UGV_01\Data\Turret_IDAP_CO.paa"};
+            };
+            class EAF: EAF {
+                textures[] = {"\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_ext_medevac_EAF_CO.paa", "\A3\Soft_F_Enoch\UGV_01\Data\UGV_01_int_EAF_CO.paa", "\A3\Soft_F_Orange\UGV_01\Data\Turret_IDAP_CO.paa"};
+            };
+            class EAF_Arid {
+                displayName = "LDF (Arid)";
+                author = "Grave";
+                textures[] = {"\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_ext_EAF_Medevac_Arid_CO.paa", "\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_int_EAF_Arid_CO.paa", "\A3\Soft_F_Orange\UGV_01\Data\Turret_IDAP_CO.paa"};
+                factions[] = {};
+            };
+            class Green {
+                displayName = "Green";
+                author = "Avery Kaiserin";
+                textures[] = {"\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_ext_medevac_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_int_RUkhk_CO.paa", "\A3\Soft_F_Orange\UGV_01\Data\Turret_IDAP_CO.paa"};
+                factions[] = {};
+            };
+            class Ion {
+                displayName = "Black";
+                author = "Avery Kaiserin";
+                textures[] = {"\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_ext_medevac_ION_CO.paa", "\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_int_ION_CO.paa", "\A3\Soft_F_Orange\UGV_01\Data\Turret_IDAP_CO.paa"};
+                factions[] = {};
+            };
+            class Brown {
+                DisplayName = "Brown";
+                author = "Avery Kaiserin";
+                textures[] = {"\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_ext_medevac_brown_CO.paa", "\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_int_brown_CO.paa", "\A3\Soft_F_Orange\UGV_01\Data\Turret_IDAP_CO.paa"};
+                factions[] = {};
+            };
+            class WoodlandHex {
+                displayName = "Woodland Hex";
+                author = "Bran Flakes";
+                textures[] = {"\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_ext_medevac_WHEX_CO.paa", "\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_int_WHEX_CO.paa", "\A3\Soft_F_Orange\UGV_01\Data\Turret_IDAP_CO.paa"};
+                factions[] = {};
+            };
+        };
+    };
+    class B_Heli_Transport_03_F: Heli_Transport_03_base_F {
+        class Turrets: Turrets {
+            class CopilotTurret;
+            class MainTurret;
+            class RightDoorGun;
+        };
+    };
+    class B_Heli_Transport_03_unarmed_F: Heli_Transport_03_unarmed_base_F {
+        class Turrets: Turrets {
+            class CopilotTurret;
+        };
+    };
+    class LT_01_AA_base_F: LT_01_base_F {
+        class Turrets: Turrets {
+            class MainTurret;
+        };
+    };
+    class LT_01_AT_base_F: LT_01_base_F {
+        class Turrets: Turrets {
+            class MainTurret;
+        };
+    };
+    class LT_01_cannon_base_F: LT_01_base_F {
+        class Turrets: Turrets {
+            class MainTurret;
+        };
+    };
+    class O_Heli_Transport_04_F: Heli_Transport_04_base_F {
+        class Turrets: Turrets {
+            class CopilotTurret;
+            class LoadmasterTurret;
+        };
+    };
+    class O_Heli_Transport_04_ammo_F: Heli_Transport_04_base_F {
+        class Turrets: Turrets {
+            class CopilotTurret;
+            class LoadmasterTurret;
+        };
+    };
+    class O_Heli_Transport_04_bench_F: Heli_Transport_04_base_F {
+        class Turrets: Turrets {
+            class CopilotTurret;
+            class LoadmasterTurret;
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+            class CargoTurret_04;
+            class CargoTurret_05;
+            class CargoTurret_06;
+            class CargoTurret_07;
+            class CargoTurret_08;
+        };
+        class AnimationSources: AnimationSources {
+            class Bench_default_source;
+            class Bench_black_source;
+        };
+    };
+    class O_Heli_Transport_04_box_F: Heli_Transport_04_base_F {
+        class Turrets: Turrets {
+            class CopilotTurret;
+            class LoadmasterTurret;
+        };
+    };
+    class O_Heli_Transport_04_covered_F: Heli_Transport_04_base_F {
+        class Turrets: Turrets {
+            class CopilotTurret;
+            class LoadmasterTurret;
+            class CargoTurret_01;
+            class CargoTurret_02;
+        };
+    };
+    class O_Heli_Transport_04_fuel_F: Heli_Transport_04_base_F {
+        class Turrets: Turrets {
+            class CopilotTurret;
+            class LoadmasterTurret;
+        };
+    };
+    class O_Heli_Transport_04_medevac_F: Heli_Transport_04_base_F {
+        class Turrets: Turrets {
+            class CopilotTurret;
+            class LoadmasterTurret;
+        };
+    };
+    class O_Heli_Transport_04_repair_F: Heli_Transport_04_base_F {
+        class Turrets: Turrets {
+            class CopilotTurret;
+            class LoadmasterTurret;
+        };
+    };
+    class UGV_01_rcws_base_F: UGV_01_base_F {
+        class Turrets: Turrets {
+            class MainTurret;
+            class CargoTurret_01;
+        };
+    };
+    class UAV_02_dynamicLoadout_base_F: UAV_02_base_F {
+        class Components: Components {
+            class TransportPylonsComponent {
+                class pylons;
+            };
+        };
+    };
+    class GVAR(B_A_Heli_Transport_02_wdl_F): GVAR(Heli_Transport_02_Heavy_base_F) {
+        author = "Ravenholme";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_B_A_Heli_Transport_02_F.jpg";
+        displayName = "Merlin HC5";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Helipilot_F";
+        typicalCargo[] = {"B_crew_F"};
+        textureList[] = {"BAF", 1, "Grey", 0};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_01_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"};
+        availableForSupportTypes[] = {"Drop", "Transport"};
+        cost = 800000;
+        scope = 1;
+        scopeCurator = 0;
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellBlue {
+                magazine = "SmokeShellBlue";
+                count = 2;
+            };
+            class _xx_30Rnd_65x39_caseless_black_mag {
+                magazine = "30Rnd_65x39_caseless_black_mag";
+                count = 4;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_SA80_C_blk_F {
+                weapon = QEGVAR(weapons,arifle_SA80_C_blk_F);
+                count = 2;
+            };
+        };
+    };
+    class GVAR(B_D_Heli_Transport_03_F): B_Heli_Transport_03_F {
+        author = "Ravenholme";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_B_D_Heli_Transport_03_F.jpg";
+        forceInGarage = 0;
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Helipilot_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        textureList[] = {"Sand", 1};
+        hiddenSelectionsTextures[] = {"\lxWS\air_f_lxWS\Data\NATO\lxWS_Heli_Transport_03_ext01_sand_CO.paa", "\lxWS\air_f_lxWS\Data\NATO\lxWS_Heli_Transport_03_ext02_sand_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+                gunnerType = "B_Helipilot_F";
+            };
+            class MainTurret: MainTurret {
+                gunnerType = "B_crew_F";
+            };
+            class RightDoorGun: RightDoorGun {
+                gunnerType = "B_crew_F";
+            };
+        };
+    };
+    class GVAR(B_D_Heli_Transport_03_unarmed_F): B_Heli_Transport_03_unarmed_F {
+        author = "Ravenholme";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_B_D_Heli_Transport_03_unarmed_F.jpg";
+        forceInGarage = 0;
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Helipilot_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        textureList[] = {"Sand", 1};
+        hiddenSelectionsTextures[] = {"\lxWS\air_f_lxWS\Data\NATO\lxWS_Heli_Transport_03_ext01_sand_CO.paa", "\lxWS\air_f_lxWS\Data\NATO\lxWS_Heli_Transport_03_ext02_sand_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+                gunnerType = "B_Helipilot_F";
+            };
+        };
+    };
+    class GVAR(B_Heli_Attack_03_F): GVAR(Heli_Attack_03_base_F) {
+        author = "Avery Kaiserin";
+        displayName = "AH-64E Apache";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_B_Heli_Attack_03_F.jpg";
+        scope = 2;
+        scopeCurator = 2;
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_Helipilot_F";
+        typicalCargo[] = {"B_Helipilot_F"};
+        textureList[] = {"Green", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Attack_03\Data\Heli_Attack_03_body_green_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_03\Data\Heli_Attack_03_details_green_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_03\Data\Heli_Attack_03_adds_green_CO.paa"};
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                magazines[] = {QGVAR(1200Rnd_Gatling_30mm_Heli_Attack_03_F), "Laserbatteries"};
+            };
+        };
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellBlue {
+                magazine = "SmokeShellBlue";
+                count = 2;
+            };
+            class _xx_30Rnd_65x39_caseless_mag {
+                magazine = "30Rnd_65x39_caseless_mag";
+                count = 4;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_MXC_F {
+                weapon = "arifle_MXC_F";
+                count = 2;
+            };
+        };
+    };
+    class GVAR(B_A_Plane_Fighter_05_ard_F): GVAR(B_A_Plane_Fighter_05_F) {
+        faction = "ghost_blue";
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(B_G_LT_01_AA_F): LT_01_AA_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Atlas_B_G_LT_01_AA_F.jpg";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_crew_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        displayName = "AWC 302 Nyx (AA)";
+        editorSubcategory = "EdSubcat_AAs";
+        textureList[] = {"Indep_Olive", 1};
+        hiddenSelectionsTextures[] = {"\A3\Armor_F_Tank\LT_01\Data\LT_01_Main_olive_CO.paa", "\A3\Armor_F_Tank\LT_01\Data\LT_01_AT_olive_CO.paa", "\A3\Armor_F\Data\camonet_NATO_Green_CO.paa", "\A3\Armor_F\Data\cage_olive_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellBlue {
+                magazine = "SmokeShellBlue";
+                count = 2;
+            };
+            class _xx_30Rnd_65x39_caseless_msbs_mag {
+                magazine = "30Rnd_65x39_caseless_msbs_mag";
+                count = 4;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_G36C_F {
+                weapon = QEGVAR(weapons,arifle_G36C_F);
+                count = 2;
+            };
+        };
+        class TransportItems {
+            class _xx_FirstAidKit {
+                name = "FirstAidKit";
+                count = 10;
+            };
+            class _xx_Toolkit {
+                name = "Toolkit";
+                count = 1;
+            };
+            class _xx_Medikit {
+                name = "Medikit";
+                count = 1;
+            };
+        };
+        class TransportBackpacks {
+        };
+        class Damage {
+            tex[] = {};
+            mat[] = {"A3\Armor_F_Tank\LT_01\Data\LT_01_AT.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_AT_damage.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_AT_destruct.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_Main.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_Main_damage.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_Main_destruct.rvmat"};
+        };
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                magazines[] = {"100Rnd_127x99_mag_Tracer_Red", "100Rnd_127x99_mag_Tracer_Red", "4Rnd_70mm_SAAMI_missiles", "4Rnd_70mm_SAAMI_missiles", "SmokeLauncherMag"};
+            };
+        };
+    };
+    class GVAR(B_G_LT_01_AA_ard_F): GVAR(B_G_LT_01_AA_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Atlas_B_G_LT_01_AA_ard_F.jpg";
+        faction = "ghost_blue";
+        crew = "B_crew_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        textureList[] = {"Indep_Olive", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\armor\LT_01\Data\LT_01_Main_Sand_CO.paa", "\z\ghost\addons\vehicle\models\armor\LT_01\Data\LT_01_AT_Sand_CO.paa", "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa", "\A3\Armor_F\Data\cage_sand_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellBlue {
+                magazine = "SmokeShellBlue";
+                count = 2;
+            };
+            class _xx_30Rnd_65x39_caseless_msbs_mag {
+                magazine = "30Rnd_65x39_caseless_msbs_mag";
+                count = 4;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_G36C_Sand_F {
+                weapon = QEGVAR(weapons,arifle_G36C_Sand_F);
+                count = 2;
+            };
+        };
+        class TransportItems {
+            class _xx_FirstAidKit {
+                name = "FirstAidKit";
+                count = 10;
+            };
+            class _xx_Toolkit {
+                name = "Toolkit";
+                count = 1;
+            };
+            class _xx_Medikit {
+                name = "Medikit";
+                count = 1;
+            };
+        };
+        class TransportBackpacks {
+        };
+    };
+    class GVAR(B_G_LT_01_AT_F): LT_01_AT_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Atlas_B_G_LT_01_AT_F.jpg";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_crew_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        displayName = "AWC 301 Nyx (AT)";
+        textureList[] = {"Indep_Olive", 1};
+        hiddenSelectionsTextures[] = {"\A3\Armor_F_Tank\LT_01\Data\LT_01_Main_olive_CO.paa", "\A3\Armor_F_Tank\LT_01\Data\LT_01_AT_olive_CO.paa", "\A3\Armor_F\Data\camonet_NATO_Green_CO.paa", "\A3\Armor_F\Data\cage_olive_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellBlue {
+                magazine = "SmokeShellBlue";
+                count = 2;
+            };
+            class _xx_30Rnd_65x39_caseless_msbs_mag {
+                magazine = "30Rnd_65x39_caseless_msbs_mag";
+                count = 4;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_G36C_F {
+                weapon = QEGVAR(weapons,arifle_G36C_F);
+                count = 2;
+            };
+        };
+        class TransportItems {
+            class _xx_FirstAidKit {
+                name = "FirstAidKit";
+                count = 10;
+            };
+            class _xx_Toolkit {
+                name = "Toolkit";
+                count = 1;
+            };
+            class _xx_Medikit {
+                name = "Medikit";
+                count = 1;
+            };
+        };
+        class TransportBackpacks {
+        };
+        class Damage {
+            tex[] = {};
+            mat[] = {"A3\Armor_F_Tank\LT_01\Data\LT_01_AT.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_AT_damage.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_AT_destruct.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_Main.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_Main_damage.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_Main_destruct.rvmat"};
+        };
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                magazines[] = {"100Rnd_127x99_mag_Tracer_Red", "100Rnd_127x99_mag_Tracer_Red", "2Rnd_127mm_Firefist_missiles", "2Rnd_127mm_Firefist_missiles", "SmokeLauncherMag"};
+            };
+        };
+    };
+    class GVAR(B_G_LT_01_AT_ard_F): GVAR(B_G_LT_01_AT_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Atlas_B_G_LT_01_AT_ard_F.jpg";
+        faction = "ghost_blue";
+        crew = "B_crew_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        textureList[] = {"Sand", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\armor\LT_01\Data\LT_01_Main_Sand_CO.paa", "\z\ghost\addons\vehicle\models\armor\LT_01\Data\LT_01_AT_Sand_CO.paa", "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa", "\A3\Armor_F\Data\cage_sand_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellBlue {
+                magazine = "SmokeShellBlue";
+                count = 2;
+            };
+            class _xx_30Rnd_65x39_caseless_msbs_mag {
+                magazine = "30Rnd_65x39_caseless_msbs_mag";
+                count = 4;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_G36C_Sand_F {
+                weapon = QEGVAR(weapons,arifle_G36C_Sand_F);
+                count = 2;
+            };
+        };
+        class TransportItems {
+            class _xx_FirstAidKit {
+                name = "FirstAidKit";
+                count = 10;
+            };
+            class _xx_Toolkit {
+                name = "Toolkit";
+                count = 1;
+            };
+            class _xx_Medikit {
+                name = "Medikit";
+                count = 1;
+            };
+        };
+        class TransportBackpacks {
+        };
+    };
+    class GVAR(B_G_LT_01_cannon_F): LT_01_cannon_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Atlas_B_G_LT_01_cannon_F.jpg";
+        side = 1;
+        faction = "ghost_blue";
+        crew = "B_crew_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        displayName = "AWC 304 Nyx (Autocannon)";
+        textureList[] = {"Indep_Olive", 1};
+        hiddenSelectionsTextures[] = {"\A3\Armor_F_Tank\LT_01\Data\LT_01_Main_olive_CO.paa", "\A3\Armor_F_Tank\LT_01\Data\LT_01_Cannon_olive_CO.paa", "\A3\Armor_F\Data\camonet_NATO_Green_CO.paa", "\A3\Armor_F\Data\cage_olive_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellBlue {
+                magazine = "SmokeShellBlue";
+                count = 2;
+            };
+            class _xx_30Rnd_65x39_caseless_msbs_mag {
+                magazine = "30Rnd_65x39_caseless_msbs_mag";
+                count = 4;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_G36C_F {
+                weapon = QEGVAR(weapons,arifle_G36C_F);
+                count = 2;
+            };
+        };
+        class TransportItems {
+            class _xx_FirstAidKit {
+                name = "FirstAidKit";
+                count = 10;
+            };
+            class _xx_Toolkit {
+                name = "Toolkit";
+                count = 1;
+            };
+            class _xx_Medikit {
+                name = "Medikit";
+                count = 1;
+            };
+        };
+        class TransportBackpacks {
+        };
+        class Damage {
+            tex[] = {};
+            mat[] = {"A3\Armor_F_Tank\LT_01\Data\LT_01_Cannon.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_Cannon_damage.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_Cannon_destruct.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_Main.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_Main_damage.rvmat", "A3\Armor_F_Tank\LT_01\Data\LT_01_Main_destruct.rvmat"};
+        };
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                magazines[] = {"60Rnd_20mm_HE_shells", "60Rnd_20mm_HE_shells", "60Rnd_20mm_AP_shells", "60Rnd_20mm_AP_shells", QGVAR(250Rnd_762x51_Belt_Red), QGVAR(250Rnd_762x51_Belt_Red), QGVAR(250Rnd_762x51_Belt_Red), QGVAR(250Rnd_762x51_Belt_Red), "SmokeLauncherMag"};
+            };
+        };
+    };
+    class GVAR(B_G_LT_01_cannon_ard_F): GVAR(B_G_LT_01_cannon_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Atlas_B_G_LT_01_cannon_ard_F.jpg";
+        faction = "ghost_blue";
+        crew = "B_crew_F";
+        typicalCargo[] = {"B_Soldier_F"};
+        textureList[] = {"Sand", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\armor\LT_01\Data\LT_01_Main_Sand_CO.paa", "\z\ghost\addons\vehicle\models\armor\LT_01\Data\LT_01_Cannon_Sand_CO.paa", "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa", "\A3\Armor_F\Data\cage_sand_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellBlue {
+                magazine = "SmokeShellBlue";
+                count = 2;
+            };
+            class _xx_30Rnd_65x39_caseless_msbs_mag {
+                magazine = "30Rnd_65x39_caseless_msbs_mag";
+                count = 4;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_G36C_Sand_F {
+                weapon = QEGVAR(weapons,arifle_G36C_Sand_F);
+                count = 2;
+            };
+        };
+        class TransportItems {
+            class _xx_FirstAidKit {
+                name = "FirstAidKit";
+                count = 10;
+            };
+            class _xx_Toolkit {
+                name = "Toolkit";
+                count = 1;
+            };
+            class _xx_Medikit {
+                name = "Medikit";
+                count = 1;
+            };
+        };
+        class TransportBackpacks {
+        };
+    };
+    class GVAR(B_G_MBT_03_cannon_F): GVAR(B_G_MBT_03_base_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Atlas_B_G_MBT_03_cannon_F.jpg";
+        displayName = "Luchs 3A5";
+        textureList[] = {"Woodland_01", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\armor\MBT_03\Data\MBT_03_ext01_wdl_CO.paa", "\z\ghost\addons\vehicle\models\armor\MBT_03\Data\MBT_03_ext02_wdl_CO.paa", "\z\ghost\addons\vehicle\models\armor\MBT_03\Data\MBT_03_RCWS_wdl_CO.paa", "\A3\Armor_F\Data\camonet_NATO_Green_CO.paa"};
+        faction = "ghost_blue";
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"damagehide", 0}, {"wheel_koll1", 0.01}, {"wheel_kolol1", 0.01}, {"wheel_podkolol1", 0.5}, {"wheel_kolp1", 0.01}, {"wheel_kolop1", 0.01}, {"wheel_podkolop1", 0.51}, {"wheel_koll2", 0.01}, {"wheel_kolp2", 0.01}, {"wheel_kolol2", 0.01}, {"wheel_kolol3", 0.01}, {"wheel_kolol4", 0.01}, {"wheel_kolol5", 0.01}, {"wheel_kolol6", 0.01}, {"wheel_kolol7", 0.01}, {"wheel_kolop2", 0.01}, {"wheel_kolop3", 0.01}, {"wheel_kolop4", 0.01}, {"wheel_kolop5", 0.01}, {"wheel_kolop6", 0.01}, {"wheel_kolop7", 0.01}, {"wheel_podkolol2", 0.51}, {"wheel_podkolol3", 0.52}, {"wheel_podkolol4", 0.53}, {"wheel_podkolol5", 0.54}, {"wheel_podkolol6", 0.55}, {"wheel_podkolop2", 0.51}, {"wheel_podkolop3", 0.52}, {"wheel_podkolop4", 0.55}, {"wheel_podkolop5", 0.55}, {"wheel_podkolop6", 0.55}, {"podkolol1_hide_damage", 0}, {"podkolol2_hide_damage", 0}, {"podkolol3_hide_damage", 0}, {"podkolol4_hide_damage", 0}, {"podkolol5_hide_damage", 0}, {"podkolol6_hide_damage", 0}, {"podkolol7_hide_damage", 0}, {"podkolol8_hide_damage", 0}, {"podkolop1_hide_damage", 0}, {"podkolop2_hide_damage", 0}, {"podkolop3_hide_damage", 0}, {"podkolop4_hide_damage", 0}, {"podkolop5_hide_damage", 0}, {"podkolop6_hide_damage", 0}, {"podkolop7_hide_damage", 0}, {"podkolop8_hide_damage", 0}, {"damagevez", 0}, {"mainturret", 0}, {"maingun", 0.17}, {"recoil", 0}, {"obsturret", 0}, {"obsgun", 0}, {"maingunoptics", 0.17}, {"wheel_podkolop7", 0.56}, {"wheel_podkolol7", 0.56}, {"hatchdriver", 0}, {"hatchcommander", 0}, {"hatchgunner", 0}, {"damagevezvelitele", 0}, {"poklop_commander_damage", 0}, {"poklop_gunner_damage", 0}, {"poklop_driver_damage", 0}, {"zaslehrot_hmg", 816}, {"zaslehrot_coax", 1843.27}, {"cannon_muzzle_flash", 0}, {"zaslehrot_cannon", 828}, {"drivingwheel", 0}, {"indicatorvoltammeter", 0}, {"indicatortempoil", 0}, {"indicatortempwater", 0}, {"indicatorspeed_mfd_driver", 0}, {"indicatorrpm", 0}, {"indicatorrpm_mfd_driver", 0}, {"lights_driver", 0}, {"lights_driver_off", 0}, {"lights_turret", 0}, {"cannon_ready_light", 0}, {"engine_damage_indicator", 0}, {"main_gun_damage_indicator", 0}, {"pedal_thrust", 0}, {"pedal_brake", 1}, {"indicatortempwater_mfd_driver", 0}, {"indicatorfuel_mfd_driver", 1}, {"indicator_hull_direction_mfd_driver", 0}, {"indicator_main_turret_mfd_driver", 0}, {"indicator_com_turret_mfd_driver", 0}, {"indicator_com_turret_counter_mfd_driver", 0}, {"indicator_hull_direction_mfd_com", 0}, {"indicator_main_turret_onscreen_com", 0}, {"indicator_main_turret_mfd_com", 0}, {"indicator_com_turret_mfd_com", 0}, {"indicator_com_turret_onscreen_com", 0}, {"indicator_com_turret_counter_mfd_com", 0}, {"indicator_hull_direction_mfd_gunner", 0}, {"indicator_main_turret_mfd_gunner", 0}, {"indicator_com_turret_mfd_gunner", 0}, {"indicator_com_turret_counter_mfd_gunner", 0}, {"indicator_com_smoke_1", 1}, {"indicator_com_smoke_2", 1}, {"indicator_damage_engine", 0}, {"indicator_damage_fuel", 0}, {"indicator_damage_tracks", 0}, {"indicator_turret_damage_hull", 0}, {"indicator_turret_damage_engine", 0}, {"indicator_turret_damage_fuel", 0}, {"indicator_turret_damage_main_gun", 0}, {"indicator_turret_damage_track", 0}, {"indicator_turret_damage_turret", 0}, {"indicator_turret_damage_comturret", 0}, {"hide_mfd_and_pip_screen_driver", 1}, {"hide_mfd_and_pip_screen_gunner", 1}, {"hide_mfd_elements", 1}, {"turret_control_x", 0}, {"turret_control_y", 0}, {"com_turret_control_x", 0}, {"com_turret_control_y", 0}, {"slat_back_normal_hide", 0}, {"slat_back_damage_unhide", 0}, {"slat_back_damage_hide", 0}, {"slat_back_destroyed_unhide", 0}, {"slat_back_firegeo_hide", 0}, {"slat_right_normal_hide", 0}, {"slat_right_damage_unhide", 0}, {"slat_right_damage_hide", 0}, {"slat_right_destroyed_unhide", 0}, {"slat_right_firegeo_hide", 0}, {"slat_left_normal_hide", 0}, {"slat_left_damage_unhide", 0}, {"slat_left_damage_hide", 0}, {"slat_left_destroyed_unhide", 0}, {"slat_left_firegeo_hide", 0}, {"slat_left_plate_normal_hide", 0}, {"slat_left_plate_damage_unhide", 0}, {"slat_left_plate_damage_hide", 0}, {"slat_right_plate_normal_hide", 0}, {"slat_right_plate_damage_unhide", 0}, {"slat_right_plate_damage_hide", 0}, {"slat_back_plate_normal_hide", 0}, {"slat_back_plate_damage_unhide", 0}, {"slat_back_plate_damage_hide", 0}, {"slat_top_back_normal_hide", 0}, {"slat_top_back_damage_unhide", 0}, {"slat_top_back_damage_hide", 0}, {"slat_top_back_destroyed_unhide", 0}, {"slat_top_back_firegeo_hide", 0}, {"slat_top_right_normal_hide", 0}, {"slat_top_right_damage_unhide", 0}, {"slat_top_right_damage_hide", 0}, {"slat_top_right_destroyed_unhide", 0}, {"slat_top_right_firegeo_hide", 0}, {"slat_top_left_normal_hide", 0}, {"slat_top_left_damage_unhide", 0}, {"slat_top_left_damage_hide", 0}, {"slat_top_left_destroyed_unhide", 0}, {"slat_top_left_firegeo_hide", 0}, {"slat_top_left_plate_normal_hide", 0}, {"slat_top_left_plate_damage_unhide", 0}, {"slat_top_left_plate_damage_hide", 0}, {"slat_top_right_plate_normal_hide", 0}, {"slat_top_right_plate_damage_unhide", 0}, {"slat_top_right_plate_damage_hide", 0}, {"slat_top_back_plate_normal_hide", 0}, {"slat_top_back_plate_damage_unhide", 0}, {"slat_top_back_plate_damage_hide", 0}, {"com_pos_adjust_to_center", 0}};
+            hide[] = {"clan", "zasleh", "zasleh2", "light_l", "light_r", "zadni svetlo", "brzdove svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.558;
+            verticalOffsetWorld = -0.171;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+        class TransportMagazines {
+            class _xx_30Rnd_65x39_caseless_msbs_mag {
+                magazine = "30Rnd_65x39_caseless_msbs_mag";
+                count = 6;
+            };
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellBlue {
+                magazine = "SmokeShellBlue";
+                count = 2;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_G36C_F {
+                weapon = QEGVAR(weapons,arifle_G36C_F);
+                count = 2;
+            };
+        };
+        class TransportBackpacks {
+        };
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                magazines[] = {"20Rnd_120mm_APFSDS_shells_Tracer_Red", "12Rnd_120mm_HE_shells_Tracer_Red", "12Rnd_120mm_HEAT_MP_T_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "200Rnd_762x51_Belt_Red", "4Rnd_120mm_cannon_missiles"};
+                class Turrets: Turrets {
+                    class CommanderOptics: CommanderOptics {
+                        magazines[] = {"200Rnd_127x99_mag_Tracer_Red", "200Rnd_127x99_mag_Tracer_Red", "SmokeLauncherMag"};
+                    };
+                };
+            };
+        };
+    };
+    class GVAR(B_A_Plane_Transport_01_infantry_tna_F): GVAR(B_A_Plane_Transport_01_infantry_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_A_Plane_Transport_01_infantry_tna_F.jpg";
+        faction = "ghost_blue";
+        crew = "B_Pilot_F";
+        typicalCargo[] = {"B_Pilot_F"};
+        textureList[] = {"BAF_Grey", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_body_grey_baf_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_wings_grey_baf_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_interior_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_decals_baf_ca.paa"};
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(B_A_Plane_Transport_01_vehicle_tna_F): GVAR(B_A_Plane_Transport_01_vehicle_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_A_Plane_Transport_01_infantry_tna_F.jpg";
+        faction = "ghost_blue";
+        crew = "B_Pilot_F";
+        typicalCargo[] = {"B_Pilot_F"};
+        textureList[] = {"BAF_Grey", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_body_grey_baf_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_wings_grey_baf_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_interior_CO.paa", "\z\ghost\addons\vehicle\models\air\Plane_Transport_01\Data\Plane_Transport_01_decals_baf_ca.paa"};
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(O_R_APC_Tracked_02_medical_F): GVAR(APC_Tracked_02_medical_base_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_APC_Tracked_02_medical_F.jpg";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_crew_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        textureList[] = {"Green", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\armor\APC_Tracked_02\Data\APC_Tracked_02_ext_01_medevac_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Tracked_02\Data\APC_Tracked_02_ext_02_RUkhk_CO.paa", "", "", ""};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"damagehide", 0}, {"wheel_koll1", 0.01}, {"wheel_kolol1", 0.01}, {"wheel_podkolol1", 0.54}, {"wheel_kolp1", 0.01}, {"wheel_kolop1", 0.01}, {"wheel_podkolop1", 0.53}, {"wheel_koll2", 0.01}, {"wheel_kolp2", 0.01}, {"wheel_kolol2", 0.01}, {"wheel_kolol3", 0.01}, {"wheel_kolol4", 0.01}, {"wheel_kolol5", 0.01}, {"wheel_kolol6", 0.01}, {"wheel_kolop2", 0.01}, {"wheel_kolop3", 0.01}, {"wheel_kolop4", 0.01}, {"wheel_kolop5", 0.01}, {"wheel_kolop6", 0.01}, {"wheel_podkolol2", 0.54}, {"wheel_podkolol3", 0.55}, {"wheel_podkolol4", 0.55}, {"wheel_podkolol5", 0.56}, {"wheel_podkolol6", 0.56}, {"wheel_podkolop2", 0.54}, {"wheel_podkolop3", 0.56}, {"wheel_podkolop4", 0.56}, {"wheel_podkolop5", 0.56}, {"wheel_podkolop6", 0.56}, {"podkolol1_hide_damage", 0}, {"podkolol2_hide_damage", 0}, {"podkolol3_hide_damage", 0}, {"podkolol4_hide_damage", 0}, {"podkolol5_hide_damage", 0}, {"podkolol6_hide_damage", 0}, {"podkolol7_hide_damage", 0}, {"podkolol8_hide_damage", 0}, {"podkolop1_hide_damage", 0}, {"podkolop2_hide_damage", 0}, {"podkolop3_hide_damage", 0}, {"podkolop4_hide_damage", 0}, {"podkolop5_hide_damage", 0}, {"podkolop6_hide_damage", 0}, {"podkolop7_hide_damage", 0}, {"podkolop8_hide_damage", 0}, {"damagevez", 0}, {"mainturret", 0}, {"maingun", 0.02}, {"obsturret", 0}, {"obsgun", 0}, {"poklop_driver_damage", 0}, {"reverse_light", 0}, {"maingunoptics", 0.02}, {"launcher_hatch_1_rot", 0}, {"launcher_hatch_1_translate_1", 0}, {"launcher_hatch_1_translate_2", 0}, {"launcher_hatch_2_rot", 0}, {"launcher_hatch_2_translate_1", 0}, {"launcher_hatch_2_translate_2", 0}, {"drivingstickl", 0}, {"drivingstickr", 0}, {"indicatorvoltammeter", 0}, {"indicatortempoil", 0}, {"indicatortempwater", 0}, {"indicatorspeed_mfd_driver", 0}, {"indicatorrpm", 0}, {"indicatorrpm_mfd_driver", 0}, {"lights_driver", 0}, {"lights_driver_off", 0}, {"lights_turret", 0}, {"cannon_ready_light", 0}, {"engine_damage_indicator", 0}, {"main_gun_damage_indicator", 0}, {"pedal_thrust", 0}, {"pedal_brake", 1}, {"driver_reverse_cam", 0}, {"driver_hide_mfd", 0}, {"indicatortempwater_mfd_driver", 0}, {"indicatorfuel_mfd_driver", 1}, {"indicator_hull_direction_mfd_driver", 0}, {"indicator_main_turret_mfd_driver", 0}, {"indicator_com_turret_mfd_driver", 0}, {"indicator_com_turret_counter_mfd_driver", 0}, {"indicator_hull_direction_mfd_com", 0}, {"indicator_main_turret_onscreen_com", 0}, {"indicator_com_turret_mfd_com", 0}, {"indicator_com_turret_counter_mfd_com", 0}, {"indicator_hull_direction_mfd_gunner", 0}, {"indicator_main_turret_mfd_gunner", 0}, {"indicator_com_turret_mfd_gunner", 0}, {"indicator_com_turret_counter_mfd_gunner", 0}, {"indicator_com_smoke_1", 1}, {"indicator_com_smoke_2", 1}, {"mainturret_indicator3", 0}, {"comturret_indicator3", 0}, {"comturret_indicator_counter3", 0}, {"indicator_damage_engine", 0}, {"indicator_damage_fuel", 0}, {"indicator_damage_tracks", 0}, {"indicator_turret_damage_hull", 0}, {"indicator_turret_damage_engine", 0}, {"indicator_turret_damage_fuel", 0}, {"indicator_turret_damage_main_gun", 0}, {"indicator_turret_damage_tracks", 0}, {"indicator_turret_damage_turret", 0}, {"indicator_turret_damage_com_turret", 0}, {"hide_mfd_and_pip_screen_driver", 1}, {"hide_mfd_and_pip_screen_gunner", 1}, {"hide_mfd_elements", 1}, {"slat_front_normal_hide", 0}, {"slat_front_damage_unhide", 0}, {"slat_front_damage_hide", 0}, {"slat_front_destroyed_unhide", 0}, {"slat_front_firegeo_hide", 0}, {"slat_back_normal_hide", 0}, {"slat_back_damage_unhide", 0}, {"slat_back_damage_hide", 0}, {"slat_back_destroyed_unhide", 0}, {"slat_back_firegeo_hide", 0}, {"slat_left_1_normal_hide", 0}, {"slat_left_1_damage_unhide", 0}, {"slat_left_1_damage_hide", 0}, {"slat_left_1_destroyed_unhide", 0}, {"slat_left_1_firegeo_hide", 0}, {"slat_left_2_normal_hide", 0}, {"slat_left_2_damage_unhide", 0}, {"slat_left_2_damage_hide", 0}, {"slat_left_2_destroyed_unhide", 0}, {"slat_left_2_firegeo_hide", 0}, {"slat_left_3_normal_hide", 0}, {"slat_left_3_damage_unhide", 0}, {"slat_left_3_damage_hide", 0}, {"slat_left_3_destroyed_unhide", 0}, {"slat_left_3_firegeo_hide", 0}, {"slat_right_1_normal_hide", 0}, {"slat_right_1_damage_unhide", 0}, {"slat_right_1_damage_hide", 0}, {"slat_right_1_destroyed_unhide", 0}, {"slat_right_1_firegeo_hide", 0}, {"slat_right_2_normal_hide", 0}, {"slat_right_2_damage_unhide", 0}, {"slat_right_2_damage_hide", 0}, {"slat_right_2_destroyed_unhide", 0}, {"slat_right_2_firegeo_hide", 0}, {"slat_right_3_normal_hide", 0}, {"slat_right_3_damage_unhide", 0}, {"slat_right_3_damage_hide", 0}, {"slat_right_3_destroyed_unhide", 0}, {"slat_right_3_firegeo_hide", 0}, {"zasleh_rot", 517}, {"zasleh2_rot", 4231.52}, {"zasleh_hide", 0}, {"hidetitan_1", 1}, {"hidetitan_2", 1}, {"reloadtitan_1", 0}, {"reloadtitan_2", 0}, {"missile_move_1", 1}, {"missile_move_2", 0}, {"turret_control_x", 0}, {"turret_control_y", 0}, {"com_turret_control_x", 0}, {"com_turret_control_y", 0}, {"hatchcommander", 0}, {"hatchgunner", 0}};
+            hide[] = {"clan", "zasleh2", "zasleh_1", "light_l", "light_r", "zadni svetlo", "brzdove svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.395;
+            verticalOffsetWorld = -0.178;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+        class TransportBackpacks {
+            class _xx_B_FieldPack_taiga_F {
+                backpack = "B_FieldPack_taiga_F";
+                count = 2;
+            };
+        };
+    };
+    class GVAR(O_R_APC_Tracked_02_medical_ard_F): GVAR(O_R_APC_Tracked_02_medical_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_APC_Tracked_02_medical_ard_F.jpg";
+        faction = "ghost_red";
+        crew = "O_crew_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"damagehide", 0}, {"wheel_koll1", 0.01}, {"wheel_kolol1", 0.01}, {"wheel_podkolol1", 0.54}, {"wheel_kolp1", 0.01}, {"wheel_kolop1", 0.01}, {"wheel_podkolop1", 0.53}, {"wheel_koll2", 0.01}, {"wheel_kolp2", 0.01}, {"wheel_kolol2", 0.01}, {"wheel_kolol3", 0.01}, {"wheel_kolol4", 0.01}, {"wheel_kolol5", 0.01}, {"wheel_kolol6", 0.01}, {"wheel_kolop2", 0.01}, {"wheel_kolop3", 0.01}, {"wheel_kolop4", 0.01}, {"wheel_kolop5", 0.01}, {"wheel_kolop6", 0.01}, {"wheel_podkolol2", 0.54}, {"wheel_podkolol3", 0.55}, {"wheel_podkolol4", 0.55}, {"wheel_podkolol5", 0.56}, {"wheel_podkolol6", 0.56}, {"wheel_podkolop2", 0.54}, {"wheel_podkolop3", 0.56}, {"wheel_podkolop4", 0.56}, {"wheel_podkolop5", 0.56}, {"wheel_podkolop6", 0.56}, {"podkolol1_hide_damage", 0}, {"podkolol2_hide_damage", 0}, {"podkolol3_hide_damage", 0}, {"podkolol4_hide_damage", 0}, {"podkolol5_hide_damage", 0}, {"podkolol6_hide_damage", 0}, {"podkolol7_hide_damage", 0}, {"podkolol8_hide_damage", 0}, {"podkolop1_hide_damage", 0}, {"podkolop2_hide_damage", 0}, {"podkolop3_hide_damage", 0}, {"podkolop4_hide_damage", 0}, {"podkolop5_hide_damage", 0}, {"podkolop6_hide_damage", 0}, {"podkolop7_hide_damage", 0}, {"podkolop8_hide_damage", 0}, {"damagevez", 0}, {"mainturret", 0}, {"maingun", 0.02}, {"obsturret", 0}, {"obsgun", 0}, {"poklop_driver_damage", 0}, {"reverse_light", 0}, {"maingunoptics", 0.02}, {"launcher_hatch_1_rot", 0}, {"launcher_hatch_1_translate_1", 0}, {"launcher_hatch_1_translate_2", 0}, {"launcher_hatch_2_rot", 0}, {"launcher_hatch_2_translate_1", 0}, {"launcher_hatch_2_translate_2", 0}, {"drivingstickl", 0}, {"drivingstickr", 0}, {"indicatorvoltammeter", 0}, {"indicatortempoil", 0}, {"indicatortempwater", 0}, {"indicatorspeed_mfd_driver", 0}, {"indicatorrpm", 0}, {"indicatorrpm_mfd_driver", 0}, {"lights_driver", 0}, {"lights_driver_off", 0}, {"lights_turret", 0}, {"cannon_ready_light", 0}, {"engine_damage_indicator", 0}, {"main_gun_damage_indicator", 0}, {"pedal_thrust", 0}, {"pedal_brake", 1}, {"driver_reverse_cam", 0}, {"driver_hide_mfd", 0}, {"indicatortempwater_mfd_driver", 0}, {"indicatorfuel_mfd_driver", 1}, {"indicator_hull_direction_mfd_driver", 0}, {"indicator_main_turret_mfd_driver", 0}, {"indicator_com_turret_mfd_driver", 0}, {"indicator_com_turret_counter_mfd_driver", 0}, {"indicator_hull_direction_mfd_com", 0}, {"indicator_main_turret_onscreen_com", 0}, {"indicator_com_turret_mfd_com", 0}, {"indicator_com_turret_counter_mfd_com", 0}, {"indicator_hull_direction_mfd_gunner", 0}, {"indicator_main_turret_mfd_gunner", 0}, {"indicator_com_turret_mfd_gunner", 0}, {"indicator_com_turret_counter_mfd_gunner", 0}, {"indicator_com_smoke_1", 1}, {"indicator_com_smoke_2", 1}, {"mainturret_indicator3", 0}, {"comturret_indicator3", 0}, {"comturret_indicator_counter3", 0}, {"indicator_damage_engine", 0}, {"indicator_damage_fuel", 0}, {"indicator_damage_tracks", 0}, {"indicator_turret_damage_hull", 0}, {"indicator_turret_damage_engine", 0}, {"indicator_turret_damage_fuel", 0}, {"indicator_turret_damage_main_gun", 0}, {"indicator_turret_damage_tracks", 0}, {"indicator_turret_damage_turret", 0}, {"indicator_turret_damage_com_turret", 0}, {"hide_mfd_and_pip_screen_driver", 1}, {"hide_mfd_and_pip_screen_gunner", 1}, {"hide_mfd_elements", 1}, {"slat_front_normal_hide", 0}, {"slat_front_damage_unhide", 0}, {"slat_front_damage_hide", 0}, {"slat_front_destroyed_unhide", 0}, {"slat_front_firegeo_hide", 0}, {"slat_back_normal_hide", 0}, {"slat_back_damage_unhide", 0}, {"slat_back_damage_hide", 0}, {"slat_back_destroyed_unhide", 0}, {"slat_back_firegeo_hide", 0}, {"slat_left_1_normal_hide", 0}, {"slat_left_1_damage_unhide", 0}, {"slat_left_1_damage_hide", 0}, {"slat_left_1_destroyed_unhide", 0}, {"slat_left_1_firegeo_hide", 0}, {"slat_left_2_normal_hide", 0}, {"slat_left_2_damage_unhide", 0}, {"slat_left_2_damage_hide", 0}, {"slat_left_2_destroyed_unhide", 0}, {"slat_left_2_firegeo_hide", 0}, {"slat_left_3_normal_hide", 0}, {"slat_left_3_damage_unhide", 0}, {"slat_left_3_damage_hide", 0}, {"slat_left_3_destroyed_unhide", 0}, {"slat_left_3_firegeo_hide", 0}, {"slat_right_1_normal_hide", 0}, {"slat_right_1_damage_unhide", 0}, {"slat_right_1_damage_hide", 0}, {"slat_right_1_destroyed_unhide", 0}, {"slat_right_1_firegeo_hide", 0}, {"slat_right_2_normal_hide", 0}, {"slat_right_2_damage_unhide", 0}, {"slat_right_2_damage_hide", 0}, {"slat_right_2_destroyed_unhide", 0}, {"slat_right_2_firegeo_hide", 0}, {"slat_right_3_normal_hide", 0}, {"slat_right_3_damage_unhide", 0}, {"slat_right_3_damage_hide", 0}, {"slat_right_3_destroyed_unhide", 0}, {"slat_right_3_firegeo_hide", 0}, {"zasleh_rot", 517}, {"zasleh2_rot", 4231.52}, {"zasleh_hide", 0}, {"hidetitan_1", 1}, {"hidetitan_2", 1}, {"reloadtitan_1", 0}, {"reloadtitan_2", 0}, {"missile_move_1", 1}, {"missile_move_2", 0}, {"turret_control_x", 0}, {"turret_control_y", 0}, {"com_turret_control_x", 0}, {"com_turret_control_y", 0}, {"hatchcommander", 0}, {"hatchgunner", 0}};
+            hide[] = {"clan", "zasleh2", "zasleh_1", "light_l", "light_r", "zadni svetlo", "brzdove svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.395;
+            verticalOffsetWorld = -0.178;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+        class TransportBackpacks {
+            class _xx_B_FieldPack_green_F {
+                backpack = "B_FieldPack_green_F";
+                count = 2;
+            };
+        };
+    };
+    class GVAR(O_R_APC_Wheeled_04_cannon_v2_F): GVAR(APC_Wheeled_04_base_v2_F) {
+        author = "Avery Kaiserin and Lakarak";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_APC_Wheeled_04_cannon_v2_F.jpg";
+        scope = 2;
+        scopeCurator = 2;
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_crew_F";
+        typicalCargo[] = {"O_crew_F"};
+        textureList[] = {"Green", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_sprut_body_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body2_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\apc_wheeled_04_sprut_turret_co.paa", "\z\ghost\addons\vehicle\models\armor\Data\camonet_RUS_green_CO.paa", "\z\ghost\addons\vehicle\models\armor\Data\cage_RUkhk_CO.paa"};
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"damagehide", 0}, {"damagehidevez", 0}, {"damagehidehlaven", 0}, {"wheel_1_1_destruct", 0}, {"wheel_1_2_destruct", 0}, {"wheel_1_3_destruct", 0}, {"wheel_1_4_destruct", 0}, {"wheel_2_1_destruct", 0}, {"wheel_2_2_destruct", 0}, {"wheel_2_3_destruct", 0}, {"wheel_2_4_destruct", 0}, {"wheel_1_1_destruct_unhide", 0}, {"wheel_1_2_destruct_unhide", 0}, {"wheel_1_3_destruct_unhide", 0}, {"wheel_1_4_destruct_unhide", 0}, {"wheel_2_1_destruct_unhide", 0}, {"wheel_2_2_destruct_unhide", 0}, {"wheel_2_3_destruct_unhide", 0}, {"wheel_2_4_destruct_unhide", 0}, {"wheel_1_1", 0}, {"wheel_2_1", 0}, {"wheel_1_2", 0}, {"wheel_1_3", 0}, {"wheel_2_2", 0}, {"wheel_2_3", 0}, {"wheel_1_4", 0}, {"wheel_2_4", 0}, {"daylights", 0}, {"wheel_1_1_damage", 0}, {"wheel_1_2_damage", 0}, {"wheel_1_3_damage", 0}, {"wheel_1_4_damage", 0}, {"wheel_2_1_damage", 0}, {"wheel_2_2_damage", 0}, {"wheel_2_3_damage", 0}, {"wheel_2_4_damage", 0}, {"wheel_1_1_damper_damage_backanim", 0}, {"wheel_1_2_damper_damage_backanim", 0}, {"wheel_1_3_damper_damage_backanim", 0}, {"wheel_1_4_damper_damage_backanim", 0}, {"wheel_2_1_damper_damage_backanim", 0}, {"wheel_2_2_damper_damage_backanim", 0}, {"wheel_2_3_damper_damage_backanim", 0}, {"wheel_2_4_damper_damage_backanim", 0}, {"wheel_1_1_damper", 0.48}, {"wheel_2_1_damper", 0.48}, {"wheel_1_2_damper", 0.5}, {"wheel_1_3_damper", 0.52}, {"wheel_2_2_damper", 0.49}, {"wheel_2_3_damper", 0.52}, {"wheel_1_4_damper", 0.53}, {"wheel_2_4_damper", 0.53}, {"steering_1_1", 0}, {"steering_2_1", 0}, {"steering_1_2", 0}, {"steering_2_2", 0}, {"hatchdriver", 0}, {"mainturret", 0}, {"turretbase", 0}, {"maingun", 0}, {"obsturret", 0}, {"obsgun", 0}, {"damagehlaven", 0}, {"damagecamonet", 0}, {"vrtulea", 0}, {"vrtuleb", 0}, {"poklop_gunner", 0}, {"poklop_commander", 0}, {"zasleh_rot", 307}, {"zasleh2_rot", 589.52}, {"zasleh_hide", 0}, {"reverse_light", 0}, {"drivingwheel", 0}, {"indicatortempoil", 0}, {"indicatortempwater", 0}, {"indicatorammeter", 0}, {"indicatorammeter_turret", 0}, {"indicatorspeed_mfd_driver", 0}, {"indicatorrpm", 0}, {"indicatorrpm_mfd_driver", 0}, {"lights_driver", 0}, {"lights_driver_off", 0}, {"lights_turret", 0}, {"lights_turret_off", 0}, {"cannon_ready_light", 1}, {"engine_damage_indicator", 0}, {"main_gun_damage_indicator", 0}, {"pedal_thrust", 0}, {"pedal_brake", 1}, {"turret_control_x", 0}, {"turret_control_y", 0}, {"com_turret_control_x", 0}, {"com_turret_control_y", 0}, {"driver_reverse_cam", 0}, {"driver_reverse_cam_nopip", 0}, {"driver_hide_mfd", 0}, {"indicatortempwater_mfd_driver", 0}, {"indicatorfuel_mfd_driver", 1}, {"indicator_hull_direction_mfd_driver", 0}, {"indicator_main_turret_mfd_driver", 0}, {"indicator_com_turret_mfd_driver", 0}, {"indicator_com_turret_counter_mfd_driver", 0}, {"indicator_main_turret_mfd_com", 0}, {"indicator_main_turret_onscreen_com", 0}, {"indicator_com_turret_mfd_com", 0}, {"indicator_com_turret_onscreen_com", 0}, {"indicator_com_turret_counter_mfd_com", 0}, {"indicator_hull_direction_mfd_gunner", 0}, {"indicator_main_turret_mfd_gunner", 0}, {"indicator_com_turret_mfd_gunner", 0}, {"indicator_com_turret_counter_mfd_gunner", 0}, {"indicator_damage_engine", 0}, {"indicator_damage_fuel", 0}, {"indicator_damage_wheels", 0}, {"indicator_turret_damage_hull", 0}, {"indicator_turret_damage_engine", 0}, {"indicator_turret_damage_fuel", 0}, {"indicator_turret_damage_main_gun", 0}, {"indicator_turret_damage_wheels", 0}, {"indicator_turret_damage_turret", 0}, {"hide_mfd_and_pip_screen_driver", 1}, {"hide_mfd_and_pip_screen_gunner", 1}, {"hide_mfd_elements", 1}, {"showbags_damage", 0}, {"slat_front_normal_hide", 0}, {"slat_front_damage_unhide", 0}, {"slat_front_damage_hide", 0}, {"slat_front_destroyed_unhide", 0}, {"slat_front_firegeo_hide", 0}, {"slat_back_normal_hide", 0}, {"slat_back_damage_unhide", 0}, {"slat_back_damage_hide", 0}, {"slat_back_destroyed_unhide", 0}, {"slat_back_firegeo_hide", 0}, {"slat_left_1_normal_hide", 0}, {"slat_left_1_damage_unhide", 0}, {"slat_left_1_damage_hide", 0}, {"slat_left_1_destroyed_unhide", 0}, {"slat_left_1_firegeo_hide", 0}, {"slat_left_2_normal_hide", 0}, {"slat_left_2_damage_unhide", 0}, {"slat_left_2_damage_hide", 0}, {"slat_left_2_destroyed_unhide", 0}, {"slat_left_2_firegeo_hide", 0}, {"slat_left_3_normal_hide", 0}, {"slat_left_3_damage_unhide", 0}, {"slat_left_3_damage_hide", 0}, {"slat_left_3_destroyed_unhide", 0}, {"slat_left_3_firegeo_hide", 0}, {"slat_right_1_normal_hide", 0}, {"slat_right_1_damage_unhide", 0}, {"slat_right_1_damage_hide", 0}, {"slat_right_1_destroyed_unhide", 0}, {"slat_right_1_firegeo_hide", 0}, {"slat_right_2_normal_hide", 0}, {"slat_right_2_damage_unhide", 0}, {"slat_right_2_damage_hide", 0}, {"slat_right_2_destroyed_unhide", 0}, {"slat_right_2_firegeo_hide", 0}, {"slat_right_3_normal_hide", 0}, {"slat_right_3_damage_unhide", 0}, {"slat_right_3_damage_hide", 0}, {"slat_right_3_destroyed_unhide", 0}, {"slat_right_3_firegeo_hide", 0}, {"slat_top_back_normal_hide", 0}, {"slat_top_back_damage_unhide", 0}, {"slat_top_back_damage_hide", 0}, {"slat_top_back_destroyed_unhide", 0}, {"slat_top_back_firegeo_hide", 0}, {"slat_top_right_normal_hide", 0}, {"slat_top_right_damage_unhide", 0}, {"slat_top_right_damage_hide", 0}, {"slat_top_right_destroyed_unhide", 0}, {"slat_top_right_firegeo_hide", 0}, {"slat_top_left_normal_hide", 0}, {"slat_top_left_damage_unhide", 0}, {"slat_top_left_damage_hide", 0}, {"slat_top_left_destroyed_unhide", 0}, {"slat_top_left_firegeo_hide", 0}, {"hideMissile_1", 0}, {"hideMissile_2", 0}, {"hideMissile_3", 0}, {"hideMissile_4", 0}};
+            hide[] = {"clan", "zasleh2", "zasleh", "light_l", "light_r", "zadni svetlo", "brzdove svetlo", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.448;
+            verticalOffsetWorld = -0.091;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+    };
+    class GVAR(O_R_APC_Wheeled_04_cannon_v2_ard_F): GVAR(O_R_APC_Wheeled_04_cannon_v2_F) {
+        author = "Avery Kaiserin and Lakarak";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_APC_Wheeled_04_cannon_v2_F.jpg";
+        faction = "ghost_red";
+        crew = "O_crew_F";
+        typicalCargo[] = {"O_crew_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class TransportBackpacks {
+            class _xx_B_FieldPack_green_F {
+                backpack = "B_FieldPack_green_F";
+                count = 2;
+            };
+        };
+    };
+    class GVAR(O_R_Heli_Transport_04_F): O_Heli_Transport_04_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Heli_Transport_04_F.jpg";
+        displayName = "Mi-290 Tuskar";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_helipilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        textureList[] = {"Russian2", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_RUS_01_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_RUS_02_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rotor_1_bend_move", 0}, {"rotor_2_bend_move", 0}, {"rotor_1_destruct_hide", 0}, {"rotor_2_destruct_hide", 0}, {"gear_1_damper_move", -0.33}, {"gear_1_stabil_1_rot", -0.33}, {"gear_1_stabil_2_rot", -0.33}, {"gear_2_damper_move", -0.33}, {"gear_2_stabil_1_rot", -0.33}, {"gear_2_stabil_2_rot", -0.33}, {"gear_3_damper_move", -0.33}, {"gear_3_stabil_1_rot", -0.33}, {"gear_3_stabil_2_rot", -0.33}, {"door_1_rot", 0}, {"door_1_handle_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot", 0}, {"display_off_hide", 0}, {"display_1_agl_rot_1", -0.33}, {"display_1_agl_rot_2", -0.33}, {"display_1_agl_rot_3", -0.33}, {"display_1_asl_10_rot", 7.83}, {"display_1_asl_100_rot", 7.83}, {"display_1_battery_1_rot", 1}, {"display_1_battery_2_rot", 1}, {"display_1_collective_move", 0}, {"display_1_compass_rot", 0}, {"display_1_enginetemp_1_rot", 0}, {"display_1_enginetemp_2_rot", 0}, {"display_1_fuel_rot", 1}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_dive_move", 0}, {"display_1_oil_rot", 1}, {"display_1_rpm_rot", 0}, {"display_1_speed_rot_1", 0}, {"display_1_speed_rot_2", 0}, {"display_1_torque_rot_1", 0}, {"display_1_torque_rot_2", 0}, {"display_1_verticalspeed_slider_move", 0}, {"display_1_verticalspeed_rot_1", 0}, {"display_1_verticalspeed_rot_2", 0}, {"display_1_verticalspeed_rot_3", 0}, {"display_2_agl_rot_1", -0.33}, {"display_2_agl_rot_2", -0.33}, {"display_2_agl_rot_3", -0.33}, {"display_2_asl_10_rot", 7.83}, {"display_2_asl_100_rot", 7.83}, {"display_2_battery_1_rot", 1}, {"display_2_battery_2_rot", 1}, {"display_2_collective_move", 0}, {"display_2_compass_rot", 0}, {"display_2_enginetemp_1_rot", 0}, {"display_2_enginetemp_2_rot", 0}, {"display_2_fuel_rot", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_dive_move", 0}, {"display_2_oil_rot", 1}, {"display_2_rpm_rot", 0}, {"display_2_speed_rot_1", 0}, {"display_2_speed_rot_2", 0}, {"display_2_torque_rot_1", 0}, {"display_2_torque_rot_2", 0}, {"display_2_verticalspeed_slider_move", 0}, {"display_2_verticalspeed_rot_1", 0}, {"display_2_verticalspeed_rot_2", 0}, {"display_2_verticalspeed_rot_3", 0}, {"indicator_agl_rot_1", -0.33}, {"indicator_agl_rot_2", -0.33}, {"indicator_agl_rot_3", -0.33}, {"indicator_horizon_bank_rot", 0}, {"indicator_horizon_dive_rot", 0}, {"indicator_speed_rot_1", 0}, {"indicator_speed_rot_2", 0}, {"indicator_verticalspeed_rot_1", 0}, {"indicator_verticalspeed_rot_2", 0}, {"indicator_verticalspeed_rot_3", 0}, {"display_agl_0xxx_hide", -0.33}, {"display_agl_1xxx_hide", -0.33}, {"display_agl_2xxx_hide", -0.33}, {"display_agl_3xxx_hide", -0.33}, {"display_agl_4xxx_hide", -0.33}, {"display_agl_5xxx_hide", -0.33}, {"display_agl_6xxx_hide", -0.33}, {"display_agl_7xxx_hide", -0.33}, {"display_agl_8xxx_hide", -0.33}, {"display_agl_9xxx_hide", -0.33}, {"display_agl_x0xx_hide", -0.33}, {"display_agl_x1xx_hide", -0.33}, {"display_agl_x2xx_hide", -0.33}, {"display_agl_x3xx_hide", -0.33}, {"display_agl_x4xx_hide", -0.33}, {"display_agl_x5xx_hide", -0.33}, {"display_agl_x6xx_hide", -0.33}, {"display_agl_x7xx_hide", -0.33}, {"display_agl_x8xx_hide", -0.33}, {"display_agl_x9xx_hide", -0.33}, {"display_agl_xx0x_hide", -0.33}, {"display_agl_xx1x_hide", -0.33}, {"display_agl_xx2x_hide", -0.33}, {"display_agl_xx3x_hide", -0.33}, {"display_agl_xx4x_hide", -0.33}, {"display_agl_xx5x_hide", -0.33}, {"display_agl_xx6x_hide", -0.33}, {"display_agl_xx7x_hide", -0.33}, {"display_agl_xx8x_hide", -0.33}, {"display_agl_xx9x_hide", -0.33}, {"display_agl_xxx0_hide", -0.33}, {"display_agl_xxx1_hide", -0.33}, {"display_agl_xxx2_hide", -0.33}, {"display_agl_xxx3_hide", -0.33}, {"display_agl_xxx4_hide", -0.33}, {"display_agl_xxx5_hide", -0.33}, {"display_agl_xxx6_hide", -0.33}, {"display_agl_xxx7_hide", -0.33}, {"display_agl_xxx8_hide", -0.33}, {"display_agl_xxx9_hide", -0.33}, {"display_speed_0xx_hide", 0}, {"display_speed_1xx_hide", 0}, {"display_speed_2xx_hide", 0}, {"display_speed_3xx_hide", 0}, {"display_speed_4xx_hide", 0}, {"display_speed_5xx_hide", 0}, {"display_speed_6xx_hide", 0}, {"display_speed_7xx_hide", 0}, {"display_speed_8xx_hide", 0}, {"display_speed_9xx_hide", 0}, {"display_speed_x0x_hide", 0}, {"display_speed_x1x_hide", 0}, {"display_speed_x2x_hide", 0}, {"display_speed_x3x_hide", 0}, {"display_speed_x4x_hide", 0}, {"display_speed_x5x_hide", 0}, {"display_speed_x6x_hide", 0}, {"display_speed_x7x_hide", 0}, {"display_speed_x8x_hide", 0}, {"display_speed_x9x_hide", 0}, {"display_speed_xx0_hide", 0}, {"display_speed_xx1_hide", 0}, {"display_speed_xx2_hide", 0}, {"display_speed_xx3_hide", 0}, {"display_speed_xx4_hide", 0}, {"display_speed_xx5_hide", 0}, {"display_speed_xx6_hide", 0}, {"display_speed_xx7_hide", 0}, {"display_speed_xx8_hide", 0}, {"display_speed_xx9_hide", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"stick_collective_1_rot", 0}, {"stick_collective_2_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"optics_1_rot", 0}, {"optics_1_muzzle_rot", 0}, {"positionlights", 0}, {"collisionlight_red_blinking", 0}, {"winch_hide", 0}};
+            hide[] = {"zasleh", "light_1_hide", "rotor_1_blur", "rotor_2_blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.828;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+            };
+            class LoadmasterTurret: LoadmasterTurret {
+                gunnerType = "O_crew_F";
+            };
+        };
+    };
+    class GVAR(O_R_Heli_Transport_04_ammo_F): O_Heli_Transport_04_ammo_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Heli_Transport_04_ammo_F.jpg";
+        displayName = "Mi-290 Tuskar (Ammo)";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_helipilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        textureList[] = {"Russian2", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_RUS_02_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_RUS2_02_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_RUS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_RUS_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rotor_1_bend_move", 0}, {"rotor_2_bend_move", 0}, {"rotor_1_destruct_hide", 0}, {"rotor_2_destruct_hide", 0}, {"gear_1_damper_move", -0.33}, {"gear_1_stabil_1_rot", -0.33}, {"gear_1_stabil_2_rot", -0.33}, {"gear_2_damper_move", -0.33}, {"gear_2_stabil_1_rot", -0.33}, {"gear_2_stabil_2_rot", -0.33}, {"gear_3_damper_move", -0.33}, {"gear_3_stabil_1_rot", -0.33}, {"gear_3_stabil_2_rot", -0.33}, {"door_1_rot", 0}, {"door_1_handle_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot", 0}, {"display_off_hide", 0}, {"display_1_agl_rot_1", -0.33}, {"display_1_agl_rot_2", -0.33}, {"display_1_agl_rot_3", -0.33}, {"display_1_asl_10_rot", 7.59}, {"display_1_asl_100_rot", 7.59}, {"display_1_battery_1_rot", 1}, {"display_1_battery_2_rot", 1}, {"display_1_collective_move", 0}, {"display_1_compass_rot", 0}, {"display_1_enginetemp_1_rot", 0}, {"display_1_enginetemp_2_rot", 0}, {"display_1_fuel_rot", 1}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_dive_move", 0}, {"display_1_oil_rot", 1}, {"display_1_rpm_rot", 0}, {"display_1_speed_rot_1", 0}, {"display_1_speed_rot_2", 0}, {"display_1_torque_rot_1", 0}, {"display_1_torque_rot_2", 0}, {"display_1_verticalspeed_slider_move", 0}, {"display_1_verticalspeed_rot_1", 0}, {"display_1_verticalspeed_rot_2", 0}, {"display_1_verticalspeed_rot_3", 0}, {"display_2_agl_rot_1", -0.33}, {"display_2_agl_rot_2", -0.33}, {"display_2_agl_rot_3", -0.33}, {"display_2_asl_10_rot", 7.59}, {"display_2_asl_100_rot", 7.59}, {"display_2_battery_1_rot", 1}, {"display_2_battery_2_rot", 1}, {"display_2_collective_move", 0}, {"display_2_compass_rot", 0}, {"display_2_enginetemp_1_rot", 0}, {"display_2_enginetemp_2_rot", 0}, {"display_2_fuel_rot", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_dive_move", 0}, {"display_2_oil_rot", 1}, {"display_2_rpm_rot", 0}, {"display_2_speed_rot_1", 0}, {"display_2_speed_rot_2", 0}, {"display_2_torque_rot_1", 0}, {"display_2_torque_rot_2", 0}, {"display_2_verticalspeed_slider_move", 0}, {"display_2_verticalspeed_rot_1", 0}, {"display_2_verticalspeed_rot_2", 0}, {"display_2_verticalspeed_rot_3", 0}, {"indicator_agl_rot_1", -0.33}, {"indicator_agl_rot_2", -0.33}, {"indicator_agl_rot_3", -0.33}, {"indicator_horizon_bank_rot", 0}, {"indicator_horizon_dive_rot", 0}, {"indicator_speed_rot_1", 0}, {"indicator_speed_rot_2", 0}, {"indicator_verticalspeed_rot_1", 0}, {"indicator_verticalspeed_rot_2", 0}, {"indicator_verticalspeed_rot_3", 0}, {"display_agl_0xxx_hide", -0.33}, {"display_agl_1xxx_hide", -0.33}, {"display_agl_2xxx_hide", -0.33}, {"display_agl_3xxx_hide", -0.33}, {"display_agl_4xxx_hide", -0.33}, {"display_agl_5xxx_hide", -0.33}, {"display_agl_6xxx_hide", -0.33}, {"display_agl_7xxx_hide", -0.33}, {"display_agl_8xxx_hide", -0.33}, {"display_agl_9xxx_hide", -0.33}, {"display_agl_x0xx_hide", -0.33}, {"display_agl_x1xx_hide", -0.33}, {"display_agl_x2xx_hide", -0.33}, {"display_agl_x3xx_hide", -0.33}, {"display_agl_x4xx_hide", -0.33}, {"display_agl_x5xx_hide", -0.33}, {"display_agl_x6xx_hide", -0.33}, {"display_agl_x7xx_hide", -0.33}, {"display_agl_x8xx_hide", -0.33}, {"display_agl_x9xx_hide", -0.33}, {"display_agl_xx0x_hide", -0.33}, {"display_agl_xx1x_hide", -0.33}, {"display_agl_xx2x_hide", -0.33}, {"display_agl_xx3x_hide", -0.33}, {"display_agl_xx4x_hide", -0.33}, {"display_agl_xx5x_hide", -0.33}, {"display_agl_xx6x_hide", -0.33}, {"display_agl_xx7x_hide", -0.33}, {"display_agl_xx8x_hide", -0.33}, {"display_agl_xx9x_hide", -0.33}, {"display_agl_xxx0_hide", -0.33}, {"display_agl_xxx1_hide", -0.33}, {"display_agl_xxx2_hide", -0.33}, {"display_agl_xxx3_hide", -0.33}, {"display_agl_xxx4_hide", -0.33}, {"display_agl_xxx5_hide", -0.33}, {"display_agl_xxx6_hide", -0.33}, {"display_agl_xxx7_hide", -0.33}, {"display_agl_xxx8_hide", -0.33}, {"display_agl_xxx9_hide", -0.33}, {"display_speed_0xx_hide", 0}, {"display_speed_1xx_hide", 0}, {"display_speed_2xx_hide", 0}, {"display_speed_3xx_hide", 0}, {"display_speed_4xx_hide", 0}, {"display_speed_5xx_hide", 0}, {"display_speed_6xx_hide", 0}, {"display_speed_7xx_hide", 0}, {"display_speed_8xx_hide", 0}, {"display_speed_9xx_hide", 0}, {"display_speed_x0x_hide", 0}, {"display_speed_x1x_hide", 0}, {"display_speed_x2x_hide", 0}, {"display_speed_x3x_hide", 0}, {"display_speed_x4x_hide", 0}, {"display_speed_x5x_hide", 0}, {"display_speed_x6x_hide", 0}, {"display_speed_x7x_hide", 0}, {"display_speed_x8x_hide", 0}, {"display_speed_x9x_hide", 0}, {"display_speed_xx0_hide", 0}, {"display_speed_xx1_hide", 0}, {"display_speed_xx2_hide", 0}, {"display_speed_xx3_hide", 0}, {"display_speed_xx4_hide", 0}, {"display_speed_xx5_hide", 0}, {"display_speed_xx6_hide", 0}, {"display_speed_xx7_hide", 0}, {"display_speed_xx8_hide", 0}, {"display_speed_xx9_hide", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"stick_collective_1_rot", 0}, {"stick_collective_2_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"optics_1_rot", 0}, {"optics_1_muzzle_rot", 0}, {"positionlights", 0}, {"collisionlight_red_blinking", 0}};
+            hide[] = {"zasleh", "light_1_hide", "rotor_1_blur", "rotor_2_blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.592;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+            };
+            class LoadmasterTurret: LoadmasterTurret {
+                gunnerType = "O_crew_F";
+            };
+        };
+    };
+    class GVAR(O_R_Heli_Transport_04_ammo_ard_F): GVAR(O_R_Heli_Transport_04_ammo_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Heli_Transport_04_ammo_ard_F.jpg";
+        faction = "ghost_red";
+        crew = "O_helipilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rotor_1_bend_move", 0}, {"rotor_2_bend_move", 0}, {"rotor_1_destruct_hide", 0}, {"rotor_2_destruct_hide", 0}, {"gear_1_damper_move", -0.33}, {"gear_1_stabil_1_rot", -0.33}, {"gear_1_stabil_2_rot", -0.33}, {"gear_2_damper_move", -0.33}, {"gear_2_stabil_1_rot", -0.33}, {"gear_2_stabil_2_rot", -0.33}, {"gear_3_damper_move", -0.33}, {"gear_3_stabil_1_rot", -0.33}, {"gear_3_stabil_2_rot", -0.33}, {"door_1_rot", 0}, {"door_1_handle_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot", 0}, {"display_off_hide", 0}, {"display_1_agl_rot_1", -0.33}, {"display_1_agl_rot_2", -0.33}, {"display_1_agl_rot_3", -0.33}, {"display_1_asl_10_rot", 7.59}, {"display_1_asl_100_rot", 7.59}, {"display_1_battery_1_rot", 1}, {"display_1_battery_2_rot", 1}, {"display_1_collective_move", 0}, {"display_1_compass_rot", 0}, {"display_1_enginetemp_1_rot", 0}, {"display_1_enginetemp_2_rot", 0}, {"display_1_fuel_rot", 1}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_dive_move", 0}, {"display_1_oil_rot", 1}, {"display_1_rpm_rot", 0}, {"display_1_speed_rot_1", 0}, {"display_1_speed_rot_2", 0}, {"display_1_torque_rot_1", 0}, {"display_1_torque_rot_2", 0}, {"display_1_verticalspeed_slider_move", 0}, {"display_1_verticalspeed_rot_1", 0}, {"display_1_verticalspeed_rot_2", 0}, {"display_1_verticalspeed_rot_3", 0}, {"display_2_agl_rot_1", -0.33}, {"display_2_agl_rot_2", -0.33}, {"display_2_agl_rot_3", -0.33}, {"display_2_asl_10_rot", 7.59}, {"display_2_asl_100_rot", 7.59}, {"display_2_battery_1_rot", 1}, {"display_2_battery_2_rot", 1}, {"display_2_collective_move", 0}, {"display_2_compass_rot", 0}, {"display_2_enginetemp_1_rot", 0}, {"display_2_enginetemp_2_rot", 0}, {"display_2_fuel_rot", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_dive_move", 0}, {"display_2_oil_rot", 1}, {"display_2_rpm_rot", 0}, {"display_2_speed_rot_1", 0}, {"display_2_speed_rot_2", 0}, {"display_2_torque_rot_1", 0}, {"display_2_torque_rot_2", 0}, {"display_2_verticalspeed_slider_move", 0}, {"display_2_verticalspeed_rot_1", 0}, {"display_2_verticalspeed_rot_2", 0}, {"display_2_verticalspeed_rot_3", 0}, {"indicator_agl_rot_1", -0.33}, {"indicator_agl_rot_2", -0.33}, {"indicator_agl_rot_3", -0.33}, {"indicator_horizon_bank_rot", 0}, {"indicator_horizon_dive_rot", 0}, {"indicator_speed_rot_1", 0}, {"indicator_speed_rot_2", 0}, {"indicator_verticalspeed_rot_1", 0}, {"indicator_verticalspeed_rot_2", 0}, {"indicator_verticalspeed_rot_3", 0}, {"display_agl_0xxx_hide", -0.33}, {"display_agl_1xxx_hide", -0.33}, {"display_agl_2xxx_hide", -0.33}, {"display_agl_3xxx_hide", -0.33}, {"display_agl_4xxx_hide", -0.33}, {"display_agl_5xxx_hide", -0.33}, {"display_agl_6xxx_hide", -0.33}, {"display_agl_7xxx_hide", -0.33}, {"display_agl_8xxx_hide", -0.33}, {"display_agl_9xxx_hide", -0.33}, {"display_agl_x0xx_hide", -0.33}, {"display_agl_x1xx_hide", -0.33}, {"display_agl_x2xx_hide", -0.33}, {"display_agl_x3xx_hide", -0.33}, {"display_agl_x4xx_hide", -0.33}, {"display_agl_x5xx_hide", -0.33}, {"display_agl_x6xx_hide", -0.33}, {"display_agl_x7xx_hide", -0.33}, {"display_agl_x8xx_hide", -0.33}, {"display_agl_x9xx_hide", -0.33}, {"display_agl_xx0x_hide", -0.33}, {"display_agl_xx1x_hide", -0.33}, {"display_agl_xx2x_hide", -0.33}, {"display_agl_xx3x_hide", -0.33}, {"display_agl_xx4x_hide", -0.33}, {"display_agl_xx5x_hide", -0.33}, {"display_agl_xx6x_hide", -0.33}, {"display_agl_xx7x_hide", -0.33}, {"display_agl_xx8x_hide", -0.33}, {"display_agl_xx9x_hide", -0.33}, {"display_agl_xxx0_hide", -0.33}, {"display_agl_xxx1_hide", -0.33}, {"display_agl_xxx2_hide", -0.33}, {"display_agl_xxx3_hide", -0.33}, {"display_agl_xxx4_hide", -0.33}, {"display_agl_xxx5_hide", -0.33}, {"display_agl_xxx6_hide", -0.33}, {"display_agl_xxx7_hide", -0.33}, {"display_agl_xxx8_hide", -0.33}, {"display_agl_xxx9_hide", -0.33}, {"display_speed_0xx_hide", 0}, {"display_speed_1xx_hide", 0}, {"display_speed_2xx_hide", 0}, {"display_speed_3xx_hide", 0}, {"display_speed_4xx_hide", 0}, {"display_speed_5xx_hide", 0}, {"display_speed_6xx_hide", 0}, {"display_speed_7xx_hide", 0}, {"display_speed_8xx_hide", 0}, {"display_speed_9xx_hide", 0}, {"display_speed_x0x_hide", 0}, {"display_speed_x1x_hide", 0}, {"display_speed_x2x_hide", 0}, {"display_speed_x3x_hide", 0}, {"display_speed_x4x_hide", 0}, {"display_speed_x5x_hide", 0}, {"display_speed_x6x_hide", 0}, {"display_speed_x7x_hide", 0}, {"display_speed_x8x_hide", 0}, {"display_speed_x9x_hide", 0}, {"display_speed_xx0_hide", 0}, {"display_speed_xx1_hide", 0}, {"display_speed_xx2_hide", 0}, {"display_speed_xx3_hide", 0}, {"display_speed_xx4_hide", 0}, {"display_speed_xx5_hide", 0}, {"display_speed_xx6_hide", 0}, {"display_speed_xx7_hide", 0}, {"display_speed_xx8_hide", 0}, {"display_speed_xx9_hide", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"stick_collective_1_rot", 0}, {"stick_collective_2_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"optics_1_rot", 0}, {"optics_1_muzzle_rot", 0}, {"positionlights", 0}, {"collisionlight_red_blinking", 0}};
+            hide[] = {"zasleh", "light_1_hide", "rotor_1_blur", "rotor_2_blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.592;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+            };
+            class LoadmasterTurret: LoadmasterTurret {
+                gunnerType = "O_crew_F";
+            };
+        };
+    };
+    class GVAR(O_R_Heli_Transport_04_ard_F): GVAR(O_R_Heli_Transport_04_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Heli_Transport_04_ard_F.jpg";
+        faction = "ghost_red";
+        crew = "O_helipilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rotor_1_bend_move", 0}, {"rotor_2_bend_move", 0}, {"rotor_1_destruct_hide", 0}, {"rotor_2_destruct_hide", 0}, {"gear_1_damper_move", -0.33}, {"gear_1_stabil_1_rot", -0.33}, {"gear_1_stabil_2_rot", -0.33}, {"gear_2_damper_move", -0.33}, {"gear_2_stabil_1_rot", -0.33}, {"gear_2_stabil_2_rot", -0.33}, {"gear_3_damper_move", -0.33}, {"gear_3_stabil_1_rot", -0.33}, {"gear_3_stabil_2_rot", -0.33}, {"door_1_rot", 0}, {"door_1_handle_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot", 0}, {"display_off_hide", 0}, {"display_1_agl_rot_1", -0.33}, {"display_1_agl_rot_2", -0.33}, {"display_1_agl_rot_3", -0.33}, {"display_1_asl_10_rot", 7.83}, {"display_1_asl_100_rot", 7.83}, {"display_1_battery_1_rot", 1}, {"display_1_battery_2_rot", 1}, {"display_1_collective_move", 0}, {"display_1_compass_rot", 0}, {"display_1_enginetemp_1_rot", 0}, {"display_1_enginetemp_2_rot", 0}, {"display_1_fuel_rot", 1}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_dive_move", 0}, {"display_1_oil_rot", 1}, {"display_1_rpm_rot", 0}, {"display_1_speed_rot_1", 0}, {"display_1_speed_rot_2", 0}, {"display_1_torque_rot_1", 0}, {"display_1_torque_rot_2", 0}, {"display_1_verticalspeed_slider_move", 0}, {"display_1_verticalspeed_rot_1", 0}, {"display_1_verticalspeed_rot_2", 0}, {"display_1_verticalspeed_rot_3", 0}, {"display_2_agl_rot_1", -0.33}, {"display_2_agl_rot_2", -0.33}, {"display_2_agl_rot_3", -0.33}, {"display_2_asl_10_rot", 7.83}, {"display_2_asl_100_rot", 7.83}, {"display_2_battery_1_rot", 1}, {"display_2_battery_2_rot", 1}, {"display_2_collective_move", 0}, {"display_2_compass_rot", 0}, {"display_2_enginetemp_1_rot", 0}, {"display_2_enginetemp_2_rot", 0}, {"display_2_fuel_rot", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_dive_move", 0}, {"display_2_oil_rot", 1}, {"display_2_rpm_rot", 0}, {"display_2_speed_rot_1", 0}, {"display_2_speed_rot_2", 0}, {"display_2_torque_rot_1", 0}, {"display_2_torque_rot_2", 0}, {"display_2_verticalspeed_slider_move", 0}, {"display_2_verticalspeed_rot_1", 0}, {"display_2_verticalspeed_rot_2", 0}, {"display_2_verticalspeed_rot_3", 0}, {"indicator_agl_rot_1", -0.33}, {"indicator_agl_rot_2", -0.33}, {"indicator_agl_rot_3", -0.33}, {"indicator_horizon_bank_rot", 0}, {"indicator_horizon_dive_rot", 0}, {"indicator_speed_rot_1", 0}, {"indicator_speed_rot_2", 0}, {"indicator_verticalspeed_rot_1", 0}, {"indicator_verticalspeed_rot_2", 0}, {"indicator_verticalspeed_rot_3", 0}, {"display_agl_0xxx_hide", -0.33}, {"display_agl_1xxx_hide", -0.33}, {"display_agl_2xxx_hide", -0.33}, {"display_agl_3xxx_hide", -0.33}, {"display_agl_4xxx_hide", -0.33}, {"display_agl_5xxx_hide", -0.33}, {"display_agl_6xxx_hide", -0.33}, {"display_agl_7xxx_hide", -0.33}, {"display_agl_8xxx_hide", -0.33}, {"display_agl_9xxx_hide", -0.33}, {"display_agl_x0xx_hide", -0.33}, {"display_agl_x1xx_hide", -0.33}, {"display_agl_x2xx_hide", -0.33}, {"display_agl_x3xx_hide", -0.33}, {"display_agl_x4xx_hide", -0.33}, {"display_agl_x5xx_hide", -0.33}, {"display_agl_x6xx_hide", -0.33}, {"display_agl_x7xx_hide", -0.33}, {"display_agl_x8xx_hide", -0.33}, {"display_agl_x9xx_hide", -0.33}, {"display_agl_xx0x_hide", -0.33}, {"display_agl_xx1x_hide", -0.33}, {"display_agl_xx2x_hide", -0.33}, {"display_agl_xx3x_hide", -0.33}, {"display_agl_xx4x_hide", -0.33}, {"display_agl_xx5x_hide", -0.33}, {"display_agl_xx6x_hide", -0.33}, {"display_agl_xx7x_hide", -0.33}, {"display_agl_xx8x_hide", -0.33}, {"display_agl_xx9x_hide", -0.33}, {"display_agl_xxx0_hide", -0.33}, {"display_agl_xxx1_hide", -0.33}, {"display_agl_xxx2_hide", -0.33}, {"display_agl_xxx3_hide", -0.33}, {"display_agl_xxx4_hide", -0.33}, {"display_agl_xxx5_hide", -0.33}, {"display_agl_xxx6_hide", -0.33}, {"display_agl_xxx7_hide", -0.33}, {"display_agl_xxx8_hide", -0.33}, {"display_agl_xxx9_hide", -0.33}, {"display_speed_0xx_hide", 0}, {"display_speed_1xx_hide", 0}, {"display_speed_2xx_hide", 0}, {"display_speed_3xx_hide", 0}, {"display_speed_4xx_hide", 0}, {"display_speed_5xx_hide", 0}, {"display_speed_6xx_hide", 0}, {"display_speed_7xx_hide", 0}, {"display_speed_8xx_hide", 0}, {"display_speed_9xx_hide", 0}, {"display_speed_x0x_hide", 0}, {"display_speed_x1x_hide", 0}, {"display_speed_x2x_hide", 0}, {"display_speed_x3x_hide", 0}, {"display_speed_x4x_hide", 0}, {"display_speed_x5x_hide", 0}, {"display_speed_x6x_hide", 0}, {"display_speed_x7x_hide", 0}, {"display_speed_x8x_hide", 0}, {"display_speed_x9x_hide", 0}, {"display_speed_xx0_hide", 0}, {"display_speed_xx1_hide", 0}, {"display_speed_xx2_hide", 0}, {"display_speed_xx3_hide", 0}, {"display_speed_xx4_hide", 0}, {"display_speed_xx5_hide", 0}, {"display_speed_xx6_hide", 0}, {"display_speed_xx7_hide", 0}, {"display_speed_xx8_hide", 0}, {"display_speed_xx9_hide", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"stick_collective_1_rot", 0}, {"stick_collective_2_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"optics_1_rot", 0}, {"optics_1_muzzle_rot", 0}, {"positionlights", 0}, {"collisionlight_red_blinking", 0}, {"winch_hide", 0}};
+            hide[] = {"zasleh", "light_1_hide", "rotor_1_blur", "rotor_2_blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.828;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+            };
+            class LoadmasterTurret: LoadmasterTurret {
+                gunnerType = "O_crew_F";
+            };
+        };
+    };
+    class GVAR(O_R_Heli_Transport_04_bench_F): O_Heli_Transport_04_bench_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Heli_Transport_04_bench_F.jpg";
+        displayName = "Mi-290 Tuskar (Bench)";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_helipilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        textureList[] = {"Russian2", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_RUS_02_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_RUS2_02_CO.paa", "\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Bench_black_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rotor_1_bend_move", 0}, {"rotor_2_bend_move", 0}, {"rotor_1_destruct_hide", 0}, {"rotor_2_destruct_hide", 0}, {"gear_1_damper_move", -0.33}, {"gear_1_stabil_1_rot", -0.33}, {"gear_1_stabil_2_rot", -0.33}, {"gear_2_damper_move", -0.33}, {"gear_2_stabil_1_rot", -0.33}, {"gear_2_stabil_2_rot", -0.33}, {"gear_3_damper_move", -0.33}, {"gear_3_stabil_1_rot", -0.33}, {"gear_3_stabil_2_rot", -0.33}, {"door_1_rot", 0}, {"door_1_handle_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot", 0}, {"display_off_hide", 0}, {"display_1_agl_rot_1", -0.33}, {"display_1_agl_rot_2", -0.33}, {"display_1_agl_rot_3", -0.33}, {"display_1_asl_10_rot", 7.83}, {"display_1_asl_100_rot", 7.83}, {"display_1_battery_1_rot", 1}, {"display_1_battery_2_rot", 1}, {"display_1_collective_move", 0}, {"display_1_compass_rot", 0}, {"display_1_enginetemp_1_rot", 0}, {"display_1_enginetemp_2_rot", 0}, {"display_1_fuel_rot", 1}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_dive_move", 0}, {"display_1_oil_rot", 1}, {"display_1_rpm_rot", 0}, {"display_1_speed_rot_1", 0}, {"display_1_speed_rot_2", 0}, {"display_1_torque_rot_1", 0}, {"display_1_torque_rot_2", 0}, {"display_1_verticalspeed_slider_move", 0}, {"display_1_verticalspeed_rot_1", 0}, {"display_1_verticalspeed_rot_2", 0}, {"display_1_verticalspeed_rot_3", 0}, {"display_2_agl_rot_1", -0.33}, {"display_2_agl_rot_2", -0.33}, {"display_2_agl_rot_3", -0.33}, {"display_2_asl_10_rot", 7.83}, {"display_2_asl_100_rot", 7.83}, {"display_2_battery_1_rot", 1}, {"display_2_battery_2_rot", 1}, {"display_2_collective_move", 0}, {"display_2_compass_rot", 0}, {"display_2_enginetemp_1_rot", 0}, {"display_2_enginetemp_2_rot", 0}, {"display_2_fuel_rot", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_dive_move", 0}, {"display_2_oil_rot", 1}, {"display_2_rpm_rot", 0}, {"display_2_speed_rot_1", 0}, {"display_2_speed_rot_2", 0}, {"display_2_torque_rot_1", 0}, {"display_2_torque_rot_2", 0}, {"display_2_verticalspeed_slider_move", 0}, {"display_2_verticalspeed_rot_1", 0}, {"display_2_verticalspeed_rot_2", 0}, {"display_2_verticalspeed_rot_3", 0}, {"indicator_agl_rot_1", -0.33}, {"indicator_agl_rot_2", -0.33}, {"indicator_agl_rot_3", -0.33}, {"indicator_horizon_bank_rot", 0}, {"indicator_horizon_dive_rot", 0}, {"indicator_speed_rot_1", 0}, {"indicator_speed_rot_2", 0}, {"indicator_verticalspeed_rot_1", 0}, {"indicator_verticalspeed_rot_2", 0}, {"indicator_verticalspeed_rot_3", 0}, {"display_agl_0xxx_hide", -0.33}, {"display_agl_1xxx_hide", -0.33}, {"display_agl_2xxx_hide", -0.33}, {"display_agl_3xxx_hide", -0.33}, {"display_agl_4xxx_hide", -0.33}, {"display_agl_5xxx_hide", -0.33}, {"display_agl_6xxx_hide", -0.33}, {"display_agl_7xxx_hide", -0.33}, {"display_agl_8xxx_hide", -0.33}, {"display_agl_9xxx_hide", -0.33}, {"display_agl_x0xx_hide", -0.33}, {"display_agl_x1xx_hide", -0.33}, {"display_agl_x2xx_hide", -0.33}, {"display_agl_x3xx_hide", -0.33}, {"display_agl_x4xx_hide", -0.33}, {"display_agl_x5xx_hide", -0.33}, {"display_agl_x6xx_hide", -0.33}, {"display_agl_x7xx_hide", -0.33}, {"display_agl_x8xx_hide", -0.33}, {"display_agl_x9xx_hide", -0.33}, {"display_agl_xx0x_hide", -0.33}, {"display_agl_xx1x_hide", -0.33}, {"display_agl_xx2x_hide", -0.33}, {"display_agl_xx3x_hide", -0.33}, {"display_agl_xx4x_hide", -0.33}, {"display_agl_xx5x_hide", -0.33}, {"display_agl_xx6x_hide", -0.33}, {"display_agl_xx7x_hide", -0.33}, {"display_agl_xx8x_hide", -0.33}, {"display_agl_xx9x_hide", -0.33}, {"display_agl_xxx0_hide", -0.33}, {"display_agl_xxx1_hide", -0.33}, {"display_agl_xxx2_hide", -0.33}, {"display_agl_xxx3_hide", -0.33}, {"display_agl_xxx4_hide", -0.33}, {"display_agl_xxx5_hide", -0.33}, {"display_agl_xxx6_hide", -0.33}, {"display_agl_xxx7_hide", -0.33}, {"display_agl_xxx8_hide", -0.33}, {"display_agl_xxx9_hide", -0.33}, {"display_speed_0xx_hide", 0}, {"display_speed_1xx_hide", 0}, {"display_speed_2xx_hide", 0}, {"display_speed_3xx_hide", 0}, {"display_speed_4xx_hide", 0}, {"display_speed_5xx_hide", 0}, {"display_speed_6xx_hide", 0}, {"display_speed_7xx_hide", 0}, {"display_speed_8xx_hide", 0}, {"display_speed_9xx_hide", 0}, {"display_speed_x0x_hide", 0}, {"display_speed_x1x_hide", 0}, {"display_speed_x2x_hide", 0}, {"display_speed_x3x_hide", 0}, {"display_speed_x4x_hide", 0}, {"display_speed_x5x_hide", 0}, {"display_speed_x6x_hide", 0}, {"display_speed_x7x_hide", 0}, {"display_speed_x8x_hide", 0}, {"display_speed_x9x_hide", 0}, {"display_speed_xx0_hide", 0}, {"display_speed_xx1_hide", 0}, {"display_speed_xx2_hide", 0}, {"display_speed_xx3_hide", 0}, {"display_speed_xx4_hide", 0}, {"display_speed_xx5_hide", 0}, {"display_speed_xx6_hide", 0}, {"display_speed_xx7_hide", 0}, {"display_speed_xx8_hide", 0}, {"display_speed_xx9_hide", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"stick_collective_1_rot", 0}, {"stick_collective_2_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"optics_1_rot", 0}, {"optics_1_muzzle_rot", 0}, {"positionlights", 0}, {"collisionlight_red_blinking", 0}, {"bench_default_hide", 0}, {"bench_black_hide", 1}};
+            hide[] = {"zasleh", "light_1_hide", "rotor_1_blur", "rotor_2_blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.828;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+            };
+            class LoadmasterTurret: LoadmasterTurret {
+                gunnerType = "O_crew_F";
+            };
+            class CargoTurret_01: CargoTurret_01 {
+            };
+            class CargoTurret_02: CargoTurret_02 {
+            };
+            class CargoTurret_03: CargoTurret_03 {
+            };
+            class CargoTurret_04: CargoTurret_04 {
+            };
+            class CargoTurret_05: CargoTurret_05 {
+            };
+            class CargoTurret_06: CargoTurret_06 {
+            };
+            class CargoTurret_07: CargoTurret_07 {
+            };
+            class CargoTurret_08: CargoTurret_08 {
+            };
+        };
+        class AnimationSources: AnimationSources {
+            class Bench_default_source: Bench_default_source {
+                initPhase = 1;
+            };
+            class Bench_black_source: Bench_black_source {
+                initPhase = 0;
+            };
+        };
+    };
+    class GVAR(O_R_Heli_Transport_04_bench_ard_F): GVAR(O_R_Heli_Transport_04_bench_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Heli_Transport_04_bench_ard_F.jpg";
+        faction = "ghost_red";
+        crew = "O_helipilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rotor_1_bend_move", 0}, {"rotor_2_bend_move", 0}, {"rotor_1_destruct_hide", 0}, {"rotor_2_destruct_hide", 0}, {"gear_1_damper_move", -0.33}, {"gear_1_stabil_1_rot", -0.33}, {"gear_1_stabil_2_rot", -0.33}, {"gear_2_damper_move", -0.33}, {"gear_2_stabil_1_rot", -0.33}, {"gear_2_stabil_2_rot", -0.33}, {"gear_3_damper_move", -0.33}, {"gear_3_stabil_1_rot", -0.33}, {"gear_3_stabil_2_rot", -0.33}, {"door_1_rot", 0}, {"door_1_handle_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot", 0}, {"display_off_hide", 0}, {"display_1_agl_rot_1", -0.33}, {"display_1_agl_rot_2", -0.33}, {"display_1_agl_rot_3", -0.33}, {"display_1_asl_10_rot", 7.83}, {"display_1_asl_100_rot", 7.83}, {"display_1_battery_1_rot", 1}, {"display_1_battery_2_rot", 1}, {"display_1_collective_move", 0}, {"display_1_compass_rot", 0}, {"display_1_enginetemp_1_rot", 0}, {"display_1_enginetemp_2_rot", 0}, {"display_1_fuel_rot", 1}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_dive_move", 0}, {"display_1_oil_rot", 1}, {"display_1_rpm_rot", 0}, {"display_1_speed_rot_1", 0}, {"display_1_speed_rot_2", 0}, {"display_1_torque_rot_1", 0}, {"display_1_torque_rot_2", 0}, {"display_1_verticalspeed_slider_move", 0}, {"display_1_verticalspeed_rot_1", 0}, {"display_1_verticalspeed_rot_2", 0}, {"display_1_verticalspeed_rot_3", 0}, {"display_2_agl_rot_1", -0.33}, {"display_2_agl_rot_2", -0.33}, {"display_2_agl_rot_3", -0.33}, {"display_2_asl_10_rot", 7.83}, {"display_2_asl_100_rot", 7.83}, {"display_2_battery_1_rot", 1}, {"display_2_battery_2_rot", 1}, {"display_2_collective_move", 0}, {"display_2_compass_rot", 0}, {"display_2_enginetemp_1_rot", 0}, {"display_2_enginetemp_2_rot", 0}, {"display_2_fuel_rot", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_dive_move", 0}, {"display_2_oil_rot", 1}, {"display_2_rpm_rot", 0}, {"display_2_speed_rot_1", 0}, {"display_2_speed_rot_2", 0}, {"display_2_torque_rot_1", 0}, {"display_2_torque_rot_2", 0}, {"display_2_verticalspeed_slider_move", 0}, {"display_2_verticalspeed_rot_1", 0}, {"display_2_verticalspeed_rot_2", 0}, {"display_2_verticalspeed_rot_3", 0}, {"indicator_agl_rot_1", -0.33}, {"indicator_agl_rot_2", -0.33}, {"indicator_agl_rot_3", -0.33}, {"indicator_horizon_bank_rot", 0}, {"indicator_horizon_dive_rot", 0}, {"indicator_speed_rot_1", 0}, {"indicator_speed_rot_2", 0}, {"indicator_verticalspeed_rot_1", 0}, {"indicator_verticalspeed_rot_2", 0}, {"indicator_verticalspeed_rot_3", 0}, {"display_agl_0xxx_hide", -0.33}, {"display_agl_1xxx_hide", -0.33}, {"display_agl_2xxx_hide", -0.33}, {"display_agl_3xxx_hide", -0.33}, {"display_agl_4xxx_hide", -0.33}, {"display_agl_5xxx_hide", -0.33}, {"display_agl_6xxx_hide", -0.33}, {"display_agl_7xxx_hide", -0.33}, {"display_agl_8xxx_hide", -0.33}, {"display_agl_9xxx_hide", -0.33}, {"display_agl_x0xx_hide", -0.33}, {"display_agl_x1xx_hide", -0.33}, {"display_agl_x2xx_hide", -0.33}, {"display_agl_x3xx_hide", -0.33}, {"display_agl_x4xx_hide", -0.33}, {"display_agl_x5xx_hide", -0.33}, {"display_agl_x6xx_hide", -0.33}, {"display_agl_x7xx_hide", -0.33}, {"display_agl_x8xx_hide", -0.33}, {"display_agl_x9xx_hide", -0.33}, {"display_agl_xx0x_hide", -0.33}, {"display_agl_xx1x_hide", -0.33}, {"display_agl_xx2x_hide", -0.33}, {"display_agl_xx3x_hide", -0.33}, {"display_agl_xx4x_hide", -0.33}, {"display_agl_xx5x_hide", -0.33}, {"display_agl_xx6x_hide", -0.33}, {"display_agl_xx7x_hide", -0.33}, {"display_agl_xx8x_hide", -0.33}, {"display_agl_xx9x_hide", -0.33}, {"display_agl_xxx0_hide", -0.33}, {"display_agl_xxx1_hide", -0.33}, {"display_agl_xxx2_hide", -0.33}, {"display_agl_xxx3_hide", -0.33}, {"display_agl_xxx4_hide", -0.33}, {"display_agl_xxx5_hide", -0.33}, {"display_agl_xxx6_hide", -0.33}, {"display_agl_xxx7_hide", -0.33}, {"display_agl_xxx8_hide", -0.33}, {"display_agl_xxx9_hide", -0.33}, {"display_speed_0xx_hide", 0}, {"display_speed_1xx_hide", 0}, {"display_speed_2xx_hide", 0}, {"display_speed_3xx_hide", 0}, {"display_speed_4xx_hide", 0}, {"display_speed_5xx_hide", 0}, {"display_speed_6xx_hide", 0}, {"display_speed_7xx_hide", 0}, {"display_speed_8xx_hide", 0}, {"display_speed_9xx_hide", 0}, {"display_speed_x0x_hide", 0}, {"display_speed_x1x_hide", 0}, {"display_speed_x2x_hide", 0}, {"display_speed_x3x_hide", 0}, {"display_speed_x4x_hide", 0}, {"display_speed_x5x_hide", 0}, {"display_speed_x6x_hide", 0}, {"display_speed_x7x_hide", 0}, {"display_speed_x8x_hide", 0}, {"display_speed_x9x_hide", 0}, {"display_speed_xx0_hide", 0}, {"display_speed_xx1_hide", 0}, {"display_speed_xx2_hide", 0}, {"display_speed_xx3_hide", 0}, {"display_speed_xx4_hide", 0}, {"display_speed_xx5_hide", 0}, {"display_speed_xx6_hide", 0}, {"display_speed_xx7_hide", 0}, {"display_speed_xx8_hide", 0}, {"display_speed_xx9_hide", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"stick_collective_1_rot", 0}, {"stick_collective_2_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"optics_1_rot", 0}, {"optics_1_muzzle_rot", 0}, {"positionlights", 0}, {"collisionlight_red_blinking", 0}, {"bench_default_hide", 0}, {"bench_black_hide", 1}};
+            hide[] = {"zasleh", "light_1_hide", "rotor_1_blur", "rotor_2_blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.828;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+            };
+            class LoadmasterTurret: LoadmasterTurret {
+                gunnerType = "O_crew_F";
+            };
+            class CargoTurret_01: CargoTurret_01 {
+            };
+            class CargoTurret_02: CargoTurret_02 {
+            };
+            class CargoTurret_03: CargoTurret_03 {
+            };
+            class CargoTurret_04: CargoTurret_04 {
+            };
+            class CargoTurret_05: CargoTurret_05 {
+            };
+            class CargoTurret_06: CargoTurret_06 {
+            };
+            class CargoTurret_07: CargoTurret_07 {
+            };
+            class CargoTurret_08: CargoTurret_08 {
+            };
+        };
+    };
+    class GVAR(O_R_Heli_Transport_04_box_F): O_Heli_Transport_04_box_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Heli_Transport_04_box_F.jpg";
+        displayName = "Mi-290 Tuskar (Cargo)";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_helipilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        textureList[] = {"Russian2", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_RUS_02_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_RUS2_02_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_RUS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_RUS_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rotor_1_bend_move", 0}, {"rotor_2_bend_move", 0}, {"rotor_1_destruct_hide", 0}, {"rotor_2_destruct_hide", 0}, {"gear_1_damper_move", -0.33}, {"gear_1_stabil_1_rot", -0.33}, {"gear_1_stabil_2_rot", -0.33}, {"gear_2_damper_move", -0.33}, {"gear_2_stabil_1_rot", -0.33}, {"gear_2_stabil_2_rot", -0.33}, {"gear_3_damper_move", -0.33}, {"gear_3_stabil_1_rot", -0.33}, {"gear_3_stabil_2_rot", -0.33}, {"door_1_rot", 0}, {"door_1_handle_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot", 0}, {"display_off_hide", 0}, {"display_1_agl_rot_1", -0.33}, {"display_1_agl_rot_2", -0.33}, {"display_1_agl_rot_3", -0.33}, {"display_1_asl_10_rot", 7.59}, {"display_1_asl_100_rot", 7.59}, {"display_1_battery_1_rot", 1}, {"display_1_battery_2_rot", 1}, {"display_1_collective_move", 0}, {"display_1_compass_rot", 0}, {"display_1_enginetemp_1_rot", 0}, {"display_1_enginetemp_2_rot", 0}, {"display_1_fuel_rot", 1}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_dive_move", 0}, {"display_1_oil_rot", 1}, {"display_1_rpm_rot", 0}, {"display_1_speed_rot_1", 0}, {"display_1_speed_rot_2", 0}, {"display_1_torque_rot_1", 0}, {"display_1_torque_rot_2", 0}, {"display_1_verticalspeed_slider_move", 0}, {"display_1_verticalspeed_rot_1", 0}, {"display_1_verticalspeed_rot_2", 0}, {"display_1_verticalspeed_rot_3", 0}, {"display_2_agl_rot_1", -0.33}, {"display_2_agl_rot_2", -0.33}, {"display_2_agl_rot_3", -0.33}, {"display_2_asl_10_rot", 7.59}, {"display_2_asl_100_rot", 7.59}, {"display_2_battery_1_rot", 1}, {"display_2_battery_2_rot", 1}, {"display_2_collective_move", 0}, {"display_2_compass_rot", 0}, {"display_2_enginetemp_1_rot", 0}, {"display_2_enginetemp_2_rot", 0}, {"display_2_fuel_rot", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_dive_move", 0}, {"display_2_oil_rot", 1}, {"display_2_rpm_rot", 0}, {"display_2_speed_rot_1", 0}, {"display_2_speed_rot_2", 0}, {"display_2_torque_rot_1", 0}, {"display_2_torque_rot_2", 0}, {"display_2_verticalspeed_slider_move", 0}, {"display_2_verticalspeed_rot_1", 0}, {"display_2_verticalspeed_rot_2", 0}, {"display_2_verticalspeed_rot_3", 0}, {"indicator_agl_rot_1", -0.33}, {"indicator_agl_rot_2", -0.33}, {"indicator_agl_rot_3", -0.33}, {"indicator_horizon_bank_rot", 0}, {"indicator_horizon_dive_rot", 0}, {"indicator_speed_rot_1", 0}, {"indicator_speed_rot_2", 0}, {"indicator_verticalspeed_rot_1", 0}, {"indicator_verticalspeed_rot_2", 0}, {"indicator_verticalspeed_rot_3", 0}, {"display_agl_0xxx_hide", -0.33}, {"display_agl_1xxx_hide", -0.33}, {"display_agl_2xxx_hide", -0.33}, {"display_agl_3xxx_hide", -0.33}, {"display_agl_4xxx_hide", -0.33}, {"display_agl_5xxx_hide", -0.33}, {"display_agl_6xxx_hide", -0.33}, {"display_agl_7xxx_hide", -0.33}, {"display_agl_8xxx_hide", -0.33}, {"display_agl_9xxx_hide", -0.33}, {"display_agl_x0xx_hide", -0.33}, {"display_agl_x1xx_hide", -0.33}, {"display_agl_x2xx_hide", -0.33}, {"display_agl_x3xx_hide", -0.33}, {"display_agl_x4xx_hide", -0.33}, {"display_agl_x5xx_hide", -0.33}, {"display_agl_x6xx_hide", -0.33}, {"display_agl_x7xx_hide", -0.33}, {"display_agl_x8xx_hide", -0.33}, {"display_agl_x9xx_hide", -0.33}, {"display_agl_xx0x_hide", -0.33}, {"display_agl_xx1x_hide", -0.33}, {"display_agl_xx2x_hide", -0.33}, {"display_agl_xx3x_hide", -0.33}, {"display_agl_xx4x_hide", -0.33}, {"display_agl_xx5x_hide", -0.33}, {"display_agl_xx6x_hide", -0.33}, {"display_agl_xx7x_hide", -0.33}, {"display_agl_xx8x_hide", -0.33}, {"display_agl_xx9x_hide", -0.33}, {"display_agl_xxx0_hide", -0.33}, {"display_agl_xxx1_hide", -0.33}, {"display_agl_xxx2_hide", -0.33}, {"display_agl_xxx3_hide", -0.33}, {"display_agl_xxx4_hide", -0.33}, {"display_agl_xxx5_hide", -0.33}, {"display_agl_xxx6_hide", -0.33}, {"display_agl_xxx7_hide", -0.33}, {"display_agl_xxx8_hide", -0.33}, {"display_agl_xxx9_hide", -0.33}, {"display_speed_0xx_hide", 0}, {"display_speed_1xx_hide", 0}, {"display_speed_2xx_hide", 0}, {"display_speed_3xx_hide", 0}, {"display_speed_4xx_hide", 0}, {"display_speed_5xx_hide", 0}, {"display_speed_6xx_hide", 0}, {"display_speed_7xx_hide", 0}, {"display_speed_8xx_hide", 0}, {"display_speed_9xx_hide", 0}, {"display_speed_x0x_hide", 0}, {"display_speed_x1x_hide", 0}, {"display_speed_x2x_hide", 0}, {"display_speed_x3x_hide", 0}, {"display_speed_x4x_hide", 0}, {"display_speed_x5x_hide", 0}, {"display_speed_x6x_hide", 0}, {"display_speed_x7x_hide", 0}, {"display_speed_x8x_hide", 0}, {"display_speed_x9x_hide", 0}, {"display_speed_xx0_hide", 0}, {"display_speed_xx1_hide", 0}, {"display_speed_xx2_hide", 0}, {"display_speed_xx3_hide", 0}, {"display_speed_xx4_hide", 0}, {"display_speed_xx5_hide", 0}, {"display_speed_xx6_hide", 0}, {"display_speed_xx7_hide", 0}, {"display_speed_xx8_hide", 0}, {"display_speed_xx9_hide", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"stick_collective_1_rot", 0}, {"stick_collective_2_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"optics_1_rot", 0}, {"optics_1_muzzle_rot", 0}, {"positionlights", 0}, {"collisionlight_red_blinking", 0}};
+            hide[] = {"zasleh", "light_1_hide", "rotor_1_blur", "rotor_2_blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.592;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+            };
+            class LoadmasterTurret: LoadmasterTurret {
+                gunnerType = "O_crew_F";
+            };
+        };
+        class TransportMagazines {
+            class _xx_30Rnd_9x21_Mag_SMG_02 {
+                magazine = "30Rnd_9x21_Mag_SMG_02";
+                count = 6;
+            };
+            class _xx_1Rnd_HE_Grenade_shell {
+                magazine = "1Rnd_HE_Grenade_shell";
+                count = 6;
+            };
+            class _xx_30Rnd_545x39_AK12_Mag_F {
+                magazine = QEGVAR(weapons,30Rnd_545x39_AK12_Mag_F);
+                count = 24;
+            };
+            class _xx_60Rnd_545x39_Mag_Green_F {
+                magazine = QEGVAR(weapons,60Rnd_545x39_Mag_Green_F);
+                count = 8;
+            };
+            class _xx_10Rnd_93x64_DMR_05_Mag {
+                magazine = "10Rnd_93x64_DMR_05_Mag";
+                count = 6;
+            };
+            class _xx_17Rnd_9x21_Mag {
+                magazine = QEGVAR(weapons,17Rnd_9x21_Mag);
+                count = 2;
+            };
+            class _xx_chemlight_red {
+                magazine = "chemlight_red";
+                count = 2;
+            };
+            class _xx_O_R_IR_Grenade {
+                magazine = "O_R_IR_Grenade";
+                count = 2;
+            };
+            class _xx_Laserbatteries {
+                magazine = "Laserbatteries";
+                count = 1;
+            };
+            class _xx_UGL_FlareRed_F {
+                magazine = "UGL_FlareRed_F";
+                count = 2;
+            };
+            class _xx_UGL_FlareYellow_F {
+                magazine = "UGL_FlareYellow_F";
+                count = 2;
+            };
+            class _xx_RPG32_F {
+                magazine = "RPG32_F";
+                count = 3;
+            };
+            class _xx_RPG32_HE_F {
+                magazine = "RPG32_HE_F";
+                count = 3;
+            };
+            class _xx_MiniGrenade {
+                magazine = "MiniGrenade";
+                count = 6;
+            };
+            class _xx_HandGrenade_East {
+                magazine = QEGVAR(weapons,HandGrenade_East);
+                count = 6;
+            };
+            class _xx_SmokeShellRed {
+                magazine = "SmokeShellRed";
+                count = 2;
+            };
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_1Rnd_SmokeRed_Grenade_shell {
+                magazine = "1Rnd_SmokeRed_Grenade_shell";
+                count = 2;
+            };
+            class _xx_1Rnd_Smoke_Grenade_shell {
+                magazine = "1Rnd_Smoke_Grenade_shell";
+                count = 2;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_AK12_545_F {
+                weapon = QEGVAR(weapons,arifle_AK12_545_F);
+                count = 2;
+            };
+            class _xx_arifle_AK12_GL_545_F {
+                weapon = QEGVAR(weapons,arifle_AK12_GL_545_F);
+                count = 1;
+            };
+            class _xx_arifle_AK12U_545_F {
+                weapon = QEGVAR(weapons,arifle_AK12U_545_F);
+                count = 1;
+            };
+            class _xx_arifle_RPK12_F {
+                weapon = "arifle_RPK12_F";
+                count = 1;
+            };
+            class _xx_srifle_DMR_05_blk_F {
+                weapon = "srifle_DMR_05_blk_F";
+                count = 1;
+            };
+            class _xx_launch_RPG32_green_F {
+                weapon = "launch_RPG32_green_F";
+                count = 1;
+            };
+        };
+        class TransportItems {
+            class _xx_bipod_02_F_blk {
+                name = "bipod_02_F_blk";
+                count = 2;
+            };
+            class _xx_FirstAidKit {
+                name = "FirstAidKit";
+                count = 10;
+            };
+            class _xx_acc_flashlight {
+                name = "acc_flashlight";
+                count = 5;
+            };
+            class _xx_acc_pointer_IR {
+                name = "acc_pointer_IR";
+                count = 5;
+            };
+            class _xx_Laserdesignator_03 {
+                name = "Laserdesignator_03";
+                count = 1;
+            };
+            class _xx_Binocular {
+                name = "Binocular";
+                count = 1;
+            };
+            class _xx_Medikit {
+                name = "Medikit";
+                count = 1;
+            };
+            class _xx_MineDetector {
+                name = "MineDetector";
+                count = 1;
+            };
+            class _xx_ToolKit {
+                name = "ToolKit";
+                count = 1;
+            };
+            class _xx_optic_ACO_grn_AK_F {
+                name = QEGVAR(weapons,optic_ACO_grn_AK_F);
+                count = 2;
+            };
+            class _xx_optic_Arco_blk_F {
+                name = "optic_Arco_blk_F";
+                count = 1;
+            };
+            class _xx_optic_Arco_AK_blk_F {
+                name = "optic_Arco_AK_blk_F";
+                count = 1;
+            };
+            class _xx_optic_DMS_weathered_F {
+                name = "optic_DMS_weathered_F";
+                count = 1;
+            };
+            class _xx_Rangefinder {
+                name = "Rangefinder";
+                count = 1;
+            };
+            class _xx_O_NVGoggles_grn_F {
+                name = "O_NVGoggles_grn_F";
+                count = 5;
+            };
+        };
+        class TransportBackpacks {
+            class _xx_B_Parachute {
+                backpack = "B_Parachute";
+                count = 3;
+            };
+            class _xx_B_FieldPack_taiga_F {
+                backpack = "B_FieldPack_taiga_F";
+                count = 2;
+            };
+        };
+    };
+    class GVAR(O_R_Heli_Transport_04_box_ard_F): GVAR(O_R_Heli_Transport_04_box_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Heli_Transport_04_box_ard_F.jpg";
+        faction = "ghost_red";
+        crew = "O_helipilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rotor_1_bend_move", 0}, {"rotor_2_bend_move", 0}, {"rotor_1_destruct_hide", 0}, {"rotor_2_destruct_hide", 0}, {"gear_1_damper_move", -0.33}, {"gear_1_stabil_1_rot", -0.33}, {"gear_1_stabil_2_rot", -0.33}, {"gear_2_damper_move", -0.33}, {"gear_2_stabil_1_rot", -0.33}, {"gear_2_stabil_2_rot", -0.33}, {"gear_3_damper_move", -0.33}, {"gear_3_stabil_1_rot", -0.33}, {"gear_3_stabil_2_rot", -0.33}, {"door_1_rot", 0}, {"door_1_handle_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot", 0}, {"display_off_hide", 0}, {"display_1_agl_rot_1", -0.33}, {"display_1_agl_rot_2", -0.33}, {"display_1_agl_rot_3", -0.33}, {"display_1_asl_10_rot", 7.59}, {"display_1_asl_100_rot", 7.59}, {"display_1_battery_1_rot", 1}, {"display_1_battery_2_rot", 1}, {"display_1_collective_move", 0}, {"display_1_compass_rot", 0}, {"display_1_enginetemp_1_rot", 0}, {"display_1_enginetemp_2_rot", 0}, {"display_1_fuel_rot", 1}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_dive_move", 0}, {"display_1_oil_rot", 1}, {"display_1_rpm_rot", 0}, {"display_1_speed_rot_1", 0}, {"display_1_speed_rot_2", 0}, {"display_1_torque_rot_1", 0}, {"display_1_torque_rot_2", 0}, {"display_1_verticalspeed_slider_move", 0}, {"display_1_verticalspeed_rot_1", 0}, {"display_1_verticalspeed_rot_2", 0}, {"display_1_verticalspeed_rot_3", 0}, {"display_2_agl_rot_1", -0.33}, {"display_2_agl_rot_2", -0.33}, {"display_2_agl_rot_3", -0.33}, {"display_2_asl_10_rot", 7.59}, {"display_2_asl_100_rot", 7.59}, {"display_2_battery_1_rot", 1}, {"display_2_battery_2_rot", 1}, {"display_2_collective_move", 0}, {"display_2_compass_rot", 0}, {"display_2_enginetemp_1_rot", 0}, {"display_2_enginetemp_2_rot", 0}, {"display_2_fuel_rot", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_dive_move", 0}, {"display_2_oil_rot", 1}, {"display_2_rpm_rot", 0}, {"display_2_speed_rot_1", 0}, {"display_2_speed_rot_2", 0}, {"display_2_torque_rot_1", 0}, {"display_2_torque_rot_2", 0}, {"display_2_verticalspeed_slider_move", 0}, {"display_2_verticalspeed_rot_1", 0}, {"display_2_verticalspeed_rot_2", 0}, {"display_2_verticalspeed_rot_3", 0}, {"indicator_agl_rot_1", -0.33}, {"indicator_agl_rot_2", -0.33}, {"indicator_agl_rot_3", -0.33}, {"indicator_horizon_bank_rot", 0}, {"indicator_horizon_dive_rot", 0}, {"indicator_speed_rot_1", 0}, {"indicator_speed_rot_2", 0}, {"indicator_verticalspeed_rot_1", 0}, {"indicator_verticalspeed_rot_2", 0}, {"indicator_verticalspeed_rot_3", 0}, {"display_agl_0xxx_hide", -0.33}, {"display_agl_1xxx_hide", -0.33}, {"display_agl_2xxx_hide", -0.33}, {"display_agl_3xxx_hide", -0.33}, {"display_agl_4xxx_hide", -0.33}, {"display_agl_5xxx_hide", -0.33}, {"display_agl_6xxx_hide", -0.33}, {"display_agl_7xxx_hide", -0.33}, {"display_agl_8xxx_hide", -0.33}, {"display_agl_9xxx_hide", -0.33}, {"display_agl_x0xx_hide", -0.33}, {"display_agl_x1xx_hide", -0.33}, {"display_agl_x2xx_hide", -0.33}, {"display_agl_x3xx_hide", -0.33}, {"display_agl_x4xx_hide", -0.33}, {"display_agl_x5xx_hide", -0.33}, {"display_agl_x6xx_hide", -0.33}, {"display_agl_x7xx_hide", -0.33}, {"display_agl_x8xx_hide", -0.33}, {"display_agl_x9xx_hide", -0.33}, {"display_agl_xx0x_hide", -0.33}, {"display_agl_xx1x_hide", -0.33}, {"display_agl_xx2x_hide", -0.33}, {"display_agl_xx3x_hide", -0.33}, {"display_agl_xx4x_hide", -0.33}, {"display_agl_xx5x_hide", -0.33}, {"display_agl_xx6x_hide", -0.33}, {"display_agl_xx7x_hide", -0.33}, {"display_agl_xx8x_hide", -0.33}, {"display_agl_xx9x_hide", -0.33}, {"display_agl_xxx0_hide", -0.33}, {"display_agl_xxx1_hide", -0.33}, {"display_agl_xxx2_hide", -0.33}, {"display_agl_xxx3_hide", -0.33}, {"display_agl_xxx4_hide", -0.33}, {"display_agl_xxx5_hide", -0.33}, {"display_agl_xxx6_hide", -0.33}, {"display_agl_xxx7_hide", -0.33}, {"display_agl_xxx8_hide", -0.33}, {"display_agl_xxx9_hide", -0.33}, {"display_speed_0xx_hide", 0}, {"display_speed_1xx_hide", 0}, {"display_speed_2xx_hide", 0}, {"display_speed_3xx_hide", 0}, {"display_speed_4xx_hide", 0}, {"display_speed_5xx_hide", 0}, {"display_speed_6xx_hide", 0}, {"display_speed_7xx_hide", 0}, {"display_speed_8xx_hide", 0}, {"display_speed_9xx_hide", 0}, {"display_speed_x0x_hide", 0}, {"display_speed_x1x_hide", 0}, {"display_speed_x2x_hide", 0}, {"display_speed_x3x_hide", 0}, {"display_speed_x4x_hide", 0}, {"display_speed_x5x_hide", 0}, {"display_speed_x6x_hide", 0}, {"display_speed_x7x_hide", 0}, {"display_speed_x8x_hide", 0}, {"display_speed_x9x_hide", 0}, {"display_speed_xx0_hide", 0}, {"display_speed_xx1_hide", 0}, {"display_speed_xx2_hide", 0}, {"display_speed_xx3_hide", 0}, {"display_speed_xx4_hide", 0}, {"display_speed_xx5_hide", 0}, {"display_speed_xx6_hide", 0}, {"display_speed_xx7_hide", 0}, {"display_speed_xx8_hide", 0}, {"display_speed_xx9_hide", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"stick_collective_1_rot", 0}, {"stick_collective_2_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"optics_1_rot", 0}, {"optics_1_muzzle_rot", 0}, {"positionlights", 0}, {"collisionlight_red_blinking", 0}};
+            hide[] = {"zasleh", "light_1_hide", "rotor_1_blur", "rotor_2_blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.592;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+            };
+            class LoadmasterTurret: LoadmasterTurret {
+                gunnerType = "O_crew_F";
+            };
+        };
+        class TransportBackpacks {
+            class _xx_B_Parachute {
+                backpack = "B_Parachute";
+                count = 3;
+            };
+            class _xx_B_FieldPack_green_F {
+                backpack = "B_FieldPack_green_F";
+                count = 2;
+            };
+        };
+    };
+    class GVAR(O_R_Heli_Transport_04_covered_F): O_Heli_Transport_04_covered_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Heli_Transport_04_covered_F.jpg";
+        displayName = "Mi-290 Tuskar (Transport)";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_helipilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        textureList[] = {"Russian2", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_RUS_02_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_RUS2_02_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_RUS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_RUS_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rotor_1_bend_move", 0}, {"rotor_2_bend_move", 0}, {"rotor_1_destruct_hide", 0}, {"rotor_2_destruct_hide", 0}, {"gear_1_damper_move", -0.33}, {"gear_1_stabil_1_rot", -0.33}, {"gear_1_stabil_2_rot", -0.33}, {"gear_2_damper_move", -0.33}, {"gear_2_stabil_1_rot", -0.33}, {"gear_2_stabil_2_rot", -0.33}, {"gear_3_damper_move", -0.33}, {"gear_3_stabil_1_rot", -0.33}, {"gear_3_stabil_2_rot", -0.33}, {"door_1_rot", 0}, {"door_1_handle_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot", 0}, {"display_off_hide", 0}, {"display_1_agl_rot_1", -0.33}, {"display_1_agl_rot_2", -0.33}, {"display_1_agl_rot_3", -0.33}, {"display_1_asl_10_rot", 7.59}, {"display_1_asl_100_rot", 7.59}, {"display_1_battery_1_rot", 1}, {"display_1_battery_2_rot", 1}, {"display_1_collective_move", 0}, {"display_1_compass_rot", 0}, {"display_1_enginetemp_1_rot", 0}, {"display_1_enginetemp_2_rot", 0}, {"display_1_fuel_rot", 1}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_dive_move", 0}, {"display_1_oil_rot", 1}, {"display_1_rpm_rot", 0}, {"display_1_speed_rot_1", 0}, {"display_1_speed_rot_2", 0}, {"display_1_torque_rot_1", 0}, {"display_1_torque_rot_2", 0}, {"display_1_verticalspeed_slider_move", 0}, {"display_1_verticalspeed_rot_1", 0}, {"display_1_verticalspeed_rot_2", 0}, {"display_1_verticalspeed_rot_3", 0}, {"display_2_agl_rot_1", -0.33}, {"display_2_agl_rot_2", -0.33}, {"display_2_agl_rot_3", -0.33}, {"display_2_asl_10_rot", 7.59}, {"display_2_asl_100_rot", 7.59}, {"display_2_battery_1_rot", 1}, {"display_2_battery_2_rot", 1}, {"display_2_collective_move", 0}, {"display_2_compass_rot", 0}, {"display_2_enginetemp_1_rot", 0}, {"display_2_enginetemp_2_rot", 0}, {"display_2_fuel_rot", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_dive_move", 0}, {"display_2_oil_rot", 1}, {"display_2_rpm_rot", 0}, {"display_2_speed_rot_1", 0}, {"display_2_speed_rot_2", 0}, {"display_2_torque_rot_1", 0}, {"display_2_torque_rot_2", 0}, {"display_2_verticalspeed_slider_move", 0}, {"display_2_verticalspeed_rot_1", 0}, {"display_2_verticalspeed_rot_2", 0}, {"display_2_verticalspeed_rot_3", 0}, {"indicator_agl_rot_1", -0.33}, {"indicator_agl_rot_2", -0.33}, {"indicator_agl_rot_3", -0.33}, {"indicator_horizon_bank_rot", 0}, {"indicator_horizon_dive_rot", 0}, {"indicator_speed_rot_1", 0}, {"indicator_speed_rot_2", 0}, {"indicator_verticalspeed_rot_1", 0}, {"indicator_verticalspeed_rot_2", 0}, {"indicator_verticalspeed_rot_3", 0}, {"display_agl_0xxx_hide", -0.33}, {"display_agl_1xxx_hide", -0.33}, {"display_agl_2xxx_hide", -0.33}, {"display_agl_3xxx_hide", -0.33}, {"display_agl_4xxx_hide", -0.33}, {"display_agl_5xxx_hide", -0.33}, {"display_agl_6xxx_hide", -0.33}, {"display_agl_7xxx_hide", -0.33}, {"display_agl_8xxx_hide", -0.33}, {"display_agl_9xxx_hide", -0.33}, {"display_agl_x0xx_hide", -0.33}, {"display_agl_x1xx_hide", -0.33}, {"display_agl_x2xx_hide", -0.33}, {"display_agl_x3xx_hide", -0.33}, {"display_agl_x4xx_hide", -0.33}, {"display_agl_x5xx_hide", -0.33}, {"display_agl_x6xx_hide", -0.33}, {"display_agl_x7xx_hide", -0.33}, {"display_agl_x8xx_hide", -0.33}, {"display_agl_x9xx_hide", -0.33}, {"display_agl_xx0x_hide", -0.33}, {"display_agl_xx1x_hide", -0.33}, {"display_agl_xx2x_hide", -0.33}, {"display_agl_xx3x_hide", -0.33}, {"display_agl_xx4x_hide", -0.33}, {"display_agl_xx5x_hide", -0.33}, {"display_agl_xx6x_hide", -0.33}, {"display_agl_xx7x_hide", -0.33}, {"display_agl_xx8x_hide", -0.33}, {"display_agl_xx9x_hide", -0.33}, {"display_agl_xxx0_hide", -0.33}, {"display_agl_xxx1_hide", -0.33}, {"display_agl_xxx2_hide", -0.33}, {"display_agl_xxx3_hide", -0.33}, {"display_agl_xxx4_hide", -0.33}, {"display_agl_xxx5_hide", -0.33}, {"display_agl_xxx6_hide", -0.33}, {"display_agl_xxx7_hide", -0.33}, {"display_agl_xxx8_hide", -0.33}, {"display_agl_xxx9_hide", -0.33}, {"display_speed_0xx_hide", 0}, {"display_speed_1xx_hide", 0}, {"display_speed_2xx_hide", 0}, {"display_speed_3xx_hide", 0}, {"display_speed_4xx_hide", 0}, {"display_speed_5xx_hide", 0}, {"display_speed_6xx_hide", 0}, {"display_speed_7xx_hide", 0}, {"display_speed_8xx_hide", 0}, {"display_speed_9xx_hide", 0}, {"display_speed_x0x_hide", 0}, {"display_speed_x1x_hide", 0}, {"display_speed_x2x_hide", 0}, {"display_speed_x3x_hide", 0}, {"display_speed_x4x_hide", 0}, {"display_speed_x5x_hide", 0}, {"display_speed_x6x_hide", 0}, {"display_speed_x7x_hide", 0}, {"display_speed_x8x_hide", 0}, {"display_speed_x9x_hide", 0}, {"display_speed_xx0_hide", 0}, {"display_speed_xx1_hide", 0}, {"display_speed_xx2_hide", 0}, {"display_speed_xx3_hide", 0}, {"display_speed_xx4_hide", 0}, {"display_speed_xx5_hide", 0}, {"display_speed_xx6_hide", 0}, {"display_speed_xx7_hide", 0}, {"display_speed_xx8_hide", 0}, {"display_speed_xx9_hide", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"stick_collective_1_rot", 0}, {"stick_collective_2_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"optics_1_rot", 0}, {"optics_1_muzzle_rot", 0}, {"positionlights", 0}, {"collisionlight_red_blinking", 0}, {"door_4_move_1", 0}, {"door_4_move_2", 0}, {"door_4_handle_rot", 0}, {"door_6_rot", 0}, {"door_6_hide", 0}, {"door_5_move_1", 0}, {"door_5_move_2", 0}, {"door_5_handle_rot", 0}};
+            hide[] = {"zasleh", "light_1_hide", "rotor_1_blur", "rotor_2_blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.592;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+            };
+            class LoadmasterTurret: LoadmasterTurret {
+                gunnerType = "O_crew_F";
+            };
+            class CargoTurret_01: CargoTurret_01 {
+            };
+            class CargoTurret_02: CargoTurret_02 {
+            };
+        };
+    };
+    class GVAR(O_R_Heli_Transport_04_covered_ard_F): GVAR(O_R_Heli_Transport_04_covered_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Heli_Transport_04_covered_ard_F.jpg";
+        faction = "ghost_red";
+        crew = "O_helipilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rotor_1_bend_move", 0}, {"rotor_2_bend_move", 0}, {"rotor_1_destruct_hide", 0}, {"rotor_2_destruct_hide", 0}, {"gear_1_damper_move", -0.33}, {"gear_1_stabil_1_rot", -0.33}, {"gear_1_stabil_2_rot", -0.33}, {"gear_2_damper_move", -0.33}, {"gear_2_stabil_1_rot", -0.33}, {"gear_2_stabil_2_rot", -0.33}, {"gear_3_damper_move", -0.33}, {"gear_3_stabil_1_rot", -0.33}, {"gear_3_stabil_2_rot", -0.33}, {"door_1_rot", 0}, {"door_1_handle_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot", 0}, {"display_off_hide", 0}, {"display_1_agl_rot_1", -0.33}, {"display_1_agl_rot_2", -0.33}, {"display_1_agl_rot_3", -0.33}, {"display_1_asl_10_rot", 7.59}, {"display_1_asl_100_rot", 7.59}, {"display_1_battery_1_rot", 1}, {"display_1_battery_2_rot", 1}, {"display_1_collective_move", 0}, {"display_1_compass_rot", 0}, {"display_1_enginetemp_1_rot", 0}, {"display_1_enginetemp_2_rot", 0}, {"display_1_fuel_rot", 1}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_dive_move", 0}, {"display_1_oil_rot", 1}, {"display_1_rpm_rot", 0}, {"display_1_speed_rot_1", 0}, {"display_1_speed_rot_2", 0}, {"display_1_torque_rot_1", 0}, {"display_1_torque_rot_2", 0}, {"display_1_verticalspeed_slider_move", 0}, {"display_1_verticalspeed_rot_1", 0}, {"display_1_verticalspeed_rot_2", 0}, {"display_1_verticalspeed_rot_3", 0}, {"display_2_agl_rot_1", -0.33}, {"display_2_agl_rot_2", -0.33}, {"display_2_agl_rot_3", -0.33}, {"display_2_asl_10_rot", 7.59}, {"display_2_asl_100_rot", 7.59}, {"display_2_battery_1_rot", 1}, {"display_2_battery_2_rot", 1}, {"display_2_collective_move", 0}, {"display_2_compass_rot", 0}, {"display_2_enginetemp_1_rot", 0}, {"display_2_enginetemp_2_rot", 0}, {"display_2_fuel_rot", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_dive_move", 0}, {"display_2_oil_rot", 1}, {"display_2_rpm_rot", 0}, {"display_2_speed_rot_1", 0}, {"display_2_speed_rot_2", 0}, {"display_2_torque_rot_1", 0}, {"display_2_torque_rot_2", 0}, {"display_2_verticalspeed_slider_move", 0}, {"display_2_verticalspeed_rot_1", 0}, {"display_2_verticalspeed_rot_2", 0}, {"display_2_verticalspeed_rot_3", 0}, {"indicator_agl_rot_1", -0.33}, {"indicator_agl_rot_2", -0.33}, {"indicator_agl_rot_3", -0.33}, {"indicator_horizon_bank_rot", 0}, {"indicator_horizon_dive_rot", 0}, {"indicator_speed_rot_1", 0}, {"indicator_speed_rot_2", 0}, {"indicator_verticalspeed_rot_1", 0}, {"indicator_verticalspeed_rot_2", 0}, {"indicator_verticalspeed_rot_3", 0}, {"display_agl_0xxx_hide", -0.33}, {"display_agl_1xxx_hide", -0.33}, {"display_agl_2xxx_hide", -0.33}, {"display_agl_3xxx_hide", -0.33}, {"display_agl_4xxx_hide", -0.33}, {"display_agl_5xxx_hide", -0.33}, {"display_agl_6xxx_hide", -0.33}, {"display_agl_7xxx_hide", -0.33}, {"display_agl_8xxx_hide", -0.33}, {"display_agl_9xxx_hide", -0.33}, {"display_agl_x0xx_hide", -0.33}, {"display_agl_x1xx_hide", -0.33}, {"display_agl_x2xx_hide", -0.33}, {"display_agl_x3xx_hide", -0.33}, {"display_agl_x4xx_hide", -0.33}, {"display_agl_x5xx_hide", -0.33}, {"display_agl_x6xx_hide", -0.33}, {"display_agl_x7xx_hide", -0.33}, {"display_agl_x8xx_hide", -0.33}, {"display_agl_x9xx_hide", -0.33}, {"display_agl_xx0x_hide", -0.33}, {"display_agl_xx1x_hide", -0.33}, {"display_agl_xx2x_hide", -0.33}, {"display_agl_xx3x_hide", -0.33}, {"display_agl_xx4x_hide", -0.33}, {"display_agl_xx5x_hide", -0.33}, {"display_agl_xx6x_hide", -0.33}, {"display_agl_xx7x_hide", -0.33}, {"display_agl_xx8x_hide", -0.33}, {"display_agl_xx9x_hide", -0.33}, {"display_agl_xxx0_hide", -0.33}, {"display_agl_xxx1_hide", -0.33}, {"display_agl_xxx2_hide", -0.33}, {"display_agl_xxx3_hide", -0.33}, {"display_agl_xxx4_hide", -0.33}, {"display_agl_xxx5_hide", -0.33}, {"display_agl_xxx6_hide", -0.33}, {"display_agl_xxx7_hide", -0.33}, {"display_agl_xxx8_hide", -0.33}, {"display_agl_xxx9_hide", -0.33}, {"display_speed_0xx_hide", 0}, {"display_speed_1xx_hide", 0}, {"display_speed_2xx_hide", 0}, {"display_speed_3xx_hide", 0}, {"display_speed_4xx_hide", 0}, {"display_speed_5xx_hide", 0}, {"display_speed_6xx_hide", 0}, {"display_speed_7xx_hide", 0}, {"display_speed_8xx_hide", 0}, {"display_speed_9xx_hide", 0}, {"display_speed_x0x_hide", 0}, {"display_speed_x1x_hide", 0}, {"display_speed_x2x_hide", 0}, {"display_speed_x3x_hide", 0}, {"display_speed_x4x_hide", 0}, {"display_speed_x5x_hide", 0}, {"display_speed_x6x_hide", 0}, {"display_speed_x7x_hide", 0}, {"display_speed_x8x_hide", 0}, {"display_speed_x9x_hide", 0}, {"display_speed_xx0_hide", 0}, {"display_speed_xx1_hide", 0}, {"display_speed_xx2_hide", 0}, {"display_speed_xx3_hide", 0}, {"display_speed_xx4_hide", 0}, {"display_speed_xx5_hide", 0}, {"display_speed_xx6_hide", 0}, {"display_speed_xx7_hide", 0}, {"display_speed_xx8_hide", 0}, {"display_speed_xx9_hide", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"stick_collective_1_rot", 0}, {"stick_collective_2_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"optics_1_rot", 0}, {"optics_1_muzzle_rot", 0}, {"positionlights", 0}, {"collisionlight_red_blinking", 0}, {"door_4_move_1", 0}, {"door_4_move_2", 0}, {"door_4_handle_rot", 0}, {"door_6_rot", 0}, {"door_6_hide", 0}, {"door_5_move_1", 0}, {"door_5_move_2", 0}, {"door_5_handle_rot", 0}};
+            hide[] = {"zasleh", "light_1_hide", "rotor_1_blur", "rotor_2_blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.592;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+            };
+            class LoadmasterTurret: LoadmasterTurret {
+                gunnerType = "O_crew_F";
+            };
+            class CargoTurret_01: CargoTurret_01 {
+            };
+            class CargoTurret_02: CargoTurret_02 {
+            };
+        };
+    };
+    class GVAR(O_R_Heli_Transport_04_fuel_F): O_Heli_Transport_04_fuel_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Heli_Transport_04_fuel_F.jpg";
+        displayName = "Mi-290 Tuskar (Fuel)";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_helipilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        textureList[] = {"Russian2", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_RUS_02_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_RUS2_02_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_Fuel_RUS_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rotor_1_bend_move", 0}, {"rotor_2_bend_move", 0}, {"rotor_1_destruct_hide", 0}, {"rotor_2_destruct_hide", 0}, {"gear_1_damper_move", -0.33}, {"gear_1_stabil_1_rot", -0.33}, {"gear_1_stabil_2_rot", -0.33}, {"gear_2_damper_move", -0.33}, {"gear_2_stabil_1_rot", -0.33}, {"gear_2_stabil_2_rot", -0.33}, {"gear_3_damper_move", -0.33}, {"gear_3_stabil_1_rot", -0.33}, {"gear_3_stabil_2_rot", -0.33}, {"door_1_rot", 0}, {"door_1_handle_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot", 0}, {"display_off_hide", 0}, {"display_1_agl_rot_1", -0.33}, {"display_1_agl_rot_2", -0.33}, {"display_1_agl_rot_3", -0.33}, {"display_1_asl_10_rot", 7.45}, {"display_1_asl_100_rot", 7.45}, {"display_1_battery_1_rot", 1}, {"display_1_battery_2_rot", 1}, {"display_1_collective_move", 0}, {"display_1_compass_rot", 0}, {"display_1_enginetemp_1_rot", 0}, {"display_1_enginetemp_2_rot", 0}, {"display_1_fuel_rot", 1}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_dive_move", 0}, {"display_1_oil_rot", 1}, {"display_1_rpm_rot", 0}, {"display_1_speed_rot_1", 0}, {"display_1_speed_rot_2", 0}, {"display_1_torque_rot_1", 0}, {"display_1_torque_rot_2", 0}, {"display_1_verticalspeed_slider_move", 0}, {"display_1_verticalspeed_rot_1", 0}, {"display_1_verticalspeed_rot_2", 0}, {"display_1_verticalspeed_rot_3", 0}, {"display_2_agl_rot_1", -0.33}, {"display_2_agl_rot_2", -0.33}, {"display_2_agl_rot_3", -0.33}, {"display_2_asl_10_rot", 7.45}, {"display_2_asl_100_rot", 7.45}, {"display_2_battery_1_rot", 1}, {"display_2_battery_2_rot", 1}, {"display_2_collective_move", 0}, {"display_2_compass_rot", 0}, {"display_2_enginetemp_1_rot", 0}, {"display_2_enginetemp_2_rot", 0}, {"display_2_fuel_rot", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_dive_move", 0}, {"display_2_oil_rot", 1}, {"display_2_rpm_rot", 0}, {"display_2_speed_rot_1", 0}, {"display_2_speed_rot_2", 0}, {"display_2_torque_rot_1", 0}, {"display_2_torque_rot_2", 0}, {"display_2_verticalspeed_slider_move", 0}, {"display_2_verticalspeed_rot_1", 0}, {"display_2_verticalspeed_rot_2", 0}, {"display_2_verticalspeed_rot_3", 0}, {"indicator_agl_rot_1", -0.33}, {"indicator_agl_rot_2", -0.33}, {"indicator_agl_rot_3", -0.33}, {"indicator_horizon_bank_rot", 0}, {"indicator_horizon_dive_rot", 0}, {"indicator_speed_rot_1", 0}, {"indicator_speed_rot_2", 0}, {"indicator_verticalspeed_rot_1", 0}, {"indicator_verticalspeed_rot_2", 0}, {"indicator_verticalspeed_rot_3", 0}, {"display_agl_0xxx_hide", -0.33}, {"display_agl_1xxx_hide", -0.33}, {"display_agl_2xxx_hide", -0.33}, {"display_agl_3xxx_hide", -0.33}, {"display_agl_4xxx_hide", -0.33}, {"display_agl_5xxx_hide", -0.33}, {"display_agl_6xxx_hide", -0.33}, {"display_agl_7xxx_hide", -0.33}, {"display_agl_8xxx_hide", -0.33}, {"display_agl_9xxx_hide", -0.33}, {"display_agl_x0xx_hide", -0.33}, {"display_agl_x1xx_hide", -0.33}, {"display_agl_x2xx_hide", -0.33}, {"display_agl_x3xx_hide", -0.33}, {"display_agl_x4xx_hide", -0.33}, {"display_agl_x5xx_hide", -0.33}, {"display_agl_x6xx_hide", -0.33}, {"display_agl_x7xx_hide", -0.33}, {"display_agl_x8xx_hide", -0.33}, {"display_agl_x9xx_hide", -0.33}, {"display_agl_xx0x_hide", -0.33}, {"display_agl_xx1x_hide", -0.33}, {"display_agl_xx2x_hide", -0.33}, {"display_agl_xx3x_hide", -0.33}, {"display_agl_xx4x_hide", -0.33}, {"display_agl_xx5x_hide", -0.33}, {"display_agl_xx6x_hide", -0.33}, {"display_agl_xx7x_hide", -0.33}, {"display_agl_xx8x_hide", -0.33}, {"display_agl_xx9x_hide", -0.33}, {"display_agl_xxx0_hide", -0.33}, {"display_agl_xxx1_hide", -0.33}, {"display_agl_xxx2_hide", -0.33}, {"display_agl_xxx3_hide", -0.33}, {"display_agl_xxx4_hide", -0.33}, {"display_agl_xxx5_hide", -0.33}, {"display_agl_xxx6_hide", -0.33}, {"display_agl_xxx7_hide", -0.33}, {"display_agl_xxx8_hide", -0.33}, {"display_agl_xxx9_hide", -0.33}, {"display_speed_0xx_hide", 0}, {"display_speed_1xx_hide", 0}, {"display_speed_2xx_hide", 0}, {"display_speed_3xx_hide", 0}, {"display_speed_4xx_hide", 0}, {"display_speed_5xx_hide", 0}, {"display_speed_6xx_hide", 0}, {"display_speed_7xx_hide", 0}, {"display_speed_8xx_hide", 0}, {"display_speed_9xx_hide", 0}, {"display_speed_x0x_hide", 0}, {"display_speed_x1x_hide", 0}, {"display_speed_x2x_hide", 0}, {"display_speed_x3x_hide", 0}, {"display_speed_x4x_hide", 0}, {"display_speed_x5x_hide", 0}, {"display_speed_x6x_hide", 0}, {"display_speed_x7x_hide", 0}, {"display_speed_x8x_hide", 0}, {"display_speed_x9x_hide", 0}, {"display_speed_xx0_hide", 0}, {"display_speed_xx1_hide", 0}, {"display_speed_xx2_hide", 0}, {"display_speed_xx3_hide", 0}, {"display_speed_xx4_hide", 0}, {"display_speed_xx5_hide", 0}, {"display_speed_xx6_hide", 0}, {"display_speed_xx7_hide", 0}, {"display_speed_xx8_hide", 0}, {"display_speed_xx9_hide", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"stick_collective_1_rot", 0}, {"stick_collective_2_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"optics_1_rot", 0}, {"optics_1_muzzle_rot", 0}, {"positionlights", 0}, {"collisionlight_red_blinking", 0}};
+            hide[] = {"zasleh", "light_1_hide", "rotor_1_blur", "rotor_2_blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.446;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+            };
+            class LoadmasterTurret: LoadmasterTurret {
+                gunnerType = "O_crew_F";
+            };
+        };
+    };
+    class GVAR(O_R_Heli_Transport_04_fuel_ard_F): GVAR(O_R_Heli_Transport_04_fuel_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Heli_Transport_04_fuel_ard_F.jpg";
+        faction = "ghost_red";
+        crew = "O_helipilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rotor_1_bend_move", 0}, {"rotor_2_bend_move", 0}, {"rotor_1_destruct_hide", 0}, {"rotor_2_destruct_hide", 0}, {"gear_1_damper_move", -0.33}, {"gear_1_stabil_1_rot", -0.33}, {"gear_1_stabil_2_rot", -0.33}, {"gear_2_damper_move", -0.33}, {"gear_2_stabil_1_rot", -0.33}, {"gear_2_stabil_2_rot", -0.33}, {"gear_3_damper_move", -0.33}, {"gear_3_stabil_1_rot", -0.33}, {"gear_3_stabil_2_rot", -0.33}, {"door_1_rot", 0}, {"door_1_handle_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot", 0}, {"display_off_hide", 0}, {"display_1_agl_rot_1", -0.33}, {"display_1_agl_rot_2", -0.33}, {"display_1_agl_rot_3", -0.33}, {"display_1_asl_10_rot", 7.45}, {"display_1_asl_100_rot", 7.45}, {"display_1_battery_1_rot", 1}, {"display_1_battery_2_rot", 1}, {"display_1_collective_move", 0}, {"display_1_compass_rot", 0}, {"display_1_enginetemp_1_rot", 0}, {"display_1_enginetemp_2_rot", 0}, {"display_1_fuel_rot", 1}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_dive_move", 0}, {"display_1_oil_rot", 1}, {"display_1_rpm_rot", 0}, {"display_1_speed_rot_1", 0}, {"display_1_speed_rot_2", 0}, {"display_1_torque_rot_1", 0}, {"display_1_torque_rot_2", 0}, {"display_1_verticalspeed_slider_move", 0}, {"display_1_verticalspeed_rot_1", 0}, {"display_1_verticalspeed_rot_2", 0}, {"display_1_verticalspeed_rot_3", 0}, {"display_2_agl_rot_1", -0.33}, {"display_2_agl_rot_2", -0.33}, {"display_2_agl_rot_3", -0.33}, {"display_2_asl_10_rot", 7.45}, {"display_2_asl_100_rot", 7.45}, {"display_2_battery_1_rot", 1}, {"display_2_battery_2_rot", 1}, {"display_2_collective_move", 0}, {"display_2_compass_rot", 0}, {"display_2_enginetemp_1_rot", 0}, {"display_2_enginetemp_2_rot", 0}, {"display_2_fuel_rot", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_dive_move", 0}, {"display_2_oil_rot", 1}, {"display_2_rpm_rot", 0}, {"display_2_speed_rot_1", 0}, {"display_2_speed_rot_2", 0}, {"display_2_torque_rot_1", 0}, {"display_2_torque_rot_2", 0}, {"display_2_verticalspeed_slider_move", 0}, {"display_2_verticalspeed_rot_1", 0}, {"display_2_verticalspeed_rot_2", 0}, {"display_2_verticalspeed_rot_3", 0}, {"indicator_agl_rot_1", -0.33}, {"indicator_agl_rot_2", -0.33}, {"indicator_agl_rot_3", -0.33}, {"indicator_horizon_bank_rot", 0}, {"indicator_horizon_dive_rot", 0}, {"indicator_speed_rot_1", 0}, {"indicator_speed_rot_2", 0}, {"indicator_verticalspeed_rot_1", 0}, {"indicator_verticalspeed_rot_2", 0}, {"indicator_verticalspeed_rot_3", 0}, {"display_agl_0xxx_hide", -0.33}, {"display_agl_1xxx_hide", -0.33}, {"display_agl_2xxx_hide", -0.33}, {"display_agl_3xxx_hide", -0.33}, {"display_agl_4xxx_hide", -0.33}, {"display_agl_5xxx_hide", -0.33}, {"display_agl_6xxx_hide", -0.33}, {"display_agl_7xxx_hide", -0.33}, {"display_agl_8xxx_hide", -0.33}, {"display_agl_9xxx_hide", -0.33}, {"display_agl_x0xx_hide", -0.33}, {"display_agl_x1xx_hide", -0.33}, {"display_agl_x2xx_hide", -0.33}, {"display_agl_x3xx_hide", -0.33}, {"display_agl_x4xx_hide", -0.33}, {"display_agl_x5xx_hide", -0.33}, {"display_agl_x6xx_hide", -0.33}, {"display_agl_x7xx_hide", -0.33}, {"display_agl_x8xx_hide", -0.33}, {"display_agl_x9xx_hide", -0.33}, {"display_agl_xx0x_hide", -0.33}, {"display_agl_xx1x_hide", -0.33}, {"display_agl_xx2x_hide", -0.33}, {"display_agl_xx3x_hide", -0.33}, {"display_agl_xx4x_hide", -0.33}, {"display_agl_xx5x_hide", -0.33}, {"display_agl_xx6x_hide", -0.33}, {"display_agl_xx7x_hide", -0.33}, {"display_agl_xx8x_hide", -0.33}, {"display_agl_xx9x_hide", -0.33}, {"display_agl_xxx0_hide", -0.33}, {"display_agl_xxx1_hide", -0.33}, {"display_agl_xxx2_hide", -0.33}, {"display_agl_xxx3_hide", -0.33}, {"display_agl_xxx4_hide", -0.33}, {"display_agl_xxx5_hide", -0.33}, {"display_agl_xxx6_hide", -0.33}, {"display_agl_xxx7_hide", -0.33}, {"display_agl_xxx8_hide", -0.33}, {"display_agl_xxx9_hide", -0.33}, {"display_speed_0xx_hide", 0}, {"display_speed_1xx_hide", 0}, {"display_speed_2xx_hide", 0}, {"display_speed_3xx_hide", 0}, {"display_speed_4xx_hide", 0}, {"display_speed_5xx_hide", 0}, {"display_speed_6xx_hide", 0}, {"display_speed_7xx_hide", 0}, {"display_speed_8xx_hide", 0}, {"display_speed_9xx_hide", 0}, {"display_speed_x0x_hide", 0}, {"display_speed_x1x_hide", 0}, {"display_speed_x2x_hide", 0}, {"display_speed_x3x_hide", 0}, {"display_speed_x4x_hide", 0}, {"display_speed_x5x_hide", 0}, {"display_speed_x6x_hide", 0}, {"display_speed_x7x_hide", 0}, {"display_speed_x8x_hide", 0}, {"display_speed_x9x_hide", 0}, {"display_speed_xx0_hide", 0}, {"display_speed_xx1_hide", 0}, {"display_speed_xx2_hide", 0}, {"display_speed_xx3_hide", 0}, {"display_speed_xx4_hide", 0}, {"display_speed_xx5_hide", 0}, {"display_speed_xx6_hide", 0}, {"display_speed_xx7_hide", 0}, {"display_speed_xx8_hide", 0}, {"display_speed_xx9_hide", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"stick_collective_1_rot", 0}, {"stick_collective_2_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"optics_1_rot", 0}, {"optics_1_muzzle_rot", 0}, {"positionlights", 0}, {"collisionlight_red_blinking", 0}};
+            hide[] = {"zasleh", "light_1_hide", "rotor_1_blur", "rotor_2_blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.446;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+            };
+            class LoadmasterTurret: LoadmasterTurret {
+                gunnerType = "O_crew_F";
+            };
+        };
+    };
+    class GVAR(O_R_Heli_Transport_04_medevac_F): O_Heli_Transport_04_medevac_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Heli_Transport_04_medevac_F.jpg";
+        displayName = "Mi-290 Tuskar (Medical)";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_helipilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        textureList[] = {"Russian2", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_RUS_02_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_RUS2_02_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_RUS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_RUS_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rotor_1_bend_move", 0}, {"rotor_2_bend_move", 0}, {"rotor_1_destruct_hide", 0}, {"rotor_2_destruct_hide", 0}, {"gear_1_damper_move", -0.33}, {"gear_1_stabil_1_rot", -0.33}, {"gear_1_stabil_2_rot", -0.33}, {"gear_2_damper_move", -0.33}, {"gear_2_stabil_1_rot", -0.33}, {"gear_2_stabil_2_rot", -0.33}, {"gear_3_damper_move", -0.33}, {"gear_3_stabil_1_rot", -0.33}, {"gear_3_stabil_2_rot", -0.33}, {"door_1_rot", 0}, {"door_1_handle_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot", 0}, {"display_off_hide", 0}, {"display_1_agl_rot_1", -0.33}, {"display_1_agl_rot_2", -0.33}, {"display_1_agl_rot_3", -0.33}, {"display_1_asl_10_rot", 7.59}, {"display_1_asl_100_rot", 7.59}, {"display_1_battery_1_rot", 1}, {"display_1_battery_2_rot", 1}, {"display_1_collective_move", 0}, {"display_1_compass_rot", 0}, {"display_1_enginetemp_1_rot", 0}, {"display_1_enginetemp_2_rot", 0}, {"display_1_fuel_rot", 1}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_dive_move", 0}, {"display_1_oil_rot", 1}, {"display_1_rpm_rot", 0}, {"display_1_speed_rot_1", 0}, {"display_1_speed_rot_2", 0}, {"display_1_torque_rot_1", 0}, {"display_1_torque_rot_2", 0}, {"display_1_verticalspeed_slider_move", 0}, {"display_1_verticalspeed_rot_1", 0}, {"display_1_verticalspeed_rot_2", 0}, {"display_1_verticalspeed_rot_3", 0}, {"display_2_agl_rot_1", -0.33}, {"display_2_agl_rot_2", -0.33}, {"display_2_agl_rot_3", -0.33}, {"display_2_asl_10_rot", 7.59}, {"display_2_asl_100_rot", 7.59}, {"display_2_battery_1_rot", 1}, {"display_2_battery_2_rot", 1}, {"display_2_collective_move", 0}, {"display_2_compass_rot", 0}, {"display_2_enginetemp_1_rot", 0}, {"display_2_enginetemp_2_rot", 0}, {"display_2_fuel_rot", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_dive_move", 0}, {"display_2_oil_rot", 1}, {"display_2_rpm_rot", 0}, {"display_2_speed_rot_1", 0}, {"display_2_speed_rot_2", 0}, {"display_2_torque_rot_1", 0}, {"display_2_torque_rot_2", 0}, {"display_2_verticalspeed_slider_move", 0}, {"display_2_verticalspeed_rot_1", 0}, {"display_2_verticalspeed_rot_2", 0}, {"display_2_verticalspeed_rot_3", 0}, {"indicator_agl_rot_1", -0.33}, {"indicator_agl_rot_2", -0.33}, {"indicator_agl_rot_3", -0.33}, {"indicator_horizon_bank_rot", 0}, {"indicator_horizon_dive_rot", 0}, {"indicator_speed_rot_1", 0}, {"indicator_speed_rot_2", 0}, {"indicator_verticalspeed_rot_1", 0}, {"indicator_verticalspeed_rot_2", 0}, {"indicator_verticalspeed_rot_3", 0}, {"display_agl_0xxx_hide", -0.33}, {"display_agl_1xxx_hide", -0.33}, {"display_agl_2xxx_hide", -0.33}, {"display_agl_3xxx_hide", -0.33}, {"display_agl_4xxx_hide", -0.33}, {"display_agl_5xxx_hide", -0.33}, {"display_agl_6xxx_hide", -0.33}, {"display_agl_7xxx_hide", -0.33}, {"display_agl_8xxx_hide", -0.33}, {"display_agl_9xxx_hide", -0.33}, {"display_agl_x0xx_hide", -0.33}, {"display_agl_x1xx_hide", -0.33}, {"display_agl_x2xx_hide", -0.33}, {"display_agl_x3xx_hide", -0.33}, {"display_agl_x4xx_hide", -0.33}, {"display_agl_x5xx_hide", -0.33}, {"display_agl_x6xx_hide", -0.33}, {"display_agl_x7xx_hide", -0.33}, {"display_agl_x8xx_hide", -0.33}, {"display_agl_x9xx_hide", -0.33}, {"display_agl_xx0x_hide", -0.33}, {"display_agl_xx1x_hide", -0.33}, {"display_agl_xx2x_hide", -0.33}, {"display_agl_xx3x_hide", -0.33}, {"display_agl_xx4x_hide", -0.33}, {"display_agl_xx5x_hide", -0.33}, {"display_agl_xx6x_hide", -0.33}, {"display_agl_xx7x_hide", -0.33}, {"display_agl_xx8x_hide", -0.33}, {"display_agl_xx9x_hide", -0.33}, {"display_agl_xxx0_hide", -0.33}, {"display_agl_xxx1_hide", -0.33}, {"display_agl_xxx2_hide", -0.33}, {"display_agl_xxx3_hide", -0.33}, {"display_agl_xxx4_hide", -0.33}, {"display_agl_xxx5_hide", -0.33}, {"display_agl_xxx6_hide", -0.33}, {"display_agl_xxx7_hide", -0.33}, {"display_agl_xxx8_hide", -0.33}, {"display_agl_xxx9_hide", -0.33}, {"display_speed_0xx_hide", 0}, {"display_speed_1xx_hide", 0}, {"display_speed_2xx_hide", 0}, {"display_speed_3xx_hide", 0}, {"display_speed_4xx_hide", 0}, {"display_speed_5xx_hide", 0}, {"display_speed_6xx_hide", 0}, {"display_speed_7xx_hide", 0}, {"display_speed_8xx_hide", 0}, {"display_speed_9xx_hide", 0}, {"display_speed_x0x_hide", 0}, {"display_speed_x1x_hide", 0}, {"display_speed_x2x_hide", 0}, {"display_speed_x3x_hide", 0}, {"display_speed_x4x_hide", 0}, {"display_speed_x5x_hide", 0}, {"display_speed_x6x_hide", 0}, {"display_speed_x7x_hide", 0}, {"display_speed_x8x_hide", 0}, {"display_speed_x9x_hide", 0}, {"display_speed_xx0_hide", 0}, {"display_speed_xx1_hide", 0}, {"display_speed_xx2_hide", 0}, {"display_speed_xx3_hide", 0}, {"display_speed_xx4_hide", 0}, {"display_speed_xx5_hide", 0}, {"display_speed_xx6_hide", 0}, {"display_speed_xx7_hide", 0}, {"display_speed_xx8_hide", 0}, {"display_speed_xx9_hide", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"stick_collective_1_rot", 0}, {"stick_collective_2_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"optics_1_rot", 0}, {"optics_1_muzzle_rot", 0}, {"positionlights", 0}, {"collisionlight_red_blinking", 0}, {"door_4_move_1", 0}, {"door_4_move_2", 0}, {"door_4_handle_rot", 0}, {"door_6_rot", 0}, {"door_6_hide", 0}};
+            hide[] = {"zasleh", "light_1_hide", "rotor_1_blur", "rotor_2_blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.592;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+            };
+            class LoadmasterTurret: LoadmasterTurret {
+                gunnerType = "O_crew_F";
+            };
+        };
+    };
+    class GVAR(O_R_Heli_Transport_04_medevac_ard_F): GVAR(O_R_Heli_Transport_04_medevac_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Heli_Transport_04_medevac_ard_F.jpg";
+        faction = "ghost_red";
+        crew = "O_helipilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rotor_1_bend_move", 0}, {"rotor_2_bend_move", 0}, {"rotor_1_destruct_hide", 0}, {"rotor_2_destruct_hide", 0}, {"gear_1_damper_move", -0.33}, {"gear_1_stabil_1_rot", -0.33}, {"gear_1_stabil_2_rot", -0.33}, {"gear_2_damper_move", -0.33}, {"gear_2_stabil_1_rot", -0.33}, {"gear_2_stabil_2_rot", -0.33}, {"gear_3_damper_move", -0.33}, {"gear_3_stabil_1_rot", -0.33}, {"gear_3_stabil_2_rot", -0.33}, {"door_1_rot", 0}, {"door_1_handle_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot", 0}, {"display_off_hide", 0}, {"display_1_agl_rot_1", -0.33}, {"display_1_agl_rot_2", -0.33}, {"display_1_agl_rot_3", -0.33}, {"display_1_asl_10_rot", 7.59}, {"display_1_asl_100_rot", 7.59}, {"display_1_battery_1_rot", 1}, {"display_1_battery_2_rot", 1}, {"display_1_collective_move", 0}, {"display_1_compass_rot", 0}, {"display_1_enginetemp_1_rot", 0}, {"display_1_enginetemp_2_rot", 0}, {"display_1_fuel_rot", 1}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_dive_move", 0}, {"display_1_oil_rot", 1}, {"display_1_rpm_rot", 0}, {"display_1_speed_rot_1", 0}, {"display_1_speed_rot_2", 0}, {"display_1_torque_rot_1", 0}, {"display_1_torque_rot_2", 0}, {"display_1_verticalspeed_slider_move", 0}, {"display_1_verticalspeed_rot_1", 0}, {"display_1_verticalspeed_rot_2", 0}, {"display_1_verticalspeed_rot_3", 0}, {"display_2_agl_rot_1", -0.33}, {"display_2_agl_rot_2", -0.33}, {"display_2_agl_rot_3", -0.33}, {"display_2_asl_10_rot", 7.59}, {"display_2_asl_100_rot", 7.59}, {"display_2_battery_1_rot", 1}, {"display_2_battery_2_rot", 1}, {"display_2_collective_move", 0}, {"display_2_compass_rot", 0}, {"display_2_enginetemp_1_rot", 0}, {"display_2_enginetemp_2_rot", 0}, {"display_2_fuel_rot", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_dive_move", 0}, {"display_2_oil_rot", 1}, {"display_2_rpm_rot", 0}, {"display_2_speed_rot_1", 0}, {"display_2_speed_rot_2", 0}, {"display_2_torque_rot_1", 0}, {"display_2_torque_rot_2", 0}, {"display_2_verticalspeed_slider_move", 0}, {"display_2_verticalspeed_rot_1", 0}, {"display_2_verticalspeed_rot_2", 0}, {"display_2_verticalspeed_rot_3", 0}, {"indicator_agl_rot_1", -0.33}, {"indicator_agl_rot_2", -0.33}, {"indicator_agl_rot_3", -0.33}, {"indicator_horizon_bank_rot", 0}, {"indicator_horizon_dive_rot", 0}, {"indicator_speed_rot_1", 0}, {"indicator_speed_rot_2", 0}, {"indicator_verticalspeed_rot_1", 0}, {"indicator_verticalspeed_rot_2", 0}, {"indicator_verticalspeed_rot_3", 0}, {"display_agl_0xxx_hide", -0.33}, {"display_agl_1xxx_hide", -0.33}, {"display_agl_2xxx_hide", -0.33}, {"display_agl_3xxx_hide", -0.33}, {"display_agl_4xxx_hide", -0.33}, {"display_agl_5xxx_hide", -0.33}, {"display_agl_6xxx_hide", -0.33}, {"display_agl_7xxx_hide", -0.33}, {"display_agl_8xxx_hide", -0.33}, {"display_agl_9xxx_hide", -0.33}, {"display_agl_x0xx_hide", -0.33}, {"display_agl_x1xx_hide", -0.33}, {"display_agl_x2xx_hide", -0.33}, {"display_agl_x3xx_hide", -0.33}, {"display_agl_x4xx_hide", -0.33}, {"display_agl_x5xx_hide", -0.33}, {"display_agl_x6xx_hide", -0.33}, {"display_agl_x7xx_hide", -0.33}, {"display_agl_x8xx_hide", -0.33}, {"display_agl_x9xx_hide", -0.33}, {"display_agl_xx0x_hide", -0.33}, {"display_agl_xx1x_hide", -0.33}, {"display_agl_xx2x_hide", -0.33}, {"display_agl_xx3x_hide", -0.33}, {"display_agl_xx4x_hide", -0.33}, {"display_agl_xx5x_hide", -0.33}, {"display_agl_xx6x_hide", -0.33}, {"display_agl_xx7x_hide", -0.33}, {"display_agl_xx8x_hide", -0.33}, {"display_agl_xx9x_hide", -0.33}, {"display_agl_xxx0_hide", -0.33}, {"display_agl_xxx1_hide", -0.33}, {"display_agl_xxx2_hide", -0.33}, {"display_agl_xxx3_hide", -0.33}, {"display_agl_xxx4_hide", -0.33}, {"display_agl_xxx5_hide", -0.33}, {"display_agl_xxx6_hide", -0.33}, {"display_agl_xxx7_hide", -0.33}, {"display_agl_xxx8_hide", -0.33}, {"display_agl_xxx9_hide", -0.33}, {"display_speed_0xx_hide", 0}, {"display_speed_1xx_hide", 0}, {"display_speed_2xx_hide", 0}, {"display_speed_3xx_hide", 0}, {"display_speed_4xx_hide", 0}, {"display_speed_5xx_hide", 0}, {"display_speed_6xx_hide", 0}, {"display_speed_7xx_hide", 0}, {"display_speed_8xx_hide", 0}, {"display_speed_9xx_hide", 0}, {"display_speed_x0x_hide", 0}, {"display_speed_x1x_hide", 0}, {"display_speed_x2x_hide", 0}, {"display_speed_x3x_hide", 0}, {"display_speed_x4x_hide", 0}, {"display_speed_x5x_hide", 0}, {"display_speed_x6x_hide", 0}, {"display_speed_x7x_hide", 0}, {"display_speed_x8x_hide", 0}, {"display_speed_x9x_hide", 0}, {"display_speed_xx0_hide", 0}, {"display_speed_xx1_hide", 0}, {"display_speed_xx2_hide", 0}, {"display_speed_xx3_hide", 0}, {"display_speed_xx4_hide", 0}, {"display_speed_xx5_hide", 0}, {"display_speed_xx6_hide", 0}, {"display_speed_xx7_hide", 0}, {"display_speed_xx8_hide", 0}, {"display_speed_xx9_hide", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"stick_collective_1_rot", 0}, {"stick_collective_2_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"optics_1_rot", 0}, {"optics_1_muzzle_rot", 0}, {"positionlights", 0}, {"collisionlight_red_blinking", 0}, {"door_4_move_1", 0}, {"door_4_move_2", 0}, {"door_4_handle_rot", 0}, {"door_6_rot", 0}, {"door_6_hide", 0}};
+            hide[] = {"zasleh", "light_1_hide", "rotor_1_blur", "rotor_2_blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.592;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+            };
+            class LoadmasterTurret: LoadmasterTurret {
+                gunnerType = "O_crew_F";
+            };
+        };
+    };
+    class GVAR(O_R_Heli_Transport_04_repair_F): O_Heli_Transport_04_repair_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Heli_Transport_04_repair_F.jpg";
+        displayName = "Mi-290 Tuskar (Repair)";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_helipilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        textureList[] = {"Russian2", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_RUS_02_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_RUS2_02_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_RUS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_RUS_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rotor_1_bend_move", 0}, {"rotor_2_bend_move", 0}, {"rotor_1_destruct_hide", 0}, {"rotor_2_destruct_hide", 0}, {"gear_1_damper_move", -0.33}, {"gear_1_stabil_1_rot", -0.33}, {"gear_1_stabil_2_rot", -0.33}, {"gear_2_damper_move", -0.33}, {"gear_2_stabil_1_rot", -0.33}, {"gear_2_stabil_2_rot", -0.33}, {"gear_3_damper_move", -0.33}, {"gear_3_stabil_1_rot", -0.33}, {"gear_3_stabil_2_rot", -0.33}, {"door_1_rot", 0}, {"door_1_handle_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot", 0}, {"display_off_hide", 0}, {"display_1_agl_rot_1", -0.33}, {"display_1_agl_rot_2", -0.33}, {"display_1_agl_rot_3", -0.33}, {"display_1_asl_10_rot", 7.59}, {"display_1_asl_100_rot", 7.59}, {"display_1_battery_1_rot", 1}, {"display_1_battery_2_rot", 1}, {"display_1_collective_move", 0}, {"display_1_compass_rot", 0}, {"display_1_enginetemp_1_rot", 0}, {"display_1_enginetemp_2_rot", 0}, {"display_1_fuel_rot", 1}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_dive_move", 0}, {"display_1_oil_rot", 1}, {"display_1_rpm_rot", 0}, {"display_1_speed_rot_1", 0}, {"display_1_speed_rot_2", 0}, {"display_1_torque_rot_1", 0}, {"display_1_torque_rot_2", 0}, {"display_1_verticalspeed_slider_move", 0}, {"display_1_verticalspeed_rot_1", 0}, {"display_1_verticalspeed_rot_2", 0}, {"display_1_verticalspeed_rot_3", 0}, {"display_2_agl_rot_1", -0.33}, {"display_2_agl_rot_2", -0.33}, {"display_2_agl_rot_3", -0.33}, {"display_2_asl_10_rot", 7.59}, {"display_2_asl_100_rot", 7.59}, {"display_2_battery_1_rot", 1}, {"display_2_battery_2_rot", 1}, {"display_2_collective_move", 0}, {"display_2_compass_rot", 0}, {"display_2_enginetemp_1_rot", 0}, {"display_2_enginetemp_2_rot", 0}, {"display_2_fuel_rot", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_dive_move", 0}, {"display_2_oil_rot", 1}, {"display_2_rpm_rot", 0}, {"display_2_speed_rot_1", 0}, {"display_2_speed_rot_2", 0}, {"display_2_torque_rot_1", 0}, {"display_2_torque_rot_2", 0}, {"display_2_verticalspeed_slider_move", 0}, {"display_2_verticalspeed_rot_1", 0}, {"display_2_verticalspeed_rot_2", 0}, {"display_2_verticalspeed_rot_3", 0}, {"indicator_agl_rot_1", -0.33}, {"indicator_agl_rot_2", -0.33}, {"indicator_agl_rot_3", -0.33}, {"indicator_horizon_bank_rot", 0}, {"indicator_horizon_dive_rot", 0}, {"indicator_speed_rot_1", 0}, {"indicator_speed_rot_2", 0}, {"indicator_verticalspeed_rot_1", 0}, {"indicator_verticalspeed_rot_2", 0}, {"indicator_verticalspeed_rot_3", 0}, {"display_agl_0xxx_hide", -0.33}, {"display_agl_1xxx_hide", -0.33}, {"display_agl_2xxx_hide", -0.33}, {"display_agl_3xxx_hide", -0.33}, {"display_agl_4xxx_hide", -0.33}, {"display_agl_5xxx_hide", -0.33}, {"display_agl_6xxx_hide", -0.33}, {"display_agl_7xxx_hide", -0.33}, {"display_agl_8xxx_hide", -0.33}, {"display_agl_9xxx_hide", -0.33}, {"display_agl_x0xx_hide", -0.33}, {"display_agl_x1xx_hide", -0.33}, {"display_agl_x2xx_hide", -0.33}, {"display_agl_x3xx_hide", -0.33}, {"display_agl_x4xx_hide", -0.33}, {"display_agl_x5xx_hide", -0.33}, {"display_agl_x6xx_hide", -0.33}, {"display_agl_x7xx_hide", -0.33}, {"display_agl_x8xx_hide", -0.33}, {"display_agl_x9xx_hide", -0.33}, {"display_agl_xx0x_hide", -0.33}, {"display_agl_xx1x_hide", -0.33}, {"display_agl_xx2x_hide", -0.33}, {"display_agl_xx3x_hide", -0.33}, {"display_agl_xx4x_hide", -0.33}, {"display_agl_xx5x_hide", -0.33}, {"display_agl_xx6x_hide", -0.33}, {"display_agl_xx7x_hide", -0.33}, {"display_agl_xx8x_hide", -0.33}, {"display_agl_xx9x_hide", -0.33}, {"display_agl_xxx0_hide", -0.33}, {"display_agl_xxx1_hide", -0.33}, {"display_agl_xxx2_hide", -0.33}, {"display_agl_xxx3_hide", -0.33}, {"display_agl_xxx4_hide", -0.33}, {"display_agl_xxx5_hide", -0.33}, {"display_agl_xxx6_hide", -0.33}, {"display_agl_xxx7_hide", -0.33}, {"display_agl_xxx8_hide", -0.33}, {"display_agl_xxx9_hide", -0.33}, {"display_speed_0xx_hide", 0}, {"display_speed_1xx_hide", 0}, {"display_speed_2xx_hide", 0}, {"display_speed_3xx_hide", 0}, {"display_speed_4xx_hide", 0}, {"display_speed_5xx_hide", 0}, {"display_speed_6xx_hide", 0}, {"display_speed_7xx_hide", 0}, {"display_speed_8xx_hide", 0}, {"display_speed_9xx_hide", 0}, {"display_speed_x0x_hide", 0}, {"display_speed_x1x_hide", 0}, {"display_speed_x2x_hide", 0}, {"display_speed_x3x_hide", 0}, {"display_speed_x4x_hide", 0}, {"display_speed_x5x_hide", 0}, {"display_speed_x6x_hide", 0}, {"display_speed_x7x_hide", 0}, {"display_speed_x8x_hide", 0}, {"display_speed_x9x_hide", 0}, {"display_speed_xx0_hide", 0}, {"display_speed_xx1_hide", 0}, {"display_speed_xx2_hide", 0}, {"display_speed_xx3_hide", 0}, {"display_speed_xx4_hide", 0}, {"display_speed_xx5_hide", 0}, {"display_speed_xx6_hide", 0}, {"display_speed_xx7_hide", 0}, {"display_speed_xx8_hide", 0}, {"display_speed_xx9_hide", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"stick_collective_1_rot", 0}, {"stick_collective_2_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"optics_1_rot", 0}, {"optics_1_muzzle_rot", 0}, {"positionlights", 0}, {"collisionlight_red_blinking", 0}};
+            hide[] = {"zasleh", "light_1_hide", "rotor_1_blur", "rotor_2_blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.592;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+            };
+            class LoadmasterTurret: LoadmasterTurret {
+                gunnerType = "O_crew_F";
+            };
+        };
+    };
+    class GVAR(O_R_Heli_Transport_04_repair_ard_F): GVAR(O_R_Heli_Transport_04_repair_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_Heli_Transport_04_repair_ard_F.jpg";
+        faction = "ghost_red";
+        crew = "O_helipilot_F";
+        typicalCargo[] = {"O_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rotor_1_bend_move", 0}, {"rotor_2_bend_move", 0}, {"rotor_1_destruct_hide", 0}, {"rotor_2_destruct_hide", 0}, {"gear_1_damper_move", -0.33}, {"gear_1_stabil_1_rot", -0.33}, {"gear_1_stabil_2_rot", -0.33}, {"gear_2_damper_move", -0.33}, {"gear_2_stabil_1_rot", -0.33}, {"gear_2_stabil_2_rot", -0.33}, {"gear_3_damper_move", -0.33}, {"gear_3_stabil_1_rot", -0.33}, {"gear_3_stabil_2_rot", -0.33}, {"door_1_rot", 0}, {"door_1_handle_rot", 0}, {"door_2_rot", 0}, {"door_2_handle_rot", 0}, {"door_3_rot", 0}, {"door_3_handle_rot", 0}, {"display_off_hide", 0}, {"display_1_agl_rot_1", -0.33}, {"display_1_agl_rot_2", -0.33}, {"display_1_agl_rot_3", -0.33}, {"display_1_asl_10_rot", 7.59}, {"display_1_asl_100_rot", 7.59}, {"display_1_battery_1_rot", 1}, {"display_1_battery_2_rot", 1}, {"display_1_collective_move", 0}, {"display_1_compass_rot", 0}, {"display_1_enginetemp_1_rot", 0}, {"display_1_enginetemp_2_rot", 0}, {"display_1_fuel_rot", 1}, {"display_1_horizon_bank_rot", 0}, {"display_1_horizon_dive_move", 0}, {"display_1_oil_rot", 1}, {"display_1_rpm_rot", 0}, {"display_1_speed_rot_1", 0}, {"display_1_speed_rot_2", 0}, {"display_1_torque_rot_1", 0}, {"display_1_torque_rot_2", 0}, {"display_1_verticalspeed_slider_move", 0}, {"display_1_verticalspeed_rot_1", 0}, {"display_1_verticalspeed_rot_2", 0}, {"display_1_verticalspeed_rot_3", 0}, {"display_2_agl_rot_1", -0.33}, {"display_2_agl_rot_2", -0.33}, {"display_2_agl_rot_3", -0.33}, {"display_2_asl_10_rot", 7.59}, {"display_2_asl_100_rot", 7.59}, {"display_2_battery_1_rot", 1}, {"display_2_battery_2_rot", 1}, {"display_2_collective_move", 0}, {"display_2_compass_rot", 0}, {"display_2_enginetemp_1_rot", 0}, {"display_2_enginetemp_2_rot", 0}, {"display_2_fuel_rot", 1}, {"display_2_horizon_bank_rot", 0}, {"display_2_horizon_dive_move", 0}, {"display_2_oil_rot", 1}, {"display_2_rpm_rot", 0}, {"display_2_speed_rot_1", 0}, {"display_2_speed_rot_2", 0}, {"display_2_torque_rot_1", 0}, {"display_2_torque_rot_2", 0}, {"display_2_verticalspeed_slider_move", 0}, {"display_2_verticalspeed_rot_1", 0}, {"display_2_verticalspeed_rot_2", 0}, {"display_2_verticalspeed_rot_3", 0}, {"indicator_agl_rot_1", -0.33}, {"indicator_agl_rot_2", -0.33}, {"indicator_agl_rot_3", -0.33}, {"indicator_horizon_bank_rot", 0}, {"indicator_horizon_dive_rot", 0}, {"indicator_speed_rot_1", 0}, {"indicator_speed_rot_2", 0}, {"indicator_verticalspeed_rot_1", 0}, {"indicator_verticalspeed_rot_2", 0}, {"indicator_verticalspeed_rot_3", 0}, {"display_agl_0xxx_hide", -0.33}, {"display_agl_1xxx_hide", -0.33}, {"display_agl_2xxx_hide", -0.33}, {"display_agl_3xxx_hide", -0.33}, {"display_agl_4xxx_hide", -0.33}, {"display_agl_5xxx_hide", -0.33}, {"display_agl_6xxx_hide", -0.33}, {"display_agl_7xxx_hide", -0.33}, {"display_agl_8xxx_hide", -0.33}, {"display_agl_9xxx_hide", -0.33}, {"display_agl_x0xx_hide", -0.33}, {"display_agl_x1xx_hide", -0.33}, {"display_agl_x2xx_hide", -0.33}, {"display_agl_x3xx_hide", -0.33}, {"display_agl_x4xx_hide", -0.33}, {"display_agl_x5xx_hide", -0.33}, {"display_agl_x6xx_hide", -0.33}, {"display_agl_x7xx_hide", -0.33}, {"display_agl_x8xx_hide", -0.33}, {"display_agl_x9xx_hide", -0.33}, {"display_agl_xx0x_hide", -0.33}, {"display_agl_xx1x_hide", -0.33}, {"display_agl_xx2x_hide", -0.33}, {"display_agl_xx3x_hide", -0.33}, {"display_agl_xx4x_hide", -0.33}, {"display_agl_xx5x_hide", -0.33}, {"display_agl_xx6x_hide", -0.33}, {"display_agl_xx7x_hide", -0.33}, {"display_agl_xx8x_hide", -0.33}, {"display_agl_xx9x_hide", -0.33}, {"display_agl_xxx0_hide", -0.33}, {"display_agl_xxx1_hide", -0.33}, {"display_agl_xxx2_hide", -0.33}, {"display_agl_xxx3_hide", -0.33}, {"display_agl_xxx4_hide", -0.33}, {"display_agl_xxx5_hide", -0.33}, {"display_agl_xxx6_hide", -0.33}, {"display_agl_xxx7_hide", -0.33}, {"display_agl_xxx8_hide", -0.33}, {"display_agl_xxx9_hide", -0.33}, {"display_speed_0xx_hide", 0}, {"display_speed_1xx_hide", 0}, {"display_speed_2xx_hide", 0}, {"display_speed_3xx_hide", 0}, {"display_speed_4xx_hide", 0}, {"display_speed_5xx_hide", 0}, {"display_speed_6xx_hide", 0}, {"display_speed_7xx_hide", 0}, {"display_speed_8xx_hide", 0}, {"display_speed_9xx_hide", 0}, {"display_speed_x0x_hide", 0}, {"display_speed_x1x_hide", 0}, {"display_speed_x2x_hide", 0}, {"display_speed_x3x_hide", 0}, {"display_speed_x4x_hide", 0}, {"display_speed_x5x_hide", 0}, {"display_speed_x6x_hide", 0}, {"display_speed_x7x_hide", 0}, {"display_speed_x8x_hide", 0}, {"display_speed_x9x_hide", 0}, {"display_speed_xx0_hide", 0}, {"display_speed_xx1_hide", 0}, {"display_speed_xx2_hide", 0}, {"display_speed_xx3_hide", 0}, {"display_speed_xx4_hide", 0}, {"display_speed_xx5_hide", 0}, {"display_speed_xx6_hide", 0}, {"display_speed_xx7_hide", 0}, {"display_speed_xx8_hide", 0}, {"display_speed_xx9_hide", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"stick_collective_1_rot", 0}, {"stick_collective_2_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"optics_1_rot", 0}, {"optics_1_muzzle_rot", 0}, {"positionlights", 0}, {"collisionlight_red_blinking", 0}};
+            hide[] = {"zasleh", "light_1_hide", "rotor_1_blur", "rotor_2_blur", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 2.592;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
+            };
+            class LoadmasterTurret: LoadmasterTurret {
+                gunnerType = "O_crew_F";
+            };
+        };
+    };
+    class GVAR(O_R_UGV_01_medical_F): GVAR(UGV_01_medical_base_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_UGV_01_medical_F.jpg";
+        displayName = "UGV Uran Medical";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_UAV_AI";
+        typicalCargo[] = {"O_Soldier_F"};
+        textureList[] = {"Green", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_ext_medevac_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_int_RUkhk_CO.paa", "\A3\Soft_F_Orange\UGV_01\Data\Turret_IDAP_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(O_R_UGV_01_medical_ard_F): GVAR(O_R_UGV_01_medical_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_UGV_01_medical_ard_F.jpg";
+        faction = "ghost_red";
+        typicalCargo[] = {"O_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(O_R_UGV_01_rcws_F): UGV_01_rcws_base_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_UGV_01_rcws_F.jpg";
+        displayName = "UGV Uran RCWS";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_UAV_AI";
+        typicalCargo[] = {"O_Soldier_F"};
+        textureList[] = {"Green", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_ext_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\soft\UGV_01\Data\UGV_01_int_RUkhk_CO.paa", "\z\ghost\addons\vehicle\models\soft\UGV_01\Data\Turret_RUkhk_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                magazines[] = {"200Rnd_127x99_mag_Tracer_Green", "200Rnd_127x99_mag_Tracer_Green", "64Rnd_40mm_G_belt", "64Rnd_40mm_G_belt"};
+            };
+            class CargoTurret_01: CargoTurret_01 {
+            };
+        };
+    };
+    class GVAR(O_R_UGV_01_rcws_ard_F): GVAR(O_R_UGV_01_rcws_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_UGV_01_rcws_ard_F.jpg";
+        faction = "ghost_red";
+        typicalCargo[] = {"O_Soldier_F"};
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(B_T_Heli_Attack_03_F): GVAR(B_Heli_Attack_03_F) {
+        faction = "ghost_blue";
+        crew = "B_T_Helipilot_F";
+        typicalCargo[] = {"B_T_Helipilot_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellBlue {
+                magazine = "SmokeShellBlue";
+                count = 2;
+            };
+            class _xx_30Rnd_65x39_caseless_khaki_mag {
+                magazine = "30Rnd_65x39_caseless_khaki_mag";
+                count = 4;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_MXC_khk_F {
+                weapon = "arifle_MXC_khk_F";
+                count = 2;
+            };
+        };
+    };
+    class GVAR(B_W_Heli_Attack_03_F): GVAR(B_Heli_Attack_03_F) {
+        faction = "ghost_blue";
+        crew = "B_W_Helipilot_F";
+        typicalCargo[] = {"B_W_Helipilot_F"};
+        scope = 1;
+        scopeCurator = 0;
+        class TransportMagazines {
+            class _xx_SmokeShell {
+                magazine = "SmokeShell";
+                count = 2;
+            };
+            class _xx_SmokeShellBlue {
+                magazine = "SmokeShellBlue";
+                count = 2;
+            };
+            class _xx_30Rnd_65x39_caseless_black_mag {
+                magazine = "30Rnd_65x39_caseless_black_mag";
+                count = 4;
+            };
+        };
+        class TransportWeapons {
+            class _xx_arifle_MXC_Black_F {
+                weapon = "arifle_MXC_Black_F";
+                count = 2;
+            };
+        };
+    };
+    class O_UAV_02_dynamicLoadout_F: UAV_02_dynamicLoadout_base_F {
+        class Components: Components {
+            class TransportPylonsComponent: TransportPylonsComponent {
+                class pylons: pylons {
+                    class pylons1;
+                };
+            };
+        };
+    };
+    class GVAR(B_D_Heli_Attack_03_F): GVAR(B_Heli_Attack_03_F) {
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_B_D_Heli_Attack_03_F.jpg";
+        faction = "ghost_blue";
+        crew = "B_Helipilot_F";
+        typicalCargo[] = {"B_Helipilot_F"};
+        textureList[] = {"Sand", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Attack_03\Data\Heli_Attack_03_body_sand_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_03\Data\Heli_Attack_03_details_sand_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_03\Data\Heli_Attack_03_adds_sand_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+    };
+    class GVAR(O_R_UAV_02_dynamicLoadout_F): O_UAV_02_dynamicLoadout_F {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_UAV_02_dynamicLoadout_F.jpg";
+        displayName = "Sokol 3T";
+        side = 0;
+        faction = "ghost_red";
+        crew = "O_UAV_AI";
+        typicalCargo[] = {"O_UAV_AI"};
+        textureList[] = {"Rus", 1};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\UAV_02\Data\UAV_02_RUgrey_CO.paa"};
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"propeller", 0}, {"propellerstatic", 0}, {"propellerblurred", 0}, {"mainturret", 0}, {"maingun", 0}, {"flap_1_1", 0}, {"flap_2_1", 0}, {"aileron_1_1", 0}, {"aileron_2_1", 0}, {"rudder_1_1", 0}, {"rudder_2_1", 0}, {"frontgear_1", 0}, {"frontgear_1_support", 0}, {"frontgear_1_door_l", 0}, {"frontgear_1_door_r", 0}, {"backgear_1_door_l", 0}, {"backgear_1_door_r", 0}, {"frontgearsteering", 0}, {"frontgeardamper", 0}, {"maingear_2_1", 0}, {"maingear_2_1_support", 0}, {"maingear_2_2_support", 0}, {"maingear_2_2", 0}, {"maingear_2_1_suspension", 0}, {"maingear_2_2_suspension", 0}, {"wheel_1_1", 0}, {"wheel_2_1", 0}, {"wheel_2_2", 0}, {"damagehide", 0}, {"missilea", 0}, {"missileb", 0}, {"missilea1", 1}, {"missilea2", 1}, {"missilea3", 1}, {"missileb1", 1}, {"missileb2", 1}, {"missileb3", 1}, {"positionlights", 0}};
+            hide[] = {"zasleh", "l svetlo", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 1.593;
+            verticalOffsetWorld = 0.025;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+        class Components: Components {
+            class TransportPylonsComponent: TransportPylonsComponent {
+                UIPicture = "\A3\Drones_F\Air_F_Gamma\UAV_02\Data\UI\UAV_02_base_EDEN_F.paa";
+                class pylons: pylons {
+                    class pylons1: pylons1 {
+                        hardpoints[] = {"O_BOMB_PYLON", "O_MISSILE_PYLON", "UNI_SCALPEL"};
+                        attachment = QGVAR(PylonRack_6Rnd_Vikhr_missiles);
+                    };
+                    class pylons2: pylons1 {
+                        UIposition[] = {0.33, 0.15};
+                        mirroredMissilePos = 1;
+                    };
+                };
+                class presets {
+                    class empty {
+                        displayName = "STR_empty";
+                        attachment[] = {};
+                    };
+                    class default {
+                        displayName = "STR_vehicle_default";
+                        attachment[] = {QGVAR(PylonRack_6Rnd_Vikhr_missiles), QGVAR(PylonRack_6Rnd_Vikhr_missiles)};
+                    };
+                    class CAS {
+                        displayName = "CAS";
+                        attachment[] = {"PylonMissile_1Rnd_Bomb_03_F", "PylonMissile_1Rnd_Bomb_03_F"};
+                    };
+                };
+            };
+        };
+    };
+    class GVAR(O_R_UAV_02_dynamicLoadout_ard_F): GVAR(O_R_UAV_02_dynamicLoadout_F) {
+        author = "Avery Kaiserin";
+        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_UAV_02_dynamicLoadout_ard_F.jpg";
+        faction = "ghost_red";
+        scope = 1;
+        scopeCurator = 0;
+        class SimpleObject {
+            eden = 1;
+            animate[] = {{"propeller", 0}, {"propellerstatic", 0}, {"propellerblurred", 0}, {"mainturret", 0}, {"maingun", 0}, {"flap_1_1", 0}, {"flap_2_1", 0}, {"aileron_1_1", 0}, {"aileron_2_1", 0}, {"rudder_1_1", 0}, {"rudder_2_1", 0}, {"frontgear_1", 0}, {"frontgear_1_support", 0}, {"frontgear_1_door_l", 0}, {"frontgear_1_door_r", 0}, {"backgear_1_door_l", 0}, {"backgear_1_door_r", 0}, {"frontgearsteering", 0}, {"frontgeardamper", 0}, {"maingear_2_1", 0}, {"maingear_2_1_support", 0}, {"maingear_2_2_support", 0}, {"maingear_2_2", 0}, {"maingear_2_1_suspension", 0}, {"maingear_2_2_suspension", 0}, {"wheel_1_1", 0}, {"wheel_2_1", 0}, {"wheel_2_2", 0}, {"damagehide", 0}, {"missilea", 0}, {"missileb", 0}, {"missilea1", 1}, {"missilea2", 1}, {"missilea3", 1}, {"missileb1", 1}, {"missileb2", 1}, {"missileb3", 1}, {"positionlights", 0}};
+            hide[] = {"zasleh", "l svetlo", "zadni svetlo", "clan", "podsvit pristroju", "poskozeni"};
+            verticalOffset = 1.593;
+            verticalOffsetWorld = 0.025;
+            init = "[this, '', []] call bis_fnc_initVehicle";
+        };
+    };
 };
 class CfgWeapons {
     class autocannon_Base_F;
     class CannonCore;
+    class LMG_RCWS;
     class missiles_Vorona;
     class RocketPods;
     class SmokeLauncher;
@@ -19740,6 +23153,9 @@ class CfgWeapons {
     };
     class gatling_25mm: CannonCore {
         magazines[] += {QGVAR(PylonWeapon_220Rnd_25mm_shells), QGVAR(PylonWeapon_220Rnd_25mm_shells_yellow)};
+    };
+    class LMG_coax: LMG_RCWS {
+        magazines[] += {QGVAR(250Rnd_762x51_Belt), QGVAR(250Rnd_762x51_Belt_Red)};
     };
     class GVAR(Gatling_30mm_Heli_Attack_03_F): CannonCore {
         scope = 1;
@@ -19999,6 +23415,14 @@ class CfgWeapons {
             burstRangeMax = 6;
         };
     };
+    class GVAR(autocannon_30mm_lxWS): autocannon_30mm_CTWS {
+        class HE: HE {
+            class player: player {
+                reloadTime = 0.133333;
+                textureType = "fastAuto";
+            };
+        };
+    };
     class GVAR(autocannon_30mm_APC_Wheeled_04): autocannon_30mm_CTWS {
         class HE: HE {
             magazines[] = {QGVAR(340Rnd_30mm_HE_shells), QGVAR(340Rnd_30mm_HE_shells_Tracer_Red), QGVAR(340Rnd_30mm_HE_shells_Tracer_Green), QGVAR(340Rnd_30mm_HE_shells_Tracer_Yellow)};
@@ -20090,44 +23514,6 @@ class CfgWeapons {
         magazineReloadTime = 60;
         magazines[] = {"Vorona_HEAT", "Vorona_HE", QGVAR(4rnd_Vorona_HEAT), QGVAR(4rnd_Vorona_HE)};
     };
-    class GVAR(weapon_AGM_154Launcher): RocketPods {
-        displayName = "AGM-154C JSOW";
-        weaponLockDelay = 0.1;
-        weaponLockSystem = 6;
-        cmImmunity = 0.5;
-        minRange = 400;
-        minRangeProbab = 0.4;
-        midRange = 2000;
-        midRangeProbab = 0.95;
-        maxRange = 16000;
-        maxRangeProbab = 0.9;
-        magazines[] = {QGVAR(magazine_Bomb_AGM_154_x1), QGVAR(PylonMissile_Bomb_AGM_154_x1)};
-        reloadTime = 0.1;
-        autoFire = 0;
-        magazineReloadTime = 0.1;
-        aiRateOfFire = 5.0;
-        aiRateOfFireDistance = 500;
-        nameSound = "";
-        cursor = "EmptyCursor";
-        cursorAim = "bomb";
-        showAimCursorInternal = 0;
-        ballisticsComputer = 8;
-        textureType = "semi";
-        lockedTargetSound[] = {"\A3\Sounds_F\weapons\Rockets\locked_3", "db-5", 2.5};
-        lockingTargetSound[] = {"\A3\Sounds_F\weapons\Rockets\locked_1", "db-5", 1};
-    };
-    class GVAR(cannon_20mm_Heli_Light_03): cannon_20mm {
-        displayName = "Cannon 20mm";
-        magazines[] = {QGVAR(PylonWeapon_250Rnd_20mm_shells)};
-        muzzles[] = {"HE"};
-        class HE: HE {
-            magazines[] = {QGVAR(PylonWeapon_250Rnd_20mm_shells)};
-            class player: player {
-                dispersion = 0.0018;
-                reloadTime = 0.1;
-            };
-        };
-    };
     class GVAR(missiles_Vikhr): RocketPods {
         autoFire = 0;
         displayName = "Vektor";
@@ -20175,6 +23561,44 @@ class CfgWeapons {
         };
         class StandardSound {
             soundsetshot[] = {"RocketsHeavy_Shot_SoundSet"};
+        };
+    };
+    class GVAR(weapon_AGM_154Launcher): RocketPods {
+        displayName = "AGM-154C JSOW";
+        weaponLockDelay = 0.1;
+        weaponLockSystem = 6;
+        cmImmunity = 0.5;
+        minRange = 400;
+        minRangeProbab = 0.4;
+        midRange = 2000;
+        midRangeProbab = 0.95;
+        maxRange = 16000;
+        maxRangeProbab = 0.9;
+        magazines[] = {QGVAR(magazine_Bomb_AGM_154_x1), QGVAR(PylonMissile_Bomb_AGM_154_x1)};
+        reloadTime = 0.1;
+        autoFire = 0;
+        magazineReloadTime = 0.1;
+        aiRateOfFire = 5.0;
+        aiRateOfFireDistance = 500;
+        nameSound = "";
+        cursor = "EmptyCursor";
+        cursorAim = "bomb";
+        showAimCursorInternal = 0;
+        ballisticsComputer = 8;
+        textureType = "semi";
+        lockedTargetSound[] = {"\A3\Sounds_F\weapons\Rockets\locked_3", "db-5", 2.5};
+        lockingTargetSound[] = {"\A3\Sounds_F\weapons\Rockets\locked_1", "db-5", 1};
+    };
+    class GVAR(cannon_20mm_Heli_Light_03): cannon_20mm {
+        displayName = "Cannon 20mm";
+        magazines[] = {QGVAR(PylonWeapon_250Rnd_20mm_shells)};
+        muzzles[] = {"HE"};
+        class HE: HE {
+            magazines[] = {QGVAR(PylonWeapon_250Rnd_20mm_shells)};
+            class player: player {
+                dispersion = 0.0018;
+                reloadTime = 0.1;
+            };
         };
     };
 };

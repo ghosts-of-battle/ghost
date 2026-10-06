@@ -89,12 +89,11 @@ class CfgPatches {
         weapons[] = {
         };
         requiredVersion = REQUIRED_VERSION;
-        // ATLAS IS A REAL DEPENDENCY (2026-08-29): every man inherits
-        // from Atlas's own HIMF, so without Atlas there is no faction -
-        // and skipWhenMissingDependencies says so rather than loading
-        // thirty men with no parent. The tier magazines are still named
-        // as STRINGS, so ghost_fa_tiers is not required.
-        requiredAddons[] = {"ghost_main", "A3_Atlas_Characters_F_Atlas"};
+        // Every man inherits Atlas's own HIMF - since 2026-10-04 the copies
+        // imported into ghost_uniform (tools/aegis_port --seeds), so Atlas is
+        // no longer required. The tier magazines are still named as STRINGS,
+        // so ghost_fa_tiers is not required.
+        requiredAddons[] = {"ghost_main", "ghost_uniform", "ghost_vehicle", "ghost_weapons"};
         skipWhenMissingDependencies = 1;
         author = QAUTHOR;
         VERSION_CONFIG;

@@ -1,16 +1,17 @@
 class CfgMagazines {
-    // Aegis weapon-fitted mag bases (defined in A3_Aegis_Weapons_F_Aegis)
-    class Aegis_10Rnd_762x54_SVD_Red_Mag_F;   // SVD Dragunov, 10Rnd 7.62x54R
-    class 5Rnd_127x99_Mag;                     // WF50, 5Rnd .50 BMG (12.7x99)
-    class 30Rnd_545x39_AK12_Mag_F;             // AK-12, 30Rnd 5.45x39
-    class Aegis_45Rnd_545x39_Mag_F;            // RPK-74, 45Rnd 5.45x39
-    class Aegis_60Rnd_545x39_Mag_F;            // AK-12 drum, 60Rnd 5.45x39
+    // Aegis weapon-fitted mag bases - the copies imported into ghost_weapons (tools/aegis_port)
+    class EGVAR(weapons,10Rnd_762x54_SVD_Red_Mag_F);   // SVD Dragunov, 10Rnd 7.62x54R
+    class EGVAR(weapons,5Rnd_127x99_Mag);                     // WF50, 5Rnd .50 BMG (12.7x99)
+    class EGVAR(weapons,30Rnd_545x39_AK12_Mag_F);             // AK-12, 30Rnd 5.45x39
+    class EGVAR(weapons,45Rnd_545x39_Mag_F);            // RPK-74, 45Rnd 5.45x39
+    class EGVAR(weapons,60Rnd_545x39_Mag_F);            // AK-12 drum, 60Rnd 5.45x39
+    class EGVAR(weapons,40Rnd_9x21_Gepard_Mag_F);       // Gepard SMG, 40Rnd 9x21
 
     // =========================================================
     // 7.62x54R SVD (Rahim_762x54) — FA 762x54R Ball HV
     // No FA 7.62x54R box-fed mag existed; built off the SVD mag base.
     // =========================================================
-    class FA_Aegis_10Rnd_762x54_SVD_HV: Aegis_10Rnd_762x54_SVD_Red_Mag_F {
+    class FA_Aegis_10Rnd_762x54_SVD_HV: EGVAR(weapons,10Rnd_762x54_SVD_Red_Mag_F) {
         author = QAUTHOR;
         displayName = "[Ghost] 10Rnd 7.62x54R Ball HV";
         descriptionShort = "7.62x54R Ball HV";
@@ -30,7 +31,7 @@ class CfgMagazines {
     // .50 BMG WF50 (WF50_127x99) — FA Mk258 LRP + Mk211 Mod 0
     // No FA 12.7x99 mag existed; built off the WF50 mag base.
     // =========================================================
-    class FA_Aegis_5Rnd_127x99_Mk258: 5Rnd_127x99_Mag {
+    class FA_Aegis_5Rnd_127x99_Mk258: EGVAR(weapons,5Rnd_127x99_Mag) {
         author = QAUTHOR;
         displayName = "[Ghost] 5Rnd Mk258 LRP";
         descriptionShort = "Mk258 LRP";
@@ -45,7 +46,7 @@ class CfgMagazines {
     class FA_Aegis_5Rnd_127x99_Mk258_T_Orange : FA_Aegis_5Rnd_127x99_Mk258 { displayName = "[Ghost] 5Rnd Mk258 LRP Orange Tracer"; descriptionShort = "Mk258 LRP"; ammo = "FA_b_127x99_Mk258_LRP_T_Orange"; tracersEvery = 4; };
     class FA_Aegis_5Rnd_127x99_Mk258_T_IR     : FA_Aegis_5Rnd_127x99_Mk258 { displayName = "[Ghost] 5Rnd Mk258 LRP IR Tracer";     descriptionShort = "Mk258 LRP";     ammo = "FA_b_127x99_Mk258_LRP_T_IR"; tracersEvery = 4; };
 
-    class FA_Aegis_5Rnd_127x99_Mk211Mod0: 5Rnd_127x99_Mag {
+    class FA_Aegis_5Rnd_127x99_Mk211Mod0: EGVAR(weapons,5Rnd_127x99_Mag) {
         author = QAUTHOR;
         displayName = "[Ghost] 5Rnd Mk211Mod0 AP";
         descriptionShort = "Mk211Mod0 AP";
@@ -64,7 +65,7 @@ class CfgMagazines {
     // 5.45x39 AK-12 / RPK-74 (AK_545x39) — FA 7N44 / 7N48 / 7U5
     // =========================================================
     // 7N44 Osa — 30Rnd (AK-12)
-    class FA_Aegis_30Rnd_545x39_7N44: 30Rnd_545x39_AK12_Mag_F {
+    class FA_Aegis_30Rnd_545x39_7N44: EGVAR(weapons,30Rnd_545x39_AK12_Mag_F) {
         author = QAUTHOR;
         displayName = "[Ghost] 30Rnd 7N44 HP";
         descriptionShort = "7N44 HP";
@@ -80,7 +81,7 @@ class CfgMagazines {
     class FA_Aegis_30Rnd_545x39_7N44_T_IR     : FA_Aegis_30Rnd_545x39_7N44 { displayName = "[Ghost] 30Rnd 7N44 HP IR Tracer";     descriptionShort = "7N44 HP";     ammo = "FA_o_545x39_7N44_HP_T_IR"; tracersEvery = 4; };
 
     // 7N44 Osa — 45Rnd (RPK-74)
-    class FA_Aegis_45Rnd_545x39_7N44: Aegis_45Rnd_545x39_Mag_F {
+    class FA_Aegis_45Rnd_545x39_7N44: EGVAR(weapons,45Rnd_545x39_Mag_F) {
         author = QAUTHOR;
         displayName = "[Ghost] 45Rnd 7N44 HP";
         descriptionShort = "7N44 HP";
@@ -96,7 +97,7 @@ class CfgMagazines {
     class FA_Aegis_45Rnd_545x39_7N44_T_IR     : FA_Aegis_45Rnd_545x39_7N44 { displayName = "[Ghost] 45Rnd 7N44 HP IR Tracer";     descriptionShort = "7N44 HP";     ammo = "FA_o_545x39_7N44_HP_T_IR"; tracersEvery = 4; };
 
     // 7N44 Osa — 60Rnd (AK-12 drum)
-    class FA_Aegis_60Rnd_545x39_7N44: Aegis_60Rnd_545x39_Mag_F {
+    class FA_Aegis_60Rnd_545x39_7N44: EGVAR(weapons,60Rnd_545x39_Mag_F) {
         author = QAUTHOR;
         displayName = "[Ghost] 60Rnd 7N44 HP";
         descriptionShort = "7N44 HP";
@@ -112,7 +113,7 @@ class CfgMagazines {
     class FA_Aegis_60Rnd_545x39_7N44_T_IR     : FA_Aegis_60Rnd_545x39_7N44 { displayName = "[Ghost] 60Rnd 7N44 HP IR Tracer";     descriptionShort = "7N44 HP";     ammo = "FA_o_545x39_7N44_HP_T_IR"; tracersEvery = 4; };
 
     // 7N48 Osa-2 — 30Rnd (AK-12)
-    class FA_Aegis_30Rnd_545x39_7N48: 30Rnd_545x39_AK12_Mag_F {
+    class FA_Aegis_30Rnd_545x39_7N48: EGVAR(weapons,30Rnd_545x39_AK12_Mag_F) {
         author = QAUTHOR;
         displayName = "[Ghost] 30Rnd 7N48 CT";
         descriptionShort = "7N48 CT";
@@ -128,7 +129,7 @@ class CfgMagazines {
     class FA_Aegis_30Rnd_545x39_7N48_T_IR     : FA_Aegis_30Rnd_545x39_7N48 { displayName = "[Ghost] 30Rnd 7N48 CT IR Tracer";     descriptionShort = "7N48 CT";     ammo = "FA_o_545x39_7N48_CT_T_IR"; tracersEvery = 4; };
 
     // 7N48 Osa-2 — 45Rnd (RPK-74)
-    class FA_Aegis_45Rnd_545x39_7N48: Aegis_45Rnd_545x39_Mag_F {
+    class FA_Aegis_45Rnd_545x39_7N48: EGVAR(weapons,45Rnd_545x39_Mag_F) {
         author = QAUTHOR;
         displayName = "[Ghost] 45Rnd 7N48 CT";
         descriptionShort = "7N48 CT";
@@ -144,7 +145,7 @@ class CfgMagazines {
     class FA_Aegis_45Rnd_545x39_7N48_T_IR     : FA_Aegis_45Rnd_545x39_7N48 { displayName = "[Ghost] 45Rnd 7N48 CT IR Tracer";     descriptionShort = "7N48 CT";     ammo = "FA_o_545x39_7N48_CT_T_IR"; tracersEvery = 4; };
 
     // 7U5 Tishina-5 — 30Rnd (AK-12) subsonic
-    class FA_Aegis_30Rnd_545x39_7U5: 30Rnd_545x39_AK12_Mag_F {
+    class FA_Aegis_30Rnd_545x39_7U5: EGVAR(weapons,30Rnd_545x39_AK12_Mag_F) {
         author = QAUTHOR;
         displayName = "[Ghost] 30Rnd 7U5 SubAP";
         descriptionShort = "7U5 SubAP";
@@ -158,4 +159,12 @@ class CfgMagazines {
     class FA_Aegis_30Rnd_545x39_7U5_T_Blue   : FA_Aegis_30Rnd_545x39_7U5 { displayName = "[Ghost] 30Rnd 7U5 SubAP Blue Tracer";   descriptionShort = "7U5 SubAP";   ammo = "FA_o_545x39_7U5_SubAP_T_Blue"; tracersEvery = 4; };
     class FA_Aegis_30Rnd_545x39_7U5_T_Orange : FA_Aegis_30Rnd_545x39_7U5 { displayName = "[Ghost] 30Rnd 7U5 SubAP Orange Tracer"; descriptionShort = "7U5 SubAP"; ammo = "FA_o_545x39_7U5_SubAP_T_Orange"; tracersEvery = 4; };
     class FA_Aegis_30Rnd_545x39_7U5_T_IR     : FA_Aegis_30Rnd_545x39_7U5 { displayName = "[Ghost] 30Rnd 7U5 SubAP IR Tracer";     descriptionShort = "7U5 SubAP";     ammo = "FA_o_545x39_7U5_SubAP_T_IR"; tracersEvery = 4; };
+
+    // =========================================================
+    // 9x21 Gepard (Aegis_SMG_Gepard_9x21) - FA 9x21 Mk424 AP, the round the
+    // 2040 Russian factions carry. Lived in fa_ammo on ghost's imported copy
+    // of this magazine until the import was removed (2026-10-01).
+    // =========================================================
+    class FA_b_40Rnd_9x21_Gepard_Mk424_AP: EGVAR(weapons,40Rnd_9x21_Gepard_Mag_F) { author = QAUTHOR; displayName = "[Ghost] 40Rnd 9x21 Mk424 AP"; displayNameShort = "Mk424 AP"; descriptionShort = "9x21 Mk424 AP"; ammo = "FA_b_9x21_Mk424_AP"; initSpeed = 580; };
+
 };

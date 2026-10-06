@@ -13,7 +13,6 @@ Adds the "Future Ammunition" briefing subject to a unit's map Notes tab, with on
 - `cba_main` _(external)_
 - `ace_ballistics` _(external)_
 - `A3_Weapons_F_Mark` _(external)_
-- `ghost_weapons`
 
 ## Ships
 

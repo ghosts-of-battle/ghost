@@ -1,6 +1,6 @@
 class StageTI
 {
-	texture="z\ghost\addons\weapons\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body_TI_CA.paa";
+	texture="z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body_TI_CA.paa";
 };
 ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};

@@ -44,3 +44,18 @@
 #define AS_BOOST_TIME       2       // s of climb before it noses over
 #define AS_FUZE             15      // m
 #define AS_TIMEOUT          180     // s before a lost missile gives up
+
+// --- the module's siting (ghost_moduleAntiShip) ----------------------------
+#define AS_SITE_COAST       500     // m from the sea the radar may stand - further and it is not coastal
+#define AS_SITE_PROBE       50      // m between water probes along each bearing
+#define AS_SITE_SAMPLES     150     // candidate draws per radar - coast is a thin strip of a TAOR
+#define AS_SITE_SPREAD      2000    // m between two batteries of one side
+#define AS_LAUNCH_MIN       300     // m inland of the radar a launcher stands, at least
+#define AS_LAUNCH_MAX       1500    // m inland of the radar a launcher stands, at most
+#define AS_LAUNCH_SPREAD    80      // m between the launchers of one battery
+#define AS_ALIVE_WAIT       300     // s to wait for the ALiVE adapter before using the module's own area
+#define AS_SITE_SLOPE       0.15    // gradient a radar or launcher may stand on
+#define AS_RADAR_FOOT       8       // m half-size a radar needs clear and dry
+#define AS_LAUNCH_FOOT      10      // m half-size a launcher needs clear and dry
+#define AS_WORLD_REACH      0.71    // of worldSize: a ring from the centre that reaches every corner
+#define AS_SITE_REJECT      -1e6    // score for ground with no sea in reach - never the best

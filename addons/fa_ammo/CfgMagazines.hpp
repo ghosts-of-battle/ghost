@@ -59,8 +59,6 @@ class CfgMagazines {
     class 6Rnd_45ACP_Cylinder;
     class 7Rnd_408_Mag;
     class 30Rnd_9x21_Mag_SMG_02;
-    class ghost_weapons_17Rnd_9x21_Mag;
-    class ghost_weapons_40Rnd_9x21_Gepard_Mag_F;
     // 5.8x42 base mag (Type 115 / CMR-76)
     class 30Rnd_580x42_Mag_F;
 
@@ -1978,8 +1976,6 @@ class CfgMagazines {
     // The issued weapons that had no FA magazine (user, 2026-09-27: "fix missing mags"). Each is the weapon's own
     // magazine carrying an FA round that already existed; the SMG figures use the rounds' SMG-barrel velocity.
     class FA_b_30Rnd_9x21_SMG_02_Mk424_AP: 30Rnd_9x21_Mag_SMG_02 { author = QAUTHOR; displayName = "[Ghost] 30Rnd 9x21 Mk424 AP"; displayNameShort = "Mk424 AP"; descriptionShort = "9x21 Mk424 AP"; ammo = "FA_b_9x21_Mk424_AP"; initSpeed = 580; };
-    class FA_b_17Rnd_9x21_Mk424_AP: ghost_weapons_17Rnd_9x21_Mag { author = QAUTHOR; displayName = "[Ghost] 17Rnd 9x21 Mk424 AP"; displayNameShort = "Mk424 AP"; descriptionShort = "9x21 Mk424 AP"; ammo = "FA_b_9x21_Mk424_AP"; initSpeed = 470; };
-    class FA_b_40Rnd_9x21_Gepard_Mk424_AP: ghost_weapons_40Rnd_9x21_Gepard_Mag_F { author = QAUTHOR; displayName = "[Ghost] 40Rnd 9x21 Mk424 AP"; displayNameShort = "Mk424 AP"; descriptionShort = "9x21 Mk424 AP"; ammo = "FA_b_9x21_Mk424_AP"; initSpeed = 580; };
     class FA_b_6Rnd_45ACP_Mk421: 6Rnd_45ACP_Cylinder { author = QAUTHOR; displayName = "[Ghost] 6Rnd 45ACP Mk421 SubAP"; descriptionShort = "45ACP Mk421 SubAP"; ammo = "FA_b_45ACP_Mk421_SubAP"; initSpeed = 280; };
     class FA_b_7Rnd_408_Mk240: 7Rnd_408_Mag { author = QAUTHOR; displayName = "[Ghost] 7Rnd .408 Mk240"; descriptionShort = ".408 Mk240"; ammo = "FA_b_408_Mk240"; initSpeed = 965; };
     class FA_o_10Rnd_762x54_Ball_HV: 10Rnd_762x54_Mag { author = QAUTHOR; displayName = "[Ghost] 10Rnd 7.62x54R Ball HV"; descriptionShort = "7.62x54R Ball HV"; ammo = "FA_o_762x54R_Ball_HV"; initSpeed = 850; };

@@ -57,7 +57,9 @@ Atlas's characters addon is a real dependency; without it the PBO is skipped.
 ## Requires
 
 - `ghost_main`
-- `A3_Atlas_Characters_F_Atlas` _(external)_
+- `ghost_uniform`
+- `ghost_vehicle`
+- `ghost_weapons`
 
 Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking the load order when something above is absent.
 

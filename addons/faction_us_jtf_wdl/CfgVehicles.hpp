@@ -130,7 +130,7 @@ class CfgVehicles {
     class B_UAV_05_F;
     class B_UGV_02_Demining_F;
     class B_W_VTOL_03_unarmed_QAV;
-    class ghost_uniform_B_W_ghillie_wdl_F;
+    class B_ghillie_lsh_F;
     class B_W_qav_abramsx;
     class B_W_soldier_M_F;
     class B_W_soldier_UGV_02_Demining_F;
@@ -1634,23 +1634,27 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         crew = QGVAR(B_W_Pilot_F);
     };
-    class GVAR(B_W_ghillie_spotter_wdl_F): ghost_uniform_B_W_ghillie_wdl_F {
+    class GVAR(B_W_ghillie_spotter_wdl_F): B_ghillie_lsh_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Spotter (Woodland)";
         side = 1;
         faction = QUOTE(ADDON);
+        magazines[] = {"FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","ClaymoreDirectionalMine_Remote_Mag","APERSTripMine_Wire_Mag","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","ClaymoreDirectionalMine_Remote_Mag","APERSTripMine_Wire_Mag","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
         linkedItems[] = {"V_PlateCarrier1_wdl","ItemGPS","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_INDEP"};
         respawnLinkedItems[] = {"V_PlateCarrier1_wdl","ItemGPS","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_INDEP"};
     };
-    class GVAR(B_W_ghillie_wdl_F): ghost_uniform_B_W_ghillie_wdl_F {
+    class GVAR(B_W_ghillie_wdl_F): B_ghillie_lsh_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Sniper (Woodland)";
         side = 1;
         faction = QUOTE(ADDON);
+        magazines[] = {"FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","ClaymoreDirectionalMine_Remote_Mag","APERSTripMine_Wire_Mag","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        respawnMagazines[] = {"FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_7Rnd_408_Mk240_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","ClaymoreDirectionalMine_Remote_Mag","APERSTripMine_Wire_Mag","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
         linkedItems[] = {"V_PlateCarrier1_wdl","ItemGPS","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_INDEP"};
         respawnLinkedItems[] = {"V_PlateCarrier1_wdl","ItemGPS","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_INDEP"};
         weapons[] = {QGVAR(srifle_LRR_LRPS_F_snds),"hgun_P07_blk_Snds_F","Throw","Put","Rangefinder"};

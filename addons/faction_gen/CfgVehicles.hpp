@@ -17,7 +17,6 @@ class CfgVehicles {
     class B_GEN_Offroad_01_gen_F;
     class B_GEN_Pickup_covered_rf;
     class B_Quadbike_01_F;
-    class B_Soldier_F;
     class B_GEN_Soldier_F;
     class B_GEN_Soldier_RF;
     class B_GEN_Van_02_transport_F;
@@ -35,12 +34,12 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         uniformClass = "U_B_GEN_Soldier_F";
-        weapons[] = {"arifle_AK12_arid_F","ghost_weapons_hgun_G17_black_F","Throw","Put"};
-        respawnWeapons[] = {"arifle_AK12_arid_F","ghost_weapons_hgun_G17_black_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_17Rnd_9x21_Mk424_AP_t2","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_17Rnd_9x21_Mk424_AP_t2","HandGrenade","SmokeShell"};
-        linkedItems[] = {"V_PlateCarrier1_blk","ghost_headware_H_MK7_oli_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnLinkedItems[] = {"V_PlateCarrier1_blk","ghost_headware_H_MK7_oli_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        weapons[] = {QEGVAR(weapons,arifle_famasF1_RIS_F),QEGVAR(weapons,hgun_G17_black_F),"Throw","Put"};
+        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_RIS_F),QEGVAR(weapons,hgun_G17_black_F),"Throw","Put"};
+        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas),"17Rnd_9x21_Mag","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas),"17Rnd_9x21_Mag","HandGrenade","SmokeShell"};
+        linkedItems[] = {"V_PlateCarrier1_blk","STC_H_MK7_blk_Visor_up_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnLinkedItems[] = {"V_PlateCarrier1_blk","STC_H_MK7_blk_Visor_up_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
         items[] = {"FirstAidKit"};
         respawnItems[] = {"FirstAidKit"};
         backpack = "";
@@ -71,10 +70,10 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         uniformClass = "U_B_GEN_Soldier_F";
-        weapons[] = {"arifle_Mk20_F","ghost_weapons_hgun_G17_black_F","Throw","Put"};
-        respawnWeapons[] = {"arifle_Mk20_F","ghost_weapons_hgun_G17_black_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_17Rnd_9x21_Mk424_AP_t2","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_17Rnd_9x21_Mk424_AP_t2","HandGrenade","SmokeShell"};
+        weapons[] = {QEGVAR(weapons,Arifle_famasG2_F),QEGVAR(weapons,hgun_G17_black_F),"Throw","Put"};
+        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_F),QEGVAR(weapons,hgun_G17_black_F),"Throw","Put"};
+        magazines[] = {"30Rnd_556x45_Stanag","17Rnd_9x21_Mag","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag","17Rnd_9x21_Mag","HandGrenade","SmokeShell"};
         linkedItems[] = {"V_PlateCarrier1_blk","H_Beret_gen_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
         respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_Beret_gen_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
         items[] = {"FirstAidKit"};
@@ -97,8 +96,8 @@ class CfgVehicles {
         displayName = "Helicopter Pilot";
         side = 1;
         faction = QUOTE(ADDON);
-        magazines[] = {"30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","FA_rf_17Rnd_9x19_Mk422_AP_t2","FA_rf_17Rnd_9x19_Mk422_AP_t2","FA_rf_17Rnd_9x19_Mk422_AP_t2","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","FA_rf_17Rnd_9x19_Mk422_AP_t2","FA_rf_17Rnd_9x19_Mk422_AP_t2","FA_rf_17Rnd_9x19_Mk422_AP_t2","HandGrenade","SmokeShell"};
+        magazines[] = {"30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","17Rnd_9x19_Mag_RF","17Rnd_9x19_Mag_RF","17Rnd_9x19_Mag_RF","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {"30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","17Rnd_9x19_Mag_RF","17Rnd_9x19_Mag_RF","17Rnd_9x19_Mag_RF","HandGrenade","SmokeShell"};
     };
     class GVAR(B_GEN_Offroad_01_comms_F): B_GEN_Offroad_01_comms_F {
         scope = 2;
@@ -145,43 +144,24 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         crew = QGVAR(B_GEN_Soldier_F);
     };
-    class GVAR(B_GEN_Soldier_AR_F): B_Soldier_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Gendarme (Machine Gun)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        magazines[] = {"FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-    };
     class GVAR(B_GEN_Soldier_F): B_GEN_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Gendarme (SMG)";
+        // user, 2026-10-02: the shotgun man a shotgun, the rifleman a marksman rifle, the SMG man an SMG
         side = 1;
         faction = QUOTE(ADDON);
         uniformClass = "U_B_GEN_Soldier_F";
-        weapons[] = {"arifle_AK12_arid_F","ghost_weapons_hgun_G17_black_F","Throw","Put"};
-        respawnWeapons[] = {"arifle_AK12_arid_F","ghost_weapons_hgun_G17_black_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_17Rnd_9x21_Mk424_AP_t2","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_17Rnd_9x21_Mk424_AP_t2","HandGrenade","SmokeShell"};
-        linkedItems[] = {"V_PlateCarrier1_blk","ghost_headware_H_MK7_oli_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnLinkedItems[] = {"V_PlateCarrier1_blk","ghost_headware_H_MK7_oli_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        weapons[] = {"SMG_05_F",QEGVAR(weapons,hgun_G17_black_F),"Throw","Put"};
+        respawnWeapons[] = {"SMG_05_F",QEGVAR(weapons,hgun_G17_black_F),"Throw","Put"};
+        magazines[] = {"30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","17Rnd_9x21_Mag","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {"30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","17Rnd_9x21_Mag","HandGrenade","SmokeShell"};
+        linkedItems[] = {"V_PlateCarrier1_blk","STC_H_MK7_blk_Visor_up_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnLinkedItems[] = {"V_PlateCarrier1_blk","STC_H_MK7_blk_Visor_up_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
         items[] = {"FirstAidKit"};
         respawnItems[] = {"FirstAidKit"};
         backpack = "";
-    };
-    class GVAR(B_GEN_Soldier_LAT_F): B_Soldier_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Gendarme (AT)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        magazines[] = {"FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
     class GVAR(B_GEN_Soldier_RF): B_GEN_Soldier_RF {
         scope = 2;
@@ -191,35 +171,45 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         uniformClass = "U_B_GEN_Soldier_F";
-        weapons[] = {"arifle_AK12_arid_F","ghost_weapons_hgun_G17_black_F","Throw","Put"};
-        respawnWeapons[] = {"arifle_AK12_arid_F","ghost_weapons_hgun_G17_black_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_17Rnd_9x21_Mk424_AP_t2","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_556_Mk327_HV_t2","FA_b_17Rnd_9x21_Mk424_AP_t2","HandGrenade","SmokeShell"};
-        linkedItems[] = {"V_PlateCarrier1_blk","ghost_headware_H_MK7_oli_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-        respawnLinkedItems[] = {"V_PlateCarrier1_blk","ghost_headware_H_MK7_oli_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        weapons[] = {QEGVAR(weapons,arifle_famasF1_Grip_F),QEGVAR(weapons,hgun_G17_black_F),"Throw","Put"};
+        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_Grip_F),QEGVAR(weapons,hgun_G17_black_F),"Throw","Put"};
+        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas),"17Rnd_9x21_Mag","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas),"17Rnd_9x21_Mag","HandGrenade","SmokeShell"};
+        linkedItems[] = {"V_PlateCarrier1_blk","STC_H_MK7_blk_Visor_up_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnLinkedItems[] = {"V_PlateCarrier1_blk","STC_H_MK7_blk_Visor_up_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
         items[] = {"FirstAidKit"};
         respawnItems[] = {"FirstAidKit"};
         backpack = "";
     };
-    class GVAR(B_GEN_Soldier_Rifle_F): B_Soldier_F {
+    class GVAR(B_GEN_Soldier_Rifle_F): B_GEN_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Gendarme (Rifle)";
         side = 1;
         faction = QUOTE(ADDON);
-        magazines[] = {"FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        uniformClass = "U_B_GEN_Soldier_F";
+        linkedItems[] = {"V_PlateCarrier1_blk","STC_H_MK7_blk_Visor_up_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnLinkedItems[] = {"V_PlateCarrier1_blk","STC_H_MK7_blk_Visor_up_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        weapons[] = {QEGVAR(weapons,srifle_DMR_06_black_khs_bipod_F),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QEGVAR(weapons,srifle_DMR_06_black_khs_bipod_F),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
-    class GVAR(B_GEN_Soldier_SG_F): B_Soldier_F {
+    class GVAR(B_GEN_Soldier_SG_F): B_GEN_Soldier_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "Gendarme (Shotgun)";
         side = 1;
         faction = QUOTE(ADDON);
-        magazines[] = {"FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_30Rnd_65_EPR_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        uniformClass = "U_B_GEN_Soldier_F";
+        linkedItems[] = {"V_PlateCarrier1_blk","STC_H_MK7_blk_Visor_up_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnLinkedItems[] = {"V_PlateCarrier1_blk","STC_H_MK7_blk_Visor_up_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        weapons[] = {QEGVAR(weapons,sgun_M4_ACO_F),"hgun_P07_F","Throw","Put"};
+        respawnWeapons[] = {QEGVAR(weapons,sgun_M4_ACO_F),"hgun_P07_F","Throw","Put"};
+        magazines[] = {"8Rnd_12Gauge_Pellets","8Rnd_12Gauge_Pellets","8Rnd_12Gauge_Pellets","8Rnd_12Gauge_Pellets","8Rnd_12Gauge_Pellets","8Rnd_12Gauge_Pellets","8Rnd_12Gauge_Slug","8Rnd_12Gauge_Slug","8Rnd_12Gauge_Slug","8Rnd_12Gauge_Slug","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
+        respawnMagazines[] = {"8Rnd_12Gauge_Pellets","8Rnd_12Gauge_Pellets","8Rnd_12Gauge_Pellets","8Rnd_12Gauge_Pellets","8Rnd_12Gauge_Pellets","8Rnd_12Gauge_Pellets","8Rnd_12Gauge_Slug","8Rnd_12Gauge_Slug","8Rnd_12Gauge_Slug","8Rnd_12Gauge_Slug","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell"};
     };
     class GVAR(B_GEN_Van_02_transport_F): B_GEN_Van_02_transport_F {
         scope = 2;
@@ -246,8 +236,8 @@ class CfgVehicles {
         displayName = "Crewman";
         side = 1;
         faction = QUOTE(ADDON);
-        magazines[] = {"30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","FA_b_16Rnd_9x21_Mk424_AP_t2","HandGrenade","SmokeShell"};
+        magazines[] = {"30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {"30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","HandGrenade","SmokeShell"};
     };
     class GVAR(EF_B_CombatBoat_Unarmed_GEN): EF_B_CombatBoat_Unarmed_GEN {
         scope = 2;

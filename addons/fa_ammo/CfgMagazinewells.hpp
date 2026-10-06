@@ -3147,39 +3147,4 @@ class CfgMagazinewells {
     class M320_408 {
         ADDON[] += {"FA_b_7Rnd_408_Mk240"};
     };
-    // Ghost's own weapons (addons/weapons) name their wells ghost_weapons_*, so the FA mags registered in the
-    // original Aegis wells never reached them (2026-09-27)
-    class ghost_weapons_G17_9x21 {
-        ADDON[] += {"FA_b_17Rnd_9x21_Mk424_AP"};
-    };
-    class ghost_weapons_SMG_Gepard_9x21 {
-        ADDON[] += {"FA_b_40Rnd_9x21_Gepard_Mk424_AP"};
-    };
-    class ghost_weapons_Shotgun_12GA {
-        ADDON[] += {
-            "FA_b_6Rnd_12g_No0_Buck",
-            "FA_b_6Rnd_12g_No1_Buck",
-            "FA_b_6Rnd_12g_No2_Buck",
-            "FA_b_6Rnd_12g_No3_Buck",
-            "FA_b_6Rnd_12g_No4_Buck",
-            "FA_b_6Rnd_12g_No4_Bird",
-            "FA_b_2Rnd_12g_No0_Buck",
-            "FA_b_2Rnd_12g_No1_Buck",
-            "FA_b_2Rnd_12g_No2_Buck",
-            "FA_b_2Rnd_12g_No3_Buck",
-            "FA_b_2Rnd_12g_No4_Buck",
-            "FA_b_2Rnd_12g_No4_Bird"
-        };
-    };
-    // the MP153 takes the game's 2Rnd shells, so it takes the FA 2Rnd shells
-    class ghost_weapons_MP153_12GA {
-        ADDON[] += {
-            "FA_b_2Rnd_12g_No0_Buck",
-            "FA_b_2Rnd_12g_No1_Buck",
-            "FA_b_2Rnd_12g_No2_Buck",
-            "FA_b_2Rnd_12g_No3_Buck",
-            "FA_b_2Rnd_12g_No4_Buck",
-            "FA_b_2Rnd_12g_No4_Bird"
-        };
-    };
 };

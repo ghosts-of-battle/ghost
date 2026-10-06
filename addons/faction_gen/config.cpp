@@ -15,9 +15,7 @@ class CfgPatches {
             QGVAR(B_GEN_Offroad_01_gen_F),
             QGVAR(B_GEN_Pickup_covered_rf),
             QGVAR(B_GEN_Quadbike_01_F),
-            QGVAR(B_GEN_Soldier_AR_F),
             QGVAR(B_GEN_Soldier_F),
-            QGVAR(B_GEN_Soldier_LAT_F),
             QGVAR(B_GEN_Soldier_RF),
             QGVAR(B_GEN_Soldier_Rifle_F),
             QGVAR(B_GEN_Soldier_SG_F),
@@ -28,7 +26,7 @@ class CfgPatches {
             QGVAR(EF_B_Gyra_GEN),
             QGVAR(EF_B_Gyra_HMG_GEN)
         };
-        weapons[] = {QGVAR(smg_UMP_snds)};
+        weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         // ghost_fa_tiers IS NOT REQUIRED, DELIBERATELY. The tier
         // magazines are named as STRINGS in magazines[]; nothing here

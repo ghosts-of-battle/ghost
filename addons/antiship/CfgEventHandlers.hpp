@@ -14,12 +14,17 @@ class Extended_Init_EventHandlers {
             init = QUOTE(call FUNC(radarInit));
         };
     };
-    // The launcher does the same, and for the same reason - there is no module
-    // to hand it a config any more, so it builds its own from the settings and
-    // starts its own clock.
+    // The launcher does the same, and for the same reason - it builds its own
+    // config from the settings and starts its own clock.
+    //
+    // A FRAME LATER, because it reads its SIDE off its crew. Init fires inside
+    // createVehicle, before anything that spawned it by script has crewed it -
+    // so ghost_moduleAntiShip's west or independent batteries read as civilian,
+    // fell back to the OPFOR class side and registered as east. One frame on, a
+    // spawned launcher is crewed; one placed in Eden or Zeus already was.
     class GVAR(launcher) {
         class ADDON {
-            init = QUOTE(call FUNC(launcherInit));
+            init = QUOTE([ARR_2(FUNC(launcherInit),_this)] call CBA_fnc_execNextFrame);
         };
     };
 };

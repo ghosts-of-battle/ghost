@@ -7,6 +7,8 @@ class CfgMovesBasic {
         GVAR(GestureReloadSA80) = "";
         GVAR(GestureReloadGepard) = "";
         GVAR(GestureReloadG36) = "";
+        GVAR(GestureReloadFAMAS) = "";
+        GVAR(GestureReloadFAMASUGL) = "";
     };
     class Actions {
         class PistolStandActions;
@@ -17,42 +19,56 @@ class CfgMovesBasic {
             GVAR(GestureReloadSA80)[] = {QGVAR(GestureReloadSA80), "Gesture"};
             GVAR(GestureReloadGepard)[] = {QGVAR(GestureReloadGepard), "Gesture"};
             GVAR(GestureReloadG36)[] = {QGVAR(GestureReloadG36), "Gesture"};
+            GVAR(GestureReloadFAMAS)[] = {QGVAR(GestureReloadFAMAS), "Gesture"};
+            GVAR(GestureReloadFAMASUGL)[] = {QGVAR(GestureReloadFAMASUGL), "Gesture"};
         };
         class RifleProneActions: RifleBaseStandActions {
             GVAR(GestureReloadAKM74)[] = {QGVAR(GestureReloadAKM74Prone), "Gesture"};
             GVAR(GestureReloadSA80)[] = {QGVAR(GestureReloadSA80Prone), "Gesture"};
             GVAR(GestureReloadGepard)[] = {QGVAR(GestureReloadGepardProne), "Gesture"};
             GVAR(GestureReloadG36)[] = {QGVAR(GestureReloadG36Prone), "Gesture"};
+            GVAR(GestureReloadFAMAS)[] = {QGVAR(GestureReloadFAMASProne), "Gesture"};
+            GVAR(GestureReloadFAMASUGL)[] = {QGVAR(GestureReloadFAMASUGLProne), "Gesture"};
         };
         class RifleAdjustFProneActions: RifleAdjustProneBaseActions {
             GVAR(GestureReloadAKM74)[] = {QGVAR(GestureReloadAKM74Context), "Gesture"};
             GVAR(GestureReloadSA80)[] = {QGVAR(GestureReloadSA80Context), "Gesture"};
             GVAR(GestureReloadGepard)[] = {QGVAR(GestureReloadGepardContext), "Gesture"};
             GVAR(GestureReloadG36)[] = {QGVAR(GestureReloadG36Context), "Gesture"};
+            GVAR(GestureReloadFAMAS)[] = {QGVAR(GestureReloadFAMASContext), "Gesture"};
+            GVAR(GestureReloadFAMASUGL)[] = {QGVAR(GestureReloadFAMASUGLContext), "Gesture"};
         };
         class RifleAdjustLProneActions: RifleAdjustProneBaseActions {
             GVAR(GestureReloadAKM74)[] = {QGVAR(GestureReloadAKM74Context), "Gesture"};
             GVAR(GestureReloadSA80)[] = {QGVAR(GestureReloadSA80Context), "Gesture"};
             GVAR(GestureReloadGepard)[] = {QGVAR(GestureReloadGepardContext), "Gesture"};
             GVAR(GestureReloadG36)[] = {QGVAR(GestureReloadG36Context), "Gesture"};
+            GVAR(GestureReloadFAMAS)[] = {QGVAR(GestureReloadFAMASContext), "Gesture"};
+            GVAR(GestureReloadFAMASUGL)[] = {QGVAR(GestureReloadFAMASUGLContext), "Gesture"};
         };
         class RifleAdjustRProneActions: RifleAdjustProneBaseActions {
             GVAR(GestureReloadAKM74)[] = {QGVAR(GestureReloadAKM74Context), "Gesture"};
             GVAR(GestureReloadSA80)[] = {QGVAR(GestureReloadSA80Context), "Gesture"};
             GVAR(GestureReloadGepard)[] = {QGVAR(GestureReloadGepardContext), "Gesture"};
             GVAR(GestureReloadG36)[] = {QGVAR(GestureReloadG36Context), "Gesture"};
+            GVAR(GestureReloadFAMAS)[] = {QGVAR(GestureReloadFAMASContext), "Gesture"};
+            GVAR(GestureReloadFAMASUGL)[] = {QGVAR(GestureReloadFAMASUGLContext), "Gesture"};
         };
         class PistolProneActions: PistolStandActions {
             GVAR(GestureReloadAKM74)[] = {QGVAR(GestureReloadAKM74Prone), "Gesture"};
             GVAR(GestureReloadSA80)[] = {QGVAR(GestureReloadSA80Prone), "Gesture"};
             GVAR(GestureReloadGepard)[] = {QGVAR(GestureReloadGepardProne), "Gesture"};
             GVAR(GestureReloadG36)[] = {QGVAR(GestureReloadG36Prone), "Gesture"};
+            GVAR(GestureReloadFAMAS)[] = {QGVAR(GestureReloadFAMASProne), "Gesture"};
+            GVAR(GestureReloadFAMASUGL)[] = {QGVAR(GestureReloadFAMASUGLProne), "Gesture"};
         };
         class DeployedProneActions: RifleProneActions {
             GVAR(GestureReloadAKM74)[] = {QGVAR(GestureReloadAKM74Prone), "Gesture"};
             GVAR(GestureReloadSA80)[] = {QGVAR(GestureReloadSA80Prone), "Gesture"};
             GVAR(GestureReloadGepard)[] = {QGVAR(GestureReloadGepardProne), "Gesture"};
             GVAR(GestureReloadG36)[] = {QGVAR(GestureReloadG36Prone), "Gesture"};
+            GVAR(GestureReloadFAMAS)[] = {QGVAR(GestureReloadFAMASProne), "Gesture"};
+            GVAR(GestureReloadFAMASUGL)[] = {QGVAR(GestureReloadFAMASUGLProne), "Gesture"};
         };
     };
 };
@@ -63,8 +79,22 @@ class CfgAmmo {
     class B_19mm_HE;
     class BulletBase;
     class G_40mm_HEDP;
+    class GrenadeHand;
     class RocketBase;
     class ShotDeployBase;
+    class GVAR(GrenadeHandEast): GrenadeHand {
+        hit = 8;
+        indirectHit = 8;
+        indirectHitRange = 7;
+        dangerRadiusHit = 65;
+        suppressionRadiusHit = 27;
+        typicalspeed = 20;
+        model = "\z\ghost\addons\weapons\models\weapons\Ammo\Handgrenade_east_throw.p3d";
+        deflecting = 7;
+        fuseDistance = 0;
+        explosionTime = -1;
+        timeToLive = 18;
+    };
     class GVAR(G_40mm_APERSMine): ShotDeployBase {
         submunitionAmmo = "APERSMineDispenser_Mine_Ammo";
         model = "\A3\Weapons_F_Orange\Explosives\APERSmineDispenser_AP.p3d";
@@ -261,6 +291,24 @@ class CfgGesturesMale {
             weaponIK = 1;
             leftHandIKCurve[] = {0, 1, 0.1, 0, 0.858, 0, 0.88, 1};
         };
+        class GVAR(GestureReloadFAMAS): GestureReloadBase {
+            file = "\z\ghost\addons\weapons\models\anims\Data\Anim\Sdr\Gst\GestureReloadFAMAS.rtm";
+            speed = -4.266666666666667;
+            mask = "handsWeapon";
+            headBobStrength = 0.25;
+            headBobMode = 2;
+            weaponIK = 1;
+            leftHandIKCurve[] = {0, 1, 0.0703125, 0, 0.8984375, 0, 1, 1};
+        };
+        class GVAR(GestureReloadFAMASUGL): GestureReloadBase {
+            file = "\z\ghost\addons\weapons\models\anims\Data\Anim\Sdr\Gst\GestureReloadFAMASUGL.rtm";
+            speed = -2.8666666666666667;
+            mask = "handsWeapon";
+            headBobStrength = 0.25;
+            headBobMode = 2;
+            weaponIK = 1;
+            leftHandIKCurve[] = {0, 1, 0.08139534883720931, 0, 0.8488372093023255, 0, 0.872093023255814, 1};
+        };
         class GVAR(GestureReloadAKM74Prone): GVAR(GestureReloadAKM74) {
             file = "\z\ghost\addons\weapons\models\anims\Data\Anim\Sdr\Gst\GestureReloadAKM74Prone.rtm";
         };
@@ -287,9 +335,23 @@ class CfgGesturesMale {
         class GVAR(GestureReloadG36Context): GVAR(GestureReloadG36) {
             mask = "handsWeapon_context";
         };
+        class GVAR(GestureReloadFAMASProne): GVAR(GestureReloadFAMAS) {
+            file = "\z\ghost\addons\weapons\models\anims\Data\Anim\Sdr\Gst\GestureReloadFAMASProne.rtm";
+        };
+        class GVAR(GestureReloadFAMASContext): GVAR(GestureReloadFAMAS) {
+            mask = "handsWeapon_context";
+        };
+        class GVAR(GestureReloadFAMASUGLProne): GVAR(GestureReloadFAMASUGL) {
+            file = "\z\ghost\addons\weapons\models\anims\Data\Anim\Sdr\Gst\GestureReloadFAMASUGLProne.rtm";
+        };
+        class GVAR(GestureReloadFAMASUGLContext): GVAR(GestureReloadFAMASUGL) {
+            mask = "handsWeapon_context";
+        };
     };
 };
 class CfgMagazines {
+    class 10Rnd_762x54_Mag;
+    class 150Rnd_762x51_Box;
     class 16Rnd_9x21_Mag;
     class 1Rnd_HE_Grenade_shell;
     class 1Rnd_Smoke_Grenade_shell;
@@ -305,17 +367,246 @@ class CfgMagazines {
     class 30Rnd_545x39_Mag_Green_F;
     class 30Rnd_545x39_Mag_Tracer_F;
     class 30Rnd_545x39_Mag_Tracer_Green_F;
+    class 30Rnd_556x45_Stanag;
     class 30Rnd_762x39_Mag_F;
     class 30Rnd_762x39_Mag_Green_F;
     class 30Rnd_762x39_Mag_Tracer_F;
     class 30Rnd_762x39_Mag_Tracer_Green_F;
     class CA_LauncherMagazine;
     class CA_Magazine;
+    class HandGrenade;
     class UGL_FlareCIR_F;
     class UGL_FlareGreen_F;
     class UGL_FlareRed_F;
     class UGL_FlareWhite_F;
     class UGL_FlareYellow_F;
+    class GVAR(10Rnd_762x54_SVD_Red_Mag_F): 10Rnd_762x54_Mag {
+        author = "STR_A3_A_Lukinator";
+        displayName = "7.62 mm 10Rnd Reload Tracer (Red) Mag";
+        ammo = "B_762x54_Tracer_Red";
+        lastRoundsTracer = 3;
+    };
+    class GVAR(200Rnd_762x51_MAG_Red_F): 150Rnd_762x51_Box {
+        author = "Ravenholme";
+        scope = 2;
+        picture = "\z\ghost\addons\weapons\models\weapons\Data\UI\icon_Aegis_200Rnd_762x51_MAG_F_CA.paa";
+        displayName = "7.62 mm 200rnd Reload Tracer (Red) Belt";
+        descriptionShort = "Caliber: 7.62x51 mm<br />Rounds: 200<br />Used in: GPMG, LWM-240";
+        count = 200;
+        ammo = "B_762x51_Tracer_Red";
+        initSpeed = 840;
+        mass = 67;
+    };
+    class GVAR(40Rnd_9x21_Gepard_Mag_F): CA_Magazine {
+        author = "STR_A3_A_Lukinator";
+        scope = 2;
+        displayName = "9 mm 40Rnd Mag";
+        ammo = "B_9x21_Ball";
+        count = 40;
+        initSpeed = 380;
+        picture = "\A3\Weapons_F\Data\UI\M_30Rnd_45ACP_CA.paa";
+        modelSpecial = "\z\ghost\addons\weapons\models\weapons\MagazineProxies\Mag_9x21_Gepard_40Rnd.p3d";
+        modelSpecialIsProxy = 1;
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\MagazineProxies\Data\Mag_9x21_Gepard_CO.paa"};
+        tracersEvery = 0;
+        descriptionShort = "Caliber: 9x19 mm<br />Rounds: 40<br />Used in: PPL-20M";
+        mass = 12;
+    };
+    class GVAR(45Rnd_545x39_Mag_F): 30Rnd_545x39_Mag_F {
+        author = "Lukin";
+        displayName = "5.45 mm 45Rnd Reload Tracer (Yellow) Mag";
+        descriptionShort = "Caliber: 5.45x39 mm<br />Rounds: 45<br />Used in: AKS-74U, AK-74/M, AK-12/GL/U, RPK-12/74";
+        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\RPK74\data\UI\icon_Aegis_45rnd_545_RPK_mag_F_ca.paa";
+        modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\RPK74\45rnd_mag.p3d";
+        count = 45;
+        mass = 25;
+    };
+    class GVAR(60Rnd_545x39_Mag_F): 30Rnd_545x39_Mag_F {
+        displayName = "5.45 mm 60Rnd AK-12 Reload Tracer (Yellow) Mag";
+        descriptionShort = "Caliber: 5.45x39 mm<br />Rounds: 60<br />Used in: AKS-74U, AK-74/M, AK-12/GL/U, RPK-12";
+        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_60rnd_545_mag_F_ca.paa";
+        modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\mag_545_60rnd.p3d";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_545_60rnd_co.paa"};
+        count = 60;
+        mass = 22;
+    };
+    class GVAR(25Rnd_556x45_Famas): 30Rnd_556x45_Stanag {
+        author = "Slatts";
+        scope = 2;
+        displayName = "5.56 mm 25Rnd FAMAS Mag";
+        count = 25;
+        descriptionShort = "Caliber: 5.56x45 mm<br />Rounds: 25<br />Used in: FAMAS F1/RIS/Grip";
+        modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\mag\famas_25Rnd.p3d";
+        modelSpecialIsProxy = 1;
+        hiddenSelections[] = {"Camo1", "Camo_Low"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_3.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_low.paa"};
+    };
+    class GVAR(25Rnd_556x45_Famas_Tracer_Red): GVAR(25Rnd_556x45_Famas) {
+        picture = "\a3\Weapons_F\MagazineProxies\data\UI\icon_30Rnd_556x45_Stanag_Tracer_Red_CA.paa";
+        author = "Slatts";
+        displayName = "5.56 mm 25Rnd Tracer (Red) FAMAS Mag";
+        ammo = "B_556x45_Ball_Tracer_Red";
+        tracersEvery = 1;
+        descriptionShort = "Caliber: 5.56x45 mm Tracer - Red<br />Rounds: 25<br />Used in: FAMAS F1/RIS/Grip";
+        displaynameshort = "Tracer";
+    };
+    class GVAR(HandGrenade_East): HandGrenade {
+        author = "Avery Kaiserin";
+        mass = 12;
+        displayName = "RGO Grenade";
+        picture = "\z\ghost\addons\weapons\models\weapons\Data\UI\gear_RGO_CA.paa";
+        model = "\z\ghost\addons\weapons\models\weapons\Ammo\Handgrenade_east.p3d";
+        ammo = QGVAR(GrenadeHandEast);
+        displayNameShort = "RGO Grenade";
+    };
+    class GVAR(30Rnd_762x39_polymer_Black_Mag_F): 30Rnd_762x39_Mag_F {
+        displayName = "7.62 mm 30Rnd AK-103 Reload Tracer (Yellow) Mag";
+        modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\mag_762_39_polymer.p3d";
+        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_762x39_polymer_Black_Mag_F_CA.paa";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_762_39_polymer_black_co.paa"};
+    };
+    class GVAR(30Rnd_762x39_polymer_Black_Mag_Green_F): 30Rnd_762x39_Mag_Green_F {
+        displayName = "7.62 mm 30Rnd AK-103 Reload Tracer (Green) Mag";
+        modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\mag_762_39_polymer.p3d";
+        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_762x39_polymer_Black_Mag_F_CA.paa";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_762_39_polymer_black_co.paa"};
+    };
+    class GVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_F): 30Rnd_762x39_Mag_Tracer_F {
+        displayName = "7.62 mm 30Rnd AK-103 Tracer (Yellow) Mag";
+        modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\mag_762_39_polymer.p3d";
+        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_762x39_polymer_Black_Mag_Yellow_F_CA.paa";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_762_39_polymer_black_co.paa"};
+    };
+    class GVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_Green_F): 30Rnd_762x39_Mag_Tracer_Green_F {
+        displayName = "7.62 mm 30Rnd AK-103 Tracer (Green) Mag";
+        modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\mag_762_39_polymer.p3d";
+        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_762x39_polymer_Black_Mag_Green_F_CA.paa";
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_762_39_polymer_black_co.paa"};
+    };
+    class GVAR(30Rnd_762x39_polymer_Plum_Mag_F): GVAR(30Rnd_762x39_polymer_Black_Mag_F) {
+        displayName = "7.62 mm 30Rnd AK-103 Plum Reload Tracer (Yellow) Mag";
+        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_762x39_polymer_Plum_Mag_F_CA.paa";
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_762_39_polymer_plum_co.paa"};
+    };
+    class GVAR(30Rnd_762x39_polymer_Plum_Mag_Green_F): GVAR(30Rnd_762x39_polymer_Black_Mag_Green_F) {
+        displayName = "7.62 mm 30Rnd AK-103 Plum Reload Tracer (Green) Mag";
+        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_762x39_polymer_Plum_Mag_F_CA.paa";
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_762_39_polymer_plum_co.paa"};
+    };
+    class GVAR(30Rnd_762x39_polymer_Plum_Mag_Tracer_F): GVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_F) {
+        displayName = "7.62 mm 30Rnd AK-103 Plum Tracer (Yellow) Mag";
+        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_762x39_polymer_Plum_Mag_Yellow_F_CA.paa";
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_762_39_polymer_plum_co.paa"};
+    };
+    class GVAR(30Rnd_762x39_polymer_Plum_Mag_Tracer_Green_F): GVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_Green_F) {
+        displayName = "7.62 mm 30Rnd AK-103 Plum Tracer (Green) Mag";
+        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_762x39_polymer_Plum_Mag_Green_F_CA.paa";
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_762_39_polymer_plum_co.paa"};
+    };
+    class GVAR(60Rnd_545x39_Mag_Green_F): 30Rnd_545x39_Mag_Green_F {
+        displayName = "5.45 mm 60Rnd AK-12 Reload Tracer (Green) Mag";
+        descriptionShort = "Caliber: 5.45x39 mm<br />Rounds: 60<br />Used in: AKS-74U, AK-74/M, AK-12/GL/U, RPK-12";
+        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_60rnd_545_mag_F_ca.paa";
+        modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\mag_545_60rnd.p3d";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_545_60rnd_co.paa"};
+        count = 60;
+        mass = 22;
+    };
+    class GVAR(60Rnd_545x39_Mag_Tracer_Green_F): 30Rnd_545x39_Mag_Tracer_Green_F {
+        displayName = "5.45 mm 60Rnd AK-12 Tracer (Green) Mag";
+        descriptionShort = "Caliber: 5.45x39 mm<br />Rounds: 60<br />Used in: AKS-74U, AK-74/M, AK-12/GL/U, RPK-12";
+        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_60rnd_545_mag_Green_F_ca.paa";
+        modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\mag_545_60rnd.p3d";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_545_60rnd_co.paa"};
+        count = 60;
+        mass = 22;
+    };
+    class GVAR(60Rnd_545x39_Mag_Tracer_F): 30Rnd_545x39_Mag_Tracer_F {
+        displayName = "5.45 mm 60Rnd AK-12 Tracer (Yellow) Mag";
+        descriptionShort = "Caliber: 5.45x39 mm<br />Rounds: 60<br />Used in: AKS-74U, AK-74/M, AK-12/GL/U, RPK-12";
+        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_60rnd_545_mag_Yellow_F_ca.paa";
+        modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\mag_545_60rnd.p3d";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_545_60rnd_co.paa"};
+        count = 60;
+        mass = 22;
+    };
+    class GVAR(25Rnd_556x45_Famas_green): GVAR(25Rnd_556x45_Famas) {
+        picture = "\a3\Weapons_F\MagazineProxies\data\UI\icon_30Rnd_556x45_Stanag_green_CA.paa";
+        author = "Slatts";
+        displayName = "5.56 mm 25Rnd Reload Tracer (Green) FAMAS Mag";
+        descriptionShort = "Caliber: 5.56x45 mm Reload Tracer - Green<br />Rounds: 25<br />Used in: FAMAS F1/RIS/Grip";
+        ammo = "B_556x45_Ball_Tracer_Green";
+    };
+    class GVAR(25Rnd_556x45_Famas_red): GVAR(25Rnd_556x45_Famas) {
+        picture = "\a3\Weapons_F\MagazineProxies\data\UI\icon_30Rnd_556x45_Stanag_red_CA.paa";
+        author = "Slatts";
+        displayName = "5.56 mm 25Rnd Reload Tracer (Red) FAMAS Mag";
+        descriptionShort = "Caliber: 5.56x45 mm Reload Tracer - Red<br />Rounds: 25<br />Used in: FAMAS F1/RIS/Grip";
+        ammo = "B_556x45_Ball_Tracer_Red";
+    };
+    class GVAR(25Rnd_556x45_Famas_yellow): GVAR(25Rnd_556x45_Famas) {
+        picture = "\a3\Weapons_F\MagazineProxies\data\UI\icon_30Rnd_556x45_Stanag_red_CA.paa";
+        author = "Slatts";
+        displayName = "5.56 mm 25Rnd Reload Tracer (Yellow) FAMAS Mag";
+        descriptionShort = "Caliber: 5.56x45 mm Reload Tracer - Yellow<br />Rounds: 25<br />Used in: FAMAS F1/RIS/Grip";
+        ammo = "B_556x45_Ball_Tracer_Yellow";
+    };
+    class GVAR(25Rnd_556x45_Famas_Tracer_Green): GVAR(25Rnd_556x45_Famas) {
+        picture = "\a3\Weapons_F\MagazineProxies\data\UI\icon_30Rnd_556x45_Stanag_Tracer_Green_CA.paa";
+        author = "Slatts";
+        displayName = "5.56 mm 25Rnd Tracer (Green) FAMAS Mag";
+        ammo = "B_556x45_Ball_Tracer_Green";
+        tracersEvery = 1;
+        descriptionShort = "Caliber: 5.56x45 mm Tracer - Green<br />Rounds: 25<br />Used in: FAMAS F1/RIS/Grip";
+        displaynameshort = "Tracer";
+    };
+    class GVAR(25Rnd_556x45_Famas_Tracer_Yellow): GVAR(25Rnd_556x45_Famas) {
+        picture = "\a3\Weapons_F\MagazineProxies\data\UI\icon_30Rnd_556x45_Stanag_Tracer_Yellow_CA.paa";
+        author = "Slatts";
+        displayName = "5.56 mm 25Rnd Tracer (Yellow) FAMAS Mag";
+        ammo = "B_556x45_Ball_Tracer_Yellow";
+        tracersEvery = 1;
+        descriptionShort = "Caliber: 5.56x45 mm Tracer - Yellow<br />Rounds: 25<br />Used in: FAMAS F1/RIS/Grip";
+        displaynameshort = "Tracer";
+    };
+    class GVAR(30Rnd_545x39_AK12_Mag_F): 30Rnd_545x39_Mag_Green_F {
+        author = "Avery Kaiserin";
+        displayName = "5.45 mm 30Rnd AK-12 Reload Tracer (Green) Mag";
+        picture = "\z\ghost\addons\weapons\models\weapons\Data\UI\icon_30Rnd_545x39_Black_Mag_F_ca.paa";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\MagazineProxies\Data\magazine_AK74_black_CO.paa"};
+    };
+    class GVAR(30Rnd_545x39_AK12_Mag_Tracer_F): 30Rnd_545x39_Mag_Tracer_Green_F {
+        author = "Avery Kaiserin";
+        displayName = "5.45 mm 30Rnd AK-12 Tracer (Green) Mag";
+        picture = "\z\ghost\addons\weapons\models\weapons\Data\UI\icon_30Rnd_545x39_Black_Mag_Green_F_ca.paa";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\MagazineProxies\Data\magazine_AK74_black_CO.paa"};
+    };
+    class GVAR(4Rnd_12Gauge_Pellets): 2Rnd_12Gauge_Pellets {
+        author = "Avery Kaiserin";
+        displayName = "12 Gauge 4Rnd Pellets";
+        count = 4;
+        descriptionShort = "Type: 12 Gauge Pellets<br />Rounds: 4<br />Used in: BK-153";
+        picture = "\A3\Weapons_F\Data\UI\M_12Gauge_slugs_CA.paa";
+        mass = 6;
+    };
+    class GVAR(4Rnd_12Gauge_Slug): 2Rnd_12Gauge_Slug {
+        author = "Avery Kaiserin";
+        displayName = "12 Gauge 4Rnd Slugs";
+        count = 4;
+        descriptionShort = "Type: 12 Gauge Slugs<br />Rounds: 4<br />Used in: BK-153";
+        picture = "\A3\Weapons_F\Data\UI\M_12Gauge_CA.paa";
+        mass = 6;
+    };
     class GVAR(6Rnd_HE_Grenade_shell): 1Rnd_HE_Grenade_shell {
         author = "Avery Kaiserin";
         count = 6;
@@ -532,65 +823,9 @@ class CfgMagazines {
         picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_545x39_Olive_Mag_Yellow_F_ca.paa";
         hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\magazine_ak74_olive_co.paa"};
     };
-    class GVAR(30Rnd_762x39_polymer_Black_Mag_F): 30Rnd_762x39_Mag_F {
-        displayName = "7.62 mm 30Rnd AK-103 Reload Tracer (Yellow) Mag";
-        modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\mag_762_39_polymer.p3d";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_762x39_polymer_Black_Mag_F_CA.paa";
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_762_39_polymer_black_co.paa"};
-    };
-    class GVAR(30Rnd_762x39_polymer_Black_Mag_Green_F): 30Rnd_762x39_Mag_Green_F {
-        displayName = "7.62 mm 30Rnd AK-103 Reload Tracer (Green) Mag";
-        modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\mag_762_39_polymer.p3d";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_762x39_polymer_Black_Mag_F_CA.paa";
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_762_39_polymer_black_co.paa"};
-    };
-    class GVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_F): 30Rnd_762x39_Mag_Tracer_F {
-        displayName = "7.62 mm 30Rnd AK-103 Tracer (Yellow) Mag";
-        modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\mag_762_39_polymer.p3d";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_762x39_polymer_Black_Mag_Yellow_F_CA.paa";
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_762_39_polymer_black_co.paa"};
-    };
-    class GVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_Green_F): 30Rnd_762x39_Mag_Tracer_Green_F {
-        displayName = "7.62 mm 30Rnd AK-103 Tracer (Green) Mag";
-        modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\mag_762_39_polymer.p3d";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_762x39_polymer_Black_Mag_Green_F_CA.paa";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_762_39_polymer_black_co.paa"};
-    };
-    class GVAR(30Rnd_762x39_polymer_Plum_Mag_F): GVAR(30Rnd_762x39_polymer_Black_Mag_F) {
-        displayName = "7.62 mm 30Rnd AK-103 Plum Reload Tracer (Yellow) Mag";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_762x39_polymer_Plum_Mag_F_CA.paa";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_762_39_polymer_plum_co.paa"};
-    };
-    class GVAR(30Rnd_762x39_polymer_Plum_Mag_Green_F): GVAR(30Rnd_762x39_polymer_Black_Mag_Green_F) {
-        displayName = "7.62 mm 30Rnd AK-103 Plum Reload Tracer (Green) Mag";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_762x39_polymer_Plum_Mag_F_CA.paa";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_762_39_polymer_plum_co.paa"};
-    };
-    class GVAR(30Rnd_762x39_polymer_Plum_Mag_Tracer_F): GVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_F) {
-        displayName = "7.62 mm 30Rnd AK-103 Plum Tracer (Yellow) Mag";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_762x39_polymer_Plum_Mag_Yellow_F_CA.paa";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_762_39_polymer_plum_co.paa"};
-    };
-    class GVAR(30Rnd_762x39_polymer_Plum_Mag_Tracer_Green_F): GVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_Green_F) {
-        displayName = "7.62 mm 30Rnd AK-103 Plum Tracer (Green) Mag";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_762x39_polymer_Plum_Mag_Green_F_CA.paa";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_762_39_polymer_plum_co.paa"};
-    };
     class GVAR(45Rnd_545x39_Mag_Green_F): 30Rnd_545x39_Mag_Green_F {
         author = "Lukin";
         displayName = "5.45 mm 45Rnd Reload Tracer (Green) Mag";
-        descriptionShort = "Caliber: 5.45x39 mm<br />Rounds: 45<br />Used in: AKS-74U, AK-74/M, AK-12/GL/U, RPK-12/74";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\RPK74\data\UI\icon_Aegis_45rnd_545_RPK_mag_F_ca.paa";
-        modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\RPK74\45rnd_mag.p3d";
-        count = 45;
-        mass = 25;
-    };
-    class GVAR(45Rnd_545x39_Mag_F): 30Rnd_545x39_Mag_F {
-        author = "Lukin";
-        displayName = "5.45 mm 45Rnd Reload Tracer (Yellow) Mag";
         descriptionShort = "Caliber: 5.45x39 mm<br />Rounds: 45<br />Used in: AKS-74U, AK-74/M, AK-12/GL/U, RPK-12/74";
         picture = "\z\ghost\addons\weapons\models\weapons\Rifles\RPK74\data\UI\icon_Aegis_45rnd_545_RPK_mag_F_ca.paa";
         modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\RPK74\45rnd_mag.p3d";
@@ -638,22 +873,6 @@ class CfgMagazines {
         initSpeed = 450;
         count = 8;
     };
-    class GVAR(4Rnd_12Gauge_Pellets): 2Rnd_12Gauge_Pellets {
-        author = "Avery Kaiserin";
-        displayName = "12 Gauge 4Rnd Pellets";
-        count = 4;
-        descriptionShort = "Type: 12 Gauge Pellets<br />Rounds: 4<br />Used in: BK-153";
-        picture = "\A3\Weapons_F\Data\UI\M_12Gauge_slugs_CA.paa";
-        mass = 6;
-    };
-    class GVAR(4Rnd_12Gauge_Slug): 2Rnd_12Gauge_Slug {
-        author = "Avery Kaiserin";
-        displayName = "12 Gauge 4Rnd Slugs";
-        count = 4;
-        descriptionShort = "Type: 12 Gauge Slugs<br />Rounds: 4<br />Used in: BK-153";
-        picture = "\A3\Weapons_F\Data\UI\M_12Gauge_CA.paa";
-        mass = 6;
-    };
     class GVAR(40Rnd_460x30_Mag_F): CA_Magazine {
         author = "Avery Kaiserin";
         scope = 2;
@@ -681,22 +900,6 @@ class CfgMagazines {
         count = 20;
         mass = 6;
         descriptionShort = "Caliber: 4.6x30 mm<br />Rounds: 20<br />Used in: MP7";
-    };
-    class GVAR(40Rnd_9x21_Gepard_Mag_F): CA_Magazine {
-        author = "STR_A3_A_Lukinator";
-        scope = 2;
-        displayName = "9 mm 40Rnd Mag";
-        ammo = "B_9x21_Ball";
-        count = 40;
-        initSpeed = 380;
-        picture = "\A3\Weapons_F\Data\UI\M_30Rnd_45ACP_CA.paa";
-        modelSpecial = "\z\ghost\addons\weapons\models\weapons\MagazineProxies\Mag_9x21_Gepard_40Rnd.p3d";
-        modelSpecialIsProxy = 1;
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\MagazineProxies\Data\Mag_9x21_Gepard_CO.paa"};
-        tracersEvery = 0;
-        descriptionShort = "Caliber: 9x19 mm<br />Rounds: 40<br />Used in: PPL-20M";
-        mass = 12;
     };
     class GVAR(40Rnd_9x21_Gepard_Green_Mag_F): GVAR(40Rnd_9x21_Gepard_Mag_F) {
         author = "STR_A3_A_Lukinator";
@@ -765,6 +968,10 @@ class CfgMagazines {
         picture = "\z\ghost\addons\weapons\models\weapons\Launchers\Pzf3\Data\UI\picture_DM32_HEAT_MP_CA.paa";
         mass = 100;
     };
+    class GVAR(16Rnd_9x21_Mag_v2): 16Rnd_9x21_Mag {
+        author = "Avery Kaiserin";
+        scope = 2;
+    };
     class GVAR(1Rnd_HEDP_Grenade_shell): 1Rnd_HE_Grenade_shell {
         author = "Heliotrope";
         displayName = "40 mm HEDP Grenade Round";
@@ -797,6 +1004,40 @@ class CfgMagazines {
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_545_39_steel_co.paa"};
     };
+    class GVAR(200Rnd_762x51_MAG_Red_Tracer_F): GVAR(200Rnd_762x51_MAG_Red_F) {
+        author = "Ravenholme";
+        picture = "\z\ghost\addons\weapons\models\weapons\Data\UI\icon_Aegis_200Rnd_762x51_MAG_Red_Tracer_F_CA.paa";
+        displayName = "7.62 mm 200rnd Tracer (Red) Belt";
+        tracersEvery = 1;
+        lastRoundsTracer = 200;
+        displaynameshort = "Tracer";
+    };
+    class GVAR(20Rnd_762x51_SMAG): CA_Magazine {
+        author = "Grave";
+        scope = 2;
+        displayName = "7.62 mm 20Rnd Mag";
+        picture = "\z\ghost\addons\weapons\models\weapons\Data\UI\Icon_20Rnd_762x51_SMAG_CA.paa";
+        modelSpecial = "";
+        modelSpecialIsProxy = 1;
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\MagazineProxies\Data\mag_20Rnd_762_SMAG_black_CO.paa"};
+        ammo = "B_762x51_Ball";
+        count = 20;
+        mass = 9;
+        initSpeed = 850;
+        tracersEvery = 0;
+        lastRoundsTracer = 4;
+        descriptionShort = "Caliber: 7.62x51 mm<br />Rounds: 20<br />Used in: Mk11, M110";
+    };
+    class GVAR(20Rnd_556x45_Stanag): 30Rnd_556x45_Stanag {
+        author = "Avery Kaiserin";
+        scope = 2;
+        displayName = "5.56 mm 20rnd STANAG Reload Tracer (Yellow) Mag";
+        picture = "\A3\Weapons_F\Data\UI\M_20stanag_CA.paa";
+        count = 20;
+        mass = 6;
+        descriptionShort = "Caliber: 5.56x45 mm STANAG< br/>Rounds: 20<br />Used in: SDAR";
+    };
     class GVAR(6Rnd_HEDP_Grenade_shell): GVAR(1Rnd_HEDP_Grenade_shell) {
         author = "Heliotrope";
         count = 6;
@@ -816,10 +1057,22 @@ class CfgMagazines {
         hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_545_39_steel_gold_co.paa"};
         hiddenSelectionsMaterials[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_545_39_steel_gold.rvmat"};
     };
+    class GVAR(20Rnd_762x51_Red_SMAG): GVAR(20Rnd_762x51_SMAG) {
+        author = "Grave";
+        displayName = "7.62 mm 20Rnd Reload Tracer (Red) Mag";
+        ammo = "B_762x51_Tracer_Red";
+        picture = "\z\ghost\addons\weapons\models\weapons\Data\UI\Icon_20Rnd_762x51_Red_SMAG_CA.paa";
+        lastRoundsTracer = 4;
+    };
+    class GVAR(20Rnd_556x45_Stanag_green): GVAR(20Rnd_556x45_Stanag) {
+        author = "Avery Kaiserin";
+        displayName = "5.56 mm 20rnd STANAG Reload Tracer (Green) Mag";
+        ammo = "B_556x45_Ball_Tracer_Green";
+    };
 };
 class CfgMagazineWells {
     class AK_545x39 {
-        GVAR(magazines)[] = {QGVAR(30Rnd_545x39_Black_Mag_F), QGVAR(30Rnd_545x39_Black_Mag_Yellow_F), QGVAR(30Rnd_545x39_Black_Mag_Tracer_F), QGVAR(30Rnd_545x39_Black_Mag_Tracer_Yellow_F), QGVAR(30Rnd_545x39_Mag_Sand_Green_F), QGVAR(30Rnd_545x39_Mag_Sand_F), QGVAR(30Rnd_545x39_Mag_Tracer_Sand_Green_F), QGVAR(30Rnd_545x39_Mag_Tracer_Sand_F), QGVAR(30Rnd_545x39_Mag_Olive_F), QGVAR(30Rnd_545x39_Mag_Tracer_Olive_F), QGVAR(30Rnd_545x39_Steel_Mag_F), QGVAR(30Rnd_545x39_Steel_Tracer_Mag_F), QGVAR(30Rnd_545x39_Steel_Gold_Mag_F), QGVAR(30Rnd_545x39_Steel_Gold_Tracer_Mag_F), QGVAR(45Rnd_545x39_Mag_Green_F), QGVAR(45Rnd_545x39_Mag_F), QGVAR(45Rnd_545x39_Mag_Tracer_Green_F), QGVAR(45Rnd_545x39_Mag_Tracer_F)};
+        GVAR(magazines)[] = {QGVAR(30Rnd_545x39_AK12_Mag_F), QGVAR(30Rnd_545x39_AK12_Mag_Tracer_F), QGVAR(30Rnd_545x39_Black_Mag_F), QGVAR(30Rnd_545x39_Black_Mag_Yellow_F), QGVAR(30Rnd_545x39_Black_Mag_Tracer_F), QGVAR(30Rnd_545x39_Black_Mag_Tracer_Yellow_F), QGVAR(30Rnd_545x39_Mag_Sand_Green_F), QGVAR(30Rnd_545x39_Mag_Sand_F), QGVAR(30Rnd_545x39_Mag_Tracer_Sand_Green_F), QGVAR(30Rnd_545x39_Mag_Tracer_Sand_F), QGVAR(30Rnd_545x39_Mag_Olive_F), QGVAR(30Rnd_545x39_Mag_Tracer_Olive_F), QGVAR(30Rnd_545x39_Steel_Mag_F), QGVAR(30Rnd_545x39_Steel_Tracer_Mag_F), QGVAR(30Rnd_545x39_Steel_Gold_Mag_F), QGVAR(30Rnd_545x39_Steel_Gold_Tracer_Mag_F), QGVAR(60Rnd_545x39_Mag_Green_F), QGVAR(60Rnd_545x39_Mag_F), QGVAR(60Rnd_545x39_Mag_Tracer_Green_F), QGVAR(60Rnd_545x39_Mag_Tracer_F), QGVAR(45Rnd_545x39_Mag_Green_F), QGVAR(45Rnd_545x39_Mag_F), QGVAR(45Rnd_545x39_Mag_Tracer_Green_F), QGVAR(45Rnd_545x39_Mag_Tracer_F)};
     };
     class AK_762x39 {
         GVAR(magazines)[] = {QGVAR(30Rnd_762x39_polymer_Black_Mag_F), QGVAR(30Rnd_762x39_polymer_Black_Mag_Green_F), QGVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_F), QGVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_Green_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_Green_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_Tracer_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_Tracer_Green_F)};
@@ -829,6 +1082,18 @@ class CfgMagazineWells {
     };
     class 3UGL_40x36 {
         GVAR(magazines)[] = {QGVAR(1Rnd_HEDP_Grenade_shell)};
+    };
+    class Pistol_9x21 {
+        GVAR(magazines)[] = {QGVAR(16Rnd_9x21_Mag_v2)};
+    };
+    class Rahim_762x54 {
+        GVAR(magazines)[] = {QGVAR(10Rnd_762x54_SVD_Red_Mag_F)};
+    };
+    class GVAR(FAMAS_556x54) {
+        Atlas_Magazines[] = {QGVAR(25Rnd_556x45_Famas), QGVAR(25Rnd_556x45_Famas_green), QGVAR(25Rnd_556x45_Famas_red), QGVAR(25Rnd_556x45_Famas_yellow), QGVAR(25Rnd_556x45_Famas_Tracer_Red), QGVAR(25Rnd_556x45_Famas_Tracer_Green), QGVAR(25Rnd_556x45_Famas_Tracer_Yellow)};
+    };
+    class GVAR(MP153_12GA) {
+        Aegis_Magazines[] = {QGVAR(4Rnd_12Gauge_Pellets), QGVAR(4Rnd_12Gauge_Slug), "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Slug", "2Rnd_HE_Mag_lxWS", "2Rnd_Smoke_Mag_lxWS"};
     };
     class GVAR(M32_40x36) {
         Aegis_Magazines[] = {QGVAR(6Rnd_HE_Grenade_shell), QGVAR(6Rnd_HEDP_Grenade_shell), QGVAR(6Rnd_UGL_FlareWhite_F), QGVAR(6Rnd_UGL_FlareGreen_F), QGVAR(6Rnd_UGL_FlareRed_F), QGVAR(6Rnd_UGL_FlareYellow_F), QGVAR(6Rnd_UGL_FlareCIR_F), QGVAR(6Rnd_Smoke_Grenade_shell), QGVAR(6Rnd_SmokeRed_Grenade_shell), QGVAR(6Rnd_SmokeGreen_Grenade_shell), QGVAR(6Rnd_SmokeYellow_Grenade_shell), QGVAR(6Rnd_SmokePurple_Grenade_shell), QGVAR(6Rnd_SmokeBlue_Grenade_shell), QGVAR(6Rnd_SmokeOrange_Grenade_shell), QGVAR(6Rnd_APERSMine_Grenade_shell)};
@@ -843,10 +1108,7 @@ class CfgMagazineWells {
         Aegis_Magazines[] = {QGVAR(7Rnd_127x33_Mag)};
     };
     class GVAR(Shotgun_12GA) {
-        Aegis_Magazines[] = {QGVAR(8Rnd_12Gauge_Pellets), QGVAR(8Rnd_12Gauge_Slug), QGVAR(4Rnd_12Gauge_Pellets), QGVAR(4Rnd_12Gauge_Slug), "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Slug"};
-    };
-    class GVAR(MP153_12GA) {
-        Aegis_Magazines[] = {QGVAR(4Rnd_12Gauge_Pellets), QGVAR(4Rnd_12Gauge_Slug), "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Slug"};
+        Aegis_Magazines[] = {QGVAR(8Rnd_12Gauge_Pellets), QGVAR(8Rnd_12Gauge_Slug), QGVAR(4Rnd_12Gauge_Pellets), QGVAR(4Rnd_12Gauge_Slug), "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Slug", "2Rnd_HE_Mag_lxWS", "2Rnd_Smoke_Mag_lxWS"};
     };
     class GVAR(SMG_04_460x30) {
         Aegis_Magazines[] = {QGVAR(40Rnd_460x30_Mag_F), QGVAR(20Rnd_460x30_Mag_F)};
@@ -860,6 +1122,11 @@ class CfgMagazineWells {
 };
 class CfgRecoils {
     class recoil_default;
+    class GVAR(recoil_mp153): recoil_default {
+        muzzleOuter[] = {1, 3, 0.6, 0.6};
+        kickBack[] = {0.08, 0.1};
+        temporary = 0.02;
+    };
     class GVAR(recoil_pistol_g17): recoil_default {
         muzzleOuter[] = {0.2, 1, 0.2, 0.3};
         kickBack[] = {0.03, 0.06};
@@ -900,11 +1167,6 @@ class CfgRecoils {
         kickBack[] = {0.08, 0.1};
         temporary = 0.02;
     };
-    class GVAR(recoil_mp153): recoil_default {
-        muzzleOuter[] = {1, 3, 0.6, 0.6};
-        kickBack[] = {0.08, 0.1};
-        temporary = 0.02;
-    };
     class GVAR(recoil_smg_04): recoil_default {
         muzzleOuter[] = {0.2, 0.5, 0.2, 0.2};
         kickBack[] = {0.01, 0.03};
@@ -926,6 +1188,21 @@ class CfgRecoils {
         kickBack[] = {0.02, 0.03};
         temporary = 0.01;
     };
+    class GVAR(recoil_rpk12_545): recoil_default {
+        muzzleOuter[] = {0.2, 0.7, 0.3, 0.3};
+        kickBack[] = {0.02, 0.05};
+        temporary = 0.01;
+    };
+    class GVAR(recoil_ak12u_545): recoil_default {
+        muzzleOuter[] = {0.2, 0.7, 0.3, 0.3};
+        kickBack[] = {0.02, 0.05};
+        temporary = 0.01;
+    };
+    class GVAR(recoil_ak12_545): recoil_default {
+        muzzleOuter[] = {0.2, 0.7, 0.3, 0.3};
+        kickBack[] = {0.02, 0.05};
+        temporary = 0.01;
+    };
     class GVAR(recoil_wf50): recoil_default {
         muzzleOuter[] = {1.3, 3.3, 0.6, 0.7};
         kickBack[] = {0.1, 0.1};
@@ -945,6 +1222,15 @@ class CfgSoundSets {
     class Rifle_silencerShot_Base_SoundSet;
     class Rifle_silencerTail_Base_SoundSet;
     class Rifle_Tail_Base_SoundSet;
+    class GVAR(MP153_Shot_SoundSet): Rifle_Shot_Base_SoundSet {
+        soundShaders[] = {QGVAR(MP153_Closure_SoundShader), QGVAR(MP153_closeShot_SoundShader), QGVAR(MP153_midShot_SoundShader), QGVAR(MP153_distShot_SoundShader)};
+    };
+    class GVAR(MP153_Tail_SoundSet): Rifle_Tail_Base_SoundSet {
+        soundShaders[] = {QGVAR(MP153_tailForest_SoundShader), QGVAR(MP153_tailHouses_SoundShader), QGVAR(MP153_tailMeadows_SoundShader), QGVAR(MP153_tailTrees_SoundShader)};
+    };
+    class GVAR(MP153_interiorTail_SoundSet): Rifle_InteriorTail_Base_SoundSet {
+        soundShaders[] = {QGVAR(MP153_tailInterior_SoundShader)};
+    };
     class GVAR(XM25_Shot_SoundSet): Rifle_Shot_Base_SoundSet {
         soundShaders[] = {QGVAR(XM25_Closure_SoundShader), QGVAR(XM25_closeShot_SoundShader), QGVAR(XM25_midShot_SoundShader), QGVAR(XM25_distShot_SoundShader)};
     };
@@ -1035,15 +1321,6 @@ class CfgSoundSets {
     class GVAR(M4_SSAS_interiorTail_SoundSet): Rifle_InteriorTail_Base_SoundSet {
         soundShaders[] = {QGVAR(M4_SSAS_tailInterior_SoundShader)};
     };
-    class GVAR(MP153_Shot_SoundSet): Rifle_Shot_Base_SoundSet {
-        soundShaders[] = {QGVAR(MP153_Closure_SoundShader), QGVAR(MP153_closeShot_SoundShader), QGVAR(MP153_midShot_SoundShader), QGVAR(MP153_distShot_SoundShader)};
-    };
-    class GVAR(MP153_Tail_SoundSet): Rifle_Tail_Base_SoundSet {
-        soundShaders[] = {QGVAR(MP153_tailForest_SoundShader), QGVAR(MP153_tailHouses_SoundShader), QGVAR(MP153_tailMeadows_SoundShader), QGVAR(MP153_tailTrees_SoundShader)};
-    };
-    class GVAR(MP153_interiorTail_SoundSet): Rifle_InteriorTail_Base_SoundSet {
-        soundShaders[] = {QGVAR(MP153_tailInterior_SoundShader)};
-    };
     class GVAR(SMG04_Shot_SoundSet): Rifle_Shot_Base_SoundSet {
         soundShaders[] = {QGVAR(SMG04_closure_SoundShader), QGVAR(SMG04_closeShot_SoundShader), QGVAR(SMG04_midShot_SoundShader), QGVAR(SMG04_distShot_SoundShader)};
     };
@@ -1091,6 +1368,64 @@ class CfgSoundSets {
     };
 };
 class CfgSoundShaders {
+    class GVAR(MP153_Closure_SoundShader) {
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closure_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closure_02", 1}};
+        range = 5;
+        volume = "db-13";
+    };
+    class GVAR(MP153_closeShot_SoundShader) {
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closeShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closeShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closeShot_03", 1}};
+        volume = "db0";
+        range = 50;
+        rangeCurve = "closeShotCurve";
+    };
+    class GVAR(MP153_midShot_SoundShader) {
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_midShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_midShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_midShot_03", 1}};
+        volume = "db-3";
+        range = 1200;
+        rangeCurve[] = {{0, 0.2}, {50, 1}, {150, 0}, {1200, 0}};
+    };
+    class GVAR(MP153_distShot_SoundShader) {
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_distShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_distShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_distShot_03", 1}};
+        volume = "db0";
+        range = 1200;
+        rangeCurve[] = {{0, 0}, {50, 0}, {150, 1}, {1200, 1}};
+    };
+    class GVAR(MP153_tailForest_SoundShader) {
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailForest", 1}};
+        volume = "(1-interior/1.4)*forest/3";
+        range = 1200;
+        rangeCurve[] = {{0, 1}, {1200, 0}};
+        limitation = 1;
+    };
+    class GVAR(MP153_tailHouses_SoundShader) {
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailHouses", 1}};
+        volume = "(1-interior/1.4)*houses/3";
+        range = 1200;
+        rangeCurve[] = {{0, 1}, {150, 0.3}, {1200, 0}};
+        limitation = 1;
+    };
+    class GVAR(MP153_tailMeadows_SoundShader) {
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailMeadows", 1}};
+        volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
+        range = 1200;
+        rangeCurve[] = {{0, 1}, {1200, 0}};
+        limitation = 1;
+    };
+    class GVAR(MP153_tailTrees_SoundShader) {
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailTrees", 1}};
+        volume = "(1-interior/1.4)*trees/3";
+        range = 1200;
+        rangeCurve[] = {{0, 1}, {1200, 0}};
+        limitation = 1;
+    };
+    class GVAR(MP153_tailInterior_SoundShader) {
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailInterior", 1}};
+        volume = "interior";
+        range = 250;
+        rangeCurve[] = {{0, 1}, {30, 0.4}, {100, 0.2}, {250, 0}};
+        limitation = 1;
+    };
     class GVAR(XM25_Closure_SoundShader) {
         samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\XM25\XM25_closure_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\XM25\XM25_closure_02", 1}};
         range = 5;
@@ -1641,64 +1976,6 @@ class CfgSoundShaders {
     };
     class GVAR(M4_SSAS_tailInterior_SoundShader) {
         samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_tailInterior", 1}};
-        volume = "interior";
-        range = 250;
-        rangeCurve[] = {{0, 1}, {30, 0.4}, {100, 0.2}, {250, 0}};
-        limitation = 1;
-    };
-    class GVAR(MP153_Closure_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closure_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closure_02", 1}};
-        range = 5;
-        volume = "db-13";
-    };
-    class GVAR(MP153_closeShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closeShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closeShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closeShot_03", 1}};
-        volume = "db0";
-        range = 50;
-        rangeCurve = "closeShotCurve";
-    };
-    class GVAR(MP153_midShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_midShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_midShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_midShot_03", 1}};
-        volume = "db-3";
-        range = 1200;
-        rangeCurve[] = {{0, 0.2}, {50, 1}, {150, 0}, {1200, 0}};
-    };
-    class GVAR(MP153_distShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_distShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_distShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_distShot_03", 1}};
-        volume = "db0";
-        range = 1200;
-        rangeCurve[] = {{0, 0}, {50, 0}, {150, 1}, {1200, 1}};
-    };
-    class GVAR(MP153_tailForest_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailForest", 1}};
-        volume = "(1-interior/1.4)*forest/3";
-        range = 1200;
-        rangeCurve[] = {{0, 1}, {1200, 0}};
-        limitation = 1;
-    };
-    class GVAR(MP153_tailHouses_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailHouses", 1}};
-        volume = "(1-interior/1.4)*houses/3";
-        range = 1200;
-        rangeCurve[] = {{0, 1}, {150, 0.3}, {1200, 0}};
-        limitation = 1;
-    };
-    class GVAR(MP153_tailMeadows_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailMeadows", 1}};
-        volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
-        range = 1200;
-        rangeCurve[] = {{0, 1}, {1200, 0}};
-        limitation = 1;
-    };
-    class GVAR(MP153_tailTrees_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailTrees", 1}};
-        volume = "(1-interior/1.4)*trees/3";
-        range = 1200;
-        rangeCurve[] = {{0, 1}, {1200, 0}};
-        limitation = 1;
-    };
-    class GVAR(MP153_tailInterior_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailInterior", 1}};
         volume = "interior";
         range = 250;
         rangeCurve[] = {{0, 1}, {30, 0.4}, {100, 0.2}, {250, 0}};

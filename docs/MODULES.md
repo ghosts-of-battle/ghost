@@ -18,6 +18,15 @@ Place from the 3DEN entity list under the listed category.
 - Ambient war: every few minutes a one-way drone flies in and dives on a building near a player inside the named markers. It is a real aircraft on the map - audible, visible and killable, and shooting it down is the counterplay. It never dives at the players themselves.
 - **Attributes** `bandMax`, `bandMin`, `diveSpeed`, `droneClasses`, `intervalMax`, `intervalMin`, `markers`
 
+## AntiShip (`antiship`)
+
+### Ghost - Anti-Ship Batteries
+
+- **Class** `ghost_moduleAntiShip`
+- **Category** ghost_modules
+- Sites coastal anti-ship batteries for every ALiVE commander the players are not on, inside its own TAOR: a surface search radar on the shoreline and launchers inland behind it. Nobody placing the mission knows where. Without ALiVE, the module's own area is the ground and the battery belongs to the side opposing the players. How they fire is under CBA settings, Anti-Ship.
+- **Attributes** `batteriesPerSide`, `launchersPerBattery`, `radarsPerBattery`
+
 ## APS (`aps`)
 
 ### Ghost - APS
