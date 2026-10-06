@@ -1,6 +1,6 @@
 #define MAJOR 0
 #define MINOR 1
 #define PATCH 0
-#define BUILD 1125
+#define BUILD 1126
 
 #define PATCHLVL PATCH
