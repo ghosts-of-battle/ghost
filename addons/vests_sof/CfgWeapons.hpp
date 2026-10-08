@@ -185,6 +185,14 @@ class CfgWeapons {
             QPATHTOF(data\flagpatch_us_co.paa)
         };
     };
+    class GVAR(SOF_V_AVSCarrier_Lite_new_ocp): GVAR(SOF_V_AVSCarrier_Lite_new_rgr) {
+        displayName = "[Ghost] Light Carrier Vest (Lite, OCP)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrieravs_ocp_co.paa),
+            QPATHTOF(data\pouches_generic_mcam_co.paa),
+            QPATHTOF(data\flagpatch_us_co.paa)
+        };
+    };
     class GVAR(SOF_V_AVSCarrier_Lite_new_tna): GVAR(SOF_V_AVSCarrier_Lite_new_rgr) {
         displayName = "[Ghost] Light Carrier Vest (Lite, Tropic)";
         hiddenSelectionsTextures[] = {
@@ -287,6 +295,14 @@ class CfgWeapons {
             QPATHTOF(data\flagpatch_us_co.paa)
         };
     };
+    class GVAR(SOF_V_AVSCarrier_Rifle_new_ocp): GVAR(SOF_V_AVSCarrier_Rifle_new_rgr) {
+        displayName = "[Ghost] Light Carrier Vest (Rifleman, OCP)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrieravs_ocp_co.paa),
+            QPATHTOF(data\pouches_generic_mcam_co.paa),
+            QPATHTOF(data\flagpatch_us_co.paa)
+        };
+    };
     class GVAR(SOF_V_AVSCarrier_Rifle_new_tna): GVAR(SOF_V_AVSCarrier_Rifle_new_rgr) {
         displayName = "[Ghost] Light Carrier Vest (Rifleman, Tropic)";
         hiddenSelectionsTextures[] = {
@@ -339,6 +355,14 @@ class CfgWeapons {
         displayName = "[Ghost] Light Carrier Vest (Rifleman, MTP, No Flag)";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\v_carrieravs_mcam_co.paa),
+            QPATHTOF(data\pouches_generic_mcam_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_V_AVSCarrier_Rifle_new_ocp_noflag): GVAR(SOF_V_AVSCarrier_Rifle_new_ocp) {
+        displayName = "[Ghost] Light Carrier Vest (Rifleman, OCP, No Flag)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrieravs_ocp_co.paa),
             QPATHTOF(data\pouches_generic_mcam_co.paa),
             ""
         };
@@ -405,6 +429,14 @@ class CfgWeapons {
             QPATHTOF(data\flagpatch_us_co.paa)
         };
     };
+    class GVAR(SOF_V_AVSCarrier_Gunner_new_ocp): GVAR(SOF_V_AVSCarrier_Gunner_new_rgr) {
+        displayName = "[Ghost] Light Carrier Vest (Gunner, OCP)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrieravs_ocp_co.paa),
+            QPATHTOF(data\pouches_generic_mcam_co.paa),
+            QPATHTOF(data\flagpatch_us_co.paa)
+        };
+    };
     class GVAR(SOF_V_AVSCarrier_Gunner_new_tna): GVAR(SOF_V_AVSCarrier_Gunner_new_rgr) {
         displayName = "[Ghost] Light Carrier Vest (Gunner, Tropic)";
         hiddenSelectionsTextures[] = {
@@ -459,6 +491,320 @@ class CfgWeapons {
             QPATHTOF(data\v_carrieravs_mcam_co.paa),
             QPATHTOF(data\pouches_generic_mcam_co.paa),
             ""
+        };
+    };
+    class GVAR(SOF_V_AVSCarrier_Gunner_new_ocp_noflag): GVAR(SOF_V_AVSCarrier_Gunner_new_ocp) {
+        displayName = "[Ghost] Light Carrier Vest (Gunner, OCP, No Flag)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrieravs_ocp_co.paa),
+            QPATHTOF(data\pouches_generic_mcam_co.paa),
+            ""
+        };
+    };
+    /* ---- JAM SOF's CHPC carrier (CSAT plate carrier): Lite, Gunner, Rig and SMG cuts in
+       khaki, black, olive, hex and green hex. The mod's own models, our copies of its sheets. */
+    class GVAR(SOF_V_CHPCCarrier_Lite_khk): V_PlateCarrier1_rgr {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier Lite [CSAT] (Khaki)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelections[] = {
+            "camo",
+            "camo1"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_khk_co.paa),
+            ""
+        };
+        model = "\SOFGear\sof_characters\Vests\V_CarrierCHPC_Lite.p3d";
+        class ItemInfo: VestItem {
+            uniformModel = "\SOFGear\sof_characters\Vests\V_CarrierCHPC_Lite.p3d";
+            hiddenSelections[] = {
+                "camo",
+                "camo1"
+            };
+            hiddenSelectionsTextures[] = {
+                QPATHTOF(data\v_carrierchpc_khk_co.paa),
+                ""
+            };
+            containerClass = "Supply110";
+            mass = 60;
+            GHOST_PLATE_CARRIER_STANDARD_PROTECTION
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_Lite_blk): GVAR(SOF_V_CHPCCarrier_Lite_khk) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier Lite [CSAT] (Black)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_blk_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_Lite_oli): GVAR(SOF_V_CHPCCarrier_Lite_khk) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier Lite [CSAT] (Olive)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_oli_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_Lite_hex): GVAR(SOF_V_CHPCCarrier_Lite_khk) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier Lite [CSAT] (Hex)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_hex_co.paa),
+            QPATHTOF(data\flagpatch_csat_co.paa)
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_Lite_ghex): GVAR(SOF_V_CHPCCarrier_Lite_khk) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier Lite [CSAT] (Green Hex)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_ghex_co.paa),
+            QPATHTOF(data\flagpatch_csat_co.paa)
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_SMG_khk): V_PlateCarrier1_rgr {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier SMG [CSAT] (Khaki)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelections[] = {
+            "camo",
+            "camo1"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_khk_co.paa),
+            ""
+        };
+        model = "\SOFGear\sof_characters\Vests\V_CarrierCHPC_SMG.p3d";
+        class ItemInfo: VestItem {
+            uniformModel = "\SOFGear\sof_characters\Vests\V_CarrierCHPC_SMG.p3d";
+            hiddenSelections[] = {
+                "camo",
+                "camo1"
+            };
+            hiddenSelectionsTextures[] = {
+                QPATHTOF(data\v_carrierchpc_khk_co.paa),
+                ""
+            };
+            containerClass = "Supply110";
+            mass = 60;
+            GHOST_PLATE_CARRIER_STANDARD_PROTECTION
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_SMG_blk): GVAR(SOF_V_CHPCCarrier_SMG_khk) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier SMG [CSAT] (Black)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_blk_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_SMG_oli): GVAR(SOF_V_CHPCCarrier_SMG_khk) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier SMG [CSAT] (Olive)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_oli_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_SMG_hex): GVAR(SOF_V_CHPCCarrier_SMG_khk) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier SMG [CSAT] (Hex)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_hex_co.paa),
+            QPATHTOF(data\flagpatch_csat_co.paa)
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_SMG_ghex): GVAR(SOF_V_CHPCCarrier_SMG_khk) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier SMG [CSAT] (Green Hex)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_ghex_co.paa),
+            QPATHTOF(data\flagpatch_csat_co.paa)
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_Rig_khk): V_PlateCarrier1_rgr {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier Rig [CSAT] (Khaki)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelections[] = {
+            "camo",
+            "camo1"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_khk_co.paa),
+            ""
+        };
+        model = "\SOFGear\sof_characters\Vests\V_CarrierCHPC_Rig.p3d";
+        class ItemInfo: VestItem {
+            uniformModel = "\SOFGear\sof_characters\Vests\V_CarrierCHPC_Rig.p3d";
+            hiddenSelections[] = {
+                "camo",
+                "camo1"
+            };
+            hiddenSelectionsTextures[] = {
+                QPATHTOF(data\v_carrierchpc_khk_co.paa),
+                ""
+            };
+            containerClass = "Supply110";
+            mass = 60;
+            GHOST_PLATE_CARRIER_STANDARD_PROTECTION
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_Rig_blk): GVAR(SOF_V_CHPCCarrier_Rig_khk) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier Rig [CSAT] (Black)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_blk_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_Rig_oli): GVAR(SOF_V_CHPCCarrier_Rig_khk) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier Rig [CSAT] (Olive)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_oli_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_Rig_hex): GVAR(SOF_V_CHPCCarrier_Rig_khk) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier Rig [CSAT] (Hex)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_hex_co.paa),
+            QPATHTOF(data\flagpatch_csat_co.paa)
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_Rig_ghex): GVAR(SOF_V_CHPCCarrier_Rig_khk) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier Rig [CSAT] (Green Hex)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_ghex_co.paa),
+            QPATHTOF(data\flagpatch_csat_co.paa)
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_Gunner_khk): V_PlateCarrier1_rgr {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier Gunner [CSAT] (Khaki)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelections[] = {
+            "camo",
+            "camo1",
+            "camo2"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_khk_co.paa),
+            QPATHTOF(data\pouches_generic_cbr_co.paa),
+            ""
+        };
+        model = "\SOFGear\sof_characters\Vests\V_CarrierCHPC_Gunner.p3d";
+        class ItemInfo: VestItem {
+            uniformModel = "\SOFGear\sof_characters\Vests\V_CarrierCHPC_Gunner.p3d";
+            hiddenSelections[] = {
+                "camo",
+                "camo1",
+                "camo2"
+            };
+            hiddenSelectionsTextures[] = {
+                QPATHTOF(data\v_carrierchpc_khk_co.paa),
+                QPATHTOF(data\pouches_generic_cbr_co.paa),
+                ""
+            };
+            containerClass = "Supply140";
+            mass = 75;
+            GHOST_PLATE_CARRIER_STANDARD_PROTECTION
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_Gunner_blk): GVAR(SOF_V_CHPCCarrier_Gunner_khk) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier Gunner [CSAT] (Black)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_blk_co.paa),
+            QPATHTOF(data\pouches_generic_blk_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_Gunner_oli): GVAR(SOF_V_CHPCCarrier_Gunner_khk) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier Gunner [CSAT] (Olive)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_oli_co.paa),
+            QPATHTOF(data\pouches_generic_oli_co.paa),
+            ""
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_Gunner_hex): GVAR(SOF_V_CHPCCarrier_Gunner_khk) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier Gunner [CSAT] (Hex)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_hex_co.paa),
+            QPATHTOF(data\pouches_generic_hex_co.paa),
+            QPATHTOF(data\flagpatch_csat_co.paa)
+        };
+    };
+    class GVAR(SOF_V_CHPCCarrier_Gunner_ghex): GVAR(SOF_V_CHPCCarrier_Gunner_khk) {
+        author = "OokamiJamie";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[Ghost] Plate Carrier Gunner [CSAT] (Green Hex)";
+        picture = QPATHTOF(data\v_carrierchpc_ico_ca.paa);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\v_carrierchpc_ghex_co.paa),
+            QPATHTOF(data\pouches_generic_ghex_co.paa),
+            QPATHTOF(data\flagpatch_csat_co.paa)
         };
     };
 };

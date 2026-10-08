@@ -11,7 +11,7 @@ class CfgMagazines {
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[Ghost] 6rnd 12g Mk350 TBS";
+        displayName = "[Ghost] 6Rnd 12ga Mk350 TBS";
         displayNameShort = "TBS";
         descriptionShort = "Tungsten buckshot — Hold velocity; harder penetration";
         ammo = "FA_b_12G_Mk350_TBS";
@@ -23,7 +23,7 @@ class CfgMagazines {
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[Ghost] 8rnd 12g Mk350 TBS";
+        displayName = "[Ghost] 8Rnd 12ga Mk350 TBS";
         displayNameShort = "TBS";
         descriptionShort = "Tungsten buckshot — Hold velocity; harder penetration";
         ammo = "FA_b_12G_Mk350_TBS";
@@ -39,7 +39,7 @@ class CfgMagazines {
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[Ghost] 6rnd 12g Mk351 FLE";
+        displayName = "[Ghost] 6Rnd 12ga Mk351 FLE";
         displayNameShort = "Flechette";
         descriptionShort = "Tungsten flechette — Tight pattern; cover penetration";
         ammo = "FA_b_12G_Mk351_FLE";
@@ -51,7 +51,7 @@ class CfgMagazines {
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[Ghost] 8rnd 12g Mk351 FLE";
+        displayName = "[Ghost] 8Rnd 12ga Mk351 FLE";
         displayNameShort = "Flechette";
         descriptionShort = "Tungsten flechette — Tight pattern; cover penetration";
         ammo = "FA_b_12G_Mk351_FLE";
@@ -67,7 +67,7 @@ class CfgMagazines {
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[Ghost] 6rnd 12g Mk352 APS";
+        displayName = "[Ghost] 6Rnd 12ga Mk352 APS";
         displayNameShort = "AP Slug";
         descriptionShort = "Tungsten AP slug — Light armor / hard cover defeat";
         ammo = "FA_b_12G_Mk352_APS";
@@ -79,7 +79,7 @@ class CfgMagazines {
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[Ghost] 8rnd 12g Mk352 APS";
+        displayName = "[Ghost] 8Rnd 12ga Mk352 APS";
         displayNameShort = "AP Slug";
         descriptionShort = "Tungsten AP slug — Light armor / hard cover defeat";
         ammo = "FA_b_12G_Mk352_APS";
@@ -95,7 +95,7 @@ class CfgMagazines {
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[Ghost] 6rnd 12g Mk353 BRC";
+        displayName = "[Ghost] 6Rnd 12ga Mk353 BRC";
         displayNameShort = "Breaching";
         descriptionShort = "Frangible breaching round — Defeats lock/hinge; minimal over-pen";
         ammo = "FA_b_12G_Mk353_BRC";
@@ -107,7 +107,7 @@ class CfgMagazines {
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[Ghost] 8rnd 12g Mk353 BRC";
+        displayName = "[Ghost] 8Rnd 12ga Mk353 BRC";
         displayNameShort = "Breaching";
         descriptionShort = "Frangible breaching round — Defeats lock/hinge; minimal over-pen";
         ammo = "FA_b_12G_Mk353_BRC";
@@ -123,7 +123,7 @@ class CfgMagazines {
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[Ghost] 6rnd 12g Mk360 AD";
+        displayName = "[Ghost] 6Rnd 12ga Mk360 AD";
         displayNameShort = "Anti-Drone";
         descriptionShort = "Anti-drone shot — Dense tungsten pattern; ~40-50 m";
         ammo = "FA_b_12G_Mk360_AD";
@@ -135,7 +135,7 @@ class CfgMagazines {
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[Ghost] 8rnd 12g Mk360 AD";
+        displayName = "[Ghost] 8Rnd 12ga Mk360 AD";
         displayNameShort = "Anti-Drone";
         descriptionShort = "Anti-drone shot — Dense tungsten pattern; ~40-50 m";
         ammo = "FA_b_12G_Mk360_AD";
@@ -151,7 +151,7 @@ class CfgMagazines {
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[Ghost] 6rnd 12g Mk363 PAB-S";
+        displayName = "[Ghost] 6Rnd 12ga Mk363 PABS";
         displayNameShort = "AD Airburst";
         descriptionShort = "Anti-drone proximity airburst slug — Script-driven UAV defeat at reach";
         ammo = "FA_b_12G_Mk363_PABS";
@@ -163,7 +163,7 @@ class CfgMagazines {
         author = QAUTHOR;
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[Ghost] 8rnd 12g Mk363 PAB-S";
+        displayName = "[Ghost] 8Rnd 12ga Mk363 PABS";
         displayNameShort = "AD Airburst";
         descriptionShort = "Anti-drone proximity airburst slug — Script-driven UAV defeat at reach";
         ammo = "FA_b_12G_Mk363_PABS";

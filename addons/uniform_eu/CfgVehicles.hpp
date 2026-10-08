@@ -31,28 +31,28 @@ class CfgVehicles {
     class GVAR(CombatUniformNCU_01_mcam_F): GVAR(CombatUniformNCU_01_base) {
         uniformClass = QGVAR(U_CombatUniformNCU_01_mcam_F);
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\clothing_ncu_mcam_co.paa),
+            QPATHTOEF(uniform,models\characters\Uniforms\Data\clothing_ncu_mcam_CO.paa),
             QPATHTOF(data\combatgloves_khk_co.paa)
         };
     };
     class GVAR(CombatUniformNCU_02_mcam_F): GVAR(CombatUniformNCU_02_base) {
         uniformClass = QGVAR(U_CombatUniformNCU_02_mcam_F);
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\clothing_ncu_mcam_co.paa),
+            QPATHTOEF(uniform,models\characters\Uniforms\Data\clothing_ncu_mcam_CO.paa),
             QPATHTOF(data\combatgloves_khk_co.paa)
         };
     };
     class GVAR(CombatUniformNCU_01_mcam_wdl_F): GVAR(CombatUniformNCU_01_base) {
         uniformClass = QGVAR(U_CombatUniformNCU_01_mcam_wdl_F);
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\clothing_ncu_mcam_wdl_co.paa),
+            QPATHTOEF(uniform,models\characters\Uniforms\Data\clothing_ncu_mcam_wdl_CO.paa),
             QPATHTOF(data\combatgloves_grn_co.paa)
         };
     };
     class GVAR(CombatUniformNCU_02_mcam_wdl_F): GVAR(CombatUniformNCU_02_base) {
         uniformClass = QGVAR(U_CombatUniformNCU_02_mcam_wdl_F);
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\clothing_ncu_mcam_wdl_co.paa),
+            QPATHTOEF(uniform,models\characters\Uniforms\Data\clothing_ncu_mcam_wdl_CO.paa),
             QPATHTOF(data\combatgloves_grn_co.paa)
         };
     };

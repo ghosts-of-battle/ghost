@@ -3,16 +3,13 @@
 
 class asdg_FrontSideRail;
 class asdg_MuzzleSlot;
-class asdg_MuzzleSlot_46;
 class asdg_MuzzleSlot_545R;
 class asdg_MuzzleSlot_556;
 class asdg_MuzzleSlot_65;
 class asdg_MuzzleSlot_762;
 class asdg_MuzzleSlot_762R;
 class asdg_MuzzleSlot_9MM;
-class asdg_MuzzleSlot_9MM_SMG;
 class asdg_OpticRail1913;
-class asdg_OpticRail1913_long;
 class asdg_OpticRail1913_short;
 class asdg_PistolOpticRail1913;
 class asdg_PistolUnderRail;

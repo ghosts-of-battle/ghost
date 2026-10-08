@@ -65,7 +65,7 @@ private _s = _cfg >> "settings";
     GVAR(settings) set [_key, _value];
 } forEach [
     ["unitId", ""], ["serverId", ""], ["schemaVersion", PAC_SCHEMA],
-    ["autoSlot", 1], ["slotMatch", "role"],
+    ["autoSlot", 1], ["slotMatch", "role"], ["arsenalMode", "both"],
     ["savedLoadouts", 3], ["currentOpord", ""], ["opWindows", []],
     ["sync", "off"]
 ];

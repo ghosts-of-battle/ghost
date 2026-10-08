@@ -43,15 +43,17 @@ private _cfg = configFile >> "CfgMagazines" >> _class;
 _class = configName _cfg;
 private _name = getText (_cfg >> "displayName");
 private _pic = getText (_cfg >> "picture");
+// the row keeps its family's name (fnc_collapsePanel); the tooltip says which variant it now holds
+private _row = GVAR(rowName) getOrDefault [toLower _class, _name];
 
 if (_isLnb) then {
     _ctrl lnbSetData [[_sel, 0], _class];
-    _ctrl lnbSetText [[_sel, 1], _name];
+    _ctrl lnbSetText [[_sel, 1], _row];
     _ctrl lnbSetPicture [[_sel, 0], _pic];
     _ctrl lnbSetTooltip [[_sel, 0], format ["%1%2%3", _name, endl, _class]];
 } else {
     _ctrl lbSetData [_sel, _class];
-    _ctrl lbSetText [_sel, _name];
+    _ctrl lbSetText [_sel, _row];
     _ctrl lbSetPicture [_sel, _pic];
     _ctrl lbSetTooltip [_sel, format ["%1%2%3", _name, endl, _class]];
 };

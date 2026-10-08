@@ -1,4 +1,4 @@
-class CfgMagazinewells {
+class CfgMagazineWells {
     // 5.56x45 STANAG well — JCA EMAG/PMAG (Black and Sand) tracer variants
     class STANAG_556x45 {
         ADDON[] += {

@@ -17,6 +17,9 @@ Description:
         "trait:isISR"            a unit variable set true, broadcast
         "var:someName=someValue" any setVariable, value compiled if it is
                                  true/false/number, kept as a string otherwise
+        "arsenal:marksman"       a qualification arsenal: the document
+                                 <unit>.arsenal.qual_MARKSMAN is added to the
+                                 man's arsenal (ghost_groups_fnc_buildArsenal)
 
     - and this is the one place that knows what those shapes mean.
 
@@ -34,6 +37,12 @@ Description:
     LOCAL TO THE UNIT. setUnitTrait needs the unit local, so this is
     remoteExec'd to the owner.
 
+    THE ROLE'S SKILLS AND THE MAN'S SKILLS AT ONCE. What is applied is the
+    man's own PAC skills PLUS the skills his current role grants (the role's
+    defaultSkills - "Skills it grants" on the role page), so a role can hand
+    out what the job needs while a man's own qualifications go with him from
+    role to role. Taking another role takes the old role's grants away.
+
 Parameters:
     0: The unit <OBJECT>
     1: skillIds <ARRAY of STRING>
@@ -49,6 +58,33 @@ params [["_unit", objNull, [objNull]], ["_skillIds", [], [[]]]];
 
 if (isNull _unit || {!local _unit}) exitWith {0};
 
+// the role's grants on top of the man's own - a copy, the roster row is shared
+_skillIds = +_skillIds;
+private _roleId = _unit getVariable ["YMF_role", ""];
+private _role = createHashMap;
+if (_roleId isNotEqualTo "") then {
+    _role = (GVAR(structure) getOrDefault ["roles", createHashMap]) getOrDefault [_roleId, createHashMap];
+    if (_role isEqualType createHashMap) then {
+        {
+            if (_x isEqualType "" && _x isNotEqualTo "") then {_skillIds pushBackUnique _x};
+        } forEach (_role getOrDefault ["defaultSkills", []]);
+    };
+};
+
+// AND THIS MISSION'S SESSION SKILLS from the admin panel (FUNC(sessionSkills)):
+// kept on the server by Steam id until the mission ends, never stored. A
+// "skill:<id>" entry is held like any other skill - effects, arsenal, tag;
+// anything else is a bare effect applied after the skills.
+private _sessionEffects = [];
+{
+    if (_x select [0, 6] isEqualTo "skill:") then {
+        _skillIds pushBackUnique (_x select [6]);
+    } else {
+        _sessionEffects pushBack _x;
+    };
+} forEach (((missionNamespace getVariable [QGVAR(session), createHashMap]) getOrDefault [getPlayerUID _unit, []])
+    + (_unit getVariable [QGVAR(tempEffects), []]));
+
 // ---- clear what we set last time -------------------------------------------
 {
     _unit setVariable [_x, nil, true];
@@ -62,6 +98,7 @@ _unit setUnitTrait ["Engineer", false];
 _unit setUnitTrait ["ExplosiveSpecialist", false];
 
 private _setVars = [];
+private _quals = [];
 private _applied = 0;
 private _skills = GVAR(structure) getOrDefault ["skills", createHashMap];
 
@@ -76,23 +113,26 @@ private _fnc_effect = {
     private _val = trim ((_parts select [1]) joinString ":");
     switch (_kind) do {
         case "medic": {
-            private _n = (parseNumber _val) max 0 min 2;
+            private _n = ((parseNumber _val) max 0 min 2) max (_unit getVariable ["ace_medical_medicClass", 0]);
             _unit setVariable ["ace_medical_medicClass", _n, true];
             _unit setUnitTrait ["Medic", _n > 0];
         };
         case "engineer": {
-            private _n = (parseNumber _val) max 0 min 2;
+            private _n = ((parseNumber _val) max 0 min 2) max (_unit getVariable ["ACE_IsEngineer", 0]);
             _unit setVariable ["ACE_IsEngineer", _n, true];
             _unit setUnitTrait ["Engineer", _n > 0];
         };
         case "eod": {
-            private _on = (parseNumber _val) > 0;
+            private _on = (parseNumber _val) > 0 || {_unit getVariable ["ACE_isEOD", false]};
             _unit setVariable ["ACE_isEOD", _on, true];
             _unit setUnitTrait ["ExplosiveSpecialist", _on];
         };
         case "trait": {
             _unit setVariable [_val, true, true];
             _setVars pushBackUnique _val;
+        };
+        case "arsenal": {
+            _quals pushBackUnique toLower _val;
         };
         case "var": {
             private _kv = _val splitString "=";
@@ -130,13 +170,41 @@ private _fnc_effect = {
     } forEach (_skill getOrDefault ["effects", []]);
 } forEach _skillIds;
 
-// THEN THE SESSION'S TEMPORARY EFFECTS on top - what the admin console applied
-// for tonight (ghost_pac_tempEffects). Cleared at respawn, never stored.
+// THEN THE SESSION'S BARE EFFECTS on top - what the admin panel applied for
+// this mission that is not a whole skill. Never stored.
 {
     if ([_x] call _fnc_effect) then {_applied = _applied + 1};
-} forEach (_unit getVariable [QGVAR(tempEffects), []]);
+} forEach _sessionEffects;
 
 _unit setVariable [QGVAR(setVars), _setVars];
+
+// WHAT HE IS QUALIFIED AS, FOR EVERYBODY ELSE TO SEE (user, 2026-10-07: "a
+// medic is seen as a medic"). Arma's own roleDescription is fixed by the slot
+// and cannot be changed by script, so the skill abbreviations go on the unit,
+// public, most telling first - MED before CLS - and the roster, the
+// HUD squad list, the BFT map and the slot menu read them
+// (ghost_tacpad_fnc_roleShort and the rest).
+private _priority = ["medic", "breacher", "sniper", "marksman", "jfo", "eng", "isr", "uav", "cls"];
+private _held = _skillIds select {_x in _skills};
+_held = (_priority select {_x in _held}) + (_held select {!(_x in _priority)});
+private _tags = [];
+{
+    private _abbrev = (_skills get _x) getOrDefault ["abbrev", ""];
+    if (_abbrev isNotEqualTo "") then {_tags pushBackUnique toUpper _abbrev};
+} forEach _held;
+if (_tags isNotEqualTo (_unit getVariable [QGVAR(skillTags), []])) then {
+    _unit setVariable [QGVAR(skillTags), _tags, true];
+};
+
+// THE ARSENAL IS REBUILT ONLY WHEN THE QUALIFICATIONS CHANGED - this runs on
+// every roster publish, and rebuilding an arsenal nobody's skills touched is
+// work for nothing. A change mid-mission (an admin granting Marksman) reaches
+// the arsenal here, with no respawn.
+_quals sort true;
+if (_quals isNotEqualTo (_unit getVariable [QGVAR(arsenalQuals), []])) then {
+    _unit setVariable [QGVAR(arsenalQuals), _quals];
+    [QGVAR(arsenalChanged), []] call CBA_fnc_localEvent;
+};
 
 TRACE_3("skills applied",name _unit,count _skillIds,_applied);
 

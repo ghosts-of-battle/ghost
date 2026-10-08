@@ -186,7 +186,6 @@ if (_vehicle isKindOf "Helicopter_Base_H") then {
         case "B_Heli_Transport_01_medevac_F";
         case "B_W_Heli_Transport_01_medevac_F"; 
         case "B_T_Heli_Transport_01_medevac_F"; 
-        case "B_Heli_Transport_01_medevac_F";
         case "MED": {
             [_vehicle, 
                 GET_CONTAINER("helo_medical")
@@ -210,7 +209,6 @@ if (_vehicle isKindOf "Heli_Transport_01_base_F") then {
         case "B_Heli_Transport_01_medevac_F";
         case "B_W_Heli_Transport_01_medevac_F"; 
         case "B_T_Heli_Transport_01_medevac_F"; 
-        case "B_Heli_Transport_01_medevac_F";
         case "MED": {
             [_vehicle, 
                 GET_CONTAINER("helo_medical")

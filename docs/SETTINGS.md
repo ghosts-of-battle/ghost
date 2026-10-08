@@ -388,7 +388,7 @@ ships with, which a mission or the forced list below can override.
 | Setting | Type | Category | Default | What it does |
 |---|---|---|---|---|
 | Enable tacpad | CHECKBOX | Ghosts of Battle > Tacpad | `true` | Draws the tacpad panels on the map screen. Off leaves the vanilla map exactly as it was. |
-| Colour scheme | LIST | Ghosts of Battle > Tacpad | `[ ["light", "olive", "sand", "dark", "ni` | Three day grounds and three night ones, in matching pairs: FIELD GREY with NIGHT / RED, OLIVE with NIGHT OLIVE, SAND with NIGHT SAND. A night scheme i |
+| Colour scheme | LIST | Ghosts of Battle > Tacpad | `[ ["light", "olive", "sand", "brass", "d` | Four day grounds and four night ones, in matching pairs: FIELD GREY with NIGHT / RED, OLIVE with NIGHT OLIVE, SAND with NIGHT SAND, BRASS with NIGHT B |
 | Panel opacity | SLIDER | Ghosts of Battle > Tacpad | `[0.3, 1, 0.92, 2, true]` | How solid a panel's ground is over the map. The text stays fully opaque at any setting - a translucent panel you cannot read is not a panel. |
 | Keep clear of reserved areas | CHECKBOX | Ghosts of Battle > Tacpad | `true` | Slides a panel out of the game menu, the chat overlay and the map's scale and contour legend when you drop it on one. Off lets you put a panel anywher |
 | Custom: ground | EDITBOX | Ghosts of Battle > Tacpad | `""` | Panel background as r,g,b from 0 to 1, e.g. 0.05,0.06,0.05. Used only by the Custom scheme. |

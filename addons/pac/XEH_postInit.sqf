@@ -36,15 +36,24 @@ if (hasInterface) then {
     if (isClass (missionConfigFile >> "CfgGFA_PAC")) then {[] spawn FUNC(bootScreen)};
     // THE ONE DIALOG REDRAWS ITSELF when what it reads is republished - a
     // table page, never a form being typed into (FUNC(uiRefresh)).
+    // An arsenal list edited or arsenalMode changed reaches every open
+    // arsenal too (ghost_groups_fnc_buildArsenal listens).
     QGVAR(structureSvc) addPublicVariableEventHandler {
         [] call FUNC(takeServer);
         ["structure"] call FUNC(uiRefresh);
+        [QGVAR(arsenalChanged), []] call CBA_fnc_localEvent;
     };
     QGVAR(settingsSvc) addPublicVariableEventHandler {
         [] call FUNC(takeServer);
         ["settings"] call FUNC(uiRefresh);
+        [QGVAR(arsenalChanged), []] call CBA_fnc_localEvent;
     };
 
+    // The admin panel's session skills (FUNC(sessionSkills)) - re-applied when
+    // the list arrives, whichever of it and the server's nudge lands first.
+    QGVAR(session) addPublicVariableEventHandler {
+        if (!isNull player) then {[player] call FUNC(applyTemp)};
+    };
     QGVAR(roster) addPublicVariableEventHandler {
         [] call FUNC(applyOnClient);
         ["roster"] call FUNC(uiRefresh);
@@ -56,7 +65,8 @@ if (hasInterface) then {
     addMissionEventHandler ["EntityRespawned", {
         params ["_new"];
         if (_new isEqualTo player) then {
-            player setVariable [QGVAR(tempEffects), nil, true];   // the console's session-only skills end here
+            // The admin panel's session skills last the whole mission now
+            // (FUNC(sessionSkills), by Steam id) - a respawn keeps them.
             [] call FUNC(applyOnClient);
         };
     }];

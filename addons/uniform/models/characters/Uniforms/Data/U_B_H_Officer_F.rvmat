@@ -12,7 +12,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="z\ghost\addons\uniform\models\characters\Uniforms\Data\U_B_H_Officer_F_NOHQ.paa";
+	texture="z\ghost\addons\uniform\models\characters\Uniforms\Data\I_I_Officer_01_NOHQ.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="z\ghost\addons\uniform\models\characters\Uniforms\Data\U_B_H_Officer_F_SMDI.paa";
+	texture="z\ghost\addons\uniform\models\characters\Uniforms\Data\I_I_Officer_01_SMDI.paa";
 	uvSource="tex";
 	class uvTransform
 	{

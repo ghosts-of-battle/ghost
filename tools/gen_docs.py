@@ -22,20 +22,20 @@ DOCS = os.path.join(ROOT, "docs")
 # The one hand-maintained thing: which bucket an addon belongs in.
 GROUPS = {
     "Core": ["main", "common", "cba_settings", "media", "modules", "compatibility"],
-    "Gear - worn": ["headware", "headware_jca_ie", "uniform", "uniform_eu", "uniform_sof",
-                    "vests", "vests_aegis", "vests_efa", "vests_jca", "vests_sof", "vests_ws",
+    "Gear - worn": ["headware", "headware_jca_ie", "headware_mig", "uniform", "uniform_eu", "uniform_sof",
+                    "vests", "vests_efa", "vests_jca", "vests_mig", "vests_sof",
                     "backpack", "boc", "faces", "flags", "nvg", "vs17"],
-    "Gear - carried": ["weapons", "weapons_jca", "optics", "optics_ef", "equipment",
+    "Gear - carried": ["weapons", "weapons_jca", "weapons_mcc", "weapons_sps", "optics", "optics_ef", "equipment",
                        "medbags", "flares", "smoke", "tagging"],
     "Systems": ["hacking", "patrol_base", "evac", "respawn", "spectator", "towing",
                 "killtracker", "insurgents", "tasks", "admin", "curator", "chat",
-                "back_to_game", "safestart", "remotesensors"],
+                "back_to_game", "safestart", "remotesensors", "iads", "airdefence", "adsite"],
         "Gameplay tweaks": ["ballistics", "suppress", "fatigue", "difficulty", "friendly_fire",
-                        "grass", "hiteffects", "medical_treatment", "nobuttstuff",
+                        "grass", "hiteffects", "medical_treatment", "acm", "nobuttstuff",
                         "pointing", "pronelauncher", "safe_grenades", "safeboating",
                         "ai_disembark", "dtvd", "tanks", "spotlight_block"],
     "Interface": ["ui_tweaks", "notify", "loading", "main_menu", "map", "nightvision",
-                  "debug_console", "2035mrp"],
+                  "debug_console"],
 }
 GROUP_OF = {a: g for g, lst in GROUPS.items() for a in lst}
 

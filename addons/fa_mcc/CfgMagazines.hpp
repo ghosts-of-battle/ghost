@@ -46,7 +46,7 @@ class CfgMagazines {
 
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7N44_HP: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N44 HP";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG)";
         displayNameShort = "7N44 HP";
         descriptionShort = "7N44 HP<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7N44_HP";
@@ -54,7 +54,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7N44_HP_T_Red: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N44 HP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG) - Red Tracer";
         displayNameShort = "7N44 HP";
         descriptionShort = "7N44 HP<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7N44_HP_T_Red";
@@ -63,7 +63,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7N44_HP_T_Yellow: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N44 HP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG) - Yellow Tracer";
         displayNameShort = "7N44 HP";
         descriptionShort = "7N44 HP<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7N44_HP_T_Yellow";
@@ -72,7 +72,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7N44_HP_T_Green: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N44 HP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG) - Green Tracer";
         displayNameShort = "7N44 HP";
         descriptionShort = "7N44 HP<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7N44_HP_T_Green";
@@ -81,7 +81,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7N44_HP_T_White: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N44 HP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG) - White Tracer";
         displayNameShort = "7N44 HP";
         descriptionShort = "7N44 HP<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7N44_HP_T_White";
@@ -90,7 +90,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7N44_HP_T_Blue: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N44 HP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG) - Blue Tracer";
         displayNameShort = "7N44 HP";
         descriptionShort = "7N44 HP<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7N44_HP_T_Blue";
@@ -99,7 +99,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7N44_HP_T_Orange: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N44 HP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG) - Orange Tracer";
         displayNameShort = "7N44 HP";
         descriptionShort = "7N44 HP<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7N44_HP_T_Orange";
@@ -108,7 +108,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7N44_HP_T_IR: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N44 HP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG) - IR Tracer";
         displayNameShort = "7N44 HP";
         descriptionShort = "7N44 HP<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7N44_HP_T_IR";
@@ -117,7 +117,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7N48_CT: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N48 CT";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG)";
         displayNameShort = "7N48 CT";
         descriptionShort = "7N48 CT<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7N48_CT";
@@ -125,7 +125,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7N48_CT_T_Red: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N48 CT Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG) - Red Tracer";
         displayNameShort = "7N48 CT";
         descriptionShort = "7N48 CT<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7N48_CT_T_Red";
@@ -134,7 +134,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7N48_CT_T_Yellow: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N48 CT Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG) - Yellow Tracer";
         displayNameShort = "7N48 CT";
         descriptionShort = "7N48 CT<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7N48_CT_T_Yellow";
@@ -143,7 +143,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7N48_CT_T_Green: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N48 CT Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG) - Green Tracer";
         displayNameShort = "7N48 CT";
         descriptionShort = "7N48 CT<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7N48_CT_T_Green";
@@ -152,7 +152,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7N48_CT_T_White: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N48 CT White Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG) - White Tracer";
         displayNameShort = "7N48 CT";
         descriptionShort = "7N48 CT<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7N48_CT_T_White";
@@ -161,7 +161,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7N48_CT_T_Blue: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N48 CT Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG) - Blue Tracer";
         displayNameShort = "7N48 CT";
         descriptionShort = "7N48 CT<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7N48_CT_T_Blue";
@@ -170,7 +170,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7N48_CT_T_Orange: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N48 CT Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG) - Orange Tracer";
         displayNameShort = "7N48 CT";
         descriptionShort = "7N48 CT<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7N48_CT_T_Orange";
@@ -179,7 +179,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7N48_CT_T_IR: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N48 CT IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG) - IR Tracer";
         displayNameShort = "7N48 CT";
         descriptionShort = "7N48 CT<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7N48_CT_T_IR";
@@ -188,7 +188,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7U5_SubAP: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7U5 SubAP";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG)";
         displayNameShort = "7U5 SubAP";
         descriptionShort = "7U5 SubAP<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7U5_SubAP";
@@ -196,7 +196,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7U5_SubAP_T_Red: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7U5 SubAP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG) - Red Tracer";
         displayNameShort = "7U5 SubAP";
         descriptionShort = "7U5 SubAP<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7U5_SubAP_T_Red";
@@ -205,7 +205,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7U5_SubAP_T_Yellow: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7U5 SubAP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG) - Yellow Tracer";
         displayNameShort = "7U5 SubAP";
         descriptionShort = "7U5 SubAP<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7U5_SubAP_T_Yellow";
@@ -214,7 +214,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7U5_SubAP_T_Green: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7U5 SubAP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG) - Green Tracer";
         displayNameShort = "7U5 SubAP";
         descriptionShort = "7U5 SubAP<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7U5_SubAP_T_Green";
@@ -223,7 +223,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7U5_SubAP_T_White: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7U5 SubAP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG) - White Tracer";
         displayNameShort = "7U5 SubAP";
         descriptionShort = "7U5 SubAP<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7U5_SubAP_T_White";
@@ -232,7 +232,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7U5_SubAP_T_Blue: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7U5 SubAP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG) - Blue Tracer";
         displayNameShort = "7U5 SubAP";
         descriptionShort = "7U5 SubAP<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7U5_SubAP_T_Blue";
@@ -241,7 +241,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7U5_SubAP_T_Orange: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7U5 SubAP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG) - Orange Tracer";
         displayNameShort = "7U5 SubAP";
         descriptionShort = "7U5 SubAP<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7U5_SubAP_T_Orange";
@@ -250,7 +250,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_545_30_Ball_545x39_7U5_SubAP_T_IR: MCC_AK_PMAG_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7U5 SubAP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG) - IR Tracer";
         displayNameShort = "7U5 SubAP";
         descriptionShort = "7U5 SubAP<br/>In the 30rd 5.45 AK PMAG";
         ammo = "FA_o_545x39_7U5_SubAP_T_IR";
@@ -259,7 +259,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_Mk327_HV: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG)";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_Mk327_HV";
@@ -267,7 +267,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_Mk327_HV_T_Red: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG) - Red Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -276,7 +276,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_Mk327_HV_T_Yellow: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG) - Yellow Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -285,7 +285,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_Mk327_HV_T_Green: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG) - Green Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -294,7 +294,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_Mk327_HV_T_White: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG) - White Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -303,7 +303,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_Mk327_HV_T_Blue: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG) - Blue Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -312,7 +312,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_Mk327_HV_T_Orange: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG) - Orange Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -321,7 +321,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_Mk327_HV_T_IR: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG) - IR Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -330,7 +330,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_XM891_CTEP: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG)";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_XM891_CTEP";
@@ -338,7 +338,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_XM891_CTEP_T_Red: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG) - Red Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -347,7 +347,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_XM891_CTEP_T_Yellow: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG) - Yellow Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -356,7 +356,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_XM891_CTEP_T_Green: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG) - Green Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -365,7 +365,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_XM891_CTEP_T_White: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG) - White Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -374,7 +374,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_XM891_CTEP_T_Blue: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG) - Blue Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -383,7 +383,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_XM891_CTEP_T_Orange: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG) - Orange Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -392,7 +392,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_XM891_CTEP_T_IR: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG) - IR Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -401,7 +401,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_Mk332_AP: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG)";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_Mk332_AP";
@@ -409,7 +409,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_Mk332_AP_T_Red: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG) - Red Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -418,7 +418,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_Mk332_AP_T_Yellow: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG) - Yellow Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -427,7 +427,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_Mk332_AP_T_Green: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG) - Green Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -436,7 +436,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_Mk332_AP_T_White: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG) - White Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -445,7 +445,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_Mk332_AP_T_Blue: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG) - Blue Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -454,7 +454,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_Mk332_AP_T_Orange: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG) - Orange Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -463,7 +463,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_556_30_M855_556_Mk332_AP_T_IR: MCC_AK_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG) - IR Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 AK PMAG";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -472,7 +472,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_Mk327_HV: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG) - FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_Mk327_HV";
@@ -480,7 +480,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_Mk327_HV_T_Red: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG) - Red Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -489,7 +489,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_Mk327_HV_T_Yellow: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG) - Yellow Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -498,7 +498,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_Mk327_HV_T_Green: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG) - Green Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -507,7 +507,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_Mk327_HV_T_White: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG) - White Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -516,7 +516,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_Mk327_HV_T_Blue: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG) - Blue Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -525,7 +525,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_Mk327_HV_T_Orange: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG) - Orange Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -534,7 +534,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_Mk327_HV_T_IR: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG) - IR Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -543,7 +543,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_XM891_CTEP: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG) - FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_XM891_CTEP";
@@ -551,7 +551,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_XM891_CTEP_T_Red: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG) - Red Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -560,7 +560,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_XM891_CTEP_T_Yellow: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG) - Yellow Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -569,7 +569,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_XM891_CTEP_T_Green: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG) - Green Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -578,7 +578,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_XM891_CTEP_T_White: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG) - White Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -587,7 +587,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_XM891_CTEP_T_Blue: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG) - Blue Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -596,7 +596,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_XM891_CTEP_T_Orange: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG) - Orange Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -605,7 +605,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_XM891_CTEP_T_IR: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG) - IR Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -614,7 +614,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_Mk332_AP: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG) - FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_Mk332_AP";
@@ -622,7 +622,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_Mk332_AP_T_Red: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG) - Red Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -631,7 +631,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_Mk332_AP_T_Yellow: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG) - Yellow Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -640,7 +640,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_Mk332_AP_T_Green: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG) - Green Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -649,7 +649,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_Mk332_AP_T_White: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG) - White Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -658,7 +658,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_Mk332_AP_T_Blue: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG) - Blue Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -667,7 +667,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_Mk332_AP_T_Orange: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG) - Orange Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -676,7 +676,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_556_FDE_556_30_M855_556_Mk332_AP_T_IR: MCC_AK_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG) - IR Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 AK PMAG FDE";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -685,7 +685,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7N43: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N43 Kremen";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG)";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7N43";
@@ -693,7 +693,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7N43_T_Red: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N43 Kremen Red Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG) - Red Tracer";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7N43_T_Red";
@@ -702,7 +702,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7N43_T_Yellow: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N43 Kremen Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG) - Yellow Tracer";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7N43_T_Yellow";
@@ -711,7 +711,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7N43_T_Green: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N43 Kremen Green Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG) - Green Tracer";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7N43_T_Green";
@@ -720,7 +720,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7N43_T_White: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N43 Kremen White Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG) - White Tracer";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7N43_T_White";
@@ -729,7 +729,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7N43_T_Blue: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N43 Kremen Blue Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG) - Blue Tracer";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7N43_T_Blue";
@@ -738,7 +738,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7N43_T_Orange: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N43 Kremen Orange Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG) - Orange Tracer";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7N43_T_Orange";
@@ -747,7 +747,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7N43_T_IR: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N43 Kremen IR Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG) - IR Tracer";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7N43_T_IR";
@@ -756,7 +756,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7N47_CT: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N47 Kremen-2 CT";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG)";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7N47_CT";
@@ -764,7 +764,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7N47_CT_T_Red: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N47 Kremen-2 CT Red Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG) - Red Tracer";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_Red";
@@ -773,7 +773,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7N47_CT_T_Yellow: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N47 Kremen-2 CT Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG) - Yellow Tracer";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_Yellow";
@@ -782,7 +782,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7N47_CT_T_Green: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N47 Kremen-2 CT Green Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG) - Green Tracer";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_Green";
@@ -791,7 +791,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7N47_CT_T_White: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N47 Kremen-2 CT White Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG) - White Tracer";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_White";
@@ -800,7 +800,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7N47_CT_T_Blue: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N47 Kremen-2 CT Blue Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG) - Blue Tracer";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_Blue";
@@ -809,7 +809,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7N47_CT_T_Orange: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N47 Kremen-2 CT Orange Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG) - Orange Tracer";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_Orange";
@@ -818,7 +818,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7N47_CT_T_IR: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N47 Kremen-2 CT IR Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG) - IR Tracer";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_IR";
@@ -827,7 +827,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7U4_Sub: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7U4 Tishina-2 SubAP";
+        displayName = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG)";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7U4_Sub";
@@ -835,7 +835,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7U4_Sub_T_Red: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7U4 Tishina-2 SubAP Red Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG) - Red Tracer";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_Red";
@@ -844,7 +844,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7U4_Sub_T_Yellow: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7U4 Tishina-2 SubAP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG) - Yellow Tracer";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_Yellow";
@@ -853,7 +853,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7U4_Sub_T_Green: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7U4 Tishina-2 SubAP Green Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG) - Green Tracer";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_Green";
@@ -862,7 +862,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7U4_Sub_T_White: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7U4 Tishina-2 SubAP White Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG) - White Tracer";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_White";
@@ -871,7 +871,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7U4_Sub_T_Blue: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7U4 Tishina-2 SubAP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG) - Blue Tracer";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_Blue";
@@ -880,7 +880,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7U4_Sub_T_Orange: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7U4 Tishina-2 SubAP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG) - Orange Tracer";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_Orange";
@@ -889,7 +889,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_30_123HP_762x39_7U4_Sub_T_IR: MCC_AK_PMAG_762_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7U4 Tishina-2 SubAP IR Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG) - IR Tracer";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 30rd 7.62x39 AK PMAG 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_IR";
@@ -898,7 +898,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7N43: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N43 Kremen";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG) - FDE";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7N43";
@@ -906,7 +906,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7N43_T_Red: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N43 Kremen Red Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG) - Red Tracer, FDE";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7N43_T_Red";
@@ -915,7 +915,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7N43_T_Yellow: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N43 Kremen Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG) - Yellow Tracer, FDE";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7N43_T_Yellow";
@@ -924,7 +924,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7N43_T_Green: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N43 Kremen Green Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG) - Green Tracer, FDE";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7N43_T_Green";
@@ -933,7 +933,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7N43_T_White: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N43 Kremen White Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG) - White Tracer, FDE";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7N43_T_White";
@@ -942,7 +942,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7N43_T_Blue: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N43 Kremen Blue Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG) - Blue Tracer, FDE";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7N43_T_Blue";
@@ -951,7 +951,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7N43_T_Orange: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N43 Kremen Orange Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG) - Orange Tracer, FDE";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7N43_T_Orange";
@@ -960,7 +960,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7N43_T_IR: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N43 Kremen IR Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG) - IR Tracer, FDE";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7N43_T_IR";
@@ -969,7 +969,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7N47_CT: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N47 Kremen-2 CT";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG) - FDE";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7N47_CT";
@@ -977,7 +977,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7N47_CT_T_Red: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N47 Kremen-2 CT Red Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG) - Red Tracer, FDE";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_Red";
@@ -986,7 +986,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7N47_CT_T_Yellow: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N47 Kremen-2 CT Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG) - Yellow Tracer, FDE";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_Yellow";
@@ -995,7 +995,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7N47_CT_T_Green: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N47 Kremen-2 CT Green Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG) - Green Tracer, FDE";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_Green";
@@ -1004,7 +1004,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7N47_CT_T_White: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N47 Kremen-2 CT White Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG) - White Tracer, FDE";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_White";
@@ -1013,7 +1013,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7N47_CT_T_Blue: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N47 Kremen-2 CT Blue Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG) - Blue Tracer, FDE";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_Blue";
@@ -1022,7 +1022,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7N47_CT_T_Orange: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N47 Kremen-2 CT Orange Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG) - Orange Tracer, FDE";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_Orange";
@@ -1031,7 +1031,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7N47_CT_T_IR: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7N47 Kremen-2 CT IR Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG) - IR Tracer, FDE";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_IR";
@@ -1040,7 +1040,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7U4_Sub: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7U4 Tishina-2 SubAP";
+        displayName = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG) - FDE";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7U4_Sub";
@@ -1048,7 +1048,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7U4_Sub_T_Red: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7U4 Tishina-2 SubAP Red Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG) - Red Tracer, FDE";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_Red";
@@ -1057,7 +1057,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7U4_Sub_T_Yellow: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7U4 Tishina-2 SubAP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG) - Yellow Tracer, FDE";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_Yellow";
@@ -1066,7 +1066,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7U4_Sub_T_Green: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7U4 Tishina-2 SubAP Green Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG) - Green Tracer, FDE";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_Green";
@@ -1075,7 +1075,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7U4_Sub_T_White: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7U4 Tishina-2 SubAP White Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG) - White Tracer, FDE";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_White";
@@ -1084,7 +1084,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7U4_Sub_T_Blue: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7U4 Tishina-2 SubAP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG) - Blue Tracer, FDE";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_Blue";
@@ -1093,7 +1093,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7U4_Sub_T_Orange: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7U4 Tishina-2 SubAP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG) - Orange Tracer, FDE";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_Orange";
@@ -1102,7 +1102,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_762_FDE_30_123HP_762x39_7U4_Sub_T_IR: MCC_AK_PMAG_762_FDE_30_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7.62x39 7U4 Tishina-2 SubAP IR Tracer";
+        displayName = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG) - IR Tracer, FDE";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 30rd 7.62x39 AK PMAG FDE 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_IR";
@@ -1111,7 +1111,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7N44_HP: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N44 HP";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG) - FDE";
         displayNameShort = "7N44 HP";
         descriptionShort = "7N44 HP<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7N44_HP";
@@ -1119,7 +1119,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7N44_HP_T_Red: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N44 HP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG) - Red Tracer, FDE";
         displayNameShort = "7N44 HP";
         descriptionShort = "7N44 HP<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7N44_HP_T_Red";
@@ -1128,7 +1128,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7N44_HP_T_Yellow: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N44 HP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG) - Yellow Tracer, FDE";
         displayNameShort = "7N44 HP";
         descriptionShort = "7N44 HP<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7N44_HP_T_Yellow";
@@ -1137,7 +1137,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7N44_HP_T_Green: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N44 HP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG) - Green Tracer, FDE";
         displayNameShort = "7N44 HP";
         descriptionShort = "7N44 HP<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7N44_HP_T_Green";
@@ -1146,7 +1146,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7N44_HP_T_White: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N44 HP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG) - White Tracer, FDE";
         displayNameShort = "7N44 HP";
         descriptionShort = "7N44 HP<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7N44_HP_T_White";
@@ -1155,7 +1155,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7N44_HP_T_Blue: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N44 HP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG) - Blue Tracer, FDE";
         displayNameShort = "7N44 HP";
         descriptionShort = "7N44 HP<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7N44_HP_T_Blue";
@@ -1164,7 +1164,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7N44_HP_T_Orange: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N44 HP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG) - Orange Tracer, FDE";
         displayNameShort = "7N44 HP";
         descriptionShort = "7N44 HP<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7N44_HP_T_Orange";
@@ -1173,7 +1173,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7N44_HP_T_IR: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N44 HP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG) - IR Tracer, FDE";
         displayNameShort = "7N44 HP";
         descriptionShort = "7N44 HP<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7N44_HP_T_IR";
@@ -1182,7 +1182,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7N48_CT: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N48 CT";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG) - FDE";
         displayNameShort = "7N48 CT";
         descriptionShort = "7N48 CT<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7N48_CT";
@@ -1190,7 +1190,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7N48_CT_T_Red: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N48 CT Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG) - Red Tracer, FDE";
         displayNameShort = "7N48 CT";
         descriptionShort = "7N48 CT<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7N48_CT_T_Red";
@@ -1199,7 +1199,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7N48_CT_T_Yellow: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N48 CT Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG) - Yellow Tracer, FDE";
         displayNameShort = "7N48 CT";
         descriptionShort = "7N48 CT<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7N48_CT_T_Yellow";
@@ -1208,7 +1208,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7N48_CT_T_Green: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N48 CT Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG) - Green Tracer, FDE";
         displayNameShort = "7N48 CT";
         descriptionShort = "7N48 CT<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7N48_CT_T_Green";
@@ -1217,7 +1217,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7N48_CT_T_White: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N48 CT White Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG) - White Tracer, FDE";
         displayNameShort = "7N48 CT";
         descriptionShort = "7N48 CT<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7N48_CT_T_White";
@@ -1226,7 +1226,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7N48_CT_T_Blue: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N48 CT Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG) - Blue Tracer, FDE";
         displayNameShort = "7N48 CT";
         descriptionShort = "7N48 CT<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7N48_CT_T_Blue";
@@ -1235,7 +1235,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7N48_CT_T_Orange: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N48 CT Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG) - Orange Tracer, FDE";
         displayNameShort = "7N48 CT";
         descriptionShort = "7N48 CT<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7N48_CT_T_Orange";
@@ -1244,7 +1244,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7N48_CT_T_IR: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7N48 CT IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG) - IR Tracer, FDE";
         displayNameShort = "7N48 CT";
         descriptionShort = "7N48 CT<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7N48_CT_T_IR";
@@ -1253,7 +1253,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7U5_SubAP: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7U5 SubAP";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG) - FDE";
         displayNameShort = "7U5 SubAP";
         descriptionShort = "7U5 SubAP<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7U5_SubAP";
@@ -1261,7 +1261,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7U5_SubAP_T_Red: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7U5 SubAP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG) - Red Tracer, FDE";
         displayNameShort = "7U5 SubAP";
         descriptionShort = "7U5 SubAP<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7U5_SubAP_T_Red";
@@ -1270,7 +1270,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7U5_SubAP_T_Yellow: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7U5 SubAP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG) - Yellow Tracer, FDE";
         displayNameShort = "7U5 SubAP";
         descriptionShort = "7U5 SubAP<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7U5_SubAP_T_Yellow";
@@ -1279,7 +1279,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7U5_SubAP_T_Green: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7U5 SubAP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG) - Green Tracer, FDE";
         displayNameShort = "7U5 SubAP";
         descriptionShort = "7U5 SubAP<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7U5_SubAP_T_Green";
@@ -1288,7 +1288,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7U5_SubAP_T_White: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7U5 SubAP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG) - White Tracer, FDE";
         displayNameShort = "7U5 SubAP";
         descriptionShort = "7U5 SubAP<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7U5_SubAP_T_White";
@@ -1297,7 +1297,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7U5_SubAP_T_Blue: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7U5 SubAP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG) - Blue Tracer, FDE";
         displayNameShort = "7U5 SubAP";
         descriptionShort = "7U5 SubAP<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7U5_SubAP_T_Blue";
@@ -1306,7 +1306,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7U5_SubAP_T_Orange: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7U5 SubAP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG) - Orange Tracer, FDE";
         displayNameShort = "7U5 SubAP";
         descriptionShort = "7U5 SubAP<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7U5_SubAP_T_Orange";
@@ -1315,7 +1315,7 @@ class CfgMagazines {
     };
     class FA_MCC_AK_PMAG_FDE_545_30_Ball_545x39_7U5_SubAP_T_IR: MCC_AK_PMAG_FDE_545_30_Ball {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd 7U5 SubAP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG) - IR Tracer, FDE";
         displayNameShort = "7U5 SubAP";
         descriptionShort = "7U5 SubAP<br/>In the 30rd 5.45 AK PMAG FDE";
         ammo = "FA_o_545x39_7U5_SubAP_T_IR";
@@ -1324,7 +1324,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_Mk327_HV: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd Mk327 HV";
+        displayName = "[Ghost] 60Rnd 5.56mm Mk327 HV (D60)";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_Mk327_HV";
@@ -1332,7 +1332,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_Mk327_HV_T_Red: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm Mk327 HV (D60) - Red Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -1341,7 +1341,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_Mk327_HV_T_Yellow: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm Mk327 HV (D60) - Yellow Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -1350,7 +1350,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_Mk327_HV_T_Green: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm Mk327 HV (D60) - Green Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -1359,7 +1359,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_Mk327_HV_T_White: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm Mk327 HV (D60) - White Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -1368,7 +1368,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_Mk327_HV_T_Blue: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm Mk327 HV (D60) - Blue Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -1377,7 +1377,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_Mk327_HV_T_Orange: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm Mk327 HV (D60) - Orange Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -1386,7 +1386,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_Mk327_HV_T_IR: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm Mk327 HV (D60) - IR Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -1395,7 +1395,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_XM891_CTEP: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd XM891 CTEP";
+        displayName = "[Ghost] 60Rnd 5.56mm XM891 CTEP (D60)";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_XM891_CTEP";
@@ -1403,7 +1403,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_XM891_CTEP_T_Red: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm XM891 CTEP (D60) - Red Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -1412,7 +1412,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_XM891_CTEP_T_Yellow: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm XM891 CTEP (D60) - Yellow Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -1421,7 +1421,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_XM891_CTEP_T_Green: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm XM891 CTEP (D60) - Green Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -1430,7 +1430,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_XM891_CTEP_T_White: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm XM891 CTEP (D60) - White Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -1439,7 +1439,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_XM891_CTEP_T_Blue: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm XM891 CTEP (D60) - Blue Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -1448,7 +1448,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_XM891_CTEP_T_Orange: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm XM891 CTEP (D60) - Orange Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -1457,7 +1457,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_XM891_CTEP_T_IR: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm XM891 CTEP (D60) - IR Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -1466,7 +1466,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_Mk332_AP: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd Mk332 AP";
+        displayName = "[Ghost] 60Rnd 5.56mm Mk332 AP (D60)";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_Mk332_AP";
@@ -1474,7 +1474,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_Mk332_AP_T_Red: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm Mk332 AP (D60) - Red Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -1483,7 +1483,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_Mk332_AP_T_Yellow: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm Mk332 AP (D60) - Yellow Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -1492,7 +1492,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_Mk332_AP_T_Green: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm Mk332 AP (D60) - Green Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -1501,7 +1501,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_Mk332_AP_T_White: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm Mk332 AP (D60) - White Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -1510,7 +1510,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_Mk332_AP_T_Blue: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm Mk332 AP (D60) - Blue Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -1519,7 +1519,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_Mk332_AP_T_Orange: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm Mk332 AP (D60) - Orange Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -1528,7 +1528,7 @@ class CfgMagazines {
     };
     class FA_MCC_D60_556_60_M855_556_Mk332_AP_T_IR: MCC_D60_556_60_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 60Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 60Rnd 5.56mm Mk332 AP (D60) - IR Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 60rd 5.56 D60";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -1537,7 +1537,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk335: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (HK)";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk335";
@@ -1545,7 +1545,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk335_T_Red: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (HK) - Red Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk335_T_Red";
@@ -1554,7 +1554,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk335_T_Yellow: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (HK) - Yellow Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk335_T_Yellow";
@@ -1563,7 +1563,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk335_T_Green: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (HK) - Green Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk335_T_Green";
@@ -1572,7 +1572,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk335_T_White: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (HK) - White Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk335_T_White";
@@ -1581,7 +1581,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk335_T_Blue: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (HK) - Blue Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk335_T_Blue";
@@ -1590,7 +1590,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk335_T_Orange: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (HK) - Orange Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk335_T_Orange";
@@ -1599,7 +1599,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk335_T_IR: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (HK) - IR Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk335_T_IR";
@@ -1608,7 +1608,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk336: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (HK)";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk336";
@@ -1616,7 +1616,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk336_T_Red: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (HK) - Red Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk336_T_Red";
@@ -1625,7 +1625,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk336_T_Yellow: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (HK) - Yellow Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk336_T_Yellow";
@@ -1634,7 +1634,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk336_T_Green: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (HK) - Green Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk336_T_Green";
@@ -1643,7 +1643,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk336_T_White: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (HK) - White Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk336_T_White";
@@ -1652,7 +1652,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk336_T_Blue: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (HK) - Blue Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk336_T_Blue";
@@ -1661,7 +1661,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk336_T_Orange: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (HK) - Orange Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk336_T_Orange";
@@ -1670,7 +1670,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk336_T_IR: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (HK) - IR Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk336_T_IR";
@@ -1679,7 +1679,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk337: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (HK)";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk337";
@@ -1687,7 +1687,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk337_T_Red: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (HK) - Red Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk337_T_Red";
@@ -1696,7 +1696,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk337_T_Yellow: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (HK) - Yellow Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk337_T_Yellow";
@@ -1705,7 +1705,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk337_T_Green: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (HK) - Green Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk337_T_Green";
@@ -1714,7 +1714,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk337_T_White: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (HK) - White Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk337_T_White";
@@ -1723,7 +1723,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk337_T_Blue: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (HK) - Blue Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk337_T_Blue";
@@ -1732,7 +1732,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk337_T_Orange: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (HK) - Orange Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk337_T_Orange";
@@ -1741,7 +1741,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk337_T_IR: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (HK) - IR Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk337_T_IR";
@@ -1750,7 +1750,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk342_Sub: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (HK)";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk342_Sub";
@@ -1758,7 +1758,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk342_Sub_T_Red: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (HK) - Red Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk342_Sub_T_Red";
@@ -1767,7 +1767,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk342_Sub_T_Yellow: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (HK) - Yellow Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk342_Sub_T_Yellow";
@@ -1776,7 +1776,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk342_Sub_T_Green: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (HK) - Green Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk342_Sub_T_Green";
@@ -1785,7 +1785,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk342_Sub_T_White: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (HK) - White Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk342_Sub_T_White";
@@ -1794,7 +1794,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk342_Sub_T_Blue: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (HK) - Blue Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk342_Sub_T_Blue";
@@ -1803,7 +1803,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk342_Sub_T_Orange: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (HK) - Orange Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk342_Sub_T_Orange";
@@ -1812,7 +1812,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk342_Sub_T_IR: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (HK) - IR Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk342_Sub_T_IR";
@@ -1821,7 +1821,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk343_Sub: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (HK)";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk343_Sub";
@@ -1829,7 +1829,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk343_Sub_T_Red: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (HK) - Red Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk343_Sub_T_Red";
@@ -1838,7 +1838,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk343_Sub_T_Yellow: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (HK) - Yellow Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk343_Sub_T_Yellow";
@@ -1847,7 +1847,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk343_Sub_T_Green: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (HK) - Green Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk343_Sub_T_Green";
@@ -1856,7 +1856,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk343_Sub_T_White: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (HK) - White Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk343_Sub_T_White";
@@ -1865,7 +1865,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk343_Sub_T_Blue: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (HK) - Blue Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk343_Sub_T_Blue";
@@ -1874,7 +1874,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk343_Sub_T_Orange: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (HK) - Orange Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk343_Sub_T_Orange";
@@ -1883,7 +1883,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk343_Sub_T_IR: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (HK) - IR Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk343_Sub_T_IR";
@@ -1892,7 +1892,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk341_SubAP: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (HK)";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk341_SubAP";
@@ -1900,7 +1900,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk341_SubAP_T_Red: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (HK) - Red Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk341_SubAP_T_Red";
@@ -1909,7 +1909,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk341_SubAP_T_Yellow: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (HK) - Yellow Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk341_SubAP_T_Yellow";
@@ -1918,7 +1918,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk341_SubAP_T_Green: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (HK) - Green Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk341_SubAP_T_Green";
@@ -1927,7 +1927,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk341_SubAP_T_White: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (HK) - White Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk341_SubAP_T_White";
@@ -1936,7 +1936,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk341_SubAP_T_Blue: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (HK) - Blue Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk341_SubAP_T_Blue";
@@ -1945,7 +1945,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk341_SubAP_T_Orange: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (HK) - Orange Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk341_SubAP_T_Orange";
@@ -1954,7 +1954,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_Mk341_SubAP_T_IR: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (HK) - IR Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_Mk341_SubAP_T_IR";
@@ -1963,7 +1963,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_XM345_SubAP2: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (HK)";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_XM345_SubAP2";
@@ -1971,7 +1971,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_XM345_SubAP2_T_Red: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (HK) - Red Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_XM345_SubAP2_T_Red";
@@ -1980,7 +1980,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_XM345_SubAP2_T_Yellow: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (HK) - Yellow Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_XM345_SubAP2_T_Yellow";
@@ -1989,7 +1989,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_XM345_SubAP2_T_Green: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (HK) - Green Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_XM345_SubAP2_T_Green";
@@ -1998,7 +1998,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_XM345_SubAP2_T_White: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (HK) - White Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_XM345_SubAP2_T_White";
@@ -2007,7 +2007,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_XM345_SubAP2_T_Blue: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (HK) - Blue Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_XM345_SubAP2_T_Blue";
@@ -2016,7 +2016,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_XM345_SubAP2_T_Orange: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (HK) - Orange Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_XM345_SubAP2_T_Orange";
@@ -2025,7 +2025,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_300_30_125OTM_300_XM345_SubAP2_T_IR: MCC_HK_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (HK) - IR Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK HK";
         ammo = "FA_b_300_XM345_SubAP2_T_IR";
@@ -2034,7 +2034,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_Mk327_HV: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - Black";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_Mk327_HV";
@@ -2042,7 +2042,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_Mk327_HV_T_Red: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - Red Tracer, Black";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -2051,7 +2051,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_Mk327_HV_T_Yellow: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - Yellow Tracer, Black";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -2060,7 +2060,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_Mk327_HV_T_Green: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - Green Tracer, Black";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -2069,7 +2069,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_Mk327_HV_T_White: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - White Tracer, Black";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -2078,7 +2078,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_Mk327_HV_T_Blue: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - Blue Tracer, Black";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -2087,7 +2087,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_Mk327_HV_T_Orange: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - Orange Tracer, Black";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -2096,7 +2096,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_Mk327_HV_T_IR: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - IR Tracer, Black";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -2105,7 +2105,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_XM891_CTEP: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - Black";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_XM891_CTEP";
@@ -2113,7 +2113,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_XM891_CTEP_T_Red: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - Red Tracer, Black";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -2122,7 +2122,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_XM891_CTEP_T_Yellow: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - Yellow Tracer, Black";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -2131,7 +2131,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_XM891_CTEP_T_Green: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - Green Tracer, Black";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -2140,7 +2140,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_XM891_CTEP_T_White: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - White Tracer, Black";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -2149,7 +2149,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_XM891_CTEP_T_Blue: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - Blue Tracer, Black";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -2158,7 +2158,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_XM891_CTEP_T_Orange: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - Orange Tracer, Black";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -2167,7 +2167,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_XM891_CTEP_T_IR: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - IR Tracer, Black";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -2176,7 +2176,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_Mk332_AP: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - Black";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_Mk332_AP";
@@ -2184,7 +2184,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_Mk332_AP_T_Red: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - Red Tracer, Black";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -2193,7 +2193,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_Mk332_AP_T_Yellow: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - Yellow Tracer, Black";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -2202,7 +2202,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_Mk332_AP_T_Green: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - Green Tracer, Black";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -2211,7 +2211,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_Mk332_AP_T_White: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - White Tracer, Black";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -2220,7 +2220,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_Mk332_AP_T_Blue: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - Blue Tracer, Black";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -2229,7 +2229,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_Mk332_AP_T_Orange: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - Orange Tracer, Black";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -2238,7 +2238,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_BLK_M855_556_Mk332_AP_T_IR: MCC_HK_556_30_BLK_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - IR Tracer, Black";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (BLK)";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -2247,7 +2247,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_Mk327_HV: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_Mk327_HV";
@@ -2255,7 +2255,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_Mk327_HV_T_Red: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - Red Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -2264,7 +2264,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_Mk327_HV_T_Yellow: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - Yellow Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -2273,7 +2273,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_Mk327_HV_T_Green: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - Green Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -2282,7 +2282,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_Mk327_HV_T_White: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - White Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -2291,7 +2291,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_Mk327_HV_T_Blue: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - Blue Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -2300,7 +2300,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_Mk327_HV_T_Orange: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - Orange Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -2309,7 +2309,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_Mk327_HV_T_IR: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - IR Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -2318,7 +2318,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_XM891_CTEP: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_XM891_CTEP";
@@ -2326,7 +2326,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_XM891_CTEP_T_Red: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - Red Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -2335,7 +2335,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_XM891_CTEP_T_Yellow: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - Yellow Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -2344,7 +2344,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_XM891_CTEP_T_Green: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - Green Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -2353,7 +2353,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_XM891_CTEP_T_White: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - White Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -2362,7 +2362,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_XM891_CTEP_T_Blue: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - Blue Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -2371,7 +2371,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_XM891_CTEP_T_Orange: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - Orange Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -2380,7 +2380,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_XM891_CTEP_T_IR: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - IR Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -2389,7 +2389,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_Mk332_AP: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_Mk332_AP";
@@ -2397,7 +2397,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_Mk332_AP_T_Red: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - Red Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -2406,7 +2406,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_Mk332_AP_T_Yellow: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - Yellow Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -2415,7 +2415,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_Mk332_AP_T_Green: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - Green Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -2424,7 +2424,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_Mk332_AP_T_White: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - White Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -2433,7 +2433,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_Mk332_AP_T_Blue: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - Blue Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -2442,7 +2442,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_Mk332_AP_T_Orange: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - Orange Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -2451,7 +2451,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_FDE_M855_556_Mk332_AP_T_IR: MCC_HK_556_30_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - IR Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (FDE)";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -2460,7 +2460,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_Mk327_HV: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - RAL 8000";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_Mk327_HV";
@@ -2468,7 +2468,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_Mk327_HV_T_Red: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - Red Tracer, RAL 8000";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -2477,7 +2477,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_Mk327_HV_T_Yellow: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - Yellow Tracer, RAL 8000";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -2486,7 +2486,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_Mk327_HV_T_Green: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - Green Tracer, RAL 8000";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -2495,7 +2495,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_Mk327_HV_T_White: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - White Tracer, RAL 8000";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -2504,7 +2504,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_Mk327_HV_T_Blue: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - Blue Tracer, RAL 8000";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -2513,7 +2513,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_Mk327_HV_T_Orange: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - Orange Tracer, RAL 8000";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -2522,7 +2522,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_Mk327_HV_T_IR: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK) - IR Tracer, RAL 8000";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -2531,7 +2531,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_XM891_CTEP: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - RAL 8000";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_XM891_CTEP";
@@ -2539,7 +2539,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_XM891_CTEP_T_Red: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - Red Tracer, RAL 8000";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -2548,7 +2548,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_XM891_CTEP_T_Yellow: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - Yellow Tracer, RAL 8000";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -2557,7 +2557,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_XM891_CTEP_T_Green: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - Green Tracer, RAL 8000";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -2566,7 +2566,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_XM891_CTEP_T_White: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - White Tracer, RAL 8000";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -2575,7 +2575,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_XM891_CTEP_T_Blue: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - Blue Tracer, RAL 8000";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -2584,7 +2584,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_XM891_CTEP_T_Orange: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - Orange Tracer, RAL 8000";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -2593,7 +2593,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_XM891_CTEP_T_IR: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK) - IR Tracer, RAL 8000";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -2602,7 +2602,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_Mk332_AP: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - RAL 8000";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_Mk332_AP";
@@ -2610,7 +2610,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_Mk332_AP_T_Red: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - Red Tracer, RAL 8000";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -2619,7 +2619,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_Mk332_AP_T_Yellow: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - Yellow Tracer, RAL 8000";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -2628,7 +2628,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_Mk332_AP_T_Green: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - Green Tracer, RAL 8000";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -2637,7 +2637,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_Mk332_AP_T_White: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - White Tracer, RAL 8000";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -2646,7 +2646,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_Mk332_AP_T_Blue: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - Blue Tracer, RAL 8000";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -2655,7 +2655,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_Mk332_AP_T_Orange: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - Orange Tracer, RAL 8000";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -2664,7 +2664,7 @@ class CfgMagazines {
     };
     class FA_MCC_HK_556_30_RAL_M855_556_Mk332_AP_T_IR: MCC_HK_556_30_RAL_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK) - IR Tracer, RAL 8000";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 HK (RAL)";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -2673,7 +2673,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_6ARC_25RD_GPR_6ARC_Mk333_LR: MCC_ICAR_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk333 LR";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR)";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 25rd 6ARC ICAR 103gr";
         ammo = "FA_b_6ARC_Mk333_LR";
@@ -2681,7 +2681,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_6ARC_25RD_GPR_6ARC_Mk333_LR_T_Red: MCC_ICAR_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk333 LR Red Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR) - Red Tracer";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 25rd 6ARC ICAR 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_Red";
@@ -2690,7 +2690,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_6ARC_25RD_GPR_6ARC_Mk333_LR_T_Yellow: MCC_ICAR_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk333 LR Yellow Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR) - Yellow Tracer";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 25rd 6ARC ICAR 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_Yellow";
@@ -2699,7 +2699,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_6ARC_25RD_GPR_6ARC_Mk333_LR_T_Green: MCC_ICAR_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk333 LR Green Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR) - Green Tracer";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 25rd 6ARC ICAR 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_Green";
@@ -2708,7 +2708,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_6ARC_25RD_GPR_6ARC_Mk333_LR_T_White: MCC_ICAR_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk333 LR White Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR) - White Tracer";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 25rd 6ARC ICAR 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_White";
@@ -2717,7 +2717,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_6ARC_25RD_GPR_6ARC_Mk333_LR_T_Blue: MCC_ICAR_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk333 LR Blue Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR) - Blue Tracer";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 25rd 6ARC ICAR 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_Blue";
@@ -2726,7 +2726,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_6ARC_25RD_GPR_6ARC_Mk333_LR_T_Orange: MCC_ICAR_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk333 LR Orange Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR) - Orange Tracer";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 25rd 6ARC ICAR 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_Orange";
@@ -2735,7 +2735,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_6ARC_25RD_GPR_6ARC_Mk333_LR_T_IR: MCC_ICAR_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk333 LR IR Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR) - IR Tracer";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 25rd 6ARC ICAR 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_IR";
@@ -2744,7 +2744,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_6ARC_25RD_GPR_6ARC_XM895_CTEP: MCC_ICAR_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM895 CTEP";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR)";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 25rd 6ARC ICAR 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP";
@@ -2752,7 +2752,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_6ARC_25RD_GPR_6ARC_XM895_CTEP_T_Red: MCC_ICAR_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM895 CTEP Red Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR) - Red Tracer";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 25rd 6ARC ICAR 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_Red";
@@ -2761,7 +2761,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_6ARC_25RD_GPR_6ARC_XM895_CTEP_T_Yellow: MCC_ICAR_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM895 CTEP Yellow Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR) - Yellow Tracer";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 25rd 6ARC ICAR 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_Yellow";
@@ -2770,7 +2770,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_6ARC_25RD_GPR_6ARC_XM895_CTEP_T_Green: MCC_ICAR_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM895 CTEP Green Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR) - Green Tracer";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 25rd 6ARC ICAR 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_Green";
@@ -2779,7 +2779,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_6ARC_25RD_GPR_6ARC_XM895_CTEP_T_White: MCC_ICAR_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM895 CTEP White Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR) - White Tracer";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 25rd 6ARC ICAR 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_White";
@@ -2788,7 +2788,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_6ARC_25RD_GPR_6ARC_XM895_CTEP_T_Blue: MCC_ICAR_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM895 CTEP Blue Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR) - Blue Tracer";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 25rd 6ARC ICAR 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_Blue";
@@ -2797,7 +2797,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_6ARC_25RD_GPR_6ARC_XM895_CTEP_T_Orange: MCC_ICAR_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM895 CTEP Orange Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR) - Orange Tracer";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 25rd 6ARC ICAR 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_Orange";
@@ -2806,7 +2806,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_6ARC_25RD_GPR_6ARC_XM895_CTEP_T_IR: MCC_ICAR_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM895 CTEP IR Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR) - IR Tracer";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 25rd 6ARC ICAR 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_IR";
@@ -2815,7 +2815,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_FDE_6ARC_25RD_GPR_6ARC_Mk333_LR: MCC_ICAR_FDE_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk333 LR";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR) - FDE";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 25rd 6ARC ICAR FDE 103gr";
         ammo = "FA_b_6ARC_Mk333_LR";
@@ -2823,7 +2823,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_FDE_6ARC_25RD_GPR_6ARC_Mk333_LR_T_Red: MCC_ICAR_FDE_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk333 LR Red Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR) - Red Tracer, FDE";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 25rd 6ARC ICAR FDE 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_Red";
@@ -2832,7 +2832,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_FDE_6ARC_25RD_GPR_6ARC_Mk333_LR_T_Yellow: MCC_ICAR_FDE_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk333 LR Yellow Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR) - Yellow Tracer, FDE";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 25rd 6ARC ICAR FDE 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_Yellow";
@@ -2841,7 +2841,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_FDE_6ARC_25RD_GPR_6ARC_Mk333_LR_T_Green: MCC_ICAR_FDE_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk333 LR Green Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR) - Green Tracer, FDE";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 25rd 6ARC ICAR FDE 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_Green";
@@ -2850,7 +2850,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_FDE_6ARC_25RD_GPR_6ARC_Mk333_LR_T_White: MCC_ICAR_FDE_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk333 LR White Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR) - White Tracer, FDE";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 25rd 6ARC ICAR FDE 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_White";
@@ -2859,7 +2859,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_FDE_6ARC_25RD_GPR_6ARC_Mk333_LR_T_Blue: MCC_ICAR_FDE_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk333 LR Blue Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR) - Blue Tracer, FDE";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 25rd 6ARC ICAR FDE 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_Blue";
@@ -2868,7 +2868,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_FDE_6ARC_25RD_GPR_6ARC_Mk333_LR_T_Orange: MCC_ICAR_FDE_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk333 LR Orange Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR) - Orange Tracer, FDE";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 25rd 6ARC ICAR FDE 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_Orange";
@@ -2877,7 +2877,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_FDE_6ARC_25RD_GPR_6ARC_Mk333_LR_T_IR: MCC_ICAR_FDE_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk333 LR IR Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR) - IR Tracer, FDE";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 25rd 6ARC ICAR FDE 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_IR";
@@ -2886,7 +2886,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_FDE_6ARC_25RD_GPR_6ARC_XM895_CTEP: MCC_ICAR_FDE_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM895 CTEP";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR) - FDE";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 25rd 6ARC ICAR FDE 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP";
@@ -2894,7 +2894,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_FDE_6ARC_25RD_GPR_6ARC_XM895_CTEP_T_Red: MCC_ICAR_FDE_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM895 CTEP Red Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR) - Red Tracer, FDE";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 25rd 6ARC ICAR FDE 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_Red";
@@ -2903,7 +2903,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_FDE_6ARC_25RD_GPR_6ARC_XM895_CTEP_T_Yellow: MCC_ICAR_FDE_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM895 CTEP Yellow Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR) - Yellow Tracer, FDE";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 25rd 6ARC ICAR FDE 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_Yellow";
@@ -2912,7 +2912,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_FDE_6ARC_25RD_GPR_6ARC_XM895_CTEP_T_Green: MCC_ICAR_FDE_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM895 CTEP Green Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR) - Green Tracer, FDE";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 25rd 6ARC ICAR FDE 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_Green";
@@ -2921,7 +2921,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_FDE_6ARC_25RD_GPR_6ARC_XM895_CTEP_T_White: MCC_ICAR_FDE_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM895 CTEP White Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR) - White Tracer, FDE";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 25rd 6ARC ICAR FDE 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_White";
@@ -2930,7 +2930,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_FDE_6ARC_25RD_GPR_6ARC_XM895_CTEP_T_Blue: MCC_ICAR_FDE_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM895 CTEP Blue Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR) - Blue Tracer, FDE";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 25rd 6ARC ICAR FDE 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_Blue";
@@ -2939,7 +2939,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_FDE_6ARC_25RD_GPR_6ARC_XM895_CTEP_T_Orange: MCC_ICAR_FDE_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM895 CTEP Orange Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR) - Orange Tracer, FDE";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 25rd 6ARC ICAR FDE 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_Orange";
@@ -2948,7 +2948,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICAR_FDE_6ARC_25RD_GPR_6ARC_XM895_CTEP_T_IR: MCC_ICAR_FDE_6ARC_25RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM895 CTEP IR Tracer";
+        displayName = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR) - IR Tracer, FDE";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 25rd 6ARC ICAR FDE 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_IR";
@@ -2957,7 +2957,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICM_6ARC_20RD_GPR_6ARC_Mk333_LR: MCC_ICM_6ARC_20RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd Mk333 LR";
+        displayName = "[Ghost] 20Rnd 6mm ARC ICM GPR Mk333 (LR)";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 20rd 6ARC ICM 103gr";
         ammo = "FA_b_6ARC_Mk333_LR";
@@ -2965,7 +2965,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICM_6ARC_20RD_GPR_6ARC_Mk333_LR_T_Red: MCC_ICM_6ARC_20RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd Mk333 LR Red Tracer";
+        displayName = "[Ghost] 20Rnd 6mm ARC ICM GPR Mk333 (LR) - Red Tracer";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 20rd 6ARC ICM 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_Red";
@@ -2974,7 +2974,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICM_6ARC_20RD_GPR_6ARC_Mk333_LR_T_Yellow: MCC_ICM_6ARC_20RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd Mk333 LR Yellow Tracer";
+        displayName = "[Ghost] 20Rnd 6mm ARC ICM GPR Mk333 (LR) - Yellow Tracer";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 20rd 6ARC ICM 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_Yellow";
@@ -2983,7 +2983,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICM_6ARC_20RD_GPR_6ARC_Mk333_LR_T_Green: MCC_ICM_6ARC_20RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd Mk333 LR Green Tracer";
+        displayName = "[Ghost] 20Rnd 6mm ARC ICM GPR Mk333 (LR) - Green Tracer";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 20rd 6ARC ICM 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_Green";
@@ -2992,7 +2992,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICM_6ARC_20RD_GPR_6ARC_Mk333_LR_T_White: MCC_ICM_6ARC_20RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd Mk333 LR White Tracer";
+        displayName = "[Ghost] 20Rnd 6mm ARC ICM GPR Mk333 (LR) - White Tracer";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 20rd 6ARC ICM 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_White";
@@ -3001,7 +3001,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICM_6ARC_20RD_GPR_6ARC_Mk333_LR_T_Blue: MCC_ICM_6ARC_20RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd Mk333 LR Blue Tracer";
+        displayName = "[Ghost] 20Rnd 6mm ARC ICM GPR Mk333 (LR) - Blue Tracer";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 20rd 6ARC ICM 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_Blue";
@@ -3010,7 +3010,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICM_6ARC_20RD_GPR_6ARC_Mk333_LR_T_Orange: MCC_ICM_6ARC_20RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd Mk333 LR Orange Tracer";
+        displayName = "[Ghost] 20Rnd 6mm ARC ICM GPR Mk333 (LR) - Orange Tracer";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 20rd 6ARC ICM 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_Orange";
@@ -3019,7 +3019,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICM_6ARC_20RD_GPR_6ARC_Mk333_LR_T_IR: MCC_ICM_6ARC_20RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd Mk333 LR IR Tracer";
+        displayName = "[Ghost] 20Rnd 6mm ARC ICM GPR Mk333 (LR) - IR Tracer";
         displayNameShort = "Mk333 LR";
         descriptionShort = "Mk333 LR<br/>In the 20rd 6ARC ICM 103gr";
         ammo = "FA_b_6ARC_Mk333_LR_T_IR";
@@ -3028,7 +3028,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICM_6ARC_20RD_GPR_6ARC_XM895_CTEP: MCC_ICM_6ARC_20RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd XM895 CTEP";
+        displayName = "[Ghost] 20Rnd 6mm ARC ICM GPR XM895 CTEP";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 20rd 6ARC ICM 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP";
@@ -3036,7 +3036,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICM_6ARC_20RD_GPR_6ARC_XM895_CTEP_T_Red: MCC_ICM_6ARC_20RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd XM895 CTEP Red Tracer";
+        displayName = "[Ghost] 20Rnd 6mm ARC ICM GPR XM895 CTEP - Red Tracer";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 20rd 6ARC ICM 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_Red";
@@ -3045,7 +3045,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICM_6ARC_20RD_GPR_6ARC_XM895_CTEP_T_Yellow: MCC_ICM_6ARC_20RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd XM895 CTEP Yellow Tracer";
+        displayName = "[Ghost] 20Rnd 6mm ARC ICM GPR XM895 CTEP - Yellow Tracer";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 20rd 6ARC ICM 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_Yellow";
@@ -3054,7 +3054,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICM_6ARC_20RD_GPR_6ARC_XM895_CTEP_T_Green: MCC_ICM_6ARC_20RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd XM895 CTEP Green Tracer";
+        displayName = "[Ghost] 20Rnd 6mm ARC ICM GPR XM895 CTEP - Green Tracer";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 20rd 6ARC ICM 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_Green";
@@ -3063,7 +3063,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICM_6ARC_20RD_GPR_6ARC_XM895_CTEP_T_White: MCC_ICM_6ARC_20RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd XM895 CTEP White Tracer";
+        displayName = "[Ghost] 20Rnd 6mm ARC ICM GPR XM895 CTEP - White Tracer";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 20rd 6ARC ICM 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_White";
@@ -3072,7 +3072,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICM_6ARC_20RD_GPR_6ARC_XM895_CTEP_T_Blue: MCC_ICM_6ARC_20RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd XM895 CTEP Blue Tracer";
+        displayName = "[Ghost] 20Rnd 6mm ARC ICM GPR XM895 CTEP - Blue Tracer";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 20rd 6ARC ICM 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_Blue";
@@ -3081,7 +3081,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICM_6ARC_20RD_GPR_6ARC_XM895_CTEP_T_Orange: MCC_ICM_6ARC_20RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd XM895 CTEP Orange Tracer";
+        displayName = "[Ghost] 20Rnd 6mm ARC ICM GPR XM895 CTEP - Orange Tracer";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 20rd 6ARC ICM 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_Orange";
@@ -3090,7 +3090,7 @@ class CfgMagazines {
     };
     class FA_MCC_ICM_6ARC_20RD_GPR_6ARC_XM895_CTEP_T_IR: MCC_ICM_6ARC_20RD_GPR {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd XM895 CTEP IR Tracer";
+        displayName = "[Ghost] 20Rnd 6mm ARC ICM GPR XM895 CTEP - IR Tracer";
         displayNameShort = "XM895 CTEP";
         descriptionShort = "XM895 CTEP<br/>In the 20rd 6ARC ICM 103gr";
         ammo = "FA_b_6ARC_XM895_CTEP_T_IR";
@@ -3099,7 +3099,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_Mk327_HV: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM)";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_Mk327_HV";
@@ -3107,7 +3107,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_Mk327_HV_T_Red: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - Red Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -3116,7 +3116,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_Mk327_HV_T_Yellow: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - Yellow Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -3125,7 +3125,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_Mk327_HV_T_Green: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - Green Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -3134,7 +3134,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_Mk327_HV_T_White: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - White Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -3143,7 +3143,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_Mk327_HV_T_Blue: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - Blue Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -3152,7 +3152,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_Mk327_HV_T_Orange: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - Orange Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -3161,7 +3161,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_Mk327_HV_T_IR: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - IR Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -3170,7 +3170,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_XM891_CTEP: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM)";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_XM891_CTEP";
@@ -3178,7 +3178,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_XM891_CTEP_T_Red: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - Red Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -3187,7 +3187,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_XM891_CTEP_T_Yellow: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - Yellow Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -3196,7 +3196,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_XM891_CTEP_T_Green: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - Green Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -3205,7 +3205,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_XM891_CTEP_T_White: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - White Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -3214,7 +3214,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_XM891_CTEP_T_Blue: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - Blue Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -3223,7 +3223,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_XM891_CTEP_T_Orange: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - Orange Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -3232,7 +3232,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_XM891_CTEP_T_IR: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - IR Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -3241,7 +3241,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_Mk332_AP: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM)";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_Mk332_AP";
@@ -3249,7 +3249,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_Mk332_AP_T_Red: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - Red Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -3258,7 +3258,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_Mk332_AP_T_Yellow: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - Yellow Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -3267,7 +3267,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_Mk332_AP_T_Green: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - Green Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -3276,7 +3276,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_Mk332_AP_T_White: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - White Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -3285,7 +3285,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_Mk332_AP_T_Blue: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - Blue Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -3294,7 +3294,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_Mk332_AP_T_Orange: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - Orange Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -3303,7 +3303,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_556_30_M855_556_Mk332_AP_T_IR: MCC_L54AWM_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - IR Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -3312,7 +3312,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_Mk327_HV: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - Dark Earth";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_Mk327_HV";
@@ -3320,7 +3320,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_Mk327_HV_T_Red: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - Red Tracer, Dark Earth";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -3329,7 +3329,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_Mk327_HV_T_Yellow: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - Yellow Tracer, Dark Earth";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -3338,7 +3338,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_Mk327_HV_T_Green: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - Green Tracer, Dark Earth";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -3347,7 +3347,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_Mk327_HV_T_White: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - White Tracer, Dark Earth";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -3356,7 +3356,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_Mk327_HV_T_Blue: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - Blue Tracer, Dark Earth";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -3365,7 +3365,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_Mk327_HV_T_Orange: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - Orange Tracer, Dark Earth";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -3374,7 +3374,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_Mk327_HV_T_IR: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - IR Tracer, Dark Earth";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -3383,7 +3383,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_XM891_CTEP: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - Dark Earth";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_XM891_CTEP";
@@ -3391,7 +3391,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_XM891_CTEP_T_Red: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - Red Tracer, Dark Earth";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -3400,7 +3400,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_XM891_CTEP_T_Yellow: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - Yellow Tracer, Dark Earth";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -3409,7 +3409,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_XM891_CTEP_T_Green: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - Green Tracer, Dark Earth";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -3418,7 +3418,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_XM891_CTEP_T_White: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - White Tracer, Dark Earth";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -3427,7 +3427,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_XM891_CTEP_T_Blue: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - Blue Tracer, Dark Earth";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -3436,7 +3436,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_XM891_CTEP_T_Orange: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - Orange Tracer, Dark Earth";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -3445,7 +3445,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_XM891_CTEP_T_IR: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - IR Tracer, Dark Earth";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -3454,7 +3454,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_Mk332_AP: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - Dark Earth";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_Mk332_AP";
@@ -3462,7 +3462,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_Mk332_AP_T_Red: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - Red Tracer, Dark Earth";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -3471,7 +3471,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_Mk332_AP_T_Yellow: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - Yellow Tracer, Dark Earth";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -3480,7 +3480,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_Mk332_AP_T_Green: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - Green Tracer, Dark Earth";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -3489,7 +3489,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_Mk332_AP_T_White: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - White Tracer, Dark Earth";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -3498,7 +3498,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_Mk332_AP_T_Blue: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - Blue Tracer, Dark Earth";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -3507,7 +3507,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_Mk332_AP_T_Orange: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - Orange Tracer, Dark Earth";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -3516,7 +3516,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_DE_556_30_M855_556_Mk332_AP_T_IR: MCC_L54AWM_556_DE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - IR Tracer, Dark Earth";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM DE";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -3525,7 +3525,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_Mk327_HV: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_Mk327_HV";
@@ -3533,7 +3533,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_Mk327_HV_T_Red: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - Red Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -3542,7 +3542,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_Mk327_HV_T_Yellow: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - Yellow Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -3551,7 +3551,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_Mk327_HV_T_Green: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - Green Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -3560,7 +3560,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_Mk327_HV_T_White: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - White Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -3569,7 +3569,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_Mk327_HV_T_Blue: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - Blue Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -3578,7 +3578,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_Mk327_HV_T_Orange: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - Orange Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -3587,7 +3587,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_Mk327_HV_T_IR: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM) - IR Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -3596,7 +3596,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_XM891_CTEP: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_XM891_CTEP";
@@ -3604,7 +3604,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_XM891_CTEP_T_Red: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - Red Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -3613,7 +3613,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_XM891_CTEP_T_Yellow: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - Yellow Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -3622,7 +3622,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_XM891_CTEP_T_Green: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - Green Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -3631,7 +3631,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_XM891_CTEP_T_White: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - White Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -3640,7 +3640,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_XM891_CTEP_T_Blue: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - Blue Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -3649,7 +3649,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_XM891_CTEP_T_Orange: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - Orange Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -3658,7 +3658,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_XM891_CTEP_T_IR: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM) - IR Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -3667,7 +3667,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_Mk332_AP: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_Mk332_AP";
@@ -3675,7 +3675,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_Mk332_AP_T_Red: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - Red Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -3684,7 +3684,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_Mk332_AP_T_Yellow: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - Yellow Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -3693,7 +3693,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_Mk332_AP_T_Green: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - Green Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -3702,7 +3702,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_Mk332_AP_T_White: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - White Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -3711,7 +3711,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_Mk332_AP_T_Blue: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - Blue Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -3720,7 +3720,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_Mk332_AP_T_Orange: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - Orange Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -3729,7 +3729,7 @@ class CfgMagazines {
     };
     class FA_MCC_L54AWM_556_FDE_556_30_M855_556_Mk332_AP_T_IR: MCC_L54AWM_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM) - IR Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 L54AWM FDE";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -3738,7 +3738,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk335: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM)";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk335";
@@ -3746,7 +3746,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk335_T_Red: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM) - Red Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk335_T_Red";
@@ -3755,7 +3755,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk335_T_Yellow: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM) - Yellow Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk335_T_Yellow";
@@ -3764,7 +3764,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk335_T_Green: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM) - Green Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk335_T_Green";
@@ -3773,7 +3773,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk335_T_White: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM) - White Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk335_T_White";
@@ -3782,7 +3782,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk335_T_Blue: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM) - Blue Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk335_T_Blue";
@@ -3791,7 +3791,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk335_T_Orange: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM) - Orange Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk335_T_Orange";
@@ -3800,7 +3800,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk335_T_IR: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM) - IR Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk335_T_IR";
@@ -3809,7 +3809,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk336: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM)";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk336";
@@ -3817,7 +3817,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk336_T_Red: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM) - Red Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk336_T_Red";
@@ -3826,7 +3826,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk336_T_Yellow: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM) - Yellow Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk336_T_Yellow";
@@ -3835,7 +3835,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk336_T_Green: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM) - Green Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk336_T_Green";
@@ -3844,7 +3844,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk336_T_White: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM) - White Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk336_T_White";
@@ -3853,7 +3853,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk336_T_Blue: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM) - Blue Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk336_T_Blue";
@@ -3862,7 +3862,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk336_T_Orange: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM) - Orange Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk336_T_Orange";
@@ -3871,7 +3871,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk336_T_IR: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM) - IR Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk336_T_IR";
@@ -3880,7 +3880,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk337: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM)";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk337";
@@ -3888,7 +3888,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk337_T_Red: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM) - Red Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk337_T_Red";
@@ -3897,7 +3897,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk337_T_Yellow: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM) - Yellow Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk337_T_Yellow";
@@ -3906,7 +3906,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk337_T_Green: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM) - Green Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk337_T_Green";
@@ -3915,7 +3915,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk337_T_White: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM) - White Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk337_T_White";
@@ -3924,7 +3924,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk337_T_Blue: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM) - Blue Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk337_T_Blue";
@@ -3933,7 +3933,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk337_T_Orange: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM) - Orange Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk337_T_Orange";
@@ -3942,7 +3942,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk337_T_IR: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM) - IR Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk337_T_IR";
@@ -3951,7 +3951,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk342_Sub: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM)";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk342_Sub";
@@ -3959,7 +3959,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk342_Sub_T_Red: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM) - Red Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk342_Sub_T_Red";
@@ -3968,7 +3968,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk342_Sub_T_Yellow: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM) - Yellow Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk342_Sub_T_Yellow";
@@ -3977,7 +3977,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk342_Sub_T_Green: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM) - Green Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk342_Sub_T_Green";
@@ -3986,7 +3986,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk342_Sub_T_White: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM) - White Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk342_Sub_T_White";
@@ -3995,7 +3995,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk342_Sub_T_Blue: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM) - Blue Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk342_Sub_T_Blue";
@@ -4004,7 +4004,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk342_Sub_T_Orange: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM) - Orange Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk342_Sub_T_Orange";
@@ -4013,7 +4013,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk342_Sub_T_IR: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM) - IR Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk342_Sub_T_IR";
@@ -4022,7 +4022,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk343_Sub: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM)";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk343_Sub";
@@ -4030,7 +4030,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk343_Sub_T_Red: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM) - Red Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk343_Sub_T_Red";
@@ -4039,7 +4039,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk343_Sub_T_Yellow: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM) - Yellow Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk343_Sub_T_Yellow";
@@ -4048,7 +4048,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk343_Sub_T_Green: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM) - Green Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk343_Sub_T_Green";
@@ -4057,7 +4057,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk343_Sub_T_White: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM) - White Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk343_Sub_T_White";
@@ -4066,7 +4066,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk343_Sub_T_Blue: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM) - Blue Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk343_Sub_T_Blue";
@@ -4075,7 +4075,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk343_Sub_T_Orange: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM) - Orange Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk343_Sub_T_Orange";
@@ -4084,7 +4084,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk343_Sub_T_IR: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM) - IR Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk343_Sub_T_IR";
@@ -4093,7 +4093,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk341_SubAP: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM)";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk341_SubAP";
@@ -4101,7 +4101,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk341_SubAP_T_Red: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM) - Red Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk341_SubAP_T_Red";
@@ -4110,7 +4110,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk341_SubAP_T_Yellow: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM) - Yellow Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk341_SubAP_T_Yellow";
@@ -4119,7 +4119,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk341_SubAP_T_Green: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM) - Green Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk341_SubAP_T_Green";
@@ -4128,7 +4128,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk341_SubAP_T_White: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM) - White Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk341_SubAP_T_White";
@@ -4137,7 +4137,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk341_SubAP_T_Blue: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM) - Blue Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk341_SubAP_T_Blue";
@@ -4146,7 +4146,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk341_SubAP_T_Orange: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM) - Orange Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk341_SubAP_T_Orange";
@@ -4155,7 +4155,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_Mk341_SubAP_T_IR: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM) - IR Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_Mk341_SubAP_T_IR";
@@ -4164,7 +4164,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_XM345_SubAP2: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM)";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_XM345_SubAP2";
@@ -4172,7 +4172,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_XM345_SubAP2_T_Red: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM) - Red Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_XM345_SubAP2_T_Red";
@@ -4181,7 +4181,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_XM345_SubAP2_T_Yellow: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM) - Yellow Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_XM345_SubAP2_T_Yellow";
@@ -4190,7 +4190,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_XM345_SubAP2_T_Green: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM) - Green Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_XM345_SubAP2_T_Green";
@@ -4199,7 +4199,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_XM345_SubAP2_T_White: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM) - White Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_XM345_SubAP2_T_White";
@@ -4208,7 +4208,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_XM345_SubAP2_T_Blue: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM) - Blue Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_XM345_SubAP2_T_Blue";
@@ -4217,7 +4217,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_XM345_SubAP2_T_Orange: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM) - Orange Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_XM345_SubAP2_T_Orange";
@@ -4226,7 +4226,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_300_30_125OTM_300_XM345_SubAP2_T_IR: MCC_L5AWM_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM) - IR Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK L5AWM";
         ammo = "FA_b_300_XM345_SubAP2_T_IR";
@@ -4235,7 +4235,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk335: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM) - Dark Earth";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk335";
@@ -4243,7 +4243,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk335_T_Red: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM) - Red Tracer, Dark Earth";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk335_T_Red";
@@ -4252,7 +4252,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk335_T_Yellow: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM) - Yellow Tracer, Dark Earth";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk335_T_Yellow";
@@ -4261,7 +4261,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk335_T_Green: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM) - Green Tracer, Dark Earth";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk335_T_Green";
@@ -4270,7 +4270,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk335_T_White: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM) - White Tracer, Dark Earth";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk335_T_White";
@@ -4279,7 +4279,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk335_T_Blue: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM) - Blue Tracer, Dark Earth";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk335_T_Blue";
@@ -4288,7 +4288,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk335_T_Orange: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM) - Orange Tracer, Dark Earth";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk335_T_Orange";
@@ -4297,7 +4297,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk335_T_IR: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM) - IR Tracer, Dark Earth";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk335_T_IR";
@@ -4306,7 +4306,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk336: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM) - Dark Earth";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk336";
@@ -4314,7 +4314,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk336_T_Red: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM) - Red Tracer, Dark Earth";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk336_T_Red";
@@ -4323,7 +4323,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk336_T_Yellow: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM) - Yellow Tracer, Dark Earth";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk336_T_Yellow";
@@ -4332,7 +4332,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk336_T_Green: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM) - Green Tracer, Dark Earth";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk336_T_Green";
@@ -4341,7 +4341,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk336_T_White: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM) - White Tracer, Dark Earth";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk336_T_White";
@@ -4350,7 +4350,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk336_T_Blue: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM) - Blue Tracer, Dark Earth";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk336_T_Blue";
@@ -4359,7 +4359,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk336_T_Orange: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM) - Orange Tracer, Dark Earth";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk336_T_Orange";
@@ -4368,7 +4368,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk336_T_IR: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM) - IR Tracer, Dark Earth";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk336_T_IR";
@@ -4377,7 +4377,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk337: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM) - Dark Earth";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk337";
@@ -4385,7 +4385,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk337_T_Red: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM) - Red Tracer, Dark Earth";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk337_T_Red";
@@ -4394,7 +4394,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk337_T_Yellow: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM) - Yellow Tracer, Dark Earth";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk337_T_Yellow";
@@ -4403,7 +4403,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk337_T_Green: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM) - Green Tracer, Dark Earth";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk337_T_Green";
@@ -4412,7 +4412,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk337_T_White: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM) - White Tracer, Dark Earth";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk337_T_White";
@@ -4421,7 +4421,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk337_T_Blue: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM) - Blue Tracer, Dark Earth";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk337_T_Blue";
@@ -4430,7 +4430,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk337_T_Orange: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM) - Orange Tracer, Dark Earth";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk337_T_Orange";
@@ -4439,7 +4439,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk337_T_IR: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM) - IR Tracer, Dark Earth";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk337_T_IR";
@@ -4448,7 +4448,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk342_Sub: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM) - Dark Earth";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk342_Sub";
@@ -4456,7 +4456,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk342_Sub_T_Red: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM) - Red Tracer, Dark Earth";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk342_Sub_T_Red";
@@ -4465,7 +4465,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk342_Sub_T_Yellow: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM) - Yellow Tracer, Dark Earth";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk342_Sub_T_Yellow";
@@ -4474,7 +4474,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk342_Sub_T_Green: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM) - Green Tracer, Dark Earth";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk342_Sub_T_Green";
@@ -4483,7 +4483,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk342_Sub_T_White: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM) - White Tracer, Dark Earth";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk342_Sub_T_White";
@@ -4492,7 +4492,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk342_Sub_T_Blue: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM) - Blue Tracer, Dark Earth";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk342_Sub_T_Blue";
@@ -4501,7 +4501,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk342_Sub_T_Orange: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM) - Orange Tracer, Dark Earth";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk342_Sub_T_Orange";
@@ -4510,7 +4510,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk342_Sub_T_IR: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM) - IR Tracer, Dark Earth";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk342_Sub_T_IR";
@@ -4519,7 +4519,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk343_Sub: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM) - Dark Earth";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk343_Sub";
@@ -4527,7 +4527,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk343_Sub_T_Red: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM) - Red Tracer, Dark Earth";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk343_Sub_T_Red";
@@ -4536,7 +4536,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk343_Sub_T_Yellow: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM) - Yellow Tracer, Dark Earth";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk343_Sub_T_Yellow";
@@ -4545,7 +4545,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk343_Sub_T_Green: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM) - Green Tracer, Dark Earth";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk343_Sub_T_Green";
@@ -4554,7 +4554,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk343_Sub_T_White: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM) - White Tracer, Dark Earth";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk343_Sub_T_White";
@@ -4563,7 +4563,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk343_Sub_T_Blue: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM) - Blue Tracer, Dark Earth";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk343_Sub_T_Blue";
@@ -4572,7 +4572,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk343_Sub_T_Orange: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM) - Orange Tracer, Dark Earth";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk343_Sub_T_Orange";
@@ -4581,7 +4581,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk343_Sub_T_IR: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM) - IR Tracer, Dark Earth";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk343_Sub_T_IR";
@@ -4590,7 +4590,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk341_SubAP: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM) - Dark Earth";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk341_SubAP";
@@ -4598,7 +4598,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk341_SubAP_T_Red: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM) - Red Tracer, Dark Earth";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk341_SubAP_T_Red";
@@ -4607,7 +4607,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk341_SubAP_T_Yellow: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM) - Yellow Tracer, Dark Earth";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk341_SubAP_T_Yellow";
@@ -4616,7 +4616,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk341_SubAP_T_Green: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM) - Green Tracer, Dark Earth";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk341_SubAP_T_Green";
@@ -4625,7 +4625,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk341_SubAP_T_White: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM) - White Tracer, Dark Earth";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk341_SubAP_T_White";
@@ -4634,7 +4634,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk341_SubAP_T_Blue: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM) - Blue Tracer, Dark Earth";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk341_SubAP_T_Blue";
@@ -4643,7 +4643,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk341_SubAP_T_Orange: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM) - Orange Tracer, Dark Earth";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk341_SubAP_T_Orange";
@@ -4652,7 +4652,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_Mk341_SubAP_T_IR: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM) - IR Tracer, Dark Earth";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_Mk341_SubAP_T_IR";
@@ -4661,7 +4661,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_XM345_SubAP2: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM) - Dark Earth";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_XM345_SubAP2";
@@ -4669,7 +4669,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_XM345_SubAP2_T_Red: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM) - Red Tracer, Dark Earth";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_XM345_SubAP2_T_Red";
@@ -4678,7 +4678,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_XM345_SubAP2_T_Yellow: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM) - Yellow Tracer, Dark Earth";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_XM345_SubAP2_T_Yellow";
@@ -4687,7 +4687,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_XM345_SubAP2_T_Green: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM) - Green Tracer, Dark Earth";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_XM345_SubAP2_T_Green";
@@ -4696,7 +4696,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_XM345_SubAP2_T_White: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM) - White Tracer, Dark Earth";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_XM345_SubAP2_T_White";
@@ -4705,7 +4705,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_XM345_SubAP2_T_Blue: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM) - Blue Tracer, Dark Earth";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_XM345_SubAP2_T_Blue";
@@ -4714,7 +4714,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_XM345_SubAP2_T_Orange: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM) - Orange Tracer, Dark Earth";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_XM345_SubAP2_T_Orange";
@@ -4723,7 +4723,7 @@ class CfgMagazines {
     };
     class FA_MCC_L5AWM_DE_300_30_125OTM_300_XM345_SubAP2_T_IR: MCC_L5AWM_DE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM) - IR Tracer, Dark Earth";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK L5AWM DE";
         ammo = "FA_b_300_XM345_SubAP2_T_IR";
@@ -4732,7 +4732,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk335: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG)";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk335";
@@ -4740,7 +4740,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk335_T_Red: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG) - Red Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk335_T_Red";
@@ -4749,7 +4749,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk335_T_Yellow: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG) - Yellow Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk335_T_Yellow";
@@ -4758,7 +4758,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk335_T_Green: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG) - Green Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk335_T_Green";
@@ -4767,7 +4767,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk335_T_White: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG) - White Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk335_T_White";
@@ -4776,7 +4776,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk335_T_Blue: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG) - Blue Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk335_T_Blue";
@@ -4785,7 +4785,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk335_T_Orange: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG) - Orange Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk335_T_Orange";
@@ -4794,7 +4794,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk335_T_IR: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG) - IR Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk335_T_IR";
@@ -4803,7 +4803,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk336: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG)";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk336";
@@ -4811,7 +4811,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk336_T_Red: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG) - Red Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk336_T_Red";
@@ -4820,7 +4820,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk336_T_Yellow: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG) - Yellow Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk336_T_Yellow";
@@ -4829,7 +4829,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk336_T_Green: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG) - Green Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk336_T_Green";
@@ -4838,7 +4838,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk336_T_White: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG) - White Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk336_T_White";
@@ -4847,7 +4847,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk336_T_Blue: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG) - Blue Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk336_T_Blue";
@@ -4856,7 +4856,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk336_T_Orange: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG) - Orange Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk336_T_Orange";
@@ -4865,7 +4865,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk336_T_IR: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG) - IR Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk336_T_IR";
@@ -4874,7 +4874,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk337: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG)";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk337";
@@ -4882,7 +4882,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk337_T_Red: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG) - Red Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk337_T_Red";
@@ -4891,7 +4891,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk337_T_Yellow: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG) - Yellow Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk337_T_Yellow";
@@ -4900,7 +4900,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk337_T_Green: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG) - Green Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk337_T_Green";
@@ -4909,7 +4909,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk337_T_White: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG) - White Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk337_T_White";
@@ -4918,7 +4918,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk337_T_Blue: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG) - Blue Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk337_T_Blue";
@@ -4927,7 +4927,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk337_T_Orange: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG) - Orange Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk337_T_Orange";
@@ -4936,7 +4936,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk337_T_IR: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG) - IR Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk337_T_IR";
@@ -4945,7 +4945,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk342_Sub: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG)";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk342_Sub";
@@ -4953,7 +4953,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk342_Sub_T_Red: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG) - Red Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk342_Sub_T_Red";
@@ -4962,7 +4962,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk342_Sub_T_Yellow: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG) - Yellow Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk342_Sub_T_Yellow";
@@ -4971,7 +4971,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk342_Sub_T_Green: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG) - Green Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk342_Sub_T_Green";
@@ -4980,7 +4980,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk342_Sub_T_White: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG) - White Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk342_Sub_T_White";
@@ -4989,7 +4989,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk342_Sub_T_Blue: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG) - Blue Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk342_Sub_T_Blue";
@@ -4998,7 +4998,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk342_Sub_T_Orange: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG) - Orange Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk342_Sub_T_Orange";
@@ -5007,7 +5007,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk342_Sub_T_IR: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG) - IR Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk342_Sub_T_IR";
@@ -5016,7 +5016,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk343_Sub: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG)";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk343_Sub";
@@ -5024,7 +5024,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk343_Sub_T_Red: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG) - Red Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk343_Sub_T_Red";
@@ -5033,7 +5033,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk343_Sub_T_Yellow: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG) - Yellow Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk343_Sub_T_Yellow";
@@ -5042,7 +5042,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk343_Sub_T_Green: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG) - Green Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk343_Sub_T_Green";
@@ -5051,7 +5051,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk343_Sub_T_White: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG) - White Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk343_Sub_T_White";
@@ -5060,7 +5060,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk343_Sub_T_Blue: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG) - Blue Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk343_Sub_T_Blue";
@@ -5069,7 +5069,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk343_Sub_T_Orange: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG) - Orange Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk343_Sub_T_Orange";
@@ -5078,7 +5078,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk343_Sub_T_IR: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG) - IR Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk343_Sub_T_IR";
@@ -5087,7 +5087,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk341_SubAP: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG)";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk341_SubAP";
@@ -5095,7 +5095,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk341_SubAP_T_Red: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG) - Red Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk341_SubAP_T_Red";
@@ -5104,7 +5104,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk341_SubAP_T_Yellow: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG) - Yellow Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk341_SubAP_T_Yellow";
@@ -5113,7 +5113,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk341_SubAP_T_Green: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG) - Green Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk341_SubAP_T_Green";
@@ -5122,7 +5122,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk341_SubAP_T_White: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG) - White Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk341_SubAP_T_White";
@@ -5131,7 +5131,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk341_SubAP_T_Blue: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG) - Blue Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk341_SubAP_T_Blue";
@@ -5140,7 +5140,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk341_SubAP_T_Orange: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG) - Orange Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk341_SubAP_T_Orange";
@@ -5149,7 +5149,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_Mk341_SubAP_T_IR: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG) - IR Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_Mk341_SubAP_T_IR";
@@ -5158,7 +5158,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_XM345_SubAP2: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG)";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_XM345_SubAP2";
@@ -5166,7 +5166,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_XM345_SubAP2_T_Red: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG) - Red Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_XM345_SubAP2_T_Red";
@@ -5175,7 +5175,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_XM345_SubAP2_T_Yellow: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG) - Yellow Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_XM345_SubAP2_T_Yellow";
@@ -5184,7 +5184,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_XM345_SubAP2_T_Green: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG) - Green Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_XM345_SubAP2_T_Green";
@@ -5193,7 +5193,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_XM345_SubAP2_T_White: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG) - White Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_XM345_SubAP2_T_White";
@@ -5202,7 +5202,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_XM345_SubAP2_T_Blue: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG) - Blue Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_XM345_SubAP2_T_Blue";
@@ -5211,7 +5211,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_XM345_SubAP2_T_Orange: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG) - Orange Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_XM345_SubAP2_T_Orange";
@@ -5220,7 +5220,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_300_30_125OTM_300_XM345_SubAP2_T_IR: MCC_PMAG_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG) - IR Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK PMAG";
         ammo = "FA_b_300_XM345_SubAP2_T_IR";
@@ -5229,7 +5229,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_Mk327_HV: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk327 HV";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG) - FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk327_HV";
@@ -5237,7 +5237,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_Mk327_HV_T_Red: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG) - Red Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -5246,7 +5246,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_Mk327_HV_T_Yellow: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG) - Yellow Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -5255,7 +5255,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_Mk327_HV_T_Green: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG) - Green Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -5264,7 +5264,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_Mk327_HV_T_White: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG) - White Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -5273,7 +5273,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_Mk327_HV_T_Blue: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG) - Blue Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -5282,7 +5282,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_Mk327_HV_T_Orange: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG) - Orange Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -5291,7 +5291,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_Mk327_HV_T_IR: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG) - IR Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -5300,7 +5300,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_XM891_CTEP: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd XM891 CTEP";
+        displayName = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG) - FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_XM891_CTEP";
@@ -5308,7 +5308,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_XM891_CTEP_T_Red: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG) - Red Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -5317,7 +5317,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_XM891_CTEP_T_Yellow: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG) - Yellow Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -5326,7 +5326,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_XM891_CTEP_T_Green: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG) - Green Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -5335,7 +5335,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_XM891_CTEP_T_White: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG) - White Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -5344,7 +5344,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_XM891_CTEP_T_Blue: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG) - Blue Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -5353,7 +5353,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_XM891_CTEP_T_Orange: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG) - Orange Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -5362,7 +5362,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_XM891_CTEP_T_IR: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG) - IR Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -5371,7 +5371,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_Mk332_AP: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk332 AP";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG) - FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk332_AP";
@@ -5379,7 +5379,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_Mk332_AP_T_Red: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG) - Red Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -5388,7 +5388,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_Mk332_AP_T_Yellow: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG) - Yellow Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -5397,7 +5397,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_Mk332_AP_T_Green: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG) - Green Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -5406,7 +5406,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_Mk332_AP_T_White: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG) - White Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -5415,7 +5415,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_Mk332_AP_T_Blue: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG) - Blue Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -5424,7 +5424,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_Mk332_AP_T_Orange: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG) - Orange Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -5433,7 +5433,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_FDE_M855_556_Mk332_AP_T_IR: MCC_PMAG_556_40_FDE_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG) - IR Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 40rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -5442,7 +5442,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_Mk327_HV: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk327 HV";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG)";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk327_HV";
@@ -5450,7 +5450,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_Mk327_HV_T_Red: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG) - Red Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -5459,7 +5459,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_Mk327_HV_T_Yellow: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG) - Yellow Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -5468,7 +5468,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_Mk327_HV_T_Green: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG) - Green Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -5477,7 +5477,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_Mk327_HV_T_White: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG) - White Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -5486,7 +5486,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_Mk327_HV_T_Blue: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG) - Blue Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -5495,7 +5495,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_Mk327_HV_T_Orange: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG) - Orange Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -5504,7 +5504,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_Mk327_HV_T_IR: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG) - IR Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -5513,7 +5513,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_XM891_CTEP: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd XM891 CTEP";
+        displayName = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG)";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_XM891_CTEP";
@@ -5521,7 +5521,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_XM891_CTEP_T_Red: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG) - Red Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -5530,7 +5530,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_XM891_CTEP_T_Yellow: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG) - Yellow Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -5539,7 +5539,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_XM891_CTEP_T_Green: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG) - Green Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -5548,7 +5548,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_XM891_CTEP_T_White: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG) - White Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -5557,7 +5557,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_XM891_CTEP_T_Blue: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG) - Blue Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -5566,7 +5566,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_XM891_CTEP_T_Orange: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG) - Orange Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -5575,7 +5575,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_XM891_CTEP_T_IR: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG) - IR Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -5584,7 +5584,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_Mk332_AP: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk332 AP";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG)";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk332_AP";
@@ -5592,7 +5592,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_Mk332_AP_T_Red: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG) - Red Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -5601,7 +5601,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_Mk332_AP_T_Yellow: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG) - Yellow Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -5610,7 +5610,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_Mk332_AP_T_Green: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG) - Green Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -5619,7 +5619,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_Mk332_AP_T_White: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG) - White Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -5628,7 +5628,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_Mk332_AP_T_Blue: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG) - Blue Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -5637,7 +5637,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_Mk332_AP_T_Orange: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG) - Orange Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -5646,7 +5646,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_40_M855_556_Mk332_AP_T_IR: MCC_PMAG_556_40_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 40Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG) - IR Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 40rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -5655,7 +5655,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_Mk327_HV: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC]";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk327_HV";
@@ -5663,7 +5663,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_Mk327_HV_T_Red: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC] - Red Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -5672,7 +5672,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_Mk327_HV_T_Yellow: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC] - Yellow Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -5681,7 +5681,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_Mk327_HV_T_Green: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC] - Green Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -5690,7 +5690,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_Mk327_HV_T_White: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC] - White Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -5699,7 +5699,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_Mk327_HV_T_Blue: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC] - Blue Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -5708,7 +5708,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_Mk327_HV_T_Orange: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC] - Orange Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -5717,7 +5717,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_Mk327_HV_T_IR: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC] - IR Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -5726,7 +5726,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_XM891_CTEP: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC]";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_XM891_CTEP";
@@ -5734,7 +5734,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_XM891_CTEP_T_Red: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC] - Red Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -5743,7 +5743,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_XM891_CTEP_T_Yellow: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC] - Yellow Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -5752,7 +5752,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_XM891_CTEP_T_Green: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC] - Green Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -5761,7 +5761,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_XM891_CTEP_T_White: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC] - White Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -5770,7 +5770,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_XM891_CTEP_T_Blue: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC] - Blue Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -5779,7 +5779,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_XM891_CTEP_T_Orange: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC] - Orange Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -5788,7 +5788,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_XM891_CTEP_T_IR: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC] - IR Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -5797,7 +5797,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_Mk332_AP: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC]";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk332_AP";
@@ -5805,7 +5805,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_Mk332_AP_T_Red: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC] - Red Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -5814,7 +5814,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_Mk332_AP_T_Yellow: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC] - Yellow Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -5823,7 +5823,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_Mk332_AP_T_Green: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC] - Green Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -5832,7 +5832,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_Mk332_AP_T_White: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC] - White Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -5841,7 +5841,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_Mk332_AP_T_Blue: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC] - Blue Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -5850,7 +5850,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_Mk332_AP_T_Orange: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC] - Orange Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -5859,7 +5859,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_556_30_M855_556_Mk332_AP_T_IR: MCC_PMAG_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC] - IR Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G3";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -5868,7 +5868,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_Mk327_HV: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC] - FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk327_HV";
@@ -5876,7 +5876,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_Mk327_HV_T_Red: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC] - Red Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -5885,7 +5885,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_Mk327_HV_T_Yellow: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC] - Yellow Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -5894,7 +5894,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_Mk327_HV_T_Green: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC] - Green Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -5903,7 +5903,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_Mk327_HV_T_White: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC] - White Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -5912,7 +5912,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_Mk327_HV_T_Blue: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC] - Blue Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -5921,7 +5921,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_Mk327_HV_T_Orange: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC] - Orange Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -5930,7 +5930,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_Mk327_HV_T_IR: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC] - IR Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -5939,7 +5939,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_XM891_CTEP: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC] - FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_XM891_CTEP";
@@ -5947,7 +5947,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_XM891_CTEP_T_Red: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC] - Red Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -5956,7 +5956,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_XM891_CTEP_T_Yellow: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC] - Yellow Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -5965,7 +5965,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_XM891_CTEP_T_Green: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC] - Green Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -5974,7 +5974,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_XM891_CTEP_T_White: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC] - White Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -5983,7 +5983,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_XM891_CTEP_T_Blue: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC] - Blue Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -5992,7 +5992,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_XM891_CTEP_T_Orange: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC] - Orange Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -6001,7 +6001,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_XM891_CTEP_T_IR: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC] - IR Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -6010,7 +6010,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_Mk332_AP: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC] - FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk332_AP";
@@ -6018,7 +6018,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_Mk332_AP_T_Red: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC] - Red Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -6027,7 +6027,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_Mk332_AP_T_Yellow: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC] - Yellow Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -6036,7 +6036,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_Mk332_AP_T_Green: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC] - Green Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -6045,7 +6045,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_Mk332_AP_T_White: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC] - White Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -6054,7 +6054,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_Mk332_AP_T_Blue: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC] - Blue Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -6063,7 +6063,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_Mk332_AP_T_Orange: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC] - Orange Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -6072,7 +6072,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_556_FDE_556_30_M855_556_Mk332_AP_T_IR: MCC_PMAG_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC] - IR Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G3 FDE";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -6081,7 +6081,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_103RRLP_65x43_Mk331_EPR: MCC_PMAG_65x43_25_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk331 EPR";
+        displayName = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG)";
         displayNameShort = "Mk331 EPR";
         descriptionShort = "Mk331 EPR<br/>In the 25rd 6.5x43 PMAG BLK 103gr";
         ammo = "FA_b_65x43_Mk331_EPR";
@@ -6089,7 +6089,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_103RRLP_65x43_Mk331_EPR_T_Red: MCC_PMAG_65x43_25_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk331 EPR Red Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG) - Red Tracer";
         displayNameShort = "Mk331 EPR";
         descriptionShort = "Mk331 EPR<br/>In the 25rd 6.5x43 PMAG BLK 103gr";
         ammo = "FA_b_65x43_Mk331_EPR_T_Red";
@@ -6098,7 +6098,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_103RRLP_65x43_Mk331_EPR_T_Yellow: MCC_PMAG_65x43_25_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk331 EPR Yellow Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG) - Yellow Tracer";
         displayNameShort = "Mk331 EPR";
         descriptionShort = "Mk331 EPR<br/>In the 25rd 6.5x43 PMAG BLK 103gr";
         ammo = "FA_b_65x43_Mk331_EPR_T_Yellow";
@@ -6107,7 +6107,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_103RRLP_65x43_Mk331_EPR_T_Green: MCC_PMAG_65x43_25_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk331 EPR Green Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG) - Green Tracer";
         displayNameShort = "Mk331 EPR";
         descriptionShort = "Mk331 EPR<br/>In the 25rd 6.5x43 PMAG BLK 103gr";
         ammo = "FA_b_65x43_Mk331_EPR_T_Green";
@@ -6116,7 +6116,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_103RRLP_65x43_Mk331_EPR_T_White: MCC_PMAG_65x43_25_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk331 EPR White Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG) - White Tracer";
         displayNameShort = "Mk331 EPR";
         descriptionShort = "Mk331 EPR<br/>In the 25rd 6.5x43 PMAG BLK 103gr";
         ammo = "FA_b_65x43_Mk331_EPR_T_White";
@@ -6125,7 +6125,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_103RRLP_65x43_Mk331_EPR_T_Blue: MCC_PMAG_65x43_25_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk331 EPR Blue Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG) - Blue Tracer";
         displayNameShort = "Mk331 EPR";
         descriptionShort = "Mk331 EPR<br/>In the 25rd 6.5x43 PMAG BLK 103gr";
         ammo = "FA_b_65x43_Mk331_EPR_T_Blue";
@@ -6134,7 +6134,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_103RRLP_65x43_Mk331_EPR_T_Orange: MCC_PMAG_65x43_25_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk331 EPR Orange Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG) - Orange Tracer";
         displayNameShort = "Mk331 EPR";
         descriptionShort = "Mk331 EPR<br/>In the 25rd 6.5x43 PMAG BLK 103gr";
         ammo = "FA_b_65x43_Mk331_EPR_T_Orange";
@@ -6143,7 +6143,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_103RRLP_65x43_Mk331_EPR_T_IR: MCC_PMAG_65x43_25_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk331 EPR IR Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG) - IR Tracer";
         displayNameShort = "Mk331 EPR";
         descriptionShort = "Mk331 EPR<br/>In the 25rd 6.5x43 PMAG BLK 103gr";
         ammo = "FA_b_65x43_Mk331_EPR_T_IR";
@@ -6152,7 +6152,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_103RRLP_65x43_XM894_CTEP: MCC_PMAG_65x43_25_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM894 CTEP";
+        displayName = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG)";
         displayNameShort = "XM894 CTEP";
         descriptionShort = "XM894 CTEP<br/>In the 25rd 6.5x43 PMAG BLK 103gr";
         ammo = "FA_b_65x43_XM894_CTEP";
@@ -6160,7 +6160,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_103RRLP_65x43_XM894_CTEP_T_Red: MCC_PMAG_65x43_25_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM894 CTEP Red Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG) - Red Tracer";
         displayNameShort = "XM894 CTEP";
         descriptionShort = "XM894 CTEP<br/>In the 25rd 6.5x43 PMAG BLK 103gr";
         ammo = "FA_b_65x43_XM894_CTEP_T_Red";
@@ -6169,7 +6169,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_103RRLP_65x43_XM894_CTEP_T_Yellow: MCC_PMAG_65x43_25_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM894 CTEP Yellow Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG) - Yellow Tracer";
         displayNameShort = "XM894 CTEP";
         descriptionShort = "XM894 CTEP<br/>In the 25rd 6.5x43 PMAG BLK 103gr";
         ammo = "FA_b_65x43_XM894_CTEP_T_Yellow";
@@ -6178,7 +6178,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_103RRLP_65x43_XM894_CTEP_T_Green: MCC_PMAG_65x43_25_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM894 CTEP Green Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG) - Green Tracer";
         displayNameShort = "XM894 CTEP";
         descriptionShort = "XM894 CTEP<br/>In the 25rd 6.5x43 PMAG BLK 103gr";
         ammo = "FA_b_65x43_XM894_CTEP_T_Green";
@@ -6187,7 +6187,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_103RRLP_65x43_XM894_CTEP_T_White: MCC_PMAG_65x43_25_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM894 CTEP White Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG) - White Tracer";
         displayNameShort = "XM894 CTEP";
         descriptionShort = "XM894 CTEP<br/>In the 25rd 6.5x43 PMAG BLK 103gr";
         ammo = "FA_b_65x43_XM894_CTEP_T_White";
@@ -6196,7 +6196,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_103RRLP_65x43_XM894_CTEP_T_Blue: MCC_PMAG_65x43_25_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM894 CTEP Blue Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG) - Blue Tracer";
         displayNameShort = "XM894 CTEP";
         descriptionShort = "XM894 CTEP<br/>In the 25rd 6.5x43 PMAG BLK 103gr";
         ammo = "FA_b_65x43_XM894_CTEP_T_Blue";
@@ -6205,7 +6205,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_103RRLP_65x43_XM894_CTEP_T_Orange: MCC_PMAG_65x43_25_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM894 CTEP Orange Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG) - Orange Tracer";
         displayNameShort = "XM894 CTEP";
         descriptionShort = "XM894 CTEP<br/>In the 25rd 6.5x43 PMAG BLK 103gr";
         ammo = "FA_b_65x43_XM894_CTEP_T_Orange";
@@ -6214,7 +6214,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_103RRLP_65x43_XM894_CTEP_T_IR: MCC_PMAG_65x43_25_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM894 CTEP IR Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG) - IR Tracer";
         displayNameShort = "XM894 CTEP";
         descriptionShort = "XM894 CTEP<br/>In the 25rd 6.5x43 PMAG BLK 103gr";
         ammo = "FA_b_65x43_XM894_CTEP_T_IR";
@@ -6223,7 +6223,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_FDE_103RRLP_65x43_Mk331_EPR: MCC_PMAG_65x43_25_FDE_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk331 EPR";
+        displayName = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG) - FDE";
         displayNameShort = "Mk331 EPR";
         descriptionShort = "Mk331 EPR<br/>In the 25rd 6.5x43 PMAG FDE 103gr";
         ammo = "FA_b_65x43_Mk331_EPR";
@@ -6231,7 +6231,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_FDE_103RRLP_65x43_Mk331_EPR_T_Red: MCC_PMAG_65x43_25_FDE_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk331 EPR Red Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG) - Red Tracer, FDE";
         displayNameShort = "Mk331 EPR";
         descriptionShort = "Mk331 EPR<br/>In the 25rd 6.5x43 PMAG FDE 103gr";
         ammo = "FA_b_65x43_Mk331_EPR_T_Red";
@@ -6240,7 +6240,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_FDE_103RRLP_65x43_Mk331_EPR_T_Yellow: MCC_PMAG_65x43_25_FDE_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk331 EPR Yellow Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG) - Yellow Tracer, FDE";
         displayNameShort = "Mk331 EPR";
         descriptionShort = "Mk331 EPR<br/>In the 25rd 6.5x43 PMAG FDE 103gr";
         ammo = "FA_b_65x43_Mk331_EPR_T_Yellow";
@@ -6249,7 +6249,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_FDE_103RRLP_65x43_Mk331_EPR_T_Green: MCC_PMAG_65x43_25_FDE_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk331 EPR Green Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG) - Green Tracer, FDE";
         displayNameShort = "Mk331 EPR";
         descriptionShort = "Mk331 EPR<br/>In the 25rd 6.5x43 PMAG FDE 103gr";
         ammo = "FA_b_65x43_Mk331_EPR_T_Green";
@@ -6258,7 +6258,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_FDE_103RRLP_65x43_Mk331_EPR_T_White: MCC_PMAG_65x43_25_FDE_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk331 EPR White Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG) - White Tracer, FDE";
         displayNameShort = "Mk331 EPR";
         descriptionShort = "Mk331 EPR<br/>In the 25rd 6.5x43 PMAG FDE 103gr";
         ammo = "FA_b_65x43_Mk331_EPR_T_White";
@@ -6267,7 +6267,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_FDE_103RRLP_65x43_Mk331_EPR_T_Blue: MCC_PMAG_65x43_25_FDE_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk331 EPR Blue Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG) - Blue Tracer, FDE";
         displayNameShort = "Mk331 EPR";
         descriptionShort = "Mk331 EPR<br/>In the 25rd 6.5x43 PMAG FDE 103gr";
         ammo = "FA_b_65x43_Mk331_EPR_T_Blue";
@@ -6276,7 +6276,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_FDE_103RRLP_65x43_Mk331_EPR_T_Orange: MCC_PMAG_65x43_25_FDE_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk331 EPR Orange Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG) - Orange Tracer, FDE";
         displayNameShort = "Mk331 EPR";
         descriptionShort = "Mk331 EPR<br/>In the 25rd 6.5x43 PMAG FDE 103gr";
         ammo = "FA_b_65x43_Mk331_EPR_T_Orange";
@@ -6285,7 +6285,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_FDE_103RRLP_65x43_Mk331_EPR_T_IR: MCC_PMAG_65x43_25_FDE_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk331 EPR IR Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG) - IR Tracer, FDE";
         displayNameShort = "Mk331 EPR";
         descriptionShort = "Mk331 EPR<br/>In the 25rd 6.5x43 PMAG FDE 103gr";
         ammo = "FA_b_65x43_Mk331_EPR_T_IR";
@@ -6294,7 +6294,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_FDE_103RRLP_65x43_XM894_CTEP: MCC_PMAG_65x43_25_FDE_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM894 CTEP";
+        displayName = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG) - FDE";
         displayNameShort = "XM894 CTEP";
         descriptionShort = "XM894 CTEP<br/>In the 25rd 6.5x43 PMAG FDE 103gr";
         ammo = "FA_b_65x43_XM894_CTEP";
@@ -6302,7 +6302,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_FDE_103RRLP_65x43_XM894_CTEP_T_Red: MCC_PMAG_65x43_25_FDE_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM894 CTEP Red Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG) - Red Tracer, FDE";
         displayNameShort = "XM894 CTEP";
         descriptionShort = "XM894 CTEP<br/>In the 25rd 6.5x43 PMAG FDE 103gr";
         ammo = "FA_b_65x43_XM894_CTEP_T_Red";
@@ -6311,7 +6311,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_FDE_103RRLP_65x43_XM894_CTEP_T_Yellow: MCC_PMAG_65x43_25_FDE_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM894 CTEP Yellow Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG) - Yellow Tracer, FDE";
         displayNameShort = "XM894 CTEP";
         descriptionShort = "XM894 CTEP<br/>In the 25rd 6.5x43 PMAG FDE 103gr";
         ammo = "FA_b_65x43_XM894_CTEP_T_Yellow";
@@ -6320,7 +6320,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_FDE_103RRLP_65x43_XM894_CTEP_T_Green: MCC_PMAG_65x43_25_FDE_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM894 CTEP Green Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG) - Green Tracer, FDE";
         displayNameShort = "XM894 CTEP";
         descriptionShort = "XM894 CTEP<br/>In the 25rd 6.5x43 PMAG FDE 103gr";
         ammo = "FA_b_65x43_XM894_CTEP_T_Green";
@@ -6329,7 +6329,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_FDE_103RRLP_65x43_XM894_CTEP_T_White: MCC_PMAG_65x43_25_FDE_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM894 CTEP White Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG) - White Tracer, FDE";
         displayNameShort = "XM894 CTEP";
         descriptionShort = "XM894 CTEP<br/>In the 25rd 6.5x43 PMAG FDE 103gr";
         ammo = "FA_b_65x43_XM894_CTEP_T_White";
@@ -6338,7 +6338,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_FDE_103RRLP_65x43_XM894_CTEP_T_Blue: MCC_PMAG_65x43_25_FDE_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM894 CTEP Blue Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG) - Blue Tracer, FDE";
         displayNameShort = "XM894 CTEP";
         descriptionShort = "XM894 CTEP<br/>In the 25rd 6.5x43 PMAG FDE 103gr";
         ammo = "FA_b_65x43_XM894_CTEP_T_Blue";
@@ -6347,7 +6347,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_FDE_103RRLP_65x43_XM894_CTEP_T_Orange: MCC_PMAG_65x43_25_FDE_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM894 CTEP Orange Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG) - Orange Tracer, FDE";
         displayNameShort = "XM894 CTEP";
         descriptionShort = "XM894 CTEP<br/>In the 25rd 6.5x43 PMAG FDE 103gr";
         ammo = "FA_b_65x43_XM894_CTEP_T_Orange";
@@ -6356,7 +6356,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_65x43_25_FDE_103RRLP_65x43_XM894_CTEP_T_IR: MCC_PMAG_65x43_25_FDE_103RRLP {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd XM894 CTEP IR Tracer";
+        displayName = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG) - IR Tracer, FDE";
         displayNameShort = "XM894 CTEP";
         descriptionShort = "XM894 CTEP<br/>In the 25rd 6.5x43 PMAG FDE 103gr";
         ammo = "FA_b_65x43_XM894_CTEP_T_IR";
@@ -6365,7 +6365,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_68SPC_25_110VMAX_68_Mk334_TC: MCC_PMAG_68SPC_25_110VMAX {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk334 TC";
+        displayName = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG)";
         displayNameShort = "Mk334 TC";
         descriptionShort = "Mk334 TC<br/>In the 25rd 6.8SPC PMAG 110gr V-Max";
         ammo = "FA_b_68_Mk334_TC";
@@ -6373,7 +6373,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_68SPC_25_110VMAX_68_Mk334_TC_T_Red: MCC_PMAG_68SPC_25_110VMAX {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk334 TC Red Tracer";
+        displayName = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG) - Red Tracer";
         displayNameShort = "Mk334 TC";
         descriptionShort = "Mk334 TC<br/>In the 25rd 6.8SPC PMAG 110gr V-Max";
         ammo = "FA_b_68_Mk334_TC_T_Red";
@@ -6382,7 +6382,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_68SPC_25_110VMAX_68_Mk334_TC_T_Yellow: MCC_PMAG_68SPC_25_110VMAX {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk334 TC Yellow Tracer";
+        displayName = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG) - Yellow Tracer";
         displayNameShort = "Mk334 TC";
         descriptionShort = "Mk334 TC<br/>In the 25rd 6.8SPC PMAG 110gr V-Max";
         ammo = "FA_b_68_Mk334_TC_T_Yellow";
@@ -6391,7 +6391,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_68SPC_25_110VMAX_68_Mk334_TC_T_Green: MCC_PMAG_68SPC_25_110VMAX {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk334 TC Green Tracer";
+        displayName = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG) - Green Tracer";
         displayNameShort = "Mk334 TC";
         descriptionShort = "Mk334 TC<br/>In the 25rd 6.8SPC PMAG 110gr V-Max";
         ammo = "FA_b_68_Mk334_TC_T_Green";
@@ -6400,7 +6400,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_68SPC_25_110VMAX_68_Mk334_TC_T_White: MCC_PMAG_68SPC_25_110VMAX {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk334 TC White Tracer";
+        displayName = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG) - White Tracer";
         displayNameShort = "Mk334 TC";
         descriptionShort = "Mk334 TC<br/>In the 25rd 6.8SPC PMAG 110gr V-Max";
         ammo = "FA_b_68_Mk334_TC_T_White";
@@ -6409,7 +6409,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_68SPC_25_110VMAX_68_Mk334_TC_T_Blue: MCC_PMAG_68SPC_25_110VMAX {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk334 TC Blue Tracer";
+        displayName = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG) - Blue Tracer";
         displayNameShort = "Mk334 TC";
         descriptionShort = "Mk334 TC<br/>In the 25rd 6.8SPC PMAG 110gr V-Max";
         ammo = "FA_b_68_Mk334_TC_T_Blue";
@@ -6418,7 +6418,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_68SPC_25_110VMAX_68_Mk334_TC_T_Orange: MCC_PMAG_68SPC_25_110VMAX {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk334 TC Orange Tracer";
+        displayName = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG) - Orange Tracer";
         displayNameShort = "Mk334 TC";
         descriptionShort = "Mk334 TC<br/>In the 25rd 6.8SPC PMAG 110gr V-Max";
         ammo = "FA_b_68_Mk334_TC_T_Orange";
@@ -6427,7 +6427,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_68SPC_25_110VMAX_68_Mk334_TC_T_IR: MCC_PMAG_68SPC_25_110VMAX {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk334 TC IR Tracer";
+        displayName = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG) - IR Tracer";
         displayNameShort = "Mk334 TC";
         descriptionShort = "Mk334 TC<br/>In the 25rd 6.8SPC PMAG 110gr V-Max";
         ammo = "FA_b_68_Mk334_TC_T_IR";
@@ -6436,7 +6436,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_68SPC_25_FDE_110VMAX_68_Mk334_TC: MCC_PMAG_68SPC_25_FDE_110VMAX {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk334 TC";
+        displayName = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG) - FDE";
         displayNameShort = "Mk334 TC";
         descriptionShort = "Mk334 TC<br/>In the 25rd 6.8SPC PMAG FDE 110gr V-Max";
         ammo = "FA_b_68_Mk334_TC";
@@ -6444,7 +6444,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_68SPC_25_FDE_110VMAX_68_Mk334_TC_T_Red: MCC_PMAG_68SPC_25_FDE_110VMAX {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk334 TC Red Tracer";
+        displayName = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG) - Red Tracer, FDE";
         displayNameShort = "Mk334 TC";
         descriptionShort = "Mk334 TC<br/>In the 25rd 6.8SPC PMAG FDE 110gr V-Max";
         ammo = "FA_b_68_Mk334_TC_T_Red";
@@ -6453,7 +6453,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_68SPC_25_FDE_110VMAX_68_Mk334_TC_T_Yellow: MCC_PMAG_68SPC_25_FDE_110VMAX {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk334 TC Yellow Tracer";
+        displayName = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG) - Yellow Tracer, FDE";
         displayNameShort = "Mk334 TC";
         descriptionShort = "Mk334 TC<br/>In the 25rd 6.8SPC PMAG FDE 110gr V-Max";
         ammo = "FA_b_68_Mk334_TC_T_Yellow";
@@ -6462,7 +6462,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_68SPC_25_FDE_110VMAX_68_Mk334_TC_T_Green: MCC_PMAG_68SPC_25_FDE_110VMAX {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk334 TC Green Tracer";
+        displayName = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG) - Green Tracer, FDE";
         displayNameShort = "Mk334 TC";
         descriptionShort = "Mk334 TC<br/>In the 25rd 6.8SPC PMAG FDE 110gr V-Max";
         ammo = "FA_b_68_Mk334_TC_T_Green";
@@ -6471,7 +6471,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_68SPC_25_FDE_110VMAX_68_Mk334_TC_T_White: MCC_PMAG_68SPC_25_FDE_110VMAX {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk334 TC White Tracer";
+        displayName = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG) - White Tracer, FDE";
         displayNameShort = "Mk334 TC";
         descriptionShort = "Mk334 TC<br/>In the 25rd 6.8SPC PMAG FDE 110gr V-Max";
         ammo = "FA_b_68_Mk334_TC_T_White";
@@ -6480,7 +6480,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_68SPC_25_FDE_110VMAX_68_Mk334_TC_T_Blue: MCC_PMAG_68SPC_25_FDE_110VMAX {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk334 TC Blue Tracer";
+        displayName = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG) - Blue Tracer, FDE";
         displayNameShort = "Mk334 TC";
         descriptionShort = "Mk334 TC<br/>In the 25rd 6.8SPC PMAG FDE 110gr V-Max";
         ammo = "FA_b_68_Mk334_TC_T_Blue";
@@ -6489,7 +6489,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_68SPC_25_FDE_110VMAX_68_Mk334_TC_T_Orange: MCC_PMAG_68SPC_25_FDE_110VMAX {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk334 TC Orange Tracer";
+        displayName = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG) - Orange Tracer, FDE";
         displayNameShort = "Mk334 TC";
         descriptionShort = "Mk334 TC<br/>In the 25rd 6.8SPC PMAG FDE 110gr V-Max";
         ammo = "FA_b_68_Mk334_TC_T_Orange";
@@ -6498,7 +6498,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_68SPC_25_FDE_110VMAX_68_Mk334_TC_T_IR: MCC_PMAG_68SPC_25_FDE_110VMAX {
         author = QAUTHOR;
-        displayName = "[Ghost] 25Rnd Mk334 TC IR Tracer";
+        displayName = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG) - IR Tracer, FDE";
         displayNameShort = "Mk334 TC";
         descriptionShort = "Mk334 TC<br/>In the 25rd 6.8SPC PMAG FDE 110gr V-Max";
         ammo = "FA_b_68_Mk334_TC_T_IR";
@@ -6507,7 +6507,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk335: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG) - FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk335";
@@ -6515,7 +6515,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk335_T_Red: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG) - Red Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk335_T_Red";
@@ -6524,7 +6524,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk335_T_Yellow: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG) - Yellow Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk335_T_Yellow";
@@ -6533,7 +6533,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk335_T_Green: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG) - Green Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk335_T_Green";
@@ -6542,7 +6542,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk335_T_White: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG) - White Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk335_T_White";
@@ -6551,7 +6551,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk335_T_Blue: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG) - Blue Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk335_T_Blue";
@@ -6560,7 +6560,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk335_T_Orange: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG) - Orange Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk335_T_Orange";
@@ -6569,7 +6569,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk335_T_IR: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG) - IR Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk335_T_IR";
@@ -6578,7 +6578,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk336: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG) - FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk336";
@@ -6586,7 +6586,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk336_T_Red: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG) - Red Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk336_T_Red";
@@ -6595,7 +6595,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk336_T_Yellow: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG) - Yellow Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk336_T_Yellow";
@@ -6604,7 +6604,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk336_T_Green: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG) - Green Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk336_T_Green";
@@ -6613,7 +6613,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk336_T_White: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG) - White Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk336_T_White";
@@ -6622,7 +6622,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk336_T_Blue: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG) - Blue Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk336_T_Blue";
@@ -6631,7 +6631,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk336_T_Orange: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG) - Orange Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk336_T_Orange";
@@ -6640,7 +6640,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk336_T_IR: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG) - IR Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk336_T_IR";
@@ -6649,7 +6649,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk337: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG) - FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk337";
@@ -6657,7 +6657,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk337_T_Red: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG) - Red Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk337_T_Red";
@@ -6666,7 +6666,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk337_T_Yellow: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG) - Yellow Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk337_T_Yellow";
@@ -6675,7 +6675,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk337_T_Green: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG) - Green Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk337_T_Green";
@@ -6684,7 +6684,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk337_T_White: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG) - White Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk337_T_White";
@@ -6693,7 +6693,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk337_T_Blue: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG) - Blue Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk337_T_Blue";
@@ -6702,7 +6702,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk337_T_Orange: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG) - Orange Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk337_T_Orange";
@@ -6711,7 +6711,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk337_T_IR: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG) - IR Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk337_T_IR";
@@ -6720,7 +6720,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk342_Sub: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG) - FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk342_Sub";
@@ -6728,7 +6728,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk342_Sub_T_Red: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG) - Red Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk342_Sub_T_Red";
@@ -6737,7 +6737,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk342_Sub_T_Yellow: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG) - Yellow Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk342_Sub_T_Yellow";
@@ -6746,7 +6746,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk342_Sub_T_Green: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG) - Green Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk342_Sub_T_Green";
@@ -6755,7 +6755,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk342_Sub_T_White: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG) - White Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk342_Sub_T_White";
@@ -6764,7 +6764,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk342_Sub_T_Blue: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG) - Blue Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk342_Sub_T_Blue";
@@ -6773,7 +6773,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk342_Sub_T_Orange: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG) - Orange Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk342_Sub_T_Orange";
@@ -6782,7 +6782,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk342_Sub_T_IR: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG) - IR Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk342_Sub_T_IR";
@@ -6791,7 +6791,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk343_Sub: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG) - FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk343_Sub";
@@ -6799,7 +6799,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk343_Sub_T_Red: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG) - Red Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk343_Sub_T_Red";
@@ -6808,7 +6808,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk343_Sub_T_Yellow: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG) - Yellow Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk343_Sub_T_Yellow";
@@ -6817,7 +6817,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk343_Sub_T_Green: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG) - Green Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk343_Sub_T_Green";
@@ -6826,7 +6826,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk343_Sub_T_White: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG) - White Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk343_Sub_T_White";
@@ -6835,7 +6835,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk343_Sub_T_Blue: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG) - Blue Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk343_Sub_T_Blue";
@@ -6844,7 +6844,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk343_Sub_T_Orange: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG) - Orange Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk343_Sub_T_Orange";
@@ -6853,7 +6853,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk343_Sub_T_IR: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG) - IR Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk343_Sub_T_IR";
@@ -6862,7 +6862,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk341_SubAP: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG) - FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk341_SubAP";
@@ -6870,7 +6870,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk341_SubAP_T_Red: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG) - Red Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_Red";
@@ -6879,7 +6879,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk341_SubAP_T_Yellow: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG) - Yellow Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_Yellow";
@@ -6888,7 +6888,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk341_SubAP_T_Green: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG) - Green Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_Green";
@@ -6897,7 +6897,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk341_SubAP_T_White: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG) - White Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_White";
@@ -6906,7 +6906,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk341_SubAP_T_Blue: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG) - Blue Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_Blue";
@@ -6915,7 +6915,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk341_SubAP_T_Orange: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG) - Orange Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_Orange";
@@ -6924,7 +6924,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_Mk341_SubAP_T_IR: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG) - IR Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_IR";
@@ -6933,7 +6933,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_XM345_SubAP2: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG) - FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_XM345_SubAP2";
@@ -6941,7 +6941,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_XM345_SubAP2_T_Red: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG) - Red Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_Red";
@@ -6950,7 +6950,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_XM345_SubAP2_T_Yellow: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG) - Yellow Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_Yellow";
@@ -6959,7 +6959,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_XM345_SubAP2_T_Green: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG) - Green Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_Green";
@@ -6968,7 +6968,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_XM345_SubAP2_T_White: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG) - White Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_White";
@@ -6977,7 +6977,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_XM345_SubAP2_T_Blue: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG) - Blue Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_Blue";
@@ -6986,7 +6986,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_XM345_SubAP2_T_Orange: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG) - Orange Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_Orange";
@@ -6995,7 +6995,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_FDE_300_30_125OTM_300_XM345_SubAP2_T_IR: MCC_PMAG_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG) - IR Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK PMAG FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_IR";
@@ -7004,7 +7004,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_Mk327_HV: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1)";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_Mk327_HV";
@@ -7012,7 +7012,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_Mk327_HV_T_Red: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1) - Red Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -7021,7 +7021,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_Mk327_HV_T_Yellow: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1) - Yellow Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -7030,7 +7030,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_Mk327_HV_T_Green: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1) - Green Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -7039,7 +7039,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_Mk327_HV_T_White: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1) - White Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -7048,7 +7048,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_Mk327_HV_T_Blue: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1) - Blue Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -7057,7 +7057,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_Mk327_HV_T_Orange: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1) - Orange Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -7066,7 +7066,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_Mk327_HV_T_IR: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1) - IR Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -7075,7 +7075,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_XM891_CTEP: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1)";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_XM891_CTEP";
@@ -7083,7 +7083,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_XM891_CTEP_T_Red: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1) - Red Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -7092,7 +7092,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_XM891_CTEP_T_Yellow: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1) - Yellow Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -7101,7 +7101,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_XM891_CTEP_T_Green: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1) - Green Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -7110,7 +7110,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_XM891_CTEP_T_White: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1) - White Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -7119,7 +7119,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_XM891_CTEP_T_Blue: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1) - Blue Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -7128,7 +7128,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_XM891_CTEP_T_Orange: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1) - Orange Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -7137,7 +7137,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_XM891_CTEP_T_IR: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1) - IR Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -7146,7 +7146,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_Mk332_AP: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1)";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_Mk332_AP";
@@ -7154,7 +7154,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_Mk332_AP_T_Red: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1) - Red Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -7163,7 +7163,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_Mk332_AP_T_Yellow: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1) - Yellow Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -7172,7 +7172,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_Mk332_AP_T_Green: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1) - Green Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -7181,7 +7181,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_Mk332_AP_T_White: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1) - White Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -7190,7 +7190,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_Mk332_AP_T_Blue: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1) - Blue Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -7199,7 +7199,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_Mk332_AP_T_Orange: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1) - Orange Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -7208,7 +7208,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_30_M855_556_Mk332_AP_T_IR: MCC_PMAG_G1_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1) - IR Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G1";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -7217,7 +7217,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_Mk327_HV: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1) - FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_Mk327_HV";
@@ -7225,7 +7225,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_Mk327_HV_T_Red: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1) - Red Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -7234,7 +7234,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_Mk327_HV_T_Yellow: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1) - Yellow Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -7243,7 +7243,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_Mk327_HV_T_Green: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1) - Green Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -7252,7 +7252,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_Mk327_HV_T_White: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1) - White Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -7261,7 +7261,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_Mk327_HV_T_Blue: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1) - Blue Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -7270,7 +7270,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_Mk327_HV_T_Orange: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1) - Orange Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -7279,7 +7279,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_Mk327_HV_T_IR: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1) - IR Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -7288,7 +7288,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_XM891_CTEP: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1) - FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_XM891_CTEP";
@@ -7296,7 +7296,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_XM891_CTEP_T_Red: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1) - Red Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -7305,7 +7305,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_XM891_CTEP_T_Yellow: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1) - Yellow Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -7314,7 +7314,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_XM891_CTEP_T_Green: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1) - Green Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -7323,7 +7323,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_XM891_CTEP_T_White: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1) - White Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -7332,7 +7332,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_XM891_CTEP_T_Blue: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1) - Blue Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -7341,7 +7341,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_XM891_CTEP_T_Orange: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1) - Orange Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -7350,7 +7350,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_XM891_CTEP_T_IR: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1) - IR Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -7359,7 +7359,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_Mk332_AP: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1) - FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_Mk332_AP";
@@ -7367,7 +7367,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_Mk332_AP_T_Red: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1) - Red Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -7376,7 +7376,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_Mk332_AP_T_Yellow: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1) - Yellow Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -7385,7 +7385,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_Mk332_AP_T_Green: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1) - Green Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -7394,7 +7394,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_Mk332_AP_T_White: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1) - White Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -7403,7 +7403,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_Mk332_AP_T_Blue: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1) - Blue Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -7412,7 +7412,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_Mk332_AP_T_Orange: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1) - Orange Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -7421,7 +7421,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_G1_556_FDE_30_M855_556_Mk332_AP_T_IR: MCC_PMAG_G1_556_FDE_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1) - IR Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 PMAG G1 FDE";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -7430,7 +7430,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk335: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk335";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI)";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk335";
@@ -7438,7 +7438,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk335_T_Red: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk335 Red Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI) - Red Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk335_T_Red";
@@ -7447,7 +7447,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk335_T_Yellow: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk335 Yellow Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI) - Yellow Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk335_T_Yellow";
@@ -7456,7 +7456,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk335_T_Green: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk335 Green Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI) - Green Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk335_T_Green";
@@ -7465,7 +7465,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk335_T_White: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk335 White Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI) - White Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk335_T_White";
@@ -7474,7 +7474,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk335_T_Blue: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk335 Blue Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI) - Blue Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk335_T_Blue";
@@ -7483,7 +7483,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk335_T_Orange: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk335 Orange Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI) - Orange Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk335_T_Orange";
@@ -7492,7 +7492,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk335_T_IR: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk335 IR Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI) - IR Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk335_T_IR";
@@ -7501,7 +7501,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk336: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk336";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI)";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk336";
@@ -7509,7 +7509,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk336_T_Red: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk336 Red Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI) - Red Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk336_T_Red";
@@ -7518,7 +7518,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk336_T_Yellow: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk336 Yellow Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI) - Yellow Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk336_T_Yellow";
@@ -7527,7 +7527,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk336_T_Green: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk336 Green Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI) - Green Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk336_T_Green";
@@ -7536,7 +7536,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk336_T_White: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk336 White Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI) - White Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk336_T_White";
@@ -7545,7 +7545,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk336_T_Blue: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk336 Blue Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI) - Blue Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk336_T_Blue";
@@ -7554,7 +7554,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk336_T_Orange: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk336 Orange Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI) - Orange Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk336_T_Orange";
@@ -7563,7 +7563,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk336_T_IR: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk336 IR Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI) - IR Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk336_T_IR";
@@ -7572,7 +7572,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk337: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk337";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI)";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk337";
@@ -7580,7 +7580,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk337_T_Red: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk337 Red Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI) - Red Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk337_T_Red";
@@ -7589,7 +7589,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk337_T_Yellow: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk337 Yellow Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI) - Yellow Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk337_T_Yellow";
@@ -7598,7 +7598,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk337_T_Green: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk337 Green Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI) - Green Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk337_T_Green";
@@ -7607,7 +7607,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk337_T_White: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk337 White Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI) - White Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk337_T_White";
@@ -7616,7 +7616,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk337_T_Blue: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk337 Blue Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI) - Blue Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk337_T_Blue";
@@ -7625,7 +7625,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk337_T_Orange: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk337 Orange Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI) - Orange Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk337_T_Orange";
@@ -7634,7 +7634,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk337_T_IR: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk337 IR Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI) - IR Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk337_T_IR";
@@ -7643,7 +7643,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk342_Sub: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk342 Sub";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI)";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk342_Sub";
@@ -7651,7 +7651,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk342_Sub_T_Red: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk342 Sub Red Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI) - Red Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk342_Sub_T_Red";
@@ -7660,7 +7660,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk342_Sub_T_Yellow: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk342 Sub Yellow Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI) - Yellow Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk342_Sub_T_Yellow";
@@ -7669,7 +7669,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk342_Sub_T_Green: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk342 Sub Green Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI) - Green Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk342_Sub_T_Green";
@@ -7678,7 +7678,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk342_Sub_T_White: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk342 Sub White Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI) - White Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk342_Sub_T_White";
@@ -7687,7 +7687,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk342_Sub_T_Blue: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk342 Sub Blue Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI) - Blue Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk342_Sub_T_Blue";
@@ -7696,7 +7696,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk342_Sub_T_Orange: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk342 Sub Orange Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI) - Orange Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk342_Sub_T_Orange";
@@ -7705,7 +7705,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk342_Sub_T_IR: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk342 Sub IR Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI) - IR Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk342_Sub_T_IR";
@@ -7714,7 +7714,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk343_Sub: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk343 Sub";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI)";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk343_Sub";
@@ -7722,7 +7722,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk343_Sub_T_Red: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk343 Sub Red Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI) - Red Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk343_Sub_T_Red";
@@ -7731,7 +7731,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk343_Sub_T_Yellow: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk343 Sub Yellow Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI) - Yellow Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk343_Sub_T_Yellow";
@@ -7740,7 +7740,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk343_Sub_T_Green: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk343 Sub Green Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI) - Green Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk343_Sub_T_Green";
@@ -7749,7 +7749,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk343_Sub_T_White: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk343 Sub White Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI) - White Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk343_Sub_T_White";
@@ -7758,7 +7758,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk343_Sub_T_Blue: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk343 Sub Blue Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI) - Blue Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk343_Sub_T_Blue";
@@ -7767,7 +7767,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk343_Sub_T_Orange: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk343 Sub Orange Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI) - Orange Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk343_Sub_T_Orange";
@@ -7776,7 +7776,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk343_Sub_T_IR: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk343 Sub IR Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI) - IR Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk343_Sub_T_IR";
@@ -7785,7 +7785,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk341_SubAP: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk341 SubAP";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI)";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk341_SubAP";
@@ -7793,7 +7793,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk341_SubAP_T_Red: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk341 SubAP Red Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI) - Red Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk341_SubAP_T_Red";
@@ -7802,7 +7802,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk341_SubAP_T_Yellow: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk341 SubAP Yellow Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI) - Yellow Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk341_SubAP_T_Yellow";
@@ -7811,7 +7811,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk341_SubAP_T_Green: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk341 SubAP Green Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI) - Green Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk341_SubAP_T_Green";
@@ -7820,7 +7820,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk341_SubAP_T_White: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk341 SubAP White Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI) - White Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk341_SubAP_T_White";
@@ -7829,7 +7829,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk341_SubAP_T_Blue: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk341 SubAP Blue Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI) - Blue Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk341_SubAP_T_Blue";
@@ -7838,7 +7838,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk341_SubAP_T_Orange: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk341 SubAP Orange Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI) - Orange Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk341_SubAP_T_Orange";
@@ -7847,7 +7847,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_Mk341_SubAP_T_IR: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk341 SubAP IR Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI) - IR Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_Mk341_SubAP_T_IR";
@@ -7856,7 +7856,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_XM345_SubAP2: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM345 SubAP2";
+        displayName = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI)";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_XM345_SubAP2";
@@ -7864,7 +7864,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_XM345_SubAP2_T_Red: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM345 SubAP2 Red Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI) - Red Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_XM345_SubAP2_T_Red";
@@ -7873,7 +7873,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_XM345_SubAP2_T_Yellow: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM345 SubAP2 Yellow Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI) - Yellow Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_XM345_SubAP2_T_Yellow";
@@ -7882,7 +7882,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_XM345_SubAP2_T_Green: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM345 SubAP2 Green Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI) - Green Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_XM345_SubAP2_T_Green";
@@ -7891,7 +7891,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_XM345_SubAP2_T_White: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM345 SubAP2 White Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI) - White Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_XM345_SubAP2_T_White";
@@ -7900,7 +7900,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_XM345_SubAP2_T_Blue: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM345 SubAP2 Blue Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI) - Blue Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_XM345_SubAP2_T_Blue";
@@ -7909,7 +7909,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_XM345_SubAP2_T_Orange: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM345 SubAP2 Orange Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI) - Orange Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_XM345_SubAP2_T_Orange";
@@ -7918,7 +7918,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_300_35_125OTM_300_XM345_SubAP2_T_IR: MCC_PMAG_TTI_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM345 SubAP2 IR Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI) - IR Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 35rd .300BLK PMAG TTI";
         ammo = "FA_b_300_XM345_SubAP2_T_IR";
@@ -7927,7 +7927,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_Mk327_HV: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk327 HV";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI)";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_Mk327_HV";
@@ -7935,7 +7935,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_Mk327_HV_T_Red: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI) - Red Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -7944,7 +7944,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_Mk327_HV_T_Yellow: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI) - Yellow Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -7953,7 +7953,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_Mk327_HV_T_Green: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI) - Green Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -7962,7 +7962,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_Mk327_HV_T_White: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI) - White Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -7971,7 +7971,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_Mk327_HV_T_Blue: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI) - Blue Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -7980,7 +7980,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_Mk327_HV_T_Orange: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI) - Orange Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -7989,7 +7989,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_Mk327_HV_T_IR: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI) - IR Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -7998,7 +7998,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_XM891_CTEP: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM891 CTEP";
+        displayName = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI)";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_XM891_CTEP";
@@ -8006,7 +8006,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_XM891_CTEP_T_Red: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI) - Red Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -8015,7 +8015,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_XM891_CTEP_T_Yellow: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI) - Yellow Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -8024,7 +8024,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_XM891_CTEP_T_Green: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI) - Green Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -8033,7 +8033,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_XM891_CTEP_T_White: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI) - White Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -8042,7 +8042,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_XM891_CTEP_T_Blue: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI) - Blue Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -8051,7 +8051,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_XM891_CTEP_T_Orange: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI) - Orange Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -8060,7 +8060,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_XM891_CTEP_T_IR: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI) - IR Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -8069,7 +8069,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_Mk332_AP: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk332 AP";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI)";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_Mk332_AP";
@@ -8077,7 +8077,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_Mk332_AP_T_Red: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI) - Red Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -8086,7 +8086,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_Mk332_AP_T_Yellow: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI) - Yellow Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -8095,7 +8095,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_Mk332_AP_T_Green: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI) - Green Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -8104,7 +8104,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_Mk332_AP_T_White: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI) - White Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -8113,7 +8113,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_Mk332_AP_T_Blue: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI) - Blue Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -8122,7 +8122,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_Mk332_AP_T_Orange: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI) - Orange Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -8131,7 +8131,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_35_M855_556_Mk332_AP_T_IR: MCC_PMAG_TTI_556_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI) - IR Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 35rd 5.56 PMAG G3 TTI";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -8140,7 +8140,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_Mk327_HV: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk327 HV";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI) - FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_Mk327_HV";
@@ -8148,7 +8148,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_Mk327_HV_T_Red: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI) - Red Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -8157,7 +8157,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_Mk327_HV_T_Yellow: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI) - Yellow Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -8166,7 +8166,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_Mk327_HV_T_Green: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI) - Green Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -8175,7 +8175,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_Mk327_HV_T_White: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI) - White Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -8184,7 +8184,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_Mk327_HV_T_Blue: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI) - Blue Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -8193,7 +8193,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_Mk327_HV_T_Orange: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI) - Orange Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -8202,7 +8202,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_Mk327_HV_T_IR: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI) - IR Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -8211,7 +8211,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_XM891_CTEP: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM891 CTEP";
+        displayName = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI) - FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_XM891_CTEP";
@@ -8219,7 +8219,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_XM891_CTEP_T_Red: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI) - Red Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -8228,7 +8228,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_XM891_CTEP_T_Yellow: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI) - Yellow Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -8237,7 +8237,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_XM891_CTEP_T_Green: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI) - Green Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -8246,7 +8246,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_XM891_CTEP_T_White: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI) - White Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -8255,7 +8255,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_XM891_CTEP_T_Blue: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI) - Blue Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -8264,7 +8264,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_XM891_CTEP_T_Orange: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI) - Orange Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -8273,7 +8273,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_XM891_CTEP_T_IR: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI) - IR Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -8282,7 +8282,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_Mk332_AP: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk332 AP";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI) - FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_Mk332_AP";
@@ -8290,7 +8290,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_Mk332_AP_T_Red: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI) - Red Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -8299,7 +8299,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_Mk332_AP_T_Yellow: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI) - Yellow Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -8308,7 +8308,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_Mk332_AP_T_Green: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI) - Green Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -8317,7 +8317,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_Mk332_AP_T_White: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI) - White Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -8326,7 +8326,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_Mk332_AP_T_Blue: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI) - Blue Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -8335,7 +8335,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_Mk332_AP_T_Orange: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI) - Orange Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -8344,7 +8344,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_556_FDE_35_M855_556_Mk332_AP_T_IR: MCC_PMAG_TTI_556_FDE_35_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI) - IR Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 35rd 5.56 PMAG G3 TTI FDE";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -8353,7 +8353,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk335: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk335";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI) - FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk335";
@@ -8361,7 +8361,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk335_T_Red: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk335 Red Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI) - Red Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk335_T_Red";
@@ -8370,7 +8370,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk335_T_Yellow: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk335 Yellow Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI) - Yellow Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk335_T_Yellow";
@@ -8379,7 +8379,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk335_T_Green: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk335 Green Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI) - Green Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk335_T_Green";
@@ -8388,7 +8388,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk335_T_White: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk335 White Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI) - White Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk335_T_White";
@@ -8397,7 +8397,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk335_T_Blue: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk335 Blue Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI) - Blue Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk335_T_Blue";
@@ -8406,7 +8406,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk335_T_Orange: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk335 Orange Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI) - Orange Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk335_T_Orange";
@@ -8415,7 +8415,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk335_T_IR: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk335 IR Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI) - IR Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk335_T_IR";
@@ -8424,7 +8424,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk336: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk336";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI) - FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk336";
@@ -8432,7 +8432,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk336_T_Red: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk336 Red Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI) - Red Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk336_T_Red";
@@ -8441,7 +8441,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk336_T_Yellow: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk336 Yellow Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI) - Yellow Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk336_T_Yellow";
@@ -8450,7 +8450,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk336_T_Green: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk336 Green Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI) - Green Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk336_T_Green";
@@ -8459,7 +8459,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk336_T_White: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk336 White Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI) - White Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk336_T_White";
@@ -8468,7 +8468,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk336_T_Blue: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk336 Blue Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI) - Blue Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk336_T_Blue";
@@ -8477,7 +8477,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk336_T_Orange: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk336 Orange Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI) - Orange Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk336_T_Orange";
@@ -8486,7 +8486,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk336_T_IR: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk336 IR Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI) - IR Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk336_T_IR";
@@ -8495,7 +8495,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk337: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk337";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI) - FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk337";
@@ -8503,7 +8503,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk337_T_Red: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk337 Red Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI) - Red Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk337_T_Red";
@@ -8512,7 +8512,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk337_T_Yellow: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk337 Yellow Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI) - Yellow Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk337_T_Yellow";
@@ -8521,7 +8521,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk337_T_Green: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk337 Green Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI) - Green Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk337_T_Green";
@@ -8530,7 +8530,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk337_T_White: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk337 White Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI) - White Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk337_T_White";
@@ -8539,7 +8539,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk337_T_Blue: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk337 Blue Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI) - Blue Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk337_T_Blue";
@@ -8548,7 +8548,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk337_T_Orange: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk337 Orange Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI) - Orange Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk337_T_Orange";
@@ -8557,7 +8557,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk337_T_IR: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk337 IR Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI) - IR Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk337_T_IR";
@@ -8566,7 +8566,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk342_Sub: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk342 Sub";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI) - FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk342_Sub";
@@ -8574,7 +8574,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk342_Sub_T_Red: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk342 Sub Red Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI) - Red Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk342_Sub_T_Red";
@@ -8583,7 +8583,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk342_Sub_T_Yellow: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk342 Sub Yellow Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI) - Yellow Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk342_Sub_T_Yellow";
@@ -8592,7 +8592,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk342_Sub_T_Green: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk342 Sub Green Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI) - Green Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk342_Sub_T_Green";
@@ -8601,7 +8601,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk342_Sub_T_White: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk342 Sub White Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI) - White Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk342_Sub_T_White";
@@ -8610,7 +8610,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk342_Sub_T_Blue: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk342 Sub Blue Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI) - Blue Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk342_Sub_T_Blue";
@@ -8619,7 +8619,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk342_Sub_T_Orange: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk342 Sub Orange Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI) - Orange Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk342_Sub_T_Orange";
@@ -8628,7 +8628,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk342_Sub_T_IR: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk342 Sub IR Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI) - IR Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk342_Sub_T_IR";
@@ -8637,7 +8637,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk343_Sub: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk343 Sub";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI) - FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk343_Sub";
@@ -8645,7 +8645,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk343_Sub_T_Red: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk343 Sub Red Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI) - Red Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk343_Sub_T_Red";
@@ -8654,7 +8654,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk343_Sub_T_Yellow: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk343 Sub Yellow Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI) - Yellow Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk343_Sub_T_Yellow";
@@ -8663,7 +8663,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk343_Sub_T_Green: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk343 Sub Green Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI) - Green Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk343_Sub_T_Green";
@@ -8672,7 +8672,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk343_Sub_T_White: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk343 Sub White Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI) - White Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk343_Sub_T_White";
@@ -8681,7 +8681,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk343_Sub_T_Blue: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk343 Sub Blue Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI) - Blue Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk343_Sub_T_Blue";
@@ -8690,7 +8690,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk343_Sub_T_Orange: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk343 Sub Orange Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI) - Orange Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk343_Sub_T_Orange";
@@ -8699,7 +8699,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk343_Sub_T_IR: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk343 Sub IR Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI) - IR Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk343_Sub_T_IR";
@@ -8708,7 +8708,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk341_SubAP: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk341 SubAP";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI) - FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk341_SubAP";
@@ -8716,7 +8716,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk341_SubAP_T_Red: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk341 SubAP Red Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI) - Red Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_Red";
@@ -8725,7 +8725,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk341_SubAP_T_Yellow: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk341 SubAP Yellow Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI) - Yellow Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_Yellow";
@@ -8734,7 +8734,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk341_SubAP_T_Green: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk341 SubAP Green Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI) - Green Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_Green";
@@ -8743,7 +8743,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk341_SubAP_T_White: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk341 SubAP White Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI) - White Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_White";
@@ -8752,7 +8752,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk341_SubAP_T_Blue: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk341 SubAP Blue Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI) - Blue Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_Blue";
@@ -8761,7 +8761,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk341_SubAP_T_Orange: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk341 SubAP Orange Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI) - Orange Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_Orange";
@@ -8770,7 +8770,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_Mk341_SubAP_T_IR: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd Mk341 SubAP IR Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI) - IR Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_IR";
@@ -8779,7 +8779,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_XM345_SubAP2: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM345 SubAP2";
+        displayName = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI) - FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_XM345_SubAP2";
@@ -8787,7 +8787,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_XM345_SubAP2_T_Red: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM345 SubAP2 Red Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI) - Red Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_Red";
@@ -8796,7 +8796,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_XM345_SubAP2_T_Yellow: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM345 SubAP2 Yellow Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI) - Yellow Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_Yellow";
@@ -8805,7 +8805,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_XM345_SubAP2_T_Green: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM345 SubAP2 Green Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI) - Green Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_Green";
@@ -8814,7 +8814,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_XM345_SubAP2_T_White: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM345 SubAP2 White Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI) - White Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_White";
@@ -8823,7 +8823,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_XM345_SubAP2_T_Blue: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM345 SubAP2 Blue Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI) - Blue Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_Blue";
@@ -8832,7 +8832,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_XM345_SubAP2_T_Orange: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM345 SubAP2 Orange Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI) - Orange Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_Orange";
@@ -8841,7 +8841,7 @@ class CfgMagazines {
     };
     class FA_MCC_PMAG_TTI_FDE_300_35_125OTM_300_XM345_SubAP2_T_IR: MCC_PMAG_TTI_FDE_300_35_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 35Rnd XM345 SubAP2 IR Tracer";
+        displayName = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI) - IR Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 35rd .300BLK PMAG TTI FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_IR";
@@ -8850,7 +8850,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7N43: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7N43 Kremen";
+        displayName = "[Ghost] 28Rnd 7.62mm 7N43 (STANAG)";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7N43";
@@ -8858,7 +8858,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7N43_T_Red: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7N43 Kremen Red Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7N43 (STANAG) - Red Tracer";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7N43_T_Red";
@@ -8867,7 +8867,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7N43_T_Yellow: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7N43 Kremen Yellow Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7N43 (STANAG) - Yellow Tracer";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7N43_T_Yellow";
@@ -8876,7 +8876,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7N43_T_Green: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7N43 Kremen Green Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7N43 (STANAG) - Green Tracer";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7N43_T_Green";
@@ -8885,7 +8885,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7N43_T_White: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7N43 Kremen White Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7N43 (STANAG) - White Tracer";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7N43_T_White";
@@ -8894,7 +8894,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7N43_T_Blue: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7N43 Kremen Blue Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7N43 (STANAG) - Blue Tracer";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7N43_T_Blue";
@@ -8903,7 +8903,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7N43_T_Orange: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7N43 Kremen Orange Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7N43 (STANAG) - Orange Tracer";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7N43_T_Orange";
@@ -8912,7 +8912,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7N43_T_IR: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7N43 Kremen IR Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7N43 (STANAG) - IR Tracer";
         displayNameShort = "7.62x39 7N43 Kremen";
         descriptionShort = "7.62x39 7N43 Kremen<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7N43_T_IR";
@@ -8921,7 +8921,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7N47_CT: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7N47 Kremen-2 CT";
+        displayName = "[Ghost] 28Rnd 7.62mm 7N47 CT (STANAG)";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7N47_CT";
@@ -8929,7 +8929,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7N47_CT_T_Red: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7N47 Kremen-2 CT Red Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7N47 CT (STANAG) - Red Tracer";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_Red";
@@ -8938,7 +8938,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7N47_CT_T_Yellow: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7N47 Kremen-2 CT Yellow Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7N47 CT (STANAG) - Yellow Tracer";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_Yellow";
@@ -8947,7 +8947,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7N47_CT_T_Green: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7N47 Kremen-2 CT Green Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7N47 CT (STANAG) - Green Tracer";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_Green";
@@ -8956,7 +8956,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7N47_CT_T_White: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7N47 Kremen-2 CT White Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7N47 CT (STANAG) - White Tracer";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_White";
@@ -8965,7 +8965,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7N47_CT_T_Blue: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7N47 Kremen-2 CT Blue Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7N47 CT (STANAG) - Blue Tracer";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_Blue";
@@ -8974,7 +8974,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7N47_CT_T_Orange: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7N47 Kremen-2 CT Orange Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7N47 CT (STANAG) - Orange Tracer";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_Orange";
@@ -8983,7 +8983,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7N47_CT_T_IR: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7N47 Kremen-2 CT IR Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7N47 CT (STANAG) - IR Tracer";
         displayNameShort = "7.62x39 7N47 Kremen-2 CT";
         descriptionShort = "7.62x39 7N47 Kremen-2 CT<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7N47_CT_T_IR";
@@ -8992,7 +8992,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7U4_Sub: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7U4 Tishina-2 SubAP";
+        displayName = "[Ghost] 28Rnd 7.62mm 7U4 Sub (STANAG)";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7U4_Sub";
@@ -9000,7 +9000,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7U4_Sub_T_Red: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7U4 Tishina-2 SubAP Red Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7U4 Sub (STANAG) - Red Tracer";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_Red";
@@ -9009,7 +9009,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7U4_Sub_T_Yellow: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7U4 Tishina-2 SubAP Yellow Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7U4 Sub (STANAG) - Yellow Tracer";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_Yellow";
@@ -9018,7 +9018,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7U4_Sub_T_Green: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7U4 Tishina-2 SubAP Green Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7U4 Sub (STANAG) - Green Tracer";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_Green";
@@ -9027,7 +9027,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7U4_Sub_T_White: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7U4 Tishina-2 SubAP White Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7U4 Sub (STANAG) - White Tracer";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_White";
@@ -9036,7 +9036,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7U4_Sub_T_Blue: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7U4 Tishina-2 SubAP Blue Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7U4 Sub (STANAG) - Blue Tracer";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_Blue";
@@ -9045,7 +9045,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7U4_Sub_T_Orange: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7U4 Tishina-2 SubAP Orange Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7U4 Sub (STANAG) - Orange Tracer";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_Orange";
@@ -9054,7 +9054,7 @@ class CfgMagazines {
     };
     class FA_MCC_STANAG_762_28_123HP_762x39_7U4_Sub_T_IR: MCC_STANAG_762_28_123HP {
         author = QAUTHOR;
-        displayName = "[Ghost] 28Rnd 7.62x39 7U4 Tishina-2 SubAP IR Tracer";
+        displayName = "[Ghost] 28Rnd 7.62mm 7U4 Sub (STANAG) - IR Tracer";
         displayNameShort = "7.62x39 7U4 Tishina-2 SubAP";
         descriptionShort = "7.62x39 7U4 Tishina-2 SubAP<br/>In the 28rd 7.62x39 STANAG 123gr";
         ammo = "FA_o_762x39_7U4_Sub_T_IR";
@@ -9063,7 +9063,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk335: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (USGI)";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk335";
@@ -9071,7 +9071,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk335_T_Red: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (USGI) - Red Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk335_T_Red";
@@ -9080,7 +9080,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk335_T_Yellow: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (USGI) - Yellow Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk335_T_Yellow";
@@ -9089,7 +9089,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk335_T_Green: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (USGI) - Green Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk335_T_Green";
@@ -9098,7 +9098,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk335_T_White: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (USGI) - White Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk335_T_White";
@@ -9107,7 +9107,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk335_T_Blue: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (USGI) - Blue Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk335_T_Blue";
@@ -9116,7 +9116,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk335_T_Orange: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (USGI) - Orange Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk335_T_Orange";
@@ -9125,7 +9125,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk335_T_IR: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (USGI) - IR Tracer";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk335_T_IR";
@@ -9134,7 +9134,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk336: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (USGI)";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk336";
@@ -9142,7 +9142,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk336_T_Red: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (USGI) - Red Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk336_T_Red";
@@ -9151,7 +9151,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk336_T_Yellow: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (USGI) - Yellow Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk336_T_Yellow";
@@ -9160,7 +9160,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk336_T_Green: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (USGI) - Green Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk336_T_Green";
@@ -9169,7 +9169,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk336_T_White: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (USGI) - White Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk336_T_White";
@@ -9178,7 +9178,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk336_T_Blue: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (USGI) - Blue Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk336_T_Blue";
@@ -9187,7 +9187,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk336_T_Orange: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (USGI) - Orange Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk336_T_Orange";
@@ -9196,7 +9196,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk336_T_IR: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (USGI) - IR Tracer";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk336_T_IR";
@@ -9205,7 +9205,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk337: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (USGI)";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk337";
@@ -9213,7 +9213,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk337_T_Red: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (USGI) - Red Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk337_T_Red";
@@ -9222,7 +9222,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk337_T_Yellow: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (USGI) - Yellow Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk337_T_Yellow";
@@ -9231,7 +9231,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk337_T_Green: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (USGI) - Green Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk337_T_Green";
@@ -9240,7 +9240,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk337_T_White: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (USGI) - White Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk337_T_White";
@@ -9249,7 +9249,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk337_T_Blue: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (USGI) - Blue Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk337_T_Blue";
@@ -9258,7 +9258,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk337_T_Orange: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (USGI) - Orange Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk337_T_Orange";
@@ -9267,7 +9267,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk337_T_IR: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (USGI) - IR Tracer";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk337_T_IR";
@@ -9276,7 +9276,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk342_Sub: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI)";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk342_Sub";
@@ -9284,7 +9284,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk342_Sub_T_Red: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI) - Red Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk342_Sub_T_Red";
@@ -9293,7 +9293,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk342_Sub_T_Yellow: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI) - Yellow Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk342_Sub_T_Yellow";
@@ -9302,7 +9302,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk342_Sub_T_Green: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI) - Green Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk342_Sub_T_Green";
@@ -9311,7 +9311,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk342_Sub_T_White: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI) - White Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk342_Sub_T_White";
@@ -9320,7 +9320,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk342_Sub_T_Blue: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI) - Blue Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk342_Sub_T_Blue";
@@ -9329,7 +9329,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk342_Sub_T_Orange: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI) - Orange Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk342_Sub_T_Orange";
@@ -9338,7 +9338,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk342_Sub_T_IR: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI) - IR Tracer";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk342_Sub_T_IR";
@@ -9347,7 +9347,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk343_Sub: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI)";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk343_Sub";
@@ -9355,7 +9355,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk343_Sub_T_Red: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI) - Red Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk343_Sub_T_Red";
@@ -9364,7 +9364,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk343_Sub_T_Yellow: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI) - Yellow Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk343_Sub_T_Yellow";
@@ -9373,7 +9373,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk343_Sub_T_Green: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI) - Green Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk343_Sub_T_Green";
@@ -9382,7 +9382,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk343_Sub_T_White: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI) - White Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk343_Sub_T_White";
@@ -9391,7 +9391,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk343_Sub_T_Blue: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI) - Blue Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk343_Sub_T_Blue";
@@ -9400,7 +9400,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk343_Sub_T_Orange: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI) - Orange Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk343_Sub_T_Orange";
@@ -9409,7 +9409,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk343_Sub_T_IR: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI) - IR Tracer";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk343_Sub_T_IR";
@@ -9418,7 +9418,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk341_SubAP: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI)";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk341_SubAP";
@@ -9426,7 +9426,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk341_SubAP_T_Red: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI) - Red Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk341_SubAP_T_Red";
@@ -9435,7 +9435,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk341_SubAP_T_Yellow: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI) - Yellow Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk341_SubAP_T_Yellow";
@@ -9444,7 +9444,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk341_SubAP_T_Green: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI) - Green Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk341_SubAP_T_Green";
@@ -9453,7 +9453,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk341_SubAP_T_White: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI) - White Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk341_SubAP_T_White";
@@ -9462,7 +9462,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk341_SubAP_T_Blue: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI) - Blue Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk341_SubAP_T_Blue";
@@ -9471,7 +9471,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk341_SubAP_T_Orange: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI) - Orange Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk341_SubAP_T_Orange";
@@ -9480,7 +9480,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_Mk341_SubAP_T_IR: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI) - IR Tracer";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_Mk341_SubAP_T_IR";
@@ -9489,7 +9489,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_XM345_SubAP2: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI)";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_XM345_SubAP2";
@@ -9497,7 +9497,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_XM345_SubAP2_T_Red: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI) - Red Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_XM345_SubAP2_T_Red";
@@ -9506,7 +9506,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_XM345_SubAP2_T_Yellow: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI) - Yellow Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_XM345_SubAP2_T_Yellow";
@@ -9515,7 +9515,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_XM345_SubAP2_T_Green: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI) - Green Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_XM345_SubAP2_T_Green";
@@ -9524,7 +9524,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_XM345_SubAP2_T_White: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI) - White Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_XM345_SubAP2_T_White";
@@ -9533,7 +9533,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_XM345_SubAP2_T_Blue: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI) - Blue Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_XM345_SubAP2_T_Blue";
@@ -9542,7 +9542,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_XM345_SubAP2_T_Orange: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI) - Orange Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_XM345_SubAP2_T_Orange";
@@ -9551,7 +9551,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_300_30_125OTM_300_XM345_SubAP2_T_IR: MCC_USGI_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI) - IR Tracer";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK USGI";
         ammo = "FA_b_300_XM345_SubAP2_T_IR";
@@ -9560,7 +9560,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_Mk327_HV: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI)";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_Mk327_HV";
@@ -9568,7 +9568,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_Mk327_HV_T_Red: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI) - Red Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -9577,7 +9577,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_Mk327_HV_T_Yellow: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI) - Yellow Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -9586,7 +9586,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_Mk327_HV_T_Green: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI) - Green Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -9595,7 +9595,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_Mk327_HV_T_White: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI) - White Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -9604,7 +9604,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_Mk327_HV_T_Blue: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI) - Blue Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -9613,7 +9613,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_Mk327_HV_T_Orange: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI) - Orange Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -9622,7 +9622,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_Mk327_HV_T_IR: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI) - IR Tracer";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -9631,7 +9631,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_XM891_CTEP: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI)";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_XM891_CTEP";
@@ -9639,7 +9639,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_XM891_CTEP_T_Red: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI) - Red Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -9648,7 +9648,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_XM891_CTEP_T_Yellow: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI) - Yellow Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -9657,7 +9657,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_XM891_CTEP_T_Green: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI) - Green Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -9666,7 +9666,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_XM891_CTEP_T_White: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI) - White Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -9675,7 +9675,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_XM891_CTEP_T_Blue: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI) - Blue Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -9684,7 +9684,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_XM891_CTEP_T_Orange: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI) - Orange Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -9693,7 +9693,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_XM891_CTEP_T_IR: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI) - IR Tracer";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -9702,7 +9702,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_Mk332_AP: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI)";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_Mk332_AP";
@@ -9710,7 +9710,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_Mk332_AP_T_Red: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI) - Red Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -9719,7 +9719,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_Mk332_AP_T_Yellow: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI) - Yellow Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -9728,7 +9728,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_Mk332_AP_T_Green: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI) - Green Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -9737,7 +9737,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_Mk332_AP_T_White: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI) - White Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -9746,7 +9746,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_Mk332_AP_T_Blue: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI) - Blue Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -9755,7 +9755,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_Mk332_AP_T_Orange: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI) - Orange Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -9764,7 +9764,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_556_30_M855_556_Mk332_AP_T_IR: MCC_USGI_556_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI) - IR Tracer";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 USGI";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -9773,7 +9773,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_Mk327_HV: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI) - FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_Mk327_HV";
@@ -9781,7 +9781,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_Mk327_HV_T_Red: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI) - Red Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_Mk327_HV_T_Red";
@@ -9790,7 +9790,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_Mk327_HV_T_Yellow: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI) - Yellow Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_Mk327_HV_T_Yellow";
@@ -9799,7 +9799,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_Mk327_HV_T_Green: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI) - Green Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_Mk327_HV_T_Green";
@@ -9808,7 +9808,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_Mk327_HV_T_White: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI) - White Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_Mk327_HV_T_White";
@@ -9817,7 +9817,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_Mk327_HV_T_Blue: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI) - Blue Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_Mk327_HV_T_Blue";
@@ -9826,7 +9826,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_Mk327_HV_T_Orange: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI) - Orange Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_Mk327_HV_T_Orange";
@@ -9835,7 +9835,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_Mk327_HV_T_IR: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk327 HV IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI) - IR Tracer, FDE";
         displayNameShort = "Mk327 HV";
         descriptionShort = "Mk327 HV<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_Mk327_HV_T_IR";
@@ -9844,7 +9844,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_XM891_CTEP: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI) - FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_XM891_CTEP";
@@ -9852,7 +9852,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_XM891_CTEP_T_Red: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI) - Red Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Red";
@@ -9861,7 +9861,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_XM891_CTEP_T_Yellow: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI) - Yellow Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Yellow";
@@ -9870,7 +9870,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_XM891_CTEP_T_Green: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI) - Green Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Green";
@@ -9879,7 +9879,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_XM891_CTEP_T_White: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI) - White Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_XM891_CTEP_T_White";
@@ -9888,7 +9888,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_XM891_CTEP_T_Blue: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI) - Blue Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Blue";
@@ -9897,7 +9897,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_XM891_CTEP_T_Orange: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI) - Orange Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_XM891_CTEP_T_Orange";
@@ -9906,7 +9906,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_XM891_CTEP_T_IR: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM891 CTEP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI) - IR Tracer, FDE";
         displayNameShort = "XM891 CTEP";
         descriptionShort = "XM891 CTEP<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_XM891_CTEP_T_IR";
@@ -9915,7 +9915,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_Mk332_AP: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI) - FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_Mk332_AP";
@@ -9923,7 +9923,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_Mk332_AP_T_Red: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Red Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI) - Red Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_Mk332_AP_T_Red";
@@ -9932,7 +9932,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_Mk332_AP_T_Yellow: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI) - Yellow Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_Mk332_AP_T_Yellow";
@@ -9941,7 +9941,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_Mk332_AP_T_Green: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Green Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI) - Green Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_Mk332_AP_T_Green";
@@ -9950,7 +9950,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_Mk332_AP_T_White: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP White Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI) - White Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_Mk332_AP_T_White";
@@ -9959,7 +9959,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_Mk332_AP_T_Blue: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Blue Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI) - Blue Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_Mk332_AP_T_Blue";
@@ -9968,7 +9968,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_Mk332_AP_T_Orange: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP Orange Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI) - Orange Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_Mk332_AP_T_Orange";
@@ -9977,7 +9977,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_556_FDE_556_30_M855_556_Mk332_AP_T_IR: MCC_USGI_556_FDE_556_30_M855 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk332 AP IR Tracer";
+        displayName = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI) - IR Tracer, FDE";
         displayNameShort = "Mk332 AP";
         descriptionShort = "Mk332 AP<br/>In the 30rd 5.56 USGI FDE";
         ammo = "FA_b_556_Mk332_AP_T_IR";
@@ -9986,7 +9986,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk335: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (USGI) - FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk335";
@@ -9994,7 +9994,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk335_T_Red: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (USGI) - Red Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk335_T_Red";
@@ -10003,7 +10003,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk335_T_Yellow: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (USGI) - Yellow Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk335_T_Yellow";
@@ -10012,7 +10012,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk335_T_Green: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (USGI) - Green Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk335_T_Green";
@@ -10021,7 +10021,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk335_T_White: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (USGI) - White Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk335_T_White";
@@ -10030,7 +10030,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk335_T_Blue: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (USGI) - Blue Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk335_T_Blue";
@@ -10039,7 +10039,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk335_T_Orange: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (USGI) - Orange Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk335_T_Orange";
@@ -10048,7 +10048,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk335_T_IR: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk335 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk335 (USGI) - IR Tracer, FDE";
         displayNameShort = "Mk335";
         descriptionShort = "Mk335<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk335_T_IR";
@@ -10057,7 +10057,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk336: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (USGI) - FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk336";
@@ -10065,7 +10065,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk336_T_Red: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (USGI) - Red Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk336_T_Red";
@@ -10074,7 +10074,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk336_T_Yellow: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (USGI) - Yellow Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk336_T_Yellow";
@@ -10083,7 +10083,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk336_T_Green: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (USGI) - Green Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk336_T_Green";
@@ -10092,7 +10092,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk336_T_White: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (USGI) - White Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk336_T_White";
@@ -10101,7 +10101,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk336_T_Blue: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (USGI) - Blue Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk336_T_Blue";
@@ -10110,7 +10110,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk336_T_Orange: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (USGI) - Orange Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk336_T_Orange";
@@ -10119,7 +10119,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk336_T_IR: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk336 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk336 (USGI) - IR Tracer, FDE";
         displayNameShort = "Mk336";
         descriptionShort = "Mk336<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk336_T_IR";
@@ -10128,7 +10128,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk337: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (USGI) - FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk337";
@@ -10136,7 +10136,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk337_T_Red: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (USGI) - Red Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk337_T_Red";
@@ -10145,7 +10145,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk337_T_Yellow: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (USGI) - Yellow Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk337_T_Yellow";
@@ -10154,7 +10154,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk337_T_Green: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (USGI) - Green Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk337_T_Green";
@@ -10163,7 +10163,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk337_T_White: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (USGI) - White Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk337_T_White";
@@ -10172,7 +10172,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk337_T_Blue: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (USGI) - Blue Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk337_T_Blue";
@@ -10181,7 +10181,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk337_T_Orange: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (USGI) - Orange Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk337_T_Orange";
@@ -10190,7 +10190,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk337_T_IR: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk337 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk337 (USGI) - IR Tracer, FDE";
         displayNameShort = "Mk337";
         descriptionShort = "Mk337<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk337_T_IR";
@@ -10199,7 +10199,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk342_Sub: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI) - FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk342_Sub";
@@ -10207,7 +10207,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk342_Sub_T_Red: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI) - Red Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk342_Sub_T_Red";
@@ -10216,7 +10216,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk342_Sub_T_Yellow: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI) - Yellow Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk342_Sub_T_Yellow";
@@ -10225,7 +10225,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk342_Sub_T_Green: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI) - Green Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk342_Sub_T_Green";
@@ -10234,7 +10234,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk342_Sub_T_White: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI) - White Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk342_Sub_T_White";
@@ -10243,7 +10243,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk342_Sub_T_Blue: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI) - Blue Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk342_Sub_T_Blue";
@@ -10252,7 +10252,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk342_Sub_T_Orange: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI) - Orange Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk342_Sub_T_Orange";
@@ -10261,7 +10261,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk342_Sub_T_IR: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk342 Sub IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI) - IR Tracer, FDE";
         displayNameShort = "Mk342 Sub";
         descriptionShort = "Mk342 Sub<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk342_Sub_T_IR";
@@ -10270,7 +10270,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk343_Sub: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI) - FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk343_Sub";
@@ -10278,7 +10278,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk343_Sub_T_Red: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI) - Red Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk343_Sub_T_Red";
@@ -10287,7 +10287,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk343_Sub_T_Yellow: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI) - Yellow Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk343_Sub_T_Yellow";
@@ -10296,7 +10296,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk343_Sub_T_Green: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI) - Green Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk343_Sub_T_Green";
@@ -10305,7 +10305,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk343_Sub_T_White: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI) - White Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk343_Sub_T_White";
@@ -10314,7 +10314,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk343_Sub_T_Blue: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI) - Blue Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk343_Sub_T_Blue";
@@ -10323,7 +10323,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk343_Sub_T_Orange: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI) - Orange Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk343_Sub_T_Orange";
@@ -10332,7 +10332,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk343_Sub_T_IR: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk343 Sub IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI) - IR Tracer, FDE";
         displayNameShort = "Mk343 Sub";
         descriptionShort = "Mk343 Sub<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk343_Sub_T_IR";
@@ -10341,7 +10341,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk341_SubAP: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI) - FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk341_SubAP";
@@ -10349,7 +10349,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk341_SubAP_T_Red: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI) - Red Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_Red";
@@ -10358,7 +10358,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk341_SubAP_T_Yellow: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI) - Yellow Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_Yellow";
@@ -10367,7 +10367,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk341_SubAP_T_Green: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI) - Green Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_Green";
@@ -10376,7 +10376,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk341_SubAP_T_White: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI) - White Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_White";
@@ -10385,7 +10385,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk341_SubAP_T_Blue: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI) - Blue Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_Blue";
@@ -10394,7 +10394,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk341_SubAP_T_Orange: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI) - Orange Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_Orange";
@@ -10403,7 +10403,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_Mk341_SubAP_T_IR: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk341 SubAP IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI) - IR Tracer, FDE";
         displayNameShort = "Mk341 SubAP";
         descriptionShort = "Mk341 SubAP<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_Mk341_SubAP_T_IR";
@@ -10412,7 +10412,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_XM345_SubAP2: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI) - FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_XM345_SubAP2";
@@ -10420,7 +10420,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_XM345_SubAP2_T_Red: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Red Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI) - Red Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_Red";
@@ -10429,7 +10429,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_XM345_SubAP2_T_Yellow: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Yellow Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI) - Yellow Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_Yellow";
@@ -10438,7 +10438,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_XM345_SubAP2_T_Green: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Green Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI) - Green Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_Green";
@@ -10447,7 +10447,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_XM345_SubAP2_T_White: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 White Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI) - White Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_White";
@@ -10456,7 +10456,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_XM345_SubAP2_T_Blue: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Blue Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI) - Blue Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_Blue";
@@ -10465,7 +10465,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_XM345_SubAP2_T_Orange: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 Orange Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI) - Orange Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_Orange";
@@ -10474,7 +10474,7 @@ class CfgMagazines {
     };
     class FA_MCC_USGI_FDE_300_30_125OTM_300_XM345_SubAP2_T_IR: MCC_USGI_FDE_300_30_125OTM {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd XM345 SubAP2 IR Tracer";
+        displayName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI) - IR Tracer, FDE";
         displayNameShort = "XM345 SubAP2";
         descriptionShort = "XM345 SubAP2<br/>In the 30rd .300BLK USGI FDE";
         ammo = "FA_b_300_XM345_SubAP2_T_IR";

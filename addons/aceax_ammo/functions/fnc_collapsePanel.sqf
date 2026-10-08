@@ -104,6 +104,18 @@ private _doomed = [];
     };
 } forEach _byFamily;
 
+// ---- one name per row ----
+// Every row of ours reads "[Ghost] <rounds> <calibre> <load> (<magazine>)"
+// rather than its magazine's own displayName, which leaves out the calibre and
+// the magazine and is shared by a base round and its three tiers. Renamed
+// before the deletions, while the snapshot's indices still hold; the tooltip
+// keeps the magazine's own name and class.
+{
+    private _name = GVAR(rowName) get _x;
+    if (isNil "_name") then { continue };
+    if (_isLnb) then { _ctrl lnbSetText [[_forEachIndex, 1], _name] } else { _ctrl lbSetText [_forEachIndex, _name] };
+} forEach _rowClass;
+
 if (_doomed isEqualTo []) exitWith {
     if (_debug) then { diag_log "[ghost_aceax_ammo] collapse: nothing to fold" };
 };

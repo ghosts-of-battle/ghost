@@ -39,6 +39,13 @@ The previous state - HIMF dressed head to toe in French CE - is preserved at
 Tanoan identities and flag, the vehicle roster and its crewing, the drone bags,
 and the XMS rifle presets and the marksman's Mk-I EMR in `CfgWeapons.hpp`.
 
+**Re-armed and re-kitted 2026-10-06** (the FAMAS was removed from ghost): base-game Mk20s
+in camo - Mk20 on the line, Mk20C on recon, Mk20 GL for the grenadiers and team leaders - on
+base-game STANAG tracer ammo; the Zafir 7.62 as the machine gun. Every ground man wears the
+user's kit: JAM's tigerstripe special fatigues, JCA's olive KBT combat rig, ghost's green canvas
+helmet and ADF Re-Cut's Kondor goggles (put on by an init handler - a unit config cannot pin
+facewear). Pilots, helicrew and tank crew keep their own kit. What follows is the earlier history.
+
 **On Atlas's own HIMF since 2026-08-29** (user: "himf move back to the uniforms
 in the aegis himf - uniforms and weapons"). Every man inherits from the matching
 `Atlas_B_H_*` class - uniform, vest, helmet, rifle (M16A4 on the line, XMS on
@@ -65,4 +72,4 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-81 unit classes.
+62 unit classes.

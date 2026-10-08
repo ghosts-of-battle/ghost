@@ -5,88 +5,13 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         units[] = {
-            QGVAR(min_rf_spetsnaz_desert_TL),
-            QGVAR(min_rf_spetsnaz_desert),
-            QGVAR(min_rf_spetsnaz_desert_GL),
-            QGVAR(min_rf_spetsnaz_desert_AR),
-            QGVAR(min_rf_spetsnaz_desert_M),
-            QGVAR(min_rf_spetsnaz_desert_O),
-            QGVAR(min_rf_soldier_desert),
-            QGVAR(min_rf_soldier_desert_lite),
-            QGVAR(min_rf_soldier_desert_A),
-            QGVAR(min_rf_soldier_desert_GL),
-            QGVAR(min_rf_soldier_desert_AR),
-            QGVAR(min_rf_soldier_desert_SL),
-            QGVAR(min_rf_soldier_desert_TL),
-            QGVAR(min_rf_soldier_desert_M),
-            QGVAR(min_rf_soldier_desert_LAT),
-            QGVAR(min_rf_soldier_desert_AT),
-            QGVAR(min_rf_soldier_desert_AA),
-            QGVAR(min_rf_medic_desert),
-            QGVAR(min_rf_soldier_desert_repair),
-            QGVAR(min_rf_soldier_desert_exp),
-            QGVAR(min_rf_soldier_desert_mine),
-            QGVAR(min_rf_engineer_desert),
-            QGVAR(min_rf_crew_desert),
-            QGVAR(min_rf_driver_desert),
-            QGVAR(min_rf_helipilot_desert),
-            QGVAR(min_rf_pilot_desert),
-            QGVAR(min_rf_soldier_desert_PG),
-            QGVAR(min_rf_soldier_desert_UAV),
-            QGVAR(min_rf_officer_desert),
-            QGVAR(min_rf_sniper_desert),
-            QGVAR(min_rf_spotter_desert),
-            QGVAR(min_rf_soldier_desert_AAR),
-            QGVAR(min_rf_soldier_desert_AAT),
-            QGVAR(min_rf_soldier_desert_AAA),
-            QGVAR(min_rf_support_desert_AGS),
-            QGVAR(min_rf_support_desert_Metis),
-            QGVAR(min_rf_support_desert_Kord),
-            QGVAR(min_rf_support_desert_Mort),
-            QGVAR(min_rf_support_desert_AAGS),
-            QGVAR(min_rf_support_desert_AMetis),
-            QGVAR(min_rf_support_desert_AKord),
-            QGVAR(min_rf_support_desert_AMort),
-            QGVAR(min_rf_survivor_desert),
-            QGVAR(min_rf_soldier_desert_unarmed),
-            QGVAR(min_rf_recon_desert),
-            QGVAR(min_rf_recon_desert_M),
-            QGVAR(min_rf_recon_desert_LAT),
-            QGVAR(min_rf_recon_desert_medic),
-            QGVAR(min_rf_recon_desert_exp),
-            QGVAR(min_rf_recon_desert_JTAC),
-            QGVAR(min_rf_recon_desert_TL),
-            QGVAR(min_rf_recon_desert_officer),
-            QGVAR(min_rf_recon_desert_saboteur),
-            QGVAR(min_rf_ka_52_grey),
-            QGVAR(min_rf_heli_light_grey),
-            QGVAR(min_rf_heli_light_unarmed_grey),
-            QGVAR(min_rf_su_34_desert),
-            QGVAR(min_rf_truck_covered_desert),
-            QGVAR(min_rf_truck_transport_desert),
-            QGVAR(min_rf_truck_box_desert),
-            QGVAR(min_rf_truck_ammo_desert),
-            QGVAR(min_rf_truck_medical_desert),
-            QGVAR(min_rf_truck_fuel_desert),
-            QGVAR(min_rf_t_14_desert),
-            QGVAR(min_rf_t_15_desert),
-            QGVAR(min_rf_2b26_desert),
-            QGVAR(min_rf_sa_22_desert),
-            QGVAR(min_rf_gaz_2330_desert),
-            QGVAR(min_rf_gaz_2330_HMG_desert),
-            QGVAR(min_rf_Metis_desert),
-            QGVAR(min_rf_ags_30_desert),
-            QGVAR(min_rf_Kord_desert),
-            QGVAR(min_rf_Mortar_desert),
-            QGVAR(min_rf_boat_transport),
-            QGVAR(min_rf_lifeboat),
-            QGVAR(min_rf_pchela_1t)
+            QGVAR(O_R_Sharpshooter_ard_F), QGVAR(O_R_Fighter_Pilot_ard_F), QGVAR(O_R_Soldier_AAA_ard_F), QGVAR(O_R_Soldier_AAR_ard_F), QGVAR(O_R_Soldier_AAT_ard_F), QGVAR(O_R_Soldier_AHAT_ard_F), QGVAR(O_R_Soldier_A_ard_F), QGVAR(O_R_Soldier_CQ_ard_F), QGVAR(O_R_Soldier_GL_ard_F), QGVAR(O_R_Soldier_HAT_ard_F), QGVAR(O_R_Soldier_LAT_ard_F), QGVAR(O_R_Soldier_PG_ard_F), QGVAR(O_R_Soldier_SL_ard_F), QGVAR(O_R_Soldier_TL_ard_F), QGVAR(O_R_Soldier_ard_F), QGVAR(O_R_Soldier_lite_ard_F), QGVAR(O_R_crew_ard_F), QGVAR(O_R_engineer_ard_F), QGVAR(O_R_helicrew_ard_F), QGVAR(O_R_helipilot_ard_F), QGVAR(O_R_medic_ard_F), QGVAR(O_R_officer_ard_F), QGVAR(O_R_recon_AR_ard_F), QGVAR(O_R_recon_CQ_ard_F), QGVAR(O_R_recon_GL_ard_F), QGVAR(O_R_recon_JTAC_ard_F), QGVAR(O_R_recon_LAT_ard_F), QGVAR(O_R_recon_M_ard_F), QGVAR(O_R_recon_TL_ard_F), QGVAR(O_R_recon_ard_F), QGVAR(O_R_recon_exp_ard_F), QGVAR(O_R_recon_medic_ard_F), QGVAR(O_R_soldier_AA_ard_F), QGVAR(O_R_soldier_AR_ard_F), QGVAR(O_R_soldier_AT_ard_F), QGVAR(O_R_soldier_M_ard_F), QGVAR(O_R_soldier_UAV_ard_F), QGVAR(O_R_soldier_UGV_02_Demining_ard_F), QGVAR(O_R_soldier_exp_ard_F), QGVAR(O_R_soldier_mine_ard_F), QGVAR(O_R_soldier_repair_ard_F), QGVAR(O_R_support_AMG_ard_F), QGVAR(O_R_support_AMort_ard_F), QGVAR(O_R_support_GMG_ard_F), QGVAR(O_R_support_MG_ard_F), QGVAR(O_R_support_Mort_ard_F), QGVAR(O_R_RadioOperator_ard_F), QGVAR(O_R_Soldier_CBRN_ard_F), QGVAR(O_R_sniper_ard_F), QGVAR(O_R_soldier_UAV_06_ard_F), QGVAR(O_R_soldier_UAV_06_medical_ard_F), QGVAR(O_R_spotter_ard_F), QGVAR(O_R_ghillie_ard_F), QGVAR(O_R_ghillie_spotter_ard_F), QGVAR(O_Heli_Light_02_dynamicLoadout_F), QGVAR(O_Heli_Light_02_unarmed_F), QGVAR(O_Heli_Attack_02_dynamicLoadout_F), QGVAR(O_Plane_CAS_02_dynamicLoadout_F), QGVAR(O_APC_Tracked_02_cannon_F), QGVAR(O_APC_Tracked_02_AA_F), QGVAR(O_APC_Wheeled_02_rcws_v2_F), QGVAR(O_MBT_02_railgun_F), QGVAR(O_MBT_02_cannon_F), QGVAR(O_MBT_02_arty_F), QGVAR(O_Boat_Armed_01_hmg_F), QGVAR(O_Boat_Transport_01_F), QGVAR(O_Lifeboat), QGVAR(O_SDV_01_F), QGVAR(O_UAV_01_F), QGVAR(O_UAV_02_dynamicLoadout_F), QGVAR(O_UGV_01_F), QGVAR(O_UGV_01_rcws_F), QGVAR(O_MRAP_02_F), QGVAR(O_MRAP_02_hmg_F), QGVAR(O_MRAP_02_gmg_F), QGVAR(O_Quadbike_01_F), QGVAR(O_Truck_02_covered_F), QGVAR(O_Truck_02_transport_F), QGVAR(O_Truck_03_transport_F), QGVAR(O_Truck_03_covered_F), QGVAR(O_Truck_03_repair_F), QGVAR(O_Truck_03_ammo_F), QGVAR(O_Truck_03_fuel_F), QGVAR(O_Truck_03_medical_F), QGVAR(O_Truck_02_box_F), QGVAR(O_Truck_02_medical_F), QGVAR(O_Truck_02_Ammo_F), QGVAR(O_Truck_02_fuel_F), QGVAR(O_static_AA_F), QGVAR(O_static_AT_F), QGVAR(O_HMG_01_F), QGVAR(O_HMG_01_high_F), QGVAR(O_HMG_01_A_F), QGVAR(O_GMG_01_F), QGVAR(O_GMG_01_high_F), QGVAR(O_GMG_01_A_F), QGVAR(O_Mortar_01_F), QGVAR(O_UGV_02_Science_F), QGVAR(O_UGV_02_Demining_F), QGVAR(O_LSV_02_armed_F), QGVAR(O_LSV_02_unarmed_F), QGVAR(O_LSV_02_AT_F), QGVAR(O_Heli_Transport_04_F), QGVAR(O_Heli_Transport_04_ammo_F), QGVAR(O_Heli_Transport_04_bench_F), QGVAR(O_Heli_Transport_04_box_F), QGVAR(O_Heli_Transport_04_covered_F), QGVAR(O_Heli_Transport_04_fuel_F), QGVAR(O_Heli_Transport_04_medevac_F), QGVAR(O_Heli_Transport_04_repair_F), QGVAR(O_Plane_Fighter_02_F), QGVAR(O_Plane_Fighter_02_Stealth_F), QGVAR(O_Radar_System_02_F), QGVAR(O_SAM_System_04_F), QGVAR(O_Static_Designator_02_F), QGVAR(O_UAV_06_F), QGVAR(O_UAV_06_medical_F), QGVAR(O_MBT_04_cannon_F), QGVAR(O_MBT_04_command_F), QGVAR(Aegis_O_R_Heli_Attack_04_ard_F), QGVAR(O_R_APC_Tracked_02_medical_ard_F), QGVAR(O_R_APC_Wheeled_04_cannon_v2_ard_F), QGVAR(O_R_UGV_01_medical_ard_F), QGVAR(ghost_antiship_launcher), QGVAR(ghost_antiship_radar), QGVAR(O_UAV_03_dynamicLoadout_F), QGVAR(O_SwitchBlade_300), QGVAR(O_SwitchBlade_600), QGVAR(O_SwitchBlade_300_LaunchTube), QGVAR(O_SwitchBlade_600_LaunchTube), QGVAR(qav_o_t_625e), QGVAR(SwitchBlade_Operator)
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         // The mods these classes build on - skipped whole without them (see the header of
         // tools/gen_mod_factions.py). Tier magazines are named as strings, so FA is not required.
-        requiredAddons[] = {"ghost_main", "min_rf_air", "min_rf_boat", "min_rf_drones", "min_rf_units", "min_rf_vehicle", "min_rf_wp"};
+        requiredAddons[] = {"ghost_main", "ghost_antiship", "ghost_uniform_ru", "ghost_vehicle"};
         skipWhenMissingDependencies = 1;
         author = QAUTHOR;
         VERSION_CONFIG;
@@ -94,6 +19,5 @@ class CfgPatches {
 };
 
 #include "CfgFactionClasses.hpp"
-#include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgGroups.hpp"

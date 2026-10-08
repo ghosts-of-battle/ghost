@@ -18,12 +18,12 @@
     QGVAR(scheme), "LIST",
     [
         "Colour scheme",
-        "Three day grounds and three night ones, in matching pairs: FIELD GREY with NIGHT / RED, OLIVE with NIGHT OLIVE, SAND with NIGHT SAND. A night scheme is a dark ground with the day scheme's own accent held down to what does not blow your eyes out at 0200. CUSTOM uses the three colours below. Also switchable in-game from the gear under the message reader."
+        "Four day grounds and four night ones, in matching pairs: FIELD GREY with NIGHT / RED, OLIVE with NIGHT OLIVE, SAND with NIGHT SAND, BRASS with NIGHT BRASS. A night scheme is a dark ground with the day scheme's own accent held down to what does not blow your eyes out at 0200. CUSTOM uses the three colours below. Also switchable in-game from the gear under the message reader."
     ],
     ["Ghosts of Battle", "Tacpad"],
     [
-        ["light", "olive", "sand", "dark", "nightOlive", "nightSand", "custom"],
-        ["Field Grey", "Olive", "Sand", "Night / Red", "Night Olive", "Night Sand", "Custom"],
+        ["light", "olive", "sand", "brass", "dark", "nightOlive", "nightSand", "nightBrass", "custom"],
+        ["Field Grey", "Olive", "Sand", "Brass", "Night / Red", "Night Olive", "Night Sand", "Night Brass", "Custom"],
         0
     ],
     false,

@@ -10,6 +10,7 @@ class CfgPatches {
             "RF_Data_Loadorder",
             "ace_ballistics",
             "ghost_fa_main",
+            "ghost_fa_ammo",            // the 12.7x55 and 9x19 Mk422 rounds
             "cba_main",
             // vanilla flare body (IR illum) + ammo_ShipCannon_120mm_* bases,
             // .50 / 40mm bullet+grenade bases for the ASh-12 / RC40 ammo

@@ -1,5 +1,5 @@
 #define COMPONENT fa_tiers_mods
-#define COMPONENT_BEAUTIFIED Future Ammunition - Tiers (mods)
+#define COMPONENT_BEAUTIFIED Future Ammunition - Tiers (aegis)
 #include "\z\ghost\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

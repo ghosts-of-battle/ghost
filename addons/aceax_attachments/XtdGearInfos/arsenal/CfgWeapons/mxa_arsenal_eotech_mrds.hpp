@@ -9,13 +9,3 @@ class optic_MRD_black
     model = "mxa_arsenal_eotech_mrds";
     camo = "BLK";
 };
-class optic_MRD_khk_RF
-{
-    model = "mxa_arsenal_eotech_mrds";
-    camo = "KHK";
-};
-class optic_MRD_tan_RF
-{
-    model = "mxa_arsenal_eotech_mrds";
-    camo = "TAN";
-};

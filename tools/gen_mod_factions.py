@@ -2,40 +2,37 @@
 """Ghost factions built on mods loaded beside ghost (user, 2026-10-04, once the Aegis family left):
 
     turkey  x4  from TMT - Turkish Forces          D:\\work\\tmt         FA tier 4
-    russia  x3  from 2035 - Russian Armed Forces   D:\\work\\2035russia  FA tier 3
-    china   x2  vehicles from the PLA Armored Vehicles Pack (the base Workshop pack only),
-                infantry kept from the old China factions
-    eudf    x3  from European Defense Force 2035      D:\\work\\eu2035      FA tier 3 (2026-10-05)
+    russia  x3  Aegis's Russian army (uniform_ru) + base-game CSAT, in e22's colours - FA tier 3 (2026-10-06)
+    nato    x3  base-game NATO + Western Sahara, on the faction_eudf addons - FA tier 3 (2026-10-06)
 
     python tools/mod_index.py D:/work/tmt work/mods/tmt.json         # once per mod update
-    python tools/mod_index.py D:/work/2035russia work/mods/minrf.json
-    python tools/mod_index.py D:/work/pla2035 work/mods/pla2035.json
-    python tools/mod_index.py D:/work/eu2035 work/mods/eu2035.json
     python tools/gen_mod_factions.py
+    python tools/camo/faction_camo_make.py --only faction_russia,faction_russia_ard,faction_russia_arc
+    python tools/apply_faction_camo.py --only faction_russia,faction_russia_ard,faction_russia_arc
+    python tools/cdlc_split.py apply
 
 Settled by question (2026-10-04):
   * Turkey: the four existing addons rebuilt - OPFOR and IND, each Arid and Woodland. TMT paints its
     vehicles East (arid) and Woodland; the arid men wear TMT's desert uniforms, the woodland men its
     green ones. Turkish Gendarmerie and Police stay out (ghost has its own Gendarmerie).
-  * Russia: woodland, desert and winter on the existing three addons. 2035 Russia's own vehicles where
-    it has the type; the old ghost Russia vehicles (their approved camo) for the types it has not -
-    wheeled APCs, heavy transport helicopters, SPG, SAM and radar, fighters, armed UAV, UGVs, medical
-    APC, static AA - plus ghost's extras (anti-ship, SwitchBlades, operators).
-  * FA ammunition for both: every bullet magazine a man carries becomes an FA copy of the same
-    magazine (fa_tmt / fa_minrf, written here), at the faction's tier. Grenades, 40 mm and launcher
-    rounds are left as the mod issues them.
-  * China: ONLY the PLA pack's vehicles ("use only vehicles from the pla2 then add the infantry from the
-    old faction"), the old China men, presets and infantry groups kept as they were.
+  * Russia (2026-10-06, without e22 - see build_russia): Aegis's Russian soldiers out of uniform_ru, the base
+    game's CSAT vehicles and the old ghost Russia's specials, all in e22's colours.
+  * FA ammunition: every bullet magazine a man carries becomes an FA copy of the same magazine (fa_tmt /
+    fa_tni / fa_adf, written here), at the faction's tier; base-game magazines the FA round of fa_tiers.
+    Grenades, 40 mm and launcher rounds are left as the mod issues them.
+  * China left this generator 2026-10-06 ("convert the pla back to the base game assets, no more pla mod"):
+    faction_china / faction_china_ard are the 10-04 factions again, base-game CSAT in ghost's camo.
 
 The mods are not copied: every class here inherits the mod's own, so the mods must be loaded, and each
 faction requires their patches (skipWhenMissingDependencies) rather than loading men with no parent.
-Old factions: D:\\Git\\_ghost_factions_backup_2026-10-04 (the source for the kept Russian vehicles and
-the kept Chinese infantry).
+Old factions: D:\\Git\\_ghost_factions_backup_2026-10-04 (the source for the kept Russian vehicles
+and their camo sheets).
 """
 import collections
 import json
 import os
 import re
+import shutil
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -52,11 +49,15 @@ GONE_PARENTS = {"Aegis_O_T_BoatCrew_EF": "O_T_Crew_F"}    # kept men's parents f
 # calibre -> the FA round a faction is issued (the standard load; PICK in gen_us_factions.py for why
 # M80A2 and 7N44), and the addon whose tiers carry it
 ROUND = {
+    "45": "FA_b_45ACP_Mk421_SubAP",
     "556": "FA_b_556_Mk327_HV", "762x51": "FA_b_762_M80A2_HV", "762x54": "FA_o_762x54R_Ball_HV",
     "545": "FA_o_545x39_7N44_HP", "762x39": "FA_o_762x39_7N47_CT", "9x19": "FA_rf_9x19_Mk422_AP",
     "127x55": "FA_rf_ammo_127x55_7N52", "338": "FA_b_338_Mk371_250gr", "127x99": "FA_b_127x99_Mk211Mod0_AP",
 }
 TIERS = (2, 3, 4)
+# the token a CBA well's name carries for each calibre (FaMod.accepts)
+CAL_WELL = {"556": "556x45", "762x51": "762x51", "762x39": "762x39", "545": "545x39", "762x54": "762x54",
+            "9x19": "9x19", "127x99": "127x99", "338": "338", "45": "45acp"}
 TRACER_COLOURS = ("Red", "Green", "Yellow", "White", "Blue", "Orange", "IR")
 
 
@@ -64,7 +65,7 @@ def calibre(name, ammo, parent):
     s = " ".join(x for x in (name, ammo or "", parent or "") if x).lower()
     for pat, cal in ((r"762x54", "762x54"), (r"545x39", "545"), (r"762x39", "762x39"), (r"762x51|_762_|mpt76|knt76|m80", "762x51"),
                      (r"556x45|5\.56|stanag|pmag|lancer|_556", "556"), (r"127x55", "127x55"), (r"127x99|127x108|50bmg", "127x99"),
-                     (r"338", "338"), (r"9x19|9x21|9mm", "9x19")):
+                     (r"338", "338"), (r"9x19|9x21|9mm", "9x19"), (r"45acp|_45_|\.45", "45")):
         if re.search(pat, s):
             return cal
     return None
@@ -90,6 +91,51 @@ def fa_ammo_classes():
     return out
 
 
+_VANILLA = {}
+
+
+def vanilla_classes(table):
+    """Lower-case class names of one of the base game's config tables (tools/aegis_port's vanilla config cache)."""
+    if table not in _VANILLA:
+        import pickle
+        sys.path.insert(0, os.path.join(ROOT, "tools", "aegis_port"))
+        import vanilla_config  # noqa: F401 - the pickle's classes live there
+        tree = pickle.load(open(os.path.join(ROOT, "tools", "aegis_port", "vanilla_config.cache"), "rb"))["tree"]
+        _VANILLA[table] = set(tree.c[table.lower()].c.keys())
+    return _VANILLA[table]
+
+
+def vanilla_magazines():
+    return vanilla_classes("CfgMagazines")
+
+
+def vanilla_units(faction):
+    """The base game's own scope-2 CfgVehicles of one faction, as index records (properties resolved through the
+    parents) - the true roster, which the ORBAT dump shows as the mods loaded with it had rearranged it."""
+    import pickle
+    sys.path.insert(0, os.path.join(ROOT, "tools", "aegis_port"))
+    import vanilla_config  # noqa: F401
+    cv = pickle.load(open(os.path.join(ROOT, "tools", "aegis_port", "vanilla_config.cache"), "rb"))["tree"].c["cfgvehicles"].c
+
+    def get(node, key):
+        while node is not None:
+            if key in node.v:
+                return node.v[key]
+            node = cv.get(node.p.lower()) if node.p else None
+        return None
+    out = []
+    for node in cv.values():
+        if get(node, "faction") != faction or get(node, "scope") != 2:
+            continue
+        uni = get(node, "uniformclass")
+        disp = str(get(node, "displayname") or "")
+        out.append({"class": node.n, "displayname": STRINGS.get(disp[1:].lower(), disp) if disp.startswith("$") else disp,
+                    "crew": get(node, "crew") or "", "uniformclass": uni, "is_man": bool(uni),
+                    "weapons": list(get(node, "weapons") or []), "magazines": list(get(node, "magazines") or []),
+                    "linked": list(get(node, "linkeditems") or [])})
+    return out
+
+
 class FaMod:
     """FA copies of the bullet magazines one mod's men carry, a well per calibre, and the weapon patches
     that take that well - the fa_mcc pattern, cut to what the factions issue."""
@@ -99,14 +145,16 @@ class FaMod:
         self.fa = fa_ammo_classes()
         self.copies = {}         # source magazine -> (base copy, calibre)
         self.weapon_wells = collections.defaultdict(set)
-        self.need_rf = False
+        self.unheld = set()      # copies made only for spares (ChainFa.spare)
 
     def magazine_for(self, mag, tier):
         """The class a man of `tier` carries in place of `mag`, or None to keep it."""
         M = self.idx["magazines"]
         info = M.get(mag)
-        if info is None and mag not in self.idx.get("vanilla_mags", ()):
-            pass
+        if info is None and mag.lower() not in vanilla_magazines():
+            # a magazine nothing defines - ADF Re-Cut's soldiers list "ADFRC_100_Rnd_762_Belt_TR5", a typo for its
+            # ADFRC_100Rnd_762_Belt_TR5. A copy of it would be an empty class (RPT 2026-10-06), so it is left alone.
+            return None
         ammo = (info or {}).get("ammo")
         parent = (info or {}).get("parent")
         cal = calibre(mag, ammo, parent)
@@ -118,8 +166,6 @@ class FaMod:
             rnd = "%s_T_%s" % (rnd, col)
         if "%s_t%d" % (rnd, tier) not in self.fa:
             return None
-        if rnd.startswith("FA_rf_"):
-            self.need_rf = True
         base = "FA_%s_%s" % (self.tag, re.sub(r"(?i)^(tmt_|min_rf_)", "", mag))
         self.copies[mag] = (base, cal, rnd)
         return "%s_t%d" % (base, tier)
@@ -142,7 +188,11 @@ class FaMod:
             for arr in (self.idx["wells"].get(well) or {}).values():
                 if isinstance(arr, list) and set(arr) & fam:
                     return True
-        return False
+        # a CBA well the index cannot see into (CBA_762x51_LINKS, CBA_556x45_MINIMI): named for the calibre - ADF
+        # Re-Cut's MAG58 and Minimi take their belts only that way (2026-10-06)
+        m = M.get(mag) or {}
+        tok = CAL_WELL.get(calibre(mag, m.get("ammo"), m.get("parent")))
+        return bool(tok) and any(tok in str(w).lower() for w in info.get("magazinewell") or [])
 
     def note_weapon(self, weapon, mags):
         """The weapon (and every class up its chain that writes its own magazines) takes the wells of the
@@ -188,8 +238,8 @@ class FaMod:
             for name in [base] + ["%s_t%d" % (base, t) for t in TIERS]:
                 mags.append(name)
                 by_cal[cal].append(name)
-        req = ['"cba_main"', '"ace_ballistics"', '"ghost_fa_ammo"', '"ghost_fa_tiers"'] + \
-              (['"ghost_fa_rf"', '"ghost_fa_tiers_mods"'] if self.need_rf else []) + ['"%s"' % p for p in self.patches]
+        # the FA_rf_ 9x19 and 12.7x55 rounds live in fa_ammo (tiered by fa_tiers) since the creator DLCs left
+        req = ['"cba_main"', '"ace_ballistics"', '"ghost_fa_ammo"', '"ghost_fa_tiers"'] + ['"%s"' % p for p in self.patches]
         open(os.path.join(d, "$PBOPREFIX$"), "w", newline="\n").write("z\\ghost\\addons\\%s\n" % self.comp)
         open(os.path.join(d, "script_component.hpp"), "w", newline="\n").write("\n".join([
             "#define COMPONENT %s" % self.comp, "#define COMPONENT_BEAUTIFIED %s" % self.beaut,
@@ -394,13 +444,15 @@ class Faction:
         self.presets = {}                  # weapon -> base-game suppressor
         self.units_db = {}                 # the mod's CfgVehicles index by lower-case class, for uniform wearers
         self.wearers = {}                  # uniform -> its wearer, for uniforms this side may not wear
+        self.data_files = set()            # data/ files kept blocks name (QPATHTOF), copied from data_from
+        self.data_from = None
 
     def gv(self, src):
         return "GVAR(%s)" % src
 
-    def add_man(self, u, fa, uniform=None, sf=None, crewset=None):
+    def add_man(self, u, fa, uniform=None, sf=None, crewset=None, extra=(), parent=None):
         src = u["class"]
-        lines = ["    class %s: %s {" % (self.gv(src), src),
+        lines = ["    class %s: %s {" % (self.gv(src), parent or src),
                  "        scope = 2;", "        scopeCurator = 2;", "        author = QAUTHOR;",
                  "        side = %d;" % self.side, "        faction = QUOTE(ADDON);",
                  '        editorSubcategory = "%s";' % ("EdSubcat_Personnel_SpecialForces" if sf else "EdSubcat_Personnel"),
@@ -432,7 +484,12 @@ class Faction:
             for m in set(mags):
                 takers = [w for w in (u.get("weapons") or []) if fa.accepts(w, m)]
                 if not takers:
-                    continue                      # nothing he carries takes it: leave it alone
+                    # a spare for the team's gun (assistant gunners, ammo bearers): converted only where the mod's
+                    # fa_ addon gives the calibre a well its weapons take (ChainFa.spare); otherwise left alone
+                    rep = fa.spare(m, self.tier) if hasattr(fa, "spare") else None
+                    if rep:
+                        swap[m] = rep
+                    continue
                 rep = fa.magazine_for(m, self.tier)
                 if rep:
                     swap[m] = rep
@@ -442,9 +499,13 @@ class Faction:
             if new != mags:
                 arr = ", ".join('"%s"' % m for m in new)
                 lines += ["        magazines[] = {%s};" % arr, "        respawnMagazines[] = {%s};" % arr]
+        lines.extend(extra)
         lines.append("    };")
         self.blocks.append("\n".join(lines))
-        self.decl.add(src)
+        self.decl.add(parent or src)
+        m = re.match(r"EGVAR\((\w+),", parent or "")
+        if m:
+            self.requires_ghost.add(m.group(1))
         self.units.append(src)
         r = role(src, u.get("displayname"))
         target = self.sf.setdefault(sf, {}) if sf else self.men
@@ -484,23 +545,29 @@ class Faction:
                       "        class ItemInfo: ItemInfo {", "            uniformClass = QGVAR(%s);" % wearer, "        };", "    };"]
         return vdecl, vbody, wdecl, wbody
 
-    def add_vehicle(self, u, crew_of, kind=None):
+    def add_vehicle(self, u, crew_of, kind=None, extra=(), parent=None):
+        """parent: what the class inherits when it is not u["class"] itself - EGVAR(vehicle,X) for ghost's own."""
         src = u["class"]
         kind = kind or vkind(u)
+        parent = parent or src
+        m = re.match(r"EGVAR\((\w+),", parent)
+        if m:
+            self.requires_ghost.add(m.group(1))
         crew = str(u.get("crew") or "")
         if "uav_ai" in crew.lower() or kind == "uav":
             crew_line = '"%s"' % UAV_AI[self.side]
         else:
             ours = crew_of(crew, kind)
             crew_line = "QGVAR(%s)" % ours if ours else None
-        lines = ["    class %s: %s {" % (self.gv(src), src),
+        lines = ["    class %s: %s {" % (self.gv(src), parent),
                  "        scope = 2;", "        scopeCurator = 2;", "        author = QAUTHOR;",
                  "        side = %d;" % self.side, "        faction = QUOTE(ADDON);"]
         if crew_line:
             lines.append("        crew = %s;" % crew_line)
+        lines.extend(extra)
         lines.append("    };")
         self.blocks.append("\n".join(lines))
-        self.decl.add(src)
+        self.decl.add(parent)
         self.units.append(src)
         self.veh[kind].append(src)
         self.names[src] = readable(u)
@@ -707,6 +774,10 @@ class Faction:
                 k = self.weapons_text.rstrip().rfind("};")
                 self.weapons_text = self.weapons_text[:k] + "\n".join([""] + hdr + decl + [""] + body) + "\n};\n"
         d = os.path.join(ADDONS, self.addon)
+        for rel in sorted(self.data_files):
+            dst = os.path.join(d, rel)
+            os.makedirs(os.path.dirname(dst), exist_ok=True)
+            shutil.copyfile(os.path.join(self.data_from, rel), dst)
         V = [HDR, "//", "// EVERY CLASS BUILDS ON A LOADED MOD'S OWN (or a kept ghost class). The mods are required in",
              "// config.cpp, so without them the faction is skipped rather than loading empty classes.", "",
              "class CfgVehicles {"]
@@ -881,60 +952,306 @@ def build_turkey(fa_by_tag):
 
 
 # ------------------------------------------------------------------ Russia
-# ALL OF RUSSIA IS 2035 RUSSIA (user, 2026-10-05: "all of russia should be based on that"). The old ghost
-# Russia vehicles kept for the gaps - several on Borealis, which left the load order - are gone. A theatre the
-# mod gives no vehicle of a type (winter: no aircraft, boats or drones; desert: no boats or drones) fields
-# the mod's woodland one of that type.
-RUS_FALLBACK = "min_rf"
+# 2040 RUSSIA WITHOUT e22 (user, 2026-10-06: "remake russia without the e22 but make camos to match the e22 color
+# scheme"; asked: the soldiers from A3_Aegis_Public_Releases' Russian uniforms and loadouts, imported into uniform_ru;
+# the arctic white in e22's alpine greys; e22 dropped from ghost). The men are Aegis's Russian army out of uniform_ru:
+# woodland (taiga) and arid sets, their sheets brought to e22's colours by tools/camo/ru_kit_colours.py, and an arctic
+# set - the woodland men in the arctic twins of their kit. The vehicles are the base game's CSAT (OPF_F) and, for the
+# models it has none of, the old ghost Russia's specials (the Hind, the Rhino, the BTR-K 30mm, the anti-ship battery,
+# SwitchBlades...); tools/camo/faction_camo_make.py + tools/apply_faction_camo.py paint them in e22's colours
+# (rusgreen / russand / rusarctic) - run after this generator.
+RUSSIA = [("faction_russia", "2040 Russia", "woodland"), ("faction_russia_ard", "2040 Russia (Arid)", "arid"),
+          ("faction_russia_arc", "2040 Russia (Arctic)", "winter")]
+RU_FLAG = '"\\A3\\Data_F_Enoch\\Flags\\flag_RUS_CO.paa"'
+RU_ICON = '"\\A3\\Data_F_Enoch\\FactionIcons\\icon_RUS_CA.paa"'
+RUS_DROP = re.compile(r"(?i)\(AddGis_|Railgun|Rapier|rksla3")   # a Ka-60 repaint, an Aegis-only model, RKSL (2026-10-06)
+RUS_WS = {"apc_tracked_02_30mm": "O_APC_Tracked_02_30mm_lxWS"}   # Western Sahara's BTR-K 30mm
+# not soldiers of the line: wearers, bases, drones and bags the import brought with them; the conscripts are left out
+RU_NOT_MEN = re.compile(r"(?i)_base|Fatigues_01|GhillieSuit_01|PilotCoveralls_01|_UAV_0\d_F$|UAV_01_F$|UGV_02_Demining_F$|"
+                        r"backpack|[HG]MG_01|Mortar_01|Conscript|Survivor|unarmed")
+RU_NOT_VEH = re.compile(r"(?i)backpack|_weapon_|_support_|Slingload|CamoNet|Land_Pod|Item_|Weapon_|_VR_|Target")
+
+
+def ru_kit():
+    """uniform_ru's soldiers: {class: {"parent", "props": {key: value text}}}, and its item pairs."""
+    text = open(os.path.join(ADDONS, "uniform_ru", "CfgVehicles.hpp"), encoding="utf-8").read()
+    men = collections.OrderedDict()
+    for name, (parent, body) in class_blocks(text).items():
+        m = re.match(r"GVAR\((\w+)\)", name)
+        if not m:
+            continue
+        props = {k: v.strip() for k, v in re.findall(r"(?m)^        (\w+(?:\[\])?)\s*=\s*([^;]+);", body)}
+        men[m.group(1)] = {"parent": parent, "props": props}
+    arctic = {}
+    at = open(os.path.join(ADDONS, "uniform_ru", "arctic_CfgWeapons.hpp"), encoding="utf-8").read()
+    for a, t in re.findall(r"(?m)^    class GVAR\((\w+)\): GVAR\((\w+)\)", at):
+        arctic[t.lower()] = a
+    return men, arctic
+
+
+def ru_items(v):
+    return re.findall(r'"[^"]*"|Q?E?GVAR\([^)]*\)', v or "")
+
+
+def ru_name(tok):
+    m = re.match(r'"([^"]*)"', tok)
+    if m:
+        return m.group(1)
+    m = re.match(r"Q?E?GVAR\((?:(\w+),\s*)?(\w+)\)", tok)
+    return m.group(2) if m else tok
+
+
+def ru_token(name):
+    """An item of uniform_ru as this faction names it; a base-game one as a string."""
+    return "QEGVAR(uniform_ru,%s)" % name if RU_DEFINED and name.lower() in RU_DEFINED else '"%s"' % name
+
+
+RU_DEFINED = set()
+RU_UNIFORM = "U_O_R_CombatUniform_taiga_F"
+_CONTACT_LINKED = {}
+_DUMP_PARENT = {}
+
+
+def contact_linked():
+    """{class: linkedItems} for Contact's own soldiers, from the in-game dump (the vanilla cache keeps none)."""
+    if not _CONTACT_LINKED:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import gen_orbat_from_rpt
+        _fs, _fp, units, props, _g, _gp, _gm = gen_orbat_from_rpt.read(NATO_DUMP)
+        for cls, u in units.items():
+            _DUMP_PARENT[cls.lower()] = str(u.get("parent", "")).lower()
+            if str(u.get("faction", "")).lower() != "opf_r_f":
+                continue
+            for k, (_t, v) in props.get(cls, {}).items():
+                if k.lower() == "linkeditems" and v.startswith("["):
+                    _CONTACT_LINKED[cls.lower()] = json.loads(v)
+    return _CONTACT_LINKED
+
+
+def contact_kit(name, men):
+    """The Contact kit a uniform_ru man ends up wearing: up uniform_ru's chain to the base-game class it sits on
+    (an arid twin sits on the woodland one), then up the base game's own chain (the sharpshooter is
+    O_R_soldier_M_F's) to the first class the dump gives linkedItems for."""
+    kits = contact_linked()
+    n = name
+    for _ in range(20):
+        if n.lower() in kits:
+            return kits[n.lower()]
+        if n in men:
+            pm = re.match(r"GVAR\((\w+)\)", men[n]["parent"])
+            n = pm.group(1) if pm else men[n]["parent"]
+        else:
+            n = _DUMP_PARENT.get(n.lower(), "")
+        if not n:
+            break
+    return []
+
+
+def ru_full(tok):
+    """A kit token as the game names the class: QEGVAR(weapons,X) -> ghost_weapons_X, uniform_ru's own with its prefix."""
+    m = re.match(r"Q?EGVAR\((\w+),\s*(\w+)\)", tok)
+    if m:
+        return "ghost_%s_%s" % (m.group(1), m.group(2))
+    m = re.match(r"Q?GVAR\((\w+)\)", tok)
+    if m:
+        return "ghost_uniform_ru_" + m.group(1)
+    return ru_name(tok)
 
 
 def build_russia(fa_by_tag):
-    idx = load("minrf")
-    fa = fa_by_tag["minrf"]
+    men, arctic = ru_kit()
+    RU_DEFINED.clear()
+    for f in ("CfgWeapons.hpp", "arctic_CfgWeapons.hpp", "CfgVehicles.hpp", "arctic_CfgVehicles.hpp"):
+        RU_DEFINED.update(m.lower() for m in re.findall(r"class GVAR\((\w+)\)", open(os.path.join(ADDONS, "uniform_ru", f), encoding="utf-8").read()))
+    # the woodland item for each arid one, read off the soldiers both sets have, slot by slot
+    to_taiga = {}
+    for name, rec in men.items():
+        if not name.endswith("_ard_F"):
+            continue
+        wdl = men.get(name[:-6] + "_F") or men.get(re.sub(r"_ard_F$", "_F", name))
+        if not wdl:
+            continue
+        for key in ("uniformClass", "linkedItems[]", "backpack"):
+            a, w = ru_items(rec["props"].get(key)), ru_items(wdl["props"].get(key))
+            for x, y in zip(a, w):
+                if ru_name(x) != ru_name(y):
+                    to_taiga.setdefault(ru_name(x).lower(), ru_name(y))
+    # woodland: uniform_ru's woodland men, and the Contact classes Aegis re-kits in place, built from their arid twins
+    sets = {"woodland": collections.OrderedDict(), "arid": collections.OrderedDict()}
+    for name, rec in men.items():
+        if RU_NOT_MEN.search(name) or not name.startswith(("O_R_", "Aegis_O_R_")):
+            continue
+        if name.endswith("_ard_F"):
+            sets["arid"][name] = {"parent": "EGVAR(uniform_ru,%s)" % name, "props": {}}
+            base = name[:-6] + "_F"
+            # Contact's own class (the twin's parent is the base game's, not uniform_ru's): the twin's kit, in taiga.
+            # A twin on one of uniform_ru's own classes (the arid ghillies) has its woodland set already.
+            if base not in men and not RU_NOT_MEN.search(base) and not rec["parent"].startswith("GVAR("):
+                props = {}
+                for key in ("uniformClass", "linkedItems[]", "backpack"):
+                    if key in rec["props"]:
+                        props[key] = [to_taiga.get(ru_name(x).lower(), ru_name(x)) for x in ru_items(rec["props"][key])]
+                sets["woodland"][base] = {"parent": rec["parent"], "props": props}
+        else:
+            sets["woodland"][name] = {"parent": "EGVAR(uniform_ru,%s)" % name, "props": {}}
+    # each woodland man's kit as written (his own or inherited inside uniform_ru), for the arctic swap
+    def kit(name, rec):
+        out = {k: list(v) for k, v in rec["props"].items()}
+        n = name
+        while n in men:
+            for key in ("uniformClass", "linkedItems[]", "weapons[]", "magazines[]"):
+                if key not in out and key in men[n]["props"]:
+                    conv = ru_full if key in ("weapons[]", "magazines[]") else ru_name
+                    out[key] = [conv(x) for x in ru_items(men[n]["props"][key])]
+            pm = re.match(r"GVAR\((\w+)\)", men[n]["parent"])
+            n = pm.group(1) if pm else None
+        return out
+    arctic_helmet = arctic.get("h_helmetluchnik_cover_rutaiga_f")
+    contact = {u["class"].lower(): u for u in vanilla_units("OPF_R_F")}
+    fa = VanillaFa()
+    ghost = ghost_vehicle_classes()
+    base_veh = [u for u in vanilla_units("OPF_F") if not u["is_man"] and not RU_NOT_VEH.search(u["class"])]
     out = []
-    specs = [("faction_russia", "2040 Russia", "min_rf", "faction_russia"),
-             ("faction_russia_ard", "2040 Russia (Arid)", "min_rf_desert", "faction_russia_ard"),
-             ("faction_russia_arc", "2040 Russia (Arctic)", "min_rf_winter", "faction_russia_arc")]
-    for addon, display, srcfac, old in specs:
-        f = Faction(addon, display, 0, 3, '"\\min_rf_data\\flags\\flag_rus_co.paa"', '"\\min_rf_data\\ui\\rf_sign.paa"', 3)
-        f.weapons_db = idx["weapons"]
-        f.units_db = {u["class"].lower(): u for u in idx["units"]}
-        f.camo = {"min_rf": "woodland", "min_rf_desert": "arid", "min_rf_winter": "winter"}[srcfac]
-        crewmap = {}
-        for u in idx["units"]:
-            if not (u["is_man"] and pub(u) and str(u.get("faction")) == srcfac):
-                continue
-            sf = "Spetsnaz" if "spetsnaz" in u["class"] else "Recon" if "recon" in u["class"] else None
-            f.add_man(u, fa, sf=sf)
-            f.patches.update(patch_of(idx, u))
-            crewmap[u["class"].lower()] = u["class"]
+    for addon, display, camo in RUSSIA:
+        f = Faction(addon, display, 0, 3, RU_FLAG, RU_ICON, 3)
+        f.camo = camo
+        f.requires_ghost.add("uniform_ru")
+        roster = sets["arid"] if camo == "arid" else sets["woodland"]
+        crewmap, rifleman = {}, None
+        for name, rec in roster.items():
+            props = kit(name, rec) if camo == "winter" else rec["props"]
+            uni = props.get("uniformClass")
+            uni = uni[0] if isinstance(uni, list) and uni else None
+            # Aegis dresses its woodland men in the taiga combat uniform by editing Contact's own O_R_Soldier_Base_F,
+            # which ghost does not have: a man whose kit names no uniform is given it here
+            if not (kit(name, rec).get("uniformClass")) and camo != "arid":
+                uni = RU_UNIFORM
+            linked = props.get("linkedItems[]")
+            # A MAN WHOSE KIT IS CONTACT'S OWN. Nothing in uniform_ru restates it, so he wore Contact's unplated
+            # Smersh while every other Russian had uniform_ru's plated copy (tools/peer_vests.py; found 2026-10-07:
+            # the recon team, the sharpshooter and the mine specialist). Contact's kit, restated: ru_token() names
+            # the plated copy, which has the base game's name.
+            if not linked and not kit(name, rec).get("linkedItems[]"):
+                van_linked = contact_kit(name, men)
+                if any(x.lower() in RU_DEFINED and x.lower().startswith("v_") for x in van_linked):
+                    linked = list(van_linked)
+            if camo == "winter":
+                if uni:
+                    uni = arctic.get(uni.lower(), uni)
+                linked = [arctic.get(x.lower()) or (arctic_helmet if re.match(r"(?i)H_HelmetAggressor", x) and arctic_helmet else x)
+                          for x in (linked or [])]
+            extra = []
+            if linked:
+                arr = ", ".join(ru_token(x) for x in linked)
+                extra += ["        linkedItems[] = {%s};" % arr, "        respawnLinkedItems[] = {%s};" % arr]
+            if "backpack" in props and props["backpack"]:
+                extra.append("        backpack = %s;" % ru_token(props["backpack"][0]))
+            if uni:
+                extra.insert(0, "        uniformClass = %s;" % ru_token(uni))
+            sf = "Recon" if "_recon_" in name.lower() else None
+            # what he carries, for the FA magazines: inherited inside uniform_ru, or Contact's own for its classes
+            full = kit(name, rec)
+            van = contact.get(name.lower(), {})
+            weapons = full.get("weapons[]") or van.get("weapons", [])
+            mags = full.get("magazines[]") or van.get("magazines", [])
+            f.add_man({"class": name, "displayname": "", "weapons": weapons, "magazines": mags}, fa, sf=sf, extra=extra,
+                      parent=rec["parent"])
+            crewmap[name.lower()] = name
+            if re.match(r"(?i)O_R_Soldier_(ard_)?F$", name):
+                rifleman = name
+        picker = crew_picker(f)
 
-        def crew_of(crew, kind, f=f, crewmap=crewmap):
-            if crew.lower() in crewmap:
-                return crewmap[crew.lower()]
-            want = ("pilot",) if kind.startswith(("heli", "plane")) else ("crew",) if kind in ("tank", "apc", "aa", "arty") else ("rifleman",)
-            return f.pick(want + ("rifleman",))
-        for u in idx["units"]:
-            if u["is_man"] or not pub(u) or str(u.get("faction")) != srcfac or not placeable_vehicle(u):
+        def crew_of(crew, kind, crewmap=crewmap, picker=picker):
+            return crewmap.get(str(crew).lower()) or picker(crew, kind)
+        families = set()
+        for u in base_veh:
+            fam = rus_family(u["class"])
+            kind = rus_kind(fam)
+            if kind is None or fam in families:
                 continue
-            f.add_vehicle(u, crew_of)
-            f.patches.update(patch_of(idx, u))
-        have = set(f.veh)
-        for u in idx["units"]:
-            if u["is_man"] or not pub(u) or str(u.get("faction")) != RUS_FALLBACK or not placeable_vehicle(u):
+            f.add_vehicle(u, crew_of, kind)
+            families.add(fam)
+        # the old Russia's vehicles for the models the base game's CSAT has none of
+        old = open(os.path.join(BACKUP, addon, "CfgVehicles.hpp"), encoding="utf-8").read()
+        for name, (parent, body) in class_blocks(old).items():
+            if RUS_DROP.search(name):
                 continue
-            if srcfac != RUS_FALLBACK and vkind(u) not in have:
-                f.add_vehicle(u, crew_of)
-                f.patches.update(patch_of(idx, u))
-        f.patches |= {"min_rf_units", "min_rf_wp"}
-        out.append((f, "%s on 2035 - Russian Armed Forces: its %s infantry, special forces and vehicles, and the "
-                       "mod's woodland vehicles for any type this theatre has none of. FA tier 3 ammunition "
-                       "(fa_minrf). Generated by `tools/gen_mod_factions.py`."
-                    % (display, srcfac.replace("min_rf_", "").replace("min_rf", "woodland"))))
+            if name == "GVAR(SwitchBlade_Operator)":
+                if rifleman:
+                    f.add_verbatim(name, None, body.replace(": %s {" % parent, ": GVAR(%s) {" % rifleman, 1))
+                continue
+            fam = rus_family(name)
+            kind = rus_kind(fam)
+            manned = re.search(r"(?m)^\s{8}crew\s*=", body)
+            if kind is None or fam in families or not (manned or kind == "static"):
+                continue
+            new_parent = rus_parent(parent, fam, ghost)
+            if new_parent is None:
+                continue
+            families.add(fam)
+            body = body.replace(": %s {" % parent, ": %s {" % new_parent, 1)
+            body = re.sub(r"(?m)^(\s{8}crew\s*=\s*)QGVAR\(\w+\);", lambda m: "%sQGVAR(%s);" % (m.group(1), crew_of("", kind)), body)
+            # the old camo lines go: tools/apply_faction_camo.py paints these in e22's colours with the rest
+            body = re.sub(r"(?ms)^\s*// camo:[^\n]*\n(\s*textureList\[\] = \{\};\n)?\s*hiddenSelectionsTextures\[\] = \{.*?\};\n", "", body)
+            if new_parent.startswith("ghost_"):
+                f.requires_ghost.add(new_parent.split("_")[1])
+            f.add_verbatim(name, new_parent, body, kind=kind)
+        out.append((f, "%s: Aegis's Russian army (uniform_ru) - its %s soldiers and loadouts, their sheets in e22's colours - "
+                       "with the base game's CSAT vehicles and the old ghost Russia's specials, painted in e22's colours by "
+                       "the camo pipeline. FA tier 3 ammunition. Generated by `tools/gen_mod_factions.py`."
+                    % (display, {"woodland": "woodland (taiga)", "arid": "arid", "winter": "woodland men in the arctic kit"}[camo])))
     return out
 
 
-# ------------------------------------------------------------------ China / PLA
+def rus_family(name):
+    """The model family a Russian vehicle class is: E22_O_RAF_D_MBT_02_cannon_F, O_R_MBT_02_cannon_ard_F -> mbt_02_cannon."""
+    n = re.sub(r"^(?:GVAR\(|EGVAR\(\w+,)", "", name).rstrip(")")
+    n = re.sub(r"^(?:E22_O_(?:Land_Pod_)?RAF_(?:[DA]_)?|Aegis_CF_O_R_|Aegis_O_R_|CF_O_R_|O_R_|O_T_|O_|Land_Pod_)", "", n)
+    n = re.sub(r"(?:_ard)?(?:_v2)?(?:_ard)?_(?:F|lxWS)$", "", n)
+    return re.sub(r"_ard$", "", n).lower()
+
+
+def rus_kind(fam):
+    """The group kind of a model family (vkind misreads RAF: its helicopters sit in EdSubcat_Planes)."""
+    for pat, kind in ((r"^truck_03_device", None),
+                      (r"^(?:heli_attack|heli_light_02_dynamicloadout)", "heli_attack"), (r"^heli_", "heli_transport"),
+                      (r"^plane_", "plane"), (r"^(?:uav|ugv)_|^switchblade_\d+$|qav_o_t_625e|aeroshark", "uav"),
+                      (r"^apc_tracked_02_aa", "aa"), (r"medical|medevac", "support_med"), (r"^apc_", "apc"),
+                      (r"^mbt_02_arty|_mrl", "arty"), (r"^mbt_", "tank"),
+                      (r"boat|^sdv|lifeboat", "boat"), (r"^(?:lsv_02_(?:armed|at)|mrap_02_[hg]mg)", "car_armed"),
+                      (r"^(?:lsv_02|mrap_02|quadbike)", "car"), (r"^truck_0\d_(?:ammo|fuel|repair|box)", "support"),
+                      (r"^truck_", "truck"),
+                      (r"^(?:[hg]mg_01|static_|mortar|radar_system|sam_system)|launchtube|rapier|antiship", "static")):
+        if re.search(pat, fam):
+            return kind
+    return None                     # a man, a backpack - not a vehicle
+
+
+def ghost_vehicle_classes():
+    out = set()
+    d = os.path.join(ADDONS, "vehicle")
+    for f in os.listdir(d):
+        if f.endswith((".hpp", ".cpp")):
+            out |= set(re.findall(r"(?m)^\s*class GVAR\((\w+)\)\s*:", open(os.path.join(d, f), encoding="utf-8", errors="replace").read()))
+    return out
+
+
+def rus_parent(parent, fam, ghost):
+    """A kept Russian vehicle's parent, or None when no loaded class has its model."""
+    m = re.match(r"EGVAR\(vehicle,(\w+)\)", parent)
+    core = m.group(1) if m else parent
+    if not re.match(r"(?:Aegis_)?(?:CF_)?O_R_", core):
+        return parent                          # CDLC, a mod, ghost's own: as it was
+    plain = re.sub(r"^(?:Aegis_)?(?:CF_)?O_R_", "", core)
+    for cand in (re.sub(r"_ard_", "_", "O_R_" + plain), "O_R_" + plain):
+        if cand in ghost:
+            return "EGVAR(vehicle,%s)" % cand
+    if fam in RUS_WS:
+        return RUS_WS[fam]
+    base = "O_" + re.sub(r"_ard_F$", "_F", plain)
+    return base if base.lower() in vanilla_classes("CfgVehicles") else None
+
+
 # ------------------------------------------------------------------ EU
 class VanillaFa:
     """FA for men who carry base-game magazines: the FA magazine gen_us_factions.fa_map picks for each one,
@@ -948,12 +1265,15 @@ class VanillaFa:
         import gen_us_factions
         self.map, _cand = gen_us_factions.fa_map(ADDONS)
         self.tiered = set()
-        for a in ("fa_tiers", "fa_tiers_mods"):
+        for a in sorted(d for d in os.listdir(ADDONS) if d.startswith("fa_tiers")):
             p = os.path.join(ADDONS, a, "CfgMagazines.hpp")
             if os.path.exists(p):
                 self.tiered |= set(re.findall(r"(?m)^\s*class (\w+_t[234])\s*:", open(p, encoding="utf-8").read()))
 
     def lookup(self, mag):
+        # an imported copy of a base-game magazine (ghost_weapons_30Rnd_545x39_AK12_Mag_F) sits in the same wells
+        if mag not in self.map and mag.startswith("ghost_weapons_") and mag[len("ghost_weapons_"):] in self.map:
+            mag = mag[len("ghost_weapons_"):]
         cur = mag
         for _ in range(3):              # 30Rnd_556x45_Stanag_Tracer_Green -> _Tracer -> 30Rnd_556x45_Stanag
             if cur in self.map:
@@ -975,135 +1295,481 @@ class VanillaFa:
         pass
 
 
-def eu_kind(u):
-    """vkind, corrected where EUDF35's names mislead it: an autonomous turret, the radar and the SAM are
-    statics with a UAV crew, not drones; the Zamak transports are trucks; "unarmed" holds "armed"."""
-    cls, sub = u["class"].lower(), u.get("editorsubcategory") or ""
-    if sub == "EdSubcat_Turrets":
-        return "static"
-    if sub == "EdSubcat_Submersibles":
-        return "boat"
-    if "zamak_transport" in cls or "zamak_covered" in cls:
-        return "truck"
-    if "lsv_01_unarmed" in cls:
-        return "car"
-    if "lsv_01_at" in cls:
-        return "car_armed"
-    return vkind(u)
+# THE GTK BOXER IS NATO'S APC (the EU's until 2026-10-06) (user, 2026-10-06: "from D:\work\boxer\hawks_gtk_boxer use these apcs cover
+# the german logos please and add the rch155 to the arty"). Hawks GTK Boxer, referenced like every other mod:
+# its HMG, GMG and IFV are the APCs, its RCH 155 joins the Scorcher and Sandstorm. Each
+# theatre takes the Boxer of its own paint. The Bundeswehr cross (hiddenSelection "cross") and the hull sheet's
+# German plate flags (camo1) are swapped for the EU-marked copies tools/eu_boxer_markings.py writes into
+# faction_eudf; every other slot keeps the mod's own texture.
+BOXER_CFG = r"D:\work\boxer\hawks_gtk_boxer\config.cpp"
+BOXER_CAMO = {"woodland": "", "arid": "_Sand", "winter": "_Snow"}
+BOXER_EU = {"cross": "boxer_cross_eu_ca.paa", "boxer_body_co": "boxer_body_eu_co.paa",
+            "boxer_body_sand_co": "boxer_body_sand_eu_co.paa", "boxer_body_snow_co": "boxer_body_snow_eu_co.paa"}
+
+
+def boxer_textures(cls):
+    """The hiddenSelectionsTextures[] line for one Boxer: the mod's own array, the German marks swapped."""
+    text = open(BOXER_CFG, encoding="utf-8").read()
+    heads = {m.group(1): (m.group(2), m.end()) for m in re.finditer(r"(?m)^\tclass (\w+)\s*:\s*(\w+)\s*\n\t\{", text)}
+
+    def own(name, key):
+        i, d = heads[name][1], 1
+        start = i
+        while d:
+            d += {"{": 1, "}": -1}.get(text[i], 0)
+            i += 1
+        body = text[start:i]
+        # top-level properties only: blank nested class bodies
+        flat, depth = [], 0
+        for ch in body:
+            depth += ch == "{"
+            flat.append(ch if depth <= 1 or ch in "{}" else " ")
+            depth -= ch == "}"
+        m = re.search(r"(?m)^\t\t%s\[\]=\s*\{([^}]*)\}" % key, "".join(flat))
+        return re.findall(r'"([^"]*)"', body[m.start(1):m.end(1)]) if m else None
+
+    def resolved(name, key):
+        while name in heads:
+            v = own(name, key)
+            if v is not None:
+                return v
+            name = heads[name][0]
+        raise KeyError("%s: no %s" % (cls, key))
+    sel, tex = resolved(cls, "hiddenSelections"), resolved(cls, "hiddenSelectionsTextures")
+    out = []
+    for s, x in zip(sel, tex):
+        stem = os.path.splitext(os.path.basename(x.replace("\\", "/")))[0].lower()
+        new = BOXER_EU.get(s.lower()) or BOXER_EU.get(stem)
+        out.append("QPATHTOEF(faction_eudf,data\\boxer\\%s)" % new if new else '"%s"' % x)
+    return "        hiddenSelectionsTextures[] = {%s};" % ", ".join(out)
+
+
+# user, 2026-10-06: "give the eu the qav challangers and f35's" (asked: the Challengers beside the Leopard; the F-35 "from
+# our mod" - ghost_vehicle's F-35F), "and add v-44 black fish to the eu" (the base game's, olive - its only paint).
+# The Challengers wear QAV's own paint sets: olive for Woodland, its NATO arid default for Arid, the grey Berlin set
+# for Arctic (QAV has no snow paint); the 2E's camo net the base game's green / desert.
+CHALLENGER_PAINT = {"woodland": "olive", "arid": "natoarid", "winter": "berlin"}
+CHALLENGER_NET = {"woodland": r"A3\Armor_F\Data\camonet_NATO_Green_CO.paa", "arid": r"A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
+                  "winter": r"A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"}
+EU_F35 = [("B_Plane_Fighter_05_F", "F-35F Lightning II"), ("B_Plane_Fighter_05_Stealth_F", "F-35F Lightning II (Stealth)")]
+EU_BLACKFISH = [("B_T_VTOL_01_infantry_F", "V-44 X Blackfish (Infantry Transport)", "plane_transport"),
+                ("B_T_VTOL_01_vehicle_F", "V-44 X Blackfish (Vehicle Transport)", "plane_transport"),
+                ("B_T_VTOL_01_armed_F", "V-44 X Blackfish (Armed)", "plane")]
+# "and B_Heli_Attack_01_dynamicLoadout_F B_Heli_Attack_01_pylons_dynamicLoadout_F to the eu you do not have to worry to
+# much on camo for helis and planes" - the base game's AH-99 Blackfoot, in its own paint
+EU_BLACKFOOT = [("B_Heli_Attack_01_dynamicLoadout_F", "AH-99 Blackfoot"),
+                ("B_Heli_Attack_01_pylons_dynamicLoadout_F", "AH-99 Blackfoot (Pylons)")]
+
+
+def challenger_textures(cls, camo):
+    p = CHALLENGER_PAINT[camo]
+    tex = ['"QAV_Challenger\\data\\textures\\%s\\%s_co.paa"' % (p, n)
+           for n in ("c2hull1", "c2hull2", "c2turret1", "c2turret2", "c2wheels1", "c2acc1")]
+    if cls.endswith("_e"):
+        tex += ['"QAV_Challenger\\data\\textures\\%s\\c2eparts_co.paa"' % p, '"%s"' % CHALLENGER_NET[camo]]
+    return "        hiddenSelectionsTextures[] = {%s};" % ", ".join(tex)
+
+
+# THE EU IS NATO, ON THE BASE GAME AND THE CREATOR DLCs (user, 2026-10-06: "change eu to nato and rebuild with cdlc and
+# base game assets"; asked: European Defense Force 2035 dropped; the Boxer + RCH155, Challengers, F-35 / V-44 / AH-99 /
+# MQ-9A and the Apache kept). The addons stay faction_eudf / _des / _arc. Rosters come from the in-game ORBAT dump
+# (tools/dump_orbat.sqf, work/orbat_dump_2026-08-30.rpt - every base-game and CDLC faction loaded), taking only
+# base-game and CDLC classes (Aegis, Atlas and the other mods in that dump are left out):
+#   Woodland  Contact's NATO (BLU_W_F) men; the Pacific NATO's olive vehicles, then NATO's own for the rest
+#   Arid      Western Sahara's desert NATO (BLU_NATO_lxWS) men and vehicles, then NATO's sand ones for the rest
+#   Arctic    NATO's (BLU_F) men in ghost's Multicam Snow kit; NATO's vehicles in the white camo the old arctic EU
+#             made (data\camo\made, faction_eudf_arc 2026-10-05), the base paint where none was made
+NATO_DUMP = os.path.join(ROOT, "work", "orbat_dump_2026-08-30.rpt")
+NATO_EUARC = r"D:/Git/_ghost_factions_backup_2026-10-05/faction_eudf_arc"
+NATO = [("faction_eudf", "2040 NATO (Woodland)", ("blu_w_f", "blu_t_f", "blu_f"), "woodland", 1),
+        ("faction_eudf_des", "2040 NATO (Arid)", ("blu_nato_lxws", "blu_f"), "arid", 3),
+        ("faction_eudf_arc", "2040 NATO (Arctic)", ("blu_f",), "winter", 13)]
+# the base game's pilots where a theatre's own set has none of the kind (Contact's NATO has only a helicopter pilot)
+NATO_PILOTS = [("B_Pilot_F", "Pilot", r"(?<!heli)(?<!fighter_)pilot"), ("B_Fighter_Pilot_F", "Fighter Pilot", r"fighter_pilot"),
+               ("B_Helipilot_F", "Helicopter Pilot", r"helipilot")]
+EU_APACHE = [("B_Heli_Attack_03_F", "AH-64E Apache"), ("B_M_Heli_Attack_03_F", "AH-64 Shaytan")]   # ghost_vehicle's
+NATO_NOT = re.compile(r"(?i)^(?:Aegis_|Atlas_|AddGis_|CBA_|Item_|Weapon_)|_weapon_|_support_|backpack|Slingload|CamoNet|"
+                      r"shield|UAV_RC40|Ship_Gun|Ship_MRLS|Captain_|Competitor|Deck_Crew|Parade|_Patrol_|_VR_|VR_F$|"
+                      r"RangeMaster|Story_|Survivor|(?i:soldier_unarmed)")
+SNOW = {"uniform": "ghost_uniform_U_B_CombatUniform_snow_F", "vest1": "ghost_vests_V_PlateCarrier1_mcam_snow",
+        "vest2": "ghost_vests_V_PlateCarrier2_mcam_snow", "helmet": "ghost_headware_H_Helmet_FASTMT_Cover_Multicam_Snow_F",
+        "boonie": "ghost_headware_H_Booniehat_Multicam_Snow_F"}
+
+
+def nato_family(c):
+    c = re.sub(r"^(?:CF_|EF_)?B_(?:T_|W_|D_)?", "", c)
+    c = re.sub(r"_(?:NATO(?:_T|_Des)?)$", "", c)
+    c = re.sub(r"(?i)(?:_olive|_grn)?_(?:F|lxWS|rf)$", "", c)
+    return c.lower()
+
+
+def nato_kind(c):
+    for pat, kind in ((r"UAV_|UGV_", "uav"),
+                      (r"[HG]MG_0\d|static_|Mortar_01|Designator|AAA_System|SAM_System|Radar_System|CommandoMortar|TwinMortar", "static"),
+                      (r"Boat|SDV|Lifeboat", "boat"), (r"Heli_Attack|Heli_Light_01_dynamicLoadout|AH99J", "heli_attack"),
+                      (r"Heli_", "heli_transport"), (r"VTOL_01_(?:infantry|vehicle)|Plane_Transport", "plane_transport"),
+                      (r"Plane_|VTOL_01_armed", "plane"), (r"(?i)APC_Tracked_01_AA|_aa_lxWS|LAAD", "aa"),
+                      (r"MBT_01_(?:arty|mlrs)|APC_Wheeled_01_mortar", "arty"), (r"(?i)medical|medevac", "support_med"),
+                      (r"(?i)Truck_01_(?:Repair|ammo|box|fuel|flatbed|mover|FFT)|CRV", "support"), (r"MBT_|AFV_Wheeled", "tank"),
+                      (r"APC_", "apc"), (r"Truck_", "truck"),
+                      (r"(?i)LSV_01_(?:armed|AT)|MRAP_01_(?:gmg|hmg|AT|FSV)|Pickup_(?:aat|mmg|AT)", "car_armed")):
+        if re.search(pat, c):
+            return kind
+    return "car"
+
+
+def nato_dump():
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import gen_orbat_from_rpt
+    _fs, _fp, units, props, _g, _gp, _gm = gen_orbat_from_rpt.read(NATO_DUMP)
+    out = collections.defaultdict(list)
+    vanilla = vanilla_classes("CfgVehicles")
+    for cls, u in units.items():
+        if u["scope"] < 2 or NATO_NOT.search(cls):
+            continue
+        if cls.lower() in vanilla or not re.search(r"(?i)_lxws$|^EF_B_|_rf$", cls):
+            continue                                   # base game (read from its own config below) or a mod's
+        p = {k.lower(): v for k, (_t, v) in props.get(cls, {}).items()}
+        rec = {"class": cls, "displayname": p.get("displayname", ""), "crew": p.get("crew", ""),
+               "uniformclass": p.get("uniformclass"), "is_man": "uniformclass" in p,
+               "weapons": json.loads(p["weapons"]) if p.get("weapons", "").startswith("[") else [],
+               "magazines": json.loads(p["magazines"]) if p.get("magazines", "").startswith("[") else [],
+               "linked": json.loads(p["linkeditems"]) if p.get("linkeditems", "").startswith("[") else []}
+        out[u["faction"]].append(rec)
+    # the vanilla cache keeps no linkedItems: the dump's (the base game's own for these classes) fill them in
+    linked = {c.lower(): v for c, pr in props.items() for k, (_t, v) in pr.items() if k.lower() == "linkeditems"}
+    for fac in ("BLU_F", "BLU_T_F", "BLU_W_F"):
+        for u in vanilla_units(fac):
+            if NATO_NOT.search(u["class"]):
+                continue
+            arr = linked.get(u["class"].lower(), "")
+            u["linked"] = json.loads(arr) if arr.startswith("[") else []
+            out[fac.lower()].append(u)
+    return out
+
+
+def nato_arctic_sheets():
+    """family -> (texture lines, data files) from the old arctic EU's made white camo; EU-marked sheets left out."""
+    text = open(os.path.join(NATO_EUARC, "CfgVehicles.hpp"), encoding="utf-8").read()
+    out = {}
+    for name, (parent, body) in class_blocks(text).items():
+        if "camo\\made" not in body or "eulogo" in body:
+            continue
+        m = re.search(r"(?ms)^\s{8}hiddenSelectionsTextures\[\]\s*=\s*\{.*?\};", body)
+        if m:
+            fam = nato_family(re.sub(r"^GVAR\((\w+)\)$", r"\1", name))
+            out.setdefault(fam, (["        textureList[] = {};"] + m.group(0).split("\n"),
+                                 {x.replace("\\", "/") for x in re.findall(r"QPATHTOF\((data\\[^)]+)\)", m.group(0))}))
+    return out
+
+
+def snow_kit(u):
+    """The arctic man's lines: ghost's Multicam Snow uniform, carrier and helmet for NATO's combat kit."""
+    uni = u.get("uniformclass") or ""
+    if not re.match(r"(?i)U_B_CombatUniform|U_B_CTRG|U_B_T_Soldier", uni):
+        return None, []                                # pilots, crews, divers, ghillies keep their own
+    if not u.get("linked"):
+        return SNOW["uniform"], []                     # nothing known to swap: the class's own kit stays
+    linked, base = [], vanilla_classes("CfgWeapons") | vanilla_classes("CfgGlasses")
+    for x in u.get("linked") or []:
+        bare = re.sub(r"^(?:Aegis_|Atlas_)", "", x)
+        if re.match(r"(?i)V_PlateCarrier(?:2|GL|Spec)|V_Chestrig|V_TacVest|V_BandollierB", bare):
+            x = SNOW["vest2"]
+        elif re.match(r"(?i)V_", bare):
+            x = SNOW["vest1"]
+        elif re.match(r"(?i)H_Helmet(?:B|SpecB)", bare):
+            x = SNOW["helmet"]
+        elif re.match(r"(?i)H_Booniehat", bare):
+            x = SNOW["boonie"]
+        elif x.lower() not in base:                    # the dump's mods: their headset caps, ...
+            plain = re.sub(r"(?i)_hs$", "", bare)
+            if plain.lower() in base:
+                x = plain
+            elif bare.startswith("H_"):
+                x = SNOW["helmet"]
+            else:
+                continue
+        linked.append('"%s"' % x)
+    arr = ", ".join(linked)
+    return SNOW["uniform"], ["        linkedItems[] = {%s};" % arr, "        respawnLinkedItems[] = {%s};" % arr]
 
 
 def build_eu():
-    """EUDF on European Defense Force 2035 (user, 2026-10-05: "the eu factions need remade useing
-    D:\\work\\eu2035 as a base"): the mod's BLUFOR set of each theatre - its men in their own kit and
-    suppressed presets, its vehicles - with FA tier 3 rounds, as the old EUDF carried."""
-    idx = load("eu2035")
+    """NATO on faction_eudf / _des / _arc - see the header above."""
+    dump = nato_dump()
+    boxer = load("boxer")
+    boxer_db = {u["class"]: u for u in boxer["units"]}
     fa = VanillaFa()
+    arctic = nato_arctic_sheets()
     out = []
-    specs = [("faction_eudf", "2040 EUDF (Woodland)", "BLU_EUDF35_F", "woodland", 1),
-             ("faction_eudf_des", "2040 EUDF (Arid)", "BLU_EUDF35_D_F", "arid", 3),
-             ("faction_eudf_arc", "2040 EUDF (Arctic)", "BLU_EUDF35_A_F", "winter", 13)]
-    facs = idx["classes"]["CfgFactionClasses"]
-    for addon, display, srcfac, camo, prio in specs:
-        meta = facs[srcfac]
-        f = Faction(addon, display, 1, 3, '"%s"' % meta["flag"], '"%s"' % meta["icon"], prio)
-        f.weapons_db, f.camo = idx["weapons"], camo
-        f.units_db = {u["class"].lower(): u for u in idx["units"]}
+    for addon, display, sources, camo, prio in NATO:
+        f = Faction(addon, display, 1, 3, '"\\A3\\Data_F\\Flags\\Flag_NATO_CO.paa"', '"\\A3\\Data_F\\cfgFactionClasses_BLU_ca.paa"', prio)
+        f.camo = camo
         crewmap = {}
-        for u in idx["units"]:
-            if not (u["is_man"] and pub(u) and str(u.get("faction")) == srcfac):
+        for u in dump[sources[0]]:
+            if not u["is_man"]:
                 continue
-            f.add_man(u, fa, sf="Recon" if "recon" in u["class"].lower() else None)
-            f.patches.update(patch_of(idx, u))
+            uniform, extra = snow_kit(u) if camo == "winter" else (None, [])
+            sf = "Recon" if re.search(r"(?i)_recon_", u["class"]) else None
+            f.add_man(u, fa, uniform=uniform, sf=sf, extra=extra)
             crewmap[u["class"].lower()] = u["class"]
+        for cls, disp, pat in NATO_PILOTS:
+            if not any(re.search(pat, m) for m in crewmap):
+                f.add_man({"class": cls, "displayname": disp}, None)
+                crewmap[cls.lower()] = cls
+        if camo == "winter":
+            f.requires_ghost |= {"uniform", "vests", "headware"}
+        picker = crew_picker(f)
 
-        def crew_of(crew, kind, f=f, crewmap=crewmap):
-            if crew.lower() in crewmap:
-                return crewmap[crew.lower()]
-            want = ("pilot",) if kind.startswith(("heli", "plane")) else ("crew",) if kind in ("tank", "apc", "aa", "arty") else ("rifleman",)
-            return f.pick(want + ("rifleman",))
-        for u in idx["units"]:
-            if u["is_man"] or not pub(u) or str(u.get("faction")) != srcfac or not placeable_vehicle(u):
-                continue
-            f.add_vehicle(u, crew_of, eu_kind(u))
-            f.patches.update(patch_of(idx, u))
-        out.append((f, "%s: European Defense Force 2035's BLUFOR %s set - its men, kit and vehicles, inherited "
-                       "rather than copied, so the mod must be loaded - with FA tier 3 ammunition. Generated by "
-                       "`tools/gen_mod_factions.py`." % (display, meta["displayname"])))
+        def crew_of(crew, kind, crewmap=crewmap, picker=picker):
+            return crewmap.get(str(crew).lower()) or picker(crew, kind)
+        families = set()
+
+        def field(u, kind=None, extra=(), parent=None):
+            fam = nato_family(u["class"])
+            if fam in families:
+                return
+            families.add(fam)
+            sheet = arctic.get(fam) if camo == "winter" and not extra else None
+            if sheet:
+                extra = sheet[0]
+                f.data_files |= sheet[1]
+            f.add_vehicle(u, crew_of, kind or nato_kind(u["class"]), extra=extra, parent=parent)
+        # the kept additions first, so the base set does not field the same model twice
+        for cls, kind in [("Hawks_GTK_Boxer_HMG", "apc"), ("Hawks_GTK_Boxer_GMG", "apc"),
+                          ("Hawks_GTK_Boxer_IFV", "apc"), ("Hawks_GTK_Boxer_RCH155", "arty")]:
+            u = boxer_db[cls + BOXER_CAMO[camo]]
+            field(u, kind, extra=[boxer_textures(u["class"])])
+            f.patches.update(patch_of(boxer, u))
+        for cls, disp in (("qav_B_challenger2", "Challenger 2"), ("qav_B_challenger2_e", "Challenger 2E")):
+            field({"class": cls, "crew": "B_crew_F", "displayname": disp}, "tank", extra=[challenger_textures(cls, camo)])
+            f.patches.add("QAV_Challenger")
+        for cls, disp in EU_F35:
+            field({"class": cls, "crew": "B_Fighter_Pilot_F", "displayname": disp}, "plane", parent="EGVAR(vehicle,%s)" % cls)
+        for cls, disp, kind in EU_BLACKFISH:
+            field({"class": cls, "crew": "B_Pilot_F", "displayname": disp}, kind)
+        for cls, disp in EU_BLACKFOOT + EU_APACHE:
+            field({"class": cls, "crew": "B_Helipilot_F", "displayname": disp}, "heli_attack",
+                  parent="EGVAR(vehicle,%s)" % cls if (cls, disp) in EU_APACHE else None)
+        field({"class": "B_A_UAV_07_F", "crew": "B_UAV_AI", "displayname": "MQ-9A Albatross"}, "uav",
+              parent="EGVAR(vehicle,B_A_UAV_07_F)")
+        for src in sources:
+            for u in dump[src]:
+                if not u["is_man"]:
+                    field(u)
+        f.data_from = NATO_EUARC
+        out.append((f, "%s: the base game's NATO and the creator DLCs' - %s - with the GTK Boxer (Hawks GTK Boxer, the "
+                       "German markings covered) as APC and the RCH 155 in the artillery, QAV's Challengers, ghost's "
+                       "F-35F, MQ-9A and Apache, and FA tier 3 ammunition. Generated by `tools/gen_mod_factions.py`."
+                    % (display, {"woodland": "Contact's woodland NATO, the Pacific NATO's olive vehicles",
+                                 "arid": "Western Sahara's desert NATO, NATO's sand vehicles",
+                                 "winter": "NATO in ghost's Multicam Snow kit, its vehicles in the white camo made for "
+                                           "the arctic"}[camo])))
     return out
 
 
-def build_china():
-    # D:\work\pla2035 (user, 2026-10-05: "base china on D:\work\pla2035 but infantry from our version"): the
-    # PLA Armored Vehicles Pack as the Workshop ships it, without Driverski's Enhanced, whose same-named PBOs
-    # made D:\work\pla2 a mix of the two. Its vehicles; the men stay ours (the old China infantry, below).
-    idx = load("pla2035")
-    out = []
-    specs = [("faction_china", "2040 China", "faction_china"), ("faction_china_ard", "2040 China (Desert)", "faction_china_ard")]
-    for addon, display, old in specs:
-        text = open(os.path.join(BACKUP, old, "CfgVehicles.hpp"), encoding="utf-8").read()
-        fc = open(os.path.join(BACKUP, old, "CfgFactionClasses.hpp"), encoding="utf-8").read()
-        icon = re.search(r"icon = ([^;]+);", fc).group(1)
-        flag = re.search(r"flag = ([^;]+);", fc).group(1)
-        f = Faction(addon, display, 0, 4, flag, icon, 3)
-        blocks = class_blocks(text)
-        old_decl = set(externs(text))
-        men = {}
-        for name, (parent, body) in blocks.items():
-            manlike = re.search(r"(?i)soldier|diver|ghillie|recon|crew|pilot|officer|medic|engineer|sniper|spotter|"
-                                r"support_|survivor|pathfinder|gunner|sharpshooter|radiooperator|_uav_0|demining_f", parent + name)
-            if re.search(r"(?m)^\s{8}crew\s*=", body) or "backpack" in parent.lower() or                     not (manlike or re.search(r"uniformClass|weapons\[\]", body)):
-                continue                  # a vehicle, or the old drones' backpacks (the drones are gone)
-            # a man who carried one of those backpacks carries the game's own now
-            body = re.sub(r"QGVAR\((\w+_backpack_F)\)", lambda mo: '"%s"' % mo.group(1), body)
-            m = re.match(r"GVAR\((\w+)\)", name)
-            src = m.group(1) if m else name
-            # Aegis left the load order: its boat crewman's own parent stands in (as Iran's did, 2026-10-05)
-            if parent in GONE_PARENTS:
-                body = body.replace(": %s {" % parent, ": %s {" % GONE_PARENTS[parent], 1)
-                parent = GONE_PARENTS[parent]
-            f.add_verbatim(name, parent, body, role_name=role(src))
-            men[src.lower()] = src
-        # parents the kept men need, from the old externs
-        for b in f.blocks:
-            p = re.match(r"\s*class \S+\s*:\s*(\w+)\s*\{", b)
-            if p and p.group(1) in old_decl:
-                f.decl.add(p.group(1))
-        f.requires_ghost |= set(re.findall(r'"ghost_(\w+)"', open(os.path.join(BACKUP, old, "config.cpp"), encoding="utf-8").read())) - {"main"}
-        f.requires_ghost.discard("main")
+class ChainFa:
+    """FA for men who carry both base-game and mod magazines (user, 2026-10-06: "they both need fa"): the base game's
+    magazine becomes FA's own tier round (VanillaFa), a magazine of the mod's becomes an FA copy in the mod's fa_
+    addon (FaMod) - the first converter that knows the magazine wins."""
 
-        def crew_of(crew, kind, f=f, men=men):
-            c = re.sub(r"(?i)^O_T_|^O_", "O_T_", crew)
-            for cand in (crew, c, c.replace("_F", "_F")):
-                if cand.lower() in men:
-                    return men[cand.lower()]
-            want = ("pilot",) if kind.startswith(("heli", "plane")) else ("crew",) if kind in ("tank", "apc", "aa", "arty") else ("rifleman",)
-            return f.pick(want + ("rifleman",))
-        for u in idx["units"]:
-            if u["is_man"] or not pub(u) or str(u.get("faction")) != "PLA_Armored_Force" or not placeable_vehicle(u):
-                continue
-            f.add_vehicle(u, crew_of)
+    def __init__(self, *fas):
+        self.fas, self.who = fas, {}
+
+    def accepts(self, weapon, mag):
+        return any(f.accepts(weapon, mag) for f in self.fas)
+
+    def magazine_for(self, mag, tier):
+        for f in self.fas:
+            r = f.magazine_for(mag, tier)
+            if r:
+                self.who[mag] = f
+                return r
+        return None
+
+    def note_weapon(self, weapon, mags):
+        for m in mags:
+            if m in self.who:
+                self.who[m].note_weapon(weapon, [m])
+
+    def spare(self, mag, tier):
+        """A magazine a man carries for someone else's gun: the mod converter's copy, kept only if that calibre
+        ends up with a patched weapon (checked when the fa_ addon is written - FaMod.unheld)."""
+        for f in self.fas:
+            if isinstance(f, FaMod) and mag in f.idx["magazines"]:
+                r = f.magazine_for(mag, tier)
+                if r:
+                    f.unheld.add(mag)
+                    return r
+        return None
+
+
+def add_fill(f, crew_of, fill):
+    """Base-game (or ghost) vehicles into the gaps a mod leaves: (class, kind, display name[, ghost addon])."""
+    for row in fill:
+        cls, kind, disp = row[:3]
+        parent = "EGVAR(%s,%s)" % (row[3], cls) if len(row) > 3 else None
+        crew = "UAV_AI" if kind == "uav" else ""
+        f.add_vehicle({"class": cls, "crew": crew, "displayname": disp}, crew_of, kind, parent=parent)
+
+
+def crew_picker(f):
+    """The faction's own man for a vehicle: the helicopter pilot for helicopters, a fixed-wing pilot for planes when
+    there is one, a crewman who is not helicopter crew for armour - role() files HeliCrew and Crewman alike as crew."""
+    def crew_of(crew, kind, f=f):
+        pilots, crews = f.men.get("pilot", []), f.men.get("crew", [])
+        if kind.startswith("heli"):
+            pref = [m for m in pilots if "heli" in m.lower()]
+        elif kind.startswith("plane"):
+            pref = [m for m in pilots if "heli" not in m.lower()]
+        elif kind in ("tank", "apc", "aa", "arty"):
+            pref = [m for m in crews if "heli" not in m.lower()]
+        else:
+            pref = []
+        if pref:
+            return pref[0]
+        want = ("pilot",) if kind.startswith(("heli", "plane")) else ("crew",) if kind in ("tank", "apc", "aa", "arty") else ("rifleman",)
+        return f.pick(want + ("rifleman",))
+    return crew_of
+
+
+# 2040 DELHI ACCORD (user, 2026-10-06: "make a Delhi accord faction based on D:\work\tni fill in any gaps with base game
+# assets and we have a hind i believe in this mod give them that also only one camo for now they can have rams").
+# Asked: INDEPENDENT. The Rams are Reaction Forces' (the AAF set); Offroads stood in while the creator DLCs were out
+# (2026-10-05 to 10-06, "also cdlc are back").
+# Project TNI's own faction (ptni_faction, its Malvinas camo - the UN set is left out) for the men, armour, trucks and
+# cars; its helicopters need RHS / 3CB / RKSL and are skipped, so the air, AA, artillery, boats, drones, statics and
+# pilots are the base game's AAF / LDF, and the Hind is ghost_vehicle's Mi-35 Sokol.
+TNI_KIND = {"ptni_tank_base_f": "tank", "ptni_leopard": "tank", "b_ptni_mrap_01_gun_f": "car_armed"}
+DELHI_FILL = [
+    ("I_EAF_Heli_Attack_04_F", "heli_attack", "Mi-35 Sokol", "vehicle"),
+    ("I_Heli_light_03_dynamicLoadout_F", "heli_attack", "WY-55 Hellcat (Armed)"),
+    ("I_Heli_Transport_02_F", "heli_transport", "CH-49 Mohawk"),
+    ("I_Heli_light_03_unarmed_F", "heli_transport", "WY-55 Hellcat"),
+    ("I_Plane_Fighter_03_dynamicLoadout_F", "plane", "A-143 Buzzard"),
+    ("I_Plane_Fighter_04_F", "plane", "A-149 Gryphon"),
+    ("I_LT_01_AA_F", "aa", "AWC 302 Nyx (AA)"),
+    ("I_Truck_02_MRL_F", "arty", "Zamak MRL"),
+    ("I_Boat_Armed_01_minigun_F", "boat", "Speedboat Minigun"),
+    ("I_Boat_Transport_01_F", "boat", "Assault Boat"),
+    ("I_UAV_02_dynamicLoadout_F", "uav", "K40 Ababil-3"),
+    ("I_UGV_01_rcws_F", "uav", "UGV Stomper RCWS"),
+    ("I_HMG_01_high_F", "static", "Mk30 HMG .50 (Raised)"),
+    ("I_GMG_01_high_F", "static", "Mk32 GMG 20 mm (Raised)"),
+    ("I_static_AT_F", "static", "Static Titan Launcher (AT)"),
+    ("I_static_AA_F", "static", "Static Titan Launcher (AA)"),
+    ("I_Mortar_01_F", "static", "Mk6 Mortar"),
+    ("I_Truck_02_medical_F", "support_med", "Zamak Medical"),
+    ("I_Pickup_rf", "car", "Ram 1500"),
+    ("I_Pickup_Comms_rf", "car", "Ram 1500 (Comms)"),
+    ("I_Pickup_hmg_rf", "car_armed", "Ram 1500 (HMG)"),
+    ("I_Pickup_mmg_rf", "car_armed", "Ram 1500 (MMG)"),
+    ("I_Pickup_rcws_rf", "car_armed", "Ram 1500 (RCWS)"),
+    ("I_Pickup_aat_rf", "car_armed", "Ram 1500 (AT)"),
+]
+DELHI_PILOTS = [("I_helipilot_F", "Helicopter Pilot"), ("I_Pilot_F", "Pilot")]
+
+
+def build_delhi(fa_by_tag):
+    idx = load("tni")
+    fa = ChainFa(VanillaFa(), fa_by_tag["tni"])
+    meta = idx["classes"]["CfgFactionClasses"]["ptni_faction"]
+    f = Faction("faction_delhi", "2040 Delhi Accord", 2, 3, '"%s"' % meta.get("flag", meta["icon"]), '"%s"' % meta["icon"], 14)
+    f.weapons_db, f.camo = idx["weapons"], "woodland"
+    f.units_db = {u["class"].lower(): u for u in idx["units"]}
+    for u in idx["units"]:
+        if u["is_man"] and pub(u) and str(u.get("faction")) == "ptni_faction":
+            f.add_man(u, fa)
             f.patches.update(patch_of(idx, u))
-        # the old infantry groups, as they were
-        gt = open(os.path.join(BACKUP, old, "CfgGroups.hpp"), encoding="utf-8").read()
-        for cat in ("Infantry", "SpecOps"):
-            t = group_blocks(gt, cat)
-            if t:
-                f.kept_groups.append(t)
-        if os.path.exists(os.path.join(BACKUP, old, "CfgWeapons.hpp")):
-            f.weapons_text = open(os.path.join(BACKUP, old, "CfgWeapons.hpp"), encoding="utf-8").read()
-        out.append((f, "%s: the old China infantry (PLA Xingkong kit, its presets and infantry groups kept as they "
-                       "were) with the PLA Armored Vehicles Pack's vehicles only - the base Workshop pack, no add-ons. "
-                       "Generated by `tools/gen_mod_factions.py`." % display))
-    return out
+    for cls, disp in DELHI_PILOTS:
+        f.add_man({"class": cls, "displayname": disp}, None)
+    crew_of = crew_picker(f)
+    for u in idx["units"]:
+        if u["is_man"] or not pub(u) or str(u.get("faction")) != "ptni_faction" or not placeable_vehicle(u):
+            continue
+        f.add_vehicle(u, crew_of, TNI_KIND.get(u["class"].lower()) or vkind(u))
+        f.patches.update(patch_of(idx, u))
+    add_fill(f, crew_of, DELHI_FILL)
+    return [(f, "2040 Delhi Accord: Project TNI's Indonesian Armed Forces (its Malvinas camo) as an independent bloc - "
+                "its men, armour, trucks and cars - with the base game's AAF / LDF air, AA, artillery, boats, drones and "
+                "statics, Reaction Forces' Rams and ghost's own Mi-35 Hind. Generated by `tools/gen_mod_factions.py`.")]
+
+
+# 2040 ADF (user, 2026-10-06: "creat an adf based on D:\work\adf use their camo schemes fill in the blanks and gap with
+# base game assets no rams"; asked: "modern era camos only and modern era units also"). ADF Re-Cut's Modern-era faction
+# (ADFRC_F_MD): its AMCU soldiers, Commandos, Recon and SASR, its armour, cars, trucks, helicopters, C-130s and statics;
+# the base game's NATO jets, Cheetah, Scorcher / Sandstorm, boats and drones fill the rest. ADF Re-Cut's index has no
+# simulation for its vehicles, so their kinds are named here.
+def adf_kind(u):
+    c = u["class"].lower()
+    for pat, kind in ((r"apache", "heli_attack"), (r"blackhawk|chinook", "heli_transport"), (r"c130", "plane_transport"),
+                      (r"m1a", "tank"), (r"aslav_a\b|_mev", "support_med"), (r"aslav|boxer", "apc"),
+                      (r"bushmaster_pws", "car_armed"), (r"bushmaster", "car"), (r"hemtt_(ammo|fuel|flatbed|box)", "support"),
+                      (r"hemtt", "truck"), (r"lwagl|m252|m2qcb|rbs70|mml|fdc", "static")):
+        if re.search(pat, c):
+            return kind
+    return vkind(u)
+
+
+ADF_FILL = [
+    ("B_Plane_Fighter_01_F", "plane", "F/A-181 Black Wasp II"),
+    ("B_Plane_Fighter_01_Stealth_F", "plane", "F/A-181 Black Wasp II (Stealth)"),
+    ("B_APC_Tracked_01_AA_F", "aa", "IFV-6a Cheetah"),
+    ("B_MBT_01_arty_F", "arty", "M4 Scorcher"),
+    ("B_MBT_01_mlrs_F", "arty", "M5 Sandstorm MLRS"),
+    ("B_Boat_Armed_01_minigun_F", "boat", "Speedboat Minigun"),
+    ("B_Boat_Transport_01_F", "boat", "Assault Boat"),
+    ("B_UAV_02_dynamicLoadout_F", "uav", "MQ-4A Greyhawk"),
+    ("B_UGV_01_rcws_F", "uav", "UGV Stomper RCWS"),
+    ("B_static_AT_F", "static", "Static Titan Launcher (AT)"),
+]
+
+
+def build_adf(fa_by_tag):
+    idx = load("adf")
+    fa = ChainFa(VanillaFa(), fa_by_tag["adf"])
+    meta = idx["classes"]["CfgFactionClasses"]["ADFRC_F_MD"]
+    f = Faction("faction_adf", "2040 ADF", 1, 3, '"%s"' % meta["flag"], '"%s"' % meta["icon"], 15)
+    f.weapons_db, f.camo = idx["weapons"], "woodland"
+    f.units_db = {u["class"].lower(): u for u in idx["units"]}
+    M = idx["magazines"]
+
+    def real(m):
+        # ADF Re-Cut's soldiers list "ADFRC_100_Rnd_762_Belt_TR5" - nothing defines it; ADFRC_100Rnd_762_Belt_TR5 is
+        # the belt it means. A name nothing defines gets the one it was spelt from, when that one exists.
+        fixed = m.replace("_Rnd_", "Rnd_")
+        return fixed if m not in M and fixed in M else m
+    for u in idx["units"]:
+        if u["is_man"] and pub(u) and str(u.get("faction")) == "ADFRC_F_MD":
+            if any(real(m) != m for m in u.get("magazines") or []):
+                u = dict(u, magazines=[real(m) for m in u["magazines"]])
+            c = u["class"]
+            sf = "SASR" if "_SASR_" in c else "Commando" if "_CDO_" in c else "Recon" if "_Recon_" in c else None
+            f.add_man(u, fa, sf=sf)
+            f.patches.update(patch_of(idx, u))
+    crew_of = crew_picker(f)
+    for u in idx["units"]:
+        if u["is_man"] or not pub(u) or str(u.get("faction")) != "ADFRC_F_MD" or not placeable_vehicle(u):
+            continue
+        f.add_vehicle(u, crew_of, adf_kind(u))
+        f.patches.update(patch_of(idx, u))
+    add_fill(f, crew_of, ADF_FILL)
+    return [(f, "2040 ADF: ADF Re-Cut's Modern-era Australian Defence Force - its AMCU soldiers, Commandos, Recon and "
+                "SASR, its armour, cars, trucks, helicopters, C-130s and statics - with the base game's NATO jets, AA, "
+                "artillery, boats and drones in the gaps. Generated by `tools/gen_mod_factions.py`.")]
 
 
 def main():
     fa_by_tag = {
         "tmt": FaMod("tmt", "fa_tmt", "Future Ammunition - TMT", load("tmt"), ["tmt_weapon"]),
-        "minrf": FaMod("minrf", "fa_minrf", "Future Ammunition - 2035 Russia", load("minrf"), ["min_rf_wp"]),
+        # Delhi Accord / ADF (user, 2026-10-06: "they both need fa"): every weapons and magazine patch of the mod is
+        # required - the index does not say which PBO defines which weapon, and the patch must load after it
+        "tni": FaMod("tni", "fa_tni", "Future Ammunition - Project TNI", load("tni"), ["ptni_dmr_f", "ptni_pistol_f", "ptni_ss2_f"]),
+        "adf": FaMod("adf", "fa_adf", "Future Ammunition - ADF Re-Cut", load("adf"),
+                     sorted({p for k, v in load("adf")["patches"].items() if k.startswith(("ADF_Weapons\\", "ADF_Weapons2\\", "ADF_Weapons/", "ADF_Weapons2/")) or k in ("ADF_Weapons", "ADF_Weapons2") for p in v})),
     }
-    load_strings(r"D:/work/tmt", r"D:/work/2035russia", r"D:/work/pla2", r"D:/work/eu2035")
-    factions = build_turkey(fa_by_tag) + build_russia(fa_by_tag) + build_china() + build_eu()
+    load_strings(r"D:/work/tmt", r"D:/work/tni", r"D:/work/adf")
+    factions = build_turkey(fa_by_tag) + build_russia(fa_by_tag) + build_eu() + build_delhi(fa_by_tag) + build_adf(fa_by_tag)
     for f, intro in factions:
         n = f.write(intro)
         print("%-24s %4d units  %s" % (f.addon, n, dict((k, len(v)) for k, v in f.veh.items())))

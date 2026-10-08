@@ -228,9 +228,11 @@ _order sort true;
 if (_mySquad in keys _bySquad) then {_order = [_mySquad] + _order};
 
 [_root, [_pad, _y, _railW - 2 * _pad, _rowH], format ["ON NET - %1", count allPlayers], _mute, 0.62, true, "left", true] call FUNC(drawText);
-_y = _y + _rowH;
+// every row below - squad head or man - is _rowH * 0.9 tall and steps down onto itself before it draws
+_y = _y + _rowH - _rowH * 0.9;
 
 {
+    _y = _y + _rowH * 0.9;
     private _sq = _x;
     private _men = _bySquad getOrDefault [_sq, []];
     private _open = !(_sq in _fold);
@@ -259,15 +261,13 @@ _y = _y + _rowH;
     }] call FUNC(drawHit);
     _hit setVariable [QGVAR(squad), _sq];
 
-    _y = _y + _rowH * 0.9;
-
     if (_open) then {
         {
+            _y = _y + _rowH * 0.9;
             private _markH = 7 * pixelH;
             [_root, [_pad * 2, _y + (_rowH * 0.9 - _markH) * 0.5, 7 * pixelW, _markH], ([_dim, _ink] select (alive _x))] call FUNC(drawFill);
             [_root, [_pad * 3 + 7 * pixelW, _y, _railW * 0.58, _rowH * 0.9], name _x, ([_dim, _ink] select (alive _x)), 0.8] call FUNC(drawText);
             [_root, [_railW * 0.62, _y, _railW * 0.38 - _pad, _rowH * 0.9], [_x] call FUNC(roleShort), _mute, 0.6, true, "right", true] call FUNC(drawText);
-            _y = _y + _rowH * 0.9;
         } forEach _men;
     };
 } forEach _order;

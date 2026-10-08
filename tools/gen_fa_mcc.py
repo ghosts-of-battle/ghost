@@ -116,7 +116,7 @@ def fa_index():
     ammo, facts = {}, {}
     adir = os.path.join(ROOT, "addons")
     for a in sorted(os.listdir(adir)):
-        if not a.startswith("fa_") or a in ("fa_mcc", "fa_mpp", "fa_tiers", "fa_tiers_mods"):
+        if not a.startswith("fa_") or a in ("fa_mcc", "fa_mpp") or a.startswith("fa_tiers"):
             continue
         p = os.path.join(adir, a, "CfgAmmo.hpp")
         if os.path.exists(p):
@@ -124,7 +124,7 @@ def fa_index():
                 ammo.setdefault(c, a)
     for a in sorted(os.listdir(adir)):
         p = os.path.join(adir, a, "CfgMagazines.hpp")
-        if not a.startswith("fa_") or a in ("fa_mcc", "fa_mpp", "fa_tiers", "fa_tiers_mods") or not os.path.exists(p):
+        if not a.startswith("fa_") or a in ("fa_mcc", "fa_mpp") or a.startswith("fa_tiers") or not os.path.exists(p):
             continue
         mags = classes(strip_comments(open(p, encoding="utf-8").read()))
         for name, (parent, body) in mags.items():
@@ -255,7 +255,7 @@ def build(src_mags, src_wells, tag, mod_patch, ammo, facts):
 def write_addon(dst, comp, beaut, mod_prefix, mod_patch, blocks, into, need, bodies):
     os.makedirs(dst, exist_ok=True)
     fa = "ghostfa_" if mod_prefix == "ghostfa" else "ghost_fa_"
-    req = ['"cba_main"', '"ace_ballistics"', '"%sammo"' % fa] + ['"%s%s"' % (fa, n.replace("fa_", "")) for n in sorted(need)] + ['"%s"' % mod_patch]
+    req = ['"cba_main"', '"ace_ballistics"', '"%sammo"' % fa] + ['"%s%s"' % (fa, n.replace("fa_", "")) for n in sorted(need) if n != "fa_ammo"] + ['"%s"' % mod_patch]
     mags = [b.split("class ", 1)[1].split(":", 1)[0] for b in blocks]
 
     def w(name, text):

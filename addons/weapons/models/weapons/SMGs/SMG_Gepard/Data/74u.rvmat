@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="z\ghost\addons\weapons\models\weapons\SMGs\SMG_Gepard\Data\metal_detail_dt.paa";
+	texture="z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\metal_detail_dt.paa";
 	uvSource="tex";
 	class uvTransform
 	{

@@ -46,14 +46,14 @@ class CfgVehicles {
 
         // PISTOL ONLY, BY DESIGN. He observes and leaves; the Glock is what
         // he has when leaving stops being an option.
-        weapons[] = {"hgun_Glock19_auto_khk_RF","Throw","Put"};
-        respawnWeapons[] = {"hgun_Glock19_auto_khk_RF","Throw","Put"};
-        magazines[] = {"FA_rf_17Rnd_9x19_Mk422_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_rf_17Rnd_9x19_Mk422_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell"};
+        weapons[] = {"ghost_weapons_hgun_G17_khaki_F", "Throw", "Put"};
+        respawnWeapons[] = {"ghost_weapons_hgun_G17_khaki_F", "Throw", "Put"};
+        magazines[] = {"MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShell"};
         linkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","H_Booniehat_tna_F","ItemMap","ItemGPS","ItemCompass"};
         respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","H_Booniehat_tna_F","ItemMap","ItemGPS","ItemCompass"};
 
-        ALiVE_orbatCreator_loadout[] = {{},{},{"hgun_Glock19_auto_khk_RF","","","",{"17Rnd_9x19_Mag_RF",17},{},""},{"ghost_uniform_sof_SOF_U_B_SFFatigues_Shortsleeve_tna",{{"FirstAidKit",1},{"optic_NVS",1}}},{"V_CarrierRigKBT_01_light_Olive_F",{{"MiniGrenade",2,1},{"SmokeShell",2,1}}},{},"H_Booniehat_tna_F","",{},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{},{"ghost_weapons_hgun_G17_khaki_F","","","",{"ghost_weapons_17Rnd_9x21_Mag",17},{},""},{"ghost_uniform_sof_SOF_U_B_SFFatigues_Shortsleeve_tna",{{"FirstAidKit",1},{"optic_NVS",1}}},{"V_CarrierRigKBT_01_light_Olive_F",{{"MiniGrenade",2,1},{"SmokeShell",2,1}}},{},"H_Booniehat_tna_F","",{},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
 
         class EventHandlers {
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
@@ -77,14 +77,14 @@ class CfgVehicles {
 
         // PISTOL ONLY, BY DESIGN. He observes and leaves; the Glock is what
         // he has when leaving stops being an option.
-        weapons[] = {"hgun_Glock19_auto_khk_RF","Throw","Put"};
-        respawnWeapons[] = {"hgun_Glock19_auto_khk_RF","Throw","Put"};
-        magazines[] = {"FA_rf_17Rnd_9x19_Mk422_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_rf_17Rnd_9x19_Mk422_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell"};
+        weapons[] = {"ghost_weapons_hgun_G17_khaki_F", "Throw", "Put"};
+        respawnWeapons[] = {"ghost_weapons_hgun_G17_khaki_F", "Throw", "Put"};
+        magazines[] = {"MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShell"};
         linkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","ghost_headware_H_Booniehat_ocp_F","ItemMap","ItemGPS","ItemCompass"};
         respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","ghost_headware_H_Booniehat_ocp_F","ItemMap","ItemGPS","ItemCompass"};
 
-        ALiVE_orbatCreator_loadout[] = {{},{},{"hgun_Glock19_auto_khk_RF","","","",{"17Rnd_9x19_Mag_RF",17},{},""},{"ghost_uniform_sof_SOF_U_B_SFFatigues_Shortsleeve_ocp",{{"FirstAidKit",1},{"optic_NVS",1}}},{"V_CarrierRigKBT_01_light_Olive_F",{{"MiniGrenade",2,1},{"SmokeShell",2,1}}},{},"ghost_headware_H_Booniehat_ocp_F","",{},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{},{"ghost_weapons_hgun_G17_khaki_F","","","",{"ghost_weapons_17Rnd_9x21_Mag",17},{},""},{"ghost_uniform_sof_SOF_U_B_SFFatigues_Shortsleeve_ocp",{{"FirstAidKit",1},{"optic_NVS",1}}},{"V_CarrierRigKBT_01_light_Olive_F",{{"MiniGrenade",2,1},{"SmokeShell",2,1}}},{},"ghost_headware_H_Booniehat_ocp_F","",{},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
 
         class EventHandlers {
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
@@ -108,14 +108,14 @@ class CfgVehicles {
 
         // PISTOL ONLY, BY DESIGN. He observes and leaves; the Glock is what
         // he has when leaving stops being an option.
-        weapons[] = {"hgun_Glock19_auto_khk_RF","Throw","Put"};
-        respawnWeapons[] = {"hgun_Glock19_auto_khk_RF","Throw","Put"};
-        magazines[] = {"FA_rf_17Rnd_9x19_Mk422_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_rf_17Rnd_9x19_Mk422_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell"};
+        weapons[] = {"ghost_weapons_hgun_G17_khaki_F", "Throw", "Put"};
+        respawnWeapons[] = {"ghost_weapons_hgun_G17_khaki_F", "Throw", "Put"};
+        magazines[] = {"MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShell"};
         linkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","ghost_headware_H_Booniehat_Multicam_Woodland_F","ItemMap","ItemGPS","ItemCompass"};
         respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","ghost_headware_H_Booniehat_Multicam_Woodland_F","ItemMap","ItemGPS","ItemCompass"};
 
-        ALiVE_orbatCreator_loadout[] = {{},{},{"hgun_Glock19_auto_khk_RF","","","",{"17Rnd_9x19_Mag_RF",17},{},""},{"ghost_uniform_sof_SOF_U_B_SFFatigues_Shortsleeve_wdl",{{"FirstAidKit",1},{"optic_NVS",1}}},{"V_CarrierRigKBT_01_light_Olive_F",{{"MiniGrenade",2,1},{"SmokeShell",2,1}}},{},"ghost_headware_H_Booniehat_Multicam_Woodland_F","",{},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{},{"ghost_weapons_hgun_G17_khaki_F","","","",{"ghost_weapons_17Rnd_9x21_Mag",17},{},""},{"ghost_uniform_sof_SOF_U_B_SFFatigues_Shortsleeve_wdl",{{"FirstAidKit",1},{"optic_NVS",1}}},{"V_CarrierRigKBT_01_light_Olive_F",{{"MiniGrenade",2,1},{"SmokeShell",2,1}}},{},"ghost_headware_H_Booniehat_Multicam_Woodland_F","",{},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
 
         class EventHandlers {
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
@@ -139,14 +139,14 @@ class CfgVehicles {
 
         // PISTOL ONLY, BY DESIGN. He observes and leaves; the Glock is what
         // he has when leaving stops being an option.
-        weapons[] = {"hgun_Glock19_auto_khk_RF","Throw","Put"};
-        respawnWeapons[] = {"hgun_Glock19_auto_khk_RF","Throw","Put"};
-        magazines[] = {"FA_rf_17Rnd_9x19_Mk422_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_rf_17Rnd_9x19_Mk422_AP_t3","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell"};
+        weapons[] = {"ghost_weapons_hgun_G17_khaki_F", "Throw", "Put"};
+        respawnWeapons[] = {"ghost_weapons_hgun_G17_khaki_F", "Throw", "Put"};
+        magazines[] = {"MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShell"};
         linkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","ghost_headware_H_Booniehat_Multicam_F","ItemMap","ItemGPS","ItemCompass"};
         respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","ghost_headware_H_Booniehat_Multicam_F","ItemMap","ItemGPS","ItemCompass"};
 
-        ALiVE_orbatCreator_loadout[] = {{},{},{"hgun_Glock19_auto_khk_RF","","","",{"17Rnd_9x19_Mag_RF",17},{},""},{"ghost_uniform_sof_SOF_U_B_SFFatigues_Shortsleeve_mcam",{{"FirstAidKit",1},{"optic_NVS",1}}},{"V_CarrierRigKBT_01_light_Olive_F",{{"MiniGrenade",2,1},{"SmokeShell",2,1}}},{},"ghost_headware_H_Booniehat_Multicam_F","",{},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
+        ALiVE_orbatCreator_loadout[] = {{},{},{"ghost_weapons_hgun_G17_khaki_F","","","",{"ghost_weapons_17Rnd_9x21_Mag",17},{},""},{"ghost_uniform_sof_SOF_U_B_SFFatigues_Shortsleeve_mcam",{{"FirstAidKit",1},{"optic_NVS",1}}},{"V_CarrierRigKBT_01_light_Olive_F",{{"MiniGrenade",2,1},{"SmokeShell",2,1}}},{},"ghost_headware_H_Booniehat_Multicam_F","",{},{"ItemMap","ItemGPS","","ItemCompass","ACE_Altimeter",""}};
 
         class EventHandlers {
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};

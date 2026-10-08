@@ -242,9 +242,16 @@ built on that footing, in the order section 9 sets.
 
 PURGED NAMES NOT RESURRECTED: electronic_war_zones, drones, kamikaze,
 intel_hunt, objective_watch, insurgency, deception, traffic, enemy_force,
-iads, ciws, aircraft, ambient_*, base_defense, friendly_ops,
+ciws, aircraft, ambient_*, base_defense, friendly_ops,
 counter_battery. Carried-over MECHANISMS live under new names or inside the
 addon that owns them.
+
+RESTORED 2026-10-07 (user: "do we still have integrated aa" ... "all 3"): `iads` (radar emission
+control, shared datalink picture, threat-board reports) and `airdefence`, from ee1e25a9 as they
+were deleted. The full air-defence system the user asked for after it - munition interception,
+coordinated Sites, CIWS, emission control, warnings as ghost notices, its status and controls in
+ghost's own UI - is designed in docs/DESIGN_AIR_DEFENCE.md and built the same day as `adsite` (the engaging
+brain; `airdefence` places, `iads` runs the radars). Unverified in game: `#ghost adsite.probe`, then TESTS.md s12.
 
 Setup a mission needs: an ALiVE commander or two, and a `ghost_prison`
 marker. The intel drop is an ITEM (Intel Drop Case) - deploy it where the
@@ -300,3 +307,78 @@ multi-select list, "(unrecognised)" rows for stored names the list does not
 know, and a typed override. Per-side fields have the side fixed. Handlers
 are ghost_common's (listClasses, edenClassPickLoad/Save). The wire format is
 unchanged - a comma-separated string - so no read site moved. NOT RUN IN EDEN.
+
+### Qualification arsenals (2026-10-07)
+
+A PAC skill can now carry `arsenal:<name>`: holding it adds the arsenal
+document `<unit>.arsenal.qual_<NAME>` (same slug rule as plt_/sqd_/role_) as
+one more layer after common, platoon, squad and role. `pac` applySkills keeps
+the list on the unit and raises `ghost_pac_arsenalChanged` when it changes;
+so do the structure and settings republishes. `groups` buildArsenal (the
+arsenal block moved out of setupPlayer) rebuilds from scratch on that event,
+so a skill granted or taken away mid-mission shows in the arsenal with no
+respawn. PAC setting `arsenalMode`: `role` (role lists only), `traits`
+(qualification lists only), `both` (default). GHOST data: skills Marksman
+and Breacher added, Medic/ISR/Pilot given `arsenal:` effects; qual_MARKSMAN
+holds the AXMC/HK417, their magazines and the long optics, moved out of the
+common arsenal; qual_MEDIC/BREACHER/ISR/PILOT exist empty. NOT RUN IN GAME.
+Same day: a role's `defaultSkills` ("Skills it grants") - stored and edited
+on the role page and the website since 2026-09 but applied by nothing - now
+apply. `pac` applySkills adds the current role's grants (YMF_role) to the
+man's own PAC skills, so role skills and personal qualifications are held at
+once; changing role drops the old role's grants. NOT RUN IN GAME.
+Same day: Pilot and Medic are roles, not traits - both skills removed from
+GHOST.skills (and from the players holding them; qual_PILOT/qual_MEDIC were
+empty and deleted; pilotTalon no longer requires pilot). Because PAC owns the
+ACE classes, a role's own ace_medical_medicClass / ACE_IsEngineer / ACE_isEOD
+were being reset to 0 and skipped on the role; applySkills now applies the
+role's values first as a floor and a trait can only raise them. NOT RUN IN GAME.
+Same day: the role floor in applySkills also covers job flags a trait sets
+(isLeader, isJFO, isISR, UAVHacker - any name managedNames reports): a role's
+true goes on, so a JTAC is a JFO without holding the JFO trait. NOT RUN IN GAME.
+Same day, GHOST data and display: Demo and Medical roles removed (their slots
+are Recon; GHOST 6 is Commander, XO and six Staff - staffC2 from isrC2); the
+JTAC/ISR/Security/Medical C2 roles went with it. Medic is a SKILL again
+(medic:2 + arsenal:medic; qual_MEDIC holds the medic bags, kitbags, surgical
+kit, PAK and medical drone). Role names lost their orbat suffix. Both orbats
+run the common arsenal (arsenalVersion ""). They are called SKILLS, not
+traits: arsenalMode is role | skills | both ("traits" still read as skills).
+PAC puts each man's skill abbreviations on him (ghost_pac_skillTags, public,
+MED first); the tacpad role tag, the HUD squad list, the BFT map label and the
+slot menu show them. ACE name tags cannot. NOT RUN IN GAME.
+CORRECTION, same day (user: "ace traits come from skills, role is your slot in
+the team"): the role floor in applySkills is removed. ACE medic/engineer/EOD and
+the leader/JFO/ISR/UAV flags come from skills only (a role's own values are
+skipped by groups and reset by PAC, as before). Two skills setting one class
+give the higher. A role touches skills only through its "Skills it grants".
+Same day: Leader is a ROLE, not a skill - the lead skill is gone (and off its 4
+holders); with no skill claiming isLeader, groups applies each role's own
+isLeader again. Admin panel = THIS OP ONLY, PAC record = permanent (user): the
+Player Skills box now gives PAC skills for the mission (none/CLS/Medic,
+none/Engineer/Adv, BRC, ISR, JFO, DRA, UAV, MKS, SNP; LEAD gone) through the new
+ghost_pac_fnc_sessionSkills - server-side by Steam id in ghost_pac_session,
+published, so respawns and rejoins keep it until the mission ends; never
+stored. applySkills reads "skill:<id>" entries as whole skills (effects,
+arsenal, tag). The old respawn wipe of tempEffects is gone. NOT RUN IN GAME.
+Same day: BRASS and NIGHT BRASS colour schemes, the briefing deck's palette
+(#f4f2ec / #1c2321 / #7a6224 by day, #1c2321 / #f4f2ec / #c8a24a by night) -
+tacpad fnc_theme, the CBA setting, the settings app's preset cards (so TAC//PAC,
+which paints with the tacpad theme, has them too) and DIVINER_Web's
+GHOSTD_MOD_SCHEMES. NOT RUN IN GAME.
+Same day: the GHOST order of battle "vanilla" is now "default" (GHOST.orbat.default,
+currentOrbat default) and the "vanilla" suffix is gone from every squad and
+platoon name - in both orbat documents, the radio plan and the player records.
+The tropical orbat and its 25 roles are deleted (no player held one). Every
+player-side Ghost uniform (uniform, uniform_sof, uniform_eu) was already in the
+default arsenal. The motorpool version is still named "vanilla".
+
+### ACM (2026-10-07)
+
+New addon `acm`, loaded only with Advanced Combat Medicine (skipWhenMissing on
+ACM's CfgPatches). Its preInit re-defaults ACM's treatment gates to Ghost's two
+tiers - CLS = ACE medic 1, Medic = 2 - per the user's tier table, and re-defaults
+the five ghost_medbags contents to ACM kit (O- blood, vials and syringes, airway
+and chest kit). ghost_acm_fnc_setDefault re-registers a setting from CBA's own
+record with only the default changed, so titles, lists and scripts survive and
+any server/mission/player value still wins. ACE's medic* gates are left alone:
+ghost_cba_settings forces them. NOT RUN IN GAME.

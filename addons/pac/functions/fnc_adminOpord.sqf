@@ -56,7 +56,7 @@ switch (_op) do {
         private _sec = _o getOrDefault [_section, createHashMap];
         if !(_sec isEqualType createHashMap) then {_sec = createHashMap};
         {
-            if (_y isEqualType "" || _y isEqualType []) then {_sec set [_x, _y]};
+            if (_y isEqualTypeAny ["", []]) then {_sec set [_x, _y]};
         } forEach _fields;
         _o set [_section, _sec];
         _opords set [_id, _o];

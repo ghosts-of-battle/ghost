@@ -143,7 +143,7 @@ private _written = 0;
         private _joined = [_nowMin - 8 * 1440 - 180 + (_i mod 4) * 10] call FUNC(minutesStamp);
         private _left = [_nowMin - 8 * 1440 - (_i mod 3) * 15] call FUNC(minutesStamp);
         private _row = [_uid, _name, _joined, _left, _left, SAMPLE_WINDOW];
-        if !(_row in GVAR(sessions)) then {GVAR(sessions) pushBack _row};
+        GVAR(sessions) pushBackUnique _row;
     };
 } forEach _people;
 

@@ -14,4 +14,4 @@ A content pack: 26 unit classes and 14 weapon and item classes. No scripted beha
 
 ## Ships
 
-240 unit classes, 26 weapon/item classes.
+220 unit classes, 26 weapon/item classes.

@@ -60,7 +60,7 @@ private _out = switch (_section) do {
     // CLS read green down the whole section at a glance (user, 2026-09-05).
     case "skills": {[
         ["abbrev", "t", "ABBREV", "2-4 letters for the squad panel, e.g. MED; empty = the id in capitals"],
-        ["effects", "a", "EFFECTS", "comma-separated: medic:2, engineer:1, eod:1, trait:isJFO, var:name=value"],
+        ["effects", "a", "EFFECTS", "comma-separated: medic:2, engineer:1, eod:1, trait:isJFO, var:name=value, arsenal:marksman"],
         ["color", "t", "COLOUR", "R,G,B 0-255 for the skill letters on the squad panel, e.g. 76,175,80; empty = the ink colour"]
     ]};
     case "awards": {[
@@ -90,7 +90,7 @@ private _out = switch (_section) do {
     // NAME is the description here, and it is not editable - the setting's
     // meaning is not the admin's to rewrite. Only VALUE is.
     case "settings": {[
-        ["value", "t", "VALUE", "autoSlot 1 or 0 - slotMatch role or slot - savedLoadouts a count, 0 for off"]
+        ["value", "t", "VALUE", "autoSlot 1 or 0 - slotMatch role or slot - arsenalMode role, skills or both - savedLoadouts a count, 0 for off"]
     ]};
     case "promotion": {[
         ["value", "n", "VALUE", "points per unit for a weight (hour, op, serviceMonth, gradeMonth, training, award); points required for a rank_<rankId> rung"]

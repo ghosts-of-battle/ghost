@@ -764,58 +764,6 @@ class CfgMagazineWells {
             "FA_b_20Rnd_762_XM751_CTEP_T_IR_t2"
         };
     };
-    class Atlas_FAMAS_556x54 {
-        ADDON[] += {
-            "FA_b_30Rnd_556_Mk327_HV_t4",
-            "FA_b_30Rnd_556_Mk327_HV_t3",
-            "FA_b_30Rnd_556_Mk327_HV_t2",
-            "FA_b_30Rnd_556_Mk327_HV_T_Red_t4",
-            "FA_b_30Rnd_556_Mk327_HV_T_Red_t3",
-            "FA_b_30Rnd_556_Mk327_HV_T_Red_t2",
-            "FA_b_30Rnd_556_Mk327_HV_T_Yellow_t4",
-            "FA_b_30Rnd_556_Mk327_HV_T_Yellow_t3",
-            "FA_b_30Rnd_556_Mk327_HV_T_Yellow_t2",
-            "FA_b_30Rnd_556_Mk327_HV_T_Green_t4",
-            "FA_b_30Rnd_556_Mk327_HV_T_Green_t3",
-            "FA_b_30Rnd_556_Mk327_HV_T_Green_t2",
-            "FA_b_30Rnd_556_Mk327_HV_T_White_t4",
-            "FA_b_30Rnd_556_Mk327_HV_T_White_t3",
-            "FA_b_30Rnd_556_Mk327_HV_T_White_t2",
-            "FA_b_30Rnd_556_Mk327_HV_T_Blue_t4",
-            "FA_b_30Rnd_556_Mk327_HV_T_Blue_t3",
-            "FA_b_30Rnd_556_Mk327_HV_T_Blue_t2",
-            "FA_b_30Rnd_556_Mk327_HV_T_Orange_t4",
-            "FA_b_30Rnd_556_Mk327_HV_T_Orange_t3",
-            "FA_b_30Rnd_556_Mk327_HV_T_Orange_t2",
-            "FA_b_30Rnd_556_Mk327_HV_T_IR_t4",
-            "FA_b_30Rnd_556_Mk327_HV_T_IR_t3",
-            "FA_b_30Rnd_556_Mk327_HV_T_IR_t2",
-            "FA_b_30Rnd_556_XM891_CTEP_t4",
-            "FA_b_30Rnd_556_XM891_CTEP_t3",
-            "FA_b_30Rnd_556_XM891_CTEP_t2",
-            "FA_b_30Rnd_556_XM891_CTEP_T_Red_t4",
-            "FA_b_30Rnd_556_XM891_CTEP_T_Red_t3",
-            "FA_b_30Rnd_556_XM891_CTEP_T_Red_t2",
-            "FA_b_30Rnd_556_XM891_CTEP_T_Yellow_t4",
-            "FA_b_30Rnd_556_XM891_CTEP_T_Yellow_t3",
-            "FA_b_30Rnd_556_XM891_CTEP_T_Yellow_t2",
-            "FA_b_30Rnd_556_XM891_CTEP_T_Green_t4",
-            "FA_b_30Rnd_556_XM891_CTEP_T_Green_t3",
-            "FA_b_30Rnd_556_XM891_CTEP_T_Green_t2",
-            "FA_b_30Rnd_556_XM891_CTEP_T_White_t4",
-            "FA_b_30Rnd_556_XM891_CTEP_T_White_t3",
-            "FA_b_30Rnd_556_XM891_CTEP_T_White_t2",
-            "FA_b_30Rnd_556_XM891_CTEP_T_Blue_t4",
-            "FA_b_30Rnd_556_XM891_CTEP_T_Blue_t3",
-            "FA_b_30Rnd_556_XM891_CTEP_T_Blue_t2",
-            "FA_b_30Rnd_556_XM891_CTEP_T_Orange_t4",
-            "FA_b_30Rnd_556_XM891_CTEP_T_Orange_t3",
-            "FA_b_30Rnd_556_XM891_CTEP_T_Orange_t2",
-            "FA_b_30Rnd_556_XM891_CTEP_T_IR_t4",
-            "FA_b_30Rnd_556_XM891_CTEP_T_IR_t3",
-            "FA_b_30Rnd_556_XM891_CTEP_T_IR_t2"
-        };
-    };
     class CBA_145x114_PTRS {
         ADDON[] += {
             "FA_o_5Rnd_145_7N60_t4",

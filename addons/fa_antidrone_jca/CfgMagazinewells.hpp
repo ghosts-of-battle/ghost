@@ -1,4 +1,4 @@
-class CfgMagazinewells {
+class CfgMagazineWells {
     class STANAG_556x45 {
         ADDON[] += {
             "FA_JCA_30Rnd_556x45_Green_PMAG_Mk361_PAB",

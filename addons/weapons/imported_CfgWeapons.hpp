@@ -102,13 +102,13 @@
         bullet11[] = {"\A3\Sounds_F\weapons\Shells\Shotgun\grass_shotgun_03", "db-6", 1, 15};
         bullet12[] = {"\A3\Sounds_F\weapons\Shells\Shotgun\grass_shotgun_04", "db-6", 1, 15};
         soundBullet[] = {"bullet1", 0.08333333333333333, "bullet2", 0.08333333333333333, "bullet3", 0.08333333333333333, "bullet4", 0.08333333333333333, "bullet5", 0.08333333333333333, "bullet6", 0.08333333333333333, "bullet7", 0.08333333333333333, "bullet8", 0.08333333333333333, "bullet9", 0.08333333333333333, "bullet10", 0.08333333333333333, "bullet11", 0.08333333333333333, "bullet12", 0.08333333333333333};
-        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_dry", "db-3", 1, 10};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_reload", "db0", 1, 10};
+        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_dry.ogg", "db-3", 1, 10};
+        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_reload.ogg", "db0", 1, 10};
         class WeaponSlotsInfo: WeaponSlotsInfo {
             mass = 140;
             class MuzzleSlot: asdg_MuzzleSlot {
                 linkProxy = "\A3\Data_F\proxies\weapon_slots\MUZZLE";
-                compatibleItems[] = {"muzzle_snds_12Gauge_lxWS", "muzzle_snds_12Gauge_snake_lxWS"};
+                compatibleItems[] = {};
                 iconPosition[] = {-0.02, 0.41};
                 iconScale = 0.2;
             };
@@ -543,174 +543,6 @@
         picture = "\z\ghost\addons\weapons\models\weapons\Acc\Data\UI\icon_muzzle_snds_enhanced_khaki_CA.paa";
         model = "\z\ghost\addons\weapons\models\weapons\Acc\acca_snds_enhanced_khaki_F.p3d";
     };
-    class GVAR(GL_M32_F): Rifle_Base_F {
-        author = "Avery Kaiserin";
-        baseWeapon = QGVAR(GL_M32_F);
-        scope = 2;
-        displayName = "M32 40 mm";
-        model = "\z\ghost\addons\weapons\models\weapons\GrenadeLaunchers\M32\M32_F.p3d";
-        picture = "\z\ghost\addons\weapons\models\weapons\GrenadeLaunchers\M32\Data\UI\icon_GL_M32_F_X_ca.paa";
-        UiPicture = "\A3\Weapons_F\Data\UI\icon_gl_CA.paa";
-        magazines[] = {QGVAR(6Rnd_HE_Grenade_shell), QGVAR(6Rnd_HEDP_Grenade_shell), QGVAR(6Rnd_UGL_FlareWhite_F), QGVAR(6Rnd_UGL_FlareGreen_F), QGVAR(6Rnd_UGL_FlareRed_F), QGVAR(6Rnd_UGL_FlareYellow_F), QGVAR(6Rnd_UGL_FlareCIR_F), QGVAR(6Rnd_Smoke_Grenade_shell), QGVAR(6Rnd_SmokeRed_Grenade_shell), QGVAR(6Rnd_SmokeGreen_Grenade_shell), QGVAR(6Rnd_SmokeYellow_Grenade_shell), QGVAR(6Rnd_SmokePurple_Grenade_shell), QGVAR(6Rnd_SmokeBlue_Grenade_shell), QGVAR(6Rnd_SmokeOrange_Grenade_shell), QGVAR(6Rnd_APERSMine_Grenade_shell)};
-        magazineWell[] = {QGVAR(M32_40x36)};
-        cursor = QGVAR(mgl);
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\GrenadeLaunchers\M32\Data\Anim\M32.rtm"};
-        recoil = "recoil_default";
-        htMin = 1;
-        htMax = 600;
-        afMax = 0;
-        mfMax = 0;
-        mFact = 1;
-        tBody = 100;
-        maxZeroing = 400;
-        modes[] = {"Single"};
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\GrenadeLaunchers\M32\Data\AO_CO.paa"};
-        useModelOptics = 0;
-        useExternalOptic = 0;
-        cameraDir = "OP_look";
-        discreteDistance[] = {50, 75, 100, 150, 200, 250};
-        discreteDistanceCameraPoint[] = {"OP_eye_50", "OP_eye_75", "OP_eye_100", "OP_eye_150", "OP_eye_200", "OP_eye_250"};
-        discreteDistanceInitIndex = 1;
-        initSpeed = -1;
-        descriptionShort = "Grenade Launcher";
-        inertia = 0.9;
-        aimTransitionSpeed = 0.8;
-        dexterity = 1.2;
-        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\M32\M32_dry", "db-8", 1, 20};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\M32\M32_reload", "db0", 1, 30};
-        class Single: Mode_SemiAuto {
-            sounds[] = {"StandardSound"};
-            reloadTime = 0.25;
-            dispersion = 0.00203;
-            minRange = 0;
-            minRangeProbab = 0.1;
-            midRange = 200;
-            midRangeProbab = 0.7;
-            maxRange = 400;
-            maxRangeProbab = 0.05;
-            class BaseSoundModeType;
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {"UGL_Shot_SoundSet", "UGL_Tail_SoundSet", "UGL_InteriorTail_SoundSet"};
-            };
-        };
-        class Library {
-            libTextDesc = "The M32 is a lightweight 40 mm semi-automatic, 6-shot grenade launcher. It is intended to increase a small squad's firepower when compared to traditional single-shot underslung grenade launchers.";
-        };
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 116;
-            class MuzzleSlot {
-            };
-            class CowsSlot {
-            };
-            class PointerSlot: asdg_FrontSideRail {
-                iconPosition[] = {0.35, 0.45};
-                iconScale = 0.2;
-            };
-        };
-        class GunParticles {
-            class effect1 {
-                positionName = "usti hlavne";
-                directionName = "konec hlavne";
-                effectName = "GrenadeLauncherCloud";
-            };
-        };
-    };
-    class GVAR(GL_XM25_F): Rifle_Base_F {
-        author = "Avery Kaiserin and Ataboo";
-        baseWeapon = QGVAR(GL_XM25_F);
-        scope = 2;
-        displayName = "Punisher 25 mm";
-        model = "\z\ghost\addons\weapons\models\weapons\GrenadeLaunchers\XM25\XM25_F.p3d";
-        picture = "\z\ghost\addons\weapons\models\weapons\GrenadeLaunchers\XM25\Data\UI\icon_GL_XM25_F_x_ca.paa";
-        UiPicture = "\A3\Weapons_F\Data\UI\icon_gl_CA.paa";
-        modelOptics = "\z\ghost\addons\weapons\models\weapons\Acc\reticle_punisher.p3d";
-        magazines[] = {QGVAR(5Rnd_25x40mm_HE), QGVAR(5Rnd_25x40mm_airburst)};
-        magazineWell[] = {QGVAR(XM25_25x40)};
-        cursor = QGVAR(mgl);
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\GrenadeLaunchers\XM25\Data\Anim\XM25.rtm"};
-        reloadAction = "GestureReloadKatiba";
-        recoil = "recoil_default";
-        htMin = 1;
-        htMax = 600;
-        afMax = 0;
-        mfMax = 0;
-        mFact = 1;
-        tBody = 100;
-        maxZeroing = 1000;
-        modes[] = {"Single"};
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\GrenadeLaunchers\XM25\Data\XM25_CO.paa"};
-        initSpeed = 210;
-        descriptionShort = "Grenade Launcher";
-        inertia = 0.8;
-        aimTransitionSpeed = 0.8;
-        dexterity = 1.2;
-        opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
-        opticsZoomMin = 0.1875;
-        opticsZoomMax = 0.0625;
-        opticsZoomInit = 0.1875;
-        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\XM25\XM25_dry", "db-8", 1, 20};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\XM25\XM25_reload", "db0", 1, 30};
-        class Single: Mode_SemiAuto {
-            sounds[] = {"StandardSound"};
-            reloadTime = 0.25;
-            dispersion = 0.00102;
-            minRange = 0;
-            minRangeProbab = 0.1;
-            midRange = 500;
-            midRangeProbab = 0.7;
-            maxRange = 1000;
-            maxRangeProbab = 0.05;
-            class BaseSoundModeType;
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {QGVAR(XM25_Shot_SoundSet), QGVAR(XM25_Tail_SoundSet), QGVAR(XM25_InteriorTail_SoundSet)};
-            };
-        };
-        class Library {
-            libTextDesc = "The Punisher is an airburst grenade launcher chambered to fire 25x40 mm grenades. It is programmable, allowing the user to manually adjust the detonating distance.";
-        };
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 240;
-            class MuzzleSlot {
-            };
-            class CowsSlot {
-            };
-            class PointerSlot {
-            };
-        };
-        class OpticsModes {
-            class optic {
-                opticsID = 1;
-                useModelOptics = 1;
-                opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
-                opticsFlare = 1;
-                opticsZoomMin = 0.1875;
-                opticsZoomMax = 0.0625;
-                opticsZoomInit = 0.1875;
-                distanceZoomMin = 100;
-                distanceZoomMax = 100;
-                memoryPointCamera = "eye";
-                cameraDir = "look";
-                visionMode[] = {"Normal", "NVG", "Ti"};
-                thermalMode[] = {2, 3};
-                opticsDisablePeripherialVision = 1;
-                discretefov[] = {0.1875, 0.0625};
-                discreteInitIndex = 0;
-            };
-        };
-        class GunParticles {
-            class effect1 {
-                positionName = "usti hlavne";
-                directionName = "konec hlavne";
-                effectName = "GrenadeLauncherCloud";
-            };
-        };
-        class EventHandlers {
-            class Aegis {
-            };
-        };
-    };
     class GVAR(hgun_G17_F): Pistol_Base_F {
         author = "Avery Kaiserin";
         baseWeapon = QGVAR(hgun_G17_F);
@@ -745,8 +577,8 @@
         bullet11[] = {"\A3\Sounds_F\weapons\Shells\9mm\grass_9mm_03", "db-13", 1, 15};
         bullet12[] = {"\A3\Sounds_F\weapons\Shells\9mm\grass_9mm_04", "db-13", 1, 15};
         soundBullet[] = {"bullet1", 0.08333333333333333, "bullet2", 0.08333333333333333, "bullet3", 0.08333333333333333, "bullet4", 0.08333333333333333, "bullet5", 0.08333333333333333, "bullet6", 0.08333333333333333, "bullet7", 0.08333333333333333, "bullet8", 0.08333333333333333, "bullet9", 0.08333333333333333, "bullet10", 0.08333333333333333, "bullet11", 0.08333333333333333, "bullet12", 0.08333333333333333};
-        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_dry", "db-8", 1, 20};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_reload", "db0", 1, 10};
+        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_dry.ogg", "db-8", 1, 20};
+        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_reload.ogg", "db0", 1, 10};
         class Single: Mode_SemiAuto {
             reloadTime = 0.13;
             dispersion = 0.0029;
@@ -838,8 +670,8 @@
         bullet11[] = {"\A3\Sounds_F\weapons\Shells\9mm\grass_9mm_03", "db-13", 1, 15};
         bullet12[] = {"\A3\Sounds_F\weapons\Shells\9mm\grass_9mm_04", "db-13", 1, 15};
         soundBullet[] = {"bullet1", 0.08333333333333333, "bullet2", 0.08333333333333333, "bullet3", 0.08333333333333333, "bullet4", 0.08333333333333333, "bullet5", 0.08333333333333333, "bullet6", 0.08333333333333333, "bullet7", 0.08333333333333333, "bullet8", 0.08333333333333333, "bullet9", 0.08333333333333333, "bullet10", 0.08333333333333333, "bullet11", 0.08333333333333333, "bullet12", 0.08333333333333333};
-        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_dry", "db-8", 1, 20};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_reload", "db0", 1, 30};
+        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_dry.ogg", "db-8", 1, 20};
+        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_reload.ogg", "db0", 1, 30};
         class Library {
             libTextDesc = "The Mk26 is an American semi-automatic pistol notable for the number of large calibres it can be chambered in, such as .50AE and .44 Magnum, and for being over-represented in action movies from the 80s. The L4 is an older, larger model that nonetheless remains popular, especially in Israel, compared to the more modern L5 due to better handling and an underbarrel rail for taking attachments such as flashlights and lasers.";
         };
@@ -870,296 +702,6 @@
             class PointerSlot: asdg_PistolUnderRail {
                 iconPosition[] = {0.35, 0.47};
                 iconScale = 0.3;
-            };
-        };
-    };
-    class GVAR(arifle_AKM74_F): arifle_AKM_F {
-        author = "POLPOX and Toadie2k";
-        descriptionShort = "Assault Rifle<br />Caliber: 5.45x39 mm";
-        baseWeapon = QGVAR(arifle_AKM74_F);
-        scope = 2;
-        displayName = "AK-74M 5.45 mm";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AKM74_F.paa";
-        hiddenSelections[] = {"camo1", "camo2", "camo4", "camo5"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_adds_co.paa", "\z\ghost\addons\weapons\models\weapons\Shotguns\Mp153\Data\Mp153_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak_mount_co.paa"};
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\Anim\ak74m.rtm"};
-        recoil = "recoil_aks";
-        inertia = 0.5;
-        initSpeed = 880;
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\ak74m.p3d";
-        reloadAction = QGVAR(GestureReloadAKM74);
-        magazines[] = {QGVAR(30Rnd_545x39_Black_Mag_Yellow_F), QGVAR(30Rnd_545x39_Black_Mag_F), QGVAR(30Rnd_545x39_Black_Mag_Tracer_Yellow_F), QGVAR(30Rnd_545x39_Black_Mag_Tracer_F), "30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_Green_F", "30Rnd_545x39_Mag_Tracer_F", "30Rnd_545x39_Mag_Tracer_Green_F"};
-        magazineWell[] = {"AK_545x39"};
-        drySound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\Rifle_AK74\AK74_dry", 0.17782794, 1, 10};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\Rifle_AK74\AK74_reload", 1.0, 1, 10};
-        changeFiremodeSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\Rifle_AK74\AK74_firemode", 0.17782794, 1, 5};
-        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 100;
-            class CowsSlot: CowsSlot_Rail {
-                iconPosition[] = {0.55, 0.28};
-                iconScale = 0.2;
-            };
-            class MuzzleSlot: asdg_MuzzleSlot_545R {
-                iconPosition[] = {-0.02, 0.41};
-                iconScale = 0.2;
-            };
-            class UnderBarrelSlot {
-            };
-            class PointerSlot: asdg_PistolUnderRail {
-                iconPosition[] = {0.2, 0.44};
-                iconScale = 0.2;
-            };
-        };
-        class Library {
-            libTextDesc = "The AK-74 is an assault rifle designed by Mikhail Kalashnikov in the 1970s, chambered in the 5.45 x 39 mm round that replaced the 7.62 x 39 mm used in earlier rifles. The rifle first saw service in the Soviet-Afghan war, and remains widely used across the world in the hands of militaries and insurgents both, and in a variety of license-produced forms.";
-        };
-        class Single: Mode_SemiAuto {
-            reloadTime = 0.0923;
-            dispersion = 0.00075;
-            minRange = 2;
-            minRangeProbab = 0.5;
-            midRange = 200;
-            midRangeProbab = 0.69999999;
-            maxRange = 400;
-            maxRangeProbab = 0.3;
-            class BaseSoundModeType;
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {"AK74_Shot_SoundSet", "AK74_Tail_SoundSet", "AK74_InteriorTail_SoundSet"};
-            };
-            class SilencedSound: BaseSoundModeType {
-                SoundSetShot[] = {"AK12_silencerShot_SoundSet", "AK12_silencerTail_SoundSet", "AK12_silencerInteriorTail_SoundSet"};
-            };
-        };
-        class FullAuto: Mode_FullAuto {
-            reloadTime = 0.0923;
-            dispersion = 0.00075;
-            minRange = 0;
-            minRangeProbab = 0.89999998;
-            midRange = 15;
-            midRangeProbab = 0.69999999;
-            maxRange = 30;
-            maxRangeProbab = 0.050000001;
-            class BaseSoundModeType;
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {"AK74_Shot_SoundSet", "AK74_Tail_SoundSet", "AK74_InteriorTail_SoundSet"};
-            };
-            class SilencedSound: BaseSoundModeType {
-                SoundSetShot[] = {"AK12_silencerShot_SoundSet", "AK12_silencerTail_SoundSet", "AK12_silencerInteriorTail_SoundSet"};
-            };
-        };
-        class FullAuto_medium: FullAuto {
-            showToPlayer = 0;
-            burst = 3;
-            minRange = 2;
-            minRangeProbab = 0.5;
-            midRange = 100;
-            midRangeProbab = 0.69999999;
-            maxRange = 150;
-            maxRangeProbab = 0.050000001;
-            aiRateOfFire = 2;
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {"AK74_Shot_SoundSet", "AK74_Tail_SoundSet", "AK74_InteriorTail_SoundSet"};
-            };
-            class SilencedSound: BaseSoundModeType {
-                SoundSetShot[] = {"AK12_silencerShot_SoundSet", "AK12_silencerTail_SoundSet", "AK12_silencerInteriorTail_SoundSet"};
-            };
-        };
-        class single_medium_optics1: Single {
-            requiredOpticType = 1;
-            showToPlayer = 0;
-            minRange = 5;
-            minRangeProbab = 0.2;
-            midRange = 350;
-            midRangeProbab = 0.69999999;
-            maxRange = 525;
-            maxRangeProbab = 0.30000001;
-            aiRateOfFire = 5;
-            aiRateOfFireDistance = 525;
-        };
-        class single_medium_optics2: single_medium_optics1 {
-            requiredOpticType = 2;
-            minRange = 100;
-            minRangeProbab = 0.1;
-            midRange = 500;
-            midRangeProbab = 0.69999999;
-            maxRange = 750;
-            maxRangeProbab = 0.050000001;
-            aiRateOfFire = 6;
-            aiRateOfFireDistance = 750;
-        };
-    };
-    class GVAR(arifle_AKM74_GL_F): GVAR(arifle_AKM74_F) {
-        author = "POLPOX and Toadie2k";
-        displayName = "AK-74M GL 5.45 mm";
-        scope = 2;
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\ak74m_gl.p3d";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AK74_GL_F.paa";
-        baseWeapon = QGVAR(arifle_AKM74_GL_F);
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\Anim\ak74m_gl.rtm"};
-        hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "camo5"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_adds_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\gp30_co.paa", "\z\ghost\addons\weapons\models\weapons\Shotguns\Mp153\Data\Mp153_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak_mount_co.paa"};
-        muzzles[] = {"this", "EGLM"};
-        class EGLM: UGL_F {
-            displayName = "$STR_A3_CfgWeapons_arifle_AK12_GL_base_F_EGLM0";
-            useModelOptics = 0;
-            useExternalOptic = 0;
-            cameraDir = "gl_look";
-            discreteDistance[] = {50, 100, 150, 200, 250, 300, 350, 400};
-            discreteDistanceCameraPoint[] = {"gl_eye_50m", "gl_eye_100m", "gl_eye_150m", "gl_eye_200m", "gl_eye_250m", "gl_eye_300m", "gl_eye_350m", "gl_eye_400m"};
-            discreteDistanceInitIndex = 1;
-            reloadAction = "GestureReloadMXUGL";
-            magazineReloadSwitchPhase = 0.36;
-            reloadMagazineSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\Rifle_AK12\AK12_UGL_reload", 1, 1, 10};
-        };
-    };
-    class GVAR(arifle_AKM74_sand_F): GVAR(arifle_AKM74_F) {
-        author = "POLPOX and Toadie2k";
-        magazines[] = {QGVAR(30Rnd_545x39_Mag_Sand_F), QGVAR(30Rnd_545x39_Mag_Sand_Green_F), QGVAR(30Rnd_545x39_Mag_Tracer_Sand_F), QGVAR(30Rnd_545x39_Mag_Tracer_Sand_Green_F)};
-        scope = 2;
-        displayName = "AK-74M 5.45 mm (Sand)";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AKM74_sand_F.paa";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_adds_sand_co.paa", "\z\ghost\addons\weapons\models\weapons\Shotguns\Mp153\Data\Mp153_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak_mount_co.paa"};
-    };
-    class GVAR(arifle_AKM74_sand_GL_F): GVAR(arifle_AKM74_GL_F) {
-        author = "POLPOX and Toadie2k, POLPOX and Toadie2k";
-        baseWeapon = QGVAR(arifle_AKM74_sand_GL_F);
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AKM74_sand_GL_F.paa";
-        magazines[] = {QGVAR(30Rnd_545x39_Mag_Sand_F), QGVAR(30Rnd_545x39_Mag_Sand_Green_F), QGVAR(30Rnd_545x39_Mag_Tracer_Sand_F), QGVAR(30Rnd_545x39_Mag_Tracer_Sand_Green_F)};
-        scope = 2;
-        displayName = "AK-74M GL 5.45 mm (Sand)";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_adds_sand_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\gp30_co.paa", "\z\ghost\addons\weapons\models\weapons\Shotguns\Mp153\Data\Mp153_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak_mount_co.paa"};
-    };
-    class GVAR(arifle_AKM74_olive_F): GVAR(arifle_AKM74_F) {
-        author = "POLPOX and Toadie2k";
-        baseWeapon = QGVAR(arifle_AKM74_olive_F);
-        scope = 2;
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AKM74_olive_F.paa";
-        magazines[] = {QGVAR(30Rnd_545x39_Mag_Olive_F), QGVAR(30Rnd_545x39_Mag_Tracer_Olive_F)};
-        displayName = "AK-74M 5.45 mm (Olive)";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_adds_olive_co.paa", "\z\ghost\addons\weapons\models\weapons\Shotguns\Mp153\Data\Mp153_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak_mount_co.paa"};
-    };
-    class GVAR(arifle_AKM74_olive_GL_F): GVAR(arifle_AKM74_GL_F) {
-        author = "POLPOX and Toadie2k";
-        baseWeapon = QGVAR(arifle_AKM74_olive_GL_F);
-        scope = 2;
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AKM74_olive_GL_F.paa";
-        magazines[] = {QGVAR(30Rnd_545x39_Mag_Olive_F), QGVAR(30Rnd_545x39_Mag_Tracer_Olive_F)};
-        displayName = "AK-74M GL 5.45 mm (Olive)";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_adds_olive_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\gp30_co.paa", "\z\ghost\addons\weapons\models\weapons\Shotguns\Mp153\Data\Mp153_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak_mount_co.paa"};
-    };
-    class GVAR(arifle_AK74_F): GVAR(arifle_AKM74_F) {
-        displayName = "AK-74 5.45 mm";
-        baseWeapon = QGVAR(arifle_AK74_F);
-        author = "POLPOX and Toadie2k";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AK74_F.paa";
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\ak74.p3d";
-        magazines[] = {"30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_Green_F", "30Rnd_545x39_Mag_Tracer_F", "30Rnd_545x39_Mag_Tracer_Green_F"};
-        hiddenSelections[] = {"camo1", "camo4", "camo5"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_co.paa", "\z\ghost\addons\weapons\models\weapons\Shotguns\Mp153\Data\Mp153_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak_mount_co.paa"};
-    };
-    class GVAR(arifle_AK74_GL_F): GVAR(arifle_AKM74_GL_F) {
-        displayName = "AK-74 GL 5.45 mm";
-        baseWeapon = QGVAR(arifle_AK74_GL_F);
-        author = "POLPOX and Toadie2k";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AK74_GL_F.paa";
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\ak74_gl.p3d";
-        magazines[] = {"30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_Green_F", "30Rnd_545x39_Mag_Tracer_F", "30Rnd_545x39_Mag_Tracer_Green_F"};
-        hiddenSelections[] = {"camo1", "camo3", "camo4", "camo5"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\gp30_co.paa", "\z\ghost\addons\weapons\models\weapons\Shotguns\Mp153\Data\Mp153_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak_mount_co.paa"};
-    };
-    class GVAR(arifle_AK74_oak_F): GVAR(arifle_AK74_F) {
-        displayName = "AK-74 5.45 mm (Oak)";
-        baseWeapon = QGVAR(arifle_AK74_oak_F);
-        author = "POLPOX and Toadie2k";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AK74_oak_F.paa";
-        hiddenSelections[] = {"camo1", "camo4", "camo5", "camoWood"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_co.paa", "\z\ghost\addons\weapons\models\weapons\Shotguns\Mp153\Data\Mp153_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak_mount_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_oak_co.paa"};
-        hiddenSelectionsMaterials[] = {"", "", "", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_oak_wood.rvmat"};
-    };
-    class GVAR(arifle_AK74_GL_oak_F): GVAR(arifle_AK74_GL_F) {
-        displayName = "AK-74 GL 5.45 mm (Oak)";
-        baseWeapon = QGVAR(arifle_AK74_GL_oak_F);
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AK74_GL_oak_F.paa";
-        author = "POLPOX and Toadie2k";
-        hiddenSelections[] = {"camo1", "camo3", "camo4", "camo5", "camoWood"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\gp30_co.paa", "\z\ghost\addons\weapons\models\weapons\Shotguns\Mp153\Data\Mp153_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak_mount_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_oak_co.paa"};
-        hiddenSelectionsMaterials[] = {"", "", "", "", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_oak_wood.rvmat"};
-    };
-    class GVAR(arifle_AKS74_F): GVAR(arifle_AK74_F) {
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\aks74.p3d";
-        displayName = "AKS-74 5.45 mm";
-        baseWeapon = QGVAR(arifle_AKS74_F);
-        author = "POLPOX and Toadie2k";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AKS74_F.paa";
-        magazines[] = {"30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_Green_F", "30Rnd_545x39_Mag_Tracer_F", "30Rnd_545x39_Mag_Tracer_Green_F"};
-        hiddenSelections[] = {"camo1", "camo2", "camo4", "camo5"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_adds_co.paa", "\z\ghost\addons\weapons\models\weapons\Shotguns\Mp153\Data\Mp153_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak_mount_co.paa"};
-    };
-    class GVAR(arifle_AKS74_oak_F): GVAR(arifle_AKS74_F) {
-        displayName = "AKS-74 5.45 mm (Oak)";
-        baseWeapon = QGVAR(arifle_AKS74_oak_F);
-        author = "POLPOX and Toadie2k";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AKS74_oak_F.paa";
-        hiddenSelections[] = {"camo1", "camo2", "camo4", "camo5", "camoWood"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_oak_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_adds_co.paa", "\z\ghost\addons\weapons\models\weapons\Shotguns\Mp153\Data\Mp153_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak_mount_co.paa"};
-        hiddenSelectionsMaterials[] = {"", "", "", "", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_wood.rvmat"};
-    };
-    class GVAR(arifle_AKM74_plum_F): GVAR(arifle_AKM74_F) {
-        author = "POLPOX and Toadie2k";
-        baseWeapon = QGVAR(arifle_AKM74_plum_F);
-        magazines[] = {"30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_Green_F", "30Rnd_545x39_Mag_Tracer_F", "30Rnd_545x39_Mag_Tracer_Green_F"};
-        scope = 2;
-        displayName = "AK-74M 5.45 mm (Plum)";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AKM74_plum_F.paa";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_adds_plum_co.paa", "\z\ghost\addons\weapons\models\weapons\Shotguns\Mp153\Data\Mp153_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak_mount_co.paa"};
-    };
-    class GVAR(arifle_AKM74_GL_plum_F): GVAR(arifle_AKM74_GL_F) {
-        author = "POLPOX and Toadie2k";
-        baseWeapon = QGVAR(arifle_AKM74_GL_plum_F);
-        magazines[] = {"30Rnd_545x39_Mag_F", "30Rnd_545x39_Mag_Green_F", "30Rnd_545x39_Mag_Tracer_F", "30Rnd_545x39_Mag_Tracer_Green_F"};
-        scope = 2;
-        displayName = "AK-74M GL 5.45 mm (Plum)";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AKM74_GL_plum_F.paa";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_adds_plum_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\gp30_co.paa", "\z\ghost\addons\weapons\models\weapons\Shotguns\Mp153\Data\Mp153_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak_mount_co.paa"};
-    };
-    class GVAR(arifle_AK74_gold_F): GVAR(arifle_AK74_F) {
-        baseWeapon = QGVAR(arifle_AK74_gold_F);
-        displayName = "AK-74 5.45 mm (Golden)";
-        magazines[] = {QGVAR(30Rnd_545x39_Steel_Gold_Mag_F), QGVAR(30Rnd_545x39_Steel_Gold_Tracer_Mag_F)};
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AK74_gold_F.paa";
-        hiddenSelections[] = {"camo1", "camoWood", "dovetail"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_oak_co.paa"};
-        hiddenSelectionsMaterials[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_gold.rvmat", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_oak_wood.rvmat"};
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 100;
-            class CowsSlot {
-            };
-            class MuzzleSlot {
-            };
-            class UnderBarrelSlot {
-            };
-            class PointerSlot {
-            };
-        };
-    };
-    class GVAR(arifle_AKS74_gold_F): GVAR(arifle_AKS74_F) {
-        baseWeapon = QGVAR(arifle_AKS74_gold_F);
-        displayName = "AKS-74 5.45 mm (Golden)";
-        magazines[] = {QGVAR(30Rnd_545x39_Steel_Gold_Mag_F), QGVAR(30Rnd_545x39_Steel_Gold_Tracer_Mag_F)};
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AKS74_gold_F.paa";
-        hiddenSelections[] = {"camo1", "camo2", "camoWood", "dovetail"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_oak_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_adds_co.paa"};
-        hiddenSelectionsMaterials[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_gold.rvmat", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_adds_gold.rvmat", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_oak_wood.rvmat"};
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 100;
-            class CowsSlot {
-            };
-            class MuzzleSlot {
-            };
-            class UnderBarrelSlot {
-            };
-            class PointerSlot {
             };
         };
     };
@@ -1396,578 +938,6 @@
         displayName = "RPK 7.62 mm";
         baseWeapon = QGVAR(arifle_RPK_F);
     };
-    class GVAR(arifle_SA80_base_F): Rifle_Base_F {
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\SA80_F.p3d";
-        hiddenSelections[] = {"camo1", "camo2", "camo3"};
-        descriptionShort = "Assault Rifle<br />Caliber: 6.5x39 mm";
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\Anim\SA80_vfg.rtm"};
-        reloadAction = QGVAR(GestureReloadSA80);
-        magazines[] = {"30Rnd_65x39_caseless_black_mag"};
-        magazineWell[] = {"MX_65x39"};
-        magazineReloadSwitchPhase = 0.34;
-        recoil = QGVAR(recoil_sa80);
-        initSpeed = 930;
-        inertia = 0.5;
-        dexterity = 1.6;
-        aimTransitionSpeed = 1;
-        maxZeroing = 1000;
-        discreteDistance[] = {100, 200, 300, 400, 500, 600};
-        discreteDistanceInitIndex = 1;
-        modes[] = {"Single", "FullAuto", "single_medium_optics1", "single_medium_optics2", "fullauto_medium"};
-        deployedPivot = "bipod";
-        hasBipod = 1;
-        ACE_barrelTwist = 180.5;
-        ACE_barrelLength = 518;
-        soundBipodDown[] = {"\A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_down", "db-3", 1, 20};
-        soundBipodUp[] = {"\A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_up", "db-3", 1, 20};
-        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_dry", "db-5", 1, 10};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_reload", "db8", 1, 10};
-        changeFiremodeSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_firemode", "db-15", 1, 5};
-        class Library {
-            libTextDesc = "Despite its poor reputation and troubled reception in the past, the SA80 remains as the main service rifle for the British Armed Forces. The L85A3 has been rechambered for NATO's standardized 6.5x39 mm caseless ammunition, and features a new full-length rail enabling modularity and variety of other changes to improve the reliability and stability of the weapon. It is often issued with a grip-pod, but can be fitted with a 40 mm underslung grenade launcher. A compact carbine variant with a shortened barrel exists and is labelled the L22A3.";
-        };
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 85;
-            class MuzzleSlot: asdg_MuzzleSlot_65 {
-                iconPosition[] = {0.043, 0.348};
-                iconScale = 0.2;
-            };
-            class CowsSlot: asdg_OpticRail1913 {
-                iconPosition[] = {0.479, 0.194};
-                iconScale = 0.2;
-            };
-            class PointerSlot: asdg_FrontSideRail {
-                iconPosition[] = {0.285, 0.344};
-                iconScale = 0.2;
-            };
-            class UnderBarrelSlot {
-            };
-        };
-        class Single: Mode_SemiAuto {
-            reloadTime = 0.0851;
-            dispersion = 0.00058;
-            minRange = 2;
-            minRangeProbab = 0.5;
-            midRange = 150;
-            midRangeProbab = 0.7;
-            maxRange = 250;
-            maxRangeProbab = 0.2;
-            class BaseSoundModeType;
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {QGVAR(L85A3_Shot_SoundSet), QGVAR(L85A3_Tail_SoundSet), QGVAR(L85A3_InteriorTail_SoundSet)};
-            };
-            class SilencedSound: BaseSoundModeType {
-                soundSetShot[] = {QGVAR(L85A3_silencerShot_SoundSet), QGVAR(L85A3_silencerTail_SoundSet), QGVAR(L85A3_silencerInteriorTail_SoundSet)};
-            };
-        };
-        class FullAuto: Mode_FullAuto {
-            reloadTime = 0.0851;
-            dispersion = 0.00058;
-            minRange = 2;
-            minRangeProbab = 0.9;
-            midRange = 15;
-            midRangeProbab = 0.7;
-            maxRange = 30;
-            maxRangeProbab = 0.05;
-            aiRateOfFire = 1e-006;
-            class BaseSoundModeType;
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {QGVAR(L85A3_Shot_SoundSet), QGVAR(L85A3_Tail_SoundSet), QGVAR(L85A3_InteriorTail_SoundSet)};
-            };
-            class SilencedSound: BaseSoundModeType {
-                soundSetShot[] = {QGVAR(L85A3_silencerShot_SoundSet), QGVAR(L85A3_silencerTail_SoundSet), QGVAR(L85A3_silencerInteriorTail_SoundSet)};
-            };
-        };
-        class fullauto_medium: FullAuto {
-            showToPlayer = 0;
-            burst = 3;
-            minRange = 2;
-            minRangeProbab = 0.5;
-            midRange = 75;
-            midRangeProbab = 0.7;
-            maxRange = 100;
-            maxRangeProbab = 0.05;
-            aiRateOfFire = 2.0;
-        };
-        class single_medium_optics1: Single {
-            requiredOpticType = 1;
-            showToPlayer = 0;
-            minRange = 5;
-            minRangeProbab = 0.2;
-            midRange = 300;
-            midRangeProbab = 0.7;
-            maxRange = 450;
-            maxRangeProbab = 0.3;
-            aiRateOfFire = 5;
-            aiRateOfFireDistance = 500;
-        };
-        class single_medium_optics2: single_medium_optics1 {
-            requiredOpticType = 2;
-            minRange = 100;
-            minRangeProbab = 0.1;
-            midRange = 400;
-            midRangeProbab = 0.7;
-            maxRange = 600;
-            maxRangeProbab = 0.05;
-            aiRateOfFire = 6;
-            aiRateOfFireDistance = 600;
-        };
-        class GunParticles: GunParticles {
-            class SecondEffect {
-                positionName = "Nabojnicestart";
-                directionName = "Nabojniceend";
-                effectName = "CaselessAmmoCloud";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_GL_base_F): GVAR(arifle_SA80_base_F) {
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\SA80_GL_F.p3d";
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\Anim\SA80_GL.rtm"};
-        inertia = 0.6;
-        aimTransitionSpeed = 0.8;
-        UiPicture = "\A3\Weapons_F\Data\UI\icon_gl_CA.paa";
-        muzzles[] = {"this", "EGLM"};
-        hasBipod = 0;
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 95;
-            class UnderBarrelSlot: asdg_UnderSlot {
-                iconPosition[] = {0.123, 0.789};
-                iconScale = 0.2;
-            };
-        };
-        class EGLM: UGL_F {
-            displayName = "GLM";
-            useModelOptics = 0;
-            useExternalOptic = 0;
-            cameraDir = "OP_look";
-            discreteDistance[] = {50, 75, 100, 150, 200, 250, 300, 350, 400};
-            discreteDistanceCameraPoint[] = {"OP_eye_50", "OP_eye_75", "OP_eye_100", "OP_eye_150", "OP_eye_200", "OP_eye_250", "OP_eye_300", "OP_eye_350", "OP_eye_400"};
-            discreteDistanceInitIndex = 1;
-            reloadAction = "GestureReloadSPARUGL";
-            magazineReloadSwitchPhase = 0.4;
-            reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_UGL_reload", "db-2", 1, 10};
-        };
-    };
-    class GVAR(arifle_SA80_C_base_F): GVAR(arifle_SA80_base_F) {
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\SA80_C_F.p3d";
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\Anim\SA80_C.rtm"};
-        initSpeed = 780;
-        inertia = 0.4;
-        dexterity = 1.7;
-        aimTransitionSpeed = 1.2;
-        maxZeroing = 600;
-        hasBipod = 0;
-        ACE_barrelLength = 285;
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 75;
-            class CowsSlot: asdg_OpticRail1913_short {
-            };
-            class MuzzleSlot: asdg_MuzzleSlot_65 {
-                iconPosition[] = {0.043, 0.348};
-                iconScale = 0.2;
-            };
-            class PointerSlot: asdg_FrontSideRail {
-                iconPosition[] = {0.285, 0.344};
-                iconScale = 0.2;
-            };
-        };
-        class Single: Single {
-            dispersion = 0.00116;
-        };
-        class FullAuto: FullAuto {
-            dispersion = 0.00116;
-        };
-    };
-    class GVAR(arifle_SA80_blk_F): GVAR(arifle_SA80_base_F) {
-        author = "Avery Kaiserin and Kiory";
-        scope = 2;
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\UI\icon_arifle_SA80_blk_F_X_ca.paa";
-        displayName = "L85A3 6.5 mm (Black)";
-        baseWeapon = QGVAR(arifle_SA80_blk_F);
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_01_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_02_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\grip_CO.paa"};
-    };
-    class GVAR(arifle_SA80_GL_blk_F): GVAR(arifle_SA80_GL_base_F) {
-        author = "Avery Kaiserin and Kiory";
-        scope = 2;
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\UI\icon_arifle_SA80_GL_blk_F_X_ca.paa";
-        displayName = "L85A3 GL 6.5 mm (Black)";
-        baseWeapon = QGVAR(arifle_SA80_GL_blk_F);
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_01_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_02_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_GL_CO.paa"};
-    };
-    class GVAR(arifle_SA80_C_blk_F): GVAR(arifle_SA80_C_base_F) {
-        author = "Avery Kaiserin and Kiory";
-        scope = 2;
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\UI\icon_arifle_SA80_C_blk_F_X_ca.paa";
-        displayName = "L22A3 6.5 mm (Black)";
-        baseWeapon = QGVAR(arifle_SA80_C_blk_F);
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_01_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_C_CO.paa"};
-    };
-    class GVAR(arifle_SA80_snd_F): GVAR(arifle_SA80_base_F) {
-        author = "Avery Kaiserin and Kiory";
-        scope = 2;
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\UI\icon_arifle_SA80_snd_F_X_ca.paa";
-        displayName = "L85A3 6.5 mm (Sand)";
-        baseWeapon = QGVAR(arifle_SA80_snd_F);
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_01_snd_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_02_snd_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\grip_CO.paa"};
-        magazines[] = {"30Rnd_65x39_caseless_mag"};
-    };
-    class GVAR(arifle_SA80_GL_snd_F): GVAR(arifle_SA80_GL_base_F) {
-        author = "Avery Kaiserin and Kiory";
-        scope = 2;
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\UI\icon_arifle_SA80_GL_snd_F_X_ca.paa";
-        displayName = "L85A3 GL 6.5 mm (Sand)";
-        baseWeapon = QGVAR(arifle_SA80_GL_snd_F);
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_01_snd_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_02_snd_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_GL_snd_CO.paa"};
-        magazines[] = {"30Rnd_65x39_caseless_mag"};
-    };
-    class GVAR(arifle_SA80_C_snd_F): GVAR(arifle_SA80_C_base_F) {
-        author = "Avery Kaiserin and Kiory";
-        scope = 2;
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\UI\icon_arifle_SA80_C_snd_F_X_ca.paa";
-        displayName = "L22A3 6.5 mm (Sand)";
-        baseWeapon = QGVAR(arifle_SA80_C_snd_F);
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_01_snd_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_C_snd_CO.paa"};
-        magazines[] = {"30Rnd_65x39_caseless_mag"};
-    };
-    class GVAR(arifle_SA80_khk_F): GVAR(arifle_SA80_base_F) {
-        author = "Avery Kaiserin and Kiory";
-        scope = 2;
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\UI\icon_arifle_SA80_khk_F_X_ca.paa";
-        displayName = "L85A3 6.5 mm (Khaki)";
-        baseWeapon = QGVAR(arifle_SA80_khk_F);
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_01_khk_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_02_khk_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\grip_khk_CO.paa"};
-        magazines[] = {"30Rnd_65x39_caseless_khaki_mag"};
-    };
-    class GVAR(arifle_SA80_GL_khk_F): GVAR(arifle_SA80_GL_base_F) {
-        author = "Avery Kaiserin and Kiory";
-        scope = 2;
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\UI\icon_arifle_SA80_GL_khk_F_X_ca.paa";
-        displayName = "L85A3 GL 6.5 mm (Khaki)";
-        baseWeapon = QGVAR(arifle_SA80_GL_khk_F);
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_01_khk_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_02_khk_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_GL_khk_CO.paa"};
-        magazines[] = {"30Rnd_65x39_caseless_khaki_mag"};
-    };
-    class GVAR(arifle_SA80_C_khk_F): GVAR(arifle_SA80_C_base_F) {
-        author = "Avery Kaiserin and Kiory";
-        scope = 2;
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\UI\icon_arifle_SA80_C_khk_F_X_ca.paa";
-        displayName = "L22A3 6.5 mm (Khaki)";
-        baseWeapon = QGVAR(arifle_SA80_C_khk_F);
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_01_khk_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_C_khk_CO.paa"};
-        magazines[] = {"30Rnd_65x39_caseless_khaki_mag"};
-    };
-    class GVAR(arifle_SA80_blk_aco_pointer_f): GVAR(arifle_SA80_blk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_ACO";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_blk_holo_pointer_f): GVAR(arifle_SA80_blk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight_blk_F";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_blk_arco_pointer_f): GVAR(arifle_SA80_blk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Hamr";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_GL_blk_aco_pointer_f): GVAR(arifle_SA80_GL_blk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_ACO";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_GL_blk_arco_pointer_f): GVAR(arifle_SA80_GL_blk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Hamr";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_C_blk_aco_pointer_f): GVAR(arifle_SA80_C_blk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_ACO";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_C_blk_holo_pointer_f): GVAR(arifle_SA80_C_blk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight_blk_F";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_C_blk_holo_f): GVAR(arifle_SA80_C_blk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight_blk_F";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_C_blk_holo_FL_f): GVAR(arifle_SA80_C_blk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight_blk_F";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_flashlight";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_khk_aco_pointer_f): GVAR(arifle_SA80_khk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_ACO";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_khk_holo_pointer_f): GVAR(arifle_SA80_khk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight_khk_F";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_khk_arco_pointer_f): GVAR(arifle_SA80_khk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Hamr_khk_F";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_GL_khk_aco_pointer_f): GVAR(arifle_SA80_GL_khk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_ACO";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_GL_khk_arco_pointer_f): GVAR(arifle_SA80_GL_khk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Hamr_khk_F";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_C_khk_aco_pointer_f): GVAR(arifle_SA80_C_khk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_ACO";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_C_khk_holo_pointer_f): GVAR(arifle_SA80_C_khk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight_khk_F";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_C_khk_holo_f): GVAR(arifle_SA80_C_khk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight_khk_F";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_C_khk_holo_FL_f): GVAR(arifle_SA80_C_khk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight_khk_F";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_flashlight";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_snd_aco_pointer_f): GVAR(arifle_SA80_snd_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_ACO";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_snd_holo_pointer_f): GVAR(arifle_SA80_snd_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_snd_arco_pointer_f): GVAR(arifle_SA80_snd_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Hamr";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_GL_snd_aco_pointer_f): GVAR(arifle_SA80_GL_snd_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_ACO";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_GL_snd_arco_pointer_f): GVAR(arifle_SA80_GL_snd_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Hamr";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_C_snd_aco_pointer_f): GVAR(arifle_SA80_C_snd_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_ACO";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_C_snd_holo_pointer_f): GVAR(arifle_SA80_C_snd_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_C_snd_holo_f): GVAR(arifle_SA80_C_snd_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight";
-            };
-        };
-    };
-    class GVAR(arifle_SA80_C_snd_holo_FL_f): GVAR(arifle_SA80_C_snd_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_flashlight";
-            };
-        };
-    };
     class GVAR(arifle_SCAR_base_F): Rifle_Base_F {
         model = "\z\ghost\addons\weapons\models\weapons\Rifles\SCAR\SCAR_F.p3d";
         UiPicture = "\A3\Weapons_F\Data\UI\icon_regular_CA.paa";
@@ -2003,9 +973,9 @@
         bullet11[] = {"\A3\Sounds_F\weapons\shells\7_62\grass_762_03", "db-12", 1, 15};
         bullet12[] = {"\A3\Sounds_F\weapons\shells\7_62\grass_762_04", "db-12", 1, 15};
         soundBullet[] = {"bullet1", 0.08333333333333333, "bullet2", 0.08333333333333333, "bullet3", 0.08333333333333333, "bullet4", 0.08333333333333333, "bullet5", 0.08333333333333333, "bullet6", 0.08333333333333333, "bullet7", 0.08333333333333333, "bullet8", 0.08333333333333333, "bullet9", 0.08333333333333333, "bullet10", 0.08333333333333333, "bullet11", 0.08333333333333333, "bullet12", 0.08333333333333333};
-        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_dry", "db-5", 1, 10};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\mk17_reload", "db0", 1, 10};
-        changeFiremodeSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_firemode", "db-15", 1, 5};
+        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_dry.ogg", "db-5", 1, 10};
+        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\mk17_reload.ogg", "db0", 1, 10};
+        changeFiremodeSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_firemode.ogg", "db-15", 1, 5};
         class Library {
             libTextDesc = "The Mk17 entered service during Operation Arrowhead, and while its lighter counterpart was eventually replaced by the MX, it remains in use with US special forces. It's a reliable battle rifle originating from Belgium, with a modular design that is compatible with a variety of accessories. Chambered for 7.62x51 mm ammunition, it hits harder than most assault rifles at the cost of increased weight and reduced magazine capacity. It can be fitted with a 40 mm underslung grenade launcher or an underbarrel 12 gauge shotgun module. A shortened version exists, labelled the Mk17C.";
         };
@@ -2129,7 +1099,7 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "GestureReloadSPARUGL";
             magazineReloadSwitchPhase = 0.4;
-            reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_UGL_reload", "db-2", 1, 10};
+            reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_UGL_reload.ogg", "db-2", 1, 10};
         };
     };
     class GVAR(arifle_SCAR_short_base_F): GVAR(arifle_SCAR_base_F) {
@@ -2498,9 +1468,9 @@
         bullet11[] = {"\A3\Sounds_F\weapons\shells\7_62\grass_762_03", "db-12", 1, 15};
         bullet12[] = {"\A3\Sounds_F\weapons\shells\7_62\grass_762_04", "db-12", 1, 15};
         soundBullet[] = {"bullet1", 0.08333333333333333, "bullet2", 0.08333333333333333, "bullet3", 0.08333333333333333, "bullet4", 0.08333333333333333, "bullet5", 0.08333333333333333, "bullet6", 0.08333333333333333, "bullet7", 0.08333333333333333, "bullet8", 0.08333333333333333, "bullet9", 0.08333333333333333, "bullet10", 0.08333333333333333, "bullet11", 0.08333333333333333, "bullet12", 0.08333333333333333};
-        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_dry", "db-5", 1, 10};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_reload", "db0", 1, 10};
-        changeFiremodeSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_firemode", "db-15", 1, 5};
+        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_dry.ogg", "db-5", 1, 10};
+        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_reload.ogg", "db0", 1, 10};
+        changeFiremodeSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_firemode.ogg", "db-15", 1, 5};
         class Library {
             libTextDesc = "The Mk16 first saw service during operations in Takistan in 2012, after which it saw roughly a decade of service as the primary assault rifle of the US army before being replaced by the MX series when the decision was made to move to the more powerful 6.5x39 mm round. Nonetheless, it remains a reliable assault rifle with a modular design that is compatible with a variety of accessories, features that have seen it widely exported. Produced in Belgium, it is chambered for 5.56x45 mm ammunition and can accept any magazine in a STANAG configuration, making it popular across the globe. It can be fitted with a 40 mm underslung grenade launcher or an under-barrel 12 gauge shotgun module. A shortened version exists, labelled the Mk16C.";
         };
@@ -2624,7 +1594,7 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "GestureReloadSPARUGL";
             magazineReloadSwitchPhase = 0.4;
-            reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_UGL_reload", "db-2", 1, 10};
+            reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_UGL_reload.ogg", "db-2", 1, 10};
         };
     };
     class GVAR(arifle_SCAR_L_short_base_F): GVAR(arifle_SCAR_L_base_F) {
@@ -2731,7 +1701,7 @@
         author = "Heliotrope";
         scope = 2;
         displayName = "Mk16C 5.56 mm (Black)";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\SCAR_L\Data\UI\icon_arifle_scar_L_short_black.paa";
+        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\SCAR_L\Data\UI\icon_arifle_scar_L_black_short.paa";
         baseWeapon = QGVAR(arifle_SCAR_L_short_black_F);
     };
     class GVAR(arifle_SCAR_L_grip_black_F): GVAR(arifle_SCAR_L_grip_black_base_F) {
@@ -2759,7 +1729,7 @@
         author = "Heliotrope";
         scope = 2;
         displayName = "Mk16C 5.56 mm (Khaki)";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\SCAR_L\Data\UI\icon_arifle_scar_L_short_khaki.paa";
+        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\SCAR_L\Data\UI\icon_arifle_scar_L_khaki_short.paa";
         baseWeapon = QGVAR(arifle_SCAR_L_short_khaki_F);
     };
     class GVAR(arifle_SCAR_L_grip_khaki_F): GVAR(arifle_SCAR_L_grip_khaki_base_F) {
@@ -2996,8 +1966,8 @@
         bullet11[] = {"\A3\Sounds_F\weapons\Shells\Shotgun\grass_shotgun_03", "db-6", 1, 15};
         bullet12[] = {"\A3\Sounds_F\weapons\Shells\Shotgun\grass_shotgun_04", "db-6", 1, 15};
         soundBullet[] = {"bullet1", 0.08333333333333333, "bullet2", 0.08333333333333333, "bullet3", 0.08333333333333333, "bullet4", 0.08333333333333333, "bullet5", 0.08333333333333333, "bullet6", 0.08333333333333333, "bullet7", 0.08333333333333333, "bullet8", 0.08333333333333333, "bullet9", 0.08333333333333333, "bullet10", 0.08333333333333333, "bullet11", 0.08333333333333333, "bullet12", 0.08333333333333333};
-        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_dry", "db-3", 1, 10};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_reload", "db0", 1, 10};
+        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_dry.ogg", "db-3", 1, 10};
+        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_reload.ogg", "db0", 1, 10};
         class WeaponSlotsInfo: WeaponSlotsInfo {
             mass = 90;
             class MuzzleSlot {
@@ -3056,8 +2026,8 @@
             bullet11[] = {"\A3\Sounds_F\weapons\Shells\Shotgun\grass_shotgun_03", "db-6", 1, 15};
             bullet12[] = {"\A3\Sounds_F\weapons\Shells\Shotgun\grass_shotgun_04", "db-6", 1, 15};
             soundBullet[] = {"bullet1", 0.08333333333333333, "bullet2", 0.08333333333333333, "bullet3", 0.08333333333333333, "bullet4", 0.08333333333333333, "bullet5", 0.08333333333333333, "bullet6", 0.08333333333333333, "bullet7", 0.08333333333333333, "bullet8", 0.08333333333333333, "bullet9", 0.08333333333333333, "bullet10", 0.08333333333333333, "bullet11", 0.08333333333333333, "bullet12", 0.08333333333333333};
-            drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_dry", "db-3", 1, 10};
-            reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_reload", "db0", 1, 10};
+            drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_dry.ogg", "db-3", 1, 10};
+            reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_reload.ogg", "db0", 1, 10};
             class Single: Mode_SemiAuto {
                 sounds[] = {"StandardSound"};
                 textureType = "right";
@@ -3133,13 +2103,13 @@
         bullet11[] = {"\A3\Sounds_F\weapons\Shells\Shotgun\grass_shotgun_03", "db-6", 1, 15};
         bullet12[] = {"\A3\Sounds_F\weapons\Shells\Shotgun\grass_shotgun_04", "db-6", 1, 15};
         soundBullet[] = {"bullet1", 0.08333333333333333, "bullet2", 0.08333333333333333, "bullet3", 0.08333333333333333, "bullet4", 0.08333333333333333, "bullet5", 0.08333333333333333, "bullet6", 0.08333333333333333, "bullet7", 0.08333333333333333, "bullet8", 0.08333333333333333, "bullet9", 0.08333333333333333, "bullet10", 0.08333333333333333, "bullet11", 0.08333333333333333, "bullet12", 0.08333333333333333};
-        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_dry", "db-3", 1, 10};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_reload", "db0", 1, 10};
+        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_dry.ogg", "db-3", 1, 10};
+        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_reload.ogg", "db0", 1, 10};
         class WeaponSlotsInfo: WeaponSlotsInfo {
             mass = 100;
             class MuzzleSlot: asdg_MuzzleSlot {
                 linkProxy = "\A3\Data_F\proxies\weapon_slots\MUZZLE";
-                compatibleItems[] = {"muzzle_snds_12Gauge_lxWS", "muzzle_snds_12Gauge_snake_lxWS"};
+                compatibleItems[] = {};
                 iconPosition[] = {-0.02, 0.41};
                 iconScale = 0.2;
             };
@@ -3191,273 +2161,13 @@
             mass = 160;
             class MuzzleSlot: asdg_MuzzleSlot {
                 linkProxy = "\A3\Data_F\proxies\weapon_slots\MUZZLE";
-                compatibleItems[] = {"muzzle_snds_12Gauge_lxWS", "muzzle_snds_12Gauge_snake_lxWS"};
+                compatibleItems[] = {};
                 iconPosition[] = {-0.02, 0.41};
                 iconScale = 0.2;
             };
             class CowsSlot {
             };
             class PointerSlot {
-            };
-        };
-    };
-    class GVAR(SMG_04_base_F): Rifle_Short_Base_F {
-        author = "Avery Kaiserin and Steffe Engdahl";
-        scope = 0;
-        displayName = "MP7 4.6 mm";
-        descriptionShort = "Submachine Gun<br />Caliber: 4.6x30 mm";
-        model = "\z\ghost\addons\weapons\models\weapons\SMGs\SMG_04\SMG_04_Rail_F.p3d";
-        UiPicture = "\A3\Weapons_F\Data\UI\icon_regular_CA.paa";
-        hiddenSelections[] = {"camo"};
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\SMGs\SMG_04\Data\Anim\SMG_04.rtm"};
-        reloadAction = "GestureReloadSMG_03";
-        magazines[] = {QGVAR(40Rnd_460x30_Mag_F), QGVAR(20Rnd_460x30_Mag_F)};
-        magazineWell[] = {QGVAR(SMG_04_460x30)};
-        magazineReloadSwitchPhase = 0.48;
-        htMin = 3;
-        htMax = 380;
-        inertia = 0.2;
-        aimTransitionSpeed = 1.5;
-        dexterity = 1.8;
-        initSpeed = 735;
-        recoil = QGVAR(recoil_smg_04);
-        maxZeroing = 400;
-        discreteDistance[] = {100, 200};
-        discreteDistanceInitIndex = 0;
-        cursor = "smg";
-        distanceZoomMin = 50;
-        distanceZoomMax = 50;
-        modes[] = {"Single", "FullAuto"};
-        ACE_barrelTwist = 152.4;
-        ACE_barrelLength = 180;
-        ACE_twistDirection = 1;
-        bullet1[] = {"\A3\Sounds_F\weapons\Shells\9mm\metal_9mm_01", "db-6", 1, 15};
-        bullet2[] = {"\A3\Sounds_F\weapons\Shells\9mm\metal_9mm_02", "db-6", 1, 15};
-        bullet3[] = {"\A3\Sounds_F\weapons\Shells\9mm\metal_9mm_03", "db-6", 1, 15};
-        bullet4[] = {"\A3\Sounds_F\weapons\Shells\9mm\metal_9mm_04", "db-6", 1, 15};
-        bullet5[] = {"\A3\Sounds_F\weapons\Shells\9mm\dirt_9mm_01", "db-8", 1, 15};
-        bullet6[] = {"\A3\Sounds_F\weapons\Shells\9mm\dirt_9mm_02", "db-8", 1, 15};
-        bullet7[] = {"\A3\Sounds_F\weapons\Shells\9mm\dirt_9mm_03", "db-8", 1, 15};
-        bullet8[] = {"\A3\Sounds_F\weapons\Shells\9mm\dirt_9mm_04", "db-8", 1, 15};
-        bullet9[] = {"\A3\Sounds_F\weapons\Shells\9mm\grass_9mm_01", "db-13", 1, 15};
-        bullet10[] = {"\A3\Sounds_F\weapons\Shells\9mm\grass_9mm_02", "db-13", 1, 15};
-        bullet11[] = {"\A3\Sounds_F\weapons\Shells\9mm\grass_9mm_03", "db-13", 1, 15};
-        bullet12[] = {"\A3\Sounds_F\weapons\Shells\9mm\grass_9mm_04", "db-13", 1, 15};
-        soundBullet[] = {"bullet1", 0.08333333333333333, "bullet2", 0.08333333333333333, "bullet3", 0.08333333333333333, "bullet4", 0.08333333333333333, "bullet5", 0.08333333333333333, "bullet6", 0.08333333333333333, "bullet7", 0.08333333333333333, "bullet8", 0.08333333333333333, "bullet9", 0.08333333333333333, "bullet10", 0.08333333333333333, "bullet11", 0.08333333333333333, "bullet12", 0.08333333333333333};
-        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_dry", "db-15", 1, 10};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_reload", "db0", 1, 30};
-        changeFiremodeSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_firemode", "db-10", 1, 5};
-        class Library {
-            libTextDesc = "The MP7 is a personal defense weapon (PDW) originating from Germany. It is chambered for the 4.6x30 mm cartridge, and maintains a high rate of fire. Its minimal weight, high rate of fire, and small dimensions make it a powerful weapon for CQC encounters.";
-        };
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 40;
-            class MuzzleSlot: asdg_MuzzleSlot_46 {
-                linkProxy = "\A3\Data_F\Proxies\weapon_slots\MUZZLE";
-                compatibleItems[] = {QGVAR(muzzle_snds_460), QGVAR(muzzle_snds_460_khaki), QGVAR(muzzle_snds_460_sand)};
-                iconPosition[] = {0.13, 0.42};
-                iconScale = 0.2;
-            };
-            class CowsSlot: asdg_OpticRail1913_short {
-                iconPosition[] = {0.36, 0.22};
-                iconScale = 0.15;
-            };
-            class PointerSlot: asdg_FrontSideRail {
-                iconPosition[] = {0.31, 0.43};
-                iconScale = 0.2;
-            };
-        };
-        class Single: Mode_SemiAuto {
-            reloadTime = 0.063;
-            dispersion = 0.00131;
-            minRange = 2;
-            minRangeProbab = 0.3;
-            midRange = 200;
-            midRangeProbab = 0.7;
-            maxRange = 350;
-            maxRangeProbab = 0.05;
-            class BaseSoundModeType;
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {QGVAR(SMG04_Shot_SoundSet), QGVAR(SMG04_Tail_SoundSet), QGVAR(SMG04_InteriorTail_SoundSet)};
-            };
-            class SilencedSound: BaseSoundModeType {
-                soundSetShot[] = {QGVAR(SMG04_silencerShot_SoundSet), QGVAR(SMG04_silencerTail_SoundSet), QGVAR(SMG04_silencerInteriorTail_SoundSet)};
-            };
-        };
-        class FullAuto: Mode_FullAuto {
-            reloadTime = 0.063;
-            dispersion = 0.00131;
-            minRange = 0;
-            minRangeProbab = 0.1;
-            midRange = 25;
-            midRangeProbab = 0.7;
-            maxRange = 70;
-            maxRangeProbab = 0.05;
-            aiRateOfFire = 1e-006;
-            class BaseSoundModeType;
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {QGVAR(SMG04_Shot_SoundSet), QGVAR(SMG04_Tail_SoundSet), QGVAR(SMG04_InteriorTail_SoundSet)};
-            };
-            class SilencedSound: BaseSoundModeType {
-                soundSetShot[] = {QGVAR(SMG04_silencerShot_SoundSet), QGVAR(SMG04_silencerTail_SoundSet), QGVAR(SMG04_silencerInteriorTail_SoundSet)};
-            };
-        };
-    };
-    class GVAR(SMG_04_blk_F): GVAR(SMG_04_base_F) {
-        author = "Avery Kaiserin and Steffe Engdahl";
-        baseWeapon = QGVAR(SMG_04_blk_F);
-        scope = 2;
-        displayName = "MP7 4.6 mm (Black)";
-        picture = "\z\ghost\addons\weapons\models\weapons\SMGs\SMG_04\Data\UI\icon_SMG_04_blk_F_X_ca.paa";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\SMGs\SMG_04\Data\SMG_04_blk_F_CO.paa"};
-    };
-    class GVAR(SMG_04_khk_F): GVAR(SMG_04_base_F) {
-        author = "Avery Kaiserin and Steffe Engdahl";
-        baseWeapon = QGVAR(SMG_04_khk_F);
-        scope = 2;
-        displayName = "MP7 4.6 mm (Khaki)";
-        picture = "\z\ghost\addons\weapons\models\weapons\SMGs\SMG_04\Data\UI\icon_SMG_04_khk_F_X_ca.paa";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\SMGs\SMG_04\Data\SMG_04_khk_F_CO.paa"};
-    };
-    class GVAR(SMG_04_snd_F): GVAR(SMG_04_base_F) {
-        author = "Avery Kaiserin and Steffe Engdahl";
-        baseWeapon = QGVAR(SMG_04_snd_F);
-        scope = 2;
-        displayName = "MP7 4.6 mm (Sand)";
-        picture = "\z\ghost\addons\weapons\models\weapons\SMGs\SMG_04\Data\UI\icon_SMG_04_snd_F_X_ca.paa";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\SMGs\SMG_04\Data\SMG_04_snd_F_CO.paa"};
-    };
-    class GVAR(SMG_04_blk_Holo_F): GVAR(SMG_04_blk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight_smg_blk_F";
-            };
-        };
-    };
-    class GVAR(SMG_04_khk_Holo_F): GVAR(SMG_04_khk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight_smg_khk_F";
-            };
-        };
-    };
-    class GVAR(SMG_04_snd_Holo_F): GVAR(SMG_04_snd_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight_smg";
-            };
-        };
-    };
-    class GVAR(SMG_Gepard_Base_F): Rifle_Short_Base_F {
-        author = "POLPOX, Lukinator, and Toadie2k";
-        scope = 0;
-        displayName = "PPL-20M Upyr 9 mm";
-        descriptionShort = "Submachine Gun<br/>Caliber: 9x21 mm";
-        model = "\z\ghost\addons\weapons\models\weapons\SMGs\SMG_Gepard\Aegis_Gepard.p3d";
-        UiPicture = "\A3\Weapons_F\Data\UI\icon_regular_CA.paa";
-        hiddenSelections[] = {"camo1", "camo2"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\SMGs\SMG_Gepard\Data\SMG_Gepard_camo1_CO.paa", "\z\ghost\addons\weapons\models\weapons\SMGs\SMG_Gepard\Data\SMG_Gepard_camo2_CO.paa"};
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\SMGs\SMG_Gepard\Data\anim\gepard.rtm"};
-        reloadAction = QGVAR(GestureReloadGepard);
-        magazines[] = {QGVAR(40Rnd_9x21_Gepard_Mag_F), QGVAR(40Rnd_9x21_Gepard_Green_Mag_F), QGVAR(40Rnd_9x21_Gepard_Yellow_Mag_F), QGVAR(20Rnd_9x21_Gepard_Mag_F)};
-        magazineWell[] = {QGVAR(SMG_Gepard_9x21)};
-        bullet1[] = {"A3\sounds_f\weapons\shells\9mm\metal_9mm_01", 0.5011872, 1, 15};
-        bullet2[] = {"A3\sounds_f\weapons\shells\9mm\metal_9mm_02", 0.5011872, 1, 15};
-        bullet3[] = {"A3\sounds_f\weapons\shells\9mm\metal_9mm_03", 0.5011872, 1, 15};
-        bullet4[] = {"A3\sounds_f\weapons\shells\9mm\metal_9mm_04", 0.5011872, 1, 15};
-        bullet5[] = {"A3\sounds_f\weapons\shells\9mm\dirt_9mm_01", 0.39810717, 1, 15};
-        bullet6[] = {"A3\sounds_f\weapons\shells\9mm\dirt_9mm_02", 0.39810717, 1, 15};
-        bullet7[] = {"A3\sounds_f\weapons\shells\9mm\dirt_9mm_03", 0.39810717, 1, 15};
-        bullet8[] = {"A3\sounds_f\weapons\shells\9mm\dirt_9mm_04", 0.39810717, 1, 15};
-        bullet9[] = {"A3\sounds_f\weapons\shells\9mm\grass_9mm_01", 0.39810717, 1, 15};
-        bullet10[] = {"A3\sounds_f\weapons\shells\9mm\grass_9mm_02", 0.39810717, 1, 15};
-        bullet11[] = {"A3\sounds_f\weapons\shells\9mm\grass_9mm_03", 0.39810717, 1, 15};
-        bullet12[] = {"A3\sounds_f\weapons\shells\9mm\grass_9mm_04", 0.39810717, 1, 15};
-        soundBullet[] = {"bullet1", 0.083, "bullet2", 0.083, "bullet3", 0.083, "bullet4", 0.083, "bullet5", 0.083, "bullet6", 0.083, "bullet7", 0.083, "bullet8", 0.083, "bullet9", 0.083, "bullet10", 0.083, "bullet11", 0.083, "bullet12", 0.083};
-        drySound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\Rifle_AK74\AK74_dry", 0.17782794, 1, 10};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG_Gepard\gepard_reload", 1, 1, 10};
-        changeFiremodeSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\Rifle_AK74\AK74_firemode", 0.17782794, 1, 5};
-        magazineReloadSwitchPhase = 0.48;
-        aimTransitionSpeed = 1.4;
-        inertia = 0.2;
-        dexterity = 1.8;
-        initSpeed = 380;
-        recoil = QGVAR(Recoil_Gepard);
-        maxZeroing = 400;
-        discreteDistance[] = {100, 200};
-        discreteDistanceInitIndex = 0;
-        cursor = "smg";
-        distanceZoomMin = 300;
-        distanceZoomMax = 300;
-        modes[] = {"FullAuto", "Single"};
-        ACE_barrelTwist = 218.46;
-        ACE_barrelLength = 235;
-        ACE_twistDirection = 1;
-        class Library {
-            libTextDesc = "The PPL-20M Upyr', or Ghoul, is a compact personal defense weapon (PDW) of Russian origin. Originally developed for the export market, it is chambered in the widely available 9x19 mm round, although it can be retooled for other, similar cartridges, and has high part commonality with the AK family of rifles, particularly the AKSU. Its compact nature and adaptability have made it a common sight in professional militaries, police forces, and paramilitaries alike, particularly amongst those crewing vehicles or engaging in CQB.";
-        };
-        class Single: Mode_SemiAuto {
-            sounds[] = {"StandardSound", "SilencedSound"};
-            recoil = "recoil_single_pdw";
-            recoilProne = "recoil_single_prone_pdw";
-            reloadTime = 0.1;
-            dispersion = 0.0020300001;
-            minRange = 2;
-            minRangeProbab = 0.03;
-            midRange = 200;
-            midRangeProbab = 0.69999999;
-            maxRange = 350;
-            maxRangeProbab = 0.5;
-            aiRateOfFire = 2.0;
-            aiRateOfFireDistance = 500;
-            class BaseSoundModeType;
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {"SMGPDW2000_Shot_SoundSet", "AK74_Tail_SoundSet", "AK74_InteriorTail_SoundSet"};
-            };
-            class SilencedSound: BaseSoundModeType {
-                SoundSetShot[] = {"SMGPDW2000_silencerShot_SoundSet", "AK12_silencerTail_SoundSet", "AK12_silencerInteriorTail_SoundSet"};
-            };
-        };
-        class FullAuto: Mode_FullAuto {
-            sounds[] = {"StandardSound", "SilencedSound"};
-            recoil = "recoil_auto_pdw";
-            recoilProne = "recoil_auto_prone_pdw";
-            reloadTime = 0.085;
-            dispersion = 0.0020300001;
-            minRange = 0;
-            minRangeProbab = 0.3;
-            midRange = 50;
-            midRangeProbab = 0.7;
-            maxRange = 100;
-            maxRangeProbab = 0.050000001;
-            aiRateOfFire = 0.8;
-            aiRateOfFireDistance = 50;
-            class BaseSoundModeType;
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {"SMGPDW2000_Shot_SoundSet", "AK74_Tail_SoundSet", "AK74_InteriorTail_SoundSet"};
-            };
-            class SilencedSound: BaseSoundModeType {
-                SoundSetShot[] = {"SMGPDW2000_silencerShot_SoundSet", "AK12_silencerTail_SoundSet", "AK12_silencerInteriorTail_SoundSet"};
-            };
-        };
-        class weaponslotsinfo: weaponslotsinfo {
-            mass = 44;
-            class CowsSlot: asdg_OpticRail1913 {
-                iconPosition[] = {0.55, 0.18};
-                iconScale = 0.2;
-            };
-            class MuzzleSlot: asdg_MuzzleSlot_9MM_SMG {
-                iconPosition[] = {0.1, 0.28};
-                iconScale = 0.25;
-            };
-            class UnderBarrelSlot {
-            };
-            class PointerSlot: PointerSlot_Rail {
-                iconPosition[] = {0.3, 0.27};
-                iconScale = 0.25;
             };
         };
     };
@@ -3592,104 +2302,6 @@
             };
         };
     };
-    class GVAR(arifle_AKM74_plum_ACO_FL_F): GVAR(arifle_AKM74_plum_F) {
-        author = "Avery Kaiserin";
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = QGVAR(optic_ACO_grn_AK_F);
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_flashlight_pistol";
-            };
-        };
-    };
-    class GVAR(arifle_AKM74_plum_MRCO_FL_F): GVAR(arifle_AKM74_plum_F) {
-        author = "Avery Kaiserin";
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_MRCO";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_flashlight_pistol";
-            };
-        };
-    };
-    class GVAR(arifle_AKM74_plum_FL_F): GVAR(arifle_AKM74_plum_F) {
-        author = "Avery Kaiserin";
-        class LinkedItems {
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_flashlight_pistol";
-            };
-        };
-    };
-    class GVAR(arifle_AKM74_GL_plum_ACO_FL_F): GVAR(arifle_AKM74_GL_plum_F) {
-        author = "Avery Kaiserin";
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = QGVAR(optic_ACO_grn_AK_F);
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_flashlight_pistol";
-            };
-        };
-    };
-    class GVAR(arifle_AKM74_GL_plum_MRCO_FL_F): GVAR(arifle_AKM74_GL_plum_F) {
-        author = "Avery Kaiserin";
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_MRCO";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_flashlight_pistol";
-            };
-        };
-    };
-    class GVAR(arifle_AKM74_GL_plum_FL_F): GVAR(arifle_AKM74_GL_plum_F) {
-        author = "Avery Kaiserin";
-        class LinkedItems {
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_flashlight_pistol";
-            };
-        };
-    };
-    class GVAR(arifle_AKM74_GL_ROS_F): GVAR(arifle_AKM74_GL_F) {
-        author = "Bran Flakes";
-        class LinkedItems {
-        };
-    };
-    class GVAR(arifle_AKM74_GL_MRCO_F): GVAR(arifle_AKM74_GL_F) {
-        author = "Bran Flakes";
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_MRCO";
-            };
-        };
-    };
-    class GVAR(arifle_AKM74_ROS_F): GVAR(arifle_AKM74_F) {
-        author = "Bran Flakes";
-        class LinkedItems {
-        };
-    };
-    class GVAR(arifle_AKM74_MRCO_F): GVAR(arifle_AKM74_F) {
-        author = "Bran Flakes";
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_MRCO";
-            };
-        };
-    };
     class GVAR(arifle_RPK74M_BVO_F): GVAR(arifle_RPK74M_F) {
         author = "Bran Flakes";
         class LinkedItems {
@@ -3791,7 +2403,7 @@
                 distanceZoomMax = 200;
             };
         };
-        class Eventhandlers {
+        class EventHandlers {
         };
     };
     class GVAR(Launch_Pzf3_F): GVAR(Launch_PzF3_base_F) {
@@ -3818,9 +2430,9 @@
         discreteDistance[] = {100, 200, 300, 400, 500, 600};
         discreteDistanceInitIndex = 1;
         modes[] = {"Single", "Burst", "FullAuto", "Burst_medium", "single_medium_optics1", "single_medium_optics2"};
-        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_dry", "db-5", 1, 10};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_reload", "db0", 1, 10};
-        changeFiremodeSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_firemode", "db-15", 1, 5};
+        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_dry.ogg", "db-5", 1, 10};
+        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_reload.ogg", "db0", 1, 10};
+        changeFiremodeSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_firemode.ogg", "db-15", 1, 5};
         class Library {
             libTextDesc = "The G36K is a polymer, gas-operated rotating bolt, selective-fire carbine originating from Germany. It ultimately lost to the Promet in Livonian service, but remains in use with the German army among other European nations. It was rechambered for 6.5x39 mm caseless and its modular design makes it compatible with a variety of attachments, including underslung grenade launchers or shotgun modules. The G36C is a smaller, compact variant of the standard rifle, equipped with a shorter barrel which is better suited to close-quarters combat, cramped interiors, or special operations.";
         };
@@ -3965,7 +2577,7 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "GestureReloadSPARUGL";
             magazineReloadSwitchPhase = 0.4;
-            reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_UGL_reload", "db-2", 1, 10};
+            reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_UGL_reload.ogg", "db-2", 1, 10};
         };
     };
     class GVAR(arifle_G36C_base_F): GVAR(arifle_G36_base_F) {
@@ -4156,10 +2768,6 @@
                 slot = "CowsSlot";
                 item = QGVAR(optic_LRCO_snd_F);
             };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_Sand_lxWS";
-            };
         };
     };
     class GVAR(arifle_G36_Sand_ACO_Pointer_F): GVAR(arifle_G36_Sand_F) {
@@ -4168,10 +2776,6 @@
             class LinkedItemsOptic {
                 slot = "CowsSlot";
                 item = "optic_ACO";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_Sand_lxWS";
             };
         };
     };
@@ -4182,19 +2786,11 @@
                 slot = "CowsSlot";
                 item = "optic_Holosight";
             };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_Sand_lxWS";
-            };
         };
     };
     class GVAR(arifle_G36_Sand_Pointer_F): GVAR(arifle_G36_Sand_F) {
         author = "Avery Kaiserin";
         class LinkedItems {
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_Sand_lxWS";
-            };
         };
     };
     class GVAR(arifle_G36_GL_Sand_ACO_Pointer_F): GVAR(arifle_G36_GL_Sand_F) {
@@ -4203,10 +2799,6 @@
             class LinkedItemsOptic {
                 slot = "CowsSlot";
                 item = "optic_ACO";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_sand_lxWS";
             };
         };
     };
@@ -4217,19 +2809,11 @@
                 slot = "CowsSlot";
                 item = QGVAR(optic_LRCO_snd_F);
             };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_sand_lxWS";
-            };
         };
     };
     class GVAR(arifle_G36C_Sand_Pointer_F): GVAR(arifle_G36C_Sand_F) {
         author = "Avery Kaiserin";
         class LinkedItems {
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_Sand_lxWS";
-            };
         };
     };
     class GVAR(arifle_G36C_Sand_Holo_Pointer_F): GVAR(arifle_G36C_Sand_F) {
@@ -4238,10 +2822,6 @@
             class LinkedItemsOptic {
                 slot = "CowsSlot";
                 item = "optic_Holosight";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_Sand_lxWS";
             };
         };
     };
@@ -4365,260 +2945,6 @@
             maxRangeProbab = 0.050000001;
             aiRateOfFire = 8;
             aiRateOfFireDistance = 750;
-        };
-    };
-    class GVAR(Arifle_Famas_Base): Rifle_Base_F {
-        author = "Slatts and BranFlakes";
-        _generalMacro = QGVAR(Arifle_Famas_Base);
-        scope = 0;
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\anim\famas_tact_high.rtm"};
-        muzzles[] = {"this", "Atlas_Famas_RifleGrenade"};
-        reloadAction = QGVAR(GestureReloadFAMAS);
-        magazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_green", "30Rnd_556x45_Stanag_red", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_556x45_Stanag_Tracer_Green", "30Rnd_556x45_Stanag_Tracer_Yellow"};
-        magazineWell[] = {"CBA_556x45_STANAG", "CBA_556x45_STANAG_L", "CBA_556x45_STANAG_XL", "CBA_556x45_STANAG_2D", "CBA_556x45_STANAG_2D_XL", "STANAG_556x45", "STANAG_556x45_Large"};
-        magazineReloadSwitchPhase = 0.48;
-        htMin = 8;
-        htMax = 920;
-        inertia = 0.5;
-        aimTransitionSpeed = 1.1;
-        dexterity = 1.5;
-        initSpeed = 750;
-        recoil = "recoil_trg20";
-        maxZeroing = 800;
-        deployedPivot = "bipod";
-        hasBipod = 1;
-        soundBipodDown[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_down", 0.707946, 1, 20};
-        soundBipodUp[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_up", 0.707946, 1, 20};
-        bullet1[] = {"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Metal_01", 0.446684, 1, 15};
-        bullet2[] = {"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Metal_02", 0.446684, 1, 15};
-        bullet3[] = {"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Metal_03", 0.446684, 1, 15};
-        bullet4[] = {"A3\sounds_f\weapons\shells\5_56\Shellcase_556_Metal_04", 0.446684, 1, 15};
-        bullet5[] = {"A3\sounds_f\weapons\shells\7_62\Shellcase_762_Dirt_01", 0.562341, 1, 15};
-        bullet6[] = {"A3\sounds_f\weapons\shells\7_62\Shellcase_762_Dirt_02", 0.562341, 1, 15};
-        bullet7[] = {"A3\sounds_f\weapons\shells\7_62\Shellcase_762_Dirt_03", 0.562341, 1, 15};
-        bullet8[] = {"A3\sounds_f\weapons\shells\7_62\Shellcase_762_Dirt_04", 0.562341, 1, 15};
-        bullet9[] = {"A3\sounds_f\weapons\shells\7_62\Shellcase_762_Grass_01", 0.562341, 1, 15};
-        bullet10[] = {"A3\sounds_f\weapons\shells\7_62\Shellcase_762_Grass_02", 0.562341, 1, 15};
-        bullet11[] = {"A3\sounds_f\weapons\shells\7_62\Shellcase_762_Grass_03", 0.562341, 1, 15};
-        bullet12[] = {"A3\sounds_f\weapons\shells\7_62\Shellcase_762_Grass_04", 0.562341, 1, 15};
-        soundBullet[] = {"bullet1", 0.087, "bullet2", 0.083, "bullet3", 0.083, "bullet4", 0.083, "bullet5", 0.083, "bullet6", 0.083, "bullet7", 0.083, "bullet8", 0.083, "bullet9", 0.083, "bullet10", 0.083, "bullet11", 0.083, "bullet12", 0.083};
-        distanceZoomMin = 300;
-        distanceZoomMax = 300;
-        modes[] = {"Single", "Burst", "FullAuto", "single_medium_optics1", "single_medium_optics2", "burst_medium", "fullauto_medium"};
-        drySound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_dry", 0.562341, 1, 10};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\FAMAS\FAMAS_Reload.ogg", 1, 1, 35};
-        changeFiremodeSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\SPAR01\SPAR01_firemode", 0.177828, 1, 5};
-        hiddenSelections[] = {"CamoG2_1", "CamoG2_2", "CamoG2_3", "CamoG2_Low", "CamoRail", "CamoG2_Grip", "CamoF1_2", "CamoF1_3", "CamoM203", "CamoM203_Low"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_1.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_2.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_3.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_low.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\rail_famas.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\handgrip.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_2.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_3.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\m203.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\m203_low.paa"};
-        weaponInfoType = "RscWeaponZeroing";
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 90;
-            class MuzzleSlot: asdg_MuzzleSlot_556 {
-                linkProxy = "\a3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName = "Muzzle Slot";
-                iconPicture = "\a3\weapons_f\Data\ui\attachment_muzzle";
-                iconPosition[] = {0, 0.45};
-                iconScale = 0.2;
-            };
-            class CowsSlot: asdg_OpticRail1913_long {
-                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                displayName = "Optics Slot";
-                iconPicture = "\a3\weapons_f\Data\ui\attachment_top";
-                iconPinpoint = "Bottom";
-                iconPosition[] = {0.5, 0.35};
-                iconScale = 0.2;
-            };
-            class PointerSlot: asdg_FrontSideRail {
-                linkProxy = "\a3\data_f\proxies\weapon_slots\SIDE";
-                displayName = "Pointer Slot";
-                iconPicture = "\a3\weapons_f\Data\ui\attachment_side";
-                iconPosition[] = {0.2, 0.45};
-                iconScale = 0.25;
-            };
-        };
-        class Single: Mode_SemiAuto {
-            reloadTime = 0.07;
-            dispersion = 0.00073;
-            minRange = 2;
-            minRangeProbab = 0.5;
-            midRange = 150;
-            midRangeProbab = 0.7;
-            maxRange = 250;
-            maxRangeProbab = 0.2;
-            class BaseSoundModeType {
-            };
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {"lxWS_Velko_Shot_SoundSet", "SPAR01_Tail_SoundSet", "SPAR01_InteriorTail_SoundSet"};
-            };
-            class SilencedSound: BaseSoundModeType {
-                SoundSetShot[] = {"lxWS_Velko_silencerShot_SoundSet", "SPAR01_silencerTail_SoundSet", "SPAR01_silencerInteriorTail_SoundSet"};
-            };
-        };
-        class Burst: Mode_Burst {
-            reloadTime = 0.059;
-            burst = 3;
-            dispersion = 0.00073;
-            minRange = 2;
-            minRangeProbab = 0.89999998;
-            midRange = 50;
-            midRangeProbab = 0.69999999;
-            maxRange = 100;
-            maxRangeProbab = 0.050000001;
-            class BaseSoundModeType {
-            };
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {"lxWS_Velko_Shot_SoundSet", "SPAR01_Tail_SoundSet", "SPAR01_InteriorTail_SoundSet"};
-            };
-            class SilencedSound: BaseSoundModeType {
-                SoundSetShot[] = {"lxWS_Velko_silencerShot_SoundSet", "SPAR01_silencerTail_SoundSet", "SPAR01_silencerInteriorTail_SoundSet"};
-            };
-        };
-        class FullAuto: Mode_FullAuto {
-            reloadTime = 0.054;
-            dispersion = 0.00073;
-            minRange = 2;
-            minRangeProbab = 0.9;
-            midRange = 15;
-            midRangeProbab = 0.7;
-            maxRange = 30;
-            maxRangeProbab = 0.05;
-            aiRateOfFire = 1e-006;
-            class BaseSoundModeType {
-            };
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {"lxWS_Velko_Shot_SoundSet", "SPAR01_Tail_SoundSet", "SPAR01_InteriorTail_SoundSet"};
-            };
-            class SilencedSound: BaseSoundModeType {
-                SoundSetShot[] = {"lxWS_Velko_silencerShot_SoundSet", "SPAR01_silencerTail_SoundSet", "SPAR01_silencerInteriorTail_SoundSet"};
-            };
-        };
-        class fullauto_medium: FullAuto {
-            showToPlayer = 0;
-            burst = 3;
-            minRange = 2;
-            minRangeProbab = 0.5;
-            midRange = 75;
-            midRangeProbab = 0.7;
-            maxRange = 100;
-            maxRangeProbab = 0.05;
-            aiRateOfFire = 2;
-        };
-        class Burst_medium: Burst {
-            showToPlayer = 0;
-            minRange = 2;
-            minRangeProbab = 0.5;
-            midRange = 75;
-            midRangeProbab = 0.69999999;
-            maxRange = 100;
-            maxRangeProbab = 0.050000001;
-            aiRateOfFire = 2;
-        };
-        class single_medium_optics1: Single {
-            requiredOpticType = 1;
-            showToPlayer = 0;
-            minRange = 5;
-            minRangeProbab = 0.2;
-            midRange = 300;
-            midRangeProbab = 0.7;
-            maxRange = 450;
-            maxRangeProbab = 0.3;
-            aiRateOfFire = 5;
-            aiRateOfFireDistance = 500;
-        };
-        class single_medium_optics2: single_medium_optics1 {
-            requiredOpticType = 2;
-            minRange = 100;
-            minRangeProbab = 0.1;
-            midRange = 400;
-            midRangeProbab = 0.7;
-            maxRange = 600;
-            maxRangeProbab = 0.05;
-            aiRateOfFire = 6;
-            aiRateOfFireDistance = 600;
-        };
-        class Atlas_Famas_RifleGrenade: UGL_F {
-            scope = 2;
-            displayName = "Rifle Grenade";
-            magazines[] = {"1Rnd_40mm_HE_lxWS", "1Rnd_58mm_AT_lxWS", "1Rnd_50mm_Smoke_lxWS"};
-            magazineWell[] = {"SLR_Grenades"};
-            cameraDir = "OP_look";
-            reloadAction = "lxWS_GestureReload_slr_GL";
-            recoil = "lxWS_recoil_RifleGrenade";
-            discreteDistance[] = {40, 60, 80};
-            discreteDistanceInitIndex = 1;
-            discreteDistanceCameraPoint[] = {"OP_eye_40", "OP_eye_60", "OP_eye_80"};
-            reloadMagazineSound[] = {"lxWS\sounds_f_lxws\weapons\SLR\lxws_slr_GL_reload", 1.3, 1, 20};
-            modes[] = {"Single"};
-            useModelOptics = 0;
-            useExternalOptic = 0;
-            class Single: Mode_SemiAuto {
-                reloadTime = 0.07;
-                dispersion = 0.00073;
-                minRange = 2;
-                minRangeProbab = 0.5;
-                midRange = 150;
-                midRangeProbab = 0.7;
-                maxRange = 250;
-                maxRangeProbab = 0.2;
-                class BaseSoundModeType {
-                };
-                class StandardSound: BaseSoundModeType {
-                    soundSetShot[] = {"lxWS_Velko_Shot_SoundSet", "SPAR01_Tail_SoundSet", "SPAR01_InteriorTail_SoundSet"};
-                };
-                class SilencedSound: BaseSoundModeType {
-                    soundSetShot[] = {"lxWS_Velko_Shot_SoundSet", "SPAR01_Tail_SoundSet", "SPAR01_InteriorTail_SoundSet"};
-                };
-            };
-        };
-        class Atlas_FamasG4_RifleGrenade: UGL_F {
-            scope = 2;
-            displayName = "Rifle Grenade";
-            magazines[] = {"1Rnd_40mm_HE_lxWS", "1Rnd_58mm_AT_lxWS", "1Rnd_50mm_Smoke_lxWS"};
-            magazineWell[] = {"SLR_Grenades"};
-            cameraDir = "OP_look";
-            reloadAction = "lxWS_GestureReload_slr_GL";
-            recoil = "lxWS_recoil_RifleGrenade";
-            discreteDistance[] = {40, 60, 80};
-            discreteDistanceInitIndex = 1;
-            discreteDistanceCameraPoint[] = {"OP_eye_40", "OP_eye_60", "OP_eye_80"};
-            reloadMagazineSound[] = {"lxWS\sounds_f_lxws\weapons\SLR\lxws_slr_GL_reload", 1.3, 1, 20};
-            modes[] = {"Single"};
-            useModelOptics = 0;
-            useExternalOptic = 0;
-            class Single: Mode_SemiAuto {
-                reloadTime = 0.07;
-                dispersion = 0.00073;
-                minRange = 2;
-                minRangeProbab = 0.5;
-                midRange = 150;
-                midRangeProbab = 0.7;
-                maxRange = 250;
-                maxRangeProbab = 0.2;
-                class BaseSoundModeType {
-                };
-                class StandardSound: BaseSoundModeType {
-                    soundSetShot[] = {"Msbs65_01_Shot_SoundSet", "SPAR01_Tail_SoundSet", "SPAR01_InteriorTail_SoundSet"};
-                };
-                class SilencedSound: BaseSoundModeType {
-                    soundSetShot[] = {"Msbs65_01_Shot_SoundSet", "SPAR01_Tail_SoundSet", "SPAR01_InteriorTail_SoundSet"};
-                };
-            };
-        };
-    };
-    class GVAR(Arifle_Famas_M203_base): GVAR(Arifle_Famas_Base) {
-        class Atlas_Arifle_Famas_M203: UGL_F {
-            scope = 2;
-            displayName = "GL 203";
-            magazines[] = {"1Rnd_HE_Grenade_shell", "UGL_FlareWhite_F", "UGL_FlareGreen_F", "UGL_FlareRed_F", "UGL_FlareYellow_F", "UGL_FlareCIR_F", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell"};
-            magazineWell[] = {"UGL_40x36", "CBA_40mm_M203", "CBA_40mm_EGLM"};
-            cameraDir = "OP_look";
-            reloadAction = QGVAR(GestureReloadFAMASUGL);
-            discreteDistance[] = {50, 75, 100, 150, 200, 250, 300, 350, 400};
-            discreteDistanceInitIndex = 1;
-            useModelOptics = 0;
-            useExternalOptic = 0;
-            discreteDistanceCameraPoint[] = {"OP_eye_50", "OP_eye_75", "OP_eye_100", "OP_eye_150", "OP_eye_200", "OP_eye_250", "OP_eye_300", "OP_eye_350", "OP_eye_400"};
-            reloadMagazineSound[] = {"lxWS\sounds_f_lxws\weapons\SLR\lxws_slr_GL_reload", 1.3, 1, 20};
         };
     };
     class GVAR(srifle_DMR_06_black_F): srifle_DMR_06_camo_F {
@@ -4856,21 +3182,6 @@
             aiRateOfFireDistance = 600;
         };
     };
-    class GVAR(arifle_FamasF1_Base): GVAR(Arifle_Famas_Base) {
-        author = "Slatts and BranFlakes";
-        _generalMacro = QGVAR(arifle_FamasF1_Base);
-        scope = 0;
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\anim\famas_tact_high.rtm"};
-        muzzles[] = {"this", "Atlas_Famas_RifleGrenade"};
-        magazines[] = {QGVAR(25Rnd_556x45_Famas), QGVAR(25Rnd_556x45_Famas_green), QGVAR(25Rnd_556x45_Famas_red), QGVAR(25Rnd_556x45_Famas_yellow), QGVAR(25Rnd_556x45_Famas_Tracer_Red), QGVAR(25Rnd_556x45_Famas_Tracer_Green), QGVAR(25Rnd_556x45_Famas_Tracer_Yellow)};
-        magazineWell[] = {QGVAR(FAMAS_556x54)};
-        hiddenSelections[] = {"CamoF1_1", "CamoF1_2", "CamoF1_3", "Camo_Low", "CamoRail", "CamoG2_Grip", "CamoM203", "CamoM203_Low"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_1.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_2.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_3.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_low.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\rail_famas.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\handgrip.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\m203.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\m203_low.paa"};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\FAMAS\FAMAS_Reload.ogg", 1, 1, 35};
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 100;
-        };
-    };
     class GVAR(hgun_Pistol_heavy_01_black_F): hgun_Pistol_heavy_01_F {
         author = "Avery Kaiserin";
         baseWeapon = QGVAR(hgun_Pistol_heavy_01_black_F);
@@ -4919,8 +3230,8 @@
         bullet11[] = {"\A3\Sounds_F\weapons\shells\7_62\grass_762_03", "db-4", 1, 15};
         bullet12[] = {"\A3\Sounds_F\weapons\shells\7_62\grass_762_04", "db-4", 1, 15};
         soundBullet[] = {"bullet1", 0.08333333333333333, "bullet2", 0.08333333333333333, "bullet3", 0.08333333333333333, "bullet4", 0.08333333333333333, "bullet5", 0.08333333333333333, "bullet6", 0.08333333333333333, "bullet7", 0.08333333333333333, "bullet8", 0.08333333333333333, "bullet9", 0.08333333333333333, "bullet10", 0.08333333333333333, "bullet11", 0.08333333333333333, "bullet12", 0.08333333333333333};
-        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_dry", "db-6", 1, 20};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_reload", "db-12", 1, 10};
+        drySound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_dry.ogg", "db-6", 1, 20};
+        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_reload.ogg", "db-12", 1, 10};
         soundBipodDeploy[] = {"\A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_deploy", "db-3", 1, 20};
         soundBipodFold[] = {"\A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_fold", "db-3", 1, 20};
         soundBipodDown[] = {"\A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_down", "db-3", 1, 20};
@@ -4991,93 +3302,11 @@
         model = "\A3\Weapons_F\Acc\acco_aco_OP_smg_F.p3d";
         picture = "\z\ghost\addons\weapons\models\weapons\Acc\Data\UI\icon_optic_ACO_grn_AK_F_ca.paa";
     };
-    class GVAR(arifle_FamasG4_Base): GVAR(Arifle_Famas_Base) {
-        author = "Slatts and BranFlakes";
-        _generalMacro = QGVAR(arifle_FamasG4_Base);
-        scope = 0;
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\anim\famas_tact_high.rtm"};
-        muzzles[] = {"this", "Atlas_Famas_RifleGrenade"};
-        magazines[] = {"30Rnd_65x39_caseless_msbs_mag"};
-        magazineWell[] = {"MX_65x39_MSBS"};
-        recoil = "recoil_MSBS65";
-        hiddenSelections[] = {"CamoG2_1", "CamoG2_2", "CamoG2_3", "CamoG2_Low", "CamoRail", "CamoF1_2", "CamoF1_3"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_1.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_2.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_3.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_low.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\rail_famas.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_2.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_3.paa"};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\FAMAS\FAMAS_65_Reload", 1, 1, 35};
-        class Single: Mode_SemiAuto {
-            reloadTime = 0.07;
-            dispersion = 0.00073;
-            minRange = 2;
-            minRangeProbab = 0.5;
-            midRange = 150;
-            midRangeProbab = 0.7;
-            maxRange = 250;
-            maxRangeProbab = 0.2;
-            class BaseSoundModeType {
-            };
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {"Msbs65_01_Shot_SoundSet", "SPAR01_Tail_SoundSet", "SPAR01_InteriorTail_SoundSet"};
-            };
-            class SilencedSound: BaseSoundModeType {
-                SoundSetShot[] = {"Msbs65_01_Shot_Silencer_SoundSet", "SPAR01_silencerTail_SoundSet", "SPAR01_silencerInteriorTail_SoundSet"};
-            };
-        };
-        class Burst: Mode_Burst {
-            reloadTime = 0.059;
-            burst = 3;
-            dispersion = 0.00073;
-            minRange = 2;
-            minRangeProbab = 0.89999998;
-            midRange = 50;
-            midRangeProbab = 0.69999999;
-            maxRange = 100;
-            maxRangeProbab = 0.050000001;
-            class BaseSoundModeType {
-            };
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {"Msbs65_01_Shot_SoundSet", "SPAR01_Tail_SoundSet", "SPAR01_InteriorTail_SoundSet"};
-            };
-            class SilencedSound: BaseSoundModeType {
-                SoundSetShot[] = {"Msbs65_01_Shot_Silencer_SoundSet", "SPAR01_silencerTail_SoundSet", "SPAR01_silencerInteriorTail_SoundSet"};
-            };
-        };
-        class FullAuto: Mode_FullAuto {
-            reloadTime = 0.054;
-            dispersion = 0.00073;
-            minRange = 2;
-            minRangeProbab = 0.9;
-            midRange = 15;
-            midRangeProbab = 0.7;
-            maxRange = 30;
-            maxRangeProbab = 0.05;
-            aiRateOfFire = 1e-006;
-            class BaseSoundModeType {
-            };
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {"Msbs65_01_Shot_SoundSet", "SPAR01_Tail_SoundSet", "SPAR01_InteriorTail_SoundSet"};
-            };
-            class SilencedSound: BaseSoundModeType {
-                SoundSetShot[] = {"Msbs65_01_Shot_Silencer_Auto_SoundSet", "SPAR01_silencerTail_SoundSet", "SPAR01_silencerInteriorTail_SoundSet"};
-            };
-        };
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            class MuzzleSlot: asdg_MuzzleSlot_65 {
-                linkProxy = "\a3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName = "Muzzle Slot";
-                iconPicture = "\a3\weapons_f\Data\ui\attachment_muzzle";
-                iconPosition[] = {0, 0.45};
-                iconScale = 0.2;
-            };
-        };
-    };
     class GVAR(arifle_CTAR_tan_ACO_Pointer_F): GVAR(arifle_CTAR_tan_f) {
         class LinkedItems {
             class LinkedItemsOptic {
                 slot = "CowsSlot";
                 item = "optic_ACO_grn";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_sand_LxWS";
             };
         };
     };
@@ -5086,10 +3315,6 @@
             class LinkedItemsOptic {
                 slot = "CowsSlot";
                 item = "optic_Arco";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_sand_lxWS";
             };
             class LinkedItemsUnder {
                 slot = "UnderBarrelSlot";
@@ -5111,10 +3336,6 @@
                 slot = "CowsSlot";
                 item = "optic_Arco";
             };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_sand_lxWS";
-            };
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
                 item = "muzzle_snds_58_blk_F";
@@ -5126,10 +3347,6 @@
             class LinkedItemsOptic {
                 slot = "CowsSlot";
                 item = "optic_ACO_grn";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_sand_LxWS";
             };
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -5143,10 +3360,6 @@
                 slot = "CowsSlot";
                 item = "optic_Arco";
             };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_sand_lxWS";
-            };
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
                 item = "muzzle_snds_58_blk_F";
@@ -5159,10 +3372,6 @@
                 slot = "CowsSlot";
                 item = "optic_Arco";
             };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_sand_lxWS";
-            };
         };
     };
     class GVAR(arifle_CTAR_tan_ARCO_Pointer_F): GVAR(arifle_CTAR_tan_f) {
@@ -5170,10 +3379,6 @@
             class LinkedItemsOptic {
                 slot = "CowsSlot";
                 item = "optic_ARCO";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_sand_LxWS";
             };
         };
     };
@@ -5183,10 +3388,6 @@
                 slot = "CowsSlot";
                 item = "optic_ACO_grn";
             };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_sand_LxWS";
-            };
         };
     };
     class GVAR(arifle_CTAR_GL_tan_ARCO_Pointer_F): GVAR(arifle_CTAR_GL_tan_f) {
@@ -5195,19 +3396,11 @@
                 slot = "CowsSlot";
                 item = "optic_ARCO";
             };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_sand_LxWS";
-            };
         };
     };
     class GVAR(arifle_MX_HAMR_IR_Snds_F): arifle_MX_F {
         author = "Ravenholme";
         class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_HAMR_sand_LxWS";
-            };
             class LinkedItemsAcc {
                 slot = "PointerSlot";
                 item = QGVAR(acc_pointer_DM_Sand);
@@ -5514,136 +3707,11 @@
             };
         };
     };
-    class GVAR(SMG_Gepard_blk_F): GVAR(SMG_Gepard_Base_F) {
-        author = "POLPOX, Lukinator, and Toadie2k";
-        baseWeapon = QGVAR(SMG_Gepard_blk_F);
-        scope = 2;
-        displayName = "PPL-20M Upyr 9 mm";
-        picture = "\z\ghost\addons\weapons\models\weapons\SMGs\SMG_Gepard\Data\UI\icon_Aegis_SMG_Gepard_blk_F_ca.paa";
-    };
-    class GVAR(arifle_AK103_F): GVAR(arifle_AKM74_F) {
-        displayName = "AK-103 7.62 mm";
-        baseWeapon = QGVAR(arifle_AK103_F);
-        author = "POLPOX and Toadie2k";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AKM74_F.paa";
-        magazines[] = {QGVAR(30Rnd_762x39_polymer_Black_Mag_F), QGVAR(30Rnd_762x39_polymer_Black_Mag_Green_F), QGVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_F), QGVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_Green_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_Green_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_Tracer_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_Tracer_Green_F)};
-        magazineWell[] = {"AK_762x39", "CBA_762x39_AK", "CBA_762x39_RPK"};
-        magazineReloadSwitchPhase = 0.48;
-        htMin = 11;
-        htMax = 730;
-        inertia = 0.6;
-        aimTransitionSpeed = 1;
-        dexterity = 1.4;
-        initSpeed = 715;
-        recoil = "recoil_akm";
-        maxZeroing = 800;
-        bullet1[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_01", 0.501187, 1, 15};
-        bullet2[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_02", 0.501187, 1, 15};
-        bullet3[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_03", 0.501187, 1, 15};
-        bullet4[] = {"A3\sounds_f\weapons\shells\7_62\metal_762_04", 0.501187, 1, 15};
-        bullet5[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_01", 0.398107, 1, 15};
-        bullet6[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_02", 0.398107, 1, 15};
-        bullet7[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_03", 0.398107, 1, 15};
-        bullet8[] = {"A3\sounds_f\weapons\shells\7_62\dirt_762_04", 0.398107, 1, 15};
-        bullet9[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_01", 0.251189, 1, 15};
-        bullet10[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_02", 0.251189, 1, 15};
-        bullet11[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_03", 0.251189, 1, 15};
-        bullet12[] = {"A3\sounds_f\weapons\shells\7_62\grass_762_04", 0.251189, 1, 15};
-        soundBullet[] = {"bullet1", 0.083, "bullet2", 0.083, "bullet3", 0.083, "bullet4", 0.083, "bullet5", 0.083, "bullet6", 0.083, "bullet7", 0.083, "bullet8", 0.083, "bullet9", 0.083, "bullet10", 0.083, "bullet11", 0.083, "bullet12", 0.083};
-        modes[] = {"FullAuto", "Single", "FullAuto_medium"};
-        class Library {
-            libTextDesc = "$STR_A3_CfgWeapons_arifle_AKM_base_F_Library0";
-        };
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 120;
-            class MuzzleSlot: asdg_MuzzleSlot_762R {
-                iconPosition[] = {-0.02, 0.41};
-                iconScale = 0.2;
-            };
-        };
-        class Single: Mode_SemiAuto {
-            sounds[] = {"StandardSound", "SilencedSound"};
-            reloadTime = 0.1;
-            dispersion = 0.00145;
-            minRange = 2;
-            minRangeProbab = 0.5;
-            midRange = 150;
-            midRangeProbab = 0.7;
-            maxRange = 250;
-            maxRangeProbab = 0.2;
-            class BaseSoundModeType {
-            };
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {"AK47_Shot_SoundSet", "AK47_Tail_SoundSet", "AK47_InteriorTail_SoundSet"};
-            };
-            class SilencedSound: BaseSoundModeType {
-                SoundSetShot[] = {"AK12_silencerShot_SoundSet", "AK12_silencerTail_SoundSet", "AK12_silencerInteriorTail_SoundSet"};
-            };
-        };
-        class FullAuto: Mode_FullAuto {
-            sounds[] = {"StandardSound", "SilencedSound"};
-            reloadTime = 0.1;
-            dispersion = 0.00145;
-            minRange = 2;
-            minRangeProbab = 0.9;
-            midRange = 15;
-            midRangeProbab = 0.7;
-            maxRange = 30;
-            maxRangeProbab = 0.05;
-            class BaseSoundModeType {
-            };
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {"AK47_Shot_SoundSet", "AK47_Tail_SoundSet", "AK47_InteriorTail_SoundSet"};
-            };
-            class SilencedSound: BaseSoundModeType {
-                SoundSetShot[] = {"AK12_silencerShot_SoundSet", "AK12_silencerTail_SoundSet", "AK12_silencerInteriorTail_SoundSet"};
-            };
-        };
-        class FullAuto_medium: FullAuto {
-            showToPlayer = 0;
-            burst = 3;
-            minRange = 2;
-            minRangeProbab = 0.5;
-            midRange = 75;
-            midRangeProbab = 0.7;
-            maxRange = 100;
-            maxRangeProbab = 0.05;
-            aiRateOfFire = 2;
-        };
-    };
-    class GVAR(arifle_AK103_GL_F): GVAR(arifle_AK103_F) {
-        author = "POLPOX and Toadie2k";
-        baseWeapon = QGVAR(arifle_AK103_GL_F);
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\ak74m_gl.p3d";
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\Anim\ak74m_gl.rtm"};
-        magazines[] = {QGVAR(30Rnd_762x39_polymer_Black_Mag_F), QGVAR(30Rnd_762x39_polymer_Black_Mag_Green_F), QGVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_F), QGVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_Green_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_Green_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_Tracer_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_Tracer_Green_F)};
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AKM74_GL_F.paa";
-        displayName = "AK-103 GL 7.62 mm";
-        hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "camo5"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_adds_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\gp30_co.paa", "\z\ghost\addons\weapons\models\weapons\Shotguns\Mp153\Data\Mp153_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak_mount_co.paa"};
-        muzzles[] = {"this", "EGLM"};
-        class EGLM: UGL_F {
-            displayName = "$STR_A3_CfgWeapons_arifle_AK12_GL_base_F_EGLM0";
-            useModelOptics = 0;
-            useExternalOptic = 0;
-            cameraDir = "gl_look";
-            discreteDistance[] = {50, 100, 150, 200, 250, 300, 350, 400};
-            discreteDistanceCameraPoint[] = {"gl_eye_50m", "gl_eye_100m", "gl_eye_150m", "gl_eye_200m", "gl_eye_250m", "gl_eye_300m", "gl_eye_350m", "gl_eye_400m"};
-            discreteDistanceInitIndex = 1;
-            reloadAction = "GestureReloadMXUGL";
-            magazineReloadSwitchPhase = 0.36;
-            reloadMagazineSound[] = {"A3\Sounds_F_Exp\arsenal\weapons\Rifles\Rifle_AK12\AK12_UGL_reload", 1, 1, 10};
-        };
-    };
     class GVAR(arifle_CTAR_tan_ARCO_Pointer_Snds_F): GVAR(arifle_CTAR_tan_f) {
         class LinkedItems {
             class LinkedItemsOptic {
                 slot = "CowsSlot";
                 item = "optic_ARCO";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR_sand_LxWS";
             };
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
@@ -5660,88 +3728,6 @@
         hiddenSelectionsTextures[] = {"a3\Weapons_F_Exp\Rifles\AK12\Data\AK12_ak12_1_co.paa", "a3\Weapons_F_Exp\Rifles\AK12\Data\AK12_ak12_2_co.paa", "a3\Weapons_F_Enoch\Rifles\AK12\Data\AKU12_RPK12_parts_CO.paa"};
         hiddenSelectionsMaterials[] = {"a3\Weapons_F_Exp\Rifles\AK12\Data\AK12_F_1.rvmat", "a3\Weapons_F_Exp\Rifles\AK12\Data\AK12_F_2.rvmat", "a3\Weapons_F_Enoch\Rifles\AK12\Data\AK12_RPK12.rvmat"};
         baseWeapon = QGVAR(arifle_RPK12_545_F);
-    };
-    class GVAR(Arifle_famasG2_F): GVAR(Arifle_Famas_Base) {
-        author = "Slatts and BranFlakes";
-        _generalMacro = QGVAR(Arifle_famasG2_F);
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "FAMAS G2 5.56 mm";
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Atlas_arifle_g2.p3d";
-        descriptionShort = "Assault Rifle<br />Caliber: 5.56x45 mm";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\UI\gear_famasG2_X_ca.paa";
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\anim\famas_new_high_2.rtm"};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\FAMAS\FAMAS_Reload.ogg", 1, 1, 35};
-        hiddenSelections[] = {"CamoG2_1", "CamoG2_2", "CamoG2_3", "CamoG2_Low", "CamoRail", "CamoF1_2", "CamoF1_3"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_1.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_2.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_3.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_low.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\rail_famas.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_2.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_3.paa"};
-        deployedPivot = "bipod";
-        hasBipod = 1;
-        soundBipodDown[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_down", 0.707946, 1, 20};
-        soundBipodUp[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_up", 0.707946, 1, 20};
-        muzzles[] = {"this", "Atlas_Famas_RifleGrenade"};
-    };
-    class GVAR(Arifle_famasG2_GL_F): GVAR(Arifle_Famas_M203_base) {
-        author = "Slatts and BranFlakes";
-        _generalMacro = QGVAR(Arifle_famasG2_GL_F);
-        scope = 2;
-        scopeCurator = 2;
-        baseWeapon = QGVAR(Arifle_famasG2_GL_F);
-        displayName = "FAMAS G2 GL 5.56 mm";
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Atlas_arifle_G2_M203.p3d";
-        descriptionShort = "Assault Rifle<br />Caliber: 5.56x45 mm";
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\anim\famas_new_gl.rtm"};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\FAMAS\FAMAS_Reload.ogg", 1, 1, 35};
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\UI\gear_famasG2m203_X_ca.paa";
-        hiddenSelections[] = {"CamoG2_1", "CamoG2_2", "CamoG2_3", "CamoG2_Low", "CamoRail", "CamoF1_2", "CamoF1_3", "CamoM203", "CamoM203_Low"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_1.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_2.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_3.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_low.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\rail_famas.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_2.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_3.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\m203.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\m203_low.paa"};
-        deployedPivot = "bipod";
-        hasBipod = 1;
-        soundBipodDown[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_down", 0.707946, 1, 20};
-        soundBipodUp[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_up", 0.707946, 1, 20};
-        muzzles[] = {"this", "Atlas_Arifle_Famas_M203"};
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 110;
-        };
-    };
-    class GVAR(Arifle_famasG2_Grip_F): GVAR(Arifle_Famas_Base) {
-        author = "Slatts and BranFlakes";
-        _generalMacro = QGVAR(Arifle_famasG2_Grip_F);
-        scope = 2;
-        scopeCurator = 2;
-        baseWeapon = QGVAR(Arifle_famasG2_Grip_F);
-        displayName = "FAMAS G2 FG 5.56 mm";
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Atlas_arifle_g2_hg.p3d";
-        descriptionShort = "Assault Rifle<br />Caliber: 5.56x45 mm";
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\FAMAS\FAMAS_Reload.ogg", 1, 1, 35};
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\UI\gear_famasG2grip_X_ca.paa";
-        hiddenSelections[] = {"CamoG2_1", "CamoG2_2", "CamoG2_3", "CamoG2_Low", "CamoRail", "CamoG2_Grip", "CamoF1_2", "CamoF1_3"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_1.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_2.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_3.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_low.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\rail_famas.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\handgrip.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_2.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_3.paa"};
-        deployedPivot = "bipod";
-        hasBipod = 1;
-        soundBipodDown[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_down", 0.707946, 1, 20};
-        soundBipodUp[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_up", 0.707946, 1, 20};
-        muzzles[] = {"this", "Atlas_Famas_RifleGrenade"};
-    };
-    class GVAR(arifle_famasF1_GL_F): GVAR(Arifle_Famas_M203_base) {
-        author = "Slatts and BranFlakes";
-        _generalMacro = QGVAR(arifle_famasF1_GL_F);
-        scope = 2;
-        scopeCurator = 2;
-        baseWeapon = QGVAR(arifle_famasF1_GL_F);
-        displayName = "FAMAS F1 GL 5.56 mm";
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Atlas_arifle_F1_M203.p3d";
-        descriptionShort = "Assault Rifle<br />Caliber: 5.56x45 mm";
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\anim\famas_new_gl.rtm"};
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\UI\gear_famasF1m203_X_ca.paa";
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\FAMAS\FAMAS_Reload.ogg", 1, 1, 35};
-        hiddenSelections[] = {"CamoF1_1", "CamoF1_2", "CamoF1_3", "Camo_Low", "CamoRail", "CamoG2_Grip", "CamoM203", "CamoM203_Low"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_1.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_2.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_3.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_low.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\rail_famas.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\handgrip.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\m203.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\m203_low.paa"};
-        magazines[] = {QGVAR(25Rnd_556x45_Famas), QGVAR(25Rnd_556x45_Famas_green), QGVAR(25Rnd_556x45_Famas_red), QGVAR(25Rnd_556x45_Famas_yellow), QGVAR(25Rnd_556x45_Famas_Tracer_Red), QGVAR(25Rnd_556x45_Famas_Tracer_Green), QGVAR(25Rnd_556x45_Famas_Tracer_Yellow)};
-        magazineWell[] = {QGVAR(FAMAS_556x54)};
-        muzzles[] = {"this", "Atlas_Arifle_Famas_M203"};
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 120;
-        };
     };
     class GVAR(srifle_DMR_06_black_khs_bipod_F): GVAR(srifle_DMR_06_black_F) {
         author = "Avery Kaiserin";
@@ -5785,69 +3771,6 @@
         hiddenSelectionsTextures[] = {"\A3\Weapons_F_Exp\Rifles\AK12\Data\AK12_ak12_1_CO.paa", "\A3\Weapons_F_Exp\Rifles\AK12\Data\AK12_ak12_2_CO.paa", "\A3\Weapons_F_Exp\Rifles\AK12\Data\AK12_ak12_gl_CO.paa"};
         hiddenSelectionsMaterials[] = {"\A3\Weapons_F_Exp\Rifles\AK12\Data\AK12_F_1.rvmat", "\A3\Weapons_F_Exp\Rifles\AK12\Data\AK12_F_2.rvmat", "\A3\Weapons_F_Exp\Rifles\AK12\Data\AK12_GL_F.rvmat"};
         baseWeapon = QGVAR(arifle_AK12_GL_545_F);
-    };
-    class GVAR(arifle_famasF1_F): GVAR(arifle_FamasF1_Base) {
-        author = "Slatts and BranFlakes";
-        _generalMacro = QGVAR(arifle_famasF1_F);
-        scope = 2;
-        scopeCurator = 2;
-        baseWeapon = QGVAR(arifle_famasF1_F);
-        displayName = "FAMAS F1 5.56 mm";
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Atlas_arifle_famas_f1.p3d";
-        descriptionShort = "Assault Rifle<br />Caliber: 5.56x45 mm";
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\anim\famas_new_high.rtm"};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\FAMAS\FAMAS_Reload.ogg", 1, 1, 35};
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\UI\gear_famasF1_X_ca.paa";
-        hiddenSelections[] = {"CamoF1_1", "CamoF1_2", "CamoF1_3", "Camo_Low", "CamoRail", "CamoG2_Grip", "CamoM203", "CamoM203_Low"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_1.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_2.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_3.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_low.paa", "", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\handgrip.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\m203.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\m203_low.paa"};
-        muzzles[] = {"this", "Atlas_Famas_RifleGrenade"};
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 100;
-            class CowsSlot: CowsSlot {
-                compatibleItems[] = {};
-            };
-            class PointerSlot: PointerSlot {
-                compatibleItems[] = {};
-            };
-        };
-    };
-    class GVAR(arifle_famasF1_Grip_F): GVAR(arifle_FamasF1_Base) {
-        author = "Slatts and BranFlakes";
-        _generalMacro = QGVAR(arifle_famasF1_Grip_F);
-        scope = 2;
-        scopeCurator = 2;
-        baseWeapon = QGVAR(arifle_famasF1_Grip_F);
-        displayName = "FAMAS F1 FG 5.56 mm";
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Atlas_arifle_f1_hg.p3d";
-        descriptionShort = "Assault Rifle<br />Caliber: 5.56x45 mm";
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\anim\famas_tact_high.rtm"};
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\UI\gear_famasF1grip_X_ca.paa";
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\FAMAS\FAMAS_Reload.ogg", 1, 1, 35};
-        hiddenSelections[] = {"CamoF1_1", "CamoF1_2", "CamoF1_3", "Camo_Low", "CamoRail", "CamoG2_Grip"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_1.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_2.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_3.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_low.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\rail_famas.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\handgrip.paa"};
-        muzzles[] = {"this", "Atlas_Famas_RifleGrenade"};
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 95;
-        };
-    };
-    class GVAR(arifle_famasF1_RIS_F): GVAR(arifle_FamasF1_Base) {
-        author = "Slatts and BranFlakes";
-        _generalMacro = QGVAR(arifle_famasF1_RIS_F);
-        scope = 2;
-        scopeCurator = 2;
-        baseWeapon = QGVAR(arifle_famasF1_RIS_F);
-        displayName = "FAMAS F1 RIS 5.56 mm";
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Atlas_arifle_famas_f1.p3d";
-        descriptionShort = "Assault Rifle<br />Caliber: 5.56x45 mm";
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\anim\famas_new_high.rtm"};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\FAMAS\FAMAS_Reload.ogg", 1, 1, 35};
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\UI\gear_famasF1RIS_X_ca.paa";
-        hiddenSelections[] = {"CamoF1_1", "CamoF1_2", "CamoF1_3", "Camo_Low", "CamoRail", "CamoG2_Grip", "CamoM203", "CamoM203_Low"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_1.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_2.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_3.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_low.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\rail_famas.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\handgrip.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\m203.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\m203_low.paa"};
-        muzzles[] = {"this", "Atlas_Famas_RifleGrenade"};
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 95;
-        };
     };
     class GVAR(hgun_G17_black_F): GVAR(hgun_G17_F) {
         author = "Avery Kaiserin";
@@ -5923,7 +3846,7 @@
             };
             class PointerSlot {
             };
-            class UnderbarrelSlot {
+            class UnderBarrelSlot {
             };
         };
     };
@@ -5932,7 +3855,7 @@
         baseWeapon = QGVAR(srifle_WF50_camo_F);
         scope = 1;
         displayName = "Warfare-50 12.7 mm (WIP: DO NOT USE)";
-        picture = "\z\ghost\addons\weapons\models\weapons\LongRangeRifles\WF50\Data\UI\icon_srifle_WF50_camo_F_X_ca.paa";
+        picture = "\z\ghost\addons\weapons\models\weapons\LongRangeRifles\WF50\Data\UI\icon_srifle_WF50_F_X_ca.paa";
         hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\LongRangeRifles\WF50\Data\WF50_BLUFOR_CO.paa"};
         hiddenSelectionsMaterials[] = {"\z\ghost\addons\weapons\models\weapons\LongRangeRifles\WF50\Data\WF50_BLUFOR.rvmat"};
     };
@@ -5941,7 +3864,7 @@
         baseWeapon = QGVAR(srifle_WF50_tna_F);
         displayName = "Warfare-50 12.7 mm (WIP: DO NOT USE)";
         hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\LongRangeRifles\WF50\Data\srifle_WF50_tna_F_CO.paa"};
-        picture = "\z\ghost\addons\weapons\models\weapons\LongRangeRifles\WF50\Data\UI\icon_srifle_WF50_tna_F_X_ca.paa";
+        picture = "\z\ghost\addons\weapons\models\weapons\LongRangeRifles\WF50\Data\UI\icon_srifle_WF50_F_X_ca.paa";
     };
     class GVAR(srifle_WF50_LRPS_F): GVAR(srifle_WF50_F) {
         class LinkedItems {
@@ -5969,70 +3892,6 @@
     };
     class GVAR(hgun_G17_black_snds_F): GVAR(hgun_G17_black_F) {
         class LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_L";
-            };
-        };
-    };
-    class GVAR(arifle_AK103_plum_F): GVAR(arifle_AK103_F) {
-        author = "POLPOX and Toadie2k";
-        baseWeapon = QGVAR(arifle_AK103_plum_F);
-        displayName = "AK-103 7.62 mm (Plum)";
-        magazines[] = {QGVAR(30Rnd_762x39_polymer_Plum_Mag_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_Green_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_Tracer_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_Tracer_Green_F), QGVAR(30Rnd_762x39_polymer_Black_Mag_F), QGVAR(30Rnd_762x39_polymer_Black_Mag_Green_F), QGVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_F), QGVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_Green_F)};
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AKM74_plum_F.paa";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_adds_plum_co.paa", "\z\ghost\addons\weapons\models\weapons\Shotguns\Mp153\Data\Mp153_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak_mount_co.paa"};
-    };
-    class GVAR(arifle_AK103_GL_plum_F): GVAR(arifle_AK103_GL_F) {
-        author = "POLPOX and Toadie2k";
-        baseWeapon = QGVAR(arifle_AK103_GL_plum_F);
-        displayName = "AK-103 GL 7.62 mm (Plum)";
-        magazines[] = {QGVAR(30Rnd_762x39_polymer_Plum_Mag_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_Green_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_Tracer_F), QGVAR(30Rnd_762x39_polymer_Plum_Mag_Tracer_Green_F), QGVAR(30Rnd_762x39_polymer_Black_Mag_F), QGVAR(30Rnd_762x39_polymer_Black_Mag_Green_F), QGVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_F), QGVAR(30Rnd_762x39_polymer_Black_Mag_Tracer_Green_F)};
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_Aegis_arifle_AKM74_GL_plum_F.paa";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_base_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak74_adds_plum_co.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\gp30_co.paa", "\z\ghost\addons\weapons\models\weapons\Shotguns\Mp153\Data\Mp153_CO.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\ak_mount_co.paa"};
-    };
-    class GVAR(SMG_Gepard_blk_ACO_FL_F): GVAR(SMG_Gepard_blk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_ACO_grn_smg";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_flashlight";
-            };
-        };
-    };
-    class GVAR(SMG_Gepard_blk_ACO_F): GVAR(SMG_Gepard_blk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_ACO_grn_smg";
-            };
-        };
-    };
-    class GVAR(SMG_Gepard_blk_ACO_LP_F): GVAR(SMG_Gepard_blk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_ACO_grn_smg";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(SMG_Gepard_blk_ACO_LP_Snds_F): GVAR(SMG_Gepard_blk_F) {
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_ACO_grn_smg";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
                 item = "muzzle_snds_L";
@@ -6084,175 +3943,6 @@
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
                 item = "muzzle_snds_H";
-            };
-        };
-    };
-    class GVAR(arifle_famasG4_Grip_F): GVAR(arifle_FamasG4_Base) {
-        author = "Slatts and BranFlakes";
-        _generalMacro = QGVAR(arifle_famasG4_Grip_F);
-        scope = 2;
-        scopeCurator = 2;
-        baseWeapon = QGVAR(arifle_famasG4_Grip_F);
-        displayName = "FAMAS G4 6.5 mm";
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Atlas_arifle_famas_g4_hg.p3d";
-        descriptionShort = "Assault Rifle<br />Caliber: 6.5x39 mm";
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\UI\gear_famasG2grip_X_ca.paa";
-        deployedPivot = "bipod";
-        hasBipod = 1;
-        soundBipodDown[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_down", 0.707946, 1, 20};
-        soundBipodUp[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_up", 0.707946, 1, 20};
-        muzzles[] = {"this", "Atlas_FamasG4_RifleGrenade"};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\FAMAS\FAMAS_65_Reload.ogg", 1, 1, 35};
-        class Library {
-            libTextDesc = "The FAMAS is a bullpup, lever-delayed blowback, assault rifle designed and manufactured in France, entering service in 1978 as the FAMAS F1. A version compliant with the NATO standard 5.56 mm cartridge was introduced in the '90s, the G2, but saw only limited domestic usage, although it enjoyed moderate success as an export weapon. Despite replacing the FAMAS in the early 2010s with an AR platform, NATO standardising around the 6.5x39 mm cartridge at the start of the Black Recession saw renewed interest in a domestic weapon platform to meet the new requirements, providing a boost to local economies, and a 6.5 mm compliant FAMAS, the G4, was produced as the new standard infantry rifle of the French Forces.";
-        };
-    };
-    class GVAR(Arifle_famasG4_GL_F): GVAR(Arifle_Famas_M203_base) {
-        author = "Slatts and BranFlakes";
-        _generalMacro = QGVAR(Arifle_famasG4_GL_F);
-        scope = 2;
-        scopeCurator = 2;
-        baseWeapon = QGVAR(Arifle_famasG4_GL_F);
-        displayName = "FAMAS G4 GL 6.5 mm";
-        model = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Atlas_arifle_famas_G4_M203.p3d";
-        descriptionShort = "Assault Rifle<br />Caliber: 6.5x39 mm";
-        handAnim[] = {"OFP2_ManSkeleton", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\anim\famas_new_gl.rtm"};
-        reloadMagazineSound[] = {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\FAMAS\FAMAS_65_Reload.ogg", 1, 1, 35};
-        picture = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\UI\gear_famasG2m203_X_ca.paa";
-        hiddenSelections[] = {"CamoG2_1", "CamoG2_2", "CamoG2_3", "CamoG2_Low", "CamoRail", "CamoF1_2", "CamoF1_3", "CamoM203", "CamoM203_Low"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_1.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_2.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_g2_3.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_low.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\rail_famas.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_2.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_3.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\m203.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\m203_low.paa"};
-        deployedPivot = "bipod";
-        hasBipod = 1;
-        soundBipodDown[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_down", 0.707946, 1, 20};
-        soundBipodUp[] = {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_generic_up", 0.707946, 1, 20};
-        muzzles[] = {"this", "Atlas_Arifle_Famas_M203"};
-        magazines[] = {"30Rnd_65x39_caseless_msbs_mag"};
-        magazineWell[] = {"MX_65x39_MSBS"};
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 110;
-            class MuzzleSlot: asdg_MuzzleSlot_65 {
-                linkProxy = "\a3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName = "Muzzle Slot";
-                iconPicture = "\a3\weapons_f\Data\ui\attachment_muzzle";
-                iconPosition[] = {0, 0.45};
-                iconScale = 0.2;
-            };
-        };
-        class Single: Mode_SemiAuto {
-            reloadTime = 0.07;
-            dispersion = 0.00073;
-            minRange = 2;
-            minRangeProbab = 0.5;
-            midRange = 150;
-            midRangeProbab = 0.7;
-            maxRange = 250;
-            maxRangeProbab = 0.2;
-            class BaseSoundModeType {
-            };
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {"Msbs65_01_Shot_SoundSet", "SPAR01_Tail_SoundSet", "SPAR01_InteriorTail_SoundSet"};
-            };
-            class SilencedSound: BaseSoundModeType {
-                SoundSetShot[] = {"Msbs65_01_Shot_Silencer_SoundSet", "SPAR01_silencerTail_SoundSet", "SPAR01_silencerInteriorTail_SoundSet"};
-            };
-        };
-        class Burst: Mode_Burst {
-            reloadTime = 0.059;
-            burst = 3;
-            dispersion = 0.00073;
-            minRange = 2;
-            minRangeProbab = 0.89999998;
-            midRange = 50;
-            midRangeProbab = 0.69999999;
-            maxRange = 100;
-            maxRangeProbab = 0.050000001;
-            class BaseSoundModeType {
-            };
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {"Msbs65_01_Shot_SoundSet", "SPAR01_Tail_SoundSet", "SPAR01_InteriorTail_SoundSet"};
-            };
-            class SilencedSound: BaseSoundModeType {
-                SoundSetShot[] = {"Msbs65_01_Shot_Silencer_SoundSet", "SPAR01_silencerTail_SoundSet", "SPAR01_silencerInteriorTail_SoundSet"};
-            };
-        };
-        class FullAuto: Mode_FullAuto {
-            reloadTime = 0.054;
-            dispersion = 0.00073;
-            minRange = 2;
-            minRangeProbab = 0.9;
-            midRange = 15;
-            midRangeProbab = 0.7;
-            maxRange = 30;
-            maxRangeProbab = 0.05;
-            aiRateOfFire = 1e-006;
-            class BaseSoundModeType {
-            };
-            class StandardSound: BaseSoundModeType {
-                soundSetShot[] = {"Msbs65_01_Shot_SoundSet", "SPAR01_Tail_SoundSet", "SPAR01_InteriorTail_SoundSet"};
-            };
-            class SilencedSound: BaseSoundModeType {
-                SoundSetShot[] = {"Msbs65_01_Shot_Silencer_Auto_SoundSet", "SPAR01_silencerTail_SoundSet", "SPAR01_silencerInteriorTail_SoundSet"};
-            };
-        };
-    };
-    class GVAR(Arifle_FamasG4_Grip_Holo_LP_F): GVAR(arifle_famasG4_Grip_F) {
-        author = "Ravenholme";
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight_blk_F";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(Arifle_FamasG4_Grip_Holo_F): GVAR(arifle_famasG4_Grip_F) {
-        author = "Ravenholme";
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight_blk_F";
-            };
-        };
-    };
-    class GVAR(Arifle_FamasG4_GL_Holo_LP_F): GVAR(Arifle_famasG4_GL_F) {
-        author = "Ravenholme";
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Holosight_blk_F";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(Arifle_FamasG4_Grip_RCO_LP_F): GVAR(arifle_famasG4_Grip_F) {
-        author = "Ravenholme";
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Hamr";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
-            };
-        };
-    };
-    class GVAR(Arifle_FamasG4_GL_RCO_LP_F): GVAR(Arifle_famasG4_GL_F) {
-        author = "Ravenholme";
-        class LinkedItems {
-            class LinkedItemsOptic {
-                slot = "CowsSlot";
-                item = "optic_Hamr";
-            };
-            class LinkedItemsAcc {
-                slot = "PointerSlot";
-                item = "acc_pointer_IR";
             };
         };
     };

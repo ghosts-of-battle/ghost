@@ -1,4 +1,4 @@
-class CfgMagazinewells {
+class CfgMagazineWells {
     // Single-shot UGL well (M203, M320, EGLM, etc.)
     class CBA_40mm_M203 {
         ADDON[] += {

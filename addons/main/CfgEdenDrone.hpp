@@ -151,7 +151,7 @@ class ghost_ClassPick_Base: ctrlControlsGroupNoScrollbars {
             idc      = 1211;
             y        = "5 * (pixelH * pixelGrid * 0.5)";
         };
-        class List: ctrlListBox {
+        class List: ctrlListbox {
             idc = 100;
             type = 5;            // CT_LISTBOX
             style = 16 + 0x20;   // ST_FRAME + LB_MULTI

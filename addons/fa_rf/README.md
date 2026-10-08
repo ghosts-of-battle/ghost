@@ -11,6 +11,7 @@ _No description yet - add one above the generated marker._
 - `RF_Data_Loadorder` _(external)_
 - `ace_ballistics` _(external)_
 - `ghost_fa_main`
+- `ghost_fa_ammo`
 - `cba_main` _(external)_
 - `A3_Weapons_F` _(external)_
 - `A3_Weapons_F_Destroyer` _(external)_

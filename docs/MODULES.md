@@ -2,6 +2,24 @@
 
 Place from the 3DEN entity list under the listed category.
 
+## Air Defence Sites (`adsite`)
+
+### Ghost - Air Defence Site
+
+- **Class** `ghost_moduleADSite`
+- **Category** ghost_modules
+- An air defence Site: sync the radars, launchers, guns and CIWS that make it. It pools what they see, gives each aircraft or incoming round to the best-fit weapon - guns inside, short-range missiles for the bulk, long-range held in reserve - fires the vehicles' own weapons, and runs on the server. Status and control are on the tacpad.
+- **Attributes** `access`, `automation`, `burstSeconds`, `emcon`, `engageAir`, `engageMunitions`, `fumble`, `link`, `notices`, `radius`, `reaction`, `reserveLong`, `shotsPerThreat`, `siteName`
+
+## Air Defence (`airdefence`)
+
+### Ghost - Air Defence (temporary)
+
+- **Class** `ghost_moduleAirDefence`
+- **Category** ghost_modules
+- Places air defence for every ALiVE commander on the map. TEMPORARY - it stands in until ALiVE 3's own air defence is stable.<br>Conventional commanders (invasion, occupation) get radar-cued missile batteries. Asymmetric commanders get MANPAD teams instead - a guerrilla does not field a battery.<br>Where they go is read from ALiVE: each commander's own TAOR and objectives, never anything set here. Everything placed is profiled, so it costs nothing while nobody is near it.<br>Batteries Per Side - conventional commanders only, asymmetric get none Launchers Per Battery - set back from the radar that cues them Battery Spacing (m) - least distance between two batteries Radar / Launcher / MANPAD classes are set PER SIDE - the three commanders are three different armies. Leave any of them blank to pick from that commander's own faction. Clear Ground (m) - open ground a battery needs; a radar in a wood sees nothing MANPAD Teams Per Side - asymmetric commanders only
+- **Attributes** `launcherEast`, `launcherGuer`, `launcherWest`, `launchers`, `manpadEast`, `manpadGuer`, `manpadManEast`, `manpadManGuer`, `manpadManWest`, `manpadWest`, `openGround`, `radarEast`, `radarGuer`, `radarWest`, `rearmEvery`, `security`, `sitesPerSide`, `spacing`, `taorEast`, `taorGuer`, `taorWest`, `teamsPerSide`
+
 ## Ambience (`ambience`)
 
 ### Ghost - Ambient Shelling
@@ -62,6 +80,15 @@ Place from the 3DEN entity list under the listed category.
 - **Category** ghost_modules
 - Puts an intel package on a device. Hacking that device hands over a share of it.<br>Package - a class under Ghost_IntelPackages in the mission config Terminal Class - what to build if this is synchronised to nothing<br>How big a share one hack yields is a CBA setting - Ghosts of Battle, Hacking. The package's own contents are mission config, not module attributes: see the wiki.
 - **Attributes** `package`, `terminal`
+
+## IADS (`iads`)
+
+### Ghost - IADS / EMCON
+
+- **Class** `ghost_moduleIADS`
+- **Category** ghost_modules
+- Emission control for the air defence net. Every radar the enemy has blinks on and off on its own jittered timer, a minimum number stay lit so the side is never blind, and everything on the net shares one picture.<br>WHY IT MATTERS: a radar that never stops radiating is a beacon that can be waited out. One that blinks cannot - a strike has to accept that something will see it, and the pilot's problem becomes timing rather than patience.<br>It manages every side the players are not on. Nothing is placed and nothing is spawned: it manages the radars already standing, whoever put them there.<br>Blink Min / Max - the range each set re-rolls its own timer in Minimum Emitters - how many stay lit per side, whatever the blink says Rescan - how often it looks for radars that were not there before Link Whole Side - share the picture beyond the air-defence net Reveal Interval - how often the picture reaches the mod's threat board Ambush Mode - UNVERIFIED, see the tooltip and run `#ghost iads.probe` first
+- **Attributes** `ambush`, `blinkMax`, `blinkMin`, `debugMarkers`, `envelope`, `exempt`, `extraReceivers`, `linkAll`, `manageAir`, `minEmitters`, `rescan`, `revealEvery`
 
 ## Jamming (`jamming`)
 

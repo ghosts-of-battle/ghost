@@ -1,4 +1,4 @@
-class CfgMagazinewells {
+class CfgMagazineWells {
     // CBA 5.56x45 MINIMI belt well — RHS variants (vanilla in ghostfa_ammo)
     class CBA_556x45_MINIMI {
         ADDON[] += {

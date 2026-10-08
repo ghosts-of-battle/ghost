@@ -3,72 +3,32 @@
 
 class CfgMovesBasic {
     class ManActions {
-        GVAR(GestureReloadAKM74) = "";
-        GVAR(GestureReloadSA80) = "";
-        GVAR(GestureReloadGepard) = "";
         GVAR(GestureReloadG36) = "";
-        GVAR(GestureReloadFAMAS) = "";
-        GVAR(GestureReloadFAMASUGL) = "";
     };
     class Actions {
         class PistolStandActions;
         class RifleAdjustProneBaseActions;
         class RifleBaseStandActions;
         class NoActions: ManActions {
-            GVAR(GestureReloadAKM74)[] = {QGVAR(GestureReloadAKM74), "Gesture"};
-            GVAR(GestureReloadSA80)[] = {QGVAR(GestureReloadSA80), "Gesture"};
-            GVAR(GestureReloadGepard)[] = {QGVAR(GestureReloadGepard), "Gesture"};
             GVAR(GestureReloadG36)[] = {QGVAR(GestureReloadG36), "Gesture"};
-            GVAR(GestureReloadFAMAS)[] = {QGVAR(GestureReloadFAMAS), "Gesture"};
-            GVAR(GestureReloadFAMASUGL)[] = {QGVAR(GestureReloadFAMASUGL), "Gesture"};
         };
         class RifleProneActions: RifleBaseStandActions {
-            GVAR(GestureReloadAKM74)[] = {QGVAR(GestureReloadAKM74Prone), "Gesture"};
-            GVAR(GestureReloadSA80)[] = {QGVAR(GestureReloadSA80Prone), "Gesture"};
-            GVAR(GestureReloadGepard)[] = {QGVAR(GestureReloadGepardProne), "Gesture"};
             GVAR(GestureReloadG36)[] = {QGVAR(GestureReloadG36Prone), "Gesture"};
-            GVAR(GestureReloadFAMAS)[] = {QGVAR(GestureReloadFAMASProne), "Gesture"};
-            GVAR(GestureReloadFAMASUGL)[] = {QGVAR(GestureReloadFAMASUGLProne), "Gesture"};
         };
         class RifleAdjustFProneActions: RifleAdjustProneBaseActions {
-            GVAR(GestureReloadAKM74)[] = {QGVAR(GestureReloadAKM74Context), "Gesture"};
-            GVAR(GestureReloadSA80)[] = {QGVAR(GestureReloadSA80Context), "Gesture"};
-            GVAR(GestureReloadGepard)[] = {QGVAR(GestureReloadGepardContext), "Gesture"};
             GVAR(GestureReloadG36)[] = {QGVAR(GestureReloadG36Context), "Gesture"};
-            GVAR(GestureReloadFAMAS)[] = {QGVAR(GestureReloadFAMASContext), "Gesture"};
-            GVAR(GestureReloadFAMASUGL)[] = {QGVAR(GestureReloadFAMASUGLContext), "Gesture"};
         };
         class RifleAdjustLProneActions: RifleAdjustProneBaseActions {
-            GVAR(GestureReloadAKM74)[] = {QGVAR(GestureReloadAKM74Context), "Gesture"};
-            GVAR(GestureReloadSA80)[] = {QGVAR(GestureReloadSA80Context), "Gesture"};
-            GVAR(GestureReloadGepard)[] = {QGVAR(GestureReloadGepardContext), "Gesture"};
             GVAR(GestureReloadG36)[] = {QGVAR(GestureReloadG36Context), "Gesture"};
-            GVAR(GestureReloadFAMAS)[] = {QGVAR(GestureReloadFAMASContext), "Gesture"};
-            GVAR(GestureReloadFAMASUGL)[] = {QGVAR(GestureReloadFAMASUGLContext), "Gesture"};
         };
         class RifleAdjustRProneActions: RifleAdjustProneBaseActions {
-            GVAR(GestureReloadAKM74)[] = {QGVAR(GestureReloadAKM74Context), "Gesture"};
-            GVAR(GestureReloadSA80)[] = {QGVAR(GestureReloadSA80Context), "Gesture"};
-            GVAR(GestureReloadGepard)[] = {QGVAR(GestureReloadGepardContext), "Gesture"};
             GVAR(GestureReloadG36)[] = {QGVAR(GestureReloadG36Context), "Gesture"};
-            GVAR(GestureReloadFAMAS)[] = {QGVAR(GestureReloadFAMASContext), "Gesture"};
-            GVAR(GestureReloadFAMASUGL)[] = {QGVAR(GestureReloadFAMASUGLContext), "Gesture"};
         };
         class PistolProneActions: PistolStandActions {
-            GVAR(GestureReloadAKM74)[] = {QGVAR(GestureReloadAKM74Prone), "Gesture"};
-            GVAR(GestureReloadSA80)[] = {QGVAR(GestureReloadSA80Prone), "Gesture"};
-            GVAR(GestureReloadGepard)[] = {QGVAR(GestureReloadGepardProne), "Gesture"};
             GVAR(GestureReloadG36)[] = {QGVAR(GestureReloadG36Prone), "Gesture"};
-            GVAR(GestureReloadFAMAS)[] = {QGVAR(GestureReloadFAMASProne), "Gesture"};
-            GVAR(GestureReloadFAMASUGL)[] = {QGVAR(GestureReloadFAMASUGLProne), "Gesture"};
         };
         class DeployedProneActions: RifleProneActions {
-            GVAR(GestureReloadAKM74)[] = {QGVAR(GestureReloadAKM74Prone), "Gesture"};
-            GVAR(GestureReloadSA80)[] = {QGVAR(GestureReloadSA80Prone), "Gesture"};
-            GVAR(GestureReloadGepard)[] = {QGVAR(GestureReloadGepardProne), "Gesture"};
             GVAR(GestureReloadG36)[] = {QGVAR(GestureReloadG36Prone), "Gesture"};
-            GVAR(GestureReloadFAMAS)[] = {QGVAR(GestureReloadFAMASProne), "Gesture"};
-            GVAR(GestureReloadFAMASUGL)[] = {QGVAR(GestureReloadFAMASUGLProne), "Gesture"};
         };
     };
 };
@@ -76,8 +36,6 @@ class CfgAmmo {
     class ammo_Penetrator_Base;
     class B_127x33_Ball;
     class B_12Gauge_Pellets_Submunition;
-    class B_19mm_HE;
-    class BulletBase;
     class G_40mm_HEDP;
     class GrenadeHand;
     class RocketBase;
@@ -125,26 +83,6 @@ class CfgAmmo {
     };
     class GVAR(B_12Gauge_Pellets_Submunition_Cartridge): B_12Gauge_Pellets_Submunition {
         cartridge = QGVAR(FxCartridge_pellets);
-    };
-    class GVAR(B_460x30_Ball): BulletBase {
-        hit = 8;
-        indirectHit = 0;
-        indirectHitRange = 0;
-        typicalSpeed = 725;
-        airFriction = -0.001412;
-        caliber = 0.50715;
-        deflecting = 20;
-        model = "\A3\Weapons_F\Data\bullettracer\tracer_red.p3d";
-        tracerScale = 1;
-        tracerStartTime = 0.05;
-        tracerEndTime = 1;
-        audibleFire = 25;
-        visibleFire = 3;
-        visibleFireTime = 5;
-        dangerRadiusBulletClose = 8;
-        suppressionRadiusBulletClose = 6;
-        dangerRadiusHit = 12;
-        suppressionRadiusHit = 8;
     };
     class GVAR(R_DM12_HEAT): RocketBase {
         model = "\z\ghost\addons\weapons\models\weapons\Launchers\Pzf3\DM12_HEAT_fly.p3d";
@@ -224,14 +162,6 @@ class CfgAmmo {
         triggerOnImpact = 1;
         deleteParentWhenTriggered = 0;
     };
-    class GVAR(B_25x40mm_base): B_19mm_HE {
-        simulationStep = 0.001;
-        hit = 11;
-        indirectHit = 6;
-        indirectHitRange = 4;
-        cartridge = QGVAR(FxCartridge_25x40);
-        timeToLive = 8;
-    };
     class GVAR(ammo_DM12_HEAT_penetrator): ammo_Penetrator_Base {
         caliber = 46.6;
         hit = 585;
@@ -241,47 +171,10 @@ class CfgAmmo {
         warheadName = "TandemHEAT";
         hit = 730;
     };
-    class GVAR(B_25x40mm_HE): GVAR(B_25x40mm_base) {
-    };
-    class GVAR(B_25x40mm_airburst): GVAR(B_25x40mm_base) {
-        hit = 20;
-        indirectHit = 2;
-        indirectHitRange = 4;
-        Aegis_isAirburst = 1;
-        Aegis_airburstFuseDistance = 3;
-        simulation = "shotBullet";
-        simulationStep = 0.001;
-        explosive = 1;
-    };
 };
 class CfgGesturesMale {
     class States {
         class GestureReloadBase;
-        class GVAR(GestureReloadAKM74): GestureReloadBase {
-            file = "\z\ghost\addons\weapons\models\anims\Data\Anim\Sdr\Gst\GestureReloadAKM74.rtm";
-            speed = -3.6;
-            mask = "handsWeapon";
-            headBobStrength = 0.25;
-            headBobMode = 2;
-            weaponIK = 1;
-            leftHandIKCurve[] = {0, 1, 0.05555555555555555, 0, 0.6851851851851852, 0, 0.7407407407407407, 1};
-            rightHandIKCurve[] = {0, 1, 0.7592592592592593, 1, 0.8055555555555556, 0, 0.9259259259259259, 0, 1, 1};
-        };
-        class GVAR(GestureReloadSA80): GestureReloadBase {
-            file = "\z\ghost\addons\weapons\models\anims\Data\Anim\Sdr\Gst\GestureReloadSA80.rtm";
-            speed = 0.2;
-            mask = "handsWeapon";
-            headBobStrength = 0.25;
-            headBobMode = 2;
-            weaponIK = 1;
-            leftHandIKCurve[] = {0, 1, 0.04, 0, 0.9, 0, 0.94, 1};
-        };
-        class GVAR(GestureReloadGepard): GestureReloadBase {
-            file = "\z\ghost\addons\weapons\models\anims\Data\Anim\Sdr\Gst\GestureReloadGepard.rtm";
-            speed = -4.933333333333334;
-            leftHandIKCurve[] = {1};
-            rightHandIKCurve[] = {0, 1, 0.0945945945945946, 1, 0.11486486486486487, 0, 0.918918918918919, 0, 0.9662162162162162, 1};
-        };
         class GVAR(GestureReloadG36): GestureReloadBase {
             file = "\z\ghost\addons\weapons\models\anims\Data\Anim\Sdr\Gst\GestureReloadG36.rtm";
             speed = 0.23;
@@ -291,60 +184,11 @@ class CfgGesturesMale {
             weaponIK = 1;
             leftHandIKCurve[] = {0, 1, 0.1, 0, 0.858, 0, 0.88, 1};
         };
-        class GVAR(GestureReloadFAMAS): GestureReloadBase {
-            file = "\z\ghost\addons\weapons\models\anims\Data\Anim\Sdr\Gst\GestureReloadFAMAS.rtm";
-            speed = -4.266666666666667;
-            mask = "handsWeapon";
-            headBobStrength = 0.25;
-            headBobMode = 2;
-            weaponIK = 1;
-            leftHandIKCurve[] = {0, 1, 0.0703125, 0, 0.8984375, 0, 1, 1};
-        };
-        class GVAR(GestureReloadFAMASUGL): GestureReloadBase {
-            file = "\z\ghost\addons\weapons\models\anims\Data\Anim\Sdr\Gst\GestureReloadFAMASUGL.rtm";
-            speed = -2.8666666666666667;
-            mask = "handsWeapon";
-            headBobStrength = 0.25;
-            headBobMode = 2;
-            weaponIK = 1;
-            leftHandIKCurve[] = {0, 1, 0.08139534883720931, 0, 0.8488372093023255, 0, 0.872093023255814, 1};
-        };
-        class GVAR(GestureReloadAKM74Prone): GVAR(GestureReloadAKM74) {
-            file = "\z\ghost\addons\weapons\models\anims\Data\Anim\Sdr\Gst\GestureReloadAKM74Prone.rtm";
-        };
-        class GVAR(GestureReloadAKM74Context): GVAR(GestureReloadAKM74) {
-            mask = "handsWeapon_context";
-        };
-        class GVAR(GestureReloadSA80Prone): GVAR(GestureReloadSA80) {
-            file = "\z\ghost\addons\weapons\models\anims\Data\Anim\Sdr\Gst\GestureReloadSA80Prone.rtm";
-            leftHandIKCurve[] = {0, 1, 0.04, 0, 0.9, 0, 0.94, 1};
-        };
-        class GVAR(GestureReloadSA80Context): GVAR(GestureReloadSA80) {
-            mask = "handsWeapon_context";
-        };
-        class GVAR(GestureReloadGepardProne): GVAR(GestureReloadGepard) {
-            file = "\z\ghost\addons\weapons\models\anims\Data\Anim\Sdr\Gst\GestureReloadGepardProne.rtm";
-        };
-        class GVAR(GestureReloadGepardContext): GVAR(GestureReloadGepard) {
-            mask = "handsWeapon_pst_context";
-        };
         class GVAR(GestureReloadG36Prone): GVAR(GestureReloadG36) {
             file = "\z\ghost\addons\weapons\models\anims\Data\Anim\Sdr\Gst\GestureReloadG36Prone.rtm";
             leftHandIKCurve[] = {0, 1, 0.12, 0, 0.823, 0, 0.84, 1};
         };
         class GVAR(GestureReloadG36Context): GVAR(GestureReloadG36) {
-            mask = "handsWeapon_context";
-        };
-        class GVAR(GestureReloadFAMASProne): GVAR(GestureReloadFAMAS) {
-            file = "\z\ghost\addons\weapons\models\anims\Data\Anim\Sdr\Gst\GestureReloadFAMASProne.rtm";
-        };
-        class GVAR(GestureReloadFAMASContext): GVAR(GestureReloadFAMAS) {
-            mask = "handsWeapon_context";
-        };
-        class GVAR(GestureReloadFAMASUGLProne): GVAR(GestureReloadFAMASUGL) {
-            file = "\z\ghost\addons\weapons\models\anims\Data\Anim\Sdr\Gst\GestureReloadFAMASUGLProne.rtm";
-        };
-        class GVAR(GestureReloadFAMASUGLContext): GVAR(GestureReloadFAMASUGL) {
             mask = "handsWeapon_context";
         };
     };
@@ -354,13 +198,6 @@ class CfgMagazines {
     class 150Rnd_762x51_Box;
     class 16Rnd_9x21_Mag;
     class 1Rnd_HE_Grenade_shell;
-    class 1Rnd_Smoke_Grenade_shell;
-    class 1Rnd_SmokeBlue_Grenade_shell;
-    class 1Rnd_SmokeGreen_Grenade_shell;
-    class 1Rnd_SmokeOrange_Grenade_shell;
-    class 1Rnd_SmokePurple_Grenade_shell;
-    class 1Rnd_SmokeRed_Grenade_shell;
-    class 1Rnd_SmokeYellow_Grenade_shell;
     class 2Rnd_12Gauge_Pellets;
     class 2Rnd_12Gauge_Slug;
     class 30Rnd_545x39_Mag_F;
@@ -375,11 +212,6 @@ class CfgMagazines {
     class CA_LauncherMagazine;
     class CA_Magazine;
     class HandGrenade;
-    class UGL_FlareCIR_F;
-    class UGL_FlareGreen_F;
-    class UGL_FlareRed_F;
-    class UGL_FlareWhite_F;
-    class UGL_FlareYellow_F;
     class GVAR(10Rnd_762x54_SVD_Red_Mag_F): 10Rnd_762x54_Mag {
         author = "STR_A3_A_Lukinator";
         displayName = "7.62 mm 10Rnd Reload Tracer (Red) Mag";
@@ -396,22 +228,6 @@ class CfgMagazines {
         ammo = "B_762x51_Tracer_Red";
         initSpeed = 840;
         mass = 67;
-    };
-    class GVAR(40Rnd_9x21_Gepard_Mag_F): CA_Magazine {
-        author = "STR_A3_A_Lukinator";
-        scope = 2;
-        displayName = "9 mm 40Rnd Mag";
-        ammo = "B_9x21_Ball";
-        count = 40;
-        initSpeed = 380;
-        picture = "\A3\Weapons_F\Data\UI\M_30Rnd_45ACP_CA.paa";
-        modelSpecial = "\z\ghost\addons\weapons\models\weapons\MagazineProxies\Mag_9x21_Gepard_40Rnd.p3d";
-        modelSpecialIsProxy = 1;
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\MagazineProxies\Data\Mag_9x21_Gepard_CO.paa"};
-        tracersEvery = 0;
-        descriptionShort = "Caliber: 9x19 mm<br />Rounds: 40<br />Used in: PPL-20M";
-        mass = 12;
     };
     class GVAR(45Rnd_545x39_Mag_F): 30Rnd_545x39_Mag_F {
         author = "Lukin";
@@ -431,26 +247,6 @@ class CfgMagazines {
         hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\mag_545_60rnd_co.paa"};
         count = 60;
         mass = 22;
-    };
-    class GVAR(25Rnd_556x45_Famas): 30Rnd_556x45_Stanag {
-        author = "Slatts";
-        scope = 2;
-        displayName = "5.56 mm 25Rnd FAMAS Mag";
-        count = 25;
-        descriptionShort = "Caliber: 5.56x45 mm<br />Rounds: 25<br />Used in: FAMAS F1/RIS/Grip";
-        modelSpecial = "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\mag\famas_25Rnd.p3d";
-        modelSpecialIsProxy = 1;
-        hiddenSelections[] = {"Camo1", "Camo_Low"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_3.paa", "\z\ghost\addons\weapons\models\weapons\Rifles\FAMAS\Data\tex\famas_low.paa"};
-    };
-    class GVAR(25Rnd_556x45_Famas_Tracer_Red): GVAR(25Rnd_556x45_Famas) {
-        picture = "\a3\Weapons_F\MagazineProxies\data\UI\icon_30Rnd_556x45_Stanag_Tracer_Red_CA.paa";
-        author = "Slatts";
-        displayName = "5.56 mm 25Rnd Tracer (Red) FAMAS Mag";
-        ammo = "B_556x45_Ball_Tracer_Red";
-        tracersEvery = 1;
-        descriptionShort = "Caliber: 5.56x45 mm Tracer - Red<br />Rounds: 25<br />Used in: FAMAS F1/RIS/Grip";
-        displaynameshort = "Tracer";
     };
     class GVAR(HandGrenade_East): HandGrenade {
         author = "Avery Kaiserin";
@@ -538,45 +334,6 @@ class CfgMagazines {
         count = 60;
         mass = 22;
     };
-    class GVAR(25Rnd_556x45_Famas_green): GVAR(25Rnd_556x45_Famas) {
-        picture = "\a3\Weapons_F\MagazineProxies\data\UI\icon_30Rnd_556x45_Stanag_green_CA.paa";
-        author = "Slatts";
-        displayName = "5.56 mm 25Rnd Reload Tracer (Green) FAMAS Mag";
-        descriptionShort = "Caliber: 5.56x45 mm Reload Tracer - Green<br />Rounds: 25<br />Used in: FAMAS F1/RIS/Grip";
-        ammo = "B_556x45_Ball_Tracer_Green";
-    };
-    class GVAR(25Rnd_556x45_Famas_red): GVAR(25Rnd_556x45_Famas) {
-        picture = "\a3\Weapons_F\MagazineProxies\data\UI\icon_30Rnd_556x45_Stanag_red_CA.paa";
-        author = "Slatts";
-        displayName = "5.56 mm 25Rnd Reload Tracer (Red) FAMAS Mag";
-        descriptionShort = "Caliber: 5.56x45 mm Reload Tracer - Red<br />Rounds: 25<br />Used in: FAMAS F1/RIS/Grip";
-        ammo = "B_556x45_Ball_Tracer_Red";
-    };
-    class GVAR(25Rnd_556x45_Famas_yellow): GVAR(25Rnd_556x45_Famas) {
-        picture = "\a3\Weapons_F\MagazineProxies\data\UI\icon_30Rnd_556x45_Stanag_red_CA.paa";
-        author = "Slatts";
-        displayName = "5.56 mm 25Rnd Reload Tracer (Yellow) FAMAS Mag";
-        descriptionShort = "Caliber: 5.56x45 mm Reload Tracer - Yellow<br />Rounds: 25<br />Used in: FAMAS F1/RIS/Grip";
-        ammo = "B_556x45_Ball_Tracer_Yellow";
-    };
-    class GVAR(25Rnd_556x45_Famas_Tracer_Green): GVAR(25Rnd_556x45_Famas) {
-        picture = "\a3\Weapons_F\MagazineProxies\data\UI\icon_30Rnd_556x45_Stanag_Tracer_Green_CA.paa";
-        author = "Slatts";
-        displayName = "5.56 mm 25Rnd Tracer (Green) FAMAS Mag";
-        ammo = "B_556x45_Ball_Tracer_Green";
-        tracersEvery = 1;
-        descriptionShort = "Caliber: 5.56x45 mm Tracer - Green<br />Rounds: 25<br />Used in: FAMAS F1/RIS/Grip";
-        displaynameshort = "Tracer";
-    };
-    class GVAR(25Rnd_556x45_Famas_Tracer_Yellow): GVAR(25Rnd_556x45_Famas) {
-        picture = "\a3\Weapons_F\MagazineProxies\data\UI\icon_30Rnd_556x45_Stanag_Tracer_Yellow_CA.paa";
-        author = "Slatts";
-        displayName = "5.56 mm 25Rnd Tracer (Yellow) FAMAS Mag";
-        ammo = "B_556x45_Ball_Tracer_Yellow";
-        tracersEvery = 1;
-        descriptionShort = "Caliber: 5.56x45 mm Tracer - Yellow<br />Rounds: 25<br />Used in: FAMAS F1/RIS/Grip";
-        displaynameshort = "Tracer";
-    };
     class GVAR(30Rnd_545x39_AK12_Mag_F): 30Rnd_545x39_Mag_Green_F {
         author = "Avery Kaiserin";
         displayName = "5.45 mm 30Rnd AK-12 Reload Tracer (Green) Mag";
@@ -606,138 +363,6 @@ class CfgMagazines {
         descriptionShort = "Type: 12 Gauge Slugs<br />Rounds: 4<br />Used in: BK-153";
         picture = "\A3\Weapons_F\Data\UI\M_12Gauge_CA.paa";
         mass = 6;
-    };
-    class GVAR(6Rnd_HE_Grenade_shell): 1Rnd_HE_Grenade_shell {
-        author = "Avery Kaiserin";
-        count = 6;
-        displayName = "40 mm 6Rnd HE Grenade";
-        descriptionShort = "Type: High Explosive Grenade Rounds<br />Caliber: 40 mm<br />Rounds: 6<br />Used in: M32";
-        mass = 24;
-    };
-    class GVAR(6Rnd_UGL_FlareWhite_F): UGL_FlareWhite_F {
-        author = "Avery Kaiserin";
-        count = 6;
-        displayName = "6Rnd M32 Flares (White)";
-        descriptionShort = "Type: Flare Rounds - White<br />Rounds: 6<br />Used in: M32";
-        displayNameShort = "White Flare";
-        mass = 24;
-    };
-    class GVAR(6Rnd_UGL_FlareGreen_F): UGL_FlareGreen_F {
-        author = "Avery Kaiserin";
-        count = 6;
-        displayName = "6Rnd M32 Flares (Green)";
-        descriptionShort = "Type: Flare Rounds - Green<br />Rounds: 6<br />Used in: M32";
-        displayNameShort = "Green Flare";
-        mass = 24;
-    };
-    class GVAR(6Rnd_UGL_FlareRed_F): UGL_FlareRed_F {
-        author = "Avery Kaiserin";
-        count = 6;
-        displayName = "6Rnd M32 Flares (Red)";
-        descriptionShort = "Type: Flare Rounds - Red<br />Rounds: 6<br />Used in: M32";
-        displayNameShort = "Red Flare";
-        mass = 24;
-    };
-    class GVAR(6Rnd_UGL_FlareYellow_F): UGL_FlareYellow_F {
-        author = "Avery Kaiserin";
-        count = 6;
-        displayName = "6Rnd M32 Flares (Yellow)";
-        descriptionShort = "Type: Flare Rounds - Yellow<br />Rounds: 6<br />Used in: M32";
-        displayNameShort = "Yellow Flare";
-        mass = 24;
-    };
-    class GVAR(6Rnd_UGL_FlareCIR_F): UGL_FlareCIR_F {
-        author = "Avery Kaiserin";
-        count = 6;
-        displayName = "6Rnd M32 Flares (IR)";
-        descriptionShort = "Type: Flare Rounds - IR<br />Rounds: 6<br />Used in: M32";
-        displayNameShort = "STR_A3_CfgMagazines_FlareCIR_F_dns";
-        mass = 24;
-    };
-    class GVAR(6Rnd_Smoke_Grenade_shell): 1Rnd_Smoke_Grenade_shell {
-        author = "Avery Kaiserin";
-        count = 6;
-        displayName = "6Rnd M32 Smoke Rounds (White)";
-        descriptionShort = "Type: Smoke Rounds - White<br />Rounds: 6<br />Used in: M32";
-        mass = 24;
-    };
-    class GVAR(6Rnd_SmokeRed_Grenade_shell): 1Rnd_SmokeRed_Grenade_shell {
-        author = "Avery Kaiserin";
-        count = 6;
-        displayName = "6Rnd M32 Smoke Rounds (Red)";
-        descriptionShort = "Type: Smoke Rounds - Red<br />Rounds: 6<br />Used in: M32";
-        mass = 24;
-    };
-    class GVAR(6Rnd_SmokeGreen_Grenade_shell): 1Rnd_SmokeGreen_Grenade_shell {
-        author = "Avery Kaiserin";
-        count = 6;
-        displayName = "6Rnd M32 Smoke Rounds (Green)";
-        descriptionShort = "Type: Smoke Rounds - Green<br />Rounds: 6<br />Used in: M32";
-        mass = 24;
-    };
-    class GVAR(6Rnd_SmokeYellow_Grenade_shell): 1Rnd_SmokeYellow_Grenade_shell {
-        author = "Avery Kaiserin";
-        count = 6;
-        displayName = "6Rnd M32 Smoke Rounds (Yellow)";
-        descriptionShort = "Type: Smoke Rounds - Yellow<br />Rounds: 6<br />Used in: M32";
-        mass = 24;
-    };
-    class GVAR(6Rnd_SmokePurple_Grenade_shell): 1Rnd_SmokePurple_Grenade_shell {
-        author = "Avery Kaiserin";
-        count = 6;
-        displayName = "6Rnd M32 Smoke Rounds (Purple)";
-        descriptionShort = "Type: Smoke Rounds - Purple<br />Rounds: 6<br />Used in: M32";
-        mass = 24;
-    };
-    class GVAR(6Rnd_SmokeBlue_Grenade_shell): 1Rnd_SmokeBlue_Grenade_shell {
-        author = "Avery Kaiserin";
-        count = 6;
-        displayName = "6Rnd M32 Smoke Rounds (Blue)";
-        descriptionShort = "Type: Smoke Rounds - Blue<br />Rounds: 6<br />Used in: M32";
-        mass = 24;
-    };
-    class GVAR(6Rnd_SmokeOrange_Grenade_shell): 1Rnd_SmokeOrange_Grenade_shell {
-        author = "Avery Kaiserin";
-        count = 6;
-        displayName = "6Rnd M32 Smoke Rounds (Orange)";
-        descriptionShort = "Type: Smoke Rounds - Orange<br />Rounds: 6<br />Used in: M32";
-        mass = 24;
-    };
-    class GVAR(6Rnd_APERSMine_Grenade_shell): GVAR(6Rnd_HE_Grenade_shell) {
-        author = "Avery Kaiserin";
-        displayName = "6Rnd M32 APERS Mines";
-        picture = "\z\ghost\addons\weapons\models\weapons\Data\UI\gear_UGL_APERS_CA.paa";
-        ammo = QGVAR(G_40mm_APERSMine);
-        descriptionShort = "Type: Anti-Personnel Mine Rounds<br />Rounds: 6<br />Used in: M32";
-        displayNameShort = "APERS Mine";
-    };
-    class GVAR(5Rnd_25x40mm_HE): CA_Magazine {
-        author = "Avery Kaiserin";
-        scope = 2;
-        scopeArsenal = 2;
-        weaponpoolavailable = 1;
-        type = 192;
-        displayName = "25 mm 5Rnd HE Grenade";
-        displayNameShort = "HE Grenade";
-        picture = "\A3\Weapons_F\Data\UI\gear_UGL_slug_CA.paa";
-        ammo = QGVAR(B_25x40mm_HE);
-        initSpeed = 210;
-        count = 5;
-        nameSound = "";
-        descriptionShort = "Caliber: 25x40 mm HE<br />Rounds: 5 <br />Used in: Punisher";
-        mass = 16;
-        ace_arsenal_hide = -1;
-    };
-    class GVAR(5Rnd_25x40mm_airburst): GVAR(5Rnd_25x40mm_HE) {
-        author = "Avery Kaiserin";
-        scope = 2;
-        type = 192;
-        displayName = "25 mm 5Rnd Airburst";
-        displayNameShort = "Airburst";
-        picture = "\A3\Weapons_F\Data\UI\gear_UGL_slug_CA.paa";
-        ammo = QGVAR(B_25x40mm_airburst);
-        descriptionShort = "Caliber: 25x40 mm Airburst<br />Rounds: 5 <br />Used in: Punisher";
-        ace_arsenal_hide = -1;
     };
     class GVAR(17Rnd_9x21_Mag): 16Rnd_9x21_Mag {
         author = "Avery Kaiserin";
@@ -873,58 +498,6 @@ class CfgMagazines {
         initSpeed = 450;
         count = 8;
     };
-    class GVAR(40Rnd_460x30_Mag_F): CA_Magazine {
-        author = "Avery Kaiserin";
-        scope = 2;
-        displayName = "4.6 mm 40Rnd Mag";
-        ammo = QGVAR(B_460x30_Ball);
-        count = 40;
-        initSpeed = 725;
-        picture = "\z\ghost\addons\weapons\models\weapons\MagazineProxies\Data\UI\icon_40Rnd_460x30_Mag_F_CA.paa";
-        modelSpecial = "\z\ghost\addons\weapons\models\weapons\MagazineProxies\Mag_460x30_MP7_40Rnd.p3d";
-        modelSpecialIsProxy = 1;
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\SMGs\SMG_04\Data\SMG_04_blk_F_CO.paa"};
-        tracersEvery = 0;
-        descriptionShort = "Caliber: 4.6x30 mm<br />Rounds: 40<br />Used in: MP7";
-        mass = 10;
-    };
-    class GVAR(20Rnd_460x30_Mag_F): GVAR(40Rnd_460x30_Mag_F) {
-        author = "Avery Kaiserin";
-        displayName = "4.6 mm 20Rnd Mag";
-        picture = "\z\ghost\addons\weapons\models\weapons\MagazineProxies\Data\UI\icon_20Rnd_460x30_Mag_F_CA.paa";
-        modelSpecial = "\z\ghost\addons\weapons\models\weapons\MagazineProxies\Mag_460x30_MP7_20Rnd.p3d";
-        modelSpecialIsProxy = 1;
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\SMGs\SMG_04\Data\SMG_04_blk_F_CO.paa"};
-        count = 20;
-        mass = 6;
-        descriptionShort = "Caliber: 4.6x30 mm<br />Rounds: 20<br />Used in: MP7";
-    };
-    class GVAR(40Rnd_9x21_Gepard_Green_Mag_F): GVAR(40Rnd_9x21_Gepard_Mag_F) {
-        author = "STR_A3_A_Lukinator";
-        displayName = "9 mm 40Rnd Reload Tracer (Yellow) Mag";
-        ammo = "B_9x21_Ball_Tracer_Green";
-        lastRoundsTracer = 4;
-    };
-    class GVAR(40Rnd_9x21_Gepard_Yellow_Mag_F): GVAR(40Rnd_9x21_Gepard_Mag_F) {
-        author = "STR_A3_A_Lukinator";
-        displayName = "9 mm 40Rnd Reload Tracer (Yellow) Mag";
-        ammo = "B_9x21_Ball_Tracer_Yellow";
-        lastRoundsTracer = 4;
-    };
-    class GVAR(20Rnd_9x21_Gepard_Mag_F): GVAR(40Rnd_9x21_Gepard_Mag_F) {
-        author = "STR_A3_A_Lukinator";
-        displayName = "9 mm 20Rnd Mag";
-        picture = "\A3\Weapons_F\Data\UI\M_30Rnd_45ACP_CA.paa";
-        modelSpecial = "\z\ghost\addons\weapons\models\weapons\MagazineProxies\Mag_9x21_Gepard_20Rnd.p3d";
-        modelSpecialIsProxy = 1;
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\weapons\models\weapons\MagazineProxies\Data\Mag_9x21_Gepard_CO.paa"};
-        count = 20;
-        mass = 6;
-        descriptionShort = "Caliber: 9x19 mm<br />Rounds: 20<br />Used in: PPL-20M";
-    };
     class GVAR(DM12_HEAT_F): CA_LauncherMagazine {
         author = "Avery Kaiserin";
         scope = 2;
@@ -1038,13 +611,6 @@ class CfgMagazines {
         mass = 6;
         descriptionShort = "Caliber: 5.56x45 mm STANAG< br/>Rounds: 20<br />Used in: SDAR";
     };
-    class GVAR(6Rnd_HEDP_Grenade_shell): GVAR(1Rnd_HEDP_Grenade_shell) {
-        author = "Heliotrope";
-        count = 6;
-        displayName = "40 mm 6Rnd HEDP Grenade";
-        descriptionShort = "Type: High Explosive Anti Tank Grenade Rounds<br />Caliber: 40 mm<br />Rounds: 6<br />Used in: M32";
-        mass = 24;
-    };
     class GVAR(30Rnd_545x39_Steel_Gold_Mag_F): GVAR(30Rnd_545x39_Steel_Mag_F) {
         displayName = "5.45 mm 30Rnd Gold Reload Tracer (Yellow) Mag";
         picture = "\z\ghost\addons\weapons\models\weapons\Rifles\AKM74\Data\UI\icon_30Rnd_545x39_Gold_Mag_F_ca.paa";
@@ -1089,17 +655,8 @@ class CfgMagazineWells {
     class Rahim_762x54 {
         GVAR(magazines)[] = {QGVAR(10Rnd_762x54_SVD_Red_Mag_F)};
     };
-    class GVAR(FAMAS_556x54) {
-        Atlas_Magazines[] = {QGVAR(25Rnd_556x45_Famas), QGVAR(25Rnd_556x45_Famas_green), QGVAR(25Rnd_556x45_Famas_red), QGVAR(25Rnd_556x45_Famas_yellow), QGVAR(25Rnd_556x45_Famas_Tracer_Red), QGVAR(25Rnd_556x45_Famas_Tracer_Green), QGVAR(25Rnd_556x45_Famas_Tracer_Yellow)};
-    };
     class GVAR(MP153_12GA) {
-        Aegis_Magazines[] = {QGVAR(4Rnd_12Gauge_Pellets), QGVAR(4Rnd_12Gauge_Slug), "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Slug", "2Rnd_HE_Mag_lxWS", "2Rnd_Smoke_Mag_lxWS"};
-    };
-    class GVAR(M32_40x36) {
-        Aegis_Magazines[] = {QGVAR(6Rnd_HE_Grenade_shell), QGVAR(6Rnd_HEDP_Grenade_shell), QGVAR(6Rnd_UGL_FlareWhite_F), QGVAR(6Rnd_UGL_FlareGreen_F), QGVAR(6Rnd_UGL_FlareRed_F), QGVAR(6Rnd_UGL_FlareYellow_F), QGVAR(6Rnd_UGL_FlareCIR_F), QGVAR(6Rnd_Smoke_Grenade_shell), QGVAR(6Rnd_SmokeRed_Grenade_shell), QGVAR(6Rnd_SmokeGreen_Grenade_shell), QGVAR(6Rnd_SmokeYellow_Grenade_shell), QGVAR(6Rnd_SmokePurple_Grenade_shell), QGVAR(6Rnd_SmokeBlue_Grenade_shell), QGVAR(6Rnd_SmokeOrange_Grenade_shell), QGVAR(6Rnd_APERSMine_Grenade_shell)};
-    };
-    class GVAR(XM25_25x40) {
-        Aegis_Magazines[] = {QGVAR(5Rnd_25x40mm_HE), QGVAR(5Rnd_25x40mm_airburst)};
+        Aegis_Magazines[] = {QGVAR(4Rnd_12Gauge_Pellets), QGVAR(4Rnd_12Gauge_Slug), "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Slug"};
     };
     class GVAR(G17_9x21) {
         Aegis_Magazines[] = {QGVAR(17Rnd_9x21_Mag)};
@@ -1108,13 +665,7 @@ class CfgMagazineWells {
         Aegis_Magazines[] = {QGVAR(7Rnd_127x33_Mag)};
     };
     class GVAR(Shotgun_12GA) {
-        Aegis_Magazines[] = {QGVAR(8Rnd_12Gauge_Pellets), QGVAR(8Rnd_12Gauge_Slug), QGVAR(4Rnd_12Gauge_Pellets), QGVAR(4Rnd_12Gauge_Slug), "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Slug", "2Rnd_HE_Mag_lxWS", "2Rnd_Smoke_Mag_lxWS"};
-    };
-    class GVAR(SMG_04_460x30) {
-        Aegis_Magazines[] = {QGVAR(40Rnd_460x30_Mag_F), QGVAR(20Rnd_460x30_Mag_F)};
-    };
-    class GVAR(SMG_Gepard_9x21) {
-        Aegis_Magazines[] = {QGVAR(40Rnd_9x21_Gepard_Mag_F), QGVAR(40Rnd_9x21_Gepard_Green_Mag_F), QGVAR(40Rnd_9x21_Gepard_Yellow_Mag_F), QGVAR(20Rnd_9x21_Gepard_Mag_F)};
+        Aegis_Magazines[] = {QGVAR(8Rnd_12Gauge_Pellets), QGVAR(8Rnd_12Gauge_Slug), QGVAR(4Rnd_12Gauge_Pellets), QGVAR(4Rnd_12Gauge_Slug), "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Slug"};
     };
     class GVAR(WF50_127x99) {
         Aegis_Magazines[] = {QGVAR(5Rnd_127x99_Mag)};
@@ -1166,16 +717,6 @@ class CfgRecoils {
         muzzleOuter[] = {1, 3, 0.6, 0.6};
         kickBack[] = {0.08, 0.1};
         temporary = 0.02;
-    };
-    class GVAR(recoil_smg_04): recoil_default {
-        muzzleOuter[] = {0.2, 0.5, 0.2, 0.2};
-        kickBack[] = {0.01, 0.03};
-        temporary = 0.01;
-    };
-    class GVAR(Recoil_Gepard): recoil_default {
-        muzzleOuter[] = {0.22, 0.42, 0.31, 0.32};
-        kickBack[] = {0.01, 0.03};
-        temporary = 0.012;
     };
     class GVAR(recoil_PzF3): recoil_default {
         muzzleOuter[] = {0.1, 0.15, 0.25, 0.12};
@@ -1230,15 +771,6 @@ class CfgSoundSets {
     };
     class GVAR(MP153_interiorTail_SoundSet): Rifle_InteriorTail_Base_SoundSet {
         soundShaders[] = {QGVAR(MP153_tailInterior_SoundShader)};
-    };
-    class GVAR(XM25_Shot_SoundSet): Rifle_Shot_Base_SoundSet {
-        soundShaders[] = {QGVAR(XM25_Closure_SoundShader), QGVAR(XM25_closeShot_SoundShader), QGVAR(XM25_midShot_SoundShader), QGVAR(XM25_distShot_SoundShader)};
-    };
-    class GVAR(XM25_Tail_SoundSet): Rifle_Tail_Base_SoundSet {
-        soundShaders[] = {QGVAR(XM25_tailForest_SoundShader), QGVAR(XM25_tailHouses_SoundShader), QGVAR(XM25_tailMeadows_SoundShader), QGVAR(XM25_tailTrees_SoundShader)};
-    };
-    class GVAR(XM25_InteriorTail_SoundSet): Rifle_InteriorTail_Base_SoundSet {
-        soundShaders[] = {QGVAR(XM25_tailInterior_SoundShader)};
     };
     class GVAR(G17_Shot_SoundSet): Pistol_Shot_Base_SoundSet {
         soundShaders[] = {QGVAR(G17_Closure_SoundShader), QGVAR(G17_closeShot_SoundShader), QGVAR(G17_midShot_SoundShader), QGVAR(G17_distShot_SoundShader)};
@@ -1369,888 +901,830 @@ class CfgSoundSets {
 };
 class CfgSoundShaders {
     class GVAR(MP153_Closure_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closure_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closure_02", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closure_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closure_02.ogg", 1}};
         range = 5;
         volume = "db-13";
     };
     class GVAR(MP153_closeShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closeShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closeShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closeShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closeShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closeShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_closeShot_03.ogg", 1}};
         volume = "db0";
         range = 50;
         rangeCurve = "closeShotCurve";
     };
     class GVAR(MP153_midShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_midShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_midShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_midShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_midShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_midShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_midShot_03.ogg", 1}};
         volume = "db-3";
         range = 1200;
         rangeCurve[] = {{0, 0.2}, {50, 1}, {150, 0}, {1200, 0}};
     };
     class GVAR(MP153_distShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_distShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_distShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_distShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_distShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_distShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_distShot_03.ogg", 1}};
         volume = "db0";
         range = 1200;
         rangeCurve[] = {{0, 0}, {50, 0}, {150, 1}, {1200, 1}};
     };
     class GVAR(MP153_tailForest_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailForest", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailForest.ogg", 1}};
         volume = "(1-interior/1.4)*forest/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(MP153_tailHouses_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailHouses", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailHouses.ogg", 1}};
         volume = "(1-interior/1.4)*houses/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {150, 0.3}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(MP153_tailMeadows_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailMeadows", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailMeadows.ogg", 1}};
         volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(MP153_tailTrees_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailTrees", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailTrees.ogg", 1}};
         volume = "(1-interior/1.4)*trees/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(MP153_tailInterior_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailInterior", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\MP153\MP153_tailInterior.ogg", 1}};
         volume = "interior";
         range = 250;
         rangeCurve[] = {{0, 1}, {30, 0.4}, {100, 0.2}, {250, 0}};
         limitation = 1;
     };
-    class GVAR(XM25_Closure_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\XM25\XM25_closure_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\XM25\XM25_closure_02", 1}};
-        range = 5;
-        volume = "db-5";
-    };
-    class GVAR(XM25_closeShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\XM25\XM25_closeShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\XM25\XM25_closeShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\XM25\XM25_closeShot_03", 1}};
-        volume = "db-1";
-        range = 50;
-        rangeCurve = "closeShotCurve";
-    };
-    class GVAR(XM25_midShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\XM25\XM25_midShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\XM25\XM25_midShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\XM25\XM25_midShot_03", 1}};
-        volume = "db-3";
-        range = 1300;
-        rangeCurve[] = {{0, 0.2}, {50, 1}, {200, 0}, {1300, 0}};
-    };
-    class GVAR(XM25_distShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\XM25\XM25_distShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\XM25\XM25_distShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\XM25\XM25_distShot_03", 1}};
-        volume = "db0";
-        range = 1300;
-        rangeCurve[] = {{0, 0}, {50, 0}, {200, 1}, {1300, 1}};
-    };
-    class GVAR(XM25_tailForest_SoundShader) {
-        samples[] = {{"\A3\Sounds_F\arsenal\weapons_static\Static_GMG\GMG20mm_tailforest", 1}};
-        volume = "(1-interior/1.4)*forest/3";
-        range = 1300;
-        rangeCurve[] = {{0, 1}, {1300, 0.3}};
-        limitation = 1;
-    };
-    class GVAR(XM25_tailHouses_SoundShader) {
-        samples[] = {{"\A3\Sounds_F\arsenal\weapons_static\Static_GMG\GMG20mm_tailhouses", 1}};
-        volume = "(1-interior/1.4)*houses/3";
-        range = 800;
-        rangeCurve[] = {{0, 1}, {150, 0.5}, {800, 0.3}};
-        limitation = 1;
-    };
-    class GVAR(XM25_tailMeadows_SoundShader) {
-        samples[] = {{"\A3\Sounds_F\arsenal\weapons_static\Static_GMG\GMG20mm_tailmeadows", 1}};
-        volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
-        range = 1300;
-        rangeCurve[] = {{0, 1}, {1300, 0.3}};
-        limitation = 1;
-    };
-    class GVAR(XM25_tailTrees_SoundShader) {
-        samples[] = {{"\A3\Sounds_F\arsenal\weapons_static\Static_GMG\GMG20mm_tailtrees", 1}};
-        volume = "(1-interior/1.4)*trees/3";
-        range = 1300;
-        rangeCurve[] = {{0, 1}, {1300, 0.3}};
-        limitation = 1;
-    };
-    class GVAR(XM25_tailInterior_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\GrenadeLaunchers\XM25\XM25_tailInterior", 1}};
-        volume = "interior";
-        range = 350;
-        rangeCurve[] = {{0, 1}, {30, 0.4}, {100, 0.2}, {350, 0}};
-        limitation = 1;
-    };
     class GVAR(G17_Closure_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_closure_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_closure_02", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_closure_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_closure_02.ogg", 1}};
         range = 5;
         volume = "db-11";
     };
     class GVAR(G17_closeShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_closeShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_closeShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_closeShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_closeShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_closeShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_closeShot_03.ogg", 1}};
         volume = "db0";
         range = 50;
         rangeCurve = "closeShotCurve";
     };
     class GVAR(G17_midShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_midShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_midShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_midShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_midShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_midShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_midShot_03.ogg", 1}};
         volume = "db-3";
         range = 1200;
         rangeCurve[] = {{0, 0.2}, {50, 1}, {150, 0}, {1200, 0}};
     };
     class GVAR(G17_distShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_distShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_distShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_distShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_distShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_distShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_distShot_03.ogg", 1}};
         volume = "db0";
         range = 1200;
         rangeCurve[] = {{0, 0}, {50, 0}, {150, 1}, {1200, 1}};
     };
     class GVAR(G17_tailDistant_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_tailDistant", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_tailDistant.ogg", 1}};
         volume = "db0";
         range = 1200;
         rangeCurve[] = {{0, 0}, {300, 0.7}, {1200, 1}};
         limitation = 1;
     };
     class GVAR(G17_tailForest_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_tailForest", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_tailForest.ogg", 1}};
         volume = "(1-interior/1.4)*forest/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(G17_tailHouses_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_tailHouses", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_tailHouses.ogg", 1}};
         volume = "(1-interior/1.4)*houses/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {150, 0.3}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(G17_tailMeadows_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_tailMeadows", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_tailMeadows.ogg", 1}};
         volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(G17_tailTrees_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_tailTrees", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_tailTrees.ogg", 1}};
         volume = "(1-interior/1.4)*trees/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(G17_tailInterior_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_tailInterior", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_tailInterior.ogg", 1}};
         volume = "interior";
         range = 250;
         rangeCurve[] = {{0, 1}, {30, 0.4}, {100, 0.2}, {250, 0}};
         limitation = 1;
     };
     class GVAR(G17_silencerShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_silencerShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_silencerShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_silencerShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_silencerShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_silencerShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_silencerShot_03.ogg", 1}};
         volume = "db0";
         range = 150;
         rangeCurve = "closeShotCurve";
     };
     class GVAR(G17_silencerTailTrees_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_silencerTailTrees", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_silencerTailTrees.ogg", 1}};
         volume = "(1-interior/1.4)*trees/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0.3}};
         limitation = 1;
     };
     class GVAR(G17_silencerTailForest_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_silencerTailForest", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_silencerTailForest.ogg", 1}};
         volume = "(1-interior/1.4)*forest/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0.3}};
         limitation = 1;
     };
     class GVAR(G17_silencerTailMeadows_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_silencerTailMeadows", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_silencerTailMeadows.ogg", 1}};
         volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0.3}};
         limitation = 1;
     };
     class GVAR(G17_silencerTailHouses_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_silencerTailHouses", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_silencerTailHouses.ogg", 1}};
         volume = "(1-interior/1.4)*houses/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0}};
         limitation = 1;
     };
     class GVAR(G17_silencerTailInterior_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_silencerTailInterior", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\G17\G17_silencerTailInterior.ogg", 1}};
         volume = "interior";
         range = 150;
         rangeCurve[] = {{0, 1}, {50, 0.3}, {150, 0}};
         limitation = 1;
     };
     class GVAR(Mk26_Closure_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_closure_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_closure_02", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_closure_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_closure_02.ogg", 1}};
         range = 5;
         volume = "db-8";
     };
     class GVAR(Mk26_closeShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_closeShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_closeShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_closeShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_closeShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_closeShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_closeShot_03.ogg", 1}};
         volume = "db-4";
         range = 50;
         rangeCurve = "closeShotCurve";
     };
     class GVAR(Mk26_midShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_midShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_midShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_midShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_midShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_midShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_midShot_03.ogg", 1}};
         volume = "db0";
         range = 1200;
         rangeCurve[] = {{0, 0.2}, {50, 1}, {150, 0}, {1200, 0}};
     };
     class GVAR(Mk26_distShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_distShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_distShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_distShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_distShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_distShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_distShot_03.ogg", 1}};
         volume = "db0";
         range = 1200;
         rangeCurve[] = {{0, 0}, {50, 0}, {150, 1}, {1200, 1}};
     };
     class GVAR(Mk26_tailForest_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_tailForest", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_tailForest.ogg", 1}};
         volume = "(1-interior/1.4)*forest/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(Mk26_tailHouses_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_tailHouses", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_tailHouses.ogg", 1}};
         volume = "(1-interior/1.4)*houses/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {150, 0.3}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(Mk26_tailMeadows_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_tailMeadows", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_tailMeadows.ogg", 1}};
         volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(Mk26_tailTrees_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_tailTrees", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_tailTrees.ogg", 1}};
         volume = "(1-interior/1.4)*trees/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(Mk26_tailInterior_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_tailInterior", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Pistols\Mk26\Mk26_tailInterior.ogg", 1}};
         volume = "interior";
         range = 250;
         rangeCurve[] = {{0, 1}, {30, 0.4}, {100, 0.2}, {250, 0}};
         limitation = 1;
     };
     class GVAR(L85A3_closure_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_closure_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_closure_02", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_closure_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_closure_02.ogg", 1}};
         range = 5;
         volume = "db-7";
     };
     class GVAR(L85A3_closeShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_closeShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_closeShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_closeShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_closeShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_closeShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_closeShot_03.ogg", 1}};
         volume = "db-2";
         range = 50;
         rangeCurve = "closeShotCurve";
     };
     class GVAR(L85A3_midShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_midShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_midShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_midShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_midShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_midShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_midShot_03.ogg", 1}};
         volume = "db-4";
         range = 1800;
         rangeCurve[] = {{0, 0.2}, {50, 1}, {300, 0}, {1800, 0}};
     };
     class GVAR(L85A3_distShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_distShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_distShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_distShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_distShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_distShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_distShot_03.ogg", 1}};
         volume = "db-4";
         range = 1800;
         rangeCurve[] = {{0, 0}, {50, 0}, {300, 1}, {1800, 1}};
     };
     class GVAR(L85A3_tailDistant_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_tailDistant", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_tailDistant.ogg", 1}};
         volume = "db0";
         range = 2000;
         rangeCurve[] = {{0, 0}, {600, 0.7}, {2000, 1}};
         limitation = 1;
     };
     class GVAR(L85A3_tailForest_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_tailForest", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_tailForest.ogg", 1}};
         volume = "(1-interior/1.4)*forest/3";
         range = 2000;
         rangeCurve[] = {{0, 1}, {2000, 0}};
         limitation = 1;
     };
     class GVAR(L85A3_tailHouses_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_tailHouses", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_tailHouses.ogg", 1}};
         volume = "(1-interior/1.4)*houses/3";
         range = 1500;
         rangeCurve[] = {{0, 1}, {250, 0.3}, {1500, 0}};
         limitation = 1;
     };
     class GVAR(L85A3_tailMeadows_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_tailMeadows", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_tailMeadows.ogg", 1}};
         volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
         range = 2000;
         rangeCurve[] = {{0, 1}, {2000, 0}};
         limitation = 1;
     };
     class GVAR(L85A3_tailTrees_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_tailTrees", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_tailTrees.ogg", 1}};
         volume = "(1-interior/1.4)*trees/3";
         range = 2000;
         rangeCurve[] = {{0, 1}, {2000, 0}};
         limitation = 1;
     };
     class GVAR(L85A3_tailInterior_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_tailInterior", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_tailInterior.ogg", 1}};
         volume = "interior";
         range = 350;
         rangeCurve[] = {{0, 1}, {50, 0.4}, {100, 0.2}, {350, 0}};
         limitation = 1;
     };
     class GVAR(L85A3_silencerShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_silencerShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_silencerShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_silencerShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_silencerShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_silencerShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_silencerShot_03.ogg", 1}};
         volume = "db0";
         range = 150;
         rangeCurve = "closeShotCurve";
     };
     class GVAR(L85A3_silencerTailTrees_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_silencerTailTrees", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_silencerTailTrees.ogg", 1}};
         volume = "(1-interior/1.4)*trees/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0.3}};
         limitation = 1;
     };
     class GVAR(L85A3_silencerTailForest_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_silencerTailForest", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_silencerTailForest.ogg", 1}};
         volume = "(1-interior/1.4)*forest/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0.3}};
         limitation = 1;
     };
     class GVAR(L85A3_silencerTailMeadows_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_silencerTailMeadows", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_silencerTailMeadows.ogg", 1}};
         volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0.3}};
         limitation = 1;
     };
     class GVAR(L85A3_silencerTailHouses_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_silencerTailHouses", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_silencerTailHouses.ogg", 1}};
         volume = "(1-interior/1.4)*houses/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0}};
         limitation = 1;
     };
     class GVAR(L85A3_silencerTailInterior_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_silencerTailInterior", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\L85A3\L85A3_silencerTailInterior.ogg", 1}};
         volume = "interior";
         range = 150;
         rangeCurve[] = {{0, 1}, {50, 0.3}, {150, 0}};
         limitation = 1;
     };
     class GVAR(SCAR_closure_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_closure_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_closure_02", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_closure_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_closure_02.ogg", 1}};
         range = 5;
         volume = "db-7";
     };
     class GVAR(SCAR_closeShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_closeShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_closeShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_closeShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_closeShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_closeShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_closeShot_03.ogg", 1}};
         volume = "db0";
         range = 50;
         rangeCurve = "closeShotCurve";
     };
     class GVAR(SCAR_midShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_midShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_midShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_midShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_midShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_midShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_midShot_03.ogg", 1}};
         volume = "db-2";
         range = 1800;
         rangeCurve[] = {{0, 0.2}, {50, 1}, {300, 0}, {1800, 0}};
     };
     class GVAR(SCAR_distShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_distShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_distShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_distShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_distShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_distShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_distShot_03.ogg", 1}};
         volume = "db0";
         range = 1800;
         rangeCurve[] = {{0, 0}, {50, 0}, {300, 1}, {1800, 1}};
     };
     class GVAR(SCAR_tailDistant_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_tailDistant", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_tailDistant.ogg", 1}};
         volume = "db0";
         range = 2000;
         rangeCurve[] = {{0, 0}, {600, 0.7}, {2000, 1}};
         limitation = 1;
     };
     class GVAR(SCAR_tailForest_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_tailForest", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_tailForest.ogg", 1}};
         volume = "(1-interior/1.4)*forest/3";
         range = 2000;
         rangeCurve[] = {{0, 1}, {2000, 0}};
         limitation = 1;
     };
     class GVAR(SCAR_tailHouses_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_tailHouses", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_tailHouses.ogg", 1}};
         volume = "(1-interior/1.4)*houses/3";
         range = 1500;
         rangeCurve[] = {{0, 1}, {250, 0.3}, {1500, 0}};
         limitation = 1;
     };
     class GVAR(SCAR_tailMeadows_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_tailMeadows", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_tailMeadows.ogg", 1}};
         volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
         range = 2000;
         rangeCurve[] = {{0, 1}, {2000, 0}};
         limitation = 1;
     };
     class GVAR(SCAR_tailTrees_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_tailTrees", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_tailTrees.ogg", 1}};
         volume = "(1-interior/1.4)*trees/3";
         range = 2000;
         rangeCurve[] = {{0, 1}, {2000, 0}};
         limitation = 1;
     };
     class GVAR(SCAR_tailInterior_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_tailInterior", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_tailInterior.ogg", 1}};
         volume = "interior";
         range = 350;
         rangeCurve[] = {{0, 1}, {50, 0.4}, {100, 0.2}, {350, 0}};
         limitation = 1;
     };
     class GVAR(SCAR_silencerShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_silencerShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_silencerShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_silencerShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_silencerShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_silencerShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_silencerShot_03.ogg", 1}};
         volume = "db0";
         range = 150;
         rangeCurve = "closeShotCurve";
     };
     class GVAR(SCAR_silencerTailTrees_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_silencerTailTrees", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_silencerTailTrees.ogg", 1}};
         volume = "(1-interior/1.4)*trees/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0.3}};
         limitation = 1;
     };
     class GVAR(SCAR_silencerTailForest_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_silencerTailForest", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_silencerTailForest.ogg", 1}};
         volume = "(1-interior/1.4)*forest/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0.3}};
         limitation = 1;
     };
     class GVAR(SCAR_silencerTailMeadows_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_silencerTailMeadows", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_silencerTailMeadows.ogg", 1}};
         volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0.3}};
         limitation = 1;
     };
     class GVAR(SCAR_silencerTailHouses_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_silencerTailHouses", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_silencerTailHouses.ogg", 1}};
         volume = "(1-interior/1.4)*houses/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0}};
         limitation = 1;
     };
     class GVAR(SCAR_silencerTailInterior_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_silencerTailInterior", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\SCAR\SCAR_silencerTailInterior.ogg", 1}};
         volume = "interior";
         range = 150;
         rangeCurve[] = {{0, 1}, {50, 0.3}, {150, 0}};
         limitation = 1;
     };
     class GVAR(KSG_Closure_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_closure_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_closure_02", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_closure_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_closure_02.ogg", 1}};
         range = 5;
         volume = "db-3";
     };
     class GVAR(KSG_Pump_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_pump_01", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_pump_01.ogg", 1}};
         range = 5;
         volume = "db-4";
     };
     class GVAR(KSG_closeShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_closeShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_closeShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_closeShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_closeShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_closeShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_closeShot_03.ogg", 1}};
         volume = "db0";
         range = 50;
         rangeCurve = "closeShotCurve";
     };
     class GVAR(KSG_midShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_midShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_midShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_midShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_midShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_midShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_midShot_03.ogg", 1}};
         volume = "db-3";
         range = 1200;
         rangeCurve[] = {{0, 0.2}, {50, 1}, {150, 0}, {1200, 0}};
     };
     class GVAR(KSG_distShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_distShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_distShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_distShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_distShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_distShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_distShot_03.ogg", 1}};
         volume = "db0";
         range = 1200;
         rangeCurve[] = {{0, 0}, {50, 0}, {150, 1}, {1200, 1}};
     };
     class GVAR(KSG_tailForest_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_tailForest", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_tailForest.ogg", 1}};
         volume = "(1-interior/1.4)*forest/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(KSG_tailHouses_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_tailHouses", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_tailHouses.ogg", 1}};
         volume = "(1-interior/1.4)*houses/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {150, 0.3}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(KSG_tailMeadows_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_tailMeadows", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_tailMeadows.ogg", 1}};
         volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(KSG_tailTrees_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_tailTrees", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_tailTrees.ogg", 1}};
         volume = "(1-interior/1.4)*trees/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(KSG_tailInterior_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_tailInterior", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\KSG\KSG_tailInterior.ogg", 1}};
         volume = "interior";
         range = 250;
         rangeCurve[] = {{0, 1}, {30, 0.4}, {100, 0.2}, {250, 0}};
         limitation = 1;
     };
     class GVAR(M4_SSAS_Closure_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_closure_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_closure_02", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_closure_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_closure_02.ogg", 1}};
         range = 5;
         volume = "db-3";
     };
     class GVAR(M4_SSAS_closeShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_closeShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_closeShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_closeShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_closeShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_closeShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_closeShot_03.ogg", 1}};
         volume = "db0";
         range = 50;
         rangeCurve = "closeShotCurve";
     };
     class GVAR(M4_SSAS_midShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_midShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_midShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_midShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_midShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_midShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_midShot_03.ogg", 1}};
         volume = "db-3";
         range = 1200;
         rangeCurve[] = {{0, 0.2}, {50, 1}, {150, 0}, {1200, 0}};
     };
     class GVAR(M4_SSAS_distShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_distShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_distShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_distShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_distShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_distShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_distShot_03.ogg", 1}};
         volume = "db0";
         range = 1200;
         rangeCurve[] = {{0, 0}, {50, 0}, {150, 1}, {1200, 1}};
     };
     class GVAR(M4_SSAS_tailForest_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_tailForest", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_tailForest.ogg", 1}};
         volume = "(1-interior/1.4)*forest/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(M4_SSAS_tailHouses_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_tailHouses", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_tailHouses.ogg", 1}};
         volume = "(1-interior/1.4)*houses/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {150, 0.3}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(M4_SSAS_tailMeadows_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_tailMeadows", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_tailMeadows.ogg", 1}};
         volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(M4_SSAS_tailTrees_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_tailTrees", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_tailTrees.ogg", 1}};
         volume = "(1-interior/1.4)*trees/3";
         range = 1200;
         rangeCurve[] = {{0, 1}, {1200, 0}};
         limitation = 1;
     };
     class GVAR(M4_SSAS_tailInterior_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_tailInterior", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Shotguns\M4_SSAS\M4_SSAS_tailInterior.ogg", 1}};
         volume = "interior";
         range = 250;
         rangeCurve[] = {{0, 1}, {30, 0.4}, {100, 0.2}, {250, 0}};
         limitation = 1;
     };
     class GVAR(SMG04_closure_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_closure_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_closure_02", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_closure_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_closure_02.ogg", 1}};
         range = 5;
         volume = "db-7";
     };
     class GVAR(SMG04_closeShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_closeShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_closeShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_closeShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_closeShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_closeShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_closeShot_03.ogg", 1}};
         volume = "db-2";
         range = 50;
         rangeCurve = "closeShotCurve";
     };
     class GVAR(SMG04_midShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_midShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_midShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_midShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_midShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_midShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_midShot_03.ogg", 1}};
         volume = "db-6";
         range = 2000;
         rangeCurve[] = {{0, 0.2}, {50, 1}, {300, 0}, {2000, 0}};
     };
     class GVAR(SMG04_distShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_distShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_distShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_distShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_distShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_distShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_distShot_03.ogg", 1}};
         volume = "db0";
         range = 2000;
         rangeCurve[] = {{0, 0}, {50, 0}, {300, 1}, {2000, 1}};
     };
     class GVAR(SMG04_tailDistant_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_tailDistant", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_tailDistant.ogg", 1}};
         volume = "db5";
         range = 1500;
         rangeCurve[] = {{0, 0}, {300, 0.7}, {1500, 1}};
         limitation = 1;
     };
     class GVAR(SMG04_tailForest_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_tailForest", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_tailForest.ogg", 1}};
         volume = "(1-interior/1.4)*forest/3";
         range = 1500;
         rangeCurve[] = {{0, 1}, {1500, 0.3}};
         limitation = 1;
     };
     class GVAR(SMG04_tailHouses_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_tailHouses", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_tailHouses.ogg", 1}};
         volume = "(1-interior/1.4)*houses/3";
         range = 1500;
         rangeCurve[] = {{0, 1}, {200, 0.3}, {1500, 0.3}};
         limitation = 1;
     };
     class GVAR(SMG04_tailMeadows_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_tailMeadows", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_tailMeadows.ogg", 1}};
         volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
         range = 1500;
         rangeCurve[] = {{0, 1}, {1500, 0.3}};
         limitation = 1;
     };
     class GVAR(SMG04_tailTrees_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_tailTrees", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_tailTrees.ogg", 1}};
         volume = "(1-interior/1.4)*trees/3";
         range = 1500;
         rangeCurve[] = {{0, 1}, {1500, 0.3}};
         limitation = 1;
     };
     class GVAR(SMG04_tailInterior_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_tailInterior", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_tailInterior.ogg", 1}};
         volume = "interior";
         range = 350;
         rangeCurve[] = {{0, 1}, {50, 0.4}, {100, 0.2}, {350, 0}};
         limitation = 1;
     };
     class GVAR(SMG04_silencerShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_silencerShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_silencerShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_silencerShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_silencerShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_silencerShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_silencerShot_03.ogg", 1}};
         volume = "db-5";
         range = 150;
         rangeCurve = "closeShotCurve";
     };
     class GVAR(SMG04_silencerTailTrees_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_silencerTailTrees", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_silencerTailTrees.ogg", 1}};
         volume = "(1-interior/1.4)*trees/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0.3}};
         limitation = 1;
     };
     class GVAR(SMG04_silencerTailForest_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_silencerTailForest", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_silencerTailForest.ogg", 1}};
         volume = "(1-interior/1.4)*forest/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0.3}};
         limitation = 1;
     };
     class GVAR(SMG04_silencerTailMeadows_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_silencerTailMeadows", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_silencerTailMeadows.ogg", 1}};
         volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0.3}};
         limitation = 1;
     };
     class GVAR(SMG04_silencerTailHouses_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_silencerTailHouses", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_silencerTailHouses.ogg", 1}};
         volume = "(1-interior/1.4)*houses/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0}};
         limitation = 1;
     };
     class GVAR(SMG04_silencerTailInterior_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_silencerTailInterior", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\SMGs\SMG04\SMG04_silencerTailInterior.ogg", 1}};
         volume = "interior";
         range = 150;
         rangeCurve[] = {{0, 1}, {50, 0.3}, {150, 0}};
         limitation = 1;
     };
     class GVAR(G36_Closure_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_closure_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_closure_02", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_closure_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_closure_02.ogg", 1}};
         range = 5;
         volume = "db-3";
     };
     class GVAR(G36_closeShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_closeShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_closeShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_closeShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_closeShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_closeShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_closeShot_03.ogg", 1}};
         volume = "db-2";
         range = 50;
         rangeCurve = "closeShotCurve";
     };
     class GVAR(G36_midShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_midShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_midShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_midShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_midShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_midShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_midShot_03.ogg", 1}};
         volume = "db-2";
         range = 1800;
         rangeCurve[] = {{0, 0.2}, {50, 1}, {300, 0}, {1800, 0}};
     };
     class GVAR(G36_distShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_distShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_distShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_distShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_distShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_distShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_distShot_03.ogg", 1}};
         volume = "db0";
         range = 1800;
         rangeCurve[] = {{0, 0}, {50, 0}, {300, 1}, {1800, 1}};
     };
     class GVAR(G36_tailForest_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_tailForest", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_tailForest.ogg", 1}};
         volume = "(1-interior/1.4)*forest/3";
         range = 2000;
         rangeCurve[] = {{0, 1}, {2000, 0}};
         limitation = 1;
     };
     class GVAR(G36_tailHouses_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_tailHouses", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_tailHouses.ogg", 1}};
         volume = "(1-interior/1.4)*houses/3";
         range = 1500;
         rangeCurve[] = {{0, 1}, {250, 0.3}, {1500, 0}};
         limitation = 1;
     };
     class GVAR(G36_tailMeadows_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_tailMeadows", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_tailMeadows.ogg", 1}};
         volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
         range = 2000;
         rangeCurve[] = {{0, 1}, {2000, 0}};
         limitation = 1;
     };
     class GVAR(G36_tailTrees_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_tailTrees", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_tailTrees.ogg", 1}};
         volume = "(1-interior/1.4)*trees/3";
         range = 2000;
         rangeCurve[] = {{0, 1}, {2000, 0}};
         limitation = 1;
     };
     class GVAR(G36_tailInterior_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_tailInterior", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_tailInterior.ogg", 1}};
         volume = "interior";
         range = 350;
         rangeCurve[] = {{0, 1}, {50, 0.4}, {100, 0.2}, {350, 0}};
         limitation = 1;
     };
     class GVAR(G36_silencerShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_silencerShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_silencerShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_silencerShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_silencerShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_silencerShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_silencerShot_03.ogg", 1}};
         volume = "db0";
         range = 150;
         rangeCurve = "closeShotCurve";
     };
     class GVAR(G36_silencerTailTrees_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_silencerTailTrees", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_silencerTailTrees.ogg", 1}};
         volume = "(1-interior/1.4)*trees/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0.3}};
         limitation = 1;
     };
     class GVAR(G36_silencerTailForest_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_silencerTailForest", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_silencerTailForest.ogg", 1}};
         volume = "(1-interior/1.4)*forest/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0.3}};
         limitation = 1;
     };
     class GVAR(G36_silencerTailMeadows_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_silencerTailMeadows", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_silencerTailMeadows.ogg", 1}};
         volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0.3}};
         limitation = 1;
     };
     class GVAR(G36_silencerTailHouses_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_silencerTailHouses", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_silencerTailHouses.ogg", 1}};
         volume = "(1-interior/1.4)*houses/3";
         range = 150;
         rangeCurve[] = {{0, 1}, {150, 0}};
         limitation = 1;
     };
     class GVAR(G36_silencerTailInterior_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_silencerTailInterior", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\Rifles\G36\G36_silencerTailInterior.ogg", 1}};
         volume = "interior";
         range = 150;
         rangeCurve[] = {{0, 1}, {50, 0.3}, {150, 0}};
         limitation = 1;
     };
     class GVAR(WF50_Closure_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_closure_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_closure_02", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_closure_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_closure_02.ogg", 1}};
         range = 5;
         volume = "db-7";
     };
     class GVAR(WF50_Bolt_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_bolt_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_bolt_02", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_bolt_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_bolt_02.ogg", 1}};
         range = 5;
         volume = "db0";
     };
     class GVAR(WF50_closeShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_closeShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_closeShot_02", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_closeShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_closeShot_02.ogg", 1}};
         volume = "db0";
         range = 100;
         rangeCurve = "closeShotCurve";
     };
     class GVAR(WF50_midShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_midShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_midShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_midShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_midShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_midShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_midShot_03.ogg", 1}};
         volume = "db-3";
         range = 2500;
         rangeCurve[] = {{0, 0.2}, {100, 1}, {300, 0}, {1500, 0}};
     };
     class GVAR(WF50_distShot_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_distShot_01", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_distShot_02", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_distShot_03", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_distShot_01.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_distShot_02.ogg", 1}, {"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_distShot_03.ogg", 1}};
         volume = "db6";
         range = 2500;
         rangeCurve[] = {{0, 0}, {100, 0}, {300, 1}, {1500, 1}};
     };
     class GVAR(WF50_tailDistant_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_tailDistant", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_tailDistant.ogg", 1}};
         volume = "db0";
         range = 2500;
         rangeCurve[] = {{0, 0}, {300, 1}, {2500, 1}};
         limitation = 1;
     };
     class GVAR(WF50_tailForest_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_tailForest", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_tailForest.ogg", 1}};
         volume = "(1-interior/1.4)*forest/3";
         range = 2500;
         rangeCurve[] = {{0, 1}, {2500, 0.3}};
         limitation = 1;
     };
     class GVAR(WF50_tailHouses_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_tailHouses", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_tailHouses.ogg", 1}};
         volume = "(1-interior/1.4)*houses/3";
         range = 1500;
         rangeCurve[] = {{0, 1}, {300, 0.3}, {1500, 0.3}};
         limitation = 1;
     };
     class GVAR(WF50_tailMeadows_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_tailMeadows", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_tailMeadows.ogg", 1}};
         volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
         range = 2500;
         rangeCurve[] = {{0, 1}, {2500, 0.3}};
         limitation = 1;
     };
     class GVAR(WF50_tailTrees_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_tailTrees", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_tailTrees.ogg", 1}};
         volume = "(1-interior/1.4)*trees/3";
         range = 2500;
         rangeCurve[] = {{0, 1}, {2500, 0.3}};
         limitation = 1;
     };
     class GVAR(WF50_tailInterior_SoundShader) {
-        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_tailInterior", 1}};
+        samples[] = {{"\z\ghost\addons\weapons\models\sounds\arsenal\weapons\LongRangeRifles\WF50\WF50_tailInterior.ogg", 1}};
         volume = "interior";
         range = 350;
         rangeCurve[] = {{0, 1}, {50, 0.2}, {100, 0.05}, {350, 0}};

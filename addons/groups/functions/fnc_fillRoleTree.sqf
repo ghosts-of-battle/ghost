@@ -84,7 +84,11 @@ private _myPath = [0,0];
             private _locked = !(_gate # 0);
 
             private _name = switch (true) do {
-                case (_taken): {format ["%1  -  %2",_roleName,name _playerInRole]};
+                // and what he is qualified as - "Recon Specialist  -  Reyes (MED)"
+                case (_taken): {
+                    private _tags = (_playerInRole getVariable ["ghost_pac_skillTags", []]) select [0, 2];
+                    format ["%1  -  %2%3", _roleName, name _playerInRole, ["", format [" (%1)", _tags joinString "/"]] select (_tags isNotEqualTo [])]
+                };
                 case (_locked): {format ["%1  [%2]",_roleName,_gate # 2]};
                 default {_roleName};
             };

@@ -4,7 +4,7 @@ class CfgFactionClasses {
         displayName = "2040 Russia (Arid)";
         side = 0;
         priority = 3;
-        icon = "\min_rf_data\ui\rf_sign.paa";
-        flag = "\min_rf_data\flags\flag_rus_co.paa";
+        icon = "\A3\Data_F_Enoch\FactionIcons\icon_RUS_CA.paa";
+        flag = "\A3\Data_F_Enoch\Flags\flag_RUS_CO.paa";
     };
 };

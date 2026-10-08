@@ -4,28 +4,8 @@ class optic_Hamr
     model = "mxa_arsenal_leupold_mark_4_hamr";
     camo = "STD";
 };
-class optic_Hamr_arid_lxWS
-{
-    model = "mxa_arsenal_leupold_mark_4_hamr";
-    camo = "ARID";
-};
 class optic_Hamr_khk_F
 {
     model = "mxa_arsenal_leupold_mark_4_hamr";
     camo = "KHK";
-};
-class optic_Hamr_lush_lxWS
-{
-    model = "mxa_arsenal_leupold_mark_4_hamr";
-    camo = "LUSH";
-};
-class optic_Hamr_sand_lxWS
-{
-    model = "mxa_arsenal_leupold_mark_4_hamr";
-    camo = "SND";
-};
-class optic_Hamr_snake_lxWS
-{
-    model = "mxa_arsenal_leupold_mark_4_hamr";
-    camo = "SNAKE";
 };

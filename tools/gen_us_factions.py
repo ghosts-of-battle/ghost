@@ -602,7 +602,7 @@ _NATO_ARTY = []
 # JK'S CLAM SHELL RADAR (user, 2026-08-28) - every JTF, both Marines and every
 # east faction. It is a west class; the emitter gives it the faction's side
 # and the faction's side's UAV AI as crew.
-_CLAMSHELL = ["JK_B_CDF_76n6_ClamShell_F", "JK_B_CDF_76n6_ClamShell_Lower_F"]
+_CLAMSHELL = []   # the 76N6 Clam Shell radar, taken out of every faction (user, 2026-10-06)
 # THE STATICS, THE MK6 AND THE DARTER LEFT THIS LIST (2026-08-31), for the
 # reason the artillery and the Polaris did: BLU_F's plain XM307s, XM312s, Mk6
 # and AR-2 are the same weapons every theatre already fields in its own paint,
@@ -3669,10 +3669,10 @@ def main():
     # A CHOSEN ROUND IS ONLY USABLE IF fa_tiers ACTUALLY BUILT A TIER FOR IT.
     # Only rounds declaring a lethality figure are tiered, so the two sets are
     # not the same - and a magazine that does not exist is a soldier with none.
-    # fa_tiers holds the base-game rounds' tiers, fa_tiers_mods the mods'
+    # fa_tiers holds the base-game rounds' tiers, fa_tiers_mods (Aegis) and fa_tiers_<source> the optional sources'
     # (E22's 5.45 among them); a faction on a mod's rifle needs both read.
     t3 = set()
-    for tiers in ("fa_tiers", "fa_tiers_mods"):
+    for tiers in sorted(d for d in os.listdir(ADDONS) if d.startswith("fa_tiers")):
         tp = os.path.join(ADDONS, tiers, "CfgMagazines.hpp")
         if os.path.exists(tp):
             t3 |= set(re.findall(r"^\s*class ([A-Za-z0-9_]+)_t[234]:",
@@ -4576,4 +4576,8 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    rc = main()
+    # 2040 PEER ARMOUR. This rewrites files tools/peer_vests.py edits; put its protection and vest swaps back.
+    import peer_vests
+    peer_vests.main()
+    sys.exit(rc)

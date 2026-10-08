@@ -1,4 +1,4 @@
-class CfgMagazinewells {
+class CfgMagazineWells {
     // LOT M1014 6-round well (lot_m1014_cqb variants)
     class lot_6RND_12GA {
         FA_lot_6RND_12GA[] = {

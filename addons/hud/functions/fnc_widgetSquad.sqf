@@ -100,7 +100,7 @@ private _shown = 0;
         default {_ink};
     };
 
-    [_ctrl, [_pad, _y + _shown * _rowH, _w * 0.5, _rowH], name _unit, _colour, (0.8 * _k), true] call EFUNC(tacpad,drawText);
+    [_ctrl, [_pad, _y + _shown * _rowH, _w * 0.5, _rowH], [name _unit, format ["%1 (%2)", name _unit, ((_unit getVariable ["ghost_pac_skillTags", []]) select [0, 2]) joinString "/"]] select ((_unit getVariable ["ghost_pac_skillTags", []]) isNotEqualTo []), _colour, (0.8 * _k), true] call EFUNC(tacpad,drawText);
     [_ctrl, [_w * 0.5, _y + _shown * _rowH, _w * 0.5 - _pad, _rowH], _state, _colour, (0.68 * _k), true, "right", true] call EFUNC(tacpad,drawText);
     _shown = _shown + 1;
 } forEach _keyed;

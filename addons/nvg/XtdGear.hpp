@@ -171,26 +171,6 @@ class XtdGearInfos {
         // The ghost LP NVGs sort beside EF's own - same model key, so the
         // arsenal's camo and thermal switches move between the pair rather than
         // listing them as two unrelated sets.
-        class GVAR(lpnvg_blk) {
-            model = "lpnvg";
-            camo = "blk";
-            ti = "no";
-        };
-        class GVAR(lpnvg_tan) {
-            model = "lpnvg";
-            camo = "tan";
-            ti = "no";
-        };
-        class GVAR(lpnvgTI_blk) {
-            model = "lpnvg";
-            camo = "blk";
-            ti = "yes";
-        };
-        class GVAR(lpnvgTI_tan) {
-            model = "lpnvg";
-            camo = "tan";
-            ti = "yes";
-        };
 
         class GVAR(anvgTI_blk) {
             model = "anvg";
@@ -302,39 +282,7 @@ class XtdGearInfos {
         };
 
         // LP NVG (EF)
-        class EF_LPNVG {
-            model = "lpnvg";
-            camo = "blk";
-            ti = "no";
-        };
-        class EF_LPNVG_Tan {
-            model = "lpnvg";
-            camo = "tan";
-            ti = "no";
-        };
-        class EF_LPNVG_T {
-            model = "lpnvg";
-            camo = "blk";
-            ti = "yes";
-        };
-        class EF_LPNVG_T_Tan {
-            model = "lpnvg";
-            camo = "tan";
-            ti = "yes";
-        };
 
         // Ti Goggles
-        class TiGoggles_RF {
-            model = "tigoggles";
-            camo = "blk";
-        };
-        class TiGoggles_grn_RF {
-            model = "tigoggles";
-            camo = "grn";
-        };
-        class TiGoggles_tan_RF {
-            model = "tigoggles";
-            camo = "tan";
-        };
     };
 };

@@ -21,10 +21,7 @@ class CfgPatches {
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "ghost_main",
-            "A3_Characters_F",
-            "A3_Data_F_Decade_Loadorder",
-            "data_f_lxWS_Loadorder"
+            "ghost_main", "A3_Characters_F", "A3_Data_F_Decade_Loadorder"
         };
         skipWhenMissingDependencies = 1;
         authorUrl = "https://www.ghostsofbattle.com/";

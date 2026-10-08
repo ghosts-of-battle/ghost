@@ -49,10 +49,6 @@
             type = "High";
             color = "Default";
         };
-        class B_DuffleBag_MTP_RF {
-            model = QGVAR(ghost_DuffleBag);
-            camo = "MTP";
-        };
         class B_Mortar_01_support_F {
             model = QGVAR(ghost_Static_Mortar_01);
             type = "Support";
@@ -258,10 +254,6 @@
             model = QGVAR(ghost_UAV_01);
             camo = "Default";
         };
-        class EF_B_UAV_01_backpack_coy {
-            model = QGVAR(ghost_UAV_01);
-            camo = "Coyote";
-        };
         class B_UGV_02_Demining_backpack_F {
             model = QGVAR(ghost_UGV_02);
             type = "Demining";
@@ -270,29 +262,9 @@
             model = QGVAR(ghost_UGV_02);
             type = "Science";
         };
-        class Aegis_B_RadioBag_01_des_lxWS {
-            model = QGVAR(ghost_RadioBag);
-            camo = "Desert";
-        };
         class Aegis_B_patrolBackpack_mcu_F {
             model = QGVAR(ghost_patrolBackpack);
             camo = "MCU";
-        };
-        class B_Kitbag_desert_lxWS {
-            model = QGVAR(ghost_Kitbag);
-            camo = "Desert";
-        };
-        class B_Carryall_desert_lxWS {
-            model = QGVAR(ghost_Carryall);
-            camo = "Desert";
-        };
-        class Aegis_B_AssaultPackSpec_des_lxWS {
-            model = QGVAR(ghost_AssaultPackSpec);
-            camo = "Desert";
-        };
-        class B_AssaultPack_desert_lxWS {
-            model = QGVAR(ghost_AssaultPack);
-            camo = "Desert";
         };
         class Aegis_B_patrolBackpack_wdl_F {
             model = QGVAR(ghost_patrolBackpack);
@@ -340,10 +312,6 @@
         };
         class B_Carryall_oli {
             model = QGVAR(ghost_Carryall);
-            camo = "Olive";
-        };
-        class B_DuffleBag_Olive_NoLogo_RF {
-            model = QGVAR(ghost_DuffleBag);
             camo = "Olive";
         };
         class B_Kitbag_khk {
@@ -397,10 +365,6 @@
         class B_TacticalPack_rgr {
             model = QGVAR(ghost_TacticalPack);
             camo = "Ranger";
-        };
-        class EF_B_TacticalPack_coy {
-            model = QGVAR(ghost_TacticalPack);
-            camo = "Coyote";
         };
         // ---- BI backpack coverage (parity with aceax ACEandBI compat) ----
         // Assault Pack

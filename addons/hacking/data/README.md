@@ -14,12 +14,12 @@ copy their source — see `docs/DESIGN_INTEL_SYSTEM.md` §0.
 |---|---|---|
 | `tablet.paa` | `MRHSoldierTab/paa/tablet.paa` | Bezel behind the hacking tablet dialog — **rebranded**, see below |
 | `phone.paa` | `MRHFunctions/img/hackphone/hackphone.paa` | Handset behind the signal scanner screen |
-| `tablet_icon.paa` | `MRHSoldierTab/models/Tablet/tableticon.paa` | Inventory icon for the Intrusion Tablet |
-| `soldiertab.p3d` | `MRHSoldierTab/models/Tablet/soldiertab.p3d` | Model for the Intrusion Tablet item |
-| `soldiertabtext.paa` | `MRHSoldierTab/models/Tablet/soldierTabText.paa` | Its texture |
-| `hackphone.p3d` | `MRHFunctions/models/hackphone/hackphone.p3d` | Model for the Signal Scanner item |
-| `p/hackphonetexture.paa` | `MRHFunctions/models/hackphone/hackPhonetexture.paa` | Its texture |
 | `hackphone_icon.paa` | `MRHFunctions/models/hackphone/hackphoneIcon.paa` | Inventory icon for the Signal Scanner |
+
+The two MRH item models (`soldiertab.p3d`, `hackphone.p3d`) were dropped earlier - the
+items use base-game models - and their textures and the tablet's inventory icon
+(`soldiertabtext.paa`, `p/hackphonetexture.paa`, `tablet_icon.paa`) went with them on
+2026-10-07, when tools/slim_assets.py removed every asset nothing named.
 
 Everything drawn *inside* the tablet and scanner screens is ghost-original.
 
@@ -58,27 +58,3 @@ lets a scanner row's glyph take the same state colour as its text for free.
 | `uplink.paa` | Satellite Dish | *spare* — tower / uplink |
 | `wireless.paa` | Wireless Hacking | *spare* — hack in progress |
 
-## Notes for editing
-
-Both p3ds are **MLOD**, so they open and edit in Object Builder — unlike the ODOL
-models vendored elsewhere in ghost (e.g. `vests_odin`).
-
-Each references its texture as a **bare lowercase filename with no path**, so the
-.paa must sit in this folder and the name must match exactly:
-
-- `soldiertab.p3d` → `soldiertabtext.paa`
-- `hackphone.p3d` → `p\hackphonetexture.paa`
-
-Arma texture lookups are case-sensitive even on Windows, so renaming either .paa
-silently produces an untextured model. Both were renamed to lowercase on import
-for exactly this reason.
-
-MLOD p3ds store texture paths inline as fixed-length ASCIIZ, so a repath must be
-byte-for-byte the same length as the original or the file corrupts
-(`InvalidFaceVertexCount` on load). The one-letter `p\` folder exists purely to
-pad `hackphone.p3d`'s texture path back to its original 50 bytes — do not
-"tidy" it away.
-
-Neither needs a `model.cfg`: they are inventory props with no skeleton, not
-character-worn gear (which is where a missing model.cfg makes items render
-invisible).

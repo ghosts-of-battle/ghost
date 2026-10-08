@@ -19,8 +19,6 @@ class CfgPatches {
         author = QAUTHOR;
         VERSION_CONFIG;
         magazines[] = {
-            // 9x21 Gepard - Mk424 AP
-            "FA_b_40Rnd_9x21_Gepard_Mk424_AP",
             // 7.62x54R SVD — Ball HV
             "FA_Aegis_10Rnd_762x54_SVD_HV",
             "FA_Aegis_10Rnd_762x54_SVD_HV_T_Red",

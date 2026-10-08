@@ -922,12 +922,6 @@ class CfgGroups {
                         position[] = {15,-15,0};
                     };
 
-                    class Unit6 {
-                        side = 0;
-                        vehicle = QGVAR(O_QRF_Soldier_UAV_RF);
-                        rank = "PRIVATE";
-                        position[] = {-15,-15,0};
-                    };
 
                     class Unit7 {
                         side = 0;
@@ -3522,19 +3516,7 @@ class CfgGroups {
                         position[] = {0,0,0};
                     };
 
-                    class Unit1 {
-                        side = 0;
-                        vehicle = QGVAR(O_support_CMort_RF);
-                        rank = "CORPORAL";
-                        position[] = {5,-5,0};
-                    };
 
-                    class Unit2 {
-                        side = 0;
-                        vehicle = QGVAR(O_support_CMort_RF);
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
                 };
 
                 class GVAR(OI_recon_EOD) {

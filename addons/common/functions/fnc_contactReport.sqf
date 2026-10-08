@@ -92,7 +92,7 @@ if (_idx > -1) then {
         (_board select _idx) set [4, _error];
     };
     (_board select _idx) set [5, _now];
-    if !(_source in _sources) then {_sources pushBack _source};
+    _sources pushBackUnique _source;
     if (!isNull _object) then {(_board select _idx) set [8, _object]};
 
     GVAR(boards) set [str _side, _board];

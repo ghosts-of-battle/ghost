@@ -82,9 +82,11 @@ if (_folders isEqualTo []) then {
     [_body, [_pad, _rowH * 2.4, _listW - 2 * _pad, _rowH * 3], "Break into a terminal carrying files and what comes off it is filed here.", _dim, 0.65, false] call EFUNC(tacpad,drawText);
 };
 
-private _y = _rowH * 1.3;
+// every row below - folder or file - steps down onto itself before it draws
+private _y = _rowH * 1.3 - _rowH;
 
 {
+    _y = _y + _rowH;
     private _pkg = _x;
     (_byFolder get _pkg) params ["_label", "_entries"];
     private _on = _pkg isEqualTo _openPkg;
@@ -104,13 +106,12 @@ private _y = _rowH * 1.3;
     }] call EFUNC(tacpad,drawHit);
     _hit setVariable [QGVAR(pkg), _pkg];
 
-    _y = _y + _rowH;
-
     // The files inside the open folder, indented under it. A closed folder is
     // one row - forty recovered files should not be forty rows the moment the
     // app opens.
     if (_on) then {
         {
+            _y = _y + _rowH;
             _x params ["", "", "_id", "_title"];
             private _sel = _id isEqualTo _openEntry;
             private _text = ["- ", "> "] select _sel;
@@ -123,8 +124,6 @@ private _y = _rowH * 1.3;
                 {["intel"] call EFUNC(tacpad,openApp)} call CBA_fnc_execNextFrame;
             }] call EFUNC(tacpad,drawHit);
             _eh setVariable [QGVAR(entry), _id];
-
-            _y = _y + _rowH;
         } forEach _entries;
     };
 } forEach _folders;

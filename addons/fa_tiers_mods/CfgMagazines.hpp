@@ -3,78 +3,6 @@
 
 class CfgMagazines {
     // ---- EXTERNAL, as above.
-    class FA_30Rnd_556x45_AP_Stanag_RF;
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP;
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Blue;
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Green;
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_IR;
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Orange;
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Red;
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_White;
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Yellow;
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Blue;
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Green;
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_IR;
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Orange;
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Red;
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_White;
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Yellow;
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP;
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Blue;
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Green;
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_IR;
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Orange;
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Red;
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_White;
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Yellow;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Blue;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Green;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_IR;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Orange;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Red;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_White;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Yellow;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Blue;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Green;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_IR;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Orange;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Red;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_White;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Yellow;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Blue;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Green;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_IR;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Orange;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Red;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_White;
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Yellow;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Blue;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Green;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_IR;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Orange;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Red;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_White;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Yellow;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Blue;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Green;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_IR;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Orange;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Red;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_White;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Yellow;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Blue;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Green;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_IR;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Orange;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Red;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_White;
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Yellow;
     class FA_Aegis_10Rnd_762x54_SVD_HV;
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_Blue;
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_Green;
@@ -147,1691 +75,869 @@ class CfgMagazines {
     class FA_Aegis_60Rnd_545x39_7N44_T_Red;
     class FA_Aegis_60Rnd_545x39_7N44_T_White;
     class FA_Aegis_60Rnd_545x39_7N44_T_Yellow;
-    class FA_EF_100Rnd_65x39_caseless_coy_mag;
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB;
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue;
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green;
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange;
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red;
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White;
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow;
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Blue;
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Green;
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_IR;
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Orange;
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Red;
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_White;
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Yellow;
-    class FA_EF_30Rnd_65x39_caseless_coy_mag;
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB;
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue;
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green;
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange;
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red;
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White;
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow;
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Blue;
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Green;
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_IR;
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Orange;
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Red;
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_White;
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Yellow;
-    class FA_b_40Rnd_9x21_Gepard_Mk424_AP;
-    class FA_rf_10Rnd_127x55_7N52;
-    class FA_rf_10Rnd_127x55_7U13;
-    class FA_rf_10Rnd_127x55_7U14;
-    class FA_rf_17Rnd_9x19_Mk422_AP;
-    class FA_rf_20Rnd_127x55_7N52;
-    class FA_rf_20Rnd_127x55_7U13;
-    class FA_rf_20Rnd_127x55_7U14;
-    class FA_rf_33Rnd_9x19_Mk422_AP;
 
     class FA_Aegis_10Rnd_762x54_SVD_HV_t4: FA_Aegis_10Rnd_762x54_SVD_HV {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - T4";
         ammo = "FA_o_762x54R_Ball_HV_t4";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_t3: FA_Aegis_10Rnd_762x54_SVD_HV {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - T3";
         ammo = "FA_o_762x54R_Ball_HV_t3";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_t2: FA_Aegis_10Rnd_762x54_SVD_HV {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - T2";
         ammo = "FA_o_762x54R_Ball_HV_t2";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_Red_t4: FA_Aegis_10Rnd_762x54_SVD_HV_T_Red {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - Red Tracer, T4";
         ammo = "FA_o_762x54R_Ball_HV_T_Red_t4";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_Red_t3: FA_Aegis_10Rnd_762x54_SVD_HV_T_Red {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - Red Tracer, T3";
         ammo = "FA_o_762x54R_Ball_HV_T_Red_t3";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_Red_t2: FA_Aegis_10Rnd_762x54_SVD_HV_T_Red {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - Red Tracer, T2";
         ammo = "FA_o_762x54R_Ball_HV_T_Red_t2";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_Yellow_t4: FA_Aegis_10Rnd_762x54_SVD_HV_T_Yellow {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - Yellow Tracer, T4";
         ammo = "FA_o_762x54R_Ball_HV_T_Yellow_t4";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_Yellow_t3: FA_Aegis_10Rnd_762x54_SVD_HV_T_Yellow {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - Yellow Tracer, T3";
         ammo = "FA_o_762x54R_Ball_HV_T_Yellow_t3";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_Yellow_t2: FA_Aegis_10Rnd_762x54_SVD_HV_T_Yellow {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - Yellow Tracer, T2";
         ammo = "FA_o_762x54R_Ball_HV_T_Yellow_t2";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_Green_t4: FA_Aegis_10Rnd_762x54_SVD_HV_T_Green {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - Green Tracer, T4";
         ammo = "FA_o_762x54R_Ball_HV_T_Green_t4";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_Green_t3: FA_Aegis_10Rnd_762x54_SVD_HV_T_Green {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - Green Tracer, T3";
         ammo = "FA_o_762x54R_Ball_HV_T_Green_t3";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_Green_t2: FA_Aegis_10Rnd_762x54_SVD_HV_T_Green {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - Green Tracer, T2";
         ammo = "FA_o_762x54R_Ball_HV_T_Green_t2";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_White_t4: FA_Aegis_10Rnd_762x54_SVD_HV_T_White {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - White Tracer, T4";
         ammo = "FA_o_762x54R_Ball_HV_T_White_t4";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_White_t3: FA_Aegis_10Rnd_762x54_SVD_HV_T_White {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - White Tracer, T3";
         ammo = "FA_o_762x54R_Ball_HV_T_White_t3";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_White_t2: FA_Aegis_10Rnd_762x54_SVD_HV_T_White {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - White Tracer, T2";
         ammo = "FA_o_762x54R_Ball_HV_T_White_t2";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_Blue_t4: FA_Aegis_10Rnd_762x54_SVD_HV_T_Blue {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - Blue Tracer, T4";
         ammo = "FA_o_762x54R_Ball_HV_T_Blue_t4";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_Blue_t3: FA_Aegis_10Rnd_762x54_SVD_HV_T_Blue {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - Blue Tracer, T3";
         ammo = "FA_o_762x54R_Ball_HV_T_Blue_t3";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_Blue_t2: FA_Aegis_10Rnd_762x54_SVD_HV_T_Blue {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - Blue Tracer, T2";
         ammo = "FA_o_762x54R_Ball_HV_T_Blue_t2";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_Orange_t4: FA_Aegis_10Rnd_762x54_SVD_HV_T_Orange {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - Orange Tracer, T4";
         ammo = "FA_o_762x54R_Ball_HV_T_Orange_t4";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_Orange_t3: FA_Aegis_10Rnd_762x54_SVD_HV_T_Orange {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - Orange Tracer, T3";
         ammo = "FA_o_762x54R_Ball_HV_T_Orange_t3";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_Orange_t2: FA_Aegis_10Rnd_762x54_SVD_HV_T_Orange {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - Orange Tracer, T2";
         ammo = "FA_o_762x54R_Ball_HV_T_Orange_t2";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_IR_t4: FA_Aegis_10Rnd_762x54_SVD_HV_T_IR {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - IR Tracer, T4";
         ammo = "FA_o_762x54R_Ball_HV_T_IR_t4";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_IR_t3: FA_Aegis_10Rnd_762x54_SVD_HV_T_IR {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - IR Tracer, T3";
         ammo = "FA_o_762x54R_Ball_HV_T_IR_t3";
     };
     class FA_Aegis_10Rnd_762x54_SVD_HV_T_IR_t2: FA_Aegis_10Rnd_762x54_SVD_HV_T_IR {
+        displayName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD) - IR Tracer, T2";
         ammo = "FA_o_762x54R_Ball_HV_T_IR_t2";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_t4: FA_Aegis_5Rnd_127x99_Mk258 {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - T4";
         ammo = "FA_b_127x99_Mk258_LRP_t4";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_t3: FA_Aegis_5Rnd_127x99_Mk258 {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - T3";
         ammo = "FA_b_127x99_Mk258_LRP_t3";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_t2: FA_Aegis_5Rnd_127x99_Mk258 {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - T2";
         ammo = "FA_b_127x99_Mk258_LRP_t2";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_Red_t4: FA_Aegis_5Rnd_127x99_Mk258_T_Red {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - Red Tracer, T4";
         ammo = "FA_b_127x99_Mk258_LRP_T_Red_t4";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_Red_t3: FA_Aegis_5Rnd_127x99_Mk258_T_Red {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - Red Tracer, T3";
         ammo = "FA_b_127x99_Mk258_LRP_T_Red_t3";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_Red_t2: FA_Aegis_5Rnd_127x99_Mk258_T_Red {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - Red Tracer, T2";
         ammo = "FA_b_127x99_Mk258_LRP_T_Red_t2";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_Yellow_t4: FA_Aegis_5Rnd_127x99_Mk258_T_Yellow {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - Yellow Tracer, T4";
         ammo = "FA_b_127x99_Mk258_LRP_T_Yellow_t4";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_Yellow_t3: FA_Aegis_5Rnd_127x99_Mk258_T_Yellow {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - Yellow Tracer, T3";
         ammo = "FA_b_127x99_Mk258_LRP_T_Yellow_t3";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_Yellow_t2: FA_Aegis_5Rnd_127x99_Mk258_T_Yellow {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - Yellow Tracer, T2";
         ammo = "FA_b_127x99_Mk258_LRP_T_Yellow_t2";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_Green_t4: FA_Aegis_5Rnd_127x99_Mk258_T_Green {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - Green Tracer, T4";
         ammo = "FA_b_127x99_Mk258_LRP_T_Green_t4";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_Green_t3: FA_Aegis_5Rnd_127x99_Mk258_T_Green {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - Green Tracer, T3";
         ammo = "FA_b_127x99_Mk258_LRP_T_Green_t3";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_Green_t2: FA_Aegis_5Rnd_127x99_Mk258_T_Green {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - Green Tracer, T2";
         ammo = "FA_b_127x99_Mk258_LRP_T_Green_t2";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_White_t4: FA_Aegis_5Rnd_127x99_Mk258_T_White {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - White Tracer, T4";
         ammo = "FA_b_127x99_Mk258_LRP_T_White_t4";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_White_t3: FA_Aegis_5Rnd_127x99_Mk258_T_White {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - White Tracer, T3";
         ammo = "FA_b_127x99_Mk258_LRP_T_White_t3";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_White_t2: FA_Aegis_5Rnd_127x99_Mk258_T_White {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - White Tracer, T2";
         ammo = "FA_b_127x99_Mk258_LRP_T_White_t2";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_Blue_t4: FA_Aegis_5Rnd_127x99_Mk258_T_Blue {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - Blue Tracer, T4";
         ammo = "FA_b_127x99_Mk258_LRP_T_Blue_t4";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_Blue_t3: FA_Aegis_5Rnd_127x99_Mk258_T_Blue {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - Blue Tracer, T3";
         ammo = "FA_b_127x99_Mk258_LRP_T_Blue_t3";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_Blue_t2: FA_Aegis_5Rnd_127x99_Mk258_T_Blue {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - Blue Tracer, T2";
         ammo = "FA_b_127x99_Mk258_LRP_T_Blue_t2";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_Orange_t4: FA_Aegis_5Rnd_127x99_Mk258_T_Orange {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - Orange Tracer, T4";
         ammo = "FA_b_127x99_Mk258_LRP_T_Orange_t4";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_Orange_t3: FA_Aegis_5Rnd_127x99_Mk258_T_Orange {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - Orange Tracer, T3";
         ammo = "FA_b_127x99_Mk258_LRP_T_Orange_t3";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_Orange_t2: FA_Aegis_5Rnd_127x99_Mk258_T_Orange {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - Orange Tracer, T2";
         ammo = "FA_b_127x99_Mk258_LRP_T_Orange_t2";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_IR_t4: FA_Aegis_5Rnd_127x99_Mk258_T_IR {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - IR Tracer, T4";
         ammo = "FA_b_127x99_Mk258_LRP_T_IR_t4";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_IR_t3: FA_Aegis_5Rnd_127x99_Mk258_T_IR {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - IR Tracer, T3";
         ammo = "FA_b_127x99_Mk258_LRP_T_IR_t3";
     };
     class FA_Aegis_5Rnd_127x99_Mk258_T_IR_t2: FA_Aegis_5Rnd_127x99_Mk258_T_IR {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk258 - IR Tracer, T2";
         ammo = "FA_b_127x99_Mk258_LRP_T_IR_t2";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_t4: FA_Aegis_5Rnd_127x99_Mk211Mod0 {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - T4";
         ammo = "FA_b_127x99_Mk211Mod0_AP_t4";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_t3: FA_Aegis_5Rnd_127x99_Mk211Mod0 {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - T3";
         ammo = "FA_b_127x99_Mk211Mod0_AP_t3";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_t2: FA_Aegis_5Rnd_127x99_Mk211Mod0 {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - T2";
         ammo = "FA_b_127x99_Mk211Mod0_AP_t2";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Red_t4: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Red {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - Red Tracer, T4";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_Red_t4";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Red_t3: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Red {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - Red Tracer, T3";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_Red_t3";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Red_t2: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Red {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - Red Tracer, T2";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_Red_t2";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Yellow_t4: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Yellow {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - Yellow Tracer, T4";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_Yellow_t4";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Yellow_t3: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Yellow {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - Yellow Tracer, T3";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_Yellow_t3";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Yellow_t2: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Yellow {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - Yellow Tracer, T2";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_Yellow_t2";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Green_t4: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Green {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - Green Tracer, T4";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_Green_t4";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Green_t3: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Green {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - Green Tracer, T3";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_Green_t3";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Green_t2: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Green {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - Green Tracer, T2";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_Green_t2";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_White_t4: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_White {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - White Tracer, T4";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_White_t4";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_White_t3: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_White {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - White Tracer, T3";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_White_t3";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_White_t2: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_White {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - White Tracer, T2";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_White_t2";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Blue_t4: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Blue {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - Blue Tracer, T4";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_Blue_t4";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Blue_t3: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Blue {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - Blue Tracer, T3";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_Blue_t3";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Blue_t2: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Blue {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - Blue Tracer, T2";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_Blue_t2";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Orange_t4: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Orange {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - Orange Tracer, T4";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_Orange_t4";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Orange_t3: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Orange {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - Orange Tracer, T3";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_Orange_t3";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Orange_t2: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_Orange {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - Orange Tracer, T2";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_Orange_t2";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_IR_t4: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_IR {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - IR Tracer, T4";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_IR_t4";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_IR_t3: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_IR {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - IR Tracer, T3";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_IR_t3";
     };
     class FA_Aegis_5Rnd_127x99_Mk211Mod0_T_IR_t2: FA_Aegis_5Rnd_127x99_Mk211Mod0_T_IR {
+        displayName = "[Ghost] 5Rnd 12.7mm Mk211Mod0 - IR Tracer, T2";
         ammo = "FA_b_127x99_Mk211Mod0_AP_T_IR_t2";
     };
     class FA_Aegis_30Rnd_545x39_7N44_t4: FA_Aegis_30Rnd_545x39_7N44 {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - T4";
         ammo = "FA_o_545x39_7N44_HP_t4";
     };
     class FA_Aegis_30Rnd_545x39_7N44_t3: FA_Aegis_30Rnd_545x39_7N44 {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - T3";
         ammo = "FA_o_545x39_7N44_HP_t3";
     };
     class FA_Aegis_30Rnd_545x39_7N44_t2: FA_Aegis_30Rnd_545x39_7N44 {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - T2";
         ammo = "FA_o_545x39_7N44_HP_t2";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_Red_t4: FA_Aegis_30Rnd_545x39_7N44_T_Red {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - Red Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_Red_t4";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_Red_t3: FA_Aegis_30Rnd_545x39_7N44_T_Red {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - Red Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_Red_t3";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_Red_t2: FA_Aegis_30Rnd_545x39_7N44_T_Red {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - Red Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_Red_t2";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_Yellow_t4: FA_Aegis_30Rnd_545x39_7N44_T_Yellow {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - Yellow Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_Yellow_t4";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_Yellow_t3: FA_Aegis_30Rnd_545x39_7N44_T_Yellow {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - Yellow Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_Yellow_t3";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_Yellow_t2: FA_Aegis_30Rnd_545x39_7N44_T_Yellow {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - Yellow Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_Yellow_t2";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_Green_t4: FA_Aegis_30Rnd_545x39_7N44_T_Green {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - Green Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_Green_t4";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_Green_t3: FA_Aegis_30Rnd_545x39_7N44_T_Green {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - Green Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_Green_t3";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_Green_t2: FA_Aegis_30Rnd_545x39_7N44_T_Green {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - Green Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_Green_t2";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_White_t4: FA_Aegis_30Rnd_545x39_7N44_T_White {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - White Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_White_t4";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_White_t3: FA_Aegis_30Rnd_545x39_7N44_T_White {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - White Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_White_t3";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_White_t2: FA_Aegis_30Rnd_545x39_7N44_T_White {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - White Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_White_t2";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_Blue_t4: FA_Aegis_30Rnd_545x39_7N44_T_Blue {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - Blue Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_Blue_t4";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_Blue_t3: FA_Aegis_30Rnd_545x39_7N44_T_Blue {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - Blue Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_Blue_t3";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_Blue_t2: FA_Aegis_30Rnd_545x39_7N44_T_Blue {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - Blue Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_Blue_t2";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_Orange_t4: FA_Aegis_30Rnd_545x39_7N44_T_Orange {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - Orange Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_Orange_t4";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_Orange_t3: FA_Aegis_30Rnd_545x39_7N44_T_Orange {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - Orange Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_Orange_t3";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_Orange_t2: FA_Aegis_30Rnd_545x39_7N44_T_Orange {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - Orange Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_Orange_t2";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_IR_t4: FA_Aegis_30Rnd_545x39_7N44_T_IR {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - IR Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_IR_t4";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_IR_t3: FA_Aegis_30Rnd_545x39_7N44_T_IR {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - IR Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_IR_t3";
     };
     class FA_Aegis_30Rnd_545x39_7N44_T_IR_t2: FA_Aegis_30Rnd_545x39_7N44_T_IR {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N44 - IR Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_IR_t2";
     };
     class FA_Aegis_45Rnd_545x39_7N44_t4: FA_Aegis_45Rnd_545x39_7N44 {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - T4";
         ammo = "FA_o_545x39_7N44_HP_t4";
     };
     class FA_Aegis_45Rnd_545x39_7N44_t3: FA_Aegis_45Rnd_545x39_7N44 {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - T3";
         ammo = "FA_o_545x39_7N44_HP_t3";
     };
     class FA_Aegis_45Rnd_545x39_7N44_t2: FA_Aegis_45Rnd_545x39_7N44 {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - T2";
         ammo = "FA_o_545x39_7N44_HP_t2";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_Red_t4: FA_Aegis_45Rnd_545x39_7N44_T_Red {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - Red Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_Red_t4";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_Red_t3: FA_Aegis_45Rnd_545x39_7N44_T_Red {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - Red Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_Red_t3";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_Red_t2: FA_Aegis_45Rnd_545x39_7N44_T_Red {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - Red Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_Red_t2";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_Yellow_t4: FA_Aegis_45Rnd_545x39_7N44_T_Yellow {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - Yellow Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_Yellow_t4";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_Yellow_t3: FA_Aegis_45Rnd_545x39_7N44_T_Yellow {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - Yellow Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_Yellow_t3";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_Yellow_t2: FA_Aegis_45Rnd_545x39_7N44_T_Yellow {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - Yellow Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_Yellow_t2";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_Green_t4: FA_Aegis_45Rnd_545x39_7N44_T_Green {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - Green Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_Green_t4";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_Green_t3: FA_Aegis_45Rnd_545x39_7N44_T_Green {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - Green Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_Green_t3";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_Green_t2: FA_Aegis_45Rnd_545x39_7N44_T_Green {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - Green Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_Green_t2";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_White_t4: FA_Aegis_45Rnd_545x39_7N44_T_White {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - White Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_White_t4";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_White_t3: FA_Aegis_45Rnd_545x39_7N44_T_White {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - White Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_White_t3";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_White_t2: FA_Aegis_45Rnd_545x39_7N44_T_White {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - White Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_White_t2";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_Blue_t4: FA_Aegis_45Rnd_545x39_7N44_T_Blue {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - Blue Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_Blue_t4";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_Blue_t3: FA_Aegis_45Rnd_545x39_7N44_T_Blue {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - Blue Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_Blue_t3";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_Blue_t2: FA_Aegis_45Rnd_545x39_7N44_T_Blue {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - Blue Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_Blue_t2";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_Orange_t4: FA_Aegis_45Rnd_545x39_7N44_T_Orange {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - Orange Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_Orange_t4";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_Orange_t3: FA_Aegis_45Rnd_545x39_7N44_T_Orange {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - Orange Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_Orange_t3";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_Orange_t2: FA_Aegis_45Rnd_545x39_7N44_T_Orange {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - Orange Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_Orange_t2";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_IR_t4: FA_Aegis_45Rnd_545x39_7N44_T_IR {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - IR Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_IR_t4";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_IR_t3: FA_Aegis_45Rnd_545x39_7N44_T_IR {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - IR Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_IR_t3";
     };
     class FA_Aegis_45Rnd_545x39_7N44_T_IR_t2: FA_Aegis_45Rnd_545x39_7N44_T_IR {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N44 - IR Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_IR_t2";
     };
     class FA_Aegis_60Rnd_545x39_7N44_t4: FA_Aegis_60Rnd_545x39_7N44 {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - T4";
         ammo = "FA_o_545x39_7N44_HP_t4";
     };
     class FA_Aegis_60Rnd_545x39_7N44_t3: FA_Aegis_60Rnd_545x39_7N44 {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - T3";
         ammo = "FA_o_545x39_7N44_HP_t3";
     };
     class FA_Aegis_60Rnd_545x39_7N44_t2: FA_Aegis_60Rnd_545x39_7N44 {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - T2";
         ammo = "FA_o_545x39_7N44_HP_t2";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_Red_t4: FA_Aegis_60Rnd_545x39_7N44_T_Red {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - Red Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_Red_t4";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_Red_t3: FA_Aegis_60Rnd_545x39_7N44_T_Red {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - Red Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_Red_t3";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_Red_t2: FA_Aegis_60Rnd_545x39_7N44_T_Red {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - Red Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_Red_t2";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_Yellow_t4: FA_Aegis_60Rnd_545x39_7N44_T_Yellow {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - Yellow Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_Yellow_t4";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_Yellow_t3: FA_Aegis_60Rnd_545x39_7N44_T_Yellow {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - Yellow Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_Yellow_t3";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_Yellow_t2: FA_Aegis_60Rnd_545x39_7N44_T_Yellow {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - Yellow Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_Yellow_t2";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_Green_t4: FA_Aegis_60Rnd_545x39_7N44_T_Green {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - Green Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_Green_t4";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_Green_t3: FA_Aegis_60Rnd_545x39_7N44_T_Green {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - Green Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_Green_t3";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_Green_t2: FA_Aegis_60Rnd_545x39_7N44_T_Green {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - Green Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_Green_t2";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_White_t4: FA_Aegis_60Rnd_545x39_7N44_T_White {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - White Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_White_t4";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_White_t3: FA_Aegis_60Rnd_545x39_7N44_T_White {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - White Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_White_t3";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_White_t2: FA_Aegis_60Rnd_545x39_7N44_T_White {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - White Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_White_t2";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_Blue_t4: FA_Aegis_60Rnd_545x39_7N44_T_Blue {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - Blue Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_Blue_t4";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_Blue_t3: FA_Aegis_60Rnd_545x39_7N44_T_Blue {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - Blue Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_Blue_t3";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_Blue_t2: FA_Aegis_60Rnd_545x39_7N44_T_Blue {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - Blue Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_Blue_t2";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_Orange_t4: FA_Aegis_60Rnd_545x39_7N44_T_Orange {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - Orange Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_Orange_t4";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_Orange_t3: FA_Aegis_60Rnd_545x39_7N44_T_Orange {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - Orange Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_Orange_t3";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_Orange_t2: FA_Aegis_60Rnd_545x39_7N44_T_Orange {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - Orange Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_Orange_t2";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_IR_t4: FA_Aegis_60Rnd_545x39_7N44_T_IR {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - IR Tracer, T4";
         ammo = "FA_o_545x39_7N44_HP_T_IR_t4";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_IR_t3: FA_Aegis_60Rnd_545x39_7N44_T_IR {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - IR Tracer, T3";
         ammo = "FA_o_545x39_7N44_HP_T_IR_t3";
     };
     class FA_Aegis_60Rnd_545x39_7N44_T_IR_t2: FA_Aegis_60Rnd_545x39_7N44_T_IR {
+        displayName = "[Ghost] 60Rnd 5.45mm 7N44 - IR Tracer, T2";
         ammo = "FA_o_545x39_7N44_HP_T_IR_t2";
     };
     class FA_Aegis_30Rnd_545x39_7N48_t4: FA_Aegis_30Rnd_545x39_7N48 {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - T4";
         ammo = "FA_o_545x39_7N48_CT_t4";
     };
     class FA_Aegis_30Rnd_545x39_7N48_t3: FA_Aegis_30Rnd_545x39_7N48 {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - T3";
         ammo = "FA_o_545x39_7N48_CT_t3";
     };
     class FA_Aegis_30Rnd_545x39_7N48_t2: FA_Aegis_30Rnd_545x39_7N48 {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - T2";
         ammo = "FA_o_545x39_7N48_CT_t2";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_Red_t4: FA_Aegis_30Rnd_545x39_7N48_T_Red {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - Red Tracer, T4";
         ammo = "FA_o_545x39_7N48_CT_T_Red_t4";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_Red_t3: FA_Aegis_30Rnd_545x39_7N48_T_Red {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - Red Tracer, T3";
         ammo = "FA_o_545x39_7N48_CT_T_Red_t3";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_Red_t2: FA_Aegis_30Rnd_545x39_7N48_T_Red {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - Red Tracer, T2";
         ammo = "FA_o_545x39_7N48_CT_T_Red_t2";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_Yellow_t4: FA_Aegis_30Rnd_545x39_7N48_T_Yellow {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - Yellow Tracer, T4";
         ammo = "FA_o_545x39_7N48_CT_T_Yellow_t4";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_Yellow_t3: FA_Aegis_30Rnd_545x39_7N48_T_Yellow {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - Yellow Tracer, T3";
         ammo = "FA_o_545x39_7N48_CT_T_Yellow_t3";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_Yellow_t2: FA_Aegis_30Rnd_545x39_7N48_T_Yellow {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - Yellow Tracer, T2";
         ammo = "FA_o_545x39_7N48_CT_T_Yellow_t2";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_Green_t4: FA_Aegis_30Rnd_545x39_7N48_T_Green {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - Green Tracer, T4";
         ammo = "FA_o_545x39_7N48_CT_T_Green_t4";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_Green_t3: FA_Aegis_30Rnd_545x39_7N48_T_Green {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - Green Tracer, T3";
         ammo = "FA_o_545x39_7N48_CT_T_Green_t3";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_Green_t2: FA_Aegis_30Rnd_545x39_7N48_T_Green {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - Green Tracer, T2";
         ammo = "FA_o_545x39_7N48_CT_T_Green_t2";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_White_t4: FA_Aegis_30Rnd_545x39_7N48_T_White {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - White Tracer, T4";
         ammo = "FA_o_545x39_7N48_CT_T_White_t4";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_White_t3: FA_Aegis_30Rnd_545x39_7N48_T_White {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - White Tracer, T3";
         ammo = "FA_o_545x39_7N48_CT_T_White_t3";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_White_t2: FA_Aegis_30Rnd_545x39_7N48_T_White {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - White Tracer, T2";
         ammo = "FA_o_545x39_7N48_CT_T_White_t2";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_Blue_t4: FA_Aegis_30Rnd_545x39_7N48_T_Blue {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - Blue Tracer, T4";
         ammo = "FA_o_545x39_7N48_CT_T_Blue_t4";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_Blue_t3: FA_Aegis_30Rnd_545x39_7N48_T_Blue {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - Blue Tracer, T3";
         ammo = "FA_o_545x39_7N48_CT_T_Blue_t3";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_Blue_t2: FA_Aegis_30Rnd_545x39_7N48_T_Blue {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - Blue Tracer, T2";
         ammo = "FA_o_545x39_7N48_CT_T_Blue_t2";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_Orange_t4: FA_Aegis_30Rnd_545x39_7N48_T_Orange {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - Orange Tracer, T4";
         ammo = "FA_o_545x39_7N48_CT_T_Orange_t4";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_Orange_t3: FA_Aegis_30Rnd_545x39_7N48_T_Orange {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - Orange Tracer, T3";
         ammo = "FA_o_545x39_7N48_CT_T_Orange_t3";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_Orange_t2: FA_Aegis_30Rnd_545x39_7N48_T_Orange {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - Orange Tracer, T2";
         ammo = "FA_o_545x39_7N48_CT_T_Orange_t2";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_IR_t4: FA_Aegis_30Rnd_545x39_7N48_T_IR {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - IR Tracer, T4";
         ammo = "FA_o_545x39_7N48_CT_T_IR_t4";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_IR_t3: FA_Aegis_30Rnd_545x39_7N48_T_IR {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - IR Tracer, T3";
         ammo = "FA_o_545x39_7N48_CT_T_IR_t3";
     };
     class FA_Aegis_30Rnd_545x39_7N48_T_IR_t2: FA_Aegis_30Rnd_545x39_7N48_T_IR {
+        displayName = "[Ghost] 30Rnd 5.45mm 7N48 - IR Tracer, T2";
         ammo = "FA_o_545x39_7N48_CT_T_IR_t2";
     };
     class FA_Aegis_45Rnd_545x39_7N48_t4: FA_Aegis_45Rnd_545x39_7N48 {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - T4";
         ammo = "FA_o_545x39_7N48_CT_t4";
     };
     class FA_Aegis_45Rnd_545x39_7N48_t3: FA_Aegis_45Rnd_545x39_7N48 {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - T3";
         ammo = "FA_o_545x39_7N48_CT_t3";
     };
     class FA_Aegis_45Rnd_545x39_7N48_t2: FA_Aegis_45Rnd_545x39_7N48 {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - T2";
         ammo = "FA_o_545x39_7N48_CT_t2";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_Red_t4: FA_Aegis_45Rnd_545x39_7N48_T_Red {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - Red Tracer, T4";
         ammo = "FA_o_545x39_7N48_CT_T_Red_t4";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_Red_t3: FA_Aegis_45Rnd_545x39_7N48_T_Red {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - Red Tracer, T3";
         ammo = "FA_o_545x39_7N48_CT_T_Red_t3";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_Red_t2: FA_Aegis_45Rnd_545x39_7N48_T_Red {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - Red Tracer, T2";
         ammo = "FA_o_545x39_7N48_CT_T_Red_t2";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_Yellow_t4: FA_Aegis_45Rnd_545x39_7N48_T_Yellow {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - Yellow Tracer, T4";
         ammo = "FA_o_545x39_7N48_CT_T_Yellow_t4";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_Yellow_t3: FA_Aegis_45Rnd_545x39_7N48_T_Yellow {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - Yellow Tracer, T3";
         ammo = "FA_o_545x39_7N48_CT_T_Yellow_t3";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_Yellow_t2: FA_Aegis_45Rnd_545x39_7N48_T_Yellow {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - Yellow Tracer, T2";
         ammo = "FA_o_545x39_7N48_CT_T_Yellow_t2";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_Green_t4: FA_Aegis_45Rnd_545x39_7N48_T_Green {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - Green Tracer, T4";
         ammo = "FA_o_545x39_7N48_CT_T_Green_t4";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_Green_t3: FA_Aegis_45Rnd_545x39_7N48_T_Green {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - Green Tracer, T3";
         ammo = "FA_o_545x39_7N48_CT_T_Green_t3";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_Green_t2: FA_Aegis_45Rnd_545x39_7N48_T_Green {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - Green Tracer, T2";
         ammo = "FA_o_545x39_7N48_CT_T_Green_t2";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_White_t4: FA_Aegis_45Rnd_545x39_7N48_T_White {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - White Tracer, T4";
         ammo = "FA_o_545x39_7N48_CT_T_White_t4";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_White_t3: FA_Aegis_45Rnd_545x39_7N48_T_White {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - White Tracer, T3";
         ammo = "FA_o_545x39_7N48_CT_T_White_t3";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_White_t2: FA_Aegis_45Rnd_545x39_7N48_T_White {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - White Tracer, T2";
         ammo = "FA_o_545x39_7N48_CT_T_White_t2";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_Blue_t4: FA_Aegis_45Rnd_545x39_7N48_T_Blue {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - Blue Tracer, T4";
         ammo = "FA_o_545x39_7N48_CT_T_Blue_t4";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_Blue_t3: FA_Aegis_45Rnd_545x39_7N48_T_Blue {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - Blue Tracer, T3";
         ammo = "FA_o_545x39_7N48_CT_T_Blue_t3";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_Blue_t2: FA_Aegis_45Rnd_545x39_7N48_T_Blue {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - Blue Tracer, T2";
         ammo = "FA_o_545x39_7N48_CT_T_Blue_t2";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_Orange_t4: FA_Aegis_45Rnd_545x39_7N48_T_Orange {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - Orange Tracer, T4";
         ammo = "FA_o_545x39_7N48_CT_T_Orange_t4";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_Orange_t3: FA_Aegis_45Rnd_545x39_7N48_T_Orange {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - Orange Tracer, T3";
         ammo = "FA_o_545x39_7N48_CT_T_Orange_t3";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_Orange_t2: FA_Aegis_45Rnd_545x39_7N48_T_Orange {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - Orange Tracer, T2";
         ammo = "FA_o_545x39_7N48_CT_T_Orange_t2";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_IR_t4: FA_Aegis_45Rnd_545x39_7N48_T_IR {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - IR Tracer, T4";
         ammo = "FA_o_545x39_7N48_CT_T_IR_t4";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_IR_t3: FA_Aegis_45Rnd_545x39_7N48_T_IR {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - IR Tracer, T3";
         ammo = "FA_o_545x39_7N48_CT_T_IR_t3";
     };
     class FA_Aegis_45Rnd_545x39_7N48_T_IR_t2: FA_Aegis_45Rnd_545x39_7N48_T_IR {
+        displayName = "[Ghost] 45Rnd 5.45mm 7N48 - IR Tracer, T2";
         ammo = "FA_o_545x39_7N48_CT_T_IR_t2";
     };
     class FA_Aegis_30Rnd_545x39_7U5_t4: FA_Aegis_30Rnd_545x39_7U5 {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - T4";
         ammo = "FA_o_545x39_7U5_SubAP_t4";
     };
     class FA_Aegis_30Rnd_545x39_7U5_t3: FA_Aegis_30Rnd_545x39_7U5 {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - T3";
         ammo = "FA_o_545x39_7U5_SubAP_t3";
     };
     class FA_Aegis_30Rnd_545x39_7U5_t2: FA_Aegis_30Rnd_545x39_7U5 {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - T2";
         ammo = "FA_o_545x39_7U5_SubAP_t2";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_Red_t4: FA_Aegis_30Rnd_545x39_7U5_T_Red {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - Red Tracer, T4";
         ammo = "FA_o_545x39_7U5_SubAP_T_Red_t4";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_Red_t3: FA_Aegis_30Rnd_545x39_7U5_T_Red {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - Red Tracer, T3";
         ammo = "FA_o_545x39_7U5_SubAP_T_Red_t3";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_Red_t2: FA_Aegis_30Rnd_545x39_7U5_T_Red {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - Red Tracer, T2";
         ammo = "FA_o_545x39_7U5_SubAP_T_Red_t2";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_Yellow_t4: FA_Aegis_30Rnd_545x39_7U5_T_Yellow {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - Yellow Tracer, T4";
         ammo = "FA_o_545x39_7U5_SubAP_T_Yellow_t4";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_Yellow_t3: FA_Aegis_30Rnd_545x39_7U5_T_Yellow {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - Yellow Tracer, T3";
         ammo = "FA_o_545x39_7U5_SubAP_T_Yellow_t3";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_Yellow_t2: FA_Aegis_30Rnd_545x39_7U5_T_Yellow {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - Yellow Tracer, T2";
         ammo = "FA_o_545x39_7U5_SubAP_T_Yellow_t2";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_Green_t4: FA_Aegis_30Rnd_545x39_7U5_T_Green {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - Green Tracer, T4";
         ammo = "FA_o_545x39_7U5_SubAP_T_Green_t4";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_Green_t3: FA_Aegis_30Rnd_545x39_7U5_T_Green {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - Green Tracer, T3";
         ammo = "FA_o_545x39_7U5_SubAP_T_Green_t3";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_Green_t2: FA_Aegis_30Rnd_545x39_7U5_T_Green {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - Green Tracer, T2";
         ammo = "FA_o_545x39_7U5_SubAP_T_Green_t2";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_White_t4: FA_Aegis_30Rnd_545x39_7U5_T_White {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - White Tracer, T4";
         ammo = "FA_o_545x39_7U5_SubAP_T_White_t4";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_White_t3: FA_Aegis_30Rnd_545x39_7U5_T_White {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - White Tracer, T3";
         ammo = "FA_o_545x39_7U5_SubAP_T_White_t3";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_White_t2: FA_Aegis_30Rnd_545x39_7U5_T_White {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - White Tracer, T2";
         ammo = "FA_o_545x39_7U5_SubAP_T_White_t2";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_Blue_t4: FA_Aegis_30Rnd_545x39_7U5_T_Blue {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - Blue Tracer, T4";
         ammo = "FA_o_545x39_7U5_SubAP_T_Blue_t4";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_Blue_t3: FA_Aegis_30Rnd_545x39_7U5_T_Blue {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - Blue Tracer, T3";
         ammo = "FA_o_545x39_7U5_SubAP_T_Blue_t3";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_Blue_t2: FA_Aegis_30Rnd_545x39_7U5_T_Blue {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - Blue Tracer, T2";
         ammo = "FA_o_545x39_7U5_SubAP_T_Blue_t2";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_Orange_t4: FA_Aegis_30Rnd_545x39_7U5_T_Orange {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - Orange Tracer, T4";
         ammo = "FA_o_545x39_7U5_SubAP_T_Orange_t4";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_Orange_t3: FA_Aegis_30Rnd_545x39_7U5_T_Orange {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - Orange Tracer, T3";
         ammo = "FA_o_545x39_7U5_SubAP_T_Orange_t3";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_Orange_t2: FA_Aegis_30Rnd_545x39_7U5_T_Orange {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - Orange Tracer, T2";
         ammo = "FA_o_545x39_7U5_SubAP_T_Orange_t2";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_IR_t4: FA_Aegis_30Rnd_545x39_7U5_T_IR {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - IR Tracer, T4";
         ammo = "FA_o_545x39_7U5_SubAP_T_IR_t4";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_IR_t3: FA_Aegis_30Rnd_545x39_7U5_T_IR {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - IR Tracer, T3";
         ammo = "FA_o_545x39_7U5_SubAP_T_IR_t3";
     };
     class FA_Aegis_30Rnd_545x39_7U5_T_IR_t2: FA_Aegis_30Rnd_545x39_7U5_T_IR {
+        displayName = "[Ghost] 30Rnd 5.45mm 7U5 - IR Tracer, T2";
         ammo = "FA_o_545x39_7U5_SubAP_T_IR_t2";
-    };
-    class FA_b_40Rnd_9x21_Gepard_Mk424_AP_t4: FA_b_40Rnd_9x21_Gepard_Mk424_AP {
-        ammo = "FA_b_9x21_Mk424_AP_t4";
-    };
-    class FA_b_40Rnd_9x21_Gepard_Mk424_AP_t3: FA_b_40Rnd_9x21_Gepard_Mk424_AP {
-        ammo = "FA_b_9x21_Mk424_AP_t3";
-    };
-    class FA_b_40Rnd_9x21_Gepard_Mk424_AP_t2: FA_b_40Rnd_9x21_Gepard_Mk424_AP {
-        ammo = "FA_b_9x21_Mk424_AP_t2";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_t4: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB {
-        ammo = "FA_b_65_Mk367_PAB_t4";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_t3: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB {
-        ammo = "FA_b_65_Mk367_PAB_t3";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_t2: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB {
-        ammo = "FA_b_65_Mk367_PAB_t2";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red_t4: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red {
-        ammo = "FA_b_65_Mk367_PAB_T_Red_t4";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red_t3: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red {
-        ammo = "FA_b_65_Mk367_PAB_T_Red_t3";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red_t2: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red {
-        ammo = "FA_b_65_Mk367_PAB_T_Red_t2";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow_t4: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow {
-        ammo = "FA_b_65_Mk367_PAB_T_Yellow_t4";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow_t3: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow {
-        ammo = "FA_b_65_Mk367_PAB_T_Yellow_t3";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow_t2: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow {
-        ammo = "FA_b_65_Mk367_PAB_T_Yellow_t2";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green_t4: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green {
-        ammo = "FA_b_65_Mk367_PAB_T_Green_t4";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green_t3: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green {
-        ammo = "FA_b_65_Mk367_PAB_T_Green_t3";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green_t2: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green {
-        ammo = "FA_b_65_Mk367_PAB_T_Green_t2";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White_t4: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White {
-        ammo = "FA_b_65_Mk367_PAB_T_White_t4";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White_t3: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White {
-        ammo = "FA_b_65_Mk367_PAB_T_White_t3";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White_t2: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White {
-        ammo = "FA_b_65_Mk367_PAB_T_White_t2";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue_t4: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue {
-        ammo = "FA_b_65_Mk367_PAB_T_Blue_t4";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue_t3: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue {
-        ammo = "FA_b_65_Mk367_PAB_T_Blue_t3";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue_t2: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue {
-        ammo = "FA_b_65_Mk367_PAB_T_Blue_t2";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange_t4: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange {
-        ammo = "FA_b_65_Mk367_PAB_T_Orange_t4";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange_t3: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange {
-        ammo = "FA_b_65_Mk367_PAB_T_Orange_t3";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange_t2: FA_EF_30Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange {
-        ammo = "FA_b_65_Mk367_PAB_T_Orange_t2";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_t4: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB {
-        ammo = "FA_b_65_Mk367_PAB_t4";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_t3: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB {
-        ammo = "FA_b_65_Mk367_PAB_t3";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_t2: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB {
-        ammo = "FA_b_65_Mk367_PAB_t2";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red_t4: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red {
-        ammo = "FA_b_65_Mk367_PAB_T_Red_t4";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red_t3: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red {
-        ammo = "FA_b_65_Mk367_PAB_T_Red_t3";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red_t2: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Red {
-        ammo = "FA_b_65_Mk367_PAB_T_Red_t2";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow_t4: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow {
-        ammo = "FA_b_65_Mk367_PAB_T_Yellow_t4";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow_t3: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow {
-        ammo = "FA_b_65_Mk367_PAB_T_Yellow_t3";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow_t2: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Yellow {
-        ammo = "FA_b_65_Mk367_PAB_T_Yellow_t2";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green_t4: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green {
-        ammo = "FA_b_65_Mk367_PAB_T_Green_t4";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green_t3: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green {
-        ammo = "FA_b_65_Mk367_PAB_T_Green_t3";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green_t2: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Green {
-        ammo = "FA_b_65_Mk367_PAB_T_Green_t2";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White_t4: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White {
-        ammo = "FA_b_65_Mk367_PAB_T_White_t4";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White_t3: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White {
-        ammo = "FA_b_65_Mk367_PAB_T_White_t3";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White_t2: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_White {
-        ammo = "FA_b_65_Mk367_PAB_T_White_t2";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue_t4: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue {
-        ammo = "FA_b_65_Mk367_PAB_T_Blue_t4";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue_t3: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue {
-        ammo = "FA_b_65_Mk367_PAB_T_Blue_t3";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue_t2: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Blue {
-        ammo = "FA_b_65_Mk367_PAB_T_Blue_t2";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange_t4: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange {
-        ammo = "FA_b_65_Mk367_PAB_T_Orange_t4";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange_t3: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange {
-        ammo = "FA_b_65_Mk367_PAB_T_Orange_t3";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange_t2: FA_EF_100Rnd_65x39_caseless_coy_mag_Mk367_PAB_T_Orange {
-        ammo = "FA_b_65_Mk367_PAB_T_Orange_t2";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_t4: FA_EF_30Rnd_65x39_caseless_coy_mag {
-        ammo = "FA_b_65_EPR_t4";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_t3: FA_EF_30Rnd_65x39_caseless_coy_mag {
-        ammo = "FA_b_65_EPR_t3";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_t2: FA_EF_30Rnd_65x39_caseless_coy_mag {
-        ammo = "FA_b_65_EPR_t2";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Red_t4: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Red {
-        ammo = "FA_b_65_EPR_T_Red_t4";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Red_t3: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Red {
-        ammo = "FA_b_65_EPR_T_Red_t3";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Red_t2: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Red {
-        ammo = "FA_b_65_EPR_T_Red_t2";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Yellow_t4: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Yellow {
-        ammo = "FA_b_65_EPR_T_Yellow_t4";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Yellow_t3: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Yellow {
-        ammo = "FA_b_65_EPR_T_Yellow_t3";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Yellow_t2: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Yellow {
-        ammo = "FA_b_65_EPR_T_Yellow_t2";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Green_t4: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Green {
-        ammo = "FA_b_65_EPR_T_Green_t4";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Green_t3: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Green {
-        ammo = "FA_b_65_EPR_T_Green_t3";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Green_t2: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Green {
-        ammo = "FA_b_65_EPR_T_Green_t2";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_White_t4: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_White {
-        ammo = "FA_b_65_EPR_T_White_t4";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_White_t3: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_White {
-        ammo = "FA_b_65_EPR_T_White_t3";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_White_t2: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_White {
-        ammo = "FA_b_65_EPR_T_White_t2";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Blue_t4: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Blue {
-        ammo = "FA_b_65_EPR_T_Blue_t4";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Blue_t3: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Blue {
-        ammo = "FA_b_65_EPR_T_Blue_t3";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Blue_t2: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Blue {
-        ammo = "FA_b_65_EPR_T_Blue_t2";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Orange_t4: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Orange {
-        ammo = "FA_b_65_EPR_T_Orange_t4";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Orange_t3: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Orange {
-        ammo = "FA_b_65_EPR_T_Orange_t3";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Orange_t2: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_Orange {
-        ammo = "FA_b_65_EPR_T_Orange_t2";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_IR_t4: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_IR {
-        ammo = "FA_b_65_EPR_T_IR_t4";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_IR_t3: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_IR {
-        ammo = "FA_b_65_EPR_T_IR_t3";
-    };
-    class FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_IR_t2: FA_EF_30Rnd_65x39_caseless_coy_mag_Tracer_T_IR {
-        ammo = "FA_b_65_EPR_T_IR_t2";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Red_t4: FA_EF_100Rnd_65x39_caseless_coy_mag_T_Red {
-        ammo = "FA_b_65_EPR_T_Red_t4";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Red_t3: FA_EF_100Rnd_65x39_caseless_coy_mag_T_Red {
-        ammo = "FA_b_65_EPR_T_Red_t3";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Red_t2: FA_EF_100Rnd_65x39_caseless_coy_mag_T_Red {
-        ammo = "FA_b_65_EPR_T_Red_t2";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Yellow_t4: FA_EF_100Rnd_65x39_caseless_coy_mag_T_Yellow {
-        ammo = "FA_b_65_EPR_T_Yellow_t4";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Yellow_t3: FA_EF_100Rnd_65x39_caseless_coy_mag_T_Yellow {
-        ammo = "FA_b_65_EPR_T_Yellow_t3";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Yellow_t2: FA_EF_100Rnd_65x39_caseless_coy_mag_T_Yellow {
-        ammo = "FA_b_65_EPR_T_Yellow_t2";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Green_t4: FA_EF_100Rnd_65x39_caseless_coy_mag_T_Green {
-        ammo = "FA_b_65_EPR_T_Green_t4";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Green_t3: FA_EF_100Rnd_65x39_caseless_coy_mag_T_Green {
-        ammo = "FA_b_65_EPR_T_Green_t3";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Green_t2: FA_EF_100Rnd_65x39_caseless_coy_mag_T_Green {
-        ammo = "FA_b_65_EPR_T_Green_t2";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_White_t4: FA_EF_100Rnd_65x39_caseless_coy_mag_T_White {
-        ammo = "FA_b_65_EPR_T_White_t4";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_White_t3: FA_EF_100Rnd_65x39_caseless_coy_mag_T_White {
-        ammo = "FA_b_65_EPR_T_White_t3";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_White_t2: FA_EF_100Rnd_65x39_caseless_coy_mag_T_White {
-        ammo = "FA_b_65_EPR_T_White_t2";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Blue_t4: FA_EF_100Rnd_65x39_caseless_coy_mag_T_Blue {
-        ammo = "FA_b_65_EPR_T_Blue_t4";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Blue_t3: FA_EF_100Rnd_65x39_caseless_coy_mag_T_Blue {
-        ammo = "FA_b_65_EPR_T_Blue_t3";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Blue_t2: FA_EF_100Rnd_65x39_caseless_coy_mag_T_Blue {
-        ammo = "FA_b_65_EPR_T_Blue_t2";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Orange_t4: FA_EF_100Rnd_65x39_caseless_coy_mag_T_Orange {
-        ammo = "FA_b_65_EPR_T_Orange_t4";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Orange_t3: FA_EF_100Rnd_65x39_caseless_coy_mag_T_Orange {
-        ammo = "FA_b_65_EPR_T_Orange_t3";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_Orange_t2: FA_EF_100Rnd_65x39_caseless_coy_mag_T_Orange {
-        ammo = "FA_b_65_EPR_T_Orange_t2";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_IR_t4: FA_EF_100Rnd_65x39_caseless_coy_mag_T_IR {
-        ammo = "FA_b_65_EPR_T_IR_t4";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_IR_t3: FA_EF_100Rnd_65x39_caseless_coy_mag_T_IR {
-        ammo = "FA_b_65_EPR_T_IR_t3";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_T_IR_t2: FA_EF_100Rnd_65x39_caseless_coy_mag_T_IR {
-        ammo = "FA_b_65_EPR_T_IR_t2";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_t4: FA_EF_100Rnd_65x39_caseless_coy_mag {
-        ammo = "FA_b_65_EPR_t4";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_t3: FA_EF_100Rnd_65x39_caseless_coy_mag {
-        ammo = "FA_b_65_EPR_t3";
-    };
-    class FA_EF_100Rnd_65x39_caseless_coy_mag_t2: FA_EF_100Rnd_65x39_caseless_coy_mag {
-        ammo = "FA_b_65_EPR_t2";
-    };
-    class FA_rf_20Rnd_127x55_7N52_t4: FA_rf_20Rnd_127x55_7N52 {
-        ammo = "FA_rf_ammo_127x55_7N52_t4";
-    };
-    class FA_rf_20Rnd_127x55_7N52_t3: FA_rf_20Rnd_127x55_7N52 {
-        ammo = "FA_rf_ammo_127x55_7N52_t3";
-    };
-    class FA_rf_20Rnd_127x55_7N52_t2: FA_rf_20Rnd_127x55_7N52 {
-        ammo = "FA_rf_ammo_127x55_7N52_t2";
-    };
-    class FA_rf_20Rnd_127x55_7U13_t4: FA_rf_20Rnd_127x55_7U13 {
-        ammo = "FA_rf_ammo_127x55_7U13_t4";
-    };
-    class FA_rf_20Rnd_127x55_7U13_t3: FA_rf_20Rnd_127x55_7U13 {
-        ammo = "FA_rf_ammo_127x55_7U13_t3";
-    };
-    class FA_rf_20Rnd_127x55_7U13_t2: FA_rf_20Rnd_127x55_7U13 {
-        ammo = "FA_rf_ammo_127x55_7U13_t2";
-    };
-    class FA_rf_20Rnd_127x55_7U14_t4: FA_rf_20Rnd_127x55_7U14 {
-        ammo = "FA_rf_ammo_127x55_7U14_t4";
-    };
-    class FA_rf_20Rnd_127x55_7U14_t3: FA_rf_20Rnd_127x55_7U14 {
-        ammo = "FA_rf_ammo_127x55_7U14_t3";
-    };
-    class FA_rf_20Rnd_127x55_7U14_t2: FA_rf_20Rnd_127x55_7U14 {
-        ammo = "FA_rf_ammo_127x55_7U14_t2";
-    };
-    class FA_rf_10Rnd_127x55_7N52_t4: FA_rf_10Rnd_127x55_7N52 {
-        ammo = "FA_rf_ammo_127x55_7N52_t4";
-    };
-    class FA_rf_10Rnd_127x55_7N52_t3: FA_rf_10Rnd_127x55_7N52 {
-        ammo = "FA_rf_ammo_127x55_7N52_t3";
-    };
-    class FA_rf_10Rnd_127x55_7N52_t2: FA_rf_10Rnd_127x55_7N52 {
-        ammo = "FA_rf_ammo_127x55_7N52_t2";
-    };
-    class FA_rf_10Rnd_127x55_7U13_t4: FA_rf_10Rnd_127x55_7U13 {
-        ammo = "FA_rf_ammo_127x55_7U13_t4";
-    };
-    class FA_rf_10Rnd_127x55_7U13_t3: FA_rf_10Rnd_127x55_7U13 {
-        ammo = "FA_rf_ammo_127x55_7U13_t3";
-    };
-    class FA_rf_10Rnd_127x55_7U13_t2: FA_rf_10Rnd_127x55_7U13 {
-        ammo = "FA_rf_ammo_127x55_7U13_t2";
-    };
-    class FA_rf_10Rnd_127x55_7U14_t4: FA_rf_10Rnd_127x55_7U14 {
-        ammo = "FA_rf_ammo_127x55_7U14_t4";
-    };
-    class FA_rf_10Rnd_127x55_7U14_t3: FA_rf_10Rnd_127x55_7U14 {
-        ammo = "FA_rf_ammo_127x55_7U14_t3";
-    };
-    class FA_rf_10Rnd_127x55_7U14_t2: FA_rf_10Rnd_127x55_7U14 {
-        ammo = "FA_rf_ammo_127x55_7U14_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_t4: FA_30Rnd_556x45_AP_Stanag_RF {
-        ammo = "FA_b_556_Mk327_HV_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_t3: FA_30Rnd_556x45_AP_Stanag_RF {
-        ammo = "FA_b_556_Mk327_HV_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_t2: FA_30Rnd_556x45_AP_Stanag_RF {
-        ammo = "FA_b_556_Mk327_HV_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Red_t4: FA_30Rnd_556x45_AP_Stanag_RF_T_Red {
-        ammo = "FA_b_556_Mk327_HV_T_Red_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Red_t3: FA_30Rnd_556x45_AP_Stanag_RF_T_Red {
-        ammo = "FA_b_556_Mk327_HV_T_Red_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Red_t2: FA_30Rnd_556x45_AP_Stanag_RF_T_Red {
-        ammo = "FA_b_556_Mk327_HV_T_Red_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Yellow_t4: FA_30Rnd_556x45_AP_Stanag_RF_T_Yellow {
-        ammo = "FA_b_556_Mk327_HV_T_Yellow_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Yellow_t3: FA_30Rnd_556x45_AP_Stanag_RF_T_Yellow {
-        ammo = "FA_b_556_Mk327_HV_T_Yellow_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Yellow_t2: FA_30Rnd_556x45_AP_Stanag_RF_T_Yellow {
-        ammo = "FA_b_556_Mk327_HV_T_Yellow_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Green_t4: FA_30Rnd_556x45_AP_Stanag_RF_T_Green {
-        ammo = "FA_b_556_Mk327_HV_T_Green_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Green_t3: FA_30Rnd_556x45_AP_Stanag_RF_T_Green {
-        ammo = "FA_b_556_Mk327_HV_T_Green_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Green_t2: FA_30Rnd_556x45_AP_Stanag_RF_T_Green {
-        ammo = "FA_b_556_Mk327_HV_T_Green_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_White_t4: FA_30Rnd_556x45_AP_Stanag_RF_T_White {
-        ammo = "FA_b_556_Mk327_HV_T_White_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_White_t3: FA_30Rnd_556x45_AP_Stanag_RF_T_White {
-        ammo = "FA_b_556_Mk327_HV_T_White_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_White_t2: FA_30Rnd_556x45_AP_Stanag_RF_T_White {
-        ammo = "FA_b_556_Mk327_HV_T_White_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Blue_t4: FA_30Rnd_556x45_AP_Stanag_RF_T_Blue {
-        ammo = "FA_b_556_Mk327_HV_T_Blue_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Blue_t3: FA_30Rnd_556x45_AP_Stanag_RF_T_Blue {
-        ammo = "FA_b_556_Mk327_HV_T_Blue_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Blue_t2: FA_30Rnd_556x45_AP_Stanag_RF_T_Blue {
-        ammo = "FA_b_556_Mk327_HV_T_Blue_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Orange_t4: FA_30Rnd_556x45_AP_Stanag_RF_T_Orange {
-        ammo = "FA_b_556_Mk327_HV_T_Orange_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Orange_t3: FA_30Rnd_556x45_AP_Stanag_RF_T_Orange {
-        ammo = "FA_b_556_Mk327_HV_T_Orange_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_Orange_t2: FA_30Rnd_556x45_AP_Stanag_RF_T_Orange {
-        ammo = "FA_b_556_Mk327_HV_T_Orange_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_IR_t4: FA_30Rnd_556x45_AP_Stanag_RF_T_IR {
-        ammo = "FA_b_556_Mk327_HV_T_IR_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_IR_t3: FA_30Rnd_556x45_AP_Stanag_RF_T_IR {
-        ammo = "FA_b_556_Mk327_HV_T_IR_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_T_IR_t2: FA_30Rnd_556x45_AP_Stanag_RF_T_IR {
-        ammo = "FA_b_556_Mk327_HV_T_IR_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_t4: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP {
-        ammo = "FA_b_556_Mk332_AP_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_t3: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP {
-        ammo = "FA_b_556_Mk332_AP_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_t2: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP {
-        ammo = "FA_b_556_Mk332_AP_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Red_t4: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Red {
-        ammo = "FA_b_556_Mk332_AP_T_Red_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Red_t3: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Red {
-        ammo = "FA_b_556_Mk332_AP_T_Red_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Red_t2: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Red {
-        ammo = "FA_b_556_Mk332_AP_T_Red_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Yellow_t4: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Yellow {
-        ammo = "FA_b_556_Mk332_AP_T_Yellow_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Yellow_t3: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Yellow {
-        ammo = "FA_b_556_Mk332_AP_T_Yellow_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Yellow_t2: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Yellow {
-        ammo = "FA_b_556_Mk332_AP_T_Yellow_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Green_t4: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Green {
-        ammo = "FA_b_556_Mk332_AP_T_Green_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Green_t3: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Green {
-        ammo = "FA_b_556_Mk332_AP_T_Green_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Green_t2: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Green {
-        ammo = "FA_b_556_Mk332_AP_T_Green_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_White_t4: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_White {
-        ammo = "FA_b_556_Mk332_AP_T_White_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_White_t3: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_White {
-        ammo = "FA_b_556_Mk332_AP_T_White_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_White_t2: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_White {
-        ammo = "FA_b_556_Mk332_AP_T_White_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Blue_t4: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Blue {
-        ammo = "FA_b_556_Mk332_AP_T_Blue_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Blue_t3: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Blue {
-        ammo = "FA_b_556_Mk332_AP_T_Blue_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Blue_t2: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Blue {
-        ammo = "FA_b_556_Mk332_AP_T_Blue_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Orange_t4: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Orange {
-        ammo = "FA_b_556_Mk332_AP_T_Orange_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Orange_t3: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Orange {
-        ammo = "FA_b_556_Mk332_AP_T_Orange_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Orange_t2: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_Orange {
-        ammo = "FA_b_556_Mk332_AP_T_Orange_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_IR_t4: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_IR {
-        ammo = "FA_b_556_Mk332_AP_T_IR_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_IR_t3: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_IR {
-        ammo = "FA_b_556_Mk332_AP_T_IR_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_IR_t2: FA_30Rnd_556x45_AP_Stanag_RF_Mk332_AP_T_IR {
-        ammo = "FA_b_556_Mk332_AP_T_IR_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_t4: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP {
-        ammo = "FA_b_556_XM891_CTEP_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_t3: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP {
-        ammo = "FA_b_556_XM891_CTEP_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_t2: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP {
-        ammo = "FA_b_556_XM891_CTEP_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Red_t4: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Red {
-        ammo = "FA_b_556_XM891_CTEP_T_Red_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Red_t3: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Red {
-        ammo = "FA_b_556_XM891_CTEP_T_Red_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Red_t2: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Red {
-        ammo = "FA_b_556_XM891_CTEP_T_Red_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Yellow_t4: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Yellow {
-        ammo = "FA_b_556_XM891_CTEP_T_Yellow_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Yellow_t3: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Yellow {
-        ammo = "FA_b_556_XM891_CTEP_T_Yellow_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Yellow_t2: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Yellow {
-        ammo = "FA_b_556_XM891_CTEP_T_Yellow_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Green_t4: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Green {
-        ammo = "FA_b_556_XM891_CTEP_T_Green_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Green_t3: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Green {
-        ammo = "FA_b_556_XM891_CTEP_T_Green_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Green_t2: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Green {
-        ammo = "FA_b_556_XM891_CTEP_T_Green_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_White_t4: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_White {
-        ammo = "FA_b_556_XM891_CTEP_T_White_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_White_t3: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_White {
-        ammo = "FA_b_556_XM891_CTEP_T_White_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_White_t2: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_White {
-        ammo = "FA_b_556_XM891_CTEP_T_White_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Blue_t4: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Blue {
-        ammo = "FA_b_556_XM891_CTEP_T_Blue_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Blue_t3: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Blue {
-        ammo = "FA_b_556_XM891_CTEP_T_Blue_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Blue_t2: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Blue {
-        ammo = "FA_b_556_XM891_CTEP_T_Blue_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Orange_t4: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Orange {
-        ammo = "FA_b_556_XM891_CTEP_T_Orange_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Orange_t3: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Orange {
-        ammo = "FA_b_556_XM891_CTEP_T_Orange_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Orange_t2: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_Orange {
-        ammo = "FA_b_556_XM891_CTEP_T_Orange_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_IR_t4: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_IR {
-        ammo = "FA_b_556_XM891_CTEP_T_IR_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_IR_t3: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_IR {
-        ammo = "FA_b_556_XM891_CTEP_T_IR_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_IR_t2: FA_30Rnd_556x45_AP_Stanag_RF_XM891_CTEP_T_IR {
-        ammo = "FA_b_556_XM891_CTEP_T_IR_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF {
-        ammo = "FA_b_556_Mk327_HV_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF {
-        ammo = "FA_b_556_Mk327_HV_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF {
-        ammo = "FA_b_556_Mk327_HV_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Red_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Red {
-        ammo = "FA_b_556_Mk327_HV_T_Red_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Red_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Red {
-        ammo = "FA_b_556_Mk327_HV_T_Red_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Red_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Red {
-        ammo = "FA_b_556_Mk327_HV_T_Red_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Yellow_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Yellow {
-        ammo = "FA_b_556_Mk327_HV_T_Yellow_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Yellow_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Yellow {
-        ammo = "FA_b_556_Mk327_HV_T_Yellow_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Yellow_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Yellow {
-        ammo = "FA_b_556_Mk327_HV_T_Yellow_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Green_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Green {
-        ammo = "FA_b_556_Mk327_HV_T_Green_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Green_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Green {
-        ammo = "FA_b_556_Mk327_HV_T_Green_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Green_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Green {
-        ammo = "FA_b_556_Mk327_HV_T_Green_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_White_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_White {
-        ammo = "FA_b_556_Mk327_HV_T_White_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_White_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_White {
-        ammo = "FA_b_556_Mk327_HV_T_White_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_White_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_White {
-        ammo = "FA_b_556_Mk327_HV_T_White_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Blue_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Blue {
-        ammo = "FA_b_556_Mk327_HV_T_Blue_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Blue_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Blue {
-        ammo = "FA_b_556_Mk327_HV_T_Blue_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Blue_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Blue {
-        ammo = "FA_b_556_Mk327_HV_T_Blue_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Orange_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Orange {
-        ammo = "FA_b_556_Mk327_HV_T_Orange_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Orange_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Orange {
-        ammo = "FA_b_556_Mk327_HV_T_Orange_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Orange_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_Orange {
-        ammo = "FA_b_556_Mk327_HV_T_Orange_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_IR_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_IR {
-        ammo = "FA_b_556_Mk327_HV_T_IR_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_IR_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_IR {
-        ammo = "FA_b_556_Mk327_HV_T_IR_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_T_IR_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_T_IR {
-        ammo = "FA_b_556_Mk327_HV_T_IR_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP {
-        ammo = "FA_b_556_Mk332_AP_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP {
-        ammo = "FA_b_556_Mk332_AP_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP {
-        ammo = "FA_b_556_Mk332_AP_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Red_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Red {
-        ammo = "FA_b_556_Mk332_AP_T_Red_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Red_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Red {
-        ammo = "FA_b_556_Mk332_AP_T_Red_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Red_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Red {
-        ammo = "FA_b_556_Mk332_AP_T_Red_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Yellow_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Yellow {
-        ammo = "FA_b_556_Mk332_AP_T_Yellow_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Yellow_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Yellow {
-        ammo = "FA_b_556_Mk332_AP_T_Yellow_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Yellow_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Yellow {
-        ammo = "FA_b_556_Mk332_AP_T_Yellow_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Green_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Green {
-        ammo = "FA_b_556_Mk332_AP_T_Green_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Green_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Green {
-        ammo = "FA_b_556_Mk332_AP_T_Green_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Green_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Green {
-        ammo = "FA_b_556_Mk332_AP_T_Green_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_White_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_White {
-        ammo = "FA_b_556_Mk332_AP_T_White_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_White_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_White {
-        ammo = "FA_b_556_Mk332_AP_T_White_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_White_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_White {
-        ammo = "FA_b_556_Mk332_AP_T_White_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Blue_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Blue {
-        ammo = "FA_b_556_Mk332_AP_T_Blue_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Blue_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Blue {
-        ammo = "FA_b_556_Mk332_AP_T_Blue_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Blue_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Blue {
-        ammo = "FA_b_556_Mk332_AP_T_Blue_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Orange_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Orange {
-        ammo = "FA_b_556_Mk332_AP_T_Orange_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Orange_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Orange {
-        ammo = "FA_b_556_Mk332_AP_T_Orange_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Orange_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_Orange {
-        ammo = "FA_b_556_Mk332_AP_T_Orange_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_IR_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_IR {
-        ammo = "FA_b_556_Mk332_AP_T_IR_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_IR_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_IR {
-        ammo = "FA_b_556_Mk332_AP_T_IR_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_IR_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_Mk332_AP_T_IR {
-        ammo = "FA_b_556_Mk332_AP_T_IR_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP {
-        ammo = "FA_b_556_XM891_CTEP_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP {
-        ammo = "FA_b_556_XM891_CTEP_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP {
-        ammo = "FA_b_556_XM891_CTEP_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Red_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Red {
-        ammo = "FA_b_556_XM891_CTEP_T_Red_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Red_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Red {
-        ammo = "FA_b_556_XM891_CTEP_T_Red_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Red_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Red {
-        ammo = "FA_b_556_XM891_CTEP_T_Red_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Yellow_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Yellow {
-        ammo = "FA_b_556_XM891_CTEP_T_Yellow_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Yellow_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Yellow {
-        ammo = "FA_b_556_XM891_CTEP_T_Yellow_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Yellow_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Yellow {
-        ammo = "FA_b_556_XM891_CTEP_T_Yellow_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Green_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Green {
-        ammo = "FA_b_556_XM891_CTEP_T_Green_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Green_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Green {
-        ammo = "FA_b_556_XM891_CTEP_T_Green_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Green_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Green {
-        ammo = "FA_b_556_XM891_CTEP_T_Green_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_White_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_White {
-        ammo = "FA_b_556_XM891_CTEP_T_White_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_White_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_White {
-        ammo = "FA_b_556_XM891_CTEP_T_White_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_White_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_White {
-        ammo = "FA_b_556_XM891_CTEP_T_White_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Blue_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Blue {
-        ammo = "FA_b_556_XM891_CTEP_T_Blue_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Blue_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Blue {
-        ammo = "FA_b_556_XM891_CTEP_T_Blue_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Blue_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Blue {
-        ammo = "FA_b_556_XM891_CTEP_T_Blue_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Orange_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Orange {
-        ammo = "FA_b_556_XM891_CTEP_T_Orange_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Orange_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Orange {
-        ammo = "FA_b_556_XM891_CTEP_T_Orange_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Orange_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_Orange {
-        ammo = "FA_b_556_XM891_CTEP_T_Orange_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_IR_t4: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_IR {
-        ammo = "FA_b_556_XM891_CTEP_T_IR_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_IR_t3: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_IR {
-        ammo = "FA_b_556_XM891_CTEP_T_IR_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_IR_t2: FA_30Rnd_556x45_AP_Stanag_khk_RF_XM891_CTEP_T_IR {
-        ammo = "FA_b_556_XM891_CTEP_T_IR_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF {
-        ammo = "FA_b_556_Mk327_HV_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF {
-        ammo = "FA_b_556_Mk327_HV_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF {
-        ammo = "FA_b_556_Mk327_HV_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Red_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Red {
-        ammo = "FA_b_556_Mk327_HV_T_Red_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Red_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Red {
-        ammo = "FA_b_556_Mk327_HV_T_Red_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Red_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Red {
-        ammo = "FA_b_556_Mk327_HV_T_Red_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Yellow_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Yellow {
-        ammo = "FA_b_556_Mk327_HV_T_Yellow_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Yellow_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Yellow {
-        ammo = "FA_b_556_Mk327_HV_T_Yellow_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Yellow_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Yellow {
-        ammo = "FA_b_556_Mk327_HV_T_Yellow_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Green_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Green {
-        ammo = "FA_b_556_Mk327_HV_T_Green_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Green_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Green {
-        ammo = "FA_b_556_Mk327_HV_T_Green_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Green_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Green {
-        ammo = "FA_b_556_Mk327_HV_T_Green_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_White_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_White {
-        ammo = "FA_b_556_Mk327_HV_T_White_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_White_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_White {
-        ammo = "FA_b_556_Mk327_HV_T_White_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_White_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_White {
-        ammo = "FA_b_556_Mk327_HV_T_White_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Blue_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Blue {
-        ammo = "FA_b_556_Mk327_HV_T_Blue_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Blue_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Blue {
-        ammo = "FA_b_556_Mk327_HV_T_Blue_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Blue_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Blue {
-        ammo = "FA_b_556_Mk327_HV_T_Blue_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Orange_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Orange {
-        ammo = "FA_b_556_Mk327_HV_T_Orange_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Orange_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Orange {
-        ammo = "FA_b_556_Mk327_HV_T_Orange_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Orange_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_Orange {
-        ammo = "FA_b_556_Mk327_HV_T_Orange_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_IR_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_IR {
-        ammo = "FA_b_556_Mk327_HV_T_IR_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_IR_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_IR {
-        ammo = "FA_b_556_Mk327_HV_T_IR_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_IR_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_T_IR {
-        ammo = "FA_b_556_Mk327_HV_T_IR_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP {
-        ammo = "FA_b_556_Mk332_AP_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP {
-        ammo = "FA_b_556_Mk332_AP_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP {
-        ammo = "FA_b_556_Mk332_AP_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Red_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Red {
-        ammo = "FA_b_556_Mk332_AP_T_Red_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Red_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Red {
-        ammo = "FA_b_556_Mk332_AP_T_Red_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Red_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Red {
-        ammo = "FA_b_556_Mk332_AP_T_Red_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Yellow_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Yellow {
-        ammo = "FA_b_556_Mk332_AP_T_Yellow_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Yellow_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Yellow {
-        ammo = "FA_b_556_Mk332_AP_T_Yellow_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Yellow_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Yellow {
-        ammo = "FA_b_556_Mk332_AP_T_Yellow_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Green_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Green {
-        ammo = "FA_b_556_Mk332_AP_T_Green_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Green_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Green {
-        ammo = "FA_b_556_Mk332_AP_T_Green_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Green_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Green {
-        ammo = "FA_b_556_Mk332_AP_T_Green_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_White_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_White {
-        ammo = "FA_b_556_Mk332_AP_T_White_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_White_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_White {
-        ammo = "FA_b_556_Mk332_AP_T_White_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_White_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_White {
-        ammo = "FA_b_556_Mk332_AP_T_White_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Blue_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Blue {
-        ammo = "FA_b_556_Mk332_AP_T_Blue_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Blue_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Blue {
-        ammo = "FA_b_556_Mk332_AP_T_Blue_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Blue_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Blue {
-        ammo = "FA_b_556_Mk332_AP_T_Blue_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Orange_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Orange {
-        ammo = "FA_b_556_Mk332_AP_T_Orange_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Orange_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Orange {
-        ammo = "FA_b_556_Mk332_AP_T_Orange_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Orange_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_Orange {
-        ammo = "FA_b_556_Mk332_AP_T_Orange_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_IR_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_IR {
-        ammo = "FA_b_556_Mk332_AP_T_IR_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_IR_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_IR {
-        ammo = "FA_b_556_Mk332_AP_T_IR_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_IR_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_Mk332_AP_T_IR {
-        ammo = "FA_b_556_Mk332_AP_T_IR_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP {
-        ammo = "FA_b_556_XM891_CTEP_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP {
-        ammo = "FA_b_556_XM891_CTEP_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP {
-        ammo = "FA_b_556_XM891_CTEP_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Red_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Red {
-        ammo = "FA_b_556_XM891_CTEP_T_Red_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Red_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Red {
-        ammo = "FA_b_556_XM891_CTEP_T_Red_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Red_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Red {
-        ammo = "FA_b_556_XM891_CTEP_T_Red_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Yellow_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Yellow {
-        ammo = "FA_b_556_XM891_CTEP_T_Yellow_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Yellow_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Yellow {
-        ammo = "FA_b_556_XM891_CTEP_T_Yellow_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Yellow_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Yellow {
-        ammo = "FA_b_556_XM891_CTEP_T_Yellow_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Green_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Green {
-        ammo = "FA_b_556_XM891_CTEP_T_Green_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Green_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Green {
-        ammo = "FA_b_556_XM891_CTEP_T_Green_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Green_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Green {
-        ammo = "FA_b_556_XM891_CTEP_T_Green_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_White_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_White {
-        ammo = "FA_b_556_XM891_CTEP_T_White_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_White_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_White {
-        ammo = "FA_b_556_XM891_CTEP_T_White_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_White_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_White {
-        ammo = "FA_b_556_XM891_CTEP_T_White_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Blue_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Blue {
-        ammo = "FA_b_556_XM891_CTEP_T_Blue_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Blue_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Blue {
-        ammo = "FA_b_556_XM891_CTEP_T_Blue_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Blue_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Blue {
-        ammo = "FA_b_556_XM891_CTEP_T_Blue_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Orange_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Orange {
-        ammo = "FA_b_556_XM891_CTEP_T_Orange_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Orange_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Orange {
-        ammo = "FA_b_556_XM891_CTEP_T_Orange_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Orange_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_Orange {
-        ammo = "FA_b_556_XM891_CTEP_T_Orange_t2";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_IR_t4: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_IR {
-        ammo = "FA_b_556_XM891_CTEP_T_IR_t4";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_IR_t3: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_IR {
-        ammo = "FA_b_556_XM891_CTEP_T_IR_t3";
-    };
-    class FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_IR_t2: FA_30Rnd_556x45_AP_Stanag_Tan_RF_XM891_CTEP_T_IR {
-        ammo = "FA_b_556_XM891_CTEP_T_IR_t2";
-    };
-    class FA_rf_17Rnd_9x19_Mk422_AP_t4: FA_rf_17Rnd_9x19_Mk422_AP {
-        ammo = "FA_rf_9x19_Mk422_AP_t4";
-    };
-    class FA_rf_17Rnd_9x19_Mk422_AP_t3: FA_rf_17Rnd_9x19_Mk422_AP {
-        ammo = "FA_rf_9x19_Mk422_AP_t3";
-    };
-    class FA_rf_17Rnd_9x19_Mk422_AP_t2: FA_rf_17Rnd_9x19_Mk422_AP {
-        ammo = "FA_rf_9x19_Mk422_AP_t2";
-    };
-    class FA_rf_33Rnd_9x19_Mk422_AP_t4: FA_rf_33Rnd_9x19_Mk422_AP {
-        ammo = "FA_rf_9x19_Mk422_AP_t4";
-    };
-    class FA_rf_33Rnd_9x19_Mk422_AP_t3: FA_rf_33Rnd_9x19_Mk422_AP {
-        ammo = "FA_rf_9x19_Mk422_AP_t3";
-    };
-    class FA_rf_33Rnd_9x19_Mk422_AP_t2: FA_rf_33Rnd_9x19_Mk422_AP {
-        ammo = "FA_rf_9x19_Mk422_AP_t2";
     };
 };

@@ -67,7 +67,7 @@ MAP = os.path.join(ROOT, "work", "faction_camo.json")
 # body on into the next class's.
 # A faction config names its own classes through CBA's GVAR (docs/CODING_GUIDELINES.md): "class GVAR(x):"
 # in addons/<c> is the class ghost_<c>_x.
-HEAD = re.compile(r"^    class (?:GVAR\((\w+)\)|(\w+))\s*:\s*(?:GVAR\(\w+\)|\w+)\s*\{\s*(//.*)?$")
+HEAD = re.compile(r"^    class (?:GVAR\((\w+)\)|(\w+))\s*:\s*(?:GVAR\(\w+\)|EGVAR\(\w+,\s*\w+\)|\w+)\s*\{\s*(//.*)?$")
 TAIL = re.compile(r"^    \};\s*(//.*)?$")
 ARRAY_OPEN = re.compile(r"^        (textureList|hiddenSelectionsTextures|hiddenSelections)\[\]\s*=\s*\{")
 MARK = "        // camo: "     # the line that marks a block this script wrote

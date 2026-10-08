@@ -13,9 +13,7 @@ class CfgVehicles {
     class B_Boat_Transport_01_F;
     class O_Boat_Armed_01_hmg_F;
     class B_Mortar_01_F;
-    class B_TwinMortar_RF;
     class B_UAV_02_dynamicLoadout_F;
-    class B_support_CMort_RF;
     class ghost_uniform_B_JSOC_StealthUniform_soldier_F;
     class B_recon_JTAC_F;
     class B_W_Soldier_LAT_F;
@@ -37,19 +35,13 @@ class CfgVehicles {
     class B_Radar_System_01_F;
     class B_SAM_System_03_F;
     class B_SDV_01_F;
-    class B_T_APC_Wheeled_01_atgm_lxWS;
     class B_T_APC_Wheeled_01_cannon_F;
     class B_T_Boat_Armed_01_minigun_F;
     class B_T_Boat_Transport_01_F;
     class B_T_Diver_Exp_F;
     class B_T_Diver_F;
     class B_T_Diver_TL_F;
-    class B_T_VTOL_01_armed_F;
-    class B_T_VTOL_01_infantry_F;
-    class B_T_VTOL_01_vehicle_F;
-    class B_T_APC_Wheeled_01_command_lxWS;
     class B_APC_Wheeled_01_cannon_F;
-    class B_T_APC_Wheeled_01_mortar_lxWS;
     class B_W_Crew_F;
     class B_W_Engineer_F;
     class B_Fighter_Pilot_F;
@@ -138,12 +130,6 @@ class CfgVehicles {
     class B_qav_abramsx;
     class B_qav_abramsx_templar;
     class B_qav_abramsx_tusk;
-    class E22_B_JC_W_AAA_System_01_F;
-    class E22_B_JC_W_Radar_system_01_F;
-    class E22_B_JC_W_SAM_system_01_F;
-    class EF_B_MRAP_01_AT_NATO_T;
-    class EF_B_MRAP_01_FSV_NATO_T;
-    class EF_B_MRAP_01_LAAD_NATO_T;
     class GX_B_HONEYBADGER_UGV_AT_BLACK;
     class GX_B_HONEYBADGER_UGV_AT_DESERT;
     class GX_B_HONEYBADGER_UGV_AT_GREEN;
@@ -158,8 +144,6 @@ class CfgVehicles {
     class GX_B_THEMIS_UGV_CARGO;
     class GX_B_THEMIS_UGV_DEFNDER_MEDIUM;
     class GX_B_THEMIS_UGV_HUNTER_LAUNCHER;
-    class JK_B_CDF_76n6_ClamShell_F;
-    class JK_B_CDF_76n6_ClamShell_Lower_F;
     class qav_b_ripsaw_Mk44;
     class qav_ripsaw_c;
 
@@ -235,15 +219,6 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         crew = QGVAR(B_W_Soldier_F);
     };
-    class GVAR(Aegis_B_W_TwinMortar_RF): B_TwinMortar_RF {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "AMOS Container";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(B_W_Soldier_F);
-    };
     class GVAR(Aegis_B_W_UAV_02_lxWS): B_UAV_02_dynamicLoadout_F {
         scope = 2;
         scopeCurator = 2;
@@ -252,18 +227,6 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         crew = QGVAR(B_W_Soldier_F);
-    };
-    class GVAR(Aegis_B_W_support_CMort_RF): B_support_CMort_RF {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Gunner (Light Mortar)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        weapons[] = {QGVAR(arifle_MXC_Black_ACO_Pointer_F_snds),"hgun_P07_blk_F","Throw","Put"};
-        respawnWeapons[] = {QGVAR(arifle_MXC_Black_ACO_Pointer_F_snds),"hgun_P07_blk_F","Throw","Put"};
-        magazines[] = {"FA_b_30Rnd_65_EPR_Black_t3","FA_b_30Rnd_65_EPR_Black_t3","FA_b_30Rnd_65_EPR_Black_t3","FA_b_30Rnd_65_EPR_Black_t3","FA_b_30Rnd_65_EPR_Black_t3","FA_b_30Rnd_65_EPR_Black_t3","FA_b_30Rnd_65_EPR_Black_t3","FA_b_30Rnd_65_EPR_Black_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
-        respawnMagazines[] = {"FA_b_30Rnd_65_EPR_Black_t3","FA_b_30Rnd_65_EPR_Black_t3","FA_b_30Rnd_65_EPR_Black_t3","FA_b_30Rnd_65_EPR_Black_t3","FA_b_30Rnd_65_EPR_Black_t3","FA_b_30Rnd_65_EPR_Black_t3","FA_b_30Rnd_65_EPR_Black_t3","FA_b_30Rnd_65_EPR_Black_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","HandGrenade","HandGrenade","B_IR_Grenade","B_IR_Grenade","SmokeShell","SmokeShell"};
     };
     class GVAR(Atlas_B_W_JSOC_F): ghost_uniform_B_JSOC_StealthUniform_soldier_F {
         scope = 2;
@@ -569,15 +532,6 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         crew = QGVAR(B_W_Crew_F);
     };
-    class GVAR(B_T_APC_Wheeled_01_atgm_lxWS): B_T_APC_Wheeled_01_atgm_lxWS {
-        scope = 1;
-        scopeCurator = 1;
-        author = QAUTHOR;
-        displayName = "AMV-7 Marshall (ATGM)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(B_W_Crew_F);
-    };
     class GVAR(B_T_APC_Wheeled_01_cannon_F): B_T_APC_Wheeled_01_cannon_F {
         scope = 1;
         scopeCurator = 0;
@@ -641,65 +595,11 @@ class CfgVehicles {
         magazines[] = {"20Rnd_556x45_Stanag_red","20Rnd_556x45_Stanag_red","20Rnd_556x45_Stanag_red","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
         respawnMagazines[] = {"20Rnd_556x45_Stanag_red","20Rnd_556x45_Stanag_red","20Rnd_556x45_Stanag_red","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","20Rnd_556x45_UW_mag","FA_b_16Rnd_9x21_Mk424_AP_t3","FA_b_16Rnd_9x21_Mk424_AP_t3","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
     };
-    class GVAR(B_T_VTOL_01_armed_F): B_T_VTOL_01_armed_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "AV-44X Blackfish";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(B_W_Pilot_F);
-    };
-    class GVAR(B_T_VTOL_01_infantry_F): B_T_VTOL_01_infantry_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "V-44 X Blackfish (Infantry Transport)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(B_W_Pilot_F);
-    };
-    class GVAR(B_T_VTOL_01_vehicle_F): B_T_VTOL_01_vehicle_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "V-44 X Blackfish (Vehicle Transport)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(B_W_Pilot_F);
-    };
-    class GVAR(B_W_APC_Wheeled_01_atgm_lxWS_v2): B_T_APC_Wheeled_01_atgm_lxWS {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "AMV-7 Marshall (ATGM)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(B_W_Crew_F);
-    };
-    class GVAR(B_W_APC_Wheeled_01_command_lxWS): B_T_APC_Wheeled_01_command_lxWS {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "AMV-7 Marshall (Command)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(B_W_Crew_F);
-    };
     class GVAR(B_W_APC_Wheeled_01_medical_F): B_APC_Wheeled_01_cannon_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "AMV-7 Marshall (Medical)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(B_W_Crew_F);
-    };
-    class GVAR(B_W_APC_Wheeled_01_mortar_lxWS): B_T_APC_Wheeled_01_mortar_lxWS {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "AMV-7 Marshall (Mortar)";
         side = 1;
         faction = QUOTE(ADDON);
         crew = QGVAR(B_W_Crew_F);
@@ -1744,60 +1644,6 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         crew = QGVAR(B_W_Crew_F);
     };
-    class GVAR(E22_B_JC_W_AAA_System_01_F): E22_B_JC_W_AAA_System_01_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "ADS-2 Skynex (Anti-Air)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(B_W_Soldier_F);
-    };
-    class GVAR(E22_B_JC_W_Radar_system_01_F): E22_B_JC_W_Radar_system_01_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "AN/MPQ-64 Sentinel";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(B_W_Soldier_F);
-    };
-    class GVAR(E22_B_JC_W_SAM_system_01_F): E22_B_JC_W_SAM_system_01_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "ADS-1 NASAMS";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(B_W_Soldier_F);
-    };
-    class GVAR(EF_B_MRAP_01_AT_NATO_T): EF_B_MRAP_01_AT_NATO_T {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "M-ATV AT";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(B_W_Crew_F);
-    };
-    class GVAR(EF_B_MRAP_01_FSV_NATO_T): EF_B_MRAP_01_FSV_NATO_T {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "M-ATV FSV";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(B_W_Crew_F);
-    };
-    class GVAR(EF_B_MRAP_01_LAAD_NATO_T): EF_B_MRAP_01_LAAD_NATO_T {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "M-ATV LAAD (Anti-Air)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(B_W_Crew_F);
-    };
     class GVAR(GX_B_HONEYBADGER_UGV_AT_BLACK): GX_B_HONEYBADGER_UGV_AT_BLACK {
         scope = 2;
         scopeCurator = 2;
@@ -1924,24 +1770,6 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         crew = QGVAR(B_W_Soldier_F);
     };
-    class GVAR(JK_B_CDF_76n6_ClamShell_F): JK_B_CDF_76n6_ClamShell_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "76n6 Clam Shell";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(B_W_Soldier_F);
-    };
-    class GVAR(JK_B_CDF_76n6_ClamShell_Lower_F): JK_B_CDF_76n6_ClamShell_Lower_F {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "76n6 Clam Shell (Artillery Radar)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(B_W_Soldier_F);
-    };
     class GVAR(qav_b_ripsaw_Mk44): qav_b_ripsaw_Mk44 {
         scope = 2;
         scopeCurator = 2;
@@ -1982,6 +1810,9 @@ class CfgVehicles {
     // and group composition is CfgGroups' job.
 
     class C_IDAP_UAV_06_antimine_F;
+    class EGVAR(vehicle,B_Heli_Attack_03_F);
+    class EGVAR(vehicle,B_M_Heli_Attack_03_F);
+    class VVE_VTOL_03_unarmed_QAV;
     class GVAR(C_IDAP_UAV_06_antimine_F): C_IDAP_UAV_06_antimine_F {
         scope = 2;
         scopeCurator = 2;
@@ -2014,4 +1845,28 @@ class CfgVehicles {
         backpack = "B_UAV_01_backpack_F";
     };   // the squad's drones - see SQUAD_DRONES
 
+    class GVAR(B_Heli_Attack_03_F): EGVAR(vehicle,B_Heli_Attack_03_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 1;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_W_Helipilot_F);
+    };
+    class GVAR(B_M_Heli_Attack_03_F): EGVAR(vehicle,B_M_Heli_Attack_03_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 1;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_W_Helipilot_F);
+    };
+    class GVAR(VVE_VTOL_03_unarmed_QAV): VVE_VTOL_03_unarmed_QAV {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 1;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(B_W_Helipilot_F);
+    };
 };

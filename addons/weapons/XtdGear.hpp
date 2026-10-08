@@ -531,11 +531,6 @@ class XtdGearInfos {
             camo = "Khaki";
             type = "MX";
         };
-        class ef_arifle_mx_coy {
-            model = QGVAR(MX);
-            camo = "Coyote";
-            type = "MX";
-        };
         // MX GL
         class arifle_MX_GL_F {
             model = QGVAR(MX);
@@ -552,32 +547,7 @@ class XtdGearInfos {
             camo = "Khaki";
             type = "MX_GL";
         };
-        class ef_arifle_mx_gl_coy {
-            model = QGVAR(MX);
-            camo = "Coyote";
-            type = "MX_GL";
-        };
         // MX Grip
-        class ef_arifle_mx_grip {
-            model = QGVAR(MX);
-            camo = "Sand";
-            type = "MX_Grip";
-        };
-        class ef_arifle_mx_grip_black {
-            model = QGVAR(MX);
-            camo = "Black";
-            type = "MX_Grip";
-        };
-        class ef_arifle_mx_grip_coy {
-            model = QGVAR(MX);
-            camo = "Coyote";
-            type = "MX_Grip";
-        };
-        class ef_arifle_mx_grip_khk {
-            model = QGVAR(MX);
-            camo = "Khaki";
-            type = "MX_Grip";
-        };
         // MX SW
         class arifle_MX_SW_F {
             model = QGVAR(MX);
@@ -594,53 +564,8 @@ class XtdGearInfos {
             camo = "Khaki";
             type = "MX_SW";
         };
-        class ef_arifle_mx_sw_coy {
-            model = QGVAR(MX);
-            camo = "Coyote";
-            type = "MX_SW";
-        };
         // MXAR GL
-        class ef_arifle_mxar_gl {
-            model = QGVAR(MX);
-            camo = "Sand";
-            type = "MXAR_GL";
-        };
-        class ef_arifle_mxar_gl_black {
-            model = QGVAR(MX);
-            camo = "Black";
-            type = "MXAR_GL";
-        };
-        class ef_arifle_mxar_gl_coy {
-            model = QGVAR(MX);
-            camo = "Coyote";
-            type = "MXAR_GL";
-        };
-        class ef_arifle_mxar_gl_khk {
-            model = QGVAR(MX);
-            camo = "Khaki";
-            type = "MXAR_GL";
-        };
         // MXAR
-        class ef_arifle_mxar {
-            model = QGVAR(MX);
-            camo = "Sand";
-            type = "MXAR";
-        };
-        class ef_arifle_mxar_black {
-            model = QGVAR(MX);
-            camo = "Black";
-            type = "MXAR";
-        };
-        class ef_arifle_mxar_coy {
-            model = QGVAR(MX);
-            camo = "Coyote";
-            type = "MXAR";
-        };
-        class ef_arifle_mxar_khk {
-            model = QGVAR(MX);
-            camo = "Khaki";
-            type = "MXAR";
-        };
         // MXC
         class arifle_MXC_F {
             model = QGVAR(MX);
@@ -657,11 +582,6 @@ class XtdGearInfos {
             camo = "Khaki";
             type = "MXC";
         };
-        class ef_arifle_mxc_coy {
-            model = QGVAR(MX);
-            camo = "Coyote";
-            type = "MXC";
-        };
         // MXM
         class arifle_MXM_F {
             model = QGVAR(MX);
@@ -676,11 +596,6 @@ class XtdGearInfos {
         class arifle_MXM_khk_F {
             model = QGVAR(MX);
             camo = "Khaki";
-            type = "MXM";
-        };
-        class ef_arifle_mxm_coy {
-            model = QGVAR(MX);
-            camo = "Coyote";
             type = "MXM";
         };
         // KSG
@@ -706,18 +621,6 @@ class XtdGearInfos {
             camo = "Khaki";
         };
         // GLX
-        class glaunch_GLX_lxWS {
-            model = QGVAR(GLX);
-            camo = "Black";
-        };
-        class glaunch_GLX_tan_lxWS {
-            model = QGVAR(GLX);
-            camo = "Tan";
-        };
-        class glaunch_GLX_olive_lxWS {
-            model = QGVAR(GLX);
-            camo = "Olive";
-        };
         // SPAR-01 / SPAR-02
         class arifle_SPAR_01_blk_F {
             model = QGVAR(SPAR);
@@ -892,36 +795,6 @@ class XtdGearInfos {
             camo = "Sand";
         };
         // Glock 19
-        class hgun_Glock19_RF {
-            model = QGVAR(Glock19);
-            type = "Standard";
-            camo = "Black";
-        };
-        class hgun_Glock19_Tan_RF {
-            model = QGVAR(Glock19);
-            type = "Standard";
-            camo = "Tan";
-        };
-        class hgun_Glock19_khk_RF {
-            model = QGVAR(Glock19);
-            type = "Standard";
-            camo = "Khaki";
-        };
-        class hgun_Glock19_auto_RF {
-            model = QGVAR(Glock19);
-            type = "Auto";
-            camo = "Black";
-        };
-        class hgun_Glock19_auto_Tan_RF {
-            model = QGVAR(Glock19);
-            type = "Auto";
-            camo = "Tan";
-        };
-        class hgun_Glock19_auto_khk_RF {
-            model = QGVAR(Glock19);
-            type = "Auto";
-            camo = "Khaki";
-        };
         // SCAR-H (7.62)
         class arifle_SCAR_F {
             model = QGVAR(SCAR);
@@ -1168,10 +1041,6 @@ class XtdGearInfos {
         class hgun_Pistol_heavy_01_green_F {
             model = QGVAR(Pistol_heavy_01);
             camo = "Green";
-        };
-        class ef_hgun_Pistol_heavy_01_coy {
-            model = QGVAR(Pistol_heavy_01);
-            camo = "Coyote";
         };
         class hgun_Pistol_heavy_01_black_F {
             model = QGVAR(Pistol_heavy_01);

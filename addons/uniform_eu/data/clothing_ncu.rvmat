@@ -12,7 +12,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="z\ghost\addons\uniform_eu\data\clothing_ncu_nohq.paa";
+	texture="z\ghost\addons\uniform\models\characters\Uniforms\Data\clothing_ncu_NOHQ.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="z\ghost\addons\uniform_eu\data\clothing_ncu_as.paa";
+	texture="z\ghost\addons\uniform\models\characters\Uniforms\Data\clothing_ncu_AS.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="z\ghost\addons\uniform_eu\data\clothing_ncu_smdi.paa";
+	texture="z\ghost\addons\uniform\models\characters\Uniforms\Data\clothing_ncu_SMDI.paa";
 	uvSource="tex";
 	class uvTransform
 	{

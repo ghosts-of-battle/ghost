@@ -1,4 +1,4 @@
-class CfgMagazinewells {
+class CfgMagazineWells {
     class STANAG_556x45 {
         ADDON[] += {
             // SPS G3 PMAG Black

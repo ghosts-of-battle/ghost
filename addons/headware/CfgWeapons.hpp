@@ -196,7 +196,7 @@ class CfgWeapons {
         picture = "\z\ghost\addons\headware\models\characters\Headgear\Data\UI\Aegis_H_Helmet_FASTMT_Cover_tan_F_ca.paa";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\H_HelmetFASTMT_US_OCP_CO.paa),
-            QPATHTOF(data\H_ghost_HelmetFASTMT_Cover_US_OCP_CO.paa),
+            QPATHTOF(data\H_HelmetFASTMT_Cover_US_OCP_CO.paa),
             "\z\ghost\addons\headware\models\characters\Headgear\Data\H_HeadsetWest_tan_CO.paa"
         };
     };

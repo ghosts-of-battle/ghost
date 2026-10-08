@@ -1,4 +1,4 @@
-class CfgMagazinewells {
+class CfgMagazineWells {
     // 5.56x45 STANAG well — covers MX, SPAR-16, M4, etc.
     class STANAG_556x45 {
         ADDON[] += {

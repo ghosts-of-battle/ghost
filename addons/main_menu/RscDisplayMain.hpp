@@ -9,7 +9,7 @@ class RscDisplayMain: RscStandardDisplay {
         // UP from the button row (0.37) so the two always read as one block
         // whatever the screen.
         class GVAR(logo61): RscActivePictureKeepAspect {
-            text = QPATHTOF(data\logo_512.paa);
+            text = QPATHTOEF(media,images\logo_512.paa);
             x = "0.5 - (0.5 * 5) * (pixelW * pixelGridNoUIScale * 2)";
             y = "0.37 - (10) * (pixelH * pixelGridNoUIScale * 2)";
             w = "5 * (pixelW * pixelGridNoUIScale * 2)";

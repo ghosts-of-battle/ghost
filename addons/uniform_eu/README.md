@@ -11,7 +11,6 @@ A content pack: 6 unit classes and 6 weapon and item classes. No scripted behavi
 - `ghost_main`
 - `A3_Characters_F` _(external)_
 - `A3_Data_F_Decade_Loadorder` _(external)_
-- `data_f_lxWS_Loadorder` _(external)_
 
 Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking the load order when something above is absent.
 

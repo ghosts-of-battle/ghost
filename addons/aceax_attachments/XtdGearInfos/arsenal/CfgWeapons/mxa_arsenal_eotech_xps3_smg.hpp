@@ -14,8 +14,3 @@ class optic_Holosight_smg_khk_F
     model = "mxa_arsenal_eotech_xps3_smg";
     camo = "KHK";
 };
-class optic_Holosight_smg_snake_lxWS
-{
-    model = "mxa_arsenal_eotech_xps3_smg";
-    camo = "SNAKE";
-};

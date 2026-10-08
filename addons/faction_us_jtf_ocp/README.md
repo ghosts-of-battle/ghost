@@ -19,4 +19,4 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-169 unit classes, 18 weapon/item classes.
+99 unit classes, 18 weapon/item classes.

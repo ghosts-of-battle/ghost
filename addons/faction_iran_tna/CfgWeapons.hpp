@@ -4,18 +4,10 @@
 // baseWeapon keep the arsenal showing the plain weapon, as the base
 // game's own presets do. No script: the man's weapons[] names the preset.
 class CfgWeapons {
-    class Aegis_srifle_SVD_f;
-    class EGVAR(weapons,arifle_AK103_F);
-    class sgun_AA40_lxWS;
-    class EGVAR(weapons,arifle_AK103_GL_F);
     class SMG_02_F;
+    class arifle_AK12_F;
+    class arifle_AK12_GL_F;
     class arifle_RPK12_F;
-    class Aegis_sgun_AA40_ACO_LP_LxWS: sgun_AA40_lxWS {
-        class LinkedItems;
-    };
-    class Rev_arifle_AK103_GL_ARCO_AK_FL_F: EGVAR(weapons,arifle_AK103_GL_F) {
-        class LinkedItems;
-    };
     class SMG_02_ACO_F: SMG_02_F {
         class LinkedItems;
     };
@@ -23,39 +15,6 @@ class CfgWeapons {
         class LinkedItems;
     };
 
-    class GVAR(Aegis_sgun_AA40_ACO_LP_LxWS_snds): Aegis_sgun_AA40_ACO_LP_LxWS {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "Aegis_sgun_AA40_ACO_LP_LxWS";
-        class LinkedItems: LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_12Gauge_lxWS";
-            };
-        };
-    };
-    class GVAR(Aegis_srifle_SVD_f_snds): Aegis_srifle_SVD_f {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "srifle_DMR_01_F";
-        class LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_B";
-            };
-        };
-    };
-    class GVAR(Rev_arifle_AK103_GL_ARCO_AK_FL_F_snds): Rev_arifle_AK103_GL_ARCO_AK_FL_F {
-        scope = 1;
-        author = QAUTHOR;
-        baseWeapon = "Rev_arifle_AK103_GL_ARCO_AK_FL_F";
-        class LinkedItems: LinkedItems {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_B";
-            };
-        };
-    };
     class GVAR(SMG_02_ACO_F_snds): SMG_02_ACO_F {
         scope = 1;
         author = QAUTHOR;
@@ -78,14 +37,33 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(arifle_AK103_arco): EGVAR(weapons,arifle_AK103_F) {
+    class GVAR(arifle_AK12_arco): arifle_AK12_F {
         scope = 1;
         author = QAUTHOR;
-        baseWeapon = QEGVAR(weapons,arifle_AK103_F);
+        baseWeapon = "arifle_AK12_F";
         class LinkedItems {
-            class LinkedItemsCows {
+            class LinkedItemsOptic {
                 slot = "CowsSlot";
                 item = "optic_Arco_blk_F";
+            };
+        };
+    };
+    class GVAR(arifle_AK12_GL_arco_snds): arifle_AK12_GL_F {
+        scope = 1;
+        author = QAUTHOR;
+        baseWeapon = "arifle_AK12_GL_F";
+        class LinkedItems {
+            class LinkedItemsOptic {
+                slot = "CowsSlot";
+                item = "optic_Arco_AK_blk_F";
+            };
+            class LinkedItemsAcc {
+                slot = "PointerSlot";
+                item = "acc_flashlight";
+            };
+            class LinkedItemsMuzzle {
+                slot = "MuzzleSlot";
+                item = "muzzle_snds_B";
             };
         };
     };

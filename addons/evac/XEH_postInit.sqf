@@ -40,7 +40,7 @@ if (isServer) then {
         {
             private _val = _casualty getVariable _x;
             if (!isNil "_val") then {
-                if (_val isEqualType [] || {_val isEqualType createHashMap}) then {
+                if (_val isEqualTypeAny [[], createHashMap]) then {
                     _val = +_val;
                 };
                 _med pushBack [_x, _val];

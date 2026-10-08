@@ -4,458 +4,139 @@
 // config.cpp, so without them the faction is skipped rather than loading empty classes.
 
 class CfgVehicles {
-    class min_rf_2b26_desert;
-    class min_rf_ags_30_desert;
-    class min_rf_boat_transport;
-    class min_rf_crew_desert;
-    class min_rf_driver_desert;
-    class min_rf_engineer_desert;
-    class min_rf_gaz_2330_desert;
-    class min_rf_gaz_2330_HMG_desert;
-    class min_rf_heli_light_grey;
-    class min_rf_heli_light_unarmed_grey;
-    class min_rf_helipilot_desert;
-    class min_rf_ka_52_grey;
-    class min_rf_Kord_desert;
-    class min_rf_lifeboat;
-    class min_rf_medic_desert;
-    class min_rf_Metis_desert;
-    class min_rf_Mortar_desert;
-    class min_rf_officer_desert;
-    class min_rf_pchela_1t;
-    class min_rf_pilot_desert;
-    class min_rf_recon_desert;
-    class min_rf_recon_desert_exp;
-    class min_rf_recon_desert_JTAC;
-    class min_rf_recon_desert_LAT;
-    class min_rf_recon_desert_M;
-    class min_rf_recon_desert_medic;
-    class min_rf_recon_desert_officer;
-    class min_rf_recon_desert_saboteur;
-    class min_rf_recon_desert_TL;
-    class min_rf_sa_22_desert;
-    class min_rf_sniper_desert;
-    class min_rf_soldier_desert;
-    class min_rf_soldier_desert_A;
-    class min_rf_soldier_desert_AA;
-    class min_rf_soldier_desert_AAA;
-    class min_rf_soldier_desert_AAR;
-    class min_rf_soldier_desert_AAT;
-    class min_rf_soldier_desert_AR;
-    class min_rf_soldier_desert_AT;
-    class min_rf_soldier_desert_exp;
-    class min_rf_soldier_desert_GL;
-    class min_rf_soldier_desert_LAT;
-    class min_rf_soldier_desert_lite;
-    class min_rf_soldier_desert_M;
-    class min_rf_soldier_desert_mine;
-    class min_rf_soldier_desert_PG;
-    class min_rf_soldier_desert_repair;
-    class min_rf_soldier_desert_SL;
-    class min_rf_soldier_desert_TL;
-    class min_rf_soldier_desert_UAV;
-    class min_rf_soldier_desert_unarmed;
-    class min_rf_spetsnaz_desert;
-    class min_rf_spetsnaz_desert_AR;
-    class min_rf_spetsnaz_desert_GL;
-    class min_rf_spetsnaz_desert_M;
-    class min_rf_spetsnaz_desert_O;
-    class min_rf_spetsnaz_desert_TL;
-    class min_rf_spotter_desert;
-    class min_rf_su_34_desert;
-    class min_rf_support_desert_AAGS;
-    class min_rf_support_desert_AGS;
-    class min_rf_support_desert_AKord;
-    class min_rf_support_desert_AMetis;
-    class min_rf_support_desert_AMort;
-    class min_rf_support_desert_Kord;
-    class min_rf_support_desert_Metis;
-    class min_rf_support_desert_Mort;
-    class min_rf_survivor_desert;
-    class min_rf_t_14_desert;
-    class min_rf_t_15_desert;
-    class min_rf_truck_ammo_desert;
-    class min_rf_truck_box_desert;
-    class min_rf_truck_covered_desert;
-    class min_rf_truck_fuel_desert;
-    class min_rf_truck_medical_desert;
-    class min_rf_truck_transport_desert;
+    class B_SwitchBlade_300;
+    class B_SwitchBlade_300_LaunchTube_Desert;
+    class B_SwitchBlade_600;
+    class B_SwitchBlade_600_LaunchTube_Desert;
+    class B_T_UAV_03_dynamicLoadout_F;
+    class EGVAR(uniform_ru,O_R_crew_ard_F);
+    class EGVAR(uniform_ru,O_R_engineer_ard_F);
+    class EGVAR(uniform_ru,O_R_Fighter_Pilot_ard_F);
+    class EGVAR(uniform_ru,O_R_ghillie_ard_F);
+    class EGVAR(uniform_ru,O_R_ghillie_spotter_ard_F);
+    class EGVAR(uniform_ru,O_R_helicrew_ard_F);
+    class EGVAR(uniform_ru,O_R_helipilot_ard_F);
+    class EGVAR(uniform_ru,O_R_medic_ard_F);
+    class EGVAR(uniform_ru,O_R_officer_ard_F);
+    class EGVAR(uniform_ru,O_R_RadioOperator_ard_F);
+    class EGVAR(uniform_ru,O_R_recon_AR_ard_F);
+    class EGVAR(uniform_ru,O_R_recon_ard_F);
+    class EGVAR(uniform_ru,O_R_recon_CQ_ard_F);
+    class EGVAR(uniform_ru,O_R_recon_exp_ard_F);
+    class EGVAR(uniform_ru,O_R_recon_GL_ard_F);
+    class EGVAR(uniform_ru,O_R_recon_JTAC_ard_F);
+    class EGVAR(uniform_ru,O_R_recon_LAT_ard_F);
+    class EGVAR(uniform_ru,O_R_recon_M_ard_F);
+    class EGVAR(uniform_ru,O_R_recon_medic_ard_F);
+    class EGVAR(uniform_ru,O_R_recon_TL_ard_F);
+    class EGVAR(uniform_ru,O_R_Sharpshooter_ard_F);
+    class EGVAR(uniform_ru,O_R_sniper_ard_F);
+    class EGVAR(uniform_ru,O_R_Soldier_A_ard_F);
+    class EGVAR(uniform_ru,O_R_soldier_AA_ard_F);
+    class EGVAR(uniform_ru,O_R_Soldier_AAA_ard_F);
+    class EGVAR(uniform_ru,O_R_Soldier_AAR_ard_F);
+    class EGVAR(uniform_ru,O_R_Soldier_AAT_ard_F);
+    class EGVAR(uniform_ru,O_R_Soldier_AHAT_ard_F);
+    class EGVAR(uniform_ru,O_R_soldier_AR_ard_F);
+    class EGVAR(uniform_ru,O_R_Soldier_ard_F);
+    class EGVAR(uniform_ru,O_R_soldier_AT_ard_F);
+    class EGVAR(uniform_ru,O_R_Soldier_CBRN_ard_F);
+    class EGVAR(uniform_ru,O_R_Soldier_CQ_ard_F);
+    class EGVAR(uniform_ru,O_R_soldier_exp_ard_F);
+    class EGVAR(uniform_ru,O_R_Soldier_GL_ard_F);
+    class EGVAR(uniform_ru,O_R_Soldier_HAT_ard_F);
+    class EGVAR(uniform_ru,O_R_Soldier_LAT_ard_F);
+    class EGVAR(uniform_ru,O_R_Soldier_lite_ard_F);
+    class EGVAR(uniform_ru,O_R_soldier_M_ard_F);
+    class EGVAR(uniform_ru,O_R_soldier_mine_ard_F);
+    class EGVAR(uniform_ru,O_R_Soldier_PG_ard_F);
+    class EGVAR(uniform_ru,O_R_soldier_repair_ard_F);
+    class EGVAR(uniform_ru,O_R_Soldier_SL_ard_F);
+    class EGVAR(uniform_ru,O_R_Soldier_TL_ard_F);
+    class EGVAR(uniform_ru,O_R_soldier_UAV_06_ard_F);
+    class EGVAR(uniform_ru,O_R_soldier_UAV_06_medical_ard_F);
+    class EGVAR(uniform_ru,O_R_soldier_UAV_ard_F);
+    class EGVAR(uniform_ru,O_R_soldier_UGV_02_Demining_ard_F);
+    class EGVAR(uniform_ru,O_R_spotter_ard_F);
+    class EGVAR(uniform_ru,O_R_support_AMG_ard_F);
+    class EGVAR(uniform_ru,O_R_support_AMort_ard_F);
+    class EGVAR(uniform_ru,O_R_support_GMG_ard_F);
+    class EGVAR(uniform_ru,O_R_support_MG_ard_F);
+    class EGVAR(uniform_ru,O_R_support_Mort_ard_F);
+    class EGVAR(vehicle,O_R_APC_Tracked_02_medical_F);
+    class EGVAR(vehicle,O_R_APC_Wheeled_04_cannon_v2_F);
+    class EGVAR(vehicle,O_R_Heli_Attack_04_F);
+    class EGVAR(vehicle,O_R_UGV_01_medical_F);
+    class ghost_antiship_launcher;
+    class ghost_antiship_radar;
+    class O_APC_Tracked_02_AA_F;
+    class O_APC_Tracked_02_cannon_F;
+    class O_APC_Wheeled_02_rcws_v2_F;
+    class O_Boat_Armed_01_hmg_F;
+    class O_Boat_Transport_01_F;
+    class O_GMG_01_A_F;
+    class O_GMG_01_F;
+    class O_GMG_01_high_F;
+    class O_Heli_Attack_02_dynamicLoadout_F;
+    class O_Heli_Light_02_dynamicLoadout_F;
+    class O_Heli_Light_02_unarmed_F;
+    class O_Heli_Transport_04_ammo_F;
+    class O_Heli_Transport_04_bench_F;
+    class O_Heli_Transport_04_box_F;
+    class O_Heli_Transport_04_covered_F;
+    class O_Heli_Transport_04_F;
+    class O_Heli_Transport_04_fuel_F;
+    class O_Heli_Transport_04_medevac_F;
+    class O_Heli_Transport_04_repair_F;
+    class O_HMG_01_A_F;
+    class O_HMG_01_F;
+    class O_HMG_01_high_F;
+    class O_Lifeboat;
+    class O_LSV_02_armed_F;
+    class O_LSV_02_AT_F;
+    class O_LSV_02_unarmed_F;
+    class O_MBT_02_arty_F;
+    class O_MBT_02_cannon_F;
+    class O_MBT_02_railgun_F;
+    class O_MBT_04_cannon_F;
+    class O_MBT_04_command_F;
+    class O_Mortar_01_F;
+    class O_MRAP_02_F;
+    class O_MRAP_02_gmg_F;
+    class O_MRAP_02_hmg_F;
+    class O_Plane_CAS_02_dynamicLoadout_F;
+    class O_Plane_Fighter_02_F;
+    class O_Plane_Fighter_02_Stealth_F;
+    class O_Quadbike_01_F;
+    class O_Radar_System_02_F;
+    class O_SAM_System_04_F;
+    class O_SDV_01_F;
+    class O_static_AA_F;
+    class O_static_AT_F;
+    class O_Static_Designator_02_F;
+    class O_Truck_02_Ammo_F;
+    class O_Truck_02_box_F;
+    class O_Truck_02_covered_F;
+    class O_Truck_02_fuel_F;
+    class O_Truck_02_medical_F;
+    class O_Truck_02_transport_F;
+    class O_Truck_03_ammo_F;
+    class O_Truck_03_covered_F;
+    class O_Truck_03_fuel_F;
+    class O_Truck_03_medical_F;
+    class O_Truck_03_repair_F;
+    class O_Truck_03_transport_F;
+    class O_UAV_01_F;
+    class O_UAV_02_dynamicLoadout_F;
+    class O_UAV_06_F;
+    class O_UAV_06_medical_F;
+    class O_UGV_01_F;
+    class O_UGV_01_rcws_F;
+    class O_UGV_02_Demining_F;
+    class O_UGV_02_Science_F;
+    class qav_o_t_625e;
 
-    class GVAR(min_rf_spetsnaz_desert_TL): min_rf_spetsnaz_desert_TL {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
-        vehicleClass = "MenRecon";
-        magazines[] = {"FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_spetsnaz_desert): min_rf_spetsnaz_desert {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
-        vehicleClass = "MenRecon";
-        magazines[] = {"FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_spetsnaz_desert_GL): min_rf_spetsnaz_desert_GL {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
-        vehicleClass = "MenRecon";
-        magazines[] = {"FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "MiniGrenade", "MiniGrenade", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red", "1Rnd_Smoke_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell"};
-        respawnMagazines[] = {"FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "MiniGrenade", "MiniGrenade", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red", "1Rnd_Smoke_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell"};
-    };
-
-    class GVAR(min_rf_spetsnaz_desert_AR): min_rf_spetsnaz_desert_AR {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
-        vehicleClass = "MenRecon";
-        weapons[] = {QGVAR(LMG_min_rf_6p69_desert_eotech_553_snds), "hgun_Rook40_F", "Throw", "Put"};
-        respawnWeapons[] = {QGVAR(LMG_min_rf_6p69_desert_eotech_553_snds), "hgun_Rook40_F", "Throw", "Put"};
-        magazines[] = {"FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "MiniGrenade", "MiniGrenade", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "MiniGrenade", "MiniGrenade", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_spetsnaz_desert_M): min_rf_spetsnaz_desert_M {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
-        vehicleClass = "MenRecon";
-        weapons[] = {QGVAR(srifle_min_rf_orsis_t5000_desert_LRPS_snds), "hgun_Rook40_F", "Throw", "Put", "Rangefinder"};
-        respawnWeapons[] = {QGVAR(srifle_min_rf_orsis_t5000_desert_LRPS_snds), "hgun_Rook40_F", "Throw", "Put", "Rangefinder"};
-        magazines[] = {"FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_spetsnaz_desert_O): min_rf_spetsnaz_desert_O {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
-        vehicleClass = "MenRecon";
-        magazines[] = {"FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow", "Chemlight_red", "Chemlight_red", "Laserbatteries"};
-        respawnMagazines[] = {"FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow", "Chemlight_red", "Chemlight_red", "Laserbatteries"};
-    };
-
-    class GVAR(min_rf_soldier_desert): min_rf_soldier_desert {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_soldier_desert_lite): min_rf_soldier_desert_lite {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_soldier_desert_A): min_rf_soldier_desert_A {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_soldier_desert_GL): min_rf_soldier_desert_GL {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "MiniGrenade", "MiniGrenade", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red", "1Rnd_Smoke_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "MiniGrenade", "MiniGrenade", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red", "1Rnd_Smoke_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell"};
-    };
-
-    class GVAR(min_rf_soldier_desert_AR): min_rf_soldier_desert_AR {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        weapons[] = {QGVAR(LMG_min_rf_6p69_1p_87_snds), "hgun_Rook40_F", "Throw", "Put"};
-        respawnWeapons[] = {QGVAR(LMG_min_rf_6p69_1p_87_snds), "hgun_Rook40_F", "Throw", "Put"};
-        magazines[] = {"FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_100Rnd_min_rf_762x54_Box_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_soldier_desert_SL): min_rf_soldier_desert_SL {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "SmokeShellPurple", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "SmokeShellPurple", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_soldier_desert_TL): min_rf_soldier_desert_TL {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "MiniGrenade", "MiniGrenade", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "SmokeShellPurple", "Chemlight_red", "Chemlight_red", "1Rnd_Smoke_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "MiniGrenade", "MiniGrenade", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "SmokeShellPurple", "Chemlight_red", "Chemlight_red", "1Rnd_Smoke_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell"};
-    };
-
-    class GVAR(min_rf_soldier_desert_M): min_rf_soldier_desert_M {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_soldier_desert_LAT): min_rf_soldier_desert_LAT {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "RPG32_F", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "RPG32_F", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_soldier_desert_AT): min_rf_soldier_desert_AT {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Titan_AT", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Titan_AT", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_soldier_desert_AA): min_rf_soldier_desert_AA {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "1Rnd_min_rf_9M336_missiles", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "1Rnd_min_rf_9M336_missiles", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_medic_desert): min_rf_medic_desert {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_soldier_desert_repair): min_rf_soldier_desert_repair {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_soldier_desert_exp): min_rf_soldier_desert_exp {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_soldier_desert_mine): min_rf_soldier_desert_mine {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_engineer_desert): min_rf_engineer_desert {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_crew_desert): min_rf_crew_desert {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        weapons[] = {QGVAR(SMG_min_rf_pp_2000_ekp_8_18_snds), "hgun_Rook40_F", "Throw", "Put"};
-        respawnWeapons[] = {QGVAR(SMG_min_rf_pp_2000_ekp_8_18_snds), "hgun_Rook40_F", "Throw", "Put"};
-        magazines[] = {"FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "SmokeShell", "SmokeShellRed", "SmokeShellPurple", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "SmokeShell", "SmokeShellRed", "SmokeShellPurple", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_driver_desert): min_rf_driver_desert {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        weapons[] = {QGVAR(SMG_min_rf_pp_2000_ekp_8_18_snds), "hgun_Rook40_F", "Throw", "Put"};
-        respawnWeapons[] = {QGVAR(SMG_min_rf_pp_2000_ekp_8_18_snds), "hgun_Rook40_F", "Throw", "Put"};
-        magazines[] = {"FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "SmokeShell", "SmokeShellRed", "SmokeShellPurple", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "SmokeShell", "SmokeShellRed", "SmokeShellPurple", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_helipilot_desert): min_rf_helipilot_desert {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        weapons[] = {QGVAR(SMG_min_rf_pp_2000_ekp_8_18_snds), "hgun_Rook40_F", "Throw", "Put"};
-        respawnWeapons[] = {QGVAR(SMG_min_rf_pp_2000_ekp_8_18_snds), "hgun_Rook40_F", "Throw", "Put"};
-        magazines[] = {"FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_20Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_pilot_desert): min_rf_pilot_desert {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "SmokeShell", "SmokeShellRed", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "SmokeShell", "SmokeShellRed", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_soldier_desert_PG): min_rf_soldier_desert_PG {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_soldier_desert_UAV): min_rf_soldier_desert_UAV {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_officer_desert): min_rf_officer_desert {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"SmokeShell", "SmokeShellRed", "SmokeShellPurple", "Chemlight_red", "Chemlight_red", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3"};
-        respawnMagazines[] = {"SmokeShell", "SmokeShellRed", "SmokeShellPurple", "Chemlight_red", "Chemlight_red", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3"};
-    };
-
-    class GVAR(min_rf_sniper_desert): min_rf_sniper_desert {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        weapons[] = {QGVAR(srifle_min_rf_orsis_t5000_desert_LRPS_snds), "hgun_Rook40_snds_F", "Throw", "Put", "Rangefinder"};
-        respawnWeapons[] = {QGVAR(srifle_min_rf_orsis_t5000_desert_LRPS_snds), "hgun_Rook40_snds_F", "Throw", "Put", "Rangefinder"};
-        magazines[] = {"FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "FA_minrf_5Rnd_min_rf_338_Mag_t3", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_spotter_desert): min_rf_spotter_desert {
+    class GVAR(O_R_Sharpshooter_ard_F): EGVAR(uniform_ru,O_R_Sharpshooter_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -465,139 +146,7 @@ class CfgVehicles {
         vehicleClass = "Men";
     };
 
-    class GVAR(min_rf_soldier_desert_AAR): min_rf_soldier_desert_AAR {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_soldier_desert_AAT): min_rf_soldier_desert_AAT {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_soldier_desert_AAA): min_rf_soldier_desert_AAA {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_support_desert_AGS): min_rf_support_desert_AGS {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_support_desert_Metis): min_rf_support_desert_Metis {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_support_desert_Kord): min_rf_support_desert_Kord {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_support_desert_Mort): min_rf_support_desert_Mort {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_support_desert_AAGS): min_rf_support_desert_AAGS {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_support_desert_AMetis): min_rf_support_desert_AMetis {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_support_desert_AKord): min_rf_support_desert_AKord {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_support_desert_AMort): min_rf_support_desert_AMort {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        side = 0;
-        faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel";
-        vehicleClass = "Men";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "Grenade_min_rf_rgd_5", "Grenade_min_rf_rgd_5", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-    };
-
-    class GVAR(min_rf_survivor_desert): min_rf_survivor_desert {
+    class GVAR(O_R_Fighter_Pilot_ard_F): EGVAR(uniform_ru,O_R_Fighter_Pilot_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -607,7 +156,67 @@ class CfgVehicles {
         vehicleClass = "Men";
     };
 
-    class GVAR(min_rf_soldier_desert_unarmed): min_rf_soldier_desert_unarmed {
+    class GVAR(O_R_Soldier_AAA_ard_F): EGVAR(uniform_ru,O_R_Soldier_AAA_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
+    };
+
+    class GVAR(O_R_Soldier_AAR_ard_F): EGVAR(uniform_ru,O_R_Soldier_AAR_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
+    };
+
+    class GVAR(O_R_Soldier_AAT_ard_F): EGVAR(uniform_ru,O_R_Soldier_AAT_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
+    };
+
+    class GVAR(O_R_Soldier_AHAT_ard_F): EGVAR(uniform_ru,O_R_Soldier_AHAT_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
+    };
+
+    class GVAR(O_R_Soldier_A_ard_F): EGVAR(uniform_ru,O_R_Soldier_A_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
+    };
+
+    class GVAR(O_R_Soldier_CQ_ard_F): EGVAR(uniform_ru,O_R_Soldier_CQ_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -617,19 +226,167 @@ class CfgVehicles {
         vehicleClass = "Men";
     };
 
-    class GVAR(min_rf_recon_desert): min_rf_recon_desert {
+    class GVAR(O_R_Soldier_GL_ard_F): EGVAR(uniform_ru,O_R_Soldier_GL_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
-        vehicleClass = "MenRecon";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
 
-    class GVAR(min_rf_recon_desert_M): min_rf_recon_desert_M {
+    class GVAR(O_R_Soldier_HAT_ard_F): EGVAR(uniform_ru,O_R_Soldier_HAT_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "Vorona_HEAT", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "Vorona_HEAT", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
+    };
+
+    class GVAR(O_R_Soldier_LAT_ard_F): EGVAR(uniform_ru,O_R_Soldier_LAT_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+    };
+
+    class GVAR(O_R_Soldier_PG_ard_F): EGVAR(uniform_ru,O_R_Soldier_PG_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
+    };
+
+    class GVAR(O_R_Soldier_SL_ard_F): EGVAR(uniform_ru,O_R_Soldier_SL_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_30Rnd_545x39_AK12_Mag_Tracer_F", "ghost_weapons_30Rnd_545x39_AK12_Mag_Tracer_F", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_30Rnd_545x39_AK12_Mag_Tracer_F", "ghost_weapons_30Rnd_545x39_AK12_Mag_Tracer_F", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow"};
+    };
+
+    class GVAR(O_R_Soldier_TL_ard_F): EGVAR(uniform_ru,O_R_Soldier_TL_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+    };
+
+    class GVAR(O_R_Soldier_ard_F): EGVAR(uniform_ru,O_R_Soldier_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
+    };
+
+    class GVAR(O_R_Soldier_lite_ard_F): EGVAR(uniform_ru,O_R_Soldier_lite_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_HandGrenade_East", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_HandGrenade_East", "SmokeShell"};
+    };
+
+    class GVAR(O_R_crew_ard_F): EGVAR(uniform_ru,O_R_crew_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "SmokeShell"};
+    };
+
+    class GVAR(O_R_engineer_ard_F): EGVAR(uniform_ru,O_R_engineer_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow"};
+    };
+
+    class GVAR(O_R_helicrew_ard_F): EGVAR(uniform_ru,O_R_helicrew_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow"};
+    };
+
+    class GVAR(O_R_helipilot_ard_F): EGVAR(uniform_ru,O_R_helipilot_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow"};
+    };
+
+    class GVAR(O_R_medic_ard_F): EGVAR(uniform_ru,O_R_medic_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+    };
+
+    class GVAR(O_R_officer_ard_F): EGVAR(uniform_ru,O_R_officer_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow"};
+    };
+
+    class GVAR(O_R_recon_AR_ard_F): EGVAR(uniform_ru,O_R_recon_AR_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -639,7 +396,7 @@ class CfgVehicles {
         vehicleClass = "MenRecon";
     };
 
-    class GVAR(min_rf_recon_desert_LAT): min_rf_recon_desert_LAT {
+    class GVAR(O_R_recon_CQ_ard_F): EGVAR(uniform_ru,O_R_recon_CQ_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -647,11 +404,9 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         editorSubcategory = "EdSubcat_Personnel_SpecialForces";
         vehicleClass = "MenRecon";
-        magazines[] = {"18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "RPG32_F", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "RPG32_F", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
     };
 
-    class GVAR(min_rf_recon_desert_medic): min_rf_recon_desert_medic {
+    class GVAR(O_R_recon_GL_ard_F): EGVAR(uniform_ru,O_R_recon_GL_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -659,11 +414,11 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         editorSubcategory = "EdSubcat_Personnel_SpecialForces";
         vehicleClass = "MenRecon";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
+        linkedItems[] = {QEGVAR(uniform_ru,V_SmershVest_01_F), "H_HelmetAggressor_cover_F", "ItemGPS", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "O_NVGoggles_grn_F"};
+        respawnLinkedItems[] = {QEGVAR(uniform_ru,V_SmershVest_01_F), "H_HelmetAggressor_cover_F", "ItemGPS", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "O_NVGoggles_grn_F"};
     };
 
-    class GVAR(min_rf_recon_desert_exp): min_rf_recon_desert_exp {
+    class GVAR(O_R_recon_JTAC_ard_F): EGVAR(uniform_ru,O_R_recon_JTAC_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -671,11 +426,9 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         editorSubcategory = "EdSubcat_Personnel_SpecialForces";
         vehicleClass = "MenRecon";
-        magazines[] = {"18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "APERSMine_Range_Mag", "APERSMine_Range_Mag", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "APERSMine_Range_Mag", "APERSMine_Range_Mag", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
     };
 
-    class GVAR(min_rf_recon_desert_JTAC): min_rf_recon_desert_JTAC {
+    class GVAR(O_R_recon_LAT_ard_F): EGVAR(uniform_ru,O_R_recon_LAT_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -683,11 +436,11 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         editorSubcategory = "EdSubcat_Personnel_SpecialForces";
         vehicleClass = "MenRecon";
-        magazines[] = {"18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "MiniGrenade", "MiniGrenade", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red", "1Rnd_Smoke_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell"};
-        respawnMagazines[] = {"18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "MiniGrenade", "MiniGrenade", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red", "1Rnd_Smoke_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell"};
+        linkedItems[] = {QEGVAR(uniform_ru,V_SmershVest_01_F), "H_HelmetAggressor_cover_F", "ItemGPS", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "O_NVGoggles_grn_F"};
+        respawnLinkedItems[] = {QEGVAR(uniform_ru,V_SmershVest_01_F), "H_HelmetAggressor_cover_F", "ItemGPS", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "O_NVGoggles_grn_F"};
     };
 
-    class GVAR(min_rf_recon_desert_TL): min_rf_recon_desert_TL {
+    class GVAR(O_R_recon_M_ard_F): EGVAR(uniform_ru,O_R_recon_M_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -695,11 +448,9 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         editorSubcategory = "EdSubcat_Personnel_SpecialForces";
         vehicleClass = "MenRecon";
-        magazines[] = {"18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "MiniGrenade", "MiniGrenade", "SmokeShell", "SmokeShellRed", "SmokeShellOrange", "SmokeShellYellow", "Chemlight_red", "Chemlight_red"};
     };
 
-    class GVAR(min_rf_recon_desert_officer): min_rf_recon_desert_officer {
+    class GVAR(O_R_recon_TL_ard_F): EGVAR(uniform_ru,O_R_recon_TL_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -707,11 +458,9 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         editorSubcategory = "EdSubcat_Personnel_SpecialForces";
         vehicleClass = "MenRecon";
-        magazines[] = {"SmokeShell", "SmokeShellRed", "SmokeShellPurple", "Chemlight_red", "Chemlight_red", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3"};
-        respawnMagazines[] = {"SmokeShell", "SmokeShellRed", "SmokeShellPurple", "Chemlight_red", "Chemlight_red", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3", "FA_minrf_18Rnd_min_rf_9x19_Mag_t3"};
     };
 
-    class GVAR(min_rf_recon_desert_saboteur): min_rf_recon_desert_saboteur {
+    class GVAR(O_R_recon_ard_F): EGVAR(uniform_ru,O_R_recon_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -719,209 +468,489 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         editorSubcategory = "EdSubcat_Personnel_SpecialForces";
         vehicleClass = "MenRecon";
-        magazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-        respawnMagazines[] = {"FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "FA_minrf_30Rnd_min_rf_545x39_Mag_desert_t3", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "18Rnd_min_rf_9x19_Mag", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
     };
 
-    class GVAR(min_rf_ka_52_grey): min_rf_ka_52_grey {
+    class GVAR(O_R_recon_exp_ard_F): EGVAR(uniform_ru,O_R_recon_exp_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_helipilot_desert);
+        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
+        vehicleClass = "MenRecon";
+        linkedItems[] = {QEGVAR(uniform_ru,V_SmershVest_01_F), "H_HelmetAggressor_F", "ItemGPS", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "O_NVGoggles_grn_F"};
+        respawnLinkedItems[] = {QEGVAR(uniform_ru,V_SmershVest_01_F), "H_HelmetAggressor_F", "ItemGPS", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "O_NVGoggles_grn_F"};
     };
 
-    class GVAR(min_rf_heli_light_grey): min_rf_heli_light_grey {
+    class GVAR(O_R_recon_medic_ard_F): EGVAR(uniform_ru,O_R_recon_medic_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_helipilot_desert);
+        editorSubcategory = "EdSubcat_Personnel_SpecialForces";
+        vehicleClass = "MenRecon";
+        linkedItems[] = {QEGVAR(uniform_ru,V_SmershVest_01_F), "H_HelmetAggressor_F", "ItemGPS", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "O_NVGoggles_grn_F"};
+        respawnLinkedItems[] = {QEGVAR(uniform_ru,V_SmershVest_01_F), "H_HelmetAggressor_F", "ItemGPS", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "O_NVGoggles_grn_F"};
     };
 
-    class GVAR(min_rf_heli_light_unarmed_grey): min_rf_heli_light_unarmed_grey {
+    class GVAR(O_R_soldier_AA_ard_F): EGVAR(uniform_ru,O_R_soldier_AA_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_helipilot_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "Titan_AA", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "Titan_AA", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
     };
 
-    class GVAR(min_rf_su_34_desert): min_rf_su_34_desert {
+    class GVAR(O_R_soldier_AR_ard_F): EGVAR(uniform_ru,O_R_soldier_AR_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_pilot_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
 
-    class GVAR(min_rf_truck_covered_desert): min_rf_truck_covered_desert {
+    class GVAR(O_R_soldier_AT_ard_F): EGVAR(uniform_ru,O_R_soldier_AT_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_driver_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "Titan_AT", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "Titan_AT", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
     };
 
-    class GVAR(min_rf_truck_transport_desert): min_rf_truck_transport_desert {
+    class GVAR(O_R_soldier_M_ard_F): EGVAR(uniform_ru,O_R_soldier_M_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_driver_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
 
-    class GVAR(min_rf_truck_box_desert): min_rf_truck_box_desert {
+    class GVAR(O_R_soldier_UAV_ard_F): EGVAR(uniform_ru,O_R_soldier_UAV_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_driver_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
     };
 
-    class GVAR(min_rf_truck_ammo_desert): min_rf_truck_ammo_desert {
+    class GVAR(O_R_soldier_UGV_02_Demining_ard_F): EGVAR(uniform_ru,O_R_soldier_UGV_02_Demining_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_driver_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
     };
 
-    class GVAR(min_rf_truck_medical_desert): min_rf_truck_medical_desert {
+    class GVAR(O_R_soldier_exp_ard_F): EGVAR(uniform_ru,O_R_soldier_exp_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_driver_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
 
-    class GVAR(min_rf_truck_fuel_desert): min_rf_truck_fuel_desert {
+    class GVAR(O_R_soldier_mine_ard_F): EGVAR(uniform_ru,O_R_soldier_mine_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_driver_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
 
-    class GVAR(min_rf_t_14_desert): min_rf_t_14_desert {
+    class GVAR(O_R_soldier_repair_ard_F): EGVAR(uniform_ru,O_R_soldier_repair_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_crew_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
     };
 
-    class GVAR(min_rf_t_15_desert): min_rf_t_15_desert {
+    class GVAR(O_R_support_AMG_ard_F): EGVAR(uniform_ru,O_R_support_AMG_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_crew_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
     };
 
-    class GVAR(min_rf_2b26_desert): min_rf_2b26_desert {
+    class GVAR(O_R_support_AMort_ard_F): EGVAR(uniform_ru,O_R_support_AMort_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_driver_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
     };
 
-    class GVAR(min_rf_sa_22_desert): min_rf_sa_22_desert {
+    class GVAR(O_R_support_GMG_ard_F): EGVAR(uniform_ru,O_R_support_GMG_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_driver_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
     };
 
-    class GVAR(min_rf_gaz_2330_desert): min_rf_gaz_2330_desert {
+    class GVAR(O_R_support_MG_ard_F): EGVAR(uniform_ru,O_R_support_MG_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_driver_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
     };
 
-    class GVAR(min_rf_gaz_2330_HMG_desert): min_rf_gaz_2330_HMG_desert {
+    class GVAR(O_R_support_Mort_ard_F): EGVAR(uniform_ru,O_R_support_Mort_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_driver_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "O_IR_Grenade", "O_IR_Grenade", "SmokeShell", "SmokeShell"};
     };
 
-    class GVAR(min_rf_Metis_desert): min_rf_Metis_desert {
+    class GVAR(O_R_RadioOperator_ard_F): EGVAR(uniform_ru,O_R_RadioOperator_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_soldier_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
     };
 
-    class GVAR(min_rf_ags_30_desert): min_rf_ags_30_desert {
+    class GVAR(O_R_Soldier_CBRN_ard_F): EGVAR(uniform_ru,O_R_Soldier_CBRN_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_soldier_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
     };
 
-    class GVAR(min_rf_Kord_desert): min_rf_Kord_desert {
+    class GVAR(O_R_sniper_ard_F): EGVAR(uniform_ru,O_R_sniper_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_soldier_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
 
-    class GVAR(min_rf_Mortar_desert): min_rf_Mortar_desert {
+    class GVAR(O_R_soldier_UAV_06_ard_F): EGVAR(uniform_ru,O_R_soldier_UAV_06_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_soldier_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
     };
 
-    class GVAR(min_rf_boat_transport): min_rf_boat_transport {
+    class GVAR(O_R_soldier_UAV_06_medical_ard_F): EGVAR(uniform_ru,O_R_soldier_UAV_06_medical_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_soldier_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+        magazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "FA_Aegis_30Rnd_545x39_7N44_t3", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_17Rnd_9x21_Mag", "ghost_weapons_HandGrenade_East", "ghost_weapons_HandGrenade_East", "SmokeShell", "SmokeShell"};
     };
 
-    class GVAR(min_rf_lifeboat): min_rf_lifeboat {
+    class GVAR(O_R_spotter_ard_F): EGVAR(uniform_ru,O_R_spotter_ard_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
         side = 0;
         faction = QUOTE(ADDON);
-        crew = QGVAR(min_rf_soldier_desert);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
     };
 
-    class GVAR(min_rf_pchela_1t): min_rf_pchela_1t {
+    class GVAR(O_R_ghillie_ard_F): EGVAR(uniform_ru,O_R_ghillie_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+    };
+
+    class GVAR(O_R_ghillie_spotter_ard_F): EGVAR(uniform_ru,O_R_ghillie_spotter_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        editorSubcategory = "EdSubcat_Personnel";
+        vehicleClass = "Men";
+    };
+
+    class GVAR(O_Heli_Light_02_dynamicLoadout_F): O_Heli_Light_02_dynamicLoadout_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_light_02\Heli_Light_02_ext_raven_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Heli_Light_02_unarmed_F): O_Heli_Light_02_unarmed_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_light_02\Heli_Light_02_ext_raven_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Heli_Attack_02_dynamicLoadout_F): O_Heli_Attack_02_dynamicLoadout_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_attack_02\Heli_Attack_02_body1_grn_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_attack_02\Heli_Attack_02_body2_grn_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Plane_CAS_02_dynamicLoadout_F): O_Plane_CAS_02_dynamicLoadout_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Fighter_Pilot_ard_F);
+    };
+
+    class GVAR(O_APC_Tracked_02_cannon_F): O_APC_Tracked_02_cannon_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\apc_tracked_02\APC_Tracked_02_ext_01_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_tracked_02\APC_Tracked_02_ext_02_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_tracked_02\RCWS30_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_tracked_02\camonet_RUS_green_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_tracked_02\cage_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_APC_Tracked_02_AA_F): O_APC_Tracked_02_AA_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\apc_tracked_02\APC_Tracked_02_ext_01_AA_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_tracked_02\APC_Tracked_02_ext_02_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_tracked_02\APC_Tracked_01_AA_Tower_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_tracked_02\camonet_RUS_green_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_tracked_02\cage_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_APC_Wheeled_02_rcws_v2_F): O_APC_Wheeled_02_rcws_v2_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\apc_wheeled_02\APC_Wheeled_02_ext_01_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_wheeled_02\APC_Wheeled_02_ext_02_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_wheeled_02\Turret_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_tracked_02\camonet_RUS_green_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_tracked_02\cage_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_MBT_02_railgun_F): O_MBT_02_railgun_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\mbt_02\MBT_02_body_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\mbt_02\MBT_02_turret_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\mbt_02\MBT_02_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_tracked_02\camonet_RUS_green_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_MBT_02_cannon_F): O_MBT_02_cannon_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\mbt_02\MBT_02_body_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\mbt_02\MBT_02_turret_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\mbt_02\MBT_02_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_tracked_02\camonet_RUS_green_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_MBT_02_arty_F): O_MBT_02_arty_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\mbt_02\MBT_02_body_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\mbt_02\MBT_02_scorcher_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\mbt_02\MBT_02_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_wheeled_02\Turret_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_tracked_02\camonet_RUS_green_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Boat_Armed_01_hmg_F): O_Boat_Armed_01_hmg_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+    };
+
+    class GVAR(O_Boat_Transport_01_F): O_Boat_Transport_01_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+    };
+
+    class GVAR(O_Lifeboat): O_Lifeboat {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+    };
+
+    class GVAR(O_SDV_01_F): O_SDV_01_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+    };
+
+    class GVAR(O_UAV_01_F): O_UAV_01_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = "O_UAV_AI";
+        // camo: Russian Sand (made from Russia (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\uav_01\UAV_01_RUgrey_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_UAV_02_dynamicLoadout_F): O_UAV_02_dynamicLoadout_F {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -929,5 +958,879 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         crew = "O_UAV_AI";
     };
+
+    class GVAR(O_UGV_01_F): O_UGV_01_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = "O_UAV_AI";
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\ugv_01\UGV_01_ext_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\ugv_01\UGV_01_int_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_wheeled_02\Turret_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_UGV_01_rcws_F): O_UGV_01_rcws_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = "O_UAV_AI";
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\ugv_01\UGV_01_ext_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\ugv_01\UGV_01_int_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_wheeled_02\Turret_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_MRAP_02_F): O_MRAP_02_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\mrap_02\MRAP_02_ext_01_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\mrap_02\MRAP_02_ext_02_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_wheeled_02\Turret_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_MRAP_02_hmg_F): O_MRAP_02_hmg_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\mrap_02\MRAP_02_ext_01_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\mrap_02\MRAP_02_ext_02_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_wheeled_02\Turret_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_MRAP_02_gmg_F): O_MRAP_02_gmg_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\mrap_02\MRAP_02_ext_01_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\mrap_02\MRAP_02_ext_02_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_wheeled_02\Turret_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Quadbike_01_F): O_Quadbike_01_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Sand (Base game))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\quadbike_01\Quadbike_01_russand_co.paa),
+            QPATHTOF(data\camo\made\quadbike_01\Quadbike_01_wheel_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Truck_02_covered_F): O_Truck_02_covered_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\truck_02\Truck_02_kab_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_02\Truck_02_kuz_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_02\Truck_02_int_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Truck_02_transport_F): O_Truck_02_transport_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\truck_02\Truck_02_kab_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_02\Truck_02_kuz_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_02\Truck_02_int_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Truck_03_transport_F): O_Truck_03_transport_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\truck_03\Truck_03_ext01_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_03\Truck_03_ext02_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_03\Truck_03_cargo_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Truck_03_covered_F): O_Truck_03_covered_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\truck_03\Truck_03_ext01_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_03\Truck_03_ext02_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_03\Truck_03_cargo_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_03\Truck_03_cover_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Truck_03_repair_F): O_Truck_03_repair_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\truck_03\Truck_03_ext01_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_03\Truck_03_ext02_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_03\Truck_03_ammo_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Truck_03_ammo_F): O_Truck_03_ammo_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\truck_03\Truck_03_ext01_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_03\Truck_03_ext02_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_03\Truck_03_cargo_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_03\Containers_02_set_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Truck_03_fuel_F): O_Truck_03_fuel_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\truck_03\Truck_03_ext01_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_03\Truck_03_ext02_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_03\Truck_03_fuel_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Truck_03_medical_F): O_Truck_03_medical_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\truck_03\Truck_03_ext01_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_03\Truck_03_ext02_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_03\Truck_03_cargo_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_03\Truck_03_cover_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Truck_02_box_F): O_Truck_02_box_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\truck_02\Truck_02_kab_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_02\Truck_02_repair_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_02\Truck_02_int_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Truck_02_medical_F): O_Truck_02_medical_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\truck_02\Truck_02_kab_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_02\Truck_02_kuz_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_02\Truck_02_int_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Truck_02_Ammo_F): O_Truck_02_Ammo_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\truck_02\Truck_02_kab_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_02\Truck_02_repair_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_02\Truck_02_int_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Truck_02_fuel_F): O_Truck_02_fuel_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\truck_02\Truck_02_kab_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_02\Truck_02_fuel_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\truck_02\Truck_02_int_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_static_AA_F): O_static_AA_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+    };
+
+    class GVAR(O_static_AT_F): O_static_AT_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+    };
+
+    class GVAR(O_HMG_01_F): O_HMG_01_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+    };
+
+    class GVAR(O_HMG_01_high_F): O_HMG_01_high_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+    };
+
+    class GVAR(O_HMG_01_A_F): O_HMG_01_A_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = "O_UAV_AI";
+    };
+
+    class GVAR(O_GMG_01_F): O_GMG_01_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+    };
+
+    class GVAR(O_GMG_01_high_F): O_GMG_01_high_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+    };
+
+    class GVAR(O_GMG_01_A_F): O_GMG_01_A_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = "O_UAV_AI";
+    };
+
+    class GVAR(O_Mortar_01_F): O_Mortar_01_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+    };
+
+    class GVAR(O_UGV_02_Science_F): O_UGV_02_Science_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = "O_UAV_AI";
+        // camo: Russian Sand (made from its own paint (Base game))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\ugv_02\ugv_russand_co.paa),
+            QPATHTOF(data\camo\made\ugv_02\tracks_russand_co.paa),
+            "\a3\soft_f_enoch\ugv_02\data\ugv2_mdf_ca.paa"
+        };
+    };
+
+    class GVAR(O_UGV_02_Demining_F): O_UGV_02_Demining_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = "O_UAV_AI";
+        // camo: Russian Sand (made from its own paint (Base game))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\ugv_02\ugv_russand_co.paa),
+            QPATHTOF(data\camo\made\ugv_02\tracks_russand_co.paa),
+            "\a3\soft_f_enoch\ugv_02\data\ugv2_mdf_ca.paa"
+        };
+    };
+
+    class GVAR(O_LSV_02_armed_F): O_LSV_02_armed_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from its own paint (Base game))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\lsv_02\CSAT_LSV_01_arid_russand_co.paa),
+            QPATHTOF(data\camo\made\lsv_02\CSAT_LSV_02_arid_russand_co.paa),
+            QPATHTOF(data\camo\made\lsv_02\CSAT_LSV_03_arid_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_LSV_02_unarmed_F): O_LSV_02_unarmed_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from its own paint (Base game))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\lsv_02\CSAT_LSV_01_arid_russand_co.paa),
+            QPATHTOF(data\camo\made\lsv_02\CSAT_LSV_02_arid_russand_co.paa),
+            QPATHTOF(data\camo\made\lsv_02\CSAT_LSV_03_arid_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_LSV_02_AT_F): O_LSV_02_AT_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\lsv_02\CSAT_LSV_01_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\lsv_02\CSAT_LSV_02_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\lsv_02\CSAT_LSV_03_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\lsv_02\Vorona_green_F_russand_co.paa),
+            QPATHTOF(data\camo\made\lsv_02\Vorona_green_F_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Heli_Transport_04_F): O_Heli_Transport_04_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_ard_F);
+        // camo: Russian Sand (made from Black (Helicopters))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_01_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_02_Black_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Heli_Transport_04_ammo_F): O_Heli_Transport_04_ammo_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_ard_F);
+        // camo: Russian Sand (made from Black (Helicopters))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_01_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_02_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext01_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext02_Black_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Heli_Transport_04_bench_F): O_Heli_Transport_04_bench_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_ard_F);
+        // camo: Russian Sand (made from Black (Helicopters))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_01_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_02_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_bench_Black_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Heli_Transport_04_box_F): O_Heli_Transport_04_box_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_ard_F);
+        // camo: Russian Sand (made from Black (Helicopters))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_01_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_02_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext01_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext02_Black_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Heli_Transport_04_covered_F): O_Heli_Transport_04_covered_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_ard_F);
+        // camo: Russian Sand (made from Black (Helicopters))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_01_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_02_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext01_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext02_Black_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Heli_Transport_04_fuel_F): O_Heli_Transport_04_fuel_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_ard_F);
+        // camo: Russian Sand (made from Black (Helicopters))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_01_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_02_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_fuel_black_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Heli_Transport_04_medevac_F): O_Heli_Transport_04_medevac_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_ard_F);
+        // camo: Russian Sand (made from Black (Helicopters))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_01_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_02_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext01_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext02_Black_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Heli_Transport_04_repair_F): O_Heli_Transport_04_repair_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_ard_F);
+        // camo: Russian Sand (made from Black (Helicopters))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_01_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\heli_transport_04_base_02_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext01_Black_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_transport_04\Heli_Transport_04_Pod_Ext02_Black_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_Plane_Fighter_02_F): O_Plane_Fighter_02_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Fighter_Pilot_ard_F);
+    };
+
+    class GVAR(O_Plane_Fighter_02_Stealth_F): O_Plane_Fighter_02_Stealth_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Fighter_Pilot_ard_F);
+    };
+
+    class GVAR(O_Radar_System_02_F): O_Radar_System_02_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = "O_UAV_AI";
+    };
+
+    class GVAR(O_SAM_System_04_F): O_SAM_System_04_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = "O_UAV_AI";
+    };
+
+    class GVAR(O_Static_Designator_02_F): O_Static_Designator_02_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = "O_UAV_AI";
+    };
+
+    class GVAR(O_UAV_06_F): O_UAV_06_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = "O_UAV_AI";
+        // camo: Russian Sand (made from Russia (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\uav_06\O_R_UAV_06_medical_russand_co.paa),
+            QPATHTOF(data\camo\made\uav_06\O_R_UAV_06_medical_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_UAV_06_medical_F): O_UAV_06_medical_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = "O_UAV_AI";
+        // camo: Russian Sand (made from Russia (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\uav_06\O_R_UAV_06_medical_russand_co.paa),
+            QPATHTOF(data\camo\made\uav_06\O_R_UAV_06_medical_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_MBT_04_cannon_F): O_MBT_04_cannon_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_ard_F);
+        // camo: Russian Sand (made from Green (Aegis))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\mbt_04\MBT_04_exterior_RUkhk_1_russand_co.paa),
+            QPATHTOF(data\camo\made\mbt_04\MBT_04_exterior_RUkhk_2_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_tracked_02\camonet_RUS_green_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_MBT_04_command_F): O_MBT_04_command_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_ard_F);
+        // camo: Russian Sand (made from Grey (Tanks))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\mbt_04\MBT_04_exterior_1_russand_co.paa),
+            QPATHTOF(data\camo\made\mbt_04\MBT_04_exterior_2_russand_co.paa),
+            QPATHTOF(data\camo\made\mbt_04\camonet_CSAT_Stripe_Desert_russand_co.paa)
+        };
+    };
+
+
+    class GVAR(Aegis_O_R_Heli_Attack_04_ard_F): EGVAR(vehicle,O_R_Heli_Attack_04_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "Mi-35 Krokodil";
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_helipilot_ard_F);
+        // camo: Russian Sand (made from Green (Ghost))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\heli_attack_04\Heli_Attack_04_ext_01_grn_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_attack_04\Heli_Attack_04_ext_02_grn_russand_co.paa),
+            QPATHTOF(data\camo\made\heli_attack_04\Heli_Attack_04_ext_03_grn_russand_co.paa)
+        };
+    };
+
+
+    class GVAR(O_R_APC_Tracked_02_medical_ard_F): EGVAR(vehicle,O_R_APC_Tracked_02_medical_F) {
+        scope = 2;
+        attendant = 1;                  // a medical vehicle in fact, not in name only (user, 2026-09-19)
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "BM-2T Stalker (Medical)";
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // a medical vehicle carries no gun (user, 2026-09-21): its parent is the game's own medical
+        // BM-2T, whose turrets are empty
+        // camo: Russian Sand (made from Green (Ghost))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\apc_tracked_02\APC_Tracked_02_ext_01_medevac_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_tracked_02\APC_Tracked_02_ext_02_RUkhk_russand_5596_co.paa),
+            "",
+            "",
+            ""
+        };
+    };
+
+    class GVAR(O_R_APC_Wheeled_04_cannon_v2_ard_F): EGVAR(vehicle,O_R_APC_Wheeled_04_cannon_v2_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "2S90M Nosorog";
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_crew_ard_F);
+        // camo: Russian Sand (made from Sand (Ghost))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\apc_wheeled_04\APC_Wheeled_04_body_sand_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_wheeled_04\APC_Wheeled_04_body2_sand_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_wheeled_04\apc_wheeled_04_sprut_turret_sand_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_tracked_02\camonet_RUS_green_russand_co.paa),
+            QPATHTOF(data\camo\made\apc_tracked_02\cage_RUkhk_russand_co.paa)
+        };
+    };
+
+    class GVAR(O_R_UGV_01_medical_ard_F): EGVAR(vehicle,O_R_UGV_01_medical_F) {
+        scope = 2;
+        attendant = 1;                  // a medical vehicle in fact, not in name only (user, 2026-09-19)
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "UGV Uran Medical";
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Green (Ghost))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\ugv_01\UGV_01_ext_medevac_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\ugv_01\UGV_01_int_RUkhk_russand_co.paa),
+            QPATHTOF(data\camo\made\ugv_01\Turret_IDAP_russand_co.paa)
+        };
+    };
+
+    class GVAR(ghost_antiship_launcher): ghost_antiship_launcher {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "3K72 Burevestnik (Anti-Ship)";
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+    };
+
+    class GVAR(ghost_antiship_radar): ghost_antiship_radar {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "Surface Search Radar";
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+    };
+
+    class GVAR(O_UAV_03_dynamicLoadout_F): B_T_UAV_03_dynamicLoadout_F {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "MQ-12 Falcon";
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = "O_UAV_AI";
+        // camo: Russian Sand (made from its own paint (Base game))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\uav_03\UAV_03_1_russand_co.paa),
+            QPATHTOF(data\camo\made\uav_03\UAV_03_2_russand_co.paa),
+            QPATHTOF(data\camo\made\uav_03\uav_03_mlod_russand_co.paa)
+        };
+    };   // the Falcon, in the east
+
+    class GVAR(O_SwitchBlade_300): B_SwitchBlade_300 {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "SwitchBlade 300";
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = "O_UAV_AI";
+    };   // loitering munition - AI only, east and ind
+
+    class GVAR(O_SwitchBlade_600): B_SwitchBlade_600 {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "SwitchBlade 600";
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = "O_UAV_AI";
+    };   // the anti-armour one
+
+    class GVAR(O_SwitchBlade_300_LaunchTube): B_SwitchBlade_300_LaunchTube_Desert {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "SwitchBlade 300 Launch Tube";
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+    };   // emplaced
+
+    class GVAR(O_SwitchBlade_600_LaunchTube): B_SwitchBlade_600_LaunchTube_Desert {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "SwitchBlade 600 Launch Tube";
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+    };   // emplaced
+
+    class GVAR(qav_o_t_625e): qav_o_t_625e {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "PGL-625E (Anti-Air)";
+        side = 0;
+        faction = QUOTE(ADDON);
+        crew = QGVAR(O_R_Soldier_AHAT_ard_F);
+        // camo: Russian Sand (made from Sand (Base game))
+        textureList[] = {};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\camo\made\qav_type08\625E_Hull_russand_co.paa),
+            QPATHTOF(data\camo\made\qav_type08\625E_wheels_russand_co.paa),
+            QPATHTOF(data\camo\made\qav_type08\camonet_aaf_digi_desert_russand_co.paa)
+        };
+    };
+
+    class GVAR(SwitchBlade_Operator): GVAR(O_R_Soldier_ard_F) {
+        scope = 2;
+        scopeCurator = 2;
+        author = QAUTHOR;
+        displayName = "SwitchBlade Operator [RUS]";
+        faction = QUOTE(ADDON);
+        items[] += {"SwitchBlade_300_Tube_Desert","SwitchBlade_600_Tube_Desert"};
+        respawnItems[] += {"SwitchBlade_300_Tube_Desert","SwitchBlade_600_Tube_Desert"};
+    };   // carries the tubes DDT fires
 
 };

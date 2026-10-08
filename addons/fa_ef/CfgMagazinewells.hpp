@@ -1,4 +1,4 @@
-class CfgMagazinewells {
+class CfgMagazineWells {
     // 6.5x39 Caseless MX well — EF 30Rnd coyote tracer mags
     class MX_65x39 {
         ADDON[] += {

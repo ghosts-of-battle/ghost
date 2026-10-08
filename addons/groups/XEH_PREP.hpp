@@ -11,6 +11,7 @@ PREP(removeFromGroup);
 PREP(selectPlatoon);
 PREP(selectPosition);
 PREP(setupPlayer);
+PREP(buildArsenal);
 PREP(styleGroupMenu);
 PREP(toggleRoleGrant);
 PREP(updateGroups);

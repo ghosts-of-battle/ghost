@@ -4,7 +4,7 @@
 //  listed as-is; 7.62x54R and .50 use the fitted mags from this addon's
 //  CfgMagazines.hpp. (Atlas AUG/FAMAS wells live in ghostfa_atlas.)
 // =====================================================================
-class CfgMagazinewells {
+class CfgMagazineWells {
     // ---- 7.62x51 — SR25 (Aegis) ----
     class Aegis_SR25_762x51 {
         ADDON[] += {
@@ -197,9 +197,5 @@ class CfgMagazinewells {
             "FA_Aegis_30Rnd_545x39_7U5_T_Orange",
             "FA_Aegis_30Rnd_545x39_7U5_T_IR"
         };
-    };
-    // ---- 9x21 - Gepard SMG (Aegis) ----
-    class EGVAR(weapons,SMG_Gepard_9x21) {
-        ADDON[] += {"FA_b_40Rnd_9x21_Gepard_Mk424_AP"};
     };
 };

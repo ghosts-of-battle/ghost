@@ -33,4 +33,4 @@ the load order cannot touch it.
 
 ## Ships
 
-2 unit classes, 349 weapon/item classes.
+2 unit classes, 247 weapon/item classes.

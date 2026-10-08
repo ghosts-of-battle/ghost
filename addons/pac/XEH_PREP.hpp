@@ -83,6 +83,7 @@ PREP(structFields);
 PREP(structItems);
 PREP(canTake);
 PREP(applyTemp);
+PREP(sessionSkills);
 PREP(templatesApply);
 PREP(radioKeys);
 PREP(radioFromMission);

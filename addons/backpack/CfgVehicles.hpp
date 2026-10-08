@@ -96,7 +96,7 @@ class CfgVehicles {
         displayName="[Ghost] Assault Pack (Enhanced)";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\backpack_compact_multicam_snow_co.paa),
-            QPATHTOF(data\vests_Multicam_Snow_co.paa)
+            QPATHTOEF(vests,data\vests_mcam_snow_co.paa)
         };
         picture=QPATHTOF(data\ui\icon_B_AssaultPack_Multicam_Snow_ca.paa);
         MACRO_ITEM_COMMON

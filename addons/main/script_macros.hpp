@@ -216,6 +216,85 @@
         ace_hearing_lowerVolume = 0.60; \
         ace_hearing_hasEHP = 1;
 
+// GHOST'S PROTECTION, ONCE. The HitpointsProtectionInfo every ghost combat
+// helmet and plate carrier wears, so a pack ported in later (MIG, 2026-10-07)
+// lands on the same numbers as the gear already here instead of its own.
+// Goes inside `class ItemInfo: ItemInfo { ... };` - mass and load stay the item's.
+#define GHOST_HELMET_STANDARD_PROTECTION \
+    class HitpointsProtectionInfo { \
+        class Head { \
+            hitpointName = "HitHead"; \
+            armor = 6; \
+            passThrough = 0.5; \
+        }; \
+    };
+
+#define GHOST_PLATE_CARRIER_STANDARD_PROTECTION \
+    class HitpointsProtectionInfo { \
+        class Chest { \
+            hitpointName = "HitChest"; \
+            armor = 29; \
+            passThrough = 0.085; \
+        }; \
+        class Body { \
+            hitpointName = "HitBody"; \
+            passThrough = 0.085; \
+        }; \
+        class Diaphragm { \
+            hitpointName = "HitDiaphragm"; \
+            armor = 29; \
+            passThrough = 0.085; \
+        }; \
+        class Abdomen { \
+            hitpointName = "HitAbdomen"; \
+            armor = 19; \
+            passThrough = 0.255; \
+        }; \
+        class Arms { \
+            hitpointName = "HitArms"; \
+            armor = 12; \
+            passThrough = 0.55; \
+        }; \
+        class Legs { \
+            hitpointName = "HitLegs"; \
+            armor = 12; \
+            passThrough = 0.55; \
+        }; \
+    };
+
+#define GHOST_PLATE_CARRIER_HEAVY_PROTECTION \
+    class HitpointsProtectionInfo { \
+        class Chest { \
+            hitpointName = "HitChest"; \
+            armor = 34; \
+            passThrough = 0.06; \
+        }; \
+        class Body { \
+            hitpointName = "HitBody"; \
+            passThrough = 0.06; \
+        }; \
+        class Diaphragm { \
+            hitpointName = "HitDiaphragm"; \
+            armor = 34; \
+            passThrough = 0.06; \
+        }; \
+        class Abdomen { \
+            hitpointName = "HitAbdomen"; \
+            armor = 24; \
+            passThrough = 0.21; \
+        }; \
+        class Arms { \
+            hitpointName = "HitArms"; \
+            armor = 14; \
+            passThrough = 0.5; \
+        }; \
+        class Legs { \
+            hitpointName = "HitLegs"; \
+            armor = 14; \
+            passThrough = 0.5; \
+        }; \
+    };
+
 
 // THE SEVEN ARMA RANKS, IN ORDER, ONCE. Every gate, rank set and rank compare
 // in the mod used to carry its own copy of this list; a copy that disagreed

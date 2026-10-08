@@ -113,66 +113,6 @@ switch (true) do {
             [_unit + ".motorpool." + _id, createHashMapFromArray [["section", "motorpool"], ["id", _id], ["items", _variants getOrDefault [_id, createHashMap]]]] call _fnc_doc;
         };
     };
-    // AN ORDER IS ITS OWN DOCUMENT, <unit>.opord.<id>, the way a role is -
-    // and a removed one a tombstone the reader skips (2026-09-09).
-    case (_section isEqualTo "opords"): {
-        GVAR(structureEdited) set ["opords", _items];
-        if (GVAR(svcUp) && _id isNotEqualTo "") then {
-            private _doc = if (_id in _items) then {
-                createHashMapFromArray [["section", "opord"], ["id", _id], ["order", _items get _id]]
-            } else {
-                createHashMapFromArray [["section", "opord"], ["id", _id], ["deleted", true]]
-            };
-            [_unit + ".opord." + _id, _doc] call _fnc_doc;
-        };
-    };
-    // A VARIANT of the arsenal or the motorpool - a platoon's, a squad's, a
-    // role's, or a named version - is its own document (2026-09-09).
-    case (_section isEqualTo "arsenal" && _id isNotEqualTo ""): {
-        private _ars = GVAR(structure) getOrDefault ["arsenal", createHashMap];
-        GVAR(structureEdited) set ["arsenal", _ars];
-        if (GVAR(svcUp)) then {
-            private _lists = (_ars getOrDefault ["variants", createHashMap]) getOrDefault [_id, createHashMap];
-            [_unit + ".arsenal." + _id, createHashMapFromArray [["section", "arsenal"], ["id", _id], ["lists", _lists]]] call _fnc_doc;
-        };
-    };
-    case (_section isEqualTo "motorpool" && _id isNotEqualTo ""): {
-        private _variants = GVAR(structure) getOrDefault ["motorpoolVariants", createHashMap];
-        GVAR(structureEdited) set ["motorpoolVariants", _variants];
-        if (GVAR(svcUp)) then {
-            [_unit + ".motorpool." + _id, createHashMapFromArray [["section", "motorpool"], ["id", _id], ["items", _variants getOrDefault [_id, createHashMap]]]] call _fnc_doc;
-        };
-    };
-    // AN ORDER IS ITS OWN DOCUMENT, <unit>.opord.<id>, the way a role is -
-    // and a removed one a tombstone the reader skips (2026-09-09).
-    case (_section isEqualTo "opords"): {
-        GVAR(structureEdited) set ["opords", _items];
-        if (GVAR(svcUp) && _id isNotEqualTo "") then {
-            private _doc = if (_id in _items) then {
-                createHashMapFromArray [["section", "opord"], ["id", _id], ["order", _items get _id]]
-            } else {
-                createHashMapFromArray [["section", "opord"], ["id", _id], ["deleted", true]]
-            };
-            [_unit + ".opord." + _id, _doc] call _fnc_doc;
-        };
-    };
-    // A VARIANT of the arsenal or the motorpool - a platoon's, a squad's, a
-    // role's, or a named version - is its own document (2026-09-09).
-    case (_section isEqualTo "arsenal" && _id isNotEqualTo ""): {
-        private _ars = GVAR(structure) getOrDefault ["arsenal", createHashMap];
-        GVAR(structureEdited) set ["arsenal", _ars];
-        if (GVAR(svcUp)) then {
-            private _lists = (_ars getOrDefault ["variants", createHashMap]) getOrDefault [_id, createHashMap];
-            [_unit + ".arsenal." + _id, createHashMapFromArray [["section", "arsenal"], ["id", _id], ["lists", _lists]]] call _fnc_doc;
-        };
-    };
-    case (_section isEqualTo "motorpool" && _id isNotEqualTo ""): {
-        private _variants = GVAR(structure) getOrDefault ["motorpoolVariants", createHashMap];
-        GVAR(structureEdited) set ["motorpoolVariants", _variants];
-        if (GVAR(svcUp)) then {
-            [_unit + ".motorpool." + _id, createHashMapFromArray [["section", "motorpool"], ["id", _id], ["items", _variants getOrDefault [_id, createHashMap]]]] call _fnc_doc;
-        };
-    };
     // A LIST-SHAPED DOCUMENT is {section, lists}, not {section, items}.
     case (_section isEqualTo "arsenal"): {
         GVAR(structureEdited) set [_section, GVAR(structure) getOrDefault [_section, createHashMap]];

@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Luxury\Heli_Transport_02_int_01_luxury_SMDI.paa";
+	texture="z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_int_01_SMDI.paa";
 	uvSource="tex";
 	class uvTransform
 	{

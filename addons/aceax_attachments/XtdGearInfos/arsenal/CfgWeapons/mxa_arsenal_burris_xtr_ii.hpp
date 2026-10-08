@@ -6,13 +6,6 @@ class optic_DMS
     condition = "CLEAN";
     camo = "STD";
 };
-class optic_DMS_snake_lxWS
-{
-    model = "mxa_arsenal_burris_xtr_ii";
-    variant = "STD";
-    condition = "CLEAN";
-    camo = "SNAKE";
-};
 class optic_DMS_weathered_F
 {
     model = "mxa_arsenal_burris_xtr_ii";

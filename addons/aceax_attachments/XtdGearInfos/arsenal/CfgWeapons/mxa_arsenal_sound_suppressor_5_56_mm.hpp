@@ -14,8 +14,3 @@ class muzzle_snds_m_snd_F
     model = "mxa_arsenal_sound_suppressor_5_56_mm";
     camo = "SND";
 };
-class suppressor_l_camo_lxWS
-{
-    model = "mxa_arsenal_sound_suppressor_5_56_mm";
-    camo = "STRIPES";
-};

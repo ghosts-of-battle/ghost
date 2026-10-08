@@ -12,7 +12,6 @@ Future Ammunition in the MPP pistols' own magazines - each pistol's stick filled
 - `ace_ballistics` _(external)_
 - `ghost_fa_ammo`
 - `ghost_fa_extracal`
-- `ghost_fa_rf`
 - `MPP_PISTOLS` _(external)_
 
 Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking the load order when something above is absent.

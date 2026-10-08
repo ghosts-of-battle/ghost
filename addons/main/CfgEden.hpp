@@ -7,7 +7,7 @@
 // Title.type". ALiVE learnt this the hard way (ALiVE.OS addons/main/
 // CfgVehicles.hpp:6-21); the lesson is copied, not relearnt.
 class ctrlControlsGroupNoScrollbars;
-class ctrlListBox;
+class ctrlListbox;
 class ctrlStatic;
 class ctrlEdit;
 class ctrlButton;

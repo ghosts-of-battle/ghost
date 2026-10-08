@@ -53,7 +53,6 @@ class CfgVehicles {
     class B_ViperHarness_hex_Exp_F;
     class B_ViperHarness_hex_JTAC_F;
     class B_ViperHarness_hex_LAT_F;
-    class B_ViperHarness_hex_LAT_lxWS;
     class B_ViperHarness_hex_M_F;
     class B_ViperHarness_hex_Medic_F;
     class B_ViperHarness_hex_TL_F;
@@ -498,14 +497,6 @@ class CfgVehicles {
                     "\z\ghost\addons\uniform_pla\data\A\backpack_viperop_cn_xingkong_a_co.paa"
                 };
     };
-    class ghost_uniform_pla_B_ViperHarness_hex_LAT_lxWS_A: B_ViperHarness_hex_LAT_lxWS {
-        author = "Seb (ACP), vendored by 2040";
-        scope = 1;
-        scopeCurator = 0;
-        hiddenSelectionsTextures[] = {
-                    "\z\ghost\addons\uniform_pla\data\A\backpack_viperop_cn_xingkong_a_co.paa"
-                };
-    };
     class ghost_uniform_pla_B_ViperHarness_hex_JTAC_F_A: B_ViperHarness_hex_JTAC_F {
         author = "Seb (ACP), vendored by 2040";
         scope = 1;
@@ -827,14 +818,6 @@ class CfgVehicles {
                 };
     };
     class ghost_uniform_pla_B_ViperHarness_hex_LAT_F_W: B_ViperHarness_hex_LAT_F {
-        author = "Seb (ACP), vendored by 2040";
-        scope = 1;
-        scopeCurator = 0;
-        hiddenSelectionsTextures[] = {
-                    "\z\ghost\addons\uniform_pla\data\W\backpack_viperop_cn_xingkong_w_co.paa"
-                };
-    };
-    class ghost_uniform_pla_B_ViperHarness_hex_LAT_lxWS_W: B_ViperHarness_hex_LAT_lxWS {
         author = "Seb (ACP), vendored by 2040";
         scope = 1;
         scopeCurator = 0;

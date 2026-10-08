@@ -167,10 +167,12 @@ a repaint of what is already on screen rather than a rebuild.
 | `dark` | **Night / Red** — `#141514`, ink `#e6e5e2`, accent `#ff563c` |
 | `nightOlive` | **Night Olive** — `#101411`, ink `#d9e0d4`, accent `#9cb43c` |
 | `nightSand` | **Night Sand** — `#161310`, ink `#e5e0d6`, accent `#c78221` |
+| `brass` | **Brass** — the briefing deck's palette: `#f4f2ec`, ink `#1c2321`, accent `#7a6224` |
+| `nightBrass` | **Night Brass** — `#1c2321`, ink `#f4f2ec`, accent `#c8a24a` |
 | `custom` | three settings, each `#RRGGBB` or the older `r,g,b`; anything empty falls back to the Field Grey answer |
 
-Three day grounds and three night ones, in **matching pairs** — Field Grey with
-Night / Red, Olive with Night Olive, Sand with Night Sand — so a unit that runs
+Four day grounds and four night ones, in **matching pairs** — Field Grey with
+Night / Red, Olive with Night Olive, Sand with Night Sand, Brass with Night Brass — so a unit that runs
 olive by day is not forced onto red the moment the sun goes down. A night scheme
 is the dark ground under its day scheme's own accent, held down to what does not
 blow your eyes out at 0200.
@@ -179,14 +181,15 @@ The dark one was called *Night / NVG*, which claimed something it never did: no
 scheme here knows or cares whether the player is wearing tubes. It is the red
 night ground, and it is named that.
 
-All six are switchable in game from the settings app, which shows them as the
-three tokens they are made of rather than as six words.
+All eight are switchable in game from the settings app, which shows them as the
+three tokens they are made of rather than as eight words. The website offers
+the same eight (DIVINER_Web `src/schemes.php`).
 
 **A mission can add its own row.** `GHOST_TacpadSchemes` in the mission's
 `config\config_tacpad.hpp` — one class per preset, `name` plus `ground`, `ink`
-and `accent` — is drawn under the shipped six as MISSION PRESETS. Each one is
+and `accent` — is drawn under the shipped eight as MISSION PRESETS. Each one is
 the `custom` scheme with its three tokens filled in, so a unit palette costs the
-mission one file and this addon nothing: there is no seventh scheme name here,
+mission one file and this addon nothing: there is no extra scheme name here,
 and there is nothing for a mission that does not define any to fall over.
 See `ghost_tacpad_apps_fnc_missionSchemes`.
 

@@ -77,31 +77,11 @@ class CfgAmmo {
     // self-contained on the vanilla .50 base; the ACE metric props (mm / g)
     // drive Advanced Ballistics. Magazines + weapon wiring pending RF classnames.
     // =========================================================
-    class B_127x99_Ball;
-    // 7N52 Molot — tungsten AP, transonic. Barrier / light-armor at short range.
-    class FA_rf_ammo_127x55_7N52: B_127x99_Ball {
-        displayName = "7N52 Molot";
-        caliber = 3.5; hit = 22; typicalSpeed = 430; airFriction = -0.0011;
-        ACE_caliber = 12.95; ACE_bulletLength = 35.0; ACE_bulletMass = 20.0;
-        ACE_dragModel = 7; ACE_ballisticCoefficients[] = {0.15};
-        ACE_muzzleVelocities[] = {430}; ACE_barrelLengths[] = {230};
-    };
-    // 7U13 Molot-S — subsonic tungsten AP. Suppressed, quiet, hits hard.
-    class FA_rf_ammo_127x55_7U13: B_127x99_Ball {
-        displayName = "7U13 Molot-S";
-        caliber = 2.8; hit = 26; typicalSpeed = 290; airFriction = -0.0009;
-        ACE_caliber = 12.95; ACE_bulletLength = 33.0; ACE_bulletMass = 22.0;
-        ACE_dragModel = 1; ACE_ballisticCoefficients[] = {0.20};
-        ACE_muzzleVelocities[] = {290}; ACE_barrelLengths[] = {230};
-    };
-    // 7U14 Uragan — subsonic heavy HP. Suppressed anti-personnel, massive bullet.
-    class FA_rf_ammo_127x55_7U14: B_127x99_Ball {
-        displayName = "7U14 Uragan";
-        caliber = 1.6; hit = 35; typicalSpeed = 290; airFriction = -0.0008;
-        ACE_caliber = 12.95; ACE_bulletLength = 40.0; ACE_bulletMass = 33.0;
-        ACE_dragModel = 1; ACE_ballisticCoefficients[] = {0.25};
-        ACE_muzzleVelocities[] = {290}; ACE_barrelLengths[] = {230};
-    };
+    // The rounds live in ghost_fa_ammo since 2026-10-05: fa_tmt, fa_adf and fa_mpp issue them without
+    // Reaction Forces loaded. The FA_ammo_ aliases in CfgAmmo_compat.hpp still build on them.
+    class FA_rf_ammo_127x55_7N52;
+    class FA_rf_ammo_127x55_7U13;
+    class FA_rf_ammo_127x55_7U14;
 
     // =========================================================
     // CSAT RC40 revolver GL (ASh-12 GL) — 2040. Self-contained on the vanilla
@@ -135,16 +115,6 @@ class CfgAmmo {
         hit = 60; indirectHit = 14; indirectHitRange = 5;
     };
 
-    // 9x19 Mk422 AP for the Glock 19X (user, 2026-09-27: "make mags for 17Rnd_9x19_Mag_RF, 33Rnd_9x19_Mag_Tan_RF").
-    // The Rearma Mk422's figures, on the base game's ball round so it loads without Rearma and is tiered.
-    class B_9x21_Ball;
-    class FA_rf_9x19_Mk422_AP: B_9x21_Ball {
-        displayName = "9x19 Mk422 AP";
-        caliber = 1.8; hit = 8; typicalSpeed = 400; airFriction = -0.0020; deflecting = 22;
-        ACE_caliber = 9.02; ACE_bulletLength = 15.2; ACE_bulletMass = 5.4;
-        ACE_dragModel = 1; ACE_ballisticCoefficients[] = {0.140};
-        ACE_muzzleVelocities[] = {400}; ACE_barrelLengths[] = {119};
-    };
 
     #include "CfgAmmo_compat.hpp"
 };

@@ -274,9 +274,10 @@ switch (_view) do {
         [_body, [_w * 0.80, _y, _w * 0.20 - _pad, _rowH], "STATUS", _mute, 0.6, true, "right", true] call ghost_tacpad_fnc_drawText;
         _y = _y + _rowH;
         [_body, [_pad, _y, _w - 2 * _pad, RULE_THIN * pixelH], _line] call ghost_tacpad_fnc_drawFill;
-        _y = _y + _padY;
+        _y = _y + _padY - _rowH;          // each row steps down onto itself before it draws
 
         {
+            _y = _y + _rowH;
             if (_y > _h - _rowH) exitWith {};
             _x params ["_rUid", "_name", "_rankId", "_roleId", "", "_statusId"];
             private _mine = _rUid isEqualTo _uid;
@@ -294,8 +295,6 @@ switch (_view) do {
                 {["pac"] call ghost_tacpad_fnc_openApp} call CBA_fnc_execNextFrame;
             }] call ghost_tacpad_fnc_drawHit;
             _rowHit setVariable [QGVAR(rowUid), _rUid];
-
-            _y = _y + _rowH;
         } forEach _roster;
     };
 
@@ -465,9 +464,10 @@ switch (_view) do {
         [_body, [_w * 0.88, _y, _w * 0.12 - _pad, _rowH], "REPLIES", _mute, 0.6, true, "right", true] call ghost_tacpad_fnc_drawText;
         _y = _y + _rowH;
         [_body, [_pad, _y, _w - 2 * _pad, RULE_THIN * pixelH], _line] call ghost_tacpad_fnc_drawFill;
-        _y = _y + _padY;
+        _y = _y + _padY - _rowH;          // each row steps down onto itself before it draws
         private _kinds = GVAR(ticketKinds);
         {
+            _y = _y + _rowH;
             if (_y > _h - _rowH) exitWith {};
             private _t = _x;
             private _kid = _t getOrDefault ["kind", ""];
@@ -484,7 +484,6 @@ switch (_view) do {
                 {["pac"] call ghost_tacpad_fnc_openApp} call CBA_fnc_execNextFrame;
             }] call ghost_tacpad_fnc_drawHit;
             _hit setVariable [QGVAR(id), _t getOrDefault ["id", ""]];
-            _y = _y + _rowH;
         } forEach GVAR(myTickets);
     };
 
@@ -523,15 +522,16 @@ switch (_view) do {
         private _replies = _t getOrDefault ["replies", []];
         if !(_replies isEqualType []) then {_replies = []};
         [_body, [_pad, _y, _w - 2 * _pad, _rowH], format ["THREAD  %1", count _replies], _mute, 0.65, true] call ghost_tacpad_fnc_drawText;
-        _y = _y + _rowH + _padY;
+        _y = _y + _rowH;
         private _foot = _h - _rowH * 4;
+        // each post steps over the gap above it before it draws; the gap after the last one is added below the loop
         {
+            _y = _y + _padY;
             if (_y > _foot - _rowH * 2) exitWith {
                 [_body, [_pad, _y, _w - 2 * _pad, _rowH], "... more on the website", _dim, 0.65, false] call ghost_tacpad_fnc_drawText;
-                _y = _y + _rowH;
+                _y = _y + _rowH - _padY;
             };
             private _r = _x;
-            if !(_r isEqualType createHashMap) then {continue};
             private _head = format ["%1   %2%3", _r getOrDefault ["byName", ""], (_r getOrDefault ["at", ""]) select [0, 16],
                 ["", "   marked " + toUpper (_r getOrDefault ["status", ""])] select ((_r getOrDefault ["status", ""]) isNotEqualTo "")];
             [_body, [_pad, _y, _w - 2 * _pad, _rowH], _head, _mute, 0.65, true] call ghost_tacpad_fnc_drawText;
@@ -539,12 +539,11 @@ switch (_view) do {
             private _text = _r getOrDefault ["text", ""];
             if !(_text isEqualType "") then {_text = str _text};
             if (_text isNotEqualTo "") then {["", _text] call _fnc_wrapped};
-            _y = _y + _padY;
-        } forEach _replies;
+        } forEach (_replies select {_x isEqualType createHashMap});
 
         // the reply box - a real edit control in the body, its text kept
         // across the tile's redraws in GVAR(reqReply)
-        _y = _foot max _y;
+        _y = _foot max (_y + _padY);
         [_body, [_pad, _y, _labW - _pad, _rowH], "REPLY", _mute, 0.65, true, "right", true] call ghost_tacpad_fnc_drawText;
         private _multi = ["RscEdit", "RscEditMulti"] select (isClass (configFile >> "RscEditMulti"));
         private _e = _display ctrlCreate [_multi, -1, _body];
@@ -702,11 +701,13 @@ switch (_view) do {
             [_body, [_pad, _y, _w - 2 * _pad, _rowH * 2], "The unit has not written its questions yet - an admin sets them on the website (Applications, Edit the questions).", _dim, 0.7, false] call ghost_tacpad_fnc_drawText;
         };
         [_body, [0, _y, _w, RULE_THIN * pixelH], _dim] call ghost_tacpad_fnc_drawFill;
-        _y = _y + _padY * 2;
+        _y = _y + _padY;
 
         private _multi = ["RscEdit", "RscEditMulti"] select (isClass (configFile >> "RscEditMulti"));
         private _drawn = 0;
+        // each question steps over the gap above it before it draws; the gap after the last one is added below the loop
         {
+            _y = _y + _padY;
             private _q = _x;
             private _qid = _q getOrDefault ["id", ""];
             private _type = toLower (_q getOrDefault ["type", "text"]);
@@ -714,7 +715,7 @@ switch (_view) do {
             private _help = _q getOrDefault ["help", ""];
             if (_y > _h - _rowH * (_lines + 3)) exitWith {
                 [_body, [_pad, _y, _w - 2 * _pad, _rowH], format ["... %1 more question(s) - the website's Apply page has them all", (count _questions) - _drawn], _dim, 0.65, false] call ghost_tacpad_fnc_drawText;
-                _y = _y + _rowH;
+                _y = _y + _rowH - _padY;
             };
             private _label = _q getOrDefault ["label", _qid];
             if ((_q getOrDefault ["required", false]) in [true, 1, "1", "true"]) then {_label = _label + " *"};
@@ -765,9 +766,9 @@ switch (_view) do {
                 [_body, [_valX, _y, _valW, _rowH * 0.8], _help, _dim, 0.6, false] call ghost_tacpad_fnc_drawText;
                 _y = _y + _rowH * 0.8;
             };
-            _y = _y + _padY;
             _drawn = _drawn + 1;
         } forEach _questions;
+        _y = _y + _padY;
 
         private _btn = ["SEND APPLICATION", "UPDATE MY APPLICATION"] select (_status isEqualTo "new");
         [_body, [_valX, _y, _w * 0.30, _rowH], [_accent # 0, _accent # 1, _accent # 2, 0.14]] call ghost_tacpad_fnc_drawFill;

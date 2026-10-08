@@ -944,7 +944,7 @@ class GVAR(console) {
 
         class PLAYER_SKILLS_EOD_LABEL: RscADMPStructuredText {
             idc = IDC_ADMINPANEL_PLAYER_SKILLS_EOD_LABEL;
-            text = "<t font='RobotoCondensedBold' size='0.75'>EOD</t>";
+            text = "<t font='RobotoCondensedBold' size='0.75'>BRC</t>";
             x = "0.873 * safezoneW + safezoneX";
             y = "0.512 * safezoneH + safezoneY";
             w = "0.030 * safezoneW";
@@ -1022,29 +1022,44 @@ class GVAR(console) {
         // LEAD - the mission's isLeader customVariable, the platoon-view and
         // HQ-tag gate. With this, the panel covers every skill flag the
         // mission defines (isISR, isJFO, isLeader).
-        class PLAYER_SKILLS_LEAD_CHECKBOX: RscADMPCheckbox {
-            idc = IDC_ADMINPANEL_PLAYER_SKILLS_LEAD_CHECKBOX;
+        class PLAYER_SKILLS_MKS_CHECKBOX: RscADMPCheckbox {
+            idc = IDC_ADMINPANEL_PLAYER_SKILLS_MKS_CHECKBOX;
             x = "0.951 * safezoneW + safezoneX";
             y = "0.540 * safezoneH + safezoneY";
             w = "0.018 * safezoneW";
             h = "0.024 * safezoneH";
         };
 
-        class PLAYER_SKILLS_LEAD_LABEL: RscADMPStructuredText {
-            idc = IDC_ADMINPANEL_PLAYER_SKILLS_LEAD_LABEL;
-            text = "<t font='RobotoCondensedBold' size='0.75'>LEAD</t>";
+        class PLAYER_SKILLS_MKS_LABEL: RscADMPStructuredText {
+            idc = IDC_ADMINPANEL_PLAYER_SKILLS_MKS_LABEL;
+            text = "<t font='RobotoCondensedBold' size='0.75'>MKS</t>";
             x = "0.971 * safezoneW + safezoneX";
             y = "0.540 * safezoneH + safezoneY";
             w = "0.030 * safezoneW";
             h = "0.024 * safezoneH";
         };
 
+        class PLAYER_SKILLS_SNP_CHECKBOX: RscADMPCheckbox {
+            idc = IDC_ADMINPANEL_PLAYER_SKILLS_SNP_CHECKBOX;
+            x = "0.853 * safezoneW + safezoneX";
+            y = "0.569 * safezoneH + safezoneY";
+            w = "0.018 * safezoneW";
+            h = "0.024 * safezoneH";
+        };
+        class PLAYER_SKILLS_SNP_LABEL: RscADMPStructuredText {
+            idc = IDC_ADMINPANEL_PLAYER_SKILLS_SNP_LABEL;
+            text = "<t font='RobotoCondensedBold' size='0.75'>SNP</t>";
+            x = "0.873 * safezoneW + safezoneX";
+            y = "0.569 * safezoneH + safezoneY";
+            w = "0.030 * safezoneW";
+            h = "0.024 * safezoneH";
+        };
         class PLAYER_SKILLS_APPLY_BUTTON: RscADMPButton {
             idc = IDC_ADMINPANEL_PLAYER_SKILLS_APPLY_BUTTON;
             text = "APPLY SKILLS";
-            x = "0.853 * safezoneW + safezoneX";
+            x = "0.903 * safezoneW + safezoneX";
             y = "0.566 * safezoneH + safezoneY";
-            w = "0.135 * safezoneW";
+            w = "0.085 * safezoneW";
             h = "0.030 * safezoneH";
             colorBackground[] = {0.85, 0.28, 0.20, 1};
             colorText[] = {0.05, 0.05, 0.05, 1};

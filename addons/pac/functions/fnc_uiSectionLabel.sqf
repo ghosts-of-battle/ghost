@@ -17,12 +17,12 @@ params [["_sec", "", [""]]];
 
 switch (_sec) do {
     case "ranks": {["Ranks", "The ladder. Abbrev, pay grade, which Arma rank each maps to, and the points required to reach it."]};
-    case "skills": {["Skills", "What a man can hold. Effects are what having it does: medic:1, engineer:1, eod:1, var:<name>."]};
+    case "skills": {["Skills", "What a man can hold. Effects are what having it does: medic:1, engineer:1, eod:1, var:<name>, arsenal:<name> (adds the qual_<name> arsenal)."]};
     case "awards": {["Awards", "Badges, ribbons and medals an admin can give."]};
     case "statuses": {["Statuses", "Active, on leave, reserve - one word an operator is in."]};
     case "promotion": {["Promotion", "The weights points are earned at, and the rung each rank sits on (rank_<id>)."]};
     case "trainings": {["Trainings", "Courses a man can be put through."]};
-    case "settings": {["Settings", "autoSlot 1 or 0 - slotMatch role or slot - savedLoadouts a count, 0 for off."]};
+    case "settings": {["Settings", "autoSlot 1 or 0 - slotMatch role or slot - arsenalMode role, skills or both - savedLoadouts a count, 0 for off."]};
     case "admins": {["Admins", "Who may open this. A Steam id and a name."]};
     case "traits": {["Custom variables", "The unit's own variables a role can set on a man - name, yes/no or a number, what it does."]};
     case "nets": {["Messaging nets", "The mailboxes a role reads. Order is the order they list in."]};

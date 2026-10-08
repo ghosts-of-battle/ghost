@@ -247,12 +247,6 @@ class CfgGroups {
                     faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_mech_inf.paa";
 
-                    class Unit0 {
-                        side = 1;
-                        vehicle = QGVAR(APC_HMG);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
 
                     class Unit1 {
                         side = 1;
@@ -324,12 +318,6 @@ class CfgGroups {
                     faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_mech_inf.paa";
 
-                    class Unit0 {
-                        side = 1;
-                        vehicle = QGVAR(APC_HMG);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
 
                     class Unit1 {
                         side = 1;
@@ -483,19 +471,7 @@ class CfgGroups {
                     faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_motor_inf.paa";
 
-                    class Unit0 {
-                        side = 1;
-                        vehicle = QGVAR(Pickup_Covered);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
 
-                    class Unit1 {
-                        side = 1;
-                        vehicle = QGVAR(Pickup_Covered);
-                        rank = "PRIVATE";
-                        position[] = {5,-5,0};
-                    };
 
                     class Unit2 {
                         side = 1;
@@ -630,12 +606,6 @@ class CfgGroups {
                     faction = QUOTE(ADDON);
                     icon = "\A3\UI_F\Data\Map\Markers\NATO\b_motor_inf.paa";
 
-                    class Unit0 {
-                        side = 1;
-                        vehicle = QGVAR(Pickup_Covered);
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
 
                     class Unit1 {
                         side = 1;

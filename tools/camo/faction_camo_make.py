@@ -124,11 +124,17 @@ def chip(h, sat, ref, factor):
 # russand: #4f4837, measured off Aegis's own sand sheet on the Boomerang (paint_colour, 2026-09-20), so a made
 # vehicle matches a copied one
 # 2026-09-21, "pur white for artic": the EU arctic is a plain white paint, the game's own clean white
-TARGET = {"rusgreen": np.array(REF["Russian Green"], dtype=np.float32),
-          "russand": np.array([0x4f, 0x48, 0x37], dtype=np.float32) / 255,
+# 2026-10-06, "remake russia without the e22 but make camos to match the e22 color scheme": the Russian green and sand
+# are e22 RAF's woodland and arid paint, measured with paint_ref.paint_colour off its T-100 hull sheets (#2e3129,
+# #504940) - a shade off Aegis's green (#2d2e25) and the old sand (#4f4837). The Turkish tropical keeps the old green
+# (TARGET_GREEN_SRC) - it was only ever borrowed from Russia.
+E22_WOODLAND = np.array([0x2e, 0x31, 0x29], dtype=np.float32) / 255
+E22_ARID = np.array([0x50, 0x49, 0x40], dtype=np.float32) / 255
+TARGET = {"rusgreen": E22_WOODLAND,
+          "russand": E22_ARID,
           "euarc": np.ones(3, dtype=np.float32)}
-TARGET_GREEN_SRC = TARGET["rusgreen"]      # the Russian green, reused by the Turkish tropical
-TARGET_KEEP = {"rusgreen": np.array(REF["Russian Green"], dtype=np.float32)}
+TARGET_GREEN_SRC = np.array(REF["Russian Green"], dtype=np.float32)      # the Turkish tropical's green
+TARGET_KEEP = {"rusgreen": E22_WOODLAND}
 # A camo that is a MOD's own scheme, copied as it is rather than made:
 #   (scheme name, the mods it may come from, what to do for a model the mod has no scheme for)
 # "leave" puts the vehicle back in its own paint - Turkey, where the user asked for the made textures gone
@@ -145,11 +151,8 @@ TARGET_KEEP = {"rusgreen": np.array(REF["Russian Green"], dtype=np.float32)}
 # it back if the user would rather keep Aegis's hand-made sheets where they exist.
 MOD_SCHEME = {"irghex": (("greenhex", ("Base game", "Apex", "Aegis", "Ghost", "mod")), "make"),
               "trarid": ("marar", ("Atlas",), "make"),
-              "rusgreen": ("green", ("Aegis",), "make"),
-              # 2026-09-20, "there are fucking green and sand texstures in A3_Aegis_Public_Releases make russia match
-              # them": Aegis's Sand copied wherever a Russian model has a readable one (its Kamysh sand points at
-              # Western Sahara files, so that one is made), the rest made in the colour measured off its sand sheets
-              "russand": ("sand", ("Aegis",), "make"),
+              # rusgreen and russand copied Aegis's Green and Sand sheets where a model had them (2026-09-16/20).
+              # 2026-10-06: made for every model in e22's colours instead, so the whole faction matches e22 alike.
               # the Challenger's own schemes come up as "Base game" or "Ghost" depending on which config the table
               # read them from (the mod's, or ghost_vehicle's import of it): either way they are the mod's own sheets
               # the EU woodland is copy-only: Aegis's woodland, else the vehicle's own olive (user, 2026-09-21)
@@ -173,6 +176,14 @@ GREENISH = ["russia", "green", "olive", "khaki", "sand", "desert", "brown", "tan
 SANDY = ["sand", "desert", "tan", "khaki", "russia", "green", "olive", "brown", "blufor", "grey", "black"]
 WHITISH = ["white", "grey", "russia", "green", "olive", "khaki", "sand", "desert", "brown", "tan", "blufor", "black"]
 NEUTRAL = ["green", "olive", "khaki", "sand", "desert", "brown", "tan", "blufor", "grey", "black", "russia"]
+# PLAINEST SCHEME PER MODEL, over the faction's list. The Zamak's own paint is the base game's OPFOR hex, and no
+# recolour flattens that hex: the Russian KamAZ came out green with the hex cells showing (user, 2026-10-06: "the
+# kamaz have a weird hex pattern to them"). The AAF scheme is no better - AAF digital, which showed through the same
+# way - and the LDF one is splinter. Aegis's Russian khaki (RUkhk) is plain on every Truck_02 model, so the Russian
+# camos start from that: model pattern -> a texture pattern the preferred set carries. Only these sheets are read
+# from the Aegis source (AEGIS_SOURCE); every other vehicle's choice is untouched.
+PREFER_BY_MODEL = {tag: {r"truck_02_": r"_rukhk_co\.paa$"} for tag in RUSSIAN}
+AEGIS_SOURCE = {"a3_aegis\\soft_f_aegis\\truck_02\\": r"D:\Git\A3_Aegis_Public_Releases\A3_Aegis\soft_f_aegis\Truck_02"}
 JOBS = {    # addon: (default camo, plainest-first sources, the camos its appearance menu offers)
     "faction_russia": ("rusgreen", GREENISH, []),
     "faction_russia_arc": ("rusarctic", WHITISH, []),
@@ -987,10 +998,12 @@ def noise(rng, h, w, n, octaves=((1, 0.6), (2, 0.3), (4, 0.1))):
 
 
 def arctic(a, seed, lp_set=None):
-    """Russian Arctic: white at the game's clean white paint, grey and charcoal at the photo's ratios to it."""
+    """Russian Arctic: white at the game's clean white paint, grey and charcoal at the ratios e22 RAF's alpine camo net
+    has to its white (#b8b9ba, #898885, #363634 - 0.74 and 0.29; 2026-10-06, "white, in e22's alpine greys"), near
+    neutral as its are. The photo's pattern - white ground, grey blotches, a charcoal band - is kept."""
     l = WHITE_L
-    cols = np.array([colorsys.hls_to_rgb(40 / 360, l, 0.03), colorsys.hls_to_rgb(200 / 360, l * 0.58, 0.02),
-                     colorsys.hls_to_rgb(220 / 360, l * 0.24, 0.03)], dtype=np.float32)
+    cols = np.array([colorsys.hls_to_rgb(210 / 360, l, 0.02), colorsys.hls_to_rgb(45 / 360, l * 0.74, 0.02),
+                     colorsys.hls_to_rgb(60 / 360, l * 0.29, 0.02)], dtype=np.float32)
     share = [0.52, 0.33, 0.15]
     h, w = a.shape[:2]
     rng = np.random.default_rng(seed)
@@ -1557,6 +1570,10 @@ def main():
         lo = q.lower()
         if not q or q.startswith("#"):
             return None
+        for pre, root in AEGIS_SOURCE.items():
+            if lo.startswith(pre):
+                p = os.path.join(root, q[len(pre):])
+                return p if os.path.exists(p) else False
         if lo.startswith("a3\\"):
             return ("game:" + q) if PR.game_entry(q) else False
         if lo.startswith("z\\ghost\\"):
@@ -2102,6 +2119,8 @@ def main():
             if plane and tag in DIGITAL and TOPSIDE.search(r.name):
                 vtag = tag                      # the faction camo on top, the underside kept (TOPSIDE)
             vlabel, vplain = TAGS[vtag], (PLANE_PLAIN if plane else plain)
+            mpath = (VB.value(table, r.name, "model") or "").lower()
+            prefer_tex = next((tp for mp, tp in PREFER_BY_MODEL.get(vtag, {}).items() if re.search(mp, mpath)), None)
             chain = {VB.anc_name(kd, x).lower() for kd, x in anc}
             own_ts = VB.nested(table, r.name, "texturesources")
             cands = []           # (name, entry name, tier, scheme name, from, entry, textures)
@@ -2155,11 +2174,19 @@ def main():
 
             nsel = len([x for x in hs if isinstance(x, str)])
 
+            def preferred(c):
+                """A PREFER_BY_MODEL set: every sheet the vehicle takes in it matches. Aegis's sets are longer
+                (their chassis sheet), so they are cut to the vehicle's count as the game pairs them, by index."""
+                head = [x for x in list(c[6])[:nsel] if isinstance(x, str)]
+                return bool(prefer_tex) and len(c[6]) >= nsel and len(head) == nsel                     and all(re.search(prefer_tex, x.lower()) for x in head)
+
             def rank(c):
                 # the game pairs hiddenSelectionsTextures[i] with hiddenSelections[i], so a set of another
                 # length is mis-paired whatever its name: the PGL-625E (3 selections - hull, wheels, camo net)
                 # was taking the Rhino's inherited 7-texture Green, which put a hull texture on its wheels and
                 # left the wheel mask painting a hull (user, 2026-09-15: "the tires are still camoed")
+                if preferred(c):
+                    return (0, -1, c[2])
                 fit = 0 if len(c[6]) == nsel else 1
                 hit = [vplain.index(n) for n in (c[0], c[1]) if n in vplain]
                 if hit:
@@ -2237,6 +2264,8 @@ def main():
                 for c in sorted(cands, key=rank):
                     if not readable(c[6]) or not any(is_co(CP.clean(t)) for t in c[6] if source_of(t)):
                         continue
+                    if preferred(c):
+                        c = c[:6] + (list(c[6])[:nsel],)
                     if nsel and len(c[6]) != nsel:
                         continue
                     got = realise(c[6], vtag, mk, vtag == "trarid", MASKS.get(mk))

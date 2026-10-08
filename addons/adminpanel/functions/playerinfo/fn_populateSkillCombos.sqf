@@ -25,9 +25,9 @@ private _engineer_combo = _admp_display displayCtrl IDC_ADMINPANEL_PLAYER_SKILLS
 
 private _medicOptions = [
     ["None", "none", 0],
-    ["Medic", "medic", 1]
+    ["CLS", "cls", 1]
 ];
-if (admp_aceEnabled) then {_medicOptions pushBack ["Doctor", "doctor", 2];};
+if (admp_aceEnabled) then {_medicOptions pushBack ["Medic", "medic", 2];};
 
 private _engineerOptions = [
     ["None", "none", 0],

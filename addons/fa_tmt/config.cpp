@@ -7,7 +7,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"cba_main", "ace_ballistics", "ghost_fa_ammo", "ghost_fa_tiers", "ghost_fa_rf", "ghost_fa_tiers_mods", "tmt_weapon"};
+        requiredAddons[] = {"cba_main", "ace_ballistics", "ghost_fa_ammo", "ghost_fa_tiers", "tmt_weapon"};
         skipWhenMissingDependencies = 1;
         author = QAUTHOR;
         VERSION_CONFIG;

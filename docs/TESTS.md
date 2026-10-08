@@ -250,6 +250,33 @@ on after you have seen it fire.
 
 ---
 
+## 12. Air Defence Sites — munitions and aircraft, layered
+
+Setup: a **Ghost - Air Defence Site** module synced to a search radar, two
+launchers and a gun or CIWS, all OPFOR; a player on OPFOR inside the protected
+area, and something BLUFOR that can shoot into it (a mortar, a rocket
+artillery piece, a jet).
+
+    #ghost adsite.probe
+    #ghost adsite
+
+| Check | ☐ | If it fails |
+|---|---|---|
+| The probe says **A0-3 yes** (the server sees the round in flight) | ☐ | Sites cannot track munitions at all - the whole munition half rests on this |
+| The probe says **A0-2 fired** and **A0-1 yes**, and the round is intercepted | ☐ | A0-2 no: `fnc_engage` falls back to forceWeaponFire - watch that it fires. A0-1 no: the fuse alone has to catch it; expect fewer kills |
+| `#ghost adsite` lists the Site, its members with roles (LONG/SHORT/GUN/CIWS/SENSOR) and the radar | ☐ | `fnc_profile` read the vehicles wrong - their roles decide everything after |
+| A mortar round fired AT the Site's area is engaged; one fired well clear of it is not | ☐ | `fnc_impact`'s prediction or the protected radius is wrong |
+| A salvo is spread across the launchers, guns first on what is close, long-range held back | ☐ | `fnc_assign`'s layers |
+| An OPFOR player gets **AIR DEFENCE ... radiating** once, and **INCOMING ...** once per salvo, not once per round | ☐ | `fnc_notice` |
+| The tacpad shows the AIR DEFENCE panel for OPFOR only; STATUS, INTERCEPT and SETTINGS draw; the map shows the area and the tracks | ☐ | the board is not publishing, or the panel's condition is wrong |
+| AUTOMATION OFF stops the Site; picking a track and pressing FIRE on a member engages it | ☐ | `fnc_order` "engage" |
+| A BLUFOR player near the Site sees no panel; an OPFOR player outside the area with access "near" sees it read-only | ☐ | `fnc_canControl` |
+| Two Sites with the same Link never put two weapons on one round beyond Shots Per Threat | ☐ | the shared coordinator in `fnc_tick` |
+| Silent until cued: the radar stays dark until a track exists, then lights | ☐ | `fnc_emcon` and the iads `heldOff` lever |
+| With Zeus Enhanced: right-click a member, the dialog opens and a change shows on the panel | ☐ | `fnc_zen` |
+
+---
+
 ## What "pass" means
 
 Not "the feature is good" — only **"the code ran and did roughly what it

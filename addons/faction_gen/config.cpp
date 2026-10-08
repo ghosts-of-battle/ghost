@@ -4,27 +4,7 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         units[] = {
-            QGVAR(B_Captain_Dwarden_F),
-            QGVAR(B_GEN_APC_Wheeled_02_hmg_lxWS),
-            QGVAR(B_GEN_Boat_Transport_02_F),
-            QGVAR(B_GEN_Commander_F),
-            QGVAR(B_GEN_Heli_EC_01_RF),
-            QGVAR(B_GEN_Helipilot_RF),
-            QGVAR(B_GEN_Offroad_01_comms_F),
-            QGVAR(B_GEN_Offroad_01_covered_F),
-            QGVAR(B_GEN_Offroad_01_gen_F),
-            QGVAR(B_GEN_Pickup_covered_rf),
-            QGVAR(B_GEN_Quadbike_01_F),
-            QGVAR(B_GEN_Soldier_F),
-            QGVAR(B_GEN_Soldier_RF),
-            QGVAR(B_GEN_Soldier_Rifle_F),
-            QGVAR(B_GEN_Soldier_SG_F),
-            QGVAR(B_GEN_Van_02_transport_F),
-            QGVAR(B_GEN_Van_02_vehicle_F),
-            QGVAR(B_GEN_crew_lxWS),
-            QGVAR(EF_B_CombatBoat_Unarmed_GEN),
-            QGVAR(EF_B_Gyra_GEN),
-            QGVAR(EF_B_Gyra_HMG_GEN)
+            QGVAR(B_Captain_Dwarden_F), QGVAR(B_GEN_Boat_Transport_02_F), QGVAR(B_GEN_Commander_F), QGVAR(B_GEN_Offroad_01_comms_F), QGVAR(B_GEN_Offroad_01_covered_F), QGVAR(B_GEN_Offroad_01_gen_F), QGVAR(B_GEN_Quadbike_01_F), QGVAR(B_GEN_Soldier_F), QGVAR(B_GEN_Soldier_Rifle_F), QGVAR(B_GEN_Soldier_SG_F), QGVAR(B_GEN_Van_02_transport_F), QGVAR(B_GEN_Van_02_vehicle_F)
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;

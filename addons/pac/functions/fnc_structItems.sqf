@@ -115,6 +115,7 @@ switch (_base) do {
         private _help = createHashMapFromArray [
             ["autoSlot", "1 puts a man with a role into its slot on spawn; 0 leaves him where he is"],
             ["slotMatch", "role: any free slot with his role | slot: only the group his record names"],
+            ["arsenalMode", "what adds to the common arsenal - role: the role's lists | skills: the arsenal:<name> skill effects (qual_<name> lists) | both"],
             ["savedLoadouts", "kept loadouts per player per role; 0 turns them off"],
             ["autoPromote", "1 promotes a man the moment he is over the points for the next rank; 0 lists him on the dashboard for a human to do it"],
             ["newPlayers", "auto: a record is seeded the moment somebody first connects | apply: they fill in an application on the PAC tile and an admin accepts them"]
@@ -124,7 +125,7 @@ switch (_base) do {
             private _v = GVAR(settings) getOrDefault [_x, ""];
             if (_v isEqualType "") then {_v = _v} else {_v = str _v};
             _out set [_x, createHashMapFromArray [["name", _help get _x], ["value", _v]]];
-        } forEach ["autoSlot", "slotMatch", "savedLoadouts", "autoPromote", "newPlayers"];
+        } forEach ["autoSlot", "slotMatch", "arsenalMode", "savedLoadouts", "autoPromote", "newPlayers"];
         _out
     };
 

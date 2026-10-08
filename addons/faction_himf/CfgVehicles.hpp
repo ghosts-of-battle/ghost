@@ -4,12 +4,12 @@
 // base game's, defined in an addon that is not this one; declaring
 // it is what lets this config inherit from it.
 
+class CBA_Extended_EventHandlers;
+
 class CfgVehicles {
     class EGVAR(uniform,B_H_Crew_F);
     class EGVAR(uniform,B_H_Engineer_F);
     class EGVAR(uniform,B_H_HeavyGunner_F);
-    class B_Heli_EC_03_RF;
-    class B_Heli_EC_04_military_RF;
     class EGVAR(uniform,B_H_Helicrew_F);
     class EGVAR(uniform,B_H_Helipilot_F);
     class EGVAR(uniform,B_H_Medic_F);
@@ -35,14 +35,12 @@ class CfgVehicles {
     class EGVAR(uniform,B_H_Soldier_unarmed_F);
     class EGVAR(uniform,B_H_soldier_M_F);
     class B_Boat_Armed_01_minigun_F;
-    class B_CommandoMortar_RF;
     class B_G_Offroad_01_AT_F;
     class B_G_Offroad_01_F;
     class B_G_Offroad_01_armed_F;
     class B_HMG_01_high_F;
     class B_Heli_Light_01_F;
     class B_Heli_Light_01_dynamicLoadout_F;
-    class B_Heli_light_03_dynamicLoadout_RF;
     class B_Mortar_01_F;
     class B_SwitchBlade_300_LaunchTube_Woodland;
     class B_SwitchBlade_600_LaunchTube_Woodland;
@@ -56,27 +54,11 @@ class CfgVehicles {
     class B_UGV_01_F;
     class B_UGV_01_rcws_F;
     class B_UGV_02_Demining_F;
-    class EF_B_Gyra_GEN;
-    class EF_B_Gyra_HMG_GEN;
-    class FA_EMB312_AT27M35_Nato_P;
     class GX_B_HUNTER_SP_LAUNCHER;
     class GX_B_MAGURA_V5_USV;
     class GX_B_RQ11B_UAV;
-    class Pickup_01_Rocket_base_rf;
-    class Pickup_01_aat_base_rf;
-    class Pickup_01_base_rf;
-    class Pickup_01_hmg_base_rf;
-    class Pickup_01_mmg_base_rf;
-    class Pickup_01_mrl_base_rf;
-    class Pickup_01_rcws_base_rf;
-    class Pickup_comms_base_rf;
-    class Pickup_covered_base_rf;
-    class Pickup_fuel_base_rf;
-    class Pickup_repair_ig_base_rf;
     class EGVAR(vehicle,Plane_Civil_01_HIMF_F);
     class ace_dragon_staticAssembled;
-    class rksla3_aeroshark_blufor;
-    class rksla3_uav_rq7shadow_01_blufor;
 
     // ---- the uniform bodies - Atlas's HIMF paint on base-game models, see CfgWeapons.hpp ----
 
@@ -88,11 +70,20 @@ class CfgVehicles {
         displayName = "Rifleman";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put"};
-        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put"};
+        weapons[] = {"arifle_Mk20_F","Throw","Put"};
+        respawnWeapons[] = {"arifle_Mk20_F","Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"HandGrenade","SmokeShell"};
-        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"HandGrenade","SmokeShell"};
+        magazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","HandGrenade","SmokeShell"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Rifleman_Unarmed): EGVAR(uniform,B_H_Soldier_unarmed_F) {
         scope = 2;
@@ -102,6 +93,15 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(SquadLeader): EGVAR(uniform,B_H_Soldier_SL_F) {
         scope = 2;
@@ -110,11 +110,20 @@ class CfgVehicles {
         displayName = "Squad Leader";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,Arifle_famasG2_F),QEGVAR(weapons,hgun_ACPC2_black_F),"Throw","Put","Binocular"};
-        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_F),QEGVAR(weapons,hgun_ACPC2_black_F),"Throw","Put","Binocular"};
+        weapons[] = {"arifle_Mk20_F",QEGVAR(weapons,hgun_ACPC2_black_F),"Throw","Put","Binocular"};
+        respawnWeapons[] = {"arifle_Mk20_F",QEGVAR(weapons,hgun_ACPC2_black_F),"Throw","Put","Binocular"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
         magazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","9Rnd_45ACP_Mag","9Rnd_45ACP_Mag","HandGrenade","SmokeShell","SmokeShellYellow"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","9Rnd_45ACP_Mag","9Rnd_45ACP_Mag","HandGrenade","SmokeShell","SmokeShellYellow"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(TeamLeader): EGVAR(uniform,B_H_Soldier_TL_F) {
         scope = 2;
@@ -123,11 +132,20 @@ class CfgVehicles {
         displayName = "Team Leader";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,Arifle_famasG2_GL_F),QEGVAR(weapons,hgun_ACPC2_black_F),"Throw","Put","Binocular"};
-        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_GL_F),QEGVAR(weapons,hgun_ACPC2_black_F),"Throw","Put","Binocular"};
+        weapons[] = {"arifle_Mk20_GL_F",QEGVAR(weapons,hgun_ACPC2_black_F),"Throw","Put","Binocular"};
+        respawnWeapons[] = {"arifle_Mk20_GL_F",QEGVAR(weapons,hgun_ACPC2_black_F),"Throw","Put","Binocular"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
         magazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","9Rnd_45ACP_Mag","9Rnd_45ACP_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShell","SmokeShellYellow","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","9Rnd_45ACP_Mag","9Rnd_45ACP_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShell","SmokeShellYellow","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Autorifleman): EGVAR(uniform,B_H_Soldier_AR_F) {
         scope = 2;
@@ -137,8 +155,19 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"200Rnd_556x45_Box_Tracer_Red_F","200Rnd_556x45_Box_Tracer_Red_F","200Rnd_556x45_Box_Tracer_Red_F","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {"200Rnd_556x45_Box_Tracer_Red_F","200Rnd_556x45_Box_Tracer_Red_F","200Rnd_556x45_Box_Tracer_Red_F","HandGrenade","SmokeShell"};
+        magazines[] = {"150Rnd_762x54_Box","150Rnd_762x54_Box","150Rnd_762x54_Box","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {"150Rnd_762x54_Box","150Rnd_762x54_Box","150Rnd_762x54_Box","HandGrenade","SmokeShell"};
+        weapons[] = {"LMG_Zafir_F","Throw","Put"};
+        respawnWeapons[] = {"LMG_Zafir_F","Throw","Put"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(AmmoBearer): EGVAR(uniform,B_H_Soldier_A_F) {
         scope = 2;
@@ -147,11 +176,20 @@ class CfgVehicles {
         displayName = "Ammo Bearer";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put"};
-        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put"};
+        weapons[] = {"arifle_Mk20_F","Throw","Put"};
+        respawnWeapons[] = {"arifle_Mk20_F","Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"HandGrenade","SmokeShell"};
-        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"HandGrenade","SmokeShell"};
+        magazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","HandGrenade","SmokeShell"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Grenadier): EGVAR(uniform,B_H_Soldier_GL_F) {
         scope = 2;
@@ -160,12 +198,21 @@ class CfgVehicles {
         displayName = "Grenadier";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,arifle_famasF1_GL_F),"Throw","Put"};
-        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_GL_F),"Throw","Put"};
+        weapons[] = {"arifle_Mk20_GL_F","Throw","Put"};
+        respawnWeapons[] = {"arifle_Mk20_GL_F","Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShell","1Rnd_Smoke_Grenade_shell"};
-        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShell","1Rnd_Smoke_Grenade_shell"};
+        magazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShell","1Rnd_Smoke_Grenade_shell"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShell","1Rnd_Smoke_Grenade_shell"};
         backpack = QGVAR(UAV_06_Bag);
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Rifleman_AT): EGVAR(uniform,B_H_Soldier_LAT_F) {
         scope = 2;
@@ -174,11 +221,20 @@ class CfgVehicles {
         displayName = "Rifleman (AT)";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,arifle_famasF1_Grip_F),"launch_MRAWS_olive_rail_F","Throw","Put"};
-        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_Grip_F),"launch_MRAWS_olive_rail_F","Throw","Put"};
+        weapons[] = {"arifle_Mk20_F","launch_MRAWS_olive_rail_F","Throw","Put"};
+        respawnWeapons[] = {"arifle_Mk20_F","launch_MRAWS_olive_rail_F","Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"MRAWS_HEAT55_F","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"MRAWS_HEAT55_F","HandGrenade","SmokeShell"};
+        magazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","MRAWS_HEAT55_F","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","MRAWS_HEAT55_F","HandGrenade","SmokeShell"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Rifleman_AA): EGVAR(uniform,B_H_Soldier_F) {
         scope = 2;
@@ -188,10 +244,19 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        weapons[] = {QEGVAR(weapons,arifle_famasF1_F),"launch_B_Titan_F","Throw","Put"};
-        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_F),"launch_B_Titan_F","Throw","Put"};
-        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"Titan_AA","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"Titan_AA","HandGrenade","SmokeShell"};
+        weapons[] = {"arifle_Mk20_F","launch_B_Titan_F","Throw","Put"};
+        respawnWeapons[] = {"arifle_Mk20_F","launch_B_Titan_F","Throw","Put"};
+        magazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","Titan_AA","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","Titan_AA","HandGrenade","SmokeShell"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Rifleman_AAA): EGVAR(uniform,B_H_Soldier_F) {
         scope = 2;
@@ -201,11 +266,20 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        weapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put","Rangefinder"};
-        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put","Rangefinder"};
-        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"Titan_AA","HandGrenade","SmokeShell"};
-        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"Titan_AA","HandGrenade","SmokeShell"};
+        weapons[] = {"arifle_Mk20_F","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {"arifle_Mk20_F","Throw","Put","Rangefinder"};
+        magazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","Titan_AA","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","Titan_AA","HandGrenade","SmokeShell"};
         backpack = "B_Carryall_oli";
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Marksman): EGVAR(uniform,B_H_soldier_M_F) {
         scope = 2;
@@ -217,6 +291,15 @@ class CfgVehicles {
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
         magazines[] = {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","HandGrenade","SmokeShell"};
         respawnMagazines[] = {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","HandGrenade","SmokeShell"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(HeavyGunner): EGVAR(uniform,B_H_HeavyGunner_F) {
         scope = 2;
@@ -226,8 +309,19 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {QEGVAR(weapons,200Rnd_762x51_MAG_Red_F),QEGVAR(weapons,200Rnd_762x51_MAG_Red_F),"HandGrenade","SmokeShell"};
-        respawnMagazines[] = {QEGVAR(weapons,200Rnd_762x51_MAG_Red_F),QEGVAR(weapons,200Rnd_762x51_MAG_Red_F),"HandGrenade","SmokeShell"};
+        magazines[] = {"150Rnd_762x54_Box","150Rnd_762x54_Box","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {"150Rnd_762x54_Box","150Rnd_762x54_Box","HandGrenade","SmokeShell"};
+        weapons[] = {"LMG_Zafir_F","Throw","Put"};
+        respawnWeapons[] = {"LMG_Zafir_F","Throw","Put"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Medic): EGVAR(uniform,B_H_Medic_F) {
         scope = 2;
@@ -236,11 +330,20 @@ class CfgVehicles {
         displayName = "Combat Life Saver";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,arifle_famasF1_Grip_F),"Throw","Put"};
-        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_Grip_F),"Throw","Put"};
+        weapons[] = {"arifle_Mk20_F","Throw","Put"};
+        respawnWeapons[] = {"arifle_Mk20_F","Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),"HandGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange"};
-        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),QEGVAR(weapons,25Rnd_556x45_Famas),"HandGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange"};
+        magazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","HandGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","HandGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Engineer): EGVAR(uniform,B_H_Engineer_F) {
         scope = 2;
@@ -249,11 +352,20 @@ class CfgVehicles {
         displayName = "Engineer";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,arifle_famasF1_RIS_F),"Throw","Put"};
-        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_RIS_F),"Throw","Put"};
+        weapons[] = {"arifle_Mk20_F","Throw","Put"};
+        respawnWeapons[] = {"arifle_Mk20_F","Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"SmokeShell","SmokeShellYellow"};
-        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"SmokeShell","SmokeShellYellow"};
+        magazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","SmokeShell","SmokeShellYellow"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","SmokeShell","SmokeShellYellow"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(ExplosiveSpecialist): EGVAR(uniform,B_H_Soldier_Exp_F) {
         scope = 2;
@@ -262,11 +374,20 @@ class CfgVehicles {
         displayName = "Explosive Specialist";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,arifle_famasF1_RIS_F),"Throw","Put"};
-        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_RIS_F),"Throw","Put"};
+        weapons[] = {"arifle_Mk20_F","Throw","Put"};
+        respawnWeapons[] = {"arifle_Mk20_F","Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","SmokeShell","SmokeShellYellow"};
-        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","SmokeShell","SmokeShellYellow"};
+        magazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","SmokeShell","SmokeShellYellow"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","SmokeShell","SmokeShellYellow"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Officer): EGVAR(uniform,B_H_Officer_F) {
         scope = 2;
@@ -278,6 +399,15 @@ class CfgVehicles {
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
         magazines[] = {"30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","9Rnd_45ACP_Mag","9Rnd_45ACP_Mag","SmokeShellYellow"};
         respawnMagazines[] = {"30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","30Rnd_9x21_Mag_SMG_02_Tracer_Red","9Rnd_45ACP_Mag","9Rnd_45ACP_Mag","SmokeShellYellow"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(RadioOperator): EGVAR(uniform,B_H_RadioOperator_F) {
         scope = 2;
@@ -286,11 +416,20 @@ class CfgVehicles {
         displayName = "Radio Operator";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,Arifle_famasG2_F),"Throw","Put"};
-        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_F),"Throw","Put"};
+        weapons[] = {"arifle_Mk20_F","Throw","Put"};
+        respawnWeapons[] = {"arifle_Mk20_F","Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
         magazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","HandGrenade","SmokeShell"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","HandGrenade","SmokeShell"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(MortarGunner): EGVAR(uniform,B_H_Soldier_F) {
         scope = 2;
@@ -299,12 +438,21 @@ class CfgVehicles {
         displayName = "Gunner (Mortar)";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put"};
-        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put"};
+        weapons[] = {"arifle_Mk20_F","Throw","Put"};
+        respawnWeapons[] = {"arifle_Mk20_F","Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"HandGrenade","SmokeShell"};
-        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"HandGrenade","SmokeShell"};
+        magazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","HandGrenade","SmokeShell"};
         backpack = "B_Mortar_01_weapon_F";
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(MortarAssistant): EGVAR(uniform,B_H_Soldier_A_F) {
         scope = 2;
@@ -313,12 +461,21 @@ class CfgVehicles {
         displayName = "Assistant Gunner (Mortar)";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put"};
-        respawnWeapons[] = {QEGVAR(weapons,arifle_famasF1_F),"Throw","Put"};
+        weapons[] = {"arifle_Mk20_F","Throw","Put"};
+        respawnWeapons[] = {"arifle_Mk20_F","Throw","Put"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"HandGrenade","SmokeShell"};
-        respawnMagazines[] = {QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),QEGVAR(weapons,25Rnd_556x45_Famas_Tracer_Red),"HandGrenade","SmokeShell"};
+        magazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","HandGrenade","SmokeShell"};
+        respawnMagazines[] = {"30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","30Rnd_556x45_Stanag_Tracer_Red","HandGrenade","SmokeShell"};
         backpack = "B_Mortar_01_support_F";
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Crew): EGVAR(uniform,B_H_Crew_F) {
         scope = 2;
@@ -371,11 +528,20 @@ class CfgVehicles {
         displayName = "Recon Scout";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,Arifle_famasG2_Grip_F),"hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
-        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_Grip_F),"hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
+        weapons[] = {"arifle_Mk20C_F","hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
+        respawnWeapons[] = {"arifle_Mk20C_F","hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
         magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Recon_TL): EGVAR(uniform,B_H_Soldier_commando_TL_F) {
         scope = 2;
@@ -384,11 +550,20 @@ class CfgVehicles {
         displayName = "Recon Team Leader";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,Arifle_famasG2_Grip_F),"hgun_P07_blk_Snds_F","Throw","Put","Rangefinder"};
-        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_Grip_F),"hgun_P07_blk_Snds_F","Throw","Put","Rangefinder"};
+        weapons[] = {"arifle_Mk20C_F","hgun_P07_blk_Snds_F","Throw","Put","Rangefinder"};
+        respawnWeapons[] = {"arifle_Mk20C_F","hgun_P07_blk_Snds_F","Throw","Put","Rangefinder"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
         magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Recon_AR): EGVAR(uniform,B_H_Soldier_commando_AR_F) {
         scope = 2;
@@ -398,8 +573,19 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
-        magazines[] = {"200Rnd_65x39_cased_Box_Tracer_Red","200Rnd_65x39_cased_Box_Tracer_Red","200Rnd_65x39_cased_Box_Tracer_Red","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
-        respawnMagazines[] = {"200Rnd_65x39_cased_Box_Tracer_Red","200Rnd_65x39_cased_Box_Tracer_Red","200Rnd_65x39_cased_Box_Tracer_Red","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
+        magazines[] = {"150Rnd_762x54_Box","150Rnd_762x54_Box","150Rnd_762x54_Box","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
+        respawnMagazines[] = {"150Rnd_762x54_Box","150Rnd_762x54_Box","150Rnd_762x54_Box","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","SmokeShell","SmokeShell","Chemlight_red","Chemlight_red"};
+        weapons[] = {"LMG_Zafir_F","Throw","Put"};
+        respawnWeapons[] = {"LMG_Zafir_F","Throw","Put"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Recon_GL): EGVAR(uniform,B_H_Soldier_commando_gl_F) {
         scope = 2;
@@ -408,11 +594,20 @@ class CfgVehicles {
         displayName = "Recon Grenadier";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,Arifle_famasG2_GL_F),"hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
-        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_GL_F),"hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
+        weapons[] = {"arifle_Mk20_GL_F","hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
+        respawnWeapons[] = {"arifle_Mk20_GL_F","hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
         magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Recon_AT): EGVAR(uniform,B_H_Soldier_commando_LAT_F) {
         scope = 2;
@@ -421,11 +616,20 @@ class CfgVehicles {
         displayName = "Recon Scout (AT)";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,Arifle_famasG2_Grip_F),"launch_NLAW_F","hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
-        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_Grip_F),"launch_NLAW_F","hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
+        weapons[] = {"arifle_Mk20C_F","launch_NLAW_F","hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
+        respawnWeapons[] = {"arifle_Mk20C_F","launch_NLAW_F","hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
         magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","NLAW_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","NLAW_F","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Recon_M): EGVAR(uniform,B_H_Soldier_commando_M_F) {
         scope = 2;
@@ -437,6 +641,15 @@ class CfgVehicles {
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
         magazines[] = {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
         respawnMagazines[] = {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Recon_Medic): EGVAR(uniform,B_H_Soldier_commando_medic_F) {
         scope = 2;
@@ -445,11 +658,20 @@ class CfgVehicles {
         displayName = "Recon Paramedic";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,Arifle_famasG2_Grip_F),"hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
-        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_Grip_F),"hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
+        weapons[] = {"arifle_Mk20C_F","hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
+        respawnWeapons[] = {"arifle_Mk20C_F","hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
         magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShellRed","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Recon_JTAC): EGVAR(uniform,B_H_Soldier_commando_jtac_F) {
         scope = 2;
@@ -458,11 +680,20 @@ class CfgVehicles {
         displayName = "Recon JTAC";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,Arifle_famasG2_F),"hgun_P07_blk_Snds_F","Throw","Put","Laserdesignator_01_khk_F"};
-        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_F),"hgun_P07_blk_Snds_F","Throw","Put","Laserdesignator_01_khk_F"};
+        weapons[] = {"arifle_Mk20C_F","hgun_P07_blk_Snds_F","Throw","Put","Laserdesignator_01_khk_F"};
+        respawnWeapons[] = {"arifle_Mk20C_F","hgun_P07_blk_Snds_F","Throw","Put","Laserdesignator_01_khk_F"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
         magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","MiniGrenade","MiniGrenade","B_IR_Grenade","B_IR_Grenade","Laserbatteries","SmokeShell","SmokeShellGreen","SmokeShellBlue","SmokeShellOrange","Chemlight_green","Chemlight_green"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
     class GVAR(Recon_Demo): EGVAR(uniform,B_H_Soldier_commando_exp_F) {
         scope = 2;
@@ -471,11 +702,20 @@ class CfgVehicles {
         displayName = "Recon Demo Specialist";
         side = 1;
         faction = QUOTE(ADDON);
-        weapons[] = {QEGVAR(weapons,Arifle_famasG2_F),"hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
-        respawnWeapons[] = {QEGVAR(weapons,Arifle_famasG2_F),"hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
+        weapons[] = {"arifle_Mk20C_F","hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
+        respawnWeapons[] = {"arifle_Mk20C_F","hgun_P07_blk_Snds_F","Throw","Put","Binocular"};
         identityTypes[] = {"LanguageENG_F","Head_Tanoan","G_NATO_default"};
         magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag","MiniGrenade","MiniGrenade","SmokeShell","SmokeShell","Chemlight_green","Chemlight_green"};
+        uniformClass = "SOF_U_B_SFFatigues_tigerstripe";
+        linkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[] = {"JCA_V_CarrierRigKBT_01_combat_olive_F","ghost_headware_H_I_Helmet_canvas_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+            class GVAR(goggles) {
+                init = "params ['_unit']; if (local _unit) then {removeGoggles _unit; _unit addGoggles 'adfrc_facewear_kondor_blk_clr'};";
+            };
+        };
     };
 
     // ---- the drone bags - the base game's, assembling HIMF's own drones - see BAGS ----
@@ -493,6 +733,7 @@ class CfgVehicles {
         };
     };
     class B_UAV_06_backpack_F;
+    class EGVAR(vehicle,B_G_APC_Wheeled_04_export_F);
     class GVAR(UAV_06_Bag): B_UAV_06_backpack_F {
         scope = 1;
         scopeCurator = 0;
@@ -525,66 +766,6 @@ class CfgVehicles {
     };
 
     // ---- the vehicles ----
-    class GVAR(APC): EF_B_Gyra_GEN {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Gyra";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(Crew);
-        // an empty textureList stopped the game repainting a spawned vehicle, but it also emptied the appearance
-        // dropdown (user, 2026-09-19: "the vechicle customation is mission all the textures"). Naming the paint
-        // it wears does both jobs and keeps the parent's paints listed under it.
-        textureList[] = {"ghost_paint", 1};
-        hiddenSelectionsTextures[] = {
-            "ef\ef_gyra_t\data\gyra_hull_1_olive_co.paa",
-            "ef\ef_gyra_t\data\gyra_details_1_olive_co.paa",
-            "ef\ef_gyra_t\data\gyra_int_1_olive_co.paa",
-            "ef\ef_gyra_t\data\gyra_hmg_1_olive_co.paa",
-            "ef\ef_gyra_t\data\gyra_rws_1_olive_co.paa",
-            "ef\ef_gyra_t\data\gyra_turret_1_olive_co.paa",
-            "ef\ef_gyra_t\data\gyra_mortar_1_olive_co.paa",
-            "a3\armor_f\data\camonet_nato_green_co.paa"
-        };
-        class TextureSources {
-            class ghost_paint {
-                displayName = "Factory paint";
-                author = QAUTHOR;
-                textures[] = {"ef\ef_gyra_t\data\gyra_hull_1_olive_co.paa", "ef\ef_gyra_t\data\gyra_details_1_olive_co.paa", "ef\ef_gyra_t\data\gyra_int_1_olive_co.paa", "ef\ef_gyra_t\data\gyra_hmg_1_olive_co.paa", "ef\ef_gyra_t\data\gyra_rws_1_olive_co.paa", "ef\ef_gyra_t\data\gyra_turret_1_olive_co.paa", "ef\ef_gyra_t\data\gyra_mortar_1_olive_co.paa", "a3\armor_f\data\camonet_nato_green_co.paa"};
-            };
-        };
-    };
-    class GVAR(APC_HMG): EF_B_Gyra_HMG_GEN {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Gyra HMG";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(Crew);
-        // an empty textureList stopped the game repainting a spawned vehicle, but it also emptied the appearance
-        // dropdown (user, 2026-09-19: "the vechicle customation is mission all the textures"). Naming the paint
-        // it wears does both jobs and keeps the parent's paints listed under it.
-        textureList[] = {"ghost_paint", 1};
-        hiddenSelectionsTextures[] = {
-            "ef\ef_gyra_t\data\gyra_hull_1_olive_co.paa",
-            "ef\ef_gyra_t\data\gyra_details_1_olive_co.paa",
-            "ef\ef_gyra_t\data\gyra_int_1_olive_co.paa",
-            "ef\ef_gyra_t\data\gyra_hmg_1_olive_co.paa",
-            "ef\ef_gyra_t\data\gyra_rws_1_olive_co.paa",
-            "ef\ef_gyra_t\data\gyra_turret_1_olive_co.paa",
-            "ef\ef_gyra_t\data\gyra_mortar_1_olive_co.paa",
-            "a3\armor_f\data\camonet_nato_green_co.paa"
-        };
-        class TextureSources {
-            class ghost_paint {
-                displayName = "Factory paint";
-                author = QAUTHOR;
-                textures[] = {"ef\ef_gyra_t\data\gyra_hull_1_olive_co.paa", "ef\ef_gyra_t\data\gyra_details_1_olive_co.paa", "ef\ef_gyra_t\data\gyra_int_1_olive_co.paa", "ef\ef_gyra_t\data\gyra_hmg_1_olive_co.paa", "ef\ef_gyra_t\data\gyra_rws_1_olive_co.paa", "ef\ef_gyra_t\data\gyra_turret_1_olive_co.paa", "ef\ef_gyra_t\data\gyra_mortar_1_olive_co.paa", "a3\armor_f\data\camonet_nato_green_co.paa"};
-            };
-        };
-    };
     class GVAR(Boat): B_T_Boat_Transport_01_F {
         scope = 2;
         scopeCurator = 2;
@@ -629,15 +810,6 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         crew = QGVAR(Rifleman);
-    };
-    class GVAR(Mortar_Commando): B_CommandoMortar_RF {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Commando Mortar";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(MortarGunner);
     };
     class GVAR(Mortar_Mk6): B_Mortar_01_F {
         scope = 2;
@@ -684,24 +856,6 @@ class CfgVehicles {
         faction = QUOTE(ADDON);
         crew = QGVAR(Rifleman);
     };
-    class GVAR(Heli_Transport): B_Heli_EC_03_RF {                    // Atlas left the load order (2026-10-05): its EC helicopters were built on these
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "H225M Super Cougar";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(Helipilot);
-    };
-    class GVAR(Heli_Transport_Unarmed): B_Heli_EC_04_military_RF {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "H225M Super Cougar (Unarmed)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(Helipilot);
-    };
     class GVAR(Heli_Light): B_Heli_Light_01_F {
         scope = 2;
         scopeCurator = 2;
@@ -716,15 +870,6 @@ class CfgVehicles {
         scopeCurator = 2;
         author = QAUTHOR;
         displayName = "AH-9 Pawnee";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(Helipilot);
-    };
-    class GVAR(Heli_Light_Hellcat): B_Heli_light_03_dynamicLoadout_RF {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "WY-55 Hellcat";
         side = 1;
         faction = QUOTE(ADDON);
         crew = QGVAR(Helipilot);
@@ -755,37 +900,6 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
         crew = QGVAR(Rifleman);
-    };
-    class GVAR(Plane_Tucano): FA_EMB312_AT27M35_Nato_P {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "AT-27M35 Tucano";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(Pilot);
-        // an empty textureList stopped the game repainting a spawned vehicle, but it also emptied the appearance
-        // dropdown (user, 2026-09-19: "the vechicle customation is mission all the textures"). Naming the paint
-        // it wears does both jobs and keeps the parent's paints listed under it.
-        textureList[] = {"ghost_paint", 1};
-        hiddenSelectionsTextures[] = {
-            "FA_EMB312\data\textures\body_grey_co.paa",
-            "FA_EMB312\data\textures\body_details_grey_co.paa",
-            "FA_EMB312\data\textures\body_rear_grey_co.paa",
-            "FA_EMB312\data\textures\elevators_grey_co.paa",
-            "FA_EMB312\data\textures\exhaust_grey_co.paa",
-            "FA_EMB312\data\textures\rudder_grey_co.paa",
-            "FA_EMB312\data\textures\wings_grey_co.paa",
-            "FA_EMB312\data\textures\wings_details_grey_co.paa",
-            "FA_EMB312\data\textures\cockpit_grey_co.paa"
-        };
-        class TextureSources {
-            class ghost_paint {
-                displayName = "Factory paint";
-                author = QAUTHOR;
-                textures[] = {"FA_EMB312\data\textures\body_grey_co.paa", "FA_EMB312\data\textures\body_details_grey_co.paa", "FA_EMB312\data\textures\body_rear_grey_co.paa", "FA_EMB312\data\textures\elevators_grey_co.paa", "FA_EMB312\data\textures\exhaust_grey_co.paa", "FA_EMB312\data\textures\rudder_grey_co.paa", "FA_EMB312\data\textures\wings_grey_co.paa", "FA_EMB312\data\textures\wings_details_grey_co.paa", "FA_EMB312\data\textures\cockpit_grey_co.paa"};
-            };
-        };
     };
     class GVAR(Plane_Civil): EGVAR(vehicle,Plane_Civil_01_HIMF_F) {
         scope = 2;
@@ -853,22 +967,6 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
     };
-    class GVAR(UAV_Shadow): rksla3_uav_rq7shadow_01_blufor {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "RQ-7 Shadow 200";
-        side = 1;
-        faction = QUOTE(ADDON);
-    };
-    class GVAR(UAV_Aeroshark): rksla3_aeroshark_blufor {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Aeroshark Mini UAV";
-        side = 1;
-        faction = QUOTE(ADDON);
-    };
     class GVAR(USV_Magura): GX_B_MAGURA_V5_USV {
         scope = 2;
         scopeCurator = 2;
@@ -885,125 +983,13 @@ class CfgVehicles {
         side = 1;
         faction = QUOTE(ADDON);
     };
-    class GVAR(Pickup): Pickup_01_base_rf {
+    class GVAR(APC_Pandur): EGVAR(vehicle,B_G_APC_Wheeled_04_export_F) {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
-        displayName = "Ram 1500";
+        displayName = "Pandur II (Export)";
         side = 1;
         faction = QUOTE(ADDON);
-        crew = QGVAR(Rifleman);
-        textureList[] = {"Jungle",1};
-        animationList[] = {"hide_frame",1,"hide_shield",1};
-    };
-    class GVAR(Pickup_Comms): Pickup_comms_base_rf {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Ram 1500 (Comms)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(Rifleman);
-        textureList[] = {"Jungle",1};
-        animationList[] = {"hide_frame",1,"hide_shield",1};
-    };
-    class GVAR(Pickup_Covered): Pickup_covered_base_rf {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Ram 1500 (Covered)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(Rifleman);
-        textureList[] = {"Jungle",1};
-        animationList[] = {"hide_frame",1,"hide_shield",1};
-    };
-    class GVAR(Pickup_HMG): Pickup_01_hmg_base_rf {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Ram 1500 (HMG)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(Rifleman);
-        textureList[] = {"Jungle",1};
-        animationList[] = {"hide_frame",1,"hide_shield",1};
-    };
-    class GVAR(Pickup_MMG): Pickup_01_mmg_base_rf {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Ram 1500 (MMG)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(Rifleman);
-        textureList[] = {"Jungle",1};
-        animationList[] = {"hide_frame",1,"hide_shield",1};
-    };
-    class GVAR(Pickup_RCWS): Pickup_01_rcws_base_rf {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Ram 1500 (RCWS)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(Rifleman);
-        textureList[] = {"Jungle",1};
-        animationList[] = {"hide_frame",1,"hide_shield",1};
-    };
-    class GVAR(Pickup_AA): Pickup_01_aat_base_rf {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Ram 1500 (Anti-Air)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(Rifleman);
-        textureList[] = {"Jungle",1};
-        animationList[] = {"hide_frame",1,"hide_shield",1};
-    };
-    class GVAR(Pickup_MRL): Pickup_01_mrl_base_rf {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Ram 1500 (MRL)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(Rifleman);
-        textureList[] = {"Jungle",1};
-        animationList[] = {"hide_frame",1,"hide_shield",1};
-    };
-    class GVAR(Pickup_Rocket): Pickup_01_Rocket_base_rf {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Ram 1500 (Rocket)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(Rifleman);
-        textureList[] = {"Jungle",1};
-        animationList[] = {"hide_frame",1,"hide_shield",1};
-    };
-    class GVAR(Pickup_Fuel): Pickup_fuel_base_rf {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Ram 1500 (Fuel)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(Rifleman);
-        textureList[] = {"Jungle",1};
-        animationList[] = {"hide_frame",1,"hide_shield",1};
-    };
-    class GVAR(Pickup_Repair): Pickup_repair_ig_base_rf {
-        scope = 2;
-        scopeCurator = 2;
-        author = QAUTHOR;
-        displayName = "Ram 1500 (Repair)";
-        side = 1;
-        faction = QUOTE(ADDON);
-        crew = QGVAR(Rifleman);
-        textureList[] = {"Jungle",1};
-        animationList[] = {"hide_frame",1,"hide_shield",1};
+        crew = QGVAR(Crew);
     };
 };

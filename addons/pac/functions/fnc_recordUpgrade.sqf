@@ -35,7 +35,7 @@ private _n = 0;
     {
         _x params ["_key", "_empty"];
         if !(_key in _rec) then {
-            _rec set [_key, if (_empty isEqualType [] || {_empty isEqualType createHashMap}) then {+_empty} else {_empty}];
+            _rec set [_key, if (_empty isEqualTypeAny [[], createHashMap]) then {+_empty} else {_empty}];
             _changed = true;
         };
     } forEach _fields;

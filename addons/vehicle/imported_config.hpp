@@ -1331,19 +1331,19 @@ class CfgSoundSets {
 };
 class CfgSoundShaders {
     class GVAR(Plane_Fighter_05_EngineLowExt_SoundShader) {
-        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_low_ext", 1}};
+        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_low_ext.ogg", 1}};
         frequency = "1 min (rpm + 0.5)*(rpm factor[0, 1])";
         volume = "0.6 * machcone*engineOn*camPos*(rpm factor[0, 1])*(thrust factor[0.75, 0])";
         range = 1200;
     };
     class GVAR(Plane_Fighter_05_EngineHighExt_SoundShader) {
-        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_high_ext", 1}};
+        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_high_ext.ogg", 1}};
         frequency = "1 min (rpm + 0.5)*(rpm factor[0.5, 1.1])";
         volume = "0.6 * machcone*engineOn*camPos*(rpm factor[0, 1])*(thrust factor[0, 0.75])";
         range = 1300;
     };
     class GVAR(Plane_Fighter_05_ForsageExt_SoundShader) {
-        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_forsage_ext", 1}};
+        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_forsage_ext.ogg", 1}};
         frequency = 1.1;
         volume = "0.6 * machcone*engineOn*camPos*(thrust factor[0.6, 1.0])";
         range = 1500;
@@ -1356,38 +1356,38 @@ class CfgSoundShaders {
         range = 200;
     };
     class GVAR(Plane_Fighter_05_EngineExt_Dist_Front_SoundShader) {
-        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_front", 1}};
+        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_front.ogg", 1}};
         frequency = 1;
         volume = "0.6 * machcone*camPos*(rpm factor[0.5, 1])";
         range = 5000;
         rangeCurve[] = {{0, 0}, {50, 1}, {5000, 1}};
     };
     class GVAR(Plane_Fighter_05_EngineExt_Middle_SoundShader) {
-        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_middle", 1}};
+        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_middle.ogg", 1}};
         frequency = 1;
         volume = "0.6 * machcone*camPos*(rpm factor[0.5, 1])";
         range = 4000;
         rangeCurve[] = {{0, 1}, {50, 1}, {4000, 1}};
     };
     class GVAR(Plane_Fighter_05_EngineExt_Dist_Rear_SoundShader) {
-        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_back", 1}};
+        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_back.ogg", 1}};
         frequency = 1;
         volume = "0.6 * machcone*camPos*(rpm factor[0.5, 1])";
         range = 5000;
         rangeCurve[] = {{0, 0}, {50, 1}, {5000, 1}};
     };
     class GVAR(Plane_Fighter_05_EngineLowInt_SoundShader) {
-        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_low_int", 1}};
+        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_low_int.ogg", 1}};
         frequency = "1 min (rpm + 0.5)*(rpm factor[0, 1])";
         volume = "1 * engineOn*(1-camPos)*(rpm factor[0.5, 1])";
     };
     class GVAR(Plane_Fighter_05_EngineHighInt_SoundShader) {
-        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_high_int", 1}};
+        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_high_int.ogg", 1}};
         frequency = "1 min (rpm + 0.25)*(rpm factor[0.25, 1.1])";
         volume = "1 * engineOn*(1-camPos)*(rpm factor[0, 1])";
     };
     class GVAR(Plane_Fighter_05_ForsageInt_SoundShader) {
-        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_forsage_int", 1}};
+        samples[] = {{"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_forsage_int.ogg", 1}};
         frequency = "1 min (rpm + 0.5)*(rpm factor[0, 1])";
         volume = "1 * engineOn*(1-camPos)*(rpm factor[0.5, 1])*(thrust factor[0.5, 1.0])";
     };
@@ -1503,6 +1503,7 @@ class CfgVehicles {
     };
     class Plane: Air {
         class HitPoints;
+        class Turrets;
     };
     class Helicopter: Air {
         class HitPoints;
@@ -1891,10 +1892,6 @@ class CfgVehicles {
         scope = 1;
         scopeCurator = 0;
         class TransportBackpacks {
-            class _xx_B_AssaultPack_desert_lxWS {
-                backpack = "B_AssaultPack_desert_lxWS";
-                count = 2;
-            };
         };
     };
     class GVAR(B_D_MBT_01_arty_lxWS): B_MBT_01_arty_F {
@@ -1902,10 +1899,6 @@ class CfgVehicles {
         scope = 1;
         scopeCurator = 0;
         class TransportBackpacks {
-            class _xx_B_AssaultPack_desert_lxWS {
-                backpack = "B_AssaultPack_desert_lxWS";
-                count = 2;
-            };
         };
     };
     class GVAR(B_D_MBT_01_cannon_lxWS): B_MBT_01_cannon_F {
@@ -1913,10 +1906,6 @@ class CfgVehicles {
         scope = 1;
         scopeCurator = 0;
         class TransportBackpacks {
-            class _xx_B_AssaultPack_desert_lxWS {
-                backpack = "B_AssaultPack_desert_lxWS";
-                count = 2;
-            };
         };
     };
     class GVAR(B_D_MBT_01_mlrs_lxWS): B_MBT_01_mlrs_F {
@@ -1924,10 +1913,6 @@ class CfgVehicles {
         scope = 1;
         scopeCurator = 0;
         class TransportBackpacks {
-            class _xx_B_AssaultPack_desert_lxWS {
-                backpack = "B_AssaultPack_desert_lxWS";
-                count = 2;
-            };
         };
     };
     class GVAR(B_D_Plane_Fighter_01_F): B_Plane_Fighter_01_F {
@@ -1970,69 +1955,6 @@ class CfgVehicles {
         };
         class EjectionSystem: EjectionSystem {
             EjectionSeatClass = QGVAR(B_D_Ejection_Seat_Plane_Fighter_01_F);
-        };
-    };
-    class GVAR(B_D_VTOL_01_armed_F): VTOL_01_armed_base_F {
-        author = "Avery Kaiserin";
-        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_D_VTOL_01_armed_F.jpg";
-        displayName = "AV-44X Blackfish";
-        side = 1;
-        faction = "ghost_blue";
-        crew = "B_Pilot_F";
-        typicalCargo[] = {"B_Soldier_F"};
-        textureList[] = {"Sand", 1, "Olive", 0, "Blue", 0};
-        hiddenSelectionsTextures[] = {"\lxWS\air_f_lxWS\Data\NATO\VTOL_01_EXT01_sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT02_Sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT03_Sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT04_Sand_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"};
-        scope = 1;
-        scopeCurator = 0;
-        class SimpleObject {
-            eden = 1;
-            animate[] = {{"engine_1_rot", 0.8}, {"engine_2_rot", 0.8}, {"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rudder_1_rot", 0}, {"rudder_2_rot", 0}, {"flap_1_1_move", 0}, {"flap_1_2_move", 0}, {"flap_2_1_move", 0}, {"flap_2_2_move", 0}, {"flap_1_1_rot", 0}, {"flap_1_2_rot", 0}, {"flap_2_1_rot", 0}, {"flap_2_2_rot", 0}, {"gear_1_move", 0}, {"gear_2_move", 0}, {"gear_3_move", 0}, {"gear_1_hatch_1_rot", 0}, {"gear_1_hatch_2_rot", 0}, {"gear_1_hatch_3_rot", 0}, {"gear_2_hatch_1_rot", 0}, {"gear_2_hatch_2_rot", 0}, {"gear_3_hatch_1_rot", 0}, {"gear_3_hatch_2_rot", 0}, {"wheel_1_1_rot", 0}, {"wheel_1_2_rot", 0}, {"wheel_2_1_rot", 0}, {"wheel_2_2_rot", 0}, {"wheel_2_3_rot", 0}, {"wheel_3_1_rot", 0}, {"wheel_3_2_rot", 0}, {"wheel_3_3_rot", 0}, {"gear_1_1_damper_move", 1}, {"gear_1_2_damper_move", 1}, {"gear_2_1_damper_move", 1}, {"gear_2_2_damper_move", 1}, {"gear_2_3_damper_move", 1}, {"gear_3_1_damper_move", 1}, {"gear_3_2_damper_move", 1}, {"gear_3_3_damper_move", 1}, {"door_1a_rot", 0}, {"door_1b_rot", 0}, {"positionlights_hide", 0}, {"positionlight_white_1_hide", 0}, {"positionlight_white_2_hide", 0}, {"collisionlight_red_hide", 0}, {"damage_hide", 0}, {"rotor_1_blur_hide", 0}, {"rotor_1_static_hide", 0}, {"rotor_2_blur_hide", 0}, {"rotor_2_static_hide", 0}, {"copilot_flir_h_rot", 0}, {"copilot_flir_v_rot", 0}, {"display_off_hide", 0}, {"avionics_damage", 0}, {"display_climb_move", 0}, {"display_climb_moveb", 0}, {"display_altitude_small_rot", 11.74}, {"display_altitude_large_rot", 11.74}, {"display_altitude_small_rotb", 11.74}, {"display_altitude_small_rotm", 11.74}, {"display_altitudeb_large_rot", 11.74}, {"display_altitudem_large_rot", 11.74}, {"display_compass_rot", 0}, {"display_compassb_rot", 0}, {"display_compassm_rot", 0}, {"display_flaps_1_rot", 0}, {"display_flaps_2_rot", 0}, {"display_flaps_1b_rot", 0}, {"display_flaps_2b_rot", 0}, {"display_gear_down_move", 0}, {"display_gear_downb_move", 0}, {"display_gear_up_move", 0}, {"display_gear_upb_move", 0}, {"display_speed_1_rot", 0}, {"display_speed_1b_rot", 0}, {"display_horizon_1_rot_1", 0}, {"display_horizon_1b_rot_1", 0}, {"display_horizon_1m_rot_1", 0}, {"horizon_rot_1", 0}, {"display_horizon_1_rot_2", 0}, {"display_horizon_1b_rot_2", 0}, {"display_horizon_1m_rot_2", 0}, {"horizon_rot_2", 0}, {"display_speed_2_rot_1", 0}, {"display_speed_2b_rot_1", 0}, {"display_speed_2_rot_2", 0}, {"display_speed_2b_rot_2", 0}, {"display_engine_1_rot", 0}, {"display_engine_1b_rot", 0}, {"display_engine_2_rot", 0}, {"display_engine_2b_rot", 0}, {"display_fuel_1_rot", 1}, {"display_fuel_1b_rot", 1}, {"display_fuel_2_rot", 1}, {"display_fuel_2b_rot", 1}, {"display_radar_off", 0}, {"display_radar_source_off", 0}, {"display_radar", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"gunner01_flir_h_rot", 1.57}, {"gunner01_flir_v_rot", 0}, {"gatling_turret_rot", 1.57}, {"gatling_rot", 0}, {"gatling_muzzleflash_hide", 0}, {"gatling_barrels_rot", 1}, {"howitzer_turret_rot", 1.57}, {"howitzer_rot", 0}, {"howitzer_muzzleflash_hide", 0}, {"gunner02_flir_h_rot", 1.57}, {"gunner02_flir_v_rot", 0}, {"cannon_turret_rot", 1.57}, {"cannon_rot", 0}, {"cannon_muzzleflash_hide", 0}, {"cannon_barrel_move", 1}, {"cannon_barrel_hide", 0}, {"gatling_barrels_hide", 0}, {"howitzer_barrel_hide", 0}};
-            hide[] = {"clan", "zasleh", "light_1_hide", "light_2_hide", "zadni svetlo", "podsvit pristroju", "poskozeni"};
-            verticalOffset = 6.739;
-            verticalOffsetWorld = 0.049;
-            init = "''";
-        };
-    };
-    class GVAR(B_D_VTOL_01_infantry_F): VTOL_01_infantry_base_F {
-        author = "Avery Kaiserin";
-        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_D_VTOL_01_infantry_F.jpg";
-        displayName = "V-44 X Blackfish (Infantry Transport)";
-        side = 1;
-        faction = "ghost_blue";
-        crew = "B_Pilot_F";
-        typicalCargo[] = {"B_Soldier_F"};
-        textureList[] = {"Sand", 1, "Olive", 0, "Blue", 0};
-        hiddenSelectionsTextures[] = {"\lxWS\air_f_lxWS\Data\NATO\VTOL_01_EXT01_sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT02_Sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT03_Sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT04_Sand_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"};
-        scope = 1;
-        scopeCurator = 0;
-        class SimpleObject {
-            eden = 1;
-            animate[] = {{"engine_1_rot", 0.8}, {"engine_2_rot", 0.8}, {"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rudder_1_rot", 0}, {"rudder_2_rot", 0}, {"flap_1_1_move", 0}, {"flap_1_2_move", 0}, {"flap_2_1_move", 0}, {"flap_2_2_move", 0}, {"flap_1_1_rot", 0}, {"flap_1_2_rot", 0}, {"flap_2_1_rot", 0}, {"flap_2_2_rot", 0}, {"gear_1_move", 0}, {"gear_2_move", 0}, {"gear_3_move", 0}, {"gear_1_hatch_1_rot", 0}, {"gear_1_hatch_2_rot", 0}, {"gear_1_hatch_3_rot", 0}, {"gear_2_hatch_1_rot", 0}, {"gear_2_hatch_2_rot", 0}, {"gear_3_hatch_1_rot", 0}, {"gear_3_hatch_2_rot", 0}, {"wheel_1_1_rot", 0.01}, {"wheel_1_2_rot", 0.01}, {"wheel_2_1_rot", 0.01}, {"wheel_2_2_rot", 0.01}, {"wheel_2_3_rot", 0.01}, {"wheel_3_1_rot", 0.01}, {"wheel_3_2_rot", 0.01}, {"wheel_3_3_rot", 0.01}, {"gear_1_1_damper_move", 1}, {"gear_1_2_damper_move", 1}, {"gear_2_1_damper_move", 1}, {"gear_2_2_damper_move", 1}, {"gear_2_3_damper_move", 1}, {"gear_3_1_damper_move", 1}, {"gear_3_2_damper_move", 1}, {"gear_3_3_damper_move", 1}, {"door_1a_rot", 0}, {"door_1b_rot", 0}, {"positionlights_hide", 0}, {"positionlight_white_1_hide", 0}, {"positionlight_white_2_hide", 0}, {"collisionlight_red_hide", 0}, {"damage_hide", 0}, {"rotor_1_blur_hide", 0}, {"rotor_1_static_hide", 0}, {"rotor_2_blur_hide", 0}, {"rotor_2_static_hide", 0}, {"copilot_flir_h_rot", 0}, {"copilot_flir_v_rot", 0}, {"display_off_hide", 0}, {"avionics_damage", 0}, {"display_climb_move", 0}, {"display_climb_moveb", 0}, {"display_altitude_small_rot", 11.74}, {"display_altitude_large_rot", 11.74}, {"display_altitude_small_rotb", 11.74}, {"display_altitude_small_rotm", 11.74}, {"display_altitudeb_large_rot", 11.74}, {"display_altitudem_large_rot", 11.74}, {"display_compass_rot", 0}, {"display_compassb_rot", 0}, {"display_compassm_rot", 0}, {"display_flaps_1_rot", 0}, {"display_flaps_2_rot", 0}, {"display_flaps_1b_rot", 0}, {"display_flaps_2b_rot", 0}, {"display_gear_down_move", 0}, {"display_gear_downb_move", 0}, {"display_gear_up_move", 0}, {"display_gear_upb_move", 0}, {"display_speed_1_rot", 0}, {"display_speed_1b_rot", 0}, {"display_horizon_1_rot_1", 0}, {"display_horizon_1b_rot_1", 0}, {"display_horizon_1m_rot_1", 0}, {"horizon_rot_1", 0}, {"display_horizon_1_rot_2", 0}, {"display_horizon_1b_rot_2", 0}, {"display_horizon_1m_rot_2", 0}, {"horizon_rot_2", 0}, {"display_speed_2_rot_1", 0}, {"display_speed_2b_rot_1", 0}, {"display_speed_2_rot_2", 0}, {"display_speed_2b_rot_2", 0}, {"display_engine_1_rot", 0}, {"display_engine_1b_rot", 0}, {"display_engine_2_rot", 0}, {"display_engine_2b_rot", 0}, {"display_fuel_1_rot", 1}, {"display_fuel_1b_rot", 1}, {"display_fuel_2_rot", 1}, {"display_fuel_2b_rot", 1}, {"display_radar_off", 0}, {"display_radar_source_off", 0}, {"display_radar", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"cargoseats_hide", 0}};
-            hide[] = {"clan", "zasleh", "light_1_hide", "light_2_hide", "zadni svetlo", "podsvit pristroju", "poskozeni"};
-            verticalOffset = 6.739;
-            verticalOffsetWorld = 0.049;
-            init = "''";
-        };
-    };
-    class GVAR(B_D_VTOL_01_vehicle_F): VTOL_01_vehicle_base_F {
-        author = "Avery Kaiserin";
-        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\B_D_VTOL_01_vehicle_F.jpg";
-        displayName = "V-44 X Blackfish (Vehicle Transport)";
-        side = 1;
-        faction = "ghost_blue";
-        crew = "B_Pilot_F";
-        typicalCargo[] = {"B_Soldier_F"};
-        textureList[] = {"Sand", 1, "Olive", 0, "Blue", 0};
-        hiddenSelectionsTextures[] = {"\lxWS\air_f_lxWS\Data\NATO\VTOL_01_EXT01_sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT02_Sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT03_Sand_CO.paa", "\z\ghost\addons\vehicle\models\air\VTOL_01\Data\VTOL_01_EXT04_Sand_CO.paa", "\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"};
-        scope = 1;
-        scopeCurator = 0;
-        class SimpleObject {
-            eden = 1;
-            animate[] = {{"engine_1_rot", 0.8}, {"engine_2_rot", 0.8}, {"rotor_1_rot", 0}, {"rotor_2_rot", 0}, {"rudder_1_rot", 0}, {"rudder_2_rot", 0}, {"flap_1_1_move", 0}, {"flap_1_2_move", 0}, {"flap_2_1_move", 0}, {"flap_2_2_move", 0}, {"flap_1_1_rot", 0}, {"flap_1_2_rot", 0}, {"flap_2_1_rot", 0}, {"flap_2_2_rot", 0}, {"gear_1_move", 0}, {"gear_2_move", 0}, {"gear_3_move", 0}, {"gear_1_hatch_1_rot", 0}, {"gear_1_hatch_2_rot", 0}, {"gear_1_hatch_3_rot", 0}, {"gear_2_hatch_1_rot", 0}, {"gear_2_hatch_2_rot", 0}, {"gear_3_hatch_1_rot", 0}, {"gear_3_hatch_2_rot", 0}, {"wheel_1_1_rot", -0.01}, {"wheel_1_2_rot", -0.01}, {"wheel_2_1_rot", -0.01}, {"wheel_2_2_rot", -0.01}, {"wheel_2_3_rot", -0.01}, {"wheel_3_1_rot", -0.01}, {"wheel_3_2_rot", -0.01}, {"wheel_3_3_rot", -0.01}, {"gear_1_1_damper_move", 1}, {"gear_1_2_damper_move", 1}, {"gear_2_1_damper_move", 1}, {"gear_2_2_damper_move", 1}, {"gear_2_3_damper_move", 1}, {"gear_3_1_damper_move", 1}, {"gear_3_2_damper_move", 1}, {"gear_3_3_damper_move", 1}, {"door_1a_rot", 0}, {"door_1b_rot", 0}, {"positionlights_hide", 0}, {"positionlight_white_1_hide", 0}, {"positionlight_white_2_hide", 0}, {"collisionlight_red_hide", 0}, {"damage_hide", 0}, {"rotor_1_blur_hide", 0}, {"rotor_1_static_hide", 0}, {"rotor_2_blur_hide", 0}, {"rotor_2_static_hide", 0}, {"copilot_flir_h_rot", 0}, {"copilot_flir_v_rot", 0}, {"display_off_hide", 0}, {"avionics_damage", 0}, {"display_climb_move", 0}, {"display_climb_moveb", 0}, {"display_altitude_small_rot", 11.74}, {"display_altitude_large_rot", 11.74}, {"display_altitude_small_rotb", 11.74}, {"display_altitude_small_rotm", 11.74}, {"display_altitudeb_large_rot", 11.74}, {"display_altitudem_large_rot", 11.74}, {"display_compass_rot", 0}, {"display_compassb_rot", 0}, {"display_compassm_rot", 0}, {"display_flaps_1_rot", 0}, {"display_flaps_2_rot", 0}, {"display_flaps_1b_rot", 0}, {"display_flaps_2b_rot", 0}, {"display_gear_down_move", 0}, {"display_gear_downb_move", 0}, {"display_gear_up_move", 0}, {"display_gear_upb_move", 0}, {"display_speed_1_rot", 0}, {"display_speed_1b_rot", 0}, {"display_horizon_1_rot_1", 0}, {"display_horizon_1b_rot_1", 0}, {"display_horizon_1m_rot_1", 0}, {"horizon_rot_1", 0}, {"display_horizon_1_rot_2", 0}, {"display_horizon_1b_rot_2", 0}, {"display_horizon_1m_rot_2", 0}, {"horizon_rot_2", 0}, {"display_speed_2_rot_1", 0}, {"display_speed_2b_rot_1", 0}, {"display_speed_2_rot_2", 0}, {"display_speed_2b_rot_2", 0}, {"display_engine_1_rot", 0}, {"display_engine_1b_rot", 0}, {"display_engine_2_rot", 0}, {"display_engine_2b_rot", 0}, {"display_fuel_1_rot", 1}, {"display_fuel_1b_rot", 1}, {"display_fuel_2_rot", 1}, {"display_fuel_2b_rot", 1}, {"display_radar_off", 0}, {"display_radar_source_off", 0}, {"display_radar", 0}, {"stick_control_1_pitch_rot", 0}, {"stick_control_2_pitch_rot", 0}, {"stick_control_1_roll_rot", 0}, {"stick_control_2_roll_rot", 0}, {"pedals_left_1_move", 0}, {"pedals_right_1_move", 0}, {"pedals_left_2_rot", 0}, {"pedals_right_2_rot", 0}, {"cargoseats_hide", 1}};
-            hide[] = {"clan", "zasleh", "light_1_hide", "light_2_hide", "zadni svetlo", "podsvit pristroju", "poskozeni"};
-            verticalOffset = 6.739;
-            verticalOffsetWorld = 0.049;
-            init = "''";
         };
     };
     class GVAR(B_LSV_01_light_F): LSV_01_light_base_F {
@@ -2380,14 +2302,14 @@ class CfgVehicles {
     };
     class GVAR(O_R_UAV_01_F): UAV_01_base_F {
         author = "Avery Kaiserin";
-        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\O_R_UAV_01_F.jpg";
+        editorPreview = "\z\ghost\addons\uniform_ru\models\uniform\editorpreviews\Data\CfgVehicles\O_R_UAV_01_F.jpg";
         displayName = "Shukhov AR-2";
         side = 0;
         faction = "ghost_red";
         crew = "O_UAV_AI";
         typicalCargo[] = {"O_Soldier_F"};
         accuracy = 0.5;
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\UAV_01\Data\UAV_01_RUgrey_CO.paa"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\uniform_ru\models\uniform\air\UAV_01\Data\UAV_01_RUgrey_CO.paa"};
         textureList[] = {"Rus", 1};
         scope = 1;
         scopeCurator = 0;
@@ -2631,10 +2553,10 @@ class CfgVehicles {
         animationList[] = {"HideCover", 0.33};
         attenuationEffectType = "OpenCarAttenuation";
         insideSoundCoef = 0.5;
-        soundEngineOnInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\boat\Boat_Civil_02\ext-slowboat-engine-start-03", "db-15", 1, 200};
-        soundEngineOnExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\boat\Boat_Civil_02\ext-slowboat-engine-start-03", "db-15", 1, 200};
-        soundEngineOffInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\boat\Boat_Civil_02\ext-slowboat-engine-stop-03", "db-15", 1, 200};
-        soundEngineOffExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\boat\Boat_Civil_02\ext-slowboat-engine-stop-03", "db-15", 1, 200};
+        soundEngineOnInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\boat\Boat_Civil_02\ext-slowboat-engine-start-03.ogg", "db-15", 1, 200};
+        soundEngineOnExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\boat\Boat_Civil_02\ext-slowboat-engine-start-03.ogg", "db-15", 1, 200};
+        soundEngineOffInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\boat\Boat_Civil_02\ext-slowboat-engine-stop-03.ogg", "db-15", 1, 200};
+        soundEngineOffExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\boat\Boat_Civil_02\ext-slowboat-engine-stop-03.ogg", "db-15", 1, 200};
         buildCrash0[] = {"\A3\Sounds_F\Vehicles\boat\noises\Light_metal_boat_crash_building_01", "db5", 1, 200};
         buildCrash1[] = {"\A3\Sounds_F\Vehicles\boat\noises\Light_metal_boat_crash_building_02", "db5", 1, 200};
         buildCrash2[] = {"\A3\Sounds_F\Vehicles\boat\noises\Light_metal_boat_crash_building_03", "db5", 1, 200};
@@ -2745,22 +2667,22 @@ class CfgVehicles {
         };
         class Sounds {
             class IdleOut {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\boat\Boat_Civil_02\ext-slowboat-engine-idle-04", "db-7", 1, 150};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\boat\Boat_Civil_02\ext-slowboat-engine-idle-04.ogg", "db-7", 1, 150};
                 frequency = "0.95+((rpm/1200) factor[(100/	1200),(200/	1200)])*0.15";
                 volume = "engineOn*(((rpm/1200) factor[(0/	1200),(30/	1200)])	*	((rpm/	1200) factor[(500/	1200),(300/	1200)]))";
             };
             class Engine {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\boat\Boat_Civil_02\ext-slowboat-engine-low-04", "db-4", 1.2, 300};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\boat\Boat_Civil_02\ext-slowboat-engine-low-04.ogg", "db-4", 1.2, 300};
                 frequency = "0.95+((rpm/1200) factor[(300/	1200),(600/	1200)])*0.2";
                 volume = "engineOn*(((rpm/1200) factor[(200/	1200),(300/	1200)])	*	((rpm/	1200) factor[(600/	1200),(400/	1200)]))";
             };
             class EngineMidOut {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\boat\Boat_Civil_02\ext-slowboat-engine-hi-03", "db-1", 0.6, 400};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\boat\Boat_Civil_02\ext-slowboat-engine-hi-03.ogg", "db-1", 0.6, 400};
                 frequency = "0.95+((rpm/	1200) factor[(600/	1200),(900/	1200)])*0.2";
                 volume = "engineOn*(((rpm/	1200) factor[(350/	1200),(500/	1200)])	*	((rpm/	1200) factor[(1200/	1200),(900/	1200)]))";
             };
             class EngineMaxOut {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\boat\Boat_Civil_02\ext-slowboat-engine-hi-03", "db2", 1, 500};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\boat\Boat_Civil_02\ext-slowboat-engine-hi-03.ogg", "db2", 1, 500};
                 frequency = "0.95+((rpm/1200) factor[(700/	1200),(1000/	1200)])*0.3";
                 volume = "engineOn*((rpm/1200) factor[(600/	1200),(1200/	1200)])";
             };
@@ -2922,8 +2844,8 @@ class CfgVehicles {
         editorSubcategory = "EdSubcat_DismantledWeapons";
         faction = "CIV_F";
         displayName = "Static Titan Launcher (AA) [Russia]";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\supplies\Bags\Data\backpack_small_rgr_CO.paa"};
-        picture = "\z\ghost\addons\vehicle\models\supplies\Bags\Data\UI\icon_B_TacticalPack_rgr_ca.paa";
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\uniform_ru\models\uniform\supplies\Bags\Data\backpack_small_rgr_CO.paa"};
+        picture = "\z\ghost\addons\uniform_ru\models\uniform\supplies\Bags\Data\UI\icon_B_TacticalPack_rgr_ca.paa";
         mass = 380;
         class assembleInfo: assembleInfo {
             displayName = "Static AA Launcher";
@@ -2934,8 +2856,8 @@ class CfgVehicles {
     class GVAR(O_R_HMG_01_support_F): B_HMG_01_support_F {
         author = "Avery Kaiserin";
         displayName = "Folded Tripod [Russia]";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\supplies\Bags\Data\backpack_small_rgr_CO.paa"};
-        picture = "\z\ghost\addons\vehicle\models\supplies\Bags\Data\UI\icon_B_TacticalPack_rgr_ca.paa";
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\uniform_ru\models\uniform\supplies\Bags\Data\backpack_small_rgr_CO.paa"};
+        picture = "\z\ghost\addons\uniform_ru\models\uniform\supplies\Bags\Data\UI\icon_B_TacticalPack_rgr_ca.paa";
         faction = "CIV_F";
     };
     class GVAR(O_R_UAV_01_backpack_F): Weapon_Bag_Base {
@@ -2948,8 +2870,8 @@ class CfgVehicles {
         editorCategory = "EdCat_Equipment";
         editorSubcategory = "EdSubcat_Backpacks";
         faction = "CIV_F";
-        picture = "\z\ghost\addons\vehicle\models\supplies\Bags\Data\UI\icon_O_R_UAV_01_backpack_F_ca.paa";
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\supplies\Bags\Data\UAV_backpack_RUkhk_CO.paa"};
+        picture = "\z\ghost\addons\uniform_ru\models\uniform\supplies\Bags\Data\UI\icon_O_R_UAV_01_backpack_F_ca.paa";
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\uniform_ru\models\uniform\supplies\Bags\Data\UAV_backpack_RUkhk_CO.paa"};
         maximumLoad = 0;
         mass = 300;
         class assembleInfo: assembleInfo {
@@ -2992,11 +2914,11 @@ class CfgVehicles {
         class Components;
         class AnimationSources;
         class ViewPilot;
-        class Eventhandlers;
+        class EventHandlers;
         class HitPoints: HitPoints {
             class HitHull;
         };
-        class Turrets {
+        class Turrets: Turrets {
             class CopilotTurret;
         };
     };
@@ -3318,8 +3240,8 @@ class CfgVehicles {
         extCameraPosition[] = {0.0, 3.0, -20.0};
         tailHook = 1;
         attenuationEffectType = "PlaneAttenuation";
-        soundGetIn[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\getin", "db0", 1, 40};
-        soundGetOut[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\getout", "db0", 1, 40};
+        soundGetIn[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\getin.ogg", "db0", 1, 40};
+        soundGetOut[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\getout.ogg", "db0", 1, 40};
         cabinOpenSound[] = {"\A3\Sounds_F\air\noises\Plane_CAS01_CabinOpen", "db5", 1, 40};
         cabinCloseSound[] = {"\A3\Sounds_F\air\noises\Plane_CAS01_CabinClose", "db5", 1, 40};
         cabinOpenSoundInternal[] = {"\A3\Sounds_F\air\noises\Plane_CAS01_CabinOpen", 10.0, 1, 40};
@@ -3348,10 +3270,10 @@ class CfgVehicles {
         Crash3[] = {"\A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_4", "db0", 1, 900};
         soundCrashes[] = {"Crash0", 0.25, "Crash1", 0.25, "Crash2", 0.25, "Crash3", 0.25};
         soundDammage[] = {"", 0.562341, 1};
-        soundEngineOnInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_start_int", "db0", 1};
-        soundEngineOnExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_start_ext", 1.75, 1, 300};
-        soundEngineOffInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_shut_int", "db0", 1};
-        soundEngineOffExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_shut_ext", 1.75, 1, 300};
+        soundEngineOnInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_start_int.ogg", "db0", 1};
+        soundEngineOnExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_start_ext.ogg", 1.75, 1, 300};
+        soundEngineOffInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_shut_int.ogg", "db0", 1};
+        soundEngineOffExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Fighter_05\B_Plane_Fighter_05_engine_shut_ext.ogg", 1.75, 1, 300};
         soundLocked[] = {"\A3\Sounds_F_Jets\vehicles\air\Shared\FX_Plane_Jet_lockedOn1", "db0", 1};
         soundIncommingMissile[] = {"\A3\Sounds_F_Jets\vehicles\air\Shared\FX_Plane_Jet_lockedon2", "db0", 1.5};
         soundGearUp[] = {"\A3\Sounds_F_Jets\vehicles\air\Shared\FX_Plane_Jet_gear_up", 2.25, 1, 250};
@@ -3442,11 +3364,11 @@ class CfgVehicles {
                     };
                 };
                 class presets {
-                    class empty {
+                    class Empty {
                         displayName = "STR_empty";
                         attachment[] = {};
                     };
-                    class default {
+                    class Default {
                         displayName = "STR_vehicle_default";
                         attachment[] = {"PylonRack_Missile_BIM9X_x1", "PylonRack_Missile_BIM9X_x1", "PylonRack_Missile_AMRAAM_D_x2", "PylonRack_Missile_AMRAAM_D_x2", "PylonMissile_Bomb_GBU12_x1", "PylonMissile_Bomb_GBU12_x1", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonRack_Bomb_SDB_x4", "PylonRack_Bomb_SDB_x4", QGVAR(PylonWeapon_220Rnd_25mm_shells)};
                     };
@@ -6936,7 +6858,7 @@ class CfgVehicles {
             wingStateUnFolded = 0;
             wingAutoUnFoldSpeed = 40;
         };
-        class Eventhandlers: Eventhandlers {
+        class EventHandlers: EventHandlers {
             hit = "call BIS_fnc_PlaneAiEject";
             landing = "[_this,true] call bis_fnc_aircraftTailhookAi";
             landingcanceled = "[_this,false] call bis_fnc_aircraftTailhookAi";
@@ -7166,12 +7088,12 @@ class CfgVehicles {
         soundWaterCollision2[] = {"\A3\Sounds_F\vehicles\crashes\helis\Heli_coll_water_ext_2", "db0", 1, 300};
         soundWaterCrashes[] = {"soundWaterCollision1", 0.5, "soundWaterCollision2", 0.5};
         soundDammage[] = {"\A3\Sounds_F\vehicles\crashes\helis\Heli_crash_default_int_1", 10, 1};
-        soundGetIn[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\close", "db0", 1};
-        soundGetOut[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\open", "db0", 1, 50};
-        soundEngineOnInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_int_start", "db-7", 1};
-        soundEngineOnExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_ext_start", "db5", 1, 600};
-        soundEngineOffInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_int_stop", "db-7", 1};
-        soundEngineOffExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_ext_stop", "db5", 1, 600};
+        soundGetIn[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\close.ogg", "db0", 1};
+        soundGetOut[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\open.ogg", "db0", 1, 50};
+        soundEngineOnInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_int_start.ogg", "db-7", 1};
+        soundEngineOnExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_ext_start.ogg", "db5", 1, 600};
+        soundEngineOffInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_int_stop.ogg", "db-7", 1};
+        soundEngineOffExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_ext_stop.ogg", "db5", 1, 600};
         soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\locked_1", "db0", 1};
         soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_2", "db-10", 1};
         rotorDamageInt[] = {"\A3\Sounds_F\vehicles\air\noises\heli_damage_rotor_int_2", "db0", 1};
@@ -9392,28 +9314,28 @@ class CfgVehicles {
         };
         class Sounds {
             class EngineExt {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_ext_engine", "db7", 1, 600};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_ext_engine.ogg", "db7", 1, 600};
                 frequency = "rotorSpeed";
                 volume = "camPos*((rotorSpeed-0.72)*4)";
             };
             class RotorExt {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_ext_rotor", "db2", 1, 1100};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_ext_rotor.ogg", "db2", 1, 1100};
                 frequency = "1.4*(rotorSpeed * (1 - rotorThrust/5))";
                 volume = "camPos*(0 max (rotorSpeed-0.1))*(1 + rotorThrust)";
                 speed = 2;
             };
             class RotorSwist {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\swist", "db0", 1, 300};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\swist.ogg", "db0", 1, 300};
                 frequency = 1;
                 volume = "camPos * (rotorThrust factor [0.7, 0.9])";
             };
             class EngineInt {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_int_engine", "db-5", 1};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_int_engine.ogg", "db-5", 1};
                 frequency = "rotorSpeed";
                 volume = "(1-camPos)*((rotorSpeed-0.75)*4)";
             };
             class RotorInt {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_int_rotor", "db1", 1};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_int_rotor.ogg", "db1", 1};
                 frequency = "rotorSpeed * (1 - rotorThrust/5)";
                 volume = "(1-camPos)*(0 max (rotorSpeed-0.1))*(1 + rotorThrust)";
             };
@@ -9533,28 +9455,28 @@ class CfgVehicles {
             };
             class Sounds {
                 class EngineExt {
-                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_ext_engine", "db7", 1, 600};
+                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_ext_engine.ogg", "db7", 1, 600};
                     frequency = "rotorSpeed";
                     volume = "camPos*((rotorSpeed-0.72)*4)";
                 };
                 class RotorExt {
-                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_ext_rotor", "db2", 1, 1100};
+                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_ext_rotor.ogg", "db2", 1, 1100};
                     frequency = "1.4*(rotorSpeed * (1 - rotorThrust/5))";
                     volume = "camPos*(0 max (rotorSpeed-0.1))*(1 + rotorThrust)";
                     speed = 2;
                 };
                 class RotorSwist {
-                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\swist", "db0", 1, 300};
+                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\swist.ogg", "db0", 1, 300};
                     frequency = 1;
                     volume = "camPos * (rotorThrust factor [0.7, 0.9])";
                 };
                 class EngineInt {
-                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_int_engine", "db-5", 1};
+                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_int_engine.ogg", "db-5", 1};
                     frequency = "rotorSpeed";
                     volume = "(1-camPos)*((rotorSpeed-0.75)*4)";
                 };
                 class RotorInt {
-                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_int_rotor", "db1", 1};
+                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_03\Heli_Attack_03_int_rotor.ogg", "db1", 1};
                     frequency = "rotorSpeed * (1 - rotorThrust/5)";
                     volume = "(1-camPos)*(0 max (rotorSpeed-0.1))*(1 + rotorThrust)";
                 };
@@ -9802,10 +9724,6 @@ class CfgVehicles {
             };
         };
         class TransportWeapons {
-            class _xx_arifle_SA80_C_snd_F {
-                weapon = QEGVAR(weapons,arifle_SA80_C_snd_F);
-                count = 2;
-            };
         };
     };
     class GVAR(B_A_Heli_Attack_03_tna_F): GVAR(B_A_Heli_Attack_03_F) {
@@ -9830,10 +9748,6 @@ class CfgVehicles {
             };
         };
         class TransportWeapons {
-            class _xx_arifle_SA80_C_khk_F {
-                weapon = QEGVAR(weapons,arifle_SA80_C_khk_F);
-                count = 2;
-            };
         };
     };
     class GVAR(B_A_Heli_Attack_03_wdl_F): GVAR(B_A_Heli_Attack_03_F) {
@@ -9858,10 +9772,6 @@ class CfgVehicles {
             };
         };
         class TransportWeapons {
-            class _xx_arifle_SA80_C_blk_F {
-                weapon = QEGVAR(weapons,arifle_SA80_C_blk_F);
-                count = 2;
-            };
         };
     };
     class GVAR(I_Heli_Attack_03_F): GVAR(Heli_Attack_03_v2_base_F) {
@@ -10000,12 +9910,12 @@ class CfgVehicles {
         soundWaterCollision2[] = {"\A3\Sounds_F\vehicles\crashes\helis\Heli_coll_water_ext_2", "db0", 1, 300};
         soundWaterCrashes[] = {"soundWaterCollision1", 0.5, "soundWaterCollision2", 0.5};
         soundDammage[] = {"\A3\Sounds_F\vehicles\crashes\helis\Heli_crash_default_int_1", 10, 1};
-        soundGetIn[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\close", "db0", 1};
-        soundGetOut[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\open", "db0", 1, 50};
-        soundEngineOnInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_int_start", "db-7", 1};
-        soundEngineOnExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_ext_start", "db5", 1, 1200};
-        soundEngineOffInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_int_stop", "db-7", 1};
-        soundEngineOffExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_ext_stop", "db5", 1, 1200};
+        soundGetIn[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\close.ogg", "db0", 1};
+        soundGetOut[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\open.ogg", "db0", 1, 50};
+        soundEngineOnInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_int_start.ogg", "db-7", 1};
+        soundEngineOnExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_ext_start.ogg", "db5", 1, 1200};
+        soundEngineOffInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_int_stop.ogg", "db-7", 1};
+        soundEngineOffExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_ext_stop.ogg", "db5", 1, 1200};
         soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\locked_1", "db0", 1};
         soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_2", "db-10", 1};
         rotorDamageInt[] = {"\A3\Sounds_F\vehicles\air\noises\heli_damage_rotor_int_2", "db0", 1};
@@ -11065,13 +10975,13 @@ class CfgVehicles {
             class Russian {
                 displayName = "Black (Star)";
                 author = "Grave";
-                textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_RUS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Heli_Attack_04_ext_02_black_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_03_RUS_CO.paa"};
+                textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_RUS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Heli_Attack_04_ext_02_black_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Heli_Attack_04_ext_03_black_CO.paa"};
                 factions[] = {};
             };
             class Russian2 {
                 displayName = "Black (Star, Flag)";
                 author = "Grave";
-                textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_RUS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_02_RUS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_03_RUS_CO.paa"};
+                textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_RUS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_02_RUS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Heli_Attack_04_ext_03_black_CO.paa"};
                 factions[] = {};
             };
             class RussianGreen {
@@ -11125,28 +11035,28 @@ class CfgVehicles {
         };
         class Sounds {
             class EngineExt {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_ext_engine", "db7", 1, 1200};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_ext_engine.ogg", "db7", 1, 1200};
                 frequency = "rotorSpeed";
                 volume = "camPos*((rotorSpeed-0.72)*4)";
             };
             class RotorExt {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_ext_rotor", "db2", 1, 2500};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_ext_rotor.ogg", "db2", 1, 2500};
                 frequency = "1.4*(rotorSpeed * (1 - rotorThrust/5))";
                 volume = "camPos*(0 max (rotorSpeed-0.1))*(1 + rotorThrust)";
                 speed = 2;
             };
             class RotorSwist {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\swist", "db0", 1, 300};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\swist.ogg", "db0", 1, 300};
                 frequency = 1;
                 volume = "camPos * (rotorThrust factor [0.7, 0.9])";
             };
             class EngineInt {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_int_engine", "db-5", 1};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_int_engine.ogg", "db-5", 1};
                 frequency = "rotorSpeed";
                 volume = "(1-camPos)*((rotorSpeed-0.75)*4)";
             };
             class RotorInt {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_int_rotor", "db1", 1};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_int_rotor.ogg", "db1", 1};
                 frequency = "rotorSpeed * (1 - rotorThrust/5)";
                 volume = "(1-camPos)*(0 max (rotorSpeed-0.1))*(1 + rotorThrust)";
             };
@@ -11266,28 +11176,28 @@ class CfgVehicles {
             };
             class Sounds {
                 class EngineExt {
-                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_ext_engine", "db7", 1, 1200};
+                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_ext_engine.ogg", "db7", 1, 1200};
                     frequency = "rotorSpeed";
                     volume = "camPos*((rotorSpeed-0.72)*4)";
                 };
                 class RotorExt {
-                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_ext_rotor", "db2", 1, 2500};
+                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_ext_rotor.ogg", "db2", 1, 2500};
                     frequency = "1.4*(rotorSpeed * (1 - rotorThrust/5))";
                     volume = "camPos*(0 max (rotorSpeed-0.1))*(1 + rotorThrust)";
                     speed = 2;
                 };
                 class RotorSwist {
-                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\swist", "db0", 1, 300};
+                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\swist.ogg", "db0", 1, 300};
                     frequency = 1;
                     volume = "camPos * (rotorThrust factor [0.7, 0.9])";
                 };
                 class EngineInt {
-                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_int_engine", "db-5", 1};
+                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_int_engine.ogg", "db-5", 1};
                     frequency = "rotorSpeed";
                     volume = "(1-camPos)*((rotorSpeed-0.75)*4)";
                 };
                 class RotorInt {
-                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_int_rotor", "db1", 1};
+                    sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Heli_Attack_04\Heli_Attack_04_int_rotor.ogg", "db1", 1};
                     frequency = "rotorSpeed * (1 - rotorThrust/5)";
                     volume = "(1-camPos)*(0 max (rotorSpeed-0.1))*(1 + rotorThrust)";
                 };
@@ -11585,7 +11495,7 @@ class CfgVehicles {
         faction = "ghost_blue";
         crew = "B_Helipilot_F";
         typicalCargo[] = {"B_Soldier_F"};
-        textureList[] = {"ION_lxWS", 1, "Black", 0};
+        textureList[] = {1, "Black", 0};
         hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_ION_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Heli_Attack_04_ext_02_black_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Heli_Attack_04_ext_03_black_CO.paa"};
         scope = 1;
         scopeCurator = 0;
@@ -11609,10 +11519,6 @@ class CfgVehicles {
             };
         };
         class TransportWeapons {
-            class _xx_arifle_XMS_Base_lxWS {
-                weapon = "arifle_XMS_Base_lxWS";
-                count = 2;
-            };
         };
         class Components: Components {
             class TransportPylonsComponent: TransportPylonsComponent {
@@ -11745,7 +11651,7 @@ class CfgVehicles {
         typicalCargo[] = {"O_helipilot_F"};
         animationList[] = {"exhaust_hide", 1};
         textureList[] = {"Russian", 1, "Russian2", 0, "RussianGreen", 0, "Black", 0};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_RUS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Heli_Attack_04_ext_02_black_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_03_RUS_CO.paa"};
+        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_RUS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Heli_Attack_04_ext_02_black_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Attack_04\Data\Heli_Attack_04_ext_03_black_CO.paa"};
         scope = 1;
         scopeCurator = 0;
         class Turrets: Turrets {
@@ -11858,10 +11764,6 @@ class CfgVehicles {
             };
         };
         class TransportWeapons {
-            class _xx_arifle_Galat_lxWS {
-                weapon = "arifle_Galat_lxWS";
-                count = 2;
-            };
         };
         class Components: Components {
             class TransportPylonsComponent: TransportPylonsComponent {
@@ -14118,11 +14020,6 @@ class CfgVehicles {
                 textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_01_ION_lxWS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_ION_lxWS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_ION_lxWS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_int_02_GenMil_CO.paa"};
                 factions[] = {};
             };
-            class UNA {
-                displayName = "UN";
-                textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_01_UNA_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_UNA_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_2_UN_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
-                factions[] = {};
-            };
             class GenGrey {
                 displayName = "Grey";
                 author = "Ravenholme";
@@ -14145,12 +14042,6 @@ class CfgVehicles {
                 displayName = "AAF";
                 author = "Grave";
                 textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_01_AAF_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_AAF_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_AAF_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"};
-                factions[] = {};
-            };
-            class UNO {
-                displayName = "UNO";
-                author = "Ravenholme";
-                textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_01_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
                 factions[] = {};
             };
         };
@@ -14615,11 +14506,6 @@ class CfgVehicles {
                 textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_01_White_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_White_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_White_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_int_02_GenCiv_CO.paa"};
                 factions[] = {};
             };
-            class UNA {
-                displayName = "UN";
-                textures[] = {"lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_1_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_UNA_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_2_UN_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
-                factions[] = {};
-            };
             class Black {
                 displayName = "Black";
                 author = "Ravenholme";
@@ -14656,12 +14542,6 @@ class CfgVehicles {
                 textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_01_daltgreen_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_daltgreen_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_daltgreen_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_int_02_GenCiv_CO.paa"};
                 factions[] = {};
             };
-            class UNO_VIP {
-                displayName = "UNO";
-                author = "Ravenholme";
-                textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_01_UN_VIP_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
-                factions[] = {};
-            };
         };
     };
     class GVAR(B_A_Heli_Transport_02_F): GVAR(Heli_Transport_02_Heavy_base_F) {
@@ -14692,10 +14572,6 @@ class CfgVehicles {
             };
         };
         class TransportWeapons {
-            class _xx_arifle_SA80_C_snd_F {
-                weapon = QEGVAR(weapons,arifle_SA80_C_snd_F);
-                count = 2;
-            };
         };
     };
     class GVAR(B_A_Heli_Transport_02_tna_F): GVAR(Heli_Transport_02_Heavy_base_F) {
@@ -14727,10 +14603,6 @@ class CfgVehicles {
             };
         };
         class TransportWeapons {
-            class _xx_arifle_SA80_C_khk_F {
-                weapon = QEGVAR(weapons,arifle_SA80_C_khk_F);
-                count = 2;
-            };
         };
     };
     class GVAR(C_Heli_Transport_02_VIP_F): GVAR(Heli_Transport_02_VIP_base_F) {
@@ -14841,88 +14713,11 @@ class CfgVehicles {
         crew = "B_Helipilot_F";
         typicalCargo[] = {"B_Soldier_F"};
         hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_01_ION_lxWS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_ION_lxWS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_ION_lxWS_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_int_02_GenCiv_CO.paa"};
-        textureList[] = {"ION_lxWS", 1, "ION", 0};
+        textureList[] = {1, "ION", 0};
         class TransportItems {
             class _xx_FirstAidKit {
                 name = "FirstAidKit";
                 count = 10;
-            };
-        };
-    };
-    class GVAR(B_UN_lxWS_Heli_Transport_02_VIP_F): GVAR(Heli_Transport_02_VIP_base_F) {
-        author = "Grave";
-        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_B_UN_lxWS_Heli_Transport_02_VIP_F.jpg";
-        displayName = "EH-302 (Executive Transport)";
-        side = 1;
-        faction = "ghost_blue";
-        crew = "B_Helipilot_F";
-        typicalCargo[] = {"B_Helipilot_F"};
-        hiddenSelectionsTextures[] = {"lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_1_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_UNA_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_2_UN_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
-        textureList[] = {"UNA", 1};
-        scope = 1;
-        scopeCurator = 0;
-        class TransportItems {
-            class _xx_FirstAidKit {
-                name = "FirstAidKit";
-                count = 10;
-            };
-        };
-    };
-    class GVAR(B_UN_lxWS_Heli_Transport_02_Heavy_F): GVAR(Heli_Transport_02_Heavy_base_F) {
-        author = "Grave";
-        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_B_UN_lxWS_Heli_Transport_02_Heavy_F.jpg";
-        displayName = "CH-49E Mohawk";
-        side = 1;
-        faction = "ghost_blue";
-        crew = "B_Helipilot_F";
-        typicalCargo[] = {"B_Helipilot_F"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_01_UNA_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Skins\Heli_Transport_02_ext_02_UNA_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_2_UN_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
-        textureList[] = {"UNA", 1};
-        availableForSupportTypes[] = {"Drop", "Transport"};
-        scope = 1;
-        scopeCurator = 0;
-        class TransportBackpacks {
-            class _xx_B_Parachute {
-                backpack = "B_Parachute";
-                count = 16;
-            };
-        };
-        class TransportItems {
-            class _xx_FirstAidKit {
-                name = "FirstAidKit";
-                count = 16;
-            };
-            class _xx_Toolkit {
-                name = "Toolkit";
-                count = 1;
-            };
-            class _xx_Medikit {
-                name = "Medikit";
-                count = 1;
-            };
-            class _xx_ItemGPS {
-                name = "ItemGPS";
-                count = 1;
-            };
-        };
-        class TransportMagazines {
-            class _xx_SmokeShell {
-                magazine = "SmokeShell";
-                count = 2;
-            };
-            class _xx_SmokeShellGreen {
-                magazine = "SmokeShellGreen";
-                count = 2;
-            };
-            class _xx_35Rnd_556x45_Velko_lxWS {
-                magazine = "35Rnd_556x45_Velko_lxWS";
-                count = 4;
-            };
-        };
-        class TransportWeapons {
-            class _xx_arifle_Velko_lxWS {
-                weapon = "arifle_Velko_lxWS";
-                count = 2;
             };
         };
     };
@@ -15004,11 +14799,11 @@ class CfgVehicles {
                     };
                 };
                 class presets {
-                    class empty {
+                    class Empty {
                         displayName = "STR_empty";
                         attachment[] = {};
                     };
-                    class default {
+                    class Default {
                         displayName = "STR_vehicle_default";
                         attachment[] = {"", "", "", "", "", "", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonRack_Bomb_SDB_x4", "PylonRack_Bomb_SDB_x4", QGVAR(PylonWeapon_220Rnd_25mm_shells)};
                     };
@@ -15272,11 +15067,11 @@ class CfgVehicles {
                     };
                 };
                 class presets {
-                    class empty {
+                    class Empty {
                         displayName = "STR_empty";
                         attachment[] = {};
                     };
-                    class default {
+                    class Default {
                         displayName = "STR_vehicle_default";
                         attachment[] = {"", "", "", "", "", "", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonRack_Bomb_SDB_x4", "PylonRack_Bomb_SDB_x4", QGVAR(PylonWeapon_220Rnd_25mm_shells)};
                     };
@@ -15430,8 +15225,8 @@ class CfgVehicles {
         antiRollbarSpeedMax = 300;
         extCameraPosition[] = {0, 3, -40};
         attenuationEffectType = "PlaneAttenuation";
-        soundGetIn[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\open", "db-10", 1};
-        soundGetOut[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\close", "db-10", 1, 40};
+        soundGetIn[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\open.ogg", "db-10", 1};
+        soundGetOut[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\close.ogg", "db-10", 1, 40};
         soundWaterCollision1[] = {"\A3\Sounds_F\vehicles\crashes\planes\plane_crash_water_1", "db3", 1, 500};
         soundWaterCollision2[] = {"\A3\Sounds_F\vehicles\crashes\planes\plane_crash_water_2", "db3", 1, 500};
         soundWaterCrashes[] = {"soundWaterCollision1", 0.5, "soundWaterCollision2", 0.5};
@@ -15462,16 +15257,16 @@ class CfgVehicles {
         landingSoundOut1[] = {"\A3\Sounds_F\vehicles\air\noises\landing_wheels_ext2", "db5", 1, 100};
         landingSoundOut[] = {"landingSoundOut0", 0.5, "landingSoundOut1", 0.5};
         soundDammage[] = {"", 0.562341, 1};
-        soundEngineOnInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_engine_start_int", "db-8", 1.0};
-        soundEngineOnExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_engine_start_ext", "db8", 1, 700};
-        soundEngineOffInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_engine_stop_int", "db-8", 1.0};
-        soundEngineOffExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_engine_stop_ext", "db8", 1, 700};
+        soundEngineOnInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_engine_start_int.ogg", "db-8", 1.0};
+        soundEngineOnExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_engine_start_ext.ogg", "db8", 1, 700};
+        soundEngineOffInt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_engine_stop_int.ogg", "db-8", 1.0};
+        soundEngineOffExt[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_engine_stop_ext.ogg", "db8", 1, 700};
         soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\locked_1", "db-10", 1};
         soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", "db-10", 1.0};
-        soundGearUp[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\gear_up", "db-2", 1, 150};
-        soundGearDown[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\gear_down", "db-2", 1, 150};
-        soundFlapsUp[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\flaps_up", "db-4", 1, 100};
-        soundFlapsDown[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\flaps_down", "db-4", 1, 100};
+        soundGearUp[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\gear_up.ogg", "db-2", 1, 150};
+        soundGearDown[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\gear_down.ogg", "db-2", 1, 150};
+        soundFlapsUp[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\flaps_up.ogg", "db-4", 1, 100};
+        soundFlapsDown[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\flaps_down.ogg", "db-4", 1, 100};
         class NewTurret;
         class HitPoints: HitPoints {
             class HitHull: HitHull {
@@ -16257,33 +16052,33 @@ class CfgVehicles {
         };
         class Sounds {
             class EngineMidhExt {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_engine_mid_ext", "db5", 1, 1100};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_engine_mid_ext.ogg", "db5", 1, 1100};
                 frequency = 1;
                 volume = "0.7 * machcone*camPos*(rpm factor[0.5, 1])";
             };
             class EngineHighExt {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_engine_high_ext", "db5", 1, 1100};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_engine_high_ext.ogg", "db5", 1, 1100};
                 frequency = "1 min (rpm+0.5)*(rpm factor[0.5, 1.1])";
                 volume = "0.7 * machcone*engineOn*camPos*(rpm factor[0, 1])*(thrust factor[0, 0.75])";
             };
             class ForsageExt {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_prop_ext", "db3", 1.2, 1100};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_prop_ext.ogg", "db3", 1.2, 1100};
                 frequency = 1;
                 volume = "0.7 * machcone*engineOn*camPos*(thrust factor[0.6, 1.0])";
                 cone[] = {1.14, 3.92, 2.5, 0.4};
             };
             class EngineMidhInt {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_engine_mid_int", "db-2", 1, 1100};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_engine_mid_int.ogg", "db-2", 1, 1100};
                 frequency = "1 min (rpm+0.25)*(rpm factor[0, 1])";
                 volume = "1 * engineOn*(1-camPos)*(rpm factor[0.5, 1])";
             };
             class EngineHighInt {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_engine_high_int", "db-2", 1, 1100};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_engine_high_int.ogg", "db-2", 1, 1100};
                 frequency = "1 min (rpm+0.25)*(rpm factor[0.25, 1.1])";
                 volume = "1 * engineOn*(1-camPos)*(rpm factor[0, 1])";
             };
             class ForsageInt {
-                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_prop_int", "db-7", 1.2, 1100};
+                sound[] = {"\z\ghost\addons\vehicle\models\sounds\vehicles\air\Plane_Transport_01\C192_prop_int.ogg", "db-7", 1.2, 1100};
                 frequency = "1 min (rpm+0.5)*(rpm factor[0, 1])";
                 volume = "1 * engineOn*(1-camPos)*(rpm factor[0.5, 1])*(thrust factor[0.5, 1.0])";
                 cone[] = {1.14, 3.92, 2.5, 0.4};
@@ -17377,11 +17172,11 @@ class CfgVehicles {
                     };
                 };
                 class Presets {
-                    class empty {
+                    class Empty {
                         displayName = "Empty";
                         attachment[] = {};
                     };
-                    class default {
+                    class Default {
                         displayName = "Default";
                         attachment[] = {"PylonRack_3Rnd_LG_scalpel", "PylonRack_3Rnd_LG_scalpel", "PylonRack_3Rnd_LG_scalpel", "PylonRack_3Rnd_LG_scalpel"};
                     };
@@ -18021,8 +17816,8 @@ class CfgVehicles {
                 showCrewAim = 2;
                 startEngine = 0;
                 turretInfoType = "RscOptics_MBT_02_gunner";
-                weapons[] = {QGVAR(autocannon_30mm_lxWS), "LMG_coax_ext", "missiles_Vorona_vehicle_lxWS"};
-                magazines[] = {"340Rnd_30mm_HE_shells_Tracer_Green_lxWS", "160Rnd_30mm_APFSDS_shells_Tracer_Green_lxWS", "2000Rnd_762x51_Belt_Green", "4rnd_Vorona_HEAT_lxWS"};
+                weapons[] = {QGVAR(autocannon_30mm_lxWS), "LMG_coax_ext"};
+                magazines[] = {"2000Rnd_762x51_Belt_Green"};
                 selectionFireAnim = "zasleh2";
                 memoryPointGun[] = {"usti hlavne3"};
                 minElev = -7;
@@ -18264,18 +18059,6 @@ class CfgVehicles {
                 textures[] = {"\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body_sand_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body2_sand_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_tow_sand_CO.paa", "\z\ghost\addons\vehicle\models\armor\Data\camonet_RUS_green_CO.paa", "\z\ghost\addons\vehicle\models\armor\Data\cage_RUkhk_CO.paa"};
                 factions[] = {};
             };
-            class Hex {
-                displayName = "Hex";
-                author = "Bran Flakes";
-                textures[] = {"\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body_Hex_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body2_Hex_CO.paa", "lxws\vehicles_1_f_lxws\apc_tracked_02\Data\apc_tracked_02_30mm_hex_co.paa", "\z\ghost\addons\vehicle\models\armor\Data\camonet_RUS_green_CO.paa", "\z\ghost\addons\vehicle\models\armor\Data\cage_RUkhk_CO.paa"};
-                factions[] = {};
-            };
-            class GreenHex {
-                displayName = "Green Hex";
-                author = "Bran Flakes";
-                textures[] = {"\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body_Ghex_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body2_Ghex_CO.paa", "lxws\vehicles_1_f_lxws\apc_tracked_02\Data\apc_tracked_02_30mm_ghex_co.paa", "\z\ghost\addons\vehicle\models\armor\Data\camonet_RUS_green_CO.paa", "\z\ghost\addons\vehicle\models\armor\Data\cage_RUkhk_CO.paa"};
-                factions[] = {};
-            };
             class UNO {
                 displayName = "UNO";
                 author = "Bran Flakes";
@@ -18500,13 +18283,6 @@ class CfgVehicles {
             class reload_cannon {
                 source = "reload";
                 weapon = QGVAR(autocannon_30mm_lxWS);
-            };
-            class Missiles_revolving {
-                source = "revolving";
-                weapon = "missiles_Vorona_vehicle_lxWS";
-            };
-            class Missiles_reloadMagazine: Missiles_revolving {
-                source = "reloadMagazine";
             };
             class muzzle_hide {
                 source = "reload";
@@ -18897,7 +18673,7 @@ class CfgVehicles {
         memoryPointsLeftEngineEffect = "EngineEffectL";
         memoryPointsRightEngineEffect = "EngineEffectR";
         animationList[] = {};
-        class Eventhandlers;
+        class EventHandlers;
         class complexGearbox {
             GearboxRatios[] = {"R1", -2, "N", 0, "D1", 5.1, "D2", 3.52, "D3", 2.31, "D4", 1.81, "D5", 1.15, "D6", 1};
             TransmissionRatios[] = {"High", 3.58};
@@ -19987,14 +19763,6 @@ class CfgVehicles {
         scope = 1;
         scopeCurator = 0;
         class TransportWeapons {
-            class _xx_arifle_Galat_lxWS {
-                weapon = "arifle_Galat_lxWS";
-                count = 2;
-            };
-            class _xx_arifle_SLR_lxWS {
-                weapon = "arifle_SLR_lxWS";
-                count = 1;
-            };
             class _xx_launch_RPG32_F {
                 weapon = "launch_RPG32_F";
                 count = 1;
@@ -20004,10 +19772,6 @@ class CfgVehicles {
             class _xx_30Rnd_762x39_Mag_F {
                 magazine = "30Rnd_762x39_Mag_F";
                 count = 12;
-            };
-            class _xx_20Rnd_762x51_slr_lxWS {
-                magazine = "20Rnd_762x51_slr_lxWS";
-                count = 8;
             };
             class _xx_HandGrenade_Guer {
                 magazine = QGVAR(HandGrenade_Guer);
@@ -20092,10 +19856,6 @@ class CfgVehicles {
         textureList[] = {"SFIA", 1};
         hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body_SFIA_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body2_SFIA_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\apc_wheeled_04_sprut_turret_SFIA_co.paa"};
         class TransportWeapons {
-            class _xx_arifle_Galat_lxWS {
-                weapon = "arifle_Galat_lxWS";
-                count = 2;
-            };
         };
         class TransportMagazines {
             class _xx_30Rnd_762x39_Mag_F {
@@ -20276,14 +20036,6 @@ class CfgVehicles {
         textureList[] = {"Guerrilla_04", 1, "Guerrilla_05", 1, "Sand", 1, "SFIA", 1};
         hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_tura_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body2_tura_CO.paa", "\z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\btr100a_turret_tura_co.paa"};
         class TransportWeapons {
-            class _xx_arifle_Galat_lxWS {
-                weapon = "arifle_Galat_lxWS";
-                count = 2;
-            };
-            class _xx_arifle_SLR_lxWS {
-                weapon = "arifle_SLR_lxWS";
-                count = 1;
-            };
             class _xx_launch_RPG32_F {
                 weapon = "launch_RPG32_F";
                 count = 1;
@@ -20293,10 +20045,6 @@ class CfgVehicles {
             class _xx_30Rnd_762x39_Mag_F {
                 magazine = "30Rnd_762x39_Mag_F";
                 count = 12;
-            };
-            class _xx_20Rnd_762x51_slr_lxWS {
-                magazine = "20Rnd_762x51_slr_lxWS";
-                count = 8;
             };
             class _xx_HandGrenade_Guer {
                 magazine = QGVAR(HandGrenade_Guer);
@@ -20646,10 +20394,6 @@ class CfgVehicles {
             };
         };
         class TransportWeapons {
-            class _xx_arifle_AKM74_F {
-                weapon = QEGVAR(weapons,arifle_AKM74_F);
-                count = 2;
-            };
         };
         class Components: Components {
             class TransportPylonsComponent: TransportPylonsComponent {
@@ -20690,68 +20434,6 @@ class CfgVehicles {
                     };
                 };
             };
-        };
-    };
-    class GVAR(I_UNO_Heli_Transport_02_VIP_F): GVAR(Heli_Transport_02_VIP_base_F) {
-        author = "Grave";
-        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Atlas_I_UNO_lxWS_Heli_Transport_02_VIP_F.jpg";
-        displayName = "EH-302 (Executive Transport)";
-        scope = 2;
-        scopeCurator = 2;
-        side = 2;
-        faction = "ghost_green";
-        crew = "I_helipilot_F";
-        typicalCargo[] = {"I_helipilot_F"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_01_UN_VIP_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
-        textureList[] = {"UNO_VIP", 1};
-        class TransportItems {
-            class _xx_FirstAidKit {
-                name = "FirstAidKit";
-                count = 10;
-            };
-        };
-        class TextureSources: TextureSources {
-            class ghost_I_UNO_Heli_Transport_02_VIP_F {
-                displayName = "UN";
-                author = "Grave";
-                textures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_01_UN_VIP_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
-                factions[] = {};
-            };
-        };
-    };
-    class GVAR(I_UNO_Heli_Transport_02_Heavy_F): GVAR(Heli_Transport_02_Heavy_base_F) {
-        author = "Grave";
-        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Atlas_I_UNO_lxWS_Heli_Transport_02_Heavy_F.jpg";
-        displayName = "CH-49E Mohawk";
-        side = 2;
-        faction = "ghost_green";
-        crew = "I_helipilot_F";
-        typicalCargo[] = {"I_helipilot_F"};
-        hiddenSelectionsTextures[] = {"\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_01_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "\z\ghost\addons\vehicle\models\air\Heli_Transport_02\Data\Heli_Transport_02_ext_02_UN_CO.paa", "lxWS\air_f_lxWS\Data\UN\Heli_Transport_02_int_02_UN_CO.paa"};
-        textureList[] = {"UNO", 1};
-        scope = 1;
-        scopeCurator = 0;
-        class TransportItems {
-            class _xx_FirstAidKit {
-                name = "FirstAidKit";
-                count = 10;
-            };
-        };
-        class TransportMagazines {
-            class _xx_SmokeShell {
-                magazine = "SmokeShell";
-                count = 2;
-            };
-            class _xx_SmokeShellGreen {
-                magazine = "SmokeShellGreen";
-                count = 2;
-            };
-            class _xx_30Rnd_556x45_stanag_sand_red {
-                magazine = "30Rnd_556x45_stanag_sand_red";
-                count = 8;
-            };
-        };
-        class TransportWeapons {
         };
     };
     class GVAR(B_A_Plane_Fighter_05_Stealth_ard_F): GVAR(B_A_Plane_Fighter_05_Stealth_F) {
@@ -20809,7 +20491,7 @@ class CfgVehicles {
                     };
                 };
                 class presets: presets {
-                    class default: default {
+                    class Default: Default {
                         attachment[] = {"PylonRack_Missile_BIM9X_x1", "PylonRack_Missile_BIM9X_x1", "PylonRack_Missile_AMRAAM_D_x2", "PylonRack_Missile_AMRAAM_D_x2", "PylonMissile_Bomb_GBU12_x1", "PylonMissile_Bomb_GBU12_x1", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonRack_Bomb_SDB_x4", "PylonRack_Bomb_SDB_x4", QGVAR(PylonWeapon_220Rnd_25mm_shells_yellow)};
                     };
                     class AA: AA {
@@ -20918,11 +20600,11 @@ class CfgVehicles {
                     };
                 };
                 class presets {
-                    class empty {
+                    class Empty {
                         displayName = "STR_empty";
                         attachment[] = {};
                     };
-                    class default {
+                    class Default {
                         displayName = "STR_vehicle_default";
                         attachment[] = {"", "", "", "", "", "", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonMissile_Missile_AMRAAM_D_INT_x1", "PylonRack_Bomb_SDB_x4", "PylonRack_Bomb_SDB_x4", QGVAR(PylonWeapon_220Rnd_25mm_shells_yellow)};
                     };
@@ -21243,10 +20925,6 @@ class CfgVehicles {
             };
         };
         class TransportWeapons {
-            class _xx_arifle_AKM74_F {
-                weapon = QEGVAR(weapons,arifle_AKM74_F);
-                count = 2;
-            };
             class _xx_arifle_RPK74M_F {
                 weapon = QEGVAR(weapons,arifle_RPK74M_F);
                 count = 1;
@@ -21267,10 +20945,6 @@ class CfgVehicles {
         scope = 1;
         scopeCurator = 0;
         class TransportWeapons {
-            class _xx_arifle_AKM74_F {
-                weapon = QEGVAR(weapons,arifle_AKM74_F);
-                count = 2;
-            };
             class _xx_arifle_RPK74M_F {
                 weapon = QEGVAR(weapons,arifle_RPK74M_F);
                 count = 1;
@@ -21362,10 +21036,6 @@ class CfgVehicles {
         scope = 1;
         scopeCurator = 0;
         class TransportWeapons {
-            class _xx_arifle_AKM74_F {
-                weapon = QEGVAR(weapons,arifle_AKM74_F);
-                count = 2;
-            };
             class _xx_arifle_RPK74M_F {
                 weapon = QEGVAR(weapons,arifle_RPK74M_F);
                 count = 1;
@@ -21595,14 +21265,10 @@ class CfgVehicles {
     };
     class B_Heli_Transport_03_F: Heli_Transport_03_base_F {
         class Turrets: Turrets {
-            class CopilotTurret;
-            class MainTurret;
-            class RightDoorGun;
         };
     };
     class B_Heli_Transport_03_unarmed_F: Heli_Transport_03_unarmed_base_F {
         class Turrets: Turrets {
-            class CopilotTurret;
         };
     };
     class LT_01_AA_base_F: LT_01_base_F {
@@ -21724,52 +21390,6 @@ class CfgVehicles {
             };
         };
         class TransportWeapons {
-            class _xx_arifle_SA80_C_blk_F {
-                weapon = QEGVAR(weapons,arifle_SA80_C_blk_F);
-                count = 2;
-            };
-        };
-    };
-    class GVAR(B_D_Heli_Transport_03_F): B_Heli_Transport_03_F {
-        author = "Ravenholme";
-        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_B_D_Heli_Transport_03_F.jpg";
-        forceInGarage = 0;
-        side = 1;
-        faction = "ghost_blue";
-        crew = "B_Helipilot_F";
-        typicalCargo[] = {"B_Soldier_F"};
-        textureList[] = {"Sand", 1};
-        hiddenSelectionsTextures[] = {"\lxWS\air_f_lxWS\Data\NATO\lxWS_Heli_Transport_03_ext01_sand_CO.paa", "\lxWS\air_f_lxWS\Data\NATO\lxWS_Heli_Transport_03_ext02_sand_CO.paa"};
-        scope = 1;
-        scopeCurator = 0;
-        class Turrets: Turrets {
-            class CopilotTurret: CopilotTurret {
-                gunnerType = "B_Helipilot_F";
-            };
-            class MainTurret: MainTurret {
-                gunnerType = "B_crew_F";
-            };
-            class RightDoorGun: RightDoorGun {
-                gunnerType = "B_crew_F";
-            };
-        };
-    };
-    class GVAR(B_D_Heli_Transport_03_unarmed_F): B_Heli_Transport_03_unarmed_F {
-        author = "Ravenholme";
-        editorPreview = "\z\ghost\addons\vehicle\models\editorpreviews\Data\CfgVehicles\Aegis_B_D_Heli_Transport_03_unarmed_F.jpg";
-        forceInGarage = 0;
-        side = 1;
-        faction = "ghost_blue";
-        crew = "B_Helipilot_F";
-        typicalCargo[] = {"B_Soldier_F"};
-        textureList[] = {"Sand", 1};
-        hiddenSelectionsTextures[] = {"\lxWS\air_f_lxWS\Data\NATO\lxWS_Heli_Transport_03_ext01_sand_CO.paa", "\lxWS\air_f_lxWS\Data\NATO\lxWS_Heli_Transport_03_ext02_sand_CO.paa"};
-        scope = 1;
-        scopeCurator = 0;
-        class Turrets: Turrets {
-            class CopilotTurret: CopilotTurret {
-                gunnerType = "B_Helipilot_F";
-            };
         };
     };
     class GVAR(B_Heli_Attack_03_F): GVAR(Heli_Attack_03_base_F) {
@@ -23093,11 +22713,11 @@ class CfgVehicles {
                     };
                 };
                 class presets {
-                    class empty {
+                    class Empty {
                         displayName = "STR_empty";
                         attachment[] = {};
                     };
-                    class default {
+                    class Default {
                         displayName = "STR_vehicle_default";
                         attachment[] = {QGVAR(PylonRack_6Rnd_Vikhr_missiles), QGVAR(PylonRack_6Rnd_Vikhr_missiles)};
                     };

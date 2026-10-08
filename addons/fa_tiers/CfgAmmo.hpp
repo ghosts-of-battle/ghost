@@ -487,6 +487,10 @@ class CfgAmmo {
     class FA_o_ammo_62_DBP88B_T_Yellow;
     class FA_o_ammo_9x39_7U15;
     class FA_o_ammo_9x39_7U16;
+    class FA_rf_9x19_Mk422_AP;
+    class FA_rf_ammo_127x55_7N52;
+    class FA_rf_ammo_127x55_7U13;
+    class FA_rf_ammo_127x55_7U14;
 
     class FA_b_127_Mk366_PAB_t4: FA_b_127_Mk366_PAB {
         indirectHitRange = 2.332;
@@ -4557,5 +4561,33 @@ class CfgAmmo {
     class FA_o_ammo_9x39_7U16_t3: FA_o_ammo_9x39_7U16 {};
     class FA_o_ammo_9x39_7U16_t2: FA_o_ammo_9x39_7U16 {
         caliber = 1.76;
+    };
+    class FA_rf_9x19_Mk422_AP_t4: FA_rf_9x19_Mk422_AP {
+        caliber = 1.908;
+    };
+    class FA_rf_9x19_Mk422_AP_t3: FA_rf_9x19_Mk422_AP {};
+    class FA_rf_9x19_Mk422_AP_t2: FA_rf_9x19_Mk422_AP {
+        caliber = 1.584;
+    };
+    class FA_rf_ammo_127x55_7N52_t4: FA_rf_ammo_127x55_7N52 {
+        caliber = 3.71;
+    };
+    class FA_rf_ammo_127x55_7N52_t3: FA_rf_ammo_127x55_7N52 {};
+    class FA_rf_ammo_127x55_7N52_t2: FA_rf_ammo_127x55_7N52 {
+        caliber = 3.08;
+    };
+    class FA_rf_ammo_127x55_7U13_t4: FA_rf_ammo_127x55_7U13 {
+        caliber = 2.968;
+    };
+    class FA_rf_ammo_127x55_7U13_t3: FA_rf_ammo_127x55_7U13 {};
+    class FA_rf_ammo_127x55_7U13_t2: FA_rf_ammo_127x55_7U13 {
+        caliber = 2.6;
+    };
+    class FA_rf_ammo_127x55_7U14_t4: FA_rf_ammo_127x55_7U14 {
+        caliber = 1.696;
+    };
+    class FA_rf_ammo_127x55_7U14_t3: FA_rf_ammo_127x55_7U14 {};
+    class FA_rf_ammo_127x55_7U14_t2: FA_rf_ammo_127x55_7U14 {
+        caliber = 2.6;
     };
 };

@@ -18,7 +18,7 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-188 functions.
+189 functions.
 
 ## CBA settings
 
@@ -29,7 +29,7 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Functions
 
-<details><summary>188</summary>
+<details><summary>189</summary>
 
 - `ghost_pac_fnc_adminAddOperator`
 - `ghost_pac_fnc_adminApplication`
@@ -147,6 +147,7 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 - `ghost_pac_fnc_seedFromUnit`
 - `ghost_pac_fnc_seedSample`
 - `ghost_pac_fnc_sessionEnd`
+- `ghost_pac_fnc_sessionSkills`
 - `ghost_pac_fnc_sessionStart`
 - `ghost_pac_fnc_sessionTick`
 - `ghost_pac_fnc_skillColor`

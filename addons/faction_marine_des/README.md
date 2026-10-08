@@ -9,9 +9,10 @@ A content pack: 118 unit classes. No scripted behaviour.
 ## Requires
 
 - `ghost_main`
+- `ghost_vehicle`
 
 Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking the load order when something above is absent.
 
 ## Ships
 
-118 unit classes, 7 weapon/item classes.
+22 unit classes, 1 weapon/item class.

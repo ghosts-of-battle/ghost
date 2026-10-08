@@ -27,6 +27,7 @@ GVAR(model) = createHashMap;
 GVAR(values) = createHashMap;
 GVAR(members) = createHashMap;
 GVAR(axes) = createHashMap;
+GVAR(rowName) = createHashMap;
 
 // ---- the families and their axes ----
 private _models = configFile >> "XtdGearModels" >> "CfgMagazines";
@@ -60,9 +61,15 @@ private _count = 0;
 {
     private _class = configName _x;
     private _family = getText (_x >> "model");
+    private _low = toLower _class;
+
+    // The row's name, for every magazine whose family has one - a lone magazine
+    // included, which has no axes and so no place in the rest of the index.
+    private _rowName = getText (_models >> _family >> "rowName");
+    if (_rowName isNotEqualTo "") then { GVAR(rowName) set [_low, _rowName] };
+
     if !(_family in GVAR(axes)) then { continue };
 
-    private _low = toLower _class;
     private _vals = [];
     {
         _x params ["_axis"];

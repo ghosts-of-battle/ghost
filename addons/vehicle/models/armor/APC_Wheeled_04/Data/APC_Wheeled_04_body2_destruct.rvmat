@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\APC_Wheeled_04_body2_AS.paa";
+	texture="z\ghost\addons\vehicle\models\armor\APC_Wheeled_04\Data\apc_wheeled_04_tow2_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{

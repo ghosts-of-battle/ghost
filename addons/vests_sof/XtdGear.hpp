@@ -72,6 +72,50 @@ class XtdGearModels {
                 };
             };
         };
+        class GVAR(CHPCCarrier) {
+            label = "SOF CHPC";
+            options[] = {"cut", "camo"};
+            class cut {
+                alwaysSelectable = 1;
+                values[] = {"Lite", "Gunner", "Rig", "SMG"};
+                class Lite {
+                    label = "Lite";
+                };
+                class Gunner {
+                    label = "Gunner";
+                };
+                class Rig {
+                    label = "Rig";
+                };
+                class SMG {
+                    label = "SMG";
+                };
+            };
+            class camo {
+                alwaysSelectable = 1;
+                values[] = {"KHK", "BLK", "OLI", "HEX", "GHEX"};
+                class KHK {
+                    label = "Khaki";
+                    image = "z\aceax\addons\gearinfo\data\camo\khk.paa";
+                };
+                class BLK {
+                    label = "Black";
+                    image = "z\aceax\addons\gearinfo\data\camo\blk.paa";
+                };
+                class OLI {
+                    label = "Olive";
+                    image = "z\aceax\addons\gearinfo\data\camo\rgr.paa";
+                };
+                class HEX {
+                    label = "Hex";
+                    image = "z\aceax\addons\gearinfo\data\camo\csat.paa";
+                };
+                class GHEX {
+                    label = "Green Hex";
+                    image = "z\aceax\addons\gearinfo\data\camo\csat_tna.paa";
+                };
+            };
+        };
     };
 };
 
@@ -128,6 +172,12 @@ class XtdGearInfos {
             camo = "MTP";
             type = "Flag";
         };
+        class GVAR(SOF_V_AVSCarrier_Lite_new_ocp) {
+            model = QGVAR(AVSCarrier);
+            cut = "Lite";
+            camo = "OCP";
+            type = "Flag";
+        };
         class GVAR(SOF_V_AVSCarrier_Lite_new_tna) {
             model = QGVAR(AVSCarrier);
             cut = "Lite";
@@ -168,6 +218,12 @@ class XtdGearInfos {
             model = QGVAR(AVSCarrier);
             cut = "Rifle";
             camo = "MTP";
+            type = "Flag";
+        };
+        class GVAR(SOF_V_AVSCarrier_Rifle_new_ocp) {
+            model = QGVAR(AVSCarrier);
+            cut = "Rifle";
+            camo = "OCP";
             type = "Flag";
         };
         class GVAR(SOF_V_AVSCarrier_Rifle_new_tna) {
@@ -212,6 +268,12 @@ class XtdGearInfos {
             camo = "MTP";
             type = "NoFlag";
         };
+        class GVAR(SOF_V_AVSCarrier_Rifle_new_ocp_noflag) {
+            model = QGVAR(AVSCarrier);
+            cut = "Rifle";
+            camo = "OCP";
+            type = "NoFlag";
+        };
         class GVAR(SOF_V_AVSCarrier_Gunner_new_rgr) {
             model = QGVAR(AVSCarrier);
             cut = "Gunner";
@@ -222,6 +284,12 @@ class XtdGearInfos {
             model = QGVAR(AVSCarrier);
             cut = "Gunner";
             camo = "MTP";
+            type = "Flag";
+        };
+        class GVAR(SOF_V_AVSCarrier_Gunner_new_ocp) {
+            model = QGVAR(AVSCarrier);
+            cut = "Gunner";
+            camo = "OCP";
             type = "Flag";
         };
         class GVAR(SOF_V_AVSCarrier_Gunner_new_tna) {
@@ -265,6 +333,112 @@ class XtdGearInfos {
             cut = "Gunner";
             camo = "MTP";
             type = "NoFlag";
+        };
+        class GVAR(SOF_V_AVSCarrier_Gunner_new_ocp_noflag) {
+            model = QGVAR(AVSCarrier);
+            cut = "Gunner";
+            camo = "OCP";
+            type = "NoFlag";
+        };
+        class GVAR(SOF_V_CHPCCarrier_Lite_khk) {
+            model = QGVAR(CHPCCarrier);
+            cut = "Lite";
+            camo = "KHK";
+        };
+        class GVAR(SOF_V_CHPCCarrier_Lite_blk) {
+            model = QGVAR(CHPCCarrier);
+            cut = "Lite";
+            camo = "BLK";
+        };
+        class GVAR(SOF_V_CHPCCarrier_Lite_oli) {
+            model = QGVAR(CHPCCarrier);
+            cut = "Lite";
+            camo = "OLI";
+        };
+        class GVAR(SOF_V_CHPCCarrier_Lite_hex) {
+            model = QGVAR(CHPCCarrier);
+            cut = "Lite";
+            camo = "HEX";
+        };
+        class GVAR(SOF_V_CHPCCarrier_Lite_ghex) {
+            model = QGVAR(CHPCCarrier);
+            cut = "Lite";
+            camo = "GHEX";
+        };
+        class GVAR(SOF_V_CHPCCarrier_SMG_khk) {
+            model = QGVAR(CHPCCarrier);
+            cut = "SMG";
+            camo = "KHK";
+        };
+        class GVAR(SOF_V_CHPCCarrier_SMG_blk) {
+            model = QGVAR(CHPCCarrier);
+            cut = "SMG";
+            camo = "BLK";
+        };
+        class GVAR(SOF_V_CHPCCarrier_SMG_oli) {
+            model = QGVAR(CHPCCarrier);
+            cut = "SMG";
+            camo = "OLI";
+        };
+        class GVAR(SOF_V_CHPCCarrier_SMG_hex) {
+            model = QGVAR(CHPCCarrier);
+            cut = "SMG";
+            camo = "HEX";
+        };
+        class GVAR(SOF_V_CHPCCarrier_SMG_ghex) {
+            model = QGVAR(CHPCCarrier);
+            cut = "SMG";
+            camo = "GHEX";
+        };
+        class GVAR(SOF_V_CHPCCarrier_Rig_khk) {
+            model = QGVAR(CHPCCarrier);
+            cut = "Rig";
+            camo = "KHK";
+        };
+        class GVAR(SOF_V_CHPCCarrier_Rig_blk) {
+            model = QGVAR(CHPCCarrier);
+            cut = "Rig";
+            camo = "BLK";
+        };
+        class GVAR(SOF_V_CHPCCarrier_Rig_oli) {
+            model = QGVAR(CHPCCarrier);
+            cut = "Rig";
+            camo = "OLI";
+        };
+        class GVAR(SOF_V_CHPCCarrier_Rig_hex) {
+            model = QGVAR(CHPCCarrier);
+            cut = "Rig";
+            camo = "HEX";
+        };
+        class GVAR(SOF_V_CHPCCarrier_Rig_ghex) {
+            model = QGVAR(CHPCCarrier);
+            cut = "Rig";
+            camo = "GHEX";
+        };
+        class GVAR(SOF_V_CHPCCarrier_Gunner_khk) {
+            model = QGVAR(CHPCCarrier);
+            cut = "Gunner";
+            camo = "KHK";
+        };
+        class GVAR(SOF_V_CHPCCarrier_Gunner_blk) {
+            model = QGVAR(CHPCCarrier);
+            cut = "Gunner";
+            camo = "BLK";
+        };
+        class GVAR(SOF_V_CHPCCarrier_Gunner_oli) {
+            model = QGVAR(CHPCCarrier);
+            cut = "Gunner";
+            camo = "OLI";
+        };
+        class GVAR(SOF_V_CHPCCarrier_Gunner_hex) {
+            model = QGVAR(CHPCCarrier);
+            cut = "Gunner";
+            camo = "HEX";
+        };
+        class GVAR(SOF_V_CHPCCarrier_Gunner_ghex) {
+            model = QGVAR(CHPCCarrier);
+            cut = "Gunner";
+            camo = "GHEX";
         };
     };
 };

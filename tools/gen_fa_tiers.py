@@ -42,6 +42,7 @@ writes ONLY the wells files. The ammo and magazine files need the vanilla floor
 (work/vanilla_ammo.json) to come out the same; the wells do not, so they can be
 rebuilt on a machine without it.
 """
+import collections
 import io
 import json
 import os
@@ -77,10 +78,11 @@ DEAD = {"fa_rhs", "fa_sps", "fa_antidrone_rhs", "fa_jca", "fa_antidrone_jca"}
 # (skipWhenMissingDependencies). Tiering them put all three in fa_tiers_mods' requiredAddons, so a load order
 # without Rearma would drop fa_tiers_mods whole - every E22, JCA, EF, RF and Aegis tier round with it. They were
 # never tiered before; if they are wanted, they need a tier addon of their own.
-# fa_tmt and fa_minrf carry their own _t2/_t3/_t4 (tools/gen_mod_factions.py) and REQUIRE
+# fa_tmt carries its own _t2/_t3/_t4 (tools/gen_mod_factions.py) and REQUIRE
 # fa_tiers_mods, so reading them here would be a dependency loop. fa_mcc and fa_mpp were
 # never tiered, and tiering them would make MCC and MPP requirements of fa_tiers_mods.
-UNTIERED = {"fa_rearma_cn", "fa_rearma_rus", "fa_rearma_us", "fa_tmt", "fa_minrf", "fa_mcc", "fa_mpp"}
+# fa_tni and fa_adf (2026-10-06) carry their own tiers like fa_tmt (fa_minrf and fa_e22 went with the mods Russia used to build on).
+UNTIERED = {"fa_rearma_cn", "fa_rearma_rus", "fa_rearma_us", "fa_tmt", "fa_tni", "fa_adf", "fa_mcc", "fa_mpp"}
 
 # THE TIER 2 FLOOR, AND WHY IT IS ONLY ON PENETRATION.
 #
@@ -253,18 +255,33 @@ def can_skip(addon_dir):
     return False
 
 
+# ONE TIER ADDON PER OPTIONAL SOURCE. Aegis's keeps the old name, fa_tiers_mods,
+# which the faction generators and older missions already name; every other
+# optional source gets fa_tiers_<source>, e.g. fa_ef -> fa_tiers_ef.
+MODS_SOURCE = "aegis"
+
+
+def TIER_ADDON(half):
+    return "fa_tiers" if half == "core" else "fa_tiers_mods" if half == MODS_SOURCE else "fa_tiers_" + half
+
+
 WELLS_ONLY = "--wells-only" in sys.argv[1:]
 
 
 def main():
-    # Two halves. "core" is everything whose source addon always loads; "mods"
-    # is everything whose source can vanish with its third-party mod.
-    ammo_out = {"core": [], "mods": []}
-    mag_out = {"core": [], "mods": []}
-    ammo_ext = {"core": [], "mods": []}
-    mag_ext = {"core": [], "mods": []}
-    mag_names = {"core": [], "mods": []}
-    need = {"core": set(), "mods": set()}
+    # "core" is everything whose source addon always loads. Everything whose
+    # source can vanish with its third-party mod is grouped BY THAT SOURCE, one
+    # tier addon each (group(), below): one addon over two optional sources
+    # either drops both when one is absent - Aegis's AK-12 tiers going with
+    # the EF DLC - or, without the requirement, loads tiers whose parents are
+    # gone (RPT 2026-10-06: every FA_EF_..._t2 "No entry", scope=private).
+    ammo_out = collections.defaultdict(list)
+    mag_out = collections.defaultdict(list)
+    ammo_ext = collections.defaultdict(list)
+    mag_ext = collections.defaultdict(list)
+    mag_names = collections.defaultdict(list)
+    need = collections.defaultdict(set)
+    ammo_group = {}
     OPTIONAL = set()
     n_ammo = n_mag = 0
     tiered = set()
@@ -306,6 +323,9 @@ def main():
                 bases.setdefault(name, base)
                 home.setdefault(name, "ghost_" + d)
 
+    def group(addon):
+        return addon[len("ghost_fa_"):] if addon in OPTIONAL else "core"
+
     # RESOLVE UP THE FA CHAIN. A tracer variant declares a colour and nothing
     # else - FA_b_556_Mk327_HV_T_Red inherits every lethality figure from
     # FA_b_556_Mk327_HV. Scaling only what a class declares would tier the plain
@@ -344,7 +364,8 @@ def main():
         # other fa_* addons, not here. A config that inherits from a name it
         # never mentions does not build (HEMTT L-C04), and at runtime would
         # produce a class with no parent and none of the inherited figures.
-        half = "mods" if home.get(name) in OPTIONAL else "core"
+        half = group(home.get(name))
+        ammo_group[name] = half
         ammo_ext[half].append(name)
         if name in home:
             need[half].add(home[name])
@@ -371,7 +392,7 @@ def main():
         tiered.add(name)
 
     for d in sorted(os.listdir(ADDONS)):
-        if not d.startswith("fa_") or d == "fa_tiers" or d in DEAD or d in UNTIERED:
+        if not d.startswith("fa_") or d.startswith("fa_tiers") or d in DEAD or d in UNTIERED:
             continue
         # Same again: the magazines are spread over several files.
         for f in sorted(os.listdir(os.path.join(ADDONS, d))):
@@ -385,7 +406,14 @@ def main():
                 hit = AMMO_REF.search(re.sub(r"\{[^{}]*\}", "", body))
                 if not hit or hit.group(1) not in tiered:
                     continue
-                mhalf = "mods" if ("ghost_" + d) in OPTIONAL else "core"
+                mhalf = group("ghost_" + d)
+                ahalf = ammo_group[hit.group(1)]
+                if mhalf == "core" and ahalf != "core":
+                    # A core magazine on an optional round goes with the round.
+                    mhalf = ahalf
+                if ahalf not in ("core", mhalf):
+                    # Its tier rounds live in another optional source's tier addon.
+                    need[mhalf].add("ghost_" + TIER_ADDON(ahalf))
                 mag_ext[mhalf].append(name)
                 need[mhalf].add("ghost_" + d)
                 for suffix, _ in TIERS:
@@ -420,9 +448,9 @@ def main():
                     well_of.setdefault(mag, [])
                     if well not in well_of[mag]:
                         well_of[mag].append(well)
-    wells_out = {"core": {}, "mods": {}}
+    wells_out = collections.defaultdict(dict)
     n_well_mags = 0
-    for half in ("core", "mods"):
+    for half in list(mag_names):
         for name in mag_names[half]:
             for well in well_of.get(name, []):
                 lst = wells_out[half].setdefault(well, [])
@@ -505,10 +533,9 @@ def main():
         ]
         if optional:
             head += [
-                "        // THE ROUNDS WHOSE SOURCE CAN VANISH. Every addon below drops",
-                "        // itself when its third-party mod is absent - fa_rhs without RHS,",
-                "        // fa_sps without SPS - so this one drops with them, and takes",
-                "        // only the tiers for rounds that are not there either.",
+                "        // THE ROUNDS WHOSE SOURCE CAN VANISH. Its one source addon drops",
+                "        // itself when its mod or DLC is absent, so this one drops with",
+                "        // it, and takes only the tiers for rounds that are not there either.",
                 "        requiredAddons[] = {" + ", ".join(quoted) + "};",
                 "        skipWhenMissingDependencies = 1;",
             ]
@@ -561,7 +588,10 @@ def main():
         return len(req)
 
     n_core = emit("core", "fa_tiers", "Future Ammunition - Tiers", False)
-    n_mods = emit("mods", "fa_tiers_mods", "Future Ammunition - Tiers (mods)", True)
+    n_opt = {}
+    for half in sorted(set(ammo_out) | set(mag_out)):
+        if half != "core":
+            n_opt[half] = emit(half, TIER_ADDON(half), "Future Ammunition - Tiers (%s)" % half, True)
 
     if skipped_nature:
         tot = sum(skipped_nature.values())
@@ -574,11 +604,17 @@ def main():
              " - wells only, ammo and magazines untouched" if WELLS_ONLY else ""))
     print("  fa_tiers       %5d ammo  %5d magazine  %2d requiredAddons"
           % (len(ammo_out["core"]), len(mag_out["core"]) // 3, n_core))
-    print("  fa_tiers_mods  %5d ammo  %5d magazine  %2d requiredAddons"
-          % (len(ammo_out["mods"]), len(mag_out["mods"]) // 3, n_mods))
+    for half in sorted(n_opt):
+        print("  %-14s %5d ammo  %5d magazine  %2d requiredAddons"
+              % (TIER_ADDON(half), len(ammo_out[half]), len(mag_out[half]) // 3, n_opt[half]))
     if clamped:
         print("%d tier 2 value(s) across %d round(s) clamped to the base game floor"
               % (len(clamped), len(set(c[0] for c in clamped))))
+    # THE TIER MAGAZINES' NAMES. Written above with no displayName of their own, a base round and its
+    # three tiers read identically in the arsenal; tools/fa_names.py gives every FA magazine its
+    # "[Ghost] <rounds> <calibre> <load> (<magazine>) - <variant>" name, these included.
+    import fa_names
+    fa_names.main()
     return 0
 
 

@@ -33,7 +33,7 @@ class CfgMagazines {
 
     class FA_MPP_13rnd_45ACP_185FMJ_STI_45ACP_Mk421_SubAP: MPP_13rnd_45ACP_185FMJ_STI {
         author = QAUTHOR;
-        displayName = "[Ghost] 13Rnd 45ACP Mk421 SubAP";
+        displayName = "[Ghost] 13Rnd .45 ACP Mk421 SubAP (STI)";
         displayNameShort = "45ACP Mk421 SubAP";
         descriptionShort = "45ACP Mk421 SubAP<br/>In the STI 13rnd BLK .45ACP 185gr";
         ammo = "FA_b_45ACP_Mk421_SubAP";
@@ -41,7 +41,7 @@ class CfgMagazines {
     };
     class FA_MPP_13rnd_45ACP_185FMJ_STI_45ACP_Mk421_SubAP_T_Red: MPP_13rnd_45ACP_185FMJ_STI {
         author = QAUTHOR;
-        displayName = "[Ghost] 13Rnd 45ACP Mk421 SubAP Red Tracer";
+        displayName = "[Ghost] 13Rnd .45 ACP Mk421 SubAP (STI) - Red Tracer";
         displayNameShort = "45ACP Mk421 SubAP";
         descriptionShort = "45ACP Mk421 SubAP<br/>In the STI 13rnd BLK .45ACP 185gr";
         ammo = "FA_b_45ACP_Mk421_SubAP_T_Red";
@@ -50,7 +50,7 @@ class CfgMagazines {
     };
     class FA_MPP_13rnd_45ACP_185FMJ_STI_45ACP_Mk421_SubAP_T_Yellow: MPP_13rnd_45ACP_185FMJ_STI {
         author = QAUTHOR;
-        displayName = "[Ghost] 13Rnd 45ACP Mk421 SubAP Yellow Tracer";
+        displayName = "[Ghost] 13Rnd .45 ACP Mk421 SubAP (STI) - Yellow Tracer";
         displayNameShort = "45ACP Mk421 SubAP";
         descriptionShort = "45ACP Mk421 SubAP<br/>In the STI 13rnd BLK .45ACP 185gr";
         ammo = "FA_b_45ACP_Mk421_SubAP_T_Yellow";
@@ -59,7 +59,7 @@ class CfgMagazines {
     };
     class FA_MPP_13rnd_45ACP_185FMJ_STI_45ACP_Mk421_SubAP_T_Green: MPP_13rnd_45ACP_185FMJ_STI {
         author = QAUTHOR;
-        displayName = "[Ghost] 13Rnd 45ACP Mk421 SubAP Green Tracer";
+        displayName = "[Ghost] 13Rnd .45 ACP Mk421 SubAP (STI) - Green Tracer";
         displayNameShort = "45ACP Mk421 SubAP";
         descriptionShort = "45ACP Mk421 SubAP<br/>In the STI 13rnd BLK .45ACP 185gr";
         ammo = "FA_b_45ACP_Mk421_SubAP_T_Green";
@@ -68,7 +68,7 @@ class CfgMagazines {
     };
     class FA_MPP_13rnd_45ACP_185FMJ_STI_45ACP_Mk421_SubAP_T_White: MPP_13rnd_45ACP_185FMJ_STI {
         author = QAUTHOR;
-        displayName = "[Ghost] 13Rnd 45ACP Mk421 SubAP White Tracer";
+        displayName = "[Ghost] 13Rnd .45 ACP Mk421 SubAP (STI) - White Tracer";
         displayNameShort = "45ACP Mk421 SubAP";
         descriptionShort = "45ACP Mk421 SubAP<br/>In the STI 13rnd BLK .45ACP 185gr";
         ammo = "FA_b_45ACP_Mk421_SubAP_T_White";
@@ -77,7 +77,7 @@ class CfgMagazines {
     };
     class FA_MPP_13rnd_45ACP_185FMJ_STI_45ACP_Mk421_SubAP_T_Blue: MPP_13rnd_45ACP_185FMJ_STI {
         author = QAUTHOR;
-        displayName = "[Ghost] 13Rnd 45ACP Mk421 SubAP Blue Tracer";
+        displayName = "[Ghost] 13Rnd .45 ACP Mk421 SubAP (STI) - Blue Tracer";
         displayNameShort = "45ACP Mk421 SubAP";
         descriptionShort = "45ACP Mk421 SubAP<br/>In the STI 13rnd BLK .45ACP 185gr";
         ammo = "FA_b_45ACP_Mk421_SubAP_T_Blue";
@@ -86,7 +86,7 @@ class CfgMagazines {
     };
     class FA_MPP_13rnd_45ACP_185FMJ_STI_45ACP_Mk421_SubAP_T_Orange: MPP_13rnd_45ACP_185FMJ_STI {
         author = QAUTHOR;
-        displayName = "[Ghost] 13Rnd 45ACP Mk421 SubAP Orange Tracer";
+        displayName = "[Ghost] 13Rnd .45 ACP Mk421 SubAP (STI) - Orange Tracer";
         displayNameShort = "45ACP Mk421 SubAP";
         descriptionShort = "45ACP Mk421 SubAP<br/>In the STI 13rnd BLK .45ACP 185gr";
         ammo = "FA_b_45ACP_Mk421_SubAP_T_Orange";
@@ -95,7 +95,7 @@ class CfgMagazines {
     };
     class FA_MPP_13rnd_45ACP_185FMJ_STI_45ACP_Mk421_SubAP_T_IR: MPP_13rnd_45ACP_185FMJ_STI {
         author = QAUTHOR;
-        displayName = "[Ghost] 13Rnd 45ACP Mk421 SubAP IR Tracer";
+        displayName = "[Ghost] 13Rnd .45 ACP Mk421 SubAP (STI) - IR Tracer";
         displayNameShort = "45ACP Mk421 SubAP";
         descriptionShort = "45ACP Mk421 SubAP<br/>In the STI 13rnd BLK .45ACP 185gr";
         ammo = "FA_b_45ACP_Mk421_SubAP_T_IR";
@@ -104,7 +104,7 @@ class CfgMagazines {
     };
     class FA_MPP_13rnd_9MM_115FMJ_CR920_9x19_Mk422_AP: MPP_13rnd_9MM_115FMJ_CR920 {
         author = QAUTHOR;
-        displayName = "[Ghost] 13Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 13Rnd 9mm CR920 Mk422 AP";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the CR920 13rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -112,7 +112,7 @@ class CfgMagazines {
     };
     class FA_MPP_15rnd_9MM_115FMJ_CZ_9x19_Mk422_AP: MPP_15rnd_9MM_115FMJ_CZ {
         author = QAUTHOR;
-        displayName = "[Ghost] 15Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 15Rnd 9mm CZ Mk422 AP";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the CZ 15rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -120,7 +120,7 @@ class CfgMagazines {
     };
     class FA_MPP_15rnd_9MM_115FMJ_G19_9x19_Mk422_AP: MPP_15rnd_9MM_115FMJ_G19 {
         author = QAUTHOR;
-        displayName = "[Ghost] 15Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 15Rnd 9mm Mk422 AP (G19)";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the Glock 19 15rd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -128,7 +128,7 @@ class CfgMagazines {
     };
     class FA_MPP_15rnd_9MM_115FMJ_P10C_9x19_Mk422_AP: MPP_15rnd_9MM_115FMJ_P10C {
         author = QAUTHOR;
-        displayName = "[Ghost] 15Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 15Rnd 9mm P10C Mk422 AP";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the CZ P10C 15rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -136,7 +136,7 @@ class CfgMagazines {
     };
     class FA_MPP_15rnd_9MM_115FMJ_P226_9x19_Mk422_AP: MPP_15rnd_9MM_115FMJ_P226 {
         author = QAUTHOR;
-        displayName = "[Ghost] 15Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 15Rnd 9mm P226 Mk422 AP";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the P226 15rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -144,7 +144,7 @@ class CfgMagazines {
     };
     class FA_MPP_15rnd_9MM_115FMJ_SFP9_9x19_Mk422_AP: MPP_15rnd_9MM_115FMJ_SFP9 {
         author = QAUTHOR;
-        displayName = "[Ghost] 15Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 15Rnd 9mm SFP9 Mk422 AP";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the HK SFP9 15rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -152,7 +152,7 @@ class CfgMagazines {
     };
     class FA_MPP_17rnd_9MM_115FMJ_G17_9x19_Mk422_AP: MPP_17rnd_9MM_115FMJ_G17 {
         author = QAUTHOR;
-        displayName = "[Ghost] 17Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 17Rnd 9mm G17 Mk422 AP";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the Glock 17 17rd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -160,7 +160,7 @@ class CfgMagazines {
     };
     class FA_MPP_17rnd_9MM_115FMJ_M9_9x19_Mk422_AP: MPP_17rnd_9MM_115FMJ_M9 {
         author = QAUTHOR;
-        displayName = "[Ghost] 17Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 17Rnd 9mm M9 Mk422 AP";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the M9A3 17rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -168,7 +168,7 @@ class CfgMagazines {
     };
     class FA_MPP_17rnd_9MM_115FMJ_P320_9x19_Mk422_AP: MPP_17rnd_9MM_115FMJ_P320 {
         author = QAUTHOR;
-        displayName = "[Ghost] 17Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 17Rnd 9mm Mk422 AP (P320)";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the Sig Sauer P320 BLK 17rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -176,7 +176,7 @@ class CfgMagazines {
     };
     class FA_MPP_17rnd_9MM_115FMJ_P320_FDE_9x19_Mk422_AP: MPP_17rnd_9MM_115FMJ_P320_FDE {
         author = QAUTHOR;
-        displayName = "[Ghost] 17Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 17Rnd 9mm Mk422 AP (P320) - FDE";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the Sig Sauer P320 FDE 17rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -184,7 +184,7 @@ class CfgMagazines {
     };
     class FA_MPP_18rnd_9MM_115FMJ_PDP_9x19_Mk422_AP: MPP_18rnd_9MM_115FMJ_PDP {
         author = QAUTHOR;
-        displayName = "[Ghost] 18Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 18Rnd 9mm Mk422 AP (PDP)";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the Walther PDP 18rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -192,7 +192,7 @@ class CfgMagazines {
     };
     class FA_MPP_18rnd_9MM_115FMJ_TP9_9x19_Mk422_AP: MPP_18rnd_9MM_115FMJ_TP9 {
         author = QAUTHOR;
-        displayName = "[Ghost] 18Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 18Rnd 9mm TP9 Mk422 AP";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the Canik TP9 18rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -200,7 +200,7 @@ class CfgMagazines {
     };
     class FA_MPP_19rnd_9MM_115FMJ_CZPO9_9x19_Mk422_AP: MPP_19rnd_9MM_115FMJ_CZPO9 {
         author = QAUTHOR;
-        displayName = "[Ghost] 19Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 19Rnd 9mm CZPO9 Mk422 AP";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the CZ PO9 19rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -208,7 +208,7 @@ class CfgMagazines {
     };
     class FA_MPP_19rnd_9MM_115FMJ_SFP9_9x19_Mk422_AP: MPP_19rnd_9MM_115FMJ_SFP9 {
         author = QAUTHOR;
-        displayName = "[Ghost] 19Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 19Rnd 9mm SFP9 Mk422 AP";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the HK SFP9 19rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -216,7 +216,7 @@ class CfgMagazines {
     };
     class FA_MPP_20rnd_57_Ball_Five7_57_Mk430: MPP_20rnd_57_Ball_Five7 {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd Mk430 AP";
+        displayName = "[Ghost] 20Rnd 5.7mm Ball Mk430 (Five-seveN)";
         displayNameShort = "Mk430 AP";
         descriptionShort = "Mk430 AP<br/>In the FN Five-Seven 20rd 5.7mm 30gr FMJ (SS190)";
         ammo = "FA_b_ammo_57_Mk430";
@@ -224,7 +224,7 @@ class CfgMagazines {
     };
     class FA_MPP_20rnd_57_Ball_Five7_57_Mk431: MPP_20rnd_57_Ball_Five7 {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd Mk431 SUB";
+        displayName = "[Ghost] 20Rnd 5.7mm Ball Mk431 (Five-seveN)";
         displayNameShort = "Mk431 SUB";
         descriptionShort = "Mk431 SUB<br/>In the FN Five-Seven 20rd 5.7mm 30gr FMJ (SS190)";
         ammo = "FA_b_ammo_57_Mk431";
@@ -232,7 +232,7 @@ class CfgMagazines {
     };
     class FA_MPP_20rnd_9MM_115FMJ_CZ_9x19_Mk422_AP: MPP_20rnd_9MM_115FMJ_CZ {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 20Rnd 9mm CZ Mk422 AP";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the CZ 20rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -240,7 +240,7 @@ class CfgMagazines {
     };
     class FA_MPP_20rnd_9MM_115FMJ_G19_9x19_Mk422_AP: MPP_20rnd_9MM_115FMJ_G19 {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 20Rnd 9mm Mk422 AP (G19)";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the Glock 19 20rd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -248,7 +248,7 @@ class CfgMagazines {
     };
     class FA_MPP_20rnd_9MM_115FMJ_M9_9x19_Mk422_AP: MPP_20rnd_9MM_115FMJ_M9 {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 20Rnd 9mm M9 Mk422 AP";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the M9A3 20rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -256,7 +256,7 @@ class CfgMagazines {
     };
     class FA_MPP_20rnd_9MM_115FMJ_P226_9x19_Mk422_AP: MPP_20rnd_9MM_115FMJ_P226 {
         author = QAUTHOR;
-        displayName = "[Ghost] 20Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 20Rnd 9mm P226 Mk422 AP";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the P226 20rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -264,7 +264,7 @@ class CfgMagazines {
     };
     class FA_MPP_21rnd_9MM_115FMJ_CZPO9_9x19_Mk422_AP: MPP_21rnd_9MM_115FMJ_CZPO9 {
         author = QAUTHOR;
-        displayName = "[Ghost] 22Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 21Rnd 9mm CZPO9 Mk422 AP";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the CZ PO9 22rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -272,7 +272,7 @@ class CfgMagazines {
     };
     class FA_MPP_21rnd_9MM_115FMJ_STI_9x19_Mk422_AP: MPP_21rnd_9MM_115FMJ_STI {
         author = QAUTHOR;
-        displayName = "[Ghost] 21Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 21Rnd 9mm Mk422 AP (STI)";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the STI 21rnd BLK 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -280,7 +280,7 @@ class CfgMagazines {
     };
     class FA_MPP_22rnd_9MM_115FMJ_G17_9x19_Mk422_AP: MPP_22rnd_9MM_115FMJ_G17 {
         author = QAUTHOR;
-        displayName = "[Ghost] 22Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 22Rnd 9mm G17 Mk422 AP";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the Glock 17 22rd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -288,7 +288,7 @@ class CfgMagazines {
     };
     class FA_MPP_22rnd_9MM_115FMJ_P320_9x19_Mk422_AP: MPP_22rnd_9MM_115FMJ_P320 {
         author = QAUTHOR;
-        displayName = "[Ghost] 22Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 22Rnd 9mm Mk422 AP (P320)";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the Sig Sauer P320 BLK 22rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -296,7 +296,7 @@ class CfgMagazines {
     };
     class FA_MPP_23rnd_9MM_115FMJ_MP9_9x19_Mk422_AP: MPP_23rnd_9MM_115FMJ_MP9 {
         author = QAUTHOR;
-        displayName = "[Ghost] 23Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 23Rnd 9mm MP9 Mk422 AP";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the S&W M&P9 23rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -304,7 +304,7 @@ class CfgMagazines {
     };
     class FA_MPP_23rnd_9MM_115FMJ_PDP_9x19_Mk422_AP: MPP_23rnd_9MM_115FMJ_PDP {
         author = QAUTHOR;
-        displayName = "[Ghost] 23Rnd 9x19 Mk422 AP";
+        displayName = "[Ghost] 23Rnd 9mm Mk422 AP (PDP)";
         displayNameShort = "9x19 Mk422 AP";
         descriptionShort = "9x19 Mk422 AP<br/>In the Walther PDP 23rnd 9mm 115gr";
         ammo = "FA_rf_9x19_Mk422_AP";
@@ -312,7 +312,7 @@ class CfgMagazines {
     };
     class FA_MPP_30rnd_57_Ball_Five7_57_Mk430: MPP_30rnd_57_Ball_Five7 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk430 AP";
+        displayName = "[Ghost] 30Rnd 5.7mm Ball Mk430 (Five-seveN)";
         displayNameShort = "Mk430 AP";
         descriptionShort = "Mk430 AP<br/>In the FN Five-Seven 30rd 5.7mm 30gr FMJ (SS190)";
         ammo = "FA_b_ammo_57_Mk430";
@@ -320,7 +320,7 @@ class CfgMagazines {
     };
     class FA_MPP_30rnd_57_Ball_Five7_57_Mk431: MPP_30rnd_57_Ball_Five7 {
         author = QAUTHOR;
-        displayName = "[Ghost] 30Rnd Mk431 SUB";
+        displayName = "[Ghost] 30Rnd 5.7mm Ball Mk431 (Five-seveN)";
         displayNameShort = "Mk431 SUB";
         descriptionShort = "Mk431 SUB<br/>In the FN Five-Seven 30rd 5.7mm 30gr FMJ (SS190)";
         ammo = "FA_b_ammo_57_Mk431";

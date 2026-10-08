@@ -331,4 +331,8 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    rc = main()
+    # 2040 PEER ARMOUR. This rewrites files tools/peer_vests.py edits; put its protection and vest swaps back.
+    import peer_vests
+    peer_vests.main()
+    sys.exit(rc)

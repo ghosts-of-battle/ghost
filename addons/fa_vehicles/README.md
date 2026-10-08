@@ -17,7 +17,6 @@ _No description yet - add one above the generated marker._
 - `A3_Weapons_F_Destroyer` _(external)_
 - `A3_Static_F_Mortar_01` _(external)_
 - `ghost_fa_antidrone`
-- `RF_Weapons` _(external)_
 - `cba_main` _(external)_
 
 Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking the load order when something above is absent.

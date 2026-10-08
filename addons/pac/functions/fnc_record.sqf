@@ -45,7 +45,7 @@ if (count _rec isEqualTo 0) then {
     _rec = createHashMap;
     {
         _x params ["_key", "_empty"];
-        _rec set [_key, if (_empty isEqualType [] || {_empty isEqualType createHashMap}) then {+_empty} else {_empty}];
+        _rec set [_key, if (_empty isEqualTypeAny [[], createHashMap]) then {+_empty} else {_empty}];
     } forEach ([] call FUNC(recordFields));
     _rec set ["name", _name];
     _rec set ["operatorId", [] call FUNC(operatorSeq)];

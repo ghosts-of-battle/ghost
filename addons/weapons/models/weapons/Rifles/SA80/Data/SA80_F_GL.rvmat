@@ -1,6 +1,6 @@
 class StageTI
 {
-	texture="z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_GL_TI_CA.paa";
+	texture="z\ghost\addons\weapons\models\weapons\Rifles\G36\Data\G36_F_GL_TI_CA.paa";
 };
 ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};
@@ -12,7 +12,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_GL_NOHQ.paa";
+	texture="z\ghost\addons\weapons\models\weapons\Rifles\G36\Data\G36_F_GL_NOHQ.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -48,7 +48,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_GL_AS.paa";
+	texture="z\ghost\addons\weapons\models\weapons\Rifles\G36\Data\G36_F_GL_AS.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="z\ghost\addons\weapons\models\weapons\Rifles\SA80\Data\SA80_F_GL_SMDI.paa";
+	texture="z\ghost\addons\weapons\models\weapons\Rifles\G36\Data\G36_F_GL_SMDI.paa";
 	uvSource="tex";
 	class uvTransform
 	{

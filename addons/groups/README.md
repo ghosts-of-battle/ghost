@@ -16,13 +16,14 @@ Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking 
 
 ## Ships
 
-24 functions.
+25 functions.
 
 ## Functions
 
-<details><summary>24</summary>
+<details><summary>25</summary>
 
 - `ghost_groups_fnc_assignPlayer`
+- `ghost_groups_fnc_buildArsenal`
 - `ghost_groups_fnc_canTakeRole`
 - `ghost_groups_fnc_fillRoleTree`
 - `ghost_groups_fnc_groupKind`

@@ -114,6 +114,31 @@ if (_cached isEqualTo [] || {(_cached # 0) != _key}) then {
             ]
         };
 
+        // BRASS, the briefing deck's own palette (user, 2026-10-07: "the colours
+        // you used in the slides make it an option"): #f4f2ec ground, #1c2321
+        // ink, and the deck's dark brass #7a6224 - its bright #c8a24a is too
+        // pale to read on a light ground, so the day scheme takes the shade
+        // the deck itself set its small text in.
+        case "brass": {
+            [
+                [0.957, 0.949, 0.925, 1],
+                [0.110, 0.137, 0.129, 1],
+                [0.478, 0.384, 0.141, 1],
+                [0.110, 0.137, 0.129, 0.22]
+            ]
+        };
+
+        // NIGHT BRASS: the deck's dark slides - #1c2321 ground, #f4f2ec ink,
+        // #c8a24a brass.
+        case "nightBrass": {
+            [
+                [0.110, 0.137, 0.129, 1],
+                [0.957, 0.949, 0.925, 1],
+                [0.784, 0.635, 0.290, 1],
+                [0.957, 0.949, 0.925, 0.20]
+            ]
+        };
+
         // Yours. Three "r,g,b" settings, 0-1 each; anything empty or malformed
         // falls back to the light answer rather than painting a panel invisible.
         default {

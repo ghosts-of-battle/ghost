@@ -170,7 +170,9 @@ class CfgWeapons {
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-
+        class ItemInfo: ItemInfo {
+            GHOST_PLATE_CARRIER_HEAVY_PROTECTION
+        };
     };
     class ghost_uniform_pla_V_CarrierRigKBT_01_light_A: V_CarrierRigKBT_01_light_Olive_F {
         author = "Seb (ACP), vendored by 2040";
@@ -182,7 +184,9 @@ class CfgWeapons {
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-
+        class ItemInfo: ItemInfo {
+            GHOST_PLATE_CARRIER_STANDARD_PROTECTION
+        };
     };
     class ghost_uniform_pla_H_HelmetHBK_A: H_HelmetHBK_F {
         author = "Seb (ACP), vendored by 2040";
@@ -351,7 +355,9 @@ class CfgWeapons {
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-
+        class ItemInfo: ItemInfo {
+            GHOST_PLATE_CARRIER_STANDARD_PROTECTION
+        };
     };
     class ghost_uniform_pla_V_SmershVest_01_radio_A: V_SmershVest_01_radio_F {
         author = "Seb (ACP), vendored by 2040";
@@ -364,7 +370,9 @@ class CfgWeapons {
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-
+        class ItemInfo: ItemInfo {
+            GHOST_PLATE_CARRIER_STANDARD_PROTECTION
+        };
     };
     class ghost_uniform_pla_H_HelmetO_ViperSP_A: H_HelmetO_ViperSP_hex_F {
         author = "Seb (ACP), vendored by 2040";
@@ -530,7 +538,9 @@ class CfgWeapons {
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-
+        class ItemInfo: ItemInfo {
+            GHOST_PLATE_CARRIER_HEAVY_PROTECTION
+        };
     };
     class ghost_uniform_pla_V_CarrierRigKBT_01_light_W: V_CarrierRigKBT_01_light_Olive_F {
         author = "Seb (ACP), vendored by 2040";
@@ -542,7 +552,9 @@ class CfgWeapons {
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-
+        class ItemInfo: ItemInfo {
+            GHOST_PLATE_CARRIER_STANDARD_PROTECTION
+        };
     };
     class ghost_uniform_pla_H_HelmetHBK_W: H_HelmetHBK_F {
         author = "Seb (ACP), vendored by 2040";
@@ -711,7 +723,9 @@ class CfgWeapons {
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-
+        class ItemInfo: ItemInfo {
+            GHOST_PLATE_CARRIER_STANDARD_PROTECTION
+        };
     };
     class ghost_uniform_pla_V_SmershVest_01_radio_W: V_SmershVest_01_radio_F {
         author = "Seb (ACP), vendored by 2040";
@@ -724,7 +738,9 @@ class CfgWeapons {
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-
+        class ItemInfo: ItemInfo {
+            GHOST_PLATE_CARRIER_STANDARD_PROTECTION
+        };
     };
     class ghost_uniform_pla_H_HelmetO_ViperSP_W: H_HelmetO_ViperSP_hex_F {
         author = "Seb (ACP), vendored by 2040";

@@ -12,8 +12,6 @@ Future Ammunition in the TMT magazines the ghost factions issue: each one loaded
 - `ace_ballistics` _(external)_
 - `ghost_fa_ammo`
 - `ghost_fa_tiers`
-- `ghost_fa_rf`
-- `ghost_fa_tiers_mods`
 - `tmt_weapon` _(external)_
 
 Carries `skipWhenMissingDependencies` - the PBO is skipped rather than breaking the load order when something above is absent.

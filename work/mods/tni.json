@@ -1,0 +1,8447 @@
+{
+ "units": [
+  {
+   "displayname": "$STR_DN_VEHICLE",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconVehicle",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "model": "bmp",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Car",
+   "ancestry": [
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_apc",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "$STR_DN_VEHICLE",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconVehicle",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "model": "bmp",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Car_F",
+   "ancestry": [
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_apc",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "$STR_DN_VEHICLE",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconVehicle",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "model": "bmp",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Wheeled_APC_F",
+   "ancestry": [
+    "Wheeled_APC_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_badak",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "$STR_DN_VEHICLE",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconVehicle",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "model": "bmp",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "B_APC_Wheeled_01_cannon_F",
+   "ancestry": [
+    "B_APC_Wheeled_01_cannon_F",
+    "Wheeled_APC_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_badak",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "FSV Badak",
+   "editorsubcategory": "EdSubcat_APCs",
+   "model": "\\ptni_badak\\ptni_badak",
+   "simulation": "carx",
+   "hiddenselectionstextures": [
+    "\\ptni_apc\\Data\\ptni_apc_body_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_ext_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_ext2_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_gun_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_CO.paa"
+   ],
+   "transportsoldier": "0",
+   "icon": "\\A3\\armor_f_gamma\\APC_Wheeled_03\\Data\\UI\\map_APC_Wheeled_03_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "crew": "Civilian",
+   "class": "ptni_badak_base",
+   "ancestry": [
+    "ptni_badak_base",
+    "B_APC_Wheeled_01_cannon_F",
+    "Wheeled_APC_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_badak",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "FSV Badak",
+   "model": "\\ptni_badak\\ptni_badak",
+   "crew": "PTNI_Crewman_Malvinas",
+   "editorsubcategory": "EdSubcat_APCs",
+   "simulation": "carx",
+   "hiddenselectionstextures": [
+    "\\ptni_apc\\Data\\ptni_apc_body_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_ext_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_ext2_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_gun_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_CO.paa"
+   ],
+   "transportsoldier": "0",
+   "icon": "\\A3\\armor_f_gamma\\APC_Wheeled_03\\Data\\UI\\map_APC_Wheeled_03_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "ptni_badak_F",
+   "ancestry": [
+    "ptni_badak_F",
+    "ptni_badak_base",
+    "B_APC_Wheeled_01_cannon_F",
+    "Wheeled_APC_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_badak",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Assault Pack (AD)",
+   "hiddenselectionstextures": [
+    "\\ptni_helmet\\Data\\ptni_assaultpack_AD.paa"
+   ],
+   "scope": 2,
+   "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Compact",
+   "side": 3,
+   "editorsubcategory": "EdSubcat_Backpacks",
+   "vehicleclass": "Backpacks",
+   "icon": "iconBackpack",
+   "scopecurator": 0,
+   "simulation": "house",
+   "weapons": [],
+   "magazines": [],
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "PTNI_AssaultPack_AD",
+   "ancestry": [
+    "PTNI_AssaultPack_AD",
+    "B_AssaultPack_blk",
+    "B_AssaultPack_Base",
+    "Bag_Base",
+    "ReammoBox",
+    "Strategic",
+    "Building",
+    "Static",
+    "All"
+   ],
+   "pbo": "ptni_helmet",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Assault Pack (Malvinas)",
+   "hiddenselectionstextures": [
+    "\\ptni_helmet\\Data\\ptni_assaultpack_malvinas.paa"
+   ],
+   "scope": 2,
+   "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Compact",
+   "side": 3,
+   "editorsubcategory": "EdSubcat_Backpacks",
+   "vehicleclass": "Backpacks",
+   "icon": "iconBackpack",
+   "scopecurator": 0,
+   "simulation": "house",
+   "weapons": [],
+   "magazines": [],
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "PTNI_AssaultPack_malvinas",
+   "ancestry": [
+    "PTNI_AssaultPack_malvinas",
+    "B_AssaultPack_blk",
+    "B_AssaultPack_Base",
+    "Bag_Base",
+    "ReammoBox",
+    "Strategic",
+    "Building",
+    "Static",
+    "All"
+   ],
+   "pbo": "ptni_helmet",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "1",
+   "displayname": "Assault Pack (Malvinas)",
+   "hiddenselectionstextures": [
+    "\\ptni_helmet\\Data\\ptni_assaultpack_malvinas.paa"
+   ],
+   "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Compact",
+   "side": 3,
+   "editorsubcategory": "EdSubcat_Backpacks",
+   "vehicleclass": "Backpacks",
+   "icon": "iconBackpack",
+   "scopecurator": 0,
+   "simulation": "house",
+   "weapons": [],
+   "magazines": [],
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "PTNI_AssaultPack_malvinas_medic",
+   "ancestry": [
+    "PTNI_AssaultPack_malvinas_medic",
+    "PTNI_AssaultPack_malvinas",
+    "B_AssaultPack_blk",
+    "B_AssaultPack_Base",
+    "Bag_Base",
+    "ReammoBox",
+    "Strategic",
+    "Building",
+    "Static",
+    "All"
+   ],
+   "pbo": "ptni_helmet",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "1",
+   "displayname": "Assault Pack (Malvinas)",
+   "hiddenselectionstextures": [
+    "\\ptni_helmet\\Data\\ptni_assaultpack_malvinas.paa"
+   ],
+   "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Compact",
+   "side": 3,
+   "editorsubcategory": "EdSubcat_Backpacks",
+   "vehicleclass": "Backpacks",
+   "icon": "iconBackpack",
+   "scopecurator": 0,
+   "simulation": "house",
+   "weapons": [],
+   "magazines": [],
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "PTNI_AssaultPack_malvinas_LAT",
+   "ancestry": [
+    "PTNI_AssaultPack_malvinas_LAT",
+    "PTNI_AssaultPack_malvinas",
+    "B_AssaultPack_blk",
+    "B_AssaultPack_Base",
+    "Bag_Base",
+    "ReammoBox",
+    "Strategic",
+    "Building",
+    "Static",
+    "All"
+   ],
+   "pbo": "ptni_helmet",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Carryall Pack (AD)",
+   "hiddenselectionstextures": [
+    "\\ptni_helmet\\Data\\ptni_carryall_AD.paa"
+   ],
+   "scope": 2,
+   "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Tortila",
+   "side": 3,
+   "editorsubcategory": "EdSubcat_Backpacks",
+   "vehicleclass": "Backpacks",
+   "icon": "iconBackpack",
+   "scopecurator": 0,
+   "simulation": "house",
+   "weapons": [],
+   "magazines": [],
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "PTNI_CarryPack_AD",
+   "ancestry": [
+    "PTNI_CarryPack_AD",
+    "B_Carryall_blk",
+    "B_Carryall_Base",
+    "Bag_Base",
+    "ReammoBox",
+    "Strategic",
+    "Building",
+    "Static",
+    "All"
+   ],
+   "pbo": "ptni_helmet",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Carryall Pack (Malvinas)",
+   "hiddenselectionstextures": [
+    "\\ptni_helmet\\Data\\ptni_carryall_malvinas.paa"
+   ],
+   "scope": 2,
+   "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Tortila",
+   "side": 3,
+   "editorsubcategory": "EdSubcat_Backpacks",
+   "vehicleclass": "Backpacks",
+   "icon": "iconBackpack",
+   "scopecurator": 0,
+   "simulation": "house",
+   "weapons": [],
+   "magazines": [],
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "PTNI_CarryPack_Malvinas",
+   "ancestry": [
+    "PTNI_CarryPack_Malvinas",
+    "B_Carryall_blk",
+    "B_Carryall_Base",
+    "Bag_Base",
+    "ReammoBox",
+    "Strategic",
+    "Building",
+    "Static",
+    "All"
+   ],
+   "pbo": "ptni_helmet",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Kitbag Pack (AD)",
+   "hiddenselectionstextures": [
+    "\\ptni_helmet\\Data\\ptni_kitbag_AD.paa"
+   ],
+   "scope": 2,
+   "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Fast",
+   "side": 3,
+   "editorsubcategory": "EdSubcat_Backpacks",
+   "vehicleclass": "Backpacks",
+   "icon": "iconBackpack",
+   "scopecurator": 0,
+   "simulation": "house",
+   "weapons": [],
+   "magazines": [],
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "PTNI_KitBag_AD",
+   "ancestry": [
+    "PTNI_KitBag_AD",
+    "B_Kitbag_rgr",
+    "B_Kitbag_Base",
+    "Bag_Base",
+    "ReammoBox",
+    "Strategic",
+    "Building",
+    "Static",
+    "All"
+   ],
+   "pbo": "ptni_helmet",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Kitbag Pack (Malvinas)",
+   "hiddenselectionstextures": [
+    "\\ptni_helmet\\Data\\ptni_kitbag_malvinas.paa"
+   ],
+   "scope": 2,
+   "model": "\\A3\\weapons_f\\Ammoboxes\\bags\\Backpack_Fast",
+   "side": 3,
+   "editorsubcategory": "EdSubcat_Backpacks",
+   "vehicleclass": "Backpacks",
+   "icon": "iconBackpack",
+   "scopecurator": 0,
+   "simulation": "house",
+   "weapons": [],
+   "magazines": [],
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "PTNI_KitBag_Malvinas",
+   "ancestry": [
+    "PTNI_KitBag_Malvinas",
+    "B_Kitbag_rgr",
+    "B_Kitbag_Base",
+    "Bag_Base",
+    "ReammoBox",
+    "Strategic",
+    "Building",
+    "Static",
+    "All"
+   ],
+   "pbo": "ptni_helmet",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Maung V3",
+   "model": "\\ptni_maung\\ptni_maung_unarmed",
+   "simulation": "carx",
+   "transportsoldier": "0",
+   "icon": "\\A3\\soft_f\\MRAP_01\\Data\\UI\\map_MRAP_01_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "crew": "Civilian",
+   "class": "ptni_maung_base",
+   "ancestry": [
+    "ptni_maung_base",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_maung",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "Maung V3",
+   "crew": "PTNI_Rifleman_Malvinas",
+   "weapons": [
+    "TruckHorn"
+   ],
+   "model": "\\ptni_maung\\ptni_maung_unarmed",
+   "simulation": "carx",
+   "transportsoldier": "0",
+   "icon": "\\A3\\soft_f\\MRAP_01\\Data\\UI\\map_MRAP_01_CA.paa",
+   "cost": "50000",
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "ptni_maung_F",
+   "ancestry": [
+    "ptni_maung_F",
+    "ptni_maung_base",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_maung",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Komodo",
+   "model": "\\ptni_mrap\\ptni_mrap_unarmed",
+   "simulation": "carx",
+   "hiddenselectionstextures": [
+    "ptni_mrap\\Data\\ptni_mrap_body_CO.paa",
+    "ptni_mrap\\Data\\ptni_mrap_det_CO.paa",
+    "ptni_mrap\\Data\\ptni_mrap_turret_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_CO.paa"
+   ],
+   "transportsoldier": "7",
+   "icon": "\\A3\\soft_f\\MRAP_01\\Data\\UI\\map_MRAP_01_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "crew": "Civilian",
+   "class": "PTNI_MRAP_01_base_F",
+   "ancestry": [
+    "PTNI_MRAP_01_base_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_mrap",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "Komodo",
+   "crew": "PTNI_Rifleman_Malvinas",
+   "weapons": [
+    "TruckHorn",
+    "SmokeLauncher"
+   ],
+   "magazines": [
+    "SmokeLauncherMag"
+   ],
+   "model": "\\ptni_mrap\\ptni_mrap_unarmed",
+   "simulation": "carx",
+   "hiddenselectionstextures": [
+    "ptni_mrap\\Data\\ptni_mrap_body_CO.paa",
+    "ptni_mrap\\Data\\ptni_mrap_det_CO.paa",
+    "ptni_mrap\\Data\\ptni_mrap_turret_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_CO.paa"
+   ],
+   "transportsoldier": "7",
+   "icon": "\\A3\\soft_f\\MRAP_01\\Data\\UI\\map_MRAP_01_CA.paa",
+   "cost": "50000",
+   "vehicleclass": "",
+   "class": "B_PTNI_MRAP_01_F",
+   "ancestry": [
+    "B_PTNI_MRAP_01_F",
+    "PTNI_MRAP_01_base_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_mrap",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "Komodo (GPMG)",
+   "model": "\\ptni_mrap\\ptni_mrap",
+   "crew": "PTNI_Rifleman_Malvinas",
+   "simulation": "carx",
+   "hiddenselectionstextures": [
+    "ptni_mrap\\Data\\ptni_mrap_body_CO.paa",
+    "ptni_mrap\\Data\\ptni_mrap_det_CO.paa",
+    "ptni_mrap\\Data\\ptni_mrap_turret_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_CO.paa"
+   ],
+   "transportsoldier": "7",
+   "icon": "\\A3\\soft_f\\MRAP_01\\Data\\UI\\map_MRAP_01_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "B_PTNI_MRAP_01_GUN_F",
+   "ancestry": [
+    "B_PTNI_MRAP_01_GUN_F",
+    "PTNI_MRAP_01_base_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_mrap",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "crew": "PTNI_Rifleman_UN_AD",
+   "hiddenselectionstextures": [
+    "ptni_mrap\\Data\\ptni_mrap_body_UN_CO.paa",
+    "ptni_mrap\\Data\\ptni_mrap_det_UN_CO.paa",
+    "ptni_mrap\\Data\\ptni_mrap_turret_UN_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_UN_CO.paa"
+   ],
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "displayname": "Komodo",
+   "weapons": [
+    "TruckHorn",
+    "SmokeLauncher"
+   ],
+   "magazines": [
+    "SmokeLauncherMag"
+   ],
+   "model": "\\ptni_mrap\\ptni_mrap_unarmed",
+   "simulation": "carx",
+   "transportsoldier": "7",
+   "icon": "\\A3\\soft_f\\MRAP_01\\Data\\UI\\map_MRAP_01_CA.paa",
+   "cost": "50000",
+   "vehicleclass": "",
+   "class": "B_PTNI_MRAP_01_UN_F",
+   "ancestry": [
+    "B_PTNI_MRAP_01_UN_F",
+    "B_PTNI_MRAP_01_F",
+    "PTNI_MRAP_01_base_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_mrap",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "crew": "PTNI_Rifleman_UN_AD",
+   "hiddenselectionstextures": [
+    "ptni_mrap\\Data\\ptni_mrap_body_UN_CO.paa",
+    "ptni_mrap\\Data\\ptni_mrap_det_UN_CO.paa",
+    "ptni_mrap\\Data\\ptni_mrap_turret_UN_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_UN_CO.paa"
+   ],
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "displayname": "Komodo (GPMG)",
+   "model": "\\ptni_mrap\\ptni_mrap",
+   "simulation": "carx",
+   "transportsoldier": "7",
+   "icon": "\\A3\\soft_f\\MRAP_01\\Data\\UI\\map_MRAP_01_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "B_PTNI_MRAP_01_GUN_UN_F",
+   "ancestry": [
+    "B_PTNI_MRAP_01_GUN_UN_F",
+    "B_PTNI_MRAP_01_GUN_F",
+    "PTNI_MRAP_01_base_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_mrap",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "$STR_DN_VEHICLE",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconVehicle",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "model": "bmp",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Tank",
+   "ancestry": [
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_tank",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "$STR_DN_VEHICLE",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "icon": "iconVehicle",
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "model": "bmp",
+   "simulation": "",
+   "crew": "Civilian",
+   "class": "Tank_F",
+   "ancestry": [
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_tank",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "MMWT Harimau",
+   "vehicleclass": "Armored",
+   "model": "\\ptni_tank\\ptni_tank",
+   "simulation": "tankX",
+   "hiddenselectionstextures": [
+    "ptni_tank\\Data\\ptni_harimau_1_CO.paa",
+    "ptni_tank\\Data\\ptni_harimau_turret_CO.paa",
+    "a3\\armor_f_epb\\MBT_03\\Data\\MBT_03_track_CO.paa"
+   ],
+   "icon": "\\A3\\armor_f_gamma\\MBT_02\\Data\\UI\\map_MBT_02_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "PTNI_Tank_Base",
+   "ancestry": [
+    "PTNI_Tank_Base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_tank",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "crew": "PTNI_Crewman_Malvinas",
+   "displayname": "MMWT Harimau",
+   "vehicleclass": "Armored",
+   "model": "\\ptni_tank\\ptni_tank",
+   "simulation": "tankX",
+   "hiddenselectionstextures": [
+    "ptni_tank\\Data\\ptni_harimau_1_CO.paa",
+    "ptni_tank\\Data\\ptni_harimau_turret_CO.paa",
+    "a3\\armor_f_epb\\MBT_03\\Data\\MBT_03_track_CO.paa"
+   ],
+   "icon": "\\A3\\armor_f_gamma\\MBT_02\\Data\\UI\\map_MBT_02_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "class": "PTNI_Tank_Base_F",
+   "ancestry": [
+    "PTNI_Tank_Base_F",
+    "PTNI_Tank_Base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_tank",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "crew": "PTNI_Crewman_UN",
+   "hiddenselectionstextures": [
+    "ptni_tank\\Data\\ptni_harimau_1_UN_CO.paa",
+    "ptni_tank\\Data\\ptni_harimau_turret_UN_CO.paa",
+    "a3\\armor_f_epb\\MBT_03\\Data\\MBT_03_track_CO.paa"
+   ],
+   "scope": "2",
+   "side": "1",
+   "displayname": "MMWT Harimau",
+   "vehicleclass": "Armored",
+   "model": "\\ptni_tank\\ptni_tank",
+   "simulation": "tankX",
+   "icon": "\\A3\\armor_f_gamma\\MBT_02\\Data\\UI\\map_MBT_02_ca.paa",
+   "cost": "1500000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "class": "PTNI_Tank_Base_UN_F",
+   "ancestry": [
+    "PTNI_Tank_Base_UN_F",
+    "PTNI_Tank_Base_F",
+    "PTNI_Tank_Base",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_tank",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "Leopard 2RI",
+   "crew": "PTNI_Crewman_Malvinas",
+   "hiddenselectionstextures": [
+    "\\ptni_tank\\Data\\ptni_leopard_ext1.paa",
+    "\\ptni_tank\\Data\\ptni_leopard_ext2.paa",
+    "\\ptni_tank\\Data\\ptni_leopard_rcws.paa",
+    "A3\\Armor_F\\Data\\camonet_AAF_Digi_Green_CO.paa"
+   ],
+   "editorsubcategory": "EdSubcat_Tanks",
+   "model": "\\A3\\Armor_F_EPB\\MBT_03\\MBT_03_cannon_F.p3d",
+   "simulation": "tankX",
+   "icon": "\\A3\\Armor_F_EPB\\MBT_03\\Data\\UI\\map_MBT_03_Ca.paa",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "PTNI_Leopard",
+   "ancestry": [
+    "PTNI_Leopard",
+    "I_MBT_03_cannon_F",
+    "I_MBT_03_base_F",
+    "MBT_03_base_F",
+    "Tank_F",
+    "Tank",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_tank",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "Pandur",
+   "crew": "PTNI_Crewman_Malvinas",
+   "hiddenselectionstextures": [
+    "\\ptni_tank\\Data\\ptni_pandur_ext1.paa",
+    "\\ptni_tank\\Data\\ptni_pandur_ext2.paa",
+    "\\ptni_tank\\Data\\ptni_pandur_rcws.paa",
+    "\\ptni_tank\\Data\\ptni_pandur_alpha.paa",
+    "A3\\Armor_F\\Data\\camonet_AAF_Digi_Green_CO.paa",
+    "A3\\armor_f\\data\\cage_aaf_co.paa"
+   ],
+   "model": "\\A3\\armor_f_gamma\\APC_Wheeled_03\\APC_Wheeled_03_cannon_F.p3d",
+   "icon": "\\A3\\armor_f_gamma\\APC_Wheeled_03\\Data\\UI\\map_APC_Wheeled_03_CA.paa",
+   "editorsubcategory": "EdSubcat_APCs",
+   "simulation": "carx",
+   "weapons": [
+    "TruckHorn"
+   ],
+   "magazines": [],
+   "vehicleclass": "",
+   "class": "PTNI_Pandur",
+   "ancestry": [
+    "PTNI_Pandur",
+    "I_APC_Wheeled_03_cannon_F",
+    "I_APC_Wheeled_03_base_F",
+    "APC_Wheeled_03_base_F",
+    "Wheeled_APC_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_tank",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "NPS-75 Transport",
+   "model": "\\ptni_truck\\ptni_truck",
+   "simulation": "carx",
+   "hiddenselectionstextures": [
+    "ptni_truck\\Data\\ptni_truck_ext1_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_ext2_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_cover_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_CO.paa"
+   ],
+   "icon": "\\a3\\soft_f_beta\\Truck_02\\data\\UI\\Map_truck_02_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "crew": "Civilian",
+   "class": "PTNI_Truck_Base",
+   "ancestry": [
+    "PTNI_Truck_Base",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_truck",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "crew": "PTNI_Rifleman_Malvinas",
+   "transportsoldier": "15",
+   "displayname": "NPS-75 Transport",
+   "model": "\\ptni_truck\\ptni_truck",
+   "simulation": "carx",
+   "hiddenselectionstextures": [
+    "ptni_truck\\Data\\ptni_truck_ext1_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_ext2_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_cover_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_CO.paa"
+   ],
+   "icon": "\\a3\\soft_f_beta\\Truck_02\\data\\UI\\Map_truck_02_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "PTNI_Truck",
+   "ancestry": [
+    "PTNI_Truck",
+    "PTNI_Truck_Base",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_truck",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "NPS-75 Fuel",
+   "model": "\\ptni_truck\\ptni_truck_fuel",
+   "crew": "PTNI_Rifleman_Malvinas",
+   "hiddenselectionstextures": [
+    "ptni_truck\\Data\\ptni_truck_ext1_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_ext2_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_fuel_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_CO.paa"
+   ],
+   "transportsoldier": "1",
+   "simulation": "carx",
+   "icon": "\\a3\\soft_f_beta\\Truck_02\\data\\UI\\Map_truck_02_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "PTNI_Truck_Fuel",
+   "ancestry": [
+    "PTNI_Truck_Fuel",
+    "PTNI_Truck_Base",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_truck",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "NPS-75 Ammo",
+   "model": "\\ptni_truck\\ptni_truck_box",
+   "crew": "PTNI_Rifleman_Malvinas",
+   "transportsoldier": "1",
+   "simulation": "carx",
+   "hiddenselectionstextures": [
+    "ptni_truck\\Data\\ptni_truck_ext1_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_ext2_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_cover_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_CO.paa"
+   ],
+   "icon": "\\a3\\soft_f_beta\\Truck_02\\data\\UI\\Map_truck_02_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "PTNI_Truck_Ammo",
+   "ancestry": [
+    "PTNI_Truck_Ammo",
+    "PTNI_Truck_Base",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_truck",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "NPS-75 Repair",
+   "model": "\\ptni_truck\\ptni_truck_box",
+   "crew": "PTNI_Rifleman_Malvinas",
+   "transportsoldier": "1",
+   "simulation": "carx",
+   "hiddenselectionstextures": [
+    "ptni_truck\\Data\\ptni_truck_ext1_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_ext2_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_cover_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_CO.paa"
+   ],
+   "icon": "\\a3\\soft_f_beta\\Truck_02\\data\\UI\\Map_truck_02_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "PTNI_Truck_Repair",
+   "ancestry": [
+    "PTNI_Truck_Repair",
+    "PTNI_Truck_Base",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_truck",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "crew": "PTNI_Rifleman_UN_AD",
+   "hiddenselectionstextures": [
+    "ptni_truck\\Data\\ptni_truck_ext1_UN_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_ext2_UN_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_cover_UN_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_UN_CO.paa"
+   ],
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "transportsoldier": "15",
+   "displayname": "NPS-75 Transport",
+   "model": "\\ptni_truck\\ptni_truck",
+   "simulation": "carx",
+   "icon": "\\a3\\soft_f_beta\\Truck_02\\data\\UI\\Map_truck_02_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "PTNI_Truck_UN",
+   "ancestry": [
+    "PTNI_Truck_UN",
+    "PTNI_Truck",
+    "PTNI_Truck_Base",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_truck",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "crew": "PTNI_Rifleman_UN_AD",
+   "hiddenselectionstextures": [
+    "ptni_truck\\Data\\ptni_truck_ext1_UN_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_ext2_UN_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_fuel_UN_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_UN_CO.paa"
+   ],
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "displayname": "NPS-75 Fuel",
+   "model": "\\ptni_truck\\ptni_truck_fuel",
+   "transportsoldier": "1",
+   "simulation": "carx",
+   "icon": "\\a3\\soft_f_beta\\Truck_02\\data\\UI\\Map_truck_02_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "PTNI_Truck_Fuel_UN",
+   "ancestry": [
+    "PTNI_Truck_Fuel_UN",
+    "PTNI_Truck_Fuel",
+    "PTNI_Truck_Base",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_truck",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "crew": "PTNI_Rifleman_UN_AD",
+   "hiddenselectionstextures": [
+    "ptni_truck\\Data\\ptni_truck_ext1_UN_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_ext2_UN_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_cover_UN_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_UN_CO.paa"
+   ],
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "displayname": "NPS-75 Ammo",
+   "model": "\\ptni_truck\\ptni_truck_box",
+   "transportsoldier": "1",
+   "simulation": "carx",
+   "icon": "\\a3\\soft_f_beta\\Truck_02\\data\\UI\\Map_truck_02_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "PTNI_Truck_Ammo_UN",
+   "ancestry": [
+    "PTNI_Truck_Ammo_UN",
+    "PTNI_Truck_Ammo",
+    "PTNI_Truck_Base",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_truck",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "crew": "PTNI_Rifleman_UN_AD",
+   "hiddenselectionstextures": [
+    "ptni_truck\\Data\\ptni_truck_ext1_UN_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_ext2_UN_CO.paa",
+    "ptni_truck\\Data\\ptni_truck_cover_UN_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_UN_CO.paa"
+   ],
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "displayname": "NPS-75 Repair",
+   "model": "\\ptni_truck\\ptni_truck_box",
+   "transportsoldier": "1",
+   "simulation": "carx",
+   "icon": "\\a3\\soft_f_beta\\Truck_02\\data\\UI\\Map_truck_02_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "PTNI_Truck_Repair_UN",
+   "ancestry": [
+    "PTNI_Truck_Repair_UN",
+    "PTNI_Truck_Repair",
+    "PTNI_Truck_Base",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_truck",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_Malvinas_tanktop",
+   "hiddenselectionstextures": [
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_tanktop_co.paa",
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa",
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_gloves_black_co.paa"
+   ],
+   "scope": 1,
+   "model": "\\a3\\Characters_F_Enoch\\Uniforms\\I_E_Soldier_01_TankTop_F.p3d",
+   "scopecurator": 0,
+   "side": 2,
+   "faction": "IND_F",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "weapons": [
+    "arifle_Mk20_ACO_pointer_F",
+    "hgun_ACPC2_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "icon": "iconMan",
+   "displayname": "$STR_DN_RIFLEMAN",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_Malvinas_tanktop_unit",
+   "ancestry": [
+    "PTNI_uniform_Malvinas_tanktop_unit",
+    "I_E_Uniform_01_tanktop_F",
+    "I_E_Man_Base_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_AD_tanktop",
+   "hiddenselectionstextures": [
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_tanktop_co.paa",
+    "\\ptni_units\\Data\\ptni_AD_CO.paa",
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_gloves_black_co.paa"
+   ],
+   "scope": 1,
+   "model": "\\a3\\Characters_F_Enoch\\Uniforms\\I_E_Soldier_01_TankTop_F.p3d",
+   "scopecurator": 0,
+   "side": 2,
+   "faction": "IND_F",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "weapons": [
+    "arifle_Mk20_ACO_pointer_F",
+    "hgun_ACPC2_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "icon": "iconMan",
+   "displayname": "$STR_DN_RIFLEMAN",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_AD_tanktop_unit",
+   "ancestry": [
+    "PTNI_uniform_AD_tanktop_unit",
+    "I_E_Uniform_01_tanktop_F",
+    "I_E_Man_Base_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_UN_AD_tanktop",
+   "hiddenselectionstextures": [
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_tanktop_co.paa",
+    "\\ptni_units\\Data\\ptni_desert_AD_CO.paa",
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_gloves_black_co.paa"
+   ],
+   "scope": 1,
+   "model": "\\a3\\Characters_F_Enoch\\Uniforms\\I_E_Soldier_01_TankTop_F.p3d",
+   "scopecurator": 0,
+   "side": 2,
+   "faction": "IND_F",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "weapons": [
+    "arifle_Mk20_ACO_pointer_F",
+    "hgun_ACPC2_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "icon": "iconMan",
+   "displayname": "$STR_DN_RIFLEMAN",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_UN_AD_tanktop_unit",
+   "ancestry": [
+    "PTNI_uniform_UN_AD_tanktop_unit",
+    "I_E_Uniform_01_tanktop_F",
+    "I_E_Man_Base_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_UN_tanktop",
+   "hiddenselectionstextures": [
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_tanktop_co.paa",
+    "\\ptni_units\\Data\\ptni_desert_CO.paa",
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_gloves_black_co.paa"
+   ],
+   "scope": 1,
+   "model": "\\a3\\Characters_F_Enoch\\Uniforms\\I_E_Soldier_01_TankTop_F.p3d",
+   "scopecurator": 0,
+   "side": 2,
+   "faction": "IND_F",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "weapons": [
+    "arifle_Mk20_ACO_pointer_F",
+    "hgun_ACPC2_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "icon": "iconMan",
+   "displayname": "$STR_DN_RIFLEMAN",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_UN_tanktop_unit",
+   "ancestry": [
+    "PTNI_uniform_UN_tanktop_unit",
+    "I_E_Uniform_01_tanktop_F",
+    "I_E_Man_Base_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_Malvinas_tanktop2",
+   "hiddenselectionstextures": [
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_tanktop_co.paa",
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa",
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_gloves_black_co.paa"
+   ],
+   "scope": 2,
+   "scopecurator": 2,
+   "displayname": "$STR_A3_I_C_Soldier_Para_4_F0",
+   "model": "\\A3\\Characters_F_Exp\\Syndikat\\I_C_Soldier_Para_4_F.p3d",
+   "weapons": [
+    "LMG_03_F",
+    "hgun_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "200Rnd_556x45_Box_F",
+    "200Rnd_556x45_Box_F",
+    "200Rnd_556x45_Box_F",
+    "10Rnd_9x21_Mag",
+    "10Rnd_9x21_Mag",
+    "10Rnd_9x21_Mag"
+   ],
+   "icon": "iconManMG",
+   "faction": "IND_C_F",
+   "editorsubcategory": "EdSubcat_Personnel_Paramilitary",
+   "side": 2,
+   "vehicleclass": "Men",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_Malvinas_tanktop2_unit",
+   "ancestry": [
+    "PTNI_uniform_Malvinas_tanktop2_unit",
+    "I_C_Soldier_Para_4_F",
+    "I_C_Soldier_base_F",
+    "I_G_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_AD_tanktop2",
+   "hiddenselectionstextures": [
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_tanktop_co.paa",
+    "\\ptni_units\\Data\\ptni_AD_CO.paa",
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_gloves_black_co.paa"
+   ],
+   "scope": 2,
+   "scopecurator": 2,
+   "displayname": "$STR_A3_I_C_Soldier_Para_4_F0",
+   "model": "\\A3\\Characters_F_Exp\\Syndikat\\I_C_Soldier_Para_4_F.p3d",
+   "weapons": [
+    "LMG_03_F",
+    "hgun_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "200Rnd_556x45_Box_F",
+    "200Rnd_556x45_Box_F",
+    "200Rnd_556x45_Box_F",
+    "10Rnd_9x21_Mag",
+    "10Rnd_9x21_Mag",
+    "10Rnd_9x21_Mag"
+   ],
+   "icon": "iconManMG",
+   "faction": "IND_C_F",
+   "editorsubcategory": "EdSubcat_Personnel_Paramilitary",
+   "side": 2,
+   "vehicleclass": "Men",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_AD_tanktop2_unit",
+   "ancestry": [
+    "PTNI_uniform_AD_tanktop2_unit",
+    "I_C_Soldier_Para_4_F",
+    "I_C_Soldier_base_F",
+    "I_G_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_UN_AD_tanktop2",
+   "hiddenselectionstextures": [
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_tanktop_co.paa",
+    "\\ptni_units\\Data\\ptni_desert_AD_CO.paa",
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_gloves_black_co.paa"
+   ],
+   "scope": 2,
+   "scopecurator": 2,
+   "displayname": "$STR_A3_I_C_Soldier_Para_4_F0",
+   "model": "\\A3\\Characters_F_Exp\\Syndikat\\I_C_Soldier_Para_4_F.p3d",
+   "weapons": [
+    "LMG_03_F",
+    "hgun_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "200Rnd_556x45_Box_F",
+    "200Rnd_556x45_Box_F",
+    "200Rnd_556x45_Box_F",
+    "10Rnd_9x21_Mag",
+    "10Rnd_9x21_Mag",
+    "10Rnd_9x21_Mag"
+   ],
+   "icon": "iconManMG",
+   "faction": "IND_C_F",
+   "editorsubcategory": "EdSubcat_Personnel_Paramilitary",
+   "side": 2,
+   "vehicleclass": "Men",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_UN_AD_tanktop2_unit",
+   "ancestry": [
+    "PTNI_uniform_UN_AD_tanktop2_unit",
+    "I_C_Soldier_Para_4_F",
+    "I_C_Soldier_base_F",
+    "I_G_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_UN_tanktop2",
+   "hiddenselectionstextures": [
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_tanktop_co.paa",
+    "\\ptni_units\\Data\\ptni_desert_CO.paa",
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_gloves_black_co.paa"
+   ],
+   "scope": 2,
+   "scopecurator": 2,
+   "displayname": "$STR_A3_I_C_Soldier_Para_4_F0",
+   "model": "\\A3\\Characters_F_Exp\\Syndikat\\I_C_Soldier_Para_4_F.p3d",
+   "weapons": [
+    "LMG_03_F",
+    "hgun_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "200Rnd_556x45_Box_F",
+    "200Rnd_556x45_Box_F",
+    "200Rnd_556x45_Box_F",
+    "10Rnd_9x21_Mag",
+    "10Rnd_9x21_Mag",
+    "10Rnd_9x21_Mag"
+   ],
+   "icon": "iconManMG",
+   "faction": "IND_C_F",
+   "editorsubcategory": "EdSubcat_Personnel_Paramilitary",
+   "side": 2,
+   "vehicleclass": "Men",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_UN_tanktop2_unit",
+   "ancestry": [
+    "PTNI_uniform_UN_tanktop2_unit",
+    "I_C_Soldier_Para_4_F",
+    "I_C_Soldier_base_F",
+    "I_G_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_Malvinas_alt",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_Officer_CO.paa",
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa",
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_gloves_black_co.paa"
+   ],
+   "scope": 1,
+   "model": "\\a3\\Characters_F_Enoch\\Uniforms\\I_E_Soldier_01_F.p3d",
+   "scopecurator": 0,
+   "side": 2,
+   "faction": "IND_F",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "weapons": [
+    "arifle_Mk20_ACO_pointer_F",
+    "hgun_ACPC2_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "icon": "iconMan",
+   "displayname": "$STR_DN_RIFLEMAN",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_Malvinas_alt_unit",
+   "ancestry": [
+    "PTNI_uniform_Malvinas_alt_unit",
+    "I_E_Uniform_01_F",
+    "I_E_Man_Base_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_AD_alt",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_AD_Officer_CO.paa",
+    "\\ptni_units\\Data\\ptni_AD_CO.paa",
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_gloves_black_co.paa"
+   ],
+   "scope": 1,
+   "model": "\\a3\\Characters_F_Enoch\\Uniforms\\I_E_Soldier_01_F.p3d",
+   "scopecurator": 0,
+   "side": 2,
+   "faction": "IND_F",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "weapons": [
+    "arifle_Mk20_ACO_pointer_F",
+    "hgun_ACPC2_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "icon": "iconMan",
+   "displayname": "$STR_DN_RIFLEMAN",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_AD_alt_unit",
+   "ancestry": [
+    "PTNI_uniform_AD_alt_unit",
+    "I_E_Uniform_01_F",
+    "I_E_Man_Base_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_UN_AD_alt",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_desert_AD_officer_CO.paa",
+    "\\ptni_units\\Data\\ptni_desert_AD_CO.paa",
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_gloves_black_co.paa"
+   ],
+   "scope": 1,
+   "model": "\\a3\\Characters_F_Enoch\\Uniforms\\I_E_Soldier_01_F.p3d",
+   "scopecurator": 0,
+   "side": 2,
+   "faction": "IND_F",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "weapons": [
+    "arifle_Mk20_ACO_pointer_F",
+    "hgun_ACPC2_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "icon": "iconMan",
+   "displayname": "$STR_DN_RIFLEMAN",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_UN_AD_alt_unit",
+   "ancestry": [
+    "PTNI_uniform_UN_AD_alt_unit",
+    "I_E_Uniform_01_F",
+    "I_E_Man_Base_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_UN_alt",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_desert_officer_CO.paa",
+    "\\ptni_units\\Data\\ptni_desert_CO.paa",
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_gloves_black_co.paa"
+   ],
+   "scope": 1,
+   "model": "\\a3\\Characters_F_Enoch\\Uniforms\\I_E_Soldier_01_F.p3d",
+   "scopecurator": 0,
+   "side": 2,
+   "faction": "IND_F",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "weapons": [
+    "arifle_Mk20_ACO_pointer_F",
+    "hgun_ACPC2_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "icon": "iconMan",
+   "displayname": "$STR_DN_RIFLEMAN",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_UN_alt_unit",
+   "ancestry": [
+    "PTNI_uniform_UN_alt_unit",
+    "I_E_Uniform_01_F",
+    "I_E_Man_Base_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_Malvinas_tshirt",
+   "hiddenselectionstextures": [
+    "A3\\Characters_F_Enoch\\Uniforms\\Data\\I_L_Uniform_01_Deserter_1_co.paa",
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 1,
+   "side": 3,
+   "faction": "IND_L_F",
+   "scopecurator": 2,
+   "displayname": "$STR_A3_CfgVehicles_B_Soldier_F0",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "model": "\\A3\\characters_F_gamma\\Guerrilla\\ig_guerrilla1_1.p3d",
+   "weapons": [
+    "arifle_TRG21_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "HandGrenade",
+    "MiniGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_blue",
+    "Chemlight_blue"
+   ],
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_Malvinas_tshirt_unit",
+   "ancestry": [
+    "PTNI_uniform_Malvinas_tshirt_unit",
+    "I_L_Uniform_01_deserter_F",
+    "I_G_Soldier_F",
+    "I_G_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_AD_tshirt",
+   "hiddenselectionstextures": [
+    "A3\\Characters_F_Enoch\\Uniforms\\Data\\I_L_Uniform_01_Deserter_1_co.paa",
+    "\\ptni_units\\Data\\ptni_AD_CO.paa"
+   ],
+   "scope": 1,
+   "side": 3,
+   "faction": "IND_L_F",
+   "scopecurator": 2,
+   "displayname": "$STR_A3_CfgVehicles_B_Soldier_F0",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "model": "\\A3\\characters_F_gamma\\Guerrilla\\ig_guerrilla1_1.p3d",
+   "weapons": [
+    "arifle_TRG21_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "HandGrenade",
+    "MiniGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_blue",
+    "Chemlight_blue"
+   ],
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_AD_tshirt_unit",
+   "ancestry": [
+    "PTNI_uniform_AD_tshirt_unit",
+    "I_L_Uniform_01_deserter_F",
+    "I_G_Soldier_F",
+    "I_G_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_UN_AD_tshirt",
+   "hiddenselectionstextures": [
+    "A3\\Characters_F_Enoch\\Uniforms\\Data\\I_L_Uniform_01_Deserter_1_co.paa",
+    "\\ptni_units\\Data\\ptni_desert_AD_CO.paa"
+   ],
+   "scope": 1,
+   "side": 3,
+   "faction": "IND_L_F",
+   "scopecurator": 2,
+   "displayname": "$STR_A3_CfgVehicles_B_Soldier_F0",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "model": "\\A3\\characters_F_gamma\\Guerrilla\\ig_guerrilla1_1.p3d",
+   "weapons": [
+    "arifle_TRG21_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "HandGrenade",
+    "MiniGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_blue",
+    "Chemlight_blue"
+   ],
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_UN_AD_tshirt_unit",
+   "ancestry": [
+    "PTNI_uniform_UN_AD_tshirt_unit",
+    "I_L_Uniform_01_deserter_F",
+    "I_G_Soldier_F",
+    "I_G_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_UN_tshirt",
+   "hiddenselectionstextures": [
+    "A3\\Characters_F_Enoch\\Uniforms\\Data\\I_L_Uniform_01_Deserter_1_co.paa",
+    "\\ptni_units\\Data\\ptni_desert_CO.paa"
+   ],
+   "scope": 1,
+   "side": 3,
+   "faction": "IND_L_F",
+   "scopecurator": 2,
+   "displayname": "$STR_A3_CfgVehicles_B_Soldier_F0",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "model": "\\A3\\characters_F_gamma\\Guerrilla\\ig_guerrilla1_1.p3d",
+   "weapons": [
+    "arifle_TRG21_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "HandGrenade",
+    "MiniGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_blue",
+    "Chemlight_blue"
+   ],
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_UN_tshirt_unit",
+   "ancestry": [
+    "PTNI_uniform_UN_tshirt_unit",
+    "I_L_Uniform_01_deserter_F",
+    "I_G_Soldier_F",
+    "I_G_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_Malvinas_tshirt2",
+   "hiddenselectionstextures": [
+    "\\A3\\Characters_F_Bootcamp\\Guerrilla\\Data\\c_cloth1_kabeiroi_co.paa",
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "scopecurator": 2,
+   "displayname": "$STR_A3_CfgVehicles_B_Soldier_F0",
+   "side": 2,
+   "faction": "IND_G_F",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "model": "\\A3\\characters_F_gamma\\Guerrilla\\ig_guerrilla1_1.p3d",
+   "weapons": [
+    "arifle_TRG21_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "HandGrenade",
+    "MiniGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_blue",
+    "Chemlight_blue"
+   ],
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_Malvinas_tshirt2_unit",
+   "ancestry": [
+    "PTNI_uniform_Malvinas_tshirt2_unit",
+    "I_G_Soldier_F",
+    "I_G_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_AD_tshirt2",
+   "hiddenselectionstextures": [
+    "\\A3\\Characters_F_Bootcamp\\Guerrilla\\Data\\c_cloth1_kabeiroi_co.paa",
+    "\\ptni_units\\Data\\ptni_AD_CO.paa"
+   ],
+   "scope": 2,
+   "scopecurator": 2,
+   "displayname": "$STR_A3_CfgVehicles_B_Soldier_F0",
+   "side": 2,
+   "faction": "IND_G_F",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "model": "\\A3\\characters_F_gamma\\Guerrilla\\ig_guerrilla1_1.p3d",
+   "weapons": [
+    "arifle_TRG21_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "HandGrenade",
+    "MiniGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_blue",
+    "Chemlight_blue"
+   ],
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_AD_tshirt2_unit",
+   "ancestry": [
+    "PTNI_uniform_AD_tshirt2_unit",
+    "I_G_Soldier_F",
+    "I_G_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_UN_AD_tshirt2",
+   "hiddenselectionstextures": [
+    "\\A3\\Characters_F_Bootcamp\\Guerrilla\\Data\\c_cloth1_kabeiroi_co.paa",
+    "\\ptni_units\\Data\\ptni_desert_AD_CO.paa"
+   ],
+   "scope": 2,
+   "scopecurator": 2,
+   "displayname": "$STR_A3_CfgVehicles_B_Soldier_F0",
+   "side": 2,
+   "faction": "IND_G_F",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "model": "\\A3\\characters_F_gamma\\Guerrilla\\ig_guerrilla1_1.p3d",
+   "weapons": [
+    "arifle_TRG21_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "HandGrenade",
+    "MiniGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_blue",
+    "Chemlight_blue"
+   ],
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_UN_AD_tshirt2_unit",
+   "ancestry": [
+    "PTNI_uniform_UN_AD_tshirt2_unit",
+    "I_G_Soldier_F",
+    "I_G_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_UN_tshirt2",
+   "hiddenselectionstextures": [
+    "\\A3\\Characters_F_Bootcamp\\Guerrilla\\Data\\c_cloth1_kabeiroi_co.paa",
+    "\\ptni_units\\Data\\ptni_desert_CO.paa"
+   ],
+   "scope": 2,
+   "scopecurator": 2,
+   "displayname": "$STR_A3_CfgVehicles_B_Soldier_F0",
+   "side": 2,
+   "faction": "IND_G_F",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "model": "\\A3\\characters_F_gamma\\Guerrilla\\ig_guerrilla1_1.p3d",
+   "weapons": [
+    "arifle_TRG21_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "HandGrenade",
+    "MiniGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_blue",
+    "Chemlight_blue"
+   ],
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_UN_tshirt2_unit",
+   "ancestry": [
+    "PTNI_uniform_UN_tshirt2_unit",
+    "I_G_Soldier_F",
+    "I_G_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_Malvinas_nogloves2",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_Officer_CO.paa",
+    "\\A3\\Characters_F_Exp\\Syndikat\\Data\\U_I_C_Soldier_Para_2_F_2_co.paa"
+   ],
+   "scope": 2,
+   "scopecurator": 2,
+   "displayname": "$STR_A3_I_C_Soldier_Para_2_F0",
+   "model": "\\A3\\Characters_F_Exp\\Syndikat\\I_C_Soldier_Para_2_F.p3d",
+   "weapons": [
+    "arifle_AK12_F",
+    "hgun_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "10Rnd_9x21_Mag",
+    "10Rnd_9x21_Mag",
+    "10Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade"
+   ],
+   "icon": "iconManLeader",
+   "faction": "IND_C_F",
+   "editorsubcategory": "EdSubcat_Personnel_Paramilitary",
+   "side": 2,
+   "vehicleclass": "Men",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_Malvinas_nogloves2_unit",
+   "ancestry": [
+    "PTNI_uniform_Malvinas_nogloves2_unit",
+    "I_C_Soldier_Para_2_F",
+    "I_C_Soldier_base_F",
+    "I_G_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_AD_nogloves2",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_AD_Officer_CO.paa",
+    "\\A3\\Characters_F_Exp\\Syndikat\\Data\\U_I_C_Soldier_Para_2_F_2_co.paa"
+   ],
+   "scope": 2,
+   "scopecurator": 2,
+   "displayname": "$STR_A3_I_C_Soldier_Para_2_F0",
+   "model": "\\A3\\Characters_F_Exp\\Syndikat\\I_C_Soldier_Para_2_F.p3d",
+   "weapons": [
+    "arifle_AK12_F",
+    "hgun_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "10Rnd_9x21_Mag",
+    "10Rnd_9x21_Mag",
+    "10Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade"
+   ],
+   "icon": "iconManLeader",
+   "faction": "IND_C_F",
+   "editorsubcategory": "EdSubcat_Personnel_Paramilitary",
+   "side": 2,
+   "vehicleclass": "Men",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_AD_nogloves2_unit",
+   "ancestry": [
+    "PTNI_uniform_AD_nogloves2_unit",
+    "I_C_Soldier_Para_2_F",
+    "I_C_Soldier_base_F",
+    "I_G_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_UN_AD_nogloves2",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_desert_AD_officer_CO.paa",
+    "\\A3\\Characters_F_Exp\\Syndikat\\Data\\U_I_C_Soldier_Para_2_F_2_co.paa"
+   ],
+   "scope": 2,
+   "scopecurator": 2,
+   "displayname": "$STR_A3_I_C_Soldier_Para_2_F0",
+   "model": "\\A3\\Characters_F_Exp\\Syndikat\\I_C_Soldier_Para_2_F.p3d",
+   "weapons": [
+    "arifle_AK12_F",
+    "hgun_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "10Rnd_9x21_Mag",
+    "10Rnd_9x21_Mag",
+    "10Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade"
+   ],
+   "icon": "iconManLeader",
+   "faction": "IND_C_F",
+   "editorsubcategory": "EdSubcat_Personnel_Paramilitary",
+   "side": 2,
+   "vehicleclass": "Men",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_UN_AD_nogloves2_unit",
+   "ancestry": [
+    "PTNI_uniform_UN_AD_nogloves2_unit",
+    "I_C_Soldier_Para_2_F",
+    "I_C_Soldier_base_F",
+    "I_G_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_UN_nogloves2",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_desert_officer_CO.paa",
+    "\\A3\\Characters_F_Exp\\Syndikat\\Data\\U_I_C_Soldier_Para_2_F_2_co.paa"
+   ],
+   "scope": 2,
+   "scopecurator": 2,
+   "displayname": "$STR_A3_I_C_Soldier_Para_2_F0",
+   "model": "\\A3\\Characters_F_Exp\\Syndikat\\I_C_Soldier_Para_2_F.p3d",
+   "weapons": [
+    "arifle_AK12_F",
+    "hgun_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "30Rnd_762x39_AK12_Mag_F",
+    "10Rnd_9x21_Mag",
+    "10Rnd_9x21_Mag",
+    "10Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade"
+   ],
+   "icon": "iconManLeader",
+   "faction": "IND_C_F",
+   "editorsubcategory": "EdSubcat_Personnel_Paramilitary",
+   "side": 2,
+   "vehicleclass": "Men",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_UN_nogloves2_unit",
+   "ancestry": [
+    "PTNI_uniform_UN_nogloves2_unit",
+    "I_C_Soldier_Para_2_F",
+    "I_C_Soldier_base_F",
+    "I_G_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_Malvinas_ghili",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa",
+    "\\A3\\Characters_F_Exp\\BLUFOR\\Data\\U_BT_sniper_F_tna_co.paa"
+   ],
+   "scope": 2,
+   "displayname": "$STR_B_Sniper_F0",
+   "weapons": [
+    "srifle_GM6_LRPS_F",
+    "hgun_ACPC2_snds_F",
+    "Throw",
+    "Put",
+    "Rangefinder"
+   ],
+   "magazines": [
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "APERSTripMine_Wire_Mag",
+    "ClaymoreDirectionalMine_Remote_Mag",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "SmokeShellOrange",
+    "SmokeShellPurple",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "editorsubcategory": "EdSubcat_Personnel_SpecialForces",
+   "vehicleclass": "MenSniper",
+   "model": "A3\\Characters_F_Beta\\INDEP\\ia_sniper.p3d",
+   "side": 2,
+   "faction": "IND_F",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_Malvinas_ghili_unit",
+   "ancestry": [
+    "PTNI_uniform_Malvinas_ghili_unit",
+    "I_Sniper_F",
+    "I_Soldier_sniper_base_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_AD_ghili",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_AD_CO.paa",
+    "\\A3\\characters_f\\Common\\Data\\ghillie_mcamo_co.paa"
+   ],
+   "scope": 2,
+   "displayname": "$STR_B_Sniper_F0",
+   "weapons": [
+    "srifle_GM6_LRPS_F",
+    "hgun_ACPC2_snds_F",
+    "Throw",
+    "Put",
+    "Rangefinder"
+   ],
+   "magazines": [
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "APERSTripMine_Wire_Mag",
+    "ClaymoreDirectionalMine_Remote_Mag",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "SmokeShellOrange",
+    "SmokeShellPurple",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "editorsubcategory": "EdSubcat_Personnel_SpecialForces",
+   "vehicleclass": "MenSniper",
+   "model": "A3\\Characters_F_Beta\\INDEP\\ia_sniper.p3d",
+   "side": 2,
+   "faction": "IND_F",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_AD_ghili_unit",
+   "ancestry": [
+    "PTNI_uniform_AD_ghili_unit",
+    "I_Sniper_F",
+    "I_Soldier_sniper_base_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_UN_AD_ghili",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_desert_AD_CO.paa",
+    "\\A3\\characters_f\\Common\\Data\\ghillie_woodland_co.paa"
+   ],
+   "scope": 2,
+   "displayname": "$STR_B_Sniper_F0",
+   "weapons": [
+    "srifle_GM6_LRPS_F",
+    "hgun_ACPC2_snds_F",
+    "Throw",
+    "Put",
+    "Rangefinder"
+   ],
+   "magazines": [
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "APERSTripMine_Wire_Mag",
+    "ClaymoreDirectionalMine_Remote_Mag",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "SmokeShellOrange",
+    "SmokeShellPurple",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "editorsubcategory": "EdSubcat_Personnel_SpecialForces",
+   "vehicleclass": "MenSniper",
+   "model": "A3\\Characters_F_Beta\\INDEP\\ia_sniper.p3d",
+   "side": 2,
+   "faction": "IND_F",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_UN_AD_ghili_unit",
+   "ancestry": [
+    "PTNI_uniform_UN_AD_ghili_unit",
+    "I_Sniper_F",
+    "I_Soldier_sniper_base_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_UN_ghili",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_desert_CO.paa",
+    "\\A3\\characters_f\\Common\\Data\\ghillie_desert_co.paa"
+   ],
+   "scope": 2,
+   "displayname": "$STR_B_Sniper_F0",
+   "weapons": [
+    "srifle_GM6_LRPS_F",
+    "hgun_ACPC2_snds_F",
+    "Throw",
+    "Put",
+    "Rangefinder"
+   ],
+   "magazines": [
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "5Rnd_127x108_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "APERSTripMine_Wire_Mag",
+    "ClaymoreDirectionalMine_Remote_Mag",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "SmokeShellOrange",
+    "SmokeShellPurple",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "editorsubcategory": "EdSubcat_Personnel_SpecialForces",
+   "vehicleclass": "MenSniper",
+   "model": "A3\\Characters_F_Beta\\INDEP\\ia_sniper.p3d",
+   "side": 2,
+   "faction": "IND_F",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_UN_ghili_unit",
+   "ancestry": [
+    "PTNI_uniform_UN_ghili_unit",
+    "I_Sniper_F",
+    "I_Soldier_sniper_base_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_pilot",
+   "hiddenselectionstextures": [
+    "\\ptni_units2\\Data\\coveralls_sage_tni_co.paa",
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa",
+    "a3\\characters_f_enoch\\uniforms\\data\\i_e_soldier_01_gloves_black_co.paa"
+   ],
+   "scope": 1,
+   "model": "\\a3\\Characters_F_Enoch\\Uniforms\\I_E_Coveralls_01_F.p3d",
+   "scopecurator": 0,
+   "side": 2,
+   "faction": "IND_F",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "weapons": [
+    "arifle_Mk20_ACO_pointer_F",
+    "hgun_ACPC2_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "icon": "iconMan",
+   "displayname": "$STR_DN_RIFLEMAN",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_pilot_unit",
+   "ancestry": [
+    "PTNI_uniform_pilot_unit",
+    "I_E_Uniform_01_coveralls_F",
+    "I_E_Man_Base_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform2_pilot",
+   "hiddenselectionstextures": [
+    "\\ptni_units2\\Data\\coveralls_sage_tni_co.paa"
+   ],
+   "scope": 2,
+   "displayname": "$STR_B_Helipilot_F0",
+   "weapons": [
+    "SMG_01_Holo_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_45ACP_Mag_SMG_01",
+    "30Rnd_45ACP_Mag_SMG_01",
+    "30Rnd_45ACP_Mag_SMG_01",
+    "30Rnd_45ACP_Mag_SMG_01",
+    "SmokeShellGreen",
+    "SmokeShellBlue",
+    "SmokeShellOrange",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "model": "\\A3\\Characters_F\\Common\\coveralls.p3d",
+   "side": 1,
+   "faction": "BLU_F",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_pilot2_unit",
+   "ancestry": [
+    "PTNI_uniform_pilot2_unit",
+    "B_Helipilot_F",
+    "B_Soldier_04_f",
+    "B_Soldier_base_F",
+    "SoldierWB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "uniformclass": "PTNI_uniform_coverall",
+   "hiddenselectionstextures": [
+    "\\ptni_units2\\Data\\U_Tank_crew_tni_CO.paa"
+   ],
+   "scope": 2,
+   "scopecurator": 2,
+   "side": 2,
+   "displayname": "$STR_A3_CfgVehicles_I_Story_Crew_F0",
+   "editorsubcategory": "EdSubcat_Personnel_Story",
+   "model": "\\A3\\Characters_F_Tank\\Uniforms\\U_Tank_crew_F.p3d",
+   "weapons": [
+    "arifle_Mk20C_F",
+    "Throw",
+    "Put",
+    "Rangefinder"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "SmokeShellGreen",
+    "SmokeShellGreen"
+   ],
+   "faction": "IND_F",
+   "vehicleclass": "Men",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_uniform_coverall_unit",
+   "ancestry": [
+    "PTNI_uniform_coverall_unit",
+    "I_Story_Crew_F",
+    "I_crew_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units2",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": 1,
+   "displayname": "$STR_DN_FLAG",
+   "editorsubcategory": "EdSubcat_Flags",
+   "vehicleclass": "Objects",
+   "model": "",
+   "simulation": "flagcarrier",
+   "icon": "",
+   "side": 3,
+   "scopecurator": 0,
+   "weapons": [],
+   "magazines": [],
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "FlagCarrier",
+   "ancestry": [
+    "FlagCarrier",
+    "FlagCarrierCore",
+    "Strategic",
+    "Building",
+    "Static",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "displayname": "Flag (Indonesia)",
+   "editorsubcategory": "EdSubcat_Flags",
+   "vehicleclass": "Objects",
+   "model": "",
+   "simulation": "flagcarrier",
+   "icon": "",
+   "side": 3,
+   "weapons": [],
+   "magazines": [],
+   "faction": "Default",
+   "crew": "Civilian",
+   "class": "ptni_flag_object",
+   "ancestry": [
+    "ptni_flag_object",
+    "FlagCarrier",
+    "FlagCarrierCore",
+    "Strategic",
+    "Building",
+    "Static",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "Rifleman",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "uniformclass": "U_PTNI_Malvinas",
+   "weapons": [
+    "ptni_ss2_v2",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "linkeditems": [
+    "PTNI_PASGT_Headgear",
+    "PTNI_Vest_Rifleman",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_Malvinas",
+   "ancestry": [
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Autorifleman",
+   "uniformclass": "U_PTNI_Malvinas_shortsleeve",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_02.p3d",
+   "weapons": [
+    "LMG_03_F",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "200Rnd_556x45_Box_F",
+    "200Rnd_556x45_Box_F",
+    "200Rnd_556x45_Box_F",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "linkeditems": [
+    "PTNI_PASGT_Headgear",
+    "PTNI_Vest_MG",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_MG_Malvinas",
+   "ancestry": [
+    "PTNI_MG_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Combat Life Saver",
+   "uniformclass": "U_PTNI_Malvinas_shortsleeve",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_02.p3d",
+   "linkeditems": [
+    "PTNI_PASGT_Headgear",
+    "PTNI_Vest_Medic",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "backpack": "PTNI_AssaultPack_malvinas_medic",
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "weapons": [
+    "ptni_ss2_v2",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Medic_Malvinas",
+   "ancestry": [
+    "PTNI_Medic_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Crewman",
+   "weapons": [
+    "ptni_ss2_v5",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "linkeditems": [
+    "H_HelmetCrew_I",
+    "V_BandollierB_blk",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "uniformclass": "U_PTNI_Malvinas",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Crewman_Malvinas",
+   "ancestry": [
+    "PTNI_Crewman_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Grenadier",
+   "weapons": [
+    "ptni_ss2_v2_GL",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "MiniGrenade",
+    "MiniGrenade",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green",
+    "1Rnd_Smoke_Grenade_shell",
+    "1Rnd_Smoke_Grenade_shell",
+    "1Rnd_SmokeGreen_Grenade_shell",
+    "1Rnd_SmokeOrange_Grenade_shell",
+    "1Rnd_SmokePurple_Grenade_shell"
+   ],
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "uniformclass": "U_PTNI_Malvinas",
+   "linkeditems": [
+    "PTNI_PASGT_Headgear",
+    "PTNI_Vest_Rifleman",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Grenadier_Malvinas",
+   "ancestry": [
+    "PTNI_Grenadier_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Rifleman (AT)",
+   "weapons": [
+    "ptni_ss2_v2",
+    "launch_NLAW_F",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "NLAW_F",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "backpack": "PTNI_AssaultPack_malvinas_LAT",
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "uniformclass": "U_PTNI_Malvinas",
+   "linkeditems": [
+    "PTNI_PASGT_Headgear",
+    "PTNI_Vest_Rifleman",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_AT_Malvinas",
+   "ancestry": [
+    "PTNI_Rifleman_AT_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Rifleman (Unarmed)",
+   "weapons": [
+    "Throw",
+    "Put"
+   ],
+   "linkeditems": [
+    "PTNI_PASGT_Headgear",
+    "PTNI_Vest_Empty",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio",
+    "ItemGPS"
+   ],
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "uniformclass": "U_PTNI_Malvinas",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_Unarmed_Malvinas",
+   "ancestry": [
+    "PTNI_Rifleman_Unarmed_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Marksman",
+   "weapons": [
+    "ptni_spm1_optic",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "linkeditems": [
+    "PTNI_PASGT_Headgear",
+    "PTNI_Vest_Rifleman",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio",
+    "ItemGPS"
+   ],
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "uniformclass": "U_PTNI_Malvinas",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_Marksman_Malvinas",
+   "ancestry": [
+    "PTNI_Rifleman_Marksman_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Team Leader",
+   "weapons": [
+    "ptni_ss2_v2_GL",
+    "PTNI_Pistol_01_F",
+    "Binocular",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag_Tracer_Yellow",
+    "30Rnd_556x45_Stanag_Tracer_Yellow",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "MiniGrenade",
+    "MiniGrenade",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "SmokeShellOrange",
+    "SmokeShellPurple",
+    "Chemlight_green",
+    "Chemlight_green",
+    "1Rnd_Smoke_Grenade_shell",
+    "1Rnd_Smoke_Grenade_shell",
+    "1Rnd_SmokeGreen_Grenade_shell",
+    "1Rnd_SmokeOrange_Grenade_shell",
+    "1Rnd_SmokePurple_Grenade_shell"
+   ],
+   "linkeditems": [
+    "PTNI_PASGT_Headgear_NVG",
+    "PTNI_Vest_Leader",
+    "NVGoggles_OPFOR",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio",
+    "ItemGPS"
+   ],
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "uniformclass": "U_PTNI_Malvinas",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_TL_Malvinas",
+   "ancestry": [
+    "PTNI_Rifleman_TL_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Squad Leader",
+   "uniformclass": "U_PTNI_Malvinas_shortsleeve",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_02.p3d",
+   "weapons": [
+    "ptni_ss2_v2",
+    "PTNI_Pistol_01_F",
+    "Binocular",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag_Tracer_Yellow",
+    "30Rnd_556x45_Stanag_Tracer_Yellow",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "I_IR_Grenade",
+    "I_IR_Grenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "SmokeShellOrange",
+    "SmokeShellPurple",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "linkeditems": [
+    "PTNI_PASGT_Headgear_NVG",
+    "PTNI_Vest_Leader",
+    "NVGoggles_OPFOR",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio",
+    "ItemGPS"
+   ],
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_SL_Malvinas",
+   "ancestry": [
+    "PTNI_Rifleman_SL_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "Officer",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "uniformclass": "U_PTNI_MalvinasO",
+   "weapons": [
+    "Binocular",
+    "Throw",
+    "Put"
+   ],
+   "linkeditems": [
+    "PTNI_Beret_Marbes",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio",
+    "ItemGPS"
+   ],
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_Officer_CO.paa",
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_officer.p3d",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "SmokeShellGreen",
+    "SmokeShellOrange",
+    "SmokeShellPurple",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "icon": "iconManOfficer",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Officer_Malvinas",
+   "ancestry": [
+    "PTNI_Officer_Malvinas",
+    "I_officer_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "Military Policeman",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "uniformclass": "U_PTNI_mp",
+   "weapons": [
+    "Throw",
+    "Put"
+   ],
+   "linkeditems": [
+    "PTNI_m1_mp",
+    "ptni_sling_mp",
+    "ptni_armband_mp",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio",
+    "ItemGPS"
+   ],
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_mp_top_CO.paa",
+    "\\ptni_units\\Data\\ptni_mp_CO.paa"
+   ],
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_officer.p3d",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "SmokeShellGreen",
+    "SmokeShellOrange",
+    "SmokeShellPurple",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "icon": "iconManOfficer",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_mp",
+   "ancestry": [
+    "PTNI_mp",
+    "I_officer_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "1",
+   "scopecurator": "0",
+   "uniformclass": "U_PTNI_ADO",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_AD_Officer_CO.paa",
+    "\\ptni_units\\Data\\ptni_AD_CO.paa"
+   ],
+   "displayname": "$STR_B_officer_F0",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_officer.p3d",
+   "weapons": [
+    "arifle_Mk20C_ACO_F",
+    "hgun_ACPC2_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "SmokeShellGreen",
+    "SmokeShellOrange",
+    "SmokeShellPurple",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "icon": "iconManOfficer",
+   "side": 2,
+   "faction": "IND_F",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Officer_AD",
+   "ancestry": [
+    "PTNI_Officer_AD",
+    "I_officer_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Sniper",
+   "weapons": [
+    "PTNI_DMR_Optic",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "10Rnd_762x51_Mag",
+    "10Rnd_762x51_Mag",
+    "10Rnd_762x51_Mag",
+    "10Rnd_762x51_Mag",
+    "10Rnd_762x51_Mag",
+    "10Rnd_762x51_Mag",
+    "10Rnd_762x51_Mag",
+    "10Rnd_762x51_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "I_IR_Grenade",
+    "I_IR_Grenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "SmokeShellOrange",
+    "SmokeShellPurple",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "linkeditems": [
+    "PTNI_Boonie_Malvinas",
+    "PTNI_Vest_Empty",
+    "NVGoggles_OPFOR",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio",
+    "ItemGPS"
+   ],
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "uniformclass": "U_PTNI_Malvinas",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Sniper",
+   "ancestry": [
+    "PTNI_Sniper",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "Spotter",
+   "linkeditems": [
+    "PTNI_Boonie_Malvinas",
+    "PTNI_Vest_Leader",
+    "NVGoggles_OPFOR",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio",
+    "ItemGPS",
+    "Rangefinder"
+   ],
+   "weapons": [
+    "ptni_spm1_optic",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "uniformclass": "U_PTNI_Malvinas",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Spotter",
+   "ancestry": [
+    "PTNI_Spotter",
+    "PTNI_Rifleman_Marksman_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "1",
+   "scopecurator": "0",
+   "vehicleclass": "PTNI_Men_AD",
+   "uniformclass": "U_PTNI_AD",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_AD_CO.paa"
+   ],
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "Rifleman",
+   "weapons": [
+    "ptni_ss2_v2",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "linkeditems": [
+    "PTNI_PASGT_Headgear",
+    "PTNI_Vest_Rifleman",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_AD",
+   "ancestry": [
+    "PTNI_Rifleman_AD",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "1",
+   "scopecurator": "0",
+   "vehicleclass": "PTNI_Men_UN",
+   "uniformclass": "U_PTNI_Desert",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_desert_CO.paa"
+   ],
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "Rifleman",
+   "weapons": [
+    "ptni_ss2_v2",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "linkeditems": [
+    "PTNI_PASGT_Headgear",
+    "PTNI_Vest_Rifleman",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_UN",
+   "ancestry": [
+    "PTNI_Rifleman_UN",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "faction": "ptni_faction_UN",
+   "vehicleclass": "PTNI_Men_UN",
+   "uniformclass": "U_PTNI_Desert_AD",
+   "linkeditems": [
+    "PTNI_PASGT_Headgear_UN",
+    "PTNI_Vest_Rifleman_Brown",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_desert_AD_CO.paa"
+   ],
+   "side": "1",
+   "displayname": "Rifleman",
+   "weapons": [
+    "ptni_ss2_v2",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_UN_AD",
+   "ancestry": [
+    "PTNI_Rifleman_UN_AD",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "uniformclass": "U_PTNI_Desert_AD",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_02.p3d",
+   "linkeditems": [
+    "PTNI_PASGT_Headgear_UN",
+    "PTNI_Vest_MG_Brown",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "displayname": "Autorifleman",
+   "weapons": [
+    "LMG_03_F",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "200Rnd_556x45_Box_F",
+    "200Rnd_556x45_Box_F",
+    "200Rnd_556x45_Box_F",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "scopecurator": "2",
+   "side": "1",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_MG_UN_AD",
+   "ancestry": [
+    "PTNI_MG_UN_AD",
+    "PTNI_MG_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "uniformclass": "U_PTNI_Desert_AD",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_02.p3d",
+   "linkeditems": [
+    "PTNI_PASGT_Headgear_UN",
+    "PTNI_Vest_Medic_Brown",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "displayname": "Combat Life Saver",
+   "backpack": "PTNI_AssaultPack_malvinas_medic",
+   "scopecurator": "2",
+   "side": "1",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "weapons": [
+    "ptni_ss2_v2",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Medic_UN",
+   "ancestry": [
+    "PTNI_Medic_UN",
+    "PTNI_Medic_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "uniformclass": "U_PTNI_Desert_AD",
+   "linkeditems": [
+    "H_HelmetCrew_I",
+    "V_BandollierB_blk",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "displayname": "Crewman",
+   "weapons": [
+    "ptni_ss2_v5",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "scopecurator": "2",
+   "side": "1",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Crewman_UN",
+   "ancestry": [
+    "PTNI_Crewman_UN",
+    "PTNI_Crewman_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "uniformclass": "U_PTNI_Desert_AD",
+   "linkeditems": [
+    "PTNI_PASGT_Headgear_UN",
+    "PTNI_Vest_Rifleman_Brown",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "displayname": "Grenadier",
+   "weapons": [
+    "ptni_ss2_v2_GL",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "MiniGrenade",
+    "MiniGrenade",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green",
+    "1Rnd_Smoke_Grenade_shell",
+    "1Rnd_Smoke_Grenade_shell",
+    "1Rnd_SmokeGreen_Grenade_shell",
+    "1Rnd_SmokeOrange_Grenade_shell",
+    "1Rnd_SmokePurple_Grenade_shell"
+   ],
+   "scopecurator": "2",
+   "side": "1",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Grenadier_UN",
+   "ancestry": [
+    "PTNI_Grenadier_UN",
+    "PTNI_Grenadier_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "uniformclass": "U_PTNI_Desert_AD",
+   "linkeditems": [
+    "PTNI_PASGT_Headgear_UN",
+    "PTNI_Vest_Rifleman_Brown",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "displayname": "Rifleman (AT)",
+   "weapons": [
+    "ptni_ss2_v2",
+    "launch_NLAW_F",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "NLAW_F",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "backpack": "PTNI_AssaultPack_malvinas_LAT",
+   "scopecurator": "2",
+   "side": "1",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_AT_UN",
+   "ancestry": [
+    "PTNI_Rifleman_AT_UN",
+    "PTNI_Rifleman_AT_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "uniformclass": "U_PTNI_Desert_AD",
+   "linkeditems": [
+    "PTNI_PASGT_Headgear_UN",
+    "PTNI_Vest_Empty_Brown",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "displayname": "Rifleman (Unarmed)",
+   "weapons": [
+    "Throw",
+    "Put"
+   ],
+   "scopecurator": "2",
+   "side": "1",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_Unarmed_UN",
+   "ancestry": [
+    "PTNI_Rifleman_Unarmed_UN",
+    "PTNI_Rifleman_Unarmed_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "uniformclass": "U_PTNI_Desert_AD",
+   "linkeditems": [
+    "PTNI_PASGT_Headgear_UN",
+    "PTNI_Vest_Rifleman_Brown",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "displayname": "Marksman",
+   "weapons": [
+    "ptni_spm1_optic",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "scopecurator": "2",
+   "side": "1",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_Marksman_UN",
+   "ancestry": [
+    "PTNI_Rifleman_Marksman_UN",
+    "PTNI_Rifleman_Marksman_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "uniformclass": "U_PTNI_Desert_AD",
+   "linkeditems": [
+    "PTNI_PASGT_Headgear_UN",
+    "PTNI_Vest_Leader_Brown",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "displayname": "Team Leader",
+   "weapons": [
+    "ptni_ss2_v2_GL",
+    "PTNI_Pistol_01_F",
+    "Binocular",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag_Tracer_Yellow",
+    "30Rnd_556x45_Stanag_Tracer_Yellow",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "MiniGrenade",
+    "MiniGrenade",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "1Rnd_HE_Grenade_shell",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "SmokeShellOrange",
+    "SmokeShellPurple",
+    "Chemlight_green",
+    "Chemlight_green",
+    "1Rnd_Smoke_Grenade_shell",
+    "1Rnd_Smoke_Grenade_shell",
+    "1Rnd_SmokeGreen_Grenade_shell",
+    "1Rnd_SmokeOrange_Grenade_shell",
+    "1Rnd_SmokePurple_Grenade_shell"
+   ],
+   "scopecurator": "2",
+   "side": "1",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_01.p3d",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_TL_UN",
+   "ancestry": [
+    "PTNI_Rifleman_TL_UN",
+    "PTNI_Rifleman_TL_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "uniformclass": "U_PTNI_Desert_AD",
+   "linkeditems": [
+    "PTNI_PASGT_Headgear_UN",
+    "PTNI_Vest_Leader_Brown",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "displayname": "Squad Leader",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_02.p3d",
+   "weapons": [
+    "ptni_ss2_v2",
+    "PTNI_Pistol_01_F",
+    "Binocular",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag_Tracer_Yellow",
+    "30Rnd_556x45_Stanag_Tracer_Yellow",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "I_IR_Grenade",
+    "I_IR_Grenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "SmokeShellOrange",
+    "SmokeShellPurple",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "scopecurator": "2",
+   "side": "1",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "scope": 2,
+   "editorsubcategory": "EdSubcat_Personnel",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_SL_UN",
+   "ancestry": [
+    "PTNI_Rifleman_SL_UN",
+    "PTNI_Rifleman_SL_Malvinas",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction_UN",
+   "displayname": "Officer",
+   "vehicleclass": "PTNI_Men_UN",
+   "uniformclass": "U_PTNI_ADO_UN",
+   "weapons": [
+    "Binocular",
+    "Throw",
+    "Put"
+   ],
+   "linkeditems": [
+    "PTNI_Beret_UN",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio",
+    "ItemGPS"
+   ],
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_desert_AD_Officer_CO.paa",
+    "\\ptni_units\\Data\\ptni_desert_AD_CO.paa"
+   ],
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_officer.p3d",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "SmokeShellGreen",
+    "SmokeShellOrange",
+    "SmokeShellPurple",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "icon": "iconManOfficer",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Officer_AD_UN",
+   "ancestry": [
+    "PTNI_Officer_AD_UN",
+    "I_officer_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "1",
+   "scopecurator": "0",
+   "uniformclass": "U_PTNI_O_UN",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_desert_Officer_CO.paa",
+    "\\ptni_units\\Data\\ptni_desert_CO.paa"
+   ],
+   "displayname": "$STR_B_officer_F0",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_officer.p3d",
+   "weapons": [
+    "arifle_Mk20C_ACO_F",
+    "hgun_ACPC2_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "9Rnd_45ACP_Mag",
+    "SmokeShellGreen",
+    "SmokeShellOrange",
+    "SmokeShellPurple",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "icon": "iconManOfficer",
+   "side": 2,
+   "faction": "IND_F",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "vehicleclass": "Men",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Officer_UN",
+   "ancestry": [
+    "PTNI_Officer_UN",
+    "I_officer_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "1",
+   "scopecurator": "0",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "uniformclass": "U_PTNI_Malvinas_shortsleeve",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_02.p3d",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "Rifleman",
+   "weapons": [
+    "ptni_ss2_v2",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "linkeditems": [
+    "PTNI_PASGT_Headgear",
+    "PTNI_Vest_Rifleman",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "editorsubcategory": "EdSubcat_Personnel",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_Malvinas_Short",
+   "ancestry": [
+    "PTNI_Rifleman_Malvinas_Short",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "0",
+   "displayname": "Rifleman (90s)",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "uniformclass": "U_PTNI_Malvinas_shortsleeve_nogloves",
+   "model": "\\A3\\Characters_F_Enoch\\Uniforms\\I_E_Soldier_01_ShortSleeve_F.p3d",
+   "weapons": [
+    "ptni_ss1_v1",
+    "PTNI_Pistol_02_F",
+    "Throw",
+    "Put"
+   ],
+   "linkeditems": [
+    "PTNI_m1",
+    "V_TacChestrig_grn_f",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_Officer_CO.paa",
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "side": "1",
+   "faction": "ptni_faction",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "editorsubcategory": "EdSubcat_Personnel",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_Malvinas_Short_NoGloves",
+   "ancestry": [
+    "PTNI_Rifleman_Malvinas_Short_NoGloves",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "1",
+   "scopecurator": "0",
+   "vehicleclass": "PTNI_Men_AD",
+   "uniformclass": "U_PTNI_AD_shortsleeve_nogloves",
+   "model": "\\A3\\Characters_F_Enoch\\Uniforms\\I_E_Soldier_01_ShortSleeve_F.p3d",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_AD_Officer_CO.paa",
+    "\\ptni_units\\Data\\ptni_AD_CO.paa"
+   ],
+   "displayname": "Rifleman (90s)",
+   "weapons": [
+    "ptni_ss1_v1",
+    "PTNI_Pistol_02_F",
+    "Throw",
+    "Put"
+   ],
+   "linkeditems": [
+    "PTNI_m1",
+    "V_TacChestrig_grn_f",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "side": "1",
+   "faction": "ptni_faction",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "editorsubcategory": "EdSubcat_Personnel",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_AD_Short_NoGloves",
+   "ancestry": [
+    "PTNI_Rifleman_AD_Short_NoGloves",
+    "PTNI_Rifleman_Malvinas_Short_NoGloves",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "1",
+   "scopecurator": "0",
+   "vehicleclass": "PTNI_Men_UN",
+   "uniformclass": "U_PTNI_UN_AD_shortsleeve_nogloves",
+   "model": "\\A3\\Characters_F_Enoch\\Uniforms\\I_E_Soldier_01_ShortSleeve_F.p3d",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_desert_AD_Officer_CO.paa",
+    "\\ptni_units\\Data\\ptni_desert_AD_CO.paa"
+   ],
+   "displayname": "Rifleman (90s)",
+   "weapons": [
+    "ptni_ss1_v1",
+    "PTNI_Pistol_02_F",
+    "Throw",
+    "Put"
+   ],
+   "linkeditems": [
+    "PTNI_m1",
+    "V_TacChestrig_grn_f",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "side": "1",
+   "faction": "ptni_faction",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "editorsubcategory": "EdSubcat_Personnel",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_UN_AD_Short_NoGloves",
+   "ancestry": [
+    "PTNI_Rifleman_UN_AD_Short_NoGloves",
+    "PTNI_Rifleman_Malvinas_Short_NoGloves",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "1",
+   "scopecurator": "0",
+   "vehicleclass": "PTNI_Men_UN",
+   "uniformclass": "U_PTNI_UN_shortsleeve_nogloves",
+   "model": "\\A3\\Characters_F_Enoch\\Uniforms\\I_E_Soldier_01_ShortSleeve_F.p3d",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_desert_officer_CO.paa",
+    "\\ptni_units\\Data\\ptni_desert_CO.paa"
+   ],
+   "displayname": "Rifleman (90s)",
+   "weapons": [
+    "ptni_ss1_v1",
+    "PTNI_Pistol_02_F",
+    "Throw",
+    "Put"
+   ],
+   "linkeditems": [
+    "PTNI_m1",
+    "V_TacChestrig_grn_f",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "side": "1",
+   "faction": "ptni_faction",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "editorsubcategory": "EdSubcat_Personnel",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_UN_Short_NoGloves",
+   "ancestry": [
+    "PTNI_Rifleman_UN_Short_NoGloves",
+    "PTNI_Rifleman_Malvinas_Short_NoGloves",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "0",
+   "displayname": "Rifleman (70s)",
+   "vehicleclass": "PTNI_Men_Malvinas",
+   "uniformclass": "U_PTNI_Malvinas_shortsleeve_nogloves",
+   "model": "\\A3\\Characters_F_Enoch\\Uniforms\\I_E_Soldier_01_ShortSleeve_F.p3d",
+   "weapons": [
+    "ptni_sp1",
+    "PTNI_Pistol_02_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "20Rnd_762x51_Mag",
+    "20Rnd_762x51_Mag",
+    "20Rnd_762x51_Mag",
+    "20Rnd_762x51_Mag",
+    "20Rnd_762x51_Mag",
+    "20Rnd_762x51_Mag",
+    "20Rnd_762x51_Mag",
+    "20Rnd_762x51_Mag",
+    "20Rnd_762x51_Mag",
+    "20Rnd_762x51_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "linkeditems": [
+    "PTNI_m1",
+    "V_TacChestrig_grn_f",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_malvinas_Officer_CO.paa",
+    "\\ptni_units\\Data\\ptni_malvinas_CO.paa"
+   ],
+   "side": "1",
+   "faction": "ptni_faction",
+   "editorsubcategory": "EdSubcat_Personnel",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_Malvinas_Short_NoGloves_SP1",
+   "ancestry": [
+    "PTNI_Rifleman_Malvinas_Short_NoGloves_SP1",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "1",
+   "scopecurator": "0",
+   "vehicleclass": "PTNI_Men_AD",
+   "uniformclass": "U_PTNI_AD_shortsleeve",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_02.p3d",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_AD_CO.paa"
+   ],
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "Rifleman",
+   "weapons": [
+    "ptni_ss2_v2",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "linkeditems": [
+    "PTNI_PASGT_Headgear",
+    "PTNI_Vest_Rifleman",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "editorsubcategory": "EdSubcat_Personnel",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_AD_Short",
+   "ancestry": [
+    "PTNI_Rifleman_AD_Short",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "1",
+   "scopecurator": "0",
+   "vehicleclass": "PTNI_Men_UN",
+   "uniformclass": "U_PTNI_Desert_AD_shortsleeve",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_02.p3d",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_desert_AD_CO.paa"
+   ],
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "Rifleman",
+   "weapons": [
+    "ptni_ss2_v2",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "linkeditems": [
+    "PTNI_PASGT_Headgear",
+    "PTNI_Vest_Rifleman",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "editorsubcategory": "EdSubcat_Personnel",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_UN_AD_Short",
+   "ancestry": [
+    "PTNI_Rifleman_UN_AD_Short",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "1",
+   "scopecurator": "0",
+   "vehicleclass": "PTNI_Men_UN",
+   "uniformclass": "U_PTNI_Desert_shortsleeve",
+   "model": "\\A3\\Characters_F_Beta\\INDEP\\ia_soldier_02.p3d",
+   "hiddenselectionstextures": [
+    "\\ptni_units\\Data\\ptni_desert_CO.paa"
+   ],
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "Rifleman",
+   "weapons": [
+    "ptni_ss2_v2",
+    "PTNI_Pistol_01_F",
+    "Throw",
+    "Put"
+   ],
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_Mag",
+    "HandGrenade",
+    "HandGrenade",
+    "SmokeShell",
+    "SmokeShellGreen",
+    "Chemlight_green",
+    "Chemlight_green"
+   ],
+   "linkeditems": [
+    "PTNI_PASGT_Headgear",
+    "PTNI_Vest_Rifleman",
+    "ItemMap",
+    "ItemCompass",
+    "ItemWatch",
+    "ItemRadio"
+   ],
+   "editorsubcategory": "EdSubcat_Personnel",
+   "icon": "iconMan",
+   "simulation": "soldier",
+   "crew": "Civilian",
+   "class": "PTNI_Rifleman_UN_Short",
+   "ancestry": [
+    "PTNI_Rifleman_UN_Short",
+    "PTNI_Rifleman_Malvinas",
+    "I_soldier_F",
+    "I_Soldier_base_F",
+    "SoldierGB",
+    "CAManBase",
+    "Man",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_units",
+   "is_man": true,
+   "unresolved_parent": null
+  },
+  {
+   "displayname": "APS-2 Anoa",
+   "editorsubcategory": "EdSubcat_APCs",
+   "model": "\\ptni_apc\\ptni_apc_unarmed",
+   "simulation": "carx",
+   "hiddenselectionstextures": [
+    "\\ptni_apc\\Data\\ptni_apc_body_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_ext_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_ext2_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_gun_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_CO.paa"
+   ],
+   "transportsoldier": "10",
+   "icon": "\\A3\\armor_f_gamma\\APC_Wheeled_03\\Data\\UI\\map_APC_Wheeled_03_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "scope": 0,
+   "side": 4,
+   "faction": "Default",
+   "vehicleclass": "",
+   "crew": "Civilian",
+   "class": "ptni_apc_01_base_F",
+   "ancestry": [
+    "ptni_apc_01_base_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_apc",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "crew": "PTNI_Crewman_Malvinas",
+   "weapons": [
+    "TruckHorn",
+    "SmokeLauncher"
+   ],
+   "magazines": [
+    "SmokeLauncherMag"
+   ],
+   "transportsoldier": "11",
+   "displayname": "APS-2 Anoa",
+   "editorsubcategory": "EdSubcat_APCs",
+   "model": "\\ptni_apc\\ptni_apc_unarmed",
+   "simulation": "carx",
+   "hiddenselectionstextures": [
+    "\\ptni_apc\\Data\\ptni_apc_body_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_ext_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_ext2_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_gun_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_CO.paa"
+   ],
+   "icon": "\\A3\\armor_f_gamma\\APC_Wheeled_03\\Data\\UI\\map_APC_Wheeled_03_CA.paa",
+   "cost": "50000",
+   "vehicleclass": "",
+   "class": "b_ptni_apc_01_F",
+   "ancestry": [
+    "b_ptni_apc_01_F",
+    "ptni_apc_01_base_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_apc",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "faction": "ptni_faction",
+   "displayname": "APS-2 Anoa (RCWS)",
+   "model": "\\ptni_apc\\ptni_apc",
+   "crew": "PTNI_Crewman_Malvinas",
+   "editorsubcategory": "EdSubcat_APCs",
+   "simulation": "carx",
+   "hiddenselectionstextures": [
+    "\\ptni_apc\\Data\\ptni_apc_body_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_ext_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_ext2_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_gun_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_CO.paa"
+   ],
+   "transportsoldier": "10",
+   "icon": "\\A3\\armor_f_gamma\\APC_Wheeled_03\\Data\\UI\\map_APC_Wheeled_03_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "b_ptni_apc_01_gun_F",
+   "ancestry": [
+    "b_ptni_apc_01_gun_F",
+    "ptni_apc_01_base_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_apc",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "crew": "PTNI_Crewman_UN",
+   "hiddenselectionstextures": [
+    "\\ptni_apc\\Data\\ptni_apc_body_UN_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_ext_UN_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_ext2_UN_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_gun_UN_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_UN_CO.paa"
+   ],
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "weapons": [
+    "TruckHorn",
+    "SmokeLauncher"
+   ],
+   "magazines": [
+    "SmokeLauncherMag"
+   ],
+   "transportsoldier": "11",
+   "displayname": "APS-2 Anoa",
+   "editorsubcategory": "EdSubcat_APCs",
+   "model": "\\ptni_apc\\ptni_apc_unarmed",
+   "simulation": "carx",
+   "icon": "\\A3\\armor_f_gamma\\APC_Wheeled_03\\Data\\UI\\map_APC_Wheeled_03_CA.paa",
+   "cost": "50000",
+   "vehicleclass": "",
+   "class": "b_ptni_apc_01_UN_F",
+   "ancestry": [
+    "b_ptni_apc_01_UN_F",
+    "b_ptni_apc_01_F",
+    "ptni_apc_01_base_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_apc",
+   "is_man": false,
+   "unresolved_parent": null
+  },
+  {
+   "faction": "ptni_faction_UN",
+   "crew": "PTNI_Crewman_UN",
+   "hiddenselectionstextures": [
+    "\\ptni_apc\\Data\\ptni_apc_body_UN_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_ext_UN_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_ext2_UN_CO.paa",
+    "\\ptni_apc\\Data\\ptni_apc_gun_UN_CO.paa",
+    "ptni_truck\\Data\\ptni_wheel_UN_CO.paa"
+   ],
+   "scope": "2",
+   "scopecurator": "2",
+   "side": "1",
+   "displayname": "APS-2 Anoa (RCWS)",
+   "model": "\\ptni_apc\\ptni_apc",
+   "editorsubcategory": "EdSubcat_APCs",
+   "simulation": "carx",
+   "transportsoldier": "10",
+   "icon": "\\A3\\armor_f_gamma\\APC_Wheeled_03\\Data\\UI\\map_APC_Wheeled_03_CA.paa",
+   "cost": "50000",
+   "weapons": [
+    "FakeWeapon"
+   ],
+   "magazines": [
+    "FakeWeapon"
+   ],
+   "vehicleclass": "",
+   "class": "b_ptni_apc_01_gun_UN_F",
+   "ancestry": [
+    "b_ptni_apc_01_gun_UN_F",
+    "b_ptni_apc_01_gun_F",
+    "ptni_apc_01_base_F",
+    "Car_F",
+    "Car",
+    "LandVehicle",
+    "Land",
+    "AllVehicles",
+    "All"
+   ],
+   "pbo": "ptni_apc",
+   "is_man": false,
+   "unresolved_parent": null
+  }
+ ],
+ "weapons": {
+  "ptni_cannon_90mm": {
+   "displayname": "Cannon 90 mm",
+   "magazines": [
+    "ptni_40rnd_90mm_APFSDS_T_Red",
+    "ptni_20rnd_90mm_HEAT_MP_T_Red"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "cannon_105mm",
+   "own": [
+    "author",
+    "displayname",
+    "magazines"
+   ],
+   "linked": false
+  },
+  "ptni_m2": {
+   "displayname": "$STR_A3_HMG_M20",
+   "magazines": [
+    "100Rnd_127x99_mag",
+    "100Rnd_127x99_mag_Tracer_Red",
+    "100Rnd_127x99_mag_Tracer_Green",
+    "100Rnd_127x99_mag_Tracer_Yellow"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "HMG_M2",
+   "own": [],
+   "linked": false
+  },
+  "HeadgearItem": {
+   "type": "605",
+   "scope": 0,
+   "muzzles": [],
+   "parent": "InventoryItem_Base_F",
+   "own": [
+    "allowedslots",
+    "hiddenselections",
+    "hitpointname",
+    "type"
+   ],
+   "linked": false
+  },
+  "PTNI_PASGT_Headgear": {
+   "scope": "2",
+   "displayname": "PASGT",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "ItemCore",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionsmaterials",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "PTNI_PASGT_Headgear_Black": {
+   "scope": "2",
+   "displayname": "PASGT (Black)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "ItemCore",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionsmaterials",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "PTNI_PASGT_Headgear_NVG": {
+   "scope": "2",
+   "displayname": "PASGT (NVG Mount)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "ItemCore",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "PTNI_PASGT_Headgear_AD": {
+   "scope": "2",
+   "displayname": "PASGT (AD)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "ItemCore",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "PTNI_PASGT_Headgear_Malvinas": {
+   "scope": "2",
+   "displayname": "PASGT (Malvinas)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "ItemCore",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "PTNI_PASGT_Headgear_AD_NVG": {
+   "scope": "2",
+   "displayname": "PASGT (AD + NVG Mount)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "ItemCore",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "PTNI_PASGT_Headgear_Malvinas_NVG": {
+   "scope": "2",
+   "displayname": "PASGT (Malvinas + NVG Mount)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "ItemCore",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "PTNI_PASGT_Headgear_Scrim": {
+   "scope": "2",
+   "displayname": "PASGT (Scrim)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "ItemCore",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "PTNI_PASGT_Headgear_Malvinas_Scrim": {
+   "scope": "2",
+   "displayname": "PASGT (Malvinas + Scrim)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "ItemCore",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "PTNI_PASGT_Headgear_AD_Scrim": {
+   "scope": "2",
+   "displayname": "PASGT (AD + Scrim)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "ItemCore",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "PTNI_PASGT_Headgear_Net_Scrim": {
+   "scope": "2",
+   "displayname": "PASGT (Net Scrim)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "ItemCore",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "PTNI_PASGT_Headgear_UN": {
+   "scope": "2",
+   "displayname": "PASGT (UN)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "ItemCore",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionsmaterials",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "PTNI_m1_mp": {
+   "scope": "2",
+   "displayname": "M1 (MP)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "ItemCore",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "PTNI_m1": {
+   "scope": "2",
+   "displayname": "M1",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "ItemCore",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "PTNI_Boonie_AD": {
+   "displayname": "Booniehat (AD)",
+   "scope": 2,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "H_Booniehat_khk",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Boonie_Malvinas": {
+   "displayname": "Booniehat (Malvinas)",
+   "scope": 2,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "H_Booniehat_khk",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Beret_test": {
+   "displayname": "Beret (gurkha)",
+   "scope": 2,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "H_Beret_02",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Beret_Marbes": {
+   "displayname": "Beret (Army Headquarters)",
+   "scope": 2,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "H_Beret_02",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Beret_Kostrad": {
+   "displayname": "Beret (Kostrad)",
+   "scope": 2,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "H_Beret_02",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Beret_Infantry": {
+   "displayname": "Beret (Infantry)",
+   "scope": 2,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "H_Beret_02",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Beret_Kopassus": {
+   "displayname": "Beret (Kopassus)",
+   "scope": 2,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "H_Beret_02",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Beret_UN": {
+   "displayname": "Beret (UN)",
+   "scope": 2,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "H_Beret_02",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Vanillahelm": {
+   "displayname": "Basic Helmet",
+   "scope": 2,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "H_PASGT_basic_blue_press_F",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Modular_Helmet_AD": {
+   "displayname": "Modular Helmet (AD)",
+   "scope": 2,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "H_HelmetIA",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Modular_Helmet_Malvinas": {
+   "displayname": "Modular Helmet (Malvinas)",
+   "scope": 2,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "H_HelmetIA",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture"
+   ],
+   "linked": false
+  },
+  "VestItem": {
+   "type": "701",
+   "scope": 0,
+   "muzzles": [],
+   "parent": "InventoryItem_Base_F",
+   "own": [
+    "armor",
+    "hiddenselections",
+    "hitpointname",
+    "passthrough",
+    "type"
+   ],
+   "linked": false
+  },
+  "Vest_Camo_Base": {
+   "scope": "0",
+   "type": 131072,
+   "displayname": "",
+   "magazines": [],
+   "muzzles": [],
+   "parent": "ItemCore",
+   "own": [
+    "allowedslots",
+    "author",
+    "hiddenselections",
+    "scope"
+   ],
+   "linked": false
+  },
+  "PTNI_Vest_Empty": {
+   "scope": "2",
+   "displayname": "S.A.K.T.I. RBS",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Vest_Camo_Base",
+   "own": [
+    "author",
+    "descriptionshort",
+    "displayname",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "PTNI_Vest_Rifleman": {
+   "displayname": "S.A.K.T.I. RBS (Rifleman)",
+   "scope": "2",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "PTNI_Vest_Empty",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Vest_Medic": {
+   "displayname": "S.A.K.T.I. RBS (Medic)",
+   "scope": "2",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "PTNI_Vest_Rifleman",
+   "own": [
+    "author",
+    "displayname",
+    "model",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Vest_MG": {
+   "displayname": "S.A.K.T.I. RBS (MG)",
+   "scope": "2",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "PTNI_Vest_Rifleman",
+   "own": [
+    "author",
+    "displayname",
+    "model",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Vest_Leader": {
+   "displayname": "S.A.K.T.I. RBS (Leader)",
+   "scope": "2",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "PTNI_Vest_Rifleman",
+   "own": [
+    "author",
+    "displayname",
+    "model",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Vest_Empty_Black": {
+   "displayname": "S.A.K.T.I. RBS Black",
+   "scope": "2",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "PTNI_Vest_Empty",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "model",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Vest_Rifleman_Black": {
+   "displayname": "S.A.K.T.I. RBS Black (Rifleman)",
+   "scope": "2",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "PTNI_Vest_Empty",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Vest_Medic_Black": {
+   "displayname": "S.A.K.T.I. RBS Black (Medic)",
+   "scope": "2",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "PTNI_Vest_Empty",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Vest_MG_Black": {
+   "displayname": "S.A.K.T.I. RBS Black (MG)",
+   "scope": "2",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "PTNI_Vest_Empty",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Vest_Leader_Black": {
+   "displayname": "S.A.K.T.I. RBS Black (Leader)",
+   "scope": "2",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "PTNI_Vest_Empty",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Vest_Empty_Brown": {
+   "displayname": "S.A.K.T.I. RBS Desert",
+   "scope": "2",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "PTNI_Vest_Empty",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Vest_Rifleman_Brown": {
+   "displayname": "S.A.K.T.I. RBS Desert (Rifleman)",
+   "scope": "2",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "PTNI_Vest_Empty",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Vest_Medic_Brown": {
+   "displayname": "S.A.K.T.I. RBS Desert (Medic)",
+   "scope": "2",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "PTNI_Vest_Empty",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Vest_MG_Brown": {
+   "displayname": "S.A.K.T.I. RBS Desert (MG)",
+   "scope": "2",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "PTNI_Vest_Empty",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_Vest_Leader_Brown": {
+   "displayname": "S.A.K.T.I. RBS Desert (Leader)",
+   "scope": "2",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "PTNI_Vest_Empty",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture"
+   ],
+   "linked": false
+  },
+  "PTNI_sling_mp": {
+   "scope": "2",
+   "displayname": "Sling (MP)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Vest_Camo_Base",
+   "own": [
+    "author",
+    "displayname",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "PTNI_GACarrierLite_Base": {
+   "scope": "0",
+   "displayname": "-",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Vest_Camo_Base",
+   "own": [
+    "author",
+    "descriptionshort",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope",
+    "weaponpoolavailable"
+   ],
+   "linked": false
+  },
+  "PTNI_GACarrier1_AD": {
+   "scope": "2",
+   "displayname": "GA Carrier Lite (AD)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "PTNI_GACarrierLite_Base",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope",
+    "weaponpoolavailable"
+   ],
+   "linked": false
+  },
+  "PTNI_GACarrier1_Malvinas": {
+   "scope": "2",
+   "displayname": "GA Carrier Lite (Malvinas)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "PTNI_GACarrierLite_Base",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope",
+    "weaponpoolavailable"
+   ],
+   "linked": false
+  },
+  "ptni_mrap_mg": {
+   "displayname": "FN MAG 7.62 mm",
+   "magazines": [
+    "200Rnd_762x51_Belt",
+    "1000Rnd_762x51_Belt",
+    "2000Rnd_762x51_Belt",
+    "200Rnd_762x51_Belt_Red",
+    "200Rnd_762x51_Belt_Green",
+    "200Rnd_762x51_Belt_Yellow",
+    "1000Rnd_762x51_Belt_Red",
+    "1000Rnd_762x51_Belt_Green",
+    "1000Rnd_762x51_Belt_Yellow",
+    "2000Rnd_762x51_Belt_Red",
+    "2000Rnd_762x51_Belt_Green",
+    "2000Rnd_762x51_Belt_Yellow",
+    "200Rnd_762x51_Belt_T_Red",
+    "200Rnd_762x51_Belt_T_Green",
+    "200Rnd_762x51_Belt_T_Yellow",
+    "1000Rnd_762x51_Belt_T_Red",
+    "1000Rnd_762x51_Belt_T_Green",
+    "1000Rnd_762x51_Belt_T_Yellow",
+    "2000Rnd_762x51_Belt_T_Red",
+    "2000Rnd_762x51_Belt_T_Green",
+    "2000Rnd_762x51_Belt_T_Yellow"
+   ],
+   "scope": 1,
+   "type": 65536,
+   "muzzles": [],
+   "parent": "LMG_coax",
+   "own": [
+    "displayname",
+    "magazinereloadtime"
+   ],
+   "linked": false
+  },
+  "Rifle_Base_F": {
+   "scope": 1,
+   "displayname": "$STR_DN_RIFLE",
+   "type": 1,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Rifle",
+   "own": [],
+   "linked": false
+  },
+  "ptni_ss2_v2_Base": {
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag_green",
+    "30Rnd_556x45_Stanag_red",
+    "30Rnd_556x45_Stanag_Tracer_Red",
+    "30Rnd_556x45_Stanag_Tracer_Green",
+    "30Rnd_556x45_Stanag_Tracer_Yellow"
+   ],
+   "magazinewell": [
+    "STANAG_556x45",
+    "STANAG_556x45_Large",
+    "CBA_556x45_STANAG",
+    "CBA_556x45_STANAG_L",
+    "CBA_556x45_STANAG_XL",
+    "CBA_556x45_STANAG_2D",
+    "CBA_556x45_STANAG_2D_XL"
+   ],
+   "scope": 1,
+   "displayname": "$STR_DN_RIFLE",
+   "type": 1,
+   "muzzle_parent": "asdg_MuzzleSlot_556",
+   "muzzles": [],
+   "parent": "Rifle_Base_F",
+   "own": [
+    "aidispersioncoefx",
+    "aidispersioncoefy",
+    "author",
+    "caseless",
+    "descriptionshort",
+    "dexterity",
+    "discretedistanceinitindex",
+    "distancezoommax",
+    "distancezoommin",
+    "drysound",
+    "handanim",
+    "inertia",
+    "initspeed",
+    "magazinereloadswitchphase",
+    "magazines",
+    "magazinewell",
+    "maxrecoilsway",
+    "modes",
+    "opticszoominit",
+    "opticszoommax",
+    "opticszoommin",
+    "recoil",
+    "reloadaction",
+    "reloadmagazinesound",
+    "selectionfireanim",
+    "soundbullet",
+    "swaydecayspeed"
+   ],
+   "linked": false
+  },
+  "ptni_ss2_v2": {
+   "scope": "2",
+   "displayname": "SS2-V2 5.56 mm",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag_green",
+    "30Rnd_556x45_Stanag_red",
+    "30Rnd_556x45_Stanag_Tracer_Red",
+    "30Rnd_556x45_Stanag_Tracer_Green",
+    "30Rnd_556x45_Stanag_Tracer_Yellow"
+   ],
+   "magazinewell": [
+    "STANAG_556x45",
+    "STANAG_556x45_Large",
+    "CBA_556x45_STANAG",
+    "CBA_556x45_STANAG_L",
+    "CBA_556x45_STANAG_XL",
+    "CBA_556x45_STANAG_2D",
+    "CBA_556x45_STANAG_2D_XL"
+   ],
+   "type": 1,
+   "muzzle_parent": "asdg_MuzzleSlot_556",
+   "muzzles": [],
+   "parent": "ptni_ss2_v2_Base",
+   "own": [
+    "author",
+    "displayname",
+    "model",
+    "picture",
+    "scope",
+    "uipicture",
+    "weaponinfotype"
+   ],
+   "linked": false
+  },
+  "ptni_ss2_v2_GL": {
+   "scope": "2",
+   "displayname": "SS2-V2 GL 5.56 mm",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag_green",
+    "30Rnd_556x45_Stanag_red",
+    "30Rnd_556x45_Stanag_Tracer_Red",
+    "30Rnd_556x45_Stanag_Tracer_Green",
+    "30Rnd_556x45_Stanag_Tracer_Yellow"
+   ],
+   "magazinewell": [
+    "STANAG_556x45",
+    "STANAG_556x45_Large",
+    "CBA_556x45_STANAG",
+    "CBA_556x45_STANAG_L",
+    "CBA_556x45_STANAG_XL",
+    "CBA_556x45_STANAG_2D",
+    "CBA_556x45_STANAG_2D_XL"
+   ],
+   "type": 1,
+   "muzzle_parent": "asdg_MuzzleSlot_556",
+   "muzzles": [],
+   "parent": "ptni_ss2_v2_Base",
+   "own": [
+    "author",
+    "displayname",
+    "handanim",
+    "model",
+    "muzzles",
+    "picture",
+    "scope",
+    "uipicture",
+    "weaponinfotype"
+   ],
+   "linked": false
+  },
+  "ptni_ss2_v4": {
+   "scope": "2",
+   "displayname": "SS2-V4 5.56 mm",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag_green",
+    "30Rnd_556x45_Stanag_red",
+    "30Rnd_556x45_Stanag_Tracer_Red",
+    "30Rnd_556x45_Stanag_Tracer_Green",
+    "30Rnd_556x45_Stanag_Tracer_Yellow"
+   ],
+   "magazinewell": [
+    "STANAG_556x45",
+    "STANAG_556x45_Large",
+    "CBA_556x45_STANAG",
+    "CBA_556x45_STANAG_L",
+    "CBA_556x45_STANAG_XL",
+    "CBA_556x45_STANAG_2D",
+    "CBA_556x45_STANAG_2D_XL"
+   ],
+   "type": 1,
+   "muzzle_parent": "asdg_MuzzleSlot_556",
+   "muzzles": [],
+   "parent": "ptni_ss2_v2",
+   "own": [
+    "author",
+    "displayname",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "ptni_ss2_v4_GL": {
+   "displayname": "SS2-V4 GL 5.56 mm",
+   "scope": "2",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag_green",
+    "30Rnd_556x45_Stanag_red",
+    "30Rnd_556x45_Stanag_Tracer_Red",
+    "30Rnd_556x45_Stanag_Tracer_Green",
+    "30Rnd_556x45_Stanag_Tracer_Yellow"
+   ],
+   "magazinewell": [
+    "STANAG_556x45",
+    "STANAG_556x45_Large",
+    "CBA_556x45_STANAG",
+    "CBA_556x45_STANAG_L",
+    "CBA_556x45_STANAG_XL",
+    "CBA_556x45_STANAG_2D",
+    "CBA_556x45_STANAG_2D_XL"
+   ],
+   "type": 1,
+   "muzzle_parent": "asdg_MuzzleSlot_556",
+   "muzzles": [],
+   "parent": "ptni_ss2_v2_GL",
+   "own": [
+    "author",
+    "displayname",
+    "model",
+    "picture"
+   ],
+   "linked": false
+  },
+  "ptni_ss2_v5": {
+   "scope": "2",
+   "displayname": "SS2-V5 5.56 mm",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag_green",
+    "30Rnd_556x45_Stanag_red",
+    "30Rnd_556x45_Stanag_Tracer_Red",
+    "30Rnd_556x45_Stanag_Tracer_Green",
+    "30Rnd_556x45_Stanag_Tracer_Yellow"
+   ],
+   "magazinewell": [
+    "STANAG_556x45",
+    "STANAG_556x45_Large",
+    "CBA_556x45_STANAG",
+    "CBA_556x45_STANAG_L",
+    "CBA_556x45_STANAG_XL",
+    "CBA_556x45_STANAG_2D",
+    "CBA_556x45_STANAG_2D_XL"
+   ],
+   "type": 1,
+   "muzzle_parent": "asdg_MuzzleSlot_556",
+   "muzzles": [],
+   "parent": "ptni_ss2_v2",
+   "own": [
+    "author",
+    "displayname",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false
+  },
+  "ptni_spm1": {
+   "scope": "2",
+   "displayname": "SPM-1 5.56 mm",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag_green",
+    "30Rnd_556x45_Stanag_red",
+    "30Rnd_556x45_Stanag_Tracer_Red",
+    "30Rnd_556x45_Stanag_Tracer_Green",
+    "30Rnd_556x45_Stanag_Tracer_Yellow"
+   ],
+   "magazinewell": [
+    "STANAG_556x45",
+    "STANAG_556x45_Large",
+    "CBA_556x45_STANAG",
+    "CBA_556x45_STANAG_L",
+    "CBA_556x45_STANAG_XL",
+    "CBA_556x45_STANAG_2D",
+    "CBA_556x45_STANAG_2D_XL"
+   ],
+   "type": 1,
+   "muzzle_parent": "asdg_MuzzleSlot_556",
+   "muzzles": [],
+   "parent": "ptni_ss2_v2_Base",
+   "own": [
+    "author",
+    "descriptionshort",
+    "displayname",
+    "handanim",
+    "initspeed",
+    "maxzeroing",
+    "model",
+    "picture",
+    "scope",
+    "uipicture",
+    "weaponinfotype"
+   ],
+   "linked": false
+  },
+  "ptni_spm1_optic": {
+   "scope": "2",
+   "displayname": "SPM-1 5.56 mm",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag_green",
+    "30Rnd_556x45_Stanag_red",
+    "30Rnd_556x45_Stanag_Tracer_Red",
+    "30Rnd_556x45_Stanag_Tracer_Green",
+    "30Rnd_556x45_Stanag_Tracer_Yellow"
+   ],
+   "magazinewell": [
+    "STANAG_556x45",
+    "STANAG_556x45_Large",
+    "CBA_556x45_STANAG",
+    "CBA_556x45_STANAG_L",
+    "CBA_556x45_STANAG_XL",
+    "CBA_556x45_STANAG_2D",
+    "CBA_556x45_STANAG_2D_XL"
+   ],
+   "type": 1,
+   "muzzle_parent": "asdg_MuzzleSlot_556",
+   "muzzles": [],
+   "parent": "ptni_spm1",
+   "own": [],
+   "linked": true
+  },
+  "ptni_ss1_v1": {
+   "scope": "2",
+   "displayname": "SS1-V1 5.56 mm",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag_green",
+    "30Rnd_556x45_Stanag_red",
+    "30Rnd_556x45_Stanag_Tracer_Red",
+    "30Rnd_556x45_Stanag_Tracer_Green",
+    "30Rnd_556x45_Stanag_Tracer_Yellow"
+   ],
+   "magazinewell": [
+    "STANAG_556x45",
+    "STANAG_556x45_Large",
+    "CBA_556x45_STANAG",
+    "CBA_556x45_STANAG_L",
+    "CBA_556x45_STANAG_XL",
+    "CBA_556x45_STANAG_2D",
+    "CBA_556x45_STANAG_2D_XL"
+   ],
+   "type": 1,
+   "muzzle_parent": "MuzzleSlot",
+   "muzzles": [
+    "muzzle_snds_M"
+   ],
+   "parent": "ptni_ss2_v2_Base",
+   "own": [
+    "author",
+    "displayname",
+    "model",
+    "picture",
+    "reloadaction",
+    "reloadmagazinesound",
+    "scope",
+    "weaponinfotype"
+   ],
+   "linked": false
+  },
+  "ptni_ss1_v1_GL": {
+   "displayname": "SS1-V1 GL 5.56 mm",
+   "scope": "2",
+   "magazines": [
+    "30Rnd_556x45_Stanag",
+    "30Rnd_556x45_Stanag_green",
+    "30Rnd_556x45_Stanag_red",
+    "30Rnd_556x45_Stanag_Tracer_Red",
+    "30Rnd_556x45_Stanag_Tracer_Green",
+    "30Rnd_556x45_Stanag_Tracer_Yellow"
+   ],
+   "magazinewell": [
+    "STANAG_556x45",
+    "STANAG_556x45_Large",
+    "CBA_556x45_STANAG",
+    "CBA_556x45_STANAG_L",
+    "CBA_556x45_STANAG_XL",
+    "CBA_556x45_STANAG_2D",
+    "CBA_556x45_STANAG_2D_XL"
+   ],
+   "type": 1,
+   "muzzle_parent": "MuzzleSlot",
+   "muzzles": [
+    "muzzle_snds_M"
+   ],
+   "parent": "ptni_ss2_v2_GL",
+   "own": [
+    "author",
+    "displayname",
+    "model",
+    "picture",
+    "reloadaction",
+    "reloadmagazinesound"
+   ],
+   "linked": false
+  },
+  "ptni_sp1_base": {
+   "magazines": [
+    "20Rnd_762x51_Mag"
+   ],
+   "magazinewell": [
+    "M14_762x51"
+   ],
+   "scope": 1,
+   "displayname": "$STR_DN_RIFLE",
+   "type": 1,
+   "muzzle_parent": "asdg_MuzzleSlot_556",
+   "muzzles": [],
+   "parent": "Rifle_Base_F",
+   "own": [
+    "aidispersioncoefx",
+    "aidispersioncoefy",
+    "author",
+    "caseless",
+    "descriptionshort",
+    "dexterity",
+    "discretedistanceinitindex",
+    "distancezoommax",
+    "distancezoommin",
+    "drysound",
+    "handanim",
+    "inertia",
+    "initspeed",
+    "magazinereloadswitchphase",
+    "magazines",
+    "magazinewell",
+    "maxrecoilsway",
+    "maxzeroing",
+    "modes",
+    "opticszoominit",
+    "opticszoommax",
+    "opticszoommin",
+    "recoil",
+    "reloadaction",
+    "reloadmagazinesound",
+    "selectionfireanim",
+    "soundbullet",
+    "swaydecayspeed"
+   ],
+   "linked": false
+  },
+  "ptni_sp1": {
+   "scope": "2",
+   "displayname": "SP-1 7.62 mm",
+   "magazines": [
+    "20Rnd_762x51_Mag"
+   ],
+   "magazinewell": [
+    "M14_762x51"
+   ],
+   "type": 1,
+   "muzzle_parent": "asdg_MuzzleSlot_556",
+   "muzzles": [],
+   "parent": "ptni_sp1_base",
+   "own": [
+    "author",
+    "displayname",
+    "model",
+    "picture",
+    "scope",
+    "uipicture",
+    "weaponinfotype"
+   ],
+   "linked": false
+  },
+  "U_I_E_Uniform_01_tanktop_F": {
+   "scope": 0,
+   "type": 131072,
+   "displayname": "",
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Uniform_Base",
+   "own": [],
+   "linked": false
+  },
+  "U_PTNI_Malvinas_tanktop": {
+   "displayname": "Combat Fatigues (DPM) (Tank top)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_E_Uniform_01_tanktop_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_Malvinas_tanktop_unit"
+  },
+  "U_PTNI_AD_tanktop": {
+   "displayname": "Combat Fatigues (AD) (Tank top)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_E_Uniform_01_tanktop_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_AD_tanktop_unit"
+  },
+  "U_PTNI_UN_AD_tanktop": {
+   "displayname": "Combat Fatigues (AD Desert) (Tank top)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_E_Uniform_01_tanktop_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_UN_AD_tanktop_unit"
+  },
+  "U_PTNI_UN_tanktop": {
+   "displayname": "Combat Fatigues (DPM Desert) (Tank top)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_E_Uniform_01_tanktop_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_UN_tanktop_unit"
+  },
+  "U_I_C_Soldier_Para_4_F": {
+   "scope": 0,
+   "type": 131072,
+   "displayname": "",
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Uniform_Base",
+   "own": [],
+   "linked": false
+  },
+  "U_PTNI_Malvinas_tanktop2": {
+   "displayname": "Combat Fatigues (DPM) (Tank top/Alt)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_C_Soldier_Para_4_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_Malvinas_tanktop2_unit"
+  },
+  "U_PTNI_AD_tanktop2": {
+   "displayname": "Combat Fatigues (AD) (Tank top/Alt)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_C_Soldier_Para_4_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_AD_tanktop2_unit"
+  },
+  "U_PTNI_UN_AD_tanktop2": {
+   "displayname": "Combat Fatigues (AD Desert) (Tank top/Alt)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_C_Soldier_Para_4_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_UN_AD_tanktop2_unit"
+  },
+  "U_PTNI_UN_tanktop2": {
+   "displayname": "Combat Fatigues (DPM Desert) (Tank top/Alt)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_C_Soldier_Para_4_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_UN_tanktop2_unit"
+  },
+  "U_I_E_Uniform_01_F": {
+   "scope": 0,
+   "type": 131072,
+   "displayname": "",
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Uniform_Base",
+   "own": [],
+   "linked": false
+  },
+  "U_PTNI_Malvinas_alt": {
+   "displayname": "Combat Fatigues (DPM) (Alt)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_E_Uniform_01_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_Malvinas_alt_unit"
+  },
+  "U_PTNI_AD_alt": {
+   "displayname": "Combat Fatigues (AD) (Alt)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_E_Uniform_01_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_AD_alt_unit"
+  },
+  "U_PTNI_UN_AD_alt": {
+   "displayname": "Combat Fatigues (AD Desert) (Alt)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_E_Uniform_01_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_UN_AD_alt_unit"
+  },
+  "U_PTNI_UN_alt": {
+   "displayname": "Combat Fatigues (DPM Desert) (Alt)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_E_Uniform_01_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_UN_alt_unit"
+  },
+  "U_I_L_Uniform_01_deserter_F": {
+   "scope": 0,
+   "type": 131072,
+   "displayname": "",
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Uniform_Base",
+   "own": [],
+   "linked": false
+  },
+  "U_PTNI_Malvinas_tshirt": {
+   "displayname": "Combat Fatigues (DPM) (T-Shirt)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_L_Uniform_01_deserter_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_Malvinas_tshirt_unit"
+  },
+  "U_PTNI_AD_tshirt": {
+   "displayname": "Combat Fatigues (AD) (T-Shirt)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_L_Uniform_01_deserter_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_AD_tshirt_unit"
+  },
+  "U_PTNI_UN_AD_tshirt": {
+   "displayname": "Combat Fatigues (AD Desert) (T-Shirt)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_L_Uniform_01_deserter_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_UN_AD_tshirt_unit"
+  },
+  "U_PTNI_UN_tshirt": {
+   "displayname": "Combat Fatigues (DPM Desert) (T-Shirt)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_L_Uniform_01_deserter_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_UN_tshirt_unit"
+  },
+  "U_IG_Guerilla1_1": {
+   "scope": 0,
+   "type": 131072,
+   "displayname": "",
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Uniform_Base",
+   "own": [],
+   "linked": false
+  },
+  "U_PTNI_Malvinas_tshirt2": {
+   "scope": "2",
+   "displayname": "Combat Fatigues (DPM) (T-Shirt/Alt)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_IG_Guerilla1_1",
+   "own": [
+    "displayname",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_Malvinas_tshirt2_unit"
+  },
+  "U_PTNI_AD_tshirt2": {
+   "scope": "2",
+   "displayname": "Combat Fatigues (AD) (T-Shirt/Alt)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_IG_Guerilla1_1",
+   "own": [
+    "displayname",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_AD_tshirt2_unit"
+  },
+  "U_PTNI_UN_AD_tshirt2": {
+   "scope": "2",
+   "displayname": "Combat Fatigues (AD Desert) (T-Shirt/Alt)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_IG_Guerilla1_1",
+   "own": [
+    "displayname",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_UN_AD_tshirt2_unit"
+  },
+  "U_PTNI_UN_tshirt2": {
+   "scope": "2",
+   "displayname": "Combat Fatigues (DPM Desert) (T-Shirt/Alt)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_IG_Guerilla1_1",
+   "own": [
+    "displayname",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_UN_tshirt2_unit"
+  },
+  "U_I_C_Soldier_Para_2_F": {
+   "scope": 0,
+   "type": 131072,
+   "displayname": "",
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Uniform_Base",
+   "own": [],
+   "linked": false
+  },
+  "U_PTNI_Malvinas_nogloves2": {
+   "displayname": "Combat Fatigues (DPM) (No Gloves/Alt)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_C_Soldier_Para_2_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_Malvinas_nogloves2_unit"
+  },
+  "U_PTNI_AD_nogloves2": {
+   "displayname": "Combat Fatigues (AD) (No Gloves/Alt)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_C_Soldier_Para_2_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_AD_nogloves2_unit"
+  },
+  "U_PTNI_UN_AD_nogloves2": {
+   "displayname": "Combat Fatigues (AD Desert) (No Gloves/Alt)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_C_Soldier_Para_2_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_UN_AD_nogloves2_unit"
+  },
+  "U_PTNI_UN_nogloves2": {
+   "displayname": "Combat Fatigues (DPM Desert) (No Gloves/Alt)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_C_Soldier_Para_2_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_UN_nogloves2_unit"
+  },
+  "U_I_GhillieSuit": {
+   "scope": 0,
+   "type": 131072,
+   "displayname": "",
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Uniform_Base",
+   "own": [],
+   "linked": false
+  },
+  "U_PTNI_Malvinas_ghili": {
+   "displayname": "Ghillie Suit (DPM)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_GhillieSuit",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_Malvinas_ghili_unit"
+  },
+  "U_PTNI_AD_ghili": {
+   "displayname": "Ghillie Suit (AD)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_GhillieSuit",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_AD_ghili_unit"
+  },
+  "U_PTNI_UN_AD_ghili": {
+   "displayname": "Ghillie Suit (AD Desert)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_GhillieSuit",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_UN_AD_ghili_unit"
+  },
+  "U_PTNI_UN_ghili": {
+   "displayname": "Ghillie Suit (DPM Desert)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_GhillieSuit",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_UN_ghili_unit"
+  },
+  "U_PTNI_pilot": {
+   "displayname": "Pilot Coverall (TNI)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_E_Uniform_01_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_pilot_unit"
+  },
+  "U_PTNI_pilot2": {
+   "displayname": "Pilot Coverall (TNI/Alt)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_E_Uniform_01_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_pilot2_unit"
+  },
+  "U_Tank_green_F": {
+   "scope": 0,
+   "type": 131072,
+   "displayname": "",
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Uniform_Base",
+   "own": [],
+   "linked": false
+  },
+  "U_PTNI_Coverall": {
+   "displayname": "Coverall (TNI)",
+   "scope": 0,
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_Tank_green_F",
+   "own": [
+    "displayname",
+    "picture"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_uniform_coverall_unit"
+  },
+  "U_I_CombatUniform": {
+   "scope": 0,
+   "type": 131072,
+   "displayname": "",
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Uniform_Base",
+   "own": [],
+   "linked": false
+  },
+  "U_I_CombatUniform_shortsleeve": {
+   "scope": 0,
+   "type": 131072,
+   "displayname": "",
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Uniform_Base",
+   "own": [],
+   "linked": false
+  },
+  "U_I_OfficerUniform": {
+   "scope": 0,
+   "type": 131072,
+   "displayname": "",
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Uniform_Base",
+   "own": [],
+   "linked": false
+  },
+  "U_PTNI_Malvinas": {
+   "scope": "2",
+   "displayname": "Combat Fatigues (DPM)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_CombatUniform",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_Rifleman_Malvinas"
+  },
+  "U_PTNI_Malvinas_shortsleeve": {
+   "scope": "2",
+   "displayname": "Combat Fatigues (DPM) (Rolled-up)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_CombatUniform_shortsleeve",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_Rifleman_Malvinas_Short"
+  },
+  "U_PTNI_Malvinas_shortsleeve_nogloves": {
+   "scope": "2",
+   "displayname": "Combat Fatigues (DPM) (No Gloves)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Uniform_Base",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_Rifleman_Malvinas_Short_NoGloves"
+  },
+  "U_PTNI_AD": {
+   "scope": "2",
+   "displayname": "Combat Fatigues (AD)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_CombatUniform",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_Rifleman_AD"
+  },
+  "U_PTNI_AD_shortsleeve": {
+   "scope": "2",
+   "displayname": "Combat Fatigues (AD) (Rolled-up)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_CombatUniform_shortsleeve",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_Rifleman_AD_Short"
+  },
+  "U_PTNI_AD_shortsleeve_nogloves": {
+   "scope": "2",
+   "displayname": "Combat Fatigues (AD) (No Gloves)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Uniform_Base",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_Rifleman_AD_Short_NoGloves"
+  },
+  "U_PTNI_UN_AD_shortsleeve_nogloves": {
+   "scope": "2",
+   "displayname": "Combat Fatigues (AD Desert) (No Gloves)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Uniform_Base",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_Rifleman_UN_AD_Short_NoGloves"
+  },
+  "U_PTNI_UN_shortsleeve_nogloves": {
+   "scope": "2",
+   "displayname": "Combat Fatigues (DPM Desert) (No Gloves)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Uniform_Base",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselections",
+    "hiddenselectionstextures",
+    "model",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_Rifleman_UN_Short_NoGloves"
+  },
+  "U_PTNI_MalvinasO": {
+   "scope": "2",
+   "displayname": "Officer Fatigues (DPM)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_OfficerUniform",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_Officer_Malvinas"
+  },
+  "U_PTNI_ADO": {
+   "scope": "2",
+   "displayname": "Officer Fatigues (AD)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_OfficerUniform",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_Officer_AD"
+  },
+  "U_PTNI_mp": {
+   "scope": "2",
+   "displayname": "Fatigues (MP)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_OfficerUniform",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_mp"
+  },
+  "U_PTNI_Desert": {
+   "scope": "2",
+   "displayname": "Combat Fatigues (DPM Desert)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_CombatUniform",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_Rifleman_UN"
+  },
+  "U_PTNI_Desert_shortsleeve": {
+   "scope": "2",
+   "displayname": "Combat Fatigues (DPM Desert) (Rolled-up)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_CombatUniform",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_Rifleman_UN_Short"
+  },
+  "U_PTNI_Desert_AD": {
+   "scope": "2",
+   "displayname": "Combat Fatigues (AD Desert)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_CombatUniform_shortsleeve",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_Rifleman_UN_AD"
+  },
+  "U_PTNI_Desert_AD_shortsleeve": {
+   "scope": "2",
+   "displayname": "Combat Fatigues (AD Desert) (Rolled-up)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_I_CombatUniform_shortsleeve",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_Rifleman_UN_AD_Short"
+  },
+  "U_PTNI_O_UN": {
+   "scope": "2",
+   "displayname": "Officer Fatigues (DPM Desert)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_PTNI_MalvinasO",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_Officer_UN"
+  },
+  "U_PTNI_ADO_UN": {
+   "scope": "2",
+   "displayname": "Officer Fatigues (AD Desert)",
+   "type": 131072,
+   "magazines": [],
+   "muzzles": [],
+   "parent": "U_PTNI_ADO",
+   "own": [
+    "author",
+    "displayname",
+    "hiddenselectionstextures",
+    "picture",
+    "scope"
+   ],
+   "linked": false,
+   "uniformclass": "PTNI_Officer_AD_UN"
+  },
+  "PTNI_DMR_Base": {
+   "magazines": [
+    "10Rnd_762x51_Mag",
+    "20Rnd_762x51_Mag"
+   ],
+   "magazinewell": [
+    "CBA_762x51_M14",
+    "CBA_762x51_M14_L",
+    "CBA_762x51_M14_XL"
+   ],
+   "scope": 1,
+   "displayname": "$STR_DN_RIFLE",
+   "type": 1,
+   "muzzle_parent": "asdg_MuzzleSlot_762",
+   "muzzles": [],
+   "parent": "Rifle_Base_F",
+   "own": [
+    "aidispersioncoefx",
+    "aidispersioncoefy",
+    "author",
+    "caseless",
+    "descriptionshort",
+    "dexterity",
+    "discretedistanceinitindex",
+    "distancezoommax",
+    "distancezoommin",
+    "drysound",
+    "handanim",
+    "inertia",
+    "initspeed",
+    "magazinereloadswitchphase",
+    "magazines",
+    "magazinewell",
+    "maxrecoilsway",
+    "modes",
+    "opticszoominit",
+    "opticszoommax",
+    "opticszoommin",
+    "reloadaction",
+    "reloadmagazinesound",
+    "selectionfireanim",
+    "soundbullet",
+    "swaydecayspeed"
+   ],
+   "linked": false
+  },
+  "PTNI_DMR": {
+   "scope": "2",
+   "displayname": "SPR-3 7.62 mm",
+   "magazines": [
+    "10Rnd_762x51_Mag",
+    "20Rnd_762x51_Mag"
+   ],
+   "magazinewell": [
+    "CBA_762x51_M14",
+    "CBA_762x51_M14_L",
+    "CBA_762x51_M14_XL"
+   ],
+   "type": 1,
+   "muzzle_parent": "asdg_MuzzleSlot_762",
+   "muzzles": [],
+   "parent": "PTNI_DMR_Base",
+   "own": [
+    "author",
+    "displayname",
+    "model",
+    "picture",
+    "scope",
+    "uipicture",
+    "weaponinfotype"
+   ],
+   "linked": false
+  },
+  "PTNI_DMR_Optic": {
+   "scope": "2",
+   "displayname": "SPR-3 7.62 mm",
+   "magazines": [
+    "10Rnd_762x51_Mag",
+    "20Rnd_762x51_Mag"
+   ],
+   "magazinewell": [
+    "CBA_762x51_M14",
+    "CBA_762x51_M14_L",
+    "CBA_762x51_M14_XL"
+   ],
+   "type": 1,
+   "muzzle_parent": "asdg_MuzzleSlot_762",
+   "muzzles": [],
+   "parent": "PTNI_DMR",
+   "own": [],
+   "linked": true
+  },
+  "PTNI_SPR2": {
+   "scope": "2",
+   "displayname": "SPR-2 12.7 mm",
+   "magazines": [
+    "5Rnd_127x108_Mag"
+   ],
+   "magazinewell": [
+    "CBA_762x51_M14",
+    "CBA_762x51_M14_L",
+    "CBA_762x51_M14_XL"
+   ],
+   "type": 1,
+   "muzzle_parent": "MuzzleSlot",
+   "muzzles": [],
+   "parent": "PTNI_DMR_Base",
+   "own": [
+    "author",
+    "displayname",
+    "magazines",
+    "maxzeroing",
+    "model",
+    "picture",
+    "recoil",
+    "scope",
+    "uipicture",
+    "weaponinfotype"
+   ],
+   "linked": false
+  },
+  "Pistol_Base_F": {
+   "type": 2,
+   "scope": 0,
+   "displayname": "",
+   "magazines": [],
+   "muzzles": [],
+   "parent": "Pistol",
+   "own": [],
+   "linked": false
+  },
+  "PTNI_Pistol_01_Base_F": {
+   "magazines": [
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_red_Mag",
+    "16Rnd_9x21_green_Mag",
+    "16Rnd_9x21_yellow_Mag",
+    "30Rnd_9x21_Mag",
+    "30Rnd_9x21_Red_Mag",
+    "30Rnd_9x21_Yellow_Mag",
+    "30Rnd_9x21_Green_Mag"
+   ],
+   "magazinewell": [
+    "Pistol_9x21"
+   ],
+   "type": 2,
+   "scope": 0,
+   "displayname": "",
+   "muzzle_parent": "MuzzleSlot",
+   "muzzles": [
+    "muzzle_snds_L"
+   ],
+   "parent": "Pistol_Base_F",
+   "own": [
+    "author",
+    "bullet1",
+    "bullet10",
+    "bullet11",
+    "bullet12",
+    "bullet2",
+    "bullet3",
+    "bullet4",
+    "bullet5",
+    "bullet6",
+    "bullet7",
+    "bullet8",
+    "bullet9",
+    "caseless",
+    "descriptionshort",
+    "dexterity",
+    "discretedistanceinitindex",
+    "distancezoommax",
+    "distancezoommin",
+    "drysound",
+    "inertia",
+    "initspeed",
+    "magazinereloadswitchphase",
+    "magazines",
+    "magazinewell",
+    "maxrecoilsway",
+    "modes",
+    "opticszoominit",
+    "opticszoommax",
+    "opticszoommin",
+    "reloadaction",
+    "reloadmagazinesound",
+    "selectionfireanim",
+    "soundbullet",
+    "swaydecayspeed"
+   ],
+   "linked": false
+  },
+  "PTNI_Pistol_01_F": {
+   "scope": "2",
+   "displayname": "G2 Combat 9mm",
+   "magazines": [
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_red_Mag",
+    "16Rnd_9x21_green_Mag",
+    "16Rnd_9x21_yellow_Mag",
+    "30Rnd_9x21_Mag",
+    "30Rnd_9x21_Red_Mag",
+    "30Rnd_9x21_Yellow_Mag",
+    "30Rnd_9x21_Green_Mag"
+   ],
+   "magazinewell": [
+    "Pistol_9x21"
+   ],
+   "type": 2,
+   "muzzle_parent": "MuzzleSlot",
+   "muzzles": [
+    "muzzle_snds_L"
+   ],
+   "parent": "PTNI_Pistol_01_Base_F",
+   "own": [
+    "author",
+    "displayname",
+    "model",
+    "picture",
+    "scope",
+    "uipicture",
+    "weaponinfotype"
+   ],
+   "linked": false
+  },
+  "PTNI_Pistol_02_F": {
+   "scope": "2",
+   "displayname": "P1 9mm",
+   "magazines": [
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_red_Mag",
+    "16Rnd_9x21_green_Mag",
+    "16Rnd_9x21_yellow_Mag",
+    "30Rnd_9x21_Mag",
+    "30Rnd_9x21_Red_Mag",
+    "30Rnd_9x21_Yellow_Mag",
+    "30Rnd_9x21_Green_Mag"
+   ],
+   "magazinewell": [
+    "Pistol_9x21"
+   ],
+   "type": 2,
+   "muzzle_parent": "MuzzleSlot",
+   "muzzles": [
+    "muzzle_snds_L"
+   ],
+   "parent": "PTNI_Pistol_01_Base_F",
+   "own": [
+    "author",
+    "displayname",
+    "model",
+    "picture",
+    "scope",
+    "uipicture",
+    "weaponinfotype"
+   ],
+   "linked": false
+  },
+  "PTNI_Pistol_01_snds_F": {
+   "scope": "2",
+   "displayname": "G2 Combat 9mm",
+   "magazines": [
+    "16Rnd_9x21_Mag",
+    "16Rnd_9x21_red_Mag",
+    "16Rnd_9x21_green_Mag",
+    "16Rnd_9x21_yellow_Mag",
+    "30Rnd_9x21_Mag",
+    "30Rnd_9x21_Red_Mag",
+    "30Rnd_9x21_Yellow_Mag",
+    "30Rnd_9x21_Green_Mag"
+   ],
+   "magazinewell": [
+    "Pistol_9x21"
+   ],
+   "type": 2,
+   "muzzle_parent": "MuzzleSlot",
+   "muzzles": [
+    "muzzle_snds_L"
+   ],
+   "parent": "PTNI_Pistol_01_F",
+   "own": [
+    "_generalmacro"
+   ],
+   "linked": true
+  }
+ },
+ "magazines": {
+  "ptni_40rnd_90mm_APFSDS_T_Red": {
+   "ammo": "Sh_105mm_APFSDS",
+   "count": "40",
+   "displayname": "90mm APDSDS-T",
+   "scope": 1,
+   "parent": "40Rnd_105mm_APFSDS_T_Red"
+  },
+  "ptni_20rnd_90mm_HEAT_MP_T_Red": {
+   "ammo": "Sh_105mm_HEAT_MP_T_Red",
+   "count": "20",
+   "displayname": "90mm HEAT-MP-T",
+   "scope": 2,
+   "parent": "20Rnd_105mm_HEAT_MP_T_Red"
+  }
+ },
+ "wells": {},
+ "classes": {
+  "CfgFactionClasses": {
+   "ptni_faction": {
+    "displayname": "Indonesia",
+    "priority": "2",
+    "icon": "\\ptni_units\\Data\\UI\\ptni_flag_indonesia.paa",
+    "side": "1"
+   },
+   "ptni_faction_UN": {
+    "displayname": "Indonesia (UN)",
+    "priority": "2",
+    "icon": "\\ptni_units\\Data\\UI\\ptni_flag_indonesia.paa",
+    "side": "1"
+   }
+  },
+  "CfgEditorSubcategories": {}
+ },
+ "patches": {
+  "ptni_anims": [
+   "ptni_animations"
+  ],
+  "ptni_badak": [
+   "ptni_badak_f"
+  ],
+  "ptni_groups": [
+   "ptni_group_f"
+  ],
+  "ptni_helmet": [
+   "ptni_units_f"
+  ],
+  "ptni_maung": [
+   "ptni_maung_f"
+  ],
+  "ptni_missions": [
+   "ptni_missions"
+  ],
+  "ptni_mrap": [
+   "ptni_mrap_f"
+  ],
+  "ptni_sounds": [
+   "sc_sounds2"
+  ],
+  "ptni_ss2": [
+   "ptni_ss2_f"
+  ],
+  "ptni_tank": [
+   "ptni_tank_f"
+  ],
+  "ptni_truck": [
+   "ptni_truck_f"
+  ],
+  "ptni_units2": [
+   "ptni_units2"
+  ],
+  "ptni_units": [
+   "ptni_units"
+  ],
+  "ptni_apc": [
+   "ptni_apc_f"
+  ],
+  "ptni_dmr": [
+   "ptni_dmr_f"
+  ],
+  "ptni_pistol": [
+   "ptni_pistol_f"
+  ]
+ },
+ "cdlc": [
+  "ptni_3cb_bell412",
+  "ptni_ace_compat",
+  "ptni_acre2_compat",
+  "ptni_jk_bell412",
+  "ptni_jsrs2_compat",
+  "ptni_jsrs_compat",
+  "ptni_rhs_compat",
+  "ptni_rhs_uh1h",
+  "ptni_rksl_as330puma",
+  "ptni_tfar_compat"
+ ],
+ "errors": {},
+ "unknown_requires": {
+  "uk3cb_factions_vehicles_bell412": 1,
+  "ace_cargo": 1,
+  "ace_hunterkiller": 1,
+  "ace_rearm": 1,
+  "ace_refuel": 1,
+  "ace_repair": 1,
+  "acre_sys_intercom": 1,
+  "jk_toh_medium_helicopters": 1,
+  "jsrs2025_config_c": 1,
+  "jsrs_soundmod_complete_edition": 1,
+  "rhsusf_c_weapons": 1,
+  "rhs_c_weapons": 1,
+  "rhsgref_c_air": 1,
+  "rhsgref_air": 1,
+  "rksla3_pumahc": 1,
+  "tfar_intercomdummy": 1,
+  "addon": 1
+ }
+}

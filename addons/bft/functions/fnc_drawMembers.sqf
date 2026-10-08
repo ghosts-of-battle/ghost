@@ -47,7 +47,8 @@ private _colors = createHashMapFromArray [
         MEMBER_SIZE,
         MEMBER_SIZE,
         getDirVisual _x,
-        name _x,
+        // the man's qualifications after his name - "Reyes (MED)"
+        [name _x, format ["%1 (%2)", name _x, ((_x getVariable ["ghost_pac_skillTags", []]) select [0, 2]) joinString "/"]] select ((_x getVariable ["ghost_pac_skillTags", []]) isNotEqualTo []),
         1,
         0.035,
         "RobotoCondensed",

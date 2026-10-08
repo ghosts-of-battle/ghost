@@ -1,6 +1,6 @@
 class StageTI
 {
-	texture="z\ghost\addons\weapons\models\weapons\LongRangeRifles\WF50\Data\WF50_TI_CA.paa";
+	texture="z\ghost\addons\weapons\models\weapons\Pistols\Mk26\Data\Mk26_TI_CA.paa";
 };
 ambient[]={1,1,1,1};
 diffuse[]={1,1,1,1};

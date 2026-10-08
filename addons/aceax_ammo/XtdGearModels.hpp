@@ -8,6 +8,51 @@
 
 class XtdGearModels {
     class CfgMagazines {
+        class ghost_ammo_11rnd_45acp_mag {
+            label = "11Rnd 45ACP Mag";
+            options[] = {};
+
+        };
+        class ghost_ammo_17rnd_9x19_mag_rf {
+            label = "17Rnd 9x19 Mag RF";
+            options[] = {};
+
+        };
+        class ghost_ammo_17rnd_9x21_mag {
+            label = "17Rnd 9x21 Mag";
+            options[] = {};
+
+        };
+        class ghost_ammo_1rnd_40mm_he_lxws {
+            label = "1Rnd 40mm HE lxWS";
+            options[] = {};
+
+        };
+        class ghost_ammo_1rnd_he_grenade_shell {
+            label = "1Rnd HE Grenade shell";
+            options[] = {};
+
+        };
+        class ghost_ammo_1rnd_hedp_grenade_shell {
+            label = "1Rnd HEDP Grenade shell";
+            options[] = {};
+
+        };
+        class ghost_ammo_1rnd_pellet_grenade_shell_lxws {
+            label = "1Rnd Pellet Grenade shell lxWS";
+            options[] = {};
+
+        };
+        class ghost_ammo_1rnd_rc40_he_shell_rf {
+            label = "1Rnd RC40 HE shell RF";
+            options[] = {};
+
+        };
+        class ghost_ammo_1rnd_rc40_shell_rf {
+            label = "1Rnd RC40 shell RF";
+            options[] = {};
+
+        };
         class ghost_ammo_1rnd_rc40_smoke_shell_rf {
             label = "1Rnd RC40 Smoke shell RF";
             options[] = {"colour"};
@@ -40,6 +85,26 @@ class XtdGearModels {
                 class purple { label = "Purple"; };
             };
         };
+        class ghost_ammo_2rnd_12gauge_pellets {
+            label = "2Rnd 12Gauge Pellets";
+            options[] = {};
+
+        };
+        class ghost_ammo_2rnd_12gauge_slug {
+            label = "2Rnd 12Gauge Slug";
+            options[] = {};
+
+        };
+        class ghost_ammo_2rnd_he_mag_lxws {
+            label = "2rnd HE Mag lxWS";
+            options[] = {};
+
+        };
+        class ghost_ammo_2rnd_smoke_mag_lxws {
+            label = "2rnd Smoke Mag lxWS";
+            options[] = {};
+
+        };
         class ghost_ammo_33rnd_9x19_mag_rf {
             label = "33Rnd 9x19 Mag RF";
             options[] = {"finish"};
@@ -48,10 +113,25 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "khaki", "tan"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class khaki { label = "Khaki"; };
                 class tan { label = "Tan"; };
             };
+        };
+        class ghost_ammo_3rnd_he_grenade_shell {
+            label = "3Rnd HE Grenade shell";
+            options[] = {};
+
+        };
+        class ghost_ammo_3rnd_hedp_grenade_shell {
+            label = "3Rnd HEDP Grenade shell";
+            options[] = {};
+
+        };
+        class ghost_ammo_3rnd_pellets_grenade_shell {
+            label = "3Rnd Pellets Grenade shell";
+            options[] = {};
+
         };
         class ghost_ammo_3rnd_smoke_grenade_shell {
             label = "3Rnd Smoke Grenade shell";
@@ -71,7 +151,7 @@ class XtdGearModels {
             };
         };
         class ghost_ammo_3rnd_ugl_flare_f {
-            label = "3Rnd UGL Flare F";
+            label = "3Rnd UGL Flare";
             options[] = {"colour"};
 
             class colour {
@@ -86,7 +166,7 @@ class XtdGearModels {
             };
         };
         class ghost_ammo_3rnd_ugl_flare_illumination_f {
-            label = "3rnd UGL Flare Illumination F";
+            label = "3rnd UGL Flare Illumination";
             options[] = {"colour"};
 
             class colour {
@@ -99,37 +179,60 @@ class XtdGearModels {
                 class yellow { label = "Yellow"; };
             };
         };
-        class ghost_ammo_6rnd_smoke_grenade_shell {
-            label = "6Rnd Smoke Grenade shell";
-            options[] = {"colour"};
+        class ghost_ammo_3ugl_40x36 {
+            label = "3UGL 40x36";
+            options[] = {};
 
-            class colour {
-                label = "Colour";
-                values[] = {"white", "red", "green", "yellow", "blue", "orange", "purple"};
-
-                class white { label = "White"; };
-                class red { label = "Red"; };
-                class green { label = "Green"; };
-                class yellow { label = "Yellow"; };
-                class blue { label = "Blue"; };
-                class orange { label = "Orange"; };
-                class purple { label = "Purple"; };
-            };
         };
-        class ghost_ammo_6rnd_ugl_flare_f {
-            label = "6Rnd UGL Flare F";
-            options[] = {"colour"};
+        class ghost_ammo_4rnd_12gauge_pellets {
+            label = "4Rnd 12Gauge Pellets";
+            options[] = {};
 
-            class colour {
-                label = "Colour";
-                values[] = {"white", "red", "green", "yellow", "ir"};
+        };
+        class ghost_ammo_4rnd_12gauge_slug {
+            label = "4Rnd 12Gauge Slug";
+            options[] = {};
 
-                class white { label = "White"; };
-                class red { label = "Red"; };
-                class green { label = "Green"; };
-                class yellow { label = "Yellow"; };
-                class ir { label = "IR"; };
-            };
+        };
+        class ghost_ammo_65rnd_9x19_mag_rf {
+            label = "65Rnd 9x19 Mag RF";
+            options[] = {};
+
+        };
+        class ghost_ammo_6rnd_12gauge_pellets {
+            label = "6Rnd 12Gauge Pellets";
+            options[] = {};
+
+        };
+        class ghost_ammo_6rnd_12gauge_slug {
+            label = "6Rnd 12Gauge Slug";
+            options[] = {};
+
+        };
+        class ghost_ammo_6rnd_he_mag_lxws {
+            label = "6rnd HE Mag lxWS";
+            options[] = {};
+
+        };
+        class ghost_ammo_6rnd_smoke_mag_lxws {
+            label = "6rnd Smoke Mag lxWS";
+            options[] = {};
+
+        };
+        class ghost_ammo_8rnd_12gauge_pellets {
+            label = "8Rnd 12Gauge Pellets";
+            options[] = {};
+
+        };
+        class ghost_ammo_8rnd_12gauge_slug {
+            label = "8Rnd 12Gauge Slug";
+            options[] = {};
+
+        };
+        class ghost_ammo_9rnd_45acp_mag {
+            label = "9Rnd 45ACP Mag";
+            options[] = {};
+
         };
         class ghost_ammo_ace_40mm_flare {
             label = "ACE 40mm Flare";
@@ -144,6 +247,41 @@ class XtdGearModels {
                 class green { label = "Green"; };
                 class ir { label = "IR"; };
             };
+        };
+        class ghost_ammo_ace_40mm_pike {
+            label = "ACE 40mm Pike";
+            options[] = {};
+
+        };
+        class ghost_ammo_ace_6rnd_12gauge_pellets_no0_buck {
+            label = "ACE 6Rnd 12Gauge Pellets No0 Buck";
+            options[] = {};
+
+        };
+        class ghost_ammo_ace_6rnd_12gauge_pellets_no1_buck {
+            label = "ACE 6Rnd 12Gauge Pellets No1 Buck";
+            options[] = {};
+
+        };
+        class ghost_ammo_ace_6rnd_12gauge_pellets_no2_buck {
+            label = "ACE 6Rnd 12Gauge Pellets No2 Buck";
+            options[] = {};
+
+        };
+        class ghost_ammo_ace_6rnd_12gauge_pellets_no3_buck {
+            label = "ACE 6Rnd 12Gauge Pellets No3 Buck";
+            options[] = {};
+
+        };
+        class ghost_ammo_ace_6rnd_12gauge_pellets_no4_bird {
+            label = "ACE 6Rnd 12Gauge Pellets No4 Bird";
+            options[] = {};
+
+        };
+        class ghost_ammo_ace_6rnd_12gauge_pellets_no4_buck {
+            label = "ACE 6Rnd 12Gauge Pellets No4 Buck";
+            options[] = {};
+
         };
         class ghost_ammo_ace_chemlight {
             label = "ACE Chemlight";
@@ -173,6 +311,16 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
             };
         };
+        class ghost_ammo_ace_chemlight_ultrahiorange {
+            label = "ACE Chemlight UltraHiOrange";
+            options[] = {};
+
+        };
+        class ghost_ammo_ace_cts9 {
+            label = "ACE CTS9";
+            options[] = {};
+
+        };
         class ghost_ammo_ace_handflare {
             label = "ACE HandFlare";
             options[] = {"colour"};
@@ -186,6 +334,51 @@ class XtdGearModels {
                 class green { label = "Green"; };
                 class yellow { label = "Yellow"; };
             };
+        };
+        class ghost_ammo_ace_huntir_m203 {
+            label = "ACE HuntIR M203";
+            options[] = {};
+
+        };
+        class ghost_ammo_ace_m14 {
+            label = "ACE M14";
+            options[] = {};
+
+        };
+        class ghost_ammo_ace_m84 {
+            label = "ACE M84";
+            options[] = {};
+
+        };
+        class ghost_ammo_ace_missile_manpad_stinger_man {
+            label = "ace missile manpad stinger man";
+            options[] = {};
+
+        };
+        class ghost_ammo_ace_spike_lr {
+            label = "ace spike lr";
+            options[] = {};
+
+        };
+        class ghost_ammo_aegis_4rnd_12gauge_he {
+            label = "Aegis 4Rnd 12Gauge HE";
+            options[] = {};
+
+        };
+        class ghost_ammo_aegis_4rnd_12gauge_smoke {
+            label = "Aegis 4Rnd 12Gauge Smoke";
+            options[] = {};
+
+        };
+        class ghost_ammo_aegis_8rnd_12gauge_he {
+            label = "Aegis 8Rnd 12Gauge HE";
+            options[] = {};
+
+        };
+        class ghost_ammo_aegis_8rnd_12gauge_smoke {
+            label = "Aegis 8Rnd 12Gauge Smoke";
+            options[] = {};
+
         };
         class ghost_ammo_aegis_handflare {
             label = "Aegis HandFlare";
@@ -211,6 +404,26 @@ class XtdGearModels {
                 class green { label = "Green"; };
             };
         };
+        class ghost_ammo_ak_545x39 {
+            label = "AK 545x39";
+            options[] = {};
+
+        };
+        class ghost_ammo_ak_762x39 {
+            label = "AK 762x39";
+            options[] = {};
+
+        };
+        class ghost_ammo_b_ir_grenade {
+            label = "B IR Grenade";
+            options[] = {};
+
+        };
+        class ghost_ammo_cba_127x55_ash12 {
+            label = "CBA 127x55 ASh12";
+            options[] = {};
+
+        };
         class ghost_ammo_chemlight {
             label = "Chemlight";
             options[] = {"colour"};
@@ -225,9 +438,164 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
             };
         };
+        class ghost_ammo_east {
+            label = "East";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_1rnd_40mm_mk380_nrp {
+            label = "[Ghost] 1Rnd 40mm Mk380 NRP";
+            rowName = "[Ghost] 1Rnd 40mm Mk380 NRP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_1rnd_40mm_mk383_emp {
+            label = "[Ghost] 1Rnd 40mm Mk383 EMP";
+            rowName = "[Ghost] 1Rnd 40mm Mk383 EMP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_1rnd_40mm_mk384_msmoke {
+            label = "FA 1Rnd 40mm Mk384 MSmoke";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_1rnd_40mm_mk385_decoy {
+            label = "[Ghost] 1Rnd 40mm Mk385 Decoy";
+            rowName = "[Ghost] 1Rnd 40mm Mk385 Decoy";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_1rnd_40mm_mk386_ugs {
+            label = "[Ghost] 1Rnd 40mm Mk386 UGS";
+            rowName = "[Ghost] 1Rnd 40mm Mk386 UGS";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_1rnd_40mm_mk388_jammer {
+            label = "[Ghost] 1Rnd 40mm Mk388 Jammer";
+            rowName = "[Ghost] 1Rnd 40mm Mk388 Jammer";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_1rnd_rc40_ad {
+            label = "[Ghost] 1Rnd 40mm AD";
+            rowName = "[Ghost] 1Rnd 40mm AD";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_1rnd_rc40_dp {
+            label = "[Ghost] 1Rnd 40mm DP";
+            rowName = "[Ghost] 1Rnd 40mm DP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_1rnd_rc40_hep {
+            label = "[Ghost] 1Rnd 40mm HEP";
+            rowName = "[Ghost] 1Rnd 40mm HEP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_1rnd_rc40_ms {
+            label = "[Ghost] 1Rnd 40mm MS";
+            rowName = "[Ghost] 1Rnd 40mm MS";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_2rnd_120mm_apmi_b {
+            label = "[Ghost] 2Rnd 120mm apmi [BLUFOR]";
+            rowName = "[Ghost] 2Rnd 120mm apmi [BLUFOR]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_2rnd_120mm_apmi_i {
+            label = "[Ghost] 2Rnd 120mm apmi [INDEP]";
+            rowName = "[Ghost] 2Rnd 120mm apmi [INDEP]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_2rnd_120mm_apmi_o {
+            label = "[Ghost] 2Rnd 120mm apmi [OPFOR]";
+            rowName = "[Ghost] 2Rnd 120mm apmi [OPFOR]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_2rnd_120mm_apmine_b {
+            label = "[Ghost] 2Rnd 120mm apmine [BLUFOR]";
+            rowName = "[Ghost] 2Rnd 120mm apmine [BLUFOR]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_2rnd_120mm_apmine_i {
+            label = "[Ghost] 2Rnd 120mm apmine [INDEP]";
+            rowName = "[Ghost] 2Rnd 120mm apmine [INDEP]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_2rnd_120mm_apmine_o {
+            label = "[Ghost] 2Rnd 120mm apmine [OPFOR]";
+            rowName = "[Ghost] 2Rnd 120mm apmine [OPFOR]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_2rnd_120mm_lgm_b {
+            label = "[Ghost] 2Rnd 120mm lgm [BLUFOR]";
+            rowName = "[Ghost] 2Rnd 120mm lgm [BLUFOR]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_2rnd_120mm_lgm_i {
+            label = "[Ghost] 2Rnd 120mm lgm [INDEP]";
+            rowName = "[Ghost] 2Rnd 120mm lgm [INDEP]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_2rnd_120mm_lgm_o {
+            label = "[Ghost] 2Rnd 120mm lgm [OPFOR]";
+            rowName = "[Ghost] 2Rnd 120mm lgm [OPFOR]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_2rnd_120mm_sfm_b {
+            label = "[Ghost] 2Rnd 120mm sfm [BLUFOR]";
+            rowName = "[Ghost] 2Rnd 120mm sfm [BLUFOR]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_2rnd_120mm_sfm_i {
+            label = "[Ghost] 2Rnd 120mm sfm [INDEP]";
+            rowName = "[Ghost] 2Rnd 120mm sfm [INDEP]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_2rnd_120mm_sfm_o {
+            label = "[Ghost] 2Rnd 120mm sfm [OPFOR]";
+            rowName = "[Ghost] 2Rnd 120mm sfm [OPFOR]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_2rnd_120mm_strix_b {
+            label = "[Ghost] 2Rnd 120mm strix [BLUFOR]";
+            rowName = "[Ghost] 2Rnd 120mm strix [BLUFOR]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_2rnd_120mm_strix_i {
+            label = "[Ghost] 2Rnd 120mm strix [INDEP]";
+            rowName = "[Ghost] 2Rnd 120mm strix [INDEP]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_2rnd_120mm_strix_o {
+            label = "[Ghost] 2Rnd 120mm strix [OPFOR]";
+            rowName = "[Ghost] 2Rnd 120mm strix [OPFOR]";
+            options[] = {};
+
+        };
         class ghost_ammo_fa_30rnd_556x45_ap_stanag_rf {
-            label = "FA 30Rnd 556x45 AP Stanag RF";
-            options[] = {"tracer", "finish"};
+            label = "[Ghost] 30Rnd 5.56mm AP (STANAG)";
+            rowName = "[Ghost] 30Rnd 5.56mm AP (STANAG)";
+            options[] = {"tracer", "finish", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -246,14 +614,24 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "khaki", "tan"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class khaki { label = "Khaki"; };
                 class tan { label = "Tan"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_30rnd_556x45_ap_stanag_rf_mk332_ap {
-            label = "FA 30Rnd 556x45 AP Stanag RF Mk332 AP";
-            options[] = {"tracer", "finish"};
+            label = "[Ghost] 30Rnd 5.56mm AP Mk332 (STANAG)";
+            rowName = "[Ghost] 30Rnd 5.56mm AP Mk332 (STANAG)";
+            options[] = {"tracer", "finish", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -272,14 +650,24 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "khaki", "tan"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class khaki { label = "Khaki"; };
                 class tan { label = "Tan"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_30rnd_556x45_ap_stanag_rf_xm891_ctep {
-            label = "FA 30Rnd 556x45 AP Stanag RF XM891 CTEP";
-            options[] = {"tracer", "finish"};
+            label = "[Ghost] 30Rnd 5.56mm AP XM891 CTEP (STANAG)";
+            rowName = "[Ghost] 30Rnd 5.56mm AP XM891 CTEP (STANAG)";
+            options[] = {"tracer", "finish", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -298,13 +686,831 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "khaki", "tan"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class khaki { label = "Khaki"; };
                 class tan { label = "Tan"; };
             };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_3rnd_40mm_mk380_nrp {
+            label = "[Ghost] 3Rnd 40mm Mk380 NRP";
+            rowName = "[Ghost] 3Rnd 40mm Mk380 NRP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_3rnd_40mm_mk383_emp {
+            label = "[Ghost] 3Rnd 40mm Mk383 EMP";
+            rowName = "[Ghost] 3Rnd 40mm Mk383 EMP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_3rnd_40mm_mk384_msmoke {
+            label = "FA 3Rnd 40mm Mk384 MSmoke";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_3rnd_40mm_mk385_decoy {
+            label = "[Ghost] 3Rnd 40mm Mk385 Decoy";
+            rowName = "[Ghost] 3Rnd 40mm Mk385 Decoy";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_3rnd_40mm_mk386_ugs {
+            label = "[Ghost] 3Rnd 40mm Mk386 UGS";
+            rowName = "[Ghost] 3Rnd 40mm Mk386 UGS";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_3rnd_40mm_mk388_jammer {
+            label = "[Ghost] 3Rnd 40mm Mk388 Jammer";
+            rowName = "[Ghost] 3Rnd 40mm Mk388 Jammer";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_4rnd_120mm_atmine_b {
+            label = "[Ghost] 4Rnd 120mm atmine [BLUFOR]";
+            rowName = "[Ghost] 4Rnd 120mm atmine [BLUFOR]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_4rnd_120mm_atmine_i {
+            label = "[Ghost] 4Rnd 120mm atmine [INDEP]";
+            rowName = "[Ghost] 4Rnd 120mm atmine [INDEP]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_4rnd_120mm_atmine_o {
+            label = "[Ghost] 4Rnd 120mm atmine [OPFOR]";
+            rowName = "[Ghost] 4Rnd 120mm atmine [OPFOR]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_4rnd_120mm_smk_b {
+            label = "[Ghost] 4Rnd 120mm smk [BLUFOR]";
+            rowName = "[Ghost] 4Rnd 120mm smk [BLUFOR]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_4rnd_120mm_smk_i {
+            label = "[Ghost] 4Rnd 120mm smk [INDEP]";
+            rowName = "[Ghost] 4Rnd 120mm smk [INDEP]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_4rnd_120mm_smk_o {
+            label = "[Ghost] 4Rnd 120mm smk [OPFOR]";
+            rowName = "[Ghost] 4Rnd 120mm smk [OPFOR]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_6rnd_120mm_heer_b {
+            label = "[Ghost] 6Rnd 120mm heer [BLUFOR]";
+            rowName = "[Ghost] 6Rnd 120mm heer [BLUFOR]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_6rnd_120mm_heer_i {
+            label = "[Ghost] 6Rnd 120mm heer [INDEP]";
+            rowName = "[Ghost] 6Rnd 120mm heer [INDEP]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_6rnd_120mm_heer_o {
+            label = "[Ghost] 6Rnd 120mm heer [OPFOR]";
+            rowName = "[Ghost] 6Rnd 120mm heer [OPFOR]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_6rnd_120mm_tb_b {
+            label = "[Ghost] 6Rnd 120mm tb [BLUFOR]";
+            rowName = "[Ghost] 6Rnd 120mm tb [BLUFOR]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_6rnd_120mm_tb_i {
+            label = "[Ghost] 6Rnd 120mm tb [INDEP]";
+            rowName = "[Ghost] 6Rnd 120mm tb [INDEP]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_6rnd_120mm_tb_o {
+            label = "[Ghost] 6Rnd 120mm tb [OPFOR]";
+            rowName = "[Ghost] 6Rnd 120mm tb [OPFOR]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_8rnd_120mm_ir_b {
+            label = "[Ghost] 8Rnd 120mm ir";
+            rowName = "[Ghost] 8Rnd 120mm ir";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_adf_adfrc_100rnd_556_belt {
+            label = "[Ghost] 100Rnd 5.56mm (Belt)";
+            rowName = "[Ghost] 100Rnd 5.56mm (Belt)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_100rnd_556_belt_tr5 {
+            label = "[Ghost] 100Rnd 5.56mm TR5 (Belt)";
+            rowName = "[Ghost] 100Rnd 5.56mm TR5 (Belt)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_100rnd_556_minimi_tr {
+            label = "[Ghost] 100Rnd 5.56mm TR (Minimi)";
+            rowName = "[Ghost] 100Rnd 5.56mm TR (Minimi)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_100rnd_762_belt {
+            label = "[Ghost] 100Rnd 7.62mm (Belt)";
+            rowName = "[Ghost] 100Rnd 7.62mm (Belt)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_100rnd_762_belt_tr5 {
+            label = "[Ghost] 100Rnd 7.62mm TR5 (Belt)";
+            rowName = "[Ghost] 100Rnd 7.62mm TR5 (Belt)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_100rnd_762_maximi {
+            label = "[Ghost] 100Rnd 7.62mm (Maximi)";
+            rowName = "[Ghost] 100Rnd 7.62mm (Maximi)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_100rnd_762_maximi_tr {
+            label = "[Ghost] 100Rnd 7.62mm TR (Maximi)";
+            rowName = "[Ghost] 100Rnd 7.62mm TR (Maximi)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_100rnd_762_maximi_tr5 {
+            label = "[Ghost] 100Rnd 7.62mm TR5 (Maximi)";
+            rowName = "[Ghost] 100Rnd 7.62mm TR5 (Maximi)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_150rnd_762_belt {
+            label = "[Ghost] 150Rnd 7.62mm (Belt)";
+            rowName = "[Ghost] 150Rnd 7.62mm (Belt)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_150rnd_762_belt_tr5 {
+            label = "[Ghost] 150Rnd 7.62mm TR5 (Belt)";
+            rowName = "[Ghost] 150Rnd 7.62mm TR5 (Belt)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_15rnd_9mm_ball_g19 {
+            label = "[Ghost] 15Rnd 9mm BALL (G19)";
+            rowName = "[Ghost] 15Rnd 9mm BALL (G19)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_15rnd_9mm_ball_usp {
+            label = "[Ghost] 15Rnd 9mm BALL (USP)";
+            rowName = "[Ghost] 15Rnd 9mm BALL (USP)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_17rnd_9mm_ball_f9 {
+            label = "[Ghost] 17Rnd 9mm BALL (F9)";
+            rowName = "[Ghost] 17Rnd 9mm BALL (F9)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_200rnd_556_belt_tr {
+            label = "[Ghost] 200Rnd 5.56mm TR (Belt)";
+            rowName = "[Ghost] 200Rnd 5.56mm TR (Belt)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_200rnd_556_belt_tr5 {
+            label = "[Ghost] 200Rnd 5.56mm TR5 (Belt)";
+            rowName = "[Ghost] 200Rnd 5.56mm TR5 (Belt)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_200rnd_556_minimi_tr5 {
+            label = "[Ghost] 200Rnd 5.56mm TR5 (Minimi)";
+            rowName = "[Ghost] 200Rnd 5.56mm TR5 (Minimi)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_250rnd_556_minimi {
+            label = "[Ghost] 250Rnd 5.56mm (Minimi)";
+            rowName = "[Ghost] 250Rnd 5.56mm (Minimi)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_30rnd_aug_ef88 {
+            label = "[Ghost] 30Rnd (AUG, EF88)";
+            rowName = "[Ghost] 30Rnd (AUG, EF88)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_30rnd_aug_mixed_ef88 {
+            label = "[Ghost] 30Rnd mixed (AUG, EF88)";
+            rowName = "[Ghost] 30Rnd mixed (AUG, EF88)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_30rnd_aug_tr_ef88 {
+            label = "[Ghost] 30Rnd TR (AUG, EF88)";
+            rowName = "[Ghost] 30Rnd TR (AUG, EF88)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_30rnd_pmag {
+            label = "[Ghost] 30Rnd (PMAG)";
+            rowName = "[Ghost] 30Rnd (PMAG)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_30rnd_pmag_ir {
+            label = "[Ghost] 30Rnd IR (PMAG)";
+            rowName = "[Ghost] 30Rnd IR (PMAG)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_30rnd_pmag_mixed {
+            label = "[Ghost] 30Rnd mixed (PMAG)";
+            rowName = "[Ghost] 30Rnd mixed (PMAG)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_30rnd_pmag_tr {
+            label = "[Ghost] 30Rnd TR (PMAG)";
+            rowName = "[Ghost] 30Rnd TR (PMAG)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_50rnd_762_belt_tr {
+            label = "[Ghost] 50Rnd 7.62mm TR (Belt)";
+            rowName = "[Ghost] 50Rnd 7.62mm TR (Belt)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_adf_adfrc_50rnd_762_belt_tr5 {
+            label = "[Ghost] 50Rnd 7.62mm TR5 (Belt)";
+            rowName = "[Ghost] 50Rnd 7.62mm TR5 (Belt)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_aegis_10rnd_762x54_svd_hv {
+            label = "[Ghost] 10Rnd 7.62x54mmR HV (SVD)";
+            rowName = "[Ghost] 10Rnd 7.62x54mmR HV (SVD)";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_aegis_30rnd_545x39_7n44 {
+            label = "[Ghost] 30Rnd 5.45mm 7N44";
+            rowName = "[Ghost] 30Rnd 5.45mm 7N44";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_aegis_30rnd_545x39_7n48 {
+            label = "[Ghost] 30Rnd 5.45mm 7N48";
+            rowName = "[Ghost] 30Rnd 5.45mm 7N48";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_aegis_30rnd_545x39_7u5 {
+            label = "[Ghost] 30Rnd 5.45mm 7U5";
+            rowName = "[Ghost] 30Rnd 5.45mm 7U5";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_aegis_45rnd_545x39_7n44 {
+            label = "[Ghost] 45Rnd 5.45mm 7N44";
+            rowName = "[Ghost] 45Rnd 5.45mm 7N44";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_aegis_45rnd_545x39_7n48 {
+            label = "[Ghost] 45Rnd 5.45mm 7N48";
+            rowName = "[Ghost] 45Rnd 5.45mm 7N48";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_aegis_5rnd_127x99_mk211mod0 {
+            label = "[Ghost] 5Rnd 12.7mm Mk211Mod0";
+            rowName = "[Ghost] 5Rnd 12.7mm Mk211Mod0";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_aegis_5rnd_127x99_mk258 {
+            label = "[Ghost] 5Rnd 12.7mm Mk258";
+            rowName = "[Ghost] 5Rnd 12.7mm Mk258";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_aegis_60rnd_545x39_7n44 {
+            label = "[Ghost] 60Rnd 5.45mm 7N44";
+            rowName = "[Ghost] 60Rnd 5.45mm 7N44";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_1000rnd_65x39_belt {
+            label = "[Ghost] 1000Rnd 6.5mm (Belt)";
+            rowName = "[Ghost] 1000Rnd 6.5mm (Belt)";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"white", "red", "green", "yellow", "blue", "orange"};
+
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_100rnd_127_mk366_pab {
+            label = "[Ghost] 100Rnd 12.7mm Mk366 PAB";
+            rowName = "[Ghost] 100Rnd 12.7mm Mk366 PAB";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
         };
         class ghost_ammo_fa_b_100rnd_65_mk328 {
-            label = "FA b 100Rnd 65 Mk328";
+            label = "[Ghost] 100Rnd 6.5mm Mk328";
+            rowName = "[Ghost] 100Rnd 6.5mm Mk328";
             options[] = {"tracer", "finish"};
 
             class tracer {
@@ -324,13 +1530,14 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "black", "khaki"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class black { label = "Black"; };
                 class khaki { label = "Khaki"; };
             };
         };
         class ghost_ammo_fa_b_100rnd_65_mk329 {
-            label = "FA b 100Rnd 65 Mk329";
+            label = "[Ghost] 100Rnd 6.5mm Mk329";
+            rowName = "[Ghost] 100Rnd 6.5mm Mk329";
             options[] = {"tracer", "finish"};
 
             class tracer {
@@ -350,13 +1557,14 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "black", "khaki"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class black { label = "Black"; };
                 class khaki { label = "Khaki"; };
             };
         };
         class ghost_ammo_fa_b_100rnd_65_mk331_ap {
-            label = "FA b 100Rnd 65 Mk331 AP";
+            label = "[Ghost] 100Rnd 6.5mm Mk331 AP";
+            rowName = "[Ghost] 100Rnd 6.5mm Mk331 AP";
             options[] = {"tracer", "finish"};
 
             class tracer {
@@ -376,14 +1584,15 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "black", "khaki"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class black { label = "Black"; };
                 class khaki { label = "Khaki"; };
             };
         };
         class ghost_ammo_fa_b_100rnd_65_mk367_pab {
-            label = "FA b 100Rnd 65 Mk367 PAB";
-            options[] = {"tracer", "finish"};
+            label = "[Ghost] 100Rnd 6.5mm Mk367 PAB";
+            rowName = "[Ghost] 100Rnd 6.5mm Mk367 PAB";
+            options[] = {"tracer", "finish", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -401,13 +1610,23 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "black", "khaki"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class black { label = "Black"; };
                 class khaki { label = "Khaki"; };
             };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
         };
         class ghost_ammo_fa_b_100rnd_65_xm892 {
-            label = "FA b 100Rnd 65 XM892";
+            label = "[Ghost] 100Rnd 6.5mm XM892";
+            rowName = "[Ghost] 100Rnd 6.5mm XM892";
             options[] = {"tracer", "finish"};
 
             class tracer {
@@ -427,13 +1646,14 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "black", "khaki"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class black { label = "Black"; };
                 class khaki { label = "Khaki"; };
             };
         };
         class ghost_ammo_fa_b_100rnd_65_xm893 {
-            label = "FA b 100Rnd 65 XM893";
+            label = "[Ghost] 100Rnd 6.5mm XM893";
+            rowName = "[Ghost] 100Rnd 6.5mm XM893";
             options[] = {"tracer", "finish"};
 
             class tracer {
@@ -453,14 +1673,15 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "black", "khaki"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class black { label = "Black"; };
                 class khaki { label = "Khaki"; };
             };
         };
         class ghost_ammo_fa_b_100rnd_65x39_caseless_mag {
-            label = "FA b 100Rnd 65x39 caseless mag";
-            options[] = {"tracer", "finish"};
+            label = "[Ghost] 100Rnd 6.5mm";
+            rowName = "[Ghost] 100Rnd 6.5mm";
+            options[] = {"tracer", "finish", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -479,14 +1700,24 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "black", "khaki"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class black { label = "Black"; };
                 class khaki { label = "Khaki"; };
             };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
         };
-        class ghost_ammo_fa_b_130rnd_338_mk372 {
-            label = "FA b 130Rnd 338 Mk372";
-            options[] = {"tracer"};
+        class ghost_ammo_fa_b_10rnd_338_mk371_250gr {
+            label = "[Ghost] 10Rnd .338 Mk371 250gr";
+            rowName = "[Ghost] 10Rnd .338 Mk371 250gr";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -500,11 +1731,381 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_10rnd_338_mk371_285gr {
+            label = "[Ghost] 10Rnd .338 Mk371 285gr";
+            rowName = "[Ghost] 10Rnd .338 Mk371 285gr";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_10rnd_338_mk371_300gr {
+            label = "[Ghost] 10Rnd .338 Mk371 300gr";
+            rowName = "[Ghost] 10Rnd .338 Mk371 300gr";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_10rnd_338_mk373_pab {
+            label = "[Ghost] 10Rnd .338 Mk373 PAB";
+            rowName = "[Ghost] 10Rnd .338 Mk373 PAB";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_10rnd_408_mk240 {
+            label = "[Ghost] 10Rnd .408 Mk240";
+            rowName = "[Ghost] 10Rnd .408 Mk240";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_11rnd_45acp_mk421 {
+            label = "[Ghost] 11Rnd .45 ACP Mk421";
+            rowName = "[Ghost] 11Rnd .45 ACP Mk421";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_130rnd_338_mk372 {
+            label = "[Ghost] 130Rnd .338 Mk372";
+            rowName = "[Ghost] 130Rnd .338 Mk372";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_16rnd_9x21_mk424_ap {
+            label = "[Ghost] 16Rnd 9x21mm Mk424 AP";
+            rowName = "[Ghost] 16Rnd 9x21mm Mk424 AP";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_1rnd_40mm_mk364_pab {
+            label = "[Ghost] 1Rnd 40mm Mk364 PAB";
+            rowName = "[Ghost] 1Rnd 40mm Mk364 PAB";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_1rnd_40mm_mk389_tbk {
+            label = "[Ghost] 1Rnd 40mm Mk389 TBK";
+            rowName = "[Ghost] 1Rnd 40mm Mk389 TBK";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_2000rnd_65x39_belt {
+            label = "[Ghost] 2000Rnd 6.5mm (Belt)";
+            rowName = "[Ghost] 2000Rnd 6.5mm (Belt)";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"white", "red", "green", "yellow", "blue", "orange"};
+
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_200rnd_127_mk211mod0 {
+            label = "[Ghost] 200Rnd 12.7mm Mk211Mod0 - 127";
+            rowName = "[Ghost] 200Rnd 12.7mm Mk211Mod0 - 127";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_200rnd_127_mk258 {
+            label = "[Ghost] 200Rnd 12.7mm Mk258 - 127";
+            rowName = "[Ghost] 200Rnd 12.7mm Mk258 - 127";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_200rnd_127x99_mk211mod0 {
+            label = "[Ghost] 200Rnd 12.7mm Mk211Mod0 - 127x99";
+            rowName = "[Ghost] 200Rnd 12.7mm Mk211Mod0 - 127x99";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_200rnd_127x99_mk258 {
+            label = "[Ghost] 200Rnd 12.7mm Mk258 - 127x99";
+            rowName = "[Ghost] 200Rnd 12.7mm Mk258 - 127x99";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_200rnd_338_mk372 {
+            label = "[Ghost] 200Rnd .338 Mk372";
+            rowName = "[Ghost] 200Rnd .338 Mk372";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_b_200rnd_556x45_box_f {
-            label = "FA b 200Rnd 556x45 Box F";
-            options[] = {"tracer"};
+            label = "[Ghost] 200Rnd 5.56mm (Box)";
+            rowName = "[Ghost] 200Rnd 5.56mm (Box)";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -518,11 +2119,21 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_b_200rnd_556x45_box_f_mk332_ap {
-            label = "FA b 200Rnd 556x45 Box F Mk332 AP";
-            options[] = {"tracer"};
+            label = "[Ghost] 200Rnd 5.56mm Mk332 AP (Box)";
+            rowName = "[Ghost] 200Rnd 5.56mm Mk332 AP (Box)";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -536,11 +2147,21 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_b_200rnd_556x45_box_f_xm891_ctep {
-            label = "FA b 200Rnd 556x45 Box F XM891 CTEP";
-            options[] = {"tracer"};
+            label = "[Ghost] 200Rnd 5.56mm XM891 CTEP (Box)";
+            rowName = "[Ghost] 200Rnd 5.56mm XM891 CTEP (Box)";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -555,9 +2176,19 @@ class XtdGearModels {
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
             };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
         };
         class ghost_ammo_fa_b_200rnd_65_mk328 {
-            label = "FA b 200Rnd 65 Mk328";
+            label = "[Ghost] 200Rnd 6.5mm Mk328";
+            rowName = "[Ghost] 200Rnd 6.5mm Mk328";
             options[] = {"tracer"};
 
             class tracer {
@@ -575,7 +2206,8 @@ class XtdGearModels {
             };
         };
         class ghost_ammo_fa_b_200rnd_65_mk331_ap {
-            label = "FA b 200Rnd 65 Mk331 AP";
+            label = "[Ghost] 200Rnd 6.5mm Mk331 AP";
+            rowName = "[Ghost] 200Rnd 6.5mm Mk331 AP";
             options[] = {"tracer"};
 
             class tracer {
@@ -593,8 +2225,9 @@ class XtdGearModels {
             };
         };
         class ghost_ammo_fa_b_200rnd_65_mk367_pab {
-            label = "FA b 200Rnd 65 Mk367 PAB";
-            options[] = {"tracer"};
+            label = "[Ghost] 200Rnd 6.5mm Mk367 PAB";
+            rowName = "[Ghost] 200Rnd 6.5mm Mk367 PAB";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -607,10 +2240,20 @@ class XtdGearModels {
                 class yellow { label = "Yellow"; };
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_b_200rnd_65_xm892 {
-            label = "FA b 200Rnd 65 XM892";
+            label = "[Ghost] 200Rnd 6.5mm XM892";
+            rowName = "[Ghost] 200Rnd 6.5mm XM892";
             options[] = {"tracer"};
 
             class tracer {
@@ -625,11 +2268,38 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_b_200rnd_65x39_belt {
+            label = "[Ghost] 200Rnd 6.5mm (Belt)";
+            rowName = "[Ghost] 200Rnd 6.5mm (Belt)";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"white", "red", "green", "yellow", "blue", "orange"};
+
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_b_200rnd_65x39_cased_box {
-            label = "FA b 200Rnd 65x39 cased Box";
-            options[] = {"tracer"};
+            label = "[Ghost] 200Rnd 6.5mm (Box)";
+            rowName = "[Ghost] 200Rnd 6.5mm (Box)";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -644,10 +2314,20 @@ class XtdGearModels {
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
             };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
         };
-        class ghost_ammo_fa_b_30rnd_556_mk327_hv {
-            label = "FA b 30Rnd 556 Mk327 HV";
-            options[] = {"tracer"};
+        class ghost_ammo_fa_b_200rnd_762_m80a2_hv {
+            label = "[Ghost] 200Rnd 7.62mm M80A2 HV";
+            rowName = "[Ghost] 200Rnd 7.62mm M80A2 HV";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -662,10 +2342,20 @@ class XtdGearModels {
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
             };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
         };
-        class ghost_ammo_fa_b_30rnd_556_mk332_ap {
-            label = "FA b 30Rnd 556 Mk332 AP";
-            options[] = {"tracer"};
+        class ghost_ammo_fa_b_200rnd_762_xm751_ctep {
+            label = "[Ghost] 200Rnd 7.62mm XM751 CTEP";
+            rowName = "[Ghost] 200Rnd 7.62mm XM751 CTEP";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -680,10 +2370,78 @@ class XtdGearModels {
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
             };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
         };
-        class ghost_ammo_fa_b_30rnd_556_mk361_pab {
-            label = "FA b 30Rnd 556 Mk361 PAB";
-            options[] = {"tracer"};
+        class ghost_ammo_fa_b_20rnd_57x28_mk430 {
+            label = "[Ghost] 20Rnd 5.7mm Mk430";
+            rowName = "[Ghost] 20Rnd 5.7mm Mk430";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_20rnd_57x28_mk431 {
+            label = "[Ghost] 20Rnd 5.7mm Mk431";
+            rowName = "[Ghost] 20Rnd 5.7mm Mk431";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_20rnd_762_m80a2_hv {
+            label = "[Ghost] 20Rnd 7.62mm M80A2 HV";
+            rowName = "[Ghost] 20Rnd 7.62mm M80A2 HV";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_20rnd_762_mk362_pab {
+            label = "[Ghost] 20Rnd 7.62mm Mk362 PAB";
+            rowName = "[Ghost] 20Rnd 7.62mm Mk362 PAB";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -697,10 +2455,32 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
             };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
         };
-        class ghost_ammo_fa_b_30rnd_556_xm891_ctep {
-            label = "FA b 30Rnd 556 XM891 CTEP";
-            options[] = {"tracer"};
+        class ghost_ammo_fa_b_20rnd_762_mk369k_ad {
+            label = "[Ghost] 20Rnd 7.62mm Mk369K AD";
+            rowName = "[Ghost] 20Rnd 7.62mm Mk369K AD";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_20rnd_762_mk369l_ad {
+            label = "[Ghost] 20Rnd 7.62mm Mk369L AD";
+            rowName = "[Ghost] 20Rnd 7.62mm Mk369L AD";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_20rnd_762_xm751_ctep {
+            label = "[Ghost] 20Rnd 7.62mm XM751 CTEP";
+            rowName = "[Ghost] 20Rnd 7.62mm XM751 CTEP";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -714,11 +2494,431 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_2rnd_12g_no0_buck {
+            label = "[Ghost] 2Rnd 12ga No0 Buck";
+            rowName = "[Ghost] 2Rnd 12ga No0 Buck";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_2rnd_12g_no1_buck {
+            label = "[Ghost] 2Rnd 12ga No1 Buck";
+            rowName = "[Ghost] 2Rnd 12ga No1 Buck";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_2rnd_12g_no2_buck {
+            label = "[Ghost] 2Rnd 12ga No2 Buck";
+            rowName = "[Ghost] 2Rnd 12ga No2 Buck";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_2rnd_12g_no3_buck {
+            label = "[Ghost] 2Rnd 12ga No3 Buck";
+            rowName = "[Ghost] 2Rnd 12ga No3 Buck";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_2rnd_12g_no4_bird {
+            label = "[Ghost] 2Rnd 12ga No4 Bird";
+            rowName = "[Ghost] 2Rnd 12ga No4 Bird";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_2rnd_12g_no4_buck {
+            label = "[Ghost] 2Rnd 12ga No4 Buck";
+            rowName = "[Ghost] 2Rnd 12ga No4 Buck";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_30rnd_300_mk335 {
+            label = "[Ghost] 30Rnd .300 BLK Mk335";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk335";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_30rnd_300_mk336 {
+            label = "[Ghost] 30Rnd .300 BLK Mk336";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk336";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_30rnd_300_mk337 {
+            label = "[Ghost] 30Rnd .300 BLK Mk337";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk337";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_30rnd_300_mk341_subap {
+            label = "[Ghost] 30Rnd .300 BLK Mk341 SubAP";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_30rnd_300_mk342_sub {
+            label = "[Ghost] 30Rnd .300 BLK Mk342 Sub";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk342 Sub";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_30rnd_300_mk343_sub {
+            label = "[Ghost] 30Rnd .300 BLK Mk343 Sub";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk343 Sub";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_30rnd_300_mk363_pab {
+            label = "[Ghost] 30Rnd .300 BLK Mk363 PAB";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk363 PAB";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_30rnd_300_xm345_subap2 {
+            label = "[Ghost] 30Rnd .300 BLK XM345 SubAP2";
+            rowName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_30rnd_45acp_mk421 {
+            label = "[Ghost] 30Rnd .45 ACP Mk421";
+            rowName = "[Ghost] 30Rnd .45 ACP Mk421";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_30rnd_556_mk327_hv {
+            label = "[Ghost] 30Rnd 5.56mm Mk327 HV";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk327 HV";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_30rnd_556_mk332_ap {
+            label = "[Ghost] 30Rnd 5.56mm Mk332 AP";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk332 AP";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_30rnd_556_mk361_pab {
+            label = "[Ghost] 30Rnd 5.56mm Mk361 PAB";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk361 PAB";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_30rnd_556_mk368k_ad {
+            label = "[Ghost] 30Rnd 5.56mm Mk368K AD";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk368K AD";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_30rnd_556_mk368l_ad {
+            label = "[Ghost] 30Rnd 5.56mm Mk368L AD";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk368L AD";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_30rnd_556_xm891_ctep {
+            label = "[Ghost] 30Rnd 5.56mm XM891 CTEP";
+            rowName = "[Ghost] 30Rnd 5.56mm XM891 CTEP";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_b_30rnd_65_epr {
-            label = "FA b 30Rnd 65 EPR";
-            options[] = {"tracer", "finish"};
+            label = "[Ghost] 30Rnd 6.5mm EPR";
+            rowName = "[Ghost] 30Rnd 6.5mm EPR";
+            options[] = {"tracer", "finish", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -737,14 +2937,24 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "black", "khaki"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class black { label = "Black"; };
                 class khaki { label = "Khaki"; };
             };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
         };
         class ghost_ammo_fa_b_30rnd_65_epr_msbs {
-            label = "FA b 30Rnd 65 EPR MSBS";
-            options[] = {"tracer"};
+            label = "[Ghost] 30Rnd 6.5mm EPR (MSBS)";
+            rowName = "[Ghost] 30Rnd 6.5mm EPR (MSBS)";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -759,9 +2969,19 @@ class XtdGearModels {
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
             };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
         };
         class ghost_ammo_fa_b_30rnd_65_mk328 {
-            label = "FA b 30Rnd 65 Mk328";
+            label = "[Ghost] 30Rnd 6.5mm Mk328";
+            rowName = "[Ghost] 30Rnd 6.5mm Mk328";
             options[] = {"tracer", "finish"};
 
             class tracer {
@@ -781,13 +3001,14 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "black", "khaki"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class black { label = "Black"; };
                 class khaki { label = "Khaki"; };
             };
         };
         class ghost_ammo_fa_b_30rnd_65_mk328_msbs {
-            label = "FA b 30Rnd 65 Mk328 MSBS";
+            label = "[Ghost] 30Rnd 6.5mm Mk328 (MSBS)";
+            rowName = "[Ghost] 30Rnd 6.5mm Mk328 (MSBS)";
             options[] = {"tracer"};
 
             class tracer {
@@ -805,7 +3026,8 @@ class XtdGearModels {
             };
         };
         class ghost_ammo_fa_b_30rnd_65_mk329 {
-            label = "FA b 30Rnd 65 Mk329";
+            label = "[Ghost] 30Rnd 6.5mm Mk329";
+            rowName = "[Ghost] 30Rnd 6.5mm Mk329";
             options[] = {"tracer", "finish"};
 
             class tracer {
@@ -825,13 +3047,14 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "black", "khaki"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class black { label = "Black"; };
                 class khaki { label = "Khaki"; };
             };
         };
         class ghost_ammo_fa_b_30rnd_65_mk329_msbs {
-            label = "FA b 30Rnd 65 Mk329 MSBS";
+            label = "[Ghost] 30Rnd 6.5mm Mk329 (MSBS)";
+            rowName = "[Ghost] 30Rnd 6.5mm Mk329 (MSBS)";
             options[] = {"tracer"};
 
             class tracer {
@@ -849,7 +3072,8 @@ class XtdGearModels {
             };
         };
         class ghost_ammo_fa_b_30rnd_65_mk331_ap {
-            label = "FA b 30Rnd 65 Mk331 AP";
+            label = "[Ghost] 30Rnd 6.5mm Mk331 AP";
+            rowName = "[Ghost] 30Rnd 6.5mm Mk331 AP";
             options[] = {"tracer", "finish"};
 
             class tracer {
@@ -869,13 +3093,14 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "black", "khaki"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class black { label = "Black"; };
                 class khaki { label = "Khaki"; };
             };
         };
         class ghost_ammo_fa_b_30rnd_65_mk331_ap_msbs {
-            label = "FA b 30Rnd 65 Mk331 AP MSBS";
+            label = "[Ghost] 30Rnd 6.5mm Mk331 AP (MSBS)";
+            rowName = "[Ghost] 30Rnd 6.5mm Mk331 AP (MSBS)";
             options[] = {"tracer"};
 
             class tracer {
@@ -893,8 +3118,9 @@ class XtdGearModels {
             };
         };
         class ghost_ammo_fa_b_30rnd_65_mk367_pab {
-            label = "FA b 30Rnd 65 Mk367 PAB";
-            options[] = {"tracer", "finish"};
+            label = "[Ghost] 30Rnd 6.5mm Mk367 PAB";
+            rowName = "[Ghost] 30Rnd 6.5mm Mk367 PAB";
+            options[] = {"tracer", "finish", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -912,14 +3138,24 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "green", "black"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class green { label = "Green"; };
                 class black { label = "Black"; };
             };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
         };
         class ghost_ammo_fa_b_30rnd_65_mk367_pab_msbs {
-            label = "FA b 30Rnd 65 Mk367 PAB MSBS";
-            options[] = {"tracer"};
+            label = "[Ghost] 30Rnd 6.5mm Mk367 PAB (MSBS)";
+            rowName = "[Ghost] 30Rnd 6.5mm Mk367 PAB (MSBS)";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -933,9 +3169,19 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
             };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
         };
         class ghost_ammo_fa_b_30rnd_65_xm892 {
-            label = "FA b 30Rnd 65 XM892";
+            label = "[Ghost] 30Rnd 6.5mm XM892";
+            rowName = "[Ghost] 30Rnd 6.5mm XM892";
             options[] = {"tracer", "finish"};
 
             class tracer {
@@ -955,13 +3201,14 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "black", "khaki"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class black { label = "Black"; };
                 class khaki { label = "Khaki"; };
             };
         };
         class ghost_ammo_fa_b_30rnd_65_xm892_msbs {
-            label = "FA b 30Rnd 65 XM892 MSBS";
+            label = "[Ghost] 30Rnd 6.5mm XM892 (MSBS)";
+            rowName = "[Ghost] 30Rnd 6.5mm XM892 (MSBS)";
             options[] = {"tracer"};
 
             class tracer {
@@ -979,7 +3226,8 @@ class XtdGearModels {
             };
         };
         class ghost_ammo_fa_b_30rnd_65_xm893 {
-            label = "FA b 30Rnd 65 XM893";
+            label = "[Ghost] 30Rnd 6.5mm XM893";
+            rowName = "[Ghost] 30Rnd 6.5mm XM893";
             options[] = {"tracer", "finish"};
 
             class tracer {
@@ -999,13 +3247,14 @@ class XtdGearModels {
                 label = "Finish";
                 values[] = {"default", "black", "khaki"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
                 class black { label = "Black"; };
                 class khaki { label = "Khaki"; };
             };
         };
         class ghost_ammo_fa_b_30rnd_65_xm893_msbs {
-            label = "FA b 30Rnd 65 XM893 MSBS";
+            label = "[Ghost] 30Rnd 6.5mm XM893 (MSBS)";
+            rowName = "[Ghost] 30Rnd 6.5mm XM893 (MSBS)";
             options[] = {"tracer"};
 
             class tracer {
@@ -1020,11 +3269,217 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_b_30rnd_9x21_smg_02_mk424_ap {
+            label = "[Ghost] 30Rnd 9x21mm Mk424 AP (SMG)";
+            rowName = "[Ghost] 30Rnd 9x21mm Mk424 AP (SMG)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_3rnd_40mm_mk364_pab {
+            label = "[Ghost] 3Rnd 40mm Mk364 PAB";
+            rowName = "[Ghost] 3Rnd 40mm Mk364 PAB";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_3rnd_40mm_mk389_tbk {
+            label = "[Ghost] 3Rnd 40mm Mk389 TBK";
+            rowName = "[Ghost] 3Rnd 40mm Mk389 TBK";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_500rnd_65x39_belt {
+            label = "[Ghost] 500Rnd 6.5mm (Belt)";
+            rowName = "[Ghost] 500Rnd 6.5mm (Belt)";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"white", "red", "green", "yellow", "blue", "orange"};
+
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_50rnd_57x28_mk430 {
+            label = "[Ghost] 50Rnd 5.7mm Mk430";
+            rowName = "[Ghost] 50Rnd 5.7mm Mk430";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_50rnd_57x28_mk431 {
+            label = "[Ghost] 50Rnd 5.7mm Mk431";
+            rowName = "[Ghost] 50Rnd 5.7mm Mk431";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_5rnd_127x108_mk211mod2 {
+            label = "[Ghost] 5Rnd 12.7x108mm Mk211Mod2";
+            rowName = "[Ghost] 5Rnd 12.7x108mm Mk211Mod2";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_5rnd_127x108_mk250 {
+            label = "[Ghost] 5Rnd 12.7x108mm Mk250";
+            rowName = "[Ghost] 5Rnd 12.7x108mm Mk250";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_6rnd_12g_no0_buck {
+            label = "[Ghost] 6Rnd 12ga No0 Buck";
+            rowName = "[Ghost] 6Rnd 12ga No0 Buck";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_6rnd_12g_no1_buck {
+            label = "[Ghost] 6Rnd 12ga No1 Buck";
+            rowName = "[Ghost] 6Rnd 12ga No1 Buck";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_6rnd_12g_no2_buck {
+            label = "[Ghost] 6Rnd 12ga No2 Buck";
+            rowName = "[Ghost] 6Rnd 12ga No2 Buck";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_6rnd_12g_no3_buck {
+            label = "[Ghost] 6Rnd 12ga No3 Buck";
+            rowName = "[Ghost] 6Rnd 12ga No3 Buck";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_6rnd_12g_no4_bird {
+            label = "[Ghost] 6Rnd 12ga No4 Bird";
+            rowName = "[Ghost] 6Rnd 12ga No4 Bird";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_6rnd_12g_no4_buck {
+            label = "[Ghost] 6Rnd 12ga No4 Buck";
+            rowName = "[Ghost] 6Rnd 12ga No4 Buck";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_b_6rnd_45acp_mk421 {
+            label = "[Ghost] 6Rnd .45 ACP Mk421";
+            rowName = "[Ghost] 6Rnd .45 ACP Mk421";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_7rnd_408_mk240 {
+            label = "[Ghost] 7Rnd .408 Mk240";
+            rowName = "[Ghost] 7Rnd .408 Mk240";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_b_ace_10rnd_762x51_sd {
-            label = "FA b ACE 10Rnd 762x51 SD";
-            options[] = {"tracer"};
+            label = "[Ghost] 10Rnd 7.62mm SD";
+            rowName = "[Ghost] 10Rnd 7.62mm SD";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -1038,11 +3493,21 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_b_ace_10rnd_762x51_sd_xm751_ctep {
-            label = "FA b ACE 10Rnd 762x51 SD XM751 CTEP";
-            options[] = {"tracer"};
+            label = "[Ghost] 10Rnd 7.62mm SD XM751 CTEP";
+            rowName = "[Ghost] 10Rnd 7.62mm SD XM751 CTEP";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -1056,11 +3521,21 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_b_ace_20rnd_762x51_m993_ap {
-            label = "FA b ACE 20Rnd 762x51 M993 AP";
-            options[] = {"tracer"};
+            label = "[Ghost] 20Rnd 7.62mm M993 AP";
+            rowName = "[Ghost] 20Rnd 7.62mm M993 AP";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -1074,11 +3549,21 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_b_ace_20rnd_762x51_m993_ap_xm751_ctep {
-            label = "FA b ACE 20Rnd 762x51 M993 AP XM751 CTEP";
-            options[] = {"tracer"};
+            label = "[Ghost] 20Rnd 7.62mm M993 AP XM751 CTEP";
+            rowName = "[Ghost] 20Rnd 7.62mm M993 AP XM751 CTEP";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -1092,11 +3577,47 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_b_pylonweapon_2000rnd_65x39_belt {
+            label = "[Ghost] 2000Rnd 6.5mm (Belt) - PylonWeapon";
+            rowName = "[Ghost] 2000Rnd 6.5mm (Belt) - PylonWeapon";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"white", "red", "green", "yellow", "blue", "orange"};
+
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_ef_100rnd_65x39_caseless_mag {
-            label = "FA EF 100Rnd 65x39 caseless mag";
-            options[] = {"tracer"};
+            label = "[Ghost] 100Rnd 6.5mm [EF]";
+            rowName = "[Ghost] 100Rnd 6.5mm [EF]";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -1110,11 +3631,21 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_ef_100rnd_65x39_caseless_mag_mk367_pab {
-            label = "FA EF 100Rnd 65x39 caseless mag Mk367 PAB";
-            options[] = {"tracer"};
+            label = "[Ghost] 100Rnd 6.5mm Mk367 PAB [EF]";
+            rowName = "[Ghost] 100Rnd 6.5mm Mk367 PAB [EF]";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -1127,11 +3658,21 @@ class XtdGearModels {
                 class yellow { label = "Yellow"; };
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_ef_30rnd_65x39_caseless_mag {
-            label = "FA EF 30Rnd 65x39 caseless mag";
-            options[] = {"tracer"};
+            label = "[Ghost] 30Rnd 6.5mm";
+            rowName = "[Ghost] 30Rnd 6.5mm";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -1145,11 +3686,21 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_ef_30rnd_65x39_caseless_mag_mk367_pab {
-            label = "FA EF 30Rnd 65x39 caseless mag Mk367 PAB";
-            options[] = {"tracer"};
+            label = "[Ghost] 30Rnd 6.5mm Mk367 PAB [EF]";
+            rowName = "[Ghost] 30Rnd 6.5mm Mk367 PAB [EF]";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -1162,11 +3713,21 @@ class XtdGearModels {
                 class yellow { label = "Yellow"; };
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_i_200rnd_556x45_box_f_af556_hv {
-            label = "FA i 200Rnd 556x45 Box F AF556 HV";
-            options[] = {"tracer"};
+            label = "[Ghost] 200Rnd 5.56mm AF556 HV (Box)";
+            rowName = "[Ghost] 200Rnd 5.56mm AF556 HV (Box)";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -1180,11 +3741,21 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_i_200rnd_556x45_box_f_af556c_ct {
-            label = "FA i 200Rnd 556x45 Box F AF556C CT";
-            options[] = {"tracer"};
+            label = "[Ghost] 200Rnd 5.56mm AF556C CT (Box)";
+            rowName = "[Ghost] 200Rnd 5.56mm AF556C CT (Box)";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -1198,11 +3769,21 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_i_200rnd_556x45_box_f_af556p_ap {
-            label = "FA i 200Rnd 556x45 Box F AF556P AP";
-            options[] = {"tracer"};
+            label = "[Ghost] 200Rnd 5.56mm AF556P AP (Box)";
+            rowName = "[Ghost] 200Rnd 5.56mm AF556P AP (Box)";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -1216,11 +3797,105 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_i_20rnd_762_af762_hv {
+            label = "[Ghost] 20Rnd 7.62mm AF762 HV";
+            rowName = "[Ghost] 20Rnd 7.62mm AF762 HV";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_i_20rnd_762_af762c_ct {
+            label = "[Ghost] 20Rnd 7.62mm AF762C CT";
+            rowName = "[Ghost] 20Rnd 7.62mm AF762C CT";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_i_20rnd_762_af762p_ap {
+            label = "[Ghost] 20Rnd 7.62mm AF762P AP";
+            rowName = "[Ghost] 20Rnd 7.62mm AF762P AP";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_i_30rnd_556_af556_hv {
-            label = "FA i 30Rnd 556 AF556 HV";
-            options[] = {"tracer"};
+            label = "[Ghost] 30Rnd 5.56mm AF556 HV";
+            rowName = "[Ghost] 30Rnd 5.56mm AF556 HV";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -1234,11 +3909,21 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_i_30rnd_556_af556c_ct {
-            label = "FA i 30Rnd 556 AF556C CT";
-            options[] = {"tracer"};
+            label = "[Ghost] 30Rnd 5.56mm AF556C CT";
+            rowName = "[Ghost] 30Rnd 5.56mm AF556C CT";
+            options[] = {"tracer", "tier"};
 
             class tracer {
                 label = "Tracer";
@@ -1252,10 +3937,354 @@ class XtdGearModels {
                 class blue { label = "Blue"; };
                 class orange { label = "Orange"; };
                 class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
             };
         };
         class ghost_ammo_fa_i_30rnd_556_af556p_ap {
-            label = "FA i 30Rnd 556 AF556P AP";
+            label = "[Ghost] 30Rnd 5.56mm AF556P AP";
+            rowName = "[Ghost] 30Rnd 5.56mm AF556P AP";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_lot_6rnd_12g_mk350_tbs {
+            label = "[Ghost] 6Rnd 12ga Mk350 TBS";
+            rowName = "[Ghost] 6Rnd 12ga Mk350 TBS";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_lot_6rnd_12g_mk351_fle {
+            label = "[Ghost] 6Rnd 12ga Mk351 FLE";
+            rowName = "[Ghost] 6Rnd 12ga Mk351 FLE";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_lot_6rnd_12g_mk352_aps {
+            label = "[Ghost] 6Rnd 12ga Mk352 APS";
+            rowName = "[Ghost] 6Rnd 12ga Mk352 APS";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_lot_6rnd_12g_mk353_brc {
+            label = "[Ghost] 6Rnd 12ga Mk353 BRC";
+            rowName = "[Ghost] 6Rnd 12ga Mk353 BRC";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_lot_6rnd_12g_mk360_ad {
+            label = "[Ghost] 6Rnd 12ga Mk360 AD";
+            rowName = "[Ghost] 6Rnd 12ga Mk360 AD";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_lot_6rnd_12g_mk363_pabs {
+            label = "[Ghost] 6Rnd 12ga Mk363 PABS";
+            rowName = "[Ghost] 6Rnd 12ga Mk363 PABS";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_lot_8rnd_12g_mk350_tbs {
+            label = "[Ghost] 8Rnd 12ga Mk350 TBS";
+            rowName = "[Ghost] 8Rnd 12ga Mk350 TBS";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_lot_8rnd_12g_mk351_fle {
+            label = "[Ghost] 8Rnd 12ga Mk351 FLE";
+            rowName = "[Ghost] 8Rnd 12ga Mk351 FLE";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_lot_8rnd_12g_mk352_aps {
+            label = "[Ghost] 8Rnd 12ga Mk352 APS";
+            rowName = "[Ghost] 8Rnd 12ga Mk352 APS";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_lot_8rnd_12g_mk353_brc {
+            label = "[Ghost] 8Rnd 12ga Mk353 BRC";
+            rowName = "[Ghost] 8Rnd 12ga Mk353 BRC";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_lot_8rnd_12g_mk360_ad {
+            label = "[Ghost] 8Rnd 12ga Mk360 AD";
+            rowName = "[Ghost] 8Rnd 12ga Mk360 AD";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_lot_8rnd_12g_mk363_pabs {
+            label = "[Ghost] 8Rnd 12ga Mk363 PABS";
+            rowName = "[Ghost] 8Rnd 12ga Mk363 PABS";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mcc_ak_pmag_545_30_ball_545x39_7n44_hp {
+            label = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG)";
+            rowName = "[Ghost] 30Rnd 5.45mm Ball 7N44 HP (AK, PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_ak_pmag_545_30_ball_545x39_7n48_ct {
+            label = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG)";
+            rowName = "[Ghost] 30Rnd 5.45mm Ball 7N48 CT (AK, PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_ak_pmag_545_30_ball_545x39_7u5_subap {
+            label = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG)";
+            rowName = "[Ghost] 30Rnd 5.45mm Ball 7U5 SubAP (AK, PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_ak_pmag_556_556_30_m855_556_mk327_hv {
+            label = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk327 HV (AK, PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_ak_pmag_556_556_30_m855_556_mk332_ap {
+            label = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk332 AP (AK, PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_ak_pmag_556_556_30_m855_556_xm891_ctep {
+            label = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG)";
+            rowName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (AK, PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_ak_pmag_762_30_123hp_762x39_7n43 {
+            label = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG)";
+            rowName = "[Ghost] 30Rnd 7.62mm 7N43 (AK, PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_ak_pmag_762_30_123hp_762x39_7n47_ct {
+            label = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG)";
+            rowName = "[Ghost] 30Rnd 7.62mm 7N47 CT (AK, PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_ak_pmag_762_30_123hp_762x39_7u4_sub {
+            label = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG)";
+            rowName = "[Ghost] 30Rnd 7.62mm 7U4 Sub (AK, PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_d60_556_60_m855_556_mk327_hv {
+            label = "[Ghost] 60Rnd 5.56mm Mk327 HV (D60)";
+            rowName = "[Ghost] 60Rnd 5.56mm Mk327 HV (D60)";
             options[] = {"tracer"};
 
             class tracer {
@@ -1272,220 +4301,180 @@ class XtdGearModels {
                 class ir { label = "IR"; };
             };
         };
-        class ghost_ammo_fa_jca_20rnd_762x51_pmag {
-            label = "FA JCA 20Rnd 762x51 PMAG";
-            options[] = {"tracer", "finish"};
+        class ghost_ammo_fa_mcc_d60_556_60_m855_556_mk332_ap {
+            label = "[Ghost] 60Rnd 5.56mm Mk332 AP (D60)";
+            rowName = "[Ghost] 60Rnd 5.56mm Mk332 AP (D60)";
+            options[] = {"tracer"};
 
             class tracer {
                 label = "Tracer";
-                values[] = {"blue", "ir"};
-
-                class blue { label = "Blue"; };
-                class ir { label = "IR"; };
-            };
-            class finish {
-                label = "Finish";
-                values[] = {"default", "sand"};
-
-                class default { label = "Default"; };
-                class sand { label = "Sand"; };
-            };
-        };
-        class ghost_ammo_fa_jca_30rnd_300blk_emag {
-            label = "FA JCA 30Rnd 300BLK EMAG";
-            options[] = {"tracer", "finish"};
-
-            class tracer {
-                label = "Tracer";
-                values[] = {"blue", "ir"};
-
-                class blue { label = "Blue"; };
-                class ir { label = "IR"; };
-            };
-            class finish {
-                label = "Finish";
-                values[] = {"default", "sand"};
-
-                class default { label = "Default"; };
-                class sand { label = "Sand"; };
-            };
-        };
-        class ghost_ammo_fa_jca_30rnd_300blk_emag_mk335 {
-            label = "FA JCA 30Rnd 300BLK EMAG Mk335";
-            options[] = {"tracer", "finish"};
-
-            class tracer {
-                label = "Tracer";
-                values[] = {"blue", "ir"};
-
-                class blue { label = "Blue"; };
-                class ir { label = "IR"; };
-            };
-            class finish {
-                label = "Finish";
-                values[] = {"default", "sand"};
-
-                class default { label = "Default"; };
-                class sand { label = "Sand"; };
-            };
-        };
-        class ghost_ammo_fa_jca_30rnd_300blk_emag_mk336 {
-            label = "FA JCA 30Rnd 300BLK EMAG Mk336";
-            options[] = {"tracer", "finish"};
-
-            class tracer {
-                label = "Tracer";
-                values[] = {"blue", "ir"};
-
-                class blue { label = "Blue"; };
-                class ir { label = "IR"; };
-            };
-            class finish {
-                label = "Finish";
-                values[] = {"default", "sand"};
-
-                class default { label = "Default"; };
-                class sand { label = "Sand"; };
-            };
-        };
-        class ghost_ammo_fa_jca_30rnd_300blk_emag_mk337 {
-            label = "FA JCA 30Rnd 300BLK EMAG Mk337";
-            options[] = {"tracer", "finish"};
-
-            class tracer {
-                label = "Tracer";
-                values[] = {"blue", "ir"};
-
-                class blue { label = "Blue"; };
-                class ir { label = "IR"; };
-            };
-            class finish {
-                label = "Finish";
-                values[] = {"default", "sand"};
-
-                class default { label = "Default"; };
-                class sand { label = "Sand"; };
-            };
-        };
-        class ghost_ammo_fa_jca_30rnd_300blk_emag_mk342 {
-            label = "FA JCA 30Rnd 300BLK EMAG Mk342";
-            options[] = {"tracer", "finish"};
-
-            class tracer {
-                label = "Tracer";
-                values[] = {"blue", "ir"};
-
-                class blue { label = "Blue"; };
-                class ir { label = "IR"; };
-            };
-            class finish {
-                label = "Finish";
-                values[] = {"default", "sand"};
-
-                class default { label = "Default"; };
-                class sand { label = "Sand"; };
-            };
-        };
-        class ghost_ammo_fa_jca_30rnd_300blk_emag_mk343 {
-            label = "FA JCA 30Rnd 300BLK EMAG Mk343";
-            options[] = {"tracer", "finish"};
-
-            class tracer {
-                label = "Tracer";
-                values[] = {"blue", "ir"};
-
-                class blue { label = "Blue"; };
-                class ir { label = "IR"; };
-            };
-            class finish {
-                label = "Finish";
-                values[] = {"default", "sand"};
-
-                class default { label = "Default"; };
-                class sand { label = "Sand"; };
-            };
-        };
-        class ghost_ammo_fa_jca_30rnd_556x45_emag {
-            label = "FA JCA 30Rnd 556x45 EMAG";
-            options[] = {"tracer", "finish"};
-
-            class tracer {
-                label = "Tracer";
-                values[] = {"ball", "blue", "ir"};
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
 
                 class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
                 class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
                 class ir { label = "IR"; };
             };
-            class finish {
-                label = "Finish";
-                values[] = {"default", "sand"};
-
-                class default { label = "Default"; };
-                class sand { label = "Sand"; };
-            };
         };
-        class ghost_ammo_fa_jca_30rnd_556x45_emag_mk332_ap {
-            label = "FA JCA 30Rnd 556x45 EMAG Mk332 AP";
-            options[] = {"tracer", "finish"};
+        class ghost_ammo_fa_mcc_d60_556_60_m855_556_xm891_ctep {
+            label = "[Ghost] 60Rnd 5.56mm XM891 CTEP (D60)";
+            rowName = "[Ghost] 60Rnd 5.56mm XM891 CTEP (D60)";
+            options[] = {"tracer"};
 
             class tracer {
                 label = "Tracer";
-                values[] = {"ball", "blue", "ir"};
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
 
                 class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
                 class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
                 class ir { label = "IR"; };
             };
-            class finish {
-                label = "Finish";
-                values[] = {"default", "sand"};
-
-                class default { label = "Default"; };
-                class sand { label = "Sand"; };
-            };
         };
-        class ghost_ammo_fa_jca_30rnd_556x45_emag_mk361_pab {
-            label = "FA JCA 30Rnd 556x45 EMAG Mk361 PAB";
-            options[] = {"tracer", "finish"};
+        class ghost_ammo_fa_mcc_hk_300_30_125otm_300_mk335 {
+            label = "[Ghost] 30Rnd .300 BLK Mk335 (HK)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk335 (HK)";
+            options[] = {"tracer"};
 
             class tracer {
                 label = "Tracer";
-                values[] = {"ball", "blue"};
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
 
                 class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
                 class blue { label = "Blue"; };
-            };
-            class finish {
-                label = "Finish";
-                values[] = {"default", "sand"};
-
-                class default { label = "Default"; };
-                class sand { label = "Sand"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
             };
         };
-        class ghost_ammo_fa_jca_30rnd_556x45_emag_xm891_ctep {
-            label = "FA JCA 30Rnd 556x45 EMAG XM891 CTEP";
-            options[] = {"tracer", "finish"};
+        class ghost_ammo_fa_mcc_hk_300_30_125otm_300_mk336 {
+            label = "[Ghost] 30Rnd .300 BLK Mk336 (HK)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk336 (HK)";
+            options[] = {"tracer"};
 
             class tracer {
                 label = "Tracer";
-                values[] = {"ball", "blue", "ir"};
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
 
                 class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
                 class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
                 class ir { label = "IR"; };
             };
-            class finish {
-                label = "Finish";
-                values[] = {"default", "sand"};
+        };
+        class ghost_ammo_fa_mcc_hk_300_30_125otm_300_mk337 {
+            label = "[Ghost] 30Rnd .300 BLK Mk337 (HK)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk337 (HK)";
+            options[] = {"tracer"};
 
-                class default { label = "Default"; };
-                class sand { label = "Sand"; };
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
             };
         };
-        class ghost_ammo_fa_jca_30rnd_556x45_pmag {
-            label = "FA JCA 30Rnd 556x45 PMAG";
+        class ghost_ammo_fa_mcc_hk_300_30_125otm_300_mk341_subap {
+            label = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (HK)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (HK)";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_hk_300_30_125otm_300_mk342_sub {
+            label = "[Ghost] 30Rnd .300 BLK Mk342 Sub (HK)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (HK)";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_hk_300_30_125otm_300_mk343_sub {
+            label = "[Ghost] 30Rnd .300 BLK Mk343 Sub (HK)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (HK)";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_hk_300_30_125otm_300_xm345_subap2 {
+            label = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (HK)";
+            rowName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (HK)";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_hk_556_30_m855_556_mk327_hv {
+            label = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk327 HV (HK)";
             options[] = {"tracer", "finish"};
 
             class tracer {
@@ -1503,15 +4492,16 @@ class XtdGearModels {
             };
             class finish {
                 label = "Finish";
-                values[] = {"default", "green", "sand"};
+                values[] = {"black", "fde", "ral"};
 
-                class default { label = "Default"; };
-                class green { label = "Green"; };
-                class sand { label = "Sand"; };
+                class black { label = "Black"; };
+                class fde { label = "FDE"; };
+                class ral { label = "RAL 8000"; };
             };
         };
-        class ghost_ammo_fa_jca_30rnd_556x45_pmag_mk332_ap {
-            label = "FA JCA 30Rnd 556x45 PMAG Mk332 AP";
+        class ghost_ammo_fa_mcc_hk_556_30_m855_556_mk332_ap {
+            label = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk332 AP (HK)";
             options[] = {"tracer", "finish"};
 
             class tracer {
@@ -1529,15 +4519,3536 @@ class XtdGearModels {
             };
             class finish {
                 label = "Finish";
-                values[] = {"default", "green", "sand"};
+                values[] = {"black", "fde", "ral"};
 
-                class default { label = "Default"; };
-                class green { label = "Green"; };
-                class sand { label = "Sand"; };
+                class black { label = "Black"; };
+                class fde { label = "FDE"; };
+                class ral { label = "RAL 8000"; };
             };
         };
-        class ghost_ammo_fa_jca_30rnd_556x45_pmag_mk361_pab {
-            label = "FA JCA 30Rnd 556x45 PMAG Mk361 PAB";
+        class ghost_ammo_fa_mcc_hk_556_30_m855_556_xm891_ctep {
+            label = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK)";
+            rowName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (HK)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"black", "fde", "ral"};
+
+                class black { label = "Black"; };
+                class fde { label = "FDE"; };
+                class ral { label = "RAL 8000"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_icar_6arc_25rd_gpr_6arc_mk333_lr {
+            label = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR)";
+            rowName = "[Ghost] 25Rnd 6mm ARC GPR Mk333 (ICAR, LR)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_icar_6arc_25rd_gpr_6arc_xm895_ctep {
+            label = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR)";
+            rowName = "[Ghost] 25Rnd 6mm ARC GPR XM895 CTEP (ICAR)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_icm_6arc_20rd_gpr_6arc_mk333_lr {
+            label = "[Ghost] 20Rnd 6mm ARC ICM GPR Mk333 (LR)";
+            rowName = "[Ghost] 20Rnd 6mm ARC ICM GPR Mk333 (LR)";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_icm_6arc_20rd_gpr_6arc_xm895_ctep {
+            label = "[Ghost] 20Rnd 6mm ARC ICM GPR XM895 CTEP";
+            rowName = "[Ghost] 20Rnd 6mm ARC ICM GPR XM895 CTEP";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_l54awm_556_556_30_m855_556_mk327_hv {
+            label = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk327 HV (L5 AWM)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde", "de"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+                class de { label = "Dark Earth"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_l54awm_556_556_30_m855_556_mk332_ap {
+            label = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk332 AP (L5 AWM)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde", "de"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+                class de { label = "Dark Earth"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_l54awm_556_556_30_m855_556_xm891_ctep {
+            label = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM)";
+            rowName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (L5 AWM)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde", "de"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+                class de { label = "Dark Earth"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_l5awm_300_30_125otm_300_mk335 {
+            label = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk335 (L5 AWM)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "de"};
+
+                class Default { label = "Default"; };
+                class de { label = "Dark Earth"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_l5awm_300_30_125otm_300_mk336 {
+            label = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk336 (L5 AWM)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "de"};
+
+                class Default { label = "Default"; };
+                class de { label = "Dark Earth"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_l5awm_300_30_125otm_300_mk337 {
+            label = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk337 (L5 AWM)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "de"};
+
+                class Default { label = "Default"; };
+                class de { label = "Dark Earth"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_l5awm_300_30_125otm_300_mk341_subap {
+            label = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (L5 AWM)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "de"};
+
+                class Default { label = "Default"; };
+                class de { label = "Dark Earth"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_l5awm_300_30_125otm_300_mk342_sub {
+            label = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (L5 AWM)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "de"};
+
+                class Default { label = "Default"; };
+                class de { label = "Dark Earth"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_l5awm_300_30_125otm_300_mk343_sub {
+            label = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (L5 AWM)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "de"};
+
+                class Default { label = "Default"; };
+                class de { label = "Dark Earth"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_l5awm_300_30_125otm_300_xm345_subap2 {
+            label = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM)";
+            rowName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (L5 AWM)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "de"};
+
+                class Default { label = "Default"; };
+                class de { label = "Dark Earth"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_300_30_125otm_300_mk335 {
+            label = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk335 (PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_300_30_125otm_300_mk336 {
+            label = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk336 (PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_300_30_125otm_300_mk337 {
+            label = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk337 (PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_300_30_125otm_300_mk341_subap {
+            label = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_300_30_125otm_300_mk342_sub {
+            label = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_300_30_125otm_300_mk343_sub {
+            label = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_300_30_125otm_300_xm345_subap2 {
+            label = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG)";
+            rowName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_556_40_m855_556_mk327_hv {
+            label = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG)";
+            rowName = "[Ghost] 40Rnd 5.56mm Mk327 HV (PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_556_40_m855_556_mk332_ap {
+            label = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG)";
+            rowName = "[Ghost] 40Rnd 5.56mm Mk332 AP (PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_556_40_m855_556_xm891_ctep {
+            label = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG)";
+            rowName = "[Ghost] 40Rnd 5.56mm XM891 CTEP (PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_556_556_30_m855_556_mk327_hv {
+            label = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC]";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [MCC]";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_556_556_30_m855_556_mk332_ap {
+            label = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC]";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [MCC]";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_556_556_30_m855_556_xm891_ctep {
+            label = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC]";
+            rowName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [MCC]";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_65x43_25_103rrlp_65x43_mk331_epr {
+            label = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG)";
+            rowName = "[Ghost] 25Rnd 6.5x43mm Mk331 EPR (PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_65x43_25_103rrlp_65x43_xm894_ctep {
+            label = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG)";
+            rowName = "[Ghost] 25Rnd 6.5x43mm XM894 CTEP (PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_68spc_25_110vmax_68_mk334_tc {
+            label = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG)";
+            rowName = "[Ghost] 25Rnd 6.8 SPC Mk334 TC (PMAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_g1_556_30_m855_556_mk327_hv {
+            label = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG, Gen 1)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_g1_556_30_m855_556_mk332_ap {
+            label = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG, Gen 1)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_g1_556_30_m855_556_xm891_ctep {
+            label = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1)";
+            rowName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG, Gen 1)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_tti_300_35_125otm_300_mk335 {
+            label = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI)";
+            rowName = "[Ghost] 35Rnd .300 BLK Mk335 (PMAG, TTI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_tti_300_35_125otm_300_mk336 {
+            label = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI)";
+            rowName = "[Ghost] 35Rnd .300 BLK Mk336 (PMAG, TTI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_tti_300_35_125otm_300_mk337 {
+            label = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI)";
+            rowName = "[Ghost] 35Rnd .300 BLK Mk337 (PMAG, TTI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_tti_300_35_125otm_300_mk341_subap {
+            label = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI)";
+            rowName = "[Ghost] 35Rnd .300 BLK Mk341 SubAP (PMAG, TTI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_tti_300_35_125otm_300_mk342_sub {
+            label = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI)";
+            rowName = "[Ghost] 35Rnd .300 BLK Mk342 Sub (PMAG, TTI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_tti_300_35_125otm_300_mk343_sub {
+            label = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI)";
+            rowName = "[Ghost] 35Rnd .300 BLK Mk343 Sub (PMAG, TTI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_tti_300_35_125otm_300_xm345_subap2 {
+            label = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI)";
+            rowName = "[Ghost] 35Rnd .300 BLK XM345 SubAP2 (PMAG, TTI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_tti_556_35_m855_556_mk327_hv {
+            label = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI)";
+            rowName = "[Ghost] 35Rnd 5.56mm Mk327 HV (PMAG, TTI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_tti_556_35_m855_556_mk332_ap {
+            label = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI)";
+            rowName = "[Ghost] 35Rnd 5.56mm Mk332 AP (PMAG, TTI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_pmag_tti_556_35_m855_556_xm891_ctep {
+            label = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI)";
+            rowName = "[Ghost] 35Rnd 5.56mm XM891 CTEP (PMAG, TTI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_stanag_762_28_123hp_762x39_7n43 {
+            label = "[Ghost] 28Rnd 7.62mm 7N43 (STANAG)";
+            rowName = "[Ghost] 28Rnd 7.62mm 7N43 (STANAG)";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_stanag_762_28_123hp_762x39_7n47_ct {
+            label = "[Ghost] 28Rnd 7.62mm 7N47 CT (STANAG)";
+            rowName = "[Ghost] 28Rnd 7.62mm 7N47 CT (STANAG)";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_stanag_762_28_123hp_762x39_7u4_sub {
+            label = "[Ghost] 28Rnd 7.62mm 7U4 Sub (STANAG)";
+            rowName = "[Ghost] 28Rnd 7.62mm 7U4 Sub (STANAG)";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_usgi_300_30_125otm_300_mk335 {
+            label = "[Ghost] 30Rnd .300 BLK Mk335 (USGI)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk335 (USGI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_usgi_300_30_125otm_300_mk336 {
+            label = "[Ghost] 30Rnd .300 BLK Mk336 (USGI)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk336 (USGI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_usgi_300_30_125otm_300_mk337 {
+            label = "[Ghost] 30Rnd .300 BLK Mk337 (USGI)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk337 (USGI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_usgi_300_30_125otm_300_mk341_subap {
+            label = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk341 SubAP (USGI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_usgi_300_30_125otm_300_mk342_sub {
+            label = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk342 Sub (USGI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_usgi_300_30_125otm_300_mk343_sub {
+            label = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI)";
+            rowName = "[Ghost] 30Rnd .300 BLK Mk343 Sub (USGI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_usgi_300_30_125otm_300_xm345_subap2 {
+            label = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI)";
+            rowName = "[Ghost] 30Rnd .300 BLK XM345 SubAP2 (USGI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_usgi_556_556_30_m855_556_mk327_hv {
+            label = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk327 HV (USGI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_usgi_556_556_30_m855_556_mk332_ap {
+            label = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk332 AP (USGI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mcc_usgi_556_556_30_m855_556_xm891_ctep {
+            label = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI)";
+            rowName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (USGI)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mpp_13rnd_45acp_185fmj_sti_45acp_mk421_subap {
+            label = "[Ghost] 13Rnd .45 ACP Mk421 SubAP (STI)";
+            rowName = "[Ghost] 13Rnd .45 ACP Mk421 SubAP (STI)";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_mpp_13rnd_9mm_115fmj_cr920_9x19_mk422_ap {
+            label = "[Ghost] 13Rnd 9mm CR920 Mk422 AP";
+            rowName = "[Ghost] 13Rnd 9mm CR920 Mk422 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_15rnd_9mm_115fmj_cz_9x19_mk422_ap {
+            label = "[Ghost] 15Rnd 9mm CZ Mk422 AP";
+            rowName = "[Ghost] 15Rnd 9mm CZ Mk422 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_15rnd_9mm_115fmj_g19_9x19_mk422_ap {
+            label = "[Ghost] 15Rnd 9mm Mk422 AP (G19)";
+            rowName = "[Ghost] 15Rnd 9mm Mk422 AP (G19)";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_15rnd_9mm_115fmj_p10c_9x19_mk422_ap {
+            label = "[Ghost] 15Rnd 9mm P10C Mk422 AP";
+            rowName = "[Ghost] 15Rnd 9mm P10C Mk422 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_15rnd_9mm_115fmj_p226_9x19_mk422_ap {
+            label = "[Ghost] 15Rnd 9mm P226 Mk422 AP";
+            rowName = "[Ghost] 15Rnd 9mm P226 Mk422 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_15rnd_9mm_115fmj_sfp9_9x19_mk422_ap {
+            label = "[Ghost] 15Rnd 9mm SFP9 Mk422 AP";
+            rowName = "[Ghost] 15Rnd 9mm SFP9 Mk422 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_17rnd_9mm_115fmj_g17_9x19_mk422_ap {
+            label = "[Ghost] 17Rnd 9mm G17 Mk422 AP";
+            rowName = "[Ghost] 17Rnd 9mm G17 Mk422 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_17rnd_9mm_115fmj_m9_9x19_mk422_ap {
+            label = "[Ghost] 17Rnd 9mm M9 Mk422 AP";
+            rowName = "[Ghost] 17Rnd 9mm M9 Mk422 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_17rnd_9mm_115fmj_p320_9x19_mk422_ap {
+            label = "[Ghost] 17Rnd 9mm Mk422 AP (P320)";
+            rowName = "[Ghost] 17Rnd 9mm Mk422 AP (P320)";
+            options[] = {"finish"};
+
+            class finish {
+                label = "Finish";
+                values[] = {"default", "fde"};
+
+                class Default { label = "Default"; };
+                class fde { label = "FDE"; };
+            };
+        };
+        class ghost_ammo_fa_mpp_18rnd_9mm_115fmj_pdp_9x19_mk422_ap {
+            label = "[Ghost] 18Rnd 9mm Mk422 AP (PDP)";
+            rowName = "[Ghost] 18Rnd 9mm Mk422 AP (PDP)";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_18rnd_9mm_115fmj_tp9_9x19_mk422_ap {
+            label = "[Ghost] 18Rnd 9mm TP9 Mk422 AP";
+            rowName = "[Ghost] 18Rnd 9mm TP9 Mk422 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_19rnd_9mm_115fmj_czpo9_9x19_mk422_ap {
+            label = "[Ghost] 19Rnd 9mm CZPO9 Mk422 AP";
+            rowName = "[Ghost] 19Rnd 9mm CZPO9 Mk422 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_19rnd_9mm_115fmj_sfp9_9x19_mk422_ap {
+            label = "[Ghost] 19Rnd 9mm SFP9 Mk422 AP";
+            rowName = "[Ghost] 19Rnd 9mm SFP9 Mk422 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_20rnd_57_ball_five7_57_mk430 {
+            label = "[Ghost] 20Rnd 5.7mm Ball Mk430 (Five-seveN)";
+            rowName = "[Ghost] 20Rnd 5.7mm Ball Mk430 (Five-seveN)";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_20rnd_57_ball_five7_57_mk431 {
+            label = "[Ghost] 20Rnd 5.7mm Ball Mk431 (Five-seveN)";
+            rowName = "[Ghost] 20Rnd 5.7mm Ball Mk431 (Five-seveN)";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_20rnd_9mm_115fmj_cz_9x19_mk422_ap {
+            label = "[Ghost] 20Rnd 9mm CZ Mk422 AP";
+            rowName = "[Ghost] 20Rnd 9mm CZ Mk422 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_20rnd_9mm_115fmj_g19_9x19_mk422_ap {
+            label = "[Ghost] 20Rnd 9mm Mk422 AP (G19)";
+            rowName = "[Ghost] 20Rnd 9mm Mk422 AP (G19)";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_20rnd_9mm_115fmj_m9_9x19_mk422_ap {
+            label = "[Ghost] 20Rnd 9mm M9 Mk422 AP";
+            rowName = "[Ghost] 20Rnd 9mm M9 Mk422 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_20rnd_9mm_115fmj_p226_9x19_mk422_ap {
+            label = "[Ghost] 20Rnd 9mm P226 Mk422 AP";
+            rowName = "[Ghost] 20Rnd 9mm P226 Mk422 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_21rnd_9mm_115fmj_czpo9_9x19_mk422_ap {
+            label = "[Ghost] 21Rnd 9mm CZPO9 Mk422 AP";
+            rowName = "[Ghost] 21Rnd 9mm CZPO9 Mk422 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_21rnd_9mm_115fmj_sti_9x19_mk422_ap {
+            label = "[Ghost] 21Rnd 9mm Mk422 AP (STI)";
+            rowName = "[Ghost] 21Rnd 9mm Mk422 AP (STI)";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_22rnd_9mm_115fmj_g17_9x19_mk422_ap {
+            label = "[Ghost] 22Rnd 9mm G17 Mk422 AP";
+            rowName = "[Ghost] 22Rnd 9mm G17 Mk422 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_22rnd_9mm_115fmj_p320_9x19_mk422_ap {
+            label = "[Ghost] 22Rnd 9mm Mk422 AP (P320)";
+            rowName = "[Ghost] 22Rnd 9mm Mk422 AP (P320)";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_23rnd_9mm_115fmj_mp9_9x19_mk422_ap {
+            label = "[Ghost] 23Rnd 9mm MP9 Mk422 AP";
+            rowName = "[Ghost] 23Rnd 9mm MP9 Mk422 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_23rnd_9mm_115fmj_pdp_9x19_mk422_ap {
+            label = "[Ghost] 23Rnd 9mm Mk422 AP (PDP)";
+            rowName = "[Ghost] 23Rnd 9mm Mk422 AP (PDP)";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_30rnd_57_ball_five7_57_mk430 {
+            label = "[Ghost] 30Rnd 5.7mm Ball Mk430 (Five-seveN)";
+            rowName = "[Ghost] 30Rnd 5.7mm Ball Mk430 (Five-seveN)";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mpp_30rnd_57_ball_five7_57_mk431 {
+            label = "[Ghost] 30Rnd 5.7mm Ball Mk431 (Five-seveN)";
+            rowName = "[Ghost] 30Rnd 5.7mm Ball Mk431 (Five-seveN)";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mraws_aam517_sr {
+            label = "[Ghost] MRAWS AAM517 SR";
+            rowName = "[Ghost] MRAWS AAM517 SR";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mraws_adm484_prox {
+            label = "[Ghost] MRAWS ADM484 PROX";
+            rowName = "[Ghost] MRAWS ADM484 PROX";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mraws_adm486_can {
+            label = "[Ghost] MRAWS ADM486 CAN";
+            rowName = "[Ghost] MRAWS ADM486 CAN";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mraws_adm487_seek {
+            label = "[Ghost] MRAWS ADM487 SEEK";
+            rowName = "[Ghost] MRAWS ADM487 SEEK";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mraws_gm841 {
+            label = "[Ghost] MRAWS GM841";
+            rowName = "[Ghost] MRAWS GM841";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mraws_he448_ab {
+            label = "[Ghost] MRAWS HE448 AB";
+            rowName = "[Ghost] MRAWS HE448 AB";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mraws_heat665_cs {
+            label = "[Ghost] MRAWS HEAT665 CS";
+            rowName = "[Ghost] MRAWS HEAT665 CS";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_mraws_heat758_tt {
+            label = "[Ghost] MRAWS HEAT758 TT";
+            rowName = "[Ghost] MRAWS HEAT758 TT";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_o_10rnd_762x54_ball_hv {
+            label = "[Ghost] 10Rnd 7.62x54mmR Ball HV";
+            rowName = "[Ghost] 10Rnd 7.62x54mmR Ball HV";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_10rnd_93x64_type40 {
+            label = "[Ghost] 10Rnd 9.3mm Type40";
+            rowName = "[Ghost] 10Rnd 9.3mm Type40";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_150rnd_762x54_box {
+            label = "[Ghost] 150Rnd 7.62x54mmR (Box)";
+            rowName = "[Ghost] 150Rnd 7.62x54mmR (Box)";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_150rnd_93x64_type40 {
+            label = "[Ghost] 150Rnd 9.3mm Type40";
+            rowName = "[Ghost] 150Rnd 9.3mm Type40";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_20rnd_9x39_7u15 {
+            label = "[Ghost] 20Rnd 9x39mm 7U15";
+            rowName = "[Ghost] 20Rnd 9x39mm 7U15";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_20rnd_9x39_7u16 {
+            label = "[Ghost] 20Rnd 9x39mm 7U16";
+            rowName = "[Ghost] 20Rnd 9x39mm 7U16";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_580x42_ball_hv {
+            label = "[Ghost] 30Rnd 5.8mm Ball HV";
+            rowName = "[Ghost] 30Rnd 5.8mm Ball HV";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_580x42_dbp39_ct {
+            label = "[Ghost] 30Rnd 5.8mm DBP39 CT";
+            rowName = "[Ghost] 30Rnd 5.8mm DBP39 CT";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_580x42_dbp40_ap {
+            label = "[Ghost] 30Rnd 5.8mm DBP40 AP";
+            rowName = "[Ghost] 30Rnd 5.8mm DBP40 AP";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_62_dbj25_pab {
+            label = "[Ghost] 30Rnd 6.2mm DBJ25 PAB";
+            rowName = "[Ghost] 30Rnd 6.2mm DBJ25 PAB";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_62_dbp25 {
+            label = "[Ghost] 30Rnd 6.2mm DBP25";
+            rowName = "[Ghost] 30Rnd 6.2mm DBP25";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_62_dbp26_ap {
+            label = "[Ghost] 30Rnd 6.2mm DBP26 AP";
+            rowName = "[Ghost] 30Rnd 6.2mm DBP26 AP";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_62_dbp88b {
+            label = "[Ghost] 30Rnd 6.2mm DBP88B";
+            rowName = "[Ghost] 30Rnd 6.2mm DBP88B";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_65_type41_epr {
+            label = "[Ghost] 30Rnd 6.5mm Type41 EPR";
+            rowName = "[Ghost] 30Rnd 6.5mm Type41 EPR";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_65_type42_ct {
+            label = "[Ghost] 30Rnd 6.5mm Type42 CT";
+            rowName = "[Ghost] 30Rnd 6.5mm Type42 CT";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_65_type43_ap {
+            label = "[Ghost] 30Rnd 6.5mm Type43 AP";
+            rowName = "[Ghost] 30Rnd 6.5mm Type43 AP";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_762x39_7n43 {
+            label = "[Ghost] 30Rnd 7.62x39mm 7N43";
+            rowName = "[Ghost] 30Rnd 7.62x39mm 7N43";
+            options[] = {"tracer", "finish", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "green", "arid"};
+
+                class Default { label = "Default"; };
+                class green { label = "Green"; };
+                class arid { label = "Arid"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_762x39_7n43_ak12 {
+            label = "[Ghost] 30Rnd 7.62x39mm 7N43 (AK-12)";
+            rowName = "[Ghost] 30Rnd 7.62x39mm 7N43 (AK-12)";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_762x39_7n43_lush {
+            label = "[Ghost] 30Rnd 7.62x39mm 7N43 Lush";
+            rowName = "[Ghost] 30Rnd 7.62x39mm 7N43 Lush";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_762x39_7n47_ct {
+            label = "[Ghost] 30Rnd 7.62x39mm 7N47 CT";
+            rowName = "[Ghost] 30Rnd 7.62x39mm 7N47 CT";
+            options[] = {"tracer", "finish", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "green", "arid"};
+
+                class Default { label = "Default"; };
+                class green { label = "Green"; };
+                class arid { label = "Arid"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_762x39_7n47_ct_ak12 {
+            label = "[Ghost] 30Rnd 7.62x39mm 7N47 CT (AK-12)";
+            rowName = "[Ghost] 30Rnd 7.62x39mm 7N47 CT (AK-12)";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_762x39_7n47_ct_lush {
+            label = "[Ghost] 30Rnd 7.62x39mm 7N47 CT Lush";
+            rowName = "[Ghost] 30Rnd 7.62x39mm 7N47 CT Lush";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_762x39_7u4_sub {
+            label = "[Ghost] 30Rnd 7.62x39mm 7U4 Sub";
+            rowName = "[Ghost] 30Rnd 7.62x39mm 7U4 Sub";
+            options[] = {"tracer", "finish", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "green", "arid"};
+
+                class Default { label = "Default"; };
+                class green { label = "Green"; };
+                class arid { label = "Arid"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_762x39_7u4_sub_ak12 {
+            label = "[Ghost] 30Rnd 7.62x39mm 7U4 Sub (AK-12)";
+            rowName = "[Ghost] 30Rnd 7.62x39mm 7U4 Sub (AK-12)";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_30rnd_762x39_7u4_sub_lush {
+            label = "[Ghost] 30Rnd 7.62x39mm 7U4 Sub Lush";
+            rowName = "[Ghost] 30Rnd 7.62x39mm 7U4 Sub Lush";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_5rnd_145_7n60 {
+            label = "[Ghost] 5Rnd 14.5mm 7N60";
+            rowName = "[Ghost] 5Rnd 14.5mm 7N60";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_5rnd_145_7n61 {
+            label = "[Ghost] 5Rnd 14.5mm 7N61";
+            rowName = "[Ghost] 5Rnd 14.5mm 7N61";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_5rnd_145_7n62 {
+            label = "[Ghost] 5Rnd 14.5mm 7N62";
+            rowName = "[Ghost] 5Rnd 14.5mm 7N62";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_75rnd_762x39_7n43 {
+            label = "[Ghost] 75Rnd 7.62x39mm 7N43";
+            rowName = "[Ghost] 75Rnd 7.62x39mm 7N43";
+            options[] = {"tracer", "finish", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "arid"};
+
+                class Default { label = "Default"; };
+                class arid { label = "Arid"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_75rnd_762x39_7n43_ak12 {
+            label = "[Ghost] 75Rnd 7.62x39mm 7N43 (AK-12)";
+            rowName = "[Ghost] 75Rnd 7.62x39mm 7N43 (AK-12)";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_75rnd_762x39_7n43_lush {
+            label = "[Ghost] 75Rnd 7.62x39mm 7N43 Lush";
+            rowName = "[Ghost] 75Rnd 7.62x39mm 7N43 Lush";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_75rnd_762x39_7n47_ct {
+            label = "[Ghost] 75Rnd 7.62x39mm 7N47 CT";
+            rowName = "[Ghost] 75Rnd 7.62x39mm 7N47 CT";
+            options[] = {"tracer", "finish", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "arid"};
+
+                class Default { label = "Default"; };
+                class arid { label = "Arid"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_75rnd_762x39_7n47_ct_ak12 {
+            label = "[Ghost] 75Rnd 7.62x39mm 7N47 CT (AK-12)";
+            rowName = "[Ghost] 75Rnd 7.62x39mm 7N47 CT (AK-12)";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_75rnd_762x39_7n47_ct_lush {
+            label = "[Ghost] 75Rnd 7.62x39mm 7N47 CT Lush";
+            rowName = "[Ghost] 75Rnd 7.62x39mm 7N47 CT Lush";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_75rnd_762x39_7u4_sub {
+            label = "[Ghost] 75Rnd 7.62x39mm 7U4 Sub";
+            rowName = "[Ghost] 75Rnd 7.62x39mm 7U4 Sub";
+            options[] = {"tracer", "finish", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "arid"};
+
+                class Default { label = "Default"; };
+                class arid { label = "Arid"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_75rnd_762x39_7u4_sub_ak12 {
+            label = "[Ghost] 75Rnd 7.62x39mm 7U4 Sub (AK-12)";
+            rowName = "[Ghost] 75Rnd 7.62x39mm 7U4 Sub (AK-12)";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_o_75rnd_762x39_7u4_sub_lush {
+            label = "[Ghost] 75Rnd 7.62x39mm 7U4 Sub Lush";
+            rowName = "[Ghost] 75Rnd 7.62x39mm 7U4 Sub Lush";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_100rnd_680x51_mk400_hv {
+            label = "[Ghost] 100Rnd 6.8mm Mk400 HV";
+            rowName = "[Ghost] 100Rnd 6.8mm Mk400 HV";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_100rnd_680x51_mk401_ap {
+            label = "[Ghost] 100Rnd 6.8mm Mk401 AP";
+            rowName = "[Ghost] 100Rnd 6.8mm Mk401 AP";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_100rnd_680x51_mk402_pab {
+            label = "[Ghost] 100Rnd 6.8mm Mk402 PAB";
+            rowName = "[Ghost] 100Rnd 6.8mm Mk402 PAB";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_100rnd_762x54r_7n49_ap {
+            label = "[Ghost] 100Rnd 7.62x54mmR 7N49 AP";
+            rowName = "[Ghost] 100Rnd 7.62x54mmR 7N49 AP";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_100rnd_762x54r_ball_hv {
+            label = "[Ghost] 100Rnd 7.62x54mmR Ball HV";
+            rowName = "[Ghost] 100Rnd 7.62x54mmR Ball HV";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_10rnd_338_mk371_250gr {
+            label = "[Ghost] 10Rnd .338 Mk371 250gr [Rearma]";
+            rowName = "[Ghost] 10Rnd .338 Mk371 250gr [Rearma]";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_10rnd_338_mk371_285gr {
+            label = "[Ghost] 10Rnd .338 Mk371 285gr [Rearma]";
+            rowName = "[Ghost] 10Rnd .338 Mk371 285gr [Rearma]";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_10rnd_338_mk371_300gr {
+            label = "[Ghost] 10Rnd .338 Mk371 300gr [Rearma]";
+            rowName = "[Ghost] 10Rnd .338 Mk371 300gr [Rearma]";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_10rnd_338_mk373_pab {
+            label = "[Ghost] 10Rnd .338 Mk373 PAB [Rearma]";
+            rowName = "[Ghost] 10Rnd .338 Mk373 PAB [Rearma]";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_10rnd_762x54r_7n49_ap {
+            label = "[Ghost] 10Rnd 7.62x54mmR 7N49 AP";
+            rowName = "[Ghost] 10Rnd 7.62x54mmR 7N49 AP";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_10rnd_762x54r_7u18_sub {
+            label = "[Ghost] 10Rnd 7.62x54mmR 7U18 SUB";
+            rowName = "[Ghost] 10Rnd 7.62x54mmR 7U18 SUB";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_10rnd_762x54r_ball_hv {
+            label = "[Ghost] 10Rnd 7.62x54mmR Ball HV [Rearma]";
+            rowName = "[Ghost] 10Rnd 7.62x54mmR Ball HV [Rearma]";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_150rnd_580x42_ball_hv {
+            label = "[Ghost] 150Rnd 5.8mm Ball HV";
+            rowName = "[Ghost] 150Rnd 5.8mm Ball HV";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_150rnd_580x42_dbj39_pab {
+            label = "[Ghost] 150Rnd 5.8mm DBJ39 PAB";
+            rowName = "[Ghost] 150Rnd 5.8mm DBJ39 PAB";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_150rnd_580x42_dbp39_ct {
+            label = "[Ghost] 150Rnd 5.8mm DBP39 CT";
+            rowName = "[Ghost] 150Rnd 5.8mm DBP39 CT";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_150rnd_6x38_mk405_hv {
+            label = "[Ghost] 150Rnd 6x38mm Mk405 HV";
+            rowName = "[Ghost] 150Rnd 6x38mm Mk405 HV";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_150rnd_6x38_mk406_ap {
+            label = "[Ghost] 150Rnd 6x38mm Mk406 AP";
+            rowName = "[Ghost] 150Rnd 6x38mm Mk406 AP";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_150rnd_6x38_mk407_pab {
+            label = "[Ghost] 150Rnd 6x38mm Mk407 PAB";
+            rowName = "[Ghost] 150Rnd 6x38mm Mk407 PAB";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_15rnd_9x21_dbp43_ap {
+            label = "[Ghost] 15Rnd 9x21mm DBP43 AP";
+            rowName = "[Ghost] 15Rnd 9x21mm DBP43 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_15rnd_9x21_dbp44_sub {
+            label = "[Ghost] 15Rnd 9x21mm DBP44 SUB";
+            rowName = "[Ghost] 15Rnd 9x21mm DBP44 SUB";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_17rnd_9x19_7n53_ap {
+            label = "[Ghost] 17Rnd 9mm 7N53 AP";
+            rowName = "[Ghost] 17Rnd 9mm 7N53 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_17rnd_9x19_7u17_sub {
+            label = "[Ghost] 17Rnd 9mm 7U17 SUB";
+            rowName = "[Ghost] 17Rnd 9mm 7U17 SUB";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_17rnd_9x19_mk422_ap {
+            label = "[Ghost] 17Rnd 9mm Mk422 AP [Rearma]";
+            rowName = "[Ghost] 17Rnd 9mm Mk422 AP [Rearma]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_17rnd_9x19_mk423_sub {
+            label = "[Ghost] 17Rnd 9mm Mk423 SUB";
+            rowName = "[Ghost] 17Rnd 9mm Mk423 SUB";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_200rnd_545x39_7n44_hp {
+            label = "[Ghost] 200Rnd 5.45mm 7N44 HP";
+            rowName = "[Ghost] 200Rnd 5.45mm 7N44 HP";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_200rnd_545x39_7n48_ct {
+            label = "[Ghost] 200Rnd 5.45mm 7N48 CT";
+            rowName = "[Ghost] 200Rnd 5.45mm 7N48 CT";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_200rnd_545x39_7n55_heab {
+            label = "[Ghost] 200Rnd 5.45mm 7N55 HEAB";
+            rowName = "[Ghost] 200Rnd 5.45mm 7N55 HEAB";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_20rnd_46x30_mk432_ap {
+            label = "[Ghost] 20Rnd 4.6mm Mk432 AP";
+            rowName = "[Ghost] 20Rnd 4.6mm Mk432 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_20rnd_46x30_mk433_sub {
+            label = "[Ghost] 20Rnd 4.6mm Mk433 SUB";
+            rowName = "[Ghost] 20Rnd 4.6mm Mk433 SUB";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_20rnd_680x51_mk400_hv {
+            label = "[Ghost] 20Rnd 6.8mm Mk400 HV";
+            rowName = "[Ghost] 20Rnd 6.8mm Mk400 HV";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_20rnd_680x51_mk401_ap {
+            label = "[Ghost] 20Rnd 6.8mm Mk401 AP";
+            rowName = "[Ghost] 20Rnd 6.8mm Mk401 AP";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_20rnd_680x51_mk402_pab {
+            label = "[Ghost] 20Rnd 6.8mm Mk402 PAB";
+            rowName = "[Ghost] 20Rnd 6.8mm Mk402 PAB";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_20rnd_680x51_uw_mk408_uw {
+            label = "[Ghost] 20Rnd 6.8mm UW Mk408";
+            rowName = "[Ghost] 20Rnd 6.8mm UW Mk408";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_20rnd_6x38_mk405_hv {
+            label = "[Ghost] 20Rnd 6x38mm Mk405 HV";
+            rowName = "[Ghost] 20Rnd 6x38mm Mk405 HV";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_20rnd_6x38_mk406_ap {
+            label = "[Ghost] 20Rnd 6x38mm Mk406 AP";
+            rowName = "[Ghost] 20Rnd 6x38mm Mk406 AP";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_20rnd_6x38_mk407_pab {
+            label = "[Ghost] 20Rnd 6x38mm Mk407 PAB";
+            rowName = "[Ghost] 20Rnd 6x38mm Mk407 PAB";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_20rnd_86x39_dbj41_pab {
+            label = "[Ghost] 20Rnd 8.6mm DBJ41 PAB";
+            rowName = "[Ghost] 20Rnd 8.6mm DBJ41 PAB";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_20rnd_86x39_dbp41 {
+            label = "[Ghost] 20Rnd 8.6mm DBP41";
+            rowName = "[Ghost] 20Rnd 8.6mm DBP41";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_20rnd_86x39_dbp42_subap {
+            label = "[Ghost] 20Rnd 8.6mm DBP42 SubAP";
+            rowName = "[Ghost] 20Rnd 8.6mm DBP42 SubAP";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_545x39_7n44_hp {
+            label = "[Ghost] 30Rnd 5.45mm 7N44 HP";
+            rowName = "[Ghost] 30Rnd 5.45mm 7N44 HP";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "camo"};
+
+                class Default { label = "Default"; };
+                class camo { label = "Camo"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_545x39_7n48_ct {
+            label = "[Ghost] 30Rnd 5.45mm 7N48 CT";
+            rowName = "[Ghost] 30Rnd 5.45mm 7N48 CT";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "camo"};
+
+                class Default { label = "Default"; };
+                class camo { label = "Camo"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_545x39_7n55_heab {
+            label = "[Ghost] 30Rnd 5.45mm 7N55 HEAB";
+            rowName = "[Ghost] 30Rnd 5.45mm 7N55 HEAB";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "camo"};
+
+                class Default { label = "Default"; };
+                class camo { label = "Camo"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_545x39_7u5_subap {
+            label = "[Ghost] 30Rnd 5.45mm 7U5 SubAP";
+            rowName = "[Ghost] 30Rnd 5.45mm 7U5 SubAP";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "camo"};
+
+                class Default { label = "Default"; };
+                class camo { label = "Camo"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_545x39_sg_7n56k_ad {
+            label = "[Ghost] 30Rnd 5.45mm SG 7N56K AD";
+            rowName = "[Ghost] 30Rnd 5.45mm SG 7N56K AD";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_30rnd_545x39_sg_7n56l_ad {
+            label = "[Ghost] 30Rnd 5.45mm SG 7N56L AD";
+            rowName = "[Ghost] 30Rnd 5.45mm SG 7N56L AD";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_30rnd_545x39_sgcamo_7n56k_ad {
+            label = "[Ghost] 30Rnd 5.45mm SGCamo 7N56K AD";
+            rowName = "[Ghost] 30Rnd 5.45mm SGCamo 7N56K AD";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_30rnd_545x39_sgcamo_7n56l_ad {
+            label = "[Ghost] 30Rnd 5.45mm SGCamo 7N56L AD";
+            rowName = "[Ghost] 30Rnd 5.45mm SGCamo 7N56L AD";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_30rnd_545x39_uw_psp2_uw {
+            label = "[Ghost] 30Rnd 5.45mm UW PSP2";
+            rowName = "[Ghost] 30Rnd 5.45mm UW PSP2";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_30rnd_556x45_pmag_mk327_hv {
+            label = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [Rearma]";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk327 HV (PMAG) [Rearma]";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_556x45_pmag_mk332_ap {
+            label = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [Rearma]";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk332 AP (PMAG) [Rearma]";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_556x45_pmag_mk361_pab {
+            label = "[Ghost] 30Rnd 5.56mm Mk361 PAB (PMAG)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk361 PAB (PMAG)";
             options[] = {"tracer", "finish"};
 
             class tracer {
@@ -1554,15 +8065,41 @@ class XtdGearModels {
             };
             class finish {
                 label = "Finish";
-                values[] = {"default", "green", "sand"};
+                values[] = {"default", "tan"};
 
-                class default { label = "Default"; };
-                class green { label = "Green"; };
-                class sand { label = "Sand"; };
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
             };
         };
-        class ghost_ammo_fa_jca_30rnd_556x45_pmag_xm891_ctep {
-            label = "FA JCA 30Rnd 556x45 PMAG XM891 CTEP";
+        class ghost_ammo_fa_rearma_30rnd_556x45_pmag_mk368k_ad {
+            label = "[Ghost] 30Rnd 5.56mm Mk368K AD (PMAG)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk368K AD (PMAG)";
+            options[] = {"finish"};
+
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_556x45_pmag_mk368l_ad {
+            label = "[Ghost] 30Rnd 5.56mm Mk368L AD (PMAG)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk368L AD (PMAG)";
+            options[] = {"finish"};
+
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_556x45_pmag_xm891_ctep {
+            label = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [Rearma]";
+            rowName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (PMAG) [Rearma]";
             options[] = {"tracer", "finish"};
 
             class tracer {
@@ -1580,48 +8117,1520 @@ class XtdGearModels {
             };
             class finish {
                 label = "Finish";
-                values[] = {"default", "green", "sand"};
+                values[] = {"default", "tan"};
 
-                class default { label = "Default"; };
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_556x45_stanag_mk327_hv {
+            label = "[Ghost] 30Rnd 5.56mm Mk327 HV (STANAG)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk327 HV (STANAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
                 class green { label = "Green"; };
-                class sand { label = "Sand"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
             };
         };
-        class ghost_ammo_fa_jca_5rnd_338lm_awm_mk371_250gr {
-            label = "FA JCA 5Rnd 338LM AWM Mk371 250gr";
+        class ghost_ammo_fa_rearma_30rnd_556x45_stanag_mk332_ap {
+            label = "[Ghost] 30Rnd 5.56mm Mk332 AP (STANAG)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk332 AP (STANAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_556x45_stanag_mk361_pab {
+            label = "[Ghost] 30Rnd 5.56mm Mk361 PAB (STANAG)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk361 PAB (STANAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_556x45_stanag_mk368k_ad {
+            label = "[Ghost] 30Rnd 5.56mm Mk368K AD (STANAG)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk368K AD (STANAG)";
+            options[] = {"finish"};
+
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_556x45_stanag_mk368l_ad {
+            label = "[Ghost] 30Rnd 5.56mm Mk368L AD (STANAG)";
+            rowName = "[Ghost] 30Rnd 5.56mm Mk368L AD (STANAG)";
+            options[] = {"finish"};
+
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_556x45_stanag_xm891_ctep {
+            label = "[Ghost] 30Rnd 5.56mm XM891 CTEP (STANAG)";
+            rowName = "[Ghost] 30Rnd 5.56mm XM891 CTEP (STANAG)";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_580x42_ap_dbp40_ap {
+            label = "[Ghost] 30Rnd 5.8mm AP DBP40";
+            rowName = "[Ghost] 30Rnd 5.8mm AP DBP40";
             options[] = {"tracer"};
 
             class tracer {
                 label = "Tracer";
-                values[] = {"blue", "ir"};
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
 
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
                 class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
                 class ir { label = "IR"; };
             };
         };
-        class ghost_ammo_fa_jca_5rnd_338lm_awm_mk371_285gr {
-            label = "FA JCA 5Rnd 338LM AWM Mk371 285gr";
+        class ghost_ammo_fa_rearma_30rnd_580x42_aptp_dbp40_ap {
+            label = "[Ghost] 30Rnd 5.8mm APTP DBP40 AP";
+            rowName = "[Ghost] 30Rnd 5.8mm APTP DBP40 AP";
             options[] = {"tracer"};
 
             class tracer {
                 label = "Tracer";
-                values[] = {"blue", "ir"};
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
 
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
                 class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
                 class ir { label = "IR"; };
             };
         };
-        class ghost_ammo_fa_jca_5rnd_338lm_awm_mk371_300gr {
-            label = "FA JCA 5Rnd 338LM AWM Mk371 300gr";
+        class ghost_ammo_fa_rearma_30rnd_580x42_ball_hv {
+            label = "[Ghost] 30Rnd 5.8mm Ball HV [Rearma]";
+            rowName = "[Ghost] 30Rnd 5.8mm Ball HV [Rearma]";
             options[] = {"tracer"};
 
             class tracer {
                 label = "Tracer";
-                values[] = {"blue", "ir"};
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
 
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
                 class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
                 class ir { label = "IR"; };
             };
+        };
+        class ghost_ammo_fa_rearma_30rnd_580x42_dbj39_pab {
+            label = "[Ghost] 30Rnd 5.8mm DBJ39 PAB";
+            rowName = "[Ghost] 30Rnd 5.8mm DBJ39 PAB";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_580x42_dbp39_ct {
+            label = "[Ghost] 30Rnd 5.8mm DBP39 CT [Rearma]";
+            rowName = "[Ghost] 30Rnd 5.8mm DBP39 CT [Rearma]";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_580x42_dbp40_ap {
+            label = "[Ghost] 30Rnd 5.8mm DBP40 AP [Rearma]";
+            rowName = "[Ghost] 30Rnd 5.8mm DBP40 AP [Rearma]";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_580x42_sg_dbs39k_ad {
+            label = "[Ghost] 30Rnd 5.8mm SG DBS39K AD";
+            rowName = "[Ghost] 30Rnd 5.8mm SG DBS39K AD";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_30rnd_580x42_sg_dbs39l_ad {
+            label = "[Ghost] 30Rnd 5.8mm SG DBS39L AD";
+            rowName = "[Ghost] 30Rnd 5.8mm SG DBS39L AD";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_30rnd_580x42_sgtp_dbs39k_ad {
+            label = "[Ghost] 30Rnd 5.8mm SGTP DBS39K AD";
+            rowName = "[Ghost] 30Rnd 5.8mm SGTP DBS39K AD";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_30rnd_580x42_sgtp_dbs39l_ad {
+            label = "[Ghost] 30Rnd 5.8mm SGTP DBS39L AD";
+            rowName = "[Ghost] 30Rnd 5.8mm SGTP DBS39L AD";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_30rnd_580x42_tp_ball_hv {
+            label = "[Ghost] 30Rnd 5.8mm TP Ball HV";
+            rowName = "[Ghost] 30Rnd 5.8mm TP Ball HV";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_580x42_tp_dbj39_pab {
+            label = "[Ghost] 30Rnd 5.8mm TP DBJ39 PAB";
+            rowName = "[Ghost] 30Rnd 5.8mm TP DBJ39 PAB";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_580x42_tp_dbp39_ct {
+            label = "[Ghost] 30Rnd 5.8mm TP DBP39 CT";
+            rowName = "[Ghost] 30Rnd 5.8mm TP DBP39 CT";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_580x42_tp_dbp40_ap {
+            label = "[Ghost] 30Rnd 5.8mm TP DBP40 AP";
+            rowName = "[Ghost] 30Rnd 5.8mm TP DBP40 AP";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_680x51_mk400_hv {
+            label = "[Ghost] 30Rnd 6.8mm Mk400 HV";
+            rowName = "[Ghost] 30Rnd 6.8mm Mk400 HV";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_680x51_mk401_ap {
+            label = "[Ghost] 30Rnd 6.8mm Mk401 AP";
+            rowName = "[Ghost] 30Rnd 6.8mm Mk401 AP";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_680x51_mk402_pab {
+            label = "[Ghost] 30Rnd 6.8mm Mk402 PAB";
+            rowName = "[Ghost] 30Rnd 6.8mm Mk402 PAB";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_6x38_mk405_hv {
+            label = "[Ghost] 30Rnd 6x38mm Mk405 HV";
+            rowName = "[Ghost] 30Rnd 6x38mm Mk405 HV";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_6x38_mk406_ap {
+            label = "[Ghost] 30Rnd 6x38mm Mk406 AP";
+            rowName = "[Ghost] 30Rnd 6x38mm Mk406 AP";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_6x38_mk407_pab {
+            label = "[Ghost] 30Rnd 6x38mm Mk407 PAB";
+            rowName = "[Ghost] 30Rnd 6x38mm Mk407 PAB";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "tan"};
+
+                class Default { label = "Default"; };
+                class tan { label = "Tan"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_30rnd_9x21_dbp43_ap {
+            label = "[Ghost] 30Rnd 9x21mm DBP43 AP";
+            rowName = "[Ghost] 30Rnd 9x21mm DBP43 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_30rnd_9x21_dbp44_sub {
+            label = "[Ghost] 30Rnd 9x21mm DBP44 SUB";
+            rowName = "[Ghost] 30Rnd 9x21mm DBP44 SUB";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_40rnd_46x30_mk432_ap {
+            label = "[Ghost] 40Rnd 4.6mm Mk432 AP";
+            rowName = "[Ghost] 40Rnd 4.6mm Mk432 AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_40rnd_46x30_mk433_sub {
+            label = "[Ghost] 40Rnd 4.6mm Mk433 SUB";
+            rowName = "[Ghost] 40Rnd 4.6mm Mk433 SUB";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_45rnd_545x39_7n44_hp {
+            label = "[Ghost] 45Rnd 5.45mm 7N44 HP";
+            rowName = "[Ghost] 45Rnd 5.45mm 7N44 HP";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "camo"};
+
+                class Default { label = "Default"; };
+                class camo { label = "Camo"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_45rnd_545x39_7n48_ct {
+            label = "[Ghost] 45Rnd 5.45mm 7N48 CT";
+            rowName = "[Ghost] 45Rnd 5.45mm 7N48 CT";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "camo"};
+
+                class Default { label = "Default"; };
+                class camo { label = "Camo"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_45rnd_545x39_7n55_heab {
+            label = "[Ghost] 45Rnd 5.45mm 7N55 HEAB";
+            rowName = "[Ghost] 45Rnd 5.45mm 7N55 HEAB";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "camo"};
+
+                class Default { label = "Default"; };
+                class camo { label = "Camo"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_45rnd_545x39_7u5_subap {
+            label = "[Ghost] 45Rnd 5.45mm 7U5 SubAP";
+            rowName = "[Ghost] 45Rnd 5.45mm 7U5 SubAP";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "camo"};
+
+                class Default { label = "Default"; };
+                class camo { label = "Camo"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_4rnd_qn205_cuas {
+            label = "[Ghost] 4Rnd QN205 CUAS";
+            rowName = "[Ghost] 4Rnd QN205 CUAS";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_4rnd_qn205_tbx {
+            label = "[Ghost] 4Rnd QN205 TBX";
+            rowName = "[Ghost] 4Rnd QN205 TBX";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_4rnd_qn205_tndm {
+            label = "[Ghost] 4Rnd QN205 TNDM";
+            rowName = "[Ghost] 4Rnd QN205 TNDM";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_50rnd_680x51_mk400_hv {
+            label = "[Ghost] 50Rnd 6.8mm Mk400 HV";
+            rowName = "[Ghost] 50Rnd 6.8mm Mk400 HV";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_50rnd_680x51_mk401_ap {
+            label = "[Ghost] 50Rnd 6.8mm Mk401 AP";
+            rowName = "[Ghost] 50Rnd 6.8mm Mk401 AP";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_50rnd_680x51_mk402_pab {
+            label = "[Ghost] 50Rnd 6.8mm Mk402 PAB";
+            rowName = "[Ghost] 50Rnd 6.8mm Mk402 PAB";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_50rnd_6x38_mk405_hv {
+            label = "[Ghost] 50Rnd 6x38mm Mk405 HV";
+            rowName = "[Ghost] 50Rnd 6x38mm Mk405 HV";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_50rnd_6x38_mk406_ap {
+            label = "[Ghost] 50Rnd 6x38mm Mk406 AP";
+            rowName = "[Ghost] 50Rnd 6x38mm Mk406 AP";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_50rnd_6x38_mk407_pab {
+            label = "[Ghost] 50Rnd 6x38mm Mk407 PAB";
+            rowName = "[Ghost] 50Rnd 6x38mm Mk407 PAB";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_5rnd_127x108_dbj127_pab {
+            label = "[Ghost] 5Rnd 12.7x108mm DBJ127 PAB";
+            rowName = "[Ghost] 5Rnd 12.7x108mm DBJ127 PAB";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_5rnd_23mm_barrikadaab {
+            label = "[Ghost] 5Rnd 23mm BarrikadaAB";
+            rowName = "[Ghost] 5Rnd 23mm BarrikadaAB";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_5rnd_23mm_shrapnelad100 {
+            label = "[Ghost] 5Rnd 23mm ShrapnelAD100";
+            rowName = "[Ghost] 5Rnd 23mm ShrapnelAD100";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_5rnd_23mm_shrapnelad50 {
+            label = "[Ghost] 5Rnd 23mm ShrapnelAD50";
+            rowName = "[Ghost] 5Rnd 23mm ShrapnelAD50";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_5rnd_338_mk371_250gr {
+            label = "[Ghost] 5Rnd .338 Mk371 250gr";
+            rowName = "[Ghost] 5Rnd .338 Mk371 250gr";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_5rnd_338_mk371_285gr {
+            label = "[Ghost] 5Rnd .338 Mk371 285gr";
+            rowName = "[Ghost] 5Rnd .338 Mk371 285gr";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_5rnd_338_mk371_300gr {
+            label = "[Ghost] 5Rnd .338 Mk371 300gr";
+            rowName = "[Ghost] 5Rnd .338 Mk371 300gr";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_5rnd_338_mk373_pab {
+            label = "[Ghost] 5Rnd .338 Mk373 PAB";
+            rowName = "[Ghost] 5Rnd .338 Mk373 PAB";
+            options[] = {"tracer"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_6rnd_12g_mk350_tbs {
+            label = "[Ghost] 6Rnd 12ga Mk350 TBS [Rearma]";
+            rowName = "[Ghost] 6Rnd 12ga Mk350 TBS [Rearma]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_6rnd_12g_mk351_fle {
+            label = "[Ghost] 6Rnd 12ga Mk351 FLE [Rearma]";
+            rowName = "[Ghost] 6Rnd 12ga Mk351 FLE [Rearma]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_6rnd_12g_mk352_aps {
+            label = "[Ghost] 6Rnd 12ga Mk352 APS [Rearma]";
+            rowName = "[Ghost] 6Rnd 12ga Mk352 APS [Rearma]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_6rnd_12g_mk353_brc {
+            label = "[Ghost] 6Rnd 12ga Mk353 BRC [Rearma]";
+            rowName = "[Ghost] 6Rnd 12ga Mk353 BRC [Rearma]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_6rnd_12g_mk360_ad {
+            label = "[Ghost] 6Rnd 12ga Mk360 AD [Rearma]";
+            rowName = "[Ghost] 6Rnd 12ga Mk360 AD [Rearma]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_6rnd_12g_mk363_pabs {
+            label = "[Ghost] 6Rnd 12ga Mk363 PABS [Rearma]";
+            rowName = "[Ghost] 6Rnd 12ga Mk363 PABS [Rearma]";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_7rnd_35mm_dfb135_tbk {
+            label = "[Ghost] 7Rnd 35mm DFB135 TBK";
+            rowName = "[Ghost] 7Rnd 35mm DFB135 TBK";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_7rnd_35mm_dfj135_dp {
+            label = "[Ghost] 7Rnd 35mm DFJ135 DP";
+            rowName = "[Ghost] 7Rnd 35mm DFJ135 DP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_7rnd_35mm_dfk135_pab {
+            label = "[Ghost] 7Rnd 35mm DFK135 PAB";
+            rowName = "[Ghost] 7Rnd 35mm DFK135 PAB";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_7rnd_35mm_dfp135_hep {
+            label = "[Ghost] 7Rnd 35mm DFP135 HEP";
+            rowName = "[Ghost] 7Rnd 35mm DFP135 HEP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_7rnd_35mm_dfz130_nrp {
+            label = "[Ghost] 7Rnd 35mm DFZ130 NRP";
+            rowName = "[Ghost] 7Rnd 35mm DFZ130 NRP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_7rnd_35mm_dfz133_emp {
+            label = "[Ghost] 7Rnd 35mm DFZ133 EMP";
+            rowName = "[Ghost] 7Rnd 35mm DFZ133 EMP";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_7rnd_35mm_dfz134_msmoke {
+            label = "FA rearma 7Rnd 35mm DFZ134 MSmoke";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_7rnd_35mm_dfz135_decoy {
+            label = "[Ghost] 7Rnd 35mm DFZ135 Decoy";
+            rowName = "[Ghost] 7Rnd 35mm DFZ135 Decoy";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_7rnd_35mm_dfz136_ugs {
+            label = "[Ghost] 7Rnd 35mm DFZ136 UGS";
+            rowName = "[Ghost] 7Rnd 35mm DFZ136 UGS";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_7rnd_35mm_dfz138_jammer {
+            label = "[Ghost] 7Rnd 35mm DFZ138 Jammer";
+            rowName = "[Ghost] 7Rnd 35mm DFZ138 Jammer";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_95rnd_545x39_7n44_hp {
+            label = "[Ghost] 95Rnd 5.45mm 7N44 HP";
+            rowName = "[Ghost] 95Rnd 5.45mm 7N44 HP";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "camo"};
+
+                class Default { label = "Default"; };
+                class camo { label = "Camo"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_95rnd_545x39_7n48_ct {
+            label = "[Ghost] 95Rnd 5.45mm 7N48 CT";
+            rowName = "[Ghost] 95Rnd 5.45mm 7N48 CT";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "camo"};
+
+                class Default { label = "Default"; };
+                class camo { label = "Camo"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_95rnd_545x39_7n55_heab {
+            label = "[Ghost] 95Rnd 5.45mm 7N55 HEAB";
+            rowName = "[Ghost] 95Rnd 5.45mm 7N55 HEAB";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "camo"};
+
+                class Default { label = "Default"; };
+                class camo { label = "Camo"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_95rnd_545x39_7u5_subap {
+            label = "[Ghost] 95Rnd 5.45mm 7U5 SubAP";
+            rowName = "[Ghost] 95Rnd 5.45mm 7U5 SubAP";
+            options[] = {"tracer", "finish"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "white", "red", "green", "yellow", "blue", "orange", "ir"};
+
+                class ball { label = "Ball"; };
+                class white { label = "White"; };
+                class red { label = "Red"; };
+                class green { label = "Green"; };
+                class yellow { label = "Yellow"; };
+                class blue { label = "Blue"; };
+                class orange { label = "Orange"; };
+                class ir { label = "IR"; };
+            };
+            class finish {
+                label = "Finish";
+                values[] = {"default", "camo"};
+
+                class Default { label = "Default"; };
+                class camo { label = "Camo"; };
+            };
+        };
+        class ghost_ammo_fa_rearma_m72a10_tndm {
+            label = "[Ghost] M72A10 TNDM";
+            rowName = "[Ghost] M72A10 TNDM";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_m72a11_tbx {
+            label = "[Ghost] M72A11 TBX";
+            rowName = "[Ghost] M72A11 TBX";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_m72a12_prox {
+            label = "[Ghost] M72A12 PROX";
+            rowName = "[Ghost] M72A12 PROX";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_pf89c_tndm {
+            label = "[Ghost] PF89C TNDM";
+            rowName = "[Ghost] PF89C TNDM";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_pf89k_prox {
+            label = "[Ghost] PF89K PROX";
+            rowName = "[Ghost] PF89K PROX";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_rpg26_ab26 {
+            label = "[Ghost] RPG26 AB26";
+            rowName = "[Ghost] RPG26 AB26";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_rpg26m2_tndm {
+            label = "[Ghost] RPG26M2 TNDM";
+            rowName = "[Ghost] RPG26M2 TNDM";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_rshg2m2_tbx {
+            label = "[Ghost] RShG2M2 TBX";
+            rowName = "[Ghost] RShG2M2 TBX";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rearma_wpf89c_tbx {
+            label = "[Ghost] WPF89C TBX";
+            rowName = "[Ghost] WPF89C TBX";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rf_10rnd_127x55_7n52 {
+            label = "[Ghost] 10Rnd 12.7x55mm 7N52";
+            rowName = "[Ghost] 10Rnd 12.7x55mm 7N52";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_rf_10rnd_127x55_7u13 {
+            label = "[Ghost] 10Rnd 12.7x55mm 7U13";
+            rowName = "[Ghost] 10Rnd 12.7x55mm 7U13";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_rf_10rnd_127x55_7u14 {
+            label = "[Ghost] 10Rnd 12.7x55mm 7U14";
+            rowName = "[Ghost] 10Rnd 12.7x55mm 7U14";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_rf_17rnd_9x19_mk422_ap {
+            label = "[Ghost] 17Rnd 9mm Mk422 AP [RF]";
+            rowName = "[Ghost] 17Rnd 9mm Mk422 AP [RF]";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_rf_20rnd_127x55_7n52 {
+            label = "[Ghost] 20Rnd 12.7x55mm 7N52";
+            rowName = "[Ghost] 20Rnd 12.7x55mm 7N52";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_rf_20rnd_127x55_7u13 {
+            label = "[Ghost] 20Rnd 12.7x55mm 7U13";
+            rowName = "[Ghost] 20Rnd 12.7x55mm 7U13";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_rf_20rnd_127x55_7u14 {
+            label = "[Ghost] 20Rnd 12.7x55mm 7U14";
+            rowName = "[Ghost] 20Rnd 12.7x55mm 7U14";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_rf_33rnd_9x19_mk422_ap {
+            label = "[Ghost] 33Rnd 9mm Mk422 AP";
+            rowName = "[Ghost] 33Rnd 9mm Mk422 AP";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_rpg32_ab32 {
+            label = "[Ghost] RPG32 AB32";
+            rowName = "[Ghost] RPG32 AB32";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rpg32_pg32v2 {
+            label = "[Ghost] RPG32 PG32V2";
+            rowName = "[Ghost] RPG32 PG32V2";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rpg32_tbg32v2 {
+            label = "[Ghost] RPG32 TBG32V2";
+            rowName = "[Ghost] RPG32 TBG32V2";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rpg7_ab7 {
+            label = "[Ghost] RPG7 AB7";
+            rowName = "[Ghost] RPG7 AB7";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rpg7_pg7vr2 {
+            label = "[Ghost] RPG7 PG7VR2";
+            rowName = "[Ghost] RPG7 PG7VR2";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_rpg7_tbg7v2 {
+            label = "[Ghost] RPG7 TBG7V2";
+            rowName = "[Ghost] RPG7 TBG7V2";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_titan_aa_mim165_sentry {
+            label = "[Ghost] Titan AA MIM165 Sentry";
+            rowName = "[Ghost] Titan AA MIM165 Sentry";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_titan_aa_mim166_roadrunner {
+            label = "[Ghost] Titan AA MIM166 Roadrunner";
+            rowName = "[Ghost] Titan AA MIM166 Roadrunner";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_titan_at_bgm185_broadsword {
+            label = "[Ghost] Titan AT BGM185 Broadsword";
+            rowName = "[Ghost] Titan AT BGM185 Broadsword";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_titan_at_xm1200_copperhead {
+            label = "[Ghost] Titan AT XM1200 Copperhead";
+            rowName = "[Ghost] Titan AT XM1200 Copperhead";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_tmt_150rnd_762x54_box {
+            label = "[Ghost] 150Rnd 7.62x54mmR (Box) [TMT]";
+            rowName = "[Ghost] 150Rnd 7.62x54mmR (Box) [TMT]";
+            options[] = {"tracer", "tier"};
+
+            class tracer {
+                label = "Tracer";
+                values[] = {"ball", "tracer"};
+
+                class ball { label = "Ball"; };
+                class tracer { label = "Tracer"; };
+            };
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_tmt_16rnd_9x19_mag {
+            label = "[Ghost] 16Rnd 9mm";
+            rowName = "[Ghost] 16Rnd 9mm";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_tmt_200rnd_556x45_m_saw_standart {
+            label = "[Ghost] 200Rnd 5.56mm M Standart (SAW)";
+            rowName = "[Ghost] 200Rnd 5.56mm M Standart (SAW)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_tmt_200rnd_556x45_t_saw_standart {
+            label = "[Ghost] 200Rnd 5.56mm T Standart (SAW)";
+            rowName = "[Ghost] 200Rnd 5.56mm T Standart (SAW)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_tmt_20rnd_762x51_b_m110 {
+            label = "[Ghost] 20Rnd 7.62mm (M110)";
+            rowName = "[Ghost] 20Rnd 7.62mm (M110)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_tmt_20rnd_762x51_b_mpt76 {
+            label = "[Ghost] 20Rnd 7.62mm (MPT-76)";
+            rowName = "[Ghost] 20Rnd 7.62mm (MPT-76)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_tmt_30rnd_hk33_mag {
+            label = "[Ghost] 30Rnd (HK33)";
+            rowName = "[Ghost] 30Rnd (HK33)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_tmt_30rnd_lancer_mag {
+            label = "[Ghost] 30Rnd (Lancer)";
+            rowName = "[Ghost] 30Rnd (Lancer)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_tmt_30rnd_stanag_mag {
+            label = "[Ghost] 30Rnd (STANAG)";
+            rowName = "[Ghost] 30Rnd (STANAG)";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_tni_10rnd_762x51_mag {
+            label = "[Ghost] 10Rnd 7.62mm";
+            rowName = "[Ghost] 10Rnd 7.62mm";
+            options[] = {"tier"};
+
+            class tier {
+                label = "Tier";
+                values[] = {"base", "t2", "t3", "t4"};
+
+                class base { label = "Base"; };
+                class t2 { label = "T2 (-12%)"; };
+                class t3 { label = "T3"; };
+                class t4 { label = "T4 (+6%)"; };
+            };
+        };
+        class ghost_ammo_fa_vorona_9m135f2 {
+            label = "[Ghost] Vorona 9M135F2";
+            rowName = "[Ghost] Vorona 9M135F2";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_vorona_9m135m {
+            label = "[Ghost] Vorona 9M135M";
+            rowName = "[Ghost] Vorona 9M135M";
+            options[] = {};
+
+        };
+        class ghost_ammo_fa_vorona_9m135pvo {
+            label = "[Ghost] Vorona 9M135PVO";
+            rowName = "[Ghost] Vorona 9M135PVO";
+            options[] = {};
+
+        };
+        class ghost_ammo_ghost {
+            label = "ghost";
+            options[] = {};
+
+        };
+        class ghost_ammo_ghost_blue {
+            label = "ghost blue";
+            options[] = {};
+
+        };
+        class ghost_ammo_ghost_fa_glock19_rf {
+            label = "ghost fa Glock19 RF";
+            options[] = {};
+
+        };
+        class ghost_ammo_ghost_red {
+            label = "ghost red";
+            options[] = {};
+
+        };
+        class ghost_ammo_gx_1rnd_drone40_he_m203 {
+            label = "GX 1RND DRONE40 HE M203";
+            options[] = {};
+
+        };
+        class ghost_ammo_gx_1rnd_drone40_recon_m203 {
+            label = "GX 1RND DRONE40 RECON M203";
+            options[] = {};
+
         };
         class ghost_ammo_gx_1rnd_drone40_smoke_m203 {
             label = "GX 1RND DRONE40 SMOKE M203";
@@ -1640,6 +9649,31 @@ class XtdGearModels {
                 class purple { label = "Purple"; };
             };
         };
+        class ghost_ammo_gx_1rnd_hunter_sp_he {
+            label = "GX 1RND HUNTER SP HE";
+            options[] = {};
+
+        };
+        class ghost_ammo_gx_deployable_hunter_sp_launcher {
+            label = "GX DEPLOYABLE HUNTER SP LAUNCHER";
+            options[] = {};
+
+        };
+        class ghost_ammo_gx_deployable_magazine_blackhornet_uav {
+            label = "GX DEPLOYABLE MAGAZINE BLACKHORNET UAV";
+            options[] = {};
+
+        };
+        class ghost_ammo_gx_deployable_magazine_gmg_01 {
+            label = "GX DEPLOYABLE MAGAZINE GMG 01";
+            options[] = {};
+
+        };
+        class ghost_ammo_gx_deployable_magazine_hmg_01 {
+            label = "GX DEPLOYABLE MAGAZINE HMG 01";
+            options[] = {};
+
+        };
         class ghost_ammo_gx_deployable_magazine_honeybadger_ugv_at {
             label = "GX DEPLOYABLE MAGAZINE HONEYBADGER UGV AT";
             options[] = {"finish"};
@@ -1653,84 +9687,125 @@ class XtdGearModels {
                 class hex { label = "Hex"; };
             };
         };
-        class ghost_ammo_jca_12rnd_45acp_mk23_mag {
-            label = "JCA 12Rnd 45ACP Mk23 Mag";
-            options[] = {"tracer"};
+        class ghost_ammo_gx_deployable_magazine_honeybadger_ugv_at_desert {
+            label = "GX DEPLOYABLE MAGAZINE HONEYBADGER UGV AT DESERT";
+            options[] = {};
 
-            class tracer {
-                label = "Tracer";
-                values[] = {"ball", "ir"};
-
-                class ball { label = "Ball"; };
-                class ir { label = "IR"; };
-            };
         };
-        class ghost_ammo_jca_30rnd_9x19_mp5_ir_mag {
-            label = "JCA 30Rnd 9x19 MP5 IR Mag";
-            options[] = {"finish"};
+        class ghost_ammo_gx_deployable_magazine_rq11b_uav {
+            label = "GX DEPLOYABLE MAGAZINE RQ11B UAV";
+            options[] = {};
 
-            class finish {
-                label = "Finish";
-                values[] = {"default", "sand"};
-
-                class default { label = "Default"; };
-                class sand { label = "Sand"; };
-            };
         };
-        class ghost_ammo_jca_30rnd_9x19_mp5_jhp_mag {
-            label = "JCA 30Rnd 9x19 MP5 JHP Mag";
-            options[] = {"finish"};
+        class ghost_ammo_gx_deployable_magazine_static_designator_desert {
+            label = "GX DEPLOYABLE MAGAZINE STATIC DESIGNATOR DESERT";
+            options[] = {};
 
-            class finish {
-                label = "Finish";
-                values[] = {"default", "sand"};
-
-                class default { label = "Default"; };
-                class sand { label = "Sand"; };
-            };
         };
-        class ghost_ammo_jca_30rnd_9x19_mp5_mag {
-            label = "JCA 30Rnd 9x19 MP5 Mag";
-            options[] = {"tracer", "finish"};
+        class ghost_ammo_gx_deployable_magazine_static_designator_woodland {
+            label = "GX DEPLOYABLE MAGAZINE STATIC DESIGNATOR WOODLAND";
+            options[] = {};
 
-            class tracer {
-                label = "Tracer";
-                values[] = {"ball", "ir"};
-
-                class ball { label = "Ball"; };
-                class ir { label = "IR"; };
-            };
-            class finish {
-                label = "Finish";
-                values[] = {"default", "sand"};
-
-                class default { label = "Default"; };
-                class sand { label = "Sand"; };
-            };
         };
-        class ghost_ammo_jca_handflare {
-            label = "JCA HandFlare";
-            options[] = {"colour"};
+        class ghost_ammo_gx_deployable_magazine_uav_01 {
+            label = "GX DEPLOYABLE MAGAZINE UAV 01";
+            options[] = {};
 
-            class colour {
-                label = "Colour";
-                values[] = {"red", "green"};
-
-                class red { label = "Red"; };
-                class green { label = "Green"; };
-            };
         };
-        class ghost_ammo_jca_signalflare {
-            label = "JCA SignalFlare";
-            options[] = {"colour"};
+        class ghost_ammo_gx_deployable_magazine_uav_02_ied_lxws {
+            label = "GX DEPLOYABLE MAGAZINE UAV 02 IED lxWS";
+            options[] = {};
 
-            class colour {
-                label = "Colour";
-                values[] = {"red", "green"};
+        };
+        class ghost_ammo_gx_deployable_magazine_uav_02_lxws {
+            label = "GX DEPLOYABLE MAGAZINE UAV 02 lxWS";
+            options[] = {};
 
-                class red { label = "Red"; };
-                class green { label = "Green"; };
-            };
+        };
+        class ghost_ammo_gx_deployable_magazine_uav_06 {
+            label = "GX DEPLOYABLE MAGAZINE UAV 06";
+            options[] = {};
+
+        };
+        class ghost_ammo_gx_deployable_magazine_uav_06_antimine {
+            label = "GX DEPLOYABLE MAGAZINE UAV 06 ANTIMINE";
+            options[] = {};
+
+        };
+        class ghost_ammo_gx_deployable_magazine_ugv_02_demining {
+            label = "GX DEPLOYABLE MAGAZINE UGV 02 DEMINING";
+            options[] = {};
+
+        };
+        class ghost_ammo_handgrenade {
+            label = "HandGrenade";
+            options[] = {};
+
+        };
+        class ghost_ammo_iedurbanbig_remote_mag {
+            label = "IEDUrbanBig Remote Mag";
+            options[] = {};
+
+        };
+        class ghost_ammo_iedurbansmall_remote_mag {
+            label = "IEDUrbanSmall Remote Mag";
+            options[] = {};
+
+        };
+        class ghost_ammo_m72a7_mag {
+            label = "m72a7 mag";
+            options[] = {};
+
+        };
+        class ghost_ammo_m_wpf89_f {
+            label = "M WPF89";
+            options[] = {};
+
+        };
+        class ghost_ammo_minigrenade {
+            label = "MiniGrenade";
+            options[] = {};
+
+        };
+        class ghost_ammo_phan_wp_maaws_mag {
+            label = "PHAN WP MAAWS Mag";
+            options[] = {};
+
+        };
+        class ghost_ammo_phan_wpgrenade_40mm_3gl_mag {
+            label = "PHAN WPGrenade 40mm 3GL Mag";
+            options[] = {};
+
+        };
+        class ghost_ammo_phan_wpgrenade_40mm_mag {
+            label = "PHAN WPGrenade 40mm Mag";
+            options[] = {};
+
+        };
+        class ghost_ammo_phan_wpgrenade_throw_mag {
+            label = "PHAN WPGrenade Throw Mag";
+            options[] = {};
+
+        };
+        class ghost_ammo_pistol_9x21 {
+            label = "Pistol 9x21";
+            options[] = {};
+
+        };
+        class ghost_ammo_rahim_762x54 {
+            label = "Rahim 762x54";
+            options[] = {};
+
+        };
+        class ghost_ammo_satchelcharge_remote_mag {
+            label = "SatchelCharge Remote Mag";
+            options[] = {};
+
+        };
+        class ghost_ammo_slamdirectionalmine_wire_mag {
+            label = "SLAMDirectionalMine Wire Mag";
+            options[] = {};
+
         };
         class ghost_ammo_smokeshell {
             label = "SmokeShell";
@@ -1749,8 +9824,33 @@ class XtdGearModels {
                 class purple { label = "Purple"; };
             };
         };
+        class ghost_ammo_stanag_556x45 {
+            label = "STANAG 556x45";
+            options[] = {};
+
+        };
+        class ghost_ammo_titan_aa {
+            label = "Titan AA";
+            options[] = {};
+
+        };
+        class ghost_ammo_titan_ap {
+            label = "Titan AP";
+            options[] = {};
+
+        };
+        class ghost_ammo_titan_at {
+            label = "Titan AT";
+            options[] = {};
+
+        };
+        class ghost_ammo_ugl_40x36 {
+            label = "UGL 40x36";
+            options[] = {};
+
+        };
         class ghost_ammo_ugl_flare_f {
-            label = "UGL Flare F";
+            label = "UGL Flare";
             options[] = {"colour"};
 
             class colour {
@@ -1765,7 +9865,7 @@ class XtdGearModels {
             };
         };
         class ghost_ammo_ugl_flare_illumination_f {
-            label = "UGL Flare Illumination F";
+            label = "UGL Flare Illumination";
             options[] = {"colour"};
 
             class colour {
@@ -1777,6 +9877,36 @@ class XtdGearModels {
                 class green { label = "Green"; };
                 class yellow { label = "Yellow"; };
             };
+        };
+        class ghost_ammo_west {
+            label = "West";
+            options[] = {};
+
+        };
+        class ghost_ammo_wnz_emp40mm_3gl_grenade_magazine {
+            label = "WNZ EMP40mm 3GL Grenade Magazine";
+            options[] = {};
+
+        };
+        class ghost_ammo_wnz_emp40mm_grenade_magazine {
+            label = "WNZ EMP40mm Grenade Magazine";
+            options[] = {};
+
+        };
+        class ghost_ammo_wnz_emp_maaws_mag {
+            label = "WNZ EMP MAAWS Mag";
+            options[] = {};
+
+        };
+        class ghost_ammo_wnz_empgrenade {
+            label = "WNZ EMPGrenade";
+            options[] = {};
+
+        };
+        class ghost_ammo_wnz_empimpactgrenade {
+            label = "WNZ EMPImpactGrenade";
+            options[] = {};
+
         };
     };
 };

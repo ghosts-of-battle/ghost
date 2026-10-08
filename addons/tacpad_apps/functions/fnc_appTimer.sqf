@@ -98,7 +98,10 @@ if (isNil QEGVAR(hacking,alarms)) then {
         private _sorted = +_alarms;
         _sorted sort true;
 
+        // each row steps down onto itself before it draws; the step past the last one follows the loop
+        _y = _y - _rowH;
         {
+            _y = _y + _rowH;
             _x params ["_id", "_at", "_who"];
             private _left = _at - CBA_missionTime;
             private _colour = switch (true) do {
@@ -144,9 +147,8 @@ if (isNil QEGVAR(hacking,alarms)) then {
                 {["timer"] call EFUNC(tacpad,openApp)} call CBA_fnc_execNextFrame;
             }] call EFUNC(tacpad,drawHit);
             _hit setVariable [QGVAR(alarmId), _id];
-
-            _y = _y + _rowH;
         } forEach _sorted;
+        _y = _y + _rowH;
     };
 };
 
